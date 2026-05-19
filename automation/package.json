@@ -1,0 +1,16 @@
+{
+  "name": "arraysubs-qa-automation",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Playwright helpers for ArraySubs manual QA verification.",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "codegen": "playwright codegen",
+    "install:browsers": "playwright install chromium firefox webkit"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.56.1"
+  }
+}

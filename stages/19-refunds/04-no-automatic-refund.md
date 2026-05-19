@@ -44,7 +44,7 @@ Set **Refund on Cancellation** to **No Automatic Refund**. Cancel an active subs
 **Expected Result:**
 - Subscription status changes to **Cancelled** with red badge.
 - Subscription notes record the cancellation, who cancelled, and the reason.
-- All future scheduled `arraysubs_renewal` actions for this subscription are removed.
+- All future scheduled `arraysubs_generate_renewal_invoice` and `arraysubs_process_renewal` actions for this subscription are removed.
 
 **Pass Criteria:** [ ] PASS [ ] FAIL
 **Fail Notes:**

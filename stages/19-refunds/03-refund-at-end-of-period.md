@@ -112,7 +112,7 @@ Switch **Refund on Cancellation** to **Refund at End of Period**, then cancel an
 ## Regression / Cross-checks
 - Verify the customer's portal view of this subscription, before Sub-Task 03.4 fires the EOP, shows status **Active** with the "Subscription scheduled for cancellation" notice and the **Undo Cancellation** button is also visible to them.
 - After EOP fires, customer's portal status switches to **Cancelled**.
-- Confirm there is no leftover scheduled-action for `arraysubs_renewal` for this subscription post-cancellation.
+- Confirm there is no leftover scheduled-action for `arraysubs_generate_renewal_invoice` or `arraysubs_process_renewal` for this subscription post-cancellation.
 
 ## Sign-off
 - Tester:

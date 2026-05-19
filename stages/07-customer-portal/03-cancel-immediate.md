@@ -86,7 +86,7 @@ With **General Settings → Customer Actions → Cancel Immediately** enabled, w
 - Status shows **Cancelled**.
 - A subscription note records the cancellation with: who cancelled (the customer), the reason **"Found a better alternative"**, and the timestamp.
 - The `_end_date` field reflects roughly the time of cancellation (within a minute).
-- Future scheduled renewal actions for this subscription are removed (verify in **Tools → Scheduled Actions**: filter by `arraysubs_renewal` hook + this subscription ID — no future entries should remain).
+- Future scheduled renewal actions for this subscription are removed (verify in **Tools → Scheduled Actions**: filter by `arraysubs_generate_renewal_invoice` and `arraysubs_process_renewal` hooks + this subscription ID — no future entries should remain).
 
 **Pass Criteria:** [ ] PASS [ ] FAIL
 **Fail Notes:**

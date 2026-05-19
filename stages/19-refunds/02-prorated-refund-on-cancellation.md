@@ -86,12 +86,12 @@ On a **Standard Weekly $19.99/wk** subscription that is exactly halfway through 
 ### Sub-Task 02.5 — Subscription notes and scheduled actions
 **Steps:**
 1. Scroll to **Subscription Notes** on the subscription detail page.
-2. Open **Tools → Scheduled Actions**, filter by `arraysubs_renewal` and the subscription ID.
+2. Open **Tools → Scheduled Actions**, filter by `arraysubs_generate_renewal_invoice` / `arraysubs_process_renewal` and the subscription ID.
 
 **Expected Result:**
 - Subscription notes contain at least two entries: one recording the refund (`Refund of $10.00 issued — reason: QA prorated test`) and one recording the cancellation triggered by the refund.
 - The cancellation note's `cancelled_by` is `system` (or the admin user who clicked Process Refund — record which) and `_cancellation_reason` reflects "Refund issued" or similar wording from the manual.
-- No future-dated `arraysubs_renewal` actions remain for this subscription. Any matching actions are either Completed (in the past) or Cancelled.
+- No future-dated `arraysubs_generate_renewal_invoice` or `arraysubs_process_renewal` actions remain for this subscription. Any matching actions are either Completed (in the past) or Cancelled.
 - A `_end_date` is set on the subscription roughly equal to the time of refund.
 
 **Pass Criteria:** [ ] PASS [ ] FAIL

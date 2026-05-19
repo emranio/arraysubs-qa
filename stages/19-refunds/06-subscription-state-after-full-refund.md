@@ -70,7 +70,7 @@ With **Refund on Cancellation = Allow Immediate Refund**, fully refund the paren
 1. Re-open **Tools → Scheduled Actions** filtered by the subscription ID.
 
 **Expected Result:**
-- Every future-dated `arraysubs_renewal`, `arraysubs_send_renewal_reminder`, `arraysubs_check_overdue_renewals` (per-subscription), and any other subscription-bound action is now either Cancelled or absent.
+- Every future-dated `arraysubs_generate_renewal_invoice`, `arraysubs_process_renewal`, `arraysubs_send_renewal_reminder`, `arraysubs_check_overdue_renewals` (per-subscription), and any other subscription-bound action is now either Cancelled or absent.
 - No new actions are pending for this subscription.
 
 **Pass Criteria:** [ ] PASS [ ] FAIL

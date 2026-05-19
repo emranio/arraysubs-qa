@@ -57,10 +57,10 @@ With **Auto-Apply to Renewals** enabled and the customer carrying $100 of credit
 **Steps:**
 1. Pick ONE method and document it in Sign-off — the same method will be reused across all five cycles:
    - **Method A — Custom Fields edit:** open the subscription detail screen → expand the **Custom Fields** panel (or use the **Screen Options** to enable Custom Fields). Edit `_next_payment_date` to a date 5 minutes in the past (format `YYYY-MM-DD HH:MM:SS`). Save.
-   - **Method B — CLI:** SSH to the server and run `wp action-scheduler run --hooks=arraysubs_renewal --due-now` (or the equivalent renewal hook).
+   - **Method B — CLI:** SSH to the server and run the relevant scheduled hook, usually `wp action-scheduler run --hooks=arraysubs_generate_renewal_invoice,arraysubs_process_renewal --batch-size=10 --force`.
    - **Method C — date-mock plugin:** advance the simulated `current_time` by `1 week + 1 hour` per cycle, run cron, then disable the plugin between cycles.
 2. After each time-travel, trigger the WP-Cron / Action Scheduler so the renewal runs:
-   - **WP-Admin → Tools → Scheduled Actions** → search for `arraysubs_renewal` → **Run** the pending action, OR
+   - **WP-Admin → Tools → Scheduled Actions** → search for `arraysubs_generate_renewal_invoice` or `arraysubs_process_renewal` for this subscription → **Run** the pending action, OR
    - Run `wp cron event run --due-now` from CLI.
 
 **Expected Result:**

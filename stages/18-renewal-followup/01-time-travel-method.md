@@ -33,7 +33,7 @@ Document and validate the **time-travel approach** used by every subsequent task
 1. Read the three accepted approaches below and pick ONE that this entire stage will use:
    - **Approach A (RECOMMENDED): Admin meta edit + manual Action Scheduler Run.** Edit `_next_payment_date` on the subscription detail page (or via the Custom Fields panel). Then go to Scheduled Actions and click Run on the next pending hook.
    - **Approach B: System clock change.** Move the server clock forward by N days. Wait for WP-Cron / Action Scheduler to tick naturally. Restore clock at end of each task. (Riskier — affects unrelated tests, gateways, JWTs.)
-   - **Approach C: WP-CLI + scheduled-action runner.** Use `wp post meta update SUBSCRIPTION_ID _next_payment_date "YYYY-MM-DD HH:MM:SS"` then `wp action-scheduler run --hooks=arraysubs_generate_upcoming_renewals --batch=10`.
+   - **Approach C: WP-CLI + scheduled-action runner.** Use `wp post meta update SUBSCRIPTION_ID _next_payment_date "YYYY-MM-DD HH:MM:SS"` then `wp action-scheduler run --hooks=arraysubs_generate_upcoming_renewals --batch-size=10 --force`.
 2. Record the chosen approach (A / B / C) in the Sign-off block at the bottom of this file.
 3. Every other task in Stage 18 will reference "the chosen time-travel approach from Task 18.01". If a tester deviates for a specific task, they must note the deviation in that task's Sign-off.
 
