@@ -9,7 +9,7 @@
 
 **Reusable subscriptions (created in Stage 05):**
 - The Active subscription from Task 01 (`Basic Monthly`, customer `customer-classic@example.test`).
-- The Trial subscription from Task 03 (`Trial 14-Day`, customer `customer-trial@example.test`).
+- The Trial subscription from Task 03 (`Trial Weekly`, customer `customer-trial@example.test`, 7-day trial).
 - A Pending subscription created on demand in Task 02 of this stage (we will leave one Stage 05 order in `Pending payment` to drive that case).
 
 **Run order:**

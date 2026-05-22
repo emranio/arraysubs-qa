@@ -37,7 +37,7 @@ Installed and usable:
 - Docker
 - `kanban-md`
 - Composer `2.7.1`
-- Playwright `1.60.0`
+- Alumnium MCP browser automation
 
 Missing or not found:
 
@@ -70,41 +70,19 @@ This site's Action Scheduler CLI has `run`, `status`, `source`, `version`, `clea
 
 ### 1. Browser Automation Layer
 
-Use Playwright for repeatable UI checks and screenshots, while keeping the stage files as the source of truth.
+Use Alumnium MCP for browser automation, repeatable UI checks, screenshots, and exploratory visual inspection, while keeping the stage files as the source of truth.
 
-Installed location:
+Recommended workflow:
 
-```text
-qa/automation/
-  package.json
-  playwright.config.js
-  tests/
-  artifacts/
-  storage-states/
-```
-
-Browser binaries are installed at `/opt/ms-playwright` and shared through `/etc/profile.d/playwright.sh`:
-
-```bash
-export PLAYWRIGHT_BROWSERS_PATH=/opt/ms-playwright
-```
-
-Run the admin login smoke test:
-
-```bash
-cd /home/server-manager/www/arrayhash/mirror-help.arrayhash.com/public/wp-content/plugins/qa/automation
-QA_ADMIN_PASS='admin-password-here' npx playwright test tests/admin-login.spec.js --project=chromium-desktop
-```
-
-Recommended capabilities:
-
-- Login fixture for the live admin URL.
-- Separate browser contexts for admin, shop manager, customer, and guest.
-- Automatic capture of screenshots, traces, console errors, failed network responses, and current URL.
-- Artifact paths grouped by `stage/task`, for example `qa/automation/artifacts/05-checkout/01-classic-checkout-basic-subscription/`.
-- One smoke spec per stage first; only automate deeper flows after the manual plan stabilizes.
-
-Use Playwright MCP or the built-in browser for exploratory UI work and visual inspection. Use `npx playwright test` for repeatable checks that should be re-run after fixes.
+- Start an Alumnium MCP browser driver for the target site.
+- Use the documented QA credentials and role-specific accounts from the active stage.
+- Run real end-to-end browser flows against the live test site.
+- Capture screenshots and concrete browser observations for sign-off evidence, failures, and layout-sensitive checks.
+- Use screenshot-based UI inspection to understand screen state, visual hierarchy, visibility, spacing, loading states, disabled states, modals, notices, and interaction behavior before passing or filing an issue.
+- Use separate browser sessions or contexts for admin, shop manager, customer, and guest flows when role isolation matters.
+- Record console errors, failed network responses, current URL, viewport, and screenshots in the stage/task notes or issue body.
+- Group artifacts and notes by `stage/task`, for example `05-checkout/01-classic-checkout-basic-subscription/`.
+- Create one smoke flow per stage first; only automate deeper flows after the manual plan stabilizes.
 
 ### 2. WordPress Time-Travel Tooling
 

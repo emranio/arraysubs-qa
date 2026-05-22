@@ -48,8 +48,8 @@ Confirm that the three initial subscription statuses are produced correctly:
 **Expected Result:**
 - Subscription is listed under Trial.
 - Status badge is cyan and reads **Trial**.
-- Product: `Trial 14-Day`.
-- Next payment date equals the trial end date (Stage 05 Task 03 date + 14 days).
+- Product: `Trial Weekly`.
+- Next payment date equals the trial end date (Stage 05 Task 03 date + 7 days).
 
 **Pass Criteria:** [ ] PASS [ ] FAIL
 **Fail Notes:**

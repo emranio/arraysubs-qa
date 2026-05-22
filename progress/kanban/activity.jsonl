@@ -1,3 +1,543 @@
 {"timestamp":"2026-05-19T22:12:46.717847462+02:00","action":"create","task_id":1,"detail":"Consolidate workspace instructions into AGENTS.md and add QA workflow"}
 {"timestamp":"2026-05-19T22:19:05.924189579+02:00","action":"edit","task_id":1,"detail":"Consolidate workspace instructions into AGENTS.md and add QA workflow"}
 {"timestamp":"2026-05-19T22:19:05.940721362+02:00","action":"move","task_id":1,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-19T22:25:35.309001516+02:00","action":"create","task_id":2,"detail":"Full QA regression stages 00-20"}
+{"timestamp":"2026-05-19T22:25:43.406550773+02:00","action":"create","task_id":3,"detail":"QA scratch inspect"}
+{"timestamp":"2026-05-19T22:26:00.629360104+02:00","action":"delete","task_id":3,"detail":"QA scratch inspect"}
+{"timestamp":"2026-05-19T22:26:00.749614255+02:00","action":"create","task_id":4,"detail":"Stage 00 Pre-flight \u0026 Environment Verification"}
+{"timestamp":"2026-05-19T22:26:00.880462258+02:00","action":"create","task_id":5,"detail":"Stage 01 Easy Setup Wizard"}
+{"timestamp":"2026-05-19T22:26:01.209346353+02:00","action":"create","task_id":6,"detail":"Stage 02 General \u0026 Toolkit Settings"}
+{"timestamp":"2026-05-19T22:26:01.84671689+02:00","action":"create","task_id":7,"detail":"Stage 03 Subscription Product Creation"}
+{"timestamp":"2026-05-19T22:26:02.384069425+02:00","action":"create","task_id":8,"detail":"Stage 04 Cart Validation Rules"}
+{"timestamp":"2026-05-19T22:26:03.006036337+02:00","action":"create","task_id":9,"detail":"Stage 05 Checkout Flow"}
+{"timestamp":"2026-05-19T22:26:03.261995221+02:00","action":"create","task_id":10,"detail":"Stage 06 Initial Subscription Lifecycle"}
+{"timestamp":"2026-05-19T22:26:03.460864127+02:00","action":"create","task_id":11,"detail":"Stage 07 Customer Portal Self-Service"}
+{"timestamp":"2026-05-19T22:26:03.757654178+02:00","action":"create","task_id":12,"detail":"Stage 08 Retention Flow"}
+{"timestamp":"2026-05-19T22:26:04.210325441+02:00","action":"create","task_id":13,"detail":"Stage 09 Member Access \u0026 Restriction Rules"}
+{"timestamp":"2026-05-19T22:26:04.580536838+02:00","action":"create","task_id":14,"detail":"Stage 10 Profile Builder \u0026 My Account"}
+{"timestamp":"2026-05-19T22:26:04.652159965+02:00","action":"create","task_id":15,"detail":"Stage 11 Feature Manager (Pro)"}
+{"timestamp":"2026-05-19T22:26:04.786024643+02:00","action":"create","task_id":16,"detail":"Stage 12 Store Credit (Pro)"}
+{"timestamp":"2026-05-19T22:26:04.952768698+02:00","action":"create","task_id":17,"detail":"Stage 13 Email Notifications"}
+{"timestamp":"2026-05-19T22:26:05.058660058+02:00","action":"create","task_id":18,"detail":"Stage 14 Admin Subscription Management"}
+{"timestamp":"2026-05-19T22:26:05.18118494+02:00","action":"create","task_id":19,"detail":"Stage 15 Manage Members (Pro)"}
+{"timestamp":"2026-05-19T22:26:05.631184021+02:00","action":"create","task_id":20,"detail":"Stage 16 Analytics \u0026 Reports"}
+{"timestamp":"2026-05-19T22:26:06.050822549+02:00","action":"create","task_id":21,"detail":"Stage 17 Audits, Logs \u0026 Troubleshooting (Pro)"}
+{"timestamp":"2026-05-19T22:26:06.157157507+02:00","action":"create","task_id":22,"detail":"Stage 18 Renewal Follow-up \u0026 Time-travel"}
+{"timestamp":"2026-05-19T22:26:06.24981842+02:00","action":"create","task_id":23,"detail":"Stage 19 Refund Management"}
+{"timestamp":"2026-05-19T22:26:06.330336469+02:00","action":"create","task_id":24,"detail":"Stage 20 Edge Cases \u0026 Final Regression"}
+{"timestamp":"2026-05-19T22:26:06.425832547+02:00","action":"move","task_id":4,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-19T22:55:00.789526944+02:00","action":"delete","task_id":6,"detail":"Stage 02 General \u0026 Toolkit Settings"}
+{"timestamp":"2026-05-19T22:55:02.435681157+02:00","action":"delete","task_id":5,"detail":"Stage 01 Easy Setup Wizard"}
+{"timestamp":"2026-05-19T22:55:04.123579169+02:00","action":"delete","task_id":2,"detail":"Full QA regression stages 00-20"}
+{"timestamp":"2026-05-19T22:55:05.37330086+02:00","action":"delete","task_id":24,"detail":"Stage 20 Edge Cases \u0026 Final Regression"}
+{"timestamp":"2026-05-19T22:55:06.41310792+02:00","action":"delete","task_id":22,"detail":"Stage 18 Renewal Follow-up \u0026 Time-travel"}
+{"timestamp":"2026-05-19T22:55:06.993741011+02:00","action":"delete","task_id":13,"detail":"Stage 09 Member Access \u0026 Restriction Rules"}
+{"timestamp":"2026-05-19T22:55:07.36097211+02:00","action":"delete","task_id":12,"detail":"Stage 08 Retention Flow"}
+{"timestamp":"2026-05-19T22:55:07.926425467+02:00","action":"delete","task_id":11,"detail":"Stage 07 Customer Portal Self-Service"}
+{"timestamp":"2026-05-19T22:55:08.367527592+02:00","action":"delete","task_id":10,"detail":"Stage 06 Initial Subscription Lifecycle"}
+{"timestamp":"2026-05-19T22:55:08.778205649+02:00","action":"delete","task_id":9,"detail":"Stage 05 Checkout Flow"}
+{"timestamp":"2026-05-19T22:55:09.171776473+02:00","action":"delete","task_id":8,"detail":"Stage 04 Cart Validation Rules"}
+{"timestamp":"2026-05-19T22:55:09.582294693+02:00","action":"delete","task_id":7,"detail":"Stage 03 Subscription Product Creation"}
+{"timestamp":"2026-05-19T22:55:09.951665756+02:00","action":"delete","task_id":23,"detail":"Stage 19 Refund Management"}
+{"timestamp":"2026-05-19T22:55:10.372471167+02:00","action":"delete","task_id":21,"detail":"Stage 17 Audits, Logs \u0026 Troubleshooting (Pro)"}
+{"timestamp":"2026-05-19T22:55:10.674999011+02:00","action":"delete","task_id":20,"detail":"Stage 16 Analytics \u0026 Reports"}
+{"timestamp":"2026-05-19T22:55:11.104660343+02:00","action":"delete","task_id":19,"detail":"Stage 15 Manage Members (Pro)"}
+{"timestamp":"2026-05-19T22:55:11.431639528+02:00","action":"delete","task_id":18,"detail":"Stage 14 Admin Subscription Management"}
+{"timestamp":"2026-05-19T22:55:11.81431748+02:00","action":"delete","task_id":17,"detail":"Stage 13 Email Notifications"}
+{"timestamp":"2026-05-19T22:55:12.178889076+02:00","action":"delete","task_id":16,"detail":"Stage 12 Store Credit (Pro)"}
+{"timestamp":"2026-05-19T22:55:12.58191481+02:00","action":"delete","task_id":15,"detail":"Stage 11 Feature Manager (Pro)"}
+{"timestamp":"2026-05-19T22:55:12.990034362+02:00","action":"delete","task_id":14,"detail":"Stage 10 Profile Builder \u0026 My Account"}
+{"timestamp":"2026-05-19T22:55:16.910203898+02:00","action":"delete","task_id":4,"detail":"Stage 00 Pre-flight \u0026 Environment Verification"}
+{"timestamp":"2026-05-19T22:55:19.654634584+02:00","action":"delete","task_id":1,"detail":"Consolidate workspace instructions into AGENTS.md and add QA workflow"}
+{"timestamp":"2026-05-19T22:55:59.544439059+02:00","action":"create","task_id":25,"detail":"stage-00: 01 Fresh Install Check"}
+{"timestamp":"2026-05-19T22:55:59.699603052+02:00","action":"create","task_id":26,"detail":"stage-00: 02 Admin Menu and Capabilities"}
+{"timestamp":"2026-05-19T22:55:59.841850312+02:00","action":"create","task_id":27,"detail":"stage-00: 03 Cron and Action Scheduler"}
+{"timestamp":"2026-05-19T22:55:59.963497631+02:00","action":"create","task_id":28,"detail":"stage-00: 04 Test Accounts and Mail"}
+{"timestamp":"2026-05-19T22:56:00.14784106+02:00","action":"create","task_id":29,"detail":"stage-01: 01 Launch and Navigation"}
+{"timestamp":"2026-05-19T22:56:00.400096827+02:00","action":"create","task_id":30,"detail":"stage-01: 02 Business Type Defaults"}
+{"timestamp":"2026-05-19T22:56:00.715248836+02:00","action":"create","task_id":31,"detail":"stage-01: 03 Conditional Questions"}
+{"timestamp":"2026-05-19T22:56:00.901037592+02:00","action":"create","task_id":32,"detail":"stage-01: 04 Pro vs Free Options"}
+{"timestamp":"2026-05-19T22:56:01.104995783+02:00","action":"create","task_id":33,"detail":"stage-01: 05 Apply and Verify Settings"}
+{"timestamp":"2026-05-19T22:56:01.246058985+02:00","action":"create","task_id":34,"detail":"stage-02: 01 General Settings — Each Section"}
+{"timestamp":"2026-05-19T22:56:01.386770851+02:00","action":"create","task_id":35,"detail":"stage-02: 02 Toolkit Settings"}
+{"timestamp":"2026-05-19T22:56:01.5148843+02:00","action":"create","task_id":36,"detail":"stage-02: 03 Import / Export Settings"}
+{"timestamp":"2026-05-19T22:56:01.620590262+02:00","action":"create","task_id":37,"detail":"stage-02: 04 Validation and Error Handling"}
+{"timestamp":"2026-05-19T22:56:01.723003359+02:00","action":"create","task_id":38,"detail":"stage-03: 01 Simple Subscription (Basic Monthly)"}
+{"timestamp":"2026-05-19T22:56:01.956332676+02:00","action":"create","task_id":39,"detail":"stage-03: 02 Simple Subscription with 7-Day Trial"}
+{"timestamp":"2026-05-19T22:56:02.179184564+02:00","action":"create","task_id":40,"detail":"stage-03: 03 Simple Subscription with $4.99 Signup Fee"}
+{"timestamp":"2026-05-19T22:56:02.319685166+02:00","action":"create","task_id":41,"detail":"stage-03: 04 Simple Subscription with Different Renewal Price"}
+{"timestamp":"2026-05-19T22:56:02.504254257+02:00","action":"create","task_id":42,"detail":"stage-03: 05 Simple Lifetime Deal Subscription"}
+{"timestamp":"2026-05-19T22:56:02.71103623+02:00","action":"create","task_id":43,"detail":"stage-03: 06 Simple Fixed-Length Subscription (6 Cycles)"}
+{"timestamp":"2026-05-19T22:56:03.16867074+02:00","action":"create","task_id":44,"detail":"stage-03: 07 Variable Subscription — Weekly vs Bi-weekly"}
+{"timestamp":"2026-05-19T22:56:03.894385883+02:00","action":"create","task_id":45,"detail":"stage-03: 08 Variable Subscription with Mixed Cadences and Signup Fees"}
+{"timestamp":"2026-05-19T22:56:04.113645087+02:00","action":"create","task_id":46,"detail":"stage-03: 09 Subscription Validation Rules"}
+{"timestamp":"2026-05-19T22:56:04.35323519+02:00","action":"create","task_id":47,"detail":"stage-03: 10 Linked Products — Upgrade / Downgrade / Crossgrade"}
+{"timestamp":"2026-05-19T22:56:04.520679876+02:00","action":"create","task_id":48,"detail":"stage-03: 11 Fixed Period Membership (Pro)"}
+{"timestamp":"2026-05-19T22:56:04.721253361+02:00","action":"create","task_id":49,"detail":"stage-03: 12 Feature Manager Entitlements (Pro)"}
+{"timestamp":"2026-05-19T22:56:05.071778238+02:00","action":"create","task_id":50,"detail":"stage-03: 13 Product Experience and Display"}
+{"timestamp":"2026-05-19T22:56:05.36987455+02:00","action":"create","task_id":51,"detail":"stage-03: 14 Coupon — Apply to Subscriptions Toggle"}
+{"timestamp":"2026-05-19T22:56:05.684728705+02:00","action":"create","task_id":52,"detail":"stage-03: 15 Recurring Coupon with Cycle Limit"}
+{"timestamp":"2026-05-19T22:56:05.865279584+02:00","action":"create","task_id":53,"detail":"stage-03: 16 Product Lifecycle — Trash and Restore"}
+{"timestamp":"2026-05-19T22:56:06.009233291+02:00","action":"create","task_id":54,"detail":"stage-04: 01 Mixed Cart Rule"}
+{"timestamp":"2026-05-19T22:56:06.119883162+02:00","action":"create","task_id":55,"detail":"stage-04: 02 Multiple Subscriptions In Cart"}
+{"timestamp":"2026-05-19T22:56:06.227741973+02:00","action":"create","task_id":56,"detail":"stage-04: 03 One Subscription Per Product Rule"}
+{"timestamp":"2026-05-19T22:56:06.377573752+02:00","action":"create","task_id":57,"detail":"stage-04: 04 Different Billing Cycles Rule"}
+{"timestamp":"2026-05-19T22:56:06.477435777+02:00","action":"create","task_id":58,"detail":"stage-04: 05 One Trial Per Customer Rule"}
+{"timestamp":"2026-05-19T22:56:06.57453798+02:00","action":"create","task_id":59,"detail":"stage-04: 06 One Subscription Per Customer with Auto-Migrate"}
+{"timestamp":"2026-05-19T22:56:06.661032443+02:00","action":"create","task_id":60,"detail":"stage-04: 07 Block Checkout Parity"}
+{"timestamp":"2026-05-19T22:56:06.745439509+02:00","action":"create","task_id":61,"detail":"stage-05: 01 Classic Checkout — Standard Weekly Subscription"}
+{"timestamp":"2026-05-19T22:56:06.845617574+02:00","action":"create","task_id":62,"detail":"stage-05: 02 Block Checkout Parity"}
+{"timestamp":"2026-05-19T22:56:06.928686582+02:00","action":"create","task_id":63,"detail":"stage-05: 03 Trial Checkout — No Signup Fee"}
+{"timestamp":"2026-05-19T22:56:07.039428365+02:00","action":"create","task_id":64,"detail":"stage-05: 04 Trial Checkout — With $4.99 Signup Fee"}
+{"timestamp":"2026-05-19T22:56:07.203342961+02:00","action":"create","task_id":65,"detail":"stage-05: 05 Different Renewal Price Summary"}
+{"timestamp":"2026-05-19T22:56:07.405762162+02:00","action":"create","task_id":66,"detail":"stage-05: 06 Auto-Create Account as Guest"}
+{"timestamp":"2026-05-19T22:56:07.557135439+02:00","action":"create","task_id":67,"detail":"stage-05: 07 Guest Checkout with Auto-Create OFF"}
+{"timestamp":"2026-05-19T22:56:07.665393216+02:00","action":"create","task_id":68,"detail":"stage-05: 08 One-Click Checkout"}
+{"timestamp":"2026-05-19T22:56:07.766514942+02:00","action":"create","task_id":69,"detail":"stage-05: 09 Checkout with Coupon (One-Time + Recurring with Cycle Limit)"}
+{"timestamp":"2026-05-19T22:56:07.897419732+02:00","action":"create","task_id":70,"detail":"stage-05: 10 Plan Switching at Checkout (Checkout Migration)"}
+{"timestamp":"2026-05-19T22:56:08.018778552+02:00","action":"create","task_id":71,"detail":"stage-05: 11 Stripe Test Card Flow (Pro)"}
+{"timestamp":"2026-05-19T22:56:08.167384114+02:00","action":"create","task_id":72,"detail":"stage-05: 12 Stripe Webhook Verification \u0026 Payment-Method Lifecycle"}
+{"timestamp":"2026-05-19T22:56:08.309084304+02:00","action":"create","task_id":73,"detail":"stage-05: 13 Checkout Builder Customization (Pro)"}
+{"timestamp":"2026-05-19T22:56:08.414515324+02:00","action":"create","task_id":74,"detail":"stage-05: 14 Mixed Cart and Block Checkout"}
+{"timestamp":"2026-05-19T22:56:08.54529986+02:00","action":"create","task_id":75,"detail":"stage-06: 01 Subscription Record After Checkout"}
+{"timestamp":"2026-05-19T22:56:08.646497036+02:00","action":"create","task_id":76,"detail":"stage-06: 02 Status — Active vs Trial vs Pending"}
+{"timestamp":"2026-05-19T22:56:08.785537864+02:00","action":"create","task_id":77,"detail":"stage-06: 03 Subscription Detail Screen — Cards Verification"}
+{"timestamp":"2026-05-19T22:56:08.925813995+02:00","action":"create","task_id":78,"detail":"stage-06: 04 Customer Portal Display"}
+{"timestamp":"2026-05-19T22:56:09.199710096+02:00","action":"create","task_id":79,"detail":"stage-06: 05 Order Page Related Subscriptions"}
+{"timestamp":"2026-05-19T22:56:09.342298034+02:00","action":"create","task_id":80,"detail":"stage-06: 06 Emails on Subscription Creation"}
+{"timestamp":"2026-05-19T22:56:09.49452815+02:00","action":"create","task_id":81,"detail":"stage-07: 01 My Subscriptions List"}
+{"timestamp":"2026-05-19T22:56:09.575755119+02:00","action":"create","task_id":82,"detail":"stage-07: 02 View Subscription Detail"}
+{"timestamp":"2026-05-19T22:56:09.713953203+02:00","action":"create","task_id":83,"detail":"stage-07: 03 Cancel Subscription Immediately"}
+{"timestamp":"2026-05-19T22:56:09.861679653+02:00","action":"create","task_id":84,"detail":"stage-07: 04 Cancel at End of Billing Period"}
+{"timestamp":"2026-05-19T22:56:10.02347809+02:00","action":"create","task_id":85,"detail":"stage-07: 05 Undo Scheduled Cancellation"}
+{"timestamp":"2026-05-19T22:56:10.155577089+02:00","action":"create","task_id":86,"detail":"stage-07: 06 Skip Next Renewal and Undo Skip"}
+{"timestamp":"2026-05-19T22:56:10.264534412+02:00","action":"create","task_id":87,"detail":"stage-07: 07 Pause Subscription and Resume"}
+{"timestamp":"2026-05-19T22:56:10.396614786+02:00","action":"create","task_id":88,"detail":"stage-07: 08 Change Plan — Immediate Proration"}
+{"timestamp":"2026-05-19T22:56:10.512506243+02:00","action":"create","task_id":89,"detail":"stage-07: 09 Change Plan — Apply at Renewal"}
+{"timestamp":"2026-05-19T22:56:10.658834603+02:00","action":"create","task_id":90,"detail":"stage-07: 10 Payment Method, Auto-Renew Toggle, and Shipping"}
+{"timestamp":"2026-05-19T22:56:11.013323691+02:00","action":"create","task_id":91,"detail":"stage-07: 11 Action Availability by Subscription Status"}
+{"timestamp":"2026-05-19T22:56:11.200304523+02:00","action":"create","task_id":92,"detail":"stage-08: 01 Cancellation Reasons Setup"}
+{"timestamp":"2026-05-19T22:56:11.367994467+02:00","action":"create","task_id":93,"detail":"stage-08: 02 Discount Offer"}
+{"timestamp":"2026-05-19T22:56:11.52480289+02:00","action":"create","task_id":94,"detail":"stage-08: 03 Pause Offer"}
+{"timestamp":"2026-05-19T22:56:11.637791327+02:00","action":"create","task_id":95,"detail":"stage-08: 04 Downgrade Offer"}
+{"timestamp":"2026-05-19T22:56:11.764056597+02:00","action":"create","task_id":96,"detail":"stage-08: 05 Contact Support Offer"}
+{"timestamp":"2026-05-19T22:56:11.870217129+02:00","action":"create","task_id":97,"detail":"stage-08: 06 Eligibility Conditions"}
+{"timestamp":"2026-05-19T22:56:11.977901566+02:00","action":"create","task_id":98,"detail":"stage-08: 07 Retention Analytics Dashboard"}
+{"timestamp":"2026-05-19T22:56:12.085290681+02:00","action":"create","task_id":99,"detail":"stage-09: 01 Role Mapping (Pro Plan → Pro Member)"}
+{"timestamp":"2026-05-19T22:56:12.233911049+02:00","action":"create","task_id":100,"detail":"stage-09: 02 URL Rules — `/premium-content` Restriction"}
+{"timestamp":"2026-05-19T22:56:12.426967864+02:00","action":"create","task_id":101,"detail":"stage-09: 03 Post Type Rules + Per-Post Override"}
+{"timestamp":"2026-05-19T22:56:12.614222368+02:00","action":"create","task_id":102,"detail":"stage-09: 04 Discount Rule — Members Get 15% Off"}
+{"timestamp":"2026-05-19T22:56:12.755219296+02:00","action":"create","task_id":103,"detail":"stage-09: 05 Ecommerce Rule — Members-Only Purchase"}
+{"timestamp":"2026-05-19T22:56:12.918947116+02:00","action":"create","task_id":104,"detail":"stage-09: 06 Download Rules — Rate-Limited Downloads"}
+{"timestamp":"2026-05-19T22:56:13.121445214+02:00","action":"create","task_id":105,"detail":"stage-09: 07 Drip / Scheduled Access (7-Day Unlock)"}
+{"timestamp":"2026-05-19T22:56:13.356282537+02:00","action":"create","task_id":106,"detail":"stage-09: 08 Content Gating Messages \u0026 Default Redirect"}
+{"timestamp":"2026-05-19T22:56:13.546819269+02:00","action":"create","task_id":107,"detail":"stage-09: 09 Restriction Shortcodes — `[arraysubs_restrict]` \u0026 `[arraysubs_visibility]`"}
+{"timestamp":"2026-05-19T22:56:13.734815938+02:00","action":"create","task_id":108,"detail":"stage-09: 10 Pause-State Access Behavior (None / Limited / Full)"}
+{"timestamp":"2026-05-19T22:56:13.876421202+02:00","action":"create","task_id":109,"detail":"stage-09: 11 Multi-Login Prevention *(Pro)* — Max 2 Sessions"}
+{"timestamp":"2026-05-19T22:56:13.986480982+02:00","action":"create","task_id":110,"detail":"stage-10: 01 Custom Profile Fields (6 Field Types)"}
+{"timestamp":"2026-05-19T22:56:14.105950808+02:00","action":"create","task_id":111,"detail":"stage-10: 02 Avatar Upload Settings"}
+{"timestamp":"2026-05-19T22:56:14.203010783+02:00","action":"create","task_id":112,"detail":"stage-10: 03 My Account Editor — Reorder, Rename, Hide, Custom Endpoint"}
+{"timestamp":"2026-05-19T22:56:14.399472023+02:00","action":"create","task_id":113,"detail":"stage-10: 04 Account Shortcodes \u0026 Shortcodes Reference Page"}
+{"timestamp":"2026-05-19T22:56:14.680462647+02:00","action":"create","task_id":114,"detail":"stage-11: 01 Define Product Features"}
+{"timestamp":"2026-05-19T22:56:14.912190426+02:00","action":"create","task_id":115,"detail":"stage-11: 02 Customer and Storefront Display"}
+{"timestamp":"2026-05-19T22:56:15.104872783+02:00","action":"create","task_id":116,"detail":"stage-11: 03 Feature Manager Settings"}
+{"timestamp":"2026-05-19T22:56:15.249964665+02:00","action":"create","task_id":117,"detail":"stage-11: 04 Feature Log and Entitlement Review"}
+{"timestamp":"2026-05-19T22:56:15.424991645+02:00","action":"create","task_id":118,"detail":"stage-12: 01 Store Credit Settings"}
+{"timestamp":"2026-05-19T22:56:15.603687904+02:00","action":"create","task_id":119,"detail":"stage-12: 02 Manual Credit Adjustments"}
+{"timestamp":"2026-05-19T22:56:15.743427215+02:00","action":"create","task_id":120,"detail":"stage-12: 03 Credit History Filters"}
+{"timestamp":"2026-05-19T22:56:15.906603774+02:00","action":"create","task_id":121,"detail":"stage-12: 04 Buy Credits Product"}
+{"timestamp":"2026-05-19T22:56:16.066336366+02:00","action":"create","task_id":122,"detail":"stage-12: 05 Purchase with Credit at Checkout"}
+{"timestamp":"2026-05-19T22:56:16.159510899+02:00","action":"create","task_id":123,"detail":"stage-12: 06 Auto-Apply on Renewal"}
+{"timestamp":"2026-05-19T22:56:16.28013591+02:00","action":"create","task_id":124,"detail":"stage-12: 07 Refund to Credit"}
+{"timestamp":"2026-05-19T22:56:16.501844859+02:00","action":"create","task_id":125,"detail":"stage-12: 08 Store Credit Emails and Expiration"}
+{"timestamp":"2026-05-19T22:56:16.651705422+02:00","action":"create","task_id":126,"detail":"stage-13: 01 Customer Emails Trigger Matrix"}
+{"timestamp":"2026-05-19T22:56:16.800524071+02:00","action":"create","task_id":127,"detail":"stage-13: 02 Admin Emails"}
+{"timestamp":"2026-05-19T22:56:16.98285755+02:00","action":"create","task_id":128,"detail":"stage-13: 03 Store Credit Emails (Pro)"}
+{"timestamp":"2026-05-19T22:56:17.13467145+02:00","action":"create","task_id":129,"detail":"stage-13: 04 Pro Emails — Card Expiring + SCA Authentication Required"}
+{"timestamp":"2026-05-19T22:56:17.290993616+02:00","action":"create","task_id":130,"detail":"stage-13: 05 Enable / Disable Toggles"}
+{"timestamp":"2026-05-19T22:56:17.472751249+02:00","action":"create","task_id":131,"detail":"stage-14: 01 All Subscriptions List and Filters"}
+{"timestamp":"2026-05-19T22:56:17.600271322+02:00","action":"create","task_id":132,"detail":"stage-14: 02 Create Subscription From Admin"}
+{"timestamp":"2026-05-19T22:56:17.763390054+02:00","action":"create","task_id":133,"detail":"stage-14: 03 Edit Subscription Fields"}
+{"timestamp":"2026-05-19T22:56:17.858653596+02:00","action":"create","task_id":134,"detail":"stage-14: 04 Subscription Detail Cards"}
+{"timestamp":"2026-05-19T22:56:17.994640824+02:00","action":"create","task_id":135,"detail":"stage-14: 05 Subscription Notes"}
+{"timestamp":"2026-05-19T22:56:18.107009995+02:00","action":"create","task_id":136,"detail":"stage-14: 06 Related Orders and Refunds"}
+{"timestamp":"2026-05-19T22:56:18.234497577+02:00","action":"create","task_id":137,"detail":"stage-14: 07 Export Subscriptions (CSV and JSON)"}
+{"timestamp":"2026-05-19T22:56:18.404648316+02:00","action":"create","task_id":138,"detail":"stage-14: 08 Status Change Side Effects (Dropdown vs. Cancel Button)"}
+{"timestamp":"2026-05-19T22:56:18.629989704+02:00","action":"create","task_id":139,"detail":"stage-15: 01 Member Search"}
+{"timestamp":"2026-05-19T22:56:18.78027467+02:00","action":"create","task_id":140,"detail":"stage-15: 02 Member Profile"}
+{"timestamp":"2026-05-19T22:56:18.986137559+02:00","action":"create","task_id":141,"detail":"stage-15: 03 Member Commerce Overview"}
+{"timestamp":"2026-05-19T22:56:19.152837928+02:00","action":"create","task_id":142,"detail":"stage-15: 04 Member Operations and Insights"}
+{"timestamp":"2026-05-19T22:56:19.386140727+02:00","action":"create","task_id":143,"detail":"stage-16: 01 Reports Hub"}
+{"timestamp":"2026-05-19T22:56:19.569129219+02:00","action":"create","task_id":144,"detail":"stage-16: 02 Subscription Performance Dashboard *(Pro)*"}
+{"timestamp":"2026-05-19T22:56:19.779791307+02:00","action":"create","task_id":145,"detail":"stage-16: 03 Performance Charts *(Pro)*"}
+{"timestamp":"2026-05-19T22:56:20.018920894+02:00","action":"create","task_id":146,"detail":"stage-16: 04 WooCommerce Analytics Extension *(Pro)*"}
+{"timestamp":"2026-05-19T22:56:20.211717224+02:00","action":"create","task_id":147,"detail":"stage-16: 05 Order List Enhancements"}
+{"timestamp":"2026-05-19T22:56:20.499181313+02:00","action":"create","task_id":148,"detail":"stage-17: 01 Activity Audits"}
+{"timestamp":"2026-05-19T22:56:20.656296348+02:00","action":"create","task_id":149,"detail":"stage-17: 02 Audit Logging Settings"}
+{"timestamp":"2026-05-19T22:56:20.786062393+02:00","action":"create","task_id":150,"detail":"stage-17: 03 Scheduled-Job Logs"}
+{"timestamp":"2026-05-19T22:56:20.948001343+02:00","action":"create","task_id":151,"detail":"stage-17: 04 Gateway Health Dashboard (Stripe only)"}
+{"timestamp":"2026-05-19T22:56:21.231437214+02:00","action":"create","task_id":152,"detail":"stage-17: 05 Renewal Failures Troubleshooting"}
+{"timestamp":"2026-05-19T22:56:21.409779062+02:00","action":"create","task_id":153,"detail":"stage-17: 06 Portal Action Failures"}
+{"timestamp":"2026-05-19T22:56:21.601188001+02:00","action":"create","task_id":154,"detail":"stage-17: 07 Access-Rule Conflicts"}
+{"timestamp":"2026-05-19T22:56:21.723958078+02:00","action":"create","task_id":155,"detail":"stage-18: 01 Time-Travel Method"}
+{"timestamp":"2026-05-19T22:56:21.823253226+02:00","action":"create","task_id":156,"detail":"stage-18: 02 Successful Manual Renewal"}
+{"timestamp":"2026-05-19T22:56:21.960188783+02:00","action":"create","task_id":157,"detail":"stage-18: 03 Successful Automatic Renewal (Pro)"}
+{"timestamp":"2026-05-19T22:56:22.075001857+02:00","action":"create","task_id":158,"detail":"stage-18: 04 Failed Renewal — Active Grace Period (Pro)"}
+{"timestamp":"2026-05-19T22:56:22.206449882+02:00","action":"create","task_id":159,"detail":"stage-18: 05 Grace → On-Hold Transition"}
+{"timestamp":"2026-05-19T22:56:22.333287501+02:00","action":"create","task_id":160,"detail":"stage-18: 06 On-Hold → Cancelled Transition (overdue_payment)"}
+{"timestamp":"2026-05-19T22:56:22.532636191+02:00","action":"create","task_id":161,"detail":"stage-18: 07 Trial → Active Conversion"}
+{"timestamp":"2026-05-19T22:56:22.673640084+02:00","action":"create","task_id":162,"detail":"stage-18: 08 Trial Auto-Downgrade"}
+{"timestamp":"2026-05-19T22:56:22.975254527+02:00","action":"create","task_id":163,"detail":"stage-18: 09 Different Renewal Price Threshold"}
+{"timestamp":"2026-05-19T22:56:23.118583699+02:00","action":"create","task_id":164,"detail":"stage-18: 10 Skip and Pause Over Renewal Cycles"}
+{"timestamp":"2026-05-19T22:56:23.268790159+02:00","action":"create","task_id":165,"detail":"stage-18: 11 Renewal Reminders \u0026 Subscription Expiring Soon"}
+{"timestamp":"2026-05-19T22:56:23.383345321+02:00","action":"create","task_id":166,"detail":"stage-18: 12 Fixed-Period Membership Expiration (Pro)"}
+{"timestamp":"2026-05-19T22:56:23.495288097+02:00","action":"create","task_id":167,"detail":"stage-19: 01 Refund Settings Persistence"}
+{"timestamp":"2026-05-19T22:56:23.651577412+02:00","action":"create","task_id":168,"detail":"stage-19: 02 Prorated Refund on Cancellation (Standard Weekly)"}
+{"timestamp":"2026-05-19T22:56:23.78075015+02:00","action":"create","task_id":169,"detail":"stage-19: 03 Refund at End of Period"}
+{"timestamp":"2026-05-19T22:56:23.918668643+02:00","action":"create","task_id":170,"detail":"stage-19: 04 No Automatic Refund"}
+{"timestamp":"2026-05-19T22:56:24.109101762+02:00","action":"create","task_id":171,"detail":"stage-19: 05 Refund to Store Credit (Pro)"}
+{"timestamp":"2026-05-19T22:56:24.254052441+02:00","action":"create","task_id":172,"detail":"stage-19: 06 Subscription State After Full Refund"}
+{"timestamp":"2026-05-19T22:56:24.375042625+02:00","action":"create","task_id":173,"detail":"stage-20: 01 Pro Deactivation While Subscriptions Are Running"}
+{"timestamp":"2026-05-19T22:56:24.500493316+02:00","action":"create","task_id":174,"detail":"stage-20: 02 Core Plugin Deactivation"}
+{"timestamp":"2026-05-19T22:56:24.600182098+02:00","action":"create","task_id":175,"detail":"stage-20: 03 Cron Stoppage and Recovery"}
+{"timestamp":"2026-05-19T22:56:24.758304023+02:00","action":"create","task_id":176,"detail":"stage-20: 04 Concurrent Actions (Race Conditions)"}
+{"timestamp":"2026-05-19T22:56:24.857549168+02:00","action":"create","task_id":177,"detail":"stage-20: 05 Performance With Many Subscriptions"}
+{"timestamp":"2026-05-19T22:56:24.977526181+02:00","action":"create","task_id":178,"detail":"stage-20: 06 Final Regression Smoke Pass"}
+{"timestamp":"2026-05-19T22:58:35.215549468+02:00","action":"move","task_id":25,"detail":"open -\u003e closed"}
+{"timestamp":"2026-05-19T22:58:35.216559463+02:00","action":"move","task_id":26,"detail":"open -\u003e closed"}
+{"timestamp":"2026-05-19T22:58:35.217334931+02:00","action":"move","task_id":27,"detail":"open -\u003e closed"}
+{"timestamp":"2026-05-19T22:58:35.218216497+02:00","action":"move","task_id":28,"detail":"open -\u003e closed"}
+{"timestamp":"2026-05-19T23:02:21.67010769+02:00","action":"move","task_id":29,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-19T23:49:10.608673699+02:00","action":"edit","task_id":29,"detail":"stage-01: 01 Launch and Navigation"}
+{"timestamp":"2026-05-20T00:03:31.802073594+02:00","action":"edit","task_id":30,"detail":"stage-01: 02 Business Type Defaults"}
+{"timestamp":"2026-05-20T00:03:31.802647086+02:00","action":"claim","task_id":30,"detail":"mold-glade"}
+{"timestamp":"2026-05-20T00:03:31.8037092+02:00","action":"edit","task_id":31,"detail":"stage-01: 03 Conditional Questions"}
+{"timestamp":"2026-05-20T00:03:31.803813925+02:00","action":"claim","task_id":31,"detail":"mold-glade"}
+{"timestamp":"2026-05-20T00:03:31.805065534+02:00","action":"edit","task_id":32,"detail":"stage-01: 04 Pro vs Free Options"}
+{"timestamp":"2026-05-20T00:03:31.805456204+02:00","action":"claim","task_id":32,"detail":"mold-glade"}
+{"timestamp":"2026-05-20T00:03:31.806627742+02:00","action":"edit","task_id":33,"detail":"stage-01: 05 Apply and Verify Settings"}
+{"timestamp":"2026-05-20T00:03:31.806826955+02:00","action":"claim","task_id":33,"detail":"mold-glade"}
+{"timestamp":"2026-05-20T00:03:31.80787407+02:00","action":"edit","task_id":34,"detail":"stage-02: 01 General Settings — Each Section"}
+{"timestamp":"2026-05-20T00:03:31.808527111+02:00","action":"claim","task_id":34,"detail":"mold-glade"}
+{"timestamp":"2026-05-20T00:03:31.809889967+02:00","action":"edit","task_id":35,"detail":"stage-02: 02 Toolkit Settings"}
+{"timestamp":"2026-05-20T00:03:31.810095049+02:00","action":"claim","task_id":35,"detail":"mold-glade"}
+{"timestamp":"2026-05-20T00:03:31.813015244+02:00","action":"edit","task_id":36,"detail":"stage-02: 03 Import / Export Settings"}
+{"timestamp":"2026-05-20T00:03:31.814740758+02:00","action":"claim","task_id":36,"detail":"mold-glade"}
+{"timestamp":"2026-05-20T00:03:31.816261488+02:00","action":"edit","task_id":37,"detail":"stage-02: 04 Validation and Error Handling"}
+{"timestamp":"2026-05-20T00:03:31.816421367+02:00","action":"claim","task_id":37,"detail":"mold-glade"}
+{"timestamp":"2026-05-20T00:17:41.829083704+02:00","action":"edit","task_id":29,"detail":"stage-01: 01 Launch and Navigation"}
+{"timestamp":"2026-05-20T00:17:51.221254939+02:00","action":"edit","task_id":29,"detail":"stage-01: 01 Launch and Navigation"}
+{"timestamp":"2026-05-20T00:19:28.364377114+02:00","action":"move","task_id":29,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-20T00:19:35.992827181+02:00","action":"edit","task_id":29,"detail":"stage-01: 01 Launch and Navigation"}
+{"timestamp":"2026-05-20T00:19:36.083614064+02:00","action":"edit","task_id":29,"detail":"stage-01: 01 Launch and Navigation"}
+{"timestamp":"2026-05-20T00:19:36.083825619+02:00","action":"release","task_id":29,"detail":"dart-thorn"}
+{"timestamp":"2026-05-20T00:19:36.190574627+02:00","action":"move","task_id":30,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-20T00:19:42.716097255+02:00","action":"edit","task_id":30,"detail":"stage-01: 02 Business Type Defaults"}
+{"timestamp":"2026-05-20T00:27:36.565394468+02:00","action":"edit","task_id":30,"detail":"stage-01: 02 Business Type Defaults"}
+{"timestamp":"2026-05-20T00:27:48.405735619+02:00","action":"move","task_id":30,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-20T00:30:08.52012739+02:00","action":"edit","task_id":30,"detail":"stage-01: 02 Business Type Defaults"}
+{"timestamp":"2026-05-20T00:30:08.759392816+02:00","action":"edit","task_id":30,"detail":"stage-01: 02 Business Type Defaults"}
+{"timestamp":"2026-05-20T00:30:08.760474666+02:00","action":"release","task_id":30,"detail":"mold-glade"}
+{"timestamp":"2026-05-20T00:35:19.407410565+02:00","action":"move","task_id":31,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-20T00:35:19.733210377+02:00","action":"move","task_id":32,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-20T00:35:20.029892116+02:00","action":"move","task_id":33,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-20T00:35:20.727331173+02:00","action":"move","task_id":34,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-20T00:35:21.234905516+02:00","action":"move","task_id":35,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-20T00:35:21.442266085+02:00","action":"move","task_id":36,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-20T00:35:21.740750041+02:00","action":"move","task_id":37,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-20T00:46:55.157183486+02:00","action":"edit","task_id":31,"detail":"stage-01: 03 Conditional Questions"}
+{"timestamp":"2026-05-20T00:47:02.088841962+02:00","action":"move","task_id":31,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-20T00:49:12.827085711+02:00","action":"edit","task_id":32,"detail":"stage-01: 04 Pro vs Free Options"}
+{"timestamp":"2026-05-20T00:49:13.021047736+02:00","action":"move","task_id":32,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-20T01:08:59.436030359+02:00","action":"edit","task_id":34,"detail":"stage-02: 01 General Settings — Each Section"}
+{"timestamp":"2026-05-20T01:08:59.620456527+02:00","action":"edit","task_id":35,"detail":"stage-02: 02 Toolkit Settings"}
+{"timestamp":"2026-05-20T01:08:59.827221944+02:00","action":"edit","task_id":36,"detail":"stage-02: 03 Import / Export Settings"}
+{"timestamp":"2026-05-20T01:08:59.934793549+02:00","action":"edit","task_id":37,"detail":"stage-02: 04 Validation and Error Handling"}
+{"timestamp":"2026-05-20T01:09:12.053623043+02:00","action":"move","task_id":34,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-20T01:09:12.05505449+02:00","action":"move","task_id":35,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-20T01:09:12.055785844+02:00","action":"move","task_id":36,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-20T01:09:12.057374054+02:00","action":"move","task_id":37,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-20T01:09:24.159833723+02:00","action":"move","task_id":38,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-20T01:09:24.160797449+02:00","action":"move","task_id":39,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-20T01:09:24.161825776+02:00","action":"move","task_id":40,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-20T01:09:24.162715895+02:00","action":"move","task_id":41,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-20T01:09:24.163538228+02:00","action":"move","task_id":42,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-20T01:09:24.164288406+02:00","action":"move","task_id":43,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-20T01:09:24.165048182+02:00","action":"move","task_id":44,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-20T01:09:24.165606322+02:00","action":"move","task_id":45,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-20T01:09:24.167737715+02:00","action":"move","task_id":46,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-20T01:09:24.170482812+02:00","action":"move","task_id":47,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-20T01:09:24.172400257+02:00","action":"move","task_id":48,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-20T01:09:24.174099203+02:00","action":"move","task_id":49,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-20T01:09:24.174954157+02:00","action":"move","task_id":50,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-20T01:09:24.175713432+02:00","action":"move","task_id":51,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-20T01:09:24.176349318+02:00","action":"move","task_id":52,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-20T01:09:24.176899253+02:00","action":"move","task_id":53,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-20T01:18:18.123237685+02:00","action":"edit","task_id":38,"detail":"stage-03: 01 Simple Subscription (Basic Monthly)"}
+{"timestamp":"2026-05-20T01:18:18.308662955+02:00","action":"move","task_id":38,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-20T01:22:54.685001961+02:00","action":"edit","task_id":39,"detail":"stage-03: 02 Simple Subscription with 7-Day Trial"}
+{"timestamp":"2026-05-20T01:22:54.789952146+02:00","action":"move","task_id":39,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-20T01:26:40.096054068+02:00","action":"edit","task_id":40,"detail":"stage-03: 03 Simple Subscription with $4.99 Signup Fee"}
+{"timestamp":"2026-05-20T01:26:40.235542493+02:00","action":"move","task_id":40,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-20T01:32:32.68470065+02:00","action":"edit","task_id":41,"detail":"stage-03: 04 Simple Subscription with Different Renewal Price"}
+{"timestamp":"2026-05-20T01:32:32.778952278+02:00","action":"move","task_id":41,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-20T08:17:36.404304944+02:00","action":"edit","task_id":33,"detail":"stage-01: 05 Apply and Verify Settings"}
+{"timestamp":"2026-05-20T08:17:36.532035475+02:00","action":"move","task_id":33,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-20T08:35:12.410143142+02:00","action":"edit","task_id":42,"detail":"stage-03: 05 Simple Lifetime Deal Subscription"}
+{"timestamp":"2026-05-20T08:35:12.531569261+02:00","action":"edit","task_id":43,"detail":"stage-03: 06 Simple Fixed-Length Subscription (6 Cycles)"}
+{"timestamp":"2026-05-20T08:35:12.634639598+02:00","action":"edit","task_id":44,"detail":"stage-03: 07 Variable Subscription — Weekly vs Bi-weekly"}
+{"timestamp":"2026-05-20T08:35:12.821061849+02:00","action":"edit","task_id":45,"detail":"stage-03: 08 Variable Subscription with Mixed Cadences and Signup Fees"}
+{"timestamp":"2026-05-20T08:35:13.056876129+02:00","action":"edit","task_id":46,"detail":"stage-03: 09 Subscription Validation Rules"}
+{"timestamp":"2026-05-20T08:35:13.214161446+02:00","action":"edit","task_id":47,"detail":"stage-03: 10 Linked Products — Upgrade / Downgrade / Crossgrade"}
+{"timestamp":"2026-05-20T08:35:13.304117943+02:00","action":"edit","task_id":48,"detail":"stage-03: 11 Fixed Period Membership (Pro)"}
+{"timestamp":"2026-05-20T08:35:13.419066674+02:00","action":"edit","task_id":49,"detail":"stage-03: 12 Feature Manager Entitlements (Pro)"}
+{"timestamp":"2026-05-20T08:35:13.503265448+02:00","action":"edit","task_id":50,"detail":"stage-03: 13 Product Experience and Display"}
+{"timestamp":"2026-05-20T08:35:13.598459116+02:00","action":"edit","task_id":51,"detail":"stage-03: 14 Coupon — Apply to Subscriptions Toggle"}
+{"timestamp":"2026-05-20T08:35:13.701679884+02:00","action":"edit","task_id":52,"detail":"stage-03: 15 Recurring Coupon with Cycle Limit"}
+{"timestamp":"2026-05-20T08:35:13.787044556+02:00","action":"edit","task_id":53,"detail":"stage-03: 16 Product Lifecycle — Trash and Restore"}
+{"timestamp":"2026-05-20T08:35:13.881225923+02:00","action":"move","task_id":42,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-20T08:35:13.882088573+02:00","action":"move","task_id":43,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-20T08:35:13.882726465+02:00","action":"move","task_id":44,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-20T08:35:13.883865382+02:00","action":"move","task_id":45,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-20T08:35:13.885483554+02:00","action":"move","task_id":46,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-20T08:35:13.886627851+02:00","action":"move","task_id":47,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-20T08:35:13.888219604+02:00","action":"move","task_id":48,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-20T08:35:13.889680132+02:00","action":"move","task_id":49,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-20T08:35:13.894566487+02:00","action":"move","task_id":50,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-20T08:35:13.900802684+02:00","action":"move","task_id":51,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-20T08:35:13.901650667+02:00","action":"move","task_id":52,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-20T08:35:13.902651266+02:00","action":"move","task_id":53,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-20T10:28:05.872461754+02:00","action":"move","task_id":54,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-20T10:28:05.898120165+02:00","action":"move","task_id":55,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-20T10:28:05.90713253+02:00","action":"move","task_id":56,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-20T10:28:05.911889837+02:00","action":"move","task_id":57,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-20T10:28:05.924626039+02:00","action":"move","task_id":58,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-20T10:28:05.926289095+02:00","action":"move","task_id":59,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-20T10:28:05.928290524+02:00","action":"move","task_id":60,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-20T10:28:05.930119019+02:00","action":"move","task_id":61,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-20T10:28:05.931021916+02:00","action":"move","task_id":62,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-20T10:28:05.934170457+02:00","action":"move","task_id":63,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-20T10:28:05.935411696+02:00","action":"move","task_id":64,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-20T10:28:05.94108758+02:00","action":"move","task_id":65,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-20T10:28:05.942197052+02:00","action":"move","task_id":66,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-20T10:28:05.943028114+02:00","action":"move","task_id":67,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-20T10:28:05.943867753+02:00","action":"move","task_id":68,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-20T10:28:05.944789916+02:00","action":"move","task_id":69,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-20T10:28:05.945763093+02:00","action":"move","task_id":70,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-20T10:28:06.010887518+02:00","action":"move","task_id":71,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-20T10:28:06.011692812+02:00","action":"move","task_id":72,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-20T10:28:06.012379114+02:00","action":"move","task_id":73,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-20T10:28:06.013122593+02:00","action":"move","task_id":74,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-20T10:37:24.878243331+02:00","action":"edit","task_id":54,"detail":"stage-04: 01 Mixed Cart Rule"}
+{"timestamp":"2026-05-20T10:37:30.394847438+02:00","action":"move","task_id":54,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-20T10:48:46.696091715+02:00","action":"edit","task_id":55,"detail":"stage-04: 02 Multiple Subscriptions In Cart"}
+{"timestamp":"2026-05-20T10:48:54.364317779+02:00","action":"move","task_id":55,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-20T10:53:04.347091417+02:00","action":"edit","task_id":56,"detail":"stage-04: 03 One Subscription Per Product Rule"}
+{"timestamp":"2026-05-20T10:53:17.701804588+02:00","action":"move","task_id":56,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-20T11:00:39.96613241+02:00","action":"edit","task_id":57,"detail":"stage-04: 04 Different Billing Cycles Rule"}
+{"timestamp":"2026-05-20T11:00:39.979287079+02:00","action":"move","task_id":57,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-20T11:13:15.933640801+02:00","action":"edit","task_id":58,"detail":"stage-04: 05 One Trial Per Customer Rule"}
+{"timestamp":"2026-05-20T11:13:28.413774126+02:00","action":"move","task_id":58,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-20T11:26:35.510367321+02:00","action":"edit","task_id":59,"detail":"stage-04: 06 One Subscription Per Customer with Auto-Migrate"}
+{"timestamp":"2026-05-20T11:26:50.592318862+02:00","action":"move","task_id":59,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-20T11:29:01.782139299+02:00","action":"edit","task_id":60,"detail":"stage-04: 07 Block Checkout Parity"}
+{"timestamp":"2026-05-20T11:29:02.439437762+02:00","action":"move","task_id":60,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-20T11:34:57.919027165+02:00","action":"edit","task_id":61,"detail":"stage-05: 01 Classic Checkout — Standard Weekly Subscription"}
+{"timestamp":"2026-05-20T11:35:06.299648577+02:00","action":"move","task_id":61,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-20T11:40:39.015433458+02:00","action":"edit","task_id":62,"detail":"stage-05: 02 Block Checkout Parity"}
+{"timestamp":"2026-05-20T11:40:39.046645628+02:00","action":"move","task_id":62,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-20T11:50:29.806484843+02:00","action":"edit","task_id":63,"detail":"stage-05: 03 Trial Checkout — No Signup Fee"}
+{"timestamp":"2026-05-20T11:50:29.817162629+02:00","action":"move","task_id":63,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-20T11:58:23.859103273+02:00","action":"move","task_id":64,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-20T11:58:23.922363088+02:00","action":"edit","task_id":64,"detail":"stage-05: 04 Trial Checkout — With $4.99 Signup Fee"}
+{"timestamp":"2026-05-20T12:04:17.275020081+02:00","action":"move","task_id":65,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-20T12:04:17.329325829+02:00","action":"edit","task_id":65,"detail":"stage-05: 05 Different Renewal Price Summary"}
+{"timestamp":"2026-05-20T12:06:42.393894192+02:00","action":"edit","task_id":66,"detail":"stage-05: 06 Auto-Create Account as Guest"}
+{"timestamp":"2026-05-20T12:06:58.900576792+02:00","action":"move","task_id":66,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-20T12:13:05.297567536+02:00","action":"edit","task_id":67,"detail":"stage-05: 07 Guest Checkout with Auto-Create OFF"}
+{"timestamp":"2026-05-20T12:13:19.435076852+02:00","action":"move","task_id":67,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-20T12:21:28.723574783+02:00","action":"edit","task_id":68,"detail":"stage-05: 08 One-Click Checkout"}
+{"timestamp":"2026-05-20T12:21:36.532171121+02:00","action":"move","task_id":68,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-20T12:44:25.703993129+02:00","action":"edit","task_id":69,"detail":"stage-05: 09 Checkout with Coupon (One-Time + Recurring with Cycle Limit)"}
+{"timestamp":"2026-05-20T12:44:25.866868932+02:00","action":"move","task_id":69,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-20T12:54:45.204512872+02:00","action":"edit","task_id":70,"detail":"stage-05: 10 Plan Switching at Checkout (Checkout Migration)"}
+{"timestamp":"2026-05-20T12:54:45.414182827+02:00","action":"move","task_id":70,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-20T13:08:27.73290332+02:00","action":"edit","task_id":71,"detail":"stage-05: 11 Stripe Test Card Flow (Pro)"}
+{"timestamp":"2026-05-20T13:08:27.987412589+02:00","action":"move","task_id":71,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-20T13:12:15.910605363+02:00","action":"edit","task_id":72,"detail":"stage-05: 12 Stripe Webhook Verification \u0026 Payment-Method Lifecycle"}
+{"timestamp":"2026-05-20T13:12:16.118423504+02:00","action":"move","task_id":72,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-20T13:19:56.311880217+02:00","action":"edit","task_id":73,"detail":"stage-05: 13 Checkout Builder Customization (Pro)"}
+{"timestamp":"2026-05-20T13:19:56.580087645+02:00","action":"move","task_id":73,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-20T13:30:32.610125314+02:00","action":"edit","task_id":74,"detail":"stage-05: 14 Mixed Cart and Block Checkout"}
+{"timestamp":"2026-05-20T13:30:33.187420097+02:00","action":"move","task_id":74,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-20T13:41:52.824619307+02:00","action":"move","task_id":75,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-20T13:41:52.825920429+02:00","action":"move","task_id":76,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-20T13:41:52.829324353+02:00","action":"move","task_id":77,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-20T13:41:52.831280259+02:00","action":"move","task_id":78,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-20T13:41:52.840081222+02:00","action":"move","task_id":79,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-20T13:41:52.861214649+02:00","action":"move","task_id":80,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-20T13:41:52.869727071+02:00","action":"move","task_id":81,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-20T13:41:52.879807046+02:00","action":"move","task_id":82,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-20T13:41:52.880997621+02:00","action":"move","task_id":83,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-20T13:41:52.884195529+02:00","action":"move","task_id":84,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-20T13:41:52.885797433+02:00","action":"move","task_id":85,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-20T13:41:52.886610143+02:00","action":"move","task_id":86,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-20T13:41:52.887264857+02:00","action":"move","task_id":87,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-20T13:41:52.887815907+02:00","action":"move","task_id":88,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-20T13:41:52.897901991+02:00","action":"move","task_id":89,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-20T13:41:52.911481107+02:00","action":"move","task_id":90,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-20T13:41:52.913225427+02:00","action":"move","task_id":91,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-20T13:41:52.916675457+02:00","action":"move","task_id":92,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-20T13:41:52.91856518+02:00","action":"move","task_id":93,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-20T13:41:52.920282921+02:00","action":"move","task_id":94,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-20T13:41:52.920972851+02:00","action":"move","task_id":95,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-20T13:41:52.924284792+02:00","action":"move","task_id":96,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-20T13:41:52.925029043+02:00","action":"move","task_id":97,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-20T13:41:52.928323601+02:00","action":"move","task_id":98,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-20T13:41:52.929430922+02:00","action":"move","task_id":99,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-20T13:41:52.930893687+02:00","action":"move","task_id":100,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-20T13:41:52.936151175+02:00","action":"move","task_id":101,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-20T13:41:52.938551302+02:00","action":"move","task_id":102,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-20T13:41:52.940223307+02:00","action":"move","task_id":103,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-20T13:41:52.941541571+02:00","action":"move","task_id":104,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-20T13:41:52.942717169+02:00","action":"move","task_id":105,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-20T13:41:52.943496777+02:00","action":"move","task_id":106,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-20T13:41:52.944883148+02:00","action":"move","task_id":107,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-20T13:41:52.945666182+02:00","action":"move","task_id":108,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-20T13:41:52.946493389+02:00","action":"move","task_id":109,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-20T13:41:52.947352124+02:00","action":"move","task_id":110,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-20T13:41:52.948100854+02:00","action":"move","task_id":111,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-20T13:41:52.949110902+02:00","action":"move","task_id":112,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-20T13:41:52.951470242+02:00","action":"move","task_id":113,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-20T13:49:18.483225775+02:00","action":"edit","task_id":75,"detail":"stage-06: 01 Subscription Record After Checkout"}
+{"timestamp":"2026-05-20T13:49:18.707438542+02:00","action":"move","task_id":75,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-20T13:58:32.133622808+02:00","action":"edit","task_id":76,"detail":"stage-06: 02 Status — Active vs Trial vs Pending"}
+{"timestamp":"2026-05-20T13:58:32.435661279+02:00","action":"move","task_id":76,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-20T14:00:45.306066522+02:00","action":"edit","task_id":77,"detail":"stage-06: 03 Subscription Detail Screen — Cards Verification"}
+{"timestamp":"2026-05-20T14:00:45.609089847+02:00","action":"move","task_id":77,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-20T14:06:25.656920524+02:00","action":"edit","task_id":78,"detail":"stage-06: 04 Customer Portal Display"}
+{"timestamp":"2026-05-20T14:06:25.858206017+02:00","action":"move","task_id":78,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-20T14:19:05.00961036+02:00","action":"edit","task_id":79,"detail":"stage-06: 05 Order Page Related Subscriptions"}
+{"timestamp":"2026-05-20T14:19:20.472711017+02:00","action":"move","task_id":79,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-20T14:25:30.918082851+02:00","action":"edit","task_id":80,"detail":"stage-06: 06 Emails on Subscription Creation"}
+{"timestamp":"2026-05-20T14:25:31.112521937+02:00","action":"move","task_id":80,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-20T14:38:57.35228536+02:00","action":"edit","task_id":81,"detail":"stage-07: 01 My Subscriptions List"}
+{"timestamp":"2026-05-20T14:38:57.471165119+02:00","action":"move","task_id":81,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-20T14:41:24.788784041+02:00","action":"edit","task_id":82,"detail":"stage-07: 02 View Subscription Detail"}
+{"timestamp":"2026-05-20T14:41:25.092362612+02:00","action":"move","task_id":82,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-20T14:43:59.677765389+02:00","action":"edit","task_id":83,"detail":"stage-07: 03 Cancel Subscription Immediately"}
+{"timestamp":"2026-05-20T14:43:59.772852697+02:00","action":"move","task_id":83,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-20T14:46:25.881766344+02:00","action":"edit","task_id":84,"detail":"stage-07: 04 Cancel at End of Billing Period"}
+{"timestamp":"2026-05-20T14:46:26.108960162+02:00","action":"move","task_id":84,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-20T14:49:17.905889927+02:00","action":"edit","task_id":85,"detail":"stage-07: 05 Undo Scheduled Cancellation"}
+{"timestamp":"2026-05-20T14:49:18.020704949+02:00","action":"move","task_id":85,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-20T14:52:11.334378812+02:00","action":"edit","task_id":86,"detail":"stage-07: 06 Skip Next Renewal and Undo Skip"}
+{"timestamp":"2026-05-20T14:52:11.508825247+02:00","action":"move","task_id":86,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-20T14:53:53.038288523+02:00","action":"edit","task_id":87,"detail":"stage-07: 07 Pause Subscription and Resume"}
+{"timestamp":"2026-05-20T14:53:53.129115788+02:00","action":"move","task_id":87,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-20T14:54:37.021074668+02:00","action":"edit","task_id":88,"detail":"stage-07: 08 Change Plan — Immediate Proration"}
+{"timestamp":"2026-05-20T14:54:37.0811457+02:00","action":"edit","task_id":89,"detail":"stage-07: 09 Change Plan — Apply at Renewal"}
+{"timestamp":"2026-05-20T14:54:37.139540471+02:00","action":"move","task_id":88,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-20T14:54:37.209004428+02:00","action":"move","task_id":89,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-20T15:00:55.750203347+02:00","action":"edit","task_id":90,"detail":"stage-07: 10 Payment Method, Auto-Renew Toggle, and Shipping"}
+{"timestamp":"2026-05-20T15:00:56.02811877+02:00","action":"move","task_id":90,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-20T15:05:33.338542935+02:00","action":"edit","task_id":91,"detail":"stage-07: 11 Action Availability by Subscription Status"}
+{"timestamp":"2026-05-20T15:05:33.555092024+02:00","action":"move","task_id":91,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-20T15:10:53.975854979+02:00","action":"edit","task_id":92,"detail":"stage-08: 01 Cancellation Reasons Setup"}
+{"timestamp":"2026-05-20T15:10:54.470543997+02:00","action":"move","task_id":92,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-20T15:13:12.901087728+02:00","action":"edit","task_id":93,"detail":"stage-08: 02 Discount Offer"}
+{"timestamp":"2026-05-20T15:13:13.098816419+02:00","action":"move","task_id":93,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-20T15:13:48.632005382+02:00","action":"edit","task_id":94,"detail":"stage-08: 03 Pause Offer"}
+{"timestamp":"2026-05-20T15:13:48.829265321+02:00","action":"move","task_id":94,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-20T15:13:49.185905488+02:00","action":"edit","task_id":95,"detail":"stage-08: 04 Downgrade Offer"}
+{"timestamp":"2026-05-20T15:13:49.330059273+02:00","action":"move","task_id":95,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-20T15:13:49.570124336+02:00","action":"edit","task_id":96,"detail":"stage-08: 05 Contact Support Offer"}
+{"timestamp":"2026-05-20T15:13:49.743086645+02:00","action":"move","task_id":96,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-20T15:13:49.852136096+02:00","action":"edit","task_id":97,"detail":"stage-08: 06 Eligibility Conditions"}
+{"timestamp":"2026-05-20T15:13:50.111070382+02:00","action":"move","task_id":97,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-20T15:21:11.119656864+02:00","action":"edit","task_id":98,"detail":"stage-08: 07 Retention Analytics Dashboard"}
+{"timestamp":"2026-05-20T15:21:11.356615521+02:00","action":"move","task_id":98,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-20T15:24:31.40409636+02:00","action":"edit","task_id":99,"detail":"stage-09: 01 Role Mapping (Pro Plan → Pro Member)"}
+{"timestamp":"2026-05-20T15:24:31.63223372+02:00","action":"move","task_id":99,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-20T15:29:20.098250342+02:00","action":"edit","task_id":100,"detail":"stage-09: 02 URL Rules — `/premium-content` Restriction"}
+{"timestamp":"2026-05-20T15:29:20.204143101+02:00","action":"move","task_id":100,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-20T15:30:04.818057634+02:00","action":"edit","task_id":101,"detail":"stage-09: 03 Post Type Rules + Per-Post Override"}
+{"timestamp":"2026-05-20T15:30:05.55200037+02:00","action":"move","task_id":101,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-20T15:30:06.031286646+02:00","action":"edit","task_id":102,"detail":"stage-09: 04 Discount Rule — Members Get 15% Off"}
+{"timestamp":"2026-05-20T15:30:06.44796254+02:00","action":"move","task_id":102,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-20T15:30:06.731763139+02:00","action":"edit","task_id":103,"detail":"stage-09: 05 Ecommerce Rule — Members-Only Purchase"}
+{"timestamp":"2026-05-20T15:30:07.134326451+02:00","action":"move","task_id":103,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-20T15:30:07.344537564+02:00","action":"edit","task_id":104,"detail":"stage-09: 06 Download Rules — Rate-Limited Downloads"}
+{"timestamp":"2026-05-20T15:30:07.62994668+02:00","action":"move","task_id":104,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-20T15:30:07.876543091+02:00","action":"edit","task_id":105,"detail":"stage-09: 07 Drip / Scheduled Access (7-Day Unlock)"}
+{"timestamp":"2026-05-20T15:30:08.586509423+02:00","action":"move","task_id":105,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-20T15:30:09.077600225+02:00","action":"edit","task_id":106,"detail":"stage-09: 08 Content Gating Messages \u0026 Default Redirect"}
+{"timestamp":"2026-05-20T15:30:09.916115421+02:00","action":"move","task_id":106,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-20T15:30:10.267484371+02:00","action":"edit","task_id":107,"detail":"stage-09: 09 Restriction Shortcodes — `[arraysubs_restrict]` \u0026 `[arraysubs_visibility]`"}
+{"timestamp":"2026-05-20T15:30:10.711089371+02:00","action":"move","task_id":107,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-20T15:30:10.928143636+02:00","action":"edit","task_id":108,"detail":"stage-09: 10 Pause-State Access Behavior (None / Limited / Full)"}
+{"timestamp":"2026-05-20T15:30:11.304398847+02:00","action":"move","task_id":108,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-20T15:30:11.458783619+02:00","action":"edit","task_id":109,"detail":"stage-09: 11 Multi-Login Prevention *(Pro)* — Max 2 Sessions"}
+{"timestamp":"2026-05-20T15:30:11.867998473+02:00","action":"move","task_id":109,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-20T15:34:25.09405655+02:00","action":"edit","task_id":110,"detail":"stage-10: 01 Custom Profile Fields (6 Field Types)"}
+{"timestamp":"2026-05-20T15:34:25.28661923+02:00","action":"move","task_id":110,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-20T15:34:25.387166117+02:00","action":"edit","task_id":111,"detail":"stage-10: 02 Avatar Upload Settings"}
+{"timestamp":"2026-05-20T15:34:25.645575474+02:00","action":"move","task_id":111,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-20T15:34:25.78605911+02:00","action":"edit","task_id":112,"detail":"stage-10: 03 My Account Editor — Reorder, Rename, Hide, Custom Endpoint"}
+{"timestamp":"2026-05-20T15:34:25.975063358+02:00","action":"move","task_id":112,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-20T15:34:26.188382114+02:00","action":"edit","task_id":113,"detail":"stage-10: 04 Account Shortcodes \u0026 Shortcodes Reference Page"}
+{"timestamp":"2026-05-20T15:34:26.604908556+02:00","action":"move","task_id":113,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-21T20:07:17.57073308+02:00","action":"move","task_id":99,"detail":"closed -\u003e in-progress"}
+{"timestamp":"2026-05-21T20:07:17.577613931+02:00","action":"move","task_id":100,"detail":"closed -\u003e in-progress"}
+{"timestamp":"2026-05-21T20:07:17.579093022+02:00","action":"move","task_id":101,"detail":"closed -\u003e in-progress"}
+{"timestamp":"2026-05-21T20:07:17.580110212+02:00","action":"move","task_id":102,"detail":"closed -\u003e in-progress"}
+{"timestamp":"2026-05-21T20:07:17.581606396+02:00","action":"move","task_id":103,"detail":"closed -\u003e in-progress"}
+{"timestamp":"2026-05-21T20:07:17.582648313+02:00","action":"move","task_id":104,"detail":"closed -\u003e in-progress"}
+{"timestamp":"2026-05-21T20:07:17.583506485+02:00","action":"move","task_id":105,"detail":"closed -\u003e in-progress"}
+{"timestamp":"2026-05-21T20:07:17.584326076+02:00","action":"move","task_id":106,"detail":"closed -\u003e in-progress"}
+{"timestamp":"2026-05-21T20:07:17.585306918+02:00","action":"move","task_id":107,"detail":"closed -\u003e in-progress"}
+{"timestamp":"2026-05-21T20:07:17.586143449+02:00","action":"move","task_id":108,"detail":"closed -\u003e in-progress"}
+{"timestamp":"2026-05-21T20:07:17.588116405+02:00","action":"move","task_id":109,"detail":"closed -\u003e in-progress"}
+{"timestamp":"2026-05-21T20:07:17.667308658+02:00","action":"move","task_id":110,"detail":"closed -\u003e in-progress"}
+{"timestamp":"2026-05-21T20:07:17.670833831+02:00","action":"move","task_id":111,"detail":"closed -\u003e in-progress"}
+{"timestamp":"2026-05-21T20:07:17.6721185+02:00","action":"move","task_id":112,"detail":"closed -\u003e in-progress"}
+{"timestamp":"2026-05-21T20:07:17.673501523+02:00","action":"move","task_id":113,"detail":"closed -\u003e in-progress"}
+{"timestamp":"2026-05-22T02:47:06.459650296+02:00","action":"edit","task_id":75,"detail":"stage-06: 01 Subscription Record After Checkout"}
+{"timestamp":"2026-05-22T02:55:32.43489227+02:00","action":"edit","task_id":78,"detail":"stage-06: 04 Customer Portal Display"}
+{"timestamp":"2026-05-22T02:56:39.460681777+02:00","action":"edit","task_id":80,"detail":"stage-06: 06 Emails on Subscription Creation"}
+{"timestamp":"2026-05-22T03:00:20.647919253+02:00","action":"edit","task_id":81,"detail":"stage-07: 01 My Subscriptions List"}
+{"timestamp":"2026-05-22T03:03:37.509190373+02:00","action":"edit","task_id":82,"detail":"stage-07: 02 View Subscription Detail"}
+{"timestamp":"2026-05-22T03:26:37.753324555+02:00","action":"edit","task_id":90,"detail":"stage-07: 10 Payment Method, Auto-Renew Toggle, and Shipping"}
+{"timestamp":"2026-05-22T03:31:18.841774982+02:00","action":"edit","task_id":91,"detail":"stage-07: 11 Action Availability by Subscription Status"}
+{"timestamp":"2026-05-22T03:34:40.618686987+02:00","action":"edit","task_id":91,"detail":"stage-07: 11 Action Availability by Subscription Status"}
+{"timestamp":"2026-05-22T03:40:08.123203784+02:00","action":"edit","task_id":92,"detail":"stage-08: 01 Cancellation Reasons Setup"}
+{"timestamp":"2026-05-22T03:45:25.153846327+02:00","action":"edit","task_id":92,"detail":"stage-08: 01 Cancellation Reasons Setup"}
+{"timestamp":"2026-05-22T03:51:36.266409896+02:00","action":"edit","task_id":100,"detail":"stage-09: 02 URL Rules — `/premium-content` Restriction"}
+{"timestamp":"2026-05-22T04:01:10.584116012+02:00","action":"edit","task_id":99,"detail":"stage-09: 01 Role Mapping (Pro Plan → Pro Member)"}
+{"timestamp":"2026-05-22T04:06:17.601261502+02:00","action":"edit","task_id":110,"detail":"stage-10: 01 Custom Profile Fields (6 Field Types)"}
+{"timestamp":"2026-05-22T04:06:17.602382395+02:00","action":"edit","task_id":111,"detail":"stage-10: 02 Avatar Upload Settings"}
+{"timestamp":"2026-05-22T04:06:17.604007571+02:00","action":"edit","task_id":112,"detail":"stage-10: 03 My Account Editor — Reorder, Rename, Hide, Custom Endpoint"}
+{"timestamp":"2026-05-22T04:06:17.606201379+02:00","action":"edit","task_id":113,"detail":"stage-10: 04 Account Shortcodes \u0026 Shortcodes Reference Page"}
+{"timestamp":"2026-05-22T04:09:06.043464094+02:00","action":"edit","task_id":27,"detail":"stage-00: 03 Cron and Action Scheduler"}
+{"timestamp":"2026-05-22T04:09:06.044395944+02:00","action":"claim","task_id":27,"detail":"mold-glade"}
+{"timestamp":"2026-05-22T04:14:04.629303195+02:00","action":"edit","task_id":36,"detail":"stage-02: 03 Import / Export Settings"}
+{"timestamp":"2026-05-22T04:21:50.014588603+02:00","action":"edit","task_id":38,"detail":"stage-03: 01 Simple Subscription (Basic Monthly)"}
+{"timestamp":"2026-05-22T04:30:29.167964692+02:00","action":"edit","task_id":39,"detail":"stage-03: 02 Simple Subscription with 7-Day Trial"}
+{"timestamp":"2026-05-22T04:45:42.976231373+02:00","action":"edit","task_id":41,"detail":"stage-03: 04 Simple Subscription with Different Renewal Price"}
+{"timestamp":"2026-05-22T04:47:43.244206709+02:00","action":"edit","task_id":43,"detail":"stage-03: 06 Simple Fixed-Length Subscription (6 Cycles)"}
+{"timestamp":"2026-05-22T04:57:38.400187828+02:00","action":"edit","task_id":70,"detail":"stage-05: 10 Plan Switching at Checkout (Checkout Migration)"}
+{"timestamp":"2026-05-22T05:03:46.11041155+02:00","action":"edit","task_id":75,"detail":"stage-06: 01 Subscription Record After Checkout"}
+{"timestamp":"2026-05-22T05:05:47.391114917+02:00","action":"edit","task_id":76,"detail":"stage-06: 02 Status — Active vs Trial vs Pending"}
+{"timestamp":"2026-05-22T05:05:47.471514243+02:00","action":"edit","task_id":79,"detail":"stage-06: 05 Order Page Related Subscriptions"}
+{"timestamp":"2026-05-22T05:05:47.477528589+02:00","action":"edit","task_id":80,"detail":"stage-06: 06 Emails on Subscription Creation"}
+{"timestamp":"2026-05-22T05:10:39.208341721+02:00","action":"edit","task_id":77,"detail":"stage-06: 03 Subscription Detail Screen — Cards Verification"}
+{"timestamp":"2026-05-22T05:21:56.693255421+02:00","action":"edit","task_id":80,"detail":"stage-06: 06 Emails on Subscription Creation"}
+{"timestamp":"2026-05-22T05:27:32.895546811+02:00","action":"edit","task_id":81,"detail":"stage-07: 01 My Subscriptions List"}
+{"timestamp":"2026-05-22T05:29:25.309292155+02:00","action":"edit","task_id":81,"detail":"stage-07: 01 My Subscriptions List"}
+{"timestamp":"2026-05-22T05:30:58.916439757+02:00","action":"edit","task_id":82,"detail":"stage-07: 02 View Subscription Detail"}
+{"timestamp":"2026-05-22T05:34:32.347209824+02:00","action":"edit","task_id":91,"detail":"stage-07: 11 Action Availability by Subscription Status"}
+{"timestamp":"2026-05-22T05:34:32.347632133+02:00","action":"claim","task_id":91,"detail":"mold-glade"}
+{"timestamp":"2026-05-22T05:39:59.124111041+02:00","action":"edit","task_id":98,"detail":"stage-08: 07 Retention Analytics Dashboard"}
+{"timestamp":"2026-05-22T05:45:02.644144318+02:00","action":"edit","task_id":26,"detail":"stage-00: 02 Admin Menu and Capabilities"}
+{"timestamp":"2026-05-22T05:45:02.644602714+02:00","action":"claim","task_id":26,"detail":"mold-glade"}
+{"timestamp":"2026-05-22T05:47:59.081949005+02:00","action":"edit","task_id":84,"detail":"stage-07: 04 Cancel at End of Billing Period"}

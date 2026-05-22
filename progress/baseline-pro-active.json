@@ -1,0 +1,109 @@
+{
+    "meta": {
+        "plugin_version": "1.7.10",
+        "pro_version": "1.0.1",
+        "module_version": "1.1.0",
+        "export_date": "2026-05-20T05:05:43+06:00",
+        "site_url": "https:\/\/mirror-help.arrayhash.com",
+        "php_version": "8.2.30",
+        "wp_version": "6.9.4",
+        "wc_version": "10.7.0"
+    },
+    "options": {
+        "arraysubs_settings": {
+            "button_text": {
+                "add_to_cart": "",
+                "place_order": ""
+            },
+            "multiple_subscriptions": {
+                "allow_multiple_in_cart": false,
+                "one_per_customer": false,
+                "auto_migrate_on_checkout": false,
+                "one_per_product": false,
+                "allow_mixed_cart": true,
+                "allow_different_cycles": true
+            },
+            "renewals": {
+                "grace_days_before_on_hold": 3,
+                "grace_days_before_cancel": 7,
+                "invoice_before_due_value": 6,
+                "invoice_before_due_unit": "hours"
+            },
+            "automatic_payments": {
+                "allow_auto_renew_toggle": false
+            },
+            "checkout": {
+                "auto_create_account": true,
+                "one_click_mode": "default",
+                "disable_cart_page": false,
+                "non_subscription_button_text": ""
+            },
+            "trials": {
+                "require_payment_method": true,
+                "one_trial_per_customer": true
+            },
+            "emails": {
+                "admin_email": "",
+                "admin_new_subscription": true,
+                "admin_cancelled": true,
+                "admin_payment_failed": true,
+                "renewal_upcoming": {
+                    "enabled": true,
+                    "subject": "",
+                    "body": "",
+                    "days_before": 3
+                },
+                "trial_ending": {
+                    "enabled": true,
+                    "subject": "",
+                    "body": "",
+                    "days_before": 3
+                },
+                "expiring_soon": {
+                    "enabled": true,
+                    "subject": "",
+                    "body": "",
+                    "days_before": 7
+                }
+            },
+            "cancellation": {
+                "cancel_immediately": true,
+                "require_reason": true,
+                "reasons": [
+                    {
+                        "id": "too_expensive",
+                        "key": "too_expensive",
+                        "label": "Too expensive"
+                    },
+                    {
+                        "id": "not_using",
+                        "key": "not_using",
+                        "label": "Not using it enough"
+                    },
+                    {
+                        "id": "found_alternative",
+                        "key": "found_alternative",
+                        "label": "Found a better alternative"
+                    },
+                    {
+                        "id": "missing_features",
+                        "key": "missing_features",
+                        "label": "Missing features I need"
+                    },
+                    {
+                        "id": "technical_issues",
+                        "key": "technical_issues",
+                        "label": "Technical issues"
+                    },
+                    {
+                        "id": "other",
+                        "key": "other",
+                        "label": "Other"
+                    }
+                ],
+                "retention_offers_enabled": false,
+                "retention_offers": []
+            }
+        }
+    }
+}

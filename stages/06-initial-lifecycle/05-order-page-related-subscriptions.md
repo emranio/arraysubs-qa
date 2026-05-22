@@ -83,7 +83,7 @@ Open the parent order from Stage 05 Task 01 on the customer-facing **Order Detai
 **Expected Result:**
 - Related Subscriptions table appears with one row.
 - Status badge: cyan **Trial**.
-- Next Payment: trial end date (Stage 05 Task 03 date + 14 days).
+- Next Payment: trial end date (Stage 05 Task 03 date + 7 days).
 - Recurring Total: `$19.99 / every 1 week`.
 - Subscription ID link works and lands on the trial subscription's portal page.
 

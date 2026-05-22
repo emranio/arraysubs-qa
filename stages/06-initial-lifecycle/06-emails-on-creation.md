@@ -84,13 +84,13 @@ Open both emails per case, confirm the subject and heading match the manual's de
 
 **Expected Result:**
 - An email is present.
-- Subject matches: `[<site_title>] Your free trial for Trial 14-Day has started`.
+- Subject matches: `[<site_title>] Your free trial for Trial Weekly has started`.
 - Heading reads: **Your free trial has started!**
 - The body contains:
   - Greeting with customer first name.
-  - Product name `Trial 14-Day`.
-  - Trial length: `14 days` — not literal `{trial_length}`.
-  - Trial end date: Stage 05 Task 03 date + 14 days — not literal `{trial_end_date}`.
+  - Product name `Trial Weekly`.
+  - Trial length: `7 days` — not literal `{trial_length}`.
+  - Trial end date: Stage 05 Task 03 date + 7 days — not literal `{trial_end_date}`.
   - Post-trial pricing line: `$19.99 / month` (or equivalent format).
   - Customer-portal link.
 
@@ -114,7 +114,7 @@ Open both emails per case, confirm the subject and heading match the manual's de
 
 **Expected Result:**
 - An admin email is present for the trial subscription.
-- The body lists the trial product (`Trial 14-Day`), the customer email, and the trial length.
+- The body lists the trial product (`Trial Weekly`), the customer email, and the trial length.
 - All placeholders rendered as real values.
 
 **Pass Criteria:** [ ] PASS [ ] FAIL

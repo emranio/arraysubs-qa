@@ -1,0 +1,396 @@
+{"timestamp":"2026-05-19T22:38:44.996800601+02:00","action":"create","task_id":1,"detail":"Stage 00: Shop Manager lacks Subscription menu access"}
+{"timestamp":"2026-05-19T22:38:45.054271786+02:00","action":"create","task_id":2,"detail":"Stage 00: Fresh debug.log warnings during baseline checks"}
+{"timestamp":"2026-05-19T22:38:45.106429983+02:00","action":"create","task_id":3,"detail":"Stage 00: Scheduler has failed action outside ArraySubs"}
+{"timestamp":"2026-05-19T22:38:45.160206981+02:00","action":"create","task_id":4,"detail":"Stage 00: Menu label/docs mismatch (`Subscription` vs `ArraySubs`)"}
+{"timestamp":"2026-05-20T00:27:27.695962945+02:00","action":"create","task_id":5,"detail":"Stage 01: Wizard profile switch from review does not update business type"}
+{"timestamp":"2026-05-20T00:46:34.878909637+02:00","action":"create","task_id":6,"detail":"Stage 01: Wizard trial/custom conditional fields missing"}
+{"timestamp":"2026-05-20T01:08:39.499033002+02:00","action":"create","task_id":7,"detail":"stage-02: General Settings customer action controls missing"}
+{"timestamp":"2026-05-20T01:08:39.502483934+02:00","action":"create","task_id":8,"detail":"stage-02: Automatic Payments visible without Pro"}
+{"timestamp":"2026-05-20T01:08:39.520231062+02:00","action":"create","task_id":9,"detail":"stage-02: Export omits expected config option groups"}
+{"timestamp":"2026-05-20T01:08:39.562188514+02:00","action":"create","task_id":10,"detail":"stage-02: Import Subscription section skips email/toolkit values"}
+{"timestamp":"2026-05-20T01:14:56.47072926+02:00","action":"create","task_id":11,"detail":"stage-03: Basic Monthly product permalink opens blog"}
+{"timestamp":"2026-05-20T01:14:56.482830659+02:00","action":"create","task_id":12,"detail":"stage-03: Basic Monthly recurring price format mismatch"}
+{"timestamp":"2026-05-20T01:18:18.105401684+02:00","action":"edit","task_id":12,"detail":"stage-03: Basic Monthly recurring price format mismatch"}
+{"timestamp":"2026-05-20T01:22:41.718714183+02:00","action":"create","task_id":13,"detail":"stage-03: Cart missing proceed-to-checkout button for trial item"}
+{"timestamp":"2026-05-20T01:22:41.730780775+02:00","action":"create","task_id":14,"detail":"stage-03: Trial checkout summary missing next-charge authorization copy"}
+{"timestamp":"2026-05-20T01:26:27.60666516+02:00","action":"create","task_id":15,"detail":"stage-03: Signup fee label and next charge summary mismatch"}
+{"timestamp":"2026-05-20T01:32:17.382775566+02:00","action":"create","task_id":16,"detail":"stage-03: Stepped renewal checkout summary missing next charge date"}
+{"timestamp":"2026-05-20T08:03:02.127963589+02:00","action":"move","task_id":11,"detail":"open -\u003e closed"}
+{"timestamp":"2026-05-20T08:22:03.491355316+02:00","action":"create","task_id":17,"detail":"stage-03: Lifetime deal shows renewal/duration instead of no recurring charges"}
+{"timestamp":"2026-05-20T08:34:14.914504486+02:00","action":"create","task_id":18,"detail":"stage-03: Variable subscription variations display monthly schedule"}
+{"timestamp":"2026-05-20T08:34:14.973325425+02:00","action":"create","task_id":19,"detail":"stage-03: Subscription product validation does not block invalid saves"}
+{"timestamp":"2026-05-20T08:34:15.024807038+02:00","action":"create","task_id":20,"detail":"stage-03: Fixed period membership storefront text missing"}
+{"timestamp":"2026-05-20T08:34:15.115945231+02:00","action":"create","task_id":21,"detail":"stage-03: Fixed-length checkout summary missing next charge date"}
+{"timestamp":"2026-05-20T10:33:54.075325114+02:00","action":"create","task_id":22,"detail":"stage-04: Mixed cart error text does not match QA spec"}
+{"timestamp":"2026-05-20T10:47:22.931854862+02:00","action":"create","task_id":23,"detail":"stage-04: Multiple subscription error text does not match QA spec"}
+{"timestamp":"2026-05-20T10:51:45.240674274+02:00","action":"create","task_id":24,"detail":"stage-04: One-per-product quantity rule leaves invalid quantity and wrong text"}
+{"timestamp":"2026-05-20T10:56:31.047746661+02:00","action":"create","task_id":25,"detail":"stage-04: Different billing cycle error text does not match QA spec"}
+{"timestamp":"2026-05-20T11:34:35.670967197+02:00","action":"create","task_id":26,"detail":"stage-05: Classic checkout Place order button does nothing"}
+{"timestamp":"2026-05-20T12:03:36.004382665+02:00","action":"create","task_id":27,"detail":"stage-05: Different renewal summary wording does not match manual"}
+{"timestamp":"2026-05-20T12:06:42.270701911+02:00","action":"create","task_id":28,"detail":"stage-05: Subscription guest checkout does not force account creation form"}
+{"timestamp":"2026-05-20T12:20:59.77337011+02:00","action":"create","task_id":29,"detail":"stage-05: One-click all-items mode does not clear existing same product quantity"}
+{"timestamp":"2026-05-20T12:44:16.400214463+02:00","action":"create","task_id":30,"detail":"stage-05: Non-subscription coupon applies to subscription product"}
+{"timestamp":"2026-05-20T12:54:25.417532403+02:00","action":"create","task_id":31,"detail":"stage-05: Plan switch checkout wording differs from manual"}
+{"timestamp":"2026-05-20T13:08:19.333960814+02:00","action":"create","task_id":32,"detail":"stage-05: Stripe card QA blocked by inline Payment Element"}
+{"timestamp":"2026-05-20T13:12:05.29049163+02:00","action":"create","task_id":33,"detail":"stage-05: Stripe gateway health inconsistent with webhook config"}
+{"timestamp":"2026-05-20T13:19:39.725694351+02:00","action":"create","task_id":34,"detail":"stage-05: Checkout Builder not working on active checkout"}
+{"timestamp":"2026-05-20T13:49:03.623703667+02:00","action":"create","task_id":35,"detail":"stage-06: Task 01 expected classic subscription artifact missing"}
+{"timestamp":"2026-05-20T13:49:03.840028891+02:00","action":"create","task_id":36,"detail":"stage-06: Active subscription row shows Delete action"}
+{"timestamp":"2026-05-20T13:58:18.902384677+02:00","action":"create","task_id":37,"detail":"stage-06: Trial status task expects wrong product and duration"}
+{"timestamp":"2026-05-20T14:00:29.229168627+02:00","action":"create","task_id":38,"detail":"stage-06: Subscription detail duplicates payment received event"}
+{"timestamp":"2026-05-20T14:06:12.72918926+02:00","action":"create","task_id":39,"detail":"stage-06: Portal Change Plan modal fails to load options"}
+{"timestamp":"2026-05-20T14:25:13.092006856+02:00","action":"create","task_id":40,"detail":"stage-06: Email delivery cannot be verified from accessible QA tooling"}
+{"timestamp":"2026-05-20T14:25:13.105428015+02:00","action":"create","task_id":41,"detail":"stage-06: Email previews use empty sample data and visible footer placeholders"}
+{"timestamp":"2026-05-20T14:35:03.956115722+02:00","action":"create","task_id":42,"detail":"stage-07: Trial subscription list row shows no next payment date"}
+{"timestamp":"2026-05-20T14:35:04.079605025+02:00","action":"create","task_id":43,"detail":"stage-07: Subscriptions account-nav count does not match list total"}
+{"timestamp":"2026-05-20T14:35:04.211330647+02:00","action":"create","task_id":44,"detail":"stage-07: Subscriptions pagination changes URL but keeps page 1 rows"}
+{"timestamp":"2026-05-20T14:41:08.318098587+02:00","action":"create","task_id":45,"detail":"stage-07: Cancelled subscription detail still renders Subscription Actions"}
+{"timestamp":"2026-05-20T14:41:08.326891348+02:00","action":"create","task_id":46,"detail":"stage-07: Skip and pause controls missing from active subscription detail"}
+{"timestamp":"2026-05-20T14:43:46.847236453+02:00","action":"create","task_id":47,"detail":"stage-07: Customer portal immediate cancellation fails after valid reason"}
+{"timestamp":"2026-05-20T14:46:16.051971345+02:00","action":"create","task_id":48,"detail":"stage-07: End-of-period cancellation fails after valid reason"}
+{"timestamp":"2026-05-20T14:46:16.232499978+02:00","action":"create","task_id":49,"detail":"stage-07: Cancellation reason required by task is not configured"}
+{"timestamp":"2026-05-20T14:49:00.992641048+02:00","action":"create","task_id":50,"detail":"stage-07: Undo scheduled cancellation closes modal but does not clear pending state"}
+{"timestamp":"2026-05-20T14:51:58.017700803+02:00","action":"create","task_id":51,"detail":"stage-07: Skip renewal confirmation fails after valid cycle count"}
+{"timestamp":"2026-05-20T14:53:43.591873657+02:00","action":"create","task_id":52,"detail":"stage-07: Pause subscription confirmation fails"}
+{"timestamp":"2026-05-20T14:54:24.267619369+02:00","action":"create","task_id":53,"detail":"stage-07: Change Plan modal fails to load plan options"}
+{"timestamp":"2026-05-20T15:00:46.899011754+02:00","action":"create","task_id":54,"detail":"stage-07: Payment method card-on-file QA fixture missing"}
+{"timestamp":"2026-05-20T15:00:46.951004089+02:00","action":"create","task_id":55,"detail":"stage-07: Shipping address update fails from customer portal"}
+{"timestamp":"2026-05-20T15:05:23.871556663+02:00","action":"create","task_id":56,"detail":"stage-07: On-Hold subscription exposes Cancel Subscription action"}
+{"timestamp":"2026-05-20T15:05:23.996187714+02:00","action":"create","task_id":57,"detail":"stage-07: Expired subscription exposes Reactivate action"}
+{"timestamp":"2026-05-20T15:05:24.103237076+02:00","action":"create","task_id":58,"detail":"stage-07: Trial and On-Hold action matrix lacks shipping-eligible fixtures"}
+{"timestamp":"2026-05-20T15:07:47.426377483+02:00","action":"create","task_id":59,"detail":"stage-08: Retention reasons default list missing temporary_pause"}
+{"timestamp":"2026-05-20T15:10:54.212903923+02:00","action":"create","task_id":60,"detail":"stage-08: Customer cancel modal uses stale reason list and enabled Continue"}
+{"timestamp":"2026-05-20T15:13:12.972177607+02:00","action":"create","task_id":61,"detail":"stage-08: Retention offer modal stuck loading and cancellation error appears"}
+{"timestamp":"2026-05-20T15:20:57.879267975+02:00","action":"create","task_id":62,"detail":"stage-08: Retention analytics churn chart shows not_provided despite reasoned logs"}
+{"timestamp":"2026-05-20T15:24:31.139896797+02:00","action":"create","task_id":63,"detail":"stage-09: Role mapping does not remove Pro Member role on cancellation"}
+{"timestamp":"2026-05-20T15:29:19.994236405+02:00","action":"create","task_id":64,"detail":"stage-09: URL rule require-login sends logged-out visitor to pricing instead of login"}
+{"timestamp":"2026-05-20T15:29:43.595903313+02:00","action":"create","task_id":65,"detail":"stage-09: Member Access stage prerequisites were missing on test site"}
+{"timestamp":"2026-05-20T15:31:19.908008377+02:00","action":"create","task_id":66,"detail":"stage-10: Profile Builder prerequisites and QA assets missing"}
+{"timestamp":"2026-05-21T20:17:02.820456511+02:00","action":"move","task_id":1,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-21T20:22:57.762520103+02:00","action":"edit","task_id":1,"detail":"Stage 00: Shop Manager lacks Subscription menu access"}
+{"timestamp":"2026-05-21T20:27:11.415490448+02:00","action":"edit","task_id":1,"detail":"Stage 00: Shop Manager lacks Subscription menu access"}
+{"timestamp":"2026-05-21T20:27:15.455440271+02:00","action":"move","task_id":1,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-21T20:27:30.71951899+02:00","action":"claim","task_id":26,"detail":"mold-glade"}
+{"timestamp":"2026-05-21T20:27:30.719884974+02:00","action":"move","task_id":26,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-21T20:54:18.201256072+02:00","action":"edit","task_id":26,"detail":"stage-05: Classic checkout Place order button does nothing"}
+{"timestamp":"2026-05-21T21:11:50.447760337+02:00","action":"edit","task_id":26,"detail":"stage-05: Classic checkout Place order button does nothing"}
+{"timestamp":"2026-05-21T21:11:50.448131641+02:00","action":"block","task_id":26,"detail":"Blocked by Alumnium injected XMLHttpRequest wrapper causing WooCommerce checkout AJAX TypeError before request reaches WordPress."}
+{"timestamp":"2026-05-21T21:11:54.726414322+02:00","action":"move","task_id":26,"detail":"in-progress -\u003e blocked"}
+{"timestamp":"2026-05-21T21:12:06.903193446+02:00","action":"claim","task_id":28,"detail":"mold-glade"}
+{"timestamp":"2026-05-21T21:12:06.903408258+02:00","action":"move","task_id":28,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-21T21:13:23.903101032+02:00","action":"edit","task_id":28,"detail":"stage-05: Subscription guest checkout does not force account creation form"}
+{"timestamp":"2026-05-21T21:23:20.407309295+02:00","action":"edit","task_id":28,"detail":"stage-05: Subscription guest checkout does not force account creation form"}
+{"timestamp":"2026-05-21T21:23:26.162051093+02:00","action":"move","task_id":28,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-21T21:23:38.210868852+02:00","action":"claim","task_id":47,"detail":"mold-glade"}
+{"timestamp":"2026-05-21T21:23:38.211196994+02:00","action":"move","task_id":47,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-21T21:26:54.619713888+02:00","action":"edit","task_id":47,"detail":"stage-07: Customer portal immediate cancellation fails after valid reason"}
+{"timestamp":"2026-05-21T21:38:18.454279922+02:00","action":"edit","task_id":47,"detail":"stage-07: Customer portal immediate cancellation fails after valid reason"}
+{"timestamp":"2026-05-21T21:38:22.031522029+02:00","action":"move","task_id":47,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-21T21:38:27.177524329+02:00","action":"claim","task_id":48,"detail":"mold-glade"}
+{"timestamp":"2026-05-21T21:38:27.17776611+02:00","action":"move","task_id":48,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-21T21:39:04.026427185+02:00","action":"edit","task_id":48,"detail":"stage-07: End-of-period cancellation fails after valid reason"}
+{"timestamp":"2026-05-21T21:42:52.061579234+02:00","action":"edit","task_id":48,"detail":"stage-07: End-of-period cancellation fails after valid reason"}
+{"timestamp":"2026-05-21T21:42:56.497572094+02:00","action":"move","task_id":48,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-21T21:43:01.057439247+02:00","action":"claim","task_id":50,"detail":"mold-glade"}
+{"timestamp":"2026-05-21T21:43:01.057624924+02:00","action":"move","task_id":50,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-21T21:43:42.384807122+02:00","action":"edit","task_id":50,"detail":"stage-07: Undo scheduled cancellation closes modal but does not clear pending state"}
+{"timestamp":"2026-05-21T22:10:08.343996033+02:00","action":"edit","task_id":50,"detail":"stage-07: Undo scheduled cancellation closes modal but does not clear pending state"}
+{"timestamp":"2026-05-21T22:10:08.413208586+02:00","action":"move","task_id":50,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-21T22:10:25.463739057+02:00","action":"claim","task_id":51,"detail":"mold-glade"}
+{"timestamp":"2026-05-21T22:10:25.464015923+02:00","action":"move","task_id":51,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-21T22:11:05.702450666+02:00","action":"edit","task_id":51,"detail":"stage-07: Skip renewal confirmation fails after valid cycle count"}
+{"timestamp":"2026-05-21T22:25:00.951443853+02:00","action":"edit","task_id":51,"detail":"stage-07: Skip renewal confirmation fails after valid cycle count"}
+{"timestamp":"2026-05-21T22:25:01.01439012+02:00","action":"move","task_id":51,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-21T22:25:07.093682484+02:00","action":"claim","task_id":52,"detail":"mold-glade"}
+{"timestamp":"2026-05-21T22:25:07.093875244+02:00","action":"move","task_id":52,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-21T22:27:54.76769431+02:00","action":"edit","task_id":52,"detail":"stage-07: Pause subscription confirmation fails"}
+{"timestamp":"2026-05-21T22:35:15.705665776+02:00","action":"edit","task_id":52,"detail":"stage-07: Pause subscription confirmation fails"}
+{"timestamp":"2026-05-21T22:35:15.763459831+02:00","action":"move","task_id":52,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-21T22:35:29.364568503+02:00","action":"claim","task_id":53,"detail":"mold-glade"}
+{"timestamp":"2026-05-21T22:35:29.364801188+02:00","action":"move","task_id":53,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-21T22:40:07.121343166+02:00","action":"edit","task_id":53,"detail":"stage-07: Change Plan modal fails to load plan options"}
+{"timestamp":"2026-05-21T22:40:07.21400723+02:00","action":"move","task_id":53,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-21T22:40:12.476053894+02:00","action":"claim","task_id":55,"detail":"mold-glade"}
+{"timestamp":"2026-05-21T22:40:12.47628141+02:00","action":"move","task_id":55,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-21T22:41:31.747574516+02:00","action":"edit","task_id":55,"detail":"stage-07: Shipping address update fails from customer portal"}
+{"timestamp":"2026-05-21T22:43:46.644843859+02:00","action":"edit","task_id":55,"detail":"stage-07: Shipping address update fails from customer portal"}
+{"timestamp":"2026-05-21T22:43:46.69888126+02:00","action":"move","task_id":55,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-21T22:43:53.694306082+02:00","action":"claim","task_id":61,"detail":"mold-glade"}
+{"timestamp":"2026-05-21T22:43:53.694534389+02:00","action":"move","task_id":61,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-21T22:46:02.642823929+02:00","action":"edit","task_id":61,"detail":"stage-08: Retention offer modal stuck loading and cancellation error appears"}
+{"timestamp":"2026-05-21T22:57:23.320283918+02:00","action":"edit","task_id":61,"detail":"stage-08: Retention offer modal stuck loading and cancellation error appears"}
+{"timestamp":"2026-05-21T22:57:27.099114868+02:00","action":"move","task_id":61,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-21T22:57:37.555267573+02:00","action":"claim","task_id":63,"detail":"mold-glade"}
+{"timestamp":"2026-05-21T22:57:37.555627585+02:00","action":"move","task_id":63,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-21T23:00:37.190633742+02:00","action":"edit","task_id":63,"detail":"stage-09: Role mapping does not remove Pro Member role on cancellation"}
+{"timestamp":"2026-05-21T23:07:47.812166712+02:00","action":"edit","task_id":63,"detail":"stage-09: Role mapping does not remove Pro Member role on cancellation"}
+{"timestamp":"2026-05-21T23:07:47.88195014+02:00","action":"move","task_id":63,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-21T23:07:53.332558122+02:00","action":"claim","task_id":2,"detail":"mold-glade"}
+{"timestamp":"2026-05-21T23:07:53.332774106+02:00","action":"move","task_id":2,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-21T23:09:09.58324915+02:00","action":"edit","task_id":2,"detail":"Stage 00: Fresh debug.log warnings during baseline checks"}
+{"timestamp":"2026-05-21T23:12:36.759918041+02:00","action":"edit","task_id":2,"detail":"Stage 00: Fresh debug.log warnings during baseline checks"}
+{"timestamp":"2026-05-21T23:12:36.819304034+02:00","action":"move","task_id":2,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-21T23:12:41.343888091+02:00","action":"claim","task_id":5,"detail":"mold-glade"}
+{"timestamp":"2026-05-21T23:12:41.344354502+02:00","action":"move","task_id":5,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-21T23:13:59.127254439+02:00","action":"edit","task_id":5,"detail":"Stage 01: Wizard profile switch from review does not update business type"}
+{"timestamp":"2026-05-21T23:23:32.303151922+02:00","action":"edit","task_id":5,"detail":"Stage 01: Wizard profile switch from review does not update business type"}
+{"timestamp":"2026-05-21T23:23:32.378092029+02:00","action":"move","task_id":5,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-21T23:23:36.843393198+02:00","action":"claim","task_id":6,"detail":"mold-glade"}
+{"timestamp":"2026-05-21T23:23:36.843681466+02:00","action":"move","task_id":6,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-21T23:26:36.532671484+02:00","action":"edit","task_id":6,"detail":"Stage 01: Wizard trial/custom conditional fields missing"}
+{"timestamp":"2026-05-21T23:42:37.83884724+02:00","action":"edit","task_id":6,"detail":"Stage 01: Wizard trial/custom conditional fields missing"}
+{"timestamp":"2026-05-21T23:46:29.968988199+02:00","action":"edit","task_id":6,"detail":"Stage 01: Wizard trial/custom conditional fields missing"}
+{"timestamp":"2026-05-21T23:49:27.861980584+02:00","action":"edit","task_id":6,"detail":"Stage 01: Wizard trial/custom conditional fields missing"}
+{"timestamp":"2026-05-21T23:52:40.28182057+02:00","action":"move","task_id":6,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-21T23:52:40.314564011+02:00","action":"edit","task_id":6,"detail":"Stage 01: Wizard trial/custom conditional fields missing"}
+{"timestamp":"2026-05-21T23:52:51.721657177+02:00","action":"claim","task_id":7,"detail":"mold-glade"}
+{"timestamp":"2026-05-21T23:52:51.721966855+02:00","action":"move","task_id":7,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-21T23:55:26.715681845+02:00","action":"edit","task_id":7,"detail":"stage-02: General Settings customer action controls missing"}
+{"timestamp":"2026-05-21T23:56:44.492302926+02:00","action":"edit","task_id":7,"detail":"stage-02: General Settings customer action controls missing"}
+{"timestamp":"2026-05-22T00:02:05.136775321+02:00","action":"edit","task_id":7,"detail":"stage-02: General Settings customer action controls missing"}
+{"timestamp":"2026-05-22T00:13:38.123564951+02:00","action":"edit","task_id":7,"detail":"stage-02: General Settings customer action controls missing"}
+{"timestamp":"2026-05-22T00:13:42.771801147+02:00","action":"move","task_id":7,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-22T00:13:51.632525699+02:00","action":"claim","task_id":8,"detail":"mold-glade"}
+{"timestamp":"2026-05-22T00:13:51.633021154+02:00","action":"move","task_id":8,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-22T00:15:29.563734114+02:00","action":"edit","task_id":8,"detail":"stage-02: Automatic Payments visible without Pro"}
+{"timestamp":"2026-05-22T00:21:13.30612791+02:00","action":"edit","task_id":8,"detail":"stage-02: Automatic Payments visible without Pro"}
+{"timestamp":"2026-05-22T00:21:19.382354596+02:00","action":"move","task_id":8,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-22T00:21:27.601653595+02:00","action":"claim","task_id":10,"detail":"mold-glade"}
+{"timestamp":"2026-05-22T00:21:27.601948476+02:00","action":"move","task_id":10,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-22T00:23:34.369172761+02:00","action":"edit","task_id":10,"detail":"stage-02: Import Subscription section skips email/toolkit values"}
+{"timestamp":"2026-05-22T00:25:39.271275113+02:00","action":"edit","task_id":10,"detail":"stage-02: Import Subscription section skips email/toolkit values"}
+{"timestamp":"2026-05-22T00:25:46.687540717+02:00","action":"move","task_id":10,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-22T00:30:58.406498475+02:00","action":"claim","task_id":14,"detail":"mold-glade"}
+{"timestamp":"2026-05-22T00:30:58.406980796+02:00","action":"move","task_id":14,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-22T00:32:03.616761962+02:00","action":"edit","task_id":14,"detail":"stage-03: Trial checkout summary missing next-charge authorization copy"}
+{"timestamp":"2026-05-22T00:37:55.817753277+02:00","action":"edit","task_id":14,"detail":"stage-03: Trial checkout summary missing next-charge authorization copy"}
+{"timestamp":"2026-05-22T00:37:59.115319151+02:00","action":"move","task_id":14,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-22T00:38:03.97536225+02:00","action":"claim","task_id":15,"detail":"mold-glade"}
+{"timestamp":"2026-05-22T00:38:03.975653263+02:00","action":"move","task_id":15,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-22T00:38:48.590050715+02:00","action":"edit","task_id":15,"detail":"stage-03: Signup fee label and next charge summary mismatch"}
+{"timestamp":"2026-05-22T00:42:46.83964464+02:00","action":"edit","task_id":15,"detail":"stage-03: Signup fee label and next charge summary mismatch"}
+{"timestamp":"2026-05-22T00:42:51.260143679+02:00","action":"move","task_id":15,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-22T00:42:57.422685455+02:00","action":"claim","task_id":17,"detail":"mold-glade"}
+{"timestamp":"2026-05-22T00:42:57.423086876+02:00","action":"move","task_id":17,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-22T00:44:32.412536376+02:00","action":"edit","task_id":17,"detail":"stage-03: Lifetime deal shows renewal/duration instead of no recurring charges"}
+{"timestamp":"2026-05-22T00:50:16.870913589+02:00","action":"edit","task_id":17,"detail":"stage-03: Lifetime deal shows renewal/duration instead of no recurring charges"}
+{"timestamp":"2026-05-22T00:50:20.853286603+02:00","action":"move","task_id":17,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-22T00:50:25.622205264+02:00","action":"claim","task_id":18,"detail":"mold-glade"}
+{"timestamp":"2026-05-22T00:50:25.623234476+02:00","action":"move","task_id":18,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-22T00:52:05.351817124+02:00","action":"edit","task_id":18,"detail":"stage-03: Variable subscription variations display monthly schedule"}
+{"timestamp":"2026-05-22T00:56:53.009334719+02:00","action":"edit","task_id":18,"detail":"stage-03: Variable subscription variations display monthly schedule"}
+{"timestamp":"2026-05-22T00:56:56.92445172+02:00","action":"move","task_id":18,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-22T00:57:02.071716618+02:00","action":"claim","task_id":19,"detail":"mold-glade"}
+{"timestamp":"2026-05-22T00:57:02.072064247+02:00","action":"move","task_id":19,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-22T01:00:26.587062582+02:00","action":"edit","task_id":19,"detail":"stage-03: Subscription product validation does not block invalid saves"}
+{"timestamp":"2026-05-22T01:08:08.688110163+02:00","action":"edit","task_id":19,"detail":"stage-03: Subscription product validation does not block invalid saves"}
+{"timestamp":"2026-05-22T01:08:12.67215256+02:00","action":"move","task_id":19,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-22T01:08:16.855020292+02:00","action":"claim","task_id":20,"detail":"mold-glade"}
+{"timestamp":"2026-05-22T01:08:16.855263607+02:00","action":"move","task_id":20,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-22T01:10:19.596802246+02:00","action":"edit","task_id":20,"detail":"stage-03: Fixed period membership storefront text missing"}
+{"timestamp":"2026-05-22T01:11:56.819221122+02:00","action":"edit","task_id":20,"detail":"stage-03: Fixed period membership storefront text missing"}
+{"timestamp":"2026-05-22T01:12:00.935580584+02:00","action":"move","task_id":20,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-22T01:12:06.367002039+02:00","action":"claim","task_id":22,"detail":"mold-glade"}
+{"timestamp":"2026-05-22T01:12:06.36728095+02:00","action":"move","task_id":22,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-22T01:12:23.761103957+02:00","action":"edit","task_id":22,"detail":"stage-04: Mixed cart error text does not match QA spec"}
+{"timestamp":"2026-05-22T01:16:32.317997613+02:00","action":"edit","task_id":22,"detail":"stage-04: Mixed cart error text does not match QA spec"}
+{"timestamp":"2026-05-22T01:16:36.624118216+02:00","action":"move","task_id":22,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-22T01:16:42.87873817+02:00","action":"claim","task_id":23,"detail":"mold-glade"}
+{"timestamp":"2026-05-22T01:16:42.879041005+02:00","action":"move","task_id":23,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-22T01:17:04.051971158+02:00","action":"edit","task_id":23,"detail":"stage-04: Multiple subscription error text does not match QA spec"}
+{"timestamp":"2026-05-22T01:20:58.02276523+02:00","action":"edit","task_id":23,"detail":"stage-04: Multiple subscription error text does not match QA spec"}
+{"timestamp":"2026-05-22T01:21:02.590691569+02:00","action":"move","task_id":23,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-22T01:21:08.145983445+02:00","action":"claim","task_id":24,"detail":"mold-glade"}
+{"timestamp":"2026-05-22T01:21:08.14625386+02:00","action":"move","task_id":24,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-22T01:22:56.072194618+02:00","action":"edit","task_id":24,"detail":"stage-04: One-per-product quantity rule leaves invalid quantity and wrong text"}
+{"timestamp":"2026-05-22T01:40:42.864549277+02:00","action":"edit","task_id":24,"detail":"stage-04: One-per-product quantity rule leaves invalid quantity and wrong text"}
+{"timestamp":"2026-05-22T01:40:46.253792843+02:00","action":"move","task_id":24,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-22T01:40:53.88358385+02:00","action":"claim","task_id":25,"detail":"mold-glade"}
+{"timestamp":"2026-05-22T01:40:53.884661252+02:00","action":"move","task_id":25,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-22T01:41:37.371442184+02:00","action":"edit","task_id":25,"detail":"stage-04: Different billing cycle error text does not match QA spec"}
+{"timestamp":"2026-05-22T01:47:33.175468089+02:00","action":"edit","task_id":25,"detail":"stage-04: Different billing cycle error text does not match QA spec"}
+{"timestamp":"2026-05-22T01:47:37.399076488+02:00","action":"move","task_id":25,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-22T01:47:42.30213399+02:00","action":"claim","task_id":27,"detail":"mold-glade"}
+{"timestamp":"2026-05-22T01:47:42.302500875+02:00","action":"move","task_id":27,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-22T01:49:33.159390928+02:00","action":"edit","task_id":27,"detail":"stage-05: Different renewal summary wording does not match manual"}
+{"timestamp":"2026-05-22T01:53:20.584329342+02:00","action":"edit","task_id":27,"detail":"stage-05: Different renewal summary wording does not match manual"}
+{"timestamp":"2026-05-22T01:53:24.751078703+02:00","action":"move","task_id":27,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-22T01:53:31.250258776+02:00","action":"claim","task_id":29,"detail":"mold-glade"}
+{"timestamp":"2026-05-22T01:53:31.250502862+02:00","action":"move","task_id":29,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-22T01:54:27.562632166+02:00","action":"edit","task_id":29,"detail":"stage-05: One-click all-items mode does not clear existing same product quantity"}
+{"timestamp":"2026-05-22T01:57:12.016184101+02:00","action":"edit","task_id":29,"detail":"stage-05: One-click all-items mode does not clear existing same product quantity"}
+{"timestamp":"2026-05-22T01:57:16.21057577+02:00","action":"move","task_id":29,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-22T01:57:20.067242149+02:00","action":"claim","task_id":30,"detail":"mold-glade"}
+{"timestamp":"2026-05-22T01:57:20.067498188+02:00","action":"move","task_id":30,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-22T01:58:33.807697693+02:00","action":"edit","task_id":30,"detail":"stage-05: Non-subscription coupon applies to subscription product"}
+{"timestamp":"2026-05-22T02:04:26.791145755+02:00","action":"edit","task_id":30,"detail":"stage-05: Non-subscription coupon applies to subscription product"}
+{"timestamp":"2026-05-22T02:04:32.917538156+02:00","action":"move","task_id":30,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-22T02:04:39.261860359+02:00","action":"claim","task_id":32,"detail":"mold-glade"}
+{"timestamp":"2026-05-22T02:04:39.262744211+02:00","action":"move","task_id":32,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-22T02:06:38.59652761+02:00","action":"edit","task_id":32,"detail":"stage-05: Stripe card QA blocked by inline Payment Element"}
+{"timestamp":"2026-05-22T02:06:44.54479027+02:00","action":"move","task_id":32,"detail":"in-progress -\u003e blocked"}
+{"timestamp":"2026-05-22T02:06:51.774356093+02:00","action":"claim","task_id":33,"detail":"mold-glade"}
+{"timestamp":"2026-05-22T02:06:51.774764395+02:00","action":"move","task_id":33,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-22T02:09:37.008786093+02:00","action":"edit","task_id":33,"detail":"stage-05: Stripe gateway health inconsistent with webhook config"}
+{"timestamp":"2026-05-22T02:14:43.152972679+02:00","action":"edit","task_id":33,"detail":"stage-05: Stripe gateway health inconsistent with webhook config"}
+{"timestamp":"2026-05-22T02:14:49.988702926+02:00","action":"move","task_id":33,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-22T02:14:55.337491593+02:00","action":"claim","task_id":34,"detail":"mold-glade"}
+{"timestamp":"2026-05-22T02:14:55.33791814+02:00","action":"move","task_id":34,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-22T02:20:14.510768601+02:00","action":"edit","task_id":34,"detail":"stage-05: Checkout Builder not working on active checkout"}
+{"timestamp":"2026-05-22T02:34:57.470997179+02:00","action":"edit","task_id":34,"detail":"stage-05: Checkout Builder not working on active checkout"}
+{"timestamp":"2026-05-22T02:35:08.212681668+02:00","action":"move","task_id":34,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-22T02:35:14.28417141+02:00","action":"claim","task_id":35,"detail":"mold-glade"}
+{"timestamp":"2026-05-22T02:35:14.287858204+02:00","action":"move","task_id":35,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-22T02:36:33.857169486+02:00","action":"edit","task_id":35,"detail":"stage-06: Task 01 expected classic subscription artifact missing"}
+{"timestamp":"2026-05-22T02:47:13.38788858+02:00","action":"edit","task_id":35,"detail":"stage-06: Task 01 expected classic subscription artifact missing"}
+{"timestamp":"2026-05-22T02:47:19.124100525+02:00","action":"move","task_id":35,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-22T02:47:37.224750159+02:00","action":"claim","task_id":39,"detail":"mold-glade"}
+{"timestamp":"2026-05-22T02:47:37.225042525+02:00","action":"move","task_id":39,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-22T02:51:27.835507638+02:00","action":"edit","task_id":39,"detail":"stage-06: Portal Change Plan modal fails to load options"}
+{"timestamp":"2026-05-22T02:55:39.83769243+02:00","action":"edit","task_id":39,"detail":"stage-06: Portal Change Plan modal fails to load options"}
+{"timestamp":"2026-05-22T02:55:39.900622661+02:00","action":"move","task_id":39,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-22T02:55:44.849634072+02:00","action":"claim","task_id":40,"detail":"mold-glade"}
+{"timestamp":"2026-05-22T02:55:44.85003474+02:00","action":"move","task_id":40,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-22T02:56:34.020569419+02:00","action":"edit","task_id":40,"detail":"stage-06: Email delivery cannot be verified from accessible QA tooling"}
+{"timestamp":"2026-05-22T02:56:34.07884609+02:00","action":"edit","task_id":40,"detail":"stage-06: Email delivery cannot be verified from accessible QA tooling"}
+{"timestamp":"2026-05-22T02:56:34.079166599+02:00","action":"block","task_id":40,"detail":"Needs QA-accessible mailbox/catch-all, WP Mail SMTP content logs, local mail catcher, or read-capable Resend/API credentials. Current environment exposes none; delivery proof cannot be created or verified from browser/code."}
+{"timestamp":"2026-05-22T02:56:34.132674484+02:00","action":"move","task_id":40,"detail":"in-progress -\u003e blocked"}
+{"timestamp":"2026-05-22T02:56:45.106545023+02:00","action":"claim","task_id":44,"detail":"mold-glade"}
+{"timestamp":"2026-05-22T02:56:45.10674169+02:00","action":"move","task_id":44,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-22T02:57:38.732800305+02:00","action":"edit","task_id":44,"detail":"stage-07: Subscriptions pagination changes URL but keeps page 1 rows"}
+{"timestamp":"2026-05-22T03:00:29.192773505+02:00","action":"edit","task_id":44,"detail":"stage-07: Subscriptions pagination changes URL but keeps page 1 rows"}
+{"timestamp":"2026-05-22T03:00:29.282861916+02:00","action":"move","task_id":44,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-22T03:00:34.628902414+02:00","action":"claim","task_id":46,"detail":"mold-glade"}
+{"timestamp":"2026-05-22T03:00:34.629373694+02:00","action":"move","task_id":46,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-22T03:02:30.975813859+02:00","action":"edit","task_id":46,"detail":"stage-07: Skip and pause controls missing from active subscription detail"}
+{"timestamp":"2026-05-22T03:03:45.740528415+02:00","action":"edit","task_id":46,"detail":"stage-07: Skip and pause controls missing from active subscription detail"}
+{"timestamp":"2026-05-22T03:03:45.805464281+02:00","action":"move","task_id":46,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-22T03:03:52.297578671+02:00","action":"claim","task_id":54,"detail":"mold-glade"}
+{"timestamp":"2026-05-22T03:03:52.297839037+02:00","action":"move","task_id":54,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-22T03:05:50.191102661+02:00","action":"edit","task_id":54,"detail":"stage-07: Payment method card-on-file QA fixture missing"}
+{"timestamp":"2026-05-22T03:26:53.823419038+02:00","action":"edit","task_id":54,"detail":"stage-07: Payment method card-on-file QA fixture missing"}
+{"timestamp":"2026-05-22T03:26:53.886920721+02:00","action":"move","task_id":54,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-22T03:27:13.294361793+02:00","action":"claim","task_id":56,"detail":"mold-glade"}
+{"timestamp":"2026-05-22T03:27:13.294862037+02:00","action":"move","task_id":56,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-22T03:28:52.34199236+02:00","action":"edit","task_id":56,"detail":"stage-07: On-Hold subscription exposes Cancel Subscription action"}
+{"timestamp":"2026-05-22T03:31:18.809455869+02:00","action":"edit","task_id":56,"detail":"stage-07: On-Hold subscription exposes Cancel Subscription action"}
+{"timestamp":"2026-05-22T03:31:18.872136468+02:00","action":"move","task_id":56,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-22T03:31:27.320488738+02:00","action":"claim","task_id":57,"detail":"mold-glade"}
+{"timestamp":"2026-05-22T03:31:27.320903392+02:00","action":"move","task_id":57,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-22T03:32:35.261246643+02:00","action":"edit","task_id":57,"detail":"stage-07: Expired subscription exposes Reactivate action"}
+{"timestamp":"2026-05-22T03:34:40.569244575+02:00","action":"edit","task_id":57,"detail":"stage-07: Expired subscription exposes Reactivate action"}
+{"timestamp":"2026-05-22T03:34:40.627805739+02:00","action":"move","task_id":57,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-22T03:34:46.546299744+02:00","action":"claim","task_id":59,"detail":"mold-glade"}
+{"timestamp":"2026-05-22T03:34:46.547479679+02:00","action":"move","task_id":59,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-22T03:36:32.365689653+02:00","action":"edit","task_id":59,"detail":"stage-08: Retention reasons default list missing temporary_pause"}
+{"timestamp":"2026-05-22T03:40:08.087691824+02:00","action":"edit","task_id":59,"detail":"stage-08: Retention reasons default list missing temporary_pause"}
+{"timestamp":"2026-05-22T03:40:08.148327285+02:00","action":"move","task_id":59,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-22T03:40:15.174123655+02:00","action":"claim","task_id":60,"detail":"mold-glade"}
+{"timestamp":"2026-05-22T03:40:15.174371599+02:00","action":"move","task_id":60,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-22T03:45:25.125653649+02:00","action":"edit","task_id":60,"detail":"stage-08: Customer cancel modal uses stale reason list and enabled Continue"}
+{"timestamp":"2026-05-22T03:45:25.189592746+02:00","action":"move","task_id":60,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-22T03:45:31.747275435+02:00","action":"claim","task_id":64,"detail":"mold-glade"}
+{"timestamp":"2026-05-22T03:45:31.747529991+02:00","action":"move","task_id":64,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-22T03:46:29.568519751+02:00","action":"edit","task_id":64,"detail":"stage-09: URL rule require-login sends logged-out visitor to pricing instead of login"}
+{"timestamp":"2026-05-22T03:51:36.226083958+02:00","action":"edit","task_id":64,"detail":"stage-09: URL rule require-login sends logged-out visitor to pricing instead of login"}
+{"timestamp":"2026-05-22T03:51:36.289537918+02:00","action":"move","task_id":64,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-22T03:51:44.050082794+02:00","action":"claim","task_id":65,"detail":"mold-glade"}
+{"timestamp":"2026-05-22T03:51:44.050483253+02:00","action":"move","task_id":65,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-22T03:55:12.310745665+02:00","action":"edit","task_id":65,"detail":"stage-09: Member Access stage prerequisites were missing on test site"}
+{"timestamp":"2026-05-22T04:00:58.767164849+02:00","action":"edit","task_id":65,"detail":"stage-09: Member Access stage prerequisites were missing on test site"}
+{"timestamp":"2026-05-22T04:01:04.458273778+02:00","action":"move","task_id":65,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-22T04:01:19.061169215+02:00","action":"claim","task_id":66,"detail":"mold-glade"}
+{"timestamp":"2026-05-22T04:01:19.06143375+02:00","action":"move","task_id":66,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-22T04:03:05.811545066+02:00","action":"edit","task_id":66,"detail":"stage-10: Profile Builder prerequisites and QA assets missing"}
+{"timestamp":"2026-05-22T04:06:06.580432739+02:00","action":"edit","task_id":66,"detail":"stage-10: Profile Builder prerequisites and QA assets missing"}
+{"timestamp":"2026-05-22T04:06:12.558342896+02:00","action":"move","task_id":66,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-22T04:06:22.320668914+02:00","action":"claim","task_id":3,"detail":"mold-glade"}
+{"timestamp":"2026-05-22T04:06:22.321049986+02:00","action":"move","task_id":3,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-22T04:07:54.671179246+02:00","action":"edit","task_id":3,"detail":"Stage 00: Scheduler has failed action outside ArraySubs"}
+{"timestamp":"2026-05-22T04:08:56.022429366+02:00","action":"edit","task_id":3,"detail":"Stage 00: Scheduler has failed action outside ArraySubs"}
+{"timestamp":"2026-05-22T04:09:00.725646334+02:00","action":"move","task_id":3,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-22T04:09:11.466856689+02:00","action":"claim","task_id":9,"detail":"mold-glade"}
+{"timestamp":"2026-05-22T04:09:11.467198548+02:00","action":"move","task_id":9,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-22T04:13:50.306259235+02:00","action":"edit","task_id":9,"detail":"stage-02: Export omits expected config option groups"}
+{"timestamp":"2026-05-22T04:13:57.613109556+02:00","action":"move","task_id":9,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-22T04:14:09.053746458+02:00","action":"claim","task_id":12,"detail":"mold-glade"}
+{"timestamp":"2026-05-22T04:14:09.054442779+02:00","action":"move","task_id":12,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-22T04:16:44.185032798+02:00","action":"edit","task_id":12,"detail":"stage-03: Basic Monthly recurring price format mismatch"}
+{"timestamp":"2026-05-22T04:21:13.990407819+02:00","action":"edit","task_id":12,"detail":"stage-03: Basic Monthly recurring price format mismatch"}
+{"timestamp":"2026-05-22T04:21:29.580917486+02:00","action":"edit","task_id":12,"detail":"stage-03: Basic Monthly recurring price format mismatch"}
+{"timestamp":"2026-05-22T04:21:34.656690419+02:00","action":"move","task_id":12,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-22T04:21:54.964135264+02:00","action":"claim","task_id":13,"detail":"mold-glade"}
+{"timestamp":"2026-05-22T04:21:54.964507439+02:00","action":"move","task_id":13,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-22T04:28:32.080168365+02:00","action":"edit","task_id":13,"detail":"stage-03: Cart missing proceed-to-checkout button for trial item"}
+{"timestamp":"2026-05-22T04:30:14.330886944+02:00","action":"edit","task_id":13,"detail":"stage-03: Cart missing proceed-to-checkout button for trial item"}
+{"timestamp":"2026-05-22T04:30:24.101165446+02:00","action":"move","task_id":13,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-22T04:30:34.609062314+02:00","action":"claim","task_id":16,"detail":"mold-glade"}
+{"timestamp":"2026-05-22T04:30:34.610504518+02:00","action":"move","task_id":16,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-22T04:33:50.879376963+02:00","action":"edit","task_id":16,"detail":"stage-03: Stepped renewal checkout summary missing next charge date"}
+{"timestamp":"2026-05-22T04:45:29.001958225+02:00","action":"edit","task_id":16,"detail":"stage-03: Stepped renewal checkout summary missing next charge date"}
+{"timestamp":"2026-05-22T04:45:36.918132169+02:00","action":"move","task_id":16,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-22T04:45:49.462508927+02:00","action":"claim","task_id":21,"detail":"mold-glade"}
+{"timestamp":"2026-05-22T04:45:49.463182271+02:00","action":"move","task_id":21,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-22T04:46:19.758597751+02:00","action":"edit","task_id":21,"detail":"stage-03: Fixed-length checkout summary missing next charge date"}
+{"timestamp":"2026-05-22T04:47:33.916110556+02:00","action":"edit","task_id":21,"detail":"stage-03: Fixed-length checkout summary missing next charge date"}
+{"timestamp":"2026-05-22T04:47:37.548816172+02:00","action":"move","task_id":21,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-22T04:47:49.668474061+02:00","action":"claim","task_id":31,"detail":"mold-glade"}
+{"timestamp":"2026-05-22T04:47:49.6691602+02:00","action":"move","task_id":31,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-22T04:48:58.938674446+02:00","action":"edit","task_id":31,"detail":"stage-05: Plan switch checkout wording differs from manual"}
+{"timestamp":"2026-05-22T04:57:24.537702844+02:00","action":"edit","task_id":31,"detail":"stage-05: Plan switch checkout wording differs from manual"}
+{"timestamp":"2026-05-22T04:57:31.795852705+02:00","action":"move","task_id":31,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-22T04:57:45.80309328+02:00","action":"claim","task_id":36,"detail":"mold-glade"}
+{"timestamp":"2026-05-22T04:57:45.803345891+02:00","action":"move","task_id":36,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-22T04:58:46.100819983+02:00","action":"edit","task_id":36,"detail":"stage-06: Active subscription row shows Delete action"}
+{"timestamp":"2026-05-22T05:03:33.568441492+02:00","action":"edit","task_id":36,"detail":"stage-06: Active subscription row shows Delete action"}
+{"timestamp":"2026-05-22T05:03:38.096384647+02:00","action":"move","task_id":36,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-22T05:03:51.890545353+02:00","action":"claim","task_id":37,"detail":"mold-glade"}
+{"timestamp":"2026-05-22T05:03:51.891068559+02:00","action":"move","task_id":37,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-22T05:04:24.161874367+02:00","action":"edit","task_id":37,"detail":"stage-06: Trial status task expects wrong product and duration"}
+{"timestamp":"2026-05-22T05:05:32.791827948+02:00","action":"edit","task_id":37,"detail":"stage-06: Trial status task expects wrong product and duration"}
+{"timestamp":"2026-05-22T05:05:40.98214642+02:00","action":"move","task_id":37,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-22T05:05:52.516292496+02:00","action":"claim","task_id":38,"detail":"mold-glade"}
+{"timestamp":"2026-05-22T05:05:52.516639684+02:00","action":"move","task_id":38,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-22T05:08:29.634705099+02:00","action":"edit","task_id":38,"detail":"stage-06: Subscription detail duplicates payment received event"}
+{"timestamp":"2026-05-22T05:10:39.234657872+02:00","action":"edit","task_id":38,"detail":"stage-06: Subscription detail duplicates payment received event"}
+{"timestamp":"2026-05-22T05:10:50.706883823+02:00","action":"move","task_id":38,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-22T05:10:55.088216455+02:00","action":"claim","task_id":41,"detail":"mold-glade"}
+{"timestamp":"2026-05-22T05:10:55.088498342+02:00","action":"move","task_id":41,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-22T05:13:25.113069833+02:00","action":"edit","task_id":41,"detail":"stage-06: Email previews use empty sample data and visible footer placeholders"}
+{"timestamp":"2026-05-22T05:21:51.35296809+02:00","action":"edit","task_id":41,"detail":"stage-06: Email previews use empty sample data and visible footer placeholders"}
+{"timestamp":"2026-05-22T05:22:00.619598161+02:00","action":"move","task_id":41,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-22T05:22:06.798390189+02:00","action":"claim","task_id":42,"detail":"mold-glade"}
+{"timestamp":"2026-05-22T05:22:06.798768235+02:00","action":"move","task_id":42,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-22T05:23:24.764500757+02:00","action":"edit","task_id":42,"detail":"stage-07: Trial subscription list row shows no next payment date"}
+{"timestamp":"2026-05-22T05:27:32.826184188+02:00","action":"edit","task_id":42,"detail":"stage-07: Trial subscription list row shows no next payment date"}
+{"timestamp":"2026-05-22T05:27:37.482254882+02:00","action":"move","task_id":42,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-22T05:27:41.909253919+02:00","action":"claim","task_id":43,"detail":"mold-glade"}
+{"timestamp":"2026-05-22T05:27:41.909520478+02:00","action":"move","task_id":43,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-22T05:28:24.498383661+02:00","action":"edit","task_id":43,"detail":"stage-07: Subscriptions account-nav count does not match list total"}
+{"timestamp":"2026-05-22T05:29:25.218612298+02:00","action":"edit","task_id":43,"detail":"stage-07: Subscriptions account-nav count does not match list total"}
+{"timestamp":"2026-05-22T05:29:29.639432645+02:00","action":"move","task_id":43,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-22T05:29:37.304810003+02:00","action":"claim","task_id":45,"detail":"mold-glade"}
+{"timestamp":"2026-05-22T05:29:37.305137986+02:00","action":"move","task_id":45,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-22T05:30:04.580309502+02:00","action":"edit","task_id":45,"detail":"stage-07: Cancelled subscription detail still renders Subscription Actions"}
+{"timestamp":"2026-05-22T05:30:58.968292223+02:00","action":"edit","task_id":45,"detail":"stage-07: Cancelled subscription detail still renders Subscription Actions"}
+{"timestamp":"2026-05-22T05:31:07.685608181+02:00","action":"move","task_id":45,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-22T05:31:20.24589135+02:00","action":"claim","task_id":58,"detail":"mold-glade"}
+{"timestamp":"2026-05-22T05:31:20.246211658+02:00","action":"move","task_id":58,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-22T05:32:54.729826341+02:00","action":"edit","task_id":58,"detail":"stage-07: Trial and On-Hold action matrix lacks shipping-eligible fixtures"}
+{"timestamp":"2026-05-22T05:34:32.303461016+02:00","action":"edit","task_id":58,"detail":"stage-07: Trial and On-Hold action matrix lacks shipping-eligible fixtures"}
+{"timestamp":"2026-05-22T05:34:41.418264948+02:00","action":"move","task_id":58,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-22T05:34:51.891214258+02:00","action":"claim","task_id":62,"detail":"mold-glade"}
+{"timestamp":"2026-05-22T05:34:51.891499781+02:00","action":"move","task_id":62,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-22T05:36:48.273797426+02:00","action":"edit","task_id":62,"detail":"stage-08: Retention analytics churn chart shows not_provided despite reasoned logs"}
+{"timestamp":"2026-05-22T05:39:59.072050085+02:00","action":"edit","task_id":62,"detail":"stage-08: Retention analytics churn chart shows not_provided despite reasoned logs"}
+{"timestamp":"2026-05-22T05:40:11.662788545+02:00","action":"move","task_id":62,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-22T05:40:16.797715178+02:00","action":"claim","task_id":4,"detail":"mold-glade"}
+{"timestamp":"2026-05-22T05:40:16.798037601+02:00","action":"move","task_id":4,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-22T05:42:11.659359856+02:00","action":"edit","task_id":4,"detail":"Stage 00: Menu label/docs mismatch (`Subscription` vs `ArraySubs`)"}
+{"timestamp":"2026-05-22T05:44:54.414311419+02:00","action":"edit","task_id":4,"detail":"Stage 00: Menu label/docs mismatch (`Subscription` vs `ArraySubs`)"}
+{"timestamp":"2026-05-22T05:44:58.353041765+02:00","action":"move","task_id":4,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-22T05:45:16.532568076+02:00","action":"claim","task_id":49,"detail":"mold-glade"}
+{"timestamp":"2026-05-22T05:45:16.533029057+02:00","action":"move","task_id":49,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-22T05:47:46.40353925+02:00","action":"edit","task_id":49,"detail":"stage-07: Cancellation reason required by task is not configured"}
+{"timestamp":"2026-05-22T05:47:51.504546405+02:00","action":"edit","task_id":49,"detail":"stage-07: Cancellation reason required by task is not configured"}
+{"timestamp":"2026-05-22T05:47:55.113883874+02:00","action":"move","task_id":49,"detail":"in-progress -\u003e closed"}
