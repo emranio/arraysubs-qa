@@ -1,0 +1,19 @@
+{
+  "code": 200,
+  "message": "Prorated refund preview calculated",
+  "content": {
+    "success": true,
+    "subscription_id": 1704,
+    "cancel_date": "2026-05-24 20:42:28",
+    "cycle_days": 7,
+    "days_used": 3.5,
+    "days_unused": 3.5,
+    "recurring_amount": 19.99,
+    "daily_rate": 2.8557,
+    "refund_amount": 10,
+    "currency": "USD",
+    "formatted": {
+      "refund": "<span class=\"woocommerce-Price-amount amount\"><bdi><span class=\"woocommerce-Price-currencySymbol\">&#36;</span>10.00</bdi></span>"
+    }
+  }
+}

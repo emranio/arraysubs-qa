@@ -1,0 +1,309 @@
+﻿Subscription ID,Status,Customer Name,Customer Email,Product Name,Recurring Amount,Currency,Billing Cycle,Start Date,Next Payment Date,Last Payment Date,End Date,Total Payments,Payment Method,Created Date
+2819,Cancelled,qa_full_refund_sync_1779621622,qa-full-refund-sync-1779621622@example.test,QA Store Credit Refund Status Product,8.5,USD,1 month,2026-05-24 11:20:30,,,2026-05-24 11:20:34,1,Direct bank transfer,2026-05-24 17:20:30
+2776,Cancelled,qa_ui_refund_status_1779614765,qa-ui-refund-status-1779614765@example.com,QA Store Credit Refund Status Product,8.5,USD,1 month,,,,2026-05-24 09:30:25,1,,2026-05-24 15:26:11
+2762,Cancelled,qa_refund_status_1779614694,qa-refund-status-1779614694@example.com,,7.25,USD,1 month,,,,2026-05-24 09:25:13,1,,2026-05-24 15:25:02
+2727,Active,qa-credit-order,qa-credit-order@test.local,Standard Weekly,19.99,USD,1 week,2026-05-24 08:29:48,2026-05-24 08:41:31,2026-05-24 08:42:24,,0,,2026-05-24 14:29:48
+2700,Active,QA Credit Cart,qa-credit-cart@test.local,Standard Weekly,19.99,USD,1 week,2026-05-24 08:23:24,2026-05-31 08:23:24,2026-05-24 08:23:32,,0,,2026-05-24 14:23:24
+2651,Cancelled,admin,admin@mirror-help.arrayhash.com,Basic Monthly,29.99,USD,1 month,2026-05-24 06:08:09,,2026-05-24 06:08:21,2026-05-24 11:22:00,1,Stripe,2026-05-24 12:08:09
+2591,Active,Smoke Tester,smoke@example.com,Smoke Plan Plus,20,USD,1 month,2026-05-23 19:53:30,2026-06-23 19:54:36,2026-05-23 19:55:40,,2,Stripe,2026-05-24 01:53:30
+2566,Expired,Perf 250,perf250@example.test,Standard Weekly,19.99,USD,1 week,2026-05-13 19:28:10,,,2026-05-22 19:28:10,1,Check payments,2026-05-24 01:28:10
+2563,Expired,Perf 249,perf249@example.test,Basic Monthly,29.99,USD,1 month,2026-05-14 19:28:09,,,2026-05-22 19:28:09,1,Check payments,2026-05-24 01:28:09
+2560,Expired,Perf 248,perf248@example.test,Pro Plan,29.99,USD,1 month,2026-05-15 19:28:08,,,2026-05-22 19:28:08,1,Check payments,2026-05-24 01:28:08
+2557,Expired,Perf 247,perf247@example.test,Trial Weekly,19.99,USD,1 month,2026-05-16 19:28:07,,,2026-05-22 19:28:07,1,Check payments,2026-05-24 01:28:07
+2554,Expired,Perf 246,perf246@example.test,Standard Weekly,19.99,USD,1 week,2026-05-17 19:28:05,,,2026-05-22 19:28:06,1,Check payments,2026-05-24 01:28:05
+2551,Expired,Perf 245,perf245@example.test,Basic Monthly,29.99,USD,1 month,2026-05-18 19:28:04,,,2026-05-22 19:28:05,1,Check payments,2026-05-24 01:28:04
+2548,Expired,Perf 244,perf244@example.test,Pro Plan,29.99,USD,1 month,2026-05-19 19:28:02,,,2026-05-22 19:28:03,1,Check payments,2026-05-24 01:28:02
+2545,Expired,Perf 243,perf243@example.test,Trial Weekly,19.99,USD,1 month,2026-05-20 19:28:00,,,2026-05-22 19:28:01,1,Check payments,2026-05-24 01:28:00
+2542,Expired,Perf 242,perf242@example.test,Standard Weekly,19.99,USD,1 week,2026-05-21 19:27:59,,,2026-05-22 19:28:00,1,Check payments,2026-05-24 01:27:59
+2539,Expired,Perf 241,perf241@example.test,Basic Monthly,29.99,USD,1 month,2026-05-22 19:27:58,,,2026-05-22 19:27:59,1,Check payments,2026-05-24 01:27:58
+2536,Expired,Perf 240,perf240@example.test,Pro Plan,29.99,USD,1 month,2026-05-23 19:27:57,,,2026-05-22 19:27:58,1,Check payments,2026-05-24 01:27:57
+2533,Expired,Perf 239,perf239@example.test,Trial Weekly,19.99,USD,1 month,2026-03-25 19:27:56,,,2026-05-22 19:27:57,1,Check payments,2026-05-24 01:27:56
+2530,Cancelled,Perf 238,perf238@example.test,Standard Weekly,19.99,USD,1 week,2026-03-26 19:27:55,,,2026-05-23 19:27:56,1,Check payments,2026-05-24 01:27:55
+2527,Cancelled,Perf 237,perf237@example.test,Basic Monthly,29.99,USD,1 month,2026-03-27 19:27:54,,,2026-05-23 19:27:55,1,Check payments,2026-05-24 01:27:54
+2524,Cancelled,Perf 236,perf236@example.test,Pro Plan,29.99,USD,1 month,2026-03-28 19:27:53,,,2026-05-23 19:27:54,1,Check payments,2026-05-24 01:27:53
+2521,Cancelled,Perf 235,perf235@example.test,Trial Weekly,19.99,USD,1 month,2026-03-29 19:27:52,,,2026-05-23 19:27:53,1,Check payments,2026-05-24 01:27:52
+2518,Cancelled,Perf 234,perf234@example.test,Standard Weekly,19.99,USD,1 week,2026-03-30 19:27:51,,,2026-05-23 19:27:51,1,Check payments,2026-05-24 01:27:51
+2515,Cancelled,Perf 233,perf233@example.test,Basic Monthly,29.99,USD,1 month,2026-03-31 19:27:49,,,2026-05-23 19:27:50,1,Check payments,2026-05-24 01:27:49
+2512,Cancelled,Perf 232,perf232@example.test,Pro Plan,29.99,USD,1 month,2026-04-01 19:27:48,,,2026-05-23 19:27:49,1,Check payments,2026-05-24 01:27:48
+2509,Cancelled,Perf 231,perf231@example.test,Trial Weekly,19.99,USD,1 month,2026-04-02 19:27:47,,,2026-05-23 19:27:48,1,Check payments,2026-05-24 01:27:47
+2506,Cancelled,Perf 230,perf230@example.test,Standard Weekly,19.99,USD,1 week,2026-04-03 19:27:46,,,2026-05-23 19:27:47,1,Check payments,2026-05-24 01:27:46
+2503,Cancelled,Perf 229,perf229@example.test,Basic Monthly,29.99,USD,1 month,2026-04-04 19:27:45,,,2026-05-23 19:27:46,1,Check payments,2026-05-24 01:27:45
+2500,Cancelled,Perf 228,perf228@example.test,Pro Plan,29.99,USD,1 month,2026-04-05 19:27:44,,,2026-05-23 19:27:45,1,Check payments,2026-05-24 01:27:44
+2497,Cancelled,Perf 227,perf227@example.test,Trial Weekly,19.99,USD,1 month,2026-04-06 19:27:43,,,2026-05-23 19:27:44,1,Check payments,2026-05-24 01:27:43
+2494,Cancelled,Perf 226,perf226@example.test,Standard Weekly,19.99,USD,1 week,2026-04-07 19:27:42,,,2026-05-23 19:27:43,1,Check payments,2026-05-24 01:27:42
+2491,Cancelled,Perf 225,perf225@example.test,Basic Monthly,29.99,USD,1 month,2026-04-08 19:27:41,,,2026-05-23 19:27:42,1,Check payments,2026-05-24 01:27:41
+2488,Cancelled,Perf 224,perf224@example.test,Pro Plan,29.99,USD,1 month,2026-04-09 19:27:40,,,2026-05-23 19:27:41,1,Check payments,2026-05-24 01:27:40
+2485,Cancelled,Perf 223,perf223@example.test,Trial Weekly,19.99,USD,1 month,2026-04-10 19:27:39,,,2026-05-23 19:27:40,1,Check payments,2026-05-24 01:27:39
+2482,Cancelled,Perf 222,perf222@example.test,Standard Weekly,19.99,USD,1 week,2026-04-11 19:27:38,,,2026-05-23 19:27:38,1,Check payments,2026-05-24 01:27:38
+2479,Cancelled,Perf 221,perf221@example.test,Basic Monthly,29.99,USD,1 month,2026-04-12 19:27:36,,,2026-05-23 19:27:37,1,Check payments,2026-05-24 01:27:36
+2476,Cancelled,Perf 220,perf220@example.test,Pro Plan,29.99,USD,1 month,2026-04-13 19:27:35,,,2026-05-23 19:27:36,1,Check payments,2026-05-24 01:27:35
+2473,Cancelled,Perf 219,perf219@example.test,Trial Weekly,19.99,USD,1 month,2026-04-14 19:27:33,,,2026-05-23 19:27:34,1,Check payments,2026-05-24 01:27:33
+2470,Cancelled,Perf 218,perf218@example.test,Standard Weekly,19.99,USD,1 week,2026-04-15 19:27:32,,,2026-05-23 19:27:33,1,Check payments,2026-05-24 01:27:32
+2467,Cancelled,Perf 217,perf217@example.test,Basic Monthly,29.99,USD,1 month,2026-04-16 19:27:31,,,2026-05-23 19:27:32,1,Check payments,2026-05-24 01:27:31
+2464,Cancelled,Perf 216,perf216@example.test,Pro Plan,29.99,USD,1 month,2026-04-17 19:27:30,,,2026-05-23 19:27:31,1,Check payments,2026-05-24 01:27:30
+2461,Cancelled,Perf 215,perf215@example.test,Trial Weekly,19.99,USD,1 month,2026-04-18 19:27:29,,,2026-05-23 19:27:30,1,Check payments,2026-05-24 01:27:29
+2458,Cancelled,Perf 214,perf214@example.test,Standard Weekly,19.99,USD,1 week,2026-04-19 19:27:27,,,2026-05-23 19:27:28,1,Check payments,2026-05-24 01:27:27
+2455,On Hold,Perf 213,perf213@example.test,Basic Monthly,29.99,USD,1 month,2026-04-20 19:27:26,2026-05-27 19:27:26,,,1,Check payments,2026-05-24 01:27:26
+2452,On Hold,Perf 212,perf212@example.test,Pro Plan,29.99,USD,1 month,2026-04-21 19:27:25,2026-05-26 19:27:25,,,1,Check payments,2026-05-24 01:27:25
+2449,On Hold,Perf 211,perf211@example.test,Trial Weekly,19.99,USD,1 month,2026-04-22 19:27:24,2026-05-25 19:27:24,,,1,Check payments,2026-05-24 01:27:24
+2446,On Hold,Perf 210,perf210@example.test,Standard Weekly,19.99,USD,1 week,2026-04-23 19:27:23,2026-05-24 19:27:23,,,1,Check payments,2026-05-24 01:27:23
+2443,On Hold,Perf 209,perf209@example.test,Basic Monthly,29.99,USD,1 month,2026-04-24 19:27:22,2026-06-22 19:27:22,,,1,Check payments,2026-05-24 01:27:22
+2440,On Hold,Perf 208,perf208@example.test,Pro Plan,29.99,USD,1 month,2026-04-25 19:27:21,2026-06-21 19:27:21,,,1,Check payments,2026-05-24 01:27:21
+2437,On Hold,Perf 207,perf207@example.test,Trial Weekly,19.99,USD,1 month,2026-04-26 19:27:19,2026-06-20 19:27:19,,,1,Check payments,2026-05-24 01:27:19
+2434,On Hold,Perf 206,perf206@example.test,Standard Weekly,19.99,USD,1 week,2026-04-27 19:27:18,2026-06-19 19:27:18,,,1,Check payments,2026-05-24 01:27:18
+2431,On Hold,Perf 205,perf205@example.test,Basic Monthly,29.99,USD,1 month,2026-04-28 19:27:17,2026-06-18 19:27:17,,,1,Check payments,2026-05-24 01:27:17
+2428,On Hold,Perf 204,perf204@example.test,Pro Plan,29.99,USD,1 month,2026-04-29 19:27:16,2026-06-17 19:27:16,,,1,Check payments,2026-05-24 01:27:16
+2425,On Hold,Perf 203,perf203@example.test,Trial Weekly,19.99,USD,1 month,2026-04-30 19:27:15,2026-06-16 19:27:15,,,1,Check payments,2026-05-24 01:27:15
+2422,On Hold,Perf 202,perf202@example.test,Standard Weekly,19.99,USD,1 week,2026-05-01 19:27:14,2026-06-15 19:27:14,,,1,Check payments,2026-05-24 01:27:14
+2419,On Hold,Perf 201,perf201@example.test,Basic Monthly,29.99,USD,1 month,2026-05-02 19:27:13,2026-06-14 19:27:13,,,1,Check payments,2026-05-24 01:27:13
+2416,On Hold,Perf 200,perf200@example.test,Pro Plan,29.99,USD,1 month,2026-05-03 19:27:12,2026-06-13 19:27:12,,,1,Check payments,2026-05-24 01:27:12
+2413,On Hold,Perf 199,perf199@example.test,Trial Weekly,19.99,USD,1 month,2026-05-04 19:27:11,2026-06-12 19:27:11,,,1,Check payments,2026-05-24 01:27:11
+2410,On Hold,Perf 198,perf198@example.test,Standard Weekly,19.99,USD,1 week,2026-05-05 19:27:10,2026-06-11 19:27:10,,,1,Check payments,2026-05-24 01:27:10
+2407,On Hold,Perf 197,perf197@example.test,Basic Monthly,29.99,USD,1 month,2026-05-06 19:27:09,2026-06-10 19:27:09,,,1,Check payments,2026-05-24 01:27:09
+2404,On Hold,Perf 196,perf196@example.test,Pro Plan,29.99,USD,1 month,2026-05-07 19:27:07,2026-06-09 19:27:07,,,1,Check payments,2026-05-24 01:27:07
+2401,On Hold,Perf 195,perf195@example.test,Trial Weekly,19.99,USD,1 month,2026-05-08 19:27:05,2026-06-08 19:27:05,,,1,Check payments,2026-05-24 01:27:05
+2398,On Hold,Perf 194,perf194@example.test,Standard Weekly,19.99,USD,1 week,2026-05-09 19:27:02,2026-06-07 19:27:02,,,1,Check payments,2026-05-24 01:27:02
+2395,On Hold,Perf 193,perf193@example.test,Basic Monthly,29.99,USD,1 month,2026-05-10 19:27:01,2026-06-06 19:27:01,,,1,Check payments,2026-05-24 01:27:01
+2389,On Hold,Perf 191,perf191@example.test,Trial Weekly,19.99,USD,1 month,2026-05-12 19:26:59,2026-06-04 19:26:59,,,1,Check payments,2026-05-24 01:26:59
+2392,On Hold,Perf 192,perf192@example.test,Pro Plan,29.99,USD,1 month,2026-05-11 19:26:59,2026-06-05 19:26:59,,,1,Check payments,2026-05-24 01:26:59
+2386,On Hold,Perf 190,perf190@example.test,Standard Weekly,19.99,USD,1 week,2026-05-13 19:26:58,2026-06-03 19:26:58,,,1,Check payments,2026-05-24 01:26:58
+2383,On Hold,Perf 189,perf189@example.test,Basic Monthly,29.99,USD,1 month,2026-05-14 19:26:57,2026-06-02 19:26:57,,,1,Check payments,2026-05-24 01:26:57
+2380,Trial,Perf 188,perf188@example.test,Pro Plan,29.99,USD,1 month,2026-05-15 19:26:56,2026-06-01 19:26:56,,,0,Check payments,2026-05-24 01:26:56
+2377,Trial,Perf 187,perf187@example.test,Trial Weekly,19.99,USD,1 month,2026-05-16 19:26:55,2026-05-31 19:26:55,,,0,Check payments,2026-05-24 01:26:55
+2371,Trial,Perf 185,perf185@example.test,Basic Monthly,29.99,USD,1 month,2026-05-18 19:26:54,2026-05-29 19:26:54,,,0,Check payments,2026-05-24 01:26:54
+2374,Trial,Perf 186,perf186@example.test,Standard Weekly,19.99,USD,1 week,2026-05-17 19:26:54,2026-05-30 19:26:54,,,0,Check payments,2026-05-24 01:26:54
+2368,Trial,Perf 184,perf184@example.test,Pro Plan,29.99,USD,1 month,2026-05-19 19:26:53,2026-05-28 19:26:53,,,0,Check payments,2026-05-24 01:26:53
+2365,Trial,Perf 183,perf183@example.test,Trial Weekly,19.99,USD,1 month,2026-05-20 19:26:52,2026-05-27 19:26:52,,,0,Check payments,2026-05-24 01:26:52
+2362,Trial,Perf 182,perf182@example.test,Standard Weekly,19.99,USD,1 week,2026-05-21 19:26:51,2026-05-26 19:26:51,,,0,Check payments,2026-05-24 01:26:51
+2359,Trial,Perf 181,perf181@example.test,Basic Monthly,29.99,USD,1 month,2026-05-22 19:26:50,2026-05-25 19:26:50,,,0,Check payments,2026-05-24 01:26:50
+2356,Trial,Perf 180,perf180@example.test,Pro Plan,29.99,USD,1 month,2026-05-23 19:26:49,2026-05-24 19:26:49,,,0,Check payments,2026-05-24 01:26:49
+2353,Trial,Perf 179,perf179@example.test,Trial Weekly,19.99,USD,1 month,2026-03-25 19:26:48,2026-06-22 19:26:48,,,0,Check payments,2026-05-24 01:26:48
+2350,Trial,Perf 178,perf178@example.test,Standard Weekly,19.99,USD,1 week,2026-03-26 19:26:47,2026-06-21 19:26:47,,,0,Check payments,2026-05-24 01:26:47
+2347,Trial,Perf 177,perf177@example.test,Basic Monthly,29.99,USD,1 month,2026-03-27 19:26:46,2026-06-20 19:26:46,,,0,Check payments,2026-05-24 01:26:46
+2341,Trial,Perf 175,perf175@example.test,Trial Weekly,19.99,USD,1 month,2026-03-29 19:26:44,2026-06-18 19:26:44,,,0,Check payments,2026-05-24 01:26:44
+2344,Trial,Perf 176,perf176@example.test,Pro Plan,29.99,USD,1 month,2026-03-28 19:26:44,2026-06-19 19:26:44,,,0,Check payments,2026-05-24 01:26:44
+2338,Trial,Perf 174,perf174@example.test,Standard Weekly,19.99,USD,1 week,2026-03-30 19:26:43,2026-06-17 19:26:43,,,0,Check payments,2026-05-24 01:26:43
+2335,Trial,Perf 173,perf173@example.test,Basic Monthly,29.99,USD,1 month,2026-03-31 19:26:42,2026-06-16 19:26:42,,,0,Check payments,2026-05-24 01:26:42
+2332,Trial,Perf 172,perf172@example.test,Pro Plan,29.99,USD,1 month,2026-04-01 19:26:41,2026-06-15 19:26:41,,,0,Check payments,2026-05-24 01:26:41
+2329,Trial,Perf 171,perf171@example.test,Trial Weekly,19.99,USD,1 month,2026-04-02 19:26:40,2026-06-14 19:26:40,,,0,Check payments,2026-05-24 01:26:40
+2326,Trial,Perf 170,perf170@example.test,Standard Weekly,19.99,USD,1 week,2026-04-03 19:26:39,2026-06-13 19:26:39,,,0,Check payments,2026-05-24 01:26:39
+2323,Trial,Perf 169,perf169@example.test,Basic Monthly,29.99,USD,1 month,2026-04-04 19:26:38,2026-06-12 19:26:38,,,0,Check payments,2026-05-24 01:26:38
+2320,Trial,Perf 168,perf168@example.test,Pro Plan,29.99,USD,1 month,2026-04-05 19:26:37,2026-06-11 19:26:37,,,0,Check payments,2026-05-24 01:26:37
+2317,Trial,Perf 167,perf167@example.test,Trial Weekly,19.99,USD,1 month,2026-04-06 19:26:36,2026-06-10 19:26:36,,,0,Check payments,2026-05-24 01:26:36
+2314,Trial,Perf 166,perf166@example.test,Standard Weekly,19.99,USD,1 week,2026-04-07 19:26:35,2026-06-09 19:26:35,,,0,Check payments,2026-05-24 01:26:35
+2311,Trial,Perf 165,perf165@example.test,Basic Monthly,29.99,USD,1 month,2026-04-08 19:26:34,2026-06-08 19:26:34,,,0,Check payments,2026-05-24 01:26:34
+2308,Trial,Perf 164,perf164@example.test,Pro Plan,29.99,USD,1 month,2026-04-09 19:26:33,2026-06-07 19:26:33,,,0,Check payments,2026-05-24 01:26:33
+2305,Trial,Perf 163,perf163@example.test,Trial Weekly,19.99,USD,1 month,2026-04-10 19:26:32,2026-06-06 19:26:32,,,0,Check payments,2026-05-24 01:26:32
+2302,Trial,Perf 162,perf162@example.test,Standard Weekly,19.99,USD,1 week,2026-04-11 19:26:31,2026-06-05 19:26:31,,,0,Check payments,2026-05-24 01:26:31
+2299,Trial,Perf 161,perf161@example.test,Basic Monthly,29.99,USD,1 month,2026-04-12 19:26:30,2026-06-04 19:26:30,,,0,Check payments,2026-05-24 01:26:30
+2293,Trial,Perf 159,perf159@example.test,Trial Weekly,19.99,USD,1 month,2026-04-14 19:26:29,2026-06-02 19:26:29,,,0,Check payments,2026-05-24 01:26:29
+2296,Trial,Perf 160,perf160@example.test,Pro Plan,29.99,USD,1 month,2026-04-13 19:26:29,2026-06-03 19:26:29,,,0,Check payments,2026-05-24 01:26:29
+2290,Trial,Perf 158,perf158@example.test,Standard Weekly,19.99,USD,1 week,2026-04-15 19:26:28,2026-06-01 19:26:28,,,0,Check payments,2026-05-24 01:26:28
+2287,Trial,Perf 157,perf157@example.test,Basic Monthly,29.99,USD,1 month,2026-04-16 19:26:27,2026-05-31 19:26:27,,,0,Check payments,2026-05-24 01:26:27
+2284,Trial,Perf 156,perf156@example.test,Pro Plan,29.99,USD,1 month,2026-04-17 19:26:25,2026-05-30 19:26:25,,,0,Check payments,2026-05-24 01:26:25
+2281,Trial,Perf 155,perf155@example.test,Trial Weekly,19.99,USD,1 month,2026-04-18 19:26:24,2026-05-29 19:26:24,,,0,Check payments,2026-05-24 01:26:24
+2278,Trial,Perf 154,perf154@example.test,Standard Weekly,19.99,USD,1 week,2026-04-19 19:26:23,2026-05-28 19:26:23,,,0,Check payments,2026-05-24 01:26:23
+2275,Trial,Perf 153,perf153@example.test,Basic Monthly,29.99,USD,1 month,2026-04-20 19:26:22,2026-05-27 19:26:22,,,0,Check payments,2026-05-24 01:26:22
+2272,Trial,Perf 152,perf152@example.test,Pro Plan,29.99,USD,1 month,2026-04-21 19:26:21,2026-05-26 19:26:21,,,0,Check payments,2026-05-24 01:26:21
+2269,Trial,Perf 151,perf151@example.test,Trial Weekly,19.99,USD,1 month,2026-04-22 19:26:20,2026-05-25 19:26:20,,,0,Check payments,2026-05-24 01:26:20
+2266,Active,Perf 150,perf150@example.test,Standard Weekly,19.99,USD,1 week,2026-04-23 19:26:19,2026-05-24 19:26:19,,,1,Check payments,2026-05-24 01:26:19
+2263,Active,Perf 149,perf149@example.test,Basic Monthly,29.99,USD,1 month,2026-04-24 19:26:18,2026-06-22 19:26:18,,,1,Check payments,2026-05-24 01:26:18
+2260,Active,Perf 148,perf148@example.test,Pro Plan,29.99,USD,1 month,2026-04-25 19:26:17,2026-06-21 19:26:17,,,1,Check payments,2026-05-24 01:26:17
+2257,Active,Perf 147,perf147@example.test,Trial Weekly,19.99,USD,1 month,2026-04-26 19:26:16,2026-06-20 19:26:16,,,1,Check payments,2026-05-24 01:26:16
+2254,Active,Perf 146,perf146@example.test,Standard Weekly,19.99,USD,1 week,2026-04-27 19:26:15,2026-06-19 19:26:15,,,1,Check payments,2026-05-24 01:26:15
+2251,Active,Perf 145,perf145@example.test,Basic Monthly,29.99,USD,1 month,2026-04-28 19:26:14,2026-06-18 19:26:14,,,1,Check payments,2026-05-24 01:26:14
+2248,Active,Perf 144,perf144@example.test,Pro Plan,29.99,USD,1 month,2026-04-29 19:26:13,2026-06-17 19:26:13,,,1,Check payments,2026-05-24 01:26:13
+2245,Active,Perf 143,perf143@example.test,Trial Weekly,19.99,USD,1 month,2026-04-30 19:26:12,2026-06-16 19:26:12,,,1,Check payments,2026-05-24 01:26:12
+2242,Active,Perf 142,perf142@example.test,Standard Weekly,19.99,USD,1 week,2026-05-01 19:26:11,2026-06-15 19:26:11,,,1,Check payments,2026-05-24 01:26:11
+2239,Active,Perf 141,perf141@example.test,Basic Monthly,29.99,USD,1 month,2026-05-02 19:26:10,2026-06-14 19:26:10,,,1,Check payments,2026-05-24 01:26:10
+2236,Active,Perf 140,perf140@example.test,Pro Plan,29.99,USD,1 month,2026-05-03 19:26:08,2026-06-13 19:26:08,,,1,Check payments,2026-05-24 01:26:08
+2233,Active,Perf 139,perf139@example.test,Trial Weekly,19.99,USD,1 month,2026-05-04 19:26:07,2026-06-12 19:26:07,,,1,Check payments,2026-05-24 01:26:07
+2230,Active,Perf 138,perf138@example.test,Standard Weekly,19.99,USD,1 week,2026-05-05 19:26:06,2026-06-11 19:26:06,,,1,Check payments,2026-05-24 01:26:06
+2227,Active,Perf 137,perf137@example.test,Basic Monthly,29.99,USD,1 month,2026-05-06 19:26:02,2026-06-10 19:26:02,,,1,Check payments,2026-05-24 01:26:02
+2224,Active,Perf 136,perf136@example.test,Pro Plan,29.99,USD,1 month,2026-05-07 19:25:59,2026-06-09 19:25:59,,,1,Check payments,2026-05-24 01:25:59
+2221,Active,Perf 135,perf135@example.test,Trial Weekly,19.99,USD,1 month,2026-05-08 19:25:58,2026-06-08 19:25:58,,,1,Check payments,2026-05-24 01:25:58
+2218,Active,Perf 134,perf134@example.test,Standard Weekly,19.99,USD,1 week,2026-05-09 19:25:57,2026-06-07 19:25:57,,,1,Check payments,2026-05-24 01:25:57
+2215,Active,Perf 133,perf133@example.test,Basic Monthly,29.99,USD,1 month,2026-05-10 19:25:56,2026-06-06 19:25:56,,,1,Check payments,2026-05-24 01:25:56
+2212,Active,Perf 132,perf132@example.test,Pro Plan,29.99,USD,1 month,2026-05-11 19:25:55,2026-06-05 19:25:55,,,1,Check payments,2026-05-24 01:25:55
+2209,Active,Perf 131,perf131@example.test,Trial Weekly,19.99,USD,1 month,2026-05-12 19:25:54,2026-06-04 19:25:54,,,1,Check payments,2026-05-24 01:25:54
+2206,Active,Perf 130,perf130@example.test,Standard Weekly,19.99,USD,1 week,2026-05-13 19:25:53,2026-06-03 19:25:53,,,1,Check payments,2026-05-24 01:25:53
+2203,Active,Perf 129,perf129@example.test,Basic Monthly,29.99,USD,1 month,2026-05-14 19:25:52,2026-06-02 19:25:52,,,1,Check payments,2026-05-24 01:25:52
+2197,Active,Perf 127,perf127@example.test,Trial Weekly,19.99,USD,1 month,2026-05-16 19:25:51,2026-05-31 19:25:51,,,1,Check payments,2026-05-24 01:25:51
+2200,Active,Perf 128,perf128@example.test,Pro Plan,29.99,USD,1 month,2026-05-15 19:25:51,2026-06-01 19:25:51,,,1,Check payments,2026-05-24 01:25:51
+2194,Active,Perf 126,perf126@example.test,Standard Weekly,19.99,USD,1 week,2026-05-17 19:25:49,2026-05-30 19:25:49,,,1,Check payments,2026-05-24 01:25:49
+2188,Active,Perf 124,perf124@example.test,Pro Plan,29.99,USD,1 month,2026-05-19 19:25:48,2026-05-28 19:25:48,,,1,Check payments,2026-05-24 01:25:48
+2191,Active,Perf 125,perf125@example.test,Basic Monthly,29.99,USD,1 month,2026-05-18 19:25:48,2026-05-29 19:25:48,,,1,Check payments,2026-05-24 01:25:48
+2185,Active,Perf 123,perf123@example.test,Trial Weekly,19.99,USD,1 month,2026-05-20 19:25:46,2026-05-27 19:25:46,,,1,Check payments,2026-05-24 01:25:46
+2182,Active,Perf 122,perf122@example.test,Standard Weekly,19.99,USD,1 week,2026-05-21 19:25:45,2026-05-26 19:25:45,,,1,Check payments,2026-05-24 01:25:45
+2179,Active,Perf 121,perf121@example.test,Basic Monthly,29.99,USD,1 month,2026-05-22 19:25:44,2026-05-25 19:25:44,,,1,Check payments,2026-05-24 01:25:44
+2176,Active,Perf 120,perf120@example.test,Pro Plan,29.99,USD,1 month,2026-05-23 19:25:43,2026-05-24 19:25:43,,,1,Check payments,2026-05-24 01:25:43
+2173,Active,Perf 119,perf119@example.test,Trial Weekly,19.99,USD,1 month,2026-03-25 19:25:42,2026-06-22 19:25:42,,,1,Check payments,2026-05-24 01:25:42
+2170,Active,Perf 118,perf118@example.test,Standard Weekly,19.99,USD,1 week,2026-03-26 19:25:41,2026-06-21 19:25:41,,,1,Check payments,2026-05-24 01:25:41
+2167,Active,Perf 117,perf117@example.test,Basic Monthly,29.99,USD,1 month,2026-03-27 19:25:40,2026-06-20 19:25:40,,,1,Check payments,2026-05-24 01:25:40
+2164,Active,Perf 116,perf116@example.test,Pro Plan,29.99,USD,1 month,2026-03-28 19:25:39,2026-06-19 19:25:39,,,1,Check payments,2026-05-24 01:25:39
+2161,Active,Perf 115,perf115@example.test,Trial Weekly,19.99,USD,1 month,2026-03-29 19:25:38,2026-06-18 19:25:38,,,1,Check payments,2026-05-24 01:25:38
+2158,Active,Perf 114,perf114@example.test,Standard Weekly,19.99,USD,1 week,2026-03-30 19:25:37,2026-06-17 19:25:37,,,1,Check payments,2026-05-24 01:25:37
+2155,Active,Perf 113,perf113@example.test,Basic Monthly,29.99,USD,1 month,2026-03-31 19:25:36,2026-06-16 19:25:36,,,1,Check payments,2026-05-24 01:25:36
+2152,Active,Perf 112,perf112@example.test,Pro Plan,29.99,USD,1 month,2026-04-01 19:25:35,2026-06-15 19:25:35,,,1,Check payments,2026-05-24 01:25:35
+2146,Active,Perf 110,perf110@example.test,Standard Weekly,19.99,USD,1 week,2026-04-03 19:25:34,2026-06-13 19:25:34,,,1,Check payments,2026-05-24 01:25:34
+2149,Active,Perf 111,perf111@example.test,Trial Weekly,19.99,USD,1 month,2026-04-02 19:25:34,2026-06-14 19:25:34,,,1,Check payments,2026-05-24 01:25:34
+2143,Active,Perf 109,perf109@example.test,Basic Monthly,29.99,USD,1 month,2026-04-04 19:25:33,2026-06-12 19:25:33,,,1,Check payments,2026-05-24 01:25:33
+2140,Active,Perf 108,perf108@example.test,Pro Plan,29.99,USD,1 month,2026-04-05 19:25:32,2026-06-11 19:25:32,,,1,Check payments,2026-05-24 01:25:32
+2137,Active,Perf 107,perf107@example.test,Trial Weekly,19.99,USD,1 month,2026-04-06 19:25:31,2026-06-10 19:25:31,,,1,Check payments,2026-05-24 01:25:31
+2134,Active,Perf 106,perf106@example.test,Standard Weekly,19.99,USD,1 week,2026-04-07 19:25:30,2026-06-09 19:25:30,,,1,Check payments,2026-05-24 01:25:30
+2131,Active,Perf 105,perf105@example.test,Basic Monthly,29.99,USD,1 month,2026-04-08 19:25:29,2026-06-08 19:25:29,,,1,Check payments,2026-05-24 01:25:29
+2128,Active,Perf 104,perf104@example.test,Pro Plan,29.99,USD,1 month,2026-04-09 19:25:27,2026-06-07 19:25:27,,,1,Check payments,2026-05-24 01:25:27
+2125,Active,Perf 103,perf103@example.test,Trial Weekly,19.99,USD,1 month,2026-04-10 19:25:26,2026-06-06 19:25:26,,,1,Check payments,2026-05-24 01:25:26
+2122,Active,Perf 102,perf102@example.test,Standard Weekly,19.99,USD,1 week,2026-04-11 19:25:25,2026-06-05 19:25:25,,,1,Check payments,2026-05-24 01:25:25
+2119,Active,Perf 101,perf101@example.test,Basic Monthly,29.99,USD,1 month,2026-04-12 19:25:24,2026-06-04 19:25:24,,,1,Check payments,2026-05-24 01:25:24
+2116,Active,Perf 100,perf100@example.test,Pro Plan,29.99,USD,1 month,2026-04-13 19:25:23,2026-06-03 19:25:23,,,1,Check payments,2026-05-24 01:25:23
+2113,Active,Perf 099,perf099@example.test,Trial Weekly,19.99,USD,1 month,2026-04-14 19:25:22,2026-06-02 19:25:22,,,1,Check payments,2026-05-24 01:25:22
+2110,Active,Perf 098,perf098@example.test,Standard Weekly,19.99,USD,1 week,2026-04-15 19:25:21,2026-06-01 19:25:21,,,1,Check payments,2026-05-24 01:25:21
+2107,Active,Perf 097,perf097@example.test,Basic Monthly,29.99,USD,1 month,2026-04-16 19:25:20,2026-05-31 19:25:20,,,1,Check payments,2026-05-24 01:25:20
+2104,Active,Perf 096,perf096@example.test,Pro Plan,29.99,USD,1 month,2026-04-17 19:25:19,2026-05-30 19:25:19,,,1,Check payments,2026-05-24 01:25:19
+2101,Active,Perf 095,perf095@example.test,Trial Weekly,19.99,USD,1 month,2026-04-18 19:25:18,2026-05-29 19:25:18,,,1,Check payments,2026-05-24 01:25:18
+2098,Active,Perf 094,perf094@example.test,Standard Weekly,19.99,USD,1 week,2026-04-19 19:25:17,2026-05-28 19:25:17,,,1,Check payments,2026-05-24 01:25:17
+2095,Active,Perf 093,perf093@example.test,Basic Monthly,29.99,USD,1 month,2026-04-20 19:25:16,2026-05-27 19:25:16,,,1,Check payments,2026-05-24 01:25:16
+2092,Active,Perf 092,perf092@example.test,Pro Plan,29.99,USD,1 month,2026-04-21 19:25:15,2026-05-26 19:25:15,,,1,Check payments,2026-05-24 01:25:15
+2089,Active,Perf 091,perf091@example.test,Trial Weekly,19.99,USD,1 month,2026-04-22 19:25:13,2026-05-25 19:25:13,,,1,Check payments,2026-05-24 01:25:13
+2086,Active,Perf 090,perf090@example.test,Standard Weekly,19.99,USD,1 week,2026-04-23 19:25:12,2026-05-24 19:25:12,,,1,Check payments,2026-05-24 01:25:12
+2083,Active,Perf 089,perf089@example.test,Basic Monthly,29.99,USD,1 month,2026-04-24 19:25:11,2026-06-22 19:25:11,,,1,Check payments,2026-05-24 01:25:11
+2080,Active,Perf 088,perf088@example.test,Pro Plan,29.99,USD,1 month,2026-04-25 19:25:10,2026-06-21 19:25:10,,,1,Check payments,2026-05-24 01:25:10
+2077,Active,Perf 087,perf087@example.test,Trial Weekly,19.99,USD,1 month,2026-04-26 19:25:09,2026-06-20 19:25:09,,,1,Check payments,2026-05-24 01:25:09
+2074,Active,Perf 086,perf086@example.test,Standard Weekly,19.99,USD,1 week,2026-04-27 19:25:08,2026-06-19 19:25:08,,,1,Check payments,2026-05-24 01:25:08
+2071,Active,Perf 085,perf085@example.test,Basic Monthly,29.99,USD,1 month,2026-04-28 19:25:07,2026-06-18 19:25:07,,,1,Check payments,2026-05-24 01:25:07
+2068,Active,Perf 084,perf084@example.test,Pro Plan,29.99,USD,1 month,2026-04-29 19:25:04,2026-06-17 19:25:04,,,1,Check payments,2026-05-24 01:25:05
+2065,Active,Perf 083,perf083@example.test,Trial Weekly,19.99,USD,1 month,2026-04-30 19:25:00,2026-06-16 19:25:00,,,1,Check payments,2026-05-24 01:25:00
+2062,Active,Perf 082,perf082@example.test,Standard Weekly,19.99,USD,1 week,2026-05-01 19:24:59,2026-06-15 19:24:59,,,1,Check payments,2026-05-24 01:24:59
+2059,Active,Perf 081,perf081@example.test,Basic Monthly,29.99,USD,1 month,2026-05-02 19:24:58,2026-06-14 19:24:58,,,1,Check payments,2026-05-24 01:24:58
+2056,Active,Perf 080,perf080@example.test,Pro Plan,29.99,USD,1 month,2026-05-03 19:24:57,2026-06-13 19:24:57,,,1,Check payments,2026-05-24 01:24:57
+2053,Active,Perf 079,perf079@example.test,Trial Weekly,19.99,USD,1 month,2026-05-04 19:24:56,2026-06-12 19:24:56,,,1,Check payments,2026-05-24 01:24:56
+2050,Active,Perf 078,perf078@example.test,Standard Weekly,19.99,USD,1 week,2026-05-05 19:24:55,2026-06-11 19:24:55,,,1,Check payments,2026-05-24 01:24:55
+2047,Active,Perf 077,perf077@example.test,Basic Monthly,29.99,USD,1 month,2026-05-06 19:24:54,2026-06-10 19:24:54,,,1,Check payments,2026-05-24 01:24:54
+2044,Active,Perf 076,perf076@example.test,Pro Plan,29.99,USD,1 month,2026-05-07 19:24:53,2026-06-09 19:24:53,,,1,Check payments,2026-05-24 01:24:53
+2041,Active,Perf 075,perf075@example.test,Trial Weekly,19.99,USD,1 month,2026-05-08 19:24:52,2026-06-08 19:24:52,,,1,Check payments,2026-05-24 01:24:52
+2038,Active,Perf 074,perf074@example.test,Standard Weekly,19.99,USD,1 week,2026-05-09 19:24:51,2026-06-07 19:24:51,,,1,Check payments,2026-05-24 01:24:51
+2035,Active,Perf 073,perf073@example.test,Basic Monthly,29.99,USD,1 month,2026-05-10 19:24:50,2026-06-06 19:24:50,,,1,Check payments,2026-05-24 01:24:50
+2032,Active,Perf 072,perf072@example.test,Pro Plan,29.99,USD,1 month,2026-05-11 19:24:49,2026-06-05 19:24:49,,,1,Check payments,2026-05-24 01:24:49
+2029,Active,Perf 071,perf071@example.test,Trial Weekly,19.99,USD,1 month,2026-05-12 19:24:48,2026-06-04 19:24:48,,,1,Check payments,2026-05-24 01:24:48
+2026,Active,Perf 070,perf070@example.test,Standard Weekly,19.99,USD,1 week,2026-05-13 19:24:47,2026-06-03 19:24:47,,,1,Check payments,2026-05-24 01:24:47
+2023,Active,Perf 069,perf069@example.test,Basic Monthly,29.99,USD,1 month,2026-05-14 19:24:46,2026-06-02 19:24:46,,,1,Check payments,2026-05-24 01:24:46
+2020,Active,Perf 068,perf068@example.test,Pro Plan,29.99,USD,1 month,2026-05-15 19:24:45,2026-06-01 19:24:45,,,1,Check payments,2026-05-24 01:24:45
+2014,Active,Perf 066,perf066@example.test,Standard Weekly,19.99,USD,1 week,2026-05-17 19:24:44,2026-05-30 19:24:44,,,1,Check payments,2026-05-24 01:24:44
+2017,Active,Perf 067,perf067@example.test,Trial Weekly,19.99,USD,1 month,2026-05-16 19:24:44,2026-05-31 19:24:44,,,1,Check payments,2026-05-24 01:24:44
+2011,Active,Perf 065,perf065@example.test,Basic Monthly,29.99,USD,1 month,2026-05-18 19:24:43,2026-05-29 19:24:43,,,1,Check payments,2026-05-24 01:24:43
+2008,Active,Perf 064,perf064@example.test,Pro Plan,29.99,USD,1 month,2026-05-19 19:24:42,2026-05-28 19:24:42,,,1,Check payments,2026-05-24 01:24:42
+2005,Active,Perf 063,perf063@example.test,Trial Weekly,19.99,USD,1 month,2026-05-20 19:24:41,2026-05-27 19:24:41,,,1,Check payments,2026-05-24 01:24:41
+2002,Active,Perf 062,perf062@example.test,Standard Weekly,19.99,USD,1 week,2026-05-21 19:24:40,2026-05-26 19:24:40,,,1,Check payments,2026-05-24 01:24:40
+1999,Active,Perf 061,perf061@example.test,Basic Monthly,29.99,USD,1 month,2026-05-22 19:24:39,2026-05-25 19:24:39,,,1,Check payments,2026-05-24 01:24:39
+1996,Active,Perf 060,perf060@example.test,Pro Plan,29.99,USD,1 month,2026-05-23 19:24:38,2026-05-24 19:24:38,,,1,Check payments,2026-05-24 01:24:38
+1993,Active,Perf 059,perf059@example.test,Trial Weekly,19.99,USD,1 month,2026-03-25 19:24:37,2026-06-22 19:24:37,,,1,Check payments,2026-05-24 01:24:37
+1990,Active,Perf 058,perf058@example.test,Standard Weekly,19.99,USD,1 week,2026-03-26 19:24:36,2026-06-21 19:24:36,,,1,Check payments,2026-05-24 01:24:36
+1987,Active,Perf 057,perf057@example.test,Basic Monthly,29.99,USD,1 month,2026-03-27 19:24:34,2026-06-20 19:24:34,,,1,Check payments,2026-05-24 01:24:34
+1984,Active,Perf 056,perf056@example.test,Pro Plan,29.99,USD,1 month,2026-03-28 19:24:33,2026-06-19 19:24:33,,,1,Check payments,2026-05-24 01:24:33
+1981,Active,Perf 055,perf055@example.test,Trial Weekly,19.99,USD,1 month,2026-03-29 19:24:32,2026-06-18 19:24:32,,,1,Check payments,2026-05-24 01:24:32
+1978,Active,Perf 054,perf054@example.test,Standard Weekly,19.99,USD,1 week,2026-03-30 19:24:31,2026-06-17 19:24:31,,,1,Check payments,2026-05-24 01:24:31
+1972,Active,Perf 052,perf052@example.test,Pro Plan,29.99,USD,1 month,2026-04-01 19:24:30,2026-06-15 19:24:30,,,1,Check payments,2026-05-24 01:24:30
+1975,Active,Perf 053,perf053@example.test,Basic Monthly,29.99,USD,1 month,2026-03-31 19:24:30,2026-06-16 19:24:30,,,1,Check payments,2026-05-24 01:24:30
+1969,Active,Perf 051,perf051@example.test,Trial Weekly,19.99,USD,1 month,2026-04-02 19:24:29,2026-06-14 19:24:29,,,1,Check payments,2026-05-24 01:24:29
+1966,Active,Perf 050,perf050@example.test,Standard Weekly,19.99,USD,1 week,2026-04-03 19:24:28,2026-06-13 19:24:28,,,1,Check payments,2026-05-24 01:24:28
+1963,Active,Perf 049,perf049@example.test,Basic Monthly,29.99,USD,1 month,2026-04-04 19:24:27,2026-06-12 19:24:27,,,1,Check payments,2026-05-24 01:24:27
+1960,Active,Perf 048,perf048@example.test,Pro Plan,29.99,USD,1 month,2026-04-05 19:24:26,2026-06-11 19:24:26,,,1,Check payments,2026-05-24 01:24:26
+1957,Active,Perf 047,perf047@example.test,Trial Weekly,19.99,USD,1 month,2026-04-06 19:24:25,2026-06-10 19:24:25,,,1,Check payments,2026-05-24 01:24:25
+1954,Active,Perf 046,perf046@example.test,Standard Weekly,19.99,USD,1 week,2026-04-07 19:24:24,2026-06-09 19:24:24,,,1,Check payments,2026-05-24 01:24:24
+1951,Active,Perf 045,perf045@example.test,Basic Monthly,29.99,USD,1 month,2026-04-08 19:24:23,2026-06-08 19:24:23,,,1,Check payments,2026-05-24 01:24:23
+1948,Active,Perf 044,perf044@example.test,Pro Plan,29.99,USD,1 month,2026-04-09 19:24:22,2026-06-07 19:24:22,,,1,Check payments,2026-05-24 01:24:22
+1945,Active,Perf 043,perf043@example.test,Trial Weekly,19.99,USD,1 month,2026-04-10 19:24:21,2026-06-06 19:24:21,,,1,Check payments,2026-05-24 01:24:21
+1942,Active,Perf 042,perf042@example.test,Standard Weekly,19.99,USD,1 week,2026-04-11 19:24:20,2026-06-05 19:24:20,,,1,Check payments,2026-05-24 01:24:20
+1939,Active,Perf 041,perf041@example.test,Basic Monthly,29.99,USD,1 month,2026-04-12 19:24:19,2026-06-04 19:24:19,,,1,Check payments,2026-05-24 01:24:19
+1936,Active,Perf 040,perf040@example.test,Pro Plan,29.99,USD,1 month,2026-04-13 19:24:18,2026-06-03 19:24:18,,,1,Check payments,2026-05-24 01:24:18
+1933,Active,Perf 039,perf039@example.test,Trial Weekly,19.99,USD,1 month,2026-04-14 19:24:17,2026-06-02 19:24:17,,,1,Check payments,2026-05-24 01:24:17
+1930,Active,Perf 038,perf038@example.test,Standard Weekly,19.99,USD,1 week,2026-04-15 19:24:15,2026-06-01 19:24:15,,,1,Check payments,2026-05-24 01:24:15
+1924,Active,Perf 036,perf036@example.test,Pro Plan,29.99,USD,1 month,2026-04-17 19:24:13,2026-05-30 19:24:13,,,1,Check payments,2026-05-24 01:24:14
+1927,Active,Perf 037,perf037@example.test,Basic Monthly,29.99,USD,1 month,2026-04-16 19:24:14,2026-05-31 19:24:14,,,1,Check payments,2026-05-24 01:24:14
+1921,Active,Perf 035,perf035@example.test,Trial Weekly,19.99,USD,1 month,2026-04-18 19:24:13,2026-05-29 19:24:13,,,1,Check payments,2026-05-24 01:24:13
+1918,Active,Perf 034,perf034@example.test,Standard Weekly,19.99,USD,1 week,2026-04-19 19:24:12,2026-05-28 19:24:12,,,1,Check payments,2026-05-24 01:24:12
+1915,Active,Perf 033,perf033@example.test,Basic Monthly,29.99,USD,1 month,2026-04-20 19:24:11,2026-05-27 19:24:11,,,1,Check payments,2026-05-24 01:24:11
+1912,Active,Perf 032,perf032@example.test,Pro Plan,29.99,USD,1 month,2026-04-21 19:24:10,2026-05-26 19:24:10,,,1,Check payments,2026-05-24 01:24:10
+1909,Active,Perf 031,perf031@example.test,Trial Weekly,19.99,USD,1 month,2026-04-22 19:24:09,2026-05-25 19:24:09,,,1,Check payments,2026-05-24 01:24:09
+1906,Active,Perf 030,perf030@example.test,Standard Weekly,19.99,USD,1 week,2026-04-23 19:24:08,2026-05-24 19:24:08,,,1,Check payments,2026-05-24 01:24:08
+1903,Active,Perf 029,perf029@example.test,Basic Monthly,29.99,USD,1 month,2026-04-24 19:24:07,2026-06-22 19:24:07,,,1,Check payments,2026-05-24 01:24:07
+1900,Active,Perf 028,perf028@example.test,Pro Plan,29.99,USD,1 month,2026-04-25 19:24:06,2026-06-21 19:24:06,,,1,Check payments,2026-05-24 01:24:06
+1897,Active,Perf 027,perf027@example.test,Trial Weekly,19.99,USD,1 month,2026-04-26 19:24:05,2026-06-20 19:24:05,,,1,Check payments,2026-05-24 01:24:05
+1894,Active,Perf 026,perf026@example.test,Standard Weekly,19.99,USD,1 week,2026-04-27 19:24:02,2026-06-19 19:24:02,,,1,Check payments,2026-05-24 01:24:02
+1891,Active,Perf 025,perf025@example.test,Basic Monthly,29.99,USD,1 month,2026-04-28 19:24:00,2026-06-18 19:24:00,,,1,Check payments,2026-05-24 01:24:00
+1888,Active,Perf 024,perf024@example.test,Pro Plan,29.99,USD,1 month,2026-04-29 19:23:58,2026-06-17 19:23:58,,,1,Check payments,2026-05-24 01:23:58
+1885,Active,Perf 023,perf023@example.test,Trial Weekly,19.99,USD,1 month,2026-04-30 19:23:57,2026-06-16 19:23:57,,,1,Check payments,2026-05-24 01:23:57
+1882,Active,Perf 022,perf022@example.test,Standard Weekly,19.99,USD,1 week,2026-05-01 19:23:55,2026-06-15 19:23:55,,,1,Check payments,2026-05-24 01:23:55
+1879,Active,Perf 021,perf021@example.test,Basic Monthly,29.99,USD,1 month,2026-05-02 19:23:54,2026-06-14 19:23:54,,,1,Check payments,2026-05-24 01:23:54
+1876,Active,Perf 020,perf020@example.test,Pro Plan,29.99,USD,1 month,2026-05-03 19:23:53,2026-06-13 19:23:53,,,1,Check payments,2026-05-24 01:23:53
+1873,Active,Perf 019,perf019@example.test,Trial Weekly,19.99,USD,1 month,2026-05-04 19:23:52,2026-06-12 19:23:52,,,1,Check payments,2026-05-24 01:23:52
+1870,Active,Perf 018,perf018@example.test,Standard Weekly,19.99,USD,1 week,2026-05-05 19:23:51,2026-06-11 19:23:51,,,1,Check payments,2026-05-24 01:23:51
+1867,Active,Perf 017,perf017@example.test,Basic Monthly,29.99,USD,1 month,2026-05-06 19:23:50,2026-06-10 19:23:50,,,1,Check payments,2026-05-24 01:23:50
+1864,Active,Perf 016,perf016@example.test,Pro Plan,29.99,USD,1 month,2026-05-07 19:23:49,2026-06-09 19:23:49,,,1,Check payments,2026-05-24 01:23:49
+1861,Active,Perf 015,perf015@example.test,Trial Weekly,19.99,USD,1 month,2026-05-08 19:23:47,2026-06-08 19:23:47,,,1,Check payments,2026-05-24 01:23:47
+1858,Active,Perf 014,perf014@example.test,Standard Weekly,19.99,USD,1 week,2026-05-09 19:23:46,2026-06-07 19:23:46,,,1,Check payments,2026-05-24 01:23:46
+1855,Active,Perf 013,perf013@example.test,Basic Monthly,29.99,USD,1 month,2026-05-10 19:23:45,2026-06-06 19:23:45,,,1,Check payments,2026-05-24 01:23:45
+1852,Active,Perf 012,perf012@example.test,Pro Plan,29.99,USD,1 month,2026-05-11 19:23:44,2026-06-05 19:23:44,,,1,Check payments,2026-05-24 01:23:44
+1849,Active,Perf 011,perf011@example.test,Trial Weekly,19.99,USD,1 month,2026-05-12 19:23:43,2026-06-04 19:23:43,,,1,Check payments,2026-05-24 01:23:43
+1846,Active,Perf 010,perf010@example.test,Standard Weekly,19.99,USD,1 week,2026-05-13 19:23:41,2026-06-03 19:23:41,,,1,Check payments,2026-05-24 01:23:41
+1843,Active,Perf 009,perf009@example.test,Basic Monthly,29.99,USD,1 month,2026-05-14 19:23:40,2026-06-02 19:23:40,,,1,Check payments,2026-05-24 01:23:40
+1840,Active,Perf 008,perf008@example.test,Pro Plan,29.99,USD,1 month,2026-05-15 19:23:39,2026-06-01 19:23:39,,,1,Check payments,2026-05-24 01:23:39
+1837,Active,Perf 007,perf007@example.test,Trial Weekly,19.99,USD,1 month,2026-05-16 19:23:38,2026-05-31 19:23:38,,,1,Check payments,2026-05-24 01:23:38
+1834,Active,Perf 006,perf006@example.test,Standard Weekly,19.99,USD,1 week,2026-05-17 19:23:37,2026-05-30 19:23:37,,,1,Check payments,2026-05-24 01:23:37
+1831,Active,Perf 005,perf005@example.test,Basic Monthly,29.99,USD,1 month,2026-05-18 19:23:36,2026-05-29 19:23:36,,,1,Check payments,2026-05-24 01:23:36
+1828,Active,Perf 004,perf004@example.test,Pro Plan,29.99,USD,1 month,2026-05-19 19:23:35,2026-05-28 19:23:35,,,1,Check payments,2026-05-24 01:23:35
+1825,Active,Perf 003,perf003@example.test,Trial Weekly,19.99,USD,1 month,2026-05-20 19:23:34,2026-05-27 19:23:34,,,1,Check payments,2026-05-24 01:23:34
+1822,Active,Perf 002,perf002@example.test,Standard Weekly,19.99,USD,1 week,2026-05-21 19:23:33,2026-05-26 19:23:33,,,1,Check payments,2026-05-24 01:23:33
+1819,Active,Perf 001,perf001@example.test,Basic Monthly,29.99,USD,1 month,2026-05-22 19:23:32,2026-05-25 19:23:32,,,1,Check payments,2026-05-24 01:23:32
+1808,Active,Cust One,cust1@example.com,Basic Plan,9.99,USD,1 week,2026-05-23 19:14:17,2026-05-30 19:16:09,2026-05-23 19:14:18,,1,Check payments,2026-05-24 01:14:17
+1796,Active,Cron B Cron,stage20-cron-b@example.com,Trial Weekly,19.99,USD,1 month,2026-05-16 19:09:21,2026-06-23 19:09:48,2026-05-16 19:09:21,,1,Check payments,2026-05-24 01:09:21
+1791,Active,Cron A Cron,stage20-cron-a@example.com,Basic Monthly,29.99,USD,1 month,2026-05-16 19:09:19,2026-05-23 18:39:17,2026-05-16 19:09:19,,1,Check payments,2026-05-24 01:09:19
+1778,Active,Cust Two,cust2@example.com,Pro Plan,29.99,USD,1 month,2026-05-23 18:42:21,2026-05-30 18:42:21,2026-05-23 18:42:21,,1,Check payments,2026-05-24 00:42:21
+1773,Active,Cust One,cust1@example.com,Pro Plan,29.99,USD,1 month,2026-05-23 18:42:18,2026-06-23 17:50:22,2026-05-23 18:51:59,,2,Stripe,2026-05-24 00:42:18
+1758,Cancelled,Cust Six,cust6@example.com,Basic Monthly,29.99,USD,1 month,2026-05-23 18:11:11,,2026-05-23 18:11:11,2026-05-24 11:22:08,1,Stripe,2026-05-24 00:11:11
+1733,Cancelled,Cust Four,cust4@example.com,Basic Monthly,29.99,USD,1 month,2026-05-08 17:37:40,,2026-05-08 17:37:40,2026-05-23 17:39:24,1,Stripe,2026-05-23 23:37:40
+1719,Cancelled,Cust Three,cust3@example.com,Basic Monthly,29.99,USD,1 month,2026-05-08 17:23:46,,2026-05-08 17:23:46,,1,Stripe,2026-05-23 23:23:46
+1704,Cancelled,Cust Two,cust2@example.com,Standard Weekly,19.99,USD,1 week,2026-05-20 05:03:55,,2026-05-20 05:03:55,2026-05-23 17:06:54,1,Stripe,2026-05-23 23:03:55
+1687,Active,Stage 18 Fixed,member-fixed@example.com,Fixed-Period Plan,24.99,USD,1 week,2026-05-24 11:31:13,2026-05-31 11:30:34,2026-05-24 11:31:13,,1,Direct bank transfer,2026-05-23 22:36:57
+1673,Active,Stage 18 Limited,member-limited@example.com,Limited 3-Cycle Weekly,19.99,USD,1 week,2026-05-24 11:31:12,2026-05-31 11:30:34,2026-05-24 11:31:12,,2,Direct bank transfer,2026-05-23 22:20:46
+1668,Active,member1,member1@example.com,Standard Weekly,19.99,USD,1 week,2026-05-24 11:30:35,2026-05-31 11:30:34,2026-05-24 11:30:35,,1,Direct bank transfer,2026-05-23 22:20:45
+1587,Active,Stage 18 Stepped,member-stepped@example.com,Stepped Weekly,19.99,USD,1 week,2026-05-24 11:31:03,2026-05-31 11:30:34,2026-05-24 11:31:03,,0,Direct bank transfer,2026-05-23 21:45:13
+1575,Trial,Stage 18 Trial Downgrade,member-trial-down@example.com,Trial Weekly w/ Downgrade,19.99,USD,1 week,2026-05-24 11:30:56,2026-05-31 11:30:34,,,0,Direct bank transfer,2026-05-23 21:31:59
+1558,Trial,member-trial,member-trial@example.com,Trial Weekly,19.99,USD,1 week,2026-05-24 11:30:54,2026-05-31 11:30:34,,,0,Direct bank transfer,2026-05-23 21:20:36
+1467,Active,member-decline,member-decline@example.com,Standard Weekly,19.99,USD,1 week,2026-05-24 11:30:46,2026-05-24 10:37:39,2026-05-24 11:30:46,,1,Stripe,2026-05-23 20:47:30
+1436,Active,member-stripe,member-stripe@example.com,Standard Weekly,19.99,USD,1 week,2026-05-24 11:30:41,2026-05-31 12:01:22,2026-05-24 11:30:41,,1,Stripe,2026-05-23 20:37:44
+1367,Pending,QA Audit,qa-audit-guest-0523@example.com,Basic Monthly,29.99,USD,1 month,2026-05-23 13:00:51,2026-06-23 13:00:51,,,0,Direct bank transfer,2026-05-23 19:00:51
+1135,Cancelled,cust3,cust3@test.local,Standard Weekly,19.99,USD,1 week,2026-05-23 07:43:29,,2026-05-23 08:13:20,2026-05-23 09:59:34,0,Direct bank transfer,2026-05-23 13:43:29
+987,Active,member2,member2@example.com,Basic Plan,0,USD,1 month,2026-05-12 01:55:59,2026-06-21 01:55:59,,,0,,2026-05-22 07:55:59
+959,Active,customer-classic,customer-classic@example.test,Basic Monthly,29.99,USD,1 month,2026-05-22 00:42:12,2026-06-22 00:42:12,2026-05-22 00:42:52,,1,Direct bank transfer,2026-05-22 06:42:12
+700,On Hold,member2,member2@example.com,Pro Plan,0,USD,1 month,2026-05-12 01:55:59,2026-06-21 01:55:59,,,0,,2026-05-20 19:23:36
+697,Active,member1,member1@example.com,Pro Plan,0,USD,1 month,2026-05-12 01:55:59,2026-06-21 01:55:59,,,0,,2026-05-20 19:23:35
+683,Active,cust1,cust1@test.local,Basic Monthly,29.99,USD,1 month,2026-05-20 12:31:06,2026-05-22 12:56:22,,,1,Direct bank transfer,2026-05-20 18:56:21
+678,Active,cust1,cust1@test.local,Enterprise Plan,39.99,USD,1 week,2026-05-20 12:32:09,2026-05-27 12:32:09,,,1,Direct bank transfer,2026-05-20 18:32:09
+673,Expired,cust1,cust1@test.local,Standard Weekly,19.99,USD,1 week,2026-05-20 12:31:59,2026-05-19 12:31:59,,2026-05-19 12:32:09,1,Direct bank transfer,2026-05-20 18:31:59
+668,Cancelled,cust1,cust1@test.local,Standard Weekly,19.99,USD,1 week,2026-05-20 12:31:52,2026-05-27 12:31:52,,2026-05-20 12:31:59,1,Direct bank transfer,2026-05-20 18:31:52
+663,Trial,cust1,cust1@test.local,Trial Weekly,19.99,USD,1 week,2026-05-20 12:31:43,2026-05-27 12:31:43,,,0,Direct bank transfer,2026-05-20 18:31:43
+658,Pending,cust1,cust1@test.local,Basic Monthly,29.99,USD,1 month,2026-05-20 12:31:35,2026-06-20 12:31:35,,,0,Direct bank transfer,2026-05-20 18:31:35
+653,On Hold,cust1,cust1@test.local,Standard Weekly,19.99,USD,1 week,2026-05-20 12:31:26,2026-05-27 12:31:26,,,0,Direct bank transfer,2026-05-20 18:31:26
+648,Active,cust1,cust1@test.local,Lifetime Deal,199,USD,1 lifetime,2026-05-20 12:31:16,,,,1,Direct bank transfer,2026-05-20 18:31:16
+643,Active,cust1,cust1@test.local,Basic Monthly,29.99,USD,1 month,2026-05-20 12:31:06,2026-06-20 12:31:06,,,1,Direct bank transfer,2026-05-20 18:31:06
+638,Active,cust1,cust1@test.local,Pro Monthly,49.99,USD,1 month,2026-05-20 12:30:56,2026-06-20 12:30:56,,,1,Direct bank transfer,2026-05-20 18:30:56
+633,Active,cust1,cust1@test.local,Basic Monthly,29.99,USD,1 month,2026-05-20 12:30:46,2026-06-20 12:30:46,,,1,Stripe,2026-05-20 18:30:46
+618,Active,customer-pending,customer-pending@example.test,Basic Monthly,29.99,USD,1 month,2026-05-20 11:53:02,2026-06-20 11:53:02,2026-05-20 11:55:36,,1,Direct bank transfer,2026-05-20 17:53:02
+590,Active,customer-mixed,customer-mixed@example.test,Basic Monthly,29.99,USD,1 month,2026-05-20 11:25:39,2026-06-20 11:25:39,2026-05-20 11:26:27,,1,Direct bank transfer,2026-05-20 17:25:39
+508,Cancelled,customer-switch,customer-switch@example.test,Pro Monthly,49.99,USD,1 month,2026-05-20 10:46:46,,2026-05-22 02:51:33,2026-05-23 10:05:39,1,Direct bank transfer,2026-05-20 16:46:46
+482,Active,customer-coupon,customer-coupon@example.test,Basic Monthly,29.99,USD,1 month,2026-05-20 10:36:19,2026-06-20 10:36:19,2026-05-20 10:36:57,,1,Direct bank transfer,2026-05-20 16:36:19
+441,Pending,guest-claim,guest-claim@example.test,Basic Monthly,29.99,USD,1 month,2026-05-20 10:09:16,2026-06-20 10:09:16,,,0,Direct bank transfer,2026-05-20 16:09:16
+427,Active,customer-stepped,customer-stepped@example.test,Stepped Weekly,19.99,USD,1 week,2026-05-20 10:02:54,2026-05-27 10:02:54,2026-05-20 10:03:42,,1,Direct bank transfer,2026-05-20 16:02:54
+406,Trial,customer-trial-fee,customer-trial-fee@example.test,Signup Fee Weekly,19.99,USD,1 week,2026-05-20 09:56:21,2026-05-27 09:56:21,,,0,Direct bank transfer,2026-05-20 15:56:21
+384,Trial,customer-trial,customer-trial@example.test,Trial Weekly,19.99,USD,1 week,2026-05-20 09:49:26,2026-05-27 09:49:26,2026-05-20 09:49:32,,0,Direct bank transfer,2026-05-20 15:49:26
+357,Active,customer-block,customer-block@example.test,Standard Weekly,19.99,USD,1 week,2026-05-20 09:39:25,2026-05-30 13:21:55,2026-05-23 14:29:34,,2,Direct bank transfer,2026-05-20 15:39:25
+306,Cancelled,cust1,cust1@test.local,Trial Weekly,0,USD,1 week,,2026-06-20 09:04:58,,,0,,2026-05-20 15:04:56
+271,Active,cust1,cust1@test.local,Pro Plan,19.99,USD,1 week,2026-05-20 06:31:11,2026-05-27 06:31:11,,,0,Direct bank transfer,2026-05-20 12:31:11
+115,On Hold,rk,iamrkrashu@gmail.com,[QA] Starter Daily x2,120,USD,2 day,2026-05-10 01:11:56,2026-05-13 01:11:56,2026-05-15 14:46:14,,1,Stripe,2026-05-10 07:11:56
+93,Cancelled,Rashidul Karim,rashu2012@gmail.com,[QA] Starter Daily,60,USD,1 day,2026-05-10 01:07:52,,2026-05-12 23:12:31,2026-05-22 15:35:08,2,Stripe,2026-05-10 07:07:52
+1306,Active,Customer 2,customer2@arraysubs.test,Basic Monthly,29.99,USD,1 month,2026-05-01 10:00:00,2026-06-04 10:00:00,,,0,,2026-05-04 10:00:00
+1293,Trial,Customer One,customer1@arraysubs.test,Trial Weekly,19.99,USD,1 week,2026-05-03 10:00:00,2026-05-30 10:00:00,,,0,,2026-05-03 10:00:00
+1290,Cancelled,Customer One,customer1@arraysubs.test,Pro Monthly,49.99,USD,1 month,2026-05-02 10:00:00,,,2026-05-20 10:00:00,0,,2026-05-02 10:00:00
+1287,Active,Customer One,customer1@arraysubs.test,Basic Monthly,29.99,USD,1 month,2026-05-01 10:00:00,2026-06-23 10:00:00,,,1,,2026-05-01 10:00:00

@@ -22,6 +22,7 @@ With **Allow at Checkout** enabled, place an order containing the canonical `Sta
 - Customer: `cust3@test.local` (balance `$205.00`).
 - Order A: subscription product `Standard Weekly` at $19.99/week (above $5 minimum → credit should apply).
 - Order B: $2.99 daily product `Coffee Plan — Daily` (below $5 minimum → credit should NOT apply).
+- Negative check customer: use a fresh customer with store credit and no active `Standard Weekly` subscription.
 
 ## Sub-Tasks
 
@@ -113,7 +114,7 @@ With **Allow at Checkout** enabled, place an order containing the canonical `Sta
 ### Sub-Task 5.7 — Negative check: Allow at Checkout off
 **Steps:**
 1. As admin, **ArraySubs → Store Credit → Settings → Allow at Checkout** = **Off** and save.
-2. As `cust3`, empty cart and add `Standard Weekly` again.
+2. Log in as a fresh customer with store credit and no active `Standard Weekly` subscription, then add `Standard Weekly` to an empty cart.
 3. Open Cart.
 4. Re-enable **Allow at Checkout** before continuing.
 

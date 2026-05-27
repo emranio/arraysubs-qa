@@ -541,3 +541,342 @@
 {"timestamp":"2026-05-22T05:45:02.644144318+02:00","action":"edit","task_id":26,"detail":"stage-00: 02 Admin Menu and Capabilities"}
 {"timestamp":"2026-05-22T05:45:02.644602714+02:00","action":"claim","task_id":26,"detail":"mold-glade"}
 {"timestamp":"2026-05-22T05:47:59.081949005+02:00","action":"edit","task_id":84,"detail":"stage-07: 04 Cancel at End of Billing Period"}
+{"timestamp":"2026-05-23T08:06:53.417377207+02:00","action":"move","task_id":114,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-23T08:06:53.424562237+02:00","action":"move","task_id":115,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-23T08:06:53.425338931+02:00","action":"move","task_id":116,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-23T08:06:53.427033242+02:00","action":"move","task_id":117,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-23T08:06:53.429119998+02:00","action":"move","task_id":118,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-23T08:06:53.430056281+02:00","action":"move","task_id":119,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-23T08:06:53.430876276+02:00","action":"move","task_id":120,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-23T08:06:53.431674931+02:00","action":"move","task_id":121,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-23T08:06:53.432488364+02:00","action":"move","task_id":122,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-23T08:06:53.433761015+02:00","action":"move","task_id":123,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-23T08:06:53.434704792+02:00","action":"move","task_id":124,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-23T08:06:53.435646987+02:00","action":"move","task_id":125,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-23T08:06:53.436480206+02:00","action":"move","task_id":126,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-23T08:06:53.441069456+02:00","action":"move","task_id":127,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-23T08:06:53.441914599+02:00","action":"move","task_id":128,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-23T08:06:53.442838318+02:00","action":"move","task_id":129,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-23T08:06:53.443465631+02:00","action":"move","task_id":130,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-23T08:06:53.444118954+02:00","action":"move","task_id":131,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-23T08:06:53.444850184+02:00","action":"move","task_id":132,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-23T08:06:53.446147342+02:00","action":"move","task_id":133,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-23T08:06:53.44687886+02:00","action":"move","task_id":134,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-23T08:06:53.44768506+02:00","action":"move","task_id":135,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-23T08:06:53.448478074+02:00","action":"move","task_id":136,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-23T08:06:53.450032825+02:00","action":"move","task_id":137,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-23T08:06:53.45113074+02:00","action":"move","task_id":138,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-23T08:06:53.451984348+02:00","action":"move","task_id":139,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-23T08:06:53.452734501+02:00","action":"move","task_id":140,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-23T08:06:53.453487552+02:00","action":"move","task_id":141,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-23T08:06:53.454228819+02:00","action":"move","task_id":142,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-23T08:06:53.45526049+02:00","action":"move","task_id":143,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-23T08:06:53.455991668+02:00","action":"move","task_id":144,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-23T08:06:53.456762952+02:00","action":"move","task_id":145,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-23T08:06:53.45750439+02:00","action":"move","task_id":146,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-23T08:06:53.460656821+02:00","action":"move","task_id":147,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-23T08:06:53.461543661+02:00","action":"move","task_id":148,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-23T08:06:53.462375809+02:00","action":"move","task_id":149,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-23T08:06:53.463083594+02:00","action":"move","task_id":150,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-23T08:06:53.463808631+02:00","action":"move","task_id":151,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-23T08:06:53.464434112+02:00","action":"move","task_id":152,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-23T08:06:53.465142087+02:00","action":"move","task_id":153,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-23T08:06:53.465913481+02:00","action":"move","task_id":154,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-23T08:06:53.466688561+02:00","action":"move","task_id":155,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-23T08:06:53.467430811+02:00","action":"move","task_id":156,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-23T08:06:53.47052385+02:00","action":"move","task_id":157,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-23T08:06:53.471733405+02:00","action":"move","task_id":158,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-23T08:06:53.472623982+02:00","action":"move","task_id":159,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-23T08:06:53.473471468+02:00","action":"move","task_id":160,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-23T08:06:53.47426259+02:00","action":"move","task_id":161,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-23T08:06:53.475064971+02:00","action":"move","task_id":162,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-23T08:06:53.475878003+02:00","action":"move","task_id":163,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-23T08:06:53.476676338+02:00","action":"move","task_id":164,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-23T08:06:53.477812043+02:00","action":"move","task_id":165,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-23T08:06:53.478684096+02:00","action":"move","task_id":166,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-23T08:06:53.480597388+02:00","action":"move","task_id":167,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-23T08:06:53.483431032+02:00","action":"move","task_id":168,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-23T08:06:53.48475495+02:00","action":"move","task_id":169,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-23T08:06:53.486507751+02:00","action":"move","task_id":170,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-23T08:06:53.487468439+02:00","action":"move","task_id":171,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-23T08:06:53.488311177+02:00","action":"move","task_id":172,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-23T08:06:53.489057674+02:00","action":"move","task_id":173,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-23T08:06:53.489846391+02:00","action":"move","task_id":174,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-23T08:06:53.491038471+02:00","action":"move","task_id":175,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-23T08:06:53.492587611+02:00","action":"move","task_id":176,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-23T08:06:53.495037978+02:00","action":"move","task_id":177,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-23T08:06:53.496131686+02:00","action":"move","task_id":178,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-05-23T08:21:08.615168413+02:00","action":"edit","task_id":114,"detail":"stage-11: 01 Define Product Features"}
+{"timestamp":"2026-05-23T08:21:13.829967292+02:00","action":"move","task_id":114,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-23T08:39:14.048854116+02:00","action":"edit","task_id":115,"detail":"stage-11: 02 Customer and Storefront Display"}
+{"timestamp":"2026-05-23T08:39:20.854652689+02:00","action":"move","task_id":115,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-23T08:53:15.958024353+02:00","action":"edit","task_id":116,"detail":"stage-11: 03 Feature Manager Settings"}
+{"timestamp":"2026-05-23T08:55:14.382791782+02:00","action":"move","task_id":116,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-23T08:55:36.189161617+02:00","action":"edit","task_id":117,"detail":"stage-11: 04 Feature Log and Entitlement Review"}
+{"timestamp":"2026-05-23T09:04:11.453034625+02:00","action":"edit","task_id":117,"detail":"stage-11: 04 Feature Log and Entitlement Review"}
+{"timestamp":"2026-05-23T09:04:16.973501664+02:00","action":"move","task_id":117,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-23T09:04:39.013445383+02:00","action":"edit","task_id":118,"detail":"stage-12: 01 Store Credit Settings"}
+{"timestamp":"2026-05-23T09:14:11.595286507+02:00","action":"edit","task_id":118,"detail":"stage-12: 01 Store Credit Settings"}
+{"timestamp":"2026-05-23T09:14:16.727714831+02:00","action":"move","task_id":118,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-23T09:27:27.778033275+02:00","action":"edit","task_id":119,"detail":"stage-12: 02 Manual Credit Adjustments"}
+{"timestamp":"2026-05-23T09:27:38.442068486+02:00","action":"edit","task_id":119,"detail":"stage-12: 02 Manual Credit Adjustments"}
+{"timestamp":"2026-05-23T09:27:42.697617102+02:00","action":"move","task_id":119,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-23T09:28:02.42488551+02:00","action":"edit","task_id":120,"detail":"stage-12: 03 Credit History Filters"}
+{"timestamp":"2026-05-23T09:29:43.474273813+02:00","action":"edit","task_id":120,"detail":"stage-12: 03 Credit History Filters"}
+{"timestamp":"2026-05-23T09:29:48.002381585+02:00","action":"move","task_id":120,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-23T09:39:04.605081274+02:00","action":"edit","task_id":121,"detail":"stage-12: 04 Buy Credits Product"}
+{"timestamp":"2026-05-23T09:39:27.192767823+02:00","action":"edit","task_id":121,"detail":"stage-12: 04 Buy Credits Product"}
+{"timestamp":"2026-05-23T09:39:32.983542763+02:00","action":"move","task_id":121,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-23T09:40:00.050752482+02:00","action":"edit","task_id":122,"detail":"stage-12: 05 Purchase with Credit at Checkout"}
+{"timestamp":"2026-05-23T09:54:44.807557793+02:00","action":"edit","task_id":122,"detail":"stage-12: 05 Purchase with Credit at Checkout"}
+{"timestamp":"2026-05-23T09:54:50.251227881+02:00","action":"move","task_id":122,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-23T10:03:12.752168835+02:00","action":"edit","task_id":123,"detail":"stage-12: 06 Auto-Apply on Renewal"}
+{"timestamp":"2026-05-23T10:17:58.182665613+02:00","action":"edit","task_id":123,"detail":"stage-12: 06 Auto-Apply on Renewal"}
+{"timestamp":"2026-05-23T10:18:09.388327672+02:00","action":"move","task_id":123,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-23T10:18:23.280478472+02:00","action":"edit","task_id":124,"detail":"stage-12: 07 Refund to Credit"}
+{"timestamp":"2026-05-23T10:27:41.729944778+02:00","action":"edit","task_id":124,"detail":"stage-12: 07 Refund to Credit"}
+{"timestamp":"2026-05-23T10:27:48.661212994+02:00","action":"move","task_id":124,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-23T10:28:55.663367348+02:00","action":"edit","task_id":125,"detail":"stage-12: 08 Store Credit Emails and Expiration"}
+{"timestamp":"2026-05-23T10:35:09.994155335+02:00","action":"edit","task_id":125,"detail":"stage-12: 08 Store Credit Emails and Expiration"}
+{"timestamp":"2026-05-23T10:35:17.028350455+02:00","action":"move","task_id":125,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-23T10:40:30.449023208+02:00","action":"edit","task_id":126,"detail":"stage-13: 01 Customer Emails Trigger Matrix"}
+{"timestamp":"2026-05-23T10:40:37.990297146+02:00","action":"move","task_id":126,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-23T10:43:22.057231011+02:00","action":"edit","task_id":127,"detail":"stage-13: 02 Admin Emails"}
+{"timestamp":"2026-05-23T10:43:34.025187898+02:00","action":"move","task_id":127,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-23T10:49:05.308768771+02:00","action":"edit","task_id":128,"detail":"stage-13: 03 Store Credit Emails (Pro)"}
+{"timestamp":"2026-05-23T10:49:16.518014637+02:00","action":"move","task_id":128,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-23T10:52:09.709487641+02:00","action":"edit","task_id":129,"detail":"stage-13: 04 Pro Emails — Card Expiring + SCA Authentication Required"}
+{"timestamp":"2026-05-23T10:52:16.427633096+02:00","action":"move","task_id":129,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-23T10:53:58.444990461+02:00","action":"edit","task_id":130,"detail":"stage-13: 05 Enable / Disable Toggles"}
+{"timestamp":"2026-05-23T10:54:03.718920416+02:00","action":"move","task_id":130,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-23T11:15:19.728001678+02:00","action":"edit","task_id":131,"detail":"stage-14: 01 All Subscriptions List and Filters"}
+{"timestamp":"2026-05-23T11:15:25.425717203+02:00","action":"move","task_id":131,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-23T11:15:39.316442275+02:00","action":"edit","task_id":132,"detail":"stage-14: 02 Create Subscription From Admin"}
+{"timestamp":"2026-05-23T11:19:50.664025254+02:00","action":"edit","task_id":132,"detail":"stage-14: 02 Create Subscription From Admin"}
+{"timestamp":"2026-05-23T11:19:55.900226693+02:00","action":"move","task_id":132,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-23T11:20:04.349396267+02:00","action":"edit","task_id":133,"detail":"stage-14: 03 Edit Subscription Fields"}
+{"timestamp":"2026-05-23T11:28:18.284423325+02:00","action":"edit","task_id":133,"detail":"stage-14: 03 Edit Subscription Fields"}
+{"timestamp":"2026-05-23T11:28:23.896852+02:00","action":"move","task_id":133,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-23T11:28:31.5944871+02:00","action":"edit","task_id":134,"detail":"stage-14: 04 Subscription Detail Cards"}
+{"timestamp":"2026-05-23T11:39:04.022972783+02:00","action":"edit","task_id":134,"detail":"stage-14: 04 Subscription Detail Cards"}
+{"timestamp":"2026-05-23T11:39:13.933027848+02:00","action":"move","task_id":134,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-23T11:39:22.429506867+02:00","action":"edit","task_id":135,"detail":"stage-14: 05 Subscription Notes"}
+{"timestamp":"2026-05-23T11:44:47.753235552+02:00","action":"edit","task_id":135,"detail":"stage-14: 05 Subscription Notes"}
+{"timestamp":"2026-05-23T11:44:54.346738965+02:00","action":"move","task_id":135,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-23T11:45:04.209107978+02:00","action":"edit","task_id":136,"detail":"stage-14: 06 Related Orders and Refunds"}
+{"timestamp":"2026-05-23T11:51:57.934139685+02:00","action":"edit","task_id":136,"detail":"stage-14: 06 Related Orders and Refunds"}
+{"timestamp":"2026-05-23T11:52:06.112949793+02:00","action":"move","task_id":136,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-23T11:52:16.71109201+02:00","action":"edit","task_id":137,"detail":"stage-14: 07 Export Subscriptions (CSV and JSON)"}
+{"timestamp":"2026-05-23T11:57:00.217017433+02:00","action":"edit","task_id":137,"detail":"stage-14: 07 Export Subscriptions (CSV and JSON)"}
+{"timestamp":"2026-05-23T11:57:06.791321341+02:00","action":"move","task_id":137,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-23T11:57:17.407989845+02:00","action":"edit","task_id":138,"detail":"stage-14: 08 Status Change Side Effects (Dropdown vs. Cancel Button)"}
+{"timestamp":"2026-05-23T12:07:47.633733741+02:00","action":"edit","task_id":138,"detail":"stage-14: 08 Status Change Side Effects (Dropdown vs. Cancel Button)"}
+{"timestamp":"2026-05-23T12:07:47.726512214+02:00","action":"move","task_id":138,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-23T12:19:05.55445676+02:00","action":"edit","task_id":139,"detail":"stage-15: 01 Member Search"}
+{"timestamp":"2026-05-23T12:19:05.554493559+02:00","action":"move","task_id":139,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-23T12:26:43.922714289+02:00","action":"edit","task_id":140,"detail":"stage-15: 02 Member Profile"}
+{"timestamp":"2026-05-23T12:26:43.977157355+02:00","action":"move","task_id":140,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-23T12:38:57.422965798+02:00","action":"edit","task_id":141,"detail":"stage-15: 03 Member Commerce Overview"}
+{"timestamp":"2026-05-23T12:38:57.442446398+02:00","action":"move","task_id":141,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-23T12:52:55.675478774+02:00","action":"edit","task_id":142,"detail":"stage-15: 04 Member Operations and Insights"}
+{"timestamp":"2026-05-23T12:53:00.312866717+02:00","action":"move","task_id":142,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-23T13:02:12.024665611+02:00","action":"edit","task_id":143,"detail":"stage-16: 01 Reports Hub"}
+{"timestamp":"2026-05-23T13:02:16.102148944+02:00","action":"move","task_id":143,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-23T13:08:58.615041387+02:00","action":"edit","task_id":144,"detail":"stage-16: 02 Subscription Performance Dashboard *(Pro)*"}
+{"timestamp":"2026-05-23T13:09:03.811832783+02:00","action":"move","task_id":144,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-23T13:14:49.15745446+02:00","action":"edit","task_id":145,"detail":"stage-16: 03 Performance Charts *(Pro)*"}
+{"timestamp":"2026-05-23T13:14:53.514852774+02:00","action":"move","task_id":145,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-23T13:43:21.661334542+02:00","action":"edit","task_id":146,"detail":"stage-16: 04 WooCommerce Analytics Extension *(Pro)*"}
+{"timestamp":"2026-05-23T13:43:38.152133323+02:00","action":"move","task_id":146,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-23T13:58:12.775970384+02:00","action":"edit","task_id":147,"detail":"stage-16: 05 Order List Enhancements"}
+{"timestamp":"2026-05-23T13:58:19.571579458+02:00","action":"move","task_id":147,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-23T14:36:04.511993527+02:00","action":"edit","task_id":148,"detail":"stage-17: 01 Activity Audits"}
+{"timestamp":"2026-05-23T14:36:10.852999081+02:00","action":"move","task_id":148,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-23T15:04:49.651789535+02:00","action":"edit","task_id":149,"detail":"stage-17: 02 Audit Logging Settings"}
+{"timestamp":"2026-05-23T15:23:08.960615686+02:00","action":"edit","task_id":149,"detail":"stage-17: 02 Audit Logging Settings"}
+{"timestamp":"2026-05-23T15:23:19.307786533+02:00","action":"move","task_id":149,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-23T15:23:35.641969095+02:00","action":"edit","task_id":150,"detail":"stage-17: 03 Scheduled-Job Logs"}
+{"timestamp":"2026-05-23T15:41:45.220829993+02:00","action":"edit","task_id":150,"detail":"stage-17: 03 Scheduled-Job Logs"}
+{"timestamp":"2026-05-23T15:47:40.267991551+02:00","action":"edit","task_id":150,"detail":"stage-17: 03 Scheduled-Job Logs"}
+{"timestamp":"2026-05-23T15:47:45.311535363+02:00","action":"move","task_id":150,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-23T15:48:11.77476839+02:00","action":"edit","task_id":151,"detail":"stage-17: 04 Gateway Health Dashboard (Stripe only)"}
+{"timestamp":"2026-05-23T16:04:11.973659694+02:00","action":"edit","task_id":151,"detail":"stage-17: 04 Gateway Health Dashboard (Stripe only)"}
+{"timestamp":"2026-05-23T16:04:23.249305824+02:00","action":"move","task_id":151,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-23T16:06:53.72190371+02:00","action":"edit","task_id":152,"detail":"stage-17: 05 Renewal Failures Troubleshooting"}
+{"timestamp":"2026-05-23T16:06:59.095397476+02:00","action":"move","task_id":152,"detail":"in-progress -\u003e blocked"}
+{"timestamp":"2026-05-23T16:08:06.00715603+02:00","action":"edit","task_id":153,"detail":"stage-17: 06 Portal Action Failures"}
+{"timestamp":"2026-05-23T16:08:12.47934158+02:00","action":"move","task_id":153,"detail":"in-progress -\u003e blocked"}
+{"timestamp":"2026-05-23T16:09:38.631446356+02:00","action":"edit","task_id":154,"detail":"stage-17: 07 Access-Rule Conflicts"}
+{"timestamp":"2026-05-23T16:09:42.813461614+02:00","action":"move","task_id":154,"detail":"in-progress -\u003e blocked"}
+{"timestamp":"2026-05-23T16:10:07.490869245+02:00","action":"edit","task_id":155,"detail":"stage-18: 01 Time-Travel Method"}
+{"timestamp":"2026-05-23T16:19:25.882440809+02:00","action":"edit","task_id":155,"detail":"stage-18: 01 Time-Travel Method"}
+{"timestamp":"2026-05-23T16:19:31.005487688+02:00","action":"move","task_id":155,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-23T16:31:24.809476252+02:00","action":"edit","task_id":156,"detail":"stage-18: 02 Successful Manual Renewal"}
+{"timestamp":"2026-05-23T16:31:24.890334668+02:00","action":"move","task_id":156,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-23T16:45:40.368736468+02:00","action":"edit","task_id":157,"detail":"stage-18: 03 Successful Automatic Renewal (Pro)"}
+{"timestamp":"2026-05-23T16:45:40.445905099+02:00","action":"move","task_id":157,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-23T17:05:28.450203507+02:00","action":"edit","task_id":158,"detail":"stage-18: 04 Failed Renewal — Active Grace Period (Pro)"}
+{"timestamp":"2026-05-23T17:05:28.527011004+02:00","action":"move","task_id":158,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-23T17:12:06.139402332+02:00","action":"edit","task_id":159,"detail":"stage-18: 05 Grace → On-Hold Transition"}
+{"timestamp":"2026-05-23T17:12:06.208654093+02:00","action":"move","task_id":159,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-23T17:17:33.791559202+02:00","action":"edit","task_id":160,"detail":"stage-18: 06 On-Hold → Cancelled Transition (overdue_payment)"}
+{"timestamp":"2026-05-23T17:17:33.860349343+02:00","action":"move","task_id":160,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-23T17:26:43.138344523+02:00","action":"edit","task_id":161,"detail":"stage-18: 07 Trial → Active Conversion"}
+{"timestamp":"2026-05-23T17:26:43.213545515+02:00","action":"move","task_id":161,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-23T17:31:14.312530866+02:00","action":"edit","task_id":162,"detail":"stage-18: 08 Trial Auto-Downgrade"}
+{"timestamp":"2026-05-23T17:41:56.769803791+02:00","action":"edit","task_id":162,"detail":"stage-18: 08 Trial Auto-Downgrade"}
+{"timestamp":"2026-05-23T17:42:06.612601821+02:00","action":"move","task_id":162,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-23T17:45:23.045873145+02:00","action":"edit","task_id":163,"detail":"stage-18: 09 Different Renewal Price Threshold"}
+{"timestamp":"2026-05-23T17:57:56.230468369+02:00","action":"edit","task_id":163,"detail":"stage-18: 09 Different Renewal Price Threshold"}
+{"timestamp":"2026-05-23T17:58:03.999016746+02:00","action":"move","task_id":163,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-23T17:59:53.04481553+02:00","action":"edit","task_id":164,"detail":"stage-18: 10 Skip and Pause Over Renewal Cycles"}
+{"timestamp":"2026-05-23T18:17:52.700212347+02:00","action":"edit","task_id":164,"detail":"stage-18: 10 Skip and Pause Over Renewal Cycles"}
+{"timestamp":"2026-05-23T18:18:06.207556333+02:00","action":"move","task_id":164,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-23T18:23:47.042504914+02:00","action":"edit","task_id":165,"detail":"stage-18: 11 Renewal Reminders \u0026 Subscription Expiring Soon"}
+{"timestamp":"2026-05-23T18:33:35.778920341+02:00","action":"edit","task_id":165,"detail":"stage-18: 11 Renewal Reminders \u0026 Subscription Expiring Soon"}
+{"timestamp":"2026-05-23T18:33:39.733269606+02:00","action":"move","task_id":165,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-23T18:37:23.181989094+02:00","action":"edit","task_id":166,"detail":"stage-18: 12 Fixed-Period Membership Expiration (Pro)"}
+{"timestamp":"2026-05-23T18:46:13.170134288+02:00","action":"edit","task_id":166,"detail":"stage-18: 12 Fixed-Period Membership Expiration (Pro)"}
+{"timestamp":"2026-05-23T18:46:20.120085192+02:00","action":"move","task_id":166,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-23T18:46:46.438357482+02:00","action":"edit","task_id":167,"detail":"stage-19: 01 Refund Settings Persistence"}
+{"timestamp":"2026-05-23T18:52:48.117141689+02:00","action":"edit","task_id":167,"detail":"stage-19: 01 Refund Settings Persistence"}
+{"timestamp":"2026-05-23T18:52:52.24234379+02:00","action":"move","task_id":167,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-23T18:53:02.730038222+02:00","action":"edit","task_id":168,"detail":"stage-19: 02 Prorated Refund on Cancellation (Standard Weekly)"}
+{"timestamp":"2026-05-23T19:22:08.512097493+02:00","action":"edit","task_id":168,"detail":"stage-19: 02 Prorated Refund on Cancellation (Standard Weekly)"}
+{"timestamp":"2026-05-23T19:22:15.205297991+02:00","action":"move","task_id":168,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-23T19:22:46.020795469+02:00","action":"edit","task_id":169,"detail":"stage-19: 03 Refund at End of Period"}
+{"timestamp":"2026-05-23T19:36:10.224333078+02:00","action":"edit","task_id":169,"detail":"stage-19: 03 Refund at End of Period"}
+{"timestamp":"2026-05-23T19:36:16.077013779+02:00","action":"move","task_id":169,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-23T19:36:38.199372457+02:00","action":"edit","task_id":170,"detail":"stage-19: 04 No Automatic Refund"}
+{"timestamp":"2026-05-23T19:51:56.404458715+02:00","action":"edit","task_id":170,"detail":"stage-19: 04 No Automatic Refund"}
+{"timestamp":"2026-05-23T19:52:03.789744112+02:00","action":"move","task_id":170,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-23T19:52:51.561453425+02:00","action":"edit","task_id":171,"detail":"stage-19: 05 Refund to Store Credit (Pro)"}
+{"timestamp":"2026-05-23T20:09:35.536377589+02:00","action":"edit","task_id":171,"detail":"stage-19: 05 Refund to Store Credit (Pro)"}
+{"timestamp":"2026-05-23T20:09:49.796748773+02:00","action":"move","task_id":171,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-23T20:10:00.820602678+02:00","action":"edit","task_id":172,"detail":"stage-19: 06 Subscription State After Full Refund"}
+{"timestamp":"2026-05-23T20:15:54.035738122+02:00","action":"edit","task_id":172,"detail":"stage-19: 06 Subscription State After Full Refund"}
+{"timestamp":"2026-05-23T20:36:52.625055464+02:00","action":"edit","task_id":172,"detail":"stage-19: 06 Subscription State After Full Refund"}
+{"timestamp":"2026-05-23T20:36:52.717455569+02:00","action":"move","task_id":172,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-23T20:46:51.785391803+02:00","action":"edit","task_id":173,"detail":"stage-20: 01 Pro Deactivation While Subscriptions Are Running"}
+{"timestamp":"2026-05-23T20:58:24.349379728+02:00","action":"edit","task_id":173,"detail":"stage-20: 01 Pro Deactivation While Subscriptions Are Running"}
+{"timestamp":"2026-05-23T20:58:24.420986757+02:00","action":"move","task_id":173,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-23T20:59:13.206007364+02:00","action":"edit","task_id":174,"detail":"stage-20: 02 Core Plugin Deactivation"}
+{"timestamp":"2026-05-23T21:07:12.159550463+02:00","action":"edit","task_id":174,"detail":"stage-20: 02 Core Plugin Deactivation"}
+{"timestamp":"2026-05-23T21:07:12.241401688+02:00","action":"move","task_id":174,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-23T21:13:05.823485446+02:00","action":"edit","task_id":175,"detail":"stage-20: 03 Cron Stoppage and Recovery"}
+{"timestamp":"2026-05-23T21:13:05.928455223+02:00","action":"move","task_id":175,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-23T21:14:24.797683241+02:00","action":"edit","task_id":176,"detail":"stage-20: 04 Concurrent Actions (Race Conditions)"}
+{"timestamp":"2026-05-23T21:22:46.669475283+02:00","action":"edit","task_id":176,"detail":"stage-20: 04 Concurrent Actions (Race Conditions)"}
+{"timestamp":"2026-05-23T21:22:46.797741295+02:00","action":"move","task_id":176,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-23T21:28:25.71595369+02:00","action":"edit","task_id":177,"detail":"stage-20: 05 Performance With Many Subscriptions"}
+{"timestamp":"2026-05-23T21:39:41.659471496+02:00","action":"edit","task_id":177,"detail":"stage-20: 05 Performance With Many Subscriptions"}
+{"timestamp":"2026-05-23T21:39:50.379063952+02:00","action":"move","task_id":177,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-23T21:40:04.895424912+02:00","action":"edit","task_id":178,"detail":"stage-20: 06 Final Regression Smoke Pass"}
+{"timestamp":"2026-05-23T21:41:59.593904589+02:00","action":"edit","task_id":178,"detail":"stage-20: 06 Final Regression Smoke Pass"}
+{"timestamp":"2026-05-23T22:15:48.42022091+02:00","action":"edit","task_id":178,"detail":"stage-20: 06 Final Regression Smoke Pass"}
+{"timestamp":"2026-05-23T22:15:53.32453665+02:00","action":"move","task_id":178,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-05-24T08:30:38.513015399+02:00","action":"edit","task_id":114,"detail":"stage-11: 01 Define Product Features"}
+{"timestamp":"2026-05-24T08:39:28.890481817+02:00","action":"edit","task_id":114,"detail":"stage-11: 01 Define Product Features"}
+{"timestamp":"2026-05-24T09:04:12.815873953+02:00","action":"edit","task_id":116,"detail":"stage-11: 03 Feature Manager Settings"}
+{"timestamp":"2026-05-24T09:08:23.790907839+02:00","action":"edit","task_id":117,"detail":"stage-11: 04 Feature Log and Entitlement Review"}
+{"timestamp":"2026-05-24T09:14:21.41064683+02:00","action":"edit","task_id":118,"detail":"stage-12: 01 Store Credit Settings"}
+{"timestamp":"2026-05-24T09:18:58.904851521+02:00","action":"edit","task_id":118,"detail":"stage-12: 01 Store Credit Settings"}
+{"timestamp":"2026-05-24T09:27:58.577851262+02:00","action":"edit","task_id":118,"detail":"stage-12: 01 Store Credit Settings"}
+{"timestamp":"2026-05-24T09:39:34.942633433+02:00","action":"edit","task_id":119,"detail":"stage-12: 02 Manual Credit Adjustments"}
+{"timestamp":"2026-05-24T09:48:18.806209696+02:00","action":"edit","task_id":120,"detail":"stage-12: 03 Credit History Filters"}
+{"timestamp":"2026-05-24T09:52:14.345404848+02:00","action":"edit","task_id":119,"detail":"stage-12: 02 Manual Credit Adjustments"}
+{"timestamp":"2026-05-24T09:56:22.808771065+02:00","action":"edit","task_id":121,"detail":"stage-12: 04 Buy Credits Product"}
+{"timestamp":"2026-05-24T10:02:33.379361137+02:00","action":"edit","task_id":121,"detail":"stage-12: 04 Buy Credits Product"}
+{"timestamp":"2026-05-24T10:10:47.090524328+02:00","action":"edit","task_id":122,"detail":"stage-12: 05 Purchase with Credit at Checkout"}
+{"timestamp":"2026-05-24T10:15:34.491225565+02:00","action":"edit","task_id":122,"detail":"stage-12: 05 Purchase with Credit at Checkout"}
+{"timestamp":"2026-05-24T10:17:10.581910027+02:00","action":"edit","task_id":122,"detail":"stage-12: 05 Purchase with Credit at Checkout"}
+{"timestamp":"2026-05-24T10:32:41.45346067+02:00","action":"edit","task_id":122,"detail":"stage-12: 05 Purchase with Credit at Checkout"}
+{"timestamp":"2026-05-24T10:34:55.419128108+02:00","action":"edit","task_id":122,"detail":"stage-12: 05 Purchase with Credit at Checkout"}
+{"timestamp":"2026-05-24T10:38:24.4464794+02:00","action":"edit","task_id":122,"detail":"stage-12: 05 Purchase with Credit at Checkout"}
+{"timestamp":"2026-05-24T10:45:12.878826611+02:00","action":"edit","task_id":123,"detail":"stage-12: 06 Auto-Apply on Renewal"}
+{"timestamp":"2026-05-24T10:47:24.494378753+02:00","action":"edit","task_id":123,"detail":"stage-12: 06 Auto-Apply on Renewal"}
+{"timestamp":"2026-05-24T11:12:39.648807371+02:00","action":"edit","task_id":124,"detail":"stage-12: 07 Refund to Credit"}
+{"timestamp":"2026-05-24T11:36:31.878500952+02:00","action":"edit","task_id":126,"detail":"stage-13: 01 Customer Emails Trigger Matrix"}
+{"timestamp":"2026-05-24T11:41:38.397136473+02:00","action":"edit","task_id":127,"detail":"stage-13: 02 Admin Emails"}
+{"timestamp":"2026-05-24T11:44:35.517478674+02:00","action":"edit","task_id":128,"detail":"stage-13: 03 Store Credit Emails (Pro)"}
+{"timestamp":"2026-05-24T11:50:58.067753643+02:00","action":"edit","task_id":129,"detail":"stage-13: 04 Pro Emails — Card Expiring + SCA Authentication Required"}
+{"timestamp":"2026-05-24T12:11:07.081815594+02:00","action":"edit","task_id":132,"detail":"stage-14: 02 Create Subscription From Admin"}
+{"timestamp":"2026-05-24T12:16:49.072724952+02:00","action":"edit","task_id":139,"detail":"stage-15: 01 Member Search"}
+{"timestamp":"2026-05-24T12:38:51.076524843+02:00","action":"edit","task_id":152,"detail":"stage-17: 05 Renewal Failures Troubleshooting"}
+{"timestamp":"2026-05-24T12:57:18.49760238+02:00","action":"edit","task_id":153,"detail":"stage-17: 06 Portal Action Failures"}
+{"timestamp":"2026-05-24T13:12:04.383707914+02:00","action":"edit","task_id":154,"detail":"stage-17: 07 Access-Rule Conflicts"}
+{"timestamp":"2026-05-24T13:25:10.980743388+02:00","action":"edit","task_id":172,"detail":"stage-19: 06 Subscription State After Full Refund"}
+{"timestamp":"2026-05-24T13:33:05.32997239+02:00","action":"edit","task_id":155,"detail":"stage-18: 01 Time-Travel Method"}
+{"timestamp":"2026-05-24T13:42:06.428828266+02:00","action":"edit","task_id":158,"detail":"stage-18: 04 Failed Renewal — Active Grace Period (Pro)"}
+{"timestamp":"2026-05-24T14:02:34.341837464+02:00","action":"edit","task_id":164,"detail":"stage-18: 10 Skip and Pause Over Renewal Cycles"}
+{"timestamp":"2026-05-24T14:09:00.436106478+02:00","action":"edit","task_id":131,"detail":"stage-14: 01 All Subscriptions List and Filters"}
+{"timestamp":"2026-05-24T14:17:54.003200981+02:00","action":"edit","task_id":131,"detail":"stage-14: 01 All Subscriptions List and Filters"}
+{"timestamp":"2026-05-24T14:24:53.32302563+02:00","action":"edit","task_id":131,"detail":"stage-14: 01 All Subscriptions List and Filters"}
+{"timestamp":"2026-05-24T14:35:10.582849856+02:00","action":"edit","task_id":132,"detail":"stage-14: 02 Create Subscription From Admin"}
+{"timestamp":"2026-05-24T14:46:05.439632152+02:00","action":"edit","task_id":135,"detail":"stage-14: 05 Subscription Notes"}
+{"timestamp":"2026-05-24T15:02:32.514623245+02:00","action":"edit","task_id":135,"detail":"stage-14: 05 Subscription Notes"}
+{"timestamp":"2026-05-24T15:08:40.896414434+02:00","action":"edit","task_id":136,"detail":"stage-14: 06 Related Orders and Refunds"}
+{"timestamp":"2026-05-24T15:28:31.961241333+02:00","action":"edit","task_id":137,"detail":"stage-14: 07 Export Subscriptions (CSV and JSON)"}
+{"timestamp":"2026-05-24T15:38:07.732491872+02:00","action":"edit","task_id":137,"detail":"stage-14: 07 Export Subscriptions (CSV and JSON)"}
+{"timestamp":"2026-05-24T15:42:48.02147973+02:00","action":"edit","task_id":137,"detail":"stage-14: 07 Export Subscriptions (CSV and JSON)"}
+{"timestamp":"2026-05-24T15:54:33.890741296+02:00","action":"edit","task_id":138,"detail":"stage-14: 08 Status Change Side Effects (Dropdown vs. Cancel Button)"}
+{"timestamp":"2026-05-24T16:06:53.95100365+02:00","action":"edit","task_id":138,"detail":"stage-14: 08 Status Change Side Effects (Dropdown vs. Cancel Button)"}
+{"timestamp":"2026-05-24T16:16:15.213014665+02:00","action":"edit","task_id":134,"detail":"stage-14: 04 Subscription Detail Cards"}
+{"timestamp":"2026-05-24T16:31:25.314085407+02:00","action":"edit","task_id":138,"detail":"stage-14: 08 Status Change Side Effects (Dropdown vs. Cancel Button)"}
+{"timestamp":"2026-05-24T16:39:39.132722854+02:00","action":"edit","task_id":140,"detail":"stage-15: 02 Member Profile"}
+{"timestamp":"2026-05-24T16:47:28.091283906+02:00","action":"edit","task_id":140,"detail":"stage-15: 02 Member Profile"}
+{"timestamp":"2026-05-24T16:57:51.326044328+02:00","action":"edit","task_id":140,"detail":"stage-15: 02 Member Profile"}
+{"timestamp":"2026-05-24T17:07:37.427058397+02:00","action":"edit","task_id":140,"detail":"stage-15: 02 Member Profile"}
+{"timestamp":"2026-05-24T17:25:07.114352064+02:00","action":"edit","task_id":172,"detail":"stage-19: 06 Subscription State After Full Refund"}
+{"timestamp":"2026-05-24T17:34:35.875194851+02:00","action":"edit","task_id":141,"detail":"stage-15: 03 Member Commerce Overview"}
+{"timestamp":"2026-05-24T17:41:52.027202906+02:00","action":"edit","task_id":143,"detail":"stage-16: 01 Reports Hub"}
+{"timestamp":"2026-05-24T17:46:35.129259418+02:00","action":"edit","task_id":143,"detail":"stage-16: 01 Reports Hub"}
+{"timestamp":"2026-05-24T17:50:06.345482674+02:00","action":"edit","task_id":144,"detail":"stage-16: 02 Subscription Performance Dashboard *(Pro)*"}
+{"timestamp":"2026-05-24T17:57:56.717945592+02:00","action":"edit","task_id":144,"detail":"stage-16: 02 Subscription Performance Dashboard *(Pro)*"}
+{"timestamp":"2026-05-24T18:05:42.767993571+02:00","action":"edit","task_id":144,"detail":"stage-16: 02 Subscription Performance Dashboard *(Pro)*"}
+{"timestamp":"2026-05-24T18:11:59.260756616+02:00","action":"edit","task_id":145,"detail":"stage-16: 03 Performance Charts *(Pro)*"}
+{"timestamp":"2026-05-24T18:25:00.107305758+02:00","action":"edit","task_id":146,"detail":"stage-16: 04 WooCommerce Analytics Extension *(Pro)*"}
+{"timestamp":"2026-05-24T18:37:55.680469864+02:00","action":"edit","task_id":146,"detail":"stage-16: 04 WooCommerce Analytics Extension *(Pro)*"}
+{"timestamp":"2026-05-24T18:45:55.492396012+02:00","action":"edit","task_id":147,"detail":"stage-16: 05 Order List Enhancements"}
+{"timestamp":"2026-05-24T18:56:08.024947625+02:00","action":"edit","task_id":148,"detail":"stage-17: 01 Activity Audits"}
+{"timestamp":"2026-05-24T19:10:37.000811931+02:00","action":"edit","task_id":148,"detail":"stage-17: 01 Activity Audits"}
+{"timestamp":"2026-05-24T19:40:45.059731259+02:00","action":"edit","task_id":148,"detail":"stage-17: 01 Activity Audits"}
+{"timestamp":"2026-05-24T19:43:59.367825371+02:00","action":"edit","task_id":148,"detail":"stage-17: 01 Activity Audits"}
+{"timestamp":"2026-05-24T19:48:10.739969236+02:00","action":"edit","task_id":149,"detail":"stage-17: 02 Audit Logging Settings"}
+{"timestamp":"2026-05-24T19:51:58.87243502+02:00","action":"edit","task_id":149,"detail":"stage-17: 02 Audit Logging Settings"}
+{"timestamp":"2026-05-24T19:58:15.771213037+02:00","action":"edit","task_id":150,"detail":"stage-17: 03 Scheduled-Job Logs"}
+{"timestamp":"2026-05-24T20:04:55.35715967+02:00","action":"edit","task_id":150,"detail":"stage-17: 03 Scheduled-Job Logs"}
+{"timestamp":"2026-05-24T20:10:39.244231654+02:00","action":"edit","task_id":151,"detail":"stage-17: 04 Gateway Health Dashboard (Stripe only)"}
+{"timestamp":"2026-05-24T20:14:54.486661394+02:00","action":"edit","task_id":151,"detail":"stage-17: 04 Gateway Health Dashboard (Stripe only)"}
+{"timestamp":"2026-05-24T20:35:29.725714957+02:00","action":"edit","task_id":151,"detail":"stage-17: 04 Gateway Health Dashboard (Stripe only)"}
+{"timestamp":"2026-05-24T20:42:17.475526253+02:00","action":"edit","task_id":155,"detail":"stage-18: 01 Time-Travel Method"}
+{"timestamp":"2026-05-24T20:47:29.756143304+02:00","action":"edit","task_id":155,"detail":"stage-18: 01 Time-Travel Method"}
+{"timestamp":"2026-05-24T20:52:25.858204715+02:00","action":"edit","task_id":157,"detail":"stage-18: 03 Successful Automatic Renewal (Pro)"}
+{"timestamp":"2026-05-24T21:02:00.800039952+02:00","action":"edit","task_id":158,"detail":"stage-18: 04 Failed Renewal — Active Grace Period (Pro)"}
+{"timestamp":"2026-05-24T21:05:51.843422943+02:00","action":"edit","task_id":158,"detail":"stage-18: 04 Failed Renewal — Active Grace Period (Pro)"}
+{"timestamp":"2026-05-24T21:24:11.099297882+02:00","action":"edit","task_id":159,"detail":"stage-18: 05 Grace → On-Hold Transition"}
+{"timestamp":"2026-05-24T21:32:40.326820078+02:00","action":"edit","task_id":159,"detail":"stage-18: 05 Grace → On-Hold Transition"}
+{"timestamp":"2026-05-24T21:38:19.034043221+02:00","action":"edit","task_id":160,"detail":"stage-18: 06 On-Hold → Cancelled Transition (overdue_payment)"}
+{"timestamp":"2026-05-24T21:44:25.333874236+02:00","action":"edit","task_id":161,"detail":"stage-18: 07 Trial → Active Conversion"}
+{"timestamp":"2026-05-24T21:50:44.382293456+02:00","action":"edit","task_id":162,"detail":"stage-18: 08 Trial Auto-Downgrade"}
+{"timestamp":"2026-05-24T21:58:55.487587244+02:00","action":"edit","task_id":164,"detail":"stage-18: 10 Skip and Pause Over Renewal Cycles"}
+{"timestamp":"2026-05-24T22:03:20.662092745+02:00","action":"edit","task_id":165,"detail":"stage-18: 11 Renewal Reminders \u0026 Subscription Expiring Soon"}
+{"timestamp":"2026-05-24T22:09:55.899303135+02:00","action":"edit","task_id":165,"detail":"stage-18: 11 Renewal Reminders \u0026 Subscription Expiring Soon"}
+{"timestamp":"2026-05-24T22:16:28.802639548+02:00","action":"edit","task_id":166,"detail":"stage-18: 12 Fixed-Period Membership Expiration (Pro)"}
+{"timestamp":"2026-05-24T22:20:23.307356961+02:00","action":"edit","task_id":166,"detail":"stage-18: 12 Fixed-Period Membership Expiration (Pro)"}
+{"timestamp":"2026-05-24T22:24:38.239918011+02:00","action":"edit","task_id":166,"detail":"stage-18: 12 Fixed-Period Membership Expiration (Pro)"}
+{"timestamp":"2026-05-24T22:33:23.315469008+02:00","action":"edit","task_id":167,"detail":"stage-19: 01 Refund Settings Persistence"}
+{"timestamp":"2026-05-24T22:38:12.963663957+02:00","action":"edit","task_id":167,"detail":"stage-19: 01 Refund Settings Persistence"}
+{"timestamp":"2026-05-24T22:43:12.134711013+02:00","action":"edit","task_id":168,"detail":"stage-19: 02 Prorated Refund on Cancellation (Standard Weekly)"}
+{"timestamp":"2026-05-24T22:55:56.833581725+02:00","action":"edit","task_id":168,"detail":"stage-19: 02 Prorated Refund on Cancellation (Standard Weekly)"}
+{"timestamp":"2026-05-24T23:01:03.395498678+02:00","action":"edit","task_id":168,"detail":"stage-19: 02 Prorated Refund on Cancellation (Standard Weekly)"}
+{"timestamp":"2026-05-24T23:07:13.59606668+02:00","action":"edit","task_id":169,"detail":"stage-19: 03 Refund at End of Period"}
+{"timestamp":"2026-05-24T23:10:39.272378358+02:00","action":"edit","task_id":171,"detail":"stage-19: 05 Refund to Store Credit (Pro)"}
+{"timestamp":"2026-05-24T23:20:28.710708486+02:00","action":"edit","task_id":171,"detail":"stage-19: 05 Refund to Store Credit (Pro)"}
+{"timestamp":"2026-05-24T23:27:54.162035339+02:00","action":"edit","task_id":172,"detail":"stage-19: 06 Subscription State After Full Refund"}
+{"timestamp":"2026-05-24T23:37:09.819778252+02:00","action":"edit","task_id":173,"detail":"stage-20: 01 Pro Deactivation While Subscriptions Are Running"}
+{"timestamp":"2026-05-24T23:45:43.791329231+02:00","action":"edit","task_id":175,"detail":"stage-20: 03 Cron Stoppage and Recovery"}
+{"timestamp":"2026-05-25T00:01:18.598378501+02:00","action":"edit","task_id":176,"detail":"stage-20: 04 Concurrent Actions (Race Conditions)"}
+{"timestamp":"2026-05-25T00:07:33.446957411+02:00","action":"edit","task_id":176,"detail":"stage-20: 04 Concurrent Actions (Race Conditions)"}
+{"timestamp":"2026-05-25T00:28:28.60792005+02:00","action":"edit","task_id":178,"detail":"stage-20: 06 Final Regression Smoke Pass"}
+{"timestamp":"2026-05-25T11:51:05.260375797+02:00","action":"edit","task_id":151,"detail":"stage-17: 04 Gateway Health Dashboard (Stripe only)"}

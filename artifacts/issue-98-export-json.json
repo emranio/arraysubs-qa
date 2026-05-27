@@ -1,0 +1,53 @@
+[
+  {
+    "id": 2819,
+    "status": "Cancelled",
+    "customer_name": "qa_full_refund_sync_1779621622",
+    "customer_email": "qa-full-refund-sync-1779621622@example.test",
+    "product_name": "QA Store Credit Refund Status Product",
+    "recurring_amount": 8.5,
+    "currency": "USD",
+    "billing_cycle": "1 month",
+    "start_date": "2026-05-24 11:20:30",
+    "next_payment_date": "",
+    "last_payment_date": "",
+    "end_date": "2026-05-24 11:20:34",
+    "completed_payments": 1,
+    "payment_method": "Direct bank transfer",
+    "created_date": "2026-05-24 17:20:30"
+  },
+  {
+    "id": 2776,
+    "status": "Cancelled",
+    "customer_name": "qa_ui_refund_status_1779614765",
+    "customer_email": "qa-ui-refund-status-1779614765@example.com",
+    "product_name": "QA Store Credit Refund Status Product",
+    "recurring_amount": 8.5,
+    "currency": "USD",
+    "billing_cycle": "1 month",
+    "start_date": "",
+    "next_payment_date": "",
+    "last_payment_date": "",
+    "end_date": "2026-05-24 09:30:25",
+    "completed_payments": 1,
+    "payment_method": "",
+    "created_date": "2026-05-24 15:26:11"
+  },
+  {
+    "id": 2762,
+    "status": "Cancelled",
+    "customer_name": "qa_refund_status_1779614694",
+    "customer_email": "qa-refund-status-1779614694@example.com",
+    "product_name": "",
+    "recurring_amount": 7.25,
+    "currency": "USD",
+    "billing_cycle": "1 month",
+    "start_date": "",
+    "next_payment_date": "",
+    "last_payment_date": "",
+    "end_date": "2026-05-24 09:25:13",
+    "completed_payments": 1,
+    "payment_method": "",
+    "created_date": "2026-05-24 15:25:02"
+  }
+]
