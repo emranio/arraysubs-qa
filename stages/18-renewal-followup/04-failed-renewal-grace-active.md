@@ -14,7 +14,7 @@ Set a **Standard Weekly $19.99/wk** Stripe-paid subscription to use the declinin
 ## Pre-conditions
 - Logged in as administrator at `/wp-admin/`.
 - ArraySubs Pro active.
-- **Stripe is already configured** (Test mode + webhook URL registered).
+- **Stripe is already configured** in Test mode through WooCommerce Stripe, with the ArraySubsPro secondary webhook auto-provisioned.
 - Customer `member-decline@example.com` has an Active subscription on **Standard Weekly** ($19.99 every 1 week) with saved Stripe card `4000 0000 0000 0341` (set as default).
 - Settings → General Settings:
   - Active Grace Days = **3** (default)

@@ -14,7 +14,7 @@ Time-travel a **Standard Weekly $19.99/wk** subscription paid by saved Stripe ca
 ## Pre-conditions
 - Logged in as administrator at `/wp-admin/`.
 - ArraySubs Pro active.
-- **Stripe is already configured** in Test mode with webhook URL registered — no setup required.
+- **Stripe is already configured** in Test mode through WooCommerce Stripe, with the ArraySubsPro secondary webhook auto-provisioned — no setup required.
 - `member-stripe@example.com` has an Active subscription on **Standard Weekly** ($19.99 every 1 week) with saved Stripe card `4242 4242 4242 4242` set as the default payment method.
 - Time-travel approach from Task 18.01 documented and ready to use.
 - Mail catcher reachable.

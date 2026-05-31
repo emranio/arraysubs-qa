@@ -8,7 +8,7 @@
 - Stage 14 — Admin Subscriptions completed (admin subscription detail screen is verified working).
 - Stage 08 — Retention completed (cancellation modal flow is already verified, so refund tests can rely on it).
 - ArraySubs Pro active for Task 05 (Refund-to-Credit) — the rest run on Free.
-- **Stripe is already configured** in Test mode and is the assumed gateway for "Auto gateway refund" sub-tasks (it supports the WooCommerce refund API). Only **Stripe + manual** payments are tested in this regression cycle; PayPal and Paddle are out of scope. For pure Free runs, `WooCommerce → Cheque/BACS` plus a manual refund check is acceptable for verifying the flow but will not exercise gateway refund.
+- **Stripe is already configured** in Test mode through the official WooCommerce Stripe gateway and is the assumed gateway for "Auto gateway refund" sub-tasks (it supports the WooCommerce refund API). ArraySubsPro auto-provisions its secondary Stripe webhook when Pro is active. Only **Stripe + manual** payments are tested in this regression cycle; PayPal and Paddle are out of scope. For pure Free runs, `WooCommerce → Cheque/BACS` plus a manual refund check is acceptable for verifying the flow but will not exercise gateway refund.
 
 **Run order:**
 1. [01 — Refund settings persistence](01-refund-settings.md) — Toggle every refund setting, save, reload, and confirm persistence.

@@ -12,7 +12,7 @@
 Verify the payment-method controls (Manage payment methods link, Pro card-on-file details, Update payment method link, auto-renew toggle off then on) and the shipping address update flow including the 3-day cutoff that blocks updates close to the next renewal.
 
 ## Pre-conditions
-- ArraySubs Pro active. Stripe is already configured by the developer in test mode (no setup required). PayPal and Paddle are out of scope for this regression cycle.
+- ArraySubs Pro active. Stripe is already configured through WooCommerce Stripe in test mode, with the ArraySubsPro secondary webhook auto-provisioned (no setup required). PayPal and Paddle are out of scope for this regression cycle.
 - **General Settings → Automatic Payments → Allow Auto-Renew Toggle:** Enabled.
 - `cust1@example.com` owns:
   - Subscription K — Active subscription paid via Stripe (auto gateway), next payment > 7 days away.

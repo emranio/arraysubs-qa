@@ -7,7 +7,7 @@
 - ArraySubsPro is active.
 - A baseline subscription product (`Standard Weekly` from Stage 03, $19.99/week) exists, plus `Basic Monthly` ($29.99/month) for any monthly-specific check.
 - `cust1@test.local` and `cust3@test.local` exist and can log in. `cust3@test.local` is reserved for the credit / refund scenarios so that earlier customers retain their state.
-- Stripe is already configured (test mode) and is the primary gateway under test. BACS / Cash on Delivery is available as the manual fallback.
+- Stripe is already configured (test mode) through the official WooCommerce Stripe gateway, and ArraySubsPro auto-provisions its secondary webhook. Stripe is the primary gateway under test. BACS / Cash on Delivery is available as the manual fallback.
 - Time-travel method available — either editing `_next_payment_date` post meta, running `wp action-scheduler run --hooks=arraysubs_*`, or using a date-mocking plugin.
 
 **Run order:**

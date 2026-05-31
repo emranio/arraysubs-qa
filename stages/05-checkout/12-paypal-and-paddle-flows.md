@@ -8,7 +8,7 @@
 | Estimated Time | 30 min |
 | Depends On | Task 01, Task 11 |
 
-> **Scope note:** PayPal and Paddle are **out of scope** for this regression cycle. The original Task 12 covered all three gateways; it has been replaced with a deeper Stripe-only verification because Stripe is the only automatic-payment gateway exercised in this run. Stripe is **already configured** by the developer (test-mode keys + webhook secret saved). Do not perform any Stripe setup steps in this task — only verify behaviour.
+> **Scope note:** PayPal and Paddle are **out of scope** for this regression cycle. The original Task 12 covered all three gateways; it has been replaced with a deeper Stripe-only verification because Stripe is the only automatic-payment gateway exercised in this run. Stripe is **already configured** through the official WooCommerce Stripe gateway, and ArraySubsPro auto-provisions its secondary webhook from that connection. Do not perform any Stripe setup steps in this task — only verify behaviour.
 
 ## Objective
 
@@ -17,8 +17,8 @@ Confirm that Stripe webhooks land correctly in ArraySubs, that customer-side pay
 ## Pre-conditions
 
 - ArraySubsPro is active.
-- Stripe is connected (verify under **WooCommerce → Settings → Payments → ArraySubs Stripe** that the status reads **Connected (Test Mode)**).
-- The webhook secret is saved (Stripe CLI or Stripe Dashboard test-mode webhook endpoint pointing at `/wp-json/arraysubs/v1/stripe/webhook`).
+- Stripe is connected (verify under **WooCommerce → Settings → Payments → Stripe** and **Audits [beta] → Gateway Logs** that the status reads **Connected (Test Mode)**).
+- The ArraySubs secondary webhook secret is saved in **WooCommerce → Settings → Payments → ArraySubs Stripe Configs** for the active test mode. It is auto-managed by ArraySubsPro; do not manually paste a new `whsec_` unless repairing a known provisioning failure.
 - A customer `cust1@test.local` exists.
 - The catalog from Stage 03 is available — specifically **Standard Weekly $19.99/wk** and **Pro Plan $19.99/wk**.
 - BACS / COD remain enabled as a manual fallback.
@@ -39,14 +39,14 @@ Confirm that Stripe webhooks land correctly in ArraySubs, that customer-side pay
 
 **Steps:**
 1. As Administrator, open **WooCommerce → Settings → Payments**.
-2. Locate the **ArraySubs Stripe** row.
-3. Click **Manage**.
-4. Read the connection status block.
+2. Locate the official **Stripe** row.
+3. Click **Manage** and confirm WooCommerce Stripe is enabled in test mode.
+4. Open **ArraySubs Stripe Configs** and read the secondary webhook status block.
 
 **Expected Result:**
-- The status block reads **Connected (Test Mode)** with the developer-supplied account name visible.
-- Webhook URL is shown and points at `/wp-json/arraysubs/v1/stripe/webhook`.
-- Webhook secret status reads **Saved**.
+- The gateway health status reads **Connected (Test Mode)** with the developer-supplied account name visible when available.
+- The official WooCommerce Stripe webhook URL is shown for regular payment/refund events.
+- The secondary webhook URL is shown as `/wp-json/arraysubs/v1/webhooks/arraysubs_stripe`, and the secondary webhook secret status reads **Saved**.
 - No "Connect Stripe" CTA button is shown.
 
 **Pass Criteria:** [ ] PASS [ ] FAIL

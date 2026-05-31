@@ -7,7 +7,7 @@
 - ArraySubsPro is active and the Feature Manager module is enabled in **ArraySubs → Settings → Feature Manager**.
 - At least one simple subscription product exists from Stage 03 (e.g., `Pro Plan` $19.99/week).
 - Test accounts `cust1@test.local`, `cust2@test.local`, `shopmgr@test.local` exist and can log in.
-- Stripe test mode is already configured, or a manual fallback (BACS / COD) is enabled, so customers can complete subscription checkouts.
+- Stripe test mode is already configured through WooCommerce Stripe, with the ArraySubsPro secondary webhook auto-provisioned, or a manual fallback (BACS / COD) is enabled, so customers can complete subscription checkouts.
 
 **Run order:**
 1. [01 — Define product features](01-define-product-features.md) — Create a feature set (`Seats`, `Storage`, `API_calls`) on the `Pro Plan` weekly subscription product and confirm features persist across reload.

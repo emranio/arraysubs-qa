@@ -16,7 +16,7 @@ On a **Standard Weekly $19.99/wk** subscription that is exactly halfway through 
 - The **Standard Weekly** subscription product exists priced at **$19.99 / week** (`_subscription_price=19.99`, `_subscription_period=week`, `_subscription_period_interval=1`).
 - A test customer (`cust2@example.com`) has purchased Standard Weekly and the parent order is **Completed** (paid via Stripe with `4242 4242 4242 4242`).
 - The subscription's **Next Payment Date** has been adjusted to be exactly **3.5 days from now** and the **Last Payment Date** to **3.5 days ago** — i.e. exactly halfway through a 7-day weekly cycle. (This can be done with the **Edit Subscription** date pickers in admin, or by directly editing `_next_payment_date` and `_last_payment_date` meta.)
-- **Stripe is already configured** in Test mode (no setup task in this stage). Note the original Stripe transaction ID on the parent order. PayPal and Paddle are out of scope.
+- **Stripe is already configured** in Test mode through WooCommerce Stripe (no setup task in this stage). When Pro is active, the ArraySubsPro secondary webhook is auto-provisioned. Note the original Stripe transaction ID on the parent order. PayPal and Paddle are out of scope.
 - **ArraySubs → Settings → Refunds** = Allow Immediate Refund, Auto Gateway Refund **Enabled**, Allow Prorated Refunds **Enabled**, Min Refund Amount `0`.
 
 ## Test Data

@@ -6,7 +6,7 @@
 - Stages 00–12 complete.
 - Mailbox or mail-capture tool reachable for `admin@test.local`, `cust1@test.local`, `cust2@test.local`, `cust3@test.local` (Mailpit, MailHog, WP Mail Logging plugin, or real inboxes).
 - ArraySubs and ArraySubsPro both active.
-- Stripe is already configured in test mode and is the only automatic gateway under test. Use cards `4000 0000 0000 0341` (failed renewal) and `4000 0027 6000 3184` (SCA) for Task 04. PayPal and Paddle are out of scope this cycle.
+- Stripe is already configured through WooCommerce Stripe in test mode, with the ArraySubsPro secondary webhook auto-provisioned, and is the only automatic gateway under test. Use cards `4000 0000 0000 0341` (failed renewal) and `4000 0027 6000 3184` (SCA) for Task 04. PayPal and Paddle are out of scope this cycle.
 - The canonical `Standard Weekly` ($19.99/week) subscription product exists for any generic-subscription scenario, and `Basic Monthly` ($29.99/month) is kept available for the one trigger that must verify monthly placeholders.
 - Time-travel method available (post-meta edit or `wp action-scheduler run --hooks=arraysubs_*`).
 

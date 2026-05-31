@@ -6,7 +6,7 @@
 - Stages 00–02 complete (plugins active, settings configured, environment verified).
 - Stage 03 catalog and Stage 06 lifecycle data populated — at least one customer with an Active subscription, one with a Cancelled subscription, and at least 30+ existing audit entries so pagination is testable.
 - ArraySubs **Pro** active for every task in this stage. If Pro is deactivated, all entry points under **ArraySubs → Audits [beta]** display the placeholder message — note this and stop.
-- Stripe gateway is **already configured** in **Test mode** (API keys saved, webhook endpoint already registered in the Stripe dashboard) — no setup required for this stage. Stripe CLI installed locally (or access to "Send test webhook" in the Stripe developer dashboard).
+- Stripe gateway is **already configured** in **Test mode** through the official WooCommerce Stripe gateway. ArraySubsPro should show its secondary Stripe webhook as auto-provisioned in Gateway Logs — no manual Stripe Dashboard webhook setup is required for this stage. Stripe CLI installed locally (or access to "Send test webhook" in the Stripe developer dashboard).
 - PayPal and Paddle gateways are **out of scope** for this regression cycle. If their cards render in the Gateway Health Dashboard anyway, verify they show `Not Configured` / `Needs Setup` and skip their sub-tests.
 - Test customer accounts:
   - `member1@example.com` — Active Stripe-paid subscription with saved card `4242 4242 4242 4242`.

@@ -60,7 +60,7 @@ Every stage assumes the following baseline. Re-confirm at the start of each sess
 This pass tests **only Stripe + manual payment**. PayPal and Paddle are **out of scope** for this cycle. Any task that historically referenced them has been rewritten or skipped — the tester does not need PayPal or Paddle sandbox accounts.
 
 - **Manual payment** — WooCommerce **Direct Bank Transfer** (BACS) and **Cash on Delivery** are enabled. These are the fallback "manual" methods used to exercise the core renewal-invoice path that does not depend on a gateway.
-- **Stripe test mode** — already configured by the developer before this regression begins. The QA tester does NOT run any Stripe setup task. They only verify Stripe is connected (under **WooCommerce → Settings → Payments**) and use these test cards:
+- **Stripe test mode** — already configured through WooCommerce Stripe before this regression begins. The QA tester does NOT run any Stripe setup task. They only verify the official WooCommerce Stripe gateway is connected (under **WooCommerce → Settings → Payments**) and that ArraySubsPro shows the auto-provisioned secondary Stripe webhook as configured in **Audits [beta] → Gateway Logs**. The tester uses these cards:
   - `4242 4242 4242 4242` — generic success
   - `4000 0027 6000 3184` — SCA / 3-D Secure challenge
   - `4000 0000 0000 0341` — declines on every renewal (used for failed-renewal grace tests)

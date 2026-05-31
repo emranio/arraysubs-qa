@@ -55,4 +55,4 @@ To make renewals feasible inside a real-time regression run, almost every test p
   - `HALFOFF3` — recurring, 3 cycles, count initial
   - `NOSUB10` — no "Apply to subscriptions" flag
 - Validation message strings recorded verbatim for downstream regression diffing.
-- No PayPal / Paddle gateway references remain anywhere in this stage. Only Stripe + manual payment are exercised — Stripe is already configured by the developer, so the QA tester does not run any Stripe setup task.
+- No PayPal / Paddle gateway references remain anywhere in this stage. Only Stripe + manual payment are exercised — Stripe is already connected through the official WooCommerce Stripe gateway, and ArraySubsPro auto-provisions its secondary Stripe webhook, so the QA tester does not run any Stripe setup task.

@@ -29,7 +29,7 @@
 - ArraySubs **Pro** active for tasks marked *(Pro)*. Stage 17 reused the same test environment — confirm Stage 17 cleanup completed.
 - Mail-catcher available (e.g., MailHog, WP Mail Logger, Mailpit) so the tester can read every transactional email by inbox.
 - Action Scheduler reachable at **WooCommerce → Status → Scheduled Actions** with the ability to manually click **Run** on queued actions.
-- **Stripe is already configured** in Test mode with webhook endpoint registered — no setup required. Only **Stripe + manual** payments are tested; PayPal and Paddle are out of scope.
+- **Stripe is already configured** in Test mode through WooCommerce Stripe, with the ArraySubsPro secondary webhook auto-provisioned — no setup required. Only **Stripe + manual** payments are tested; PayPal and Paddle are out of scope.
 - Stripe test cards in scope:
   - `4242 4242 4242 4242` — success
   - `4000 0027 6000 3184` — SCA / 3-D Secure

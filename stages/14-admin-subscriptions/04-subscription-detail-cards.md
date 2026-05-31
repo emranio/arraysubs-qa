@@ -16,7 +16,7 @@ Open the **View Details** screen for several subscriptions and verify each condi
 - Subscriptions available with these specific states:
   - **Sub A** — has a scheduled (end-of-period) cancellation pending and at least one retention offer in history.
   - **Sub B** — has a recurring WooCommerce coupon applied (e.g. `SAVE20`).
-  - **Sub C** — paid via the Stripe automatic gateway with a card on file (Pro). Stripe is already configured in test mode — no setup required.
+  - **Sub C** — paid via the Stripe automatic gateway with a card on file (Pro). Stripe is already configured through WooCommerce Stripe in test mode, with the ArraySubsPro secondary webhook auto-provisioned — no setup required.
   - **Sub D** — went through a Checkout Builder custom field (e.g. "Company Size") (Pro).
   - **Sub E** — product requires shipping with a Recurring shipping type (Pro).
 - ArraySubs Pro is active.

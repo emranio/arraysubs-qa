@@ -16,7 +16,7 @@ With **Auto-Apply to Renewals** enabled and the customer carrying $100 of credit
 - `cust3@test.local` balance entering this task is `$185.01` (carried from 12.05).
 - Bring `cust3`'s balance down to a known `$100.00` test value: as admin, **Manage Credits** → search `cust3` → **Deduct** `$85.01` with note `Stage 12 reset for auto-renewal test`.
 - The canonical `Standard Weekly` subscription product ($19.99 / week) exists.
-- `cust3` has an active `Standard Weekly` subscription. If not, run a fresh checkout (Stripe test mode is already configured, or use BACS / COD) and activate the subscription before time-travel.
+- `cust3` has an active `Standard Weekly` subscription. If not, run a fresh checkout (Stripe test mode is already configured through WooCommerce Stripe, with the ArraySubsPro secondary webhook auto-provisioned, or use BACS / COD) and activate the subscription before time-travel.
 - Time-travel method ready: edit `_next_payment_date` post meta or run `wp action-scheduler run --hooks=arraysubs_*`.
 
 ## Test Data

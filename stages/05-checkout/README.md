@@ -8,7 +8,7 @@
 - Stage 02 (Settings) passed — General Settings cart rules, grace periods, and email reminder schedule confirmed.
 - Stage 03 (Products) passed — the reusable products listed below exist and are published.
 - Stage 04 (Cart Rules) passed — mixed-cart, multiple-subscriptions, one-trial-per-customer rules verified.
-- **Stripe is already configured** by the developer (test-mode keys + webhook secret saved). No Stripe setup is performed in this stage; only verification of the existing connection. PayPal and Paddle are out of scope for this regression cycle.
+- **Stripe is already configured** through the official WooCommerce Stripe gateway. ArraySubsPro automatically creates or repairs its secondary Stripe webhook from that connection, so no Stripe Dashboard webhook setup is performed in this stage; only verification of the existing connection. PayPal and Paddle are out of scope for this regression cycle.
 
 **Reusable products (created in Stage 03):**
 - `Standard Weekly` — simple subscription, $19.99 / week, no trial, no signup fee. (Canonical "the simple weekly subscription".)
@@ -20,7 +20,7 @@
 - `Standard Tee` — regular (non-subscription) product, $15.00, used for mixed-cart tests.
 
 **Gateway scope:**
-- **Stripe** — already configured (test mode). Verify connection only.
+- **Stripe** — already configured (test mode) through WooCommerce Stripe; ArraySubsPro secondary webhook auto-provisioning should show configured. Verify connection only.
 - **Manual** — Direct bank transfer (BACS) and Cash on delivery enabled.
 - **PayPal / Paddle** — out of scope. No setup, no flows.
 

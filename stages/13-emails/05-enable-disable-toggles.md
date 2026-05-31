@@ -16,7 +16,7 @@ Disable each customer email type one at a time, trigger the related lifecycle ev
 - All ArraySubs / ArraySubsPro emails are currently **Enabled** in **WC → Settings → Emails**.
 - Mailbox capture for `cust1@test.local`, `cust2@test.local`, and `cust3@test.local`.
 - Customers across `cust1` / `cust2` have access to: an active `Trial Weekly` subscription, an active `Standard Weekly` subscription, and a `Fixed-Length Weekly (6 cycles)` subscription.
-- Stripe is already configured in test mode (used as the automatic gateway for these scenarios).
+- Stripe is already configured through WooCommerce Stripe in test mode, with the ArraySubsPro secondary webhook auto-provisioned (used as the automatic gateway for these scenarios).
 - Time-travel method available.
 
 ## Test Data

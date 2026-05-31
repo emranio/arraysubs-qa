@@ -15,7 +15,7 @@ Trigger and verify each of the customer lifecycle emails — at minimum: **New S
 - Stage 03 products available: `Standard Weekly` ($19.99/week — generic subscription used across most triggers), `Basic Monthly` ($29.99/month — used in Sub-Task 1.4 to verify monthly placeholders), `Trial Weekly` (7-day trial, $19.99/week), a fixed-length weekly product (`Fixed-Length Weekly (6 cycles)` $24.99/week), and a product with an `Auto-Downgrade Target` configured (Stage 03 / 08).
 - Stage 08 Retention flow tested (cancellation modal with discount offer).
 - `cust1@test.local` and `cust2@test.local` available.
-- Stripe is already configured in test mode — card `4000 0000 0000 0341` for failed-payment scenarios.
+- Stripe is already configured through WooCommerce Stripe in test mode, with the ArraySubsPro secondary webhook auto-provisioned — card `4000 0000 0000 0341` for failed-payment scenarios.
 - Time-travel method available.
 - WC From name + From address noted from **WC → Settings → Emails → Email sender options**.
 

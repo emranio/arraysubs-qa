@@ -15,7 +15,7 @@ With **Allow at Checkout** enabled, place an order containing the canonical `Sta
 - 12.01–12.04 complete; `cust3@test.local` balance entering this task is `$205.00`.
 - The canonical `Standard Weekly` ($19.99/week) subscription product exists from Stage 03.
 - A small `Tiny Daily` product priced at $2.99 exists (or reuse the daily-billed `Coffee Plan` $2.99 variation) for the minimum-order-block check.
-- Stripe test mode is already configured. BACS / Cash on Delivery available as a manual fallback.
+- Stripe test mode is already configured through WooCommerce Stripe, with the ArraySubsPro secondary webhook auto-provisioned. BACS / Cash on Delivery available as a manual fallback.
 - **Allow at Checkout** = On, **Minimum Order Amount** = `5.00` (from 12.01).
 
 ## Test Data

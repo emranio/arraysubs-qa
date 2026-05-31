@@ -15,7 +15,7 @@ With **Allow mixed cart** enabled in General Settings, confirm that a cart conta
 - ArraySubs → Settings → General Settings:
   - **Allow mixed cart**: Enabled.
   - **Allow multiple subscriptions in cart**: Enabled (default).
-- Stripe is already configured by the developer in test mode (or use a manual gateway such as BACS / COD).
+- Stripe is already configured through WooCommerce Stripe in test mode, with the ArraySubsPro secondary webhook auto-provisioned when Pro is active (or use a manual gateway such as BACS / COD).
 - Block Checkout page is the active checkout page.
 - Customer `customer-mixed@example.test` exists.
 - Product `Basic Monthly` is published.

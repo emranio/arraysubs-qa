@@ -16,7 +16,7 @@ Open **ArraySubs → Subscriptions → Add New** and create a **Standard Weekly*
 - A variable weekly subscription product exists with at least two variations (e.g., `PM Tool` from Stage 03 — Variable Weekly $9.99 / Bi-weekly $14.99), each with a different recurring amount.
 - A simple weekly subscription product (e.g., `Standard Weekly` $19.99/week) also exists for cross-check.
 - A test customer account exists (e.g. `customer1@arraysubs.test`).
-- Stripe is already configured in test mode (no setup required).
+- Stripe is already configured through WooCommerce Stripe in test mode, with the ArraySubsPro secondary webhook auto-provisioned when Pro is active (no setup required).
 - DevTools Network tab open to capture the POST request on save.
 
 ## Test Data

@@ -13,7 +13,7 @@ Verify the two Pro renewal-related customer emails — **Card Expiring Notice** 
 
 ## Pre-conditions
 - 13.01 complete.
-- Stripe is already configured in test mode (publishable + secret keys present). No setup required by this task.
+- Stripe is already configured through WooCommerce Stripe in test mode (publishable + secret keys present), with the ArraySubsPro secondary webhook auto-provisioned. No setup required by this task.
 - The canonical `Standard Weekly` ($19.99/week) subscription product and a test customer (`cust1@test.local`) ready.
 - Mailbox capture for `cust1@test.local`.
 - Time-travel method available.

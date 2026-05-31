@@ -16,7 +16,7 @@ Open **ArraySubs → Subscriptions** and verify the All Subscriptions screen ren
 - At least one subscription exists in each of: Active, Trial, Pending, On Hold, Cancelled, Expired.
 - The list contains a mix of weekly subscriptions (most rows — `Standard Weekly`, `Trial Weekly`, `Pro Plan`, `Enterprise Plan`, etc.) **and** at least one `Basic Monthly` ($29.99/month) subscription so the screen surfaces both billing intervals.
 - Pagination data: at least 21 subscriptions in total (so two pages exist).
-- Stripe is already configured in test mode (subscriptions backed by Stripe will appear alongside any manual-gateway rows).
+- Stripe is already configured through WooCommerce Stripe in test mode, with the ArraySubsPro secondary webhook auto-provisioned when Pro is active (subscriptions backed by Stripe will appear alongside any manual-gateway rows).
 
 ## Test Data
 - Customer search term: the email address of one subscriber created in stage 06 (e.g. `customer1@arraysubs.test`).

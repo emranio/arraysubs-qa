@@ -16,12 +16,12 @@ With the Stripe gateway in test mode, confirm:
 
 ## Pre-conditions
 - ArraySubsPro plugin is active.
-- **WooCommerce → Settings → Payments → ArraySubs Stripe** has:
+- **WooCommerce → Settings → Payments → Stripe** has:
   - **Enable/Disable**: Enabled.
   - **Test Mode**: Enabled.
   - Test publishable key and test secret key entered.
-  - Webhook secret entered (the test mode webhook secret from Stripe Dashboard).
-  - Webhook endpoint configured in the Stripe Dashboard at `https://<this-site>/wp-json/arraysubs/v1/webhooks/arraysubs_stripe` with at least these events: `checkout.session.completed`, `payment_intent.succeeded`, `setup_intent.succeeded`, `payment_intent.requires_action`.
+  - Official WooCommerce Stripe webhook configured/saved.
+- **WooCommerce → Settings → Payments → ArraySubs Stripe Configs** shows the ArraySubs secondary webhook secret as saved for the active test mode. This value is auto-managed by ArraySubsPro through the official WooCommerce Stripe API; do not create the ArraySubs webhook manually in Stripe Dashboard.
 - Stripe Dashboard test mode is open in another tab to inspect Customer / PaymentIntent / SetupIntent records.
 - Customer `customer-stripe@example.test` exists (separate test user with no prior trials).
 - Customer `customer-stripe-sca@example.test` exists.
@@ -38,12 +38,13 @@ With the Stripe gateway in test mode, confirm:
 **Steps:**
 1. As Administrator, open **ArraySubs → Automatic Payments → Gateway Health Dashboard** (or equivalent).
 2. Confirm Stripe shows **Connected** with **Test mode** indicator and the webhook endpoint shows recent successful events (or "Awaiting first event").
-3. Cross-check the webhook URL in Stripe Dashboard → Developers → Webhooks matches the URL displayed on the Gateway Health Dashboard.
+3. Expand the Stripe card and confirm both **Official Woo Stripe webhook** and **ArraySubs secondary webhook** show configured/saved status.
 
 **Expected Result:**
 - Stripe is Active and in Test mode.
-- Webhook endpoint URL matches.
-- No "Webhook secret missing" or "Connection error" warnings.
+- Official Woo Stripe webhook is configured.
+- ArraySubs secondary webhook is configured automatically for test mode.
+- No "Webhook secret missing", secondary webhook error, or "Connection error" warnings.
 
 **Pass Criteria:** [ ] PASS [ ] FAIL
 **Fail Notes:**

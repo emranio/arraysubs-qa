@@ -6,17 +6,17 @@
 | Module | Audits → Gateway Logs (Gateway Health Dashboard) |
 | Plugin Coverage | Pro |
 | Estimated Time | 25 min |
-| Depends On | Stripe is **already configured** (Test mode, webhook endpoint registered) — no setup task in this stage |
+| Depends On | Stripe is **already configured** through WooCommerce Stripe (Test mode) and ArraySubsPro secondary webhook auto-provisioning — no setup task in this stage |
 
 ## Objective
-Verify the **ArraySubs → Audits [beta] → Gateway Logs** screen renders the **Stripe** status card with the correct **Status**, **Subscriptions**, and **Last Webhook** fields, exposes the webhook URL and capability tags in the expanded detail, and that the Webhook Event Log table below the card lists incoming Stripe webhook events with pagination working at 50 per page. Trigger a real Stripe test webhook and confirm the event appears in the log. Verify webhook event-type filters cover the five event types in scope.
+Verify the **ArraySubs → Audits [beta] → Gateway Logs** screen renders the **Stripe** status card with the correct **Status**, **Subscriptions**, and **Last Webhook** fields, exposes the official WooCommerce Stripe webhook URL, the auto-provisioned ArraySubs secondary webhook URL/status, and capability tags in the expanded detail, and that the Webhook Event Log table below the card lists incoming Stripe webhook events with pagination working at 50 per page. Trigger a real Stripe test webhook and confirm the event appears in the log. Verify webhook event-type filters cover the five event types in scope.
 
 > **Note:** PayPal and Paddle gateway cards are **out of scope** for this regression cycle. If those cards render anyway, verify they show `Not Configured` / `Needs Setup` and skip their sub-tests.
 
 ## Pre-conditions
 - Logged in as administrator at `/wp-admin/`.
 - ArraySubs Pro active with Automatic Payments feature enabled.
-- Stripe is **already configured** in Test mode (API keys saved; webhook URL registered in the Stripe dashboard) — confirm presence; do not re-configure.
+- Stripe is **already configured** in Test mode through WooCommerce Stripe. The ArraySubs secondary webhook should be auto-created or repaired by ArraySubsPro — confirm presence; do not re-configure in Stripe Dashboard.
 - Stripe CLI installed locally (e.g., `stripe trigger payment_intent.succeeded`) OR access to "Send test webhook" inside the Stripe developer dashboard.
 - At least one Active subscription paid by Stripe (e.g., **Standard Weekly $19.99/wk** with saved card `4242 4242 4242 4242`) so the Stripe card shows a non-zero Subscriptions count.
 
@@ -42,6 +42,7 @@ Verify the **ArraySubs → Audits [beta] → Gateway Logs** screen renders the *
 - Stripe card present, with status icon = green checkmark and status label = `Connected (Test Mode)`.
 - Yellow **Test** badge appears on the Stripe card.
 - Stripe is **already configured** — no setup banner / "Connect Stripe" CTA on this card.
+- The expanded Stripe details show the secondary webhook as configured, with no secondary webhook error.
 - PayPal / Paddle (if rendered) clearly indicate not-configured state and are out of scope.
 
 **Pass Criteria:** [ ] PASS [ ] FAIL
@@ -63,18 +64,21 @@ Verify the **ArraySubs → Audits [beta] → Gateway Logs** screen renders the *
 **Pass Criteria:** [ ] PASS [ ] FAIL
 **Fail Notes:**
 
-### Sub-Task 04.3 — Expand the Stripe card and verify capabilities and webhook URL
+### Sub-Task 04.3 — Expand the Stripe card and verify capabilities and webhook URLs
 **Steps:**
 1. Click the expand toggle on the **Stripe** card.
 2. Inspect the expanded section.
-3. Copy the **Webhook URL** displayed in a monospace code block.
-4. Note the **Capabilities** tags: should include at least `subscription`, plus some of `trial`, `pause`, `refunds`, `card auto update`.
-5. Click the **WooCommerce Settings** button.
-6. Confirm it opens the Stripe gateway configuration page in WooCommerce.
-7. Return to Gateway Logs.
+3. Copy the primary **Webhook URL** displayed in a monospace code block; for Stripe this should be the official WooCommerce Stripe webhook URL.
+4. In the Stripe-specific health section, confirm **Official Woo Stripe webhook** is configured.
+5. Confirm **ArraySubs secondary webhook** is configured and its URL is `https://<this-site>/wp-json/arraysubs/v1/webhooks/arraysubs_stripe`.
+6. Note the **Capabilities** tags: should include at least `subscription`, plus some of `trial`, `pause`, `refunds`, `card auto update`.
+7. Click the **WooCommerce Settings** button.
+8. Confirm it opens the Stripe gateway configuration page in WooCommerce.
+9. Return to Gateway Logs.
 
 **Expected Result:**
-- Webhook URL is a complete absolute URL (e.g. `/wc-api/...` or a REST-API path). Format is monospace and selectable.
+- Official WooCommerce Stripe webhook URL is a complete absolute URL (usually `?wc-api=wc_stripe` or the URL stored by WooCommerce Stripe). Format is monospace and selectable.
+- ArraySubs secondary webhook URL is present, configured automatically, and points at `/wp-json/arraysubs/v1/webhooks/arraysubs_stripe`.
 - Capabilities tags appear as small pills.
 - WooCommerce Settings button navigates to the correct Stripe gateway settings page.
 
@@ -155,7 +159,7 @@ Verify the **ArraySubs → Audits [beta] → Gateway Logs** screen renders the *
 ## Regression / Cross-checks
 - After triggering the Stripe webhook, confirm Activity Audits (Task 17.01) shows a new audit row with **Author = Gateway** (Stripe) for the same event.
 - Confirm the recorded subscription count on the Stripe card matches a manual filter of subscriptions in **ArraySubs → Subscriptions**.
-- Confirm the Webhook URL on the Stripe card matches the URL configured in the Stripe dashboard webhook endpoint.
+- Confirm the official WooCommerce Stripe webhook URL shown on the Stripe card matches WooCommerce Stripe's active webhook configuration, and the ArraySubs secondary URL/status is auto-provisioned with no last-error value.
 - **Out of scope:** PayPal and Paddle gateway cards. If they render, verify they show `Not Configured` / `Needs Setup` and skip their sub-tests — do NOT spend time configuring them.
 
 ## Sign-off
