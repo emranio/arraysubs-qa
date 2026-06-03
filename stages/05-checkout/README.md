@@ -1,6 +1,6 @@
 # Stage 05 — Checkout Flow
 
-**Goal:** Walk every supported subscription checkout path end-to-end in a real browser. Stage 05 verifies that the cart, classic checkout, block checkout, trial handling, signup fees, account auto-creation, one-click checkout, coupons, plan switching, Stripe gateway flow, Checkout Builder customization, and mixed carts all render the correct subscription summary, charge the correct amount today, and create the correct subscription record once payment completes. Every task ends with a paid order that Stage 06 will inspect.
+**Goal:** Walk every supported subscription checkout path end-to-end in a real browser. Stage 05 verifies that the cart, classic checkout, block checkout, trial handling, signup fees, account auto-creation, one-click checkout, coupons, plan switching, Stripe gateway flow, renewal sync, Checkout Builder customization, and mixed carts all render the correct subscription summary, charge the correct amount today, and create the correct subscription record once payment completes. Every task ends with a paid order that Stage 06 will inspect.
 
 **Prerequisites:**
 - Stage 00 (Pre-flight & Environment Verification) passed.
@@ -22,7 +22,7 @@
 **Gateway scope:**
 - **Stripe** — already configured (test mode) through WooCommerce Stripe; ArraySubsPro secondary webhook auto-provisioning should show configured. Verify connection only.
 - **Manual** — Direct bank transfer (BACS) and Cash on delivery enabled.
-- **PayPal / Paddle** — out of scope. No setup, no flows.
+- **PayPal / Paddle** — out of scope for payment flows. No setup is performed, but Task 15 observes that unsupported automatic gateways are hidden if they are already active.
 
 **Run order:**
 1. [01 — Classic checkout: basic subscription](01-classic-checkout-basic-subscription.md) — Logged-in customer buys `Standard Weekly` via Classic Checkout. Verifies the subscription summary block, "every 1 week" recurring text, today's charge total, and next charge date.
@@ -39,6 +39,7 @@
 12. [12 — Stripe webhook & payment-method lifecycle](12-paypal-and-paddle-flows.md) — *(Pro)* Webhook event verification, card-expiring-soon flow, payment-method update through the customer portal.
 13. [13 — Checkout Builder customization](13-checkout-builder-customization-pro.md) — *(Pro)* Custom Text/Heading/Image Select fields on a `Standard Weekly` purchase.
 14. [14 — Mixed cart and Block Checkout](14-mixed-cart-and-block-checkout.md) — Mixed cart of `Standard Weekly` + `Standard Tee` through Block Checkout.
+15. [15 — Renewal Sync checkout](15-renewal-sync-checkout.md) — Verify prorated and full first-charge modes on `Basic Monthly`, synced first full renewal date, manual gateway support, Stripe support, and unsupported gateway filtering.
 
 **Exit criteria:**
 - Every task ends with a paid order (or a successfully created Trial subscription) and a subscription record visible in **ArraySubs → Subscriptions**.
@@ -48,4 +49,5 @@
 - Stripe test mode renders SetupIntent (trial) or PaymentIntent (paid), completes 3DS challenge for the SCA card, and reflects decline cleanly for the decline card.
 - Stripe webhook events (`payment_intent.succeeded`, `payment_intent.payment_failed`, etc.) are received and listed in the Pro Gateway Health Dashboard.
 - Checkout Builder fields are stored as `_arraysubs_cf_*` order meta and copied to the subscription when **Copy to subscription** is enabled.
+- Renewal Sync stores the full recurring amount on the subscription, stores the prorated/full first charge metadata, and sets the first full renewal date to the documented billing-cycle boundary.
 - All test order IDs and subscription IDs are recorded in the Sign-off blocks for use in Stage 06.

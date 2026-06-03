@@ -971,3 +971,10 @@
 {"timestamp":"2026-05-29T07:23:28.297200822+02:00","action":"move","task_id":169,"detail":"open -\u003e in-progress"}
 {"timestamp":"2026-05-29T07:34:27.025833027+02:00","action":"edit","task_id":169,"detail":"Auto-fill customer info on Add New Subscription form"}
 {"timestamp":"2026-05-29T07:34:27.354288321+02:00","action":"move","task_id":169,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-06-03T12:50:06.557583062+02:00","action":"create","task_id":170,"detail":"stage-05: Renewal Sync checkout total remains full price"}
+{"timestamp":"2026-06-03T13:02:54.522849112+02:00","action":"move","task_id":170,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-06-03T13:03:14.249550426+02:00","action":"move","task_id":170,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-06-03T13:34:36.831019309+02:00","action":"create","task_id":171,"detail":"stage-18: Subscription detail skip state emits undefined-key warnings"}
+{"timestamp":"2026-06-03T16:55:20.42604088+02:00","action":"move","task_id":171,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-06-03T17:01:26.461059331+02:00","action":"edit","task_id":171,"detail":"stage-18: Subscription detail skip state emits undefined-key warnings"}
+{"timestamp":"2026-06-03T17:01:26.595915511+02:00","action":"move","task_id":171,"detail":"in-progress -\u003e closed"}

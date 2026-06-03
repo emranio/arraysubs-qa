@@ -880,3 +880,24 @@
 {"timestamp":"2026-05-25T00:07:33.446957411+02:00","action":"edit","task_id":176,"detail":"stage-20: 04 Concurrent Actions (Race Conditions)"}
 {"timestamp":"2026-05-25T00:28:28.60792005+02:00","action":"edit","task_id":178,"detail":"stage-20: 06 Final Regression Smoke Pass"}
 {"timestamp":"2026-05-25T11:51:05.260375797+02:00","action":"edit","task_id":151,"detail":"stage-17: 04 Gateway Health Dashboard (Stripe only)"}
+{"timestamp":"2026-06-03T12:17:10.439076147+02:00","action":"create","task_id":179,"detail":"stage-01: Renewal Sync setup wizard apply check"}
+{"timestamp":"2026-06-03T12:18:27.872346055+02:00","action":"create","task_id":180,"detail":"stage-02: Renewal Sync general settings persistence"}
+{"timestamp":"2026-06-03T12:18:45.825632773+02:00","action":"create","task_id":181,"detail":"stage-02: Renewal Sync import export round trip"}
+{"timestamp":"2026-06-03T12:19:03.943354019+02:00","action":"create","task_id":182,"detail":"stage-05: Renewal Sync checkout"}
+{"timestamp":"2026-06-03T12:19:21.778592846+02:00","action":"create","task_id":183,"detail":"stage-18: Renewal Sync first full renewal"}
+{"timestamp":"2026-06-03T12:28:40.286805742+02:00","action":"move","task_id":179,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-06-03T12:28:59.687385396+02:00","action":"move","task_id":180,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-06-03T12:28:59.713770571+02:00","action":"move","task_id":179,"detail":"closed -\u003e open"}
+{"timestamp":"2026-06-03T12:29:48.532951872+02:00","action":"move","task_id":180,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-06-03T12:30:19.045517629+02:00","action":"move","task_id":180,"detail":"closed -\u003e in-progress"}
+{"timestamp":"2026-06-03T12:31:39.177817537+02:00","action":"move","task_id":180,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-06-03T12:32:06.194696385+02:00","action":"move","task_id":179,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-06-03T12:39:35.523320717+02:00","action":"move","task_id":179,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-06-03T12:39:55.873731074+02:00","action":"move","task_id":181,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-06-03T12:44:26.497772847+02:00","action":"move","task_id":181,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-06-03T12:44:44.638957907+02:00","action":"move","task_id":182,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-06-03T13:18:10.846785926+02:00","action":"move","task_id":183,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-06-03T13:29:58.947857735+02:00","action":"move","task_id":182,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-06-03T13:29:59.025525602+02:00","action":"move","task_id":183,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-06-03T15:36:06.793426695+02:00","action":"edit","task_id":182,"detail":"stage-05: Renewal Sync checkout"}
+{"timestamp":"2026-06-03T17:01:26.46840816+02:00","action":"edit","task_id":183,"detail":"stage-18: Renewal Sync first full renewal"}

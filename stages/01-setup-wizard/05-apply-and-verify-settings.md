@@ -21,7 +21,7 @@ Run a complete SaaS / Digital Software profile through the wizard, click **Apply
 - Profile to use: **SaaS / Digital Software**.
 - Concrete answers to set (so they are easy to verify after Apply):
   - Step 1: SaaS, **Weekly** (the predominant cycle in the test catalog), Multiple plans / tiers, trials Yes, payment required Yes, one trial per customer Yes.
-  - Step 2: Strict (1 / 3) grace; tick **Allow pausing the subscription**, max pause **30 days**, max pauses **2**.
+  - Step 2: Strict (1 / 3) grace; renewal sync **Yes**, first charge **Prorate until the synced renewal date**; tick **Allow pausing the subscription**, max pause **30 days**, max pauses **2**.
   - Step 3: **Only one subscription per customer**, auto-migrate **Yes**.
   - Step 4: Plan switching **Allow all switching directions**, proration **Prorate immediately**.
   - Step 5: Cancel **Immediately**, retention offers **Yes**, **Discount offer** ticked at **20%** for **3 cycles**.
@@ -87,6 +87,8 @@ Run a complete SaaS / Digital Software profile through the wizard, click **Apply
 - **Checkout & Trials → One Trial Per Customer** = On.
 - **Grace Period → Days Active After Due** = 1.
 - **Grace Period → Days On-Hold Before Cancel** = 3.
+- **Renewal Sync → Sync Renewals to Next Billing Cycle** = On.
+- **Renewal Sync → First Charge** = Prorate until the synced renewal date.
 - **Email Reminder Schedule → Renewal Reminder (Days Before)** = 3.
 - **Customer Actions → Allow Suspension (Pause)** = On (because pause was enabled in Step 2).
 - **Cancellation Settings → Cancel Immediately** = On.

@@ -46,6 +46,7 @@ Export the current ArraySubs configuration to JSON, modify a handful of settings
 - The file has top-level keys `meta` and `options`.
 - `meta` includes `plugin_version`, `pro_version`, `module_version`, `export_date`, `site_url`, `php_version`, `wp_version`, `wc_version`.
 - `options` includes at least `arraysubs_settings`, `arraysubs_profile_fields_config`, `arraysubs_avatar_settings`, `arraysubs_myaccount_menu_config`, and `wc_email_settings`.
+- `options.arraysubs_settings.renewals` includes `sync_to_billing_cycle` and `sync_first_charge_mode`.
 
 **Pass Criteria:** [ ] PASS [ ] FAIL
 **Fail Notes:**
@@ -53,10 +54,11 @@ Export the current ArraySubs configuration to JSON, modify a handful of settings
 ### Sub-Task 3.2 — Confirm payment gateway keys are stripped
 **Steps:**
 1. In the JSON, search for `stripe_secret_key`, `stripe_publishable_key`, and any other gateway secret keys.
-2. If any of those keys are present, confirm their values are empty strings or null (not real credentials).
+2. Search for `secondary_webhook_secret`, `client_secret`, `api_key`, `client_token`, and `webhook_secret`.
+3. If any of those keys are present, confirm their values are empty strings or null (not real credentials).
 
 **Expected Result:**
-- No real Stripe API credentials appear in the file.
+- No real Stripe, PayPal, or Paddle API credentials or webhook secrets appear in the file.
 - Per the manual, those keys are deliberately stripped on export.
 
 **Pass Criteria:** [ ] PASS [ ] FAIL
@@ -68,11 +70,12 @@ Export the current ArraySubs configuration to JSON, modify a handful of settings
 2. Set **Days Active After Due** to `10` (was 3 or whatever your baseline is).
 3. Set **Allow Reactivation** to **Off** (was On).
 4. Set **Renewal Reminder (Days Before)** to `15`.
-5. Click **Save Settings**.
-6. Go to **ArraySubs → Settings → Toolkit** and toggle **Hide admin bar for non-admin users** to the opposite value, save.
+5. Toggle **Sync Renewals to Next Billing Cycle** to the opposite of the exported baseline and change **First Charge** to the opposite mode if the selector is visible.
+6. Click **Save Settings**.
+7. Go to **ArraySubs → Settings → Toolkit** and toggle **Hide admin bar for non-admin users** to the opposite value, save.
 
 **Expected Result:**
-- All four changes save successfully and persist after reload.
+- All changed values save successfully and persist after reload.
 - The current state on the page is now visibly different from the exported baseline.
 
 **Pass Criteria:** [ ] PASS [ ] FAIL
@@ -101,11 +104,12 @@ Export the current ArraySubs configuration to JSON, modify a handful of settings
 ### Sub-Task 3.5 — Verify subscription settings reverted, but other sections intact
 **Steps:**
 1. Go to **ArraySubs → Settings → General**.
-2. Read the values for **Days Active After Due**, **Allow Reactivation**, **Renewal Reminder (Days Before)**.
+2. Read the values for **Days Active After Due**, **Allow Reactivation**, **Renewal Reminder (Days Before)**, **Sync Renewals to Next Billing Cycle**, and **First Charge**.
 3. Go to **ArraySubs → Settings → Toolkit** and read **Hide admin bar for non-admin users**.
 
 **Expected Result:**
 - General Settings values match the baseline (3, On, 3 — or whatever values the baseline file held).
+- Renewal Sync values match the baseline export, including both `renewals.sync_to_billing_cycle` and `renewals.sync_first_charge_mode`.
 - Toolkit value is **also** the baseline because Toolkit settings live inside `arraysubs_settings`. (If the baseline had Toolkit changes, those revert too. Note in Fail Notes if behavior diverges.)
 
 **Pass Criteria:** [ ] PASS [ ] FAIL

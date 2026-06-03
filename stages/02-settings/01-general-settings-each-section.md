@@ -9,7 +9,7 @@
 | Depends On | 01-setup-wizard/05-apply-and-verify-settings.md |
 
 ## Objective
-Exercise every section of **ArraySubs → Settings → General**: Multiple Subscriptions, Button Text, Checkout & Trials, Grace Period, Email Reminder Schedule, Customer Actions, Cancellation Settings, and Automatic Payments (Pro). Toggle each control, click **Save Settings**, refresh the page, and confirm the value persisted. The values set here become the baseline for later stages, so leave the page in a deterministic state at the end.
+Exercise every section of **ArraySubs → Settings → General**: Multiple Subscriptions, Button Text, Checkout & Trials, Grace Period, Renewal Sync, Email Reminder Schedule, Customer Actions, Cancellation Settings, and Automatic Payments (Pro). Toggle each control, click **Save Settings**, refresh the page, and confirm the value persisted. The values set here become the baseline for later stages, so leave the page in a deterministic state at the end.
 
 ## Pre-conditions
 - Stages 00, 01 complete.
@@ -94,6 +94,26 @@ Exercise every section of **ArraySubs → Settings → General**: Multiple Subsc
 **Pass Criteria:** [ ] PASS [ ] FAIL
 **Fail Notes:**
 
+### Sub-Task 1.4a — Renewal Sync section
+**Steps:**
+1. In the **Renewal Sync** section, confirm the explanatory text states that synced renewals align the first full renewal to the next billing-cycle boundary.
+2. Toggle **Sync Renewals to Next Billing Cycle** to **On**.
+3. Confirm **First Charge Mode** appears. Set it to **Prorate until the synced renewal date**.
+4. Click **Save Settings** and confirm the save button enters a visible loading/disabled state while the request is pending.
+5. Hard-refresh the page and confirm the toggle is still **On** and first charge mode is still **Prorate until the synced renewal date**.
+6. Change **First Charge Mode** to **Charge the full recurring amount**, save, and hard-refresh again.
+7. Toggle **Sync Renewals to Next Billing Cycle** to **Off**, save, and hard-refresh again.
+
+**Expected Result:**
+- The first-charge selector is visible only while **Sync Renewals to Next Billing Cycle** is on.
+- Both first-charge modes persist after saving and refreshing.
+- The warning/information text says the feature applies to manual payment gateways and Stripe, and does not apply to trials or lifetime subscriptions.
+- The **Save Settings** button shows loading feedback and prevents duplicate clicks while saving.
+- Leave the setting **Off** at the end of this task unless Stage 05 Task 15 is being run immediately afterwards.
+
+**Pass Criteria:** [ ] PASS [ ] FAIL
+**Fail Notes:**
+
 ### Sub-Task 1.5 — Email Reminder Schedule section
 **Steps:**
 1. Set **Renewal Reminder (Days Before)** to `5`.
@@ -168,7 +188,7 @@ Exercise every section of **ArraySubs → Settings → General**: Multiple Subsc
 
 ## Regression / Cross-checks
 - Open DevTools Network tab while clicking **Save Settings**; confirm the request returns HTTP 200 with a success body.
-- Watch DevTools Console for JS errors when toggling conditional sub-fields (Auto Migrate, Disable Cart Page, Non-Subscription Purchase Button Text).
+- Watch DevTools Console for JS errors when toggling conditional sub-fields (Auto Migrate, Disable Cart Page, Non-Subscription Purchase Button Text, First Charge Mode).
 - Tail `wp-content/debug.log` while saving — no PHP notice should reference `arraysubs/admin/settings`.
 
 ## Sign-off

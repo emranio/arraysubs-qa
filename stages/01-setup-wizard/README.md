@@ -1,6 +1,6 @@
 # Stage 01 — Easy Setup Wizard
 
-**Goal:** Exercise the 9-step Easy Setup Wizard end to end. Confirm it launches from **ArraySubs → Easy Setup**, that navigation (Next / Back / Skip with defaults / close confirmation) behaves as documented, that each of the 7 business-type profiles preloads its documented defaults, that conditional questions only show when their parent answer is set, that Pro-only options are hidden when ArraySubsPro is inactive, and that a completed run actually writes the chosen answers into General Settings and Toolkit Settings.
+**Goal:** Exercise the 9-step Easy Setup Wizard end to end. Confirm it launches from **ArraySubs → Easy Setup**, that navigation (Next / Back / Skip with defaults / close confirmation) behaves as documented, that each of the 7 business-type profiles preloads its documented defaults, that conditional questions only show when their parent answer is set, that Pro-only options are hidden when ArraySubsPro is inactive, and that a completed run actually writes the chosen answers into General Settings and Toolkit Settings, including Renewal Sync.
 
 **Prerequisites:** Stage 00 complete. ArraySubs and ArraySubsPro both active. No prior wizard run since fresh install (or accept that a re-run is overwriting prior wizard answers).
 
@@ -16,4 +16,4 @@
 - Each of the 7 business types loads the documented default profile.
 - All conditional questions hide and show correctly when parent answers change.
 - Pro-only options are hidden with the documented note when Pro is inactive and visible when Pro is active.
-- A completed SaaS run writes recognisable values into General Settings and Toolkit Settings; re-running the wizard with identical answers does not corrupt the configuration.
+- A completed SaaS run writes recognisable values into General Settings and Toolkit Settings, including Renewal Sync; re-running the wizard with identical answers does not corrupt the configuration.

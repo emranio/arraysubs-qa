@@ -9,7 +9,7 @@
 | Depends On | 01-setup-wizard/01-launch-and-navigation.md |
 
 ## Objective
-Confirm conditional questions in the wizard show and hide correctly based on parent answers. Specifically: trial-payment and trial-limit questions hide when "Do you offer free trials = No"; max-skips and skip-day-window questions only appear when skip is enabled; max-pause-duration only when pause is enabled; switching-direction only when multiple plans are selected; and conditional questions on later steps re-evaluate when an earlier answer is changed.
+Confirm conditional questions in the wizard show and hide correctly based on parent answers. Specifically: trial-payment and trial-limit questions hide when "Do you offer free trials = No"; max-skips and skip-day-window questions only appear when skip is enabled; max-pause-duration only when pause is enabled; renewal-sync first-charge mode appears only when Renewal Sync is enabled; switching-direction only when multiple plans are selected; and conditional questions on later steps re-evaluate when an earlier answer is changed.
 
 ## Pre-conditions
 - Stage 01 Tasks 01 and 02 passed.
@@ -22,6 +22,7 @@ Confirm conditional questions in the wizard show and hide correctly based on par
 - Step 1 plan-count question: **How many subscription plans do you offer?** with options **One plan** / **Multiple plans / tiers**.
 - Step 2 skip checkbox: **Allow skipping the next renewal**.
 - Step 2 pause checkbox: **Allow pausing the subscription**.
+- Step 2 renewal-sync trigger: **Should new subscriptions renew on the next billing-cycle boundary?** with options **Yes** / **No**.
 - Step 6 access-control trigger: **Do you need subscription-based content restriction?** (only shown for non-implied business types).
 - Step 8 Store Credit trigger: **Store Credit System** checkbox.
 
@@ -83,6 +84,22 @@ Confirm conditional questions in the wizard show and hide correctly based on par
 - Both selects become visible when pause is ticked.
 - Pause-duration options are **14**, **30**, **60**, **90 days**.
 - Pauses-per-subscription options are **1**, **2**, **3**, **5**.
+
+**Pass Criteria:** [ ] PASS [ ] FAIL
+**Fail Notes:**
+
+### Sub-Task 3.4a — Renewal Sync first-charge mode only when sync is enabled
+**Steps:**
+1. Stay on Step 2.
+2. Set **Should new subscriptions renew on the next billing-cycle boundary?** to **No**.
+3. Observe the visible Renewal Sync questions.
+4. Switch the answer to **Yes**.
+5. Switch back to **No**.
+
+**Expected Result:**
+- With Renewal Sync set to **No**, **How should the first checkout charge work?** is hidden.
+- With Renewal Sync set to **Yes**, **How should the first checkout charge work?** appears with **Prorate until the synced renewal date** and **Charge the full recurring amount at signup**.
+- Switching back to **No** hides the first-charge mode question immediately, with no page reload.
 
 **Pass Criteria:** [ ] PASS [ ] FAIL
 **Fail Notes:**

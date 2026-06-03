@@ -28,7 +28,7 @@ Profile defaults (from `easy-setup-wizard.md`):
 | Digital Content | Multiple plans, trials, upgrade-only plan switching, end-of-period cancellation and refund, access control |
 | Professional Services | Pause enabled, contact-support retention, immediate prorated refund, custom profile fields |
 | Nonprofit / Donations | Lenient grace, hide admin bar, minimal defaults |
-| Other / Custom | Monthly billing, single plan, standard grace, manual renewals, minimal configuration |
+| Other / Custom | Monthly billing, single plan, standard grace, manual renewals, Renewal Sync off, minimal configuration |
 
 ## Sub-Tasks
 
@@ -41,6 +41,7 @@ Profile defaults (from `easy-setup-wizard.md`):
 
 **Expected Result:**
 - Step 2: grace is **Strict (1 active / 3 hold days)**.
+- Step 2: Renewal Sync is **No** by default unless the tester explicitly enables it.
 - Step 3: **Only one subscription per customer** is selected.
 - Step 4: plan switching is set to **Allow all switching directions**; proration is **Prorate immediately**.
 - Step 6: access control is enabled (the "Do you need content restriction?" question is skipped per the info-box note in the manual).
@@ -59,6 +60,7 @@ Profile defaults (from `easy-setup-wizard.md`):
 
 **Expected Result:**
 - Step 2: grace is **Lenient (5 / 14)**; skip and pause checkboxes are both ticked.
+- Step 2: Renewal Sync is **No** by default.
 - Step 5: retention offer **Contact support** is checked.
 - Step 8: **Store Credit System** is pre-checked.
 
@@ -73,6 +75,7 @@ Profile defaults (from `easy-setup-wizard.md`):
 
 **Expected Result:**
 - Step 2: pause is enabled (max pause duration question becomes visible).
+- Step 2: Renewal Sync is **No** by default.
 - Step 3: **Only one subscription per customer** is selected.
 - Step 6: access control is enabled (content-restriction question skipped per manual).
 - Step 8: **Feature Manager**, **Activity Audit Log**, and **Multi-Login Prevention** are pre-checked.
@@ -131,6 +134,7 @@ Profile defaults (from `easy-setup-wizard.md`):
 **Expected Result:**
 - Step 1: billing cycle is **Monthly**, plan count is **One plan**.
 - Step 2: grace is **Standard (3 / 7)**.
+- Step 2: Renewal Sync is **No** by default.
 - Step 8: virtually no optional features are preselected (minimal configuration).
 
 **Pass Criteria:** [ ] PASS [ ] FAIL

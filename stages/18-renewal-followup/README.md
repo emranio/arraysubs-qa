@@ -1,6 +1,6 @@
 # Stage 18 — Renewal Follow-up & Time-travel
 
-**Goal:** Validate the entire post-checkout billing engine — successful manual and automatic renewals, payment failures and the active grace period, the On-Hold transition, automatic cancellation for overdue payment, trial conversion (and auto-downgrade), different-renewal-price thresholds, skip and pause renewal interactions, renewal reminders, and fixed-end-date expiration. Each task uses a documented **time-travel** technique to fast-forward subscription dates and trigger Action Scheduler hooks on demand. The new canonical test catalog is dominated by **weekly** subscriptions (with a single Basic Monthly $29.99 outlier), which makes most renewals feasible to exercise in real wall-clock time AND makes time-travel scenarios much faster to set up. Every step is performed by a human tester clicking through `wp-admin`, the customer portal, the WooCommerce checkout, and a real test mail-catcher. Each task ends with falsifiable on-screen results (status changes, email arrivals, scheduled-action execution rows, audit entries).
+**Goal:** Validate the entire post-checkout billing engine — successful manual and automatic renewals, payment failures and the active grace period, the On-Hold transition, automatic cancellation for overdue payment, trial conversion (and auto-downgrade), different-renewal-price thresholds, skip and pause renewal interactions, renewal reminders, renewal sync first full renewals, and fixed-end-date expiration. Each task uses a documented **time-travel** technique to fast-forward subscription dates and trigger Action Scheduler hooks on demand. The new canonical test catalog is dominated by **weekly** subscriptions (with a single Basic Monthly $29.99 outlier), which makes most renewals feasible to exercise in real wall-clock time AND makes time-travel scenarios much faster to set up. Every step is performed by a human tester clicking through `wp-admin`, the customer portal, the WooCommerce checkout, and a real test mail-catcher. Each task ends with falsifiable on-screen results (status changes, email arrivals, scheduled-action execution rows, audit entries).
 
 **Prerequisites:**
 - Stages 00–02 complete (plugins active, settings configured, environment verified).
@@ -26,6 +26,7 @@
   - `member-stepped@example.com` — Active subscription on Stepped Weekly (different renewal price after 3 cycles).
   - `member-limited@example.com` — Active subscription on Limited 3-Cycle Weekly (used for Expiring Soon).
   - `member-fixed@example.com` *(Pro)* — Active subscription on Fixed-Period Plan.
+  - Stage 05 Task 15 creates synced `Basic Monthly` subscriptions for renewal sync follow-up.
 - ArraySubs **Pro** active for tasks marked *(Pro)*. Stage 17 reused the same test environment — confirm Stage 17 cleanup completed.
 - Mail-catcher available (e.g., MailHog, WP Mail Logger, Mailpit) so the tester can read every transactional email by inbox.
 - Action Scheduler reachable at **WooCommerce → Status → Scheduled Actions** with the ability to manually click **Run** on queued actions.
@@ -54,9 +55,10 @@
 10. [10 — Skip and pause over renewal cycles](10-skip-and-pause-over-renewal-cycles.md) — `member-stripe` on **Standard Weekly** skips 2 cycles → no invoice generated for skipped dates → invoice generated 2 weeks later at the new shifted date. Then pauses 14 days → time-travel past pause end → auto-resume restores Active and recalculates next-payment-date forward by 14 days.
 11. [11 — Renewal reminders & expiring soon](11-renewal-reminders-and-expiring-soon.md) — Configure reminder = **1 day before** (since interval is weekly; 3 days before is also acceptable per the user manual — pick whichever you can reliably exercise). Time-travel a Standard Weekly subscription past the reminder threshold and verify the reminder fires once. With **Limited 3-Cycle Weekly** (subscription length = 3) and ≥2 completed renewals, time-travel near the third (final) renewal → Subscription Expiring Soon email.
 12. [12 — Fixed-period expiration](12-fixed-end-date-expiration-pro.md) — *(Pro)* `member-fixed` with Fixed Period Membership end date set to today + 14 days. Time-travel past the end date. Subscription expires (Expired status), Subscription Expired email sent, future actions unscheduled.
+13. [13 — Renewal Sync first full renewal](13-renewal-sync-first-full-renewal.md) — Time-travel a synced `Basic Monthly` subscription to its first full renewal. Verify the renewal order charges the full recurring amount and the next payment date stays aligned to the billing-cycle boundary.
 
 **Exit criteria:**
-- All 12 task files signed PASS, or failures recorded with screenshots, browser version, and reproduction steps.
+- All 13 task files signed PASS, or failures recorded with screenshots, browser version, and reproduction steps.
 - The exact UI strings recorded verbatim during testing match the user manual:
   - Subscription statuses: `Active`, `Trial`, `On Hold`, `Cancelled`, `Expired`.
   - Cancellation reason for system-cancelled subscriptions: `overdue_payment`.
@@ -64,4 +66,5 @@
 - Each Action Scheduler hook is observed in **WooCommerce → Status → Scheduled Actions** with the documented hook name. Verify at least these hook names fire during this stage: `arraysubs_generate_upcoming_renewals`, `arraysubs_process_renewal`, `arraysubs_check_overdue_renewals`, `arraysubs_hold_subscription`, `arraysubs_cancel_subscription`, `arraysubs_process_trial_conversions`, `arraysubs_process_trial_conversion`, `arraysubs_resume_subscription`, `arraysubs_send_renewal_reminder`, `arraysubs_send_expiring_soon`, `arraysubs_expire_subscription`, `arraysubs_process_skipped_cycle`.
 - Scheduled-Job Logs (Stage 17 / Task 17.03) shows a Success row for each fired hook with the correct human-readable label.
 - Time-travel approach documented in `01-time-travel-method.md` is reused unchanged by every other task in this stage. If the tester deviates, they must record the alternative approach in the Sign-off block of that task.
+- Renewal Sync renewals use the full recurring amount after signup and stay aligned to the synced billing-cycle boundary.
 - All test subscriptions returned to a clean state (or explicitly noted as "left in End State X for downstream stages") at the end of the stage.
