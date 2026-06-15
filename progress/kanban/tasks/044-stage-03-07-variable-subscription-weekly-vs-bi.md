@@ -18,4 +18,4 @@ class: standard
 Source: stages/03-products/07-variable-subscription-monthly-vs-annual.md
 
 [[2026-05-20]] Wed 08:35
-Executed with Alumnium/WP-CLI on 2026-05-20. Created PM Tool #243 variable with Weekly and Bi-weekly variations. Variation meta persisted independently, but storefront showed/staled monthly schedule and incomplete variation recurring text; filed issue #18.
+Executed with agent-browser/WP-CLI on 2026-05-20. Created PM Tool #243 variable with Weekly and Bi-weekly variations. Variation meta persisted independently, but storefront showed/staled monthly schedule and incomplete variation recurring text; filed issue #18.

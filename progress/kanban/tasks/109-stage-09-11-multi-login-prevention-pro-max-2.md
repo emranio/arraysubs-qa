@@ -17,4 +17,4 @@ class: standard
 Source: stages/09-member-access/11-multi-login-prevention-pro.md
 
 [[2026-05-20]] Wed 15:30
-QA notes: Not executed end-to-end. Multi-login prevention requires Pro toolkit setting/Login Limit tab plus three browser contexts and heartbeat wait. Only Chrome Alumnium contexts available in this run; Firefox/third-session eviction/cooldown not verified. No pass claimed.
+QA notes: Not executed end-to-end. Multi-login prevention requires Pro toolkit setting/Login Limit tab plus three browser contexts and heartbeat wait. Only Chrome agent-browser contexts available in this run; Firefox/third-session eviction/cooldown not verified. No pass claimed.

@@ -26,4 +26,4 @@ Plan: add the expected always-on entity note to the existing Logging Settings po
 [[2026-05-24]] Sun 19:47
 Fix applied: added an always-on note to the Logging Settings popover and styled it in the Activity Audits SCSS. Rebuilt arraysubs assets with npm run build.
 
-Verification: Playwright opened Activity Audits, clicked the Logging Settings gear, and confirmed Product/Coupon/Email/Settings toggles are present plus the note: Subscription, Member, Order, and System-level entries are always recorded and cannot be disabled. Screenshot: qa/artifacts/issue-124/logging-settings-always-on-note.png.
+Verification: agent-browser opened Activity Audits, clicked the Logging Settings gear, and confirmed Product/Coupon/Email/Settings toggles are present plus the note: Subscription, Member, Order, and System-level entries are always recorded and cannot be disabled. Screenshot: qa/artifacts/issue-124/logging-settings-always-on-note.png.

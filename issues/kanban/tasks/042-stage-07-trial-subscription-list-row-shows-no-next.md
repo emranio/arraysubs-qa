@@ -22,4 +22,4 @@ Stage 07 Task 01.3 expects Trial rows to show a next payment/trial-end date. In 
 Plan: verify Stage 07 Task 01 expectation and fixture #663 meta; update customer portal list next-payment condition to include arraysubs-trial when _next_payment_date exists; also align detail overview condition for trial subscriptions; syntax-check touched templates; browser verify cust1 My Account row #663 shows a real date instead of dash.
 
 [[2026-05-22]] Fri 05:27
-Fixed: customer portal list/detail now include arraysubs-trial in next-payment display when _next_payment_date exists. Syntax checks passed. Alumnium cust1 check: #663 Trial Weekly row shows Next Payment 27 May, 2026 6:31 PM (UTC+6), not dash; detail page also shows same Next Payment row.
+Fixed: customer portal list/detail now include arraysubs-trial in next-payment display when _next_payment_date exists. Syntax checks passed. agent-browser cust1 check: #663 Trial Weekly row shows Next Payment 27 May, 2026 6:31 PM (UTC+6), not dash; detail page also shows same Next Payment row.

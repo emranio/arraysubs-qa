@@ -18,9 +18,9 @@ class: standard
 Source: stages/07-customer-portal/07-pause-and-resume.md
 
 [[2026-05-20]] Wed 14:53
-QA notes (2026-05-20, Chrome headless via Alumnium):
+QA notes (2026-05-20, Chrome headless via agent-browser):
 - pause_subscription settings enabled via WP-CLI: enabled=true, customer_can_pause=true, max_duration_days=30, require_reason=false. Used active #633; original next payment 20 June 2026 6:30 PM (UTC+6).
 - Pause Subscription control visible. Modal opened with heading Pause Subscription, days input default 30, range 0-30, helper text "0 = indefinite", Cancel and Continue. No reason field because require_reason=false.
-- Continue opened confirmation; clicking Pause failed. Alumnium reported an assertive failure alert after modal closed. WP-CLI confirms #633 stayed arraysubs-active, no pause_start/end metadata, pause_count=0, next payment unchanged. Logged issue #52.
+- Continue opened confirmation; clicking Pause failed. agent-browser reported an assertive failure alert after modal closed. WP-CLI confirms #633 stayed arraysubs-active, no pause_start/end metadata, pause_count=0, next payment unchanged. Logged issue #52.
 - Because pause failed, could not verify On-Hold status, paused indicator, Resume Now, shifted next payment, auto-resume scheduling, resume cleanup, or notes audit.
 Result: FAIL.

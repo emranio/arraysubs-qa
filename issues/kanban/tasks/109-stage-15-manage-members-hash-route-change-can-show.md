@@ -23,4 +23,4 @@ Stage 15 task 02 / regression: while Manage Members had VIP Customer loaded from
 Fix pass started 2026-05-24 by shell-quartz. Verifying route-param load behavior and stale selectedUser guard in Manage Members.
 
 [[2026-05-24]] Sun 17:07
-Fixed Manage Members route-param reload: route is source of truth, member data clears on hash change, and latest request guard prevents stale responses from overwriting newer profile. Verified with Alumnium same-session VIP #37 -> Customer One #32 route swap; Playwright hash-only change logged customer-one-found and vip-not-found. Screenshot qa/artifacts/issue-109-route-swap-customer-one.png. npm run build passed.
+Fixed Manage Members route-param reload: route is source of truth, member data clears on hash change, and latest request guard prevents stale responses from overwriting newer profile. Verified with agent-browser same-session VIP #37 -> Customer One #32 route swap; agent-browser hash-only change logged customer-one-found and vip-not-found. Screenshot qa/artifacts/issue-109-route-swap-customer-one.png. npm run build passed.

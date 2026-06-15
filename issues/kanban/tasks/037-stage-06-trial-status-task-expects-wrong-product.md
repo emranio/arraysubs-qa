@@ -24,4 +24,4 @@ Stage 06 Task 02 expects customer-trial@example.test subscription product 'Trial
 Plan: update Stage 06 trial references from old Trial 14-Day / 14-day data to canonical Stage 05 Task 03 artifact Trial Weekly / 7-day trial; adjust email and order-page cross-check docs in same stage; verify current subscription #384 in browser/admin or WP-CLI shows Trial Weekly, Trial status, trial end and next payment both 2026-05-27.
 
 [[2026-05-22]] Fri 05:05
-Fix: Stage 06 docs now align with canonical Stage 05 Task 03 artifact: Trial Weekly, 7-day trial, T+7 next payment/trial end. Updated README, Task 02, and related order/email checks. Verification: Alumnium admin subscription #384 detail shows Trial status, Trial Weekly, Trial Length 7 day(s), Trial Ends and Next Payment 27 May, 2026.
+Fix: Stage 06 docs now align with canonical Stage 05 Task 03 artifact: Trial Weekly, 7-day trial, T+7 next payment/trial end. Updated README, Task 02, and related order/email checks. Verification: agent-browser admin subscription #384 detail shows Trial status, Trial Weekly, Trial Length 7 day(s), Trial Ends and Next Payment 27 May, 2026.

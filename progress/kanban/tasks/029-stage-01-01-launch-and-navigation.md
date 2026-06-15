@@ -19,4 +19,4 @@ Source: stages/01-setup-wizard/01-launch-and-navigation.md
 QA resumed by mold-glade using existing dart-thorn claim. Verified Easy Setup cards, wizard launch, modal lock against outside/Escape, SaaS Step 2 strict default, plan switching defaults, close confirmation text and actions present.
 
 [[2026-05-20]] Wed 00:19
-PASS. Browser: Chromium 148 headless via Alumnium. Verified Task 01 subtasks 1.1-1.7: Easy Setup page cards, wizard launch modal, outside/Escape non-dismissal, Next/Back/default navigation, close confirmation exact text/buttons, Review & Apply footer with Apply Settings and Edit controls. No issue filed.
+PASS. Browser: Chromium 148 headless via agent-browser. Verified Task 01 subtasks 1.1-1.7: Easy Setup page cards, wizard launch modal, outside/Escape non-dismissal, Next/Back/default navigation, close confirmation exact text/buttons, Review & Apply footer with Apply Settings and Edit controls. No issue filed.

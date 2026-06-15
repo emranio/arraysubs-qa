@@ -18,7 +18,7 @@ class: standard
 Source: stages/03-products/06-simple-fixed-length.md
 
 [[2026-05-20]] Wed 08:35
-Executed with Alumnium/WP-CLI on 2026-05-20. Created Fixed-Length Weekly (6 cycles) #229. Admin/meta persisted length 6. Product page/cart showed 6 billing cycles and 4.99 Every week. Checkout lacked next charge date; filed issue #21.
+Executed with agent-browser/WP-CLI on 2026-05-20. Created Fixed-Length Weekly (6 cycles) #229. Admin/meta persisted length 6. Product page/cart showed 6 billing cycles and 4.99 Every week. Checkout lacked next charge date; filed issue #21.
 
 [[2026-05-22]] Fri 04:47
-Issue #21 recheck: fresh Alumnium checkout for Fixed-Length Weekly #229 shows Duration 6 billing cycles, Today charge USD 24.99, and Next charge 29 May, 2026 (UTC+6).
+Issue #21 recheck: fresh agent-browser checkout for Fixed-Length Weekly #229 shows Duration 6 billing cycles, Today charge USD 24.99, and Next charge 29 May, 2026 (UTC+6).

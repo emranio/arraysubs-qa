@@ -17,10 +17,10 @@ claimed_at: 2026-05-22T04:47:37.548438659+02:00
 class: standard
 ---
 
-Observed with Alumnium on 2026-05-20 for Fixed-Length Weekly (6 cycles) #229. Product page and cart showed '4.99 Every week' and '6 billing cycles'. Checkout summary showed Duration: 6 billing cycles and today's charge 4.99, but next charge date was not visible. Expected next charge date approximately one week away.
+Observed with agent-browser on 2026-05-20 for Fixed-Length Weekly (6 cycles) #229. Product page and cart showed '4.99 Every week' and '6 billing cycles'. Checkout summary showed Duration: 6 billing cycles and today's charge 4.99, but next charge date was not visible. Expected next charge date approximately one week away.
 
 [[2026-05-22]] Fri 04:46
-Plan: verify Stage 03 Task 06 product #229 metadata, run fresh Alumnium add-to-cart and checkout flow, confirm order summary contains Duration 6 billing cycles, Today charge USD 24.99, and Next charge about one week out. If missing, patch checkout/cart item metadata renderer.
+Plan: verify Stage 03 Task 06 product #229 metadata, run fresh agent-browser add-to-cart and checkout flow, confirm order summary contains Duration 6 billing cycles, Today charge USD 24.99, and Next charge about one week out. If missing, patch checkout/cart item metadata renderer.
 
 [[2026-05-22]] Fri 04:47
-Verification: Fresh Alumnium session added Fixed-Length Weekly (6 cycles) #229, opened checkout page #8, and order summary showed Duration 6 billing cycles, Today charge USD 24.99, and Next charge 29 May, 2026 (UTC+6). Current checkout metadata satisfies Stage 03 Task 06.4.
+Verification: Fresh agent-browser session added Fixed-Length Weekly (6 cycles) #229, opened checkout page #8, and order summary showed Duration 6 billing cycles, Today charge USD 24.99, and Next charge 29 May, 2026 (UTC+6). Current checkout metadata satisfies Stage 03 Task 06.4.

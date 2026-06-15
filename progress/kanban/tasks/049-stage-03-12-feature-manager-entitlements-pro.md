@@ -18,4 +18,4 @@ class: standard
 Source: stages/03-products/12-feature-manager-entitlements-pro.md
 
 [[2026-05-20]] Wed 08:35
-Executed with Alumnium/WP-CLI on 2026-05-20. Pro Plan #233 Feature Manager features saved: Seats 5, Storage 10, Priority Support yes, Custom Domain no, Beta Access disabled. Storefront What's Included showed enabled four and omitted Beta Access.
+Executed with agent-browser/WP-CLI on 2026-05-20. Pro Plan #233 Feature Manager features saved: Seats 5, Storage 10, Priority Support yes, Custom Domain no, Beta Access disabled. Storefront What's Included showed enabled four and omitted Beta Access.

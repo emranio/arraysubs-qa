@@ -18,7 +18,7 @@ class: standard
 Source: stages/03-products/04-simple-with-different-renewal-price.md
 
 [[2026-05-20]] Wed 01:32
-Executed with Alumnium on 2026-05-20. Created Stepped Weekly #209; admin Subscription tab persisted Week/1, Different Renewal Price checked, renewal price 29.99 after 3. Product/cart/checkout showed both 9.99 initial and 9.99 later tier, with wording 'Every week'/'After 3 renewals'. Untick collapsed renewal fields; config restored via WP-CLI. Filed #16 for missing next-charge date; recurring format/proceed-button issues covered by #12/#13. Cart cleanup attempted.
+Executed with agent-browser on 2026-05-20. Created Stepped Weekly #209; admin Subscription tab persisted Week/1, Different Renewal Price checked, renewal price 29.99 after 3. Product/cart/checkout showed both 9.99 initial and 9.99 later tier, with wording 'Every week'/'After 3 renewals'. Untick collapsed renewal fields; config restored via WP-CLI. Filed #16 for missing next-charge date; recurring format/proceed-button issues covered by #12/#13. Cart cleanup attempted.
 
 [[2026-05-22]] Fri 04:45
-Issue #16 recheck: fresh Alumnium checkout for Stepped Weekly #209 shows renewal tier, Today charge USD 19.99, and Next charge 29 May, 2026 (UTC+6).
+Issue #16 recheck: fresh agent-browser checkout for Stepped Weekly #209 shows renewal tier, Today charge USD 19.99, and Next charge 29 May, 2026 (UTC+6).

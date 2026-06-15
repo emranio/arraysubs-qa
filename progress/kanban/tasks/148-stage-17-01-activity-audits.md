@@ -22,7 +22,7 @@ QA complete. Activity Audits columns/pagination/change modal/author filters/sear
 Issue #120 fixed: Activity Audits Entity Type filter now matches stored/displayed entity badges. Verified REST and browser Subscription filter: first 10 badges SUBSCRIPTION, total 922. Screenshot qa/artifacts/issue-120/activity-audits-subscription-filter.png.
 
 [[2026-05-24]] Sun 19:10
-Issue #121 fixed: settings audit change details now persist/decode and the Activity Audits changes link is visible/clickable. Verified REST partial save preserved unrelated settings, note #2966 decoded emails.renewal_upcoming.days_before 11 -> 3, and Playwright opened modal with Previous Value/Changed Value. Screenshot qa/artifacts/issue-121/settings-audit-changes-modal.png.
+Issue #121 fixed: settings audit change details now persist/decode and the Activity Audits changes link is visible/clickable. Verified REST partial save preserved unrelated settings, note #2966 decoded emails.renewal_upcoming.days_before 11 -> 3, and agent-browser opened modal with Previous Value/Changed Value. Screenshot qa/artifacts/issue-121/settings-audit-changes-modal.png.
 
 [[2026-05-24]] Sun 19:40
 Issue #122 fixed and closed. Customer cancellation modal retested as member1 on subscription #697: UI returned HTTP 200, showed Pending Cancellation, no Failed to cancel error. Activity Audits now records the scheduled cancellation as Customer/member1 with structured changes and visible changes -> modal. Fixture #697 restored to active afterward.

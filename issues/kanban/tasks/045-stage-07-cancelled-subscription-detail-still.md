@@ -23,4 +23,4 @@ Stage 07 Task 02 regression expects a Cancelled subscription to hide the Subscri
 Plan: verify Stage 07 Task 02 regression and current #668 state; inspect portal action gating and reactivation helper; browser-test #668 as cust1. If Subscription Actions/Reactivate are absent, close as already fixed by terminal reactivation gating; otherwise patch view/helper and retest.
 
 [[2026-05-22]] Fri 05:30
-Verified fixed by current action gating. WP-CLI #668 status=arraysubs-cancelled and arraysubs_can_customer_reactivate_by_subs_id=no. Alumnium cust1 check: #668 detail shows no Subscription Actions section and no Reactivate Subscription button. No new code change needed for this issue.
+Verified fixed by current action gating. WP-CLI #668 status=arraysubs-cancelled and arraysubs_can_customer_reactivate_by_subs_id=no. agent-browser cust1 check: #668 detail shows no Subscription Actions section and no Reactivate Subscription button. No new code change needed for this issue.

@@ -18,4 +18,4 @@ class: standard
 Source: stages/03-products/11-fixed-period-membership-pro.md
 
 [[2026-05-20]] Wed 08:35
-Executed with Alumnium/WP-CLI on 2026-05-20. Created fixed-period products #239 and #241 with Pro active. Meta persisted, but storefront missing membership ends/enrollment/renew/blocking text; filed issue #20.
+Executed with agent-browser/WP-CLI on 2026-05-20. Created fixed-period products #239 and #241 with Pro active. Meta persisted, but storefront missing membership ends/enrollment/renew/blocking text; filed issue #20.

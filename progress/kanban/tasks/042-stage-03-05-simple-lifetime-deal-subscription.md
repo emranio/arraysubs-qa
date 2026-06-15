@@ -18,4 +18,4 @@ class: standard
 Source: stages/03-products/05-simple-lifetime-deal.md
 
 [[2026-05-20]] Wed 08:35
-Executed with Alumnium/WP-CLI on 2026-05-20. Created Lifetime Deal #227. Product page showed lifetime price, but non-zero length leaked into product/cart/checkout and checkout did not show no-recurring wording; filed issue #17. Restored length to 0 for downstream.
+Executed with agent-browser/WP-CLI on 2026-05-20. Created Lifetime Deal #227. Product page showed lifetime price, but non-zero length leaked into product/cart/checkout and checkout did not show no-recurring wording; filed issue #17. Restored length to 0 for downstream.

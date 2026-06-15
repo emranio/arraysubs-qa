@@ -22,7 +22,7 @@ Fixture: cust5@example.com, one-time Stripe order #1750 total 0, store credit re
 
 Expected: Customer My Account → Orders → order #1750 detail should indicate that a credit refund was processed, e.g. 'Refunded as store credit: 0.00'.
 
-Observed with Alumnium: My Account Orders listed order #1750 as Completed 0.00 for 4 items. Order detail showed product Plain Mug x4, subtotal 0.00, total 0.00, payment method Stripe, billing address, but no store credit refund wording, note, or refund history. My Account → Store Credit did show balance 0.00 and the refund transaction, so backend credit exists.
+Observed with agent-browser: My Account Orders listed order #1750 as Completed 0.00 for 4 items. Order detail showed product Plain Mug x4, subtotal 0.00, total 0.00, payment method Stripe, billing address, but no store credit refund wording, note, or refund history. My Account → Store Credit did show balance 0.00 and the refund transaction, so backend credit exists.
 
 Impact: customers cannot see on the order itself that the paid order was refunded as store credit.
 

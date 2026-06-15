@@ -18,7 +18,7 @@ class: standard
 Source: stages/06-initial-lifecycle/06-emails-on-creation.md
 
 [[2026-05-20]] Wed 14:25
-QA notes (2026-05-20, Chrome headless via Alumnium + WP-CLI):
+QA notes (2026-05-20, Chrome headless via agent-browser + WP-CLI):
 - WooCommerce Emails tab loaded. ArraySubs email rows are enabled, including New Subscription, Trial Started, and New Subscription (Admin). Admin recipient is admin@mirror-help.arrayhash.com. Woo email sender settings visible in admin: From name mirror-help.arrayhash.com, From address admin@mirror-help.arrayhash.com. WP Mail SMTP transport config forces from_name admin.arrayhash.com and from_email test@emran.io, so real headers may differ from Woo sender settings but could not be verified without inbox/header access.
 - Delivery/content verification blocked: no QA-accessible inbox/catch-all found, WP Mail SMTP content logs are disabled, and Resend API key is send-only; GET /emails returns 401 restricted_api_key. Logged issue #40.
 - Email previews checked in WooCommerce settings. New Subscription preview heading: Your subscription is now active! Trial Started heading: Your free trial has started! Admin New Subscription heading: New subscription received. Preview data is mostly sample/empty (N/A, #0, blank dates) and customer previews show footer placeholders {site_title}, {store_address}; logged issue #41.
@@ -32,4 +32,4 @@ Issue #40 rechecked during issue-fix pass. Still blocked: no customer/admin inbo
 Issue #37 related doc cleanup: Trial references now use Trial Weekly / 7-day trial instead of old Trial 14-Day / 14-day data.
 
 [[2026-05-22]] Fri 05:21
-Issue #41 fixed: email previews now use realistic fallback data for New Subscription, Trial Started, and Admin New Subscription. Alumnium verified product Sample Subscription Product, 9.99 / every month, real dates, John Doe admin/customer sample, no literal footer placeholders.
+Issue #41 fixed: email previews now use realistic fallback data for New Subscription, Trial Started, and Admin New Subscription. agent-browser verified product Sample Subscription Product, 9.99 / every month, real dates, John Doe admin/customer sample, no literal footer placeholders.

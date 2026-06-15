@@ -16,7 +16,7 @@ class: standard
 Source: stages/16-analytics/05-order-list-enhancements.md
 
 [[2026-05-23]] Sat 13:58
-QA complete (2026-05-23, HPOS enabled, wide Alumnium browser).
+QA complete (2026-05-23, HPOS enabled, wide agent-browser).
 
 Setup:
 - Seeded SAVE20/saves-as `save20` coupon fixture order #1332: Customer One, completed, Type `Subs Renew`, Coupon(s) `save20`, total $19.99.
@@ -34,4 +34,4 @@ Results:
 Browser verification complete. Issue: #119.
 
 [[2026-05-24]] Sun 18:45
-Issue #119 fixed: Orders list now exposes Coupon and Subscription Products Only controls and HPOS summary panel renders correctly with Total Orders/type counts/Orders with Coupon. Verified syntax plus Playwright filter submissions and screenshots qa/artifacts/issue-119/orders-filters-summary.png, qa/artifacts/issue-119/orders-subs-only-filter.png.
+Issue #119 fixed: Orders list now exposes Coupon and Subscription Products Only controls and HPOS summary panel renders correctly with Total Orders/type counts/Orders with Coupon. Verified syntax plus agent-browser filter submissions and screenshots qa/artifacts/issue-119/orders-filters-summary.png, qa/artifacts/issue-119/orders-subs-only-filter.png.

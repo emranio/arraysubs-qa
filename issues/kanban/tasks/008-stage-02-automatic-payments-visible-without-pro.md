@@ -17,7 +17,7 @@ claimed_at: 2026-05-22T00:21:19.37678782+02:00
 class: standard
 ---
 
-Observed on live admin with Alumnium, 2026-05-20. Deactivated ArraySubsPro via WP-CLI, reloaded ArraySubs > Settings > General from fresh wp-admin navigation. Expected Stage 02 task 01.8: Automatic Payments section disappears when Pro inactive. Actual: Automatic Payments section remains visible; Feature Manager tab disappeared, confirming Pro inactive state changed.
+Observed on live admin with agent-browser, 2026-05-20. Deactivated ArraySubsPro via WP-CLI, reloaded ArraySubs > Settings > General from fresh wp-admin navigation. Expected Stage 02 task 01.8: Automatic Payments section disappears when Pro inactive. Actual: Automatic Payments section remains visible; Feature Manager tab disappeared, confirming Pro inactive state changed.
 
 [[2026-05-22]] Fri 00:15
 Verified against Stage 02 Task 01.8: Automatic Payments is Pro-only and must disappear when ArraySubsPro is inactive while preserving saved value for reactivation. Code inspection confirms GeneralSettings renders the Automatic Payments card unconditionally. Plan: gate that card from the React form using liveBootClasses AutomaticPayments module visibility, leave REST/default storage intact so saved automatic_payments settings are preserved, rebuild, then browser-test Pro active visible, Pro inactive hidden, Pro reactivated visible with value preserved.

@@ -18,4 +18,4 @@ class: standard
 Source: stages/01-setup-wizard/04-pro-vs-free-options.md
 
 [[2026-05-20]] Wed 00:49
-Completed Pro gating checks. Pro deactivated/reactivated cleanly with WP-CLI because browser plugin UI is not core feature under test. Browser verified wizard inactive notice, hidden Pro-only Step 8 options, free options visible, Pro options/badges return after reactivation, and Store Credit/Feature Manager/Multi-Login follow-ups appear. Screenshots: /tmp/arraysubs-qa-playwright/stage01-task04-pro-inactive.png and stage01-task04-pro-active.png.
+Completed Pro gating checks. Pro deactivated/reactivated cleanly with WP-CLI because browser plugin UI is not core feature under test. Browser verified wizard inactive notice, hidden Pro-only Step 8 options, free options visible, Pro options/badges return after reactivation, and Store Credit/Feature Manager/Multi-Login follow-ups appear. Screenshots: /tmp/arraysubs-qa-agent-browser/stage01-task04-pro-inactive.png and stage01-task04-pro-active.png.

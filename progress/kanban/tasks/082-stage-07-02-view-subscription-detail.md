@@ -18,7 +18,7 @@ class: standard
 Source: stages/07-customer-portal/02-view-subscription-detail.md
 
 [[2026-05-20]] Wed 14:41
-QA notes (2026-05-20, Chrome headless via Alumnium):
+QA notes (2026-05-20, Chrome headless via agent-browser):
 - Subscription A #633 (retention Basic Monthly): overview rows observed in order Status, Product, Start Date, Next Payment, Recurring Amount, Payment Method. Status Active; Product Basic Monthly; next payment 20 June 2026 6:30 PM (UTC+6); Recurring Amount $23.99 Every month with line "Discounted from $29.99 for the next 1 renewal(s)." Payment method Direct bank transfer with Manage payment methods link. Actions: Change Plan and Cancel Subscription visible; no Reactivate.
 - Skip/Pause expected section is missing on #633: no Manage Your Subscription, no Skip Next Renewal, no Pause Subscription; logged issue #46.
 - Subscription B #638 (coupon Pro Monthly): Coupon Discount row visible: "50% off (HALFOFF3)" and "2 renewal cycle(s) remaining".

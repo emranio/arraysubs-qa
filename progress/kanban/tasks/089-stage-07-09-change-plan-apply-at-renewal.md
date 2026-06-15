@@ -18,7 +18,7 @@ class: standard
 Source: stages/07-customer-portal/09-change-plan-apply-at-renewal.md
 
 [[2026-05-20]] Wed 14:54
-QA notes (2026-05-20, Chrome headless via Alumnium):
+QA notes (2026-05-20, Chrome headless via agent-browser):
 - Apply-at-renewal plan switch could not proceed because the Change Plan modal fails before any plan options load. On #633, clicking Change Plan shows "Failed to load plan options. Please try again."
 - No deferred-switch preview, no no-charge-today confirmation, no pending-switch banner, no replacement prompt, and no pending-switch cancellation could be tested.
 - Logged issue #53; also related to existing Stage 06 issue #39.

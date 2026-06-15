@@ -24,4 +24,4 @@ Stage 06 Task 03 on active subscription #618 showed duplicate Payment Received e
 Plan: trace order-paid note path; add idempotency guard so same subscription/order/event cannot create duplicate payment success note; clean duplicate QA fixture note for subscription #618; verify DB + admin detail timeline/notes show one Order #610 payment-success entry.
 
 [[2026-05-22]] Fri 05:10
-Fixed: AutoNotes now skips duplicate payment-success notes for same subscription/order/event. Deleted duplicate QA fixture note #628 for subscription #618. Verified with WP-CLI before=1 after direct onPaymentComplete=1; Alumnium confirms one Payment Timeline event + one Subscription Notes entry for Order #610.
+Fixed: AutoNotes now skips duplicate payment-success notes for same subscription/order/event. Deleted duplicate QA fixture note #628 for subscription #618. Verified with WP-CLI before=1 after direct onPaymentComplete=1; agent-browser confirms one Payment Timeline event + one Subscription Notes entry for Order #610.

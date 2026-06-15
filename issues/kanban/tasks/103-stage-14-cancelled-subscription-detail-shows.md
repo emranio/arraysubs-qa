@@ -29,4 +29,4 @@ Stage 19 Task 06 repeat: cancelled subscription #1758 detail still shows Skip & 
 Fix pass started 2026-05-24 by shell-quartz. Verifying Stage 14 detail-card expectations and tracing Skip & Pause / vacation-mode display logic for cancelled subscriptions.
 
 [[2026-05-24]] Sun 16:14
-Fixed in arraysubs admin SkipPauseCard: vacation-mode idle copy is now status-aware, so cancelled/expired/pending subscriptions no longer show 'Subscription is active'. Verified on cancelled subscription #508 with Alumnium text extraction ('Subscription is cancelled') and Playwright assertion activeTextCount=0. Screenshot: qa/artifacts/issue-103-cancelled-vacation-mode.png. Build passed: npm run build in arraysubs.
+Fixed in arraysubs admin SkipPauseCard: vacation-mode idle copy is now status-aware, so cancelled/expired/pending subscriptions no longer show 'Subscription is active'. Verified on cancelled subscription #508 with agent-browser text extraction ('Subscription is cancelled') and agent-browser assertion activeTextCount=0. Screenshot: qa/artifacts/issue-103-cancelled-vacation-mode.png. Build passed: npm run build in arraysubs.

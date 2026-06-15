@@ -15,4 +15,4 @@ tags:
 class: standard
 ---
 
-Observed with Alumnium on 2026-05-20. Admin product permalink showed https://mirror-help.arrayhash.com/?product=basic-monthly, but clean browser loaded Blog content, not product. Direct query https://mirror-help.arrayhash.com/?post_type=product&p=197 opened product detail. Expected View Product/permalink opens Basic Monthly product page.
+Observed with agent-browser on 2026-05-20. Admin product permalink showed https://mirror-help.arrayhash.com/?product=basic-monthly, but clean browser loaded Blog content, not product. Direct query https://mirror-help.arrayhash.com/?post_type=product&p=197 opened product detail. Expected View Product/permalink opens Basic Monthly product page.

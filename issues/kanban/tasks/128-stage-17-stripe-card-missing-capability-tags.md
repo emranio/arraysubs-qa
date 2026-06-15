@@ -25,4 +25,4 @@ Plan: keep the existing gateway-health REST payload, normalize boolean capabilit
 [[2026-05-24]] Sun 20:10
 Fix applied: GatewayHealthDashboard now normalizes boolean capability maps from REST and renders enabled capabilities as human-readable pills. Rebuilt arraysubs assets with npm run build.
 
-Verification: Playwright opened Gateway Logs/settings gateway dashboard, expanded Stripe, and confirmed the Capabilities section renders pills including Subscription, Trial, Refunds, and Card Auto Update, alongside the webhook URLs. Screenshot: qa/artifacts/issue-128/stripe-capability-tags.png.
+Verification: agent-browser opened Gateway Logs/settings gateway dashboard, expanded Stripe, and confirmed the Capabilities section renders pills including Subscription, Trial, Refunds, and Card Auto Update, alongside the webhook URLs. Screenshot: qa/artifacts/issue-128/stripe-capability-tags.png.

@@ -18,7 +18,7 @@ class: standard
 Source: stages/07-customer-portal/04-cancel-end-of-period.md
 
 [[2026-05-20]] Wed 14:46
-QA notes (2026-05-20, Chrome headless via Alumnium):
+QA notes (2026-05-20, Chrome headless via agent-browser):
 - Set cancellation.cancel_immediately=false via WP-CLI and confirmed modal behavior in browser on cust1 active Basic Monthly #643.
 - Modal warning correctly used EOP language: subscription remains active until end of current billing period, then access ends. Reason dropdown appeared.
 - Task-required reason "Just need a temporary break" is not present in configured options; selected nearest available "Not using it enough". Logged issue #49.

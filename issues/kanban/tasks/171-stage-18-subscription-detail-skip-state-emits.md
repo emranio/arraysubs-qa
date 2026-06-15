@@ -20,7 +20,7 @@ QA plan: qa/stages/18-renewal-followup/13-renewal-sync-first-full-renewal.md
 Affected subscription ID(s) and order ID(s): subscription #4242, renewal order #4381 context; warning itself may affect any subscription detail with missing skip meta
 Affected WordPress user/customer: admin browser context; customer ID 318, login sync-full, email sync-full@example.test, role customer for inspected subscription
 Exact test URL/admin route: https://mirror-help.arrayhash.com/wp-admin/admin.php?page=arraysubs-mainadmin#/subscriptions/detail/4242
-Browser/user context: Alumnium headless Chrome, admin user
+Browser/user context: agent-browser headless Chrome, admin user
 Reproduction steps: Open subscription detail #4242 after renewal follow-up QA; tail wp-content/debug.log.
 Expected result: No PHP warnings are emitted while rendering/subscription-detail REST data loads.
 Actual result: debug.log contains warnings at 2026-06-03 11:29:04 UTC from arraysubs/src/Features/SkipRenewal/REST/SkipController.php lines 384-387 for undefined keys skip_remaining, skip_started_date, original_next_payment_date, skip_reason.
@@ -33,4 +33,4 @@ Fix plan: normalize SkipManager status fields in SkipController::getSkipInfo(), 
 
 Fix applied: SkipController now maps cycles_remaining/requested_at/original_date/reason to the frontend skip_remaining/skip_started_date/original_next_payment_date/skip_reason contract with safe defaults; skipCycles sanitizes and passes reason. SkipManager now stores _skip_reason, includes it in status/history/action context, and clears it when skip state is cleared. SubscriptionCPT registers _skip_reason for REST/meta consistency.
 
-Verification: php -l passed for SkipController.php, SkipManager.php, SubscriptionCPT.php, and skip-pause-helpers.php. Direct REST call as admin for subscription #4242 returned code 200 with skip_remaining=0, empty skip_started_date/original_next_payment_date/skip_reason, can_skip=false, and no warning. Playwright reopened the exact admin route from the issue; /arraysubs/v1/subscriptions/4242/skip returned the normalized payload and debug.log line count stayed unchanged at 365. Screenshot: /tmp/arraysubs-issue-171-subscription-detail.png.
+Verification: php -l passed for SkipController.php, SkipManager.php, SubscriptionCPT.php, and skip-pause-helpers.php. Direct REST call as admin for subscription #4242 returned code 200 with skip_remaining=0, empty skip_started_date/original_next_payment_date/skip_reason, can_skip=false, and no warning. agent-browser reopened the exact admin route from the issue; /arraysubs/v1/subscriptions/4242/skip returned the normalized payload and debug.log line count stayed unchanged at 365. Screenshot: /tmp/arraysubs-issue-171-subscription-detail.png.

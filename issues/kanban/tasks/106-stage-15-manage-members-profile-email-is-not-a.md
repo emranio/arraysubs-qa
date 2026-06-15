@@ -24,4 +24,4 @@ Stage 15 task 02 Customer One profile: expected email displayed as clickable mai
 Fix pass started 2026-05-24 by shell-quartz. Moving into Stage 15; reading QA stage docs, issue details, and Manage Members profile implementation.
 
 [[2026-05-24]] Sun 16:39
-Fixed Manage Members profile email rendering: profile.email is now an anchor with href mailto:{email}. Verified Customer One user #32 via Alumnium links extraction: customer1@arraysubs.test -> mailto:customer1@arraysubs.test. Playwright confirmed link role href=mailto:customer1@arraysubs.test. Screenshot: qa/artifacts/issue-106-mailto-link.png. Build passed: npm run build in arraysubs.
+Fixed Manage Members profile email rendering: profile.email is now an anchor with href mailto:{email}. Verified Customer One user #32 via agent-browser links extraction: customer1@arraysubs.test -> mailto:customer1@arraysubs.test. agent-browser confirmed link role href=mailto:customer1@arraysubs.test. Screenshot: qa/artifacts/issue-106-mailto-link.png. Build passed: npm run build in arraysubs.

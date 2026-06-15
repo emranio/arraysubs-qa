@@ -18,7 +18,7 @@ class: standard
 Source: stages/07-customer-portal/03-cancel-immediate.md
 
 [[2026-05-20]] Wed 14:43
-QA notes (2026-05-20, Chrome headless via Alumnium):
+QA notes (2026-05-20, Chrome headless via agent-browser):
 - Used disposable active cust1 fixture subscription #678 (Enterprise Plan). Settings confirmed by WP-CLI: cancel_immediately=true, require_reason=true, retention_offers_enabled=false.
 - Cancel modal opened from Subscription Actions. Modal text warns immediate cancellation and losing benefits. Reason selector present with options including Found a better alternative. Keep Subscription and Continue visible.
 - Required reason validation works: clicking Continue without selecting a reason shows alert "Please select a reason for cancelling." Continue is not disabled, but validation blocks progress.

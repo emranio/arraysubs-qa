@@ -18,4 +18,4 @@ class: standard
 Source: stages/03-products/03-simple-with-signup-fee.md
 
 [[2026-05-20]] Wed 01:26
-Executed with Alumnium on 2026-05-20. Created Signup Fee Weekly #206; admin Subscription tab persisted Week/1 length 0, trial 0, signup 4.99. Product page showed '+ .99 signup fee' and no trial text. Cart/checkout total 4.98 and renewal amount 9.99. Filed #15 for label mismatch and missing next-charge date; Proceed button absence covered by #13. Cart cleanup attempted.
+Executed with agent-browser on 2026-05-20. Created Signup Fee Weekly #206; admin Subscription tab persisted Week/1 length 0, trial 0, signup 4.99. Product page showed '+ .99 signup fee' and no trial text. Cart/checkout total 4.98 and renewal amount 9.99. Filed #15 for label mismatch and missing next-charge date; Proceed button absence covered by #13. Cart cleanup attempted.

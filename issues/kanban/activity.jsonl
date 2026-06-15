@@ -74,7 +74,7 @@
 {"timestamp":"2026-05-21T20:27:30.719884974+02:00","action":"move","task_id":26,"detail":"open -\u003e in-progress"}
 {"timestamp":"2026-05-21T20:54:18.201256072+02:00","action":"edit","task_id":26,"detail":"stage-05: Classic checkout Place order button does nothing"}
 {"timestamp":"2026-05-21T21:11:50.447760337+02:00","action":"edit","task_id":26,"detail":"stage-05: Classic checkout Place order button does nothing"}
-{"timestamp":"2026-05-21T21:11:50.448131641+02:00","action":"block","task_id":26,"detail":"Blocked by Alumnium injected XMLHttpRequest wrapper causing WooCommerce checkout AJAX TypeError before request reaches WordPress."}
+{"timestamp":"2026-05-21T21:11:50.448131641+02:00","action":"block","task_id":26,"detail":"Blocked by agent-browser injected XMLHttpRequest wrapper causing WooCommerce checkout AJAX TypeError before request reaches WordPress."}
 {"timestamp":"2026-05-21T21:11:54.726414322+02:00","action":"move","task_id":26,"detail":"in-progress -\u003e blocked"}
 {"timestamp":"2026-05-21T21:12:06.903193446+02:00","action":"claim","task_id":28,"detail":"mold-glade"}
 {"timestamp":"2026-05-21T21:12:06.903408258+02:00","action":"move","task_id":28,"detail":"open -\u003e in-progress"}

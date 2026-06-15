@@ -22,4 +22,4 @@ Stage 07 Task 01. As cust1, account navigation label shows "Subscriptions 7" whi
 Plan: verify Stage 07 Task 01 and current cust1 counts; centralize the customer portal status set in MyAccountHooks; use it for both the Subscriptions list query and localized subscriptionCount badge so nav count equals pagination total; syntax-check PHP; browser verify badge count matches table summary.
 
 [[2026-05-22]] Fri 05:29
-Fixed: MyAccountHooks now reuses one customer-portal status set for both the list query and localized subscriptionCount. Syntax check passed. Alumnium cust1 check: nav label 'Subscriptions 13' matches summary 'Showing 1-10 of 13 subscriptions'.
+Fixed: MyAccountHooks now reuses one customer-portal status set for both the list query and localized subscriptionCount. Syntax check passed. agent-browser cust1 check: nav label 'Subscriptions 13' matches summary 'Showing 1-10 of 13 subscriptions'.

@@ -18,7 +18,7 @@ class: standard
 Source: stages/06-initial-lifecycle/05-order-page-related-subscriptions.md
 
 [[2026-05-20]] Wed 14:19
-QA notes (2026-05-20, Chrome headless via Alumnium):
+QA notes (2026-05-20, Chrome headless via agent-browser):
 - Original Stage 05 classic artifact was unavailable; used active control order #610 / subscription #618, with missing-classic artifact tracked in issue #35.
 - My Account order #610 shows order summary, billing address, and Related Subscriptions table. Row: #618 linked to view-subscription=618, status Active, next payment 20 June 2026 (UTC+6), total $29.99 / Every month. Link opens portal detail with same subscription data.
 - Thank-you/order-received URL for #610 also shows Related Subscriptions with #618, Active, 20 June 2026 (UTC+6), $29.99 / Every month.

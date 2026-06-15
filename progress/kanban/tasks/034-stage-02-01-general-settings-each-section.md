@@ -18,4 +18,4 @@ class: standard
 Source: stages/02-settings/01-general-settings-each-section.md
 
 [[2026-05-20]] Wed 01:08
-Executed live with Alumnium on 2026-05-20. General defaults restored in post-stage-02.json. Filed issues #7 (Customer Actions controls missing) and #8 (Automatic Payments visible without Pro).
+Executed live with agent-browser on 2026-05-20. General defaults restored in post-stage-02.json. Filed issues #7 (Customer Actions controls missing) and #8 (Automatic Payments visible without Pro).

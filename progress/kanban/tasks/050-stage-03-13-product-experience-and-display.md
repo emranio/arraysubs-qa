@@ -18,4 +18,4 @@ class: standard
 Source: stages/03-products/13-product-experience-display.md
 
 [[2026-05-20]] Wed 08:35
-Executed display audit across products with Alumnium on 2026-05-20. Covered simple, trial, signup, stepped, variable, monthly, fixed-length, feature product displays. Open defects: #11, #12, #13, #14, #15, #16, #18, #21. Full order-confirmation/admin-order path not completed due checkout display blockers; active subscription seeded for lifecycle task.
+Executed display audit across products with agent-browser on 2026-05-20. Covered simple, trial, signup, stepped, variable, monthly, fixed-length, feature product displays. Open defects: #11, #12, #13, #14, #15, #16, #18, #21. Full order-confirmation/admin-order path not completed due checkout display blockers; active subscription seeded for lifecycle task.

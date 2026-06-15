@@ -37,7 +37,7 @@ Installed and usable:
 - Docker
 - `kanban-md`
 - Composer `2.7.1`
-- Alumnium MCP browser automation
+- agent-browser CLI (Vercel) for browser automation
 
 Missing or not found:
 
@@ -70,11 +70,11 @@ This site's Action Scheduler CLI has `run`, `status`, `source`, `version`, `clea
 
 ### 1. Browser Automation Layer
 
-Use Alumnium MCP for browser automation, repeatable UI checks, screenshots, and exploratory visual inspection, while keeping the stage files as the source of truth.
+Use Vercel's agent-browser CLI for browser automation, repeatable UI checks, screenshots, and exploratory visual inspection, while keeping the stage files as the source of truth.
 
 Recommended workflow:
 
-- Start an Alumnium MCP browser driver for the target site.
+- Load the usage guide first (`agent-browser skills get core`), then drive the target site with the agent-browser CLI, using an isolated `--session` per role.
 - Use the documented QA credentials and role-specific accounts from the active stage.
 - Run real end-to-end browser flows against the live test site.
 - Capture screenshots and concrete browser observations for sign-off evidence, failures, and layout-sensitive checks.

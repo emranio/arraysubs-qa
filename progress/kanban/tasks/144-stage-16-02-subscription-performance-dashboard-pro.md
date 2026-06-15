@@ -25,4 +25,4 @@ Issue #113 fixed: Revenue at Risk is now rendered as a snapshot KPI with no prev
 Issue #114 fixed: weekly MRR normalization now uses 4.333 in pro analytics. Verified REST MRR for May 1-23 returned 9301.31 and browser MRR for Month to date May 1-24 showed 0,189.15, matching manual active/trial subscription sum. Screenshot qa/artifacts/issue-114/mrr-weekly-4333.png.
 
 [[2026-05-24]] Sun 18:05
-Issue #115 fixed: Dashboard KPI links now open WC Analytics Orders with filter params outside the encoded path and valid ArraySubs Type values. Alumnium/Playwright verified Active Subscriptions opens Orders without access denied; screenshot qa/artifacts/issue-115/active-subscriptions-orders-filter.png.
+Issue #115 fixed: Dashboard KPI links now open WC Analytics Orders with filter params outside the encoded path and valid ArraySubs Type values. agent-browser/agent-browser verified Active Subscriptions opens Orders without access denied; screenshot qa/artifacts/issue-115/active-subscriptions-orders-filter.png.

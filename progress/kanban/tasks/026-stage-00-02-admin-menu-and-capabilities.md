@@ -18,4 +18,4 @@ class: standard
 Source: stages/00-preflight/02-admin-menu-and-capabilities.md
 
 [[2026-05-22]] Fri 05:45
-Issue #4 fixed: top-level admin menu label now ArraySubs; verified with Alumnium admin sidebar.
+Issue #4 fixed: top-level admin menu label now ArraySubs; verified with agent-browser admin sidebar.

@@ -24,4 +24,4 @@ Task 11 expects Update Shipping Address visibility for Trial and On-Hold eligibl
 Plan: verify Task 11 matrix and current #663/#653 shipping meta; seed both fixtures with the same shipping eligibility data already used by active shipping fixtures (#643/#683): _arraysubs_needs_shipping=yes, recurring flat-rate method, totals, and address. Keep statuses/next payment unchanged; browser verify Trial #663 and On-Hold #653 both show Shipping Address + Update Shipping Address.
 
 [[2026-05-22]] Fri 05:34
-Fixed fixture gap: seeded #663 Trial and #653 On-Hold with recurring flat-rate shipping meta and address while preserving statuses/next payment. Alumnium verified #663 shows Cancel/Skip/Pause + Shipping Address + Update Shipping Address; #653 shows Resume Now + Shipping Address + Update Shipping Address.
+Fixed fixture gap: seeded #663 Trial and #653 On-Hold with recurring flat-rate shipping meta and address while preserving statuses/next payment. agent-browser verified #663 shows Cancel/Skip/Pause + Shipping Address + Update Shipping Address; #653 shows Resume Now + Shipping Address + Update Shipping Address.

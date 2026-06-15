@@ -16,7 +16,7 @@ class: standard
 Source: stages/16-analytics/04-woocommerce-analytics-extension-pro.md
 
 [[2026-05-23]] Sat 13:43
-QA complete (2026-05-23, admin browser via Alumnium).
+QA complete (2026-05-23, admin browser via agent-browser).
 
 Orders report:
 - Type column visible after Status. Observed seeded types: Subs Purchase, Subs Renew, Subs Upgrade, Subs Trial, credit purchase, Other.
@@ -34,7 +34,7 @@ Products/Variations:
 - Variations All Variations showed both rows, 2 variations/$24.98. Subscription Variations Only showed only Coffee Plan - Weekly, 1 variation/$14.99; non-sub variation disappeared.
 
 Customers:
-- customer1 row renders Member details link to `admin.php?page=arraysubs-mainadmin#/manage-members/32`. Direct click via pointer hit Alumnium out-of-bounds, JS click on same rendered link navigated successfully. Manage Members profile loaded for Customer One.
+- customer1 row renders Member details link to `admin.php?page=arraysubs-mainadmin#/manage-members/32`. Direct click via pointer hit agent-browser out-of-bounds, JS click on same rendered link navigated successfully. Manage Members profile loaded for Customer One.
 
 Browser verification complete. Issues: #117, #118.
 
@@ -42,4 +42,4 @@ Browser verification complete. Issues: #117, #118.
 Issue #117 fixed: Credit Purchase order type is now title-case in stored type values, labels, and Analytics Orders filter values. Updated existing QA HPOS meta. Verified via TypeResolver syntax, pro build, WC Analytics REST data, and WooCommerce Orders UI screenshot qa/artifacts/issue-117/wc-orders-credit-purchase-title-case.png.
 
 [[2026-05-24]] Sun 18:37
-Issue #118 fixed: Revenue report custom subscription amount cards are visible and also registered as table/value metrics. Verified build, Alumnium Revenue summary/table text, and Playwright card click + values menu; screenshot qa/artifacts/issue-118/revenue-custom-cards-columns.png.
+Issue #118 fixed: Revenue report custom subscription amount cards are visible and also registered as table/value metrics. Verified build, agent-browser Revenue summary/table text, and agent-browser card click + values menu; screenshot qa/artifacts/issue-118/revenue-custom-cards-columns.png.

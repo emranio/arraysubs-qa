@@ -19,4 +19,4 @@ Time-travel/browser follow-up for synced subscription first full renewal amount 
 
 
 
-Issue #171 fix verification (2026-06-03): after patching Skip Renewal REST status normalization, reopened https://mirror-help.arrayhash.com/wp-admin/admin.php?page=arraysubs-mainadmin#/subscriptions/detail/4242 with Playwright. The /arraysubs/v1/subscriptions/4242/skip response returned complete default fields for inactive skip state and debug.log line count stayed unchanged at 365. Screenshot: /tmp/arraysubs-issue-171-subscription-detail.png.
+Issue #171 fix verification (2026-06-03): after patching Skip Renewal REST status normalization, reopened https://mirror-help.arrayhash.com/wp-admin/admin.php?page=arraysubs-mainadmin#/subscriptions/detail/4242 with agent-browser. The /arraysubs/v1/subscriptions/4242/skip response returned complete default fields for inactive skip state and debug.log line count stayed unchanged at 365. Screenshot: /tmp/arraysubs-issue-171-subscription-detail.png.
