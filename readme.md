@@ -1,12 +1,21 @@
 # ArraySubs QA Operations
 
-Last updated: 2026-05-19
+Last updated: 2026-06-17
 
 ## Live Site Access
 
 - Admin URL: https://mirror-help.arrayhash.com/wp-admin
 - Username: `admin`
 - Password: `@GuDw(0$K7M9t8ehjqDb4Vwj`
+
+### Test customer (active subscription, features, store credit)
+
+- My Account URL: https://mirror-help.arrayhash.com/my-account
+- Username: `sync-stripe`
+- Email: `sync-stripe@example.test`
+- Password: `SyncStripe!QA2026`
+- User ID: `319`
+- Notes: holds active subscription #4406 (Basic Monthly), feature entitlements (product 197), and $50.00 store credit. Use for clean customer-portal screenshots without the Login-as-User admin banner.
 
 ## QA Scope
 
