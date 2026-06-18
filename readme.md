@@ -1,6 +1,6 @@
 # ArraySubs QA Operations
 
-Last updated: 2026-06-17
+Last updated: 2026-06-18
 
 ## Live Site Access
 
@@ -16,6 +16,19 @@ Last updated: 2026-06-17
 - Password: `SyncStripe!QA2026`
 - User ID: `319`
 - Notes: holds active subscription #4406 (Basic Monthly), feature entitlements (product 197), and $50.00 store credit. Use for clean customer-portal screenshots without the Login-as-User admin banner.
+
+### Showcase customers (richest data — for demos/screenshots)
+
+Login at https://mirror-help.arrayhash.com/my-account
+
+| User ID | Username | Email | Roles | Subs | Orders | Password |
+|---|---|---|---|---|---|---|
+| 5 | `cust1` | `cust1@test.local` | customer, pro_member | 13 | 16 | `Cust1!QA2026` |
+| 32 | `customer1` | `customer1@arraysubs.test` | customer | 3 | 12 | `Customer1!QA2026` |
+| 54 | `cust1@example.com` | `cust1@example.com` | customer, pro_member | 2 | 6 | `CustEx1!QA2026` |
+| 43 | `member-decline` | `member-decline@example.com` | customer | 1 | 7 | `MemberDecline!QA2026` |
+
+Note: `cust1` (ID 5) has the most data on the site (13 subscriptions, 16 orders). Passwords reset via WP-CLI.
 
 ## QA Scope
 
