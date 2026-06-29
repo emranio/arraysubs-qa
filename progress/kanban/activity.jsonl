@@ -901,3 +901,20 @@
 {"timestamp":"2026-06-03T13:29:59.025525602+02:00","action":"move","task_id":183,"detail":"in-progress -\u003e closed"}
 {"timestamp":"2026-06-03T15:36:06.793426695+02:00","action":"edit","task_id":182,"detail":"stage-05: Renewal Sync checkout"}
 {"timestamp":"2026-06-03T17:01:26.46840816+02:00","action":"edit","task_id":183,"detail":"stage-18: Renewal Sync first full renewal"}
+{"timestamp":"2026-06-28T17:21:47.545790085+02:00","action":"create","task_id":184,"detail":"stage-05: Cart and checkout product mix smoke"}
+{"timestamp":"2026-06-28T17:21:47.66250357+02:00","action":"create","task_id":185,"detail":"stage-09: UMP protected product page contexts"}
+{"timestamp":"2026-06-28T17:21:47.826682304+02:00","action":"create","task_id":186,"detail":"stage-03: Product page helper regression smoke"}
+{"timestamp":"2026-06-28T17:21:47.907140126+02:00","action":"create","task_id":187,"detail":"stage-11: Pro feature product page render smoke"}
+{"timestamp":"2026-06-28T17:22:01.97244834+02:00","action":"move","task_id":186,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-06-28T17:29:54.607167148+02:00","action":"move","task_id":186,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-06-28T17:30:07.982130216+02:00","action":"move","task_id":187,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-06-28T17:33:32.773087584+02:00","action":"move","task_id":187,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-06-28T17:33:53.993973575+02:00","action":"move","task_id":185,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-06-28T17:34:08.182112892+02:00","action":"edit","task_id":185,"detail":"stage-09: UMP protected product page contexts"}
+{"timestamp":"2026-06-28T17:34:27.438459206+02:00","action":"move","task_id":185,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-06-28T17:34:48.432646828+02:00","action":"move","task_id":184,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-06-28T17:38:12.332684525+02:00","action":"edit","task_id":184,"detail":"stage-05: Cart and checkout product mix smoke"}
+{"timestamp":"2026-06-28T17:38:23.645458859+02:00","action":"move","task_id":184,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-06-28T17:39:12.678827477+02:00","action":"edit","task_id":186,"detail":"stage-03: Product page helper regression smoke"}
+{"timestamp":"2026-06-28T17:39:12.67904394+02:00","action":"edit","task_id":184,"detail":"stage-05: Cart and checkout product mix smoke"}
+{"timestamp":"2026-06-28T17:39:22.047754716+02:00","action":"edit","task_id":187,"detail":"stage-11: Pro feature product page render smoke"}
