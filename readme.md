@@ -34,8 +34,8 @@ Note: `cust1` (ID 5) has the most data on the site (13 subscriptions, 16 orders)
 
 The primary QA plan is in `qa/stages/README.md`.
 
-- 21 ordered stages: `00-preflight` through `20-edge-and-regression`
-- 154 executable task files
+- 22 ordered stages: `00-preflight` through `21-flexible-renewal-sync`
+- 164 executable task files
 - Browser-first E2E QA against a real WordPress/WooCommerce site
 - ArraySubs and ArraySubsPro must both be considered unless a task explicitly says free-only or pro-only
 - Later stages depend on data created earlier, so do not reset the site between stages unless the stage file explicitly allows it

@@ -1,16 +1,15 @@
 ---
 id: 101
 title: 'stage-09: 03 Post Type Rules + Per-Post Override'
-status: in-progress
+status: closed
 priority: high
 created: 2026-05-19T22:56:12.426044701+02:00
-updated: 2026-05-21T20:07:17.578636349+02:00
+updated: 2026-07-08T02:18:27.319225+06:00
 started: 2026-05-20T13:41:52.935798254+02:00
+completed: 2026-07-08T02:18:27.328554+06:00
 tags:
     - qa
     - stage-09
-claimed_by: mold-glade
-claimed_at: 2026-05-21T20:07:17.578636249+02:00
 class: standard
 ---
 

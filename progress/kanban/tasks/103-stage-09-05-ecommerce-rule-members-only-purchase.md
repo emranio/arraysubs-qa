@@ -1,16 +1,15 @@
 ---
 id: 103
 title: 'stage-09: 05 Ecommerce Rule — Members-Only Purchase'
-status: in-progress
+status: closed
 priority: high
 created: 2026-05-19T22:56:12.745501898+02:00
-updated: 2026-05-21T20:07:17.581007047+02:00
+updated: 2026-07-08T02:18:27.337808+06:00
 started: 2026-05-20T13:41:52.939869376+02:00
+completed: 2026-07-08T02:18:27.344169+06:00
 tags:
     - qa
     - stage-09
-claimed_by: mold-glade
-claimed_at: 2026-05-21T20:07:17.581006967+02:00
 class: standard
 ---
 

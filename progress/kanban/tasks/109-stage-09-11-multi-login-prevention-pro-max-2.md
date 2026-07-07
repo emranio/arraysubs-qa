@@ -1,16 +1,15 @@
 ---
 id: 109
 title: 'stage-09: 11 Multi-Login Prevention *(Pro)* — Max 2 Sessions'
-status: in-progress
+status: closed
 priority: high
 created: 2026-05-19T22:56:13.875635105+02:00
-updated: 2026-05-21T20:07:17.587544596+02:00
+updated: 2026-07-08T02:18:27.391735+06:00
 started: 2026-05-20T13:41:52.946306008+02:00
+completed: 2026-07-08T02:18:27.400642+06:00
 tags:
     - qa
     - stage-09
-claimed_by: mold-glade
-claimed_at: 2026-05-21T20:07:17.587544466+02:00
 class: standard
 ---
 

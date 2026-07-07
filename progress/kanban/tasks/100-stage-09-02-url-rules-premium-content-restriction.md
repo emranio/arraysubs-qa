@@ -1,11 +1,12 @@
 ---
 id: 100
 title: 'stage-09: 02 URL Rules — `/premium-content` Restriction'
-status: in-progress
+status: closed
 priority: high
 created: 2026-05-19T22:56:12.22147234+02:00
-updated: 2026-05-22T03:51:36.265957912+02:00
+updated: 2026-07-08T02:18:27.311167+06:00
 started: 2026-05-20T13:41:52.930668936+02:00
+completed: 2026-07-08T02:18:27.318913+06:00
 tags:
     - qa
     - stage-09

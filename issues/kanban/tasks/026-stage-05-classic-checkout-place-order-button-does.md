@@ -1,11 +1,12 @@
 ---
 id: 26
 title: 'stage-05: Classic checkout Place order button does nothing'
-status: blocked
+status: closed
 priority: critical
 created: 2026-05-20T11:34:35.658387598+02:00
-updated: 2026-05-21T21:11:54.726018062+02:00
+updated: 2026-07-08T02:18:27.300606+06:00
 started: 2026-05-21T20:27:30.715716273+02:00
+completed: 2026-07-08T02:18:27.310266+06:00
 tags:
     - qa
     - stage-05
@@ -14,8 +15,6 @@ tags:
     - blocker
 blocked: true
 block_reason: Blocked by agent-browser injected XMLHttpRequest wrapper causing WooCommerce checkout AJAX TypeError before request reaches WordPress.
-claimed_by: mold-glade
-claimed_at: 2026-05-21T21:11:54.726017962+02:00
 class: standard
 ---
 

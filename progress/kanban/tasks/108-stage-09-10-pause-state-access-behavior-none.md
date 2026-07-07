@@ -1,16 +1,15 @@
 ---
 id: 108
 title: 'stage-09: 10 Pause-State Access Behavior (None / Limited / Full)'
-status: in-progress
+status: closed
 priority: high
 created: 2026-05-19T22:56:13.731821358+02:00
-updated: 2026-05-21T20:07:17.585900105+02:00
+updated: 2026-07-08T02:18:27.381853+06:00
 started: 2026-05-20T13:41:52.945509499+02:00
+completed: 2026-07-08T02:18:27.391441+06:00
 tags:
     - qa
     - stage-09
-claimed_by: mold-glade
-claimed_at: 2026-05-21T20:07:17.585900015+02:00
 class: standard
 ---
 

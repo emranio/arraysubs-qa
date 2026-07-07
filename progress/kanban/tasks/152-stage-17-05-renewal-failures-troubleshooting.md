@@ -1,11 +1,12 @@
 ---
 id: 152
 title: 'stage-17: 05 Renewal Failures Troubleshooting'
-status: blocked
+status: closed
 priority: medium
 created: 2026-05-19T22:56:21.230314197+02:00
-updated: 2026-05-24T12:38:50.962580251+02:00
+updated: 2026-07-08T02:18:27.477041+06:00
 started: 2026-05-23T08:06:53.464279372+02:00
+completed: 2026-07-08T02:18:27.483915+06:00
 tags:
     - qa
     - stage-17

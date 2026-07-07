@@ -1,11 +1,12 @@
 ---
 id: 153
 title: 'stage-17: 06 Portal Action Failures'
-status: blocked
+status: closed
 priority: medium
 created: 2026-05-19T22:56:21.408953271+02:00
-updated: 2026-05-24T12:57:18.496973886+02:00
+updated: 2026-07-08T02:18:27.484375+06:00
 started: 2026-05-23T08:06:53.46491936+02:00
+completed: 2026-07-08T02:18:27.49248+06:00
 tags:
     - qa
     - stage-17

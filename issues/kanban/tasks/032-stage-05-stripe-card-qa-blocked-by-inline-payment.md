@@ -1,11 +1,12 @@
 ---
 id: 32
 title: 'stage-05: Stripe card QA blocked by inline Payment Element'
-status: blocked
+status: closed
 priority: high
 created: 2026-05-20T13:08:19.332991948+02:00
-updated: 2026-05-22T02:06:44.544237828+02:00
+updated: 2026-07-08T02:18:27.311808+06:00
 started: 2026-05-22T02:04:39.259818145+02:00
+completed: 2026-07-08T02:18:27.320251+06:00
 tags:
     - qa
     - stage-05
@@ -13,8 +14,6 @@ tags:
     - checkout
     - automatic-payments
     - blocker
-claimed_by: mold-glade
-claimed_at: 2026-05-22T02:06:44.544237708+02:00
 class: standard
 ---
 

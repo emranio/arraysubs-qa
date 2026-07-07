@@ -1,16 +1,15 @@
 ---
 id: 110
 title: 'stage-10: 01 Custom Profile Fields (6 Field Types)'
-status: in-progress
+status: closed
 priority: medium
 created: 2026-05-19T22:56:13.98542954+02:00
-updated: 2026-05-22T04:06:17.600808225+02:00
+updated: 2026-07-08T02:18:27.401213+06:00
 started: 2026-05-20T13:41:52.947105763+02:00
+completed: 2026-07-08T02:18:27.444252+06:00
 tags:
     - qa
     - stage-10
-claimed_by: mold-glade
-claimed_at: 2026-05-22T04:06:17.600807975+02:00
 class: standard
 ---
 

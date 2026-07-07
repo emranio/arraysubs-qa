@@ -1,11 +1,12 @@
 ---
 id: 154
 title: 'stage-17: 07 Access-Rule Conflicts'
-status: blocked
+status: closed
 priority: medium
 created: 2026-05-19T22:56:21.597508133+02:00
-updated: 2026-05-24T13:12:04.381867534+02:00
+updated: 2026-07-08T02:18:27.492738+06:00
 started: 2026-05-23T08:06:53.465713286+02:00
+completed: 2026-07-08T02:18:27.499933+06:00
 tags:
     - qa
     - stage-17

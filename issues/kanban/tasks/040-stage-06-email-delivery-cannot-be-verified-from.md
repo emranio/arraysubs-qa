@@ -1,11 +1,12 @@
 ---
 id: 40
 title: 'stage-06: Email delivery cannot be verified from accessible QA tooling'
-status: blocked
+status: closed
 priority: high
 created: 2026-05-20T14:25:13.08882755+02:00
-updated: 2026-05-23T22:15:23.482610832+02:00
+updated: 2026-07-08T02:18:27.3209+06:00
 started: 2026-05-22T02:55:44.84847106+02:00
+completed: 2026-07-08T02:18:27.331994+06:00
 tags:
     - qa
     - stage-06

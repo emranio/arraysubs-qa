@@ -1,16 +1,15 @@
 ---
 id: 113
 title: 'stage-10: 04 Account Shortcodes & Shortcodes Reference Page'
-status: in-progress
+status: closed
 priority: medium
 created: 2026-05-19T22:56:14.351340569+02:00
-updated: 2026-05-22T04:06:17.605579387+02:00
+updated: 2026-07-08T02:18:27.469741+06:00
 started: 2026-05-20T13:41:52.951093588+02:00
+completed: 2026-07-08T02:18:27.476666+06:00
 tags:
     - qa
     - stage-10
-claimed_by: mold-glade
-claimed_at: 2026-05-22T04:06:17.605578916+02:00
 class: standard
 ---
 

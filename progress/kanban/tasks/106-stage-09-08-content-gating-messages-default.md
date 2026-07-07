@@ -1,16 +1,15 @@
 ---
 id: 106
 title: 'stage-09: 08 Content Gating Messages & Default Redirect'
-status: in-progress
+status: closed
 priority: high
 created: 2026-05-19T22:56:13.347314788+02:00
-updated: 2026-05-21T20:07:17.58414642+02:00
+updated: 2026-07-08T02:18:27.36095+06:00
 started: 2026-05-20T13:41:52.943243493+02:00
+completed: 2026-07-08T02:18:27.370851+06:00
 tags:
     - qa
     - stage-09
-claimed_by: mold-glade
-claimed_at: 2026-05-21T20:07:17.58414633+02:00
 class: standard
 ---
 

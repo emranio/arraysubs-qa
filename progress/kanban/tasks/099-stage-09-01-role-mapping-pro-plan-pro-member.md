@@ -1,16 +1,15 @@
 ---
 id: 99
 title: 'stage-09: 01 Role Mapping (Pro Plan → Pro Member)'
-status: in-progress
+status: closed
 priority: high
 created: 2026-05-19T22:56:12.084505174+02:00
-updated: 2026-05-22T04:01:10.583618723+02:00
+updated: 2026-07-08T02:18:27.29947+06:00
 started: 2026-05-20T13:41:52.929136472+02:00
+completed: 2026-07-08T02:18:27.309158+06:00
 tags:
     - qa
     - stage-09
-claimed_by: mold-glade
-claimed_at: 2026-05-22T04:01:10.583618463+02:00
 class: standard
 ---
 

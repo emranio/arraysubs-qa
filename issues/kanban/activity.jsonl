@@ -978,3 +978,6 @@
 {"timestamp":"2026-06-03T16:55:20.42604088+02:00","action":"move","task_id":171,"detail":"open -\u003e in-progress"}
 {"timestamp":"2026-06-03T17:01:26.461059331+02:00","action":"edit","task_id":171,"detail":"stage-18: Subscription detail skip state emits undefined-key warnings"}
 {"timestamp":"2026-06-03T17:01:26.595915511+02:00","action":"move","task_id":171,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-07-08T02:18:27.310881+06:00","action":"move","task_id":26,"detail":"blocked -\u003e closed"}
+{"timestamp":"2026-07-08T02:18:27.32077+06:00","action":"move","task_id":32,"detail":"blocked -\u003e closed"}
+{"timestamp":"2026-07-08T02:18:27.332547+06:00","action":"move","task_id":40,"detail":"blocked -\u003e closed"}

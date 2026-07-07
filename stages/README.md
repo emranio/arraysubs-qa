@@ -127,6 +127,7 @@ Run stages in order. Each stage builds on the artifacts of the previous one.
 | 18 | Renewal Follow-up & Time-travel | [18-renewal-followup/](18-renewal-followup/) | Successful renewals, failed-payment grace, on-hold, auto-cancel, trial conversion, different renewal price, skip/pause behaviour over time |
 | 19 | Refund Management | [19-refunds/](19-refunds/) | Refund settings, prorated refunds, refund-to-credit, post-refund subscription state |
 | 20 | Edge Cases & Final Regression | [20-edge-and-regression/](20-edge-and-regression/) | Pro deactivation, plugin deactivation, performance, concurrent actions, cron stoppage |
+| 21 | Flexible Renewal Sync (Pro) | [21-flexible-renewal-sync/](21-flexible-renewal-sync/) | Per-product segment-based first charge (full / prorate / next-cycle), full checkout + renewal verification on every supported gateway, exclusivity and gateway gating |
 
 ---
 
