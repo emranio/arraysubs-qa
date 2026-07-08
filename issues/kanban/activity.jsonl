@@ -981,3 +981,52 @@
 {"timestamp":"2026-07-08T02:18:27.310881+06:00","action":"move","task_id":26,"detail":"blocked -\u003e closed"}
 {"timestamp":"2026-07-08T02:18:27.32077+06:00","action":"move","task_id":32,"detail":"blocked -\u003e closed"}
 {"timestamp":"2026-07-08T02:18:27.332547+06:00","action":"move","task_id":40,"detail":"blocked -\u003e closed"}
+{"timestamp":"2026-07-07T23:50:30.925879298+02:00","action":"create","task_id":172,"detail":"stage-21: Order item missing renewal sync cycle start meta"}
+{"timestamp":"2026-07-08T00:05:08.907469636+02:00","action":"edit","task_id":172,"detail":"stage-21: Order item missing renewal sync cycle start meta"}
+{"timestamp":"2026-07-08T00:11:53.918557635+02:00","action":"edit","task_id":172,"detail":"stage-21: Order item missing renewal sync cycle start meta"}
+{"timestamp":"2026-07-08T00:32:02.160400116+02:00","action":"create","task_id":173,"detail":"stage-21: Stripe successful payments log duplicate webhook event DB errors"}
+{"timestamp":"2026-07-08T00:32:20.046090848+02:00","action":"edit","task_id":172,"detail":"stage-21: Order item missing renewal sync cycle start meta"}
+{"timestamp":"2026-07-08T00:46:51.53761506+02:00","action":"edit","task_id":172,"detail":"stage-21: Order item missing renewal sync cycle start meta"}
+{"timestamp":"2026-07-08T00:48:41.550530086+02:00","action":"edit","task_id":173,"detail":"stage-21: Stripe successful payments log duplicate webhook event DB errors"}
+{"timestamp":"2026-07-08T00:48:57.167572756+02:00","action":"create","task_id":174,"detail":"stage-21: Manual gateway applies Stripe minimum bump"}
+{"timestamp":"2026-07-08T00:49:19.643690833+02:00","action":"create","task_id":175,"detail":"stage-21: Stripe minimum bumped checkout lacks Payment Element"}
+{"timestamp":"2026-07-08T00:59:56.828257906+02:00","action":"edit","task_id":173,"detail":"stage-21: Stripe successful payments log duplicate webhook event DB errors"}
+{"timestamp":"2026-07-08T01:00:16.285799723+02:00","action":"create","task_id":176,"detail":"stage-21: Stripe auto-renewal sends invoice email before auto-charge"}
+{"timestamp":"2026-07-08T01:01:52.247757594+02:00","action":"create","task_id":177,"detail":"stage-21: Second synced renewal resets next date backward"}
+{"timestamp":"2026-07-08T01:15:17.407198304+02:00","action":"edit","task_id":172,"detail":"stage-21: Order item missing renewal sync cycle start meta"}
+{"timestamp":"2026-07-08T01:16:27.478658896+02:00","action":"edit","task_id":172,"detail":"stage-21: Order item missing renewal sync cycle start meta"}
+{"timestamp":"2026-07-08T01:16:27.489578754+02:00","action":"claim","task_id":172,"detail":"reef-maple"}
+{"timestamp":"2026-07-08T01:32:40.540222091+02:00","action":"create","task_id":178,"detail":"stage-21: Mixed flex and non-subscription cart is blocked"}
+{"timestamp":"2026-07-08T01:39:41.464918551+02:00","action":"create","task_id":179,"detail":"stage-21: Direct variation add-to-cart fatal in checkout"}
+{"timestamp":"2026-07-08T01:43:20.294701785+02:00","action":"edit","task_id":172,"detail":"stage-21: Order item missing renewal sync cycle start meta"}
+{"timestamp":"2026-07-08T01:52:47.748493833+02:00","action":"edit","task_id":173,"detail":"stage-21: Stripe successful payments log duplicate webhook event DB errors"}
+{"timestamp":"2026-07-08T01:52:47.749306632+02:00","action":"claim","task_id":173,"detail":"reef-maple"}
+{"timestamp":"2026-07-08T01:52:47.795589906+02:00","action":"edit","task_id":172,"detail":"stage-21: Order item missing renewal sync cycle start meta"}
+{"timestamp":"2026-07-08T07:23:08.791173818+02:00","action":"edit","task_id":179,"detail":"stage-21: Direct variation add-to-cart fatal in checkout"}
+{"timestamp":"2026-07-08T07:23:08.889798944+02:00","action":"move","task_id":179,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-07-08T07:26:16.158314714+02:00","action":"edit","task_id":172,"detail":"stage-21: Order item missing renewal sync cycle start meta"}
+{"timestamp":"2026-07-08T07:26:16.27668153+02:00","action":"move","task_id":172,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-07-08T07:27:46.986566806+02:00","action":"edit","task_id":173,"detail":"stage-21: Stripe successful payments log duplicate webhook event DB errors"}
+{"timestamp":"2026-07-08T07:27:47.187670774+02:00","action":"move","task_id":173,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-07-08T07:34:13.2217614+02:00","action":"edit","task_id":177,"detail":"stage-21: Second synced renewal resets next date backward"}
+{"timestamp":"2026-07-08T07:34:13.347268946+02:00","action":"move","task_id":177,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-07-08T07:36:03.403968698+02:00","action":"edit","task_id":173,"detail":"stage-21: Stripe successful payments log duplicate webhook event DB errors"}
+{"timestamp":"2026-07-08T07:36:03.663672819+02:00","action":"edit","task_id":176,"detail":"stage-21: Stripe auto-renewal sends invoice email before auto-charge"}
+{"timestamp":"2026-07-08T07:36:03.914923297+02:00","action":"move","task_id":176,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-07-08T07:51:20.412852809+02:00","action":"edit","task_id":174,"detail":"stage-21: Manual gateway applies Stripe minimum bump"}
+{"timestamp":"2026-07-08T07:51:20.499370834+02:00","action":"move","task_id":174,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-07-08T07:51:20.588378054+02:00","action":"edit","task_id":175,"detail":"stage-21: Stripe minimum bumped checkout lacks Payment Element"}
+{"timestamp":"2026-07-08T07:51:20.667659129+02:00","action":"move","task_id":175,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-07-08T07:57:31.99006953+02:00","action":"edit","task_id":178,"detail":"stage-21: Mixed flex and non-subscription cart is blocked"}
+{"timestamp":"2026-07-08T07:57:32.068577405+02:00","action":"move","task_id":178,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-07-08T08:01:59.291744271+02:00","action":"move","task_id":172,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-07-08T08:01:59.477942822+02:00","action":"move","task_id":173,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-07-08T08:01:59.851438027+02:00","action":"move","task_id":174,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-07-08T08:01:59.972706484+02:00","action":"move","task_id":175,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-07-08T08:02:00.207302137+02:00","action":"move","task_id":176,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-07-08T08:02:00.569522232+02:00","action":"move","task_id":177,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-07-08T08:02:00.83632187+02:00","action":"move","task_id":178,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-07-08T08:02:01.058327584+02:00","action":"move","task_id":179,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-07-08T10:59:31.189371531+02:00","action":"create","task_id":180,"detail":"one-per-product: Store API single add with quantity \u003e1 bypasses limit"}
+{"timestamp":"2026-07-08T11:06:03.511958713+02:00","action":"edit","task_id":180,"detail":"one-per-product: Store API single add with quantity \u003e1 bypasses limit"}
+{"timestamp":"2026-07-08T11:06:03.979820656+02:00","action":"move","task_id":180,"detail":"open -\u003e closed"}

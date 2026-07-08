@@ -950,3 +950,33 @@
 {"timestamp":"2026-07-08T02:51:11.823561+06:00","action":"edit","task_id":190,"detail":"stage-21: 03 Manual Gateway — Segment 2 Prorate Checkout"}
 {"timestamp":"2026-07-08T02:51:11.843665+06:00","action":"edit","task_id":191,"detail":"stage-21: 04 Manual Gateway — Segment 3 Next-Cycle Checkout"}
 {"timestamp":"2026-07-08T02:51:11.864089+06:00","action":"edit","task_id":192,"detail":"stage-21: 05 Stripe — Segment 1 Full \u0026 Segment 2 Prorate Checkout"}
+{"timestamp":"2026-07-07T23:19:57.492445252+02:00","action":"move","task_id":188,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-07-07T23:41:32.887863687+02:00","action":"edit","task_id":188,"detail":"stage-21: 01 Product Setup \u0026 Admin UI (Segment Picker)"}
+{"timestamp":"2026-07-07T23:41:33.037708239+02:00","action":"move","task_id":188,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-07-07T23:41:44.845212128+02:00","action":"move","task_id":189,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-07-07T23:50:44.57398229+02:00","action":"edit","task_id":189,"detail":"stage-21: 02 Manual Gateway — Segment 1 Full-Amount Checkout"}
+{"timestamp":"2026-07-07T23:50:44.713389566+02:00","action":"move","task_id":189,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-07-07T23:50:56.020203069+02:00","action":"move","task_id":190,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-07-08T00:05:23.178736549+02:00","action":"edit","task_id":190,"detail":"stage-21: 03 Manual Gateway — Segment 2 Prorate Checkout"}
+{"timestamp":"2026-07-08T00:05:23.452978537+02:00","action":"move","task_id":190,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-07-08T00:05:34.348663611+02:00","action":"move","task_id":191,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-07-08T00:12:06.343405398+02:00","action":"edit","task_id":191,"detail":"stage-21: 04 Manual Gateway — Segment 3 Next-Cycle Checkout"}
+{"timestamp":"2026-07-08T00:12:06.504020822+02:00","action":"move","task_id":191,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-07-08T00:12:17.968270558+02:00","action":"move","task_id":192,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-07-08T00:32:38.357754794+02:00","action":"edit","task_id":192,"detail":"stage-21: 05 Stripe — Segment 1 Full \u0026 Segment 2 Prorate Checkout"}
+{"timestamp":"2026-07-08T00:32:39.024450315+02:00","action":"move","task_id":192,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-07-08T00:32:59.579422843+02:00","action":"move","task_id":193,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-07-08T00:49:42.136120137+02:00","action":"move","task_id":193,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-07-08T00:50:13.476803594+02:00","action":"edit","task_id":193,"detail":"stage-21: 06 Stripe — Segment 3 Next-Cycle \u0026 Minimum-Charge Edge"}
+{"timestamp":"2026-07-08T00:50:28.136536545+02:00","action":"move","task_id":194,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-07-08T01:03:26.77453652+02:00","action":"edit","task_id":194,"detail":"stage-21: 07 Renewal Execution \u0026 Date Advancement (Manual + Stripe)"}
+{"timestamp":"2026-07-08T01:03:26.880200964+02:00","action":"move","task_id":194,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-07-08T01:03:40.315824489+02:00","action":"move","task_id":195,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-07-08T01:16:52.449407343+02:00","action":"edit","task_id":195,"detail":"stage-21: 08 Partition Toggles, Quantity \u0026 Day-Boundary Edges"}
+{"timestamp":"2026-07-08T01:16:52.552900914+02:00","action":"move","task_id":195,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-07-08T01:17:13.931330278+02:00","action":"move","task_id":196,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-07-08T01:34:37.838435155+02:00","action":"edit","task_id":196,"detail":"stage-21: 09 Exclusivity Rules \u0026 Gateway Gating"}
+{"timestamp":"2026-07-08T01:34:38.076317594+02:00","action":"move","task_id":196,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-07-08T01:34:54.556669477+02:00","action":"move","task_id":197,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-07-08T01:57:21.236358296+02:00","action":"edit","task_id":197,"detail":"stage-21: 10 Variable Product — Per-Variation Flexible Sync Checkout"}
+{"timestamp":"2026-07-08T01:57:21.41362137+02:00","action":"move","task_id":197,"detail":"in-progress -\u003e closed"}
