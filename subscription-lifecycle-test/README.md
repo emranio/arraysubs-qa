@@ -4,8 +4,8 @@ A 10-day, browser-first regression run against **ArraySubs 1.8.11** (free) and *
 on the shared staging site, proving that auto-renewals fire unattended and that every email the plugins
 claim to send actually arrives with the right content.
 
-- **Execution window:** D0 `2026-08-01` → D10 `2026-08-11`
-- **Automated watch window:** D1 `2026-08-02` → D12 `2026-08-13` (2 extra days to catch retry tails and grace-period cancellations)
+- **Execution window:** D0 `2026-08-02` → D10 `2026-08-12`
+- **Automated watch window:** D1 `2026-08-03` → D12 `2026-08-14` (2 extra days to catch retry tails and grace-period cancellations)
 - **Board:** `kanban/` in this directory — run `kanban-md` commands only after `cd`-ing here
 - **Issues:** `issues/*.md`, one file per finding
 - **Daily reports:** `watch-reports/D01-2026-08-02.md` …
@@ -41,6 +41,10 @@ if you find it false.
 | Checkout page | ID **8**, uses the **Block** checkout (`wp:woocommerce/checkout`) |
 | Cart page | ID 7 |
 | WP-CLI | must be run from WP root with `--allow-root` |
+| Currency | `USD` |
+| Taxes | **OFF** (`woocommerce_calc_taxes = no`) — never assert a tax line |
+| Guest checkout | `woocommerce_enable_guest_checkout = yes`, but ArraySubs **force-requires registration for subscription carts** via `woocommerce_checkout_registration_required` (`SubscriptionCheckout/Services/Hooks.php:103`, `CheckoutHelpersTrait.php:93-100`). Anonymous checkout stays possible for non-subscription carts. |
+| Grouped products | **Zero handling in either plugin** (verified by grep). Grouped-product tasks are exploratory — document behaviour, do not assert a spec. |
 
 ### WP-Cron really is running
 
@@ -50,6 +54,33 @@ complete within ~60 s of their scheduled time, and there is no backlog.
 
 **This is the load-bearing fact of the whole plan.** Renewals fire on their own, so a renewal that does *not*
 fire is a genuine bug — never mask it by force-running the hook before you have captured the evidence.
+
+### Nothing fires exactly at `_next_payment_date` — the renewal spread offset
+
+This is the fact most likely to make a tester file a false bug, so learn it before Day 0.
+
+Every scheduled renewal leg is shifted by a deterministic, permanent, per-subscription offset:
+
+```
+offset = crc32('arraysubs-spread-' . $subscription_id) % 21600      # 0 .. 6 hours
+```
+
+- `renewals.spread_window_hours` is unset here, so the default **6 h** applies, capped at 25 % of the billing
+  cycle — for any cycle of a day or longer that evaluates to the full 21600 s.
+- The **invoice** leg fires at `due + offset − 6h`. The **charge** leg fires at `due + offset`.
+- `_next_payment_date` itself is **never** shifted. Only the Action Scheduler timestamps move.
+- The offset is stable forever for a given subscription ID, and you can compute it outside WordPress:
+
+```bash
+php -r 'foreach([100,1234] as $id){$h=(int)sprintf("%u",crc32("arraysubs-spread-".$id));
+printf("id=%d offset=%ds (%s)\n",$id,$h%21600,gmdate("H:i:s",$h%21600));}'
+```
+
+**Consequence for every assertion in this plan:** assert a *window*, not a point in time. Compute the
+subscription's offset first, then expect the charge inside `[due+offset, due+offset+few minutes]`. A renewal
+that has not fired at `due` exactly is not late — it is normal.
+
+Full derivation with `file:line` citations is in `reference/SLT-REF-01-*.md`.
 
 ### Gateways in scope
 
@@ -134,6 +165,11 @@ The site is shared. These rules are not negotiable.
    cross-contamination risk in the plan.
 7. Any global setting a task changes outside the declared baseline must be recorded in that task's Notes
    and restored in the same task's teardown step.
+9. **`wp action-scheduler list` does not exist on this site.** The installed CLI exposes only `run`,
+   `status`, `source`, `clean` and friends. A few authored task bodies reference `action-scheduler list`
+   anyway — those instructions are wrong. Inspect the queue through **Tools → Scheduled Actions** in
+   wp-admin, or query `wp_actionscheduler_actions` directly (see `watch-schedule.md` for the SQL). The
+   daily facts snapshot already runs the pending / recently-attempted / failed queries for you.
 8. Classic checkout is tested on a **dedicated page** carrying `[woocommerce_checkout]`, created by
    `SLT-SETUP-01`. Page 8 stays on the Block checkout for the entire window, so classic and block tests
    never contend for the same page.
@@ -185,8 +221,9 @@ Then create a board task for it tagged `bug` so it is visible.
 3. Collects a read-only facts snapshot — subscription statuses and schedule meta, Action Scheduler activity
    for the last 36 h, pending actions for the next 48 h, failed actions, orders from the last 36 h, recent
    Mailpit messages, and the board — into `automation/logs/`.
-4. Runs Claude Code non-interactively (`claude --print --permission-mode bypassPermissions`) against that
-   day's row of `watch-schedule.md`, with a 90-minute timeout.
+4. Runs Codex non-interactively with `gpt-5.6-sol`, `model_reasoning_effort="ultra"`, and
+   `--dangerously-bypass-approvals-and-sandbox` against that day's row of `watch-schedule.md`, with a
+   90-minute timeout.
 5. The agent verifies what should have happened overnight, **executes that day's browser test tasks**,
    updates the board, files issues, and writes `watch-reports/D<NN>-<date>.md`.
 6. If the agent produces no report, the script writes a stub so a missing day is visible rather than silent.

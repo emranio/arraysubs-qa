@@ -7,7 +7,7 @@
 #   2. Works out which watch day it is; exits quietly outside D1..D12.
 #   3. Collects a deterministic facts snapshot (WP-CLI + Action Scheduler + Mailpit)
 #      so the agent starts from real data instead of re-deriving it.
-#   4. Invokes Claude Code non-interactively against that day's row of
+#   4. Invokes Codex non-interactively against that day's row of
 #      watch-schedule.md, which tells it what should have happened overnight
 #      and which browser test tasks are due that day.
 #   5. Persists the report, the facts snapshot, and a one-line run summary.
@@ -16,9 +16,9 @@
 #
 set -uo pipefail
 
-D0="2026-08-01"          # plan day zero
+D0="2026-08-02"          # plan day zero
 LAST_WATCH_DAY=12        # D1..D12 inclusive
-CLAUDE_TIMEOUT=5400      # 90 minutes; browser test days are long
+CODEX_TIMEOUT=5400       # 90 minutes; browser test days are long
 
 PLAN_DIR="/home/server-manager/www/arrayhash/mirror-help.arrayhash.com/public/wp-content/plugins/qa/subscription-lifecycle-test"
 PLUGIN_ROOT="/home/server-manager/www/arrayhash/mirror-help.arrayhash.com/public/wp-content/plugins"
@@ -62,7 +62,7 @@ DAY_LABEL="$(printf 'D%02d' "$DAY")"
 STAMP="$(date +%F)"
 REPORT_FILE="$REPORT_DIR/${DAY_LABEL}-${STAMP}.md"
 FACTS_FILE="$LOG_DIR/${DAY_LABEL}-${STAMP}-facts.txt"
-CLAUDE_LOG="$LOG_DIR/${DAY_LABEL}-${STAMP}-claude.log"
+CODEX_LOG="$LOG_DIR/${DAY_LABEL}-${STAMP}-codex.log"
 
 echo "$(date -Is) START $DAY_LABEL ($STAMP)" >>"$RUN_LOG"
 
@@ -162,19 +162,18 @@ PROMPT="${PROMPT//__PLAN_DIR__/$PLAN_DIR}"
 # --- run the agent ------------------------------------------------------------
 cd "$PLUGIN_ROOT" || exit 1
 
-timeout "$CLAUDE_TIMEOUT" claude \
-    --print \
-    --output-format text \
-    --permission-mode bypassPermissions \
-    --add-dir "$WP_ROOT" \
-    "$PROMPT" >"$CLAUDE_LOG" 2>&1
+timeout "$CODEX_TIMEOUT" codex exec \
+    --model gpt-5.6-sol \
+    --config 'model_reasoning_effort="ultra"' \
+    --dangerously-bypass-approvals-and-sandbox \
+    "$PROMPT" >"$CODEX_LOG" 2>&1
 
 rc=$?
 
 if [[ $rc -eq 124 ]]; then
-    echo "$(date -Is) TIMEOUT $DAY_LABEL after ${CLAUDE_TIMEOUT}s — see $CLAUDE_LOG" >>"$RUN_LOG"
+    echo "$(date -Is) TIMEOUT $DAY_LABEL after ${CODEX_TIMEOUT}s — see $CODEX_LOG" >>"$RUN_LOG"
 elif [[ $rc -ne 0 ]]; then
-    echo "$(date -Is) FAIL $DAY_LABEL claude exited $rc — see $CLAUDE_LOG" >>"$RUN_LOG"
+    echo "$(date -Is) FAIL $DAY_LABEL codex exited $rc — see $CODEX_LOG" >>"$RUN_LOG"
 else
     echo "$(date -Is) OK $DAY_LABEL report=$REPORT_FILE" >>"$RUN_LOG"
 fi
@@ -185,10 +184,10 @@ if [[ ! -f "$REPORT_FILE" ]]; then
     {
         echo "# SLT watch $DAY_LABEL — $STAMP"
         echo
-        echo "**The agent did not produce a report.** claude exit code: $rc"
+        echo "**The agent did not produce a report.** codex exit code: $rc"
         echo
         echo "- Facts snapshot: \`$FACTS_FILE\`"
-        echo "- Agent log: \`$CLAUDE_LOG\`"
+        echo "- Agent log: \`$CODEX_LOG\`"
         echo
         echo "Investigate manually before the next watch day."
     } >"$REPORT_FILE"

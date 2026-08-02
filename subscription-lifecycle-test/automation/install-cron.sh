@@ -32,7 +32,7 @@ PATH=/root/.local/bin:/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/b
 HOME=/root
 
 # ArraySubs subscription-lifecycle QA — daily renewal + email watch.
-# Window: D1 (2026-08-02) .. D12 (2026-08-13). The script self-removes this
+# Window: D1 (2026-08-03) .. D12 (2026-08-14). The script self-removes this
 # file once the window closes. Plan: $PLAN_DIR
 10 2 * * * root $SCRIPT
 EOF

@@ -1,2 +1,238 @@
 {"timestamp":"2026-08-01T23:39:20.659293268+02:00","action":"create","task_id":1,"detail":"SLT-TEST-00 loader smoke test"}
 {"timestamp":"2026-08-01T23:39:37.483877708+02:00","action":"delete","task_id":1,"detail":"SLT-TEST-00 loader smoke test"}
+{"timestamp":"2026-08-02T03:43:02.950782496+02:00","action":"create","task_id":1,"detail":"Block checkout happy path: slt-core buys SLT Daily Core on Stripe 4242 (control record)"}
+{"timestamp":"2026-08-02T03:43:03.05260145+02:00","action":"create","task_id":2,"detail":"Classic checkout parity: same SLT Daily Core purchase, meta diffed field-by-field against CHK-01"}
+{"timestamp":"2026-08-02T03:43:03.184656162+02:00","action":"create","task_id":3,"detail":"Buy SLT Lifetime One Time and prove no renewal is ever scheduled (12-day negative control)"}
+{"timestamp":"2026-08-02T03:43:03.252724542+02:00","action":"create","task_id":4,"detail":"SLT Fixed Three Cycles to its natural end: two renewals, expiry at the final charge, expired mail, no expiring-soon"}
+{"timestamp":"2026-08-02T03:43:03.307864595+02:00","action":"create","task_id":5,"detail":"SLT-PROD-01 Create SLT Daily Core, the day/1 workhorse subscription product"}
+{"timestamp":"2026-08-02T03:43:03.373325929+02:00","action":"create","task_id":6,"detail":"SLT-PROD-06 Create SLT Fixed Three Cycles, a day/2 subscription that expires on 2026-08-07"}
+{"timestamp":"2026-08-02T03:43:03.472961703+02:00","action":"create","task_id":7,"detail":"SLT-PROD-07 Create SLT Lifetime One Time, the never-renews negative control"}
+{"timestamp":"2026-08-02T03:43:03.543841602+02:00","action":"create","task_id":8,"detail":"SLT-PROD-13 Create SLT Flex Week Segments, the single week-interval flexible-sync product"}
+{"timestamp":"2026-08-02T03:43:03.653513928+02:00","action":"create","task_id":9,"detail":"SLT Daily Core renews unattended overnight — first cycle, spread-offset window, cron-not-CLI proof"}
+{"timestamp":"2026-08-02T03:43:03.791568065+02:00","action":"create","task_id":10,"detail":"SLT-SETUP-01 Recon environment, create SLT evidence + classic checkout pages, publish registry"}
+{"timestamp":"2026-08-02T03:43:03.929947696+02:00","action":"create","task_id":11,"detail":"SLT-SETUP-02 Apply and record the four window-wide baseline setting changes"}
+{"timestamp":"2026-08-02T03:43:04.009210842+02:00","action":"create","task_id":12,"detail":"SLT-SETUP-03 Create the SLT account matrix (7 slt-* users) and document the guest path"}
+{"timestamp":"2026-08-02T03:43:04.083487237+02:00","action":"create","task_id":13,"detail":"SLT-SYN-01 Audit simple-product Flexible Renewal Sync UI, validation and meta keys"}
+{"timestamp":"2026-08-02T03:43:04.156067235+02:00","action":"create","task_id":14,"detail":"Segment 1 full: prove the full recurring charge now and the exact next-cycle boundary date"}
+{"timestamp":"2026-08-02T03:43:04.363315836+02:00","action":"create","task_id":15,"detail":"Guest to new account: block checkout mints slt-guest-d0 mid-flow and owns order + subscription"}
+{"timestamp":"2026-08-02T03:43:04.434492517+02:00","action":"create","task_id":16,"detail":"SLTPCT20REC 20% recurring coupon on block checkout - discounted first charge, discount persists to every renewal"}
+{"timestamp":"2026-08-02T03:43:04.506432146+02:00","action":"create","task_id":17,"detail":"SLTFIX5FIRST $5 fixed one-time coupon on classic checkout - first order discounted, first renewal at full price"}
+{"timestamp":"2026-08-02T03:43:04.574888648+02:00","action":"create","task_id":18,"detail":"Prove new_subscription + admin_new_subscription at a real Stripe block checkout"}
+{"timestamp":"2026-08-02T03:43:04.668312082+02:00","action":"create","task_id":19,"detail":"SLT Renewal Price Step: prove the $5 -\u003e $20 crossover lands on renewal #2, not renewal #3"}
+{"timestamp":"2026-08-02T03:43:04.743302724+02:00","action":"create","task_id":20,"detail":"SLT-PROD-05 Create SLT Renewal Price Step with a different renewal price after 2 cycles"}
+{"timestamp":"2026-08-02T03:43:04.799347078+02:00","action":"create","task_id":21,"detail":"SLT-PROD-12 Create SLT Flex Month Segments, the single month-interval flexible-sync product"}
+{"timestamp":"2026-08-02T03:43:04.858919872+02:00","action":"create","task_id":22,"detail":"SLT-PROD-14 Create the two daily flex-sync partition products (2-active and 1-active)"}
+{"timestamp":"2026-08-02T03:43:04.919732593+02:00","action":"create","task_id":23,"detail":"SLT-PROD-16 Create SLT Retry Daily and SLT Paddle Daily, the two gateway-path products"}
+{"timestamp":"2026-08-02T03:43:04.975399406+02:00","action":"create","task_id":24,"detail":"Renewal-invoice leg: pending order and invoice email at due+offset-6h, before the charge leg"}
+{"timestamp":"2026-08-02T03:43:05.088922601+02:00","action":"create","task_id":25,"detail":"SLT-SETUP-04 Create the six SLT coupons covering recurring, one-time, N-cycle, fee and reject paths"}
+{"timestamp":"2026-08-02T03:43:05.155906726+02:00","action":"create","task_id":26,"detail":"SLT-SETUP-05 Verify Paddle sandbox readiness and record the two-gateway capability matrix"}
+{"timestamp":"2026-08-02T03:43:05.219145878+02:00","action":"create","task_id":27,"detail":"SLT-SYN-03 Create the two sync-group control products: SLT Sync Global Daily and SLT Sync Excl Probe"}
+{"timestamp":"2026-08-02T03:43:05.287130383+02:00","action":"create","task_id":28,"detail":"Two-active and one-active partitions, and that META_SEG1_END is positional"}
+{"timestamp":"2026-08-02T03:43:05.361807571+02:00","action":"create","task_id":29,"detail":"Paddle sandbox purchase: SLT Paddle Daily via overlay, webhook-paid order, next_billed_at override"}
+{"timestamp":"2026-08-02T03:43:05.508573546+02:00","action":"create","task_id":30,"detail":"Classic checkout with Stripe SCA card: 3DS at signup, then requires_action on the off-session renewal"}
+{"timestamp":"2026-08-02T03:43:05.667255917+02:00","action":"create","task_id":31,"detail":"Complete both $0.00-today trial checkouts: card still collected, first real charge scheduled"}
+{"timestamp":"2026-08-02T03:43:05.724822743+02:00","action":"create","task_id":32,"detail":"SLTREC3 vs SLTREC3NOINIT on block checkout - N-cycle counting and the exact renewal where the discount stops"}
+{"timestamp":"2026-08-02T03:43:05.809091425+02:00","action":"create","task_id":33,"detail":"First renewal declines on SLT Retry Daily: order failed, subscription stays active, retry #1 queued +24h"}
+{"timestamp":"2026-08-02T03:43:05.868650164+02:00","action":"create","task_id":34,"detail":"Trial started, trial-ending at days_before=3 and trial converted on SLT Trial Four Day"}
+{"timestamp":"2026-08-02T03:43:05.93298865+02:00","action":"create","task_id":35,"detail":"UTC+6 midnight-boundary renewal: date correctness in admin, portal, email and order"}
+{"timestamp":"2026-08-02T03:43:06.011075438+02:00","action":"create","task_id":36,"detail":"Member access reacting to status: pro_member add/remove across active-on-hold-cancelled, My Features entitlements, SLT URL gate"}
+{"timestamp":"2026-08-02T03:43:06.086270039+02:00","action":"create","task_id":37,"detail":"SLT-PROD-02 Create SLT Free Signup Daily, the $0.00-today free-signup-then-paid product"}
+{"timestamp":"2026-08-02T03:43:06.193854443+02:00","action":"create","task_id":38,"detail":"SLT-PROD-03 Create SLT Trial Four Day, the trial product with a live trial-ending reminder"}
+{"timestamp":"2026-08-02T03:43:06.256087163+02:00","action":"create","task_id":39,"detail":"SLT-PROD-09 Create SLT Grouped Set, a grouped product with two subscription children"}
+{"timestamp":"2026-08-02T03:43:06.32474526+02:00","action":"create","task_id":40,"detail":"SLT-PROD-15 Create SLT Flex Variable Daily with per-variation flexible-sync configuration"}
+{"timestamp":"2026-08-02T03:43:06.39634706+02:00","action":"create","task_id":41,"detail":"Second unassisted renewal of the same subscription — schedule re-arms at the same offset, no drift"}
+{"timestamp":"2026-08-02T03:43:06.46927711+02:00","action":"create","task_id":42,"detail":"Paddle sandbox subscription renews unattended — establish Paddle-side vs site-side driver"}
+{"timestamp":"2026-08-02T03:43:06.537400874+02:00","action":"create","task_id":43,"detail":"Stripe SCA at renewal (4000 0027 6000 3184) — verification email and link that actually completes"}
+{"timestamp":"2026-08-02T03:43:06.597287813+02:00","action":"create","task_id":44,"detail":"SLT-SYN-02 Audit variation-level Flexible Renewal Sync UI, [$loop] meta and per-variation independence"}
+{"timestamp":"2026-08-02T03:43:06.654252528+02:00","action":"create","task_id":45,"detail":"Segment 2 prorate: prove the arithmetic to the cent on week and month cycles"}
+{"timestamp":"2026-08-02T03:43:06.772636231+02:00","action":"create","task_id":46,"detail":"Variation-level flexible sync: prove the purchased variation's segment plan wins over a parent decoy"}
+{"timestamp":"2026-08-02T03:43:06.853809939+02:00","action":"create","task_id":47,"detail":"Admin-create a subscription for slt-admincreated and prove it renews unassisted"}
+{"timestamp":"2026-08-02T03:43:07.178571264+02:00","action":"create","task_id":48,"detail":"Renewal orders are correctly typed and linked to the parent subscription (HPOS)"}
+{"timestamp":"2026-08-02T03:43:07.248894087+02:00","action":"create","task_id":49,"detail":"Renewal invoice output and pay-link settling an unpaid invoice on Stripe and Paddle"}
+{"timestamp":"2026-08-02T03:43:07.312588686+02:00","action":"create","task_id":50,"detail":"Quantity 3 on a subscription line — assert order total, _quantity, unit _recurring_amount and the renewal amount"}
+{"timestamp":"2026-08-02T03:43:07.424944701+02:00","action":"create","task_id":51,"detail":"SLTNOSUB rejected on a subscription-only classic cart - exact message, mixed-cart partial discount, undiscounted renewal"}
+{"timestamp":"2026-08-02T03:43:07.565315836+02:00","action":"create","task_id":52,"detail":"Renewal ALERT: prove the 3-day upcoming-renewal reminder fires once, on the right subscription, and never twice"}
+{"timestamp":"2026-08-02T03:43:07.640397046+02:00","action":"create","task_id":53,"detail":"Payment received email after real unattended renewals on Stripe and Paddle"}
+{"timestamp":"2026-08-02T03:43:07.723827149+02:00","action":"create","task_id":54,"detail":"On-hold, pending-cancellation and cancelled emails through real status transitions"}
+{"timestamp":"2026-08-02T03:43:07.789935586+02:00","action":"create","task_id":55,"detail":"Toggle the Subscription On Hold customer email OFF, prove silence, restore ON, prove delivery"}
+{"timestamp":"2026-08-02T03:43:07.921757325+02:00","action":"create","task_id":56,"detail":"Override subject, heading and content on New Subscription with merge tags and prove real-value rendering"}
+{"timestamp":"2026-08-02T03:43:07.995825481+02:00","action":"create","task_id":57,"detail":"Reconcile the full Mailpit set for one SLT Daily Core renewal — no double-send, nothing missing"}
+{"timestamp":"2026-08-02T03:43:08.068215417+02:00","action":"create","task_id":58,"detail":"SLT-PROD-04 Create SLT Signup Fee Daily with a $15.00 one-time signup fee"}
+{"timestamp":"2026-08-02T03:43:08.133911658+02:00","action":"create","task_id":59,"detail":"SLT-PROD-10 Create SLT Box Daily (pro Subscription Box) plus its three eligible children"}
+{"timestamp":"2026-08-02T03:43:08.236323995+02:00","action":"create","task_id":60,"detail":"SLT-PROD-11 Create the four-product plan ladder and wire upgrade/downgrade/crossgrade links"}
+{"timestamp":"2026-08-02T03:43:08.375032679+02:00","action":"create","task_id":61,"detail":"SLT-SYN-04 Prove global sync_to_billing_cycle=true + first_charge_mode=full, and that flex overrides it"}
+{"timestamp":"2026-08-02T03:43:08.524651958+02:00","action":"create","task_id":62,"detail":"Quantity 3 on a segment-2 prorated first charge: prove the proration multiplies per unit"}
+{"timestamp":"2026-08-02T03:43:08.613342663+02:00","action":"create","task_id":63,"detail":"Admin schedule change must reschedule both renewal legs; next-payment-date is API-locked"}
+{"timestamp":"2026-08-02T03:43:08.696107889+02:00","action":"create","task_id":64,"detail":"Existing active subscriber buys a second, different subscription — auto_migrate_on_checkout is gated off; document what migration would do"}
+{"timestamp":"2026-08-02T03:43:08.791267161+02:00","action":"create","task_id":65,"detail":"Buy SLT Box Daily through the wizard: contents selection, order lines and box meta on the subscription"}
+{"timestamp":"2026-08-02T03:43:08.904831863+02:00","action":"create","task_id":66,"detail":"Grace phase 1: active to on-hold one day after the due date, with the customer-only on-hold email"}
+{"timestamp":"2026-08-02T03:43:08.995616301+02:00","action":"create","task_id":67,"detail":"Renewal invoice email: content, UTC+6 due date, and a pay-link that resolves to a real payable order"}
+{"timestamp":"2026-08-02T03:43:09.081020875+02:00","action":"create","task_id":68,"detail":"Disable all four admin emails, prove admin silence with customer mail unaffected, restore and re-prove"}
+{"timestamp":"2026-08-02T03:43:09.157588118+02:00","action":"create","task_id":69,"detail":"Concurrent renewals in one Action Scheduler window: no skips, no double charges, offsets stagger"}
+{"timestamp":"2026-08-02T03:43:09.22752319+02:00","action":"create","task_id":70,"detail":"My Account subscriptions list and detail for slt-core - every field and every self-service action under the frozen baseline"}
+{"timestamp":"2026-08-02T03:43:09.290372306+02:00","action":"create","task_id":71,"detail":"SLT-PROD-08 Create SLT Variable Daily with four subscription variations incl. a $0 probe"}
+{"timestamp":"2026-08-02T03:43:09.353745087+02:00","action":"create","task_id":72,"detail":"SLT-SW-00 Seed the plan ladder: slt-switch buys SLT Plan Basic and SLT Plan Pro"}
+{"timestamp":"2026-08-02T03:43:09.417931619+02:00","action":"create","task_id":73,"detail":"Retention: accept the 20%-for-3-cycles discount and prove exactly 3 discounted renewals, plus a downgrade offer"}
+{"timestamp":"2026-08-02T03:43:09.478320713+02:00","action":"create","task_id":74,"detail":"Segment 3 next_cycle: full charge now, first renewal exactly one cycle past segment 1's"}
+{"timestamp":"2026-08-02T03:43:09.549591327+02:00","action":"create","task_id":75,"detail":"Flexible sync exclusivity negatives: renewal-price, trial and lifetime products refuse the plan even when meta is force-set"}
+{"timestamp":"2026-08-02T03:43:09.616764394+02:00","action":"create","task_id":76,"detail":"Subscription notes (auto + manual) and the pro Audits screens for a failed renewal"}
+{"timestamp":"2026-08-02T03:43:09.678287635+02:00","action":"create","task_id":77,"detail":"Two different subscription products in one cart must be rejected — capture the exact string on every add-to-cart surface"}
+{"timestamp":"2026-08-02T03:43:09.743702321+02:00","action":"create","task_id":78,"detail":"Anonymous guest checkout of a non-subscription cart must still work — forced registration is scoped to subscription carts only"}
+{"timestamp":"2026-08-02T03:43:09.83421271+02:00","action":"create","task_id":79,"detail":"Buy two SLT Variable Daily tiers and prove per-variation config lands on the subscription"}
+{"timestamp":"2026-08-02T03:43:09.92098684+02:00","action":"create","task_id":80,"detail":"EXPLORATORY: SLT Grouped Set rendering, add-to-cart probes, and one order through the grouped form"}
+{"timestamp":"2026-08-02T03:43:09.993308699+02:00","action":"create","task_id":81,"detail":"Retry attempts 2 and 3 reuse the same failed order, then the 4th charge hits the 3-retry cap"}
+{"timestamp":"2026-08-02T03:43:10.058537841+02:00","action":"create","task_id":82,"detail":"Payment failed: one customer + one admin email per retry attempt, and whether the attempt number is visible"}
+{"timestamp":"2026-08-02T03:43:10.133640852+02:00","action":"create","task_id":83,"detail":"Webhook replay idempotency: one Stripe and one Paddle renewal event, no duplicates"}
+{"timestamp":"2026-08-02T03:43:10.210457178+02:00","action":"create","task_id":84,"detail":"SKIP renewal on S5: one cycle then the max three, with undo, clamp, and the zero-email finding"}
+{"timestamp":"2026-08-02T03:43:10.274393485+02:00","action":"create","task_id":85,"detail":"Update the Stripe payment method from My Account and prove the next unassisted renewal charges the new card"}
+{"timestamp":"2026-08-02T03:43:10.354528933+02:00","action":"create","task_id":86,"detail":"Upgrade SLT Plan Basic to SLT Plan Pro on Stripe with prorate_immediately arithmetic"}
+{"timestamp":"2026-08-02T03:43:10.442333931+02:00","action":"create","task_id":87,"detail":"Mid-cycle Basic→Pro upgrade, then prove the D6 renewal charges $15.00 on the unchanged due date"}
+{"timestamp":"2026-08-02T03:43:10.549556422+02:00","action":"create","task_id":88,"detail":"Gateway gating for flexible sync: Paddle hidden from the DOM and blocked at submit, Stripe syncs to the midnight boundary"}
+{"timestamp":"2026-08-02T03:43:10.617335395+02:00","action":"create","task_id":89,"detail":"Admin status ladder active to on-hold to active to cancelled: emails and scheduler side effects"}
+{"timestamp":"2026-08-02T03:43:10.687717637+02:00","action":"create","task_id":90,"detail":"Mixed cart: subscription + plain product — one order, only the subscription line creates a subscription, only it renews"}
+{"timestamp":"2026-08-02T03:43:10.748450028+02:00","action":"create","task_id":91,"detail":"HTML vs plain-text rendering of the renewal invoice and payment-received emails, and link resolution"}
+{"timestamp":"2026-08-02T03:43:10.814252005+02:00","action":"create","task_id":92,"detail":"Orphan and edge states: product trashed, price edited, customer deleted mid-cycle (exploratory)"}
+{"timestamp":"2026-08-02T03:43:10.880225421+02:00","action":"create","task_id":93,"detail":"EARLY renew from the customer portal: full amount, next date anchored to the original due date, legs replaced"}
+{"timestamp":"2026-08-02T03:43:10.951038144+02:00","action":"create","task_id":94,"detail":"Update the Paddle payment method and prove the next Paddle-driven renewal uses it, plus the missing local update surface"}
+{"timestamp":"2026-08-02T03:43:11.019510956+02:00","action":"create","task_id":95,"detail":"Crossgrade SLT Plan Pro to the equal-priced SLT Plan Peer and prove the date does not shift"}
+{"timestamp":"2026-08-02T03:43:11.087591651+02:00","action":"create","task_id":96,"detail":"Upgrade a Paddle-billed ladder subscription and prove the Paddle-side price is not updated"}
+{"timestamp":"2026-08-02T03:43:11.151551643+02:00","action":"create","task_id":97,"detail":"Variable-product variation switch (Starter→Plus) plus on-hold and pending-cancellation switch refusals"}
+{"timestamp":"2026-08-02T03:43:11.218921826+02:00","action":"create","task_id":98,"detail":"Pending cancellation with a required reason and declined offers, then customer reactivation"}
+{"timestamp":"2026-08-02T03:43:11.289074652+02:00","action":"create","task_id":99,"detail":"Calendar overflow on the month flex product: the 31st day is absorbed into the last active segment"}
+{"timestamp":"2026-08-02T03:43:11.358671765+02:00","action":"create","task_id":100,"detail":"Subscriptions list: status tabs, search, gateway filter, columns, pagination, delete guardrails"}
+{"timestamp":"2026-08-02T03:43:11.42136421+02:00","action":"create","task_id":101,"detail":"Grace phase 2: terminal cancellation three days after the hold, with customer and admin cancel emails"}
+{"timestamp":"2026-08-02T03:43:11.498269872+02:00","action":"create","task_id":102,"detail":"Mid-grace recovery: new card in My Account, pay the failed renewal, and prove the next-payment anchor"}
+{"timestamp":"2026-08-02T03:43:11.574589745+02:00","action":"create","task_id":103,"detail":"Customer view of an unpaid renewal invoice and paying it from the portal before the automatic charge leg"}
+{"timestamp":"2026-08-02T03:43:11.66300097+02:00","action":"create","task_id":104,"detail":"Admin-side repeat of the Basic to Pro upgrade and record-for-record diff against SLT-SW-01"}
+{"timestamp":"2026-08-02T03:43:11.739200119+02:00","action":"create","task_id":105,"detail":"Charge a non-zero $7.50 upgrade switch fee on Pro→Enterprise and restore the fee to 0 in-task"}
+{"timestamp":"2026-08-02T03:43:11.849304628+02:00","action":"create","task_id":106,"detail":"Renewal execution after a synced first charge: second charge full on the boundary, third on the grid"}
+{"timestamp":"2026-08-02T03:43:11.924591169+02:00","action":"create","task_id":107,"detail":"Expired, reactivated and auto-downgrade emails, incl. the expiry-suppression negative"}
+{"timestamp":"2026-08-02T03:43:12.001730537+02:00","action":"create","task_id":108,"detail":"Expiring-soon at days_before=7 and card-expiring: two emails nothing can trigger"}
+{"timestamp":"2026-08-02T03:43:12.077963177+02:00","action":"create","task_id":109,"detail":"Negative sweep: cancelled gets no reminders, lifetime gets no renewal mail, expired gets no further mail"}
+{"timestamp":"2026-08-02T03:43:12.150082911+02:00","action":"create","task_id":110,"detail":"LATE renewal on S5: prove the schedule catches up to the cycle grid and that a past computed date queues zero legs"}
+{"timestamp":"2026-08-02T03:43:12.234561063+02:00","action":"create","task_id":111,"detail":"Customer downgrade applies now, and expiry auto-downgrade with its email on the D8 drain day"}
+{"timestamp":"2026-08-02T03:43:12.313435997+02:00","action":"create","task_id":112,"detail":"SLT-TT-00 D8 time-travel pre-flight: snapshot the queue and every non-SLT next-payment date"}
+{"timestamp":"2026-08-02T03:43:12.382024785+02:00","action":"create","task_id":113,"detail":"Subscription detail screen: every field, dates, schedule, related orders, gateway panel"}
+{"timestamp":"2026-08-02T03:43:12.458838596+02:00","action":"create","task_id":114,"detail":"Refund a renewal order: gateway refund, subscription effect, and emails"}
+{"timestamp":"2026-08-02T03:43:12.53893962+02:00","action":"create","task_id":115,"detail":"Capability gating: shop_manager vs editor vs subscriber on every admin surface"}
+{"timestamp":"2026-08-02T03:43:12.610365794+02:00","action":"create","task_id":116,"detail":"End-of-window log sweep, failed-action audit and cycle-to-order reconciliation"}
+{"timestamp":"2026-08-02T03:43:12.682575875+02:00","action":"create","task_id":117,"detail":"SLT-SETUP-99 Restore baseline settings and delete every SLT artifact"}
+{"timestamp":"2026-08-02T03:43:12.750844569+02:00","action":"create","task_id":118,"detail":"SLT-SETUP-99A D10 settings restore and partial cancellation — no deletions"}
+{"timestamp":"2026-08-02T03:43:12.819991034+02:00","action":"create","task_id":119,"detail":"SLT-SETUP-99B Post-watch teardown on 2026-08-15 — delete every SLT artifact"}
+{"timestamp":"2026-08-02T03:43:12.9074888+02:00","action":"edit","task_id":1,"detail":"Block checkout happy path: slt-core buys SLT Daily Core on Stripe 4242 (control record)"}
+{"timestamp":"2026-08-02T03:43:13.000067945+02:00","action":"edit","task_id":2,"detail":"Classic checkout parity: same SLT Daily Core purchase, meta diffed field-by-field against CHK-01"}
+{"timestamp":"2026-08-02T03:43:13.071439296+02:00","action":"edit","task_id":3,"detail":"Buy SLT Lifetime One Time and prove no renewal is ever scheduled (12-day negative control)"}
+{"timestamp":"2026-08-02T03:43:13.137579842+02:00","action":"edit","task_id":4,"detail":"SLT Fixed Three Cycles to its natural end: two renewals, expiry at the final charge, expired mail, no expiring-soon"}
+{"timestamp":"2026-08-02T03:43:13.207600974+02:00","action":"edit","task_id":5,"detail":"SLT-PROD-01 Create SLT Daily Core, the day/1 workhorse subscription product"}
+{"timestamp":"2026-08-02T03:43:13.29419516+02:00","action":"edit","task_id":6,"detail":"SLT-PROD-06 Create SLT Fixed Three Cycles, a day/2 subscription that expires on 2026-08-07"}
+{"timestamp":"2026-08-02T03:43:13.394568376+02:00","action":"edit","task_id":7,"detail":"SLT-PROD-07 Create SLT Lifetime One Time, the never-renews negative control"}
+{"timestamp":"2026-08-02T03:43:13.539657874+02:00","action":"edit","task_id":8,"detail":"SLT-PROD-13 Create SLT Flex Week Segments, the single week-interval flexible-sync product"}
+{"timestamp":"2026-08-02T03:43:13.619956615+02:00","action":"edit","task_id":9,"detail":"SLT Daily Core renews unattended overnight — first cycle, spread-offset window, cron-not-CLI proof"}
+{"timestamp":"2026-08-02T03:43:13.722057753+02:00","action":"edit","task_id":11,"detail":"SLT-SETUP-02 Apply and record the four window-wide baseline setting changes"}
+{"timestamp":"2026-08-02T03:43:13.836657601+02:00","action":"edit","task_id":12,"detail":"SLT-SETUP-03 Create the SLT account matrix (7 slt-* users) and document the guest path"}
+{"timestamp":"2026-08-02T03:43:13.950951299+02:00","action":"edit","task_id":13,"detail":"SLT-SYN-01 Audit simple-product Flexible Renewal Sync UI, validation and meta keys"}
+{"timestamp":"2026-08-02T03:43:14.090315832+02:00","action":"edit","task_id":14,"detail":"Segment 1 full: prove the full recurring charge now and the exact next-cycle boundary date"}
+{"timestamp":"2026-08-02T03:43:14.199251007+02:00","action":"edit","task_id":15,"detail":"Guest to new account: block checkout mints slt-guest-d0 mid-flow and owns order + subscription"}
+{"timestamp":"2026-08-02T03:43:14.334436631+02:00","action":"edit","task_id":16,"detail":"SLTPCT20REC 20% recurring coupon on block checkout - discounted first charge, discount persists to every renewal"}
+{"timestamp":"2026-08-02T03:43:14.496908337+02:00","action":"edit","task_id":17,"detail":"SLTFIX5FIRST $5 fixed one-time coupon on classic checkout - first order discounted, first renewal at full price"}
+{"timestamp":"2026-08-02T03:43:14.590249829+02:00","action":"edit","task_id":18,"detail":"Prove new_subscription + admin_new_subscription at a real Stripe block checkout"}
+{"timestamp":"2026-08-02T03:43:14.735650095+02:00","action":"edit","task_id":19,"detail":"SLT Renewal Price Step: prove the $5 -\u003e $20 crossover lands on renewal #2, not renewal #3"}
+{"timestamp":"2026-08-02T03:43:14.903952752+02:00","action":"edit","task_id":20,"detail":"SLT-PROD-05 Create SLT Renewal Price Step with a different renewal price after 2 cycles"}
+{"timestamp":"2026-08-02T03:43:14.999335279+02:00","action":"edit","task_id":21,"detail":"SLT-PROD-12 Create SLT Flex Month Segments, the single month-interval flexible-sync product"}
+{"timestamp":"2026-08-02T03:43:15.084416863+02:00","action":"edit","task_id":22,"detail":"SLT-PROD-14 Create the two daily flex-sync partition products (2-active and 1-active)"}
+{"timestamp":"2026-08-02T03:43:15.169290691+02:00","action":"edit","task_id":23,"detail":"SLT-PROD-16 Create SLT Retry Daily and SLT Paddle Daily, the two gateway-path products"}
+{"timestamp":"2026-08-02T03:43:15.270132547+02:00","action":"edit","task_id":24,"detail":"Renewal-invoice leg: pending order and invoice email at due+offset-6h, before the charge leg"}
+{"timestamp":"2026-08-02T03:43:15.469456374+02:00","action":"edit","task_id":25,"detail":"SLT-SETUP-04 Create the six SLT coupons covering recurring, one-time, N-cycle, fee and reject paths"}
+{"timestamp":"2026-08-02T03:43:15.565712405+02:00","action":"edit","task_id":26,"detail":"SLT-SETUP-05 Verify Paddle sandbox readiness and record the two-gateway capability matrix"}
+{"timestamp":"2026-08-02T03:43:15.652939708+02:00","action":"edit","task_id":27,"detail":"SLT-SYN-03 Create the two sync-group control products: SLT Sync Global Daily and SLT Sync Excl Probe"}
+{"timestamp":"2026-08-02T03:43:15.7277963+02:00","action":"edit","task_id":28,"detail":"Two-active and one-active partitions, and that META_SEG1_END is positional"}
+{"timestamp":"2026-08-02T03:43:15.799640922+02:00","action":"edit","task_id":29,"detail":"Paddle sandbox purchase: SLT Paddle Daily via overlay, webhook-paid order, next_billed_at override"}
+{"timestamp":"2026-08-02T03:43:15.872828891+02:00","action":"edit","task_id":30,"detail":"Classic checkout with Stripe SCA card: 3DS at signup, then requires_action on the off-session renewal"}
+{"timestamp":"2026-08-02T03:43:15.94996407+02:00","action":"edit","task_id":31,"detail":"Complete both $0.00-today trial checkouts: card still collected, first real charge scheduled"}
+{"timestamp":"2026-08-02T03:43:16.033063649+02:00","action":"edit","task_id":32,"detail":"SLTREC3 vs SLTREC3NOINIT on block checkout - N-cycle counting and the exact renewal where the discount stops"}
+{"timestamp":"2026-08-02T03:43:16.118054715+02:00","action":"edit","task_id":33,"detail":"First renewal declines on SLT Retry Daily: order failed, subscription stays active, retry #1 queued +24h"}
+{"timestamp":"2026-08-02T03:43:16.238125074+02:00","action":"edit","task_id":34,"detail":"Trial started, trial-ending at days_before=3 and trial converted on SLT Trial Four Day"}
+{"timestamp":"2026-08-02T03:43:16.351536983+02:00","action":"edit","task_id":35,"detail":"UTC+6 midnight-boundary renewal: date correctness in admin, portal, email and order"}
+{"timestamp":"2026-08-02T03:43:16.447334842+02:00","action":"edit","task_id":36,"detail":"Member access reacting to status: pro_member add/remove across active-on-hold-cancelled, My Features entitlements, SLT URL gate"}
+{"timestamp":"2026-08-02T03:43:16.518732854+02:00","action":"edit","task_id":37,"detail":"SLT-PROD-02 Create SLT Free Signup Daily, the $0.00-today free-signup-then-paid product"}
+{"timestamp":"2026-08-02T03:43:16.617722457+02:00","action":"edit","task_id":38,"detail":"SLT-PROD-03 Create SLT Trial Four Day, the trial product with a live trial-ending reminder"}
+{"timestamp":"2026-08-02T03:43:16.694050796+02:00","action":"edit","task_id":39,"detail":"SLT-PROD-09 Create SLT Grouped Set, a grouped product with two subscription children"}
+{"timestamp":"2026-08-02T03:43:16.773670955+02:00","action":"edit","task_id":40,"detail":"SLT-PROD-15 Create SLT Flex Variable Daily with per-variation flexible-sync configuration"}
+{"timestamp":"2026-08-02T03:43:16.900435821+02:00","action":"edit","task_id":41,"detail":"Second unassisted renewal of the same subscription — schedule re-arms at the same offset, no drift"}
+{"timestamp":"2026-08-02T03:43:16.991337517+02:00","action":"edit","task_id":42,"detail":"Paddle sandbox subscription renews unattended — establish Paddle-side vs site-side driver"}
+{"timestamp":"2026-08-02T03:43:17.075799288+02:00","action":"edit","task_id":43,"detail":"Stripe SCA at renewal (4000 0027 6000 3184) — verification email and link that actually completes"}
+{"timestamp":"2026-08-02T03:43:17.156405671+02:00","action":"edit","task_id":44,"detail":"SLT-SYN-02 Audit variation-level Flexible Renewal Sync UI, [$loop] meta and per-variation independence"}
+{"timestamp":"2026-08-02T03:43:17.251408572+02:00","action":"edit","task_id":45,"detail":"Segment 2 prorate: prove the arithmetic to the cent on week and month cycles"}
+{"timestamp":"2026-08-02T03:43:17.334479146+02:00","action":"edit","task_id":46,"detail":"Variation-level flexible sync: prove the purchased variation's segment plan wins over a parent decoy"}
+{"timestamp":"2026-08-02T03:43:17.419648934+02:00","action":"edit","task_id":47,"detail":"Admin-create a subscription for slt-admincreated and prove it renews unassisted"}
+{"timestamp":"2026-08-02T03:43:17.490611727+02:00","action":"edit","task_id":48,"detail":"Renewal orders are correctly typed and linked to the parent subscription (HPOS)"}
+{"timestamp":"2026-08-02T03:43:17.614565366+02:00","action":"edit","task_id":49,"detail":"Renewal invoice output and pay-link settling an unpaid invoice on Stripe and Paddle"}
+{"timestamp":"2026-08-02T03:43:17.716941346+02:00","action":"edit","task_id":50,"detail":"Quantity 3 on a subscription line — assert order total, _quantity, unit _recurring_amount and the renewal amount"}
+{"timestamp":"2026-08-02T03:43:17.829762486+02:00","action":"edit","task_id":51,"detail":"SLTNOSUB rejected on a subscription-only classic cart - exact message, mixed-cart partial discount, undiscounted renewal"}
+{"timestamp":"2026-08-02T03:43:17.951116743+02:00","action":"edit","task_id":52,"detail":"Renewal ALERT: prove the 3-day upcoming-renewal reminder fires once, on the right subscription, and never twice"}
+{"timestamp":"2026-08-02T03:43:18.044545627+02:00","action":"edit","task_id":53,"detail":"Payment received email after real unattended renewals on Stripe and Paddle"}
+{"timestamp":"2026-08-02T03:43:18.146651745+02:00","action":"edit","task_id":54,"detail":"On-hold, pending-cancellation and cancelled emails through real status transitions"}
+{"timestamp":"2026-08-02T03:43:18.237287315+02:00","action":"edit","task_id":55,"detail":"Toggle the Subscription On Hold customer email OFF, prove silence, restore ON, prove delivery"}
+{"timestamp":"2026-08-02T03:43:18.326699039+02:00","action":"edit","task_id":56,"detail":"Override subject, heading and content on New Subscription with merge tags and prove real-value rendering"}
+{"timestamp":"2026-08-02T03:43:18.406680571+02:00","action":"edit","task_id":57,"detail":"Reconcile the full Mailpit set for one SLT Daily Core renewal — no double-send, nothing missing"}
+{"timestamp":"2026-08-02T03:43:18.479074946+02:00","action":"edit","task_id":58,"detail":"SLT-PROD-04 Create SLT Signup Fee Daily with a $15.00 one-time signup fee"}
+{"timestamp":"2026-08-02T03:43:18.554268163+02:00","action":"edit","task_id":59,"detail":"SLT-PROD-10 Create SLT Box Daily (pro Subscription Box) plus its three eligible children"}
+{"timestamp":"2026-08-02T03:43:18.627817375+02:00","action":"edit","task_id":60,"detail":"SLT-PROD-11 Create the four-product plan ladder and wire upgrade/downgrade/crossgrade links"}
+{"timestamp":"2026-08-02T03:43:18.741309553+02:00","action":"edit","task_id":61,"detail":"SLT-SYN-04 Prove global sync_to_billing_cycle=true + first_charge_mode=full, and that flex overrides it"}
+{"timestamp":"2026-08-02T03:43:18.815634266+02:00","action":"edit","task_id":62,"detail":"Quantity 3 on a segment-2 prorated first charge: prove the proration multiplies per unit"}
+{"timestamp":"2026-08-02T03:43:18.934086577+02:00","action":"edit","task_id":63,"detail":"Admin schedule change must reschedule both renewal legs; next-payment-date is API-locked"}
+{"timestamp":"2026-08-02T03:43:19.118503327+02:00","action":"edit","task_id":64,"detail":"Existing active subscriber buys a second, different subscription — auto_migrate_on_checkout is gated off; document what migration would do"}
+{"timestamp":"2026-08-02T03:43:19.238297212+02:00","action":"edit","task_id":65,"detail":"Buy SLT Box Daily through the wizard: contents selection, order lines and box meta on the subscription"}
+{"timestamp":"2026-08-02T03:43:19.327066301+02:00","action":"edit","task_id":66,"detail":"Grace phase 1: active to on-hold one day after the due date, with the customer-only on-hold email"}
+{"timestamp":"2026-08-02T03:43:19.460988726+02:00","action":"edit","task_id":67,"detail":"Renewal invoice email: content, UTC+6 due date, and a pay-link that resolves to a real payable order"}
+{"timestamp":"2026-08-02T03:43:19.545445628+02:00","action":"edit","task_id":68,"detail":"Disable all four admin emails, prove admin silence with customer mail unaffected, restore and re-prove"}
+{"timestamp":"2026-08-02T03:43:19.655279855+02:00","action":"edit","task_id":69,"detail":"Concurrent renewals in one Action Scheduler window: no skips, no double charges, offsets stagger"}
+{"timestamp":"2026-08-02T03:43:19.73337569+02:00","action":"edit","task_id":70,"detail":"My Account subscriptions list and detail for slt-core - every field and every self-service action under the frozen baseline"}
+{"timestamp":"2026-08-02T03:43:19.835058841+02:00","action":"edit","task_id":71,"detail":"SLT-PROD-08 Create SLT Variable Daily with four subscription variations incl. a $0 probe"}
+{"timestamp":"2026-08-02T03:43:19.938592554+02:00","action":"edit","task_id":72,"detail":"SLT-SW-00 Seed the plan ladder: slt-switch buys SLT Plan Basic and SLT Plan Pro"}
+{"timestamp":"2026-08-02T03:43:20.078423825+02:00","action":"edit","task_id":73,"detail":"Retention: accept the 20%-for-3-cycles discount and prove exactly 3 discounted renewals, plus a downgrade offer"}
+{"timestamp":"2026-08-02T03:43:20.198725955+02:00","action":"edit","task_id":74,"detail":"Segment 3 next_cycle: full charge now, first renewal exactly one cycle past segment 1's"}
+{"timestamp":"2026-08-02T03:43:20.284116503+02:00","action":"edit","task_id":75,"detail":"Flexible sync exclusivity negatives: renewal-price, trial and lifetime products refuse the plan even when meta is force-set"}
+{"timestamp":"2026-08-02T03:43:20.382988267+02:00","action":"edit","task_id":76,"detail":"Subscription notes (auto + manual) and the pro Audits screens for a failed renewal"}
+{"timestamp":"2026-08-02T03:43:20.546748149+02:00","action":"edit","task_id":77,"detail":"Two different subscription products in one cart must be rejected — capture the exact string on every add-to-cart surface"}
+{"timestamp":"2026-08-02T03:43:20.639582748+02:00","action":"edit","task_id":78,"detail":"Anonymous guest checkout of a non-subscription cart must still work — forced registration is scoped to subscription carts only"}
+{"timestamp":"2026-08-02T03:43:20.709746655+02:00","action":"edit","task_id":79,"detail":"Buy two SLT Variable Daily tiers and prove per-variation config lands on the subscription"}
+{"timestamp":"2026-08-02T03:43:20.78111375+02:00","action":"edit","task_id":80,"detail":"EXPLORATORY: SLT Grouped Set rendering, add-to-cart probes, and one order through the grouped form"}
+{"timestamp":"2026-08-02T03:43:20.863048312+02:00","action":"edit","task_id":81,"detail":"Retry attempts 2 and 3 reuse the same failed order, then the 4th charge hits the 3-retry cap"}
+{"timestamp":"2026-08-02T03:43:20.94655611+02:00","action":"edit","task_id":82,"detail":"Payment failed: one customer + one admin email per retry attempt, and whether the attempt number is visible"}
+{"timestamp":"2026-08-02T03:43:21.036974868+02:00","action":"edit","task_id":83,"detail":"Webhook replay idempotency: one Stripe and one Paddle renewal event, no duplicates"}
+{"timestamp":"2026-08-02T03:43:21.128067218+02:00","action":"edit","task_id":84,"detail":"SKIP renewal on S5: one cycle then the max three, with undo, clamp, and the zero-email finding"}
+{"timestamp":"2026-08-02T03:43:21.225107466+02:00","action":"edit","task_id":85,"detail":"Update the Stripe payment method from My Account and prove the next unassisted renewal charges the new card"}
+{"timestamp":"2026-08-02T03:43:21.306536348+02:00","action":"edit","task_id":86,"detail":"Upgrade SLT Plan Basic to SLT Plan Pro on Stripe with prorate_immediately arithmetic"}
+{"timestamp":"2026-08-02T03:43:21.433289602+02:00","action":"edit","task_id":87,"detail":"Mid-cycle Basic→Pro upgrade, then prove the D6 renewal charges $15.00 on the unchanged due date"}
+{"timestamp":"2026-08-02T03:43:21.529445277+02:00","action":"edit","task_id":88,"detail":"Gateway gating for flexible sync: Paddle hidden from the DOM and blocked at submit, Stripe syncs to the midnight boundary"}
+{"timestamp":"2026-08-02T03:43:21.61611313+02:00","action":"edit","task_id":89,"detail":"Admin status ladder active to on-hold to active to cancelled: emails and scheduler side effects"}
+{"timestamp":"2026-08-02T03:43:21.75956311+02:00","action":"edit","task_id":90,"detail":"Mixed cart: subscription + plain product — one order, only the subscription line creates a subscription, only it renews"}
+{"timestamp":"2026-08-02T03:43:21.865961959+02:00","action":"edit","task_id":91,"detail":"HTML vs plain-text rendering of the renewal invoice and payment-received emails, and link resolution"}
+{"timestamp":"2026-08-02T03:43:21.9533549+02:00","action":"edit","task_id":92,"detail":"Orphan and edge states: product trashed, price edited, customer deleted mid-cycle (exploratory)"}
+{"timestamp":"2026-08-02T03:43:22.027824322+02:00","action":"edit","task_id":93,"detail":"EARLY renew from the customer portal: full amount, next date anchored to the original due date, legs replaced"}
+{"timestamp":"2026-08-02T03:43:22.09282514+02:00","action":"edit","task_id":94,"detail":"Update the Paddle payment method and prove the next Paddle-driven renewal uses it, plus the missing local update surface"}
+{"timestamp":"2026-08-02T03:43:22.171942705+02:00","action":"edit","task_id":95,"detail":"Crossgrade SLT Plan Pro to the equal-priced SLT Plan Peer and prove the date does not shift"}
+{"timestamp":"2026-08-02T03:43:22.252322105+02:00","action":"edit","task_id":96,"detail":"Upgrade a Paddle-billed ladder subscription and prove the Paddle-side price is not updated"}
+{"timestamp":"2026-08-02T03:43:22.34673602+02:00","action":"edit","task_id":97,"detail":"Variable-product variation switch (Starter→Plus) plus on-hold and pending-cancellation switch refusals"}
+{"timestamp":"2026-08-02T03:43:22.438590818+02:00","action":"edit","task_id":98,"detail":"Pending cancellation with a required reason and declined offers, then customer reactivation"}
+{"timestamp":"2026-08-02T03:43:22.542356261+02:00","action":"edit","task_id":99,"detail":"Calendar overflow on the month flex product: the 31st day is absorbed into the last active segment"}
+{"timestamp":"2026-08-02T03:43:22.637308337+02:00","action":"edit","task_id":100,"detail":"Subscriptions list: status tabs, search, gateway filter, columns, pagination, delete guardrails"}
+{"timestamp":"2026-08-02T03:43:22.765228492+02:00","action":"edit","task_id":101,"detail":"Grace phase 2: terminal cancellation three days after the hold, with customer and admin cancel emails"}
+{"timestamp":"2026-08-02T03:43:22.892325796+02:00","action":"edit","task_id":102,"detail":"Mid-grace recovery: new card in My Account, pay the failed renewal, and prove the next-payment anchor"}
+{"timestamp":"2026-08-02T03:43:22.990944159+02:00","action":"edit","task_id":103,"detail":"Customer view of an unpaid renewal invoice and paying it from the portal before the automatic charge leg"}
+{"timestamp":"2026-08-02T03:43:23.075003272+02:00","action":"edit","task_id":104,"detail":"Admin-side repeat of the Basic to Pro upgrade and record-for-record diff against SLT-SW-01"}
+{"timestamp":"2026-08-02T03:43:23.157577854+02:00","action":"edit","task_id":105,"detail":"Charge a non-zero $7.50 upgrade switch fee on Pro→Enterprise and restore the fee to 0 in-task"}
+{"timestamp":"2026-08-02T03:43:23.232638365+02:00","action":"edit","task_id":106,"detail":"Renewal execution after a synced first charge: second charge full on the boundary, third on the grid"}
+{"timestamp":"2026-08-02T03:43:23.311413884+02:00","action":"edit","task_id":107,"detail":"Expired, reactivated and auto-downgrade emails, incl. the expiry-suppression negative"}
+{"timestamp":"2026-08-02T03:43:23.390444868+02:00","action":"edit","task_id":108,"detail":"Expiring-soon at days_before=7 and card-expiring: two emails nothing can trigger"}
+{"timestamp":"2026-08-02T03:43:23.48293667+02:00","action":"edit","task_id":109,"detail":"Negative sweep: cancelled gets no reminders, lifetime gets no renewal mail, expired gets no further mail"}
+{"timestamp":"2026-08-02T03:43:23.562480074+02:00","action":"edit","task_id":110,"detail":"LATE renewal on S5: prove the schedule catches up to the cycle grid and that a past computed date queues zero legs"}
+{"timestamp":"2026-08-02T03:43:23.655907809+02:00","action":"edit","task_id":111,"detail":"Customer downgrade applies now, and expiry auto-downgrade with its email on the D8 drain day"}
+{"timestamp":"2026-08-02T03:43:23.81157283+02:00","action":"edit","task_id":113,"detail":"Subscription detail screen: every field, dates, schedule, related orders, gateway panel"}
+{"timestamp":"2026-08-02T03:43:23.925941912+02:00","action":"edit","task_id":114,"detail":"Refund a renewal order: gateway refund, subscription effect, and emails"}
+{"timestamp":"2026-08-02T03:43:24.048151334+02:00","action":"edit","task_id":115,"detail":"Capability gating: shop_manager vs editor vs subscriber on every admin surface"}
+{"timestamp":"2026-08-02T03:43:24.173829564+02:00","action":"edit","task_id":116,"detail":"End-of-window log sweep, failed-action audit and cycle-to-order reconciliation"}
+{"timestamp":"2026-08-02T03:43:24.377157787+02:00","action":"edit","task_id":117,"detail":"SLT-SETUP-99 Restore baseline settings and delete every SLT artifact"}
+{"timestamp":"2026-08-02T03:43:24.491250953+02:00","action":"edit","task_id":118,"detail":"SLT-SETUP-99A D10 settings restore and partial cancellation — no deletions"}
+{"timestamp":"2026-08-02T03:43:24.618669943+02:00","action":"edit","task_id":119,"detail":"SLT-SETUP-99B Post-watch teardown on 2026-08-15 — delete every SLT artifact"}
