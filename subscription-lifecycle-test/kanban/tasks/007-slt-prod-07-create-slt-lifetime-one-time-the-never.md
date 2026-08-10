@@ -1,15 +1,16 @@
 ---
 id: 7
 title: SLT-PROD-07 Create SLT Lifetime One Time, the never-renews negative control
-status: todo
+status: done
 priority: high
 created: 2026-08-02T03:43:03.472152178+02:00
-updated: 2026-08-02T03:43:13.393853387+02:00
+updated: 2026-08-02T14:12:50.765794636+02:00
+started: 2026-08-02T14:12:50.765793784+02:00
+completed: 2026-08-02T14:12:50.765793784+02:00
 tags:
     - setup
     - products
     - day-00
-    - has-conflicts
 due: "2026-08-02"
 estimate: 30m
 depends_on:
@@ -22,20 +23,12 @@ class: standard
 > Read `README.md` (environment + isolation contract), `calendar.md` (this day's exact
 > ordering — it is binding, not advisory) and `plan-audit.md` before starting.
 
-### ⚠ Conflict resolutions that apply to this task
-
-**`unrated` · impossible-timing** — with `SLT-SETUP-01`, `SLT-SETUP-02`, `SLT-SETUP-03`, `SLT-SETUP-04`, `SLT-SETUP-05`, `SLT-PROD-01`
-
-- *Problem:* 25 of the 26 authored tasks are stamped day 0. Sixteen of them are multi-step browser-driven product builds (each: open post-new, set 6-15 fields across 3 tabs, publish, reload, verify, meta-dump, guest front-end check, registry append), two are long audit tasks with 15-20 probe steps each (SLT-SYN-01, SLT-SYN-02), one is a live Stripe purchase with a settings flip and restore (SLT-SYN-04), and on top of that D0 is also where the plan's isolation notes demand the D0 purchases of SLT-PROD-01/02/03/06/07/10/12/13/14/15/16. There is a hard serial chain inside the day as well: SETUP-01 -> SETUP-02 -> PROD-16 -> SETUP-05 -> SYN-04, and SETUP-01 -> SETUP-02 -> PROD-14 -> SYN-03 -> SYN-04. This is not executable in one day, and it wastes D4-D9 which sit empty.
-- *Required fix:* Adopt the rebalanced D0-D10 calendar in schedule_notes. Only products with a genuinely date-bound purchase stay on D0 (SLT-PROD-01, 06, 07, 13 plus the three foundation tasks); everything else is spread D1-D5 with its purchase deadline recomputed so it still fits the window. Peak day drops from 25 tasks (~30h) to 7 tasks (~7h) and the median day is ~4.5h, inside the 1.6x band.
-
----
 ## Objective
 Provide the negative control that must NEVER produce a renewal, a renewal invoice, a renewal reminder, or a next-payment date. `_subscription_period = lifetime` forces `_subscription_interval=1` and `_subscription_length=0` on save, `arraysubs_calculate_next_payment_from_date()` returns an empty string, `arraysubs_calculate_end_date_from_length()` returns null, and both the core and pro sync paths bail on lifetime.
 
 ## Scope
-- Gateway: both
-- Checkout: both
+- Gateway: N/A
+- Checkout: N/A (creation and storefront verification only)
 - Account: N/A (creation only)
 - Plugins: both (pro view supplies the flex negative)
 
@@ -54,15 +47,15 @@ Provide the negative control that must NEVER produce a renewal, a renewal invoic
 
 ## Steps
 1. Capture `mailpit-agent latest-id`.
-2. `agent-browser --session admin open "https://mirror-help.arrayhash.com/wp-admin/post-new.php?post_type=product"` -> `snapshot -i`.
-3. **Product title**: `SLT Lifetime One Time`. **Description**: `SLT window product. Lifetime deal, must never renew. Delete on 2026-08-11.`
+2. `agent-browser --session admin-SLT-PROD-07 open "https://mirror-help.arrayhash.com/wp-admin/post-new.php?post_type=product"` -> `snapshot -i`.
+3. **Product title**: `SLT Lifetime One Time`. **Description**: `SLT window product. Lifetime deal, must never renew. Delete on 2026-08-15.` The post-watch date is binding; this control must remain present through the D12 report on 2026-08-14.
 4. Type **Simple product**; tick **Virtual**; tick **Subscription [ArraySubs]**.
 5. **General** tab: **Regular price ($)** = `49.00`.
 6. **Subscription [ArraySubs]** tab: **Billing Period** = `Lifetime Deal`. Leave **Billing Interval** and **Subscription Length** as displayed — the saver overwrites them to 1 and 0. **Trial Length** = `0`; **Sign-up Fee ($)** empty; **Different Renewal Price** unticked.
 7. Screenshot the panel: the **Flexible Renewal Sync to Next Billing Cycle** section must be hidden for the lifetime period (`$arraysubs_flex_section_hidden = ... || 'lifetime' === $arraysubs_flex_period`). This is the third exclusivity negative required by the catalog.
 8. Slug `slt-lifetime-one-time`. Publish. Reload and re-verify.
 9. `wp post meta list <ID> --keys=_is_subscription,_subscription_period,_subscription_interval,_subscription_length,_trial_length,_regular_price,_arraysubs_flex_sync_enabled --allow-root`.
-10. As `--session guest`, open the product page and confirm the summary shows a one-time/lifetime purchase, not a recurring schedule.
+10. As `--session guest-SLT-PROD-07`, open the product page and confirm the summary shows a one-time/lifetime purchase, not a recurring schedule.
 11. Append the ID to the registry.
 
 ## Expected results
@@ -75,7 +68,7 @@ Provide the negative control that must NEVER produce a renewal, a renewal invoic
 ## Emails expected
 | # | Email | Trigger point | Recipient | Subject contains | Verify with |
 |---|---|---|---|---|---|
-| 1 | NONE EXPECTED | Product publish | — | — | `mailpit-agent latest-id` unchanged from step 1 |
+| 1 | NONE EXPECTED | Product publish | — | — | Complete delta after the step-1 baseline; zero task-attributable mail, while unrelated/background mail is allowed and classified |
 
 ## Evidence to capture
 - Screenshots: `SLT-PROD-07-01-subscription-tab-lifetime.png`, `SLT-PROD-07-02-flex-hidden-by-lifetime.png`, `SLT-PROD-07-03-frontend.png`.
@@ -90,7 +83,7 @@ Provide the negative control that must NEVER produce a renewal, a renewal invoic
 
 ## Isolation / teardown
 - State handoff: buy as `slt-core` on D0 and then leave it alone. Every daily renewal-watch task from D1 to D12 must re-assert that this subscription still has no next-payment date, no renewal order, and no renewal mail. Because lifetime products are never sync-eligible, this is also a valid Paddle target if a second Paddle case is needed.
-- Restores: nothing. Deleted by SLT-SETUP-99.
+- Restores: nothing. Deleted by SLT-SETUP-99B.
 
 ---
 
@@ -107,8 +100,21 @@ Provide the negative control that must NEVER produce a renewal, a renewal invoic
 - WooCommerce **grouped** products have zero handling in either plugin — grouped tasks are
   exploratory: document behaviour, do not assert a spec.
 - WP-Cron runs every minute from `/etc/cron.d/mirror-help-arrayhash-wordpress`. Scheduled actions
-  fire on their own; **a renewal that does not fire is a real bug** — capture evidence before forcing.
+  fire on their own; **a renewal that does not fire is a real bug** — capture evidence and do not force a natural-watch action.
 - Give this task its own browser session (`agent-browser --session <role>-<TASK-KEY>`). Sessions are
   keyed by name and **share a cart**.
-- Never run `wp action-scheduler run` without `--hooks=`; prefer a single action by ID.
-- Evidence goes in `qa/subscription-lifecycle-test/evidence/<TASK-KEY>/`.
+- Never run a bare or `--hooks=` Action Scheduler drain. Run one known action ID at a time only when the task explicitly authorizes it and after the required queue pre-flight; natural-watch actions are never forced.
+- Evidence goes under `/home/server-manager/slt-evidence/` using task-key-prefixed filenames.
+
+[[2026-08-02]] Sun 14:12
+
+
+## Execution 2026-08-02 — PASS (inherited environment isolation)
+- Published product ID 11938, slug `slt-lifetime-one-time`, as a simple virtual subscription at $49.00.
+- Reloaded admin UI: period Lifetime Deal; interval force-written to 1; length force-written to 0; trial 0; flex-sync section hidden.
+- WP-CLI meta dump confirmed `_subscription_period=lifetime`, `_subscription_interval=1`, `_subscription_length=0`, `_regular_price=49.00`, and no `_arraysubs_flex_sync_enabled`.
+- Fresh cache-busted guest browser page showed a one-time $49.00 price and no recurring cadence phrase.
+- Mailpit latest ID remained `1vpHEKG6i8l9ZzBoW2BqrI`; product publication sent no mail.
+- Registry page 11847 updated via wp-admin with the immutable product ID and lifetime negative-control contract.
+- Inherited SLT-PROD-01 environment isolation: appended only product 11938 to rule `rule_1784662676378_maa3te08s`; exclusions now [11927, 11933, 11938]. Exact pre-window rule state remains assigned to SLT-SETUP-99A restoration.
+- Evidence: `/home/server-manager/slt-evidence/SLT-PROD-07-*`.

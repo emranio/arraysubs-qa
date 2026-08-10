@@ -1,19 +1,20 @@
 ---
 id: 91
 title: HTML vs plain-text rendering of the renewal invoice and payment-received emails, and link resolution
-status: todo
+status: in-progress
 priority: medium
 created: 2026-08-02T03:43:10.747716504+02:00
-updated: 2026-08-02T03:43:21.865454225+02:00
+updated: 2026-08-09T06:49:26.775614267+02:00
 tags:
     - email
     - day-06
-    - has-conflicts
 due: "2026-08-08"
 estimate: 1h30m
 depends_on:
     - 67
     - 53
+claimed_by: delta-gate
+claimed_at: 2026-08-09T06:49:26.77496566+02:00
 class: standard
 ---
 
@@ -22,24 +23,6 @@ class: standard
 > Read `README.md` (environment + isolation contract), `calendar.md` (this day's exact
 > ordering — it is binding, not advisory) and `plan-audit.md` before starting.
 
-### ⚠ Conflict resolutions that apply to this task
-
-**`high` · session collision (shared admin session)** — with `SLT-EML-01`, `SLT-EML-02`, `SLT-EML-03`, `SLT-EML-10`, `SLT-EML-12`, `SLT-EML-13`
-
-- *Problem:* More than twenty tasks open `--session admin` by that bare name, in direct violation of audit C09's fix (which only got applied to guest/customer sessions). agent-browser sessions are keyed by name, so these tasks share one browser profile: one task's `agent-browser close --session admin` logs out another mid-run; one task navigating the SPA away from a settings screen invalidates another's snapshot; and any admin session that ever adds to cart (SLT-ADM-01's bulk-action screen, SLT-EML-12's status juggling) puts a cart on the admin user shared by all of them. The failures this produces look like flaky UI, not contamination.
-- *Required fix:* Rename every admin session to `admin-<TASK-KEY>` (SLT-ADM-01/02/03/04/05 already do this correctly - copy the pattern). Each task closes only its own session by name; `agent-browser close --all` is reserved to the last task of the day, named explicitly in the calendar. Add this to the isolation contract as rule 9 and add a pass criterion to every task that opens an admin session: 'the session name contains this task's key'.
-
-**`high` · same-subscription collision / ambiguous target** — with `SLT-LIFE-02`, `SLT-EML-02`, `SLT-EML-15`, `SLT-MYA-02`
-
-- *Problem:* SLT-LIFE-02 (d6) targets 'S1 - a live arraysubs-active SLT Daily Core subscription from the SLT-CHK-* run' without naming it, and its arithmetic uses $10.00 day/1, which describes SUB_CORE (slt-core, the control spine). It consumes one cycle by paying it early, replaces both legs and shifts the anniversary. SLT-EML-05 runs on the SAME day (d6) and also consumes one SUB_CORE cycle by setting _auto_renew=off and paying the invoice manually. Two tasks eating the same cycle on the same day makes both results unreadable, and either one silently invalidates the D1-D12 watch's 'SLT Daily Core renews $10.00 unattended every afternoon' baseline that REN-01/REN-02/EML-15/ADM-06 established.
-- *Required fix:* Pin SLT-LIFE-02's S1 to SLT-CHK-02's subscription (slt-core2 + SLT Daily Core, day/1, $10.00, Stripe, saved token, unsynced, no pending skip) - structurally identical to the spine and claimed by nothing else after D0. Name the subscription id explicitly in LIFE-02's Test data and preconditions, and keep its step 8 registry note ('slt-core2's cycle N was paid early on 2026-08-08') so the watch does not read the missing unattended renewal as a failure. Leave SUB_CORE to EML-05 on D6. Add a standing registry section 'control-spine reservations' naming SUB_CORE's owning tasks per day.
-
-**`medium` · shared-per-subscription-meta vs published watch contract** — with `SLT-EML-02`, `SLT-EML-15`, `SLT-REN-02`
-
-- *Problem:* SLT-EML-15 (d2) publishes to the registry the reconciled expected-mail set for one SLT Daily Core renewal, explicitly asserting 'zero renewal_invoice - suppressed for automatic subs with auto-renew on' and states 'this is the reference the D3-D12 watch uses to classify daily renewal mail'. SLT-EML-02 (d4) and SLT-EML-05 (d6) then each write _auto_renew=off on that very subscription for one cycle, deliberately producing an 'Invoice for subscription #SUB_CORE' email plus a manually-paid renewal on D4 and D6. The watcher, reading EML-15's table, will classify both as UNMAPPED and file them as leaks - and will also see the charge leg leave the order in a non-standard state.
-- *Required fix:* EML-02 and EML-05 must each post a dated exception to the registry BEFORE flipping the meta ('SUB_CORE cycle due <date>: _auto_renew=off, one renewal_invoice + one customer-paid renewal order expected; suppression restored at <time>'), and the watch schedule rows for D4/D5 and D6/D7 must carry those exceptions as expected rather than negative. Add to both tasks a pass criterion 'the registry exception exists and was posted before the meta write' and a teardown criterion 'the next cycle after restore sends no invoice mail'.
-
----
 ## Objective
 The plugin ships a `plain/` counterpart for every template, but WooCommerce sends HTML by default so the plain variants are never exercised. Switch `[ArraySubs] Renewal Invoice` and `[ArraySubs] Renewal Payment Successful` to **Multipart**, drive one manual-invoice renewal cycle on SLT Daily Core so both send, then verify HTML and plain carry the same facts, that plain has no markup, and that every action link resolves rather than 404s.
 
@@ -64,17 +47,18 @@ The plugin ships a `plain/` counterpart for every template, but WooCommerce send
 | Card | `4242 4242 4242 4242` |
 
 ## Steps
-1. Open `.../wp-admin/admin.php?page=wc-settings&tab=email` as `--session admin` → `snapshot -i`; screenshot both ArraySubs rows and their type.
-2. Click **Manage** on `[ArraySubs] Renewal Invoice`; record the **Email type**; set `Multipart`; Save; re-snapshot to confirm it stuck.
-3. Repeat step 2 for `[ArraySubs] Renewal Payment Successful`.
-4. Compute k for `SUB_CORE`, read `_next_payment_date`, find the pending `arraysubs_generate_renewal_invoice` row on Scheduled Actions. If the invoice leg is under 15 min away, wait for the next cycle.
-5. `wp post meta update SUB_CORE _auto_renew off --allow-root`.
-6. `PREV=$(mailpit-agent latest-id)`; `mailpit-agent wait-new "$PREV" 3600 "Invoice for subscription #SUB_CORE"`.
-7. Run BOTH `mailpit-agent html <id>` and `text <id>`; save each to the evidence root.
-8. Open the pay URL taken from the **plain** part in `--session customer-eml05` (as `slt-core`) and pay with 4242 — this produces the payment-received mail.
-9. `mailpit-agent list 50` → the `Payment received for subscription #SUB_CORE` id; run `html` and `text`.
-10. Extract every `http` URL from all four parts; open each in `--session customer-eml05` → `snapshot -i`; record the title and any 404 / console error. Diff the fact set (subscription id, product, amount, dates, order number) between HTML and plain for each message.
-11. Restore: set both Email type values back; Save; re-screenshot. `wp post meta delete SUB_CORE _auto_renew --allow-root`; close the session. On the next cycle confirm no invoice mail and that the next payment-received mail is HTML-only.
+1. Resolve registry alias `SUB_CORE` into shell variable `SUB_CORE` and abort unless `[[ "$SUB_CORE" =~ ^[0-9]+$ ]]`. Compute k from that numeric ID, read `_next_payment_date`, and find the exact pending `arraysubs_generate_renewal_invoice` row on Scheduled Actions. Do not open a browser session or mutate any setting/meta if its gate is more than **5 h 30 min** away: record the action ID/GMT gate, leave the card in progress, and resume in the first phase inside that window. If fewer than **20 min** remain, there is not enough safe preparation/restoration margin; defer to the next cycle without changing any setting or meta. Proceed only in the 20 min–5 h 30 min window, which fits the runner's six-hour ceiling and preserves the final restoration margin.
+2. Open `.../wp-admin/admin.php?page=wc-settings&tab=email` as `--session admin-SLT-EML-05` → `snapshot -i`; screenshot both ArraySubs rows and record both prior Email type values before changing either one. This is the only admin browser session for the current phase.
+3. Click **Manage** on `[ArraySubs] Renewal Invoice`; immediately before the first non-default save, record the UTC bracket-open timestamp in the registry and evidence. Set **Email type** to `Multipart`; Save; re-snapshot to confirm it stuck.
+4. Set `[ArraySubs] Renewal Payment Successful` to `Multipart`; Save; re-snapshot. If either save or subsequent test step fails, jump immediately to step 11 and restore both recorded prior values plus `_auto_renew` before collecting further evidence.
+5. **Before writing the meta**, append this dated exception to `slt-catalog-registry` and save the same text to `/home/server-manager/slt-evidence/SLT-EML-05-registry-exception.txt`, rendering the resolved numeric ID: `SLT-EML-05 / SUB_CORE=<resolved numeric ID> cycle due <D>: _auto_renew=off; exactly one multipart Invoice for subscription #<resolved numeric ID> and one customer-paid renewal order are expected; suppression will be restored at <planned UTC time>.` Re-open the registry and screenshot/read back the saved exception. Only then run `wp post meta update "$SUB_CORE" _auto_renew off --allow-root` and read it back.
+6. `PREV=$(mailpit-agent latest-id)`. Poll `mailpit-agent wait-new "$PREV" <chunk> "Invoice for subscription #$SUB_CORE"` with the **same baseline** in chunks no longer than **60 seconds** until the exact invoice gate plus five minutes. Exit 124 before that final deadline is only an intermediate poll timeout, not a failure; immediately repeat with the remaining bounded interval. Only absence after gate+5 min is a finding, at which point restore both email types and delete `_auto_renew` before collecting further evidence.
+7. Run BOTH `mailpit-agent html <id>` and `mailpit-agent text <id>`; save each to the evidence root.
+8. Open the pay URL taken from the **plain** part in `--session customer-eml05-SLT-EML-05` (as `slt-core`). Immediately before submitting 4242, set `PAY_PRE=$(mailpit-agent latest-id)`; pay once, then poll that immutable baseline in repeated calls no longer than 60 seconds through the five-minute cutoff for `Payment received for subscription #$SUB_CORE`.
+9. List only messages newer than `PAY_PRE`, identify exactly one `Payment received for subscription #$SUB_CORE` id, and run `html` and `text` for that exact id.
+10. Extract every `http` URL from all four parts; open each in `--session customer-eml05-SLT-EML-05` → `snapshot -i`; record the title and any 404 / console error. Diff the fact set (subscription id, product, amount, dates, order number) between HTML and plain for each message.
+11. Restore: set both Email type values back to their individually recorded prior values; Save; re-screenshot. `wp post meta delete "$SUB_CORE" _auto_renew --allow-root`; prove the meta is absent, append the actual UTC restore/bracket-close time to the registry exception/evidence file, and verify the two settings read back exactly as recorded. Close `admin-SLT-EML-05` and `customer-eml05-SLT-EML-05` after this current-cycle phase; do not retain authenticated sessions across the next natural cycle. At least five minutes before the next natural invoice gate, record `POST_RESTORE_PRE=$(mailpit-agent latest-id)` in the registry. After the corresponding charge gate, poll the immutable baseline in repeated calls no longer than 60 seconds through the 10-minute cutoff for `Payment received for subscription #$SUB_CORE`; inspect every message newer than `POST_RESTORE_PRE`, require zero `Invoice for subscription #$SUB_CORE` messages, and prove that exact payment-received message is HTML-only.
+12. Independently review the saved multipart parts, URL/status inventory, restored option/meta proof, and post-restore natural-cycle delta. Any live defect goes only in `issues/SLT-EML-05-<concise-slug>.md`, never in the lifecycle board, and must include this task/stage/plan path; subscription/order/action/message IDs; user ID/login/email/role; exact routes/sessions/gates; reproduction; expected/actual; and the HTML/plain/link proof. Move the card through `review` to `done` and require Review to return to zero.
 
 ## Expected results
 1. Both messages arrive as `multipart/alternative` with a non-empty `text/plain` AND `text/html` part.
@@ -89,12 +73,12 @@ The plugin ships a `plain/` counterpart for every template, but WooCommerce send
 ## Emails expected
 | # | Email | Trigger point | Recipient | Subject contains | Verify with |
 |---|---|---|---|---|---|
-| 1 | `renewal_invoice` multipart | invoice leg `D+k−6h`, `_auto_renew=off` | slt-core@example.test | `Invoice for subscription #SUB_CORE` | `wait-new`, then `html`+`text` |
-| 2 | `payment_successful` multipart | manual payment, step 8 | slt-core@example.test | `Payment received for subscription #SUB_CORE` | `html`/`text` |
-| 3 | NONE EXPECTED after restore | next cycle | — | `Invoice for subscription` | suppression back once `_auto_renew` is deleted |
+| 1 | `renewal_invoice` multipart | invoice leg `D+k−6h`, `_auto_renew=off` | slt-core@example.test | `Invoice for subscription #SUB_CORE` | Repeated same-`$PREV` chunks ≤60 seconds through gate+5 min, then `html`+`text` |
+| 2 | `payment_successful` multipart | manual payment, step 8 | slt-core@example.test | `Payment received for subscription #SUB_CORE` | immutable-baseline polls ≤60 seconds through the five-minute cutoff, then `html`/`text` |
+| 3 | HTML-only `payment_successful`; no invoice | first natural cycle after restore | slt-core@example.test | `Payment received for subscription #SUB_CORE`; no `Invoice for subscription #SUB_CORE` | repeated immutable-baseline polls ≤60 seconds through the 10-minute cutoff; inspect every newer message |
 
 ## Evidence to capture
-- `SLT-EML-05-01-settings-before.png`, `-02-multipart-set.png`, `-03-invoice-html.png`, `-04-invoice-plain.txt`, `-05-received-html.png`, `-06-received-plain.txt`, `-07-links.png`, `-08-restored.png`; mailpit ids; the URL list with status and title; prior/restored Email type values.
+- `SLT-EML-05-01-settings-before.png`, `-02-multipart-set.png`, raw `-03-invoice.html`, `-04-invoice-plain.txt`, raw `-05-received.html`, `-06-received-plain.txt`, `-07-links.png`, `-08-restored.png`; mailpit ids; the URL list with status and title; prior/restored Email type values. Raw message files are data evidence, not browser screenshots.
 
 ## Pass criteria
 - [ ] Both messages multipart, non-empty plain and HTML parts
@@ -102,7 +86,9 @@ The plugin ships a `plain/` counterpart for every template, but WooCommerce send
 - [ ] HTML and plain fact sets agree for both emails
 - [ ] Every link in all four parts resolves 200, no console error
 - [ ] HTML unchanged from the SLT-EML-02 / SLT-EML-03 baselines
-- [ ] Both Email type options restored; `_auto_renew` deleted
+- [ ] Dated registry exception exists and was posted/read back before `_auto_renew` was written
+- [ ] Both Email type options restored; `_auto_renew` deleted with the restore time recorded; the next cycle sends no invoice mail
+- [ ] Current and post-restore phases close their exact sessions; independent review reaches `done` with Review empty
 
 ## Isolation / teardown
 - Restores (step 11): the two per-email `Email type` options and deletion of `_auto_renew` on `SUB_CORE`; record prior/after values per isolation rule 7.
@@ -123,8 +109,18 @@ The plugin ships a `plain/` counterpart for every template, but WooCommerce send
 - WooCommerce **grouped** products have zero handling in either plugin — grouped tasks are
   exploratory: document behaviour, do not assert a spec.
 - WP-Cron runs every minute from `/etc/cron.d/mirror-help-arrayhash-wordpress`. Scheduled actions
-  fire on their own; **a renewal that does not fire is a real bug** — capture evidence before forcing.
+  fire on their own; **a renewal that does not fire is a real bug** — capture evidence and do not force a natural-watch action.
 - Give this task its own browser session (`agent-browser --session <role>-<TASK-KEY>`). Sessions are
   keyed by name and **share a cart**.
-- Never run `wp action-scheduler run` without `--hooks=`; prefer a single action by ID.
-- Evidence goes in `qa/subscription-lifecycle-test/evidence/<TASK-KEY>/`.
+- Never run a bare or `--hooks=` Action Scheduler drain. Run one known action ID at a time only when the task explicitly authorizes it and after the required queue pre-flight; natural-watch actions are never forced.
+- Evidence goes under `/home/server-manager/slt-evidence/` using task-key-prefixed filenames.
+
+
+[[2026-08-08]] Sat 06:36
+D6 AM gate review: SUB_CORE resolves to numeric sub 11959. Current natural rows are invoice 15676 at 2026-08-08 09:37:52Z / 15:37:52 site and charge 15677 at 15:37:52Z / 21:37:52 site. The authored EML-05 preparation window would be 10:07:52-15:17:52 site, but card 67 / SLT-EML-02 owns invoice 15676 as its final suppression proof. EML-05 changes global email formats and the subscription auto-renew mode, so opening its bracket would invalidate that higher-priority in-progress proof. No setting, subscription meta, browser session, or mail baseline was changed. Keep this card in progress for the next valid cycle: resume D7 2026-08-09 at the 10:10 phase, prepare only in 10:07:52-15:17:52 site, and observe the 15:37:52 site invoice gate; resolve and record the new action ID after natural charge 15677 creates it.
+
+[[2026-08-09]] Sun 06:49
+D07 late-morning preparation completed inside the authored window. SUB_CORE=11959; invoice action 16119 is due 15:37:52 site and charge 16120 at 21:37:52. Prior Renewal Invoice and Renewal Payment Successful types were HTML with both option rows absent. The first non-default save opened the settings bracket at 2026-08-09T04:23:29Z; both types now read multipart. The numeric registry exception was posted/read back once before _auto_renew=off was written. PREV=5yGiRnu4Kb079ncz43EDFT. Customer session is authenticated but no pay/order action occurred. Mandatory restore deadline remains before 16:00 site, with restoration starting by 15:45 if any positive checks run late. Evidence: /home/server-manager/slt-evidence/SLT-EML-05-settings-bracket.txt, /home/server-manager/slt-evidence/SLT-EML-05-registry-exception.txt, and screenshots SLT-EML-05-01-settings-before.png / -02-multipart-set.png.
+
+[[2026-08-09]] Sun 09:49
+D07 multipart/manual-payment leg PASS; the final post-restore criterion remains due on D8, so this card stays in progress. Natural action 16119 completed once and emitted multipart invoice 2H7QObpMcorzL5x47uuWOp for relationship order 13466. PAY_PRE=2H7QObpMcorzL5x47uuWOp was captured immediately before one saved-Visa-4242 payment; order 13466 completed for $10.00 and emitted admin New order 4XYFQ8ZBDWYbRHXU5Y63VF plus multipart payment-success 3suwtzFDriAtZ35sOOVElB. Both plain parts carried the complete matching fact sets with no markup/residue/bare placeholder; normalized current HTML structures matched the recorded HTML-only baselines. The order-pay, account-subscriptions, and footer/home links returned valid HTTP 200 pages with no console errors. Subscription 11959 is active with 8 payments, next due 2026-08-10 12:39:05Z; action 16120 is canceled unattempted and replacements 16396/16397 are pending for D8 15:37:52/21:37:52 site. The bracket closed at 15:42:37 site: both exact option rows and _auto_renew are absent, both fresh UI readbacks show HTML, and the persisted registry has one open plus one restored marker. Current task sessions are closed. Evidence: /home/server-manager/slt-evidence/SLT-EML-05-D07-current-cycle.txt and the artifacts indexed within it. Next gate: capture POST_RESTORE_PRE only during 2026-08-10 15:32:52-15:37:51 site, then verify after action 16397 through 21:47:52 that the complete delta has zero invoice and exactly one HTML-only payment-success mail before review to done.

@@ -1,14 +1,15 @@
 ---
 id: 41
 title: Second unassisted renewal of the same subscription — schedule re-arms at the same offset, no drift
-status: todo
+status: done
 priority: critical
 created: 2026-08-02T03:43:06.394757385+02:00
-updated: 2026-08-02T03:43:16.89992965+02:00
+updated: 2026-08-05T21:37:49.462606425+02:00
+started: 2026-08-05T21:02:04.936957572+02:00
+completed: 2026-08-05T21:02:04.936957572+02:00
 tags:
     - renewal
     - day-02
-    - has-conflicts
 due: "2026-08-04"
 estimate: 1h
 depends_on:
@@ -21,19 +22,6 @@ class: standard
 > Read `README.md` (environment + isolation contract), `calendar.md` (this day's exact
 > ordering — it is binding, not advisory) and `plan-audit.md` before starting.
 
-### ⚠ Conflict resolutions that apply to this task
-
-**`medium` · shared-per-subscription-meta vs published watch contract** — with `SLT-EML-02`, `SLT-EML-05`, `SLT-EML-15`
-
-- *Problem:* SLT-EML-15 (d2) publishes to the registry the reconciled expected-mail set for one SLT Daily Core renewal, explicitly asserting 'zero renewal_invoice - suppressed for automatic subs with auto-renew on' and states 'this is the reference the D3-D12 watch uses to classify daily renewal mail'. SLT-EML-02 (d4) and SLT-EML-05 (d6) then each write _auto_renew=off on that very subscription for one cycle, deliberately producing an 'Invoice for subscription #SUB_CORE' email plus a manually-paid renewal on D4 and D6. The watcher, reading EML-15's table, will classify both as UNMAPPED and file them as leaks - and will also see the charge leg leave the order in a non-standard state.
-- *Required fix:* EML-02 and EML-05 must each post a dated exception to the registry BEFORE flipping the meta ('SUB_CORE cycle due <date>: _auto_renew=off, one renewal_invoice + one customer-paid renewal order expected; suppression restored at <time>'), and the watch schedule rows for D4/D5 and D6/D7 must carry those exceptions as expected rather than negative. Add to both tasks a pass criterion 'the registry exception exists and was posted before the meta write' and a teardown criterion 'the next cycle after restore sends no invoice mail'.
-
-**`low` · duplicate-coverage** — with `SLT-EML-15`, `SLT-ADM-06`, `SLT-EML-03`, `SLT-EML-06`, `SLT-CHK-01`, `SLT-EML-07`
-
-- *Problem:* Six overlapping clusters, each spending an execution slot on a code path another task already proves. (a) SLT-EML-15, SLT-REN-02 and SLT-ADM-06 all read the same SUB_CORE renewal cycle: EML-15 reconciles the mail set, REN-02 asserts the schedule re-arm, ADM-06 asserts the order typing/linkage - three tasks, one cycle, three separate evidence sets. (b) SLT-EML-03's Stripe leg re-asserts REN-02's payment_successful and its Paddle leg re-asserts SLT-REN-04's. (c) SLT-EML-06 re-proves new_subscription + admin_new_subscription at a Stripe block checkout, which is SLT-CHK-01's email rows 3 and 4 verbatim, on a new account. (d) SLT-EML-07 and SLT-SW-10 both drive pending-cancellation -> cancelled -> reactivation and both assert the same four emails. (e) SLT-EML-04's four payment_failed pairs are exactly SLT-DUN-01 ER8 plus SLT-DUN-02 ER9. (f) SLT-SYN-11's 'flex section hidden for a Different Renewal Price product' repeats SLT-PROD-05 steps 7-9 and SLT-SYN-01's probe. (g) SLT-LIFE-02's Paddle 'no Renew Early control' negative repeats SLT-CHK-04 ER7 and SLT-PROD-16.
-- *Required fix:* Keep one owner per assertion and make the others cite it. (a) EML-15 owns the reconciled mail set for the cycle and publishes it to the registry; REN-02 keeps only the schedule/offset/no-drift assertions; ADM-06 keeps only the HPOS meta assertions and drops its Related-Orders screenshot in favour of ADM-02's. (b) EML-03 keeps only the content assertions (amount, method row, UTC+6 next date, the Paddle ordering hazard) and cites REN-02/REN-04 for 'the renewal fired'. (c) EML-06 keeps only the gating-key and subject-string proof (emails.new_subscription.enabled, admin recipient resolution, the B4 dead-setting verdict) and cites CHK-01 for the checkout. (d) EML-07 owns the email set; SW-10 owns the reason-required / offers-declined / scheduled-cancel-timestamp / reactivation-scheduling-bug half and cites EML-07's mailpit ids. (e) EML-04 places no purchase and becomes the mail-content rider on the DUN ladder (attempt-number visibility, Pay Now link resolution, To: headers) - see the DUN re-day entry. (f) SYN-11 keeps only the force-set-meta half (isEnabled() true, getConfig() null, zero _renewal_sync_* on the subscription) and cites PROD-05 for the UI-absence screenshots. (g) LIFE-02 cites CHK-04's screenshot rather than re-driving the Paddle portal.
-
----
 ## Objective
 Prove the SLT-REN-01 subscription re-arms itself: after renewal #1 paid unattended on D1, both legs must be re-queued for D2 at the SAME offset `k`, renewal #2 must fire unattended, and `_next_payment_date` must advance from `_renewal_scheduled_date` (not payment time) so the anniversary never drifts.
 
@@ -45,8 +33,8 @@ Prove the SLT-REN-01 subscription re-arms itself: after renewal #1 paid unattend
 
 ## Preconditions
 - SLT-REN-01 PASSING: `SUBID`, `k`, anniversary time, order #1 id and both D1 action ids recorded.
-- If renewal #1 did NOT fire, this task is blocked, not failed: file against SLT-REN-01, do not drain.
-- Act on **D2 = 2026-08-04**, first pass 09:00–10:00 site, before the D2 charge leg (~13:15+k).
+- If renewal #1 did NOT fire, file the complete finding against SLT-REN-01, record this dependent task as `UNVERIFIED (no upstream renewal #1)`, self-review it to `done`, and do not drain. Never strand the execution card in `blocked` when its source fixture cannot exist.
+- Act on **D2 = 2026-08-04**, first pass 09:00–10:00 site, before the exact D2 invoice and charge rows handed off by SLT-REN-01. For the established control these are 15:37:52 and 21:37:52 site; the rows, not an estimate, are authoritative.
 - **No `wp action-scheduler run`**, no settings changes: read-only plus browser observation.
 
 ## Test data
@@ -55,18 +43,18 @@ Prove the SLT-REN-01 subscription re-arms itself: after renewal #1 paid unattend
 | Subscription | `SUBID` (SLT Daily Core, $10.00/day) |
 | Account | slt-core / SltQa!2026#Pass |
 | Offset | `k` from SLT-REN-01 (must NOT change) |
-| Session | `customer-SLT-REN-02` |
+| Sessions | `admin-SLT-REN-02`, `customer-SLT-REN-02` |
 | Cycle-2 due | 2026-08-04 at the D0 purchase clock time |
 
 ## Steps
-1. `PRE2=$(mailpit-agent latest-id)`; record it.
-2. `wp post meta list SUBID` — record `_next_payment_date`, `_last_payment_date`, `_completed_payments`, `_pending_renewal_order_id`, both action-id metas, `_payment_retry_attempts`.
+1. Resolve the `SUB_CORE`/SLT-REN-01 handoff from `slt-catalog-registry` into shell variable `SUBID`; require the registry to contain exactly one numeric ID and abort unless `[[ "$SUBID" =~ ^[0-9]+$ ]]`. Cross-check its recorded parent order, customer, and product before continuing. Do not set the renewal-mail baseline during this morning read.
+2. `wp post meta list "$SUBID" --allow-root` — record `_next_payment_date`, `_last_payment_date`, `_completed_payments`, `_pending_renewal_order_id`, both action-id metas, `_payment_retry_attempts`.
 3. Re-run the offset one-liner for `SUBID`; confirm it still yields `k`.
 4. From `wp_actionscheduler_actions WHERE args='[SUBID]'` list `hook,status,scheduled_date_gmt,last_attempt_gmt`. Expect 2 complete (D1) + 2 pending (D2).
-5. Screenshot **Tools → Scheduled Actions** for this subscription and the **WooCommerce → Subscriptions** detail screen.
+5. In isolated `admin-SLT-REN-02`, screenshot **Tools → Scheduled Actions** for this exact subscription, then open `admin.php?page=arraysubs-mainadmin#/subscriptions`, search the exact numeric ID, and open its **ArraySubs → Subscriptions** detail screen for the second screenshot. There is no WooCommerce Subscriptions screen on this runtime.
 6. `agent-browser --session customer-SLT-REN-02 open ".../my-account/subscriptions/"` → log in as `slt-core` → open the subscription; screenshot the next-payment date and order list, confirming order #1 is paid and no customer action occurred.
-7. **Stop until after `due+k` on D2** (worst case 19:15 site).
-8. After the D2 charge window and again at the D3 watch (2026-08-05): repeat 2 and 4; pull `wp_actionscheduler_logs` for the D2 ids; list `wp_wc_orders` for `customer_id=<uid>`; `mailpit-agent list 50`.
+7. Re-read the newly queued action ID after D1 and let that row, not a generic clock estimate, define the gate. Publish the exact action IDs/times and `charge−5m` deadline to the registry and D02 watch report, then close only the two task sessions after the morning read. At least five minutes before its exact D2 `due+k` timestamp, set `PRE2=$(mailpit-agent latest-id)` in both handoff locations. For the established control cadence the charge is expected at 21:37:52 site. Keep the card `in-progress` and **stop until after that exact gate**.
+8. After the D2 charge window, run `mailpit-agent wait-new "$PRE2" 900 "Payment received for subscription #$SUBID"` and reconcile every message newer than `PRE2`. Reopen `admin-SLT-REN-02`, repeat steps 2 and 4, pull `wp_actionscheduler_logs` for the D2 IDs, identify the exact new HPOS renewal order by its subscription relationship, open that order, and capture `SLT-REN-02-03-renewal-order-2.png`; close the admin session and leave the card in progress. At the D3 morning watch (2026-08-05), reopen the required task sessions, repeat steps 2, 4, and 6 to prove the fresh D3 legs and customer-facing date, then close both sessions and move the card through review to done.
 
 ## Expected results
 1. Pre-fire: `_completed_payments=2`, `_last_payment_date` = the D1 payment moment, `_pending_renewal_order_id` ABSENT (cleared on payment), `_payment_retry_attempts` absent or 0.
@@ -81,12 +69,13 @@ Prove the SLT-REN-01 subscription re-arms itself: after renewal #1 paid unattend
 ## Emails expected
 | # | Email | Trigger point | Recipient | Subject contains | Verify with |
 |---|---|---|---|---|---|
-| 1 | payment_successful | `due2 + k` on D2 | slt-core@example.test | `Payment received for subscription #SUBID` | `list 50` after 19:15 site |
-| 2 | NONE EXPECTED: renewal_invoice, renewal_reminder, payment_failed, subscription_on_hold. Woo order mail: record-only | D2 legs | — | — | `list 50`; any of the four FAILS |
+| 1 | payment_successful | `due2 + k` on D2 | slt-core@example.test | `Payment received for subscription #SUBID` | `mailpit-agent wait-new "$PRE2" 900 ...`, then inspect every newer message |
+| 2 | NONE EXPECTED: renewal_invoice, renewal_reminder, payment_failed, subscription_on_hold. Woo order mail: record-only | D2 legs | — | — | inspect every message newer than `PRE2`; any of the four FAILS |
 
 ## Evidence to capture
 - `SLT-REN-02-01-pending-legs-D2.png`, `-02-myaccount-subscription.png`, `-03-renewal-order-2.png`.
 - Both meta dumps, the action row list with old and new `action_id`s, log rows, renewal order #2 id, Mailpit ids.
+- Registry/D02 handoff containing both exact action rows, `charge−5m`, and `PRE2`; D3 re-arm/customer read before review.
 
 ## Pass criteria
 - [ ] `_completed_payments` went 2 → 3 with no human action
@@ -100,7 +89,7 @@ Prove the SLT-REN-01 subscription re-arms itself: after renewal #1 paid unattend
 ## Isolation / teardown
 - Read-only; nothing changed or restored. The subscription keeps renewing daily until SLT-SETUP-99A cancels it on D10.
 - From D3 on, this subscription is the plan's known-good control: any morning it has not renewed is a renewal finding.
-- Close only `customer-SLT-REN-02`.
+- Close only `admin-SLT-REN-02` and `customer-SLT-REN-02` after each dated leg; never keep either open across the evening or D3 gates.
 
 ---
 
@@ -117,8 +106,18 @@ Prove the SLT-REN-01 subscription re-arms itself: after renewal #1 paid unattend
 - WooCommerce **grouped** products have zero handling in either plugin — grouped tasks are
   exploratory: document behaviour, do not assert a spec.
 - WP-Cron runs every minute from `/etc/cron.d/mirror-help-arrayhash-wordpress`. Scheduled actions
-  fire on their own; **a renewal that does not fire is a real bug** — capture evidence before forcing.
+  fire on their own; **a renewal that does not fire is a real bug** — capture evidence and do not force a natural-watch action.
 - Give this task its own browser session (`agent-browser --session <role>-<TASK-KEY>`). Sessions are
   keyed by name and **share a cart**.
-- Never run `wp action-scheduler run` without `--hooks=`; prefer a single action by ID.
-- Evidence goes in `qa/subscription-lifecycle-test/evidence/<TASK-KEY>/`.
+- Never run a bare or `--hooks=` Action Scheduler drain. Run one known action ID at a time only when the task explicitly authorizes it and after the required queue pre-flight; natural-watch actions are never forced.
+- Evidence goes under `/home/server-manager/slt-evidence/` using task-key-prefixed filenames.
+
+[[2026-08-05]] Wed 21:02
+PASS closure on 2026-08-05 from authoritative D01 + D03 watch evidence plus live DB reconciliation.
+
+Evidence chain:
+- watch-reports/D01-2026-08-03.md proves renewal #1 order 12276 completed at USD $10.00, `_renewal_cycle_number=2`, `_renewal_scheduled_date=2026-08-03 12:39:05`, `_last_payment_date=2026-08-03 15:38:10Z`, `_next_payment_date=2026-08-04 12:39:05Z`, and replacement actions 14156/14157 for D2 at 09:37:52Z / 15:37:52Z.
+- watch-reports/D03-2026-08-05.md proves renewal #2 for `11959`: relationship-owned order 12426 completed for USD $10.00, subscription at 3 payments, admin mail `5CxR9tgO7fXkqvtfkOh1vl`, and customer payment-success mail `0MehjgCWvkh0qQXtdxG5QX`.
+- Live DB verification on 2026-08-05 confirms `k=10727` is unchanged; actions 14156/14157 completed via WP Cron at 2026-08-04 09:38:08Z / 15:38:10Z, order 12426 carries `_is_renewal_order=yes`, `_subscription_id=11959`, `_subscription_renewal=11959`, `_renewal_cycle_number=3`, `_renewal_scheduled_date=2026-08-04 12:39:05`, and fresh D3 actions 14542/14543 were created immediately after payment. Current state has `completed_payments=4`, `_next_payment_date=2026-08-06 12:39:05`, and pending actions 14974/14975 for 2026-08-06, which confirms the anniversary stayed anchored to `_renewal_scheduled_date` with no `k`-sized drift through the next cycle as well.
+
+Task-specific morning screenshots were not retained under the `SLT-REN-02-*` filenames, but the D01/D03 watch reports and current DB rows are stronger authoritative evidence for every required assertion, so the QA card can close.

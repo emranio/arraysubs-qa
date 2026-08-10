@@ -2,9 +2,9 @@
 #
 # Stop the SLT daily renewal/email watch early.
 #
-# The watch normally removes its own cron entry after D12 (2026-08-13); this is
-# only needed to end the run ahead of schedule. Reports, logs, and the board are
-# left untouched.
+# The watch normally removes its own cron entry only after D13 teardown task 119
+# reaches done; this is only needed to end the run ahead of schedule. Reports,
+# logs, and the board are left untouched.
 #
 set -euo pipefail
 

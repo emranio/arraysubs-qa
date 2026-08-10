@@ -14,7 +14,7 @@ All paths below are relative to `/home/server-manager/www/arrayhash/mirror-help.
 | Item | Value | Source |
 |---|---|---|
 | Setting | `renewals.spread_window_hours`, default **6** | `arraysubs/src/functions/renewal-spread-helpers.php:48` |
-| Stored on this site? | **No** — key absent from `arraysubs_settings`, so the default 6 applies (verified: `wp eval 'arraysubs_get_setting("renewals.spread_window_hours",6)'` → `6`) | live check |
+| Stored on this site? | **No** — key absent from `arraysubs_settings`, so the default 6 applies (verified: `wp eval 'arraysubs_get_setting("renewals.spread_window_hours",6)' --allow-root` → `6`) | live check |
 | Window cap | `min(configured_hours, floor(cycle_hours*3600/4))` — 25% of the billing cycle | `renewal-spread-helpers.php:63-70` |
 | Effective window | For any cycle ≥ 1 day this evaluates to **21600 s (6 h)** (day cycle = 24h → 24*3600/4 = 21600) | `renewal-spread-helpers.php:66-69` + `RenewalScheduler::getBillingCycleInHours()` `arraysubs/src/Features/RecurringBilling/Services/RenewalScheduler.php:222-235` |
 | Offset formula | `offset = ((int) sprintf('%u', crc32('arraysubs-spread-' . $subscription_id))) % $window`, filterable via `arraysubs_renewal_spread_offset`, clamped to ≥ 0 | `renewal-spread-helpers.php:88-108` |
@@ -82,4 +82,3 @@ Three places consume it, and they must agree or the sweep front-runs the schedul
 ## 4. Stripe caveat that changes the observed timeline
 
 For an automatic-payment subscription with auto-renew on, `EmailManager::on_renewal_invoice_created()` **returns without sending the renewal-invoice email** (`EmailManager.php:495-513`). So on Stripe the customer sees nothing at `D+k−6h`; the first mail is the payment-successful (or payment-failed) email at `D+k`. On bacs/cheque/cod or `_auto_renew='off'`, the invoice email *does* go out at `D+k−6h`.
-

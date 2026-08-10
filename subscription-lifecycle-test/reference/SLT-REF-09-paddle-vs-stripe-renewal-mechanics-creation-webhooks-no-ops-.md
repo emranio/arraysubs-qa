@@ -45,8 +45,8 @@ Because `success = true` and no `status` key is set, `PaymentProcessor::normaliz
 | `setupTrialPaymentMethod()` | returns success with existing meta; "Paddle handles trial periods natively" | `:645-657` |
 | `handlePaymentRequiresAction()` | `return ['success'=>true,'message'=>'Paddle handles SCA internally.']` | `:1465-1469` |
 | Early renew | blocked — `early_renewal: false` | `:113` |
-| Renewal Sync / Flexible Renewal Sync | blocked — `arraysubs_paddle` is hard-coded unsupported at `arraysubs/src/functions/renewal-sync-helpers.php:78-79` |
-| Card-expiring email | never fires — `card_expiry_notice: false` (`:99`); `handleCardExpiring()` exists at `:1513` but is only reachable via a mapped event Paddle does not emit here |
+| Renewal Sync / Flexible Renewal Sync | blocked — `arraysubs_paddle` is hard-coded unsupported | `arraysubs/src/functions/renewal-sync-helpers.php:78-79` |
+| Card-expiring email | never fires — `card_expiry_notice: false`; `handleCardExpiring()` is only reachable via a mapped event Paddle does not emit here | `:99`, `:1513` |
 
 ### Webhook
 
@@ -100,4 +100,3 @@ Stripe events arrive through the **official WooCommerce Stripe Gateway** and are
 | `4000 0027 6000 3184` | `requires_action` | verification email, **no retry, no failure email**, grace clock runs |
 | `4000 0000 0000 0341` | decline on every off-session charge | `failed` order, 3 retries at 24 h, on-hold D+1, cancel D+4 |
 | `4000 0000 0000 9995` | `insufficient_funds` decline | same as above; `_last_payment_failure_category = insufficient_funds` (`gateway-helpers.php:330-340`) |
-

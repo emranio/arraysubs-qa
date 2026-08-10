@@ -1,20 +1,23 @@
 ---
 id: 104
 title: Admin-side repeat of the Basic to Pro upgrade and record-for-record diff against SLT-SW-01
-status: todo
+status: done
 priority: medium
 created: 2026-08-02T03:43:11.662273007+02:00
-updated: 2026-08-02T03:43:23.07453456+02:00
+updated: 2026-08-09T08:01:17.120304361+02:00
+started: 2026-08-09T08:01:17.120303129+02:00
+completed: 2026-08-09T08:01:17.120303129+02:00
 tags:
     - plan-switching
     - day-07
-    - has-conflicts
 due: "2026-08-09"
 estimate: 1h 30m
 depends_on:
     - 86
     - 60
     - 12
+claimed_by: delta-gate
+claimed_at: 2026-08-09T08:01:17.120304261+02:00
 class: standard
 ---
 
@@ -23,49 +26,36 @@ class: standard
 > Read `README.md` (environment + isolation contract), `calendar.md` (this day's exact
 > ordering — it is binding, not advisory) and `plan-audit.md` before starting.
 
-### ⚠ Conflict resolutions that apply to this task
-
-**`high` · same-account-collision / duplicate account creation** — with `SLT-SW-06`, `SLT-SW-08`
-
-- *Problem:* SLT-SW-06 (d5) states 'this task also creates slt-switch2 / slt-switch2@example.test' and buys SLT Plan Basic on it, then upgrades to Pro. SLT-SW-04 (d7) states 'this task CREATES slt-switch2 / slt-switch2@example.test' and buys SLT Plan Basic on it again. SLT-SW-08 (d7) then operates on 'slt-switch2, on SLT Plan Pro from SLT-SW-06'. SW-04 either aborts on a duplicate user, or buys SLT Plan Basic a second time on an account that already holds a Pro subscription from the same ladder - and with auto_migrate_on_checkout the checkout-migration ladder in CheckoutMigrationTrait becomes reachable, silently converting SW-08's Pro subscription instead of creating SW-04's Basic one.
-- *Required fix:* SLT-SW-04 creates and uses a distinct account, slt-switch4 / slt-switch4@example.test (Customer, SltQa!2026#Pass, SETUP-03 step 4 billing), registered for 99B deletion. SLT-SW-06 remains the sole creator of slt-switch2 and the sole owner of its subscription; SLT-SW-08 continues to inherit it. Add to SW-04's preconditions: 'slt-switch2 belongs to SLT-SW-06/SLT-SW-08 and must not be reused'.
-
-**`high` · shared-global-setting / same-day bracket collision** — with `SLT-SW-08`, `SLT-SW-02`, `SLT-ADM-01`, `SLT-MYA-04`, `SLT-DUN-05`
-
-- *Problem:* SLT-SW-08 (d7) sets proration.switch_fees.upgrade from 0 to 7.50 globally and restores it in the same task, declaring 'no other SLT switch may run between set and restore'. SLT-SW-04 (d7) performs a Basic->Pro upgrade the same day and asserts its proration order matches SLT-SW-01's record-for-record with 'no switch-fee row'. If SW-04 runs inside SW-08's bracket its order gains a $7.50 'Plan Upgrade switch fee' line and the comparison fails for the wrong reason. The bracket file exists but nothing sequences the two tasks.
-- *Required fix:* Fix the D7 order explicitly in the calendar and in both task bodies: SLT-SW-04 completes and its proration order is PAID before SLT-SW-08 opens its bracket. SW-08's step 2 gains a pre-flight assertion: 'SLT-SW-04 is done on the board and no plan_switch order created today is still unpaid'. SW-08's bracket file must record open/close UTC and be posted to the registry so any switch order created inside it can be attributed and re-run.
-
----
 ## Objective
 Repeat the SLT-SW-01 upgrade (Basic $5.00 → Pro $15.00, day/1) on a fresh subscription driven from **wp-admin**, and compare the records field by field with SLT-SW-01. First the negative: the admin screens expose **no plan-switch control** (edit = invoice email, addresses, status only, Product read-only; detail offers only *Cancel Pending Switch*). The admin's lever is the proration order, which `attemptAutoPayment()` leaves "awaiting manual payment from customer or admin".
 
 ## Scope
 - Gateway: Stripe test (purchase only)
 - Checkout: block (page 8) for the purchase, wp-admin for the switch
-- Account: admin-created (`slt-switch2`, created by this task)
+- Account: admin-created (`slt-switch4`, created by this task)
 - Plugins: free-only
 
 ## Preconditions
 - SLT-SW-01 complete; its record set is the comparison baseline.
-- This task CREATES **`slt-switch2` / slt-switch2@example.test**, customer, password `SltQa!2026#Pass`, billing address as SLT-SETUP-03 step 4; it matches `slt-*`, so SLT-SETUP-99 removes it. A separate account is needed because `auto_migrate_on_checkout=true` forbids buying a product twice.
+- This task CREATES **`slt-switch4` / slt-switch4@example.test**, customer, password `SltQa!2026#Pass`, billing address as SLT-SETUP-03 step 4; it matches `slt-*`, so SLT-SETUP-99B removes it. `slt-switch2` and its live Pro subscription belong exclusively to `SLT-SW-06`/`SLT-SW-08` and must not be opened or reused here. A separate account keeps the record-for-record comparison independent; at `one_per_customer=false`, a repeat checkout would create a duplicate rather than migrate.
 
 ## Test data
 | Item | Value |
 |---|---|
-| Account | slt-switch2 (new) |
+| Account | slt-switch4 (new) |
 | Switch | S-BASIC2: Basic $5.00 → Pro $15.00, day/1 |
 | Card | `4242 4242 4242 4242` |
-| Admin | `page=arraysubs-mainadmin#/subscriptions/edit/<id>` and `/detail/<id>` |
-| Sessions | `admin`, `cust-SW-04` |
+| Admin | `admin.php?page=arraysubs-mainadmin#/subscriptions/edit/<id>` and `admin.php?page=arraysubs-mainadmin#/subscriptions/detail/<id>` |
+| Sessions | `admin-SLT-SW-04`, `customer-SLT-SW-04` |
 
 ## Steps
-1. As admin create `slt-switch2` (Send User Notification UNTICKED) and fill its billing address.
-2. `mailpit-agent latest-id` → M0. As `cust-SW-04` buy **SLT Plan Basic** on the block checkout. Record S-BASIC2, its order id and `_last_payment_date`.
-3. Admin: open `#/subscriptions/edit/<S-BASIC2>`; screenshot the form and confirm there is **no** product/plan field — only Contact, Billing, Shipping, status. Same on `#/subscriptions/detail/<S-BASIC2>`.
-4. In the customer session: portal → **Change Plan** → **Select** SLT Plan Pro → Confirm → **Change Plan**; record T1 and the preview values; land on the order-pay page and **do not pay**. Record PRO-ORDER2; `mailpit-agent latest-id` → M1.
-5. Admin: `page=wc-orders&action=edit&id=<PRO-ORDER2>`; screenshot the fee line and `_arraysubs_*` custom fields; set **Order status** = `Completed` → **Update**.
-6. Re-dump S-BASIC2 and PRO-ORDER2 meta; read the notes; `mailpit-agent list 30` from M1.
-7. Build the comparison table vs SLT-SW-01: `_product_id`, `_recurring_amount`, billing period/interval, title, `_next_payment_date` before/after, `_plan_switch_history`, `_store_credit`, order `_arraysubs_*` metas.
+1. Set `USER_PRE=$(mailpit-agent latest-id)`. In `admin-SLT-SW-04`, create `slt-switch4` (Send User Notification UNTICKED) and fill its billing address. Record its user ID; require `wp user meta get <UID> _woocommerce_persistent_cart_1 --allow-root` to be empty/absent. Record exactly one admin-only `New User Registration` message after `USER_PRE` and no customer account/password mail.
+2. In `customer-SLT-SW-04`, log in as fresh `slt-switch4`, open `/cart/`, and require both browser and serialized persistent carts empty. If either is contaminated, preserve proof, clear only this fresh task user's cart through the UI, re-prove both empty, and continue; file the standalone finding without stranding the card. Record exact order/subscription counts and set `M0=$(mailpit-agent latest-id)` immediately before adding **SLT Plan Basic**. Capture the unpopulated $5.00 checkout, fill 4242 without capturing populated hosted fields, and capture only the safe receipt. Resolve numeric parent order and sole numeric S-BASIC2 through strict receipt post-meta JSON; require reverse parent/customer/product linkage and exact `+1` counts. Poll immutable M0 in repeated ≤60-second calls through the two-minute cutoff and classify the complete four-message WC/ArraySubs checkout set, then record `_last_payment_date`.
+3. In `admin-SLT-SW-04`, open `#/subscriptions/edit/<S-BASIC2>`; screenshot the form and confirm there is **no** product/plan field — only Contact, Billing, Shipping, status. Same on `#/subscriptions/detail/<S-BASIC2>`.
+4. In the customer session, record the exact pre-switch order set, then portal → **Change Plan** → **Select** SLT Plan Pro → Confirm → **Change Plan**; record T1 and preview values. Land on the order-pay page and **do not pay**. Record numeric PRO-ORDER2 from the exact switch response, require exactly one new pending plan-switch order with customer/subscription/target linkage and verified proration math, then set `M1=$(mailpit-agent latest-id)` immediately before the admin completion.
+5. In `admin-SLT-SW-04`, open `page=wc-orders&action=edit&id=<PRO-ORDER2>`; screenshot the fee line and `_arraysubs_*` custom fields; set **Order status** = `Completed` → **Update**.
+6. Re-dump numeric S-BASIC2 and PRO-ORDER2 meta; read the notes; poll immutable M1 in repeated calls no longer than 60 seconds through the two-minute cutoff, save/show the exact PRO-ORDER2 completed-order message, and classify the complete delta plus unrelated shared-site mail.
+7. Build the comparison table vs SLT-SW-01: `_product_id`, `_recurring_amount`, billing period/interval, title, `_next_payment_date` before/after, `_plan_switch_history`, `_store_credit`, order `_arraysubs_*` metas. Dump the exact replacement invoice/charge action IDs/GMTs and verify the unchanged date math. Prove both carts empty, close both task sessions, independently review the parent/switch/admin-completion/comparison evidence, then move through `review` to `done` with Review empty. Any live defect goes only in `issues/SLT-SW-04-<concise-slug>.md` with task/stage/plan path; user/product/subscription/parent/switch-order/action/message IDs; user login/email/role; exact routes/sessions; reproduction; expected/actual; and UI/REST/meta/order/queue/Mailpit proof.
 
 ## Expected results
 1. Neither admin screen has a plan/product control. The only admin route is completing the proration order — or the UI-less REST `subscriptions/<id>/update`, which via `trackProductChange()` fires `arraysubs_plan_switch_completed` **without** proration, order, reschedule or title rewrite. Record that asymmetry, do not exercise it.
@@ -77,10 +67,10 @@ Repeat the SLT-SW-01 upgrade (Basic $5.00 → Pro $15.00, day/1) on a fresh subs
 ## Emails expected
 | # | Email | Trigger point | Recipient | Subject contains | Verify with |
 |---|---|---|---|---|---|
-| 1 | NONE at user creation | step 1 | — | — | notification unticked; `latest-id` unchanged |
-| 2 | Purchase mail for the first order | step 2 | slt-switch2@example.test | `Order #` | record ids |
+| 1 | WP New User Registration | step 1 admin user creation | admin | `New User Registration` | exactly one after `USER_PRE`; no customer account/password mail |
+| 2 | Purchase mail for the first order | step 2 | slt-switch4@example.test | `Order #` | record ids |
 | 3 | NONE from the switch | steps 4-6 | — | — | no switch listener; no lifecycle mail |
-| 4 | WooCommerce "completed" mail for PRO-ORDER2 | step 5 | slt-switch2@example.test | `Order #<PRO-ORDER2>` | `mailpit-agent list 30` |
+| 4 | WooCommerce "completed" mail for PRO-ORDER2 | step 5 | slt-switch4@example.test | `Order #<PRO-ORDER2>` | exact match in the complete M1 delta |
 
 ## Evidence to capture
 - `SLT-SW-04-01-no-plan-field.png`, `-02-detail.png`, `-03-order-metas.png`, `-04-completed.png`; the comparison table; all ids and Mailpit ids.
@@ -90,9 +80,10 @@ Repeat the SLT-SW-01 upgrade (Basic $5.00 → Pro $15.00, day/1) on a fresh subs
 - [ ] Completing the proration order applies the switch with no gateway charge
 - [ ] Records match SLT-SW-01 field for field (amount differences explained by r)
 - [ ] `_next_payment_date` unchanged; one `upgrade` history entry; only the listed order mails
+- [ ] Exact safe parent/switch relationships, sessions, standalone findings, and independent review close with Review empty
 
 ## Isolation / teardown
-- Adds `slt-switch2` and one subscription, both removed by SLT-SETUP-99; register the account in the registry so no other task reuses it. Nothing global changed.
+- Empty the `slt-switch4` cart, require its persistent-cart meta to be empty/absent, and close only `admin-SLT-SW-04` and `customer-SLT-SW-04`. Adds `slt-switch4` and one subscription, both removed by SLT-SETUP-99B; register the account in the registry so no other task reuses it. Nothing global changed. `slt-switch2` remains untouched.
 
 ---
 
@@ -109,8 +100,17 @@ Repeat the SLT-SW-01 upgrade (Basic $5.00 → Pro $15.00, day/1) on a fresh subs
 - WooCommerce **grouped** products have zero handling in either plugin — grouped tasks are
   exploratory: document behaviour, do not assert a spec.
 - WP-Cron runs every minute from `/etc/cron.d/mirror-help-arrayhash-wordpress`. Scheduled actions
-  fire on their own; **a renewal that does not fire is a real bug** — capture evidence before forcing.
+  fire on their own; **a renewal that does not fire is a real bug** — capture evidence and do not force a natural-watch action.
 - Give this task its own browser session (`agent-browser --session <role>-<TASK-KEY>`). Sessions are
   keyed by name and **share a cart**.
-- Never run `wp action-scheduler run` without `--hooks=`; prefer a single action by ID.
-- Evidence goes in `qa/subscription-lifecycle-test/evidence/<TASK-KEY>/`.
+- Never run a bare or `--hooks=` Action Scheduler drain. Run one known action ID at a time only when the task explicitly authorizes it and after the required queue pre-flight; natural-watch actions are never forced.
+- Evidence goes under `/home/server-manager/slt-evidence/` using task-key-prefixed filenames.
+
+[[2026-08-06]] Thu 20:38
+Source-block note on 2026-08-06: this admin-side comparison task requires card 86 / SLT-SW-01 to have completed first. Card 86 is now source-blocked because card 72 / SLT-SW-00 never created the ladder fixtures, so this card cannot start until a later valid execution creates SUB_BASIC and completes the baseline customer-side switch.
+
+[[2026-08-09]] Sun 08:01
+D07 post-noon final source recheck at 2026-08-09 12:00:26 UTC+6 — UNVERIFIED. /home/server-manager/slt-evidence/SLT-SW-04-D07-source-recheck.txt proves zero exact numeric registry match for SUB_BASIC and zero ArraySubs subscriptions for required owner 349; therefore SLT-SW-01 has no customer-side Basic-to-Pro record set for the mandatory comparison baseline. Dependency chain: SLT-SW-00 fixture absent -> SLT-SW-01 baseline absent -> SLT-SW-04 comparison impossible. No slt-switch4 user, checkout, subscription, switch order, session, mail baseline, action, or setting was created or changed. Future impact: rerun from step 1 only after SUB_BASIC and a completed SLT-SW-01 baseline exist.
+
+[[2026-08-09]] Sun 12:17
+Independent-review correction: discard the original zero-subscription SQL because it filtered `arraysubs_subscription`. The corrected query uses live post type `arraysubs_data` with `_customer_id=349` and still returns zero rows; the missing numeric registry handoff and source-blocked card 86 independently agree. The UNVERIFIED closure is unchanged. Full correction: `/home/server-manager/slt-evidence/SLT-SW-04-D07-source-recheck.txt`.

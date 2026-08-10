@@ -1,14 +1,15 @@
 ---
 id: 56
 title: Override subject, heading and content on New Subscription with merge tags and prove real-value rendering
-status: todo
+status: done
 priority: high
 created: 2026-08-02T03:43:07.920891214+02:00
-updated: 2026-08-02T03:43:18.325832629+02:00
+updated: 2026-08-05T21:37:49.55642195+02:00
+started: 2026-08-05T17:11:13.226899067+02:00
+completed: 2026-08-05T17:11:13.226899067+02:00
 tags:
     - email
     - day-03
-    - has-conflicts
 due: "2026-08-05"
 estimate: 1h 30m
 depends_on:
@@ -21,21 +22,8 @@ class: standard
 > Read `README.md` (environment + isolation contract), `calendar.md` (this day's exact
 > ordering — it is binding, not advisory) and `plan-audit.md` before starting.
 
-### ⚠ Conflict resolutions that apply to this task
-
-**`critical` · shared-global-setting / undeclared exclusive bracket** — with `SLT-CHK-09`, `SLT-CPN-04`, `SLT-SYN-14`, `SLT-CHK-05`, `SLT-ADM-05`, `SLT-EML-06`
-
-- *Problem:* SLT-EML-12 (d3) writes the WooCommerce per-email Subject/Heading/Additional content on arraysubs_new_subscription globally, for a bracket it only vaguely bounds ('run after 12:00'). Every new_subscription email site-wide inside that bracket carries the subject 'SLT-EML-12 {customer_first_name} :: sub ...'. Four other D3 tasks place checkouts and gate on the default subject: SLT-CHK-09 ('mailpit-agent wait-new MB09 180 "is active"'), SLT-CPN-04 ('wait-new $M0 120 "is active"', 18:00-19:00), SLT-SYN-14 ('wait-new M0 180', after 12:00), plus SLT-ADM-05's status-change activation on D3. Any of these landing inside EML-12's bracket exits 124 and files a false 'missing email' bug. EML-12's own admin_new_subscription count (expects exactly 3) is also corrupted by any foreign checkout in the bracket.
-- *Required fix:* Make EML-12 a declared exclusive bracket, same pattern as SLT-SYN-04's: fixed window 21:00-21:40 site on D3 (2026-08-05), after CPN-04's 18:00-19:00 slot has closed; open/close UTC timestamps written to slt-evidence/SLT-EML-12-bracket.txt and posted to the registry; no other SLT task may place an order, activate a subscription, or run a checkout inside it. Add a pre-flight step: assert no SLT checkout task is in-progress on the board. Apply the identical treatment to SLT-EML-13's admin-email OFF bracket (see separate entry).
-
-**`high` · session collision (shared admin session)** — with `SLT-EML-01`, `SLT-EML-02`, `SLT-EML-03`, `SLT-EML-05`, `SLT-EML-10`, `SLT-EML-13`
-
-- *Problem:* More than twenty tasks open `--session admin` by that bare name, in direct violation of audit C09's fix (which only got applied to guest/customer sessions). agent-browser sessions are keyed by name, so these tasks share one browser profile: one task's `agent-browser close --session admin` logs out another mid-run; one task navigating the SPA away from a settings screen invalidates another's snapshot; and any admin session that ever adds to cart (SLT-ADM-01's bulk-action screen, SLT-EML-12's status juggling) puts a cart on the admin user shared by all of them. The failures this produces look like flaky UI, not contamination.
-- *Required fix:* Rename every admin session to `admin-<TASK-KEY>` (SLT-ADM-01/02/03/04/05 already do this correctly - copy the pattern). Each task closes only its own session by name; `agent-browser close --all` is reserved to the last task of the day, named explicitly in the calendar. Add this to the isolation contract as rule 9 and add a pass criterion to every task that opens an admin session: 'the session name contains this task's key'.
-
----
 ## Objective
-Prove the Subject / Email heading / Additional content overrides on an ArraySubs email are honoured and that every merge tag resolves to the subscription's real values, not the constructor's sample placeholders. Also record, with grep evidence, that `emails.<id>.subject`/`.body` in `arraysubs_settings` have no consumer — the WooCommerce per-email fields are the only working override surface.
+Prove the Subject / Email heading / Additional content overrides on an ArraySubs email are honoured and that every merge tag resolves to the subscription's real values, not the constructor's sample placeholders. Also quote the suite-local, already-verified evidence that `emails.<id>.subject`/`.body` in `arraysubs_settings` have no consumer — the WooCommerce per-email fields are the only working override surface.
 
 ## Scope
 - Gateway: N/A (no payment taken)
@@ -44,7 +32,8 @@ Prove the Subject / Email heading / Additional content overrides on an ArraySubs
 - Plugins: free-only
 
 ## Preconditions
-- SLT-EML-11 complete: `slt-email` exists (First name `SLT`); harness **H1** on `SLT Lifetime One Time` is `arraysubs-active`, `_next_payment_date` empty, no scheduled action. SLT-SYN-04 holds an exclusive 09:00–11:00 bracket on D3 — **run after 12:00**.
+- SLT-EML-11 complete: `slt-email` exists (First name `SLT`); harness **H1** on `SLT Lifetime One Time` is `arraysubs-active`, `_next_payment_date` empty, no scheduled action.
+- **Exclusive mutation bracket: 21:00–21:40 site on D3 (2026-08-05), after every D3 checkout has closed.** Preparation, the prior dump, and the default-subject baseline may run from 20:15 while no override is active. Before the first status transition, require the board to show no checkout/order-producing task in progress. No other task may place an order, activate a subscription, or change email settings inside the 21:00–21:40 override bracket.
 - Code basis: overrides come from the WooCommerce per-email option row via `WC_Email::format_string()`; tags are the keys built in `BaseSubscriptionEmail::__construct()` (`:53-80`), repopulated live in `populate_placeholders()` (`:268-300`). `new_subscription` fires on transition to `arraysubs-active` from pending/trial/auto-draft (`EmailManager.php:325-344`).
 
 ## Test data
@@ -56,42 +45,66 @@ Prove the Subject / Email heading / Additional content overrides on an ArraySubs
 | Additional content | `PROBE start={start_date} next={next_payment_date} period={billing_period} pay={payment_method}` |
 
 ## Steps
-1. Dump `woocommerce_arraysubs_new_subscription_settings` to `/home/server-manager/slt-evidence/SLT-EML-12-prior.txt` (expect "Could not get").
-2. From the plugins root run `grep -rn "emails\..*\.subject\|emails\..*\.body" arraysubs/src/Features/Emails/ arraysubs/src/functions/email-helpers.php`; save the empty result to `-no-consumer.txt`.
-3. `MP0=$(mailpit-agent latest-id)`; `--session admin` open `page=arraysubs-mainadmin#/subscriptions`, open H1, **Status** = `Pending`, save (fallback `post.php?post=H1&action=edit`); `latest-id` must not move.
-4. Set H1 **Status** = `Active`; `wait-new $MP0 180 "is active"`; `text latest`; record the DEFAULT subject and heading verbatim.
-5. Open `/wp-admin/admin.php?page=wc-settings&tab=email&section=arraysubs_new_subscription` → `snapshot -i`; screenshot the **Available placeholders** desc-tip on Subject; paste the three overrides, keep **Enable** ticked, Save. Screenshot; record UTC open.
-6. `MP1=$(mailpit-agent latest-id)`; set H1 `Pending`, then `Active`; `wait-new $MP1 180 "SLT-EML-12"`; `text/html latest`; screenshot the render.
-7. Transcribe subject, heading and PROBE **verbatim**; compare tag by tag against `wp post meta list H1 --keys=_recurring_amount,_billing_period,_start_date,_next_payment_date --allow-root`.
-8. **Restore.** Same URL: clear Subject, Heading and Additional content, keep Enable ticked, Save. Screenshot; record UTC close.
-9. `MP2=$(mailpit-agent latest-id)`; set H1 `Pending` → `Active`; `wait-new $MP2 180 "is active"` must return the DEFAULT subject. Leave H1 `Active`; dump the row to `-after.txt`.
+1. During the 20:15–20:59 preparation window, require the precondition board check to pass, resolve registry alias `H1` into shell variable `H1`, and abort unless `[[ "$H1" =~ ^[0-9]+$ ]]`. Record whether `woocommerce_arraysubs_new_subscription_settings` exists and preserve its exact value in `/home/server-manager/slt-evidence/SLT-EML-12-prior.txt` (expected absent); the presence flag governs exact restoration in step 9. Record a preparation timestamp, but do not call the override bracket open yet.
+2. Do not inspect either product source tree. Quote the already code-verified no-consumer finding from `reference/SLT-REF-04-complete-email-inventory-class-template-trigger-recipient-su.md` and save that suite-local reference excerpt to `/home/server-manager/slt-evidence/SLT-EML-12-reference-no-consumer.txt`.
+3. `MP0=$(mailpit-agent latest-id)`; in `--session admin-SLT-EML-12` open `admin.php?page=arraysubs-mainadmin#/subscriptions`, search exact ID H1, open **View Details**, set **Status** = `Pending`, and save; the complete delta after MP0 must contain no message attributable to that Pending transition. There is no `post.php` fallback for this subscription post type.
+4. Set H1 **Status** = `Active`; `mailpit-agent wait-new "$MP0" 180 "is active"`; save the exact customer-message id and `mailpit-agent text <matched-id>`; inspect the complete MP0 delta for the matching admin message and record the DEFAULT subject and heading verbatim.
+5. At or after 21:00 site, repeat the board stop check and require no known subscription-activation action inside the next 40 minutes. In `admin-SLT-EML-12`, open `/wp-admin/admin.php?page=wc-settings&tab=email&section=arraysubs_new_subscription` → `snapshot -i`; capture the **Available placeholders** desc-tip as `SLT-EML-12-01-placeholders.png`. Immediately before saving, set `OVERRIDE_SAVE_PRE=$(mailpit-agent latest-id)`, record the UTC bracket-open timestamp in `/home/server-manager/slt-evidence/SLT-EML-12-bracket.txt` and the registry, paste the three overrides, keep **Enable** ticked, Save, and capture `SLT-EML-12-02-saved.png`. Re-read the exact option and require zero setting-save-attributable mail in the bounded `OVERRIDE_SAVE_PRE` delta.
+6. `MP1=$(mailpit-agent latest-id)`; set H1 `Pending`, then `Active`; `mailpit-agent wait-new "$MP1" 180 "SLT-EML-12"`; save the exact customer-message ID, inspect the complete MP1 delta for the matching admin message, and run both `mailpit-agent text <matched-id>` and `mailpit-agent html <matched-id>`. In exact session `mail-SLT-EML-12`, open the matched message in the local Mailpit UI and capture `SLT-EML-12-03-overridden.png`.
+7. Transcribe subject, heading and PROBE **verbatim**; compare tag by tag against `wp post meta list "$H1" --keys=_recurring_amount,_billing_period,_start_date,_next_payment_date --allow-root`.
+8. Set `CLEAR_SAVE_PRE=$(mailpit-agent latest-id)`. **Restore UI defaults.** On the same URL clear Subject, Heading and Additional content, keep Enable ticked, Save, capture `SLT-EML-12-04-cleared.png`, re-read the blank fields, and require zero setting-save-attributable mail in the bounded `CLEAR_SAVE_PRE` delta.
+9. `MP2=$(mailpit-agent latest-id)`; set H1 `Pending` → `Active`; `mailpit-agent wait-new "$MP2" 180 "is active"` must return the DEFAULT subject, and the complete delta must contain exactly one unchanged admin message. Capture that matched default render in `mail-SLT-EML-12` as `SLT-EML-12-05-restored.png`; leave H1 `Active`. Restore the option's exact step-1 storage state—delete it if it was absent, otherwise restore the preserved value—and require an exact presence/value comparison. Record the UTC close timestamp in the bracket file and registry no later than 21:40 site, close only `admin-SLT-EML-12` and `mail-SLT-EML-12`, independently review the complete evidence, move the card through `review` to `done`, and ensure Review returns to zero. If the live `{next_payment_date}` or another render assertion fails, create the named standalone issue with this task/plan, H1/parent order/user IDs and login/role, exact admin/Mailpit contexts, reproduction, expected/actual, mail/meta/reference proof and the default-render counterexample; never create a kanban bug card.
+
+**Restore-first failure rule:** after step 5 saves the override, any browser, transition, mail, or evidence failure jumps immediately to step 8 and the exact step-1 storage restoration in step 9 before diagnosis.
 
 ## Expected results
-1. Step 4 subject is exactly `[mirror-help.arrayhash.com] Your subscription #<H1> is active`; setting status to Pending sends nothing (verify `latest-id` at each Pending set).
+1. Step 4 subject is exactly `[mirror-help.arrayhash.com] Your subscription #<H1> is active`; setting status to Pending sends nothing (verify `mailpit-agent latest-id` at each Pending set).
 2. Step 6 subject renders `SLT-EML-12 SLT :: sub <H1> :: SLT Lifetime One Time :: $49.00`; heading `Hello SLT, subscription <H1> is Active`.
 3. PROBE resolves `{start_date}` to `_start_date` in site format, `{billing_period}` to the lifetime rendering of `arraysubs_format_billing_period(1,'lifetime')` and `{payment_method}` to `_payment_method_title` or `N/A`.
 4. **`{next_payment_date}` probe:** H1's meta is empty, so the tag must render empty or an explicit no-value string. A fabricated date (today+30d — the constructor sample at `BaseSubscriptionEmail.php:64-67`) is a **BUG**: file `issues/SLT-EML-12-lifetime-next-payment.md`.
-5. No sample values (`John`, `Sample Subscription Product`, `$29.99`, `every month`, `12345`) appear anywhere; after step 9 the default subject is back and the row holds `enabled=yes` with blank subject/heading.
+5. No sample values (`John`, `Sample Subscription Product`, `$29.99`, `every month`, `12345`) appear anywhere; after the live default proof, final option presence/value exactly matches step 1 (normally the temporary row is absent again).
 
 ## Emails expected
 | # | Email | Trigger point | Recipient | Subject contains | Verify with |
 |---|---|---|---|---|---|
-| 1 | new_subscription, default subject | Steps 4 and 9 Pending→Active | slt-email@example.test | `Your subscription #<H1> is active` | `wait-new $MP0 180` / `wait-new $MP2 180` |
-| 2 | new_subscription, overridden | Step 6 Pending→Active | slt-email@example.test | `SLT-EML-12 SLT :: sub <H1>` | `wait-new $MP1 180 "SLT-EML-12"` |
-| 3 | admin_new_subscription | Steps 4, 6, 9 | admin_email | `New subscription #<H1> from SLT Email` | `list 20` — count 3, subject unchanged |
+| 1 | new_subscription, default subject | Steps 4 and 9 Pending→Active | slt-email@example.test | `Your subscription #<H1> is active` | `mailpit-agent wait-new "$MP0" 180` / `mailpit-agent wait-new "$MP2" 180` |
+| 2 | new_subscription, overridden | Step 6 Pending→Active | slt-email@example.test | `SLT-EML-12 SLT :: sub <H1>` | `mailpit-agent wait-new "$MP1" 180 "SLT-EML-12"` |
+| 3 | admin_new_subscription | Steps 4, 6, 9 | admin_email | `New subscription #<H1> from SLT Email` | complete MP0/MP1/MP2 deltas — exactly one per transition, subject unchanged |
 
 ## Evidence to capture
-- Screenshots `SLT-EML-12-01-placeholders.png`, `-02-saved.png`, `-03-overridden.png`, `-04-cleared.png`, `-05-restored.png`; the three text dumps; verbatim subject/heading/PROBE beside the meta values; `MP0/MP1/MP2` and message ids.
+- Screenshots `SLT-EML-12-01-placeholders.png`, `-02-saved.png`, `-03-overridden.png`, `-04-cleared.png`, `-05-restored.png`; bracket file; exact prior/final presence-value proof; three text dumps; verbatim subject/heading/PROBE beside meta; `OVERRIDE_SAVE_PRE`, `CLEAR_SAVE_PRE`, `MP0/MP1/MP2`, and every message ID; session/review proof.
 
 ## Pass criteria
 - [ ] Default subject captured before any override; every merge tag in subject, heading and PROBE resolves to H1's real values
 - [ ] `{next_payment_date}` on a lifetime sub recorded; bug filed if fabricated
 - [ ] Zero sample placeholder values leak; admin subject unaffected
-- [ ] Overrides cleared, default restored by a live send, no-consumer grep stored
+- [ ] Override bracket opened only at the first non-default save, after the board pre-flight, and closed by 21:40 site; preparation stayed outside the bracket and timestamps were published
+- [ ] Overrides cleared, default restored by a live send, suite-local no-consumer reference excerpt stored
+- [ ] Exact prior option presence/value restored; task sessions closed and card reviewed to done
 
 ## Isolation / teardown
 - Global setting touched: `arraysubs_new_subscription` subject/heading/additional_content, non-default only inside the recorded bracket. A non-SLT `new_subscription` mail in that bracket would carry the SLT subject — keep it short; abort if another SLT checkout task is running.
-- Handed on: H1 left `arraysubs-active` for SLT-EML-13; tag list posted to the registry. Restores: all three fields cleared in step 8.
+- Handed on: H1 left `arraysubs-active` for SLT-EML-13; tag list posted to the registry. Restores: exact prior option presence/value after the live blank/default proof.
+
+## Execution notes — 2026-08-05 D03
+
+- Preparation completed inside the authored 20:15-20:59 site window without opening the override bracket:
+  - `/home/server-manager/slt-evidence/SLT-EML-12-prior.txt`
+  - `/home/server-manager/slt-evidence/SLT-EML-12-reference-no-consumer.txt`
+- `H1=12786`, user `366` (`slt-email@example.test`), order `12776`, product `11938`.
+- Step 3 passed:
+  - `MP0=3g8Vwfvn45nsiIoOg0vwCH`
+  - UI `Active -> Pending` produced no mail
+  - `wp post get 12786 --field=post_status --allow-root` returned `arraysubs-pending`
+- Step 4 blocked the task before the 21:00 site bracket:
+  - UI `Pending -> Active` emitted customer mail `6IU3cBwmT9dWpQxtFW8Hra` and admin mail `2G3O9lw9OovzM1ecZNohbb`
+  - default subject/heading were captured, but `wp post get 12786 --field=post_status --allow-root` still returned `arraysubs-pending`
+  - fresh browser sessions then rendered the subscriptions index with zero counts and blank detail/edit shells, so the authored browser path for steps 5-9 could not continue
+- Cleanup:
+  - `wp post update 12786 --post_status=arraysubs-active --allow-root`
+  - cleanup itself emitted a second mail pair: customer `1gpznceQ5LZsi6NK7FTZlp`, admin `65pK2vT5zGVU7UHiyphXFF`
+  - final status restored to `arraysubs-active`
+- Blocker recorded: `qa/subscription-lifecycle-test/issues/SLT-EML-12-admin-status-ui-fires-active-mail-without-persisting-status.md`
 
 
 ---
@@ -109,8 +122,20 @@ Prove the Subject / Email heading / Additional content overrides on an ArraySubs
 - WooCommerce **grouped** products have zero handling in either plugin — grouped tasks are
   exploratory: document behaviour, do not assert a spec.
 - WP-Cron runs every minute from `/etc/cron.d/mirror-help-arrayhash-wordpress`. Scheduled actions
-  fire on their own; **a renewal that does not fire is a real bug** — capture evidence before forcing.
+  fire on their own; **a renewal that does not fire is a real bug** — capture evidence and do not force a natural-watch action.
 - Give this task its own browser session (`agent-browser --session <role>-<TASK-KEY>`). Sessions are
   keyed by name and **share a cart**.
-- Never run `wp action-scheduler run` without `--hooks=`; prefer a single action by ID.
-- Evidence goes in `qa/subscription-lifecycle-test/evidence/<TASK-KEY>/`.
+- Never run a bare or `--hooks=` Action Scheduler drain. Run one known action ID at a time only when the task explicitly authorizes it and after the required queue pre-flight; natural-watch actions are never forced.
+- Evidence goes under `/home/server-manager/slt-evidence/` using task-key-prefixed filenames.
+
+[[2026-08-05]] Wed 16:27
+Concurrency correction: first owner Active pair at 14:19:52Z/14:19:53Z was followed by root watcher Pending confirmation and pending proof at 14:20:34Z, so the apparent non-persistence was a QA race. Root then restored Active via UI, stopped at 14:22:41Z with option absent, and documented both pairs in SLT-EML-12-root-concurrency-note.txt. The product issue file is retracted. One owner will resume only the still-pending 21:00-21:40 override/default-restoration bracket.
+
+[[2026-08-05]] Wed 16:46
+Exclusive 21:00-21:40 site bracket owner confirmed. Preparation remains state-neutral; first non-default save will define bracket open.
+
+[[2026-08-05]] Wed 17:11
+Override bracket completed on 2026-08-05. Prior option state was absent and final option state is absent again. Overridden customer/admin mail IDs: 5DWxnovrH9I1024JTuTxUj / 0zWQB9v5YIdXqjYpmEHm9v. Restored-default customer/admin mail IDs: 1PVeoMecZqOQqAxlLtNshg / 6XstfWCpbfAFtSNvYCbd8t. Lifetime next-payment rendered blank, no sample placeholder values leaked into the live overridden send, and screenshots 01-05 plus bracket/reference files were captured under /home/server-manager/slt-evidence/.
+
+[[2026-08-05]] Wed 17:16
+Independent evening review: live override customer mail 5DWxnovrH9I1024JTuTxUj rendered all non-price tags correctly and lifetime next-payment blank, but recurring_amount inserted literal WooCommerce price HTML into the RFC subject instead of plain $49.00. Verdict QA COMPLETE / FAIL; issue issues/SLT-EML-12-recurring-amount-subject-renders-html.md. Bracket file proves 15:02:04Z-15:10:37Z and exact absent option restoration; H1 remains active.

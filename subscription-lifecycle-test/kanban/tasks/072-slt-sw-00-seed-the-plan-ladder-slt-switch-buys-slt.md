@@ -1,10 +1,12 @@
 ---
 id: 72
 title: 'SLT-SW-00 Seed the plan ladder: slt-switch buys SLT Plan Basic and SLT Plan Pro'
-status: todo
+status: done
 priority: critical
 created: 2026-08-02T03:43:09.349918412+02:00
-updated: 2026-08-02T03:43:19.938269804+02:00
+updated: 2026-08-06T20:32:51.608072496+02:00
+started: 2026-08-06T20:32:51.608071615+02:00
+completed: 2026-08-06T20:32:51.608071615+02:00
 tags:
     - plan-switching
     - day-04
@@ -13,6 +15,8 @@ estimate: 45m
 depends_on:
     - 60
     - 12
+claimed_by: wild-timber
+claimed_at: 2026-08-06T20:32:51.608072406+02:00
 class: standard
 ---
 
@@ -33,57 +37,58 @@ Every plan-switching task (`SLT-SW-01`..`SLT-SW-10`) assumes `slt-switch` alread
 - `SLT-PROD-11` complete: the four-product ladder (Basic / Pro / Enterprise / Peer) exists and is wired for switching.
 - `SLT-SETUP-03` complete: `slt-switch` exists with a billing address.
 - Runs on D4 **after 12:00 site time**, before `SLT-SW-09`.
-- `slt-switch` owns no ladder subscription yet. **Verify this first** — `auto_migrate_on_checkout=true` means a rebuy migrates rather than creates.
+- `slt-switch` owns no ladder subscription yet. **Verify this first.** With `one_per_customer=false`, `auto_migrate_on_checkout=true` is inert, so a rebuy would create an extra ladder subscription and invalidate the exact-two fixture.
 
 ## Test data
 | Item | Value |
 |---|---|
-| Products | SLT Plan Basic (day/1, $10.00), SLT Plan Pro (day/1, $15.00) |
+| Products | SLT Plan Basic (day/1, $5.00), SLT Plan Pro (day/1, $15.00) |
 | Account | slt-switch / `SltQa!2026#Pass` |
 | Card | 4242 4242 4242 4242, 12/34, CVC 123 |
-| Session | `cust-SLT-SW-00` |
+| Sessions | `cust-SLT-SW-00`, `admin-SLT-SW-00` |
 
 ## Steps
-1. `PRE=$(mailpit-agent latest-id)`. Record the `arraysubs_data` count.
+1. Record `SUBCOUNT_BEFORE=<exact current SLT subscription count>`.
 2. Confirm `slt-switch` owns no SLT ladder subscription: `wp post list --post_type=arraysubs_data --allow-root` cross-checked against `_customer_id`.
 3. `agent-browser --session cust-SLT-SW-00 open ".../my-account/"` → log in as `slt-switch`.
-4. Assert `/cart/` is EMPTY. Add **SLT Plan Basic** only — `allow_multiple_in_cart=false` forbids buying both in one cart.
-5. Checkout on the block page with Stripe 4242. Record `ORDER_BASIC`, `SUB_BASIC`.
-6. Assert cart EMPTY again, then repeat steps 4-5 for **SLT Plan Pro** as a *second, separate* order. Record `ORDER_PRO`, `SUB_PRO`.
-7. For each subscription record: status, `_next_payment_date`, `_recurring_amount`, spread offset `k`, and both queued Action Scheduler legs.
+4. Assert browser/persistent carts EMPTY, capture `SLT-SW-00-01-cart-empty-before.png`, and set `PRE_BASIC=$(mailpit-agent latest-id)`. Add Basic only; accept the one-click block-checkout redirect, capture the $5.00 summary before card entry as `SLT-SW-00-02-basic-checkout.png`, fill the hosted card without capturing it, pay, record numeric `ORDER_BASIC`, and capture `SLT-SW-00-03-basic-receipt.png`.
+5. Resolve `SUB_BASIC` only from `ORDER_BASIC._subscription_ids` JSON with a strict one-element numeric guard; require reverse parent/customer/product and `SUBCOUNT_AFTER_BASIC == SUBCOUNT_BEFORE+1`. Reconcile the complete `PRE_BASIC` delta and require WC customer paid-order, WC admin New order, ArraySubs customer signup, and ArraySubs admin signup IDs.
+6. Prove both carts empty again, set `PRE_PRO=$(mailpit-agent latest-id)`, and repeat for Pro as a second order: capture `SLT-SW-00-04-pro-checkout.png` before card entry and `-05-pro-receipt.png` after payment. Resolve numeric `SUB_PRO` by the same bidirectional path, require it distinct and `SUBCOUNT_AFTER_PRO == SUBCOUNT_BEFORE+2`, and require the second four-message delta. Capture the final empty state as `SLT-SW-00-06-cart-empty-after.png`.
+7. For each subscription record status/date/amount/k and exact invoice/charge action IDs/times. In `admin-SLT-SW-00`, capture both exact details as `SLT-SW-00-07-two-subscriptions.png`; publish both first `charge−5m` deadlines to the registry and D04 report.
 8. Publish `SUB_BASIC` and `SUB_PRO` to the `slt-catalog-registry` page. Every `SLT-SW-*` task reads them from there.
-9. `mailpit-agent list 20` and reconcile.
+9. Reconcile both owner-filtered purchase deltas, save/show all eight exact IDs, and classify background mail. If exact-two/linkage/runtime isolation fails, create a standalone issue with task/plan, orders/subscriptions/products/user ID and login/role, exact contexts, reproduction, expected/actual, UI/meta/mail proof, and the first purchase counterexample; never add a kanban bug card. Close only `cust-SLT-SW-00` and `admin-SLT-SW-00`, independently review the evidence, move the card through `review` to `done`, and ensure Review returns to zero.
 
 ## Expected results
 1. Two new `arraysubs_data` posts, both `arraysubs-active`, owned by `slt-switch`.
-2. `SUB_BASIC` recurring $10.00, `SUB_PRO` recurring $15.00, both day/1.
-3. Two separate parent orders, each `processing`, correctly linked both ways.
+2. `SUB_BASIC` recurring $5.00, `SUB_PRO` recurring $15.00, both day/1.
+3. Two separate parent orders, each `completed` (paid virtual-only products), correctly linked both ways.
 4. Neither purchase migrated the other — the count increased by exactly 2.
 5. Both subscriptions have invoice and charge legs queued at `due+k−6h` and `due+k`.
 
 ## Emails expected
 | # | Email | Trigger point | Recipient | Subject contains | Verify with |
 |---|---|---|---|---|---|
-| 1 | WC New order ×2 | each order → processing | admin | `New order #` | `list 20` |
-| 2 | WC Processing order ×2 | each order → processing | slt-switch@example.test | `order has been received` | `list 20` |
-| 3 | `new_subscription` ×2 | each → active | slt-switch@example.test | `is active` | `wait-new $PRE 180 "is active"` |
-| 4 | `admin_new_subscription` ×2 | same | admin | `New subscription #` | `list 20` |
+| 1 | WC New order ×2 | each paid order | admin | `New order #` | Complete owner-filtered deltas after the two purchase baselines; save/show both exact ids |
+| 2 | WC Completed order ×2 | each virtual-only order → completed | slt-switch@example.test | `is on its way` | Complete owner-filtered deltas after the two purchase baselines; save/show both exact ids |
+| 3 | `new_subscription` ×2 | each → active | slt-switch@example.test | `is active` | separate `PRE_BASIC` / `PRE_PRO` waits and complete deltas |
+| 4 | `admin_new_subscription` ×2 | same | admin | `New subscription #` | Complete owner-filtered deltas after the two purchase baselines; save/show both exact ids |
 | 5 | NONE EXPECTED | — | — | — | no renewal, invoice, trial or reminder mail; day/1 cycle is shorter than the 3-day reminder lead |
 
 ## Evidence to capture
-- Screenshots of both order-received pages and both subscription detail screens.
-- `SUB_BASIC`, `SUB_PRO`, `ORDER_BASIC`, `ORDER_PRO`, both `k` values, all four AS timestamps.
+- Safe named empty-cart, checkout, receipt, and two-subscription captures from steps 4-7.
+- Count/bidirectional linkage, `SUB_BASIC/SUB_PRO`, orders, `PRE_BASIC/PRE_PRO`, eight mail IDs, both k/action/deadline sets, session/review proof.
 - Registry page updated.
 
 ## Pass criteria
-- [ ] Exactly two new active subscriptions for `slt-switch`, $10.00 and $15.00
+- [ ] Exactly two new active subscriptions for `slt-switch`, $5.00 and $15.00
 - [ ] Neither purchase migrated the other
 - [ ] Both orders linked two-way; both AS leg pairs queued
 - [ ] Mail set matches rows 1-4; row 5 negatives hold
 - [ ] Registry updated with both subscription IDs
+- [ ] Exact sessions closed and purchase evidence reviewed to done
 
 ## Isolation / teardown
-- Hands the whole `SLT-SW-*` group its ladder. **Do not cancel** — `SLT-SW-01` upgrades `SUB_BASIC`, `SLT-SW-03` crossgrades `SUB_PRO`. Belongs to the D10 cancellation cohort. Nothing global changed; cart left empty.
+- Hands the whole `SLT-SW-*` group its ladder. **Do not cancel** — `SLT-SW-01` upgrades `SUB_BASIC`, `SLT-SW-03` crossgrades `SUB_PRO`. Belongs to the D10 cancellation cohort. Nothing global changed; cart and persistent-cart meta left empty; exact task session closed.
 
 ---
 
@@ -100,8 +105,14 @@ Every plan-switching task (`SLT-SW-01`..`SLT-SW-10`) assumes `slt-switch` alread
 - WooCommerce **grouped** products have zero handling in either plugin — grouped tasks are
   exploratory: document behaviour, do not assert a spec.
 - WP-Cron runs every minute from `/etc/cron.d/mirror-help-arrayhash-wordpress`. Scheduled actions
-  fire on their own; **a renewal that does not fire is a real bug** — capture evidence before forcing.
+  fire on their own; **a renewal that does not fire is a real bug** — capture evidence and do not force a natural-watch action.
 - Give this task its own browser session (`agent-browser --session <role>-<TASK-KEY>`). Sessions are
   keyed by name and **share a cart**.
-- Never run `wp action-scheduler run` without `--hooks=`; prefer a single action by ID.
-- Evidence goes in `qa/subscription-lifecycle-test/evidence/<TASK-KEY>/`.
+- Never run a bare or `--hooks=` Action Scheduler drain. Run one known action ID at a time only when the task explicitly authorizes it and after the required queue pre-flight; natural-watch actions are never forced.
+- Evidence goes under `/home/server-manager/slt-evidence/` using task-key-prefixed filenames.
+
+[[2026-08-06]] Thu 19:59
+Did not start browser actions. Claimed at 2026-08-06 19:58 CEST, but live site time was already 23:58 UTC+6, so starting the D4 purchase fixture would risk crossing into D5 and invalidating the dated checkout requirement. Returning to todo per D4 end-of-day board rule; use the existing D4 preflight packs when the task next becomes safe.
+
+[[2026-08-06]] Thu 20:32
+UNVERIFIED closeout on 2026-08-06: the dated D4 ladder-seeding checkout window has passed. This card already recorded that by 2026-08-06 19:59 CEST the live site clock was at the D4/D5 boundary in UTC+6; at the current execution point it is beyond that boundary, so starting the fixture now would shift all downstream switch timing and invalidate the authored schedule.

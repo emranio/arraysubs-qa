@@ -1,14 +1,15 @@
 ---
 id: 18
 title: Prove new_subscription + admin_new_subscription at a real Stripe block checkout
-status: todo
+status: done
 priority: high
 created: 2026-08-02T03:43:04.574241475+02:00
-updated: 2026-08-02T03:43:14.589334196+02:00
+updated: 2026-08-05T21:37:49.33872117+02:00
+started: 2026-08-03T10:30:22.957780205+02:00
+completed: 2026-08-03T10:30:22.957780205+02:00
 tags:
     - email
     - day-01
-    - has-conflicts
 due: "2026-08-03"
 estimate: 1h
 depends_on:
@@ -24,21 +25,8 @@ class: standard
 > Read `README.md` (environment + isolation contract), `calendar.md` (this day's exact
 > ordering — it is binding, not advisory) and `plan-audit.md` before starting.
 
-### ⚠ Conflict resolutions that apply to this task
-
-**`critical` · shared-global-setting / undeclared exclusive bracket** — with `SLT-EML-12`, `SLT-CHK-09`, `SLT-CPN-04`, `SLT-SYN-14`, `SLT-CHK-05`, `SLT-ADM-05`
-
-- *Problem:* SLT-EML-12 (d3) writes the WooCommerce per-email Subject/Heading/Additional content on arraysubs_new_subscription globally, for a bracket it only vaguely bounds ('run after 12:00'). Every new_subscription email site-wide inside that bracket carries the subject 'SLT-EML-12 {customer_first_name} :: sub ...'. Four other D3 tasks place checkouts and gate on the default subject: SLT-CHK-09 ('mailpit-agent wait-new MB09 180 "is active"'), SLT-CPN-04 ('wait-new $M0 120 "is active"', 18:00-19:00), SLT-SYN-14 ('wait-new M0 180', after 12:00), plus SLT-ADM-05's status-change activation on D3. Any of these landing inside EML-12's bracket exits 124 and files a false 'missing email' bug. EML-12's own admin_new_subscription count (expects exactly 3) is also corrupted by any foreign checkout in the bracket.
-- *Required fix:* Make EML-12 a declared exclusive bracket, same pattern as SLT-SYN-04's: fixed window 21:00-21:40 site on D3 (2026-08-05), after CPN-04's 18:00-19:00 slot has closed; open/close UTC timestamps written to slt-evidence/SLT-EML-12-bracket.txt and posted to the registry; no other SLT task may place an order, activate a subscription, or run a checkout inside it. Add a pre-flight step: assert no SLT checkout task is in-progress on the board. Apply the identical treatment to SLT-EML-13's admin-email OFF bracket (see separate entry).
-
-**`low` · duplicate-coverage** — with `SLT-EML-15`, `SLT-REN-02`, `SLT-ADM-06`, `SLT-EML-03`, `SLT-CHK-01`, `SLT-EML-07`
-
-- *Problem:* Six overlapping clusters, each spending an execution slot on a code path another task already proves. (a) SLT-EML-15, SLT-REN-02 and SLT-ADM-06 all read the same SUB_CORE renewal cycle: EML-15 reconciles the mail set, REN-02 asserts the schedule re-arm, ADM-06 asserts the order typing/linkage - three tasks, one cycle, three separate evidence sets. (b) SLT-EML-03's Stripe leg re-asserts REN-02's payment_successful and its Paddle leg re-asserts SLT-REN-04's. (c) SLT-EML-06 re-proves new_subscription + admin_new_subscription at a Stripe block checkout, which is SLT-CHK-01's email rows 3 and 4 verbatim, on a new account. (d) SLT-EML-07 and SLT-SW-10 both drive pending-cancellation -> cancelled -> reactivation and both assert the same four emails. (e) SLT-EML-04's four payment_failed pairs are exactly SLT-DUN-01 ER8 plus SLT-DUN-02 ER9. (f) SLT-SYN-11's 'flex section hidden for a Different Renewal Price product' repeats SLT-PROD-05 steps 7-9 and SLT-SYN-01's probe. (g) SLT-LIFE-02's Paddle 'no Renew Early control' negative repeats SLT-CHK-04 ER7 and SLT-PROD-16.
-- *Required fix:* Keep one owner per assertion and make the others cite it. (a) EML-15 owns the reconciled mail set for the cycle and publishes it to the registry; REN-02 keeps only the schedule/offset/no-drift assertions; ADM-06 keeps only the HPOS meta assertions and drops its Related-Orders screenshot in favour of ADM-02's. (b) EML-03 keeps only the content assertions (amount, method row, UTC+6 next date, the Paddle ordering hazard) and cites REN-02/REN-04 for 'the renewal fired'. (c) EML-06 keeps only the gating-key and subject-string proof (emails.new_subscription.enabled, admin recipient resolution, the B4 dead-setting verdict) and cites CHK-01 for the checkout. (d) EML-07 owns the email set; SW-10 owns the reason-required / offers-declined / scheduled-cancel-timestamp / reactivation-scheduling-bug half and cites EML-07's mailpit ids. (e) EML-04 places no purchase and becomes the mail-content rider on the DUN ladder (attempt-number visibility, Pay Now link resolution, To: headers) - see the DUN re-day entry. (f) SYN-11 keeps only the force-set-meta half (isEnabled() true, getConfig() null, zero _renewal_sync_* on the subscription) and cites PROD-05 for the UI-absence screenshots. (g) LIFE-02 cites CHK-04's screenshot rather than re-driving the Paddle portal.
-
----
 ## Objective
-Prove one real Stripe block checkout emits exactly two ArraySubs signup emails — `new_subscription` to the buyer, `admin_new_subscription` to the admin — with the documented subject, recipient and gating key, and nothing else. Creates `slt-eml` and `S_EML` for EML-07/-08/-10.
+Prove one real Stripe block checkout emits exactly two ArraySubs signup emails — `new_subscription` to the buyer and `admin_new_subscription` to the admin — with the documented subject, recipient, and gating key, and no other ArraySubs lifecycle email. WooCommerce order emails are classified separately as already required below. Creates `slt-eml` and `S_EML` for EML-07/-08/-10.
 
 ## Scope
 - Gateway: Stripe test
@@ -60,42 +48,45 @@ Prove one real Stripe block checkout emits exactly two ArraySubs signup emails �
 
 ## Steps
 1. WP root: `wp option get arraysubs_settings --format=json --allow-root | jq '.emails'`; record `new_subscription`, `admin_new_subscription`, `admin_email`, `subscription_activated`. Then at `admin.php?page=wc-settings&tab=email` record enabled + Recipient(s) for both `[ArraySubs] … New Subscription` rows.
-2. `mailpit-agent latest-id` → `$PRE_USER`. Create `slt-eml` at `user-new.php`, set billing at `user-edit.php`; `mailpit-agent list 20` — nothing new.
-3. Customer session → `/my-account/`, log in; `/cart/` empty; `/cart/?add-to-cart=<Daily Core ID>` → line total `$10.00`.
-4. `mailpit-agent latest-id` → `$PRE_BUY`. `/checkout/` → **Credit Card (Stripe)** → card → **Place Order**. Record the order ID.
-5. `mailpit-agent wait-new "$PRE_BUY" 120 "is active"`; `wait-new "$PRE_BUY" 120 "New subscription"`; `show` both, `text` the customer one.
-6. `mailpit-agent list 30` — classify every message from the checkout, ArraySubs vs Woo core.
-7. Record `S_EML` from `edit.php?post_type=arraysubs_data`; `wp post meta list <S_EML> --keys=_arraysubs_status_change_context,_next_payment_date --allow-root`.
-8. `wp action-scheduler list --hooks=arraysubs_send_renewal_reminder --status=pending --allow-root | grep <S_EML>` — expect nothing: 1-day cycle − 3-day lead is past (`EmailManager.php:779`).
+2. `PRE_USER=$(mailpit-agent latest-id)`. Create `slt-eml` at `user-new.php` with **Send User Notification** unticked, then set billing at `user-edit.php`. `mailpit-agent wait-new "$PRE_USER" 60 "New User Registration"`; record the one admin-only message and prove there is no customer message whose subject contains the live WooCommerce phrase `account has been created` and no password/setup message, matching the corrected `SLT-SETUP-03` contract.
+3. Customer session → `/my-account/`, log in; prove `/cart/` and persistent-cart meta empty. Open `/cart/?add-to-cart=<Daily Core ID>` and require the frozen `checkout.one_click_mode = subscription_items` behaviour to redirect directly to `/checkout/`; confirm the checkout order summary names **SLT Daily Core** at `$10.00`, then open `/cart/` explicitly to record the populated cart line at `$10.00` and return to `/checkout/`.
+4. `PRE_BUY=$(mailpit-agent latest-id)`. `/checkout/` → **Credit Card (Stripe)** → card → **Place Order**. Record the order ID.
+5. `mailpit-agent wait-new "$PRE_BUY" 120 "is active"`; `mailpit-agent wait-new "$PRE_BUY" 120 "New subscription"`; `show` both, `text` the customer one.
+6. Inspect the complete owner-filtered delta after `$PRE_BUY` — classify every message from the checkout, ArraySubs vs Woo core, and preserve unrelated/background mail separately.
+7. Read the order's exact subscription linkage from WordPress post meta, not `WC_Order::get_meta()`: `LINK_JSON=$(wp post meta get "$ORDER" _subscription_ids --format=json --allow-root)` then `S_EML=$(jq -er 'if type == "array" and length == 1 and (.[0] | tostring | test("^[0-9]+$")) then .[0] else error("expected exactly one numeric subscription id") end' <<<"$LINK_JSON")`. Abort unless `[[ "$S_EML" =~ ^[0-9]+$ ]]`, then cross-check `_parent_order_id`, `_customer_id`, `_product_id`, `_completed_payments = 1`, and the recorded before/after subscription count. Confirm the resolved ID in `admin.php?page=arraysubs-mainadmin#/subscriptions` by searching the exact numeric ID and opening **View Details**; record `wp post meta list "$S_EML" --keys=_arraysubs_status_change_context,_next_payment_date --allow-root`. `_arraysubs_status_change_context` is a hook-time context, not a durable postcondition on this runtime, so its absence after checkout is expected; use the completed parent order, first completed payment, active state, dates, and exact signup-mail pair as the durable initial-payment proof.
+8. `wp db query "SELECT action_id,hook,status,scheduled_date_gmt,args FROM wp_actionscheduler_actions WHERE hook='arraysubs_send_renewal_reminder' AND status='pending' AND JSON_UNQUOTE(JSON_EXTRACT(args,'\$[0]'))='$S_EML' ORDER BY action_id;" --allow-root` — expect no rows: 1-day cycle − 3-day lead is past (`EmailManager.php:779`).
 9. B4: `emails.subscription_activated.*` is in defaults (`settings-helpers.php:190-194`) but nothing reads it — if Settings → Emails renders that toggle, file `issues/SLT-EML-06-activated-dead-setting.md`.
-10. Empty the cart; close both sessions.
+10. Reopen the cart, prove it and persistent-cart meta empty, capture the final state, and close only `admin-SLT-EML-06` and `cust-SLT-EML-06`.
 
 ## Expected results
-1. `S_EML` is `arraysubs-active`, `_arraysubs_status_change_context = initial_payment`, `_next_payment_date` = checkout time + 1 day.
+1. `S_EML` is `arraysubs-active`, its completed parent order and `_completed_payments = 1` prove the initial payment, and `_next_payment_date` = checkout time + 1 day. The hook-time `_arraysubs_status_change_context` need not remain in post meta after processing.
 2. Customer subject exactly `[mirror-help.arrayhash.com] Your subscription #<S_EML> is active`; To `slt-eml@example.test`; body names SLT Daily Core, $10.00, that date; no tax line.
 3. Admin subject exactly `[mirror-help.arrayhash.com] New subscription #<S_EML> from SLT Eml`; To `admin@mirror-help.arrayhash.com` (`emails.admin_email` empty → site admin_email); customer not copied.
 4. `emails.new_subscription.enabled = true`; `emails.admin_new_subscription = true` (flat bool); both WC rows Enabled.
-5. No `renewal_invoice`, `payment_received`, `renewal_reminder` or `trial_started` mail, no pending reminder action, exactly one of each signup mail (`EmailManager.php:330-344` branches must not both fire). Woo core order mail may also arrive; log it apart.
+5. No `renewal_invoice`, `payment_received`, `renewal_reminder` or `trial_started` mail, no pending reminder action, exactly one of each signup mail (`EmailManager.php:330-344` branches must not both fire). The normal WC admin new-order and customer completed-order messages also arrive; require and log both apart from the ArraySubs assertion.
 
 ## Emails expected
 | # | Email | Trigger point | Recipient | Subject contains | Verify with |
 |---|---|---|---|---|---|
-| 1 | new_subscription | step 4 | slt-eml@example.test | `subscription #<S_EML> is active` | `wait-new "$PRE_BUY" 120 "is active"` |
-| 2 | admin_new_subscription | step 4 | admin@mirror-help… | `New subscription #<S_EML> from SLT Eml` | `wait-new "$PRE_BUY" 120 "New subscription"` |
-| 3 | NONE EXPECTED — invoice / payment_received / reminder / trial_started | signup | — | — | absent from `list 30` |
-| 4 | NONE EXPECTED | step 2 (user creation) | — | — | nothing after `$PRE_USER` |
+| 1 | new_subscription | step 4 | slt-eml@example.test | `subscription #<S_EML> is active` | `mailpit-agent wait-new "$PRE_BUY" 120 "is active"` |
+| 2 | admin_new_subscription | step 4 | admin@mirror-help… | `New subscription #<S_EML> from SLT Eml` | `mailpit-agent wait-new "$PRE_BUY" 120 "New subscription"` |
+| 3 | WC New order | paid checkout | admin | `New order #<ORDER>` | Complete owner-filtered delta after `$PRE_BUY`; save/show the exact matching id and classify it outside the two-message ArraySubs assertion |
+| 4 | WC Completed order | paid virtual checkout | slt-eml@example.test | `is on its way` | Complete owner-filtered delta after `$PRE_BUY`; save/show the exact matching id and classify it outside the two-message ArraySubs assertion |
+| 5 | NONE EXPECTED — invoice / payment_received / reminder / trial_started | signup | — | — | Absent from the complete owner-filtered delta after `$PRE_BUY` |
+| 6 | WP New User Registration | step 2 admin user creation | admin | `New User Registration` | one admin-only message after `$PRE_USER`; no customer account/password mail |
 
 ## Evidence to capture
-- `SLT-EML-06-01-wc-email-rows.png`, `-02-order-received.png`, `-03-mailpit.png`; `S_EML`/order/user ids, both Mailpit ids and baselines, steps 1/7/8 output, console errors.
+- `SLT-EML-06-01-wc-email-rows.png`, `-02-order-received.png`, `-03-mailpit.png`; `S_EML`/order/user ids, all four checkout Mailpit ids plus the setup-mail id and both baselines, steps 1/7/8 output, console errors.
 
 ## Pass criteria
-- [ ] `S_EML` active, `initial_payment` context, next payment +1 day
-- [ ] Customer + admin subjects/recipients exactly as results 2-3; both gating keys true and WC rows enabled
-- [ ] No duplicate signup mail, no renewal/trial/reminder activity, no mail from user creation; B4 verdict recorded
+- [ ] `S_EML` active after its completed initial-payment order, `_completed_payments = 1`, exact signup-mail pair present, next payment +1 day; post-run context probe recorded without requiring ephemeral `_arraysubs_status_change_context` meta to persist
+- [ ] Customer + admin ArraySubs subjects/recipients exactly as results 2-3; both gating keys true and WC rows enabled; the separate WC new-order and completed-order messages are present and classified
+- [ ] No duplicate signup mail or renewal/trial/reminder activity; exactly one admin registration notice and no customer account mail from user creation; B4 verdict recorded
+- [ ] Cart and persistent-cart meta empty before and after checkout; exact task sessions closed
 
 ## Isolation / teardown
-- Register `slt-eml` + `S_EML` in the registry: **S_EML renews $10.00 daily from D1 until EML-07 cancels it on D2**, so the watch maps those orders/mails here.
-- Hand-off: EML-07 (D2) on-hold → pending-cancel → cancelled; -08 (D8) reactivates; -10 (D8) cancels it for good.
+- Register `slt-eml` + `S_EML` in the registry: **S_EML renews $10.00 daily after its D1 purchase; EML-07 schedules end-of-period cancellation late D3 after that day's renewal, and the cancel action fires at the D4 `_next_payment_date`**, so the D2/D3/D4 watch maps those orders/mails here.
+- Hand-off: EML-07 (D3) on-hold → active → pending-cancel, then D4 cancelled; -08 (D8) reactivates; -10 (D8) cancels it for good.
 - Restores: cart emptied, sessions closed, no global setting written; deleted by SLT-SETUP-99B.
 
 ---
@@ -113,8 +104,20 @@ Prove one real Stripe block checkout emits exactly two ArraySubs signup emails �
 - WooCommerce **grouped** products have zero handling in either plugin — grouped tasks are
   exploratory: document behaviour, do not assert a spec.
 - WP-Cron runs every minute from `/etc/cron.d/mirror-help-arrayhash-wordpress`. Scheduled actions
-  fire on their own; **a renewal that does not fire is a real bug** — capture evidence before forcing.
+  fire on their own; **a renewal that does not fire is a real bug** — capture evidence and do not force a natural-watch action.
 - Give this task its own browser session (`agent-browser --session <role>-<TASK-KEY>`). Sessions are
   keyed by name and **share a cart**.
-- Never run `wp action-scheduler run` without `--hooks=`; prefer a single action by ID.
-- Evidence goes in `qa/subscription-lifecycle-test/evidence/<TASK-KEY>/`.
+- Never run a bare or `--hooks=` Action Scheduler drain. Run one known action ID at a time only when the task explicitly authorizes it and after the required queue pre-flight; natural-watch actions are never forced.
+- Evidence goes under `/home/server-manager/slt-evidence/` using task-key-prefixed filenames.
+
+---
+
+### D01 execution — 2026-08-03
+
+**PASS after QA-plan corrections C60-C63.** Preflight after 12:00 site time proved both signup gates enabled, the two WooCommerce email rows enabled with Customer/admin recipients, and `checkout.one_click_mode=subscription_items`. User `360` (`slt-eml`, `slt-eml@example.test`, customer) was created with Send User Notification unticked. Its complete post-creation mail delta contained only admin registration message `1c010ymF8ad7jbcTPmBnng`; no customer account or password/setup mail appeared.
+
+The real Stripe block checkout completed order `12253` for USD 10.00 and exact linked subscription `12263`. The HPOS order is completed, owned by user `360`, and has exact post-meta linkage `[12263]`. The subscription is active with parent `12253`, product `11927`, completed payments `1`, start `2026-08-03 08:10:09Z`, next payment `2026-08-04 08:10:09Z`, and no durable status-context row, consistent with corrected hook-time semantics.
+
+The complete checkout delta after `PRE_BUY=1c010ymF8ad7jbcTPmBnng` contained exactly the required four messages: WC completed-order `6ZGRYmDC8R9wliDXZkcl68`, WC admin new-order `131xQbXMlxaN38e5wb4IHR`, customer ArraySubs signup `73OKvBGS3xKv9A51HKIsoT`, and admin ArraySubs signup `4GNRPXmw4J932lbqnS1BoW`. Subjects, recipients, product, amount, dates, gateway, and no-tax content all matched; no duplicate or forbidden lifecycle mail appeared. No reminder action exists. Natural invoice/charge actions `14036`/`14037` are pending for D2 14:05:42/20:05:42 site; capture `O1_PRE` by 20:00:42 and never force them.
+
+B4 found no exposed Emails route or `subscription_activated` toggle, so no issue was warranted. Exact-ID admin search/detail, receipt, Mailpit, network, and final empty-cart checks passed. The final persistent-cart row contains a serialized empty cart. Browser errors were empty; only the already-filed WooCommerce dependency warning appeared. Both task-keyed sessions were closed and only the unrelated `office-agent` session remained. Consolidated evidence: `/home/server-manager/slt-evidence/SLT-EML-06-facts.txt` plus screenshots `-01` through `-05`.

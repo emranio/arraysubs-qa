@@ -1,14 +1,15 @@
 ---
 id: 101
 title: 'Grace phase 2: terminal cancellation three days after the hold, with customer and admin cancel emails'
-status: todo
+status: done
 priority: high
 created: 2026-08-02T03:43:11.420598897+02:00
-updated: 2026-08-02T03:43:22.764796198+02:00
+updated: 2026-08-05T21:37:49.579092013+02:00
+started: 2026-08-05T21:07:20.758936684+02:00
+completed: 2026-08-05T21:07:20.758936684+02:00
 tags:
     - renewal
     - day-07
-    - has-conflicts
 due: "2026-08-09"
 estimate: 1h
 depends_on:
@@ -22,14 +23,6 @@ class: standard
 > Read `README.md` (environment + isolation contract), `calendar.md` (this day's exact
 > ordering — it is binding, not advisory) and `plan-audit.md` before starting.
 
-### ⚠ Conflict resolutions that apply to this task
-
-**`critical` · impossible-timing / cross-group date contradiction** — with `SLT-DUN-01`, `SLT-DUN-02`, `SLT-DUN-03`, `SLT-DUN-05`, `SLT-EML-04`, `SLT-EML-14`
-
-- *Problem:* SLT-DUN-01 is tagged d0 (buy SLT Retry Daily as slt-fail on 2026-08-02, D=08-03, hold 08-04, cancel 08-07). Four other tasks encode the opposite timeline as fact: SLT-EML-04 ('bought on D2 (2026-08-04 PM) ... D = 2026-08-05 PM ... attempts 08-05/06/07/08 -> watch D4..D7 ... on-hold 08-06 ... cancelled 08-09'), SLT-EML-14 ('Retry Daily fails 08-05 PM -> on-hold 08-06 -> cancelled 08-09'), SLT-ADM-09 ('bought D2 by slt-fail ... renewal failed D3 PM'), and SLT-MYA-05 ('Must finish before 12:00 site on D2 (2026-08-04): the dunning group buys SLT Retry Daily as slt-fail with card 0341 that afternoon and the grant fires only on that activation'). slt-fail + SLT Retry Daily cannot be bought twice (auto-migrate), so exactly one timeline can exist. Additionally MYA-05's pro_member role-mapping rule MUST be written before the checkout - if DUN-01 runs on D0 the role grant never fires and MYA-05 is unrunnable.
-- *Required fix:* DUN-01 moves to D2 (2026-08-04), checkout 13:00-14:00 site - which is what four downstream tasks already assume and what the audit's corrected calendar says. Resulting ladder, all fixed: D=08-05 13:00-14:00; failure at D+k (08-05 13:00-20:00, watch D4); on-hold at the first hourly sweep after D+24h = 08-06 ~14:00 (watch D5); retries at +24h/+48h/+72h = 08-06/07/08 (watch D5/D6/D7); 4th charge hits the cap 08-08; cancellation at max(D+96h, on_hold+72h) = 08-09 ~14:00-16:00 (watch D8). Re-day the group: DUN-01 D2, DUN-03 D4, DUN-02 D5 (with reads on D4 and D6), DUN-04 D7, DUN-05 D7 after 16:00 (S2 bought 08-09 16:30, fails 08-10 PM, recovered on the morning of 08-11 before N+24h). MYA-05 stays D2 morning, strictly before 13:00.
-
----
 ## Objective
 Prove grace phase 2: with `grace_days_before_cancel = 3`, S is cancelled by the hourly sweep at `max(D + 4 days, _on_hold_date + 3 days)`, unpaid order R is cancelled, every Action Scheduler leg for `[S]` is unscheduled, cancellation meta is stamped, and both `subscription_cancelled` and `admin_subscription_cancelled` fire.
 
@@ -41,8 +34,8 @@ Prove grace phase 2: with `grace_days_before_cancel = 3`, S is cancelled by the 
 
 ## Preconditions
 - `SLT-DUN-01/02/03` done. S `arraysubs-on-hold`, retries exhausted (attempts = 3, none pending), R still `failed`, `_next_payment_date` still `D`, `_on_hold_date` recorded.
-- Both gates must pass: SQL cutoff `_next_payment_date < now − 4 days` AND per-row `now ≥ _on_hold_date + 3 days` (SLT-REF-03 §4). With the hold at ≈ `D+24h` both land ≈ `D + 4 days` → **2026-08-07, ≈ 14:00-16:00 site**.
-- Never run `wp action-scheduler run` (C07); D5 is not the authorized drain day.
+- Both gates must pass: SQL cutoff `_next_payment_date < now − 4 days` AND per-row `now ≥ _on_hold_date + 3 days` (SLT-REF-03 §4). With the hold at ≈ `D+24h` both land ≈ `D + 4 days` → **2026-08-09, ≈ 14:00-16:00 site**.
+- Never run `wp action-scheduler run` (C07); this natural cancellation is never forced.
 
 ## Test data
 | Item | Value |
@@ -50,16 +43,16 @@ Prove grace phase 2: with `grace_days_before_cancel = 3`, S is cancelled by the 
 | Subscription | S (on-hold), order R (`failed`) |
 | Cancel window | first sweep after `max(D+96h, _on_hold_date+72h)` |
 | Expected meta | `_cancelled_by=system`, `_cancellation_reason=overdue_payment` |
-| Session | `admin-dun4` |
+| Sessions | `admin-dun4-SLT-DUN-04`, `customer-SLT-DUN-04` |
 
 ## Steps
-1. **D5 (2026-08-07), 30+ min before the window:** `mailpit-agent latest-id` → **MPC**; re-run **M**, **Q**, **L**; S must still be `arraysubs-on-hold` with no pending retry.
-2. `mailpit-agent wait-new MPC 7200 "has been cancelled"` (exit 124 = no cancel → capture evidence, file an issue, do NOT force the sweep).
-3. On the match, re-run **M**, **Q**, the post-status query, plus `wp action-scheduler list --group=arraysubs_renewals --status=pending --fields=ID,hook,args,scheduled_date_gmt --allow-root | grep "\[S\]"`.
-4. `mailpit-agent list 20`; `show` both cancellation messages, record `To:` and subjects.
-5. `agent-browser --session admin-dun4 open ".../wp-admin/post.php?post=S&action=edit"` → `snapshot -i`; screenshot **Cancelled** + notes. Then open R (`admin.php?page=wc-orders&action=edit&id=R`) and screenshot its status and notes.
-6. `agent-browser --session cust-dun open ".../my-account/subscriptions/"` → `snapshot -i`; screenshot the row.
-7. Check nothing else moved in the tick: `wp post list --post_type=arraysubs_data --post_status=arraysubs-cancelled --fields=ID,post_title,post_modified --allow-root`.
+1. Resolve registry aliases `S_FAIL` and its exact failed renewal order into numeric shell variables `S` and `R`; abort unless both are numeric and bidirectionally linked. Compute `ELIGIBLE_AT=max(D+96h,_on_hold_date+72h)`, query the exact next pending hourly cancellation-sweep row after that instant, and record its action ID/GMT without running it. Save a complete ID/status/modified snapshot of all subscription posts as the before-state, then re-run **M**, **Q**, **L**; numeric `$S` must still be `arraysubs-on-hold` with no pending retry. Inside exact `[eligible sweep−300s, eligible sweep)` set `MPC=$(mailpit-agent latest-id)` and publish it as **`DUN_CANCEL_PRE`** with UTC capture time for SLT-EML-04; never capture it 30+ minutes early.
+2. Poll immutable `MPC` in repeated calls no longer than 60 seconds through the exact eligible sweep plus five minutes for `subscription #$S has been cancelled`. Only absence after that final cutoff is a finding: capture the unchanged exact action/subscription/order/mail state, write the standalone issue, and do NOT force the sweep.
+3. On the match, re-run **M**, **Q**, the post-status query, plus `wp db query "SELECT a.action_id,a.hook,a.status,a.scheduled_date_gmt,a.args FROM wp_actionscheduler_actions a JOIN wp_actionscheduler_groups g ON g.group_id=a.group_id WHERE g.slug='arraysubs-renewals' AND a.status='pending' AND JSON_UNQUOTE(JSON_EXTRACT(a.args,'\$[0]'))='$S' ORDER BY a.scheduled_date_gmt,a.action_id;" --allow-root`.
+4. Inspect every message newer than `MPC`; require exactly one customer cancellation subject naming `S` and exactly one admin cancellation subject naming `S`, `show` both, and record `To:` and subjects. Classify unrelated mail instead of relying on a fixed recent-message count.
+5. `agent-browser --session admin-dun4-SLT-DUN-04 open ".../wp-admin/admin.php?page=arraysubs-mainadmin#/subscriptions"` → `snapshot -i`; search exact numeric ID `$S`, open **View Details**, and screenshot **Cancelled** + notes. Then open the recorded numeric renewal order R (`admin.php?page=wc-orders&action=edit&id=<R>`) and screenshot its status and notes. Do not use a legacy `post.php` subscription route.
+6. `agent-browser --session customer-SLT-DUN-04 open ".../my-account/subscriptions/"` → `snapshot -i`; screenshot the row.
+7. Save the same complete ID/status/modified snapshot as the after-state and diff it against step 1. Require the target `$S` transition exactly once. Cross-check every other changed SLT-registry ID against its owning task; classify unrelated shared-site changes separately rather than pretending a historical all-cancelled list proves this tick changed only SLT data. Close both exact sessions, independently review the gate/action/order/meta/mail/UI evidence, move the card through `review` to `done` with Review empty, and hand the completed cancellation to `SLT-MYA-05` follow-up C. Any failure goes only in `issues/SLT-DUN-04-<concise-slug>.md` with task/stage/plan path; subscription/order/sweep/action/message IDs; user ID/login/email/role; exact routes/sessions/gates; reproduction; expected/actual; and DB/meta/queue/log/UI/Mailpit proof.
 
 ## Expected results
 1. S is `arraysubs-cancelled` at the first hourly sweep after `max(D+96h, _on_hold_date+72h)`; record the UTC time and lag (expect < 60 min).
@@ -71,13 +64,13 @@ Prove grace phase 2: with `grace_days_before_cancel = 3`, S is cancelled by the 
 7. Exactly TWO new emails: `subscription_cancelled` (customer) and `admin_subscription_cancelled` (admin) — different subjects.
 8. No further `payment_failed` email after cancellation; no 5th charge ever fires.
 9. My Account shows S **Cancelled** with no Retry Payment button.
-10. Step 7 lists only `SLT `-titled rows modified in that tick.
+10. The before/after snapshot identifies the exact `$S` transition; no other SLT-registry subscription moved without an authored owner, and unrelated concurrent changes are preserved separately.
 
 ## Emails expected
 | # | Email | Trigger point | Recipient | Subject contains | Verify with |
 |---|---|---|---|---|---|
-| 1 | `subscription_cancelled` | cancel sweep | `slt-fail@example.test` | `subscription #S has been cancelled` | `wait-new MPC 7200`, check `To:` |
-| 2 | `admin_subscription_cancelled` | same tick | admin | `Subscription #S cancelled by` | `list 20`, admin `To:` |
+| 1 | `subscription_cancelled` | exact eligible cancel sweep | `slt-fail@example.test` | `subscription #S has been cancelled` | final-five-minute `MPC`; repeated ≤60-second polls through sweep+5 min; check `To:` |
+| 2 | `admin_subscription_cancelled` | same tick | admin | `Subscription #S cancelled by` | complete `MPC` delta, exact subscription id and admin `To:` |
 | 3 | `payment_failed` **NONE EXPECTED** | after cancel | — | — | No new `Payment failed for subscription #S` after the cancel time |
 | 4 | `subscription_expired` **NONE EXPECTED** | ever | — | — | Cancellation, not expiry: no `has expired` for S |
 
@@ -93,10 +86,12 @@ Prove grace phase 2: with `grace_days_before_cancel = 3`, S is cancelled by the 
 - [ ] ER5/6 retry meta retained at 3; `_next_payment_date` still `D`
 - [ ] ER7/8 exactly 2 cancellation emails; no further failure mail or charge
 - [ ] ER9/10 My Account Cancelled; no non-SLT data touched
+- [ ] Exact sessions close and independent review reaches `done` with Review empty
 
 ## Isolation / teardown
 - Closes the ladder `active → failed → 3 retries → on-hold → cancelled` in 5 days: 4 charges, 8 payment-failed emails.
-- Releases `slt-fail` and `SLT Retry Daily` for `SLT-DUN-05` on D6. Leave S and R as evidence; `SLT-SETUP-99` deletes them.
+- Hands the closed cancellation evidence first to `SLT-MYA-05` follow-up C. Only after that read-only role check closes may `SLT-DUN-05` reuse `slt-fail` and `SLT Retry Daily`. Leave S and R as evidence; `SLT-SETUP-99B` deletes them.
+- Close only `admin-dun4-SLT-DUN-04` and `customer-SLT-DUN-04`; preserve unrelated browser sessions.
 
 ---
 
@@ -113,8 +108,13 @@ Prove grace phase 2: with `grace_days_before_cancel = 3`, S is cancelled by the 
 - WooCommerce **grouped** products have zero handling in either plugin — grouped tasks are
   exploratory: document behaviour, do not assert a spec.
 - WP-Cron runs every minute from `/etc/cron.d/mirror-help-arrayhash-wordpress`. Scheduled actions
-  fire on their own; **a renewal that does not fire is a real bug** — capture evidence before forcing.
+  fire on their own; **a renewal that does not fire is a real bug** — capture evidence and do not force a natural-watch action.
 - Give this task its own browser session (`agent-browser --session <role>-<TASK-KEY>`). Sessions are
   keyed by name and **share a cart**.
-- Never run `wp action-scheduler run` without `--hooks=`; prefer a single action by ID.
-- Evidence goes in `qa/subscription-lifecycle-test/evidence/<TASK-KEY>/`.
+- Never run a bare or `--hooks=` Action Scheduler drain. Run one known action ID at a time only when the task explicitly authorizes it and after the required queue pre-flight; natural-watch actions are never forced.
+- Evidence goes under `/home/server-manager/slt-evidence/` using task-key-prefixed filenames.
+
+[[2026-08-05]] Wed 21:07
+UNVERIFIED (no S_FAIL source fixture) on 2026-08-05.
+
+`SLT-DUN-01` completed its authored missed-fixture branch on 2026-08-05: registry page 11847 stores `S_FAIL unavailable`, live verification found zero subscriptions for user 351/product 12108, and the D03 watch report instructs `SLT-DUN-02/03/04` plus `SLT-EML-04` to close ladder-only assertions `UNVERIFIED` without manufacturing a substitute. With no valid failed-renewal ladder, the terminal grace cancellation this card was supposed to observe will never exist. This card closes without a replacement fixture or forced scheduler activity.

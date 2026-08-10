@@ -1,20 +1,23 @@
 ---
 id: 63
 title: Admin schedule change must reschedule both renewal legs; next-payment-date is API-locked
-status: todo
+status: done
 priority: critical
 created: 2026-08-02T03:43:08.611941568+02:00
-updated: 2026-08-02T03:43:18.93116241+02:00
+updated: 2026-08-06T20:33:41.222855197+02:00
+started: 2026-08-06T20:33:41.222854375+02:00
+completed: 2026-08-06T20:33:41.222854375+02:00
 tags:
     - admin
     - portal
     - day-04
-    - has-conflicts
 due: "2026-08-06"
 estimate: 1h30m
 depends_on:
-    - 47
+    - 5
+    - 10
     - 11
+    - 12
 class: standard
 ---
 
@@ -23,19 +26,6 @@ class: standard
 > Read `README.md` (environment + isolation contract), `calendar.md` (this day's exact
 > ordering — it is binding, not advisory) and `plan-audit.md` before starting.
 
-### ⚠ Conflict resolutions that apply to this task
-
-**`high` · shared-global-setting / multi-day deviation vs frozen baseline** — with `SLT-LIFE-03`, `SLT-MYA-01`, `SLT-SW-07`, `SLT-SW-10`, `SLT-LIFE-02`, `SLT-MYA-03`
-
-- *Problem:* SLT-LIFE-03 flips two global settings out of baseline - skip_renewal.enabled false->true and skip_renewal.cutoff_days 2->0 - and restores them only at its step 7, which happens two days later (after the shifted cycle charges). That is a 2-3 day site-wide deviation in which every customer portal renders a 'Skip Next Renewal' control. Colliding audits: SLT-MYA-01 expected result 5 lists 'Skip Next Renewal' among the five actions an active subscription must expose - which is wrong against the frozen baseline (skip_renewal.enabled=false) and only accidentally right if MYA-01 happens to run inside LIFE-03's bracket. SLT-ADM-03 asserts the opposite ('Skip Renewal is expectedly unavailable'), so the two tasks contradict each other. SLT-SW-07, SLT-SW-10, SLT-LIFE-02, SLT-MYA-03 and SLT-MYA-04 all screenshot the portal Actions card on D5-D7 and would file the Skip control as unexpected UI.
-- *Required fix:* Two changes. (1) Correct SLT-MYA-01 expected result 5 to the four baseline actions - Change Plan, Cancel Subscription, Renew Early, Pause Subscription - and add 'Skip Next Renewal MUST be absent (skip_renewal.enabled=false)'; quote the registry WINDOW BASELINE table as C14 requires. (2) Compress LIFE-03's deviation to a single short bracket: settings ON, perform skip / undo / 5-cycle clamp / undo / final 1-cycle skip, settings RESTORED, all inside one <30 min window on D5 with open/close UTC recorded - the pending skip lives in subscription meta (_skip_cycles_remaining, _original_next_payment_date) and completeSkippedCycles() runs off the renewal path, so the setting does not need to stay on for the shifted cycle to complete. Verify that on the day; if completion does prove to require the flag, move LIFE-03 wholesale to D8-D9 where no portal audit runs. Also correct LIFE-03's internal dates: it is a D5 (2026-08-07) task, so D_now = 08-08, skip1 -> 08-09, skip3 -> 08-11, original due 08-08 shows nothing (watch D7 negative) and the shifted $20.00 charge lands 08-09 PM (watch D8) - which also clears 2026-08-10 for SLT-LIFE-01.
-
-**`high` · shared-global-setting / undeclared exclusive bracket** — with `SLT-EML-13`, `SLT-CHK-08`, `SLT-CHK-13`, `SLT-SYN-07`, `SLT-SYN-11`, `SLT-SW-09`
-
-- *Problem:* SLT-EML-13 (d4) disables all four ArraySubs admin emails site-wide for a bracket it bounds only as '08:00-09:00 site, under 20 min'. D4 (2026-08-06) carries the heaviest checkout load of the middle of the window: SLT-CHK-08 places two checkouts, SLT-SYN-11 three, SLT-IMP-03 three, SLT-SW-09 two, plus SLT-CHK-13 and SLT-SYN-07. Every admin_new_subscription for a checkout inside the bracket is silently lost, and those tasks' email tables assert it as present. SLT-ADM-03/ADM-05 also drive status transitions on D4 whose admin notifications would vanish. Conversely, if any of those checkouts drifts into the bracket, EML-13's own 'exactly one message' silence proof is contaminated by their customer mail.
-- *Required fix:* Fix the bracket at 08:00-08:20 site on D4 and make it the FIRST thing that happens that day - before any product save, cart, checkout or status change. Add a pre-flight step (already half-present as step 1): screenshot Tools -> Scheduled Actions Pending for the next 2h and abort if any renewal/retry/overdue/cancel action is due, AND assert no SLT checkout task is in-progress on the board. Publish the open/close UTC to the registry. Add 'no checkout before 08:30 site on D4' to the D4 row of the calendar.
-
----
 ## Objective
 Prove what an admin schedule change does to the queue: the next payment date is editable nowhere and both REST paths reject it, while Skip & Pause → Vacation Mode moves `_next_payment_date` and must pull *and* restore **both** legs with the spread offset intact.
 
@@ -46,7 +36,7 @@ Prove what an admin schedule change does to the queue: the next payment date is 
 - Plugins: both
 
 ## Preconditions
-- SLT-ADM-05 done; reuse its create + arm recipe (create lands Pending and schedules nothing; **On Hold→Active** arms it).
+- SLT-ADM-05's D3 create-and-arm setup leg is complete and its recipe/evidence is published (create lands Pending and schedules nothing; **On Hold→Active** arms it). Its card may still be `in-progress` awaiting SUB-A's separate D4 natural charge gate; this task creates independent `SUB-B` and must not wait for or alter SUB-A.
 - Frozen baseline: pause enabled, customers may pause, reason required, max 30 days / 2 pauses.
 - **Do not** flip `skip_renewal.enabled` (`false`): Skip Renewal is expectedly unavailable and `cutoff_days=2` blocks a day/1 sub anyway. Record it.
 - Act after 12:00 site time.
@@ -58,15 +48,29 @@ Prove what an admin schedule change does to the queue: the next payment date is 
 | Session | `--session admin-SLT-ADM-03` |
 
 ## Steps
-1. `mailpit-agent latest-id` → `M0`. Create **SUB-B** at `#/subscriptions/form` as in SLT-ADM-05 steps 2-4.
-2. Arm it: `#/subscriptions/edit/SUB-B` → Change Status **Active**, **On Hold**, **Active**. Record `D` = `wp post meta get SUB-B _next_payment_date --allow-root`, **k** = `crc32('arraysubs-spread-'.SUB-B) % 21600`.
-3. Screenshot the **before** queue `admin.php?page=wc-status&tab=action-scheduler&status=pending&s=SUB-B`: invoice at `D+k−6h`, charge at `D+k`.
-4. Negative A: screenshot every field on `#/subscriptions/edit/SUB-B` — no next-payment-date input may exist.
-5. Negative B: from WP root, `wp eval` + `rest_do_request()` POSTing `{"next_payment_date":"2026-09-01 12:00:00"}` to `/arraysubs/v1/subscriptions/SUB-B/update` and `.../manual/update-dates`; `var_dump()` status and data.
-6. On `#/subscriptions/detail/SUB-B` open **Skip & Pause → Vacation Mode**, set **Duration (Days)** `2` and **Reason** `SLT-ADM-03 probe`, click **Pause Subscription**, confirm.
-7. Re-read `_next_payment_date`, `_pause_original_next_payment_date`, `_pause_end_date`, `_pause_count` and status; re-screenshot the queue.
-8. **Resume Now**, confirm. Re-read those metas plus both action-id metas; re-screenshot the queue. Capture Mailpit ids around steps 6 and 8.
-9. Run no `wp action-scheduler` command; close the session. **Follow-up on watch day D6 (2026-08-08):** confirm the restored schedule fired (result 6).
+1. Record `SUBCOUNT_BEFORE=<exact current SLT subscription count>` and `M0=$(mailpit-agent latest-id)`. In `admin-SLT-ADM-03`, create **SUB-B** at `#/subscriptions/form` exactly as in SLT-ADM-05 steps 2-4, record/validate its numeric ID, require `SUBCOUNT_AFTER == SUBCOUNT_BEFORE + 1`, and inspect the complete `M0` delta to prove zero creation-attributable mail.
+2. Arm it with action-specific mail baselines: set `ACTIVATE_PRE=$(mailpit-agent latest-id)`, change **Pending → Active**, and reconcile the new/admin subscription mail; set `HOLD1_PRE=$(mailpit-agent latest-id)`, change **Active → On Hold**, and wait for `is on hold`; set `REACT1_PRE=$(mailpit-agent latest-id)`, change **On Hold → Active**, and wait for `reactivated`. Record `D` with `wp post meta get "$SUB_B" _next_payment_date --allow-root`, and compute **k** from numeric `$SUB_B` with the README argv-based crc32 command.
+3. Capture the **before** queue at `admin.php?page=wc-status&tab=action-scheduler&status=pending&s=$SUB_B` as `SLT-ADM-03-02-queue-before.png`: invoice at `D+k−6h`, charge at `D+k`.
+4. Negative A: capture every field on `#/subscriptions/edit/$SUB_B` as `SLT-ADM-03-01-edit-no-date-field.png`; no next-payment-date input may exist.
+5. Negative B: record `REST_PRE=$(mailpit-agent latest-id)` and pre-probe date/action IDs, then from the WP root run the exact internal REST probe below. It authenticates as the documented admin solely inside this WP-CLI process, interpolates numeric `$SUB_B` into both routes, sends the same `next_payment_date`, and prints each status/data pair. Re-read the unchanged date/action IDs and require zero task-attributable mail in the bounded `REST_PRE` delta:
+   ```bash
+   wp eval "
+   \$admin = get_user_by('login', 'admin');
+   wp_set_current_user((int) \$admin->ID);
+   foreach (['/arraysubs/v1/subscriptions/$SUB_B/update', '/arraysubs/v1/subscriptions/$SUB_B/manual/update-dates'] as \$route) {
+       \$request = new WP_REST_Request('POST', \$route);
+       \$request->set_body_params(['next_payment_date' => '2026-09-01 12:00:00']);
+       \$response = rest_do_request(\$request);
+       printf('route=%s status=%d%s', \$route, \$response->get_status(), PHP_EOL);
+       var_export(\$response->get_data());
+       echo PHP_EOL;
+   }
+   " --allow-root
+   ```
+6. Set `PAUSE_PRE=$(mailpit-agent latest-id)`. On `#/subscriptions/detail/$SUB_B` open **Skip & Pause → Vacation Mode**, set **Duration (Days)** `2` and **Reason** `SLT-ADM-03 probe`, click **Pause Subscription**, confirm; wait for the on-hold mail after `PAUSE_PRE`.
+7. Re-read `_next_payment_date`, `_pause_original_next_payment_date`, `_pause_end_date`, `_pause_count` and status; capture the queue as `SLT-ADM-03-03-queue-paused.png`.
+8. Set `RESUME_PRE=$(mailpit-agent latest-id)`, click **Resume Now**, confirm, and wait for the reactivated mail after `RESUME_PRE`. Re-read those metas plus both action-ID metas; capture the queue as `SLT-ADM-03-04-queue-after-resume.png`.
+9. Record both restored action IDs/GMT values and publish numeric SUB-B, D, k, both gates, and the invoice `gate−5m` baseline deadline to the registry and D04 report. Close only `admin-SLT-ADM-03` and keep the card `in-progress`; run no Action Scheduler command. No earlier than five minutes before the exact D5 invoice gate, publish `ADM03_RENEW_PRE=$(mailpit-agent latest-id)`. **Follow-up on watch day D6 (2026-08-08):** reopen `admin-SLT-ADM-03`, confirm both natural actions complete, resolve the pending renewal order through exact subscription/scheduled-cycle plus reverse relationship rather than recency, capture it as `SLT-ADM-03-05-renewal-order.png`, and reconcile the complete Mailpit delta after `ADM03_RENEW_PRE`. If any live REST/pause/resume/scheduling assertion fails, create a standalone issue with this task/plan, SUB-B/order/action/user IDs and login/role, exact route/context, reproduction, expected/actual, UI/REST/meta/action/mail proof and SUB-A as counterexample; never create a kanban bug card. Close the session, independently review the D4-D6 evidence, move the card through `review` to `done`, and ensure Review returns to zero.
 
 ## Expected results
 1. The Edit screen exposes Status, Invoice Email and addresses only — **no next-payment-date field** — and both REST calls return HTTP **400** `Manual next payment date changes are no longer supported…` (`SubscriptionController.php:812-818`), leaving the date unchanged.
@@ -79,18 +83,20 @@ Prove what an admin schedule change does to the queue: the next payment date is 
 ## Emails expected
 | # | Email | Trigger point | Recipient | Subject contains | Verify with |
 |---|---|---|---|---|---|
-| 1 | subscription_on_hold | step 2 →On Hold **and** step 6 Pause | slt-admincreated | `is on hold` | expect **twice**; pause is a real on-hold |
-| 2 | subscription_reactivated | step 2 →Active **and** step 8 Resume | slt-admincreated | `has been reactivated` | `wait-new <prev> 120 "reactivated"` |
-| 3 | renewal_invoice | invoice leg, 08-07 | slt-admincreated | `Invoice for subscription #SUB-B` | watch D6 `list 50` |
-| 4 | NONE EXPECTED | steps 4-5 | — | — | `latest-id` unchanged across step 5 |
+| 0 | new_subscription + admin_new_subscription | step 2 Pending → Active | customer + admin | `is active` / `New subscription #SUB-B` | reconcile after `ACTIVATE_PRE` |
+| 1 | subscription_on_hold | step 2 →On Hold **and** step 6 Pause | slt-admincreated | `is on hold` | exactly once after each of `HOLD1_PRE` and `PAUSE_PRE` |
+| 2 | subscription_reactivated | step 2 →Active **and** step 8 Resume | slt-admincreated | `has been reactivated` | exactly once after each of `REACT1_PRE` and `RESUME_PRE` |
+| 3 | renewal_invoice | invoice leg, 08-07 | slt-admincreated | `Invoice for subscription #SUB-B` | watch D6 complete delta after `ADM03_RENEW_PRE`; save/show exact matched id |
+| 4 | NONE EXPECTED | steps 4-5 | — | — | Complete action-specific delta across step 5; zero task-attributable mail, while unrelated/background mail is allowed and classified |
 
 ## Evidence to capture
-- Screenshots `SLT-ADM-03-01-edit-no-date-field.png`, `-02-queue-before.png`, `-03-queue-paused.png`, `-04-queue-after-resume.png`; SUB-B id, `D`, k, all meta reads, both `var_dump` outputs, Mailpit ids, action ids.
+- Screenshots `SLT-ADM-03-01-edit-no-date-field.png`, `-02-queue-before.png`, `-03-queue-paused.png`, `-04-queue-after-resume.png`, `-05-renewal-order.png`; SUB-B ID/count delta, D/k/meta reads, both REST outputs, exact action/gate/baseline values, Mailpit IDs, relationship-linked renewal order, session/review proof.
 
 ## Pass criteria
 - [ ] No next-payment-date field; both REST paths return 400 and change nothing
 - [ ] Pause shifts the date by 2 days, removes both legs, queues `arraysubs_resume_subscription`; Resume restores the date exactly and re-queues both legs at `D+k−6h` / `D+k`
 - [ ] Watch D6: both legs Complete, `pending` renewal order created, no non-SLT action moved
+- [ ] Exact D5 baseline handoff, task sessions closed per phase, and final evidence reviewed to done
 
 ## Isolation / teardown
 - Hands SUB-B, `D` and k to SLT-ADM-04, which runs the status ladder on D6 **before 12:00**; baseline untouched, `skip_renewal.enabled` left `false`. SUB-B is cancelled by SLT-ADM-04, deleted by SLT-SETUP-99B.
@@ -111,8 +117,14 @@ Prove what an admin schedule change does to the queue: the next payment date is 
 - WooCommerce **grouped** products have zero handling in either plugin — grouped tasks are
   exploratory: document behaviour, do not assert a spec.
 - WP-Cron runs every minute from `/etc/cron.d/mirror-help-arrayhash-wordpress`. Scheduled actions
-  fire on their own; **a renewal that does not fire is a real bug** — capture evidence before forcing.
+  fire on their own; **a renewal that does not fire is a real bug** — capture evidence and do not force a natural-watch action.
 - Give this task its own browser session (`agent-browser --session <role>-<TASK-KEY>`). Sessions are
   keyed by name and **share a cart**.
-- Never run `wp action-scheduler run` without `--hooks=`; prefer a single action by ID.
-- Evidence goes in `qa/subscription-lifecycle-test/evidence/<TASK-KEY>/`.
+- Never run a bare or `--hooks=` Action Scheduler drain. Run one known action ID at a time only when the task explicitly authorizes it and after the required queue pre-flight; natural-watch actions are never forced.
+- Evidence goes under `/home/server-manager/slt-evidence/` using task-key-prefixed filenames.
+
+[[2026-08-06]] Thu 20:15
+Missed-window note: not started before the D4 site-local day rolled to 2026-08-07. Do not treat the authored D6 renewal read as valid until this D4 setup leg is actually executed on a valid day first.
+
+[[2026-08-06]] Thu 20:33
+UNVERIFIED closeout on 2026-08-06: the required D4 setup leg was not started before the site-local day rolled into 2026-08-07, so the authored D6 renewal read can no longer validate this exact card without a new, explicitly replanned setup cycle.

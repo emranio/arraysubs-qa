@@ -1,10 +1,12 @@
 ---
 id: 77
 title: Two different subscription products in one cart must be rejected — capture the exact string on every add-to-cart surface
-status: todo
+status: done
 priority: high
 created: 2026-08-02T03:43:09.675926975+02:00
-updated: 2026-08-02T03:43:20.546394511+02:00
+updated: 2026-08-07T16:07:58.248093968+02:00
+started: 2026-08-07T16:07:57.9644793+02:00
+completed: 2026-08-07T16:07:57.9644793+02:00
 tags:
     - checkout
     - day-05
@@ -39,24 +41,24 @@ Prove `multiple_subscriptions.allow_multiple_in_cart = false` stops two DIFFEREN
 ## Test data
 | Item | Value |
 |---|---|
-| Product A | SLT Daily Core, `/slt-daily-core`, $10.00, day/1 |
-| Product B | SLT Fixed Three Cycles, `/slt-fixed-three-cycles`, $7.00, day/2 |
+| Product A | SLT Daily Core, `/product/slt-daily-core/`, $10.00, day/1 |
+| Product B | SLT Fixed Three Cycles, `/product/slt-fixed-three-cycles/`, $7.00, day/2 |
 | Session | `--session guest-SLT-CHK-06` (unique; no cart collision) |
 | Expected error | `Multiple subscription plans are disabled for one checkout. Keep only one subscription plan in the cart, then place a separate order for any other plan.` |
 
 ## Steps
-1. `mailpit-agent latest-id` → record `MB06`.
-2. `agent-browser --session guest-SLT-CHK-06 open "https://mirror-help.arrayhash.com/slt-classic-cart"` → `snapshot -i`. Assert cart empty.
-3. Open `https://mirror-help.arrayhash.com/slt-daily-core` → `snapshot -i` → click add-to-cart → re-snapshot (1 item).
-4. Open `https://mirror-help.arrayhash.com/slt-fixed-three-cycles` → `snapshot -i` → click add-to-cart → re-snapshot and screenshot the notice.
-5. Copy the notice verbatim to a `.txt` and diff character-for-character against Expected error.
-6. Open `/slt-classic-cart` → `snapshot -i`: only SLT Daily Core, qty 1, subtotal $10.00.
-7. Open `https://mirror-help.arrayhash.com/cart` (block, page 7) → `snapshot -i`: one line, no error banner.
-8. Open `https://mirror-help.arrayhash.com/checkout` (block, page 8) → `snapshot -i`: no `arraysubs_cart_error`. Do not place the order.
-9. Archive AJAX surface: open `https://mirror-help.arrayhash.com/?post_type=product&s=SLT+Fixed+Three+Cycles` → `snapshot -i` → click the archive **Add to cart** → re-snapshot; record whether the item was silently dropped or a message rendered. Capture the network response.
-10. Discriminator: return to `/slt-daily-core` and add it a SECOND time; re-snapshot the classic cart.
-11. Empty the cart; `agent-browser --session guest-SLT-CHK-06 close`.
-12. `mailpit-agent latest-id` must equal `MB06`.
+1. Resolve strict numeric, distinct `A_ID` and `B_ID` by exact slugs; verify their titles, prices, schedules, and subscription flags, then record `MB06=$(mailpit-agent latest-id)`.
+2. `agent-browser --session guest-SLT-CHK-06 open "https://mirror-help.arrayhash.com/slt-classic-cart"` → `snapshot -i`; assert empty and capture `SLT-CHK-06-00-cart-empty-before.png`.
+3. Open `/product/slt-daily-core/`, click add-to-cart, and account for frozen one-click mode: if redirected to checkout, do not proceed; explicitly reopen `/slt-classic-cart`. Require exactly `$A_ID`, qty 1, subtotal $10.00 and capture `SLT-CHK-06-01-classic-cart-one-sub.png`.
+4. Open `/product/slt-fixed-three-cycles/`, click add-to-cart, and re-snapshot the resulting page/notice before navigating. Capture `SLT-CHK-06-02-rejection-notice.png`; then reopen `/slt-classic-cart` and require `$B_ID` absent while `$A_ID` remains qty 1.
+5. Copy the notice verbatim to `/home/server-manager/slt-evidence/SLT-CHK-06-rejection.txt` and compare its bytes against a task-owned expected-text file using `cmp`; save the comparison result.
+6. Capture the verified classic cart as `SLT-CHK-06-03-classic-cart-still-one.png`.
+7. Open `/cart` (block, page 7), require one `$A_ID` line and no error banner, and capture `SLT-CHK-06-04-block-cart-one.png`.
+8. Open `/checkout` (block, page 8), require the unpopulated single-line summary and no `arraysubs_cart_error`, and capture `SLT-CHK-06-05-block-checkout-clean.png`. Do not enter payment data or place an order.
+9. Archive AJAX surface: open `/?post_type=product&s=SLT+Fixed+Three+Cycles`, clear the task-session network buffer, click the exact `$B_ID` archive **Add to cart**, and re-snapshot. Capture `SLT-CHK-06-06-archive-ajax-result.png` plus the exact request/status/body; then reopen the classic cart and require `$B_ID` still absent.
+10. Discriminator: return to `/product/slt-daily-core/` and add `$A_ID` a second time. If one-click redirects, explicitly reopen `/slt-classic-cart`; require the sole line qty 2/subtotal $20.00 and capture `SLT-CHK-06-07-same-product-qty2.png`.
+11. Empty the cart, capture `SLT-CHK-06-08-cart-empty-after.png`, and close only `guest-SLT-CHK-06`.
+12. Inspect every Mailpit message newer than `MB06`; require zero task-attributable mail and classify background mail. If the archive rejection is silent, create `issues/SLT-CHK-06-archive-rejection-has-no-visible-feedback.md`; for that UX finding or any assertion failure include this progress task/stage and plan path, product IDs, user/order/subscription IDs as `N/A`, guest session and exact URLs, reproduction, expected/actual, screenshot/network/console/Mailpit proof, and the product-page rejection as counterexample. Never add a kanban bug card. Independently review all evidence, move the card through `review` to `done`, and ensure Review returns to zero.
 
 ## Expected results
 1. Step 4 refuses the add; cart item count stays 1, no SLT Fixed Three Cycles line.
@@ -70,11 +72,10 @@ Prove `multiple_subscriptions.allow_multiple_in_cart = false` stops two DIFFEREN
 ## Emails expected
 | # | Email | Trigger point | Recipient | Subject contains | Verify with |
 |---|---|---|---|---|---|
-| 1 | NONE EXPECTED | no order is placed | — | — | `mailpit-agent latest-id` after step 12 equals `MB06`; if it moved, `mailpit-agent show latest` and file the leak |
+| 1 | NONE EXPECTED | no order is placed | — | — | Complete delta after `MB06`; file only a task-attributable leak, while unrelated/background mail is allowed and classified |
 
 ## Evidence to capture
-- `SLT-CHK-06-01-cart-one-sub.png`, `-02-rejection-notice.png`, `-03-block-checkout-clean.png`, `-04-archive-ajax-result.png`, `-05-same-product-qty2.png`.
-- Verbatim notice text file; console + network log for step 9.
+- Safe named `SLT-CHK-06-00` through `-08` cart/rejection/archive captures; numeric product IDs; exact-byte notice files/comparison; archive console/network response; Mailpit/session/review proof.
 
 ## Pass criteria
 - [ ] Second distinct subscription never enters the cart
@@ -83,6 +84,7 @@ Prove `multiple_subscriptions.allow_multiple_in_cart = false` stops two DIFFEREN
 - [ ] Archive AJAX path also refuses; its messaging recorded
 - [ ] Same product twice merges to qty 2
 - [ ] Zero mail sent
+- [ ] Any silent-archive UX finding exists only as a standalone issue file; exact session closed and evidence reviewed to done
 
 ## Isolation / teardown
 - Cart emptied and session closed at step 11. No product, user, coupon or setting is created or changed.
@@ -103,8 +105,17 @@ Prove `multiple_subscriptions.allow_multiple_in_cart = false` stops two DIFFEREN
 - WooCommerce **grouped** products have zero handling in either plugin — grouped tasks are
   exploratory: document behaviour, do not assert a spec.
 - WP-Cron runs every minute from `/etc/cron.d/mirror-help-arrayhash-wordpress`. Scheduled actions
-  fire on their own; **a renewal that does not fire is a real bug** — capture evidence before forcing.
+  fire on their own; **a renewal that does not fire is a real bug** — capture evidence and do not force a natural-watch action.
 - Give this task its own browser session (`agent-browser --session <role>-<TASK-KEY>`). Sessions are
   keyed by name and **share a cart**.
-- Never run `wp action-scheduler run` without `--hooks=`; prefer a single action by ID.
-- Evidence goes in `qa/subscription-lifecycle-test/evidence/<TASK-KEY>/`.
+- Never run a bare or `--hooks=` Action Scheduler drain. Run one known action ID at a time only when the task explicitly authorizes it and after the required queue pre-flight; natural-watch actions are never forced.
+- Evidence goes under `/home/server-manager/slt-evidence/` using task-key-prefixed filenames.
+
+[[2026-08-06]] Thu 21:32
+Preflight 2026-08-06: authored guest fixtures still match the task. Product A slt-daily-core = 11927 (published). Product B slt-fixed-three-cycles = 11933 (published). No extra fixture creation is needed before the guest-only, orderless D5 run.
+
+[[2026-08-06]] Thu 22:22
+As of 2026-08-06 readiness review: no current source-block is visible from live evidence. This card remains a valid Friday, August 7, 2026 candidate and must stay in todo until that date; do not open it early.
+
+[[2026-08-07]] Fri 16:07
+D05 execution complete — FAIL. Anonymous session `guest-SLT-CHK-06` began and ended with an empty cart and emitted zero mail (Mailpit baseline/final newest ID `5hm1LQfe2IKo0vIamcv9kd`). With frozen `allow_multiple_in_cart=false` plus `one_click_mode=subscription_items`, standalone and archive adds of B=11933 while A=11927 was present both bypassed the authored refusal: success notice appeared, A was silently replaced by B, and the exact expected rejection was never observed (`cmp` exit 1). The same-product discriminator also failed: adding A twice left qty 1 / $10 instead of qty 2 / $20. Single-A block cart and checkout were clean. Browser errors empty; no order/user/subscription/setting mutation. Evidence: `/home/server-manager/slt-evidence/SLT-CHK-06-facts.txt`, screenshots `SLT-CHK-06-00` through `-08`, exact text/cmp artifacts. Issue: `issues/SLT-CHK-06-one-click-replaces-cart-and-bypasses-composition-guard.md`.

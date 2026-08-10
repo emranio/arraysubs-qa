@@ -236,3 +236,1030 @@
 {"timestamp":"2026-08-02T03:43:24.377157787+02:00","action":"edit","task_id":117,"detail":"SLT-SETUP-99 Restore baseline settings and delete every SLT artifact"}
 {"timestamp":"2026-08-02T03:43:24.491250953+02:00","action":"edit","task_id":118,"detail":"SLT-SETUP-99A D10 settings restore and partial cancellation — no deletions"}
 {"timestamp":"2026-08-02T03:43:24.618669943+02:00","action":"edit","task_id":119,"detail":"SLT-SETUP-99B Post-watch teardown on 2026-08-15 — delete every SLT artifact"}
+{"timestamp":"2026-08-02T13:17:49.574547494+02:00","action":"move","task_id":10,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-02T13:26:07.164546823+02:00","action":"edit","task_id":10,"detail":"SLT-SETUP-01 Recon environment, create SLT evidence + classic checkout pages, publish registry"}
+{"timestamp":"2026-08-02T13:26:07.248734998+02:00","action":"edit","task_id":10,"detail":"SLT-SETUP-01 Recon environment, create SLT evidence + classic checkout pages, publish registry"}
+{"timestamp":"2026-08-02T13:26:07.248985152+02:00","action":"release","task_id":10,"detail":"hill-tide"}
+{"timestamp":"2026-08-02T13:26:07.383639369+02:00","action":"move","task_id":10,"detail":"in-progress -\u003e done"}
+{"timestamp":"2026-08-02T13:26:21.554222551+02:00","action":"move","task_id":11,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-02T13:30:57.749680477+02:00","action":"create","task_id":120,"detail":"Bug: General settings save materializes unrelated defaults"}
+{"timestamp":"2026-08-02T13:34:14.226683588+02:00","action":"edit","task_id":11,"detail":"SLT-SETUP-02 Apply and record the four window-wide baseline setting changes"}
+{"timestamp":"2026-08-02T13:34:14.296542622+02:00","action":"edit","task_id":11,"detail":"SLT-SETUP-02 Apply and record the four window-wide baseline setting changes"}
+{"timestamp":"2026-08-02T13:34:14.296816341+02:00","action":"release","task_id":11,"detail":"hill-tide"}
+{"timestamp":"2026-08-02T13:34:14.365102952+02:00","action":"move","task_id":11,"detail":"in-progress -\u003e done"}
+{"timestamp":"2026-08-02T13:34:39.008158223+02:00","action":"move","task_id":12,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-02T13:43:40.610551035+02:00","action":"create","task_id":121,"detail":"Plan bug: SETUP-03 wrongly expects zero user-registration mail"}
+{"timestamp":"2026-08-02T13:48:35.353817076+02:00","action":"edit","task_id":12,"detail":"SLT-SETUP-03 Create the SLT account matrix (7 slt-* users) and document the guest path"}
+{"timestamp":"2026-08-02T13:48:35.354137211+02:00","action":"release","task_id":12,"detail":"hill-tide"}
+{"timestamp":"2026-08-02T13:48:35.476501465+02:00","action":"move","task_id":12,"detail":"in-progress -\u003e done"}
+{"timestamp":"2026-08-02T13:48:48.458013197+02:00","action":"edit","task_id":12,"detail":"SLT-SETUP-03 Create the SLT account matrix (7 slt-* users) and document the guest path"}
+{"timestamp":"2026-08-02T13:50:03.545571972+02:00","action":"move","task_id":5,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-02T13:56:08.849602001+02:00","action":"create","task_id":122,"detail":"QA blocker: all-products Member Access rule blocks SLT checkouts"}
+{"timestamp":"2026-08-02T14:02:25.823036452+02:00","action":"edit","task_id":5,"detail":"SLT-PROD-01 Create SLT Daily Core, the day/1 workhorse subscription product"}
+{"timestamp":"2026-08-02T14:02:25.970601884+02:00","action":"edit","task_id":5,"detail":"SLT-PROD-01 Create SLT Daily Core, the day/1 workhorse subscription product"}
+{"timestamp":"2026-08-02T14:02:25.970854223+02:00","action":"release","task_id":5,"detail":"hill-tide"}
+{"timestamp":"2026-08-02T14:02:26.069805898+02:00","action":"move","task_id":5,"detail":"in-progress -\u003e done"}
+{"timestamp":"2026-08-02T14:02:57.350720991+02:00","action":"move","task_id":6,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-02T14:06:48.819758629+02:00","action":"edit","task_id":6,"detail":"SLT-PROD-06 Create SLT Fixed Three Cycles, a day/2 subscription that expires on 2026-08-07"}
+{"timestamp":"2026-08-02T14:06:48.891724473+02:00","action":"edit","task_id":6,"detail":"SLT-PROD-06 Create SLT Fixed Three Cycles, a day/2 subscription that expires on 2026-08-07"}
+{"timestamp":"2026-08-02T14:06:48.891957315+02:00","action":"release","task_id":6,"detail":"hill-tide"}
+{"timestamp":"2026-08-02T14:06:48.969564828+02:00","action":"move","task_id":6,"detail":"in-progress -\u003e done"}
+{"timestamp":"2026-08-02T14:06:55.868645561+02:00","action":"move","task_id":7,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-02T14:12:50.602006346+02:00","action":"edit","task_id":7,"detail":"SLT-PROD-07 Create SLT Lifetime One Time, the never-renews negative control"}
+{"timestamp":"2026-08-02T14:12:50.685778627+02:00","action":"edit","task_id":7,"detail":"SLT-PROD-07 Create SLT Lifetime One Time, the never-renews negative control"}
+{"timestamp":"2026-08-02T14:12:50.686012692+02:00","action":"release","task_id":7,"detail":"hill-tide"}
+{"timestamp":"2026-08-02T14:12:50.766283194+02:00","action":"move","task_id":7,"detail":"in-progress -\u003e done"}
+{"timestamp":"2026-08-02T14:13:14.075464137+02:00","action":"edit","task_id":8,"detail":"SLT-PROD-13 Create SLT Flex Week Segments, the single week-interval flexible-sync product"}
+{"timestamp":"2026-08-02T14:13:14.076392714+02:00","action":"claim","task_id":8,"detail":"hill-tide"}
+{"timestamp":"2026-08-02T14:20:24.894228712+02:00","action":"edit","task_id":8,"detail":"SLT-PROD-13 Create SLT Flex Week Segments, the single week-interval flexible-sync product"}
+{"timestamp":"2026-08-02T14:20:25.02854472+02:00","action":"edit","task_id":8,"detail":"SLT-PROD-13 Create SLT Flex Week Segments, the single week-interval flexible-sync product"}
+{"timestamp":"2026-08-02T14:20:25.028768095+02:00","action":"release","task_id":8,"detail":"hill-tide"}
+{"timestamp":"2026-08-02T14:20:25.183405643+02:00","action":"move","task_id":8,"detail":"todo -\u003e done"}
+{"timestamp":"2026-08-02T14:21:17.892821188+02:00","action":"edit","task_id":13,"detail":"SLT-SYN-01 Audit simple-product Flexible Renewal Sync UI, validation and meta keys"}
+{"timestamp":"2026-08-02T14:21:17.893140211+02:00","action":"claim","task_id":13,"detail":"hill-tide"}
+{"timestamp":"2026-08-02T14:25:26.263619099+02:00","action":"create","task_id":123,"detail":"Plan bug: SYN-01 raw meta diff treats insertion order as state"}
+{"timestamp":"2026-08-02T14:26:59.154786862+02:00","action":"move","task_id":13,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-02T14:26:59.246670241+02:00","action":"edit","task_id":13,"detail":"SLT-SYN-01 Audit simple-product Flexible Renewal Sync UI, validation and meta keys"}
+{"timestamp":"2026-08-02T14:27:05.240468437+02:00","action":"edit","task_id":13,"detail":"SLT-SYN-01 Audit simple-product Flexible Renewal Sync UI, validation and meta keys"}
+{"timestamp":"2026-08-02T14:27:05.240811325+02:00","action":"release","task_id":13,"detail":"hill-tide"}
+{"timestamp":"2026-08-02T14:32:49.609511676+02:00","action":"move","task_id":1,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-02T14:43:44.222930745+02:00","action":"move","task_id":120,"detail":"review -\u003e in-progress"}
+{"timestamp":"2026-08-02T14:48:29.119113539+02:00","action":"edit","task_id":120,"detail":"Bug: General settings save materializes unrelated defaults"}
+{"timestamp":"2026-08-02T14:48:29.279582688+02:00","action":"move","task_id":120,"detail":"in-progress -\u003e review"}
+{"timestamp":"2026-08-02T14:48:29.439278671+02:00","action":"move","task_id":120,"detail":"review -\u003e done"}
+{"timestamp":"2026-08-02T14:49:06.424075911+02:00","action":"move","task_id":121,"detail":"review -\u003e in-progress"}
+{"timestamp":"2026-08-02T14:50:52.768353739+02:00","action":"edit","task_id":121,"detail":"Plan bug: SETUP-03 wrongly expects zero user-registration mail"}
+{"timestamp":"2026-08-02T14:50:52.841709014+02:00","action":"move","task_id":121,"detail":"in-progress -\u003e review"}
+{"timestamp":"2026-08-02T14:50:52.975864059+02:00","action":"move","task_id":121,"detail":"review -\u003e done"}
+{"timestamp":"2026-08-02T14:51:03.360438092+02:00","action":"move","task_id":122,"detail":"review -\u003e in-progress"}
+{"timestamp":"2026-08-02T14:57:21.640036915+02:00","action":"edit","task_id":122,"detail":"QA blocker: all-products Member Access rule blocks SLT checkouts"}
+{"timestamp":"2026-08-02T14:57:21.740872662+02:00","action":"move","task_id":122,"detail":"in-progress -\u003e review"}
+{"timestamp":"2026-08-02T14:57:21.914091265+02:00","action":"move","task_id":122,"detail":"review -\u003e done"}
+{"timestamp":"2026-08-02T14:57:35.43387685+02:00","action":"move","task_id":123,"detail":"review -\u003e in-progress"}
+{"timestamp":"2026-08-02T14:58:52.71898053+02:00","action":"edit","task_id":123,"detail":"Plan bug: SYN-01 raw meta diff treats insertion order as state"}
+{"timestamp":"2026-08-02T14:58:52.803616037+02:00","action":"move","task_id":123,"detail":"in-progress -\u003e review"}
+{"timestamp":"2026-08-02T14:58:52.953068884+02:00","action":"move","task_id":123,"detail":"review -\u003e done"}
+{"timestamp":"2026-08-02T15:01:39.397119142+02:00","action":"create","task_id":124,"detail":"Bug: concurrent Stripe capture creates duplicate subscription meta"}
+{"timestamp":"2026-08-02T15:09:10.780882299+02:00","action":"move","task_id":124,"detail":"in-progress -\u003e archived"}
+{"timestamp":"2026-08-02T15:14:08.596128973+02:00","action":"move","task_id":1,"detail":"in-progress -\u003e review"}
+{"timestamp":"2026-08-02T15:14:20.35429561+02:00","action":"move","task_id":1,"detail":"review -\u003e done"}
+{"timestamp":"2026-08-02T15:14:20.478343051+02:00","action":"move","task_id":9,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-02T15:14:46.64320301+02:00","action":"move","task_id":2,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-02T15:27:04.19377332+02:00","action":"move","task_id":2,"detail":"in-progress -\u003e review"}
+{"timestamp":"2026-08-02T15:27:09.962047574+02:00","action":"move","task_id":2,"detail":"review -\u003e done"}
+{"timestamp":"2026-08-02T15:27:10.91850631+02:00","action":"move","task_id":3,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-02T15:39:33.342414378+02:00","action":"move","task_id":3,"detail":"in-progress -\u003e review"}
+{"timestamp":"2026-08-02T15:39:56.89839429+02:00","action":"move","task_id":3,"detail":"review -\u003e done"}
+{"timestamp":"2026-08-02T15:43:07.199796155+02:00","action":"move","task_id":4,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-02T15:51:39.385706268+02:00","action":"move","task_id":14,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-02T16:01:05.450691341+02:00","action":"move","task_id":14,"detail":"in-progress -\u003e review"}
+{"timestamp":"2026-08-02T16:01:31.662977604+02:00","action":"move","task_id":14,"detail":"review -\u003e done"}
+{"timestamp":"2026-08-02T17:12:31.674980705+02:00","action":"delete","task_id":117,"detail":"SLT-SETUP-99 Restore baseline settings and delete every SLT artifact"}
+{"timestamp":"2026-08-02T23:09:48.248488565+02:00","action":"edit","task_id":4,"detail":"SLT Fixed Three Cycles to its natural end: two renewals, expiry at the final charge, expired mail, no expiring-soon"}
+{"timestamp":"2026-08-02T23:09:48.249118336+02:00","action":"release","task_id":4,"detail":"hill-tide"}
+{"timestamp":"2026-08-02T23:09:48.251861736+02:00","action":"edit","task_id":9,"detail":"SLT Daily Core renews unattended overnight — first cycle, spread-offset window, cron-not-CLI proof"}
+{"timestamp":"2026-08-02T23:09:48.252091743+02:00","action":"release","task_id":9,"detail":"hill-tide"}
+{"timestamp":"2026-08-02T23:09:55.035222916+02:00","action":"edit","task_id":4,"detail":"SLT Fixed Three Cycles to its natural end: two renewals, expiry at the final charge, expired mail, no expiring-soon"}
+{"timestamp":"2026-08-02T23:09:55.237365571+02:00","action":"edit","task_id":9,"detail":"SLT Daily Core renews unattended overnight — first cycle, spread-offset window, cron-not-CLI proof"}
+{"timestamp":"2026-08-02T23:10:36.778493643+02:00","action":"edit","task_id":4,"detail":"SLT Fixed Three Cycles to its natural end: two renewals, expiry at the final charge, expired mail, no expiring-soon"}
+{"timestamp":"2026-08-02T23:10:37.13172462+02:00","action":"edit","task_id":9,"detail":"SLT Daily Core renews unattended overnight — first cycle, spread-offset window, cron-not-CLI proof"}
+{"timestamp":"2026-08-03T02:13:10.045282373+02:00","action":"move","task_id":25,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-03T02:31:56.657367401+02:00","action":"move","task_id":25,"detail":"in-progress -\u003e review"}
+{"timestamp":"2026-08-03T02:31:56.827255064+02:00","action":"move","task_id":25,"detail":"review -\u003e done"}
+{"timestamp":"2026-08-03T02:32:16.049390128+02:00","action":"move","task_id":20,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-03T02:47:18.242097891+02:00","action":"move","task_id":20,"detail":"in-progress -\u003e review"}
+{"timestamp":"2026-08-03T02:47:18.609587856+02:00","action":"move","task_id":20,"detail":"review -\u003e done"}
+{"timestamp":"2026-08-03T02:47:37.980217702+02:00","action":"move","task_id":21,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-03T03:16:16.549973154+02:00","action":"move","task_id":21,"detail":"in-progress -\u003e review"}
+{"timestamp":"2026-08-03T03:16:16.865189152+02:00","action":"move","task_id":21,"detail":"review -\u003e done"}
+{"timestamp":"2026-08-03T03:16:47.558644983+02:00","action":"move","task_id":22,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-03T04:13:55.14596327+02:00","action":"move","task_id":22,"detail":"in-progress -\u003e review"}
+{"timestamp":"2026-08-03T04:14:15.6381233+02:00","action":"move","task_id":22,"detail":"review -\u003e done"}
+{"timestamp":"2026-08-03T04:14:52.562352692+02:00","action":"move","task_id":23,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-03T04:49:55.655423583+02:00","action":"move","task_id":23,"detail":"in-progress -\u003e review"}
+{"timestamp":"2026-08-03T04:50:22.293862319+02:00","action":"move","task_id":23,"detail":"review -\u003e done"}
+{"timestamp":"2026-08-03T06:12:04.725374684+02:00","action":"edit","task_id":13,"detail":"SLT-SYN-01 Audit simple-product Flexible Renewal Sync UI, validation and meta keys"}
+{"timestamp":"2026-08-03T06:12:04.736025829+02:00","action":"claim","task_id":13,"detail":"moth-salt"}
+{"timestamp":"2026-08-03T07:04:24.825339341+02:00","action":"edit","task_id":13,"detail":"SLT-SYN-01 Audit simple-product Flexible Renewal Sync UI, validation and meta keys"}
+{"timestamp":"2026-08-03T07:04:25.071331709+02:00","action":"move","task_id":13,"detail":"in-progress -\u003e review"}
+{"timestamp":"2026-08-03T07:05:03.373951756+02:00","action":"move","task_id":13,"detail":"review -\u003e done"}
+{"timestamp":"2026-08-03T07:05:50.722761592+02:00","action":"move","task_id":27,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-03T07:16:02.96937428+02:00","action":"edit","task_id":27,"detail":"SLT-SYN-03 Create the sync-group control product: SLT Sync Global Daily"}
+{"timestamp":"2026-08-03T07:16:03.145625239+02:00","action":"move","task_id":27,"detail":"in-progress -\u003e review"}
+{"timestamp":"2026-08-03T07:16:10.176192059+02:00","action":"move","task_id":27,"detail":"review -\u003e done"}
+{"timestamp":"2026-08-03T07:16:59.231064869+02:00","action":"move","task_id":24,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-03T07:24:30.619134806+02:00","action":"edit","task_id":13,"detail":"SLT-SYN-01 Audit simple-product Flexible Renewal Sync UI, validation and meta keys"}
+{"timestamp":"2026-08-03T07:28:35.481486172+02:00","action":"move","task_id":26,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-03T07:51:55.273319873+02:00","action":"edit","task_id":26,"detail":"SLT-SETUP-05 Verify Paddle sandbox readiness and record the two-gateway capability matrix"}
+{"timestamp":"2026-08-03T07:51:55.340498856+02:00","action":"move","task_id":26,"detail":"in-progress -\u003e review"}
+{"timestamp":"2026-08-03T07:52:23.611607857+02:00","action":"edit","task_id":26,"detail":"SLT-SETUP-05 Verify Paddle sandbox readiness and record the two-gateway capability matrix"}
+{"timestamp":"2026-08-03T07:52:23.691894002+02:00","action":"move","task_id":26,"detail":"review -\u003e done"}
+{"timestamp":"2026-08-03T09:10:34.054217195+02:00","action":"move","task_id":28,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-03T09:28:26.787839195+02:00","action":"move","task_id":28,"detail":"in-progress -\u003e review"}
+{"timestamp":"2026-08-03T09:28:27.038473898+02:00","action":"move","task_id":28,"detail":"review -\u003e done"}
+{"timestamp":"2026-08-03T09:29:05.525304913+02:00","action":"move","task_id":15,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-03T09:47:06.891823146+02:00","action":"move","task_id":15,"detail":"in-progress -\u003e review"}
+{"timestamp":"2026-08-03T09:47:07.071716196+02:00","action":"move","task_id":15,"detail":"review -\u003e done"}
+{"timestamp":"2026-08-03T09:47:37.216604724+02:00","action":"move","task_id":19,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-03T09:56:59.731381032+02:00","action":"move","task_id":18,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-03T10:29:47.090318105+02:00","action":"move","task_id":18,"detail":"in-progress -\u003e review"}
+{"timestamp":"2026-08-03T10:30:22.958680184+02:00","action":"move","task_id":18,"detail":"review -\u003e done"}
+{"timestamp":"2026-08-03T12:50:11.695702591+02:00","action":"move","task_id":16,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-03T12:54:09.995133694+02:00","action":"move","task_id":17,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-03T17:42:48.831972294+02:00","action":"move","task_id":9,"detail":"in-progress -\u003e review"}
+{"timestamp":"2026-08-03T17:42:49.053224494+02:00","action":"move","task_id":9,"detail":"review -\u003e done"}
+{"timestamp":"2026-08-03T21:11:51.973530651+02:00","action":"move","task_id":37,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-03T21:21:45.056588631+02:00","action":"move","task_id":37,"detail":"in-progress -\u003e review"}
+{"timestamp":"2026-08-03T21:22:12.468703646+02:00","action":"move","task_id":37,"detail":"review -\u003e done"}
+{"timestamp":"2026-08-03T21:22:25.360848815+02:00","action":"move","task_id":38,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-03T21:28:38.534406413+02:00","action":"move","task_id":38,"detail":"in-progress -\u003e review"}
+{"timestamp":"2026-08-03T21:29:02.698545933+02:00","action":"move","task_id":38,"detail":"review -\u003e done"}
+{"timestamp":"2026-08-03T21:29:15.81627812+02:00","action":"move","task_id":40,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-03T21:56:06.664725579+02:00","action":"move","task_id":40,"detail":"in-progress -\u003e review"}
+{"timestamp":"2026-08-03T21:56:21.355526115+02:00","action":"move","task_id":40,"detail":"review -\u003e done"}
+{"timestamp":"2026-08-03T21:57:04.21962175+02:00","action":"move","task_id":44,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-05T08:33:07.544357188+02:00","action":"move","task_id":44,"detail":"in-progress -\u003e review"}
+{"timestamp":"2026-08-05T08:33:40.171739534+02:00","action":"edit","task_id":44,"detail":"SLT-SYN-02 Audit variation-level Flexible Renewal Sync UI, [$loop] meta and per-variation independence"}
+{"timestamp":"2026-08-05T08:33:42.889476682+02:00","action":"edit","task_id":44,"detail":"SLT-SYN-02 Audit variation-level Flexible Renewal Sync UI, [$loop] meta and per-variation independence"}
+{"timestamp":"2026-08-05T08:33:42.892887553+02:00","action":"release","task_id":44,"detail":"quiet-basin"}
+{"timestamp":"2026-08-05T08:33:43.134908466+02:00","action":"move","task_id":44,"detail":"review -\u003e done"}
+{"timestamp":"2026-08-05T08:35:09.1281317+02:00","action":"edit","task_id":24,"detail":"Renewal-invoice leg: pending order and invoice email at due+offset-6h, before the charge leg"}
+{"timestamp":"2026-08-05T08:35:09.12853428+02:00","action":"release","task_id":24,"detail":"moth-salt"}
+{"timestamp":"2026-08-05T08:35:09.254051403+02:00","action":"edit","task_id":24,"detail":"Renewal-invoice leg: pending order and invoice email at due+offset-6h, before the charge leg"}
+{"timestamp":"2026-08-05T08:35:09.254443863+02:00","action":"claim","task_id":24,"detail":"quiet-basin"}
+{"timestamp":"2026-08-05T08:40:29.72215774+02:00","action":"move","task_id":24,"detail":"in-progress -\u003e review"}
+{"timestamp":"2026-08-05T08:40:47.872770857+02:00","action":"edit","task_id":24,"detail":"Renewal-invoice leg: pending order and invoice email at due+offset-6h, before the charge leg"}
+{"timestamp":"2026-08-05T08:40:48.420383314+02:00","action":"edit","task_id":24,"detail":"Renewal-invoice leg: pending order and invoice email at due+offset-6h, before the charge leg"}
+{"timestamp":"2026-08-05T08:40:48.420883634+02:00","action":"release","task_id":24,"detail":"quiet-basin"}
+{"timestamp":"2026-08-05T08:40:48.590416529+02:00","action":"move","task_id":24,"detail":"review -\u003e done"}
+{"timestamp":"2026-08-05T08:41:04.460266516+02:00","action":"edit","task_id":4,"detail":"SLT Fixed Three Cycles to its natural end: two renewals, expiry at the final charge, expired mail, no expiring-soon"}
+{"timestamp":"2026-08-05T08:41:04.461844421+02:00","action":"claim","task_id":4,"detail":"quiet-basin"}
+{"timestamp":"2026-08-05T08:51:56.629825241+02:00","action":"edit","task_id":4,"detail":"SLT Fixed Three Cycles to its natural end: two renewals, expiry at the final charge, expired mail, no expiring-soon"}
+{"timestamp":"2026-08-05T08:51:56.634690395+02:00","action":"release","task_id":4,"detail":"quiet-basin"}
+{"timestamp":"2026-08-05T08:52:10.261499451+02:00","action":"edit","task_id":16,"detail":"SLTPCT20REC 20% recurring coupon on block checkout - discounted first charge, discount persists to every renewal"}
+{"timestamp":"2026-08-05T08:52:10.261981737+02:00","action":"claim","task_id":16,"detail":"quiet-basin"}
+{"timestamp":"2026-08-05T08:57:48.23998332+02:00","action":"edit","task_id":16,"detail":"SLTPCT20REC 20% recurring coupon on block checkout - discounted first charge, discount persists to every renewal"}
+{"timestamp":"2026-08-05T08:57:48.243639136+02:00","action":"release","task_id":16,"detail":"quiet-basin"}
+{"timestamp":"2026-08-05T08:57:54.456999363+02:00","action":"edit","task_id":17,"detail":"SLTFIX5FIRST $5 fixed one-time coupon on classic checkout - first order discounted, first renewal at full price"}
+{"timestamp":"2026-08-05T08:57:54.457517956+02:00","action":"claim","task_id":17,"detail":"quiet-basin"}
+{"timestamp":"2026-08-05T09:01:24.631237055+02:00","action":"edit","task_id":17,"detail":"SLTFIX5FIRST $5 fixed one-time coupon on classic checkout - first order discounted, first renewal at full price"}
+{"timestamp":"2026-08-05T09:01:24.640591141+02:00","action":"release","task_id":17,"detail":"quiet-basin"}
+{"timestamp":"2026-08-05T09:01:49.376862688+02:00","action":"edit","task_id":19,"detail":"SLT Renewal Price Step: prove the $5 -\u003e $20 crossover lands on renewal #2, not renewal #3"}
+{"timestamp":"2026-08-05T09:01:49.377411599+02:00","action":"release","task_id":19,"detail":"grain-quick"}
+{"timestamp":"2026-08-05T09:01:49.559584396+02:00","action":"edit","task_id":19,"detail":"SLT Renewal Price Step: prove the $5 -\u003e $20 crossover lands on renewal #2, not renewal #3"}
+{"timestamp":"2026-08-05T09:01:49.559932763+02:00","action":"claim","task_id":19,"detail":"quiet-basin"}
+{"timestamp":"2026-08-05T09:04:59.519729561+02:00","action":"edit","task_id":19,"detail":"SLT Renewal Price Step: prove the $5 -\u003e $20 crossover lands on renewal #2, not renewal #3"}
+{"timestamp":"2026-08-05T09:04:59.522529515+02:00","action":"release","task_id":19,"detail":"quiet-basin"}
+{"timestamp":"2026-08-05T09:06:09.834153149+02:00","action":"move","task_id":61,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-05T09:16:16.660460027+02:00","action":"edit","task_id":61,"detail":"SLT-SYN-04 Prove global sync_to_billing_cycle=true + first_charge_mode=full, and that flex overrides it"}
+{"timestamp":"2026-08-05T09:27:25.518690881+02:00","action":"edit","task_id":61,"detail":"SLT-SYN-04 Prove global sync_to_billing_cycle=true + first_charge_mode=full, and that flex overrides it"}
+{"timestamp":"2026-08-05T09:41:54.584557002+02:00","action":"edit","task_id":61,"detail":"SLT-SYN-04 Prove global sync_to_billing_cycle=true + first_charge_mode=full, and that flex overrides it"}
+{"timestamp":"2026-08-05T09:59:04.109987581+02:00","action":"edit","task_id":61,"detail":"SLT-SYN-04 Prove global sync_to_billing_cycle=true + first_charge_mode=full, and that flex overrides it"}
+{"timestamp":"2026-08-05T10:31:33.825664672+02:00","action":"move","task_id":61,"detail":"in-progress -\u003e review"}
+{"timestamp":"2026-08-05T10:31:50.749729493+02:00","action":"move","task_id":61,"detail":"review -\u003e done"}
+{"timestamp":"2026-08-05T10:33:09.150784169+02:00","action":"edit","task_id":61,"detail":"SLT-SYN-04 Prove global sync_to_billing_cycle=true + first_charge_mode=full, and that flex overrides it"}
+{"timestamp":"2026-08-05T10:33:09.151509455+02:00","action":"release","task_id":61,"detail":"quiet-basin"}
+{"timestamp":"2026-08-05T10:33:34.049080013+02:00","action":"move","task_id":58,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-05T10:44:10.932892274+02:00","action":"move","task_id":58,"detail":"in-progress -\u003e review"}
+{"timestamp":"2026-08-05T10:44:52.99006437+02:00","action":"move","task_id":58,"detail":"review -\u003e done"}
+{"timestamp":"2026-08-05T10:44:58.383924886+02:00","action":"edit","task_id":58,"detail":"SLT-PROD-04 Create SLT Signup Fee Daily with a $15.00 one-time signup fee"}
+{"timestamp":"2026-08-05T10:44:58.384338985+02:00","action":"release","task_id":58,"detail":"quiet-basin"}
+{"timestamp":"2026-08-05T10:50:41.294522057+02:00","action":"move","task_id":39,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-05T11:16:18.286081037+02:00","action":"move","task_id":39,"detail":"in-progress -\u003e review"}
+{"timestamp":"2026-08-05T11:17:34.958887621+02:00","action":"move","task_id":39,"detail":"review -\u003e done"}
+{"timestamp":"2026-08-05T11:17:35.178621447+02:00","action":"edit","task_id":39,"detail":"SLT-PROD-09 Create SLT Grouped Set, a grouped product with two subscription children"}
+{"timestamp":"2026-08-05T11:17:35.178964124+02:00","action":"release","task_id":39,"detail":"quiet-basin"}
+{"timestamp":"2026-08-05T11:18:38.030945912+02:00","action":"move","task_id":59,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-05T11:45:57.739445601+02:00","action":"move","task_id":59,"detail":"in-progress -\u003e review"}
+{"timestamp":"2026-08-05T11:47:50.158556419+02:00","action":"move","task_id":59,"detail":"review -\u003e done"}
+{"timestamp":"2026-08-05T11:47:50.327940053+02:00","action":"edit","task_id":59,"detail":"SLT-PROD-10 Create SLT Box Daily (pro Subscription Box) plus its three eligible children"}
+{"timestamp":"2026-08-05T11:47:50.329123939+02:00","action":"release","task_id":59,"detail":"quiet-basin"}
+{"timestamp":"2026-08-05T11:48:46.512000852+02:00","action":"move","task_id":60,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-05T12:12:48.856074732+02:00","action":"move","task_id":60,"detail":"in-progress -\u003e review"}
+{"timestamp":"2026-08-05T12:13:43.36267486+02:00","action":"move","task_id":60,"detail":"review -\u003e done"}
+{"timestamp":"2026-08-05T12:13:43.74105689+02:00","action":"edit","task_id":60,"detail":"SLT-PROD-11 Create the four-product plan ladder and wire upgrade/downgrade/crossgrade links"}
+{"timestamp":"2026-08-05T12:13:43.741413964+02:00","action":"release","task_id":60,"detail":"quiet-basin"}
+{"timestamp":"2026-08-05T12:14:09.518578868+02:00","action":"edit","task_id":19,"detail":"SLT Renewal Price Step: prove the $5 -\u003e $20 crossover lands on renewal #2, not renewal #3"}
+{"timestamp":"2026-08-05T12:14:09.519081001+02:00","action":"claim","task_id":19,"detail":"sleet-wing"}
+{"timestamp":"2026-08-05T12:14:43.611726916+02:00","action":"move","task_id":49,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-05T12:15:59.116633678+02:00","action":"move","task_id":49,"detail":"in-progress -\u003e todo"}
+{"timestamp":"2026-08-05T12:15:59.470155684+02:00","action":"edit","task_id":49,"detail":"Renewal invoice output and pay-link settling an unpaid invoice on Stripe and Paddle"}
+{"timestamp":"2026-08-05T12:15:59.47056175+02:00","action":"release","task_id":49,"detail":"quiet-basin"}
+{"timestamp":"2026-08-05T12:15:59.72451989+02:00","action":"move","task_id":29,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-05T12:34:16.177058527+02:00","action":"move","task_id":29,"detail":"in-progress -\u003e review"}
+{"timestamp":"2026-08-05T12:35:23.744317194+02:00","action":"move","task_id":29,"detail":"review -\u003e done"}
+{"timestamp":"2026-08-05T12:35:23.90620099+02:00","action":"edit","task_id":29,"detail":"Paddle sandbox purchase: SLT Paddle Daily via overlay, webhook-paid order, next_billed_at override"}
+{"timestamp":"2026-08-05T12:35:23.907466299+02:00","action":"release","task_id":29,"detail":"quiet-basin"}
+{"timestamp":"2026-08-05T12:36:09.866582524+02:00","action":"edit","task_id":19,"detail":"SLT Renewal Price Step: prove the $5 -\u003e $20 crossover lands on renewal #2, not renewal #3"}
+{"timestamp":"2026-08-05T12:36:09.866965906+02:00","action":"release","task_id":19,"detail":"sleet-wing"}
+{"timestamp":"2026-08-05T12:36:51.089571189+02:00","action":"move","task_id":42,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-05T12:37:07.297818595+02:00","action":"edit","task_id":19,"detail":"SLT Renewal Price Step: prove the $5 -\u003e $20 crossover lands on renewal #2, not renewal #3"}
+{"timestamp":"2026-08-05T12:37:07.298323834+02:00","action":"claim","task_id":19,"detail":"sleet-wing"}
+{"timestamp":"2026-08-05T12:41:13.838001568+02:00","action":"edit","task_id":42,"detail":"Paddle sandbox subscription renews unattended — establish Paddle-side vs site-side driver"}
+{"timestamp":"2026-08-05T12:41:13.841796348+02:00","action":"release","task_id":42,"detail":"quiet-basin"}
+{"timestamp":"2026-08-05T12:42:01.819441188+02:00","action":"move","task_id":49,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-05T12:48:15.361292261+02:00","action":"edit","task_id":49,"detail":"Renewal invoice output and pay-link settling an unpaid invoice on Stripe and Paddle"}
+{"timestamp":"2026-08-05T12:48:15.367430101+02:00","action":"release","task_id":49,"detail":"quiet-basin"}
+{"timestamp":"2026-08-05T12:48:41.219568925+02:00","action":"move","task_id":50,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-05T12:51:18.635873551+02:00","action":"edit","task_id":19,"detail":"SLT Renewal Price Step: prove the $5 -\u003e $20 crossover lands on renewal #2, not renewal #3"}
+{"timestamp":"2026-08-05T13:08:47.177847305+02:00","action":"edit","task_id":19,"detail":"SLT Renewal Price Step: prove the $5 -\u003e $20 crossover lands on renewal #2, not renewal #3"}
+{"timestamp":"2026-08-05T13:10:10.034465097+02:00","action":"edit","task_id":50,"detail":"Quantity 3 on a subscription line — assert order total, _quantity, unit _recurring_amount and the renewal amount"}
+{"timestamp":"2026-08-05T13:10:10.034765234+02:00","action":"release","task_id":50,"detail":"quiet-basin"}
+{"timestamp":"2026-08-05T13:18:52.549984541+02:00","action":"edit","task_id":19,"detail":"SLT Renewal Price Step: prove the $5 -\u003e $20 crossover lands on renewal #2, not renewal #3"}
+{"timestamp":"2026-08-05T13:33:10.792789355+02:00","action":"edit","task_id":19,"detail":"SLT Renewal Price Step: prove the $5 -\u003e $20 crossover lands on renewal #2, not renewal #3"}
+{"timestamp":"2026-08-05T13:40:41.721479077+02:00","action":"edit","task_id":19,"detail":"SLT Renewal Price Step: prove the $5 -\u003e $20 crossover lands on renewal #2, not renewal #3"}
+{"timestamp":"2026-08-05T13:50:15.566747661+02:00","action":"edit","task_id":19,"detail":"SLT Renewal Price Step: prove the $5 -\u003e $20 crossover lands on renewal #2, not renewal #3"}
+{"timestamp":"2026-08-05T13:50:16.133659267+02:00","action":"edit","task_id":19,"detail":"SLT Renewal Price Step: prove the $5 -\u003e $20 crossover lands on renewal #2, not renewal #3"}
+{"timestamp":"2026-08-05T13:50:16.134079219+02:00","action":"release","task_id":19,"detail":"sleet-wing"}
+{"timestamp":"2026-08-05T13:50:37.75244505+02:00","action":"move","task_id":51,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-05T14:02:47.903461096+02:00","action":"move","task_id":33,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-05T14:06:57.090435057+02:00","action":"edit","task_id":33,"detail":"First renewal declines on SLT Retry Daily: order failed, subscription stays active, retry #1 queued +24h"}
+{"timestamp":"2026-08-05T14:06:57.205972793+02:00","action":"move","task_id":33,"detail":"in-progress -\u003e review"}
+{"timestamp":"2026-08-05T14:07:15.23342878+02:00","action":"move","task_id":33,"detail":"review -\u003e done"}
+{"timestamp":"2026-08-05T14:07:15.76216093+02:00","action":"edit","task_id":33,"detail":"First renewal declines on SLT Retry Daily: order failed, subscription stays active, retry #1 queued +24h"}
+{"timestamp":"2026-08-05T14:07:15.763441362+02:00","action":"release","task_id":33,"detail":"sleet-wing"}
+{"timestamp":"2026-08-05T14:35:27.852234564+02:00","action":"edit","task_id":4,"detail":"SLT Fixed Three Cycles to its natural end: two renewals, expiry at the final charge, expired mail, no expiring-soon"}
+{"timestamp":"2026-08-05T14:35:27.866937318+02:00","action":"edit","task_id":16,"detail":"SLTPCT20REC 20% recurring coupon on block checkout - discounted first charge, discount persists to every renewal"}
+{"timestamp":"2026-08-05T14:35:27.870383214+02:00","action":"edit","task_id":17,"detail":"SLTFIX5FIRST $5 fixed one-time coupon on classic checkout - first order discounted, first renewal at full price"}
+{"timestamp":"2026-08-05T14:35:27.873970874+02:00","action":"edit","task_id":19,"detail":"SLT Renewal Price Step: prove the $5 -\u003e $20 crossover lands on renewal #2, not renewal #3"}
+{"timestamp":"2026-08-05T14:35:27.889110128+02:00","action":"edit","task_id":42,"detail":"Paddle sandbox subscription renews unattended — establish Paddle-side vs site-side driver"}
+{"timestamp":"2026-08-05T14:35:27.89147714+02:00","action":"edit","task_id":49,"detail":"Renewal invoice output and pay-link settling an unpaid invoice on Stripe and Paddle"}
+{"timestamp":"2026-08-05T14:35:27.893820886+02:00","action":"edit","task_id":50,"detail":"Quantity 3 on a subscription line — assert order total, _quantity, unit _recurring_amount and the renewal amount"}
+{"timestamp":"2026-08-05T14:35:28.076473532+02:00","action":"move","task_id":4,"detail":"in-progress -\u003e todo"}
+{"timestamp":"2026-08-05T14:35:28.077974593+02:00","action":"move","task_id":16,"detail":"in-progress -\u003e todo"}
+{"timestamp":"2026-08-05T14:35:28.08355655+02:00","action":"move","task_id":17,"detail":"in-progress -\u003e todo"}
+{"timestamp":"2026-08-05T14:35:28.085230263+02:00","action":"move","task_id":19,"detail":"in-progress -\u003e todo"}
+{"timestamp":"2026-08-05T14:35:28.086997547+02:00","action":"move","task_id":42,"detail":"in-progress -\u003e todo"}
+{"timestamp":"2026-08-05T14:35:28.088022403+02:00","action":"move","task_id":49,"detail":"in-progress -\u003e todo"}
+{"timestamp":"2026-08-05T14:35:28.08921503+02:00","action":"move","task_id":50,"detail":"in-progress -\u003e todo"}
+{"timestamp":"2026-08-05T14:35:28.194123263+02:00","action":"edit","task_id":51,"detail":"SLTNOSUB rejected on a subscription-only classic cart - exact message, mixed-cart partial discount, undiscounted renewal"}
+{"timestamp":"2026-08-05T14:35:28.19449256+02:00","action":"release","task_id":51,"detail":"flare-arch"}
+{"timestamp":"2026-08-05T14:35:28.368411921+02:00","action":"move","task_id":51,"detail":"in-progress -\u003e todo"}
+{"timestamp":"2026-08-05T14:35:43.399875041+02:00","action":"move","task_id":51,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-05T14:36:14.655462281+02:00","action":"move","task_id":62,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-05T14:38:00.125021429+02:00","action":"edit","task_id":51,"detail":"SLTNOSUB rejected on a subscription-only classic cart - exact message, mixed-cart partial discount, undiscounted renewal"}
+{"timestamp":"2026-08-05T14:38:00.592014473+02:00","action":"edit","task_id":51,"detail":"SLTNOSUB rejected on a subscription-only classic cart - exact message, mixed-cart partial discount, undiscounted renewal"}
+{"timestamp":"2026-08-05T14:38:00.59243216+02:00","action":"release","task_id":51,"detail":"sleet-wing"}
+{"timestamp":"2026-08-05T14:40:58.38945562+02:00","action":"move","task_id":4,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-05T14:40:58.595148852+02:00","action":"edit","task_id":4,"detail":"SLT Fixed Three Cycles to its natural end: two renewals, expiry at the final charge, expired mail, no expiring-soon"}
+{"timestamp":"2026-08-05T14:40:58.59549272+02:00","action":"release","task_id":4,"detail":"sleet-wing"}
+{"timestamp":"2026-08-05T14:40:58.756516183+02:00","action":"move","task_id":16,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-05T14:40:58.885811277+02:00","action":"edit","task_id":16,"detail":"SLTPCT20REC 20% recurring coupon on block checkout - discounted first charge, discount persists to every renewal"}
+{"timestamp":"2026-08-05T14:40:58.889445974+02:00","action":"release","task_id":16,"detail":"sleet-wing"}
+{"timestamp":"2026-08-05T14:40:59.07331986+02:00","action":"move","task_id":17,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-05T14:40:59.173281187+02:00","action":"edit","task_id":17,"detail":"SLTFIX5FIRST $5 fixed one-time coupon on classic checkout - first order discounted, first renewal at full price"}
+{"timestamp":"2026-08-05T14:40:59.173626209+02:00","action":"release","task_id":17,"detail":"sleet-wing"}
+{"timestamp":"2026-08-05T14:40:59.263240518+02:00","action":"move","task_id":19,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-05T14:40:59.424827918+02:00","action":"edit","task_id":19,"detail":"SLT Renewal Price Step: prove the $5 -\u003e $20 crossover lands on renewal #2, not renewal #3"}
+{"timestamp":"2026-08-05T14:40:59.429963276+02:00","action":"release","task_id":19,"detail":"sleet-wing"}
+{"timestamp":"2026-08-05T14:40:59.799367247+02:00","action":"move","task_id":42,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-05T14:41:00.676939587+02:00","action":"edit","task_id":42,"detail":"Paddle sandbox subscription renews unattended — establish Paddle-side vs site-side driver"}
+{"timestamp":"2026-08-05T14:41:00.698732023+02:00","action":"release","task_id":42,"detail":"sleet-wing"}
+{"timestamp":"2026-08-05T14:41:01.086896473+02:00","action":"move","task_id":49,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-05T14:41:01.473377794+02:00","action":"edit","task_id":49,"detail":"Renewal invoice output and pay-link settling an unpaid invoice on Stripe and Paddle"}
+{"timestamp":"2026-08-05T14:41:01.473882662+02:00","action":"release","task_id":49,"detail":"sleet-wing"}
+{"timestamp":"2026-08-05T14:41:01.778470247+02:00","action":"move","task_id":50,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-05T14:41:01.982771381+02:00","action":"edit","task_id":50,"detail":"Quantity 3 on a subscription line — assert order total, _quantity, unit _recurring_amount and the renewal amount"}
+{"timestamp":"2026-08-05T14:41:01.983329559+02:00","action":"release","task_id":50,"detail":"sleet-wing"}
+{"timestamp":"2026-08-05T14:45:12.836884884+02:00","action":"edit","task_id":4,"detail":"SLT Fixed Three Cycles to its natural end: two renewals, expiry at the final charge, expired mail, no expiring-soon"}
+{"timestamp":"2026-08-05T14:45:12.837287984+02:00","action":"claim","task_id":4,"detail":"sleet-wing"}
+{"timestamp":"2026-08-05T14:45:12.952864236+02:00","action":"edit","task_id":4,"detail":"SLT Fixed Three Cycles to its natural end: two renewals, expiry at the final charge, expired mail, no expiring-soon"}
+{"timestamp":"2026-08-05T14:45:12.953202835+02:00","action":"release","task_id":4,"detail":"sleet-wing"}
+{"timestamp":"2026-08-05T14:45:13.13232238+02:00","action":"edit","task_id":16,"detail":"SLTPCT20REC 20% recurring coupon on block checkout - discounted first charge, discount persists to every renewal"}
+{"timestamp":"2026-08-05T14:45:13.132953313+02:00","action":"claim","task_id":16,"detail":"sleet-wing"}
+{"timestamp":"2026-08-05T14:45:13.402615688+02:00","action":"edit","task_id":16,"detail":"SLTPCT20REC 20% recurring coupon on block checkout - discounted first charge, discount persists to every renewal"}
+{"timestamp":"2026-08-05T14:45:13.403097854+02:00","action":"release","task_id":16,"detail":"sleet-wing"}
+{"timestamp":"2026-08-05T14:45:13.517201929+02:00","action":"edit","task_id":17,"detail":"SLTFIX5FIRST $5 fixed one-time coupon on classic checkout - first order discounted, first renewal at full price"}
+{"timestamp":"2026-08-05T14:45:13.51761611+02:00","action":"claim","task_id":17,"detail":"sleet-wing"}
+{"timestamp":"2026-08-05T14:45:13.95813219+02:00","action":"edit","task_id":17,"detail":"SLTFIX5FIRST $5 fixed one-time coupon on classic checkout - first order discounted, first renewal at full price"}
+{"timestamp":"2026-08-05T14:45:13.958567199+02:00","action":"release","task_id":17,"detail":"sleet-wing"}
+{"timestamp":"2026-08-05T14:45:14.149645297+02:00","action":"edit","task_id":19,"detail":"SLT Renewal Price Step: prove the $5 -\u003e $20 crossover lands on renewal #2, not renewal #3"}
+{"timestamp":"2026-08-05T14:45:14.15004464+02:00","action":"claim","task_id":19,"detail":"sleet-wing"}
+{"timestamp":"2026-08-05T14:45:14.623101783+02:00","action":"edit","task_id":19,"detail":"SLT Renewal Price Step: prove the $5 -\u003e $20 crossover lands on renewal #2, not renewal #3"}
+{"timestamp":"2026-08-05T14:45:14.623528356+02:00","action":"release","task_id":19,"detail":"sleet-wing"}
+{"timestamp":"2026-08-05T14:45:14.810728964+02:00","action":"edit","task_id":42,"detail":"Paddle sandbox subscription renews unattended — establish Paddle-side vs site-side driver"}
+{"timestamp":"2026-08-05T14:45:14.811079126+02:00","action":"claim","task_id":42,"detail":"sleet-wing"}
+{"timestamp":"2026-08-05T14:45:14.96887764+02:00","action":"edit","task_id":42,"detail":"Paddle sandbox subscription renews unattended — establish Paddle-side vs site-side driver"}
+{"timestamp":"2026-08-05T14:45:14.969250182+02:00","action":"release","task_id":42,"detail":"sleet-wing"}
+{"timestamp":"2026-08-05T14:45:15.239196505+02:00","action":"edit","task_id":49,"detail":"Renewal invoice output and pay-link settling an unpaid invoice on Stripe and Paddle"}
+{"timestamp":"2026-08-05T14:45:15.239593152+02:00","action":"claim","task_id":49,"detail":"sleet-wing"}
+{"timestamp":"2026-08-05T14:45:15.496358807+02:00","action":"edit","task_id":49,"detail":"Renewal invoice output and pay-link settling an unpaid invoice on Stripe and Paddle"}
+{"timestamp":"2026-08-05T14:45:15.497945467+02:00","action":"release","task_id":49,"detail":"sleet-wing"}
+{"timestamp":"2026-08-05T14:45:15.729812782+02:00","action":"edit","task_id":50,"detail":"Quantity 3 on a subscription line — assert order total, _quantity, unit _recurring_amount and the renewal amount"}
+{"timestamp":"2026-08-05T14:45:15.730369478+02:00","action":"claim","task_id":50,"detail":"sleet-wing"}
+{"timestamp":"2026-08-05T14:45:15.950386881+02:00","action":"edit","task_id":50,"detail":"Quantity 3 on a subscription line — assert order total, _quantity, unit _recurring_amount and the renewal amount"}
+{"timestamp":"2026-08-05T14:45:15.952766505+02:00","action":"release","task_id":50,"detail":"sleet-wing"}
+{"timestamp":"2026-08-05T15:00:53.592261871+02:00","action":"edit","task_id":62,"detail":"Quantity 3 on a segment-2 prorated first charge: prove the proration multiplies per unit"}
+{"timestamp":"2026-08-05T15:00:53.733372647+02:00","action":"edit","task_id":62,"detail":"Quantity 3 on a segment-2 prorated first charge: prove the proration multiplies per unit"}
+{"timestamp":"2026-08-05T15:00:53.733811532+02:00","action":"release","task_id":62,"detail":"isle-port"}
+{"timestamp":"2026-08-05T15:00:54.141022136+02:00","action":"move","task_id":62,"detail":"in-progress -\u003e todo"}
+{"timestamp":"2026-08-05T15:01:10.740085551+02:00","action":"edit","task_id":4,"detail":"SLT Fixed Three Cycles to its natural end: two renewals, expiry at the final charge, expired mail, no expiring-soon"}
+{"timestamp":"2026-08-05T15:01:10.743299302+02:00","action":"edit","task_id":16,"detail":"SLTPCT20REC 20% recurring coupon on block checkout - discounted first charge, discount persists to every renewal"}
+{"timestamp":"2026-08-05T15:01:10.74890664+02:00","action":"edit","task_id":17,"detail":"SLTFIX5FIRST $5 fixed one-time coupon on classic checkout - first order discounted, first renewal at full price"}
+{"timestamp":"2026-08-05T15:01:10.764910083+02:00","action":"edit","task_id":19,"detail":"SLT Renewal Price Step: prove the $5 -\u003e $20 crossover lands on renewal #2, not renewal #3"}
+{"timestamp":"2026-08-05T15:01:10.767288712+02:00","action":"edit","task_id":42,"detail":"Paddle sandbox subscription renews unattended — establish Paddle-side vs site-side driver"}
+{"timestamp":"2026-08-05T15:01:10.768914613+02:00","action":"edit","task_id":49,"detail":"Renewal invoice output and pay-link settling an unpaid invoice on Stripe and Paddle"}
+{"timestamp":"2026-08-05T15:01:10.778385329+02:00","action":"edit","task_id":50,"detail":"Quantity 3 on a subscription line — assert order total, _quantity, unit _recurring_amount and the renewal amount"}
+{"timestamp":"2026-08-05T15:01:10.807053081+02:00","action":"edit","task_id":51,"detail":"SLTNOSUB rejected on a subscription-only classic cart - exact message, mixed-cart partial discount, undiscounted renewal"}
+{"timestamp":"2026-08-05T15:01:11.879624384+02:00","action":"move","task_id":4,"detail":"in-progress -\u003e todo"}
+{"timestamp":"2026-08-05T15:01:11.880895706+02:00","action":"move","task_id":16,"detail":"in-progress -\u003e todo"}
+{"timestamp":"2026-08-05T15:01:11.881982705+02:00","action":"move","task_id":17,"detail":"in-progress -\u003e todo"}
+{"timestamp":"2026-08-05T15:01:11.883136548+02:00","action":"move","task_id":19,"detail":"in-progress -\u003e todo"}
+{"timestamp":"2026-08-05T15:01:11.886407856+02:00","action":"move","task_id":42,"detail":"in-progress -\u003e todo"}
+{"timestamp":"2026-08-05T15:01:11.889273811+02:00","action":"move","task_id":49,"detail":"in-progress -\u003e todo"}
+{"timestamp":"2026-08-05T15:01:11.892894859+02:00","action":"move","task_id":50,"detail":"in-progress -\u003e todo"}
+{"timestamp":"2026-08-05T15:01:11.894044054+02:00","action":"move","task_id":51,"detail":"in-progress -\u003e todo"}
+{"timestamp":"2026-08-05T15:01:45.930658977+02:00","action":"move","task_id":47,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-05T15:09:29.671058639+02:00","action":"edit","task_id":47,"detail":"Admin-create a subscription for slt-admincreated and prove it renews unassisted"}
+{"timestamp":"2026-08-05T15:09:30.005294856+02:00","action":"edit","task_id":47,"detail":"Admin-create a subscription for slt-admincreated and prove it renews unassisted"}
+{"timestamp":"2026-08-05T15:09:30.005760121+02:00","action":"release","task_id":47,"detail":"isle-port"}
+{"timestamp":"2026-08-05T15:09:30.231072669+02:00","action":"move","task_id":47,"detail":"in-progress -\u003e todo"}
+{"timestamp":"2026-08-05T15:09:48.632247939+02:00","action":"move","task_id":55,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-05T15:14:29.16972907+02:00","action":"edit","task_id":55,"detail":"Toggle the Subscription On Hold customer email OFF, prove silence, restore ON, prove delivery"}
+{"timestamp":"2026-08-05T15:18:38.664436922+02:00","action":"move","task_id":53,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-05T15:22:44.576245124+02:00","action":"move","task_id":57,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-05T15:29:18.621230227+02:00","action":"move","task_id":4,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-05T15:29:18.622923748+02:00","action":"move","task_id":16,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-05T15:29:18.624141583+02:00","action":"move","task_id":17,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-05T15:29:18.626055976+02:00","action":"move","task_id":19,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-05T15:29:18.629452276+02:00","action":"move","task_id":29,"detail":"done -\u003e in-progress"}
+{"timestamp":"2026-08-05T15:29:18.63098596+02:00","action":"move","task_id":42,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-05T15:29:18.633226379+02:00","action":"move","task_id":47,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-05T15:29:18.634330222+02:00","action":"move","task_id":49,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-05T15:29:18.635808092+02:00","action":"move","task_id":50,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-05T15:29:18.636853057+02:00","action":"move","task_id":51,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-05T15:29:18.638244616+02:00","action":"move","task_id":62,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-05T15:30:48.051112402+02:00","action":"edit","task_id":4,"detail":"SLT Fixed Three Cycles to its natural end: two renewals, expiry at the final charge, expired mail, no expiring-soon"}
+{"timestamp":"2026-08-05T15:30:48.599362849+02:00","action":"edit","task_id":16,"detail":"SLTPCT20REC 20% recurring coupon on block checkout - discounted first charge, discount persists to every renewal"}
+{"timestamp":"2026-08-05T15:30:49.812969764+02:00","action":"edit","task_id":17,"detail":"SLTFIX5FIRST $5 fixed one-time coupon on classic checkout - first order discounted, first renewal at full price"}
+{"timestamp":"2026-08-05T15:30:50.349049314+02:00","action":"edit","task_id":19,"detail":"SLT Renewal Price Step: prove the $5 -\u003e $20 crossover lands on renewal #2, not renewal #3"}
+{"timestamp":"2026-08-05T15:30:50.999045453+02:00","action":"edit","task_id":29,"detail":"Paddle sandbox purchase: SLT Paddle Daily via overlay, webhook-paid order, next_billed_at override"}
+{"timestamp":"2026-08-05T15:30:51.389079248+02:00","action":"edit","task_id":42,"detail":"Paddle sandbox subscription renews unattended — establish Paddle-side vs site-side driver"}
+{"timestamp":"2026-08-05T15:30:51.950039476+02:00","action":"edit","task_id":47,"detail":"Admin-create a subscription for slt-admincreated and prove it renews unassisted"}
+{"timestamp":"2026-08-05T15:30:52.578909668+02:00","action":"edit","task_id":49,"detail":"Renewal invoice output and pay-link settling an unpaid invoice on Stripe and Paddle"}
+{"timestamp":"2026-08-05T15:30:53.148433706+02:00","action":"edit","task_id":50,"detail":"Quantity 3 on a subscription line — assert order total, _quantity, unit _recurring_amount and the renewal amount"}
+{"timestamp":"2026-08-05T15:30:54.012687458+02:00","action":"edit","task_id":51,"detail":"SLTNOSUB rejected on a subscription-only classic cart - exact message, mixed-cart partial discount, undiscounted renewal"}
+{"timestamp":"2026-08-05T15:30:54.458660693+02:00","action":"edit","task_id":62,"detail":"Quantity 3 on a segment-2 prorated first charge: prove the proration multiplies per unit"}
+{"timestamp":"2026-08-05T15:32:37.93793493+02:00","action":"move","task_id":54,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-05T15:43:33.650881109+02:00","action":"move","task_id":55,"detail":"in-progress -\u003e review"}
+{"timestamp":"2026-08-05T15:43:33.651571743+02:00","action":"handoff","task_id":55,"detail":"Toggle the Subscription On Hold customer email OFF, prove silence, restore ON, prove delivery"}
+{"timestamp":"2026-08-05T15:43:34.228230577+02:00","action":"move","task_id":55,"detail":"review -\u003e done"}
+{"timestamp":"2026-08-05T15:45:12.867942283+02:00","action":"move","task_id":4,"detail":"in-progress -\u003e todo"}
+{"timestamp":"2026-08-05T15:45:13.169141213+02:00","action":"move","task_id":16,"detail":"in-progress -\u003e todo"}
+{"timestamp":"2026-08-05T15:45:13.483147726+02:00","action":"move","task_id":17,"detail":"in-progress -\u003e todo"}
+{"timestamp":"2026-08-05T15:45:13.897949015+02:00","action":"move","task_id":19,"detail":"in-progress -\u003e todo"}
+{"timestamp":"2026-08-05T15:45:14.308962562+02:00","action":"move","task_id":29,"detail":"in-progress -\u003e todo"}
+{"timestamp":"2026-08-05T15:45:14.830104496+02:00","action":"move","task_id":42,"detail":"in-progress -\u003e todo"}
+{"timestamp":"2026-08-05T15:45:15.061640929+02:00","action":"move","task_id":47,"detail":"in-progress -\u003e todo"}
+{"timestamp":"2026-08-05T15:45:15.377303171+02:00","action":"move","task_id":49,"detail":"in-progress -\u003e todo"}
+{"timestamp":"2026-08-05T15:45:15.571812686+02:00","action":"move","task_id":50,"detail":"in-progress -\u003e todo"}
+{"timestamp":"2026-08-05T15:45:15.858927567+02:00","action":"move","task_id":51,"detail":"in-progress -\u003e todo"}
+{"timestamp":"2026-08-05T15:45:16.021512002+02:00","action":"move","task_id":62,"detail":"in-progress -\u003e todo"}
+{"timestamp":"2026-08-05T15:45:16.68880776+02:00","action":"move","task_id":53,"detail":"in-progress -\u003e todo"}
+{"timestamp":"2026-08-05T15:45:16.844573796+02:00","action":"move","task_id":57,"detail":"in-progress -\u003e todo"}
+{"timestamp":"2026-08-05T16:12:20.514851643+02:00","action":"edit","task_id":54,"detail":"On-hold, pending-cancellation and cancelled emails through real status transitions"}
+{"timestamp":"2026-08-05T16:12:30.072469826+02:00","action":"edit","task_id":54,"detail":"On-hold, pending-cancellation and cancelled emails through real status transitions"}
+{"timestamp":"2026-08-05T16:12:30.072859771+02:00","action":"release","task_id":54,"detail":"lotus-falcon"}
+{"timestamp":"2026-08-05T16:13:52.394902978+02:00","action":"move","task_id":56,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-05T16:24:18.601426481+02:00","action":"move","task_id":56,"detail":"in-progress -\u003e blocked"}
+{"timestamp":"2026-08-05T16:27:04.092630146+02:00","action":"edit","task_id":56,"detail":"Override subject, heading and content on New Subscription with merge tags and prove real-value rendering"}
+{"timestamp":"2026-08-05T16:27:04.09370234+02:00","action":"claim","task_id":56,"detail":"lotus-falcon"}
+{"timestamp":"2026-08-05T16:28:11.686394355+02:00","action":"move","task_id":49,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-05T16:30:01.826130663+02:00","action":"edit","task_id":49,"detail":"Renewal invoice output and pay-link settling an unpaid invoice on Stripe and Paddle"}
+{"timestamp":"2026-08-05T16:30:21.63224301+02:00","action":"move","task_id":49,"detail":"in-progress -\u003e todo"}
+{"timestamp":"2026-08-05T16:30:21.825455226+02:00","action":"edit","task_id":49,"detail":"Renewal invoice output and pay-link settling an unpaid invoice on Stripe and Paddle"}
+{"timestamp":"2026-08-05T16:30:21.825750376+02:00","action":"release","task_id":49,"detail":"shade-cedar"}
+{"timestamp":"2026-08-05T16:36:16.557542347+02:00","action":"edit","task_id":57,"detail":"Reconcile the full Mailpit set for one SLT Daily Core renewal — no double-send, nothing missing"}
+{"timestamp":"2026-08-05T16:36:16.794694159+02:00","action":"edit","task_id":53,"detail":"Payment received email after real unattended renewals on Stripe and Paddle"}
+{"timestamp":"2026-08-05T16:41:47.906656279+02:00","action":"move","task_id":48,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-05T16:41:55.754897636+02:00","action":"edit","task_id":4,"detail":"SLT Fixed Three Cycles to its natural end: two renewals, expiry at the final charge, expired mail, no expiring-soon"}
+{"timestamp":"2026-08-05T16:41:56.105822573+02:00","action":"edit","task_id":16,"detail":"SLTPCT20REC 20% recurring coupon on block checkout - discounted first charge, discount persists to every renewal"}
+{"timestamp":"2026-08-05T16:41:56.31567916+02:00","action":"edit","task_id":17,"detail":"SLTFIX5FIRST $5 fixed one-time coupon on classic checkout - first order discounted, first renewal at full price"}
+{"timestamp":"2026-08-05T16:41:56.529315763+02:00","action":"edit","task_id":19,"detail":"SLT Renewal Price Step: prove the $5 -\u003e $20 crossover lands on renewal #2, not renewal #3"}
+{"timestamp":"2026-08-05T16:41:56.668039147+02:00","action":"edit","task_id":29,"detail":"Paddle sandbox purchase: SLT Paddle Daily via overlay, webhook-paid order, next_billed_at override"}
+{"timestamp":"2026-08-05T16:41:56.796726631+02:00","action":"edit","task_id":42,"detail":"Paddle sandbox subscription renews unattended — establish Paddle-side vs site-side driver"}
+{"timestamp":"2026-08-05T16:41:57.225923487+02:00","action":"edit","task_id":47,"detail":"Admin-create a subscription for slt-admincreated and prove it renews unassisted"}
+{"timestamp":"2026-08-05T16:41:57.397946759+02:00","action":"edit","task_id":49,"detail":"Renewal invoice output and pay-link settling an unpaid invoice on Stripe and Paddle"}
+{"timestamp":"2026-08-05T16:41:57.769029722+02:00","action":"edit","task_id":50,"detail":"Quantity 3 on a subscription line — assert order total, _quantity, unit _recurring_amount and the renewal amount"}
+{"timestamp":"2026-08-05T16:41:58.000684589+02:00","action":"edit","task_id":51,"detail":"SLTNOSUB rejected on a subscription-only classic cart - exact message, mixed-cart partial discount, undiscounted renewal"}
+{"timestamp":"2026-08-05T16:41:58.101812709+02:00","action":"edit","task_id":54,"detail":"On-hold, pending-cancellation and cancelled emails through real status transitions"}
+{"timestamp":"2026-08-05T16:41:58.206146707+02:00","action":"edit","task_id":62,"detail":"Quantity 3 on a segment-2 prorated first charge: prove the proration multiplies per unit"}
+{"timestamp":"2026-08-05T16:46:07.806368082+02:00","action":"edit","task_id":56,"detail":"Override subject, heading and content on New Subscription with merge tags and prove real-value rendering"}
+{"timestamp":"2026-08-05T16:46:56.283287551+02:00","action":"edit","task_id":4,"detail":"SLT Fixed Three Cycles to its natural end: two renewals, expiry at the final charge, expired mail, no expiring-soon"}
+{"timestamp":"2026-08-05T16:46:56.466416131+02:00","action":"edit","task_id":16,"detail":"SLTPCT20REC 20% recurring coupon on block checkout - discounted first charge, discount persists to every renewal"}
+{"timestamp":"2026-08-05T16:46:56.478503532+02:00","action":"edit","task_id":17,"detail":"SLTFIX5FIRST $5 fixed one-time coupon on classic checkout - first order discounted, first renewal at full price"}
+{"timestamp":"2026-08-05T16:46:56.484492366+02:00","action":"edit","task_id":19,"detail":"SLT Renewal Price Step: prove the $5 -\u003e $20 crossover lands on renewal #2, not renewal #3"}
+{"timestamp":"2026-08-05T16:46:56.492135878+02:00","action":"edit","task_id":29,"detail":"Paddle sandbox purchase: SLT Paddle Daily via overlay, webhook-paid order, next_billed_at override"}
+{"timestamp":"2026-08-05T16:46:56.509386948+02:00","action":"edit","task_id":42,"detail":"Paddle sandbox subscription renews unattended — establish Paddle-side vs site-side driver"}
+{"timestamp":"2026-08-05T16:46:56.518832083+02:00","action":"edit","task_id":47,"detail":"Admin-create a subscription for slt-admincreated and prove it renews unassisted"}
+{"timestamp":"2026-08-05T16:46:56.523877831+02:00","action":"edit","task_id":49,"detail":"Renewal invoice output and pay-link settling an unpaid invoice on Stripe and Paddle"}
+{"timestamp":"2026-08-05T16:46:56.526522132+02:00","action":"edit","task_id":50,"detail":"Quantity 3 on a subscription line — assert order total, _quantity, unit _recurring_amount and the renewal amount"}
+{"timestamp":"2026-08-05T16:46:56.533037003+02:00","action":"edit","task_id":51,"detail":"SLTNOSUB rejected on a subscription-only classic cart - exact message, mixed-cart partial discount, undiscounted renewal"}
+{"timestamp":"2026-08-05T16:46:56.536432842+02:00","action":"edit","task_id":54,"detail":"On-hold, pending-cancellation and cancelled emails through real status transitions"}
+{"timestamp":"2026-08-05T16:46:56.547038356+02:00","action":"edit","task_id":62,"detail":"Quantity 3 on a segment-2 prorated first charge: prove the proration multiplies per unit"}
+{"timestamp":"2026-08-05T16:47:22.651424759+02:00","action":"move","task_id":4,"detail":"in-progress -\u003e todo"}
+{"timestamp":"2026-08-05T16:47:22.660828426+02:00","action":"move","task_id":16,"detail":"in-progress -\u003e todo"}
+{"timestamp":"2026-08-05T16:47:22.662822357+02:00","action":"move","task_id":17,"detail":"in-progress -\u003e todo"}
+{"timestamp":"2026-08-05T16:47:22.663956097+02:00","action":"move","task_id":19,"detail":"in-progress -\u003e todo"}
+{"timestamp":"2026-08-05T16:47:22.665976817+02:00","action":"move","task_id":29,"detail":"in-progress -\u003e todo"}
+{"timestamp":"2026-08-05T16:47:22.667673663+02:00","action":"move","task_id":42,"detail":"in-progress -\u003e todo"}
+{"timestamp":"2026-08-05T16:47:22.669088987+02:00","action":"move","task_id":47,"detail":"in-progress -\u003e todo"}
+{"timestamp":"2026-08-05T16:47:22.671211497+02:00","action":"move","task_id":49,"detail":"in-progress -\u003e todo"}
+{"timestamp":"2026-08-05T16:47:22.764654043+02:00","action":"move","task_id":50,"detail":"in-progress -\u003e todo"}
+{"timestamp":"2026-08-05T16:47:22.766026747+02:00","action":"move","task_id":51,"detail":"in-progress -\u003e todo"}
+{"timestamp":"2026-08-05T16:47:22.768591238+02:00","action":"move","task_id":54,"detail":"in-progress -\u003e todo"}
+{"timestamp":"2026-08-05T16:47:22.769618931+02:00","action":"move","task_id":62,"detail":"in-progress -\u003e todo"}
+{"timestamp":"2026-08-05T16:47:22.89665279+02:00","action":"move","task_id":53,"detail":"in-progress -\u003e todo"}
+{"timestamp":"2026-08-05T16:47:22.89990965+02:00","action":"move","task_id":56,"detail":"in-progress -\u003e todo"}
+{"timestamp":"2026-08-05T16:47:22.901787244+02:00","action":"move","task_id":57,"detail":"in-progress -\u003e todo"}
+{"timestamp":"2026-08-05T16:47:41.942514738+02:00","action":"edit","task_id":53,"detail":"Payment received email after real unattended renewals on Stripe and Paddle"}
+{"timestamp":"2026-08-05T16:47:41.961881563+02:00","action":"release","task_id":53,"detail":"lotus-falcon"}
+{"timestamp":"2026-08-05T16:47:41.984320364+02:00","action":"edit","task_id":56,"detail":"Override subject, heading and content on New Subscription with merge tags and prove real-value rendering"}
+{"timestamp":"2026-08-05T16:47:41.995451636+02:00","action":"release","task_id":56,"detail":"lotus-falcon"}
+{"timestamp":"2026-08-05T16:47:42.028821215+02:00","action":"edit","task_id":57,"detail":"Reconcile the full Mailpit set for one SLT Daily Core renewal — no double-send, nothing missing"}
+{"timestamp":"2026-08-05T16:47:42.029488317+02:00","action":"release","task_id":57,"detail":"lotus-falcon"}
+{"timestamp":"2026-08-05T16:54:10.338634174+02:00","action":"edit","task_id":48,"detail":"Renewal orders are correctly typed and linked to the parent subscription (HPOS)"}
+{"timestamp":"2026-08-05T16:54:10.502019679+02:00","action":"move","task_id":48,"detail":"in-progress -\u003e todo"}
+{"timestamp":"2026-08-05T16:54:10.756528847+02:00","action":"edit","task_id":48,"detail":"Renewal orders are correctly typed and linked to the parent subscription (HPOS)"}
+{"timestamp":"2026-08-05T16:54:10.75688579+02:00","action":"release","task_id":48,"detail":"shade-cedar"}
+{"timestamp":"2026-08-05T16:54:38.579891276+02:00","action":"move","task_id":56,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-05T17:11:12.952528013+02:00","action":"edit","task_id":56,"detail":"Override subject, heading and content on New Subscription with merge tags and prove real-value rendering"}
+{"timestamp":"2026-08-05T17:11:13.066353082+02:00","action":"edit","task_id":56,"detail":"Override subject, heading and content on New Subscription with merge tags and prove real-value rendering"}
+{"timestamp":"2026-08-05T17:11:13.066813168+02:00","action":"release","task_id":56,"detail":"shade-cedar"}
+{"timestamp":"2026-08-05T17:11:13.227450503+02:00","action":"move","task_id":56,"detail":"in-progress -\u003e done"}
+{"timestamp":"2026-08-05T17:12:35.018407857+02:00","action":"move","task_id":57,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-05T17:16:03.406663852+02:00","action":"edit","task_id":56,"detail":"Override subject, heading and content on New Subscription with merge tags and prove real-value rendering"}
+{"timestamp":"2026-08-05T17:16:03.468972704+02:00","action":"claim","task_id":56,"detail":"lotus-falcon"}
+{"timestamp":"2026-08-05T17:26:03.200250874+02:00","action":"edit","task_id":4,"detail":"SLT Fixed Three Cycles to its natural end: two renewals, expiry at the final charge, expired mail, no expiring-soon"}
+{"timestamp":"2026-08-05T17:26:03.397123025+02:00","action":"edit","task_id":16,"detail":"SLTPCT20REC 20% recurring coupon on block checkout - discounted first charge, discount persists to every renewal"}
+{"timestamp":"2026-08-05T17:26:03.73487787+02:00","action":"edit","task_id":17,"detail":"SLTFIX5FIRST $5 fixed one-time coupon on classic checkout - first order discounted, first renewal at full price"}
+{"timestamp":"2026-08-05T17:26:04.433845805+02:00","action":"edit","task_id":19,"detail":"SLT Renewal Price Step: prove the $5 -\u003e $20 crossover lands on renewal #2, not renewal #3"}
+{"timestamp":"2026-08-05T17:26:04.640039114+02:00","action":"edit","task_id":29,"detail":"Paddle sandbox purchase: SLT Paddle Daily via overlay, webhook-paid order, next_billed_at override"}
+{"timestamp":"2026-08-05T17:26:04.767886162+02:00","action":"edit","task_id":42,"detail":"Paddle sandbox subscription renews unattended — establish Paddle-side vs site-side driver"}
+{"timestamp":"2026-08-05T17:26:04.864824556+02:00","action":"edit","task_id":47,"detail":"Admin-create a subscription for slt-admincreated and prove it renews unassisted"}
+{"timestamp":"2026-08-05T17:26:04.999718943+02:00","action":"edit","task_id":48,"detail":"Renewal orders are correctly typed and linked to the parent subscription (HPOS)"}
+{"timestamp":"2026-08-05T17:26:05.45040524+02:00","action":"edit","task_id":49,"detail":"Renewal invoice output and pay-link settling an unpaid invoice on Stripe and Paddle"}
+{"timestamp":"2026-08-05T17:26:05.76043728+02:00","action":"edit","task_id":50,"detail":"Quantity 3 on a subscription line — assert order total, _quantity, unit _recurring_amount and the renewal amount"}
+{"timestamp":"2026-08-05T17:26:06.242181386+02:00","action":"edit","task_id":51,"detail":"SLTNOSUB rejected on a subscription-only classic cart - exact message, mixed-cart partial discount, undiscounted renewal"}
+{"timestamp":"2026-08-05T17:26:06.949428674+02:00","action":"edit","task_id":53,"detail":"Payment received email after real unattended renewals on Stripe and Paddle"}
+{"timestamp":"2026-08-05T17:26:06.950104702+02:00","action":"claim","task_id":53,"detail":"lotus-falcon"}
+{"timestamp":"2026-08-05T17:26:07.507496984+02:00","action":"edit","task_id":54,"detail":"On-hold, pending-cancellation and cancelled emails through real status transitions"}
+{"timestamp":"2026-08-05T17:26:07.786194518+02:00","action":"edit","task_id":62,"detail":"Quantity 3 on a segment-2 prorated first charge: prove the proration multiplies per unit"}
+{"timestamp":"2026-08-05T17:39:05.979056714+02:00","action":"move","task_id":4,"detail":"in-progress -\u003e todo"}
+{"timestamp":"2026-08-05T17:39:05.987418893+02:00","action":"move","task_id":16,"detail":"in-progress -\u003e todo"}
+{"timestamp":"2026-08-05T17:39:06.000767179+02:00","action":"move","task_id":17,"detail":"in-progress -\u003e todo"}
+{"timestamp":"2026-08-05T17:39:06.002051725+02:00","action":"move","task_id":19,"detail":"in-progress -\u003e todo"}
+{"timestamp":"2026-08-05T17:39:06.003218812+02:00","action":"move","task_id":42,"detail":"in-progress -\u003e todo"}
+{"timestamp":"2026-08-05T17:39:06.005556092+02:00","action":"move","task_id":48,"detail":"in-progress -\u003e todo"}
+{"timestamp":"2026-08-05T17:39:06.008017453+02:00","action":"move","task_id":49,"detail":"in-progress -\u003e todo"}
+{"timestamp":"2026-08-05T17:39:06.019890393+02:00","action":"move","task_id":50,"detail":"in-progress -\u003e todo"}
+{"timestamp":"2026-08-05T17:39:06.021334212+02:00","action":"move","task_id":51,"detail":"in-progress -\u003e todo"}
+{"timestamp":"2026-08-05T17:39:06.022841709+02:00","action":"move","task_id":54,"detail":"in-progress -\u003e todo"}
+{"timestamp":"2026-08-05T17:39:06.023825057+02:00","action":"move","task_id":62,"detail":"in-progress -\u003e todo"}
+{"timestamp":"2026-08-05T17:39:06.316103873+02:00","action":"move","task_id":29,"detail":"in-progress -\u003e done"}
+{"timestamp":"2026-08-05T17:39:06.31748721+02:00","action":"move","task_id":47,"detail":"in-progress -\u003e done"}
+{"timestamp":"2026-08-05T17:39:35.107908512+02:00","action":"move","task_id":53,"detail":"in-progress -\u003e todo"}
+{"timestamp":"2026-08-05T17:42:58.981146623+02:00","action":"edit","task_id":57,"detail":"Reconcile the full Mailpit set for one SLT Daily Core renewal — no double-send, nothing missing"}
+{"timestamp":"2026-08-05T17:42:59.190819699+02:00","action":"move","task_id":57,"detail":"in-progress -\u003e done"}
+{"timestamp":"2026-08-05T17:42:59.308017539+02:00","action":"move","task_id":17,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-05T17:44:25.941262323+02:00","action":"edit","task_id":4,"detail":"SLT Fixed Three Cycles to its natural end: two renewals, expiry at the final charge, expired mail, no expiring-soon"}
+{"timestamp":"2026-08-05T17:44:26.127646441+02:00","action":"edit","task_id":16,"detail":"SLTPCT20REC 20% recurring coupon on block checkout - discounted first charge, discount persists to every renewal"}
+{"timestamp":"2026-08-05T17:44:26.382524434+02:00","action":"edit","task_id":19,"detail":"SLT Renewal Price Step: prove the $5 -\u003e $20 crossover lands on renewal #2, not renewal #3"}
+{"timestamp":"2026-08-05T17:44:26.590864031+02:00","action":"edit","task_id":29,"detail":"Paddle sandbox purchase: SLT Paddle Daily via overlay, webhook-paid order, next_billed_at override"}
+{"timestamp":"2026-08-05T17:44:26.737684089+02:00","action":"edit","task_id":42,"detail":"Paddle sandbox subscription renews unattended — establish Paddle-side vs site-side driver"}
+{"timestamp":"2026-08-05T17:44:27.217819693+02:00","action":"edit","task_id":47,"detail":"Admin-create a subscription for slt-admincreated and prove it renews unassisted"}
+{"timestamp":"2026-08-05T17:44:27.97041679+02:00","action":"edit","task_id":48,"detail":"Renewal orders are correctly typed and linked to the parent subscription (HPOS)"}
+{"timestamp":"2026-08-05T17:44:28.760007184+02:00","action":"edit","task_id":49,"detail":"Renewal invoice output and pay-link settling an unpaid invoice on Stripe and Paddle"}
+{"timestamp":"2026-08-05T17:44:29.01854788+02:00","action":"edit","task_id":50,"detail":"Quantity 3 on a subscription line — assert order total, _quantity, unit _recurring_amount and the renewal amount"}
+{"timestamp":"2026-08-05T17:44:29.418893687+02:00","action":"edit","task_id":51,"detail":"SLTNOSUB rejected on a subscription-only classic cart - exact message, mixed-cart partial discount, undiscounted renewal"}
+{"timestamp":"2026-08-05T17:44:29.864939406+02:00","action":"edit","task_id":54,"detail":"On-hold, pending-cancellation and cancelled emails through real status transitions"}
+{"timestamp":"2026-08-05T17:44:29.983902534+02:00","action":"edit","task_id":62,"detail":"Quantity 3 on a segment-2 prorated first charge: prove the proration multiplies per unit"}
+{"timestamp":"2026-08-05T17:49:00.745725161+02:00","action":"edit","task_id":17,"detail":"SLTFIX5FIRST $5 fixed one-time coupon on classic checkout - first order discounted, first renewal at full price"}
+{"timestamp":"2026-08-05T17:55:08.190457316+02:00","action":"edit","task_id":17,"detail":"SLTFIX5FIRST $5 fixed one-time coupon on classic checkout - first order discounted, first renewal at full price"}
+{"timestamp":"2026-08-05T17:55:08.289015681+02:00","action":"move","task_id":17,"detail":"in-progress -\u003e done"}
+{"timestamp":"2026-08-05T17:55:28.163386992+02:00","action":"move","task_id":4,"detail":"in-progress -\u003e todo"}
+{"timestamp":"2026-08-05T17:55:28.164878692+02:00","action":"move","task_id":19,"detail":"in-progress -\u003e todo"}
+{"timestamp":"2026-08-05T17:55:28.166065166+02:00","action":"move","task_id":42,"detail":"in-progress -\u003e todo"}
+{"timestamp":"2026-08-05T17:55:28.167432004+02:00","action":"move","task_id":48,"detail":"in-progress -\u003e todo"}
+{"timestamp":"2026-08-05T17:55:28.168678068+02:00","action":"move","task_id":49,"detail":"in-progress -\u003e todo"}
+{"timestamp":"2026-08-05T17:55:28.169821722+02:00","action":"move","task_id":50,"detail":"in-progress -\u003e todo"}
+{"timestamp":"2026-08-05T17:55:28.173039227+02:00","action":"move","task_id":51,"detail":"in-progress -\u003e todo"}
+{"timestamp":"2026-08-05T17:55:28.174800828+02:00","action":"move","task_id":54,"detail":"in-progress -\u003e todo"}
+{"timestamp":"2026-08-05T17:55:28.192140938+02:00","action":"move","task_id":62,"detail":"in-progress -\u003e todo"}
+{"timestamp":"2026-08-05T17:55:28.793752406+02:00","action":"move","task_id":29,"detail":"in-progress -\u003e done"}
+{"timestamp":"2026-08-05T17:55:28.795814705+02:00","action":"move","task_id":47,"detail":"in-progress -\u003e done"}
+{"timestamp":"2026-08-05T18:23:08.5893185+02:00","action":"edit","task_id":16,"detail":"SLTPCT20REC 20% recurring coupon on block checkout - discounted first charge, discount persists to every renewal"}
+{"timestamp":"2026-08-05T18:23:08.594731059+02:00","action":"claim","task_id":16,"detail":"brew-willow"}
+{"timestamp":"2026-08-05T18:29:54.698855388+02:00","action":"edit","task_id":16,"detail":"SLTPCT20REC 20% recurring coupon on block checkout - discounted first charge, discount persists to every renewal"}
+{"timestamp":"2026-08-05T18:29:55.151620433+02:00","action":"move","task_id":16,"detail":"in-progress -\u003e done"}
+{"timestamp":"2026-08-05T18:32:18.427060997+02:00","action":"move","task_id":52,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-05T18:47:54.231467343+02:00","action":"edit","task_id":52,"detail":"Renewal ALERT: prove the 3-day upcoming-renewal reminder fires once, on the right subscription, and never twice"}
+{"timestamp":"2026-08-05T18:51:05.557580159+02:00","action":"edit","task_id":52,"detail":"Renewal ALERT: prove the 3-day upcoming-renewal reminder fires once, on the right subscription, and never twice"}
+{"timestamp":"2026-08-05T18:54:55.725134438+02:00","action":"edit","task_id":52,"detail":"Renewal ALERT: prove the 3-day upcoming-renewal reminder fires once, on the right subscription, and never twice"}
+{"timestamp":"2026-08-05T18:55:31.703633227+02:00","action":"edit","task_id":52,"detail":"Renewal ALERT: prove the 3-day upcoming-renewal reminder fires once, on the right subscription, and never twice"}
+{"timestamp":"2026-08-05T18:56:14.328538616+02:00","action":"edit","task_id":52,"detail":"Renewal ALERT: prove the 3-day upcoming-renewal reminder fires once, on the right subscription, and never twice"}
+{"timestamp":"2026-08-05T20:46:33.565576115+02:00","action":"move","task_id":52,"detail":"in-progress -\u003e review"}
+{"timestamp":"2026-08-05T20:46:33.565899376+02:00","action":"edit","task_id":52,"detail":"Renewal ALERT: prove the 3-day upcoming-renewal reminder fires once, on the right subscription, and never twice"}
+{"timestamp":"2026-08-05T20:46:34.110929544+02:00","action":"move","task_id":52,"detail":"in-progress -\u003e done"}
+{"timestamp":"2026-08-05T20:47:06.610138958+02:00","action":"move","task_id":4,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-05T20:47:32.981475504+02:00","action":"move","task_id":4,"detail":"in-progress -\u003e todo"}
+{"timestamp":"2026-08-05T20:48:49.850750431+02:00","action":"move","task_id":53,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-05T20:49:43.924159154+02:00","action":"move","task_id":53,"detail":"in-progress -\u003e todo"}
+{"timestamp":"2026-08-05T20:56:04.431939402+02:00","action":"edit","task_id":34,"detail":"Trial started, trial-ending at days_before=3 and trial converted on SLT Trial Four Day"}
+{"timestamp":"2026-08-05T20:56:04.433451554+02:00","action":"claim","task_id":34,"detail":"root"}
+{"timestamp":"2026-08-05T20:56:04.638980537+02:00","action":"move","task_id":34,"detail":"todo -\u003e review"}
+{"timestamp":"2026-08-05T20:56:04.814069905+02:00","action":"move","task_id":34,"detail":"review -\u003e done"}
+{"timestamp":"2026-08-05T20:56:54.886992123+02:00","action":"edit","task_id":43,"detail":"Stripe SCA renewal observation: verify SLT-CHK-05 requires_action email and pay link"}
+{"timestamp":"2026-08-05T20:56:54.887434245+02:00","action":"claim","task_id":43,"detail":"root"}
+{"timestamp":"2026-08-05T20:56:54.999039248+02:00","action":"move","task_id":43,"detail":"todo -\u003e review"}
+{"timestamp":"2026-08-05T20:56:55.21041232+02:00","action":"move","task_id":43,"detail":"review -\u003e done"}
+{"timestamp":"2026-08-05T21:02:04.231938434+02:00","action":"edit","task_id":41,"detail":"Second unassisted renewal of the same subscription — schedule re-arms at the same offset, no drift"}
+{"timestamp":"2026-08-05T21:02:04.240519262+02:00","action":"claim","task_id":41,"detail":"root"}
+{"timestamp":"2026-08-05T21:02:04.710365197+02:00","action":"move","task_id":41,"detail":"todo -\u003e review"}
+{"timestamp":"2026-08-05T21:02:04.940190053+02:00","action":"move","task_id":41,"detail":"review -\u003e done"}
+{"timestamp":"2026-08-05T21:02:05.312727257+02:00","action":"edit","task_id":30,"detail":"Classic checkout with Stripe SCA card: 3DS at signup, then requires_action on the off-session renewal"}
+{"timestamp":"2026-08-05T21:02:05.313802336+02:00","action":"claim","task_id":30,"detail":"root"}
+{"timestamp":"2026-08-05T21:02:05.574908225+02:00","action":"move","task_id":30,"detail":"todo -\u003e review"}
+{"timestamp":"2026-08-05T21:02:05.894259702+02:00","action":"move","task_id":30,"detail":"review -\u003e done"}
+{"timestamp":"2026-08-05T21:02:06.352588809+02:00","action":"edit","task_id":31,"detail":"Complete both $0.00-today trial checkouts: card still collected, first real charge scheduled"}
+{"timestamp":"2026-08-05T21:02:06.352980708+02:00","action":"claim","task_id":31,"detail":"root"}
+{"timestamp":"2026-08-05T21:02:06.836857155+02:00","action":"move","task_id":31,"detail":"todo -\u003e review"}
+{"timestamp":"2026-08-05T21:02:07.164910343+02:00","action":"move","task_id":31,"detail":"review -\u003e done"}
+{"timestamp":"2026-08-05T21:04:15.538027254+02:00","action":"edit","task_id":32,"detail":"SLTREC3 vs SLTREC3NOINIT on block checkout - N-cycle counting and the exact renewal where the discount stops"}
+{"timestamp":"2026-08-05T21:04:15.538524626+02:00","action":"claim","task_id":32,"detail":"root"}
+{"timestamp":"2026-08-05T21:04:15.782648738+02:00","action":"move","task_id":32,"detail":"todo -\u003e review"}
+{"timestamp":"2026-08-05T21:04:15.925081817+02:00","action":"move","task_id":32,"detail":"review -\u003e done"}
+{"timestamp":"2026-08-05T21:04:16.159921826+02:00","action":"edit","task_id":35,"detail":"UTC+6 midnight-boundary renewal: date correctness in admin, portal, email and order"}
+{"timestamp":"2026-08-05T21:04:16.160348016+02:00","action":"claim","task_id":35,"detail":"root"}
+{"timestamp":"2026-08-05T21:04:16.540742413+02:00","action":"move","task_id":35,"detail":"todo -\u003e review"}
+{"timestamp":"2026-08-05T21:04:16.706463196+02:00","action":"move","task_id":35,"detail":"review -\u003e done"}
+{"timestamp":"2026-08-05T21:05:24.886591644+02:00","action":"edit","task_id":45,"detail":"Segment 2 prorate: prove the arithmetic to the cent on week and month cycles"}
+{"timestamp":"2026-08-05T21:05:24.887083576+02:00","action":"claim","task_id":45,"detail":"root"}
+{"timestamp":"2026-08-05T21:05:25.037868663+02:00","action":"move","task_id":45,"detail":"todo -\u003e review"}
+{"timestamp":"2026-08-05T21:05:25.164874243+02:00","action":"move","task_id":45,"detail":"review -\u003e done"}
+{"timestamp":"2026-08-05T21:05:25.484773968+02:00","action":"edit","task_id":46,"detail":"Variation-level flexible sync: prove the purchased variation's segment plan wins over a parent decoy"}
+{"timestamp":"2026-08-05T21:05:25.48524394+02:00","action":"claim","task_id":46,"detail":"root"}
+{"timestamp":"2026-08-05T21:05:25.976367103+02:00","action":"move","task_id":46,"detail":"todo -\u003e review"}
+{"timestamp":"2026-08-05T21:05:26.205153125+02:00","action":"move","task_id":46,"detail":"review -\u003e done"}
+{"timestamp":"2026-08-05T21:06:44.963426328+02:00","action":"edit","task_id":36,"detail":"Member access reacting to status: pro_member add/remove across active-on-hold-cancelled, My Features entitlements, SLT URL gate"}
+{"timestamp":"2026-08-05T21:06:44.964026+02:00","action":"claim","task_id":36,"detail":"root"}
+{"timestamp":"2026-08-05T21:06:45.177416332+02:00","action":"move","task_id":36,"detail":"todo -\u003e review"}
+{"timestamp":"2026-08-05T21:06:45.262490255+02:00","action":"move","task_id":36,"detail":"review -\u003e done"}
+{"timestamp":"2026-08-05T21:07:18.131700484+02:00","action":"edit","task_id":66,"detail":"Grace phase 1: active to on-hold one day after the due date, with the customer-only on-hold email"}
+{"timestamp":"2026-08-05T21:07:18.14362404+02:00","action":"claim","task_id":66,"detail":"root"}
+{"timestamp":"2026-08-05T21:07:18.658618085+02:00","action":"move","task_id":66,"detail":"todo -\u003e review"}
+{"timestamp":"2026-08-05T21:07:18.931600499+02:00","action":"move","task_id":66,"detail":"review -\u003e done"}
+{"timestamp":"2026-08-05T21:07:19.209392429+02:00","action":"edit","task_id":81,"detail":"Retry attempts 2 and 3 reuse the same failed order, then the 4th charge hits the 3-retry cap"}
+{"timestamp":"2026-08-05T21:07:19.210096685+02:00","action":"claim","task_id":81,"detail":"root"}
+{"timestamp":"2026-08-05T21:07:19.349613447+02:00","action":"move","task_id":81,"detail":"todo -\u003e review"}
+{"timestamp":"2026-08-05T21:07:19.681541329+02:00","action":"move","task_id":81,"detail":"review -\u003e done"}
+{"timestamp":"2026-08-05T21:07:19.941918472+02:00","action":"edit","task_id":82,"detail":"Payment failed: one customer + one admin email per retry attempt, and whether the attempt number is visible"}
+{"timestamp":"2026-08-05T21:07:19.942624633+02:00","action":"claim","task_id":82,"detail":"root"}
+{"timestamp":"2026-08-05T21:07:20.113618699+02:00","action":"move","task_id":82,"detail":"todo -\u003e review"}
+{"timestamp":"2026-08-05T21:07:20.284671193+02:00","action":"move","task_id":82,"detail":"review -\u003e done"}
+{"timestamp":"2026-08-05T21:07:20.456186797+02:00","action":"edit","task_id":101,"detail":"Grace phase 2: terminal cancellation three days after the hold, with customer and admin cancel emails"}
+{"timestamp":"2026-08-05T21:07:20.457677944+02:00","action":"claim","task_id":101,"detail":"root"}
+{"timestamp":"2026-08-05T21:07:20.657532096+02:00","action":"move","task_id":101,"detail":"todo -\u003e review"}
+{"timestamp":"2026-08-05T21:07:20.763244518+02:00","action":"move","task_id":101,"detail":"review -\u003e done"}
+{"timestamp":"2026-08-05T21:29:11.418532696+02:00","action":"edit","task_id":76,"detail":"Subscription notes (auto + manual) and the pro Audits screens for a failed renewal"}
+{"timestamp":"2026-08-05T21:29:11.506769167+02:00","action":"move","task_id":76,"detail":"todo -\u003e review"}
+{"timestamp":"2026-08-05T21:29:11.582118955+02:00","action":"move","task_id":76,"detail":"review -\u003e done"}
+{"timestamp":"2026-08-05T21:31:31.132036885+02:00","action":"edit","task_id":109,"detail":"Negative sweep: cancelled gets no reminders, lifetime gets no renewal mail, expired gets no further mail"}
+{"timestamp":"2026-08-05T21:31:31.286112025+02:00","action":"move","task_id":109,"detail":"todo -\u003e review"}
+{"timestamp":"2026-08-05T21:31:31.387596577+02:00","action":"move","task_id":109,"detail":"review -\u003e done"}
+{"timestamp":"2026-08-05T21:36:52.021302825+02:00","action":"edit","task_id":53,"detail":"Payment received email after real unattended renewals on Stripe and Paddle"}
+{"timestamp":"2026-08-05T21:36:52.025072161+02:00","action":"release","task_id":53,"detail":"brew-willow"}
+{"timestamp":"2026-08-05T21:37:49.274774309+02:00","action":"edit","task_id":1,"detail":"Block checkout happy path: slt-core buys SLT Daily Core on Stripe 4242 (control record)"}
+{"timestamp":"2026-08-05T21:37:49.275299018+02:00","action":"release","task_id":1,"detail":"hill-tide"}
+{"timestamp":"2026-08-05T21:37:49.278103938+02:00","action":"edit","task_id":2,"detail":"Classic checkout parity: same SLT Daily Core purchase, meta diffed field-by-field against CHK-01"}
+{"timestamp":"2026-08-05T21:37:49.27900598+02:00","action":"release","task_id":2,"detail":"hill-tide"}
+{"timestamp":"2026-08-05T21:37:49.284778294+02:00","action":"edit","task_id":3,"detail":"Buy SLT Lifetime One Time and prove no renewal is ever scheduled (12-day negative control)"}
+{"timestamp":"2026-08-05T21:37:49.2864817+02:00","action":"release","task_id":3,"detail":"hill-tide"}
+{"timestamp":"2026-08-05T21:37:49.28996234+02:00","action":"edit","task_id":4,"detail":"SLT Fixed Three Cycles to its natural end: two renewals, expiry at the final charge, expired mail, no expiring-soon"}
+{"timestamp":"2026-08-05T21:37:49.290631988+02:00","action":"release","task_id":4,"detail":"brew-willow"}
+{"timestamp":"2026-08-05T21:37:49.293681846+02:00","action":"edit","task_id":13,"detail":"SLT-SYN-01 Audit simple-product Flexible Renewal Sync UI, validation and meta keys"}
+{"timestamp":"2026-08-05T21:37:49.29396848+02:00","action":"release","task_id":13,"detail":"moth-salt"}
+{"timestamp":"2026-08-05T21:37:49.299816815+02:00","action":"edit","task_id":14,"detail":"Segment 1 full: prove the full recurring charge now and the exact next-cycle boundary date"}
+{"timestamp":"2026-08-05T21:37:49.300148694+02:00","action":"release","task_id":14,"detail":"hill-tide"}
+{"timestamp":"2026-08-05T21:37:49.310997244+02:00","action":"edit","task_id":15,"detail":"Guest to new account: block checkout mints slt-guest-d0 mid-flow and owns order + subscription"}
+{"timestamp":"2026-08-05T21:37:49.311490203+02:00","action":"release","task_id":15,"detail":"grain-quick"}
+{"timestamp":"2026-08-05T21:37:49.316286777+02:00","action":"edit","task_id":16,"detail":"SLTPCT20REC 20% recurring coupon on block checkout - discounted first charge, discount persists to every renewal"}
+{"timestamp":"2026-08-05T21:37:49.31661527+02:00","action":"release","task_id":16,"detail":"brew-willow"}
+{"timestamp":"2026-08-05T21:37:49.319210819+02:00","action":"edit","task_id":17,"detail":"SLTFIX5FIRST $5 fixed one-time coupon on classic checkout - first order discounted, first renewal at full price"}
+{"timestamp":"2026-08-05T21:37:49.33459219+02:00","action":"release","task_id":17,"detail":"brew-willow"}
+{"timestamp":"2026-08-05T21:37:49.339162532+02:00","action":"edit","task_id":18,"detail":"Prove new_subscription + admin_new_subscription at a real Stripe block checkout"}
+{"timestamp":"2026-08-05T21:37:49.339522293+02:00","action":"release","task_id":18,"detail":"grain-quick"}
+{"timestamp":"2026-08-05T21:37:49.346868531+02:00","action":"edit","task_id":26,"detail":"SLT-SETUP-05 Verify Paddle sandbox readiness and record the two-gateway capability matrix"}
+{"timestamp":"2026-08-05T21:37:49.347228663+02:00","action":"release","task_id":26,"detail":"root"}
+{"timestamp":"2026-08-05T21:37:49.35346962+02:00","action":"edit","task_id":27,"detail":"SLT-SYN-03 Create the sync-group control product: SLT Sync Global Daily"}
+{"timestamp":"2026-08-05T21:37:49.353953042+02:00","action":"release","task_id":27,"detail":"moth-salt"}
+{"timestamp":"2026-08-05T21:37:49.359345267+02:00","action":"edit","task_id":28,"detail":"Two-active and one-active partitions, and that META_SEG1_END is positional"}
+{"timestamp":"2026-08-05T21:37:49.35980302+02:00","action":"release","task_id":28,"detail":"grain-quick"}
+{"timestamp":"2026-08-05T21:37:49.364723926+02:00","action":"edit","task_id":30,"detail":"Classic checkout with Stripe SCA card: 3DS at signup, then requires_action on the off-session renewal"}
+{"timestamp":"2026-08-05T21:37:49.365268982+02:00","action":"release","task_id":30,"detail":"root"}
+{"timestamp":"2026-08-05T21:37:49.368803913+02:00","action":"edit","task_id":31,"detail":"Complete both $0.00-today trial checkouts: card still collected, first real charge scheduled"}
+{"timestamp":"2026-08-05T21:37:49.369302593+02:00","action":"release","task_id":31,"detail":"root"}
+{"timestamp":"2026-08-05T21:37:49.374699568+02:00","action":"edit","task_id":32,"detail":"SLTREC3 vs SLTREC3NOINIT on block checkout - N-cycle counting and the exact renewal where the discount stops"}
+{"timestamp":"2026-08-05T21:37:49.3809972+02:00","action":"release","task_id":32,"detail":"root"}
+{"timestamp":"2026-08-05T21:37:49.402434324+02:00","action":"edit","task_id":34,"detail":"Trial started, trial-ending at days_before=3 and trial converted on SLT Trial Four Day"}
+{"timestamp":"2026-08-05T21:37:49.402814122+02:00","action":"release","task_id":34,"detail":"root"}
+{"timestamp":"2026-08-05T21:37:49.429434259+02:00","action":"edit","task_id":35,"detail":"UTC+6 midnight-boundary renewal: date correctness in admin, portal, email and order"}
+{"timestamp":"2026-08-05T21:37:49.431068577+02:00","action":"release","task_id":35,"detail":"root"}
+{"timestamp":"2026-08-05T21:37:49.4367657+02:00","action":"edit","task_id":36,"detail":"Member access reacting to status: pro_member add/remove across active-on-hold-cancelled, My Features entitlements, SLT URL gate"}
+{"timestamp":"2026-08-05T21:37:49.438998664+02:00","action":"release","task_id":36,"detail":"root"}
+{"timestamp":"2026-08-05T21:37:49.442880242+02:00","action":"edit","task_id":37,"detail":"SLT-PROD-02 Create SLT Free Signup Daily, the $0.00-today free-signup-then-paid product"}
+{"timestamp":"2026-08-05T21:37:49.443277613+02:00","action":"release","task_id":37,"detail":"quiet-basin"}
+{"timestamp":"2026-08-05T21:37:49.444828274+02:00","action":"edit","task_id":38,"detail":"SLT-PROD-03 Create SLT Trial Four Day, the trial product with an in-window reminder boundary"}
+{"timestamp":"2026-08-05T21:37:49.445103357+02:00","action":"release","task_id":38,"detail":"quiet-basin"}
+{"timestamp":"2026-08-05T21:37:49.446913442+02:00","action":"edit","task_id":40,"detail":"SLT-PROD-15 Create SLT Flex Variable Daily with per-variation flexible-sync configuration"}
+{"timestamp":"2026-08-05T21:37:49.447209154+02:00","action":"release","task_id":40,"detail":"quiet-basin"}
+{"timestamp":"2026-08-05T21:37:49.46338147+02:00","action":"edit","task_id":41,"detail":"Second unassisted renewal of the same subscription — schedule re-arms at the same offset, no drift"}
+{"timestamp":"2026-08-05T21:37:49.473733162+02:00","action":"release","task_id":41,"detail":"root"}
+{"timestamp":"2026-08-05T21:37:49.475937262+02:00","action":"edit","task_id":43,"detail":"Stripe SCA renewal observation: verify SLT-CHK-05 requires_action email and pay link"}
+{"timestamp":"2026-08-05T21:37:49.492738391+02:00","action":"release","task_id":43,"detail":"root"}
+{"timestamp":"2026-08-05T21:37:49.53700293+02:00","action":"edit","task_id":45,"detail":"Segment 2 prorate: prove the arithmetic to the cent on week and month cycles"}
+{"timestamp":"2026-08-05T21:37:49.537427762+02:00","action":"release","task_id":45,"detail":"root"}
+{"timestamp":"2026-08-05T21:37:49.543892276+02:00","action":"edit","task_id":46,"detail":"Variation-level flexible sync: prove the purchased variation's segment plan wins over a parent decoy"}
+{"timestamp":"2026-08-05T21:37:49.54420567+02:00","action":"release","task_id":46,"detail":"root"}
+{"timestamp":"2026-08-05T21:37:49.549215142+02:00","action":"edit","task_id":55,"detail":"Toggle the Subscription On Hold customer email OFF, prove silence, restore ON, prove delivery"}
+{"timestamp":"2026-08-05T21:37:49.549615098+02:00","action":"release","task_id":55,"detail":"isle-port"}
+{"timestamp":"2026-08-05T21:37:49.560324066+02:00","action":"edit","task_id":56,"detail":"Override subject, heading and content on New Subscription with merge tags and prove real-value rendering"}
+{"timestamp":"2026-08-05T21:37:49.560753927+02:00","action":"release","task_id":56,"detail":"lotus-falcon"}
+{"timestamp":"2026-08-05T21:37:49.563400453+02:00","action":"edit","task_id":57,"detail":"Reconcile the full Mailpit set for one SLT Daily Core renewal — no double-send, nothing missing"}
+{"timestamp":"2026-08-05T21:37:49.563694621+02:00","action":"release","task_id":57,"detail":"shade-cedar"}
+{"timestamp":"2026-08-05T21:37:49.567431499+02:00","action":"edit","task_id":66,"detail":"Grace phase 1: active to on-hold one day after the due date, with the customer-only on-hold email"}
+{"timestamp":"2026-08-05T21:37:49.568867156+02:00","action":"release","task_id":66,"detail":"root"}
+{"timestamp":"2026-08-05T21:37:49.574800911+02:00","action":"edit","task_id":81,"detail":"Retry attempts 2 and 3 reuse the same failed order, then the 4th charge hits the 3-retry cap"}
+{"timestamp":"2026-08-05T21:37:49.575306183+02:00","action":"release","task_id":81,"detail":"root"}
+{"timestamp":"2026-08-05T21:37:49.577480898+02:00","action":"edit","task_id":82,"detail":"Payment failed: one customer + one admin email per retry attempt, and whether the attempt number is visible"}
+{"timestamp":"2026-08-05T21:37:49.577768043+02:00","action":"release","task_id":82,"detail":"root"}
+{"timestamp":"2026-08-05T21:37:49.579457664+02:00","action":"edit","task_id":101,"detail":"Grace phase 2: terminal cancellation three days after the hold, with customer and admin cancel emails"}
+{"timestamp":"2026-08-05T21:37:49.580792763+02:00","action":"release","task_id":101,"detail":"root"}
+{"timestamp":"2026-08-05T21:40:02.878127359+02:00","action":"edit","task_id":102,"detail":"Mid-grace recovery: new card in My Account, pay the failed renewal, and prove the next-payment anchor"}
+{"timestamp":"2026-08-05T21:40:04.778730489+02:00","action":"move","task_id":102,"detail":"todo -\u003e review"}
+{"timestamp":"2026-08-05T21:40:05.781368939+02:00","action":"move","task_id":102,"detail":"review -\u003e done"}
+{"timestamp":"2026-08-05T21:40:39.728212322+02:00","action":"edit","task_id":115,"detail":"Capability gating: shop_manager vs editor vs subscriber on every admin surface"}
+{"timestamp":"2026-08-05T21:40:40.067286337+02:00","action":"move","task_id":115,"detail":"todo -\u003e review"}
+{"timestamp":"2026-08-05T21:40:40.257600952+02:00","action":"move","task_id":115,"detail":"review -\u003e done"}
+{"timestamp":"2026-08-06T19:58:42.585488759+02:00","action":"move","task_id":72,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-06T19:59:02.144425897+02:00","action":"edit","task_id":72,"detail":"SLT-SW-00 Seed the plan ladder: slt-switch buys SLT Plan Basic and SLT Plan Pro"}
+{"timestamp":"2026-08-06T19:59:07.707794556+02:00","action":"move","task_id":72,"detail":"in-progress -\u003e todo"}
+{"timestamp":"2026-08-06T19:59:07.967023342+02:00","action":"edit","task_id":72,"detail":"SLT-SW-00 Seed the plan ladder: slt-switch buys SLT Plan Basic and SLT Plan Pro"}
+{"timestamp":"2026-08-06T19:59:07.967533761+02:00","action":"release","task_id":72,"detail":"vale-hull"}
+{"timestamp":"2026-08-06T20:10:30.343156086+02:00","action":"edit","task_id":4,"detail":"SLT Fixed Three Cycles to its natural end: two renewals, expiry at the final charge, expired mail, no expiring-soon"}
+{"timestamp":"2026-08-06T20:10:30.759077996+02:00","action":"move","task_id":4,"detail":"todo -\u003e done"}
+{"timestamp":"2026-08-06T20:10:30.988618158+02:00","action":"edit","task_id":19,"detail":"SLT Renewal Price Step: prove the $5 -\u003e $20 crossover lands on renewal #2, not renewal #3"}
+{"timestamp":"2026-08-06T20:10:31.151986892+02:00","action":"move","task_id":19,"detail":"todo -\u003e done"}
+{"timestamp":"2026-08-06T20:10:31.533061898+02:00","action":"edit","task_id":42,"detail":"Paddle sandbox subscription renews unattended — establish Paddle-side vs site-side driver"}
+{"timestamp":"2026-08-06T20:10:31.798867601+02:00","action":"move","task_id":42,"detail":"todo -\u003e done"}
+{"timestamp":"2026-08-06T20:10:32.111118879+02:00","action":"edit","task_id":48,"detail":"Renewal orders are correctly typed and linked to the parent subscription (HPOS)"}
+{"timestamp":"2026-08-06T20:10:32.379109674+02:00","action":"move","task_id":48,"detail":"todo -\u003e done"}
+{"timestamp":"2026-08-06T20:10:32.675597316+02:00","action":"edit","task_id":50,"detail":"Quantity 3 on a subscription line — assert order total, _quantity, unit _recurring_amount and the renewal amount"}
+{"timestamp":"2026-08-06T20:10:32.899804162+02:00","action":"move","task_id":50,"detail":"todo -\u003e done"}
+{"timestamp":"2026-08-06T20:10:33.366834306+02:00","action":"edit","task_id":51,"detail":"SLTNOSUB rejected on a subscription-only classic cart - exact message, mixed-cart partial discount, undiscounted renewal"}
+{"timestamp":"2026-08-06T20:10:33.718860258+02:00","action":"move","task_id":51,"detail":"todo -\u003e done"}
+{"timestamp":"2026-08-06T20:10:33.93614153+02:00","action":"edit","task_id":53,"detail":"Payment received email after real unattended renewals on Stripe and Paddle"}
+{"timestamp":"2026-08-06T20:10:34.502474145+02:00","action":"move","task_id":53,"detail":"todo -\u003e done"}
+{"timestamp":"2026-08-06T20:10:34.923797816+02:00","action":"edit","task_id":54,"detail":"On-hold, pending-cancellation and cancelled emails through real status transitions"}
+{"timestamp":"2026-08-06T20:10:35.4982421+02:00","action":"move","task_id":54,"detail":"todo -\u003e done"}
+{"timestamp":"2026-08-06T20:15:19.09200138+02:00","action":"edit","task_id":49,"detail":"Renewal invoice output and pay-link settling an unpaid invoice on Stripe and Paddle"}
+{"timestamp":"2026-08-06T20:15:19.313361965+02:00","action":"edit","task_id":63,"detail":"Admin schedule change must reschedule both renewal legs; next-payment-date is API-locked"}
+{"timestamp":"2026-08-06T20:15:19.58039526+02:00","action":"edit","task_id":64,"detail":"Existing active subscriber buys a second, different subscription — auto_migrate_on_checkout is gated off; document what migration would do"}
+{"timestamp":"2026-08-06T20:15:19.860942217+02:00","action":"edit","task_id":65,"detail":"Buy SLT Box Daily through the wizard: contents selection, order lines and box meta on the subscription"}
+{"timestamp":"2026-08-06T20:15:20.315314308+02:00","action":"edit","task_id":67,"detail":"Renewal invoice email: content, UTC+6 due date, and a pay-link that resolves to a real payable order"}
+{"timestamp":"2026-08-06T20:15:20.615067502+02:00","action":"edit","task_id":68,"detail":"Disable all four admin emails, prove admin silence with customer mail unaffected, restore and re-prove"}
+{"timestamp":"2026-08-06T20:15:20.777602115+02:00","action":"edit","task_id":69,"detail":"Concurrent renewals in one Action Scheduler window: no skips, no double charges, offsets stagger"}
+{"timestamp":"2026-08-06T20:15:20.949375746+02:00","action":"edit","task_id":70,"detail":"My Account subscriptions list and detail for slt-core - every field and every self-service action under the frozen baseline"}
+{"timestamp":"2026-08-06T20:15:21.100476133+02:00","action":"edit","task_id":71,"detail":"SLT-PROD-08 Create SLT Variable Daily with four subscription variations incl. a $0 probe"}
+{"timestamp":"2026-08-06T20:15:21.245497368+02:00","action":"edit","task_id":73,"detail":"Retention: accept the 20%-for-3-cycles discount and prove exactly 3 discounted renewals, plus a downgrade offer"}
+{"timestamp":"2026-08-06T20:15:21.39452995+02:00","action":"edit","task_id":74,"detail":"Segment 3 next_cycle: full charge now, first renewal exactly one cycle past segment 1's"}
+{"timestamp":"2026-08-06T20:15:21.598122914+02:00","action":"edit","task_id":75,"detail":"Flexible sync exclusivity negatives: renewal-price, trial and lifetime products refuse the plan even when meta is force-set"}
+{"timestamp":"2026-08-06T20:15:46.870146387+02:00","action":"edit","task_id":67,"detail":"Renewal invoice email: content, UTC+6 due date, and a pay-link that resolves to a real payable order"}
+{"timestamp":"2026-08-06T20:16:03.487751718+02:00","action":"edit","task_id":67,"detail":"Renewal invoice email: content, UTC+6 due date, and a pay-link that resolves to a real payable order"}
+{"timestamp":"2026-08-06T20:16:03.904723228+02:00","action":"edit","task_id":62,"detail":"Quantity 3 on a segment-2 prorated first charge: prove the proration multiplies per unit"}
+{"timestamp":"2026-08-06T20:18:46.882863046+02:00","action":"move","task_id":71,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-06T20:26:49.969638371+02:00","action":"edit","task_id":71,"detail":"SLT-PROD-08 Create SLT Variable Daily with four subscription variations incl. a $0 probe"}
+{"timestamp":"2026-08-06T20:26:50.217492452+02:00","action":"move","task_id":71,"detail":"in-progress -\u003e review"}
+{"timestamp":"2026-08-06T20:26:50.343119165+02:00","action":"move","task_id":71,"detail":"review -\u003e done"}
+{"timestamp":"2026-08-06T20:27:30.027528686+02:00","action":"edit","task_id":79,"detail":"Buy two SLT Variable Daily tiers and prove per-variation config lands on the subscription"}
+{"timestamp":"2026-08-06T20:27:57.836896634+02:00","action":"move","task_id":70,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-06T20:30:05.971974643+02:00","action":"edit","task_id":70,"detail":"My Account subscriptions list and detail for slt-core - every field and every self-service action under the frozen baseline"}
+{"timestamp":"2026-08-06T20:30:06.626638761+02:00","action":"move","task_id":70,"detail":"in-progress -\u003e blocked"}
+{"timestamp":"2026-08-06T20:30:07.165343269+02:00","action":"edit","task_id":70,"detail":"My Account subscriptions list and detail for slt-core - every field and every self-service action under the frozen baseline"}
+{"timestamp":"2026-08-06T20:30:07.166363579+02:00","action":"release","task_id":70,"detail":"wild-timber"}
+{"timestamp":"2026-08-06T20:31:31.161061955+02:00","action":"edit","task_id":70,"detail":"My Account subscriptions list and detail for slt-core - every field and every self-service action under the frozen baseline"}
+{"timestamp":"2026-08-06T20:31:31.79086328+02:00","action":"move","task_id":70,"detail":"blocked -\u003e review"}
+{"timestamp":"2026-08-06T20:31:32.094116835+02:00","action":"move","task_id":70,"detail":"review -\u003e done"}
+{"timestamp":"2026-08-06T20:31:55.984813609+02:00","action":"move","task_id":72,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-06T20:32:39.26515795+02:00","action":"edit","task_id":72,"detail":"SLT-SW-00 Seed the plan ladder: slt-switch buys SLT Plan Basic and SLT Plan Pro"}
+{"timestamp":"2026-08-06T20:32:39.538609749+02:00","action":"move","task_id":72,"detail":"in-progress -\u003e review"}
+{"timestamp":"2026-08-06T20:32:51.609046991+02:00","action":"move","task_id":72,"detail":"review -\u003e done"}
+{"timestamp":"2026-08-06T20:33:40.15262874+02:00","action":"edit","task_id":49,"detail":"Renewal invoice output and pay-link settling an unpaid invoice on Stripe and Paddle"}
+{"timestamp":"2026-08-06T20:33:40.302629968+02:00","action":"edit","task_id":64,"detail":"Existing active subscriber buys a second, different subscription — auto_migrate_on_checkout is gated off; document what migration would do"}
+{"timestamp":"2026-08-06T20:33:40.305251178+02:00","action":"move","task_id":49,"detail":"todo -\u003e review"}
+{"timestamp":"2026-08-06T20:33:40.391008051+02:00","action":"move","task_id":64,"detail":"todo -\u003e review"}
+{"timestamp":"2026-08-06T20:33:40.45780526+02:00","action":"move","task_id":49,"detail":"review -\u003e done"}
+{"timestamp":"2026-08-06T20:33:40.72124951+02:00","action":"move","task_id":64,"detail":"review -\u003e done"}
+{"timestamp":"2026-08-06T20:33:40.726744049+02:00","action":"edit","task_id":63,"detail":"Admin schedule change must reschedule both renewal legs; next-payment-date is API-locked"}
+{"timestamp":"2026-08-06T20:33:40.916155773+02:00","action":"move","task_id":63,"detail":"todo -\u003e review"}
+{"timestamp":"2026-08-06T20:33:40.955638584+02:00","action":"edit","task_id":65,"detail":"Buy SLT Box Daily through the wizard: contents selection, order lines and box meta on the subscription"}
+{"timestamp":"2026-08-06T20:33:41.184804392+02:00","action":"move","task_id":65,"detail":"todo -\u003e review"}
+{"timestamp":"2026-08-06T20:33:41.223545682+02:00","action":"move","task_id":63,"detail":"review -\u003e done"}
+{"timestamp":"2026-08-06T20:33:41.429127718+02:00","action":"edit","task_id":68,"detail":"Disable all four admin emails, prove admin silence with customer mail unaffected, restore and re-prove"}
+{"timestamp":"2026-08-06T20:33:41.461994973+02:00","action":"move","task_id":65,"detail":"review -\u003e done"}
+{"timestamp":"2026-08-06T20:33:41.713062162+02:00","action":"move","task_id":68,"detail":"todo -\u003e review"}
+{"timestamp":"2026-08-06T20:33:41.727563136+02:00","action":"edit","task_id":69,"detail":"Concurrent renewals in one Action Scheduler window: no skips, no double charges, offsets stagger"}
+{"timestamp":"2026-08-06T20:33:41.876360042+02:00","action":"move","task_id":68,"detail":"review -\u003e done"}
+{"timestamp":"2026-08-06T20:33:41.880401075+02:00","action":"move","task_id":69,"detail":"todo -\u003e review"}
+{"timestamp":"2026-08-06T20:33:42.073773742+02:00","action":"move","task_id":69,"detail":"review -\u003e done"}
+{"timestamp":"2026-08-06T20:33:42.075947749+02:00","action":"edit","task_id":73,"detail":"Retention: accept the 20%-for-3-cycles discount and prove exactly 3 discounted renewals, plus a downgrade offer"}
+{"timestamp":"2026-08-06T20:33:42.217522841+02:00","action":"edit","task_id":74,"detail":"Segment 3 next_cycle: full charge now, first renewal exactly one cycle past segment 1's"}
+{"timestamp":"2026-08-06T20:33:42.341140073+02:00","action":"move","task_id":73,"detail":"todo -\u003e review"}
+{"timestamp":"2026-08-06T20:33:42.4361981+02:00","action":"move","task_id":74,"detail":"todo -\u003e review"}
+{"timestamp":"2026-08-06T20:33:42.531055414+02:00","action":"move","task_id":73,"detail":"review -\u003e done"}
+{"timestamp":"2026-08-06T20:33:42.649285116+02:00","action":"move","task_id":74,"detail":"review -\u003e done"}
+{"timestamp":"2026-08-06T20:33:43.048258883+02:00","action":"edit","task_id":75,"detail":"Flexible sync exclusivity negatives: renewal-price, trial and lifetime products refuse the plan even when meta is force-set"}
+{"timestamp":"2026-08-06T20:33:43.27003306+02:00","action":"move","task_id":75,"detail":"todo -\u003e review"}
+{"timestamp":"2026-08-06T20:33:43.585816823+02:00","action":"move","task_id":75,"detail":"review -\u003e done"}
+{"timestamp":"2026-08-06T20:35:21.280409817+02:00","action":"edit","task_id":85,"detail":"Update the Stripe payment method from My Account and prove the next unassisted renewal charges the new card"}
+{"timestamp":"2026-08-06T20:35:21.412094147+02:00","action":"edit","task_id":86,"detail":"Upgrade SLT Plan Basic to SLT Plan Pro on Stripe with prorate_immediately arithmetic"}
+{"timestamp":"2026-08-06T20:35:21.698406481+02:00","action":"edit","task_id":87,"detail":"Mid-cycle Basic→Pro upgrade, then prove the D6 renewal charges $15.00 on the unchanged due date"}
+{"timestamp":"2026-08-06T20:37:10.564301177+02:00","action":"edit","task_id":89,"detail":"Admin status ladder active to on-hold to active to cancelled: emails and scheduler side effects"}
+{"timestamp":"2026-08-06T20:37:11.411143377+02:00","action":"edit","task_id":95,"detail":"Crossgrade SLT Plan Pro to the equal-priced SLT Plan Peer and prove the date does not shift"}
+{"timestamp":"2026-08-06T20:37:12.372041204+02:00","action":"edit","task_id":97,"detail":"Variable-product variation switch (Starter→Plus) plus on-hold and pending-cancellation switch refusals"}
+{"timestamp":"2026-08-06T20:37:26.081535214+02:00","action":"edit","task_id":100,"detail":"Subscriptions list: status tabs, search, gateway filter, columns, pagination, delete guardrails"}
+{"timestamp":"2026-08-06T20:37:26.624280719+02:00","action":"edit","task_id":103,"detail":"Customer view of an unpaid renewal invoice and paying it from the portal before the automatic charge leg"}
+{"timestamp":"2026-08-06T20:38:08.801359018+02:00","action":"edit","task_id":104,"detail":"Admin-side repeat of the Basic to Pro upgrade and record-for-record diff against SLT-SW-01"}
+{"timestamp":"2026-08-06T20:38:09.358602285+02:00","action":"edit","task_id":105,"detail":"Charge a non-zero $7.50 upgrade switch fee on Pro→Enterprise and restore the fee to 0 in-task"}
+{"timestamp":"2026-08-06T20:42:13.224697601+02:00","action":"edit","task_id":111,"detail":"Customer downgrade applies now, and targeted D8 expiry auto-downgrade with its email"}
+{"timestamp":"2026-08-06T20:42:13.41791815+02:00","action":"edit","task_id":107,"detail":"Expired, reactivated and auto-downgrade emails, incl. the expiry-suppression negative"}
+{"timestamp":"2026-08-06T21:07:54.609661445+02:00","action":"move","task_id":83,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-06T21:10:14.432281319+02:00","action":"move","task_id":83,"detail":"in-progress -\u003e todo"}
+{"timestamp":"2026-08-06T21:25:59.270753415+02:00","action":"edit","task_id":84,"detail":"SKIP renewal on S5: one cycle then the max three, with undo, clamp, and the zero-email finding"}
+{"timestamp":"2026-08-06T21:25:59.279129981+02:00","action":"claim","task_id":84,"detail":"snow-rain"}
+{"timestamp":"2026-08-06T21:26:52.104181692+02:00","action":"edit","task_id":84,"detail":"SKIP renewal on S5: one cycle then the max three, with undo, clamp, and the zero-email finding"}
+{"timestamp":"2026-08-06T21:27:05.536037217+02:00","action":"edit","task_id":84,"detail":"SKIP renewal on S5: one cycle then the max three, with undo, clamp, and the zero-email finding"}
+{"timestamp":"2026-08-06T21:27:05.538710736+02:00","action":"release","task_id":84,"detail":"snow-rain"}
+{"timestamp":"2026-08-06T21:27:32.690584793+02:00","action":"edit","task_id":88,"detail":"Gateway gating for flexible sync: Paddle hidden from the DOM and blocked at submit, Stripe syncs to the midnight boundary"}
+{"timestamp":"2026-08-06T21:27:32.691065376+02:00","action":"claim","task_id":88,"detail":"snow-rain"}
+{"timestamp":"2026-08-06T21:29:21.942202007+02:00","action":"edit","task_id":88,"detail":"Gateway gating for flexible sync: Paddle hidden from the DOM and blocked at submit, Stripe syncs to the midnight boundary"}
+{"timestamp":"2026-08-06T21:29:31.710406824+02:00","action":"edit","task_id":88,"detail":"Gateway gating for flexible sync: Paddle hidden from the DOM and blocked at submit, Stripe syncs to the midnight boundary"}
+{"timestamp":"2026-08-06T21:29:31.711580374+02:00","action":"release","task_id":88,"detail":"snow-rain"}
+{"timestamp":"2026-08-06T21:32:16.779748412+02:00","action":"edit","task_id":77,"detail":"Two different subscription products in one cart must be rejected — capture the exact string on every add-to-cart surface"}
+{"timestamp":"2026-08-06T21:32:16.782977993+02:00","action":"claim","task_id":77,"detail":"snow-rain"}
+{"timestamp":"2026-08-06T21:32:17.104018845+02:00","action":"edit","task_id":77,"detail":"Two different subscription products in one cart must be rejected — capture the exact string on every add-to-cart surface"}
+{"timestamp":"2026-08-06T21:32:17.672311588+02:00","action":"edit","task_id":77,"detail":"Two different subscription products in one cart must be rejected — capture the exact string on every add-to-cart surface"}
+{"timestamp":"2026-08-06T21:32:17.672799156+02:00","action":"release","task_id":77,"detail":"snow-rain"}
+{"timestamp":"2026-08-06T21:32:17.934057788+02:00","action":"edit","task_id":78,"detail":"Anonymous guest checkout of a non-subscription cart must still work — forced registration is scoped to subscription carts only"}
+{"timestamp":"2026-08-06T21:32:17.934868287+02:00","action":"claim","task_id":78,"detail":"snow-rain"}
+{"timestamp":"2026-08-06T21:32:18.271774159+02:00","action":"edit","task_id":78,"detail":"Anonymous guest checkout of a non-subscription cart must still work — forced registration is scoped to subscription carts only"}
+{"timestamp":"2026-08-06T21:32:18.526701163+02:00","action":"edit","task_id":78,"detail":"Anonymous guest checkout of a non-subscription cart must still work — forced registration is scoped to subscription carts only"}
+{"timestamp":"2026-08-06T21:32:18.527307753+02:00","action":"release","task_id":78,"detail":"snow-rain"}
+{"timestamp":"2026-08-06T21:32:18.934966856+02:00","action":"edit","task_id":80,"detail":"EXPLORATORY: SLT Grouped Set rendering, add-to-cart probes, and one order through the grouped form"}
+{"timestamp":"2026-08-06T21:32:18.936914731+02:00","action":"claim","task_id":80,"detail":"snow-rain"}
+{"timestamp":"2026-08-06T21:32:19.099522582+02:00","action":"edit","task_id":80,"detail":"EXPLORATORY: SLT Grouped Set rendering, add-to-cart probes, and one order through the grouped form"}
+{"timestamp":"2026-08-06T21:32:19.208393085+02:00","action":"edit","task_id":80,"detail":"EXPLORATORY: SLT Grouped Set rendering, add-to-cart probes, and one order through the grouped form"}
+{"timestamp":"2026-08-06T21:32:19.210599141+02:00","action":"release","task_id":80,"detail":"snow-rain"}
+{"timestamp":"2026-08-06T21:33:41.498712146+02:00","action":"edit","task_id":62,"detail":"Quantity 3 on a segment-2 prorated first charge: prove the proration multiplies per unit"}
+{"timestamp":"2026-08-06T21:33:41.501474037+02:00","action":"claim","task_id":62,"detail":"snow-rain"}
+{"timestamp":"2026-08-06T21:33:41.667609774+02:00","action":"edit","task_id":62,"detail":"Quantity 3 on a segment-2 prorated first charge: prove the proration multiplies per unit"}
+{"timestamp":"2026-08-06T21:33:41.963270877+02:00","action":"edit","task_id":62,"detail":"Quantity 3 on a segment-2 prorated first charge: prove the proration multiplies per unit"}
+{"timestamp":"2026-08-06T21:33:41.965560929+02:00","action":"release","task_id":62,"detail":"snow-rain"}
+{"timestamp":"2026-08-06T21:34:20.120667766+02:00","action":"edit","task_id":67,"detail":"Renewal invoice email: content, UTC+6 due date, and a pay-link that resolves to a real payable order"}
+{"timestamp":"2026-08-06T21:34:20.135747406+02:00","action":"claim","task_id":67,"detail":"snow-rain"}
+{"timestamp":"2026-08-06T21:34:20.542290777+02:00","action":"edit","task_id":67,"detail":"Renewal invoice email: content, UTC+6 due date, and a pay-link that resolves to a real payable order"}
+{"timestamp":"2026-08-06T21:34:20.732845963+02:00","action":"edit","task_id":67,"detail":"Renewal invoice email: content, UTC+6 due date, and a pay-link that resolves to a real payable order"}
+{"timestamp":"2026-08-06T21:34:20.734079578+02:00","action":"release","task_id":67,"detail":"snow-rain"}
+{"timestamp":"2026-08-06T21:45:38.032188404+02:00","action":"edit","task_id":83,"detail":"Webhook replay idempotency: one Stripe and one Paddle renewal event, no duplicates"}
+{"timestamp":"2026-08-06T21:45:38.032924363+02:00","action":"claim","task_id":83,"detail":"snow-rain"}
+{"timestamp":"2026-08-06T21:46:01.778037196+02:00","action":"edit","task_id":83,"detail":"Webhook replay idempotency: one Stripe and one Paddle renewal event, no duplicates"}
+{"timestamp":"2026-08-06T21:46:02.334045636+02:00","action":"edit","task_id":83,"detail":"Webhook replay idempotency: one Stripe and one Paddle renewal event, no duplicates"}
+{"timestamp":"2026-08-06T21:46:02.337756698+02:00","action":"release","task_id":83,"detail":"snow-rain"}
+{"timestamp":"2026-08-06T21:47:00.919725034+02:00","action":"edit","task_id":83,"detail":"Webhook replay idempotency: one Stripe and one Paddle renewal event, no duplicates"}
+{"timestamp":"2026-08-06T21:47:00.922514931+02:00","action":"claim","task_id":83,"detail":"snow-rain"}
+{"timestamp":"2026-08-06T21:47:20.607922038+02:00","action":"edit","task_id":83,"detail":"Webhook replay idempotency: one Stripe and one Paddle renewal event, no duplicates"}
+{"timestamp":"2026-08-06T21:47:21.032821032+02:00","action":"edit","task_id":83,"detail":"Webhook replay idempotency: one Stripe and one Paddle renewal event, no duplicates"}
+{"timestamp":"2026-08-06T21:47:21.033304841+02:00","action":"release","task_id":83,"detail":"snow-rain"}
+{"timestamp":"2026-08-06T21:48:48.4934084+02:00","action":"edit","task_id":83,"detail":"Webhook replay idempotency: one Stripe and one Paddle renewal event, no duplicates"}
+{"timestamp":"2026-08-06T21:48:48.493923638+02:00","action":"claim","task_id":83,"detail":"snow-rain"}
+{"timestamp":"2026-08-06T21:49:04.140744017+02:00","action":"edit","task_id":83,"detail":"Webhook replay idempotency: one Stripe and one Paddle renewal event, no duplicates"}
+{"timestamp":"2026-08-06T21:49:04.377044716+02:00","action":"edit","task_id":83,"detail":"Webhook replay idempotency: one Stripe and one Paddle renewal event, no duplicates"}
+{"timestamp":"2026-08-06T21:49:04.377657816+02:00","action":"release","task_id":83,"detail":"snow-rain"}
+{"timestamp":"2026-08-06T22:00:15.566326656+02:00","action":"move","task_id":83,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-06T22:03:54.909398373+02:00","action":"edit","task_id":83,"detail":"Webhook replay idempotency: one Stripe and one Paddle renewal event, no duplicates"}
+{"timestamp":"2026-08-06T22:03:55.244268217+02:00","action":"edit","task_id":83,"detail":"Webhook replay idempotency: one Stripe and one Paddle renewal event, no duplicates"}
+{"timestamp":"2026-08-06T22:03:55.24715832+02:00","action":"release","task_id":83,"detail":"rust-bolt"}
+{"timestamp":"2026-08-06T22:03:55.37677056+02:00","action":"move","task_id":83,"detail":"in-progress -\u003e todo"}
+{"timestamp":"2026-08-06T22:21:01.239571513+02:00","action":"edit","task_id":98,"detail":"Pending cancellation with a required reason and declined offers, then customer reactivation"}
+{"timestamp":"2026-08-06T22:21:02.002210855+02:00","action":"edit","task_id":99,"detail":"Calendar overflow on the month flex product: the 31st day is absorbed into the last active segment"}
+{"timestamp":"2026-08-06T22:22:49.870112788+02:00","action":"edit","task_id":77,"detail":"Two different subscription products in one cart must be rejected — capture the exact string on every add-to-cart surface"}
+{"timestamp":"2026-08-06T22:22:49.971198214+02:00","action":"edit","task_id":78,"detail":"Anonymous guest checkout of a non-subscription cart must still work — forced registration is scoped to subscription carts only"}
+{"timestamp":"2026-08-06T22:22:50.091660282+02:00","action":"edit","task_id":80,"detail":"EXPLORATORY: SLT Grouped Set rendering, add-to-cart probes, and one order through the grouped form"}
+{"timestamp":"2026-08-06T22:22:50.650095159+02:00","action":"edit","task_id":84,"detail":"SKIP renewal on S5: one cycle then the max three, with undo, clamp, and the zero-email finding"}
+{"timestamp":"2026-08-07T02:31:24.597445747+02:00","action":"move","task_id":85,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-07T02:31:32.855094584+02:00","action":"edit","task_id":85,"detail":"Update the Stripe payment method from My Account and prove the next unassisted renewal charges the new card"}
+{"timestamp":"2026-08-07T04:49:49.687536129+02:00","action":"edit","task_id":85,"detail":"Update the Stripe payment method from My Account and prove the next unassisted renewal charges the new card"}
+{"timestamp":"2026-08-07T04:49:49.694995233+02:00","action":"release","task_id":85,"detail":"ridge-quick"}
+{"timestamp":"2026-08-07T04:49:55.277025327+02:00","action":"move","task_id":83,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-07T04:58:37.763564449+02:00","action":"edit","task_id":83,"detail":"Webhook replay idempotency: one Stripe and one Paddle renewal event, no duplicates"}
+{"timestamp":"2026-08-07T04:58:37.764643522+02:00","action":"release","task_id":83,"detail":"ridge-quick"}
+{"timestamp":"2026-08-07T04:58:37.836564579+02:00","action":"move","task_id":83,"detail":"in-progress -\u003e review"}
+{"timestamp":"2026-08-07T04:58:43.270469299+02:00","action":"move","task_id":83,"detail":"review -\u003e done"}
+{"timestamp":"2026-08-07T06:15:27.135728104+02:00","action":"move","task_id":67,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-07T06:22:37.933361273+02:00","action":"edit","task_id":67,"detail":"Renewal invoice email: content, UTC+6 due date, and a pay-link that resolves to a real payable order"}
+{"timestamp":"2026-08-07T07:46:46.550881883+02:00","action":"edit","task_id":85,"detail":"Update the Stripe payment method from My Account and prove the next unassisted renewal charges the new card"}
+{"timestamp":"2026-08-07T15:16:37.249123144+02:00","action":"edit","task_id":67,"detail":"Renewal invoice email: content, UTC+6 due date, and a pay-link that resolves to a real payable order"}
+{"timestamp":"2026-08-07T15:16:37.279649935+02:00","action":"claim","task_id":67,"detail":"gale-wild"}
+{"timestamp":"2026-08-07T15:36:48.385277452+02:00","action":"edit","task_id":67,"detail":"Renewal invoice email: content, UTC+6 due date, and a pay-link that resolves to a real payable order"}
+{"timestamp":"2026-08-07T15:36:48.54672246+02:00","action":"edit","task_id":67,"detail":"Renewal invoice email: content, UTC+6 due date, and a pay-link that resolves to a real payable order"}
+{"timestamp":"2026-08-07T15:36:48.547232117+02:00","action":"release","task_id":67,"detail":"gale-wild"}
+{"timestamp":"2026-08-07T15:37:05.198694374+02:00","action":"edit","task_id":85,"detail":"Update the Stripe payment method from My Account and prove the next unassisted renewal charges the new card"}
+{"timestamp":"2026-08-07T15:37:05.199203872+02:00","action":"claim","task_id":85,"detail":"gale-wild"}
+{"timestamp":"2026-08-07T15:43:07.839499202+02:00","action":"edit","task_id":85,"detail":"Update the Stripe payment method from My Account and prove the next unassisted renewal charges the new card"}
+{"timestamp":"2026-08-07T15:43:07.938361353+02:00","action":"edit","task_id":85,"detail":"Update the Stripe payment method from My Account and prove the next unassisted renewal charges the new card"}
+{"timestamp":"2026-08-07T15:43:07.939011472+02:00","action":"release","task_id":85,"detail":"gale-wild"}
+{"timestamp":"2026-08-07T15:43:15.090145326+02:00","action":"edit","task_id":67,"detail":"Renewal invoice email: content, UTC+6 due date, and a pay-link that resolves to a real payable order"}
+{"timestamp":"2026-08-07T15:43:15.090852471+02:00","action":"claim","task_id":67,"detail":"gale-wild"}
+{"timestamp":"2026-08-07T15:43:15.19785438+02:00","action":"edit","task_id":67,"detail":"Renewal invoice email: content, UTC+6 due date, and a pay-link that resolves to a real payable order"}
+{"timestamp":"2026-08-07T15:43:15.285311533+02:00","action":"edit","task_id":67,"detail":"Renewal invoice email: content, UTC+6 due date, and a pay-link that resolves to a real payable order"}
+{"timestamp":"2026-08-07T15:43:15.287625674+02:00","action":"release","task_id":67,"detail":"gale-wild"}
+{"timestamp":"2026-08-07T15:44:09.991851261+02:00","action":"move","task_id":77,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-07T16:07:44.023938872+02:00","action":"edit","task_id":77,"detail":"Two different subscription products in one cart must be rejected — capture the exact string on every add-to-cart surface"}
+{"timestamp":"2026-08-07T16:07:44.025607216+02:00","action":"release","task_id":77,"detail":"gale-wild"}
+{"timestamp":"2026-08-07T16:07:57.501564849+02:00","action":"edit","task_id":77,"detail":"Two different subscription products in one cart must be rejected — capture the exact string on every add-to-cart surface"}
+{"timestamp":"2026-08-07T16:07:57.502300247+02:00","action":"claim","task_id":77,"detail":"gale-wild"}
+{"timestamp":"2026-08-07T16:07:57.662256339+02:00","action":"move","task_id":77,"detail":"in-progress -\u003e review"}
+{"timestamp":"2026-08-07T16:07:57.976360686+02:00","action":"move","task_id":77,"detail":"review -\u003e done"}
+{"timestamp":"2026-08-07T16:07:58.263567527+02:00","action":"edit","task_id":77,"detail":"Two different subscription products in one cart must be rejected — capture the exact string on every add-to-cart surface"}
+{"timestamp":"2026-08-07T16:07:58.286665182+02:00","action":"release","task_id":77,"detail":"gale-wild"}
+{"timestamp":"2026-08-07T16:08:41.838412927+02:00","action":"move","task_id":78,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-07T16:29:34.743087086+02:00","action":"edit","task_id":78,"detail":"Anonymous guest checkout of a non-subscription cart must still work — forced registration is scoped to subscription carts only"}
+{"timestamp":"2026-08-07T16:29:46.524441306+02:00","action":"move","task_id":78,"detail":"in-progress -\u003e review"}
+{"timestamp":"2026-08-07T16:30:00.161369013+02:00","action":"move","task_id":78,"detail":"review -\u003e done"}
+{"timestamp":"2026-08-07T16:30:09.689403578+02:00","action":"edit","task_id":78,"detail":"Anonymous guest checkout of a non-subscription cart must still work — forced registration is scoped to subscription carts only"}
+{"timestamp":"2026-08-07T16:30:09.690366829+02:00","action":"release","task_id":78,"detail":"rose-ridge"}
+{"timestamp":"2026-08-07T17:46:50.9751939+02:00","action":"move","task_id":80,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-07T18:11:22.831579721+02:00","action":"edit","task_id":80,"detail":"EXPLORATORY: SLT Grouped Set rendering, add-to-cart probes, and one order through the grouped form"}
+{"timestamp":"2026-08-07T18:11:23.140020511+02:00","action":"edit","task_id":80,"detail":"EXPLORATORY: SLT Grouped Set rendering, add-to-cart probes, and one order through the grouped form"}
+{"timestamp":"2026-08-07T18:11:23.140764686+02:00","action":"release","task_id":80,"detail":"plume-coal"}
+{"timestamp":"2026-08-07T18:11:34.15135363+02:00","action":"move","task_id":80,"detail":"in-progress -\u003e review"}
+{"timestamp":"2026-08-07T18:11:34.315536273+02:00","action":"move","task_id":80,"detail":"review -\u003e done"}
+{"timestamp":"2026-08-07T18:11:34.403458072+02:00","action":"edit","task_id":80,"detail":"EXPLORATORY: SLT Grouped Set rendering, add-to-cart probes, and one order through the grouped form"}
+{"timestamp":"2026-08-07T18:11:34.40436451+02:00","action":"release","task_id":80,"detail":"plume-coal"}
+{"timestamp":"2026-08-07T18:13:33.995448081+02:00","action":"move","task_id":84,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-07T19:06:31.831749151+02:00","action":"move","task_id":79,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-07T19:06:31.918545029+02:00","action":"move","task_id":79,"detail":"in-progress -\u003e review"}
+{"timestamp":"2026-08-07T19:06:32.092914401+02:00","action":"move","task_id":79,"detail":"review -\u003e done"}
+{"timestamp":"2026-08-07T19:06:50.061419842+02:00","action":"move","task_id":86,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-07T19:06:50.158240297+02:00","action":"move","task_id":86,"detail":"in-progress -\u003e review"}
+{"timestamp":"2026-08-07T19:06:50.339953473+02:00","action":"move","task_id":86,"detail":"review -\u003e done"}
+{"timestamp":"2026-08-07T19:06:50.462448441+02:00","action":"move","task_id":87,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-07T19:06:50.535680121+02:00","action":"move","task_id":87,"detail":"in-progress -\u003e review"}
+{"timestamp":"2026-08-07T19:06:50.723634952+02:00","action":"move","task_id":87,"detail":"review -\u003e done"}
+{"timestamp":"2026-08-07T19:06:50.86755348+02:00","action":"move","task_id":88,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-07T19:06:50.956805985+02:00","action":"move","task_id":88,"detail":"in-progress -\u003e review"}
+{"timestamp":"2026-08-07T19:06:51.205100487+02:00","action":"move","task_id":88,"detail":"review -\u003e done"}
+{"timestamp":"2026-08-08T02:16:29.083161488+02:00","action":"edit","task_id":85,"detail":"Update the Stripe payment method from My Account and prove the next unassisted renewal charges the new card"}
+{"timestamp":"2026-08-08T02:16:29.087923681+02:00","action":"claim","task_id":85,"detail":"stone-rust"}
+{"timestamp":"2026-08-08T02:16:29.378097394+02:00","action":"move","task_id":85,"detail":"in-progress -\u003e review"}
+{"timestamp":"2026-08-08T02:16:37.241637487+02:00","action":"edit","task_id":85,"detail":"Update the Stripe payment method from My Account and prove the next unassisted renewal charges the new card"}
+{"timestamp":"2026-08-08T02:16:37.242599796+02:00","action":"release","task_id":85,"detail":"stone-rust"}
+{"timestamp":"2026-08-08T02:16:43.964631442+02:00","action":"move","task_id":85,"detail":"review -\u003e done"}
+{"timestamp":"2026-08-08T02:24:35.038836666+02:00","action":"move","task_id":62,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-08T02:34:11.699957161+02:00","action":"move","task_id":62,"detail":"in-progress -\u003e review"}
+{"timestamp":"2026-08-08T02:34:12.013429434+02:00","action":"edit","task_id":62,"detail":"Quantity 3 on a segment-2 prorated first charge: prove the proration multiplies per unit"}
+{"timestamp":"2026-08-08T02:34:12.014021305+02:00","action":"release","task_id":62,"detail":"stone-rust"}
+{"timestamp":"2026-08-08T02:34:12.166247871+02:00","action":"move","task_id":62,"detail":"review -\u003e done"}
+{"timestamp":"2026-08-08T02:34:23.398141824+02:00","action":"edit","task_id":62,"detail":"Quantity 3 on a segment-2 prorated first charge: prove the proration multiplies per unit"}
+{"timestamp":"2026-08-08T02:35:23.57688241+02:00","action":"move","task_id":89,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-08T02:35:23.732423361+02:00","action":"edit","task_id":89,"detail":"Admin status ladder active to on-hold to active to cancelled: emails and scheduler side effects"}
+{"timestamp":"2026-08-08T02:35:23.883589522+02:00","action":"move","task_id":89,"detail":"in-progress -\u003e review"}
+{"timestamp":"2026-08-08T02:35:29.91461583+02:00","action":"edit","task_id":89,"detail":"Admin status ladder active to on-hold to active to cancelled: emails and scheduler side effects"}
+{"timestamp":"2026-08-08T02:35:29.915269945+02:00","action":"release","task_id":89,"detail":"stone-rust"}
+{"timestamp":"2026-08-08T02:35:30.004435524+02:00","action":"move","task_id":89,"detail":"review -\u003e done"}
+{"timestamp":"2026-08-08T02:36:02.344776773+02:00","action":"move","task_id":91,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-08T02:36:02.626058909+02:00","action":"edit","task_id":91,"detail":"HTML vs plain-text rendering of the renewal invoice and payment-received emails, and link resolution"}
+{"timestamp":"2026-08-08T02:36:02.731587782+02:00","action":"edit","task_id":91,"detail":"HTML vs plain-text rendering of the renewal invoice and payment-received emails, and link resolution"}
+{"timestamp":"2026-08-08T02:36:02.732344007+02:00","action":"release","task_id":91,"detail":"stone-rust"}
+{"timestamp":"2026-08-08T02:39:29.069572603+02:00","action":"edit","task_id":89,"detail":"Admin status ladder active to on-hold to active to cancelled: emails and scheduler side effects"}
+{"timestamp":"2026-08-08T04:00:56.089111984+02:00","action":"move","task_id":94,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-08T04:21:03.927558453+02:00","action":"edit","task_id":94,"detail":"Update the Paddle payment method and prove the next Paddle-driven renewal uses it, plus the missing local update surface"}
+{"timestamp":"2026-08-08T04:21:04.025510417+02:00","action":"edit","task_id":94,"detail":"Update the Paddle payment method and prove the next Paddle-driven renewal uses it, plus the missing local update surface"}
+{"timestamp":"2026-08-08T04:21:04.02701814+02:00","action":"release","task_id":94,"detail":"stone-rust"}
+{"timestamp":"2026-08-08T04:23:10.850888237+02:00","action":"edit","task_id":94,"detail":"Update the Paddle payment method and prove the next Paddle-driven renewal uses it, plus the missing local update surface"}
+{"timestamp":"2026-08-08T12:20:49.093517276+02:00","action":"edit","task_id":94,"detail":"Update the Paddle payment method and prove the next Paddle-driven renewal uses it, plus the missing local update surface"}
+{"timestamp":"2026-08-08T12:20:49.101151054+02:00","action":"claim","task_id":94,"detail":"spur-gust"}
+{"timestamp":"2026-08-08T12:27:40.571312205+02:00","action":"move","task_id":93,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-08T12:51:52.736811828+02:00","action":"move","task_id":93,"detail":"in-progress -\u003e review"}
+{"timestamp":"2026-08-08T12:51:52.9725761+02:00","action":"move","task_id":93,"detail":"review -\u003e done"}
+{"timestamp":"2026-08-08T12:54:32.975251482+02:00","action":"move","task_id":67,"detail":"in-progress -\u003e review"}
+{"timestamp":"2026-08-08T12:54:33.246324454+02:00","action":"move","task_id":67,"detail":"review -\u003e done"}
+{"timestamp":"2026-08-08T13:05:23.606790312+02:00","action":"move","task_id":99,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-08T15:19:49.11851172+02:00","action":"move","task_id":90,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-08T15:52:49.955317582+02:00","action":"edit","task_id":90,"detail":"Mixed cart: subscription + plain product — one order, only the subscription line creates a subscription, only it renews"}
+{"timestamp":"2026-08-08T15:54:52.744660509+02:00","action":"move","task_id":95,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-08T15:58:26.961609404+02:00","action":"edit","task_id":95,"detail":"Crossgrade SLT Plan Pro to the equal-priced SLT Plan Peer and prove the date does not shift"}
+{"timestamp":"2026-08-08T15:58:32.363066418+02:00","action":"move","task_id":95,"detail":"in-progress -\u003e review"}
+{"timestamp":"2026-08-08T15:58:48.086970478+02:00","action":"move","task_id":95,"detail":"review -\u003e done"}
+{"timestamp":"2026-08-08T15:58:56.963810047+02:00","action":"move","task_id":97,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-08T16:01:04.204625905+02:00","action":"edit","task_id":97,"detail":"Variable-product variation switch (Starter→Plus) plus on-hold and pending-cancellation switch refusals"}
+{"timestamp":"2026-08-08T16:01:11.238980438+02:00","action":"move","task_id":97,"detail":"in-progress -\u003e review"}
+{"timestamp":"2026-08-08T16:01:32.102599614+02:00","action":"move","task_id":97,"detail":"review -\u003e done"}
+{"timestamp":"2026-08-08T16:02:37.98609155+02:00","action":"move","task_id":96,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-08T16:53:19.584059181+02:00","action":"move","task_id":96,"detail":"in-progress -\u003e review"}
+{"timestamp":"2026-08-08T16:53:25.585662203+02:00","action":"move","task_id":96,"detail":"review -\u003e done"}
+{"timestamp":"2026-08-08T18:29:52.365003541+02:00","action":"move","task_id":98,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-08T19:01:50.935246981+02:00","action":"move","task_id":92,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-08T19:03:05.718649095+02:00","action":"move","task_id":92,"detail":"in-progress -\u003e review"}
+{"timestamp":"2026-08-08T19:03:05.915630017+02:00","action":"move","task_id":92,"detail":"review -\u003e done"}
+{"timestamp":"2026-08-09T02:16:37.482159702+02:00","action":"move","task_id":106,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-09T02:16:37.6037961+02:00","action":"edit","task_id":106,"detail":"Renewal execution after a synced first charge: second charge full on the boundary, third on the grid"}
+{"timestamp":"2026-08-09T02:29:08.230107279+02:00","action":"edit","task_id":94,"detail":"Update the Paddle payment method and prove the next Paddle-driven renewal uses it, plus the missing local update surface"}
+{"timestamp":"2026-08-09T02:29:11.695599465+02:00","action":"move","task_id":94,"detail":"in-progress -\u003e review"}
+{"timestamp":"2026-08-09T02:37:33.607095807+02:00","action":"move","task_id":94,"detail":"review -\u003e done"}
+{"timestamp":"2026-08-09T03:24:20.851999401+02:00","action":"edit","task_id":106,"detail":"Renewal execution after a synced first charge: second charge full on the boundary, third on the grid"}
+{"timestamp":"2026-08-09T03:25:03.112508691+02:00","action":"move","task_id":100,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-09T03:35:57.745688795+02:00","action":"edit","task_id":106,"detail":"Renewal execution after a synced first charge: second charge full on the boundary, third on the grid"}
+{"timestamp":"2026-08-09T04:19:36.601603983+02:00","action":"edit","task_id":100,"detail":"Subscriptions list: status tabs, search, gateway filter, columns, pagination, delete guardrails"}
+{"timestamp":"2026-08-09T04:19:40.679515667+02:00","action":"move","task_id":100,"detail":"in-progress -\u003e review"}
+{"timestamp":"2026-08-09T04:19:54.449803458+02:00","action":"move","task_id":100,"detail":"review -\u003e done"}
+{"timestamp":"2026-08-09T06:14:54.168941031+02:00","action":"edit","task_id":91,"detail":"HTML vs plain-text rendering of the renewal invoice and payment-received emails, and link resolution"}
+{"timestamp":"2026-08-09T06:14:54.185983853+02:00","action":"claim","task_id":91,"detail":"delta-gate"}
+{"timestamp":"2026-08-09T06:34:24.662388675+02:00","action":"move","task_id":103,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-09T06:49:11.47394039+02:00","action":"edit","task_id":103,"detail":"Customer view of an unpaid renewal invoice and paying it from the portal before the automatic charge leg"}
+{"timestamp":"2026-08-09T06:49:26.777308047+02:00","action":"edit","task_id":91,"detail":"HTML vs plain-text rendering of the renewal invoice and payment-received emails, and link resolution"}
+{"timestamp":"2026-08-09T07:25:10.004461456+02:00","action":"edit","task_id":103,"detail":"Customer view of an unpaid renewal invoice and paying it from the portal before the automatic charge leg"}
+{"timestamp":"2026-08-09T08:00:09.028001011+02:00","action":"move","task_id":104,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-09T08:01:04.057931196+02:00","action":"edit","task_id":104,"detail":"Admin-side repeat of the Basic to Pro upgrade and record-for-record diff against SLT-SW-01"}
+{"timestamp":"2026-08-09T08:01:04.302441199+02:00","action":"move","task_id":104,"detail":"in-progress -\u003e review"}
+{"timestamp":"2026-08-09T08:01:17.120881574+02:00","action":"move","task_id":104,"detail":"review -\u003e done"}
+{"timestamp":"2026-08-09T08:01:31.726398596+02:00","action":"move","task_id":105,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-09T08:02:19.120451531+02:00","action":"edit","task_id":105,"detail":"Charge a non-zero $7.50 upgrade switch fee on Pro→Enterprise and restore the fee to 0 in-task"}
+{"timestamp":"2026-08-09T08:02:19.34407369+02:00","action":"move","task_id":105,"detail":"in-progress -\u003e review"}
+{"timestamp":"2026-08-09T08:02:25.348213642+02:00","action":"move","task_id":105,"detail":"review -\u003e done"}
+{"timestamp":"2026-08-09T13:00:00.703395292+02:00","action":"edit","task_id":103,"detail":"Customer view of an unpaid renewal invoice and paying it from the portal before the automatic charge leg"}
+{"timestamp":"2026-08-09T13:00:00.776315136+02:00","action":"claim","task_id":103,"detail":"gate-kelp"}
+{"timestamp":"2026-08-09T13:26:19.255918639+02:00","action":"edit","task_id":103,"detail":"Customer view of an unpaid renewal invoice and paying it from the portal before the automatic charge leg"}
+{"timestamp":"2026-08-09T13:26:19.534938672+02:00","action":"edit","task_id":103,"detail":"Customer view of an unpaid renewal invoice and paying it from the portal before the automatic charge leg"}
+{"timestamp":"2026-08-09T13:26:19.536693986+02:00","action":"release","task_id":103,"detail":"gate-kelp"}
+{"timestamp":"2026-08-09T13:26:56.507540206+02:00","action":"edit","task_id":84,"detail":"SKIP renewal on S5: one cycle then the max three, with undo, clamp, and the zero-email finding"}
+{"timestamp":"2026-08-09T13:26:56.508351233+02:00","action":"claim","task_id":84,"detail":"gate-kelp"}
+{"timestamp":"2026-08-09T13:54:51.261902473+02:00","action":"edit","task_id":84,"detail":"SKIP renewal on S5: one cycle then the max three, with undo, clamp, and the zero-email finding"}
+{"timestamp":"2026-08-09T13:54:51.775119212+02:00","action":"move","task_id":84,"detail":"in-progress -\u003e review"}
+{"timestamp":"2026-08-09T13:55:12.114254095+02:00","action":"move","task_id":84,"detail":"review -\u003e done"}
+{"timestamp":"2026-08-09T13:55:12.40684355+02:00","action":"edit","task_id":84,"detail":"SKIP renewal on S5: one cycle then the max three, with undo, clamp, and the zero-email finding"}
+{"timestamp":"2026-08-09T13:55:12.407552919+02:00","action":"release","task_id":84,"detail":"gate-kelp"}
+{"timestamp":"2026-08-09T17:52:48.207976194+02:00","action":"edit","task_id":90,"detail":"Mixed cart: subscription + plain product — one order, only the subscription line creates a subscription, only it renews"}
+{"timestamp":"2026-08-09T17:52:48.212489114+02:00","action":"claim","task_id":90,"detail":"linen-mast"}
+{"timestamp":"2026-08-09T18:51:18.597956913+02:00","action":"edit","task_id":90,"detail":"Mixed cart: subscription + plain product — one order, only the subscription line creates a subscription, only it renews"}
+{"timestamp":"2026-08-09T18:51:18.916322518+02:00","action":"move","task_id":90,"detail":"in-progress -\u003e review"}
+{"timestamp":"2026-08-09T18:51:42.967558611+02:00","action":"move","task_id":90,"detail":"review -\u003e done"}
+{"timestamp":"2026-08-09T18:51:43.045949864+02:00","action":"edit","task_id":90,"detail":"Mixed cart: subscription + plain product — one order, only the subscription line creates a subscription, only it renews"}
+{"timestamp":"2026-08-09T18:51:43.048654411+02:00","action":"release","task_id":90,"detail":"linen-mast"}
+{"timestamp":"2026-08-09T18:51:47.66044447+02:00","action":"edit","task_id":98,"detail":"Pending cancellation with a required reason and declined offers, then customer reactivation"}
+{"timestamp":"2026-08-09T18:51:47.660989683+02:00","action":"claim","task_id":98,"detail":"linen-mast"}
+{"timestamp":"2026-08-09T19:06:21.55399158+02:00","action":"edit","task_id":98,"detail":"Pending cancellation with a required reason and declined offers, then customer reactivation"}
+{"timestamp":"2026-08-09T19:06:21.633149646+02:00","action":"move","task_id":98,"detail":"in-progress -\u003e review"}
+{"timestamp":"2026-08-09T19:06:26.628263827+02:00","action":"move","task_id":98,"detail":"review -\u003e done"}
+{"timestamp":"2026-08-09T19:06:26.821607144+02:00","action":"edit","task_id":98,"detail":"Pending cancellation with a required reason and declined offers, then customer reactivation"}
+{"timestamp":"2026-08-09T19:06:26.822113185+02:00","action":"release","task_id":98,"detail":"linen-mast"}
+{"timestamp":"2026-08-09T19:12:33.837720488+02:00","action":"edit","task_id":98,"detail":"Pending cancellation with a required reason and declined offers, then customer reactivation"}
+{"timestamp":"2026-08-10T02:14:57.836888896+02:00","action":"edit","task_id":103,"detail":"Customer view of an unpaid renewal invoice and paying it from the portal before the automatic charge leg"}
+{"timestamp":"2026-08-10T02:14:57.85243671+02:00","action":"claim","task_id":103,"detail":"north-snow"}
+{"timestamp":"2026-08-10T02:15:25.832526108+02:00","action":"edit","task_id":103,"detail":"Customer view of an unpaid renewal invoice and paying it from the portal before the automatic charge leg"}
+{"timestamp":"2026-08-10T02:15:25.97480667+02:00","action":"move","task_id":103,"detail":"in-progress -\u003e review"}
+{"timestamp":"2026-08-10T02:15:26.290828551+02:00","action":"edit","task_id":103,"detail":"Customer view of an unpaid renewal invoice and paying it from the portal before the automatic charge leg"}
+{"timestamp":"2026-08-10T02:15:26.29285554+02:00","action":"release","task_id":103,"detail":"north-snow"}
+{"timestamp":"2026-08-10T02:15:26.373996033+02:00","action":"move","task_id":103,"detail":"review -\u003e done"}
+{"timestamp":"2026-08-10T02:15:38.755629975+02:00","action":"move","task_id":112,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-10T02:24:11.796723057+02:00","action":"edit","task_id":112,"detail":"SLT-TT-00 D8 time-travel owner: pre-flight plus targeted month-segment-2 and week-segment-3 renewals"}
+{"timestamp":"2026-08-10T02:24:11.945409823+02:00","action":"move","task_id":112,"detail":"in-progress -\u003e review"}
+{"timestamp":"2026-08-10T02:24:12.265821778+02:00","action":"edit","task_id":112,"detail":"SLT-TT-00 D8 time-travel owner: pre-flight plus targeted month-segment-2 and week-segment-3 renewals"}
+{"timestamp":"2026-08-10T02:24:12.266570822+02:00","action":"release","task_id":112,"detail":"north-snow"}
+{"timestamp":"2026-08-10T02:24:12.418059188+02:00","action":"move","task_id":112,"detail":"review -\u003e done"}
+{"timestamp":"2026-08-10T02:24:36.790983444+02:00","action":"edit","task_id":99,"detail":"Calendar overflow on the month flex product: the 31st day is absorbed into the last active segment"}
+{"timestamp":"2026-08-10T02:24:36.792567931+02:00","action":"claim","task_id":99,"detail":"north-snow"}
+{"timestamp":"2026-08-10T02:42:48.78353429+02:00","action":"move","task_id":99,"detail":"in-progress -\u003e review"}
+{"timestamp":"2026-08-10T02:42:48.953432586+02:00","action":"move","task_id":99,"detail":"review -\u003e done"}
+{"timestamp":"2026-08-10T02:42:56.501723379+02:00","action":"edit","task_id":99,"detail":"Calendar overflow on the month flex product: the 31st day is absorbed into the last active segment"}
+{"timestamp":"2026-08-10T02:42:56.502496927+02:00","action":"release","task_id":99,"detail":"north-snow"}
+{"timestamp":"2026-08-10T02:43:35.489040479+02:00","action":"move","task_id":111,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-10T02:46:10.119430706+02:00","action":"move","task_id":111,"detail":"in-progress -\u003e review"}
+{"timestamp":"2026-08-10T02:46:10.20295792+02:00","action":"move","task_id":111,"detail":"review -\u003e done"}
+{"timestamp":"2026-08-10T02:46:10.330016713+02:00","action":"edit","task_id":111,"detail":"Customer downgrade applies now, and targeted D8 expiry auto-downgrade with its email"}
+{"timestamp":"2026-08-10T02:46:10.330705465+02:00","action":"release","task_id":111,"detail":"north-snow"}
+{"timestamp":"2026-08-10T02:48:12.301376567+02:00","action":"move","task_id":107,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-10T02:49:36.740631156+02:00","action":"move","task_id":107,"detail":"in-progress -\u003e review"}
+{"timestamp":"2026-08-10T02:49:36.842122565+02:00","action":"move","task_id":107,"detail":"review -\u003e done"}
+{"timestamp":"2026-08-10T02:49:36.954850159+02:00","action":"edit","task_id":107,"detail":"Expired, reactivated and auto-downgrade emails, incl. the expiry-suppression negative"}
+{"timestamp":"2026-08-10T02:49:36.956100193+02:00","action":"release","task_id":107,"detail":"north-snow"}
+{"timestamp":"2026-08-10T02:50:50.490667021+02:00","action":"move","task_id":108,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-10T02:51:36.762010087+02:00","action":"move","task_id":108,"detail":"in-progress -\u003e review"}
+{"timestamp":"2026-08-10T02:51:36.950994815+02:00","action":"move","task_id":108,"detail":"review -\u003e done"}
+{"timestamp":"2026-08-10T02:51:37.059905772+02:00","action":"edit","task_id":108,"detail":"Expiring-soon at days_before=7 and card-expiring: two emails nothing can trigger"}
+{"timestamp":"2026-08-10T02:51:37.060601856+02:00","action":"release","task_id":108,"detail":"north-snow"}
+{"timestamp":"2026-08-10T02:53:24.146218859+02:00","action":"move","task_id":110,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-10T02:55:15.913500111+02:00","action":"move","task_id":110,"detail":"in-progress -\u003e review"}
+{"timestamp":"2026-08-10T02:55:23.697357648+02:00","action":"move","task_id":110,"detail":"review -\u003e done"}
+{"timestamp":"2026-08-10T02:55:23.903599446+02:00","action":"edit","task_id":110,"detail":"LATE renewal on S5: prove the schedule catches up to the cycle grid and that a past computed date queues zero legs"}
+{"timestamp":"2026-08-10T02:55:23.904124342+02:00","action":"release","task_id":110,"detail":"north-snow"}

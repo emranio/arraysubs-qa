@@ -1,14 +1,15 @@
 ---
 id: 79
 title: Buy two SLT Variable Daily tiers and prove per-variation config lands on the subscription
-status: todo
+status: done
 priority: high
 created: 2026-08-02T03:43:09.833133473+02:00
-updated: 2026-08-02T03:43:20.709400932+02:00
+updated: 2026-08-07T19:06:32.092057938+02:00
+started: 2026-08-07T19:06:32.092056926+02:00
+completed: 2026-08-07T19:06:32.092056926+02:00
 tags:
     - checkout
     - day-05
-    - has-conflicts
 due: "2026-08-07"
 estimate: 2h
 depends_on:
@@ -16,6 +17,8 @@ depends_on:
     - 10
     - 11
     - 12
+claimed_by: plume-coal
+claimed_at: 2026-08-07T19:06:32.092057837+02:00
 class: standard
 ---
 
@@ -24,14 +27,6 @@ class: standard
 > Read `README.md` (environment + isolation contract), `calendar.md` (this day's exact
 > ordering — it is binding, not advisory) and `plan-audit.md` before starting.
 
-### ⚠ Conflict resolutions that apply to this task
-
-**`high` · session/cart collision (persistent cart)** — with `SLT-CHK-01`, `SLT-CHK-14`, `SLT-LIFE-04`, `SLT-CHK-13`, `SLT-MYA-02`, `SLT-ADM-02`
-
-- *Problem:* Audit C09's fix - one named agent-browser session per task - isolates GUEST carts only. WooCommerce persists a logged-in customer's cart to user meta (_woocommerce_persistent_cart_<blog_id>) and restores it into any session that authenticates as that user. Several tasks therefore share a cart despite having distinct session names: on D0 slt-core is used concurrently by SLT-CHK-01 (cust-SLT-CHK-01), SLT-CHK-14 (core-CHK14) and SLT-LIFE-04 (life04); on D2 slt-trial by SLT-CHK-15 (trial-CHK15) and SLT-EML-09 (cust-SLT-EML-09); on D4/D5 slt-core by SLT-CHK-13 (core-CHK13), SLT-CHK-11 (core-CHK11), SLT-MYA-02 and SLT-ADM-02. A leftover subscription line leaking across sessions makes allow_multiple_in_cart=false reject the next add-to-cart for the wrong reason, or - worse - a two-subscription cart reaches checkout and the wrong subscription is created.
-- *Required fix:* Add a standing rule to the isolation contract: never run two tasks concurrently under the same slt-* login, and serialise same-account tasks within a day (the calendar's intra-day ordering is binding, not advisory). Every task that logs in must, as its first browser action after login, assert the cart is EMPTY and treat a non-empty cart as a STOP condition with an issue filed - not as something to silently empty. Add a WP-CLI pre-flight to same-account days: `wp user meta get <uid> _woocommerce_persistent_cart_1 --allow-root` must be empty before the task's checkout, and empty again at teardown.
-
----
 ## Objective
 Buy two `SLT Variable Daily` tiers — Starter (day/1, $6.00) on block checkout, Plus (day/2, $11.00 + $4.00 signup fee) on the classic harness page — and prove each variation's period, interval, price and fee land verbatim on its own subscription. Trialist and Zero Probe get cart previews only.
 
@@ -45,7 +40,7 @@ Buy two `SLT Variable Daily` tiers — Starter (day/1, $6.00) on block checkout,
 - `SLT-PROD-08` complete; quote the four variation IDs from `slt-catalog-registry`.
 - `SLT-SETUP-01` (classic harness pages), `SLT-SETUP-02`, `SLT-SETUP-03` (`slt-core` + billing address).
 - `one_per_customer=false`, so auto-migrate (`CartValidationTrait.php:140-148`) is unreachable: two tiers of one parent give two independent subs.
-- Session `core-CHK11`; cart empty first and last.
+- D5 sessions `core-CHK11-SLT-CHK-11` and `admin-SLT-CHK-11`; browser and persistent carts empty before, between, and after purchases. Future renewals use separate cycle-keyed admin sessions.
 
 ## Test data
 | Item | Value |
@@ -58,17 +53,18 @@ Buy two `SLT Variable Daily` tiers — Starter (day/1, $6.00) on block checkout,
 | Trialist / Zero Probe | preview only |
 
 ## Steps
-1. `PREV1=$(mailpit-agent latest-id)`.
-2. `agent-browser --session core-CHK11 open "https://mirror-help.arrayhash.com/my-account/"` -> `snapshot -i` -> log in as `slt-core`.
-3. Open `/slt-variable-daily` -> `snapshot -i`; select each `SLT Tier` value in turn and screenshot the price + subscription summary.
-4. Add **Trialist** -> `/cart/` -> snapshot total -> remove. Repeat for **Zero Probe**, recording verbatim what a $0 recurring line does (added / refused / notice).
-5. Select **Starter** -> **Add to cart** -> `/checkout/` -> `snapshot -i`; confirm $6.00, no fee row; pay Stripe 4242 -> **Place Order**. Record order + subscription ID.
-6. Empty cart, add **Plus**, open `/slt-classic-cart` -> `snapshot -i` (fee row + $15.00), then `/slt-classic-checkout` -> pay 4242 -> **Place Order**.
-7. Both subs: `wp post meta list <SUB_ID> --keys=_product_id,_variation_id,_billing_period,_billing_interval,_recurring_amount,_signup_fee,_trial_length,_next_payment_date,_renewal_action_id --allow-root`.
-8. Per sub compute `k = crc32('arraysubs-spread-'.SUBID) % 21600` (php -r); derive invoice `due+k−6h`, charge `due+k`.
-9. wp-admin -> Tools -> Scheduled Actions (Pending): screenshot the `arraysubs_generate_renewal_invoice` + `arraysubs_process_renewal` rows for both IDs; compare with step 8.
-10. Empty cart; `agent-browser close --session core-CHK11`.
-11. Watch: 08-08 Starter renews $6.00; 08-09 Plus renews $11.00 **with no fee line**.
+1. Resolve strict numeric parent plus all four variation IDs from the registry, require them distinct, and cross-check exact labels/prices/schedules. Record `SUBCOUNT_BEFORE` and `PREVIEW_PRE=$(mailpit-agent latest-id)`.
+2. In `core-CHK11-SLT-CHK-11`, log in as `slt-core`, require both carts empty, and capture `SLT-CHK-11-00-cart-empty-before.png`.
+3. Open `/product/slt-variable-daily/`; select each exact variation and capture its price/subscription summary as `SLT-CHK-11-01-tier-starter.png` through `-04-tier-zero-probe.png`.
+4. Add exact **Trialist**; handle a one-click redirect by explicitly reopening `/cart/`, capture `SLT-CHK-11-05-trialist-cart.png`, and remove it. Repeat for exact **Zero Probe**, capture `SLT-CHK-11-06-zero-probe-cart.png`, and record its behavior/notice verbatim. Prove both carts empty, reconcile the complete `PREVIEW_PRE` delta with zero preview-attributable mail, then set `PRE_STARTER=$(mailpit-agent latest-id)`.
+5. Add exact **Starter**, handle one-click, open `/checkout/`, and capture the unpopulated $6.00/no-fee summary as `SLT-CHK-11-07-block-starter.png`. Fill the hosted 4242 card without capturing it, pay, record numeric `ORDER_STARTER`, and capture safe receipt `SLT-CHK-11-07a-starter-receipt.png`. Resolve `SUB_STARTER` only from that order's `_subscription_ids` JSON with a strict one-element numeric guard; require reverse parent/variation/customer linkage and `SUBCOUNT_AFTER_STARTER == SUBCOUNT_BEFORE+1`. Reconcile the complete `PRE_STARTER` four-message delta: WC customer paid-order, WC admin New order, ArraySubs customer signup, and ArraySubs admin signup.
+6. Prove both carts empty, set `PRE_PLUS=$(mailpit-agent latest-id)`, and add exact **Plus**. If one-click redirects, explicitly reopen `/slt-classic-cart`; capture the $4 fee/$15 total as `SLT-CHK-11-08-classic-cart-fee.png`, then open `/slt-classic-checkout` and capture its unpopulated summary as `-08a-classic-checkout.png`. Fill the hosted card without capturing it, pay, record numeric `ORDER_PLUS`, and capture `-08b-plus-receipt.png`. Resolve `SUB_PLUS` by the same strict relationship, require it distinct and `SUBCOUNT_AFTER_PLUS == SUBCOUNT_BEFORE+2`, and reconcile the second complete four-message delta after `PRE_PLUS`.
+7. Run the exact meta command separately for numeric `SUB_STARTER` and `SUB_PLUS`; require the recorded parent/variation IDs and values, never a literal placeholder.
+8. Compute each k with the README argv command and its numeric sub; derive invoice/charge gates and final-five-minute baseline deadlines.
+9. In `admin-SLT-CHK-11`, capture exact pending invoice/charge rows for both numeric IDs as `SLT-CHK-11-09-scheduled-actions.png`, compare with step 8, and publish IDs/gates/deadlines to the registry/D05 report.
+10. Prove both carts empty, capture `SLT-CHK-11-10-cart-empty-after.png`, close only the two D5 sessions, and leave the card `in-progress`.
+11. Watch naturally: take `STARTER_R1_PRE` only in `[Starter charge gate−300s, gate)` on 08-08 and `PLUS_R1_PRE` only in the corresponding final-five-minute interval on 08-09. Never force either action. Resolve each renewal order by exact subscription/cycle and reverse meta, reconcile its complete mail delta, and require Starter $6.00 and Plus $11.00 with no signup-fee line. Use/close `admin-SLT-CHK-11-STARTER-R1` and `admin-SLT-CHK-11-PLUS-R1` only for their phases.
+12. If any live assertion fails, create a standalone `issues/SLT-CHK-11-<concise-slug>.md` (never a kanban bug card) with task/stage/plan, parent/variation/order/subscription/action IDs, user ID/login/email/role, exact URLs/sessions, reproduction, expected/actual, UI/meta/scheduler/Mailpit/screenshot proof, and the other variation as counterexample. Continue unaffected legs. After both renewals, independently review all evidence, move the card through `review` to `done`, and ensure Review returns to zero.
 
 ## Expected results
 1. Two orders `processing`/`completed` at $6.00 and $15.00.
@@ -82,14 +78,12 @@ Buy two `SLT Variable Daily` tiers — Starter (day/1, $6.00) on block checkout,
 ## Emails expected
 | # | Email | Trigger point | Recipient | Subject contains | Verify with |
 |---|---|---|---|---|---|
-| 1 | new_subscription | Starter paid | slt-core@example.test | `is active` | `mailpit-agent wait-new "$PREV1" 180 "is active"` |
-| 2 | admin_new_subscription | Starter paid | admin | `New subscription #` | `mailpit-agent list 50` |
-| 3 | new_subscription + admin_new_subscription | Plus paid | slt-core / admin | `is active` / `New subscription #` | `mailpit-agent list 50` |
-| 4 | NONE EXPECTED | step 4 previews | — | — | latest-id unchanged over step 4 |
+| 1 | WC customer paid-order + WC New order + `new_subscription` + `admin_new_subscription` | Starter paid | slt-core / admin | order id / `New order #` / `is active` / `New subscription #` | complete owner-filtered delta after `PRE_STARTER`; save/show all four exact IDs |
+| 2 | Same complete four-message set | Plus paid | slt-core / admin | exact Plus order/subscription | complete owner-filtered delta after `PRE_PLUS`; save/show all four exact IDs |
+| 3 | NONE EXPECTED | step 4 previews | — | — | Complete preview-step delta; zero preview-attributable mail, while unrelated/background mail is allowed and classified |
 
 ## Evidence to capture
-- `SLT-CHK-11-01..04-tier-<name>.png`, `-05-trialist-cart.png`, `-06-zero-probe-cart.png`, `-07-block-starter.png`, `-08-classic-cart-fee.png`, `-09-scheduled-actions.png`.
-- Order/subscription/variation IDs, meta dumps, offsets, Mailpit IDs, console+network errors from block checkout and the Stripe UPE iframe.
+- Safe named `SLT-CHK-11-00` through `-10` captures; no populated-card image. Count progression; numeric parent/variation/order/subscription/action IDs and bidirectional linkage; meta dumps, offsets/gates/deadlines, preview/purchase/renewal baselines and exact Mailpit IDs; console/network plus session/review proof.
 
 ## Pass criteria
 - [ ] Orders placed at exactly $6.00 and $15.00
@@ -98,11 +92,12 @@ Buy two `SLT Variable Daily` tiers — Starter (day/1, $6.00) on block checkout,
 - [ ] Fee charged once on Plus, absent on Starter
 - [ ] Trialist preview $0.00; Zero Probe recorded
 - [ ] Renewal legs at the offset-adjusted times
-- [ ] Emails 1-3 captured; negative 4 holds
+- [ ] Both four-message purchase sets captured; negative preview row 3 holds
+- [ ] Both natural renewals are relationship-exact, exact sessions closed, and final evidence reviewed to done with Review empty
 
 ## Isolation / teardown
 - Two live subs to the watch (Starter daily from 08-08, Plus every 2 days from 08-09); cancelled by `SLT-SETUP-99A` on D10.
-- Nothing global changed; cart emptied; only `core-CHK11` closed. Trialist left unpurchased.
+- Nothing global changed; cart emptied; only the exact D5 and renewal-phase task sessions closed. Trialist left unpurchased.
 
 ---
 
@@ -119,8 +114,14 @@ Buy two `SLT Variable Daily` tiers — Starter (day/1, $6.00) on block checkout,
 - WooCommerce **grouped** products have zero handling in either plugin — grouped tasks are
   exploratory: document behaviour, do not assert a spec.
 - WP-Cron runs every minute from `/etc/cron.d/mirror-help-arrayhash-wordpress`. Scheduled actions
-  fire on their own; **a renewal that does not fire is a real bug** — capture evidence before forcing.
+  fire on their own; **a renewal that does not fire is a real bug** — capture evidence and do not force a natural-watch action.
 - Give this task its own browser session (`agent-browser --session <role>-<TASK-KEY>`). Sessions are
   keyed by name and **share a cart**.
-- Never run `wp action-scheduler run` without `--hooks=`; prefer a single action by ID.
-- Evidence goes in `qa/subscription-lifecycle-test/evidence/<TASK-KEY>/`.
+- Never run a bare or `--hooks=` Action Scheduler drain. Run one known action ID at a time only when the task explicitly authorizes it and after the required queue pre-flight; natural-watch actions are never forced.
+- Evidence goes under `/home/server-manager/slt-evidence/` using task-key-prefixed filenames.
+
+[[2026-08-06]] Thu 20:27
+Source-block note on Thursday, August 6, 2026: D4 source card 71 is now done only because it failed and filed qa/subscription-lifecycle-test/issues/SLT-PROD-08-variable-subscription-draft-is-trashed-on-save.md. Intended parent 13012 and child variations 13013/13015/13017/13019 landed in trash, so this card remains blocked until a usable SLT Variable Daily fixture exists.
+
+[[2026-08-07]] Fri 23:05
+Final D05 read confirmed the source remains absent: parent 13012 and variations 13013/13015/13017/13019 are all still trash. No later valid replan recreated them. Execution closes UNVERIFIED without opening a browser/cart/checkout or inventing replacement IDs. Evidence: `/home/server-manager/slt-evidence/D05-night-source-block-and-window-close.txt`; originating issue remains `issues/SLT-PROD-08-variable-subscription-draft-is-trashed-on-save.md`.

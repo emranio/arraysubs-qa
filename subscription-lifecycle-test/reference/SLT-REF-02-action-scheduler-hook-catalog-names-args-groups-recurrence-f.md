@@ -61,47 +61,16 @@ Canonical lock ordering (documented `RenewalProcessor.php:83-85`, `EarlyRenewMan
 | `arraysubs_send_expiring_soon` | constant `:128`, **handler exists** (`EmailManager.php:125,892-917`) but **nothing ever schedules it** |
 | `arraysubs_send_payment_failed` | constant `:122`, **handler exists** (`EmailManager.php:124,881-885`) but **nothing ever schedules it** (failure emails travel via the `arraysubs_gateway_payment_failed` action instead) |
 
-## Exact WP-CLI force-run commands
+## Execution safety for this QA suite
 
-Run from WP root `/home/server-manager/www/arrayhash/mirror-help.arrayhash.com/public`. This install's `wp action-scheduler` supports `action`, `clean`, `data-store`, `fix-schema`, `run`, `runner`, `source`, `status`, `version` — **there is no `list`** (verified).
+This install has no `wp action-scheduler list` command. Read queue rows with the direct, read-only SQL queries in the task files and with Tools -> Scheduled Actions.
 
-```bash
-cd /home/server-manager/www/arrayhash/mirror-help.arrayhash.com/public
+Hook-wide and group-wide runner commands are intentionally omitted: they can claim unrelated SLT and non-SLT work and are forbidden by the suite isolation contract. When a task explicitly authorizes manual execution, record the target row and its args first, then use **Run** in Tools -> Scheduled Actions for one exact action ID at a time. Renewal tests run the target invoice ID first and the target charge ID second. Re-snapshot after every state change.
 
-# Per-subscription renewal legs (the two you almost always need together)
-wp action-scheduler run --hooks=arraysubs_generate_renewal_invoice --force --allow-root
-wp action-scheduler run --hooks=arraysubs_process_renewal --force --allow-root
-
-# Recovery sweeps
-wp action-scheduler run --hooks=arraysubs_generate_upcoming_renewals --force --allow-root
-wp action-scheduler run --hooks=arraysubs_check_overdue_renewals --force --allow-root   # run 2-3x: phases 2 and 3 are queued by phase 1
-
-# Trials, cancels, expiry, reminders
-wp action-scheduler run --hooks=arraysubs_process_trial_conversions --force --allow-root
-wp action-scheduler run --hooks=arraysubs_cancel_subscription --force --allow-root
-wp action-scheduler run --hooks=arraysubs_expire_subscription --force --allow-root
-wp action-scheduler run --hooks=arraysubs_send_renewal_reminder --force --allow-root
-wp action-scheduler run --hooks=arraysubs_process_skipped_cycle --force --allow-root
-wp action-scheduler run --hooks=arraysubs_resume_subscription --force --allow-root
-
-# Gateway / maintenance
-wp action-scheduler run --hooks=arraysubs_gateway_reconcile --force --allow-root
-wp action-scheduler run --hooks=arraysubs_daily_maintenance_run --force --allow-root
-wp action-scheduler run --hooks=arraysubs_respread_renewals --force --allow-root
-
-# Multiple hooks in one pass (comma separated)
-wp action-scheduler run --hooks=arraysubs_generate_renewal_invoice,arraysubs_process_renewal --force --allow-root
-
-# By group
-wp action-scheduler run --group=arraysubs-renewals --force --allow-root
-wp action-scheduler status --allow-root
-```
-
-**`run` only claims actions whose scheduled timestamp is already in the past.** `--force` bypasses the "queue already running" guard, *not* the due-date filter. If you move a date backwards you MUST also move the queued action (see SLT-REF-10).
+`wp action-scheduler status --allow-root` remains a read-only runner-status check; it does not list action rows.
 
 ## Post-meta pointers written when a per-subscription action is scheduled
 
 `ActionScheduler::getMetaKey()` `:1246-1257` — useful for asserting a leg exists without the admin UI:
 
 `_renewal_action_id`, `_renewal_invoice_action_id`, `_trial_conversion_action_id`, `_cancel_action_id`, `_hold_action_id`, `_expire_action_id`, `_renewal_reminder_action_id`, `_expiring_soon_action_id`, `_resume_subscription_action_id`, `_skip_cycle_action_id`.
-

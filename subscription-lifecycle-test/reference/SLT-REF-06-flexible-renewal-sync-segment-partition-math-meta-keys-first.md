@@ -46,9 +46,9 @@ filterable via `arraysubs_subscription_data_supports_renewal_sync`.
 |---|---|---|
 | `stripe`, `arraysubs_stripe` | **YES** | `:76-77` |
 | `paypal`, `paddle`, `arraysubs_paypal`, **`arraysubs_paddle`** | **NO — hard-coded false** | `:78-79` |
-| any object exposing `supportsSubscriptionCapability()` | supported **only if** `supportsSubscriptionCapability('automatic_payments')` is FALSE (`:80-81`) |
-| `bacs, cheque, check, cod, invoice, manual, offline, bank_transfer, bank-transfer` | **YES** (`:56-72,82-83`) |
-| empty id **and** `$gateway === null` | YES (`:52-54`) — this is what makes back-end/programmatic subscription creation sync-eligible |
+| any object exposing `supportsSubscriptionCapability()` | supported **only if** `supportsSubscriptionCapability('automatic_payments')` is FALSE | `:80-81` |
+| `bacs, cheque, check, cod, invoice, manual, offline, bank_transfer, bank-transfer` | **YES** | `:56-72,82-83` |
+| empty id **and** `$gateway === null` | **YES** — this is what makes back-end/programmatic subscription creation sync-eligible | `:52-54` |
 
 Filter escape hatches: `arraysubs_renewal_sync_manual_gateway_ids` (`:59`), `arraysubs_renewal_sync_supported_gateway` (`:93`).
 
@@ -84,7 +84,7 @@ Calendar overflow (31-day months, leap years) is **absorbed into the last active
 | **3** | `[b1, b2]` from `sanitizeBoundaries()` `:153-169` | `1..b1` → 1st active seg; `b1+1..b2` → 2nd; `b2+1..cycle_days` → 3rd |
 | **2** | `[b1]` from `sanitizeSingleBoundary()` `:178-187` | `1..b1` → 1st active seg; `b1+1..cycle_days` → 2nd |
 | **1** | `[]` | `1..cycle_days` → that single segment |
-| 0 configured | forced back to `[1,2,3]` (defensive) `:239-241` |
+| **0 active segments configured** | recomputed for three active segments | actives forced back to `[1,2,3]` (defensive) `:239-241` |
 
 ### Boundary defaults and clamping
 
@@ -184,4 +184,3 @@ Note the checkout-time gateway resolution: `arraysubs_get_current_renewal_sync_g
 - always writes `META_SEG1_END = max(1, seg1_end)` and `META_SEG2_END = max(2, seg2_end)` (`:250-251`)
 
 Simple products save on `woocommerce_process_product_meta` prio 15; variations on `woocommerce_save_product_variation` prio 15 (`:44-45`).
-

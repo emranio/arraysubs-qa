@@ -77,9 +77,10 @@ To exercise the email in a test you must schedule it by hand:
 cd /home/server-manager/www/arrayhash/mirror-help.arrayhash.com/public
 wp eval '\ArraySubs\Supports\ActionScheduler::scheduleSingle(
   \ArraySubs\Supports\ActionScheduler::HOOK_SEND_EXPIRING_SOON,
-  time()-60, [SUBID], \ArraySubs\Supports\ActionScheduler::GROUP_EMAILS);' --allow-root
-wp action-scheduler run --hooks=arraysubs_send_expiring_soon --force --allow-root
+  time()+12*HOUR_IN_SECONDS, [SUBID], \ArraySubs\Supports\ActionScheduler::GROUP_EMAILS);' --allow-root
 ```
+
+Record the returned/exact action ID, confirm its args are `[SUBID]`, then use **Run** on that one row in Tools -> Scheduled Actions. The future timestamp prevents cron from racing the browser. Never run the email hook as a drain.
 
 ## 4. Store-credit expiring (pro)
 
@@ -90,6 +91,5 @@ Warning window is the hardcoded constant `CreditExpiration::DAYS_BEFORE_EXPIRY_W
 | Want | Set `_next_payment_date` to | Then |
 |---|---|---|
 | reminder to fire immediately | `now + 3 days − offset − 5 minutes` … i.e. anything that makes `D − 3d + k` land in the past **at schedule time** the scheduler refuses. Instead: set `_next_payment_date` to a **future** value `> now + 3 days − k`, call `EmailManager::scheduleRenewalReminder()`, then rewrite the AS action time. | see SLT-REF-10 §time-travel |
-| simplest reliable path | set `_next_payment_date = now + 3 days + k + 1 min`, run `wp eval '\ArraySubs\Features\Emails\Services\EmailManager::scheduleRenewalReminder(SUBID);'`, then `UPDATE wp_actionscheduler_actions SET scheduled_date_gmt/scheduled_date_local` back to the past, then `wp action-scheduler run --hooks=arraysubs_send_renewal_reminder --force` | — |
+| simplest reliable path | set `_next_payment_date = now + 3 days + k + 1 min`, run `wp eval '\ArraySubs\Features\Emails\Services\EmailManager::scheduleRenewalReminder(SUBID);' --allow-root`, record `_renewal_reminder_action_id`, verify its args, then use **Run** on that exact row in Tools -> Scheduled Actions | never rewrite the row into cron range; never drain the hook |
 | re-send after a send | you must change `_next_payment_date` (the dedupe key) or delete `_arraysubs_renewal_reminder_sent_for` | `EmailManager.php:816-820` |
-

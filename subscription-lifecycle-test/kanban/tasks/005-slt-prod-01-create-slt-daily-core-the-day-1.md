@@ -1,15 +1,16 @@
 ---
 id: 5
 title: SLT-PROD-01 Create SLT Daily Core, the day/1 workhorse subscription product
-status: todo
+status: done
 priority: critical
 created: 2026-08-02T03:43:03.30633431+02:00
-updated: 2026-08-02T03:43:13.207187376+02:00
+updated: 2026-08-02T14:02:26.069201505+02:00
+started: 2026-08-02T14:02:26.069200473+02:00
+completed: 2026-08-02T14:02:26.069200473+02:00
 tags:
     - setup
     - products
     - day-00
-    - has-conflicts
 due: "2026-08-02"
 estimate: 30m
 depends_on:
@@ -22,30 +23,12 @@ class: standard
 > Read `README.md` (environment + isolation contract), `calendar.md` (this day's exact
 > ordering — it is binding, not advisory) and `plan-audit.md` before starting.
 
-### ⚠ Conflict resolutions that apply to this task
-
-**`unrated` · shared-global-setting** — with `SLT-SYN-04`, `SLT-SETUP-05`, `SLT-SETUP-02`, `SLT-PROD-12`, `SLT-PROD-13`, `SLT-PROD-14`
-
-- *Problem:* renewals.sync_to_billing_cycle is written by two tasks on the same authored day. SLT-SETUP-02 turns it OFF as a declared window-wide baseline; SLT-SYN-04 turns it back ON (steps 3-15) and only restores it at step 16. Every other day-0 task asserts the OFF baseline while sync is ON: SLT-SETUP-05 pass criterion 'Stripe AND Paddle both offered for SLT Daily Core' is guaranteed to FAIL because maybeHideUnsupportedRenewalSyncGateways() hides arraysubs_paddle on every non-trial, non-lifetime subscription cart once the global switch is on; the guest cart previews in SLT-PROD-01/02/04/09/12/13/14/15 would read altered first-charge amounts and midnight-boundary next-payment dates; and any checkout completed inside the ON window permanently writes _renewal_sync_enabled=yes plus the five _renewal_sync_* metas onto that subscription, which cannot be undone by restoring the setting. Secondary hazard: turning sync ON re-exposes the First Charge select that SLT-SETUP-02 step 3 deliberately never touched, so a careless Save on the General page can write sync_first_charge_mode explicitly.
-- *Required fix:* Make SLT-SYN-04 the sole writer of sync_to_billing_cycle and give it an exclusive, fixed bracket: run it on D3 (2026-08-04) 09:00-11:00 site time only. No other SLT task may add to cart, reach checkout, place an order, save a product, or drain Action Scheduler inside that bracket. SLT-SYN-04 must (a) capture the jq settings dump before flipping, (b) never click the First Charge select, (c) restore the switch and prove the jq diff is empty before the bracket is released, (d) post the 'bracket closed' confirmation to the registry page. Schedule SLT-SETUP-05 on D1, two days ahead of the bracket, so its two-gateway assertion runs against the true OFF baseline.
-
-**`unrated` · impossible-timing** — with `SLT-SYN-04`, `SLT-PROD-16`, `SLT-PROD-14`, `SLT-PROD-06`
-
-- *Problem:* SLT-SYN-04's global-sync-ON window is not just a checkout hazard: any renewal that Action Scheduler processes while the switch is ON can pick up sync context and be re-anchored from its checkout anniversary to the site-local midnight boundary. By the time SLT-SYN-04 can realistically run (after SETUP-01/02/PROD-16/SETUP-05/SYN-03 have completed), several day/1 and day/2 subscriptions bought on D0/D1 already have renewals due, and their anniversary times are whatever clock time those checkouts happened. If a checkout was done at 09:30 site on D0, its renewal fires at 09:30 site the next day - inside a morning ON window.
-- *Required fix:* Two-part rule. (1) Every SLT purchase on D0, D1 and D2 must be executed AFTER 12:00 site time, so all anniversary renewals land in the afternoon. (2) SLT-SYN-04's ON bracket is fixed at 09:00-11:00 site on D3 and no `wp action-scheduler run` of any kind may be issued during it. Record the exact UTC open/close timestamps of the bracket in the evidence root as SLT-SYN-04-bracket.txt so any anomalous renewal in that interval can be attributed.
-
-**`unrated` · impossible-timing** — with `SLT-SETUP-01`, `SLT-SETUP-02`, `SLT-SETUP-03`, `SLT-SETUP-04`, `SLT-SETUP-05`, `SLT-PROD-02`
-
-- *Problem:* 25 of the 26 authored tasks are stamped day 0. Sixteen of them are multi-step browser-driven product builds (each: open post-new, set 6-15 fields across 3 tabs, publish, reload, verify, meta-dump, guest front-end check, registry append), two are long audit tasks with 15-20 probe steps each (SLT-SYN-01, SLT-SYN-02), one is a live Stripe purchase with a settings flip and restore (SLT-SYN-04), and on top of that D0 is also where the plan's isolation notes demand the D0 purchases of SLT-PROD-01/02/03/06/07/10/12/13/14/15/16. There is a hard serial chain inside the day as well: SETUP-01 -> SETUP-02 -> PROD-16 -> SETUP-05 -> SYN-04, and SETUP-01 -> SETUP-02 -> PROD-14 -> SYN-03 -> SYN-04. This is not executable in one day, and it wastes D4-D9 which sit empty.
-- *Required fix:* Adopt the rebalanced D0-D10 calendar in schedule_notes. Only products with a genuinely date-bound purchase stay on D0 (SLT-PROD-01, 06, 07, 13 plus the three foundation tasks); everything else is spread D1-D5 with its purchase deadline recomputed so it still fits the window. Peak day drops from 25 tasks (~30h) to 7 tasks (~7h) and the median day is ~4.5h, inside the 1.6x band.
-
----
 ## Objective
 Create the plainest possible recurring product — day period, interval 1, no trial, no signup fee, no length limit, no flexible sync — so that renewals genuinely fire on their own once per day for the whole window and every other test has a known-good control to compare against.
 
 ## Scope
-- Gateway: both
-- Checkout: both
+- Gateway: N/A
+- Checkout: N/A (creation and storefront verification only)
 - Account: N/A (creation only)
 - Plugins: free-only
 
@@ -64,9 +47,9 @@ Create the plainest possible recurring product — day period, interval 1, no tr
 
 ## Steps
 1. Capture `mailpit-agent latest-id` before any admin save.
-2. `agent-browser --session admin open "https://mirror-help.arrayhash.com/wp-admin/post-new.php?post_type=product"` -> `agent-browser --session admin snapshot -i`.
+2. `agent-browser --session admin-SLT-PROD-01 open "https://mirror-help.arrayhash.com/wp-admin/post-new.php?post_type=product"` -> `agent-browser --session admin-SLT-PROD-01 snapshot -i`.
 3. **Product title**: `SLT Daily Core`.
-4. **Description**: `SLT window product. Daily recurring workhorse. Delete on 2026-08-11.`
+4. **Description**: `SLT window product. Daily recurring workhorse. Delete on 2026-08-15.`
 5. In the **Product data** panel keep the type dropdown on **Simple product**; tick **Virtual**; leave **Downloadable** unticked.
 6. Tick the header checkbox **Subscription [ArraySubs]** (this writes `_is_subscription=yes`; it renders next to Virtual/Downloadable and is only offered for simple and variable types).
 7. **General** tab: **Regular price ($)** = `10.00`. Leave **Sale price** empty. Note: `SubscriptionProducts\Services\Hooks::getPostedSubscriptionProductValidationErrors()` blocks the save with "Subscription products must have a valid regular price greater than zero" if this is 0 or empty.
@@ -76,8 +59,9 @@ Create the plainest possible recurring product — day period, interval 1, no tr
 11. Set the URL slug to `slt-daily-core` in the sidebar Permalink field. Publish.
 12. Reload the edit screen and confirm every subscription field survived the save.
 13. Verify meta: `wp post meta list <ID> --keys=_is_subscription,_subscription_period,_subscription_interval,_subscription_length,_trial_length,_signup_fee,_enable_renewal_price,_regular_price --allow-root`.
-14. Open the storefront page `https://mirror-help.arrayhash.com/?p=<ID>` as `--session guest` and confirm the subscription price/schedule summary renders under the price.
-15. Append the product ID to `slt-catalog-registry`.
+13a. Environment isolation, **before storefront access**: preserve the exact pre-window `members_access.enabled` and `ecommerce_rules` JSON, then append this product ID only to the existing full-store rule's `exclusion_product_ids` through **Member Access → Shop Access**. Verify the saved ID from the raw option.
+14. Open the storefront page `https://mirror-help.arrayhash.com/product/slt-daily-core/?slt-cache-bust=<timestamp>` as `--session guest-SLT-PROD-01` and confirm the subscription price/schedule summary renders under the price. The unique query string prevents stale edge HTML from deciding the verdict.
+15. Append the product ID and verified Shop Access exclusion to `slt-catalog-registry`.
 
 ## Expected results
 1. Product published, type `simple`, virtual, slug exactly `slt-daily-core`.
@@ -89,7 +73,7 @@ Create the plainest possible recurring product — day period, interval 1, no tr
 ## Emails expected
 | # | Email | Trigger point | Recipient | Subject contains | Verify with |
 |---|---|---|---|---|---|
-| 1 | NONE EXPECTED | Product publish | — | — | `mailpit-agent latest-id` after step 13 equals the id from step 1 |
+| 1 | NONE EXPECTED | Product publish | — | — | Complete delta after the step-1 baseline; zero task-attributable mail, while unrelated/background mail is allowed and classified |
 
 ## Evidence to capture
 - Screenshots: `SLT-PROD-01-01-general-tab.png`, `SLT-PROD-01-02-subscription-tab.png`, `SLT-PROD-01-03-frontend.png`.
@@ -104,7 +88,7 @@ Create the plainest possible recurring product — day period, interval 1, no tr
 
 ## Isolation / teardown
 - State handoff: this is THE control product. Use it for the guest->new checkout path, the block-vs-classic comparison, the Stripe SCA card path, the cancellation/reactivation flow, and as the non-flex baseline in gateway comparisons. Buy it with `slt-core` (or a guest email) only.
-- Restores: nothing. Deleted by SLT-SETUP-99.
+- Restores: nothing. Deleted by SLT-SETUP-99B.
 
 ---
 
@@ -121,8 +105,25 @@ Create the plainest possible recurring product — day period, interval 1, no tr
 - WooCommerce **grouped** products have zero handling in either plugin — grouped tasks are
   exploratory: document behaviour, do not assert a spec.
 - WP-Cron runs every minute from `/etc/cron.d/mirror-help-arrayhash-wordpress`. Scheduled actions
-  fire on their own; **a renewal that does not fire is a real bug** — capture evidence before forcing.
+  fire on their own; **a renewal that does not fire is a real bug** — capture evidence and do not force a natural-watch action.
 - Give this task its own browser session (`agent-browser --session <role>-<TASK-KEY>`). Sessions are
   keyed by name and **share a cart**.
-- Never run `wp action-scheduler run` without `--hooks=`; prefer a single action by ID.
-- Evidence goes in `qa/subscription-lifecycle-test/evidence/<TASK-KEY>/`.
+- Never run a bare or `--hooks=` Action Scheduler drain. Run one known action ID at a time only when the task explicitly authorizes it and after the required queue pre-flight; natural-watch actions are never forced.
+- Evidence goes under `/home/server-manager/slt-evidence/` using task-key-prefixed filenames.
+
+[[2026-08-02]] Sun 14:02
+### Execution result — 2026-08-02
+
+**Verdict: EXECUTED / PASS AFTER ENVIRONMENT ISOLATION REMEDIATION**
+
+- Published product ID 11927 through wp-admin as simple, virtual, in-stock, and subscription with slug slt-daily-core.
+- Reloaded editor values and WP-CLI metadata match the task contract: day/1, unlimited, no trial, signup fee 0, price 10.00, renewal-price and flex-sync metas absent.
+- The origin-fresh storefront renders $10.00 / day and Subscribe Now with no browser errors; the complete Mailpit delta contains no message attributable to this task.
+- The unmodified environment initially failed the storefront criterion because pre-existing Shop Access rule rule_1784662676378_maa3te08s targets all products and blocked both guest and authenticated slt-core. Logged `issues/SLT-PROD-01-members-access-all-products-rule-blocks-slt-checkouts.md`.
+- To keep downstream checkout QA viable, added only ID 11927 to that rule exclusion through wp-admin. The D0 rule JSON is preserved, the deviation and exact SETUP-99 restoration obligation are recorded on registry page 11847, and no non-SLT product was changed.
+- Cloudflare served stale pre-exclusion HTML at the canonical URL after the save; an origin-fresh query-string MISS showed the correct open state. Both observations are retained in the issue.
+- The resulting plan correction made this a binding suite-wide rule, added exact restoration to SLT-SETUP-99A, and
+  browser-verified that the four current SLT products remain purchasable while a non-SLT counterexample is
+  still blocked. The Member Access partial-save path was also fixed so rule saves no longer materialize
+  unrelated runtime defaults.
+- Evidence: /home/server-manager/slt-evidence/SLT-PROD-01-facts.txt, SLT-PROD-01-meta.json, SLT-PROD-01-01-general-tab.png, SLT-PROD-01-02-subscription-tab.png, SLT-PROD-01-03-frontend.png, SLT-PROD-01-03-frontend-blocked-before-exclusion.png, SLT-PROD-01-04-customer-blocked.png, and SLT-PROD-01-06-registry.png.

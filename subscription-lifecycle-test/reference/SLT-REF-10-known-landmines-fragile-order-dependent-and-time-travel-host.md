@@ -15,22 +15,21 @@ Ordered by how likely each one is to poison a test result. Paths relative to `/h
 
 Nothing observes meta writes. `wp action-scheduler run` only claims actions whose `scheduled_date_gmt <= now`, and `--force` bypasses the *runner* guard, not the due filter. Editing only the meta produces **no** renewal at all.
 
-Correct procedure — rewrite the meta **and** re-queue both legs:
+Correct suite procedure — rewrite the meta, re-queue only the target, and park both rows far enough in the future that the minute cron cannot race the browser:
 
 ```bash
 cd /home/server-manager/www/arrayhash/mirror-help.arrayhash.com/public
 wp eval '
 $id = SUBID;
-$due = gmdate("Y-m-d H:i:s", time() - 3600);          // 1h in the past
+$due = gmdate("Y-m-d H:i:s", time() - HOUR_IN_SECONDS);
 update_post_meta($id, "_next_payment_date", $due);
 \ArraySubs\Features\RecurringBilling\Services\RenewalScheduler::unschedule($id);
-\ArraySubs\Features\RecurringBilling\Services\RenewalScheduler::schedule($id, strtotime($due . " UTC"));
+\ArraySubs\Features\RecurringBilling\Services\RenewalScheduler::schedule($id, time() + 12 * HOUR_IN_SECONDS);
+printf("invoice_id=%s renewal_id=%s\n", get_post_meta($id, "_renewal_invoice_action_id", true), get_post_meta($id, "_renewal_action_id", true));
 ' --allow-root
-wp action-scheduler run --hooks=arraysubs_generate_renewal_invoice --force --allow-root
-wp action-scheduler run --hooks=arraysubs_process_renewal --force --allow-root
 ```
 
-Because `$due` is already past, `getInvoiceTimestamp()` returns `due + offset − 6h` (also past) rather than the `time()+60` branch (`RenewalScheduler.php:183-185`) — so both legs are immediately claimable in one drain.
+The stored `$due` is past so `RenewalProcessor::isRenewalDue()` accepts the target. The scheduler timestamp is deliberately future, preventing cron from claiming either row before evidence is captured. Query the two exact IDs, then use **Run** in Tools -> Scheduled Actions for the invoice ID first and the renewal ID second, re-snapshotting before each click. Hook/group drains are forbidden.
 
 ## L3 — `scheduleSubscriptionRenewal()` silently refuses past dates
 
@@ -58,20 +57,11 @@ After a paid renewal, if the newly computed `_next_payment_date` is still in the
 
 ## L8 — Sweep phase 1 does not put a subscription on hold on its first eligible pass
 
-`RecurringBilling/Services/Hooks.php:673-678`: when no unpaid renewal order exists, the sweep **creates the invoice and `continue`s**. So the on-hold transition needs at least **two** hourly `arraysubs_check_overdue_renewals` runs. In a drain-based test you must run the hook repeatedly. Additionally, phase 2 and 3 are only queued by phase 1 cursor 0 (`:533-546`), so a single `wp action-scheduler run --hooks=arraysubs_check_overdue_renewals --force` never reaches the cancel phase — **run it at least three times.**
+`RecurringBilling/Services/Hooks.php:673-678`: when no unpaid renewal order exists, the sweep **creates the invoice and `continue`s**. The on-hold transition therefore needs at least two natural hourly sweep passes. Phase 2 and phase 3 are queued only by phase 1 cursor 0 (`:533-546`). In this suite, observe those natural passes; do not replace them with a hook/group drain.
 
 ## L9 — Chain-overlap transients suppress repeated sweep kickoffs for 10 minutes
 
-`generateUpcomingRenewals()` `:351-357`, `checkOverdueRenewals()` `:549-555`, `processTrialConversions()` `:1269-1275`, `RenewalRespreader::handleBatch()` `:117-123` all bail at cursor 0 when `get_transient($flag) > time() - 600`. Back-to-back manual drains inside 10 minutes are **silently no-ops**. Clear them between runs:
-
-```bash
-wp transient delete arraysubs_chain_arraysubs_generate_upcoming_renewals --allow-root
-wp transient delete arraysubs_chain_overdue_phase_1 --allow-root
-wp transient delete arraysubs_chain_overdue_phase_2 --allow-root
-wp transient delete arraysubs_chain_overdue_phase_3 --allow-root
-wp transient delete arraysubs_chain_arraysubs_process_trial_conversions --allow-root
-wp transient delete arraysubs_chain_arraysubs_respread_renewals --allow-root
-```
+`generateUpcomingRenewals()` `:351-357`, `checkOverdueRenewals()` `:549-555`, `processTrialConversions()` `:1269-1275`, `RenewalRespreader::handleBatch()` `:117-123` all bail at cursor 0 when `get_transient($flag) > time() - 600`. Back-to-back invocations inside 10 minutes can be silent no-ops. Do not delete these global transients during the shared-site QA window; wait for the natural chain and record its action IDs/timestamps.
 
 ## L10 — Per-subscription execution locks last 10 minutes
 
@@ -81,7 +71,7 @@ wp transient delete arraysubs_chain_arraysubs_respread_renewals --allow-root
 
 | Meta | Blocks | Line |
 |---|---|---|
-| `_arraysubs_renewal_reminder_sent_for` (`"{$next_payment}|{$days}"`) | renewal reminder | `EmailManager.php:816-820` |
+| `_arraysubs_renewal_reminder_sent_for` (`"{$next_payment}\|{$days}"`) | renewal reminder | `EmailManager.php:816-820` |
 | `_arraysubs_expiring_soon_sent_for` | expiring-soon | `:907-911` |
 | `_arraysubs_trial_started_email_sent` | trial started | `:976-982` |
 | `_arraysubs_pending_cancel_email_sent_for` (`_cancellation_scheduled_date`) | pending-cancel notices | `:422-441` |
@@ -144,9 +134,8 @@ Several mechanisms are global, not per-subscription:
 - saving `renewals.spread_window_hours` / `invoice_before_due_value` / `invoice_before_due_unit` kicks a **site-wide** respread chain (`RenewalRespreader.php:89-97`)
 - the hourly sweeps are cursor-paged at `renewals.sweep_batch_size` (default **50**, `Hooks.php:399-400,627-629`) starting from the **lowest post ID** — with 354 existing subscriptions, a newly created (high-ID) test subscription is reached only after several chained batches
 - the chain-overlap transients in L9 are global
-- `arraysubs_renewal_spread_migrated` is already set to `1.8.11` (verified `wp option get`), so the one-time upgrade respread (`Hooks.php:160-167`) will not re-run; deleting it would kick a site-wide respread
+- `arraysubs_renewal_spread_migrated` is already set to `1.8.11` (verified `wp option get arraysubs_renewal_spread_migrated --allow-root`), so the one-time upgrade respread (`Hooks.php:160-167`) will not re-run; deleting it would kick a site-wide respread
 
 ## L25 — Timezone handling is mixed but currently safe
 
 Some call sites parse dates as `strtotime($date)` (`RenewalProcessor::isRenewalDue()` `:538`, `ProrationCalculator::getDaysUsed()` `:444`), others as `strtotime($date . ' UTC')` (`Hooks.php:447,663`, `EarlyRenewManager.php:137`). These agree **only because WordPress forces `date_default_timezone_set('UTC')`**. Do not "fix" a test by relying on the bare form, and never change the PHP process timezone. Sync boundaries, by contrast, are computed in **site time (UTC+6)** and converted to UTC for storage (`renewal-sync-helpers.php:245,253,385-392`) — a monthly boundary of "1st 00:00 site" is stored as `…-<last day> 18:00:00` UTC. Expect that 6-hour shift in every stored synced date.
-

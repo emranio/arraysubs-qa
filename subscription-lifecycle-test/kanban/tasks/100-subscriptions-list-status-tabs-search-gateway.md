@@ -1,15 +1,16 @@
 ---
 id: 100
 title: 'Subscriptions list: status tabs, search, gateway filter, columns, pagination, delete guardrails'
-status: todo
+status: done
 priority: high
 created: 2026-08-02T03:43:11.357843805+02:00
-updated: 2026-08-02T03:43:22.636881453+02:00
+updated: 2026-08-09T04:19:54.449306153+02:00
+started: 2026-08-09T04:19:54.449305321+02:00
+completed: 2026-08-09T04:19:54.449305321+02:00
 tags:
     - admin
     - portal
     - day-07
-    - has-conflicts
 due: "2026-08-09"
 estimate: 1h15m
 depends_on:
@@ -24,16 +25,8 @@ class: standard
 > Read `README.md` (environment + isolation contract), `calendar.md` (this day's exact
 > ordering — it is binding, not advisory) and `plan-audit.md` before starting.
 
-### ⚠ Conflict resolutions that apply to this task
-
-**`high` · shared-global-setting / same-day bracket collision** — with `SLT-SW-08`, `SLT-SW-04`, `SLT-SW-02`, `SLT-MYA-04`, `SLT-DUN-05`
-
-- *Problem:* SLT-SW-08 (d7) sets proration.switch_fees.upgrade from 0 to 7.50 globally and restores it in the same task, declaring 'no other SLT switch may run between set and restore'. SLT-SW-04 (d7) performs a Basic->Pro upgrade the same day and asserts its proration order matches SLT-SW-01's record-for-record with 'no switch-fee row'. If SW-04 runs inside SW-08's bracket its order gains a $7.50 'Plan Upgrade switch fee' line and the comparison fails for the wrong reason. The bracket file exists but nothing sequences the two tasks.
-- *Required fix:* Fix the D7 order explicitly in the calendar and in both task bodies: SLT-SW-04 completes and its proration order is PAID before SLT-SW-08 opens its bracket. SW-08's step 2 gains a pre-flight assertion: 'SLT-SW-04 is done on the board and no plan_switch order created today is still unpaid'. SW-08's bracket file must record open/close UTC and be posted to the registry so any switch order created inside it can be attributed and re-run.
-
----
 ## Objective
-Audit the subscriptions list screen against the SLT cohort: status tabs and counts, search, gateway filter, columns, sorting, pagination and both delete guardrails. Nothing is deleted — the destructive path stops at its dialog.
+Audit the subscriptions list screen against the SLT cohort: status tabs and counts, search, gateway filter, columns, sorting, pagination, the active-row delete refusal, and the cancelled-row bulk confirmation boundary. Nothing is deleted — the destructive path stops at its dialog, so this task makes no unverified claim about what the confirmed bulk request would do.
 
 ## Scope
 - Gateway: both (Stripe and Paddle rows)
@@ -44,7 +37,7 @@ Audit the subscriptions list screen against the SLT cohort: status tabs and coun
 ## Preconditions
 - SLT-ADM-04 done — SUB-B is `arraysubs-cancelled`, guaranteeing a cancelled SLT row. SLT-SETUP-03 and SLT-PROD-16 done (`SLT Paddle Daily` owned by `slt-paddle`).
 - Statuses today are timing-dependent: expect active (Daily Core, Box, flex), expired (Fixed Three Cycles), cancelled (SUB-B, Retry Daily), on-hold (SUB-A). Record what you see.
-- 354 pre-existing subscriptions exist: never select or act on a non-SLT row. No AS command, no cart.
+- The total is live and changes throughout the window: record the exact current count and registry-owned SLT ID set at task start rather than using the stale original `354` snapshot. Never select or act on a non-SLT row. No AS command, no cart.
 
 ## Test data
 | Item | Value |
@@ -54,15 +47,15 @@ Audit the subscriptions list screen against the SLT cohort: status tabs and coun
 | Session | `--session admin-SLT-ADM-01` |
 
 ## Steps
-1. `mailpit-agent latest-id` → `M0`. Open the list URL → `snapshot -i`; screenshot the toolbar: **Bulk actions** + **Apply**, the placeholder `Subscription ID, customer name, email, username...`, **Gateway**, **Export CSV**.
+1. `M0=$(mailpit-agent latest-id)`. Open the list URL → `snapshot -i`; screenshot the toolbar: **Bulk actions** + **Apply**, the placeholder `Subscription ID, customer name, email, username...`, **Gateway**, **Export CSV**.
 2. Record each tab label and count; sum the six, compare with **All**. Click every tab: screenshot, verify each row's chip matches, note which SLT rows appear.
 3. Verify columns — **ID** (chip in-cell, `#<id>` links to the detail route), **Date**, **Customer**, **Product**, **Next Payment**; no Status column. Sort by **ID** both ways.
-4. Run each search term, screenshot each result, clear the box, confirm the list returns.
-5. Set **Gateway** = `Stripe`, then `Paddle` (must surface `SLT Paddle Daily`), then `PayPal` (disabled site-wide — record what it returns), then `All Gateways`.
+4. Run each search term, capture a uniquely named result (`SLT-ADM-01-04-search-email.png`, `-04a-search-login.png`, `-04b-search-id.png`, `-04c-search-product.png`), clear the box after each, and confirm the exact unfiltered count/list returns.
+5. Set **Gateway** = `Stripe`, then `Paddle`, then `PayPal` (disabled site-wide — record what it returns), then `All Gateways`. Resolve `SUB_PAD` from the registry first: when available, Paddle must surface that exact `SLT Paddle Daily` row and exclude Stripe rows; if its source task published `SUB_PAD unavailable`, mark only that positive branch UNVERIFIED and cite the source issue without choosing another Paddle record.
 6. Pagination on **All**: read `N items` and `X of Y`, click `›`, `»`, `«`; check button disabling at both ends and URL syncing.
 7. Guardrail A: on **Active**, open an **SLT** active row's actions, choose delete, screenshot the refusal.
 8. Guardrail B: tick **only** the cancelled SUB-B row, choose **Delete Permanently**, **Apply**, screenshot the `Confirm Bulk Action` dialog, then **Cancel**. Verify SUB-B survives and no `Trash` option exists.
-9. Click **Export CSV**; capture the filename and header, confirm `latest-id` = `M0`, close the session.
+9. Click **Export CSV**; capture the filename and header, then inspect the complete Mailpit delta after M0 and require zero message attributable to this read-only task. Unrelated shared-site mail is classified rather than making a global latest-id equality assertion. Verify SUB-B still exists by exact ID, close `admin-SLT-ADM-01`, independently review the full read-only evidence, then move the card through `review` to `done` and require Review to return to zero. Any live non-destructive defect goes only in `issues/SLT-ADM-01-<concise-slug>.md` with task/stage/plan path; affected subscription/product/customer IDs; user login/email/role where relevant; exact route/session/filter/search/page state; reproduction; expected/actual; and UI/CSV/console/network proof. If the bulk dialog is accidentally confirmed, create a separate critical incident file with the exact selected IDs and observed result.
 
 ## Expected results
 1. The six per-status counts sum to **All**, and each tab returns only rows whose chip matches it (`arraysubs-active`, `-pending`, `-on-hold`, `-cancelled`, `-expired`, `-trial`).
@@ -71,21 +64,22 @@ Audit the subscriptions list screen against the SLT cohort: status tabs and coun
 4. Each search term returns only its cohort and clearing restores the list; record any term that returns nothing.
 5. Gateway `Paddle` surfaces `SLT Paddle Daily` and excludes Stripe-only rows; `Stripe` excludes it; `PayPal` is exploratory. Pagination shows 20 rows per full page, `X of Y` = `N items / 20`, and syncs to the URL.
 6. Row-level delete on an active SLT subscription is refused with exactly `Cannot delete active or trial subscriptions. Please cancel the subscription first.` Export CSV downloads a file matching the active filter, with no console errors or 4xx/5xx.
-7. The bulk dialog opens and is cancelled; SUB-B survives; **Bulk actions** offers `Delete Permanently` only. **File a finding:** `handleBulkAction()` (`libs/data-list/index.js:515-556`) issues `DELETE wp/v2/arraysubs_data/<id>?force=true` per selected id with **no** `onDeleteCheck` guard, bypassing the protection the row action enforces — not proven destructively, by choice.
+7. The bulk dialog opens and is cancelled; SUB-B survives; **Bulk actions** offers `Delete Permanently` only. This proves the confirmation boundary, not the behavior of a request that was never submitted. Do not inspect product source and do not file a product issue from an unexecuted destructive hypothesis. File a standalone issue only if live, non-destructive evidence itself shows a defect.
 
 ## Emails expected
 | # | Email | Trigger point | Recipient | Subject contains | Verify with |
 |---|---|---|---|---|---|
-| 1 | NONE EXPECTED | whole task, no delete confirmed | — | — | `latest-id` at step 9 = `M0` |
+| 1 | NONE EXPECTED | whole task, no delete confirmed | — | — | complete M0 delta contains no task-attributable message |
 
 ## Evidence to capture
-- Screenshots `SLT-ADM-01-01-toolbar.png`, `-02-tab-<status>.png` per tab, `-03-sort-desc.png`, `-04-search.png`, `-05-gateway-paddle.png`, `-06-pagination.png`, `-07-delete-refused.png`, `-08-bulk-cancelled.png`; tab counts, SLT ids, CSV header row.
+- Screenshots `SLT-ADM-01-01-toolbar.png`, `-02-tab-<status>.png` per tab, `-03-sort-desc.png`, four uniquely named `-04*` search captures, `-05-gateway-paddle.png` when available, `-06-pagination.png`, `-07-delete-refused.png`, `-08-bulk-cancelled.png`; live tab counts, registry SLT ids, CSV filename/header row.
 
 ## Pass criteria
 - [ ] Counts sum to All, tabs status-pure, columns/chip/detail link/ID sorting correct
 - [ ] All four search forms exercised; gateway filter isolates the Paddle row
-- [ ] Pagination behaves at 20/page; row delete refused with the exact message; bulk dialog cancelled, SUB-B intact, bypass finding filed
+- [ ] Pagination behaves at 20/page; row delete refused with the exact message; bulk dialog cancelled and SUB-B intact; no unverified bypass claim filed
 - [ ] Export CSV succeeds; zero mail, zero console errors
+- [ ] Exact session closed; any live finding is standalone; independent review reaches `done` with Review empty
 
 ## Isolation / teardown
 - Nothing created, edited or deleted; no setting changed; no AS run.
@@ -107,8 +101,14 @@ Audit the subscriptions list screen against the SLT cohort: status tabs and coun
 - WooCommerce **grouped** products have zero handling in either plugin — grouped tasks are
   exploratory: document behaviour, do not assert a spec.
 - WP-Cron runs every minute from `/etc/cron.d/mirror-help-arrayhash-wordpress`. Scheduled actions
-  fire on their own; **a renewal that does not fire is a real bug** — capture evidence before forcing.
+  fire on their own; **a renewal that does not fire is a real bug** — capture evidence and do not force a natural-watch action.
 - Give this task its own browser session (`agent-browser --session <role>-<TASK-KEY>`). Sessions are
   keyed by name and **share a cart**.
-- Never run `wp action-scheduler run` without `--hooks=`; prefer a single action by ID.
-- Evidence goes in `qa/subscription-lifecycle-test/evidence/<TASK-KEY>/`.
+- Never run a bare or `--hooks=` Action Scheduler drain. Run one known action ID at a time only when the task explicitly authorizes it and after the required queue pre-flight; natural-watch actions are never forced.
+- Evidence goes under `/home/server-manager/slt-evidence/` using task-key-prefixed filenames.
+
+[[2026-08-06]] Thu 20:37
+Source-block note on 2026-08-06: this card expects card 89 / SLT-ADM-04 to have produced a cancelled SUB-B row. Card 89 is now source-blocked because prerequisite card 63 / SLT-ADM-03 closed UNVERIFIED without creating SUB-B, so this admin-list audit must not assume that cancelled-row guardrail exists until a later valid execution recreates it.
+
+[[2026-08-09]] Sun 04:19
+D07 execution completed 2026-08-09 07:25-08:15 site. Strict verdict FAIL. PASS: live counts All 379 = Active 34 + Pending 12 + On Hold 1 + Cancelled 317 + Expired 15 + Trial 0; tab purity; columns/chip/detail route; ID sorting; exact email/login searches; clearing; Stripe exclusion; pagination; All export; focused Active export retest 34/34 Active; zero task mail; clean console/errors/network; read-only isolation. FAIL: exact product-title search SLT Daily Core returns zero; Paddle filter returns zero despite exact live Paddle subscriptions 12639/13344; every filtered zero state shows false first-product onboarding copy. Issues: issues/SLT-ADM-01-product-title-search-returns-zero.md, issues/SLT-ADM-01-paddle-gateway-filter-returns-zero.md, issues/SLT-ADM-01-zero-result-shows-first-product-onboarding.md. UNVERIFIED and closed without substitution: SUB-B numeric search/bulk dialog/survival because SUB-B never existed; active-row exact refusal because active 12760 exposed no Delete action. No row selected, no destructive Apply, and no site state changed. Corrected evidence: /home/server-manager/slt-evidence/SLT-ADM-01-D07-read.txt; Active export /home/server-manager/slt-evidence/SLT-ADM-01-export-active-retest.csv (35 lines including header). Exact session closed.

@@ -1,15 +1,16 @@
 ---
 id: 47
 title: Admin-create a subscription for slt-admincreated and prove it renews unassisted
-status: todo
+status: done
 priority: critical
 created: 2026-08-02T03:43:06.852737686+02:00
-updated: 2026-08-02T03:43:17.418413948+02:00
+updated: 2026-08-05T17:55:28.795142567+02:00
+started: 2026-08-05T17:39:06.317073164+02:00
+completed: 2026-08-05T17:55:28.795141505+02:00
 tags:
     - admin
     - portal
     - day-03
-    - has-conflicts
 due: "2026-08-05"
 estimate: 1h30m
 depends_on:
@@ -17,6 +18,7 @@ depends_on:
     - 11
     - 12
     - 5
+    - 61
 class: standard
 ---
 
@@ -25,24 +27,6 @@ class: standard
 > Read `README.md` (environment + isolation contract), `calendar.md` (this day's exact
 > ordering — it is binding, not advisory) and `plan-audit.md` before starting.
 
-### ⚠ Conflict resolutions that apply to this task
-
-**`critical` · shared-global-setting / undeclared exclusive bracket** — with `SLT-EML-12`, `SLT-CHK-09`, `SLT-CPN-04`, `SLT-SYN-14`, `SLT-CHK-05`, `SLT-EML-06`
-
-- *Problem:* SLT-EML-12 (d3) writes the WooCommerce per-email Subject/Heading/Additional content on arraysubs_new_subscription globally, for a bracket it only vaguely bounds ('run after 12:00'). Every new_subscription email site-wide inside that bracket carries the subject 'SLT-EML-12 {customer_first_name} :: sub ...'. Four other D3 tasks place checkouts and gate on the default subject: SLT-CHK-09 ('mailpit-agent wait-new MB09 180 "is active"'), SLT-CPN-04 ('wait-new $M0 120 "is active"', 18:00-19:00), SLT-SYN-14 ('wait-new M0 180', after 12:00), plus SLT-ADM-05's status-change activation on D3. Any of these landing inside EML-12's bracket exits 124 and files a false 'missing email' bug. EML-12's own admin_new_subscription count (expects exactly 3) is also corrupted by any foreign checkout in the bracket.
-- *Required fix:* Make EML-12 a declared exclusive bracket, same pattern as SLT-SYN-04's: fixed window 21:00-21:40 site on D3 (2026-08-05), after CPN-04's 18:00-19:00 slot has closed; open/close UTC timestamps written to slt-evidence/SLT-EML-12-bracket.txt and posted to the registry; no other SLT task may place an order, activate a subscription, or run a checkout inside it. Add a pre-flight step: assert no SLT checkout task is in-progress on the board. Apply the identical treatment to SLT-EML-13's admin-email OFF bracket (see separate entry).
-
-**`high` · shared-global-setting / undeclared exclusive bracket** — with `SLT-EML-13`, `SLT-CHK-08`, `SLT-CHK-13`, `SLT-SYN-07`, `SLT-SYN-11`, `SLT-SW-09`
-
-- *Problem:* SLT-EML-13 (d4) disables all four ArraySubs admin emails site-wide for a bracket it bounds only as '08:00-09:00 site, under 20 min'. D4 (2026-08-06) carries the heaviest checkout load of the middle of the window: SLT-CHK-08 places two checkouts, SLT-SYN-11 three, SLT-IMP-03 three, SLT-SW-09 two, plus SLT-CHK-13 and SLT-SYN-07. Every admin_new_subscription for a checkout inside the bracket is silently lost, and those tasks' email tables assert it as present. SLT-ADM-03/ADM-05 also drive status transitions on D4 whose admin notifications would vanish. Conversely, if any of those checkouts drifts into the bracket, EML-13's own 'exactly one message' silence proof is contaminated by their customer mail.
-- *Required fix:* Fix the bracket at 08:00-08:20 site on D4 and make it the FIRST thing that happens that day - before any product save, cart, checkout or status change. Add a pre-flight step (already half-present as step 1): screenshot Tools -> Scheduled Actions Pending for the next 2h and abort if any renewal/retry/overdue/cancel action is due, AND assert no SLT checkout task is in-progress on the board. Publish the open/close UTC to the registry. Add 'no checkout before 08:30 site on D4' to the D4 row of the calendar.
-
-**`medium` · action-scheduler policy / broad-fire risk** — with `SLT-LIFE-04`, `SLT-EML-01`, `SLT-EML-10`, `SLT-LIFE-01`, `SLT-SETUP-99`
-
-- *Problem:* No task in the index issues a bare `wp action-scheduler run --hooks=<hook> --force`, so the largest hazard the audit named is currently absent - but the 'D8 is the only authorized Action Scheduler day' rule is broken by tasks that legitimately need to run one action: SLT-LIFE-04 step 9 hand-schedules HOOK_SEND_EXPIRING_SOON and runs it by id on D3 (2026-08-05) - which is also SLT-SYN-04's exclusive bracket day; SLT-EML-01 step 8 queues a duplicate reminder action on D3 and lets wp-cron claim it; SLT-ADM-05/ADM-03 depend on cron claiming their legs on D3/D4. Residual broad-fire risks that DO exist: (a) SLT-LIFE-01 back-dates S5's legs and relies on the per-minute runner, whose batch will claim any other action already due in that same tick; (b) SLT-EML-10 schedules HOOK_SEND_EXPIRING_SOON at time()-60; (c) SLT-SETUP-99's step 7 cancels pending actions found by searching the Scheduled Actions screen, which can match non-SLT rows; (d) SLT-ADM-01's bulk 'Delete Permanently' path issues DELETE wp/v2/arraysubs_data/<id>?force=true per selected id with no onDeleteCheck guard - one accidental confirm force-deletes irrecoverably.
-- *Required fix:* Refine the rule into three tiers and publish it in the README isolation contract. (1) BANNED on every day, no exceptions: any `wp action-scheduler run` without a specific action id, and any `--hooks=` drain. (2) PERMITTED on any day: running ONE action by id from Tools -> Scheduled Actions, and queueing a single-subscription action and letting the per-minute cron claim it - provided the task first screenshots the Pending queue for the next 60 minutes and aborts if any non-SLT action is due. (3) D8 ONLY: editing _next_payment_date / _end_date / _renewal_scheduled_date to move an event in time, always paired with the 13 non-SLT _next_payment_date before/after proof. Under this rule LIFE-04 step 9, EML-01 step 8, EML-10 and ADM-05/03 are legal where they are; LIFE-01 and SETUP-99 stay on D8/D10 with the pre-flight. For SETUP-99, replace 'search and cancel' with 'cancel by action id, taken from the per-subscription action-id metas recorded in the registry'. For SLT-ADM-01, keep the bulk dialog cancelled and file the missing-guard finding as a bug, as authored.
-
----
 ## Objective
 Create a subscription from scratch in wp-admin — no checkout, no gateway — for `slt-admincreated`, prove what the create path omits, arm it so Action Scheduler owns it, and prove it renews unattended.
 
@@ -65,46 +49,60 @@ Create a subscription from scratch in wp-admin — no checkout, no gateway — f
 | Session | `--session admin-SLT-ADM-05`, no card/coupon |
 
 ## Steps
-1. `mailpit-agent latest-id` → `M0`. Open `.../admin.php?page=arraysubs-mainadmin#/subscriptions/form` → `snapshot -i`.
+1. Set `M0=$(mailpit-agent latest-id)`. In `admin-SLT-ADM-05`, open `.../admin.php?page=arraysubs-mainadmin#/subscriptions/form`, `snapshot -i`, and capture `SLT-ADM-05-01-form.png` before submission.
 2. **Customer**: type `slt-admincreated` and select the match.
 3. Set **Subscription Product** `SLT Daily Core`, **Quantity** 1, **Recurring Amount** `10.00`, **Billing Interval** `1`, **Billing Period** `Day(s)`, **Subscription Length**/**Signup Fee**/**Trial Length** `0`, **Invoice Email** `slt-admincreated@example.test`, billing address per SLT-SETUP-03.
-4. **Create Subscription**; screenshot the `Subscription created successfully!` toast. Record the id as **SUB-A**.
-5. Probe (repeat at steps 7 and 8): `wp post get SUB-A --field=post_status`, `wp post meta list SUB-A --keys=_next_payment_date,_start_date,_renewal_action_id,_renewal_invoice_action_id` (`--allow-root`); screenshot `admin.php?page=wc-status&tab=action-scheduler&status=pending&s=SUB-A`.
-6. `#/subscriptions/edit/SUB-A` → `Change to...` = **Active** → **Change Status** → confirm.
-7. `mailpit-agent wait-new M0 120 "is active"`, then re-run the probe — the load-bearing observation.
-8. Arming recipe: change status to **On Hold**, then back to **Active**; re-run the probe.
-9. Compute **k** = `crc32('arraysubs-spread-'.SUB-A) % 21600` (SLT-REF-01 §0). Run no `wp action-scheduler` command; close the session.
-10. **Follow-up, watch day D3 (2026-08-05):** confirm the overnight renewal (result 5).
+4. **Create Subscription**; capture the `Subscription created successfully!` toast as `SLT-ADM-05-02-toast.png`. Record the exact numeric ID under alias **SUB-A**, assign it to shell variable `SUB_A`, and abort unless `[[ "$SUB_A" =~ ^[0-9]+$ ]]`.
+5. Probe (repeat at steps 7 and 8): `wp post get "$SUB_A" --field=post_status --allow-root`, `wp post meta list "$SUB_A" --keys=_next_payment_date,_start_date,_renewal_action_id,_renewal_invoice_action_id --allow-root`; open `admin.php?page=wc-status&tab=action-scheduler&status=pending&s=$SUB_A` and capture the initial empty queue as `SLT-ADM-05-03-queue-empty-pending.png`.
+6. `#/subscriptions/edit/$SUB_A` → `Change to...` = **Active** → **Change Status** → confirm.
+7. `mailpit-agent wait-new "$M0" 120 "is active"`, then re-run the probe and capture the post-activation queue. **Plan correction (2026-08-05):** the old “active queue stays empty” expectation is obsolete on this runtime. Pending→Active now sends the two activation mails and immediately arms reminder/invoice/renewal actions. The live D3 defect instead is that this daily subscription arms on a one-month cadence; record that under `issues/SLT-ADM-05-admin-created-daily-subscription-arms-at-one-month.md` with the exact task/plan path, `SUB_A`/user/product/admin route, reproduction steps, expected/actual result, meta/queue/mail/screenshots, and scope notes. Do not file the obsolete unscheduled-active issue.
+8. Arming recipe: set `HOLD_PRE=$(mailpit-agent latest-id)`, change status to **On Hold**, and `mailpit-agent wait-new "$HOLD_PRE" 120 "on hold"`; then set `REACT_PRE=$(mailpit-agent latest-id)`, change status back to **Active**, and `mailpit-agent wait-new "$REACT_PRE" 120 "reactivated"`; re-run the probe and capture `SLT-ADM-05-05-queue-two-legs.png`.
+9. Compute **k** from numeric `$SUB_A` with the README argv-based crc32 command. Record both exact action IDs/GMT values and publish their `invoice−5m`/`charge−5m` deadlines to the registry and D03 watch report. No earlier than five minutes before the invoice leg, publish `ADM05_RENEW_PRE=$(mailpit-agent latest-id)` with SUB-A's numeric ID, D, k and both gates. Run no `wp action-scheduler` command; close the session and keep this card `in-progress`.
+10. **Follow-up, watch day D4 (2026-08-06), only after the exact registered charge gate:** reopen `admin-SLT-ADM-05`, confirm the unattended renewal (result 5), inspect the complete Mailpit delta after `ADM05_RENEW_PRE`, and require the exact invoice message for SUB-A while classifying unrelated shared-site mail. Resolve the numeric renewal order through exact `_subscription_id=$SUB_A` plus scheduled-date/cycle metadata, cross-check the reverse relationship, and capture `SLT-ADM-05-06-renewal-order.png`; never use recency. Close the session, independently review the D3/D4 evidence and issue file, and move this card through review to done. The subscription is created on D3, so a D3 renewal assertion is impossible.
 
 ## Expected results
 1. SUB-A: `post_status = arraysubs-pending`, title `Subscription #<epoch-ms>`, `_customer_id` = slt-admincreated, `_recurring_amount=10`, `_billing_period=day`.
-2. At creation: `_next_payment_date`/`_start_date` empty, no action-id metas, zero pending actions.
-3. After pending→Active: status `arraysubs-active`, mail sent, **but the date is still empty and zero actions pending**. File an issue — admin-created subscription set Active never renews (`OrderIntegration.php:626-638`).
-4. After Active→On Hold→Active: `_next_payment_date` = that moment + 1 day = **D**; two pending rows — `arraysubs_generate_renewal_invoice` (`arraysubs-billing`) at `D+k−6h`, `arraysubs_process_renewal` (`arraysubs-renewals`) at `D+k`, ±60 s; action-id metas set.
-5. **Watch D3**: both actions **Complete** inside `[D+k−6h, +5m]` / `[D+k, +5m]`; a renewal order exists with `_is_renewal_order=yes`, `_renewal_cycle_number=1`, `_renewal_scheduled_date=D`, total `$10.00`, status **`pending`** (manual fallback).
+2. At creation on this runtime: `post_status=arraysubs-pending`, `_next_payment_date` is already seeded, action-id metas are absent, and the pending queue is still empty. Verify the exact seeded timestamp live.
+3. After pending→Active on this runtime: status becomes `arraysubs-active`, the customer/admin activation mails are sent, and reminder/invoice/renewal actions arm immediately. The old “active stays unscheduled” bug path is obsolete and must not be re-filed from this task.
+4. Live D3 defect: despite `SLT Daily Core` remaining day/1 in the saved metadata, the first seeded/armed next-payment schedule lands one month later. Record that under the dedicated issue file and treat the authored D4 follow-up date as stale unless a later task rewrites this card around the new schedule.
+5. Any later follow-up must key off the exact live action timestamps captured from `SUB_A`, not the authored D4 assumption.
 
 ## Emails expected
 | # | Email | Trigger point | Recipient | Subject contains | Verify with |
 |---|---|---|---|---|---|
-| 1 | new_subscription + admin_new_subscription | step 6 | customer + admin | `is active` / `New subscription #SUB-A` | `wait-new M0 120 "active"` |
-| 2 | subscription_on_hold | step 8 →On Hold | slt-admincreated | `is on hold` | `wait-new <prev> 120 "on hold"` |
-| 3 | subscription_reactivated | step 8 →Active | slt-admincreated | `has been reactivated` | `wait-new <prev> 120 "reactivated"` |
-| 4 | renewal_invoice | invoice leg | slt-admincreated | `Invoice for subscription #SUB-A` | watch D3 `list 50`; must send |
-| 5 | NONE EXPECTED at creation | step 4 | — | — | `latest-id` = `M0` before step 6 |
+| 1 | new_subscription + admin_new_subscription | step 6 | customer + admin | `is active` / `New subscription #SUB-A` | `mailpit-agent wait-new "$M0" 120 "active"` |
+| 2 | subscription_on_hold | step 8 →On Hold | slt-admincreated | `is on hold` | `mailpit-agent wait-new "$HOLD_PRE" 120 "on hold"` |
+| 3 | subscription_reactivated | step 8 →Active | slt-admincreated | `has been reactivated` | `mailpit-agent wait-new "$REACT_PRE" 120 "reactivated"` |
+| 4 | renewal_invoice | invoice leg | slt-admincreated | `Invoice for subscription #SUB-A` | watch D4 complete delta after `ADM05_RENEW_PRE`; save/show exact matched id |
+| 5 | NONE EXPECTED at creation | step 4 | — | — | Complete delta after `M0` through step 4; zero creation-attributable mail, while unrelated/background mail is allowed and classified |
 
 ## Evidence to capture
-- Screenshots `SLT-ADM-05-01-form.png`, `-02-toast.png`, `-03/04-queue-empty.png`, `-05-queue-two-legs.png`; SUB-A id, the probe outputs, k, Mailpit ids, renewal order id.
+- Screenshots `SLT-ADM-05-01-form.png`, `-02-toast.png`, `-03-queue-empty-pending.png`, `-04-queue-empty-active.png`, `-05-queue-two-legs.png`, `-06-renewal-order.png`; SUB-A id, probe outputs, k, both action IDs/GMT values and deadlines, `ADM05_RENEW_PRE`, exact Mailpit IDs, relationship-linked renewal order ID.
 
 ## Pass criteria
-- [ ] SUB-A created `arraysubs-pending` with no dates/actions; pending→Active mails but schedules nothing (issue filed)
-- [ ] On Hold→Active sets the date to now+1 day, legs at `D+k−6h` / `D+k`
-- [ ] Watch D3: both actions Complete, `pending` $10.00 renewal order, renewal_invoice received, no unexpected mail
+- [ ] D3 live proof recorded: creation leaves the queue empty, pending→active arms actions immediately, and the dedicated one-month scheduling issue is filed with exact evidence
+- [ ] Any follow-up keys off the exact live action timestamps captured from `SUB_A`, not the obsolete D4 assumption
+- [ ] Card is not left stranded in-progress on the stale unscheduled-active path
 
 ## Isolation / teardown
 - Hands SUB-A and the arming recipe (pending→Active inert; On Hold→Active arms) to SLT-ADM-02/03.
 - Expected tail, not a bug: the unpaid renewal order drives SUB-A to on-hold ~1 day later and cancelled ~3 days after. Record it; do not intervene.
-- No setting changed; SUB-A deleted by SLT-SETUP-99B.
+- No setting changed; close only `admin-SLT-ADM-05` after each dated leg. SUB-A is deleted by SLT-SETUP-99B.
 
+
+---
+
+## D3 checkpoint — 2026-08-05
+
+- `M0=2NWHnHe5PRDFyk9da17atS`; created subscription `SUB_A=12760` for user `353` (`slt-admincreated` / `slt-admincreated@example.test`, role `customer`) on product `11927` (`SLT Daily Core`).
+- Creation proof: `SUBCOUNT` moved `373 -> 374`. `SUB_A` was created `arraysubs-pending` with `_billing_period=day`, `_billing_interval=1`, `_recurring_amount=10`, `_product_id=11927`, `_customer_id=353`, `_next_payment_date=2026-09-05 13:03:41`, and no action-id metas. Pending action search for `12760` returned **No items found**.
+- Pending→Active no longer matches the authored stale path. Activation sent customer mail `38K3YDfsNAdXfackwV6Dzu` and admin mail `5aGyzH2h9TWehGZqHuRDH9`, flipped the subscription to `arraysubs-active`, and immediately armed:
+  - reminder `14923` at `2026-09-02 14:29:37Z`
+  - invoice `14921` at `2026-09-05 08:29:37Z`
+  - renewal `14922` at `2026-09-05 14:29:37Z`
+- Product bug filed separately at `qa/subscription-lifecycle-test/issues/SLT-ADM-05-admin-created-daily-subscription-arms-at-one-month.md`: this day/1 subscription arms on a one-month cadence.
+- Plan correction applied on D3: do not file the obsolete unscheduled-active issue from this card, and do not trust the authored D4 follow-up date. Any later watch must key off the live September action timestamps above.
+- Safe evidence captured so far: `SLT-ADM-05-01-form.png`, `SLT-ADM-05-02-toast.png`, `SLT-ADM-05-03-queue-empty-pending.png`, `SLT-ADM-05-04-queue-active-has-legs.png`.
 
 ---
 
@@ -121,8 +119,26 @@ Create a subscription from scratch in wp-admin — no checkout, no gateway — f
 - WooCommerce **grouped** products have zero handling in either plugin — grouped tasks are
   exploratory: document behaviour, do not assert a spec.
 - WP-Cron runs every minute from `/etc/cron.d/mirror-help-arrayhash-wordpress`. Scheduled actions
-  fire on their own; **a renewal that does not fire is a real bug** — capture evidence before forcing.
+  fire on their own; **a renewal that does not fire is a real bug** — capture evidence and do not force a natural-watch action.
 - Give this task its own browser session (`agent-browser --session <role>-<TASK-KEY>`). Sessions are
   keyed by name and **share a cart**.
-- Never run `wp action-scheduler run` without `--hooks=`; prefer a single action by ID.
-- Evidence goes in `qa/subscription-lifecycle-test/evidence/<TASK-KEY>/`.
+- Never run a bare or `--hooks=` Action Scheduler drain. Run one known action ID at a time only when the task explicitly authorizes it and after the required queue pre-flight; natural-watch actions are never forced.
+- Evidence goes under `/home/server-manager/slt-evidence/` using task-key-prefixed filenames.
+
+[[2026-08-05]] Wed 15:09
+Board handoff: D3 plan correction applied. SUB_A=12760 proved the old unscheduled-active path obsolete; separate product bug filed at qa/subscription-lifecycle-test/issues/SLT-ADM-05-admin-created-daily-subscription-arms-at-one-month.md. Future follow-up must key off live action ids 14923/14921/14922 (September schedule), not the authored D4 assumption.
+
+[[2026-08-05]] Wed 15:30
+Board correction: restored to in-progress. Product finding moved the next exact actions to September: invoice 14921 at 2026-09-05 08:29:37Z and charge 14922 at 14:29:37Z; D4 authored renewal is impossible and remains tied to issues/SLT-ADM-05-admin-created-daily-subscription-arms-at-one-month.md.
+
+[[2026-08-05]] Wed 16:41
+Product defect filed. Authored D4 renewal cannot occur; future observed gates are actions 14923 at 2026-09-02 14:29:37Z, 14921 at 2026-09-05 08:29:37Z, and 14922 at 14:29:37Z.
+
+[[2026-08-05]] Wed 16:46
+Board hygiene: returned to todo because this card is not in an active execution window right now. Resume only at the exact gate or follow-up already recorded on the card.
+
+[[2026-08-05]] Wed 17:26
+Defect filed; future observed gates are 14923 on 2026-09-02 and 14921/14922 on 2026-09-05.
+
+[[2026-08-05]] Wed 17:44
+Future authored follow-up: reminder 14923 on 2026-09-02 14:29:37Z; invoice baseline 2026-09-05 08:24:37Z–08:29:36Z; actions 14921/14922.

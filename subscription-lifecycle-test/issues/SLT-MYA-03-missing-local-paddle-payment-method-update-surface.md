@@ -1,0 +1,96 @@
+# Paddle payment-method update leaves the local card display stale
+
+- Severity: medium
+- Date found: 2026-08-08; confirmed 2026-08-09
+- Watch day: D06 with D07 settlement follow-up
+- Originating task: `SLT-MYA-03` / card `#94`
+- Plan file: `kanban/tasks/094-update-the-paddle-payment-method-and-prove-the.md`
+
+## Affected records
+
+- Subscription: `12639` (`SLT Paddle Daily`, arraysubs-active)
+- Product: `12112` (`SLT Paddle Daily`)
+- Parent order: `12629`
+- Payment-method-change order: `13214`
+- Later genuine renewal order: `13249`
+- Paddle subscription: `sub_01kz8q1025tryjfgxvn5e3v4gf`
+- Paddle payment-method-change transaction: `txn_01kzfj2d3mtsbasp6r8s8zmrw8`
+- Paddle recurring transaction: `txn_01kzge82gz7pyqne0x1prnmf6a`
+
+## Affected user
+
+- WP user ID: `352`
+- Login: `slt-paddle`
+- Email: `slt-paddle@example.test`
+- Role: Customer
+
+## Gateway, checkout, and settings context
+
+- Gateway: Paddle sandbox
+- Checkout type: N/A; customer account and Paddle-hosted payment-method management flow
+- Card fixtures recorded safely: previous Visa ending `4242`; replacement Paddle sandbox Visa debit fixture ending `5556`. No full card number is retained.
+- Non-default settings: none. The frozen suite baseline remained in force and no settings bracket was opened.
+
+## Routes and browser contexts
+
+- Payment methods: `https://mirror-help.arrayhash.com/my-account/payment-methods/`
+- Add payment method: `https://mirror-help.arrayhash.com/my-account/add-payment-method/`
+- Subscription detail: `https://mirror-help.arrayhash.com/my-account/view-subscription/12639/`
+- Paddle update route: temporary authenticated management URL obtained for the exact Paddle subscription; the token and full URL were not retained.
+- Admin subscription detail: `https://mirror-help.arrayhash.com/wp-admin/admin.php?page=arraysubs-mainadmin#/subscriptions/detail/12639`
+- Browser sessions: `customer-MYA-03-SLT-MYA-03` and `admin-SLT-MYA-03`
+
+## Reproduction steps
+
+1. Log in as `slt-paddle` and open `/my-account/payment-methods/`; observe that no saved Paddle payment method is listed.
+2. Open `/my-account/add-payment-method/`; observe that the available form is not a Paddle saved-method/update surface.
+3. Open `/my-account/view-subscription/12639/`; observe the Card on File row showing Visa ending `4242` and use its Update payment method control.
+4. On the temporary Paddle-hosted management page, submit the documented sandbox replacement card ending `5556` and wait for the successful return state. Do not capture populated hosted fields.
+5. Re-read the exact Paddle subscription/transaction and the local subscription card metas within five minutes.
+6. After the next natural recurring settlement, re-read both sides again to rule out delayed reconciliation.
+
+## Expected result
+
+After Paddle accepts the new payment method, the local customer surface should either show the current Paddle card safely or make clear that the displayed value is not current. A subsequent successful recurring charge on the new card should reconcile any delayed local display state.
+
+## Actual result
+
+- Paddle accepted the new Visa ending `5556`, and the later natural `$11.00` recurring charge used that card successfully.
+- The generic payment-methods page continued to expose no saved Paddle method.
+- The exact subscription continued to display locally stored Visa ending `4242`.
+- `_payment_method_brand=visa`, `_payment_method_last4=4242`, and `_payment_method_title=Paddle` remained unchanged; `_payment_method_updated_at` remained absent through the D07 settlement follow-up.
+- The customer therefore sees stale card data even though Paddle's source of truth and the actual captured renewal use ending `5556`.
+
+## Concrete proof
+
+- Before/after local meta: `/home/server-manager/slt-evidence/SLT-MYA-03-before.txt` and `/home/server-manager/slt-evidence/SLT-MYA-03-after.txt`
+- Sanitized Paddle state: `/home/server-manager/slt-evidence/SLT-MYA-03-paddle-api-before.json` and `/home/server-manager/slt-evidence/SLT-MYA-03-paddle-api-after.json`
+- Customer UI screenshots:
+  - `/home/server-manager/slt-evidence/SLT-MYA-03-01-methods-empty.png`
+  - `/home/server-manager/slt-evidence/SLT-MYA-03-02-detail-row.png`
+  - `/home/server-manager/slt-evidence/SLT-MYA-03-03-update-page.png`
+- Admin note screenshot: `/home/server-manager/slt-evidence/SLT-MYA-03-04-notes.png`
+- D07 natural-settlement evidence: `/home/server-manager/slt-evidence/SLT-MYA-03-D07-followup.txt`
+- Sanitized recurring transaction proof records `status=completed`, `origin=subscription_recurring`, total `1100` USD minor units, captured payment, and Visa last4 `5556`.
+- The D07 local read still records Paddle / Visa / `4242` with no `_payment_method_updated_at`.
+
+## Exact gates and Mailpit correlation
+
+- Hosted update submitted: `2026-08-08 02:10:02Z` / `08:10:02` site.
+- Natural remote billing gate: `2026-08-08T10:20:38.143985Z` / `16:20:38` site.
+- D07 settlement observation: `2026-08-09 00:16–00:23Z` / `06:16–06:23` site.
+- Update-event admin message `2AmbBF9Gr3ahDaee9jMKcH`: `[mirror-help.arrayhash.com]: You've got a new order: #13214` to `admin@mirror-help.arrayhash.com`.
+- Update-event customer message `4E4IXtfwjCT1FJZSE9B1mk`: `[mirror-help.arrayhash.com] Payment received for subscription #12639` to `slt-paddle@example.test`.
+- Natural-renewal admin message `3k11t5ipr2GSH5xTNFE483`: `[mirror-help.arrayhash.com]: You've got a new order: #13249` to `admin@mirror-help.arrayhash.com`.
+- Natural-renewal customer message `57lxgHohFqevl55xhVeR3P`: `[mirror-help.arrayhash.com] Payment received for subscription #12639` to `slt-paddle@example.test`.
+
+## Scope notes and counterexamples
+
+- This is not a failed hosted update: Paddle transaction `txn_01kzfj2d3mtsbasp6r8s8zmrw8` records the change, and transaction `txn_01kzge82gz7pyqne0x1prnmf6a` proves the new card was actually charged.
+- The subscription detail does provide a route into Paddle's hosted update flow; the defect is the absent generic Paddle saved-method representation and the stale local card display after return and settlement, not total inability to update the remote card.
+- No account, card meta, order, subscription, action, or setting was hand-edited. No non-SLT object was touched.
+- The unexpected zero-dollar renewal side effects are tracked separately in `issues/SLT-MYA-03-payment-method-change-treated-as-zero-dollar-renewal.md`.
+
+## D07 afternoon recurrence — 2026-08-09
+
+The next natural Paddle recurring transaction, `txn_01kzk0mpqxf7w1tpdcdyna8n9v`, again captured `$11.00` using Visa ending `5556`. It produced relationship-exact completed order `13480` and payment-success mail `3jUrzcrxsS5qMrFvzDePXI`. After settlement, local subscription `12639` still stores `_payment_method_brand=visa` and `_payment_method_last4=4242`, with no `_payment_method_updated_at` row. This second real charge rules out a one-cycle delayed refresh: Paddle and the actual payment remain on `5556`, while the local customer/admin surfaces remain backed by stale `4242` metadata. Full sanitized proof: `/home/server-manager/slt-evidence/D07-afternoon-paddle-12639.txt`.

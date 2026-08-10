@@ -1,19 +1,24 @@
 ---
 id: 71
 title: SLT-PROD-08 Create SLT Variable Daily with four subscription variations incl. a $0 probe
-status: todo
+status: done
 priority: high
 created: 2026-08-02T03:43:09.287474248+02:00
-updated: 2026-08-02T03:43:19.833945001+02:00
+updated: 2026-08-06T20:26:50.342500752+02:00
+started: 2026-08-06T20:26:50.34249964+02:00
+completed: 2026-08-06T20:26:50.34249964+02:00
 tags:
     - setup
     - products
     - day-04
-    - has-conflicts
 due: "2026-08-06"
 estimate: 1h 30m
 depends_on:
     - 10
+    - 8
+    - 21
+claimed_by: wild-timber
+claimed_at: 2026-08-06T20:26:50.342500642+02:00
 class: standard
 ---
 
@@ -22,25 +27,12 @@ class: standard
 > Read `README.md` (environment + isolation contract), `calendar.md` (this day's exact
 > ordering — it is binding, not advisory) and `plan-audit.md` before starting.
 
-### ⚠ Conflict resolutions that apply to this task
-
-**`unrated` · impossible-timing** — with `SLT-SETUP-01`, `SLT-SETUP-02`, `SLT-SETUP-03`, `SLT-SETUP-04`, `SLT-SETUP-05`, `SLT-PROD-01`
-
-- *Problem:* 25 of the 26 authored tasks are stamped day 0. Sixteen of them are multi-step browser-driven product builds (each: open post-new, set 6-15 fields across 3 tabs, publish, reload, verify, meta-dump, guest front-end check, registry append), two are long audit tasks with 15-20 probe steps each (SLT-SYN-01, SLT-SYN-02), one is a live Stripe purchase with a settings flip and restore (SLT-SYN-04), and on top of that D0 is also where the plan's isolation notes demand the D0 purchases of SLT-PROD-01/02/03/06/07/10/12/13/14/15/16. There is a hard serial chain inside the day as well: SETUP-01 -> SETUP-02 -> PROD-16 -> SETUP-05 -> SYN-04, and SETUP-01 -> SETUP-02 -> PROD-14 -> SYN-03 -> SYN-04. This is not executable in one day, and it wastes D4-D9 which sit empty.
-- *Required fix:* Adopt the rebalanced D0-D10 calendar in schedule_notes. Only products with a genuinely date-bound purchase stay on D0 (SLT-PROD-01, 06, 07, 13 plus the three foundation tasks); everything else is spread D1-D5 with its purchase deadline recomputed so it still fits the window. Peak day drops from 25 tasks (~30h) to 7 tasks (~7h) and the median day is ~4.5h, inside the 1.6x band.
-
-**`high` · dependency-inversion (product creation after first consumer)** — with `SLT-PROD-04`, `SLT-PROD-05`, `SLT-PROD-09`, `SLT-PROD-10`, `SLT-PROD-11`, `SLT-PROD-15`
-
-- *Problem:* The corrected calendar in plan-audit places several catalog tasks later than the first new-index task that depends on them. SLT-SETUP-04 (coupons) is D3 but SLT-CPN-01/02 need it on D1 18:00-19:00. SLT-PROD-05 is D3 but SLT-LIFE-05 buys it on D1. SLT-PROD-16 is D1 but SLT-DUN-01 (corrected to D2 13:00) and SLT-CHK-04 (D2) need it, and SLT-MYA-05 needs it on D2 morning. SLT-PROD-09 is D5 but SLT-CPN-04 (D3) and SLT-CHK-12 (D5) depend on it. SLT-PROD-10 and SLT-PROD-11 are D4 but SLT-CHK-13 (D4), SLT-CHK-10 (D5) and SLT-SW-09 (D4, which explicitly says PROD-11 must be done 'before this task starts on D4') need them earlier in the day or before. SLT-PROD-08 is D5 but SLT-CHK-11 buys its variations on D5. SLT-PROD-15 is D2 and SLT-SYN-13 buys its variations on D2 - correct only if SYN-02's audit sits strictly between them.
-- *Required fix:* Adopt the rebalanced calendar in this report: SETUP-04 and PROD-05 to D1 morning; PROD-16 to D1 morning (ahead of SETUP-05, which also gains PROD-14 as a dependency per audit C03); PROD-02/03/09/15 and SYN-02 to D2 morning; PROD-04/10/11 to D3 after the SYN-04 bracket closes; PROD-08 to D4 morning. Add an explicit intra-day ordering line to every day's calendar row ('creations and audits before 12:00, purchases after 12:00') and make it a pass criterion that each consuming task quotes the creating task's registry entry.
-
----
 ## Objective
 Provide the variable subscription product with four variations that differ in billing interval, price, signup fee and trial, and use it to probe the $0-recurring branch: `isSubscriptionProductSaveRequest()` returns false when `product-type == 'variable'`, and `saveVariationMeta()` performs no price validation at all, so a $0 variation can be saved even though the identical simple product cannot. Whether that $0 variation is purchasable is a genuine open question this variation exists to answer.
 
 ## Scope
-- Gateway: both
-- Checkout: both
+- Gateway: N/A
+- Checkout: N/A (creation and storefront variation verification only)
 - Account: N/A (creation only)
 - Plugins: free-only
 
@@ -66,21 +58,22 @@ Provide the variable subscription product with four variations that differ in bi
 | Zero Probe | 0.00 | Day | 1 | 0 | 0 | — | $0.00 (probe) |
 
 ## Steps
-1. Capture `mailpit-agent latest-id`.
-2. `agent-browser --session admin open "https://mirror-help.arrayhash.com/wp-admin/post-new.php?post_type=product"` -> `snapshot -i`.
-3. **Product title**: `SLT Variable Daily`. **Description**: `SLT window product. Variable subscription, four daily tiers. Delete on 2026-08-11.`
+1. Record `M0=$(mailpit-agent latest-id)`.
+2. `agent-browser --session admin-SLT-PROD-08 open "https://mirror-help.arrayhash.com/wp-admin/post-new.php?post_type=product"` -> `snapshot -i`.
+3. **Product title**: `SLT Variable Daily`. **Description**: `SLT window product. Variable subscription, four daily tiers. Delete on 2026-08-15.`
 4. Set the product type dropdown to **Variable product**; tick **Virtual**; tick the header checkbox **Subscription [ArraySubs]**.
-5. **Attributes** tab: **Add new** custom attribute, Name = `SLT Tier`, Value(s) = `Starter | Plus | Trialist | Zero Probe`, tick **Visible on the product page** and **Used for variations**. Save attributes.
+5. **Attributes** tab: add `SLT Tier` values, tick both flags, Save, and capture `SLT-PROD-08-01-attributes.png`.
 6. **Variations** tab: **Generate variations** (or add four manually) so all four `SLT Tier` values exist.
-7. Expand the **Starter** variation and set: **Regular price ($)** `6.00`; in the ArraySubs variation block set **Billing Period** `Day`, **Billing Interval** `1`, **Subscription Length** `0`, **Trial Length** `0`, **Trial Period** `Day`, **Sign-up Fee ($)** empty, **Different Renewal Price** unticked, **Flexible Renewal Sync** unticked.
-8. **Plus**: Regular price `11.00`, Billing Period `Day`, Interval `2`, Length `0`, Trial `0`, **Sign-up Fee ($)** `4.00`.
-9. **Trialist**: Regular price `9.00`, Billing Period `Day`, Interval `1`, Length `0`, **Trial Length** `3`, **Trial Period** `Day`, no signup fee. Confirm the variation's Flexible Renewal Sync block is hidden by the trial.
-10. **Zero Probe**: Regular price `0.00`, Billing Period `Day`, Interval `1`, Length `0`, Trial `0`, no fee. Save variations.
+7. Configure Starter exactly and capture `SLT-PROD-08-02-variation-starter.png`.
+8. Configure Plus exactly and capture `SLT-PROD-08-03-variation-plus.png`.
+9. Configure Trialist exactly, prove flex hidden, and capture `SLT-PROD-08-04-variation-trialist-flex-hidden.png`.
+10. Configure Zero Probe exactly and capture `SLT-PROD-08-05-variation-zero-probe.png` before Save; save variations.
 11. Reload the edit screen and check whether the `0.00` price survived. If WooCommerce or ArraySubs rejected it, record the exact message and the resulting stored price — that result IS the finding; do not force it with WP-CLI.
 12. Slug `slt-variable-daily`. Publish.
 13. `wp post meta list <VARIATION_ID> --keys=_is_subscription,_subscription_period,_subscription_interval,_trial_length,_signup_fee,_regular_price --allow-root` for each of the four variation IDs.
-14. As `--session guest`, open the product page, switch the `SLT Tier` dropdown across all four values and screenshot the per-variation subscription summary each time (rendered from `addVariationSubscriptionData()`).
-15. Append the parent ID and all four variation IDs to the registry.
+14. Before any storefront/cart/downstream checkout access, append only the variable parent product ID to Shop Access rule `rule_1784662676378_maa3te08s` under `exclusion_product_ids` through **Member Access → Shop Access**. Do not append variation IDs. Preserve every other field and every prior exclusion; re-read the raw option and require the parent ID exactly once.
+15. In `guest-SLT-PROD-08`, open the cache-busted product, switch through all four tiers, and capture each distinct rendered state as `SLT-PROD-08-06a-frontend-starter.png` through `-06d-frontend-zero-probe.png`.
+16. Append parent/four variation IDs and verified Shop Access exclusion to the registry. Inspect the complete `M0` delta and require zero task-attributable mail; classify background mail. Close only `admin-SLT-PROD-08` and `guest-SLT-PROD-08`, independently review product/meta/storefront evidence, move the card through `review` to `done`, and ensure Review returns to zero. If a live publish/storefront/AJAX failure occurs, create a standalone issue with this task/plan, product/variation IDs, user `N/A`, exact route/context, reproduction, expected/actual, UI/meta/network proof and a working tier counterexample; never add a kanban bug card.
 
 ## Expected results
 1. Parent published as `variable`, virtual, slug `slt-variable-daily`, with `_is_subscription=yes` on the parent and on all four variations.
@@ -88,16 +81,17 @@ Provide the variable subscription product with four variations that differ in bi
 3. Plus: period day, interval 2, price 11.00, `_signup_fee=4`.
 4. Trialist: period day, interval 1, price 9.00, `_trial_length=3`, `_trial_period=day`; its flex block is hidden.
 5. Zero Probe: either `_regular_price=0` is stored (variation-level saves are unvalidated) — record it as an asymmetry against the simple-product rule — or the save was rejected, in which case the exact rejection text and the surviving price are recorded.
-6. The storefront updates price and subscription summary correctly for each of the four tier selections.
+6. The variable parent product ID is present exactly once in the preserved Shop Access exclusion list before storefront access; variation IDs are not added separately.
+7. The storefront updates price and subscription summary correctly for each of the four tier selections.
 
 ## Emails expected
 | # | Email | Trigger point | Recipient | Subject contains | Verify with |
 |---|---|---|---|---|---|
-| 1 | NONE EXPECTED | Product publish and variation saves | — | — | `mailpit-agent latest-id` unchanged from step 1 |
+| 1 | NONE EXPECTED | Product publish and variation saves | — | — | Complete delta after the step-1 baseline; zero task-attributable mail, while unrelated/background mail is allowed and classified |
 
 ## Evidence to capture
-- Screenshots: `SLT-PROD-08-01-attributes.png`, `SLT-PROD-08-02-variation-starter.png`, `SLT-PROD-08-03-variation-plus.png`, `SLT-PROD-08-04-variation-trialist-flex-hidden.png`, `SLT-PROD-08-05-variation-zero-probe.png`, `SLT-PROD-08-06-frontend-tier-switching.png`.
-- Parent ID + four variation IDs; four meta dumps; any validation text for the zero-price variation; console/AJAX errors during **Save changes** on the Variations tab.
+- Screenshots `SLT-PROD-08-01` through `-05` plus four distinct `-06a` through `-06d` storefront states named in the steps.
+- Parent ID + four variation IDs; four meta dumps; raw Shop Access rule showing the parent ID exactly once; any validation text for the zero-price variation; console/AJAX errors during **Save changes** on the Variations tab.
 
 ## Pass criteria
 - [ ] Parent variable + subscription with attribute SLT Tier used for variations
@@ -105,11 +99,13 @@ Provide the variable subscription product with four variations that differ in bi
 - [ ] `_is_subscription=yes` propagated to all four variations
 - [ ] Zero Probe outcome recorded either way with evidence
 - [ ] Front-end summary changes per tier
+- [ ] Parent product ID is present exactly once in the preserved Shop Access exclusion list before storefront access
 - [ ] Zero mail
+- [ ] Exact sessions closed and complete product evidence reviewed to done
 
 ## Isolation / teardown
 - State handoff: buy variations as `slt-core` except Trialist, which belongs to `slt-trial`. Plan-switching tasks may use variation IDs as switch targets — `getAvailableSwitchOptions()` reads `_variation_id` first, and the Linked Products search action is `woocommerce_json_search_products_and_variations`, so variations are legitimate targets.
-- Restores: nothing. Parent and variations deleted by SLT-SETUP-99.
+- Restores: SLT-SETUP-99A restores the exact pre-window Shop Access rule snapshot. Parent and variations are deleted by SLT-SETUP-99B.
 
 ---
 
@@ -126,8 +122,14 @@ Provide the variable subscription product with four variations that differ in bi
 - WooCommerce **grouped** products have zero handling in either plugin — grouped tasks are
   exploratory: document behaviour, do not assert a spec.
 - WP-Cron runs every minute from `/etc/cron.d/mirror-help-arrayhash-wordpress`. Scheduled actions
-  fire on their own; **a renewal that does not fire is a real bug** — capture evidence before forcing.
+  fire on their own; **a renewal that does not fire is a real bug** — capture evidence and do not force a natural-watch action.
 - Give this task its own browser session (`agent-browser --session <role>-<TASK-KEY>`). Sessions are
   keyed by name and **share a cart**.
-- Never run `wp action-scheduler run` without `--hooks=`; prefer a single action by ID.
-- Evidence goes in `qa/subscription-lifecycle-test/evidence/<TASK-KEY>/`.
+- Never run a bare or `--hooks=` Action Scheduler drain. Run one known action ID at a time only when the task explicitly authorizes it and after the required queue pre-flight; natural-watch actions are never forced.
+- Evidence goes under `/home/server-manager/slt-evidence/` using task-key-prefixed filenames.
+
+[[2026-08-06]] Thu 20:15
+Missed-window note: not started on the D4 site-local day. Downstream card 79 remains source-blocked until this product fixture is actually created and published on a valid day.
+
+[[2026-08-06]] Thu 20:26
+Failure closeout on Thursday, August 6, 2026. Live admin creation flow produced parent product 13012 and four intended child variations (13013, 13015, 13017, 13019), but all landed in post_status=trash and reopening /wp-admin/post.php?post=13012&action=edit returned a WordPress admin error. Standalone issue filed: qa/subscription-lifecycle-test/issues/SLT-PROD-08-variable-subscription-draft-is-trashed-on-save.md. Evidence: /home/server-manager/slt-evidence/SLT-PROD-08-01-attributes.png and /home/server-manager/slt-evidence/SLT-PROD-08-07-edit-error.png.

@@ -1,14 +1,15 @@
 ---
 id: 46
 title: 'Variation-level flexible sync: prove the purchased variation''s segment plan wins over a parent decoy'
-status: todo
+status: done
 priority: high
 created: 2026-08-02T03:43:06.771934046+02:00
-updated: 2026-08-02T03:43:17.334034319+02:00
+updated: 2026-08-05T21:37:49.543500135+02:00
+started: 2026-08-05T21:05:26.203266365+02:00
+completed: 2026-08-05T21:05:26.203266365+02:00
 tags:
     - renewal-sync
     - day-02
-    - has-conflicts
 due: "2026-08-04"
 estimate: 1h30m
 depends_on:
@@ -24,24 +25,6 @@ class: standard
 > Read `README.md` (environment + isolation contract), `calendar.md` (this day's exact
 > ordering — it is binding, not advisory) and `plan-audit.md` before starting.
 
-### ⚠ Conflict resolutions that apply to this task
-
-**`critical` · evidence-destruction / teardown vs watch window** — with `SLT-SETUP-99`, `SLT-CHK-14`, `SLT-CHK-13`, `SLT-EML-14`, `SLT-SYN-09`, `SLT-SYN-12`
-
-- *Problem:* SLT-SETUP-99 is authored as a single d10 task that cancels AND permanently deletes every SLT subscription, order, product, coupon, page and user. With D10 = 2026-08-12 and the watch running to D12 = 2026-08-14, that deletes exactly the evidence D11 and D12 exist to collect. Events after D10: SUB_W1 + SUB_W (both week flex subs) renew 2026-08-14 00:00 site - the last scheduled events in the whole window and SYN-09's 'second charge full on the boundary' proof; the SLT-SYN-04 globally-synced day/3 subscription renews 08-14; SLT-SYN-13's Full and Next Cycle variations renew 08-13; SLT-CHK-13's Box Daily renews 08-12; SLT-CHK-14's lifetime negative control must be asserted on all 12 watch days including 08-13 and 08-14 (its own isolation note wrongly says '99A/99B'); SLT-EML-14 step 9 mandates a delta sweep on the morning of 08-14 and explicitly states 99B must not run before it, because a cancellation mail would contaminate the silence proof.
-- *Required fix:* Split, as audit C06 directs, with the dates shifted +1. SLT-SETUP-99A on D10 (2026-08-12), after that morning's watch read and after SLT-DUN-05's recovery evidence is closed: Part 1 settings restore (five booleans, empty jq diff) plus cancellation of the COMPLETED-EVIDENCE COHORT ONLY - the day/1 workhorses (SLT Daily Core spine and its clones, Signup Fee Daily, Renewal Price Step, Paddle Daily, plan-ladder rungs, Free Signup Daily, Trial Four Day, Variable tiers, all CPN and CHK day/1 subs, IMP-03 concurrency subs, DUN-05's S2). No deletions. SLT-SETUP-99B on 2026-08-15 (Sat), strictly after the D12 watch report and SLT-EML-14's 08-14 delta are written: cancel the TAIL COHORT (both week flex subs, Sync Global Daily, SYN-13's two variation subs, SYN-12's two probes, SYN-14's qty sub, Box Daily, the lifetime controls, the flex month subs) then Parts 2-4 deletion. Correct SLT-CHK-14's and SLT-CHK-13's isolation notes to name 99B only. Publish the two cohort lists to the registry on D9 so the watcher can assert on D11/D12 that every 99A-cancelled subscription shows no renewal after its cancellation timestamp.
-
-**`high` · session/cart collision (persistent cart)** — with `SLT-CHK-01`, `SLT-CHK-14`, `SLT-LIFE-04`, `SLT-CHK-11`, `SLT-CHK-13`, `SLT-MYA-02`
-
-- *Problem:* Audit C09's fix - one named agent-browser session per task - isolates GUEST carts only. WooCommerce persists a logged-in customer's cart to user meta (_woocommerce_persistent_cart_<blog_id>) and restores it into any session that authenticates as that user. Several tasks therefore share a cart despite having distinct session names: on D0 slt-core is used concurrently by SLT-CHK-01 (cust-SLT-CHK-01), SLT-CHK-14 (core-CHK14) and SLT-LIFE-04 (life04); on D2 slt-trial by SLT-CHK-15 (trial-CHK15) and SLT-EML-09 (cust-SLT-EML-09); on D4/D5 slt-core by SLT-CHK-13 (core-CHK13), SLT-CHK-11 (core-CHK11), SLT-MYA-02 and SLT-ADM-02. A leftover subscription line leaking across sessions makes allow_multiple_in_cart=false reject the next add-to-cart for the wrong reason, or - worse - a two-subscription cart reaches checkout and the wrong subscription is created.
-- *Required fix:* Add a standing rule to the isolation contract: never run two tasks concurrently under the same slt-* login, and serialise same-account tasks within a day (the calendar's intra-day ordering is binding, not advisory). Every task that logs in must, as its first browser action after login, assert the cart is EMPTY and treat a non-empty cart as a STOP condition with an issue filed - not as something to silently empty. Add a WP-CLI pre-flight to same-account days: `wp user meta get <uid> _woocommerce_persistent_cart_1 --allow-root` must be empty before the task's checkout, and empty again at teardown.
-
-**`medium` · shared-product-meta / undeclared bracket** — with `SLT-SYN-02`, `SLT-PROD-15`, `SLT-MYA-05`
-
-- *Problem:* SLT-SYN-13 step 2 writes a decoy segment plan onto the SLT Flex Variable Daily PARENT product and deletes it only at step 7, the same day - but between those steps two live checkouts are placed and the window is unbounded in the body. SLT-SYN-02 audits the same product family on the same day (D2). Any other cart or checkout touching that parent inside the decoy window resolves filterRenewalSyncContext() against a plan no task expects, and the decoy's own null-vs-config proof depends on nothing else having read it. Separately SLT-MYA-05 leaves two appended members_access rules and a product-level _arraysubs_features meta live from D2 morning until its step-10 teardown on D7 - a five-day global deviation during which the pre-existing 'Gold members save 15%' rule (which targets pro_member on ALL products) can alter front-end prices for slt-fail.
-- *Required fix:* For SYN-13: declare the decoy a bracket - record open/close UTC in slt-evidence/SLT-SYN-13-decoy-bracket.txt, post it to the registry, keep it under 90 minutes, and assert no other SLT task carts or checks out SLT Flex Variable Daily inside it. Add a pass criterion 'decoy removed and getConfig(<PARENT>) is null before the bracket closes'. For MYA-05: shorten the deviation by moving its teardown from D7 to immediately after follow-up B (D5 morning, once the on-hold role removal is captured) and re-adding the rules only if follow-up C needs them; record the bracket in the registry either way, and add an explicit price check on SLT Retry Daily renewals proving the pro_member discount never reached a cron renewal.
-
----
 ## Objective
 Prove `filterRenewalSyncContext()` resolves the segment plan from the PURCHASED VARIATION, not the parent. Two variations of `SLT Flex Variable Daily` share one day/3 $12.00 schedule and differ only in segment plan; a decoy plan force-written onto the parent would collapse both to `next_cycle` if the parent won.
 
@@ -55,6 +38,7 @@ Prove `filterRenewalSyncContext()` resolves the segment plan from the PURCHASED 
 - SLT-PROD-15 created parent `<PARENT>` and variations `<V_FULL>` (3 active, seg1_end 1, seg2_end 2), `<V_NEXT>` (segment 3 only), `<V_NOSYNC>` (flex off). Quote SLT-SYN-02's authorised dump in evidence.
 - This task OWNS both `SLT Flex Variable Daily` purchases; no other may buy this parent. Both run **after 12:00 site on 2026-08-04**; the decoy must be gone before day end.
 - Per plan-audit fix `<V_NOSYNC>` is NOT purchased — asserted by `getConfig() === null`.
+- The parent-decoy deviation is one declared bracket of at most 90 minutes. Record open/close UTC timestamps in `/home/server-manager/slt-evidence/SLT-SYN-13-decoy-bracket.txt` and the registry; no other task may cart, checkout, save, or inspect this parent inside the bracket.
 
 ## Test data
 | Item | Value |
@@ -64,43 +48,47 @@ Prove `filterRenewalSyncContext()` resolves the segment plan from the PURCHASED 
 | Buy date / card | 2026-08-04 (cycle_start 08-04 00:00 site, day-in-cycle 1 for both) / `4242…4242` |
 
 ## Steps
-1. `mailpit-agent latest-id` -> `M0`. Re-dump the six flex metas on all three variations; check against SLT-SYN-02's dump.
-2. Write the decoy on the PARENT only: `wp post meta update <PARENT> _arraysubs_flex_sync_enabled yes` + the four values above. Touch no variation.
-3. `wp eval 'use ArraySubsPro\…\SegmentPlan as S; foreach([<PARENT>,<V_FULL>,<V_NEXT>,<V_NOSYNC>] as $id) var_dump($id,S::getConfig($id));' --allow-root`.
-4. `--session guest-SLT-SYN-13a`, log in as `slt-flex`, pick **SLT Sync Mode = Full**, add to cart, screenshot the subscription meta rows, open `/checkout/`, pay. Empty the cart.
-5. `--session guest-SLT-SYN-13b`, log in as `slt-flex3`, repeat with **Next Cycle**, screenshotting the cart note. Empty the cart.
-6. Dump both subs: `_renewal_sync_enabled`, `…_first_charge_mode`, `…_cycle_start_date`, `_next_payment_date`, `_variation_id`.
-7. Remove the decoy (`wp post meta delete <PARENT> _arraysubs_flex_sync_enabled` + the 4 segment keys); re-run step 3, confirm `getConfig(<PARENT>)` null.
-8. Follow-up on the 08-07 and 08-10 watch days: each renewal fired in `[due, due+offset+10min]`, offset `crc32('arraysubs-spread-'.$id) % 21600`.
+1. `M0=$(mailpit-agent latest-id)`. Resolve the parent and three variation IDs from the `SLT-SYN-02` registry handoff into shell variables `PARENT_ID`, `V_FULL_ID`, `V_NEXT_ID`, and `V_NOSYNC_ID`; abort unless all four are numeric and distinct. Re-dump the six flex metas on all three variations and check against SLT-SYN-02's dump.
+2. Record bracket-open UTC in `/home/server-manager/slt-evidence/SLT-SYN-13-decoy-bracket.txt` and the registry. Write exactly these six decoy keys on numeric `$PARENT_ID` only, using one `wp post meta update "$PARENT_ID" ... --allow-root` command per key: `_arraysubs_flex_sync_enabled=yes`, `_arraysubs_flex_sync_seg1_active=no`, `_arraysubs_flex_sync_seg2_active=no`, `_arraysubs_flex_sync_seg3_active=yes`, `_arraysubs_flex_sync_seg1_end=1`, `_arraysubs_flex_sync_seg2_end=2`. Touch no variation.
+3. Run `wp eval "foreach ([(int) $PARENT_ID,(int) $V_FULL_ID,(int) $V_NEXT_ID,(int) $V_NOSYNC_ID] as \$id) { var_dump(\$id, \\ArraySubsPro\\Features\\FlexibleRenewalSync\\Services\\SegmentPlan::getConfig(\$id)); }" --allow-root`. Inspect the complete delta after `M0`, require zero task-attributable mail while classifying unrelated/background mail, then set `MA=$(mailpit-agent latest-id)` for the first checkout.
+4. In `--session customer-a-SLT-SYN-13`, log in as `slt-flex`, open `/cart/` and require the browser and persistent cart EMPTY, pick **SLT Sync Mode = Full**, and add it. If one-click redirects to block checkout, record its summary, then explicitly reopen `/cart/` and capture `SLT-SYN-13-01-cart-full.png`. Open `/checkout/`, pay, record numeric `ORDER_FULL`, and resolve exact numeric `SUB_FULL` through `wp post meta get "$ORDER_FULL" _subscription_ids --format=json --allow-root` plus a strict one-element `jq -e` guard. Cross-check parent/customer/variation and the count delta; never use the WooCommerce order meta accessor or recency. `mailpit-agent wait-new "$MA" 180 "is active"`; classify the complete delta and save the exact four WC/ArraySubs checkout IDs. Reopen `/cart/` and require both cart representations EMPTY after checkout.
+5. Set `MB=$(mailpit-agent latest-id)` only after Full's delta is classified. In `--session customer-b-SLT-SYN-13`, log in as `slt-flex3`, require both carts EMPTY, repeat with **Next Cycle**, and handle any one-click redirect by explicitly reopening `/cart/` for `SLT-SYN-13-02-cart-next-cycle-note.png`. Pay, record numeric `ORDER_NEXT`, resolve exact numeric `SUB_NEXT` through the same post-meta JSON path and strict guard, and cross-check parent/customer/variation plus the second count delta. `mailpit-agent wait-new "$MB" 180 "is active"`; require and save the second exact four-message checkout set. Reopen `/cart/` and require both cart representations EMPTY. Record `M7=$(mailpit-agent latest-id)` before teardown.
+6. Dump both exact subs: `_renewal_sync_enabled`, `…_first_charge_mode`, `…_cycle_start_date`, `_next_payment_date`, `_variation_id`.
+7. Restoration takes priority over every remaining positive assertion. Start it no later than bracket minute 75, and run it immediately on any checkout/evidence failure. Delete all six parent decoy keys named in step 2 from numeric `$PARENT_ID`, one exact `wp post meta delete "$PARENT_ID" ... --allow-root` command per key. Re-run step 3 and `wp post meta list "$PARENT_ID" --allow-root | rg _arraysubs_flex_sync`; require `getConfig($PARENT_ID)` null and zero matching parent keys. Inspect the complete delta after `M7`, require zero message attributable to the cleanup, and classify unrelated/background mail. Record bracket-close UTC in the bracket file and registry, prove elapsed time is at most 90 minutes, and only then release the parent to other tasks.
+8. Append both exact orders/subscriptions, offsets, action IDs/times, and the three future `charge−5m` deadlines to the registry and D02 watch report; close only `customer-a-SLT-SYN-13` and `customer-b-SLT-SYN-13`. Keep the card `in-progress`. For `SUB_FULL`, store `FULL_REN1_PRE` and `FULL_REN2_PRE` at least five minutes before its exact 08-07 and 08-10 charge gates. For `SUB_NEXT`, store `NEXT_REN1_PRE` at least five minutes before its exact 08-10 charge gate. Follow up after each gate: require the renewal in `[due+offset, due+offset+10min]`, run `mailpit-agent wait-new "<that exact baseline ID>" 900 "Payment received for subscription #<exact numeric subscription ID>"`, and reconcile every message newer than that baseline. The offset is `crc32('arraysubs-spread-'.$id) % 21600`.
 
 ## Expected results
 1. `getConfig()`: `<V_FULL>` actives `[1,2,3]`, boundaries `[1,2]`, cycle_days 3; `<V_NEXT>` actives `[3]`, boundaries `[]`; `<V_NOSYNC>` **null**; `<PARENT>` the decoy — present, never used.
 2. **Full**: **$12.00**, mode `full`, `_next_payment_date` **`2026-08-06 18:00:00` UTC** = 2026-08-07 00:00 site; cart shows no bonus-access note.
 3. **Next Cycle**: **$12.00**, mode `next_cycle`, `_renewal_sync_cycle_start_date` rewritten to `2026-08-06 18:00:00` UTC, `_next_payment_date` **`2026-08-09 18:00:00` UTC** = 2026-08-10 00:00 site; cart reads `Today's payment covers the full billing cycle starting 7 August, 2026`.
-4. The dates differ by exactly one 3-day cycle. **If both read 2026-08-10 the decoy won and `product_id` resolves to the parent — file a defect against `filterRenewalSyncContext()`.**
+4. The dates differ by exactly one 3-day cycle. **If both read 2026-08-10 the decoy won and `product_id` resolves to the parent — write a standalone markdown file under `issues/`; never create a lifecycle-board bug card.**
 5. Each sub's `_variation_id` matches the variation bought; `<V_NOSYNC>` is never purchased.
-6. After step 7 the parent has no flex meta and `getConfig(<PARENT>)` is null; both renewals then fire unattended at midnight + their own offset, each $12.00.
+6. After step 7 the parent has none of the six decoy keys and `getConfig(<PARENT>)` is null; the bracket closed within 90 minutes. Both renewals then fire unattended at midnight + their own offset, each $12.00.
 
 ## Emails expected
 | # | Email | Trigger point | Recipient | Subject contains | Verify with |
 |---|---|---|---|---|---|
-| 1 | `new_subscription`, `admin_new_subscription`, Woo order mail | steps 4-5 | slt-flex / slt-flex3 / admin | `is active`, `New subscription #` | `wait-new <prev> 180` |
-| 2 | `payment_successful` | 08-07, 08-10 renewals | each buyer | `Payment received for subscription #` | watch `mailpit-agent list 50` |
-| 3 | NONE, steps 1-3, 6-7 | meta work | — | — | `latest-id` unchanged |
+| 1 | Customer + admin ArraySubs signup ×2 each | steps 4-5 | slt-flex / slt-flex3 / admin | `is active`, `New subscription #` | complete separate MA/MB deltas; save/show exact ids |
+| 1a | WC New order + Completed order ×2 each | steps 4-5 | admin / each buyer | `New order #`, `is on its way` | same complete separate deltas; save/show exact ids |
+| 2 | `payment_successful` | 08-07, 08-10 renewals | each buyer | `Payment received for subscription #<ID>` | `FULL_REN1_PRE`, `FULL_REN2_PRE`, or `NEXT_REN1_PRE`, each with timeout 900 and exact numeric subject |
+| 3 | NONE, steps 1-3 and 6-7 | meta work | — | — | latest remains `M0` through step 3 and `M7` through step 7 |
 
 ## Evidence to capture
 - `SLT-SYN-13-01-cart-full.png`, `-02-cart-next-cycle-note.png`, `-03-next-payment-dates.png`.
-- Step 3 and 7 `getConfig` transcripts; sub and order ids; both offsets; Mailpit ids.
+- Step 3 and 7 `getConfig` transcripts; exact sub and order ids; both offsets; `M0`/`MA`/`MB`/`M7`, all eight checkout mail ids, all three renewal baselines, and resulting Mailpit ids; `/home/server-manager/slt-evidence/SLT-SYN-13-decoy-bracket.txt`.
 
 ## Pass criteria
 - [ ] `getConfig()` differs per variation, null for No Sync
 - [ ] Full -> `2026-08-06 18:00:00` UTC, mode `full`, $12.00
 - [ ] Next Cycle -> `2026-08-09 18:00:00` UTC, mode `next_cycle`, $12.00, note shown
 - [ ] The dates diverge, so variation resolution beat the parent decoy; decoy then removed and `getConfig(<PARENT>)` null; both renewals fire in window
+- [ ] Both persistent carts empty before and after; all six parent decoy keys removed; bracket closed in ≤90 minutes; meta-only legs sent zero mail
+- [ ] Both exact order relationships and complete four-message checkout sets recorded; future renewal gates handed off before D2 sessions close
 
 ## Isolation / teardown
-- The decoy is written in step 2 and MUST be deleted in step 7 the same day; record both dumps. No variation meta touched.
-- New artifacts: 2 subs, 2 orders — ids to the registry for 99B. Separate guest sessions so carts cannot collide.
+- The decoy is written in step 2 and MUST be deleted in step 7 within the declared ≤90-minute bracket; record both dumps and timestamps. No variation meta touched.
+- New artifacts: 2 subs, 2 orders — ids to the registry for 99B. Separate customer sessions so the two authenticated users and carts cannot collide.
+- Close only `customer-a-SLT-SYN-13` and `customer-b-SLT-SYN-13` after the D2 leg; later renewal reads may reopen the same exact names if browser evidence is needed.
 - Handoff: Full renews 08-07 then 08-10, Next Cycle 08-10; the watch must expect that cadence.
 
 ---
@@ -118,8 +106,13 @@ Prove `filterRenewalSyncContext()` resolves the segment plan from the PURCHASED 
 - WooCommerce **grouped** products have zero handling in either plugin — grouped tasks are
   exploratory: document behaviour, do not assert a spec.
 - WP-Cron runs every minute from `/etc/cron.d/mirror-help-arrayhash-wordpress`. Scheduled actions
-  fire on their own; **a renewal that does not fire is a real bug** — capture evidence before forcing.
+  fire on their own; **a renewal that does not fire is a real bug** — capture evidence and do not force a natural-watch action.
 - Give this task its own browser session (`agent-browser --session <role>-<TASK-KEY>`). Sessions are
   keyed by name and **share a cart**.
-- Never run `wp action-scheduler run` without `--hooks=`; prefer a single action by ID.
-- Evidence goes in `qa/subscription-lifecycle-test/evidence/<TASK-KEY>/`.
+- Never run a bare or `--hooks=` Action Scheduler drain. Run one known action ID at a time only when the task explicitly authorizes it and after the required queue pre-flight; natural-watch actions are never forced.
+- Evidence goes under `/home/server-manager/slt-evidence/` using task-key-prefixed filenames.
+
+[[2026-08-05]] Wed 21:05
+UNVERIFIED (missed D02 purchase window) on 2026-08-05.
+
+This task depended on the two D02 variation purchases under `SLT-SYN-13`. Live verification on 2026-08-05 found no ArraySubs subscriptions owned by `slt-flex` or `slt-flex3` for parent product `SLT Flex Variable Daily` (`12385`). The D03 suite report and evening automation log explicitly state that `SYN-13` remained unexercised at the overnight boundary and that missing D2 flex fixtures are execution gaps unless a later authored recovery path permits creation. No such recovery path exists here, so this card closes without opening a late decoy bracket or placing replacement variation checkouts.

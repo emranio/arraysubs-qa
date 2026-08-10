@@ -1,20 +1,23 @@
 ---
 id: 87
 title: Mid-cycle Basic→Pro upgrade, then prove the D6 renewal charges $15.00 on the unchanged due date
-status: todo
+status: done
 priority: critical
 created: 2026-08-02T03:43:10.441543701+02:00
-updated: 2026-08-02T03:43:21.432660934+02:00
+updated: 2026-08-07T19:06:50.722721172+02:00
+started: 2026-08-07T19:06:50.72272011+02:00
+completed: 2026-08-07T19:06:50.72272011+02:00
 tags:
     - plan-switching
     - day-05
-    - has-conflicts
 due: "2026-08-07"
 estimate: 2h
 depends_on:
     - 11
     - 12
     - 60
+claimed_by: plume-coal
+claimed_at: 2026-08-07T19:06:50.722721062+02:00
 class: standard
 ---
 
@@ -23,19 +26,6 @@ class: standard
 > Read `README.md` (environment + isolation contract), `calendar.md` (this day's exact
 > ordering — it is binding, not advisory) and `plan-audit.md` before starting.
 
-### ⚠ Conflict resolutions that apply to this task
-
-**`high` · same-account-collision / duplicate account creation** — with `SLT-SW-04`, `SLT-SW-08`
-
-- *Problem:* SLT-SW-06 (d5) states 'this task also creates slt-switch2 / slt-switch2@example.test' and buys SLT Plan Basic on it, then upgrades to Pro. SLT-SW-04 (d7) states 'this task CREATES slt-switch2 / slt-switch2@example.test' and buys SLT Plan Basic on it again. SLT-SW-08 (d7) then operates on 'slt-switch2, on SLT Plan Pro from SLT-SW-06'. SW-04 either aborts on a duplicate user, or buys SLT Plan Basic a second time on an account that already holds a Pro subscription from the same ladder - and with auto_migrate_on_checkout the checkout-migration ladder in CheckoutMigrationTrait becomes reachable, silently converting SW-08's Pro subscription instead of creating SW-04's Basic one.
-- *Required fix:* SLT-SW-04 creates and uses a distinct account, slt-switch4 / slt-switch4@example.test (Customer, SltQa!2026#Pass, SETUP-03 step 4 billing), registered for 99B deletion. SLT-SW-06 remains the sole creator of slt-switch2 and the sole owner of its subscription; SLT-SW-08 continues to inherit it. Add to SW-04's preconditions: 'slt-switch2 belongs to SLT-SW-06/SLT-SW-08 and must not be reused'.
-
-**`high` · session collision (shared admin session)** — with `SLT-EML-01`, `SLT-EML-02`, `SLT-EML-03`, `SLT-EML-05`, `SLT-EML-10`, `SLT-EML-12`
-
-- *Problem:* More than twenty tasks open `--session admin` by that bare name, in direct violation of audit C09's fix (which only got applied to guest/customer sessions). agent-browser sessions are keyed by name, so these tasks share one browser profile: one task's `agent-browser close --session admin` logs out another mid-run; one task navigating the SPA away from a settings screen invalidates another's snapshot; and any admin session that ever adds to cart (SLT-ADM-01's bulk-action screen, SLT-EML-12's status juggling) puts a cart on the admin user shared by all of them. The failures this produces look like flaky UI, not contamination.
-- *Required fix:* Rename every admin session to `admin-<TASK-KEY>` (SLT-ADM-01/02/03/04/05 already do this correctly - copy the pattern). Each task closes only its own session by name; `agent-browser close --all` is reserved to the last task of the day, named explicitly in the calendar. Add this to the isolation contract as rule 9 and add a pass criterion to every task that opens an admin session: 'the session name contains this task's key'.
-
----
 ## Objective
 The group's highest-value assertion: a same-cycle upgrade taken mid-cycle leaves `_next_payment_date` untouched and makes the next unattended renewal charge the NEW price. Basic ($5.00/day) → Pro ($15.00/day) on D5 (2026-08-07); the D6 (2026-08-08) renewal must be $15.00, at the original due moment + the crc32 spread offset. Per L7 the proration order is never auto-charged — unpaid means no switch and D6 still bills $5.00.
 
@@ -47,7 +37,7 @@ The group's highest-value assertion: a same-cycle upgrade taken mid-cycle leaves
 
 ## Preconditions
 - SLT-SETUP-02, SLT-SETUP-03, SLT-PROD-11 done (Basic's `_arraysubs_upgrade_products` holds Pro).
-- `slt-switch` is reserved by SLT-SW-01..05, hence the dedicated account. Sessions `admin`, `cust-SLT-SW-06`; cart empty first and last.
+- `slt-switch` is reserved by SLT-SW-01..05, hence the dedicated account. Sessions `admin-SLT-SW-06`, `customer-SLT-SW-06`; cart and persistent-cart meta empty first and last.
 
 ## Test data
 | Item | Value |
@@ -60,45 +50,49 @@ The group's highest-value assertion: a same-cycle upgrade taken mid-cycle leaves
 
 
 ## Steps
-1. `mailpit-agent latest-id` → `MP0`.
-2. Admin `/wp-admin/user-new.php`: create `slt-switch2`, Role Customer, pw `SltQa!2026#Pass`, **Send User Notification unticked**; billing address per SETUP-03 §4.
-3. `--session cust-SLT-SW-06`: log in at `/my-account`; open `/cart/`, confirm empty.
-4. Open `/checkout/?add-to-cart=<Plan Basic ID>` → `snapshot -i` → card 4242 → **Place order**. Record `ORDER_A`, `SUB_ID`, time.
-5. `T0` = `wp post meta list <SUB_ID> --keys=_product_id,_recurring_amount,_billing_interval,_last_payment_date,_next_payment_date --allow-root`; `OFFSET` = `php -r '$h=(int)sprintf("%u",crc32("arraysubs-spread-<SUB_ID>"));printf("%d\n",$h%21600);'`.
-6. 30–90 min later open `/my-account/view-subscription/<SUB_ID>/` → **Change Plan** → **SLT Plan Pro** → screenshot **Plan Change Summary** → **Confirm Plan Change**.
-7. Response returns `requires_payment: true` + `checkout_url`; open it, record `ORDER_B`, pay with 4242.
-8. Re-open the subscription page, screenshot, re-dump the step-5 metas, diff vs `T0`; in **Tools → Scheduled Actions** search `<SUB_ID>` and screenshot the pending renewal rows.
-9. **Follow-up D6 at `due+OFFSET+15min`:** snapshot `latest-id`, open the renewal order (Orders filtered to slt-switch2), screenshot total and lines, `list 20`. The D7 watch re-confirms.
+1. Resolve strict numeric, distinct `BASIC_ID`/`PRO_ID` from the registry and verify titles/prices/schedules/upgrade relationship. Record `SUBCOUNT_BEFORE`, `ORDERCOUNT_BEFORE`, and `USER_PRE=$(mailpit-agent latest-id)`.
+2. In `admin-SLT-SW-06`, create `slt-switch2` as Customer with notification unticked; record numeric `USER_ID`, billing, login/email/role. Classify exactly one admin-only registration message and no customer account/password mail, then set checkout baseline `MP0`.
+3. In `customer-SLT-SW-06`, log in, require both carts empty, and capture `SLT-SW-06-00-cart-empty-before.png`. If unexpected task-owned cart state exists, capture it, clear only this new user's carts, create the contextual standalone issue in step 10, and continue from a proven empty state rather than stopping.
+4. Open `/checkout/?add-to-cart=$BASIC_ID`, handle the frozen one-click redirect, capture the unpopulated $5 summary as `SLT-SW-06-00a-basic-checkout.png`, fill the hosted card without capturing it, pay, record numeric `ORDER_SW6_PARENT`, and capture safe receipt `-00b-basic-receipt.png`. Resolve `SUB_ID` only from exact order `_subscription_ids` JSON with a strict one-element guard; require reverse parent/customer/product linkage, `SUBCOUNT_AFTER == SUBCOUNT_BEFORE+1`, and the complete four-message `MP0` delta.
+5. Save stable numeric `$SUB_ID` metas as `T0`; compute `OFFSET` with the README argv command, and record exact invoice/charge action IDs/gates/deadlines.
+6. Between 30 and 90 minutes after the exact parent completion time, set `SWITCH_PRE=$(mailpit-agent latest-id)`, open `/my-account/view-subscription/$SUB_ID/`, choose exact `$PRO_ID`, and capture `SLT-SW-06-01-switch-modal.png` plus `-01a-proration-summary.png`; record formula inputs/displayed net and confirm.
+7. Require `requires_payment` and record strict numeric `ORDER_SW6_CHANGE` from its pay URL. Capture its unpopulated summary as `SLT-SW-06-02-proration-order.png`, prove the sub still owns Basic, fill the hosted card without capturing it, pay, and capture safe receipt `-02a-change-receipt.png`.
+8. Require `ORDERCOUNT_AFTER == ORDERCOUNT_BEFORE+2`, exact switch-order/subscription relationship and proration meta/line; reconcile only the two Woo switch-order messages after `SWITCH_PRE` and no lifecycle/switch mail. Reopen the subscription, capture `SLT-SW-06-03-sub-after.png`, diff exact metas vs T0, and in `admin-SLT-SW-06` capture numeric pending rows as `SLT-SW-06-04-actions.png`. Publish the rescheduled action ID/gate and `gate−5m` deadline, prove carts empty, close D5 sessions, and leave the card `in-progress`.
+9. Take `RENEW_PRE` only inside `[exact D6 charge gate−300s, gate)`, never force the action, and poll in ≤60-second calls through the 15-minute cutoff. Resolve the renewal order by exact `$SUB_ID`/cycle plus reverse meta, require $15 and one Pro line, reconcile the complete delta, and capture `SLT-SW-06-05-d6-renewal.png` in `admin-SLT-SW-06-R1`; close that session.
+10. Any live failure goes only in `issues/SLT-SW-06-<concise-slug>.md`, never a kanban card, with task/stage/plan; user/product/parent/switch/renewal/subscription/action IDs; login/email/role; exact URLs/sessions/gates; reproduction; expected/actual; formula/UI/meta/order/Mailpit/screenshot proof; and the pre-switch state as counterexample. Continue safe unaffected checks. After D6, independently review all evidence, move the card through `review` to `done`, and ensure Review returns to zero.
 
 ## Expected results
 1. `SUB_ID` `arraysubs-active`, `_recurring_amount=5.00`, day/1, `_next_payment_date` = placed UTC + 24h; switch classified **upgrade** (5.00 → 15.00 daily rate).
-2. `ORDER_B` manual/pending, `_arraysubs_order_type=plan_switch`, `_arraysubs_switch_type=upgrade`, one fee line `Plan Upgrade to SLT Plan Pro - Proration` = round(15×dr,2)−round(5×dr,2); no switch-fee, no tax line.
-3. Plan stays Basic until `ORDER_B` is paid; then `_product_id`=Pro, `_recurring_amount=15.00`, day/1.
+2. `ORDER_SW6_CHANGE` manual/pending, `_arraysubs_order_type=plan_switch`, `_arraysubs_switch_type=upgrade`, one fee line `Plan Upgrade to SLT Plan Pro - Proration` = round(15×dr,2)−round(5×dr,2); no switch-fee, no tax line.
+3. Plan stays Basic until `ORDER_SW6_CHANGE` is paid; then `_product_id`=Pro, `_recurring_amount=15.00`, day/1.
 4. **`_next_payment_date` identical to `T0`**; legs at `+OFFSET`, `+OFFSET−6h`.
 5. D6 renewal order totals exactly **$15.00**, `_is_renewal_order=yes`, in `[due+OFFSET, +10min]`; then `_next_payment_date` advances exactly 24h.
 
 ## Emails expected
 | # | Email | Trigger point | Recipient | Subject contains | Verify with |
 |---|---|---|---|---|---|
-| 1 | new_subscription, admin_new_subscription, Woo order mail | step 4 paid | customer, admin | `is active` / `New subscription #` | `wait-new MP0 180 "is active"`; `list 20` |
-| 2 | Woo order mail for `ORDER_B` only — **no ArraySubs switch mail** | step 7 | customer, admin | `order` | `list 20`; L6 has no listener, so no plan/switch subject |
-| 3 | payment_successful | D6 renewal | slt-switch2 | `Payment received for subscription #<SUB_ID>` | `wait-new <step-9 id> 600` |
+| 1 | WC customer paid-order + WC New order + `new_subscription` + `admin_new_subscription` | step 4 | customer/admin | exact order/subscription | complete owner-filtered `MP0` delta; save/show all four IDs |
+| 2 | WC customer/admin order pair only — no ArraySubs switch mail | step 7 | customer/admin | exact `ORDER_SW6_CHANGE` | complete owner-filtered `SWITCH_PRE` delta; save/show both IDs |
+| 3 | payment_successful | D6 renewal | slt-switch2 | exact numeric `$SUB_ID` | final-five-minute `RENEW_PRE`, ≤60-second polling, complete delta |
 | 4 | renewal_invoice | 6h pre-due | — | — | **NONE EXPECTED** (L23) |
+| 5 | WP New User Registration | setup before `MP0` | admin | `New User Registration` | exactly one after `USER_PRE`; zero customer account/password mail |
 
 ## Evidence to capture
-- `SLT-SW-06-01-switch-modal.png`, `-02-proration-order.png`, `-03-sub-after.png`, `-04-actions.png`, `-05-d6-renewal.png`; `SUB_ID`, order ids, `OFFSET`, `T0` diff, `dr`, Mailpit ids, console errors
+- `SLT-SW-06-01-switch-modal.png`, `-02-proration-order.png`, `-03-sub-after.png`, `-04-actions.png`, `-05-d6-renewal.png`; `SUB_ID`, order ids, `OFFSET`, `T0` diff, `dr`, `USER_PRE`, setup-mail id, checkout-only `MP0`, later Mailpit ids, console errors
 
 ## Pass criteria
 - [ ] Starts on Basic at $5.00/day under slt-switch2, classified `upgrade`
 - [ ] Proration order manual with the correct fee line and no switch fee
-- [ ] Plan unchanged until `ORDER_B` paid, then `_recurring_amount=15.00` on Pro
+- [ ] Plan unchanged until `ORDER_SW6_CHANGE` paid, then `_recurring_amount=15.00` on Pro
 - [ ] `_next_payment_date` unchanged from `T0`; legs at due+OFFSET and −6h
 - [ ] D6 renewal total exactly $15.00 inside the offset window
 - [ ] Emails 1 and 3 present; no switch mail; no renewal_invoice mail
+- [ ] Setup mail isolated before `MP0`; no customer account/password mail
+- [ ] Both orders and sole subscription linked/count-exact, safe evidence complete, phase sessions closed, and final evidence reviewed to done
 
 ## Isolation / teardown
-- Hands SLT-SW-08 an active day/1 Pro subscription on slt-switch2; SW-08 must not start before this task's D6 evidence exists. `slt-switch2` is deleted by SLT-SETUP-99.
-- No global change. If the D6 renewal has not fired by `due+OFFSET+30min`, capture pending actions, `_next_payment_date` and the notes, file an issue — **do not drain Action Scheduler**.
+- Hands SLT-SW-08 an active day/1 Pro subscription on slt-switch2; SW-08 must not start before this task's D6 evidence exists. `slt-switch2` is deleted by SLT-SETUP-99B.
+- Empty both carts and close only the exact D5/R1 sessions. No global change. If D6 misses its deadline, capture exact pending action/date/note sets in the same standalone issue contract and never drain Action Scheduler.
 
 ---
 
@@ -115,8 +109,14 @@ The group's highest-value assertion: a same-cycle upgrade taken mid-cycle leaves
 - WooCommerce **grouped** products have zero handling in either plugin — grouped tasks are
   exploratory: document behaviour, do not assert a spec.
 - WP-Cron runs every minute from `/etc/cron.d/mirror-help-arrayhash-wordpress`. Scheduled actions
-  fire on their own; **a renewal that does not fire is a real bug** — capture evidence before forcing.
+  fire on their own; **a renewal that does not fire is a real bug** — capture evidence and do not force a natural-watch action.
 - Give this task its own browser session (`agent-browser --session <role>-<TASK-KEY>`). Sessions are
   keyed by name and **share a cart**.
-- Never run `wp action-scheduler run` without `--hooks=`; prefer a single action by ID.
-- Evidence goes in `qa/subscription-lifecycle-test/evidence/<TASK-KEY>/`.
+- Never run a bare or `--hooks=` Action Scheduler drain. Run one known action ID at a time only when the task explicitly authorizes it and after the required queue pre-flight; natural-watch actions are never forced.
+- Evidence goes under `/home/server-manager/slt-evidence/` using task-key-prefixed filenames.
+
+[[2026-08-06]] Thu 20:35
+Source-block note on 2026-08-06: card 72 / SLT-SW-00 is now closed UNVERIFIED after the D4 same-day ladder-seeding checkout window was missed. This card cannot start until a later valid execution actually creates the required ladder seed and publishes its real renewal gate.
+
+[[2026-08-07]] Fri 23:05
+Final D05 source read found no `slt-switch2` user. The authored chain requires creating that user, buying Basic, then waiting 30–90 minutes before switching; no valid same-day source was recreated. Execution closes UNVERIFIED without user/cart/order/subscription/action/setting/mail mutation. Evidence: `/home/server-manager/slt-evidence/D05-night-source-block-and-window-close.txt`.

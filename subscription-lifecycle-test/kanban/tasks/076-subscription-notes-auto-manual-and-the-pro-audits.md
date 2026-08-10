@@ -1,20 +1,23 @@
 ---
 id: 76
 title: Subscription notes (auto + manual) and the pro Audits screens for a failed renewal
-status: todo
+status: done
 priority: high
 created: 2026-08-02T03:43:09.614552651+02:00
-updated: 2026-08-02T03:43:20.382620042+02:00
+updated: 2026-08-05T21:29:11.581436416+02:00
+started: 2026-08-05T21:29:11.581435535+02:00
+completed: 2026-08-05T21:29:11.581435535+02:00
 tags:
     - admin
     - portal
     - day-05
-    - has-conflicts
 due: "2026-08-07"
 estimate: 1h30m
 depends_on:
     - 23
     - 5
+    - 1
+    - 33
 class: standard
 ---
 
@@ -23,19 +26,6 @@ class: standard
 > Read `README.md` (environment + isolation contract), `calendar.md` (this day's exact
 > ordering — it is binding, not advisory) and `plan-audit.md` before starting.
 
-### ⚠ Conflict resolutions that apply to this task
-
-**`critical` · impossible-timing / cross-group date contradiction** — with `SLT-DUN-01`, `SLT-DUN-02`, `SLT-DUN-03`, `SLT-DUN-04`, `SLT-DUN-05`, `SLT-EML-04`
-
-- *Problem:* SLT-DUN-01 is tagged d0 (buy SLT Retry Daily as slt-fail on 2026-08-02, D=08-03, hold 08-04, cancel 08-07). Four other tasks encode the opposite timeline as fact: SLT-EML-04 ('bought on D2 (2026-08-04 PM) ... D = 2026-08-05 PM ... attempts 08-05/06/07/08 -> watch D4..D7 ... on-hold 08-06 ... cancelled 08-09'), SLT-EML-14 ('Retry Daily fails 08-05 PM -> on-hold 08-06 -> cancelled 08-09'), SLT-ADM-09 ('bought D2 by slt-fail ... renewal failed D3 PM'), and SLT-MYA-05 ('Must finish before 12:00 site on D2 (2026-08-04): the dunning group buys SLT Retry Daily as slt-fail with card 0341 that afternoon and the grant fires only on that activation'). slt-fail + SLT Retry Daily cannot be bought twice (auto-migrate), so exactly one timeline can exist. Additionally MYA-05's pro_member role-mapping rule MUST be written before the checkout - if DUN-01 runs on D0 the role grant never fires and MYA-05 is unrunnable.
-- *Required fix:* DUN-01 moves to D2 (2026-08-04), checkout 13:00-14:00 site - which is what four downstream tasks already assume and what the audit's corrected calendar says. Resulting ladder, all fixed: D=08-05 13:00-14:00; failure at D+k (08-05 13:00-20:00, watch D4); on-hold at the first hourly sweep after D+24h = 08-06 ~14:00 (watch D5); retries at +24h/+48h/+72h = 08-06/07/08 (watch D5/D6/D7); 4th charge hits the cap 08-08; cancellation at max(D+96h, on_hold+72h) = 08-09 ~14:00-16:00 (watch D8). Re-day the group: DUN-01 D2, DUN-03 D4, DUN-02 D5 (with reads on D4 and D6), DUN-04 D7, DUN-05 D7 after 16:00 (S2 bought 08-09 16:30, fails 08-10 PM, recovered on the morning of 08-11 before N+24h). MYA-05 stays D2 morning, strictly before 13:00.
-
-**`high` · session collision (shared admin session)** — with `SLT-EML-01`, `SLT-EML-02`, `SLT-EML-03`, `SLT-EML-05`, `SLT-EML-10`, `SLT-EML-12`
-
-- *Problem:* More than twenty tasks open `--session admin` by that bare name, in direct violation of audit C09's fix (which only got applied to guest/customer sessions). agent-browser sessions are keyed by name, so these tasks share one browser profile: one task's `agent-browser close --session admin` logs out another mid-run; one task navigating the SPA away from a settings screen invalidates another's snapshot; and any admin session that ever adds to cart (SLT-ADM-01's bulk-action screen, SLT-EML-12's status juggling) puts a cart on the admin user shared by all of them. The failures this produces look like flaky UI, not contamination.
-- *Required fix:* Rename every admin session to `admin-<TASK-KEY>` (SLT-ADM-01/02/03/04/05 already do this correctly - copy the pattern). Each task closes only its own session by name; `agent-browser close --all` is reserved to the last task of the day, named explicitly in the calendar. Add this to the isolation contract as rule 9 and add a pass criterion to every task that opens an admin session: 'the session name contains this task's key'.
-
----
 ## Objective
 Check the auto-notes lifecycle events write (`AutoNotes`, `RenewalProcessor`) against their exact source strings, that a manual note differs from a system note, and that the pro Audits screens surface the failure with a usable message.
 
@@ -46,7 +36,7 @@ Check the auto-notes lifecycle events write (`AutoNotes`, `RenewalProcessor`) ag
 - Plugins: both
 
 ## Preconditions
-- `SLT Retry Daily` ($13.00/day, card `4000 0000 0000 0341`) bought D2 by `slt-fail` -> S_FAIL: renewal failed D3 PM, retry #1 D4 PM, on-hold D5. S1 = `SLT Daily Core` (slt-core), success notes.
+- `SLT Retry Daily` ($13.00/day, card `4000 0000 0000 0341`) bought D2 by `slt-fail` -> S_FAIL: renewal failed D3 PM, retry #1 and the on-hold transition occur D4 PM. S1 = `SLT Daily Core` (slt-core), success notes.
 - Run D5 = 2026-08-07 after 18:00 site so the failure, a `retry_scheduled` and the on-hold transition all exist.
 - Stripe retry config is hardcoded `enabled/3/86400` and retries are NOT spread (SLT-REF-03 §2): retry N = first failure + N*24h. Leave `audits.job_log_mode` = `all`.
 
@@ -57,16 +47,17 @@ Check the auto-notes lifecycle events write (`AutoNotes`, `RenewalProcessor`) ag
 | Healthy | S1 (SLT Daily Core $10.00, slt-core) |
 
 ## Steps
-1. `mailpit-agent latest-id` -> `M0` (manual notes must send no mail).
-2. Open `...#/subscriptions/detail/<S_FAIL>` -> `snapshot -i`; screenshot the notes timeline, copy each note verbatim with timestamp. Repeat for `<S1>`.
-3. `wp post list --post_type=arraysubs_sub_note --meta_key=_subscription_id --meta_value=<S_FAIL> --fields=ID,post_content --allow-root`, then `wp post meta list <note_id> --keys=_note_type,_is_system,_added_by,_event_type`.
-4. In the notes box on `<S1>` add `SLT-ADM-09 manual private note` (private) then `SLT-ADM-09 manual customer note` (customer); re-snapshot. `mailpit-agent latest-id` must still equal `M0`.
-5. Open `/my-account/view-subscription/<S1>/` as `--session cust-adm09` (`slt-core`); record which manual note is visible.
-6. Open `...#/audits/scheduled-job-logs`; find `arraysubs_process_renewal` rows for `<S_FAIL>`, copy both summary lines of a failed and a successful run.
-7. Open `...#/audits/renewal-failures`; confirm S_FAIL is listed with reason, attempts and last-attempt time. Do NOT click Retry or Resolve.
-8. Open `...#/audits/activity-audits` and `...#/settings/gateways` (Gateway Logs); record whether the decline shows and its message.
-9. `wp post meta list <S_FAIL> --keys=_payment_retry_attempts,_payment_retry_next_attempt_at,_last_payment_failure_reason,_on_hold_date`.
-10. Deferred (watch, D7 = 2026-08-09): after the cancel sweep record the cancellation note — expect `Automatically cancelled by System after the unpaid renewal remained overdue beyond the grace period.`
+1. Resolve strict numeric, distinct `S_FAIL` and `S1`, their exact customers/products, first-failure and healthy-renewal order IDs, and owned scheduler/sweep gates from the registry and prior watch reports; abort as upstream `UNVERIFIED` if either source fixture is absent rather than selecting by recency. Set `M0=$(mailpit-agent latest-id)` immediately before the manual-note mutation.
+2. In `agent-browser --session admin-SLT-ADM-09`, open `...#/subscriptions/detail/$S_FAIL` → `snapshot -i`; capture `SLT-ADM-09-01-notes-fail.png` and copy every relevant note verbatim with timestamp. Repeat for `$S1` as `SLT-ADM-09-02-notes-ok.png`.
+3. Query `arraysubs_sub_note` posts by exact numeric `_subscription_id` separately for `$S_FAIL` and `$S1`; record every numeric note ID/content. For each asserted note run `wp post meta list "$NOTE_ID" --keys=_note_type,_is_system,_added_by,_event_type --allow-root`; never use a recent-note assumption.
+4. Record the exact pre-mutation S1 note-ID set. In the notes box on `$S1`, add `SLT-ADM-09 manual private note` (private) then `SLT-ADM-09 manual customer note` (customer); capture `SLT-ADM-09-03-manual.png`. Resolve exactly two new numeric note IDs by set difference, match each exact content/visibility, and inspect the complete delta after `M0`; require zero task-attributable message and classify background mail.
+5. Open `/my-account/view-subscription/$S1/` in `cust-adm09-SLT-ADM-09` (`slt-core`), capture `SLT-ADM-09-03a-customer-note-visibility.png`, and require only the exact customer-note ID/content to appear.
+6. In `admin-SLT-ADM-09`, open `...#/audits/scheduled-job-logs`; locate the failed `arraysubs_process_renewal` row by `$S_FAIL` plus its exact action/order/time, and the successful row by `$S1` plus its exact action/order/time. Capture `SLT-ADM-09-04-jobs.png` and copy both two-line summaries; do not require an impossible successful renewal row for S_FAIL.
+7. Open `...#/audits/renewal-failures`; confirm `$S_FAIL` is listed with exact reason, attempts and last-attempt time, and capture `SLT-ADM-09-05-failures.png`. Do NOT click Retry or Resolve.
+8. Open `...#/audits/activity-audits` and capture the exact failure/healthy contexts as `SLT-ADM-09-06-activity.png`; then open `...#/settings/gateways` (Gateway Logs), capture `SLT-ADM-09-07-gateway.png`, and record whether the same decline appears and its exact message.
+9. Run `wp post meta list "$S_FAIL" --keys=_payment_retry_attempts,_payment_retry_next_attempt_at,_last_payment_failure_reason,_on_hold_date --allow-root`; reconcile values against the exact failure/action timestamps. Cite/show the earlier customer/admin failure-mail IDs only from their registered bounded `DUN_*_PRE` deltas. Close the two D5 sessions and leave the card `in-progress` for step 10.
+10. Deferred D7 (2026-08-09): use only the exact natural cancel-sweep gate published by `SLT-DUN-03`, never force it, and open `admin-SLT-ADM-09-D7` after completion. Resolve the new cancellation note for `$S_FAIL` by exact pre/post note-ID set difference, capture it as `SLT-ADM-09-08-cancellation-note.png`, and require `Automatically cancelled by System after the unpaid renewal remained overdue beyond the grace period.` with its system/event metadata.
+11. If any live assertion fails, create a standalone `issues/SLT-ADM-09-<concise-slug>.md` (never a kanban bug card) containing this progress task/stage and plan path; subscription/order/action/note IDs; affected user ID/login/email/role; exact routes and sessions; reproduction; expected/actual; UI, meta, audit, Mailpit, and screenshot proof; and the healthy/failing counterexample. Continue unaffected read-only checks. After D7, independently review all evidence, close only `admin-SLT-ADM-09-D7`, move the card through `review` to `done`, and ensure Review returns to zero.
 
 ## Expected results
 1. Success note on S1: `Payment successful - Order #<id> (<total>)` linking to the order; `renewal_payment_succeeded`, `_is_system = 1`, `_audit_entity = order`.
@@ -79,12 +70,12 @@ Check the auto-notes lifecycle events write (`AutoNotes`, `RenewalProcessor`) ag
 ## Emails expected
 | # | Email | Trigger point | Recipient | Subject contains | Verify with |
 |---|---|---|---|---|---|
-| 1 | NONE EXPECTED | Manual notes (step 4) | — | — | `mailpit-agent latest-id` equals `M0` |
-| 2 | Earlier failure mail (read-only) | past attempts | slt-fail | `Payment failed for subscription` | `mailpit-agent list 50`, one pair per attempt |
+| 1 | NONE EXPECTED | Manual notes (step 4) | — | — | Complete delta after `M0`; zero task-attributable mail, while unrelated/background mail is allowed and classified |
+| 2 | Earlier failure mail (read-only) | past attempts | slt-fail | `Payment failed for subscription` | cite/show the exact ids from the registered bounded `DUN_*_PRE` deltas, one customer/admin pair per attempt |
 
 ## Evidence to capture
-- Screenshots `SLT-ADM-09-01-notes-fail.png`, `-02-notes-ok.png`, `-03-manual.png`, `-04-jobs.png`, `-05-failures.png`, `-06-gw.png`.
-- Verbatim note texts with `_event_type`/`_is_system`/`_added_by`, step-9 dump, Mailpit ids, console errors on the Audits screens (REST 4xx/5xx is a failure).
+- Screenshots `SLT-ADM-09-01` through `-08`, each bound to the exact note/audit/gateway/cancellation state above.
+- Numeric subscription/customer/product/order/action/note IDs; pre/post note sets; verbatim texts with `_event_type`/`_is_system`/`_added_by`; step-9 dump; exact Mailpit IDs; session/review proof; console errors on the Audits screens (REST 4xx/5xx is a failure).
 
 ## Pass criteria
 - [ ] Success, failure, retry_scheduled, invoice and status-change notes present with exact texts/event types
@@ -92,9 +83,10 @@ Check the auto-notes lifecycle events write (`AutoNotes`, `RenewalProcessor`) ag
 - [ ] Manual notes non-system, admin-attributed, only the customer one in my-account, no mail
 - [ ] Scheduled-Job Logs shows the failed renewal with a useful message
 - [ ] Renewal Failures matches S_FAIL's metas; Gateway Logs recorded
+- [ ] D7 cancellation note selected by exact set difference; all phase sessions closed and final evidence reviewed to done
 
 ## Isolation / teardown
-- Read-only apart from two manual notes on S1 (leave them; SLT-SETUP-99B deletes the sub). Never click Retry or Resolve — it breaks the dunning ladder. Nothing else changed. Close `cust-adm09`.
+- Read-only apart from two manual notes on S1 (leave them; SLT-SETUP-99B deletes the sub). Never click Retry or Resolve — it breaks the dunning ladder. Nothing else changed. Close only `admin-SLT-ADM-09` and `cust-adm09-SLT-ADM-09` after D5, then only `admin-SLT-ADM-09-D7` after the deferred phase.
 
 ---
 
@@ -111,8 +103,13 @@ Check the auto-notes lifecycle events write (`AutoNotes`, `RenewalProcessor`) ag
 - WooCommerce **grouped** products have zero handling in either plugin — grouped tasks are
   exploratory: document behaviour, do not assert a spec.
 - WP-Cron runs every minute from `/etc/cron.d/mirror-help-arrayhash-wordpress`. Scheduled actions
-  fire on their own; **a renewal that does not fire is a real bug** — capture evidence before forcing.
+  fire on their own; **a renewal that does not fire is a real bug** — capture evidence and do not force a natural-watch action.
 - Give this task its own browser session (`agent-browser --session <role>-<TASK-KEY>`). Sessions are
   keyed by name and **share a cart**.
-- Never run `wp action-scheduler run` without `--hooks=`; prefer a single action by ID.
-- Evidence goes in `qa/subscription-lifecycle-test/evidence/<TASK-KEY>/`.
+- Never run a bare or `--hooks=` Action Scheduler drain. Run one known action ID at a time only when the task explicitly authorizes it and after the required queue pre-flight; natural-watch actions are never forced.
+- Evidence goes under `/home/server-manager/slt-evidence/` using task-key-prefixed filenames.
+
+[[2026-08-05]] Wed 21:29
+UNVERIFIED (no S_FAIL source fixture) on 2026-08-05.
+
+Task step 1 explicitly requires aborting as upstream UNVERIFIED if either source fixture is absent. Upstream task #33 already published the authored missed-fixture outcome on 2026-08-05: no numeric S_FAIL, registry page 11847 marked `S_FAIL unavailable`, and downstream ladder-only assertions must close without a substitute. Live re-check on 2026-08-05 confirms `slt-fail` still exists as WP user 351, but the exact owner/product subscription query for users 351 and 347 with products 12108 and 11927 returns only subscription 11959 for slt-core (customer 347 / product 11927). There is no subscription row for customer 351 / product 12108, so the failed-renewal notes, retry ladder, on-hold transition, and audit rows authored around S_FAIL can never materialize naturally for this card. Closing this card without creating a replacement checkout, forcing actions, or mutating dates/meta.

@@ -1,14 +1,13 @@
 ---
 id: 106
 title: 'Renewal execution after a synced first charge: second charge full on the boundary, third on the grid'
-status: todo
+status: in-progress
 priority: critical
 created: 2026-08-02T03:43:11.848514479+02:00
-updated: 2026-08-02T03:43:23.232258228+02:00
+updated: 2026-08-09T03:35:57.744273067+02:00
 tags:
     - renewal-sync
     - day-07
-    - has-conflicts
 due: "2026-08-09"
 estimate: 2h
 depends_on:
@@ -23,24 +22,6 @@ class: standard
 > Read `README.md` (environment + isolation contract), `calendar.md` (this day's exact
 > ordering — it is binding, not advisory) and `plan-audit.md` before starting.
 
-### ⚠ Conflict resolutions that apply to this task
-
-**`critical` · dependency-inversion / date contradiction** — with `SLT-SYN-08`, `SLT-PROD-14`, `SLT-SYN-01`, `SLT-EML-01`
-
-- *Problem:* SLT-SYN-08 is tagged d0 and buys SLT Flex Daily Two Seg + SLT Flex Daily Next Cycle, but SLT-PROD-14 creates those products on D1 in the corrected calendar and audit C10 forbids purchasing a flex product before SLT-SYN-01's destructive meta surgery has run and been restored. Worse, SYN-08's stated dates encode a D0 purchase (cycle_start 2026-08-01 18:00 UTC, Two Seg next payment 08-04 18:00 UTC) while SLT-EML-01 - which owns the only reachable renewal_reminder in the window - encodes a D1 purchase (SUB_2SEG due 2026-08-06 00:00 site, SUB_NC due 2026-08-09 00:00 site, reminder fires 08-06 00:00-06:00 = watch D4). Both cannot be true and neither product can be bought twice by the same account.
-- *Required fix:* SLT-SYN-08 moves to D1 (2026-08-03), purchases after 12:00, strictly after SLT-PROD-14 and after SLT-SYN-01B's restore is proven. That makes EML-01's numbers correct as written (SUB_2SEG due 08-06 00:00 site, SUB_NC due 08-09 00:00 site, reminder 08-06 00:00-06:00 site, watch D4) and SYN-08's own Test data must be recomputed to cycle_start 2026-08-02 18:00 UTC, Two Seg next payment 2026-08-05 18:00 UTC, Next Cycle cycle_start rewritten to 2026-08-05 18:00 UTC and next payment 2026-08-08 18:00 UTC. Knock-on: SLT-SYN-09's SUB_A row is now wrong (it assumes #2 at 08-04 18:00 and #3 at 08-07 18:00). Move SLT-SYN-09 from D6 to D7 (2026-08-09 morning) where the week pair's 08-08 00:00 renewals AND SUB_A's #2 at 08-09 00:00 are both already visible; hand SUB_A's #3 (08-12 00:00) to watch D10 as a grid assertion.
-
-**`critical` · evidence-destruction / teardown vs watch window** — with `SLT-SETUP-99`, `SLT-CHK-14`, `SLT-CHK-13`, `SLT-EML-14`, `SLT-SYN-13`, `SLT-SYN-12`
-
-- *Problem:* SLT-SETUP-99 is authored as a single d10 task that cancels AND permanently deletes every SLT subscription, order, product, coupon, page and user. With D10 = 2026-08-12 and the watch running to D12 = 2026-08-14, that deletes exactly the evidence D11 and D12 exist to collect. Events after D10: SUB_W1 + SUB_W (both week flex subs) renew 2026-08-14 00:00 site - the last scheduled events in the whole window and SYN-09's 'second charge full on the boundary' proof; the SLT-SYN-04 globally-synced day/3 subscription renews 08-14; SLT-SYN-13's Full and Next Cycle variations renew 08-13; SLT-CHK-13's Box Daily renews 08-12; SLT-CHK-14's lifetime negative control must be asserted on all 12 watch days including 08-13 and 08-14 (its own isolation note wrongly says '99A/99B'); SLT-EML-14 step 9 mandates a delta sweep on the morning of 08-14 and explicitly states 99B must not run before it, because a cancellation mail would contaminate the silence proof.
-- *Required fix:* Split, as audit C06 directs, with the dates shifted +1. SLT-SETUP-99A on D10 (2026-08-12), after that morning's watch read and after SLT-DUN-05's recovery evidence is closed: Part 1 settings restore (five booleans, empty jq diff) plus cancellation of the COMPLETED-EVIDENCE COHORT ONLY - the day/1 workhorses (SLT Daily Core spine and its clones, Signup Fee Daily, Renewal Price Step, Paddle Daily, plan-ladder rungs, Free Signup Daily, Trial Four Day, Variable tiers, all CPN and CHK day/1 subs, IMP-03 concurrency subs, DUN-05's S2). No deletions. SLT-SETUP-99B on 2026-08-15 (Sat), strictly after the D12 watch report and SLT-EML-14's 08-14 delta are written: cancel the TAIL COHORT (both week flex subs, Sync Global Daily, SYN-13's two variation subs, SYN-12's two probes, SYN-14's qty sub, Box Daily, the lifetime controls, the flex month subs) then Parts 2-4 deletion. Correct SLT-CHK-14's and SLT-CHK-13's isolation notes to name 99B only. Publish the two cohort lists to the registry on D9 so the watcher can assert on D11/D12 that every 99A-cancelled subscription shows no renewal after its cancellation timestamp.
-
-**`high` · session collision (shared admin session)** — with `SLT-EML-01`, `SLT-EML-02`, `SLT-EML-03`, `SLT-EML-05`, `SLT-EML-10`, `SLT-EML-12`
-
-- *Problem:* More than twenty tasks open `--session admin` by that bare name, in direct violation of audit C09's fix (which only got applied to guest/customer sessions). agent-browser sessions are keyed by name, so these tasks share one browser profile: one task's `agent-browser close --session admin` logs out another mid-run; one task navigating the SPA away from a settings screen invalidates another's snapshot; and any admin session that ever adds to cart (SLT-ADM-01's bulk-action screen, SLT-EML-12's status juggling) puts a cart on the admin user shared by all of them. The failures this produces look like flaky UI, not contamination.
-- *Required fix:* Rename every admin session to `admin-<TASK-KEY>` (SLT-ADM-01/02/03/04/05 already do this correctly - copy the pattern). Each task closes only its own session by name; `agent-browser close --all` is reserved to the last task of the day, named explicitly in the calendar. Add this to the isolation contract as rule 9 and add a pass criterion to every task that opens an admin session: 'the session name contains this task's key'.
-
----
 ## Objective
 Prove a synced first charge does not distort the schedule: the SECOND charge is the FULL recurring amount on the boundary (even where #1 was prorated to $6.00), and the THIRD stays on the grid because the next due derives from `_renewal_scheduled_date`, not payment time (`OrderIntegration.php:1629-1652` → `:1472-1526`).
 
@@ -51,55 +32,59 @@ Prove a synced first charge does not distort the schedule: the SECOND charge is 
 - Plugins: pro-required
 
 ## Preconditions
-- SLT-SYN-05 (`SUB_W1`, week seg-1, #1 $14.00), SLT-SYN-06 (`SUB_W`, week seg-2, #1 $6.00), SLT-SYN-08 (`SUB_A`, `SLT Flex Daily Two Seg`, #1 $9.00) done, `k` recorded.
-- **Act on D6 = 2026-08-08 after 07:00 site.** Renewals fire at boundary + `k` (0–6 h), so an earlier read proves nothing.
-- **Nothing may be force-run.** A renewal not fired by `boundary + k + 15 min` is a real bug — capture evidence and file it first; a bare `--hooks=` drain is forbidden.
+- SLT-SYN-05 (`SUB_W1`, week seg-1, #1 $14.00), SLT-SYN-06 (`SUB_W`, week seg-2, #1 $6.00), SLT-SYN-08 (`SUB_2SEG`, `SLT Flex Daily Two Seg`, #1 $9.00) done, `k` recorded.
+- The preceding unattended-watch phases saved four immutable, task-specific Mailpit baselines in the registry and evidence root: `SYN09_2SEG_D4_PRE` (D3 21:42), `SYN09_W1_D6_PRE` and `SYN09_W_D6_PRE` (D5 21:42), and `SYN09_2SEG_D7_PRE` (D6 21:42). Each was recorded before its exact pending charge action. If one is missing, do not substitute a recent-message list: mark only that event `UNVERIFIED` and preserve the other three proofs.
+- **Act on D7 = 2026-08-09 after 07:00 site.** Renewals fire at boundary + `k` (0–6 h), so an earlier read proves nothing.
+- **Nothing may be force-run.** A renewal not fired by `boundary + k + 15 min` is a real bug — capture evidence and write one standalone markdown file under `issues/`; never create a lifecycle-board bug card, and a bare `--hooks=` drain is forbidden.
 
 ## Test data
 | Sub | #1 | #2 due UTC / amount | #3 due UTC / amount |
 |---|---|---|---|
 | `SUB_W1` week seg-1 | $14.00 `full` | `08-07 18:00` +k / **$14.00** | `08-14 18:00`, past D9 / $14.00 |
 | `SUB_W` week seg-2 | $6.00 `prorate` | `08-07 18:00` +k / **$14.00** | `08-14 18:00`, past D9 / $14.00 |
-| `SUB_A` day/3 two-seg | $9.00 | `08-04 18:00` +k, fired D3 / **$9.00** | `08-07 18:00` +k / **$9.00** |
+| `SUB_2SEG` day/3 two-seg | $9.00 | `08-05 18:00` +k, fired D4 / **$9.00** | `08-08 18:00` +k / **$9.00** |
 
-`SUB_A` after #3: `_next_payment_date = 2026-08-10 18:00:00` (2026-08-11 00:00 +06) — exactly 3 days, no drift to the payment clock.
+`SUB_2SEG` after #3: `_next_payment_date = 2026-08-11 18:00:00` (2026-08-12 00:00 +06) — exactly 3 days, no drift to the payment clock.
 
 ## Steps
-1. Recompute `k` for all three subs (README crc32 one-liner); write the window `[boundary+k, +15min]` into the notes BEFORE looking at results.
-2. Per sub open `https://mirror-help.arrayhash.com/wp-admin/admin.php?page=action-scheduler&status=complete&s=<SUBID>` (`--session admin`); screenshot `SLT-SYN-09-01-completed.png`; confirm `arraysubs_generate_renewal_invoice` at `due +k −6h`, `arraysubs_process_renewal` at `due +k`.
-3. Open `admin.php?page=wc-orders` per customer; screenshot `SLT-SYN-09-02-orders.png`; per renewal order record total, status, `_is_renewal_order`, `_renewal_cycle_number`, `_renewal_scheduled_date`.
-4. Per sub dump `_next_payment_date`, `_last_payment_date`, `_completed_payments`, `_pending_renewal_order_id`, `_payment_retry_attempts` to `slt-evidence/SLT-SYN-09-after.csv`; screenshot each schedule panel `SLT-SYN-09-03-sched.png`.
-5. `mailpit-agent list 50`; confirm one `Payment received for subscription #<id>` per renewal, record ids, and confirm no `Payment failed`, `on hold`, `Invoice for subscription`.
+1. Resolve registry aliases `SUB_W1`, `SUB_W`, and `SUB_2SEG` into same-named shell variables; require exactly one registry match for each, abort unless all three match `^[0-9]+$` and are distinct, then cross-check their recorded parent order, customer, and product relationships. Recompute `k` from each numeric ID with the README argv-based crc32 one-liner; write the window `[boundary+k, +15min]` into the notes BEFORE looking at results.
+2. Per sub open the exact numeric subscription-filtered completed actions in `admin-SLT-SYN-09-D7`; capture uniquely named `SLT-SYN-09-01-completed-<alias>.png`; confirm the exact invoice/charge action IDs, gates, and `via WP Cron` logs.
+3. For every expected cycle, resolve the renewal order from numeric subscription plus `_renewal_scheduled_date`/cycle and require reverse linkage, never customer recency. Capture uniquely named `SLT-SYN-09-02-orders-<alias>-<cycle>.png` and record total, status, `_is_renewal_order`, cycle number, scheduled date, and order-mail ID.
+4. Per sub dump `_next_payment_date`, `_last_payment_date`, `_completed_payments`, `_pending_renewal_order_id`, `_payment_retry_attempts` to `/home/server-manager/slt-evidence/SLT-SYN-09-after.csv`; screenshot each schedule panel `SLT-SYN-09-03-sched.png`.
+5. Consume the four registered baselines separately. For each, inspect every newer message and require exactly one subject tied to the expected subscription: `SUB_2SEG` after `SYN09_2SEG_D4_PRE`, `SUB_W1` after `SYN09_W1_D6_PRE`, `SUB_W` after `SYN09_W_D6_PRE`, and `SUB_2SEG` after `SYN09_2SEG_D7_PRE`. Save/show each exact `Payment received for subscription #<id>` match and classify its complete baseline delta; confirm no `Payment failed`, `on hold`, or `Invoice for subscription` in those deltas. This is **four renewal-success messages for four renewal events**, even though only three distinct subscriptions are involved.
 6. Re-open each pending queue; screenshot `SLT-SYN-09-04-pending.png`; confirm re-queued legs sit at the NEW due + SAME `k`.
-7. Follow-up on **D9 = 2026-08-11**: `SUB_A` #4 lands at `2026-08-10 18:00:00 +k`, leaving `_next_payment_date = 2026-08-13 18:00:00`. Record it in that watch report.
+7. Publish the exact D10 charge action/gate and `charge−300s` deadline, then close `admin-SLT-SYN-09-D7`. Inside the D9 watch's exact `[charge−300s,charge)` interval save immutable `SYN09_2SEG_D10_PRE` with its action ID. Follow-up on **D10 = 2026-08-12**: poll in repeated calls no longer than 60 seconds through the 10-minute cutoff, require/save/show the exact payment-success match, and resolve linked #4 from numeric SUB_2SEG plus scheduled-cycle relationship/reverse link. In fresh `admin-SLT-SYN-09-D10` capture the order/action proof, verify the due/next-date grid, close it, independently review all five renewal events, then move through `review` to `done` with Review empty. Any defect goes only in `issues/SLT-SYN-09-<concise-slug>.md` with task/stage/plan path; product/customer/subscription/parent/renewal/action/message IDs; user login/email/role; exact routes/sessions/gates; reproduction; expected/actual; and UI/meta/queue/log/order/Mailpit proof.
 
 ## Expected results
 1. `SUB_W` charge #2 is exactly **$14.00**, not $6.00 — proration hit the signup only; `_renewal_sync_initial_recurring_amount` stays `6`, never reused.
 2. `SUB_W1` #2 is exactly **$14.00**; both week renewal orders carry `_renewal_scheduled_date = 2026-08-07 18:00:00`.
 3. Both week subs: `_next_payment_date = 2026-08-14 18:00:00`, `_completed_payments = 2`, `arraysubs-active`, orders paid, `_pending_renewal_order_id` cleared.
-4. `SUB_A`: #2 `$9.00` at `2026-08-04 18:00:00 +k`, #3 `$9.00` at `2026-08-07 18:00:00 +k`, `_completed_payments = 3`, `_next_payment_date = 2026-08-10 18:00:00`; consecutive dues exactly 259200 s apart — the grid holds.
+4. `SUB_2SEG`: #2 `$9.00` at `2026-08-05 18:00:00 +k`, #3 `$9.00` at `2026-08-08 18:00:00 +k`, `_completed_payments = 3`, `_next_payment_date = 2026-08-11 18:00:00`; consecutive dues exactly 259200 s apart — the grid holds.
 5. Every renewal fired inside `[due+k, due+k+15min]`, and the same `k` is reused for the re-queued legs (the offset is permanent per sub). No retries, no on-hold, no failed orders, no tax lines.
 
 ## Emails expected
 | # | Email | Trigger point | Recipient | Subject contains | Verify with |
 |---|---|---|---|---|---|
-| 1 | `payment_successful` ×3 on D6 (+1 on D3) | renewal ok | slt-flex / slt-flex2 | `Payment received for subscription #` | `list 50`, by sub id |
+| 1 | `payment_successful` ×4 by D7: `SUB_2SEG` D4 and D7, `SUB_W1` D6, `SUB_W` D6 | renewal ok | slt-flex / slt-flex2 | `Payment received for subscription #<exact ID>` | four distinct registered pre-event baselines; exact match plus full delta for each |
+| follow-up | `payment_successful` ×1 for `SUB_2SEG` #4 | D10 renewal ok | slt-flex2 | `Payment received for subscription #<SUB_2SEG>` | `SYN09_2SEG_D10_PRE`; exact match plus full delta |
 | 2 | `renewal_invoice` NONE EXPECTED | invoice leg | — | — | suppressed for auto-pay subs (REF-04 §4); arrival = bug |
-| 3 | `payment_failed`/`subscription_on_hold` NONE EXPECTED | — | — | — | absent from `list 50`; presence = failure |
+| 3 | `payment_failed`/`subscription_on_hold` NONE EXPECTED | — | — | — | absent from each complete registered owner delta; presence tied to an exact target is failure |
 
 ## Evidence to capture
-- `SLT-SYN-09-01..04`; `-after.csv`; renewal order IDs and totals; the three `k` values and windows; Mailpit ids; any failed AS rows.
+- `SLT-SYN-09-01..04`; `-after.csv`; renewal order IDs and totals; the three `k` values and windows; all five registered baseline values and their pending action IDs; exact-match/full-delta Mailpit ids; any failed AS rows.
 
 ## Pass criteria
 - [ ] `SUB_W` charge #2 is $14.00, not $6.00
 - [ ] Both week subs land #2 at `2026-08-07 18:00:00 +k`, next due `2026-08-14 18:00:00`
-- [ ] `SUB_A` #2/#3 are $9.00, next due `2026-08-10 18:00:00`, dues 259200 s apart, same `k`
-- [ ] Three `payment_successful` mails; no invoice, failed or on-hold mail
+- [ ] `SUB_2SEG` #2/#3 are $9.00, next due `2026-08-11 18:00:00`, dues 259200 s apart, same `k`
+- [ ] Four bounded `payment_successful` mails through D7; no invoice, failed or on-hold mail
+- [ ] D10 `SUB_2SEG` #4 and its bounded payment-success mail proved before closing the card
 - [ ] Nothing was force-run
+- [ ] Every order/action is relationship-exact, phase sessions close, and D10 review reaches `done` with Review empty
 
 ## Isolation / teardown
-- Handed on: `SUB_A` (due 2026-08-11) and both week subs (due 2026-08-14) stay alive into the watch tail — they must NOT be cancelled by the D10 wind-down (plan-audit's SLT-SETUP-99 split).
-- Restores: none; read-only. Close the admin session.
+- Handed on: `SUB_2SEG` (due 2026-08-12 site, then 2026-08-15) and both week subs (due 2026-08-14) stay alive into the watch tail — they must NOT be cancelled by the D10 wind-down (plan-audit's SLT-SETUP-99 split).
+- Restores: none; read-only. Close only the exact D7/D10 admin sessions named above.
 
 
 ---
@@ -117,8 +102,21 @@ Prove a synced first charge does not distort the schedule: the SECOND charge is 
 - WooCommerce **grouped** products have zero handling in either plugin — grouped tasks are
   exploratory: document behaviour, do not assert a spec.
 - WP-Cron runs every minute from `/etc/cron.d/mirror-help-arrayhash-wordpress`. Scheduled actions
-  fire on their own; **a renewal that does not fire is a real bug** — capture evidence before forcing.
+  fire on their own; **a renewal that does not fire is a real bug** — capture evidence and do not force a natural-watch action.
 - Give this task its own browser session (`agent-browser --session <role>-<TASK-KEY>`). Sessions are
   keyed by name and **share a cart**.
-- Never run `wp action-scheduler run` without `--hooks=`; prefer a single action by ID.
-- Evidence goes in `qa/subscription-lifecycle-test/evidence/<TASK-KEY>/`.
+- Never run a bare or `--hooks=` Action Scheduler drain. Run one known action ID at a time only when the task explicitly authorizes it and after the required queue pre-flight; natural-watch actions are never forced.
+- Evidence goes under `/home/server-manager/slt-evidence/` using task-key-prefixed filenames.
+
+## D06 21:42 handoff — 2026-08-08
+
+`SYN09_2SEG_D7_PRE=5tA67qq4BNBf5zTQDGTVct` was captured at `2026-08-08 21:42:33` site and appended/read back on registry page `11847`. Relationship pre-state: `SUB_2SEG=12172`, active, completed payments `2`, next `2026-08-08 18:00:00Z`, exact pending order `13273` at `$9.00`, exact charge action `15005` pending/unattempted at `2026-08-08 18:11:39Z` / D7 `00:11:39` site. The same timestamped cursor was separately registered as the D7 watch baseline for `SUB_NC=12193`, order `13302`, action `14003` at D7 `00:40:35`; do not substitute a later recent-message list. Evidence: `/home/server-manager/slt-evidence/D06-2026-08-08-evening-natural-gates.txt`.
+
+[[2026-08-09]] Sun 02:16
+D07 early-morning preparation started at 2026-08-09 06:20 site. No renewal result was read before the authored after-07:00 gate; task remains read-only and nothing will be forced.
+
+[[2026-08-09]] Sun 03:24
+D07 authored post-07:00 leg executed from gate-open poll 2026-08-09 07:00:13 site; fresh result read 07:00:36. PASS for live branches: SUB_W1=12039 settled cycle #2 naturally for $14.00 in its k=18112 window, order 13170 / mail 668D3zIwlFM3x6xEqZfmMs, and requeued 15836/15837 at the same offset; SUB_2SEG=12172 settled cycles #2/#3 naturally for $9.00 each, orders 12714/13273, current completed-payments 3 / next 2026-08-11 18:00:00Z / same k=699, and bounded D7 mail 5r2hikZq4ipuKQ5y8P4o5Y. UNVERIFIED only where authored sources are absent: SUB_W / SYN09_W_D6_PRE are unavailable, and SYN09_2SEG_D4_PRE was never recorded; no substitute cursor or subscription was used. Evidence: /home/server-manager/slt-evidence/SLT-SYN-09-D07-read.txt, /home/server-manager/slt-evidence/SLT-SYN-09-after.csv, and task-prefixed screenshots listed there. Nothing forced or mutated; exact sessions closed. Keep in progress. Exact next gate: D9 captures SYN09_2SEG_D10_PRE for pending action 16167 inside 2026-08-12 00:06:39-00:11:38 site; D10 charge gate is 00:11:39 site, followed by the authored bounded mail/order/action proof and only then review -> done.
+
+[[2026-08-09]] Sun 03:35
+Independent D07 self-review completed. Raw complete Mailpit inventories are now persisted in /home/server-manager/slt-evidence/SLT-SYN-09-mail-deltas-D07.txt and mechanically match the live 63-message/16-message cursor slices. Low incidental admin finding: issues/SLT-SYN-09-order-editor-sample-permalink-403.md, with sanitized proof /home/server-manager/slt-evidence/SLT-SYN-09-order-editor-network.txt; it does not change the passed lifecycle assertions. Visual limitations carried to the D10 closeout: SLT-SYN-09-02-orders-SUB_2SEG-2.png is blank, and the 04 files duplicate the All-search captures rather than distinct Pending-filter views. The relationship-exact structured/order-history/action proof remains valid, but D10 must recapture order 12714 and distinct Pending-filter views before final review -> done. Keep in progress at the already-recorded D10 gate.

@@ -1,19 +1,21 @@
 ---
 id: 82
 title: 'Payment failed: one customer + one admin email per retry attempt, and whether the attempt number is visible'
-status: todo
+status: done
 priority: critical
 created: 2026-08-02T03:43:10.05742927+02:00
-updated: 2026-08-02T03:43:20.946122474+02:00
+updated: 2026-08-05T21:37:49.577077455+02:00
+started: 2026-08-05T21:07:20.282816341+02:00
+completed: 2026-08-05T21:07:20.282816341+02:00
 tags:
     - email
     - day-05
-    - has-conflicts
 due: "2026-08-07"
 estimate: 1h30m
 depends_on:
     - 23
     - 12
+    - 33
 class: standard
 ---
 
@@ -22,19 +24,6 @@ class: standard
 > Read `README.md` (environment + isolation contract), `calendar.md` (this day's exact
 > ordering — it is binding, not advisory) and `plan-audit.md` before starting.
 
-### ⚠ Conflict resolutions that apply to this task
-
-**`critical` · impossible-timing / cross-group date contradiction** — with `SLT-DUN-01`, `SLT-DUN-02`, `SLT-DUN-03`, `SLT-DUN-04`, `SLT-DUN-05`, `SLT-EML-14`
-
-- *Problem:* SLT-DUN-01 is tagged d0 (buy SLT Retry Daily as slt-fail on 2026-08-02, D=08-03, hold 08-04, cancel 08-07). Four other tasks encode the opposite timeline as fact: SLT-EML-04 ('bought on D2 (2026-08-04 PM) ... D = 2026-08-05 PM ... attempts 08-05/06/07/08 -> watch D4..D7 ... on-hold 08-06 ... cancelled 08-09'), SLT-EML-14 ('Retry Daily fails 08-05 PM -> on-hold 08-06 -> cancelled 08-09'), SLT-ADM-09 ('bought D2 by slt-fail ... renewal failed D3 PM'), and SLT-MYA-05 ('Must finish before 12:00 site on D2 (2026-08-04): the dunning group buys SLT Retry Daily as slt-fail with card 0341 that afternoon and the grant fires only on that activation'). slt-fail + SLT Retry Daily cannot be bought twice (auto-migrate), so exactly one timeline can exist. Additionally MYA-05's pro_member role-mapping rule MUST be written before the checkout - if DUN-01 runs on D0 the role grant never fires and MYA-05 is unrunnable.
-- *Required fix:* DUN-01 moves to D2 (2026-08-04), checkout 13:00-14:00 site - which is what four downstream tasks already assume and what the audit's corrected calendar says. Resulting ladder, all fixed: D=08-05 13:00-14:00; failure at D+k (08-05 13:00-20:00, watch D4); on-hold at the first hourly sweep after D+24h = 08-06 ~14:00 (watch D5); retries at +24h/+48h/+72h = 08-06/07/08 (watch D5/D6/D7); 4th charge hits the cap 08-08; cancellation at max(D+96h, on_hold+72h) = 08-09 ~14:00-16:00 (watch D8). Re-day the group: DUN-01 D2, DUN-03 D4, DUN-02 D5 (with reads on D4 and D6), DUN-04 D7, DUN-05 D7 after 16:00 (S2 bought 08-09 16:30, fails 08-10 PM, recovered on the morning of 08-11 before N+24h). MYA-05 stays D2 morning, strictly before 13:00.
-
-**`low` · duplicate-coverage** — with `SLT-EML-15`, `SLT-REN-02`, `SLT-ADM-06`, `SLT-EML-03`, `SLT-EML-06`, `SLT-CHK-01`
-
-- *Problem:* Six overlapping clusters, each spending an execution slot on a code path another task already proves. (a) SLT-EML-15, SLT-REN-02 and SLT-ADM-06 all read the same SUB_CORE renewal cycle: EML-15 reconciles the mail set, REN-02 asserts the schedule re-arm, ADM-06 asserts the order typing/linkage - three tasks, one cycle, three separate evidence sets. (b) SLT-EML-03's Stripe leg re-asserts REN-02's payment_successful and its Paddle leg re-asserts SLT-REN-04's. (c) SLT-EML-06 re-proves new_subscription + admin_new_subscription at a Stripe block checkout, which is SLT-CHK-01's email rows 3 and 4 verbatim, on a new account. (d) SLT-EML-07 and SLT-SW-10 both drive pending-cancellation -> cancelled -> reactivation and both assert the same four emails. (e) SLT-EML-04's four payment_failed pairs are exactly SLT-DUN-01 ER8 plus SLT-DUN-02 ER9. (f) SLT-SYN-11's 'flex section hidden for a Different Renewal Price product' repeats SLT-PROD-05 steps 7-9 and SLT-SYN-01's probe. (g) SLT-LIFE-02's Paddle 'no Renew Early control' negative repeats SLT-CHK-04 ER7 and SLT-PROD-16.
-- *Required fix:* Keep one owner per assertion and make the others cite it. (a) EML-15 owns the reconciled mail set for the cycle and publishes it to the registry; REN-02 keeps only the schedule/offset/no-drift assertions; ADM-06 keeps only the HPOS meta assertions and drops its Related-Orders screenshot in favour of ADM-02's. (b) EML-03 keeps only the content assertions (amount, method row, UTC+6 next date, the Paddle ordering hazard) and cites REN-02/REN-04 for 'the renewal fired'. (c) EML-06 keeps only the gating-key and subject-string proof (emails.new_subscription.enabled, admin recipient resolution, the B4 dead-setting verdict) and cites CHK-01 for the checkout. (d) EML-07 owns the email set; SW-10 owns the reason-required / offers-declined / scheduled-cancel-timestamp / reactivation-scheduling-bug half and cites EML-07's mailpit ids. (e) EML-04 places no purchase and becomes the mail-content rider on the DUN ladder (attempt-number visibility, Pay Now link resolution, To: headers) - see the DUN re-day entry. (f) SYN-11 keeps only the force-set-meta half (isEnabled() true, getConfig() null, zero _renewal_sync_* on the subscription) and cites PROD-05 for the UI-absence screenshots. (g) LIFE-02 cites CHK-04's screenshot rather than re-driving the Paddle portal.
-
----
 ## Objective
 Run the real Stripe dunning ladder on SLT Retry Daily and prove each of the four charge attempts emits exactly one customer `payment_failed` and one `admin_payment_failed` with a working Pay Now link, and determine whether the attempt number is visible. Correlate each mail to its attempt via `_payment_retry_attempts` and the subscription notes.
 
@@ -45,49 +34,50 @@ Run the real Stripe dunning ladder on SLT Retry Daily and prove each of the four
 - Plugins: both
 
 ## Preconditions
-- SLT Retry Daily bought by `slt-fail` on D2 (2026-08-04 PM) with card `4000 0000 0000 0341` → `SUB_FAIL`, $13.00/day, parent order paid.
+- SLT Retry Daily bought by `slt-fail` on D2 (2026-08-04 PM) with card `4000 0000 0000 0341` → canonical registry alias `S_FAIL`, $13.00/day, parent order paid.
 - SLT-REF-03: Stripe fixes `max_attempts=3, interval_seconds=86400`; retries are NOT spread (`time()+86400`). Grace: on-hold 1 day, cancel 3 days. No dedupe on failure mail — four identical-subject customer mails is expected.
 - Customer and admin subjects are IDENTICAL; distinguish by the To: header (admin = `emails.admin_email` / `get_option('admin_email')`). No global setting is changed.
 
 ## Test data
 | Item | Value |
 |---|---|
-| Subscription | `SUB_FAIL`, SLT Retry Daily, $13.00/day |
-| `D` / k | `_next_payment_date` = 2026-08-05 PM / `crc32('arraysubs-spread-'.SUB_FAIL) % 21600` |
+| Subscription | `S_FAIL`, SLT Retry Daily, $13.00/day |
+| `D` / k | `_next_payment_date` = 2026-08-05 PM / `crc32('arraysubs-spread-'.S_FAIL) % 21600` |
 | Attempts 0–3 | `D+k` (08-05 PM), `+24h` (08-06), `+48h` (08-07), `+72h` (08-08) → watch D4…D7; then "reached retry limit" |
 | On-hold / cancelled | first hourly sweep after `D+24h` → 08-06; ≈ `D+96h` and ≥ on_hold+72h → 08-09 |
 
 ## Steps
-1. Read `_next_payment_date`; compute k and the four attempt windows; write them to evidence before anything fires.
-2. Open `.../wp-admin/admin.php?page=wc-status&tab=action-scheduler&status=pending&s=SUB_FAIL` as `--session admin`; screenshot the pending `arraysubs_process_renewal` leg.
-3. `PREV0=$(mailpit-agent latest-id)`; `mailpit-agent wait-new "$PREV0" 5400 "Payment failed for subscription #SUB_FAIL"`; then `list 50`, record BOTH ids with To: headers, `show` each, extract the Pay Now / View Subscription URLs.
-4. `wp post meta list SUB_FAIL --keys=_payment_retry_attempts,_payment_retry_next_attempt_at,_last_payment_failure_reason,_last_payment_failure_category,_next_payment_date --allow-root`.
-5. Open the `SUB_FAIL` edit screen; screenshot the `retry_scheduled` note and its next attempt time; confirm the renewal order is `failed` and the same order id is reused.
-6. Open the customer Pay Now URL in `--session customer-eml04` logged in as `slt-fail`; assert the order-pay page loads with total $13.00. **Do not pay** — the ladder must continue.
-7. Follow-ups (repeat steps 3–5, snapshotting `latest-id` first): 08-06 attempt 1, 08-07 attempt 2, 08-08 attempt 3.
-8. On 08-06 assert the `subscription_on_hold` mail and status `arraysubs-on-hold`; on 08-09 assert `subscription_cancelled` + `admin_subscription_cancelled`, status `arraysubs-cancelled`, `_cancellation_reason = overdue_payment`.
-9. After attempt 3 confirm NO fifth pair and a note containing "reached retry limit".
+1. Resolve registry alias `S_FAIL` into shell variable `S_FAIL`, abort unless `[[ "$S_FAIL" =~ ^[0-9]+$ ]]`, then read `_next_payment_date`; compute k from that numeric ID and write the four attempt windows to evidence before anything fires.
+2. In `admin-SLT-EML-04-D5`, open `.../wp-admin/admin.php?page=wc-status&tab=action-scheduler&status=pending&s=$S_FAIL`; capture the exact numeric `arraysubs_process_renewal` row as `SLT-EML-04-00-pending.png` and require its indexed args/action ID/gate match the registry.
+3. **D5 start:** load the registered `DUN_ATTEMPT0_PRE`, `DUN_RETRY1_PRE`, and `DUN_RETRY2_PRE` values/timestamps. Treat them as immutable task-owned boundaries: attempt 0 is the complete delta `[DUN_ATTEMPT0_PRE, DUN_RETRY1_PRE)`, and retry 1 is `[DUN_RETRY1_PRE, DUN_RETRY2_PRE)`. In each bounded delta require exactly two messages whose subject names exact S_FAIL, one to `slt-fail@example.test` and one to the recorded admin address. `show` all four, render/capture the exact pairs as `SLT-EML-04-01-attempt0-pair.png` and `-02-attempt1-pair.png`, extract Pay Now / View Subscription URLs, and classify unrelated shared-site mail rather than using `list 50`.
+4. `wp post meta list "$S_FAIL" --keys=_payment_retry_attempts,_payment_retry_next_attempt_at,_last_payment_failure_reason,_last_payment_failure_category,_next_payment_date --allow-root`.
+5. Open numeric `$S_FAIL` through the ArraySubs subscriptions app; capture the exact attempt-owned notes as `SLT-EML-04-05-retry-notes.png`, confirm the relationship-owned renewal order is failed, and prove every message names that same order. Do not use a legacy `post.php` subscription route or a newest-note assumption.
+6. For each attempt, open its customer Pay Now URL in a cycle-keyed `customer-eml04-SLT-EML-04-A<n>` session logged in as `slt-fail`; capture the safe unpopulated $13 order-pay page as `SLT-EML-04-06-order-pay-13-A<n>.png`, assert all URLs resolve to the same numeric failed order, do not enter payment data, and close that session immediately.
+7. Close only `admin-SLT-EML-04-D5` after its reads. **D6 before retry 3:** once SLT-DUN-02 captures `DUN_RETRY3_PRE` in the final five minutes, open `admin-SLT-EML-04-D6`, classify retry 2's bounded delta `[DUN_RETRY2_PRE, DUN_RETRY3_PRE)` exactly as step 3, capture `SLT-EML-04-03-attempt2-pair.png`, then repeat steps 4–6.
+8. **D6 retry 3:** consume that unchanged `DUN_RETRY3_PRE`; poll with repeated `mailpit-agent wait-new ... 60` calls only, never a 3600/1800-second blocking wait, through the 10-minute post-gate cutoff. Classify the complete delta, require and capture the exact pair as `SLT-EML-04-04-attempt3-pair.png`, repeat steps 4–6, and select the "reached retry limit" note by exact pre/post ID difference. After classification publish `DUN_FAILURES_DONE_PRE=$(mailpit-agent latest-id)` with UTC capture time and close `admin-SLT-EML-04-D6`.
+9. **D7 cancellation:** consume exact `DUN_CANCEL_PRE` and natural sweep/action gate published by SLT-DUN-04; inspect the complete delta and require the exact customer/admin cancelled pair, status, and reason. Capture `SLT-EML-04-07-cancelled.png` in `admin-SLT-EML-04-D7`, then close it. Across `DUN_ATTEMPT0_PRE` through cancellation, require exactly eight failure messages for exact `$S_FAIL` and no fifth pair.
+10. Determine attempt-number visibility from all eight rendered live bodies without product-source access. If absent, create `issues/SLT-EML-04-no-attempt-number.md`; if any other assertion fails, create `issues/SLT-EML-04-<concise-slug>.md`. Every standalone file must include this progress task/stage and plan path; subscription/order/action/note IDs; user ID/login/email/role and admin recipient; exact URLs/sessions/gates; reproduction; expected/actual; rendered body, Mailpit headers/timestamps, meta/note/UI/screenshot proof; and another attempt as counterexample. Never add a kanban bug card. Continue unaffected reads. After D7, independently review all evidence, close only remaining exact task sessions, move the card through `review` to `done`, and ensure Review returns to zero.
 
 ## Expected results
-1. Four pairs: 4 customer mails to `slt-fail@example.test` and 4 admin mails, all subject `[<site title>] Payment failed for subscription #SUB_FAIL`, each pair within 5 min of its computed window, gaps 24h ±5 min (unspread).
+1. Four pairs: 4 customer mails to `slt-fail@example.test` and 4 admin mails, all subject `[<site title>] Payment failed for subscription #S_FAIL`, each pair within 5 min of its computed window, gaps 24h ±5 min (unspread).
 2. `_payment_retry_attempts` reads 1, 2, 3, 3 after attempts 0–3; `_payment_retry_next_attempt_at` matches the next window and is stale after attempt 3.
-3. **Attempt number is NOT rendered** — neither `customer-payment-failed.php` nor `admin-payment-failed.php` has a counter. File `issues/SLT-EML-04-no-attempt-number.md` (medium: four indistinguishable emails); prove attempt identity via mailpit timestamp + `_payment_retry_attempts` + the note.
-4. Customer body: "the renewal payment for your subscription #SUB_FAIL could not be completed", Product `SLT Retry Daily`, Amount Due `$13.00`, a Status row, a Pay Now button whose href is the order-pay URL of the SAME failed order every time, and a "Manage your subscription" link.
-5. Admin body: "The automatic renewal payment for subscription #SUB_FAIL from <customer name> has failed", plus Customer/Product/Order/Amount/Status rows and a View Subscription link into wp-admin.
+3. Determine attempt-number visibility from the four **live rendered customer and admin bodies**, without opening product source. If the attempt number is absent, file `issues/SLT-EML-04-no-attempt-number.md` as the observed product finding (medium: four indistinguishable emails) and prove attempt identity via Mailpit timestamp + `_payment_retry_attempts` + the note. If it is rendered, record the exact text and do not create that issue.
+4. Customer body: "the renewal payment for your subscription #S_FAIL could not be completed", Product `SLT Retry Daily`, Amount Due `$13.00`, a Status row, a Pay Now button whose href is the order-pay URL of the SAME failed order every time, and a "Manage your subscription" link.
+5. Admin body: "The automatic renewal payment for subscription #S_FAIL from <customer name> has failed", plus Customer/Product/Order/Amount/Status rows and a View Subscription link into wp-admin.
 6. Pay Now URL returns 200 with total $13.00 and a payment form; no 404, no console error.
 7. `_next_payment_date` never moves; status active through attempt 0, on-hold 08-06, cancelled 08-09. No `payment_failed` mail for any non-SLT subscription in those windows.
 
 ## Emails expected
 | # | Email | Trigger point | Recipient | Subject contains | Verify with |
 |---|---|---|---|---|---|
-| 1-4 | `payment_failed` | each attempt, `arraysubs_gateway_payment_failed` | slt-fail@example.test | `Payment failed for subscription #SUB_FAIL` | `wait-new` |
-| 5-8 | `admin_payment_failed` | same instant | admin address | same subject | To: header on `show` |
-| 9 | `subscription_on_hold` | 08-06 | slt-fail@example.test | `is on hold` | `list 50` |
-| 10-11 | `subscription_cancelled` + admin | 08-09 | customer + admin | `has been cancelled` | `list 50` |
+| 1-4 | `payment_failed` | each attempt, `arraysubs_gateway_payment_failed` | slt-fail@example.test | `Payment failed for subscription #S_FAIL` | four task-owned bounded/full deltas; exact S_FAIL + customer `To:` |
+| 5-8 | `admin_payment_failed` | same instant | admin address | same subject | same deltas; exact S_FAIL + admin `To:` |
+| 9 | `subscription_on_hold` | 08-06 | slt-fail@example.test | `is on hold` | registered ladder delta; exact S_FAIL + customer `To:` |
+| 10-11 | `subscription_cancelled` + admin | 08-09 | customer + admin | `has been cancelled` | complete delta after `DUN_CANCEL_PRE` |
 | 12 | NONE EXPECTED | after attempt 3 | — | a 5th pair | exactly 8 failure messages |
 
 ## Evidence to capture
-- `SLT-EML-04-01-attempt0-pair.png` … `-04-attempt3-pair.png`, `-05-retry-notes.png`, `-06-order-pay-13.png`, `-07-cancelled.png`; k and the four windows; 8+ mailpit ids with To: headers and timestamps; every `_payment_retry_*` reading; the failed order id.
+- `SLT-EML-04-00` through `-07`, including per-attempt pair and safe cycle-keyed pay-page captures; k/windows; exact subscription/order/action/note/user IDs; all registered dunning baselines; 8+ Mailpit IDs with To/headers/timestamps and rendered bodies; every retry-meta read; sessions/review proof.
 
 ## Pass criteria
 - [ ] 4 customer + 4 admin failure mails, one pair per attempt, 24h apart
@@ -95,9 +85,10 @@ Run the real Stripe dunning ladder on SLT Retry Daily and prove each of the four
 - [ ] Amount Due $13.00; Pay Now resolves to the same payable failed order each time
 - [ ] `_payment_retry_attempts` sequence 1,2,3,3 matches the mail sequence
 - [ ] on-hold mail 08-06, cancelled mail 08-09; no 5th attempt
+- [ ] Polls were ≤60 seconds, every phase session closed, standalone findings only under `issues/`, and final evidence reviewed to done
 
 ## Isolation / teardown
-- Read-only: the failed order is deliberately left unpaid so the ladder completes. `SUB_FAIL` ends the window `arraysubs-cancelled` — the expected handoff; SLT-SETUP-99B deletes it. Close the customer session.
+- Read-only: the failed order is deliberately left unpaid so the ladder completes. Keep this card in progress through the D7 cancellation read; only then review it through done. `S_FAIL` ends `arraysubs-cancelled`; SLT-SETUP-99B deletes it. Close only the cycle-keyed task admin/customer sessions at each phase.
 
 ---
 
@@ -114,8 +105,13 @@ Run the real Stripe dunning ladder on SLT Retry Daily and prove each of the four
 - WooCommerce **grouped** products have zero handling in either plugin — grouped tasks are
   exploratory: document behaviour, do not assert a spec.
 - WP-Cron runs every minute from `/etc/cron.d/mirror-help-arrayhash-wordpress`. Scheduled actions
-  fire on their own; **a renewal that does not fire is a real bug** — capture evidence before forcing.
+  fire on their own; **a renewal that does not fire is a real bug** — capture evidence and do not force a natural-watch action.
 - Give this task its own browser session (`agent-browser --session <role>-<TASK-KEY>`). Sessions are
   keyed by name and **share a cart**.
-- Never run `wp action-scheduler run` without `--hooks=`; prefer a single action by ID.
-- Evidence goes in `qa/subscription-lifecycle-test/evidence/<TASK-KEY>/`.
+- Never run a bare or `--hooks=` Action Scheduler drain. Run one known action ID at a time only when the task explicitly authorizes it and after the required queue pre-flight; natural-watch actions are never forced.
+- Evidence goes under `/home/server-manager/slt-evidence/` using task-key-prefixed filenames.
+
+[[2026-08-05]] Wed 21:07
+UNVERIFIED (no S_FAIL source fixture) on 2026-08-05.
+
+`SLT-DUN-01` completed its authored missed-fixture branch on 2026-08-05: registry page 11847 stores `S_FAIL unavailable`, live verification found zero subscriptions for user 351/product 12108, and the D03 watch report instructs `SLT-DUN-02/03/04` plus `SLT-EML-04` to close ladder-only assertions `UNVERIFIED` without manufacturing a substitute. Without the failed renewal ladder, the repeated customer/admin payment-failed email assertions owned by this card have no valid source event. This card closes without inventing retry mail.
