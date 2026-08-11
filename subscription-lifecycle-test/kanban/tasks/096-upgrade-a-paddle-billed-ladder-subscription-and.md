@@ -110,4 +110,16 @@ FAIL on the authored switch-payment branch. The initial isolated Paddle purchase
 
 The portal preview displayed `$5.00` credit, `$15.00` new-plan charge, and `$10.00` due, while its exact generated proration order `13354` was pending for `$9.90`. On its order-pay route, selected Paddle returned the exact alert `Paddle checkout setup failed: No valid items found for Paddle checkout.` The two bounded same-order POST attempts returned HTTP `200` without any Paddle sandbox `transaction-checkout` request. Product `12611` still had no Paddle catalog meta, order `13354` had no transaction, and `SW05_PAY_PRE=6FvTzIMPjYmvIokCrDGCkQ` remained Mailpit latest. Subscription `13344` stayed active Basic at `$5.00`, unprocessed, with unchanged local/remote date and price. No manual completion/meta fallback was used; both carts were empty and `cust-SLT-SW-05` was closed.
 
-Per step 5, the remote-renewal branch is `UNVERIFIED (switch payment unavailable)` and the execution card closes after independent review rather than remaining future-gated. Full proof: `/home/server-manager/slt-evidence/SLT-SW-05-D06-execution.txt`; findings: `issues/SLT-SW-05-paddle-order-pay-no-valid-items.md` and `issues/SLT-SW-05-preview-total-disagrees-with-order-pay.md`.
+Per step 5, the remote-renewal branch is `UNVERIFIED (switch payment unavailable)` and the execution card closes after independent review rather than remaining future-gated. Full proof: `/home/server-manager/slt-evidence/SLT-SW-05-D06-execution.txt`; findings: `issues/critical-plugin-SLT-SW-05-paddle-order-pay-no-valid-items.md` and `issues/light-plugin-SLT-SW-05-preview-total-disagrees-with-order-pay.md`.
+
+## D09 watch-only recurrence note — 2026-08-11 evening
+
+Card remains reviewed/done; no setup or failed switch leg was repeated. PASS for the natural
+unswitched Basic `$5.00` charge, exact completed relationship order `13758`, one-day schedule
+advance, exact admin/customer mail pair, and canceled/unattempted local action `16852`.
+FAIL for recurring persistence/logging defects; existing issue records updated only:
+`issues/light-plugin-SLT-SW-05-paddle-renewal-leaves-subscription-last-transaction-stale.md`,
+`issues/light-plugin-SLT-MYA-03-paddle-renewal-order-omits-transaction-meta-and-line-item.md`,
+`issues/critical-plugin-SLT-ADM-06-renewal-orders-missing-arraysubs-subscription-id.md`, and
+`issues/light-plugin-SLT-IMP-05-paddle-routine-webhooks-logged-as-unhandled-warnings.md`. Full proof:
+`/home/server-manager/slt-evidence/SLT-SW-05-D09-natural-basic-renewal.txt`.

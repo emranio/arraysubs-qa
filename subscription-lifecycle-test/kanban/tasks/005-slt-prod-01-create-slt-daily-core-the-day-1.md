@@ -119,7 +119,7 @@ Create the plainest possible recurring product — day period, interval 1, no tr
 - Published product ID 11927 through wp-admin as simple, virtual, in-stock, and subscription with slug slt-daily-core.
 - Reloaded editor values and WP-CLI metadata match the task contract: day/1, unlimited, no trial, signup fee 0, price 10.00, renewal-price and flex-sync metas absent.
 - The origin-fresh storefront renders $10.00 / day and Subscribe Now with no browser errors; the complete Mailpit delta contains no message attributable to this task.
-- The unmodified environment initially failed the storefront criterion because pre-existing Shop Access rule rule_1784662676378_maa3te08s targets all products and blocked both guest and authenticated slt-core. Logged `issues/SLT-PROD-01-members-access-all-products-rule-blocks-slt-checkouts.md`.
+- The unmodified environment initially failed the storefront criterion because pre-existing Shop Access rule rule_1784662676378_maa3te08s targets all products and blocked both guest and authenticated slt-core. Logged `issues/qa-plan-SLT-PROD-01-members-access-all-products-rule-blocks-slt-checkouts.md`.
 - To keep downstream checkout QA viable, added only ID 11927 to that rule exclusion through wp-admin. The D0 rule JSON is preserved, the deviation and exact SETUP-99 restoration obligation are recorded on registry page 11847, and no non-SLT product was changed.
 - Cloudflare served stale pre-exclusion HTML at the canonical URL after the save; an origin-fresh query-string MISS showed the correct open state. Both observations are retained in the issue.
 - The resulting plan correction made this a binding suite-wide rule, added exact restoration to SLT-SETUP-99A, and

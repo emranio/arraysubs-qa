@@ -1,10 +1,12 @@
 ---
 id: 114
 title: 'Refund a renewal order: gateway refund, subscription effect, and emails'
-status: todo
+status: done
 priority: high
 created: 2026-08-02T03:43:12.458047506+02:00
-updated: 2026-08-02T03:43:23.925598623+02:00
+updated: 2026-08-11T03:08:49.4418231+02:00
+started: 2026-08-11T03:08:49.441822058+02:00
+completed: 2026-08-11T03:08:49.441822058+02:00
 tags:
     - admin
     - portal
@@ -17,6 +19,8 @@ depends_on:
     - 58
     - 20
     - 19
+claimed_by: steam-tide
+claimed_at: 2026-08-11T03:08:49.441822989+02:00
 class: standard
 ---
 
@@ -108,3 +112,24 @@ Refund a paid renewal order under `auto_gateway_refund = true` and `allow_prorat
   keyed by name and **share a cart**.
 - Never run a bare or `--hooks=` Action Scheduler drain. Run one known action ID at a time only when the task explicitly authorizes it and after the required queue pre-flight; natural-watch actions are never forced.
 - Evidence goes under `/home/server-manager/slt-evidence/` using task-key-prefixed filenames.
+
+## D09 execution — 2026-08-11 early-morning
+
+`FAIL` after completing every runnable leg. Exact execution record:
+`/home/server-manager/slt-evidence/SLT-ADM-08-D09-execution.md`.
+
+- PASS: exact relationship-derived renewal order `13590`; `$4.00` partial gateway refund left
+  subscription `12655` active with the exact note and no cancellation mail; the remaining `$5.00`
+  gateway refund fully refunded the order, cancelled the subscription with all authored metadata,
+  cancelled actions `16794`/`16795`, emitted the exact three-message full-refund delta, populated
+  portal Refund History, and settled as two succeeded Stripe test refunds against the original charge.
+- FAIL: S5 `12234` exposed no **Prorated Refund** control, so its required preview could not be read.
+  S5 was left unchanged.
+- Registry page `11847` now contains the single append-only marker
+  `SLT-ADM-08 D09 EARLY TERMINAL`; D10 setup must skip cancelled subscription `12655`.
+- Standalone findings:
+  - `issues/light-plugin-SLT-ADM-08-prorated-refund-control-missing.md`
+  - `issues/light-plugin-SLT-ADM-08-refund-button-amount-stays-zero.md`
+  - `issues/light-plugin-SLT-ADM-08-admin-cancellation-misattributed-to-customer.md`
+- Both task browser sessions were closed. The transient copied admin-auth state file was deleted
+  immediately after customer-session setup and is not recoverable.

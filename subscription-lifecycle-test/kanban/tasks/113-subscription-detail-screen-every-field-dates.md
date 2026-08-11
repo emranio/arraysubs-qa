@@ -1,10 +1,12 @@
 ---
 id: 113
 title: 'Subscription detail screen: every field, dates, schedule, related orders, gateway panel'
-status: todo
+status: done
 priority: critical
 created: 2026-08-02T03:43:12.380877241+02:00
-updated: 2026-08-02T03:43:23.808931156+02:00
+updated: 2026-08-11T03:20:51.991713605+02:00
+started: 2026-08-11T03:20:51.991712563+02:00
+completed: 2026-08-11T03:20:51.991712563+02:00
 tags:
     - admin
     - portal
@@ -16,6 +18,8 @@ depends_on:
     - 5
     - 1
     - 12
+claimed_by: steam-tide
+claimed_at: 2026-08-11T03:20:51.991713484+02:00
 class: standard
 ---
 
@@ -104,3 +108,13 @@ Verify every field the detail screen renders against the underlying meta, HPOS o
   keyed by name and **share a cart**.
 - Never run a bare or `--hooks=` Action Scheduler drain. Run one known action ID at a time only when the task explicitly authorizes it and after the required queue pre-flight; natural-watch actions are never forced.
 - Evidence goes under `/home/server-manager/slt-evidence/` using task-key-prefixed filenames.
+
+## D09 execution — 2026-08-11 — PASS WITH FINDINGS
+
+- Ran read-only from 07:09–07:19 UTC+6 in isolated browser session `admin-SLT-ADM-02`; no setting or record was changed.
+- Resolved `SUB_CORE=11959` and `SUB_A=12760` by exact owner/product/parent relationships. SUB_CORE's nine exact completed `$10.00` orders totalled `$90.00`; all fields, localized dates, order typing, Stripe gateway data, and HPOS route `id=13610` matched truth.
+- With `k=10727`, pending actions `16876` (`09:37:52Z`) and `16877` (`15:37:52Z`) exactly matched `due+k-6h` / `due+k`.
+- SUB-A correctly showed no gateway, blank start/last payment, `$0.00`, zero completed payments, and `No orders found`. The authored pending-order clause is source-conflicted by the existing `issues/critical-plugin-SLT-ADM-05-admin-created-daily-subscription-arms-at-one-month.md`; no duplicate issue was filed.
+- Both detail endpoints returned 200 and browser console errors were empty. The sole 403 was WordPress core's `sample-permalink` request from HPOS order `13610`, not a detail endpoint. Mailpit cursor remained `4cogsKDuQGssjfWbN3yhKp`, proving zero new mail.
+- Filed `issues/light-plugin-SLT-ADM-02-singular-billing-schedule-uses-day-s.md` and `issues/light-plugin-SLT-ADM-02-empty-shipping-address-renders-stray-comma.md` (both low).
+- Full execution evidence and self-review: `/home/server-manager/slt-evidence/SLT-ADM-02-D09-execution.md`; required screenshots `SLT-ADM-02-01` through `-06` are under `/home/server-manager/slt-evidence/`.

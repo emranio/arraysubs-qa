@@ -1,0 +1,90 @@
+2026-08-02T16:06:14+02:00 SKIP day=0 is before the watch window
+2026-08-02T16:13:33+02:00 SKIP day=0 is before the watch window
+2026-08-02T17:42:01+02:00 SKIP day=0 is before the watch window
+2026-08-03T02:10:02+02:00 START D01 (2026-08-03) phase=early-morning site=06:10 UTC+6
+2026-08-03T05:04:25+02:00 OK D01 phase=early-morning report=/home/server-manager/www/arrayhash/mirror-help.arrayhash.com/public/wp-content/plugins/qa/subscription-lifecycle-test/watch-reports/D01-2026-08-03.md
+2026-08-03T06:10:01+02:00 START D01 (2026-08-03) phase=late-morning site=10:10 UTC+6
+2026-08-03T08:39:37+02:00 OK D01 phase=late-morning report=/home/server-manager/www/arrayhash/mirror-help.arrayhash.com/public/wp-content/plugins/qa/subscription-lifecycle-test/watch-reports/D01-2026-08-03.md
+2026-08-03T12:10:02+02:00 START D01 (2026-08-03) phase=afternoon site=16:10 UTC+6
+2026-08-03T12:10:17+02:00 FAIL D01 phase=afternoon codex exited 1 — see /home/server-manager/www/arrayhash/mirror-help.arrayhash.com/public/wp-content/plugins/qa/subscription-lifecycle-test/automation/logs/D01-2026-08-03-afternoon-codex.log
+2026-08-03T15:10:02+02:00 START D01 (2026-08-03) phase=evening site=19:10 UTC+6
+2026-08-03T15:10:13+02:00 FAIL D01 phase=evening codex exited 1 — see /home/server-manager/www/arrayhash/mirror-help.arrayhash.com/public/wp-content/plugins/qa/subscription-lifecycle-test/automation/logs/D01-2026-08-03-evening-codex.log
+2026-08-03T17:42:02+02:00 START D01 (2026-08-03) phase=night site=21:42 UTC+6
+2026-08-03T17:42:19+02:00 FAIL D01 phase=night codex exited 1 — see /home/server-manager/www/arrayhash/mirror-help.arrayhash.com/public/wp-content/plugins/qa/subscription-lifecycle-test/automation/logs/D01-2026-08-03-night-codex.log
+2026-08-04T02:10:01+02:00 START D02 (2026-08-04) phase=early-morning site=06:10 UTC+6
+2026-08-04T02:10:25+02:00 FAIL D02 phase=early-morning codex exited 1 — see /home/server-manager/www/arrayhash/mirror-help.arrayhash.com/public/wp-content/plugins/qa/subscription-lifecycle-test/automation/logs/D02-2026-08-04-early-morning-codex.log
+2026-08-04T06:10:01+02:00 START D02 (2026-08-04) phase=late-morning site=10:10 UTC+6
+2026-08-04T06:10:21+02:00 FAIL D02 phase=late-morning codex exited 1 — see /home/server-manager/www/arrayhash/mirror-help.arrayhash.com/public/wp-content/plugins/qa/subscription-lifecycle-test/automation/logs/D02-2026-08-04-late-morning-codex.log
+2026-08-04T12:10:02+02:00 START D02 (2026-08-04) phase=afternoon site=16:10 UTC+6
+2026-08-04T12:10:28+02:00 FAIL D02 phase=afternoon codex exited 1 — see /home/server-manager/www/arrayhash/mirror-help.arrayhash.com/public/wp-content/plugins/qa/subscription-lifecycle-test/automation/logs/D02-2026-08-04-afternoon-codex.log
+2026-08-04T15:10:03+02:00 START D02 (2026-08-04) phase=evening site=19:10 UTC+6
+2026-08-04T15:10:23+02:00 FAIL D02 phase=evening codex exited 1 — see /home/server-manager/www/arrayhash/mirror-help.arrayhash.com/public/wp-content/plugins/qa/subscription-lifecycle-test/automation/logs/D02-2026-08-04-evening-codex.log
+2026-08-04T17:42:01+02:00 START D02 (2026-08-04) phase=night site=21:42 UTC+6
+2026-08-04T17:42:18+02:00 FAIL D02 phase=night codex exited 1 — see /home/server-manager/www/arrayhash/mirror-help.arrayhash.com/public/wp-content/plugins/qa/subscription-lifecycle-test/automation/logs/D02-2026-08-04-night-codex.log
+2026-08-05T02:10:02+02:00 START D03 (2026-08-05) phase=early-morning site=06:10 UTC+6
+2026-08-05T02:10:16+02:00 FAIL D03 phase=early-morning codex exited 1 — see /home/server-manager/www/arrayhash/mirror-help.arrayhash.com/public/wp-content/plugins/qa/subscription-lifecycle-test/automation/logs/D03-2026-08-05-early-morning-codex.log
+2026-08-05T06:10:02+02:00 START D03 (2026-08-05) phase=late-morning site=10:10 UTC+6
+2026-08-05T06:10:21+02:00 FAIL D03 phase=late-morning codex exited 1 — see /home/server-manager/www/arrayhash/mirror-help.arrayhash.com/public/wp-content/plugins/qa/subscription-lifecycle-test/automation/logs/D03-2026-08-05-late-morning-codex.log
+2026-08-05T12:10:02+02:00 START D03 (2026-08-05) phase=afternoon site=16:10 UTC+6
+2026-08-05T15:01:16+02:00 OK D03 phase=afternoon report=/home/server-manager/www/arrayhash/mirror-help.arrayhash.com/public/wp-content/plugins/qa/subscription-lifecycle-test/watch-reports/D03-2026-08-05.md
+2026-08-05T15:10:03+02:00 START D03 (2026-08-05) phase=evening site=19:10 UTC+6
+2026-08-05T17:42:01+02:00 SKIP another watch run already holds /tmp/slt-daily-renewal-watch.lock
+2026-08-05T17:44:53+02:00 OK D03 phase=evening report=/home/server-manager/www/arrayhash/mirror-help.arrayhash.com/public/wp-content/plugins/qa/subscription-lifecycle-test/watch-reports/D03-2026-08-05.md
+2026-08-06T02:10:02+02:00 START D04 (2026-08-06) phase=early-morning site=06:10 UTC+6
+2026-08-06T02:10:20+02:00 FAIL D04 phase=early-morning codex exited 1 — see /home/server-manager/www/arrayhash/mirror-help.arrayhash.com/public/wp-content/plugins/qa/subscription-lifecycle-test/automation/logs/D04-2026-08-06-early-morning-codex.log
+2026-08-06T06:10:01+02:00 START D04 (2026-08-06) phase=late-morning site=10:10 UTC+6
+2026-08-06T06:10:34+02:00 FAIL D04 phase=late-morning codex exited 1 — see /home/server-manager/www/arrayhash/mirror-help.arrayhash.com/public/wp-content/plugins/qa/subscription-lifecycle-test/automation/logs/D04-2026-08-06-late-morning-codex.log
+2026-08-06T12:10:01+02:00 START D04 (2026-08-06) phase=afternoon site=16:10 UTC+6
+2026-08-06T12:10:21+02:00 FAIL D04 phase=afternoon codex exited 1 — see /home/server-manager/www/arrayhash/mirror-help.arrayhash.com/public/wp-content/plugins/qa/subscription-lifecycle-test/automation/logs/D04-2026-08-06-afternoon-codex.log
+2026-08-06T15:10:02+02:00 START D04 (2026-08-06) phase=evening site=19:10 UTC+6
+2026-08-06T15:10:32+02:00 FAIL D04 phase=evening codex exited 1 — see /home/server-manager/www/arrayhash/mirror-help.arrayhash.com/public/wp-content/plugins/qa/subscription-lifecycle-test/automation/logs/D04-2026-08-06-evening-codex.log
+2026-08-06T17:42:02+02:00 START D04 (2026-08-06) phase=night site=21:42 UTC+6
+2026-08-06T17:42:30+02:00 FAIL D04 phase=night codex exited 1 — see /home/server-manager/www/arrayhash/mirror-help.arrayhash.com/public/wp-content/plugins/qa/subscription-lifecycle-test/automation/logs/D04-2026-08-06-night-codex.log
+2026-08-07T02:10:02+02:00 START D05 (2026-08-07) phase=early-morning site=06:10 UTC+6
+2026-08-07T05:05:26+02:00 OK D05 phase=early-morning report=/home/server-manager/www/arrayhash/mirror-help.arrayhash.com/public/wp-content/plugins/qa/subscription-lifecycle-test/watch-reports/D05-2026-08-07.md
+2026-08-07T06:10:02+02:00 START D05 (2026-08-07) phase=late-morning site=10:10 UTC+6
+2026-08-07T12:10:02+02:00 SKIP another watch run already holds /tmp/slt-daily-renewal-watch.lock
+2026-08-07T12:10:10+02:00 TIMEOUT D05 phase=late-morning after 21600s — verify that no settings bracket remains open; see /home/server-manager/www/arrayhash/mirror-help.arrayhash.com/public/wp-content/plugins/qa/subscription-lifecycle-test/automation/logs/D05-2026-08-07-late-morning-codex.log
+2026-08-07T15:10:02+02:00 START D05 (2026-08-07) phase=evening site=19:10 UTC+6
+2026-08-07T16:32:59+02:00 OK D05 phase=evening report=/home/server-manager/www/arrayhash/mirror-help.arrayhash.com/public/wp-content/plugins/qa/subscription-lifecycle-test/watch-reports/D05-2026-08-07.md
+2026-08-07T17:42:01+02:00 START D05 (2026-08-07) phase=night site=21:42 UTC+6
+2026-08-07T19:30:54+02:00 OK D05 phase=night report=/home/server-manager/www/arrayhash/mirror-help.arrayhash.com/public/wp-content/plugins/qa/subscription-lifecycle-test/watch-reports/D05-2026-08-07.md
+2026-08-08T02:10:01+02:00 START D06 (2026-08-08) phase=early-morning site=06:10 UTC+6
+2026-08-08T04:25:39+02:00 OK D06 phase=early-morning report=/home/server-manager/www/arrayhash/mirror-help.arrayhash.com/public/wp-content/plugins/qa/subscription-lifecycle-test/watch-reports/D06-2026-08-08.md
+2026-08-08T06:10:02+02:00 START D06 (2026-08-08) phase=late-morning site=10:10 UTC+6
+2026-08-08T06:20:39+02:00 OK D06 phase=late-morning report=/home/server-manager/www/arrayhash/mirror-help.arrayhash.com/public/wp-content/plugins/qa/subscription-lifecycle-test/watch-reports/D06-2026-08-08.md
+2026-08-08T12:10:01+02:00 START D06 (2026-08-08) phase=afternoon site=16:10 UTC+6
+2026-08-08T14:51:13+02:00 OK D06 phase=afternoon report=/home/server-manager/www/arrayhash/mirror-help.arrayhash.com/public/wp-content/plugins/qa/subscription-lifecycle-test/watch-reports/D06-2026-08-08.md
+2026-08-08T15:10:02+02:00 START D06 (2026-08-08) phase=evening site=19:10 UTC+6
+2026-08-08T17:42:01+02:00 SKIP another watch run already holds /tmp/slt-daily-renewal-watch.lock
+2026-08-08T19:14:44+02:00 OK D06 phase=evening report=/home/server-manager/www/arrayhash/mirror-help.arrayhash.com/public/wp-content/plugins/qa/subscription-lifecycle-test/watch-reports/D06-2026-08-08.md
+2026-08-09T02:10:02+02:00 START D07 (2026-08-09) phase=early-morning site=06:10 UTC+6
+2026-08-09T04:23:19+02:00 OK D07 phase=early-morning report=/home/server-manager/www/arrayhash/mirror-help.arrayhash.com/public/wp-content/plugins/qa/subscription-lifecycle-test/watch-reports/D07-2026-08-09.md
+2026-08-09T06:10:02+02:00 START D07 (2026-08-09) phase=late-morning site=10:10 UTC+6
+2026-08-09T11:56:52+02:00 OK D07 phase=late-morning report=/home/server-manager/www/arrayhash/mirror-help.arrayhash.com/public/wp-content/plugins/qa/subscription-lifecycle-test/watch-reports/D07-2026-08-09.md
+2026-08-09T12:10:01+02:00 START D07 (2026-08-09) phase=afternoon site=16:10 UTC+6
+2026-08-09T14:52:37+02:00 OK D07 phase=afternoon report=/home/server-manager/www/arrayhash/mirror-help.arrayhash.com/public/wp-content/plugins/qa/subscription-lifecycle-test/watch-reports/D07-2026-08-09.md
+2026-08-09T15:10:02+02:00 START D07 (2026-08-09) phase=evening site=19:10 UTC+6
+2026-08-09T17:13:10+02:00 OK D07 phase=evening report=/home/server-manager/www/arrayhash/mirror-help.arrayhash.com/public/wp-content/plugins/qa/subscription-lifecycle-test/watch-reports/D07-2026-08-09.md
+2026-08-09T17:42:01+02:00 START D07 (2026-08-09) phase=night site=21:42 UTC+6
+2026-08-09T21:01:18+02:00 OK D07 phase=night report=/home/server-manager/www/arrayhash/mirror-help.arrayhash.com/public/wp-content/plugins/qa/subscription-lifecycle-test/watch-reports/D07-2026-08-09.md
+2026-08-10T02:10:02+02:00 START D08 (2026-08-10) phase=early-morning site=06:10 UTC+6
+2026-08-10T03:08:42+02:00 OK D08 phase=early-morning report=/home/server-manager/www/arrayhash/mirror-help.arrayhash.com/public/wp-content/plugins/qa/subscription-lifecycle-test/watch-reports/D08-2026-08-10.md
+2026-08-10T06:10:02+02:00 START D08 (2026-08-10) phase=late-morning site=10:10 UTC+6
+2026-08-10T11:48:36+02:00 OK D08 phase=late-morning report=/home/server-manager/www/arrayhash/mirror-help.arrayhash.com/public/wp-content/plugins/qa/subscription-lifecycle-test/watch-reports/D08-2026-08-10.md
+2026-08-10T12:10:01+02:00 START D08 (2026-08-10) phase=afternoon site=16:10 UTC+6
+2026-08-10T12:32:31+02:00 OK D08 phase=afternoon report=/home/server-manager/www/arrayhash/mirror-help.arrayhash.com/public/wp-content/plugins/qa/subscription-lifecycle-test/watch-reports/D08-2026-08-10.md
+2026-08-10T15:10:02+02:00 START D08 (2026-08-10) phase=evening site=19:10 UTC+6
+2026-08-10T15:35:50+02:00 OK D08 phase=evening report=/home/server-manager/www/arrayhash/mirror-help.arrayhash.com/public/wp-content/plugins/qa/subscription-lifecycle-test/watch-reports/D08-2026-08-10.md
+2026-08-10T17:42:01+02:00 START D08 (2026-08-10) phase=night site=21:42 UTC+6
+2026-08-10T18:58:19+02:00 OK D08 phase=night report=/home/server-manager/www/arrayhash/mirror-help.arrayhash.com/public/wp-content/plugins/qa/subscription-lifecycle-test/watch-reports/D08-2026-08-10.md
+2026-08-11T02:10:01+02:00 START D09 (2026-08-11) phase=early-morning site=06:10 UTC+6
+2026-08-11T03:46:34+02:00 OK D09 phase=early-morning report=/home/server-manager/www/arrayhash/mirror-help.arrayhash.com/public/wp-content/plugins/qa/subscription-lifecycle-test/watch-reports/D09-2026-08-11.md
+2026-08-11T06:10:01+02:00 START D09 (2026-08-11) phase=late-morning site=10:10 UTC+6
+2026-08-11T06:23:33+02:00 OK D09 phase=late-morning report=/home/server-manager/www/arrayhash/mirror-help.arrayhash.com/public/wp-content/plugins/qa/subscription-lifecycle-test/watch-reports/D09-2026-08-11.md
+2026-08-11T12:10:01+02:00 START D09 (2026-08-11) phase=afternoon site=16:10 UTC+6
+2026-08-11T12:37:38+02:00 OK D09 phase=afternoon report=/home/server-manager/www/arrayhash/mirror-help.arrayhash.com/public/wp-content/plugins/qa/subscription-lifecycle-test/watch-reports/D09-2026-08-11.md
+2026-08-11T15:10:02+02:00 START D09 (2026-08-11) phase=evening site=19:10 UTC+6
+2026-08-11T17:22:53+02:00 OK D09 phase=evening report=/home/server-manager/www/arrayhash/mirror-help.arrayhash.com/public/wp-content/plugins/qa/subscription-lifecycle-test/watch-reports/D09-2026-08-11.md
+2026-08-11T17:42:02+02:00 START D09 (2026-08-11) phase=night site=21:42 UTC+6
+2026-08-11T20:12:44+02:00 OK D09 phase=night report=/home/server-manager/www/arrayhash/mirror-help.arrayhash.com/public/wp-content/plugins/qa/subscription-lifecycle-test/watch-reports/D09-2026-08-11.md

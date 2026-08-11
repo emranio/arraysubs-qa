@@ -115,7 +115,7 @@ Prove the 2-active and 1-active partitions on live purchases, and that `_arraysu
 
 ### D01 execution — 2026-08-03
 
-**PASS.** Read-only configuration/UI checks reproduced product `12099` as actives `[2,3]`, boundaries `[1]`, and product `12102` as actives `[3]`, boundaries `[]`; neither product was edited or saved. The previously documented disabled-row rendering issue remained visible and is already covered by `issues/SLT-SYN-01-disabled-segments-remain-visible.md`, so no duplicate finding was filed.
+**PASS.** Read-only configuration/UI checks reproduced product `12099` as actives `[2,3]`, boundaries `[1]`, and product `12102` as actives `[3]`, boundaries `[]`; neither product was edited or saved. The previously documented disabled-row rendering issue remained visible and is already covered by `issues/light-plugin-SLT-SYN-01-disabled-segments-remain-visible.md`, so no duplicate finding was filed.
 
 Two Seg checkout: user `354` (`slt-flex2`), order `12162`, sub `12172`; paid USD 9.00, active, completed payments 1, mode `prorate`, cycle start `2026-08-02 18:00:00Z`, next payment `2026-08-05 18:00:00Z`. `k=699`; pending invoice/charge actions `13994`/`13995`. The authored immediate-reminder observation was absent: no action and no reminder mail.
 

@@ -33,7 +33,7 @@ Full Paddle sandbox purchase: `slt-paddle` buys `SLT Paddle Daily` ($11.00) thro
 - Plugins: pro-required
 
 ## Preconditions
-- SLT-PROD-16 (`SLT Paddle Daily`) + SLT-SETUP-05 (Paddle readiness) done. Read `issues/SLT-SETUP-05-paddle-product-sync-metas-not-created.md`: the gateway radio was offered, but product `12112` still had no Paddle `pro_...`, `pri_...`, or sync-timestamp metadata after a real save. Do not treat `done` as `passed`, do not retry product saves, and do not repair credentials or product code. This task still performs the real checkout attempt to measure the customer-facing impact.
+- SLT-PROD-16 (`SLT Paddle Daily`) + SLT-SETUP-05 (Paddle readiness) done. Read `issues/critical-plugin-SLT-SETUP-05-paddle-product-sync-metas-not-created.md`: the gateway radio was offered, but product `12112` still had no Paddle `pro_...`, `pri_...`, or sync-timestamp metadata after a real save. Do not treat `done` as `passed`, do not retry product saves, and do not repair credentials or product code. This task still performs the real checkout attempt to measure the customer-facing impact.
 - `renewals.sync_to_billing_cycle` OFF and the product has no `_arraysubs_flex_sync_enabled`, else `maybeHideUnsupportedRenewalSyncGateways()` hides Paddle. Re-read that meta first.
 - `slt-paddle` is Paddle-only. Run after 12:00 site, never inside D3's SYN-04 bracket.
 
@@ -122,7 +122,7 @@ Local `NPD=2026-08-06 10:20:38Z`; the redacted remote API returned status `activ
 
 The complete consecutive Mailpit delta after `56kcLytDylTWndyI4kEeYS` is customer completed-order `1r5TIKAYhhbbjwMtLBAxOZ`, admin new-order `3ulpIttY4ztfpXmAeRea4o`, customer active-subscription `2q7ZRgzwykMkBKlw2ZgsdQ`, and admin new-subscription `50GJjz3ekgXoIfje5d6UwY`; invoice, verification/SCA, and payment-failed negatives hold. Browser errors were empty; Store API/Paddle/receipt calls succeeded. The final browser cart and persistent cart were empty. Both exact task sessions were closed after publication.
 
-Evidence: `/home/server-manager/slt-evidence/SLT-CHK-04-facts.txt`, `SLT-CHK-04-sub-meta.txt`, and `SLT-CHK-04-01-gateways.png` through `SLT-CHK-04-06-cart-empty.png`. The successful purchase was appended as a scope counterexample to `issues/SLT-SETUP-05-paddle-product-sync-metas-not-created.md`; no new product issue was found and no product implementation was accessed or changed. Canonical handoff: `SUB_PAD=12639`, `ORDER=12629`; `SLT-REN-04` owns tomorrow's Paddle-driven renewal observation.
+Evidence: `/home/server-manager/slt-evidence/SLT-CHK-04-facts.txt`, `SLT-CHK-04-sub-meta.txt`, and `SLT-CHK-04-01-gateways.png` through `SLT-CHK-04-06-cart-empty.png`. The successful purchase was appended as a scope counterexample to `issues/critical-plugin-SLT-SETUP-05-paddle-product-sync-metas-not-created.md`; no new product issue was found and no product implementation was accessed or changed. Canonical handoff: `SUB_PAD=12639`, `ORDER=12629`; `SLT-REN-04` owns tomorrow's Paddle-driven renewal observation.
 
 [[2026-08-05]] Wed 15:30
 Board correction: restored to in-progress. Next gate D4: capture PAD_REN_PRE 2026-08-06 04:21:48Z-04:26:47Z (10:21:48-10:26:47 site) before invoice action 14853, then preserve it through the Paddle remote/local renewal evidence.

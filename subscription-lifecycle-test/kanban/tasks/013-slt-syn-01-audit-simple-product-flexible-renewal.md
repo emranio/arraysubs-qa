@@ -162,7 +162,7 @@ Prove that the pro Flexible Renewal Sync control block on a SIMPLE subscription 
 - Inventoried the master label/description, data-cycle-days=7, two hidden positional inputs (2/5), three active toggles, and legend 1-2 / 3-5 / 6-7.
 - Disable/save deleted only `_arraysubs_flex_sync_enabled`; both boundaries and all active flags remained. Re-enable/save restored the same UI and all six authorized values.
 - Exactly six `_arraysubs_flex_*` keys exist. Key-sorted semantic before/after diff is empty.
-- Raw CSV order necessarily changed when the enabled key was deleted/reinserted; the plan assertion was corrected directly and the observation is recorded in `issues/SLT-SYN-01A-raw-meta-diff-order-only.md`, not as a product-state failure.
+- Raw CSV order necessarily changed when the enabled key was deleted/reinserted; the plan assertion was corrected directly and the observation is recorded in `issues/qa-plan-SLT-SYN-01A-raw-meta-diff-order-only.md`, not as a product-state failure.
 - Mailpit latest ID remained `1vpHEKG6i8l9ZzBoW2BqrI`.
 - Registry page 11847 now authorizes product 11943 for SLT-SYN-05 at 2026-08-02 18:25:41 UTC+6.
 - Evidence: `/home/server-manager/slt-evidence/SLT-SYN-01A-*`.
@@ -181,9 +181,9 @@ Prove that the pro Flexible Renewal Sync control block on a SIMPLE subscription 
 
 Pass B completed before the 12:15 cutoff. Products 12093, 12099, and 12102 ended with empty canonical key/value diffs against their preflight baselines; product 12119 (SLT Flex SubMin Probe) returned getConfig NULL while enabled, was appended exactly once to Shop Access rule rule_1784662676378_maa3te08s, and was left with the master flex key absent. Boundary clamps, refusal text, defensive fallback, non-no handling, positional meta, empty one-active boundaries, zero mail, Pass A handoff, and registry handoff all resolved.
 
-Verdict FAIL solely because disabled legend rows remain visibly rendered on the two-active and one-active products instead of collapsing to the authored two/one rows. Finding: issues/SLT-SYN-01-disabled-segments-remain-visible.md. Evidence: /home/server-manager/slt-evidence/SLT-SYN-01B-facts.txt, screenshots SLT-SYN-01-01 through -05b, raw/canonical before/after files, and SLT-SYN-01B-canonical-diff.txt. Browser session closed; no settings bracket, cart, checkout, order, subscription, clock, or scheduler mutation occurred.
+Verdict FAIL solely because disabled legend rows remain visibly rendered on the two-active and one-active products instead of collapsing to the authored two/one rows. Finding: issues/light-plugin-SLT-SYN-01-disabled-segments-remain-visible.md. Evidence: /home/server-manager/slt-evidence/SLT-SYN-01B-facts.txt, screenshots SLT-SYN-01-01 through -05b, raw/canonical before/after files, and SLT-SYN-01B-canonical-diff.txt. Browser session closed; no settings bracket, cart, checkout, order, subscription, clock, or scheduler mutation occurred.
 
 [[2026-08-03]] Mon 07:24
 ## Independent evidence review — accepted after recapture
 
-Replaced screenshots SLT-SYN-01-01 and -02 during a read-only post-restore admin view. Both now visibly show the enabled 30-day control, slider boundaries 2/6, legend 1-2 / 3-6 / 7-30, and all three segment labels. No field changed and Update was not clicked; review-SLT-SYN-01 was closed. Live canonical comparisons for products 12093/12099/12102 each exited 0, product 12119 still has no flex-enabled key, and its Shop Access exclusion count is exactly one. The FAIL remains isolated to issues/SLT-SYN-01-disabled-segments-remain-visible.md; no remediation card exists.
+Replaced screenshots SLT-SYN-01-01 and -02 during a read-only post-restore admin view. Both now visibly show the enabled 30-day control, slider boundaries 2/6, legend 1-2 / 3-6 / 7-30, and all three segment labels. No field changed and Update was not clicked; review-SLT-SYN-01 was closed. Live canonical comparisons for products 12093/12099/12102 each exited 0, product 12119 still has no flex-enabled key, and its Shop Access exclusion count is exactly one. The FAIL remains isolated to issues/light-plugin-SLT-SYN-01-disabled-segments-remain-visible.md; no remediation card exists.

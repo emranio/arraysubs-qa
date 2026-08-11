@@ -1,10 +1,12 @@
 ---
 id: 116
 title: End-of-window log sweep, failed-action audit and cycle-to-order reconciliation
-status: todo
+status: done
 priority: high
 created: 2026-08-02T03:43:12.60952465+02:00
-updated: 2026-08-02T03:43:24.173496322+02:00
+updated: 2026-08-11T03:43:07.416241945+02:00
+started: 2026-08-11T03:43:07.416240652+02:00
+completed: 2026-08-11T03:43:07.416240652+02:00
 tags:
     - edge-cases
     - day-09
@@ -124,6 +126,8 @@ depends_on:
     - 113
     - 114
     - 115
+claimed_by: steam-tide
+claimed_at: 2026-08-11T03:43:07.416241844+02:00
 class: standard
 ---
 
@@ -216,3 +220,24 @@ End-of-window regression sweep: read every log surface for D0-D9, enumerate fail
   keyed by name and **share a cart**.
 - Never run a bare or `--hooks=` Action Scheduler drain. Run one known action ID at a time only when the task explicitly authorizes it and after the required queue pre-flight; natural-watch actions are never forced.
 - Evidence goes under `/home/server-manager/slt-evidence/` using task-key-prefixed filenames.
+
+## D09 execution — 2026-08-11 early-morning — FAIL
+
+- Completed the full read-only D0-D9 log, queue, audit-screen, browser-route, report-presence,
+  Mailpit, and 25-subscription reconciliation sweep. Full evidence and self-review:
+  `/home/server-manager/slt-evidence/SLT-IMP-05-D09-execution.md`.
+- PASS: zero product-path fatal/uncaught entries; zero SLT-attributable failed scheduler rows;
+  all 25 live subscriptions reconcile at delta zero (`103` completed payments / `103`
+  historically paid positive relationship orders); both lifetime controls never renewed;
+  D01-D09 reports exist; Mailpit cursor stayed `4cogsKDuQGssjfWbN3yhKp`; zero 4xx/5xx on
+  all twelve routes; exact browser sessions closed.
+- FAIL: routine Paddle intermediary events are emitted as misleading unhandled warnings, and
+  all five customer My Account routes emit `AbortError: Transition was skipped`. Standalone
+  findings:
+  - `issues/light-plugin-SLT-IMP-05-paddle-routine-webhooks-logged-as-unhandled-warnings.md`
+  - `issues/light-plugin-SLT-IMP-05-my-account-routes-emit-view-transition-aborterror.md`
+- UNVERIFIED only for the authored same-order-across-retries assertion because canonical
+  `S_FAIL` never existed; no substitute was inferred. The live set contains zero failed/on-hold
+  relationship orders and no one-order-per-retry proliferation.
+- No setting or data mutation occurred and nothing requires restoration. The pending 72-hour
+  teardown handoff is `/home/server-manager/slt-evidence/SLT-IMP-05-pending-72h.txt`.

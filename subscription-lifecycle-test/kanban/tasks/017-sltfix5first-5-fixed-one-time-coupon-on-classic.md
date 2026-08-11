@@ -110,7 +110,7 @@ Prove `SLTFIX5FIRST` (fixed cart $5.00, apply-to-subs yes, duration `one-time`) 
 
 - Parent `12331` links exactly and bidirectionally to sole subscription `12332`; subscription count is `366 -> 367`, HPOS shop-order count `543 -> 544`, and user `362` owns only `12332`.
 - Classic cart, checkout, and receipt prove coupon `sltfix5first`, discount `-$5.00`, and total `$5.00`. Exact four-message set: `31AFTGijF7XijCMZnsLwmt`, `6TYILieHiiDmsMSWULDuyp`, `1mZMnuPHnnZbZ4CzGyUVAf`, `3scBdxmEgq298byftBwV3Q`.
-- Product finding: subscription coupon meta count `0` and coupon-note count `0`; full standalone context is in `issues/SLT-CPN-02-one-time-coupon-capture-missing.md`. No kanban bug card was created.
+- Product finding: subscription coupon meta count `0` and coupon-note count `0`; full standalone context is in `issues/critical-plugin-SLT-CPN-02-one-time-coupon-capture-missing.md`. No kanban bug card was created.
 - `k=12625`; invoice `14106` at `2026-08-04 15:51:37` site, charge `14107` at `21:51:37` site. Capture `REN1_PRE` only in `[21:46:37,21:51:37)` site; never force.
 - Full D1 proof: `/home/server-manager/slt-evidence/SLT-CPN-02-D01-facts.txt`. Card correctly remains `in-progress` for D3/D4 renewal evidence.
 
@@ -118,7 +118,7 @@ Prove `SLTFIX5FIRST` (fixed cart $5.00, apply-to-subs yes, duration `one-time`) 
 
 **R1 PASS; R2 remains naturally armed for later today.** Invoice action `14106` and charge action `14107` ran unattended through WP Cron. The charge started at `2026-08-04 15:52:04Z`, 27 seconds after its gate, and completed at `15:52:13Z`. Relationship-exact cycle-2 order `12429` completed for the full USD `$10.00`, zero tax, zero fee items, and `get_coupon_codes()=[]`.
 
-Subscription `12332` remains active with `_completed_payments=2` and next due `2026-08-05 12:21:12Z`. Coupon-related subscription meta remains absent as already recorded in `issues/SLT-CPN-02-one-time-coupon-capture-missing.md`; R1 added no recurring-discount or coupon-cycle note. The exact natural mail pair is admin order `3NYhutsKZpT6wE8nkmphqE` plus customer payment success `2v8RP3qSZt1Mdi75zk4Re5`; an owner/subject sweep found no renewal-invoice mail.
+Subscription `12332` remains active with `_completed_payments=2` and next due `2026-08-05 12:21:12Z`. Coupon-related subscription meta remains absent as already recorded in `issues/critical-plugin-SLT-CPN-02-one-time-coupon-capture-missing.md`; R1 added no recurring-discount or coupon-cycle note. The exact natural mail pair is admin order `3NYhutsKZpT6wE8nkmphqE` plus customer payment success `2v8RP3qSZt1Mdi75zk4Re5`; an owner/subject sweep found no renewal-invoice mail.
 
 The required `REN1_PRE` cursor was missed contemporaneously. Mailpit chronology proves `0MehjgCWvkh0qQXtdxG5QX` was the immediately preceding message and only the two task-owned messages followed through the gate; this is explicitly a post-hoc reconstruction.
 

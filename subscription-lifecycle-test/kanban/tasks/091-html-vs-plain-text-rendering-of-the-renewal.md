@@ -1,10 +1,12 @@
 ---
 id: 91
 title: HTML vs plain-text rendering of the renewal invoice and payment-received emails, and link resolution
-status: in-progress
+status: done
 priority: medium
 created: 2026-08-02T03:43:10.747716504+02:00
-updated: 2026-08-09T06:49:26.775614267+02:00
+updated: 2026-08-10T17:51:06.391646901+02:00
+started: 2026-08-10T17:51:06.39164607+02:00
+completed: 2026-08-10T17:51:06.39164607+02:00
 tags:
     - email
     - day-06
@@ -13,8 +15,6 @@ estimate: 1h30m
 depends_on:
     - 67
     - 53
-claimed_by: delta-gate
-claimed_at: 2026-08-09T06:49:26.77496566+02:00
 class: standard
 ---
 
@@ -124,3 +124,12 @@ D07 late-morning preparation completed inside the authored window. SUB_CORE=1195
 
 [[2026-08-09]] Sun 09:49
 D07 multipart/manual-payment leg PASS; the final post-restore criterion remains due on D8, so this card stays in progress. Natural action 16119 completed once and emitted multipart invoice 2H7QObpMcorzL5x47uuWOp for relationship order 13466. PAY_PRE=2H7QObpMcorzL5x47uuWOp was captured immediately before one saved-Visa-4242 payment; order 13466 completed for $10.00 and emitted admin New order 4XYFQ8ZBDWYbRHXU5Y63VF plus multipart payment-success 3suwtzFDriAtZ35sOOVElB. Both plain parts carried the complete matching fact sets with no markup/residue/bare placeholder; normalized current HTML structures matched the recorded HTML-only baselines. The order-pay, account-subscriptions, and footer/home links returned valid HTTP 200 pages with no console errors. Subscription 11959 is active with 8 payments, next due 2026-08-10 12:39:05Z; action 16120 is canceled unattempted and replacements 16396/16397 are pending for D8 15:37:52/21:37:52 site. The bracket closed at 15:42:37 site: both exact option rows and _auto_renew are absent, both fresh UI readbacks show HTML, and the persisted registry has one open plus one restored marker. Current task sessions are closed. Evidence: /home/server-manager/slt-evidence/SLT-EML-05-D07-current-cycle.txt and the artifacts indexed within it. Next gate: capture POST_RESTORE_PRE only during 2026-08-10 15:32:52-15:37:51 site, then verify after action 16397 through 21:47:52 that the complete delta has zero invoice and exactly one HTML-only payment-success mail before review to done.
+
+[[2026-08-10]] Mon 11:44
+D08 post-restore baseline and invoice-suppression leg complete. POST_RESTORE_PRE=56ugkHpFaRuFCoyKaal00u was frozen by the supplied 10:10:02 site facts and unchanged at the task-specific 15:32:56 revalidation; the registry marker was posted/read back before invoice action 16396. Action 16396 completed naturally once via WP Cron at 15:38:03-15:38:04 site and created exact pending cycle-9 order 13610 for SUB_CORE=11959. Through the 15:42:52 cutoff the complete Mailpit delta was empty and the exact Invoice wait returned 124, so restored invoice suppression passed. Evidence: /home/server-manager/slt-evidence/SLT-EML-05-D08-post-restore-pre.txt and /home/server-manager/slt-evidence/SLT-EML-05-D08-registry-baseline.png. Keep in progress. Exact next gate: after charge action 16397 at 2026-08-10 21:37:52 site, the 21:42 phase must inspect the same immutable delta through 21:47:52, prove exactly one raw-MIME HTML-only Payment received for subscription #11959 and zero invoices, then self-review through review to done.
+
+[[2026-08-10]] Mon 15:33
+D08 19:10 evening gate review: no task action is eligible before natural charge action 16397 at 2026-08-10 21:37:52 site. Keep immutable POST_RESTORE_PRE=56ugkHpFaRuFCoyKaal00u; do not re-baseline or repeat the completed setup/restoration legs. The 21:42 phase must inspect the complete delta through 21:47:52, require exactly one raw-MIME HTML-only Payment received for subscription #11959 and zero Invoice messages for #11959, reconcile action/order/subscription state, then self-review through review to done.
+
+[[2026-08-10]] Mon 17:50
+D08 night final follow-up PASS. Immutable POST_RESTORE_PRE=56ugkHpFaRuFCoyKaal00u was consumed through the 21:47:52 site cutoff: action 16397 completed naturally once via WP Cron; exact order 13610 completed for $10.00; subscription 11959 advanced to 9 payments and next 2026-08-11 12:39:05Z with healthy pair 16876/16877. Complete 18-message delta contained exactly one customer Payment received (#11959, Mailpit 3Ys0YzdlQuoH1weCSHdqNf), zero Invoice/failure/on-hold mail for #11959; raw MIME is top-level text/html with no multipart boundary. Independent review of D07 multipart/link/restoration proof plus D08 baseline/suppression/final proof resolved every criterion. Evidence: /home/server-manager/slt-evidence/SLT-EML-05-D08-post-restore-final.txt. No issue filed.

@@ -106,7 +106,7 @@ Cover the variation-level flexible-sync configuration path, which is a separate 
 - Shop Access rule `rule_1784662676378_maa3te08s` contains parent `12385` exactly once and contains no variation ID. No order was created, final cart is empty, and Mailpit stayed at `6fzJg6YALlBNfbNPe6f79F`.
 - Registry page `11847` now contains the product/variation IDs and the `SLT-SYN-02` / `SLT-SYN-13` handoff.
 - Evidence: `/home/server-manager/slt-evidence/SLT-PROD-15-facts.txt` and the four required `SLT-PROD-15-0*.png` screenshots.
-- The only console observation was the already-filed `issues/SLT-CHK-01-wc-blocks-data-dependency-warning.md`; no duplicate issue was created.
+- The only console observation was the already-filed `issues/light-plugin-SLT-CHK-01-wc-blocks-data-dependency-warning.md`; no duplicate issue was created.
 
 ## Isolation / teardown
 - State handoff: after `SLT-SYN-02` publishes its authorized meta dump, `SLT-SYN-13` buys Full as `slt-flex` and Next Cycle as `slt-flex3` after 12:00 on D2 (2026-08-04). No Sync remains config-only. If Full and Next Cycle produce identical next-payment dates, write a standalone issue file under `issues/` for variation resolution.

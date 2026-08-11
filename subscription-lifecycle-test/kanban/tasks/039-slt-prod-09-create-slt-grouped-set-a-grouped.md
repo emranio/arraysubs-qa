@@ -88,7 +88,7 @@ Provide the grouped product and pin the real behaviour: ArraySubs has NO grouped
 - [x] Grouped parent published with exactly three children
 - [x] No subscription controls on the grouped parent (documented)
 - [x] Probe A single-subscription add works
-- [x] Probe B retained one subscription line; the required refusal notice was missing and the false success feedback is captured in `issues/SLT-PROD-09-grouped-multi-subscription-refusal-notice-missing.md`
+- [x] Probe B retained one subscription line; the required refusal notice was missing and the false success feedback is captured in `issues/light-plugin-SLT-PROD-09-grouped-multi-subscription-refusal-notice-missing.md`
 - [x] Probe C mixed cart totals $13.00
 - [x] Grouped and extra parent product IDs are each present exactly once in the preserved Shop Access exclusion list
 - [x] Zero mail, cart left empty
@@ -101,7 +101,7 @@ Provide the grouped product and pin the real behaviour: ArraySubs has NO grouped
 
 ## D03 execution result (2026-08-05)
 
-QA COMPLETE WITH PRODUCT DEFECT FILED. Published extra child `12583` and grouped parent `12586`; `_children` contains exactly `11927`, `12583`, and `12577`, the grouped parent has no visible subscription controls, and Shop Access gained only the two new IDs. Probe A passed at USD `10.00`; Probe C passed at USD `13.00`. Probe B retained exactly one subscription (`SLT Signup Fee Daily`) but rendered no refusal notice and falsely claimed both children were added; standalone issue: `issues/SLT-PROD-09-grouped-multi-subscription-refusal-notice-missing.md`. Both task carts are empty, no order exists, Mailpit stayed at `56kcLytDylTWndyI4kEeYS`, and browser error buffers were empty. Full evidence: `/home/server-manager/slt-evidence/SLT-PROD-09-facts.txt`.
+QA COMPLETE WITH PRODUCT DEFECT FILED. Published extra child `12583` and grouped parent `12586`; `_children` contains exactly `11927`, `12583`, and `12577`, the grouped parent has no visible subscription controls, and Shop Access gained only the two new IDs. Probe A passed at USD `10.00`; Probe C passed at USD `13.00`. Probe B retained exactly one subscription (`SLT Signup Fee Daily`) but rendered no refusal notice and falsely claimed both children were added; standalone issue: `issues/light-plugin-SLT-PROD-09-grouped-multi-subscription-refusal-notice-missing.md`. Both task carts are empty, no order exists, Mailpit stayed at `56kcLytDylTWndyI4kEeYS`, and browser error buffers were empty. Full evidence: `/home/server-manager/slt-evidence/SLT-PROD-09-facts.txt`.
 
 ---
 

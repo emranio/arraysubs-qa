@@ -104,7 +104,7 @@ Prove the Subject / Email heading / Additional content overrides on an ArraySubs
   - `wp post update 12786 --post_status=arraysubs-active --allow-root`
   - cleanup itself emitted a second mail pair: customer `1gpznceQ5LZsi6NK7FTZlp`, admin `65pK2vT5zGVU7UHiyphXFF`
   - final status restored to `arraysubs-active`
-- Blocker recorded: `qa/subscription-lifecycle-test/issues/SLT-EML-12-admin-status-ui-fires-active-mail-without-persisting-status.md`
+- Blocker recorded: `qa/subscription-lifecycle-test/issues/qa-plan-SLT-EML-12-admin-status-ui-fires-active-mail-without-persisting-status.md`
 
 
 ---
@@ -138,4 +138,4 @@ Exclusive 21:00-21:40 site bracket owner confirmed. Preparation remains state-ne
 Override bracket completed on 2026-08-05. Prior option state was absent and final option state is absent again. Overridden customer/admin mail IDs: 5DWxnovrH9I1024JTuTxUj / 0zWQB9v5YIdXqjYpmEHm9v. Restored-default customer/admin mail IDs: 1PVeoMecZqOQqAxlLtNshg / 6XstfWCpbfAFtSNvYCbd8t. Lifetime next-payment rendered blank, no sample placeholder values leaked into the live overridden send, and screenshots 01-05 plus bracket/reference files were captured under /home/server-manager/slt-evidence/.
 
 [[2026-08-05]] Wed 17:16
-Independent evening review: live override customer mail 5DWxnovrH9I1024JTuTxUj rendered all non-price tags correctly and lifetime next-payment blank, but recurring_amount inserted literal WooCommerce price HTML into the RFC subject instead of plain $49.00. Verdict QA COMPLETE / FAIL; issue issues/SLT-EML-12-recurring-amount-subject-renders-html.md. Bracket file proves 15:02:04Z-15:10:37Z and exact absent option restoration; H1 remains active.
+Independent evening review: live override customer mail 5DWxnovrH9I1024JTuTxUj rendered all non-price tags correctly and lifetime next-payment blank, but recurring_amount inserted literal WooCommerce price HTML into the RFC subject instead of plain $49.00. Verdict QA COMPLETE / FAIL; issue issues/light-plugin-SLT-EML-12-recurring-amount-subject-renders-html.md. Bracket file proves 15:02:04Z-15:10:37Z and exact absent option restoration; H1 remains active.

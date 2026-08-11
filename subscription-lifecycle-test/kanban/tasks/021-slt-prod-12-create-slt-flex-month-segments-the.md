@@ -109,7 +109,7 @@ Segment plan: nominal cycle 30 days, all three segments ACTIVE, boundaries seg1_
 - The cache-busted guest preview started from an empty cart and showed `27.10`, prorated until the synced renewal date, next charge 1 September 2026 at `30.00`, and no next-cycle bonus-access note. No checkout/order was attempted; the cart was emptied and re-proven empty.
 - Registry page `11847` was updated through the browser editor with the authored purchase-date/segment table; matching section count is one.
 - Mailpit baseline/final: `42DI8ELEccd8qFsaMtyeag`; zero attributable mail.
-- Slider/admin errors were empty. The guest cart emitted only the previously filed global wcBlocksData dependency warning (`issues/SLT-CHK-01-wc-blocks-data-dependency-warning.md`).
+- Slider/admin errors were empty. The guest cart emitted only the previously filed global wcBlocksData dependency warning (`issues/light-plugin-SLT-CHK-01-wc-blocks-data-dependency-warning.md`).
 - Consolidated evidence: `/home/server-manager/slt-evidence/SLT-PROD-12-facts.txt`.
 - Independent evidence review reloaded product `12093` and recaptured `SLT-PROD-12-03-after-reload.png` with the persisted `2/6` handles, `1-2 / 3-6 / 7-30` legend, and all three active toggles visibly in frame.
 

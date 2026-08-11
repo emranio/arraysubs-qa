@@ -1263,3 +1263,36 @@
 {"timestamp":"2026-08-10T02:55:23.697357648+02:00","action":"move","task_id":110,"detail":"review -\u003e done"}
 {"timestamp":"2026-08-10T02:55:23.903599446+02:00","action":"edit","task_id":110,"detail":"LATE renewal on S5: prove the schedule catches up to the cycle grid and that a past computed date queues zero legs"}
 {"timestamp":"2026-08-10T02:55:23.904124342+02:00","action":"release","task_id":110,"detail":"north-snow"}
+{"timestamp":"2026-08-10T11:00:44.931429253+02:00","action":"edit","task_id":91,"detail":"HTML vs plain-text rendering of the renewal invoice and payment-received emails, and link resolution"}
+{"timestamp":"2026-08-10T11:00:44.942461784+02:00","action":"claim","task_id":91,"detail":"linen-dale"}
+{"timestamp":"2026-08-10T11:44:41.95865146+02:00","action":"edit","task_id":91,"detail":"HTML vs plain-text rendering of the renewal invoice and payment-received emails, and link resolution"}
+{"timestamp":"2026-08-10T11:44:42.041633409+02:00","action":"edit","task_id":91,"detail":"HTML vs plain-text rendering of the renewal invoice and payment-received emails, and link resolution"}
+{"timestamp":"2026-08-10T11:44:42.042292475+02:00","action":"release","task_id":91,"detail":"linen-dale"}
+{"timestamp":"2026-08-10T15:33:54.426822165+02:00","action":"edit","task_id":91,"detail":"HTML vs plain-text rendering of the renewal invoice and payment-received emails, and link resolution"}
+{"timestamp":"2026-08-10T15:33:54.429208482+02:00","action":"claim","task_id":91,"detail":"curl-flora"}
+{"timestamp":"2026-08-10T15:33:54.541093999+02:00","action":"edit","task_id":91,"detail":"HTML vs plain-text rendering of the renewal invoice and payment-received emails, and link resolution"}
+{"timestamp":"2026-08-10T15:33:54.664621024+02:00","action":"edit","task_id":91,"detail":"HTML vs plain-text rendering of the renewal invoice and payment-received emails, and link resolution"}
+{"timestamp":"2026-08-10T15:33:54.665329712+02:00","action":"release","task_id":91,"detail":"curl-flora"}
+{"timestamp":"2026-08-10T15:33:54.77399481+02:00","action":"edit","task_id":106,"detail":"Renewal execution after a synced first charge: second charge full on the boundary, third on the grid"}
+{"timestamp":"2026-08-10T15:33:54.77973734+02:00","action":"claim","task_id":106,"detail":"curl-flora"}
+{"timestamp":"2026-08-10T15:33:54.897275678+02:00","action":"edit","task_id":106,"detail":"Renewal execution after a synced first charge: second charge full on the boundary, third on the grid"}
+{"timestamp":"2026-08-10T15:33:55.046023295+02:00","action":"edit","task_id":106,"detail":"Renewal execution after a synced first charge: second charge full on the boundary, third on the grid"}
+{"timestamp":"2026-08-10T15:33:55.04883316+02:00","action":"release","task_id":106,"detail":"curl-flora"}
+{"timestamp":"2026-08-10T17:50:51.818106912+02:00","action":"edit","task_id":91,"detail":"HTML vs plain-text rendering of the renewal invoice and payment-received emails, and link resolution"}
+{"timestamp":"2026-08-10T17:50:55.728866361+02:00","action":"move","task_id":91,"detail":"in-progress -\u003e review"}
+{"timestamp":"2026-08-10T17:51:06.392289045+02:00","action":"move","task_id":91,"detail":"review -\u003e done"}
+{"timestamp":"2026-08-10T18:43:47.537675116+02:00","action":"edit","task_id":106,"detail":"Renewal execution after a synced first charge: second charge full on the boundary, third on the grid"}
+{"timestamp":"2026-08-11T02:19:29.652398358+02:00","action":"move","task_id":114,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-11T03:08:49.312545199+02:00","action":"move","task_id":114,"detail":"in-progress -\u003e review"}
+{"timestamp":"2026-08-11T03:08:49.442441648+02:00","action":"move","task_id":114,"detail":"review -\u003e done"}
+{"timestamp":"2026-08-11T03:09:57.686318104+02:00","action":"move","task_id":113,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-11T03:20:51.826539926+02:00","action":"move","task_id":113,"detail":"in-progress -\u003e review"}
+{"timestamp":"2026-08-11T03:20:51.992295106+02:00","action":"move","task_id":113,"detail":"review -\u003e done"}
+{"timestamp":"2026-08-11T03:21:27.790217406+02:00","action":"move","task_id":116,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-11T03:43:06.692376366+02:00","action":"move","task_id":116,"detail":"in-progress -\u003e review"}
+{"timestamp":"2026-08-11T03:43:07.41714353+02:00","action":"move","task_id":116,"detail":"review -\u003e done"}
+{"timestamp":"2026-08-11T20:05:41.259715218+02:00","action":"edit","task_id":106,"detail":"Renewal execution after a synced first charge: second charge full on the boundary, third on the grid"}
+{"timestamp":"2026-08-11T20:05:41.266983708+02:00","action":"claim","task_id":106,"detail":"lark-stone"}
+{"timestamp":"2026-08-11T20:09:58.017084854+02:00","action":"edit","task_id":106,"detail":"Renewal execution after a synced first charge: second charge full on the boundary, third on the grid"}
+{"timestamp":"2026-08-11T20:09:58.114625523+02:00","action":"edit","task_id":106,"detail":"Renewal execution after a synced first charge: second charge full on the boundary, third on the grid"}
+{"timestamp":"2026-08-11T20:09:58.116563419+02:00","action":"release","task_id":106,"detail":"lark-stone"}

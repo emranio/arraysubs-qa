@@ -118,5 +118,5 @@ Provide the "signup free" product. A true $0 recurring SIMPLE subscription is im
 - Through the real Member Access UI, appended only parent `12375` to `rule_1784662676378_maa3te08s`; the fresh raw option contains the ID exactly once and preserves all prior rule fields/exclusions.
 - The real one-click add flow redirected to block checkout and showed `Free today`, first charge `6 August, 2026 (UTC+6)` at `$8.00`, subtotal/total `$0.00`, and no signup fee. No checkout image was captured because its help panel displayed a full test card number. The separately reopened cart safely proves `$0.00 today (free for 2 days)` and an estimated total of `$0.00`.
 - Product `12375` appears in zero WooCommerce orders. The cart was emptied and re-read as empty. Mailpit stayed exactly at `6fzJg6YALlBNfbNPe6f79F`; browser errors were empty.
-- The known `wcBlocksData` dependency warning recurred in the guest console and is already documented in `issues/SLT-CHK-01-wc-blocks-data-dependency-warning.md`; no new issue was created.
+- The known `wcBlocksData` dependency warning recurred in the guest console and is already documented in `issues/light-plugin-SLT-CHK-01-wc-blocks-data-dependency-warning.md`; no new issue was created.
 - Evidence: `/home/server-manager/slt-evidence/SLT-PROD-02-facts.txt` and screenshots `SLT-PROD-02-01` through `-03`.

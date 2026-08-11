@@ -114,7 +114,7 @@ Prove that the variation-level Flexible Renewal Sync block is a genuinely separa
 
 ## Execution — 2026-08-05 (late completion of D02)
 
-Verdict: **COMPLETED WITH PRODUCT FINDING**. The variation-level independence contract passed after the guarded parent cleanup. The fresh parent leak remains an open standalone finding at `issues/SLT-SYN-02-variable-parent-hidden-flex-meta.md`.
+Verdict: **COMPLETED WITH PRODUCT FINDING**. The variation-level independence contract passed after the guarded parent cleanup. The fresh parent leak remains an open standalone finding at `issues/critical-plugin-SLT-SYN-02-variable-parent-hidden-flex-meta.md`.
 
 - Parent `12385`; Full `12386`; Next Cycle `12388`; No Sync `12390`.
 - All indexed loops, day/3 containers, legends, two cross-write directions, real reorder, deletion semantics, parent isolation, runtime config/partition/matrix, and exact restoration were verified.

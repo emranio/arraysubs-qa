@@ -115,6 +115,6 @@ Provide the limited-cycle product whose entire life — signup, two renewals, ex
 - Reloaded editor and WP-CLI metadata match day/2, length 3, no trial, signup fee 0, price 7.00, and flex-sync meta absent.
 - Origin-fresh guest storefront visibly renders $7.00 / 2 days, 3 billing cycles, and Subscribe Now with no browser errors.
 - Publication emitted no email; Mailpit latest ID remained 1vpHEKG6i8l9ZzBoW2BqrI.
-- Appended ID 11933 to the narrow Private member store product exclusion tracked by `issues/SLT-PROD-01-members-access-all-products-rule-blocks-slt-checkouts.md`; non-SLT products and all other rule fields remain unchanged, with exact D0 restoration assigned to SETUP-99.
+- Appended ID 11933 to the narrow Private member store product exclusion tracked by `issues/qa-plan-SLT-PROD-01-members-access-all-products-rule-blocks-slt-checkouts.md`; non-SLT products and all other rule fields remain unchanged, with exact D0 restoration assigned to SETUP-99.
 - Registry page 11847 records ID 11933 and the conflict-resolution date model: for the later D0 purchase, renewal #1 is 2026-08-04, final renewal and expiry are 2026-08-06, rather than the stale title/objective date.
 - Evidence: /home/server-manager/slt-evidence/SLT-PROD-06-facts.txt, SLT-PROD-06-meta.json, SLT-PROD-06-01-subscription-tab.png, and SLT-PROD-06-02-frontend-duration.png.

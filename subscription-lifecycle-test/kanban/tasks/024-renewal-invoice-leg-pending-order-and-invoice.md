@@ -100,7 +100,7 @@ Prove the renewal-invoice leg is a real, separate event: a `pending` renewal ord
 
 ## D02 natural-leg completion — reviewed 2026-08-05
 
-Verdict: **COMPLETED WITH PRODUCT FINDING**. The invoice/manual-renewal lifecycle contract passed. The original checkout exposed incompatible Alipay and remains documented only in `issues/SLT-REN-03-subscription-checkout-offers-incompatible-alipay.md`.
+Verdict: **COMPLETED WITH PRODUCT FINDING**. The invoice/manual-renewal lifecycle contract passed. The original checkout exposed incompatible Alipay and remains documented only in `issues/critical-plugin-SLT-REN-03-subscription-checkout-offers-incompatible-alipay.md`.
 
 - Invoice action `13988` created exact renewal order `12410` 42 seconds after its natural schedule, with cycle 2, exact due-date linkage, `created_via` empty, and `wc-pending` USD `10.00` state.
 - Invoice message `7Yk2i1g2X4rk5YylVEnfzb` arrived before the charge leg and links the exact order-pay route.
@@ -140,7 +140,7 @@ Verdict: **COMPLETED WITH PRODUCT FINDING**. The invoice/manual-renewal lifecycl
 
 ### D01 execution note — 2026-08-03
 
-**Authored checkout verdict: FAIL; lifecycle fixture recovered and armed.** The real block-checkout attempt began at 12:46 site time, inside the 12:30-13:00 gate. Stripe's Payment Element exposed and submitted Alipay, but Stripe rejected the resulting future-use intent. Order `12131` became failed while subscription `12147` was created on hold. The product finding is recorded only in `issues/SLT-REN-03-subscription-checkout-offers-incompatible-alipay.md`.
+**Authored checkout verdict: FAIL; lifecycle fixture recovered and armed.** The real block-checkout attempt began at 12:46 site time, inside the 12:30-13:00 gate. Stripe's Payment Element exposed and submitted Alipay, but Stripe rejected the resulting future-use intent. Order `12131` became failed while subscription `12147` was created on hold. The product finding is recorded only in `issues/critical-plugin-SLT-REN-03-subscription-checkout-offers-incompatible-alipay.md`.
 
 The same order was paid from its order-pay screen with the intended Card option at 13:02 site time. No duplicate order or subscription was created. Final D01 fixture state: user `358` (`slt.invoice`), order `12131` `wc-completed`, subscription `12147` `arraysubs-active`, `_completed_payments=1`, `_payment_gateway=stripe`, saved method `card`/Visa/last4 `4242`, next payment `2026-08-04 06:46:30Z`, and intentional `_auto_renew=off`. Browser and persistent carts are empty.
 
