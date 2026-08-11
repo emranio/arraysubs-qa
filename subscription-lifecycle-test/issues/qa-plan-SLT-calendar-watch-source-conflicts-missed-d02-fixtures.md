@@ -1,6 +1,6 @@
 # SLT calendar/watch source conflicts from missed D02 fixtures
 
-Status: open planning blocker
+Status: resolved 2026-08-11 — calendar, watch, and teardown consumers are source-gated
 
 ## Task / stage / plan
 
@@ -116,3 +116,14 @@ Concrete proof
 - This issue is about authoritative QA-plan drift, not plugin runtime behavior.
 - Separate planning issues already cover the dunning ladder specifically, `SLT-MYA-05` follow-ups, and the explicit D13 tail conflict around `SUB_2SEG` and `SLT-SYN-13`.
 - This issue is narrower: future docs still reference other missed-D02 fixtures as if they remain live authored evidence.
+
+## Resolution and verification
+
+- Added binding source-outcome overlays to `calendar.md` and `watch-schedule.md` for tasks
+  #30/#31/#32/#34/#35/#36/#43/#45/#46 and their downstream consumers.
+- Historical row text remains an oracle for a formally replanned numeric fixture, but no authored alias can
+  create an expectation by itself; absent branches are `UNVERIFIED` and omitted from mail/action/teardown
+  scoring.
+- The D13 handoff now conditions `SUB_W`, Box Daily, SYN-11, and SYN-13 members on numeric live-registry proof.
+- `/home/server-manager/slt-evidence/D12-watch-runbook-2026-08-14.txt` now also conditions its `SUB_W`
+  renewal/mail reconciliation on task #45's numeric source instead of treating the missing fixture as live.

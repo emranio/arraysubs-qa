@@ -1,6 +1,6 @@
 # SLT dunning future-watch source conflicts
 
-Status: open planning blocker
+Status: resolved 2026-08-11 — all dunning and recovery consumers are source-gated
 
 ## Task / stage / plan
 
@@ -81,3 +81,10 @@ Concrete proof
 - The D3 and D4 watch rows already contain partial corrective language:
   - they explicitly say the ladder is `UNVERIFIED (no source fixture)` where appropriate.
 - The stale expectations are concentrated in D8–D11 future rows and any teardown prep that assumes `SUB_FAIL_RECOVERY` exists.
+
+## Resolution and verification
+
+- `watch-schedule.md` and `calendar.md` now make tasks #81/#82/#101/#102 an authoritative source gate.
+- `S_FAIL`, terminal cancellation, and `SUB_FAIL_RECOVERY` are omitted from every downstream watch,
+  transition, mail, negative, and teardown expectation unless a numeric registry source exists.
+- Existing D8–D11 conditional wording remains consistent with this gate; no ladder was fabricated.

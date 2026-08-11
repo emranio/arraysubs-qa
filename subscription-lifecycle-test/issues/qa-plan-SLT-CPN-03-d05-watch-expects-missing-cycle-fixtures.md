@@ -1,5 +1,6 @@
 # D05 watch expects CPN-03 renewal cycles after the source task closed without fixtures
 
+- Status: resolved 2026-08-11 — CPN-03 outcomes are source-gated
 - Severity: high
 - Date found: 2026-08-07
 - Watch day: D05
@@ -50,3 +51,10 @@ The source task is complete as `UNVERIFIED`, both users and both subscriptions a
 - This is a QA-plan/source-execution finding, not evidence of a coupon-renewal product defect.
 - Other live coupon subscriptions are healthy counterexamples: `12318` renewed for `$8.00` in order `12926`, and `12332` renewed for `$10.00` in order `12918`, each with its exact two-message order/payment pair.
 - No substitute checkout, date mutation, or forced scheduler action is permitted.
+
+## Resolution and verification
+
+- Added task #32 and both CPN-03 subscriptions to the authoritative source-availability gates in
+  `watch-schedule.md` and `calendar.md`.
+- D05 coupon-cycle results are now excluded as `UNVERIFIED` unless both numeric subscription IDs are
+  published by a formal replan; no absent action, order, note, or mail is scored.

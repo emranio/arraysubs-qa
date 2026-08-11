@@ -1,6 +1,6 @@
 # SLT-SYN-14: prorated initial recurring meta stores the line total at quantity 3
 
-- Status: **RETRACTED — QA expectation corrected; not a product finding**
+- Status: **resolved 2026-08-11 — retracted QA expectation; line-total contract retained**
 - Severity: medium
 - Date found: 2026-08-05
 - Watch day: D03
@@ -65,3 +65,10 @@ The order arithmetic is correct at USD `8.55`, and subscription `12749` stores `
 ## Scope and counterexamples
 
 The visible proration and charged order total use the intended unit-first rounding (`2.85 x 3 = 8.55`, not line-first `8.56`). The earlier issue interpretation came from an incorrect QA expectation that the subscription meta was unit-scoped; the authored task was corrected to its runtime line-scope contract. This file is retained only as an audit trail and must not be reported as an open product issue. The D6 full-renewal result remains pending.
+
+## Resolution and verification
+
+- Task #62 now asserts `_renewal_sync_initial_recurring_amount=8.55` as the quantity-three checkout-line
+  total while retaining `_recurring_amount=9.99` as the full recurring unit amount.
+- The relationship, order-line, schedule, UI, and Mailpit proof above verifies the corrected QA contract;
+  no plugin change is warranted.

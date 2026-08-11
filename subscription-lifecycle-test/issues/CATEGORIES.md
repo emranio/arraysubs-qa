@@ -15,7 +15,11 @@ Classification rule:
 New issue records must use the matching filename prefix: `qa-plan-`,
 `critical-plugin-`, or `light-plugin-`.
 
-## 1. QA plan issues (13)
+## 1. QA plan issues (13; all resolved)
+
+These records remain as the audit trail. As of 2026-08-11, all thirteen QA-plan defects are resolved:
+source-dependent branches are registry-gated, retracted observations are closed, and corrected task/reference
+contracts are authoritative. They must not be reported as open plugin defects.
 
 - [D06 watch guarantees have no subscriptions from five missed D04 source tasks](qa-plan-SLT-CHK-08-d06-watch-guarantees-missing-d04-cohort.md)
 - [D05 watch expects CPN-03 renewal cycles after the source task closed without fixtures](qa-plan-SLT-CPN-03-d05-watch-expects-missing-cycle-fixtures.md)

@@ -1,6 +1,6 @@
 # SLT-MYA-05 future follow-up source conflicts
 
-Status: open planning blocker
+Status: resolved 2026-08-11 — follow-ups B/C are source-gated
 
 ## Task / stage / plan
 
@@ -66,3 +66,9 @@ Concrete proof
 ## Known scope / counterexamples
 - This issue is about future schedule consistency, not plugin runtime behavior.
 - It is downstream of the same missing `S_FAIL` source fixture already noted in the dunning planning issue.
+
+## Resolution and verification
+
+- Task #36 is now named in the authoritative calendar/watch source gate.
+- D5 follow-up B and D7 follow-up C remain conditional-only and are skipped for this run because no numeric
+  source subscription or opened settings bracket exists.
