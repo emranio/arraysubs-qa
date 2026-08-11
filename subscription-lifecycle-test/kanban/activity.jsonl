@@ -1296,3 +1296,11 @@
 {"timestamp":"2026-08-11T20:09:58.017084854+02:00","action":"edit","task_id":106,"detail":"Renewal execution after a synced first charge: second charge full on the boundary, third on the grid"}
 {"timestamp":"2026-08-11T20:09:58.114625523+02:00","action":"edit","task_id":106,"detail":"Renewal execution after a synced first charge: second charge full on the boundary, third on the grid"}
 {"timestamp":"2026-08-11T20:09:58.116563419+02:00","action":"release","task_id":106,"detail":"lark-stone"}
+{"timestamp":"2026-08-11T22:29:27.568365783+02:00","action":"create","task_id":125,"detail":"Fix all QA-plan issue records and source contracts"}
+{"timestamp":"2026-08-11T22:32:46.264712423+02:00","action":"edit","task_id":125,"detail":"Fix all QA-plan issue records and source contracts"}
+{"timestamp":"2026-08-11T22:45:19.930601714+02:00","action":"edit","task_id":125,"detail":"Fix all QA-plan issue records and source contracts"}
+{"timestamp":"2026-08-11T22:46:16.707963421+02:00","action":"edit","task_id":125,"detail":"Fix all QA-plan issue records and source contracts"}
+{"timestamp":"2026-08-11T22:46:16.89528819+02:00","action":"edit","task_id":125,"detail":"Fix all QA-plan issue records and source contracts"}
+{"timestamp":"2026-08-11T22:46:27.819534869+02:00","action":"edit","task_id":125,"detail":"Fix all QA-plan issue records and source contracts"}
+{"timestamp":"2026-08-11T22:46:27.820276949+02:00","action":"release","task_id":125,"detail":"brave-rust"}
+{"timestamp":"2026-08-11T22:46:27.989240875+02:00","action":"move","task_id":125,"detail":"in-progress -\u003e done"}
