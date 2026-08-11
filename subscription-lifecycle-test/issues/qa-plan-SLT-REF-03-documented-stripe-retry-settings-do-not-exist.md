@@ -2,7 +2,7 @@
 
 - **Severity:** medium (documentation defect; blocks a test that the plan would otherwise have written)
 - **Found:** 2026-08-01, design phase (static analysis, before browser execution)
-- **Status:** confirmed by live browser verification
+- **Status:** resolved 2026-08-11 — QA reference made authoritative; impossible settings-flip test excluded
 - **Originating task:** `SLT-REF-03` — Failed renewal + retry reference note
 - **QA progress task / stage:** N/A — pre-execution reference audit, not a lifecycle-board card
 - **Plan file:** `qa/subscription-lifecycle-test/reference/SLT-REF-03-failed-renewal-retry-schedule-attempt-count-grace-day-timest.md`
@@ -89,9 +89,11 @@ attempts, or retry-interval control. Evidence:
 - Because of this, the plan does **not** contain a test that flips retry settings. `SLT-DUN-01..05` assert the
   hardcoded 3-attempt / 24-hour ladder instead.
 
-## Suggested resolution
+## Resolution and verification
 
-Either remove the settings table from `payment-retry-system.md` and document the
-`arraysubs_payment_retry_config` filter as the only extension point, or implement the documented fields.
-Given the workspace rule that no backward compatibility is required, implementing them is viable — but the
-doc must not describe UI that does not exist.
+- Updated `SLT-REF-03` to make the verified runtime contract authoritative: Stripe publishes a hardcoded
+  three-retry, 24-hour configuration and `arraysubs_payment_retry_config` is the extension point.
+- Explicitly excluded the impossible retry-settings UI scenario from this lifecycle plan, so no QA task can
+  fail because nonexistent controls were not changed.
+- The live browser/source evidence already recorded above verifies this correction. The older architecture
+  wording is separate documentation maintenance and no longer changes the QA oracle.

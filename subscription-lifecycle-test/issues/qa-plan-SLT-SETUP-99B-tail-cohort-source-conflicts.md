@@ -1,6 +1,6 @@
 # SLT-SETUP-99B tail cohort source conflicts
 
-Status: partially resolved planning blocker
+Status: resolved 2026-08-11 — teardown is driven only by the published numeric tail registry
 
 ## Task / stage / plan
 
@@ -16,7 +16,8 @@ Status: partially resolved planning blocker
 ## QA progress task ID and stage
 
 - Primary task: `#119 / SLT-SETUP-99B / setup / day-13`
-- Related tasks: `#106 / SLT-SYN-09 / renewal-sync / day-07`, `#46 / SLT-SYN-13 / renewal-sync / day-02`
+- Related tasks: `#45 / SLT-SYN-06`, `#46 / SLT-SYN-13`, `#65 / SLT-CHK-13`,
+  `#75 / SLT-SYN-11`, and `#106 / SLT-SYN-09`
 - Relevant QA plan paths:
   - `qa/subscription-lifecycle-test/kanban/tasks/119-slt-setup-99b-post-watch-teardown-on-2026-08-15.md`
   - `qa/subscription-lifecycle-test/kanban/tasks/106-renewal-execution-after-a-synced-first-charge.md`
@@ -27,6 +28,7 @@ Status: partially resolved planning blocker
 ## Affected IDs
 
 - Registry alias `SUB_2SEG`; numeric ID unresolved in this planning turn
+- Authored `SUB_W`, Box Daily, and three `SLT-SYN-11` probe aliases; numeric IDs absent per source closeouts
 - Authored `SLT-SYN-13` Full / Next Cycle variation subscriptions; live numeric IDs unresolved because task 46 says the fixtures do not exist
 - Order IDs: `N/A`
 
@@ -45,7 +47,8 @@ Reproduction steps
 3. Observe that the original omission of `SUB_2SEG` from task 119 has been corrected, so the remaining requirement is to enforce that live 118 keep-alive cohort at D13 rather than trust any static authored list.
 4. Read task 046's appended 2026-08-05 closeout note.
 5. Observe that task 046 says the two `SLT-SYN-13` D02 variation purchases never existed and that no recovery path was taken.
-6. Read current task 119 step 1 again and observe that `SLT-SYN-13` remains conditional on live-registry proof, which is the still-open planning check at D13.
+6. Read current task 119 step 1 and observe that every source-absent alias is now conditional on numeric
+   live-registry proof; the D13 operator does not infer fixtures from the authored list.
 
 Expected result
 - The authored D13 tail list should match current live task evidence:
@@ -55,23 +58,32 @@ Expected result
 Actual result
 - Before the Thursday, August 6, 2026 planning correction, `SUB_2SEG` was explicitly preserved past D10 by task 106 but omitted from task 119's explicit D13 tail list.
 - Task 119's step-1 wording has now been corrected to include `SUB_2SEG` when 118 keeps it alive, but D13 must still reconcile the published 118 keep-alive cohort to the live registry before cancellation.
-- Task 119 still expects two `SLT-SYN-13` variation subscriptions unless the live registry says otherwise, while task 046 now says those fixtures never existed and no recovery path was taken.
+- Before the 2026-08-11 correction, task 119 still named source-absent `SUB_W`, Box Daily, SYN-11, and
+  SYN-13 aliases in a way that could be misread as required tail members.
 
 Concrete proof
 - Task 106 handoff:
   - `SUB_2SEG` and both week subs stay alive into the watch tail; D10 must not cancel them.
-- Task 119 step 1, after the Thursday, August 6, 2026 correction:
-  - now names `SUB_2SEG` whenever 118's published keep-alive cohort carries it, and keeps `SLT-SYN-13` conditional on live-registry proof.
+- Task 119 step 1, after the 2026-08-11 correction:
+  - names `SUB_2SEG` when 118's published keep-alive cohort carries it;
+  - conditions `SUB_W`, Box Daily, all SYN-11 probes, and both SYN-13 variations on numeric registry proof.
 - Task 046 appended note dated `2026-08-05`:
   - says no ArraySubs subscriptions owned by `slt-flex` or `slt-flex3` for parent product `SLT Flex Variable Daily` were found and no later authored recovery path exists.
 
 ## Known scope / counterexamples
 - This issue is about teardown-source consistency, not plugin runtime behavior.
-- Other tail fixtures still have current authored sources:
+- Tail fixtures with current numeric-capable sources include:
   - `SUBID_GLOBAL` from task 61
-  - Box Daily from task 65
   - `SLT-SYN-12` probes from task 88
   - `SLT-SYN-14` quantity subscription from task 62
-- The conflict is specific to:
-  - enforcing `SUB_2SEG` from 118's published keep-alive cohort at D13
-  - stale `SLT-SYN-13` tail expectations unless the live registry proves those fixtures exist
+- Source-absent aliases from tasks #45/#65/#75/#46 stay out of teardown unless a later valid replan
+  publishes their numeric IDs.
+
+## Resolution and verification
+
+- The post-D10 calendar handoff now defines the D13 teardown cohort exclusively from 99A's published numeric
+  tail registry.
+- `SUB_2SEG` is retained when published by the live handoff. `SUB_W`, Box Daily, all SYN-11 probes, and both
+  SYN-13 variations are conditional on numeric proof from their otherwise `UNVERIFIED` source tasks.
+- Task #119's corrected live-registry contract agrees with the calendar; no nonexistent alias is a
+  teardown prerequisite.

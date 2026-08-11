@@ -1,5 +1,6 @@
 # D06 watch guarantees have no subscriptions from five missed D04 source tasks
 
+- Status: resolved 2026-08-11 — downstream expectations are source-gated
 - Severity: high
 - Date found: 2026-08-08
 - Watch day: D06
@@ -92,3 +93,10 @@ All five D04 source tasks are closed without the required subscriptions, while t
 - Existing issues already cover the separate D02 source conflicts, missing CPN-03 cycle fixtures, missing CHK-12 subscription, and the absent `SLT-SYN-11` lifetime-control assertion. This issue covers only D06 guarantees left by the missed D04 cohort, including the previously uncovered `SLT-SYN-11` reminder/conversion legs.
 - Live counterexamples that did renew correctly before this phase are sub `11991` / order `13109` for `$10.00`, sub `12564` / order `13125` for `$18.00`, sub `12039` / order `13170` for `$14.00`, and sub `12749` / order `13174` for `$29.97`.
 - No substitute checkout, source recreation, date mutation, scheduler force-run, or non-SLT mutation is permitted.
+
+## Resolution and verification
+
+- Added an authoritative source-availability gate to `watch-schedule.md` covering tasks #64/#65/#69/#73/#75.
+- The D06 scenario details now remain an oracle only for a formally replanned numeric fixture; this run omits
+  their renewal, reminder, conversion, mail, transition, and negative assertions as `UNVERIFIED`.
+- The gate preserves all captured zero-count evidence and forbids late recreation or forced actions.

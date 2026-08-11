@@ -21,7 +21,7 @@ $config   = apply_filters('arraysubs_payment_retry_config', $defaults, $subscrip
 | **Paddle** (`arraysubs_paddle`) | Registers **no** `arraysubs_payment_retry_config` filter (grep across `arraysubspro/src` returns only Stripe `:118` and Mollie `:158`). Therefore the **core defaults apply** if the local pipeline ever fails a Paddle charge — but see §5: the local pipeline never returns `failed` for Paddle. | `Gateways/Paddle/PaddleGateway.php` (no `getRetryConfig()` override; abstract default is `enabled=false,0,0` at `Abstracts/AbstractArraySubsGateway.php:666-673`, but it is never published) |
 | Manual gateways (bacs/cheque/cod) | Never reach the failure path — `PaymentProcessor` returns `manual_required` (`PaymentProcessor.php:100-108`) which `RenewalProcessor::process()` treats as a *non-failure* (`RenewalProcessor.php:404-406`) | — |
 
-> **DOC-vs-CODE CONFLICT (candidate bug).** `documentations/architecture/payment-retry-system.md` lines ~30-38 document admin fields `retry_enabled` / `retry_max_attempts` / `retry_interval_hours` on the Stripe settings page. **Those field keys do not exist anywhere in the codebase** (`grep -rn 'retry_enabled\|retry_max_attempts\|retry_interval_hours' arraysubs/src arraysubspro/src` → no matches). Stripe retry behaviour is not configurable through the UI. Do not write a test that flips those settings.
+> **QA CONTRACT — no settings-flip scenario.** An older architecture note describes admin fields `retry_enabled` / `retry_max_attempts` / `retry_interval_hours`, but those keys do not exist in the codebase or live Stripe settings UI. For this lifecycle run, Stripe retry behavior is the published hardcoded `3 × 86400 s` contract above, and `arraysubs_payment_retry_config` is its only documented extension point. Do not write or score a UI settings-flip test. Any architecture-document correction is separate documentation maintenance, not a missing lifecycle test or plugin failure.
 
 ## 2. Retry scheduling algorithm
 
@@ -115,4 +115,3 @@ There is **no deduplication** on the failure emails — 4 identical-subject cust
 `RenewalProcessor::manualRetry()` `:425-522`. Rejects on missing subscription, `waiting_cancellation`, no open renewal order, or `HOOK_PROCESS_RENEWAL` lock busy (`already_processing`). Forces `_payment_retry_attempts >= 1` so the pre-retry gateway verification always runs (`:473-476`). REST endpoints: `POST /wp-json/arraysubs/v1/subscriptions/{id}/retry-payment` (admin) and `POST /wp-json/arraysubs/v1/my-subscriptions/{id}/retry-payment` (customer).
 
 **Manual retry does NOT increment past the cap and does NOT reschedule an automatic retry beyond the cap** — it calls `process()` which, on failure, re-enters `scheduleNextRetry()` and hits the `attempts >= max` branch.
-

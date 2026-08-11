@@ -1,6 +1,6 @@
 # SLT-EML-12: admin subscription status UI fires active mail without persisting status, then subscriptions React UI collapses
 
-- Status: **RETRACTED — concurrent QA transitions invalidated the observation; not a product finding**
+- Status: **resolved 2026-08-11 — retracted concurrency artifact; exclusive ownership is binding**
 
 ## Retraction evidence
 
@@ -110,12 +110,21 @@ The following evidence now proves the overlap/retraction rather than a product d
 
 ## Scope notes and counterexamples
 
-- The bug is in the admin status/UI path, not in the task's global override bracket:
+- The original observation concerned the admin status/UI path, but the retraction evidence proves it was a
+  concurrent-owner artifact rather than a bug. It did not involve the task's global override bracket:
   - no WooCommerce email setting was changed
   - the 21:00-21:40 site override bracket never opened
 - The lifetime-sub fixture itself remained otherwise valid throughout:
   - `_next_payment_date` stayed empty
   - `_start_date` remained `2026-08-05 13:26:24`
   - `_payment_method_title` remained `Stripe`
-- The passing counterexample is the `Active -> Pending` leg on the same subscription and same day: it persisted and sent no mail as expected.
+- The `Active -> Pending` leg on the same subscription and same day persisted and sent no mail as expected;
+  the final exclusive-owner `Pending -> Active` leg also persisted and emitted the expected pair.
 - No `arraysubs/` or `arraysubspro/` file was opened or modified while recording this issue.
+
+## Resolution and verification
+
+- Task #56 now requires one exclusive owner for H1 and records the concurrency correction before the
+  override bracket starts.
+- The corrected run leaves H1 `arraysubs-active`, and the normal SPA wait restores the full subscription
+  list. No plugin change or browser rerun is required for this retracted observation.

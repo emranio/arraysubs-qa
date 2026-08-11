@@ -1,5 +1,6 @@
 # D05 lifetime-control guarantee has no SLT-SYN-11 source fixture
 
+- Status: resolved 2026-08-11 — the lifetime negative requires a numeric source fixture
 - Severity: high
 - Date found: 2026-08-07
 - Watch day: D05
@@ -51,3 +52,10 @@ No product, user, subscription, order, or scheduler row exists, yet the D05 sche
 - Live lifetime counterexamples pass: primary control `12003` and H1 `12786` are active with empty next/end dates and zero ArraySubs renewal actions/orders/new renewal mail.
 - The missing Renewal Price and Trial probes are also absent, but this issue is scoped to the D05 unconditional lifetime-control assertion.
 - No late substitute product, checkout, date mutation, or forced scheduler action is permitted.
+
+## Resolution and verification
+
+- The standing watch check now requires task #75's numeric subscription ID before treating the Excl Lifetime
+  Probe as a lifetime negative.
+- Because task #75 closed source-absent, all three SYN-11 probe branches remain `UNVERIFIED`; primary lifetime
+  controls `12003` and `12786` retain their independent passing evidence.
