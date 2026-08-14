@@ -119,7 +119,7 @@ Repeat SLT-CHK-01 on the **classic** `[woocommerce_checkout]` page and prove the
 - Start `2026-08-02 13:23:13Z`; due `2026-08-03 13:23:13Z` (86,400 seconds); `_completed_payments=1`; `k=20473`. Pending invoice action `13702` is `2026-08-03 13:04:26Z`; pending renewal action `13703` is `2026-08-03 19:04:26Z`.
 - All 25 normalized invariant effective values equal the block control; `/home/server-manager/slt-evidence/SLT-CHK-02-normalized-invariant-diff.txt` is empty (`[]`). The raw diagnostic diff is retained at `SLT-CHK-02-diff.txt`.
 - Checkout emitted exactly four more messages: customer completed order `1YZVmwHb9a4SO5bRpI8YqI`, admin new order `7kiceFoiQW9yKiv786UFIb`, customer active subscription `5TxT9DhBqSYWcfHBEdFms4`, admin new subscription `2h3RVWZLXMuqfcfPs39iym`. No customer account, renewal, invoice, reminder, trial or failure mail appeared.
-- The raw surface difference—classic subscription omitted `_shipping_address`—is documented only in `issues/light-plugin-SLT-CHK-02-classic-checkout-omits-shipping-address-meta.md`. Gateway duplicate-row behavior is closed in `issues/done-critical-plugin-SLT-OBS-01-duplicate-gateway-postmeta-rows.md`; `11991` had no duplicate keys.
+- The raw surface difference—classic subscription omitted `_shipping_address`—was fixed and closed in `issues/done-low-SLT-CHK-02-classic-checkout-omits-shipping-address-meta.md`. Gateway duplicate-row behavior is closed in `issues/done-critical-plugin-SLT-OBS-01-duplicate-gateway-postmeta-rows.md`; `11991` had no duplicate keys.
 - Evidence: `/home/server-manager/slt-evidence/SLT-CHK-02-00-empty-cart.png`, `-01-classic.png`, `-02-gateways.png`, `-02b-ready.png`, `-03-received.png`, `-04-pending.png`, both meta/diff files, and registry page `11847`. Persistent cart is empty.
 
 ## D1 invoice-leg watch addendum — 2026-08-03 — PASS
@@ -139,3 +139,23 @@ Repeat SLT-CHK-01 on the **classic** `[woocommerce_checkout]` page and prove the
 - Subscription `11991` remains active, advanced `_completed_payments` from `1` to `2`, cleared its pending renewal order, set `_last_payment_date=2026-08-03 19:05:13Z`, and advanced `_next_payment_date` exactly +24 hours to `2026-08-04 13:23:13Z`. Next actions are invoice `14208` at `13:04:26Z` and charge `14209` at `19:04:26Z`.
 - The exact post-baseline mail set is admin new order `26mX3SXgKs5wioBCZQsFUD` and customer payment-success `6fzJg6YALlBNfbNPe6f79F`; no renewal invoice, reminder, failure, signup, or customer WooCommerce processing/completed mail appeared.
 - Browser evidence is `/home/server-manager/slt-evidence/SLT-CHK-02-05-renewal-order-D2.png` and `SLT-CHK-02-06-actions-D2.png`; both were visually reviewed and expose no card number. Full facts: `/home/server-manager/slt-evidence/SLT-CHK-02-D02-charge-facts.txt`.
+
+## Shipping-snapshot fix verification — 2026-08-14 — PASS
+
+- The original finding was reproduced from subscription `11991`, order `11990`,
+  customer `357`, and the live admin detail route before changing code. The
+  classic virtual order has no shipping fields although the customer profile is
+  complete; the admin view reported `No shipping address on file`.
+- Shared core checkout creation now falls back to the authenticated customer's
+  saved WooCommerce shipping profile only when the order itself has no street
+  address. Order shipping remains authoritative and billing is never used as a
+  substitute.
+- A real `/slt-classic-checkout/` BACS checkout created exact order `26774` and
+  subscription `26775`. The order remained a shipping-empty classic virtual
+  order; the subscription gained exactly one snapshot matching the saved
+  customer profile, and its admin detail rendered that address with no browser
+  errors.
+- Exact-linkage cleanup removed `26774`/`26775`; no matching scheduler actions
+  remain and aggregate subscription/order counts returned to baseline. Full
+  reasoning, proof, mail IDs, and screenshots are in
+  `issues/done-low-SLT-CHK-02-classic-checkout-omits-shipping-address-meta.md`.

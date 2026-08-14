@@ -53,3 +53,16 @@ Both detail screens display `Every 1 day(s)`.
 - The ArraySubs subscriptions list renders the same interval as `Every 1 day`, demonstrating the correct singular counterexample in the same admin product.
 - No setting, subscription, order, or user was modified while reproducing.
 
+## Resolution (2026-08-14)
+
+Disposition: confirmed core admin-detail formatting defect; fixed through the existing translated duration helper.
+
+- Fresh live reproduction on `12760` still rendered `Every 1 day(s)`. The raw REST fields and post meta were correct (`billing_period=day`, `billing_interval=1`), proving the defect was the JSX suffix rather than stored data or gateway behavior.
+- Root cause: `SubscriptionDetail.jsx` concatenated the raw period with the literal `(s)` for every non-lifetime subscription. That string was neither grammatically correct nor a valid translation/pluralization pattern.
+- The admin detail REST response now adds `billing_schedule_display`, composed server-side from `arraysubs_get_duration_string()` and the translated `Every %s` wrapper. Raw `billing_period` and `billing_interval` remain unchanged for callers.
+- The detail UI now renders only that escaped display value. Singular/plural selection therefore uses WordPress `_n()` through the existing shared helper and does not introduce HTML rendering or trust client-provided markup.
+- REST checks returned HTTP 200 with: `12760` and `11959` → `Every 1 day`; `12172` (day/3) → `Every 3 days`; `12786` (lifetime) → `Lifetime Deal`.
+- `npm run build` completed successfully (only the existing stale Browserslist-data notice; lint/PHPCS intentionally skipped per workspace instructions).
+- A fresh authenticated browser session loaded `mainadmin.js` version `27b54b30a4ab31a39438` and chunk `153.151e7040`. Both reported day/1 subscriptions rendered the singular form, the day/3 and lifetime controls rendered correctly, and browser error collection was empty.
+- Screenshots: `/home/server-manager/slt-evidence/FIX-LOW-SLT-ADM-02-billing-after-singular.png`, `/home/server-manager/slt-evidence/FIX-LOW-SLT-ADM-02-billing-after-plural.png`, and `/home/server-manager/slt-evidence/FIX-LOW-SLT-ADM-02-billing-after-lifetime.png`.
+- All tests were read-only. Subscription/order/user/settings/scheduler/mail state was not mutated.

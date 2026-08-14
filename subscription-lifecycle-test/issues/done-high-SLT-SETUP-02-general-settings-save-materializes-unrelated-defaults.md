@@ -90,3 +90,15 @@ that unrelated absent keys stay absent.
 - Toggled **Allow Early Renew** on and saved again. The intended window setting returned to `true`, all six
   unrelated keys remained absent, the success toast appeared, and the browser reported no errors.
 - Browser evidence: `/home/server-manager/slt-evidence/SLT-ISSUE-120-partial-save.png`.
+
+## Fresh closure verification — 2026-08-14
+
+- Re-read the originating task, raw D0 evidence contract, current General form, shared settings helpers, REST sanitizer, recursive merge, and Pro-owned settings extensions. The fix is already committed and the report's unresolved filename was stale; no additional product edit was warranted.
+- The frontend dirty-value comparison prevents runtime defaults returned by `GET /settings/data` from entering an untouched save. The REST controller independently sanitizes a partial payload, filters generated siblings back to the exact submitted shape, and recursively merges that shape into the raw option. This preserves validation and addon sanitizers without materializing absent siblings.
+- The current raw option supplied the exact original regression state: all six reported keys were absent while the General UI displayed their effective defaults. The pre-test option hash was `1de46b4b09c69bf6cd24a0c8ae2cd9788055f7131038acd3ed49088bca80bdef`.
+- Through the real administrator page, changed only **Allow Early Renew** from off to on. The captured successful `POST /wp-json/arraysubs/v1/settings/save` body was exactly `{"settings":{"customer_actions":{"allow_early_renew":true}}}`.
+- The raw post-save diff contained exactly `customer_actions.allow_early_renew`; all six absent keys remained absent. The success toast rendered and the browser error buffer was empty.
+- Changed only **Allow Early Renew** back to off. The successful restore request body was exactly `{"settings":{"customer_actions":{"allow_early_renew":false}}}`. The final option was byte-for-byte/serialization-identical to the backup with the same SHA-256 and zero changed paths.
+- Mailpit stayed at `0dC3gOmvPwldM6icq2bIbO`. The two exact settings audit notes created by the on/off proof (`26598`, `26599`) and the temporary backup option were removed after strict identity checks; no other notes or settings were deleted.
+- Browser evidence: `/home/server-manager/slt-evidence/HIGH-SLT-SETUP-02-before.png`, `/home/server-manager/slt-evidence/HIGH-SLT-SETUP-02-one-field-save.png`, and `/home/server-manager/slt-evidence/HIGH-SLT-SETUP-02-restored.png`.
+- Per the QA issue-fix workflow, PHPCS and lint commands were not run.

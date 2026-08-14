@@ -6,7 +6,7 @@ task_id: 100
 task_key: SLT-ADM-01
 stage: D07
 plan_path: qa/subscription-lifecycle-test/kanban/tasks/100-subscriptions-list-status-tabs-search-gateway.md
-status: open
+status: fixed
 severity: low
 ---
 
@@ -113,3 +113,38 @@ existing products are visible in non-empty tabs.
   `issues/light-plugin-SLT-ADM-01-paddle-gateway-filter-returns-zero.md`.
 - No claim is made about the correct appearance of a genuinely empty first-run installation; this
   finding is limited to a populated site with `379` subscriptions and existing products.
+
+## Resolution — 2026-08-14
+
+### Investigation and root cause
+
+The current staging site still had 403 subscriptions and the unfiltered list rendered normal rows,
+but both a deliberately unmatched search and the empty `Trial (0)` status rendered the first-run
+product onboarding. The finding remained reproducible and was not a false positive.
+
+`DataList` already supplied the custom renderer with the active search, status, and select-filter
+values. `SubscriptionsList` ignored that context and always returned the onboarding component for
+every zero-row response.
+
+### Fix and safety review
+
+- Updated only the core `SubscriptionsList` empty-state renderer. Any non-empty search, non-`all`
+  status, or non-default gateway now renders the neutral, translatable message
+  `No subscriptions match your filters` with guidance to adjust the controls.
+- The existing onboarding remains intact for the genuinely unfiltered `All` state with zero rows.
+  No REST contract, permission, data mutation, link target, or Pro behavior was changed.
+- The implementation relies on context already passed by the shared `DataList`; it does not create
+  a second state store or infer catalog existence from stale counts.
+
+### Regression verification
+
+- Production assets rebuilt successfully with `npm run build` (webpack exit `0`). No lint or PHPCS
+  command was run, per the issue-fix workflow.
+- Live authenticated browser checks proved an impossible search and blank-search `Trial (0)` both
+  retained the list controls and rendered `No subscriptions match your filters`, with no onboarding
+  CTA and no page error.
+- Selecting `All (403)` restored the populated table and visible `SLT Daily Core` rows.
+- Evidence:
+  `/home/server-manager/slt-evidence/FIX-LOW-SLT-ADM-01-search-after.png` and
+  `/home/server-manager/slt-evidence/FIX-LOW-SLT-ADM-01-trial-after.png`.
+- Verification was read-only and produced no record, setting, scheduler, or email mutation.

@@ -6,7 +6,7 @@ task_id: 114
 task_key: SLT-ADM-08
 stage: D09
 plan_path: qa/subscription-lifecycle-test/kanban/tasks/114-refund-a-renewal-order-gateway-refund-subscription.md
-status: open
+status: fixed
 severity: medium
 ---
 
@@ -76,3 +76,41 @@ No **Prorated Refund** control or preview exists anywhere on the rendered detail
 - Counterexample from the task's other leg: direct WooCommerce gateway refunds on renewal order `13590` succeeded for `$4.00` and `$5.00`; this finding concerns the ArraySubs prorated-refund entry point only.
 - S5 was left unchanged as required.
 
+## Resolution — 2026-08-14
+
+### Investigation and root cause
+
+The original finding was valid: at capture time the refund service searched renewal orders only by
+the plan-switch compatibility key `_arraysubs_subscription_id`, while order `13593` carried the
+canonical renewal links `_subscription_id=12234` and `_subscription_renewal=12234`. That mismatch
+made the computed React action unavailable even though the paid renewal was visible in Order History.
+
+The current implementation has since removed that dependency as part of the related canonical
+order-link/refund repair. `RefundProcessor::canRefund()` now resolves the latest settled charge with
+`arraysubs_get_latest_settled_subscription_order()`, and the shared resolver recognizes parent,
+renewal, line-item, migration, and reverse subscription links while checking customer identity.
+No extra compatibility-meta write or backfill is required.
+
+### Current-data qualification
+
+Subscription `12234` is now `arraysubs-cancelled`, so the exact action is correctly unavailable on
+that record under the live-status guard. Its historical order `13593` still has an empty
+`_arraysubs_subscription_id`, but `arraysubs_get_subscription_ids_for_order(13593)` now resolves
+`[12234]`; the repaired contract therefore works without mutating the historical order.
+
+For the required active-state browser retest, SLT subscription `13277` was selected read-only. It
+was `arraysubs-active`, had latest settled renewal order `13576`, and returned `can_refund=true`,
+maximum `$30.00`, plus a successful `$25.25` proration preview at test time.
+
+### Regression verification
+
+- The live detail route for `13277` rendered the **Prorated Refund** action.
+- Opening it rendered the shared modal with refund amount `$25.25`, reason input, unused-time
+  calculation, `Cancel after refund`, and **Process Refund**.
+- The modal was dismissed with Escape; **Process Refund** was never clicked. A fresh read confirmed
+  `13277` remained `arraysubs-active` and had no `_refund_history` mutation.
+- No console/page error occurred. Evidence:
+  `/home/server-manager/slt-evidence/FIX-MEDIUM-SLT-ADM-08-proration-action.png` and
+  `/home/server-manager/slt-evidence/FIX-MEDIUM-SLT-ADM-08-proration-preview.png`.
+- Core owns the repaired relationship/refund contract; Pro consumes it and required no duplicate
+  change. No subscription, order, gateway, setting, scheduler, or mail data was changed.

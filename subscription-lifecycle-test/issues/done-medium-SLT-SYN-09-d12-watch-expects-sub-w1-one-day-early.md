@@ -58,3 +58,15 @@ The D12 row expects the renewal one site-local day early. A compliant D12 watche
 - `12564` (`SLT Sync Global Daily`) is a genuine D12-midnight event: next due `2026-08-13 18:00:00Z`, pending charge `16969` at `2026-08-13 20:49:23Z` / D12 `02:49:23` site. Evidence: `/home/server-manager/slt-evidence/SLT-IMP-05-pending-72h.txt` and the D10 facts snapshot.
 - `12749` has the same next boundary as `12039`, with charge `15848` at `2026-08-14 23:19:30Z` / D13 `05:19:30` site. The D12 row correctly calls it outside the window, making its treatment of `12039` internally inconsistent.
 - Conditional `SUB_W` does not exist, so only numeric `SUB_W1=12039` is affected.
+
+## Resolution (2026-08-14)
+
+Disposition: confirmed QA-plan timing defect. The product scheduler is correct; no ArraySubs or ArraySubs Pro runtime code was changed.
+
+- Live revalidation at D13 `01:23` site still showed subscription `12039` active with `_next_payment_date=2026-08-14 18:00:00Z`, two completed payments, and a stable `k=18112` seconds (`05:01:52`). The admin UI rendered that stored boundary as `15 August, 2026 12:00 AM (UTC+6)`.
+- The current respread action pair preserves the same schedule: invoice `21879` completed naturally at `2026-08-14 17:01:52Z`, charge `21880` remained pending and unattempted for `2026-08-14 23:01:52Z` / D13 `05:01:52` site, and relationship-linked cycle-3 order `26536` was pending for `$14.00`.
+- Prior cycle order `13170` is completed for `$14.00` with `_renewal_scheduled_date=2026-08-07 18:00:00`; the seven-day advance to the persisted cycle-3 boundary confirms that runtime scheduling did not drift.
+- `watch-schedule.md` now makes the persisted boundary authoritative, removes `SUB_W1`/conditional `SUB_W` from the D12 paid-renewal expectation, requires their late-D12 invoice and D13 `due+k` charge to be carried forward, and forbids scoring the D12 silence as a missing renewal.
+- The corrected row retains Sync Global Daily as the true D12-midnight event. Existing `calendar.md` and task `119` D13 gates were cross-checked: teardown cannot start until a signed D13 report reconciles `21879/21880` (or a documented replacement) and all other final natural tails.
+- Browser verification used the authenticated admin subscription detail and Scheduled Actions routes. Screenshots: `/home/server-manager/slt-evidence/FIX-MEDIUM-SLT-SYN-09-current-boundary.png` and `/home/server-manager/slt-evidence/FIX-MEDIUM-SLT-SYN-09-pending-actions.png`; browser error collection was empty.
+- The verification was read-only. Subscription, order, scheduler, settings, and Mailpit state were not mutated.

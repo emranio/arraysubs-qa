@@ -46,3 +46,47 @@ The UI saved `enabled=false` but left the hidden cutoff at `0`. The restore was 
 - The defect affects restoration of a child field hidden by its parent toggle; it is not a subscription scheduling or Stripe defect.
 - Saving `cutoff_days=2` while Skip Renewal remained enabled worked, and a subsequent disable-only save preserved it. This is the working counterexample.
 - Final site state was restored byte-identically before the task sessions closed.
+
+## Resolution (2026-08-14)
+
+The report was reproduced before editing. Starting from the exact live baseline
+`{"enabled":false,"max_cycles":3,"cutoff_days":2,"customer_can_skip":true}`,
+the browser enabled Skip Renewal, saved cutoff `0`, then entered `2`, disabled the parent
+switch, and saved once. The resulting REST payload omitted `cutoff_days`, and storage stayed
+at `0`, confirming the report rather than treating it as a stale observation.
+
+The cause was the interaction between conditional rendering and `rc-field-form`: when the
+parent switch hides its child controls, those fields unmount and disappear from the
+`onFinish` values even though their latest values remain in the form store. The settings REST
+controller correctly treats its payload as partial and preserves an omitted stored value, so
+the defect was at the frontend submit boundary.
+
+`arraysubs/src/resources/pages/Settings/SkipPauseSettings.jsx` now adds changed, unmounted
+`skip_renewal.*` or `pause_subscription.*` values from the preserved form store to the normal
+submit values. It deliberately filters to this page's two settings scopes and to values that
+differ from the loaded baseline. This prevents the page from sending unrelated runtime
+defaults or materializing untouched option keys. The saved baseline is merged into local
+state so consecutive saves keep the same comparison contract. The AJAX save action also now
+uses the shared `SpinnerButton`, retaining the disabled state and adding the required visible
+spinner/loading text.
+
+Security remains unchanged: the request still uses the existing WordPress REST nonce, the
+admin-only endpoint and its capability callback, and the controller's typed bounds and
+sanitizers. The frontend does not accept or persist any new setting names.
+
+Verification:
+
+- `npm run build` completed successfully (only the existing stale Browserslist-data warning).
+- A fresh browser session loaded the rebuilt lazy chunk and repeated the exact two-save
+  bracket. The final same-save disable request contained
+  `skip_renewal.enabled=false` and the hidden `skip_renewal.cutoff_days="2"`.
+- The second payload remained page-scoped; it did not include unrelated settings or hidden,
+  unchanged pause children.
+- Stored state returned in that one save to the exact preflight serialization: MD5
+  `a048a48ef244ecc35ff965497fb295fb`, size `12906`, with the four-value skip object above.
+- The browser error buffer was empty. Evidence:
+  `/home/server-manager/slt-evidence/FIX-MEDIUM-SLT-LIFE-03-fixed-hidden-before-save.png`
+  and `FIX-MEDIUM-SLT-LIFE-03-fixed-after-save.png`.
+- All seven settings-audit notes created by the controlled reproduction/retests were deleted
+  by exact ID after verification; both their post and postmeta counts are zero. No
+  subscription, order, scheduler action, or email data was changed.

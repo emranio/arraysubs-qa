@@ -56,3 +56,15 @@ The D10 row describes the Stripe-boundary renewal as guaranteed even though task
 - This is a QA-plan/oracle defect, not a product runtime defect. No product renewal was attempted or missed because no source subscription existed.
 - The same source-availability rule correctly makes Box Daily, `SLT-SW-09`, `SLT-SYN-11`, `SLT-SYN-13`, and conditional `SUB_W` branches `UNVERIFIED` when their source tasks published no numeric fixture.
 - Numeric `SUB_2SEG=12172` is the counterexample: its source relationship existed, natural action `16167` completed, order `13788` settled for USD 9.00, and exact success mail `27f8WhwIZNAajlXibBSsoF` arrived. That event can validly receive a PASS verdict.
+
+## Resolution (2026-08-14)
+
+Disposition: confirmed QA dependency/oracle defect. No product-code change was appropriate because the source task did not execute its runtime scenario.
+
+- Current database revalidation found zero products with slug `slt-flex-gateway-probe` or title `SLT Flex Gateway Probe`, zero matching order items, zero subscriptions related to such a product, and zero task/probe scheduler rows. The D10 registry and facts remain free of task-88 numeric fixtures.
+- A fresh unauthenticated browser request to the authored product URL returned the real storefront `Page not found` view with an empty cart. Screenshot: `/home/server-manager/slt-evidence/FIX-MEDIUM-SLT-SYN-12-source-absent.png`; browser error collection was empty.
+- Core/pro code review confirmed the intended scenario is meaningful but unexecuted: core classifies Stripe/manual gateways as renewal-sync capable and Paddle as unsupported, filters checkout gateways, and validates classic/Store API submissions; Pro flexible-sync logic refines only an already-applicable core sync context and therefore cannot create a subscription without the missing checkout.
+- `watch-schedule.md` now lists task `88` in the authoritative source-availability table. Its D7 reminder expectation and D10 Stripe/Paddle renewal expectation require relationship-resolved numeric task-88 fixtures and otherwise stay `UNVERIFIED (source absent)`.
+- `calendar.md` now includes task `88` in its source-outcome overlay, marks the D10 event conditional, and conditionally includes both probes in the post-D10 teardown handoff.
+- Task `119` now includes either `SLT-SYN-12` probe in its cancellation/deletion cohort only when task 88 published a numeric fixture; its current-evidence correction explicitly records that both probes are absent. This prevents both false renewal failures and unsafe teardown guesses.
+- The valid `SUB_2SEG=12172` D10 relationship remains the counterexample and was not reclassified. The correction changes only QA orchestration documents; no WordPress data, gateway setting, cart, order, subscription, scheduler row, or mail state was mutated.

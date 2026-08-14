@@ -118,3 +118,9 @@ Verify every field the detail screen renders against the underlying meta, HPOS o
 - Both detail endpoints returned 200 and browser console errors were empty. The sole 403 was WordPress core's `sample-permalink` request from HPOS order `13610`, not a detail endpoint. Mailpit cursor remained `4cogsKDuQGssjfWbN3yhKp`, proving zero new mail.
 - Filed `issues/light-plugin-SLT-ADM-02-singular-billing-schedule-uses-day-s.md` and `issues/light-plugin-SLT-ADM-02-empty-shipping-address-renders-stray-comma.md` (both low).
 - Full execution evidence and self-review: `/home/server-manager/slt-evidence/SLT-ADM-02-D09-execution.md`; required screenshots `SLT-ADM-02-01` through `-06` are under `/home/server-manager/slt-evidence/`.
+
+[[2026-08-14]] Fri
+Shipping-address finding resolved. The detail renderer now distinguishes fallback names from a real postal address and composes only non-empty lines. Live subscription `12760` shows the translated empty state, complete-address control `11959` remains intact, current assets loaded in a fresh session, and browser errors/data mutations were zero. Report: `issues/done-low-SLT-ADM-02-empty-shipping-address-renders-stray-comma.md`.
+
+[[2026-08-14]] Fri
+Billing-schedule finding resolved. Detail REST now provides a translated display string using the shared duration plural helper, and the React view no longer appends `(s)`. Live day/1 subscriptions `12760`/`11959`, day/3 control `12172`, and lifetime control `12786` all passed with current assets and zero browser errors/data mutation. Report: `issues/done-low-SLT-ADM-02-singular-billing-schedule-uses-day-s.md`.

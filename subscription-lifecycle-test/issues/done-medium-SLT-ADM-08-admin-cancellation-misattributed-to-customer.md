@@ -6,7 +6,7 @@ task_id: 114
 task_key: SLT-ADM-08
 stage: D09
 plan_path: qa/subscription-lifecycle-test/kanban/tasks/114-refund-a-renewal-order-gateway-refund-subscription.md
-status: open
+status: fixed
 severity: medium
 ---
 
@@ -79,3 +79,50 @@ The admin subject is `[mirror-help.arrayhash.com] Subscription #12655 cancelled 
 - The cancellation itself is correct: subscription `12655` is cancelled, both renewal actions are cancelled, and the customer-facing reason is accurate.
 - The discrepancy is confined to actor attribution in the admin notification and customer-visible note for this system-driven full-refund path.
 - The customer cancellation message is a same-event counterexample with accurate non-actor wording.
+
+## Resolution — 2026-08-14
+
+### Investigation and root cause
+
+The historical evidence and live metadata still agree on `_cancelled_by=system`, reason
+`Full refund processed`, and refund order `13590`, so the report was not a false positive.
+
+Two independent assumptions caused the contradictory presentation:
+
+- `AdminSubscriptionCancelledEmail` hard-coded `{customer_name}` after the words `cancelled by`,
+  regardless of the persisted actor.
+- `AutoNotes::getStatusActorDetails()` understood gateway, `admin:<id>`, and customer actors but
+  not explicit `system`; because the refund ran in an authenticated admin request, it fell through
+  to the current-user branch and rendered `Admin (admin)`.
+
+### Fix and safety review
+
+- Added the shared core helper `arraysubs_get_cancellation_actor_details()` for normalized,
+  translatable System, Admin, Customer, Gateway, and Unknown presentation. User and gateway labels
+  are sanitized; stored IDs are passed through `absint`; unexpected values never fall back to the
+  currently authenticated user.
+- AutoNotes now consumes the stored cancellation actor before considering request context.
+- The admin cancellation email now offers `{cancellation_actor}`, defaults its subject to
+  `cancelled by {cancellation_actor}`, and states the customer and actor separately in HTML and
+  plain-text bodies. The reason remains independently escaped and displayed.
+- This is shared lifecycle/email behavior in `arraysubs`; Pro has no duplicate actor formatter.
+  No permission, nonce, REST, gateway, cancellation, or mail-recipient contract changed.
+
+### Regression verification
+
+- Read-only checks on existing records resolved `12655` as `System`, admin-cancelled `13917` as
+  `Admin (admin)`, and customer-cancelled `13402` as `Customer (SLT Cancel)`.
+- Rendering the fixed email against original subscription `12655` without sending produced subject
+  `[mirror-help.arrayhash.com] Subscription #12655 cancelled by System`; its plain template also
+  contained `cancelled by System`.
+- A disposable SLT subscription `26653` was cancelled through the canonical helper with actor
+  `system`. Mailpit message `6PjD29mDKopj2lhPnHbzsT` had subject
+  `[mirror-help.arrayhash.com] Subscription #26653 cancelled by System`, body
+  `Subscription #26653 for SLT Admincreated has been cancelled by System`, and reason
+  `Full refund processed`.
+- The live admin detail/timeline rendered:
+  `Status changed from Active to Cancelled. Cancelled by System. The cancellation took effect immediately. Reason: Full refund processed.`
+  Screenshot: `/home/server-manager/slt-evidence/FIX-MEDIUM-SLT-ADM-08-system-actor.png`.
+- Exact cleanup removed disposable subscription `26653`, notes `26654`, `26655`, `26657`, `26658`,
+  and cancelled reminder action `23416`; post, note relationship, and scheduler queries all returned
+  zero afterward. Mailpit retains the test message as immutable evidence.

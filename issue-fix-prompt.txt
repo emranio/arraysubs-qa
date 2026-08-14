@@ -1,0 +1,13 @@
+fix all high- prefixed  bugs. one by one, all of them. important: you must:
+  1. properly investigate the reported bugs with it's test case and codebase
+  and data, make sure it's not a false positive and get a deep understanding
+  of the bug.
+  2. plan a fix and a test for the bug. for the fix you must make sure it
+  wont break any other features that are dependent on this changes you r
+  going to make. the fix must be security proofed and well organized and
+  wordpress coding standard complianced. matching existing codebase.
+  3. properly test everything, u have the wp full access and the live staging
+  site admin access to browser test.
+  after a fix, add a prefix done- to that bug report md file.
+  you must follow all these protocol for all bug reports from /home/server-
+  manager/www/arrayhash/mirror-help.arrayhash.com/public/wp-content/plugins/qa/subscription-lifecycle-test/issues

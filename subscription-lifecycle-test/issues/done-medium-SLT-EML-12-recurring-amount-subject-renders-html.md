@@ -1,6 +1,7 @@
 # Recurring amount merge tag renders raw HTML in the email subject
 
 - Severity: medium
+- Status: fixed
 - Date found: 2026-08-05
 - Watch day: D03
 - Originating task: `SLT-EML-12`
@@ -81,3 +82,44 @@ The `{recurring_amount}` tag resolves to WooCommerce price HTML inside the subje
 - The heading and all non-price PROBE tags resolve correctly, including an empty lifetime next-payment value.
 - After clearing the overrides, customer message `1PVeoMecZqOQqAxlLtNshg` restored the plain default subject `[mirror-help.arrayhash.com] Your subscription #12786 is active`; matching admin message `6XstfWCpbfAFtSNvYCbd8t` was unchanged. Screenshot: `/home/server-manager/slt-evidence/SLT-EML-12-05-restored.png`.
 - Non-SLT subscription `7809` renewed during the broader interval and was excluded; it did not use this overridden New Subscription template.
+
+## Resolution — 2026-08-14
+
+### Investigation and root cause
+
+The report's saved Mailpit message and current source establish a real formatting-boundary defect.
+`BaseSubscriptionEmail::populate_placeholders()` intentionally used `wc_price()` for
+`{recurring_amount}` so HTML email bodies receive WooCommerce's accessible price markup. The same
+placeholder map was also fed directly into `WC_Email::get_subject()`, leaving literal tags and the
+encoded currency entity in the RFC header. The body-rendering counterexample was therefore valid
+and should not be "fixed" by removing price markup globally.
+
+### Fix and safety review
+
+`BaseSubscriptionEmail::get_subject()` now normalizes the fully formatted subject at the mail-header
+boundary: HTML entities are decoded, all tags and line breaks are removed, and the result is
+trimmed. This applies after WooCommerce settings, placeholders, and subject filters resolve, so all
+ArraySubs email classes receive the protection while HTML body prices remain unchanged.
+
+This also prevents CR/LF or markup supplied through a product/customer-derived placeholder from
+surviving into a mail header. It changes no recipients, triggers, template data, settings,
+permissions, or Pro email implementation.
+
+### Regression verification
+
+- A direct render against original subscription `12786` and the exact authored subject produced
+  `SLT-EML-12 SLT :: sub 12786 :: SLT Lifetime One Time :: $49.00`, with no `<` character, while
+  the HTML body retained `woocommerce-Price-amount` markup and `$49.00`.
+- A dedicated CR/LF/HTML probe normalized `Probe\r\n<b>{recurring_amount}</b>` to plain
+  `Probe $49.00`; both newline and tag assertions were false.
+- Live E2E: disposable pending SLT subscription `26663` was activated through the admin React
+  confirmation flow under the exact temporary subject override. Mailpit message
+  `4Oqu8vRlr4orfQId9DnH4y` arrived for `slt-email@example.test` with exact subject
+  `FIX-SLT-EML-12 SLT :: sub 26663 :: SLT Lifetime One Time :: $49.00`; its HTML body still used
+  WooCommerce price markup.
+- Browser evidence:
+  `/home/server-manager/slt-evidence/FIX-MEDIUM-SLT-EML-12-edit-before.png` and
+  `/home/server-manager/slt-evidence/FIX-MEDIUM-SLT-EML-12-active-after.png`.
+- The previously absent Woo email option was deleted after the send. Exact cleanup removed fixture
+  `26663`, notes `26664`–`26667`, and actions `23417`–`23419`; post, note relationship, action, and
+  option checks all returned zero/absent. Mailpit retains the message as evidence.

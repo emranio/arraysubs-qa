@@ -6,7 +6,7 @@ task_id: 114
 task_key: SLT-ADM-08
 stage: D09
 plan_path: qa/subscription-lifecycle-test/kanban/tasks/114-refund-a-renewal-order-gateway-refund-subscription.md
-status: open
+status: resolved
 severity: low
 ---
 
@@ -81,3 +81,56 @@ The line-total and refund-amount inputs visibly held `4.00` and later `5.00`, bu
 - This is a display/confirmation defect, not an incorrect-money defect in this run: Stripe and HPOS processed exactly `$4.00` and `$5.00`, and no other order received a task refund.
 - The manual path was never clicked.
 
+## Resolution
+
+Resolved on `2026-08-14` in the ArraySubsPro Store Credit order-refund integration.
+
+### Confirmed root cause
+
+WooCommerce owns the standard gateway/manual button markup and updates its nested
+`.wc-order-refund-amount .amount` element when `#refund_amount` changes. The Pro
+Store Credit integration cached each button's page-load text (`$0.00`) and, on
+the same bubbling input/change event, replaced WooCommerce's freshly updated
+markup with that cached string. This made the confirmation label stale and also
+removed the nested amount span needed by later WooCommerce updates.
+
+### Fix
+
+- Preserve the exact native button HTML/value rather than flattening it to text.
+- Override button text only while **Refund as Store Credit** is selected.
+- Leave ordinary gateway/manual amount changes entirely under WooCommerce's
+  control.
+- When returning from Store Credit, restore the native structure once and
+  trigger WooCommerce's existing `keyup` amount recalculation.
+
+This is isolated to `arraysubspro`; core refund accounting, REST contracts,
+gateway processing, permissions, nonces, and lifecycle hooks are unchanged.
+The restored HTML is captured from WooCommerce's already-rendered native control,
+not constructed from request data, while Store Credit labels continue to use
+jQuery text assignment for safe escaping.
+
+### Regression proof
+
+- Reproduced before the fix on untouched Stripe order `20230`: the line/refund
+  amount was `4.00`, while the buttons remained `Refund $0.00 via Stripe` and
+  `Refund $0.00 manually`.
+- After the fix, the same flow displayed `$4.00` on both native buttons.
+- Toggling to Store Credit displayed its `$4.00` label; changing the amount to
+  `$5.00` and toggling back restored both native labels at `$5.00` with their
+  nested `.wc-order-refund-amount .amount` markup intact.
+- Clicking `Refund $4.00 via Stripe` opened WooCommerce's native irreversible
+  confirmation. It was dismissed; no refund request was allowed to run.
+- Before/after data invariant for order `20230`: `completed`, total `$18.00`,
+  refunded `$0.00`, remaining `$18.00`, zero refund rows, three notes.
+- Browser page errors were empty; console output contained only routine
+  `JQMIGRATE` messages. `node --check` and `git diff --check` passed.
+- Evidence:
+  - `/home/server-manager/slt-evidence/HIGH-SLT-ADM-08-reproduced-refund-4.png`
+  - `/home/server-manager/slt-evidence/HIGH-SLT-ADM-08-fixed-standard-4.png`
+  - `/home/server-manager/slt-evidence/HIGH-SLT-ADM-08-fixed-credit-4.png`
+  - `/home/server-manager/slt-evidence/HIGH-SLT-ADM-08-fixed-restored-5.png`
+  - `/home/server-manager/slt-evidence/HIGH-SLT-ADM-08-regression-step-1-refund-open.png`
+  - `/home/server-manager/slt-evidence/HIGH-SLT-ADM-08-regression-step-2-standard-4.png`
+  - `/home/server-manager/slt-evidence/HIGH-SLT-ADM-08-regression-step-3-credit-4.png`
+  - `/home/server-manager/slt-evidence/HIGH-SLT-ADM-08-regression-step-4-restored-4.png`
+  - `/home/server-manager/slt-evidence/HIGH-SLT-ADM-08-regression-step-5-confirm-dismissed.png`

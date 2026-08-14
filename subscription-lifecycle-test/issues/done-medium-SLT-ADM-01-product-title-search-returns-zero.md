@@ -6,7 +6,7 @@ task_id: 100
 task_key: SLT-ADM-01
 stage: D07
 plan_path: qa/subscription-lifecycle-test/kanban/tasks/100-subscriptions-list-status-tabs-search-gateway.md
-status: open
+status: fixed
 severity: medium
 ---
 
@@ -102,3 +102,45 @@ restores all `379` subscriptions.
   product-title search, not a total failure of the search box or list endpoint.
 - The misleading zero-state copy is tracked separately in
   `issues/light-plugin-SLT-ADM-01-zero-result-shows-first-product-onboarding.md`.
+
+## Resolution — 2026-08-14
+
+### Investigation and root cause
+
+The finding reproduced before the fix on the current live list: an authenticated HTTP `200`
+request for `customer_search=SLT+Daily+Core` returned `X-WP-Total: 0` and the onboarding empty
+state, while subscription `12760` still linked `_product_id=11927` and product `11927` still had
+the exact title `SLT Daily Core`. The report is therefore not a stale-data or false-positive case.
+
+`SubscriptionCPT::handleCustomerSearchQuery()` only resolved subscription IDs and matching users.
+It never searched WooCommerce product or variation titles, despite the Product column being part
+of the list and the QA contract explicitly exercising product-title search.
+
+### Fix and safety review
+
+- Extended the existing core REST search in
+  `arraysubs/src/Features/Subscriptions/Services/SubscriptionCPT.php`; no Pro override or parallel
+  endpoint exists or was needed.
+- Product and variation title matches are resolved with `WP_Query`, capped at 100 IDs and limited
+  to `post_title`. Their `_product_id` / `_variation_id` clauses are grouped with customer matches
+  under a nested `OR`, so separately applied status and gateway clauses remain `AND` constraints.
+- Exact numeric subscription-ID matches retain their existing union behavior. Empty and whitespace
+  searches short-circuit safely, unmatched searches use `post__in => [0]`, and the registered REST
+  parameter continues to use `sanitize_text_field`.
+- The endpoint's existing WordPress REST post permissions remain unchanged. The implementation adds
+  no raw SQL, output, nonce bypass, capability bypass, or customer-facing route.
+
+### Regression verification
+
+- WP-CLI REST dispatch as administrator returned HTTP `200` and `X-WP-Total: 33` for exact product
+  title `SLT Daily Core`; the result contained subscription `12760`.
+- Existing paths remained correct: exact email `slt-admincreated@example.test` returned 24 rows and
+  contained `12760`; exact ID `12760` returned only `12760`; the unrelated term
+  `no-such-subscription-qa` returned zero.
+- Live browser retest at the reported admin route rendered product-matching rows (including the
+  `SLT Daily Core` Product column) with the same successful REST response and no page error.
+- Before/after screenshots:
+  `/home/server-manager/slt-evidence/FIX-MEDIUM-SLT-ADM-01-before.png` and
+  `/home/server-manager/slt-evidence/FIX-MEDIUM-SLT-ADM-01-after.png`.
+- This was read-only verification: no subscription, order, product, user, setting, scheduled action,
+  or mail state was changed.

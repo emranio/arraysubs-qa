@@ -123,3 +123,8 @@ Final D05 window closed UNVERIFIED. At 23:04:51 site only 55 minutes remained fo
 
 [[2026-08-12]] Wed 17:59
 D10 watch verdict: UNVERIFIED — no source fixture. Issue: issues/SLT-SYN-12-d10-watch-expects-missing-source.md
+
+[[2026-08-14]] Fri
+## Downstream oracle correction
+
+The missing-source outcome remains `UNVERIFIED`; it is not converted into a product pass and no late fixture was created. Task 88 is now named in the authoritative source-outcome overlays. The D7 reminder, D10 Stripe/Paddle renewal, calendar handoff, and D13 teardown membership are all conditional on relationship-resolved numeric task-88 fixtures, so this run's absent product/order/subscription/action chain is omitted without a false failure or fabricated cleanup target. Resolution evidence is in `issues/done-medium-SLT-SYN-12-d10-watch-expects-missing-source.md`.

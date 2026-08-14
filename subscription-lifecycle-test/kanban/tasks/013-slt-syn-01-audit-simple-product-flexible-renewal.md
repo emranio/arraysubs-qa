@@ -73,8 +73,8 @@ Prove that the pro Flexible Renewal Sync control block on a SIMPLE subscription 
 11. Last-active-segment refusal: on the month product turn the **Full amount** toggle OFF, then **Prorate amount** OFF, then attempt to turn **Charge full for next billing cycle** OFF. Capture the verbatim inline notice (expected: `At least one segment must stay active.`) and screenshot `SLT-SYN-01-03-last-active-refusal.png`. Do NOT save; navigate away with **Discard**/browser back and re-open to confirm the product is still 3-active.
 12. Zero-active server-side fallback probe (defensive path, no UI): on `SLT Flex Month Segments` run `wp post meta update <ID> _arraysubs_flex_sync_seg1_active no --allow-root`, same for seg2 and seg3, then `wp eval 'print_r(\ArraySubsPro\Features\FlexibleRenewalSync\Services\SegmentPlan::getConfig(<ID>));' --allow-root`. Record the returned `actives` array. Immediately restore: `wp post meta update <ID> _arraysubs_flex_sync_seg1_active yes --allow-root` (and seg2, seg3).
 13. Non-`no` string probe: `wp post meta update <ID> _arraysubs_flex_sync_seg1_active 0 --allow-root`, re-run the `getConfig()` eval, record whether segment 1 is still counted active, then restore to `yes`.
-14. Two-active positional check on `SLT Flex Daily Two Seg`: open its edit screen, confirm the legend shows only TWO rows (`1` for **Prorate amount**, `2 - 3` for **Charge full for next billing cycle**) and that `_arraysubs_flex_sync_seg1_end` is `1` — i.e. the meta names the end of the FIRST ACTIVE segment, which is segment 2 here, NOT segment 1. Screenshot `SLT-SYN-01-04-two-active-positional.png`.
-15. One-active check on `SLT Flex Daily Next Cycle`: confirm the legend collapses to a single row `1 - 3`, that no boundary handle is draggable, and run `wp eval 'print_r(\ArraySubsPro\Features\FlexibleRenewalSync\Services\SegmentPlan::getConfig(<ID>));' --allow-root` to confirm `boundaries` is an EMPTY array. Screenshot `SLT-SYN-01-05-one-active.png`.
+14. Two-active positional check on `SLT Flex Daily Two Seg`: open its edit screen and confirm the picker has only TWO active schedule ranges (`1` for **Prorate amount**, `2 - 3` for **Charge full for next billing cycle**). The legend intentionally retains a third, inactive `Off / Full amount` control row so that mode can be re-enabled. Confirm `_arraysubs_flex_sync_seg1_end` is `1` — i.e. the meta names the end of the FIRST ACTIVE segment, which is segment 2 here, NOT segment 1. Screenshot `SLT-SYN-01-04-two-active-positional.png`.
+15. One-active check on `SLT Flex Daily Next Cycle`: confirm the picker has one active schedule range `1 - 3`, while the legend retains `Off` controls for Full and Prorate so either mode can be re-enabled. Confirm that no boundary handle is draggable, and run `wp eval 'print_r(\ArraySubsPro\Features\FlexibleRenewalSync\Services\SegmentPlan::getConfig(<ID>));' --allow-root` to confirm `boundaries` is an EMPTY array. Screenshot `SLT-SYN-01-05-one-active.png`.
 16. Sub-minimum-cycle check on a task-owned throwaway product — **do not open or mutate `SLT Fixed Three Cycles`**. First require `wp post list --post_type=product --name=slt-flex-submin-probe --field=ID --allow-root` to return no ID. In `admin-SLT-SYN-01`, create `SLT Flex SubMin Probe` / slug `slt-flex-submin-probe`: Simple, Virtual, Subscription, regular price `$7.00`, day/2, length 0, trial 0, no signup fee, description `SLT task-owned sub-minimum flex probe. Never purchase. Delete on 2026-08-15.` Confirm the Flexible Renewal Sync block is present, tick it, save, and prove `wp eval 'var_dump(\ArraySubsPro\Features\FlexibleRenewalSync\Services\SegmentPlan::getConfig(<PROBE_ID>));' --allow-root` returns `NULL`. Immediately append only `<PROBE_ID>` to Shop Access rule `rule_1784662676378_maa3te08s` under `exclusion_product_ids` through **Member Access → Shop Access**, preserving every other field and prior exclusion; re-read the raw option and require the ID exactly once. Record its exact product ID and verified exclusion in the registry and screenshot `SLT-SYN-01-05b-submin-probe.png`. Then untick the master control, save, and verify `_arraysubs_flex_sync_enabled` is absent. Never add this product to a cart.
 17. **Pass A only:** Disable-retains-boundaries probe: on `SLT Flex Week Segments` untick the master checkbox and **Update**. Read the metas. Then re-tick and **Update**, and confirm the legend redraws `1 - 2` / `3 - 5` / `6 - 7` without re-entering the boundaries. Screenshot `SLT-SYN-01-06-week-reenabled.png`. Pass B cites this evidence and must not repeat it.
 18. Final verification dump: preserve the raw after CSV, then repeat step 2's canonical JSON command for the
@@ -93,8 +93,8 @@ Prove that the pro Flexible Renewal Sync control block on a SIMPLE subscription 
 6. Turning off the last remaining active segment is refused in the UI with the verbatim string `At least one segment must stay active.` and no save occurs.
 7. Step 12: with all three `_active` metas set to `no`, `SegmentPlan::getConfig()` returns `actives => [1, 2, 3]` (defensive fallback) rather than null or an empty array.
 8. Step 13: `_arraysubs_flex_sync_seg1_active = 0` still counts as ACTIVE, because only the literal string `no` deactivates a segment. Record this as a documented sharp edge.
-9. `SLT Flex Daily Two Seg` shows exactly two legend rows, `1` (Prorate amount) and `2 - 3` (Charge full for next billing cycle), and `_arraysubs_flex_sync_seg1_end = 1` is the end of the first ACTIVE segment (segment 2) — positional, not segment-named.
-10. `SLT Flex Daily Next Cycle` shows one legend row `1 - 3` and `getConfig()['boundaries']` is `[]`.
+9. `SLT Flex Daily Two Seg` shows exactly two active schedule ranges, `1` (Prorate amount) and `2 - 3` (Charge full for next billing cycle), plus an inactive `Off / Full amount` control row. `_arraysubs_flex_sync_seg1_end = 1` is the end of the first ACTIVE segment (segment 2) — positional, not segment-named.
+10. `SLT Flex Daily Next Cycle` shows one active schedule range `1 - 3`, retains two inactive `Off` control rows, and `getConfig()['boundaries']` is `[]`.
 11. Task-owned `SLT Flex SubMin Probe` (nominal 2 days < MIN_CYCLE_DAYS 3) yields `getConfig() === null` even with the checkbox ticked, is present exactly once in the preserved Shop Access exclusion list, and is left with `_arraysubs_flex_sync_enabled` ABSENT. `SLT Fixed Three Cycles` is never opened or mutated.
 12. Unticking the master checkbox DELETES `_arraysubs_flex_sync_enabled` but RETAINS `_arraysubs_flex_sync_seg1_end`/`seg2_end`; re-ticking restores the same legend with no re-entry.
 13. The step-18 canonical key/value diff against step 2 is empty for every product in each pass — every probe was restored. Pass A supplies the week diff; Pass B supplies the month and two daily diffs. Raw database row order is explicitly ignored.
@@ -121,8 +121,8 @@ Prove that the pro Flexible Renewal Sync control block on a SIMPLE subscription 
 - [ ] Last-active-segment refusal captured verbatim
 - [ ] Zero-active meta state resolves to actives [1,2,3]
 - [ ] Non-`no` value counts as active (documented)
-- [ ] Two-active product proves META_SEG1_END is POSITIONAL
-- [ ] One-active product has empty boundaries array
+- [ ] Two-active product has two active ranges, retains its inactive `Off` control, and proves META_SEG1_END is POSITIONAL
+- [ ] One-active product has one active range, two inactive `Off` controls, and an empty boundaries array
 - [ ] Sub-3-day cycle yields getConfig() === null
 - [ ] Sub-minimum probe parent ID is present exactly once in the preserved Shop Access exclusion list
 - [ ] Disable retains boundaries; re-enable restores the legend
@@ -187,3 +187,15 @@ Verdict FAIL solely because disabled legend rows remain visibly rendered on the 
 ## Independent evidence review — accepted after recapture
 
 Replaced screenshots SLT-SYN-01-01 and -02 during a read-only post-restore admin view. Both now visibly show the enabled 30-day control, slider boundaries 2/6, legend 1-2 / 3-6 / 7-30, and all three segment labels. No field changed and Update was not clicked; review-SLT-SYN-01 was closed. Live canonical comparisons for products 12093/12099/12102 each exited 0, product 12119 still has no flex-enabled key, and its Shop Access exclusion count is exactly one. The FAIL remains isolated to issues/light-plugin-SLT-SYN-01-disabled-segments-remain-visible.md; no remediation card exists.
+
+[[2026-08-14]] Fri
+## Test-oracle correction
+
+The former requirement that disabled modes disappear as legend rows was stale and contradicted
+the maintained Stage 21 contract (`21-flexible-renewal-sync/01-product-setup-and-admin-ui.md`,
+Sub-Task 1.4), which explicitly expects a disabled mode to remain as an `Off` row. Each legend
+row owns that mode's enable/disable toggle; removing the row would remove the administrator's
+only in-place way to re-enable it. Future runs distinguish active schedule ranges (which do
+collapse to two or one) from the three persistent mode controls. The historical product data
+and partition assertions were valid; the presentation finding was a false positive and is now
+closed in `issues/done-medium-SLT-SYN-01-disabled-segments-remain-visible.md`.

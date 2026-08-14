@@ -73,3 +73,16 @@
 - Product `12093`, with all three segments active, correctly rendered the three meaningful ranges `1 - 2`, `3 - 6`, and `7 - 30`.
 - Stored metadata and server-side segment math remained correct: product `12099` retained positional boundary `1`; product `12102` returned an empty boundary array and displayed no handle.
 - This is therefore a presentation/collapse defect, not evidence of an incorrect renewal schedule or persisted product state.
+
+## Resolution (2026-08-14)
+
+Disposition: false positive caused by a stale lifecycle-test oracle. No product-code change was required.
+
+- The authoritative Stage 21 plan explicitly requires disabled rows to remain in the legend as `Off`: Task 01 subtask 1.4 expects the blue range to disappear from the bar while the prorate legend row remains visible as `Off`, and Task 08 expects the legend `1 - 5 / Off / 6 - 30`.
+- Each legend row owns the checkbox that enables or disables that segment. Hiding a disabled row would also hide the only in-context control for re-enabling it and would introduce a product usability regression.
+- The simple-product and variation templates intentionally render all three controls, while the renderer excludes inactive segments from the colored range bar, hides their boundary inputs, and labels them `Off`. Subscription-box and bundle editors follow the same contract.
+- Live read-only verification on product `12099` showed two active ranges, one visible slider, and the inactive Full amount control labelled `Off`. Clicking that control restored three active ranges and two sliders immediately; it was switched back without saving.
+- Live read-only verification on product `12102` showed one active range, zero visible sliders, and two inactive controls labelled `Off`. Clicking Full amount restored a valid two-segment partition immediately; the product was not saved.
+- Post-test WP-CLI readback confirmed both products retained their original metadata (`12099`: `no/yes/yes`, boundaries `1/3`; `12102`: `no/no/yes`, boundaries `2/3`). Browser error collection was empty.
+- Corrected verification screenshots: `/home/server-manager/slt-evidence/FIX-MEDIUM-SLT-SYN-01-two-segment-off-control.png` and `/home/server-manager/slt-evidence/FIX-MEDIUM-SLT-SYN-01-one-segment-off-controls.png`.
+- The originating lifecycle task was corrected so future runs distinguish active schedule ranges from retained inactive `Off` controls.

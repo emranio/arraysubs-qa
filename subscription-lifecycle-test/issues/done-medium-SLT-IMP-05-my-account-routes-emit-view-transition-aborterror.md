@@ -72,3 +72,41 @@ The error also reproduced after a cache-busting navigation and an additional set
   the demonstrated impact is diagnostic noise and potential client-side instability.
 - No card data, credential, customer token, or provider identifier is included in the evidence.
 
+## Resolution (2026-08-14)
+
+Disposition: **closed as a historical, transient browser/platform finding; no ArraySubs
+product defect is currently present and no product code change is warranted.**
+
+The original evidence establishes that Chromium reported an `AbortError` on D09, but it did
+not identify a source URL or line and did not demonstrate a failed navigation. The current
+investigation repeated the authored test as the same WordPress user (`347`, `slt-core`) in an
+isolated `customer-medium-low` session. The browser error buffer was cleared between
+link-driven visits to all five routes. Every route rendered the expected account content,
+and every error buffer remained empty:
+
+- `/my-account/`
+- `/my-account/subscriptions/`
+- `/my-account/view-subscription/11959/`
+- `/my-account/orders/`
+- `/my-account/payment-methods/`
+
+A fresh, cache-busted load of
+`/my-account/?slt_imp05_retest=20260814` also completed with an empty page-error buffer.
+The captured request log contained no HTTP `4xx` or `5xx` responses. Browser evidence is in
+`/home/server-manager/slt-evidence/FIX-MEDIUM-SLT-IMP-05-view-subscription.png`,
+`FIX-MEDIUM-SLT-IMP-05-payment-methods.png`, and
+`FIX-MEDIUM-SLT-IMP-05-dashboard-cache-bust.png`.
+
+Source ownership was checked across `arraysubs`, `arraysubspro`, the active
+Twenty Twenty-Five theme, and WordPress core. Neither ArraySubs plugin nor the active theme
+contains `startViewTransition` or the reported error text. The only matching executable
+implementations on this installation are WordPress core's router bundles under
+`wp-includes/js/dist/`. The affected pages currently load WordPress's navigation script
+module and WooCommerce account/block scripts; the ArraySubs customer-portal bundle does not
+own a view-transition call.
+
+Adding an ArraySubs-wide `unhandledrejection` handler or disabling a browser API would hide
+unrelated failures and alter shared WooCommerce/theme navigation without fixing an owned
+cause. The safe regression decision is therefore to make no product change. The report is
+closed because the exact current end-to-end criterion now passes and the historical signal
+cannot be localized to either product.

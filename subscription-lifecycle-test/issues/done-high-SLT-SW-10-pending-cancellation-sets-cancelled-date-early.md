@@ -77,3 +77,34 @@ This creates an internally inconsistent active record and can mislead reporting 
 - Action `16147` then ran naturally via WP Cron at `16:47:03–16:47:07Z`. The subscription became `arraysubs-cancelled`, and `_cancelled_date` was overwritten to the actual transition time `2026-08-09 16:47:06Z`.
 - This narrows the defect to the pending-cancellation interval: the terminal record self-corrects, but the active record exposed the incorrect cancellation timestamp for almost 24 hours.
 - D07 evidence: `/home/server-manager/slt-evidence/SLT-SW-10-D07-followup.txt` and `/home/server-manager/slt-evidence/SLT-SW-10-05-cancelled.png`; exact cancellation mails are customer `2hXZkG5AyrsnuG9ToYiey0` and admin `4mPhuiua1mzfLkufmVffNH`.
+
+## Resolution — 2026-08-14
+
+### Investigation and root cause
+
+- Revalidated the report against the original lifecycle task, the current core and Pro listeners, current cancellation settings, subscription `13402`, and a disposable subscription `26603` owned by the same customer.
+- The canonical scheduling helper correctly kept the subscription active, wrote only the waiting/scheduled metadata, and queued the exact cancellation action. The defect was the core `CancellationFlow\Services\Hooks` listener on `arraysubs_data_waiting_cancellation`: it reused a terminal analytics method that wrote `_cancelled_date`, `_cancellation_type`, `_subscription_age_at_cancel`, and `_payments_at_cancel` as soon as cancellation was requested.
+- This was not a false positive. Before the fix, the real customer portal left disposable subscription `26603` active and pending with action `23382`, but `_cancelled_date` and both terminal analytics snapshots were already present.
+- The waiting event still has separate, valid consumers for renewal unscheduling, customer/admin mail, subscription notes, Pro gateway handling, and `RetentionAnalytics`'s `scheduled_cancel` event. Those consumers do not require terminal cancellation metadata.
+
+### Fix and dependency/security review
+
+- Removed only the `CancellationFlow` terminal-analytics listener from `arraysubs_data_waiting_cancellation` in `arraysubs/src/Features/CancellationFlow/Services/Hooks.php`.
+- Terminal age/payment snapshots are now captured only from `arraysubs_data_cancelled`. The canonical immediate and scheduled-finalization helpers remain the sole owners of `_cancelled_date` and `_cancellation_type`, avoiding two writers for lifecycle truth.
+- The change adds no endpoint, input, capability, nonce, query, or output surface. Existing `absint()` validation remains on the terminal listener, and no Pro contract, scheduler signature, REST payload, or hook payload changed.
+- Reviewed all core and Pro listeners on both lifecycle hooks. Pending mail, notes, renewal suppression, remote gateway behavior, scheduled analytics, and undo behavior remain on their existing paths.
+
+### Live regression proof
+
+- Customer cancellation after the fix showed **Active**, **Pending Cancellation**, and the future **Cancels On** date while `_cancelled_date`, `_subscription_age_at_cancel`, and `_payments_at_cancel` were all absent. The exact pending action was `23388`; the independent `scheduled_cancel` analytics row still captured age `0` and payment count `1`.
+- Pending-cancellation mail still sent to both customer (`6MngHWUhTNAeuaDfPFsR48`) and admin (`7eqYiICMADPABHOaRVqh3R`).
+- Undo from the shared customer confirmation dialog restored the active state, removed the pending action, and left all waiting, scheduled, cancellation-date, age, and payment snapshot metadata absent.
+- An immediate terminal control then changed the same fixture to `arraysubs-cancelled`, wrote `_cancelled_date=2026-08-14 17:55:05`, `_cancellation_type=immediate`, `_cancelled_by=system`, `_subscription_age_at_cancel=0`, and `_payments_at_cancel=1`. The portal displayed **Cancelled** with the matching end date.
+- Browser errors were empty; the console contained only the site's existing `JQMIGRATE` informational messages. Source whitespace validation passed with `git diff --check`; PHPCS was intentionally skipped per the QA issue-fix workflow.
+
+### Evidence and cleanup
+
+- Before-fix pending state: `/home/server-manager/slt-evidence/HIGH-SLT-SW-10-before-pending.png`
+- After-fix pending state: `/home/server-manager/slt-evidence/HIGH-SLT-SW-10-after-pending.png`
+- Terminal control: `/home/server-manager/slt-evidence/HIGH-SLT-SW-10-terminal-control.png`
+- Disposable subscription `26603`, its 11 linked notes, seven retention rows, and eight exact scheduler-history rows were deleted after testing. Follow-up checks found no post/slug, note link, retention row, or scheduler row for `26603`. Original subscription `13402`, order `13386`, user `369`, and product `12608` were not mutated by the fix verification.
