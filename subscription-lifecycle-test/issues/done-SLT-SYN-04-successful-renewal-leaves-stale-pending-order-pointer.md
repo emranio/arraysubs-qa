@@ -65,3 +65,51 @@ The payment, order, subscription status, payment count, next-payment date, and e
 - Recent paid Stripe renewal controls `12172` (order `13788`) and `13277` (order `13576`) have absent pending-order pointers, showing this is not the normal settled state.
 - The global respread replaced action IDs while preserving their authored timestamps; it did not create a duplicate cycle-4 order.
 - The unrelated `SUB_W1=12039` missing D12 charge is governed by the pre-existing QA-plan timing issue `issues/medium-SLT-SYN-09-d12-watch-expects-sub-w1-one-day-early.md`, not this product finding.
+
+## Resolution
+
+Resolved on `2026-08-14` by core commit `69e0fe8` and pro commit `09ad013`.
+
+### Confirmed root cause
+
+This was a write-after-delete race, not a missed cleanup or renewal-respread defect. Stripe's verified provider-completion service paid a freshly loaded WooCommerce order while the scheduled renewal call retained its original pending `WC_Order`. Paid-order processing correctly advanced the subscription and deleted the pointer. The pro and core result normalizers then read the stale caller object as pending, and `RenewalProcessor::handleManualPaymentPending()` wrote order `20230` back into `_pending_renewal_order_id` before the action returned.
+
+The database chronology corroborated that sequence: the new pointer meta row was inserted after the paid lifecycle/email notes and immediately before the Process Renewal success note. Order `20230` was already `completed`, `_subscription_payment_processed=yes`, and the sole cycle-4 order, excluding an incomplete lifecycle or duplicate invoice as explanations.
+
+### Fix
+
+- Core reloads the exact order through the WooCommerce data store before normalizing automatic payment results. Persisted paid state wins over a stale pending object, while a gateway string that claims `paid` for an unpaid order is downgraded to `pending`.
+- The final pending-pointer writer reloads and validates the exact renewal, subscription relationship, and customer ownership. It cannot resurrect a paid-and-processed order or overwrite a newer pending invoice, while genuine pending, on-hold, failed, requires-action, and paid-but-unprocessed replay states remain linked.
+- Successful paid-order cleanup uses an exact-value delete, so delayed completion of an older order cannot erase a newer order's pointer.
+- Pro reloads the provider-completed order before returning its canonical paid/pending result and prevents gateway payload fields from overriding the verified status, message, or order ID.
+
+### Regression and security proof
+
+The disposable pre-fix run reproduced all three defects: separately loaded payment left its paid/processed order pointer present, an unpaid order's forged `status=paid` was accepted, and an older paid order erased a newer pending pointer. The same four-case run after the fix proved:
+
+- separately loaded paid order: `completed`, processed `yes`, payments `1 -> 2`, pointer absent;
+- forged paid result with persisted pending order: normalized to `pending`, pointer retained, payments unchanged;
+- genuine asynchronous pending result: pending order and pointer retained, payments unchanged;
+- older paid order plus newer unpaid order: newer pointer retained exactly.
+
+The premium normalizer was also probed directly with order `20230` represented by a deliberately stale pending object; it returned canonical `paid`. A forged paid claim against persisted-pending control order `26323` returned canonical `pending` with the awaiting-confirmation message.
+
+Evidence:
+
+- `/home/server-manager/slt-evidence/SLT-SYN-04-pre-fix-regression-expanded.txt`
+- `/home/server-manager/slt-evidence/SLT-SYN-04-post-fix-regression.txt`
+- `/home/server-manager/slt-evidence/SLT-SYN-04-pro-normalizer.txt`
+
+Every disposable subscription, order, note, and scheduled action was absent after cleanup. Mailpit stayed at `3fSVVzMmDFtiJU2RGRmFWU`, and the ArraySubs settings hash stayed `7f1af9d9c8ee89b3f4dcba0d49eda75b59d8efe426f9fea0977add9f4aa8052a` throughout.
+
+### Live repair and browser verification
+
+Under the canonical subscription-mutation lock, the live repair revalidated that pointer `12564 -> 20230` still matched the exact paid, processed, customer-bound renewal in subscription history and that no unpaid renewal existed. It then compare-and-deleted only that value. Payments remained `4`, next payment remained `2026-08-16 18:00:00 UTC`, order `20230` remained completed/processed, and a site-wide scan found zero pointers to paid orders; four unrelated unpaid/cancelled pointers were left untouched.
+
+The authenticated admin UI then showed subscription `12564` Active with four completed payments, the unchanged next/last-payment dates, and order `20230` as a completed USD `18.00` renewal. The WooCommerce order page showed Completed, customer `350`, subscription `12564`, product `12125`, quantity one, and USD `18.00`. Browser page errors were empty, console output was routine JQMIGRATE/list logging only, and session `admin-SLT-SYN-04-FIX` was closed.
+
+Evidence:
+
+- `/home/server-manager/slt-evidence/SLT-SYN-04-data-repair.txt`
+- `/home/server-manager/slt-evidence/SLT-SYN-04-fix-subscription-12564.png`
+- `/home/server-manager/slt-evidence/SLT-SYN-04-fix-order-20230.png`
