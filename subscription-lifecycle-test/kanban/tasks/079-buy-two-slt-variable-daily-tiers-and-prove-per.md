@@ -121,7 +121,7 @@ Buy two `SLT Variable Daily` tiers — Starter (day/1, $6.00) on block checkout,
 - Evidence goes under `/home/server-manager/slt-evidence/` using task-key-prefixed filenames.
 
 [[2026-08-06]] Thu 20:27
-Source-block note on Thursday, August 6, 2026: D4 source card 71 is now done only because it failed and filed qa/subscription-lifecycle-test/issues/critical-plugin-SLT-PROD-08-variable-subscription-draft-is-trashed-on-save.md. Intended parent 13012 and child variations 13013/13015/13017/13019 landed in trash, so this card remains blocked until a usable SLT Variable Daily fixture exists.
+Source-block note on Thursday, August 6, 2026: D4 source card 71 is now done only because it failed and filed qa/subscription-lifecycle-test/issues/done-critical-plugin-SLT-PROD-08-variable-subscription-draft-is-trashed-on-save.md. Intended parent 13012 and child variations 13013/13015/13017/13019 landed in trash, so this card remains blocked until a usable SLT Variable Daily fixture exists.
 
 [[2026-08-07]] Fri 23:05
-Final D05 read confirmed the source remains absent: parent 13012 and variations 13013/13015/13017/13019 are all still trash. No later valid replan recreated them. Execution closes UNVERIFIED without opening a browser/cart/checkout or inventing replacement IDs. Evidence: `/home/server-manager/slt-evidence/D05-night-source-block-and-window-close.txt`; originating issue remains `issues/critical-plugin-SLT-PROD-08-variable-subscription-draft-is-trashed-on-save.md`.
+Final D05 read confirmed the source remains absent: parent 13012 and variations 13013/13015/13017/13019 are all still trash. No later valid replan recreated them. Execution closes UNVERIFIED without opening a browser/cart/checkout or inventing replacement IDs. Evidence: `/home/server-manager/slt-evidence/D05-night-source-block-and-window-close.txt`; originating issue is now resolved at `issues/done-critical-plugin-SLT-PROD-08-variable-subscription-draft-is-trashed-on-save.md`.

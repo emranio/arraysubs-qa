@@ -4,7 +4,7 @@ title: 'Renewal invoice email: content, UTC+6 due date, and a pay-link that reso
 status: done
 priority: high
 created: 2026-08-02T03:43:08.994907162+02:00
-updated: 2026-08-08T12:54:33.245308526+02:00
+updated: 2026-08-12T15:20:10.442105098+02:00
 started: 2026-08-08T12:54:33.245307364+02:00
 completed: 2026-08-08T12:54:33.245307364+02:00
 tags:
@@ -136,11 +136,14 @@ D05 arm completed at 10:22:07 site: registry exception posted/read back; PREV=1f
 D05 evening payment completed: invoice 62R3k1if4aveVTY6lkh2K5/order 13063 passed; PAY_PRE=6sMnHvedpurd7IzTyDTU2D; admin mail 61uMOBgJpO2BBvu9HMUHyw; payment mail 5hm1LQfe2IKo0vIamcv9kd. Order completed, payments 5->6, next=2026-08-08 12:39:05Z, pending cleared, _auto_renew remains exactly absent, old charge 15328 canceled. POST_RESTORE_MAIL_BASE=5hm1LQfe2IKo0vIamcv9kd. Evidence: /home/server-manager/slt-evidence/SLT-EML-02-D05-evening-payment.txt and -04-order-paid.png. Future suppression gate: action 15676 at 2026-08-08 15:37:52 site; resume D06 16:10 phase, then review->done.
 
 [[2026-08-07]] Fri 15:43
-D05 payment verdict: manual invoice content/payability/payment passed, but paying relationship-owned order 13063 with saved Visa 4242 changed unrelated subscription 12655 back from Mastercard 4444 to Visa 4242. Standalone finding: issues/critical-plugin-SLT-EML-02-manual-payment-updates-wrong-subscription.md. Preserve state; no repair mutation made. The card remains in progress for the D06 15:37:52 site suppression gate.
+D05 payment verdict: manual invoice content/payability/payment passed, but paying relationship-owned order 13063 with saved Visa 4242 changed unrelated subscription 12655 back from Mastercard 4444 to Visa 4242. Standalone finding: issues/done-critical-plugin-SLT-EML-02-manual-payment-updates-wrong-subscription.md. Preserve state; no repair mutation made. The card remains in progress for the D06 15:37:52 site suppression gate.
 
 [[2026-08-08]] Sat 16:22
 Final D06 follow-up completed. Invoice action 15676 ran naturally via WP Cron at 15:38:06 site and created relationship-exact pending order 13241 for subscription 11959, but the complete 22-message delta newer than `POST_RESTORE_MAIL_BASE=5hm1LQfe2IKo0vIamcv9kd` contained zero `Invoice for subscription #11959` subjects. `_auto_renew` remains absent/zero rows, proving automatic-mode suppression was restored. Evidence: `/home/server-manager/slt-evidence/SLT-EML-02-D06-suppression.txt`.
 
-Overall execution verdict is **FAIL** because the target invoice/content/payability/payment/suppression flow passed but manual payment order 13063 silently rewrote unrelated subscription 12655's saved source. Finding: `issues/critical-plugin-SLT-EML-02-manual-payment-updates-wrong-subscription.md`.
+Overall execution verdict is **FAIL** because the target invoice/content/payability/payment/suppression flow passed but manual payment order 13063 silently rewrote unrelated subscription 12655's saved source. Finding: `issues/done-critical-plugin-SLT-EML-02-manual-payment-updates-wrong-subscription.md`.
 
 Self-review resolved every authored criterion. The direct oracle was `2026-08-07 12:39:05Z` → `7 August, 2026 6:39 PM (UTC+6)`, with no date rollover because the UTC time was before 18:00. The accidental all-row deletion restored `_auto_renew` to absent at `2026-08-07 10:03:13Z` / `16:03:13` site; all 46 other original row images were recovered by `10:08:03Z` / `16:08:03` site. Browser errors and relevant failed network responses were absent. All exact task sessions were closed. Independent review confirmed the issue file, D05 evidence, D06 suppression proof, exact mail subjects/recipients, relationship evidence, restoration times, and final board transition.
+
+[[2026-08-12]] Wed 15:20
+2026-08-12 fix follow-up: standalone EML-02 defect is resolved and live-verified. Stripe now derives webhook subscription scope from the exact canonical order relationship, rejects mismatched capture, and fails closed on ambiguous customer-only events. Fresh same-customer Visa/Mastercard manual-order payment changed only the target; an unlinked ordinary Stripe payment left all five customer subscriptions byte-identical. Report renamed to issues/done-critical-plugin-SLT-EML-02-manual-payment-updates-wrong-subscription.md. Disposable records/actions removed; tokens/default preserved.

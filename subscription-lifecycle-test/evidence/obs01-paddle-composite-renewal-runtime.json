@@ -1,0 +1,33 @@
+{
+  "scope": "OBS-01 Paddle composite renewal evidence comparator",
+  "implementation": "arraysubspro/src/Features/AutomaticPayments/Gateways/Paddle/PaddleGateway.php",
+  "sha256": "3fcbfd04fd56fb066fa9ed7a85433bd14bd88996004940e05c9f45834062c9d8",
+  "runtime": {
+    "network_calls": 0,
+    "payments_completed": 0,
+    "exact_simple": true,
+    "box_authored_zero_children": true,
+    "box_line_count": 3,
+    "box_remote_extra_item_rejected": true,
+    "bundle_authored_zero_children": true,
+    "bundle_line_count": 2,
+    "wrong_bundle_parent_rejected": true,
+    "ordinary_positive_line_rejected": true,
+    "flagged_positive_box_child_rejected": true,
+    "unvalidated_flagged_line_rejected": true,
+    "subscription_bound_price_evidence": true,
+    "product_global_price_ignored": true
+  },
+  "cleanup": {
+    "orders_remaining": 0,
+    "subscriptions_remaining": 0,
+    "products_remaining": 0,
+    "fixture_meta_rows_remaining": 0,
+    "fixture_subscription_titles_remaining": 0
+  },
+  "validation": {
+    "php_lint": "pass",
+    "git_diff_check": "pass",
+    "prior_high_runtime_regression": "pass"
+  }
+}

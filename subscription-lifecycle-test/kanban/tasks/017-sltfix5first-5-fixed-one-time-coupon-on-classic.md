@@ -4,7 +4,7 @@ title: SLTFIX5FIRST $5 fixed one-time coupon on classic checkout - first order d
 status: done
 priority: critical
 created: 2026-08-02T03:43:04.505709602+02:00
-updated: 2026-08-05T21:37:49.318769416+02:00
+updated: 2026-08-12T14:43:54.359893811+02:00
 started: 2026-08-05T17:55:08.288565135+02:00
 completed: 2026-08-05T17:55:08.288565135+02:00
 tags:
@@ -110,7 +110,7 @@ Prove `SLTFIX5FIRST` (fixed cart $5.00, apply-to-subs yes, duration `one-time`) 
 
 - Parent `12331` links exactly and bidirectionally to sole subscription `12332`; subscription count is `366 -> 367`, HPOS shop-order count `543 -> 544`, and user `362` owns only `12332`.
 - Classic cart, checkout, and receipt prove coupon `sltfix5first`, discount `-$5.00`, and total `$5.00`. Exact four-message set: `31AFTGijF7XijCMZnsLwmt`, `6TYILieHiiDmsMSWULDuyp`, `1mZMnuPHnnZbZ4CzGyUVAf`, `3scBdxmEgq298byftBwV3Q`.
-- Product finding: subscription coupon meta count `0` and coupon-note count `0`; full standalone context is in `issues/critical-plugin-SLT-CPN-02-one-time-coupon-capture-missing.md`. No kanban bug card was created.
+- Product finding: subscription coupon meta count `0` and coupon-note count `0`; full standalone context is in `issues/done-critical-plugin-SLT-CPN-02-one-time-coupon-capture-missing.md`. No kanban bug card was created.
 - `k=12625`; invoice `14106` at `2026-08-04 15:51:37` site, charge `14107` at `21:51:37` site. Capture `REN1_PRE` only in `[21:46:37,21:51:37)` site; never force.
 - Full D1 proof: `/home/server-manager/slt-evidence/SLT-CPN-02-D01-facts.txt`. Card correctly remains `in-progress` for D3/D4 renewal evidence.
 
@@ -118,7 +118,7 @@ Prove `SLTFIX5FIRST` (fixed cart $5.00, apply-to-subs yes, duration `one-time`) 
 
 **R1 PASS; R2 remains naturally armed for later today.** Invoice action `14106` and charge action `14107` ran unattended through WP Cron. The charge started at `2026-08-04 15:52:04Z`, 27 seconds after its gate, and completed at `15:52:13Z`. Relationship-exact cycle-2 order `12429` completed for the full USD `$10.00`, zero tax, zero fee items, and `get_coupon_codes()=[]`.
 
-Subscription `12332` remains active with `_completed_payments=2` and next due `2026-08-05 12:21:12Z`. Coupon-related subscription meta remains absent as already recorded in `issues/critical-plugin-SLT-CPN-02-one-time-coupon-capture-missing.md`; R1 added no recurring-discount or coupon-cycle note. The exact natural mail pair is admin order `3NYhutsKZpT6wE8nkmphqE` plus customer payment success `2v8RP3qSZt1Mdi75zk4Re5`; an owner/subject sweep found no renewal-invoice mail.
+Subscription `12332` remains active with `_completed_payments=2` and next due `2026-08-05 12:21:12Z`. Coupon-related subscription meta remains absent as already recorded in `issues/done-critical-plugin-SLT-CPN-02-one-time-coupon-capture-missing.md`; R1 added no recurring-discount or coupon-cycle note. The exact natural mail pair is admin order `3NYhutsKZpT6wE8nkmphqE` plus customer payment success `2v8RP3qSZt1Mdi75zk4Re5`; an owner/subject sweep found no renewal-invoice mail.
 
 The required `REN1_PRE` cursor was missed contemporaneously. Mailpit chronology proves `0MehjgCWvkh0qQXtdxG5QX` was the immediately preceding message and only the two task-owned messages followed through the gate; this is explicitly a post-hoc reconstruction.
 
@@ -177,3 +177,6 @@ Captured immutable REN2_PRE=2i0R3FNNwSKttHCGnF3brU at 2026-08-05 15:48:46Z insid
 
 [[2026-08-05]] Wed 17:55
 R2 complete on 2026-08-05. Immutable REN2_PRE=2i0R3FNNwSKttHCGnF3brU was captured at 2026-08-05 15:48:46Z; action 14547 completed naturally at 2026-08-05 15:52:18Z. Relationship-exact cycle-3 renewal order 12612 completed for USD 10.00 with zero fees and coupons []; subscription 12332 advanced to _completed_payments=3 and _next_payment_date=2026-08-06 12:21:12. Exact post-baseline delta is only admin new-order 0B8SUdM4iGj1JuzJJHFTPz and customer payment-success 5l3oNzrhZqwMtZ2pU1ed2j; no renewal_invoice mail appeared. Evidence: /home/server-manager/slt-evidence/SLT-CPN-02-R2-facts.txt.
+
+[[2026-08-12]] Wed 14:43
+CPN-02 fix verification (2026-08-12): confirmed classic-checkout mid-save order reload as root cause. Core now passes the authoritative WC_Order as the fourth arraysubs_data_created_from_order argument; Coupon Tracking validates the order ID and preserves the persisted fallback. Pre-fix order/sub 15576/15577 reproduced zero coupon meta; post-fix 15588/15589 captured the complete one-time fixed-cart snapshot and one note. Natural invoice 15600 remained full-price at USD 10.00 with zero fees/coupons. Temporary fixtures/actions/settings/cart/coupon usage were fully restored. Critical report closed as issues/done-critical-plugin-SLT-CPN-02-one-time-coupon-capture-missing.md; the now-visible wording-only suffix is separately tracked in issues/light-plugin-SLT-CPN-02-one-time-coupon-note-claims-renewal.md.

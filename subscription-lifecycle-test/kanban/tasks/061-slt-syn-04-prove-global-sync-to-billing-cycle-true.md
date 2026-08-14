@@ -163,3 +163,6 @@ Recovery preparation: QA plan audit C192 added because the primary 09:00-11:00 s
 
 [[2026-08-05]] Wed 10:30
 PASS. Action 14521 completed naturally at 08:06:11Z. The RECOVERY bracket verified ON/full at 08:09:25Z and restored OFF/full at 08:17:53Z; jq-sorted before/after settings diff is empty, zero settings-save mail, and the close preceded action 14542 by 01:19:59. Plain global and flex-override probes matched every expected row. Real checkout produced order 12563 and sole linked active subscription 12564, count 367→368, exact USD 18.00, mirrored sync metas, and the four expected mail IDs only. Guest gateways were Stripe/no Paddle while ON and Stripe+Paddle after restore. Both task carts and persistent cart are empty. k=10163s; pending invoice 14796 at 2026-08-07 14:49:23Z and charge 14797 at 20:49:23Z; R1 baseline window [20:44:23Z,20:49:23Z). Full evidence: /home/server-manager/slt-evidence/SLT-SYN-04-facts.txt. Static Stripe test-helper digits were redacted from retained screenshots during review.
+
+[[2026-08-14]] Fri 06:46
+D12 watch verdict: FAIL — `issues/SLT-SYN-04-successful-renewal-leaves-stale-pending-order-pointer.md`.

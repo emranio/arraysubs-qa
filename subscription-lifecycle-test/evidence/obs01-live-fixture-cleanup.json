@@ -1,0 +1,72 @@
+{
+  "issue": "SLT-OBS-01",
+  "captured_at": "2026-08-13T04:20:00+02:00",
+  "removed_fixture": {
+    "subscription_id": 15871,
+    "order_id": 15857,
+    "customer_id": 370,
+    "payment_token_id": 34,
+    "order_item_id": 1171,
+    "note_ids": [
+      18905,
+      18906,
+      18904,
+      18902,
+      18903,
+      15887,
+      15880,
+      15878,
+      15879,
+      15875,
+      15876,
+      15872,
+      15873
+    ],
+    "action_ids": [
+      18169,
+      18170,
+      18171,
+      18172,
+      18786
+    ],
+    "orphaned_hpos_legacy_link_meta_id": 116630
+  },
+  "zero_residue_counts": {
+    "posts_and_notes": 0,
+    "postmeta": 0,
+    "wc_orders": 0,
+    "wc_orders_meta": 0,
+    "wc_order_addresses": 0,
+    "wc_order_operational_data": 0,
+    "wc_order_stats": 0,
+    "wc_order_product_lookup": 0,
+    "wc_order_coupon_lookup": 0,
+    "wc_order_tax_lookup": 0,
+    "woocommerce_order_items": 0,
+    "woocommerce_order_itemmeta": 0,
+    "users": 0,
+    "usermeta": 0,
+    "payment_tokens": 0,
+    "payment_tokenmeta": 0,
+    "action_rows": 0,
+    "action_logs": 0,
+    "fixture_post_markers": 0,
+    "fixture_order_markers": 0,
+    "fixture_user_markers": 0
+  },
+  "restored_controls": {
+    "access_rule_id": "rule_1784662676378_maa3te08s",
+    "exclusion_product_ids": [],
+    "control_product_id": 11927,
+    "control_product_exists": true
+  },
+  "global_postconditions": {
+    "gateway_lock_owner": null,
+    "managed_duplicate_groups": 0,
+    "dedupe_migration_complete": "yes",
+    "gateway_db_version": "1.0.2",
+    "remaining_agent_browser_sessions": [
+      "office-agent"
+    ]
+  }
+}

@@ -1304,3 +1304,48 @@
 {"timestamp":"2026-08-11T22:46:27.819534869+02:00","action":"edit","task_id":125,"detail":"Fix all QA-plan issue records and source contracts"}
 {"timestamp":"2026-08-11T22:46:27.820276949+02:00","action":"release","task_id":125,"detail":"brave-rust"}
 {"timestamp":"2026-08-11T22:46:27.989240875+02:00","action":"move","task_id":125,"detail":"in-progress -\u003e done"}
+{"timestamp":"2026-08-11T23:33:19.054225938+02:00","action":"edit","task_id":47,"detail":"Admin-create a subscription for slt-admincreated and prove it renews unassisted"}
+{"timestamp":"2026-08-12T02:13:53.629849429+02:00","action":"edit","task_id":106,"detail":"Renewal execution after a synced first charge: second charge full on the boundary, third on the grid"}
+{"timestamp":"2026-08-12T02:13:53.63271299+02:00","action":"claim","task_id":106,"detail":"veil-delta"}
+{"timestamp":"2026-08-12T02:34:47.707331045+02:00","action":"move","task_id":106,"detail":"in-progress -\u003e review"}
+{"timestamp":"2026-08-12T02:34:48.69161224+02:00","action":"move","task_id":106,"detail":"review -\u003e done"}
+{"timestamp":"2026-08-12T02:34:48.828440075+02:00","action":"edit","task_id":106,"detail":"Renewal execution after a synced first charge: second charge full on the boundary, third on the grid"}
+{"timestamp":"2026-08-12T02:34:48.82906793+02:00","action":"release","task_id":106,"detail":"veil-delta"}
+{"timestamp":"2026-08-12T02:35:08.597579842+02:00","action":"edit","task_id":106,"detail":"Renewal execution after a synced first charge: second charge full on the boundary, third on the grid"}
+{"timestamp":"2026-08-12T02:35:08.598143658+02:00","action":"claim","task_id":106,"detail":"veil-delta"}
+{"timestamp":"2026-08-12T02:35:08.900550123+02:00","action":"edit","task_id":106,"detail":"Renewal execution after a synced first charge: second charge full on the boundary, third on the grid"}
+{"timestamp":"2026-08-12T02:35:08.901795615+02:00","action":"release","task_id":106,"detail":"veil-delta"}
+{"timestamp":"2026-08-12T02:36:05.578776225+02:00","action":"move","task_id":118,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-12T03:12:27.658453601+02:00","action":"create","task_id":126,"detail":"Fix every critical plugin QA issue"}
+{"timestamp":"2026-08-12T03:12:32.554926627+02:00","action":"move","task_id":126,"detail":"backlog -\u003e in-progress"}
+{"timestamp":"2026-08-12T03:12:32.661308109+02:00","action":"edit","task_id":126,"detail":"Fix every critical plugin QA issue"}
+{"timestamp":"2026-08-12T13:21:29.851065628+02:00","action":"edit","task_id":126,"detail":"Fix every critical plugin QA issue"}
+{"timestamp":"2026-08-12T13:24:36.628588774+02:00","action":"edit","task_id":126,"detail":"Fix every critical plugin QA issue"}
+{"timestamp":"2026-08-12T13:45:14.93408122+02:00","action":"edit","task_id":126,"detail":"Fix every critical plugin QA issue"}
+{"timestamp":"2026-08-12T13:48:55.358996895+02:00","action":"edit","task_id":126,"detail":"Fix every critical plugin QA issue"}
+{"timestamp":"2026-08-12T14:03:46.346857522+02:00","action":"edit","task_id":126,"detail":"Fix every critical plugin QA issue"}
+{"timestamp":"2026-08-12T14:43:54.366531828+02:00","action":"edit","task_id":17,"detail":"SLTFIX5FIRST $5 fixed one-time coupon on classic checkout - first order discounted, first renewal at full price"}
+{"timestamp":"2026-08-12T14:43:54.613671792+02:00","action":"edit","task_id":126,"detail":"Fix every critical plugin QA issue"}
+{"timestamp":"2026-08-12T15:17:50.136949763+02:00","action":"move","task_id":118,"detail":"in-progress -\u003e review"}
+{"timestamp":"2026-08-12T15:17:50.269105157+02:00","action":"edit","task_id":118,"detail":"SLT-SETUP-99A D10 settings restore and partial cancellation — no deletions"}
+{"timestamp":"2026-08-12T15:17:50.420750594+02:00","action":"move","task_id":118,"detail":"review -\u003e done"}
+{"timestamp":"2026-08-12T15:20:10.442712086+02:00","action":"edit","task_id":67,"detail":"Renewal invoice email: content, UTC+6 due date, and a pay-link that resolves to a real payable order"}
+{"timestamp":"2026-08-12T15:20:10.80583189+02:00","action":"edit","task_id":126,"detail":"Fix every critical plugin QA issue"}
+{"timestamp":"2026-08-12T15:36:41.875871044+02:00","action":"edit","task_id":126,"detail":"Fix every critical plugin QA issue"}
+{"timestamp":"2026-08-12T15:40:13.255135563+02:00","action":"edit","task_id":126,"detail":"Fix every critical plugin QA issue"}
+{"timestamp":"2026-08-12T17:59:22.036883661+02:00","action":"edit","task_id":88,"detail":"Gateway gating for flexible sync: Paddle hidden from the DOM and blocked at submit, Stripe syncs to the midnight boundary"}
+{"timestamp":"2026-08-12T19:21:34.627783702+02:00","action":"edit","task_id":126,"detail":"Fix every critical plugin QA issue"}
+{"timestamp":"2026-08-12T19:45:57.842138215+02:00","action":"edit","task_id":126,"detail":"Fix every critical plugin QA issue"}
+{"timestamp":"2026-08-13T09:44:48.794487289+02:00","action":"edit","task_id":126,"detail":"Fix every critical plugin QA issue"}
+{"timestamp":"2026-08-13T10:09:59.487187279+02:00","action":"edit","task_id":126,"detail":"Fix every critical plugin QA issue"}
+{"timestamp":"2026-08-13T10:14:04.703783927+02:00","action":"edit","task_id":126,"detail":"Fix every critical plugin QA issue"}
+{"timestamp":"2026-08-14T04:19:48.829972546+02:00","action":"move","task_id":126,"detail":"in-progress -\u003e done"}
+{"timestamp":"2026-08-14T12:41:29.209908897+02:00","action":"create","task_id":127,"detail":"Fix D12-WATCH admin new-order mail row"}
+{"timestamp":"2026-08-14T12:41:34.034038064+02:00","action":"move","task_id":127,"detail":"backlog -\u003e in-progress"}
+{"timestamp":"2026-08-14T13:04:31.091932261+02:00","action":"edit","task_id":127,"detail":"Fix D12-WATCH admin new-order mail row"}
+{"timestamp":"2026-08-14T13:04:31.203239537+02:00","action":"edit","task_id":127,"detail":"Fix D12-WATCH admin new-order mail row"}
+{"timestamp":"2026-08-14T13:08:51.535495981+02:00","action":"move","task_id":127,"detail":"in-progress -\u003e review"}
+{"timestamp":"2026-08-14T13:14:29.066853767+02:00","action":"edit","task_id":127,"detail":"Fix D12-WATCH admin new-order mail row"}
+{"timestamp":"2026-08-14T13:14:29.145076755+02:00","action":"move","task_id":127,"detail":"review -\u003e done"}
+{"timestamp":"2026-08-14T13:14:29.227299272+02:00","action":"edit","task_id":127,"detail":"Fix D12-WATCH admin new-order mail row"}
+{"timestamp":"2026-08-14T13:14:29.228197802+02:00","action":"release","task_id":127,"detail":"dawn-spray"}

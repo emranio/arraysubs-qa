@@ -1,10 +1,12 @@
 ---
 id: 106
 title: 'Renewal execution after a synced first charge: second charge full on the boundary, third on the grid'
-status: in-progress
+status: done
 priority: critical
 created: 2026-08-02T03:43:11.848514479+02:00
-updated: 2026-08-11T20:09:58.113811579+02:00
+updated: 2026-08-12T02:35:08.899672414+02:00
+started: 2026-08-12T02:34:48.675124496+02:00
+completed: 2026-08-12T02:34:48.675124496+02:00
 tags:
     - renewal-sync
     - day-07
@@ -129,3 +131,6 @@ D08 night revalidation: keep SLT-SYN-09 in progress without mutation. SUB_2SEG=1
 
 [[2026-08-11]] Tue 20:09
 D09 night immutable handoff completed inside the authored window. SYN09_2SEG_D10_PRE=3y7ZwXRbvO1bMTiuPnorLN captured 2026-08-12 00:08:17-00:08:19 site while SUB_2SEG=12172 remained active at payments=3 / next=2026-08-11 18:00:00Z, relationship order 13788 remained wc-pending USD 9.00 cycle 4, and action 16167 remained pending/unattempted for 00:11:39 site. Browser-only append/readback on private registry page 11847 produced exact marker cardinality 1 and closed admin-SLT-SYN-09-D9. Separate pre-06:10 labels D10_NC_PRE, D10_CORE2_PRE, D10_W1_REM_PRE, and D10_WQ_REM_PRE own actions 16177, 16930, 15838, and 15849. Evidence: /home/server-manager/slt-evidence/SLT-SYN-09-D09-prebaseline.txt and task-prefixed registry screenshots. Nothing forced; D10 2026-08-12 06:10 site must verify persisted action/order/mail/grid evidence, recapture order 12714 and genuine Pending-filter views, preserve the documented source gaps, then self-review and move review -> done.
+
+[[2026-08-12]] Wed 02:35
+D10 early-morning follow-up complete. PASS for the live SLT-SYN-09 branches: SUB_2SEG=12172 cycle 4 settled naturally via WP-Cron action 16167, relationship-exact order 13788 for USD 9.00, bounded success mail 27f8WhwIZNAajlXibBSsoF after SYN09_2SEG_D10_PRE=3y7ZwXRbvO1bMTiuPnorLN, completed_payments=4, and next due 2026-08-14 18:00:00Z with actions 17288/17289 preserving k=699. Recaptured cycle-2 order 12714 and genuine Pending-filter views for 12172 and 12039. Preserve prior UNVERIFIED limits for absent SUB_W and missing SYN09_2SEG_D4_PRE; no substitute was used. No new defect; existing incidental low issue remains issues/light-plugin-SLT-SYN-09-order-editor-sample-permalink-403.md. Evidence: /home/server-manager/slt-evidence/SLT-SYN-09-D10-read.txt, /home/server-manager/slt-evidence/SLT-SYN-09-mail-delta-D10.txt, /home/server-manager/slt-evidence/SLT-SYN-09-after.csv, and task-keyed D10 screenshots. Exact session closed; nothing forced or mutated. Independent self-review matched action, order, meta, Mailpit, and UI evidence.

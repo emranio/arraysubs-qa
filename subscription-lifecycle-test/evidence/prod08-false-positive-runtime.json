@@ -1,0 +1,158 @@
+{
+  "issue": "SLT-PROD-08",
+  "resolution": "resolved_false_positive_save_attribution",
+  "verified_at_utc": "2026-08-13 02:45:00",
+  "environment": {
+    "site": "https://mirror-help.arrayhash.com",
+    "wordpress_user": {
+      "id": 1,
+      "login": "admin",
+      "role": "administrator"
+    },
+    "plugins": {
+      "arraysubs": {
+        "version": "1.8.11",
+        "status": "active"
+      },
+      "arraysubspro": {
+        "version": "1.1.2",
+        "status": "active"
+      },
+      "woocommerce": {
+        "version": "10.9.4",
+        "status": "active"
+      }
+    }
+  },
+  "historical_fixture": {
+    "parent": {
+      "id": 13012,
+      "title": "SLT Variable Daily",
+      "current_status": "trash",
+      "pre_trash_status": "draft",
+      "trash_time_unix": 1786040639,
+      "is_subscription": "yes",
+      "product_type": "variable"
+    },
+    "variations": [
+      {
+        "id": 13013,
+        "attribute": "Starter",
+        "current_status": "trash",
+        "pre_trash_status": "publish",
+        "trash_time_unix": 1786040638
+      },
+      {
+        "id": 13015,
+        "attribute": "Plus",
+        "current_status": "trash",
+        "pre_trash_status": "publish",
+        "trash_time_unix": 1786040637
+      },
+      {
+        "id": 13017,
+        "attribute": "Trialist",
+        "current_status": "trash",
+        "pre_trash_status": "publish",
+        "trash_time_unix": 1786040636
+      },
+      {
+        "id": 13019,
+        "attribute": "Zero Probe",
+        "current_status": "trash",
+        "pre_trash_status": "publish",
+        "trash_time_unix": 1786040633
+      }
+    ],
+    "successful_save_audit_utc": [
+      "2026-08-06 18:22:30 variation 13013 created",
+      "2026-08-06 18:22:36 variation 13015 created",
+      "2026-08-06 18:22:40 variation 13017 created",
+      "2026-08-06 18:22:45 variation 13019 created",
+      "2026-08-06 18:22:53 parent 13012 subscription settings saved",
+      "2026-08-06 18:23:03 parent 13012 stock status saved"
+    ],
+    "separate_trash_audit_utc": [
+      "2026-08-06 18:23:51 variation 13019 moved to trash",
+      "2026-08-06 18:23:55 variation 13017 moved to trash",
+      "2026-08-06 18:23:56 variation 13015 moved to trash",
+      "2026-08-06 18:23:57 variation 13013 moved to trash",
+      "2026-08-06 18:23:58 parent 13012 moved to trash"
+    ],
+    "binlog": {
+      "file": "/var/lib/mysql/binlog.000241",
+      "mysql_thread": 118459,
+      "sequence": [13019, 13017, 13015, 13013, 13012],
+      "finding": "One request wrote WordPress trash-ledger metadata and __trashed status for the WooCommerce child cascade, then the parent. This is distinct from the earlier successful save requests."
+    }
+  },
+  "code_trace": {
+    "wordpress_trash_ledger": "wp-includes/post.php:4006-4058",
+    "wordpress_classic_admin_authorization": "wp-admin/post.php:238-260",
+    "woocommerce_parent_trash_listener": "woocommerce/includes/class-wc-post-data.php:460-483",
+    "woocommerce_variation_cascade": "woocommerce/includes/data-stores/class-wc-product-variable-data-store-cpt.php:916-965",
+    "arraysubs_parent_and_variation_save": "arraysubs/src/Features/SubscriptionProducts/Services/Hooks.php:440-623",
+    "arraysubs_variable_status_bypass": "arraysubs/src/Features/SubscriptionProducts/Services/Hooks.php:1911-2001",
+    "arraysubs_trash_observer_only": "arraysubs/src/Features/ProductLifecycle/Services/Hooks.php:413-488",
+    "repository_result": "No ArraySubs or ArraySubsPro product save path calls wp_trash_post, deletes a product, or assigns trash status."
+  },
+  "live_control": {
+    "marker": "761db08d-a67a-42e6-89dd-3f3390677ff4",
+    "title": "SLT PROD-08 Save Control 761db08d",
+    "browser_session": "prod08-admin",
+    "parent_id": 18907,
+    "variation_ids": [18910, 18912, 18914, 18916],
+    "steps": [
+      "Created the product through the live classic WooCommerce editor.",
+      "Selected Variable product and enabled Subscription [ArraySubs].",
+      "Saved PROD08 Tier with Starter, Plus, Trialist, and Zero Probe as variation values.",
+      "Saved and reloaded the draft; parent remained draft with no trash ledger.",
+      "Generated all four variations through WooCommerce AJAX; all children were publish with no trash ledger.",
+      "Saved variation metadata through the real Save changes action; _is_subscription propagated to all four children.",
+      "Saved the draft again, followed the redirect, and directly reopened the edit URL; the normal editor loaded."
+    ],
+    "post_save_assertions": {
+      "parent_status": "draft",
+      "parent_trash_meta": "absent",
+      "parent_is_subscription": "yes",
+      "parent_product_type": "variable",
+      "variation_count": 4,
+      "variation_statuses": ["publish", "publish", "publish", "publish"],
+      "variation_trash_meta": ["absent", "absent", "absent", "absent"],
+      "variation_is_subscription": ["yes", "yes", "yes", "yes"],
+      "browser_errors": [],
+      "attributable_mail_count": 0
+    },
+    "screenshots": [
+      "/home/server-manager/slt-evidence/fixes/SLT-PROD-08/control-01-attributes-saved.png",
+      "/home/server-manager/slt-evidence/fixes/SLT-PROD-08/control-02-draft-reloaded.png",
+      "/home/server-manager/slt-evidence/fixes/SLT-PROD-08/control-03-four-variations-generated.png",
+      "/home/server-manager/slt-evidence/fixes/SLT-PROD-08/control-04-variation-save-complete.png",
+      "/home/server-manager/slt-evidence/fixes/SLT-PROD-08/control-05-second-draft-save-reloaded.png",
+      "/home/server-manager/slt-evidence/fixes/SLT-PROD-08/control-07-direct-edit-normal.png"
+    ]
+  },
+  "integrity": {
+    "arraysubs_settings_sha256_before": "7f1af9d9c8ee89b3f4dcba0d49eda75b59d8efe426f9fea0977add9f4aa8052a",
+    "arraysubs_settings_sha256_after": "7f1af9d9c8ee89b3f4dcba0d49eda75b59d8efe426f9fea0977add9f4aa8052a",
+    "mailpit_latest_id_before": "44hZiarfC4Fm7z8lyF4Wng",
+    "mailpit_latest_id_after": "44hZiarfC4Fm7z8lyF4Wng",
+    "historical_fixture_unchanged": true,
+    "production_source_changed_for_prod08": false
+  },
+  "cleanup": {
+    "deleted_parent_and_variations": [18907, 18910, 18912, 18914, 18916],
+    "deleted_fixture_audit_note_count": 16,
+    "deleted_exact_lookup_action_count": 21,
+    "remaining_marker_posts": 0,
+    "remaining_fixture_postmeta": 0,
+    "remaining_term_relationships": 0,
+    "remaining_product_lookup_rows": 0,
+    "remaining_order_item_references": 0,
+    "remaining_fixture_audit_notes": 0,
+    "remaining_fixture_actions": 0,
+    "remaining_fixture_action_logs": 0,
+    "browser_session_closed": true
+  },
+  "conclusion": "The historical objects were deliberately trashed by a separate authorized trash request after successful saves. The reported save-path plugin defect did not reproduce and is contradicted by the retained data, binlog, code path, existing controls, and fresh live control. No production code fix is appropriate."
+}

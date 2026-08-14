@@ -1,10 +1,12 @@
 ---
 id: 118
 title: SLT-SETUP-99A D10 settings restore and partial cancellation — no deletions
-status: todo
+status: done
 priority: critical
 created: 2026-08-02T03:43:12.749985862+02:00
-updated: 2026-08-02T03:43:24.490822262+02:00
+updated: 2026-08-12T15:17:50.419676679+02:00
+started: 2026-08-12T15:17:50.419675797+02:00
+completed: 2026-08-12T15:17:50.419675797+02:00
 tags:
     - setup
     - day-10
@@ -77,13 +79,13 @@ The original `SLT-SETUP-99` deleted every SLT artifact on D10 while the automate
 - `SLT-SETUP-99A-settings-before-restore.json`, `SLT-SETUP-99A-settings-after-restore.json`, the post-restore `jq` diff, both cohort lists, `RESTORE_PRE`/`CANCEL_PRE`, the complete cancellation delta and all Mailpit IDs, and `SLT-SETUP-99A-registry-D10.md`.
 
 ## Pass criteria
-- [ ] All baseline settings restored, diff empty
-- [ ] Exact pre-window Shop Access JSON restored; zero SLT exclusions remain
-- [ ] Cohorts published, disjoint, exhaustive
-- [ ] Only the cancel cohort cancelled; keep-alive cohort still scheduled
-- [ ] Zero deletions
-- [ ] Cancellation mail IDs recorded for the D11 watch
-- [ ] Exact admin session closed; standalone findings and independent review reach `done` with Review empty
+- [x] All baseline settings restored, diff empty
+- [x] Exact pre-window Shop Access JSON restored; zero SLT exclusions remain
+- [x] Cohorts published, disjoint, exhaustive
+- [x] Only the cancel cohort cancelled; keep-alive cohort still scheduled
+- [x] Zero deletions
+- [x] Cancellation mail IDs recorded for the D11 watch
+- [x] Exact admin session closed; standalone findings and independent review reach `done` with Review empty
 
 ## Isolation / teardown
 - Hands the D11/D12 watch a live keep-alive cohort and an explicit list of expected cancellation mail. `SLT-SETUP-99B` does the actual deletion, on 2026-08-15.
@@ -111,3 +113,36 @@ The original `SLT-SETUP-99` deleted every SLT artifact on D10 while the automate
 
 [[2026-08-06]] Thu 21:38
 Current evidence correction before D10 execution: do not inherit stale authored teardown rows for the missing ladder-switch chain. Task 72 / SLT-SW-00 closed `UNVERIFIED` without creating `SUB_BASIC` / `SUB_PRO`, so tasks 86, 95, and 111 are source-blocked and cards 107 / SLT-EML-08 plus 108 / SLT-EML-10 do not currently hand any real switch/downgrade subscriptions to this D10 cancel cohort. Also treat the authored `SLT-SYN-13` variation fixtures and the authored `SUB_FAIL_RECOVERY` dunning branch as registry-conditional only unless the live August 12, 2026 registry disproves task 46's and task 102's appended closeout notes.
+
+---
+
+## Execution note — 2026-08-12 D10 early-morning
+
+Verdict: **PASS**. No product defect was found in this task. The separate `SLT-SYN-09` plan-timing issue is recorded at `issues/SLT-SYN-09-d12-watch-expects-sub-w1-one-day-early.md`.
+
+- D0 values were read from live registry page `11847`; no value was restored from memory. `RESTORE_PRE=4VXDh3BJYclCTFGeFcz34U`.
+- Settings bracket opened on the first non-default save at `2026-08-12T00:42:18.907Z` and closed after final baseline readback at `2026-08-12T00:46:35.696Z`. Final values are `sync_to_billing_cycle=true`, `sync_first_charge_mode=full` untouched, `allow_early_renew=false`, `allow_reactivation=false`, `pause.enabled=false`, and `customer_can_pause=false`. The complete `RESTORE_PRE` delta contains no attributable mail.
+- The exact pre-window Shop Access subset was restored through the admin UI. Its normalized `jq -S` diff is empty and rule `rule_1784662676378_maa3te08s` has zero SLT exclusions.
+- A concurrent `SLT-ADM-06` verifier was allowed to finish before cohort publication. Stable inventory: 48 SLT subscriptions. `CANCEL_CLICK` has 22 IDs; `KEEP_PRESERVE` has 26; they are disjoint and jointly exhaustive.
+- `CANCEL_PRE=2TbHs8ZKYJGgYA3brQJPaI`. All 22 cancel rows were cancelled one-by-one through the admin UI. Each is now `arraysubs-cancelled`, has blank next payment and `_cancelled_by=admin:1`; the 26 preserve rows match their pre-click status and next-payment values. Cancel-cohort pending/in-progress actions are zero; surviving scheduled action IDs remain unchanged.
+- The complete newer Mailpit delta is exactly 44 messages through `3hCqKqp4TiXHRuNVXtIkv1`: one exact customer and one exact admin cancellation body per cancelled subscription; zero unrelated messages and zero preserve IDs.
+- Counts match preflight exactly: products `92/28 SLT`, coupons `14/6`, users `366/22`, HPOS rows `710/134 SLT-user`, subscriptions `402/48`. Nothing was deleted.
+- Registry safety review caught a malformed first append and editor truncation before any cancellation. Revision `13866` restored the exact 100256-byte pre-task prefix (MD5 `c518fa3605d09c91e551b452430e5708`), after which the cohort and final result were cleanly appended once each. The live export matches the final registry content plus one terminating newline.
+- Exact task-owned browser sessions were closed; `agent-browser session list` returned no active sessions before review.
+
+Evidence:
+
+- `/home/server-manager/slt-evidence/SLT-SETUP-99A-settings-before-restore.json`
+- `/home/server-manager/slt-evidence/SLT-SETUP-99A-settings-after-restore.json`
+- `/home/server-manager/slt-evidence/SLT-SETUP-99A-settings-restore-proof.txt`
+- `/home/server-manager/slt-evidence/SLT-SETUP-99A-preflight.txt`
+- `/home/server-manager/slt-evidence/SLT-SETUP-99A-cancellation-timings.tsv`
+- `/home/server-manager/slt-evidence/SLT-SETUP-99A-cancellation-mail-delta.tsv`
+- `/home/server-manager/slt-evidence/SLT-SETUP-99A-final-reconciliation.txt`
+- `/home/server-manager/slt-evidence/SLT-SETUP-99A-registry-D10.md`
+- Screenshots `SLT-SETUP-99A-00` through `-16` plus one screenshot per cancelled numeric subscription under `/home/server-manager/slt-evidence/`.
+
+Review: complete — no finding.
+
+[[2026-08-12]] Wed 15:17
+Independent evening review complete: verified the final safe settings object, empty normalized Shop Access diff, disjoint/exhaustive 22 CANCEL_CLICK + 26 KEEP_PRESERVE partition, 22 unique cancellation timing rows, 44 unique cancellation messages (two per cancelled ID), unchanged artifact counts, preserved tail actions, and zero active task browser sessions. No standalone SETUP-99A finding required.

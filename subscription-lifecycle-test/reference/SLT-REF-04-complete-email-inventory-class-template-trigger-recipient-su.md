@@ -44,6 +44,10 @@ Recipient = `get_admin_email_recipient()` (per-email "Recipient(s)" WC field, de
 | `admin_subscription_cancelled` — `AdminSubscriptionCancelledEmail` (`:28-43`) | `admin-subscription-cancelled.php` | status → cancelled (`EmailManager.php:380`) | `[{site_title}] Subscription #{subscription_id} cancelled by {customer_name}` | `emails.admin_cancelled` |
 | `admin_subscription_pending_cancellation` — `AdminSubscriptionPendingCancellationEmail` (`:29-46`) | `admin-subscription-pending-cancellation.php` | `arraysubs_data_waiting_cancellation` (`EmailManager.php:433`) | `[{site_title}] Subscription #{subscription_id} scheduled to cancel on {scheduled_cancel_date}` | `emails.admin_pending_cancellation` |
 
+## WooCommerce companion mail for renewal orders
+
+WooCommerce's admin `New order` message is an intentional companion to a successfully settled automatic renewal; it is not an ArraySubs lifecycle-email class. The automatic invoice leg emits zero mail. At the paid transition, the bounded expected set is exactly one admin `New order #<renewal-order-id>` plus one customer ArraySubs `payment_successful`. `EmailManager::suppress_woocommerce_renewal_order_emails()` blanks the customer WooCommerce processing, completed, on-hold, invoice, and failed-order recipients for `_is_renewal_order=yes`, while leaving the admin recipient intact. Authenticated credit-only plan-switch settlements use a separate suppression callback and do not change this renewal contract. Task `57` is the relationship-exact reconciliation procedure and live counterexample for duplicate or missing mail.
+
 ## Pro store-credit emails
 
 Registered separately through `woocommerce_email_classes` in `arraysubspro/src/Features/StoreCredit/Services/EmailManager.php:48-56`; each class self-registers its trigger action in its constructor. Template base is the pro plugin's own path; all four are customer emails with **no ArraySubs settings key** — the only gate is the WooCommerce per-email checkbox (`is_enabled()` checked at each class's trigger).
@@ -80,4 +84,3 @@ PREV=$(/usr/local/bin/mailpit-agent latest-id)
 /usr/local/bin/mailpit-agent wait-new "$PREV" 60 "renews soon"   # exit 124 = timeout
 /usr/local/bin/mailpit-agent text latest
 ```
-

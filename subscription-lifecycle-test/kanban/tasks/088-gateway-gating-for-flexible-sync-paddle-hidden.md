@@ -4,7 +4,7 @@ title: 'Gateway gating for flexible sync: Paddle hidden from the DOM and blocked
 status: done
 priority: critical
 created: 2026-08-02T03:43:10.547468659+02:00
-updated: 2026-08-07T19:06:51.204448946+02:00
+updated: 2026-08-12T17:59:22.036127075+02:00
 started: 2026-08-07T19:06:51.204447884+02:00
 completed: 2026-08-07T19:06:51.204447884+02:00
 tags:
@@ -120,3 +120,6 @@ Additional preflight on Thursday, August 6, 2026. This card remains future-dated
 
 [[2026-08-07]] Fri 23:05
 Final D05 window closed UNVERIFIED. At 23:04:51 site only 55 minutes remained for an authored two-hour sequence whose date-sensitive checkout, product/Shop Access mutations, and teardown cannot safely spill past midnight. The probe slug remains absent; users 352/354 and subscriptions 12639/12172 remain intact; no product, rule, flex meta, cart, checkout, order, subscription, action, user, or mail mutation was started. This is a scheduling limitation, not a product defect. Evidence: `/home/server-manager/slt-evidence/D05-night-source-block-and-window-close.txt`.
+
+[[2026-08-12]] Wed 17:59
+D10 watch verdict: UNVERIFIED — no source fixture. Issue: issues/SLT-SYN-12-d10-watch-expects-missing-source.md

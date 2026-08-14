@@ -1,0 +1,1362 @@
+# SLT watch facts — D11 (2026-08-13)
+Generated: 2026-08-13T12:10:02+02:00  |  UTC: 2026-08-13 10:10:02  |  site TZ is UTC+6
+
+## Subscriptions by status
+post_status	n
+arraysubs-active	19
+arraysubs-cancelled	354
+arraysubs-expired	15
+arraysubs-pending	14
+
+
+## SLT subscriptions (SLT-titled product, created on/after 2026-08-02) with schedule meta
+ID	post_status	post_date	customer	product	gateway	next_payment	trial_end	end_date	cycles	recurring	sync_mode	sync_first_renewal
+11959	arraysubs-cancelled	2026-08-02 18:39:05	347	11927	stripe		NULL	2026-08-12 01:34:19	10	10	NULL	NULL
+11991	arraysubs-cancelled	2026-08-02 19:23:13	357	11927	stripe		NULL	2026-08-12 01:35:44	10	10	NULL	NULL
+12003	arraysubs-active	2026-08-02 19:31:32	347	11938	stripe		NULL	NULL	1	49	NULL	NULL
+12017	arraysubs-expired	2026-08-02 19:45:58	347	11933	stripe		NULL	2026-08-06 17:01:16	3	7	NULL	NULL
+12039	arraysubs-active	2026-08-02 19:56:32	350	11943	stripe	2026-08-14 18:00:00	NULL	NULL	2	14	full	2026-08-07 18:00:00
+12147	arraysubs-cancelled	2026-08-03 12:46:30	358	11927	stripe		NULL	2026-08-08 08:09:06	1	10	NULL	NULL
+12172	arraysubs-active	2026-08-03 13:16:13	354	12099	stripe	2026-08-14 18:00:00	NULL	NULL	4	9	prorate	2026-08-05 18:00:00
+12193	arraysubs-cancelled	2026-08-03 13:20:42	355	12102	stripe		NULL	2026-08-12 01:37:47	3	9	next_cycle	2026-08-08 18:00:00
+12221	arraysubs-cancelled	2026-08-03 13:36:51	359	11927	stripe		NULL	2026-08-12 01:38:34	9	10	NULL	NULL
+12234	arraysubs-cancelled	2026-08-03 13:50:13	347	12087	stripe		NULL	2026-08-12 01:38:54	8	20	NULL	NULL
+12263	arraysubs-cancelled	2026-08-03 14:10:09	360	11927	stripe		NULL	NULL	3	10	NULL	NULL
+12318	arraysubs-cancelled	2026-08-03 18:07:30	361	11927	stripe		NULL	2026-08-12 01:39:18	9	10	NULL	NULL
+12332	arraysubs-cancelled	2026-08-03 18:21:12	362	11927	stripe		NULL	2026-08-12 01:39:40	9	10	NULL	NULL
+12564	arraysubs-active	2026-08-05 14:14:21	350	12125	stripe	2026-08-13 18:00:00	NULL	NULL	3	18	full	2026-08-07 18:00:00
+12639	arraysubs-cancelled	2026-08-05 16:19:31	352	12112	arraysubs_paddle		NULL	2026-08-12 01:40:04	7	11	NULL	NULL
+12655	arraysubs-cancelled	2026-08-05 16:44:10	347	12577	stripe		NULL	2026-08-11 00:48:42	6	9	NULL	NULL
+12684	arraysubs-cancelled	2026-08-05 16:58:59	363	11927	stripe		NULL	2026-08-12 01:40:39	7	10	NULL	NULL
+12719	arraysubs-cancelled	2026-08-05 18:21:53	364	11927	stripe		NULL	2026-08-12 01:41:10	7	10	NULL	NULL
+12749	arraysubs-active	2026-08-05 18:53:49	365	12737	stripe	2026-08-14 18:00:00	NULL	NULL	2	9.99	prorate	2026-08-07 18:00:00
+12760	arraysubs-cancelled	2026-08-05 19:03:40	353	11927	NULL		NULL	2026-08-12 01:41:37	NULL	10	NULL	NULL
+12786	arraysubs-active	2026-08-05 19:26:24	366	11938	stripe		NULL	NULL	1	49	NULL	NULL
+13277	arraysubs-active	2026-08-08 18:14:54	355	12093	stripe	2026-10-31 18:00:00	NULL	NULL	2	30	next_cycle	2026-09-30 18:00:00
+13331	arraysubs-cancelled	2026-08-08 19:45:56	368	11927	stripe		NULL	2026-08-12 01:42:02	4	10	NULL	NULL
+13344	arraysubs-cancelled	2026-08-08 20:08:30	352	12608	arraysubs_paddle		NULL	2026-08-12 01:42:31	4	5	NULL	NULL
+13402	arraysubs-cancelled	2026-08-08 22:46:26	369	12608	stripe		NULL	NULL	1	5	NULL	NULL
+13889	arraysubs-cancelled	2026-08-12 03:10:36	353	11927	NULL		NULL	2026-08-12 01:42:51	NULL	10	NULL	NULL
+13892	arraysubs-cancelled	2026-08-12 03:16:43	353	11927	NULL		NULL	2026-08-12 01:43:13	NULL	10	NULL	NULL
+13897	arraysubs-cancelled	2026-08-12 03:22:34	353	11927			NULL	2026-08-12 01:43:35	0	10	NULL	NULL
+13900	arraysubs-cancelled	2026-08-12 03:22:36	353	11938			NULL	2026-08-12 01:43:57	0	0	NULL	NULL
+13903	arraysubs-cancelled	2026-08-12 03:22:38	353	11927			2026-08-13 22:00:00	2026-08-12 01:44:41	0	10	NULL	NULL
+13906	arraysubs-cancelled	2026-08-12 03:22:59	353	11927			NULL	2026-08-12 01:45:02	0	10	NULL	NULL
+13910	arraysubs-cancelled	2026-08-12 03:31:17	353	11927	bacs		NULL	2026-08-12 01:45:28	0	10	NULL	NULL
+13913	arraysubs-cancelled	2026-08-12 03:31:53	353	11927			NULL	2026-08-12 01:45:54	0	0	NULL	NULL
+13917	arraysubs-cancelled	2026-08-12 03:31:57	353	11927			NULL	2026-08-12 01:46:21	0	0	NULL	NULL
+13921	arraysubs-cancelled	2026-08-12 03:40:17	353	11927	bacs		NULL	2026-08-11 22:09:16	1	10	NULL	NULL
+13930	arraysubs-cancelled	2026-08-12 03:42:57	353	11927	bacs		NULL	2026-08-11 21:43:09	2	10	NULL	NULL
+13947	arraysubs-cancelled	2026-08-12 03:43:57	353	11927	bacs		NULL	2026-08-11 22:12:06	1	10	NULL	NULL
+13950	arraysubs-cancelled	2026-08-12 03:44:03	353	11927	bacs		NULL	2026-08-11 22:13:39	1	10	NULL	NULL
+13964	arraysubs-cancelled	2026-08-12 03:49:36	353	11927	bacs		NULL	2026-08-11 22:10:10	1	10	NULL	NULL
+13967	arraysubs-cancelled	2026-08-12 03:49:40	353	11927	bacs		NULL	2026-08-11 22:10:15	1	10	NULL	NULL
+13980	arraysubs-cancelled	2026-08-12 03:50:21	353	11927	bacs		NULL	2026-08-11 21:50:39	1	10	NULL	NULL
+13983	arraysubs-cancelled	2026-08-12 03:50:23	353	11927	bacs		NULL	2026-08-11 21:50:44	1	10	NULL	NULL
+14045	arraysubs-cancelled	2026-08-12 04:14:37	353	11927	cheque		NULL	2026-08-11 22:14:39	0	5	NULL	NULL
+14055	arraysubs-cancelled	2026-08-12 04:15:12	353	11927	cheque		NULL	2026-08-11 22:15:20	0	5	NULL	NULL
+14070	arraysubs-cancelled	2026-08-12 04:26:54	353	11927	cheque		NULL	2026-08-11 22:34:12	0	10	NULL	NULL
+14073	arraysubs-cancelled	2026-08-12 04:26:57	353	11927	cheque		NULL	2026-08-11 22:34:17	0	10	NULL	NULL
+14089	arraysubs-pending	2026-08-12 04:35:00	353	11927	cheque	2026-08-12 22:35:08	NULL	NULL	0	5	NULL	NULL
+14092	arraysubs-pending	2026-08-12 04:35:10	353	11927	cheque	2026-08-12 22:35:12	NULL	NULL	0	0	NULL	NULL
+
+
+## Action Scheduler — arraysubs actions attempted in the last 36h
+action_id	hook	status	scheduled_date_gmt	last_attempt_gmt	grp	args
+18912	arraysubs_generate_upcoming_renewals	complete	2026-08-13 10:03:04	2026-08-13 10:03:05	arraysubs-billing	[]
+18955	arraysubs_check_overdue_renewals	complete	2026-08-13 09:14:14	2026-08-13 09:15:05	arraysubs-billing	[3,0]
+18954	arraysubs_check_overdue_renewals	complete	2026-08-13 09:14:09	2026-08-13 09:15:05	arraysubs-billing	[2,0]
+18905	arraysubs_check_overdue_renewals	complete	2026-08-13 09:13:05	2026-08-13 09:14:04	arraysubs-billing	[]
+18902	arraysubs_check_overdue_renewals	complete	2026-08-13 09:13:04	2026-08-13 09:14:04	arraysubs-billing	[]
+18898	arraysubs_generate_upcoming_renewals	complete	2026-08-13 09:11:04	2026-08-13 09:11:04	arraysubs-billing	[]
+18896	arraysubs_generate_upcoming_renewals	complete	2026-08-13 09:03:04	2026-08-13 09:03:04	arraysubs-billing	[]
+18904	arraysubs_check_overdue_renewals	complete	2026-08-13 08:13:14	2026-08-13 08:14:05	arraysubs-billing	[3,0]
+18903	arraysubs_check_overdue_renewals	complete	2026-08-13 08:13:09	2026-08-13 08:14:04	arraysubs-billing	[2,0]
+18867	arraysubs_check_overdue_renewals	complete	2026-08-13 08:12:06	2026-08-13 08:13:05	arraysubs-billing	[]
+18864	arraysubs_check_overdue_renewals	complete	2026-08-13 08:12:05	2026-08-13 08:13:04	arraysubs-billing	[]
+18861	arraysubs_generate_upcoming_renewals	complete	2026-08-13 08:10:07	2026-08-13 08:11:04	arraysubs-billing	[]
+18859	arraysubs_generate_upcoming_renewals	complete	2026-08-13 08:02:09	2026-08-13 08:03:04	arraysubs-billing	[]
+18866	arraysubs_check_overdue_renewals	complete	2026-08-13 07:12:16	2026-08-13 07:13:04	arraysubs-billing	[3,0]
+18865	arraysubs_check_overdue_renewals	complete	2026-08-13 07:12:11	2026-08-13 07:13:04	arraysubs-billing	[2,0]
+18854	arraysubs_check_overdue_renewals	complete	2026-08-13 07:12:05	2026-08-13 07:12:06	arraysubs-billing	[]
+18851	arraysubs_check_overdue_renewals	complete	2026-08-13 07:12:04	2026-08-13 07:12:05	arraysubs-billing	[]
+18848	arraysubs_generate_upcoming_renewals	complete	2026-08-13 07:09:05	2026-08-13 07:10:07	arraysubs-billing	[]
+18846	arraysubs_generate_upcoming_renewals	complete	2026-08-13 07:02:07	2026-08-13 07:02:09	arraysubs-billing	[]
+18529	arraysubs_gateway_reconcile	complete	2026-08-13 06:13:06	2026-08-13 06:14:04	arraysubs-gateway	[]
+18853	arraysubs_check_overdue_renewals	complete	2026-08-13 06:12:14	2026-08-13 06:13:04	arraysubs-billing	[3,0]
+18852	arraysubs_check_overdue_renewals	complete	2026-08-13 06:12:09	2026-08-13 06:13:03	arraysubs-billing	[2,0]
+18842	arraysubs_check_overdue_renewals	complete	2026-08-13 06:11:05	2026-08-13 06:12:05	arraysubs-billing	[]
+18839	arraysubs_check_overdue_renewals	complete	2026-08-13 06:11:05	2026-08-13 06:12:04	arraysubs-billing	[]
+18836	arraysubs_generate_upcoming_renewals	complete	2026-08-13 06:08:05	2026-08-13 06:09:05	arraysubs-billing	[]
+18834	arraysubs_generate_upcoming_renewals	complete	2026-08-13 06:02:04	2026-08-13 06:02:07	arraysubs-billing	[]
+18841	arraysubs_check_overdue_renewals	complete	2026-08-13 05:11:15	2026-08-13 05:12:05	arraysubs-billing	[3,0]
+18840	arraysubs_check_overdue_renewals	complete	2026-08-13 05:11:10	2026-08-13 05:12:05	arraysubs-billing	[2,0]
+18832	arraysubs_check_overdue_renewals	complete	2026-08-13 05:10:10	2026-08-13 05:11:05	arraysubs-billing	[]
+18829	arraysubs_check_overdue_renewals	complete	2026-08-13 05:10:08	2026-08-13 05:11:05	arraysubs-billing	[]
+18826	arraysubs_generate_upcoming_renewals	complete	2026-08-13 05:07:06	2026-08-13 05:08:05	arraysubs-billing	[]
+18824	arraysubs_generate_upcoming_renewals	complete	2026-08-13 05:01:08	2026-08-13 05:02:04	arraysubs-billing	[]
+18831	arraysubs_check_overdue_renewals	complete	2026-08-13 04:10:19	2026-08-13 04:11:05	arraysubs-billing	[3,0]
+18830	arraysubs_check_overdue_renewals	complete	2026-08-13 04:10:14	2026-08-13 04:11:05	arraysubs-billing	[2,0]
+18820	arraysubs_check_overdue_renewals	complete	2026-08-13 04:09:06	2026-08-13 04:10:10	arraysubs-billing	[]
+18817	arraysubs_check_overdue_renewals	complete	2026-08-13 04:09:06	2026-08-13 04:10:08	arraysubs-billing	[]
+18814	arraysubs_generate_upcoming_renewals	complete	2026-08-13 04:07:03	2026-08-13 04:07:06	arraysubs-billing	[]
+18810	arraysubs_generate_upcoming_renewals	complete	2026-08-13 04:01:04	2026-08-13 04:01:08	arraysubs-billing	[]
+17686	arraysubs_expire_store_credits	complete	2026-08-13 03:50:10	2026-08-13 03:51:04	arraysubs-maintenance	[]
+18819	arraysubs_check_overdue_renewals	complete	2026-08-13 03:09:16	2026-08-13 03:10:09	arraysubs-billing	[3,0]
+18818	arraysubs_check_overdue_renewals	complete	2026-08-13 03:09:11	2026-08-13 03:10:08	arraysubs-billing	[2,0]
+18785	arraysubs_check_overdue_renewals	complete	2026-08-13 03:09:06	2026-08-13 03:09:06	arraysubs-billing	[]
+18782	arraysubs_check_overdue_renewals	complete	2026-08-13 03:08:05	2026-08-13 03:09:05	arraysubs-billing	[]
+18779	arraysubs_generate_upcoming_renewals	complete	2026-08-13 03:06:04	2026-08-13 03:07:03	arraysubs-billing	[]
+18812	arraysubs_prune_job_logs	complete	2026-08-13 03:05:35	2026-08-13 03:06:34	arraysubs-maintenance	[]
+17679	arraysubs_daily_maintenance_run	complete	2026-08-13 03:05:04	2026-08-13 03:05:05	arraysubs-maintenance	[]
+18777	arraysubs_generate_upcoming_renewals	complete	2026-08-13 03:00:13	2026-08-13 03:01:04	arraysubs-billing	[]
+17676	arraysubs_process_trial_conversions	complete	2026-08-13 02:58:04	2026-08-13 02:59:03	arraysubs-billing	[]
+18784	arraysubs_check_overdue_renewals	complete	2026-08-13 02:09:16	2026-08-13 02:10:07	arraysubs-billing	[3,0]
+18783	arraysubs_check_overdue_renewals	complete	2026-08-13 02:09:10	2026-08-13 02:10:05	arraysubs-billing	[2,0]
+18698	arraysubs_check_overdue_renewals	complete	2026-08-13 02:08:06	2026-08-13 02:09:06	arraysubs-billing	[]
+18781	arraysubs_check_overdue_renewals	canceled	2026-08-13 02:08:15	2026-08-13 02:09:05	arraysubs-billing	[3,0]
+18780	arraysubs_check_overdue_renewals	canceled	2026-08-13 02:08:09	2026-08-13 02:09:05	arraysubs-billing	[2,0]
+18682	arraysubs_check_overdue_renewals	complete	2026-08-13 02:07:07	2026-08-13 02:08:05	arraysubs-billing	[]
+18652	arraysubs_generate_upcoming_renewals	complete	2026-08-13 02:05:06	2026-08-13 02:06:04	arraysubs-billing	[]
+18638	arraysubs_generate_upcoming_renewals	complete	2026-08-13 02:00:06	2026-08-13 02:00:12	arraysubs-billing	[]
+17871	arraysubs_cleanup_webhook_events	complete	2026-08-13 02:00:00	2026-08-13 02:00:10	arraysubs-gateway	[]
+18697	arraysubs_check_overdue_renewals	complete	2026-08-13 01:08:16	2026-08-13 01:09:05	arraysubs-billing	[3,0]
+18696	arraysubs_check_overdue_renewals	complete	2026-08-13 01:08:11	2026-08-13 01:09:04	arraysubs-billing	[2,0]
+18681	arraysubs_check_overdue_renewals	complete	2026-08-13 01:07:17	2026-08-13 01:08:06	arraysubs-billing	[3,0]
+18487	arraysubs_check_overdue_renewals	complete	2026-08-13 01:08:03	2026-08-13 01:08:06	arraysubs-billing	[]
+18680	arraysubs_check_overdue_renewals	complete	2026-08-13 01:07:12	2026-08-13 01:08:05	arraysubs-billing	[2,0]
+18470	arraysubs_check_overdue_renewals	complete	2026-08-13 01:07:04	2026-08-13 01:07:07	arraysubs-billing	[]
+18452	arraysubs_generate_upcoming_renewals	complete	2026-08-13 01:05:05	2026-08-13 01:05:06	arraysubs-billing	[]
+18410	arraysubs_generate_upcoming_renewals	complete	2026-08-13 00:59:04	2026-08-13 01:00:06	arraysubs-billing	[]
+18156	arraysubs_gateway_reconcile	complete	2026-08-13 00:13:04	2026-08-13 00:13:06	arraysubs-gateway	[]
+18486	arraysubs_check_overdue_renewals	complete	2026-08-13 00:08:13	2026-08-13 00:09:06	arraysubs-billing	[3,0]
+18485	arraysubs_check_overdue_renewals	complete	2026-08-13 00:08:08	2026-08-13 00:09:05	arraysubs-billing	[2,0]
+18469	arraysubs_check_overdue_renewals	canceled	2026-08-13 00:07:14	2026-08-13 00:08:03	arraysubs-billing	[3,0]
+18468	arraysubs_check_overdue_renewals	canceled	2026-08-13 00:07:09	2026-08-13 00:08:03	arraysubs-billing	[2,0]
+18409	arraysubs_check_overdue_renewals	complete	2026-08-13 00:07:05	2026-08-13 00:08:03	arraysubs-billing	[]
+18406	arraysubs_check_overdue_renewals	complete	2026-08-13 00:07:04	2026-08-13 00:07:04	arraysubs-billing	[]
+18391	arraysubs_generate_upcoming_renewals	complete	2026-08-13 00:04:05	2026-08-13 00:05:04	arraysubs-billing	[]
+18351	arraysubs_generate_upcoming_renewals	complete	2026-08-12 23:58:05	2026-08-12 23:59:04	arraysubs-billing	[]
+18408	arraysubs_check_overdue_renewals	complete	2026-08-12 23:07:14	2026-08-12 23:08:05	arraysubs-billing	[3,0]
+18407	arraysubs_check_overdue_renewals	complete	2026-08-12 23:07:09	2026-08-12 23:08:04	arraysubs-billing	[2,0]
+18259	arraysubs_check_overdue_renewals	complete	2026-08-12 23:06:06	2026-08-12 23:07:05	arraysubs-billing	[]
+18256	arraysubs_check_overdue_renewals	complete	2026-08-12 23:06:05	2026-08-12 23:07:04	arraysubs-billing	[]
+18253	arraysubs_generate_upcoming_renewals	complete	2026-08-12 23:03:06	2026-08-12 23:04:05	arraysubs-billing	[]
+18251	arraysubs_generate_upcoming_renewals	complete	2026-08-12 22:58:03	2026-08-12 22:58:05	arraysubs-billing	[]
+
+
+## Action Scheduler — pending arraysubs actions in the next 48h
+action_id	hook	status	scheduled_date_gmt	grp	args
+18950	arraysubs_generate_upcoming_renewals	pending	2026-08-13 10:11:04	arraysubs-billing	[]
+18953	arraysubs_check_overdue_renewals	pending	2026-08-13 10:14:04	arraysubs-billing	[]
+18956	arraysubs_check_overdue_renewals	pending	2026-08-13 10:14:04	arraysubs-billing	[]
+19049	arraysubs_generate_upcoming_renewals	pending	2026-08-13 11:03:05	arraysubs-billing	[]
+18855	arraysubs_gateway_reconcile	pending	2026-08-13 12:14:04	arraysubs-gateway	[]
+16968	arraysubs_generate_renewal_invoice	pending	2026-08-13 14:49:23	arraysubs-billing	[12564]
+18008	arraysubs_generate_renewal_invoice	pending	2026-08-13 15:06:40	arraysubs-billing	[7809]
+16969	arraysubs_process_renewal	pending	2026-08-13 20:49:23	arraysubs-renewals	[12564]
+18009	arraysubs_process_renewal	pending	2026-08-13 21:06:40	arraysubs-renewals	[7809]
+18776	arraysubs_cleanup_webhook_events	pending	2026-08-14 02:00:11	arraysubs-gateway	[]
+18809	arraysubs_process_trial_conversions	pending	2026-08-14 02:59:03	arraysubs-billing	[]
+18813	arraysubs_daily_maintenance_run	pending	2026-08-14 03:05:05	arraysubs-maintenance	[]
+18823	arraysubs_expire_store_credits	pending	2026-08-14 03:51:04	arraysubs-maintenance	[]
+17288	arraysubs_generate_renewal_invoice	pending	2026-08-14 12:11:39	arraysubs-billing	[12172]
+15836	arraysubs_generate_renewal_invoice	pending	2026-08-14 17:01:52	arraysubs-billing	[12039]
+15847	arraysubs_generate_renewal_invoice	pending	2026-08-14 17:19:30	arraysubs-billing	[12749]
+17289	arraysubs_process_renewal	pending	2026-08-14 18:11:39	arraysubs-renewals	[12172]
+15837	arraysubs_process_renewal	pending	2026-08-14 23:01:52	arraysubs-renewals	[12039]
+15848	arraysubs_process_renewal	pending	2026-08-14 23:19:30	arraysubs-renewals	[12749]
+
+
+## Action Scheduler — FAILED arraysubs actions in the last 36h (always investigate)
+
+## Orders created in the last 36h
+id	status	type	customer_id	total_amount	payment_method	date_created_gmt	parent_order_id	subscription_refs
+15775	wc-completed	shop_order	1	60.00000000	arraysubs_paddle	2026-08-12 15:07:05	0	_subscription_id=7809 | _subscription_renewal=7809
+14096	wc-completed	shop_order_refund	NULL	-5.00000000	NULL	2026-08-11 22:35:20	14095	_subscription_ids=a:2:{i:0;i:14089;i:1;i:14092;}
+14095	wc-pending	shop_order	353	5.00000000		2026-08-11 22:35:13	0	_subscription_ids=a:2:{i:0;i:14089;i:1;i:14092;}
+14079	wc-completed	shop_order_refund	NULL	-17.00000000	NULL	2026-08-11 22:34:11	14076	_subscription_ids=a:2:{i:0;i:14070;i:1;i:14073;}
+14077	wc-completed	shop_order_refund	NULL	-3.00000000	NULL	2026-08-11 22:27:04	14076	_subscription_id=14070
+14076	wc-refunded	shop_order	353	20.00000000		2026-08-11 22:26:59	0	_subscription_ids=a:2:{i:0;i:14070;i:1;i:14073;}
+14068	wc-completed	shop_order_refund	NULL	-12.99000000	NULL	2026-08-11 22:18:59	13953	NULL
+14061	wc-completed	shop_order_refund	NULL	-4.00000000	NULL	2026-08-11 22:15:20	14058	_subscription_id=14055
+14059	wc-completed	shop_order_refund	NULL	-1.00000000	NULL	2026-08-11 22:15:17	14058	_subscription_id=14055
+14058	wc-refunded	shop_order	353	5.00000000		2026-08-11 22:15:16	0	_subscription_id=14055
+14049	wc-completed	shop_order_refund	NULL	-5.00000000	NULL	2026-08-11 22:14:39	14048	_subscription_id=14045
+14048	wc-refunded	shop_order	353	5.00000000		2026-08-11 22:14:39	0	_subscription_id=14045 | _subscription_renewal=14045
+14039	wc-completed	shop_order_refund	NULL	-5.00000000	NULL	2026-08-11 22:13:39	14038	_subscription_id=13950
+14038	wc-refunded	shop_order	353	5.00000000		2026-08-11 22:13:38	0	_subscription_id=13950 | _subscription_renewal=13950
+14032	wc-completed	shop_order_refund	NULL	-5.00000000	NULL	2026-08-11 22:12:05	14031	_subscription_id=13947
+14031	wc-refunded	shop_order	353	5.00000000		2026-08-11 22:12:01	0	_subscription_id=13947 | _subscription_renewal=13947
+14030	wc-completed	shop_order_refund	NULL	-0.50000000	NULL	2026-08-11 22:11:26	13953	NULL
+14029	wc-completed	shop_order_refund	NULL	-0.50000000	NULL	2026-08-11 22:11:25	13953	NULL
+
+
+## Mailpit
+latest-id: 0zV31BSjw7TIX8J6kILAkE
+[
+  {
+    "ID": "0zV31BSjw7TIX8J6kILAkE",
+    "Created": "2026-08-13T11:48:14.52+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "admin@mirror-help.arrayhash.com"
+      }
+    ],
+    "Subject": "[mirror-help.arrayhash.com] New subscription #19174 from Emran Emran",
+    "Read": false,
+    "Size": 9382,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com New subscription received You have received a new subscription from Emran Emran. Subscription #19174 details are shown below. Subscription #19174 Customer Emran Emran (admin@..."
+  },
+  {
+    "ID": "5Rq5u8O70s1G0GjIcGnJRo",
+    "Created": "2026-08-13T11:48:14.278+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "admin@mirror-help.arrayhash.com"
+      }
+    ],
+    "Subject": "[mirror-help.arrayhash.com] Your subscription #19174 is active",
+    "Read": false,
+    "Size": 8674,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com Your subscription is now active! Hi Emran, Great news! Your subscription is now active. Here are the details: Subscription #19174 Product Paddle subscription child Price $0.0..."
+  },
+  {
+    "ID": "7BglENVUh89HUtBGBO4Zdw",
+    "Created": "2026-08-13T11:48:13.866+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "admin@mirror-help.arrayhash.com"
+      }
+    ],
+    "Subject": "[mirror-help.arrayhash.com] New subscription #19171 from Emran Emran",
+    "Read": false,
+    "Size": 9384,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com New subscription received You have received a new subscription from Emran Emran. Subscription #19171 details are shown below. Subscription #19171 Customer Emran Emran (admin@..."
+  },
+  {
+    "ID": "7hUmlMCK7PqIgpUYYLBkXi",
+    "Created": "2026-08-13T11:48:13.565+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "admin@mirror-help.arrayhash.com"
+      }
+    ],
+    "Subject": "[mirror-help.arrayhash.com] Your subscription #19171 is active",
+    "Read": false,
+    "Size": 8671,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com Your subscription is now active! Hi Emran, Great news! Your subscription is now active. Here are the details: Subscription #19171 Product Paddle dynamic Box owner Price $20.0..."
+  },
+  {
+    "ID": "7M9JbETWyKjEbBtxRfnyaQ",
+    "Created": "2026-08-13T11:48:12.57+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "admin@mirror-help.arrayhash.com"
+      }
+    ],
+    "Subject": "Your mirror-help.arrayhash.com order has been received!",
+    "Read": false,
+    "Size": 18236,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com Thank you for your order Hi, Just to let you know — we’ve received your order, and it is now being processed. Here’s a reminder of what you’ve ordered: Order summary ..."
+  },
+  {
+    "ID": "0jno0ILVl66QCkJV01Jhfj",
+    "Created": "2026-08-13T11:48:12.227+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "admin@mirror-help.arrayhash.com"
+      }
+    ],
+    "Subject": "[mirror-help.arrayhash.com]: You've got a new order: #19170",
+    "Read": false,
+    "Size": 18430,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com New order: #19170 You’ve received a new order from : Order summary Order #19170 (13 August, 2026) Product Quantity Price Paddle dynamic Box owner (Every month) ×1 $20.00 ..."
+  },
+  {
+    "ID": "3drX6gQnHMlRIXGmpdPexW",
+    "Created": "2026-08-13T10:01:18.238+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "admin@mirror-help.arrayhash.com"
+      }
+    ],
+    "Subject": "[mirror-help.arrayhash.com] Subscription #18962 cancelled by SLT Core",
+    "Read": false,
+    "Size": 8429,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com Subscription cancelled Subscription #18962 from SLT Core has been cancelled. Subscription #18962 Customer SLT Core (slt-core@example.test) Product SLT Daily Core Status Cance..."
+  },
+  {
+    "ID": "0QHU2W1pqIrEEXoOlaLocL",
+    "Created": "2026-08-13T10:01:17.608+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "slt-core@example.test"
+      }
+    ],
+    "Subject": "[mirror-help.arrayhash.com] Your subscription #18962 has been cancelled",
+    "Read": false,
+    "Size": 8265,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com Your subscription has been cancelled Hi SLT, Your subscription #18962 has been cancelled. Subscription #18962 Product SLT Daily Core Status Cancelled Reason Full refund proce..."
+  },
+  {
+    "ID": "45OqotI1TQqU1S8WyNqV8n",
+    "Created": "2026-08-13T10:01:14.864+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "slt-core@example.test"
+      }
+    ],
+    "Subject": "Your mirror-help.arrayhash.com order #18961 has been refunded",
+    "Read": false,
+    "Size": 25102,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com Order refunded: 18961 Hi SLT, Your order from mirror-help.arrayhash.com has been refunded. Here’s a reminder of what you’ve ordered: Order summary Order #18961 (13 August..."
+  },
+  {
+    "ID": "1SpPwioyImYg3SZPYLChn8",
+    "Created": "2026-08-13T10:01:08.218+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "admin@mirror-help.arrayhash.com"
+      }
+    ],
+    "Subject": "[mirror-help.arrayhash.com] Subscription #18951 cancelled by SLT Core",
+    "Read": false,
+    "Size": 8431,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com Subscription cancelled Subscription #18951 from SLT Core has been cancelled. Subscription #18951 Customer SLT Core (slt-core@example.test) Product SLT Daily Core Status Cance..."
+  },
+  {
+    "ID": "5DX99H5IsNx98zVeeYlxk8",
+    "Created": "2026-08-13T10:01:07.15+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "slt-core@example.test"
+      }
+    ],
+    "Subject": "[mirror-help.arrayhash.com] Your subscription #18951 has been cancelled",
+    "Read": false,
+    "Size": 8265,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com Your subscription has been cancelled Hi SLT, Your subscription #18951 has been cancelled. Subscription #18951 Product SLT Daily Core Status Cancelled Reason Full refund proce..."
+  },
+  {
+    "ID": "28nukgXm3W6e6czxgC4Esn",
+    "Created": "2026-08-13T10:01:01.267+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "slt-core@example.test"
+      }
+    ],
+    "Subject": "Your mirror-help.arrayhash.com order #18950 has been refunded",
+    "Read": false,
+    "Size": 25091,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com Order refunded: 18950 Hi SLT, Your order from mirror-help.arrayhash.com has been refunded. Here’s a reminder of what you’ve ordered: Order summary Order #18950 (13 August..."
+  },
+  {
+    "ID": "61s62J79vYOHKJKAPh5h85",
+    "Created": "2026-08-13T09:59:46.388+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "admin@mirror-help.arrayhash.com"
+      }
+    ],
+    "Subject": "[mirror-help.arrayhash.com] New subscription #18962 from SLT Core",
+    "Read": true,
+    "Size": 9381,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com New subscription received You have received a new subscription from SLT Core. Subscription #18962 details are shown below. Subscription #18962 Customer SLT Core (slt-core@exa..."
+  },
+  {
+    "ID": "4tGXjfuQvTtm41L3lQ2EO6",
+    "Created": "2026-08-13T09:59:46.066+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "slt-core@example.test"
+      }
+    ],
+    "Subject": "[mirror-help.arrayhash.com] Your subscription #18962 is active",
+    "Read": false,
+    "Size": 8667,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com Your subscription is now active! Hi SLT, Great news! Your subscription is now active. Here are the details: Subscription #18962 Product SLT Daily Core Price $10.00 / Every da..."
+  },
+  {
+    "ID": "61sVmFOmFM1We6W47D0IIC",
+    "Created": "2026-08-13T09:59:44.705+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "admin@mirror-help.arrayhash.com"
+      }
+    ],
+    "Subject": "[mirror-help.arrayhash.com]: You've got a new order: #18961",
+    "Read": false,
+    "Size": 24475,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com New order: #18961 You’ve received a new order from SLT Core: Order summary Order #18961 (13 August, 2026) Product Quantity Price SLT Daily Core (Every day) Renewals:$10.00 ..."
+  },
+  {
+    "ID": "0Fmgb0bxk7s73F4ehJktGP",
+    "Created": "2026-08-13T09:59:44.471+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "slt-core@example.test"
+      }
+    ],
+    "Subject": "Your order from mirror-help.arrayhash.com is on its way!",
+    "Read": false,
+    "Size": 24200,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com Good things are heading your way! Hi SLT, We have finished processing your order. Here’s a reminder of what you’ve ordered: Order summary Order #18961 (13 August, 2026) P..."
+  },
+  {
+    "ID": "1qBqwofK1IlmK5MHMkJdtZ",
+    "Created": "2026-08-13T09:53:11.464+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "admin@mirror-help.arrayhash.com"
+      }
+    ],
+    "Subject": "[mirror-help.arrayhash.com] New subscription #18951 from SLT Core",
+    "Read": true,
+    "Size": 9380,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com New subscription received You have received a new subscription from SLT Core. Subscription #18951 details are shown below. Subscription #18951 Customer SLT Core (slt-core@exa..."
+  },
+  {
+    "ID": "5d98MAPI5mNNaebDXPBUv2",
+    "Created": "2026-08-13T09:53:11.214+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "slt-core@example.test"
+      }
+    ],
+    "Subject": "[mirror-help.arrayhash.com] Your subscription #18951 is active",
+    "Read": false,
+    "Size": 8666,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com Your subscription is now active! Hi SLT, Great news! Your subscription is now active. Here are the details: Subscription #18951 Product SLT Daily Core Price $10.00 / Every da..."
+  },
+  {
+    "ID": "4NF5WUOHAPrZgkfB2k9EPB",
+    "Created": "2026-08-13T09:53:09.375+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "admin@mirror-help.arrayhash.com"
+      }
+    ],
+    "Subject": "[mirror-help.arrayhash.com]: You've got a new order: #18950",
+    "Read": false,
+    "Size": 24467,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com New order: #18950 You’ve received a new order from SLT Core: Order summary Order #18950 (13 August, 2026) Product Quantity Price SLT Daily Core (Every day) Renewals:$10.00 ..."
+  },
+  {
+    "ID": "0w4Vzxs5LSDFrGcyOGmNdb",
+    "Created": "2026-08-13T09:53:09.045+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "slt-core@example.test"
+      }
+    ],
+    "Subject": "Your order from mirror-help.arrayhash.com is on its way!",
+    "Read": false,
+    "Size": 24190,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com Good things are heading your way! Hi SLT, We have finished processing your order. Here’s a reminder of what you’ve ordered: Order summary Order #18950 (13 August, 2026) P..."
+  },
+  {
+    "ID": "2ZNkgJ4dBC9L0RnxB841l6",
+    "Created": "2026-08-13T09:33:43.543+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "admin@mirror-help.arrayhash.com"
+      }
+    ],
+    "Subject": "[mirror-help.arrayhash.com] Subscription #18932 cancelled by SLT Core",
+    "Read": false,
+    "Size": 8430,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com Subscription cancelled Subscription #18932 from SLT Core has been cancelled. Subscription #18932 Customer SLT Core (slt-core@example.test) Product SLT Daily Core Status Cance..."
+  },
+  {
+    "ID": "4Ncenu3a0on6yNZWIPWU3T",
+    "Created": "2026-08-13T09:33:43.325+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "slt-core@example.test"
+      }
+    ],
+    "Subject": "[mirror-help.arrayhash.com] Your subscription #18932 has been cancelled",
+    "Read": false,
+    "Size": 8265,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com Your subscription has been cancelled Hi SLT, Your subscription #18932 has been cancelled. Subscription #18932 Product SLT Daily Core Status Cancelled Reason Full refund proce..."
+  },
+  {
+    "ID": "5kJAj9sKCOkeyl812sVrUF",
+    "Created": "2026-08-13T09:33:40.999+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "slt-core@example.test"
+      }
+    ],
+    "Subject": "Your mirror-help.arrayhash.com order #18931 has been refunded",
+    "Read": false,
+    "Size": 25080,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com Order refunded: 18931 Hi SLT, Your order from mirror-help.arrayhash.com has been refunded. Here’s a reminder of what you’ve ordered: Order summary Order #18931 (13 August..."
+  },
+  {
+    "ID": "13QSUIn274rxhnSqbHOrMA",
+    "Created": "2026-08-13T09:30:32.315+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "admin@mirror-help.arrayhash.com"
+      }
+    ],
+    "Subject": "[mirror-help.arrayhash.com] New subscription #18932 from SLT Core",
+    "Read": false,
+    "Size": 9378,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com New subscription received You have received a new subscription from SLT Core. Subscription #18932 details are shown below. Subscription #18932 Customer SLT Core (slt-core@exa..."
+  },
+  {
+    "ID": "6tdvveLYKKrC4O7fLPk8m4",
+    "Created": "2026-08-13T09:30:31.497+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "slt-core@example.test"
+      }
+    ],
+    "Subject": "[mirror-help.arrayhash.com] Your subscription #18932 is active",
+    "Read": false,
+    "Size": 8667,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com Your subscription is now active! Hi SLT, Great news! Your subscription is now active. Here are the details: Subscription #18932 Product SLT Daily Core Price $10.00 / Every da..."
+  },
+  {
+    "ID": "70BycPjWIGrDPKKbXyePuE",
+    "Created": "2026-08-13T09:30:27.683+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "admin@mirror-help.arrayhash.com"
+      }
+    ],
+    "Subject": "[mirror-help.arrayhash.com]: You've got a new order: #18931",
+    "Read": false,
+    "Size": 24463,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com New order: #18931 You’ve received a new order from SLT Core: Order summary Order #18931 (13 August, 2026) Product Quantity Price SLT Daily Core (Every day) Renewals:$10.00 ..."
+  },
+  {
+    "ID": "0U3ZUy98lQvCAuiSxtvcBZ",
+    "Created": "2026-08-13T09:30:26.806+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "slt-core@example.test"
+      }
+    ],
+    "Subject": "Your order from mirror-help.arrayhash.com is on its way!",
+    "Read": false,
+    "Size": 24186,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com Good things are heading your way! Hi SLT, We have finished processing your order. Here’s a reminder of what you’ve ordered: Order summary Order #18931 (13 August, 2026) P..."
+  },
+  {
+    "ID": "44hZiarfC4Fm7z8lyF4Wng",
+    "Created": "2026-08-13T03:47:33.492+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "admin@mirror-help.arrayhash.com"
+      }
+    ],
+    "Subject": "[mirror-help.arrayhash.com] Payment failed for subscription #18809",
+    "Read": false,
+    "Size": 9262,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com Subscription payment failed The automatic renewal payment for subscription #18809 from Emran Emran has failed. Subscription #18809 Customer Emran Emran (admin@mirror-help.arr..."
+  },
+  {
+    "ID": "3tkAyvqKhOIC3Ni6FJ18NY",
+    "Created": "2026-08-13T03:47:33.237+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "admin@mirror-help.arrayhash.com"
+      }
+    ],
+    "Subject": "[mirror-help.arrayhash.com] Payment failed for subscription #18809",
+    "Read": false,
+    "Size": 8777,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com Payment failed Hi Emran, Unfortunately, the renewal payment for your subscription #18809 could not be completed. Subscription #18809 Product SLT Paddle Daily Amount Due $11.0..."
+  },
+  {
+    "ID": "7lWhrICNDILZUGoHn4fz39",
+    "Created": "2026-08-13T03:47:30.892+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "admin@mirror-help.arrayhash.com"
+      }
+    ],
+    "Subject": "[mirror-help.arrayhash.com]: Order #18812 has failed",
+    "Read": false,
+    "Size": 13811,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com Order failed: #18812 Unfortunately, the payment for order #18812 from has failed. The order was as follows: Order summary Order #18812 (13 August, 2026) Product Quantity Pric..."
+  },
+  {
+    "ID": "4zQqEgcCA3plTRzqolvUyv",
+    "Created": "2026-08-13T03:37:52.386+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "admin@mirror-help.arrayhash.com"
+      }
+    ],
+    "Subject": "[mirror-help.arrayhash.com] Subscription #18715 cancelled by",
+    "Read": false,
+    "Size": 7953,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com Subscription cancelled Subscription #18715 from has been cancelled. Subscription #18715 Customer () Product N/A Status Cancelled View Subscription mirror-help.arrayhash.com U..."
+  },
+  {
+    "ID": "3B5YUClpW9Wm2zZlXhjGEv",
+    "Created": "2026-08-13T03:37:47.667+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "admin@mirror-help.arrayhash.com"
+      }
+    ],
+    "Subject": "[mirror-help.arrayhash.com] Subscription #18707 cancelled by",
+    "Read": false,
+    "Size": 7952,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com Subscription cancelled Subscription #18707 from has been cancelled. Subscription #18707 Customer () Product N/A Status Cancelled View Subscription mirror-help.arrayhash.com U..."
+  },
+  {
+    "ID": "0x6Gt1C57EZuAFJsKY6WQf",
+    "Created": "2026-08-13T03:36:29.584+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "admin@mirror-help.arrayhash.com"
+      }
+    ],
+    "Subject": "[mirror-help.arrayhash.com] New subscription #18652 from Emran Emran",
+    "Read": false,
+    "Size": 9385,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com New subscription received You have received a new subscription from Emran Emran. Subscription #18652 details are shown below. Subscription #18652 Customer Emran Emran (admin@..."
+  },
+  {
+    "ID": "36RwG7vTcXmfPIRU3AJdYy",
+    "Created": "2026-08-13T03:36:29.213+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "admin@mirror-help.arrayhash.com"
+      }
+    ],
+    "Subject": "[mirror-help.arrayhash.com] Your subscription #18652 is active",
+    "Read": false,
+    "Size": 8674,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com Your subscription is now active! Hi Emran, Great news! Your subscription is now active. Here are the details: Subscription #18652 Product Paddle subscription child Price $0.0..."
+  },
+  {
+    "ID": "7NbH2qNomuFXFXVCsdsxYY",
+    "Created": "2026-08-13T03:36:28.287+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "admin@mirror-help.arrayhash.com"
+      }
+    ],
+    "Subject": "[mirror-help.arrayhash.com] New subscription #18649 from Emran Emran",
+    "Read": false,
+    "Size": 9382,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com New subscription received You have received a new subscription from Emran Emran. Subscription #18649 details are shown below. Subscription #18649 Customer Emran Emran (admin@..."
+  },
+  {
+    "ID": "6sXu8lTiI3qSp7PG5pU8qh",
+    "Created": "2026-08-13T03:36:27.827+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "admin@mirror-help.arrayhash.com"
+      }
+    ],
+    "Subject": "[mirror-help.arrayhash.com] Your subscription #18649 is active",
+    "Read": false,
+    "Size": 8673,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com Your subscription is now active! Hi Emran, Great news! Your subscription is now active. Here are the details: Subscription #18649 Product Paddle dynamic Box owner Price $20.0..."
+  },
+  {
+    "ID": "29nFFBOKLmUak4xtUlAZZI",
+    "Created": "2026-08-13T03:36:26.836+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "admin@mirror-help.arrayhash.com"
+      }
+    ],
+    "Subject": "Your mirror-help.arrayhash.com order has been received!",
+    "Read": true,
+    "Size": 18234,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com Thank you for your order Hi, Just to let you know — we’ve received your order, and it is now being processed. Here’s a reminder of what you’ve ordered: Order summary ..."
+  },
+  {
+    "ID": "0AvdkB2vlXnD4kjABP2CBx",
+    "Created": "2026-08-13T03:36:26.426+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "admin@mirror-help.arrayhash.com"
+      }
+    ],
+    "Subject": "[mirror-help.arrayhash.com]: You've got a new order: #18648",
+    "Read": false,
+    "Size": 18429,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com New order: #18648 You’ve received a new order from : Order summary Order #18648 (13 August, 2026) Product Quantity Price Paddle dynamic Box owner (Every month) ×1 $20.00 ..."
+  },
+  {
+    "ID": "5EVNysSls3lPBRr0UIBg17",
+    "Created": "2026-08-13T03:32:44.123+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "admin@mirror-help.arrayhash.com"
+      }
+    ],
+    "Subject": "[mirror-help.arrayhash.com] Your free trial for Paddle exact native trial has started",
+    "Read": true,
+    "Size": 9725,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com Your free trial has started! Hi Emran, Your free trial for Paddle exact native trial has started! Enjoy full access during your trial period. Trial Details Subscription ID #1..."
+  },
+  {
+    "ID": "5OB6yPImf5vMwGUjpNdXmt",
+    "Created": "2026-08-13T03:32:43.171+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "admin@mirror-help.arrayhash.com"
+      }
+    ],
+    "Subject": "Your mirror-help.arrayhash.com order has been received!",
+    "Read": true,
+    "Size": 13674,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com Thank you for your order Hi, Just to let you know — we’ve received your order, and it is now being processed. Here’s a reminder of what you’ve ordered: Order summary ..."
+  },
+  {
+    "ID": "2qy1I7lwAG5vnIXmzKgeTP",
+    "Created": "2026-08-13T03:32:42.584+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "admin@mirror-help.arrayhash.com"
+      }
+    ],
+    "Subject": "[mirror-help.arrayhash.com]: You've got a new order: #18496",
+    "Read": false,
+    "Size": 13869,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com New order: #18496 You’ve received a new order from : Order summary Order #18496 (13 August, 2026) Product Quantity Price Paddle exact native trial (Every month) ×1 $0.00 S..."
+  },
+  {
+    "ID": "4dkqW1MkEHB8rzi6Mi4pX9",
+    "Created": "2026-08-13T03:32:11.937+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "admin@mirror-help.arrayhash.com"
+      }
+    ],
+    "Subject": "[mirror-help.arrayhash.com] Payment failed for subscription #18484",
+    "Read": false,
+    "Size": 9261,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com Subscription payment failed The automatic renewal payment for subscription #18484 from Emran Emran has failed. Subscription #18484 Customer Emran Emran (admin@mirror-help.arr..."
+  },
+  {
+    "ID": "3o0HLB0yO0GOKFFbQvqGsc",
+    "Created": "2026-08-13T03:32:11.362+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "admin@mirror-help.arrayhash.com"
+      }
+    ],
+    "Subject": "[mirror-help.arrayhash.com] Payment failed for subscription #18484",
+    "Read": false,
+    "Size": 8778,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com Payment failed Hi Emran, Unfortunately, the renewal payment for your subscription #18484 could not be completed. Subscription #18484 Product SLT Paddle Daily Amount Due $11.0..."
+  },
+  {
+    "ID": "7EJdQPxwOV36s3XWuNlGNw",
+    "Created": "2026-08-13T03:32:09.151+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "admin@mirror-help.arrayhash.com"
+      }
+    ],
+    "Subject": "[mirror-help.arrayhash.com]: Order #18487 has failed",
+    "Read": false,
+    "Size": 13808,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com Order failed: #18487 Unfortunately, the payment for order #18487 from has failed. The order was as follows: Order summary Order #18487 (13 August, 2026) Product Quantity Pric..."
+  },
+  {
+    "ID": "7WlWHHqY1FphyMHOMM0XZu",
+    "Created": "2026-08-13T03:31:37.536+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "admin@mirror-help.arrayhash.com"
+      }
+    ],
+    "Subject": "[mirror-help.arrayhash.com] Payment failed for subscription #18474",
+    "Read": false,
+    "Size": 9262,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com Subscription payment failed The automatic renewal payment for subscription #18474 from Emran Emran has failed. Subscription #18474 Customer Emran Emran (admin@mirror-help.arr..."
+  },
+  {
+    "ID": "6B8w1KF0WpJi09YkDLxq6A",
+    "Created": "2026-08-13T03:31:37.198+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "admin@mirror-help.arrayhash.com"
+      }
+    ],
+    "Subject": "[mirror-help.arrayhash.com] Payment failed for subscription #18474",
+    "Read": false,
+    "Size": 8778,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com Payment failed Hi Emran, Unfortunately, the renewal payment for your subscription #18474 could not be completed. Subscription #18474 Product SLT Paddle Daily Amount Due $11.0..."
+  },
+  {
+    "ID": "4iPdpmvBzsl9rGPooEPXK7",
+    "Created": "2026-08-13T03:31:35.919+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "admin@mirror-help.arrayhash.com"
+      }
+    ],
+    "Subject": "[mirror-help.arrayhash.com]: Order #18477 has failed",
+    "Read": false,
+    "Size": 13813,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com Order failed: #18477 Unfortunately, the payment for order #18477 from has failed. The order was as follows: Order summary Order #18477 (13 August, 2026) Product Quantity Pric..."
+  },
+  {
+    "ID": "0bTmhYzNVfQpTa4GpnAlI3",
+    "Created": "2026-08-13T03:07:50.288+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "admin@mirror-help.arrayhash.com"
+      }
+    ],
+    "Subject": "[mirror-help.arrayhash.com] New subscription #18371 from Emran Emran",
+    "Read": false,
+    "Size": 9384,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com New subscription received You have received a new subscription from Emran Emran. Subscription #18371 details are shown below. Subscription #18371 Customer Emran Emran (admin@..."
+  },
+  {
+    "ID": "2Lz0M8nslmyUZ7Ur2KoSNW",
+    "Created": "2026-08-13T03:07:49.69+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "admin@mirror-help.arrayhash.com"
+      }
+    ],
+    "Subject": "[mirror-help.arrayhash.com] Your subscription #18371 is active",
+    "Read": false,
+    "Size": 8673,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com Your subscription is now active! Hi Emran, Great news! Your subscription is now active. Here are the details: Subscription #18371 Product Paddle subscription child Price $0.0..."
+  },
+  {
+    "ID": "1mE6GEvFPyqrcTEQdGYeRI",
+    "Created": "2026-08-13T03:07:48.987+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "admin@mirror-help.arrayhash.com"
+      }
+    ],
+    "Subject": "[mirror-help.arrayhash.com] New subscription #18368 from Emran Emran",
+    "Read": false,
+    "Size": 9384,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com New subscription received You have received a new subscription from Emran Emran. Subscription #18368 details are shown below. Subscription #18368 Customer Emran Emran (admin@..."
+  },
+  {
+    "ID": "5JU1jvz61VPWZVpS99tFBX",
+    "Created": "2026-08-13T03:07:48.734+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "admin@mirror-help.arrayhash.com"
+      }
+    ],
+    "Subject": "[mirror-help.arrayhash.com] Your subscription #18368 is active",
+    "Read": false,
+    "Size": 8672,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com Your subscription is now active! Hi Emran, Great news! Your subscription is now active. Here are the details: Subscription #18368 Product Paddle dynamic Box owner Price $20.0..."
+  },
+  {
+    "ID": "276wmnMnV6yjwvVvKQJTkI",
+    "Created": "2026-08-13T03:07:47.707+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "admin@mirror-help.arrayhash.com"
+      }
+    ],
+    "Subject": "Your mirror-help.arrayhash.com order has been received!",
+    "Read": true,
+    "Size": 18235,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com Thank you for your order Hi, Just to let you know — we’ve received your order, and it is now being processed. Here’s a reminder of what you’ve ordered: Order summary ..."
+  },
+  {
+    "ID": "3GUS6AT9ilWDAPPAD5z3hp",
+    "Created": "2026-08-13T03:07:47.213+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "admin@mirror-help.arrayhash.com"
+      }
+    ],
+    "Subject": "[mirror-help.arrayhash.com]: You've got a new order: #18367",
+    "Read": false,
+    "Size": 18429,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com New order: #18367 You’ve received a new order from : Order summary Order #18367 (13 August, 2026) Product Quantity Price Paddle dynamic Box owner (Every month) ×1 $20.00 ..."
+  },
+  {
+    "ID": "2eWd01aBRAQkPZmpKSxkkQ",
+    "Created": "2026-08-13T03:05:41.928+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "admin@mirror-help.arrayhash.com"
+      }
+    ],
+    "Subject": "[mirror-help.arrayhash.com] Your free trial for Paddle exact native trial has started",
+    "Read": true,
+    "Size": 9726,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com Your free trial has started! Hi Emran, Your free trial for Paddle exact native trial has started! Enjoy full access during your trial period. Trial Details Subscription ID #1..."
+  },
+  {
+    "ID": "5k5BXiRu4XQgzzoto0jFYI",
+    "Created": "2026-08-13T03:05:41.128+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "admin@mirror-help.arrayhash.com"
+      }
+    ],
+    "Subject": "Your mirror-help.arrayhash.com order has been received!",
+    "Read": true,
+    "Size": 13676,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com Thank you for your order Hi, Just to let you know — we’ve received your order, and it is now being processed. Here’s a reminder of what you’ve ordered: Order summary ..."
+  },
+  {
+    "ID": "0RCOeo69pF7tdTow2am61i",
+    "Created": "2026-08-13T03:05:40.857+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "admin@mirror-help.arrayhash.com"
+      }
+    ],
+    "Subject": "[mirror-help.arrayhash.com]: You've got a new order: #18249",
+    "Read": false,
+    "Size": 13869,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com New order: #18249 You’ve received a new order from : Order summary Order #18249 (13 August, 2026) Product Quantity Price Paddle exact native trial (Every month) ×1 $0.00 S..."
+  },
+  {
+    "ID": "1O5AmtBheHHuVIkWnzGoJs",
+    "Created": "2026-08-13T03:03:13.656+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "admin@mirror-help.arrayhash.com"
+      }
+    ],
+    "Subject": "[mirror-help.arrayhash.com] Subscription #18219 cancelled by",
+    "Read": false,
+    "Size": 7953,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com Subscription cancelled Subscription #18219 from has been cancelled. Subscription #18219 Customer () Product N/A Status Cancelled View Subscription mirror-help.arrayhash.com U..."
+  },
+  {
+    "ID": "0TslQ4lHQPmuKeBzvEkj2M",
+    "Created": "2026-08-13T03:03:02.629+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "admin@mirror-help.arrayhash.com"
+      }
+    ],
+    "Subject": "[mirror-help.arrayhash.com] Subscription #18211 cancelled by",
+    "Read": false,
+    "Size": 7952,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com Subscription cancelled Subscription #18211 from has been cancelled. Subscription #18211 Customer () Product N/A Status Cancelled View Subscription mirror-help.arrayhash.com U..."
+  },
+  {
+    "ID": "3ywFJBnY36UiV0pd04yeQH",
+    "Created": "2026-08-13T02:56:48.756+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "admin@mirror-help.arrayhash.com"
+      }
+    ],
+    "Subject": "[mirror-help.arrayhash.com] Subscription #18183 cancelled by",
+    "Read": false,
+    "Size": 7949,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com Subscription cancelled Subscription #18183 from has been cancelled. Subscription #18183 Customer () Product N/A Status Cancelled View Subscription mirror-help.arrayhash.com U..."
+  },
+  {
+    "ID": "3mAtdQ1ezkZ3XuooHGgY8r",
+    "Created": "2026-08-13T02:56:44.188+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "admin@mirror-help.arrayhash.com"
+      }
+    ],
+    "Subject": "[mirror-help.arrayhash.com] Subscription #18175 cancelled by",
+    "Read": false,
+    "Size": 7952,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com Subscription cancelled Subscription #18175 from has been cancelled. Subscription #18175 Customer () Product N/A Status Cancelled View Subscription mirror-help.arrayhash.com U..."
+  }
+]
+
+## Board snapshot
+Subscription Lifecycle & Renewal QA
+Total: 120 tasks
+
+STATUS            COUNT      WIP  BLOCKED  OVERDUE
+backlog               0 --              0        0
+todo                  1 --              0        0
+in-progress           1 --              0        0
+review                0 --              0        0
+blocked               0 --              0        0
+done                118 --              0        0
+
+PRIORITY          COUNT
+low                   0
+medium               10
+high                 65
+critical             45
+
+CLASS             COUNT
+expedite              0
+fixed-date            0
+standard            120
+intangible            0

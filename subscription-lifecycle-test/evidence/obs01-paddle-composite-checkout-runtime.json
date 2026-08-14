@@ -1,0 +1,51 @@
+{
+  "scope": "OBS-01 Paddle composite initial-checkout item builder",
+  "implementation": "arraysubspro/src/Features/AutomaticPayments/Gateways/Paddle/PaddleGateway.php",
+  "sha256": "3fcbfd04fd56fb066fa9ed7a85433bd14bd88996004940e05c9f45834062c9d8",
+  "runtime": {
+    "real_box_checkout_child_hook": true,
+    "real_bundle_checkout_child_hook": true,
+    "network_calls": 0,
+    "transactions_created": 0,
+    "payments_completed": 0,
+    "simple_unchanged": true,
+    "box_owner_only": true,
+    "box_subscription_child_not_billed": true,
+    "bundle_owner_only": true,
+    "bundle_subscription_child_not_billed": true,
+    "positive_flagged_child_rejected": true,
+    "missing_child_rejected": true,
+    "extra_child_rejected": true,
+    "wrong_parent_rejected": true,
+    "unowned_composite_rejected": true,
+    "forged_child_rejected": true,
+    "ambiguous_flags_rejected": true,
+    "box_canonical_subscription_child_accepted": true,
+    "bundle_canonical_subscription_child_accepted": true,
+    "taxed_child_rejected": true,
+    "arbitrary_extra_linked_subscription_rejected": true,
+    "exact_initial_composite_completed": true,
+    "dynamic_owner_price_bound": true,
+    "same_fingerprint_concurrent_price_reused": true,
+    "different_fingerprint_concurrent_prices_distinct": true,
+    "paddle_price_create_calls_for_same_fingerprint": 1
+  },
+  "cleanup": {
+    "orders_remaining": 0,
+    "subscriptions_remaining": 0,
+    "products_remaining": 0,
+    "fixture_meta_rows_remaining": 0,
+    "fixture_subscription_titles_remaining": 0,
+    "prior_fixture_rows_remaining": 0,
+    "concurrency_fixture_rows_remaining": 0
+  },
+  "validation": {
+    "php_lint": "pass",
+    "git_diff_check": "pass",
+    "composite_renewal_regression": "pass",
+    "prior_high_webhook_regression": "pass",
+    "hpos_runtime": "enabled",
+    "classic_checkout_hook": "pass",
+    "store_api_checkout_hook": "pass"
+  }
+}

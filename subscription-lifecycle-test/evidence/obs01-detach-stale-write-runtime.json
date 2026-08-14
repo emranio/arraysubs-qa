@@ -1,0 +1,48 @@
+{
+  "issue": "SLT-OBS-01",
+  "captured_at": "2026-08-13T04:15:55+02:00",
+  "fixture": {
+    "subscription_id": 15871,
+    "order_id": 15857,
+    "customer_id": 370,
+    "product_id": 11927
+  },
+  "post_detach": {
+    "managed_key_count": 28,
+    "detach_key_count": 27,
+    "fully_detached": true,
+    "managed_database_rows": {
+      "_gateway_status": [
+        "detached"
+      ]
+    },
+    "duplicate_groups": [],
+    "resolved_gateway": null,
+    "automatic_payment": false,
+    "subscription_next_payment": "2026-08-13 18:00:00",
+    "subscription_completed_payments": 1,
+    "order_status": "completed",
+    "order_transaction_id_unchanged": true
+  },
+  "stale_write_probes": {
+    "direct_persist_error_codes": [
+      "arraysubs_gateway_meta_detached"
+    ],
+    "delete_tombstone_error_codes": [
+      "arraysubs_gateway_meta_detached"
+    ],
+    "paid_order_capture_hook_rejected": true,
+    "duplicate_persist_failure_hooks_did_not_queue_retry": true,
+    "direct_retry_handler_did_not_restore_context": true,
+    "managed_context_unchanged": true,
+    "fully_detached_after_all_probes": true,
+    "pending_fixture_gateway_retry_actions": 0
+  },
+  "browser": {
+    "customer_url": "https://mirror-help.arrayhash.com/my-account/view-subscription/15871/",
+    "customer_payment_method_text": "Not set",
+    "subscription_status": "Active",
+    "related_order_status": "Completed",
+    "screenshot": "/home/server-manager/slt-evidence/fixes/SLT-OBS-01/browser-40-customer-after-detach.png"
+  }
+}
