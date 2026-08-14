@@ -59,4 +59,3 @@ At `2026-08-12 22:14:37Z` (`2026-08-13 04:14:37` site-local), PHP raised `E_PARS
 - The current plugin runtime and ArraySubs admin UI are healthy, so the evidence proves a transient deployment/editing window rather than a continuing outage.
 - Mailpit's latest 500-message search contains one technical-issue message for this incident; no repeat was observed through the D11 early-morning cutoff.
 - A distinct later fatal in the debug log originated from a WP-CLI reflection/eval harness and is excluded from this admin-AJAX incident.
-
