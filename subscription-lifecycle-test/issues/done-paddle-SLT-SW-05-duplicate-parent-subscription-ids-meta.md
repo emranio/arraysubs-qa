@@ -2,6 +2,7 @@
 
 - Severity: medium
 - Date found: 2026-08-13
+- Status: resolved 2026-08-14
 - Watch day: D11
 - Originating test task: `SLT-SW-05` (kanban task `#96`)
 - Plan file: `kanban/tasks/096-upgrade-a-paddle-billed-ladder-subscription-and.md`
@@ -78,3 +79,15 @@ id     order_id  meta_key           meta_value
 - The order UI and the single-value WooCommerce API read both show one subscription, so the defect is currently hidden on the normal admin surface.
 - Subscription `20114` passed the separate duplicate-gateway-meta standing check: each of `_payment_gateway`, `_gateway_status`, `_gateway_customer_id`, and `_payment_method_last4` has exactly one row. This finding is specifically about the parent order relationship meta.
 - The fixture belongs to concurrent card `126` regression work and is outside the published D11 lifecycle tail/cancellation cohorts. It does not alter the D11 watch verdict for subscription `12564`.
+
+## Resolution — 2026-08-14
+
+The report was reproduced and remains a true positive in the pre-fix runtime. The checkout-creation mutex added by the broader lifecycle hardening prevents different requests from creating the same subscription, but it did not prevent two order objects in one request from carrying different metadata snapshots. The synchronous subscription-created callback could write `_subscription_ids` through a freshly loaded order, after which checkout resumed with its older `WC_Order` instance and inserted the same serialized value again. A controlled two-object probe reproduced two distinct HPOS rows while both helper calls returned success.
+
+The fix belongs in shared core relationship persistence, not Paddle. `arraysubs_link_subscription_to_parent_order()` now acquires the centralized checkout-subscription-creation lock reentrantly, reloads the authoritative order through its WooCommerce data store after the lock, and then recomputes the relationship set from only exact parent/customer-valid subscriptions. Success requires the exact canonical array and exactly one physical WooCommerce metadata object. When a duplicate exists, `WC_Data::update_meta_data()` retains the first row, marks the rest for deletion, and `save_meta_data()` synchronizes HPOS and any compatibility record. The helper re-reads and verifies both value and row cardinality before returning. A forged cross-customer relationship remains rejected.
+
+The pre-fix fixture produced HPOS meta IDs `40831` and `40832` with the same `[26836]` value. After the patch, the exact helper collapsed it to meta ID `40831` only. Repeated calls from two preloaded stale order objects stayed at one row; a valid two-subscription composite remained one row with two unique IDs; a same-parent cross-customer subscription was rejected; deleting the second candidate and relinking safely reduced the value to the remaining exact subscription; and the centralized lock was absent afterward.
+
+Affected parent order `20113` was then repaired through the same helper. It moved from two HPOS rows (`18026`, `18027`) to one row (`18026`) with exact value `[20114]`; the compatibility table retained its single row `156639`, and `arraysubs_get_subscription_ids_for_order()` resolves exactly `[20114]`. The authenticated WooCommerce admin page still shows one `SLT Plan Basic` line, one `#20114` relationship, Items Subtotal `$5.00`, Order Total `$5.00`, and the exact Paddle transaction, with no browser errors. Evidence: `/home/server-manager/slt-evidence/FIX-PADDLE-SLT-SW-05-parent-link-after.png`.
+
+The isolated probe order `26835`, subscription `26836`, its temporary composite/foreign subscriptions, and WooCommerce cache-cleanup actions `23552`, `23553`, and `23555` were identity-checked and permanently removed. No fixture order meta remained. Mailpit stayed at `1zPxE6FmuLNdLZQPE1aist`, and the exact admin browser session was closed. The only remaining site-wide duplicate `_subscription_ids` record belongs to historical BACS refund `13961`, not a parent order or Paddle, and is outside this report.

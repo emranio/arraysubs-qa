@@ -122,3 +122,36 @@ subscription nevertheless still stores initial checkout transaction
 `/home/server-manager/slt-evidence/SLT-SW-05-D09-natural-basic-renewal.txt`,
 `/home/server-manager/slt-evidence/SLT-SW-05-D09-subscription-13344.png`, and
 `/home/server-manager/slt-evidence/SLT-SW-05-D09-order-13758.png`.
+
+## Resolution — 2026-08-14
+
+- Confirmed as a true Paddle-only defect. The provider-confirmed renewal path
+  persisted the transaction on the renewal order but never advanced the
+  subscription's `_last_gateway_transaction_id`.
+- Paddle renewal finalization now persists the authenticated transaction and a
+  nanosecond provider-event watermark after exact paid-order/provider binding
+  validation. An older delivery cannot rewind the rolling audit link, an exact
+  replay is idempotent, and a same-time different-transaction conflict fails
+  closed for retry.
+- The new watermark is managed by core's canonical `GatewayMetaStore`, including
+  one-row verification and detach cleanup. No generic metadata writer or
+  provider-evidence bypass was added.
+- A signed replay of captured current transaction
+  `txn_01m00d1vp61jcvdsbg8rr87d0p` completed exact pending order `20500`, advanced
+  subscription `7809` from 39 to 40 payments, updated both order and subscription
+  transaction audit fields, and preserved the Paddle-owned next billing date.
+  Exact duplicate, same-time replay, and older replay all returned HTTP 200
+  without another payment increment, note, or mail.
+- Historical affected subscriptions were repaired only after full Paddle/local
+  reconciliation: `13344` now points to order `13758` transaction
+  `txn_01kzrkqs84sb3xcx73mzq8b4gc`; `12639` now points to order `13769`
+  transaction `txn_01kzr5e5vvgb9wgt2pw2r74e7d`. Both transaction and watermark
+  keys have exactly one canonical row.
+- Live admin and owner-browser checks show the new last transaction, completed
+  order `20500`, 40 completed payments, active status, correct next payment,
+  Paddle card display, and no browser console/network errors.
+- After-state screenshots:
+  `/home/server-manager/slt-evidence/FIX-PADDLE-SLT-SW-05-last-transaction-admin.png`,
+  `/home/server-manager/slt-evidence/FIX-PADDLE-SLT-SW-05-last-transaction-order-20500.png`,
+  `/home/server-manager/slt-evidence/FIX-PADDLE-SLT-SW-05-last-transaction-owner.png`,
+  and `/home/server-manager/slt-evidence/FIX-PADDLE-SLT-SW-05-affected-13344-after.png`.

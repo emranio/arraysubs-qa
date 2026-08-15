@@ -2,6 +2,7 @@
 
 - Severity: medium
 - Date found: 2026-08-08; confirmed 2026-08-09
+- Status: resolved 2026-08-14
 - Watch day: D06 with D07 settlement follow-up
 - Originating task: `SLT-MYA-03` / card `#94`
 - Plan file: `kanban/tasks/094-update-the-paddle-payment-method-and-prove-the.md`
@@ -102,3 +103,13 @@ Paddle recurring transaction `txn_01kznk1e8p98v536yf9fnv41kv` captured another `
 ## D09 afternoon recurrence — 2026-08-11
 
 The fourth observed post-update recurring settlement again used the remote Visa ending `5556`: exact Paddle transaction `txn_01kzr5e5vvgb9wgt2pw2r74e7d` captured `$11.00` once and completed relationship order `13769`. After settlement, local `_payment_method_last4` remained `4242`, and the authenticated customer route `/my-account/view-subscription/12639/` visibly rendered `Visa ending in 4242`. Screenshot: `/home/server-manager/slt-evidence/D09-Paddle-12639-subscription-after.png`; complete sanitized gate/order/mail proof: `/home/server-manager/slt-evidence/D09-afternoon-paddle-12639.txt`.
+
+## Resolution — 2026-08-14
+
+The report was confirmed against the original task, current local metadata, the exact Paddle subscription/customer binding, and both the payment-method-change and later recurring transactions. It was not a false positive. Paddle's immutable completed payment-method-change transaction contains Visa ending `5556`, while the local subscription still stored `4242` because `transaction.completed` was normalized correctly but the Paddle handler deliberately acknowledged that origin without persisting its safe card details.
+
+The Paddle handler now processes only a signed, completed `subscription_payment_method_change` transaction whose transaction ID is well formed and whose Paddle subscription and customer IDs exactly match the locally bound subscription. It validates a card-only display schema, persists only type/brand/last-four/expiry/source/update time through the canonical `GatewayMetaStore`, and records a nanosecond Paddle event watermark under the shared mutation lock so delayed or reordered events cannot rewind the display. Detach protection, retry-state reset, the existing payment-method-updated hook, and a private safe note remain aligned with the other automatic gateways. The watermark was added to the core allowlist, detach cleanup, and detached-write protection.
+
+Live verification used Paddle transaction `txn_01kzfj2d3mtsbasp6r8s8zmrw8` without exposing credentials or full card data. A correctly signed REST replay returned `200`; its exact duplicate returned `200` with `duplicate=true`; a unique older event returned `200` without changing `5556`; and mismatched-customer plus malformed-last-four controls returned `500` with their claims released and no metadata change. The subscription stayed `arraysubs-cancelled`, its eight linked orders and transaction IDs were byte-for-byte unchanged, `_completed_payments=7`, `_next_payment_date` and `_pending_renewal_order_id` stayed empty, the two historical Action Scheduler rows were unchanged, and Mailpit stayed at message ID `1zPxE6FmuLNdLZQPE1aist`.
+
+After a fresh authenticated navigation, `/my-account/view-subscription/12639/` renders `Visa ending in 5556`; browser errors were empty and console output contained only the existing jQuery Migrate informational message. Evidence: `/home/server-manager/slt-evidence/FIX-PADDLE-SLT-MYA-03-before.png` and `/home/server-manager/slt-evidence/FIX-PADDLE-SLT-MYA-03-after.png`. The generic WooCommerce payment-methods page remains intentionally token-based; no fake WooCommerce token is created for Paddle's subscription-scoped provider method.

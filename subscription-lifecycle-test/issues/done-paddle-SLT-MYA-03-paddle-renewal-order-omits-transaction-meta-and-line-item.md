@@ -2,6 +2,7 @@
 
 - Severity: medium
 - Date found: 2026-08-09
+- Status: resolved 2026-08-14
 - Watch day: D07
 - Originating task: `SLT-MYA-03` / card `#94`
 - Plan file: `kanban/tasks/094-update-the-paddle-payment-method-and-prove-the.md`
@@ -113,3 +114,15 @@ the correct HPOS transaction column. Admin mail `0wGCSXruhErqpOmosc8apZ` also co
 correct line and subtotal. Proof:
 `/home/server-manager/slt-evidence/SLT-SW-05-D09-natural-basic-renewal.txt` and
 `/home/server-manager/slt-evidence/SLT-SW-05-D09-order-13758.png`.
+
+## Resolution — 2026-08-14
+
+The historical report remains a valid true positive. Fresh structured reads reconfirmed that retroactive orders `13249` and `13769` have no items, cycle/date fields, or authored Paddle transaction metas, while pre-created order `13462` retains its item but lacks both transaction metas. The two symptoms came from separate omissions in the old Paddle flow: its retroactive helper manually created a total-only WooCommerce order instead of using the core renewal constructor, and its recurring completion path did not author `_paddle_transaction_id` plus `_last_gateway_transaction_id` on the selected order.
+
+The current committed lifecycle implementation already resolves both omissions. `PaddleGateway::createRetroactiveRenewalOrder()` delegates to core `OrderCreation::createRenewalOrder()`, so scheduled and provider-initiated renewals share the same locked price, quantity, product/variation, address, shipping, discount, pending-switch, item relationship, cycle/date, reverse-link, and `arraysubs_renewal_order_built` extension contracts. The recurring handler persists both exact transaction keys before crossing the shared provider-payment completion boundary. That boundary revalidates the exact subscription/order/gateway/customer/remote-subscription/site/currency/amount relationship under the centralized subscription and order locks, so a signed but mismatched provider payload cannot pay a locally unrelated order.
+
+No additional implementation was added for this report because duplicating the existing repair would create a second renewal path. Current paid Paddle renewal `15775` is a live post-revision control: it contains one `[QA] Starter Daily` line for `$60.00`, item `_subscription_id=7809`, cycle `39`, scheduled date, matching HPOS transaction `txn_01kzv88f29j0xr6mtqm8evwee4`, and matching `_paddle_transaction_id` plus `_last_gateway_transaction_id`. The authenticated admin page shows the product row, Items Subtotal `$60.00`, Order Total `$60.00`, and exact Paddle transaction. Evidence: `/home/server-manager/slt-evidence/FIX-PADDLE-SLT-MYA-03-renewal-order-paid-control.png`.
+
+A fresh isolated fixture then exercised the exact current Paddle retroactive constructor with customer `352`, product `12112`, one `$11.00` recurring unit, cycle `5`, and a fixed scheduled date. All checks passed: one `SLT Paddle Daily` item, quantity `1`, line/subtotal/order total `$11.00`, item and reverse subscription links, canonical pending pointer, cycle/date metadata, Paddle gateway, HPOS transaction, and both authored transaction metas. Its authenticated admin UI showed `Payment via Paddle`, the safe QA transaction ID, the linked subscription row, Items Subtotal `$11.00`, and Order Total `$11.00`, with no browser errors. Evidence: `/home/server-manager/slt-evidence/FIX-PADDLE-SLT-MYA-03-renewal-order-current.png`.
+
+The non-provider-bound fixture order `26832` and draft subscription `26829` were identity-checked and permanently removed after browser verification. No order-item row or Action Scheduler row remained, Mailpit stayed at `1zPxE6FmuLNdLZQPE1aist`, and the exact browser session was closed. Historical paid orders and previously sent emails were intentionally retained as audit evidence rather than rewritten.

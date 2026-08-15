@@ -1397,3 +1397,24 @@
 {"timestamp":"2026-08-14T22:45:23.356329574+02:00","action":"edit","task_id":130,"detail":"Fix all medium- and low-prefixed lifecycle QA issues"}
 {"timestamp":"2026-08-14T22:50:43.97762576+02:00","action":"edit","task_id":130,"detail":"Fix all medium- and low-prefixed lifecycle QA issues"}
 {"timestamp":"2026-08-14T22:50:44.239718078+02:00","action":"move","task_id":130,"detail":"in-progress -\u003e done"}
+{"timestamp":"2026-08-14T22:57:27.774991019+02:00","action":"create","task_id":131,"detail":"Fix all Paddle-prefixed lifecycle QA issues"}
+{"timestamp":"2026-08-14T23:00:07.869125144+02:00","action":"edit","task_id":131,"detail":"Fix all Paddle-prefixed lifecycle QA issues"}
+{"timestamp":"2026-08-14T23:04:17.631823477+02:00","action":"edit","task_id":131,"detail":"Fix all Paddle-prefixed lifecycle QA issues"}
+{"timestamp":"2026-08-14T23:07:40.416447325+02:00","action":"edit","task_id":131,"detail":"Fix all Paddle-prefixed lifecycle QA issues"}
+{"timestamp":"2026-08-14T23:12:08.22331225+02:00","action":"edit","task_id":131,"detail":"Fix all Paddle-prefixed lifecycle QA issues"}
+{"timestamp":"2026-08-14T23:16:01.701000528+02:00","action":"edit","task_id":131,"detail":"Fix all Paddle-prefixed lifecycle QA issues"}
+{"timestamp":"2026-08-14T23:25:30.678827862+02:00","action":"edit","task_id":131,"detail":"Fix all Paddle-prefixed lifecycle QA issues"}
+{"timestamp":"2026-08-14T23:32:35.471662196+02:00","action":"edit","task_id":131,"detail":"Fix all Paddle-prefixed lifecycle QA issues"}
+{"timestamp":"2026-08-14T23:36:22.326513805+02:00","action":"edit","task_id":131,"detail":"Fix all Paddle-prefixed lifecycle QA issues"}
+{"timestamp":"2026-08-14T23:44:05.329988295+02:00","action":"edit","task_id":131,"detail":"Fix all Paddle-prefixed lifecycle QA issues"}
+{"timestamp":"2026-08-14T23:47:16.446442031+02:00","action":"edit","task_id":131,"detail":"Fix all Paddle-prefixed lifecycle QA issues"}
+{"timestamp":"2026-08-14T23:50:39.283249471+02:00","action":"edit","task_id":131,"detail":"Fix all Paddle-prefixed lifecycle QA issues"}
+{"timestamp":"2026-08-14T23:54:59.925775805+02:00","action":"edit","task_id":131,"detail":"Fix all Paddle-prefixed lifecycle QA issues"}
+{"timestamp":"2026-08-15T00:01:37.245305636+02:00","action":"edit","task_id":131,"detail":"Fix all Paddle-prefixed lifecycle QA issues"}
+{"timestamp":"2026-08-15T00:01:45.550611045+02:00","action":"edit","task_id":131,"detail":"Fix all Paddle-prefixed lifecycle QA issues"}
+{"timestamp":"2026-08-15T01:04:46.132639291+02:00","action":"move","task_id":131,"detail":"in-progress -\u003e done"}
+{"timestamp":"2026-08-15T02:33:33.187017502+02:00","action":"edit","task_id":119,"detail":"SLT-SETUP-99B Post-watch teardown on 2026-08-15 — delete every SLT artifact"}
+{"timestamp":"2026-08-15T02:33:33.188388752+02:00","action":"claim","task_id":119,"detail":"rapid-ghost"}
+{"timestamp":"2026-08-15T02:36:50.405737727+02:00","action":"edit","task_id":119,"detail":"SLT-SETUP-99B Post-watch teardown on 2026-08-15 — delete every SLT artifact"}
+{"timestamp":"2026-08-15T02:36:50.408837181+02:00","action":"block","task_id":119,"detail":"Ownership closure failed: 343 unallowlisted arraysubs_sub_note posts are owned by teardown users; task 119 does not authorize this artifact class. See issues/SLT-SETUP-99B-unallowlisted-subscription-notes.md."}
+{"timestamp":"2026-08-15T02:36:50.409297056+02:00","action":"release","task_id":119,"detail":"rapid-ghost"}

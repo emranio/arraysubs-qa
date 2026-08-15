@@ -1,6 +1,7 @@
 # Routine Paddle intermediary webhooks are logged as unhandled warnings
 
 - Severity: low
+- Status: closed on 2026-08-14
 - Date found: 2026-08-11
 - Watch day: D09
 - Originating task: `SLT-IMP-05` (progress task ID `116`)
@@ -86,3 +87,83 @@ rows `682` / `688` record the associated `subscription.updated` /
 completed order `13758` for `$5.00`. This is misleading log severity only: the payment,
 order, schedule, and exact two-message mail delta all succeeded. Sanitized proof:
 `/home/server-manager/slt-evidence/SLT-SW-05-D09-natural-basic-renewal.txt`.
+
+## Current reproduction and root cause
+
+The report was not a false positive and remained active on 2026-08-14. The current dated
+`arraysubs-gateway` log contained `80` additional `No handler for event` warnings. The observed
+event buckets included the same `transaction.created`, `transaction.billed`,
+`transaction.updated`, and `transaction.paid` sequence, plus `transaction.ready` from checkout
+preparation.
+
+The root cause was shared dispatch behavior, not Paddle signature or entity resolution:
+
+1. Paddle's event map normalized only the final actionable transaction events
+   (`transaction.completed` and `transaction.payment_failed`).
+2. The routine intermediary states normalized to an empty string and had no derived handler.
+3. `WebhookRouter::dispatch()` logged that condition as WARNING and returned `success=false`.
+4. The outer router consequently released the idempotency claim and returned HTTP `500`.
+
+The impact therefore exceeded misleading severity: Paddle treated every intentionally
+non-actionable delivery as failed and could retry it. Paddle documents `transaction.paid` as the
+captured-but-not-fully-processed state before `transaction.completed`, and its delivery guidance
+requires HTTP `200` for successfully received notifications; non-200 responses are retried.
+Unknown or malformed events must still retain failure visibility, so a blanket success response
+would not be safe.
+
+Provider references:
+
+- `https://developer.paddle.com/webhooks/transactions/transaction-paid`
+- `https://developer.paddle.com/webhooks/about/respond-to-webhooks`
+
+## Fix
+
+- Added the normalized gateway contract value `ignored` for explicitly classified no-op events.
+- Mapped only Paddle's routine transaction intermediaries—`transaction.created`,
+  `transaction.ready`, `transaction.billed`, `transaction.updated`, and `transaction.paid`—to
+  `ignored`. Final success and failure events retain their existing actionable mappings.
+- The router acknowledges an authenticated and claimed `ignored` event without resolving or
+  mutating any subscription, order, customer, or gateway metadata. It retains the idempotency row,
+  logs a contextual INFO entry with raw type, normalized value, and event ID, and returns HTTP
+  `200`.
+- Truly unsupported events still log WARNING, return HTTP `500`, and release their claim for
+  retry. Their diagnostic now says `normalized: none` rather than printing a misleading blank.
+- Invalid signatures still return HTTP `401` before any event claim or dispatch.
+
+This is an explicit allowlist rather than a raw-prefix or “accept every Paddle event” rule. A new
+provider event cannot silently bypass review, and no signed payload is trusted to mutate local
+entities merely because it belongs to a routine transaction namespace.
+
+## Regression verification
+
+Verification completed on live staging on 2026-08-14:
+
+1. Runtime normalization returned `ignored` for all five intermediary types,
+   `payment_succeeded` for `transaction.completed`, `payment_failed` for
+   `transaction.payment_failed`, and an empty/unsupported value for `qa.unknown`.
+2. Five uniquely identified, correctly signed webhook requests were delivered through the real
+   `POST /wp-json/arraysubs/v1/webhooks/arraysubs_paddle` route. Created, ready, billed, updated,
+   and paid each returned HTTP `200` with `received=true` and `processed=true`.
+3. The repeated `transaction.updated` event returned HTTP `200` with `duplicate=true`; exactly one
+   ledger row existed for that event, proving claim-first idempotency still works.
+4. A correctly signed unsupported `qa.unknown` control returned HTTP `500` and left zero ledger
+   rows, proving retry semantics and warning visibility remain intact.
+5. A mapped event with an invalid signature returned HTTP `401` and left zero ledger rows, proving
+   the no-op path cannot bypass signature authentication.
+6. The current WooCommerce log records all five routine deliveries at INFO as
+   `Webhook acknowledged without action ... (normalized: ignored, event: ...)`. The explicit
+   unsupported control is the only new WARNING, and the invalid-signature control is the only new
+   ERROR.
+7. An administrator opened the exact WooCommerce log in isolated browser session
+   `admin-paddle-imp05`; the severity badges and full contextual messages rendered correctly.
+   Browser errors were empty and console output contained only JQMIGRATE.
+8. Mailpit's latest ID remained `1zPxE6FmuLNdLZQPE1aist`; webhook diagnostics emitted no email.
+
+Evidence screenshot:
+`/home/server-manager/slt-evidence/FIX-PADDLE-SLT-IMP-05-info-log.png`.
+
+Core/Pro and security review: the change stays entirely in ArraySubsPro's automatic-payment
+contract, Paddle map, and shared Pro webhook router. ArraySubs core is unchanged. Signature
+verification, exact gateway resolution, atomic event claims, failure claim release, and final
+payment handlers remain in their original order; the no-op branch executes only after successful
+authentication and classification and deliberately performs no entity lookup or write.

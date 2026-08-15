@@ -4,7 +4,7 @@ title: SLT-SETUP-99B Post-watch teardown on 2026-08-15 — delete every SLT arti
 status: todo
 priority: high
 created: 2026-08-02T03:43:12.818482128+02:00
-updated: 2026-08-11T22:43:39+02:00
+updated: 2026-08-15T02:36:50.401806157+02:00
 tags:
     - setup
     - day-13
@@ -128,6 +128,8 @@ depends_on:
     - 115
     - 116
     - 118
+blocked: true
+block_reason: 'Ownership closure failed: 343 unallowlisted arraysubs_sub_note posts are owned by teardown users; task 119 does not authorize this artifact class. See issues/SLT-SETUP-99B-unallowlisted-subscription-notes.md.'
 class: standard
 ---
 
@@ -223,3 +225,6 @@ Remove every artifact this plan created, returning the shared staging site to it
 
 [[2026-08-06]] Thu 21:38
 Current evidence correction before D13 teardown: rebuild the real tail only from 118's published keep-alive cohort plus the live registry. Task 106 still requires `SUB_2SEG` to survive past D10 when 118 publishes it. Tasks 45, 65, 75, 46, and 88 closed without `SUB_W`, Box Daily, the three `SLT-SYN-11` probes, the two `SLT-SYN-13` variations, or either `SLT-SYN-12` gateway probe, so each of those branches is conditional-only and must be omitted unless a later valid execution publishes its numeric subscription ID and dates. Separately, do not add ladder-switch or auto-downgrade artifacts unless a later valid execution recreates task 72's missing `SUB_BASIC` / `SUB_PRO` chain and 118 publishes those live fixtures explicitly.
+
+[[2026-08-15]] Sat 02:36
+D13 read-only final gates passed for 12039, 12172, and 12749. Safety STOP occurred before M0, tail cancellation, action cancellation, or deletion. Exact issue and D13 report record the preserved live state. Safe retry needs explicit note-class/ID authorization and review of 188 zero-linked plus 35 absent-target notes.
