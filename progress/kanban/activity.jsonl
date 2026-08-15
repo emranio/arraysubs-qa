@@ -1,0 +1,29 @@
+{"timestamp":"2026-08-15T09:45:26.524118174+02:00","action":"create","task_id":1,"detail":"stage-0: Payment gateway preflight baseline"}
+{"timestamp":"2026-08-15T09:45:26.79965281+02:00","action":"create","task_id":2,"detail":"stage-4: Mixed-cart eligibility and block parity"}
+{"timestamp":"2026-08-15T09:45:27.057048506+02:00","action":"create","task_id":3,"detail":"stage-5: Stripe subscription and normal-item checkout"}
+{"timestamp":"2026-08-15T09:45:27.290966005+02:00","action":"create","task_id":4,"detail":"stage-5: Paddle subscription and normal-item checkout"}
+{"timestamp":"2026-08-15T09:45:27.539151502+02:00","action":"create","task_id":5,"detail":"stage-6: Initial payment record and email integrity"}
+{"timestamp":"2026-08-15T09:45:27.829999087+02:00","action":"create","task_id":6,"detail":"stage-17: Payment gateway logs and scheduler audit"}
+{"timestamp":"2026-08-15T10:00:04.679568834+02:00","action":"edit","task_id":3,"detail":"stage-5: Stripe subscription and normal-item checkout"}
+{"timestamp":"2026-08-15T10:00:04.679744701+02:00","action":"release","task_id":3,"detail":"wind-path"}
+{"timestamp":"2026-08-15T10:00:05.450300188+02:00","action":"edit","task_id":4,"detail":"stage-5: Paddle subscription and normal-item checkout"}
+{"timestamp":"2026-08-15T10:00:05.450462009+02:00","action":"release","task_id":4,"detail":"wind-path"}
+{"timestamp":"2026-08-15T10:01:10.949220853+02:00","action":"edit","task_id":1,"detail":"stage-0: Payment gateway preflight baseline"}
+{"timestamp":"2026-08-15T10:01:10.949377023+02:00","action":"release","task_id":1,"detail":"wind-path"}
+{"timestamp":"2026-08-15T10:01:11.258299994+02:00","action":"edit","task_id":2,"detail":"stage-4: Mixed-cart eligibility and block parity"}
+{"timestamp":"2026-08-15T10:01:11.258465561+02:00","action":"release","task_id":2,"detail":"wind-path"}
+{"timestamp":"2026-08-15T10:20:33.555144306+02:00","action":"edit","task_id":5,"detail":"stage-6: Initial payment record and email integrity"}
+{"timestamp":"2026-08-15T10:20:33.788199052+02:00","action":"move","task_id":5,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-08-15T10:20:34.115022788+02:00","action":"edit","task_id":6,"detail":"stage-17: Payment gateway logs and scheduler audit"}
+{"timestamp":"2026-08-15T10:20:34.408441742+02:00","action":"move","task_id":6,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-08-15T10:20:56.100615664+02:00","action":"edit","task_id":5,"detail":"stage-6: Initial payment record and email integrity"}
+{"timestamp":"2026-08-15T10:20:56.100746277+02:00","action":"release","task_id":5,"detail":"wind-path"}
+{"timestamp":"2026-08-15T10:20:56.101381679+02:00","action":"edit","task_id":6,"detail":"stage-17: Payment gateway logs and scheduler audit"}
+{"timestamp":"2026-08-15T10:20:56.101448964+02:00","action":"release","task_id":6,"detail":"wind-path"}
+{"timestamp":"2026-08-15T10:25:36.73956888+02:00","action":"edit","task_id":6,"detail":"stage-17: Payment gateway logs and scheduler audit"}
+{"timestamp":"2026-08-15T10:30:34.591240615+02:00","action":"edit","task_id":6,"detail":"stage-17: Payment gateway logs and scheduler audit"}
+{"timestamp":"2026-08-15T11:40:01.760316912+02:00","action":"edit","task_id":5,"detail":"stage-6: Initial payment record and email integrity"}
+{"timestamp":"2026-08-15T14:19:37.066414769+02:00","action":"create","task_id":7,"detail":"stage-5: Post-fix Stripe and Paddle core-only payment regression"}
+{"timestamp":"2026-08-15T14:19:59.700911968+02:00","action":"move","task_id":7,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-08-15T18:11:08.161190603+02:00","action":"edit","task_id":7,"detail":"stage-5: Post-fix Stripe and Paddle core-only payment regression"}
+{"timestamp":"2026-08-15T18:11:08.570357943+02:00","action":"move","task_id":7,"detail":"in-progress -\u003e closed"}

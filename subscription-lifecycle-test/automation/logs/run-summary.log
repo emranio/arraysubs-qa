@@ -121,3 +121,15 @@
 2026-08-15T02:10:01+02:00 START D13 (2026-08-15) phase=teardown-early-morning site=06:10 UTC+6
 2026-08-15T02:51:06+02:00 OK D13 phase=teardown-early-morning report=/home/server-manager/www/arrayhash/mirror-help.arrayhash.com/public/wp-content/plugins/qa/subscription-lifecycle-test/watch-reports/D13-2026-08-15.md
 2026-08-15T02:51:06+02:00 RETAIN task 119 is not done; teardown will retry at the next cron phase
+2026-08-15T06:10:02+02:00 START D13 (2026-08-15) phase=teardown-late-morning site=10:10 UTC+6
+2026-08-15T06:24:09+02:00 OK D13 phase=teardown-late-morning report=/home/server-manager/www/arrayhash/mirror-help.arrayhash.com/public/wp-content/plugins/qa/subscription-lifecycle-test/watch-reports/D13-2026-08-15.md
+2026-08-15T06:24:09+02:00 RETAIN task 119 is not done; teardown will retry at the next cron phase
+2026-08-15T12:10:01+02:00 START D13 (2026-08-15) phase=teardown-afternoon site=16:10 UTC+6
+2026-08-15T12:39:35+02:00 OK D13 phase=teardown-afternoon report=/home/server-manager/www/arrayhash/mirror-help.arrayhash.com/public/wp-content/plugins/qa/subscription-lifecycle-test/watch-reports/D13-2026-08-15.md
+2026-08-15T12:39:35+02:00 RETAIN task 119 is not done; teardown will retry at the next cron phase
+2026-08-15T15:10:01+02:00 START D13 (2026-08-15) phase=teardown-evening site=19:10 UTC+6
+2026-08-15T15:24:57+02:00 OK D13 phase=teardown-evening report=/home/server-manager/www/arrayhash/mirror-help.arrayhash.com/public/wp-content/plugins/qa/subscription-lifecycle-test/watch-reports/D13-2026-08-15.md
+2026-08-15T15:24:57+02:00 RETAIN task 119 is not done; teardown will retry at the next cron phase
+2026-08-15T17:42:01+02:00 START D13 (2026-08-15) phase=teardown-night site=21:42 UTC+6
+2026-08-15T18:18:22+02:00 OK D13 phase=teardown-night report=/home/server-manager/www/arrayhash/mirror-help.arrayhash.com/public/wp-content/plugins/qa/subscription-lifecycle-test/watch-reports/D13-2026-08-15.md
+2026-08-15T18:18:22+02:00 RETAIN task 119 is not done; teardown will retry at the next cron phase

@@ -1418,3 +1418,53 @@
 {"timestamp":"2026-08-15T02:36:50.405737727+02:00","action":"edit","task_id":119,"detail":"SLT-SETUP-99B Post-watch teardown on 2026-08-15 — delete every SLT artifact"}
 {"timestamp":"2026-08-15T02:36:50.408837181+02:00","action":"block","task_id":119,"detail":"Ownership closure failed: 343 unallowlisted arraysubs_sub_note posts are owned by teardown users; task 119 does not authorize this artifact class. See issues/SLT-SETUP-99B-unallowlisted-subscription-notes.md."}
 {"timestamp":"2026-08-15T02:36:50.409297056+02:00","action":"release","task_id":119,"detail":"rapid-ghost"}
+{"timestamp":"2026-08-15T03:15:25.92350101+02:00","action":"create","task_id":132,"detail":"Migrate payment gateways and automatic payments to ArraySubs core"}
+{"timestamp":"2026-08-15T04:49:35.573573451+02:00","action":"edit","task_id":132,"detail":"Migrate payment gateways and automatic payments to ArraySubs core"}
+{"timestamp":"2026-08-15T04:49:35.679107522+02:00","action":"move","task_id":132,"detail":"in-progress -\u003e done"}
+{"timestamp":"2026-08-15T04:49:58.389550443+02:00","action":"edit","task_id":132,"detail":"Migrate payment gateways and automatic payments to ArraySubs core"}
+{"timestamp":"2026-08-15T08:57:01.461240605+02:00","action":"create","task_id":133,"detail":"stage-5: Stripe subscription, regular, and mixed checkout QA"}
+{"timestamp":"2026-08-15T08:57:02.171487276+02:00","action":"create","task_id":134,"detail":"stage-5: Paddle subscription, regular, and mixed checkout QA"}
+{"timestamp":"2026-08-15T08:57:03.022499609+02:00","action":"create","task_id":135,"detail":"stage-6: Cross-gateway purchase integrity and cleanup"}
+{"timestamp":"2026-08-15T08:57:08.084633177+02:00","action":"edit","task_id":135,"detail":"stage-6: Cross-gateway purchase integrity and cleanup"}
+{"timestamp":"2026-08-15T08:57:08.085587331+02:00","action":"claim","task_id":135,"detail":"wind-path"}
+{"timestamp":"2026-08-15T08:57:08.202087318+02:00","action":"move","task_id":135,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-15T08:57:55.731298628+02:00","action":"create","task_id":136,"detail":"stage-0: Stripe and Paddle checkout preflight baseline"}
+{"timestamp":"2026-08-15T08:57:55.839607866+02:00","action":"edit","task_id":135,"detail":"stage-6: Cross-gateway purchase integrity and cleanup"}
+{"timestamp":"2026-08-15T08:57:56.66469651+02:00","action":"move","task_id":133,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-15T08:58:07.426967168+02:00","action":"edit","task_id":134,"detail":"stage-5: Paddle subscription, regular, and mixed checkout QA"}
+{"timestamp":"2026-08-15T08:58:07.431497682+02:00","action":"claim","task_id":134,"detail":"prism-glade"}
+{"timestamp":"2026-08-15T08:58:13.205747251+02:00","action":"move","task_id":134,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-15T08:59:09.760264304+02:00","action":"move","task_id":136,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-15T08:59:19.649705224+02:00","action":"edit","task_id":133,"detail":"stage-5: Stripe subscription, regular, and mixed checkout QA"}
+{"timestamp":"2026-08-15T09:05:16.611599791+02:00","action":"edit","task_id":134,"detail":"stage-5: Paddle subscription, regular, and mixed checkout QA"}
+{"timestamp":"2026-08-15T09:22:07.991878772+02:00","action":"edit","task_id":136,"detail":"stage-0: Stripe and Paddle checkout preflight baseline"}
+{"timestamp":"2026-08-15T09:31:12.401456868+02:00","action":"edit","task_id":136,"detail":"stage-0: Stripe and Paddle checkout preflight baseline"}
+{"timestamp":"2026-08-15T09:35:53.823267471+02:00","action":"create","task_id":137,"detail":"stage-6: Browser audit Stripe and Paddle purchase records"}
+{"timestamp":"2026-08-15T09:35:53.906949609+02:00","action":"edit","task_id":135,"detail":"stage-6: Cross-gateway purchase integrity and cleanup"}
+{"timestamp":"2026-08-15T09:36:34.159624509+02:00","action":"move","task_id":137,"detail":"todo -\u003e in-progress"}
+{"timestamp":"2026-08-15T09:49:15.838046074+02:00","action":"create","task_id":138,"detail":"stage-5: Stripe webhooks add duplicate payment-confirmed subscription notes"}
+{"timestamp":"2026-08-15T09:53:11.239592924+02:00","action":"edit","task_id":137,"detail":"stage-6: Browser audit Stripe and Paddle purchase records"}
+{"timestamp":"2026-08-15T09:54:09.065881666+02:00","action":"edit","task_id":134,"detail":"stage-5: Paddle subscription, regular, and mixed checkout QA"}
+{"timestamp":"2026-08-15T09:54:14.213532652+02:00","action":"edit","task_id":134,"detail":"stage-5: Paddle subscription, regular, and mixed checkout QA"}
+{"timestamp":"2026-08-15T09:54:14.214332849+02:00","action":"release","task_id":134,"detail":"prism-glade"}
+{"timestamp":"2026-08-15T09:54:14.29031876+02:00","action":"move","task_id":134,"detail":"in-progress -\u003e done"}
+{"timestamp":"2026-08-15T09:55:47.105801915+02:00","action":"edit","task_id":138,"detail":"stage-5: Stripe webhooks add duplicate payment-confirmed subscription notes"}
+{"timestamp":"2026-08-15T09:57:42.481790965+02:00","action":"edit","task_id":133,"detail":"stage-5: Stripe subscription, regular, and mixed checkout QA"}
+{"timestamp":"2026-08-15T09:57:48.684889377+02:00","action":"edit","task_id":133,"detail":"stage-5: Stripe subscription, regular, and mixed checkout QA"}
+{"timestamp":"2026-08-15T09:57:48.685905285+02:00","action":"release","task_id":133,"detail":"hawk-twig"}
+{"timestamp":"2026-08-15T09:57:48.964364901+02:00","action":"move","task_id":133,"detail":"in-progress -\u003e done"}
+{"timestamp":"2026-08-15T10:00:07.495953823+02:00","action":"edit","task_id":136,"detail":"stage-0: Stripe and Paddle checkout preflight baseline"}
+{"timestamp":"2026-08-15T10:00:12.960037679+02:00","action":"edit","task_id":136,"detail":"stage-0: Stripe and Paddle checkout preflight baseline"}
+{"timestamp":"2026-08-15T10:00:12.961838436+02:00","action":"release","task_id":136,"detail":"cape-oaken"}
+{"timestamp":"2026-08-15T10:00:17.945343365+02:00","action":"move","task_id":136,"detail":"in-progress -\u003e done"}
+{"timestamp":"2026-08-15T10:01:47.546707181+02:00","action":"edit","task_id":137,"detail":"stage-6: Browser audit Stripe and Paddle purchase records"}
+{"timestamp":"2026-08-15T10:01:47.634663167+02:00","action":"edit","task_id":137,"detail":"stage-6: Browser audit Stripe and Paddle purchase records"}
+{"timestamp":"2026-08-15T10:01:47.63629476+02:00","action":"release","task_id":137,"detail":"lynx-cedar"}
+{"timestamp":"2026-08-15T10:01:47.757300337+02:00","action":"move","task_id":137,"detail":"in-progress -\u003e done"}
+{"timestamp":"2026-08-15T10:07:13.50119992+02:00","action":"edit","task_id":134,"detail":"stage-5: Paddle subscription, regular, and mixed checkout QA"}
+{"timestamp":"2026-08-15T10:20:34.657258729+02:00","action":"edit","task_id":135,"detail":"stage-6: Cross-gateway purchase integrity and cleanup"}
+{"timestamp":"2026-08-15T10:20:34.921220617+02:00","action":"move","task_id":135,"detail":"in-progress -\u003e done"}
+{"timestamp":"2026-08-15T10:20:56.476113854+02:00","action":"edit","task_id":135,"detail":"stage-6: Cross-gateway purchase integrity and cleanup"}
+{"timestamp":"2026-08-15T10:20:56.477561669+02:00","action":"release","task_id":135,"detail":"wind-path"}
+{"timestamp":"2026-08-15T10:25:37.024667714+02:00","action":"edit","task_id":135,"detail":"stage-6: Cross-gateway purchase integrity and cleanup"}
+{"timestamp":"2026-08-15T10:30:34.892241858+02:00","action":"edit","task_id":135,"detail":"stage-6: Cross-gateway purchase integrity and cleanup"}
