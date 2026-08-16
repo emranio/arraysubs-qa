@@ -107,11 +107,11 @@ Verify the **Skip** and **Pause** customer actions correctly suppress / shift re
 6. Switch to admin and refresh.
 
 **Expected Result:**
-- Subscription status changes to **On Hold** (pause uses on-hold under the hood).
+- Subscription status changes to the distinct **Paused** status (never On Hold).
 - `_pause_start_date` set to today.
 - `_pause_end_date` set to today + 14 days.
 - A pending `arraysubs_resume_subscription` action is queued for the pause-end date.
-- Stripe gateway is also notified (gateway-side pause sync; verify in Webhook Event Log if applicable — relevant event type: `customer.subscription.updated`).
+- The gateway capability result is recorded: Paddle performs remote pause/resume when a remote subscription exists; Stripe, PayPal, Mollie, and manual billing remain local-only and must not invent a remote suspension.
 
 **Pass Criteria:** [ ] PASS [ ] FAIL
 **Fail Notes:**
@@ -123,7 +123,7 @@ Verify the **Skip** and **Pause** customer actions correctly suppress / shift re
 3. Refresh the subscription.
 
 **Expected Result:**
-- NO renewal order created (status is On-Hold, the engine excludes On-Hold from invoice generation regardless of `_next_payment_date`).
+- NO renewal order created (the engine excludes **Paused** from invoice generation regardless of `_next_payment_date`).
 
 **Pass Criteria:** [ ] PASS [ ] FAIL
 **Fail Notes:**
@@ -149,7 +149,7 @@ Verify the **Skip** and **Pause** customer actions correctly suppress / shift re
 1. Go to **WooCommerce → Status → Scheduled Actions** → filter Status = Complete.
 2. Confirm completed rows for `arraysubs_resume_subscription` and `arraysubs_generate_upcoming_renewals` (the run from Sub-Task 10.6 that generated nothing).
 3. Open Activity Audits. Filter Author = Customer (skip and pause), Author = System (resume).
-4. Click `changes →` on the resume audit row to confirm Status: On Hold → Active and `_next_payment_date` shifted by 14 days.
+4. Click `changes →` on the resume audit row to confirm Status: Paused → Active and `_next_payment_date` shifted by 14 days.
 5. (Pro) Open Scheduled-Job Logs and confirm Success rows for "Resume Subscription" and "Process Skipped Cycle" (or equivalent).
 
 **Expected Result:**
@@ -162,7 +162,7 @@ Verify the **Skip** and **Pause** customer actions correctly suppress / shift re
 ## Regression / Cross-checks
 - Confirm the customer received NO Renewal Invoice email during the skipped cycles or the pause window.
 - Confirm the subscription's "Next Payment" displayed in the customer portal matches the admin value at every step.
-- Confirm the Stripe gateway-side pause was applied (if Pro auto-renew is using Stripe Subscriptions for billing context). Review the Webhook Event Log for relevant `customer.subscription.updated` events around the pause/resume.
+- Confirm the recorded gateway capability matches the provider contract: Paddle remote sync where supported; Stripe/PayPal/Mollie/manual local-only with no false remote-success claim.
 - Confirm a second pause cannot be initiated within the configured cooldown period if Min days between pauses is set (try and verify the customer-side error message).
 - Restore the saved card to `4242`, leave the subscription Active for downstream tasks.
 

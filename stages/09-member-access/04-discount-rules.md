@@ -9,12 +9,13 @@
 | Depends On | 01-role-mapping.md |
 
 ## Objective
-Configure a Discount Rule that gives active **Pro Plan** subscribers a 15% discount on all products. Verify the discount is automatically applied on product pages and in the cart for active subscribers, while guests, non-members, and paused subscribers see the regular price.
+Configure a Discount Rule that gives access-granting **Pro Plan** subscribers a 15% discount on all products. Verify the discount is automatically applied for active subscribers, while guests and non-members see the regular price. With **Access During Pause = None or Limited**, paused subscribers see the regular price; Full behavior is covered in Task 10.
 
 ## Pre-conditions
 - Pro Plan subscription product and **Members Tee** ($20.00 non-subscription product) exist and are published.
 - Customers ready: `member1@example.com` (Active Pro Plan), `member2@example.com` (Paused Pro Plan), `nonmember@example.com` (no subscription), and a guest browser (incognito, never logged in).
 - WooCommerce currency is USD (or whatever the test store uses — record actual currency in Sign-off).
+- **Settings → Skip & Pause → Access During Pause** is set to **None** for this task.
 - "Subscription Plans" category exists and the **Pro Plan** product is assigned to it (so the rule can exclude subscription products themselves from the discount).
 
 ## Test Data
@@ -107,7 +108,7 @@ Configure a Discount Rule that gives active **Pro Plan** subscribers a 15% disco
 
 **Expected Result:**
 - Product page shows `$20.00` regular price only.
-- No member price displayed (paused subscriptions are not `active` so the rule does not match).
+- No member price displayed because None excludes Paused from the discount entitlement scope.
 
 **Pass Criteria:** [ ] PASS [ ] FAIL
 **Fail Notes:**

@@ -90,7 +90,7 @@ Run a complete SaaS / Digital Software profile through the wizard, click **Apply
 - **Renewal Sync → Sync Renewals to Next Billing Cycle** = On.
 - **Renewal Sync → First Charge** = Prorate until the synced renewal date.
 - **Email Reminder Schedule → Renewal Reminder (Days Before)** = 3.
-- **Customer Actions → Allow Suspension (Pause)** = On (because pause was enabled in Step 2).
+- **Skip & Pause → Enable Pause Subscription** = On and **Allow Customers to Pause** = On (because pause was enabled in Step 2).
 - **Cancellation Settings → Cancel Immediately** = On.
 - **Billing → Default Billing Period (`billing_period`)** is saved as `week` (matches the Step 1 Weekly choice and the predominantly-weekly catalog).
 

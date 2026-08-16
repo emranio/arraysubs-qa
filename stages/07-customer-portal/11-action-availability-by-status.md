@@ -9,29 +9,30 @@
 | Depends On | 03 through 10 (one subscription per status available) |
 
 ## Objective
-Cycle through every relevant subscription status (Active, Trial, On-Hold, Pending, Cancelled, Expired) and verify the action availability matrix renders **exactly** as documented in the manual. Each status must show only the actions defined as available in the table — and no others.
+Cycle through every relevant subscription status (Active, Trial, Paused, On-Hold, Pending, Cancelled, Expired) and verify the action availability matrix renders **exactly** as documented in the manual. Paused and On Hold are separate lifecycle states and must never share a Resume control.
 
 ## Pre-conditions
-- All settings used through Tasks 03–10 returned to their store defaults: Allow Cancellation on, Allow Plan Switching on, Skip Renewal on (Customer Can Skip on), Pause Subscription on (Customer Can Pause on).
+- All settings used through Tasks 03–10 returned to their store defaults: Allow Cancellation on, Allow Plan Switching on, Skip Renewal on (Customer Can Skip on), Pause Subscription on (Allow Customers to Pause and Allow Resume on).
 - `cust1@example.com` owns one subscription in each of these statuses (see Subscriptions A–N from prior tasks; reuse existing where possible):
   - **Active** — Subscription A or any active Basic Monthly with linked products.
   - **Trial** — Subscription with status Trial (e.g. a still-trialling Stage 03 trial product).
-  - **On-Hold** — A subscription currently paused (recreate from Task 07 if needed) OR an admin-set On-Hold subscription.
+  - **Paused** — A subscription paused through Task 07.
+  - **On-Hold** — A separate payment-recovery or admin-set On Hold subscription with no pause metadata.
   - **Pending** — A subscription whose initial payment hasn't completed (admin can set status to Pending).
   - **Cancelled** — Subscription E (Task 03) or any cancelled subscription.
   - **Expired** — Any subscription with status Expired (admin can set, or use a fixed-length subscription that has run its course).
 
 ## Reference Matrix (from manual — `self-service-actions.md`)
-| Action | Active | Trial | On-Hold | Pending | Cancelled | Expired |
-|---|---|---|---|---|---|---|
-| Cancel | Yes | Yes | — | Yes | — | — |
-| Undo scheduled cancel | Yes (if pending cancel) | — | — | — | — | — |
-| Retention offers | Yes | Yes | — | — | — | — |
-| Change plan | Yes | — | — | — | — | — |
-| Skip renewal | Yes | Yes | — | — | — | — |
-| Pause | Yes | Yes | — | — | — | — |
-| Resume | — | — | Yes (if paused) | — | — | — |
-| Update shipping | Yes | Yes | Yes | — | — | — |
+| Action | Active | Trial | Paused | On-Hold | Pending | Cancelled | Expired |
+|---|---|---|---|---|---|---|---|
+| Cancel | Yes | Yes | Yes | — | Yes | — | — |
+| Undo scheduled cancel | Yes (if pending cancel) | — | — | — | — | — | — |
+| Retention offers | Yes | Yes | — | — | — | — | — |
+| Change plan | Yes | — | — | — | — | — | — |
+| Skip renewal | Yes | Yes | — | — | — | — | — |
+| Pause | Yes | Yes | — | — | — | — | — |
+| Resume | — | — | Yes | — | — | — | — |
+| Update shipping | Yes | Yes | Yes | Yes | — | — | — |
 
 ## Sub-Tasks
 
@@ -68,23 +69,38 @@ Cycle through every relevant subscription status (Active, Trial, On-Hold, Pendin
 **Pass Criteria:** [ ] PASS [ ] FAIL
 **Fail Notes:**
 
-### Sub-Task 11.3 — On-Hold subscription (paused)
+### Sub-Task 11.3 — Paused subscription
 **Steps:**
-1. Open an On-Hold subscription that was paused via the customer portal (so it has the active pause metadata).
+1. Open the subscription paused via the customer portal in Task 07.
 
 **Expected Result:**
-- **Cancel Subscription**: NOT visible (per matrix On-Hold is not eligible).
+- Status badge reads **Paused**, not On Hold.
+- **Cancel Subscription**: visible.
 - **Change Plan**: NOT visible.
 - **Skip Next Renewal**: NOT visible.
 - **Pause Subscription**: NOT visible (already paused).
 - **Resume Now**: visible.
-- **Update Shipping Address**: visible (On-Hold is eligible per shipping rules).
+- **Update Shipping Address**: visible when otherwise eligible.
 - **Undo Cancellation**: not visible.
 
 **Pass Criteria:** [ ] PASS [ ] FAIL
 **Fail Notes:**
 
-### Sub-Task 11.4 — Pending subscription
+### Sub-Task 11.4 — On-Hold subscription
+**Steps:**
+1. Open the genuine On-Hold payment/admin-state subscription.
+
+**Expected Result:**
+- Status badge reads **On Hold**, not Paused.
+- **Resume Now**: NOT visible.
+- **Pause Subscription**, **Skip Next Renewal**, **Change Plan**, and customer cancellation are not visible.
+- Payment-recovery controls may appear only when their own failure conditions are present.
+- **Update Shipping Address** is visible when otherwise eligible.
+
+**Pass Criteria:** [ ] PASS [ ] FAIL
+**Fail Notes:**
+
+### Sub-Task 11.5 — Pending subscription
 **Steps:**
 1. Open the Pending test subscription.
 
@@ -100,18 +116,18 @@ Cycle through every relevant subscription status (Active, Trial, On-Hold, Pendin
 **Pass Criteria:** [ ] PASS [ ] FAIL
 **Fail Notes:**
 
-### Sub-Task 11.5 — Cancelled subscription
+### Sub-Task 11.6 — Cancelled subscription
 **Steps:**
 1. Open a Cancelled test subscription.
 
 **Expected Result:**
-- The Subscription Actions section is **not present** at all (only renders for Active or On-Hold).
+- The Subscription Actions section is **not present**.
 - No action buttons appear: Cancel / Change Plan / Skip / Pause / Resume / Update Shipping / Undo Cancellation are all hidden.
 
 **Pass Criteria:** [ ] PASS [ ] FAIL
 **Fail Notes:**
 
-### Sub-Task 11.6 — Expired subscription
+### Sub-Task 11.7 — Expired subscription
 **Steps:**
 1. Open an Expired test subscription.
 
@@ -121,7 +137,7 @@ Cycle through every relevant subscription status (Active, Trial, On-Hold, Pendin
 **Pass Criteria:** [ ] PASS [ ] FAIL
 **Fail Notes:**
 
-### Sub-Task 11.7 — Active with pending cancel (Undo state)
+### Sub-Task 11.8 — Active with pending cancel (Undo state)
 **Steps:**
 1. Trigger an end-of-period cancel on a fresh Active subscription (per Task 04 flow), then open it.
 

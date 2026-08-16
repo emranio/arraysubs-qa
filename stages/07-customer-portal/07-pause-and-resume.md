@@ -9,11 +9,12 @@
 | Depends On | 02 — View Subscription detail, 06 — Skip next renewal (no overlapping skip) |
 
 ## Objective
-On an Active subscription, pause it for 30 days with a reason, observe the on-hold status with the ⏸ Subscription Paused indicator and auto-resume scheduling, then click **Resume Now** before the auto-resume date and verify the next-payment-date is recalculated correctly.
+On an Active subscription, pause it for 30 days with a reason, observe the distinct **Paused** status with the ⏸ Subscription Paused indicator and auto-resume scheduling, then click **Resume Now** before the auto-resume date and verify the next-payment-date is recalculated correctly.
 
 ## Pre-conditions
-- **General Settings → Pause Subscription → Enable Pause:** Enabled.
-- **General Settings → Pause Subscription → Customer Can Pause:** Enabled.
+- **Settings → Skip & Pause → Enable Pause Subscription:** Enabled.
+- **Settings → Skip & Pause → Allow Customers to Pause:** Enabled.
+- **Settings → Skip & Pause → Allow Resume:** Enabled.
 - **Maximum Pause Duration** set to at least 30 days.
 - "Require Pause Reason" toggle set per your store config — record which it is before testing.
 - `cust1@example.com` owns Subscription H — an Active Basic Monthly with no active skip and no pending cancellation.
@@ -46,7 +47,7 @@ On an Active subscription, pause it for 30 days with a reason, observe the on-ho
 
 **Expected Result:**
 - A success notice reads exactly: **"Subscription paused. Will auto-resume on [date]."** where `[date]` is today + 30 days.
-- The status badge updates to **On-Hold** (yellow).
+- The status badge updates to **Paused** (indigo), never On Hold.
 - The page now shows:
   - The ⏸ icon with the text **"Subscription Paused"**.
   - The pause start date (today).
@@ -72,7 +73,7 @@ On an Active subscription, pause it for 30 days with a reason, observe the on-ho
 2. Filter Pending and search by Subscription H's ID.
 
 **Expected Result:**
-- A scheduled auto-resume action is queued for the resume date (record the exact hook name, e.g. `arraysubs_subscription_auto_resume`).
+- A scheduled auto-resume action is queued for the resume date with hook `arraysubs_resume_subscription`.
 - No renewal action is scheduled inside the pause window.
 
 **Pass Criteria:** [ ] PASS [ ] FAIL
@@ -98,7 +99,7 @@ On an Active subscription, pause it for 30 days with a reason, observe the on-ho
 
 **Expected Result:**
 - The previously scheduled auto-resume action is cancelled or marked complete (no longer pending).
-- A normal renewal action is scheduled for the new Next Payment date.
+- The normal invoice-generation and renewal-processing actions are restored from the new Next Payment date.
 
 **Pass Criteria:** [ ] PASS [ ] FAIL
 **Fail Notes:**
@@ -116,7 +117,8 @@ On an Active subscription, pause it for 30 days with a reason, observe the on-ho
 **Fail Notes:**
 
 ## Regression / Cross-checks
-- Confirm the My Subscriptions list shows the subscription with a yellow **On-Hold** badge while paused, then green **Active** after resume.
+- Confirm the My Subscriptions list shows the subscription with an indigo **Paused** badge while paused, then green **Active** after resume.
+- Confirm a genuine **On Hold** subscription does not show **Resume Now**; On Hold remains a payment/admin recovery state.
 - Confirm Skip and Pause cannot overlap: while paused, the Skip Next Renewal control should be hidden or disabled.
 
 ## Sign-off

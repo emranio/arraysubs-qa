@@ -9,7 +9,7 @@
 | Depends On | 01 — Cancellation reasons setup |
 
 ## Objective
-Configure a 30-day pause offer triggered by **Just need a temporary break**. As a customer, cancel with that reason; the **"Before You Go..."** modal must show the pause card. Accept it. Verify the subscription transitions to On-Hold, an auto-resume is scheduled, and the next-payment-date is shifted forward by 30 days.
+Configure a 30-day pause offer triggered by **Just need a temporary break**. As a customer, cancel with that reason; the **"Before You Go..."** modal must show the pause card. Accept it. Verify the subscription transitions to **Paused**, an auto-resume is scheduled, and the next-payment-date is shifted forward by 30 days.
 
 ## Pre-conditions
 - 01 — Cancellation reasons setup PASSED.
@@ -62,20 +62,20 @@ Configure a 30-day pause offer triggered by **Just need a temporary break**. As 
 **Expected Result:**
 - The retention modal closes.
 - A success notice confirms the pause (record exact wording).
-- The subscription transitions to **On-Hold** (yellow badge).
+- The subscription transitions to **Paused** (indigo badge), never On Hold.
 
 **Pass Criteria:** [ ] PASS [ ] FAIL
 **Fail Notes:**
 
-### Sub-Task 03.4 — On-Hold indicator and resume date
+### Sub-Task 03.4 — Paused indicator and resume date
 **Steps:**
 1. Refresh Subscription R2.
 
 **Expected Result:**
-- Status badge is **On-Hold**.
+- Status badge is **Paused**.
 - A note about the scheduled resume date is shown — exactly today + 30 days.
 - The next payment date is shifted forward by 30 days from the originally recorded value.
-- Per the manual: the customer does **not** see a manual Resume Now button for retention pauses (resume happens automatically) — record the actual UI behaviour.
+- If **Allow Resume** is enabled under Skip & Pause, the customer sees **Resume Now**; when disabled, the button is absent and the REST action is rejected.
 
 **Pass Criteria:** [ ] PASS [ ] FAIL
 **Fail Notes:**
@@ -86,7 +86,7 @@ Configure a 30-day pause offer triggered by **Just need a temporary break**. As 
 2. Filter Pending and search by Subscription R2's ID.
 
 **Expected Result:**
-- An auto-resume action is scheduled for the resume date (record the hook name, e.g. `arraysubs_subscription_auto_resume`).
+- An `arraysubs_resume_subscription` action is scheduled for the resume date.
 - No renewal action is scheduled inside the pause window.
 
 **Pass Criteria:** [ ] PASS [ ] FAIL
@@ -119,8 +119,8 @@ Configure a 30-day pause offer triggered by **Just need a temporary break**. As 
 **Fail Notes:**
 
 ## Regression / Cross-checks
-- Confirm the My Subscriptions list shows Subscription R2 with the **On-Hold** badge while paused, then **Active** after auto-resume.
-- The pause offer through retention should NOT count against the standalone customer-side pause feature toggle for future eligibility checks.
+- Confirm the My Subscriptions list shows Subscription R2 with the **Paused** badge while paused, then **Active** after auto-resume.
+- The retention pause uses the same Pause Manager and therefore follows the same duration, pause-count, cooldown, billing, access, and resume rules as a direct customer pause.
 
 ## Sign-off
 - Tester:

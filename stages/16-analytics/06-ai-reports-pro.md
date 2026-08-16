@@ -46,7 +46,17 @@ Verify that both AI report implementations are owned entirely by ArraySubsPro, r
 - Changing the horizon updates the deterministic projection surface without a page error.
 - No JavaScript error, PHP error, 404, or 500 response occurs.
 
-### Sub-Task 6.3 — Verify Pro-only ownership
+### Sub-Task 6.3 — Verify Paused analytics semantics
+
+Before deactivating Pro, pause one billing subscription and refresh both reports.
+
+**Expected Result:**
+
+- Churn Analysis keeps the subscription in its live population, shows status **Paused**, and increments the separate Paused KPI without incrementing On Hold.
+- Revenue Forecast excludes the Paused subscription from current billing MRR and active subscriber count because no charge is due while paused.
+- After Resume, the Paused KPI returns to zero and the subscription returns to current MRR/subscriber count.
+
+### Sub-Task 6.4 — Verify Pro-only ownership
 
 1. Deactivate ArraySubsPro while leaving ArraySubs active.
 2. Reload WooCommerce Analytics.
@@ -60,7 +70,7 @@ Verify that both AI report implementations are owned entirely by ArraySubsPro, r
 - The Free Reports Hub still renders the AI Reports catalog section, and the section plus all six cards carry Pro badges.
 - ArraySubs core remains operational with no fatal error.
 
-### Sub-Task 6.4 — Reactivate Pro
+### Sub-Task 6.5 — Reactivate Pro
 
 1. Reactivate ArraySubsPro.
 2. Reload both AI report URLs.

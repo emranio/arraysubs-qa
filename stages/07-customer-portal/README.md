@@ -8,14 +8,16 @@
 - Stage 04 cart rules and Stage 05/06 subscriptions seeded so that test customer `cust1@example.com` owns at least:
   - 1 Active Basic Monthly subscription with linked Pro upgrade
   - 1 Trial subscription
-  - 1 On-Hold subscription
+  - 1 Paused subscription
+  - 1 On-Hold payment-recovery subscription
   - 1 Cancelled subscription
   - 1 Expired subscription
   - 1 Active subscription on a physical/shipped product
   - 1 Active subscription on a Pro automatic gateway (Stripe sandbox) for the auto-renew toggle test
 - ArraySubs Pro active and Stripe (or other automatic gateway) test mode connected for tasks that require gateway-specific checks.
-- General Settings → Customer Actions: `Allow Cancellation`, `Allow Plan Switching`, `Allow Reactivation`, `Allow Auto-Renew Toggle` all enabled.
-- Skip & Renewal and Pause Subscription enabled, "Customer Can Skip" and "Customer Can Pause" both on.
+- General Settings → Customer Actions: `Allow Cancellation` enabled.
+- Plan Switching and Auto-Renew controls enabled in their owning settings sections.
+- Skip & Pause: Skip Renewal and Pause Subscription enabled; **Allow Customers to Skip**, **Allow Customers to Pause**, and **Allow Resume** all on.
 
 **Run order:**
 1. [01 — My Subscriptions list](01-my-subscriptions-list.md) — Verify the list table, columns, badges, pagination, empty state.
@@ -28,7 +30,7 @@
 8. [08 — Change plan, immediate proration](08-change-plan-immediate-prorate.md) — Basic → Pro with proration preview, checkout, post-switch verification.
 9. [09 — Change plan, apply at renewal](09-change-plan-apply-at-renewal.md) — Same flow with deferred switch, pending-switch banner, customer-side cancel pending switch.
 10. [10 — Payment method, auto-renew, shipping](10-payment-method-and-shipping.md) — Pro: Manage payment methods link, auto-renew toggle off/on, shipping update inside and within the 3-day cutoff.
-11. [11 — Action availability by status](11-action-availability-by-status.md) — Walk every status (Active, Trial, On-Hold, Pending, Cancelled, Expired) and verify the action matrix exactly matches the manual reference table.
+11. [11 — Action availability by status](11-action-availability-by-status.md) — Walk every status (Active, Trial, Paused, On-Hold, Pending, Cancelled, Expired) and verify the action matrix exactly matches the manual reference table.
 
 **Exit criteria:**
 - All 11 task files signed PASS, or failures recorded with screenshots and reproduction steps.

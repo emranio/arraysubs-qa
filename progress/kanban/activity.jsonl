@@ -35,3 +35,13 @@
 {"timestamp":"2026-08-15T23:37:12.954925992+02:00","action":"move","task_id":9,"detail":"in-progress -\u003e closed"}
 {"timestamp":"2026-08-15T23:37:49.728032486+02:00","action":"edit","task_id":8,"detail":"stage-16: AI Reports Pro Ownership and Browser Verification"}
 {"timestamp":"2026-08-15T23:37:49.983897733+02:00","action":"edit","task_id":9,"detail":"stage-03: Subscription Box Free Ownership and Browser Verification"}
+{"timestamp":"2026-08-16T13:01:31.931509+06:00","action":"create","task_id":10,"detail":"stage-7: Purchase subscription and verify My Account pause and resume"}
+{"timestamp":"2026-08-16T13:01:31.932951+06:00","action":"create","task_id":11,"detail":"stage-2: Secondary Pause and Resume setting and REST verification"}
+{"timestamp":"2026-08-16T13:11:50.207866+06:00","action":"edit","task_id":11,"detail":"stage-2: Secondary Pause and Resume setting and REST verification"}
+{"timestamp":"2026-08-16T13:11:50.207877+06:00","action":"edit","task_id":10,"detail":"stage-7: Purchase subscription and verify My Account pause and resume"}
+{"timestamp":"2026-08-16T13:11:50.218123+06:00","action":"move","task_id":11,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-08-16T13:11:50.218132+06:00","action":"move","task_id":10,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-08-16T13:58:17.708045+06:00","action":"create","task_id":12,"detail":"stage-7: First-class Paused lifecycle, settings migration, REST and My Account production QA"}
+{"timestamp":"2026-08-16T13:58:17.719161+06:00","action":"move","task_id":12,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-08-16T15:00:32.406548+06:00","action":"edit","task_id":12,"detail":"stage-7: First-class Paused lifecycle, settings migration, REST and My Account production QA"}
+{"timestamp":"2026-08-16T15:00:42.225875+06:00","action":"move","task_id":12,"detail":"in-progress -\u003e closed"}

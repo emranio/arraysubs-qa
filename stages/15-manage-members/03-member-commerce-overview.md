@@ -49,7 +49,7 @@ On a customer's Manage Members page, verify the three commerce sections render c
 - 8 columns: **ID**, **Product**, **Status**, **Total**, **Billing**, **Next Payment**, **Created**, **Actions**.
 - ID column shows clickable subscription IDs like `#142`.
 - Status column shows colour-coded badges per the manual:
-  - Active = Green; Trial = Light blue; Pending = Blue; On Hold = Yellow; Paused = Yellow; Cancelled = Red; Expired = Gray.
+  - Active = Green; Trial = Light blue; Pending = Blue; On Hold = Yellow; Paused = Indigo; Cancelled = Red; Expired = Gray.
 - Billing shows `Every {interval} {period}` (e.g. `Every 1 month`).
 - Next Payment shows a date or `—` if no future payment.
 - Actions column has a **View** link.

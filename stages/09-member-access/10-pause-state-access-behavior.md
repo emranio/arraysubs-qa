@@ -3,151 +3,125 @@
 | Key | Value |
 |---|---|
 | Stage | 09 — Member Access & Restriction Rules |
-| Module | Member Access — Pause/On-Hold interactions |
-| Plugin Coverage | Free |
-| Estimated Time | 30 min |
-| Depends On | 02-url-rules.md, 03-post-type-rules.md, 04-discount-rules.md |
+| Module | Member Access — Paused entitlement policy |
+| Plugin Coverage | Free + Pro integrations |
+| Estimated Time | 35 min |
+| Depends On | 01-role-mapping.md, 02-url-rules.md, 03-post-type-rules.md, 04-discount-rules.md, 06-download-rules.md |
 
 ## Objective
-Verify that when a customer's subscription is in **Paused** state, three different access behaviors can be configured and observed: **None** (paused = no access), **Limited** (paused = access to a separate limited rule), and **Full** (paused = same access as active by including `paused` in the rule conditions). Confirm the customer's restricted-content access matches each setting exactly.
+
+Verify the global **Settings → Skip & Pause → Access During Pause** policy across every entitlement consumer. **None** revokes all implicit member access, **Limited** permits protected-content viewing only, and **Full** treats Paused as access-granting for every scope. An explicit `Subscription Status = Paused` condition remains independently matchable in the condition builders.
 
 ## Pre-conditions
-- `member2@example.com` has a Paused subscription to **Pro Plan** (created in Stage 06 or by pausing `member1@example.com`'s subscription temporarily — note which approach in Sign-off).
-- `member1@example.com` still has an Active Pro Plan subscription for comparison.
-- Test page **Pause Test Page** at slug `pause-test-page`, body text "PAUSE TEST CONTENT OK".
-- The Stage 09 Task 03 KB Articles rule is enabled.
-- The Stage 09 Task 04 Discount rule is enabled.
 
-## Test Data
-- Test customer: `member2@example.com` (Paused Pro Plan)
-- Test page: `/pause-test-page`
-- Three rules will be created/modified in this task — clean up at end.
+- `member2@example.com` has a **Paused** Pro Plan subscription; `member1@example.com` has an Active Pro Plan subscription.
+- Test page **Pause Test Page** at `/pause-test-page` contains `PAUSE TEST CONTENT OK` and is protected by a **Has Active Subscription → Pro Plan** condition.
+- Stage 09 role, discount, download, ecommerce, and URL rules are enabled.
+- If available, one third-party entitlement integration is connected for a full-access spot-check.
 
 ## Sub-Tasks
 
-### Sub-Task 10.1 — Setup: Confirm paused subscription state
-**Steps:**
-1. Go to **ArraySubs → Subscriptions**. Filter by status `Paused`.
-2. Confirm `member2@example.com` has a Pro Plan subscription with status `Paused`.
-3. If not, take an Active Pro Plan subscription (from member2 or another customer) and pause it via the customer portal flow tested in Stage 07.
+### Sub-Task 10.1 — Confirm first-class Paused state
 
-**Expected Result:**
-- At least one paused Pro Plan subscription exists for the test customer.
+1. Open **ArraySubs → Subscriptions** and filter by **Paused**.
+2. Confirm the customer, subscription ID, Paused badge, pause dates, and Resume action.
+3. Filter **On Hold** separately and confirm the paused subscription is absent.
 
-**Pass Criteria:** [ ] PASS [ ] FAIL
-**Fail Notes:**
-
-### Sub-Task 10.2 — Behavior NONE: paused customer is denied
-**Steps:**
-1. Create a new Post Type rule:
-   - Name: `Pause Test — None (active only)`.
-   - Target: Specific Posts → **Pause Test Page**.
-   - IF: Has Active Subscription to **Pro Plan** (status filter = `active` only).
-   - THEN: Action = `Message`, Message = `Active Pro Plan required.`
-2. Save.
-3. Log in as `member2@example.com` (paused).
-4. Navigate to `/pause-test-page`.
-
-**Expected Result:**
-- Body "PAUSE TEST CONTENT OK" is NOT shown.
-- Message `Active Pro Plan required.` is rendered.
-- This confirms the default behavior — paused state is excluded from `active` condition.
+**Expected Result:** Paused and On Hold have independent filters, counts, badges, and actions.
 
 **Pass Criteria:** [ ] PASS [ ] FAIL
 **Fail Notes:**
 
-### Sub-Task 10.3 — Behavior FULL: include paused in conditions
-**Steps:**
-1. Edit the rule from 10.2.
-2. Update the IF condition's status filter to include both `active` AND `paused` (multi-select).
-3. Save.
-4. Reload `/pause-test-page` as `member2@example.com`.
+### Sub-Task 10.2 — None: revoke implicit access
+
+1. Set **Access During Pause** to **No access (fully restricted)** and save.
+2. As `member2@example.com`, open `/pause-test-page`, the protected download, and the discounted product.
+3. Inspect the customer's mapped WordPress roles.
 
 **Expected Result:**
-- Body "PAUSE TEST CONTENT OK" is now visible.
-- No restriction message.
-- This proves explicit inclusion of `paused` in the status filter grants full access during pause.
+
+- Protected content and downloads are denied.
+- No member discount, purchase benefit, comment privilege, session privilege, course/licence/integration entitlement, or mapped member role is retained because of the paused subscription.
+- The Active comparison customer is unaffected.
 
 **Pass Criteria:** [ ] PASS [ ] FAIL
 **Fail Notes:**
 
-### Sub-Task 10.4 — Behavior LIMITED: separate rules for active vs paused
-**Steps:**
-1. Revert 10.2's rule to status filter `active` only.
-2. Create a SECOND Post Type rule:
-   - Name: `Pause Test — Limited (paused-only message)`.
-   - Target: Specific Posts → **Pause Test Page**.
-   - IF: Has Subscription with status `paused` to **Pro Plan**.
-   - THEN: Action = `Message`, Message = `You are on pause — please resume your subscription to access this content. <a href="/my-account/subscriptions/">Resume now</a>.`
-3. Save.
-4. Reload `/pause-test-page` as `member2@example.com`.
+### Sub-Task 10.3 — Limited: view-only access
+
+1. Set **Access During Pause** to **Limited access (content only)** and save.
+2. Repeat the page, URL, block/widget, download, discount, ecommerce, role, comment, session, and integration checks.
 
 **Expected Result:**
-- The custom limited message including the "Resume now" link is shown.
-- Body "PAUSE TEST CONTENT OK" is NOT shown.
-- This proves a paused-specific rule can deliver a limited / informational experience without granting full access.
+
+- Protected page/URL/shortcode/Gutenberg/Elementor content is visible.
+- Downloads, discounts, purchase benefits, comments, session privileges, mapped roles, courses, licences, CRM tags, and other integrations remain revoked.
+- Changing the setting clears evaluator caches and reconciles roles without requiring a status toggle.
 
 **Pass Criteria:** [ ] PASS [ ] FAIL
 **Fail Notes:**
 
-### Sub-Task 10.5 — Active subscriber unaffected
-**Steps:**
-1. Log in as `member1@example.com` (Active Pro Plan).
-2. Navigate to `/pause-test-page`.
+### Sub-Task 10.4 — Full: all entitlement scopes
+
+1. Set **Access During Pause** to **Full access** and save.
+2. Repeat every check from 10.3.
 
 **Expected Result:**
-- Body "PAUSE TEST CONTENT OK" is shown.
-- Neither the limited message nor the active-only message is shown.
-- The active rule from 10.2 grants access; the paused rule from 10.4 does NOT match.
+
+- Paused grants the same content, role, download, discount, ecommerce, comment, session, and integration entitlements as Active/Trial.
+- Existing paused customers are reconciled immediately; no manual resume/re-pause is required.
 
 **Pass Criteria:** [ ] PASS [ ] FAIL
 **Fail Notes:**
 
-### Sub-Task 10.6 — Verify Discount Rule does NOT apply to paused
-**Steps:**
-1. As `member2@example.com` (paused), navigate to **Members Tee** product page.
-2. Inspect the price.
+### Sub-Task 10.5 — Explicit Paused conditions
+
+1. In a Member Access rule, add **Subscription Status** and open its status selector.
+2. Confirm **Paused** and **On Hold** are separate choices; select only **Paused** and save a temporary rule.
+3. Test it under None, Limited, and Full.
 
 **Expected Result:**
-- Regular price `$20.00` is shown — no member discount.
-- Confirms that for Discount Rules, `paused` subscriptions are not considered "active" (per the manual: "No discounts (not an active subscription)").
+
+- The explicit Paused condition matches the paused subscription in every policy mode; the global mode controls implicit entitlement, not the truth of a status-specific condition.
+- On Hold does not match the Paused condition.
 
 **Pass Criteria:** [ ] PASS [ ] FAIL
 **Fail Notes:**
 
-### Sub-Task 10.7 — Verify Role Mapping behavior on paused
-**Steps:**
-1. In wp-admin, open **Users → All Users → member2@example.com**.
-2. Inspect the Role field.
+### Sub-Task 10.6 — Gutenberg and Elementor builders
 
-**Expected Result:**
-- The `pro_member` role is still present (per the manual: "Paused — No explicit role changes — roles assigned during the active period remain in place").
-- This is expected behavior. Document role-list verbatim in Sign-off.
+1. Edit a Gutenberg page and select the ArraySubs Restricted Content block.
+2. Open its Subscription Status control.
+3. If Elementor is installed, enable ArraySubs Content Restrictions on a test container and open the equivalent status control without publishing unrelated changes.
+
+**Expected Result:** Both builders list Active, Trial, **Paused**, On Hold, Pending, Cancelled, and Expired as distinct values. Runtime access follows None/Limited/Full because both builders delegate to the shared evaluator.
 
 **Pass Criteria:** [ ] PASS [ ] FAIL
 **Fail Notes:**
 
-### Sub-Task 10.8 — Cleanup
-**Steps:**
-1. Delete or disable the two pause test rules created in 10.2 and 10.4.
-2. If `member1`'s subscription was paused for setup purposes, resume it.
-3. Confirm rule list at **ArraySubs → Member Access → Post Types** matches pre-task baseline plus only the Stage 09 Task 03 rule.
+### Sub-Task 10.7 — Restore baseline
 
-**Expected Result:**
-- Pause test rules removed. Other Stage 09 rules remain enabled.
+1. Set **Access During Pause** back to the recorded baseline.
+2. Remove temporary explicit-status rules and unsaved builder test content.
+3. Resume any subscription paused only for this task.
+4. Confirm all test users, roles, plugins, and rules match their pre-task state.
 
 **Pass Criteria:** [ ] PASS [ ] FAIL
 **Fail Notes:**
 
 ## Regression / Cross-checks
-- Confirm if the rule's IF status set is `[active, trial]` (the default), paused subscribers are denied. If it includes `paused`, they are granted access. There is no separate "pause-state setting" — pause behavior is controlled by which statuses are listed in the rule conditions.
-- Confirm the same rule conditions principle applies to URL Rules and Ecommerce Rules (spot-check by adding `paused` to the URL rule's conditions in Task 02 if needed).
-- Confirm Role Mapping has its own `On Hold Behavior` setting (separate from `paused`) — Keep roles vs Remove roles for `on-hold`. Paused is always preserved.
+
+- On Hold Behavior in Role Mapping remains a separate payment/admin-state control and never governs Paused.
+- Paused never generates renewal invoices or charges, regardless of access mode.
+- Changing access mode must not change subscription status, pause dates, next-payment date, or scheduler jobs.
 
 ## Sign-off
+
 - Tester:
 - Date:
 - Browser & version:
-- Source of paused subscription (member2 baseline / member1 paused for setup):
-- Roles list for member2 verified verbatim:
+- Paused subscription ID:
+- Baseline/final access mode:
+- Gutenberg result:
+- Elementor result:
 - Notes:

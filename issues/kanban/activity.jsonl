@@ -59,3 +59,10 @@
 {"timestamp":"2026-08-15T23:36:27.94552333+02:00","action":"create","task_id":9,"detail":"Requested mirror-arraysubs QA hostname does not resolve"}
 {"timestamp":"2026-08-15T23:37:50.292051476+02:00","action":"edit","task_id":9,"detail":"Requested mirror-arraysubs QA hostname does not resolve"}
 {"timestamp":"2026-08-16T08:11:20.040140304+02:00","action":"delete","task_id":9,"detail":"Requested mirror-arraysubs QA hostname does not resolve"}
+{"timestamp":"2026-08-16T13:01:31.932069+06:00","action":"create","task_id":10,"detail":"stage-7: Secondary Pause and Resume QA issue triage"}
+{"timestamp":"2026-08-16T13:11:50.207077+06:00","action":"edit","task_id":10,"detail":"stage-7: Secondary Pause and Resume QA issue triage"}
+{"timestamp":"2026-08-16T13:11:50.218052+06:00","action":"move","task_id":10,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-08-16T13:58:30.730657+06:00","action":"create","task_id":11,"detail":"Paused customer action incorrectly reused On Hold and settings were split across tabs"}
+{"timestamp":"2026-08-16T13:58:34.430241+06:00","action":"move","task_id":11,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-08-16T15:00:32.404258+06:00","action":"edit","task_id":11,"detail":"Paused customer action incorrectly reused On Hold and settings were split across tabs"}
+{"timestamp":"2026-08-16T15:00:39.168633+06:00","action":"move","task_id":11,"detail":"in-progress -\u003e closed"}

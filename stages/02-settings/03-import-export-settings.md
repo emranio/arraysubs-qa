@@ -68,7 +68,7 @@ Export the current ArraySubs configuration to JSON, modify a handful of settings
 **Steps:**
 1. Go to **ArraySubs → Settings → General**.
 2. Set **Days Active After Due** to `10` (was 3 or whatever your baseline is).
-3. Set **Allow Reactivation** to **Off** (was On).
+3. Open **Skip & Pause** and set **Allow Resume** to **Off** (was On).
 4. Set **Renewal Reminder (Days Before)** to `15`.
 5. Toggle **Sync Renewals to Next Billing Cycle** to the opposite of the exported baseline and change **First Charge** to the opposite mode if the selector is visible.
 6. Click **Save Settings**.
@@ -104,7 +104,7 @@ Export the current ArraySubs configuration to JSON, modify a handful of settings
 ### Sub-Task 3.5 — Verify subscription settings reverted, but other sections intact
 **Steps:**
 1. Go to **ArraySubs → Settings → General**.
-2. Read the values for **Days Active After Due**, **Allow Reactivation**, **Renewal Reminder (Days Before)**, **Sync Renewals to Next Billing Cycle**, and **First Charge**.
+2. Read the values for **Days Active After Due**, **Allow Resume** under Skip & Pause, **Renewal Reminder (Days Before)**, **Sync Renewals to Next Billing Cycle**, and **First Charge**.
 3. Go to **ArraySubs → Settings → Toolkit** and read **Hide admin bar for non-admin users**.
 
 **Expected Result:**

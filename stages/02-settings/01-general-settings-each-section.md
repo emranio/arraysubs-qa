@@ -133,12 +133,14 @@ Exercise every section of **ArraySubs → Settings → General**: Multiple Subsc
 ### Sub-Task 1.6 — Customer Actions section
 **Steps:**
 1. Toggle **Allow Cancellation** to **Off**, save, reload.
-2. Toggle **Allow Suspension (Pause)** to **On**, save, reload.
-3. Toggle **Allow Reactivation** to **Off**, save, reload.
-4. Restore the documented defaults: Allow Cancellation **On**, Allow Suspension **Off**, Allow Reactivation **On**.
+2. Confirm no Suspension or Reactivation toggle appears in Customer Actions.
+3. Click the **Skip & Pause settings** link and confirm it opens that tab.
+4. Toggle **Allow Customers to Pause** and **Allow Resume**, save, and reload.
+5. Restore the documented defaults: Allow Cancellation **On**, Allow Customers to Pause **On**, Allow Resume **On**.
 
 **Expected Result:**
 - Each toggle persists across reload.
+- Pause and Resume permissions exist only under **Skip & Pause**; Customer Actions contains linking text instead of duplicate controls.
 - The info-box pointing to **ArraySubs → Profile Builder → My Account** for renaming the Subscriptions tab is visible.
 
 **Pass Criteria:** [ ] PASS [ ] FAIL
