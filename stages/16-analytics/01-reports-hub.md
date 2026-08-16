@@ -9,7 +9,7 @@
 | Depends On | Pre-flight stage 00 (admin menu visibility) |
 
 ## Objective
-Open **ArraySubs → Reports** and verify the directory page renders with: a summary bar, a quick-navigation pill row, and 12 categorized sections each with their report cards. Confirm Free / Pro badges, descriptive titles, and category-to-report mappings match the manual. Verify the capability check: Shop Manager can see the page; Customer cannot.
+Open **ArraySubs → Reports** and verify the directory page renders with: a summary bar, a quick-navigation pill row, and 13 categorized sections each with their report cards. Confirm Free / Pro badges, descriptive titles, and category-to-report mappings match the manual. Verify the capability check: Shop Manager can see the page; Customer cannot.
 
 ## Pre-conditions
 - Logged in as Administrator initially.
@@ -18,8 +18,9 @@ Open **ArraySubs → Reports** and verify the directory page renders with: a sum
 - ArraySubs Pro is active (so Pro-labelled cards are clickable).
 
 ## Test Data
-- Expected category count: 12.
-- Expected categories: Subscription Performance *(Pro)*, Leaderboards *(Pro)*, Retention Analytics *(Free)*, Orders Analytics *(Pro)*, Revenue Analytics *(Pro)*, Products & Variations Analytics *(Pro)*, Customers Analytics *(Pro)*, Order List Enhancements *(Pro)*, Subscriptions *(Free)*, Member Insights *(Pro)*, Store Credit *(Pro)*, Audit Logs *(Pro)*.
+- Expected category count: 13.
+- Expected report count: 49.
+- Expected categories: Subscription Performance *(Pro)*, Leaderboards *(Pro)*, Retention Analytics *(Free)*, AI Reports *(Pro)*, Orders Analytics *(Pro)*, Revenue Analytics *(Pro)*, Products & Variations Analytics *(Pro)*, Customers Analytics *(Pro)*, Order List Enhancements *(Pro)*, Subscriptions *(Free)*, Member Insights *(Pro)*, Store Credit *(Pro)*, Audit Logs *(Pro)*.
 
 ## Sub-Tasks
 
@@ -30,19 +31,19 @@ Open **ArraySubs → Reports** and verify the directory page renders with: a sum
 
 **Expected Result:**
 - The page loads at the Reports Hub with no empty state or error.
-- A summary bar at the top shows: total categories (`12`), total reports across categories, count of free vs Pro.
+- A summary bar at the top shows: total categories (`13`), total reports (`49`), Free reports (`9`), and Pro reports (`40`).
 - Quick-navigation pills row appears below the summary bar with one pill per category.
 
 **Pass Criteria:** [ ] PASS [ ] FAIL
 **Fail Notes:**
 
-### Sub-Task 1.2 — Verify all 12 categories render
+### Sub-Task 1.2 — Verify all 13 categories render
 **Steps:**
 1. Scroll the page top to bottom.
 2. Note each section heading.
 
 **Expected Result:**
-- Categories appear in this order (or grouped per the build): Subscription Performance, Leaderboards, Retention Analytics, Orders Analytics, Revenue Analytics, Products & Variations Analytics, Customers Analytics, Order List Enhancements, Subscriptions, Member Insights, Store Credit, Audit Logs.
+- Categories appear in this order: Subscription Performance, Leaderboards, Retention Analytics, AI Reports, Orders Analytics, Revenue Analytics, Products & Variations Analytics, Customers Analytics, Order List Enhancements, Subscriptions, Member Insights, Store Credit, Audit Logs.
 - Each category header includes its name, a brief description, and a Free or Pro label.
 - Each category shows a responsive grid of report cards.
 
@@ -54,15 +55,16 @@ Open **ArraySubs → Reports** and verify the directory page renders with: a sum
 1. Subscription Performance — confirm 7 report cards are listed (Performance Dashboard, MRR Trend Chart, Net Subscription Growth Chart, Churn Rate Chart, Renewal Revenue Chart, Trial Conversion Rate Chart, Active Subscriptions Chart).
 2. Leaderboards — confirm 5 report cards (Top Subscription Products — Active, Top Subscription Products — Revenue, Top Subscribers — Lifetime Value, Top Cancellation Reasons, Highest Churn Products).
 3. Retention Analytics — confirm 6 cards (Retention Summary, Churn Reasons Breakdown, Retention Offer Performance, Retention Trend Chart, Activity Logs, Product-Level Retention).
-4. Orders Analytics — confirm 6 cards (All Orders by Type, Renewal Orders Only, Initial Purchase Orders, Trial Orders, Plan Switch Orders, Credit Purchase Orders).
-5. Revenue Analytics — confirm 3 cards (Revenue Overview, Subscription Renewal Revenue, Subscription Upgrade Revenue).
-6. Products & Variations Analytics — confirm 2 cards (Subscription Products Report, Subscription Variations Report).
-7. Customers Analytics — confirm 1 card (Customers Report with Member Links).
-8. Order List Enhancements — confirm 3 cards.
-9. Subscriptions — confirm 3 cards (All Subscriptions List, Subscription Detail View, CSV Export).
-10. Member Insights — confirm 2 cards.
-11. Store Credit — confirm 2 cards.
-12. Audit Logs — confirm 3 cards.
+4. AI Reports — confirm 6 cards (Churn Risk Scoring, AI Churn Narrative & Actions, MRR & ARR Outlook, Collected Revenue History, Subscriber Movement, Billing Mix).
+5. Orders Analytics — confirm 6 cards (All Orders by Type, Renewal Orders Only, Initial Purchase Orders, Trial Orders, Plan Switch Orders, Credit Purchase Orders).
+6. Revenue Analytics — confirm 3 cards (Revenue Overview, Subscription Renewal Revenue, Subscription Upgrade Revenue).
+7. Products & Variations Analytics — confirm 2 cards (Subscription Products Report, Subscription Variations Report).
+8. Customers Analytics — confirm 1 card (Customers Report with Member Links).
+9. Order List Enhancements — confirm 3 cards.
+10. Subscriptions — confirm 3 cards (All Subscriptions List, Subscription Detail View, CSV Export).
+11. Member Insights — confirm 2 cards.
+12. Store Credit — confirm 2 cards.
+13. Audit Logs — confirm 3 cards.
 
 **Expected Result:**
 - Each card has: a descriptive title, an explanation, a Free or Pro badge, and a link arrow.
@@ -88,7 +90,7 @@ Open **ArraySubs → Reports** and verify the directory page renders with: a sum
 1. Inspect the badge on each report card.
 2. Cross-reference with the manual's category list:
    - Free: Retention Analytics; Subscriptions.
-   - Pro: everything else.
+   - Pro: AI Reports and every other category.
 
 **Expected Result:**
 - Every card under Free categories carries a Free badge.

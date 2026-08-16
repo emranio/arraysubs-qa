@@ -27,3 +27,11 @@
 {"timestamp":"2026-08-15T14:19:59.700911968+02:00","action":"move","task_id":7,"detail":"open -\u003e in-progress"}
 {"timestamp":"2026-08-15T18:11:08.161190603+02:00","action":"edit","task_id":7,"detail":"stage-5: Post-fix Stripe and Paddle core-only payment regression"}
 {"timestamp":"2026-08-15T18:11:08.570357943+02:00","action":"move","task_id":7,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-08-15T22:59:57.731753441+02:00","action":"create","task_id":8,"detail":"stage-16: AI Reports Pro Ownership and Browser Verification"}
+{"timestamp":"2026-08-15T22:59:57.796442094+02:00","action":"create","task_id":9,"detail":"stage-03: Subscription Box Free Ownership and Browser Verification"}
+{"timestamp":"2026-08-15T23:37:12.459335638+02:00","action":"edit","task_id":8,"detail":"stage-16: AI Reports Pro Ownership and Browser Verification"}
+{"timestamp":"2026-08-15T23:37:12.691021147+02:00","action":"edit","task_id":9,"detail":"stage-03: Subscription Box Free Ownership and Browser Verification"}
+{"timestamp":"2026-08-15T23:37:12.954375379+02:00","action":"move","task_id":8,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-08-15T23:37:12.954925992+02:00","action":"move","task_id":9,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-08-15T23:37:49.728032486+02:00","action":"edit","task_id":8,"detail":"stage-16: AI Reports Pro Ownership and Browser Verification"}
+{"timestamp":"2026-08-15T23:37:49.983897733+02:00","action":"edit","task_id":9,"detail":"stage-03: Subscription Box Free Ownership and Browser Verification"}

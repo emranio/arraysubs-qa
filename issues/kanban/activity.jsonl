@@ -56,3 +56,6 @@
 {"timestamp":"2026-08-15T18:10:45.647897773+02:00","action":"move","task_id":5,"detail":"in-progress -\u003e closed"}
 {"timestamp":"2026-08-15T18:10:46.057132794+02:00","action":"edit","task_id":7,"detail":"stage-5: Stripe renewal reconciliation can replace an unsettled PaymentIntent"}
 {"timestamp":"2026-08-15T18:10:46.39650154+02:00","action":"move","task_id":7,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-08-15T23:36:27.94552333+02:00","action":"create","task_id":9,"detail":"Requested mirror-arraysubs QA hostname does not resolve"}
+{"timestamp":"2026-08-15T23:37:50.292051476+02:00","action":"edit","task_id":9,"detail":"Requested mirror-arraysubs QA hostname does not resolve"}
+{"timestamp":"2026-08-16T08:11:20.040140304+02:00","action":"delete","task_id":9,"detail":"Requested mirror-arraysubs QA hostname does not resolve"}

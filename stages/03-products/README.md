@@ -28,6 +28,7 @@ To make renewals feasible inside a real-time regression run, almost every test p
 | 12 | **Pro Plan** | Simple | every 1 week | $19.99 | – | Plan ladder — Pro (upgrade target). |
 | 13 | **Enterprise Plan** | Simple | every 1 week | $39.99 | – | Plan ladder — Enterprise. |
 | 14 | **Crossgrade Plus** | Simple | every 1 week | $19.99 | – | Crossgrade target for Pro. |
+| 15 | **QA Free Subscription Box** | Subscription Box [ArraySubs] | every 1 month | Customer selection | – | Core ownership, box-builder, pricing, and Pro-deactivation checks. |
 
 **Run order:**
 1. [01 — Simple subscription (Basic Monthly)](01-simple-subscription-basic.md) — Establish the canonical "Basic Monthly" $29.99/mo product (the sole monthly product).
@@ -46,9 +47,10 @@ To make renewals feasible inside a real-time regression run, almost every test p
 14. [14 — Coupon: Apply to subscriptions](14-coupon-applicable-to-subscriptions.md) — Eligible vs ineligible coupons against `Standard Weekly`.
 15. [15 — Recurring coupon with cycle limit](15-recurring-coupon-with-cycle-limit.md) — 3-cycle recurring discount on `Standard Weekly`.
 16. [16 — Product lifecycle: trash and restore](16-product-lifecycle-trash-and-restore.md) — Trash/restore admin warnings on a weekly product.
+17. [17 — Subscription Box *(Free)*](17-subscription-box-free.md) — Configure and purchase a customer-built box with Pro inactive, then verify no duplicate registration after Pro returns.
 
 **Exit criteria:**
-- All 16 task files signed off as PASS (or failures recorded with reproduction notes).
+- All 17 task files signed off as PASS (or failures recorded with reproduction notes).
 - The full canonical catalog is publishable in WooCommerce (see catalog table above).
 - WooCommerce coupon catalog includes:
   - `WELCOME15` — one-time

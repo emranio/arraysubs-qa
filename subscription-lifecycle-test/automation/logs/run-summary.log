@@ -133,3 +133,9 @@
 2026-08-15T17:42:01+02:00 START D13 (2026-08-15) phase=teardown-night site=21:42 UTC+6
 2026-08-15T18:18:22+02:00 OK D13 phase=teardown-night report=/home/server-manager/www/arrayhash/mirror-help.arrayhash.com/public/wp-content/plugins/qa/subscription-lifecycle-test/watch-reports/D13-2026-08-15.md
 2026-08-15T18:18:22+02:00 RETAIN task 119 is not done; teardown will retry at the next cron phase
+2026-08-16T02:10:01+02:00 START D13 (2026-08-16) phase=teardown-early-morning site=06:10 UTC+6
+2026-08-16T02:37:20+02:00 OK D13 phase=teardown-early-morning report=/home/server-manager/www/arrayhash/mirror-help.arrayhash.com/public/wp-content/plugins/qa/subscription-lifecycle-test/watch-reports/D13-2026-08-15.md
+2026-08-16T02:37:20+02:00 RETAIN task 119 is not done; teardown will retry at the next cron phase
+2026-08-16T06:10:02+02:00 START D13 (2026-08-16) phase=teardown-late-morning site=10:10 UTC+6
+2026-08-16T06:25:53+02:00 OK D13 phase=teardown-late-morning report=/home/server-manager/www/arrayhash/mirror-help.arrayhash.com/public/wp-content/plugins/qa/subscription-lifecycle-test/watch-reports/D13-2026-08-15.md
+2026-08-16T06:25:53+02:00 RETAIN task 119 is not done; teardown will retry at the next cron phase
