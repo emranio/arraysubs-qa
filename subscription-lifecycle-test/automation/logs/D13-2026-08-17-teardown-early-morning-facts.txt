@@ -1,0 +1,1354 @@
+# SLT watch facts — D13 (2026-08-17)
+Generated: 2026-08-17T02:10:02+02:00  |  UTC: 2026-08-17 00:10:02  |  site TZ is UTC+6
+
+## Subscriptions by status
+post_status	n
+arraysubs-active	20
+arraysubs-cancelled	356
+arraysubs-expired	15
+arraysubs-on-hold	1
+arraysubs-pending	14
+
+
+## SLT subscriptions (SLT-titled product, created on/after 2026-08-02) with schedule meta
+ID	post_status	post_date	customer	product	gateway	next_payment	trial_end	end_date	cycles	recurring	sync_mode	sync_first_renewal
+11959	arraysubs-cancelled	2026-08-02 18:39:05	347	11927	stripe		NULL	2026-08-12 01:34:19	10	10	NULL	NULL
+11991	arraysubs-cancelled	2026-08-02 19:23:13	357	11927	stripe		NULL	2026-08-12 01:35:44	10	10	NULL	NULL
+12003	arraysubs-active	2026-08-02 19:31:32	347	11938	stripe		NULL	NULL	1	49	NULL	NULL
+12017	arraysubs-expired	2026-08-02 19:45:58	347	11933	stripe		NULL	2026-08-06 17:01:16	3	7	NULL	NULL
+12039	arraysubs-active	2026-08-02 19:56:32	350	11943	stripe	2026-08-21 18:00:00	NULL	NULL	3	14	full	2026-08-07 18:00:00
+12147	arraysubs-cancelled	2026-08-03 12:46:30	358	11927	stripe		NULL	2026-08-08 08:09:06	1	10	NULL	NULL
+12172	arraysubs-active	2026-08-03 13:16:13	354	12099	stripe	2026-08-17 18:00:00	NULL	NULL	5	9	prorate	2026-08-05 18:00:00
+12193	arraysubs-cancelled	2026-08-03 13:20:42	355	12102	stripe		NULL	2026-08-12 01:37:47	3	9	next_cycle	2026-08-08 18:00:00
+12221	arraysubs-cancelled	2026-08-03 13:36:51	359	11927	stripe		NULL	2026-08-12 01:38:34	9	10	NULL	NULL
+12234	arraysubs-cancelled	2026-08-03 13:50:13	347	12087	stripe		NULL	2026-08-12 01:38:54	8	20	NULL	NULL
+12263	arraysubs-cancelled	2026-08-03 14:10:09	360	11927	stripe		NULL	NULL	3	10	NULL	NULL
+12318	arraysubs-cancelled	2026-08-03 18:07:30	361	11927	stripe		NULL	2026-08-12 01:39:18	9	10	NULL	NULL
+12332	arraysubs-cancelled	2026-08-03 18:21:12	362	11927	stripe		NULL	2026-08-12 01:39:40	9	10	NULL	NULL
+12564	arraysubs-active	2026-08-05 14:14:21	350	12125	stripe	2026-08-19 18:00:00	NULL	NULL	5	18	full	2026-08-07 18:00:00
+12639	arraysubs-cancelled	2026-08-05 16:19:31	352	12112	arraysubs_paddle		NULL	2026-08-12 01:40:04	7	11	NULL	NULL
+12655	arraysubs-cancelled	2026-08-05 16:44:10	347	12577	stripe		NULL	2026-08-11 00:48:42	6	9	NULL	NULL
+12684	arraysubs-cancelled	2026-08-05 16:58:59	363	11927	stripe		NULL	2026-08-12 01:40:39	7	10	NULL	NULL
+12719	arraysubs-cancelled	2026-08-05 18:21:53	364	11927	stripe		NULL	2026-08-12 01:41:10	7	10	NULL	NULL
+12749	arraysubs-active	2026-08-05 18:53:49	365	12737	stripe	2026-08-21 18:00:00	NULL	NULL	3	9.99	prorate	2026-08-07 18:00:00
+12760	arraysubs-cancelled	2026-08-05 19:03:40	353	11927	NULL		NULL	2026-08-12 01:41:37	NULL	10	NULL	NULL
+12786	arraysubs-active	2026-08-05 19:26:24	366	11938	stripe		NULL	NULL	1	49	NULL	NULL
+13277	arraysubs-active	2026-08-08 18:14:54	355	12093	stripe	2026-10-31 18:00:00	NULL	NULL	2	30	next_cycle	2026-09-30 18:00:00
+13331	arraysubs-cancelled	2026-08-08 19:45:56	368	11927	stripe		NULL	2026-08-12 01:42:02	4	10	NULL	NULL
+13344	arraysubs-cancelled	2026-08-08 20:08:30	352	12608	arraysubs_paddle		NULL	2026-08-12 01:42:31	4	5	NULL	NULL
+13402	arraysubs-cancelled	2026-08-08 22:46:26	369	12608	stripe		NULL	NULL	1	5	NULL	NULL
+13889	arraysubs-cancelled	2026-08-12 03:10:36	353	11927	NULL		NULL	2026-08-12 01:42:51	NULL	10	NULL	NULL
+13892	arraysubs-cancelled	2026-08-12 03:16:43	353	11927	NULL		NULL	2026-08-12 01:43:13	NULL	10	NULL	NULL
+13897	arraysubs-cancelled	2026-08-12 03:22:34	353	11927			NULL	2026-08-12 01:43:35	0	10	NULL	NULL
+13900	arraysubs-cancelled	2026-08-12 03:22:36	353	11938			NULL	2026-08-12 01:43:57	0	0	NULL	NULL
+13903	arraysubs-cancelled	2026-08-12 03:22:38	353	11927			2026-08-13 22:00:00	2026-08-12 01:44:41	0	10	NULL	NULL
+13906	arraysubs-cancelled	2026-08-12 03:22:59	353	11927			NULL	2026-08-12 01:45:02	0	10	NULL	NULL
+13910	arraysubs-cancelled	2026-08-12 03:31:17	353	11927	bacs		NULL	2026-08-12 01:45:28	0	10	NULL	NULL
+13913	arraysubs-cancelled	2026-08-12 03:31:53	353	11927			NULL	2026-08-12 01:45:54	0	0	NULL	NULL
+13917	arraysubs-cancelled	2026-08-12 03:31:57	353	11927			NULL	2026-08-12 01:46:21	0	0	NULL	NULL
+13921	arraysubs-cancelled	2026-08-12 03:40:17	353	11927	bacs		NULL	2026-08-11 22:09:16	1	10	NULL	NULL
+13930	arraysubs-cancelled	2026-08-12 03:42:57	353	11927	bacs		NULL	2026-08-11 21:43:09	2	10	NULL	NULL
+13947	arraysubs-cancelled	2026-08-12 03:43:57	353	11927	bacs		NULL	2026-08-11 22:12:06	1	10	NULL	NULL
+13950	arraysubs-cancelled	2026-08-12 03:44:03	353	11927	bacs		NULL	2026-08-11 22:13:39	1	10	NULL	NULL
+13964	arraysubs-cancelled	2026-08-12 03:49:36	353	11927	bacs		NULL	2026-08-11 22:10:10	1	10	NULL	NULL
+13967	arraysubs-cancelled	2026-08-12 03:49:40	353	11927	bacs		NULL	2026-08-11 22:10:15	1	10	NULL	NULL
+13980	arraysubs-cancelled	2026-08-12 03:50:21	353	11927	bacs		NULL	2026-08-11 21:50:39	1	10	NULL	NULL
+13983	arraysubs-cancelled	2026-08-12 03:50:23	353	11927	bacs		NULL	2026-08-11 21:50:44	1	10	NULL	NULL
+14045	arraysubs-cancelled	2026-08-12 04:14:37	353	11927	cheque		NULL	2026-08-11 22:14:39	0	5	NULL	NULL
+14055	arraysubs-cancelled	2026-08-12 04:15:12	353	11927	cheque		NULL	2026-08-11 22:15:20	0	5	NULL	NULL
+14070	arraysubs-cancelled	2026-08-12 04:26:54	353	11927	cheque		NULL	2026-08-11 22:34:12	0	10	NULL	NULL
+14073	arraysubs-cancelled	2026-08-12 04:26:57	353	11927	cheque		NULL	2026-08-11 22:34:17	0	10	NULL	NULL
+14089	arraysubs-pending	2026-08-12 04:35:00	353	11927	cheque	2026-08-12 22:35:08	NULL	NULL	0	5	NULL	NULL
+14092	arraysubs-pending	2026-08-12 04:35:10	353	11927	cheque	2026-08-12 22:35:12	NULL	NULL	0	0	NULL	NULL
+20114	arraysubs-cancelled	2026-08-13 20:10:45	352	12611	arraysubs_paddle		NULL	2026-08-13 14:43:24	1	15	NULL	NULL
+27527	arraysubs-on-hold	2026-08-15 15:28:10	469	12112	arraysubs_paddle	2026-08-16 09:28:10	NULL	NULL	0	11	NULL	NULL
+
+
+## Action Scheduler — arraysubs actions attempted in the last 36h
+action_id	hook	status	scheduled_date_gmt	last_attempt_gmt	grp	args
+25196	arraysubs_sweep_paddle_plan_switch_checkouts	complete	2026-08-17 00:08:05	2026-08-17 00:08:06	arraysubs-gateway	[]
+25195	arraysubs_sweep_plan_switch_finalizations	complete	2026-08-17 00:08:05	2026-08-17 00:08:06	arraysubs-billing	[]
+25194	arraysubs_sweep_plan_switch_finalizations	complete	2026-08-17 00:08:04	2026-08-17 00:08:05	arraysubs-billing	[]
+25197	arraysubs_sweep_stripe_renewal_verifications	complete	2026-08-17 00:04:04	2026-08-17 00:04:05	arraysubs-gateway	[]
+25203	arraysubs_check_overdue_renewals	complete	2026-08-17 00:03:13	2026-08-17 00:04:04	arraysubs-billing	[3,0]
+25202	arraysubs_check_overdue_renewals	complete	2026-08-17 00:03:08	2026-08-17 00:04:04	arraysubs-billing	[2,0]
+25177	arraysubs_check_overdue_renewals	complete	2026-08-17 00:02:04	2026-08-17 00:03:03	arraysubs-billing	[]
+25199	arraysubs_check_overdue_renewals	complete	2026-08-16 23:56:14	2026-08-16 23:57:04	arraysubs-billing	[3,0]
+25198	arraysubs_check_overdue_renewals	complete	2026-08-16 23:56:09	2026-08-16 23:57:04	arraysubs-billing	[2,0]
+25173	arraysubs_check_overdue_renewals	complete	2026-08-16 23:55:05	2026-08-16 23:56:04	arraysubs-billing	[]
+25190	arraysubs_sweep_stripe_renewal_verifications	complete	2026-08-16 23:54:04	2026-08-16 23:54:04	arraysubs-gateway	[]
+25189	arraysubs_sweep_paddle_plan_switch_checkouts	complete	2026-08-16 23:53:04	2026-08-16 23:53:05	arraysubs-gateway	[]
+25188	arraysubs_sweep_plan_switch_finalizations	complete	2026-08-16 23:53:04	2026-08-16 23:53:05	arraysubs-billing	[]
+25187	arraysubs_sweep_plan_switch_finalizations	complete	2026-08-16 23:53:03	2026-08-16 23:53:04	arraysubs-billing	[]
+25167	arraysubs_generate_upcoming_renewals	complete	2026-08-16 23:50:07	2026-08-16 23:51:04	arraysubs-billing	[]
+25164	arraysubs_generate_upcoming_renewals	complete	2026-08-16 23:48:05	2026-08-16 23:49:04	arraysubs-billing	[]
+25186	arraysubs_sweep_stripe_renewal_verifications	complete	2026-08-16 23:43:04	2026-08-16 23:44:04	arraysubs-gateway	[]
+25184	arraysubs_sweep_paddle_plan_switch_checkouts	complete	2026-08-16 23:37:07	2026-08-16 23:38:04	arraysubs-gateway	[]
+25183	arraysubs_sweep_plan_switch_finalizations	complete	2026-08-16 23:37:06	2026-08-16 23:38:04	arraysubs-billing	[]
+25182	arraysubs_sweep_plan_switch_finalizations	complete	2026-08-16 23:37:05	2026-08-16 23:38:03	arraysubs-billing	[]
+25185	arraysubs_sweep_stripe_renewal_verifications	complete	2026-08-16 23:32:07	2026-08-16 23:33:04	arraysubs-gateway	[]
+25181	arraysubs_sweep_stripe_renewal_verifications	complete	2026-08-16 23:22:05	2026-08-16 23:22:07	arraysubs-gateway	[]
+25180	arraysubs_sweep_paddle_plan_switch_checkouts	complete	2026-08-16 23:21:07	2026-08-16 23:22:07	arraysubs-gateway	[]
+25179	arraysubs_sweep_plan_switch_finalizations	complete	2026-08-16 23:21:06	2026-08-16 23:22:06	arraysubs-billing	[]
+25178	arraysubs_sweep_plan_switch_finalizations	complete	2026-08-16 23:21:05	2026-08-16 23:22:05	arraysubs-billing	[]
+25174	arraysubs_sweep_stripe_renewal_verifications	complete	2026-08-16 23:11:05	2026-08-16 23:12:05	arraysubs-gateway	[]
+25170	arraysubs_sweep_paddle_plan_switch_checkouts	complete	2026-08-16 23:05:11	2026-08-16 23:06:07	arraysubs-gateway	[]
+25169	arraysubs_sweep_plan_switch_finalizations	complete	2026-08-16 23:05:11	2026-08-16 23:06:06	arraysubs-billing	[]
+25168	arraysubs_sweep_plan_switch_finalizations	complete	2026-08-16 23:05:08	2026-08-16 23:06:05	arraysubs-billing	[]
+25176	arraysubs_check_overdue_renewals	complete	2026-08-16 23:02:14	2026-08-16 23:03:03	arraysubs-billing	[3,0]
+25175	arraysubs_check_overdue_renewals	complete	2026-08-16 23:02:09	2026-08-16 23:03:03	arraysubs-billing	[2,0]
+25150	arraysubs_check_overdue_renewals	complete	2026-08-16 23:01:06	2026-08-16 23:02:04	arraysubs-billing	[]
+25166	arraysubs_sweep_stripe_renewal_verifications	complete	2026-08-16 23:00:06	2026-08-16 23:01:05	arraysubs-gateway	[]
+25172	arraysubs_check_overdue_renewals	complete	2026-08-16 22:55:15	2026-08-16 22:56:04	arraysubs-billing	[3,0]
+25171	arraysubs_check_overdue_renewals	complete	2026-08-16 22:55:10	2026-08-16 22:56:03	arraysubs-billing	[2,0]
+25146	arraysubs_check_overdue_renewals	complete	2026-08-16 22:54:05	2026-08-16 22:55:05	arraysubs-billing	[]
+25162	arraysubs_sweep_paddle_plan_switch_checkouts	complete	2026-08-16 22:49:07	2026-08-16 22:50:11	arraysubs-gateway	[]
+25161	arraysubs_sweep_plan_switch_finalizations	complete	2026-08-16 22:49:07	2026-08-16 22:50:10	arraysubs-billing	[]
+25160	arraysubs_sweep_plan_switch_finalizations	complete	2026-08-16 22:49:05	2026-08-16 22:50:08	arraysubs-billing	[]
+25143	arraysubs_generate_upcoming_renewals	complete	2026-08-16 22:49:05	2026-08-16 22:50:07	arraysubs-billing	[]
+25163	arraysubs_sweep_stripe_renewal_verifications	complete	2026-08-16 22:49:04	2026-08-16 22:50:06	arraysubs-gateway	[]
+25138	arraysubs_generate_upcoming_renewals	complete	2026-08-16 22:47:05	2026-08-16 22:48:05	arraysubs-billing	[]
+25159	arraysubs_sweep_stripe_renewal_verifications	complete	2026-08-16 22:38:06	2026-08-16 22:39:04	arraysubs-gateway	[]
+25158	arraysubs_sweep_paddle_plan_switch_checkouts	complete	2026-08-16 22:33:21	2026-08-16 22:34:07	arraysubs-gateway	[]
+25157	arraysubs_sweep_plan_switch_finalizations	complete	2026-08-16 22:33:20	2026-08-16 22:34:07	arraysubs-billing	[]
+25156	arraysubs_sweep_plan_switch_finalizations	complete	2026-08-16 22:33:18	2026-08-16 22:34:05	arraysubs-billing	[]
+25155	arraysubs_sweep_stripe_renewal_verifications	complete	2026-08-16 22:27:28	2026-08-16 22:28:06	arraysubs-gateway	[]
+25153	arraysubs_sweep_paddle_plan_switch_checkouts	complete	2026-08-16 22:18:10	2026-08-16 22:18:21	arraysubs-gateway	[]
+25152	arraysubs_sweep_plan_switch_finalizations	complete	2026-08-16 22:18:09	2026-08-16 22:18:20	arraysubs-billing	[]
+25151	arraysubs_sweep_plan_switch_finalizations	complete	2026-08-16 22:18:07	2026-08-16 22:18:18	arraysubs-billing	[]
+25154	arraysubs_sweep_stripe_renewal_verifications	complete	2026-08-16 22:17:04	2026-08-16 22:17:28	arraysubs-gateway	[]
+25147	arraysubs_sweep_stripe_renewal_verifications	complete	2026-08-16 22:06:05	2026-08-16 22:07:04	arraysubs-gateway	[]
+25142	arraysubs_sweep_paddle_plan_switch_checkouts	complete	2026-08-16 22:03:06	2026-08-16 22:03:10	arraysubs-gateway	[]
+25141	arraysubs_sweep_plan_switch_finalizations	complete	2026-08-16 22:03:05	2026-08-16 22:03:09	arraysubs-billing	[]
+25140	arraysubs_sweep_plan_switch_finalizations	complete	2026-08-16 22:03:05	2026-08-16 22:03:07	arraysubs-billing	[]
+25149	arraysubs_check_overdue_renewals	complete	2026-08-16 22:01:15	2026-08-16 22:02:06	arraysubs-billing	[3,0]
+25148	arraysubs_check_overdue_renewals	complete	2026-08-16 22:01:10	2026-08-16 22:02:06	arraysubs-billing	[2,0]
+25125	arraysubs_check_overdue_renewals	complete	2026-08-16 22:00:13	2026-08-16 22:01:06	arraysubs-billing	[]
+25137	arraysubs_sweep_stripe_renewal_verifications	complete	2026-08-16 21:56:04	2026-08-16 21:56:05	arraysubs-gateway	[]
+25145	arraysubs_check_overdue_renewals	complete	2026-08-16 21:54:15	2026-08-16 21:55:05	arraysubs-billing	[3,0]
+25144	arraysubs_check_overdue_renewals	complete	2026-08-16 21:54:10	2026-08-16 21:55:04	arraysubs-billing	[2,0]
+25119	arraysubs_check_overdue_renewals	complete	2026-08-16 21:53:05	2026-08-16 21:54:05	arraysubs-billing	[]
+25112	arraysubs_generate_upcoming_renewals	complete	2026-08-16 21:49:03	2026-08-16 21:49:05	arraysubs-billing	[]
+25135	arraysubs_sweep_paddle_plan_switch_checkouts	complete	2026-08-16 21:47:10	2026-08-16 21:48:06	arraysubs-gateway	[]
+25134	arraysubs_sweep_plan_switch_finalizations	complete	2026-08-16 21:47:09	2026-08-16 21:48:05	arraysubs-billing	[]
+25133	arraysubs_sweep_plan_switch_finalizations	complete	2026-08-16 21:47:09	2026-08-16 21:48:05	arraysubs-billing	[]
+25110	arraysubs_generate_upcoming_renewals	complete	2026-08-16 21:47:04	2026-08-16 21:47:05	arraysubs-billing	[]
+25136	arraysubs_sweep_stripe_renewal_verifications	complete	2026-08-16 21:46:04	2026-08-16 21:46:04	arraysubs-gateway	[]
+25132	arraysubs_sweep_stripe_renewal_verifications	complete	2026-08-16 21:35:06	2026-08-16 21:36:04	arraysubs-gateway	[]
+25130	arraysubs_sweep_paddle_plan_switch_checkouts	complete	2026-08-16 21:31:08	2026-08-16 21:32:10	arraysubs-gateway	[]
+25129	arraysubs_sweep_plan_switch_finalizations	complete	2026-08-16 21:31:07	2026-08-16 21:32:09	arraysubs-billing	[]
+25128	arraysubs_sweep_plan_switch_finalizations	complete	2026-08-16 21:31:06	2026-08-16 21:32:08	arraysubs-billing	[]
+25127	arraysubs_sweep_stripe_renewal_verifications	complete	2026-08-16 21:25:05	2026-08-16 21:25:06	arraysubs-gateway	[]
+25122	arraysubs_sweep_paddle_plan_switch_checkouts	complete	2026-08-16 21:15:12	2026-08-16 21:16:08	arraysubs-gateway	[]
+25121	arraysubs_sweep_plan_switch_finalizations	complete	2026-08-16 21:15:11	2026-08-16 21:16:07	arraysubs-billing	[]
+25120	arraysubs_sweep_plan_switch_finalizations	complete	2026-08-16 21:15:08	2026-08-16 21:16:06	arraysubs-billing	[]
+25126	arraysubs_sweep_stripe_renewal_verifications	complete	2026-08-16 21:14:05	2026-08-16 21:15:05	arraysubs-gateway	[]
+25116	arraysubs_sweep_stripe_renewal_verifications	complete	2026-08-16 21:03:05	2026-08-16 21:04:05	arraysubs-gateway	[]
+25124	arraysubs_check_overdue_renewals	complete	2026-08-16 21:00:23	2026-08-16 21:01:05	arraysubs-billing	[3,0]
+25123	arraysubs_check_overdue_renewals	complete	2026-08-16 21:00:18	2026-08-16 21:01:05	arraysubs-billing	[2,0]
+
+
+## Action Scheduler — pending arraysubs actions in the next 48h
+action_id	hook	status	scheduled_date_gmt	grp	args
+25205	arraysubs_sweep_stripe_renewal_verifications	pending	2026-08-17 00:14:05	arraysubs-gateway	[]
+25035	arraysubs_gateway_reconcile	pending	2026-08-17 00:20:06	arraysubs-gateway	[]
+25206	arraysubs_sweep_plan_switch_finalizations	pending	2026-08-17 00:23:05	arraysubs-billing	[]
+25207	arraysubs_sweep_plan_switch_finalizations	pending	2026-08-17 00:23:06	arraysubs-billing	[]
+25208	arraysubs_sweep_paddle_plan_switch_checkouts	pending	2026-08-17 00:23:06	arraysubs-gateway	[]
+25191	arraysubs_generate_upcoming_renewals	pending	2026-08-17 00:49:04	arraysubs-billing	[]
+25193	arraysubs_generate_upcoming_renewals	pending	2026-08-17 00:51:04	arraysubs-billing	[]
+25200	arraysubs_check_overdue_renewals	pending	2026-08-17 00:56:04	arraysubs-billing	[]
+25204	arraysubs_check_overdue_renewals	pending	2026-08-17 01:03:03	arraysubs-billing	[]
+24590	arraysubs_cleanup_webhook_events	pending	2026-08-17 02:02:05	arraysubs-gateway	[]
+24614	arraysubs_process_trial_conversions	pending	2026-08-17 03:00:10	arraysubs-billing	[]
+24620	arraysubs_daily_maintenance_run	pending	2026-08-17 03:07:03	arraysubs-maintenance	[]
+24644	arraysubs_expire_store_credits	pending	2026-08-17 03:53:04	arraysubs-maintenance	[]
+23723	arraysubs_generate_renewal_invoice	pending	2026-08-17 12:11:39	arraysubs-billing	[12172]
+24950	arraysubs_generate_renewal_invoice	pending	2026-08-17 15:06:17	arraysubs-billing	[7809]
+23724	arraysubs_process_renewal	pending	2026-08-17 18:11:39	arraysubs-renewals	[12172]
+24951	arraysubs_process_renewal	pending	2026-08-17 21:06:17	arraysubs-renewals	[7809]
+23722	arraysubs_send_renewal_reminder	pending	2026-08-18 23:01:52	arraysubs-emails	[12039,3]
+23729	arraysubs_send_renewal_reminder	pending	2026-08-18 23:19:30	arraysubs-emails	[12749,3]
+
+
+## Action Scheduler — FAILED arraysubs actions in the last 36h (always investigate)
+action_id	hook	scheduled_date_gmt	last_attempt_gmt	args
+24238	arraysubs_send_stripe_renewal_verification	2026-08-15 14:50:03	2026-08-15 14:50:08	[27766,27788,"pi_3U4iuHJG5OzSNVs20OBEsjll",1]
+24211	arraysubs_send_stripe_renewal_verification	2026-08-15 14:19:02	2026-08-15 14:19:09	[27766,27776,"pi_3U4iQGJG5OzSNVs20gnbFe1M",1]
+
+
+## Orders created in the last 36h
+id	status	type	customer_id	total_amount	payment_method	date_created_gmt	parent_order_id	subscription_refs
+28261	wc-completed	shop_order	1	60.00000000	arraysubs_paddle	2026-08-16 15:07:04	0	_subscription_id=7809 | _subscription_renewal=7809
+28253	wc-completed	shop_order	350	18.00000000	stripe	2026-08-16 14:50:05	0	_subscription_id=12564 | _subscription_renewal=12564
+27808	wc-completed	shop_order	1	60.00000000	arraysubs_paddle	2026-08-15 15:07:04	0	_subscription_id=7809 | _subscription_renewal=7809
+
+
+## Mailpit
+latest-id: 6VMkx0a53K9X7n3GLGntLW
+[
+  {
+    "ID": "6VMkx0a53K9X7n3GLGntLW",
+    "Created": "2026-08-16T22:50:11.755+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "slt-flex@example.test"
+      }
+    ],
+    "Subject": "[mirror-help.arrayhash.com] Payment received for subscription #12564",
+    "Read": false,
+    "Size": 8634,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com Payment received Hi SLT, We have received your payment for subscription #12564. Your subscription has been renewed. Subscription #12564 Product SLT Sync Global Daily Amount P..."
+  },
+  {
+    "ID": "55Pvecs1yThUMLtTbMUTU1",
+    "Created": "2026-08-16T22:50:11.071+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "admin@mirror-help.arrayhash.com"
+      }
+    ],
+    "Subject": "[mirror-help.arrayhash.com]: You've got a new order: #28253",
+    "Read": false,
+    "Size": 14647,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com New order: #28253 You’ve received a new order from SLT Flex: Order summary Order #28253 (16 August, 2026) Product Quantity Price SLT Sync Global Daily (Every 3 days) ×1 $1..."
+  },
+  {
+    "ID": "3Zy5FMPbJcEWGw5iWIG54a",
+    "Created": "2026-08-16T17:08:16.028+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "admin@mirror-help.arrayhash.com"
+      }
+    ],
+    "Subject": "[mirror-help.arrayhash.com] Payment received for subscription #7809",
+    "Read": false,
+    "Size": 8679,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com Payment received Hi Emran, We have received your payment for subscription #7809. Your subscription has been renewed. Subscription #7809 Product [QA] Starter Daily Amount Paid..."
+  },
+  {
+    "ID": "7jmdqHS3XBAJahCwlmL5Jj",
+    "Created": "2026-08-16T17:08:15.312+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "admin@mirror-help.arrayhash.com"
+      }
+    ],
+    "Subject": "[mirror-help.arrayhash.com]: You've got a new order: #28261",
+    "Read": false,
+    "Size": 14704,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com New order: #28261 You’ve received a new order from Emran Emran: Order summary Order #28261 (16 August, 2026) Product Quantity Price [QA] Starter Daily (Every day) ×1 $60.0..."
+  },
+  {
+    "ID": "3lFshAps0yTNN5UVzuosi7",
+    "Created": "2026-08-15T18:03:08.886+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "admin@mirror-help.arrayhash.com"
+      }
+    ],
+    "Subject": "[mirror-help.arrayhash.com] Subscription #27828 cancelled by Gateway (Paddle)",
+    "Read": false,
+    "Size": 8471,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com Subscription cancelled Subscription #27828 for Core Stripe has been cancelled by Gateway (Paddle). Subscription #27828 Customer Core Stripe (core-stripe-final-20260815@exampl..."
+  },
+  {
+    "ID": "2gTG4Ei8Jkiq9EzJBxaqnJ",
+    "Created": "2026-08-15T18:03:08.356+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "core-stripe-final-20260815@example.test"
+      }
+    ],
+    "Subject": "[mirror-help.arrayhash.com] Your subscription #27828 has been cancelled",
+    "Read": false,
+    "Size": 8292,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com Your subscription has been cancelled Hi Core, Your subscription #27828 has been cancelled. Subscription #27828 Product SLT Paddle Daily Status Cancelled Reason qa_cleanup You..."
+  },
+  {
+    "ID": "3cJ7p0udt9b4JxrA0gz7N2",
+    "Created": "2026-08-15T17:58:53.407+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "admin@mirror-help.arrayhash.com"
+      }
+    ],
+    "Subject": "[mirror-help.arrayhash.com] Subscription #27766 cancelled by Customer (Core Stripe)",
+    "Read": false,
+    "Size": 8516,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com Subscription cancelled Subscription #27766 for Core Stripe has been cancelled by Customer (Core Stripe). Subscription #27766 Customer Core Stripe (core-stripe-final-20260815@..."
+  },
+  {
+    "ID": "7i1iscC3G75vqN4A6jazmm",
+    "Created": "2026-08-15T17:58:53.076+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "core-stripe-final-20260815@example.test"
+      }
+    ],
+    "Subject": "[mirror-help.arrayhash.com] Your subscription #27766 has been cancelled",
+    "Read": false,
+    "Size": 8327,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com Your subscription has been cancelled Hi Core, Your subscription #27766 has been cancelled. Subscription #27766 Product Basic Monthly Status Cancelled Reason technical_issues ..."
+  },
+  {
+    "ID": "6gb2qHPil9MPhrBR4l6k3T",
+    "Created": "2026-08-15T17:53:47.003+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "admin@mirror-help.arrayhash.com"
+      }
+    ],
+    "Subject": "[mirror-help.arrayhash.com] Subscription #27828 scheduled to cancel on 16 August, 2026 9:42 PM (UTC+6)",
+    "Read": false,
+    "Size": 9427,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com Subscription scheduled to cancel Subscription #27828 from Core Stripe is scheduled to cancel on 16 August, 2026 9:42 PM (UTC+6). Subscription #27828 Customer Core Stripe (cor..."
+  },
+  {
+    "ID": "03ZTIliqxKiSgg9SFwRq7u",
+    "Created": "2026-08-15T17:53:46.415+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "core-stripe-final-20260815@example.test"
+      }
+    ],
+    "Subject": "[mirror-help.arrayhash.com] Subscription #27828 scheduled to cancel on 16 August, 2026 9:42 PM (UTC+6)",
+    "Read": false,
+    "Size": 9092,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com Your subscription is scheduled to cancel Hi Core, Your subscription #27828 is scheduled to cancel on 16 August, 2026 9:42 PM (UTC+6). You will continue to have access until t..."
+  },
+  {
+    "ID": "5Llpt8hUQ0lkZNxZawjCJw",
+    "Created": "2026-08-15T17:42:46.552+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "admin@mirror-help.arrayhash.com"
+      }
+    ],
+    "Subject": "[mirror-help.arrayhash.com] New subscription #27828 from Core Stripe",
+    "Read": true,
+    "Size": 9409,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com New subscription received You have received a new subscription from Core Stripe. Subscription #27828 details are shown below. Subscription #27828 Customer Core Stripe (core-s..."
+  },
+  {
+    "ID": "4MLNNg4iqy2hw3R6SbiIll",
+    "Created": "2026-08-15T17:42:46.253+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "core-stripe-final-20260815@example.test"
+      }
+    ],
+    "Subject": "[mirror-help.arrayhash.com] Your subscription #27828 is active",
+    "Read": false,
+    "Size": 8705,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com Your subscription is now active! Hi Core, Great news! Your subscription is now active. Here are the details: Subscription #27828 Product SLT Paddle Daily Price $11.00 / Every..."
+  },
+  {
+    "ID": "6HFrf902PzkjjE2iyfgAn2",
+    "Created": "2026-08-15T17:42:44.351+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "core-stripe-final-20260815@example.test"
+      }
+    ],
+    "Subject": "Your mirror-help.arrayhash.com order has been received!",
+    "Read": false,
+    "Size": 16643,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com Thank you for your order Hi Core, Just to let you know — we’ve received your order, and it is now being processed. Here’s a reminder of what you’ve ordered: Order sum..."
+  },
+  {
+    "ID": "069PwSjxRaokQ41eywMU0P",
+    "Created": "2026-08-15T17:42:44.04+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "admin@mirror-help.arrayhash.com"
+      }
+    ],
+    "Subject": "[mirror-help.arrayhash.com]: You've got a new order: #27827",
+    "Read": false,
+    "Size": 16825,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com New order: #27827 You’ve received a new order from Core Stripe: Order summary Order #27827 (15 August, 2026) Product Quantity Price SLT Paddle Daily (Every day) ×1 $11.00 ..."
+  },
+  {
+    "ID": "0Ouhr5oDzgsbc3Vzvmh8T0",
+    "Created": "2026-08-15T17:23:25.505+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "admin@mirror-help.arrayhash.com"
+      }
+    ],
+    "Subject": "[mirror-help.arrayhash.com]: Order #27798 has failed",
+    "Read": false,
+    "Size": 14522,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com Order failed: #27798 Unfortunately, the payment for order #27798 from Core Stripe has failed. The order was as follows: Order summary Order #27798 (15 August, 2026) Product Q..."
+  },
+  {
+    "ID": "6nmQrnsJrr8ZvNCFQ7guIZ",
+    "Created": "2026-08-15T17:23:25.49+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "admin@mirror-help.arrayhash.com"
+      }
+    ],
+    "Subject": "[mirror-help.arrayhash.com] Payment failed for subscription #27766",
+    "Read": false,
+    "Size": 9266,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com Subscription payment failed The automatic renewal payment for subscription #27766 from Core Stripe has failed. Subscription #27766 Customer Core Stripe (core-stripe-final-202..."
+  },
+  {
+    "ID": "6G74y6a0sR6om5GMdROdAI",
+    "Created": "2026-08-15T17:23:25.471+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "core-stripe-final-20260815@example.test"
+      }
+    ],
+    "Subject": "[mirror-help.arrayhash.com] Payment failed for subscription #27766",
+    "Read": false,
+    "Size": 9008,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com Payment failed Hi Core, Unfortunately, the renewal payment for your subscription #27766 could not be completed. Reason: the card was declined by the issuer. Subscription #277..."
+  },
+  {
+    "ID": "0ueiea896gl1eCtAKovxAZ",
+    "Created": "2026-08-15T17:13:45.793+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "admin@mirror-help.arrayhash.com"
+      }
+    ],
+    "Subject": "[mirror-help.arrayhash.com] Payment failed for subscription #27766",
+    "Read": false,
+    "Size": 9295,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com Subscription payment failed The automatic renewal payment for subscription #27766 from Core Stripe has failed. Subscription #27766 Customer Core Stripe (core-stripe-final-202..."
+  },
+  {
+    "ID": "1AlR9rbucC7sgi40MRDeuk",
+    "Created": "2026-08-15T17:13:45.793+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "core-stripe-final-20260815@example.test"
+      }
+    ],
+    "Subject": "[mirror-help.arrayhash.com] Payment failed for subscription #27766",
+    "Read": false,
+    "Size": 8979,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com Payment failed Hi Core, Unfortunately, the renewal payment for your subscription #27766 could not be completed. Reason: the card was declined by the issuer. Subscription #277..."
+  },
+  {
+    "ID": "4qWIYDyWHfLy7avgpBihTF",
+    "Created": "2026-08-15T17:13:45.537+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "admin@mirror-help.arrayhash.com"
+      }
+    ],
+    "Subject": "[mirror-help.arrayhash.com]: Order #27798 has failed",
+    "Read": false,
+    "Size": 14518,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com Order failed: #27798 Unfortunately, the payment for order #27798 from Core Stripe has failed. The order was as follows: Order summary Order #27798 (15 August, 2026) Product Q..."
+  },
+  {
+    "ID": "4iM3YieQTi7vYdwaFIELKa",
+    "Created": "2026-08-15T17:08:14.498+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "admin@mirror-help.arrayhash.com"
+      }
+    ],
+    "Subject": "[mirror-help.arrayhash.com] Payment received for subscription #7809",
+    "Read": false,
+    "Size": 8680,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com Payment received Hi Emran, We have received your payment for subscription #7809. Your subscription has been renewed. Subscription #7809 Product [QA] Starter Daily Amount Paid..."
+  },
+  {
+    "ID": "5gKaAqw4Qfla5ygBKN1xvo",
+    "Created": "2026-08-15T17:08:13.605+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "admin@mirror-help.arrayhash.com"
+      }
+    ],
+    "Subject": "[mirror-help.arrayhash.com]: You've got a new order: #27808",
+    "Read": false,
+    "Size": 14705,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com New order: #27808 You’ve received a new order from Emran Emran: Order summary Order #27808 (15 August, 2026) Product Quantity Price [QA] Starter Daily (Every day) ×1 $60.0..."
+  },
+  {
+    "ID": "54fgId82U9DvhhXmjJE39F",
+    "Created": "2026-08-15T17:04:14.334+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "admin@mirror-help.arrayhash.com"
+      }
+    ],
+    "Subject": "[mirror-help.arrayhash.com] Payment failed for subscription #27766",
+    "Read": true,
+    "Size": 9265,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com Subscription payment failed The automatic renewal payment for subscription #27766 from Core Stripe has failed. Subscription #27766 Customer Core Stripe (core-stripe-final-202..."
+  },
+  {
+    "ID": "21YVDv55i1aWTfuJsuFd5E",
+    "Created": "2026-08-15T17:04:13.991+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "core-stripe-final-20260815@example.test"
+      }
+    ],
+    "Subject": "[mirror-help.arrayhash.com] Payment failed for subscription #27766",
+    "Read": false,
+    "Size": 8977,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com Payment failed Hi Core, Unfortunately, the renewal payment for your subscription #27766 could not be completed. Reason: the card was declined by the issuer. Subscription #277..."
+  },
+  {
+    "ID": "5OrTijTXRswoZuuELvMlYJ",
+    "Created": "2026-08-15T17:04:13.978+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "admin@mirror-help.arrayhash.com"
+      }
+    ],
+    "Subject": "[mirror-help.arrayhash.com] Payment failed for subscription #27766",
+    "Read": false,
+    "Size": 9294,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com Subscription payment failed The automatic renewal payment for subscription #27766 from Core Stripe has failed. Subscription #27766 Customer Core Stripe (core-stripe-final-202..."
+  },
+  {
+    "ID": "14pa2AaEQp9x042ioEcUkz",
+    "Created": "2026-08-15T17:04:13.168+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "core-stripe-final-20260815@example.test"
+      }
+    ],
+    "Subject": "[mirror-help.arrayhash.com] Payment failed for subscription #27766",
+    "Read": false,
+    "Size": 9008,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com Payment failed Hi Core, Unfortunately, the renewal payment for your subscription #27766 could not be completed. Reason: the card was declined by the issuer. Subscription #277..."
+  },
+  {
+    "ID": "7hInQS1ExKUGtvyCDDi1bi",
+    "Created": "2026-08-15T17:04:12.196+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "admin@mirror-help.arrayhash.com"
+      }
+    ],
+    "Subject": "[mirror-help.arrayhash.com]: Order #27798 has failed",
+    "Read": false,
+    "Size": 14519,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com Order failed: #27798 Unfortunately, the payment for order #27798 from Core Stripe has failed. The order was as follows: Order summary Order #27798 (15 August, 2026) Product Q..."
+  },
+  {
+    "ID": "2Tmc4zbtTW8PZ9Pi2115Gn",
+    "Created": "2026-08-15T17:04:12.026+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "admin@mirror-help.arrayhash.com"
+      }
+    ],
+    "Subject": "[mirror-help.arrayhash.com]: Order #27798 has failed",
+    "Read": false,
+    "Size": 14491,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com Order failed: #27798 Unfortunately, the payment for order #27798 from Core Stripe has failed. The order was as follows: Order summary Order #27798 (15 August, 2026) Product Q..."
+  },
+  {
+    "ID": "11pDxSA2ahkr0x08BT6Oaf",
+    "Created": "2026-08-15T16:57:27.821+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "core-stripe-final-20260815@example.test"
+      }
+    ],
+    "Subject": "[mirror-help.arrayhash.com] Payment received for subscription #27766",
+    "Read": false,
+    "Size": 8696,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com Payment received Hi Core, We have received your payment for subscription #27766. Your subscription has been renewed. Subscription #27766 Product Basic Monthly Amount Paid $29..."
+  },
+  {
+    "ID": "2CsOOqfyVPyG8qnhLyzjZQ",
+    "Created": "2026-08-15T16:57:27.04+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "admin@mirror-help.arrayhash.com"
+      }
+    ],
+    "Subject": "[mirror-help.arrayhash.com]: You've got a new order: #27788",
+    "Read": false,
+    "Size": 14572,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com New order: #27788 You’ve received a new order from Core Stripe: Order summary Order #27788 (15 August, 2026) Product Quantity Price Basic Monthly (Every month) ×1 $29.99 S..."
+  },
+  {
+    "ID": "1Nrab5HWBuGSoQjlWXqXxN",
+    "Created": "2026-08-15T16:50:07.406+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "core-stripe-final-20260815@example.test"
+      }
+    ],
+    "Subject": "[mirror-help.arrayhash.com] Verify your subscription renewal #27766",
+    "Read": true,
+    "Size": 9315,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com Your renewal needs verification Hi Core, Your subscription renewal payment needs an extra verification step before it can be completed. Renewal details Subscription ID #27766..."
+  },
+  {
+    "ID": "5MPH8ha0Gj4gPEE4rjSOgD",
+    "Created": "2026-08-15T16:24:05.99+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "core-stripe-final-20260815@example.test"
+      }
+    ],
+    "Subject": "[mirror-help.arrayhash.com] Payment received for subscription #27766",
+    "Read": false,
+    "Size": 8709,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com Payment received Hi Core, We have received your payment for subscription #27766. Your subscription has been renewed. Subscription #27766 Product Basic Monthly Amount Paid $29..."
+  },
+  {
+    "ID": "2TOgJnEr4oukBDauWvxBnE",
+    "Created": "2026-08-15T16:24:02.906+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "admin@mirror-help.arrayhash.com"
+      }
+    ],
+    "Subject": "[mirror-help.arrayhash.com]: You've got a new order: #27776",
+    "Read": false,
+    "Size": 14585,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com New order: #27776 You’ve received a new order from Core Stripe: Order summary Order #27776 (15 August, 2026) Product Quantity Price Basic Monthly (Every month) ×1 $29.99 S..."
+  },
+  {
+    "ID": "3yJEtTOPHe0FPnScVRm26q",
+    "Created": "2026-08-15T16:19:08.314+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "core-stripe-final-20260815@example.test"
+      }
+    ],
+    "Subject": "[mirror-help.arrayhash.com] Verify your subscription renewal #27766",
+    "Read": true,
+    "Size": 9315,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com Your renewal needs verification Hi Core, Your subscription renewal payment needs an extra verification step before it can be completed. Renewal details Subscription ID #27766..."
+  },
+  {
+    "ID": "2EQ62uMdXL6UyqXgfGHegm",
+    "Created": "2026-08-15T14:40:51.437+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "admin@mirror-help.arrayhash.com"
+      }
+    ],
+    "Subject": "[mirror-help.arrayhash.com] New subscription #27766 from Core Stripe",
+    "Read": false,
+    "Size": 9410,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com New subscription received You have received a new subscription from Core Stripe. Subscription #27766 details are shown below. Subscription #27766 Customer Core Stripe (core-s..."
+  },
+  {
+    "ID": "1k4teH9eJCVBH6U6u4uS8z",
+    "Created": "2026-08-15T14:40:51.183+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "core-stripe-final-20260815@example.test"
+      }
+    ],
+    "Subject": "[mirror-help.arrayhash.com] Your subscription #27766 is active",
+    "Read": false,
+    "Size": 8707,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com Your subscription is now active! Hi Core, Great news! Your subscription is now active. Here are the details: Subscription #27766 Product Basic Monthly Price $29.99 / Every mo..."
+  },
+  {
+    "ID": "4Hb8buy4Csre2Vmgz3R7bH",
+    "Created": "2026-08-15T14:40:50.597+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "core-stripe-final-20260815@example.test"
+      }
+    ],
+    "Subject": "Your mirror-help.arrayhash.com order has been received!",
+    "Read": false,
+    "Size": 16655,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com Thank you for your order Hi Core, Just to let you know — we’ve received your order, and it is now being processed. Here’s a reminder of what you’ve ordered: Order sum..."
+  },
+  {
+    "ID": "2Ggn5goJGtHUczGzGWKQ5U",
+    "Created": "2026-08-15T14:40:50.254+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "admin@mirror-help.arrayhash.com"
+      }
+    ],
+    "Subject": "[mirror-help.arrayhash.com]: You've got a new order: #27752",
+    "Read": false,
+    "Size": 16838,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com New order: #27752 You’ve received a new order from Core Stripe: Order summary Order #27752 (15 August, 2026) Product Quantity Price Basic Monthly (Every month) ×1 $29.99 S..."
+  },
+  {
+    "ID": "75b77kcevrIy9mMEwIgKS5",
+    "Created": "2026-08-15T14:39:28.866+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "core-stripe-final-20260815@example.test"
+      }
+    ],
+    "Subject": "Your mirror-help.arrayhash.com account has been created!",
+    "Read": false,
+    "Size": 7710,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com Welcome to mirror-help.arrayhash.com Hi Core, Thanks for creating an account on mirror-help.arrayhash.com. Here’s a copy of your user details. Username: core.stripe Set you..."
+  },
+  {
+    "ID": "5Bd8rWdVcM51pB54rv8qaW",
+    "Created": "2026-08-15T13:52:51.86+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "admin@mirror-help.arrayhash.com"
+      }
+    ],
+    "Subject": "[mirror-help.arrayhash.com] Subscription #27614 cancelled by Customer (Stripe SCA Fix QA)",
+    "Read": false,
+    "Size": 8537,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com Subscription cancelled Subscription #27614 for Stripe SCA Fix QA has been cancelled by Customer (Stripe SCA Fix QA). Subscription #27614 Customer Stripe SCA Fix QA (stripe-sc..."
+  },
+  {
+    "ID": "5aWpM0ns2W1EX7riPpcH4m",
+    "Created": "2026-08-15T13:52:51.38+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "stripe-sca-fix-20260815@example.test"
+      }
+    ],
+    "Subject": "[mirror-help.arrayhash.com] Your subscription #27614 has been cancelled",
+    "Read": false,
+    "Size": 8333,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com Your subscription has been cancelled Hi Stripe SCA Fix QA, Your subscription #27614 has been cancelled. Subscription #27614 Product Basic Monthly Status Cancelled Reason tech..."
+  },
+  {
+    "ID": "4pcmnux4XzlvVJtpgZBcLj",
+    "Created": "2026-08-15T13:44:06.575+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "stripe-sca-fix-20260815@example.test"
+      }
+    ],
+    "Subject": "[mirror-help.arrayhash.com] Verify your subscription renewal #27614",
+    "Read": true,
+    "Size": 9322,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com Your renewal needs verification Hi Stripe SCA Fix QA, Your subscription renewal payment needs an extra verification step before it can be completed. Renewal details Subscript..."
+  },
+  {
+    "ID": "1pLSUsyYOVvi6wjaldOH8Z",
+    "Created": "2026-08-15T13:39:41.405+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "admin@mirror-help.arrayhash.com"
+      }
+    ],
+    "Subject": "[mirror-help.arrayhash.com] Payment failed for subscription #27614",
+    "Read": true,
+    "Size": 9274,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com Subscription payment failed The automatic renewal payment for subscription #27614 from Stripe SCA Fix QA has failed. Subscription #27614 Customer Stripe SCA Fix QA (stripe-sc..."
+  },
+  {
+    "ID": "3x0fgyjVt5VV8bWtnL8pNx",
+    "Created": "2026-08-15T13:39:41.086+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "stripe-sca-fix-20260815@example.test"
+      }
+    ],
+    "Subject": "[mirror-help.arrayhash.com] Payment failed for subscription #27614",
+    "Read": false,
+    "Size": 8984,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com Payment failed Hi Stripe SCA Fix QA, Unfortunately, the renewal payment for your subscription #27614 could not be completed. Reason: the card was declined by the issuer. Subs..."
+  },
+  {
+    "ID": "16QHMDr4zJ9JVLYgN8TYJT",
+    "Created": "2026-08-15T13:39:40.901+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "admin@mirror-help.arrayhash.com"
+      }
+    ],
+    "Subject": "[mirror-help.arrayhash.com] Payment failed for subscription #27614",
+    "Read": false,
+    "Size": 9304,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com Subscription payment failed The automatic renewal payment for subscription #27614 from Stripe SCA Fix QA has failed. Subscription #27614 Customer Stripe SCA Fix QA (stripe-sc..."
+  },
+  {
+    "ID": "1pIdwTEFMeeUqE8DAkcw5i",
+    "Created": "2026-08-15T13:39:40.63+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "stripe-sca-fix-20260815@example.test"
+      }
+    ],
+    "Subject": "[mirror-help.arrayhash.com] Payment failed for subscription #27614",
+    "Read": false,
+    "Size": 9015,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com Payment failed Hi Stripe SCA Fix QA, Unfortunately, the renewal payment for your subscription #27614 could not be completed. Reason: the card was declined by the issuer. Subs..."
+  },
+  {
+    "ID": "0FpiuAj9x3g2Sy57dRn3yG",
+    "Created": "2026-08-15T13:39:40.327+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "admin@mirror-help.arrayhash.com"
+      }
+    ],
+    "Subject": "[mirror-help.arrayhash.com]: Order #27707 has failed",
+    "Read": true,
+    "Size": 14635,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com Order failed: #27707 Unfortunately, the payment for order #27707 from Stripe SCA has failed. The order was as follows: Order summary Order #27707 (15 August, 2026) Product Qu..."
+  },
+  {
+    "ID": "43ZIX1zoaXtkiAWNm8h9rh",
+    "Created": "2026-08-15T13:39:39.809+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "admin@mirror-help.arrayhash.com"
+      }
+    ],
+    "Subject": "[mirror-help.arrayhash.com]: Order #27707 has failed",
+    "Read": true,
+    "Size": 14604,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com Order failed: #27707 Unfortunately, the payment for order #27707 from Stripe SCA has failed. The order was as follows: Order summary Order #27707 (15 August, 2026) Product Qu..."
+  },
+  {
+    "ID": "0pJSUPEoTxFHZob7yP1ksj",
+    "Created": "2026-08-15T13:34:27.328+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "stripe-sca-fix-20260815@example.test"
+      }
+    ],
+    "Subject": "[mirror-help.arrayhash.com] Payment received for subscription #27614",
+    "Read": true,
+    "Size": 8702,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com Payment received Hi Stripe SCA Fix QA, We have received your payment for subscription #27614. Your subscription has been renewed. Subscription #27614 Product Basic Monthly Am..."
+  },
+  {
+    "ID": "5sP7U37hhRowzRvZixrQAK",
+    "Created": "2026-08-15T13:34:26.252+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "admin@mirror-help.arrayhash.com"
+      }
+    ],
+    "Subject": "[mirror-help.arrayhash.com]: You've got a new order: #27691",
+    "Read": false,
+    "Size": 14686,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com New order: #27691 You’ve received a new order from Stripe SCA: Order summary Order #27691 (15 August, 2026) Product Quantity Price Basic Monthly (Every month) ×1 $29.99 Su..."
+  },
+  {
+    "ID": "3jbVc3SN9jEti3J9iuPBDe",
+    "Created": "2026-08-15T13:32:05.262+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "stripe-sca-fix-20260815@example.test"
+      }
+    ],
+    "Subject": "[mirror-help.arrayhash.com] Verify your subscription renewal #27614",
+    "Read": true,
+    "Size": 9322,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com Your renewal needs verification Hi Stripe SCA Fix QA, Your subscription renewal payment needs an extra verification step before it can be completed. Renewal details Subscript..."
+  },
+  {
+    "ID": "6mfQpN9KnXa6jH89bzFuaK",
+    "Created": "2026-08-15T13:29:05.245+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "paddle-phantom-fix-20260815@example.test"
+      }
+    ],
+    "Subject": "[mirror-help.arrayhash.com] Your subscription #27527 is on hold",
+    "Read": true,
+    "Size": 7994,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com Your subscription is on hold Hi Paddle Phantom Fix QA, Your subscription #27527 has been put on hold. Subscription #27527 Product SLT Paddle Daily Status On Hold This may be ..."
+  },
+  {
+    "ID": "5g3WqxwMiBaIxrge40Rm7Z",
+    "Created": "2026-08-15T13:27:55.708+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "stripe-sca-fix-20260815@example.test"
+      }
+    ],
+    "Subject": "[mirror-help.arrayhash.com] Payment received for subscription #27614",
+    "Read": false,
+    "Size": 8715,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com Payment received Hi Stripe SCA Fix QA, We have received your payment for subscription #27614. Your subscription has been renewed. Subscription #27614 Product Basic Monthly Am..."
+  },
+  {
+    "ID": "2FJYaIGYRMHzBGzS7yGJY1",
+    "Created": "2026-08-15T13:27:55.199+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "admin@mirror-help.arrayhash.com"
+      }
+    ],
+    "Subject": "[mirror-help.arrayhash.com]: You've got a new order: #27663",
+    "Read": false,
+    "Size": 14698,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com New order: #27663 You’ve received a new order from Stripe SCA: Order summary Order #27663 (15 August, 2026) Product Quantity Price Basic Monthly (Every month) ×1 $29.99 Su..."
+  },
+  {
+    "ID": "7QHP7D9Oo3CwW59Fubw5nC",
+    "Created": "2026-08-15T12:58:04.76+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "stripe-sca-fix-20260815@example.test"
+      }
+    ],
+    "Subject": "[mirror-help.arrayhash.com] Verify your subscription renewal #27614",
+    "Read": false,
+    "Size": 9322,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com Your renewal needs verification Hi Stripe SCA Fix QA, Your subscription renewal payment needs an extra verification step before it can be completed. Renewal details Subscript..."
+  },
+  {
+    "ID": "3RU5rqnNfFzHgTCwyGR4Hs",
+    "Created": "2026-08-15T12:57:52.313+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "admin@mirror-help.arrayhash.com"
+      }
+    ],
+    "Subject": "[mirror-help.arrayhash.com]: Order #27663 has failed",
+    "Read": false,
+    "Size": 14635,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com Order failed: #27663 Unfortunately, the payment for order #27663 from Stripe SCA has failed. The order was as follows: Order summary Order #27663 (15 August, 2026) Product Qu..."
+  },
+  {
+    "ID": "2G6bo7iT6fIJhyKv4238KK",
+    "Created": "2026-08-15T12:46:21.471+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "stripe-sca-fix-20260815@example.test"
+      }
+    ],
+    "Subject": "[mirror-help.arrayhash.com] Payment received for subscription #27614",
+    "Read": false,
+    "Size": 8716,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com Payment received Hi Stripe SCA Fix QA, We have received your payment for subscription #27614. Your subscription has been renewed. Subscription #27614 Product Basic Monthly Am..."
+  },
+  {
+    "ID": "5oQbTNPbdvfdptn1YQzCzR",
+    "Created": "2026-08-15T12:46:19.988+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "admin@mirror-help.arrayhash.com"
+      }
+    ],
+    "Subject": "[mirror-help.arrayhash.com]: You've got a new order: #27628",
+    "Read": false,
+    "Size": 14697,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com New order: #27628 You’ve received a new order from Stripe SCA: Order summary Order #27628 (15 August, 2026) Product Quantity Price Basic Monthly (Every month) ×1 $29.99 Su..."
+  },
+  {
+    "ID": "17sLOCfRU879XORJQZ6Ze1",
+    "Created": "2026-08-15T12:32:05.102+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "admin@mirror-help.arrayhash.com"
+      }
+    ],
+    "Subject": "[mirror-help.arrayhash.com]: Order #27628 has failed",
+    "Read": false,
+    "Size": 14647,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com Order failed: #27628 Unfortunately, the payment for order #27628 from Stripe SCA has failed. The order was as follows: Order summary Order #27628 (15 August, 2026) Product Qu..."
+  },
+  {
+    "ID": "6qYLejWgcjbrZNIW3BKfmp",
+    "Created": "2026-08-15T12:23:51.859+02:00",
+    "From": {
+      "Name": "admin.arrayhash.com",
+      "Address": "test@emran.io"
+    },
+    "To": [
+      {
+        "Name": "",
+        "Address": "admin@mirror-help.arrayhash.com"
+      }
+    ],
+    "Subject": "[mirror-help.arrayhash.com]: Order #27628 has failed",
+    "Read": true,
+    "Size": 14645,
+    "Attachments": 0,
+    "Snippet": "mirror-help.arrayhash.com Order failed: #27628 Unfortunately, the payment for order #27628 from Stripe SCA has failed. The order was as follows: Order summary Order #27628 (15 August, 2026) Product Qu..."
+  }
+]
+
+## Board snapshot
+Subscription Lifecycle & Renewal QA
+Total: 132 tasks
+
+STATUS            COUNT      WIP  BLOCKED  OVERDUE
+backlog               0 --              0        0
+todo                  2 --              1        1
+in-progress           0 --              0        0
+review                0 --              0        0
+blocked               0 --              0        0
+done                130 --              0        0
+
+PRIORITY          COUNT
+low                   0
+medium               12
+high                 69
+critical             51
+
+CLASS             COUNT
+expedite              0
+fixed-date            0
+standard            132
+intangible            0

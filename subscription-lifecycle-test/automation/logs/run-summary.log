@@ -139,3 +139,18 @@
 2026-08-16T06:10:02+02:00 START D13 (2026-08-16) phase=teardown-late-morning site=10:10 UTC+6
 2026-08-16T06:25:53+02:00 OK D13 phase=teardown-late-morning report=/home/server-manager/www/arrayhash/mirror-help.arrayhash.com/public/wp-content/plugins/qa/subscription-lifecycle-test/watch-reports/D13-2026-08-15.md
 2026-08-16T06:25:53+02:00 RETAIN task 119 is not done; teardown will retry at the next cron phase
+2026-08-16T12:10:02+02:00 START D13 (2026-08-16) phase=teardown-afternoon site=16:10 UTC+6
+2026-08-16T12:35:29+02:00 OK D13 phase=teardown-afternoon report=/home/server-manager/www/arrayhash/mirror-help.arrayhash.com/public/wp-content/plugins/qa/subscription-lifecycle-test/watch-reports/D13-2026-08-15.md
+2026-08-16T12:35:29+02:00 RETAIN task 119 is not done; teardown will retry at the next cron phase
+2026-08-16T15:10:02+02:00 START D13 (2026-08-16) phase=teardown-evening site=19:10 UTC+6
+2026-08-16T15:40:05+02:00 OK D13 phase=teardown-evening report=/home/server-manager/www/arrayhash/mirror-help.arrayhash.com/public/wp-content/plugins/qa/subscription-lifecycle-test/watch-reports/D13-2026-08-15.md
+2026-08-16T15:40:05+02:00 RETAIN task 119 is not done; teardown will retry at the next cron phase
+2026-08-16T17:42:02+02:00 START D13 (2026-08-16) phase=teardown-night site=21:42 UTC+6
+2026-08-16T17:42:15+02:00 FAIL D13 phase=teardown-night codex exited 1 — see /home/server-manager/www/arrayhash/mirror-help.arrayhash.com/public/wp-content/plugins/qa/subscription-lifecycle-test/automation/logs/D13-2026-08-16-teardown-night-codex.log
+2026-08-16T17:42:15+02:00 RETAIN task 119 is not done; teardown will retry at the next cron phase
+2026-08-17T02:10:02+02:00 START D13 (2026-08-17) phase=teardown-early-morning site=06:10 UTC+6
+2026-08-17T02:10:17+02:00 FAIL D13 phase=teardown-early-morning codex exited 1 — see /home/server-manager/www/arrayhash/mirror-help.arrayhash.com/public/wp-content/plugins/qa/subscription-lifecycle-test/automation/logs/D13-2026-08-17-teardown-early-morning-codex.log
+2026-08-17T02:10:17+02:00 RETAIN task 119 is not done; teardown will retry at the next cron phase
+2026-08-17T06:10:02+02:00 START D13 (2026-08-17) phase=teardown-late-morning site=10:10 UTC+6
+2026-08-17T06:10:26+02:00 FAIL D13 phase=teardown-late-morning codex exited 1 — see /home/server-manager/www/arrayhash/mirror-help.arrayhash.com/public/wp-content/plugins/qa/subscription-lifecycle-test/automation/logs/D13-2026-08-17-teardown-late-morning-codex.log
+2026-08-17T06:10:26+02:00 RETAIN task 119 is not done; teardown will retry at the next cron phase
