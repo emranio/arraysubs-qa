@@ -45,3 +45,4 @@
 {"timestamp":"2026-08-16T13:58:17.719161+06:00","action":"move","task_id":12,"detail":"open -\u003e in-progress"}
 {"timestamp":"2026-08-16T15:00:32.406548+06:00","action":"edit","task_id":12,"detail":"stage-7: First-class Paused lifecycle, settings migration, REST and My Account production QA"}
 {"timestamp":"2026-08-16T15:00:42.225875+06:00","action":"move","task_id":12,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-08-18T09:21:19.529138877+02:00","action":"create","task_id":13,"detail":"migration: Retention Flow + Profile Builder moved free→pro"}
