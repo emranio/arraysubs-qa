@@ -1,16 +1,16 @@
 ---
 id: 44
 title: SLT-SYN-02 Audit variation-level Flexible Renewal Sync UI, [$loop] meta and per-variation independence
-status: done
+status: todo
 priority: critical
-created: 2026-08-02T03:43:06.596459182+02:00
-updated: 2026-08-05T08:33:43.132592545+02:00
-started: 2026-08-05T08:33:43.132591793+02:00
-completed: 2026-08-05T08:33:43.132591793+02:00
+created: 2026-08-22T19:10:00+02:00
+updated: 2026-08-22T19:10:00+02:00
 tags:
+    - cycle-2
+    - granular
     - renewal-sync
     - day-02
-due: "2026-08-04"
+due: "2026-08-25"
 estimate: 1h 30m
 depends_on:
     - 10
@@ -20,7 +20,7 @@ depends_on:
 class: standard
 ---
 
-> **SLT-SYN-02** · group `sync` · scheduled **D02** (2026-08-04)
+> **SLT-SYN-02** · group `sync` · scheduled **D02** (2026-08-25)
 
 > Read `README.md` (environment + isolation contract), `calendar.md` (this day's exact
 > ordering — it is binding, not advisory) and `plan-audit.md` before starting.
@@ -35,15 +35,15 @@ Prove that the variation-level Flexible Renewal Sync block is a genuinely separa
 - Plugins: pro-required
 
 ## Preconditions
-- SLT-SETUP-01, SLT-SETUP-02 and SLT-PROD-15 (`SLT Flex Variable Daily`, attribute `SLT Sync Mode`, variations **Full** / **Next Cycle** / **No Sync**, all day/3 at $12.00) complete.
-- SLT-SYN-01 complete — its findings on positional metas and the `no`-only deactivation rule apply identically here.
+- SLT-SETUP-01, SLT-SETUP-02 and SLT-PROD-15 (`SLT2 Flex Variable Daily`, attribute `SLT2 Sync Mode`, variations **Full** / **Next Cycle** / **No Sync**, all day/3 at $12.00) complete.
+- SLT-SYN-01 complete — revalidate its positional-meta and deactivation contracts independently at variation level.
 - Code facts (verified): the view is `arraysubspro/src/Features/FlexibleRenewalSync/views/variation-fields.php`; field names are `_arraysubs_flex_sync_enabled[<loop>]`, `_arraysubs_flex_sync_seg1_end[<loop>]`, `_arraysubs_flex_sync_seg2_end[<loop>]`, `_arraysubs_flex_sync_seg{1,2,3}_active[<loop>]`; unticking the master box DELETES `_arraysubs_flex_sync_enabled` on that variation rather than writing `no`; `filterSupportsRenewalSync()` and `filterRenewalSyncContext()` both resolve `subscription_data['product_id']` to the VARIATION id for a variation purchase.
 - SLT-PROD-15 declared: **Full** = all three active, seg1_end 1, seg2_end 2; **Next Cycle** = segment 3 only; **No Sync** = flex unticked. This task must leave exactly that state.
 
 ## Test data
 | Item | Value |
 |---|---|
-| Product | SLT Flex Variable Daily (parent) + variations Full / Next Cycle / No Sync, all day/3 $12.00 |
+| Product | SLT2 Flex Variable Daily (parent) + variations Full / Next Cycle / No Sync, all day/3 $12.00 |
 | Account | use the current local admin credential source in `AGENTS.md` |
 | Coupon | N/A |
 | Card | N/A |
@@ -52,10 +52,10 @@ Prove that the variation-level Flexible Renewal Sync block is a genuinely separa
 ## Steps
 1. `PREV=$(/usr/local/bin/mailpit-agent latest-id)`; record it.
 2. From WP root `cd /home/server-manager/www/arrayhash/mirror-help.arrayhash.com/public` resolve the exact parent and three variation IDs, then capture the before-state for all four: `wp post meta list <ID> --keys=_arraysubs_flex_sync_enabled,_arraysubs_flex_sync_seg1_end,_arraysubs_flex_sync_seg2_end,_arraysubs_flex_sync_seg1_active,_arraysubs_flex_sync_seg2_active,_arraysubs_flex_sync_seg3_active,_subscription_period,_subscription_interval --format=csv --allow-root`, tee all four into `/home/server-manager/slt-evidence/SLT-SYN-02-variation-meta-before.csv`. Also save the ID-to-attribute-to-`menu_order` mapping as `/home/server-manager/slt-evidence/SLT-SYN-02-variation-order-before.csv`; later probes must identify variations by ID/attribute, never by their current loop position.
-   - Precondition guard: if the fresh variable parent already contains any `_arraysubs_flex_sync_*` key, preserve that exact first read as `SLT-SYN-02-parent-precondition-leak.csv` and write a standalone product issue under `issues/`. Delete only those six parent flex keys as QA-fixture containment, verify they are absent, and then recapture the authoritative `variation-meta-before.csv`. Do not click the parent-level **Update** action during this task because its hidden unindexed fields can rematerialize the leak. The task verdict must retain the product finding even if the subsequent variation audit passes.
-3. `agent-browser --session admin-SLT-SYN-02 open "https://mirror-help.arrayhash.com/wp-admin/post.php?post=<SLT Flex Variable Daily PARENT ID>&action=edit"` -> `agent-browser --session admin-SLT-SYN-02 snapshot -i` -> open the **Variations** tab and expand all three variations.
+   - Precondition guard: if the fresh variable parent already contains any `_arraysubs_flex_sync_*` key, preserve that exact first read as `SLT-SYN-02-parent-precondition-leak.csv` and write a dedicated product issue under `qa/issues/`. Delete only those six parent flex keys as QA-fixture containment, verify they are absent, and then recapture the authoritative `variation-meta-before.csv`. Do not click the parent-level **Update** action during this task because its hidden unindexed fields can rematerialize the leak. The task verdict must retain the product finding even if the subsequent variation audit passes.
+3. `agent-browser --session admin-SLT-SYN-02 open "https://mirror-help.arrayhash.com/wp-admin/post.php?post=<SLT2 Flex Variable Daily PARENT ID>&action=edit"` -> `agent-browser --session admin-SLT-SYN-02 snapshot -i` -> open the **Variations** tab and expand all three variations.
 4. Confirm the Flexible Renewal Sync block appears INSIDE each variation panel, positioned after that variation's **Different Renewal Price** section, and that it does NOT appear anywhere in the parent-level **Subscription [ArraySubs]** area. Screenshot `SLT-SYN-02-01-three-variations-expanded.png`.
-5. Read the rendered field names scoped to the variation panels with `agent-browser --session admin-SLT-SYN-02 eval "Array.from(document.querySelectorAll('#variable_product_options [name*=arraysubs_flex_sync]')).map(e=>e.name+'='+e.value).join('\n')"` and record them. Confirm every variation name carries a `[<loop>]` index and that the three variations use three DISTINCT loop indices. Separately list unindexed flex fields outside `#variable_product_options`; if the hidden parent tab contributes any, attach that proof to the step-2 standalone product issue rather than falsely failing the variation index assertion.
+5. Read the rendered field names scoped to the variation panels with `agent-browser --session admin-SLT-SYN-02 eval "Array.from(document.querySelectorAll('#variable_product_options [name*=arraysubs_flex_sync]')).map(e=>e.name+'='+e.value).join('\n')"` and record them. Confirm every variation name carries a `[<loop>]` index and that the three variations use three DISTINCT loop indices. Separately list unindexed flex fields outside `#variable_product_options`; if the hidden parent tab contributes any, attach that proof to the step-2 dedicated product issue rather than falsely failing the variation index assertion.
 6. Confirm each variation's config container carries `data-cycle-days="3"` (day/3 nominal), and that the **Full** legend reads `1` / `2` / `3`, the **Next Cycle** legend reads `1 - 3` with a single row, and the **No Sync** variation shows the master checkbox UNTICKED with the config block hidden. Screenshot `SLT-SYN-02-02-legends.png`.
 7. Independence probe: on the **Full** variation ONLY, turn the **Prorate amount** toggle OFF (leaving segments 1 and 3 active) and click **Save changes** on the Variations tab. Wait for the AJAX save to settle, then reload the edit screen and re-expand all three.
 8. Read all three variations' metas again via the step-2 command. Confirm ONLY the **Full** variation changed and that `Next Cycle` and `No Sync` are byte-identical to the before file; capture `SLT-SYN-02-03-full-seg2-off-independent.png`.
@@ -97,59 +97,28 @@ Prove that the variation-level Flexible Renewal Sync block is a genuinely separa
 - Parent ID, three variation IDs, `$PREV`, and any AJAX errors from the Variations tab network log.
 
 ## Pass criteria
-- [x] Flex block renders per variation and never visibly on the parent
-- [x] All variation-panel field names are `[<loop>]`-indexed with three distinct indices; hidden unindexed parent fields are separately documented
-- [x] data-cycle-days is 3 on all three variations
-- [x] Editing one variation leaves the other two byte-identical (both directions probed)
-- [x] Reordering variations leaves every plan attached to its exact ID, then the original order is restored with an empty diff
-- [x] Unticking deletes `_arraysubs_flex_sync_enabled`; dormant values are recorded and the exact No Sync baseline is restored
-- [x] Parent remains free of flex meta after guarded normalization; the initial leak is preserved as a standalone issue
-- [x] getConfig() non-null for Full and Next Cycle, null for No Sync
-- [x] Segment/mode matrix matches Full 1/2/3 and Next Cycle all-3
-- [x] Before/after diffs empty; zero task-attributable mail; zero task-attributable AJAX/console errors
+- [ ] Flex block renders per variation and never visibly on the parent
+- [ ] All variation-panel field names are `[<loop>]`-indexed with three distinct indices; hidden unindexed parent fields are separately documented
+- [ ] data-cycle-days is 3 on all three variations
+- [ ] Editing one variation leaves the other two byte-identical (both directions probed)
+- [ ] Reordering variations leaves every plan attached to its exact ID, then the original order is restored with an empty diff
+- [ ] Unticking deletes `_arraysubs_flex_sync_enabled`; dormant values are recorded and the exact No Sync baseline is restored
+- [ ] Parent remains free of flex meta after guarded normalization; the initial leak is preserved as a dedicated issue
+- [ ] getConfig() non-null for Full and Next Cycle, null for No Sync
+- [ ] Segment/mode matrix matches Full 1/2/3 and Next Cycle all-3
+- [ ] Before/after diffs empty; zero task-attributable mail; zero task-attributable AJAX/console errors
 
 ## Isolation / teardown
 - State handoff: the three verified variation configs are the contract `SLT-SYN-13` buys against. If it later observes identical next-payment dates for **Full** and **Next Cycle**, this task's evidence is what proves the fault is in variation resolution and not in the stored configuration.
 - Restores: all three variations returned to SLT-PROD-15's declared configuration (proved by the empty diff). No global setting touched. Nothing purchased, nothing deleted.
 
-## Execution — 2026-08-05 (late completion of D02)
-
-Verdict: **COMPLETED WITH PRODUCT FINDING**. The variation-level independence contract passed after the guarded parent cleanup. The fresh parent leak remains an open standalone finding at `issues/critical-plugin-SLT-SYN-02-variable-parent-hidden-flex-meta.md`.
-
-- Parent `12385`; Full `12386`; Next Cycle `12388`; No Sync `12390`.
-- All indexed loops, day/3 containers, legends, two cross-write directions, real reorder, deletion semantics, parent isolation, runtime config/partition/matrix, and exact restoration were verified.
-- Both final diffs are empty. Parent exact-prefix read is empty.
-- Mailpit baseline `6fzJg6YALlBNfbNPe6f79F`, final `45OTdiHe9PfgKqXpz0uE51`: 34 background messages fully classified, zero task-attributable messages.
-- The opaque browser `Object` page-error reproduced on an ordinary Dashboard control reload; no Variations Save changes AJAX failure or task-attributable console error occurred.
-- Plan corrections C186-C191 were applied before closure.
-- Purchase authorization for `SLT-SYN-13` is limited to the clean ID-keyed Full/Next Cycle configuration recorded here.
-- Primary facts: `/home/server-manager/slt-evidence/SLT-SYN-02-facts.txt`.
-
-## Self-review
-
-- Re-read the originating plan, its corrected C186-C191 isolation clauses, the standalone issue, all five screenshots, field-name/runtime dumps, exact before/after files, Mailpit delta, browser control comparison, and final live UI.
-- Confirmed no product source was inspected or changed, no global setting was changed, no purchase occurred, no card data was captured, and only the task session is eligible for closure.
-
 ---
 
-### Verified environment facts (2026-08-01/02 — do not re-derive)
+### Fresh-cycle validation contract
 
-- **Nothing fires at `_next_payment_date`.** Every scheduled leg is shifted by
-  `crc32('arraysubs-spread-'.$subscription_id) % 21600` (0-6 h). Charge fires at `due + offset`,
-  invoice at `due + offset - 6h`. The stored date never moves. **Assert a window, not a point.**
-- Currency `USD`. **Taxes are OFF** (`woocommerce_calc_taxes = no`) — never assert a tax line.
-- Orders use **HPOS** (`wp_wc_orders`), not `wp_posts`.
-- `woocommerce_enable_guest_checkout = yes`, but ArraySubs force-requires registration for
-  **subscription** carts via `woocommerce_checkout_registration_required`
-  (`SubscriptionCheckout/Services/Hooks.php:103`, `CheckoutHelpersTrait.php:93-100`).
-- WooCommerce **grouped** products have zero handling in either plugin — grouped tasks are
-  exploratory: document behaviour, do not assert a spec.
-- WP-Cron runs every minute from `/etc/cron.d/mirror-help-arrayhash-wordpress`. Scheduled actions
-  fire on their own; **a renewal that does not fire is a real bug** — capture evidence and do not force a natural-watch action.
-- Give this task its own browser session (`agent-browser --session <role>-<TASK-KEY>`). Sessions are
-  keyed by name and **share a cart**.
-- Never run a bare or `--hooks=` Action Scheduler drain. Run one known action ID at a time only when the task explicitly authorizes it and after the required queue pre-flight; natural-watch actions are never forced.
-- Evidence goes under `/home/server-manager/slt-evidence/` using task-key-prefixed filenames.
-
-[[2026-08-05]] Wed 08:33
-Review outcome: PASS for the variation-independence contract; the separate parent hidden-meta product finding remains open. Evidence inventory, exact restoration diffs, Mailpit classification, registry/watch handoff, issue completeness, and browser control comparison all rechecked.
+- Re-derive every ID, count, option value, gateway capability, scheduler timestamp, and email baseline on this run; no prior-cycle result is evidence.
+- Create and mutate only registered `SLT2 ` / `slt2-*` fixtures. Legacy `SLT` and all non-SLT2 data are read-only controls.
+- Automatic-gateway scope is Stripe and Paddle only. Stripe is the primary path; run Paddle parity wherever Paddle supports the behavior. Do not test or configure PayPal or Mollie.
+- ArraySubs core must own its Stripe/Paddle integration, renewal, retry, webhook, REST, refund, and customer-payment services with Pro inactive; vendor host classes retain their expected ownership.
+- Browser-required assertions use Vercel `agent-browser` with isolated task/role sessions and current snapshot refs. WP-CLI always includes `--allow-root`.
+- Update the lifecycle card, the matching `qa/progress/` card, and `qa/issues/` for every new regression. Evidence belongs to this fresh cycle only.

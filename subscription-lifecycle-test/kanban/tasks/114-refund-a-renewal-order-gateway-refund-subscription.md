@@ -1,17 +1,17 @@
 ---
 id: 114
 title: 'Refund a renewal order: gateway refund, subscription effect, and emails'
-status: done
+status: todo
 priority: high
-created: 2026-08-02T03:43:12.458047506+02:00
-updated: 2026-08-11T03:08:49.4418231+02:00
-started: 2026-08-11T03:08:49.441822058+02:00
-completed: 2026-08-11T03:08:49.441822058+02:00
+created: 2026-08-22T19:10:00+02:00
+updated: 2026-08-22T19:10:00+02:00
 tags:
+    - cycle-2
+    - granular
     - admin
     - portal
     - day-09
-due: "2026-08-11"
+due: "2026-09-01"
 estimate: 1h30m
 depends_on:
     - 48
@@ -19,12 +19,10 @@ depends_on:
     - 58
     - 20
     - 19
-claimed_by: steam-tide
-claimed_at: 2026-08-11T03:08:49.441822989+02:00
 class: standard
 ---
 
-> **SLT-ADM-08** · group `admin` · scheduled **D09** (2026-08-11)
+> **SLT-ADM-08** · group `admin` · scheduled **D09** (2026-09-01)
 
 > Read `README.md` (environment + isolation contract), `calendar.md` (this day's exact
 > ordering — it is binding, not advisory) and `plan-audit.md` before starting.
@@ -35,12 +33,12 @@ Refund a paid renewal order under `auto_gateway_refund = true` and `allow_prorat
 ## Scope
 - Gateway: Stripe test
 - Checkout: N/A
-- Account: existing (slt-core)
+- Account: existing (slt2-core)
 - Plugins: both
 
 ## Preconditions
-- SLT-ADM-06/07 done. S_FEE = `SLT Signup Fee Daily` sub (slt-core), active; RX = its latest PAID renewal (`$9.00`). S5 = canonical `SLT Renewal Price Step` sub (slt-core), active — preview only, never refunded.
-- Baseline unchanged: `refunds.cancellation_behavior = immediate` plus the two above — do NOT change them. Run D9 = 2026-08-11 after the morning watch report.
+- SLT-ADM-06/07 done. S_FEE = `SLT2 Signup Fee Daily` sub (slt2-core), active; RX = its latest PAID renewal (`$9.00`). S5 = canonical `SLT2 Renewal Price Step` sub (slt2-core), active — preview only, never refunded.
+- Baseline unchanged: `refunds.cancellation_behavior = immediate` plus the two above — do NOT change them. Run D9 = 2026-09-01 after the morning watch report.
 
 ## Test data
 | Item | Value |
@@ -57,9 +55,9 @@ Refund a paid renewal order under `auto_gateway_refund = true` and `allow_prorat
 6. Repeat step 3 for the remaining `5.00`, reason `SLT-ADM-08 full`, via the gateway; immediately before the final gateway-refund click set `FULL_PRE=$(mailpit-agent latest-id)`.
 7. Poll immutable FULL_PRE in repeated calls no longer than 60 seconds through the two-minute cutoff for exact S_FEE cancellation; then inspect the complete delta, require customer/admin cancellation subjects for S_FEE, correlate refund mail by exact RX, and save/show every linked message.
 8. Re-run step 4 plus `--keys=_cancelled_by,_cancellation_reason,_refund_cancellation_order_id`; check Tools -> Scheduled Actions for pending S_FEE actions.
-9. Open `/my-account/view-subscription/<S_FEE>/` as `--session cust-adm08-SLT-ADM-08` (`slt-core`); screenshot status + **Refund History**.
+9. Open `/my-account/view-subscription/<S_FEE>/` as `--session cust-adm08-SLT-ADM-08` (`slt2-core`); screenshot status + **Refund History**.
 10. On `#/subscriptions/detail/<S5>` click **Prorated Refund**, record the modal's amount, days unused and cycle days, screenshot, then **close it without clicking Process Refund**. If `_last_payment_date` is empty it credits a full cycle (L21).
-11. In Stripe logs confirm both refunds reached the exact original transaction and record sanitized refund IDs. Verify exact refund counts/totals and no other order changed; prove S5 unchanged. Close both sessions, independently review partial/full/portal/preview/gateway evidence, publish S_FEE's early terminal state, then move through `review` to `done` with Review empty. Any live defect goes only in `issues/SLT-ADM-08-<concise-slug>.md` with task/stage/plan path; subscription/order/transaction/refund/action/message IDs; user ID/login/email/role; exact routes/sessions/timestamps; reproduction; expected/actual; and UI/meta/order/log/Mailpit proof.
+11. In Stripe logs confirm both refunds reached the exact original transaction and record sanitized refund IDs. Verify exact refund counts/totals and no other order changed; prove S5 unchanged. Close both sessions, independently review partial/full/portal/preview/gateway evidence, publish S_FEE's early terminal state, then move through `review` to `done` with Review empty. Any live defect goes only in `qa/issues/` kanban card named `SLT-ADM-08-<concise-slug>` with task/stage/plan path; subscription/order/transaction/refund/action/message IDs; user ID/login/email/role; exact routes/sessions/timestamps; reproduction; expected/actual; and UI/meta/order/log/Mailpit proof.
 
 ## Expected results
 1. Partial refund: order shows `-$4.00`, status stays Processing/Completed (NOT `refunded`); Stripe log shows a gateway refund.
@@ -71,14 +69,14 @@ Refund a paid renewal order under `auto_gateway_refund = true` and `allow_prorat
 ## Emails expected
 | # | Email | Trigger point | Recipient | Subject contains | Verify with |
 |---|---|---|---|---|---|
-| 1 | WooCommerce (partially) refunded | steps 3, 6 | slt-core | `refunded`, order `RX` | complete `PARTIAL_PRE` / `FULL_PRE` deltas, correlated by order id |
-| 2 | `subscription_cancelled` | full refund cancels S_FEE | slt-core | `subscription #<S_FEE> has been cancelled` | immutable-baseline polls ≤60 seconds through the two-minute cutoff; exact match plus full delta |
+| 1 | WooCommerce (partially) refunded | steps 3, 6 | slt2-core | `refunded`, order `RX` | complete `PARTIAL_PRE` / `FULL_PRE` deltas, correlated by order id |
+| 2 | `subscription_cancelled` | full refund cancels S_FEE | slt2-core | `subscription #<S_FEE> has been cancelled` | immutable-baseline polls ≤60 seconds through the two-minute cutoff; exact match plus full delta |
 | 3 | `admin_subscription_cancelled` | same | admin | `Subscription #<S_FEE> cancelled by` | complete `FULL_PRE` delta; exact id and admin `To:` |
 | 4 | NONE EXPECTED after the partial | step 3 | — | `cancelled` | No cancellation subject between steps 3-6 |
 
 ## Evidence to capture
 - Screenshots `SLT-ADM-08-01-settings.png`, `-02-partial.png`, `-03-note.png`, `-04-full.png`, `-05-history.png`, `-06-preview.png`; RX id, Stripe refund ids, `_refund_history`, `M0`/`PARTIAL_PRE`/`FULL_PRE`, exact-match/full-delta Mailpit ids, note texts.
-- Carry the SLT-ADM-06 finding: `findRefundableOrder()` looks renewals up by `_arraysubs_subscription_id`, which Stripe renewals lack — say whether the preview resolved an order.
+- Revalidate refund-order resolution on the current build using both relationship meta shapes; require the preview to resolve the exact renewal order without relying on a previous missing-link observation.
 
 ## Pass criteria
 - [ ] Both refunds executed at Stripe (log + ids), not "manually"
@@ -87,49 +85,18 @@ Refund a paid renewal order under `auto_gateway_refund = true` and `allow_prorat
 - [ ] `subscription_cancelled` + `admin_subscription_cancelled` arrive
 - [ ] Refund History correct in my-account; no renewal left scheduled
 - [ ] Prorated preview read; modal closed unprocessed
-- [ ] Exact renewal/refund relationships, sessions, standalone findings, and review close with Review empty
+- [ ] Exact renewal/refund relationships, sessions, QA issue cards, and review close with Review empty
 
 ## Isolation / teardown
-- S_FEE ends cancelled a day early — record it in the registry so SLT-SETUP-99A skips it and D11/D12 expect no further renewal. No setting written; S5 and all other SLT subscriptions untouched. Close only `admin-SLT-ADM-08` and `cust-adm08-SLT-ADM-08`.
+- S_FEE ends cancelled a day early — record it in the registry so SLT-SETUP-99A skips it and D11/D12 expect no further renewal. No setting written; S5 and all other SLT2 subscriptions untouched. Close only `admin-SLT-ADM-08` and `cust-adm08-SLT-ADM-08`.
 
 ---
 
-### Verified environment facts (2026-08-01/02 — do not re-derive)
+### Fresh-cycle validation contract
 
-- **Nothing fires at `_next_payment_date`.** Every scheduled leg is shifted by
-  `crc32('arraysubs-spread-'.$subscription_id) % 21600` (0-6 h). Charge fires at `due + offset`,
-  invoice at `due + offset - 6h`. The stored date never moves. **Assert a window, not a point.**
-- Currency `USD`. **Taxes are OFF** (`woocommerce_calc_taxes = no`) — never assert a tax line.
-- Orders use **HPOS** (`wp_wc_orders`), not `wp_posts`.
-- `woocommerce_enable_guest_checkout = yes`, but ArraySubs force-requires registration for
-  **subscription** carts via `woocommerce_checkout_registration_required`
-  (`SubscriptionCheckout/Services/Hooks.php:103`, `CheckoutHelpersTrait.php:93-100`).
-- WooCommerce **grouped** products have zero handling in either plugin — grouped tasks are
-  exploratory: document behaviour, do not assert a spec.
-- WP-Cron runs every minute from `/etc/cron.d/mirror-help-arrayhash-wordpress`. Scheduled actions
-  fire on their own; **a renewal that does not fire is a real bug** — capture evidence and do not force a natural-watch action.
-- Give this task its own browser session (`agent-browser --session <role>-<TASK-KEY>`). Sessions are
-  keyed by name and **share a cart**.
-- Never run a bare or `--hooks=` Action Scheduler drain. Run one known action ID at a time only when the task explicitly authorizes it and after the required queue pre-flight; natural-watch actions are never forced.
-- Evidence goes under `/home/server-manager/slt-evidence/` using task-key-prefixed filenames.
-
-## D09 execution — 2026-08-11 early-morning
-
-`FAIL` after completing every runnable leg. Exact execution record:
-`/home/server-manager/slt-evidence/SLT-ADM-08-D09-execution.md`.
-
-- PASS: exact relationship-derived renewal order `13590`; `$4.00` partial gateway refund left
-  subscription `12655` active with the exact note and no cancellation mail; the remaining `$5.00`
-  gateway refund fully refunded the order, cancelled the subscription with all authored metadata,
-  cancelled actions `16794`/`16795`, emitted the exact three-message full-refund delta, populated
-  portal Refund History, and settled as two succeeded Stripe test refunds against the original charge.
-- FAIL: S5 `12234` exposed no **Prorated Refund** control, so its required preview could not be read.
-  S5 was left unchanged.
-- Registry page `11847` now contains the single append-only marker
-  `SLT-ADM-08 D09 EARLY TERMINAL`; D10 setup must skip cancelled subscription `12655`.
-- Standalone findings:
-  - `issues/light-plugin-SLT-ADM-08-prorated-refund-control-missing.md`
-  - `issues/light-plugin-SLT-ADM-08-refund-button-amount-stays-zero.md`
-  - `issues/light-plugin-SLT-ADM-08-admin-cancellation-misattributed-to-customer.md`
-- Both task browser sessions were closed. The transient copied admin-auth state file was deleted
-  immediately after customer-session setup and is not recoverable.
+- Re-derive every ID, count, option value, gateway capability, scheduler timestamp, and email baseline on this run; no prior-cycle result is evidence.
+- Create and mutate only registered `SLT2 ` / `slt2-*` fixtures. Legacy `SLT` and all non-SLT2 data are read-only controls.
+- Automatic-gateway scope is Stripe and Paddle only. Stripe is the primary path; run Paddle parity wherever Paddle supports the behavior. Do not test or configure PayPal or Mollie.
+- ArraySubs core must own its Stripe/Paddle integration, renewal, retry, webhook, REST, refund, and customer-payment services with Pro inactive; vendor host classes retain their expected ownership.
+- Browser-required assertions use Vercel `agent-browser` with isolated task/role sessions and current snapshot refs. WP-CLI always includes `--allow-root`.
+- Update the lifecycle card, the matching `qa/progress/` card, and `qa/issues/` for every new regression. Evidence belongs to this fresh cycle only.

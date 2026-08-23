@@ -1,17 +1,17 @@
 ---
 id: 39
-title: SLT-PROD-09 Create SLT Grouped Set, a grouped product with two subscription children
-status: done
+title: SLT-PROD-09 Create SLT2 Grouped Set, a grouped product with two subscription children
+status: todo
 priority: medium
-created: 2026-08-02T03:43:06.254717075+02:00
-updated: 2026-08-05T11:17:35.178214061+02:00
-started: 2026-08-05T11:17:34.944220781+02:00
-completed: 2026-08-05T11:17:34.944220781+02:00
+created: 2026-08-22T19:10:00+02:00
+updated: 2026-08-22T19:10:00+02:00
 tags:
+    - cycle-2
+    - granular
     - setup
     - products
     - day-03
-due: "2026-08-05"
+due: "2026-08-26"
 estimate: 45m
 depends_on:
     - 10
@@ -21,13 +21,13 @@ depends_on:
 class: standard
 ---
 
-> **SLT-PROD-09** · group `catalog` · scheduled **D03** (2026-08-05)
+> **SLT-PROD-09** · group `catalog` · scheduled **D03** (2026-08-26)
 
 > Read `README.md` (environment + isolation contract), `calendar.md` (this day's exact
 > ordering — it is binding, not advisory) and `plan-audit.md` before starting.
 
 ## Objective
-Provide the grouped product and pin the real behaviour: ArraySubs has NO grouped-product handling at all — the header **Subscription [ArraySubs]** checkbox is registered `show_if_simple show_if_variable`, so a grouped parent can never itself be a subscription. Its children are ordinary simple subscription products added to the cart individually, which means the grouped page is also the cleanest way to exercise `multiple_subscriptions.allow_multiple_in_cart = false` (baseline, unchanged), where adding two subscription children at once must be refused.
+Provide the grouped-product fixture and revalidate the current behavior without assuming the previous implementation. Determine whether the grouped parent can carry subscription configuration, whether its subscription children render and add correctly, and how `multiple_subscriptions.allow_multiple_in_cart = false` is enforced when two subscription children are selected together. A visible refusal is mandatory when the cart contract rejects the combination.
 
 ## Scope
 - Gateway: N/A
@@ -36,7 +36,7 @@ Provide the grouped product and pin the real behaviour: ArraySubs has NO grouped
 - Plugins: free-only
 
 ## Preconditions
-- SLT-SETUP-01, SLT-PROD-01 (`SLT Daily Core`) and SLT-PROD-04 (`SLT Signup Fee Daily`) complete.
+- SLT-SETUP-01, SLT-PROD-01 (`SLT2 Daily Core`) and SLT-PROD-04 (`SLT2 Signup Fee Daily`) complete.
 - Run after the D3 SLT-SYN-04 global-settings bracket has closed and immediately after SLT-PROD-04, before the 18:00–19:00 SLT-CPN-04 slot.
 - This task also creates one plain non-subscription child so the mixed-cart rule (`allow_mixed_cart = true`, unchanged) is exercisable.
 - Sessions `admin-SLT-PROD-09` and `guest-SLT-PROD-09` are exclusive to this task.
@@ -44,7 +44,7 @@ Provide the grouped product and pin the real behaviour: ArraySubs has NO grouped
 ## Test data
 | Item | Value |
 |---|---|
-| Product | SLT Grouped Set / slug `slt-grouped-set`; child `SLT Grouped Extra` / slug `slt-grouped-extra` ($3.00, non-subscription) |
+| Product | SLT2 Grouped Set / slug `slt2-grouped-set`; child `SLT2 Grouped Extra` / slug `slt2-grouped-extra` ($3.00, non-subscription) |
 | Account | N/A |
 | Coupon | N/A |
 | Card | N/A |
@@ -52,22 +52,22 @@ Provide the grouped product and pin the real behaviour: ArraySubs has NO grouped
 
 ## Steps
 1. Capture `mailpit-agent latest-id`.
-2. Create the plain child first: `agent-browser --session admin-SLT-PROD-09 open "https://mirror-help.arrayhash.com/wp-admin/post-new.php?post_type=product"`; title `SLT Grouped Extra`; **Simple product**; tick **Virtual**; do NOT tick **Subscription [ArraySubs]**; **Regular price ($)** `3.00`; slug `slt-grouped-extra`; Publish.
-3. New product: title `SLT Grouped Set`. **Description**: `SLT window product. Grouped parent with subscription children. Delete on 2026-08-15.`
+2. Create the plain child first: `agent-browser --session admin-SLT-PROD-09 open "https://mirror-help.arrayhash.com/wp-admin/post-new.php?post_type=product"`; title `SLT2 Grouped Extra`; **Simple product**; tick **Virtual**; do NOT tick **Subscription [ArraySubs]**; **Regular price ($)** `3.00`; slug `slt2-grouped-extra`; Publish.
+3. New product: title `SLT2 Grouped Set`. **Description**: `SLT2 window product. Grouped parent with subscription children. Delete on 2026-09-05.`
 4. Set the product type dropdown to **Grouped product**. Confirm in the snapshot that the **Subscription [ArraySubs]** header checkbox and the Subscription tab are now HIDDEN — grouped parents are out of scope for the engine by design. Capture `SLT-PROD-09-01-grouped-no-subscription-controls.png`.
-5. **Linked Products** tab -> **Grouped products** field: search and add `SLT Daily Core`, `SLT Signup Fee Daily`, `SLT Grouped Extra` (in that order).
-6. Slug `slt-grouped-set`. Publish. Reload and confirm all three children persisted.
-7. `wp post meta list <GROUPED_ID> --keys=_children --allow-root` and `wp post list --post_type=product --name=slt-grouped-set --field=ID --allow-root`.
-8. Before any storefront/cart access, append only `<GROUPED_ID>` and `<EXTRA_ID>` to Shop Access rule `rule_1784662676378_maa3te08s` under `exclusion_product_ids` through **Member Access → Shop Access**. Preserve every other field and every prior exclusion; re-read the raw option and require each new ID exactly once. The two existing subscription children must already be present from their owning product tasks.
-9. As `--session guest-SLT-PROD-09`, open `https://mirror-help.arrayhash.com/product/slt-grouped-set/?slt-cache-bust=<timestamp>` -> `snapshot -i`. Confirm each subscription child shows its own recurring price summary in the grouped table and capture `SLT-PROD-09-02-frontend-grouped-table.png`.
-10. Add-to-cart probe A: set quantity 1 on `SLT Daily Core` only and submit. If one-click redirects to block checkout, record it and explicitly reopen `/cart/`; snapshot the exact one-line cart, then empty it.
-11. Add-to-cart probe B: set quantity 1 on BOTH `SLT Daily Core` and `SLT Signup Fee Daily`, submit, and follow the resulting destination. Explicitly reopen `/cart/` if one-click redirected. With `allow_multiple_in_cart=false` the second subscription must be refused by `SubscriptionCheckout\Services\CartValidation`; record the exact notice text and which item won, then capture `SLT-PROD-09-03-probe-b-multiple-refused.png`. Empty the cart.
-12. Add-to-cart probe C: `SLT Daily Core` + `SLT Grouped Extra` (mixed cart) — permitted by `allow_mixed_cart=true`. Handle any one-click redirect, explicitly reopen `/cart/`, capture the totals as `SLT-PROD-09-04-probe-c-mixed-cart.png`, then empty the cart.
+5. **Linked Products** tab -> **Grouped products** field: search and add `SLT2 Daily Core`, `SLT2 Signup Fee Daily`, `SLT2 Grouped Extra` (in that order).
+6. Slug `slt2-grouped-set`. Publish. Reload and confirm all three children persisted.
+7. `wp post meta list <GROUPED_ID> --keys=_children --allow-root` and `wp post list --post_type=product --name=slt2-grouped-set --field=ID --allow-root`.
+8. Before any storefront/cart access, append only `<GROUPED_ID>` and `<EXTRA_ID>` to Shop Access rule `<D0_SHOP_ACCESS_RULE_ID>` under `exclusion_product_ids` through **Member Access → Shop Access**. Preserve every other field and every prior exclusion; re-read the raw option and require each new ID exactly once. The two existing subscription children must already be present from their owning product tasks.
+9. As `--session guest-SLT-PROD-09`, open `https://mirror-help.arrayhash.com/product/slt2-grouped-set/?slt2-cache-bust=<timestamp>` -> `snapshot -i`. Confirm each subscription child shows its own recurring price summary in the grouped table and capture `SLT-PROD-09-02-frontend-grouped-table.png`.
+10. Add-to-cart probe A: set quantity 1 on `SLT2 Daily Core` only and submit. If one-click redirects to block checkout, record it and explicitly reopen `/cart/`; snapshot the exact one-line cart, then empty it.
+11. Add-to-cart probe B: set quantity 1 on BOTH `SLT2 Daily Core` and `SLT2 Signup Fee Daily`, submit, and follow the resulting destination. Explicitly reopen `/cart/` if one-click redirected. With `allow_multiple_in_cart=false` the second subscription must be refused by `SubscriptionCheckout\Services\CartValidation`; record the exact notice text and which item won, then capture `SLT-PROD-09-03-probe-b-multiple-refused.png`. Empty the cart.
+12. Add-to-cart probe C: `SLT2 Daily Core` + `SLT2 Grouped Extra` (mixed cart) — permitted by `allow_mixed_cart=true`. Handle any one-click redirect, explicitly reopen `/cart/`, capture the totals as `SLT-PROD-09-04-probe-c-mixed-cart.png`, then empty the cart.
 13. Inspect the complete Mailpit delta after step 1 and require zero task-attributable mail, append the grouped ID, extra child ID, and verified Shop Access exclusions to the registry, and close only `admin-SLT-PROD-09` and `guest-SLT-PROD-09`.
 
 ## Expected results
-1. `SLT Grouped Extra` published as a plain simple product, `_is_subscription` absent, price $3.00.
-2. `SLT Grouped Set` published as type `grouped` with `_children` containing exactly the three child IDs.
+1. `SLT2 Grouped Extra` published as a plain simple product, `_is_subscription` absent, price $3.00.
+2. `SLT2 Grouped Set` published as type `grouped` with `_children` containing exactly the three child IDs.
 3. The grouped parent offers no subscription checkbox and no Subscription tab.
 4. The grouped storefront table renders per-child recurring summaries for the two subscription children and a plain price for the extra.
 5. Probe A: cart holds one subscription line, total $10.00 plus no fee (fee belongs to the other child).
@@ -85,41 +85,27 @@ Provide the grouped product and pin the real behaviour: ArraySubs has NO grouped
 - Grouped ID, extra child ID, `_children` meta; raw Shop Access rule showing both IDs exactly once; verbatim refusal notice.
 
 ## Pass criteria
-- [x] Grouped parent published with exactly three children
-- [x] No subscription controls on the grouped parent (documented)
-- [x] Probe A single-subscription add works
-- [x] Probe B retained one subscription line; the required refusal notice was missing and the false success feedback is captured in `issues/light-plugin-SLT-PROD-09-grouped-multi-subscription-refusal-notice-missing.md`
-- [x] Probe C mixed cart totals $13.00
-- [x] Grouped and extra parent product IDs are each present exactly once in the preserved Shop Access exclusion list
-- [x] Zero mail, cart left empty
+- [ ] Grouped parent published with exactly three children
+- [ ] No subscription controls on the grouped parent (documented)
+- [ ] Probe A single-subscription add works
+- [ ] Probe B retains only the permitted subscription line and shows a clear refusal notice for the rejected second subscription
+- [ ] Probe C mixed cart totals $13.00
+- [ ] Grouped and extra parent product IDs are each present exactly once in the preserved Shop Access exclusion list
+- [ ] Zero mail, cart left empty
 
 ## Isolation / teardown
 - State handoff: the refusal notice text from probe B is the reference string for any later multi-subscription-cart test. Do NOT flip `allow_multiple_in_cart` to change this — it is deliberately left at the site default so the refusal path stays testable all window.
-- Restores: cart emptied; SLT-SETUP-99A restores the exact pre-window Shop Access rule snapshot. Grouped parent and `SLT Grouped Extra` are deleted by SLT-SETUP-99B; the two subscription children are owned by SLT-PROD-01/04.
+- Restores: cart emptied; SLT-SETUP-99A restores the exact pre-window Shop Access rule snapshot. Grouped parent and `SLT2 Grouped Extra` are deleted by SLT-SETUP-99B; the two subscription children are owned by SLT-PROD-01/04.
 
 ---
 
-## D03 execution result (2026-08-05)
-
-QA COMPLETE WITH PRODUCT DEFECT FILED. Published extra child `12583` and grouped parent `12586`; `_children` contains exactly `11927`, `12583`, and `12577`, the grouped parent has no visible subscription controls, and Shop Access gained only the two new IDs. Probe A passed at USD `10.00`; Probe C passed at USD `13.00`. Probe B retained exactly one subscription (`SLT Signup Fee Daily`) but rendered no refusal notice and falsely claimed both children were added; standalone issue: `issues/light-plugin-SLT-PROD-09-grouped-multi-subscription-refusal-notice-missing.md`. Both task carts are empty, no order exists, Mailpit stayed at `56kcLytDylTWndyI4kEeYS`, and browser error buffers were empty. Full evidence: `/home/server-manager/slt-evidence/SLT-PROD-09-facts.txt`.
-
 ---
 
-### Verified environment facts (2026-08-01/02 — do not re-derive)
+### Fresh-cycle validation contract
 
-- **Nothing fires at `_next_payment_date`.** Every scheduled leg is shifted by
-  `crc32('arraysubs-spread-'.$subscription_id) % 21600` (0-6 h). Charge fires at `due + offset`,
-  invoice at `due + offset - 6h`. The stored date never moves. **Assert a window, not a point.**
-- Currency `USD`. **Taxes are OFF** (`woocommerce_calc_taxes = no`) — never assert a tax line.
-- Orders use **HPOS** (`wp_wc_orders`), not `wp_posts`.
-- `woocommerce_enable_guest_checkout = yes`, but ArraySubs force-requires registration for
-  **subscription** carts via `woocommerce_checkout_registration_required`
-  (`SubscriptionCheckout/Services/Hooks.php:103`, `CheckoutHelpersTrait.php:93-100`).
-- WooCommerce **grouped** products have zero handling in either plugin — grouped tasks are
-  exploratory: document behaviour, do not assert a spec.
-- WP-Cron runs every minute from `/etc/cron.d/mirror-help-arrayhash-wordpress`. Scheduled actions
-  fire on their own; **a renewal that does not fire is a real bug** — capture evidence and do not force a natural-watch action.
-- Give this task its own browser session (`agent-browser --session <role>-<TASK-KEY>`). Sessions are
-  keyed by name and **share a cart**.
-- Never run a bare or `--hooks=` Action Scheduler drain. Run one known action ID at a time only when the task explicitly authorizes it and after the required queue pre-flight; natural-watch actions are never forced.
-- Evidence goes under `/home/server-manager/slt-evidence/` using task-key-prefixed filenames.
+- Re-derive every ID, count, option value, gateway capability, scheduler timestamp, and email baseline on this run; no prior-cycle result is evidence.
+- Create and mutate only registered `SLT2 ` / `slt2-*` fixtures. Legacy `SLT` and all non-SLT2 data are read-only controls.
+- Automatic-gateway scope is Stripe and Paddle only. Stripe is the primary path; run Paddle parity wherever Paddle supports the behavior. Do not test or configure PayPal or Mollie.
+- ArraySubs core must own its Stripe/Paddle integration, renewal, retry, webhook, REST, refund, and customer-payment services with Pro inactive; vendor host classes retain their expected ownership.
+- Browser-required assertions use Vercel `agent-browser` with isolated task/role sessions and current snapshot refs. WP-CLI always includes `--allow-root`.
+- Update the lifecycle card, the matching `qa/progress/` card, and `qa/issues/` for every new regression. Evidence belongs to this fresh cycle only.

@@ -1,0 +1,151 @@
+---
+id: 120
+title: 'stage-slt-d13: SLT-SETUP-99B Post-watch teardown on 2026-09-05 — delete every SLT2 artifact'
+status: open
+priority: high
+created: 2026-08-22T20:43:57.527637735+02:00
+updated: 2026-08-22T20:44:31.449197236+02:00
+tags:
+    - cycle-2
+    - subscription-lifecycle
+    - stage-slt-d13
+    - slt-setup-99b
+due: "2026-09-05"
+estimate: 1h30m
+depends_on:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - 11
+    - 12
+    - 13
+    - 14
+    - 15
+    - 16
+    - 17
+    - 18
+    - 19
+    - 20
+    - 21
+    - 22
+    - 23
+    - 24
+    - 25
+    - 26
+    - 27
+    - 28
+    - 29
+    - 30
+    - 31
+    - 32
+    - 33
+    - 34
+    - 35
+    - 36
+    - 37
+    - 38
+    - 39
+    - 40
+    - 41
+    - 42
+    - 43
+    - 44
+    - 45
+    - 46
+    - 47
+    - 48
+    - 49
+    - 50
+    - 51
+    - 52
+    - 53
+    - 54
+    - 55
+    - 56
+    - 57
+    - 58
+    - 59
+    - 60
+    - 61
+    - 62
+    - 63
+    - 64
+    - 65
+    - 66
+    - 67
+    - 68
+    - 69
+    - 70
+    - 71
+    - 72
+    - 73
+    - 74
+    - 75
+    - 76
+    - 77
+    - 78
+    - 79
+    - 80
+    - 81
+    - 82
+    - 83
+    - 84
+    - 85
+    - 86
+    - 87
+    - 88
+    - 89
+    - 90
+    - 91
+    - 92
+    - 93
+    - 94
+    - 95
+    - 96
+    - 97
+    - 98
+    - 99
+    - 100
+    - 101
+    - 102
+    - 103
+    - 104
+    - 105
+    - 106
+    - 107
+    - 108
+    - 109
+    - 110
+    - 111
+    - 112
+    - 113
+    - 114
+    - 115
+    - 116
+    - 117
+    - 118
+    - 119
+    - 121
+    - 122
+    - 123
+    - 124
+    - 125
+    - 126
+    - 127
+    - 128
+    - 129
+    - 130
+    - 131
+    - 132
+    - 133
+class: standard
+---
+
+Lifecycle task 120 / SLT-SETUP-99B. Execute the complete numeric task at qa/subscription-lifecycle-test/kanban/tasks/120-slt-setup-99b-post-watch-teardown-on-2026-09-05.md and record its individual browser, HPOS/meta, scheduler, provider, Mailpit, and issue result here. Stripe runs first; Paddle parity runs where declared. PayPal and Mollie are excluded. Do not close this progress task while the lifecycle task or a linked issue is unresolved.

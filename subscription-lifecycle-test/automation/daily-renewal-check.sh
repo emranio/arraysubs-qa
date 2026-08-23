@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 #
-# SLT daily renewal + email watch.
+# SLT2 daily renewal + email watch.
 #
-# Runs in five time-gated phases per day for D1-D12 after D0 (2026-08-02),
-# then uses every phase from D13 onward to retry final teardown until task 119
+# Runs in five time-gated phases per day from D0 (2026-08-23) through D12,
+# then uses every phase from D13 onward to retry final teardown until task 120
 # is actually done. Each run:
 #   1. Refuses to overlap with a previous run (flock).
-#   2. Works out which watch day it is; exits quietly before D1 and pins every
+#   2. Works out which watch day it is; exits quietly before D0 and pins every
 #      post-window teardown retry to D13.
 #   3. Collects a deterministic facts snapshot (WP-CLI + Action Scheduler + Mailpit)
 #      so the agent starts from real data instead of re-deriving it.
@@ -15,26 +15,33 @@
 #      and which browser test tasks are due that day.
 #   5. Persists the report, the facts snapshot, and a one-line run summary.
 #
-# Installed by install-cron.sh as /etc/cron.d/slt-daily-renewal-watch.
+# Installed by install-cron.sh as /etc/cron.d/slt2-daily-renewal-watch.
 #
 set -uo pipefail
 
-D0="2026-08-02"          # plan day zero
-LAST_WATCH_DAY=12        # D1..D12 inclusive
-FINAL_TEARDOWN_DAY=13    # D13 = 2026-08-15, SLT-SETUP-99B
-FINAL_TEARDOWN_DATE="2026-08-15"
+D0="2026-08-23"          # plan day zero
+LAST_WATCH_DAY=12        # D0..D11 execution plus D12 read-only tail
+FINAL_TEARDOWN_DAY=13    # D13 = 2026-09-05, SLT-TEARDOWN-13
+FINAL_TEARDOWN_DATE="2026-09-05"
 CODEX_TIMEOUT=21600      # 6h: a phase may prepare, then poll into the next hard task gate
 
+if (( FINAL_TEARDOWN_DAY != LAST_WATCH_DAY + 1 )); then
+    echo "Invalid watch window: teardown must immediately follow the last read-only watch day." >&2
+    exit 1
+fi
+
 PLAN_DIR="/home/server-manager/www/arrayhash/mirror-help.arrayhash.com/public/wp-content/plugins/qa/subscription-lifecycle-test"
+QA_ROOT="/home/server-manager/www/arrayhash/mirror-help.arrayhash.com/public/wp-content/plugins/qa"
 WP_ROOT="/home/server-manager/www/arrayhash/mirror-help.arrayhash.com/public"
 EVIDENCE_ROOT="/home/server-manager/slt-evidence"
 
 AUTOMATION_DIR="$PLAN_DIR/automation"
 LOG_DIR="$AUTOMATION_DIR/logs"
 REPORT_DIR="$PLAN_DIR/watch-reports"
-LOCK_FILE="/tmp/slt-daily-renewal-watch.lock"
+LOCK_FILE="/tmp/slt2-daily-renewal-watch.lock"
 RUN_LOG="$LOG_DIR/run-summary.log"
-TEARDOWN_TASK="$PLAN_DIR/kanban/tasks/119-slt-setup-99b-post-watch-teardown-on-2026-08-15.md"
+TEARDOWN_TASK="$PLAN_DIR/kanban/tasks/120-slt-setup-99b-post-watch-teardown-on-2026-09-05.md"
+CRON_FILE="/etc/cron.d/slt2-daily-renewal-watch"
 
 export PATH="/root/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
 
@@ -53,7 +60,7 @@ d0_epoch="$(date -d "$D0" +%s)"
 today_epoch="$(date -d "$today" +%s)"
 ACTUAL_DAY=$(( (today_epoch - d0_epoch) / 86400 ))
 
-if (( ACTUAL_DAY < 1 )); then
+if (( ACTUAL_DAY < 0 )); then
     echo "$(date -Is) SKIP day=$ACTUAL_DAY is before the watch window" >>"$RUN_LOG"
     exit 0
 fi
@@ -68,15 +75,22 @@ if (( ACTUAL_DAY >= FINAL_TEARDOWN_DAY )); then
 fi
 
 if (( IS_TEARDOWN == 1 )) && grep -Eq '^status:[[:space:]]*done[[:space:]]*$' "$TEARDOWN_TASK"; then
-    echo "$(date -Is) DONE task 119 is already done; removing cron entry" >>"$RUN_LOG"
-    rm -f /etc/cron.d/slt-daily-renewal-watch
+    echo "$(date -Is) DONE task 120 is already done; removing cron entry" >>"$RUN_LOG"
+    rm -f "$CRON_FILE"
     exit 0
 fi
 
 DAY_LABEL="$(printf 'D%02d' "$DAY")"
 STAMP="$(date +%F)"
-site_hour=$(( (10#$(date -u +%H) + 6) % 24 ))
-SITE_TIME="$(printf '%02d:%s UTC+6' "$site_hour" "$(date -u +%M)")"
+site_hour="$(wp --path="$WP_ROOT" --allow-root eval 'echo (int) current_time("G");' 2>/dev/null || true)"
+if [[ ! "$site_hour" =~ ^[0-9]+$ ]] || (( site_hour < 0 || site_hour > 23 )); then
+    site_hour=$(( (10#$(date -u +%H) + 6) % 24 ))
+fi
+site_timezone="$(wp --path="$WP_ROOT" --allow-root option get timezone_string 2>/dev/null || true)"
+if [[ -z "$site_timezone" ]]; then
+    site_timezone="UTC$(wp --path="$WP_ROOT" --allow-root option get gmt_offset 2>/dev/null || true)"
+fi
+SITE_TIME="$(printf '%02d:%s %s' "$site_hour" "$(date -u +%M)" "$site_timezone")"
 
 if (( site_hour < 8 )); then
     TIME_PHASE="early-morning"
@@ -108,8 +122,8 @@ echo "$(date -Is) START $DAY_LABEL ($STAMP) phase=$PHASE site=$SITE_TIME" >>"$RU
 # Everything here is read-only. The agent gets this verbatim so it never has to
 # guess at state it could simply have been handed.
 {
-    echo "# SLT watch facts — $DAY_LABEL ($STAMP)"
-    echo "Generated: $(date -Is)  |  UTC: $(date -u +'%F %T')  |  site TZ is UTC+6"
+    echo "# SLT2 watch facts — $DAY_LABEL ($STAMP)"
+    echo "Generated: $(date -Is)  |  UTC: $(date -u +'%F %T')  |  site: $SITE_TIME"
     echo
 
     echo "## Subscriptions by status"
@@ -117,7 +131,7 @@ echo "$(date -Is) START $DAY_LABEL ($STAMP) phase=$PHASE site=$SITE_TIME" >>"$RU
         "SELECT post_status, COUNT(*) AS n FROM wp_posts WHERE post_type='arraysubs_data' GROUP BY post_status;" 2>&1
 
     echo
-    echo "## SLT subscriptions (SLT-titled product, created on/after $D0) with schedule meta"
+    echo "## SLT2 subscriptions (SLT2-titled product, created on/after $D0) with schedule meta"
     wp --path="$WP_ROOT" --allow-root db query "
         SELECT p.ID,
                p.post_status,
@@ -142,10 +156,42 @@ echo "$(date -Is) START $DAY_LABEL ($STAMP) phase=$PHASE site=$SITE_TIME" >>"$RU
               JOIN wp_posts product ON product.ID = CAST(product_ref.meta_value AS UNSIGNED)
               WHERE product_ref.post_id = p.ID
                 AND product_ref.meta_key = '_product_id'
-                AND product.post_title LIKE 'SLT %'
+                AND product.post_title LIKE 'SLT2 %'
           )
         GROUP BY p.ID, p.post_status, p.post_date
         ORDER BY p.ID;" 2>&1
+
+    echo
+    echo "## Active plugins"
+    wp --path="$WP_ROOT" --allow-root plugin list --status=active --fields=name,status,version 2>&1
+
+    echo
+    echo "## In-scope gateway host registry (host class is distinct from the ArraySubs delegate owner)"
+    wp --path="$WP_ROOT" --allow-root eval '
+        $gateways = WC()->payment_gateways()->payment_gateways();
+        foreach ( $gateways as $id => $gateway ) {
+            if ( in_array( $id, array( "stripe", "arraysubs_paddle", "bacs" ), true ) ) {
+                $reflection = new ReflectionClass( $gateway );
+                echo $id . "\t" . $gateway->enabled . "\t" . get_class( $gateway ) . "\t" . $reflection->getFileName() . PHP_EOL;
+            }
+        }
+    ' 2>&1
+
+    echo
+    echo "## Fresh fixture registry"
+    if [[ -f "$PLAN_DIR/evidence/fixture-registry.tsv" ]]; then
+        sed -n '1,240p' "$PLAN_DIR/evidence/fixture-registry.tsv"
+    else
+        echo "MISSING: $PLAN_DIR/evidence/fixture-registry.tsv"
+    fi
+
+    echo
+    echo "## Future-gate registry"
+    if [[ -f "$PLAN_DIR/evidence/future-gates.tsv" ]]; then
+        sed -n '1,320p' "$PLAN_DIR/evidence/future-gates.tsv"
+    else
+        echo "MISSING: $PLAN_DIR/evidence/future-gates.tsv"
+    fi
 
     echo
     echo "## Action Scheduler — arraysubs actions attempted in the last 36h"
@@ -219,6 +265,7 @@ PROMPT="${PROMPT//__SITE_TIME__/$SITE_TIME}"
 PROMPT="${PROMPT//__REPORT_FILE__/$REPORT_FILE}"
 PROMPT="${PROMPT//__FACTS_FILE__/$FACTS_FILE}"
 PROMPT="${PROMPT//__PLAN_DIR__/$PLAN_DIR}"
+PROMPT="${PROMPT//__QA_ROOT__/$QA_ROOT}"
 
 # --- run the agent ------------------------------------------------------------
 cd "$PLAN_DIR" || exit 1
@@ -230,6 +277,7 @@ timeout "$CODEX_TIMEOUT" codex exec \
     --config 'sandbox_workspace_write.network_access=true' \
     --sandbox workspace-write \
     --cd "$PLAN_DIR" \
+    --add-dir "$QA_ROOT" \
     --add-dir "$EVIDENCE_ROOT" \
     --add-dir /root/.agent-browser \
     "$PROMPT" >"$CODEX_LOG" 2>&1
@@ -248,7 +296,7 @@ fi
 # stub so a missing day is visible on the board rather than silently absent.
 if [[ ! -f "$REPORT_FILE" ]]; then
     {
-        echo "# SLT watch $DAY_LABEL — $STAMP"
+        echo "# SLT2 watch $DAY_LABEL — $STAMP"
         echo
         echo "**The agent did not produce a report.** codex exit code: $rc"
         echo
@@ -263,16 +311,18 @@ fi
 # agent-browser daemon, so a global close would disrupt unrelated work.
 while IFS= read -r qa_session; do
     case "$qa_session" in
-        *SLT-*) agent-browser --session "$qa_session" close >/dev/null 2>&1 || true ;;
+        *SLT-*|*slt2-*)
+            agent-browser --session "$qa_session" close >/dev/null 2>&1 || true
+            ;;
     esac
 done < <(agent-browser session list --json 2>/dev/null | jq -r '.data.sessions[]?' 2>/dev/null)
 
 if (( IS_TEARDOWN == 1 )); then
     if grep -Eq '^status:[[:space:]]*done[[:space:]]*$' "$TEARDOWN_TASK"; then
-        echo "$(date -Is) DONE task 119 reached done; removing cron entry" >>"$RUN_LOG"
-        rm -f /etc/cron.d/slt-daily-renewal-watch
+        echo "$(date -Is) DONE task 120 reached done; removing cron entry" >>"$RUN_LOG"
+        rm -f "$CRON_FILE"
     else
-        echo "$(date -Is) RETAIN task 119 is not done; teardown will retry at the next cron phase" >>"$RUN_LOG"
+        echo "$(date -Is) RETAIN task 120 is not done; teardown will retry at the next cron phase" >>"$RUN_LOG"
     fi
 fi
 

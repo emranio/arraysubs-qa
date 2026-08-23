@@ -1,29 +1,27 @@
 ---
 id: 113
 title: 'Subscription detail screen: every field, dates, schedule, related orders, gateway panel'
-status: done
+status: todo
 priority: critical
-created: 2026-08-02T03:43:12.380877241+02:00
-updated: 2026-08-11T03:20:51.991713605+02:00
-started: 2026-08-11T03:20:51.991712563+02:00
-completed: 2026-08-11T03:20:51.991712563+02:00
+created: 2026-08-22T19:10:00+02:00
+updated: 2026-08-22T19:10:00+02:00
 tags:
+    - cycle-2
+    - granular
     - admin
     - portal
     - day-09
-due: "2026-08-11"
+due: "2026-09-01"
 estimate: 1h15m
 depends_on:
     - 47
     - 5
     - 1
     - 12
-claimed_by: steam-tide
-claimed_at: 2026-08-11T03:20:51.991713484+02:00
 class: standard
 ---
 
-> **SLT-ADM-02** · group `admin` · scheduled **D09** (2026-08-11)
+> **SLT-ADM-02** · group `admin` · scheduled **D09** (2026-09-01)
 
 > Read `README.md` (environment + isolation contract), `calendar.md` (this day's exact
 > ordering — it is binding, not advisory) and `plan-audit.md` before starting.
@@ -34,18 +32,18 @@ Verify every field the detail screen renders against the underlying meta, HPOS o
 ## Scope
 - Gateway: Stripe test (canvas 1) / none (canvas 2)
 - Checkout: N/A
-- Account: existing (slt-core) + admin-created
+- Account: existing (slt2-core) + admin-created
 - Plugins: both (pro renders Gateway, Timeline, Skip & Pause)
 
 ## Preconditions
-- SLT-ADM-05 done (SUB-A exists). `SLT Daily Core` was bought by `slt-core` on D0, so by this D9 task it carries its initial order plus several renewals; derive the exact count live from `_completed_payments` and HPOS rather than using a stale estimate.
+- SLT-ADM-05 done (SUB-A exists). `SLT2 Daily Core` was bought by `slt2-core` on D0, so by this D9 task it carries its initial order plus several renewals; derive the exact count live from `_completed_payments` and HPOS rather than using a stale estimate.
 - Per the frozen baseline, early-renew, reactivation and pause are ON: their buttons are expected UI, not defects.
 - **Do not click** Cancel Subscription, Prorated Refund, Retry Payment, Detach/Resync Gateway, Login as Customer, Pause or Skip. Screenshot them only.
 
 ## Test data
 | Item | Value |
 |---|---|
-| Canvas 1 | **SUB_CORE** — slt-core's canonical SLT Daily Core sub, $10.00, Every 1 day |
+| Canvas 1 | **SUB_CORE** — slt2-core's canonical SLT2 Daily Core sub, $10.00, Every 1 day |
 | Canvas 2 | **SUB-A** — admin-created, no gateway |
 | Session | `--session admin-SLT-ADM-02` |
 
@@ -56,7 +54,7 @@ Verify every field the detail screen renders against the underlying meta, HPOS o
 4. Build the exact relationship-owned HPOS order set from parent/order IDs and subscription metas; compare it to Order History. View Order on the highest-cycle exact renewal must open its numeric HPOS route; never use customer recency as truth.
 5. Read the **Payment Gateway** card (chip, Gateway, Card on File, Expires, Customer ID, Last Transaction) and note any external gateway link.
 6. Compare the schedule against `tools.php?page=action-scheduler&status=pending&s=<numeric SUB_CORE>`, computing k from numeric SUB_CORE and recording exact action IDs/GMTs.
-7. Open `#/subscriptions/detail/<numeric SUB-A>`, repeat steps 2-3 for the gateway-less contrast, inspect complete M0 delta and require zero task mail, capture console/network errors, close `admin-SLT-ADM-02`, independently review both canvases, then move through `review` to `done` with Review empty. Any live defect goes only in `issues/SLT-ADM-02-<concise-slug>.md` with task/stage/plan path; subscription/customer/product/order/action IDs; user login/email/role; exact routes/session; reproduction; expected/actual; and UI/meta/HPOS/queue/console/network proof.
+7. Open `#/subscriptions/detail/<numeric SUB-A>`, repeat steps 2-3 for the gateway-less contrast, inspect complete M0 delta and require zero task mail, capture console/network errors, close `admin-SLT-ADM-02`, independently review both canvases, then move through `review` to `done` with Review empty. Any live defect goes only in `qa/issues/` kanban card named `SLT-ADM-02-<concise-slug>` with task/stage/plan path; subscription/customer/product/order/action IDs; user login/email/role; exact routes/session; reproduction; expected/actual; and UI/meta/HPOS/queue/console/network proof.
 
 ## Expected results
 1. Every displayed value equals its meta counterpart; money renders `$X.XX` USD and **no tax line** appears anywhere, Order History included.
@@ -87,40 +85,13 @@ Verify every field the detail screen renders against the underlying meta, HPOS o
 - Nothing mutated; the field inventory is the before-state baseline for SLT-ADM-03/04. If a mutating button is clicked by accident, STOP and file it — `SUB_CORE` carries another group's renewal contract.
 - Close only `admin-SLT-ADM-02`; preserve unrelated sessions.
 
-
 ---
 
-### Verified environment facts (2026-08-01/02 — do not re-derive)
+### Fresh-cycle validation contract
 
-- **Nothing fires at `_next_payment_date`.** Every scheduled leg is shifted by
-  `crc32('arraysubs-spread-'.$subscription_id) % 21600` (0-6 h). Charge fires at `due + offset`,
-  invoice at `due + offset - 6h`. The stored date never moves. **Assert a window, not a point.**
-- Currency `USD`. **Taxes are OFF** (`woocommerce_calc_taxes = no`) — never assert a tax line.
-- Orders use **HPOS** (`wp_wc_orders`), not `wp_posts`.
-- `woocommerce_enable_guest_checkout = yes`, but ArraySubs force-requires registration for
-  **subscription** carts via `woocommerce_checkout_registration_required`
-  (`SubscriptionCheckout/Services/Hooks.php:103`, `CheckoutHelpersTrait.php:93-100`).
-- WooCommerce **grouped** products have zero handling in either plugin — grouped tasks are
-  exploratory: document behaviour, do not assert a spec.
-- WP-Cron runs every minute from `/etc/cron.d/mirror-help-arrayhash-wordpress`. Scheduled actions
-  fire on their own; **a renewal that does not fire is a real bug** — capture evidence and do not force a natural-watch action.
-- Give this task its own browser session (`agent-browser --session <role>-<TASK-KEY>`). Sessions are
-  keyed by name and **share a cart**.
-- Never run a bare or `--hooks=` Action Scheduler drain. Run one known action ID at a time only when the task explicitly authorizes it and after the required queue pre-flight; natural-watch actions are never forced.
-- Evidence goes under `/home/server-manager/slt-evidence/` using task-key-prefixed filenames.
-
-## D09 execution — 2026-08-11 — PASS WITH FINDINGS
-
-- Ran read-only from 07:09–07:19 UTC+6 in isolated browser session `admin-SLT-ADM-02`; no setting or record was changed.
-- Resolved `SUB_CORE=11959` and `SUB_A=12760` by exact owner/product/parent relationships. SUB_CORE's nine exact completed `$10.00` orders totalled `$90.00`; all fields, localized dates, order typing, Stripe gateway data, and HPOS route `id=13610` matched truth.
-- With `k=10727`, pending actions `16876` (`09:37:52Z`) and `16877` (`15:37:52Z`) exactly matched `due+k-6h` / `due+k`.
-- SUB-A correctly showed no gateway, blank start/last payment, `$0.00`, zero completed payments, and `No orders found`. The authored pending-order clause is source-conflicted by the existing `issues/done-critical-plugin-SLT-ADM-05-admin-created-daily-subscription-arms-at-one-month.md`; no duplicate issue was filed.
-- Both detail endpoints returned 200 and browser console errors were empty. The sole 403 was WordPress core's `sample-permalink` request from HPOS order `13610`, not a detail endpoint. Mailpit cursor remained `4cogsKDuQGssjfWbN3yhKp`, proving zero new mail.
-- Filed `issues/light-plugin-SLT-ADM-02-singular-billing-schedule-uses-day-s.md` and `issues/light-plugin-SLT-ADM-02-empty-shipping-address-renders-stray-comma.md` (both low).
-- Full execution evidence and self-review: `/home/server-manager/slt-evidence/SLT-ADM-02-D09-execution.md`; required screenshots `SLT-ADM-02-01` through `-06` are under `/home/server-manager/slt-evidence/`.
-
-[[2026-08-14]] Fri
-Shipping-address finding resolved. The detail renderer now distinguishes fallback names from a real postal address and composes only non-empty lines. Live subscription `12760` shows the translated empty state, complete-address control `11959` remains intact, current assets loaded in a fresh session, and browser errors/data mutations were zero. Report: `issues/done-low-SLT-ADM-02-empty-shipping-address-renders-stray-comma.md`.
-
-[[2026-08-14]] Fri
-Billing-schedule finding resolved. Detail REST now provides a translated display string using the shared duration plural helper, and the React view no longer appends `(s)`. Live day/1 subscriptions `12760`/`11959`, day/3 control `12172`, and lifetime control `12786` all passed with current assets and zero browser errors/data mutation. Report: `issues/done-low-SLT-ADM-02-singular-billing-schedule-uses-day-s.md`.
+- Re-derive every ID, count, option value, gateway capability, scheduler timestamp, and email baseline on this run; no prior-cycle result is evidence.
+- Create and mutate only registered `SLT2 ` / `slt2-*` fixtures. Legacy `SLT` and all non-SLT2 data are read-only controls.
+- Automatic-gateway scope is Stripe and Paddle only. Stripe is the primary path; run Paddle parity wherever Paddle supports the behavior. Do not test or configure PayPal or Mollie.
+- ArraySubs core must own its Stripe/Paddle integration, renewal, retry, webhook, REST, refund, and customer-payment services with Pro inactive; vendor host classes retain their expected ownership.
+- Browser-required assertions use Vercel `agent-browser` with isolated task/role sessions and current snapshot refs. WP-CLI always includes `--allow-root`.
+- Update the lifecycle card, the matching `qa/progress/` card, and `qa/issues/` for every new regression. Evidence belongs to this fresh cycle only.

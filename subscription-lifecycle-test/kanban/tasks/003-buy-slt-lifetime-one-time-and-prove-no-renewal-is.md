@@ -1,31 +1,36 @@
 ---
 id: 3
-title: Buy SLT Lifetime One Time and prove no renewal is ever scheduled (12-day negative control)
-status: done
+title: Buy SLT2 Lifetime One Time and prove no renewal is ever scheduled (12-day negative control)
+status: blocked
 priority: critical
-created: 2026-08-02T03:43:03.18371421+02:00
-updated: 2026-08-05T21:37:49.284231945+02:00
-started: 2026-08-02T15:39:56.89708219+02:00
-completed: 2026-08-02T15:39:56.89708219+02:00
+created: 2026-08-22T19:10:00+02:00
+updated: 2026-08-22T22:35:27.879796918+02:00
 tags:
+    - cycle-2
+    - granular
     - checkout
     - day-00
-due: "2026-08-02"
+due: "2026-08-23"
 estimate: 1h
 depends_on:
     - 7
     - 11
     - 12
+    - 131
 class: standard
 ---
 
-> **SLT-CHK-14** · group `checkout` · scheduled **D00** (2026-08-02)
+## Current execution blocker — 2026-08-23 site date
+
+Blocked by critical shared issue `qa/issues` #1 / preflight task `131`. Lifetime product `31357` and customer `474` are ready, but the 12-day no-renewal control cannot begin with an invalid Stripe webhook preflight. No checkout/order/subscription/charge was attempted; retry immediately after task 131 passes.
+
+> **SLT-CHK-14** · group `checkout` · scheduled **D00** (2026-08-23)
 
 > Read `README.md` (environment + isolation contract), `calendar.md` (this day's exact
 > ordering — it is binding, not advisory) and `plan-audit.md` before starting.
 
 ## Objective
-Buy `SLT Lifetime One Time` for $49.00 and prove the negative the 12-day watch leans on: the subscription activates but nothing is ever scheduled for it — no `_next_payment_date`, no `_end_date`, no invoice leg, no charge leg, no reminder, no renewal mail. `arraysubs_calculate_next_payment_from_date()` returns empty for `lifetime`, so `RenewalScheduler::schedule()` is never reached.
+Buy `SLT2 Lifetime One Time` for $49.00 and prove the negative the 12-day watch leans on: the subscription activates but nothing is ever scheduled for it — no `_next_payment_date`, no `_end_date`, no invoice leg, no charge leg, no reminder, no renewal mail. `arraysubs_calculate_next_payment_from_date()` returns empty for `lifetime`, so `RenewalScheduler::schedule()` is never reached.
 
 ## Scope
 - Gateway: Stripe test
@@ -35,22 +40,22 @@ Buy `SLT Lifetime One Time` for $49.00 and prove the negative the 12-day watch l
 
 ## Preconditions
 - `SLT-PROD-07` complete: `_subscription_period=lifetime`, `_subscription_interval=1`, `_subscription_length=0`, `_regular_price=49.00`. Quote the product ID from the registry.
-- `SLT-SETUP-02` baseline; `SLT-SETUP-03` (`slt-core` + billing address).
+- `SLT-SETUP-02` baseline; `SLT-SETUP-03` (`slt2-core` + billing address).
 - **Execute after 12:00 site time** (D0-D2 purchase-clock rule).
 - Session `core-CHK14-SLT-CHK-14`; cart empty first and last.
 
 ## Test data
 | Item | Value |
 |---|---|
-| Product | SLT Lifetime One Time (`slt-lifetime-one-time`) |
-| Account | slt-core / `SltQa!2026#Pass` |
+| Product | SLT2 Lifetime One Time (`slt2-lifetime-one-time`) |
+| Account | slt2-core / `SltQa!2026#Pass` |
 | Card | 4242 4242 4242 4242 |
 | Today | **$49.00** once; renewals: none, ever |
 
 ## Steps
 1. `PREV=$(mailpit-agent latest-id)`.
-2. `agent-browser --session core-CHK14-SLT-CHK-14 open "https://mirror-help.arrayhash.com/my-account/"` -> log in `slt-core`.
-3. Open `/product/slt-lifetime-one-time/` -> `snapshot -i`. Record the price/summary text verbatim; no "every N days" phrasing.
+2. `agent-browser --session core-CHK14-SLT-CHK-14 open "https://mirror-help.arrayhash.com/my-account/"` -> log in `slt2-core`.
+3. Open `/product/slt2-lifetime-one-time/` -> `snapshot -i`. Record the price/summary text verbatim; no "every N days" phrasing.
 4. **Add to cart** -> `/cart/` -> `snapshot -i`: total $49.00, no recurring schedule line, no signup fee.
 5. `/checkout/` -> `snapshot -i`. Record which gateways the accordion offers (lifetime is never sync-eligible, so Paddle must appear beside Stripe). Pay Stripe 4242 -> **Place Order**.
 6. Record the order and publish the subscription's exact numeric ID under canonical alias **`SUB_LIFETIME`**. `mailpit-agent wait-new "$PREV" 180 "is active"`.
@@ -74,8 +79,8 @@ Buy `SLT Lifetime One Time` for $49.00 and prove the negative the 12-day watch l
 | # | Email | Trigger point | Recipient | Subject contains | Verify with |
 |---|---|---|---|---|---|
 | 1 | WC New order | paid checkout | admin | `New order #$ORDER` | Complete owner-filtered delta after `$PREV`; save/show the exact matching id |
-| 2 | WC Completed order | paid virtual-only order → completed | slt-core@example.test | `is on its way` | Complete owner-filtered delta after `$PREV`; save/show the exact matching id |
-| 3 | new_subscription | order paid | slt-core@example.test | `is active` | `mailpit-agent wait-new "$PREV" 180 "is active"` |
+| 2 | WC Completed order | paid virtual-only order → completed | slt2-core@example.test | `is on its way` | Complete owner-filtered delta after `$PREV`; save/show the exact matching id |
+| 3 | new_subscription | order paid | slt2-core@example.test | `is active` | `mailpit-agent wait-new "$PREV" 180 "is active"` |
 | 4 | admin_new_subscription | order paid | admin | `New subscription #` | Complete owner-filtered delta after `$PREV`; save/show the exact matching id |
 | 5 | NONE EXPECTED — renewal_reminder | ever | — | — | No `renews soon` naming this subscription, D0-D12 |
 | 6 | NONE EXPECTED — renewal_invoice / payment_successful | ever | — | — | No `Invoice for subscription #<ID>`, no second `Payment received` |
@@ -86,43 +91,25 @@ Buy `SLT Lifetime One Time` for $49.00 and prove the negative the 12-day watch l
 - Order + subscription ID (post both to the registry so every watch day can re-assert the negative), meta dump, Mailpit IDs, console/network errors.
 
 ## Pass criteria
-- [x] Order total exactly $49.00
-- [x] Subscription active with `_billing_period=lifetime`
-- [x] `_next_payment_date` and `_end_date` empty
-- [x] No renewal/invoice/reminder action IDs on the sub
-- [x] Scheduled Actions shows nothing for this sub ID
-- [x] Admin and my-account show no recurring payment and no date/countdown
-- [x] Emails 1-4 captured; negatives 5-7 hold on the day of purchase
+- [ ] Order total exactly $49.00
+- [ ] Subscription active with `_billing_period=lifetime`
+- [ ] `_next_payment_date` and `_end_date` empty
+- [ ] No renewal/invoice/reminder action IDs on the sub
+- [ ] Scheduled Actions shows nothing for this sub ID
+- [ ] Admin and my-account show no recurring payment and no date/countdown
+- [ ] Emails 1-4 captured; negatives 5-7 hold on the day of purchase
 
 ## Isolation / teardown
 - Hands the watch canonical `SUB_LIFETIME` as its permanent negative control; that exact ID must be quoted in every daily report D1-D12.
 - Nothing global changed; cart emptied; only `core-CHK14-SLT-CHK-14` closed. This negative control remains active through D12 and is cancelled/deleted by post-watch `SLT-SETUP-99B` only.
 
-## Execution record — 2026-08-02
-
-**PASS (D0 purchase and negative-control handoff).** `slt-core` bought product `11938` through the block checkout with the saved Stripe test card. Order `12002` completed for exactly `$49.00`; canonical `SUB_LIFETIME=12003` is active with `_billing_period=lifetime`, `_recurring_amount=49`, and one completed payment. `_next_payment_date` is present but empty; `_end_date` and all three renewal action-ID metas are absent. A direct all-state Scheduled Actions search and database query returned no rows for `12003`; the HPOS renewal-order query also returned no rows.
-
-The admin detail screen renders `Next Payment: No recurring payment`, and My Account renders `Next Payment: Lifetime Deal — No recurring payment`; neither exposes a date or countdown. Checkout offered saved/new Stripe, Paddle, BACS, and check payment options. Mailpit captured exactly the four expected purchase messages: customer completed order `2WMiAxkWXaQPYT9CpZgDgQ`, admin new order `7kh7ORpnpyTDruBAPSBtD9`, customer active subscription `0ifwfwhOdw19sLPUtVdrEZ`, and admin new subscription `66P56OMuvYo2mpgVB7vOHm`.
-
-Evidence: `/home/server-manager/slt-evidence/SLT-CHK-14-01-product.png` through `SLT-CHK-14-06-myaccount.png`, plus `/home/server-manager/slt-evidence/SLT-CHK-14-meta.txt`. Subscription `12003` is now the permanent lifetime negative control for the D1-D12 automated watch and remains in the tail cohort for `SLT-SETUP-99B` on 2026-08-15.
-
 ---
 
-### Verified environment facts (2026-08-01/02 — do not re-derive)
+### Fresh-cycle validation contract
 
-- **Nothing fires at `_next_payment_date`.** Every scheduled leg is shifted by
-  `crc32('arraysubs-spread-'.$subscription_id) % 21600` (0-6 h). Charge fires at `due + offset`,
-  invoice at `due + offset - 6h`. The stored date never moves. **Assert a window, not a point.**
-- Currency `USD`. **Taxes are OFF** (`woocommerce_calc_taxes = no`) — never assert a tax line.
-- Orders use **HPOS** (`wp_wc_orders`), not `wp_posts`.
-- `woocommerce_enable_guest_checkout = yes`, but ArraySubs force-requires registration for
-  **subscription** carts via `woocommerce_checkout_registration_required`
-  (`SubscriptionCheckout/Services/Hooks.php:103`, `CheckoutHelpersTrait.php:93-100`).
-- WooCommerce **grouped** products have zero handling in either plugin — grouped tasks are
-  exploratory: document behaviour, do not assert a spec.
-- WP-Cron runs every minute from `/etc/cron.d/mirror-help-arrayhash-wordpress`. Scheduled actions
-  fire on their own; **a renewal that does not fire is a real bug** — capture evidence and do not force a natural-watch action.
-- Give this task its own browser session (`agent-browser --session <role>-<TASK-KEY>`). Sessions are
-  keyed by name and **share a cart**.
-- Never run a bare or `--hooks=` Action Scheduler drain. Run one known action ID at a time only when the task explicitly authorizes it and after the required queue pre-flight; natural-watch actions are never forced.
-- Evidence goes under `/home/server-manager/slt-evidence/` using task-key-prefixed filenames.
+- Re-derive every ID, count, option value, gateway capability, scheduler timestamp, and email baseline on this run; no prior-cycle result is evidence.
+- Create and mutate only registered `SLT2 ` / `slt2-*` fixtures. Legacy `SLT` and all non-SLT2 data are read-only controls.
+- Automatic-gateway scope is Stripe and Paddle only. Stripe is the primary path; run Paddle parity wherever Paddle supports the behavior. Do not test or configure PayPal or Mollie.
+- ArraySubs core must own its Stripe/Paddle integration, renewal, retry, webhook, REST, refund, and customer-payment services with Pro inactive; vendor host classes retain their expected ownership.
+- Browser-required assertions use Vercel `agent-browser` with isolated task/role sessions and current snapshot refs. WP-CLI always includes `--allow-root`.
+- Update the lifecycle card, the matching `qa/progress/` card, and `qa/issues/` for every new regression. Evidence belongs to this fresh cycle only.

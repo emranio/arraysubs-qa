@@ -1,16 +1,16 @@
 ---
 id: 81
 title: Retry attempts 2 and 3 reuse the same failed order, then the 4th charge hits the 3-retry cap
-status: done
+status: todo
 priority: high
-created: 2026-08-02T03:43:09.990586698+02:00
-updated: 2026-08-05T21:37:49.5720067+02:00
-started: 2026-08-05T21:07:19.664016457+02:00
-completed: 2026-08-05T21:07:19.664016457+02:00
+created: 2026-08-22T19:10:00+02:00
+updated: 2026-08-22T19:10:00+02:00
 tags:
+    - cycle-2
+    - granular
     - renewal
     - day-05
-due: "2026-08-07"
+due: "2026-08-28"
 estimate: 1h
 depends_on:
     - 33
@@ -18,7 +18,7 @@ depends_on:
 class: standard
 ---
 
-> **SLT-DUN-02** · group `renewal` · scheduled **D05** (2026-08-07)
+> **SLT-DUN-02** · group `renewal` · scheduled **D05** (2026-08-28)
 
 > Read `README.md` (environment + isolation contract), `calendar.md` (this day's exact
 > ordering — it is binding, not advisory) and `plan-audit.md` before starting.
@@ -29,8 +29,8 @@ Prove the retry ladder: retry #1 (D4) and #2 (D5) re-charge the SAME failed rene
 ## Scope
 - Gateway: Stripe test
 - Checkout: N/A
-- Account: existing (`slt-fail`)
-- Plugins: pro-required
+- Account: existing (`slt2-fail`)
+- Plugins: core-owned automatic-payment/retry path
 
 ## Preconditions
 - `SLT-DUN-01` done; S, R, k, D recorded. `SLT-DUN-03` (hold) fires D4 independently — retries must keep firing after it, since `process()` accepts `arraysubs-on-hold` (SLT-REF-03 §3).
@@ -46,12 +46,12 @@ Prove the retry ladder: retry #1 (D4) and #2 (D5) re-charge the SAME failed rene
 | Session | `admin-dun-SLT-DUN-02` |
 
 ## Steps
-1. **D5 (2026-08-07) morning, before `D+k+48h`:** resolve registry alias `S_FAIL` into shell variable `S`, load numeric renewal order `R`, D, k, and the exact `DUN_RETRY1_PRE` value/timestamp published by SLT-DUN-01; abort unless `S` and `R` are numeric and the baseline is non-empty. Inspect the complete Mailpit delta after that baseline and require exactly two D4 retry-1 messages whose subject names exact numeric `$S`: one to `slt-fail@example.test` and one to the recorded admin address. `mailpit-agent show` both and classify unrelated shared-site mail instead of relying on a fixed recent-message count.
+1. **D5 (2026-08-28) morning, before `D+k+48h`:** resolve registry alias `S_FAIL` into shell variable `S`, load numeric renewal order `R`, D, k, and the exact `DUN_RETRY1_PRE` value/timestamp published by SLT-DUN-01; abort unless `S` and `R` are numeric and the baseline is non-empty. Inspect the complete Mailpit delta after that baseline and require exactly two D4 retry-1 messages whose subject names exact numeric `$S`: one to `slt2-fail@example.test` and one to the recorded admin address. `mailpit-agent show` both and classify unrelated shared-site mail instead of relying on a fixed recent-message count.
 2. Re-run SLT-DUN-01's **M** (subscription meta), **Q** (all HPOS renewal orders relationship-filtered to `$S`), and **L** (pending actions for indexed args `[$S]`) to prove the settled D4 state. Read the exact D5 retry action ID/gate from **L**, publish its `gate−5m` deadline, and set `DUN_RETRY2_PRE=$(mailpit-agent latest-id)` only inside `[gate−300s, gate)`; append the exact value/UTC capture time to the registry for SLT-EML-04.
 3. **D5 at/after `D+k+48h`:** poll `mailpit-agent wait-new "$DUN_RETRY2_PRE" 60 "Payment failed for subscription #$S"` in repeated intervals of at most 60 seconds until the authored 10-minute post-gate cutoff. Inspect the complete delta, require the exact customer/admin pair, and re-run **M/Q/L**. Resolve the sole renewal order by exact `$S` relationship and require it is still numeric `$R`. Publish the D6 retry action ID/gate and its `gate−5m` deadline, but do not take `DUN_RETRY3_PRE` a day early.
 4. In `admin-dun-SLT-DUN-02-D5`, open the exact ArraySubs detail route for `$S`, capture `SLT-DUN-02-01-notes-d4.png` and `-02-notes-d5.png`; then open exact HPOS order `$R` and capture `SLT-DUN-02-03-order-R-notes.png`, requiring one relationship-owned gateway decline per attempt. Close only this D5 session.
 5. **D6:** set `DUN_RETRY3_PRE` only inside the published final-five-minute interval and persist it before the exact gate. Poll the same immutable baseline in ≤60-second calls through the 10-minute post-gate cutoff; require the exact pair, re-run **M/Q/L**, and select the new cap note by exact pre/post note-ID set difference rather than newest-note recency. In `admin-dun-SLT-DUN-02-D6`, capture the cap/no-pending state as `SLT-DUN-02-04-pending-d6.png`; publish matched IDs and settled timestamp for SLT-EML-04, then close the session.
-6. If any live assertion fails, create a standalone `issues/SLT-DUN-02-<concise-slug>.md` (never a kanban bug card) with task/stage/plan, subscription/order/action/note IDs, user ID/login/email/role, exact routes/sessions/gates, reproduction, expected/actual, M/Q/L, Mailpit, UI, and screenshot proof, plus the preceding attempt as counterexample. Continue unaffected reads. After D6, independently review all evidence, move the card through `review` to `done`, and ensure Review returns to zero.
+6. If any live assertion fails, create a dedicated `qa/issues/` kanban card named `SLT-DUN-02-<concise-slug>` (create the required QA issue card) with task/stage/plan, subscription/order/action/note IDs, user ID/login/email/role, exact routes/sessions/gates, reproduction, expected/actual, M/Q/L, Mailpit, UI, and screenshot proof, plus the preceding attempt as counterexample. Continue unaffected reads. After D6, independently review all evidence, move the card through `review` to `done`, and ensure Review returns to zero.
 
 ## Expected results
 1. Exactly ONE renewal order exists for S — R is reused every attempt (`getPendingRenewalOrder()` accepts `pending|on-hold|failed`); **Q** never returns a second `_is_renewal_order=yes` row.
@@ -87,30 +87,15 @@ Prove the retry ladder: retry #1 (D4) and #2 (D5) re-charge the SAME failed rene
 
 ## Isolation / teardown
 - Read-only. Do not click **Retry Payment** anywhere — manual retry forces attempts >= 1 and re-enters the cap branch, corrupting the counter evidence (SLT-REF-03 §7).
-- Hands the exhausted ladder to `SLT-DUN-04` (cancellation, D7). S, R and `slt-fail` stay untouched; close only the exact D5/D6 task sessions.
+- Hands the exhausted ladder to `SLT-DUN-04` (cancellation, D7). S, R and `slt2-fail` stay untouched; close only the exact D5/D6 task sessions.
 
 ---
 
-### Verified environment facts (2026-08-01/02 — do not re-derive)
+### Fresh-cycle validation contract
 
-- **Nothing fires at `_next_payment_date`.** Every scheduled leg is shifted by
-  `crc32('arraysubs-spread-'.$subscription_id) % 21600` (0-6 h). Charge fires at `due + offset`,
-  invoice at `due + offset - 6h`. The stored date never moves. **Assert a window, not a point.**
-- Currency `USD`. **Taxes are OFF** (`woocommerce_calc_taxes = no`) — never assert a tax line.
-- Orders use **HPOS** (`wp_wc_orders`), not `wp_posts`.
-- `woocommerce_enable_guest_checkout = yes`, but ArraySubs force-requires registration for
-  **subscription** carts via `woocommerce_checkout_registration_required`
-  (`SubscriptionCheckout/Services/Hooks.php:103`, `CheckoutHelpersTrait.php:93-100`).
-- WooCommerce **grouped** products have zero handling in either plugin — grouped tasks are
-  exploratory: document behaviour, do not assert a spec.
-- WP-Cron runs every minute from `/etc/cron.d/mirror-help-arrayhash-wordpress`. Scheduled actions
-  fire on their own; **a renewal that does not fire is a real bug** — capture evidence and do not force a natural-watch action.
-- Give this task its own browser session (`agent-browser --session <role>-<TASK-KEY>`). Sessions are
-  keyed by name and **share a cart**.
-- Never run a bare or `--hooks=` Action Scheduler drain. Run one known action ID at a time only when the task explicitly authorizes it and after the required queue pre-flight; natural-watch actions are never forced.
-- Evidence goes under `/home/server-manager/slt-evidence/` using task-key-prefixed filenames.
-
-[[2026-08-05]] Wed 21:07
-UNVERIFIED (no S_FAIL source fixture) on 2026-08-05.
-
-`SLT-DUN-01` completed its authored missed-fixture branch on 2026-08-05: registry page 11847 stores `S_FAIL unavailable`, live verification found zero subscriptions for user 351/product 12108, and the D03 watch report instructs `SLT-DUN-02/03/04` plus `SLT-EML-04` to close ladder-only assertions `UNVERIFIED` without manufacturing a substitute. With no attempt-0 failure and no shared failed order, the retry-2 / retry-3 assertions owned by this card can never become real. This card closes without forcing the ladder.
+- Re-derive every ID, count, option value, gateway capability, scheduler timestamp, and email baseline on this run; no prior-cycle result is evidence.
+- Create and mutate only registered `SLT2 ` / `slt2-*` fixtures. Legacy `SLT` and all non-SLT2 data are read-only controls.
+- Automatic-gateway scope is Stripe and Paddle only. Stripe is the primary path; run Paddle parity wherever Paddle supports the behavior. Do not test or configure PayPal or Mollie.
+- ArraySubs core must own its Stripe/Paddle integration, renewal, retry, webhook, REST, refund, and customer-payment services with Pro inactive; vendor host classes retain their expected ownership.
+- Browser-required assertions use Vercel `agent-browser` with isolated task/role sessions and current snapshot refs. WP-CLI always includes `--allow-root`.
+- Update the lifecycle card, the matching `qa/progress/` card, and `qa/issues/` for every new regression. Evidence belongs to this fresh cycle only.

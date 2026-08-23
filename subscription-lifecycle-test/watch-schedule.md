@@ -1,122 +1,178 @@
-# Automated watch schedule — D1 to D12
+# SLT2 watch schedule — Stripe/Paddle, D0 through D12
 
-> **D0 = 2026-08-02.** Watch days D1 (2026-08-03) through D12 (2026-08-14).
+This schedule governs cron-assisted observation around the 12-day human run. It does not authorize
+fixture creation, checkout, settings changes, action execution or teardown. Human/browser work
+follows `calendar.md`; the watcher reads exact registry gates and reconciles events that already
+occurred naturally.
 
-`automation/daily-renewal-check.sh` starts at 06:10, 10:10, 16:10, 19:10, and 21:42 site-local each day (the corresponding August Europe/Berlin cron times are 02:10, 06:10, 12:10, 15:10, and 17:42) and hands the same day's row
-to a non-interactive Codex session. A phase that owns an intervening hard gate remains alive and polls into that gate. **That agent reads this table and little else**,
-so each row must be self-sufficient: what should have renewed overnight, which emails should have
-arrived, which retries are due, which grace transitions and expirations should have happened, what
-must show *no* activity, and which test tasks to execute that day.
+## Installed phases
 
-## Standing checks — run these every single day, in addition to the row
+Cron uses `Europe/Berlin` while the site timezone is re-read on D0. During this window the planned
+host/site mapping is:
 
-1. **Firing windows, not points.** Every scheduled leg is shifted by the subscription's spread offset
-   `crc32('arraysubs-spread-'.$id) % 21600` (0-6 h). Charge fires at `due + offset`, invoice at
-   `due + offset - 6h`. A renewal that has not fired exactly at `due` is *not* late.
-2. **Failed actions.** Any `arraysubs%` action in `failed` status in the last 36 h is investigated and
-   filed, always — no exceptions, even if unrelated to today's row.
-3. **Unexpected mail.** Reconcile every Mailpit message since the last watch against the expected set,
-   correlating by exact subscription/order/user ID, recipient, and subject. Missing expected SLT mail or an
-   unexpected message attributable to an SLT action is a bug. Preserve and label unrelated/background mail;
-   do not file it against this QA run merely because the shared global latest ID moved.
-4. **No silent forcing.** If something that should have fired did not, capture the evidence
-   (Action Scheduler row, subscription meta, logs), write one standalone markdown file under `issues/`, and carry the dependency forward. Never add a bug/remediation card to the lifecycle board.
-   Never force a natural-watch action merely to unblock the rest of the day.
-5. **Duplicate gateway meta.** For each subscription created since the last watch, compare row count to
-   distinct key count for `_payment_gateway` / `_gateway_status` / `_gateway_customer_id` /
-   `_payment_method_last4` (see `issues/SLT-OBS-01-*`). A fresh duplicate upgrades that issue to high.
-6. **Board hygiene.** Move every task you touch, and leave `blocked` tasks with a written reason.
+| Phase | Host time | Planned site time | Purpose |
+|---|---:|---:|---|
+| early-morning | 02:10 | 06:10 | Overnight actions, provider webhooks, mail and status transitions |
+| late-morning | 06:10 | 10:10 | Carry gates, browser-ready preflight and prior-day reconciliation |
+| afternoon | 12:10 | 16:10 | Same-day purchase/action handoffs and provider settlement |
+| evening | 15:10 | 19:10 | Renewal/retry/retention/provider gates and settings-bracket closure |
+| night | 17:42 | 21:42 | Final-five-minute baselines, late gates and next-day handoff |
 
-## Automated watch — D1 … D12 (2026-08-03 … 2026-08-14). Earliest daily read: **06:10 site (UTC+6)**.
+The runner exits before D0. D0–D11 may reconcile and update tracking; D12 is read-only. D13 invokes
+only the guarded teardown prompt. No phase polls blindly for more than 60 seconds.
 
-### Read this first — it applies to every row
+## Runtime authority
 
-**Source-availability gate (authoritative over every row below).** A named fixture is an expected
-renewal, mail, retry, transition, conversion, or negative control only when the live registry contains
-its relationship-resolved numeric subscription ID and the owning source task did not close
-`UNVERIFIED (no source fixture)`. If the source is absent, omit every downstream expectation for that
-branch and record the coverage as `UNVERIFIED`; absence is neither a product pass nor a product failure.
-Never recreate, substitute, time-shift, or force a source after its authored window. The following
-source outcomes are binding for the remainder of this run unless a later, explicit replan publishes a
-numeric replacement and new dates:
+The following fresh artifacts are authoritative:
 
-| Source task(s) | Absent branch governed by this gate |
-|---|---|
-| #30 / #43 | `slt-sca` / renewal verification |
-| #31 / #34 | Free Signup Daily and Trial Four Day trial branches |
-| #32 | both `SLT-CPN-03` coupon-cycle subscriptions |
-| #35 | `S_TZ` midnight-boundary branch |
-| #36 | `SLT-MYA-05` follow-ups B/C |
-| #45 | `SLT-SYN-06` segment-2 / `SUB_W` branch |
-| #46 | both `SLT-SYN-13` variable-product branches |
-| #64 / #65 / #69 / #73 / #75 | `SLT-CHK-08`, Box Daily, `SLT-IMP-03`, `SLT-SW-09`, and all three `SLT-SYN-11` probes |
-| #88 | both `SLT-SYN-12` gateway probe branches |
-| #81 / #82 / #101 / #102 | `S_FAIL`, terminal dunning, and `SUB_FAIL_RECOVERY` branches |
+- `evidence/fixture-registry.tsv`
+- `evidence/future-gates.tsv`
+- the creating lifecycle card and its exact evidence
+- the matching `watch-reports/Dxx-YYYY-MM-DD.md`
+- live Action Scheduler, HPOS/meta, Stripe/Paddle and Mailpit re-queries
 
-Rows retain the authored scenario detail so a formally replanned fixture still has an oracle, but none
-of that detail overrides this gate.
+Every future-gate row must include task key/ID, gateway, fixture alias and numeric IDs, event type,
+expected/forbidden outcome, due UTC/site time, spread/provider owner, immutable Mailpit baseline
+deadline, observation cutoff and evidence pointer. Authored numeric action/provider IDs are invalid.
 
-**Firing windows.** Nothing fires at `_next_payment_date`. For every subscription compute
-`k = crc32('arraysubs-spread-' . <SUB_ID>) % 21600` (0–21600 s = 0–6 h), stable forever per id.
-- **Invoice leg** `arraysubs_generate_renewal_invoice` at `due + k − 6h`; **charge leg** `arraysubs_process_renewal` at `due + k`. Assert the *window* `[due+k, due+k+5min]`, never a point.
-- **ANNIV(hh:mm)** = an anniversary subscription (global sync OFF): due at its checkout clock time, so the observable window is `[hh:mm, hh:mm+6h]` **on the previous afternoon/evening**. Readable at the next morning's 06:10 phase.
-- **MIDNIGHT** = a flex-synced or globally-synced subscription: due at 00:00 site, window `[00:00, 06:00]` site **on the reporting day itself**. 06:10 is the earliest safe read.
-- **Retries are NOT spread**: `time() + 86400` exactly, max 3, so attempts land at `D+k`, `+24h`, `+48h`, `+72h`.
-- **Grace**: active→on-hold at the first hourly `arraysubs_check_overdue_renewals` tick after `D + 24h`; on-hold→cancelled at the first tick after `max(D + 96h, _on_hold_date + 72h)`.
+## Checks in every phase
 
-**Unconditional checks, every single day D1–D12 — a failure on any of these is critical:**
-1. `SLT Lifetime One Time` / `slt-core` (`SLT-CHK-14`) — `_next_payment_date` EMPTY, `_end_date` absent, **zero** rows in `wp_actionscheduler_actions` for its id in any status or group, **zero** renewal orders, **zero** mail naming it. From D3 also assert the same for `SLT Lifetime One Time` / `slt-email` (`H1`, `SLT-EML-11`). Assert the same for `SLT Excl Lifetime Probe` / `slt-excl` (`SLT-SYN-11` probe C) from D4 **only when task #75 has published its numeric subscription ID**; task #75 closed source-absent in this run, so that probe remains `UNVERIFIED` rather than a negative control.
-2. No **non-SLT** subscription's `_next_payment_date` moved. Diff the 13 pre-existing active subscriptions against the previous day's snapshot.
-3. Inspect the complete Mailpit delta after the prior phase/watch baseline — every SLT-attributable message
-   maps to a row below or to a registry-declared task exception. **Unmapped SLT-attributable mail is a
-   finding.** Snapshot `latest-id` at the start of each run; label non-SLT/background mail as unrelated.
-4. Zero failed actions referencing an SLT subscription id.
+1. Read all due/overdue `future-gates.tsv` rows and all in-progress timed cards.
+2. Capture a just-in-time Mailpit baseline only when the row's baseline deadline is reached.
+3. Reconcile browser-visible status/date, HPOS order/line/meta, subscription meta/notes/access,
+   exact scheduler rows/logs, Stripe/Paddle objects/events and the complete Mailpit delta.
+4. Prove at-most-once order, charge, transaction, webhook effect, refund, note, action and email.
+5. Classify unrelated shared-site activity and prove registered non-SLT2 controls did not drift.
+6. Update the lifecycle card and matching `qa/progress/` day card. A failure creates/updates a
+   complete shared `qa/issues/` kanban card and leaves the lifecycle card blocked.
 
-   > **`wp action-scheduler list` does not exist on this site** — the installed Action Scheduler WP-CLI
-   > exposes only `run`, `status`, `source`, `clean` and friends. Any task or note telling you to run
-   > `action-scheduler list` is wrong; use the SQL below or the **Tools → Scheduled Actions** admin screen.
+Stripe is primary. Paddle receives full supported parity plus tested capability negatives. PayPal and
+Mollie are never configured, selected, invoked, mocked or scored in this cycle. Manual/BACS rows are
+internal invoice-engine controls only.
 
-   ```bash
-   wp db query "SELECT a.action_id, a.hook, a.status, a.args, a.scheduled_date_gmt, a.last_attempt_gmt
-                FROM wp_actionscheduler_actions a
-                WHERE a.hook LIKE 'arraysubs%' AND a.status='failed'
-                  AND a.last_attempt_gmt >= DATE_SUB(UTC_TIMESTAMP(), INTERVAL 36 HOUR)
-                ORDER BY a.last_attempt_gmt DESC;" --allow-root
-   ```
+## Daily phase ownership
 
-   The daily facts snapshot in `automation/logs/D<NN>-<date>-facts.txt` already runs this query plus the
-   pending and recently-attempted variants — read it before issuing your own.
-5. **No forcing.** A renewal that did not fire is a genuine bug: capture the pending row, the subscription notes and the `_next_payment_date` first, write one standalone markdown file under `issues/`, then move on. Never create a bug/remediation card and never `wp action-scheduler run`.
+### D0 — 2026-08-23
 
-**Registry exceptions the watcher must load before classifying mail** (each is posted by the owning task before it acts): `SLT-EML-02` D4 and `SLT-EML-05` D6 set `_auto_renew=off` on `SUB_CORE` for one cycle — one `Invoice for subscription #SUB_CORE` and one customer-paid renewal order are **expected** on those days; `SLT-ADM-07` D4 and `SLT-MYA-04` D7 customer-pay an `S_FEE` invoice inside the 6-hour window — those cycles are **not** unattended charges; `SLT-LIFE-02` D6 pays `SLT-CHK-02`'s cycle early — that subscription shows **no** unattended renewal on 08-09; `SLT-LIFE-03` D5 skips `S5`'s 08-08 cycle; `SLT-EML-12` (D3 21:00–21:40) and `SLT-EML-13` (D4 08:00–08:20) and `SLT-SW-08` (D7) are global brackets with recorded UTC bounds.
+- Early/late morning: tasks 10, 11 and 131 establish environment, settings, ownership, gateway,
+  namespace, non-SLT2, Action Scheduler and Mailpit baselines before any fixture mutation.
+- Afternoon: tasks 12, 5–8 create the exact account/product catalog; verify registry completeness.
+- Evening/night: tasks 1–4 and 14 execute Stripe first. Task 9 publishes, but does not force, the
+  first invoice/charge gates with exact `k`, action IDs and baseline deadlines.
+- Before exit: require empty carts/sessions, no unregistered fixture, and a signed D01 carry list.
 
-**Post-exception restoration checks are binding:** on D5, after `SLT-EML-02` restored `_auto_renew`, `SUB_CORE` must send no renewal-invoice mail and must return to its normal automatic renewal path. On D7, after `SLT-EML-05` restored `_auto_renew` and both email types, `SUB_CORE` must again send no renewal-invoice mail and its normal payment-success message must be HTML-only. The watcher must use each task's recorded post-restore Mailpit baseline.
+### D1 — 2026-08-24
 
-**Global-sync control cadence:** the one `SLT-SYN-04` purchase occurs on D3 (2026-08-05), so `SUBID_GLOBAL` renews at site-local midnight on D6 (08-08), D9 (08-11), and D12 (08-14), each plus its stable spread offset. Older 08-04/08-07/08-10 dates are invalid for this run.
+- Early: verify task 9's not-yet-due or naturally completed rows strictly against their live gates.
+- Late morning/afternoon: tasks 13, 20–23 and 25–28 create sync/retry/Paddle/coupon controls; task 26
+  publishes Paddle remote capability/catalog readiness without inventing secrets.
+- Afternoon/evening: tasks 15–19 and 24 create guest/coupon/admin/stepped/invoice cohorts.
+- Night: register every D2 Stripe renewal, Paddle webhook/renewal, coupon-cycle, retry and invoice
+  baseline; no hook/group drain.
 
-**Plan-switch follow-up gates:** if a later valid replan first recreates the missing D4 ladder seed and `SLT-SW-01` actually runs, it stays open until its first exact post-switch Stripe renewal is reconciled from `SW01_RENEW_PRE` (normally the D6 morning settled read). `SLT-SW-05` stays open through the switched Paddle subscription's exact remote `next_billed_at`; reconcile `SW05_PADDLE_RENEW_PRE` at the D7 late gate or, if settlement is not yet complete, **before any D8 time-travel mutation**. The expected live comparison is remote `$5.00` versus local `$15.00`; file that divergence only after the remote transaction/order evidence exists.
+### D2 — 2026-08-25
 
-**Retention renewal handoff:** `SLT-SW-09` publishes distinct `RET_DISC_R1_PRE` and `RET_DOWN_R1_PRE` owner boundaries before the first exact charge gates. At the D6 morning settled read, consume both R1 deltas and immediately publish `RET_DISC_R2_PRE` and `RET_DOWN_R2_PRE` before the D6 anniversary charges. At D7 consume both R2 deltas and publish `RET_DISC_R3_PRE`; at D8 consume R3 and publish `RET_DISC_R4_PRE`; at D9 consume R4 and close the card. Every delta is complete and owner-filtered by exact subscription id, order id, recipient and subject; a fixed recent-message list is not evidence.
+- Early: reconcile task 9 and 41 Stripe renewal chain; resolve exact order/action/mail relationships.
+- Late morning/afternoon: tasks 37, 38, 40 and 44 prepare free/trial/variation fixtures; tasks 29–33
+  execute Paddle hosted checkout, Stripe SCA/trials/coupons and a genuine Stripe decline.
+- Evening: tasks 34–36 and 45–46 publish trial-ending, UTC-boundary, access and sync arithmetic gates.
+- Night: tasks 42–43 observe Paddle renewal and Stripe off-session SCA only at their exact fresh
+  provider/action gates. Preserve task 35's 23:45 site-time bracket.
 
-**Trial-gate correction (authoritative over row shorthand):** use each trial subscription's recorded action IDs and exact spread-adjusted timestamps. The final phase at least five minutes before the 2-day trial's exact charge must publish `TRIAL_A_CHARGE_PRE`; its `trial_end+k` charge may land late 08-06 or shortly after local midnight on 08-07, and D5 consumes that complete owner delta and records the settled result. The 4-day trial's reminder is checked at `trial_end−3d+k`, its charge at `trial_end+k` on 08-08/09, and the fallback bulk converter—only if it is still trial—at 02:00 **site time**. `trial_converted` is mandatory only when the bulk converter activates; renewal-path activation instead requires `payment_successful`. This paragraph supersedes any fixed-date or unconditional trial-mail wording in the table below.
+### D3 — 2026-08-26
 
-**Successful automatic-renewal mail contract (authoritative over row shorthand):** the invoice leg creates the relationship-linked pending order and emits zero mail while automatic renewal remains enabled. When that order settles, each relationship-confirmed paid renewal emits exactly one ArraySubs customer `payment_successful` message and one WooCommerce admin `New order #<renewal-order-id>` message. Customer WooCommerce processing, completed, on-hold, invoice, and failed-order messages remain suppressed. “Nothing else” means no other SLT-attributable lifecycle or order mail after applying the registry's explicit exceptions and excluding separately declared concurrent/task-owned traffic. The complete reconciliation procedure and code basis are in task `57` and `reference/SLT-REF-04-complete-email-inventory-class-template-trigger-recipient-su.md`.
+- Early: settle due D2 natural renewals, trial/retry/provider rows before any settings mutation.
+- Late morning: task 61 alone owns its 09:00–11:00 global-sync bracket and must prove exact restore.
+- Afternoon: tasks 58, 39, 59 and 60 complete signup-fee, grouped, free Subscription Box and plan
+  ladder products; task 121 validates cancellation reasons.
+- Evening/night: tasks 47–57 execute admin/order/invoice/quantity/email paths. Respect task 56's
+  exclusive email override bracket and publish task 52 reminder plus D4/D5 status/mail gates.
 
-**Final week-boundary carry-forward (authoritative over the D12 row):** `SUB_W1` has the persisted next-payment boundary `2026-08-14 18:00:00 UTC`, which is D13 `2026-08-15 00:00:00` site time, not D12 midnight. Its stable spread offset is applied after that boundary: invoice at `due+k−6h` late on D12 and charge at `due+k` during D13 `00:00–06:00` site. A numeric `SUB_W` source, if one exists, follows its own persisted boundary under the same rule. D12 must carry these rows forward without scoring a missing renewal; the D13 teardown runner must reconcile their exact natural order/action/mail results before task `119` may cancel or delete anything.
+### D4 — 2026-08-27
 
----
+- Early: reconcile task 54 cancellation mail/status, task 35 midnight renewal and task 52 reminder.
+- Late morning/afternoon: tasks 71, 65 and 72 create variable/box/switch cohorts, then tasks 63, 64,
+  66, 68–70, 74 and 75 run in calendar order.
+- Evening: tasks 73, 122 and 123 begin retention discount/pause fixtures. Register each exact
+  discount cycle, 30-day schedule-control action and separate 1-day natural auto-resume gate.
+- Night: hand off D5 retry, method-update, switch, box, concurrent and retention observations.
 
-| Watch day / date | Should have renewed overnight (+ window) | Emails that must have arrived | Retry attempts due | Grace / status transitions due | Expirations & conversions | MUST show NO activity (negatives) | Tasks the watcher executes that day |
-|---|---|---|---|---|---|---|---|
-| **D1 · 2026-08-03 Mon** | **Morning: nothing has charged yet.** All D0 purchases were after 12:00 on 08-02, so assert that both legs are **queued** for every recurring D0 subscription at `due+k−6h` and `due+k`; the lifetime subscription must have no legs at all. Later, the invoice legs create one pending renewal order for SUB_CORE at 15:37:52 site and one for the CHK-02 clone at 19:04:26 site. **Late charge gate:** the 19:10 phase records `SLT-REN-01`'s `REN1_PRE` and stays alive through action `13694` at 21:37:52 site, then proves SUB_CORE renewal #1 `$10.00` without forcing it; the clone remains pending until its 01:04:26 D2 charge. | D0 signup sets: `new_subscription` + `admin_new_subscription` + WC New order + WC Completed order for `SLT-CHK-01` (S1/SUB_CORE, slt-core), `SLT-CHK-02` (slt-core2 — plus **no** "Your account on" mail, notification unticked), `SLT-CHK-14` (lifetime, slt-core), `SLT-LIFE-04` (Fixed Three Cycles, slt-core), `SLT-SYN-05` (week seg-1, slt-flex). Each D1 automatic invoice leg emits zero mail. At the late charge gate, exactly one WooCommerce admin `New order #<SUB_CORE renewal order>` and one ArraySubs customer `Payment received for subscription #SUB_CORE` must appear after `REN1_PRE`. | none | none | none | Lifetime control. **Zero SLT renewal orders only at the morning read;** the two explicitly timed D1 invoice-leg orders above are expected afterward. Pre-existing non-SLT subscriptions may renew independently and are outside this assertion. No customer `renewal_invoice`; no unowned `renews soon` from the D0 day/1 or day/2 cohort; any immediate `SLT-SYN-08` Two Seg reminder after its D1 afternoon signup is observation-only per C50 and must be classified to that task. No `free trial`. Fixed Three Cycles not due until 08-04. Week seg-1 not due until 08-08. | `SLT-SETUP-04` → `SLT-PROD-05` → `SLT-PROD-12` → `SLT-PROD-14` → `SLT-PROD-16` → `SLT-SYN-01B` → `SLT-SYN-03` → `SLT-SETUP-05` (AM); `SLT-REN-03` (12:30–13:00), `SLT-SYN-08`, `SLT-CHK-03`, `SLT-LIFE-05`, `SLT-EML-06`, `SLT-CPN-01`, `SLT-CPN-02` (18:00–19:00); **19:10: `SLT-REN-01` baseline + exact 21:37:52 gate** |
-| **D2 · 2026-08-04 Tue** | LATE D1 (21:37 site) **S1 / SUB_CORE** renewal #1 **$10.00** — the control spine, `_completed_payments` 1→2, `_next_payment_date` +24h *from `_renewal_scheduled_date`* (zero `k`-sized drift). EARLY D2 (01:04 site) **slt-core2** renewal #1 $10.00. Renewal orders must carry `_is_renewal_order=yes`, `_renewal_cycle_number=2` (the initial payment is cycle 1), **`created_via` EMPTY** (a `store-api` value means a human placed it). | `payment_successful` ×2 + WC **New order** (admin) ×2. **Zero** customer WC processing/completed mail for renewal orders (blanked recipient). Plus signup sets for the eight D1 purchases: CHK-03 and REN-03 each include a WC **Customer new account** message; CPN-01, CPN-02, and EML-06 each include one admin-only WordPress **New User Registration** message and no customer account/password message; LIFE-05 and SYN-08 ×2 use existing accounts. Every paid virtual-only parent checkout emits WC **New order** plus customer **Completed order**, alongside its ArraySubs customer/admin signup pair. A possible immediate Two Seg `renews soon` from the D1 SYN-08 signup is observation-only and must be classified to SYN-08 rather than treated as leakage. | none | none | none | Lifetime. Fixed Three Cycles (due 08-04 PM). Flex Daily Two Seg (due 08-06 MIDNIGHT). Flex Daily Next Cycle (due 08-09). Week seg-1 (08-08). No `renewal_invoice`; no unowned `renews soon` beyond the explicit SYN-08 observation. AS logs must read **`via WP Cron`**, never `via WP CLI`. | `SLT-PROD-02`, `SLT-PROD-03`, `SLT-PROD-15`, `SLT-SYN-02`, `SLT-MYA-05` (all before 12:00); `SLT-REN-02`, **`SLT-DUN-01` (13:00–14:00)**, `SLT-CHK-04` (sole Paddle purchase) → `SLT-REN-04` (observation rider), `SLT-CHK-05` setup → arm `SLT-REN-05`, `SLT-CHK-15` setup → arm `SLT-EML-09` (all four remain open for dated follow-ups), `SLT-SYN-06`, `SLT-SYN-13`, `SLT-CPN-03` (18:00–19:00), `SLT-IMP-01` (23:40) |
-| **D3 · 2026-08-05 Wed** | ANNIV: S1 #2 $10.00; slt-core2 #2; **Fixed Three Cycles renewal #1 $7.00** (day/2, `_completed_payments`→2, next due 08-06); **S5 Renewal Price Step renewal #2 $20.00** (`_renewal_cycle_number=3`, the crossover); slt-guest-d0 #1 $10.00; **slt-cpnrec #1 $8.00 with fee `Recurring Discount: sltpct20rec` −2.00**; **slt-cpnfirst #1 $10.00 full price, zero fees, zero coupons**; S_EML #1 $10.00. **`SLT-REN-03`'s `slt-invoice` sub:** a **`wc-pending`** renewal order created at `due+k−6h`, and the charge leg completed WITHOUT charging, leaving note `Renewal order created. Awaiting manual payment.` MIDNIGHT 00:00–06:00: **`renewal_upcoming` reminders** for week seg-1 (due 08-08), Sync Global Daily and any live week-cycle sub. | `payment_successful` ×8. **`renewal_invoice` — exactly one, for `slt-invoice` only** (`_auto_renew=off`). `renews soon` for the live week/day-3 cohort. Trial-started and D2 signup mail is expected **only for source tasks that published numeric user/order/subscription IDs**; tasks #31/#32/#35/#45/#46 closed source-absent, so their mail sets are `UNVERIFIED`, not missing. CHK-04 and CHK-05 retain their registered expectations; include DUN-01 only if its valid D2 fixture exists. | `SLT Retry Daily` attempt 0 only if the D2 fixture exists; this run has no valid `S_FAIL`, so the ladder is `UNVERIFIED (no source fixture)` and no failure mail/action may be fabricated. | none | none | Lifetime, H1. Paddle Daily renewal #1 is D4 after the late D3 purchase, not D3 afternoon. Month flex (`2026-09-01`). Only live week fixtures are checked for 08-08. **No `Payment received` for `slt-invoice`.** No `renews soon` for any day/1 or day/2 sub. No naturally scheduled `expiring_soon`; the one `SLT-LIFE-04` targeted probe is registry-declared and excluded from this negative. | Resume `SLT-LIFE-04` for its targeted probe at 06:10 and close it before 08:45 (otherwise defer until after 11:00); **`SLT-SYN-04` 09:00–11:00 EXCLUSIVE**; `SLT-PROD-04` → `SLT-PROD-09` → `SLT-PROD-10` → `SLT-PROD-11`; then `SLT-ADM-07` step 0 and `SLT-CHK-09`; resume `SLT-LIFE-05` for `O2_PRE` and its 17:38–17:48 natural gate; **`SLT-CPN-04` 18:00–19:00 HARD WINDOW**; resume untimed `SLT-SYN-14` → `SLT-ADM-05` → `SLT-EML-11` → `SLT-EML-01` → `SLT-EML-03` → `SLT-EML-15` → `SLT-ADM-06` → `SLT-EML-07`; **`SLT-EML-12` 21:00–21:40 EXCLUSIVE** pre-empts and restores before the untimed queue resumes; at 21:42 save `SYN09_2SEG_D4_PRE` plus the exact pending `SUB_2SEG` charge action ID for D4 |
-| **D4 · 2026-08-06 Thu** | **MIDNIGHT 00:00–06:00:** Flex Daily Two Seg (`SUB_2SEG`, slt-flex2) renewal #1 **$9.00** — first flex-synced renewal of the window; **`renewal_reminder` for `SUB_NC`** (Flex Daily Next Cycle, due 08-09 − 3d + k) — `SLT-EML-01`'s primary assertion. **ANNIV:** S1 #3; slt-core2 #3; **S5 renewal #2 → $20.00 — the `_renewal_price_after=2` crossover, one cycle earlier than PROD-05 predicted**; slt-guest-d0; cpnrec $8.00; cpnfirst $10.00; **conditional CPN-03 branch (task #32): cpncyc #1 $7.50 and cpncyc2 #1 $7.50, only with both numeric registry IDs**; **Paddle Daily renewal #1 $11.00** (Paddle-driven — the local charge leg either completes having charged nothing or is superseded/canceled by an earlier webhook; where emitted, the awaiting-Paddle note is recorded; money arrives only on `transaction.completed`; no local retry); **conditional SCA branch (tasks #30/#43): `SLT-CHK-05`'s renewal returns `requires_action` only with a numeric source subscription** — order stays **`wc-pending`, never `wc-failed`**, `_payment_retry_attempts` = 0; `S_TZ` (`SLT-IMP-01`) charges only with task #35's numeric source ID; when present, its due 08-05 23:45 charges across local midnight — **the due date must still render 2026-08-05 23:45 site everywhere**; `SLT-ADM-05`'s admin-created sub produces a **`pending`** renewal order (manual fallback). **conditional dunning branch:** `SLT Retry Daily` fails at `D+k` only with a numeric `S_FAIL` source (08-05 13:00–20:00): order `failed`, subscription **still `arraysubs-active`**, `_payment_retry_attempts=1`, `_payment_retry_next_attempt_at` = attempt + **exactly 86400 s**, note `retry_scheduled`. | `payment_successful` for each successful renewal. **With a numeric `S_FAIL` source only:** `payment_failed` ×2 — customer and admin, distinguished by `To:`; otherwise no failure mail is expected. `renewal_requires_verification` to `slt-sca` only with the tasks #30/#43 source (subject `Verify your subscription renewal #…`). `renewal_invoice` for `slt-invoice` and for `SLT-ADM-05`'s sub. `renews soon` for `SUB_NC`. **Registry exception:** `SLT-EML-02` produces one `Invoice for subscription #SUB_CORE` + one `Payment received` today. | **With a numeric `S_FAIL` source only:** attempt 0 failed 08-05 PM and retry #1 is queued for 08-06 13:00–20:00 — **after** this run. | **`slt-invoice` → `arraysubs-on-hold`** (D=08-04, first sweep after D+24h = 08-05 PM), `_on_hold_date` set, one **customer-only** `subscription_on_hold` mail — **no admin counterpart exists**. **When the `S_FAIL` source exists, `SLT Retry Daily` must still be `arraysubs-active`** — hold is not due until 08-06 PM. | none | Lifetime, H1. **No `payment_failed` for `slt-sca`** — `requires_action` is not a failure. **For a registered trial source from tasks #31/#34 only, no `trial_ending` / `renews soon` for `SLT Free Signup Daily`** (2-day trial vs 3-day lead — that suppression is the product's purpose). No `expiring_soon` anywhere. Month flex. Week seg-1; week seg-2 only with task #45's numeric `SUB_W` source ID. `SUB_NC` (08-09). **With a numeric trial source from tasks #31/#34 only:** a reminder ACTION may exist for `SLT Trial Four Day`; a reminder MAIL must not (handler requires status exactly `arraysubs-active`, the sub is `arraysubs-trial`). | **`SLT-EML-13` 08:00–08:20 EXCLUSIVE (no checkout before 08:30)**; `SLT-PROD-08` → `SLT-EML-02` preparation/arm → `SLT-MYA-01` (AM); `SLT-ADM-03` after 12:00 → **`SLT-DUN-03` at its exact `D+24h` gate (~13:00–15:00)** → resume `SLT-EML-02` after its invoice gate and pay before charge → `SLT-SW-00`, `SLT-CHK-08`, `SLT-CHK-13`, `SLT-SYN-07`, `SLT-SYN-11`, `SLT-SW-09`, `SLT-ADM-07`, `SLT-IMP-03`; resume `SLT-ADM-05` only after its registered D4 charge gate |
-| **D5 · 2026-08-07 Fri** | **Conditional-only midnight branch:** do **not** assume `SLT-SYN-13` Full renewal or `slt-sca` renewal exists unless the live registry disproves tasks 46 and 43's appended 2026-08-05 `UNVERIFIED` notes. For source-gated fixtures that have numeric registry IDs, authored overnight items are: **ANNIV:** S1 #4; slt-core2 #4; S5 #3 **$20.00**; slt-guest-d0; cpnrec $8.00; **conditional CPN-03 branch:** cpncyc #2 $7.50 with exhaustion proof and cpncyc2 #2 $7.50 only when task #32 published both numeric IDs; cpnfirst $10.00; Paddle #2; **With a registered trial source from tasks #31/#34 only, `SLT Free Signup Daily` reaches its exact $8.00 paid-transition gate and becomes active through whichever live path actually settles it**; **`slt-chk-qty` renewal #1 $30.00 with line quantity 3** (proves `_recurring_amount × _quantity`); **`slt-cpnrej` renewal #1 $10.00 — one line item, ZERO fees, ZERO coupons**; `S_FEE` renewal #1 $9.00 (**no signup-fee line**; paid early inside the invoice window by `SLT-ADM-07` — registry exception); **`SLT Fixed Three Cycles` renewal #2 $7.00 → `_completed_payments`=3 ≥ length → `_end_date` stamped at the charge moment and status flips to `arraysubs-expired` in the same payment**; `S_EML` cancelled 08-06 PM by `SLT-EML-07`'s scheduled action. **Do not assume any `SLT Retry Daily` retry or on-hold transition exists** unless a live `S_FAIL` fixture disproves tasks 81/82's appended 2026-08-05 closeout notes. **Do not assume `SLT-CHK-11`, `SLT-SW-01`, or `SLT-SW-06` exist on D5 from the current 2026-08-06 evidence state**; those branches stay source-blocked unless a later valid replan first recreates their missing D4 fixtures. | `payment_successful` per success. **For Free Signup Daily specifically, require `payment_successful` when the renewal path activates it; require `trial_converted` only if the fallback bulk converter activates it.** **If a live `S_FAIL` fixture unexpectedly exists, only then read the `payment_failed` / `subscription_on_hold` branch; otherwise those ladder mails are not part of D5.** **`subscription_expired` ("has expired") to `slt-core` for Fixed Three Cycles.** `subscription_cancelled` + `admin_subscription_cancelled` for `S_EML`. `renews soon` for the day/3 flex cohort due 08-10. | Retry rows are conditional only: do not expect retry #2 unless a live `S_FAIL` fixture exists. | Dunning hold is conditional only: do not expect `SLT Retry Daily` on-hold state unless a live `S_FAIL` fixture exists. Guaranteed D5 hold path remains `slt-invoice`; `SLT-ADM-05`'s sub may also enter hold from its unpaid renewal order. | **Fixed Three Cycles EXPIRED 08-06.** Free Signup Daily trial→active is checked only with a numeric trial source from tasks #31/#34. | Lifetime and H1. Excl Lifetime Probe only with task #75's numeric source ID. **No `expiring_soon` for Fixed Three Cycles** — the 7-day lead exceeds its life; that suppression is the point. No third renewal order for Fixed Three Cycles and **zero pending legs** for it. Do not score missing `SLT-MYA-05` follow-up B, `slt-sca`, `SLT-SYN-13`, or `slt-fail` ladder evidence as failures unless the live registry contradicts tasks 36/43/46/82. Month flex. Week seg-1 (08-08); week seg-2 only with task #45's numeric `SUB_W` source ID. `SUB_2SEG` next 08-09. | **Do not start with `SLT-MYA-05` follow-up B unless the live registry disproves task 36's appended 2026-08-05 `UNVERIFIED` closeout note.** Then `SLT-ADM-07` 24-hour Paddle double-charge read, `SLT-MYA-02` (08:00–11:00), `SLT-ADM-09`, `SLT-IMP-02`; conditional-only ladder consumers `SLT-DUN-02` / `SLT-EML-04` run only if a live `S_FAIL` fixture exists. Then guaranteed runnable post-noon work `SLT-CHK-06`, `SLT-CHK-10`, `SLT-CHK-12`, `SLT-SYN-12`, **`SLT-LIFE-03`** (≤30 min settings bracket). Treat `SLT-CHK-11`, `SLT-SW-01`, and `SLT-SW-06` as source-blocked unless their missing D4 fixtures are recreated first on a later valid day; at 21:42 save distinct `SYN09_W1_D6_PRE` and `SYN09_W_D6_PRE` values plus each exact pending charge action ID |
-| **D6 · 2026-08-08 Sat** | **MIDNIGHT 00:00–06:00 — the headline day for flex:** **week seg-1 (`SUB_W1`, slt-flex) renewal #1 $14.00**; **conditional task #45 branch:** week seg-2 (`SUB_W`, slt-flex2) renewal #1 $14.00 — full, not the $6.00 prorated first charge — only with a numeric `SUB_W` registry ID (`_renewal_sync_initial_recurring_amount` must never be reused); each live week fixture is anchored at `_renewal_scheduled_date = 2026-08-07 18:00:00 UTC` and advances to 2026-08-14 18:00:00. **`SLT Flex Qty Week` renewal $29.97** (3 × $9.99, proving proration hit only the first charge). **Sync Global Daily renewal #1** on the midnight boundary even though the global switch is back OFF — `_renewal_sync_enabled=yes` on the subscription is what governs. **ANNIV:** S1 #5; slt-core2 #5; slt-guest-d0; cpnrec $8.00; cpnfirst $10.00; **conditional CPN-03 branch:** cpncyc #3 $10.00 full price and cpncyc2 #3 $7.50 only when task #32 published both numeric IDs; Paddle #3; Free Signup $8.00 only with a numeric trial source from tasks #31/#34; `slt-chk-qty` $30.00; `slt-cpnrej` $10.00; `S_FEE` $9.00; **conditional task #64 branch:** `SLT-CHK-08` SUB1 $10.00 + SUB2 $9.00 (no fee line), only with numeric source IDs; **conditional task #69 branch:** `SLT-IMP-03` ×3, all $10.00 at three different timestamps, only with numeric source IDs despite dues within 10 minutes — the spread-offset stagger proof, zero rows under `status=failed`; **conditional task #73 branch:** `SLT-SW-09` slt-retain #1 $4.00 with a −$1.00 `Retention Discount` line and slt-retain2 #1 $15.00, only with numeric source IDs; **`SLT-CHK-12` $10.00**; **conditional task #65 branch:** Box Daily renewal #1 $10.00 with the same contents and no wizard re-run, only with a numeric source ID. Treat `slt-sca`, `S_TZ`, `SLT-SYN-13` Next Cycle, and any `SLT Retry Daily` retry branch as conditional-only because tasks 43/35/46/82 closed `UNVERIFIED` on 2026-08-05. Treat `SLT-SW-01`, `SLT-SW-06`, and `SLT-CHK-11` renewal outcomes as source-blocked unless a later valid replan first recreates their missing D4 fixtures. | `payment_successful` per numeric registered success; derive the count from the live source-gated set rather than a fixed cohort total. Conditional-only branches: read `payment_failed` / `renewal_requires_verification` / `slt-sca` / `S_TZ` / `SLT-SYN-13` mail only if the live registry disproves their appended closeout notes. `renews soon` for `SLT-SYN-11`'s day/5 probe only with task #75's numeric source ID (due 08-11). **Registry exception:** `SLT-EML-05` produces one multipart `Invoice for subscription #SUB_CORE` + one `Payment received`. | Dunning retries are conditional only: do not expect retry #3 unless a live `S_FAIL` fixture exists. | Guaranteed D6 cancellation path remains `slt-invoice`; any `SLT Retry Daily` on-hold/cancel path is conditional only and should not be scored as missing unless the live registry disproves tasks 82/101. | `SLT Trial Four Day` trial-end/conversion remains conditional only because task 34 says the source `S_TR` fixture never existed unless live registry says otherwise. `SLT-SYN-11` probe B trial conversion is checked only with task #75's numeric source ID. | Lifetime and H1. Excl Lifetime Probe only with task #75's numeric source ID. **`S5` (Renewal Price Step) must show NO renewal for the 08-08 cycle — `SLT-LIFE-03` skipped it (registry exception); it must also send ZERO mail on skip/undo/modify.** `SUB_2SEG` and `SUB_NC` (both 08-09). Do not score missing `SLT-SYN-13` Next Cycle evidence as a failure unless the live registry disproves task 46. Month flex. Week seg-3 (08-15). No `expiring_soon`. | `SLT-ADM-04` (before 12:00), `SLT-EML-05`, `SLT-MYA-03` (08:00–11:00); then `SLT-SYN-10` step 0 (month seg-3 purchase, must be 08-08), `SLT-CHK-07`, `SLT-SW-03`, `SLT-SW-05`, `SLT-SW-07`, `SLT-SW-10`, `SLT-LIFE-02`, `SLT-IMP-04`; conditional-only ladder consumers `SLT-DUN-02` / `SLT-EML-04` resume only if a live `S_FAIL` fixture exists; at 21:42 save `SYN09_2SEG_D7_PRE` plus the exact pending `SUB_2SEG` charge action ID |
-| **D7 · 2026-08-09 Sun** | **MIDNIGHT:** **`SUB_2SEG` (Flex Daily Two Seg) renewal #2 $9.00** and **`SUB_NC` (Flex Daily Next Cycle) renewal #1 $9.00** — the one-cycle-push proof, dues exactly 259200 s apart, same `k` on the re-queued legs. **ANNIV:** S1 #6; S5 **shifted $20.00 charge** (skip complete, `_skip_cycles_remaining`=0, meta cleared); slt-guest-d0; cpnrec $8.00; cpnfirst $10.00; **conditional CPN-03 branch:** cpncyc $10.00 and cpncyc2 #4 $10.00 full price only when task #32 published both numeric IDs; Paddle; Free Signup only with a numeric trial source from tasks #31/#34; qty $30.00; cpnrej $10.00; S_FEE $9.00; **conditional D4-source cohort:** CHK-08 ×2, IMP-03 ×3, and SW-09 retention results only with numeric task #64/#69/#73 source IDs; **CHK-12 $10.00**; **`SLT-CHK-07` mixed-cart sub renews $10.00 with ONE line item — any $3.00 line is a defect**; `SLT-IMP-04`'s three orphan probes (trashed product / edited price / deleted customer) — **record the actual outcome, assert no spec**. Treat any `SLT Retry Daily` terminal-ladder outcome as conditional-only because tasks 101/102 close that branch `UNVERIFIED` unless the live registry disproves them. Treat `SLT-SW-01`, `SLT-SW-06`, and `SLT-CHK-11` renewal outcomes as source-blocked unless a later valid replan first recreates their missing D4 fixtures. | `payment_successful` per success. **`subscription_cancelled` + `admin_subscription_cancelled` for `slt-invoice`.** `renews soon` for the `SLT-SYN-12` probes only when task #88 published their numeric source IDs (due 08-12); otherwise that reminder branch is `UNVERIFIED`. Conditional-only branches: do not score missing `payment_failed` pair #4, `slt-fail` cancellation mail, or `SLT Trial Four Day` conversion mail as failures unless the live registry disproves tasks 101/34. | Do not expect retry-ladder exhaustion by default; only classify it if a live `S_FAIL` fixture exists. | Guaranteed D7 cancelled fixture remains `slt-invoice`. Any `SLT Retry Daily` cancellation is conditional-only and must not be scored as a miss unless the live registry disproves task 101. | `SLT-SYN-11` probe B conversion is checked only with task #75's numeric source ID. Trial Four Day is conditional-only because task 34 says no source `S_TR` fixture exists unless the live registry contradicts it. | Lifetime and H1. Excl Lifetime Probe only with task #75's numeric source ID. **`slt-core2` must show NO unattended renewal** — `SLT-LIFE-02` paid that cycle early on 08-08 (registry exception). Month flex. Week seg-1 (08-14); week seg-2 only with task #45's numeric `SUB_W` source ID. Week seg-3 (08-15). Do not score missing `slt-fail` / `SLT-MYA-05` follow-up C / `SLT-DUN-05` evidence as failures unless the live registry disproves tasks 36/101/102. | `SLT-SYN-09`, `SLT-ADM-01`, `SLT-MYA-04` (AM); `SLT-SW-04` **then** `SLT-SW-08` (fee bracket, opened only after SW-04's proration order is paid); conditional-only `SLT-DUN-04` / `SLT-EML-04` / `SLT-MYA-05` follow-up C / `SLT-DUN-05` run only if the live registry disproves tasks 36/101/102. |
-| **D8 · 2026-08-10 Mon** | **Conditional-only variable-flex branch:** do **not** assume `SLT-SYN-13` Full / Next Cycle renewals exist unless the live registry disproves task 46's appended 2026-08-05 `UNVERIFIED` note. Guaranteed natural events remain: **ANNIV:** S1 #7; slt-core2 #6 (back on the grid, one cycle further on); S5 back to normal; the live registered day/1 cohort; **`SLT-SW-07`'s Plus sub renews on its re-anchored day/2 date**; **Box Daily renewal #2 $10.00 only with task #65's numeric source ID**; `SLT-SW-04`'s upgraded sub. Treat any `SLT Retry Daily` cancellation proof as conditional-only because task 101 says the authored ladder never became real. `SLT-SW-10`'s sub cancelled at `CANCEL_AT` **exactly, with no spread offset** (contrast the renewal legs at `±k`), then reactivated — record whether reactivation re-queued any legs (a known bug candidate: no `RenewalScheduler::schedule()` call). | `subscription_cancelled` pair + `subscription_reactivated` for `SLT-SW-10`'s sub. `payment_successful` per guaranteed success. Conditional-only branches: do not expect `slt-fail` cancellation mail unless the live registry disproves task 101. | none by default — do not assume a closed dunning ladder exists. | No authored dunning cancel state should be assumed on D8 unless the live registry disproves task 101. | none | Lifetime and H1. Excl Lifetime Probe only with task #75's numeric source ID. Do not score missing `slt-fail` cancellation-side negatives or missing `SLT-SYN-13` renewals as failures unless the live registry disproves tasks 101/46. Month flex — **this is the last morning before the time-travel tasks touch the two live cohorts**; snapshot them now. Week seg-1 (08-14); week seg-2 only with task #45's numeric `SUB_W` source ID. | **SOLE TIME-TRAVEL DAY, strict order:** `SLT-TT-00` pre-flight + live month segment 2 + week segment 3 → `SLT-SYN-10` month segment 3 → `SLT-SW-02` → `SLT-EML-08` → `SLT-EML-10` → `SLT-LIFE-01`. Append any same-day shared sweep evidence to the standing artifacts only; **do not reopen closed card 109 / `SLT-EML-14`**. Run invoice/charge rows one exact ID at a time; variable-flex remains natural only if a live registry fixture actually exists. Close with the shared post-mutation non-SLT diff |
-| **D9 · 2026-08-11 Tue** | **ANNIV:** the live registered day/1 cohort's penultimate natural renewals; **`SLT-SW-08`'s sub charges $30.00 on SLT Plan Enterprise with NO switch-fee line** (the $7.50 fee is one-off, not recurring); Box Daily is on day/2 (next 08-12) only with task #65's numeric source ID; `SLT-SYN-11` probe A renews only with task #75's numeric source ID. Plus the three forced D8 renewals — live month segment 2, month segment 3, and week segment 3 — each with one paid renewal order. Do **not** assume any `SUB_FAIL_RECOVERY` failure/recovery branch exists unless the live registry disproves task 102's appended 2026-08-05 `UNVERIFIED` note. | `payment_successful` per success. One payment-success mail for each forced renewal; **no renewal-invoice mail** for these automatic-payment subscriptions. Conditional-only branches: do not expect `payment_failed` or recovery mail for `SUB_FAIL_RECOVERY` unless the live registry disproves task 102. | No authored `SUB_FAIL_RECOVERY` retry should be assumed on D9 unless the live registry disproves task 102. | No authored `SUB_FAIL_RECOVERY` hold/recovery state should be assumed on D9 unless the live registry disproves task 102. Any hand-set `_end_date` from D8 must have expired and auto-downgraded. | none | Lifetime and H1. Excl Lifetime Probe only with task #75's numeric source ID. `S_EML` and `slt-invoice` — **cancelled, must show nothing.** Fixed Three Cycles — **expired 08-06, must show nothing.** **No non-SLT renewal order may have been created by the D8 time travel** — diff the pre-existing subs against `SLT-TT-00`'s pre-mutation snapshot. Do not score missing `SLT Retry Daily` / `SUB_FAIL_RECOVERY` silence as a failure unless a live registry fixture exists. | Conditional-only `SLT-DUN-05` recovery leg runs only if the live registry disproves task 102. Then `SLT-ADM-08`, `SLT-ADM-02`, `SLT-IMP-05` (must complete before `SLT-SETUP-99A`). **Do not reopen closed card 115 / `SLT-ADM-10`; it was already closed `UNVERIFIED` on 2026-08-05.** At 21:42 save `SYN09_2SEG_D10_PRE` plus the exact pending `SUB_2SEG` charge action ID |
-| **D10 · 2026-08-12 Wed** | **MIDNIGHT:** `SUB_2SEG` (Flex Daily Two Seg) renewal #3 $9.00 — dues 08-06 / 08-09 / 08-12, exactly 259200 s apart, same `k` throughout (the grid-holds proof); only when task #88 published relationship-resolved numeric fixtures, `SLT-SYN-12`'s Stripe leg renews at the midnight boundary while its Paddle sibling follows the anniversary; otherwise both branches are `UNVERIFIED (source absent)`. **ANNIV:** the live registered day/1 cohort's **final natural renewals** (08-11 PM); `SLT-SYN-11` probe A is checked only with task #75's numeric source ID; **Box Daily renewal #3 $10.00 only with task #65's numeric source ID** (08-12). With task #73's numeric source ID only, `SLT-SW-09`'s `slt-retain` must have taken **exactly three** discounted $4.00 renewals and then **$5.00 with no `Retention Discount` line** — the N-cycle contract closing. Any `SLT-SYN-13` tail state is conditional-only because task 46 says those fixtures never existed unless the live registry disproves it. | `payment_successful` per guaranteed success. Later in the day, **`subscription_cancelled` (+ admin copy) for every subscription `SLT-SETUP-99A` cancels** — an expected teardown side effect: **count the ids, do not treat as failures.** | none | `SLT-SETUP-99A` cancels the **completed-evidence cohort only** — record every cancellation timestamp to the registry. **No deletions today.** | none | Lifetime and H1. Excl Lifetime Probe only with task #75's numeric source ID. All previously cancelled/expired subs. **Confirm no subscription entered on-hold unexpectedly** — no authored dunning cohort currently exists unless the live registry disproves tasks 82/102. Week seg-1 (08-14), and week seg-2 only with task #45's numeric `SUB_W` source ID and conditional-only `SLT-SYN-13` fixtures must still be **alive and scheduled** only if the live registry proves them; 99A must not touch `SUB_2SEG`. | First finish `SLT-SYN-09`'s D10 `SUB_2SEG` follow-up and move it to Done. Then run `SLT-SETUP-99A` **after** this morning's read and after `SLT-IMP-05` is closed; `SLT-DUN-05` is not a live gating fixture unless the registry disproves task 102. Restore the five baseline booleans (empty `jq` diff) + cancel the completed cohort. Publish both cohort lists |
-| **D11 · 2026-08-13 Thu** | **Tail-only day. MIDNIGHT:** do **not** assume `SLT-SYN-13` Full / Next Cycle renewals exist unless the live registry disproves task 46's appended 2026-08-05 `UNVERIFIED` note. Guaranteed expectation is narrower: nothing outside the surviving tail should renew because the day/1 cohort was cancelled on 08-12. | Only `payment_successful` for whatever live tail fixtures actually exist. Any teardown `subscription_cancelled` mail still arriving from D10 — count the ids against 99A's published list. | none | Do not assume any second dunning ladder on-hold carry-over exists unless the live registry disproves task 102. | none | **This is the proof-of-partial-teardown day.** Lifetime and H1. Excl Lifetime Probe is asserted only with task #75's numeric source ID; otherwise it remains `UNVERIFIED`. **Every subscription cancelled by `SLT-SETUP-99A` must show NO renewal, NO renewal order and NO mail after its recorded cancellation timestamp.** No day/1 charge anywhere. Week seg-1 must still be pending for 08-14; week seg-2 is checked only with task #45's numeric `SUB_W` source ID, not fired early. | **None** — watch only. Do **not** run `SLT-SETUP-99B` |
-| **D12 · 2026-08-14 Fri** | **MIDNIGHT 00:00–06:00:** **Sync Global Daily's final renewal** on its midnight boundary. **Week-flex carry-forward:** `SUB_W1` must remain alive on its persisted `2026-08-14 18:00:00 UTC` boundary (D13 `00:00` site); its invoice is expected at `due+k−6h` late on D12 and its $14.00 charge at `due+k` during D13 `00:00–06:00`. Apply the same relationship-resolved rule to `SUB_W` only if task #45 published a numeric source. Do not score either weekly charge as missing on D12. Nothing on the anniversary track. | For each relationship-confirmed paid renewal that fires: exactly one customer `payment_successful` and one WooCommerce admin `New order #<renewal-order-id>`; zero customer WooCommerce processing/completed/on-hold/invoice/failed mail and no other ArraySubs lifecycle mail, except separately declared concurrent/task-owned messages. | none | none | none | Lifetime and H1 are the final negative assertions. Excl Lifetime Probe is included only with task #75's numeric source ID; otherwise it remains `UNVERIFIED`. No renewal for anything cancelled on 08-12. `SLT Flex Qty Week` renews 08-15 outside the window. The time-travelled week segment-3 sub is now due 2026-08-22 site; month segment 2 is due 2026-10-01 site and month segment 3 is due 2026-11-01 site — record their pending rows, do not score their silence as misses. | **Write the final watch report FIRST and append any remaining final-window sweep evidence directly into the standing report/sweep artifacts. Keep the watch cron installed. Do not reopen closed card 109 / `SLT-EML-14`.** **`SLT-SETUP-99B` runs 2026-08-15**, never today — its cancellation mail would contaminate today's silence proof. The D13 runner removes the watch cron only after task 119 reaches `done`; otherwise it retries at the next phase. |
+### D5 — 2026-08-28
+
+- Early: reconcile all D4 renewal/retry/retention gates and require closed settings brackets.
+- Late morning/afternoon: tasks 77–80, 67, 76 and 81–83 cover cart/grouped/variable, invoice render,
+  notes, retry ladder, failure mail and exact Stripe/Paddle webhook replay.
+- Afternoon/evening: tasks 84–88, 124 and 125 cover skip, Stripe method update, upgrade, sync gating,
+  downgrade/support offers. Task 128 fills the complete Stripe product/cart/lifecycle matrix.
+- Night: publish D6 Stripe/Paddle/mixed-cart/switch/sync and retention gates; no matrix cell may be
+  recorded as pass without an exact evidence pointer.
+
+### D6 — 2026-08-29
+
+- Early: reconcile week/box/variable/mixed and provider rows due overnight.
+- Late morning/afternoon: tasks 62 and 89–99 execute quantity, status, mixed cart, rendering,
+  orphan safety, early renew, Paddle method update, crossgrade, Paddle price switch, variation switch,
+  cancellation/reactivation and task 99's D6 month-segment purchase.
+- Evening: task 129 completes supported Paddle parity and capability negatives.
+- Night: preserve task 99's D8 target and register D7 recovery/second-renewal/cross-gateway gates.
+
+### D7 — 2026-08-30
+
+- Early: reconcile all D6 natural renewals, Paddle webhooks and retry/grace events.
+- Late morning/afternoon: tasks 100–106 audit admin list, terminal grace, recovery, unpaid invoice,
+  admin switch, switch fee and synced renewal grid.
+- Evening: task 130 reconciles Stripe/Paddle identity, provider ownership, dates, replays, updates,
+  refunds/cancels and cross-binding negatives.
+- Night: freeze D8 non-SLT2/action/mail baselines and verify no unfinished mutation bracket remains.
+
+### D8 — 2026-08-31
+
+- Early: capture due natural events read-only. Do not mutate before the signed preflight.
+- First exclusive bracket: task 112 snapshots every subscription, then executes only the exact
+  allowlisted SUB_M and SUB_W3 invoice/charge IDs one at a time.
+- Second exclusive bracket: task 99's D8 leg uses task 112's signed non-SLT2 baseline and only its
+  exact SUB_S3 pair. Require empty non-SLT2 diff between brackets.
+- After restore/reconciliation: tasks 107–111 and 126 cover expiry/reactivation/auto-downgrade,
+  natural expiring/card reminders, negative mail, late renewal, downgrade and full retention matrix.
+- Night: publish D9 analytics/refund/permission/log gates and prove no remaining date mutation.
+
+### D9 — 2026-09-01
+
+- Early: reconcile all D8 targeted/natural rows and action/provider/mail cardinality.
+- Late morning/afternoon: tasks 113–116 cover detail UI, Stripe/Paddle supported refunds,
+  capability boundaries and end-window logs/actions/orders.
+- Evening: task 127 reconciles retention KPIs/charts/logs/filters/export to exact source events.
+- Night: require every D0–D9 cell to have fresh evidence or a linked blocked issue before D10.
+
+### D10 — 2026-09-02
+
+- Early: settle all due Stripe/Paddle gates and capture plugin/hook/route/action/provider fingerprints.
+- Exclusive task 117: deactivate only ArraySubsPro, repeat real core-owned Stripe/Paddle operations,
+  then restore Pro immediately on any exit path and prove no duplicate registration.
+- After restore: task 132 performs independent browser/HPOS/meta/action/provider/Mailpit audit; task
+  133 builds the cell-level final matrix and executes/adds any missing safe row.
+- Night: no ownership or matrix card closes while a mandatory row/issue is open.
+
+### D11 — 2026-09-03
+
+- Early: settle exact D10 carries and confirm no source evidence is still pending.
+- Task 118 restores every D0 setting/plugin/rule/email state by exact presence/value and cancels only
+  the signed evidence-complete cohort. It deletes nothing.
+- Afternoon/night: publish disjoint cancel/keep-alive lists and every exact D12 expected/negative
+  gate. Prove non-SLT2 and provider state equality.
+
+### D12 — 2026-09-04 (read-only)
+
+- Task 119 owns every phase. No checkout, save, status/date/meta change, action execution, replay,
+  provider mutation or cleanup is permitted.
+- Reconcile every retained Stripe/Paddle invoice/provider event, payment, order, status/date, action,
+  note, access, mail and log through the signed cutoff.
+- Repeat silence/duplicate/failed-action/restored-state/non-SLT2 checks and publish the exact D13
+  allowlist plus latest safe teardown timestamp.
+
+## D13 teardown gate — 2026-09-05
+
+Task 120 may run only after task 119's signed report exists, every other lifecycle card is done, all
+future gates are reconciled, current time is past the latest safe gate, and exact registry ownership
+closure passes. Any unmet condition causes a read-only retry. Successful teardown removes only the
+signed SLT2 fixtures/evidence-owned provider objects and then uninstalls this watcher.

@@ -1,23 +1,23 @@
 ---
 id: 66
 title: 'Grace phase 1: active to on-hold one day after the due date, with the customer-only on-hold email'
-status: done
+status: todo
 priority: high
-created: 2026-08-02T03:43:08.902788936+02:00
-updated: 2026-08-05T21:37:49.56534576+02:00
-started: 2026-08-05T21:07:18.930928332+02:00
-completed: 2026-08-05T21:07:18.930928332+02:00
+created: 2026-08-22T19:10:00+02:00
+updated: 2026-08-22T19:10:00+02:00
 tags:
+    - cycle-2
+    - granular
     - renewal
     - day-04
-due: "2026-08-06"
+due: "2026-08-27"
 estimate: 45m
 depends_on:
     - 33
 class: standard
 ---
 
-> **SLT-DUN-03** · group `renewal` · scheduled **D04** (2026-08-06)
+> **SLT-DUN-03** · group `renewal` · scheduled **D04** (2026-08-27)
 
 > Read `README.md` (environment + isolation contract), `calendar.md` (this day's exact
 > ordering — it is binding, not advisory) and `plan-audit.md` before starting.
@@ -28,7 +28,7 @@ Prove grace phase 1: `grace_days_before_on_hold = 1` moves S from `arraysubs-act
 ## Scope
 - Gateway: Stripe test
 - Checkout: N/A
-- Account: existing (`slt-fail`)
+- Account: existing (`slt2-fail`)
 - Plugins: both (sweep lives in free `RecurringBilling\Services\Hooks`)
 
 ## Preconditions
@@ -47,7 +47,7 @@ Prove grace phase 1: `grace_days_before_on_hold = 1` moves S from `arraysubs-act
 
 ## Steps
 1. Resolve registry aliases `S_FAIL`, its failed renewal order, due `D`, and retry action into numeric/dated variables; abort on any mismatch. Query the exact recurring `arraysubs_check_overdue_renewals` rows and select the first natural sweep at or after `D+24h`; publish that sweep gate and its `gate−5m` baseline deadline to the registry/D04 report. No earlier than five minutes before it, set `MPH=$(mailpit-agent latest-id)` and confirm numeric `$S` is still `arraysubs-active` with `wp post list --post_type=arraysubs_data --include="$S" --field=post_status --allow-root`.
-2. Poll the exact subscription status, sweep row/log, and `mailpit-agent wait-new "$MPH" 60 "is on hold"` in intervals no longer than 60 seconds through five minutes after the selected sweep. If that sweep completes without the hold, continue the same bounded polling through five minutes after the next natural hourly sweep. Only then record the missing hold: capture evidence, create a standalone issue with the required task/plan, subscription/order/action/user/login/role, admin/customer URLs, reproduction timeline, expected/actual, status/meta/Mailpit/sweep proof and the still-pending retry counterexample, and do **not** force either sweep or add a kanban bug card.
+2. Poll the exact subscription status, sweep row/log, and `mailpit-agent wait-new "$MPH" 60 "is on hold"` in intervals no longer than 60 seconds through five minutes after the selected sweep. If that sweep completes without the hold, continue the same bounded polling through five minutes after the next natural hourly sweep. Only then record the missing hold: capture evidence, create/update the mandatory `qa/issues/` kanban card with the required task/plan, subscription/order/action/user/login/role, admin/customer URLs, reproduction timeline, expected/actual, status/meta/Mailpit/sweep proof and the still-pending retry counterexample. Do not force either sweep; leave this lifecycle task blocked.
 3. On the match, re-run SLT-DUN-01's **M** (subscription meta), **Q** (HPOS orders for `_subscription_id`=S) and the post-status query.
 4. Run `mailpit-agent show <matched-hold-mail-id>` and record `To:`, subject, and the body's next-payment/amount lines.
 5. Inspect the complete delta after `MPH` — confirm exactly one hold message for exact numeric `$S` and NO hold message to the admin address. A payment-failed customer/admin pair for retry #1 may legitimately share this interval; classify it as SLT-DUN-02 evidence rather than failing this hold task. Do not rely on a fixed recent-message count.
@@ -62,16 +62,16 @@ Prove grace phase 1: `grace_days_before_on_hold = 1` moves S from `arraysubs-act
 4. R stays `failed` (not cancelled); **Q** still returns exactly one renewal order.
 5. `_payment_retry_attempts` is untouched by the hold itself (1 before retry #1, 2 after).
 6. **L** still shows one pending `arraysubs_process_renewal` for `[S]`: the ladder survives the hold.
-7. Exactly ONE task-relevant hold email — `subscription_on_hold` to `slt-fail@example.test`; no admin hold mail (SLT-REF-04). Retry #1's separately owned failure pair may coexist in the same baseline delta.
+7. Exactly ONE task-relevant hold email — `subscription_on_hold` to `slt2-fail@example.test`; no admin hold mail (SLT-REF-04). Retry #1's separately owned failure pair may coexist in the same baseline delta.
 8. My Account shows S **On hold** with a **Retry Payment** button and a **Manage payment methods** link (allowed in `arraysubs-on-hold`).
-9. No `subscription_cancelled` mail today — cancellation belongs to D7 (2026-08-09).
+9. No `subscription_cancelled` mail today — cancellation belongs to D7 (2026-08-30).
 
 ## Emails expected
 | # | Email | Trigger point | Recipient | Subject contains | Verify with |
 |---|---|---|---|---|---|
-| 1 | `subscription_on_hold` | first sweep after `D+24h` | `slt-fail@example.test` | `Your subscription #S is on hold` | repeated same-baseline waits of at most 60 seconds through the authored two-sweep deadline; check `To:` |
+| 1 | `subscription_on_hold` | first sweep after `D+24h` | `slt2-fail@example.test` | `Your subscription #S is on hold` | repeated same-baseline waits of at most 60 seconds through the authored two-sweep deadline; check `To:` |
 | 2 | admin hold notice **NONE EXPECTED** | same tick | — | — | complete MPH delta: no admin hold message; no such class exists |
-| 3 | `subscription_cancelled` **NONE EXPECTED** | D4 | — | — | No `has been cancelled` before the D7 cancellation window on 2026-08-09 |
+| 3 | `subscription_cancelled` **NONE EXPECTED** | D4 | — | — | No `has been cancelled` before the D7 cancellation window on 2026-08-30 |
 | 4 | `payment_failed` pair | retry #1, same day | customer / admin | `Payment failed for subscription #S` | Owned by SLT-DUN-02 |
 
 ## Evidence to capture
@@ -94,26 +94,11 @@ Prove grace phase 1: `grace_days_before_on_hold = 1` moves S from `arraysubs-act
 
 ---
 
-### Verified environment facts (2026-08-01/02 — do not re-derive)
+### Fresh-cycle validation contract
 
-- **Nothing fires at `_next_payment_date`.** Every scheduled leg is shifted by
-  `crc32('arraysubs-spread-'.$subscription_id) % 21600` (0-6 h). Charge fires at `due + offset`,
-  invoice at `due + offset - 6h`. The stored date never moves. **Assert a window, not a point.**
-- Currency `USD`. **Taxes are OFF** (`woocommerce_calc_taxes = no`) — never assert a tax line.
-- Orders use **HPOS** (`wp_wc_orders`), not `wp_posts`.
-- `woocommerce_enable_guest_checkout = yes`, but ArraySubs force-requires registration for
-  **subscription** carts via `woocommerce_checkout_registration_required`
-  (`SubscriptionCheckout/Services/Hooks.php:103`, `CheckoutHelpersTrait.php:93-100`).
-- WooCommerce **grouped** products have zero handling in either plugin — grouped tasks are
-  exploratory: document behaviour, do not assert a spec.
-- WP-Cron runs every minute from `/etc/cron.d/mirror-help-arrayhash-wordpress`. Scheduled actions
-  fire on their own; **a renewal that does not fire is a real bug** — capture evidence and do not force a natural-watch action.
-- Give this task its own browser session (`agent-browser --session <role>-<TASK-KEY>`). Sessions are
-  keyed by name and **share a cart**.
-- Never run a bare or `--hooks=` Action Scheduler drain. Run one known action ID at a time only when the task explicitly authorizes it and after the required queue pre-flight; natural-watch actions are never forced.
-- Evidence goes under `/home/server-manager/slt-evidence/` using task-key-prefixed filenames.
-
-[[2026-08-05]] Wed 21:07
-UNVERIFIED (no S_FAIL source fixture) on 2026-08-05.
-
-`SLT-DUN-01` completed its authored missed-fixture branch on 2026-08-05: registry page 11847 stores `S_FAIL unavailable`, live verification found zero subscriptions for user 351/product 12108, and the D03 watch report instructs `SLT-DUN-02/03/04` plus `SLT-EML-04` to close ladder-only assertions `UNVERIFIED` without manufacturing a substitute. With no source renewal failure, the D4 on-hold transition observed by this card cannot occur. This card closes without a replacement checkout, date mutation, or forced action.
+- Re-derive every ID, count, option value, gateway capability, scheduler timestamp, and email baseline on this run; no prior-cycle result is evidence.
+- Create and mutate only registered `SLT2 ` / `slt2-*` fixtures. Legacy `SLT` and all non-SLT2 data are read-only controls.
+- Automatic-gateway scope is Stripe and Paddle only. Stripe is the primary path; run Paddle parity wherever Paddle supports the behavior. Do not test or configure PayPal or Mollie.
+- ArraySubs core must own its Stripe/Paddle integration, renewal, retry, webhook, REST, refund, and customer-payment services with Pro inactive; vendor host classes retain their expected ownership.
+- Browser-required assertions use Vercel `agent-browser` with isolated task/role sessions and current snapshot refs. WP-CLI always includes `--allow-root`.
+- Update the lifecycle card, the matching `qa/progress/` card, and `qa/issues/` for every new regression. Evidence belongs to this fresh cycle only.

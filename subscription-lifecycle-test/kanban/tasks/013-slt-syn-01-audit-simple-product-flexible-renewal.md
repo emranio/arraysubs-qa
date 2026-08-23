@@ -1,17 +1,17 @@
 ---
 id: 13
 title: SLT-SYN-01 Audit simple-product Flexible Renewal Sync UI, validation and meta keys
-status: done
+status: todo
 priority: critical
-created: 2026-08-02T03:43:04.080557018+02:00
-updated: 2026-08-05T21:37:49.293079282+02:00
-started: 2026-08-03T07:05:03.372713834+02:00
-completed: 2026-08-03T07:05:03.372713834+02:00
+created: 2026-08-22T19:10:00+02:00
+updated: 2026-08-22T19:10:00+02:00
 tags:
+    - cycle-2
+    - granular
     - renewal-sync
     - day-00
     - day-01
-due: "2026-08-03"
+due: "2026-08-24"
 estimate: 2h
 depends_on:
     - 10
@@ -22,7 +22,7 @@ depends_on:
 class: standard
 ---
 
-> **SLT-SYN-01** · group `sync` · scheduled **D01** (2026-08-03); Pass A completed on D00 (2026-08-02)
+> **SLT-SYN-01** · group `sync` · Pass A scheduled **D00** (2026-08-23), Pass B scheduled **D01** (2026-08-24)
 
 > Read `README.md` (environment + isolation contract), `calendar.md` (this day's exact
 > ordering — it is binding, not advisory) and `plan-audit.md` before starting.
@@ -38,19 +38,19 @@ Prove that the pro Flexible Renewal Sync control block on a SIMPLE subscription 
 
 ## Preconditions
 - SLT-SETUP-01 (evidence root, registry page) and SLT-SETUP-02 (window baseline, global sync OFF) complete.
-- Pass A (D0) requires only SLT-PROD-13 (`SLT Flex Week Segments`, week/1 $14.00, seg1_end=2 seg2_end=5). Pass B (D1) requires SLT-PROD-12 (`SLT Flex Month Segments`, month/1 $30.00, seg1_end=2 seg2_end=6, all three active) and SLT-PROD-14 (`SLT Flex Daily Two Seg` day/3 $9.00 seg1 OFF seg1_end=1; `SLT Flex Daily Next Cycle` day/3 $9.00 seg3 only).
-- Code facts (verified, do not re-derive): the panel is rendered by `arraysubspro/src/Features/FlexibleRenewalSync/views/simple-product-fields.php`; the six meta keys are `_arraysubs_flex_sync_enabled`, `_arraysubs_flex_sync_seg1_end`, `_arraysubs_flex_sync_seg2_end`, `_arraysubs_flex_sync_seg1_active`, `_arraysubs_flex_sync_seg2_active`, `_arraysubs_flex_sync_seg3_active`; the saver is `Hooks::persistFlexSyncMeta()` on `woocommerce_process_product_meta` priority 15; `SegmentPlan::MIN_CYCLE_DAYS = 3`; `getDefaultBoundaries(30)` returns `[10, 20]`; anything other than the literal string `no` in an `_active` meta counts as ACTIVE.
+- Pass A (D0) requires only SLT-PROD-13 (`SLT2 Flex Week Segments`, week/1 $14.00, seg1_end=2 seg2_end=5). Pass B (D1) requires SLT-PROD-12 (`SLT2 Flex Month Segments`, month/1 $30.00, seg1_end=24 seg2_end=27, all three active) and SLT-PROD-14 (`SLT2 Flex Daily Two Seg` day/3 $9.00 seg1 OFF seg1_end=1; `SLT2 Flex Daily Next Cycle` day/3 $9.00 seg3 only).
+- Code facts (verified, revalidate against the current code and runtime before using): the panel is rendered by `arraysubspro/src/Features/FlexibleRenewalSync/views/simple-product-fields.php`; the six meta keys are `_arraysubs_flex_sync_enabled`, `_arraysubs_flex_sync_seg1_end`, `_arraysubs_flex_sync_seg2_end`, `_arraysubs_flex_sync_seg1_active`, `_arraysubs_flex_sync_seg2_active`, `_arraysubs_flex_sync_seg3_active`; the saver is `Hooks::persistFlexSyncMeta()` on `woocommerce_process_product_meta` priority 15; `SegmentPlan::MIN_CYCLE_DAYS = 3`; `getDefaultBoundaries(30)` returns `[10, 20]`; anything other than the literal string `no` in an `_active` meta counts as ACTIVE.
 - This task MUST leave SLT-PROD-12/13/14 with their catalog-declared boundaries. Every probe below is followed by an explicit restore step.
 
 ## Binding split-execution contract
 - **Pass A — D0:** audit only the week product: inventory its controls and `data-cycle-days=7`, prove the disable/re-enable retention path in step 17, take the canonical before/after diff, and publish the purchase-authorisation handoff for SLT-SYN-05. Close Pass A before that purchase.
-- **Pass B — D1:** after PROD-12 and PROD-14 exist, perform steps 1–16 and 18–20 against the month product and two daily products plus the task-owned SubMin probe. **Do not open, save, or write meta on the week product in Pass B; it now has live subscription 12039.** Quote Pass A's week evidence instead of repeating step 17.
+- **Pass B — D1:** after PROD-12 and PROD-14 exist, perform steps 1–16 and 18–20 against the month product and two daily products plus the task-owned SubMin probe. **Do not open, save, or write meta on the week product in Pass B; it now has live subscription alias `SUB_W1` from the fresh registry.** Quote Pass A's week evidence instead of repeating step 17.
 - The parent card remains `in-progress` after Pass A and moves to done only after Pass B's three-product canonical diffs, SubMin result, zero-mail check, and registry handoff all pass.
 
 ## Test data
 | Item | Value |
 |---|---|
-| Product | SLT Flex Month Segments (month/1, $30.00), SLT Flex Week Segments (week/1, $14.00), SLT Flex Daily Two Seg (day/3, $9.00), SLT Flex Daily Next Cycle (day/3, $9.00), plus a task-owned `SLT Flex SubMin Probe` (day/2, $7.00; never purchased) |
+| Product | SLT2 Flex Month Segments (month/1, $30.00), SLT2 Flex Week Segments (week/1, $14.00), SLT2 Flex Daily Two Seg (day/3, $9.00), SLT2 Flex Daily Next Cycle (day/3, $9.00), plus a task-owned `SLT2 Flex SubMin Probe` (day/2, $7.00; never purchased) |
 | Account | use the current local admin credential source in `AGENTS.md` |
 | Coupon | N/A |
 | Card | N/A |
@@ -62,21 +62,21 @@ Prove that the pro Flexible Renewal Sync control block on a SIMPLE subscription 
    evidence, but also create a canonical representation sorted by `meta_key` (or a keyed `jq -S` object).
    WordPress row insertion order is not state and must never be the restore assertion. From WP root run, for
    each product ID, `wp post meta list <ID> --keys=_arraysubs_flex_sync_enabled,_arraysubs_flex_sync_seg1_end,_arraysubs_flex_sync_seg2_end,_arraysubs_flex_sync_seg1_active,_arraysubs_flex_sync_seg2_active,_arraysubs_flex_sync_seg3_active --format=json --allow-root | jq -S 'map({key:.meta_key,value:.meta_value}) | sort_by(.key)'` and save the result as that product's canonical before file.
-3. `agent-browser skills get core`, then `agent-browser --session admin-SLT-SYN-01 open "https://mirror-help.arrayhash.com/wp-admin/post.php?post=<SLT Flex Month Segments ID>&action=edit"` -> `agent-browser --session admin-SLT-SYN-01 snapshot -i`.
+3. `agent-browser skills get core`, then `agent-browser --session admin-SLT-SYN-01 open "https://mirror-help.arrayhash.com/wp-admin/post.php?post=<SLT2 Flex Month Segments ID>&action=edit"` -> `agent-browser --session admin-SLT-SYN-01 snapshot -i`.
 4. Open the **Subscription [ArraySubs]** tab. Inventory every control in the **Flexible Renewal Sync to Next Billing Cycle** block and record its exact label: the master checkbox **Flexible Renewal Sync to Next Billing Cycle**; the description line "Align renewals to the billing-cycle boundary and pick how the first payment is charged based on the day of the cycle the customer signs up."; the slider container (`data-cycle-days`); the three legend rows with toggles and range text; the three segment labels **Full amount**, **Prorate amount**, **Charge full for next billing cycle**. Screenshot as `SLT-SYN-01-01-month-panel-inventory.png`.
 5. Read `data-cycle-days` off the config container and confirm it is `30` for month/1 and `3` on both day/3 products. Cite Pass A's captured `7` for the week product; do not re-open it in Pass B.
-6. Confirm the two boundary inputs are HIDDEN inputs named `_arraysubs_flex_sync_seg1_end` and `_arraysubs_flex_sync_seg2_end` (they are driven by the slider, not typed) and that their current values are `2` and `6`.
+6. Confirm the two boundary inputs are HIDDEN inputs named `_arraysubs_flex_sync_seg1_end` and `_arraysubs_flex_sync_seg2_end` (they are driven by the slider, not typed) and that their current values are `24` and `27`.
 7. Boundary-ordering probe A (inverted pair): drag the slider so the legend would read seg1 = `1 - 8`, seg2 = `9 - 12`, then use the browser to set the two hidden inputs directly to an INVERTED pair — `agent-browser --session admin-SLT-SYN-01 eval "document.querySelector('.arraysubs-flex-sync-seg1-end').value='20';document.querySelector('.arraysubs-flex-sync-seg2-end').value='5';"` — and click **Update**. Re-open and read the stored metas.
 8. Boundary-ordering probe B (out of cycle): repeat step 7 with `seg1_end='0'` and `seg2_end='45'` (both outside 1..29 for a 30-day nominal cycle), click **Update**, re-open and read the stored metas.
 9. Boundary-ordering probe C (collapsing pair): repeat with `seg1_end='29'` and `seg2_end='29'`, **Update**, re-read.
-10. RESTORE the month product: drag/set `seg1_end=2`, `seg2_end=6`, all three toggles ON, click **Update**, and confirm the legend reads `1 - 2` / `3 - 6` / `7 - 30`. Screenshot `SLT-SYN-01-02-month-restored.png`.
+10. RESTORE the month product: drag/set `seg1_end=24`, `seg2_end=27`, all three toggles ON, click **Update**, and confirm the legend reads `1 - 24` / `25 - 27` / `28 - 30`. Screenshot `SLT-SYN-01-02-month-restored.png`.
 11. Last-active-segment refusal: on the month product turn the **Full amount** toggle OFF, then **Prorate amount** OFF, then attempt to turn **Charge full for next billing cycle** OFF. Capture the verbatim inline notice (expected: `At least one segment must stay active.`) and screenshot `SLT-SYN-01-03-last-active-refusal.png`. Do NOT save; navigate away with **Discard**/browser back and re-open to confirm the product is still 3-active.
-12. Zero-active server-side fallback probe (defensive path, no UI): on `SLT Flex Month Segments` run `wp post meta update <ID> _arraysubs_flex_sync_seg1_active no --allow-root`, same for seg2 and seg3, then `wp eval 'print_r(\ArraySubsPro\Features\FlexibleRenewalSync\Services\SegmentPlan::getConfig(<ID>));' --allow-root`. Record the returned `actives` array. Immediately restore: `wp post meta update <ID> _arraysubs_flex_sync_seg1_active yes --allow-root` (and seg2, seg3).
+12. Zero-active server-side fallback probe (defensive path, no UI): on `SLT2 Flex Month Segments` run `wp post meta update <ID> _arraysubs_flex_sync_seg1_active no --allow-root`, same for seg2 and seg3, then `wp eval 'print_r(\ArraySubsPro\Features\FlexibleRenewalSync\Services\SegmentPlan::getConfig(<ID>));' --allow-root`. Record the returned `actives` array. Immediately restore: `wp post meta update <ID> _arraysubs_flex_sync_seg1_active yes --allow-root` (and seg2, seg3).
 13. Non-`no` string probe: `wp post meta update <ID> _arraysubs_flex_sync_seg1_active 0 --allow-root`, re-run the `getConfig()` eval, record whether segment 1 is still counted active, then restore to `yes`.
-14. Two-active positional check on `SLT Flex Daily Two Seg`: open its edit screen and confirm the picker has only TWO active schedule ranges (`1` for **Prorate amount**, `2 - 3` for **Charge full for next billing cycle**). The legend intentionally retains a third, inactive `Off / Full amount` control row so that mode can be re-enabled. Confirm `_arraysubs_flex_sync_seg1_end` is `1` — i.e. the meta names the end of the FIRST ACTIVE segment, which is segment 2 here, NOT segment 1. Screenshot `SLT-SYN-01-04-two-active-positional.png`.
-15. One-active check on `SLT Flex Daily Next Cycle`: confirm the picker has one active schedule range `1 - 3`, while the legend retains `Off` controls for Full and Prorate so either mode can be re-enabled. Confirm that no boundary handle is draggable, and run `wp eval 'print_r(\ArraySubsPro\Features\FlexibleRenewalSync\Services\SegmentPlan::getConfig(<ID>));' --allow-root` to confirm `boundaries` is an EMPTY array. Screenshot `SLT-SYN-01-05-one-active.png`.
-16. Sub-minimum-cycle check on a task-owned throwaway product — **do not open or mutate `SLT Fixed Three Cycles`**. First require `wp post list --post_type=product --name=slt-flex-submin-probe --field=ID --allow-root` to return no ID. In `admin-SLT-SYN-01`, create `SLT Flex SubMin Probe` / slug `slt-flex-submin-probe`: Simple, Virtual, Subscription, regular price `$7.00`, day/2, length 0, trial 0, no signup fee, description `SLT task-owned sub-minimum flex probe. Never purchase. Delete on 2026-08-15.` Confirm the Flexible Renewal Sync block is present, tick it, save, and prove `wp eval 'var_dump(\ArraySubsPro\Features\FlexibleRenewalSync\Services\SegmentPlan::getConfig(<PROBE_ID>));' --allow-root` returns `NULL`. Immediately append only `<PROBE_ID>` to Shop Access rule `rule_1784662676378_maa3te08s` under `exclusion_product_ids` through **Member Access → Shop Access**, preserving every other field and prior exclusion; re-read the raw option and require the ID exactly once. Record its exact product ID and verified exclusion in the registry and screenshot `SLT-SYN-01-05b-submin-probe.png`. Then untick the master control, save, and verify `_arraysubs_flex_sync_enabled` is absent. Never add this product to a cart.
-17. **Pass A only:** Disable-retains-boundaries probe: on `SLT Flex Week Segments` untick the master checkbox and **Update**. Read the metas. Then re-tick and **Update**, and confirm the legend redraws `1 - 2` / `3 - 5` / `6 - 7` without re-entering the boundaries. Screenshot `SLT-SYN-01-06-week-reenabled.png`. Pass B cites this evidence and must not repeat it.
+14. Two-active positional check on `SLT2 Flex Daily Two Seg`: open its edit screen, confirm the legend shows only TWO rows (`1` for **Prorate amount**, `2 - 3` for **Charge full for next billing cycle**) and that `_arraysubs_flex_sync_seg1_end` is `1` — i.e. the meta names the end of the FIRST ACTIVE segment, which is segment 2 here, NOT segment 1. Screenshot `SLT-SYN-01-04-two-active-positional.png`.
+15. One-active check on `SLT2 Flex Daily Next Cycle`: confirm the legend collapses to a single row `1 - 3`, that no boundary handle is draggable, and run `wp eval 'print_r(\ArraySubsPro\Features\FlexibleRenewalSync\Services\SegmentPlan::getConfig(<ID>));' --allow-root` to confirm `boundaries` is an EMPTY array. Screenshot `SLT-SYN-01-05-one-active.png`.
+16. Sub-minimum-cycle check on a task-owned throwaway product — **do not open or mutate `SLT2 Fixed Three Cycles`**. First require `wp post list --post_type=product --name=slt2-flex-submin-probe --field=ID --allow-root` to return no ID. In `admin-SLT-SYN-01`, create `SLT2 Flex SubMin Probe` / slug `slt2-flex-submin-probe`: Simple, Virtual, Subscription, regular price `$7.00`, day/2, length 0, trial 0, no signup fee, description `SLT2 task-owned sub-minimum flex probe. Never purchase. Delete on 2026-09-05.` Confirm the Flexible Renewal Sync block is present, tick it, save, and prove `wp eval 'var_dump(\ArraySubsPro\Features\FlexibleRenewalSync\Services\SegmentPlan::getConfig(<PROBE_ID>));' --allow-root` returns `NULL`. Immediately append only `<PROBE_ID>` to Shop Access rule `<D0_SHOP_ACCESS_RULE_ID>` under `exclusion_product_ids` through **Member Access → Shop Access**, preserving every other field and prior exclusion; re-read the raw option and require the ID exactly once. Record its exact product ID and verified exclusion in the registry and screenshot `SLT-SYN-01-05b-submin-probe.png`. Then untick the master control, save, and verify `_arraysubs_flex_sync_enabled` is absent. Never add this product to a cart.
+17. **Pass A only:** Disable-retains-boundaries probe: on `SLT2 Flex Week Segments` untick the master checkbox and **Update**. Read the metas. Then re-tick and **Update**, and confirm the legend redraws `1 - 2` / `3 - 5` / `6 - 7` without re-entering the boundaries. Screenshot `SLT-SYN-01-06-week-reenabled.png`. Pass B cites this evidence and must not repeat it.
 18. Final verification dump: preserve the raw after CSV, then repeat step 2's canonical JSON command for the
     products owned by the current pass and diff each canonical after file against its canonical before file. The canonical diffs
     must be empty. A raw CSV diff is informational only: after the required disable/re-enable probe, the
@@ -89,13 +89,13 @@ Prove that the pro Flexible Renewal Sync control block on a SIMPLE subscription 
 2. Probe A (seg1_end=20, seg2_end=5, inverted): the stored pair is re-derived/clamped — `sanitizeBoundaries(20,5,30)` is entered because `seg2_end <= seg1_end`, yielding `_arraysubs_flex_sync_seg1_end=20` and `_arraysubs_flex_sync_seg2_end=21`. Neither value is stored raw as submitted, and `seg2_end > seg1_end` always holds.
 3. Probe B (0 and 45): both are out of range, so `getDefaultBoundaries(30)` supplies `_arraysubs_flex_sync_seg1_end=10` and `_arraysubs_flex_sync_seg2_end=20`.
 4. Probe C (29 and 29): clamped to `seg1_end=28`, `seg2_end=29` — every one of the three partitions retains at least one day and `seg2_end <= cycle_days - 1 = 29`.
-5. After step 10 the month product is back to `seg1_end=2`, `seg2_end=6`, all three `_active` metas `yes`, and the legend reads `1 - 2` / `3 - 6` / `7 - 30`.
+5. After step 10 the month product is back to `seg1_end=24`, `seg2_end=27`, all three `_active` metas `yes`, and the legend reads `1 - 24` / `25 - 27` / `28 - 30`.
 6. Turning off the last remaining active segment is refused in the UI with the verbatim string `At least one segment must stay active.` and no save occurs.
 7. Step 12: with all three `_active` metas set to `no`, `SegmentPlan::getConfig()` returns `actives => [1, 2, 3]` (defensive fallback) rather than null or an empty array.
 8. Step 13: `_arraysubs_flex_sync_seg1_active = 0` still counts as ACTIVE, because only the literal string `no` deactivates a segment. Record this as a documented sharp edge.
-9. `SLT Flex Daily Two Seg` shows exactly two active schedule ranges, `1` (Prorate amount) and `2 - 3` (Charge full for next billing cycle), plus an inactive `Off / Full amount` control row. `_arraysubs_flex_sync_seg1_end = 1` is the end of the first ACTIVE segment (segment 2) — positional, not segment-named.
-10. `SLT Flex Daily Next Cycle` shows one active schedule range `1 - 3`, retains two inactive `Off` control rows, and `getConfig()['boundaries']` is `[]`.
-11. Task-owned `SLT Flex SubMin Probe` (nominal 2 days < MIN_CYCLE_DAYS 3) yields `getConfig() === null` even with the checkbox ticked, is present exactly once in the preserved Shop Access exclusion list, and is left with `_arraysubs_flex_sync_enabled` ABSENT. `SLT Fixed Three Cycles` is never opened or mutated.
+9. `SLT2 Flex Daily Two Seg` shows exactly two legend rows, `1` (Prorate amount) and `2 - 3` (Charge full for next billing cycle), and `_arraysubs_flex_sync_seg1_end = 1` is the end of the first ACTIVE segment (segment 2) — positional, not segment-named.
+10. `SLT2 Flex Daily Next Cycle` shows one legend row `1 - 3` and `getConfig()['boundaries']` is `[]`.
+11. Task-owned `SLT2 Flex SubMin Probe` (nominal 2 days < MIN_CYCLE_DAYS 3) yields `getConfig() === null` even with the checkbox ticked, is present exactly once in the preserved Shop Access exclusion list, and is left with `_arraysubs_flex_sync_enabled` ABSENT. `SLT2 Fixed Three Cycles` is never opened or mutated.
 12. Unticking the master checkbox DELETES `_arraysubs_flex_sync_enabled` but RETAINS `_arraysubs_flex_sync_seg1_end`/`seg2_end`; re-ticking restores the same legend with no re-entry.
 13. The step-18 canonical key/value diff against step 2 is empty for every product in each pass — every probe was restored. Pass A supplies the week diff; Pass B supplies the month and two daily diffs. Raw database row order is explicitly ignored.
 14. Exactly the six documented meta keys exist on each flex product; no additional `_arraysubs_flex_*` key appears.
@@ -121,81 +121,24 @@ Prove that the pro Flexible Renewal Sync control block on a SIMPLE subscription 
 - [ ] Last-active-segment refusal captured verbatim
 - [ ] Zero-active meta state resolves to actives [1,2,3]
 - [ ] Non-`no` value counts as active (documented)
-- [ ] Two-active product has two active ranges, retains its inactive `Off` control, and proves META_SEG1_END is POSITIONAL
-- [ ] One-active product has one active range, two inactive `Off` controls, and an empty boundaries array
+- [ ] Two-active product proves META_SEG1_END is POSITIONAL
+- [ ] One-active product has empty boundaries array
 - [ ] Sub-3-day cycle yields getConfig() === null
 - [ ] Sub-minimum probe parent ID is present exactly once in the preserved Shop Access exclusion list
 - [ ] Disable retains boundaries; re-enable restores the legend
 - [ ] Canonical key/value before/after meta diff is empty; raw row order ignored; zero mail
 
 ## Isolation / teardown
-- State handoff: the confirmed, restored segment plans for SLT-PROD-12/13/14 are the baseline every later SLT-SYN purchase task asserts against. Pass A's week handoff is already live and must not be revisited during Pass B. The positional-meta finding from step 14 is binding on SLT-SYN-07.
-- Restores: all four flex products returned to their SLT-PROD-declared configuration (proved by the empty diff); `SLT Fixed Three Cycles` was not touched. The task-owned SubMin Probe is disabled, registered by exact ID, present in the Shop Access exclusion list for the window, never purchased, and retained only for SLT-SETUP-99B deletion; SLT-SETUP-99A restores the full rule snapshot. No other global setting touched.
+- State handoff: the freshly confirmed and restored segment plans for SLT-PROD-12/13/14 are the baseline for later purchases. Complete Pass A before Pass B; the positional-meta contract from step 14 is revalidated by SLT-SYN-07.
+- Restores: all four flex products returned to their SLT-PROD-declared configuration (proved by the empty diff); `SLT2 Fixed Three Cycles` was not touched. The task-owned SubMin Probe is disabled, registered by exact ID, present in the Shop Access exclusion list for the window, never purchased, and retained only for SLT-SETUP-99B deletion; SLT-SETUP-99A restores the full rule snapshot. No other global setting touched.
 
 ---
 
-### Verified environment facts (2026-08-01/02 — do not re-derive)
+### Fresh-cycle validation contract
 
-- **Nothing fires at `_next_payment_date`.** Every scheduled leg is shifted by
-  `crc32('arraysubs-spread-'.$subscription_id) % 21600` (0-6 h). Charge fires at `due + offset`,
-  invoice at `due + offset - 6h`. The stored date never moves. **Assert a window, not a point.**
-- Currency `USD`. **Taxes are OFF** (`woocommerce_calc_taxes = no`) — never assert a tax line.
-- Orders use **HPOS** (`wp_wc_orders`), not `wp_posts`.
-- `woocommerce_enable_guest_checkout = yes`, but ArraySubs force-requires registration for
-  **subscription** carts via `woocommerce_checkout_registration_required`
-  (`SubscriptionCheckout/Services/Hooks.php:103`, `CheckoutHelpersTrait.php:93-100`).
-- WooCommerce **grouped** products have zero handling in either plugin — grouped tasks are
-  exploratory: document behaviour, do not assert a spec.
-- WP-Cron runs every minute from `/etc/cron.d/mirror-help-arrayhash-wordpress`. Scheduled actions
-  fire on their own; **a renewal that does not fire is a real bug** — capture evidence and do not force a natural-watch action.
-- Give this task its own browser session (`agent-browser --session <role>-<TASK-KEY>`). Sessions are
-  keyed by name and **share a cart**.
-- Never run a bare or `--hooks=` Action Scheduler drain. Run one known action ID at a time only when the task explicitly authorizes it and after the required queue pre-flight; natural-watch actions are never forced.
-- Evidence goes under `/home/server-manager/slt-evidence/` using task-key-prefixed filenames.
-
-[[2026-08-02]] Sun 14:26
-
-
-## Split execution 2026-08-02 — SLT-SYN-01A PASS; parent remains open
-- Calendar conflict C05 splits this task. Pass A touched only week-flex product 11943; Pass B remains scheduled D1 for month and daily products.
-- Explicit live-subscription gates before and after returned `[]`.
-- Inventoried the master label/description, data-cycle-days=7, two hidden positional inputs (2/5), three active toggles, and legend 1-2 / 3-5 / 6-7.
-- Disable/save deleted only `_arraysubs_flex_sync_enabled`; both boundaries and all active flags remained. Re-enable/save restored the same UI and all six authorized values.
-- Exactly six `_arraysubs_flex_*` keys exist. Key-sorted semantic before/after diff is empty.
-- Raw CSV order necessarily changed when the enabled key was deleted/reinserted; the plan assertion was corrected directly and the observation is recorded in `issues/qa-plan-SLT-SYN-01A-raw-meta-diff-order-only.md`, not as a product-state failure.
-- Mailpit latest ID remained `1vpHEKG6i8l9ZzBoW2BqrI`.
-- Registry page 11847 now authorizes product 11943 for SLT-SYN-05 at 2026-08-02 18:25:41 UTC+6.
-- Evidence: `/home/server-manager/slt-evidence/SLT-SYN-01A-*`.
-- Do not close this parent task until SLT-SYN-01B completes on D1.
-
-## D01 early-morning resume checkpoint — 2026-08-03 08:51:14 UTC+6
-
-- Pass B dependencies `SLT-PROD-12` and `SLT-PROD-14` are complete, so the follow-up is now open.
-- Resumed with a state-neutral preflight only: captured Mailpit baseline `42DI8ELEccd8qFsaMtyeag`, raw and canonical-before six-key files for products `12093`, `12099`, and `12102`, proved the task-owned SubMin slug is absent, and proved no subscription relationship row exists for those three products.
-- No product save, UI mutation, direct meta write, Shop Access save, cart action, or settings bracket occurred. Week product `11943` and its live subscription `12039` were not touched.
-- Evidence: `/home/server-manager/slt-evidence/SLT-SYN-01B-preflight.txt` and `/home/server-manager/slt-evidence/SLT-SYN-01B-{12093,12099,12102}-before-{raw.csv,canonical.json}`.
-- Exact continuation: resume immediately in the **2026-08-03 10:10 UTC+6 phase**, before `SLT-SYN-03` and `SLT-SETUP-05`. Stop positive probes by **12:15 UTC+6**, restore canonical product state first if late, and clear the browser before `SLT-REN-03` takes its **12:30-13:00 UTC+6** hard gate.
-
-[[2026-08-03]] Mon 07:04
-## D01 late-morning Pass B — EXECUTED / FAIL
-
-Pass B completed before the 12:15 cutoff. Products 12093, 12099, and 12102 ended with empty canonical key/value diffs against their preflight baselines; product 12119 (SLT Flex SubMin Probe) returned getConfig NULL while enabled, was appended exactly once to Shop Access rule rule_1784662676378_maa3te08s, and was left with the master flex key absent. Boundary clamps, refusal text, defensive fallback, non-no handling, positional meta, empty one-active boundaries, zero mail, Pass A handoff, and registry handoff all resolved.
-
-Verdict FAIL solely because disabled legend rows remain visibly rendered on the two-active and one-active products instead of collapsing to the authored two/one rows. Finding: issues/light-plugin-SLT-SYN-01-disabled-segments-remain-visible.md. Evidence: /home/server-manager/slt-evidence/SLT-SYN-01B-facts.txt, screenshots SLT-SYN-01-01 through -05b, raw/canonical before/after files, and SLT-SYN-01B-canonical-diff.txt. Browser session closed; no settings bracket, cart, checkout, order, subscription, clock, or scheduler mutation occurred.
-
-[[2026-08-03]] Mon 07:24
-## Independent evidence review — accepted after recapture
-
-Replaced screenshots SLT-SYN-01-01 and -02 during a read-only post-restore admin view. Both now visibly show the enabled 30-day control, slider boundaries 2/6, legend 1-2 / 3-6 / 7-30, and all three segment labels. No field changed and Update was not clicked; review-SLT-SYN-01 was closed. Live canonical comparisons for products 12093/12099/12102 each exited 0, product 12119 still has no flex-enabled key, and its Shop Access exclusion count is exactly one. The FAIL remains isolated to issues/light-plugin-SLT-SYN-01-disabled-segments-remain-visible.md; no remediation card exists.
-
-[[2026-08-14]] Fri
-## Test-oracle correction
-
-The former requirement that disabled modes disappear as legend rows was stale and contradicted
-the maintained Stage 21 contract (`21-flexible-renewal-sync/01-product-setup-and-admin-ui.md`,
-Sub-Task 1.4), which explicitly expects a disabled mode to remain as an `Off` row. Each legend
-row owns that mode's enable/disable toggle; removing the row would remove the administrator's
-only in-place way to re-enable it. Future runs distinguish active schedule ranges (which do
-collapse to two or one) from the three persistent mode controls. The historical product data
-and partition assertions were valid; the presentation finding was a false positive and is now
-closed in `issues/done-medium-SLT-SYN-01-disabled-segments-remain-visible.md`.
+- Re-derive every ID, count, option value, gateway capability, scheduler timestamp, and email baseline on this run; no prior-cycle result is evidence.
+- Create and mutate only registered `SLT2 ` / `slt2-*` fixtures. Legacy `SLT` and all non-SLT2 data are read-only controls.
+- Automatic-gateway scope is Stripe and Paddle only. Stripe is the primary path; run Paddle parity wherever Paddle supports the behavior. Do not test or configure PayPal or Mollie.
+- ArraySubs core must own its Stripe/Paddle integration, renewal, retry, webhook, REST, refund, and customer-payment services with Pro inactive; vendor host classes retain their expected ownership.
+- Browser-required assertions use Vercel `agent-browser` with isolated task/role sessions and current snapshot refs. WP-CLI always includes `--allow-root`.
+- Update the lifecycle card, the matching `qa/progress/` card, and `qa/issues/` for every new regression. Evidence belongs to this fresh cycle only.

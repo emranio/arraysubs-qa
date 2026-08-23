@@ -1,0 +1,1 @@
+owner_task	stage_task_path	fixture_key	subscription_id	order_or_payment_id	wp_user_id	gateway	action_id	hook	group	indexed_args	provider_ids	expected_gate_utc	earliest_observation_utc	latest_safe_gate_utc	expected_outcome	mailpit_baseline_id	observed_at_utc	verdict	evidence_path	notes

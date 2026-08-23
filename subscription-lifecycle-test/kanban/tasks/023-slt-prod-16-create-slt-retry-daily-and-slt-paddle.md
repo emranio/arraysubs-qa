@@ -1,17 +1,17 @@
 ---
 id: 23
-title: SLT-PROD-16 Create SLT Retry Daily and SLT Paddle Daily, the two gateway-path products
-status: done
+title: SLT-PROD-16 Create SLT2 Retry Daily and SLT2 Paddle Daily, the two gateway-path products
+status: todo
 priority: critical
-created: 2026-08-02T03:43:04.919010019+02:00
-updated: 2026-08-03T04:50:22.293314391+02:00
-started: 2026-08-03T04:50:22.293312888+02:00
-completed: 2026-08-03T04:50:22.293312888+02:00
+created: 2026-08-22T19:10:00+02:00
+updated: 2026-08-22T19:10:00+02:00
 tags:
+    - cycle-2
+    - granular
     - setup
     - products
     - day-01
-due: "2026-08-03"
+due: "2026-08-24"
 estimate: 45m
 depends_on:
     - 10
@@ -19,7 +19,7 @@ depends_on:
 class: standard
 ---
 
-> **SLT-PROD-16** · group `catalog` · scheduled **D01** (2026-08-03)
+> **SLT-PROD-16** · group `catalog` · scheduled **D01** (2026-08-24)
 
 > Read `README.md` (environment + isolation contract), `calendar.md` (this day's exact
 > ordering — it is binding, not advisory) and `plan-audit.md` before starting.
@@ -41,19 +41,19 @@ Create the two products whose only distinguishing feature is the gateway they ar
 ## Test data
 | Item | Value |
 |---|---|
-| Product A | SLT Retry Daily / slug `slt-retry-daily`, $13.00, day/1 |
-| Product B | SLT Paddle Daily / slug `slt-paddle-daily`, $11.00, day/1 |
-| Account | A -> `slt-fail`; B -> `slt-paddle` |
+| Product A | SLT2 Retry Daily / slug `slt2-retry-daily`, $13.00, day/1 |
+| Product B | SLT2 Paddle Daily / slug `slt2-paddle-daily`, $11.00, day/1 |
+| Account | A -> `slt2-fail`; B -> `slt2-paddle` |
 | Coupon | N/A |
 | Card | A: `4000 0000 0000 0341` (attaches fine, declines every off-session renewal); B: Paddle sandbox `4242 4242 4242 4242`, any future expiry |
 | Amounts | A $13.00 first charge then failing $13.00 renewals; B $11.00 first charge then $11.00 renewals |
 
 ## Steps
 1. Capture `M0=$(mailpit-agent latest-id)`. At the end, inspect every message newer than `M0`; classify unrelated/background mail by its actual owner.
-2. Create Product A: `agent-browser --session admin-SLT-PROD-16 open "https://mirror-help.arrayhash.com/wp-admin/post-new.php?post_type=product"`; title `SLT Retry Daily`; description `SLT window product. Stripe failing-card dunning path. Delete on 2026-08-15.`; **Simple product**; tick **Virtual**; tick **Subscription [ArraySubs]**; **General** tab **Regular price ($)** `13.00`.
-3. Product A **Subscription [ArraySubs]** tab: **Billing Period** `Day`; **Billing Interval** `1`; **Subscription Length** `0`; **Trial Length** `0`; **Sign-up Fee ($)** empty; **Different Renewal Price** unticked; **Flexible Renewal Sync** UNTICKED. Slug `slt-retry-daily`. Publish.
-4. Create Product B identically but title `SLT Paddle Daily`, description `SLT window product. Paddle sandbox only. Delete on 2026-08-15.`, **Regular price ($)** `11.00`, slug `slt-paddle-daily`. Publish.
-4a. Before either storefront check or any downstream checkout, append both parent product IDs only to Shop Access rule `rule_1784662676378_maa3te08s` under `exclusion_product_ids` through **Member Access → Shop Access**. Preserve every other field and every prior SLT exclusion; re-read the raw option and require each new ID exactly once.
+2. Create Product A: `agent-browser --session admin-SLT-PROD-16 open "https://mirror-help.arrayhash.com/wp-admin/post-new.php?post_type=product"`; title `SLT2 Retry Daily`; description `SLT2 window product. Stripe failing-card dunning path. Delete on 2026-09-05.`; **Simple product**; tick **Virtual**; tick **Subscription [ArraySubs]**; **General** tab **Regular price ($)** `13.00`.
+3. Product A **Subscription [ArraySubs]** tab: **Billing Period** `Day`; **Billing Interval** `1`; **Subscription Length** `0`; **Trial Length** `0`; **Sign-up Fee ($)** empty; **Different Renewal Price** unticked; **Flexible Renewal Sync** UNTICKED. Slug `slt2-retry-daily`. Publish.
+4. Create Product B identically but title `SLT2 Paddle Daily`, description `SLT2 window product. Paddle sandbox only. Delete on 2026-09-05.`, **Regular price ($)** `11.00`, slug `slt2-paddle-daily`. Publish.
+4a. Before either storefront check or any downstream checkout, append both parent product IDs only to Shop Access rule `<D0_SHOP_ACCESS_RULE_ID>` under `exclusion_product_ids` through **Member Access → Shop Access**. Preserve every other field and every prior SLT2 exclusion; re-read the raw option and require each new ID exactly once.
 5. Reload both and confirm the subscription fields persisted.
 6. `wp post meta list <ID> --keys=_is_subscription,_subscription_period,_subscription_interval,_subscription_length,_trial_length,_signup_fee,_enable_renewal_price,_arraysubs_flex_sync_enabled,_regular_price --allow-root` for both.
 7. As `--session guest-SLT-PROD-16`, open both product pages and confirm each renders a plain daily recurring summary with no trial and no fee. Capture each page separately as `SLT-PROD-16-03-retry-frontend.png` and `SLT-PROD-16-04-paddle-frontend.png`; one screenshot of only one page is not evidence for both products.
@@ -63,11 +63,11 @@ Create the two products whose only distinguishing feature is the gateway they ar
 
 ## Expected results
 1. Both published simple + virtual + subscription, day/1, length 0, trial 0, no signup fee, no different renewal price, no flex sync meta.
-2. `SLT Retry Daily` `_regular_price=13.00`; `SLT Paddle Daily` `_regular_price=11.00`.
+2. `SLT2 Retry Daily` `_regular_price=13.00`; `SLT2 Paddle Daily` `_regular_price=11.00`.
 3. Neither product carries `_arraysubs_flex_sync_enabled` (mandatory — otherwise Paddle would be hidden).
 4. Both storefront pages show a plain "every day" recurring summary.
-5. Dunning contract for A when `SLT-DUN-01` buys it on D2 (2026-08-04) with card `4000 0000 0000 0341`: parent order paid $13.00; the D3 renewal attempt fails; `payment_failed` mail goes to customer and admin; the subscription stays `arraysubs-active` for 1 day, moves to `arraysubs-on-hold`, and is later cancelled by the authored grace ladder — all inside the window.
-6. Contract for B: bought with Paddle sandbox by `slt-paddle` only; Paddle owns the schedule via `next_billed_at`, so the Renew Early button must stay hidden even though `allow_early_renew` is on (`early_renewal: false`), and SCA/3DS is not applicable (`sca: false`).
+5. Dunning contract for A when `SLT-DUN-01` buys it on D2 (2026-08-25) with card `4000 0000 0000 0341`: parent order paid $13.00; the D3 renewal attempt fails; `payment_failed` mail goes to customer and admin; the subscription stays `arraysubs-active` for 1 day, moves to `arraysubs-on-hold`, and is later cancelled by the authored grace ladder — all inside the window.
+6. Contract for B: bought with Paddle sandbox by `slt2-paddle` only; Paddle owns the schedule via `next_billed_at`, so the Renew Early button must stay hidden even though `allow_early_renew` is on (`early_renewal: false`), and SCA/3DS is not applicable (`sca: false`).
 
 ## Emails expected
 | # | Email | Trigger point | Recipient | Subject contains | Verify with |
@@ -87,39 +87,16 @@ Create the two products whose only distinguishing feature is the gateway they ar
 - [ ] Zero mail, nothing purchased
 
 ## Isolation / teardown
-- State handoff: the primary `SLT Retry Daily` ladder is bought by `slt-fail` on D2 with card `4000 0000 0000 0341`, as owned by `SLT-DUN-01`. A second ladder may reuse the product later only under its separately assigned SLT account and card, never concurrently on the same account. `SLT Paddle Daily` may ONLY be bought by `slt-paddle` with the Paddle sandbox card, and never with Stripe.
+- State handoff: the primary `SLT2 Retry Daily` ladder is bought by `slt2-fail` on D2 with card `4000 0000 0000 0341`, as owned by `SLT-DUN-01`. A second ladder may reuse the product later only under its separately assigned SLT2 account and card, never concurrently on the same account. `SLT2 Paddle Daily` may ONLY be bought by `slt2-paddle` with the Paddle sandbox card, and never with Stripe.
 - Restores: nothing. Both deleted by SLT-SETUP-99B.
 
 ---
 
-### Verified environment facts (2026-08-01/02 — do not re-derive)
+### Fresh-cycle validation contract
 
-- **Nothing fires at `_next_payment_date`.** Every scheduled leg is shifted by
-  `crc32('arraysubs-spread-'.$subscription_id) % 21600` (0-6 h). Charge fires at `due + offset`,
-  invoice at `due + offset - 6h`. The stored date never moves. **Assert a window, not a point.**
-- Currency `USD`. **Taxes are OFF** (`woocommerce_calc_taxes = no`) — never assert a tax line.
-- Orders use **HPOS** (`wp_wc_orders`), not `wp_posts`.
-- `woocommerce_enable_guest_checkout = yes`, but ArraySubs force-requires registration for
-  **subscription** carts via `woocommerce_checkout_registration_required`
-  (`SubscriptionCheckout/Services/Hooks.php:103`, `CheckoutHelpersTrait.php:93-100`).
-- WooCommerce **grouped** products have zero handling in either plugin — grouped tasks are
-  exploratory: document behaviour, do not assert a spec.
-- WP-Cron runs every minute from `/etc/cron.d/mirror-help-arrayhash-wordpress`. Scheduled actions
-  fire on their own; **a renewal that does not fire is a real bug** — capture evidence and do not force a natural-watch action.
-- Give this task its own browser session (`agent-browser --session <role>-<TASK-KEY>`). Sessions are
-  keyed by name and **share a cart**.
-- Never run a bare or `--hooks=` Action Scheduler drain. Run one known action ID at a time only when the task explicitly authorizes it and after the required queue pre-flight; natural-watch actions are never forced.
-- Evidence goes under `/home/server-manager/slt-evidence/` using task-key-prefixed filenames.
-
-## Execution note — D01 early-morning (2026-08-03)
-
-Verdict: **PASS**.
-
-- Published `SLT Retry Daily` product `12108` (`slt-retry-daily`) at USD 13.00/day and `SLT Paddle Daily` product `12112` (`slt-paddle-daily`) at USD 11.00/day; both are simple, virtual, fixed day/1 subscriptions.
-- Reloaded both product editors and proved length 0, trial 0, normalized sign-up fee 0, Different Renewal Price OFF, and Flexible Renewal Sync OFF. Raw meta contains neither `_enable_renewal_price` nor `_arraysubs_flex_sync_enabled`.
-- Through Member Access -> Shop Access, appended parent IDs `12108` and `12112` exactly once to rule `rule_1784662676378_maa3te08s`. Raw exclusions changed only from `[11927,11933,11938,11943,12087,12093,12099,12102]` to `[11927,11933,11938,11943,12087,12093,12099,12102,12108,12112]`.
-- Cache-busted guest pages rendered `$13.00 / day` and `$11.00 / day`, with no trial or sign-up-fee text. Cart remained empty; no order/order line, subscription, checkout, or card action occurred.
-- Registry page `11847` contains one `CATALOG (SLT-PROD-16)` section tagging `12108` as `stripe-decline-only` and `12112` as `paddle-only`, with their downstream owners.
-- Mailpit remained `42DI8ELEccd8qFsaMtyeag`; zero attributable messages. Admin and guest error logs were empty, and both named sessions were closed.
-- Independent evidence review confirmed two separately framed storefront captures: `SLT-PROD-16-03-retry-frontend.png` shows `SLT Retry Daily` at `$13.00 / day`, and `SLT-PROD-16-04-paddle-frontend.png` shows `SLT Paddle Daily` at `$11.00 / day`; both show an empty cart. The earlier `SLT-PROD-16-03-frontends.png` is superseded and is not relied on as pass evidence.
-- Evidence: `/home/server-manager/slt-evidence/SLT-PROD-16-facts.txt` plus `SLT-PROD-16-01-retry-subscription-tab.png`, `SLT-PROD-16-02-paddle-subscription-tab.png`, `SLT-PROD-16-03-retry-frontend.png`, and `SLT-PROD-16-04-paddle-frontend.png`.
+- Re-derive every ID, count, option value, gateway capability, scheduler timestamp, and email baseline on this run; no prior-cycle result is evidence.
+- Create and mutate only registered `SLT2 ` / `slt2-*` fixtures. Legacy `SLT` and all non-SLT2 data are read-only controls.
+- Automatic-gateway scope is Stripe and Paddle only. Stripe is the primary path; run Paddle parity wherever Paddle supports the behavior. Do not test or configure PayPal or Mollie.
+- ArraySubs core must own its Stripe/Paddle integration, renewal, retry, webhook, REST, refund, and customer-payment services with Pro inactive; vendor host classes retain their expected ownership.
+- Browser-required assertions use Vercel `agent-browser` with isolated task/role sessions and current snapshot refs. WP-CLI always includes `--allow-root`.
+- Update the lifecycle card, the matching `qa/progress/` card, and `qa/issues/` for every new regression. Evidence belongs to this fresh cycle only.

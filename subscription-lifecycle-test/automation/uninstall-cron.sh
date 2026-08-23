@@ -1,15 +1,9 @@
 #!/usr/bin/env bash
-#
-# Stop the SLT daily renewal/email watch early.
-#
-# The watch normally removes its own cron entry only after D13 teardown task 119
-# reaches done; this is only needed to end the run ahead of schedule. Reports,
-# logs, and the board are left untouched.
-#
+# Stop the fresh SLT2 lifecycle watcher early; reports, evidence, and boards are preserved.
 set -euo pipefail
 
-CRON_FILE="/etc/cron.d/slt-daily-renewal-watch"
-LOCK_FILE="/tmp/slt-daily-renewal-watch.lock"
+CRON_FILE="/etc/cron.d/slt2-daily-renewal-watch"
+LOCK_FILE="/tmp/slt2-daily-renewal-watch.lock"
 
 if [[ $EUID -ne 0 ]]; then
     echo "Must run as root (removes $CRON_FILE)." >&2
@@ -25,4 +19,4 @@ fi
 
 rm -f "$LOCK_FILE"
 echo "Cleared $LOCK_FILE"
-echo "Reports and logs kept under the plan directory."
+echo "Reports, logs, evidence, and board records were preserved."

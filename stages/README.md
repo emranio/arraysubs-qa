@@ -57,13 +57,16 @@ Every stage assumes the following baseline. Re-confirm at the start of each sess
 
 ### Payment methods in scope for this regression cycle
 
-This pass tests **only Stripe + manual payment**. PayPal and Paddle are **out of scope** for this cycle. Any task that historically referenced them has been rewritten or skipped — the tester does not need PayPal or Paddle sandbox accounts.
+This pass tests **Stripe and Paddle only**, with Stripe as the primary path and Paddle as the parity path. PayPal and Mollie are explicitly out of scope because their secrets are unavailable; missing PayPal/Mollie credentials are not blockers and no task may configure or execute either gateway.
 
-- **Manual payment** — WooCommerce **Direct Bank Transfer** (BACS) and **Cash on Delivery** are enabled. These are the fallback "manual" methods used to exercise the core renewal-invoice path that does not depend on a gateway.
-- **Stripe test mode** — already configured through WooCommerce Stripe before this regression begins. The QA tester does NOT run any Stripe setup task. They only verify the official WooCommerce Stripe gateway is connected (under **WooCommerce → Settings → Payments**) and that ArraySubsPro shows the auto-provisioned secondary Stripe webhook as configured in **Audits [beta] → Gateway Logs**. The tester uses these cards:
+- **Stripe test mode (primary)** — verify the official WooCommerce Stripe gateway is connected under **WooCommerce → Settings → Payments**, checkout assets load, the ArraySubs-owned webhook is configured/reachable, and live test-mode checkout, renewal, retry, payment-method update, switch, refund/cancel, and webhook-idempotency flows work. Use these cards:
   - `4242 4242 4242 4242` — generic success
   - `4000 0027 6000 3184` — SCA / 3-D Secure challenge
   - `4000 0000 0000 0341` — declines on every renewal (used for failed-renewal grace tests)
+- **Paddle sandbox (parity)** — verify credentials by presence only, hosted checkout and remote objects/webhooks, then run every supported product/cart/lifecycle parity row. Unsupported rows must be proven from the UI/provider contract and recorded as explicit not-supported results, never silently skipped.
+- **Manual controls** — WooCommerce **Direct Bank Transfer** (BACS) may be used only where a lifecycle card explicitly exercises the core renewal-invoice/pay-link path. It is not a third automatic-gateway track.
+
+For the active 12-day subscription cycle, `qa/subscription-lifecycle-test/README.md`, its 133 numeric lifecycle cards, `calendar.md`, and `watch-schedule.md` are the binding execution overlay. They narrow gateway scope and impose stricter fixture-isolation, natural-time, targeted-action, and evidence rules than the generic stage helpers below.
 
 ### Test product catalog (canonical, used across every stage)
 
@@ -92,9 +95,9 @@ To make renewals feasible inside a real-time regression run, almost every test p
 
 Many lifecycle tests need the clock to advance days or hours. Use **one** of these techniques and stay consistent:
 
-- Edit the subscription's `_next_payment_date` post meta from the admin **Custom Fields** panel (preferred — no plugin needed and matches what production uses).
-- Run `wp action-scheduler run --hooks=arraysubs_*` from the CLI to drain pending Action Scheduler hooks immediately.
-- Use a date-mocking plugin (e.g., **WP Time Capsule** or any plugin that sets `current_time` filters). Disable it immediately after each test to avoid contaminating other stages.
+- Edit dates or run targeted actions only when the active numeric lifecycle card explicitly authorizes that mutation and names its exact SLT2 fixture/action.
+- Never broadly drain `arraysubs_*` hooks during the active lifecycle cycle; unrelated and natural-time cohorts must remain untouched.
+- Use date mocking only inside the sole declared D8 bracket, with before/after non-SLT2 equality proof and immediate restoration.
 
 Note any time-travel technique you used in the **Notes** field of the task you ran it in.
 
@@ -153,7 +156,7 @@ This map lets the QA team confirm every documented topic is covered by at least 
 | Store Credit (Pro) | 12, 19 |
 | Member Access & Restriction Rules | 09 |
 | Checkout & Payments → Subscription Checkout | 04, 05 |
-| Checkout & Payments → Automatic Payments (Pro) | 05, 18 |
+| Checkout & Payments → Automatic Payments (Core) | 05, 18 |
 | Checkout & Payments → Checkout Builder (Pro) | 05 |
 | Billing & Renewals → Renewal Operations, Trials, Grace, Communication | 18, 13 |
 | Retention & Refunds → Cancellation, Offers, Analytics, Refunds | 08, 19 |

@@ -1,65 +1,124 @@
-# Execution calendar — D0 to D10
+# SLT2 execution calendar — 12-day granular cycle
 
-> **D0 = 2026-08-02.** Execution runs D0..D10 (2026-08-02 .. 2026-08-12).
-> The automated watch runs D1..D12 (2026-08-03 .. 2026-08-14) — see `watch-schedule.md`.
+D0 through D11 are the requested 12 execution days. D12 is a read-only tail watch; D13 is guarded teardown. A card's due date is its start/primary execution date. Cards with natural renewal/trial/retry/provider gates remain in progress and are revisited at the exact registered time.
 
-This calendar is the rebalanced, conflict-resolved schedule. It supersedes the `day` field that
-each task was originally authored with: the first draft stacked 34 tasks onto D0, which is not
-executable in one sitting and would have collided on shared settings, carts, and accounts.
+## Standing order every day
 
-**Before running any day, read `plan-audit.md`.** It lists 44 concrete ways these tasks can corrupt
-each other on a shared site, with the fix for each. The most important standing rules:
+1. Read the day's `watch-schedule.md` row and inspect `future-gates.tsv` before untimed work.
+2. Observe due natural gates with their immutable pre-gate Mailpit/action/provider baselines.
+3. Execute the cards below in listed order, respecting each card's finer dependencies and exclusive brackets.
+4. Update lifecycle, shared progress and shared issue boards; close sessions; publish later gates.
 
-- Never use a bare or `--hooks=` Action Scheduler drain. When a plan explicitly authorizes execution, run one known action ID at a time after the required queue pre-flight.
-- Give every browser task its own `agent-browser --session <role>-<TASK-KEY>` name — sessions share a cart.
-- Global settings changed outside the D0 baseline must be restored inside the same task.
-- The retired all-in-one `SLT-SETUP-99` must never run; teardown is split into a D10 settings
-  restore and a post-D12 artifact teardown.
+Only `SLT2`/`slt2-*` registry fixtures may be mutated. Never overlap global/product/plugin settings, the same account/cart, or one subscription's timed action. Stripe is always executed before corresponding Paddle parity. PayPal/Mollie are not run.
 
-## Corrected execution calendar — D0 … D10 (D0 = **2026-08-02**, +1 shift per audit C19)
+## D0 — Sunday 2026-08-23: baseline and critical Stripe spine
 
-**Standing rules (unchanged from the audit, restated with the new anchor):**
-- All SLT purchases on **D0, D1, D2 execute after 12:00 site time** (C02), so anniversary renewals land in the afternoon and can never collide with the D3 09:00–11:00 sync bracket.
-- **Creations and destructive meta audits before 12:00; purchases after 12:00**, every day. Intra-day ordering in the "Task keys" column is binding, not advisory.
-- One agent-browser session per task, named `<role>-<TASK-KEY>` — **including admin sessions**. Close only the current task's named session(s); never use `close --all`, because unrelated browser work may be active.
-- Never run two tasks concurrently under the same `slt-*` login (persistent cart). Assert cart EMPTY first and last; a non-empty cart is a STOP.
-- At the start of every phase, resume already-`in-progress` cards whose authored follow-up gate is open before starting new cards from that day's row. If a follow-up has a later exact clock gate, leave it open with that timestamp and resume it in the first eligible phase. Never mark a card `done` while one of its pass criteria is still awaiting a dated observation.
-- Action Scheduler: bare drains banned every day; single-action-by-id permitted any day after a Pending-queue pre-flight; **date-meta time travel D8 only**.
-- Only `SLT-SETUP-02` (D0), `SLT-SYN-04` (D3 bracket), `SLT-EML-11`, `SLT-EML-12`, `SLT-EML-13`, `SLT-LIFE-03`, `SLT-SW-08`, `SLT-MYA-05` and `SLT-SETUP-99A` (D10) write behavioural global settings — each inside a declared, UTC-timestamped bracket posted to `slt-catalog-registry`. The sole standing exception is the mandatory, append-only Shop Access exclusion update immediately after any `SLT ` product publish: publishing tasks may add only their new parent product IDs to rule `rule_1784662676378_maa3te08s`, must preserve/re-read the rest of the rule, and `SLT-SETUP-99A` restores the frozen pre-window rule exactly.
+Exact order: `10 SETUP-01` → `11 SETUP-02` → `131 GW-00` → `12 SETUP-03` → products `5,6,7,8` → checkouts/lifecycle `1,2,3,4,14` → publish the first future gates for `9`.
 
-**Trial-gate correction (authoritative over row shorthand):** trial dates are logical due dates; the invoice, reminder, and charge actions execute at their recorded spread-adjusted gates. The 2-day trial reaches logical end on 08-06 but its `trial_end+k` charge may cross into 08-07, so D5 owns the settled read. The 4-day trial reaches logical end on 08-08 but its charge may cross into 08-09; if it remains trial after that gate, the fallback `arraysubs_process_trial_conversions` sweep runs at 02:00 **site time**. Do not require `trial_converted` when the renewal-payment path activated first; apply the path-specific contract in `SLT-EML-09`.
+- Establish fresh environment/settings/entity/action/mail/provider baselines and SLT2 registry.
+- Verify Stripe/Paddle readiness without purchase; create accounts and core simple/finite/lifetime/week-sync products.
+- Execute Stripe block/classic simple checkout, lifetime/finite controls and segment-1 sync purchase.
+- Start the first unattended Stripe renewal; do not force it.
 
-**Cross-day switch handoffs (binding):** if a later valid replan first recreates the missing D4 ladder seed and `SLT-SW-01` actually runs, close it only after its exact first post-switch Stripe renewal is reconciled from `SW01_RENEW_PRE` (normally D6 morning). Keep `SLT-SW-05` open through its exact Paddle `next_billed_at`; reconcile `SW05_PADDLE_RENEW_PRE` at the D7 late phase or at D8 morning **before `SLT-TT-00` begins**. No D8 time-travel mutation may start while that remote-settlement read is outstanding.
+## D1 — Monday 2026-08-24: products, coupons, Paddle readiness and first watch
 
-**D3 hard-window priority (binding):** the natural `SLT-LIFE-05` O2 baseline/charge window at 17:38–17:48 site, `SLT-CPN-04` at 18:00–19:00 site, and the exclusive `SLT-EML-12` bracket at 21:00–21:40 site pre-empt the untimed D3 queue. After each hard window closes, resume the first unfinished untimed card in the D3 row. This priority overrides left-to-right placement in the row and prevents the fixed coupon window from being stranded behind several hour-long cards.
+Exact order after due gates: `13` → products/settings `20,21,22,23,25,26,27,28` → checkout/email/lifecycle `15,16,17,18,19,24`.
 
-**Source-outcome overlay (authoritative over row shorthand):** the D2/D4 rows preserve the authored
-execution order, but their later event descriptions become runnable expectations only after the owning
-task publishes relationship-resolved numeric IDs. A task closed `UNVERIFIED (no source fixture)` does
-not seed future renewals, mail, retries, transitions, conversions, negatives, or teardown members.
-Missing-source coverage stays `UNVERIFIED`; never create a late substitute or move its dates. This run's
-absent branches are tasks #30/#43 (`slt-sca`), #31/#34 (both trial branches), #32 (both CPN-03
-subscriptions), #35 (`S_TZ`), #36 (MYA-05 follow-ups), #45 (`SUB_W`), #46 (both SYN-13 variations),
-tasks #64/#65/#69/#73/#75 (CHK-08, Box Daily, IMP-03, SW-09, and all SYN-11 probes), and
-task #88 (both SYN-12 gateway probes), and tasks #81/#82/#101/#102 (`S_FAIL` and recovery). Any word such as "guaranteed", "must", or "expected" in a
-row below is subordinate to this gate. The live registry, not an authored alias, defines the D10/D13
-teardown cohorts.
+- Complete simple/month/daily sync, retry/Paddle products and six-coupon catalog.
+- Publish the fresh Stripe/Paddle capability matrix and remote Paddle catalog IDs.
+- Test guest registration, recurring/one-time coupons, signup email pair, renewal-price crossover and invoice-before-charge.
 
-| Day | Date | Task keys — in execution order | Overnight events expected from that day's work | Load |
-|---|---|---|---|---|
-| **D0** | 2026-08-02 Sun | **AM:** `SLT-SETUP-01` → `SLT-SETUP-02` → `SLT-SETUP-03` → `SLT-PROD-01`, `SLT-PROD-06`, `SLT-PROD-07`, `SLT-PROD-13` → **`SLT-SYN-01A`** (week-flex audit + restore, MUST precede any flex purchase). **PM (>12:00):** `SLT-CHK-01`⊕`SLT-REN-01` (sole purchase of the control spine; completed at the recorded 18:39 site clock, so its registry/action timestamps now govern every follow-up) → `SLT-CHK-02` (same day, before any renewal) → `SLT-CHK-14` → `SLT-LIFE-04` → `SLT-SYN-05` (**hard-pinned: 08-02 is the last day week-flex is in segment 1**). Every task closes only its own named sessions. | Nothing renews (earliest due 08-03 PM). Both legs must be queued for every new sub: invoice `due+k−6h`, charge `due+k`. `SLT Lifetime One Time` must queue **nothing**. | 13 |
-| **D1** | 2026-08-03 Mon | **AM:** `SLT-SETUP-04` (coupon expiry **2026-08-15 00:00 site**, the first date that covers all of D12), `SLT-PROD-05`, `SLT-PROD-12`, `SLT-PROD-14`, `SLT-PROD-16` → **`SLT-SYN-01B`** (month + daily flex audit, before their purchases) → `SLT-SYN-03` (SLT Sync Global Daily only; Excl Probe dropped per C16) → `SLT-SETUP-05` (deps now include PROD-14, C03; runs 2 days ahead of the sync bracket). **PM:** `SLT-REN-03` (12:30–13:00) → `SLT-SYN-08` (**moved from d0**) → `SLT-CHK-03` → `SLT-LIFE-05` → `SLT-EML-06` → `SLT-CPN-01`, `SLT-CPN-02` (both 18:00–19:00). **19:10 phase:** resume `SLT-REN-01`, record `REN1_PRE`, and keep that phase alive through its exact 21:37:52 charge gate; do not defer baseline capture to 21:42. | SLT Daily Core renewal #1 fires 08-03 at 21:37 site; CHK-02 clone renewal #1 fires 08-04 at 01:04 site and is captured by the D2 morning watch. Flex subs bought today schedule to **midnight boundaries**, not anniversaries. | 15 |
-| **D2** | 2026-08-04 Tue | **AM:** `SLT-PROD-02`, `SLT-PROD-03`, `SLT-PROD-15` → **`SLT-SYN-02`** (variation audit, strictly before the variation purchases) → **`SLT-MYA-05` setup leg** (member rules + features meta — **must finish before 12:00; the card stays in progress for D5/D7 follow-ups**). **PM:** `SLT-REN-02` (09:00–10:00 read + evening read) → **`SLT-DUN-01` (13:00–14:00, moved from d0)** → `SLT-CHK-04` (sole Paddle purchase) → `SLT-REN-04` (observation rider) → `SLT-CHK-05` setup → arm `SLT-REN-05` (both stay in progress for the D3 renewal) → `SLT-CHK-15` setup → arm `SLT-EML-09` (both stay in progress through their dated conversion checks) → `SLT-SYN-06` → `SLT-SYN-13` (decoy bracket ≤90 min, closed same day) → `SLT-CPN-03` (18:00–19:00) → `SLT-IMP-01` (23:40–23:55). | Daily-cohort renewals 08-04 PM. `SLT Fixed Three Cycles` renewal #1 ($7.00) 08-04 PM. `SLT-REN-03`'s `_auto_renew=off` sub creates a **pending** renewal order + the only `renewal_invoice` mail of the day. | 14 |
-| **D3** | 2026-08-05 Wed | **06:10–08:45:** resume `SLT-LIFE-04` for its one targeted expiring-soon probe; close its task-keyed session before the sync bracket (otherwise defer it until after 11:00). **09:00–11:00 `SLT-SYN-04` EXCLUSIVE BRACKET** — sole writer of `sync_to_billing_cycle`; no cart, checkout, product save or AS action by anyone. If the primary clock is missed and no later D3 mutation has begun, a declared same-day `RECOVERY` bracket may run with the identical preflight/isolation/restore proof, a two-hour cap, and closure before the next card. **After the proven restore:** `SLT-PROD-04` → `SLT-PROD-09` (now that both grouped subscription children exist) → `SLT-PROD-10` → `SLT-PROD-11`. **PM (>12:00):** `SLT-ADM-07` step 0 (slt-core buys **SLT Signup Fee Daily** — was unowned) → `SLT-CHK-09`; resume `SLT-LIFE-05` for `O2_PRE` and its exact natural charge at 17:38–17:48 site; run **`SLT-CPN-04` in its hard 18:00–19:00 window**; then resume the untimed queue: `SLT-SYN-14` → `SLT-ADM-05` → `SLT-EML-11` (on-hold-email OFF bracket) → `SLT-EML-01`, `SLT-EML-03`, `SLT-EML-15`, `SLT-ADM-06` (reads) → `SLT-EML-07` (late PM). **`SLT-EML-12` 21:00–21:40 EXCLUSIVE** pre-empts the untimed queue and that queue resumes only after its exact restore. `SLT-DUN-01` may be resumed only if its D2 fixture and exact `D+k` handoff exist; otherwise close its authored no-fixture branch without fabricating an attempt. | `SLT Retry Daily` first renewal **FAILS** only if its valid D2 fixture exists; otherwise the D3 ladder is `UNVERIFIED (no source fixture)`. `SLT-CHK-05`'s renewal returns `requires_action`. Paddle Daily was purchased late on D3, so renewal #1 is D4, not D3. `SLT Renewal Price Step` renewal #2 → **$5→$20 crossover**. Week-flex + Sync Global reminders fire 08-05 00:00–06:00. | 16 |
-| **D4** | 2026-08-06 Thu | **08:00–08:20 `SLT-EML-13` EXCLUSIVE BRACKET** (admin emails OFF) — **no checkout before 08:30**. **AM after restore:** `SLT-PROD-08` → `SLT-EML-02` preparation/`_auto_renew` arm only (record its exact invoice gate; never wait across DUN-03) → `SLT-MYA-01`. **PM (>12:00):** `SLT-ADM-03` first → **`SLT-DUN-03` hard gate** (prepare 20+ min before its exact `D+24h` window, expected ~13:00–15:00; its natural wait takes priority) → resume `SLT-EML-02` in the first phase after its invoice gate and pay before its charge gate → `SLT-SW-00` (new: slt-switch buys **Plan Basic + Plan Pro** — was unowned) → `SLT-CHK-08` → `SLT-CHK-13` → `SLT-SYN-07` → `SLT-SYN-11` → `SLT-SW-09` → `SLT-ADM-07` (invoice + pay-link) → `SLT-IMP-03` (13:00+, one 10-min window). Resume `SLT-ADM-05` only after its exact registered D4 charge gate. | `SLT Retry Daily` retry/hold events are expected only with a numeric `S_FAIL` source; this run has none. `SLT Free Signup Daily` conversion is expected only with a numeric trial source from tasks #31/#34. Paddle Daily renewal #1 is Paddle-driven; the local leg is a no-op or is superseded/canceled by the earlier webhook, with no local charge/retry. `SLT Fixed Three Cycles` renewal #2 + **EXPIRY**. `SLT-EML-07`'s scheduled cancel fires. `SLT-ADM-05`'s admin-created sub renews to a **pending** order. Flex Daily Two Seg renewal #1 + Next Cycle reminder at 00:00–06:00; all other missing-source branches are omitted by the source-outcome overlay. | 14 |
-| **D5** | 2026-08-07 Fri | **Conditional first step only:** run `SLT-MYA-05` follow-up B **only if** the live registry disproves task 36's appended 2026-08-05 `UNVERIFIED` closeout note. Otherwise skip that authored branch and start with the guaranteed D5 work. **AM:** `SLT-ADM-07` 24-hour Paddle double-charge read, then `SLT-MYA-02` (08:00–11:00, before any slt-core anniversary), `SLT-ADM-09`, `SLT-IMP-02`; `SLT-DUN-02` / `SLT-EML-04` are conditional-only and run only if a live `S_FAIL` fixture disproves tasks 81/82. **PM (>12:00):** resume `SLT-EML-02` immediately after its recorded next-cycle invoice gate and prove suppression before closing it; then guaranteed runnable work `SLT-CHK-06` (no order) → `SLT-CHK-10` → `SLT-CHK-12` → `SLT-SYN-12` → **`SLT-LIFE-03`** (skip-settings bracket ≤30 min, restored in-task; dates corrected to D_now=08-08 → skip1 08-09). Treat `SLT-CHK-11`, `SLT-SW-01`, and `SLT-SW-06` as source-blocked from the current 2026-08-06 evidence state unless a later valid replan first recreates their missing D4 fixtures. | Retry / variable-flex authored branches are conditional-only because tasks 46 and 82 closed `UNVERIFIED` on 2026-08-05 unless the live registry disproves them. Guaranteed D5 events are limited to the live registered day/1 cohort. The `SLT-CPN-03` $10.00 drop-off is checked only when task #32 published both numeric subscription IDs; this run did not. | 13 |
-| **D6** | 2026-08-08 Sat | **AM (<12:00):** `SLT-ADM-04` (status ladder on SUB-B — body requires before noon), `SLT-EML-05`, `SLT-MYA-03` (08:00–11:00). **PM (>12:00):** `SLT-SYN-10` step 0 (slt-flex3 buys **Flex Month segment-3** — was unowned; must be 08-08) → `SLT-CHK-07` → `SLT-SW-03` → `SLT-SW-05` → `SLT-SW-07` → `SLT-SW-10` → `SLT-LIFE-02` (early renew, target **re-pointed to SLT-CHK-02's subscription**) → `SLT-IMP-04`. Resume `SLT-DUN-02` / `SLT-EML-04` at retry #3 only when a numeric `S_FAIL` source and `DUN_RETRY3_PRE` handoff exist; otherwise omit the branch as `UNVERIFIED`. | **Live unattended flex:** week seg-1 charges $14.00 at 08-08 00:00 site (+k); week seg-2 does so only with task #45's numeric `SUB_W` source ID. Sync Global Daily renewal #1 and `SLT Flex Qty Week` $29.97 at the same boundary. Retry #3 / 4th charge reaches the cap only with a numeric `S_FAIL` source. `SLT Trial Four Day` converts only with a numeric trial source from tasks #31/#34. Box Daily renewal #1 is checked only with task #65's numeric source ID. | 12 |
-| **D7** | 2026-08-09 Sun | **AM:** `SLT-SYN-09` (reads the 08-08 and 08-09 midnight renewals), `SLT-ADM-01`, `SLT-MYA-04`. **PM:** `SLT-SW-04` (uses **slt-switch4**, not slt-switch2) and its proration order **paid** → **then** `SLT-SW-08` (switch-fee bracket, opened only after SW-04 closes). Treat `SLT-DUN-04`, the `SLT-EML-04` cancellation delta, `SLT-MYA-05` follow-up C, and `SLT-DUN-05` as conditional-only branches that run only if the live registry disproves tasks 36/101/102's appended 2026-08-05 `UNVERIFIED` notes. | Guaranteed D7 events remain Flex Daily Two Seg #2 and Next Cycle #1 at 08-09 00:00–06:00 plus `SLT-LIFE-03`'s shifted $20.00 cycle at 08-09 PM. Do not assume the authored `SLT Retry Daily` cancellation ladder exists unless the live registry disproves task 101. | 8 |
-| **D8** | 2026-08-10 Mon | **SOLE AUTHORIZED TIME-TRAVEL DAY — strict order, one shared pre-flight:** (0) **`SLT-TT-00`**: Pending-queue screenshot + the non-SLT `_next_payment_date` snapshot, published to the registry and quoted by every other D8 task; then it executes the live month segment-2 (`SUB_M`) and week segment-3 (`SUB_W3`) invoice/charge pairs, one exact action ID at a time. (1) `SLT-SYN-10` executes its separately owned month segment-3 overflow pair. (2) `SLT-SW-02` (Leg A downgrade; **Leg B owns** the hand-set `_end_date` expiry + auto-downgrade). (3) `SLT-EML-08` (observation-only on SW-02 Leg B; reactivates S_EML). (4) `SLT-EML-10` (expiring-soon + card-expiring probes; cancels S_EML at teardown). (5) `SLT-LIFE-01` (late-renewal phases A/B — **last**, it deliberately leaves S5 legless). Then append any same-day shared diff or watch evidence to the standing sweep artifacts only; **do not reopen closed card 109 / `SLT-EML-14`**. Close with the shared post-mutation non-SLT diff. Variable-flex is natural-watch evidence only if a live registry fixture exists; do not force or assume `SLT-SYN-13`. | Box Daily #2 renews only with task #65's numeric source ID; the live registered day/1 cohort renews 08-10 PM. Variable-flex Full #2 / Next Cycle #1 and any `SUB_FAIL_RECOVERY` failure are conditional-only because tasks 46 and 102 closed `UNVERIFIED` on 2026-08-05 unless the live registry disproves them. **No non-SLT `_next_payment_date` may move.** | 6 |
-| **D9** | 2026-08-11 Tue | **AM:** conditional-only `SLT-DUN-05` recovery leg runs **only if** the live registry disproves task 102's appended 2026-08-05 `UNVERIFIED` closeout note. Then `SLT-ADM-08` (refund + cancels S_FEE a day early — declare in the registry), `SLT-ADM-02` (read-only, wants a sub with several renewals), `SLT-IMP-05` (end-of-window log sweep + reconciliation — must run **before** SETUP-99A). **Do not reopen closed card 115 / `SLT-ADM-10`; it was already closed `UNVERIFIED` on 2026-08-05.** | Final natural renewals of the live registered day/1 cohort occur 08-11 PM. `SLT-SYN-11`'s day/5 probe is checked only with task #75's numeric source ID. `SLT-SW-08`'s Enterprise sub charges **$30.00**. Do not assume `SUB_FAIL_RECOVERY` exists unless the live registry disproves task 102. | 4 |
-| **D10** | 2026-08-12 Wed | **AM, after the watch read:** finish `SLT-SYN-09`'s D10 `SUB_2SEG` follow-up and move that card to Done. **Then `SLT-SETUP-99A` is the only mutating task** — run only after `SLT-SYN-09` and `SLT-IMP-05` are closed; `SLT-DUN-05` is not a live prerequisite unless the registry disproves task 102. Part 1 settings restore (five booleans, empty `jq` diff) **plus cancellation of the completed-evidence cohort only**. **No deletions.** Publish both cohort lists (cancelled-on-D10 vs tail) to the registry so the watcher can assert on D11/D12. Evidence consolidation + registry export. | Flex Daily Two Seg #3 renews at 08-12 00:00–06:00. `SLT-SYN-12`'s Stripe and Paddle branches are checked only if task #88 published relationship-resolved numeric fixtures; this run has none. Box Daily #3 is checked only with task #65's numeric source ID. The **tail cohort stays alive**; any `SLT-SYN-13` tail entry is conditional-only because task 46 closed `UNVERIFIED`. 99A's cancellation mails are an expected teardown side effect — count the ids. | 3 |
+## D2 — Tuesday 2026-08-25: Paddle, trials, SCA, retry and sync arithmetic
 
-**After D10 — not part of the execution calendar but part of the plan:**
-`SLT-SETUP-99B` runs **2026-08-15 (Sat)**, strictly after the D12 watch report, remaining final-window sweep evidence, and a signed `watch-reports/D13-2026-08-15.md` that reconciles every applicable final gate carried forward by D12. At minimum, relationship-resolve subscriptions `12039`, `12172`, and `12749` against action pairs `21879/21880`, `21881/21882`, and `21885/21886` or their documented respread replacements. Teardown may start only after exact order/state/date/action/Mailpit proof and at least five minutes after the latest applicable charge (D12's latest recorded lower bound is `05:24:30` site); an unresolved gate means retry without cancellation. Cancel only numeric subscriptions in 99A's published live tail registry: this includes `SUB_W1`, `SUB_W3`, Sync Global Daily, **`SUB_2SEG`**, the two `SLT-SYN-12` probes only when task #88 published numeric fixtures, `SLT-SYN-14`'s qty sub, both primary lifetime controls, and both flex-month subs `SUB_M`/`SUB_S3` when present. Include `SUB_W`, Box Daily, the three `SLT-SYN-11` probes, or either `SLT-SYN-13` variation **only if** the registry proves a numeric fixture exists despite source tasks #45/#65/#75/#46 closing `UNVERIFIED`. Then run Parts 2–4 deletion of every allowlisted SLT product, coupon, page, user, order and subscription. **Do not reopen closed card 109 / `SLT-EML-14` as part of that handoff.** Running it before the final D13 gate clears destroys the last renewals of the window.
+Exact order after due gates: products `37,38,40,44` → checkouts `29,30,31,32,33` → dependent email/lifecycle `34,35,36,45,46` → timed renewals `41,42,43`.
 
-**Load balance:** 13, 15, 14, 16, 14, 13, 12, 8, 6, 4, 3. Median = 13, peak = 16, **peak/median = 1.23×** (band is 1.6×). D0 drops from the draft's 25 to 13 by moving `SLT-DUN-01` → D2, `SLT-SYN-08` → D1, `SLT-EML-06` → D1, `SLT-SETUP-04`/`SLT-PROD-05`/`SLT-PROD-16` → D1, and by merging the four duplicate-purchase pairs. D9/D10 are deliberately light — they are consolidation and teardown days that must not carry new purchases.
+- Complete real Paddle hosted checkout and first remote-renewal handoff.
+- Execute Stripe signup/off-session SCA, $0 trials/card collection and genuine decline/retry.
+- Test N-cycle coupons, UTC boundary rendering, member access, week/month proration and variation-level sync.
+
+## D3 — Wednesday 2026-08-26: exclusive sync bracket, catalog completion and email/admin paths
+
+Observe due gates first. Run `61` alone in its 09:00-11:00 settings bracket and restore it. Then: products `58,39,59,60` → retention foundation `121` → admin/checkout/email `47,48,49,50,51,52,53,54,55,56,57`.
+
+- Finish signup-fee, grouped, free Subscription Box and switch-ladder fixtures.
+- Verify cancellation reasons/Other/required validation.
+- Test admin-created invoice scheduling, HPOS renewal links, Stripe/Paddle pay links, quantity, coupon rejection and the complete reminder/status/customization/Mailpit email set.
+
+## D4 — Thursday 2026-08-27: box/variable products, retention and concurrency
+
+Exact order after due gates: `71,65,72` → `63,64,66,68,69,70,74,75` → retention `73,122,123`.
+
+- Buy the free Subscription Box and seed plan-switch accounts.
+- Test admin rescheduling, second subscription, first grace transition, admin-email toggle, concurrent renewals, portal details and sync segment/exclusivity.
+- Start full retention discount-cycle and pause/manual/auto-resume tests.
+
+## D5 — Friday 2026-08-28: carts, retries, payment method, switching and Stripe matrix
+
+Exact order after due gates: cart/product `77,78,79,80` → dunning/email/audit `67,76,81,82,83` → portal/lifecycle `84,85` → switches/sync `86,87,88` → retention `124,125` → Stripe matrix `128`.
+
+- Test two-subscription refusal, regular guest control, variable/grouped flows and invoice rendering.
+- Complete retries 2/3/cap, failure emails, dual-gateway replay, skip/undo notifications and Stripe method update.
+- Test upgrade and gateway sync gating; run downgrade/contact retention conditions.
+- Fill every Stripe simple/variable/box/grouped/mixed/SCA/cancel matrix cell.
+
+## D6 — Saturday 2026-08-29: Paddle parity, mixed cart and full switch/cancel edges
+
+Exact order after due gates: `62,89,90,91,92,93,94,95,96,97,98,99` → Paddle matrix `129`.
+
+- Verify quantity-proration rounding, status ladder, mixed-cart renewal isolation and email rendering.
+- Test early renewal, Paddle method update, crossgrade, Paddle remote-price upgrade, variable switching and pending-cancel/reactivation.
+- Run calendar-overflow sync edge and all supported/unsupported Paddle product/cart/lifecycle rows.
+
+## D7 — Sunday 2026-08-30: recovery, later renewals and cross-gateway integrity
+
+Exact order after due gates: `100,101,102,103,104,105,106` → `130`.
+
+- Audit list filters/delete guards, terminal grace cancellation, mid-grace recovery and unpaid-invoice portal payment.
+- Compare admin/customer upgrades, switch fee, and second/third synced renewals on the grid.
+- Reconcile Stripe/Paddle identity, idempotency, migration, updates, refunds/cancels and allowlists.
+
+## D8 — Monday 2026-08-31: sole time-travel bracket and retention eligibility
+
+Exact order after read-only natural-gate capture: exclusive targeted-action owner `112` → task `99` D8 overflow/renewal leg → `107,108,109,110,111` → retention matrix `126`.
+
+- Run the only controlled date/action bracket first, then complete task 99's separately allowlisted month-overflow target.
+- Verify expiry/reactivation/auto-downgrade, natural expiring-soon and Stripe card-expiring, plus negative email sweep.
+- Test late-renew catch-up and customer downgrade.
+- Only tasks 112 and task 99's declared D8 leg may perform targeted date/action mutation, sequentially, with non-SLT2 before/after equality.
+- Complete every retention reason/status/product/history/dismiss/decline/accept row.
+
+## D9 — Tuesday 2026-09-01: admin, refunds, permissions, analytics and log audit
+
+Exact order after due gates: `113,114,115,116,127`.
+
+- Reconcile subscription detail fields, Stripe/Paddle supported refunds, role/capability boundaries and end-window actions/orders/logs.
+- Reconcile eight retention KPIs, charts, activity, filters, date boundaries and exports to exact source events.
+
+## D10 — Wednesday 2026-09-02: core-only ownership and independent final matrix
+
+Exclusive order: `117 OWN-01` → restore Pro → `132 GW-04` → `133 MATRIX-99`.
+
+- Repeat real Stripe/Paddle checkout/renewal/retry/webhook/method/refund operations with Pro inactive.
+- Restore plugin state and prove no duplicate hooks/routes/actions.
+- Independently reconcile browser, HPOS, meta, scheduler, provider and Mailpit layers.
+- Reject any missing product/cart/lifecycle/discount/switch/retention/gateway cell.
+
+## D11 — Thursday 2026-09-03: exact restore and tail handoff
+
+Run `118 SETUP-99A` only after all D0-D10 required evidence is captured.
+
+- Restore D0 settings, access rules and plugin state exactly.
+- Cancel only the evidence-complete cohort; delete nothing.
+- Publish disjoint exhaustive cancel/keep-alive lists and D12 exact gates.
+
+## D12 — Friday 2026-09-04: read-only watch
+
+Run `119 WATCH-12`. No checkout, save, status change, action execution, webhook replay, provider mutation or cleanup. Sign every registered expected/negative tail row across Stripe/Paddle/UI/HPOS/actions/mail/logs.
+
+## D13 — Saturday 2026-09-05: allowlisted teardown
+
+Run `120 SETUP-99B` only when all other cards are done and the D12 report authorizes cleanup. Cancel/delete exact registry IDs in dependency order, prove ownership closure/non-SLT2 equality/zero orphans, then remove watcher cron.
+
+## Completion rule
+
+A day tracker may close only when every due execution leg passed or has a linked blocked lifecycle/issue card with an exact retry plan. The overall cycle cannot pass until all 133 cards are done. No failed or missing cell is converted into a waiver.

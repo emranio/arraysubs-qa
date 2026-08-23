@@ -1,68 +1,38 @@
-{"timestamp":"2026-08-15T09:51:11.591654873+02:00","action":"create","task_id":1,"detail":"stage-5: Stripe webhooks add duplicate payment-confirmed subscription notes"}
-{"timestamp":"2026-08-15T09:55:46.982217054+02:00","action":"edit","task_id":1,"detail":"stage-5: Stripe webhooks add duplicate payment-confirmed subscription notes"}
-{"timestamp":"2026-08-15T09:59:44.218904884+02:00","action":"create","task_id":2,"detail":"stage-6: Abandoned Paddle checkout shows phantom connected billing authorization"}
-{"timestamp":"2026-08-15T10:01:25.030670239+02:00","action":"edit","task_id":2,"detail":"stage-6: Abandoned Paddle checkout shows phantom connected billing authorization"}
-{"timestamp":"2026-08-15T10:01:40.921277743+02:00","action":"create","task_id":3,"detail":"stage-5: Initial Stripe SCA checkout sends renewal-verification email"}
-{"timestamp":"2026-08-15T10:08:38.512722196+02:00","action":"edit","task_id":1,"detail":"stage-5: Stripe webhooks add duplicate payment-confirmed subscription notes"}
-{"timestamp":"2026-08-15T10:08:38.782453597+02:00","action":"edit","task_id":2,"detail":"stage-6: Abandoned Paddle checkout shows phantom connected billing authorization"}
-{"timestamp":"2026-08-15T10:08:39.055207636+02:00","action":"edit","task_id":3,"detail":"stage-5: Initial Stripe SCA checkout sends renewal-verification email"}
-{"timestamp":"2026-08-15T10:26:02.809809208+02:00","action":"edit","task_id":1,"detail":"stage-5: Stripe webhooks add duplicate payment-confirmed subscription notes"}
-{"timestamp":"2026-08-15T10:26:02.810568179+02:00","action":"edit","task_id":2,"detail":"stage-6: Abandoned Paddle checkout shows phantom connected billing authorization"}
-{"timestamp":"2026-08-15T10:26:02.811107983+02:00","action":"edit","task_id":3,"detail":"stage-5: Initial Stripe SCA checkout sends renewal-verification email"}
-{"timestamp":"2026-08-15T10:45:05.582646472+02:00","action":"edit","task_id":1,"detail":"stage-5: Stripe webhooks add duplicate payment-confirmed subscription notes"}
-{"timestamp":"2026-08-15T10:45:05.582938884+02:00","action":"claim","task_id":1,"detail":"bolt-leaf"}
-{"timestamp":"2026-08-15T10:45:05.863979271+02:00","action":"move","task_id":1,"detail":"open -\u003e in-progress"}
-{"timestamp":"2026-08-15T10:56:09.522013274+02:00","action":"edit","task_id":1,"detail":"stage-5: Stripe webhooks add duplicate payment-confirmed subscription notes"}
-{"timestamp":"2026-08-15T10:57:49.638620383+02:00","action":"edit","task_id":1,"detail":"stage-5: Stripe webhooks add duplicate payment-confirmed subscription notes"}
-{"timestamp":"2026-08-15T11:15:46.486415738+02:00","action":"edit","task_id":1,"detail":"stage-5: Stripe webhooks add duplicate payment-confirmed subscription notes"}
-{"timestamp":"2026-08-15T11:15:46.486679889+02:00","action":"release","task_id":1,"detail":"bolt-leaf"}
-{"timestamp":"2026-08-15T11:16:01.692921631+02:00","action":"edit","task_id":1,"detail":"stage-5: Stripe webhooks add duplicate payment-confirmed subscription notes"}
-{"timestamp":"2026-08-15T11:16:01.97012107+02:00","action":"move","task_id":1,"detail":"in-progress -\u003e closed"}
-{"timestamp":"2026-08-15T11:16:17.663989588+02:00","action":"move","task_id":2,"detail":"open -\u003e in-progress"}
-{"timestamp":"2026-08-15T11:20:27.999989732+02:00","action":"edit","task_id":2,"detail":"stage-6: Abandoned Paddle checkout shows phantom connected billing authorization"}
-{"timestamp":"2026-08-15T11:40:01.646223486+02:00","action":"edit","task_id":2,"detail":"stage-6: Abandoned Paddle checkout shows phantom connected billing authorization"}
-{"timestamp":"2026-08-15T11:40:01.64675248+02:00","action":"release","task_id":2,"detail":"bolt-leaf"}
-{"timestamp":"2026-08-15T11:40:21.313723311+02:00","action":"edit","task_id":2,"detail":"stage-6: Abandoned Paddle checkout shows phantom connected billing authorization"}
-{"timestamp":"2026-08-15T11:40:21.313979087+02:00","action":"claim","task_id":2,"detail":"bolt-leaf"}
-{"timestamp":"2026-08-15T11:40:21.436185176+02:00","action":"move","task_id":2,"detail":"in-progress -\u003e closed"}
-{"timestamp":"2026-08-15T11:40:21.504287429+02:00","action":"edit","task_id":2,"detail":"stage-6: Abandoned Paddle checkout shows phantom connected billing authorization"}
-{"timestamp":"2026-08-15T11:40:21.504402633+02:00","action":"release","task_id":2,"detail":"bolt-leaf"}
-{"timestamp":"2026-08-15T11:40:33.354568051+02:00","action":"move","task_id":3,"detail":"open -\u003e in-progress"}
-{"timestamp":"2026-08-15T11:42:05.065782368+02:00","action":"edit","task_id":3,"detail":"stage-5: Initial Stripe SCA checkout sends renewal-verification email"}
-{"timestamp":"2026-08-15T12:19:18.353980719+02:00","action":"edit","task_id":3,"detail":"stage-5: Initial Stripe SCA checkout sends renewal-verification email"}
-{"timestamp":"2026-08-15T12:19:18.37326375+02:00","action":"release","task_id":3,"detail":"bolt-leaf"}
-{"timestamp":"2026-08-15T12:19:18.483032773+02:00","action":"move","task_id":3,"detail":"in-progress -\u003e closed"}
-{"timestamp":"2026-08-15T12:19:18.583829143+02:00","action":"create","task_id":4,"detail":"stage-5: Stripe authentication_required renewal is overwritten as payment failure"}
-{"timestamp":"2026-08-15T12:19:55.868759156+02:00","action":"move","task_id":4,"detail":"open -\u003e in-progress"}
-{"timestamp":"2026-08-15T12:29:37.28881366+02:00","action":"edit","task_id":4,"detail":"stage-5: Stripe authentication_required renewal is overwritten as payment failure"}
-{"timestamp":"2026-08-15T12:50:41.520330782+02:00","action":"edit","task_id":4,"detail":"stage-5: Stripe authentication_required renewal is overwritten as payment failure"}
-{"timestamp":"2026-08-15T12:57:21.509529446+02:00","action":"edit","task_id":4,"detail":"stage-5: Stripe authentication_required renewal is overwritten as payment failure"}
-{"timestamp":"2026-08-15T12:58:30.464105701+02:00","action":"edit","task_id":4,"detail":"stage-5: Stripe authentication_required renewal is overwritten as payment failure"}
-{"timestamp":"2026-08-15T13:06:05.507838343+02:00","action":"edit","task_id":4,"detail":"stage-5: Stripe authentication_required renewal is overwritten as payment failure"}
-{"timestamp":"2026-08-15T13:50:07.733880116+02:00","action":"create","task_id":5,"detail":"stage-5: genuine Stripe decline adds duplicate failure notes"}
-{"timestamp":"2026-08-15T13:50:11.723226479+02:00","action":"move","task_id":5,"detail":"open -\u003e in-progress"}
-{"timestamp":"2026-08-15T13:54:58.307623863+02:00","action":"create","task_id":6,"detail":"stage-5: immediate cancellation leaves retired renewal order payable"}
-{"timestamp":"2026-08-15T13:55:56.980591233+02:00","action":"move","task_id":6,"detail":"open -\u003e in-progress"}
-{"timestamp":"2026-08-15T14:08:45.142235709+02:00","action":"create","task_id":7,"detail":"stage-5: Stripe renewal reconciliation can replace an unsettled PaymentIntent"}
-{"timestamp":"2026-08-15T14:09:47.341850349+02:00","action":"move","task_id":7,"detail":"open -\u003e in-progress"}
-{"timestamp":"2026-08-15T14:19:29.747115552+02:00","action":"move","task_id":6,"detail":"in-progress -\u003e closed"}
-{"timestamp":"2026-08-15T18:09:40.531568627+02:00","action":"create","task_id":8,"detail":"stage-5: overdue subscription cancellation returns update_failed"}
-{"timestamp":"2026-08-15T18:09:46.252580423+02:00","action":"move","task_id":8,"detail":"open -\u003e in-progress"}
-{"timestamp":"2026-08-15T18:10:12.377590595+02:00","action":"edit","task_id":8,"detail":"stage-5: overdue subscription cancellation returns update_failed"}
-{"timestamp":"2026-08-15T18:10:12.720399188+02:00","action":"move","task_id":8,"detail":"in-progress -\u003e closed"}
-{"timestamp":"2026-08-15T18:10:44.530200271+02:00","action":"edit","task_id":4,"detail":"stage-5: Stripe authentication_required renewal is overwritten as payment failure"}
-{"timestamp":"2026-08-15T18:10:44.934012813+02:00","action":"move","task_id":4,"detail":"in-progress -\u003e closed"}
-{"timestamp":"2026-08-15T18:10:45.262315437+02:00","action":"edit","task_id":5,"detail":"stage-5: genuine Stripe decline adds duplicate failure notes"}
-{"timestamp":"2026-08-15T18:10:45.647897773+02:00","action":"move","task_id":5,"detail":"in-progress -\u003e closed"}
-{"timestamp":"2026-08-15T18:10:46.057132794+02:00","action":"edit","task_id":7,"detail":"stage-5: Stripe renewal reconciliation can replace an unsettled PaymentIntent"}
-{"timestamp":"2026-08-15T18:10:46.39650154+02:00","action":"move","task_id":7,"detail":"in-progress -\u003e closed"}
-{"timestamp":"2026-08-15T23:36:27.94552333+02:00","action":"create","task_id":9,"detail":"Requested mirror-arraysubs QA hostname does not resolve"}
-{"timestamp":"2026-08-15T23:37:50.292051476+02:00","action":"edit","task_id":9,"detail":"Requested mirror-arraysubs QA hostname does not resolve"}
-{"timestamp":"2026-08-16T08:11:20.040140304+02:00","action":"delete","task_id":9,"detail":"Requested mirror-arraysubs QA hostname does not resolve"}
-{"timestamp":"2026-08-16T13:01:31.932069+06:00","action":"create","task_id":10,"detail":"stage-7: Secondary Pause and Resume QA issue triage"}
-{"timestamp":"2026-08-16T13:11:50.207077+06:00","action":"edit","task_id":10,"detail":"stage-7: Secondary Pause and Resume QA issue triage"}
-{"timestamp":"2026-08-16T13:11:50.218052+06:00","action":"move","task_id":10,"detail":"in-progress -\u003e closed"}
-{"timestamp":"2026-08-16T13:58:30.730657+06:00","action":"create","task_id":11,"detail":"Paused customer action incorrectly reused On Hold and settings were split across tabs"}
-{"timestamp":"2026-08-16T13:58:34.430241+06:00","action":"move","task_id":11,"detail":"open -\u003e in-progress"}
-{"timestamp":"2026-08-16T15:00:32.404258+06:00","action":"edit","task_id":11,"detail":"Paused customer action incorrectly reused On Hold and settings were split across tabs"}
-{"timestamp":"2026-08-16T15:00:39.168633+06:00","action":"move","task_id":11,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-08-22T21:27:57.811830165+02:00","action":"create","task_id":1,"detail":"SLT-GW-00 Stripe secondary webhook missing required events"}
+{"timestamp":"2026-08-23T02:33:00.724203133+02:00","action":"edit","task_id":1,"detail":"SLT-GW-00 Stripe secondary webhook missing required events"}
+{"timestamp":"2026-08-23T02:33:00.771539265+02:00","action":"claim","task_id":1,"detail":"bloom-spur"}
+{"timestamp":"2026-08-23T02:33:02.604505925+02:00","action":"edit","task_id":1,"detail":"SLT-GW-00 Stripe secondary webhook missing required events"}
+{"timestamp":"2026-08-23T02:33:03.317957019+02:00","action":"edit","task_id":1,"detail":"SLT-GW-00 Stripe secondary webhook missing required events"}
+{"timestamp":"2026-08-23T02:33:03.318107238+02:00","action":"release","task_id":1,"detail":"bloom-spur"}
+{"timestamp":"2026-08-23T02:35:07.339141103+02:00","action":"create","task_id":2,"detail":"D00 account and catalog fixtures mutated before owning phase and omitted from registry"}
+{"timestamp":"2026-08-23T02:38:48.179036174+02:00","action":"edit","task_id":2,"detail":"D00 account and catalog fixtures mutated before owning phase and omitted from registry"}
+{"timestamp":"2026-08-23T02:38:48.934582795+02:00","action":"edit","task_id":2,"detail":"D00 account and catalog fixtures mutated before owning phase and omitted from registry"}
+{"timestamp":"2026-08-23T02:38:48.93479477+02:00","action":"release","task_id":2,"detail":"bloom-spur"}
+{"timestamp":"2026-08-23T02:44:59.564943982+02:00","action":"edit","task_id":1,"detail":"SLT-GW-00 Stripe secondary webhook missing required events"}
+{"timestamp":"2026-08-23T02:44:59.565415327+02:00","action":"claim","task_id":1,"detail":"bloom-spur"}
+{"timestamp":"2026-08-23T02:44:59.824880695+02:00","action":"edit","task_id":1,"detail":"SLT-GW-00 Stripe secondary webhook missing required events"}
+{"timestamp":"2026-08-23T02:44:59.825133253+02:00","action":"release","task_id":1,"detail":"bloom-spur"}
+{"timestamp":"2026-08-23T03:03:16.331608319+02:00","action":"edit","task_id":2,"detail":"D00 account and catalog fixtures mutated before owning phase and omitted from registry"}
+{"timestamp":"2026-08-23T03:03:16.331787933+02:00","action":"claim","task_id":2,"detail":"bloom-spur"}
+{"timestamp":"2026-08-23T03:03:16.697704746+02:00","action":"edit","task_id":2,"detail":"D00 account and catalog fixtures mutated before owning phase and omitted from registry"}
+{"timestamp":"2026-08-23T03:03:17.403099241+02:00","action":"edit","task_id":2,"detail":"D00 account and catalog fixtures mutated before owning phase and omitted from registry"}
+{"timestamp":"2026-08-23T03:03:17.403424816+02:00","action":"release","task_id":2,"detail":"bloom-spur"}
+{"timestamp":"2026-08-23T06:46:45.572277941+02:00","action":"edit","task_id":1,"detail":"SLT-GW-00 Stripe secondary webhook missing required events"}
+{"timestamp":"2026-08-23T06:46:45.575134291+02:00","action":"claim","task_id":1,"detail":"foam-hill"}
+{"timestamp":"2026-08-23T06:46:45.648021218+02:00","action":"edit","task_id":1,"detail":"SLT-GW-00 Stripe secondary webhook missing required events"}
+{"timestamp":"2026-08-23T06:46:45.722867833+02:00","action":"edit","task_id":1,"detail":"SLT-GW-00 Stripe secondary webhook missing required events"}
+{"timestamp":"2026-08-23T06:46:45.72300036+02:00","action":"release","task_id":1,"detail":"foam-hill"}
+{"timestamp":"2026-08-23T08:52:32.043170313+02:00","action":"move","task_id":1,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-08-23T08:52:32.101593617+02:00","action":"edit","task_id":1,"detail":"SLT-GW-00 Stripe secondary webhook missing required events"}
+{"timestamp":"2026-08-23T08:52:32.174470504+02:00","action":"move","task_id":1,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-08-23T08:58:04.081264767+02:00","action":"create","task_id":3,"detail":"Stripe upgrade does not reconcile pre-existing secondary webhook event schema"}
+{"timestamp":"2026-08-23T09:07:42.641732148+02:00","action":"move","task_id":3,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-08-23T09:33:23.049706375+02:00","action":"edit","task_id":3,"detail":"Stripe upgrade does not reconcile pre-existing secondary webhook event schema"}
+{"timestamp":"2026-08-23T09:33:23.187308061+02:00","action":"move","task_id":3,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-08-23T09:36:29.35351994+02:00","action":"edit","task_id":3,"detail":"Stripe upgrade does not reconcile pre-existing secondary webhook event schema"}
+{"timestamp":"2026-08-23T09:45:55.295123052+02:00","action":"edit","task_id":3,"detail":"Stripe upgrade does not reconcile pre-existing secondary webhook event schema"}
+{"timestamp":"2026-08-23T10:55:58.255864109+02:00","action":"move","task_id":2,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-08-23T10:58:42.37587513+02:00","action":"edit","task_id":2,"detail":"D00 account and catalog fixtures mutated before owning phase and omitted from registry"}
+{"timestamp":"2026-08-23T10:58:42.376134201+02:00","action":"release","task_id":2,"detail":"flora-pulse"}
+{"timestamp":"2026-08-23T10:58:42.487549509+02:00","action":"edit","task_id":2,"detail":"D00 account and catalog fixtures mutated before owning phase and omitted from registry"}
+{"timestamp":"2026-08-23T10:58:42.487700288+02:00","action":"claim","task_id":2,"detail":"flora-pulse"}
