@@ -10,4 +10,4 @@ fix all high- prefixed  bugs. one by one, all of them. important: you must:
   site admin access to browser test.
   after a fix, add a prefix done- to that bug report md file.
   you must follow all these protocol for all bug reports from /home/server-
-  manager/www/arrayhash/mirror-help.arrayhash.com/public/wp-content/plugins/qa/subscription-lifecycle-test/issues
+  manager/www/arrayhash/mirror-help.arrayhash.com/public/wp-content/plugins/qa/issues

@@ -1,8 +1,0 @@
-SHELL=/bin/bash
-PATH=/root/.local/bin:/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
-CRON_TZ=Europe/Berlin
-# ArraySubs SLT2 lifecycle watch.
-# D0 2026-08-23 through D12 2026-09-04; D13 teardown retries from 2026-09-05
-# until lifecycle task 120 is done.
-10 2,6,12,15 * * * root /home/server-manager/www/arrayhash/mirror-help.arrayhash.com/public/wp-content/plugins/qa/subscription-lifecycle-test/automation/daily-renewal-check.sh
-42 17 * * * root /home/server-manager/www/arrayhash/mirror-help.arrayhash.com/public/wp-content/plugins/qa/subscription-lifecycle-test/automation/daily-renewal-check.sh
