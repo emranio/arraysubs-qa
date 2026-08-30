@@ -1,10 +1,12 @@
 ---
 id: 10
 title: Blocked subscription save discards entered settings while pro meta is still written
-status: open
+status: closed
 priority: high
 created: 2026-08-26T14:37:36.225240097+02:00
-updated: 2026-08-26T14:37:36.225240097+02:00
+updated: 2026-08-30T14:53:48.834390547+02:00
+started: 2026-08-30T14:53:48.834389444+02:00
+completed: 2026-08-30T14:53:48.834389444+02:00
 tags:
     - product-edit
     - validation
@@ -54,3 +56,15 @@ Only the price error is shown. `_subscription_period` stays `month` and `_trial_
 
 ## Scope notes
 Case B is less severe than case A because previously-saved values survive, but both share the same cause.
+
+
+---
+
+## Fixed — 2026-08-30
+
+New `ArraySubs\Features\SubscriptionProducts\Services\BlockedSaveState`:
+
+* records the blocked object for the request — `arraysubs_is_blocked_product_save()` is now checked by Flexible Subscription, Fixed Period Membership, Flexible Renewal Sync (product + variation savers) and the Paddle catalogue sync, so none of them writes after a refused save;
+* snapshots the posted subscription fields in a per-user transient and replays them through `get_post_metadata` on the next editor render (`load-post.php` for products, `wp_ajax_woocommerce_load_variations` at priority 0 for variations). The keyless whole-meta read WooCommerce's data store uses is answered too, so the price inputs replay as well. Pro features extend the replayed key list through `arraysubs_blocked_product_save_fields`.
+
+**Verified (browser, product 33252):** set period=year, trial=7, signup fee=3, cleared the price, Update → one error, DB untouched (`month`/`0`/`0`/`20`), and the reloaded form still shows year / 7 / 3 / empty price with `Subscription [ArraySubs]` still ticked. With Flexible Subscription, Fixed Period Membership and Flexible Renewal Sync all configured in the same blocked save, **no** `_arraysubs_subscription_mode`, `_arraysubs_fixed_end_*` or `_arraysubs_flex_sync_*` meta was written. Restoring the price saved everything normally.

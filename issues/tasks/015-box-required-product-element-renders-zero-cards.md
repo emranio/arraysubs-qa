@@ -1,10 +1,12 @@
 ---
 id: 15
 title: 'Box: required product element renders zero cards when its product is not purchasable, blocking add-to-cart with a misleading error'
-status: open
+status: closed
 priority: medium
 created: 2026-08-26T14:39:04.657754173+02:00
-updated: 2026-08-26T14:39:04.657754173+02:00
+updated: 2026-08-30T14:53:48.840808852+02:00
+started: 2026-08-30T14:53:48.840808181+02:00
+completed: 2026-08-30T14:53:48.840808181+02:00
 tags:
     - subscription-box
     - storefront
@@ -50,3 +52,15 @@ The **Bundle** handles the identical situation correctly. As guest, `Subscribe N
 > "BUNDLE-CHILD-PLAIN" is currently unavailable, so this bundle cannot be purchased.
 
 Out-of-stock and zero-price children hit the same code path and will behave the same way, independent of Members Access.
+
+
+---
+
+## Fixed — 2026-08-30
+
+New `BoxConfig::getSelectableChildIds()` (the children that will really render as cards) and `BoxConfig::validateAvailability()` (mirrors the bundle's `validateContents()`). The builder view calls it: when a **required** element resolves to zero selectable children the launcher and the whole wizard are replaced with a bundle-style refusal; an **optional** element that resolves to zero renders an explicit empty state, drops its `*` marker and its `data-min` goes to 0. `validateSelection()` runs the same check first, so the server-side add-to-cart answers the real reason instead of "Please select at least 1 item(s) in this step."
+
+**Verified (browser):**
+* box 33263 as **guest** (Members Access rule active) → no launcher, no overlay, message *"\"Base item\" has nothing available right now, so this subscription box cannot be built."*
+* box 33263 as **admin** → unchanged: launcher present, Base item 1 card, Pick extras 8 cards.
+* copy 33324 with its product/category elements made optional, as guest → launcher present, empty element renders *"Nothing is available in this step right now."*, `data-min=0`, no required marker, and the other element still offers 3 cards.

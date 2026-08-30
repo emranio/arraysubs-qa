@@ -4,7 +4,7 @@ title: Priceless subscription product renders $0.00 / month on the storefront
 status: open
 priority: high
 created: 2026-08-26T14:38:05.311323216+02:00
-updated: 2026-08-26T14:38:05.311323216+02:00
+updated: 2026-08-30T14:53:48.74139182+02:00
 tags:
     - storefront
     - price-html
@@ -47,3 +47,12 @@ Only substitute when `$data['price']` is a real non-empty value; otherwise retur
 
 ## Scope notes
 Also affects shop archives, search results, related products and the product structured data, since they all use `woocommerce_get_price_html`.
+
+
+---
+
+## Deliberately not fixed — 2026-08-30
+
+Tagged `[skip]` in `qa/product-edit-regression-qa-report.md` (F-05): *"skip it, its intentional"*. `Hooks::subscriptionPriceHtml()` still substitutes `wc_price(0)` for an empty price html.
+
+Worth noting: the state that produced the observed `$0.00 / month` (a box switched to Simple, left published and priceless) can no longer be reached — see #11.

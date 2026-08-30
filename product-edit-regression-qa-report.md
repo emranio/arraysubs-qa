@@ -5,6 +5,8 @@
 **Plugins under test:** `arraysubs` 1.8.12 (free), `arraysubspro` 1.1.3 (pro), WooCommerce 10.9.4
 **Method:** live browser testing with Vercel `agent-browser` (sessions: `admin`, `guest`) + WP-CLI/DB verification + code inspection.
 **Issue board:** all findings are filed in `qa/issues/` as tasks **#8 – #19**.
+**Resolution status (2026-08-30):** see [§8 Resolution](#8-resolution). Everything except the
+maintainer-skipped findings is fixed, rebuilt and re-verified in the browser against this same site.
 **Scope:** the WooCommerce **Product Data** metabox for every product type and every conditional field, validated against the public shop/product pages; then Subscription Box and Subscription Bundle end-to-end (admin → product page → cart → checkout → post-purchase order/subscription/portal).
 
 All pro modules were confirmed active during the run
@@ -681,3 +683,58 @@ Linkage is correct in both directions:
 8. **F-07** admin subscription screen missing box/bundle contents
 9. **F-09** lifetime field gating
 10. everything else
+
+---
+
+## 8. Resolution
+
+Fixed on **2026-08-30**, then re-verified in the browser against this site. Both plugins were rebuilt
+(`npm run build` in `arraysubs` and `arraysubspro`). Per-finding evidence lives on the matching task in
+`qa/issues/`; `qa/paddle-catalogue-sync-findings.md` carries the F-22 investigation.
+
+| Finding | Status | What changed |
+|---|---|---|
+| F-01 | **Skipped** (maintainer: "dont touch it") | — |
+| F-02 | Fixed | `Hooks::validateVariation()` on `woocommerce_admin_process_variation_object`; errors as meta-box notices *and* inline in the variation panel |
+| F-03 | Fixed | New `BlockedSaveState`: pro savers + Paddle sync stand down on a blocked save, and the posted values are replayed into the reloaded editor |
+| F-04 | Fixed | `guardBlockedProductTypeChange()` vetoes a box/bundle → simple type change while the settings are invalid |
+| F-05 | **Skipped** (maintainer: "its intentional") | — |
+| F-06 | Fixed | Paddle tax category group gated to `show_if_simple` |
+| F-07 | Fixed | Box/bundle contents + parent/child links added to the REST detail payload and rendered as a card in the admin SPA |
+| F-08 | Fixed | `BoxConfig::validateAvailability()` blocks an unbuildable box at the launcher; optional empty elements get an explicit empty state |
+| F-09 | Fixed | Lifetime hides Length / Trial / Renewal Price / Fixed Period, and the savers clear the matching meta |
+| F-10 | Fixed | Feature Manager tab shown for simple, variable, box and bundle; the box/bundle admin JS no longer clobbers shared elements; variations inherit parent features |
+| F-11 | Fixed | Cart/checkout/email rows print `× 2 — $4.00 each ($8.00)` |
+| F-12 | Fixed | Portal renders the uploaded file as an authorised download link |
+| F-13 | Fixed | New `arraysubs_my_subscriptions_row_product_meta` hook; box and bundle badge their children |
+| F-14 | Fixed | `ProrationCalculator::hasAvailableSwitchOptions()` gates the Change Plan button |
+| F-15 | Fixed | Variable parents get the billing suffix when every subscription variation shares one schedule |
+| F-16 | Fixed | Discount clamps on blur with an inline over-cap warning; a zero recurring bundle total is rejected in the wizard and at save time |
+| F-17 | **Skipped** (`[skip]`) | — |
+| F-18 | **Skipped** (`[skip]`) | — |
+| F-19 | **Not a defect** — Product Redirect supports every product type | — |
+| F-20 | Partly fixed | `Validation::validateBeforeSave()` removed (dead). The "dead CSS" claim is **wrong**: `.arraysubs-fixed-end-date-section--hidden` exists in `arraysubspro/src/resources/scss/admin/fixed-period-membership.scss` and is compiled — jQuery's inline `.show()` simply outranks it. Left in place; it prevents a flash before JS runs |
+| F-21 | Fixed in the plugin; **one server rule outstanding** | Uploads are served through a signed, authorised endpoint and the raw URL is no longer published. The raw path still returns 200 because Caddy ignores `.htaccess` — task #19 carries the Caddy rule needed |
+| F-22 | Fixed + investigated | Sync skips a blocked save; the notice links to the WooCommerce log. Full write-up: `qa/paddle-catalogue-sync-findings.md` |
+
+### Fixtures created by the fix-verification run
+
+| ID | What |
+|---|---|
+| 35312 / 35313 | box order + subscription (contents `SLT Box Item A ×2`, `Jacket ×1`, gift message, `qa-logo.png` upload) |
+| 35322 / 35323 | `Basic Monthly` order + subscription, used to prove Change Plan still appears where switch targets exist |
+| — | test features added to 33290 (`Bundle Perk`), 33263 (`Box Perk`) and 33313 (`Tier Perk`) |
+
+33324 was restored to a Subscription Box after the type-switch tests; 33252, 33263, 33290 and 33313
+were left in their original working configuration.
+
+### Behaviour changes worth knowing
+
+- The **General** tab is hidden again on Variable products. It was only ever visible because the Paddle
+  tax category group was permanently shown; gating that group restores stock WooCommerce behaviour.
+- A **variation with no features of its own now inherits the parent product's** feature list. An empty
+  `"[]"` counts as "not set", so nothing that previously resolved to a feature list changes.
+- The bundle product page heading `What's included` was renamed to **Bundle contents**, because the
+  Feature Manager block (now available on bundles) renders its own `What's Included` heading above it.
+- Two `window.alert()` calls in `flexibleSubscriptionAdmin.js` — forbidden by `AGENTS.md` — were
+  replaced with an inline notice.

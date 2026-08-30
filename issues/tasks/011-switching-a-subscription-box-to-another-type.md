@@ -1,10 +1,12 @@
 ---
 id: 11
 title: Switching a Subscription Box to another type leaves a published, priceless subscription product
-status: open
+status: closed
 priority: high
 created: 2026-08-26T14:38:05.253894974+02:00
-updated: 2026-08-26T14:38:05.253894974+02:00
+updated: 2026-08-30T14:53:48.834996814+02:00
+started: 2026-08-30T14:53:48.834996203+02:00
+completed: 2026-08-30T14:53:48.834996203+02:00
 tags:
     - subscription-box
     - product-edit
@@ -53,3 +55,17 @@ Storefront https://mirror-help.arrayhash.com/product/peqa-box-switch-test/ then 
 
 ## Scope notes
 The Bundle saver (`ArraySubsPro\\Features\\SubscriptionBundle\\Services\\ProductType::saveProductMeta()`) has the identical branch, so the same outcome is expected for bundle → simple; not separately executed in this run.
+
+
+---
+
+## Fixed — 2026-08-30
+
+A product-type change **away from a subscription-engine owner type** (Subscription Box, Subscription Bundle) is now part of the same validated transaction. `Hooks::guardBlockedProductTypeChange()` runs on `woocommerce_process_product_meta` at priority 1 — before WooCommerce builds the product object at 10 — and puts `$_POST['product-type']` back when the posted subscription settings are invalid, adding an explicit second notice.
+
+Scope is deliberately narrow: only a move to `simple` is guarded (the conversion the product-level rules apply to). Variable is validated per variation, container types validate themselves, and grouped/external hide the subscription checkbox, so guarding those would trap the merchant. Box and Bundle register their slugs through the new `arraysubs_subscription_engine_owner_product_types` filter.
+
+**Verified (browser, product 33324):**
+* box → Simple with no price → *"Subscription products must have a valid regular price greater than zero."* + *"The product type was left as \"Subscription Box [ArraySubs]\" because the subscription settings above are not valid yet. Fix them, save, then change the type."*; DB still `type=arraysubs_subscription_box`, marker `yes`, status `publish`. No Paddle notice.
+* box → Simple **with** a $12 price → converts cleanly: `type=simple`, marker cleared, `_is_subscription=yes`, `_price=12`, no errors.
+* box → Grouped is still allowed (not over-blocked).

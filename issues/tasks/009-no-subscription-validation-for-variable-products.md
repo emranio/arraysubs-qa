@@ -1,10 +1,12 @@
 ---
 id: 9
 title: No subscription validation for variable products or variations
-status: open
+status: closed
 priority: high
 created: 2026-08-26T14:37:36.158739816+02:00
-updated: 2026-08-26T14:37:36.158739816+02:00
+updated: 2026-08-30T14:53:48.830516381+02:00
+started: 2026-08-30T14:53:48.83051557+02:00
+completed: 2026-08-30T14:53:48.83051557+02:00
 tags:
     - product-edit
     - variable
@@ -48,3 +50,12 @@ Storefront https://mirror-help.arrayhash.com/product/peqa-variable-sub-qa/ then 
 
 ## Scope notes / counterexamples
 The identical inputs on a **simple** subscription product (33252) are correctly blocked with "Subscription products must have a valid regular price greater than zero." and the product is kept out of `publish`.
+
+
+---
+
+## Fixed — 2026-08-30
+
+`Hooks::validateVariation()` now runs on `woocommerce_admin_process_variation_object` (priority 5), applying the same rules a simple product gets: regular price > 0, sale price > 0 when set, billing interval 1–12 (skipped for lifetime), and renewal-price coherence. On failure the variation's stored pricing is restored before `$variation->save()`, the save is registered in `BlockedSaveState` so `saveVariationMeta()` and every pro variation saver stand down, and the messages are surfaced twice: as WooCommerce meta-box errors and inline inside the variation panel that re-renders after the AJAX save.
+
+**Verified (browser, product 33313 / variation 33317):** cleared `Regular price` + set `Billing Interval` to 99 → Save changes. DB unchanged (`_regular_price=25`, `_price=25`, `_subscription_interval=1`); panel shows *"This variation was not saved: Subscription variations must have a valid regular price greater than zero. Billing interval must be between 1 and 12."*; the attempted values (empty price, interval 99) are replayed into the fields. A subsequent valid save (interval 2) wrote through, and the storefront kept both variations selectable with `$25.00 / month`.

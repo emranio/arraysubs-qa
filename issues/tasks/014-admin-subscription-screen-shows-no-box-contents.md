@@ -1,10 +1,12 @@
 ---
 id: 14
 title: Admin subscription screen shows no box contents and no bundle contents / child-subscription link
-status: open
+status: closed
 priority: medium
 created: 2026-08-26T14:38:33.693345565+02:00
-updated: 2026-08-26T14:38:33.693345565+02:00
+updated: 2026-08-30T14:53:48.838180685+02:00
+started: 2026-08-30T14:53:48.838179814+02:00
+completed: 2026-08-30T14:53:48.838179814+02:00
 tags:
     - admin
     - subscription-detail
@@ -49,3 +51,15 @@ Bundle 33298 — no `Bundle contents` block and no link to #33302, even though:
 - The **customer portal** renders all of it correctly for both (`/my-account/view-subscription/33278/` and `/33302/`).
 - The **WooCommerce order** screen also has the data (child line items plus `_arraysubs_box_contents` on the parent line).
 Only the ArraySubs admin subscription detail is missing it.
+
+
+---
+
+## Fixed — 2026-08-30
+
+Both container features now add their fulfilment data to `arraysubs_subscription_detail_data`: the frozen contents plus `container_parent` (a child pointing at its owner) and `container_children` (id, name, status). Uploaded files are exposed as authorised links, never raw upload URLs. `SubscriptionDetail.jsx` renders one shared card from whichever payload is present.
+
+**Verified (browser, admin SPA):**
+* box subscription 35313 → *Box Contents* card: `SLT Box Item A 2 $4.00 $8.00`, `Jacket 1 $25.00 $25.00`, Subtotal $33.00, Total $33.00, plus `Gift message` and `Logo file` as a download link.
+* bundle subscription 33298 → *Bundle Contents* card with QTY / UNIT PRICE / LINE TOTAL, `Bundle discount −$5.00`, Total $25.00, and **Included subscriptions: BUNDLE-CHILD-SUB (#33302) Active** — the missing child link.
+* child subscription 33302 → *Subscription Bundle* card: `Part of: PEQA Bundle QA (#33298)`.

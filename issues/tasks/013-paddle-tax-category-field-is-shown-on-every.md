@@ -1,10 +1,12 @@
 ---
 id: 13
 title: Paddle tax category field is shown on every product type including Store Credit, Box and Bundle
-status: open
+status: closed
 priority: medium
 created: 2026-08-26T14:38:33.633261254+02:00
-updated: 2026-08-26T14:38:33.633261254+02:00
+updated: 2026-08-30T14:53:48.837098071+02:00
+started: 2026-08-30T14:53:48.837097109+02:00
+completed: 2026-08-30T14:53:48.837097109+02:00
 tags:
     - product-edit
     - paddle
@@ -48,3 +50,14 @@ Since the class matches none of them, the group is never hidden and never explic
 
 ## Fix direction
 Use a real gate (e.g. `show_if_simple show_if_variable`) or a JS toggle driven by the `Subscription [ArraySubs]` checkbox.
+
+
+---
+
+## Fixed — 2026-08-30
+
+`PaddleTaxCategoryFields::renderProductField()` now wraps the group in `show_if_simple` instead of the non-existent `show_if_arraysubs_paddle_tax_category`. Paddle's catalogue saver only ever syncs `simple` products, so that is the only type the product-level field belongs on; the per-variation field is unchanged.
+
+**Verified (browser, product 33252, driving `#product-type` through every option):** visible on Simple only — hidden on Grouped, External, Variable, Subscription Box, Subscription Bundle and Store Credit. The per-variation Paddle tax select still renders inside the Variations tab.
+
+**Side effect worth knowing:** the group used to be permanently visible, which kept WooCommerce's "hide a panel whose option groups are all hidden" rule from hiding the **General** tab on Variable products. With the gate in place General is hidden for Variable again, which is stock WooCommerce behaviour (pricing lives on the variations).

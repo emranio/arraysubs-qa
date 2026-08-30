@@ -58,3 +58,27 @@
 {"timestamp":"2026-08-26T14:39:51.561930487+02:00","action":"create","task_id":17,"detail":"Feature Manager tab is unavailable on Variable, Subscription Box and Subscription Bundle products"}
 {"timestamp":"2026-08-26T14:39:51.627991742+02:00","action":"create","task_id":18,"detail":"Product-edit regression: batch of low-severity findings (display, dead code, hidden-but-posted fields)"}
 {"timestamp":"2026-08-26T14:39:51.694596557+02:00","action":"create","task_id":19,"detail":"Subscription Box uploads are publicly readable by URL (PDF/CSV allowed)"}
+{"timestamp":"2026-08-30T14:52:12.998945288+02:00","action":"edit","task_id":9,"detail":"No subscription validation for variable products or variations"}
+{"timestamp":"2026-08-30T14:52:13.072304402+02:00","action":"edit","task_id":10,"detail":"Blocked subscription save discards entered settings while pro meta is still written"}
+{"timestamp":"2026-08-30T14:52:27.790846967+02:00","action":"edit","task_id":11,"detail":"Switching a Subscription Box to another type leaves a published, priceless subscription product"}
+{"timestamp":"2026-08-30T14:52:27.856739766+02:00","action":"edit","task_id":13,"detail":"Paddle tax category field is shown on every product type including Store Credit, Box and Bundle"}
+{"timestamp":"2026-08-30T14:52:42.834318859+02:00","action":"edit","task_id":14,"detail":"Admin subscription screen shows no box contents and no bundle contents / child-subscription link"}
+{"timestamp":"2026-08-30T14:52:42.910778559+02:00","action":"edit","task_id":15,"detail":"Box: required product element renders zero cards when its product is not purchasable, blocking add-to-cart with a misleading error"}
+{"timestamp":"2026-08-30T14:53:01.559135792+02:00","action":"edit","task_id":16,"detail":"Lifetime Deal leaves Subscription Length, Trial, Renewal Price and Fixed Period Membership editable"}
+{"timestamp":"2026-08-30T14:53:01.732178033+02:00","action":"edit","task_id":17,"detail":"Feature Manager tab is unavailable on Variable, Subscription Box and Subscription Bundle products"}
+{"timestamp":"2026-08-30T14:53:16.069875053+02:00","action":"edit","task_id":19,"detail":"Subscription Box uploads are publicly readable by URL (PDF/CSV allowed)"}
+{"timestamp":"2026-08-30T14:53:39.019214699+02:00","action":"edit","task_id":18,"detail":"Product-edit regression: batch of low-severity findings (display, dead code, hidden-but-posted fields)"}
+{"timestamp":"2026-08-30T14:53:48.623890309+02:00","action":"edit","task_id":8,"detail":"Subscription meta is saved onto Grouped and External products"}
+{"timestamp":"2026-08-30T14:53:48.741790752+02:00","action":"edit","task_id":12,"detail":"Priceless subscription product renders $0.00 / month on the storefront"}
+{"timestamp":"2026-08-30T14:53:48.833616297+02:00","action":"move","task_id":9,"detail":"open -\u003e closed"}
+{"timestamp":"2026-08-30T14:53:48.834699351+02:00","action":"move","task_id":10,"detail":"open -\u003e closed"}
+{"timestamp":"2026-08-30T14:53:48.836197336+02:00","action":"move","task_id":11,"detail":"open -\u003e closed"}
+{"timestamp":"2026-08-30T14:53:48.837342497+02:00","action":"move","task_id":13,"detail":"open -\u003e closed"}
+{"timestamp":"2026-08-30T14:53:48.840246787+02:00","action":"move","task_id":14,"detail":"open -\u003e closed"}
+{"timestamp":"2026-08-30T14:53:48.841063986+02:00","action":"move","task_id":15,"detail":"open -\u003e closed"}
+{"timestamp":"2026-08-30T14:53:48.841642582+02:00","action":"move","task_id":16,"detail":"open -\u003e closed"}
+{"timestamp":"2026-08-30T14:53:48.843065279+02:00","action":"move","task_id":17,"detail":"open -\u003e closed"}
+{"timestamp":"2026-08-30T14:53:48.844063294+02:00","action":"move","task_id":18,"detail":"open -\u003e closed"}
+{"timestamp":"2026-08-30T14:54:01.062773402+02:00","action":"edit","task_id":19,"detail":"Subscription Box uploads are publicly readable by URL (PDF/CSV allowed)"}
+{"timestamp":"2026-08-30T14:54:01.062973724+02:00","action":"block","task_id":19,"detail":"Plugin side is done and verified (signed, authorised endpoint; no raw upload URL is published anywhere; anonymous and tampered requests get 403). The raw path /wp-content/uploads/arraysubs-box-uploads/\u003cname\u003e still returns 200 because this host runs Caddy, which ignores the .htaccess the plugin writes. Needs a one-line Caddy deny rule for that path — a server change outside the plugins, not applied."}
+{"timestamp":"2026-08-30T14:54:05.725060409+02:00","action":"move","task_id":19,"detail":"open -\u003e blocked"}

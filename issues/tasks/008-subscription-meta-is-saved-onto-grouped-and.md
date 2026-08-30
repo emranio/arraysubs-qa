@@ -4,7 +4,7 @@ title: Subscription meta is saved onto Grouped and External products
 status: open
 priority: critical
 created: 2026-08-26T14:37:07.156154984+02:00
-updated: 2026-08-26T14:37:07.156154984+02:00
+updated: 2026-08-30T14:53:48.62348783+02:00
 tags:
     - product-edit
     - subscription-products
@@ -55,3 +55,12 @@ Admin products list row renders: `PEQA Grouped Leak | Grouped product | Subscrip
 - Subscription Box and Subscription Bundle are NOT affected: their `skipCoreSubscriptionSave()` filter short-circuits the core saver.
 - Store Credit posts the checkbox too but was not observed to persist `_is_subscription` in this run — needs its own check.
 - External/Affiliate uses the identical wrapper class and has no skip filter; confirmed at form-data level (checkbox stays checked and posts) but the save was only executed for Grouped.
+
+
+---
+
+## Deliberately not fixed — 2026-08-30
+
+Tagged `[skip]` in `qa/product-edit-regression-qa-report.md` (F-01): *"my take: dont touch it. it's not needed."* No change made; grouped/external products still keep the posted subscription meta.
+
+Re-confirmed while fixing #11: the new product-type guard is scoped to a move to `simple` only, so a box → Grouped conversion still goes through exactly as before (verified on product 33324).
