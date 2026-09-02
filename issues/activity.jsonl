@@ -82,3 +82,6 @@
 {"timestamp":"2026-08-30T14:54:01.062773402+02:00","action":"edit","task_id":19,"detail":"Subscription Box uploads are publicly readable by URL (PDF/CSV allowed)"}
 {"timestamp":"2026-08-30T14:54:01.062973724+02:00","action":"block","task_id":19,"detail":"Plugin side is done and verified (signed, authorised endpoint; no raw upload URL is published anywhere; anonymous and tampered requests get 403). The raw path /wp-content/uploads/arraysubs-box-uploads/\u003cname\u003e still returns 200 because this host runs Caddy, which ignores the .htaccess the plugin writes. Needs a one-line Caddy deny rule for that path — a server change outside the plugins, not applied."}
 {"timestamp":"2026-08-30T14:54:05.725060409+02:00","action":"move","task_id":19,"detail":"open -\u003e blocked"}
+{"timestamp":"2026-09-02T18:53:56.927193+06:00","action":"create","task_id":20,"detail":"Refund product chart labels collapse to an indistinguishable shared prefix"}
+{"timestamp":"2026-09-02T18:54:18.291156+06:00","action":"move","task_id":20,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-09-02T19:00:20.897337+06:00","action":"move","task_id":20,"detail":"in-progress -\u003e closed"}
