@@ -107,3 +107,12 @@
 {"timestamp":"2026-09-09T18:38:15.347309+06:00","action":"move","task_id":25,"detail":"in-progress -\u003e closed"}
 {"timestamp":"2026-09-09T18:38:29.599006+06:00","action":"edit","task_id":25,"detail":"Wizard save notification is hidden behind the modal backdrop"}
 {"timestamp":"2026-09-10T01:27:56.100643+06:00","action":"create","task_id":26,"detail":"Shared admin header overflows the mobile viewport"}
+{"timestamp":"2026-09-14T00:13:28.796546+06:00","action":"create","task_id":27,"detail":"Quick product completion card descriptions run into titles"}
+{"timestamp":"2026-09-14T00:13:28.812324+06:00","action":"move","task_id":27,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-09-14T00:43:09.671703+06:00","action":"create","task_id":28,"detail":"Onboarding payment link is taller than setup action buttons"}
+{"timestamp":"2026-09-14T00:43:09.687341+06:00","action":"move","task_id":28,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-09-14T00:49:20.33345+06:00","action":"move","task_id":28,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-09-14T03:23:40.281931+06:00","action":"create","task_id":29,"detail":"Quick-product selected radio inner circle is not reliably centered"}
+{"timestamp":"2026-09-14T03:25:27.24522+06:00","action":"move","task_id":29,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-09-14T03:55:05.935655+06:00","action":"create","task_id":30,"detail":"Quick-product unlock guidance is misaligned and visually oversized"}
+{"timestamp":"2026-09-14T03:58:22.920082+06:00","action":"edit","task_id":30,"detail":"Quick-product unlock guidance is misaligned and visually oversized"}
