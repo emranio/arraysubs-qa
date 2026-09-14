@@ -1,0 +1,419 @@
+- generic
+  - sectionheader
+    - navigation
+      - list
+        - listitem [level=1]
+          - link "Role Mapping" [ref=e148]
+        - listitem [level=1]
+          - link "Discount" [ref=e149]
+        - listitem [level=1]
+          - link "Shop Access" [ref=e150]
+        - listitem [level=1]
+          - link "URL" [ref=e151]
+        - listitem [level=1]
+          - link "Post Types" [ref=e152]
+        - listitem [level=1]
+          - link "Downloads" [ref=e153]
+        - listitem [level=1]
+          - link "Comments" [ref=e154]
+        - listitem [level=1]
+          - link "Purchase Limit" [ref=e155]
+        - listitem [level=1]
+          - link "Conflicts" [ref=e156]
+        - listitem [level=1]
+          - link "Login Limit" [ref=e157]
+    - StaticText "Configure memberships, content gating, role mapping, and access restrictions"
+  - link "Go Back" [ref=e31]
+  - main
+    - heading "Shop Access Rules" [level=3, ref=e116]
+    - paragraph
+      - StaticText "Control which products are accessible or purchasable based on membership conditions. Turn your store into a members-only shopping experience."
+    - heading "How Shop Access Rules Work" [level=4, ref=e117]
+    - list
+      - listitem [level=1]
+        - ListMarker "1. "
+        - StaticText "Define who qualifies using the IF conditions — for example, customers with an active subscription, users with a certain role, or customers who purchased a specific product."
+      - listitem [level=1]
+        - ListMarker "2. "
+        - StaticText "Choose what to restrict in the TARGET section — the full store, specific products, or specific categories. Use exclusions to exempt certain products such as free samples or sign-up products."
+      - listitem [level=1]
+        - ListMarker "3. "
+        - StaticText "Configure the THEN section — show a 404, redirect users, or show the product page with purchasing blocked and a custom message displayed."
+      - listitem [level=1]
+        - ListMarker "4. "
+        - StaticText "Non-qualifying users are blocked at every entry point: product pages, direct URLs, add-to-cart links, the cart, checkout, and the WooCommerce Store API (for block-based storefronts)."
+      - listitem [level=1]
+        - ListMarker "5. "
+        - StaticText "When a customer gains a qualifying membership (e.g. subscribes to the required plan), restrictions are immediately lifted."
+    - paragraph
+      - strong
+        - StaticText "Note:"
+      - StaticText " Administrators and shop managers always bypass shop access restrictions. Products hidden via the 404 action are automatically excluded from XML sitemaps and product recommendation widgets."
+    - LabelText [ref=e118] clickable [onclick]
+      - checkbox [checked=false, ref=e129]
+    - generic [ref=e119] clickable [onclick]
+      - textbox "Rule name" [ref=e130]: Footer QA Shop Access
+        - StaticText "Footer QA Shop Access"
+      - StaticText "Shop Access Rule"
+      - StaticText " #"
+      - StaticText "1"
+    - generic [ref=e120] clickable [cursor:pointer, onclick]
+    - generic [ref=e121] clickable [onclick]
+      - button "Move up" [disabled, ref=e131]
+      - button "Move down" [disabled, ref=e132]
+      - button "Duplicate" [ref=e133]
+      - button "Delete" [ref=e134]
+    - button "Collapse" [ref=e122]
+    - StaticText "TARGET"
+    - LabelText
+      - StaticText "Restrict access to"
+    - combobox [expanded=false, ref=e123]: Full store (all products)
+      - MenuListPopup
+        - option "Full store (all products)" [selected, ref=e138]
+        - option "Specific products" [ref=e139]
+        - option "Specific categories" [ref=e140]
+    - paragraph
+      - StaticText "Select which products are restricted for non-qualifying users."
+    - StaticText "EXCLUSIONS"
+    - LabelText
+      - StaticText "Exclude products"
+    - generic [ref=e135] clickable [cursor:pointer, onclick]
+      - StaticText "Search products to exclude..."
+    - paragraph
+      - StaticText "These products will remain accessible even if they match the restriction scope above. Use this to exempt free samples, landing page products, or sign-up products."
+    - LabelText
+      - StaticText "Exclude categories"
+    - generic [ref=e136] clickable [cursor:pointer, onclick]
+      - StaticText "Search categories to exclude..."
+    - paragraph
+      - StaticText "Products in these categories remain accessible regardless of the restriction scope."
+    - StaticText "IF"
+    - StaticText "User meets these conditions"
+    - paragraph
+      - StaticText "No conditions added. Click below to add conditions."
+    - button "Add Condition" [ref=e124]
+    - button "Add Group" [ref=e125]
+    - StaticText "THEN"
+    - StaticText "Apply these actions"
+    - LabelText
+      - StaticText "When a non-qualifying user visits a restricted product"
+    - combobox [expanded=false, ref=e126]: Show product, block purchase
+      - MenuListPopup
+        - option "Show product, block purchase" [selected, ref=e141]
+        - option "Return 404 (product not found)" [ref=e142]
+        - option "Redirect to login page" [ref=e143]
+        - option "Redirect to a specific page" [ref=e144]
+    - paragraph
+      - StaticText "The product page is visible but the Add to Cart button is hidden. A custom message is shown instead."
+    - LabelText
+      - StaticText "Custom message"
+    - textbox "This product is available to members only. Join now to unlock purchasing." [ref=e127]
+      - StaticText "This product is available to members only. Join now to unlock purchasing."
+    - paragraph
+      - StaticText "This message replaces the Add to Cart button on the product page for non-qualifying users. Basic HTML is allowed."
+    - strong
+      - StaticText "How it works:"
+    - list
+      - listitem [level=1]
+        - ListMarker "• "
+        - StaticText "Product pages remain visible and indexable by search engines, but the Add to Cart button and purchase form are removed for non-qualifying users."
+      - listitem [level=1]
+        - ListMarker "• "
+        - StaticText "Your custom message is displayed in place of the purchase button, encouraging users to join."
+      - listitem [level=1]
+        - ListMarker "• "
+        - StaticText "Direct add-to-cart links (?add-to-cart=ID) and REST API / Store API requests are also blocked."
+      - listitem [level=1]
+        - ListMarker "• "
+        - StaticText "Administrators and shop managers always bypass shop access restrictions so they can manage the store normally."
+      - listitem [level=1]
+        - ListMarker "• "
+        - StaticText "If multiple rules match the same product, the first matching rule wins (rules are processed in order)."
+      - listitem [level=1]
+        - ListMarker "• "
+        - StaticText "Cart and checkout validation ensures restricted items cannot be purchased even if added before restrictions applied."
+    - StaticText "SCHEDULE"
+    - StaticText "Delay access after subscription starts"
+    - checkbox "Delay this rule after subscription starts" [checked=false, ref=e128]
+    - button "Add New Rule" [ref=e137]
+    - generic
+      - button "Save Rules" [ref=e145]
+      - button "Discard Changes" [ref=e146]
+      - link "Easy Setup & Import/Export" [ref=e147]
+      - paragraph
+        - StaticText "Settings last saved: September 14, 2026 10:45 am (UTC)"
+- generic
+  - sectionheader
+    - navigation
+      - list
+        - listitem [level=1]
+          - link "Role Mapping" [ref=e148]
+        - listitem [level=1]
+          - link "Discount" [ref=e149]
+        - listitem [level=1]
+          - link "Shop Access" [ref=e150]
+        - listitem [level=1]
+          - link "URL" [ref=e151]
+        - listitem [level=1]
+          - link "Post Types" [ref=e152]
+        - listitem [level=1]
+          - link "Downloads" [ref=e153]
+        - listitem [level=1]
+          - link "Comments" [ref=e154]
+        - listitem [level=1]
+          - link "Purchase Limit" [ref=e155]
+        - listitem [level=1]
+          - link "Conflicts" [ref=e156]
+        - listitem [level=1]
+          - link "Login Limit" [ref=e157]
+    - StaticText "Configure memberships, content gating, role mapping, and access restrictions"
+  - link "Go Back" [ref=e31]
+  - main
+    - heading "Shop Access Rules" [level=3, ref=e116]
+    - paragraph
+      - StaticText "Control which products are accessible or purchasable based on membership conditions. Turn your store into a members-only shopping experience."
+    - heading "How Shop Access Rules Work" [level=4, ref=e117]
+    - list
+      - listitem [level=1]
+        - ListMarker "1. "
+        - StaticText "Define who qualifies using the IF conditions — for example, customers with an active subscription, users with a certain role, or customers who purchased a specific product."
+      - listitem [level=1]
+        - ListMarker "2. "
+        - StaticText "Choose what to restrict in the TARGET section — the full store, specific products, or specific categories. Use exclusions to exempt certain products such as free samples or sign-up products."
+      - listitem [level=1]
+        - ListMarker "3. "
+        - StaticText "Configure the THEN section — show a 404, redirect users, or show the product page with purchasing blocked and a custom message displayed."
+      - listitem [level=1]
+        - ListMarker "4. "
+        - StaticText "Non-qualifying users are blocked at every entry point: product pages, direct URLs, add-to-cart links, the cart, checkout, and the WooCommerce Store API (for block-based storefronts)."
+      - listitem [level=1]
+        - ListMarker "5. "
+        - StaticText "When a customer gains a qualifying membership (e.g. subscribes to the required plan), restrictions are immediately lifted."
+    - paragraph
+      - strong
+        - StaticText "Note:"
+      - StaticText " Administrators and shop managers always bypass shop access restrictions. Products hidden via the 404 action are automatically excluded from XML sitemaps and product recommendation widgets."
+    - LabelText [ref=e118] clickable [onclick]
+      - checkbox [checked=false, ref=e129]
+    - generic [ref=e119] clickable [onclick]
+      - textbox "Rule name" [ref=e130]: Footer QA Shop Access
+        - StaticText "Footer QA Shop Access"
+      - StaticText "Shop Access Rule"
+      - StaticText " #"
+      - StaticText "1"
+    - generic [ref=e120] clickable [cursor:pointer, onclick]
+    - generic [ref=e121] clickable [onclick]
+      - button "Move up" [disabled, ref=e131]
+      - button "Move down" [disabled, ref=e132]
+      - button "Duplicate" [ref=e133]
+      - button "Delete" [ref=e134]
+    - button "Collapse" [ref=e122]
+    - StaticText "TARGET"
+    - LabelText
+      - StaticText "Restrict access to"
+    - combobox [expanded=false, ref=e123]: Full store (all products)
+      - MenuListPopup
+        - option "Full store (all products)" [selected, ref=e138]
+        - option "Specific products" [ref=e139]
+        - option "Specific categories" [ref=e140]
+    - paragraph
+      - StaticText "Select which products are restricted for non-qualifying users."
+    - StaticText "EXCLUSIONS"
+    - LabelText
+      - StaticText "Exclude products"
+    - generic [ref=e135] clickable [cursor:pointer, onclick]
+      - StaticText "Search products to exclude..."
+    - paragraph
+      - StaticText "These products will remain accessible even if they match the restriction scope above. Use this to exempt free samples, landing page products, or sign-up products."
+    - LabelText
+      - StaticText "Exclude categories"
+    - generic [ref=e136] clickable [cursor:pointer, onclick]
+      - StaticText "Search categories to exclude..."
+    - paragraph
+      - StaticText "Products in these categories remain accessible regardless of the restriction scope."
+    - StaticText "IF"
+    - StaticText "User meets these conditions"
+    - paragraph
+      - StaticText "No conditions added. Click below to add conditions."
+    - button "Add Condition" [ref=e124]
+    - button "Add Group" [ref=e125]
+    - StaticText "THEN"
+    - StaticText "Apply these actions"
+    - LabelText
+      - StaticText "When a non-qualifying user visits a restricted product"
+    - combobox [expanded=false, ref=e126]: Show product, block purchase
+      - MenuListPopup
+        - option "Show product, block purchase" [selected, ref=e141]
+        - option "Return 404 (product not found)" [ref=e142]
+        - option "Redirect to login page" [ref=e143]
+        - option "Redirect to a specific page" [ref=e144]
+    - paragraph
+      - StaticText "The product page is visible but the Add to Cart button is hidden. A custom message is shown instead."
+    - LabelText
+      - StaticText "Custom message"
+    - textbox "This product is available to members only. Join now to unlock purchasing." [ref=e127]
+      - StaticText "This product is available to members only. Join now to unlock purchasing."
+    - paragraph
+      - StaticText "This message replaces the Add to Cart button on the product page for non-qualifying users. Basic HTML is allowed."
+    - strong
+      - StaticText "How it works:"
+    - list
+      - listitem [level=1]
+        - ListMarker "• "
+        - StaticText "Product pages remain visible and indexable by search engines, but the Add to Cart button and purchase form are removed for non-qualifying users."
+      - listitem [level=1]
+        - ListMarker "• "
+        - StaticText "Your custom message is displayed in place of the purchase button, encouraging users to join."
+      - listitem [level=1]
+        - ListMarker "• "
+        - StaticText "Direct add-to-cart links (?add-to-cart=ID) and REST API / Store API requests are also blocked."
+      - listitem [level=1]
+        - ListMarker "• "
+        - StaticText "Administrators and shop managers always bypass shop access restrictions so they can manage the store normally."
+      - listitem [level=1]
+        - ListMarker "• "
+        - StaticText "If multiple rules match the same product, the first matching rule wins (rules are processed in order)."
+      - listitem [level=1]
+        - ListMarker "• "
+        - StaticText "Cart and checkout validation ensures restricted items cannot be purchased even if added before restrictions applied."
+    - StaticText "SCHEDULE"
+    - StaticText "Delay access after subscription starts"
+    - checkbox "Delay this rule after subscription starts" [checked=false, ref=e128]
+    - button "Add New Rule" [ref=e137]
+    - generic
+      - button "Save Rules" [ref=e145]
+      - button "Discard Changes" [ref=e146]
+      - link "Easy Setup & Import/Export" [ref=e147]
+      - paragraph
+        - StaticText "Settings last saved: September 14, 2026 10:45 am (UTC)"
+- link "Go Back" [ref=e31]
+- StaticText "Configure memberships, content gating, role mapping, and access restrictions"
+- heading "Shop Access Rules" [level=3, ref=e116]
+- paragraph
+  - StaticText "Control which products are accessible or purchasable based on membership conditions. Turn your store into a members-only shopping experience."
+- heading "How Shop Access Rules Work" [level=4, ref=e117]
+- list
+  - listitem [level=1]
+    - ListMarker "1. "
+    - StaticText "Define who qualifies using the IF conditions — for example, customers with an active subscription, users with a certain role, or customers who purchased a specific product."
+  - listitem [level=1]
+    - ListMarker "2. "
+    - StaticText "Choose what to restrict in the TARGET section — the full store, specific products, or specific categories. Use exclusions to exempt certain products such as free samples or sign-up products."
+  - listitem [level=1]
+    - ListMarker "3. "
+    - StaticText "Configure the THEN section — show a 404, redirect users, or show the product page with purchasing blocked and a custom message displayed."
+  - listitem [level=1]
+    - ListMarker "4. "
+    - StaticText "Non-qualifying users are blocked at every entry point: product pages, direct URLs, add-to-cart links, the cart, checkout, and the WooCommerce Store API (for block-based storefronts)."
+  - listitem [level=1]
+    - ListMarker "5. "
+    - StaticText "When a customer gains a qualifying membership (e.g. subscribes to the required plan), restrictions are immediately lifted."
+- paragraph
+  - strong
+    - StaticText "Note:"
+  - StaticText " Administrators and shop managers always bypass shop access restrictions. Products hidden via the 404 action are automatically excluded from XML sitemaps and product recommendation widgets."
+- LabelText [ref=e118] clickable [onclick]
+  - checkbox [checked=false, ref=e129]
+- generic [ref=e119] clickable [onclick]
+  - textbox "Rule name" [ref=e130]: Footer QA Shop Access
+    - StaticText "Footer QA Shop Access"
+  - StaticText "Shop Access Rule"
+  - StaticText " #"
+  - StaticText "1"
+- generic [ref=e120] clickable [cursor:pointer, onclick]
+- generic [ref=e121] clickable [onclick]
+  - button "Move up" [disabled, ref=e131]
+  - button "Move down" [disabled, ref=e132]
+  - button "Duplicate" [ref=e133]
+  - button "Delete" [ref=e134]
+- button "Collapse" [ref=e122]
+- StaticText "TARGET"
+- LabelText
+  - StaticText "Restrict access to"
+- combobox [expanded=false, ref=e123]: Full store (all products)
+  - MenuListPopup
+    - option "Full store (all products)" [selected, ref=e138]
+    - option "Specific products" [ref=e139]
+    - option "Specific categories" [ref=e140]
+- paragraph
+  - StaticText "Select which products are restricted for non-qualifying users."
+- StaticText "EXCLUSIONS"
+- LabelText
+  - StaticText "Exclude products"
+- generic [ref=e135] clickable [cursor:pointer, onclick]
+  - StaticText "Search products to exclude..."
+- paragraph
+  - StaticText "These products will remain accessible even if they match the restriction scope above. Use this to exempt free samples, landing page products, or sign-up products."
+- LabelText
+  - StaticText "Exclude categories"
+- generic [ref=e136] clickable [cursor:pointer, onclick]
+  - StaticText "Search categories to exclude..."
+- paragraph
+  - StaticText "Products in these categories remain accessible regardless of the restriction scope."
+- StaticText "IF"
+- StaticText "User meets these conditions"
+- paragraph
+  - StaticText "No conditions added. Click below to add conditions."
+- button "Add Condition" [ref=e124]
+- button "Add Group" [ref=e125]
+- StaticText "THEN"
+- StaticText "Apply these actions"
+- LabelText
+  - StaticText "When a non-qualifying user visits a restricted product"
+- combobox [expanded=false, ref=e126]: Show product, block purchase
+  - MenuListPopup
+    - option "Show product, block purchase" [selected, ref=e141]
+    - option "Return 404 (product not found)" [ref=e142]
+    - option "Redirect to login page" [ref=e143]
+    - option "Redirect to a specific page" [ref=e144]
+- paragraph
+  - StaticText "The product page is visible but the Add to Cart button is hidden. A custom message is shown instead."
+- LabelText
+  - StaticText "Custom message"
+- textbox "This product is available to members only. Join now to unlock purchasing." [ref=e127]
+  - StaticText "This product is available to members only. Join now to unlock purchasing."
+- paragraph
+  - StaticText "This message replaces the Add to Cart button on the product page for non-qualifying users. Basic HTML is allowed."
+- strong
+  - StaticText "How it works:"
+- list
+  - listitem [level=1]
+    - ListMarker "• "
+    - StaticText "Product pages remain visible and indexable by search engines, but the Add to Cart button and purchase form are removed for non-qualifying users."
+  - listitem [level=1]
+    - ListMarker "• "
+    - StaticText "Your custom message is displayed in place of the purchase button, encouraging users to join."
+  - listitem [level=1]
+    - ListMarker "• "
+    - StaticText "Direct add-to-cart links (?add-to-cart=ID) and REST API / Store API requests are also blocked."
+  - listitem [level=1]
+    - ListMarker "• "
+    - StaticText "Administrators and shop managers always bypass shop access restrictions so they can manage the store normally."
+  - listitem [level=1]
+    - ListMarker "• "
+    - StaticText "If multiple rules match the same product, the first matching rule wins (rules are processed in order)."
+  - listitem [level=1]
+    - ListMarker "• "
+    - StaticText "Cart and checkout validation ensures restricted items cannot be purchased even if added before restrictions applied."
+- StaticText "SCHEDULE"
+- StaticText "Delay access after subscription starts"
+- checkbox "Delay this rule after subscription starts" [checked=false, ref=e128]
+- button "Add New Rule" [ref=e137]
+- generic
+  - button "Save Rules" [ref=e145]
+  - button "Discard Changes" [ref=e146]
+  - link "Easy Setup & Import/Export" [ref=e147]
+  - paragraph
+    - StaticText "Settings last saved: September 14, 2026 10:45 am (UTC)"
+- StaticText "Shop Access Rule"
+- StaticText " #"
+- StaticText "1"
+- option "Full store (all products)" [selected, ref=e138]
+- option "Specific products" [ref=e139]
+- option "Specific categories" [ref=e140]
+- StaticText "Search products to exclude..."
+- StaticText "Search categories to exclude..."
+- option "Show product, block purchase" [selected, ref=e141]
+- option "Return 404 (product not found)" [ref=e142]
+- option "Redirect to login page" [ref=e143]
+- option "Redirect to a specific page" [ref=e144]

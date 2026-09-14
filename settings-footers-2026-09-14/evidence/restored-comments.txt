@@ -1,0 +1,155 @@
+- generic
+  - sectionheader
+    - navigation
+      - list
+        - listitem [level=1]
+          - link "Role Mapping" [ref=e122]
+        - listitem [level=1]
+          - link "Discount" [ref=e123]
+        - listitem [level=1]
+          - link "Shop Access" [ref=e124]
+        - listitem [level=1]
+          - link "URL" [ref=e125]
+        - listitem [level=1]
+          - link "Post Types" [ref=e126]
+        - listitem [level=1]
+          - link "Downloads" [ref=e127]
+        - listitem [level=1]
+          - link "Comments" [ref=e128]
+        - listitem [level=1]
+          - link "Purchase Limit" [ref=e129]
+        - listitem [level=1]
+          - link "Conflicts" [ref=e130]
+        - listitem [level=1]
+          - link "Login Limit" [ref=e131]
+    - StaticText "Configure memberships, content gating, role mapping, and access restrictions"
+  - link "Go Back" [ref=e31]
+  - main
+    - heading "Comment Restriction Rules" [level=3, ref=e116]
+    - paragraph
+      - StaticText "Control who can read and post comments based on membership conditions. Keep discussions members-only, or open reading to everyone while reserving replies for subscribers."
+    - heading "How Comment Rules Work" [level=4, ref=e117]
+    - list
+      - listitem [level=1]
+        - ListMarker "1. "
+        - StaticText "Define who is allowed to comment using the IF conditions — for example, customers with an active subscription, users with a certain role, or simply logged-in visitors. Users who do NOT meet the conditions are the ones that get restricted."
+      - listitem [level=1]
+        - ListMarker "2. "
+        - StaticText "Choose what the rule covers in the TARGET section — all content, selected post types, posts in specific taxonomy terms, or individual posts."
+      - listitem [level=1]
+        - ListMarker "3. "
+        - StaticText "Pick a restriction mode in the THEN section — hide comments and block posting, allow reading but block posting, or hide comments while keeping posting open."
+      - listitem [level=1]
+        - ListMarker "4. "
+        - StaticText "Restricted users see your custom message where the comments or the comment form would normally be, on both classic and block themes."
+      - listitem [level=1]
+        - ListMarker "5. "
+        - StaticText "Blocking is enforced on the server, so a restricted visitor cannot post by crafting a direct request or by using the REST API."
+    - paragraph
+      - strong
+        - StaticText "Note:"
+      - StaticText " Administrators and users who can moderate comments always bypass these rules. If several rules match the same content, the first matching rule wins."
+    - paragraph
+      - StaticText "No rules configured yet."
+    - button "Add New Rule" [ref=e118]
+    - generic
+      - button "Save Rules" [ref=e119]
+      - button "Discard Changes" [ref=e120]
+      - link "Easy Setup & Import/Export" [ref=e121]
+      - paragraph
+        - StaticText "Settings last saved: September 10, 2026 12:59 pm (UTC)"
+- generic
+  - sectionheader
+    - navigation
+      - list
+        - listitem [level=1]
+          - link "Role Mapping" [ref=e122]
+        - listitem [level=1]
+          - link "Discount" [ref=e123]
+        - listitem [level=1]
+          - link "Shop Access" [ref=e124]
+        - listitem [level=1]
+          - link "URL" [ref=e125]
+        - listitem [level=1]
+          - link "Post Types" [ref=e126]
+        - listitem [level=1]
+          - link "Downloads" [ref=e127]
+        - listitem [level=1]
+          - link "Comments" [ref=e128]
+        - listitem [level=1]
+          - link "Purchase Limit" [ref=e129]
+        - listitem [level=1]
+          - link "Conflicts" [ref=e130]
+        - listitem [level=1]
+          - link "Login Limit" [ref=e131]
+    - StaticText "Configure memberships, content gating, role mapping, and access restrictions"
+  - link "Go Back" [ref=e31]
+  - main
+    - heading "Comment Restriction Rules" [level=3, ref=e116]
+    - paragraph
+      - StaticText "Control who can read and post comments based on membership conditions. Keep discussions members-only, or open reading to everyone while reserving replies for subscribers."
+    - heading "How Comment Rules Work" [level=4, ref=e117]
+    - list
+      - listitem [level=1]
+        - ListMarker "1. "
+        - StaticText "Define who is allowed to comment using the IF conditions — for example, customers with an active subscription, users with a certain role, or simply logged-in visitors. Users who do NOT meet the conditions are the ones that get restricted."
+      - listitem [level=1]
+        - ListMarker "2. "
+        - StaticText "Choose what the rule covers in the TARGET section — all content, selected post types, posts in specific taxonomy terms, or individual posts."
+      - listitem [level=1]
+        - ListMarker "3. "
+        - StaticText "Pick a restriction mode in the THEN section — hide comments and block posting, allow reading but block posting, or hide comments while keeping posting open."
+      - listitem [level=1]
+        - ListMarker "4. "
+        - StaticText "Restricted users see your custom message where the comments or the comment form would normally be, on both classic and block themes."
+      - listitem [level=1]
+        - ListMarker "5. "
+        - StaticText "Blocking is enforced on the server, so a restricted visitor cannot post by crafting a direct request or by using the REST API."
+    - paragraph
+      - strong
+        - StaticText "Note:"
+      - StaticText " Administrators and users who can moderate comments always bypass these rules. If several rules match the same content, the first matching rule wins."
+    - paragraph
+      - StaticText "No rules configured yet."
+    - button "Add New Rule" [ref=e118]
+    - generic
+      - button "Save Rules" [ref=e119]
+      - button "Discard Changes" [ref=e120]
+      - link "Easy Setup & Import/Export" [ref=e121]
+      - paragraph
+        - StaticText "Settings last saved: September 10, 2026 12:59 pm (UTC)"
+- link "Go Back" [ref=e31]
+- StaticText "Configure memberships, content gating, role mapping, and access restrictions"
+- heading "Comment Restriction Rules" [level=3, ref=e116]
+- paragraph
+  - StaticText "Control who can read and post comments based on membership conditions. Keep discussions members-only, or open reading to everyone while reserving replies for subscribers."
+- heading "How Comment Rules Work" [level=4, ref=e117]
+- list
+  - listitem [level=1]
+    - ListMarker "1. "
+    - StaticText "Define who is allowed to comment using the IF conditions — for example, customers with an active subscription, users with a certain role, or simply logged-in visitors. Users who do NOT meet the conditions are the ones that get restricted."
+  - listitem [level=1]
+    - ListMarker "2. "
+    - StaticText "Choose what the rule covers in the TARGET section — all content, selected post types, posts in specific taxonomy terms, or individual posts."
+  - listitem [level=1]
+    - ListMarker "3. "
+    - StaticText "Pick a restriction mode in the THEN section — hide comments and block posting, allow reading but block posting, or hide comments while keeping posting open."
+  - listitem [level=1]
+    - ListMarker "4. "
+    - StaticText "Restricted users see your custom message where the comments or the comment form would normally be, on both classic and block themes."
+  - listitem [level=1]
+    - ListMarker "5. "
+    - StaticText "Blocking is enforced on the server, so a restricted visitor cannot post by crafting a direct request or by using the REST API."
+- paragraph
+  - strong
+    - StaticText "Note:"
+  - StaticText " Administrators and users who can moderate comments always bypass these rules. If several rules match the same content, the first matching rule wins."
+- paragraph
+  - StaticText "No rules configured yet."
+- button "Add New Rule" [ref=e118]
+- generic
+  - button "Save Rules" [ref=e119]
+  - button "Discard Changes" [ref=e120]
+  - link "Easy Setup & Import/Export" [ref=e121]
+  - paragraph
+    - StaticText "Settings last saved: September 10, 2026 12:59 pm (UTC)"

@@ -1,0 +1,149 @@
+- generic
+  - sectionheader
+    - navigation
+      - list
+        - listitem [level=1]
+          - link "Retention Flow" [ref=e124]
+    - StaticText "Configure cancellation reasons and retention offers to reduce churn"
+  - link "Go Back" [ref=e31]
+  - main
+    - generic
+      - heading "Cancellation Reasons" [level=3, ref=e116]
+      - paragraph
+        - StaticText "Configure the reasons customers can select when cancelling their subscriptions"
+      - switch "Require Cancellation Reason" [checked=true, ref=e117]
+      - LabelText [ref=e118] clickable [cursor:pointer, onclick]
+        - StaticText "Require Cancellation Reason"
+      - StaticText "When enabled, customers must select a reason when cancelling from My Account. This helps you understand why customers are leaving."
+      - heading "Cancellation Reason Options" [level=3, ref=e119]
+      - paragraph
+        - StaticText "Add, edit, or remove the reasons customers can choose from. Drag to reorder."
+      - generic
+        - button "+ Add Reason" [ref=e120]
+          - StaticText "+ Add Reason"
+        - status
+      - StaticText "Tip: Include an \"Other\" option with a key of \"other\" to allow customers to provide custom feedback."
+      - heading "Retention Offers" [level=3, ref=e121]
+      - paragraph
+        - StaticText "Show special offers to customers before they cancel based on their selected reason"
+      - switch "Enable Retention Offers" [checked=false, ref=e122]
+      - LabelText [ref=e123] clickable [cursor:pointer, onclick]
+        - StaticText "Enable Retention Offers"
+      - StaticText "When enabled, customers will see targeted retention offers based on their cancellation reason. This can significantly reduce churn."
+      - generic
+        - button "Save Settings" [ref=e125]
+        - button "Discard Changes" [ref=e126]
+        - link "Easy Setup & Import/Export" [ref=e127]
+        - paragraph
+          - StaticText "Settings last saved: September 14, 2026 10:57 am (UTC)"
+- generic
+  - sectionheader
+    - navigation
+      - list
+        - listitem [level=1]
+          - link "Retention Flow" [ref=e124]
+    - StaticText "Configure cancellation reasons and retention offers to reduce churn"
+  - link "Go Back" [ref=e31]
+  - main
+    - generic
+      - heading "Cancellation Reasons" [level=3, ref=e116]
+      - paragraph
+        - StaticText "Configure the reasons customers can select when cancelling their subscriptions"
+      - switch "Require Cancellation Reason" [checked=true, ref=e117]
+      - LabelText [ref=e118] clickable [cursor:pointer, onclick]
+        - StaticText "Require Cancellation Reason"
+      - StaticText "When enabled, customers must select a reason when cancelling from My Account. This helps you understand why customers are leaving."
+      - heading "Cancellation Reason Options" [level=3, ref=e119]
+      - paragraph
+        - StaticText "Add, edit, or remove the reasons customers can choose from. Drag to reorder."
+      - generic
+        - button "+ Add Reason" [ref=e120]
+          - StaticText "+ Add Reason"
+        - status
+      - StaticText "Tip: Include an \"Other\" option with a key of \"other\" to allow customers to provide custom feedback."
+      - heading "Retention Offers" [level=3, ref=e121]
+      - paragraph
+        - StaticText "Show special offers to customers before they cancel based on their selected reason"
+      - switch "Enable Retention Offers" [checked=false, ref=e122]
+      - LabelText [ref=e123] clickable [cursor:pointer, onclick]
+        - StaticText "Enable Retention Offers"
+      - StaticText "When enabled, customers will see targeted retention offers based on their cancellation reason. This can significantly reduce churn."
+      - generic
+        - button "Save Settings" [ref=e125]
+        - button "Discard Changes" [ref=e126]
+        - link "Easy Setup & Import/Export" [ref=e127]
+        - paragraph
+          - StaticText "Settings last saved: September 14, 2026 10:57 am (UTC)"
+- link "Go Back" [ref=e31]
+- StaticText "Configure cancellation reasons and retention offers to reduce churn"
+- generic
+  - heading "Cancellation Reasons" [level=3, ref=e116]
+  - paragraph
+    - StaticText "Configure the reasons customers can select when cancelling their subscriptions"
+  - switch "Require Cancellation Reason" [checked=true, ref=e117]
+  - LabelText [ref=e118] clickable [cursor:pointer, onclick]
+    - StaticText "Require Cancellation Reason"
+  - StaticText "When enabled, customers must select a reason when cancelling from My Account. This helps you understand why customers are leaving."
+  - heading "Cancellation Reason Options" [level=3, ref=e119]
+  - paragraph
+    - StaticText "Add, edit, or remove the reasons customers can choose from. Drag to reorder."
+  - generic
+    - button "+ Add Reason" [ref=e120]
+      - StaticText "+ Add Reason"
+    - status
+  - StaticText "Tip: Include an \"Other\" option with a key of \"other\" to allow customers to provide custom feedback."
+  - heading "Retention Offers" [level=3, ref=e121]
+  - paragraph
+    - StaticText "Show special offers to customers before they cancel based on their selected reason"
+  - switch "Enable Retention Offers" [checked=false, ref=e122]
+  - LabelText [ref=e123] clickable [cursor:pointer, onclick]
+    - StaticText "Enable Retention Offers"
+  - StaticText "When enabled, customers will see targeted retention offers based on their cancellation reason. This can significantly reduce churn."
+  - generic
+    - button "Save Settings" [ref=e125]
+    - button "Discard Changes" [ref=e126]
+    - link "Easy Setup & Import/Export" [ref=e127]
+    - paragraph
+      - StaticText "Settings last saved: September 14, 2026 10:57 am (UTC)"
+- heading "Cancellation Reasons" [level=3, ref=e116]
+- paragraph
+  - StaticText "Configure the reasons customers can select when cancelling their subscriptions"
+- switch "Require Cancellation Reason" [checked=true, ref=e117]
+- LabelText [ref=e118] clickable [cursor:pointer, onclick]
+  - StaticText "Require Cancellation Reason"
+- StaticText "When enabled, customers must select a reason when cancelling from My Account. This helps you understand why customers are leaving."
+- heading "Cancellation Reason Options" [level=3, ref=e119]
+- paragraph
+  - StaticText "Add, edit, or remove the reasons customers can choose from. Drag to reorder."
+- generic
+  - button "+ Add Reason" [ref=e120]
+    - StaticText "+ Add Reason"
+  - status
+- StaticText "Tip: Include an \"Other\" option with a key of \"other\" to allow customers to provide custom feedback."
+- heading "Retention Offers" [level=3, ref=e121]
+- paragraph
+  - StaticText "Show special offers to customers before they cancel based on their selected reason"
+- switch "Enable Retention Offers" [checked=false, ref=e122]
+- LabelText [ref=e123] clickable [cursor:pointer, onclick]
+  - StaticText "Enable Retention Offers"
+- StaticText "When enabled, customers will see targeted retention offers based on their cancellation reason. This can significantly reduce churn."
+- heading "Cancellation Reasons" [level=3, ref=e116]
+- paragraph
+  - StaticText "Configure the reasons customers can select when cancelling their subscriptions"
+- switch "Require Cancellation Reason" [checked=true, ref=e117]
+- LabelText [ref=e118] clickable [cursor:pointer, onclick]
+  - StaticText "Require Cancellation Reason"
+- heading "Cancellation Reason Options" [level=3, ref=e119]
+- paragraph
+  - StaticText "Add, edit, or remove the reasons customers can choose from. Drag to reorder."
+- button "+ Add Reason" [ref=e120]
+  - StaticText "+ Add Reason"
+- heading "Retention Offers" [level=3, ref=e121]
+- paragraph
+  - StaticText "Show special offers to customers before they cancel based on their selected reason"
+- switch "Enable Retention Offers" [checked=false, ref=e122]
+- LabelText [ref=e123] clickable [cursor:pointer, onclick]
+  - StaticText "Enable Retention Offers"
+- StaticText "When enabled, customers must select a reason when cancelling from My Account. This helps you understand why customers are leaving."
+- StaticText "Tip: Include an \"Other\" option with a key of \"other\" to allow customers to provide custom feedback."
+- StaticText "When enabled, customers will see targeted retention offers based on their cancellation reason. This can significantly reduce churn."

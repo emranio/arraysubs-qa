@@ -1,0 +1,372 @@
+- generic
+  - sectionheader
+    - navigation
+      - list
+        - listitem [level=1]
+          - link "Role Mapping" [ref=e157]
+        - listitem [level=1]
+          - link "Discount" [ref=e158]
+        - listitem [level=1]
+          - link "Shop Access" [ref=e159]
+        - listitem [level=1]
+          - link "URL" [ref=e160]
+        - listitem [level=1]
+          - link "Post Types" [ref=e161]
+        - listitem [level=1]
+          - link "Downloads" [ref=e162]
+        - listitem [level=1]
+          - link "Comments" [ref=e163]
+        - listitem [level=1]
+          - link "Purchase Limit" [ref=e164]
+        - listitem [level=1]
+          - link "Conflicts" [ref=e165]
+        - listitem [level=1]
+          - link "Login Limit" [ref=e166]
+    - StaticText "Configure memberships, content gating, role mapping, and access restrictions"
+  - link "Go Back" [ref=e31]
+  - main
+    - heading "CPT Rules" [level=3, ref=e116]
+    - paragraph
+      - StaticText "Members Access to posts, pages, custom post types, and taxonomies. Rules can target entire post types, specific categories/tags, or individual posts."
+    - heading "How CPT Rules Work" [level=4, ref=e117]
+    - list
+      - listitem [level=1]
+        - ListMarker "1. "
+        - StaticText "Define who gets access using the IF conditions — for example, active subscribers to a membership product, customers with a qualifying order, or users with a specific role."
+      - listitem [level=1]
+        - ListMarker "2. "
+        - StaticText "Choose what to protect in the TARGET section — an entire post type, specific taxonomy terms, or individual posts/pages by ID."
+      - listitem [level=1]
+        - ListMarker "3. "
+        - StaticText "Configure Archive Behavior to control how restricted content appears in listings, search results, and archives: hide it completely, show it with a lock indicator, or show it normally while restricting the actual content."
+      - listitem [level=1]
+        - ListMarker "4. "
+        - StaticText "Configure the THEN section — redirect the visitor, show a custom message, or return a 403 forbidden response on direct access."
+      - listitem [level=1]
+        - ListMarker "5. "
+        - StaticText "When a customer gains the required membership, access is granted automatically. If they lose eligibility later, future visits follow the restricted behavior again."
+    - paragraph
+      - strong
+        - StaticText "Note:"
+      - StaticText " Use CPT Rules for posts, pages, lessons, directories, or other content types. If you only need to protect raw URL patterns, URL Rules are usually the simpler option."
+    - paragraph
+      - strong
+        - StaticText "Priority:"
+      - StaticText " A restriction set directly on a post or page (Access Restriction in the editor sidebar or metabox) always wins. When a post carries its own restriction, the CPT rules below are skipped for that post entirely — including their archive behavior and denied action. Overlaps are listed on the Access-Rule Conflicts screen."
+    - LabelText [ref=e118] clickable [onclick]
+      - checkbox [checked=false, ref=e131]
+    - generic [ref=e119] clickable [onclick]
+      - textbox "Rule name" [ref=e132]: Footer QA Post Types
+        - StaticText "Footer QA Post Types"
+      - StaticText "CPT Rule"
+      - StaticText " #"
+      - StaticText "1"
+    - generic [ref=e120] clickable [cursor:pointer, onclick]
+    - generic [ref=e121] clickable [onclick]
+      - button "Move up" [disabled, ref=e133]
+      - button "Move down" [disabled, ref=e134]
+      - button "Duplicate" [ref=e135]
+      - button "Delete" [ref=e136]
+    - button "Collapse" [ref=e122]
+    - StaticText "TARGET"
+    - LabelText
+      - StaticText "Target Type"
+    - combobox [expanded=false, ref=e123]: Entire Post Type
+      - MenuListPopup
+        - option "Entire Post Type" [selected, ref=e138]
+        - option "By Taxonomy/Category" [ref=e139]
+        - option "Specific Posts/Pages" [ref=e140]
+    - LabelText
+      - StaticText "Post Type"
+    - combobox [expanded=false, ref=e124]: Posts
+      - MenuListPopup
+        - option "Coupons" [ref=e141]
+        - option "Navigation Menus" [ref=e142]
+        - option "Orders" [ref=e143]
+        - option "Pages" [ref=e144]
+        - option "Patterns" [ref=e145]
+        - option "Posts" [selected, ref=e146]
+        - option "Products" [ref=e147]
+    - LabelText
+      - StaticText "Archive Behavior"
+    - combobox [expanded=false, ref=e125]: Hide from archives/listings
+      - MenuListPopup
+        - option "Hide from archives/listings" [selected, ref=e148]
+        - option "Show with lock icon" [ref=e149]
+        - option "Show normally (restrict content only)" [ref=e150]
+    - paragraph
+      - StaticText "How restricted content appears in archives and search results"
+    - StaticText "IF"
+    - StaticText "User meets these conditions"
+    - paragraph
+      - StaticText "No conditions added. Click below to add conditions."
+    - button "Add Condition" [ref=e126]
+    - button "Add Group" [ref=e127]
+    - StaticText "THEN"
+    - StaticText "Apply these actions"
+    - LabelText
+      - StaticText "Action when denied"
+    - combobox [expanded=false, ref=e128]: Redirect to URL
+      - MenuListPopup
+        - option "Redirect to URL" [selected, ref=e151]
+        - option "Show message" [ref=e152]
+        - option "Show 403 forbidden" [ref=e153]
+    - LabelText
+      - StaticText "Redirect URL"
+    - textbox "/pricing/" [ref=e129]
+    - StaticText "SCHEDULE"
+    - StaticText "Delay access after subscription starts"
+    - checkbox "Delay this rule after subscription starts" [checked=false, ref=e130]
+    - button "Add New Rule" [ref=e137]
+    - generic
+      - button "Save Rules" [ref=e154]
+      - button "Discard Changes" [ref=e155]
+      - link "Easy Setup & Import/Export" [ref=e156]
+      - paragraph
+        - StaticText "Settings last saved: September 14, 2026 10:45 am (UTC)"
+- generic
+  - sectionheader
+    - navigation
+      - list
+        - listitem [level=1]
+          - link "Role Mapping" [ref=e157]
+        - listitem [level=1]
+          - link "Discount" [ref=e158]
+        - listitem [level=1]
+          - link "Shop Access" [ref=e159]
+        - listitem [level=1]
+          - link "URL" [ref=e160]
+        - listitem [level=1]
+          - link "Post Types" [ref=e161]
+        - listitem [level=1]
+          - link "Downloads" [ref=e162]
+        - listitem [level=1]
+          - link "Comments" [ref=e163]
+        - listitem [level=1]
+          - link "Purchase Limit" [ref=e164]
+        - listitem [level=1]
+          - link "Conflicts" [ref=e165]
+        - listitem [level=1]
+          - link "Login Limit" [ref=e166]
+    - StaticText "Configure memberships, content gating, role mapping, and access restrictions"
+  - link "Go Back" [ref=e31]
+  - main
+    - heading "CPT Rules" [level=3, ref=e116]
+    - paragraph
+      - StaticText "Members Access to posts, pages, custom post types, and taxonomies. Rules can target entire post types, specific categories/tags, or individual posts."
+    - heading "How CPT Rules Work" [level=4, ref=e117]
+    - list
+      - listitem [level=1]
+        - ListMarker "1. "
+        - StaticText "Define who gets access using the IF conditions — for example, active subscribers to a membership product, customers with a qualifying order, or users with a specific role."
+      - listitem [level=1]
+        - ListMarker "2. "
+        - StaticText "Choose what to protect in the TARGET section — an entire post type, specific taxonomy terms, or individual posts/pages by ID."
+      - listitem [level=1]
+        - ListMarker "3. "
+        - StaticText "Configure Archive Behavior to control how restricted content appears in listings, search results, and archives: hide it completely, show it with a lock indicator, or show it normally while restricting the actual content."
+      - listitem [level=1]
+        - ListMarker "4. "
+        - StaticText "Configure the THEN section — redirect the visitor, show a custom message, or return a 403 forbidden response on direct access."
+      - listitem [level=1]
+        - ListMarker "5. "
+        - StaticText "When a customer gains the required membership, access is granted automatically. If they lose eligibility later, future visits follow the restricted behavior again."
+    - paragraph
+      - strong
+        - StaticText "Note:"
+      - StaticText " Use CPT Rules for posts, pages, lessons, directories, or other content types. If you only need to protect raw URL patterns, URL Rules are usually the simpler option."
+    - paragraph
+      - strong
+        - StaticText "Priority:"
+      - StaticText " A restriction set directly on a post or page (Access Restriction in the editor sidebar or metabox) always wins. When a post carries its own restriction, the CPT rules below are skipped for that post entirely — including their archive behavior and denied action. Overlaps are listed on the Access-Rule Conflicts screen."
+    - LabelText [ref=e118] clickable [onclick]
+      - checkbox [checked=false, ref=e131]
+    - generic [ref=e119] clickable [onclick]
+      - textbox "Rule name" [ref=e132]: Footer QA Post Types
+        - StaticText "Footer QA Post Types"
+      - StaticText "CPT Rule"
+      - StaticText " #"
+      - StaticText "1"
+    - generic [ref=e120] clickable [cursor:pointer, onclick]
+    - generic [ref=e121] clickable [onclick]
+      - button "Move up" [disabled, ref=e133]
+      - button "Move down" [disabled, ref=e134]
+      - button "Duplicate" [ref=e135]
+      - button "Delete" [ref=e136]
+    - button "Collapse" [ref=e122]
+    - StaticText "TARGET"
+    - LabelText
+      - StaticText "Target Type"
+    - combobox [expanded=false, ref=e123]: Entire Post Type
+      - MenuListPopup
+        - option "Entire Post Type" [selected, ref=e138]
+        - option "By Taxonomy/Category" [ref=e139]
+        - option "Specific Posts/Pages" [ref=e140]
+    - LabelText
+      - StaticText "Post Type"
+    - combobox [expanded=false, ref=e124]: Posts
+      - MenuListPopup
+        - option "Coupons" [ref=e141]
+        - option "Navigation Menus" [ref=e142]
+        - option "Orders" [ref=e143]
+        - option "Pages" [ref=e144]
+        - option "Patterns" [ref=e145]
+        - option "Posts" [selected, ref=e146]
+        - option "Products" [ref=e147]
+    - LabelText
+      - StaticText "Archive Behavior"
+    - combobox [expanded=false, ref=e125]: Hide from archives/listings
+      - MenuListPopup
+        - option "Hide from archives/listings" [selected, ref=e148]
+        - option "Show with lock icon" [ref=e149]
+        - option "Show normally (restrict content only)" [ref=e150]
+    - paragraph
+      - StaticText "How restricted content appears in archives and search results"
+    - StaticText "IF"
+    - StaticText "User meets these conditions"
+    - paragraph
+      - StaticText "No conditions added. Click below to add conditions."
+    - button "Add Condition" [ref=e126]
+    - button "Add Group" [ref=e127]
+    - StaticText "THEN"
+    - StaticText "Apply these actions"
+    - LabelText
+      - StaticText "Action when denied"
+    - combobox [expanded=false, ref=e128]: Redirect to URL
+      - MenuListPopup
+        - option "Redirect to URL" [selected, ref=e151]
+        - option "Show message" [ref=e152]
+        - option "Show 403 forbidden" [ref=e153]
+    - LabelText
+      - StaticText "Redirect URL"
+    - textbox "/pricing/" [ref=e129]
+    - StaticText "SCHEDULE"
+    - StaticText "Delay access after subscription starts"
+    - checkbox "Delay this rule after subscription starts" [checked=false, ref=e130]
+    - button "Add New Rule" [ref=e137]
+    - generic
+      - button "Save Rules" [ref=e154]
+      - button "Discard Changes" [ref=e155]
+      - link "Easy Setup & Import/Export" [ref=e156]
+      - paragraph
+        - StaticText "Settings last saved: September 14, 2026 10:45 am (UTC)"
+- link "Go Back" [ref=e31]
+- StaticText "Configure memberships, content gating, role mapping, and access restrictions"
+- heading "CPT Rules" [level=3, ref=e116]
+- paragraph
+  - StaticText "Members Access to posts, pages, custom post types, and taxonomies. Rules can target entire post types, specific categories/tags, or individual posts."
+- heading "How CPT Rules Work" [level=4, ref=e117]
+- list
+  - listitem [level=1]
+    - ListMarker "1. "
+    - StaticText "Define who gets access using the IF conditions — for example, active subscribers to a membership product, customers with a qualifying order, or users with a specific role."
+  - listitem [level=1]
+    - ListMarker "2. "
+    - StaticText "Choose what to protect in the TARGET section — an entire post type, specific taxonomy terms, or individual posts/pages by ID."
+  - listitem [level=1]
+    - ListMarker "3. "
+    - StaticText "Configure Archive Behavior to control how restricted content appears in listings, search results, and archives: hide it completely, show it with a lock indicator, or show it normally while restricting the actual content."
+  - listitem [level=1]
+    - ListMarker "4. "
+    - StaticText "Configure the THEN section — redirect the visitor, show a custom message, or return a 403 forbidden response on direct access."
+  - listitem [level=1]
+    - ListMarker "5. "
+    - StaticText "When a customer gains the required membership, access is granted automatically. If they lose eligibility later, future visits follow the restricted behavior again."
+- paragraph
+  - strong
+    - StaticText "Note:"
+  - StaticText " Use CPT Rules for posts, pages, lessons, directories, or other content types. If you only need to protect raw URL patterns, URL Rules are usually the simpler option."
+- paragraph
+  - strong
+    - StaticText "Priority:"
+  - StaticText " A restriction set directly on a post or page (Access Restriction in the editor sidebar or metabox) always wins. When a post carries its own restriction, the CPT rules below are skipped for that post entirely — including their archive behavior and denied action. Overlaps are listed on the Access-Rule Conflicts screen."
+- LabelText [ref=e118] clickable [onclick]
+  - checkbox [checked=false, ref=e131]
+- generic [ref=e119] clickable [onclick]
+  - textbox "Rule name" [ref=e132]: Footer QA Post Types
+    - StaticText "Footer QA Post Types"
+  - StaticText "CPT Rule"
+  - StaticText " #"
+  - StaticText "1"
+- generic [ref=e120] clickable [cursor:pointer, onclick]
+- generic [ref=e121] clickable [onclick]
+  - button "Move up" [disabled, ref=e133]
+  - button "Move down" [disabled, ref=e134]
+  - button "Duplicate" [ref=e135]
+  - button "Delete" [ref=e136]
+- button "Collapse" [ref=e122]
+- StaticText "TARGET"
+- LabelText
+  - StaticText "Target Type"
+- combobox [expanded=false, ref=e123]: Entire Post Type
+  - MenuListPopup
+    - option "Entire Post Type" [selected, ref=e138]
+    - option "By Taxonomy/Category" [ref=e139]
+    - option "Specific Posts/Pages" [ref=e140]
+- LabelText
+  - StaticText "Post Type"
+- combobox [expanded=false, ref=e124]: Posts
+  - MenuListPopup
+    - option "Coupons" [ref=e141]
+    - option "Navigation Menus" [ref=e142]
+    - option "Orders" [ref=e143]
+    - option "Pages" [ref=e144]
+    - option "Patterns" [ref=e145]
+    - option "Posts" [selected, ref=e146]
+    - option "Products" [ref=e147]
+- LabelText
+  - StaticText "Archive Behavior"
+- combobox [expanded=false, ref=e125]: Hide from archives/listings
+  - MenuListPopup
+    - option "Hide from archives/listings" [selected, ref=e148]
+    - option "Show with lock icon" [ref=e149]
+    - option "Show normally (restrict content only)" [ref=e150]
+- paragraph
+  - StaticText "How restricted content appears in archives and search results"
+- StaticText "IF"
+- StaticText "User meets these conditions"
+- paragraph
+  - StaticText "No conditions added. Click below to add conditions."
+- button "Add Condition" [ref=e126]
+- button "Add Group" [ref=e127]
+- StaticText "THEN"
+- StaticText "Apply these actions"
+- LabelText
+  - StaticText "Action when denied"
+- combobox [expanded=false, ref=e128]: Redirect to URL
+  - MenuListPopup
+    - option "Redirect to URL" [selected, ref=e151]
+    - option "Show message" [ref=e152]
+    - option "Show 403 forbidden" [ref=e153]
+- LabelText
+  - StaticText "Redirect URL"
+- textbox "/pricing/" [ref=e129]
+- StaticText "SCHEDULE"
+- StaticText "Delay access after subscription starts"
+- checkbox "Delay this rule after subscription starts" [checked=false, ref=e130]
+- button "Add New Rule" [ref=e137]
+- generic
+  - button "Save Rules" [ref=e154]
+  - button "Discard Changes" [ref=e155]
+  - link "Easy Setup & Import/Export" [ref=e156]
+  - paragraph
+    - StaticText "Settings last saved: September 14, 2026 10:45 am (UTC)"
+- StaticText "CPT Rule"
+- StaticText " #"
+- StaticText "1"
+- option "Entire Post Type" [selected, ref=e138]
+- option "By Taxonomy/Category" [ref=e139]
+- option "Specific Posts/Pages" [ref=e140]
+- option "Coupons" [ref=e141]
+- option "Navigation Menus" [ref=e142]
+- option "Orders" [ref=e143]
+- option "Pages" [ref=e144]
+- option "Patterns" [ref=e145]
+- option "Posts" [selected, ref=e146]
+- option "Products" [ref=e147]
+- option "Hide from archives/listings" [selected, ref=e148]
+- option "Show with lock icon" [ref=e149]
+- option "Show normally (restrict content only)" [ref=e150]
+- option "Redirect to URL" [selected, ref=e151]
+- option "Show message" [ref=e152]
+- option "Show 403 forbidden" [ref=e153]

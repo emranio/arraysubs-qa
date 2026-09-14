@@ -1,0 +1,75 @@
+- generic
+  - sectionheader
+    - navigation
+      - list
+        - listitem [level=1]
+          - link "Profile Form" [ref=e124]
+        - listitem [level=1]
+          - link "My Account" [ref=e125]
+    - StaticText "Configure extra profile fields and avatar for customer accounts"
+  - link "Go Back" [ref=e31]
+  - main
+    - heading "Avatar Settings" [level=3, ref=e116]
+    - paragraph
+      - StaticText "Allow customers to upload a profile photo from their Account Details page."
+    - checkbox "Enable avatar upload" [checked=false, ref=e117]
+    - heading "Custom Profile Fields" [level=3, ref=e118]
+    - paragraph
+      - StaticText "Define extra fields that appear on the WooCommerce Account Details page and in the WP Admin user profile."
+    - checkbox "Enable custom profile fields" [checked=true, ref=e119]
+    - paragraph
+      - StaticText "No custom profile fields defined yet. Click the button below to add your first field."
+    - button "Add Field" [ref=e120]
+    - generic
+      - button "Save Configuration" [ref=e121]
+      - button "Discard Changes" [ref=e122]
+      - link "Easy Setup & Import/Export" [ref=e123]
+      - paragraph
+        - StaticText "Settings last saved: September 10, 2026 12:59 pm (UTC)"
+- generic
+  - sectionheader
+    - navigation
+      - list
+        - listitem [level=1]
+          - link "Profile Form" [ref=e124]
+        - listitem [level=1]
+          - link "My Account" [ref=e125]
+    - StaticText "Configure extra profile fields and avatar for customer accounts"
+  - link "Go Back" [ref=e31]
+  - main
+    - heading "Avatar Settings" [level=3, ref=e116]
+    - paragraph
+      - StaticText "Allow customers to upload a profile photo from their Account Details page."
+    - checkbox "Enable avatar upload" [checked=false, ref=e117]
+    - heading "Custom Profile Fields" [level=3, ref=e118]
+    - paragraph
+      - StaticText "Define extra fields that appear on the WooCommerce Account Details page and in the WP Admin user profile."
+    - checkbox "Enable custom profile fields" [checked=true, ref=e119]
+    - paragraph
+      - StaticText "No custom profile fields defined yet. Click the button below to add your first field."
+    - button "Add Field" [ref=e120]
+    - generic
+      - button "Save Configuration" [ref=e121]
+      - button "Discard Changes" [ref=e122]
+      - link "Easy Setup & Import/Export" [ref=e123]
+      - paragraph
+        - StaticText "Settings last saved: September 10, 2026 12:59 pm (UTC)"
+- link "Go Back" [ref=e31]
+- StaticText "Configure extra profile fields and avatar for customer accounts"
+- heading "Avatar Settings" [level=3, ref=e116]
+- paragraph
+  - StaticText "Allow customers to upload a profile photo from their Account Details page."
+- checkbox "Enable avatar upload" [checked=false, ref=e117]
+- heading "Custom Profile Fields" [level=3, ref=e118]
+- paragraph
+  - StaticText "Define extra fields that appear on the WooCommerce Account Details page and in the WP Admin user profile."
+- checkbox "Enable custom profile fields" [checked=true, ref=e119]
+- paragraph
+  - StaticText "No custom profile fields defined yet. Click the button below to add your first field."
+- button "Add Field" [ref=e120]
+- generic
+  - button "Save Configuration" [ref=e121]
+  - button "Discard Changes" [ref=e122]
+  - link "Easy Setup & Import/Export" [ref=e123]
+  - paragraph
+    - StaticText "Settings last saved: September 10, 2026 12:59 pm (UTC)"

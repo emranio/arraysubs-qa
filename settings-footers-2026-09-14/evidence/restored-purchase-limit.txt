@@ -1,0 +1,155 @@
+- generic
+  - sectionheader
+    - navigation
+      - list
+        - listitem [level=1]
+          - link "Role Mapping" [ref=e122]
+        - listitem [level=1]
+          - link "Discount" [ref=e123]
+        - listitem [level=1]
+          - link "Shop Access" [ref=e124]
+        - listitem [level=1]
+          - link "URL" [ref=e125]
+        - listitem [level=1]
+          - link "Post Types" [ref=e126]
+        - listitem [level=1]
+          - link "Downloads" [ref=e127]
+        - listitem [level=1]
+          - link "Comments" [ref=e128]
+        - listitem [level=1]
+          - link "Purchase Limit" [ref=e129]
+        - listitem [level=1]
+          - link "Conflicts" [ref=e130]
+        - listitem [level=1]
+          - link "Login Limit" [ref=e131]
+    - StaticText "Configure memberships, content gating, role mapping, and access restrictions"
+  - link "Go Back" [ref=e31]
+  - main
+    - heading "Purchase Limit Rules" [level=3, ref=e116]
+    - paragraph
+      - StaticText "Cap how many units a shopper can buy. Reserve stock for members, limit trial customers, or stop guests from bulk-buying limited products."
+    - heading "How Purchase Limit Rules Work" [level=4, ref=e117]
+    - list
+      - listitem [level=1]
+        - ListMarker "1. "
+        - StaticText "Define who is evaluated using the IF conditions — for example, customers with an active subscription, users with a certain role, or logged-out visitors."
+      - listitem [level=1]
+        - ListMarker "2. "
+        - StaticText "Choose in the TARGET section whether the limit applies to shoppers who DO meet those conditions or to everyone who does NOT, then pick which products it covers."
+      - listitem [level=1]
+        - ListMarker "3. "
+        - StaticText "Configure the THEN section — cap each matching product on its own (per product) or the combined quantity of all matching products (per order total)."
+      - listitem [level=1]
+        - ListMarker "4. "
+        - StaticText "Limits are enforced everywhere: the product page quantity box, the cart, checkout, direct add-to-cart links, and the WooCommerce Store API."
+      - listitem [level=1]
+        - ListMarker "5. "
+        - StaticText "When a shopper's membership changes, the applicable limit changes with it on the very next request."
+    - paragraph
+      - strong
+        - StaticText "Note:"
+      - StaticText " Administrators and shop managers always bypass purchase limits. When several rules cap the same product, the strictest maximum wins, and a maximum of 0 blocks purchasing entirely."
+    - paragraph
+      - StaticText "No rules configured yet."
+    - button "Add New Rule" [ref=e118]
+    - generic
+      - button "Save Rules" [ref=e119]
+      - button "Discard Changes" [ref=e120]
+      - link "Easy Setup & Import/Export" [ref=e121]
+      - paragraph
+        - StaticText "Settings last saved: September 10, 2026 12:59 pm (UTC)"
+- generic
+  - sectionheader
+    - navigation
+      - list
+        - listitem [level=1]
+          - link "Role Mapping" [ref=e122]
+        - listitem [level=1]
+          - link "Discount" [ref=e123]
+        - listitem [level=1]
+          - link "Shop Access" [ref=e124]
+        - listitem [level=1]
+          - link "URL" [ref=e125]
+        - listitem [level=1]
+          - link "Post Types" [ref=e126]
+        - listitem [level=1]
+          - link "Downloads" [ref=e127]
+        - listitem [level=1]
+          - link "Comments" [ref=e128]
+        - listitem [level=1]
+          - link "Purchase Limit" [ref=e129]
+        - listitem [level=1]
+          - link "Conflicts" [ref=e130]
+        - listitem [level=1]
+          - link "Login Limit" [ref=e131]
+    - StaticText "Configure memberships, content gating, role mapping, and access restrictions"
+  - link "Go Back" [ref=e31]
+  - main
+    - heading "Purchase Limit Rules" [level=3, ref=e116]
+    - paragraph
+      - StaticText "Cap how many units a shopper can buy. Reserve stock for members, limit trial customers, or stop guests from bulk-buying limited products."
+    - heading "How Purchase Limit Rules Work" [level=4, ref=e117]
+    - list
+      - listitem [level=1]
+        - ListMarker "1. "
+        - StaticText "Define who is evaluated using the IF conditions — for example, customers with an active subscription, users with a certain role, or logged-out visitors."
+      - listitem [level=1]
+        - ListMarker "2. "
+        - StaticText "Choose in the TARGET section whether the limit applies to shoppers who DO meet those conditions or to everyone who does NOT, then pick which products it covers."
+      - listitem [level=1]
+        - ListMarker "3. "
+        - StaticText "Configure the THEN section — cap each matching product on its own (per product) or the combined quantity of all matching products (per order total)."
+      - listitem [level=1]
+        - ListMarker "4. "
+        - StaticText "Limits are enforced everywhere: the product page quantity box, the cart, checkout, direct add-to-cart links, and the WooCommerce Store API."
+      - listitem [level=1]
+        - ListMarker "5. "
+        - StaticText "When a shopper's membership changes, the applicable limit changes with it on the very next request."
+    - paragraph
+      - strong
+        - StaticText "Note:"
+      - StaticText " Administrators and shop managers always bypass purchase limits. When several rules cap the same product, the strictest maximum wins, and a maximum of 0 blocks purchasing entirely."
+    - paragraph
+      - StaticText "No rules configured yet."
+    - button "Add New Rule" [ref=e118]
+    - generic
+      - button "Save Rules" [ref=e119]
+      - button "Discard Changes" [ref=e120]
+      - link "Easy Setup & Import/Export" [ref=e121]
+      - paragraph
+        - StaticText "Settings last saved: September 10, 2026 12:59 pm (UTC)"
+- link "Go Back" [ref=e31]
+- StaticText "Configure memberships, content gating, role mapping, and access restrictions"
+- heading "Purchase Limit Rules" [level=3, ref=e116]
+- paragraph
+  - StaticText "Cap how many units a shopper can buy. Reserve stock for members, limit trial customers, or stop guests from bulk-buying limited products."
+- heading "How Purchase Limit Rules Work" [level=4, ref=e117]
+- list
+  - listitem [level=1]
+    - ListMarker "1. "
+    - StaticText "Define who is evaluated using the IF conditions — for example, customers with an active subscription, users with a certain role, or logged-out visitors."
+  - listitem [level=1]
+    - ListMarker "2. "
+    - StaticText "Choose in the TARGET section whether the limit applies to shoppers who DO meet those conditions or to everyone who does NOT, then pick which products it covers."
+  - listitem [level=1]
+    - ListMarker "3. "
+    - StaticText "Configure the THEN section — cap each matching product on its own (per product) or the combined quantity of all matching products (per order total)."
+  - listitem [level=1]
+    - ListMarker "4. "
+    - StaticText "Limits are enforced everywhere: the product page quantity box, the cart, checkout, direct add-to-cart links, and the WooCommerce Store API."
+  - listitem [level=1]
+    - ListMarker "5. "
+    - StaticText "When a shopper's membership changes, the applicable limit changes with it on the very next request."
+- paragraph
+  - strong
+    - StaticText "Note:"
+  - StaticText " Administrators and shop managers always bypass purchase limits. When several rules cap the same product, the strictest maximum wins, and a maximum of 0 blocks purchasing entirely."
+- paragraph
+  - StaticText "No rules configured yet."
+- button "Add New Rule" [ref=e118]
+- generic
+  - button "Save Rules" [ref=e119]
+  - button "Discard Changes" [ref=e120]
+  - link "Easy Setup & Import/Export" [ref=e121]
+  - paragraph
+    - StaticText "Settings last saved: September 10, 2026 12:59 pm (UTC)"

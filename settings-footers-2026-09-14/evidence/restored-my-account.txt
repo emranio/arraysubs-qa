@@ -1,0 +1,231 @@
+- generic
+  - sectionheader
+    - navigation
+      - list
+        - listitem [level=1]
+          - link "Profile Form" [ref=e150]
+        - listitem [level=1]
+          - link "My Account" [ref=e151]
+    - StaticText "Customize the WooCommerce My Account navigation — reorder items, add linked pages, and control access."
+  - link "Go Back" [ref=e31]
+  - main
+    - heading "Menu Items" [level=3, ref=e116]
+    - paragraph
+      - StaticText "Use the drag handle to reorder items, toggle visibility, or add custom pages that appear as My Account tabs."
+    - checkbox "Enable My Account menu items customization" [checked=true, ref=e117]
+    - button "Drag to reorder" [ref=e118]
+    - StaticText "Dashboard"
+    - StaticText "DEFAULT"
+    - button "Disable" [ref=e119]
+    - button "Expand details" [ref=e120]
+    - button "Drag to reorder" [ref=e121]
+    - StaticText "Orders"
+    - StaticText "DEFAULT"
+    - button "Disable" [ref=e122]
+    - button "Expand details" [ref=e123]
+    - button "Drag to reorder" [ref=e124]
+    - StaticText "Subscriptions"
+    - StaticText "DEFAULT"
+    - button "Disable" [ref=e125]
+    - button "Expand details" [ref=e126]
+    - button "Drag to reorder" [ref=e127]
+    - StaticText "Store Credit"
+    - StaticText "DEFAULT"
+    - button "Disable" [ref=e128]
+    - button "Expand details" [ref=e129]
+    - button "Drag to reorder" [ref=e130]
+    - StaticText "Downloads"
+    - StaticText "DEFAULT"
+    - button "Disable" [ref=e131]
+    - button "Expand details" [ref=e132]
+    - button "Drag to reorder" [ref=e133]
+    - StaticText "Addresses"
+    - StaticText "DEFAULT"
+    - button "Disable" [ref=e134]
+    - button "Expand details" [ref=e135]
+    - button "Drag to reorder" [ref=e136]
+    - StaticText "Account details"
+    - StaticText "DEFAULT"
+    - button "Disable" [ref=e137]
+    - button "Expand details" [ref=e138]
+    - button "Drag to reorder" [ref=e139]
+    - StaticText "Support"
+    - StaticText "DEFAULT"
+    - button "Disable" [ref=e140]
+    - button "Expand details" [ref=e141]
+    - button "Drag to reorder" [ref=e142]
+    - StaticText "Log out"
+    - StaticText "DEFAULT"
+    - button "Disable" [ref=e143]
+    - button "Expand details" [ref=e144]
+    - status
+    - button "Add Custom Item" [ref=e145]
+    - heading "How It Works" [level=3, ref=e146]
+    - list
+      - listitem [level=1]
+        - StaticText "Default items come from WooCommerce and other plugins. You can reorder and hide them."
+      - listitem [level=1]
+        - StaticText "Custom items link a published page or other content as a new My Account tab."
+      - listitem [level=1]
+        - StaticText "The linked content renders with full builder support (Gutenberg, Elementor, Bricks)."
+      - listitem [level=1]
+        - StaticText "Enable \"Prevent direct access\" to redirect visitors from the original URL to the My Account version."
+      - listitem [level=1]
+        - StaticText "Disabling a default item hides it from the menu and redirects its My Account URL back to the dashboard."
+    - generic
+      - button "Save Configuration" [ref=e147]
+      - button "Discard Changes" [ref=e148]
+      - link "Easy Setup & Import/Export" [ref=e149]
+      - paragraph
+        - StaticText "Settings last saved: September 10, 2026 12:59 pm (UTC)"
+- generic
+  - sectionheader
+    - navigation
+      - list
+        - listitem [level=1]
+          - link "Profile Form" [ref=e150]
+        - listitem [level=1]
+          - link "My Account" [ref=e151]
+    - StaticText "Customize the WooCommerce My Account navigation — reorder items, add linked pages, and control access."
+  - link "Go Back" [ref=e31]
+  - main
+    - heading "Menu Items" [level=3, ref=e116]
+    - paragraph
+      - StaticText "Use the drag handle to reorder items, toggle visibility, or add custom pages that appear as My Account tabs."
+    - checkbox "Enable My Account menu items customization" [checked=true, ref=e117]
+    - button "Drag to reorder" [ref=e118]
+    - StaticText "Dashboard"
+    - StaticText "DEFAULT"
+    - button "Disable" [ref=e119]
+    - button "Expand details" [ref=e120]
+    - button "Drag to reorder" [ref=e121]
+    - StaticText "Orders"
+    - StaticText "DEFAULT"
+    - button "Disable" [ref=e122]
+    - button "Expand details" [ref=e123]
+    - button "Drag to reorder" [ref=e124]
+    - StaticText "Subscriptions"
+    - StaticText "DEFAULT"
+    - button "Disable" [ref=e125]
+    - button "Expand details" [ref=e126]
+    - button "Drag to reorder" [ref=e127]
+    - StaticText "Store Credit"
+    - StaticText "DEFAULT"
+    - button "Disable" [ref=e128]
+    - button "Expand details" [ref=e129]
+    - button "Drag to reorder" [ref=e130]
+    - StaticText "Downloads"
+    - StaticText "DEFAULT"
+    - button "Disable" [ref=e131]
+    - button "Expand details" [ref=e132]
+    - button "Drag to reorder" [ref=e133]
+    - StaticText "Addresses"
+    - StaticText "DEFAULT"
+    - button "Disable" [ref=e134]
+    - button "Expand details" [ref=e135]
+    - button "Drag to reorder" [ref=e136]
+    - StaticText "Account details"
+    - StaticText "DEFAULT"
+    - button "Disable" [ref=e137]
+    - button "Expand details" [ref=e138]
+    - button "Drag to reorder" [ref=e139]
+    - StaticText "Support"
+    - StaticText "DEFAULT"
+    - button "Disable" [ref=e140]
+    - button "Expand details" [ref=e141]
+    - button "Drag to reorder" [ref=e142]
+    - StaticText "Log out"
+    - StaticText "DEFAULT"
+    - button "Disable" [ref=e143]
+    - button "Expand details" [ref=e144]
+    - status
+    - button "Add Custom Item" [ref=e145]
+    - heading "How It Works" [level=3, ref=e146]
+    - list
+      - listitem [level=1]
+        - StaticText "Default items come from WooCommerce and other plugins. You can reorder and hide them."
+      - listitem [level=1]
+        - StaticText "Custom items link a published page or other content as a new My Account tab."
+      - listitem [level=1]
+        - StaticText "The linked content renders with full builder support (Gutenberg, Elementor, Bricks)."
+      - listitem [level=1]
+        - StaticText "Enable \"Prevent direct access\" to redirect visitors from the original URL to the My Account version."
+      - listitem [level=1]
+        - StaticText "Disabling a default item hides it from the menu and redirects its My Account URL back to the dashboard."
+    - generic
+      - button "Save Configuration" [ref=e147]
+      - button "Discard Changes" [ref=e148]
+      - link "Easy Setup & Import/Export" [ref=e149]
+      - paragraph
+        - StaticText "Settings last saved: September 10, 2026 12:59 pm (UTC)"
+- link "Go Back" [ref=e31]
+- StaticText "Customize the WooCommerce My Account navigation — reorder items, add linked pages, and control access."
+- heading "Menu Items" [level=3, ref=e116]
+- paragraph
+  - StaticText "Use the drag handle to reorder items, toggle visibility, or add custom pages that appear as My Account tabs."
+- checkbox "Enable My Account menu items customization" [checked=true, ref=e117]
+- button "Drag to reorder" [ref=e118]
+- StaticText "Dashboard"
+- StaticText "DEFAULT"
+- button "Disable" [ref=e119]
+- button "Expand details" [ref=e120]
+- button "Drag to reorder" [ref=e121]
+- StaticText "Orders"
+- StaticText "DEFAULT"
+- button "Disable" [ref=e122]
+- button "Expand details" [ref=e123]
+- button "Drag to reorder" [ref=e124]
+- StaticText "Subscriptions"
+- StaticText "DEFAULT"
+- button "Disable" [ref=e125]
+- button "Expand details" [ref=e126]
+- button "Drag to reorder" [ref=e127]
+- StaticText "Store Credit"
+- StaticText "DEFAULT"
+- button "Disable" [ref=e128]
+- button "Expand details" [ref=e129]
+- button "Drag to reorder" [ref=e130]
+- StaticText "Downloads"
+- StaticText "DEFAULT"
+- button "Disable" [ref=e131]
+- button "Expand details" [ref=e132]
+- button "Drag to reorder" [ref=e133]
+- StaticText "Addresses"
+- StaticText "DEFAULT"
+- button "Disable" [ref=e134]
+- button "Expand details" [ref=e135]
+- button "Drag to reorder" [ref=e136]
+- StaticText "Account details"
+- StaticText "DEFAULT"
+- button "Disable" [ref=e137]
+- button "Expand details" [ref=e138]
+- button "Drag to reorder" [ref=e139]
+- StaticText "Support"
+- StaticText "DEFAULT"
+- button "Disable" [ref=e140]
+- button "Expand details" [ref=e141]
+- button "Drag to reorder" [ref=e142]
+- StaticText "Log out"
+- StaticText "DEFAULT"
+- button "Disable" [ref=e143]
+- button "Expand details" [ref=e144]
+- status
+- button "Add Custom Item" [ref=e145]
+- heading "How It Works" [level=3, ref=e146]
+- list
+  - listitem [level=1]
+    - StaticText "Default items come from WooCommerce and other plugins. You can reorder and hide them."
+  - listitem [level=1]
+    - StaticText "Custom items link a published page or other content as a new My Account tab."
+  - listitem [level=1]
+    - StaticText "The linked content renders with full builder support (Gutenberg, Elementor, Bricks)."
+  - listitem [level=1]
+    - StaticText "Enable \"Prevent direct access\" to redirect visitors from the original URL to the My Account version."
+  - listitem [level=1]
+    - StaticText "Disabling a default item hides it from the menu and redirects its My Account URL back to the dashboard."
+- generic
+  - button "Save Configuration" [ref=e147]
+  - button "Discard Changes" [ref=e148]
+  - link "Easy Setup & Import/Export" [ref=e149]
+  - paragraph
+    - StaticText "Settings last saved: September 10, 2026 12:59 pm (UTC)"

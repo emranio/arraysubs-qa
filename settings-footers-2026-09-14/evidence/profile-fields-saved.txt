@@ -1,0 +1,102 @@
+- generic
+  - sectionheader
+    - navigation
+      - list
+        - listitem [level=1]
+          - link "Profile Form" [ref=e128]
+        - listitem [level=1]
+          - link "My Account" [ref=e129]
+    - StaticText "Configure extra profile fields and avatar for customer accounts"
+  - link "Go Back" [ref=e33]
+  - main
+    - heading "Avatar Settings" [level=3, ref=e118]
+    - paragraph
+      - StaticText "Allow customers to upload a profile photo from their Account Details page."
+    - checkbox "Enable avatar upload" [checked=true, ref=e119]
+    - LabelText
+      - StaticText "Max File Size (MB)"
+    - spinbutton "Max File Size (MB)" [ref=e120]: 2
+      - StaticText "2"
+    - StaticText "This server accepts up to 300 MB per file."
+    - LabelText
+      - StaticText "Allowed File Types"
+    - textbox "Allowed File Types" [ref=e121]: jpg, jpeg, png, gif, webp
+      - StaticText "jpg, jpeg, png, gif, webp"
+    - heading "Custom Profile Fields" [level=3, ref=e122]
+    - paragraph
+      - StaticText "Define extra fields that appear on the WooCommerce Account Details page and in the WP Admin user profile."
+    - checkbox "Enable custom profile fields" [checked=true, ref=e123]
+    - paragraph
+      - StaticText "No custom profile fields defined yet. Click the button below to add your first field."
+    - button "Add Field" [ref=e124]
+    - generic
+      - button "Save Configuration" [ref=e125]
+      - button "Discard Changes" [ref=e126]
+      - link "Easy Setup & Import/Export" [ref=e127]
+      - paragraph
+        - StaticText "Settings last saved: September 14, 2026 10:39 am (UTC)"
+- generic
+  - sectionheader
+    - navigation
+      - list
+        - listitem [level=1]
+          - link "Profile Form" [ref=e128]
+        - listitem [level=1]
+          - link "My Account" [ref=e129]
+    - StaticText "Configure extra profile fields and avatar for customer accounts"
+  - link "Go Back" [ref=e33]
+  - main
+    - heading "Avatar Settings" [level=3, ref=e118]
+    - paragraph
+      - StaticText "Allow customers to upload a profile photo from their Account Details page."
+    - checkbox "Enable avatar upload" [checked=true, ref=e119]
+    - LabelText
+      - StaticText "Max File Size (MB)"
+    - spinbutton "Max File Size (MB)" [ref=e120]: 2
+      - StaticText "2"
+    - StaticText "This server accepts up to 300 MB per file."
+    - LabelText
+      - StaticText "Allowed File Types"
+    - textbox "Allowed File Types" [ref=e121]: jpg, jpeg, png, gif, webp
+      - StaticText "jpg, jpeg, png, gif, webp"
+    - heading "Custom Profile Fields" [level=3, ref=e122]
+    - paragraph
+      - StaticText "Define extra fields that appear on the WooCommerce Account Details page and in the WP Admin user profile."
+    - checkbox "Enable custom profile fields" [checked=true, ref=e123]
+    - paragraph
+      - StaticText "No custom profile fields defined yet. Click the button below to add your first field."
+    - button "Add Field" [ref=e124]
+    - generic
+      - button "Save Configuration" [ref=e125]
+      - button "Discard Changes" [ref=e126]
+      - link "Easy Setup & Import/Export" [ref=e127]
+      - paragraph
+        - StaticText "Settings last saved: September 14, 2026 10:39 am (UTC)"
+- link "Go Back" [ref=e33]
+- StaticText "Configure extra profile fields and avatar for customer accounts"
+- heading "Avatar Settings" [level=3, ref=e118]
+- paragraph
+  - StaticText "Allow customers to upload a profile photo from their Account Details page."
+- checkbox "Enable avatar upload" [checked=true, ref=e119]
+- LabelText
+  - StaticText "Max File Size (MB)"
+- spinbutton "Max File Size (MB)" [ref=e120]: 2
+  - StaticText "2"
+- StaticText "This server accepts up to 300 MB per file."
+- LabelText
+  - StaticText "Allowed File Types"
+- textbox "Allowed File Types" [ref=e121]: jpg, jpeg, png, gif, webp
+  - StaticText "jpg, jpeg, png, gif, webp"
+- heading "Custom Profile Fields" [level=3, ref=e122]
+- paragraph
+  - StaticText "Define extra fields that appear on the WooCommerce Account Details page and in the WP Admin user profile."
+- checkbox "Enable custom profile fields" [checked=true, ref=e123]
+- paragraph
+  - StaticText "No custom profile fields defined yet. Click the button below to add your first field."
+- button "Add Field" [ref=e124]
+- generic
+  - button "Save Configuration" [ref=e125]
+  - button "Discard Changes" [ref=e126]
+  - link "Easy Setup & Import/Export" [ref=e127]
+  - paragraph
+    - StaticText "Settings last saved: September 14, 2026 10:39 am (UTC)"

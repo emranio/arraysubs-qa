@@ -1,0 +1,167 @@
+- generic
+  - sectionheader
+    - navigation
+      - list
+        - listitem [level=1]
+          - link "Role Mapping" [ref=e122]
+        - listitem [level=1]
+          - link "Discount" [ref=e123]
+        - listitem [level=1]
+          - link "Shop Access" [ref=e124]
+        - listitem [level=1]
+          - link "URL" [ref=e125]
+        - listitem [level=1]
+          - link "Post Types" [ref=e126]
+        - listitem [level=1]
+          - link "Downloads" [ref=e127]
+        - listitem [level=1]
+          - link "Comments" [ref=e128]
+        - listitem [level=1]
+          - link "Purchase Limit" [ref=e129]
+        - listitem [level=1]
+          - link "Conflicts" [ref=e130]
+        - listitem [level=1]
+          - link "Login Limit" [ref=e131]
+    - StaticText "Configure memberships, content gating, role mapping, and access restrictions"
+  - link "Go Back" [ref=e31]
+  - main
+    - heading "CPT Rules" [level=3, ref=e116]
+    - paragraph
+      - StaticText "Members Access to posts, pages, custom post types, and taxonomies. Rules can target entire post types, specific categories/tags, or individual posts."
+    - heading "How CPT Rules Work" [level=4, ref=e117]
+    - list
+      - listitem [level=1]
+        - ListMarker "1. "
+        - StaticText "Define who gets access using the IF conditions — for example, active subscribers to a membership product, customers with a qualifying order, or users with a specific role."
+      - listitem [level=1]
+        - ListMarker "2. "
+        - StaticText "Choose what to protect in the TARGET section — an entire post type, specific taxonomy terms, or individual posts/pages by ID."
+      - listitem [level=1]
+        - ListMarker "3. "
+        - StaticText "Configure Archive Behavior to control how restricted content appears in listings, search results, and archives: hide it completely, show it with a lock indicator, or show it normally while restricting the actual content."
+      - listitem [level=1]
+        - ListMarker "4. "
+        - StaticText "Configure the THEN section — redirect the visitor, show a custom message, or return a 403 forbidden response on direct access."
+      - listitem [level=1]
+        - ListMarker "5. "
+        - StaticText "When a customer gains the required membership, access is granted automatically. If they lose eligibility later, future visits follow the restricted behavior again."
+    - paragraph
+      - strong
+        - StaticText "Note:"
+      - StaticText " Use CPT Rules for posts, pages, lessons, directories, or other content types. If you only need to protect raw URL patterns, URL Rules are usually the simpler option."
+    - paragraph
+      - strong
+        - StaticText "Priority:"
+      - StaticText " A restriction set directly on a post or page (Access Restriction in the editor sidebar or metabox) always wins. When a post carries its own restriction, the CPT rules below are skipped for that post entirely — including their archive behavior and denied action. Overlaps are listed on the Access-Rule Conflicts screen."
+    - paragraph
+      - StaticText "No rules configured yet."
+    - button "Add New Rule" [ref=e118]
+    - generic
+      - button "Save Rules" [ref=e119]
+      - button "Discard Changes" [ref=e120]
+      - link "Easy Setup & Import/Export" [ref=e121]
+      - paragraph
+        - StaticText "Settings last saved: September 10, 2026 12:59 pm (UTC)"
+- generic
+  - sectionheader
+    - navigation
+      - list
+        - listitem [level=1]
+          - link "Role Mapping" [ref=e122]
+        - listitem [level=1]
+          - link "Discount" [ref=e123]
+        - listitem [level=1]
+          - link "Shop Access" [ref=e124]
+        - listitem [level=1]
+          - link "URL" [ref=e125]
+        - listitem [level=1]
+          - link "Post Types" [ref=e126]
+        - listitem [level=1]
+          - link "Downloads" [ref=e127]
+        - listitem [level=1]
+          - link "Comments" [ref=e128]
+        - listitem [level=1]
+          - link "Purchase Limit" [ref=e129]
+        - listitem [level=1]
+          - link "Conflicts" [ref=e130]
+        - listitem [level=1]
+          - link "Login Limit" [ref=e131]
+    - StaticText "Configure memberships, content gating, role mapping, and access restrictions"
+  - link "Go Back" [ref=e31]
+  - main
+    - heading "CPT Rules" [level=3, ref=e116]
+    - paragraph
+      - StaticText "Members Access to posts, pages, custom post types, and taxonomies. Rules can target entire post types, specific categories/tags, or individual posts."
+    - heading "How CPT Rules Work" [level=4, ref=e117]
+    - list
+      - listitem [level=1]
+        - ListMarker "1. "
+        - StaticText "Define who gets access using the IF conditions — for example, active subscribers to a membership product, customers with a qualifying order, or users with a specific role."
+      - listitem [level=1]
+        - ListMarker "2. "
+        - StaticText "Choose what to protect in the TARGET section — an entire post type, specific taxonomy terms, or individual posts/pages by ID."
+      - listitem [level=1]
+        - ListMarker "3. "
+        - StaticText "Configure Archive Behavior to control how restricted content appears in listings, search results, and archives: hide it completely, show it with a lock indicator, or show it normally while restricting the actual content."
+      - listitem [level=1]
+        - ListMarker "4. "
+        - StaticText "Configure the THEN section — redirect the visitor, show a custom message, or return a 403 forbidden response on direct access."
+      - listitem [level=1]
+        - ListMarker "5. "
+        - StaticText "When a customer gains the required membership, access is granted automatically. If they lose eligibility later, future visits follow the restricted behavior again."
+    - paragraph
+      - strong
+        - StaticText "Note:"
+      - StaticText " Use CPT Rules for posts, pages, lessons, directories, or other content types. If you only need to protect raw URL patterns, URL Rules are usually the simpler option."
+    - paragraph
+      - strong
+        - StaticText "Priority:"
+      - StaticText " A restriction set directly on a post or page (Access Restriction in the editor sidebar or metabox) always wins. When a post carries its own restriction, the CPT rules below are skipped for that post entirely — including their archive behavior and denied action. Overlaps are listed on the Access-Rule Conflicts screen."
+    - paragraph
+      - StaticText "No rules configured yet."
+    - button "Add New Rule" [ref=e118]
+    - generic
+      - button "Save Rules" [ref=e119]
+      - button "Discard Changes" [ref=e120]
+      - link "Easy Setup & Import/Export" [ref=e121]
+      - paragraph
+        - StaticText "Settings last saved: September 10, 2026 12:59 pm (UTC)"
+- link "Go Back" [ref=e31]
+- StaticText "Configure memberships, content gating, role mapping, and access restrictions"
+- heading "CPT Rules" [level=3, ref=e116]
+- paragraph
+  - StaticText "Members Access to posts, pages, custom post types, and taxonomies. Rules can target entire post types, specific categories/tags, or individual posts."
+- heading "How CPT Rules Work" [level=4, ref=e117]
+- list
+  - listitem [level=1]
+    - ListMarker "1. "
+    - StaticText "Define who gets access using the IF conditions — for example, active subscribers to a membership product, customers with a qualifying order, or users with a specific role."
+  - listitem [level=1]
+    - ListMarker "2. "
+    - StaticText "Choose what to protect in the TARGET section — an entire post type, specific taxonomy terms, or individual posts/pages by ID."
+  - listitem [level=1]
+    - ListMarker "3. "
+    - StaticText "Configure Archive Behavior to control how restricted content appears in listings, search results, and archives: hide it completely, show it with a lock indicator, or show it normally while restricting the actual content."
+  - listitem [level=1]
+    - ListMarker "4. "
+    - StaticText "Configure the THEN section — redirect the visitor, show a custom message, or return a 403 forbidden response on direct access."
+  - listitem [level=1]
+    - ListMarker "5. "
+    - StaticText "When a customer gains the required membership, access is granted automatically. If they lose eligibility later, future visits follow the restricted behavior again."
+- paragraph
+  - strong
+    - StaticText "Note:"
+  - StaticText " Use CPT Rules for posts, pages, lessons, directories, or other content types. If you only need to protect raw URL patterns, URL Rules are usually the simpler option."
+- paragraph
+  - strong
+    - StaticText "Priority:"
+  - StaticText " A restriction set directly on a post or page (Access Restriction in the editor sidebar or metabox) always wins. When a post carries its own restriction, the CPT rules below are skipped for that post entirely — including their archive behavior and denied action. Overlaps are listed on the Access-Rule Conflicts screen."
+- paragraph
+  - StaticText "No rules configured yet."
+- button "Add New Rule" [ref=e118]
+- generic
+  - button "Save Rules" [ref=e119]
+  - button "Discard Changes" [ref=e120]
+  - link "Easy Setup & Import/Export" [ref=e121]
+  - paragraph
+    - StaticText "Settings last saved: September 10, 2026 12:59 pm (UTC)"

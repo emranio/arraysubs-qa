@@ -1,0 +1,308 @@
+- generic
+  - sectionheader
+    - navigation
+      - list
+        - listitem [level=1]
+          - link "Member Styling" [ref=e142]
+    - StaticText "Add body classes and custom CSS for specific members based on their subscription, purchases, role, or login status"
+  - link "Go Back" [ref=e31]
+  - main
+    - heading "Member Styling Rules" [level=3, ref=e116]
+    - paragraph
+      - StaticText "Give members a different look. Match users with the same conditions used elsewhere in ArraySubs, then attach body classes and custom CSS to them."
+    - LabelText [ref=e117] clickable [cursor:pointer]
+      - checkbox [checked=true, ref=e130]
+    - strong
+      - StaticText "Enable member styling"
+    - paragraph
+      - StaticText "When turned off, no body classes or custom CSS are added anywhere, even if rules below are enabled."
+    - heading "How Member Styling Works" [level=4, ref=e118]
+    - list
+      - listitem [level=1]
+        - ListMarker "1. "
+        - StaticText "Define who the styling applies to using the IF conditions — for example, customers with an active subscription, a specific plan variation, a certain role, or visitors who are not logged in."
+      - listitem [level=1]
+        - ListMarker "2. "
+        - StaticText "In the THEN section, list the body classes you want added to the <body> tag for those users, and optionally paste custom CSS that should load only for them."
+      - listitem [level=1]
+        - ListMarker "3. "
+        - StaticText "Use the body classes as hooks in your theme stylesheet, or keep everything self-contained by writing the rules directly in the Custom CSS box."
+      - listitem [level=1]
+        - ListMarker "4. "
+        - StaticText "Turn on 'Also apply in wp-admin' when the rule should style the WordPress dashboard as well — handy for hiding menus or badging staff accounts."
+      - listitem [level=1]
+        - ListMarker "5. "
+        - StaticText "Optionally add a SCHEDULE delay so the styling only kicks in a number of days, weeks, or months after the member's subscription started."
+    - paragraph
+      - strong
+        - StaticText "Note:"
+      - StaticText " Custom CSS is saved exactly as you write it, apart from a safety filter that removes HTML tag openings — '</', '<!--', '-->' and any '<' immediately followed by a letter — so nothing can escape the style block. Ordinary CSS is untouched: child combinators such as '.menu > li a' and quoted values such as content: \"<\" keep working."
+    - LabelText [ref=e119] clickable [onclick]
+      - checkbox [checked=false, ref=e131]
+    - generic [ref=e120] clickable [onclick]
+      - textbox "Rule name" [ref=e132]: Footer QA Styling
+        - StaticText "Footer QA Styling"
+      - StaticText "Styling Rule"
+      - StaticText " #"
+      - StaticText "1"
+    - generic [ref=e121] clickable [cursor:pointer, onclick]
+    - generic [ref=e122] clickable [onclick]
+      - button "Move up" [disabled, ref=e133]
+      - button "Move down" [disabled, ref=e134]
+      - button "Duplicate" [ref=e135]
+      - button "Delete" [ref=e136]
+    - button "Collapse" [ref=e123]
+    - StaticText "IF"
+    - StaticText "User meets these conditions"
+    - paragraph
+      - StaticText "No conditions added. Click below to add conditions."
+    - button "Add Condition" [ref=e124]
+    - button "Add Group" [ref=e125]
+    - StaticText "THEN"
+    - StaticText "Apply these actions"
+    - LabelText
+      - StaticText "Body classes"
+    - textbox "gold-member premium-user" [ref=e126]: footer-qa-style
+      - StaticText "footer-qa-style"
+    - paragraph
+      - StaticText "Space-separated class names. These are added to the <body> tag for every matching user, so your theme or custom CSS can target them (e.g. .gold-member .site-header)."
+    - LabelText
+      - StaticText "Custom CSS"
+    - textbox ".site-header { background: #111; }" [ref=e127]: .footer-qa-style { color: red; }
+      - StaticText ".footer-qa-style { color: red; }"
+    - paragraph
+      - StaticText "This CSS is injected only for users who match the conditions above. Everyone else gets the unmodified site. HTML tags are stripped on save for security."
+    - LabelText [ref=e128] clickable [cursor:pointer]
+      - checkbox [checked=false, ref=e137]
+    - StaticText "Also apply in wp-admin"
+    - paragraph
+      - StaticText "By default the classes and CSS only apply on the frontend. Enable this to also style the WordPress dashboard for matching users."
+    - strong
+      - StaticText "How it works:"
+    - list
+      - listitem [level=1]
+        - ListMarker "• "
+        - StaticText "Body classes are sanitized before being written to the page, so only valid CSS class names survive."
+      - listitem [level=1]
+        - ListMarker "• "
+        - StaticText "Custom CSS is delivered as an inline stylesheet in the page head — no extra HTTP request is made."
+      - listitem [level=1]
+        - ListMarker "• "
+        - StaticText "A rule with no IF conditions applies to everyone, including logged-out visitors. Add a condition to narrow it down."
+      - listitem [level=1]
+        - ListMarker "• "
+        - StaticText "When several rules match the same user, their classes and CSS blocks are all applied, in the order the rules are listed."
+    - StaticText "SCHEDULE"
+    - StaticText "Delay access after subscription starts"
+    - checkbox "Delay this rule after subscription starts" [checked=false, ref=e129]
+    - button "Add New Rule" [ref=e138]
+    - generic
+      - button "Save Rules" [ref=e139]
+      - button "Discard Changes" [ref=e140]
+      - link "Easy Setup & Import/Export" [ref=e141]
+      - paragraph
+        - StaticText "Settings last saved: September 14, 2026 10:47 am (UTC)"
+- generic
+  - sectionheader
+    - navigation
+      - list
+        - listitem [level=1]
+          - link "Member Styling" [ref=e142]
+    - StaticText "Add body classes and custom CSS for specific members based on their subscription, purchases, role, or login status"
+  - link "Go Back" [ref=e31]
+  - main
+    - heading "Member Styling Rules" [level=3, ref=e116]
+    - paragraph
+      - StaticText "Give members a different look. Match users with the same conditions used elsewhere in ArraySubs, then attach body classes and custom CSS to them."
+    - LabelText [ref=e117] clickable [cursor:pointer]
+      - checkbox [checked=true, ref=e130]
+    - strong
+      - StaticText "Enable member styling"
+    - paragraph
+      - StaticText "When turned off, no body classes or custom CSS are added anywhere, even if rules below are enabled."
+    - heading "How Member Styling Works" [level=4, ref=e118]
+    - list
+      - listitem [level=1]
+        - ListMarker "1. "
+        - StaticText "Define who the styling applies to using the IF conditions — for example, customers with an active subscription, a specific plan variation, a certain role, or visitors who are not logged in."
+      - listitem [level=1]
+        - ListMarker "2. "
+        - StaticText "In the THEN section, list the body classes you want added to the <body> tag for those users, and optionally paste custom CSS that should load only for them."
+      - listitem [level=1]
+        - ListMarker "3. "
+        - StaticText "Use the body classes as hooks in your theme stylesheet, or keep everything self-contained by writing the rules directly in the Custom CSS box."
+      - listitem [level=1]
+        - ListMarker "4. "
+        - StaticText "Turn on 'Also apply in wp-admin' when the rule should style the WordPress dashboard as well — handy for hiding menus or badging staff accounts."
+      - listitem [level=1]
+        - ListMarker "5. "
+        - StaticText "Optionally add a SCHEDULE delay so the styling only kicks in a number of days, weeks, or months after the member's subscription started."
+    - paragraph
+      - strong
+        - StaticText "Note:"
+      - StaticText " Custom CSS is saved exactly as you write it, apart from a safety filter that removes HTML tag openings — '</', '<!--', '-->' and any '<' immediately followed by a letter — so nothing can escape the style block. Ordinary CSS is untouched: child combinators such as '.menu > li a' and quoted values such as content: \"<\" keep working."
+    - LabelText [ref=e119] clickable [onclick]
+      - checkbox [checked=false, ref=e131]
+    - generic [ref=e120] clickable [onclick]
+      - textbox "Rule name" [ref=e132]: Footer QA Styling
+        - StaticText "Footer QA Styling"
+      - StaticText "Styling Rule"
+      - StaticText " #"
+      - StaticText "1"
+    - generic [ref=e121] clickable [cursor:pointer, onclick]
+    - generic [ref=e122] clickable [onclick]
+      - button "Move up" [disabled, ref=e133]
+      - button "Move down" [disabled, ref=e134]
+      - button "Duplicate" [ref=e135]
+      - button "Delete" [ref=e136]
+    - button "Collapse" [ref=e123]
+    - StaticText "IF"
+    - StaticText "User meets these conditions"
+    - paragraph
+      - StaticText "No conditions added. Click below to add conditions."
+    - button "Add Condition" [ref=e124]
+    - button "Add Group" [ref=e125]
+    - StaticText "THEN"
+    - StaticText "Apply these actions"
+    - LabelText
+      - StaticText "Body classes"
+    - textbox "gold-member premium-user" [ref=e126]: footer-qa-style
+      - StaticText "footer-qa-style"
+    - paragraph
+      - StaticText "Space-separated class names. These are added to the <body> tag for every matching user, so your theme or custom CSS can target them (e.g. .gold-member .site-header)."
+    - LabelText
+      - StaticText "Custom CSS"
+    - textbox ".site-header { background: #111; }" [ref=e127]: .footer-qa-style { color: red; }
+      - StaticText ".footer-qa-style { color: red; }"
+    - paragraph
+      - StaticText "This CSS is injected only for users who match the conditions above. Everyone else gets the unmodified site. HTML tags are stripped on save for security."
+    - LabelText [ref=e128] clickable [cursor:pointer]
+      - checkbox [checked=false, ref=e137]
+    - StaticText "Also apply in wp-admin"
+    - paragraph
+      - StaticText "By default the classes and CSS only apply on the frontend. Enable this to also style the WordPress dashboard for matching users."
+    - strong
+      - StaticText "How it works:"
+    - list
+      - listitem [level=1]
+        - ListMarker "• "
+        - StaticText "Body classes are sanitized before being written to the page, so only valid CSS class names survive."
+      - listitem [level=1]
+        - ListMarker "• "
+        - StaticText "Custom CSS is delivered as an inline stylesheet in the page head — no extra HTTP request is made."
+      - listitem [level=1]
+        - ListMarker "• "
+        - StaticText "A rule with no IF conditions applies to everyone, including logged-out visitors. Add a condition to narrow it down."
+      - listitem [level=1]
+        - ListMarker "• "
+        - StaticText "When several rules match the same user, their classes and CSS blocks are all applied, in the order the rules are listed."
+    - StaticText "SCHEDULE"
+    - StaticText "Delay access after subscription starts"
+    - checkbox "Delay this rule after subscription starts" [checked=false, ref=e129]
+    - button "Add New Rule" [ref=e138]
+    - generic
+      - button "Save Rules" [ref=e139]
+      - button "Discard Changes" [ref=e140]
+      - link "Easy Setup & Import/Export" [ref=e141]
+      - paragraph
+        - StaticText "Settings last saved: September 14, 2026 10:47 am (UTC)"
+- link "Go Back" [ref=e31]
+- StaticText "Add body classes and custom CSS for specific members based on their subscription, purchases, role, or login status"
+- heading "Member Styling Rules" [level=3, ref=e116]
+- paragraph
+  - StaticText "Give members a different look. Match users with the same conditions used elsewhere in ArraySubs, then attach body classes and custom CSS to them."
+- LabelText [ref=e117] clickable [cursor:pointer]
+  - checkbox [checked=true, ref=e130]
+- strong
+  - StaticText "Enable member styling"
+- paragraph
+  - StaticText "When turned off, no body classes or custom CSS are added anywhere, even if rules below are enabled."
+- heading "How Member Styling Works" [level=4, ref=e118]
+- list
+  - listitem [level=1]
+    - ListMarker "1. "
+    - StaticText "Define who the styling applies to using the IF conditions — for example, customers with an active subscription, a specific plan variation, a certain role, or visitors who are not logged in."
+  - listitem [level=1]
+    - ListMarker "2. "
+    - StaticText "In the THEN section, list the body classes you want added to the <body> tag for those users, and optionally paste custom CSS that should load only for them."
+  - listitem [level=1]
+    - ListMarker "3. "
+    - StaticText "Use the body classes as hooks in your theme stylesheet, or keep everything self-contained by writing the rules directly in the Custom CSS box."
+  - listitem [level=1]
+    - ListMarker "4. "
+    - StaticText "Turn on 'Also apply in wp-admin' when the rule should style the WordPress dashboard as well — handy for hiding menus or badging staff accounts."
+  - listitem [level=1]
+    - ListMarker "5. "
+    - StaticText "Optionally add a SCHEDULE delay so the styling only kicks in a number of days, weeks, or months after the member's subscription started."
+- paragraph
+  - strong
+    - StaticText "Note:"
+  - StaticText " Custom CSS is saved exactly as you write it, apart from a safety filter that removes HTML tag openings — '</', '<!--', '-->' and any '<' immediately followed by a letter — so nothing can escape the style block. Ordinary CSS is untouched: child combinators such as '.menu > li a' and quoted values such as content: \"<\" keep working."
+- LabelText [ref=e119] clickable [onclick]
+  - checkbox [checked=false, ref=e131]
+- generic [ref=e120] clickable [onclick]
+  - textbox "Rule name" [ref=e132]: Footer QA Styling
+    - StaticText "Footer QA Styling"
+  - StaticText "Styling Rule"
+  - StaticText " #"
+  - StaticText "1"
+- generic [ref=e121] clickable [cursor:pointer, onclick]
+- generic [ref=e122] clickable [onclick]
+  - button "Move up" [disabled, ref=e133]
+  - button "Move down" [disabled, ref=e134]
+  - button "Duplicate" [ref=e135]
+  - button "Delete" [ref=e136]
+- button "Collapse" [ref=e123]
+- StaticText "IF"
+- StaticText "User meets these conditions"
+- paragraph
+  - StaticText "No conditions added. Click below to add conditions."
+- button "Add Condition" [ref=e124]
+- button "Add Group" [ref=e125]
+- StaticText "THEN"
+- StaticText "Apply these actions"
+- LabelText
+  - StaticText "Body classes"
+- textbox "gold-member premium-user" [ref=e126]: footer-qa-style
+  - StaticText "footer-qa-style"
+- paragraph
+  - StaticText "Space-separated class names. These are added to the <body> tag for every matching user, so your theme or custom CSS can target them (e.g. .gold-member .site-header)."
+- LabelText
+  - StaticText "Custom CSS"
+- textbox ".site-header { background: #111; }" [ref=e127]: .footer-qa-style { color: red; }
+  - StaticText ".footer-qa-style { color: red; }"
+- paragraph
+  - StaticText "This CSS is injected only for users who match the conditions above. Everyone else gets the unmodified site. HTML tags are stripped on save for security."
+- LabelText [ref=e128] clickable [cursor:pointer]
+  - checkbox [checked=false, ref=e137]
+- StaticText "Also apply in wp-admin"
+- paragraph
+  - StaticText "By default the classes and CSS only apply on the frontend. Enable this to also style the WordPress dashboard for matching users."
+- strong
+  - StaticText "How it works:"
+- list
+  - listitem [level=1]
+    - ListMarker "• "
+    - StaticText "Body classes are sanitized before being written to the page, so only valid CSS class names survive."
+  - listitem [level=1]
+    - ListMarker "• "
+    - StaticText "Custom CSS is delivered as an inline stylesheet in the page head — no extra HTTP request is made."
+  - listitem [level=1]
+    - ListMarker "• "
+    - StaticText "A rule with no IF conditions applies to everyone, including logged-out visitors. Add a condition to narrow it down."
+  - listitem [level=1]
+    - ListMarker "• "
+    - StaticText "When several rules match the same user, their classes and CSS blocks are all applied, in the order the rules are listed."
+- StaticText "SCHEDULE"
+- StaticText "Delay access after subscription starts"
+- checkbox "Delay this rule after subscription starts" [checked=false, ref=e129]
+- button "Add New Rule" [ref=e138]
+- generic
+  - button "Save Rules" [ref=e139]
+  - button "Discard Changes" [ref=e140]
+  - link "Easy Setup & Import/Export" [ref=e141]
+  - paragraph
+    - StaticText "Settings last saved: September 14, 2026 10:47 am (UTC)"
+- StaticText "Styling Rule"
+- StaticText " #"
+- StaticText "1"

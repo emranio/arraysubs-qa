@@ -1,0 +1,456 @@
+- generic
+  - sectionheader
+    - navigation
+      - list
+        - listitem [level=1]
+          - link "Role Mapping" [ref=e151]
+        - listitem [level=1]
+          - link "Discount" [ref=e152]
+        - listitem [level=1]
+          - link "Shop Access" [ref=e153]
+        - listitem [level=1]
+          - link "URL" [ref=e154]
+        - listitem [level=1]
+          - link "Post Types" [ref=e155]
+        - listitem [level=1]
+          - link "Downloads" [ref=e156]
+        - listitem [level=1]
+          - link "Comments" [ref=e157]
+        - listitem [level=1]
+          - link "Purchase Limit" [ref=e158]
+        - listitem [level=1]
+          - link "Conflicts" [ref=e159]
+        - listitem [level=1]
+          - link "Login Limit" [ref=e160]
+    - StaticText "Configure memberships, content gating, role mapping, and access restrictions"
+  - link "Go Back" [ref=e31]
+  - main
+    - heading "Purchase Limit Rules" [level=3, ref=e116]
+    - paragraph
+      - StaticText "Cap how many units a shopper can buy. Reserve stock for members, limit trial customers, or stop guests from bulk-buying limited products."
+    - heading "How Purchase Limit Rules Work" [level=4, ref=e117]
+    - list
+      - listitem [level=1]
+        - ListMarker "1. "
+        - StaticText "Define who is evaluated using the IF conditions — for example, customers with an active subscription, users with a certain role, or logged-out visitors."
+      - listitem [level=1]
+        - ListMarker "2. "
+        - StaticText "Choose in the TARGET section whether the limit applies to shoppers who DO meet those conditions or to everyone who does NOT, then pick which products it covers."
+      - listitem [level=1]
+        - ListMarker "3. "
+        - StaticText "Configure the THEN section — cap each matching product on its own (per product) or the combined quantity of all matching products (per order total)."
+      - listitem [level=1]
+        - ListMarker "4. "
+        - StaticText "Limits are enforced everywhere: the product page quantity box, the cart, checkout, direct add-to-cart links, and the WooCommerce Store API."
+      - listitem [level=1]
+        - ListMarker "5. "
+        - StaticText "When a shopper's membership changes, the applicable limit changes with it on the very next request."
+    - paragraph
+      - strong
+        - StaticText "Note:"
+      - StaticText " Administrators and shop managers always bypass purchase limits. When several rules cap the same product, the strictest maximum wins, and a maximum of 0 blocks purchasing entirely."
+    - LabelText [ref=e118] clickable [onclick]
+      - checkbox [checked=false, ref=e131]
+    - generic [ref=e119] clickable [onclick]
+      - textbox "Rule name" [ref=e132]: Footer QA Purchase Limit
+        - StaticText "Footer QA Purchase Limit"
+      - StaticText "Purchase Limit Rule"
+      - StaticText " #"
+      - StaticText "1"
+    - generic [ref=e120] clickable [cursor:pointer, onclick]
+    - generic [ref=e121] clickable [onclick]
+      - button "Move up" [disabled, ref=e133]
+      - button "Move down" [disabled, ref=e134]
+      - button "Duplicate" [ref=e135]
+      - button "Delete" [ref=e136]
+    - button "Collapse" [ref=e122]
+    - StaticText "TARGET"
+    - LabelText
+      - StaticText "Apply this limit to"
+    - combobox [expanded=false, ref=e123]: Users who do NOT meet the IF conditions
+      - MenuListPopup
+        - option "Users who do NOT meet the IF conditions" [selected, ref=e140]
+        - option "Users who DO meet the IF conditions" [ref=e141]
+    - paragraph
+      - StaticText "The limit is enforced for shoppers who do NOT satisfy the IF conditions below — for example, non-members may buy at most 1. Qualifying members shop without a cap from this rule. Guests are always evaluated, so logged-out shoppers are covered too."
+    - LabelText
+      - StaticText "Limit purchases of"
+    - combobox [expanded=false, ref=e124]: All products
+      - MenuListPopup
+        - option "All products" [selected, ref=e142]
+        - option "Specific products" [ref=e143]
+        - option "Specific categories" [ref=e144]
+        - option "Specific tags" [ref=e145]
+    - paragraph
+      - StaticText "Select which products this purchase limit covers."
+    - StaticText "EXCLUSIONS"
+    - LabelText
+      - StaticText "Exclude products"
+    - generic [ref=e137] clickable [cursor:pointer, onclick]
+      - StaticText "Search products to exclude..."
+    - paragraph
+      - StaticText "These products are never capped by this rule, even if they match the scope above."
+    - LabelText
+      - StaticText "Exclude categories"
+    - generic [ref=e138] clickable [cursor:pointer, onclick]
+      - StaticText "Search categories to exclude..."
+    - paragraph
+      - StaticText "Products in these categories are never capped by this rule."
+    - StaticText "IF"
+    - StaticText "User meets these conditions"
+    - paragraph
+      - StaticText "No conditions added. Click below to add conditions."
+    - button "Add Condition" [ref=e125]
+    - button "Add Group" [ref=e126]
+    - StaticText "THEN"
+    - StaticText "Apply these actions"
+    - LabelText
+      - StaticText "Limit type"
+    - combobox [expanded=false, ref=e127]: Per product
+      - MenuListPopup
+        - option "Per product" [selected, ref=e146]
+        - option "Per order total" [ref=e147]
+    - paragraph
+      - StaticText "The maximum applies to each matching product. When the same product sits on several cart lines, those quantities are added together."
+    - LabelText
+      - StaticText "Maximum quantity"
+    - spinbutton [ref=e128]: 1
+      - StaticText "1"
+    - paragraph
+      - StaticText "The highest quantity of each matching product allowed in a single order. Setting this to 0 takes the matching products off sale for those shoppers, so the add to cart button disappears."
+    - LabelText
+      - StaticText "Custom message"
+    - textbox "You can order a maximum of {max} units of {product}." [ref=e129]
+    - paragraph
+      - StaticText "Shown when a shopper tries to exceed the limit. Use {max} for the maximum quantity and {product} for the product name. Leave empty to use the default message."
+    - strong
+      - StaticText "How it works:"
+    - list
+      - listitem [level=1]
+        - ListMarker "• "
+        - StaticText "The quantity selector on the product page and in the cart is capped at the maximum, so shoppers cannot pick a higher number."
+      - listitem [level=1]
+        - ListMarker "• "
+        - StaticText "The limit is re-checked when items are added to the cart, when cart quantities are updated, and again at checkout — so items added before the rule existed are caught too."
+      - listitem [level=1]
+        - ListMarker "• "
+        - StaticText "Direct add-to-cart URLs (?add-to-cart=ID) and the WooCommerce Store API used by block-based carts are enforced as well."
+      - listitem [level=1]
+        - ListMarker "• "
+        - StaticText "A maximum quantity of 0 blocks purchasing entirely: per product rules take the product off sale so the add to cart button disappears, and per order total rules reject the products when they are added to the cart and at checkout."
+      - listitem [level=1]
+        - ListMarker "• "
+        - StaticText "If several rules cap the same product, the strictest (lowest) maximum wins."
+      - listitem [level=1]
+        - ListMarker "• "
+        - StaticText "Administrators and shop managers always bypass purchase limits so they can manage the store normally."
+    - StaticText "SCHEDULE"
+    - StaticText "Delay access after subscription starts"
+    - checkbox "Delay this rule after subscription starts" [checked=false, ref=e130]
+    - button "Add New Rule" [ref=e139]
+    - generic
+      - button "Save Rules" [ref=e148]
+      - button "Discard Changes" [ref=e149]
+      - link "Easy Setup & Import/Export" [ref=e150]
+      - paragraph
+        - StaticText "Settings last saved: September 14, 2026 10:46 am (UTC)"
+- generic
+  - sectionheader
+    - navigation
+      - list
+        - listitem [level=1]
+          - link "Role Mapping" [ref=e151]
+        - listitem [level=1]
+          - link "Discount" [ref=e152]
+        - listitem [level=1]
+          - link "Shop Access" [ref=e153]
+        - listitem [level=1]
+          - link "URL" [ref=e154]
+        - listitem [level=1]
+          - link "Post Types" [ref=e155]
+        - listitem [level=1]
+          - link "Downloads" [ref=e156]
+        - listitem [level=1]
+          - link "Comments" [ref=e157]
+        - listitem [level=1]
+          - link "Purchase Limit" [ref=e158]
+        - listitem [level=1]
+          - link "Conflicts" [ref=e159]
+        - listitem [level=1]
+          - link "Login Limit" [ref=e160]
+    - StaticText "Configure memberships, content gating, role mapping, and access restrictions"
+  - link "Go Back" [ref=e31]
+  - main
+    - heading "Purchase Limit Rules" [level=3, ref=e116]
+    - paragraph
+      - StaticText "Cap how many units a shopper can buy. Reserve stock for members, limit trial customers, or stop guests from bulk-buying limited products."
+    - heading "How Purchase Limit Rules Work" [level=4, ref=e117]
+    - list
+      - listitem [level=1]
+        - ListMarker "1. "
+        - StaticText "Define who is evaluated using the IF conditions — for example, customers with an active subscription, users with a certain role, or logged-out visitors."
+      - listitem [level=1]
+        - ListMarker "2. "
+        - StaticText "Choose in the TARGET section whether the limit applies to shoppers who DO meet those conditions or to everyone who does NOT, then pick which products it covers."
+      - listitem [level=1]
+        - ListMarker "3. "
+        - StaticText "Configure the THEN section — cap each matching product on its own (per product) or the combined quantity of all matching products (per order total)."
+      - listitem [level=1]
+        - ListMarker "4. "
+        - StaticText "Limits are enforced everywhere: the product page quantity box, the cart, checkout, direct add-to-cart links, and the WooCommerce Store API."
+      - listitem [level=1]
+        - ListMarker "5. "
+        - StaticText "When a shopper's membership changes, the applicable limit changes with it on the very next request."
+    - paragraph
+      - strong
+        - StaticText "Note:"
+      - StaticText " Administrators and shop managers always bypass purchase limits. When several rules cap the same product, the strictest maximum wins, and a maximum of 0 blocks purchasing entirely."
+    - LabelText [ref=e118] clickable [onclick]
+      - checkbox [checked=false, ref=e131]
+    - generic [ref=e119] clickable [onclick]
+      - textbox "Rule name" [ref=e132]: Footer QA Purchase Limit
+        - StaticText "Footer QA Purchase Limit"
+      - StaticText "Purchase Limit Rule"
+      - StaticText " #"
+      - StaticText "1"
+    - generic [ref=e120] clickable [cursor:pointer, onclick]
+    - generic [ref=e121] clickable [onclick]
+      - button "Move up" [disabled, ref=e133]
+      - button "Move down" [disabled, ref=e134]
+      - button "Duplicate" [ref=e135]
+      - button "Delete" [ref=e136]
+    - button "Collapse" [ref=e122]
+    - StaticText "TARGET"
+    - LabelText
+      - StaticText "Apply this limit to"
+    - combobox [expanded=false, ref=e123]: Users who do NOT meet the IF conditions
+      - MenuListPopup
+        - option "Users who do NOT meet the IF conditions" [selected, ref=e140]
+        - option "Users who DO meet the IF conditions" [ref=e141]
+    - paragraph
+      - StaticText "The limit is enforced for shoppers who do NOT satisfy the IF conditions below — for example, non-members may buy at most 1. Qualifying members shop without a cap from this rule. Guests are always evaluated, so logged-out shoppers are covered too."
+    - LabelText
+      - StaticText "Limit purchases of"
+    - combobox [expanded=false, ref=e124]: All products
+      - MenuListPopup
+        - option "All products" [selected, ref=e142]
+        - option "Specific products" [ref=e143]
+        - option "Specific categories" [ref=e144]
+        - option "Specific tags" [ref=e145]
+    - paragraph
+      - StaticText "Select which products this purchase limit covers."
+    - StaticText "EXCLUSIONS"
+    - LabelText
+      - StaticText "Exclude products"
+    - generic [ref=e137] clickable [cursor:pointer, onclick]
+      - StaticText "Search products to exclude..."
+    - paragraph
+      - StaticText "These products are never capped by this rule, even if they match the scope above."
+    - LabelText
+      - StaticText "Exclude categories"
+    - generic [ref=e138] clickable [cursor:pointer, onclick]
+      - StaticText "Search categories to exclude..."
+    - paragraph
+      - StaticText "Products in these categories are never capped by this rule."
+    - StaticText "IF"
+    - StaticText "User meets these conditions"
+    - paragraph
+      - StaticText "No conditions added. Click below to add conditions."
+    - button "Add Condition" [ref=e125]
+    - button "Add Group" [ref=e126]
+    - StaticText "THEN"
+    - StaticText "Apply these actions"
+    - LabelText
+      - StaticText "Limit type"
+    - combobox [expanded=false, ref=e127]: Per product
+      - MenuListPopup
+        - option "Per product" [selected, ref=e146]
+        - option "Per order total" [ref=e147]
+    - paragraph
+      - StaticText "The maximum applies to each matching product. When the same product sits on several cart lines, those quantities are added together."
+    - LabelText
+      - StaticText "Maximum quantity"
+    - spinbutton [ref=e128]: 1
+      - StaticText "1"
+    - paragraph
+      - StaticText "The highest quantity of each matching product allowed in a single order. Setting this to 0 takes the matching products off sale for those shoppers, so the add to cart button disappears."
+    - LabelText
+      - StaticText "Custom message"
+    - textbox "You can order a maximum of {max} units of {product}." [ref=e129]
+    - paragraph
+      - StaticText "Shown when a shopper tries to exceed the limit. Use {max} for the maximum quantity and {product} for the product name. Leave empty to use the default message."
+    - strong
+      - StaticText "How it works:"
+    - list
+      - listitem [level=1]
+        - ListMarker "• "
+        - StaticText "The quantity selector on the product page and in the cart is capped at the maximum, so shoppers cannot pick a higher number."
+      - listitem [level=1]
+        - ListMarker "• "
+        - StaticText "The limit is re-checked when items are added to the cart, when cart quantities are updated, and again at checkout — so items added before the rule existed are caught too."
+      - listitem [level=1]
+        - ListMarker "• "
+        - StaticText "Direct add-to-cart URLs (?add-to-cart=ID) and the WooCommerce Store API used by block-based carts are enforced as well."
+      - listitem [level=1]
+        - ListMarker "• "
+        - StaticText "A maximum quantity of 0 blocks purchasing entirely: per product rules take the product off sale so the add to cart button disappears, and per order total rules reject the products when they are added to the cart and at checkout."
+      - listitem [level=1]
+        - ListMarker "• "
+        - StaticText "If several rules cap the same product, the strictest (lowest) maximum wins."
+      - listitem [level=1]
+        - ListMarker "• "
+        - StaticText "Administrators and shop managers always bypass purchase limits so they can manage the store normally."
+    - StaticText "SCHEDULE"
+    - StaticText "Delay access after subscription starts"
+    - checkbox "Delay this rule after subscription starts" [checked=false, ref=e130]
+    - button "Add New Rule" [ref=e139]
+    - generic
+      - button "Save Rules" [ref=e148]
+      - button "Discard Changes" [ref=e149]
+      - link "Easy Setup & Import/Export" [ref=e150]
+      - paragraph
+        - StaticText "Settings last saved: September 14, 2026 10:46 am (UTC)"
+- link "Go Back" [ref=e31]
+- StaticText "Configure memberships, content gating, role mapping, and access restrictions"
+- heading "Purchase Limit Rules" [level=3, ref=e116]
+- paragraph
+  - StaticText "Cap how many units a shopper can buy. Reserve stock for members, limit trial customers, or stop guests from bulk-buying limited products."
+- heading "How Purchase Limit Rules Work" [level=4, ref=e117]
+- list
+  - listitem [level=1]
+    - ListMarker "1. "
+    - StaticText "Define who is evaluated using the IF conditions — for example, customers with an active subscription, users with a certain role, or logged-out visitors."
+  - listitem [level=1]
+    - ListMarker "2. "
+    - StaticText "Choose in the TARGET section whether the limit applies to shoppers who DO meet those conditions or to everyone who does NOT, then pick which products it covers."
+  - listitem [level=1]
+    - ListMarker "3. "
+    - StaticText "Configure the THEN section — cap each matching product on its own (per product) or the combined quantity of all matching products (per order total)."
+  - listitem [level=1]
+    - ListMarker "4. "
+    - StaticText "Limits are enforced everywhere: the product page quantity box, the cart, checkout, direct add-to-cart links, and the WooCommerce Store API."
+  - listitem [level=1]
+    - ListMarker "5. "
+    - StaticText "When a shopper's membership changes, the applicable limit changes with it on the very next request."
+- paragraph
+  - strong
+    - StaticText "Note:"
+  - StaticText " Administrators and shop managers always bypass purchase limits. When several rules cap the same product, the strictest maximum wins, and a maximum of 0 blocks purchasing entirely."
+- LabelText [ref=e118] clickable [onclick]
+  - checkbox [checked=false, ref=e131]
+- generic [ref=e119] clickable [onclick]
+  - textbox "Rule name" [ref=e132]: Footer QA Purchase Limit
+    - StaticText "Footer QA Purchase Limit"
+  - StaticText "Purchase Limit Rule"
+  - StaticText " #"
+  - StaticText "1"
+- generic [ref=e120] clickable [cursor:pointer, onclick]
+- generic [ref=e121] clickable [onclick]
+  - button "Move up" [disabled, ref=e133]
+  - button "Move down" [disabled, ref=e134]
+  - button "Duplicate" [ref=e135]
+  - button "Delete" [ref=e136]
+- button "Collapse" [ref=e122]
+- StaticText "TARGET"
+- LabelText
+  - StaticText "Apply this limit to"
+- combobox [expanded=false, ref=e123]: Users who do NOT meet the IF conditions
+  - MenuListPopup
+    - option "Users who do NOT meet the IF conditions" [selected, ref=e140]
+    - option "Users who DO meet the IF conditions" [ref=e141]
+- paragraph
+  - StaticText "The limit is enforced for shoppers who do NOT satisfy the IF conditions below — for example, non-members may buy at most 1. Qualifying members shop without a cap from this rule. Guests are always evaluated, so logged-out shoppers are covered too."
+- LabelText
+  - StaticText "Limit purchases of"
+- combobox [expanded=false, ref=e124]: All products
+  - MenuListPopup
+    - option "All products" [selected, ref=e142]
+    - option "Specific products" [ref=e143]
+    - option "Specific categories" [ref=e144]
+    - option "Specific tags" [ref=e145]
+- paragraph
+  - StaticText "Select which products this purchase limit covers."
+- StaticText "EXCLUSIONS"
+- LabelText
+  - StaticText "Exclude products"
+- generic [ref=e137] clickable [cursor:pointer, onclick]
+  - StaticText "Search products to exclude..."
+- paragraph
+  - StaticText "These products are never capped by this rule, even if they match the scope above."
+- LabelText
+  - StaticText "Exclude categories"
+- generic [ref=e138] clickable [cursor:pointer, onclick]
+  - StaticText "Search categories to exclude..."
+- paragraph
+  - StaticText "Products in these categories are never capped by this rule."
+- StaticText "IF"
+- StaticText "User meets these conditions"
+- paragraph
+  - StaticText "No conditions added. Click below to add conditions."
+- button "Add Condition" [ref=e125]
+- button "Add Group" [ref=e126]
+- StaticText "THEN"
+- StaticText "Apply these actions"
+- LabelText
+  - StaticText "Limit type"
+- combobox [expanded=false, ref=e127]: Per product
+  - MenuListPopup
+    - option "Per product" [selected, ref=e146]
+    - option "Per order total" [ref=e147]
+- paragraph
+  - StaticText "The maximum applies to each matching product. When the same product sits on several cart lines, those quantities are added together."
+- LabelText
+  - StaticText "Maximum quantity"
+- spinbutton [ref=e128]: 1
+  - StaticText "1"
+- paragraph
+  - StaticText "The highest quantity of each matching product allowed in a single order. Setting this to 0 takes the matching products off sale for those shoppers, so the add to cart button disappears."
+- LabelText
+  - StaticText "Custom message"
+- textbox "You can order a maximum of {max} units of {product}." [ref=e129]
+- paragraph
+  - StaticText "Shown when a shopper tries to exceed the limit. Use {max} for the maximum quantity and {product} for the product name. Leave empty to use the default message."
+- strong
+  - StaticText "How it works:"
+- list
+  - listitem [level=1]
+    - ListMarker "• "
+    - StaticText "The quantity selector on the product page and in the cart is capped at the maximum, so shoppers cannot pick a higher number."
+  - listitem [level=1]
+    - ListMarker "• "
+    - StaticText "The limit is re-checked when items are added to the cart, when cart quantities are updated, and again at checkout — so items added before the rule existed are caught too."
+  - listitem [level=1]
+    - ListMarker "• "
+    - StaticText "Direct add-to-cart URLs (?add-to-cart=ID) and the WooCommerce Store API used by block-based carts are enforced as well."
+  - listitem [level=1]
+    - ListMarker "• "
+    - StaticText "A maximum quantity of 0 blocks purchasing entirely: per product rules take the product off sale so the add to cart button disappears, and per order total rules reject the products when they are added to the cart and at checkout."
+  - listitem [level=1]
+    - ListMarker "• "
+    - StaticText "If several rules cap the same product, the strictest (lowest) maximum wins."
+  - listitem [level=1]
+    - ListMarker "• "
+    - StaticText "Administrators and shop managers always bypass purchase limits so they can manage the store normally."
+- StaticText "SCHEDULE"
+- StaticText "Delay access after subscription starts"
+- checkbox "Delay this rule after subscription starts" [checked=false, ref=e130]
+- button "Add New Rule" [ref=e139]
+- generic
+  - button "Save Rules" [ref=e148]
+  - button "Discard Changes" [ref=e149]
+  - link "Easy Setup & Import/Export" [ref=e150]
+  - paragraph
+    - StaticText "Settings last saved: September 14, 2026 10:46 am (UTC)"
+- StaticText "Purchase Limit Rule"
+- StaticText " #"
+- StaticText "1"
+- option "Users who do NOT meet the IF conditions" [selected, ref=e140]
+- option "Users who DO meet the IF conditions" [ref=e141]
+- option "All products" [selected, ref=e142]
+- option "Specific products" [ref=e143]
+- option "Specific categories" [ref=e144]
+- option "Specific tags" [ref=e145]
+- StaticText "Search products to exclude..."
+- StaticText "Search categories to exclude..."
+- option "Per product" [selected, ref=e146]
+- option "Per order total" [ref=e147]

@@ -1,0 +1,247 @@
+{"check": "Profile Form shared footer and Easy Setup destination", "result": "PASS"}
+{"check": "Profile Form persisted timestamp displayed", "result": "PASS"}
+{"check": "Profile Form shared footer and Easy Setup destination", "result": "PASS"}
+{"check": "Profile Form persisted timestamp displayed", "result": "PASS"}
+{"check": "Profile Form shared footer and Easy Setup destination", "result": "PASS"}
+{"check": "Profile Form persisted timestamp displayed", "result": "PASS"}
+{"check": "incomplete profile field validation remains visible", "result": "PASS"}
+{"check": "Profile Form discard clears added field and validation", "result": "PASS"}
+{"check": "Profile Form discard restores avatar toggle", "result": "PASS"}
+{"check": "save displays spinner and disables save/discard", "result": "PASS"}
+{"check": "Profile Form discard restores latest save", "result": "PASS"}
+{"check": "Profile Form saved avatar survives reload", "result": "PASS"}
+{"check": "Profile Form shared footer and Easy Setup destination", "result": "PASS"}
+{"check": "Profile Form persisted timestamp displayed", "result": "PASS"}
+{"check": "Profile Form saved timestamp advances", "result": "PASS"}
+{"check": "Cart Info Editor shared footer and Easy Setup destination", "result": "PASS"}
+{"check": "Cart Info Editor persisted timestamp displayed", "result": "PASS"}
+{"check": "Cart Info Editor shared footer and Easy Setup destination", "result": "PASS"}
+{"check": "Cart Info Editor persisted timestamp displayed", "result": "PASS"}
+{"check": "Cart Info changed all three switches", "result": "PASS"}
+{"check": "Cart Info discard restores all switches", "result": "PASS"}
+{"check": "save displays spinner and disables save/discard", "result": "PASS"}
+{"check": "Cart Info discard restores latest save", "result": "PASS"}
+{"check": "Cart Info save survives reload", "result": "PASS"}
+{"check": "Cart Info Editor Easy Setup link opens successfully", "result": "PASS"}
+{"check": "My Account shared footer and Easy Setup destination", "result": "PASS"}
+{"check": "My Account persisted timestamp displayed", "result": "PASS"}
+{"check": "My Account validates incomplete added item", "result": "PASS"}
+{"check": "My Account discard removes added item and validation", "result": "PASS"}
+{"check": "My Account shared footer and Easy Setup destination", "result": "PASS"}
+{"check": "My Account persisted timestamp displayed", "result": "PASS"}
+{"check": "My Account validates incomplete added item", "result": "PASS"}
+{"check": "My Account discard removes added item and validation", "result": "PASS"}
+{"check": "My Account discard restores label", "result": "PASS"}
+{"check": "save displays spinner and disables save/discard", "result": "PASS"}
+{"check": "My Account label saved", "result": "PASS"}
+{"check": "My Account discard restores latest saved label", "result": "PASS"}
+{"check": "My Account save survives reload", "result": "PASS"}
+{"check": "My Account Easy Setup link opens successfully", "result": "PASS"}
+{"check": "URL rules shared footer and Easy Setup destination", "result": "PASS"}
+{"check": "URL rules persisted timestamp displayed", "result": "PASS"}
+{"check": "Role Mapping shared footer and Easy Setup destination", "result": "PASS"}
+{"check": "Role Mapping persisted timestamp displayed", "result": "PASS"}
+{"check": "Role Mapping discard removes added rule and nested condition", "result": "PASS"}
+{"check": "save displays spinner and disables save/discard", "result": "PASS"}
+{"check": "Role Mapping new disabled rule saved", "result": "PASS"}
+{"check": "Role Mapping discard restores latest saved rule name and removes duplicate", "result": "PASS"}
+{"check": "Role Mapping rule survives reload", "result": "PASS"}
+{"check": "Role Mapping shared footer and Easy Setup destination", "result": "PASS"}
+{"check": "Role Mapping persisted timestamp displayed", "result": "PASS"}
+{"check": "Role Mapping discard removes added rule and nested condition", "result": "PASS"}
+{"check": "save displays spinner and disables save/discard", "result": "PASS"}
+{"check": "Role Mapping new disabled rule saved", "result": "PASS"}
+{"check": "Role Mapping discard restores latest saved rule name and removes duplicate", "result": "PASS"}
+{"check": "Role Mapping rule survives reload", "result": "PASS"}
+{"check": "Role Mapping no new browser runtime errors", "result": "PASS"}
+{"check": "Role Mapping Easy Setup link opens successfully", "result": "PASS"}
+{"check": "Discount shared footer and Easy Setup destination", "result": "PASS"}
+{"check": "Discount persisted timestamp displayed", "result": "PASS"}
+{"check": "Discount discard removes added rule and nested condition", "result": "PASS"}
+{"check": "save displays spinner and disables save/discard", "result": "PASS"}
+{"check": "Discount new disabled rule saved", "result": "PASS"}
+{"check": "Discount discard restores latest saved rule name and removes duplicate", "result": "PASS"}
+{"check": "Discount rule survives reload", "result": "PASS"}
+{"check": "Discount no new browser runtime errors", "result": "PASS"}
+{"check": "Discount Easy Setup link opens successfully", "result": "PASS"}
+{"check": "Shop Access shared footer and Easy Setup destination", "result": "PASS"}
+{"check": "Shop Access persisted timestamp displayed", "result": "PASS"}
+{"check": "Shop Access discard removes added rule and nested condition", "result": "PASS"}
+{"check": "save displays spinner and disables save/discard", "result": "PASS"}
+{"check": "Shop Access new disabled rule saved", "result": "PASS"}
+{"check": "Shop Access discard restores latest saved rule name and removes duplicate", "result": "PASS"}
+{"check": "Shop Access rule survives reload", "result": "PASS"}
+{"check": "Shop Access no new browser runtime errors", "result": "PASS"}
+{"check": "Shop Access Easy Setup link opens successfully", "result": "PASS"}
+{"check": "URL shared footer and Easy Setup destination", "result": "PASS"}
+{"check": "URL persisted timestamp displayed", "result": "PASS"}
+{"check": "URL discard removes added rule and nested condition", "result": "PASS"}
+{"check": "save displays spinner and disables save/discard", "result": "PASS"}
+{"check": "URL new disabled rule saved", "result": "PASS"}
+{"check": "URL discard restores latest saved rule name and removes duplicate", "result": "PASS"}
+{"check": "URL rule survives reload", "result": "PASS"}
+{"check": "URL no new browser runtime errors", "result": "PASS"}
+{"check": "URL Easy Setup link opens successfully", "result": "PASS"}
+{"check": "Post Types shared footer and Easy Setup destination", "result": "PASS"}
+{"check": "Post Types persisted timestamp displayed", "result": "PASS"}
+{"check": "Post Types discard removes added rule and nested condition", "result": "PASS"}
+{"check": "save displays spinner and disables save/discard", "result": "PASS"}
+{"check": "Post Types new disabled rule saved", "result": "PASS"}
+{"check": "Post Types discard restores latest saved rule name and removes duplicate", "result": "PASS"}
+{"check": "Post Types rule survives reload", "result": "PASS"}
+{"check": "Post Types no new browser runtime errors", "result": "PASS"}
+{"check": "Post Types Easy Setup link opens successfully", "result": "PASS"}
+{"check": "Downloads shared footer and Easy Setup destination", "result": "PASS"}
+{"check": "Downloads persisted timestamp displayed", "result": "PASS"}
+{"check": "Downloads discard removes added rule and nested condition", "result": "PASS"}
+{"check": "Downloads shared footer and Easy Setup destination", "result": "PASS"}
+{"check": "Downloads persisted timestamp displayed", "result": "PASS"}
+{"check": "Downloads discard removes added rule and nested condition", "result": "PASS"}
+{"check": "save displays spinner and disables save/discard", "result": "PASS"}
+{"check": "Downloads new disabled rule saved", "result": "PASS"}
+{"check": "Downloads discard restores latest saved rule name and removes duplicate", "result": "PASS"}
+{"check": "Downloads rule survives reload", "result": "PASS"}
+{"check": "Downloads no new browser runtime errors", "result": "PASS"}
+{"check": "Downloads Easy Setup link opens successfully", "result": "PASS"}
+{"check": "Comments shared footer and Easy Setup destination", "result": "PASS"}
+{"check": "Comments persisted timestamp displayed", "result": "PASS"}
+{"check": "Comments discard removes added rule and nested condition", "result": "PASS"}
+{"check": "save displays spinner and disables save/discard", "result": "PASS"}
+{"check": "Comments new disabled rule saved", "result": "PASS"}
+{"check": "Comments discard restores latest saved rule name and removes duplicate", "result": "PASS"}
+{"check": "Comments rule survives reload", "result": "PASS"}
+{"check": "Comments no new browser runtime errors", "result": "PASS"}
+{"check": "Comments Easy Setup link opens successfully", "result": "PASS"}
+{"check": "Purchase Limit shared footer and Easy Setup destination", "result": "PASS"}
+{"check": "Purchase Limit persisted timestamp displayed", "result": "PASS"}
+{"check": "Purchase Limit discard removes added rule and nested condition", "result": "PASS"}
+{"check": "save displays spinner and disables save/discard", "result": "PASS"}
+{"check": "Purchase Limit new disabled rule saved", "result": "PASS"}
+{"check": "Purchase Limit discard restores latest saved rule name and removes duplicate", "result": "PASS"}
+{"check": "Purchase Limit rule survives reload", "result": "PASS"}
+{"check": "Purchase Limit no new browser runtime errors", "result": "PASS"}
+{"check": "Purchase Limit Easy Setup link opens successfully", "result": "PASS"}
+{"check": "Login Limit shared footer and Easy Setup destination", "result": "PASS"}
+{"check": "Login Limit persisted timestamp displayed", "result": "PASS"}
+{"check": "Login Limit discard removes added rule and nested condition", "result": "PASS"}
+{"check": "save displays spinner and disables save/discard", "result": "PASS"}
+{"check": "Login Limit new disabled rule saved", "result": "PASS"}
+{"check": "Login Limit discard restores latest saved rule name and removes duplicate", "result": "PASS"}
+{"check": "Login Limit rule survives reload", "result": "PASS"}
+{"check": "Login Limit no new browser runtime errors", "result": "PASS"}
+{"check": "Login Limit Easy Setup link opens successfully", "result": "PASS"}
+{"check": "Member Styling shared footer and Easy Setup destination", "result": "PASS"}
+{"check": "Member Styling persisted timestamp displayed", "result": "PASS"}
+{"check": "Member Styling discard restores master enable switch", "result": "PASS"}
+{"check": "Member Styling discard removes added rule, classes, CSS and condition", "result": "PASS"}
+{"check": "save displays spinner and disables save/discard", "result": "PASS"}
+{"check": "Member Styling discard restores saved CSS and removes duplicate", "result": "PASS"}
+{"check": "Member Styling rule and CSS survive reload", "result": "PASS"}
+{"check": "Member Styling Easy Setup link opens successfully", "result": "PASS"}
+{"check": "Retention Flow shared footer and Easy Setup destination", "result": "PASS"}
+{"check": "Retention Flow persisted timestamp displayed", "result": "PASS"}
+{"check": "save displays spinner and disables save/discard", "result": "PASS"}
+{"check": "save displays spinner and disables save/discard", "result": "PASS"}
+{"check": "Retention Flow Easy Setup link opens successfully", "result": "PASS"}
+{"check": "save displays spinner and disables save/discard", "result": "PASS"}
+{"check": "Profile Form custom field save succeeds", "result": "PASS"}
+{"check": "Profile Form removes saved field in draft", "result": "PASS"}
+{"check": "save displays spinner and disables save/discard", "result": "PASS"}
+{"check": "failed save preserves unsaved rule", "result": "PASS"}
+{"check": "failed save leaves timestamp unchanged", "result": "PASS"}
+{"check": "discard after failed save restores server snapshot", "result": "PASS"}
+{"check": "failed save did not persist the draft", "result": "PASS"}
+{"check": "settings footer stays inside 390px viewport", "result": "PASS"}
+{"check": "settings footer controls fit at 390px", "result": "PASS"}
+{"check": "profile-fields footer stays inside 390px viewport", "result": "PASS"}
+{"check": "profile-fields footer controls fit at 390px", "result": "PASS"}
+{"check": "myaccount footer stays inside 390px viewport", "result": "PASS"}
+{"check": "myaccount footer controls fit at 390px", "result": "PASS"}
+{"check": "cart footer stays inside 390px viewport", "result": "PASS"}
+{"check": "cart footer controls fit at 390px", "result": "PASS"}
+{"check": "styling footer stays inside 390px viewport", "result": "PASS"}
+{"check": "styling footer controls fit at 390px", "result": "PASS"}
+{"check": "retention footer stays inside 390px viewport", "result": "PASS"}
+{"check": "retention footer controls fit at 390px", "result": "PASS"}
+{"check": "member-access footer stays inside 390px viewport", "result": "PASS"}
+{"check": "member-access footer controls fit at 390px", "result": "PASS"}
+{"check": "Profile Form saved custom field survives reload", "result": "PASS"}
+{"check": "Profile Form saved custom field survives reload", "result": "PASS"}
+{"check": "Profile Form saved field removed from draft", "result": "PASS"}
+{"check": "Profile Form discard restores removed saved field", "result": "PASS"}
+{"check": "Profile Form Easy Setup link opens successfully", "result": "PASS"}
+{"check": "Login Limit discard restores both global settings and rule values", "result": "PASS"}
+{"check": "save displays spinner and disables save/discard", "result": "PASS"}
+{"check": "Login Limit global and rule edits both survive the same save/reload", "result": "PASS"}
+{"check": "My Account keyboard reorder changes menu order", "result": "PASS"}
+{"check": "My Account discard restores menu order", "result": "PASS"}
+{"check": "settings footer stays inside 768px viewport", "result": "PASS"}
+{"check": "settings footer controls fit at 768px", "result": "PASS"}
+{"check": "profile-fields footer stays inside 768px viewport", "result": "PASS"}
+{"check": "profile-fields footer controls fit at 768px", "result": "PASS"}
+{"check": "myaccount footer stays inside 768px viewport", "result": "PASS"}
+{"check": "myaccount footer controls fit at 768px", "result": "PASS"}
+{"check": "cart footer stays inside 768px viewport", "result": "PASS"}
+{"check": "cart footer controls fit at 768px", "result": "PASS"}
+{"check": "styling footer stays inside 768px viewport", "result": "PASS"}
+{"check": "styling footer controls fit at 768px", "result": "PASS"}
+{"check": "retention footer stays inside 768px viewport", "result": "PASS"}
+{"check": "retention footer controls fit at 768px", "result": "PASS"}
+{"check": "member-access footer stays inside 768px viewport", "result": "PASS"}
+{"check": "member-access footer controls fit at 768px", "result": "PASS"}
+{"check": "Profile Form temporary test data absent after restoration and reload", "result": "PASS"}
+{"check": "Profile Form original saved timestamp restored", "result": "PASS"}
+{"check": "My Account temporary test data absent after restoration and reload", "result": "PASS"}
+{"check": "My Account original saved timestamp restored", "result": "PASS"}
+{"check": "Cart Info temporary test data absent after restoration and reload", "result": "PASS"}
+{"check": "Cart Info original saved timestamp restored", "result": "PASS"}
+{"check": "Member Styling temporary test data absent after restoration and reload", "result": "PASS"}
+{"check": "Member Styling original saved timestamp restored", "result": "PASS"}
+{"check": "Retention Flow original saved timestamp restored", "result": "PASS"}
+{"check": "Role Mapping temporary test data absent after restoration and reload", "result": "PASS"}
+{"check": "Role Mapping original saved timestamp restored", "result": "PASS"}
+{"check": "Discount temporary test data absent after restoration and reload", "result": "PASS"}
+{"check": "Discount original saved timestamp restored", "result": "PASS"}
+{"check": "Shop Access temporary test data absent after restoration and reload", "result": "PASS"}
+{"check": "Shop Access original saved timestamp restored", "result": "PASS"}
+{"check": "URL temporary test data absent after restoration and reload", "result": "PASS"}
+{"check": "URL original saved timestamp restored", "result": "PASS"}
+{"check": "Post Types temporary test data absent after restoration and reload", "result": "PASS"}
+{"check": "Post Types original saved timestamp restored", "result": "PASS"}
+{"check": "Downloads temporary test data absent after restoration and reload", "result": "PASS"}
+{"check": "Downloads original saved timestamp restored", "result": "PASS"}
+{"check": "Comments temporary test data absent after restoration and reload", "result": "PASS"}
+{"check": "Comments original saved timestamp restored", "result": "PASS"}
+{"check": "Purchase Limit temporary test data absent after restoration and reload", "result": "PASS"}
+{"check": "Purchase Limit original saved timestamp restored", "result": "PASS"}
+{"check": "Login Limit temporary test data absent after restoration and reload", "result": "PASS"}
+{"check": "Login Limit original saved timestamp restored", "result": "PASS"}
+{"check": "settings footer stays inside 1440px viewport", "result": "PASS"}
+{"check": "settings footer controls fit at 1440px", "result": "PASS"}
+{"check": "profile-fields footer stays inside 1440px viewport", "result": "PASS"}
+{"check": "profile-fields footer controls fit at 1440px", "result": "PASS"}
+{"check": "myaccount footer stays inside 1440px viewport", "result": "PASS"}
+{"check": "myaccount footer controls fit at 1440px", "result": "PASS"}
+{"check": "cart footer stays inside 1440px viewport", "result": "PASS"}
+{"check": "cart footer controls fit at 1440px", "result": "PASS"}
+{"check": "styling footer stays inside 1440px viewport", "result": "PASS"}
+{"check": "styling footer controls fit at 1440px", "result": "PASS"}
+{"check": "retention footer stays inside 1440px viewport", "result": "PASS"}
+{"check": "retention footer controls fit at 1440px", "result": "PASS"}
+{"check": "member-access footer stays inside 1440px viewport", "result": "PASS"}
+{"check": "member-access footer controls fit at 1440px", "result": "PASS"}
+{"check": "Retention Flow shared footer and Easy Setup destination", "result": "PASS"}
+{"check": "Retention Flow persisted timestamp displayed", "result": "PASS"}
+{"check": "Retention discard removes new reason and restores hidden offer state", "result": "PASS"}
+{"check": "save displays spinner and disables save/discard", "result": "PASS"}
+{"check": "Retention saved list includes the new eighth reason", "result": "PASS"}
+{"check": "Retention discard restores a removed saved reason", "result": "PASS"}
+{"check": "Retention reason save survives reload", "result": "PASS"}
+{"check": "Retention all actual reason rows removed before save", "result": "PASS"}
+{"check": "save displays spinner and disables save/discard", "result": "PASS"}
+{"check": "Retention empty reason list survives save/reload", "result": "PASS"}
+{"check": "Retention discard restores saved empty reason list", "result": "PASS"}
+{"check": "Retention Flow Easy Setup link opens successfully", "result": "PASS"}
+{"check": "Final Retention empty-list evidence has zero actual rows", "result": "PASS"}
+{"check": "Retention original seven reasons restored after corrected test", "result": "PASS"}
+{"check": "Final original timestamp restored", "result": "PASS"}

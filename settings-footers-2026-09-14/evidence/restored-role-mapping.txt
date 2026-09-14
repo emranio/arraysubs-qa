@@ -1,0 +1,155 @@
+- generic
+  - sectionheader
+    - navigation
+      - list
+        - listitem [level=1]
+          - link "Role Mapping" [ref=e122]
+        - listitem [level=1]
+          - link "Discount" [ref=e123]
+        - listitem [level=1]
+          - link "Shop Access" [ref=e124]
+        - listitem [level=1]
+          - link "URL" [ref=e125]
+        - listitem [level=1]
+          - link "Post Types" [ref=e126]
+        - listitem [level=1]
+          - link "Downloads" [ref=e127]
+        - listitem [level=1]
+          - link "Comments" [ref=e128]
+        - listitem [level=1]
+          - link "Purchase Limit" [ref=e129]
+        - listitem [level=1]
+          - link "Conflicts" [ref=e130]
+        - listitem [level=1]
+          - link "Login Limit" [ref=e131]
+    - StaticText "Configure memberships, content gating, role mapping, and access restrictions"
+  - link "Go Back" [ref=e31]
+  - main
+    - heading "Role Mapping Rules" [level=3, ref=e116]
+    - paragraph
+      - StaticText "Automatically assign or remove WordPress user roles based on subscription status and conditions. Rules are processed in order."
+    - heading "How Role Mapping Rules Work" [level=4, ref=e117]
+    - list
+      - listitem [level=1]
+        - ListMarker "1. "
+        - StaticText "Define who qualifies using the IF conditions — for example, customers with an active subscription to a specific plan, customers who bought a certain product, or users with an existing role."
+      - listitem [level=1]
+        - ListMarker "2. "
+        - StaticText "Configure the THEN section — add one or more roles, remove old roles, decide what happens while a subscription is on-hold, and optionally assign a fallback role when access ends."
+      - listitem [level=1]
+        - ListMarker "3. "
+        - StaticText "When a customer matches a rule, the selected roles are applied automatically. When they stop matching, roles can be removed again based on the rule settings."
+      - listitem [level=1]
+        - ListMarker "4. "
+        - StaticText "Rules are evaluated in order, so place more specific role mappings before broad catch-all rules if you need predictable outcomes."
+      - listitem [level=1]
+        - ListMarker "5. "
+        - StaticText "Use this to sync WordPress permissions with membership access — for example unlocking member-only dashboards, courses, communities, or admin-controlled content."
+    - paragraph
+      - strong
+        - StaticText "Note:"
+      - StaticText " Be careful when removing default WordPress roles. If needed, use a fallback role like Subscriber so customers do not end up with fewer permissions than intended after access expires."
+    - paragraph
+      - StaticText "No rules configured yet."
+    - button "Add New Rule" [ref=e118]
+    - generic
+      - button "Save Rules" [ref=e119]
+      - button "Discard Changes" [ref=e120]
+      - link "Easy Setup & Import/Export" [ref=e121]
+      - paragraph
+        - StaticText "Settings last saved: September 10, 2026 12:59 pm (UTC)"
+- generic
+  - sectionheader
+    - navigation
+      - list
+        - listitem [level=1]
+          - link "Role Mapping" [ref=e122]
+        - listitem [level=1]
+          - link "Discount" [ref=e123]
+        - listitem [level=1]
+          - link "Shop Access" [ref=e124]
+        - listitem [level=1]
+          - link "URL" [ref=e125]
+        - listitem [level=1]
+          - link "Post Types" [ref=e126]
+        - listitem [level=1]
+          - link "Downloads" [ref=e127]
+        - listitem [level=1]
+          - link "Comments" [ref=e128]
+        - listitem [level=1]
+          - link "Purchase Limit" [ref=e129]
+        - listitem [level=1]
+          - link "Conflicts" [ref=e130]
+        - listitem [level=1]
+          - link "Login Limit" [ref=e131]
+    - StaticText "Configure memberships, content gating, role mapping, and access restrictions"
+  - link "Go Back" [ref=e31]
+  - main
+    - heading "Role Mapping Rules" [level=3, ref=e116]
+    - paragraph
+      - StaticText "Automatically assign or remove WordPress user roles based on subscription status and conditions. Rules are processed in order."
+    - heading "How Role Mapping Rules Work" [level=4, ref=e117]
+    - list
+      - listitem [level=1]
+        - ListMarker "1. "
+        - StaticText "Define who qualifies using the IF conditions — for example, customers with an active subscription to a specific plan, customers who bought a certain product, or users with an existing role."
+      - listitem [level=1]
+        - ListMarker "2. "
+        - StaticText "Configure the THEN section — add one or more roles, remove old roles, decide what happens while a subscription is on-hold, and optionally assign a fallback role when access ends."
+      - listitem [level=1]
+        - ListMarker "3. "
+        - StaticText "When a customer matches a rule, the selected roles are applied automatically. When they stop matching, roles can be removed again based on the rule settings."
+      - listitem [level=1]
+        - ListMarker "4. "
+        - StaticText "Rules are evaluated in order, so place more specific role mappings before broad catch-all rules if you need predictable outcomes."
+      - listitem [level=1]
+        - ListMarker "5. "
+        - StaticText "Use this to sync WordPress permissions with membership access — for example unlocking member-only dashboards, courses, communities, or admin-controlled content."
+    - paragraph
+      - strong
+        - StaticText "Note:"
+      - StaticText " Be careful when removing default WordPress roles. If needed, use a fallback role like Subscriber so customers do not end up with fewer permissions than intended after access expires."
+    - paragraph
+      - StaticText "No rules configured yet."
+    - button "Add New Rule" [ref=e118]
+    - generic
+      - button "Save Rules" [ref=e119]
+      - button "Discard Changes" [ref=e120]
+      - link "Easy Setup & Import/Export" [ref=e121]
+      - paragraph
+        - StaticText "Settings last saved: September 10, 2026 12:59 pm (UTC)"
+- link "Go Back" [ref=e31]
+- StaticText "Configure memberships, content gating, role mapping, and access restrictions"
+- heading "Role Mapping Rules" [level=3, ref=e116]
+- paragraph
+  - StaticText "Automatically assign or remove WordPress user roles based on subscription status and conditions. Rules are processed in order."
+- heading "How Role Mapping Rules Work" [level=4, ref=e117]
+- list
+  - listitem [level=1]
+    - ListMarker "1. "
+    - StaticText "Define who qualifies using the IF conditions — for example, customers with an active subscription to a specific plan, customers who bought a certain product, or users with an existing role."
+  - listitem [level=1]
+    - ListMarker "2. "
+    - StaticText "Configure the THEN section — add one or more roles, remove old roles, decide what happens while a subscription is on-hold, and optionally assign a fallback role when access ends."
+  - listitem [level=1]
+    - ListMarker "3. "
+    - StaticText "When a customer matches a rule, the selected roles are applied automatically. When they stop matching, roles can be removed again based on the rule settings."
+  - listitem [level=1]
+    - ListMarker "4. "
+    - StaticText "Rules are evaluated in order, so place more specific role mappings before broad catch-all rules if you need predictable outcomes."
+  - listitem [level=1]
+    - ListMarker "5. "
+    - StaticText "Use this to sync WordPress permissions with membership access — for example unlocking member-only dashboards, courses, communities, or admin-controlled content."
+- paragraph
+  - strong
+    - StaticText "Note:"
+  - StaticText " Be careful when removing default WordPress roles. If needed, use a fallback role like Subscriber so customers do not end up with fewer permissions than intended after access expires."
+- paragraph
+  - StaticText "No rules configured yet."
+- button "Add New Rule" [ref=e118]
+- generic
+  - button "Save Rules" [ref=e119]
+  - button "Discard Changes" [ref=e120]
+  - link "Easy Setup & Import/Export" [ref=e121]
+  - paragraph
+    - StaticText "Settings last saved: September 10, 2026 12:59 pm (UTC)"

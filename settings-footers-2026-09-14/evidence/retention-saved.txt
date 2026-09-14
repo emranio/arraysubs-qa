@@ -1,0 +1,365 @@
+- generic
+  - sectionheader
+    - navigation
+      - list
+        - listitem [level=1]
+          - link "Retention Flow" [ref=e132]
+    - StaticText "Configure cancellation reasons and retention offers to reduce churn"
+  - link "Go Back" [ref=e31]
+  - main
+    - generic
+      - heading "Cancellation Reasons" [level=3, ref=e116]
+      - paragraph
+        - StaticText "Configure the reasons customers can select when cancelling their subscriptions"
+      - switch "Require Cancellation Reason" [checked=true, ref=e117]
+      - LabelText [ref=e118] clickable [cursor:pointer, onclick]
+        - StaticText "Require Cancellation Reason"
+      - StaticText "When enabled, customers must select a reason when cancelling from My Account. This helps you understand why customers are leaving."
+      - heading "Cancellation Reason Options" [level=3, ref=e119]
+      - paragraph
+        - StaticText "Add, edit, or remove the reasons customers can choose from. Drag to reorder."
+      - generic
+        - generic [ref=e120] clickable [cursor:pointer, onclick]
+          - button "☰" [ref=e133]
+          - StaticText "Reason 1 - too_expensive"
+          - button "Remove item" [ref=e134]
+            - StaticText "×"
+        - generic [ref=e121] clickable [cursor:pointer, onclick]
+          - button "☰" [ref=e135]
+          - StaticText "Reason 2 - not_using"
+          - button "Remove item" [ref=e136]
+            - StaticText "×"
+        - generic [ref=e122] clickable [cursor:pointer, onclick]
+          - button "☰" [ref=e137]
+          - StaticText "Reason 3 - found_alternative"
+          - button "Remove item" [ref=e138]
+            - StaticText "×"
+        - generic [ref=e123] clickable [cursor:pointer, onclick]
+          - button "☰" [ref=e139]
+          - StaticText "Reason 4 - missing_features"
+          - button "Remove item" [ref=e140]
+            - StaticText "×"
+        - generic [ref=e124] clickable [cursor:pointer, onclick]
+          - button "☰" [ref=e141]
+          - StaticText "Reason 5 - technical_issues"
+          - button "Remove item" [ref=e142]
+            - StaticText "×"
+        - generic [ref=e125] clickable [cursor:pointer, onclick]
+          - button "☰" [ref=e143]
+          - StaticText "Reason 6 - temporary_pause"
+          - button "Remove item" [ref=e144]
+            - StaticText "×"
+        - generic [ref=e126] clickable [cursor:pointer, onclick]
+          - button "☰" [ref=e145]
+          - StaticText "Reason 7 - other"
+          - button "Remove item" [ref=e146]
+            - StaticText "×"
+        - generic [ref=e127] clickable [cursor:pointer, onclick]
+          - button "☰" [ref=e147]
+          - StaticText "Reason 8 - footer_qa_reason"
+          - button "Remove item" [ref=e148]
+            - StaticText "×"
+        - button "+ Add Reason" [ref=e128]
+          - StaticText "+ Add Reason"
+        - status
+      - StaticText "Tip: Include an \"Other\" option with a key of \"other\" to allow customers to provide custom feedback."
+      - heading "Retention Offers" [level=3, ref=e129]
+      - paragraph
+        - StaticText "Show special offers to customers before they cancel based on their selected reason"
+      - switch "Enable Retention Offers" [checked=false, ref=e130]
+      - LabelText [ref=e131] clickable [cursor:pointer, onclick]
+        - StaticText "Enable Retention Offers"
+      - StaticText "When enabled, customers will see targeted retention offers based on their cancellation reason. This can significantly reduce churn."
+      - generic
+        - button "Save Settings" [ref=e149]
+        - button "Discard Changes" [ref=e150]
+        - link "Easy Setup & Import/Export" [ref=e151]
+        - paragraph
+          - StaticText "Settings last saved: September 14, 2026 10:57 am (UTC)"
+- generic
+  - sectionheader
+    - navigation
+      - list
+        - listitem [level=1]
+          - link "Retention Flow" [ref=e132]
+    - StaticText "Configure cancellation reasons and retention offers to reduce churn"
+  - link "Go Back" [ref=e31]
+  - main
+    - generic
+      - heading "Cancellation Reasons" [level=3, ref=e116]
+      - paragraph
+        - StaticText "Configure the reasons customers can select when cancelling their subscriptions"
+      - switch "Require Cancellation Reason" [checked=true, ref=e117]
+      - LabelText [ref=e118] clickable [cursor:pointer, onclick]
+        - StaticText "Require Cancellation Reason"
+      - StaticText "When enabled, customers must select a reason when cancelling from My Account. This helps you understand why customers are leaving."
+      - heading "Cancellation Reason Options" [level=3, ref=e119]
+      - paragraph
+        - StaticText "Add, edit, or remove the reasons customers can choose from. Drag to reorder."
+      - generic
+        - generic [ref=e120] clickable [cursor:pointer, onclick]
+          - button "☰" [ref=e133]
+          - StaticText "Reason 1 - too_expensive"
+          - button "Remove item" [ref=e134]
+            - StaticText "×"
+        - generic [ref=e121] clickable [cursor:pointer, onclick]
+          - button "☰" [ref=e135]
+          - StaticText "Reason 2 - not_using"
+          - button "Remove item" [ref=e136]
+            - StaticText "×"
+        - generic [ref=e122] clickable [cursor:pointer, onclick]
+          - button "☰" [ref=e137]
+          - StaticText "Reason 3 - found_alternative"
+          - button "Remove item" [ref=e138]
+            - StaticText "×"
+        - generic [ref=e123] clickable [cursor:pointer, onclick]
+          - button "☰" [ref=e139]
+          - StaticText "Reason 4 - missing_features"
+          - button "Remove item" [ref=e140]
+            - StaticText "×"
+        - generic [ref=e124] clickable [cursor:pointer, onclick]
+          - button "☰" [ref=e141]
+          - StaticText "Reason 5 - technical_issues"
+          - button "Remove item" [ref=e142]
+            - StaticText "×"
+        - generic [ref=e125] clickable [cursor:pointer, onclick]
+          - button "☰" [ref=e143]
+          - StaticText "Reason 6 - temporary_pause"
+          - button "Remove item" [ref=e144]
+            - StaticText "×"
+        - generic [ref=e126] clickable [cursor:pointer, onclick]
+          - button "☰" [ref=e145]
+          - StaticText "Reason 7 - other"
+          - button "Remove item" [ref=e146]
+            - StaticText "×"
+        - generic [ref=e127] clickable [cursor:pointer, onclick]
+          - button "☰" [ref=e147]
+          - StaticText "Reason 8 - footer_qa_reason"
+          - button "Remove item" [ref=e148]
+            - StaticText "×"
+        - button "+ Add Reason" [ref=e128]
+          - StaticText "+ Add Reason"
+        - status
+      - StaticText "Tip: Include an \"Other\" option with a key of \"other\" to allow customers to provide custom feedback."
+      - heading "Retention Offers" [level=3, ref=e129]
+      - paragraph
+        - StaticText "Show special offers to customers before they cancel based on their selected reason"
+      - switch "Enable Retention Offers" [checked=false, ref=e130]
+      - LabelText [ref=e131] clickable [cursor:pointer, onclick]
+        - StaticText "Enable Retention Offers"
+      - StaticText "When enabled, customers will see targeted retention offers based on their cancellation reason. This can significantly reduce churn."
+      - generic
+        - button "Save Settings" [ref=e149]
+        - button "Discard Changes" [ref=e150]
+        - link "Easy Setup & Import/Export" [ref=e151]
+        - paragraph
+          - StaticText "Settings last saved: September 14, 2026 10:57 am (UTC)"
+- link "Go Back" [ref=e31]
+- StaticText "Configure cancellation reasons and retention offers to reduce churn"
+- generic
+  - heading "Cancellation Reasons" [level=3, ref=e116]
+  - paragraph
+    - StaticText "Configure the reasons customers can select when cancelling their subscriptions"
+  - switch "Require Cancellation Reason" [checked=true, ref=e117]
+  - LabelText [ref=e118] clickable [cursor:pointer, onclick]
+    - StaticText "Require Cancellation Reason"
+  - StaticText "When enabled, customers must select a reason when cancelling from My Account. This helps you understand why customers are leaving."
+  - heading "Cancellation Reason Options" [level=3, ref=e119]
+  - paragraph
+    - StaticText "Add, edit, or remove the reasons customers can choose from. Drag to reorder."
+  - generic
+    - generic [ref=e120] clickable [cursor:pointer, onclick]
+      - button "☰" [ref=e133]
+      - StaticText "Reason 1 - too_expensive"
+      - button "Remove item" [ref=e134]
+        - StaticText "×"
+    - generic [ref=e121] clickable [cursor:pointer, onclick]
+      - button "☰" [ref=e135]
+      - StaticText "Reason 2 - not_using"
+      - button "Remove item" [ref=e136]
+        - StaticText "×"
+    - generic [ref=e122] clickable [cursor:pointer, onclick]
+      - button "☰" [ref=e137]
+      - StaticText "Reason 3 - found_alternative"
+      - button "Remove item" [ref=e138]
+        - StaticText "×"
+    - generic [ref=e123] clickable [cursor:pointer, onclick]
+      - button "☰" [ref=e139]
+      - StaticText "Reason 4 - missing_features"
+      - button "Remove item" [ref=e140]
+        - StaticText "×"
+    - generic [ref=e124] clickable [cursor:pointer, onclick]
+      - button "☰" [ref=e141]
+      - StaticText "Reason 5 - technical_issues"
+      - button "Remove item" [ref=e142]
+        - StaticText "×"
+    - generic [ref=e125] clickable [cursor:pointer, onclick]
+      - button "☰" [ref=e143]
+      - StaticText "Reason 6 - temporary_pause"
+      - button "Remove item" [ref=e144]
+        - StaticText "×"
+    - generic [ref=e126] clickable [cursor:pointer, onclick]
+      - button "☰" [ref=e145]
+      - StaticText "Reason 7 - other"
+      - button "Remove item" [ref=e146]
+        - StaticText "×"
+    - generic [ref=e127] clickable [cursor:pointer, onclick]
+      - button "☰" [ref=e147]
+      - StaticText "Reason 8 - footer_qa_reason"
+      - button "Remove item" [ref=e148]
+        - StaticText "×"
+    - button "+ Add Reason" [ref=e128]
+      - StaticText "+ Add Reason"
+    - status
+  - StaticText "Tip: Include an \"Other\" option with a key of \"other\" to allow customers to provide custom feedback."
+  - heading "Retention Offers" [level=3, ref=e129]
+  - paragraph
+    - StaticText "Show special offers to customers before they cancel based on their selected reason"
+  - switch "Enable Retention Offers" [checked=false, ref=e130]
+  - LabelText [ref=e131] clickable [cursor:pointer, onclick]
+    - StaticText "Enable Retention Offers"
+  - StaticText "When enabled, customers will see targeted retention offers based on their cancellation reason. This can significantly reduce churn."
+  - generic
+    - button "Save Settings" [ref=e149]
+    - button "Discard Changes" [ref=e150]
+    - link "Easy Setup & Import/Export" [ref=e151]
+    - paragraph
+      - StaticText "Settings last saved: September 14, 2026 10:57 am (UTC)"
+- heading "Cancellation Reasons" [level=3, ref=e116]
+- paragraph
+  - StaticText "Configure the reasons customers can select when cancelling their subscriptions"
+- switch "Require Cancellation Reason" [checked=true, ref=e117]
+- LabelText [ref=e118] clickable [cursor:pointer, onclick]
+  - StaticText "Require Cancellation Reason"
+- StaticText "When enabled, customers must select a reason when cancelling from My Account. This helps you understand why customers are leaving."
+- heading "Cancellation Reason Options" [level=3, ref=e119]
+- paragraph
+  - StaticText "Add, edit, or remove the reasons customers can choose from. Drag to reorder."
+- generic
+  - generic [ref=e120] clickable [cursor:pointer, onclick]
+    - button "☰" [ref=e133]
+    - StaticText "Reason 1 - too_expensive"
+    - button "Remove item" [ref=e134]
+      - StaticText "×"
+  - generic [ref=e121] clickable [cursor:pointer, onclick]
+    - button "☰" [ref=e135]
+    - StaticText "Reason 2 - not_using"
+    - button "Remove item" [ref=e136]
+      - StaticText "×"
+  - generic [ref=e122] clickable [cursor:pointer, onclick]
+    - button "☰" [ref=e137]
+    - StaticText "Reason 3 - found_alternative"
+    - button "Remove item" [ref=e138]
+      - StaticText "×"
+  - generic [ref=e123] clickable [cursor:pointer, onclick]
+    - button "☰" [ref=e139]
+    - StaticText "Reason 4 - missing_features"
+    - button "Remove item" [ref=e140]
+      - StaticText "×"
+  - generic [ref=e124] clickable [cursor:pointer, onclick]
+    - button "☰" [ref=e141]
+    - StaticText "Reason 5 - technical_issues"
+    - button "Remove item" [ref=e142]
+      - StaticText "×"
+  - generic [ref=e125] clickable [cursor:pointer, onclick]
+    - button "☰" [ref=e143]
+    - StaticText "Reason 6 - temporary_pause"
+    - button "Remove item" [ref=e144]
+      - StaticText "×"
+  - generic [ref=e126] clickable [cursor:pointer, onclick]
+    - button "☰" [ref=e145]
+    - StaticText "Reason 7 - other"
+    - button "Remove item" [ref=e146]
+      - StaticText "×"
+  - generic [ref=e127] clickable [cursor:pointer, onclick]
+    - button "☰" [ref=e147]
+    - StaticText "Reason 8 - footer_qa_reason"
+    - button "Remove item" [ref=e148]
+      - StaticText "×"
+  - button "+ Add Reason" [ref=e128]
+    - StaticText "+ Add Reason"
+  - status
+- StaticText "Tip: Include an \"Other\" option with a key of \"other\" to allow customers to provide custom feedback."
+- heading "Retention Offers" [level=3, ref=e129]
+- paragraph
+  - StaticText "Show special offers to customers before they cancel based on their selected reason"
+- switch "Enable Retention Offers" [checked=false, ref=e130]
+- LabelText [ref=e131] clickable [cursor:pointer, onclick]
+  - StaticText "Enable Retention Offers"
+- StaticText "When enabled, customers will see targeted retention offers based on their cancellation reason. This can significantly reduce churn."
+- heading "Cancellation Reasons" [level=3, ref=e116]
+- paragraph
+  - StaticText "Configure the reasons customers can select when cancelling their subscriptions"
+- switch "Require Cancellation Reason" [checked=true, ref=e117]
+- LabelText [ref=e118] clickable [cursor:pointer, onclick]
+  - StaticText "Require Cancellation Reason"
+- heading "Cancellation Reason Options" [level=3, ref=e119]
+- paragraph
+  - StaticText "Add, edit, or remove the reasons customers can choose from. Drag to reorder."
+- generic [ref=e120] clickable [cursor:pointer, onclick]
+  - button "☰" [ref=e133]
+  - StaticText "Reason 1 - too_expensive"
+  - button "Remove item" [ref=e134]
+    - StaticText "×"
+- generic [ref=e121] clickable [cursor:pointer, onclick]
+  - button "☰" [ref=e135]
+  - StaticText "Reason 2 - not_using"
+  - button "Remove item" [ref=e136]
+    - StaticText "×"
+- generic [ref=e122] clickable [cursor:pointer, onclick]
+  - button "☰" [ref=e137]
+  - StaticText "Reason 3 - found_alternative"
+  - button "Remove item" [ref=e138]
+    - StaticText "×"
+- generic [ref=e123] clickable [cursor:pointer, onclick]
+  - button "☰" [ref=e139]
+  - StaticText "Reason 4 - missing_features"
+  - button "Remove item" [ref=e140]
+    - StaticText "×"
+- generic [ref=e124] clickable [cursor:pointer, onclick]
+  - button "☰" [ref=e141]
+  - StaticText "Reason 5 - technical_issues"
+  - button "Remove item" [ref=e142]
+    - StaticText "×"
+- generic [ref=e125] clickable [cursor:pointer, onclick]
+  - button "☰" [ref=e143]
+  - StaticText "Reason 6 - temporary_pause"
+  - button "Remove item" [ref=e144]
+    - StaticText "×"
+- generic [ref=e126] clickable [cursor:pointer, onclick]
+  - button "☰" [ref=e145]
+  - StaticText "Reason 7 - other"
+  - button "Remove item" [ref=e146]
+    - StaticText "×"
+- generic [ref=e127] clickable [cursor:pointer, onclick]
+  - button "☰" [ref=e147]
+  - StaticText "Reason 8 - footer_qa_reason"
+  - button "Remove item" [ref=e148]
+    - StaticText "×"
+- button "+ Add Reason" [ref=e128]
+  - StaticText "+ Add Reason"
+- heading "Retention Offers" [level=3, ref=e129]
+- paragraph
+  - StaticText "Show special offers to customers before they cancel based on their selected reason"
+- switch "Enable Retention Offers" [checked=false, ref=e130]
+- LabelText [ref=e131] clickable [cursor:pointer, onclick]
+  - StaticText "Enable Retention Offers"
+- StaticText "When enabled, customers must select a reason when cancelling from My Account. This helps you understand why customers are leaving."
+- button "☰" [ref=e133]
+- StaticText "Reason 1 - too_expensive"
+- button "☰" [ref=e135]
+- StaticText "Reason 2 - not_using"
+- button "☰" [ref=e137]
+- StaticText "Reason 3 - found_alternative"
+- button "☰" [ref=e139]
+- StaticText "Reason 4 - missing_features"
+- button "☰" [ref=e141]
+- StaticText "Reason 5 - technical_issues"
+- button "☰" [ref=e143]
+- StaticText "Reason 6 - temporary_pause"
+- button "☰" [ref=e145]
+- StaticText "Reason 7 - other"
+- button "☰" [ref=e147]
+- StaticText "Reason 8 - footer_qa_reason"
+- StaticText "Tip: Include an \"Other\" option with a key of \"other\" to allow customers to provide custom feedback."
+- StaticText "When enabled, customers will see targeted retention offers based on their cancellation reason. This can significantly reduce churn."

@@ -1,0 +1,378 @@
+- generic
+  - sectionheader
+    - navigation
+      - list
+        - listitem [level=1]
+          - link "Role Mapping" [ref=e146]
+        - listitem [level=1]
+          - link "Discount" [ref=e147]
+        - listitem [level=1]
+          - link "Shop Access" [ref=e148]
+        - listitem [level=1]
+          - link "URL" [ref=e149]
+        - listitem [level=1]
+          - link "Post Types" [ref=e150]
+        - listitem [level=1]
+          - link "Downloads" [ref=e151]
+        - listitem [level=1]
+          - link "Comments" [ref=e152]
+        - listitem [level=1]
+          - link "Purchase Limit" [ref=e153]
+        - listitem [level=1]
+          - link "Conflicts" [ref=e154]
+        - listitem [level=1]
+          - link "Login Limit" [ref=e155]
+    - StaticText "Configure memberships, content gating, role mapping, and access restrictions"
+  - link "Go Back" [ref=e31]
+  - main
+    - heading "Comment Restriction Rules" [level=3, ref=e116]
+    - paragraph
+      - StaticText "Control who can read and post comments based on membership conditions. Keep discussions members-only, or open reading to everyone while reserving replies for subscribers."
+    - heading "How Comment Rules Work" [level=4, ref=e117]
+    - list
+      - listitem [level=1]
+        - ListMarker "1. "
+        - StaticText "Define who is allowed to comment using the IF conditions — for example, customers with an active subscription, users with a certain role, or simply logged-in visitors. Users who do NOT meet the conditions are the ones that get restricted."
+      - listitem [level=1]
+        - ListMarker "2. "
+        - StaticText "Choose what the rule covers in the TARGET section — all content, selected post types, posts in specific taxonomy terms, or individual posts."
+      - listitem [level=1]
+        - ListMarker "3. "
+        - StaticText "Pick a restriction mode in the THEN section — hide comments and block posting, allow reading but block posting, or hide comments while keeping posting open."
+      - listitem [level=1]
+        - ListMarker "4. "
+        - StaticText "Restricted users see your custom message where the comments or the comment form would normally be, on both classic and block themes."
+      - listitem [level=1]
+        - ListMarker "5. "
+        - StaticText "Blocking is enforced on the server, so a restricted visitor cannot post by crafting a direct request or by using the REST API."
+    - paragraph
+      - strong
+        - StaticText "Note:"
+      - StaticText " Administrators and users who can moderate comments always bypass these rules. If several rules match the same content, the first matching rule wins."
+    - LabelText [ref=e118] clickable [onclick]
+      - checkbox [checked=false, ref=e129]
+    - generic [ref=e119] clickable [onclick]
+      - textbox "Rule name" [ref=e130]: Footer QA Comments
+        - StaticText "Footer QA Comments"
+      - StaticText "Comment Rule"
+      - StaticText " #"
+      - StaticText "1"
+    - generic [ref=e120] clickable [cursor:pointer, onclick]
+    - generic [ref=e121] clickable [onclick]
+      - button "Move up" [disabled, ref=e131]
+      - button "Move down" [disabled, ref=e132]
+      - button "Duplicate" [ref=e133]
+      - button "Delete" [ref=e134]
+    - button "Collapse" [ref=e122]
+    - StaticText "TARGET"
+    - LabelText
+      - StaticText "Apply this rule to"
+    - combobox [expanded=false, ref=e123]: All content
+      - MenuListPopup
+        - option "All content" [selected, ref=e136]
+        - option "Specific post types" [ref=e137]
+        - option "By taxonomy term" [ref=e138]
+        - option "Specific posts" [ref=e139]
+    - paragraph
+      - StaticText "Choose which content this comment rule covers. Non-qualifying users are restricted only on the matched content."
+    - StaticText "IF"
+    - StaticText "User meets these conditions"
+    - paragraph
+      - StaticText "No conditions added. Click below to add conditions."
+    - button "Add Condition" [ref=e124]
+    - button "Add Group" [ref=e125]
+    - StaticText "THEN"
+    - StaticText "Apply these actions"
+    - LabelText
+      - StaticText "When a non-qualifying user views the matched content"
+    - combobox [expanded=false, ref=e126]: Hide comments and block posting
+      - MenuListPopup
+        - option "Hide comments and block posting" [selected, ref=e140]
+        - option "Allow reading, block posting" [ref=e141]
+        - option "Hide comments, allow posting" [ref=e142]
+    - paragraph
+      - StaticText "The whole comments area is replaced by your message — existing comments are hidden and the comment form is closed."
+    - LabelText
+      - StaticText "Custom message"
+    - textbox "Comments are available to members only. Join now to read and join the conversation." [ref=e127]
+      - StaticText "Comments are available to members only. Join now to read and join the conversation."
+    - paragraph
+      - StaticText "Shown to non-qualifying users in place of the comments or the comment form. Basic HTML is allowed. Leave empty to use the global default message."
+    - strong
+      - StaticText "How it works:"
+    - list
+      - listitem [level=1]
+        - ListMarker "• "
+        - StaticText "The IF conditions describe who is ALLOWED to comment. Everyone who does not meet them is restricted."
+      - listitem [level=1]
+        - ListMarker "• "
+        - StaticText "Administrators and users who can moderate comments always bypass comment restrictions."
+      - listitem [level=1]
+        - ListMarker "• "
+        - StaticText "If multiple rules match the same content, the first matching rule wins (rules are processed in order)."
+      - listitem [level=1]
+        - ListMarker "• "
+        - StaticText "Posting is blocked server-side, so direct form POSTs and the WordPress REST API are covered too — not just the visible form."
+      - listitem [level=1]
+        - ListMarker "• "
+        - StaticText "Classic themes and block themes are both supported: the comments template and the core Comments blocks are replaced with your message."
+      - listitem [level=1]
+        - ListMarker "• "
+        - StaticText "Content that never had comments in the first place is left alone — the message appears only where a comments area (or a WooCommerce Reviews tab) would normally be shown."
+    - StaticText "SCHEDULE"
+    - StaticText "Delay access after subscription starts"
+    - checkbox "Delay this rule after subscription starts" [checked=false, ref=e128]
+    - button "Add New Rule" [ref=e135]
+    - generic
+      - button "Save Rules" [ref=e143]
+      - button "Discard Changes" [ref=e144]
+      - link "Easy Setup & Import/Export" [ref=e145]
+      - paragraph
+        - StaticText "Settings last saved: September 14, 2026 10:46 am (UTC)"
+- generic
+  - sectionheader
+    - navigation
+      - list
+        - listitem [level=1]
+          - link "Role Mapping" [ref=e146]
+        - listitem [level=1]
+          - link "Discount" [ref=e147]
+        - listitem [level=1]
+          - link "Shop Access" [ref=e148]
+        - listitem [level=1]
+          - link "URL" [ref=e149]
+        - listitem [level=1]
+          - link "Post Types" [ref=e150]
+        - listitem [level=1]
+          - link "Downloads" [ref=e151]
+        - listitem [level=1]
+          - link "Comments" [ref=e152]
+        - listitem [level=1]
+          - link "Purchase Limit" [ref=e153]
+        - listitem [level=1]
+          - link "Conflicts" [ref=e154]
+        - listitem [level=1]
+          - link "Login Limit" [ref=e155]
+    - StaticText "Configure memberships, content gating, role mapping, and access restrictions"
+  - link "Go Back" [ref=e31]
+  - main
+    - heading "Comment Restriction Rules" [level=3, ref=e116]
+    - paragraph
+      - StaticText "Control who can read and post comments based on membership conditions. Keep discussions members-only, or open reading to everyone while reserving replies for subscribers."
+    - heading "How Comment Rules Work" [level=4, ref=e117]
+    - list
+      - listitem [level=1]
+        - ListMarker "1. "
+        - StaticText "Define who is allowed to comment using the IF conditions — for example, customers with an active subscription, users with a certain role, or simply logged-in visitors. Users who do NOT meet the conditions are the ones that get restricted."
+      - listitem [level=1]
+        - ListMarker "2. "
+        - StaticText "Choose what the rule covers in the TARGET section — all content, selected post types, posts in specific taxonomy terms, or individual posts."
+      - listitem [level=1]
+        - ListMarker "3. "
+        - StaticText "Pick a restriction mode in the THEN section — hide comments and block posting, allow reading but block posting, or hide comments while keeping posting open."
+      - listitem [level=1]
+        - ListMarker "4. "
+        - StaticText "Restricted users see your custom message where the comments or the comment form would normally be, on both classic and block themes."
+      - listitem [level=1]
+        - ListMarker "5. "
+        - StaticText "Blocking is enforced on the server, so a restricted visitor cannot post by crafting a direct request or by using the REST API."
+    - paragraph
+      - strong
+        - StaticText "Note:"
+      - StaticText " Administrators and users who can moderate comments always bypass these rules. If several rules match the same content, the first matching rule wins."
+    - LabelText [ref=e118] clickable [onclick]
+      - checkbox [checked=false, ref=e129]
+    - generic [ref=e119] clickable [onclick]
+      - textbox "Rule name" [ref=e130]: Footer QA Comments
+        - StaticText "Footer QA Comments"
+      - StaticText "Comment Rule"
+      - StaticText " #"
+      - StaticText "1"
+    - generic [ref=e120] clickable [cursor:pointer, onclick]
+    - generic [ref=e121] clickable [onclick]
+      - button "Move up" [disabled, ref=e131]
+      - button "Move down" [disabled, ref=e132]
+      - button "Duplicate" [ref=e133]
+      - button "Delete" [ref=e134]
+    - button "Collapse" [ref=e122]
+    - StaticText "TARGET"
+    - LabelText
+      - StaticText "Apply this rule to"
+    - combobox [expanded=false, ref=e123]: All content
+      - MenuListPopup
+        - option "All content" [selected, ref=e136]
+        - option "Specific post types" [ref=e137]
+        - option "By taxonomy term" [ref=e138]
+        - option "Specific posts" [ref=e139]
+    - paragraph
+      - StaticText "Choose which content this comment rule covers. Non-qualifying users are restricted only on the matched content."
+    - StaticText "IF"
+    - StaticText "User meets these conditions"
+    - paragraph
+      - StaticText "No conditions added. Click below to add conditions."
+    - button "Add Condition" [ref=e124]
+    - button "Add Group" [ref=e125]
+    - StaticText "THEN"
+    - StaticText "Apply these actions"
+    - LabelText
+      - StaticText "When a non-qualifying user views the matched content"
+    - combobox [expanded=false, ref=e126]: Hide comments and block posting
+      - MenuListPopup
+        - option "Hide comments and block posting" [selected, ref=e140]
+        - option "Allow reading, block posting" [ref=e141]
+        - option "Hide comments, allow posting" [ref=e142]
+    - paragraph
+      - StaticText "The whole comments area is replaced by your message — existing comments are hidden and the comment form is closed."
+    - LabelText
+      - StaticText "Custom message"
+    - textbox "Comments are available to members only. Join now to read and join the conversation." [ref=e127]
+      - StaticText "Comments are available to members only. Join now to read and join the conversation."
+    - paragraph
+      - StaticText "Shown to non-qualifying users in place of the comments or the comment form. Basic HTML is allowed. Leave empty to use the global default message."
+    - strong
+      - StaticText "How it works:"
+    - list
+      - listitem [level=1]
+        - ListMarker "• "
+        - StaticText "The IF conditions describe who is ALLOWED to comment. Everyone who does not meet them is restricted."
+      - listitem [level=1]
+        - ListMarker "• "
+        - StaticText "Administrators and users who can moderate comments always bypass comment restrictions."
+      - listitem [level=1]
+        - ListMarker "• "
+        - StaticText "If multiple rules match the same content, the first matching rule wins (rules are processed in order)."
+      - listitem [level=1]
+        - ListMarker "• "
+        - StaticText "Posting is blocked server-side, so direct form POSTs and the WordPress REST API are covered too — not just the visible form."
+      - listitem [level=1]
+        - ListMarker "• "
+        - StaticText "Classic themes and block themes are both supported: the comments template and the core Comments blocks are replaced with your message."
+      - listitem [level=1]
+        - ListMarker "• "
+        - StaticText "Content that never had comments in the first place is left alone — the message appears only where a comments area (or a WooCommerce Reviews tab) would normally be shown."
+    - StaticText "SCHEDULE"
+    - StaticText "Delay access after subscription starts"
+    - checkbox "Delay this rule after subscription starts" [checked=false, ref=e128]
+    - button "Add New Rule" [ref=e135]
+    - generic
+      - button "Save Rules" [ref=e143]
+      - button "Discard Changes" [ref=e144]
+      - link "Easy Setup & Import/Export" [ref=e145]
+      - paragraph
+        - StaticText "Settings last saved: September 14, 2026 10:46 am (UTC)"
+- link "Go Back" [ref=e31]
+- StaticText "Configure memberships, content gating, role mapping, and access restrictions"
+- heading "Comment Restriction Rules" [level=3, ref=e116]
+- paragraph
+  - StaticText "Control who can read and post comments based on membership conditions. Keep discussions members-only, or open reading to everyone while reserving replies for subscribers."
+- heading "How Comment Rules Work" [level=4, ref=e117]
+- list
+  - listitem [level=1]
+    - ListMarker "1. "
+    - StaticText "Define who is allowed to comment using the IF conditions — for example, customers with an active subscription, users with a certain role, or simply logged-in visitors. Users who do NOT meet the conditions are the ones that get restricted."
+  - listitem [level=1]
+    - ListMarker "2. "
+    - StaticText "Choose what the rule covers in the TARGET section — all content, selected post types, posts in specific taxonomy terms, or individual posts."
+  - listitem [level=1]
+    - ListMarker "3. "
+    - StaticText "Pick a restriction mode in the THEN section — hide comments and block posting, allow reading but block posting, or hide comments while keeping posting open."
+  - listitem [level=1]
+    - ListMarker "4. "
+    - StaticText "Restricted users see your custom message where the comments or the comment form would normally be, on both classic and block themes."
+  - listitem [level=1]
+    - ListMarker "5. "
+    - StaticText "Blocking is enforced on the server, so a restricted visitor cannot post by crafting a direct request or by using the REST API."
+- paragraph
+  - strong
+    - StaticText "Note:"
+  - StaticText " Administrators and users who can moderate comments always bypass these rules. If several rules match the same content, the first matching rule wins."
+- LabelText [ref=e118] clickable [onclick]
+  - checkbox [checked=false, ref=e129]
+- generic [ref=e119] clickable [onclick]
+  - textbox "Rule name" [ref=e130]: Footer QA Comments
+    - StaticText "Footer QA Comments"
+  - StaticText "Comment Rule"
+  - StaticText " #"
+  - StaticText "1"
+- generic [ref=e120] clickable [cursor:pointer, onclick]
+- generic [ref=e121] clickable [onclick]
+  - button "Move up" [disabled, ref=e131]
+  - button "Move down" [disabled, ref=e132]
+  - button "Duplicate" [ref=e133]
+  - button "Delete" [ref=e134]
+- button "Collapse" [ref=e122]
+- StaticText "TARGET"
+- LabelText
+  - StaticText "Apply this rule to"
+- combobox [expanded=false, ref=e123]: All content
+  - MenuListPopup
+    - option "All content" [selected, ref=e136]
+    - option "Specific post types" [ref=e137]
+    - option "By taxonomy term" [ref=e138]
+    - option "Specific posts" [ref=e139]
+- paragraph
+  - StaticText "Choose which content this comment rule covers. Non-qualifying users are restricted only on the matched content."
+- StaticText "IF"
+- StaticText "User meets these conditions"
+- paragraph
+  - StaticText "No conditions added. Click below to add conditions."
+- button "Add Condition" [ref=e124]
+- button "Add Group" [ref=e125]
+- StaticText "THEN"
+- StaticText "Apply these actions"
+- LabelText
+  - StaticText "When a non-qualifying user views the matched content"
+- combobox [expanded=false, ref=e126]: Hide comments and block posting
+  - MenuListPopup
+    - option "Hide comments and block posting" [selected, ref=e140]
+    - option "Allow reading, block posting" [ref=e141]
+    - option "Hide comments, allow posting" [ref=e142]
+- paragraph
+  - StaticText "The whole comments area is replaced by your message — existing comments are hidden and the comment form is closed."
+- LabelText
+  - StaticText "Custom message"
+- textbox "Comments are available to members only. Join now to read and join the conversation." [ref=e127]
+  - StaticText "Comments are available to members only. Join now to read and join the conversation."
+- paragraph
+  - StaticText "Shown to non-qualifying users in place of the comments or the comment form. Basic HTML is allowed. Leave empty to use the global default message."
+- strong
+  - StaticText "How it works:"
+- list
+  - listitem [level=1]
+    - ListMarker "• "
+    - StaticText "The IF conditions describe who is ALLOWED to comment. Everyone who does not meet them is restricted."
+  - listitem [level=1]
+    - ListMarker "• "
+    - StaticText "Administrators and users who can moderate comments always bypass comment restrictions."
+  - listitem [level=1]
+    - ListMarker "• "
+    - StaticText "If multiple rules match the same content, the first matching rule wins (rules are processed in order)."
+  - listitem [level=1]
+    - ListMarker "• "
+    - StaticText "Posting is blocked server-side, so direct form POSTs and the WordPress REST API are covered too — not just the visible form."
+  - listitem [level=1]
+    - ListMarker "• "
+    - StaticText "Classic themes and block themes are both supported: the comments template and the core Comments blocks are replaced with your message."
+  - listitem [level=1]
+    - ListMarker "• "
+    - StaticText "Content that never had comments in the first place is left alone — the message appears only where a comments area (or a WooCommerce Reviews tab) would normally be shown."
+- StaticText "SCHEDULE"
+- StaticText "Delay access after subscription starts"
+- checkbox "Delay this rule after subscription starts" [checked=false, ref=e128]
+- button "Add New Rule" [ref=e135]
+- generic
+  - button "Save Rules" [ref=e143]
+  - button "Discard Changes" [ref=e144]
+  - link "Easy Setup & Import/Export" [ref=e145]
+  - paragraph
+    - StaticText "Settings last saved: September 14, 2026 10:46 am (UTC)"
+- StaticText "Comment Rule"
+- StaticText " #"
+- StaticText "1"
+- option "All content" [selected, ref=e136]
+- option "Specific post types" [ref=e137]
+- option "By taxonomy term" [ref=e138]
+- option "Specific posts" [ref=e139]
+- option "Hide comments and block posting" [selected, ref=e140]
+- option "Allow reading, block posting" [ref=e141]
+- option "Hide comments, allow posting" [ref=e142]

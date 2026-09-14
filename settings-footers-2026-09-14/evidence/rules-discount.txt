@@ -1,0 +1,440 @@
+- generic
+  - sectionheader
+    - navigation
+      - list
+        - listitem [level=1]
+          - link "Role Mapping" [ref=e149]
+        - listitem [level=1]
+          - link "Discount" [ref=e150]
+        - listitem [level=1]
+          - link "Shop Access" [ref=e151]
+        - listitem [level=1]
+          - link "URL" [ref=e152]
+        - listitem [level=1]
+          - link "Post Types" [ref=e153]
+        - listitem [level=1]
+          - link "Downloads" [ref=e154]
+        - listitem [level=1]
+          - link "Comments" [ref=e155]
+        - listitem [level=1]
+          - link "Purchase Limit" [ref=e156]
+        - listitem [level=1]
+          - link "Conflicts" [ref=e157]
+        - listitem [level=1]
+          - link "Login Limit" [ref=e158]
+    - StaticText "Configure memberships, content gating, role mapping, and access restrictions"
+  - link "Go Back" [ref=e31]
+  - main
+    - heading "Discount Rules" [level=3, ref=e116]
+    - paragraph
+      - StaticText "Reward your active members and subscribers with special pricing on store products. Discounts are applied automatically based on the conditions you define below."
+    - heading "How Discount Rules Work" [level=4, ref=e117]
+    - list
+      - listitem [level=1]
+        - ListMarker "1. "
+        - StaticText "Define who qualifies using the IF conditions — for example, customers with an active subscription to a specific product or users with a certain role."
+      - listitem [level=1]
+        - ListMarker "2. "
+        - StaticText "Choose what to discount in the TARGET section — all products, specific products, categories, or tags. You can also exclude specific products or categories."
+      - listitem [level=1]
+        - ListMarker "3. "
+        - StaticText "Configure the THEN section — set a percentage or fixed amount off the product price."
+      - listitem [level=1]
+        - ListMarker "4. "
+        - StaticText "For fixed discounts, you can choose whether the amount applies to each matching item or once per cart. Per-cart discounts appear as a cart adjustment at checkout."
+      - listitem [level=1]
+        - ListMarker "5. "
+        - StaticText "When a customer qualifies, per-item rules show member pricing across the storefront, while per-cart rules show the adjustment in cart and checkout where the final total is calculated."
+      - listitem [level=1]
+        - ListMarker "6. "
+        - StaticText "Turn on Free shipping to also waive shipping costs for qualifying members. Every shipping method available for their cart is offered at zero cost, so customers still choose how their order ships."
+      - listitem [level=1]
+        - ListMarker "7. "
+        - StaticText "Non-qualifying users and guests always see regular prices — no discount information is leaked."
+    - paragraph
+      - strong
+        - StaticText "Note:"
+      - StaticText " If a customer's membership expires or is cancelled, the discount is immediately removed for future purchases. Existing orders are not affected."
+    - LabelText [ref=e118] clickable [onclick]
+      - checkbox [checked=false, ref=e129]
+    - generic [ref=e119] clickable [onclick]
+      - textbox "Rule name" [ref=e130]: Footer QA Discount
+        - StaticText "Footer QA Discount"
+      - StaticText "Discount Rule"
+      - StaticText " #"
+      - StaticText "1"
+    - generic [ref=e120] clickable [cursor:pointer, onclick]
+    - generic [ref=e121] clickable [onclick]
+      - button "Move up" [disabled, ref=e131]
+      - button "Move down" [disabled, ref=e132]
+      - button "Duplicate" [ref=e133]
+      - button "Delete" [ref=e134]
+    - button "Collapse" [ref=e122]
+    - StaticText "TARGET"
+    - LabelText
+      - StaticText "Apply discount to"
+    - combobox [expanded=false, ref=e123]: All products
+      - MenuListPopup
+        - option "All products" [selected, ref=e140]
+        - option "Specific products" [ref=e141]
+        - option "Specific categories" [ref=e142]
+        - option "Specific tags" [ref=e143]
+    - paragraph
+      - StaticText "Select which products this discount applies to."
+    - StaticText "EXCLUSIONS"
+    - LabelText
+      - StaticText "Exclude products"
+    - generic [ref=e135] clickable [cursor:pointer, onclick]
+      - StaticText "Search products to exclude..."
+    - paragraph
+      - StaticText "These products will never receive this discount, even if they match the target scope above."
+    - LabelText
+      - StaticText "Exclude categories"
+    - generic [ref=e136] clickable [cursor:pointer, onclick]
+      - StaticText "Search categories to exclude..."
+    - paragraph
+      - StaticText "Products in these categories will be excluded from this discount."
+    - StaticText "IF"
+    - StaticText "User meets these conditions"
+    - paragraph
+      - StaticText "No conditions added. Click below to add conditions."
+    - button "Add Condition" [ref=e124]
+    - button "Add Group" [ref=e125]
+    - StaticText "THEN"
+    - StaticText "Apply these actions"
+    - LabelText
+      - StaticText "Discount type"
+    - combobox [expanded=false, ref=e126]: Percentage (%)
+      - MenuListPopup
+        - option "Percentage (%)" [selected, ref=e144]
+        - option "Fixed amount" [ref=e145]
+    - LabelText
+      - StaticText "Discount value"
+    - generic
+      - spinbutton "10" [ref=e137]
+        - StaticText "10"
+      - StaticText "%"
+    - paragraph
+      - StaticText "Enter a value between 0 and 100. For example, 10 means 10% off the product price."
+    - LabelText [ref=e127] clickable [cursor:pointer]
+      - checkbox [checked=false, ref=e138]
+    - StaticText "Free shipping"
+    - paragraph
+      - StaticText "Qualifying members get zero-cost shipping on every paid shipping method whenever their cart contains at least one targeted product that is not excluded above. Methods that are already free keep their normal label. This works alongside a price discount, or on its own if you leave the discount value at 0. Guests and non-qualifying users always see your normal shipping rates."
+    - strong
+      - StaticText "How it works:"
+    - list
+      - listitem [level=1]
+        - ListMarker "• "
+        - StaticText "Discounts are applied per-item. Each qualifying product in the cart shows the member price."
+      - listitem [level=1]
+        - ListMarker "• "
+        - StaticText "If multiple rules match the same product, the best discount (lowest price) wins — discounts do not stack across rules."
+      - listitem [level=1]
+        - ListMarker "• "
+        - StaticText "Member discounts are calculated from the regular price by default. If a product is on sale, the better price (sale or member) will be shown."
+      - listitem [level=1]
+        - ListMarker "• "
+        - StaticText "Per-item discounts are visible on product pages, archives, cart, and checkout for qualifying members. Guests and non-qualifying users see regular prices."
+      - listitem [level=1]
+        - ListMarker "• "
+        - StaticText "When Free shipping is enabled, every paid shipping method offered for the cart drops to zero at cart and checkout, and those method labels are marked as free for members. Methods that already cost nothing are left untouched."
+    - StaticText "SCHEDULE"
+    - StaticText "Delay access after subscription starts"
+    - checkbox "Delay this rule after subscription starts" [checked=false, ref=e128]
+    - button "Add New Rule" [ref=e139]
+    - generic
+      - button "Save Rules" [ref=e146]
+      - button "Discard Changes" [ref=e147]
+      - link "Easy Setup & Import/Export" [ref=e148]
+      - paragraph
+        - StaticText "Settings last saved: September 14, 2026 10:45 am (UTC)"
+- generic
+  - sectionheader
+    - navigation
+      - list
+        - listitem [level=1]
+          - link "Role Mapping" [ref=e149]
+        - listitem [level=1]
+          - link "Discount" [ref=e150]
+        - listitem [level=1]
+          - link "Shop Access" [ref=e151]
+        - listitem [level=1]
+          - link "URL" [ref=e152]
+        - listitem [level=1]
+          - link "Post Types" [ref=e153]
+        - listitem [level=1]
+          - link "Downloads" [ref=e154]
+        - listitem [level=1]
+          - link "Comments" [ref=e155]
+        - listitem [level=1]
+          - link "Purchase Limit" [ref=e156]
+        - listitem [level=1]
+          - link "Conflicts" [ref=e157]
+        - listitem [level=1]
+          - link "Login Limit" [ref=e158]
+    - StaticText "Configure memberships, content gating, role mapping, and access restrictions"
+  - link "Go Back" [ref=e31]
+  - main
+    - heading "Discount Rules" [level=3, ref=e116]
+    - paragraph
+      - StaticText "Reward your active members and subscribers with special pricing on store products. Discounts are applied automatically based on the conditions you define below."
+    - heading "How Discount Rules Work" [level=4, ref=e117]
+    - list
+      - listitem [level=1]
+        - ListMarker "1. "
+        - StaticText "Define who qualifies using the IF conditions — for example, customers with an active subscription to a specific product or users with a certain role."
+      - listitem [level=1]
+        - ListMarker "2. "
+        - StaticText "Choose what to discount in the TARGET section — all products, specific products, categories, or tags. You can also exclude specific products or categories."
+      - listitem [level=1]
+        - ListMarker "3. "
+        - StaticText "Configure the THEN section — set a percentage or fixed amount off the product price."
+      - listitem [level=1]
+        - ListMarker "4. "
+        - StaticText "For fixed discounts, you can choose whether the amount applies to each matching item or once per cart. Per-cart discounts appear as a cart adjustment at checkout."
+      - listitem [level=1]
+        - ListMarker "5. "
+        - StaticText "When a customer qualifies, per-item rules show member pricing across the storefront, while per-cart rules show the adjustment in cart and checkout where the final total is calculated."
+      - listitem [level=1]
+        - ListMarker "6. "
+        - StaticText "Turn on Free shipping to also waive shipping costs for qualifying members. Every shipping method available for their cart is offered at zero cost, so customers still choose how their order ships."
+      - listitem [level=1]
+        - ListMarker "7. "
+        - StaticText "Non-qualifying users and guests always see regular prices — no discount information is leaked."
+    - paragraph
+      - strong
+        - StaticText "Note:"
+      - StaticText " If a customer's membership expires or is cancelled, the discount is immediately removed for future purchases. Existing orders are not affected."
+    - LabelText [ref=e118] clickable [onclick]
+      - checkbox [checked=false, ref=e129]
+    - generic [ref=e119] clickable [onclick]
+      - textbox "Rule name" [ref=e130]: Footer QA Discount
+        - StaticText "Footer QA Discount"
+      - StaticText "Discount Rule"
+      - StaticText " #"
+      - StaticText "1"
+    - generic [ref=e120] clickable [cursor:pointer, onclick]
+    - generic [ref=e121] clickable [onclick]
+      - button "Move up" [disabled, ref=e131]
+      - button "Move down" [disabled, ref=e132]
+      - button "Duplicate" [ref=e133]
+      - button "Delete" [ref=e134]
+    - button "Collapse" [ref=e122]
+    - StaticText "TARGET"
+    - LabelText
+      - StaticText "Apply discount to"
+    - combobox [expanded=false, ref=e123]: All products
+      - MenuListPopup
+        - option "All products" [selected, ref=e140]
+        - option "Specific products" [ref=e141]
+        - option "Specific categories" [ref=e142]
+        - option "Specific tags" [ref=e143]
+    - paragraph
+      - StaticText "Select which products this discount applies to."
+    - StaticText "EXCLUSIONS"
+    - LabelText
+      - StaticText "Exclude products"
+    - generic [ref=e135] clickable [cursor:pointer, onclick]
+      - StaticText "Search products to exclude..."
+    - paragraph
+      - StaticText "These products will never receive this discount, even if they match the target scope above."
+    - LabelText
+      - StaticText "Exclude categories"
+    - generic [ref=e136] clickable [cursor:pointer, onclick]
+      - StaticText "Search categories to exclude..."
+    - paragraph
+      - StaticText "Products in these categories will be excluded from this discount."
+    - StaticText "IF"
+    - StaticText "User meets these conditions"
+    - paragraph
+      - StaticText "No conditions added. Click below to add conditions."
+    - button "Add Condition" [ref=e124]
+    - button "Add Group" [ref=e125]
+    - StaticText "THEN"
+    - StaticText "Apply these actions"
+    - LabelText
+      - StaticText "Discount type"
+    - combobox [expanded=false, ref=e126]: Percentage (%)
+      - MenuListPopup
+        - option "Percentage (%)" [selected, ref=e144]
+        - option "Fixed amount" [ref=e145]
+    - LabelText
+      - StaticText "Discount value"
+    - generic
+      - spinbutton "10" [ref=e137]
+        - StaticText "10"
+      - StaticText "%"
+    - paragraph
+      - StaticText "Enter a value between 0 and 100. For example, 10 means 10% off the product price."
+    - LabelText [ref=e127] clickable [cursor:pointer]
+      - checkbox [checked=false, ref=e138]
+    - StaticText "Free shipping"
+    - paragraph
+      - StaticText "Qualifying members get zero-cost shipping on every paid shipping method whenever their cart contains at least one targeted product that is not excluded above. Methods that are already free keep their normal label. This works alongside a price discount, or on its own if you leave the discount value at 0. Guests and non-qualifying users always see your normal shipping rates."
+    - strong
+      - StaticText "How it works:"
+    - list
+      - listitem [level=1]
+        - ListMarker "• "
+        - StaticText "Discounts are applied per-item. Each qualifying product in the cart shows the member price."
+      - listitem [level=1]
+        - ListMarker "• "
+        - StaticText "If multiple rules match the same product, the best discount (lowest price) wins — discounts do not stack across rules."
+      - listitem [level=1]
+        - ListMarker "• "
+        - StaticText "Member discounts are calculated from the regular price by default. If a product is on sale, the better price (sale or member) will be shown."
+      - listitem [level=1]
+        - ListMarker "• "
+        - StaticText "Per-item discounts are visible on product pages, archives, cart, and checkout for qualifying members. Guests and non-qualifying users see regular prices."
+      - listitem [level=1]
+        - ListMarker "• "
+        - StaticText "When Free shipping is enabled, every paid shipping method offered for the cart drops to zero at cart and checkout, and those method labels are marked as free for members. Methods that already cost nothing are left untouched."
+    - StaticText "SCHEDULE"
+    - StaticText "Delay access after subscription starts"
+    - checkbox "Delay this rule after subscription starts" [checked=false, ref=e128]
+    - button "Add New Rule" [ref=e139]
+    - generic
+      - button "Save Rules" [ref=e146]
+      - button "Discard Changes" [ref=e147]
+      - link "Easy Setup & Import/Export" [ref=e148]
+      - paragraph
+        - StaticText "Settings last saved: September 14, 2026 10:45 am (UTC)"
+- link "Go Back" [ref=e31]
+- StaticText "Configure memberships, content gating, role mapping, and access restrictions"
+- heading "Discount Rules" [level=3, ref=e116]
+- paragraph
+  - StaticText "Reward your active members and subscribers with special pricing on store products. Discounts are applied automatically based on the conditions you define below."
+- heading "How Discount Rules Work" [level=4, ref=e117]
+- list
+  - listitem [level=1]
+    - ListMarker "1. "
+    - StaticText "Define who qualifies using the IF conditions — for example, customers with an active subscription to a specific product or users with a certain role."
+  - listitem [level=1]
+    - ListMarker "2. "
+    - StaticText "Choose what to discount in the TARGET section — all products, specific products, categories, or tags. You can also exclude specific products or categories."
+  - listitem [level=1]
+    - ListMarker "3. "
+    - StaticText "Configure the THEN section — set a percentage or fixed amount off the product price."
+  - listitem [level=1]
+    - ListMarker "4. "
+    - StaticText "For fixed discounts, you can choose whether the amount applies to each matching item or once per cart. Per-cart discounts appear as a cart adjustment at checkout."
+  - listitem [level=1]
+    - ListMarker "5. "
+    - StaticText "When a customer qualifies, per-item rules show member pricing across the storefront, while per-cart rules show the adjustment in cart and checkout where the final total is calculated."
+  - listitem [level=1]
+    - ListMarker "6. "
+    - StaticText "Turn on Free shipping to also waive shipping costs for qualifying members. Every shipping method available for their cart is offered at zero cost, so customers still choose how their order ships."
+  - listitem [level=1]
+    - ListMarker "7. "
+    - StaticText "Non-qualifying users and guests always see regular prices — no discount information is leaked."
+- paragraph
+  - strong
+    - StaticText "Note:"
+  - StaticText " If a customer's membership expires or is cancelled, the discount is immediately removed for future purchases. Existing orders are not affected."
+- LabelText [ref=e118] clickable [onclick]
+  - checkbox [checked=false, ref=e129]
+- generic [ref=e119] clickable [onclick]
+  - textbox "Rule name" [ref=e130]: Footer QA Discount
+    - StaticText "Footer QA Discount"
+  - StaticText "Discount Rule"
+  - StaticText " #"
+  - StaticText "1"
+- generic [ref=e120] clickable [cursor:pointer, onclick]
+- generic [ref=e121] clickable [onclick]
+  - button "Move up" [disabled, ref=e131]
+  - button "Move down" [disabled, ref=e132]
+  - button "Duplicate" [ref=e133]
+  - button "Delete" [ref=e134]
+- button "Collapse" [ref=e122]
+- StaticText "TARGET"
+- LabelText
+  - StaticText "Apply discount to"
+- combobox [expanded=false, ref=e123]: All products
+  - MenuListPopup
+    - option "All products" [selected, ref=e140]
+    - option "Specific products" [ref=e141]
+    - option "Specific categories" [ref=e142]
+    - option "Specific tags" [ref=e143]
+- paragraph
+  - StaticText "Select which products this discount applies to."
+- StaticText "EXCLUSIONS"
+- LabelText
+  - StaticText "Exclude products"
+- generic [ref=e135] clickable [cursor:pointer, onclick]
+  - StaticText "Search products to exclude..."
+- paragraph
+  - StaticText "These products will never receive this discount, even if they match the target scope above."
+- LabelText
+  - StaticText "Exclude categories"
+- generic [ref=e136] clickable [cursor:pointer, onclick]
+  - StaticText "Search categories to exclude..."
+- paragraph
+  - StaticText "Products in these categories will be excluded from this discount."
+- StaticText "IF"
+- StaticText "User meets these conditions"
+- paragraph
+  - StaticText "No conditions added. Click below to add conditions."
+- button "Add Condition" [ref=e124]
+- button "Add Group" [ref=e125]
+- StaticText "THEN"
+- StaticText "Apply these actions"
+- LabelText
+  - StaticText "Discount type"
+- combobox [expanded=false, ref=e126]: Percentage (%)
+  - MenuListPopup
+    - option "Percentage (%)" [selected, ref=e144]
+    - option "Fixed amount" [ref=e145]
+- LabelText
+  - StaticText "Discount value"
+- generic
+  - spinbutton "10" [ref=e137]
+    - StaticText "10"
+  - StaticText "%"
+- paragraph
+  - StaticText "Enter a value between 0 and 100. For example, 10 means 10% off the product price."
+- LabelText [ref=e127] clickable [cursor:pointer]
+  - checkbox [checked=false, ref=e138]
+- StaticText "Free shipping"
+- paragraph
+  - StaticText "Qualifying members get zero-cost shipping on every paid shipping method whenever their cart contains at least one targeted product that is not excluded above. Methods that are already free keep their normal label. This works alongside a price discount, or on its own if you leave the discount value at 0. Guests and non-qualifying users always see your normal shipping rates."
+- strong
+  - StaticText "How it works:"
+- list
+  - listitem [level=1]
+    - ListMarker "• "
+    - StaticText "Discounts are applied per-item. Each qualifying product in the cart shows the member price."
+  - listitem [level=1]
+    - ListMarker "• "
+    - StaticText "If multiple rules match the same product, the best discount (lowest price) wins — discounts do not stack across rules."
+  - listitem [level=1]
+    - ListMarker "• "
+    - StaticText "Member discounts are calculated from the regular price by default. If a product is on sale, the better price (sale or member) will be shown."
+  - listitem [level=1]
+    - ListMarker "• "
+    - StaticText "Per-item discounts are visible on product pages, archives, cart, and checkout for qualifying members. Guests and non-qualifying users see regular prices."
+  - listitem [level=1]
+    - ListMarker "• "
+    - StaticText "When Free shipping is enabled, every paid shipping method offered for the cart drops to zero at cart and checkout, and those method labels are marked as free for members. Methods that already cost nothing are left untouched."
+- StaticText "SCHEDULE"
+- StaticText "Delay access after subscription starts"
+- checkbox "Delay this rule after subscription starts" [checked=false, ref=e128]
+- button "Add New Rule" [ref=e139]
+- generic
+  - button "Save Rules" [ref=e146]
+  - button "Discard Changes" [ref=e147]
+  - link "Easy Setup & Import/Export" [ref=e148]
+  - paragraph
+    - StaticText "Settings last saved: September 14, 2026 10:45 am (UTC)"
+- StaticText "Discount Rule"
+- StaticText " #"
+- StaticText "1"
+- StaticText "%"
+- option "All products" [selected, ref=e140]
+- option "Specific products" [ref=e141]
+- option "Specific categories" [ref=e142]
+- option "Specific tags" [ref=e143]
+- StaticText "Search products to exclude..."
+- StaticText "Search categories to exclude..."
+- option "Percentage (%)" [selected, ref=e144]
+- option "Fixed amount" [ref=e145]

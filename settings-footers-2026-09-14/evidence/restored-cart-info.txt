@@ -1,0 +1,101 @@
+- generic
+  - sectionheader
+    - navigation
+      - list
+        - listitem [level=1]
+          - link "Cart Info Editor" [ref=e123]
+    - StaticText "Control the subscription details shown throughout the purchasing experience."
+  - link "Go Back" [ref=e31]
+  - main
+    - generic
+      - heading "Cart Info Editor" [level=3, ref=e116]
+      - paragraph
+        - StaticText "Choose which subscription details are hidden from customers."
+      - switch "Hide First billing cycle info" [checked=false, ref=e117]
+      - LabelText [ref=e118] clickable [cursor:pointer, onclick]
+        - StaticText "Hide First billing cycle info"
+      - switch "Hide shipping charge info" [checked=false, ref=e119]
+      - LabelText [ref=e120] clickable [cursor:pointer, onclick]
+        - StaticText "Hide shipping charge info"
+      - switch "Hide Duration info" [checked=false, ref=e121]
+      - LabelText [ref=e122] clickable [cursor:pointer, onclick]
+        - StaticText "Hide Duration info"
+      - generic
+        - button "Save Settings" [ref=e124]
+        - button "Discard Changes" [ref=e125]
+        - link "Easy Setup & Import/Export" [ref=e126]
+        - paragraph
+          - StaticText "Settings last saved: September 10, 2026 12:59 pm (UTC)"
+- generic
+  - sectionheader
+    - navigation
+      - list
+        - listitem [level=1]
+          - link "Cart Info Editor" [ref=e123]
+    - StaticText "Control the subscription details shown throughout the purchasing experience."
+  - link "Go Back" [ref=e31]
+  - main
+    - generic
+      - heading "Cart Info Editor" [level=3, ref=e116]
+      - paragraph
+        - StaticText "Choose which subscription details are hidden from customers."
+      - switch "Hide First billing cycle info" [checked=false, ref=e117]
+      - LabelText [ref=e118] clickable [cursor:pointer, onclick]
+        - StaticText "Hide First billing cycle info"
+      - switch "Hide shipping charge info" [checked=false, ref=e119]
+      - LabelText [ref=e120] clickable [cursor:pointer, onclick]
+        - StaticText "Hide shipping charge info"
+      - switch "Hide Duration info" [checked=false, ref=e121]
+      - LabelText [ref=e122] clickable [cursor:pointer, onclick]
+        - StaticText "Hide Duration info"
+      - generic
+        - button "Save Settings" [ref=e124]
+        - button "Discard Changes" [ref=e125]
+        - link "Easy Setup & Import/Export" [ref=e126]
+        - paragraph
+          - StaticText "Settings last saved: September 10, 2026 12:59 pm (UTC)"
+- link "Go Back" [ref=e31]
+- StaticText "Control the subscription details shown throughout the purchasing experience."
+- generic
+  - heading "Cart Info Editor" [level=3, ref=e116]
+  - paragraph
+    - StaticText "Choose which subscription details are hidden from customers."
+  - switch "Hide First billing cycle info" [checked=false, ref=e117]
+  - LabelText [ref=e118] clickable [cursor:pointer, onclick]
+    - StaticText "Hide First billing cycle info"
+  - switch "Hide shipping charge info" [checked=false, ref=e119]
+  - LabelText [ref=e120] clickable [cursor:pointer, onclick]
+    - StaticText "Hide shipping charge info"
+  - switch "Hide Duration info" [checked=false, ref=e121]
+  - LabelText [ref=e122] clickable [cursor:pointer, onclick]
+    - StaticText "Hide Duration info"
+  - generic
+    - button "Save Settings" [ref=e124]
+    - button "Discard Changes" [ref=e125]
+    - link "Easy Setup & Import/Export" [ref=e126]
+    - paragraph
+      - StaticText "Settings last saved: September 10, 2026 12:59 pm (UTC)"
+- heading "Cart Info Editor" [level=3, ref=e116]
+- paragraph
+  - StaticText "Choose which subscription details are hidden from customers."
+- switch "Hide First billing cycle info" [checked=false, ref=e117]
+- LabelText [ref=e118] clickable [cursor:pointer, onclick]
+  - StaticText "Hide First billing cycle info"
+- switch "Hide shipping charge info" [checked=false, ref=e119]
+- LabelText [ref=e120] clickable [cursor:pointer, onclick]
+  - StaticText "Hide shipping charge info"
+- switch "Hide Duration info" [checked=false, ref=e121]
+- LabelText [ref=e122] clickable [cursor:pointer, onclick]
+  - StaticText "Hide Duration info"
+- heading "Cart Info Editor" [level=3, ref=e116]
+- paragraph
+  - StaticText "Choose which subscription details are hidden from customers."
+- switch "Hide First billing cycle info" [checked=false, ref=e117]
+- LabelText [ref=e118] clickable [cursor:pointer, onclick]
+  - StaticText "Hide First billing cycle info"
+- switch "Hide shipping charge info" [checked=false, ref=e119]
+- LabelText [ref=e120] clickable [cursor:pointer, onclick]
+  - StaticText "Hide shipping charge info"
+- switch "Hide Duration info" [checked=false, ref=e121]
+- LabelText [ref=e122] clickable [cursor:pointer, onclick]
+  - StaticText "Hide Duration info"

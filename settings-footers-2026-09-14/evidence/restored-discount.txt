@@ -1,0 +1,173 @@
+- generic
+  - sectionheader
+    - navigation
+      - list
+        - listitem [level=1]
+          - link "Role Mapping" [ref=e122]
+        - listitem [level=1]
+          - link "Discount" [ref=e123]
+        - listitem [level=1]
+          - link "Shop Access" [ref=e124]
+        - listitem [level=1]
+          - link "URL" [ref=e125]
+        - listitem [level=1]
+          - link "Post Types" [ref=e126]
+        - listitem [level=1]
+          - link "Downloads" [ref=e127]
+        - listitem [level=1]
+          - link "Comments" [ref=e128]
+        - listitem [level=1]
+          - link "Purchase Limit" [ref=e129]
+        - listitem [level=1]
+          - link "Conflicts" [ref=e130]
+        - listitem [level=1]
+          - link "Login Limit" [ref=e131]
+    - StaticText "Configure memberships, content gating, role mapping, and access restrictions"
+  - link "Go Back" [ref=e31]
+  - main
+    - heading "Discount Rules" [level=3, ref=e116]
+    - paragraph
+      - StaticText "Reward your active members and subscribers with special pricing on store products. Discounts are applied automatically based on the conditions you define below."
+    - heading "How Discount Rules Work" [level=4, ref=e117]
+    - list
+      - listitem [level=1]
+        - ListMarker "1. "
+        - StaticText "Define who qualifies using the IF conditions — for example, customers with an active subscription to a specific product or users with a certain role."
+      - listitem [level=1]
+        - ListMarker "2. "
+        - StaticText "Choose what to discount in the TARGET section — all products, specific products, categories, or tags. You can also exclude specific products or categories."
+      - listitem [level=1]
+        - ListMarker "3. "
+        - StaticText "Configure the THEN section — set a percentage or fixed amount off the product price."
+      - listitem [level=1]
+        - ListMarker "4. "
+        - StaticText "For fixed discounts, you can choose whether the amount applies to each matching item or once per cart. Per-cart discounts appear as a cart adjustment at checkout."
+      - listitem [level=1]
+        - ListMarker "5. "
+        - StaticText "When a customer qualifies, per-item rules show member pricing across the storefront, while per-cart rules show the adjustment in cart and checkout where the final total is calculated."
+      - listitem [level=1]
+        - ListMarker "6. "
+        - StaticText "Turn on Free shipping to also waive shipping costs for qualifying members. Every shipping method available for their cart is offered at zero cost, so customers still choose how their order ships."
+      - listitem [level=1]
+        - ListMarker "7. "
+        - StaticText "Non-qualifying users and guests always see regular prices — no discount information is leaked."
+    - paragraph
+      - strong
+        - StaticText "Note:"
+      - StaticText " If a customer's membership expires or is cancelled, the discount is immediately removed for future purchases. Existing orders are not affected."
+    - paragraph
+      - StaticText "No rules configured yet."
+    - button "Add New Rule" [ref=e118]
+    - generic
+      - button "Save Rules" [ref=e119]
+      - button "Discard Changes" [ref=e120]
+      - link "Easy Setup & Import/Export" [ref=e121]
+      - paragraph
+        - StaticText "Settings last saved: September 10, 2026 12:59 pm (UTC)"
+- generic
+  - sectionheader
+    - navigation
+      - list
+        - listitem [level=1]
+          - link "Role Mapping" [ref=e122]
+        - listitem [level=1]
+          - link "Discount" [ref=e123]
+        - listitem [level=1]
+          - link "Shop Access" [ref=e124]
+        - listitem [level=1]
+          - link "URL" [ref=e125]
+        - listitem [level=1]
+          - link "Post Types" [ref=e126]
+        - listitem [level=1]
+          - link "Downloads" [ref=e127]
+        - listitem [level=1]
+          - link "Comments" [ref=e128]
+        - listitem [level=1]
+          - link "Purchase Limit" [ref=e129]
+        - listitem [level=1]
+          - link "Conflicts" [ref=e130]
+        - listitem [level=1]
+          - link "Login Limit" [ref=e131]
+    - StaticText "Configure memberships, content gating, role mapping, and access restrictions"
+  - link "Go Back" [ref=e31]
+  - main
+    - heading "Discount Rules" [level=3, ref=e116]
+    - paragraph
+      - StaticText "Reward your active members and subscribers with special pricing on store products. Discounts are applied automatically based on the conditions you define below."
+    - heading "How Discount Rules Work" [level=4, ref=e117]
+    - list
+      - listitem [level=1]
+        - ListMarker "1. "
+        - StaticText "Define who qualifies using the IF conditions — for example, customers with an active subscription to a specific product or users with a certain role."
+      - listitem [level=1]
+        - ListMarker "2. "
+        - StaticText "Choose what to discount in the TARGET section — all products, specific products, categories, or tags. You can also exclude specific products or categories."
+      - listitem [level=1]
+        - ListMarker "3. "
+        - StaticText "Configure the THEN section — set a percentage or fixed amount off the product price."
+      - listitem [level=1]
+        - ListMarker "4. "
+        - StaticText "For fixed discounts, you can choose whether the amount applies to each matching item or once per cart. Per-cart discounts appear as a cart adjustment at checkout."
+      - listitem [level=1]
+        - ListMarker "5. "
+        - StaticText "When a customer qualifies, per-item rules show member pricing across the storefront, while per-cart rules show the adjustment in cart and checkout where the final total is calculated."
+      - listitem [level=1]
+        - ListMarker "6. "
+        - StaticText "Turn on Free shipping to also waive shipping costs for qualifying members. Every shipping method available for their cart is offered at zero cost, so customers still choose how their order ships."
+      - listitem [level=1]
+        - ListMarker "7. "
+        - StaticText "Non-qualifying users and guests always see regular prices — no discount information is leaked."
+    - paragraph
+      - strong
+        - StaticText "Note:"
+      - StaticText " If a customer's membership expires or is cancelled, the discount is immediately removed for future purchases. Existing orders are not affected."
+    - paragraph
+      - StaticText "No rules configured yet."
+    - button "Add New Rule" [ref=e118]
+    - generic
+      - button "Save Rules" [ref=e119]
+      - button "Discard Changes" [ref=e120]
+      - link "Easy Setup & Import/Export" [ref=e121]
+      - paragraph
+        - StaticText "Settings last saved: September 10, 2026 12:59 pm (UTC)"
+- link "Go Back" [ref=e31]
+- StaticText "Configure memberships, content gating, role mapping, and access restrictions"
+- heading "Discount Rules" [level=3, ref=e116]
+- paragraph
+  - StaticText "Reward your active members and subscribers with special pricing on store products. Discounts are applied automatically based on the conditions you define below."
+- heading "How Discount Rules Work" [level=4, ref=e117]
+- list
+  - listitem [level=1]
+    - ListMarker "1. "
+    - StaticText "Define who qualifies using the IF conditions — for example, customers with an active subscription to a specific product or users with a certain role."
+  - listitem [level=1]
+    - ListMarker "2. "
+    - StaticText "Choose what to discount in the TARGET section — all products, specific products, categories, or tags. You can also exclude specific products or categories."
+  - listitem [level=1]
+    - ListMarker "3. "
+    - StaticText "Configure the THEN section — set a percentage or fixed amount off the product price."
+  - listitem [level=1]
+    - ListMarker "4. "
+    - StaticText "For fixed discounts, you can choose whether the amount applies to each matching item or once per cart. Per-cart discounts appear as a cart adjustment at checkout."
+  - listitem [level=1]
+    - ListMarker "5. "
+    - StaticText "When a customer qualifies, per-item rules show member pricing across the storefront, while per-cart rules show the adjustment in cart and checkout where the final total is calculated."
+  - listitem [level=1]
+    - ListMarker "6. "
+    - StaticText "Turn on Free shipping to also waive shipping costs for qualifying members. Every shipping method available for their cart is offered at zero cost, so customers still choose how their order ships."
+  - listitem [level=1]
+    - ListMarker "7. "
+    - StaticText "Non-qualifying users and guests always see regular prices — no discount information is leaked."
+- paragraph
+  - strong
+    - StaticText "Note:"
+  - StaticText " If a customer's membership expires or is cancelled, the discount is immediately removed for future purchases. Existing orders are not affected."
+- paragraph
+  - StaticText "No rules configured yet."
+- button "Add New Rule" [ref=e118]
+- generic
+  - button "Save Rules" [ref=e119]
+  - button "Discard Changes" [ref=e120]
+  - link "Easy Setup & Import/Export" [ref=e121]
+  - paragraph
+    - StaticText "Settings last saved: September 10, 2026 12:59 pm (UTC)"

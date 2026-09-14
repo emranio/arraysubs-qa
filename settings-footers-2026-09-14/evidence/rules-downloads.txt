@@ -1,0 +1,260 @@
+- generic
+  - sectionheader
+    - navigation
+      - list
+        - listitem [level=1]
+          - link "Role Mapping" [ref=e137]
+        - listitem [level=1]
+          - link "Discount" [ref=e138]
+        - listitem [level=1]
+          - link "Shop Access" [ref=e139]
+        - listitem [level=1]
+          - link "URL" [ref=e140]
+        - listitem [level=1]
+          - link "Post Types" [ref=e141]
+        - listitem [level=1]
+          - link "Downloads" [ref=e142]
+        - listitem [level=1]
+          - link "Comments" [ref=e143]
+        - listitem [level=1]
+          - link "Purchase Limit" [ref=e144]
+        - listitem [level=1]
+          - link "Conflicts" [ref=e145]
+        - listitem [level=1]
+          - link "Login Limit" [ref=e146]
+    - StaticText "Configure memberships, content gating, role mapping, and access restrictions"
+  - link "Go Back" [ref=e31]
+  - main
+    - heading "Download Rules" [level=3, ref=e116]
+    - paragraph
+      - StaticText "Define downloadable files that become available to customers based on their subscription status. This works alongside WooCommerce's native downloadable products."
+    - heading "How Download Rules Work" [level=4, ref=e117]
+    - list
+      - listitem [level=1]
+        - ListMarker "1. "
+        - StaticText "Define who qualifies using the IF conditions — for example, customers with an active subscription, customers assigned to a certain membership product, or users matching another rule condition."
+      - listitem [level=1]
+        - ListMarker "2. "
+        - StaticText "Choose what files to provide in the TARGET section. These files are attached to the rule and shown with the display names you choose."
+      - listitem [level=1]
+        - ListMarker "3. "
+        - StaticText "When a customer matches the rule, the files appear in My Account → Downloads. If they stop qualifying later, those rule-based files are no longer shown for future access."
+      - listitem [level=1]
+        - ListMarker "4. "
+        - StaticText "You can include multiple files per rule and reorder them to control how they appear to the customer."
+      - listitem [level=1]
+        - ListMarker "5. "
+        - StaticText "Use this for bonus resources, member guides, PDFs, templates, software files, or gated companion downloads that should not live directly on a WooCommerce product."
+    - paragraph
+      - strong
+        - StaticText "Note:"
+      - StaticText " WooCommerce downloadable products on the product edit screen continue to work normally. Download Rules add extra membership-based files alongside that native WooCommerce system rather than replacing it."
+    - LabelText [ref=e118] clickable [onclick]
+      - checkbox [checked=false, ref=e127]
+    - generic [ref=e119] clickable [onclick]
+      - textbox "Rule name" [ref=e128]: Footer QA Downloads
+        - StaticText "Footer QA Downloads"
+      - StaticText "Download Rule"
+      - StaticText " #"
+      - StaticText "1"
+    - generic [ref=e120] clickable [cursor:pointer, onclick]
+    - generic [ref=e121] clickable [onclick]
+      - button "Move up" [disabled, ref=e129]
+      - button "Move down" [disabled, ref=e130]
+      - button "Duplicate" [ref=e131]
+      - button "Delete" [ref=e132]
+    - button "Collapse" [ref=e122]
+    - StaticText "TARGET"
+    - LabelText
+      - StaticText "Downloadable Files"
+    - button "Add File" [ref=e123]
+    - paragraph
+      - StaticText "No files added. Add files that will be available to download when conditions are met."
+    - paragraph
+      - StaticText "These files will appear on the customer's My Account → Downloads page when they meet the conditions below."
+    - StaticText "IF"
+    - StaticText "User meets these conditions"
+    - paragraph
+      - StaticText "No conditions added. Click below to add conditions."
+    - button "Add Condition" [ref=e124]
+    - button "Add Group" [ref=e125]
+    - StaticText "THEN"
+    - StaticText "Apply these actions"
+    - paragraph
+      - StaticText "When a customer meets the conditions above, the files will be available for download in their My Account area."
+    - StaticText "SCHEDULE"
+    - StaticText "Delay access after subscription starts"
+    - checkbox "Delay this rule after subscription starts" [checked=false, ref=e126]
+    - button "Add New Rule" [ref=e133]
+    - generic
+      - button "Save Settings" [ref=e134]
+      - button "Discard Changes" [ref=e135]
+      - link "Easy Setup & Import/Export" [ref=e136]
+      - paragraph
+        - StaticText "Settings last saved: September 14, 2026 10:46 am (UTC)"
+- generic
+  - sectionheader
+    - navigation
+      - list
+        - listitem [level=1]
+          - link "Role Mapping" [ref=e137]
+        - listitem [level=1]
+          - link "Discount" [ref=e138]
+        - listitem [level=1]
+          - link "Shop Access" [ref=e139]
+        - listitem [level=1]
+          - link "URL" [ref=e140]
+        - listitem [level=1]
+          - link "Post Types" [ref=e141]
+        - listitem [level=1]
+          - link "Downloads" [ref=e142]
+        - listitem [level=1]
+          - link "Comments" [ref=e143]
+        - listitem [level=1]
+          - link "Purchase Limit" [ref=e144]
+        - listitem [level=1]
+          - link "Conflicts" [ref=e145]
+        - listitem [level=1]
+          - link "Login Limit" [ref=e146]
+    - StaticText "Configure memberships, content gating, role mapping, and access restrictions"
+  - link "Go Back" [ref=e31]
+  - main
+    - heading "Download Rules" [level=3, ref=e116]
+    - paragraph
+      - StaticText "Define downloadable files that become available to customers based on their subscription status. This works alongside WooCommerce's native downloadable products."
+    - heading "How Download Rules Work" [level=4, ref=e117]
+    - list
+      - listitem [level=1]
+        - ListMarker "1. "
+        - StaticText "Define who qualifies using the IF conditions — for example, customers with an active subscription, customers assigned to a certain membership product, or users matching another rule condition."
+      - listitem [level=1]
+        - ListMarker "2. "
+        - StaticText "Choose what files to provide in the TARGET section. These files are attached to the rule and shown with the display names you choose."
+      - listitem [level=1]
+        - ListMarker "3. "
+        - StaticText "When a customer matches the rule, the files appear in My Account → Downloads. If they stop qualifying later, those rule-based files are no longer shown for future access."
+      - listitem [level=1]
+        - ListMarker "4. "
+        - StaticText "You can include multiple files per rule and reorder them to control how they appear to the customer."
+      - listitem [level=1]
+        - ListMarker "5. "
+        - StaticText "Use this for bonus resources, member guides, PDFs, templates, software files, or gated companion downloads that should not live directly on a WooCommerce product."
+    - paragraph
+      - strong
+        - StaticText "Note:"
+      - StaticText " WooCommerce downloadable products on the product edit screen continue to work normally. Download Rules add extra membership-based files alongside that native WooCommerce system rather than replacing it."
+    - LabelText [ref=e118] clickable [onclick]
+      - checkbox [checked=false, ref=e127]
+    - generic [ref=e119] clickable [onclick]
+      - textbox "Rule name" [ref=e128]: Footer QA Downloads
+        - StaticText "Footer QA Downloads"
+      - StaticText "Download Rule"
+      - StaticText " #"
+      - StaticText "1"
+    - generic [ref=e120] clickable [cursor:pointer, onclick]
+    - generic [ref=e121] clickable [onclick]
+      - button "Move up" [disabled, ref=e129]
+      - button "Move down" [disabled, ref=e130]
+      - button "Duplicate" [ref=e131]
+      - button "Delete" [ref=e132]
+    - button "Collapse" [ref=e122]
+    - StaticText "TARGET"
+    - LabelText
+      - StaticText "Downloadable Files"
+    - button "Add File" [ref=e123]
+    - paragraph
+      - StaticText "No files added. Add files that will be available to download when conditions are met."
+    - paragraph
+      - StaticText "These files will appear on the customer's My Account → Downloads page when they meet the conditions below."
+    - StaticText "IF"
+    - StaticText "User meets these conditions"
+    - paragraph
+      - StaticText "No conditions added. Click below to add conditions."
+    - button "Add Condition" [ref=e124]
+    - button "Add Group" [ref=e125]
+    - StaticText "THEN"
+    - StaticText "Apply these actions"
+    - paragraph
+      - StaticText "When a customer meets the conditions above, the files will be available for download in their My Account area."
+    - StaticText "SCHEDULE"
+    - StaticText "Delay access after subscription starts"
+    - checkbox "Delay this rule after subscription starts" [checked=false, ref=e126]
+    - button "Add New Rule" [ref=e133]
+    - generic
+      - button "Save Settings" [ref=e134]
+      - button "Discard Changes" [ref=e135]
+      - link "Easy Setup & Import/Export" [ref=e136]
+      - paragraph
+        - StaticText "Settings last saved: September 14, 2026 10:46 am (UTC)"
+- link "Go Back" [ref=e31]
+- StaticText "Configure memberships, content gating, role mapping, and access restrictions"
+- heading "Download Rules" [level=3, ref=e116]
+- paragraph
+  - StaticText "Define downloadable files that become available to customers based on their subscription status. This works alongside WooCommerce's native downloadable products."
+- heading "How Download Rules Work" [level=4, ref=e117]
+- list
+  - listitem [level=1]
+    - ListMarker "1. "
+    - StaticText "Define who qualifies using the IF conditions — for example, customers with an active subscription, customers assigned to a certain membership product, or users matching another rule condition."
+  - listitem [level=1]
+    - ListMarker "2. "
+    - StaticText "Choose what files to provide in the TARGET section. These files are attached to the rule and shown with the display names you choose."
+  - listitem [level=1]
+    - ListMarker "3. "
+    - StaticText "When a customer matches the rule, the files appear in My Account → Downloads. If they stop qualifying later, those rule-based files are no longer shown for future access."
+  - listitem [level=1]
+    - ListMarker "4. "
+    - StaticText "You can include multiple files per rule and reorder them to control how they appear to the customer."
+  - listitem [level=1]
+    - ListMarker "5. "
+    - StaticText "Use this for bonus resources, member guides, PDFs, templates, software files, or gated companion downloads that should not live directly on a WooCommerce product."
+- paragraph
+  - strong
+    - StaticText "Note:"
+  - StaticText " WooCommerce downloadable products on the product edit screen continue to work normally. Download Rules add extra membership-based files alongside that native WooCommerce system rather than replacing it."
+- LabelText [ref=e118] clickable [onclick]
+  - checkbox [checked=false, ref=e127]
+- generic [ref=e119] clickable [onclick]
+  - textbox "Rule name" [ref=e128]: Footer QA Downloads
+    - StaticText "Footer QA Downloads"
+  - StaticText "Download Rule"
+  - StaticText " #"
+  - StaticText "1"
+- generic [ref=e120] clickable [cursor:pointer, onclick]
+- generic [ref=e121] clickable [onclick]
+  - button "Move up" [disabled, ref=e129]
+  - button "Move down" [disabled, ref=e130]
+  - button "Duplicate" [ref=e131]
+  - button "Delete" [ref=e132]
+- button "Collapse" [ref=e122]
+- StaticText "TARGET"
+- LabelText
+  - StaticText "Downloadable Files"
+- button "Add File" [ref=e123]
+- paragraph
+  - StaticText "No files added. Add files that will be available to download when conditions are met."
+- paragraph
+  - StaticText "These files will appear on the customer's My Account → Downloads page when they meet the conditions below."
+- StaticText "IF"
+- StaticText "User meets these conditions"
+- paragraph
+  - StaticText "No conditions added. Click below to add conditions."
+- button "Add Condition" [ref=e124]
+- button "Add Group" [ref=e125]
+- StaticText "THEN"
+- StaticText "Apply these actions"
+- paragraph
+  - StaticText "When a customer meets the conditions above, the files will be available for download in their My Account area."
+- StaticText "SCHEDULE"
+- StaticText "Delay access after subscription starts"
+- checkbox "Delay this rule after subscription starts" [checked=false, ref=e126]
+- button "Add New Rule" [ref=e133]
+- generic
+  - button "Save Settings" [ref=e134]
+  - button "Discard Changes" [ref=e135]
+  - link "Easy Setup & Import/Export" [ref=e136]
+  - paragraph
+    - StaticText "Settings last saved: September 14, 2026 10:46 am (UTC)"
+- StaticText "Download Rule"
+- StaticText " #"
+- StaticText "1"

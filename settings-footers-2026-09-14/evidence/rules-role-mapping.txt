@@ -1,0 +1,665 @@
+- generic
+  - sectionheader
+    - navigation
+      - list
+        - listitem [level=1]
+          - link "Role Mapping" [ref=e216]
+        - listitem [level=1]
+          - link "Discount" [ref=e217]
+        - listitem [level=1]
+          - link "Shop Access" [ref=e218]
+        - listitem [level=1]
+          - link "URL" [ref=e219]
+        - listitem [level=1]
+          - link "Post Types" [ref=e220]
+        - listitem [level=1]
+          - link "Downloads" [ref=e221]
+        - listitem [level=1]
+          - link "Comments" [ref=e222]
+        - listitem [level=1]
+          - link "Purchase Limit" [ref=e223]
+        - listitem [level=1]
+          - link "Conflicts" [ref=e224]
+        - listitem [level=1]
+          - link "Login Limit" [ref=e225]
+    - StaticText "Configure memberships, content gating, role mapping, and access restrictions"
+  - link "Go Back" [ref=e31]
+  - main
+    - heading "Role Mapping Rules" [level=3, ref=e116]
+    - paragraph
+      - StaticText "Automatically assign or remove WordPress user roles based on subscription status and conditions. Rules are processed in order."
+    - heading "How Role Mapping Rules Work" [level=4, ref=e117]
+    - list
+      - listitem [level=1]
+        - ListMarker "1. "
+        - StaticText "Define who qualifies using the IF conditions — for example, customers with an active subscription to a specific plan, customers who bought a certain product, or users with an existing role."
+      - listitem [level=1]
+        - ListMarker "2. "
+        - StaticText "Configure the THEN section — add one or more roles, remove old roles, decide what happens while a subscription is on-hold, and optionally assign a fallback role when access ends."
+      - listitem [level=1]
+        - ListMarker "3. "
+        - StaticText "When a customer matches a rule, the selected roles are applied automatically. When they stop matching, roles can be removed again based on the rule settings."
+      - listitem [level=1]
+        - ListMarker "4. "
+        - StaticText "Rules are evaluated in order, so place more specific role mappings before broad catch-all rules if you need predictable outcomes."
+      - listitem [level=1]
+        - ListMarker "5. "
+        - StaticText "Use this to sync WordPress permissions with membership access — for example unlocking member-only dashboards, courses, communities, or admin-controlled content."
+    - paragraph
+      - strong
+        - StaticText "Note:"
+      - StaticText " Be careful when removing default WordPress roles. If needed, use a fallback role like Subscriber so customers do not end up with fewer permissions than intended after access expires."
+    - LabelText [ref=e118] clickable [onclick]
+      - checkbox [checked=false, ref=e140]
+    - generic [ref=e119] clickable [onclick]
+      - textbox "Rule name" [ref=e141]: Footer QA Role Mapping
+        - StaticText "Footer QA Role Mapping"
+      - StaticText "Role Mapping Rule"
+      - StaticText " #"
+      - StaticText "1"
+    - generic [ref=e120] clickable [cursor:pointer, onclick]
+    - generic [ref=e121] clickable [onclick]
+      - button "Move up" [disabled, ref=e142]
+      - button "Move down" [ref=e143]
+      - button "Duplicate" [ref=e144]
+      - button "Delete" [ref=e145]
+    - button "Collapse" [ref=e122]
+    - StaticText "IF"
+    - StaticText "User meets these conditions"
+    - paragraph
+      - StaticText "No conditions added. Click below to add conditions."
+    - button "Add Condition" [ref=e123]
+    - button "Add Group" [ref=e124]
+    - StaticText "THEN"
+    - StaticText "Apply these actions"
+    - LabelText
+      - StaticText "Add Roles"
+    - listbox [ref=e125]
+      - option "Administrator" [ref=e146]
+      - option "Editor" [ref=e147]
+      - option "Author" [ref=e148]
+      - option "Contributor" [ref=e149]
+      - option "Subscriber" [ref=e150]
+      - option "Customer" [ref=e151]
+      - option "Shop manager" [ref=e152]
+      - option "Pending" [ref=e153]
+      - option "Suspended" [ref=e154]
+    - paragraph
+      - StaticText "Hold Ctrl/Cmd to select multiple roles"
+    - LabelText
+      - StaticText "Remove Roles"
+    - listbox [ref=e126]
+      - option "Administrator" [ref=e155]
+      - option "Editor" [ref=e156]
+      - option "Author" [ref=e157]
+      - option "Contributor" [ref=e158]
+      - option "Subscriber" [ref=e159]
+      - option "Customer" [ref=e160]
+      - option "Shop manager" [ref=e161]
+      - option "Pending" [ref=e162]
+      - option "Suspended" [ref=e163]
+    - paragraph
+      - StaticText "Roles removed when conditions no longer match"
+    - LabelText
+      - StaticText "On Hold Behavior"
+    - combobox [expanded=false, ref=e127]: Remove assigned roles
+      - MenuListPopup
+        - option "Keep assigned roles" [ref=e189]
+        - option "Remove assigned roles" [selected, ref=e190]
+    - paragraph
+      - StaticText "On Hold is reserved for payment or administrative holds. Access while Paused is controlled under Settings → Skip & Pause → Access During Pause."
+    - LabelText
+      - StaticText "Fallback Role"
+    - combobox [expanded=false, ref=e128]: Subscriber
+      - MenuListPopup
+        - option "No fallback" [ref=e191]
+        - option "Administrator" [ref=e192]
+        - option "Editor" [ref=e193]
+        - option "Author" [ref=e194]
+        - option "Contributor" [ref=e195]
+        - option "Subscriber" [selected, ref=e196]
+        - option "Customer" [ref=e197]
+        - option "Shop manager" [ref=e198]
+        - option "Pending" [ref=e199]
+        - option "Suspended" [ref=e200]
+    - paragraph
+      - StaticText "Role to assign when subscription ends"
+    - LabelText [ref=e129] clickable [onclick]
+      - checkbox [checked=false, ref=e164]
+    - generic [ref=e130] clickable [onclick]
+      - textbox "Rule name" [ref=e165]: Footer QA Role Mapping
+        - StaticText "Footer QA Role Mapping"
+      - StaticText "Role Mapping Rule"
+      - StaticText " #"
+      - StaticText "2"
+    - generic [ref=e131] clickable [cursor:pointer, onclick]
+    - generic [ref=e132] clickable [onclick]
+      - button "Move up" [ref=e166]
+      - button "Move down" [disabled, ref=e167]
+      - button "Duplicate" [ref=e168]
+      - button "Delete" [ref=e169]
+    - button "Collapse" [ref=e133]
+    - StaticText "IF"
+    - StaticText "User meets these conditions"
+    - paragraph
+      - StaticText "No conditions added. Click below to add conditions."
+    - button "Add Condition" [ref=e134]
+    - button "Add Group" [ref=e135]
+    - StaticText "THEN"
+    - StaticText "Apply these actions"
+    - LabelText
+      - StaticText "Add Roles"
+    - listbox [ref=e136]
+      - option "Administrator" [ref=e170]
+      - option "Editor" [ref=e171]
+      - option "Author" [ref=e172]
+      - option "Contributor" [ref=e173]
+      - option "Subscriber" [ref=e174]
+      - option "Customer" [ref=e175]
+      - option "Shop manager" [ref=e176]
+      - option "Pending" [ref=e177]
+      - option "Suspended" [ref=e178]
+    - paragraph
+      - StaticText "Hold Ctrl/Cmd to select multiple roles"
+    - LabelText
+      - StaticText "Remove Roles"
+    - listbox [ref=e137]
+      - option "Administrator" [ref=e179]
+      - option "Editor" [ref=e180]
+      - option "Author" [ref=e181]
+      - option "Contributor" [ref=e182]
+      - option "Subscriber" [ref=e183]
+      - option "Customer" [ref=e184]
+      - option "Shop manager" [ref=e185]
+      - option "Pending" [ref=e186]
+      - option "Suspended" [ref=e187]
+    - paragraph
+      - StaticText "Roles removed when conditions no longer match"
+    - LabelText
+      - StaticText "On Hold Behavior"
+    - combobox [expanded=false, ref=e138]: Remove assigned roles
+      - MenuListPopup
+        - option "Keep assigned roles" [ref=e201]
+        - option "Remove assigned roles" [selected, ref=e202]
+    - paragraph
+      - StaticText "On Hold is reserved for payment or administrative holds. Access while Paused is controlled under Settings → Skip & Pause → Access During Pause."
+    - LabelText
+      - StaticText "Fallback Role"
+    - combobox [expanded=false, ref=e139]: Subscriber
+      - MenuListPopup
+        - option "No fallback" [ref=e203]
+        - option "Administrator" [ref=e204]
+        - option "Editor" [ref=e205]
+        - option "Author" [ref=e206]
+        - option "Contributor" [ref=e207]
+        - option "Subscriber" [selected, ref=e208]
+        - option "Customer" [ref=e209]
+        - option "Shop manager" [ref=e210]
+        - option "Pending" [ref=e211]
+        - option "Suspended" [ref=e212]
+    - paragraph
+      - StaticText "Role to assign when subscription ends"
+    - button "Add New Rule" [ref=e188]
+    - generic
+      - button "Save Rules" [ref=e213]
+      - button "Discard Changes" [ref=e214]
+      - link "Easy Setup & Import/Export" [ref=e215]
+      - paragraph
+        - StaticText "Settings last saved: September 14, 2026 10:45 am (UTC)"
+- generic
+  - sectionheader
+    - navigation
+      - list
+        - listitem [level=1]
+          - link "Role Mapping" [ref=e216]
+        - listitem [level=1]
+          - link "Discount" [ref=e217]
+        - listitem [level=1]
+          - link "Shop Access" [ref=e218]
+        - listitem [level=1]
+          - link "URL" [ref=e219]
+        - listitem [level=1]
+          - link "Post Types" [ref=e220]
+        - listitem [level=1]
+          - link "Downloads" [ref=e221]
+        - listitem [level=1]
+          - link "Comments" [ref=e222]
+        - listitem [level=1]
+          - link "Purchase Limit" [ref=e223]
+        - listitem [level=1]
+          - link "Conflicts" [ref=e224]
+        - listitem [level=1]
+          - link "Login Limit" [ref=e225]
+    - StaticText "Configure memberships, content gating, role mapping, and access restrictions"
+  - link "Go Back" [ref=e31]
+  - main
+    - heading "Role Mapping Rules" [level=3, ref=e116]
+    - paragraph
+      - StaticText "Automatically assign or remove WordPress user roles based on subscription status and conditions. Rules are processed in order."
+    - heading "How Role Mapping Rules Work" [level=4, ref=e117]
+    - list
+      - listitem [level=1]
+        - ListMarker "1. "
+        - StaticText "Define who qualifies using the IF conditions — for example, customers with an active subscription to a specific plan, customers who bought a certain product, or users with an existing role."
+      - listitem [level=1]
+        - ListMarker "2. "
+        - StaticText "Configure the THEN section — add one or more roles, remove old roles, decide what happens while a subscription is on-hold, and optionally assign a fallback role when access ends."
+      - listitem [level=1]
+        - ListMarker "3. "
+        - StaticText "When a customer matches a rule, the selected roles are applied automatically. When they stop matching, roles can be removed again based on the rule settings."
+      - listitem [level=1]
+        - ListMarker "4. "
+        - StaticText "Rules are evaluated in order, so place more specific role mappings before broad catch-all rules if you need predictable outcomes."
+      - listitem [level=1]
+        - ListMarker "5. "
+        - StaticText "Use this to sync WordPress permissions with membership access — for example unlocking member-only dashboards, courses, communities, or admin-controlled content."
+    - paragraph
+      - strong
+        - StaticText "Note:"
+      - StaticText " Be careful when removing default WordPress roles. If needed, use a fallback role like Subscriber so customers do not end up with fewer permissions than intended after access expires."
+    - LabelText [ref=e118] clickable [onclick]
+      - checkbox [checked=false, ref=e140]
+    - generic [ref=e119] clickable [onclick]
+      - textbox "Rule name" [ref=e141]: Footer QA Role Mapping
+        - StaticText "Footer QA Role Mapping"
+      - StaticText "Role Mapping Rule"
+      - StaticText " #"
+      - StaticText "1"
+    - generic [ref=e120] clickable [cursor:pointer, onclick]
+    - generic [ref=e121] clickable [onclick]
+      - button "Move up" [disabled, ref=e142]
+      - button "Move down" [ref=e143]
+      - button "Duplicate" [ref=e144]
+      - button "Delete" [ref=e145]
+    - button "Collapse" [ref=e122]
+    - StaticText "IF"
+    - StaticText "User meets these conditions"
+    - paragraph
+      - StaticText "No conditions added. Click below to add conditions."
+    - button "Add Condition" [ref=e123]
+    - button "Add Group" [ref=e124]
+    - StaticText "THEN"
+    - StaticText "Apply these actions"
+    - LabelText
+      - StaticText "Add Roles"
+    - listbox [ref=e125]
+      - option "Administrator" [ref=e146]
+      - option "Editor" [ref=e147]
+      - option "Author" [ref=e148]
+      - option "Contributor" [ref=e149]
+      - option "Subscriber" [ref=e150]
+      - option "Customer" [ref=e151]
+      - option "Shop manager" [ref=e152]
+      - option "Pending" [ref=e153]
+      - option "Suspended" [ref=e154]
+    - paragraph
+      - StaticText "Hold Ctrl/Cmd to select multiple roles"
+    - LabelText
+      - StaticText "Remove Roles"
+    - listbox [ref=e126]
+      - option "Administrator" [ref=e155]
+      - option "Editor" [ref=e156]
+      - option "Author" [ref=e157]
+      - option "Contributor" [ref=e158]
+      - option "Subscriber" [ref=e159]
+      - option "Customer" [ref=e160]
+      - option "Shop manager" [ref=e161]
+      - option "Pending" [ref=e162]
+      - option "Suspended" [ref=e163]
+    - paragraph
+      - StaticText "Roles removed when conditions no longer match"
+    - LabelText
+      - StaticText "On Hold Behavior"
+    - combobox [expanded=false, ref=e127]: Remove assigned roles
+      - MenuListPopup
+        - option "Keep assigned roles" [ref=e189]
+        - option "Remove assigned roles" [selected, ref=e190]
+    - paragraph
+      - StaticText "On Hold is reserved for payment or administrative holds. Access while Paused is controlled under Settings → Skip & Pause → Access During Pause."
+    - LabelText
+      - StaticText "Fallback Role"
+    - combobox [expanded=false, ref=e128]: Subscriber
+      - MenuListPopup
+        - option "No fallback" [ref=e191]
+        - option "Administrator" [ref=e192]
+        - option "Editor" [ref=e193]
+        - option "Author" [ref=e194]
+        - option "Contributor" [ref=e195]
+        - option "Subscriber" [selected, ref=e196]
+        - option "Customer" [ref=e197]
+        - option "Shop manager" [ref=e198]
+        - option "Pending" [ref=e199]
+        - option "Suspended" [ref=e200]
+    - paragraph
+      - StaticText "Role to assign when subscription ends"
+    - LabelText [ref=e129] clickable [onclick]
+      - checkbox [checked=false, ref=e164]
+    - generic [ref=e130] clickable [onclick]
+      - textbox "Rule name" [ref=e165]: Footer QA Role Mapping
+        - StaticText "Footer QA Role Mapping"
+      - StaticText "Role Mapping Rule"
+      - StaticText " #"
+      - StaticText "2"
+    - generic [ref=e131] clickable [cursor:pointer, onclick]
+    - generic [ref=e132] clickable [onclick]
+      - button "Move up" [ref=e166]
+      - button "Move down" [disabled, ref=e167]
+      - button "Duplicate" [ref=e168]
+      - button "Delete" [ref=e169]
+    - button "Collapse" [ref=e133]
+    - StaticText "IF"
+    - StaticText "User meets these conditions"
+    - paragraph
+      - StaticText "No conditions added. Click below to add conditions."
+    - button "Add Condition" [ref=e134]
+    - button "Add Group" [ref=e135]
+    - StaticText "THEN"
+    - StaticText "Apply these actions"
+    - LabelText
+      - StaticText "Add Roles"
+    - listbox [ref=e136]
+      - option "Administrator" [ref=e170]
+      - option "Editor" [ref=e171]
+      - option "Author" [ref=e172]
+      - option "Contributor" [ref=e173]
+      - option "Subscriber" [ref=e174]
+      - option "Customer" [ref=e175]
+      - option "Shop manager" [ref=e176]
+      - option "Pending" [ref=e177]
+      - option "Suspended" [ref=e178]
+    - paragraph
+      - StaticText "Hold Ctrl/Cmd to select multiple roles"
+    - LabelText
+      - StaticText "Remove Roles"
+    - listbox [ref=e137]
+      - option "Administrator" [ref=e179]
+      - option "Editor" [ref=e180]
+      - option "Author" [ref=e181]
+      - option "Contributor" [ref=e182]
+      - option "Subscriber" [ref=e183]
+      - option "Customer" [ref=e184]
+      - option "Shop manager" [ref=e185]
+      - option "Pending" [ref=e186]
+      - option "Suspended" [ref=e187]
+    - paragraph
+      - StaticText "Roles removed when conditions no longer match"
+    - LabelText
+      - StaticText "On Hold Behavior"
+    - combobox [expanded=false, ref=e138]: Remove assigned roles
+      - MenuListPopup
+        - option "Keep assigned roles" [ref=e201]
+        - option "Remove assigned roles" [selected, ref=e202]
+    - paragraph
+      - StaticText "On Hold is reserved for payment or administrative holds. Access while Paused is controlled under Settings → Skip & Pause → Access During Pause."
+    - LabelText
+      - StaticText "Fallback Role"
+    - combobox [expanded=false, ref=e139]: Subscriber
+      - MenuListPopup
+        - option "No fallback" [ref=e203]
+        - option "Administrator" [ref=e204]
+        - option "Editor" [ref=e205]
+        - option "Author" [ref=e206]
+        - option "Contributor" [ref=e207]
+        - option "Subscriber" [selected, ref=e208]
+        - option "Customer" [ref=e209]
+        - option "Shop manager" [ref=e210]
+        - option "Pending" [ref=e211]
+        - option "Suspended" [ref=e212]
+    - paragraph
+      - StaticText "Role to assign when subscription ends"
+    - button "Add New Rule" [ref=e188]
+    - generic
+      - button "Save Rules" [ref=e213]
+      - button "Discard Changes" [ref=e214]
+      - link "Easy Setup & Import/Export" [ref=e215]
+      - paragraph
+        - StaticText "Settings last saved: September 14, 2026 10:45 am (UTC)"
+- link "Go Back" [ref=e31]
+- StaticText "Configure memberships, content gating, role mapping, and access restrictions"
+- heading "Role Mapping Rules" [level=3, ref=e116]
+- paragraph
+  - StaticText "Automatically assign or remove WordPress user roles based on subscription status and conditions. Rules are processed in order."
+- heading "How Role Mapping Rules Work" [level=4, ref=e117]
+- list
+  - listitem [level=1]
+    - ListMarker "1. "
+    - StaticText "Define who qualifies using the IF conditions — for example, customers with an active subscription to a specific plan, customers who bought a certain product, or users with an existing role."
+  - listitem [level=1]
+    - ListMarker "2. "
+    - StaticText "Configure the THEN section — add one or more roles, remove old roles, decide what happens while a subscription is on-hold, and optionally assign a fallback role when access ends."
+  - listitem [level=1]
+    - ListMarker "3. "
+    - StaticText "When a customer matches a rule, the selected roles are applied automatically. When they stop matching, roles can be removed again based on the rule settings."
+  - listitem [level=1]
+    - ListMarker "4. "
+    - StaticText "Rules are evaluated in order, so place more specific role mappings before broad catch-all rules if you need predictable outcomes."
+  - listitem [level=1]
+    - ListMarker "5. "
+    - StaticText "Use this to sync WordPress permissions with membership access — for example unlocking member-only dashboards, courses, communities, or admin-controlled content."
+- paragraph
+  - strong
+    - StaticText "Note:"
+  - StaticText " Be careful when removing default WordPress roles. If needed, use a fallback role like Subscriber so customers do not end up with fewer permissions than intended after access expires."
+- LabelText [ref=e118] clickable [onclick]
+  - checkbox [checked=false, ref=e140]
+- generic [ref=e119] clickable [onclick]
+  - textbox "Rule name" [ref=e141]: Footer QA Role Mapping
+    - StaticText "Footer QA Role Mapping"
+  - StaticText "Role Mapping Rule"
+  - StaticText " #"
+  - StaticText "1"
+- generic [ref=e120] clickable [cursor:pointer, onclick]
+- generic [ref=e121] clickable [onclick]
+  - button "Move up" [disabled, ref=e142]
+  - button "Move down" [ref=e143]
+  - button "Duplicate" [ref=e144]
+  - button "Delete" [ref=e145]
+- button "Collapse" [ref=e122]
+- StaticText "IF"
+- StaticText "User meets these conditions"
+- paragraph
+  - StaticText "No conditions added. Click below to add conditions."
+- button "Add Condition" [ref=e123]
+- button "Add Group" [ref=e124]
+- StaticText "THEN"
+- StaticText "Apply these actions"
+- LabelText
+  - StaticText "Add Roles"
+- listbox [ref=e125]
+  - option "Administrator" [ref=e146]
+  - option "Editor" [ref=e147]
+  - option "Author" [ref=e148]
+  - option "Contributor" [ref=e149]
+  - option "Subscriber" [ref=e150]
+  - option "Customer" [ref=e151]
+  - option "Shop manager" [ref=e152]
+  - option "Pending" [ref=e153]
+  - option "Suspended" [ref=e154]
+- paragraph
+  - StaticText "Hold Ctrl/Cmd to select multiple roles"
+- LabelText
+  - StaticText "Remove Roles"
+- listbox [ref=e126]
+  - option "Administrator" [ref=e155]
+  - option "Editor" [ref=e156]
+  - option "Author" [ref=e157]
+  - option "Contributor" [ref=e158]
+  - option "Subscriber" [ref=e159]
+  - option "Customer" [ref=e160]
+  - option "Shop manager" [ref=e161]
+  - option "Pending" [ref=e162]
+  - option "Suspended" [ref=e163]
+- paragraph
+  - StaticText "Roles removed when conditions no longer match"
+- LabelText
+  - StaticText "On Hold Behavior"
+- combobox [expanded=false, ref=e127]: Remove assigned roles
+  - MenuListPopup
+    - option "Keep assigned roles" [ref=e189]
+    - option "Remove assigned roles" [selected, ref=e190]
+- paragraph
+  - StaticText "On Hold is reserved for payment or administrative holds. Access while Paused is controlled under Settings → Skip & Pause → Access During Pause."
+- LabelText
+  - StaticText "Fallback Role"
+- combobox [expanded=false, ref=e128]: Subscriber
+  - MenuListPopup
+    - option "No fallback" [ref=e191]
+    - option "Administrator" [ref=e192]
+    - option "Editor" [ref=e193]
+    - option "Author" [ref=e194]
+    - option "Contributor" [ref=e195]
+    - option "Subscriber" [selected, ref=e196]
+    - option "Customer" [ref=e197]
+    - option "Shop manager" [ref=e198]
+    - option "Pending" [ref=e199]
+    - option "Suspended" [ref=e200]
+- paragraph
+  - StaticText "Role to assign when subscription ends"
+- LabelText [ref=e129] clickable [onclick]
+  - checkbox [checked=false, ref=e164]
+- generic [ref=e130] clickable [onclick]
+  - textbox "Rule name" [ref=e165]: Footer QA Role Mapping
+    - StaticText "Footer QA Role Mapping"
+  - StaticText "Role Mapping Rule"
+  - StaticText " #"
+  - StaticText "2"
+- generic [ref=e131] clickable [cursor:pointer, onclick]
+- generic [ref=e132] clickable [onclick]
+  - button "Move up" [ref=e166]
+  - button "Move down" [disabled, ref=e167]
+  - button "Duplicate" [ref=e168]
+  - button "Delete" [ref=e169]
+- button "Collapse" [ref=e133]
+- StaticText "IF"
+- StaticText "User meets these conditions"
+- paragraph
+  - StaticText "No conditions added. Click below to add conditions."
+- button "Add Condition" [ref=e134]
+- button "Add Group" [ref=e135]
+- StaticText "THEN"
+- StaticText "Apply these actions"
+- LabelText
+  - StaticText "Add Roles"
+- listbox [ref=e136]
+  - option "Administrator" [ref=e170]
+  - option "Editor" [ref=e171]
+  - option "Author" [ref=e172]
+  - option "Contributor" [ref=e173]
+  - option "Subscriber" [ref=e174]
+  - option "Customer" [ref=e175]
+  - option "Shop manager" [ref=e176]
+  - option "Pending" [ref=e177]
+  - option "Suspended" [ref=e178]
+- paragraph
+  - StaticText "Hold Ctrl/Cmd to select multiple roles"
+- LabelText
+  - StaticText "Remove Roles"
+- listbox [ref=e137]
+  - option "Administrator" [ref=e179]
+  - option "Editor" [ref=e180]
+  - option "Author" [ref=e181]
+  - option "Contributor" [ref=e182]
+  - option "Subscriber" [ref=e183]
+  - option "Customer" [ref=e184]
+  - option "Shop manager" [ref=e185]
+  - option "Pending" [ref=e186]
+  - option "Suspended" [ref=e187]
+- paragraph
+  - StaticText "Roles removed when conditions no longer match"
+- LabelText
+  - StaticText "On Hold Behavior"
+- combobox [expanded=false, ref=e138]: Remove assigned roles
+  - MenuListPopup
+    - option "Keep assigned roles" [ref=e201]
+    - option "Remove assigned roles" [selected, ref=e202]
+- paragraph
+  - StaticText "On Hold is reserved for payment or administrative holds. Access while Paused is controlled under Settings → Skip & Pause → Access During Pause."
+- LabelText
+  - StaticText "Fallback Role"
+- combobox [expanded=false, ref=e139]: Subscriber
+  - MenuListPopup
+    - option "No fallback" [ref=e203]
+    - option "Administrator" [ref=e204]
+    - option "Editor" [ref=e205]
+    - option "Author" [ref=e206]
+    - option "Contributor" [ref=e207]
+    - option "Subscriber" [selected, ref=e208]
+    - option "Customer" [ref=e209]
+    - option "Shop manager" [ref=e210]
+    - option "Pending" [ref=e211]
+    - option "Suspended" [ref=e212]
+- paragraph
+  - StaticText "Role to assign when subscription ends"
+- button "Add New Rule" [ref=e188]
+- generic
+  - button "Save Rules" [ref=e213]
+  - button "Discard Changes" [ref=e214]
+  - link "Easy Setup & Import/Export" [ref=e215]
+  - paragraph
+    - StaticText "Settings last saved: September 14, 2026 10:45 am (UTC)"
+- StaticText "Role Mapping Rule"
+- StaticText " #"
+- StaticText "1"
+- option "Administrator" [ref=e146]
+- option "Editor" [ref=e147]
+- option "Author" [ref=e148]
+- option "Contributor" [ref=e149]
+- option "Subscriber" [ref=e150]
+- option "Customer" [ref=e151]
+- option "Shop manager" [ref=e152]
+- option "Pending" [ref=e153]
+- option "Suspended" [ref=e154]
+- option "Administrator" [ref=e155]
+- option "Editor" [ref=e156]
+- option "Author" [ref=e157]
+- option "Contributor" [ref=e158]
+- option "Subscriber" [ref=e159]
+- option "Customer" [ref=e160]
+- option "Shop manager" [ref=e161]
+- option "Pending" [ref=e162]
+- option "Suspended" [ref=e163]
+- StaticText "Role Mapping Rule"
+- StaticText " #"
+- StaticText "2"
+- option "Administrator" [ref=e170]
+- option "Editor" [ref=e171]
+- option "Author" [ref=e172]
+- option "Contributor" [ref=e173]
+- option "Subscriber" [ref=e174]
+- option "Customer" [ref=e175]
+- option "Shop manager" [ref=e176]
+- option "Pending" [ref=e177]
+- option "Suspended" [ref=e178]
+- option "Administrator" [ref=e179]
+- option "Editor" [ref=e180]
+- option "Author" [ref=e181]
+- option "Contributor" [ref=e182]
+- option "Subscriber" [ref=e183]
+- option "Customer" [ref=e184]
+- option "Shop manager" [ref=e185]
+- option "Pending" [ref=e186]
+- option "Suspended" [ref=e187]
+- option "Keep assigned roles" [ref=e189]
+- option "Remove assigned roles" [selected, ref=e190]
+- option "No fallback" [ref=e191]
+- option "Administrator" [ref=e192]
+- option "Editor" [ref=e193]
+- option "Author" [ref=e194]
+- option "Contributor" [ref=e195]
+- option "Subscriber" [selected, ref=e196]
+- option "Customer" [ref=e197]
+- option "Shop manager" [ref=e198]
+- option "Pending" [ref=e199]
+- option "Suspended" [ref=e200]
+- option "Keep assigned roles" [ref=e201]
+- option "Remove assigned roles" [selected, ref=e202]
+- option "No fallback" [ref=e203]
+- option "Administrator" [ref=e204]
+- option "Editor" [ref=e205]
+- option "Author" [ref=e206]
+- option "Contributor" [ref=e207]
+- option "Subscriber" [selected, ref=e208]
+- option "Customer" [ref=e209]
+- option "Shop manager" [ref=e210]
+- option "Pending" [ref=e211]
+- option "Suspended" [ref=e212]

@@ -1,0 +1,320 @@
+- generic
+  - sectionheader
+    - navigation
+      - list
+        - listitem [level=1]
+          - link "Role Mapping" [ref=e142]
+        - listitem [level=1]
+          - link "Discount" [ref=e143]
+        - listitem [level=1]
+          - link "Shop Access" [ref=e144]
+        - listitem [level=1]
+          - link "URL" [ref=e145]
+        - listitem [level=1]
+          - link "Post Types" [ref=e146]
+        - listitem [level=1]
+          - link "Downloads" [ref=e147]
+        - listitem [level=1]
+          - link "Comments" [ref=e148]
+        - listitem [level=1]
+          - link "Purchase Limit" [ref=e149]
+        - listitem [level=1]
+          - link "Conflicts" [ref=e150]
+        - listitem [level=1]
+          - link "Login Limit" [ref=e151]
+    - StaticText "Configure memberships, content gating, role mapping, and access restrictions"
+  - link "Go Back" [ref=e31]
+  - main
+    - heading "Multi-Login Prevention" [level=3, ref=e133]
+    - paragraph
+      - StaticText "Limit the number of concurrent login sessions per user to prevent credential sharing"
+    - switch "Enable Multi-Login Prevention" [checked=false, ref=e134]
+    - LabelText [ref=e135] clickable [cursor:pointer, onclick]
+      - StaticText "Enable Multi-Login Prevention"
+    - LabelText
+      - StaticText "Default max sessions per user"
+    - spinbutton "Enter default max sessions per user" [ref=e136]: 1
+      - StaticText "1"
+    - StaticText "This is the global default. Users who match a Login Limit rule below will use that rule's limit instead. When a user exceeds the session limit, the oldest sessions are automatically destroyed."
+    - switch "Apply to administrators" [checked=false, ref=e137]
+    - LabelText [ref=e138] clickable [cursor:pointer, onclick]
+      - StaticText "Apply to administrators"
+    - StaticText "By default, administrators are exempt from session limits. Enable this if you also want to enforce limits for administrator accounts."
+    - StaticText "Flow: when a customer logs in and already has the maximum number of sessions, the oldest session is automatically terminated. The current login always succeeds. Impersonated sessions (Login as User) are never counted toward the limit."
+    - StaticText "For per-subscription or per-role session limits, configure Login Limit Rules below."
+    - heading "Login Limit Rules" [level=3, ref=e116]
+    - paragraph
+      - StaticText "Set conditional session limits. Users matching these rules will use the rule's session limit instead of the global default. When multiple rules match, the highest limit applies."
+    - heading "How Login Limit Rules Work" [level=4, ref=e117]
+    - list
+      - listitem [level=1]
+        - ListMarker "1. "
+        - StaticText "Define who qualifies using the IF conditions — for example, customers with an active subscription to a premium plan, VIP members, or users with a specific role."
+      - listitem [level=1]
+        - ListMarker "2. "
+        - StaticText "Configure the THEN section — set the maximum number of concurrent sessions (devices) allowed for matching users."
+      - listitem [level=1]
+        - ListMarker "3. "
+        - StaticText "When a user logs in and exceeds the session limit, the oldest sessions are automatically destroyed. The new login always succeeds."
+      - listitem [level=1]
+        - ListMarker "4. "
+        - StaticText "If a user matches multiple rules, the highest session limit applies (most permissive wins)."
+      - listitem [level=1]
+        - ListMarker "5. "
+        - StaticText "Users who don't match any rule fall back to the global default set above."
+    - paragraph
+      - strong
+        - StaticText "Note:"
+      - StaticText " Multi-Login Prevention must be enabled above for session enforcement to run. If disabled, no session enforcement occurs regardless of these rules."
+    - LabelText [ref=e118] clickable [onclick]
+      - checkbox [checked=false, ref=e126]
+    - generic [ref=e119] clickable [onclick]
+      - textbox "Rule name" [ref=e127]: Footer QA Login Limit
+        - StaticText "Footer QA Login Limit"
+      - StaticText "Login Limit Rule"
+      - StaticText " #"
+      - StaticText "1"
+    - generic [ref=e120] clickable [cursor:pointer, onclick]
+    - generic [ref=e121] clickable [onclick]
+      - button "Move up" [disabled, ref=e128]
+      - button "Move down" [disabled, ref=e129]
+      - button "Duplicate" [ref=e130]
+      - button "Delete" [ref=e131]
+    - button "Collapse" [ref=e122]
+    - StaticText "IF"
+    - StaticText "User meets these conditions"
+    - paragraph
+      - StaticText "No conditions added. Click below to add conditions."
+    - button "Add Condition" [ref=e123]
+    - button "Add Group" [ref=e124]
+    - StaticText "THEN"
+    - StaticText "Apply these actions"
+    - LabelText
+      - StaticText "Max Allowed Sessions"
+    - spinbutton [ref=e125]: 3
+      - StaticText "3"
+    - paragraph
+      - StaticText "The maximum number of concurrent login sessions allowed for users matching this rule. When exceeded, the oldest sessions are logged out."
+    - button "Add New Rule" [ref=e132]
+    - generic
+      - button "Save Login Limits" [ref=e139]
+      - button "Discard Changes" [ref=e140]
+      - link "Easy Setup & Import/Export" [ref=e141]
+      - paragraph
+        - StaticText "Settings last saved: September 14, 2026 10:46 am (UTC)"
+- generic
+  - sectionheader
+    - navigation
+      - list
+        - listitem [level=1]
+          - link "Role Mapping" [ref=e142]
+        - listitem [level=1]
+          - link "Discount" [ref=e143]
+        - listitem [level=1]
+          - link "Shop Access" [ref=e144]
+        - listitem [level=1]
+          - link "URL" [ref=e145]
+        - listitem [level=1]
+          - link "Post Types" [ref=e146]
+        - listitem [level=1]
+          - link "Downloads" [ref=e147]
+        - listitem [level=1]
+          - link "Comments" [ref=e148]
+        - listitem [level=1]
+          - link "Purchase Limit" [ref=e149]
+        - listitem [level=1]
+          - link "Conflicts" [ref=e150]
+        - listitem [level=1]
+          - link "Login Limit" [ref=e151]
+    - StaticText "Configure memberships, content gating, role mapping, and access restrictions"
+  - link "Go Back" [ref=e31]
+  - main
+    - heading "Multi-Login Prevention" [level=3, ref=e133]
+    - paragraph
+      - StaticText "Limit the number of concurrent login sessions per user to prevent credential sharing"
+    - switch "Enable Multi-Login Prevention" [checked=false, ref=e134]
+    - LabelText [ref=e135] clickable [cursor:pointer, onclick]
+      - StaticText "Enable Multi-Login Prevention"
+    - LabelText
+      - StaticText "Default max sessions per user"
+    - spinbutton "Enter default max sessions per user" [ref=e136]: 1
+      - StaticText "1"
+    - StaticText "This is the global default. Users who match a Login Limit rule below will use that rule's limit instead. When a user exceeds the session limit, the oldest sessions are automatically destroyed."
+    - switch "Apply to administrators" [checked=false, ref=e137]
+    - LabelText [ref=e138] clickable [cursor:pointer, onclick]
+      - StaticText "Apply to administrators"
+    - StaticText "By default, administrators are exempt from session limits. Enable this if you also want to enforce limits for administrator accounts."
+    - StaticText "Flow: when a customer logs in and already has the maximum number of sessions, the oldest session is automatically terminated. The current login always succeeds. Impersonated sessions (Login as User) are never counted toward the limit."
+    - StaticText "For per-subscription or per-role session limits, configure Login Limit Rules below."
+    - heading "Login Limit Rules" [level=3, ref=e116]
+    - paragraph
+      - StaticText "Set conditional session limits. Users matching these rules will use the rule's session limit instead of the global default. When multiple rules match, the highest limit applies."
+    - heading "How Login Limit Rules Work" [level=4, ref=e117]
+    - list
+      - listitem [level=1]
+        - ListMarker "1. "
+        - StaticText "Define who qualifies using the IF conditions — for example, customers with an active subscription to a premium plan, VIP members, or users with a specific role."
+      - listitem [level=1]
+        - ListMarker "2. "
+        - StaticText "Configure the THEN section — set the maximum number of concurrent sessions (devices) allowed for matching users."
+      - listitem [level=1]
+        - ListMarker "3. "
+        - StaticText "When a user logs in and exceeds the session limit, the oldest sessions are automatically destroyed. The new login always succeeds."
+      - listitem [level=1]
+        - ListMarker "4. "
+        - StaticText "If a user matches multiple rules, the highest session limit applies (most permissive wins)."
+      - listitem [level=1]
+        - ListMarker "5. "
+        - StaticText "Users who don't match any rule fall back to the global default set above."
+    - paragraph
+      - strong
+        - StaticText "Note:"
+      - StaticText " Multi-Login Prevention must be enabled above for session enforcement to run. If disabled, no session enforcement occurs regardless of these rules."
+    - LabelText [ref=e118] clickable [onclick]
+      - checkbox [checked=false, ref=e126]
+    - generic [ref=e119] clickable [onclick]
+      - textbox "Rule name" [ref=e127]: Footer QA Login Limit
+        - StaticText "Footer QA Login Limit"
+      - StaticText "Login Limit Rule"
+      - StaticText " #"
+      - StaticText "1"
+    - generic [ref=e120] clickable [cursor:pointer, onclick]
+    - generic [ref=e121] clickable [onclick]
+      - button "Move up" [disabled, ref=e128]
+      - button "Move down" [disabled, ref=e129]
+      - button "Duplicate" [ref=e130]
+      - button "Delete" [ref=e131]
+    - button "Collapse" [ref=e122]
+    - StaticText "IF"
+    - StaticText "User meets these conditions"
+    - paragraph
+      - StaticText "No conditions added. Click below to add conditions."
+    - button "Add Condition" [ref=e123]
+    - button "Add Group" [ref=e124]
+    - StaticText "THEN"
+    - StaticText "Apply these actions"
+    - LabelText
+      - StaticText "Max Allowed Sessions"
+    - spinbutton [ref=e125]: 3
+      - StaticText "3"
+    - paragraph
+      - StaticText "The maximum number of concurrent login sessions allowed for users matching this rule. When exceeded, the oldest sessions are logged out."
+    - button "Add New Rule" [ref=e132]
+    - generic
+      - button "Save Login Limits" [ref=e139]
+      - button "Discard Changes" [ref=e140]
+      - link "Easy Setup & Import/Export" [ref=e141]
+      - paragraph
+        - StaticText "Settings last saved: September 14, 2026 10:46 am (UTC)"
+- link "Go Back" [ref=e31]
+- StaticText "Configure memberships, content gating, role mapping, and access restrictions"
+- heading "Multi-Login Prevention" [level=3, ref=e133]
+- paragraph
+  - StaticText "Limit the number of concurrent login sessions per user to prevent credential sharing"
+- switch "Enable Multi-Login Prevention" [checked=false, ref=e134]
+- LabelText [ref=e135] clickable [cursor:pointer, onclick]
+  - StaticText "Enable Multi-Login Prevention"
+- LabelText
+  - StaticText "Default max sessions per user"
+- spinbutton "Enter default max sessions per user" [ref=e136]: 1
+  - StaticText "1"
+- StaticText "This is the global default. Users who match a Login Limit rule below will use that rule's limit instead. When a user exceeds the session limit, the oldest sessions are automatically destroyed."
+- switch "Apply to administrators" [checked=false, ref=e137]
+- LabelText [ref=e138] clickable [cursor:pointer, onclick]
+  - StaticText "Apply to administrators"
+- StaticText "By default, administrators are exempt from session limits. Enable this if you also want to enforce limits for administrator accounts."
+- StaticText "Flow: when a customer logs in and already has the maximum number of sessions, the oldest session is automatically terminated. The current login always succeeds. Impersonated sessions (Login as User) are never counted toward the limit."
+- StaticText "For per-subscription or per-role session limits, configure Login Limit Rules below."
+- heading "Login Limit Rules" [level=3, ref=e116]
+- paragraph
+  - StaticText "Set conditional session limits. Users matching these rules will use the rule's session limit instead of the global default. When multiple rules match, the highest limit applies."
+- heading "How Login Limit Rules Work" [level=4, ref=e117]
+- list
+  - listitem [level=1]
+    - ListMarker "1. "
+    - StaticText "Define who qualifies using the IF conditions — for example, customers with an active subscription to a premium plan, VIP members, or users with a specific role."
+  - listitem [level=1]
+    - ListMarker "2. "
+    - StaticText "Configure the THEN section — set the maximum number of concurrent sessions (devices) allowed for matching users."
+  - listitem [level=1]
+    - ListMarker "3. "
+    - StaticText "When a user logs in and exceeds the session limit, the oldest sessions are automatically destroyed. The new login always succeeds."
+  - listitem [level=1]
+    - ListMarker "4. "
+    - StaticText "If a user matches multiple rules, the highest session limit applies (most permissive wins)."
+  - listitem [level=1]
+    - ListMarker "5. "
+    - StaticText "Users who don't match any rule fall back to the global default set above."
+- paragraph
+  - strong
+    - StaticText "Note:"
+  - StaticText " Multi-Login Prevention must be enabled above for session enforcement to run. If disabled, no session enforcement occurs regardless of these rules."
+- LabelText [ref=e118] clickable [onclick]
+  - checkbox [checked=false, ref=e126]
+- generic [ref=e119] clickable [onclick]
+  - textbox "Rule name" [ref=e127]: Footer QA Login Limit
+    - StaticText "Footer QA Login Limit"
+  - StaticText "Login Limit Rule"
+  - StaticText " #"
+  - StaticText "1"
+- generic [ref=e120] clickable [cursor:pointer, onclick]
+- generic [ref=e121] clickable [onclick]
+  - button "Move up" [disabled, ref=e128]
+  - button "Move down" [disabled, ref=e129]
+  - button "Duplicate" [ref=e130]
+  - button "Delete" [ref=e131]
+- button "Collapse" [ref=e122]
+- StaticText "IF"
+- StaticText "User meets these conditions"
+- paragraph
+  - StaticText "No conditions added. Click below to add conditions."
+- button "Add Condition" [ref=e123]
+- button "Add Group" [ref=e124]
+- StaticText "THEN"
+- StaticText "Apply these actions"
+- LabelText
+  - StaticText "Max Allowed Sessions"
+- spinbutton [ref=e125]: 3
+  - StaticText "3"
+- paragraph
+  - StaticText "The maximum number of concurrent login sessions allowed for users matching this rule. When exceeded, the oldest sessions are logged out."
+- button "Add New Rule" [ref=e132]
+- generic
+  - button "Save Login Limits" [ref=e139]
+  - button "Discard Changes" [ref=e140]
+  - link "Easy Setup & Import/Export" [ref=e141]
+  - paragraph
+    - StaticText "Settings last saved: September 14, 2026 10:46 am (UTC)"
+- heading "Multi-Login Prevention" [level=3, ref=e133]
+- paragraph
+  - StaticText "Limit the number of concurrent login sessions per user to prevent credential sharing"
+- switch "Enable Multi-Login Prevention" [checked=false, ref=e134]
+- LabelText [ref=e135] clickable [cursor:pointer, onclick]
+  - StaticText "Enable Multi-Login Prevention"
+- LabelText
+  - StaticText "Default max sessions per user"
+- spinbutton "Enter default max sessions per user" [ref=e136]: 1
+  - StaticText "1"
+- StaticText "This is the global default. Users who match a Login Limit rule below will use that rule's limit instead. When a user exceeds the session limit, the oldest sessions are automatically destroyed."
+- switch "Apply to administrators" [checked=false, ref=e137]
+- LabelText [ref=e138] clickable [cursor:pointer, onclick]
+  - StaticText "Apply to administrators"
+- StaticText "By default, administrators are exempt from session limits. Enable this if you also want to enforce limits for administrator accounts."
+- StaticText "Flow: when a customer logs in and already has the maximum number of sessions, the oldest session is automatically terminated. The current login always succeeds. Impersonated sessions (Login as User) are never counted toward the limit."
+- StaticText "For per-subscription or per-role session limits, configure Login Limit Rules below."
+- StaticText "Login Limit Rule"
+- StaticText " #"
+- StaticText "1"
+- heading "Multi-Login Prevention" [level=3, ref=e133]
+- paragraph
+  - StaticText "Limit the number of concurrent login sessions per user to prevent credential sharing"
+- switch "Enable Multi-Login Prevention" [checked=false, ref=e134]
+- LabelText [ref=e135] clickable [cursor:pointer, onclick]
+  - StaticText "Enable Multi-Login Prevention"
+- switch "Apply to administrators" [checked=false, ref=e137]
+- LabelText [ref=e138] clickable [cursor:pointer, onclick]
+  - StaticText "Apply to administrators"
+- StaticText "This is the global default. Users who match a Login Limit rule below will use that rule's limit instead. When a user exceeds the session limit, the oldest sessions are automatically destroyed."
+- StaticText "By default, administrators are exempt from session limits. Enable this if you also want to enforce limits for administrator accounts."
+- StaticText "Flow: when a customer logs in and already has the maximum number of sessions, the oldest session is automatically terminated. The current login always succeeds. Impersonated sessions (Login as User) are never counted toward the limit."
+- StaticText "For per-subscription or per-role session limits, configure Login Limit Rules below."

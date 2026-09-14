@@ -1,0 +1,346 @@
+- generic
+  - sectionheader
+    - navigation
+      - list
+        - listitem [level=1]
+          - link "Role Mapping" [ref=e151]
+        - listitem [level=1]
+          - link "Discount" [ref=e152]
+        - listitem [level=1]
+          - link "Shop Access" [ref=e153]
+        - listitem [level=1]
+          - link "URL" [ref=e154]
+        - listitem [level=1]
+          - link "Post Types" [ref=e155]
+        - listitem [level=1]
+          - link "Downloads" [ref=e156]
+        - listitem [level=1]
+          - link "Comments" [ref=e157]
+        - listitem [level=1]
+          - link "Purchase Limit" [ref=e158]
+        - listitem [level=1]
+          - link "Conflicts" [ref=e159]
+        - listitem [level=1]
+          - link "Login Limit" [ref=e160]
+    - StaticText "Configure memberships, content gating, role mapping, and access restrictions"
+  - link "Go Back" [ref=e32]
+  - main
+    - heading "URL Rules" [level=3, ref=e117]
+    - paragraph
+      - StaticText "Members Access to specific URL patterns. Rules are processed by priority (lower number = higher priority)."
+    - heading "How URL Rules Work" [level=4, ref=e118]
+    - list
+      - listitem [level=1]
+        - ListMarker "1. "
+        - StaticText "Define who qualifies using the IF conditions — for example, active members, customers with a matching product purchase, or users with a certain role."
+      - listitem [level=1]
+        - ListMarker "2. "
+        - StaticText "Choose what to protect in the TARGET section — starts with, contains, exact match, or regular expression — and optionally list exclusions that should stay public."
+      - listitem [level=1]
+        - ListMarker "3. "
+        - StaticText "Configure the THEN section — redirect the visitor, send them to login, or show an access denied message."
+      - listitem [level=1]
+        - ListMarker "4. "
+        - StaticText "Rules are processed by priority, so lower numbers run first. This lets you create broad protected areas with specific public exceptions above them."
+      - listitem [level=1]
+        - ListMarker "5. "
+        - StaticText "When a user meets the conditions, the protected URLs become accessible again without needing separate manual changes on each page."
+    - paragraph
+      - strong
+        - StaticText "Note:"
+      - StaticText " Use URL Rules for path-based gating such as /members/, /vip/, or landing-page groups. If you need product-specific purchase restrictions, use Shop Access Rules instead."
+    - paragraph
+      - strong
+        - StaticText "Priority:"
+      - StaticText " A restriction set directly on a post or page (Access Restriction in the editor sidebar or metabox) always wins. If a URL rule below matches a post that carries its own restriction, the URL rule is skipped for that post. Overlaps are listed on the Access-Rule Conflicts screen."
+    - LabelText [ref=e119] clickable [onclick]
+      - checkbox [checked=false, ref=e133]
+    - generic [ref=e120] clickable [onclick]
+      - textbox "Rule name" [ref=e134]: Draft after failed save
+        - StaticText "Draft after failed save"
+      - StaticText "URL Rule"
+      - StaticText " #"
+      - StaticText "1"
+    - generic [ref=e121] clickable [cursor:pointer, onclick]
+    - generic [ref=e122] clickable [onclick]
+      - button "Move up" [disabled, ref=e135]
+      - button "Move down" [disabled, ref=e136]
+      - button "Duplicate" [ref=e137]
+      - button "Delete" [ref=e138]
+    - button "Collapse" [ref=e123]
+    - StaticText "TARGET"
+    - LabelText
+      - StaticText "Pattern Type"
+    - combobox [expanded=false, ref=e124]: Starts with
+      - MenuListPopup
+        - option "Starts with" [selected, ref=e140]
+        - option "Contains" [ref=e141]
+        - option "Exact match" [ref=e142]
+        - option "Regular expression" [ref=e143]
+    - LabelText
+      - StaticText "URL Pattern"
+    - textbox "/members/" [ref=e125]
+    - LabelText
+      - StaticText "Priority"
+    - spinbutton [ref=e126]: 10
+      - StaticText "10"
+    - LabelText
+      - StaticText "Exclusions"
+    - textbox "/members/public/, /members/signup/" [ref=e127]
+    - paragraph
+      - StaticText "Comma-separated URLs to exclude from this rule"
+    - StaticText "IF"
+    - StaticText "User meets these conditions"
+    - paragraph
+      - StaticText "No conditions added. Click below to add conditions."
+    - button "Add Condition" [ref=e128]
+    - button "Add Group" [ref=e129]
+    - StaticText "THEN"
+    - StaticText "Apply these actions"
+    - LabelText
+      - StaticText "Action when denied"
+    - combobox [expanded=false, ref=e130]: Redirect to URL
+      - MenuListPopup
+        - option "Redirect to URL" [selected, ref=e144]
+        - option "Show message" [ref=e145]
+        - option "Show 403 forbidden" [ref=e146]
+        - option "Redirect to login" [ref=e147]
+    - LabelText
+      - StaticText "Redirect URL"
+    - textbox "/pricing/" [ref=e131]
+    - StaticText "SCHEDULE"
+    - StaticText "Delay access after subscription starts"
+    - checkbox "Delay this rule after subscription starts" [checked=false, ref=e132]
+    - button "Add New Rule" [ref=e139]
+    - generic
+      - button "Save Rules" [ref=e148]
+      - button "Discard Changes" [ref=e149]
+      - link "Easy Setup & Import/Export" [ref=e150]
+      - paragraph
+        - StaticText "Settings last saved: September 14, 2026 10:49 am (UTC)"
+- generic
+  - sectionheader
+    - navigation
+      - list
+        - listitem [level=1]
+          - link "Role Mapping" [ref=e151]
+        - listitem [level=1]
+          - link "Discount" [ref=e152]
+        - listitem [level=1]
+          - link "Shop Access" [ref=e153]
+        - listitem [level=1]
+          - link "URL" [ref=e154]
+        - listitem [level=1]
+          - link "Post Types" [ref=e155]
+        - listitem [level=1]
+          - link "Downloads" [ref=e156]
+        - listitem [level=1]
+          - link "Comments" [ref=e157]
+        - listitem [level=1]
+          - link "Purchase Limit" [ref=e158]
+        - listitem [level=1]
+          - link "Conflicts" [ref=e159]
+        - listitem [level=1]
+          - link "Login Limit" [ref=e160]
+    - StaticText "Configure memberships, content gating, role mapping, and access restrictions"
+  - link "Go Back" [ref=e32]
+  - main
+    - heading "URL Rules" [level=3, ref=e117]
+    - paragraph
+      - StaticText "Members Access to specific URL patterns. Rules are processed by priority (lower number = higher priority)."
+    - heading "How URL Rules Work" [level=4, ref=e118]
+    - list
+      - listitem [level=1]
+        - ListMarker "1. "
+        - StaticText "Define who qualifies using the IF conditions — for example, active members, customers with a matching product purchase, or users with a certain role."
+      - listitem [level=1]
+        - ListMarker "2. "
+        - StaticText "Choose what to protect in the TARGET section — starts with, contains, exact match, or regular expression — and optionally list exclusions that should stay public."
+      - listitem [level=1]
+        - ListMarker "3. "
+        - StaticText "Configure the THEN section — redirect the visitor, send them to login, or show an access denied message."
+      - listitem [level=1]
+        - ListMarker "4. "
+        - StaticText "Rules are processed by priority, so lower numbers run first. This lets you create broad protected areas with specific public exceptions above them."
+      - listitem [level=1]
+        - ListMarker "5. "
+        - StaticText "When a user meets the conditions, the protected URLs become accessible again without needing separate manual changes on each page."
+    - paragraph
+      - strong
+        - StaticText "Note:"
+      - StaticText " Use URL Rules for path-based gating such as /members/, /vip/, or landing-page groups. If you need product-specific purchase restrictions, use Shop Access Rules instead."
+    - paragraph
+      - strong
+        - StaticText "Priority:"
+      - StaticText " A restriction set directly on a post or page (Access Restriction in the editor sidebar or metabox) always wins. If a URL rule below matches a post that carries its own restriction, the URL rule is skipped for that post. Overlaps are listed on the Access-Rule Conflicts screen."
+    - LabelText [ref=e119] clickable [onclick]
+      - checkbox [checked=false, ref=e133]
+    - generic [ref=e120] clickable [onclick]
+      - textbox "Rule name" [ref=e134]: Draft after failed save
+        - StaticText "Draft after failed save"
+      - StaticText "URL Rule"
+      - StaticText " #"
+      - StaticText "1"
+    - generic [ref=e121] clickable [cursor:pointer, onclick]
+    - generic [ref=e122] clickable [onclick]
+      - button "Move up" [disabled, ref=e135]
+      - button "Move down" [disabled, ref=e136]
+      - button "Duplicate" [ref=e137]
+      - button "Delete" [ref=e138]
+    - button "Collapse" [ref=e123]
+    - StaticText "TARGET"
+    - LabelText
+      - StaticText "Pattern Type"
+    - combobox [expanded=false, ref=e124]: Starts with
+      - MenuListPopup
+        - option "Starts with" [selected, ref=e140]
+        - option "Contains" [ref=e141]
+        - option "Exact match" [ref=e142]
+        - option "Regular expression" [ref=e143]
+    - LabelText
+      - StaticText "URL Pattern"
+    - textbox "/members/" [ref=e125]
+    - LabelText
+      - StaticText "Priority"
+    - spinbutton [ref=e126]: 10
+      - StaticText "10"
+    - LabelText
+      - StaticText "Exclusions"
+    - textbox "/members/public/, /members/signup/" [ref=e127]
+    - paragraph
+      - StaticText "Comma-separated URLs to exclude from this rule"
+    - StaticText "IF"
+    - StaticText "User meets these conditions"
+    - paragraph
+      - StaticText "No conditions added. Click below to add conditions."
+    - button "Add Condition" [ref=e128]
+    - button "Add Group" [ref=e129]
+    - StaticText "THEN"
+    - StaticText "Apply these actions"
+    - LabelText
+      - StaticText "Action when denied"
+    - combobox [expanded=false, ref=e130]: Redirect to URL
+      - MenuListPopup
+        - option "Redirect to URL" [selected, ref=e144]
+        - option "Show message" [ref=e145]
+        - option "Show 403 forbidden" [ref=e146]
+        - option "Redirect to login" [ref=e147]
+    - LabelText
+      - StaticText "Redirect URL"
+    - textbox "/pricing/" [ref=e131]
+    - StaticText "SCHEDULE"
+    - StaticText "Delay access after subscription starts"
+    - checkbox "Delay this rule after subscription starts" [checked=false, ref=e132]
+    - button "Add New Rule" [ref=e139]
+    - generic
+      - button "Save Rules" [ref=e148]
+      - button "Discard Changes" [ref=e149]
+      - link "Easy Setup & Import/Export" [ref=e150]
+      - paragraph
+        - StaticText "Settings last saved: September 14, 2026 10:49 am (UTC)"
+- link "Go Back" [ref=e32]
+- StaticText "Configure memberships, content gating, role mapping, and access restrictions"
+- heading "URL Rules" [level=3, ref=e117]
+- paragraph
+  - StaticText "Members Access to specific URL patterns. Rules are processed by priority (lower number = higher priority)."
+- heading "How URL Rules Work" [level=4, ref=e118]
+- list
+  - listitem [level=1]
+    - ListMarker "1. "
+    - StaticText "Define who qualifies using the IF conditions — for example, active members, customers with a matching product purchase, or users with a certain role."
+  - listitem [level=1]
+    - ListMarker "2. "
+    - StaticText "Choose what to protect in the TARGET section — starts with, contains, exact match, or regular expression — and optionally list exclusions that should stay public."
+  - listitem [level=1]
+    - ListMarker "3. "
+    - StaticText "Configure the THEN section — redirect the visitor, send them to login, or show an access denied message."
+  - listitem [level=1]
+    - ListMarker "4. "
+    - StaticText "Rules are processed by priority, so lower numbers run first. This lets you create broad protected areas with specific public exceptions above them."
+  - listitem [level=1]
+    - ListMarker "5. "
+    - StaticText "When a user meets the conditions, the protected URLs become accessible again without needing separate manual changes on each page."
+- paragraph
+  - strong
+    - StaticText "Note:"
+  - StaticText " Use URL Rules for path-based gating such as /members/, /vip/, or landing-page groups. If you need product-specific purchase restrictions, use Shop Access Rules instead."
+- paragraph
+  - strong
+    - StaticText "Priority:"
+  - StaticText " A restriction set directly on a post or page (Access Restriction in the editor sidebar or metabox) always wins. If a URL rule below matches a post that carries its own restriction, the URL rule is skipped for that post. Overlaps are listed on the Access-Rule Conflicts screen."
+- LabelText [ref=e119] clickable [onclick]
+  - checkbox [checked=false, ref=e133]
+- generic [ref=e120] clickable [onclick]
+  - textbox "Rule name" [ref=e134]: Draft after failed save
+    - StaticText "Draft after failed save"
+  - StaticText "URL Rule"
+  - StaticText " #"
+  - StaticText "1"
+- generic [ref=e121] clickable [cursor:pointer, onclick]
+- generic [ref=e122] clickable [onclick]
+  - button "Move up" [disabled, ref=e135]
+  - button "Move down" [disabled, ref=e136]
+  - button "Duplicate" [ref=e137]
+  - button "Delete" [ref=e138]
+- button "Collapse" [ref=e123]
+- StaticText "TARGET"
+- LabelText
+  - StaticText "Pattern Type"
+- combobox [expanded=false, ref=e124]: Starts with
+  - MenuListPopup
+    - option "Starts with" [selected, ref=e140]
+    - option "Contains" [ref=e141]
+    - option "Exact match" [ref=e142]
+    - option "Regular expression" [ref=e143]
+- LabelText
+  - StaticText "URL Pattern"
+- textbox "/members/" [ref=e125]
+- LabelText
+  - StaticText "Priority"
+- spinbutton [ref=e126]: 10
+  - StaticText "10"
+- LabelText
+  - StaticText "Exclusions"
+- textbox "/members/public/, /members/signup/" [ref=e127]
+- paragraph
+  - StaticText "Comma-separated URLs to exclude from this rule"
+- StaticText "IF"
+- StaticText "User meets these conditions"
+- paragraph
+  - StaticText "No conditions added. Click below to add conditions."
+- button "Add Condition" [ref=e128]
+- button "Add Group" [ref=e129]
+- StaticText "THEN"
+- StaticText "Apply these actions"
+- LabelText
+  - StaticText "Action when denied"
+- combobox [expanded=false, ref=e130]: Redirect to URL
+  - MenuListPopup
+    - option "Redirect to URL" [selected, ref=e144]
+    - option "Show message" [ref=e145]
+    - option "Show 403 forbidden" [ref=e146]
+    - option "Redirect to login" [ref=e147]
+- LabelText
+  - StaticText "Redirect URL"
+- textbox "/pricing/" [ref=e131]
+- StaticText "SCHEDULE"
+- StaticText "Delay access after subscription starts"
+- checkbox "Delay this rule after subscription starts" [checked=false, ref=e132]
+- button "Add New Rule" [ref=e139]
+- generic
+  - button "Save Rules" [ref=e148]
+  - button "Discard Changes" [ref=e149]
+  - link "Easy Setup & Import/Export" [ref=e150]
+  - paragraph
+    - StaticText "Settings last saved: September 14, 2026 10:49 am (UTC)"
+- StaticText "URL Rule"
+- StaticText " #"
+- StaticText "1"
+- option "Starts with" [selected, ref=e140]
+- option "Contains" [ref=e141]
+- option "Exact match" [ref=e142]
+- option "Regular expression" [ref=e143]
+- option "Redirect to URL" [selected, ref=e144]
+- option "Show message" [ref=e145]
+- option "Show 403 forbidden" [ref=e146]
+- option "Redirect to login" [ref=e147]

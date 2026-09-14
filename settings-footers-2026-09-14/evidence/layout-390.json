@@ -1,0 +1,513 @@
+[
+  {
+    "page": "settings",
+    "bar": {
+      "bottom": 900,
+      "height": 150.203125,
+      "left": 25,
+      "right": 363,
+      "top": 749.796875,
+      "width": 338,
+      "x": 25,
+      "y": 749.796875
+    },
+    "flex": "flex",
+    "items": [
+      {
+        "color": "rgb(255, 255, 255)",
+        "rect": {
+          "bottom": 800.796875,
+          "height": 40,
+          "left": 42,
+          "right": 162.359375,
+          "top": 760.796875,
+          "width": 120.359375,
+          "x": 42,
+          "y": 760.796875
+        },
+        "text": "Save Settings"
+      },
+      {
+        "color": "rgb(56, 88, 233)",
+        "rect": {
+          "bottom": 800.796875,
+          "height": 40,
+          "left": 174.359375,
+          "right": 316.625,
+          "top": 760.796875,
+          "width": 142.265625,
+          "x": 174.359375,
+          "y": 760.796875
+        },
+        "text": "Discard Changes"
+      },
+      {
+        "color": "rgb(56, 88, 233)",
+        "rect": {
+          "bottom": 835,
+          "height": 18.203125,
+          "left": 42,
+          "right": 208.9375,
+          "top": 816.796875,
+          "width": 166.9375,
+          "x": 42,
+          "y": 816.796875
+        },
+        "text": "Easy Setup & Import/Export"
+      },
+      {
+        "color": "rgb(0, 161, 55)",
+        "rect": {
+          "bottom": 889,
+          "height": 42,
+          "left": 42,
+          "right": 346,
+          "top": 847,
+          "width": 304,
+          "x": 42,
+          "y": 847
+        },
+        "text": "Settings last saved: September 14, 2026 10:49 am (UTC)"
+      }
+    ],
+    "width": 390
+  },
+  {
+    "page": "profile-fields",
+    "bar": {
+      "bottom": 900,
+      "height": 206.203125,
+      "left": 25,
+      "right": 363,
+      "top": 693.796875,
+      "width": 338,
+      "x": 25,
+      "y": 693.796875
+    },
+    "flex": "flex",
+    "items": [
+      {
+        "color": "rgb(255, 255, 255)",
+        "rect": {
+          "bottom": 744.796875,
+          "height": 40,
+          "left": 42,
+          "right": 197.578125,
+          "top": 704.796875,
+          "width": 155.578125,
+          "x": 42,
+          "y": 704.796875
+        },
+        "text": "Save Configuration"
+      },
+      {
+        "color": "rgb(56, 88, 233)",
+        "rect": {
+          "bottom": 800.796875,
+          "height": 40,
+          "left": 42,
+          "right": 184.265625,
+          "top": 760.796875,
+          "width": 142.265625,
+          "x": 42,
+          "y": 760.796875
+        },
+        "text": "Discard Changes"
+      },
+      {
+        "color": "rgb(56, 88, 233)",
+        "rect": {
+          "bottom": 835,
+          "height": 18.203125,
+          "left": 42,
+          "right": 208.9375,
+          "top": 816.796875,
+          "width": 166.9375,
+          "x": 42,
+          "y": 816.796875
+        },
+        "text": "Easy Setup & Import/Export"
+      },
+      {
+        "color": "rgb(0, 161, 55)",
+        "rect": {
+          "bottom": 889,
+          "height": 42,
+          "left": 42,
+          "right": 346,
+          "top": 847,
+          "width": 304,
+          "x": 42,
+          "y": 847
+        },
+        "text": "Settings last saved: September 14, 2026 10:49 am (UTC)"
+      }
+    ],
+    "width": 390
+  },
+  {
+    "page": "myaccount",
+    "bar": {
+      "bottom": 900,
+      "height": 206.203125,
+      "left": 25,
+      "right": 363,
+      "top": 693.796875,
+      "width": 338,
+      "x": 25,
+      "y": 693.796875
+    },
+    "flex": "flex",
+    "items": [
+      {
+        "color": "rgb(255, 255, 255)",
+        "rect": {
+          "bottom": 744.796875,
+          "height": 40,
+          "left": 42,
+          "right": 197.578125,
+          "top": 704.796875,
+          "width": 155.578125,
+          "x": 42,
+          "y": 704.796875
+        },
+        "text": "Save Configuration"
+      },
+      {
+        "color": "rgb(56, 88, 233)",
+        "rect": {
+          "bottom": 800.796875,
+          "height": 40,
+          "left": 42,
+          "right": 184.265625,
+          "top": 760.796875,
+          "width": 142.265625,
+          "x": 42,
+          "y": 760.796875
+        },
+        "text": "Discard Changes"
+      },
+      {
+        "color": "rgb(56, 88, 233)",
+        "rect": {
+          "bottom": 835,
+          "height": 18.203125,
+          "left": 42,
+          "right": 208.9375,
+          "top": 816.796875,
+          "width": 166.9375,
+          "x": 42,
+          "y": 816.796875
+        },
+        "text": "Easy Setup & Import/Export"
+      },
+      {
+        "color": "rgb(0, 161, 55)",
+        "rect": {
+          "bottom": 889,
+          "height": 42,
+          "left": 42,
+          "right": 346,
+          "top": 847,
+          "width": 304,
+          "x": 42,
+          "y": 847
+        },
+        "text": "Settings last saved: September 14, 2026 10:49 am (UTC)"
+      }
+    ],
+    "width": 390
+  },
+  {
+    "page": "cart",
+    "bar": {
+      "bottom": 900,
+      "height": 150.203125,
+      "left": 25,
+      "right": 363,
+      "top": 749.796875,
+      "width": 338,
+      "x": 25,
+      "y": 749.796875
+    },
+    "flex": "flex",
+    "items": [
+      {
+        "color": "rgb(255, 255, 255)",
+        "rect": {
+          "bottom": 800.796875,
+          "height": 40,
+          "left": 42,
+          "right": 162.359375,
+          "top": 760.796875,
+          "width": 120.359375,
+          "x": 42,
+          "y": 760.796875
+        },
+        "text": "Save Settings"
+      },
+      {
+        "color": "rgb(56, 88, 233)",
+        "rect": {
+          "bottom": 800.796875,
+          "height": 40,
+          "left": 174.359375,
+          "right": 316.625,
+          "top": 760.796875,
+          "width": 142.265625,
+          "x": 174.359375,
+          "y": 760.796875
+        },
+        "text": "Discard Changes"
+      },
+      {
+        "color": "rgb(56, 88, 233)",
+        "rect": {
+          "bottom": 835,
+          "height": 18.203125,
+          "left": 42,
+          "right": 208.9375,
+          "top": 816.796875,
+          "width": 166.9375,
+          "x": 42,
+          "y": 816.796875
+        },
+        "text": "Easy Setup & Import/Export"
+      },
+      {
+        "color": "rgb(0, 161, 55)",
+        "rect": {
+          "bottom": 889,
+          "height": 42,
+          "left": 42,
+          "right": 346,
+          "top": 847,
+          "width": 304,
+          "x": 42,
+          "y": 847
+        },
+        "text": "Settings last saved: September 14, 2026 10:49 am (UTC)"
+      }
+    ],
+    "width": 390
+  },
+  {
+    "page": "styling",
+    "bar": {
+      "bottom": 900,
+      "height": 150.203125,
+      "left": 25,
+      "right": 363,
+      "top": 749.796875,
+      "width": 338,
+      "x": 25,
+      "y": 749.796875
+    },
+    "flex": "flex",
+    "items": [
+      {
+        "color": "rgb(255, 255, 255)",
+        "rect": {
+          "bottom": 800.796875,
+          "height": 40,
+          "left": 42,
+          "right": 143.796875,
+          "top": 760.796875,
+          "width": 101.796875,
+          "x": 42,
+          "y": 760.796875
+        },
+        "text": "Save Rules"
+      },
+      {
+        "color": "rgb(56, 88, 233)",
+        "rect": {
+          "bottom": 800.796875,
+          "height": 40,
+          "left": 155.796875,
+          "right": 298.0625,
+          "top": 760.796875,
+          "width": 142.265625,
+          "x": 155.796875,
+          "y": 760.796875
+        },
+        "text": "Discard Changes"
+      },
+      {
+        "color": "rgb(56, 88, 233)",
+        "rect": {
+          "bottom": 835,
+          "height": 18.203125,
+          "left": 42,
+          "right": 208.9375,
+          "top": 816.796875,
+          "width": 166.9375,
+          "x": 42,
+          "y": 816.796875
+        },
+        "text": "Easy Setup & Import/Export"
+      },
+      {
+        "color": "rgb(0, 161, 55)",
+        "rect": {
+          "bottom": 889,
+          "height": 42,
+          "left": 42,
+          "right": 346,
+          "top": 847,
+          "width": 304,
+          "x": 42,
+          "y": 847
+        },
+        "text": "Settings last saved: September 14, 2026 10:49 am (UTC)"
+      }
+    ],
+    "width": 390
+  },
+  {
+    "page": "retention",
+    "bar": {
+      "bottom": 900,
+      "height": 150.203125,
+      "left": 25,
+      "right": 363,
+      "top": 749.796875,
+      "width": 338,
+      "x": 25,
+      "y": 749.796875
+    },
+    "flex": "flex",
+    "items": [
+      {
+        "color": "rgb(255, 255, 255)",
+        "rect": {
+          "bottom": 800.796875,
+          "height": 40,
+          "left": 42,
+          "right": 162.359375,
+          "top": 760.796875,
+          "width": 120.359375,
+          "x": 42,
+          "y": 760.796875
+        },
+        "text": "Save Settings"
+      },
+      {
+        "color": "rgb(56, 88, 233)",
+        "rect": {
+          "bottom": 800.796875,
+          "height": 40,
+          "left": 174.359375,
+          "right": 316.625,
+          "top": 760.796875,
+          "width": 142.265625,
+          "x": 174.359375,
+          "y": 760.796875
+        },
+        "text": "Discard Changes"
+      },
+      {
+        "color": "rgb(56, 88, 233)",
+        "rect": {
+          "bottom": 835,
+          "height": 18.203125,
+          "left": 42,
+          "right": 208.9375,
+          "top": 816.796875,
+          "width": 166.9375,
+          "x": 42,
+          "y": 816.796875
+        },
+        "text": "Easy Setup & Import/Export"
+      },
+      {
+        "color": "rgb(0, 161, 55)",
+        "rect": {
+          "bottom": 889,
+          "height": 42,
+          "left": 42,
+          "right": 346,
+          "top": 847,
+          "width": 304,
+          "x": 42,
+          "y": 847
+        },
+        "text": "Settings last saved: September 14, 2026 10:49 am (UTC)"
+      }
+    ],
+    "width": 390
+  },
+  {
+    "page": "member-access",
+    "bar": {
+      "bottom": 900,
+      "height": 150.203125,
+      "left": 25,
+      "right": 363,
+      "top": 749.796875,
+      "width": 338,
+      "x": 25,
+      "y": 749.796875
+    },
+    "flex": "flex",
+    "items": [
+      {
+        "color": "rgb(255, 255, 255)",
+        "rect": {
+          "bottom": 800.796875,
+          "height": 40,
+          "left": 42,
+          "right": 143.796875,
+          "top": 760.796875,
+          "width": 101.796875,
+          "x": 42,
+          "y": 760.796875
+        },
+        "text": "Save Rules"
+      },
+      {
+        "color": "rgb(56, 88, 233)",
+        "rect": {
+          "bottom": 800.796875,
+          "height": 40,
+          "left": 155.796875,
+          "right": 298.0625,
+          "top": 760.796875,
+          "width": 142.265625,
+          "x": 155.796875,
+          "y": 760.796875
+        },
+        "text": "Discard Changes"
+      },
+      {
+        "color": "rgb(56, 88, 233)",
+        "rect": {
+          "bottom": 835,
+          "height": 18.203125,
+          "left": 42,
+          "right": 208.9375,
+          "top": 816.796875,
+          "width": 166.9375,
+          "x": 42,
+          "y": 816.796875
+        },
+        "text": "Easy Setup & Import/Export"
+      },
+      {
+        "color": "rgb(0, 161, 55)",
+        "rect": {
+          "bottom": 889,
+          "height": 42,
+          "left": 42,
+          "right": 346,
+          "top": 847,
+          "width": 304,
+          "x": 42,
+          "y": 847
+        },
+        "text": "Settings last saved: September 14, 2026 10:49 am (UTC)"
+      }
+    ],
+    "width": 390
+  }
+]

@@ -1,0 +1,167 @@
+- generic
+  - sectionheader
+    - navigation
+      - list
+        - listitem [level=1]
+          - link "Role Mapping" [ref=e122]
+        - listitem [level=1]
+          - link "Discount" [ref=e123]
+        - listitem [level=1]
+          - link "Shop Access" [ref=e124]
+        - listitem [level=1]
+          - link "URL" [ref=e125]
+        - listitem [level=1]
+          - link "Post Types" [ref=e126]
+        - listitem [level=1]
+          - link "Downloads" [ref=e127]
+        - listitem [level=1]
+          - link "Comments" [ref=e128]
+        - listitem [level=1]
+          - link "Purchase Limit" [ref=e129]
+        - listitem [level=1]
+          - link "Conflicts" [ref=e130]
+        - listitem [level=1]
+          - link "Login Limit" [ref=e131]
+    - StaticText "Configure memberships, content gating, role mapping, and access restrictions"
+  - link "Go Back" [ref=e31]
+  - main
+    - heading "URL Rules" [level=3, ref=e116]
+    - paragraph
+      - StaticText "Members Access to specific URL patterns. Rules are processed by priority (lower number = higher priority)."
+    - heading "How URL Rules Work" [level=4, ref=e117]
+    - list
+      - listitem [level=1]
+        - ListMarker "1. "
+        - StaticText "Define who qualifies using the IF conditions — for example, active members, customers with a matching product purchase, or users with a certain role."
+      - listitem [level=1]
+        - ListMarker "2. "
+        - StaticText "Choose what to protect in the TARGET section — starts with, contains, exact match, or regular expression — and optionally list exclusions that should stay public."
+      - listitem [level=1]
+        - ListMarker "3. "
+        - StaticText "Configure the THEN section — redirect the visitor, send them to login, or show an access denied message."
+      - listitem [level=1]
+        - ListMarker "4. "
+        - StaticText "Rules are processed by priority, so lower numbers run first. This lets you create broad protected areas with specific public exceptions above them."
+      - listitem [level=1]
+        - ListMarker "5. "
+        - StaticText "When a user meets the conditions, the protected URLs become accessible again without needing separate manual changes on each page."
+    - paragraph
+      - strong
+        - StaticText "Note:"
+      - StaticText " Use URL Rules for path-based gating such as /members/, /vip/, or landing-page groups. If you need product-specific purchase restrictions, use Shop Access Rules instead."
+    - paragraph
+      - strong
+        - StaticText "Priority:"
+      - StaticText " A restriction set directly on a post or page (Access Restriction in the editor sidebar or metabox) always wins. If a URL rule below matches a post that carries its own restriction, the URL rule is skipped for that post. Overlaps are listed on the Access-Rule Conflicts screen."
+    - paragraph
+      - StaticText "No rules configured yet."
+    - button "Add New Rule" [ref=e118]
+    - generic
+      - button "Save Rules" [ref=e119]
+      - button "Discard Changes" [ref=e120]
+      - link "Easy Setup & Import/Export" [ref=e121]
+      - paragraph
+        - StaticText "Settings last saved: September 10, 2026 12:59 pm (UTC)"
+- generic
+  - sectionheader
+    - navigation
+      - list
+        - listitem [level=1]
+          - link "Role Mapping" [ref=e122]
+        - listitem [level=1]
+          - link "Discount" [ref=e123]
+        - listitem [level=1]
+          - link "Shop Access" [ref=e124]
+        - listitem [level=1]
+          - link "URL" [ref=e125]
+        - listitem [level=1]
+          - link "Post Types" [ref=e126]
+        - listitem [level=1]
+          - link "Downloads" [ref=e127]
+        - listitem [level=1]
+          - link "Comments" [ref=e128]
+        - listitem [level=1]
+          - link "Purchase Limit" [ref=e129]
+        - listitem [level=1]
+          - link "Conflicts" [ref=e130]
+        - listitem [level=1]
+          - link "Login Limit" [ref=e131]
+    - StaticText "Configure memberships, content gating, role mapping, and access restrictions"
+  - link "Go Back" [ref=e31]
+  - main
+    - heading "URL Rules" [level=3, ref=e116]
+    - paragraph
+      - StaticText "Members Access to specific URL patterns. Rules are processed by priority (lower number = higher priority)."
+    - heading "How URL Rules Work" [level=4, ref=e117]
+    - list
+      - listitem [level=1]
+        - ListMarker "1. "
+        - StaticText "Define who qualifies using the IF conditions — for example, active members, customers with a matching product purchase, or users with a certain role."
+      - listitem [level=1]
+        - ListMarker "2. "
+        - StaticText "Choose what to protect in the TARGET section — starts with, contains, exact match, or regular expression — and optionally list exclusions that should stay public."
+      - listitem [level=1]
+        - ListMarker "3. "
+        - StaticText "Configure the THEN section — redirect the visitor, send them to login, or show an access denied message."
+      - listitem [level=1]
+        - ListMarker "4. "
+        - StaticText "Rules are processed by priority, so lower numbers run first. This lets you create broad protected areas with specific public exceptions above them."
+      - listitem [level=1]
+        - ListMarker "5. "
+        - StaticText "When a user meets the conditions, the protected URLs become accessible again without needing separate manual changes on each page."
+    - paragraph
+      - strong
+        - StaticText "Note:"
+      - StaticText " Use URL Rules for path-based gating such as /members/, /vip/, or landing-page groups. If you need product-specific purchase restrictions, use Shop Access Rules instead."
+    - paragraph
+      - strong
+        - StaticText "Priority:"
+      - StaticText " A restriction set directly on a post or page (Access Restriction in the editor sidebar or metabox) always wins. If a URL rule below matches a post that carries its own restriction, the URL rule is skipped for that post. Overlaps are listed on the Access-Rule Conflicts screen."
+    - paragraph
+      - StaticText "No rules configured yet."
+    - button "Add New Rule" [ref=e118]
+    - generic
+      - button "Save Rules" [ref=e119]
+      - button "Discard Changes" [ref=e120]
+      - link "Easy Setup & Import/Export" [ref=e121]
+      - paragraph
+        - StaticText "Settings last saved: September 10, 2026 12:59 pm (UTC)"
+- link "Go Back" [ref=e31]
+- StaticText "Configure memberships, content gating, role mapping, and access restrictions"
+- heading "URL Rules" [level=3, ref=e116]
+- paragraph
+  - StaticText "Members Access to specific URL patterns. Rules are processed by priority (lower number = higher priority)."
+- heading "How URL Rules Work" [level=4, ref=e117]
+- list
+  - listitem [level=1]
+    - ListMarker "1. "
+    - StaticText "Define who qualifies using the IF conditions — for example, active members, customers with a matching product purchase, or users with a certain role."
+  - listitem [level=1]
+    - ListMarker "2. "
+    - StaticText "Choose what to protect in the TARGET section — starts with, contains, exact match, or regular expression — and optionally list exclusions that should stay public."
+  - listitem [level=1]
+    - ListMarker "3. "
+    - StaticText "Configure the THEN section — redirect the visitor, send them to login, or show an access denied message."
+  - listitem [level=1]
+    - ListMarker "4. "
+    - StaticText "Rules are processed by priority, so lower numbers run first. This lets you create broad protected areas with specific public exceptions above them."
+  - listitem [level=1]
+    - ListMarker "5. "
+    - StaticText "When a user meets the conditions, the protected URLs become accessible again without needing separate manual changes on each page."
+- paragraph
+  - strong
+    - StaticText "Note:"
+  - StaticText " Use URL Rules for path-based gating such as /members/, /vip/, or landing-page groups. If you need product-specific purchase restrictions, use Shop Access Rules instead."
+- paragraph
+  - strong
+    - StaticText "Priority:"
+  - StaticText " A restriction set directly on a post or page (Access Restriction in the editor sidebar or metabox) always wins. If a URL rule below matches a post that carries its own restriction, the URL rule is skipped for that post. Overlaps are listed on the Access-Rule Conflicts screen."
+- paragraph
+  - StaticText "No rules configured yet."
+- button "Add New Rule" [ref=e118]
+- generic
+  - button "Save Rules" [ref=e119]
+  - button "Discard Changes" [ref=e120]
+  - link "Easy Setup & Import/Export" [ref=e121]
+  - paragraph
+    - StaticText "Settings last saved: September 10, 2026 12:59 pm (UTC)"

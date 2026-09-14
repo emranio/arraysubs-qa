@@ -1,0 +1,16 @@
+{
+    "core_booted": true,
+    "pro_skipped": true,
+    "\/arraysubs\/v1\/settings\/data": {
+        "status": 200,
+        "timestamp_present": true
+    },
+    "\/arraysubs\/v1\/members-access\/settings": {
+        "status": 200,
+        "timestamp_present": true
+    },
+    "\/arraysubs\/v1\/member-styling\/settings": {
+        "status": 200,
+        "timestamp_present": true
+    }
+}
