@@ -1,0 +1,23 @@
+PASS valid fixed
+PASS full flexible requires periods: Choose at least one available billing period.
+PASS invalid mode: Choose valid flexible billing options.
+PASS invalid periods: Choose valid flexible billing options.
+PASS interval range: Billing intervals, lengths and trial lengths must be valid whole numbers.
+PASS length range: Billing intervals, lengths and trial lengths must be valid whole numbers.
+PASS fractional length: Billing intervals, lengths and trial lengths must be valid whole numbers.
+PASS negative shipping: Enter a valid non-negative amount.
+PASS invalid shipping: Choose a valid shipping type.
+PASS virtual ignores shipping
+PASS one-time ignores renewal shipping
+PASS disabled renewal price ignores stale count
+PASS active renewal price validates count: Billing intervals, lengths and trial lengths must be valid whole numbers.
+PASS lifetime ignores inactive fields
+PASS full flexible locks interval
+PASS missing end date: Enter a valid fixed membership end date and renewal behavior.
+PASS impossible end date: Enter a valid fixed membership end date and renewal behavior.
+PASS year zero: Enter a valid fixed membership end date and renewal behavior.
+PASS reversed enrollment: Enrollment must close on or after its opening date.
+PASS fixed date overrides length and mode
+PASS annual leap day
+PASS annual impossible date: Enter a valid fixed membership end date and renewal behavior.
+22 cases; 0 failures. No products written.

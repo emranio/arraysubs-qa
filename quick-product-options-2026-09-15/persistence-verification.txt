@@ -1,0 +1,8 @@
+Verified 6387: QPO 2026-09-15 Annual Membership
+Verified 6390: QPO 2026-09-15 Full Flexible One-time
+Verified 6392: QPO 2026-09-15 Flexible Virtual
+Verified 6394: QPO 2026-09-15 Absolute Membership
+Verified 6396: QPO 2026-09-15 Lifetime
+Verified 6398: QPO 2026-09-15 Core Only
+57 metadata/virtual assertions; 0 failures.
+Pro restored: yes
