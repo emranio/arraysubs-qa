@@ -1,0 +1,86 @@
+{
+  "overlap": {
+    "notices": [],
+    "status": 200,
+    "text": "QA Default Message overlap\n\nDM_PROTECTED",
+    "passed": true
+  },
+  "url-403-custom": {
+    "notices": [],
+    "status": 200,
+    "text": "QA Default Message url-403-custom\n\nDM_PROTECTED",
+    "passed": true
+  },
+  "url-message-custom": {
+    "notices": [],
+    "status": 200,
+    "text": "QA Default Message url-message-custom\n\nDM_PROTECTED",
+    "passed": true
+  },
+  "comment-custom": {
+    "notices": [],
+    "status": 200,
+    "text": "QA Default Message comment-custom\n\nDM_PROTECTED",
+    "passed": true
+  },
+  "cpt-custom": {
+    "notices": [],
+    "status": 200,
+    "text": "QA Default Message cpt-custom\n\nDM_PROTECTED",
+    "passed": true
+  },
+  "post-custom": {
+    "notices": [],
+    "status": 200,
+    "text": "QA Default Message post-custom\n\nDM_PROTECTED",
+    "passed": true
+  },
+  "url-403-default": {
+    "notices": [],
+    "status": 200,
+    "text": "QA Default Message url-403-default\n\nDM_PROTECTED",
+    "passed": true
+  },
+  "url-message-default": {
+    "notices": [],
+    "status": 200,
+    "text": "QA Default Message url-message-default\n\nDM_PROTECTED",
+    "passed": true
+  },
+  "comment-default": {
+    "notices": [],
+    "status": 200,
+    "text": "QA Default Message comment-default\n\nDM_PROTECTED",
+    "passed": true
+  },
+  "cpt-default": {
+    "notices": [],
+    "status": 200,
+    "text": "QA Default Message cpt-default\n\nDM_PROTECTED",
+    "passed": true
+  },
+  "post-default": {
+    "notices": [],
+    "status": 200,
+    "text": "QA Default Message post-default\n\nDM_PROTECTED",
+    "passed": true
+  },
+  "elementor": {
+    "notices": [],
+    "status": 200,
+    "text": "QA Default Message elementor\nDM_PROTECTED\nDM_PROTECTED",
+    "passed": true
+  },
+  "shortcode": {
+    "notices": [],
+    "status": 200,
+    "text": "QA Default Message shortcode\n\nDM_PROTECTEDDM_PROTECTED",
+    "passed": true
+  },
+  "gutenberg": {
+    "notices": [],
+    "status": 200,
+    "text": "QA Default Message gutenberg\n\nDM_PROTECTED\n\nDM_PROTECTED\n\nDM_PROTECTED\n\nDM_PROTECTED",
+    "passed": true
+  }
+}

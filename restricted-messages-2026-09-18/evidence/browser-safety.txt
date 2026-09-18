@@ -1,0 +1,7 @@
+{
+  "list": 1,
+  "secret": false,
+  "strong": "Safe rich text",
+  "unsafeExecuted": false,
+  "unsafeNodes": false
+}

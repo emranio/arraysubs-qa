@@ -1,0 +1,230 @@
+{
+  "overlap": {
+    "notices": [
+      {
+        "html": "\n                <div class=\"arraysubs-restricted-content__message\">\n                    <p>This content is restricted. Please subscribe to access.</p>\n\n                </div>\n            ",
+        "links": [],
+        "strong": 0,
+        "text": "This content is restricted. Please subscribe to access."
+      }
+    ],
+    "status": 200,
+    "text": "QA Default Message overlap\n\nThis content is restricted. Please subscribe to access.",
+    "passed": true
+  },
+  "url-403-custom": {
+    "notices": [
+      {
+        "html": "\n            <p><strong>DM Custom</strong> <em>members</em></p>\n<ul>\n<li>Private lessons</li>\n</ul>\n<p><a href=\"http://localhost:10003/my-account/?dm=1\">Sign in</a></p>\n        ",
+        "links": [
+          "http://localhost:10003/my-account/?dm=1"
+        ],
+        "strong": 1,
+        "text": "DM Custom members\n\nPrivate lessons\n\nSign in"
+      }
+    ],
+    "status": 403,
+    "text": "Access Restricted\n\nDM Custom members\n\nPrivate lessons\n\nSign in\n\nView Plans & Pricing\nLog In\n\u2190 Return to Home",
+    "passed": true
+  },
+  "url-message-custom": {
+    "notices": [
+      {
+        "html": "\n                <p><strong>DM Custom</strong> <em>members</em></p>\n<ul>\n<li>Private lessons</li>\n</ul>\n<p><a href=\"http://localhost:10003/my-account/?dm=1\">Sign in</a></p>\n\n            ",
+        "links": [
+          "http://localhost:10003/my-account/?dm=1"
+        ],
+        "strong": 1,
+        "text": "DM Custom members\n\nPrivate lessons\n\nSign in"
+      }
+    ],
+    "status": 200,
+    "text": "QA Default Message url-message-custom\n\nDM Custom members\n\nPrivate lessons\n\nSign in",
+    "passed": true
+  },
+  "comment-custom": {
+    "notices": [
+      {
+        "html": "<p><strong>DM Custom</strong> <em>members</em></p>\n<ul>\n<li>Private lessons</li>\n</ul>\n<p><a href=\"http://localhost:10003/my-account/?dm=1\">Sign in</a></p>\n",
+        "links": [
+          "http://localhost:10003/my-account/?dm=1"
+        ],
+        "strong": 1,
+        "text": "DM Custom members\n\nPrivate lessons\n\nSign in"
+      }
+    ],
+    "status": 200,
+    "text": "QA Default Message comment-custom\n\nDM_PROTECTED\n\nDM Custom members\n\nPrivate lessons\n\nSign in",
+    "passed": true
+  },
+  "cpt-custom": {
+    "notices": [
+      {
+        "html": "\n                <div class=\"arraysubs-restricted-content__message\">\n                    <p><strong>DM Custom</strong> <em>members</em></p>\n<ul>\n<li>Private lessons</li>\n</ul>\n<p><a href=\"http://localhost:10003/my-account/?dm=1\">Sign in</a></p>\n\n                </div>\n            ",
+        "links": [
+          "http://localhost:10003/my-account/?dm=1"
+        ],
+        "strong": 1,
+        "text": "DM Custom members\n\nPrivate lessons\n\nSign in"
+      }
+    ],
+    "status": 200,
+    "text": "QA Default Message cpt-custom\n\nDM Custom members\n\nPrivate lessons\n\nSign in",
+    "passed": true
+  },
+  "post-custom": {
+    "notices": [
+      {
+        "html": "\n                <div class=\"arraysubs-restricted-content__message\">\n                    <p><strong>DM Custom</strong> <em>members</em></p>\n<ul>\n<li>Private lessons</li>\n</ul>\n<p><a href=\"http://localhost:10003/my-account/?dm=1\">Sign in</a></p>\n\n                </div>\n            ",
+        "links": [
+          "http://localhost:10003/my-account/?dm=1"
+        ],
+        "strong": 1,
+        "text": "DM Custom members\n\nPrivate lessons\n\nSign in"
+      }
+    ],
+    "status": 200,
+    "text": "QA Default Message post-custom\n\nDM Custom members\n\nPrivate lessons\n\nSign in",
+    "passed": true
+  },
+  "url-403-default": {
+    "notices": [
+      {
+        "html": "\n            <p>This content is restricted. Please subscribe to access.</p>\n        ",
+        "links": [],
+        "strong": 0,
+        "text": "This content is restricted. Please subscribe to access."
+      }
+    ],
+    "status": 403,
+    "text": "Access Restricted\n\nThis content is restricted. Please subscribe to access.\n\nView Plans & Pricing\nLog In\n\u2190 Return to Home",
+    "passed": true
+  },
+  "url-message-default": {
+    "notices": [
+      {
+        "html": "\n                <p>This content is restricted. Please subscribe to access.</p>\n\n            ",
+        "links": [],
+        "strong": 0,
+        "text": "This content is restricted. Please subscribe to access."
+      }
+    ],
+    "status": 200,
+    "text": "QA Default Message url-message-default\n\nThis content is restricted. Please subscribe to access.",
+    "passed": true
+  },
+  "comment-default": {
+    "notices": [
+      {
+        "html": "<p>This content is restricted. Please subscribe to access.</p>\n",
+        "links": [],
+        "strong": 0,
+        "text": "This content is restricted. Please subscribe to access."
+      }
+    ],
+    "status": 200,
+    "text": "QA Default Message comment-default\n\nDM_PROTECTED\n\nThis content is restricted. Please subscribe to access.",
+    "passed": true
+  },
+  "cpt-default": {
+    "notices": [
+      {
+        "html": "\n                <div class=\"arraysubs-restricted-content__message\">\n                    <p>This content is restricted. Please subscribe to access.</p>\n\n                </div>\n            ",
+        "links": [],
+        "strong": 0,
+        "text": "This content is restricted. Please subscribe to access."
+      }
+    ],
+    "status": 200,
+    "text": "QA Default Message cpt-default\n\nThis content is restricted. Please subscribe to access.",
+    "passed": true
+  },
+  "post-default": {
+    "notices": [
+      {
+        "html": "\n                <div class=\"arraysubs-restricted-content__message\">\n                    <p>This content is restricted. Please subscribe to access.</p>\n\n                </div>\n            ",
+        "links": [],
+        "strong": 0,
+        "text": "This content is restricted. Please subscribe to access."
+      }
+    ],
+    "status": 200,
+    "text": "QA Default Message post-default\n\nThis content is restricted. Please subscribe to access.",
+    "passed": true
+  },
+  "elementor": {
+    "notices": [
+      {
+        "html": "<p>This content is restricted. Please subscribe to access.</p>\n",
+        "links": [],
+        "strong": 0,
+        "text": "This content is restricted. Please subscribe to access."
+      },
+      {
+        "html": "<p><strong>DM Custom</strong> <em>members</em></p>\n<ul>\n<li>Private lessons</li>\n</ul>\n<p><a href=\"http://localhost:10003/my-account/?dm=1\">Sign in</a></p>\n",
+        "links": [
+          "http://localhost:10003/my-account/?dm=1"
+        ],
+        "strong": 1,
+        "text": "DM Custom members\n\nPrivate lessons\n\nSign in"
+      }
+    ],
+    "status": 200,
+    "text": "QA Default Message elementor\n\nThis content is restricted. Please subscribe to access.\n\nDM Custom members\n\nPrivate lessons\n\nSign in",
+    "passed": true
+  },
+  "shortcode": {
+    "notices": [
+      {
+        "html": "<p>This content is restricted. Please subscribe to access.</p>\n",
+        "links": [],
+        "strong": 0,
+        "text": "This content is restricted. Please subscribe to access."
+      },
+      {
+        "html": "<p><strong>DM Custom shortcode</strong></p>\n",
+        "links": [],
+        "strong": 1,
+        "text": "DM Custom shortcode"
+      }
+    ],
+    "status": 200,
+    "text": "QA Default Message shortcode\n\nThis content is restricted. Please subscribe to access.\n\nDM Custom shortcode",
+    "passed": true
+  },
+  "gutenberg": {
+    "notices": [
+      {
+        "html": "<p>This content is restricted. Please subscribe to access.</p>\n",
+        "links": [],
+        "strong": 0,
+        "text": "This content is restricted. Please subscribe to access."
+      },
+      {
+        "html": "<p><strong>DM Custom</strong> <em>members</em></p>\n<ul>\n<li>Private lessons</li>\n</ul>\n<p><a href=\"http://localhost:10003/my-account/?dm=1\">Sign in</a></p>\n",
+        "links": [
+          "http://localhost:10003/my-account/?dm=1"
+        ],
+        "strong": 1,
+        "text": "DM Custom members\n\nPrivate lessons\n\nSign in"
+      },
+      {
+        "html": "<p>This content is restricted. Please subscribe to access.</p>\n",
+        "links": [],
+        "strong": 0,
+        "text": "This content is restricted. Please subscribe to access."
+      },
+      {
+        "html": "<p><strong>DM Custom</strong> <em>members</em></p>\n<ul>\n<li>Private lessons</li>\n</ul>\n<p><a href=\"http://localhost:10003/my-account/?dm=1\">Sign in</a></p>\n",
+        "links": [
+          "http://localhost:10003/my-account/?dm=1"
+        ],
+        "strong": 1,
+        "text": "DM Custom members\n\nPrivate lessons\n\nSign in"
+      }
+    ],
+    "status": 200,
+    "text": "QA Default Message gutenberg\n\nThis content is restricted. Please subscribe to access.\n\nDM Custom members\n\nPrivate lessons\n\nSign in\n\nThis content is restricted. Please subscribe to access.\n\nDM Custom members\n\nPrivate lessons\n\nSign in",
+    "passed": true
+  }
+}

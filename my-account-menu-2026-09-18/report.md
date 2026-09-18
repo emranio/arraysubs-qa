@@ -1,0 +1,29 @@
+# My Account menu browser regression report
+
+All 11 phases in [the fresh plan](plan.md) passed on `http://localhost:10003` on 2026-09-18. The Orders-independent Subscriptions insertion works with actual saved settings and actual Pro activation/deactivation. No additional functional defect was reproduced in these checks.
+
+Environment: core 2.0.4.1 with the current MyAccountHooks fix, Pro 1.2.3.1, WooCommerce 11.0.1. Customer 525 (`qa_download_settings_second_20260917`, customer role), active subscription 28240; related order N/A (`_parent_order_id = 0`). Separate authenticated admin, Login as Customer, and guest browser sessions were used. This was a local development regression run, not a full 2.0.0-to-2.0.4 upgrade simulation or a test of Paddle Compass's private configuration.
+
+All mutations used the real browser: editor visibility toggles, drag handles, Save Configuration, WordPress Plugins activation/deactivation links, WooCommerce Advanced Orders endpoint field, and WordPress Permalinks Save Changes. Saved configurations were reopened and customer pages loaded again. No MU fixtures, direct option writes, mock hooks, or simulated Pro activation were used in this cycle. WP-CLI was read-only, for baseline and restoration verification.
+
+| Test | Observed result | Browser proof |
+| --- | --- | --- |
+| Free with a saved disabled Subscriptions entry | Default Subscriptions menu, list and owned detail work | [Free detail](screenshots/14-free-detail.png) |
+| Activate Pro with that saved entry | Subscriptions disappears; pretty and query list URLs redirect to account dashboard | [Pro active](screenshots/03-pro-activated-saved-hidden.png) |
+| Enable Subscriptions, save and reopen | Menu, list and clicked View Details work | [List](screenshots/06-pro-visible-list.png), [detail](screenshots/07-pro-detail.png) |
+| Drag Subscriptions first, then Orders first | Saved editor order matches customer navigation; configuration survives Pro restart | [Subscriptions first](screenshots/10-customer-reordered.png), [Orders first](screenshots/17-orders-first-customer.png) |
+| Disable Orders in the editor | Orders disappears; Subscriptions list and detail still work | [Editor](screenshots/18-orders-disabled-editor.png), [portal](screenshots/19-orders-disabled-portal.png) |
+| Disable Subscriptions | Item disappears and both `/my-account/subscriptions/` and `/my-account/?subscriptions=1` redirect to dashboard; re-enabling restores access | [Hidden](screenshots/21-both-disabled-customer.png), [query portal restored](screenshots/28-reenabled-query-portal.png) |
+| Turn off master customization with both items saved disabled | Default menu and portal return. Turn it back on: saved hidden configuration reapplies | [Master off](screenshots/24-master-off-portal.png), [master on](screenshots/25-master-on-hidden-reapplied.png) |
+| Deactivate/reactivate actual Pro with visible/reordered and hidden configurations | Free defaults return on deactivation; Pro restores saved order and visibility on activation | [Visible configuration cycle](screenshots/15-pro-reactivated-layout.png), [hidden configuration: Pro off](screenshots/26-pro-off-hidden-config-portal.png), [Pro on](screenshots/27-pro-on-hidden-config-redirect.png) |
+| Clear WooCommerce's Orders endpoint, first Free then Pro | Subscriptions survives without Orders; Free places it before Log out. List and owned detail remain usable | [Free fallback](screenshots/30-free-blank-orders-portal.png), [Pro](screenshots/31-pro-blank-orders-portal.png) |
+| Save Permalinks with Orders absent and Pro active | Existing post-name structure retained; subscription list and detail still work | [Save](screenshots/32-permalinks-saved.png), [portal afterward](screenshots/33-after-flush-subscriptions.png) |
+| Guest pretty/query/detail routes | Login is required; no private subscription data shown. Hidden list route redirects to login at account root | [Hidden configuration](screenshots/22-guest-disabled-login.png), [visible configuration](screenshots/34-guest-visible-login.png) |
+
+The reported visibility bug and deliberate editor hiding are different mechanisms. The fixed core code always supplies Subscriptions, using Orders only to choose placement. Pro can subsequently remove it when explicitly disabled. Actual activation testing confirms that a stored disabled item can explain both symptoms only when the Pro editor's customization is active; the same saved setting has no effect with Free alone. Tonya's actual cause remains unconfirmed without her site's configuration.
+
+Restoration completed entirely through the UI. The exact menu array/order/visibility, customization master toggle, Orders endpoint, inactive Pro state and permalink structure match [baseline.json](baseline.json). Subscription 28240 remains active and the SHA-256 of its complete serialized metadata is unchanged. Final browser checks show the [Free list](screenshots/36-restored-free-portal.png) and [clicked detail page](screenshots/37-restored-free-detail.png). See [restoration.json](restoration.json). Impersonation was exited and only the three test browser sessions were closed.
+
+Browser error collections were empty in all three sessions at the final collection. Read-only WP-CLI emitted an unrelated Elementor implicit-nullable PHP deprecation. Two early drag attempts did not change the order; screenshots 11–12 are explicitly labeled as attempts and are not passing reorder evidence. Successful reorder evidence is 09–10 and 16–17. The Login as Customer bar overlapped a detail link at one scroll position; scrolling made the link clickable. No subscription actions or billing changes were performed.
+
+Issue 37 remains closed for the reproduced insertion defect; issue 36 remains open for the customer incident. The source diff passed `git diff --check`; MyAccountHooks.php has 525 lines. No lint/PHPCS, dependency installation, publication or customer-site change was performed.

@@ -1,0 +1,14 @@
+PASS: Empty custom HTML uses global: ""
+PASS: Empty custom HTML uses global: "   "
+PASS: Empty custom HTML uses global: "<p><br><\/p>"
+PASS: Empty custom HTML uses global: "<p>&nbsp;<\/p>"
+PASS: Empty custom HTML uses global: "\u00a0"
+PASS: Empty custom HTML uses global: "<!-- blank -->"
+PASS: Custom message wins
+PASS: Zero is meaningful content
+PASS: Removes scripts, events, iframes and unsafe links
+PASS: Preserves basic HTML
+PASS: Global settings sanitize HTML on save
+PASS: Login-only gate uses global for empty rich HTML
+PASS: Empty global HTML uses built-in
+Core-only: yes

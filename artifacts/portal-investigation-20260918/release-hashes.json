@@ -1,0 +1,22 @@
+{
+  "2.0.0": {
+    "src/Features/CustomerPortal/Provider.php": "2d182df83962a30028e144915bd0e09f6fe90861d794077a8f06913dbc0c4ac9",
+    "src/Features/CustomerPortal/REST/CustomerController.php": "50d38c5efbe1f089659f3fe418b1cf8f7a857b9a159c63f6650780ef048c60b8",
+    "src/Features/CustomerPortal/Services/Hooks.php": "1e3ffa7302f1d8383e6a6ffa206f086f0cc3f4cc663ccba63303e5350f882911",
+    "src/Features/CustomerPortal/Services/MyAccountHooks.php": "18febfe7f50cee66e86597a68a07d526f8aaece09c3e9bd1380c94518c852213",
+    "src/Features/CustomerPortal/views/my-account-subscriptions.php": "f809aaa798511b04a14e30de8920f58aaccde29be7b9687f47eadbc8101b5bb2",
+    "src/Features/CustomerPortal/views/view-subscription.php": "65f19d1e4c73e0b4623070216bb7c039036848b0b178a31d1296ebffaea03150",
+    "src/Supports/Abstracts/AbstractLoader.php": "c366e23b4bb211b9802c21758138edad525a22aad27db16b621a33b7fb654f6e",
+    "src/Features/LoginAsUser/Services/Impersonator.php": "a83992fc7f6001df5b80cc7b95c7987b1a481740faebf58bea3f9037bfa597a2"
+  },
+  "2.0.4": {
+    "src/Features/CustomerPortal/Provider.php": "2d182df83962a30028e144915bd0e09f6fe90861d794077a8f06913dbc0c4ac9",
+    "src/Features/CustomerPortal/REST/CustomerController.php": "50d38c5efbe1f089659f3fe418b1cf8f7a857b9a159c63f6650780ef048c60b8",
+    "src/Features/CustomerPortal/Services/Hooks.php": "1e3ffa7302f1d8383e6a6ffa206f086f0cc3f4cc663ccba63303e5350f882911",
+    "src/Features/CustomerPortal/Services/MyAccountHooks.php": "18febfe7f50cee66e86597a68a07d526f8aaece09c3e9bd1380c94518c852213",
+    "src/Features/CustomerPortal/views/my-account-subscriptions.php": "f809aaa798511b04a14e30de8920f58aaccde29be7b9687f47eadbc8101b5bb2",
+    "src/Features/CustomerPortal/views/view-subscription.php": "65f19d1e4c73e0b4623070216bb7c039036848b0b178a31d1296ebffaea03150",
+    "src/Supports/Abstracts/AbstractLoader.php": "c366e23b4bb211b9802c21758138edad525a22aad27db16b621a33b7fb654f6e",
+    "src/Features/LoginAsUser/Services/Impersonator.php": "a83992fc7f6001df5b80cc7b95c7987b1a481740faebf58bea3f9037bfa597a2"
+  }
+}

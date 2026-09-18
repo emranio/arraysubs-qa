@@ -139,3 +139,15 @@
 {"timestamp":"2026-09-15T19:25:28.35358+06:00","action":"edit","task_id":35,"detail":"Easy Setup standalone checkboxes appear below their labels"}
 {"timestamp":"2026-09-15T19:25:28.353649+06:00","action":"release","task_id":35,"detail":"nizamut-hunchy"}
 {"timestamp":"2026-09-15T19:25:28.364033+06:00","action":"move","task_id":35,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-09-18T02:23:36.566828+06:00","action":"create","task_id":36,"detail":"Paddle Compass reports missing Subscriptions menu and account endpoint redirect"}
+{"timestamp":"2026-09-18T02:23:36.590334+06:00","action":"create","task_id":37,"detail":"Subscriptions menu disappears when Orders is absent before the core menu filter"}
+{"timestamp":"2026-09-18T18:28:26.509062+06:00","action":"move","task_id":37,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-09-18T18:28:26.523663+06:00","action":"edit","task_id":37,"detail":"Subscriptions menu disappears when Orders is absent before the core menu filter"}
+{"timestamp":"2026-09-18T18:31:09.333201+06:00","action":"edit","task_id":37,"detail":"Subscriptions menu disappears when Orders is absent before the core menu filter"}
+{"timestamp":"2026-09-18T18:31:09.352176+06:00","action":"move","task_id":37,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-09-18T18:38:51.551486+06:00","action":"create","task_id":38,"detail":"Rich message editor rewrites absolute links relative to wp-admin"}
+{"timestamp":"2026-09-18T18:41:25.36633+06:00","action":"create","task_id":39,"detail":"CPT rich messages render inside invalid paragraph wrappers"}
+{"timestamp":"2026-09-18T18:44:02.233085+06:00","action":"edit","task_id":38,"detail":"Rich message editor rewrites absolute links relative to wp-admin"}
+{"timestamp":"2026-09-18T18:44:02.250947+06:00","action":"edit","task_id":39,"detail":"CPT rich messages render inside invalid paragraph wrappers"}
+{"timestamp":"2026-09-18T18:45:09.022375+06:00","action":"create","task_id":40,"detail":"Per-post rich message link dialog appears behind restriction modal"}
+{"timestamp":"2026-09-18T18:47:12.631257+06:00","action":"edit","task_id":40,"detail":"Per-post rich message link dialog appears behind restriction modal"}

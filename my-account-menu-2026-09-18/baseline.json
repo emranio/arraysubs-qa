@@ -1,0 +1,80 @@
+{
+    "pro_active": false,
+    "menu": [
+        {
+            "id": "edit-account",
+            "label": "Account details",
+            "type": "default",
+            "enabled": true,
+            "position": 0
+        },
+        {
+            "id": "dashboard",
+            "label": "Dashboard",
+            "type": "default",
+            "enabled": true,
+            "position": 1
+        },
+        {
+            "id": "subscriptions",
+            "label": "Subscriptions",
+            "type": "default",
+            "enabled": false,
+            "position": 2
+        },
+        {
+            "id": "orders",
+            "label": "Orders",
+            "type": "default",
+            "enabled": true,
+            "position": 3
+        },
+        {
+            "id": "store-credit",
+            "label": "Store Credit",
+            "type": "default",
+            "enabled": true,
+            "position": 4
+        },
+        {
+            "id": "features",
+            "label": "Usages",
+            "type": "default",
+            "enabled": true,
+            "position": 5
+        },
+        {
+            "id": "edit-address",
+            "label": "Addresses",
+            "type": "default",
+            "enabled": true,
+            "position": 6
+        },
+        {
+            "id": "customer-logout",
+            "label": "Log out",
+            "type": "default",
+            "enabled": true,
+            "position": 7
+        },
+        {
+            "id": "downloads",
+            "label": "Downloads",
+            "type": "default",
+            "enabled": true,
+            "position": 8
+        },
+        {
+            "id": "payment-methods",
+            "label": "Payment methods",
+            "type": "default",
+            "enabled": true,
+            "position": 9
+        }
+    ],
+    "menu_enabled": true,
+    "orders_endpoint": "orders",
+    "permalink_structure": "\/%postname%\/",
+    "subscription_status": "arraysubs-active",
+    "subscription_meta_hash": "935cce2c2370aafb7feb0e793850a6a47c975c2f94ca90a6ffe6f10eb66c9e7c"
+}

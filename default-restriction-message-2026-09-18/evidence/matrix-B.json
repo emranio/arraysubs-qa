@@ -1,0 +1,230 @@
+{
+  "overlap": {
+    "notices": [
+      {
+        "html": "\n                <div class=\"arraysubs-restricted-content__message\">\n                    <p>DM Global B \u2014 Updated default.</p>\n\n                </div>\n            ",
+        "links": [],
+        "strong": 0,
+        "text": "DM Global B \u2014 Updated default."
+      }
+    ],
+    "status": 200,
+    "text": "QA Default Message overlap\n\nDM Global B \u2014 Updated default.",
+    "passed": true
+  },
+  "url-403-custom": {
+    "notices": [
+      {
+        "html": "\n            <p><strong>DM Custom</strong> <em>members</em></p>\n<ul>\n<li>Private lessons</li>\n</ul>\n<p><a href=\"http://localhost:10003/my-account/?dm=1\">Sign in</a></p>\n        ",
+        "links": [
+          "http://localhost:10003/my-account/?dm=1"
+        ],
+        "strong": 1,
+        "text": "DM Custom members\n\nPrivate lessons\n\nSign in"
+      }
+    ],
+    "status": 403,
+    "text": "Access Restricted\n\nDM Custom members\n\nPrivate lessons\n\nSign in\n\nView Plans & Pricing\nLog In\n\u2190 Return to Home",
+    "passed": true
+  },
+  "url-message-custom": {
+    "notices": [
+      {
+        "html": "\n                <p><strong>DM Custom</strong> <em>members</em></p>\n<ul>\n<li>Private lessons</li>\n</ul>\n<p><a href=\"http://localhost:10003/my-account/?dm=1\">Sign in</a></p>\n\n            ",
+        "links": [
+          "http://localhost:10003/my-account/?dm=1"
+        ],
+        "strong": 1,
+        "text": "DM Custom members\n\nPrivate lessons\n\nSign in"
+      }
+    ],
+    "status": 200,
+    "text": "QA Default Message url-message-custom\n\nDM Custom members\n\nPrivate lessons\n\nSign in",
+    "passed": true
+  },
+  "comment-custom": {
+    "notices": [
+      {
+        "html": "<p><strong>DM Custom</strong> <em>members</em></p>\n<ul>\n<li>Private lessons</li>\n</ul>\n<p><a href=\"http://localhost:10003/my-account/?dm=1\">Sign in</a></p>\n",
+        "links": [
+          "http://localhost:10003/my-account/?dm=1"
+        ],
+        "strong": 1,
+        "text": "DM Custom members\n\nPrivate lessons\n\nSign in"
+      }
+    ],
+    "status": 200,
+    "text": "QA Default Message comment-custom\n\nDM_PROTECTED\n\nDM Custom members\n\nPrivate lessons\n\nSign in",
+    "passed": true
+  },
+  "cpt-custom": {
+    "notices": [
+      {
+        "html": "\n                <div class=\"arraysubs-restricted-content__message\">\n                    <p><strong>DM Custom</strong> <em>members</em></p>\n<ul>\n<li>Private lessons</li>\n</ul>\n<p><a href=\"http://localhost:10003/my-account/?dm=1\">Sign in</a></p>\n\n                </div>\n            ",
+        "links": [
+          "http://localhost:10003/my-account/?dm=1"
+        ],
+        "strong": 1,
+        "text": "DM Custom members\n\nPrivate lessons\n\nSign in"
+      }
+    ],
+    "status": 200,
+    "text": "QA Default Message cpt-custom\n\nDM Custom members\n\nPrivate lessons\n\nSign in",
+    "passed": true
+  },
+  "post-custom": {
+    "notices": [
+      {
+        "html": "\n                <div class=\"arraysubs-restricted-content__message\">\n                    <p><strong>DM Custom</strong> <em>members</em></p>\n<ul>\n<li>Private lessons</li>\n</ul>\n<p><a href=\"http://localhost:10003/my-account/?dm=1\">Sign in</a></p>\n\n                </div>\n            ",
+        "links": [
+          "http://localhost:10003/my-account/?dm=1"
+        ],
+        "strong": 1,
+        "text": "DM Custom members\n\nPrivate lessons\n\nSign in"
+      }
+    ],
+    "status": 200,
+    "text": "QA Default Message post-custom\n\nDM Custom members\n\nPrivate lessons\n\nSign in",
+    "passed": true
+  },
+  "url-403-default": {
+    "notices": [
+      {
+        "html": "\n            <p>DM Global B \u2014 Updated default.</p>\n        ",
+        "links": [],
+        "strong": 0,
+        "text": "DM Global B \u2014 Updated default."
+      }
+    ],
+    "status": 403,
+    "text": "Access Restricted\n\nDM Global B \u2014 Updated default.\n\nView Plans & Pricing\nLog In\n\u2190 Return to Home",
+    "passed": true
+  },
+  "url-message-default": {
+    "notices": [
+      {
+        "html": "\n                <p>DM Global B \u2014 Updated default.</p>\n\n            ",
+        "links": [],
+        "strong": 0,
+        "text": "DM Global B \u2014 Updated default."
+      }
+    ],
+    "status": 200,
+    "text": "QA Default Message url-message-default\n\nDM Global B \u2014 Updated default.",
+    "passed": true
+  },
+  "comment-default": {
+    "notices": [
+      {
+        "html": "<p>DM Global B \u2014 Updated default.</p>\n",
+        "links": [],
+        "strong": 0,
+        "text": "DM Global B \u2014 Updated default."
+      }
+    ],
+    "status": 200,
+    "text": "QA Default Message comment-default\n\nDM_PROTECTED\n\nDM Global B \u2014 Updated default.",
+    "passed": true
+  },
+  "cpt-default": {
+    "notices": [
+      {
+        "html": "\n                <div class=\"arraysubs-restricted-content__message\">\n                    <p>DM Global B \u2014 Updated default.</p>\n\n                </div>\n            ",
+        "links": [],
+        "strong": 0,
+        "text": "DM Global B \u2014 Updated default."
+      }
+    ],
+    "status": 200,
+    "text": "QA Default Message cpt-default\n\nDM Global B \u2014 Updated default.",
+    "passed": true
+  },
+  "post-default": {
+    "notices": [
+      {
+        "html": "\n                <div class=\"arraysubs-restricted-content__message\">\n                    <p>DM Global B \u2014 Updated default.</p>\n\n                </div>\n            ",
+        "links": [],
+        "strong": 0,
+        "text": "DM Global B \u2014 Updated default."
+      }
+    ],
+    "status": 200,
+    "text": "QA Default Message post-default\n\nDM Global B \u2014 Updated default.",
+    "passed": true
+  },
+  "elementor": {
+    "notices": [
+      {
+        "html": "<p>DM Global B \u2014 Updated default.</p>\n",
+        "links": [],
+        "strong": 0,
+        "text": "DM Global B \u2014 Updated default."
+      },
+      {
+        "html": "<p><strong>DM Custom</strong> <em>members</em></p>\n<ul>\n<li>Private lessons</li>\n</ul>\n<p><a href=\"http://localhost:10003/my-account/?dm=1\">Sign in</a></p>\n",
+        "links": [
+          "http://localhost:10003/my-account/?dm=1"
+        ],
+        "strong": 1,
+        "text": "DM Custom members\n\nPrivate lessons\n\nSign in"
+      }
+    ],
+    "status": 200,
+    "text": "QA Default Message elementor\n\nDM Global B \u2014 Updated default.\n\nDM Custom members\n\nPrivate lessons\n\nSign in",
+    "passed": true
+  },
+  "shortcode": {
+    "notices": [
+      {
+        "html": "<p>DM Global B \u2014 Updated default.</p>\n",
+        "links": [],
+        "strong": 0,
+        "text": "DM Global B \u2014 Updated default."
+      },
+      {
+        "html": "<p><strong>DM Custom shortcode</strong></p>\n",
+        "links": [],
+        "strong": 1,
+        "text": "DM Custom shortcode"
+      }
+    ],
+    "status": 200,
+    "text": "QA Default Message shortcode\n\nDM Global B \u2014 Updated default.\n\nDM Custom shortcode",
+    "passed": true
+  },
+  "gutenberg": {
+    "notices": [
+      {
+        "html": "<p>DM Global B \u2014 Updated default.</p>\n",
+        "links": [],
+        "strong": 0,
+        "text": "DM Global B \u2014 Updated default."
+      },
+      {
+        "html": "<p><strong>DM Custom</strong> <em>members</em></p>\n<ul>\n<li>Private lessons</li>\n</ul>\n<p><a href=\"http://localhost:10003/my-account/?dm=1\">Sign in</a></p>\n",
+        "links": [
+          "http://localhost:10003/my-account/?dm=1"
+        ],
+        "strong": 1,
+        "text": "DM Custom members\n\nPrivate lessons\n\nSign in"
+      },
+      {
+        "html": "<p>DM Global B \u2014 Updated default.</p>\n",
+        "links": [],
+        "strong": 0,
+        "text": "DM Global B \u2014 Updated default."
+      },
+      {
+        "html": "<p><strong>DM Custom</strong> <em>members</em></p>\n<ul>\n<li>Private lessons</li>\n</ul>\n<p><a href=\"http://localhost:10003/my-account/?dm=1\">Sign in</a></p>\n",
+        "links": [
+          "http://localhost:10003/my-account/?dm=1"
+        ],
+        "strong": 1,
+        "text": "DM Custom members\n\nPrivate lessons\n\nSign in"
+      }
+    ],
+    "status": 200,
+    "text": "QA Default Message gutenberg\n\nDM Global B \u2014 Updated default.\n\nDM Custom members\n\nPrivate lessons\n\nSign in\n\nDM Global B \u2014 Updated default.\n\nDM Custom members\n\nPrivate lessons\n\nSign in",
+    "passed": true
+  }
+}

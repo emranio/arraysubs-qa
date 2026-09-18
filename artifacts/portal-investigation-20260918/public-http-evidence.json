@@ -1,0 +1,14 @@
+{
+  "subscriptions": [
+    "HTTP/2 302 ",
+    "location: https://paddlecompass.com/my-account/",
+    "cache-control: no-cache, must-revalidate, max-age=0, private",
+    "x-redirect-by: WordPress",
+    "x-proxy-cache: BYPASS"
+  ],
+  "orders": [
+    "HTTP/2 200 ",
+    "cache-control: no-cache, must-revalidate, max-age=0, private",
+    "x-proxy-cache: BYPASS"
+  ]
+}

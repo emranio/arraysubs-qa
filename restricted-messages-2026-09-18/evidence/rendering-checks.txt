@@ -1,0 +1,15 @@
+Deprecated: Elementor\Modules\GlobalClasses\Atomic_Global_Styles::get_cache_root_key(): Implicitly marking parameter $key as nullable is deprecated, the explicit nullable type must be used instead in /Users/emran/Public/Projects/local-wp/woocommerce/app/public/wp-content/plugins/elementor/modules/global-classes/atomic-global-styles.php on line 410
+Notice: Function _wp_connectors_resolve_ai_provider_logo_url was called <strong>incorrectly</strong>. Provider logo path must be located within the plugins or must-use plugins directory. Please see <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 7.0.0.) in /Users/emran/Public/Projects/local-wp/woocommerce/app/public/wp-includes/functions.php on line 6260
+PASS: Gutenberg preserves basic HTML
+PASS: Denied HTML is not escaped
+PASS: Unsafe tags, event handlers and URL schemes removed
+PASS: Protected content hidden
+PASS: No nested paragraph wrapper
+PASS: Empty login message fallback
+PASS: Plain message remains a paragraph
+PASS: CPT save retains basic HTML
+PASS: CPT save strips unsafe HTML
+PASS: Per-post save retains safe HTML only
+PASS: CPT/per-post formatter has no nested paragraph wrapper
+PASS: Authorized visitor sees content
+Core-only: no

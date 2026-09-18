@@ -1,0 +1,26 @@
+{
+  "verified_at_utc": "2026-09-18T12:49:09Z",
+  "site": "http://localhost:10003",
+  "method": "Settings restored through real browser UI; read-only WP-CLI exact comparisons against baseline.json",
+  "matches_baseline": {
+    "pro_active": true,
+    "menu": true,
+    "menu_enabled": true,
+    "orders_endpoint": true,
+    "permalink_structure": true,
+    "subscription_status": true,
+    "subscription_meta_hash": true
+  },
+  "pro_active": false,
+  "orders_endpoint": "orders",
+  "menu_enabled": true,
+  "permalink_structure": "/%postname%/",
+  "subscription_id": 28240,
+  "subscription_status": "arraysubs-active",
+  "subscription_meta_hash_method": "hash('sha256', serialize(get_post_meta(28240)))",
+  "subscription_meta_hash": "935cce2c2370aafb7feb0e793850a6a47c975c2f94ca90a6ffe6f10eb66c9e7c",
+  "browser_errors_at_final_collection": { "admin": [], "customer": [], "guest": [] },
+  "impersonation_exited": true,
+  "test_browser_sessions_closed": true,
+  "test_mu_plugins_installed": false
+}
