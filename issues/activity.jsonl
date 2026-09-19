@@ -151,3 +151,8 @@
 {"timestamp":"2026-09-18T18:44:02.250947+06:00","action":"edit","task_id":39,"detail":"CPT rich messages render inside invalid paragraph wrappers"}
 {"timestamp":"2026-09-18T18:45:09.022375+06:00","action":"create","task_id":40,"detail":"Per-post rich message link dialog appears behind restriction modal"}
 {"timestamp":"2026-09-18T18:47:12.631257+06:00","action":"edit","task_id":40,"detail":"Per-post rich message link dialog appears behind restriction modal"}
+{"timestamp":"2026-09-19T18:14:01.249396+06:00","action":"create","task_id":42,"detail":"Removed Support menu persists in old saved My Account editor data"}
+{"timestamp":"2026-09-19T18:14:56.731287+06:00","action":"edit","task_id":42,"detail":"Removed Support menu persists in old saved My Account editor data"}
+{"timestamp":"2026-09-19T18:28:10.58995+06:00","action":"create","task_id":43,"detail":"WooPayments redirects ArraySubs subscription account endpoints to dashboard"}
+{"timestamp":"2026-09-19T18:38:57.066532+06:00","action":"edit","task_id":43,"detail":"WooPayments redirects ArraySubs subscription account endpoints to dashboard"}
+{"timestamp":"2026-09-19T18:38:57.141048+06:00","action":"edit","task_id":42,"detail":"Removed Support menu persists in old saved My Account editor data"}

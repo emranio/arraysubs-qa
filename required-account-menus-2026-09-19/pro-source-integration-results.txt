@@ -1,0 +1,47 @@
+PASS save forces required visibility while preserving custom labels
+PASS read normalization leaves stored fixture untouched
+PASS saved order keeps Subscriptions first despite old hidden flags
+PASS saved required names appear in navigation despite old hidden flags
+PASS early and maximum priority removals repaired in saved order
+PASS removed required items recover their saved labels
+PASS Subscriptions page heading uses its saved custom label
+PASS Orders page heading uses its saved custom label
+PASS defaults restore both required IDs once using default order
+PASS nested defaults preserve bypass and mandatory IDs
+PASS bypass restored after nested discovery
+PASS REST metadata protects required rows while preserving their labels
+PASS custom endpoint collision rejected: orders
+PASS custom endpoint collision rejected: subscriptions
+PASS customization off still restores required menus
+PASS customization off retains default required labels and headings
+PASS empty saved configuration cannot omit required rows
+PASS without Dashboard Subscriptions precedes even leading third-party items
+PASS existing default Subscriptions moves immediately after Dashboard
+PASS empty menu starts with Subscriptions then Orders
+PASS late Dashboard removal restores Subscriptions to first
+PASS empty custom labels cannot blank required navigation
+PASS empty labels retain the default page headings
+PASS core preserves existing renamed required labels without Pro customization
+PASS legacy colliding custom endpoint does not register
+PASS custom prefix canonicalization: support
+PASS custom prefix canonicalization: as-support
+PASS custom prefix canonicalization: (empty)
+PASS canonical portal alias rejects: subscriptions
+PASS canonical portal alias rejects: as-subscriptions
+PASS canonical portal alias rejects: view-subscription
+PASS canonical portal alias rejects: as-view-subscription
+PASS required custom ID rejected
+PASS legacy custom required ID removed from read without changing raw data
+PASS bare as- rejected
+PASS prefix-canonical duplicate custom slugs rejected
+PASS prefixed custom query vars registered without recursion
+PASS legacy built-in alias collisions excluded from query map
+PASS built-in logical keys retain public aliases
+PASS runtime custom rendering excludes all registered built-in aliases
+PASS REST rejects registered built-in alias: store-credit
+PASS REST rejects registered built-in alias: as-store-credit
+PASS REST rejects registered built-in alias: features
+PASS REST rejects registered built-in alias: as-features
+PASS REST rejects registered built-in alias: view-subscription
+PASS REST rejects registered built-in alias: as-view-subscription
+PASS custom alias collisions cannot replace required or Pro menu labels

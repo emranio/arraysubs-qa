@@ -1,0 +1,143 @@
+{
+  "core_version": "2.0.5",
+  "customization_enabled": true,
+  "default_items": [
+    {
+      "enabled": true,
+      "id": "dashboard",
+      "label": "Dashboard",
+      "type": "default"
+    },
+    {
+      "enabled": true,
+      "id": "orders",
+      "label": "Orders",
+      "type": "default"
+    },
+    {
+      "enabled": true,
+      "id": "subscriptions",
+      "label": "Subscriptions",
+      "type": "default"
+    },
+    {
+      "enabled": true,
+      "id": "store-credit",
+      "label": "Store Credit",
+      "type": "default"
+    },
+    {
+      "enabled": true,
+      "id": "features",
+      "label": "My Features",
+      "type": "default"
+    },
+    {
+      "enabled": true,
+      "id": "downloads",
+      "label": "Downloads",
+      "type": "default"
+    },
+    {
+      "enabled": true,
+      "id": "edit-address",
+      "label": "Addresses",
+      "type": "default"
+    },
+    {
+      "enabled": true,
+      "id": "payment-methods",
+      "label": "Payment methods",
+      "type": "default"
+    },
+    {
+      "enabled": true,
+      "id": "edit-account",
+      "label": "Account details",
+      "type": "default"
+    },
+    {
+      "enabled": true,
+      "id": "customer-logout",
+      "label": "Log out",
+      "type": "default"
+    }
+  ],
+  "default_subscriptions": [
+    {
+      "enabled": true,
+      "id": "subscriptions",
+      "label": "Subscriptions",
+      "type": "default"
+    }
+  ],
+  "saved_items": [
+    {
+      "enabled": true,
+      "id": "edit-account",
+      "label": "Account details",
+      "type": "default"
+    },
+    {
+      "enabled": true,
+      "id": "dashboard",
+      "label": "Dashboard",
+      "type": "default"
+    },
+    {
+      "enabled": true,
+      "id": "orders",
+      "label": "Orders",
+      "type": "default"
+    },
+    {
+      "enabled": true,
+      "id": "store-credit",
+      "label": "Store Credit",
+      "type": "default"
+    },
+    {
+      "enabled": true,
+      "id": "features",
+      "label": "Usages",
+      "type": "default"
+    },
+    {
+      "enabled": true,
+      "id": "edit-address",
+      "label": "Addresses",
+      "type": "default"
+    },
+    {
+      "enabled": true,
+      "id": "customer-logout",
+      "label": "Log out",
+      "type": "default"
+    },
+    {
+      "enabled": true,
+      "id": "downloads",
+      "label": "Downloads",
+      "type": "default"
+    },
+    {
+      "enabled": true,
+      "id": "payment-methods",
+      "label": "Payment methods",
+      "type": "default"
+    }
+  ],
+  "saved_subscriptions": [],
+  "visible_builder_labels": [
+    "Account details",
+    "Dashboard",
+    "Orders",
+    "Store Credit",
+    "Usages",
+    "Addresses",
+    "Log out",
+    "Downloads",
+    "Payment methods",
+    "Subscriptions"
+  ]
+}
