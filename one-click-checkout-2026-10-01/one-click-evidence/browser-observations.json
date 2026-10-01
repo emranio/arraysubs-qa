@@ -1,0 +1,870 @@
+[
+  {
+    "name": "Demo · Ceramic Member Mug",
+    "entry": "shop",
+    "label": "Add to cart",
+    "observed": {
+      "url": "http://localhost:10013/checkout-2/",
+      "text": "1 item: Ceramic Member Mug, 16.00$. View cart notice shown."
+    }
+  },
+  {
+    "name": "Demo · Annual Library Pass",
+    "entry": "shop",
+    "label": "Subscribe Now",
+    "observed": {
+      "url": "http://localhost:10013/checkout-2/",
+      "text": "\n\n1\n1 item\nDemo · Annual Library Pass\n199.00$\n\nAnnual Library Pass — demo catalog.\n\nRenewals:\n199.00$ every 1 year\nToday's charge:\n199.00$\nNext charge:\nOctober 1, 2027 (UTC)\nDuration:\nContinues until cancelled\nTotal price for 1 Demo · Annual Library Pass item: 199.00$\n199.00$\nAdd coupons\nSubtotal\n199.00$\nTotal\n199.00$",
+      "notices": [
+        "“Demo · Annual Library Pass” has been added to your cart.\nView cart"
+      ]
+    }
+  },
+  {
+    "name": "Demo · Coffee and Tea Membership Bundle",
+    "entry": "shop",
+    "label": "Subscribe Now",
+    "observed": {
+      "url": "http://localhost:10013/checkout-2/",
+      "text": "\n\n1\n1 item\nDemo · Coffee and Tea Membership Bundle\nPrevious price:\n56.00$\nDiscounted price:\n50.40$\n\nCoffee and Tea Membership Bundle — demo catalog.\n\nRenewals:\n50.40$ every 1 month\nToday's charge:\n50.40$\nNext charge:\nNovember 1, 2026 (UTC)\nDuration:\nContinues until cancelled\nBundle contents:\nDemo · Single-origin Coffee × 1 — 22.00$\nDemo · Herbal Tea Collection × 1 — 18.00$\nDemo · Ceramic Member Mug × 1 — 16.00$\nBundle discount:\n10% off (−5.60$)\nTotal price for 1 Demo · Coffee and Tea Membership Bundle item: 50.40$\n50.40$\nSave 5.60$\nAdd coupons\nSubtotal\n50.40$\nTotal\n50.40$",
+      "notices": [
+        "“Demo · Coffee and Tea Membership Bundle” has been added to your cart.\nView cart"
+      ]
+    }
+  },
+  {
+    "name": "Demo · Ceramic Member Mug",
+    "entry": "product",
+    "label": "Add to cart",
+    "observed": {
+      "url": "http://localhost:10013/checkout-2/",
+      "summary": "\n\n1\n1 item\nDemo · Ceramic Member Mug\n16.00$\n\nCeramic Member Mug — demo catalog.\n\nTotal price for 1 Demo · Ceramic Member Mug item: 16.00$\n16.00$\nAdd coupons\nSubtotal\n16.00$\nTotal\n16.00$"
+    }
+  },
+  {
+    "name": "Demo · Annual Library Pass",
+    "entry": "product",
+    "label": "Subscribe Now",
+    "observed": {
+      "url": "http://localhost:10013/checkout-2/",
+      "summary": "\n\n1\n1 item\nDemo · Annual Library Pass\n199.00$\n\nAnnual Library Pass — demo catalog.\n\nRenewals:\n199.00$ every 1 year\nToday's charge:\n199.00$\nNext charge:\nOctober 1, 2027 (UTC)\nDuration:\nContinues until cancelled\nTotal price for 1 Demo · Annual Library Pass item: 199.00$\n199.00$\nAdd coupons\nSubtotal\n199.00$\nTotal\n199.00$"
+    }
+  },
+  {
+    "name": "Demo · Coffee and Tea Membership Bundle",
+    "entry": "product",
+    "label": "Subscribe Now",
+    "observed": {
+      "url": "http://localhost:10013/checkout-2/",
+      "summary": "\n\n1\n1 item\nDemo · Coffee and Tea Membership Bundle\nPrevious price:\n56.00$\nDiscounted price:\n50.40$\n\nCoffee and Tea Membership Bundle — demo catalog.\n\nRenewals:\n50.40$ every 1 month\nToday's charge:\n50.40$\nNext charge:\nNovember 1, 2026 (UTC)\nDuration:\nContinues until cancelled\nBundle contents:\nDemo · Single-origin Coffee × 1 — 22.00$\nDemo · Herbal Tea Collection × 1 — 18.00$\nDemo · Ceramic Member Mug × 1 — 16.00$\nBundle discount:\n10% off (−5.60$)\nTotal price for 1 Demo · Coffee and Tea Membership Bundle item: 50.40$\n50.40$\nSave 5.60$\nAdd coupons\nSubtotal\n50.40$\nTotal\n50.40$"
+    }
+  },
+  {
+    "name": "Demo · Store Credit $25",
+    "entry": "shop",
+    "label": "Buy Credits",
+    "observed": {
+      "url": "http://localhost:10013/checkout-2/",
+      "summary": "\n\n1\n1 item\nDemo · Store Credit $25\n25.00$\n\nStore Credit $25 — demo catalog.\n\nTotal price for 1 Demo · Store Credit $25 item: 25.00$\n25.00$\nAdd coupons\nSubtotal\n25.00$\nTotal\n25.00$",
+      "errors": []
+    }
+  },
+  {
+    "name": "Demo · Store Credit $25",
+    "entry": "product",
+    "label": "Buy Credits",
+    "observed": {
+      "url": "http://localhost:10013/checkout-2/",
+      "summary": "\n\n1\n1 item\nDemo · Store Credit $25\n25.00$\n\nStore Credit $25 — demo catalog.\n\nTotal price for 1 Demo · Store Credit $25 item: 25.00$\n25.00$\nAdd coupons\nSubtotal\n25.00$\nTotal\n25.00$",
+      "errors": []
+    }
+  },
+  {
+    "name": "Demo · Member T-shirt",
+    "entry": "shop",
+    "label": "Select options",
+    "observed": {
+      "url": "http://localhost:10013/product/demo-%c2%b7-member-t-shirt/",
+      "result": "Product page opens; size selection required; no direct checkout."
+    }
+  },
+  {
+    "name": "Demo · Member T-shirt",
+    "entry": "product",
+    "label": "Add to cart",
+    "observed": {
+      "result": "Blocked: Size dropdown only contains Choose an option; purchase button disabled."
+    }
+  },
+  {
+    "name": "Demo · Membership Tier",
+    "entry": "shop",
+    "label": "Subscribe Now",
+    "observed": {
+      "url": "http://localhost:10013/product/demo-%c2%b7-membership-tier/",
+      "result": "Product page opens; no direct checkout."
+    }
+  },
+  {
+    "name": "Demo · Membership Tier",
+    "entry": "product",
+    "label": "Subscribe Now",
+    "observed": {
+      "result": "Blocked: Tier dropdown has no selectable variations."
+    }
+  },
+  {
+    "name": "Demo · Build Your Monthly Coffee Box",
+    "entry": "shop",
+    "label": "Create Subscription Box",
+    "observed": {
+      "result": "Product page opened. Inspect builder state."
+    }
+  },
+  {
+    "name": "Demo · Build Your Monthly Coffee Box",
+    "entry": "product / builder",
+    "label": "Create Subscription Box → Add to Cart",
+    "observed": {
+      "url": "http://localhost:10013/cart-2/",
+      "result": "FAIL: builder submission goes to Cart instead of Checkout; selected Coffee × 1 at $22/month. One-click cart replacement works."
+    }
+  },
+  {
+    "name": "Demo · Digital Planning Workbook",
+    "entry": "shop",
+    "before": {
+      "label": "Add to cart",
+      "inputs": []
+    },
+    "observed": {
+      "url": "http://localhost:10013/checkout-2/",
+      "summary": "\n\nAdd coupons\nSubtotal\nTotal",
+      "notices": [
+        "“Demo · Digital Planning Workbook” has been added to your cart.\nView cart"
+      ],
+      "buttons": [
+        "View cart",
+        "Place Order"
+      ]
+    }
+  },
+  {
+    "name": "Demo · Digital Planning Workbook",
+    "entry": "product",
+    "before": {
+      "label": "Add to cart",
+      "inputs": [
+        {
+          "name": "quantity",
+          "value": "1",
+          "type": "number"
+        }
+      ]
+    },
+    "observed": {
+      "url": "http://localhost:10013/checkout-2/",
+      "summary": "\n\nAdd coupons\nSubtotal\nTotal",
+      "notices": [
+        "“Demo · Digital Planning Workbook” has been added to your cart.\nView cart"
+      ],
+      "buttons": [
+        "View cart",
+        "Place Order"
+      ]
+    }
+  },
+  {
+    "name": "Demo · Library Pass with 14-day Trial",
+    "entry": "shop",
+    "before": {
+      "label": "Subscribe Now",
+      "inputs": []
+    },
+    "observed": {
+      "url": "http://localhost:10013/checkout-2/",
+      "summary": "\n\nAdd coupons\nSubtotal\nTotal",
+      "notices": [
+        "“Demo · Library Pass with 14-day Trial” has been added to your cart.\nView cart"
+      ],
+      "buttons": [
+        "View cart",
+        "Place Order"
+      ]
+    }
+  },
+  {
+    "name": "Demo · Library Pass with 14-day Trial",
+    "entry": "product",
+    "before": {
+      "label": "Subscribe Now",
+      "inputs": [
+        {
+          "name": "quantity",
+          "value": "1",
+          "type": "number"
+        }
+      ]
+    },
+    "observed": {
+      "url": "http://localhost:10013/product/demo-%c2%b7-library-pass-with-14-day-trial/",
+      "notices": [
+        "One Trial per Customer is enabled. Keep only one trial subscription in the cart and reduce its quantity to 1 before continuing."
+      ],
+      "buttons": [
+        "Subscribe Now"
+      ],
+      "text": "Home / Demo Member Plans / Demo · Library Pass with 14-day Trial\nOne Trial per Customer is enabled. Keep only one trial subscription in the cart and reduce its quantity to 1 before continuing.\nDemo · Library Pass with 14-day Trial\n29.00$ / month\n\n14 days free trial\n\nWhat's Included\nLibrary Access ✓\nMonthly Downloads 10\nMasterclasses ✗\nTeam Seats 1\nSupport Level Community\n\nLibrary Pass with 14-day Trial — demo catalog.\n\nDemo · Library Pass with 14-day Trial quantity\nSubscribe Now\nSKU: DEMO-260927-TRIAL\nCategory: Demo Member Plans\nDescription Reviews (0)\nDescription\n\nSample catalog item for the June–September 2026 demonstration store.\n\nRelated products\nDemo · Annual Library Pass\n199.00$ / year\nSubscribe Now\nDemo · Daily Learning Pass\n3.00$ / day\nSubscribe Now\nDemo · Flexible Learning Membership\n35.00$ / month\nSubscribe Now\nDemo · Fortnightly Tea Delivery\n25.00$ / 2 weeks\nSubscribe Now\nDemo · Lifetime Resource Library\n349.00$\nSubscribe Now"
+    }
+  },
+  {
+    "name": "Demo · Flexible Learning Membership",
+    "entry": "shop",
+    "before": {
+      "label": "Subscribe Now",
+      "inputs": []
+    },
+    "observed": {
+      "url": "http://localhost:10013/checkout-2/",
+      "summary": "\n\nAdd coupons\nSubtotal\nTotal",
+      "notices": [
+        "“Demo · Flexible Learning Membership” has been added to your cart.\nView cart"
+      ],
+      "buttons": [
+        "View cart",
+        "Place Order"
+      ]
+    }
+  },
+  {
+    "name": "Demo · Flexible Learning Membership",
+    "entry": "product",
+    "before": {
+      "label": "Subscribe Now",
+      "inputs": [
+        {
+          "name": "quantity",
+          "value": "1",
+          "type": "number"
+        }
+      ]
+    },
+    "observed": {
+      "url": "http://localhost:10013/checkout-2/",
+      "summary": "\n\nAdd coupons\nSubtotal\nTotal",
+      "notices": [
+        "“Demo · Flexible Learning Membership” has been added to your cart.\nView cart"
+      ],
+      "buttons": [
+        "View cart",
+        "Place Order"
+      ]
+    }
+  },
+  {
+    "name": "Demo · Digital Planning Workbook",
+    "entry": "shop",
+    "before": {
+      "label": "Add to cart",
+      "inputs": []
+    },
+    "observed": {
+      "url": "http://localhost:10013/checkout-2/",
+      "summary": "\n\n1\n1 item\nDemo · Digital Planning Workbook\n15.00$\n\nDigital Planning Workbook — demo catalog.\n\nTotal price for 1 Demo · Digital Planning Workbook item: 15.00$\n15.00$\nAdd coupons\nSubtotal\n15.00$\nTotal\n15.00$",
+      "notices": [
+        "“Demo · Digital Planning Workbook” has been added to your cart.\nView cart"
+      ],
+      "buttons": [
+        "View cart",
+        "Place Order"
+      ]
+    }
+  },
+  {
+    "name": "Demo · Digital Planning Workbook",
+    "entry": "product",
+    "before": {
+      "label": "Add to cart",
+      "inputs": [
+        {
+          "name": "quantity",
+          "value": "1",
+          "type": "number"
+        }
+      ]
+    },
+    "observed": {
+      "url": "http://localhost:10013/checkout-2/",
+      "summary": "\n\n1\n1 item\nDemo · Digital Planning Workbook\n15.00$\n\nDigital Planning Workbook — demo catalog.\n\nTotal price for 1 Demo · Digital Planning Workbook item: 15.00$\n15.00$\nAdd coupons\nSubtotal\n15.00$\nTotal\n15.00$",
+      "notices": [
+        "“Demo · Digital Planning Workbook” has been added to your cart.\nView cart"
+      ],
+      "buttons": [
+        "View cart",
+        "Place Order"
+      ]
+    }
+  },
+  {
+    "name": "Demo · Lifetime Resource Library",
+    "entry": "shop",
+    "before": {
+      "label": "Subscribe Now",
+      "inputs": []
+    },
+    "observed": {
+      "url": "http://localhost:10013/checkout-2/",
+      "summary": "\n\n1\n1 item\nDemo · Lifetime Resource Library\n349.00$\n\nLifetime Resource Library — demo catalog.\n\nSubscription:\nLifetime Deal — No recurring charges\nToday's charge:\n349.00$\nTotal price for 1 Demo · Lifetime Resource Library item: 349.00$\n349.00$\nAdd coupons\nSubtotal\n349.00$\nTotal\n349.00$",
+      "notices": [
+        "“Demo · Lifetime Resource Library” has been added to your cart.\nView cart"
+      ],
+      "buttons": [
+        "View cart",
+        "Place Order"
+      ]
+    }
+  },
+  {
+    "name": "Demo · Lifetime Resource Library",
+    "entry": "product",
+    "before": {
+      "label": "Subscribe Now",
+      "inputs": [
+        {
+          "name": "quantity",
+          "value": "1",
+          "type": "number"
+        }
+      ]
+    },
+    "observed": {
+      "url": "http://localhost:10013/checkout-2/",
+      "summary": "\n\n1\n1 item\nDemo · Lifetime Resource Library\n349.00$\n\nLifetime Resource Library — demo catalog.\n\nSubscription:\nLifetime Deal — No recurring charges\nToday's charge:\n349.00$\nTotal price for 1 Demo · Lifetime Resource Library item: 349.00$\n349.00$\nAdd coupons\nSubtotal\n349.00$\nTotal\n349.00$",
+      "notices": [
+        "“Demo · Lifetime Resource Library” has been added to your cart.\nView cart"
+      ],
+      "buttons": [
+        "View cart",
+        "Place Order"
+      ]
+    }
+  },
+  {
+    "name": "Demo · Library Pass with 14-day Trial",
+    "entry": "shop",
+    "before": {
+      "label": "Subscribe Now",
+      "inputs": []
+    },
+    "observed": {
+      "url": "http://localhost:10013/checkout-2/",
+      "summary": "\n\n1\n1 item\nDemo · Library Pass with 14-day Trial\nPrevious price:\n29.00$\nDiscounted price:\n0.00$\n\nLibrary Pass with 14-day Trial — demo catalog.\n\nAfter trial:\n29.00$ every 1 month\nFree trial:\n14 days\nToday's charge:\nFree today\nFirst charge:\nOctober 15, 2026 (UTC) (29.00$)\nDuration:\nContinues until cancelled\nTotal price for 1 Demo · Library Pass with 14-day Trial item: 0.00$\n0.00$\nSave 29.00$\nAdd coupons\nSubtotal\n0.00$\nTotal\n0.00$",
+      "notices": [
+        "“Demo · Library Pass with 14-day Trial” has been added to your cart.\nView cart"
+      ],
+      "buttons": [
+        "View cart",
+        "Place Order"
+      ]
+    }
+  },
+  {
+    "name": "Demo · Library Pass with 14-day Trial",
+    "entry": "product",
+    "before": {
+      "label": "Subscribe Now",
+      "inputs": [
+        {
+          "name": "quantity",
+          "value": "1",
+          "type": "number"
+        }
+      ]
+    },
+    "observed": {
+      "url": "http://localhost:10013/product/demo-%c2%b7-library-pass-with-14-day-trial/",
+      "notices": [
+        "One Trial per Customer is enabled. Keep only one trial subscription in the cart and reduce its quantity to 1 before continuing."
+      ],
+      "buttons": [
+        "Subscribe Now"
+      ],
+      "text": "Home / Demo Member Plans / Demo · Library Pass with 14-day Trial\nOne Trial per Customer is enabled. Keep only one trial subscription in the cart and reduce its quantity to 1 before continuing.\nDemo · Library Pass with 14-day Trial\n29.00$ / month\n\n14 days free trial\n\nWhat's Included\nLibrary Access ✓\nMonthly Downloads 10\nMasterclasses ✗\nTeam Seats 1\nSupport Level Community\n\nLibrary Pass with 14-day Trial — demo catalog.\n\nDemo · Library Pass with 14-day Trial quantity\nSubscribe Now\nSKU: DEMO-260927-TRIAL\nCategory: Demo Member Plans\nDescription Reviews (0)\nDescription\n\nSample catalog item for the June–September 2026 demonstration store.\n\nRelated products\nDemo · Annual Library Pass\n199.00$ / year\nSubscribe Now\nDemo · Daily Learning Pass\n3.00$ / day\nSubscribe Now\nDemo · Flexible Learning Membership\n35.00$ / month\nSubscribe Now\nDemo · Fortnightly Tea Delivery\n25.00$ / 2 weeks\nSubscribe Now\nDemo · Lifetime Resource Library\n349.00$\nSubscribe Now"
+    }
+  },
+  {
+    "name": "Demo · Three-payment Coaching Program",
+    "entry": "shop",
+    "before": {
+      "label": "Subscribe Now",
+      "inputs": []
+    },
+    "observed": {
+      "url": "http://localhost:10013/checkout-2/",
+      "summary": "\n\n1\n1 item\nDemo · Three-payment Coaching Program\n49.00$\n\nThree-payment Coaching Program — demo catalog.\n\nRenewals:\n49.00$ every 1 month\nToday's charge:\n49.00$\nNext charge:\nNovember 1, 2026 (UTC)\nDuration:\n3 billing cycles\nTotal price for 1 Demo · Three-payment Coaching Program item: 49.00$\n49.00$\nAdd coupons\nSubtotal\n49.00$\nTotal\n49.00$",
+      "notices": [
+        "“Demo · Three-payment Coaching Program” has been added to your cart.\nView cart"
+      ],
+      "buttons": [
+        "View cart",
+        "Place Order"
+      ]
+    }
+  },
+  {
+    "name": "Demo · Three-payment Coaching Program",
+    "entry": "product",
+    "before": {
+      "label": "Subscribe Now",
+      "inputs": [
+        {
+          "name": "quantity",
+          "value": "1",
+          "type": "number"
+        }
+      ]
+    },
+    "observed": {
+      "url": "http://localhost:10013/checkout-2/",
+      "summary": "\n\n1\n1 item\nDemo · Three-payment Coaching Program\n49.00$\n\nThree-payment Coaching Program — demo catalog.\n\nRenewals:\n49.00$ every 1 month\nToday's charge:\n49.00$\nNext charge:\nNovember 1, 2026 (UTC)\nDuration:\n3 billing cycles\nTotal price for 1 Demo · Three-payment Coaching Program item: 49.00$\n49.00$\nAdd coupons\nSubtotal\n49.00$\nTotal\n49.00$",
+      "notices": [
+        "“Demo · Three-payment Coaching Program” has been added to your cart.\nView cart"
+      ],
+      "buttons": [
+        "View cart",
+        "Place Order"
+      ]
+    }
+  },
+  {
+    "name": "Demo · Flexible Learning Membership",
+    "entry": "shop",
+    "before": {
+      "label": "Subscribe Now",
+      "inputs": []
+    },
+    "observed": {
+      "url": "http://localhost:10013/checkout-2/",
+      "summary": "\n\n1\n1 item\nDemo · Flexible Learning Membership\n35.00$\n\nFlexible Learning Membership — demo catalog.\n\nRenewals:\n35.00$ every 1 month\nToday's charge:\n35.00$\nNext charge:\nNovember 1, 2026 (UTC)\nDuration:\nContinues until cancelled\nTotal price for 1 Demo · Flexible Learning Membership item: 35.00$\n35.00$\nAdd coupons\nSubtotal\n35.00$\nTotal\n35.00$",
+      "notices": [
+        "“Demo · Flexible Learning Membership” has been added to your cart.\nView cart"
+      ],
+      "buttons": [
+        "View cart",
+        "Place Order"
+      ]
+    }
+  },
+  {
+    "name": "Demo · Flexible Learning Membership",
+    "entry": "product",
+    "before": {
+      "label": "Subscribe Now",
+      "inputs": [
+        {
+          "name": "quantity",
+          "value": "1",
+          "type": "number"
+        }
+      ]
+    },
+    "observed": {
+      "url": "http://localhost:10013/checkout-2/",
+      "summary": "\n\n1\n1 item\nDemo · Flexible Learning Membership\n35.00$\n\nFlexible Learning Membership — demo catalog.\n\nRenewals:\n35.00$ every 1 month\nToday's charge:\n35.00$\nNext charge:\nNovember 1, 2026 (UTC)\nDuration:\nContinues until cancelled\nTotal price for 1 Demo · Flexible Learning Membership item: 35.00$\n35.00$\nAdd coupons\nSubtotal\n35.00$\nTotal\n35.00$",
+      "notices": [
+        "“Demo · Flexible Learning Membership” has been added to your cart.\nView cart"
+      ],
+      "buttons": [
+        "View cart",
+        "Place Order"
+      ]
+    }
+  },
+  {
+    "name": "Demo · Store Credit $50",
+    "entry": "shop",
+    "before": {
+      "label": "Buy Credits",
+      "inputs": []
+    },
+    "observed": {
+      "url": "http://localhost:10013/checkout-2/",
+      "summary": "\n\n1\n1 item\nDemo · Store Credit $50\n50.00$\n\nStore Credit $50 — demo catalog.\n\nTotal price for 1 Demo · Store Credit $50 item: 50.00$\n50.00$\nAdd coupons\nSubtotal\n50.00$\nTotal\n50.00$",
+      "notices": [
+        "“Demo · Store Credit $50” has been added to your cart.\nView cart"
+      ],
+      "buttons": [
+        "View cart",
+        "Place Order"
+      ]
+    }
+  },
+  {
+    "name": "Demo · Store Credit $50",
+    "entry": "product",
+    "before": {
+      "label": "Buy Credits",
+      "inputs": []
+    },
+    "observed": {
+      "url": "http://localhost:10013/checkout-2/",
+      "summary": "\n\n1\n1 item\nDemo · Store Credit $50\n50.00$\n\nStore Credit $50 — demo catalog.\n\nTotal price for 1 Demo · Store Credit $50 item: 50.00$\n50.00$\nAdd coupons\nSubtotal\n50.00$\nTotal\n50.00$",
+      "notices": [
+        "“Demo · Store Credit $50” has been added to your cart.\nView cart"
+      ],
+      "buttons": [
+        "View cart",
+        "Place Order"
+      ]
+    }
+  },
+  {
+    "name": "QPC QA 2026-09-10 Bundle",
+    "entry": "shop",
+    "before": {
+      "label": "Subscribe Now",
+      "inputs": []
+    },
+    "observed": {
+      "url": "http://localhost:10013/checkout-2/",
+      "summary": "\n\n1\n1 item\nQPC QA 2026-09-10 Bundle\nPrevious price:\n15.00$\nDiscounted price:\n13.50$\n\nMonthly QA bundle of Child A and Child B with a 10 percent discount.\n\nRenewals:\n13.50$ every 1 month\nToday's charge:\n13.50$\nNext charge:\nNovember 1, 2026 (UTC)\nDuration:\nContinues until cancelled\nBundle contents:\nQPC QA 2026-09-10 Child A × 1 — 5.00$\nQPC QA 2026-09-10 Child B × 1 — 10.00$\nBundle discount:\n10% off (−1.50$)\nTotal price for 1 QPC QA 2026-09-10 Bundle item: 13.50$\n13.50$\nSave 1.50$\nAdd coupons\nSubtotal\n13.50$\nTotal\n13.50$",
+      "notices": [
+        "“QPC QA 2026-09-10 Bundle” has been added to your cart.\nView cart"
+      ],
+      "buttons": [
+        "View cart",
+        "Place Order"
+      ]
+    }
+  },
+  {
+    "name": "QPC QA 2026-09-10 Bundle",
+    "entry": "product",
+    "before": {
+      "label": "Subscribe Now",
+      "inputs": [
+        {
+          "name": "quantity",
+          "value": "1",
+          "type": "hidden"
+        }
+      ]
+    },
+    "observed": {
+      "url": "http://localhost:10013/product/qpc-qa-2026-09-10-bundle/",
+      "notices": [
+        "You cannot add another “QPC QA 2026-09-10 Bundle” to your cart."
+      ],
+      "buttons": [
+        "Subscribe Now"
+      ],
+      "text": "Home / Uncategorized / QPC QA 2026-09-10 Bundle\nYou cannot add another “QPC QA 2026-09-10 Bundle” to your cart.\nQPC QA 2026-09-10 Bundle\n15.00$ \nOriginal price was: 15.00$.\n13.50$\nCurrent price is: 13.50$.\n/ month\nReview details\nBilled every month\nQPC QA 2026-09-10 Child A\n1 × 5.00$ each\n5.00$\nQPC QA 2026-09-10 Child B\n1 × 10.00$ each\n10.00$\nSubtotal\n15.00$\nBundle discount (10% off)\n−1.50$\nBundle total\n13.50$ / month\n\nMonthly QA bundle of Child A and Child B with a 10 percent discount.\n\nQPC QA 2026-09-10 Bundle quantity\nSubscribe Now\nCategory: Uncategorized\nDescription Reviews (0)\nDescription\n\nMonthly QA bundle of Child A and Child B with a 10 percent discount.\n\nRelated products\n12\n12.00$ / month\nSubscribe Now\nSALE\nPRODUCT ON SALE\nQPC QA 2026-09-10 Advanced Annual\n45.00$ \nOriginal price was: 45.00$.\n39.00$\nCurrent price is: 39.00$.\n / 2 months\nSubscribe Now\nQPC QA 2026-09-10 Box\nPriced by your selection / month\nCreate Subscription Box\nQPC QA 2026-09-10 Child A\n5.00$ / month\nSubscribe Now\nQPC QA 2026-09-10 Child B\n10.00$ / month\nSubscribe Now"
+    }
+  },
+  {
+    "name": "Demo · Coffee Gift Set",
+    "entry": "shop then grouped product: Coffee x1 + Mug x1",
+    "observed": {
+      "url": "http://localhost:10013/checkout-2/",
+      "summary": "\n\n1\n1 item\nDemo · Ceramic Member Mug\n16.00$\n\nCeramic Member Mug — demo catalog.\n\nTotal price for 1 Demo · Ceramic Member Mug item: 16.00$\n16.00$\nAdd coupons\nSubtotal\n16.00$\nTotal\n16.00$",
+      "notices": [
+        "“Demo · Ceramic Member Mug” has been added to your cart. One-click checkout removed “Demo · Single-origin Coffee” because the last selected one-click item replaces earlier cart items.\nView cart"
+      ],
+      "buttons": [
+        "View cart",
+        "Place Order"
+      ]
+    }
+  },
+  {
+    "name": "Demo · Library Pass with 14-day Trial",
+    "entry": "product",
+    "before": {
+      "label": "Subscribe Now",
+      "inputs": [
+        {
+          "name": "quantity",
+          "value": "1",
+          "type": "number"
+        }
+      ]
+    },
+    "observed": {
+      "url": "http://localhost:10013/checkout-2/",
+      "summary": "\n\n1\n1 item\nDemo · Library Pass with 14-day Trial\nPrevious price:\n29.00$\nDiscounted price:\n0.00$\n\nLibrary Pass with 14-day Trial — demo catalog.\n\nAfter trial:\n29.00$ every 1 month\nFree trial:\n14 days\nToday's charge:\nFree today\nFirst charge:\nOctober 15, 2026 (UTC) (29.00$)\nDuration:\nContinues until cancelled\nTotal price for 1 Demo · Library Pass with 14-day Trial item: 0.00$\n0.00$\nSave 29.00$\nAdd coupons\nSubtotal\n0.00$\nTotal\n0.00$",
+      "notices": [
+        "“Demo · Library Pass with 14-day Trial” has been added to your cart.\nView cart"
+      ],
+      "buttons": [
+        "View cart",
+        "Place Order"
+      ]
+    }
+  },
+  {
+    "name": "Demo · Library Pass with 14-day Trial",
+    "entry": "repeat shop click with same trial already in cart",
+    "observed": {
+      "url": "http://localhost:10013/shop/page/2/?add-to-cart=6717",
+      "notices": [
+        "One Trial per Customer is enabled. Keep only one trial subscription in the cart and reduce its quantity to 1 before continuing."
+      ],
+      "buttons": [],
+      "text": "Home / Shop / Page 2\nShop\nOne Trial per Customer is enabled. Keep only one trial subscription in the cart and reduce its quantity to 1 before continuing.\n\nShowing 17–32 of 59 results\n\nDefault sorting\nSort by popularity\nSort by average rating\nSort by latest\nSort by price: low to high\nSort by price: high to low\nDemo · Flexible Learning Membership\n35.00$ / month\nSubscribe Now\nDemo · Fortnightly Tea Delivery\n25.00$ / 2 weeks\nSubscribe Now\nDemo · Herbal Tea Collection\n18.00$\nAdd to cart\nDemo · Library Pass with 14-day Trial\n29.00$ / month\nSubscribe Now\nDemo · Lifetime Resource Library\n349.00$\nSubscribe Now\nDemo · Limited Edition Flask\n39.00$\nAdd to cart\nDemo · Member T-shirt\n26.00$ – 30.00$\nPrice range: 26.00$ through 30.00$\nSelect options\nDemo · Membership Tier\n24.00$ – 59.00$\nPrice range: 24.00$ through 59.00$\n / month\nSubscribe Now\nDemo · One-time Barista Workshop\n89.00$\nAdd to cart\nDemo · Partner Coffee Equipment\n129.00$\nExplore collection\nDemo · Plus Membership\n39.00$ / month\nSubscribe Now\nDemo · Premium Membership\n69.00$ / month\nSubscribe Now\nDemo · Quarterly Learning Pass\n99.00$ / 3 months\nSubscribe Now\nDemo · Seasonal Gift Tin\n29.00$\nRead more\nDemo · Single-origin Coffee\n22.00$\nAdd to cart\nDemo · Starter Membership\n19.00$ / month\nSubscribe Now\nPrevious Page\n1 2 3 4\nNext Page"
+    }
+  },
+  {
+    "name": "Demo · Limited Edition Flask",
+    "entry": "shop",
+    "before": {
+      "label": "Add to cart",
+      "inputs": []
+    },
+    "observed": {
+      "url": "http://localhost:10013/checkout-2/",
+      "summary": "\n\n1\n1 item\nDemo · Limited Edition Flask\n39.00$\n\nLimited Edition Flask — demo catalog.\n\nTotal price for 1 Demo · Limited Edition Flask item: 39.00$\n39.00$\nAdd coupons\nSubtotal\n39.00$\nTotal\n39.00$",
+      "notices": [
+        "“Demo · Limited Edition Flask” has been added to your cart.\nView cart"
+      ],
+      "buttons": [
+        "View cart",
+        "Place Order"
+      ]
+    }
+  },
+  {
+    "name": "Demo · Limited Edition Flask",
+    "entry": "product",
+    "before": {
+      "label": "Add to cart",
+      "inputs": [
+        {
+          "name": "quantity",
+          "value": "1",
+          "type": "number"
+        }
+      ]
+    },
+    "observed": {
+      "url": "http://localhost:10013/checkout-2/",
+      "summary": "\n\n1\n1 item\nDemo · Limited Edition Flask\n39.00$\n\nLimited Edition Flask — demo catalog.\n\nTotal price for 1 Demo · Limited Edition Flask item: 39.00$\n39.00$\nAdd coupons\nSubtotal\n39.00$\nTotal\n39.00$",
+      "notices": [
+        "“Demo · Limited Edition Flask” has been added to your cart.\nView cart"
+      ],
+      "buttons": [
+        "View cart",
+        "Place Order"
+      ]
+    }
+  },
+  {
+    "name": "QPC QA 2026-09-10 Box",
+    "entry": "shop",
+    "observed": {
+      "url": "http://localhost:10013/product/qpc-qa-2026-09-10-box/",
+      "visibleDialog": false,
+      "text": "Home / Uncategorized / QPC QA 2026-09-10 Box\nQPC QA 2026-09-10 Box\nPriced by your selection / month\n\nBuild a monthly QA box from our named test products.\n\nBilled: Every month\nCreate Subscription Box\nCategory: Uncategorized\nDescription Reviews (0)\nDescription\n\nBuild a monthly QA box from our named test products.\n\nRelated products\n12\n12.00$ / month\nSubscribe Now\nSALE\nPRODUCT ON SALE\nQPC QA 2026-09-10 Advanced Annual\n45.00$ \nOriginal price was: 45.00$.\n39.00$\nCurrent price is: 39.00$.\n / 2 months\nSubscribe Now\nQPC QA 2026-09-10 Bundle\n15.00$ \nOriginal price was: 15.00$.\n13.50$\nCurrent price is: 13.50$.\n / month\nSubscribe Now\nQPC QA 2026-09-10 Child A\n5.00$ / month\nSubscribe Now\nQPC QA 2026-09-10 Child B\n10.00$ / month\nSubscribe Now"
+    }
+  },
+  {
+    "name": "QPC QA 2026-09-10 Box",
+    "entry": "empty required selection",
+    "observed": {
+      "url": "http://localhost:10013/product/qpc-qa-2026-09-10-box/",
+      "dialog": [
+        "QPC QA 2026-09-10 Box\nChoose your monthly item\nReview details\n×\nRequired monthly item *\nQPC QA 2026-09-10 Child A\n5.00$\n+\nTotal:\n0.00$\n/ month\nPlease select at least 1 item(s) in this step.\nNext"
+      ]
+    }
+  },
+  {
+    "name": "QPC QA 2026-09-10 Box",
+    "entry": "valid builder submission",
+    "observed": {
+      "url": "http://localhost:10013/cart-2/",
+      "notices": [],
+      "buttons": [],
+      "text": "Cart\nProducts in cart\nPRODUCT\t\nDETAILS\n\tTOTAL\n\n\t\n\t\n\n\n\t\n\t\nCART TOTALS\nAdd coupons\nEstimated total"
+    }
+  },
+  {
+    "name": "Demo · Library Pass with 14-day Trial",
+    "entry": "product",
+    "before": {
+      "label": "Subscribe Now",
+      "inputs": [
+        {
+          "name": "quantity",
+          "value": "1",
+          "type": "number"
+        }
+      ]
+    },
+    "observed": {
+      "url": "http://localhost:10013/checkout-2/",
+      "summary": "\n\n1\n1 item\nDemo · Library Pass with 14-day Trial\nPrevious price:\n29.00$\nDiscounted price:\n0.00$\n\nLibrary Pass with 14-day Trial — demo catalog.\n\nAfter trial:\n29.00$ every 1 month\nFree trial:\n14 days\nToday's charge:\nFree today\nFirst charge:\nOctober 15, 2026 (UTC) (29.00$)\nDuration:\nContinues until cancelled\nTotal price for 1 Demo · Library Pass with 14-day Trial item: 0.00$\n0.00$\nSave 29.00$\nAdd coupons\nSubtotal\n0.00$\nTotal\n0.00$",
+      "notices": [
+        "“Demo · Library Pass with 14-day Trial” has been added to your cart.\nView cart"
+      ],
+      "buttons": [
+        "View cart",
+        "Place Order"
+      ]
+    }
+  },
+  {
+    "name": "Demo · Library Pass with 14-day Trial",
+    "entry": "recorded repeated product click",
+    "observed": {
+      "url": "http://localhost:10013/product/demo-%c2%b7-library-pass-with-14-day-trial/",
+      "notices": [
+        "One Trial per Customer is enabled. Keep only one trial subscription in the cart and reduce its quantity to 1 before continuing."
+      ],
+      "buttons": [
+        "Subscribe Now"
+      ],
+      "text": "Home / Demo Member Plans / Demo · Library Pass with 14-day Trial\nOne Trial per Customer is enabled. Keep only one trial subscription in the cart and reduce its quantity to 1 before continuing.\nDemo · Library Pass with 14-day Trial\n29.00$ / month\n\n14 days free trial\n\nWhat's Included\nLibrary Access ✓\nMonthly Downloads 10\nMasterclasses ✗\nTeam Seats 1\nSupport Level Community\n\nLibrary Pass with 14-day Trial — demo catalog.\n\nDemo · Library Pass with 14-day Trial quantity\nSubscribe Now\nSKU: DEMO-260927-TRIAL\nCategory: Demo Member Plans\nDescription Reviews (0)\nDescription\n\nSample catalog item for the June–September 2026 demonstration store.\n\nRelated products\nDemo · Annual Library Pass\n199.00$ / year\nSubscribe Now\nDemo · Daily Learning Pass\n3.00$ / day\nSubscribe Now\nDemo · Flexible Learning Membership\n35.00$ / month\nSubscribe Now\nDemo · Fortnightly Tea Delivery\n25.00$ / 2 weeks\nSubscribe Now\nDemo · Lifetime Resource Library\n349.00$\nSubscribe Now"
+    }
+  },
+  {
+    "name": "QPC QA 2026-09-10 Bundle",
+    "entry": "product",
+    "before": {
+      "label": "Subscribe Now",
+      "inputs": [
+        {
+          "name": "quantity",
+          "value": "1",
+          "type": "hidden"
+        }
+      ]
+    },
+    "observed": {
+      "url": "http://localhost:10013/checkout-2/",
+      "summary": "\n\n1\n1 item\nQPC QA 2026-09-10 Bundle\nPrevious price:\n15.00$\nDiscounted price:\n13.50$\n\nMonthly QA bundle of Child A and Child B with a 10 percent discount.\n\nRenewals:\n13.50$ every 1 month\nToday's charge:\n13.50$\nNext charge:\nNovember 1, 2026 (UTC)\nDuration:\nContinues until cancelled\nBundle contents:\nQPC QA 2026-09-10 Child A × 1 — 5.00$\nQPC QA 2026-09-10 Child B × 1 — 10.00$\nBundle discount:\n10% off (−1.50$)\nTotal price for 1 QPC QA 2026-09-10 Bundle item: 13.50$\n13.50$\nSave 1.50$\nAdd coupons\nSubtotal\n13.50$\nTotal\n13.50$",
+      "notices": [
+        "“QPC QA 2026-09-10 Bundle” has been added to your cart.\nView cart"
+      ],
+      "buttons": [
+        "View cart",
+        "Place Order"
+      ]
+    }
+  },
+  {
+    "name": "QPC QA 2026-09-10 Bundle",
+    "entry": "recorded repeated product click",
+    "observed": {
+      "url": "http://localhost:10013/product/qpc-qa-2026-09-10-bundle/",
+      "notices": [
+        "You cannot add another “QPC QA 2026-09-10 Bundle” to your cart."
+      ],
+      "buttons": [
+        "Subscribe Now"
+      ],
+      "text": "Home / Uncategorized / QPC QA 2026-09-10 Bundle\nYou cannot add another “QPC QA 2026-09-10 Bundle” to your cart.\nQPC QA 2026-09-10 Bundle\n15.00$ \nOriginal price was: 15.00$.\n13.50$\nCurrent price is: 13.50$.\n/ month\nReview details\nBilled every month\nQPC QA 2026-09-10 Child A\n1 × 5.00$ each\n5.00$\nQPC QA 2026-09-10 Child B\n1 × 10.00$ each\n10.00$\nSubtotal\n15.00$\nBundle discount (10% off)\n−1.50$\nBundle total\n13.50$ / month\n\nMonthly QA bundle of Child A and Child B with a 10 percent discount.\n\nQPC QA 2026-09-10 Bundle quantity\nSubscribe Now\nCategory: Uncategorized\nDescription Reviews (0)\nDescription\n\nMonthly QA bundle of Child A and Child B with a 10 percent discount.\n\nRelated products\n12\n12.00$ / month\nSubscribe Now\nSALE\nPRODUCT ON SALE\nQPC QA 2026-09-10 Advanced Annual\n45.00$ \nOriginal price was: 45.00$.\n39.00$\nCurrent price is: 39.00$.\n / 2 months\nSubscribe Now\nQPC QA 2026-09-10 Box\nPriced by your selection / month\nCreate Subscription Box\nQPC QA 2026-09-10 Child A\n5.00$ / month\nSubscribe Now\nQPC QA 2026-09-10 Child B\n10.00$ / month\nSubscribe Now"
+    }
+  },
+  {
+    "name": "Demo · Ceramic Member Mug",
+    "entry": "product quantity 2",
+    "observed": {
+      "url": "http://localhost:10013/checkout-2/",
+      "summary": "\n\n2\n2 items\nDemo · Ceramic Member Mug\n16.00$\n\nCeramic Member Mug — demo catalog.\n\nTotal price for 2 Demo · Ceramic Member Mug items: 32.00$\n32.00$\nAdd coupons\nSubtotal\n32.00$\nTotal\n32.00$",
+      "notices": [
+        "2 × “Demo · Ceramic Member Mug” have been added to your cart.\nView cart"
+      ],
+      "buttons": [
+        "View cart",
+        "Place Order"
+      ]
+    }
+  },
+  {
+    "name": "Demo · Ceramic Member Mug",
+    "entry": "shop repeat resets requested quantity to 1",
+    "observed": {
+      "url": "http://localhost:10013/checkout-2/",
+      "summary": "\n\n1\n1 item\nDemo · Ceramic Member Mug\n16.00$\n\nCeramic Member Mug — demo catalog.\n\nTotal price for 1 Demo · Ceramic Member Mug item: 16.00$\n16.00$\nAdd coupons\nSubtotal\n16.00$\nTotal\n16.00$",
+      "notices": [
+        "“Demo · Ceramic Member Mug” has been added to your cart.\nView cart"
+      ],
+      "buttons": [
+        "View cart",
+        "Place Order"
+      ]
+    }
+  },
+  {
+    "name": "demo-%c2%b7-seasonal-gift-tin",
+    "entry": "product availability check",
+    "observed": {
+      "url": "http://localhost:10013/product/demo-%c2%b7-seasonal-gift-tin/",
+      "text": "Home / Demo Accessories / Demo · Seasonal Gift Tin\nDemo · Seasonal Gift Tin\n29.00$\n\nSeasonal Gift Tin — demo catalog.\n\nOut of stock\n\nSKU: DEMO-260927-OUT-STOCK\nCategory: Demo Accessories\nDescription Additional information Reviews (0)\nDescription\n\nSample catalog item for the June–September 2026 demonstration store.\n\nRelated products\nDemo · Ceramic Member Mug\n16.00$\nAdd to cart\nDemo · Everyday Canvas Tote\n24.00$\nAdd to cart\nDemo · Limited Edition Flask\n39.00$\nAdd to cart\nDemo · Member T-shirt\n26.00$ – 30.00$\nPrice range: 26.00$ through 30.00$\nSelect options\nDemo · Partner Coffee Equipment\n129.00$\nExplore collection",
+      "buttons": []
+    }
+  },
+  {
+    "name": "demo-%c2%b7-partner-coffee-equipment",
+    "entry": "product availability check",
+    "observed": {
+      "url": "http://localhost:10013/product/demo-%c2%b7-partner-coffee-equipment/",
+      "text": "Home / Demo Accessories / Demo · Partner Coffee Equipment\nDemo · Partner Coffee Equipment\n129.00$\n\nPartner Coffee Equipment — demo catalog.\n\nExplore collection\nSKU: DEMO-260927-AFFILIATE\nCategory: Demo Accessories\nDescription Reviews (0)\nDescription\n\nSample catalog item for the June–September 2026 demonstration store.\n\nRelated products\nDemo · Ceramic Member Mug\n16.00$\nAdd to cart\nDemo · Everyday Canvas Tote\n24.00$\nAdd to cart\nDemo · Limited Edition Flask\n39.00$\nAdd to cart\nDemo · Member T-shirt\n26.00$ – 30.00$\nPrice range: 26.00$ through 30.00$\nSelect options",
+      "buttons": [
+        {
+          "label": "Explore collection",
+          "action": "http://localhost:10013/shop/"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Demo · Library Pass with 14-day Trial",
+    "entry": "product",
+    "before": {
+      "label": "Subscribe Now",
+      "inputs": [
+        {
+          "name": "quantity",
+          "value": "1",
+          "type": "number"
+        }
+      ]
+    },
+    "observed": {
+      "url": "http://localhost:10013/checkout-2/",
+      "summary": "\n\n1\n1 item\nDemo · Library Pass with 14-day Trial\nPrevious price:\n29.00$\nDiscounted price:\n0.00$\n\nLibrary Pass with 14-day Trial — demo catalog.\n\nAfter trial:\n29.00$ every 1 month\nFree trial:\n14 days\nToday's charge:\nFree today\nFirst charge:\nOctober 15, 2026 (UTC) (29.00$)\nDuration:\nContinues until cancelled\nTotal price for 1 Demo · Library Pass with 14-day Trial item: 0.00$\n0.00$\nSave 29.00$\nAdd coupons\nSubtotal\n0.00$\nTotal\n0.00$",
+      "notices": [
+        "“Demo · Library Pass with 14-day Trial” has been added to your cart.\nView cart"
+      ],
+      "buttons": [
+        "View cart",
+        "Place Order"
+      ]
+    }
+  },
+  {
+    "name": "QPC QA 2026-09-10 Bundle",
+    "entry": "product",
+    "before": {
+      "label": "Subscribe Now",
+      "inputs": [
+        {
+          "name": "quantity",
+          "value": "1",
+          "type": "hidden"
+        }
+      ]
+    },
+    "observed": {
+      "url": "http://localhost:10013/checkout-2/",
+      "summary": "\n\n1\n1 item\nQPC QA 2026-09-10 Bundle\nPrevious price:\n15.00$\nDiscounted price:\n13.50$\n\nMonthly QA bundle of Child A and Child B with a 10 percent discount.\n\nRenewals:\n13.50$ every 1 month\nToday's charge:\n13.50$\nNext charge:\nNovember 1, 2026 (UTC)\nDuration:\nContinues until cancelled\nBundle contents:\nQPC QA 2026-09-10 Child A × 1 — 5.00$\nQPC QA 2026-09-10 Child B × 1 — 10.00$\nBundle discount:\n10% off (−1.50$)\nTotal price for 1 QPC QA 2026-09-10 Bundle item: 13.50$\n13.50$\nSave 1.50$\nAdd coupons\nSubtotal\n13.50$\nTotal\n13.50$",
+      "notices": [
+        "“QPC QA 2026-09-10 Bundle” has been added to your cart.\nView cart"
+      ],
+      "buttons": [
+        "View cart",
+        "Place Order"
+      ]
+    }
+  }
+]
