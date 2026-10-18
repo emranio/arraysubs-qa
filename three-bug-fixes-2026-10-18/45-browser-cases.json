@@ -1,0 +1,42 @@
+[
+  {
+    "case": "QA 45 invalid",
+    "navigation": "\u2713 Download Error\n  http://localhost:10013/?arraysubs_download=arraysubs_06c196964efd0087d7e0ec5e0e876be9bf4a0babef219fc0f24c34bb75868c27&signature=edf1308842fba847fef901d5800330fd760fe3169c98ac801169cfd153230197\n",
+    "page": "- StaticText \"Invalid download URL.\"\n"
+  },
+  {
+    "case": "QA 45 credentials",
+    "navigation": "\u2713 Download Error\n  http://localhost:10013/?arraysubs_download=arraysubs_a09569a16d8478edcc1b6abdafd10da5f41e5fc09dcc5491a9d737b3bf289e85&signature=74af708c30adf104a802272ae6aeee14e0ffb685f82c7c9b88f3335763d66706\n",
+    "page": "- StaticText \"Invalid download URL.\"\n"
+  },
+  {
+    "case": "QA 45 missing",
+    "navigation": "\u2713 Download Error\n  http://localhost:10013/?arraysubs_download=arraysubs_cb4730795c2d24e187e8ae3c65d1248a13aaa8edbe28b4d63ef83c87763e716a&signature=e9cc1ef1769a07faa9e00f633d602c6f6ef0f584ec5acd9ccda106ab4e61ce92\n",
+    "page": "- StaticText \"File not found.\"\n"
+  },
+  {
+    "case": "tampered",
+    "navigation": "\u2713 Download Error\n  http://localhost:10013/?arraysubs_download=arraysubs_cc3a7c94e671f30717dbb8cdfaf5ed7bd513a8a85ac21bc98cae136828e76ab4&signature=invalid1ec6a9cfa9f0df8c520c427d246d29582b49b5e0b79506699f346851b170ee44\n",
+    "page": "- StaticText \"Invalid download link.\"\n"
+  },
+  {
+    "case": "QA 45 local",
+    "navigation": "\u2717 Navigation failed: net::ERR_ABORTED\n",
+    "page": "- StaticText \"Invalid download link.\"\n"
+  },
+  {
+    "case": "QA 45 external",
+    "navigation": "\u2713 \n  http://127.0.0.1:10013/wp-content/uploads/arraysubs-bug-fix-20261018.txt\n",
+    "page": "- StaticText \"ArraySubs external download verification 2026-10-18\"\n"
+  },
+  {
+    "case": "QA 45 external",
+    "navigation": "\u2713 Download Error\n  http://localhost:10013/?arraysubs_download=arraysubs_cc3a7c94e671f30717dbb8cdfaf5ed7bd513a8a85ac21bc98cae136828e76ab4&signature=1ec6a9cfa9f0df8c520c427d246d29582b49b5e0b79506699f346851b170ee44\n",
+    "page": "- StaticText \"You have reached the download limit for this file.\"\n"
+  },
+  {
+    "case": "guest",
+    "navigation": "\u2713 Download Error\n  http://localhost:10013/?arraysubs_download=arraysubs_cc3a7c94e671f30717dbb8cdfaf5ed7bd513a8a85ac21bc98cae136828e76ab4&signature=1ec6a9cfa9f0df8c520c427d246d29582b49b5e0b79506699f346851b170ee44\n",
+    "page": "- StaticText \"You must be logged in to download this file.\"\n"
+  }
+]

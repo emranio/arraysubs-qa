@@ -1,0 +1,12 @@
+340-              - StaticText "Hi admin,"
+341-            - paragraph
+342:              - StaticText "Your subscription is scheduled to end in 4 days. A final invoice may be generated before the subscription ends if a final billing cycle is due."
+343:            - heading "Subscription #12318" [level=2, ref=e86]
+344-            - table
+345-              - row
+--
+352-              - row
+353-                - rowheader "End Date" [ref=e92]
+354:                - cell "October 22, 2026 1:40 pm" [ref=e93]
+355-              - row
+356-                - rowheader "Payment Method" [ref=e94]

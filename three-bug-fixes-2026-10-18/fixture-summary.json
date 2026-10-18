@@ -1,0 +1,46 @@
+[
+    {
+        "id": 12091,
+        "status": "arraysubs-pending",
+        "customer_id": "1",
+        "order_ids": "[]",
+        "renewal_price_enabled": "no",
+        "sent_for": "",
+        "sent_at": "",
+        "actions": []
+    },
+    {
+        "id": 12094,
+        "status": "arraysubs-pending",
+        "customer_id": "1",
+        "order_ids": "[]",
+        "renewal_price_enabled": "yes",
+        "sent_for": "",
+        "sent_at": "",
+        "actions": []
+    },
+    {
+        "id": 12104,
+        "status": "arraysubs-active",
+        "customer_id": "1",
+        "order_ids": "[0]",
+        "renewal_price_enabled": "no",
+        "sent_for": "2026-10-22 07:32:25|7",
+        "sent_at": "2026-10-18 07:37:33",
+        "actions": [
+            "10898"
+        ]
+    },
+    {
+        "id": 12318,
+        "status": "arraysubs-active",
+        "customer_id": "1",
+        "order_ids": "[0]",
+        "renewal_price_enabled": "no",
+        "sent_for": "2026-10-22 07:40:25|7",
+        "sent_at": "2026-10-18 07:40:44",
+        "actions": [
+            "11054"
+        ]
+    }
+]

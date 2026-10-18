@@ -156,3 +156,24 @@
 {"timestamp":"2026-09-19T18:28:10.58995+06:00","action":"create","task_id":43,"detail":"WooPayments redirects ArraySubs subscription account endpoints to dashboard"}
 {"timestamp":"2026-09-19T18:38:57.066532+06:00","action":"edit","task_id":43,"detail":"WooPayments redirects ArraySubs subscription account endpoints to dashboard"}
 {"timestamp":"2026-09-19T18:38:57.141048+06:00","action":"edit","task_id":42,"detail":"Removed Support menu persists in old saved My Account editor data"}
+{"timestamp":"2026-10-18T13:19:30.922172+06:00","action":"edit","task_id":6,"detail":"Fixed-length subscription never schedules the required expiring-soon action"}
+{"timestamp":"2026-10-18T13:19:30.933213+06:00","action":"create","task_id":44,"detail":"New admin subscriptions silently discard the different-renewal-price toggle"}
+{"timestamp":"2026-10-18T13:19:30.943738+06:00","action":"create","task_id":45,"detail":"External member-download links fall back to wp-admin and consume download quota"}
+{"timestamp":"2026-10-18T13:24:21.406938+06:00","action":"move","task_id":44,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-10-18T13:24:21.419903+06:00","action":"edit","task_id":44,"detail":"New admin subscriptions silently discard the different-renewal-price toggle"}
+{"timestamp":"2026-10-18T13:29:01.238505+06:00","action":"edit","task_id":44,"detail":"New admin subscriptions silently discard the different-renewal-price toggle"}
+{"timestamp":"2026-10-18T13:29:01.250071+06:00","action":"edit","task_id":44,"detail":"New admin subscriptions silently discard the different-renewal-price toggle"}
+{"timestamp":"2026-10-18T13:29:01.250137+06:00","action":"release","task_id":44,"detail":"lasslorn-gravure"}
+{"timestamp":"2026-10-18T13:29:01.260862+06:00","action":"move","task_id":44,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-10-18T13:29:01.27055+06:00","action":"move","task_id":45,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-10-18T13:29:01.280132+06:00","action":"edit","task_id":45,"detail":"External member-download links fall back to wp-admin and consume download quota"}
+{"timestamp":"2026-10-18T13:31:23.850357+06:00","action":"edit","task_id":45,"detail":"External member-download links fall back to wp-admin and consume download quota"}
+{"timestamp":"2026-10-18T13:31:23.861204+06:00","action":"edit","task_id":45,"detail":"External member-download links fall back to wp-admin and consume download quota"}
+{"timestamp":"2026-10-18T13:31:23.861267+06:00","action":"release","task_id":45,"detail":"lasslorn-gravure"}
+{"timestamp":"2026-10-18T13:31:23.871194+06:00","action":"move","task_id":45,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-10-18T13:31:23.881218+06:00","action":"move","task_id":6,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-10-18T13:31:23.89096+06:00","action":"edit","task_id":6,"detail":"Fixed-length subscription never schedules the required expiring-soon action"}
+{"timestamp":"2026-10-18T13:44:51.271073+06:00","action":"edit","task_id":6,"detail":"Fixed-length subscription never schedules the required expiring-soon action"}
+{"timestamp":"2026-10-18T13:44:51.283167+06:00","action":"edit","task_id":6,"detail":"Fixed-length subscription never schedules the required expiring-soon action"}
+{"timestamp":"2026-10-18T13:44:51.283268+06:00","action":"release","task_id":6,"detail":"lasslorn-gravure"}
+{"timestamp":"2026-10-18T13:44:51.293099+06:00","action":"move","task_id":6,"detail":"in-progress -\u003e closed"}
