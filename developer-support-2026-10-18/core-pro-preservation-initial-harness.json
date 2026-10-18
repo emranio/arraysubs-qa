@@ -1,0 +1,15 @@
+{
+  "user_id": 339,
+  "product_id": 16314,
+  "subscription_id": 16316,
+  "checks": {
+    "pro_loaded": true,
+    "subscription_identity": true,
+    "subscription_meta_preserved": true,
+    "product_meta_preserved": true,
+    "settings_preserved": false,
+    "domain_snapshot_preserved": false
+  },
+  "cleaned_at": "2026-10-18T11:25:46+00:00",
+  "test_harness_note": "Initial JSON serialization omitted zero-fraction float types; strict equality compared decoded integers with original PHP doubles. Values were equal. Rerun compares serialized-state hashes, preserving PHP types without retaining raw settings."
+}

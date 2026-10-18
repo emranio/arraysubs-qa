@@ -1,0 +1,246 @@
+FAIL: provider-owned rejects different_renewal_price without partial writes or events {"subscription_id":16393,"expected":"provider_rejection","actual":"success"}
+FAIL: provider-owned rejects different_renewal_price_after without partial writes or events {"subscription_id":16393,"expected":"provider_rejection","actual":"success"}
+FAIL: provider-owned rejects enable_different_renewal_price without partial writes or events {"subscription_id":16393,"expected":"provider_rejection","actual":"success"}
+PASS: provider-owned accepts an unchanged renewal price
+FAIL: box child rejects different_renewal_price without partial writes or events {"subscription_id":16399,"expected":"parent_billed_subscription","actual":"success"}
+FAIL: box child rejects different_renewal_price_after without partial writes or events {"subscription_id":16399,"expected":"parent_billed_subscription","actual":"success"}
+FAIL: box child rejects enable_different_renewal_price without partial writes or events {"subscription_id":16399,"expected":"parent_billed_subscription","actual":"success"}
+PASS: box child accepts an unchanged renewal price
+FAIL: bundle child rejects different_renewal_price without partial writes or events {"subscription_id":16405,"expected":"parent_billed_subscription","actual":"success"}
+FAIL: bundle child rejects different_renewal_price_after without partial writes or events {"subscription_id":16405,"expected":"parent_billed_subscription","actual":"success"}
+FAIL: bundle child rejects enable_different_renewal_price without partial writes or events {"subscription_id":16405,"expected":"parent_billed_subscription","actual":"success"}
+PASS: bundle child accepts an unchanged renewal price
+FAIL: externally billed rejects different_renewal_price without partial writes or events {"subscription_id":16411,"expected":"parent_billed_subscription","actual":"success"}
+FAIL: externally billed rejects different_renewal_price_after without partial writes or events {"subscription_id":16411,"expected":"parent_billed_subscription","actual":"success"}
+FAIL: externally billed rejects enable_different_renewal_price without partial writes or events {"subscription_id":16411,"expected":"parent_billed_subscription","actual":"success"}
+PASS: externally billed accepts an unchanged renewal price
+FAIL: gateway settlement rejects different_renewal_price without partial writes or events {"subscription_id":16417,"expected":"gateway_settlement_pending","actual":"success"}
+FAIL: gateway settlement rejects different_renewal_price_after without partial writes or events {"subscription_id":16417,"expected":"gateway_settlement_pending","actual":"success"}
+FAIL: gateway settlement rejects enable_different_renewal_price without partial writes or events {"subscription_id":16417,"expected":"gateway_settlement_pending","actual":"success"}
+PASS: gateway settlement accepts an unchanged renewal price
+FAIL: pending plan switch rejects different_renewal_price without partial writes or events {"subscription_id":16423,"expected":"pending_switch_conflict","actual":"success"}
+FAIL: pending plan switch rejects different_renewal_price_after without partial writes or events {"subscription_id":16423,"expected":"pending_switch_conflict","actual":"success"}
+FAIL: pending plan switch rejects enable_different_renewal_price without partial writes or events {"subscription_id":16423,"expected":"pending_switch_conflict","actual":"success"}
+PASS: pending plan switch accepts an unchanged renewal price
+FAIL: frozen renewal invoice rejects different_renewal_price without partial writes or events {"subscription_id":16429,"expected":"frozen_renewal_invoice","actual":"success"}
+FAIL: frozen renewal invoice rejects different_renewal_price_after without partial writes or events {"subscription_id":16429,"expected":"frozen_renewal_invoice","actual":"success"}
+FAIL: frozen renewal invoice rejects enable_different_renewal_price without partial writes or events {"subscription_id":16429,"expected":"frozen_renewal_invoice","actual":"success"}
+PASS: frozen renewal invoice accepts an unchanged renewal price
+PASS: Ordinary local subscriptions can update alternate renewal prices together
+PASS: Fixtures use the real persisted subscription and WooCommerce order stores
+PASS: Every temporary subscription, order, product and customer was removed
+{
+    "checks": 31,
+    "passed": 10,
+    "failed": [
+        {
+            "name": "provider-owned rejects different_renewal_price without partial writes or events",
+            "passed": false,
+            "detail": {
+                "subscription_id": 16393,
+                "expected": "provider_rejection",
+                "actual": "success"
+            }
+        },
+        {
+            "name": "provider-owned rejects different_renewal_price_after without partial writes or events",
+            "passed": false,
+            "detail": {
+                "subscription_id": 16393,
+                "expected": "provider_rejection",
+                "actual": "success"
+            }
+        },
+        {
+            "name": "provider-owned rejects enable_different_renewal_price without partial writes or events",
+            "passed": false,
+            "detail": {
+                "subscription_id": 16393,
+                "expected": "provider_rejection",
+                "actual": "success"
+            }
+        },
+        {
+            "name": "box child rejects different_renewal_price without partial writes or events",
+            "passed": false,
+            "detail": {
+                "subscription_id": 16399,
+                "expected": "parent_billed_subscription",
+                "actual": "success"
+            }
+        },
+        {
+            "name": "box child rejects different_renewal_price_after without partial writes or events",
+            "passed": false,
+            "detail": {
+                "subscription_id": 16399,
+                "expected": "parent_billed_subscription",
+                "actual": "success"
+            }
+        },
+        {
+            "name": "box child rejects enable_different_renewal_price without partial writes or events",
+            "passed": false,
+            "detail": {
+                "subscription_id": 16399,
+                "expected": "parent_billed_subscription",
+                "actual": "success"
+            }
+        },
+        {
+            "name": "bundle child rejects different_renewal_price without partial writes or events",
+            "passed": false,
+            "detail": {
+                "subscription_id": 16405,
+                "expected": "parent_billed_subscription",
+                "actual": "success"
+            }
+        },
+        {
+            "name": "bundle child rejects different_renewal_price_after without partial writes or events",
+            "passed": false,
+            "detail": {
+                "subscription_id": 16405,
+                "expected": "parent_billed_subscription",
+                "actual": "success"
+            }
+        },
+        {
+            "name": "bundle child rejects enable_different_renewal_price without partial writes or events",
+            "passed": false,
+            "detail": {
+                "subscription_id": 16405,
+                "expected": "parent_billed_subscription",
+                "actual": "success"
+            }
+        },
+        {
+            "name": "externally billed rejects different_renewal_price without partial writes or events",
+            "passed": false,
+            "detail": {
+                "subscription_id": 16411,
+                "expected": "parent_billed_subscription",
+                "actual": "success"
+            }
+        },
+        {
+            "name": "externally billed rejects different_renewal_price_after without partial writes or events",
+            "passed": false,
+            "detail": {
+                "subscription_id": 16411,
+                "expected": "parent_billed_subscription",
+                "actual": "success"
+            }
+        },
+        {
+            "name": "externally billed rejects enable_different_renewal_price without partial writes or events",
+            "passed": false,
+            "detail": {
+                "subscription_id": 16411,
+                "expected": "parent_billed_subscription",
+                "actual": "success"
+            }
+        },
+        {
+            "name": "gateway settlement rejects different_renewal_price without partial writes or events",
+            "passed": false,
+            "detail": {
+                "subscription_id": 16417,
+                "expected": "gateway_settlement_pending",
+                "actual": "success"
+            }
+        },
+        {
+            "name": "gateway settlement rejects different_renewal_price_after without partial writes or events",
+            "passed": false,
+            "detail": {
+                "subscription_id": 16417,
+                "expected": "gateway_settlement_pending",
+                "actual": "success"
+            }
+        },
+        {
+            "name": "gateway settlement rejects enable_different_renewal_price without partial writes or events",
+            "passed": false,
+            "detail": {
+                "subscription_id": 16417,
+                "expected": "gateway_settlement_pending",
+                "actual": "success"
+            }
+        },
+        {
+            "name": "pending plan switch rejects different_renewal_price without partial writes or events",
+            "passed": false,
+            "detail": {
+                "subscription_id": 16423,
+                "expected": "pending_switch_conflict",
+                "actual": "success"
+            }
+        },
+        {
+            "name": "pending plan switch rejects different_renewal_price_after without partial writes or events",
+            "passed": false,
+            "detail": {
+                "subscription_id": 16423,
+                "expected": "pending_switch_conflict",
+                "actual": "success"
+            }
+        },
+        {
+            "name": "pending plan switch rejects enable_different_renewal_price without partial writes or events",
+            "passed": false,
+            "detail": {
+                "subscription_id": 16423,
+                "expected": "pending_switch_conflict",
+                "actual": "success"
+            }
+        },
+        {
+            "name": "frozen renewal invoice rejects different_renewal_price without partial writes or events",
+            "passed": false,
+            "detail": {
+                "subscription_id": 16429,
+                "expected": "frozen_renewal_invoice",
+                "actual": "success"
+            }
+        },
+        {
+            "name": "frozen renewal invoice rejects different_renewal_price_after without partial writes or events",
+            "passed": false,
+            "detail": {
+                "subscription_id": 16429,
+                "expected": "frozen_renewal_invoice",
+                "actual": "success"
+            }
+        },
+        {
+            "name": "frozen renewal invoice rejects enable_different_renewal_price without partial writes or events",
+            "passed": false,
+            "detail": {
+                "subscription_id": 16429,
+                "expected": "frozen_renewal_invoice",
+                "actual": "success"
+            }
+        }
+    ],
+    "fixtures": {
+        "subscriptions": {
+            "provider-owned": 16393,
+            "box child": 16399,
+            "bundle child": 16405,
+            "externally billed": 16411,
+            "gateway settlement": 16417,
+            "pending plan switch": 16423,
+            "frozen renewal invoice": 16429
+        },
+        "orders": [
+            16432
+        ],
+        "customer_id": 344,
+        "login": "alternate-price-fb0dfda2",
+        "email": "alternate-price-fb0dfda2@example.test",
+        "role": "customer"
+    },
+    "fixtures_cleaned": true
+}
+Error: 21 alternate renewal-price regression checks failed.

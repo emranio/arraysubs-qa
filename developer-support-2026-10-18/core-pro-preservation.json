@@ -1,0 +1,18 @@
+{
+    "user_id": 340,
+    "product_id": 16321,
+    "subscription_id": 16323,
+    "subscription_meta_hash": "14dc8a81ebc14d345dd310f9f55a4fa7e75df364c027fccd184fca84b74e560e",
+    "product_meta_hash": "9ecec5f4c01f179a607be437511a9a62be5b4a3eaf7476b52155965350015190",
+    "settings_hash": "e89f80098c8b9060623d867028aa269a4a6f87f8e1a7c335c9c52b7fb813e50a",
+    "snapshot_hash": "1080e0e650c135dee66b1fda2d429177d3c86424674272f67a046b5d8922da8c",
+    "checks": {
+        "pro_loaded": true,
+        "subscription_identity": true,
+        "subscription_meta_preserved": true,
+        "product_meta_preserved": true,
+        "settings_preserved": true,
+        "domain_snapshot_preserved": true
+    },
+    "cleaned_at": "2026-10-18T11:26:34+00:00"
+}

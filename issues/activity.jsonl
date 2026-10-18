@@ -177,3 +177,45 @@
 {"timestamp":"2026-10-18T13:44:51.283167+06:00","action":"edit","task_id":6,"detail":"Fixed-length subscription never schedules the required expiring-soon action"}
 {"timestamp":"2026-10-18T13:44:51.283268+06:00","action":"release","task_id":6,"detail":"lasslorn-gravure"}
 {"timestamp":"2026-10-18T13:44:51.293099+06:00","action":"move","task_id":6,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-10-18T17:13:13.277961+06:00","action":"create","task_id":46,"detail":"Block cancellation undo on parent-billed developer API children"}
+{"timestamp":"2026-10-18T17:13:13.28975+06:00","action":"create","task_id":47,"detail":"Verify the exact signed pending switch before reporting invoice freeze"}
+{"timestamp":"2026-10-18T17:13:15.926461+06:00","action":"move","task_id":46,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-10-18T17:13:15.938693+06:00","action":"move","task_id":47,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-10-18T17:14:49.364908+06:00","action":"create","task_id":48,"detail":"Honor developer order include IDs in HPOS queries"}
+{"timestamp":"2026-10-18T17:14:49.375739+06:00","action":"create","task_id":49,"detail":"Retain developer orders with applied credit or transaction evidence"}
+{"timestamp":"2026-10-18T17:15:51.65452+06:00","action":"edit","task_id":46,"detail":"Block cancellation undo on parent-billed developer API children"}
+{"timestamp":"2026-10-18T17:15:51.665892+06:00","action":"move","task_id":46,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-10-18T17:15:51.677452+06:00","action":"edit","task_id":47,"detail":"Verify the exact signed pending switch before reporting invoice freeze"}
+{"timestamp":"2026-10-18T17:15:51.688212+06:00","action":"move","task_id":47,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-10-18T17:15:51.698227+06:00","action":"move","task_id":48,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-10-18T17:15:51.708057+06:00","action":"edit","task_id":48,"detail":"Honor developer order include IDs in HPOS queries"}
+{"timestamp":"2026-10-18T17:15:51.717707+06:00","action":"move","task_id":48,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-10-18T17:15:51.727319+06:00","action":"move","task_id":49,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-10-18T17:15:51.736812+06:00","action":"edit","task_id":49,"detail":"Retain developer orders with applied credit or transaction evidence"}
+{"timestamp":"2026-10-18T17:15:51.746332+06:00","action":"move","task_id":49,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-10-18T17:22:02.388133+06:00","action":"create","task_id":50,"detail":"Deferred plan-switch confirmation must report scheduled result"}
+{"timestamp":"2026-10-18T17:22:02.44833+06:00","action":"move","task_id":50,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-10-18T17:23:13.84041+06:00","action":"edit","task_id":50,"detail":"Deferred plan-switch confirmation must report scheduled result"}
+{"timestamp":"2026-10-18T17:23:13.881573+06:00","action":"move","task_id":50,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-10-18T17:23:13.94655+06:00","action":"create","task_id":51,"detail":"Developer support Stripe browser verification needs test configuration"}
+{"timestamp":"2026-10-18T17:23:19.671339+06:00","action":"edit","task_id":51,"detail":"Developer support Stripe browser verification needs test configuration"}
+{"timestamp":"2026-10-18T17:23:19.671419+06:00","action":"block","task_id":51,"detail":"Official Stripe gateway inactive and test keys absent; test configuration required for actual provider/browser acceptance."}
+{"timestamp":"2026-10-18T17:23:19.711359+06:00","action":"move","task_id":51,"detail":"open -\u003e blocked"}
+{"timestamp":"2026-10-18T17:25:15.794319+06:00","action":"create","task_id":52,"detail":"Validate credit history fields even when its bucket is empty"}
+{"timestamp":"2026-10-18T17:26:01.274801+06:00","action":"edit","task_id":52,"detail":"Validate credit history fields even when its bucket is empty"}
+{"timestamp":"2026-10-18T17:26:01.274883+06:00","action":"release","task_id":52,"detail":"rutate-eyesight"}
+{"timestamp":"2026-10-18T17:26:01.317737+06:00","action":"move","task_id":52,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-10-18T17:26:25.815123+06:00","action":"create","task_id":53,"detail":"Guard alternate renewal prices through subscription billing constraints"}
+{"timestamp":"2026-10-18T17:26:28.009808+06:00","action":"move","task_id":53,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-10-18T17:26:36.83587+06:00","action":"create","task_id":54,"detail":"Include linked guest orders after subscription owner assignment"}
+{"timestamp":"2026-10-18T17:26:38.658551+06:00","action":"move","task_id":54,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-10-18T17:27:38.149836+06:00","action":"edit","task_id":53,"detail":"Guard alternate renewal prices through subscription billing constraints"}
+{"timestamp":"2026-10-18T17:28:15.104882+06:00","action":"edit","task_id":54,"detail":"Include linked guest orders after subscription owner assignment"}
+{"timestamp":"2026-10-18T17:28:20.369998+06:00","action":"move","task_id":54,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-10-18T17:28:23.674534+06:00","action":"edit","task_id":54,"detail":"Include linked guest orders after subscription owner assignment"}
+{"timestamp":"2026-10-18T17:28:23.674622+06:00","action":"release","task_id":54,"detail":"mooder-molarity"}
+{"timestamp":"2026-10-18T17:31:00.946172+06:00","action":"edit","task_id":53,"detail":"Guard alternate renewal prices through subscription billing constraints"}
+{"timestamp":"2026-10-18T17:31:00.946624+06:00","action":"release","task_id":53,"detail":"zyme-rededuct"}
+{"timestamp":"2026-10-18T17:31:00.957739+06:00","action":"move","task_id":53,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-10-18T17:31:10.07969+06:00","action":"edit","task_id":53,"detail":"Guard alternate renewal prices through subscription billing constraints"}
+{"timestamp":"2026-10-18T18:00:15.810975+06:00","action":"edit","task_id":51,"detail":"Developer support Stripe browser verification needs test configuration"}

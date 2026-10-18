@@ -1,0 +1,15 @@
+{
+  "invoiceEmailVisible": true,
+  "saveStates": [
+    {
+      "disabled": true,
+      "text": "Saving…"
+    },
+    {
+      "disabled": false,
+      "text": "Save Changes"
+    }
+  ],
+  "savingDisabled": true,
+  "url": "http://localhost:10013/wp-admin/admin.php?page=arraysubs-mainadmin#/subscriptions/detail/17568"
+}

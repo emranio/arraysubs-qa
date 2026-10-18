@@ -1,0 +1,85 @@
+PASS: Explicit subscription factories return canonical WP_Post resources
+PASS: Zero/negative IDs never resolve an ambient global subscription post
+PASS: Identity projection is lazy and performs no metadata writes
+PASS: Full snapshot exposes every documented field group without raw metadata
+PASS: Unknown projection fields fail even on empty collections
+PASS: Invalid query selectors and non-string order fail predictably
+PASS: Explicit empty statuses and includes return empty pages
+PASS: Reverse order lookup pages all 61 subscriptions with stable ordering
+PASS: Customer/order selectors are ANDed and include terminal history
+PASS: Order-side-only plan-switch link is visible through Woo CRUD history
+PASS: Subscription-side-only history link is visible
+PASS: Pending immediate switch settlement is included separately from deferred switch
+PASS: Exact order reference groups verify initial, original and both pending links
+PASS: Woo order identities distinguish renewal and immediate plan-switch orders
+PASS: Plan-switch checkout orders retain their explicit switch identity
+PASS: Forged cross-customer order links cannot bridge equal email
+PASS: Guest order relationships use normalized explicit email identity
+PASS: Unidentified guest history is rejected
+PASS: Box and bundle family kinds resolve the verified billing owner
+PASS: Canonical child history inherits the billing owner order
+PASS: Parent children collection contains both entitlement kinds
+PASS: Cross-customer and stale family links are reported as orphaned
+PASS: Child independent billing, date and status mutations fail
+PASS: Child cancellation undo cannot create an independent billing lifecycle
+PASS: Whole-change validation prevents partial billing edits
+PASS: Invalid lifecycle selection cannot partially change contact data
+PASS: Unknown, null, currency and raw-meta edits fail
+PASS: Expected-current-state guards return a conflict without writes
+PASS: Valid coherent update keeps agreed pricing separate from catalog
+PASS: Persistence failure returns error and rolls back all requested fields
+PASS: Pending deferred switch blocks billing and status edits
+PASS: Outstanding invoice freezes billing terms and renewal-date edits
+PASS: Provider-owned billing terms and unsupported date propagation fail closed
+PASS: Provider-owned raw status changes remain blocked
+PASS: UTC renewal-date update aligns invoice and payment scheduler hooks
+PASS: Identical date update has no duplicate event and stale expected date conflicts
+PASS: Same-date replay repairs missing payment and invoice actions
+PASS: Subscription lifecycle respects an independent worker lock
+PASS: Past dates and active-subscription trial edits are rejected
+PASS: Running trial end update exposes canonical UTC end and emits one event
+PASS: Provider-owned trial cannot be converted locally
+PASS: Running trial duration edits require the explicit end-date method
+PASS: Local trial conversion uses the domain flow and rebuilds billing jobs
+PASS: Generic trial activation uses the trial converter and rebuilds both billing jobs
+PASS: Per-subscription grace overrides are explicit and emit one event
+PASS: Grace bounds and expected policy are validated before writes
+PASS: A partial grace persistence failure restores both prior overrides
+PASS: Null grace overrides restore the site policy without stale markers
+PASS: Grace snapshot computes due state from an actual unpaid renewal and remains pure
+PASS: Gateway settlement blocks computed overdue transitions
+PASS: Immediate on-hold paths without an on-hold timestamp remain readable
+PASS: A newer forged renewal cannot hide the older owned unpaid invoice
+PASS: Pending-plan projection retains current plan and omits signed private source data
+PASS: Unrelated pending-switch invoice metadata cannot freeze the current signed target
+PASS: Paid unprocessed current renewal retains its pending-switch finalization freeze
+PASS: Mismatched paid invoice cannot claim pending-switch finalization or freeze
+PASS: Foreign paid invoice cannot claim pending-switch finalization or freeze
+PASS: Processed paid renewal no longer claims pending-switch finalization freeze
+PASS: Scheduled cancellation is distinct from cancellation and can be undone
+PASS: Immediate cancellation clears both renewal scheduler hooks
+PASS: Starting a trial by a raw active status assignment is unsupported
+PASS: Suspend/resume/expire run real lifecycle transitions with no terminal renewal jobs
+PASS: Order include filtering is bounded, deterministic and ANDed with customer identity
+PASS: Empty include never selects all orders and invalid projections still fail
+PASS: Order CRUD edits allow contact details while retaining financial facts
+PASS: Order financial/status mutation and stale contact updates are rejected
+PASS: Order contact mutation respects an independent worker lock
+PASS: Order deletion retains pending credit recovery evidence
+PASS: Stored applied credit remains financial evidence without a split-plan marker
+PASS: Signed settlement or credit-only settlement evidence is retained without a paid date
+PASS: A gateway transaction reference prevents generic order deletion
+PASS: Failed/pending orders with a paid date remain retained
+PASS: Referenced subscription orders remain retained
+PASS: Order deletion respects an independent gateway payment lock
+PASS: Only an unreferenced unpaid order can be permanently deleted
+PASS: Public permanent subscription delete cascades child entitlements but retains order/customer
+PASS: Deletion reports child effects while explicitly retaining orders and customer
+Pro active: 0
+HPOS enabled: 1
+{
+    "checks": 77,
+    "passed": 77,
+    "failed": [],
+    "fixtures_cleaned": true
+}

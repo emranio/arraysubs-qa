@@ -1,0 +1,426 @@
+{
+  "files": [
+    {
+      "file": "arraysubs/src/Developer/Customer.php",
+      "lines": 239
+    },
+    {
+      "file": "arraysubs/src/Developer/Discounts.php",
+      "lines": 59
+    },
+    {
+      "file": "arraysubs/src/Developer/Downloads.php",
+      "lines": 27
+    },
+    {
+      "file": "arraysubs/src/Developer/Features.php",
+      "lines": 220
+    },
+    {
+      "file": "arraysubs/src/Developer/Fields.php",
+      "lines": 19
+    },
+    {
+      "file": "arraysubs/src/Developer/LoginLimits.php",
+      "lines": 25
+    },
+    {
+      "file": "arraysubs/src/Developer/MemberAccess.php",
+      "lines": 121
+    },
+    {
+      "file": "arraysubs/src/Developer/MemberContext.php",
+      "lines": 162
+    },
+    {
+      "file": "arraysubs/src/Developer/MemberStyling.php",
+      "lines": 39
+    },
+    {
+      "file": "arraysubs/src/Developer/Orders.php",
+      "lines": 262
+    },
+    {
+      "file": "arraysubs/src/Developer/Product.php",
+      "lines": 263
+    },
+    {
+      "file": "arraysubs/src/Developer/Query.php",
+      "lines": 39
+    },
+    {
+      "file": "arraysubs/src/Developer/StoreCredit.php",
+      "lines": 80
+    },
+    {
+      "file": "arraysubs/src/Developer/SubscriptionSnapshot.php",
+      "lines": 101
+    },
+    {
+      "file": "arraysubs/src/Developer/Subscriptions.php",
+      "lines": 384
+    },
+    {
+      "file": "arraysubs/src/Features/AutomaticPayments/Services/RemoteBillingDateCoordinator.php",
+      "lines": 277
+    },
+    {
+      "file": "arraysubs/src/Features/CustomerPortal/Services/MyAccountHooks.php",
+      "lines": 625
+    },
+    {
+      "file": "arraysubs/src/Features/ElementorIntegration/Services/Hooks.php",
+      "lines": 826
+    },
+    {
+      "file": "arraysubs/src/Features/GutenbergIntegration/Services/Hooks.php",
+      "lines": 374
+    },
+    {
+      "file": "arraysubs/src/Features/GutenbergIntegration/block/edit.js",
+      "lines": 397
+    },
+    {
+      "file": "arraysubs/src/Features/Integrations/Services/LifecycleDispatcher.php",
+      "lines": 426
+    },
+    {
+      "file": "arraysubs/src/Features/Integrations/Services/Traits/LifecycleDetailsTrait.php",
+      "lines": 270
+    },
+    {
+      "file": "arraysubs/src/Features/MemberStyling/REST/StyleController.php",
+      "lines": 413
+    },
+    {
+      "file": "arraysubs/src/Features/MemberStyling/Services/StyleEngine.php",
+      "lines": 295
+    },
+    {
+      "file": "arraysubs/src/Features/MembersAccess/REST/RestrictionController.php",
+      "lines": 1388
+    },
+    {
+      "file": "arraysubs/src/Features/MembersAccess/Services/AccessRuleConflictDetector.php",
+      "lines": 638
+    },
+    {
+      "file": "arraysubs/src/Features/MembersAccess/Services/CommentRestriction.php",
+      "lines": 1246
+    },
+    {
+      "file": "arraysubs/src/Features/MembersAccess/Services/ConditionEvaluator.php",
+      "lines": 731
+    },
+    {
+      "file": "arraysubs/src/Features/MembersAccess/Services/ContentGating.php",
+      "lines": 531
+    },
+    {
+      "file": "arraysubs/src/Features/MembersAccess/Services/DiscountEngine.php",
+      "lines": 1005
+    },
+    {
+      "file": "arraysubs/src/Features/MembersAccess/Services/DownloadManager.php",
+      "lines": 569
+    },
+    {
+      "file": "arraysubs/src/Features/MembersAccess/Services/EcommerceRestriction.php",
+      "lines": 1493
+    },
+    {
+      "file": "arraysubs/src/Features/MembersAccess/Services/Hooks.php",
+      "lines": 555
+    },
+    {
+      "file": "arraysubs/src/Features/MembersAccess/Services/PostRestrictionConfig.php",
+      "lines": 394
+    },
+    {
+      "file": "arraysubs/src/Features/MembersAccess/Services/PostRestrictionGate.php",
+      "lines": 106
+    },
+    {
+      "file": "arraysubs/src/Features/MembersAccess/Services/PurchaseHistory.php",
+      "lines": 343
+    },
+    {
+      "file": "arraysubs/src/Features/MembersAccess/Services/ScheduleEvaluator.php",
+      "lines": 452
+    },
+    {
+      "file": "arraysubs/src/Features/MembersAccess/Services/UrlRestrictor.php",
+      "lines": 164
+    },
+    {
+      "file": "arraysubs/src/Features/MembersAccess/post-restriction/RestrictionFields.jsx",
+      "lines": 497
+    },
+    {
+      "file": "arraysubs/src/Features/MembersAccess/post-restriction/config.js",
+      "lines": 364
+    },
+    {
+      "file": "arraysubs/src/Features/PlanSwitching/REST/SwitchController.php",
+      "lines": 1413
+    },
+    {
+      "file": "arraysubs/src/Features/PlanSwitching/Services/PlanManager.php",
+      "lines": 1563
+    },
+    {
+      "file": "arraysubs/src/Features/PlanSwitching/Services/ProrationCalculator.php",
+      "lines": 1397
+    },
+    {
+      "file": "arraysubs/src/Features/PlanSwitching/Services/Traits/PlanSwitchFinalizationTrait.php",
+      "lines": 676
+    },
+    {
+      "file": "arraysubs/src/Features/PlanSwitching/Services/Traits/PlanSwitchOrderContractTrait.php",
+      "lines": 381
+    },
+    {
+      "file": "arraysubs/src/Features/PlanSwitching/Services/Traits/PlanSwitchQuoteTrait.php",
+      "lines": 248
+    },
+    {
+      "file": "arraysubs/src/Features/PlanSwitching/Services/Traits/PlanSwitchSubscriptionStateTrait.php",
+      "lines": 397
+    },
+    {
+      "file": "arraysubs/src/Features/RecurringBilling/Services/GracePolicy.php",
+      "lines": 106
+    },
+    {
+      "file": "arraysubs/src/Features/RecurringBilling/Services/Hooks.php",
+      "lines": 1344
+    },
+    {
+      "file": "arraysubs/src/Features/RecurringBilling/Services/RenewalProcessor.php",
+      "lines": 1144
+    },
+    {
+      "file": "arraysubs/src/Features/SubscriptionAdmin/REST/ManualController.php",
+      "lines": 701
+    },
+    {
+      "file": "arraysubs/src/Features/SubscriptionAdmin/REST/SubscriptionController.php",
+      "lines": 1542
+    },
+    {
+      "file": "arraysubs/src/Features/SubscriptionAdmin/Services/SubscriptionAuditTrait.php",
+      "lines": 437
+    },
+    {
+      "file": "arraysubs/src/Features/SubscriptionAdmin/Services/SubscriptionLifecycle.php",
+      "lines": 198
+    },
+    {
+      "file": "arraysubs/src/Features/SubscriptionAdmin/Services/SubscriptionMutation.php",
+      "lines": 521
+    },
+    {
+      "file": "arraysubs/src/Features/SubscriptionBox/Services/ChildSubscriptions.php",
+      "lines": 1287
+    },
+    {
+      "file": "arraysubs/src/Features/Subscriptions/Services/OrderIntegration.php",
+      "lines": 2959
+    },
+    {
+      "file": "arraysubs/src/Features/Subscriptions/Services/SubscriptionCPT.php",
+      "lines": 1093
+    },
+    {
+      "file": "arraysubs/src/Features/Subscriptions/Services/SubscriptionCleanup.php",
+      "lines": 194
+    },
+    {
+      "file": "arraysubs/src/Supports/ActionScheduler.php",
+      "lines": 1990
+    },
+    {
+      "file": "arraysubs/src/functions/cancellation-helpers.php",
+      "lines": 1137
+    },
+    {
+      "file": "arraysubs/src/functions/date-calculations.php",
+      "lines": 433
+    },
+    {
+      "file": "arraysubs/src/functions/feature-definitions.php",
+      "lines": 86
+    },
+    {
+      "file": "arraysubs/src/functions/feature-usage-helpers.php",
+      "lines": 493
+    },
+    {
+      "file": "arraysubs/src/functions/pending-switch-helpers.php",
+      "lines": 700
+    },
+    {
+      "file": "arraysubs/src/functions/renewal-sync-helpers.php",
+      "lines": 503
+    },
+    {
+      "file": "arraysubs/src/functions/restriction-helpers.php",
+      "lines": 551
+    },
+    {
+      "file": "arraysubs/src/functions/settings-helpers.php",
+      "lines": 1354
+    },
+    {
+      "file": "arraysubs/src/functions/subscription-helpers.php",
+      "lines": 885
+    },
+    {
+      "file": "arraysubs/src/resources/components/RestrictionRuleBuilder/ConditionBuilder.jsx",
+      "lines": 228
+    },
+    {
+      "file": "arraysubs/src/resources/components/RestrictionRuleBuilder/conditionLogic.js",
+      "lines": 3
+    },
+    {
+      "file": "arraysubs/src/resources/components/RestrictionRuleBuilder/flowSections.js",
+      "lines": 268
+    },
+    {
+      "file": "arraysubs/src/resources/customerPortal.js",
+      "lines": 2121
+    },
+    {
+      "file": "arraysubs/src/resources/pages/Settings/FeatureManagerSettings.jsx",
+      "lines": 201
+    },
+    {
+      "file": "arraysubs/src/resources/pages/StoreCredit/CreditHistory.jsx",
+      "lines": 252
+    },
+    {
+      "file": "arraysubs/src/resources/pages/SubscriptionFeatureLog.jsx",
+      "lines": 243
+    },
+    {
+      "file": "arraysubs/src/resources/pages/SubscriptionsList.jsx",
+      "lines": 458
+    },
+    {
+      "file": "arraysubs/src/resources/scss/customer-portal/index.scss",
+      "lines": 34
+    },
+    {
+      "file": "arraysubs/src/resources/scss/main/pages/_store-credit.scss",
+      "lines": 721
+    },
+    {
+      "file": "arraysubspro/src/Developer/CustomerProfile.php",
+      "lines": 174
+    },
+    {
+      "file": "arraysubspro/src/Developer/FeatureConfiguration.php",
+      "lines": 95
+    },
+    {
+      "file": "arraysubspro/src/Features/FeatureManager/REST/FeatureController.php",
+      "lines": 670
+    },
+    {
+      "file": "arraysubspro/src/Features/FeatureManager/Services/CustomerFeatures.php",
+      "lines": 43
+    },
+    {
+      "file": "arraysubspro/src/Features/FeatureManager/Services/Hooks.php",
+      "lines": 506
+    },
+    {
+      "file": "arraysubspro/src/Features/FeatureManager/Services/MyAccountHooks.php",
+      "lines": 147
+    },
+    {
+      "file": "arraysubspro/src/Features/FeatureManager/views/my-account-features.php",
+      "lines": 167
+    },
+    {
+      "file": "arraysubspro/src/Features/MultiLoginPrevention/Services/Hooks.php",
+      "lines": 125
+    },
+    {
+      "file": "arraysubspro/src/Features/MultiLoginPrevention/Services/SessionManager.php",
+      "lines": 360
+    },
+    {
+      "file": "arraysubspro/src/Features/MultiLoginPrevention/Services/SettingsExtender.php",
+      "lines": 194
+    },
+    {
+      "file": "arraysubspro/src/Features/StoreCredit/Provider.php",
+      "lines": 59
+    },
+    {
+      "file": "arraysubspro/src/Features/StoreCredit/REST/CreditController.php",
+      "lines": 666
+    },
+    {
+      "file": "arraysubspro/src/Features/StoreCredit/Services/CreditBalances.php",
+      "lines": 65
+    },
+    {
+      "file": "arraysubspro/src/Features/StoreCredit/Services/CreditExpiration.php",
+      "lines": 460
+    },
+    {
+      "file": "arraysubspro/src/Features/StoreCredit/Services/CreditLedger.php",
+      "lines": 274
+    },
+    {
+      "file": "arraysubspro/src/Features/StoreCredit/Services/CreditManager.php",
+      "lines": 846
+    },
+    {
+      "file": "arraysubspro/src/Features/StoreCredit/Services/CreditMutation.php",
+      "lines": 332
+    },
+    {
+      "file": "arraysubspro/src/Features/StoreCredit/Services/CreditProductRuntime.php",
+      "lines": 354
+    },
+    {
+      "file": "arraysubspro/src/Features/StoreCredit/Services/DeveloperAccess.php",
+      "lines": 147
+    },
+    {
+      "file": "arraysubspro/src/Features/StoreCredit/Services/DowngradeCreditAudit.php",
+      "lines": 249
+    },
+    {
+      "file": "arraysubspro/src/Features/StoreCredit/Services/TransactionLogger.php",
+      "lines": 358
+    },
+    {
+      "file": "arraysubspro/src/Features/SubscriptionBundle/Services/ChildSubscriptions.php",
+      "lines": 1282
+    },
+    {
+      "file": "arraysubspro/src/functions/developer-adapters.php",
+      "lines": 13
+    },
+    {
+      "file": "arraysubspro/src/resources/components/FeatureEditor.jsx",
+      "lines": 819
+    },
+    {
+      "file": "arraysubspro/src/resources/scss/feature-manager/index.scss",
+      "lines": 545
+    }
+  ],
+  "php_syntax": "passed",
+  "diff_check": "passed",
+  "largest": {
+    "file": "arraysubs/src/Features/Subscriptions/Services/OrderIntegration.php",
+    "lines": 2959
+  }
+}

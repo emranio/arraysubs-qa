@@ -1,0 +1,255 @@
+{
+    "user_id": 256,
+    "items": [
+        {
+            "product_id": 12476,
+            "subscription_id": 12479
+        },
+        {
+            "product_id": 12483,
+            "subscription_id": 12485
+        }
+    ],
+    "original_download_rules": [
+        {
+            "id": "rule_1789638105442_n3og4k7m3",
+            "enabled": true,
+            "name": "New Download Rule",
+            "files": [
+                {
+                    "id": 1789638106949,
+                    "name": "woocommerce-placeholder",
+                    "url": "http://localhost:10013/wp-content/uploads/woocommerce-placeholder.webp",
+                    "filename": "woocommerce-placeholder.webp"
+                }
+            ],
+            "download_limit": "",
+            "download_expiry": "",
+            "conditions": {
+                "logic": "and",
+                "rules": []
+            },
+            "schedule_enabled": false,
+            "schedule_value": 0,
+            "schedule_unit": "days"
+        },
+        {
+            "id": "demo260927-download-guide",
+            "enabled": true,
+            "conditions": {
+                "logic": "and",
+                "rules": [
+                    {
+                        "type": "subscription_status",
+                        "statuses": [
+                            "active",
+                            "trial"
+                        ]
+                    }
+                ]
+            },
+            "download_expiry": 90,
+            "download_limit": 10,
+            "files": [
+                {
+                    "id": "demo-guide",
+                    "name": "Member Guide",
+                    "url": "http://localhost:10013/wp-content/uploads/woocommerce_uploads/demo-20260927/member-guide.txt",
+                    "filename": "member-guide.txt"
+                }
+            ],
+            "name": "Demo \u00b7 Member guide download",
+            "priority": 10,
+            "schedule_enabled": false,
+            "schedule_unit": "days",
+            "schedule_value": 0
+        },
+        {
+            "id": "demo260927-download-premium",
+            "enabled": true,
+            "conditions": {
+                "logic": "and",
+                "rules": [
+                    {
+                        "type": "has_active_subscription",
+                        "product_ids": [
+                            6712,
+                            6718
+                        ]
+                    }
+                ]
+            },
+            "download_expiry": 365,
+            "download_limit": 30,
+            "files": [
+                {
+                    "id": "demo-premium-guide",
+                    "name": "Premium Planning Guide",
+                    "url": "http://localhost:10013/wp-content/uploads/woocommerce_uploads/demo-20260927/member-guide.txt",
+                    "filename": "member-guide.txt"
+                }
+            ],
+            "name": "Demo \u00b7 Premium resource allowance",
+            "priority": 10,
+            "schedule_enabled": true,
+            "schedule_unit": "days",
+            "schedule_value": 7
+        }
+    ],
+    "original_aggregation_mode": "per_subscription",
+    "file": "/Users/emran/Local Sites/wp-test2/app/public/wp-content/uploads/developer-support-qa.txt",
+    "download_url": "http://localhost:10013/?arraysubs_download=arraysubs_e22731f9a0751fc69a185c68a1826e965da375f570d61899d71667706f08781e&signature=285df29e5e7ef03803bf3971bf977a66361f4bb5fc65286aecc804537dd40595",
+    "access_post_id": 15618,
+    "access_post_url": "http://localhost:10013/2026/10/18/developer-qa-access-and-comments/",
+    "product_url": "http://localhost:10013/product/developer-qa-seats-5/",
+    "original_comment_rules": [
+        {
+            "id": "demo260927-comment-members",
+            "enabled": true,
+            "name": "Demo \u00b7 Members can join the discussion",
+            "priority": 10,
+            "conditions": {
+                "logic": "and",
+                "rules": [
+                    {
+                        "type": "subscription_status",
+                        "statuses": [
+                            "active",
+                            "trial"
+                        ]
+                    }
+                ]
+            },
+            "schedule_enabled": false,
+            "schedule_value": 0,
+            "schedule_unit": "days",
+            "target_type": "specific_posts",
+            "post_ids": [
+                9239
+            ],
+            "post_types": [],
+            "taxonomy": "",
+            "term_ids": [],
+            "restriction_mode": "block_posting",
+            "message": "<p>Sign in with an eligible membership to join the discussion.</p>"
+        },
+        {
+            "id": "demo260927-comment-premium",
+            "enabled": true,
+            "name": "Demo \u00b7 Premium community conversation",
+            "priority": 10,
+            "conditions": {
+                "logic": "and",
+                "rules": [
+                    {
+                        "type": "has_active_subscription",
+                        "product_ids": [
+                            6712,
+                            6718
+                        ]
+                    }
+                ]
+            },
+            "schedule_enabled": false,
+            "schedule_value": 0,
+            "schedule_unit": "days",
+            "target_type": "specific_posts",
+            "post_ids": [
+                9240
+            ],
+            "restriction_mode": "block_all",
+            "message": "<p>Premium membership includes this community conversation.</p>"
+        }
+    ],
+    "original_ecommerce_rules": [
+        {
+            "id": "demo260927-shop-flask",
+            "enabled": true,
+            "name": "Demo \u00b7 Members-only limited flask",
+            "priority": 10,
+            "conditions": {
+                "logic": "and",
+                "rules": [
+                    {
+                        "type": "subscription_status",
+                        "statuses": [
+                            "active",
+                            "trial"
+                        ]
+                    }
+                ]
+            },
+            "schedule_enabled": false,
+            "schedule_value": 0,
+            "schedule_unit": "days",
+            "scope": "specific_products",
+            "target_product_ids": [
+                6702
+            ],
+            "target_category_ids": [],
+            "exclusion_product_ids": [],
+            "exclusion_category_ids": [],
+            "action": "block_purchase",
+            "message": "<p>This limited flask is available to demo members.</p>"
+        },
+        {
+            "id": "demo260927-shop-tin",
+            "enabled": true,
+            "name": "Demo \u00b7 Premium seasonal tin",
+            "priority": 10,
+            "conditions": {
+                "logic": "and",
+                "rules": [
+                    {
+                        "type": "has_active_subscription",
+                        "product_ids": [
+                            6712,
+                            6718
+                        ]
+                    }
+                ]
+            },
+            "schedule_enabled": false,
+            "schedule_value": 0,
+            "schedule_unit": "days",
+            "scope": "specific_products",
+            "target_product_ids": [
+                6703
+            ],
+            "action": "redirect_page",
+            "redirect_url": "http://localhost:10013/demo-membership-plans/",
+            "message": "<p>Members can open this resource after signing in. <a href=\"http://localhost:10013/my-account/\">Sign in</a> or <a href=\"http://localhost:10013/demo-membership-plans/\">choose a membership</a>.</p>"
+        }
+    ],
+    "original_plan_switching": {
+        "enabled": true,
+        "allow_upgrades": true,
+        "allow_downgrades": true,
+        "allow_crossgrades": false,
+        "proration_type": "prorate_immediately",
+        "allow_customer_switch": true,
+        "auto_downgrade_timing": "on_expire"
+    },
+    "original_auto_apply": true,
+    "switch_order_id": 15681,
+    "cleaned_at": "2026-10-18T11:24:08+00:00",
+    "cleanup_checks": {
+        "user_removed": true,
+        "coming_soon_restored": true,
+        "aggregation_restored": true,
+        "download_rules_restored": true,
+        "comment_rules_restored": true,
+        "ecommerce_rules_restored": true,
+        "subscription_12479_removed": true,
+        "product_12476_removed": true,
+        "subscription_12485_removed": true,
+        "product_12483_removed": true,
+        "source_order_removed": true,
+        "post_removed": true,
+        "file_removed": true,
+        "plan_switching_restored": true,
+        "auto_apply_restored": true,
+        "core_active": true,
+        "pro_active": true
+    }
+}

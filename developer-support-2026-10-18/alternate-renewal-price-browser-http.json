@@ -1,0 +1,25 @@
+{
+  "actor": "admin user 1",
+  "checks": [
+    {
+      "code": "parent_billed_subscription",
+      "field": "different_renewal_price",
+      "passed": true,
+      "status": 409
+    },
+    {
+      "code": "parent_billed_subscription",
+      "field": "different_renewal_price_after",
+      "passed": true,
+      "status": 409
+    },
+    {
+      "code": "parent_billed_subscription",
+      "field": "enable_different_renewal_price",
+      "passed": true,
+      "status": 409
+    }
+  ],
+  "subscription_id": 17568,
+  "unchanged": true
+}

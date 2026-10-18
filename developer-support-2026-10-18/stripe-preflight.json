@@ -1,0 +1,7 @@
+{
+    "official_gateway_active": false,
+    "enabled": "no",
+    "testmode": "yes",
+    "test_publishable_key_present": false,
+    "test_secret_key_present": false
+}

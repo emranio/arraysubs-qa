@@ -1,0 +1,2 @@
+Fixtures: subscription=17344, guest_order=17352, customers=356,358, logins=guest-history-d6532535-{owner,other}.
+Success: 28 guest-order history assertions passed; disposable fixtures cleaned.

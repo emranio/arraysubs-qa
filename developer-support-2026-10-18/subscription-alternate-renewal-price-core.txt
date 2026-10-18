@@ -1,0 +1,55 @@
+PASS: provider-owned rejects different_renewal_price without partial writes or events
+PASS: provider-owned rejects different_renewal_price_after without partial writes or events
+PASS: provider-owned rejects enable_different_renewal_price without partial writes or events
+PASS: provider-owned accepts an unchanged renewal price
+PASS: box child rejects different_renewal_price without partial writes or events
+PASS: box child rejects different_renewal_price_after without partial writes or events
+PASS: box child rejects enable_different_renewal_price without partial writes or events
+PASS: box child accepts an unchanged renewal price
+PASS: bundle child rejects different_renewal_price without partial writes or events
+PASS: bundle child rejects different_renewal_price_after without partial writes or events
+PASS: bundle child rejects enable_different_renewal_price without partial writes or events
+PASS: bundle child accepts an unchanged renewal price
+PASS: externally billed rejects different_renewal_price without partial writes or events
+PASS: externally billed rejects different_renewal_price_after without partial writes or events
+PASS: externally billed rejects enable_different_renewal_price without partial writes or events
+PASS: externally billed accepts an unchanged renewal price
+PASS: gateway settlement rejects different_renewal_price without partial writes or events
+PASS: gateway settlement rejects different_renewal_price_after without partial writes or events
+PASS: gateway settlement rejects enable_different_renewal_price without partial writes or events
+PASS: gateway settlement accepts an unchanged renewal price
+PASS: pending plan switch rejects different_renewal_price without partial writes or events
+PASS: pending plan switch rejects different_renewal_price_after without partial writes or events
+PASS: pending plan switch rejects enable_different_renewal_price without partial writes or events
+PASS: pending plan switch accepts an unchanged renewal price
+PASS: frozen renewal invoice rejects different_renewal_price without partial writes or events
+PASS: frozen renewal invoice rejects different_renewal_price_after without partial writes or events
+PASS: frozen renewal invoice rejects enable_different_renewal_price without partial writes or events
+PASS: frozen renewal invoice accepts an unchanged renewal price
+PASS: Ordinary local subscriptions can update alternate renewal prices together
+PASS: Fixtures use the real persisted subscription and WooCommerce order stores
+PASS: Every temporary subscription, order, product and customer was removed
+{
+    "checks": 31,
+    "passed": 31,
+    "failed": [],
+    "fixtures": {
+        "subscriptions": {
+            "provider-owned": 16668,
+            "box child": 16673,
+            "bundle child": 16679,
+            "externally billed": 16685,
+            "gateway settlement": 16690,
+            "pending plan switch": 16695,
+            "frozen renewal invoice": 16701
+        },
+        "orders": [
+            16706
+        ],
+        "customer_id": 349,
+        "login": "alternate-price-d0ca780c",
+        "email": "alternate-price-d0ca780c@example.test",
+        "role": "customer"
+    },
+    "fixtures_cleaned": true
+}

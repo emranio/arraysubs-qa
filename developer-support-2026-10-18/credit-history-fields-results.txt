@@ -1,0 +1,4 @@
+PASS: Unknown field fails on an empty ledger
+PASS: Non-string field fails on an empty ledger
+PASS: Valid field projection keeps the empty collection envelope
+Fixtures cleaned: 1

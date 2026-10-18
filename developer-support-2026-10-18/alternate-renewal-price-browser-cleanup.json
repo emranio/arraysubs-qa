@@ -1,0 +1,12 @@
+{
+    "subscriptions": {
+        "parent": 17565,
+        "child": 17568
+    },
+    "product_id": 17563,
+    "actor": 1,
+    "blocked_price_fields_unchanged": true,
+    "ordinary_contact_save_persisted": true,
+    "only_created_auth_token_revoked": true,
+    "fixtures_cleaned": true
+}
