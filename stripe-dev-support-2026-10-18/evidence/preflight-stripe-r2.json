@@ -1,0 +1,440 @@
+{
+    "generated_at_utc": "2026-10-19T07:02:51+00:00",
+    "stripe_plugin_version": "10.9.0",
+    "official_gateway": {
+        "enabled": "yes",
+        "testmode": "yes",
+        "mode_class_is_test": true,
+        "test_publishable_key_is_pk_test": true,
+        "test_secret_key_is_test_class": true,
+        "live_publishable_key_present": false,
+        "live_secret_key_present": false,
+        "test_webhook_secret_is_whsec": true,
+        "test_webhook_data_url": "https://mirror-help.arrayhash.com/?wc-api=wc_stripe",
+        "test_webhook_data_id": "we_1UACQaJG5OzSNVs2Q317EsnD",
+        "test_webhook_data_secret_present": true,
+        "test_connection_type": "connect",
+        "capture": "yes",
+        "saved_cards": "yes",
+        "upe_checkout_experience_enabled": "yes",
+        "upe_accepted_payments": [
+            "card",
+            "link"
+        ],
+        "optimized_checkout_element": "yes",
+        "express_checkout": "yes",
+        "logging": "no"
+    },
+    "store": {
+        "currency": "USD",
+        "home_url": "https://mirror-help.arrayhash.com/",
+        "checkout_page_id": 8,
+        "hpos_enabled": true,
+        "registered_gateways": [
+            "stripe",
+            "stripe_us_bank_account",
+            "stripe_alipay",
+            "stripe_amazon_pay",
+            "stripe_blik",
+            "stripe_klarna",
+            "stripe_affirm",
+            "stripe_afterpay_clearpay",
+            "stripe_eps",
+            "stripe_bancontact",
+            "stripe_boleto",
+            "stripe_ideal",
+            "stripe_oxxo",
+            "stripe_sepa_debit",
+            "stripe_p24",
+            "stripe_multibanco",
+            "stripe_link",
+            "stripe_wechat_pay",
+            "stripe_cashapp",
+            "stripe_acss_debit",
+            "stripe_bacs_debit",
+            "stripe_au_becs_debit",
+            "arraysubs_paddle",
+            "arraysubs_paypal",
+            "bacs",
+            "cheque",
+            "cod"
+        ]
+    },
+    "stripe_account": {
+        "id_masked": "acct_1TR\u2026NVs2",
+        "country": "US",
+        "default_currency": "usd",
+        "charges_enabled": false,
+        "livemode_flag_on_endpoint_objects": null
+    },
+    "webhook_endpoints_count": 4,
+    "webhook_endpoints": [
+        {
+            "id": "we_1UAqXNJG5OzSNVs2rQQabEVE",
+            "url": "https://test1.emran.io/wp-json/arraysubs/v1/webhooks/arraysubs_stripe",
+            "status": "enabled",
+            "livemode": false,
+            "api_version": "2026-03-25.dahlia",
+            "description": "ArraySubs secondary Stripe webhook",
+            "enabled_events": [
+                "charge.dispute.closed",
+                "charge.dispute.created",
+                "charge.refunded",
+                "charge.succeeded",
+                "customer.source.expiring",
+                "customer.updated",
+                "invoice.payment_failed",
+                "invoice.payment_succeeded",
+                "payment_intent.payment_failed",
+                "payment_intent.requires_action",
+                "payment_intent.succeeded",
+                "payment_method.attached",
+                "payment_method.automatically_updated",
+                "payment_method.card_automatically_updated",
+                "payment_method.updated",
+                "setup_intent.succeeded"
+            ],
+            "enabled_events_count": 16
+        },
+        {
+            "id": "we_1UAqWhJG5OzSNVs2paOLJm6m",
+            "url": "https://test1.emran.io/?wc-api=wc_stripe",
+            "status": "enabled",
+            "livemode": false,
+            "api_version": "2026-03-25.dahlia",
+            "description": "",
+            "enabled_events": [
+                "account.updated",
+                "source.chargeable",
+                "source.canceled",
+                "charge.succeeded",
+                "charge.failed",
+                "charge.captured",
+                "charge.dispute.created",
+                "charge.dispute.closed",
+                "charge.refunded",
+                "charge.refund.updated",
+                "review.opened",
+                "review.closed",
+                "payment_intent.processing",
+                "payment_intent.succeeded",
+                "payment_intent.payment_failed",
+                "payment_intent.amount_capturable_updated",
+                "payment_intent.requires_action",
+                "setup_intent.succeeded",
+                "setup_intent.setup_failed",
+                "checkout.session.completed",
+                "checkout.session.expired",
+                "checkout.session.async_payment_succeeded",
+                "checkout.session.async_payment_failed"
+            ],
+            "enabled_events_count": 23
+        },
+        {
+            "id": "we_1UACQaJG5OzSNVs2Q317EsnD",
+            "url": "https://mirror-help.arrayhash.com/?wc-api=wc_stripe",
+            "status": "enabled",
+            "livemode": false,
+            "api_version": "2026-03-25.dahlia",
+            "description": "",
+            "enabled_events": [
+                "account.updated",
+                "source.chargeable",
+                "source.canceled",
+                "charge.succeeded",
+                "charge.failed",
+                "charge.captured",
+                "charge.dispute.created",
+                "charge.dispute.closed",
+                "charge.refunded",
+                "charge.refund.updated",
+                "review.opened",
+                "review.closed",
+                "payment_intent.processing",
+                "payment_intent.succeeded",
+                "payment_intent.payment_failed",
+                "payment_intent.amount_capturable_updated",
+                "payment_intent.requires_action",
+                "setup_intent.succeeded",
+                "setup_intent.setup_failed",
+                "checkout.session.completed",
+                "checkout.session.expired",
+                "checkout.session.async_payment_succeeded",
+                "checkout.session.async_payment_failed"
+            ],
+            "enabled_events_count": 23
+        },
+        {
+            "id": "we_1U7V8AJG5OzSNVs2KHSlEsOW",
+            "url": "https://mirror-help.arrayhash.com/wp-json/arraysubs/v1/webhooks/arraysubs_stripe",
+            "status": "enabled",
+            "livemode": false,
+            "api_version": "2025-09-30.clover",
+            "description": "ArraySubs secondary Stripe webhook",
+            "enabled_events": [
+                "charge.dispute.closed",
+                "charge.dispute.created",
+                "charge.refunded",
+                "charge.succeeded",
+                "customer.source.expiring",
+                "customer.updated",
+                "invoice.payment_failed",
+                "invoice.payment_succeeded",
+                "payment_intent.payment_failed",
+                "payment_intent.requires_action",
+                "payment_intent.succeeded",
+                "payment_method.attached",
+                "payment_method.automatically_updated",
+                "payment_method.card_automatically_updated",
+                "payment_method.detached",
+                "payment_method.updated",
+                "setup_intent.succeeded"
+            ],
+            "enabled_events_count": 17
+        }
+    ],
+    "secondary_webhook": {
+        "expected_url": "https://mirror-help.arrayhash.com/wp-json/arraysubs/v1/webhooks/arraysubs_stripe",
+        "found_remote": true,
+        "remote_id": "we_1U7V8AJG5OzSNVs2KHSlEsOW",
+        "remote_status": "enabled",
+        "required_events_from_code": [
+            "payment_intent.succeeded",
+            "payment_intent.payment_failed",
+            "payment_intent.requires_action",
+            "invoice.payment_succeeded",
+            "invoice.payment_failed",
+            "charge.succeeded",
+            "charge.refunded",
+            "charge.dispute.created",
+            "charge.dispute.closed",
+            "setup_intent.succeeded",
+            "customer.source.expiring",
+            "payment_method.updated",
+            "payment_method.automatically_updated",
+            "payment_method.card_automatically_updated",
+            "payment_method.attached",
+            "customer.updated"
+        ],
+        "required_events_count": 16,
+        "remote_enabled_events": [
+            "charge.dispute.closed",
+            "charge.dispute.created",
+            "charge.refunded",
+            "charge.succeeded",
+            "customer.source.expiring",
+            "customer.updated",
+            "invoice.payment_failed",
+            "invoice.payment_succeeded",
+            "payment_intent.payment_failed",
+            "payment_intent.requires_action",
+            "payment_intent.succeeded",
+            "payment_method.attached",
+            "payment_method.automatically_updated",
+            "payment_method.card_automatically_updated",
+            "payment_method.detached",
+            "payment_method.updated",
+            "setup_intent.succeeded"
+        ],
+        "missing_required_events": [],
+        "extra_remote_events": [
+            "payment_method.detached"
+        ],
+        "wildcard": false,
+        "includes_payment_method_attached": true,
+        "includes_customer_updated": true,
+        "stored_status": {
+            "mode": "test",
+            "endpoint_id": "we_1U7V8AJG5OzSNVs2KHSlEsOW",
+            "url": "https://mirror-help.arrayhash.com/wp-json/arraysubs/v1/webhooks/arraysubs_stripe",
+            "secret_present": true,
+            "schema_fingerprint": "d3ab02c740b59201f0a8e5c399ac774d31116d109a4e9ba873641633eb5b69fd",
+            "last_error": "",
+            "updated_at": "2026-09-03 15:12:08"
+        },
+        "code_fingerprint": "d3ab02c740b59201f0a8e5c399ac774d31116d109a4e9ba873641633eb5b69fd",
+        "stored_secret_is_whsec": true,
+        "health_check": {
+            "success": true,
+            "healthy": true,
+            "configured": true,
+            "message": "The ArraySubs Stripe webhook endpoint is enabled and listening for all required events.",
+            "mode": "test",
+            "url": "https://mirror-help.arrayhash.com/wp-json/arraysubs/v1/webhooks/arraysubs_stripe",
+            "endpoint_id": "we_1U7V8AJG5OzSNVs2KHSlEsOW",
+            "endpoint_status": "enabled",
+            "secret_present": true,
+            "missing_events": [],
+            "event_count": 17,
+            "matching_endpoint_count": 1
+        },
+        "stored_fingerprint_matches_code": true,
+        "stored_endpoint_matches_remote": true
+    },
+    "official_webhook": {
+        "found_remote": true,
+        "remote_id": "we_1UACQaJG5OzSNVs2Q317EsnD",
+        "remote_url": "https://mirror-help.arrayhash.com/?wc-api=wc_stripe",
+        "remote_status": "enabled",
+        "remote_enabled_events_count": 23,
+        "stored_id_matches_remote": true,
+        "wc_state": {
+            "monitoring_began_at": "2026-08-30T17:22:03+00:00",
+            "last_success_at": "2026-10-18T21:24:03+00:00",
+            "last_failure_at": null,
+            "last_error_reason": "No error",
+            "status_code": 1,
+            "status_message": "The most recent test webhook, timestamped 2026-10-18 21:24:03 UTC, was processed successfully.. There are approximately 4 webhooks pending."
+        }
+    },
+    "stripe_recent_events": [
+        {
+            "id": "evt_1US4waJG5OzSNVs2Hr1yWDe5",
+            "type": "balance.available",
+            "created": "2026-10-19T01:00:52+00:00",
+            "pending_webhooks": 0,
+            "livemode": false
+        },
+        {
+            "id": "evt_3US1YlJG5OzSNVs21cbkn7iu",
+            "type": "charge.updated",
+            "created": "2026-10-18T21:24:06+00:00",
+            "pending_webhooks": 0,
+            "livemode": false
+        },
+        {
+            "id": "evt_3US1YlJG5OzSNVs21kAv58uE",
+            "type": "payment_intent.succeeded",
+            "created": "2026-10-18T21:24:03+00:00",
+            "pending_webhooks": 0,
+            "livemode": false
+        },
+        {
+            "id": "evt_3US1YlJG5OzSNVs21Ff0RF0g",
+            "type": "charge.succeeded",
+            "created": "2026-10-18T21:24:03+00:00",
+            "pending_webhooks": 0,
+            "livemode": false
+        },
+        {
+            "id": "evt_3US1YlJG5OzSNVs21D9oFPkk",
+            "type": "payment_intent.created",
+            "created": "2026-10-18T21:24:03+00:00",
+            "pending_webhooks": 0,
+            "livemode": false
+        },
+        {
+            "id": "evt_3US11sJG5OzSNVs20nl12tIQ",
+            "type": "charge.updated",
+            "created": "2026-10-18T20:50:07+00:00",
+            "pending_webhooks": 0,
+            "livemode": false
+        },
+        {
+            "id": "evt_3US11sJG5OzSNVs202yH94JX",
+            "type": "payment_intent.succeeded",
+            "created": "2026-10-18T20:50:04+00:00",
+            "pending_webhooks": 0,
+            "livemode": false
+        },
+        {
+            "id": "evt_3US11sJG5OzSNVs20Frw3WMr",
+            "type": "charge.succeeded",
+            "created": "2026-10-18T20:50:04+00:00",
+            "pending_webhooks": 0,
+            "livemode": false
+        },
+        {
+            "id": "evt_3US11sJG5OzSNVs20Odyn2cf",
+            "type": "payment_intent.created",
+            "created": "2026-10-18T20:50:04+00:00",
+            "pending_webhooks": 0,
+            "livemode": false
+        },
+        {
+            "id": "evt_3US0XqJG5OzSNVs21gT8IlAo",
+            "type": "charge.updated",
+            "created": "2026-10-18T20:19:06+00:00",
+            "pending_webhooks": 0,
+            "livemode": false
+        },
+        {
+            "id": "evt_3US0XqJG5OzSNVs217y9IC6e",
+            "type": "payment_intent.succeeded",
+            "created": "2026-10-18T20:19:03+00:00",
+            "pending_webhooks": 0,
+            "livemode": false
+        },
+        {
+            "id": "evt_3US0XqJG5OzSNVs21LEEwnIt",
+            "type": "charge.succeeded",
+            "created": "2026-10-18T20:19:03+00:00",
+            "pending_webhooks": 0,
+            "livemode": false
+        },
+        {
+            "id": "evt_3US0XqJG5OzSNVs21hHTAeiR",
+            "type": "payment_intent.created",
+            "created": "2026-10-18T20:19:02+00:00",
+            "pending_webhooks": 0,
+            "livemode": false
+        },
+        {
+            "id": "evt_3URztFJG5OzSNVs21XOk8tmO",
+            "type": "charge.updated",
+            "created": "2026-10-18T19:37:08+00:00",
+            "pending_webhooks": 0,
+            "livemode": false
+        },
+        {
+            "id": "evt_3URztFJG5OzSNVs21kaa9B3Z",
+            "type": "payment_intent.succeeded",
+            "created": "2026-10-18T19:37:05+00:00",
+            "pending_webhooks": 0,
+            "livemode": false
+        }
+    ],
+    "stripe_undelivered_events_last_24h": [],
+    "arraysubs_webhook_log": {
+        "rows_arraysubs_stripe": 436,
+        "latest": [
+            {
+                "gateway_slug": "arraysubs_stripe",
+                "event_id": "evt_3US1YlJG5OzSNVs21Ff0RF0g",
+                "event_type": "charge.succeeded",
+                "processed_at": "2026-10-18 21:24:06"
+            },
+            {
+                "gateway_slug": "arraysubs_stripe",
+                "event_id": "evt_3US1YlJG5OzSNVs21kAv58uE",
+                "event_type": "payment_intent.succeeded",
+                "processed_at": "2026-10-18 21:24:06"
+            },
+            {
+                "gateway_slug": "arraysubs_stripe",
+                "event_id": "evt_3US11sJG5OzSNVs202yH94JX",
+                "event_type": "payment_intent.succeeded",
+                "processed_at": "2026-10-18 20:50:07"
+            },
+            {
+                "gateway_slug": "arraysubs_stripe",
+                "event_id": "evt_3US11sJG5OzSNVs20Frw3WMr",
+                "event_type": "charge.succeeded",
+                "processed_at": "2026-10-18 20:50:06"
+            },
+            {
+                "gateway_slug": "arraysubs_stripe",
+                "event_id": "evt_3US0XqJG5OzSNVs21LEEwnIt",
+                "event_type": "charge.succeeded",
+                "processed_at": "2026-10-18 20:19:05"
+            }
+        ],
+        "columns": [
+            "id",
+            "gateway_slug",
+            "event_id",
+            "event_type",
+            "processed_at"
+        ]
+    }
+}

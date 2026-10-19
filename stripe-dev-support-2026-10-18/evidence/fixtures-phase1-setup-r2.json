@@ -1,0 +1,91 @@
+{
+    "customers": [
+        {
+            "id": 576,
+            "login": "sqa-p1-classic",
+            "email": "sqa-p1-classic@example.com",
+            "created": false,
+            "use": "S01 classic success, S02 renewal"
+        },
+        {
+            "id": 577,
+            "login": "sqa-p1-block",
+            "email": "sqa-p1-block@example.com",
+            "created": false,
+            "use": "S01 block success, S02 renewal"
+        },
+        {
+            "id": 578,
+            "login": "sqa-p1-initfail",
+            "email": "sqa-p1-initfail@example.com",
+            "created": false,
+            "use": "S01 initial payment failure"
+        }
+    ],
+    "product_id": 68271,
+    "classic_checkout_page_id": 68273,
+    "protected_post_id": 68274,
+    "product_rest_status": 201,
+    "product_rest_response_keys": [
+        "code",
+        "message",
+        "content"
+    ],
+    "product_created": true,
+    "product": {
+        "status": "publish",
+        "price": "7.31",
+        "virtual": true,
+        "meta": {
+            "_is_subscription": [
+                "yes"
+            ],
+            "_subscription_period": [
+                "day"
+            ],
+            "_subscription_interval": [
+                "1"
+            ],
+            "_subscription_length": [
+                "0"
+            ],
+            "_trial_length": [
+                "0"
+            ],
+            "_signup_fee": [
+                "0"
+            ]
+        },
+        "permalink": "https://mirror-help.arrayhash.com/product/sqa-daily-stripe-plan/"
+    },
+    "classic_checkout_url": "https://mirror-help.arrayhash.com/sqa-classic-checkout/",
+    "protected_post_config": {
+        "enabled": true,
+        "mode": "restrict",
+        "visShow": "logged_in",
+        "status": [],
+        "roles": [],
+        "products": [
+            68271
+        ],
+        "variations": [],
+        "purchased": [],
+        "lifetimeSpent": "",
+        "condition": "and",
+        "feature": "",
+        "featureMatch": "has",
+        "featureValue": "",
+        "featureOp": ">=",
+        "aggregation": "sum",
+        "deniedAction": "message",
+        "message": "SQA-DENIED-7731: an active SQA Daily Stripe Plan subscription is required.",
+        "redirectType": "page",
+        "redirectPageId": 0,
+        "redirectPageLabel": "",
+        "redirectUrl": "",
+        "loginRequired": false,
+        "showToAdmins": true
+    },
+    "protected_post_url": "https://mirror-help.arrayhash.com/sqa-members-daily-content/",
+    "passwords_written_for": []
+}

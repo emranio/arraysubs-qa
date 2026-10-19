@@ -1,0 +1,20 @@
+{
+    "subscription_ids": [
+        68281,
+        68293,
+        68304,
+        68315,
+        68330,
+        68341
+    ],
+    "customer_ids": [
+        576,
+        577,
+        578
+    ],
+    "customer_emails": [
+        "sqa-p1-classic@example.com",
+        "sqa-p1-block@example.com",
+        "sqa-p1-initfail@example.com"
+    ]
+}

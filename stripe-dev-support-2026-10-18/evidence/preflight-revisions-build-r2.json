@@ -1,0 +1,108 @@
+{
+ "captured_at_utc": "2026-10-19T07:01:45.330656Z",
+ "restart": "r2 (2026-10-19) after 2026-10-18 DB outage",
+ "server_timezone_note": "file mtimes and reflog are server local time (CEST, +02:00); WordPress gmt_offset is +6",
+ "core": {
+  "requested": "a5c9711fdc955a54b7c396827fd7b223b48408ef",
+  "head": "47918322ebbad435bf27749b0dc5cedc7a4a7e6b",
+  "requested_is_ancestor_of_head": true,
+  "commits_after_requested": [
+   "4791832 fix: fire shipping address hooks from the customer route and keep the overdue order on grace_ended",
+   "cfcfaac fix(integrations): give each payment failure and attempt its own lifecycle event ID",
+   "44036ed fix(gateways): reset PayPal error status on recovery and retry Mollie failures"
+  ],
+  "working_tree_clean": true,
+  "src_resources_diff_since_requested": "",
+  "build_files_total": 223,
+  "build_manifest_sha256": "58fe5997539d620c90b1f671267cfa6ed9143e34ceeba6f2c0b13d7c72ffb7df",
+  "newest_build_mtime_local": "2026-10-18T14:06:30.395149",
+  "newest_src_resources_mtime_local": "2026-10-18T14:04:54.552679",
+  "build_log_compile_r1": "2026-10-18 14:06:30: webpack 5.105.2 compiled successfully in 64690 ms (2b998ec9e25adab1cc8f)",
+  "key_assets": {
+   "admin/mainadmin.js": {
+    "sha256": "cdc1785d61be2ef4ad857be87f75e91037231e7d1d7c8a9be95c03194e2a6b13",
+    "matches_r1": true,
+    "mtime_local": "2026-10-18T14:06:30.305151"
+   },
+   "admin/mainadmin.asset.php": {
+    "sha256": "4743e0cab9bf1ec3d7160b15e59c309b2cf3e0596ceeab616e79048e040dd291",
+    "matches_r1": true,
+    "mtime_local": "2026-10-18T14:06:30.386149"
+   },
+   "customer-portal.js": {
+    "sha256": "03dc4e32c9c033b8aa8803b83b0ee8d444c114769ed92537cf84ab1d04bed076",
+    "matches_r1": true,
+    "mtime_local": "2026-10-18T14:06:30.304151"
+   },
+   "customer-portal.asset.php": {
+    "sha256": "1229f40540b3270016a4912cb3d0089bf3fb52c61f0fb265c338a645c8b97134",
+    "matches_r1": true,
+    "mtime_local": "2026-10-18T14:06:30.389149"
+   },
+   "automatic-payments-portal.js": {
+    "sha256": "b11bae1372f903253d7298951537a6d992480986ff77b2784963eed33b2e0106",
+    "matches_r1": true,
+    "mtime_local": "2026-08-17T10:39:08.297441"
+   },
+   "automatic-payments-portal.asset.php": {
+    "sha256": "9655c8e039aefdab38bc5d8511698d950783cd6979cde2a7fb90ecf03a3bc58a",
+    "matches_r1": true,
+    "mtime_local": "2026-09-02T19:35:54.941582"
+   },
+   "admin/stripe-settings.js": {
+    "sha256": "436e38f4dd23f235e343e937a81fadf315dc3682db8bcc4e2e436d0fec6c6d3a",
+    "matches_r1": true,
+    "mtime_local": "2026-08-15T03:36:39.929461"
+   },
+   "admin/product-edit-page.js": {
+    "sha256": "eace0555e841a55527331e612709b33c2693b3da74c60aded3a1fb9e7c4cf622",
+    "matches_r1": true,
+    "mtime_local": "2026-09-22T11:24:52.551278"
+   },
+   "store-api-cart-subscription.js": {
+    "sha256": "6b6e7bfd8cdc5790214f6338edc2715dd36dc8ae5a1405fd1497b3018ffcfc49",
+    "matches_r1": true,
+    "mtime_local": "2026-07-22T15:25:52.285960"
+   }
+  }
+ },
+ "pro": {
+  "requested": "561ed9235bb4859c2ec8ae1d809f8240f3d071e7",
+  "head": "edaa4010dbc821120c3f34975a395c73dd470e2a",
+  "requested_is_ancestor_of_head": true,
+  "commits_after_requested": [
+   "edaa401 fix(shipping): drop the unreachable customer shipping address route"
+  ],
+  "working_tree_clean": true,
+  "src_resources_diff_since_requested": "",
+  "build_files_total": 90,
+  "build_manifest_sha256": "ff55757466adeafdca4bb6f387ec75f464c189fa1b18ffcad7e74370fb0c06f9",
+  "newest_build_mtime_local": "2026-10-18T14:06:30.383149",
+  "newest_src_resources_mtime_local": "2026-10-18T14:04:56.584647",
+  "build_log_compile_r1": "2026-10-18 14:06:30: webpack 5.105.2 compiled successfully in 64763 ms (b31965d9c8e50d63da1c)",
+  "key_assets": {
+   "admin/feature-manager.js": {
+    "sha256": "d1a9de71409dcf93db0146dd9f0d103f5c888dbb229364512836533c6b07de39",
+    "matches_r1": true,
+    "mtime_local": "2026-10-18T14:06:30.325150"
+   },
+   "admin/feature-manager.asset.php": {
+    "sha256": "8bfffe7822c2fba2ba9d386034781601779c543fd504e1efee8f4df3d70aa673",
+    "matches_r1": true,
+    "mtime_local": "2026-10-18T14:06:30.371150"
+   },
+   "customer-portal-pro.js": {
+    "sha256": "11cce5321bbb63adab863bd963542b48a606cc82c2ba946ee6fc9703aafacc46",
+    "matches_r1": true,
+    "mtime_local": "2026-08-17T14:01:26.282084"
+   },
+   "admin/checkout-builder.js": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "matches_r1": true,
+    "mtime_local": "2026-05-08T10:49:16.930283"
+   }
+  }
+ },
+ "result": "PASS",
+ "interpretation": "HEADs unchanged since r1 (core 4791832, pro edaa401). Requested revisions are ancestors; trees clean; no src/resources changes since requested revisions; build outputs unchanged since r1 (all key asset hashes identical; newest build mtime 2026-10-18 14:06:30 local is after newest src/resources mtime)."
+}

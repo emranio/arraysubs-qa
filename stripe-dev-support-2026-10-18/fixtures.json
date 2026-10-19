@@ -1,0 +1,236 @@
+{
+    "run": "stripe-dev-support-2026-10-18",
+    "entries": [
+        {
+            "kind": "customer",
+            "id": 576,
+            "label": "sqa-p1-classic@example.com created r1 2026-10-18 13:45:35 UTC before outage, reused r2, password reset r2",
+            "recorded_at_utc": "2026-10-19T07:10:17+00:00",
+            "phase": "phase1"
+        },
+        {
+            "kind": "customer",
+            "id": 577,
+            "label": "sqa-p1-block@example.com created r1 2026-10-18 13:45:40 UTC before outage, reused r2, password reset r2",
+            "recorded_at_utc": "2026-10-19T07:10:19+00:00",
+            "phase": "phase1"
+        },
+        {
+            "kind": "customer",
+            "id": 578,
+            "label": "sqa-p1-initfail@example.com created r1 2026-10-18 13:45:44 UTC during outage without role, role customer set r2, password reset r2",
+            "recorded_at_utc": "2026-10-19T07:10:21+00:00",
+            "phase": "phase1"
+        },
+        {
+            "kind": "product",
+            "id": 68271,
+            "label": "SQA Daily Stripe Plan 7.31 USD per day via quick-products REST",
+            "recorded_at_utc": "2026-10-19T07:10:24+00:00",
+            "phase": "phase1"
+        },
+        {
+            "kind": "page",
+            "id": 68273,
+            "label": "SQA Classic Checkout page woocommerce_checkout shortcode",
+            "recorded_at_utc": "2026-10-19T07:10:26+00:00",
+            "phase": "phase1"
+        },
+        {
+            "kind": "post",
+            "id": 68274,
+            "label": "SQA Members Daily Content restricted to active sub of 68271",
+            "recorded_at_utc": "2026-10-19T07:10:28+00:00",
+            "phase": "phase1"
+        },
+        {
+            "kind": "customer",
+            "id": 576,
+            "label": "sqa-p1-classic S01 classic, S02 renewal",
+            "recorded_at_utc": "2026-10-19T07:10:46+00:00",
+            "phase": "phase-1"
+        },
+        {
+            "kind": "customer",
+            "id": 577,
+            "label": "sqa-p1-block S01 block, S02 renewal",
+            "recorded_at_utc": "2026-10-19T07:10:48+00:00",
+            "phase": "phase-1"
+        },
+        {
+            "kind": "customer",
+            "id": 578,
+            "label": "sqa-p1-initfail S01 initial failure",
+            "recorded_at_utc": "2026-10-19T07:10:50+00:00",
+            "phase": "phase-1"
+        },
+        {
+            "kind": "product",
+            "id": 68271,
+            "label": "SQA Daily Stripe Plan 7.31/day",
+            "recorded_at_utc": "2026-10-19T07:10:52+00:00",
+            "phase": "phase-1"
+        },
+        {
+            "kind": "page",
+            "id": 68273,
+            "label": "SQA Classic Checkout",
+            "recorded_at_utc": "2026-10-19T07:10:54+00:00",
+            "phase": "phase-1"
+        },
+        {
+            "kind": "post",
+            "id": 68274,
+            "label": "SQA Members Daily Content restricted",
+            "recorded_at_utc": "2026-10-19T07:10:56+00:00",
+            "phase": "phase-1"
+        },
+        {
+            "kind": "note",
+            "id": "r1-customers",
+            "label": "created 2026-10-18T13:45Z before outage, passwords reset in r2",
+            "recorded_at_utc": "2026-10-19T07:10:58+00:00",
+            "phase": "phase-1"
+        },
+        {
+            "kind": "order",
+            "id": 68280,
+            "label": "S01-A classic initial order",
+            "recorded_at_utc": "2026-10-19T07:17:27+00:00",
+            "phase": "phase-1"
+        },
+        {
+            "kind": "subscription",
+            "id": 68281,
+            "label": "S01-A classic subscription",
+            "recorded_at_utc": "2026-10-19T07:17:30+00:00",
+            "phase": "phase-1"
+        },
+        {
+            "kind": "stripe_object",
+            "id": "ch_3USAniJG5OzSNVs213QMkLe5",
+            "label": "S01-A classic initial charge",
+            "recorded_at_utc": "2026-10-19T07:17:33+00:00",
+            "phase": "phase-1"
+        },
+        {
+            "kind": "order",
+            "id": 68302,
+            "label": "S01-A block initial order",
+            "recorded_at_utc": "2026-10-19T07:21:44+00:00",
+            "phase": "phase-1"
+        },
+        {
+            "kind": "subscription",
+            "id": "68304\n68293",
+            "label": "S01-A block subscription",
+            "recorded_at_utc": "2026-10-19T07:21:46+00:00",
+            "phase": "phase-1"
+        },
+        {
+            "kind": "order",
+            "id": 68292,
+            "label": "S01-A block duplicate first order (concurrent checkout)",
+            "recorded_at_utc": "2026-10-19T07:26:20+00:00",
+            "phase": "phase-1"
+        },
+        {
+            "kind": "subscription",
+            "id": 68293,
+            "label": "S01-A block duplicate first subscription",
+            "recorded_at_utc": "2026-10-19T07:26:22+00:00",
+            "phase": "phase-1"
+        },
+        {
+            "kind": "subscription",
+            "id": 68304,
+            "label": "S01-A block subscription (correct registration)",
+            "recorded_at_utc": "2026-10-19T07:26:24+00:00",
+            "phase": "phase-1"
+        },
+        {
+            "kind": "order",
+            "id": 68314,
+            "label": "S01-A block repro1 saved-card order",
+            "recorded_at_utc": "2026-10-19T07:26:26+00:00",
+            "phase": "phase-1"
+        },
+        {
+            "kind": "subscription",
+            "id": 68315,
+            "label": "S01-A block repro1 subscription",
+            "recorded_at_utc": "2026-10-19T07:26:28+00:00",
+            "phase": "phase-1"
+        },
+        {
+            "kind": "order",
+            "id": 68329,
+            "label": "S01-A block repro2 new-card order",
+            "recorded_at_utc": "2026-10-19T07:26:30+00:00",
+            "phase": "phase-1"
+        },
+        {
+            "kind": "subscription",
+            "id": 68330,
+            "label": "S01-A block repro2 subscription",
+            "recorded_at_utc": "2026-10-19T07:26:32+00:00",
+            "phase": "phase-1"
+        },
+        {
+            "kind": "note",
+            "id": "registry-fix",
+            "label": "entry with id 68304+newline+68293 was a shell mishap; both subscriptions re-registered individually",
+            "recorded_at_utc": "2026-10-19T07:26:34+00:00",
+            "phase": "phase-1"
+        },
+        {
+            "kind": "order",
+            "id": 68340,
+            "label": "S01-A initial failure order",
+            "recorded_at_utc": "2026-10-19T07:28:19+00:00",
+            "phase": "phase-1"
+        },
+        {
+            "kind": "subscription",
+            "id": 68341,
+            "label": "S01-A initial failure subscription",
+            "recorded_at_utc": "2026-10-19T07:28:22+00:00",
+            "phase": "phase-1"
+        },
+        {
+            "kind": "stripe_object",
+            "id": "pi_3USAz5JG5OzSNVs21g1iBtSB",
+            "label": "S01-A initial failure PI",
+            "recorded_at_utc": "2026-10-19T07:28:24+00:00",
+            "phase": "phase-1"
+        },
+        {
+            "kind": "order",
+            "id": 68355,
+            "label": "S02-A classic renewal invoice",
+            "recorded_at_utc": "2026-10-19T07:30:34+00:00",
+            "phase": "phase-1"
+        },
+        {
+            "kind": "order",
+            "id": 68358,
+            "label": "S02-A block renewal invoice",
+            "recorded_at_utc": "2026-10-19T07:30:36+00:00",
+            "phase": "phase-1"
+        },
+        {
+            "kind": "action",
+            "id": 100813,
+            "label": "S02-A classic process_renewal",
+            "recorded_at_utc": "2026-10-19T07:30:53+00:00",
+            "phase": "phase-1"
+        },
+        {
+            "kind": "action",
+            "id": 100815,
+            "label": "S02-A block process_renewal",
+            "recorded_at_utc": "2026-10-19T07:30:56+00:00",
+            "phase": "phase-1"
+        }
+    ]
+}

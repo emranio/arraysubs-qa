@@ -1,0 +1,77 @@
+{
+    "captured_at_utc": "2026-10-18T13:41:59+00:00",
+    "disable_wp_cron": true,
+    "os_cron": "/etc/cron.d/mirror-help-arrayhash-wordpress: every minute, www-data, flock + php wp-cron.php",
+    "counts": [
+        {
+            "status": "canceled",
+            "c": "114"
+        },
+        {
+            "status": "complete",
+            "c": "26121"
+        },
+        {
+            "status": "failed",
+            "c": "21610"
+        },
+        {
+            "status": "pending",
+            "c": "93"
+        }
+    ],
+    "pending_past_due_over_5min": 0,
+    "in_progress": 0,
+    "completed_last_15min": 11,
+    "failed_last_24h": 0,
+    "recent_completed_arraysubs": [
+        {
+            "action_id": "100123",
+            "hook": "arraysubs_sweep_stripe_renewal_verifications",
+            "scheduled_date_gmt": "2026-10-18 13:38:04",
+            "last_attempt_gmt": "2026-10-18 13:39:04"
+        },
+        {
+            "action_id": "99457",
+            "hook": "arraysubs_generate_renewal_invoice",
+            "scheduled_date_gmt": "2026-10-18 13:36:11",
+            "last_attempt_gmt": "2026-10-18 13:37:06"
+        },
+        {
+            "action_id": "100110",
+            "hook": "arraysubs_sweep_retention_event_outbox",
+            "scheduled_date_gmt": "2026-10-18 13:36:06",
+            "last_attempt_gmt": "2026-10-18 13:37:04"
+        },
+        {
+            "action_id": "100109",
+            "hook": "arraysubs_sweep_paddle_plan_switch_checkouts",
+            "scheduled_date_gmt": "2026-10-18 13:36:06",
+            "last_attempt_gmt": "2026-10-18 13:37:04"
+        },
+        {
+            "action_id": "100108",
+            "hook": "arraysubs_sweep_plan_switch_finalizations",
+            "scheduled_date_gmt": "2026-10-18 13:36:06",
+            "last_attempt_gmt": "2026-10-18 13:37:04"
+        },
+        {
+            "action_id": "100107",
+            "hook": "arraysubs_sweep_plan_switch_finalizations",
+            "scheduled_date_gmt": "2026-10-18 13:36:05",
+            "last_attempt_gmt": "2026-10-18 13:37:04"
+        },
+        {
+            "action_id": "100106",
+            "hook": "arraysubs_sweep_stripe_renewal_verifications",
+            "scheduled_date_gmt": "2026-10-18 13:27:10",
+            "last_attempt_gmt": "2026-10-18 13:28:04"
+        },
+        {
+            "action_id": "100093",
+            "hook": "arraysubs_sweep_retention_event_outbox",
+            "scheduled_date_gmt": "2026-10-18 13:21:05",
+            "last_attempt_gmt": "2026-10-18 13:21:06"
+        }
+    ]
+}

@@ -1,0 +1,11 @@
+{
+ "check": "wp_mail() from WP-CLI -> WP Mail SMTP (Other SMTP 127.0.0.1:1025) -> Mailpit",
+ "wp_mail_return": true,
+ "mailpit_id": "5f38AGb4Hk7TBfMYR2P7nJ",
+ "subject": "SQA preflight mail check 2026-10-18",
+ "to": [
+  "sqa-mailcheck@example.com"
+ ],
+ "date": "2026-10-18T13:36:16Z",
+ "service": "mailpit-agent status: Active=active Enabled=enabled"
+}
