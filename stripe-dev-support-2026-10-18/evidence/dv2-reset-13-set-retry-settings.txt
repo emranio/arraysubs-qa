@@ -1,0 +1,2 @@
+200 {"enabled":true,"interval_hours":[24,24,24],"stop_on_hard_decline":false}
+applied_at_utc 2026-10-19T13:19:41Z

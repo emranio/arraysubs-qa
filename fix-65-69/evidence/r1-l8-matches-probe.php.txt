@@ -1,0 +1,21 @@
+{
+    "order_status": "failed",
+    "results": [
+        {
+            "scenario": "S0 staging as configured",
+            "metadata.site_url (cron)": "https://mirror-help.arrayhash.com",
+            "home_url() in HTTPS request": "https://mirror-help.arrayhash.com",
+            "matches() today": true,
+            "matches() with https evidence": true,
+            "matcher accepts cron value": true
+        },
+        {
+            "scenario": "S1 options http, served over HTTPS",
+            "metadata.site_url (cron)": "http://mirror-help.arrayhash.com",
+            "home_url() in HTTPS request": "https://mirror-help.arrayhash.com",
+            "matches() today": true,
+            "matches() with https evidence": true,
+            "matcher accepts cron value": true
+        }
+    ]
+}

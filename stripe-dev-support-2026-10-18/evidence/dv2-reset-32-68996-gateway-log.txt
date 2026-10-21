@@ -1,0 +1,26 @@
+# arraysubs-gateway-2026-10-19 lines 389.. for sub 68996 / order 68995 / renewal 69022 (UTC)
+2026-10-19T13:18:37+00:00 INFO [Gateway: arraysubs_stripe] [Webhook] Webhook received
+2026-10-19T13:18:37+00:00 INFO [Gateway: arraysubs_stripe] [Webhook] Webhook processed: payment_method.attached → payment_method_updated (subscription: 0, order: 0)
+2026-10-19T13:18:38+00:00 WARNING [Gateway: stripe] [Webhook] Refused to bind Stripe payment method pm_1USGSLJG5OzSNVs2Rq3U3j5W to subscription #68996: renewal_payment_method_binding_changed
+2026-10-19T13:18:39+00:00 INFO [Gateway: arraysubs_stripe] [Webhook] Webhook received
+2026-10-19T13:18:39+00:00 INFO [Gateway: arraysubs_stripe] [Webhook] Webhook received
+2026-10-19T13:18:39+00:00 INFO [Gateway: arraysubs_stripe] [Webhook] Webhook processed: customer.updated → payment_method_updated (subscription: 0, order: 0)
+2026-10-19T13:18:39+00:00 WARNING [Gateway: stripe] [Webhook] Refused to bind Stripe payment method pm_1USGSLJG5OzSNVs2Rq3U3j5W to subscription #68996: renewal_payment_method_binding_changed
+2026-10-19T13:18:57+00:00 INFO [Gateway: arraysubs_stripe] [Webhook] Webhook received
+2026-10-19T13:18:58+00:00 INFO [Gateway: stripe] Payment method updated by Stripe: Visa ending in 0341
+2026-10-19T13:18:58+00:00 INFO [Gateway: arraysubs_stripe] [Webhook] Webhook processed: setup_intent.succeeded → payment_method_updated (subscription: 68996, order: 68995)
+2026-10-19T13:19:06+00:00 INFO [Gateway: stripe] Remote recurring billing cancellation satisfied (not_required).
+2026-10-19T13:20:05+00:00 INFO [Gateway: stripe] Payment method updated by Stripe: Visa ending in 0341
+2026-10-19T13:22:43+00:00 INFO [Gateway: stripe] Creating Stripe off-session renewal PaymentIntent for order #69022.
+2026-10-19T13:22:45+00:00 ERROR [Gateway: stripe] [Gateway: stripe] Payment failed — card_declined: Your card was declined.
+2026-10-19T13:22:46+00:00 ERROR [Gateway: stripe] [Gateway: stripe] Payment failed — card_declined: Your card was declined.
+2026-10-19T13:22:46+00:00 INFO [Gateway: arraysubs_stripe] [Webhook] Webhook received
+2026-10-19T13:22:46+00:00 INFO [Gateway: arraysubs_stripe] [Webhook] Duplicate webhook event skipped: evt_3USGWWJG5OzSNVs21EMls2Lq
+2026-10-19T13:25:17+00:00 INFO [Gateway: arraysubs_stripe] [Webhook] Webhook received
+2026-10-19T13:25:17+00:00 INFO [Gateway: stripe] Payment method updated by Stripe: Visa ending in 0341
+2026-10-19T13:25:17+00:00 INFO [Gateway: arraysubs_stripe] [Webhook] Webhook processed: payment_method.updated → payment_method_updated (subscription: 68996, order: 69022)
+2026-10-19T13:27:28+00:00 INFO [Gateway: stripe] Creating Stripe off-session renewal PaymentIntent for order #69022.
+2026-10-19T13:27:29+00:00 ERROR [Gateway: stripe] [Gateway: stripe] Payment failed — card_declined: Your card was declined.
+2026-10-19T13:27:31+00:00 ERROR [Gateway: stripe] [Gateway: stripe] Payment failed — card_declined: Your card was declined.
+2026-10-19T13:27:32+00:00 INFO [Gateway: arraysubs_stripe] [Webhook] Webhook received
+2026-10-19T13:27:32+00:00 INFO [Gateway: arraysubs_stripe] [Webhook] Duplicate webhook event skipped: evt_3USGb6JG5OzSNVs21LHBXdA7

@@ -1,0 +1,98 @@
+{
+    "checked_at_utc": "2026-10-19T12:46:10+00:00",
+    "sub": 68788,
+    "sub_status": "arraysubs-active",
+    "sub_meta": {
+        "_customer_id": "588",
+        "_payment_gateway": "stripe",
+        "_payment_method": "stripe",
+        "_gateway_status": "active",
+        "_gateway_customer_id": "cus_VTB3WyfpHE0Hmp",
+        "_gateway_payment_method_id": "pm_1USEmEJG5OzSNVs2C0j7Paip",
+        "_payment_method_type": "card",
+        "_payment_method_brand": "visa",
+        "_payment_method_last4": "4242",
+        "_payment_method_updated_at": "2026-10-19 11:27:05",
+        "_payment_method_source": "stripe",
+        "_auto_renew": "",
+        "_next_payment_date": "2026-10-20 11:28:18",
+        "_pending_renewal_order_id": "",
+        "_completed_payments": "1",
+        "_last_gateway_transaction_id": "ch_3USEkHJG5OzSNVs21BIoyYvX",
+        "_renewal_invoice_action_id": "101154",
+        "_renewal_action_id": "101155",
+        "_arraysubs_payment_action_intent_id": "",
+        "_arraysubs_payment_action_url": "",
+        "_arraysubs_payment_action_required_at": "",
+        "_grace_period_status": ""
+    },
+    "sub_meta_other": {
+        "_arraysubs_lifecycle_attempt_seq": "1",
+        "_arraysubs_gateway_payment_failure_email_effects": "{\"4aabb3d157630ee066d12d8d0ea2d1f8750eaa7ea00b8954bd3960cca614db5e\":{\"status\":\"sent\",\"effect\":\"woocommerce_admin_email\",\"gateway\":\"stripe\",\"order_id\":68819,\"provider_attempt\":\"pi_3USEkHJG5OzSNVs213JINANu\",\"sent_at\":\"2026-10-19 11:28:51\"},\"bc5777530088c9f5a9f79c2999a9870ab58da22f35b95cc0ff5c39a0af61b962\":{\"status\":\"sent\",\"effect\":\"customer_email\",\"gateway\":\"stripe\",\"order_id\":68819,\"provider_attempt\":\"pi_3USEkHJG5OzSNVs213JINANu\",\"sent_at\":\"2026-10-19 11:28:52\"},\"b2dbc65e97e09403fdeadf3711b515ca6772e63d8e2a331cea70cb80fa58d024\":{\"status\":\"sent\",\"effect\":\"admin_email\",\"gateway\":\"stripe\",\"order_id\":68819,\"provider_attempt\":\"pi_3USEkHJG5OzSNVs213JINANu\",\"sent_at\":\"2026-10-19 11:28:52\"}}"
+    },
+    "retry_config": {
+        "enabled": true,
+        "max_attempts": 3,
+        "interval_seconds": 86400,
+        "intervals": [
+            86400,
+            86400,
+            86400
+        ],
+        "stop_on_hard_decline": true
+    },
+    "retry_attempts": 0,
+    "sub_orders": [
+        {
+            "refunds": [],
+            "customer_id": null
+        },
+        {
+            "refunds": [],
+            "customer_id": null
+        }
+    ],
+    "orders": {
+        "68819": {
+            "status": "completed",
+            "is_paid": true,
+            "total": "7.31",
+            "payment_method": "stripe",
+            "payment_method_title": "Credit / Debit Card",
+            "transaction_id": "ch_3USEkHJG5OzSNVs21BIoyYvX",
+            "created": "2026-10-19T11:28:08+00:00",
+            "date_paid": "2026-10-19T11:30:56+00:00",
+            "customer_id": 588,
+            "token_ids": [],
+            "meta": {
+                "_arraysubs_charge_attempt_at": "2026-10-19 11:28:49",
+                "_arraysubs_charge_attempt_gateway": "stripe",
+                "_arraysubs_charge_attempt_id": "8b372a6e-7904-47ec-b3d7-64b6d0454a19",
+                "_arraysubs_charge_attempt_transaction_id": "pi_3USEkHJG5OzSNVs213JINANu",
+                "_arraysubs_computed_type": "Subs Renew",
+                "_arraysubs_has_subscription_product": "yes",
+                "_arraysubs_pending_transaction_id": "pi_3USEkHJG5OzSNVs213JINANu",
+                "_arraysubs_renewal_payment_success_email_sent": "yes",
+                "_gateway_customer_id": "cus_VTB3WyfpHE0Hmp",
+                "_gateway_payment_method_id": "pm_1USEgsJG5OzSNVs2HaG6eb9j",
+                "_is_renewal_order": "yes",
+                "_last_gateway_transaction_id": "pi_3USEkHJG5OzSNVs213JINANu",
+                "_payment_gateway": "stripe",
+                "_stripe_charge_captured": "yes",
+                "_stripe_currency": "USD",
+                "_stripe_customer_id": "cus_VTB3WyfpHE0Hmp",
+                "_stripe_fee": "0.51",
+                "_stripe_intent_id": "pi_3USEkHJG5OzSNVs213JINANu",
+                "_stripe_net": "6.8",
+                "_stripe_source_id": "pm_1USEmEJG5OzSNVs2C0j7Paip",
+                "_stripe_upe_payment_type": "card",
+                "_subscription_id": "68788",
+                "_subscription_payment_processed": "yes",
+                "_subscription_renewal": "68788"
+            },
+            "linked_subs": [
+                68788
+            ]
+        }
+    }
+}

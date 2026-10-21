@@ -1,0 +1,32 @@
+[
+    {
+        "id": "evt_1USD8YJG5OzSNVs2gPv1q958",
+        "type": "setup_intent.succeeded",
+        "created_utc": "2026-10-19T09:45:46Z",
+        "object": "seti_1USD8XJG5OzSNVs2KSWIDnwf",
+        "payment_method": "pm_1USD8RJG5OzSNVs2evc1vjkw",
+        "customer": "cus_VT9RYbCJ9Snh2v",
+        "metadata_order_id": null,
+        "pending_webhooks": 0
+    },
+    {
+        "id": "evt_1USCjeJG5OzSNVs2jFCKSlD0",
+        "type": "payment_method.attached",
+        "created_utc": "2026-10-19T09:20:01Z",
+        "object": "pm_1USCjYJG5OzSNVs2tLfsvWnH",
+        "payment_method": null,
+        "customer": "cus_VT8uqNP3wxz3vs",
+        "metadata_order_id": null,
+        "pending_webhooks": 0
+    },
+    {
+        "id": "evt_1USEDFJG5OzSNVs28SNHTaKZ",
+        "type": "setup_intent.succeeded",
+        "created_utc": "2026-10-19T10:54:41Z",
+        "object": "seti_1USEDEJG5OzSNVs2BCuCo0Uo",
+        "payment_method": "pm_1USEDAJG5OzSNVs20wWVbJF7",
+        "customer": "cus_VTAYfIkcEgRtLH",
+        "metadata_order_id": null,
+        "pending_webhooks": 0
+    }
+]

@@ -1,0 +1,270 @@
+{
+    "at_utc": "2026-10-19T13:20:06Z",
+    "endTrial": {
+        "identity": {
+            "id": 68996,
+            "customer_id": 592,
+            "guest": false,
+            "customer_email": "sqa-dv2-reset@example.com",
+            "created_at": 1792415913,
+            "evaluated_at": 1792416005
+        },
+        "status": {
+            "stored": "arraysubs-active",
+            "has_view_entitlement": true,
+            "terminal": false
+        },
+        "plan": {
+            "product_id": 68435,
+            "variation_id": null,
+            "effective_product_id": 68435,
+            "name": "SQA Daily Trial Plan",
+            "quantity": 1
+        },
+        "pricing": {
+            "currency": "USD",
+            "initial_amount": "7.31",
+            "recurring_amount": "7.31",
+            "effective_recurring_amount": 7.31,
+            "signup_fee": "0",
+            "different_renewal_price_enabled": false,
+            "different_renewal_price": "0",
+            "different_renewal_price_after": 1
+        },
+        "schedule": {
+            "period": "day",
+            "interval": 1,
+            "length": 0,
+            "start_at": 1792415913,
+            "next_payment_at": 1792502404,
+            "last_payment_at": 1792415919,
+            "completed_payments": 0,
+            "provider_owns_billing_clock": false
+        },
+        "trial": {
+            "active": false,
+            "length": 0,
+            "period": "day",
+            "ends_at": null
+        },
+        "recovery": {
+            "policy": {
+                "before_on_hold": 3,
+                "before_on_hold_source": "site",
+                "before_cancel": 7,
+                "before_cancel_source": "site"
+            },
+            "due_at": 1792502404,
+            "on_hold_at": null,
+            "hold_eligible_at": 1792761604,
+            "cancel_eligible_at": 1793366404,
+            "evaluated_at": 1792416005,
+            "phase": "none",
+            "renewal_overdue": false,
+            "unpaid_renewal_order_id": null,
+            "awaiting_gateway_settlement": false,
+            "can_enter_on_hold": false,
+            "can_cancel_overdue": false,
+            "retry_attempts": 0,
+            "next_retry_at": null,
+            "last_failure_at": null,
+            "failure_category": null
+        },
+        "cancellation": {
+            "scheduled": false,
+            "scheduled_at": null,
+            "cancelled_at": null,
+            "reason": null,
+            "actor": null
+        },
+        "pending_switch": null,
+        "family": {
+            "parent_id": null,
+            "kind": null,
+            "billing_owner_id": 68996,
+            "orphaned": false,
+            "children": {
+                "items": [],
+                "page": 1,
+                "per_page": 20,
+                "has_more": false,
+                "next_page": null
+            }
+        },
+        "order_references": {
+            "initial_order_id": 68995,
+            "original_order_id": null,
+            "pending_renewal_order_id": null,
+            "pending_plan_switch_order_id": null
+        },
+        "orders": {
+            "items": [
+                68995
+            ],
+            "page": 1,
+            "per_page": 20,
+            "has_more": false,
+            "next_page": null
+        },
+        "billing": {
+            "first_name": "Sqa",
+            "last_name": "sqa-dv2-reset",
+            "company": "",
+            "address_1": "100 QA Test Street",
+            "address_2": "",
+            "city": "San Francisco",
+            "state": "CA",
+            "postcode": "94105",
+            "country": "US",
+            "email": "sqa-dv2-reset@example.com",
+            "phone": "4155550100"
+        },
+        "shipping": {
+            "first_name": "Sqa",
+            "last_name": "sqa-dv2-reset",
+            "company": "",
+            "address_1": "100 QA Test Street",
+            "address_2": "",
+            "city": "San Francisco",
+            "state": "CA",
+            "postcode": "94105",
+            "country": "US"
+        },
+        "modules": []
+    },
+    "setNextPaymentDate": "2026-10-19 13:21:35",
+    "result": {
+        "identity": {
+            "id": 68996,
+            "customer_id": 592,
+            "guest": false,
+            "customer_email": "sqa-dv2-reset@example.com",
+            "created_at": 1792415913,
+            "evaluated_at": 1792416006
+        },
+        "status": {
+            "stored": "arraysubs-active",
+            "has_view_entitlement": true,
+            "terminal": false
+        },
+        "plan": {
+            "product_id": 68435,
+            "variation_id": null,
+            "effective_product_id": 68435,
+            "name": "SQA Daily Trial Plan",
+            "quantity": 1
+        },
+        "pricing": {
+            "currency": "USD",
+            "initial_amount": "7.31",
+            "recurring_amount": "7.31",
+            "effective_recurring_amount": 7.31,
+            "signup_fee": "0",
+            "different_renewal_price_enabled": false,
+            "different_renewal_price": "0",
+            "different_renewal_price_after": 1
+        },
+        "schedule": {
+            "period": "day",
+            "interval": 1,
+            "length": 0,
+            "start_at": 1792415913,
+            "next_payment_at": 1792416095,
+            "last_payment_at": 1792415919,
+            "completed_payments": 0,
+            "provider_owns_billing_clock": false
+        },
+        "trial": {
+            "active": false,
+            "length": 0,
+            "period": "day",
+            "ends_at": null
+        },
+        "recovery": {
+            "policy": {
+                "before_on_hold": 3,
+                "before_on_hold_source": "site",
+                "before_cancel": 7,
+                "before_cancel_source": "site"
+            },
+            "due_at": 1792416095,
+            "on_hold_at": null,
+            "hold_eligible_at": 1792675295,
+            "cancel_eligible_at": 1793280095,
+            "evaluated_at": 1792416006,
+            "phase": "none",
+            "renewal_overdue": false,
+            "unpaid_renewal_order_id": null,
+            "awaiting_gateway_settlement": false,
+            "can_enter_on_hold": false,
+            "can_cancel_overdue": false,
+            "retry_attempts": 0,
+            "next_retry_at": null,
+            "last_failure_at": null,
+            "failure_category": null
+        },
+        "cancellation": {
+            "scheduled": false,
+            "scheduled_at": null,
+            "cancelled_at": null,
+            "reason": null,
+            "actor": null
+        },
+        "pending_switch": null,
+        "family": {
+            "parent_id": null,
+            "kind": null,
+            "billing_owner_id": 68996,
+            "orphaned": false,
+            "children": {
+                "items": [],
+                "page": 1,
+                "per_page": 20,
+                "has_more": false,
+                "next_page": null
+            }
+        },
+        "order_references": {
+            "initial_order_id": 68995,
+            "original_order_id": null,
+            "pending_renewal_order_id": null,
+            "pending_plan_switch_order_id": null
+        },
+        "orders": {
+            "items": [
+                68995
+            ],
+            "page": 1,
+            "per_page": 20,
+            "has_more": false,
+            "next_page": null
+        },
+        "billing": {
+            "first_name": "Sqa",
+            "last_name": "sqa-dv2-reset",
+            "company": "",
+            "address_1": "100 QA Test Street",
+            "address_2": "",
+            "city": "San Francisco",
+            "state": "CA",
+            "postcode": "94105",
+            "country": "US",
+            "email": "sqa-dv2-reset@example.com",
+            "phone": "4155550100"
+        },
+        "shipping": {
+            "first_name": "Sqa",
+            "last_name": "sqa-dv2-reset",
+            "company": "",
+            "address_1": "100 QA Test Street",
+            "address_2": "",
+            "city": "San Francisco",
+            "state": "CA",
+            "postcode": "94105",
+            "country": "US"
+        },
+        "modules": []
+    },
+    "status": "arraysubs-active",
+    "next_payment": "2026-10-19 13:21:35"
+}

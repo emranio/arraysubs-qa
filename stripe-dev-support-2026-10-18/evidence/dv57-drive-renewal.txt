@@ -1,0 +1,16 @@
+endTrial at 2026-10-19T10:58:03+00:00
+after endTrial: status=arraysubs-active next=2026-10-20 10:58:04 trial_end=2026-10-20 10:54:39
+setNextPaymentDate(1792407575 = 2026-10-19T10:59:35+00:00) at 2026-10-19T10:58:05+00:00
+after setNextPaymentDate: status=arraysubs-active next=2026-10-19 10:59:35 invoice_action=101055 renewal_action=101056
+action_id	hook	status	scheduled_date_gmt
+101036	arraysubs_generate_renewal_invoice	canceled	2026-10-20 07:50:15
+101037	arraysubs_process_renewal	canceled	2026-10-20 13:50:15
+101038	arraysubs_generate_renewal_invoice	canceled	2026-10-20 07:50:15
+101039	arraysubs_process_renewal	canceled	2026-10-20 13:50:15
+101051	arraysubs_generate_renewal_invoice	canceled	2026-10-20 07:50:15
+101052	arraysubs_process_renewal	canceled	2026-10-20 13:50:15
+101053	arraysubs_generate_renewal_invoice	canceled	2026-10-20 07:53:40
+101054	arraysubs_process_renewal	canceled	2026-10-20 13:53:40
+101055	arraysubs_generate_renewal_invoice	pending	2026-10-19 10:59:05
+101056	arraysubs_process_renewal	pending	2026-10-19 13:55:11
+

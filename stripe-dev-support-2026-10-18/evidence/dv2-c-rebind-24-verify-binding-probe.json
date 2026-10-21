@@ -1,0 +1,14 @@
+{
+    "checked_at_utc": "2026-10-19T12:57:38+00:00",
+    "sub": 68788,
+    "customer": "cus_VTB3WyfpHE0Hmp",
+    "pm": "pm_1USEmEJG5OzSNVs2C0j7Paip",
+    "card_is_reusable_type": true,
+    "result": {
+        "error_code": "renewal_payment_method_binding_invalid",
+        "message": "The stored Stripe payment method is not an exact reusable off-session match for this subscription. No charge was attempted."
+    },
+    "classified_category": "unknown",
+    "is_hard_decline": false,
+    "type_meta_unchanged": true
+}

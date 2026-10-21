@@ -1,0 +1,3 @@
+a gross=9.99 (line=10.004463 remainder=-0.01)
+b gross=10.00 (line=10.004463 remainder=0.00)
+cart_total=20.00 sum_of_shares=19.99

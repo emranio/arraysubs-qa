@@ -1,0 +1,26 @@
+{
+    "before": {
+        "deadline": "",
+        "marker": "pi_3USYAQJG5OzSNVs21UszEY7E",
+        "stored_pi": "pi_3USYAQJG5OzSNVs21UszEY7E",
+        "attempts": "3",
+        "next_retry_at": "2026-10-21 08:13:07",
+        "pending_action": "102116 2026-10-21 08:13:07"
+    },
+    "with_leftover_deadline": {
+        "deadline": "2026-10-22 09:25:04",
+        "marker": "pi_3USYAQJG5OzSNVs21UszEY7E",
+        "stored_pi": "pi_3USYAQJG5OzSNVs21UszEY7E",
+        "attempts": "3",
+        "next_retry_at": "2026-10-21 08:13:07",
+        "pending_action": "102116 2026-10-21 08:13:07"
+    },
+    "after_sweep_step": {
+        "deadline": "",
+        "marker": "pi_3USYAQJG5OzSNVs21UszEY7E",
+        "stored_pi": "pi_3USYAQJG5OzSNVs21UszEY7E",
+        "attempts": "3",
+        "next_retry_at": "2026-10-21 08:13:07",
+        "pending_action": "102116 2026-10-21 08:13:07"
+    }
+}

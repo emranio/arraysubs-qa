@@ -1,0 +1,43 @@
+{
+    "at_utc": "2026-10-19T13:13:44Z",
+    "unix": 1792415624,
+    "mode": "post",
+    "pm_before": {
+        "id": "pm_1USF2UJG5OzSNVs2ystkVGZw",
+        "object": "payment_method",
+        "type": "card",
+        "customer": "cus_VTBPCTCftcrwfA",
+        "billing_details_name": "Sqa sqa-dv60-ladder",
+        "card": {
+            "brand": "visa",
+            "last4": "0341",
+            "exp_month": 12,
+            "exp_year": 2030
+        },
+        "livemode": false
+    },
+    "request": {
+        "path": "payment_methods/pm_1USF2UJG5OzSNVs2ystkVGZw",
+        "method": "POST",
+        "params": {
+            "billing_details": {
+                "name": "Sqa dv2 reset test"
+            }
+        }
+    },
+    "pm_after": {
+        "id": "pm_1USF2UJG5OzSNVs2ystkVGZw",
+        "object": "payment_method",
+        "type": "card",
+        "customer": "cus_VTBPCTCftcrwfA",
+        "billing_details_name": "Sqa dv2 reset test",
+        "card": {
+            "brand": "visa",
+            "last4": "0341",
+            "exp_month": 12,
+            "exp_year": 2030
+        },
+        "livemode": false
+    },
+    "posted_at_utc": "2026-10-19T13:13:44Z"
+}

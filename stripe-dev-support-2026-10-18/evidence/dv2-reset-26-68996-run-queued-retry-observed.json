@@ -1,0 +1,153 @@
+{
+    "action_before": {
+        "action_id": "101277",
+        "hook": "arraysubs_process_renewal",
+        "status": "pending",
+        "args": "[68996]",
+        "scheduled_date_gmt": "2026-10-20 13:22:46"
+    },
+    "meta_before_run": {
+        "_payment_retry_attempts": "<absent>",
+        "_last_payment_failure": "<absent>",
+        "_payment_retry_next_attempt_at": "<absent>",
+        "_last_payment_failure_category": "<absent>"
+    },
+    "run_started_utc": "2026-10-19T13:27:27.212Z",
+    "run_finished_utc": "2026-10-19T13:27:31.540Z",
+    "observations": [
+        {
+            "at": "2026-10-19T13:27:27.297Z",
+            "hook": "arraysubs_renewal_payment_attempt",
+            "attempt": 0,
+            "order_id": 69022
+        },
+        {
+            "at": "2026-10-19T13:27:27.655Z",
+            "hook": "http_api_debug(stripe)",
+            "method": "GET",
+            "path": "/v1/payment_intents/pi_3USGWWJG5OzSNVs21XYG019B",
+            "query_keys": [],
+            "http_code": 200
+        },
+        {
+            "at": "2026-10-19T13:27:28.103Z",
+            "hook": "http_api_debug(stripe)",
+            "method": "GET",
+            "path": "/v1/payment_intents",
+            "query_keys": [],
+            "http_code": 200
+        },
+        {
+            "at": "2026-10-19T13:27:28.659Z",
+            "hook": "http_api_debug(stripe)",
+            "method": "GET",
+            "path": "/v1/payment_methods/pm_1USGSLJG5OzSNVs2Rq3U3j5W",
+            "query_keys": [],
+            "http_code": 200
+        },
+        {
+            "at": "2026-10-19T13:27:29.831Z",
+            "hook": "http_api_debug(stripe)",
+            "method": "POST",
+            "path": "/v1/payment_intents",
+            "query_keys": [],
+            "http_code": 402
+        },
+        {
+            "at": "2026-10-19T13:27:30.272Z",
+            "hook": "arraysubs_renewal_payment_attempt_result",
+            "attempt": 0,
+            "result": "failed"
+        },
+        {
+            "at": "2026-10-19T13:27:30.647Z",
+            "hook": "arraysubs_renewal_payment_failed",
+            "order_id": 69022,
+            "message": "Your card was declined."
+        }
+    ],
+    "meta_after_run": {
+        "_payment_retry_attempts": "<absent>",
+        "_payment_retry_last_attempt_at": "<absent>",
+        "_payment_retry_next_attempt_at": "<absent>",
+        "_last_payment_failure": "2026-10-19 13:27:30",
+        "_last_payment_failure_reason": "Your card was declined.",
+        "_last_payment_failure_category": "card_declined",
+        "_pending_renewal_order_id": "69022",
+        "_arraysubs_lifecycle_attempt_seq": "2"
+    },
+    "new_subscription_notes": [
+        {
+            "id": 69037,
+            "date_gmt": "2026-10-19 13:27:28",
+            "type": "private",
+            "text": "[Gateway: stripe] Creating Stripe off-session renewal PaymentIntent for order #69022."
+        },
+        {
+            "id": 69038,
+            "date_gmt": "2026-10-19 13:27:30",
+            "type": "private",
+            "text": "[Gateway: stripe] Payment failed \u2014 card_declined: Your card was declined."
+        },
+        {
+            "id": 69039,
+            "date_gmt": "2026-10-19 13:27:30",
+            "type": "private",
+            "text": "Renewal payment failed: the card was declined by the issuer. Gateway message: \"Your card was declined.\"."
+        },
+        {
+            "id": 69040,
+            "date_gmt": "2026-10-19 13:27:30",
+            "type": "private",
+            "text": "No automatic retry was scheduled because this failure will not resolve on its own: the card was declined by the issuer. The customer needs to update their payment method."
+        },
+        {
+            "id": 69041,
+            "date_gmt": "2026-10-19 13:27:30",
+            "type": "customer",
+            "text": "Payment failed for Order #69022. Gateway: Stripe. Reason: Your card was declined."
+        },
+        {
+            "id": 69042,
+            "date_gmt": "2026-10-19 13:27:31",
+            "type": "private",
+            "text": "Email sent: [ArraySubs] Renewal Payment Failed"
+        },
+        {
+            "id": 69043,
+            "date_gmt": "2026-10-19 13:27:31",
+            "type": "scheduled_job",
+            "text": "[Process Renewal] &#10007; FailedYour card was declined."
+        }
+    ],
+    "action_after": {
+        "action_id": "101277",
+        "hook": "arraysubs_process_renewal",
+        "status": "complete",
+        "scheduled_date_gmt": "2026-10-20 13:22:46",
+        "last_attempt_gmt": "2026-10-19 13:27:31"
+    },
+    "action_logs": [
+        {
+            "log_id": "294944",
+            "message": "action created",
+            "log_date_gmt": "2026-10-19 13:22:46"
+        },
+        {
+            "log_id": "294957",
+            "message": "action started via Action Scheduler CLI",
+            "log_date_gmt": "2026-10-19 13:27:27"
+        },
+        {
+            "log_id": "294959",
+            "message": "action complete via Action Scheduler CLI",
+            "log_date_gmt": "2026-10-19 13:27:31"
+        }
+    ],
+    "later_actions_args_sub": [],
+    "renewal_order": {
+        "id": 69022,
+        "status": "failed",
+        "intent": "pi_3USGb6JG5OzSNVs2113HngyQ"
+    }
+}

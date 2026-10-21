@@ -1,0 +1,58 @@
+dv58 deep-verify of issue #58 (2026-10-19, UTC). Core 4791832, Pro edaa401, WooCommerce Stripe 10.9.0 test mode. Browser session dv58b-cust.
+
+STEP 1 - earlier customer 580 (sqa-p2-auth)
+  10:49:06Z  wp_woocommerce_payment_tokens WHERE user_id=580 -> 0 rows (still no WC token). Stripe customer cus_VT94tp2XiMw6kX.
+
+SCENARIO A - normal Block checkout (browser completes the post-3DS flow)
+  customer 586 sqa-dv58-block, Stripe cus_VTAfpPVaUhxMOj
+  11:02:04Z Place Order (one click), order 68708 + subscription 68709 created, 3DS2 test modal shown
+  11:02:43Z mid-challenge: order 68708 wc-pending, 0 WC tokens for 586
+  11:02:54Z COMPLETE clicked; 11:03:05Z order-received page "Order completed"
+  order 68708 paid 11:03:00Z, PI pi_3USEKTJG5OzSNVs21UIttNnE succeeded, charge ch_3USEKTJG5OzSNVs21sPmclhS
+  subscription 68709 activated 11:03:02Z by wc_ajax=wc_stripe_update_order_status (lifecycle capture lines 130-132)
+  11:03:12Z WC token 72 (stripe, pm_1USEKOJG5OzSNVs2NFfols6o, CC, default) exists
+  11:04:52Z and 11:08:09Z: token 72 present; _gateway_payment_method_id=pm_1USEKOJG5OzSNVs2NFfols6o; PM attached to cus_VTAfpPVaUhxMOj (default PM)
+  11:08:25Z setNextPaymentDate(now+90) -> actions 101078 (invoice) / 101079 (process_renewal)
+  11:10:06Z invoice 101078 complete -> renewal order 68736
+  11:10:27Z ran 101079 explicitly -> PI pi_3USESYJG5OzSNVs21QSPrfSN requires_payment_method / authentication_required
+     order note "[Gateway: stripe] Payment failed - requires_action: Payment requires customer authentication."
+  11:11:04Z email "[mirror-help.arrayhash.com] Verify your subscription renewal #68709" (Mailpit 0GN0FkPuUKG6UAKsjA3No9), link present (order-pay/68736 ...&wc-stripe-confirmation=1), email URL == order _arraysubs_payment_action_url
+  11:11:36Z verification page: saved radio "Visa ending in 3184 (expires 12/30)" checked (wc-stripe-payment-token=72) + "Use a new payment method"; no auto 3DS challenge, no notice
+  11:13:39Z new card 4000 0027 6000 3184 via "Use a new payment method" -> notice "Use the saved Stripe payment method shown for this renewal verification." (no new PI)
+  11:16:49Z plain My Account "Pay" link (no wc-stripe-confirmation), new card -> same notice (no new PI)
+  11:18:18Z verification link, saved card 72, Pay for order -> URL hash #wc-stripe-confirm-pi:68736:<secret>:<nonce>, 3DS2 test modal for the same PI (requires_action, pm_1USEKOJG5OzSNVs2NFfols6o, next_action use_stripe_sdk)
+  11:20:04Z COMPLETE -> 11:20:14Z order-received/68736 "Order completed"; PI pi_3USESYJG5OzSNVs21QSPrfSN succeeded, charge ch_3USESYJG5OzSNVs21tGp3lEk (11:20:05Z)
+  subscription 68709 active, _completed_payments=2, next payment 2026-10-20 11:09:55
+  Stripe cus_VTAfpPVaUhxMOj: 2 PIs, 2 charges (731 each), 1 PM -> no duplicate collection
+
+SCENARIO B (variant) - post-3DS browser call dropped (simulates closed tab / lost connection)
+  customer 590 sqa-dv58-block-nt, Stripe cus_VTB2LHa0r3ap3I
+  browser route aborted only POST /?wc-ajax=wc_stripe_update_order_status (request 200605.3503 aborted)
+  11:25:12Z Place Order -> order 68780 + subscription 68781; 11:25:34Z COMPLETE in 3DS modal
+  checkout UI: "Something went wrong. Please contact us to get assistance." (not resubmitted)
+  PI pi_3USEgsJG5OzSNVs212Y1rbLA succeeded at Stripe; order stayed pending (_stripe_upe_waiting_for_redirect=1)
+  wc_stripe_deferred_webhook 101127 (scheduled 11:27:38Z, run by the queue runner) -> order 68780 completed 11:28:04-08Z, note "Stripe charge complete (...) (via webhook)", subscription activated in cron 11:28:06Z
+  11:28:25Z: 0 WC tokens for 590; _gateway_payment_method_id=pm_1USEgmJG5OzSNVs2FkAEMUcK (attached to cus_VTB2LHa0r3ap3I, customer default PM null)
+  11:28:45Z setNextPaymentDate -> 101149/101150; 11:30:14Z invoice complete -> order 68846; 11:30:27Z ran 101150
+  PI pi_3USElvJG5OzSNVs21djGGVsF requires_payment_method / authentication_required
+  11:31:04Z email "Verify your subscription renewal #68781" (Mailpit 1QZ8Nsh9JYtm4xDtbjjjFR), "Payment Method Visa ending in 3184", link present
+  11:31:24Z verification page: NO saved card, only an empty Payment Element (Card / US bank account); no wc-stripe-payment-token input; no auto 3DS
+  11:32:44Z card 4000 0027 6000 3184 entered -> "Use the saved Stripe payment method shown for this renewal verification."
+  11:34:55Z plain My Account "Pay" link, card re-entered -> same notice
+  My Account subscription 68781 shows "Card on File: Visa ending in 3184", order #68846 "Pending payment" with View/Pay only
+  Stripe cus_VTB2LHa0r3ap3I: 2 PIs (checkout succeeded, renewal requires_payment_method), 1 charge -> renewal unpaid, no duplicate
+
+Mechanism (WooCommerce Stripe 10.9.0 code reading, matches both runs):
+  the 3DS Block flow creates the WC token only in the browser's wc_stripe_update_order_status AJAX
+  (WC_Stripe_Intent_Controller::update_order_status_ajax -> process_order_for_confirmed_intent(..., $save_payment_method));
+  no token exists while the challenge is open, and the deferred-webhook completion path saves no token.
+  Original order 68465 was also completed "(via webhook)" in cron at 09:26:04Z, i.e. the same no-browser-callback path.
+  ArraySubs StripeSubscriptionCompatibility::validateRenewalActionPaymentMethod() requires a posted WC token equal to
+  _gateway_payment_method_id, so without a token there is no usable path on either link.
+
+Environment note: headless Chrome for agent-browser was killed repeatedly (3+ times 10:52-10:59Z) when root's transient
+  systemd user manager stopped ("Removed slice session.slice", /run/user/0 removed). Fixed for dv58b-cust only by
+  AGENT_BROWSER_SOCKET_DIR=/root/.agent-browser/s-dv58b, DBUS_SESSION_BUS_ADDRESS=disabled:, XDG_RUNTIME_DIR=/root/.agent-browser/s-dv58b-xdg.
+
+Side observation: after a refused order-pay submission, the order payment method title becomes "Payment methods"
+  (68846 now titled "Payment methods"; 68736 note "Payment via Payment methods (ch_3USESYJG5OzSNVs21tGp3lEk)").

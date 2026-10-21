@@ -1,0 +1,49 @@
+{
+    "checked_at_utc": "2026-10-19T11:28:25+00:00",
+    "wc_tokens": [],
+    "subscription": {
+        "id": 68781,
+        "post_status": "arraysubs-active",
+        "meta": {
+            "_completed_payments": "1",
+            "_customer_email": "sqa-dv58-block-nt@example.com",
+            "_customer_id": "590",
+            "_gateway_customer_id": "cus_VTB2LHa0r3ap3I",
+            "_gateway_payment_method_id": "pm_1USEgmJG5OzSNVs2FkAEMUcK",
+            "_gateway_status": "active",
+            "_last_gateway_transaction_id": "ch_3USEgsJG5OzSNVs21JCWIELS",
+            "_last_payment_date": "2026-10-19 11:28:06",
+            "_next_payment_date": "2026-10-20 11:25:15",
+            "_payment_gateway": "stripe",
+            "_payment_method": "stripe",
+            "_payment_method_brand": "visa",
+            "_payment_method_expiry_month": "12",
+            "_payment_method_expiry_year": "2030",
+            "_payment_method_last4": "3184",
+            "_payment_method_source": "stripe",
+            "_payment_method_title": "Stripe",
+            "_payment_method_type": "card",
+            "_payment_method_updated_at": "2026-10-19 11:25:38",
+            "_renewal_action_id": "101146",
+            "_renewal_invoice_action_id": "101145"
+        }
+    },
+    "stripe_customer_user_meta": "cus_VTB2LHa0r3ap3I",
+    "stripe_pm": {
+        "id": "pm_1USEgmJG5OzSNVs2FkAEMUcK",
+        "customer": "cus_VTB2LHa0r3ap3I",
+        "type": "card",
+        "last4": "3184",
+        "exp": "12/2030",
+        "allow_redisplay": "unspecified",
+        "error": null
+    },
+    "stripe_customer": {
+        "id": "cus_VTB2LHa0r3ap3I",
+        "default_pm": null,
+        "email": "sqa-dv58-block-nt@example.com"
+    },
+    "stripe_customer_pms": [
+        "pm_1USEgmJG5OzSNVs2FkAEMUcK 3184 created=2026-10-19T11:25:13+00:00"
+    ]
+}

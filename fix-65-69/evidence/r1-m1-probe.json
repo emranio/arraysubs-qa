@@ -1,0 +1,109 @@
+{
+    "probe": "M1 settlement stamp on paid orders",
+    "wc_version": "11.0.1",
+    "paid_statuses": [
+        "processing",
+        "completed"
+    ],
+    "db_writes": "none (save() no-op, order id 0, no hooks fired)",
+    "results": [
+        {
+            "case": "A dispute on paid renewal (completed->on-hold)",
+            "from": "completed",
+            "to": "on-hold",
+            "manual": false,
+            "status": "on-hold",
+            "is_paid": false,
+            "date_paid_set": true,
+            "stamped_now": false,
+            "stamp_days_left": null,
+            "awaiting_current": false,
+            "patched_would_stamp": false,
+            "patched_awaiting": false
+        },
+        {
+            "case": "A2 review on paid renewal (processing->on-hold)",
+            "from": "processing",
+            "to": "on-hold",
+            "manual": false,
+            "status": "on-hold",
+            "is_paid": false,
+            "date_paid_set": false,
+            "stamped_now": false,
+            "stamp_days_left": null,
+            "awaiting_current": false,
+            "patched_would_stamp": false,
+            "patched_awaiting": false
+        },
+        {
+            "case": "A3 admin hold of completed renewal",
+            "from": "completed",
+            "to": "on-hold",
+            "manual": true,
+            "status": "on-hold",
+            "is_paid": false,
+            "date_paid_set": true,
+            "stamped_now": false,
+            "stamp_days_left": null,
+            "awaiting_current": false,
+            "patched_would_stamp": false,
+            "patched_awaiting": false
+        },
+        {
+            "case": "B Pay-page ACH processing (failed->on-hold)",
+            "from": "failed",
+            "to": "on-hold",
+            "manual": false,
+            "status": "on-hold",
+            "is_paid": false,
+            "date_paid_set": false,
+            "stamped_now": true,
+            "stamp_days_left": 7,
+            "awaiting_current": true,
+            "patched_would_stamp": true,
+            "patched_awaiting": true
+        },
+        {
+            "case": "C uncaptured authorization (pending->on-hold)",
+            "from": "pending",
+            "to": "on-hold",
+            "manual": false,
+            "status": "on-hold",
+            "is_paid": false,
+            "date_paid_set": false,
+            "stamped_now": true,
+            "stamp_days_left": 7,
+            "awaiting_current": true,
+            "patched_would_stamp": true,
+            "patched_awaiting": true
+        },
+        {
+            "case": "C2 review on unpaid Pay-page charge (failed->on-hold)",
+            "from": "failed",
+            "to": "on-hold",
+            "manual": false,
+            "status": "on-hold",
+            "is_paid": false,
+            "date_paid_set": false,
+            "stamped_now": true,
+            "stamp_days_left": 7,
+            "awaiting_current": true,
+            "patched_would_stamp": true,
+            "patched_awaiting": true
+        },
+        {
+            "case": "D settled ACH later held, stale stamp (completed->on-hold)",
+            "from": "completed",
+            "to": "on-hold",
+            "manual": false,
+            "status": "on-hold",
+            "is_paid": false,
+            "date_paid_set": true,
+            "stamped_now": true,
+            "stamp_days_left": 7,
+            "awaiting_current": false,
+            "patched_would_stamp": false,
+            "patched_awaiting": false
+        }
+    ]
+}

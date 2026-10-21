@@ -1,0 +1,13 @@
+{
+    "route": "/arraysubs/v1/subscriptions/68881",
+    "status": 404,
+    "fetched_at_utc": "2026-10-19 11:54:49",
+    "retry_paths": [],
+    "payload": {
+        "code": "rest_no_route",
+        "message": "No route was found matching the URL and request method.",
+        "data": {
+            "status": 404
+        }
+    }
+}

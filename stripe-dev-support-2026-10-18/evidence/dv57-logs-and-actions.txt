@@ -1,0 +1,30 @@
+# arraysubs-gateway-2026-10-19 lines for sub 68665 / order 68694 (UTC)
+2026-10-19T10:54:44+00:00 WARNING [Gateway: stripe] [Webhook] Refused to bind Stripe payment method pm_1USEDAJG5OzSNVs20wWVbJF7 to subscription #68665: renewal_payment_method_binding_changed
+2026-10-19T11:00:52+00:00 INFO [Gateway: stripe] Creating Stripe off-session renewal PaymentIntent for order #68694.
+2026-10-19T11:00:56+00:00 INFO [Gateway: arraysubs_stripe] [Webhook] Webhook processed: payment_intent.payment_failed → payment_failed (subscription: 68665, order: 68694)
+2026-10-19T11:00:52+00:00 INFO [Gateway: stripe] Creating Stripe off-session renewal PaymentIntent for order #68694.
+2026-10-19T11:00:53+00:00 ERROR [Gateway: stripe] [Gateway: stripe] Payment failed — card_declined: Your card was declined.
+2026-10-19T11:00:55+00:00 INFO [Gateway: arraysubs_stripe] [Webhook] Webhook received
+2026-10-19T11:00:55+00:00 ERROR [Gateway: stripe] [Gateway: stripe] Payment failed — card_declined: Your card was declined.
+
+# scheduler rows (system sweep 101041, verification 101071, fixture actions 101055/101056)
+action_id	hook	status	args	scheduled_date_gmt	last_attempt_gmt
+101041	arraysubs_sweep_stripe_renewal_verifications	complete	[]	2026-10-19 11:05:03	2026-10-19 11:05:05
+101055	arraysubs_generate_renewal_invoice	complete	[68665]	2026-10-19 10:59:05	2026-10-19 11:00:09
+101056	arraysubs_process_renewal	complete	[68665]	2026-10-19 13:55:11	2026-10-19 11:00:56
+101071	arraysubs_send_stripe_renewal_verification	complete	[68665,68694,"pi_3USEJEJG5OzSNVs21r9uU7nr",1]	2026-10-19 11:05:09	2026-10-19 11:06:04
+
+log_id	action_id	message	log_date_gmt
+294311	101041	action created	2026-10-19 10:55:03
+294347	101055	action created	2026-10-19 10:58:05
+294348	101056	action created	2026-10-19 10:58:05
+294352	101055	action started via WP Cron	2026-10-19 11:00:07
+294354	101055	action complete via WP Cron	2026-10-19 11:00:09
+294355	101056	action started via Action Scheduler CLI	2026-10-19 11:00:52
+294356	101056	action complete via Action Scheduler CLI	2026-10-19 11:00:56
+294386	101041	action started via WP Cron	2026-10-19 11:05:04
+294388	101071	action created	2026-10-19 11:05:04
+294389	101041	action complete via WP Cron	2026-10-19 11:05:05
+294395	101071	action started via WP Cron	2026-10-19 11:06:03
+294396	101071	action complete via WP Cron	2026-10-19 11:06:04
+

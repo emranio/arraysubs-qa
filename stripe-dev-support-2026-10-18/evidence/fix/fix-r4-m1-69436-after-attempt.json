@@ -1,0 +1,33 @@
+{
+    "order": 69436,
+    "status": "completed",
+    "paid": true,
+    "transaction": "ch_3USP85JG5Oz",
+    "stripe_intent_id": "pi_3USP85JG5OzSNVs20bJFRSjh",
+    "attempt_result": "pi_3USP85JG5OzSNVs20bJFRSjh",
+    "attempt_snapshot_pm": "pm_1USNTxJG5OzSNVs2Ggj9eveW",
+    "source_pm": "pm_1USNTxJG5OzSNVs2Ggj9eveW",
+    "action_intent": "",
+    "action_required_at": "",
+    "outbox": "",
+    "sub": 69202,
+    "sub_status": "arraysubs-active",
+    "sub_pm": "pm_1USNTxJG5OzSNVs2Ggj9eveW",
+    "sub_last4": "4242",
+    "sub_failure": "",
+    "sub_failure_category": "",
+    "sub_retry_attempts": "",
+    "derived_next_retry": null,
+    "next_payment_date": "2026-10-20 22:27:17",
+    "pis": {
+        "pi_3USP85JG5OzSNVs20bJFRSjh": {
+            "status": "succeeded",
+            "pm": "pm_1USNTxJG5OzSNVs2Ggj9eveW",
+            "received": 731,
+            "capturable": 0,
+            "cancellation_reason": null,
+            "last_error": null,
+            "setup_future_usage": null
+        }
+    }
+}

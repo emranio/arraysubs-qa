@@ -1,0 +1,165 @@
+### A trial: real product 550 (14-day free trial), real pro_member 54, live rule | mode=live user=54 roles=customer|pro_member qualifying_rules=1 | product=550 variation=0 qty=1 migrate=off sync=site(off)
+  DiscountHooks via real constructor: get_price filters before=yes, filterPrice prio simple=100 variation=100
+  add-to-cart: validation=true key=01f78be6
+  line #550/0 qty=1 | engine-set get_price('edit')=0.00 | charged get_price()=25.49 | regular=29.99 | line_subtotal=25.49 line_total=25.49
+    sub data: price(recurring)=25.49 trial=14 day | sync: applies=false mode=prorate seg=- initial_unit=25.49 full_unit=25.49 next=
+  fee 'Store Credit Applied' total=-0.02
+  cart: subtotal=25.49 fees=-0.02 TOTAL=25.47
+  unsaved order from cart: id=0 items=[#550 subtotal=25.49 total=25.49] ORDER TOTAL=25.47
+  guard: case=rolled-back-clean, fixture identical blocked_writes=0 http_attempts=0 mail_blocked=0 notices=0
+### A-c trial control: no qualifying member rule | mode=none user=54 roles=customer|pro_member qualifying_rules=0 | product=550 variation=0 qty=1 migrate=off sync=site(off)
+  DiscountHooks via real constructor: get_price filters before=yes, filterPrice prio simple=100 variation=100
+  add-to-cart: validation=true key=01f78be6
+  line #550/0 qty=1 | engine-set get_price('edit')=0.00 | charged get_price()=0.00 | regular=29.99 | line_subtotal=0.00 line_total=0.00
+    sub data: price(recurring)=29.99 trial=14 day | sync: applies=false mode=prorate seg=- initial_unit=29.99 full_unit=29.99 next=
+  cart: subtotal=0.00 fees=0.00 TOTAL=0.00
+  unsaved order from cart: id=0 items=[#550 subtotal=0.00 total=0.00] ORDER TOTAL=0.00
+  guard: case=rolled-back-clean, fixture identical blocked_writes=0 http_attempts=0 mail_blocked=0 notices=0
+### A-f trial, fix simulated | mode=fixsim user=54 roles=customer|pro_member qualifying_rules=1 | product=550 variation=0 qty=1 migrate=off sync=site(off)
+  DiscountHooks via real constructor: get_price filters before=yes, filterPrice prio simple=100 variation=100
+  add-to-cart: validation=true key=01f78be6
+  line #550/0 qty=1 | engine-set get_price('edit')=0.00 | charged get_price()=0.00 | regular=29.99 | line_subtotal=0.00 line_total=0.00
+    sub data: price(recurring)=25.49 trial=14 day | sync: applies=false mode=prorate seg=- initial_unit=25.49 full_unit=25.49 next=
+  cart: subtotal=0.00 fees=0.00 TOTAL=0.00
+  unsaved order from cart: id=0 items=[#550 subtotal=0.00 total=0.00] ORDER TOTAL=0.00
+  guard: case=rolled-back-clean, fixture identical blocked_writes=0 http_attempts=0 mail_blocked=0 notices=0
+### B segment plan: real product 8650 (weekly, prorate segment today), real pro_member 54, live rule, site settings | mode=live user=54 roles=customer|pro_member qualifying_rules=1 | product=8650 variation=0 qty=1 migrate=off sync=site(off)
+  DiscountHooks via real constructor: get_price filters before=yes, filterPrice prio simple=100 variation=100
+  add-to-cart: validation=true key=9b3a9fb4
+  line #8650/0 qty=1 | engine-set get_price('edit')=7.29 | charged get_price()=17.00 | regular=20.00 | line_subtotal=17.00 line_total=17.00
+    sub data: price(recurring)=17.00 trial=0 day | sync: applies=true mode=prorate seg=2 initial_unit=7.29 full_unit=17.00 next=2026-10-23 18:00:00
+  fee 'Store Credit Applied' total=-0.02
+  cart: subtotal=17.00 fees=-0.02 TOTAL=16.98
+  unsaved order from cart: id=0 items=[#8650 subtotal=17.00 total=17.00] ORDER TOTAL=16.98
+  guard: case=rolled-back-clean, fixture identical blocked_writes=0 http_attempts=0 mail_blocked=0 notices=0
+### B-c segment plan control: no qualifying member rule | mode=none user=54 roles=customer|pro_member qualifying_rules=0 | product=8650 variation=0 qty=1 migrate=off sync=site(off)
+  DiscountHooks via real constructor: get_price filters before=yes, filterPrice prio simple=100 variation=100
+  add-to-cart: validation=true key=9b3a9fb4
+  line #8650/0 qty=1 | engine-set get_price('edit')=8.57 | charged get_price()=8.57 | regular=20.00 | line_subtotal=8.57 line_total=8.57
+    sub data: price(recurring)=20.00 trial=0 day | sync: applies=true mode=prorate seg=2 initial_unit=8.57 full_unit=20.00 next=2026-10-23 18:00:00
+  fee 'Store Credit Applied' total=-0.02
+  cart: subtotal=8.57 fees=-0.02 TOTAL=8.55
+  unsaved order from cart: id=0 items=[#8650 subtotal=8.57 total=8.57] ORDER TOTAL=8.55
+  guard: case=rolled-back-clean, fixture identical blocked_writes=0 http_attempts=0 mail_blocked=0 notices=0
+### B-f segment plan, fix simulated | mode=fixsim user=54 roles=customer|pro_member qualifying_rules=1 | product=8650 variation=0 qty=1 migrate=off sync=site(off)
+  DiscountHooks via real constructor: get_price filters before=yes, filterPrice prio simple=100 variation=100
+  add-to-cart: validation=true key=9b3a9fb4
+  line #8650/0 qty=1 | engine-set get_price('edit')=7.29 | charged get_price()=7.29 | regular=20.00 | line_subtotal=7.29 line_total=7.29
+    sub data: price(recurring)=17.00 trial=0 day | sync: applies=true mode=prorate seg=2 initial_unit=7.29 full_unit=17.00 next=2026-10-23 18:00:00
+  fee 'Store Credit Applied' total=-0.02
+  cart: subtotal=7.29 fees=-0.02 TOTAL=7.27
+  unsaved order from cart: id=0 items=[#8650 subtotal=7.29 total=7.29] ORDER TOTAL=7.27
+  guard: case=rolled-back-clean, fixture identical blocked_writes=0 http_attempts=0 mail_blocked=0 notices=0
+### B2 segment plan variation 8654 of 8652 (monthly, prorate segment today), pro_member 54, live rule | mode=live user=54 roles=customer|pro_member qualifying_rules=1 | product=8652 variation=8654 qty=1 migrate=off sync=site(off)
+  DiscountHooks via real constructor: get_price filters before=yes, filterPrice prio simple=100 variation=100
+  add-to-cart: validation=true key=9b383145
+  line #8652/8654 qty=1 | engine-set get_price('edit')=9.05 | charged get_price()=25.50 | regular=30.00 | line_subtotal=25.50 line_total=25.50
+    sub data: price(recurring)=25.50 trial=0 day | sync: applies=true mode=prorate seg=2 initial_unit=9.05 full_unit=25.50 next=2026-10-31 18:00:00
+  fee 'Store Credit Applied' total=-0.02
+  cart: subtotal=25.50 fees=-0.02 TOTAL=25.48
+  unsaved order from cart: id=0 items=[#8652 subtotal=25.50 total=25.50] ORDER TOTAL=25.48
+  guard: case=rolled-back-clean, fixture identical blocked_writes=0 http_attempts=0 mail_blocked=0 notices=0
+### B2-c variation control: no qualifying member rule | mode=none user=54 roles=customer|pro_member qualifying_rules=0 | product=8652 variation=8654 qty=1 migrate=off sync=site(off)
+  DiscountHooks via real constructor: get_price filters before=yes, filterPrice prio simple=100 variation=100
+  add-to-cart: validation=true key=9b383145
+  line #8652/8654 qty=1 | engine-set get_price('edit')=10.65 | charged get_price()=10.65 | regular=30.00 | line_subtotal=10.65 line_total=10.65
+    sub data: price(recurring)=30.00 trial=0 day | sync: applies=true mode=prorate seg=2 initial_unit=10.65 full_unit=30.00 next=2026-10-31 18:00:00
+  fee 'Store Credit Applied' total=-0.02
+  cart: subtotal=10.65 fees=-0.02 TOTAL=10.63
+  unsaved order from cart: id=0 items=[#8652 subtotal=10.65 total=10.65] ORDER TOTAL=10.63
+  guard: case=rolled-back-clean, fixture identical blocked_writes=0 http_attempts=0 mail_blocked=0 notices=0
+### B2-f variation, fix simulated | mode=fixsim user=54 roles=customer|pro_member qualifying_rules=1 | product=8652 variation=8654 qty=1 migrate=off sync=site(off)
+  DiscountHooks via real constructor: get_price filters before=yes, filterPrice prio simple=100 variation=100
+  add-to-cart: validation=true key=9b383145
+  line #8652/8654 qty=1 | engine-set get_price('edit')=9.05 | charged get_price()=9.05 | regular=30.00 | line_subtotal=9.05 line_total=9.05
+    sub data: price(recurring)=25.50 trial=0 day | sync: applies=true mode=prorate seg=2 initial_unit=9.05 full_unit=25.50 next=2026-10-31 18:00:00
+  fee 'Store Credit Applied' total=-0.02
+  cart: subtotal=9.05 fees=-0.02 TOTAL=9.03
+  unsaved order from cart: id=0 items=[#8652 subtotal=9.05 total=9.05] ORDER TOTAL=9.03
+  guard: case=rolled-back-clean, fixture identical blocked_writes=0 http_attempts=0 mail_blocked=0 notices=0
+### C global renewal sync prorate (in-memory setting), 495, pro_member 54, live rule | mode=live user=54 roles=customer|pro_member qualifying_rules=1 | product=495 variation=0 qty=1 migrate=off sync='prorate'
+  DiscountHooks via real constructor: get_price filters before=yes, filterPrice prio simple=100 variation=100
+  add-to-cart: validation=true key=35051070
+  line #495/0 qty=1 | engine-set get_price('edit')=15.08 | charged get_price()=42.49 | regular=49.99 | line_subtotal=42.49 line_total=42.49
+    sub data: price(recurring)=42.49 trial=0 day | sync: applies=true mode=prorate seg=- initial_unit=15.08 full_unit=42.49 next=2026-10-31 18:00:00
+  fee 'Store Credit Applied' total=-0.02
+  cart: subtotal=42.49 fees=-0.02 TOTAL=42.47
+  unsaved order from cart: id=0 items=[#495 subtotal=42.49 total=42.49] ORDER TOTAL=42.47
+  guard: case=rolled-back-clean, fixture identical blocked_writes=0 http_attempts=0 mail_blocked=0 notices=0
+### C-c renewal sync control: no qualifying member rule | mode=none user=54 roles=customer|pro_member qualifying_rules=0 | product=495 variation=0 qty=1 migrate=off sync='prorate'
+  DiscountHooks via real constructor: get_price filters before=yes, filterPrice prio simple=100 variation=100
+  add-to-cart: validation=true key=35051070
+  line #495/0 qty=1 | engine-set get_price('edit')=17.74 | charged get_price()=17.74 | regular=49.99 | line_subtotal=17.74 line_total=17.74
+    sub data: price(recurring)=49.99 trial=0 day | sync: applies=true mode=prorate seg=- initial_unit=17.74 full_unit=49.99 next=2026-10-31 18:00:00
+  fee 'Store Credit Applied' total=-0.02
+  cart: subtotal=17.74 fees=-0.02 TOTAL=17.72
+  unsaved order from cart: id=0 items=[#495 subtotal=17.74 total=17.74] ORDER TOTAL=17.72
+  guard: case=rolled-back-clean, fixture identical blocked_writes=0 http_attempts=0 mail_blocked=0 notices=0
+### C-f renewal sync, fix simulated | mode=fixsim user=54 roles=customer|pro_member qualifying_rules=1 | product=495 variation=0 qty=1 migrate=off sync='prorate'
+  DiscountHooks via real constructor: get_price filters before=yes, filterPrice prio simple=100 variation=100
+  add-to-cart: validation=true key=35051070
+  line #495/0 qty=1 | engine-set get_price('edit')=15.08 | charged get_price()=15.08 | regular=49.99 | line_subtotal=15.08 line_total=15.08
+    sub data: price(recurring)=42.49 trial=0 day | sync: applies=true mode=prorate seg=- initial_unit=15.08 full_unit=42.49 next=2026-10-31 18:00:00
+  fee 'Store Credit Applied' total=-0.02
+  cart: subtotal=15.08 fees=-0.02 TOTAL=15.06
+  unsaved order from cart: id=0 items=[#495 subtotal=15.08 total=15.08] ORDER TOTAL=15.06
+  guard: case=rolled-back-clean, fixture identical blocked_writes=0 http_attempts=0 mail_blocked=0 notices=0
+### D checkout migration 197->495, user 468 given pro_member in memory, live rule, in-memory migration settings | mode=live user=468 roles=customer|pro_member qualifying_rules=1 | product=495 variation=0 qty=1 migrate=on sync=site(off)
+  DiscountHooks via real constructor: get_price filters before=yes, filterPrice prio simple=100 variation=100
+  add-to-cart: validation=true key=35051070
+  line #495/0 qty=1 | engine-set get_price('edit')=4.47 | charged get_price()=42.49 | regular=49.99 | line_subtotal=42.49 line_total=42.49
+    sub data: price(recurring)=42.49 trial=0 day | sync: applies=false mode=prorate seg=- initial_unit=42.49 full_unit=42.49 next=
+    migration: eligible sub=27494 upgrade net=4.47 credit=10.73 display_price=4.47
+  cart: subtotal=42.49 fees=0.00 TOTAL=42.49
+  unsaved order from cart: id=0 items=[#495 subtotal=42.49 total=42.49] ORDER TOTAL=42.49
+  guard: case=rolled-back-clean, fixture identical blocked_writes=0 http_attempts=0 mail_blocked=0 notices=0
+### D-c migration control: same user, no qualifying member rule | mode=none user=468 roles=customer|pro_member qualifying_rules=0 | product=495 variation=0 qty=1 migrate=on sync=site(off)
+  DiscountHooks via real constructor: get_price filters before=yes, filterPrice prio simple=100 variation=100
+  add-to-cart: validation=true key=35051070
+  line #495/0 qty=1 | engine-set get_price('edit')=7.16 | charged get_price()=7.16 | regular=49.99 | line_subtotal=7.16 line_total=7.16
+    sub data: price(recurring)=49.99 trial=0 day | sync: applies=false mode=prorate seg=- initial_unit=49.99 full_unit=49.99 next=
+    migration: eligible sub=27494 upgrade net=7.16 credit=10.73 display_price=7.16
+  cart: subtotal=7.16 fees=0.00 TOTAL=7.16
+  unsaved order from cart: id=0 items=[#495 subtotal=7.16 total=7.16] ORDER TOTAL=7.16
+  guard: case=rolled-back-clean, fixture identical blocked_writes=0 http_attempts=0 mail_blocked=0 notices=0
+### D-f migration, fix simulated | mode=fixsim user=468 roles=customer|pro_member qualifying_rules=1 | product=495 variation=0 qty=1 migrate=on sync=site(off)
+  DiscountHooks via real constructor: get_price filters before=yes, filterPrice prio simple=100 variation=100
+  add-to-cart: validation=true key=35051070
+  line #495/0 qty=1 | engine-set get_price('edit')=4.47 | charged get_price()=4.47 | regular=49.99 | line_subtotal=4.47 line_total=4.47
+    sub data: price(recurring)=42.49 trial=0 day | sync: applies=false mode=prorate seg=- initial_unit=42.49 full_unit=42.49 next=
+    migration: eligible sub=27494 upgrade net=4.47 credit=10.73 display_price=4.47
+  cart: subtotal=4.47 fees=0.00 TOTAL=4.47
+  unsaved order from cart: id=0 items=[#495 subtotal=4.47 total=4.47] ORDER TOTAL=4.47
+  guard: case=rolled-back-clean, fixture identical blocked_writes=0 http_attempts=0 mail_blocked=0 notices=0
+### E-c plain 495 control: no qualifying member rule | mode=none user=54 roles=customer|pro_member qualifying_rules=0 | product=495 variation=0 qty=1 migrate=off sync=site(off)
+  DiscountHooks via real constructor: get_price filters before=yes, filterPrice prio simple=100 variation=100
+  add-to-cart: validation=true key=35051070
+  line #495/0 qty=1 | engine-set get_price('edit')=49.99 | charged get_price()=49.99 | regular=49.99 | line_subtotal=49.99 line_total=49.99
+    sub data: price(recurring)=49.99 trial=0 day | sync: applies=false mode=prorate seg=- initial_unit=49.99 full_unit=49.99 next=
+  fee 'Store Credit Applied' total=-0.02
+  cart: subtotal=49.99 fees=-0.02 TOTAL=49.97
+  unsaved order from cart: id=0 items=[#495 subtotal=49.99 total=49.99] ORDER TOTAL=49.97
+  guard: case=rolled-back-clean, fixture identical blocked_writes=0 http_attempts=0 mail_blocked=0 notices=0
+### E-f plain 495, fix simulated (member price must remain) | mode=fixsim user=54 roles=customer|pro_member qualifying_rules=1 | product=495 variation=0 qty=1 migrate=off sync=site(off)
+  DiscountHooks via real constructor: get_price filters before=yes, filterPrice prio simple=100 variation=100
+  add-to-cart: validation=true key=35051070
+  line #495/0 qty=1 | engine-set get_price('edit')=42.49 | charged get_price()=42.49 | regular=49.99 | line_subtotal=42.49 line_total=42.49
+    sub data: price(recurring)=42.49 trial=0 day | sync: applies=false mode=prorate seg=- initial_unit=42.49 full_unit=42.49 next=
+  fee 'Store Credit Applied' total=-0.02
+  cart: subtotal=42.49 fees=-0.02 TOTAL=42.47
+  unsaved order from cart: id=0 items=[#495 subtotal=42.49 total=42.49] ORDER TOTAL=42.47
+  guard: case=rolled-back-clean, fixture identical blocked_writes=0 http_attempts=0 mail_blocked=0 notices=0
+### G non-subscription 12594, live rule | mode=live user=54 roles=customer|pro_member qualifying_rules=1 | product=12594 variation=0 qty=1 migrate=off sync=site(off)
+  DiscountHooks via real constructor: get_price filters before=yes, filterPrice prio simple=100 variation=100
+  add-to-cart: validation=true key=0dce2089
+  line #12594/0 qty=1 | engine-set get_price('edit')=6.00 | charged get_price()=5.10 | regular=6.00 | line_subtotal=5.10 line_total=5.10
+  cart: subtotal=5.10 fees=0.00 TOTAL=5.10
+  unsaved order from cart: id=0 items=[#12594 subtotal=5.10 total=5.10] ORDER TOTAL=5.10
+  guard: case=rolled-back-clean, fixture identical blocked_writes=0 http_attempts=0 mail_blocked=0 notices=0
+### G-f non-subscription 12594, fix simulated (member price must remain) | mode=fixsim user=54 roles=customer|pro_member qualifying_rules=1 | product=12594 variation=0 qty=1 migrate=off sync=site(off)
+  DiscountHooks via real constructor: get_price filters before=yes, filterPrice prio simple=100 variation=100
+  add-to-cart: validation=true key=0dce2089
+  line #12594/0 qty=1 | engine-set get_price('edit')=6.00 | charged get_price()=5.10 | regular=6.00 | line_subtotal=5.10 line_total=5.10
+  cart: subtotal=5.10 fees=0.00 TOTAL=5.10
+  unsaved order from cart: id=0 items=[#12594 subtotal=5.10 total=5.10] ORDER TOTAL=5.10
+  guard: case=rolled-back-clean, fixture identical blocked_writes=0 http_attempts=0 mail_blocked=0 notices=0

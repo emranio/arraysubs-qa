@@ -1,0 +1,18 @@
+{
+    "setup_intent": {
+        "id": "seti_1USEDEJG5OzSNVs2BCuCo0Uo",
+        "status": "succeeded",
+        "usage": "off_session",
+        "customer": "cus_VTAYfIkcEgRtLH",
+        "payment_method": "pm_1USEDAJG5OzSNVs20wWVbJF7",
+        "created_utc": "2026-10-19T10:54:40+00:00"
+    },
+    "payment_method": {
+        "id": "pm_1USEDAJG5OzSNVs20wWVbJF7",
+        "customer": "cus_VTAYfIkcEgRtLH",
+        "brand": "visa",
+        "last4": "0341",
+        "exp": "12/2030"
+    },
+    "payment_intents_for_customer": []
+}

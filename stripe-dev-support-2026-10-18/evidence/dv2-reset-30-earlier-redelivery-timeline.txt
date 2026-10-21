@@ -1,0 +1,29 @@
+# Earlier same-pm redeliveries that wiped failure meta (arraysubs-gateway-2026-10-19, UTC).
+# Event created times from Stripe: see dv2-reset-29-earlier-events.json
+# 68439: evt_1USCjeJG5OzSNVs2jFCKSlD0 payment_method.attached created 09:20:01Z, first delivery refused 09:20:05Z, renewal failed 09:24:38Z, redelivery bound 10:19:31Z
+# 68599: evt_1USD8YJG5OzSNVs2gPv1q958 setup_intent.succeeded created 09:45:46Z, first delivery refused 09:45:48Z, renewal failed 09:48:14Z, redelivery bound 10:15:22-23Z
+# 68665: evt_1USEDFJG5OzSNVs28SNHTaKZ setup_intent.succeeded created 10:54:41Z, first delivery refused 10:54:44Z, renewal failed 11:00:56Z, redelivery bound 11:55:33-35Z
+# Current state (read-only, 13:1xZ): all three subscriptions active, renewal orders 68473/68614/68694 failed+unpaid, _last_payment_failure absent, _payment_method_updated_at = redelivery time, bound pm = event pm.
+85:2026-10-19T09:20:05+00:00 WARNING [Gateway: stripe] [Webhook] Refused to bind Stripe payment method pm_1USCjYJG5OzSNVs2tLfsvWnH to subscription #68439: renewal_payment_method_binding_changed
+113:2026-10-19T09:24:38+00:00 INFO [Gateway: arraysubs_stripe] [Webhook] Webhook processed: payment_intent.payment_failed → payment_failed (subscription: 68439, order: 68473)
+114:2026-10-19T09:28:05+00:00 ERROR [Gateway: stripe] [Webhook] Gateway metadata retry exhausted for subscription #68439 and order #68438.
+164:2026-10-19T09:45:48+00:00 WARNING [Gateway: stripe] [Webhook] Refused to bind Stripe payment method pm_1USD8RJG5OzSNVs2evc1vjkw to subscription #68599: renewal_payment_method_binding_changed
+171:2026-10-19T09:48:14+00:00 INFO [Gateway: arraysubs_stripe] [Webhook] Webhook processed: payment_intent.payment_failed → payment_failed (subscription: 68599, order: 68614)
+176:2026-10-19T09:51:30+00:00 INFO [Gateway: arraysubs_stripe] [Webhook] Webhook processed: payment_intent.payment_failed → payment_failed (subscription: 68439, order: 68473)
+179:2026-10-19T10:15:23+00:00 INFO [Gateway: arraysubs_stripe] [Webhook] Webhook processed: setup_intent.succeeded → payment_method_updated (subscription: 68599, order: 68614)
+182:2026-10-19T10:16:11+00:00 WARNING [Gateway: stripe] [Webhook] Refused to bind Stripe payment method pm_1USCekJG5OzSNVs2zsEjOcs6 to subscription #68439: renewal_payment_method_binding_changed
+189:2026-10-19T10:54:44+00:00 WARNING [Gateway: stripe] [Webhook] Refused to bind Stripe payment method pm_1USEDAJG5OzSNVs20wWVbJF7 to subscription #68665: renewal_payment_method_binding_changed
+213:2026-10-19T11:00:56+00:00 INFO [Gateway: arraysubs_stripe] [Webhook] Webhook processed: payment_intent.payment_failed → payment_failed (subscription: 68665, order: 68694)
+365:2026-10-19T11:55:35+00:00 INFO [Gateway: arraysubs_stripe] [Webhook] Webhook processed: setup_intent.succeeded → payment_method_updated (subscription: 68665, order: 68694)
+2026-10-19T10:15:22+00:00 INFO [Gateway: arraysubs_stripe] [Webhook] Webhook received
+2026-10-19T10:15:23+00:00 INFO [Gateway: stripe] Payment method updated by Stripe: Visa ending in 0341
+2026-10-19T10:15:23+00:00 INFO [Gateway: arraysubs_stripe] [Webhook] Webhook processed: setup_intent.succeeded → payment_method_updated (subscription: 68599, order: 68614)
+2026-10-19T10:16:10+00:00 INFO [Gateway: arraysubs_stripe] [Webhook] Webhook received
+2026-10-19T10:16:10+00:00 WARNING [Gateway: stripe] [Webhook] Refused to bind Stripe payment method pm_1USCekJG5OzSNVs2zsEjOcs6 to subscription #68418: renewal_payment_method_binding_changed
+2026-10-19T10:16:11+00:00 WARNING [Gateway: stripe] [Webhook] Refused to bind Stripe payment method pm_1USCekJG5OzSNVs2zsEjOcs6 to subscription #68439: renewal_payment_method_binding_changed
+2026-10-19T10:19:31+00:00 INFO [Gateway: arraysubs_stripe] [Webhook] Webhook received
+2026-10-19T10:19:31+00:00 INFO [Gateway: stripe] Payment method updated by Stripe: Visa ending in 0341
+2026-10-19T10:19:31+00:00 INFO [Gateway: arraysubs_stripe] [Webhook] Webhook processed: payment_method.attached → payment_method_updated (subscription: 0, order: 0)
+2026-10-19T11:55:33+00:00 INFO [Gateway: arraysubs_stripe] [Webhook] Webhook received
+2026-10-19T11:55:34+00:00 INFO [Gateway: stripe] Payment method updated by Stripe: Visa ending in 0341
+2026-10-19T11:55:35+00:00 INFO [Gateway: arraysubs_stripe] [Webhook] Webhook processed: setup_intent.succeeded → payment_method_updated (subscription: 68665, order: 68694)

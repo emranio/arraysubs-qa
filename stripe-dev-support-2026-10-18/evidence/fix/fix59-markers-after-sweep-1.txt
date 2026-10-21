@@ -1,0 +1,13 @@
+2026-10-19T18:29:28Z
+unpaid stripe-attempted renewals: 8 -> 68473,68494,68550,68614,68694,68846,68903,69022
+sweep page option: 1
+order 68473 failed intent=pi_3USDE3JG5Oz action_intent= req_at=- sub=68439 sub_action=-
+order 68550 failed intent=pi_3USD7QJG5Oz action_intent= req_at=- sub=68512 sub_action=-
+order 68553 cancelled intent=pi_3USD6JJG5Oz action_intent=pi_3USD6JJG5Oz req_at=2026-10-19 09:52:04 sub=68525 sub_action=pi_3USD6JJG5Oz
+order 68614 failed intent=pi_3USDAtJG5Oz action_intent= req_at=- sub=68599 sub_action=-
+order 68694 failed intent=pi_3USEJEJG5Oz action_intent= req_at=- sub=68665 sub_action=-
+order 68822 completed intent=pi_3USG0ZJG5Oz action_intent=pi_3USEkOJG5Oz req_at=2026-10-19 11:37:04 sub=68770 sub_action=pi_3USEkOJG5Oz
+order 68903 failed intent=pi_3USF7pJG5Oz action_intent= req_at=- sub=68881 sub_action=-
+order 68494 pending intent=pi_3USCsOJG5Oz action_intent=pi_3USCsOJG5Oz req_at=2026-10-19 09:29:06 sub=68466 sub_action=pi_3USCsOJG5Oz
+order 68846 pending intent=pi_3USElvJG5Oz action_intent=pi_3USElvJG5Oz req_at=2026-10-19 11:30:33 sub=68781 sub_action=pi_3USElvJG5Oz
+next sweep: 18:39:07

@@ -1,0 +1,60 @@
+{
+    "customer": "cus_VTBPCTCftcrwfA",
+    "payment_intents": [
+        {
+            "id": "pi_3USF7pJG5OzSNVs21r8pTcRb",
+            "status": "requires_payment_method",
+            "amount": 731,
+            "currency": "usd",
+            "created_utc": "2026-10-19 11:53:09",
+            "payment_method": null,
+            "off_session_meta": "68903",
+            "error_code": "card_declined",
+            "decline_code": "generic_decline",
+            "error_message": "Your card was declined."
+        },
+        {
+            "id": "pi_3USF7NJG5OzSNVs20U3hZdYJ",
+            "status": "requires_payment_method",
+            "amount": 731,
+            "currency": "usd",
+            "created_utc": "2026-10-19 11:52:41",
+            "payment_method": null,
+            "off_session_meta": "68903",
+            "error_code": "card_declined",
+            "decline_code": "generic_decline",
+            "error_message": "Your card was declined."
+        },
+        {
+            "id": "pi_3USF6vJG5OzSNVs20RzY4Wi4",
+            "status": "requires_payment_method",
+            "amount": 731,
+            "currency": "usd",
+            "created_utc": "2026-10-19 11:52:13",
+            "payment_method": null,
+            "off_session_meta": "68903",
+            "error_code": "card_declined",
+            "decline_code": "generic_decline",
+            "error_message": "Your card was declined."
+        },
+        {
+            "id": "pi_3USF6IJG5OzSNVs21G74KqjJ",
+            "status": "requires_payment_method",
+            "amount": 731,
+            "currency": "usd",
+            "created_utc": "2026-10-19 11:51:34",
+            "payment_method": null,
+            "off_session_meta": "68903",
+            "error_code": "card_declined",
+            "decline_code": "generic_decline",
+            "error_message": "Your card was declined."
+        }
+    ],
+    "order": {
+        "id": 68903,
+        "status": "failed",
+        "total": "7.31",
+        "intent_meta": "pi_3USF7pJG5OzSNVs21r8pTcRb",
+        "txn": ""
+    }
+}

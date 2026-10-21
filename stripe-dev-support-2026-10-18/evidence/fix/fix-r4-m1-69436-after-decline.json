@@ -1,0 +1,33 @@
+{
+    "order": 69436,
+    "status": "failed",
+    "paid": false,
+    "transaction": "",
+    "stripe_intent_id": "pi_3USP1tJG5OzSNVs20Ik8zr0R",
+    "attempt_result": "pi_3USP1tJG5OzSNVs20Ik8zr0R",
+    "attempt_snapshot_pm": "pm_1USLqcJG5OzSNVs2TdwFrV5b",
+    "source_pm": "pm_1USLqcJG5OzSNVs2TdwFrV5b",
+    "action_intent": "",
+    "action_required_at": "",
+    "outbox": "",
+    "sub": 69202,
+    "sub_status": "arraysubs-active",
+    "sub_pm": "pm_1USLqcJG5OzSNVs2TdwFrV5b",
+    "sub_last4": "0341",
+    "sub_failure": "2026-10-19 22:27:42",
+    "sub_failure_category": "generic_decline",
+    "sub_retry_attempts": "1",
+    "derived_next_retry": "2026-10-20 22:27:43",
+    "next_payment_date": "2026-10-19 22:27:17",
+    "pis": {
+        "pi_3USP1tJG5OzSNVs20Ik8zr0R": {
+            "status": "requires_payment_method",
+            "pm": "",
+            "received": 0,
+            "capturable": 0,
+            "cancellation_reason": null,
+            "last_error": "card_declined generic_decline",
+            "setup_future_usage": null
+        }
+    }
+}

@@ -1,0 +1,69 @@
+{
+    "utc": "2026-10-20 07:39:38",
+    "order": 69693,
+    "status": "failed",
+    "paid": false,
+    "transaction_id": "",
+    "order_meta": {
+        "_stripe_intent_id": "pi_3USXdMJG5OzSNVs21YGTDEex",
+        "_arraysubs_pending_transaction_id": "pi_3USXdMJG5OzSNVs21YGTDEex",
+        "_arraysubs_charge_attempt_transaction_id": "pi_3USXdMJG5OzSNVs21YGTDEex",
+        "_arraysubs_charge_attempt_seq": "1",
+        "_arraysubs_customer_attempt_seen": "pi_3USX1YJG5OzSNVs21za2Rvim|pm_1USX2dJG5OzSNVs2CC382Tgu|1792479666",
+        "_arraysubs_customer_pay_started_at": "1792479815",
+        "_arraysubs_payment_action_intent_id": "",
+        "_arraysubs_pending_deadline": "",
+        "_gateway_payment_method_id": "pm_1USWsdJG5OzSNVs20gn5gxhr"
+    },
+    "subscription_meta": {
+        "_gateway_payment_method_id": "pm_1USWsdJG5OzSNVs20gn5gxhr",
+        "_last_payment_failure": "2026-10-20 07:38:57",
+        "_last_payment_failure_category": "generic_decline",
+        "_payment_retry_attempts": "2",
+        "_pending_renewal_order_id": "69693",
+        "_next_payment_date": "2026-10-20 06:59:34"
+    },
+    "subscription_status": "arraysubs-active",
+    "next_renewal_action": {
+        "id": 102071,
+        "at": "2026-10-21 07:38:57"
+    },
+    "intents": {
+        "pi_3USXdMJG5OzSNVs21YGTDEex": {
+            "status": "requires_payment_method",
+            "created": "07:38:56",
+            "amount": 731,
+            "received": 0,
+            "capturable": 0,
+            "payment_method": null,
+            "meta_order_id": "69693",
+            "meta_subscription_id": "69676",
+            "cancellation_reason": null,
+            "last_error": "card_declined generic_decline"
+        },
+        "pi_3USX5BJG5OzSNVs201oOhjZC": {
+            "status": "canceled",
+            "created": "07:03:37",
+            "amount": 731,
+            "received": 0,
+            "capturable": 0,
+            "payment_method": null,
+            "meta_order_id": "69693",
+            "meta_subscription_id": null,
+            "cancellation_reason": "abandoned",
+            "last_error": null
+        },
+        "pi_3USX1YJG5OzSNVs21za2Rvim": {
+            "status": "requires_payment_method",
+            "created": "06:59:52",
+            "amount": 731,
+            "received": 0,
+            "capturable": 0,
+            "payment_method": null,
+            "meta_order_id": "69693",
+            "meta_subscription_id": "69676",
+            "cancellation_reason": null,
+            "last_error": "payment_intent_authentication_failure"
+        }
+    }
+}

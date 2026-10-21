@@ -1,0 +1,66 @@
+dv2-express run log (phase deep-verify-2, 2026-10-19, UTC)
+Question: can the Stripe express-checkout buttons on a renewal order-pay page locked by ArraySubs
+(validateRenewalActionPaymentMethod on woocommerce_before_pay_action, issues #58/#59) pay the order
+through the Store API and bypass the lock?
+
+Fixtures: order 68822 (renewal, failed), subscription 68770, customer 589 sqa-dv59-after (role customer),
+Stripe customer cus_VTB1PicZN8Kd3H. Browser session dv2b-cust (customer, logged in). Core 4791832, Pro edaa401,
+WooCommerce 11.0.1, WooCommerce Stripe Gateway 10.9.0 (test mode, Optimized Checkout on, Link + Amazon Pay ECE on).
+
+12:44Z  Pre-check: order 68822 status failed; _arraysubs_payment_action_required_at=2026-10-19 11:37:04,
+        _arraysubs_payment_action_intent_id=_stripe_intent_id=pi_3USEkOJG5OzSNVs20jlEvHCg (requires_payment_method,
+        card_declined/generic_decline, payment_method_types [card]). Sub 68770 _gateway_payment_method_id=
+        pm_1USEfcJG5OzSNVs2TewrGbne (card 0341, attached to cus_VTB1PicZN8Kd3H). -> dv2-express-state-before.json,
+        dv2-express-stripe-before.json. Mail baseline 28j22ADHcV1XsFRFtfzaS1.
+12:47Z  My Account > Orders > "Pay for order 68822" -> /checkout/order-pay/68822/?pay_for_order=true&key=<r>.
+        Page shows Amazon Pay + "Pay securely with Link" above the Payment Element (saved Visa 0341 + new method).
+        Runtime: wc_stripe_express_checkout_params.is_pay_for_order="1", wcStripeExpressCheckoutPayForOrderParams.order=68822.
+        Screenshot dv2-express-paypage-initial.png.
+12:48Z  Clicked "Pay securely with Link" -> popup checkout.link.com (Sandbox). Signed up with
+        sqa-dv2-link-1792414105@example.com, +1 201 555 0123; Link asked for a card: 4242 4242 4242 4242, 12/30, 123,
+        US billing address. No verification code was requested (new Link account).
+        Screenshots dv2-express-link-clicked.png, -link-email.png, -link-phone.png, -link-after-continue.png, -link-card-filled.png.
+12:49:36Z Clicked "Pay $7.31" once (dv2-express-link-pay-clicked-at.txt). Popup closed; page redirected at 12:49:51Z to
+        /checkout/order-received/68822/?key=<r>: "Order completed", Payment: Link, Email: the Link email.
+        Screenshot dv2-express-link-after-pay(-full).png.
+
+Server-side proof of route: capture/lifecycle-events.jsonl has "renewed" (source_hook arraysubs_renewal_payment_complete)
+and "grace_recovered" for sub 68770 at 12:49:48Z with context rest=true, path=/wp-json/wc/store/v1/checkout/68822.
+No ArraySubs gate message, refusal, or notice was logged. The only ArraySubs log entry from that request is
+wc-logs/arraysubs-2026-10-19-*.log 12:49:41Z "ERROR Subscription checkout creation failed for order #68822
+(arraysubs_checkout_recovery_ambiguous_item)". That is the new-checkout creation hook on
+woocommerce_store_api_checkout_order_processed, which failed closed (customer 589 still has only sub 68770).
+
+After (dv2-express-state-after.json, dv2-express-stripe-after.json):
+- Order 68822: failed -> completed, date_paid 12:49:46Z, transaction ch_3USG0ZJG5OzSNVs21H2c5wUt, title "Link",
+  _stripe_intent_id pi_3USEkO... -> pi_3USG0ZJG5OzSNVs21Rq8uGbe, _stripe_source_id pm_1USEfc... -> pm_1USG0TJG5OzSNVs2Y8ki6bwm,
+  _stripe_upe_payment_type card -> link. Billing email changed to the Link email; billing phone removed.
+  The stale lock markers are still on the order: _arraysubs_payment_action_url/_intent_id (old PI)/_required_at,
+  _arraysubs_pending_transaction_id and _arraysubs_charge_attempt_transaction_id = old PI.
+- Stripe (cus_VTB1PicZN8Kd3H): new PI pi_3USG0ZJG5OzSNVs21Rq8uGbe succeeded 731 USD, payment_method_types [link],
+  setup_future_usage null, metadata order_id 68822 / payment_type single (no renewal/subscription_id).
+  The old PI pi_3USEkO... is still requires_payment_method, amount_received 0. One successful charge
+  (ch_3USG0Z..., pm type link), so no duplicate collection.
+- New PM pm_1USG0TJG5OzSNVs2Y8ki6bwm: type link, customer null. It is not attached to cus_VTB1PicZN8Kd3H and
+  is not in that customer's card/link PM list. The customer's default PM is still pm_1USEfc... (card 0341).
+- Sub 68770: _gateway_payment_method_id pm_1USEfc... -> pm_1USG0T... (rebound), _payment_method_type card -> link,
+  _payment_method_wallet -> link, _gateway_status active, _completed_payments 0 -> 1, next payment
+  2026-10-20 11:28:22, _pending_renewal_order_id removed, failure fields cleared.
+  _payment_method_brand/last4/expiry still say visa/0341/12/2030, and _payment_method_updated_at is unchanged.
+  The customer page still shows "Card on File: Visa ending in 0341" (dv2-express-customer-sub-after.png).
+  The sub's _arraysubs_payment_action_intent_id/_url (old PI) are still present.
+  New renewal actions 101230 (invoice, 2026-10-20 05:45:11Z) and 101231 (process, 2026-10-20 11:45:11Z) are pending
+  and were NOT run.
+- WC tokens for user 589: unchanged (only token 76 = pm_1USEfc...).
+- Mail: 4p6AAcN2WYi73osK7EJ4iv (admin new order #68822) and 4qoxP9fReGyjgGFKPnojQD (customer "Payment received for
+  subscription #68770", Payment Method Link). No warning email.
+- Read-only probe (dv2-express-verify-probe.json): StripeDelegate::verifyAutomaticRenewalPaymentMethod() on the new
+  binding returns renewal_payment_method_binding_invalid "...No charge was attempted.", so the next automatic
+  renewal is expected to fail closed. The probe wrote no meta.
+
+Amazon Pay: not completed. Order 68822 was already paid by Link. A non-paying probe on product 12591 (SLT Box Item A)
+opened amazon.com/ap/signin ("amazon pay | Sandbox", "Sign in with Amazon"; dv2-express-amazon-probe-popup.png),
+which needs Amazon buyer credentials, so there is no credential-free sandbox flow. The popup was closed without
+signing in, and the item that ECE added to the cart was removed (cart count 0). No order was created.
+
+Unrelated activity in the same window: order 68965 / sub 68788 / customer 588 (another agent's dv2-c fixture).

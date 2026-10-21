@@ -1,0 +1,122 @@
+{
+    "taken_at_utc": "2026-10-19T11:12:36+00:00",
+    "customer": {
+        "id": "cus_VTAa4eDbx66HA2",
+        "invoice_settings.default_payment_method": "pm_1USERyJG5OzSNVs2jd23cMGv",
+        "default_source": null,
+        "error": null
+    },
+    "payment_methods": [
+        {
+            "id": "pm_1USERyJG5OzSNVs2jd23cMGv",
+            "type": "card",
+            "brand": "mastercard",
+            "last4": "4444",
+            "exp": "12/2030",
+            "created_utc": "2026-10-19T11:09:54+00:00",
+            "allow_redisplay": "unspecified"
+        },
+        {
+            "id": "pm_1USEHNJG5OzSNVs2nPZUVDFH",
+            "type": "card",
+            "brand": "mastercard",
+            "last4": "4444",
+            "exp": "12/2030",
+            "created_utc": "2026-10-19T10:58:58+00:00",
+            "allow_redisplay": "always"
+        },
+        {
+            "id": "pm_1USEEsJG5OzSNVs2J5K5YdAm",
+            "type": "card",
+            "brand": "visa",
+            "last4": "4242",
+            "exp": "12/2030",
+            "created_utc": "2026-10-19T10:56:22+00:00",
+            "allow_redisplay": "unspecified"
+        }
+    ],
+    "subscription_meta": {
+        "_gateway_payment_method_id": "pm_1USEEsJG5OzSNVs2J5K5YdAm",
+        "_gateway_customer_id": "cus_VTAa4eDbx66HA2",
+        "_payment_method_type": "card",
+        "_payment_method_brand": "visa",
+        "_payment_method_last4": "4242",
+        "_payment_method_expiry_month": "12",
+        "_payment_method_expiry_year": "2030",
+        "_payment_method_updated_at": "2026-10-19 10:56:31",
+        "_payment_method_source": "stripe",
+        "_gateway_status": "active",
+        "_next_payment_date": "2026-10-20 11:07:07"
+    },
+    "subscription_status": "arraysubs-active",
+    "wc_tokens": [
+        {
+            "token_id": "70",
+            "gateway_id": "stripe",
+            "token": "pm_1USEEsJG5OzSNVs2J5K5YdAm",
+            "user_id": "584",
+            "type": "CC",
+            "is_default": "0",
+            "meta": [
+                {
+                    "meta_key": "last4",
+                    "meta_value": "4242"
+                },
+                {
+                    "meta_key": "expiry_year",
+                    "meta_value": "2030"
+                },
+                {
+                    "meta_key": "expiry_month",
+                    "meta_value": "12"
+                },
+                {
+                    "meta_key": "card_type",
+                    "meta_value": "visa"
+                },
+                {
+                    "meta_key": "fingerprint",
+                    "meta_value": "MIWqR4mqZ3SOrQyf"
+                },
+                {
+                    "meta_key": "wallet_type",
+                    "meta_value": ""
+                }
+            ]
+        },
+        {
+            "token_id": "73",
+            "gateway_id": "stripe",
+            "token": "pm_1USERyJG5OzSNVs2jd23cMGv",
+            "user_id": "584",
+            "type": "CC",
+            "is_default": "1",
+            "meta": [
+                {
+                    "meta_key": "last4",
+                    "meta_value": "4444"
+                },
+                {
+                    "meta_key": "expiry_year",
+                    "meta_value": "2030"
+                },
+                {
+                    "meta_key": "expiry_month",
+                    "meta_value": "12"
+                },
+                {
+                    "meta_key": "card_type",
+                    "meta_value": "mastercard"
+                },
+                {
+                    "meta_key": "fingerprint",
+                    "meta_value": "tlJNjFJX1w3VZzcQ"
+                },
+                {
+                    "meta_key": "wallet_type",
+                    "meta_value": ""
+                }
+            ]
+        }
+    ]
+}

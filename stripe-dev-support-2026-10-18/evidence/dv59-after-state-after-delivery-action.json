@@ -1,0 +1,73 @@
+{
+    "checked_at_utc": "2026-10-19T11:38:29+00:00",
+    "sub": 68770,
+    "sub_status": "arraysubs-active",
+    "sub_meta": {
+        "_arraysubs_payment_action_intent_id": "pi_3USEkOJG5OzSNVs20jlEvHCg",
+        "_arraysubs_payment_action_url": "https://mirror-help.arrayhash.com/checkout/order-pay/68822/?pay_for_order=true&key=<r>&wc-stripe-confirmation=1",
+        "_arraysubs_payment_action_required_at": "",
+        "_pending_renewal_order_id": "68822",
+        "_gateway_payment_method_id": "pm_1USEfcJG5OzSNVs2TewrGbne",
+        "_next_payment_date": "2026-10-19 11:28:22"
+    },
+    "sub_meta_retry": {
+        "_arraysubs_lifecycle_attempt_seq": "1",
+        "_last_payment_failure": "2026-10-19 11:28:57",
+        "_last_payment_failure_reason": "Your card was declined.",
+        "_last_payment_failure_category": "card_declined",
+        "_arraysubs_gateway_payment_failure_email_effects": {
+            "84d48dd119f8755171dbceef09e2e413faeab3cbf63a613eaf0f1c897ada876d": {
+                "status": "sent",
+                "effect": "woocommerce_admin_email",
+                "gateway": "stripe",
+                "order_id": 68822,
+                "provider_attempt": "pi_3USEkOJG5OzSNVs20jlEvHCg",
+                "sent_at": "2026-10-19 11:28:58"
+            },
+            "4ffa6f53b2d16d94c0eabe0aa132fee6e4aab9f7691578874a8453de710bab7a": {
+                "status": "sent",
+                "effect": "customer_email",
+                "gateway": "stripe",
+                "order_id": 68822,
+                "provider_attempt": "pi_3USEkOJG5OzSNVs20jlEvHCg",
+                "sent_at": "2026-10-19 11:28:59"
+            },
+            "ac31f3cbd30e8d0312186dc2ef543a9212c5932468e786accfd51808ce39928b": {
+                "status": "sent",
+                "effect": "admin_email",
+                "gateway": "stripe",
+                "order_id": 68822,
+                "provider_attempt": "pi_3USEkOJG5OzSNVs20jlEvHCg",
+                "sent_at": "2026-10-19 11:28:59"
+            }
+        }
+    },
+    "order": {
+        "id": 68822,
+        "status": "failed",
+        "is_paid": false,
+        "total": "7.31",
+        "payment_method": "stripe",
+        "transaction_id": "",
+        "token_ids": [],
+        "date_paid": null,
+        "meta": {
+            "_arraysubs_payment_action_intent_id": "pi_3USEkOJG5OzSNVs20jlEvHCg",
+            "_arraysubs_payment_action_url": "https://mirror-help.arrayhash.com/checkout/order-pay/68822/?pay_for_order=true&key=<r>&wc-stripe-confirmation=1",
+            "_arraysubs_payment_action_required_at": "2026-10-19 11:37:04",
+            "_stripe_intent_id": "pi_3USEkOJG5OzSNVs20jlEvHCg",
+            "_arraysubs_pending_transaction_id": "pi_3USEkOJG5OzSNVs20jlEvHCg",
+            "_last_gateway_transaction_id": "pi_3USEkOJG5OzSNVs20jlEvHCg",
+            "_arraysubs_charge_attempt_gateway": "stripe",
+            "_arraysubs_charge_attempt_result": "",
+            "_is_renewal_order": "yes",
+            "_stripe_source_id": "pm_1USEfcJG5OzSNVs2TewrGbne"
+        },
+        "meta_other": {
+            "_arraysubs_charge_attempt_at": "2026-10-19 11:28:56",
+            "_arraysubs_charge_attempt_id": "439084de-6b0c-4bc1-8324-ce8a8838d0f1",
+            "_arraysubs_charge_attempt_transaction_id": "pi_3USEkOJG5OzSNVs20jlEvHCg",
+            "_arraysubs_stripe_requires_action_notice_key": "{\"49b220449d7ff9cc92de558029c21b5d77dcc15c04fd9eba6be9341e10cb284d\":{\"status\":\"superseded\",\"intent_id\":\"pi_3USEkOJG5OzSNVs20jlEvHCg\",\"attempts\":0,\"updated_at\":\"2026-10-19 11:38:04\"}}"
+        }
+    }
+}

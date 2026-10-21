@@ -1,0 +1,22 @@
+{
+    "id": "pi_3USEPyJG5OzSNVs20mP0S9dC",
+    "status": "succeeded",
+    "amount": 731,
+    "currency": "usd",
+    "customer": "cus_VTAa4eDbx66HA2",
+    "payment_method": "pm_1USEEsJG5OzSNVs2J5K5YdAm",
+    "off_session_setup": null,
+    "created_utc": "2026-10-19T11:07:50+00:00",
+    "metadata": {
+        "order_id": "68726",
+        "renewal": "true",
+        "site_url": "https://mirror-help.arrayhash.com",
+        "subscription_id": "68677"
+    },
+    "latest_charge": {
+        "id": "ch_3USEPyJG5OzSNVs20H80QuHh",
+        "status": "succeeded",
+        "pm": "pm_1USEEsJG5OzSNVs2J5K5YdAm",
+        "card": "visa 4242"
+    }
+}

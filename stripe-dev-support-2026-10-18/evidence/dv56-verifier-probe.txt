@@ -1,0 +1,5 @@
+gateway_class=ArraySubs\Features\AutomaticPayments\Gateways\Stripe\StripeDelegate
+stored visa 4242 pm_1USEEsJG5OzSNVs2J5K5YdAm => OK payment_method_id=pm_1USEEsJG5OzSNVs2J5K5YdAm
+portal mastercard 4444 pm_1USEHNJG5OzSNVs2nPZUVDFH => WP_Error renewal_payment_method_binding_changed
+wc-added mastercard 4444 pm_1USERyJG5OzSNVs2jd23cMGv => WP_Error renewal_payment_method_binding_changed
+meta_unchanged=yes

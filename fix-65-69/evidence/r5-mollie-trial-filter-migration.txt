@@ -1,0 +1,147 @@
+### K1 issue scenario: migration 197->495, target 7-day trial + 5.00 signup | migrate-settings=on trial=7 signup=5 require_pm=on mollie=[creditcard,paypal,ideal,bancontact,directdebit] | today(UTC)=2026-10-20 16:03:39
+  cart: line_subtotal=7.15 fees=5.00 TOTAL=12.15 | needs_payment=true
+  migration: eligible sub=27494 upgrade net=7.15 display_price=7.15
+  CartSummary::hasTrial=false raw trial_length=7
+  [staging] MollieAvailability::isAvailable()=false | available gateways: stripe,stripe_us_bank_account,stripe_afterpay_clearpay,arraysubs_paddle,bacs,cheque
+  [mollie sim] MollieAvailability::isAvailable()=true getTrialCapableGatewayIds=[mollie_wc_gateway_creditcard,mollie_wc_gateway_paypal] MollieTrialAvailability::cartHasTrial()=true
+  [hook] woocommerce_available_payment_gateways callbacks: 10:closure 10:closure 20:Hooks::maybeHideCashOnDeliveryForSubscriptionCheckout 20:CartRestrictions::hideIncapableGateways 21:Hooks::maybeHideUnsupportedRenewalSyncGateways 25:MollieTrialAvailability::filterTrialMethods 30:StripeSubscriptionCompatibility::filterSubscriptionStripeGateways 100:Hooks::restrictProrationOrderGateway
+  [REAL chain] in@25=[stripe,stripe_us_bank_account,stripe_afterpay_clearpay,arraysubs_paddle,bacs,cheque,mollie_wc_gateway_creditcard,mollie_wc_gateway_paypal,mollie_wc_gateway_ideal,mollie_wc_gateway_bancontact,mollie_wc_gateway_directdebit] out@25=[stripe,stripe_us_bank_account,stripe_afterpay_clearpay,arraysubs_paddle,bacs,cheque,mollie_wc_gateway_creditcard,mollie_wc_gateway_paypal] final=[stripe,stripe_us_bank_account,stripe_afterpay_clearpay,arraysubs_paddle,bacs,cheque,mollie_wc_gateway_creditcard,mollie_wc_gateway_paypal]
+    classic/Store API checkout with mollie_wc_gateway_ideal -> refused (Invalid payment method / not available)
+    classic/Store API checkout with mollie_wc_gateway_bancontact -> refused (Invalid payment method / not available)
+    classic/Store API checkout with mollie_wc_gateway_directdebit -> refused (Invalid payment method / not available)
+    classic/Store API checkout with mollie_wc_gateway_creditcard -> accepted
+    classic/Store API checkout with mollie_wc_gateway_paypal -> accepted
+  [FIX sim] fixed cartHasTrial()=false in@25=[stripe,stripe_us_bank_account,stripe_afterpay_clearpay,arraysubs_paddle,bacs,cheque,mollie_wc_gateway_creditcard,mollie_wc_gateway_paypal,mollie_wc_gateway_ideal,mollie_wc_gateway_bancontact,mollie_wc_gateway_directdebit] out@25=[stripe,stripe_us_bank_account,stripe_afterpay_clearpay,arraysubs_paddle,bacs,cheque,mollie_wc_gateway_creditcard,mollie_wc_gateway_paypal,mollie_wc_gateway_ideal,mollie_wc_gateway_bancontact,mollie_wc_gateway_directdebit] final=[stripe,stripe_us_bank_account,stripe_afterpay_clearpay,arraysubs_paddle,bacs,cheque,mollie_wc_gateway_creditcard,mollie_wc_gateway_paypal,mollie_wc_gateway_ideal,mollie_wc_gateway_bancontact,mollie_wc_gateway_directdebit]
+  guard: case=rolled-back-clean, fixture identical blocked_writes=0 http_calls=0 mail_blocked=0 notices=0
+### K2 control: real new trial (migration settings off) | migrate-settings=off trial=7 signup=5 require_pm=on mollie=[creditcard,paypal,ideal,bancontact,directdebit] | today(UTC)=2026-10-20 16:04:02
+  cart: line_subtotal=0.00 fees=5.00 TOTAL=5.00 | needs_payment=true
+  migration: none
+  CartSummary::hasTrial=true raw trial_length=7
+  [staging] MollieAvailability::isAvailable()=false | available gateways: stripe,stripe_us_bank_account,stripe_afterpay_clearpay,arraysubs_paddle,bacs,cheque
+  [mollie sim] MollieAvailability::isAvailable()=true getTrialCapableGatewayIds=[mollie_wc_gateway_creditcard,mollie_wc_gateway_paypal] MollieTrialAvailability::cartHasTrial()=true
+  [hook] woocommerce_available_payment_gateways callbacks: 10:closure 10:closure 20:Hooks::maybeHideCashOnDeliveryForSubscriptionCheckout 20:CartRestrictions::hideIncapableGateways 21:Hooks::maybeHideUnsupportedRenewalSyncGateways 25:MollieTrialAvailability::filterTrialMethods 30:StripeSubscriptionCompatibility::filterSubscriptionStripeGateways 100:Hooks::restrictProrationOrderGateway
+  [REAL chain] in@25=[stripe,stripe_us_bank_account,stripe_afterpay_clearpay,arraysubs_paddle,bacs,cheque,mollie_wc_gateway_creditcard,mollie_wc_gateway_paypal,mollie_wc_gateway_ideal,mollie_wc_gateway_bancontact,mollie_wc_gateway_directdebit] out@25=[stripe,stripe_us_bank_account,stripe_afterpay_clearpay,arraysubs_paddle,bacs,cheque,mollie_wc_gateway_creditcard,mollie_wc_gateway_paypal] final=[stripe,stripe_us_bank_account,stripe_afterpay_clearpay,arraysubs_paddle,bacs,cheque,mollie_wc_gateway_creditcard,mollie_wc_gateway_paypal]
+    classic/Store API checkout with mollie_wc_gateway_ideal -> refused (Invalid payment method / not available)
+    classic/Store API checkout with mollie_wc_gateway_bancontact -> refused (Invalid payment method / not available)
+    classic/Store API checkout with mollie_wc_gateway_directdebit -> refused (Invalid payment method / not available)
+    classic/Store API checkout with mollie_wc_gateway_creditcard -> accepted
+    classic/Store API checkout with mollie_wc_gateway_paypal -> accepted
+  [FIX sim] fixed cartHasTrial()=true in@25=[stripe,stripe_us_bank_account,stripe_afterpay_clearpay,arraysubs_paddle,bacs,cheque,mollie_wc_gateway_creditcard,mollie_wc_gateway_paypal,mollie_wc_gateway_ideal,mollie_wc_gateway_bancontact,mollie_wc_gateway_directdebit] out@25=[stripe,stripe_us_bank_account,stripe_afterpay_clearpay,arraysubs_paddle,bacs,cheque,mollie_wc_gateway_creditcard,mollie_wc_gateway_paypal] final=[stripe,stripe_us_bank_account,stripe_afterpay_clearpay,arraysubs_paddle,bacs,cheque,mollie_wc_gateway_creditcard,mollie_wc_gateway_paypal]
+  guard: case=rolled-back-clean, fixture identical blocked_writes=0 http_calls=0 mail_blocked=0 notices=0
+### K3 control: migration, target without trial | migrate-settings=on trial=0 signup=0 require_pm=on mollie=[creditcard,paypal,ideal,bancontact,directdebit] | today(UTC)=2026-10-20 16:04:06
+  cart: line_subtotal=7.15 fees=0.00 TOTAL=7.15 | needs_payment=true
+  migration: eligible sub=27494 upgrade net=7.15 display_price=7.15
+  CartSummary::hasTrial=false raw trial_length=0
+  [staging] MollieAvailability::isAvailable()=false | available gateways: stripe,stripe_us_bank_account,stripe_afterpay_clearpay,arraysubs_paddle,bacs,cheque
+  [mollie sim] MollieAvailability::isAvailable()=true getTrialCapableGatewayIds=[mollie_wc_gateway_creditcard,mollie_wc_gateway_paypal] MollieTrialAvailability::cartHasTrial()=false
+  [hook] woocommerce_available_payment_gateways callbacks: 10:closure 10:closure 20:Hooks::maybeHideCashOnDeliveryForSubscriptionCheckout 20:CartRestrictions::hideIncapableGateways 21:Hooks::maybeHideUnsupportedRenewalSyncGateways 25:MollieTrialAvailability::filterTrialMethods 30:StripeSubscriptionCompatibility::filterSubscriptionStripeGateways 100:Hooks::restrictProrationOrderGateway
+  [REAL chain] in@25=[stripe,stripe_us_bank_account,stripe_afterpay_clearpay,arraysubs_paddle,bacs,cheque,mollie_wc_gateway_creditcard,mollie_wc_gateway_paypal,mollie_wc_gateway_ideal,mollie_wc_gateway_bancontact,mollie_wc_gateway_directdebit] out@25=[stripe,stripe_us_bank_account,stripe_afterpay_clearpay,arraysubs_paddle,bacs,cheque,mollie_wc_gateway_creditcard,mollie_wc_gateway_paypal,mollie_wc_gateway_ideal,mollie_wc_gateway_bancontact,mollie_wc_gateway_directdebit] final=[stripe,stripe_us_bank_account,stripe_afterpay_clearpay,arraysubs_paddle,bacs,cheque,mollie_wc_gateway_creditcard,mollie_wc_gateway_paypal,mollie_wc_gateway_ideal,mollie_wc_gateway_bancontact,mollie_wc_gateway_directdebit]
+    classic/Store API checkout with mollie_wc_gateway_ideal -> accepted
+    classic/Store API checkout with mollie_wc_gateway_bancontact -> accepted
+    classic/Store API checkout with mollie_wc_gateway_directdebit -> accepted
+    classic/Store API checkout with mollie_wc_gateway_creditcard -> accepted
+    classic/Store API checkout with mollie_wc_gateway_paypal -> accepted
+  [FIX sim] fixed cartHasTrial()=false in@25=[stripe,stripe_us_bank_account,stripe_afterpay_clearpay,arraysubs_paddle,bacs,cheque,mollie_wc_gateway_creditcard,mollie_wc_gateway_paypal,mollie_wc_gateway_ideal,mollie_wc_gateway_bancontact,mollie_wc_gateway_directdebit] out@25=[stripe,stripe_us_bank_account,stripe_afterpay_clearpay,arraysubs_paddle,bacs,cheque,mollie_wc_gateway_creditcard,mollie_wc_gateway_paypal,mollie_wc_gateway_ideal,mollie_wc_gateway_bancontact,mollie_wc_gateway_directdebit] final=[stripe,stripe_us_bank_account,stripe_afterpay_clearpay,arraysubs_paddle,bacs,cheque,mollie_wc_gateway_creditcard,mollie_wc_gateway_paypal,mollie_wc_gateway_ideal,mollie_wc_gateway_bancontact,mollie_wc_gateway_directdebit]
+  guard: case=rolled-back-clean, fixture identical blocked_writes=0 http_calls=0 mail_blocked=0 notices=0
+### K4 migration + trial, Mollie iDEAL/Bancontact/SEPA only (no card/PayPal), other gateways present | migrate-settings=on trial=7 signup=5 require_pm=on mollie=[ideal,bancontact,directdebit] | today(UTC)=2026-10-20 16:04:10
+  cart: line_subtotal=7.15 fees=5.00 TOTAL=12.15 | needs_payment=true
+  migration: eligible sub=27494 upgrade net=7.15 display_price=7.15
+  CartSummary::hasTrial=false raw trial_length=7
+  [staging] MollieAvailability::isAvailable()=false | available gateways: stripe,stripe_us_bank_account,stripe_afterpay_clearpay,arraysubs_paddle,bacs,cheque
+  [mollie sim] MollieAvailability::isAvailable()=true getTrialCapableGatewayIds=[] MollieTrialAvailability::cartHasTrial()=true
+  [hook] woocommerce_available_payment_gateways callbacks: 10:closure 10:closure 20:Hooks::maybeHideCashOnDeliveryForSubscriptionCheckout 20:CartRestrictions::hideIncapableGateways 21:Hooks::maybeHideUnsupportedRenewalSyncGateways 25:MollieTrialAvailability::filterTrialMethods 30:StripeSubscriptionCompatibility::filterSubscriptionStripeGateways 100:Hooks::restrictProrationOrderGateway
+  [REAL chain] in@25=[stripe,stripe_us_bank_account,stripe_afterpay_clearpay,arraysubs_paddle,bacs,cheque,mollie_wc_gateway_ideal,mollie_wc_gateway_bancontact,mollie_wc_gateway_directdebit] out@25=[stripe,stripe_us_bank_account,stripe_afterpay_clearpay,arraysubs_paddle,bacs,cheque] final=[stripe,stripe_us_bank_account,stripe_afterpay_clearpay,arraysubs_paddle,bacs,cheque]
+    classic/Store API checkout with mollie_wc_gateway_ideal -> refused (Invalid payment method / not available)
+    classic/Store API checkout with mollie_wc_gateway_bancontact -> refused (Invalid payment method / not available)
+    classic/Store API checkout with mollie_wc_gateway_directdebit -> refused (Invalid payment method / not available)
+  [FIX sim] fixed cartHasTrial()=false in@25=[stripe,stripe_us_bank_account,stripe_afterpay_clearpay,arraysubs_paddle,bacs,cheque,mollie_wc_gateway_ideal,mollie_wc_gateway_bancontact,mollie_wc_gateway_directdebit] out@25=[stripe,stripe_us_bank_account,stripe_afterpay_clearpay,arraysubs_paddle,bacs,cheque,mollie_wc_gateway_ideal,mollie_wc_gateway_bancontact,mollie_wc_gateway_directdebit] final=[stripe,stripe_us_bank_account,stripe_afterpay_clearpay,arraysubs_paddle,bacs,cheque,mollie_wc_gateway_ideal,mollie_wc_gateway_bancontact,mollie_wc_gateway_directdebit]
+  guard: case=rolled-back-clean, fixture identical blocked_writes=0 http_calls=0 mail_blocked=0 notices=0
+### K5 migration + trial, no signup fee | migrate-settings=on trial=7 signup=0 require_pm=on mollie=[creditcard,paypal,ideal,bancontact,directdebit] | today(UTC)=2026-10-20 16:04:13
+  cart: line_subtotal=7.15 fees=0.00 TOTAL=7.15 | needs_payment=true
+  migration: eligible sub=27494 upgrade net=7.15 display_price=7.15
+  CartSummary::hasTrial=false raw trial_length=7
+  [staging] MollieAvailability::isAvailable()=false | available gateways: stripe,stripe_us_bank_account,stripe_afterpay_clearpay,arraysubs_paddle,bacs,cheque
+  [mollie sim] MollieAvailability::isAvailable()=true getTrialCapableGatewayIds=[mollie_wc_gateway_creditcard,mollie_wc_gateway_paypal] MollieTrialAvailability::cartHasTrial()=true
+  [hook] woocommerce_available_payment_gateways callbacks: 10:closure 10:closure 20:Hooks::maybeHideCashOnDeliveryForSubscriptionCheckout 20:CartRestrictions::hideIncapableGateways 21:Hooks::maybeHideUnsupportedRenewalSyncGateways 25:MollieTrialAvailability::filterTrialMethods 30:StripeSubscriptionCompatibility::filterSubscriptionStripeGateways 100:Hooks::restrictProrationOrderGateway
+  [REAL chain] in@25=[stripe,stripe_us_bank_account,stripe_afterpay_clearpay,arraysubs_paddle,bacs,cheque,mollie_wc_gateway_creditcard,mollie_wc_gateway_paypal,mollie_wc_gateway_ideal,mollie_wc_gateway_bancontact,mollie_wc_gateway_directdebit] out@25=[stripe,stripe_us_bank_account,stripe_afterpay_clearpay,arraysubs_paddle,bacs,cheque,mollie_wc_gateway_creditcard,mollie_wc_gateway_paypal] final=[stripe,stripe_us_bank_account,stripe_afterpay_clearpay,arraysubs_paddle,bacs,cheque,mollie_wc_gateway_creditcard,mollie_wc_gateway_paypal]
+    classic/Store API checkout with mollie_wc_gateway_ideal -> refused (Invalid payment method / not available)
+    classic/Store API checkout with mollie_wc_gateway_bancontact -> refused (Invalid payment method / not available)
+    classic/Store API checkout with mollie_wc_gateway_directdebit -> refused (Invalid payment method / not available)
+    classic/Store API checkout with mollie_wc_gateway_creditcard -> accepted
+    classic/Store API checkout with mollie_wc_gateway_paypal -> accepted
+  [FIX sim] fixed cartHasTrial()=false in@25=[stripe,stripe_us_bank_account,stripe_afterpay_clearpay,arraysubs_paddle,bacs,cheque,mollie_wc_gateway_creditcard,mollie_wc_gateway_paypal,mollie_wc_gateway_ideal,mollie_wc_gateway_bancontact,mollie_wc_gateway_directdebit] out@25=[stripe,stripe_us_bank_account,stripe_afterpay_clearpay,arraysubs_paddle,bacs,cheque,mollie_wc_gateway_creditcard,mollie_wc_gateway_paypal,mollie_wc_gateway_ideal,mollie_wc_gateway_bancontact,mollie_wc_gateway_directdebit] final=[stripe,stripe_us_bank_account,stripe_afterpay_clearpay,arraysubs_paddle,bacs,cheque,mollie_wc_gateway_creditcard,mollie_wc_gateway_paypal,mollie_wc_gateway_ideal,mollie_wc_gateway_bancontact,mollie_wc_gateway_directdebit]
+  guard: case=rolled-back-clean, fixture identical blocked_writes=0 http_calls=0 mail_blocked=0 notices=0
+### K6 migration + trial, Mollie-only store with iDEAL/Bancontact/SEPA only | migrate-settings=on trial=7 signup=5 require_pm=on mollie=[ideal,bancontact,directdebit] | today(UTC)=2026-10-20 16:04:17
+  cart: line_subtotal=7.15 fees=5.00 TOTAL=12.15 | needs_payment=true
+  migration: eligible sub=27494 upgrade net=7.15 display_price=7.15
+  CartSummary::hasTrial=false raw trial_length=7
+  [staging] MollieAvailability::isAvailable()=false | available gateways: stripe,stripe_us_bank_account,stripe_afterpay_clearpay,arraysubs_paddle,bacs,cheque
+  [mollie sim] MollieAvailability::isAvailable()=true getTrialCapableGatewayIds=[] MollieTrialAvailability::cartHasTrial()=true
+  [hook] woocommerce_available_payment_gateways callbacks: 5:closure 10:closure 10:closure 20:Hooks::maybeHideCashOnDeliveryForSubscriptionCheckout 20:CartRestrictions::hideIncapableGateways 21:Hooks::maybeHideUnsupportedRenewalSyncGateways 25:MollieTrialAvailability::filterTrialMethods 30:StripeSubscriptionCompatibility::filterSubscriptionStripeGateways 100:Hooks::restrictProrationOrderGateway
+  [REAL chain] in@25=[mollie_wc_gateway_ideal,mollie_wc_gateway_bancontact,mollie_wc_gateway_directdebit] out@25=[mollie_wc_gateway_ideal,mollie_wc_gateway_bancontact,mollie_wc_gateway_directdebit] final=[mollie_wc_gateway_ideal,mollie_wc_gateway_bancontact,mollie_wc_gateway_directdebit]
+    classic/Store API checkout with mollie_wc_gateway_ideal -> accepted
+    classic/Store API checkout with mollie_wc_gateway_bancontact -> accepted
+    classic/Store API checkout with mollie_wc_gateway_directdebit -> accepted
+  [FIX sim] fixed cartHasTrial()=false in@25=[mollie_wc_gateway_ideal,mollie_wc_gateway_bancontact,mollie_wc_gateway_directdebit] out@25=[mollie_wc_gateway_ideal,mollie_wc_gateway_bancontact,mollie_wc_gateway_directdebit] final=[mollie_wc_gateway_ideal,mollie_wc_gateway_bancontact,mollie_wc_gateway_directdebit]
+  guard: case=rolled-back-clean, fixture identical blocked_writes=0 http_calls=0 mail_blocked=0 notices=0
+### K7 migration + trial, Mollie-only store with card + iDEAL | migrate-settings=on trial=7 signup=5 require_pm=on mollie=[creditcard,ideal] | today(UTC)=2026-10-20 16:04:21
+  cart: line_subtotal=7.15 fees=5.00 TOTAL=12.15 | needs_payment=true
+  migration: eligible sub=27494 upgrade net=7.15 display_price=7.15
+  CartSummary::hasTrial=false raw trial_length=7
+  [staging] MollieAvailability::isAvailable()=false | available gateways: stripe,stripe_us_bank_account,stripe_afterpay_clearpay,arraysubs_paddle,bacs,cheque
+  [mollie sim] MollieAvailability::isAvailable()=true getTrialCapableGatewayIds=[mollie_wc_gateway_creditcard] MollieTrialAvailability::cartHasTrial()=true
+  [hook] woocommerce_available_payment_gateways callbacks: 5:closure 10:closure 10:closure 20:Hooks::maybeHideCashOnDeliveryForSubscriptionCheckout 20:CartRestrictions::hideIncapableGateways 21:Hooks::maybeHideUnsupportedRenewalSyncGateways 25:MollieTrialAvailability::filterTrialMethods 30:StripeSubscriptionCompatibility::filterSubscriptionStripeGateways 100:Hooks::restrictProrationOrderGateway
+  [REAL chain] in@25=[mollie_wc_gateway_creditcard,mollie_wc_gateway_ideal] out@25=[mollie_wc_gateway_creditcard] final=[mollie_wc_gateway_creditcard]
+    classic/Store API checkout with mollie_wc_gateway_ideal -> refused (Invalid payment method / not available)
+    classic/Store API checkout with mollie_wc_gateway_creditcard -> accepted
+  [FIX sim] fixed cartHasTrial()=false in@25=[mollie_wc_gateway_creditcard,mollie_wc_gateway_ideal] out@25=[mollie_wc_gateway_creditcard,mollie_wc_gateway_ideal] final=[mollie_wc_gateway_creditcard,mollie_wc_gateway_ideal]
+  guard: case=rolled-back-clean, fixture identical blocked_writes=0 http_calls=0 mail_blocked=0 notices=0
+### Z1 zero-total migration: sub 27494 in trial (memory), target 7-day trial, no signup fee, require_pm on | migrate-settings=on trial=7 signup=0 require_pm=on mollie=[creditcard,paypal,ideal,bancontact,directdebit] | today(UTC)=2026-10-20 16:08:29
+  cart: line_subtotal=0.00 fees=0.00 TOTAL=0.00 | needs_payment=true
+  migration: eligible sub=27494 upgrade net=0.00 display_price=0.00
+  CartSummary::hasTrial=false raw trial_length=7
+  sub 27494 status seen by code=arraysubs-trial (DB unchanged) | proration charge=0.00 credit=0.00 net=0.00
+  [staging] MollieAvailability::isAvailable()=false | available gateways: stripe,stripe_us_bank_account,stripe_afterpay_clearpay,arraysubs_paddle,bacs,cheque
+  [mollie sim] MollieAvailability::isAvailable()=true getTrialCapableGatewayIds=[mollie_wc_gateway_creditcard,mollie_wc_gateway_paypal] MollieTrialAvailability::cartHasTrial()=true
+  [hook] woocommerce_available_payment_gateways callbacks: 10:closure 10:closure 20:Hooks::maybeHideCashOnDeliveryForSubscriptionCheckout 20:CartRestrictions::hideIncapableGateways 21:Hooks::maybeHideUnsupportedRenewalSyncGateways 25:MollieTrialAvailability::filterTrialMethods 30:StripeSubscriptionCompatibility::filterSubscriptionStripeGateways 100:Hooks::restrictProrationOrderGateway
+  [REAL chain] in@25=[stripe,stripe_us_bank_account,stripe_afterpay_clearpay,arraysubs_paddle,bacs,cheque,mollie_wc_gateway_creditcard,mollie_wc_gateway_paypal,mollie_wc_gateway_ideal,mollie_wc_gateway_bancontact,mollie_wc_gateway_directdebit] out@25=[stripe,stripe_us_bank_account,stripe_afterpay_clearpay,arraysubs_paddle,bacs,cheque,mollie_wc_gateway_creditcard,mollie_wc_gateway_paypal] final=[stripe,stripe_us_bank_account,stripe_afterpay_clearpay,arraysubs_paddle,bacs,cheque,mollie_wc_gateway_creditcard,mollie_wc_gateway_paypal]
+    classic/Store API checkout with mollie_wc_gateway_ideal -> refused (Invalid payment method / not available)
+    classic/Store API checkout with mollie_wc_gateway_bancontact -> refused (Invalid payment method / not available)
+    classic/Store API checkout with mollie_wc_gateway_directdebit -> refused (Invalid payment method / not available)
+    classic/Store API checkout with mollie_wc_gateway_creditcard -> accepted
+    classic/Store API checkout with mollie_wc_gateway_paypal -> accepted
+  [FIX sim] fixed cartHasTrial()=false in@25=[stripe,stripe_us_bank_account,stripe_afterpay_clearpay,arraysubs_paddle,bacs,cheque,mollie_wc_gateway_creditcard,mollie_wc_gateway_paypal,mollie_wc_gateway_ideal,mollie_wc_gateway_bancontact,mollie_wc_gateway_directdebit] out@25=[stripe,stripe_us_bank_account,stripe_afterpay_clearpay,arraysubs_paddle,bacs,cheque,mollie_wc_gateway_creditcard,mollie_wc_gateway_paypal,mollie_wc_gateway_ideal,mollie_wc_gateway_bancontact,mollie_wc_gateway_directdebit] final=[stripe,stripe_us_bank_account,stripe_afterpay_clearpay,arraysubs_paddle,bacs,cheque,mollie_wc_gateway_creditcard,mollie_wc_gateway_paypal,mollie_wc_gateway_ideal,mollie_wc_gateway_bancontact,mollie_wc_gateway_directdebit]
+  guard: case=rolled-back-clean, fixture identical blocked_writes=0 http_calls=0 mail_blocked=0 notices=0
+  [fix76 sim] maybeSkipPaymentForTrial replaced by fixed copy: yes
+### Z2 = Z1 + #76 fix simulated in memory | migrate-settings=on trial=7 signup=0 require_pm=on mollie=[creditcard,paypal,ideal,bancontact,directdebit] | today(UTC)=2026-10-20 16:08:32
+  cart: line_subtotal=0.00 fees=0.00 TOTAL=0.00 | needs_payment=false
+  migration: eligible sub=27494 upgrade net=0.00 display_price=0.00
+  CartSummary::hasTrial=false raw trial_length=7
+  sub 27494 status seen by code=arraysubs-trial (DB unchanged) | proration charge=0.00 credit=0.00 net=0.00
+  [staging] MollieAvailability::isAvailable()=false | available gateways: stripe,stripe_us_bank_account,stripe_afterpay_clearpay,arraysubs_paddle,bacs,cheque
+  [mollie sim] MollieAvailability::isAvailable()=true getTrialCapableGatewayIds=[mollie_wc_gateway_creditcard,mollie_wc_gateway_paypal] MollieTrialAvailability::cartHasTrial()=true
+  [hook] woocommerce_available_payment_gateways callbacks: 10:closure 10:closure 20:Hooks::maybeHideCashOnDeliveryForSubscriptionCheckout 20:CartRestrictions::hideIncapableGateways 21:Hooks::maybeHideUnsupportedRenewalSyncGateways 25:MollieTrialAvailability::filterTrialMethods 30:StripeSubscriptionCompatibility::filterSubscriptionStripeGateways 100:Hooks::restrictProrationOrderGateway
+  [REAL chain] in@25=[stripe,stripe_us_bank_account,stripe_afterpay_clearpay,arraysubs_paddle,bacs,cheque,mollie_wc_gateway_creditcard,mollie_wc_gateway_paypal,mollie_wc_gateway_ideal,mollie_wc_gateway_bancontact,mollie_wc_gateway_directdebit] out@25=[stripe,stripe_us_bank_account,stripe_afterpay_clearpay,arraysubs_paddle,bacs,cheque,mollie_wc_gateway_creditcard,mollie_wc_gateway_paypal] final=[stripe,stripe_us_bank_account,stripe_afterpay_clearpay,arraysubs_paddle,bacs,cheque,mollie_wc_gateway_creditcard,mollie_wc_gateway_paypal]
+    classic/Store API checkout with mollie_wc_gateway_ideal -> no payment needed
+    classic/Store API checkout with mollie_wc_gateway_bancontact -> no payment needed
+    classic/Store API checkout with mollie_wc_gateway_directdebit -> no payment needed
+    classic/Store API checkout with mollie_wc_gateway_creditcard -> no payment needed
+    classic/Store API checkout with mollie_wc_gateway_paypal -> no payment needed
+  [FIX sim] fixed cartHasTrial()=false in@25=[stripe,stripe_us_bank_account,stripe_afterpay_clearpay,arraysubs_paddle,bacs,cheque,mollie_wc_gateway_creditcard,mollie_wc_gateway_paypal,mollie_wc_gateway_ideal,mollie_wc_gateway_bancontact,mollie_wc_gateway_directdebit] out@25=[stripe,stripe_us_bank_account,stripe_afterpay_clearpay,arraysubs_paddle,bacs,cheque,mollie_wc_gateway_creditcard,mollie_wc_gateway_paypal,mollie_wc_gateway_ideal,mollie_wc_gateway_bancontact,mollie_wc_gateway_directdebit] final=[stripe,stripe_us_bank_account,stripe_afterpay_clearpay,arraysubs_paddle,bacs,cheque,mollie_wc_gateway_creditcard,mollie_wc_gateway_paypal,mollie_wc_gateway_ideal,mollie_wc_gateway_bancontact,mollie_wc_gateway_directdebit]
+  guard: case=rolled-back-clean, fixture identical blocked_writes=0 http_calls=0 mail_blocked=0 notices=0
+### Z3 = Z1 with require_pm off | migrate-settings=on trial=7 signup=0 require_pm=off mollie=[creditcard,paypal,ideal,bancontact,directdebit] | today(UTC)=2026-10-20 16:08:35
+  cart: line_subtotal=0.00 fees=0.00 TOTAL=0.00 | needs_payment=false
+  migration: eligible sub=27494 upgrade net=0.00 display_price=0.00
+  CartSummary::hasTrial=false raw trial_length=7
+  sub 27494 status seen by code=arraysubs-trial (DB unchanged) | proration charge=0.00 credit=0.00 net=0.00
+  [staging] MollieAvailability::isAvailable()=false | available gateways: stripe,stripe_us_bank_account,stripe_afterpay_clearpay,arraysubs_paddle,bacs,cheque
+  [mollie sim] MollieAvailability::isAvailable()=true getTrialCapableGatewayIds=[mollie_wc_gateway_creditcard,mollie_wc_gateway_paypal] MollieTrialAvailability::cartHasTrial()=true
+  [hook] woocommerce_available_payment_gateways callbacks: 10:closure 10:closure 20:Hooks::maybeHideCashOnDeliveryForSubscriptionCheckout 20:CartRestrictions::hideIncapableGateways 21:Hooks::maybeHideUnsupportedRenewalSyncGateways 25:MollieTrialAvailability::filterTrialMethods 30:StripeSubscriptionCompatibility::filterSubscriptionStripeGateways 100:Hooks::restrictProrationOrderGateway
+  [REAL chain] in@25=[stripe,stripe_us_bank_account,stripe_afterpay_clearpay,arraysubs_paddle,bacs,cheque,mollie_wc_gateway_creditcard,mollie_wc_gateway_paypal,mollie_wc_gateway_ideal,mollie_wc_gateway_bancontact,mollie_wc_gateway_directdebit] out@25=[stripe,stripe_us_bank_account,stripe_afterpay_clearpay,arraysubs_paddle,bacs,cheque,mollie_wc_gateway_creditcard,mollie_wc_gateway_paypal] final=[stripe,stripe_us_bank_account,stripe_afterpay_clearpay,arraysubs_paddle,bacs,cheque,mollie_wc_gateway_creditcard,mollie_wc_gateway_paypal]
+    classic/Store API checkout with mollie_wc_gateway_ideal -> no payment needed
+    classic/Store API checkout with mollie_wc_gateway_bancontact -> no payment needed
+    classic/Store API checkout with mollie_wc_gateway_directdebit -> no payment needed
+    classic/Store API checkout with mollie_wc_gateway_creditcard -> no payment needed
+    classic/Store API checkout with mollie_wc_gateway_paypal -> no payment needed
+  [FIX sim] fixed cartHasTrial()=false in@25=[stripe,stripe_us_bank_account,stripe_afterpay_clearpay,arraysubs_paddle,bacs,cheque,mollie_wc_gateway_creditcard,mollie_wc_gateway_paypal,mollie_wc_gateway_ideal,mollie_wc_gateway_bancontact,mollie_wc_gateway_directdebit] out@25=[stripe,stripe_us_bank_account,stripe_afterpay_clearpay,arraysubs_paddle,bacs,cheque,mollie_wc_gateway_creditcard,mollie_wc_gateway_paypal,mollie_wc_gateway_ideal,mollie_wc_gateway_bancontact,mollie_wc_gateway_directdebit] final=[stripe,stripe_us_bank_account,stripe_afterpay_clearpay,arraysubs_paddle,bacs,cheque,mollie_wc_gateway_creditcard,mollie_wc_gateway_paypal,mollie_wc_gateway_ideal,mollie_wc_gateway_bancontact,mollie_wc_gateway_directdebit]
+  guard: case=rolled-back-clean, fixture identical blocked_writes=0 http_calls=0 mail_blocked=0 notices=0

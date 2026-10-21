@@ -1,0 +1,1715 @@
+{
+ "issue": 61,
+ "session": "dv61-admin (admin, user login 'admin')",
+ "site": "https://mirror-help.arrayhash.com",
+ "plugins": {
+  "arraysubs": "2.0.9 @ 4791832",
+  "arraysubspro": "1.2.8 @ edaa401",
+  "woocommerce": "11.0.1",
+  "woocommerce-gateway-stripe": "10.9.0"
+ },
+ "arraysubs_wp_submenu": [
+  "Home",
+  "Subscriptions",
+  "Manage Members",
+  "Store Credit",
+  "Cancellation Flow",
+  "Member Access",
+  "Checkout Builder",
+  "Profile & My Account",
+  "Reports",
+  "Shortcodes",
+  "Audits [beta]",
+  "1-Minute Setup",
+  "Modules",
+  "Settings",
+  "License",
+  "Help"
+ ],
+ "arraysubs_in_app_routes_scanned": [
+  "/audits/activity-audits",
+  "/audits/access-rule-conflicts",
+  "/audits/portal-action-failures",
+  "/audits/renewal-failures",
+  "/audits/scheduled-job-logs",
+  "/cancellation-flow",
+  "/checkout-builder",
+  "/easy-setup",
+  "/settings/gateways",
+  "/help",
+  "/license",
+  "/members-access/comment-rules",
+  "/members-access/cpt-rules",
+  "/members-access/discount-rules",
+  "/members-access/downloads-rules",
+  "/members-access/ecommerce-rules",
+  "/members-access/login-limit",
+  "/members-access/purchase-limit-rules",
+  "/members-access/url-rules",
+  "/manage-members",
+  "/member-styling",
+  "/members-access",
+  "/modules",
+  "/overview",
+  "/profile-builder/my-account",
+  "/profile-builder/profile-form",
+  "/reports",
+  "/settings/content-gate",
+  "/settings/feature-manager",
+  "/settings/general",
+  "/settings/integrations",
+  "/settings/plan-switching",
+  "/settings/refunds",
+  "/settings/skip-pause",
+  "/settings/toolkit",
+  "/shortcodes",
+  "/store-credit/history",
+  "/store-credit/settings",
+  "/store-credit",
+  "/subscriptions/form",
+  "/subscriptions",
+  "/you-may-need"
+ ],
+ "woocommerce_settings_tabs": [
+  "General",
+  "Products",
+  "Shipping",
+  "Payments",
+  "Accounts & Privacy",
+  "Emails",
+  "Integration",
+  "Site visibility",
+  "Point of Sale",
+  "Advanced"
+ ],
+ "pages": [
+  {
+   "name": "audits-activity",
+   "url": "/wp-admin/admin.php?page=arraysubs-mainadmin#/audits/activity-audits",
+   "title": "Activity Audits - ArraySubs",
+   "form_fields": 5,
+   "headings": [],
+   "labels": [],
+   "tabs": [],
+   "retry_text_hits": [
+    "No automatic retry was scheduled because this failure will not resolve on its own: the card was declined by the issuer. The customer needs to update their payment method."
+   ],
+   "retry_attr_hits": [],
+   "payment_retry_key_in_dom": false,
+   "disclosures_expanded": 0,
+   "import_export_controls": [],
+   "screenshot": null
+  },
+  {
+   "name": "audits-conflicts",
+   "url": "/wp-admin/admin.php?page=arraysubs-mainadmin#/audits/access-rule-conflicts",
+   "title": "Access-Rule Conflicts - ArraySubs",
+   "form_fields": 0,
+   "headings": [],
+   "labels": [],
+   "tabs": [],
+   "retry_text_hits": [],
+   "retry_attr_hits": [],
+   "payment_retry_key_in_dom": false,
+   "disclosures_expanded": 0,
+   "import_export_controls": [],
+   "screenshot": null
+  },
+  {
+   "name": "audits-portal",
+   "url": "/wp-admin/admin.php?page=arraysubs-mainadmin#/audits/portal-action-failures",
+   "title": "Portal Action Failures - ArraySubs",
+   "form_fields": 0,
+   "headings": [],
+   "labels": [],
+   "tabs": [],
+   "retry_text_hits": [],
+   "retry_attr_hits": [],
+   "payment_retry_key_in_dom": false,
+   "disclosures_expanded": 0,
+   "import_export_controls": [],
+   "screenshot": null
+  },
+  {
+   "name": "audits-renewal-failures",
+   "url": "/wp-admin/admin.php?page=arraysubs-mainadmin#/audits/renewal-failures",
+   "title": "Renewal Failures - ArraySubs",
+   "form_fields": 0,
+   "headings": [],
+   "labels": [],
+   "tabs": [],
+   "retry_text_hits": [
+    "Retry",
+    "Retries: 1",
+    "Sqa sqa-p2-ladder",
+    "sqa-p2-ladder@example.com",
+    "Retries: 3",
+    "Retries: 2"
+   ],
+   "retry_attr_hits": [],
+   "payment_retry_key_in_dom": false,
+   "disclosures_expanded": 0,
+   "import_export_controls": [],
+   "screenshot": "/home/server-manager/www/arrayhash/mirror-help.arrayhash.com/public/wp-content/plugins/qa/stripe-dev-support-2026-10-18/screenshots/dv61-audits-renewal-failures.png"
+  },
+  {
+   "name": "audits-scheduled-job-logs",
+   "url": "/wp-admin/admin.php?page=arraysubs-mainadmin#/audits/scheduled-job-logs",
+   "title": "Scheduled-Job Logs - ArraySubs",
+   "form_fields": 2,
+   "headings": [],
+   "labels": [
+    "From",
+    "To"
+   ],
+   "tabs": [],
+   "retry_text_hits": [],
+   "retry_attr_hits": [],
+   "payment_retry_key_in_dom": false,
+   "disclosures_expanded": 0,
+   "import_export_controls": [],
+   "screenshot": "/home/server-manager/www/arrayhash/mirror-help.arrayhash.com/public/wp-content/plugins/qa/stripe-dev-support-2026-10-18/screenshots/dv61-audits-scheduled-job-logs.png"
+  },
+  {
+   "name": "cancellation-flow",
+   "url": "/wp-admin/admin.php?page=arraysubs-mainadmin#/cancellation-flow",
+   "title": "Cancellation Flow - ArraySubs",
+   "form_fields": 18,
+   "headings": [
+    "Cancellation Reasons",
+    "Cancellation Reason Options",
+    "Retention Offers"
+   ],
+   "labels": [
+    "Require Cancellation Reason",
+    "Reason Key*",
+    "Display Label*",
+    "Enable Retention Offers"
+   ],
+   "tabs": [],
+   "retry_text_hits": [],
+   "retry_attr_hits": [],
+   "payment_retry_key_in_dom": false,
+   "disclosures_expanded": 0,
+   "import_export_controls": [],
+   "screenshot": "/home/server-manager/www/arrayhash/mirror-help.arrayhash.com/public/wp-content/plugins/qa/stripe-dev-support-2026-10-18/screenshots/dv61-cancellation-flow.png"
+  },
+  {
+   "name": "checkout-builder",
+   "url": "/wp-admin/admin.php?page=arraysubs-mainadmin#/checkout-builder",
+   "title": "Checkout Builder - ArraySubs",
+   "form_fields": 0,
+   "headings": [
+    "Checkout"
+   ],
+   "labels": [],
+   "tabs": [],
+   "retry_text_hits": [],
+   "retry_attr_hits": [],
+   "payment_retry_key_in_dom": false,
+   "disclosures_expanded": 0,
+   "import_export_controls": [],
+   "screenshot": "/home/server-manager/www/arrayhash/mirror-help.arrayhash.com/public/wp-content/plugins/qa/stripe-dev-support-2026-10-18/screenshots/dv61-checkout-builder.png"
+  },
+  {
+   "name": "easy-setup",
+   "url": "/wp-admin/admin.php?page=arraysubs-mainadmin#/easy-setup",
+   "title": "Easy Setup - ArraySubs",
+   "form_fields": 0,
+   "headings": [
+    "Setup Wizard",
+    "Your setup checklist",
+    "Subscription settings",
+    "Subscription product",
+    "Set up payments",
+    "Export Settings",
+    "Import Settings"
+   ],
+   "labels": [],
+   "tabs": [],
+   "retry_text_hits": [],
+   "retry_attr_hits": [],
+   "payment_retry_key_in_dom": false,
+   "disclosures_expanded": 0,
+   "import_export_controls": [
+    "Export Settings",
+    "Import Settings"
+   ],
+   "screenshot": "/home/server-manager/www/arrayhash/mirror-help.arrayhash.com/public/wp-content/plugins/qa/stripe-dev-support-2026-10-18/screenshots/dv61-easy-setup.png"
+  },
+  {
+   "name": "gateways",
+   "url": "/wp-admin/admin.php?page=arraysubs-mainadmin#/settings/gateways",
+   "title": "Payment Gateways - ArraySubs",
+   "form_fields": 2,
+   "headings": [
+    "Paddle",
+    "PayPal",
+    "Stripe",
+    "Mollie",
+    "Webhook Event Log"
+   ],
+   "labels": [],
+   "tabs": [],
+   "retry_text_hits": [
+    "gateway_meta_retry",
+    "Arraysubs_stripe\tevt_1USD48JG5OzSNVs27fU0wKaU\tgateway_meta_retry\tOct 19, 2026, 3:43 PM",
+    "Arraysubs_stripe\tevt_1USD3XJG5OzSNVs2Of1amRCF\tgateway_meta_retry\tOct 19, 2026, 3:42 PM"
+   ],
+   "retry_attr_hits": [
+    "option[value=gateway_meta_retry]"
+   ],
+   "payment_retry_key_in_dom": false,
+   "disclosures_expanded": 0,
+   "import_export_controls": [],
+   "screenshot": "/home/server-manager/www/arrayhash/mirror-help.arrayhash.com/public/wp-content/plugins/qa/stripe-dev-support-2026-10-18/screenshots/dv61-gateways.png"
+  },
+  {
+   "name": "help",
+   "url": "/wp-admin/admin.php?page=arraysubs-mainadmin#/help",
+   "title": "Help & Support - ArraySubs",
+   "form_fields": 3,
+   "headings": [
+    "Get help directly from the plugin developer",
+    "Features & Updates",
+    "Guides & Resources"
+   ],
+   "labels": [
+    "Security & Updates (required): Receive emergency security updates, release notes and communications.",
+    "Receive occasional mega offer notifications.",
+    "Receive article notifications about case studies and ecommerce marketing hacks."
+   ],
+   "tabs": [],
+   "retry_text_hits": [],
+   "retry_attr_hits": [],
+   "payment_retry_key_in_dom": false,
+   "disclosures_expanded": 0,
+   "import_export_controls": [],
+   "screenshot": null
+  },
+  {
+   "name": "license",
+   "url": "/wp-admin/admin.php?page=arraysubs-mainadmin#/license",
+   "title": "License - ArraySubs",
+   "form_fields": 0,
+   "headings": [
+    "License is activated."
+   ],
+   "labels": [],
+   "tabs": [],
+   "retry_text_hits": [],
+   "retry_attr_hits": [],
+   "payment_retry_key_in_dom": false,
+   "disclosures_expanded": 0,
+   "import_export_controls": [],
+   "screenshot": null
+  },
+  {
+   "name": "ma-comment",
+   "url": "/wp-admin/admin.php?page=arraysubs-mainadmin#/members-access/comment-rules",
+   "title": "Members & Rules - ArraySubs",
+   "form_fields": 0,
+   "headings": [
+    "Comment Restriction Rules",
+    "How Comment Rules Work",
+    "Highest rule number wins",
+    "Your rules",
+    "Select a rule to edit"
+   ],
+   "labels": [],
+   "tabs": [],
+   "retry_text_hits": [],
+   "retry_attr_hits": [],
+   "payment_retry_key_in_dom": false,
+   "disclosures_expanded": 0,
+   "import_export_controls": [],
+   "screenshot": null
+  },
+  {
+   "name": "ma-cpt",
+   "url": "/wp-admin/admin.php?page=arraysubs-mainadmin#/members-access/cpt-rules",
+   "title": "Members & Rules - ArraySubs",
+   "form_fields": 2,
+   "headings": [
+    "CPT Rules",
+    "How CPT Rules Work",
+    "Highest rule number wins",
+    "Your rules",
+    "#1",
+    "Select a rule to edit"
+   ],
+   "labels": [],
+   "tabs": [],
+   "retry_text_hits": [],
+   "retry_attr_hits": [],
+   "payment_retry_key_in_dom": false,
+   "disclosures_expanded": 0,
+   "import_export_controls": [],
+   "screenshot": null
+  },
+  {
+   "name": "ma-discount",
+   "url": "/wp-admin/admin.php?page=arraysubs-mainadmin#/members-access/discount-rules",
+   "title": "Members & Rules - ArraySubs",
+   "form_fields": 2,
+   "headings": [
+    "Discount Rules",
+    "How Discount Rules Work",
+    "When rules overlap",
+    "Your rules",
+    "#1",
+    "Select a rule to edit"
+   ],
+   "labels": [],
+   "tabs": [],
+   "retry_text_hits": [],
+   "retry_attr_hits": [],
+   "payment_retry_key_in_dom": false,
+   "disclosures_expanded": 0,
+   "import_export_controls": [],
+   "screenshot": null
+  },
+  {
+   "name": "ma-downloads",
+   "url": "/wp-admin/admin.php?page=arraysubs-mainadmin#/members-access/downloads-rules",
+   "title": "Members & Rules - ArraySubs",
+   "form_fields": 0,
+   "headings": [
+    "Download Rules",
+    "How Download Rules Work",
+    "When rules overlap",
+    "Your rules",
+    "Select a rule to edit"
+   ],
+   "labels": [],
+   "tabs": [],
+   "retry_text_hits": [],
+   "retry_attr_hits": [],
+   "payment_retry_key_in_dom": false,
+   "disclosures_expanded": 0,
+   "import_export_controls": [],
+   "screenshot": null
+  },
+  {
+   "name": "ma-ecommerce",
+   "url": "/wp-admin/admin.php?page=arraysubs-mainadmin#/members-access/ecommerce-rules",
+   "title": "Members & Rules - ArraySubs",
+   "form_fields": 2,
+   "headings": [
+    "Shop Access Rules",
+    "How Shop Access Rules Work",
+    "Highest rule number wins",
+    "Your rules",
+    "#1",
+    "Select a rule to edit"
+   ],
+   "labels": [],
+   "tabs": [],
+   "retry_text_hits": [],
+   "retry_attr_hits": [],
+   "payment_retry_key_in_dom": false,
+   "disclosures_expanded": 0,
+   "import_export_controls": [],
+   "screenshot": null
+  },
+  {
+   "name": "ma-login-limit",
+   "url": "/wp-admin/admin.php?page=arraysubs-mainadmin#/members-access/login-limit",
+   "title": "Members & Rules - ArraySubs",
+   "form_fields": 3,
+   "headings": [
+    "Login Limit Rules",
+    "Multi-Login Prevention",
+    "How Login Limit Rules Work",
+    "When rules overlap",
+    "Your rules",
+    "Select a rule to edit"
+   ],
+   "labels": [
+    "Enable Multi-Login Prevention",
+    "Default max sessions per user",
+    "Apply to administrators"
+   ],
+   "tabs": [],
+   "retry_text_hits": [],
+   "retry_attr_hits": [],
+   "payment_retry_key_in_dom": false,
+   "disclosures_expanded": 0,
+   "import_export_controls": [],
+   "screenshot": null
+  },
+  {
+   "name": "ma-purchase-limit",
+   "url": "/wp-admin/admin.php?page=arraysubs-mainadmin#/members-access/purchase-limit-rules",
+   "title": "Members & Rules - ArraySubs",
+   "form_fields": 0,
+   "headings": [
+    "Purchase Limit Rules",
+    "How Purchase Limit Rules Work",
+    "When rules overlap",
+    "Your rules",
+    "Select a rule to edit"
+   ],
+   "labels": [],
+   "tabs": [],
+   "retry_text_hits": [],
+   "retry_attr_hits": [],
+   "payment_retry_key_in_dom": false,
+   "disclosures_expanded": 0,
+   "import_export_controls": [],
+   "screenshot": null
+  },
+  {
+   "name": "ma-url",
+   "url": "/wp-admin/admin.php?page=arraysubs-mainadmin#/members-access/url-rules",
+   "title": "Members & Rules - ArraySubs",
+   "form_fields": 8,
+   "headings": [
+    "URL Rules",
+    "How URL Rules Work",
+    "Highest rule number wins",
+    "Your rules",
+    "#1",
+    "#2",
+    "#3",
+    "#4",
+    "Select a rule to edit"
+   ],
+   "labels": [],
+   "tabs": [],
+   "retry_text_hits": [],
+   "retry_attr_hits": [],
+   "payment_retry_key_in_dom": false,
+   "disclosures_expanded": 0,
+   "import_export_controls": [],
+   "screenshot": null
+  },
+  {
+   "name": "manage-members",
+   "url": "/wp-admin/admin.php?page=arraysubs-mainadmin#/manage-members",
+   "title": "Manage Members - ArraySubs",
+   "form_fields": 1,
+   "headings": [
+    "View a member’s account"
+   ],
+   "labels": [
+    "Search here"
+   ],
+   "tabs": [],
+   "retry_text_hits": [],
+   "retry_attr_hits": [],
+   "payment_retry_key_in_dom": false,
+   "disclosures_expanded": 0,
+   "import_export_controls": [],
+   "screenshot": null
+  },
+  {
+   "name": "member-styling",
+   "url": "/wp-admin/admin.php?page=arraysubs-mainadmin#/member-styling",
+   "title": "Member Styling - ArraySubs",
+   "form_fields": 1,
+   "headings": [
+    "Member Styling Rules",
+    "How Member Styling Works",
+    "Your rules",
+    "Select a rule to edit"
+   ],
+   "labels": [],
+   "tabs": [],
+   "retry_text_hits": [],
+   "retry_attr_hits": [],
+   "payment_retry_key_in_dom": false,
+   "disclosures_expanded": 0,
+   "import_export_controls": [],
+   "screenshot": null
+  },
+  {
+   "name": "members-access",
+   "url": "/wp-admin/admin.php?page=arraysubs-mainadmin#/members-access",
+   "title": "Members & Rules - ArraySubs",
+   "form_fields": 2,
+   "headings": [
+    "Role Mapping Rules",
+    "How Role Mapping Rules Work",
+    "Highest rule number wins",
+    "Your rules",
+    "#1",
+    "Select a rule to edit"
+   ],
+   "labels": [],
+   "tabs": [],
+   "retry_text_hits": [],
+   "retry_attr_hits": [],
+   "payment_retry_key_in_dom": false,
+   "disclosures_expanded": 0,
+   "import_export_controls": [],
+   "screenshot": null
+  },
+  {
+   "name": "modules",
+   "url": "/wp-admin/admin.php?page=arraysubs-mainadmin#/modules",
+   "title": "Modules - ArraySubs",
+   "form_fields": 8,
+   "headings": [
+    "Analytics [wip]",
+    "Automatic Payments [wip]",
+    "Emails [wip]",
+    "Member Access & Content Gate [wip]",
+    "Skip & Pause [wip]",
+    "Subscription Products [wip]",
+    "Toolkit [wip]",
+    "Audits [wip]",
+    "Cancellation Flow [wip]",
+    "Checkout Builder",
+    "Feature Manager",
+    "Profile & My Account [wip]",
+    "Store Credit",
+    "Subscription Box",
+    "Subscription Bundle"
+   ],
+   "labels": [],
+   "tabs": [],
+   "retry_text_hits": [],
+   "retry_attr_hits": [],
+   "payment_retry_key_in_dom": false,
+   "disclosures_expanded": 0,
+   "import_export_controls": [],
+   "screenshot": "/home/server-manager/www/arrayhash/mirror-help.arrayhash.com/public/wp-content/plugins/qa/stripe-dev-support-2026-10-18/screenshots/dv61-modules.png"
+  },
+  {
+   "name": "overview",
+   "url": "/wp-admin/admin.php?page=arraysubs-mainadmin#/overview",
+   "title": "Overview - ArraySubs",
+   "form_fields": 0,
+   "headings": [
+    "Your subscription essentials are ready",
+    "Set up your subscription engine",
+    "Add a subscription product",
+    "Set up payments",
+    "Your subscription base is growing — 44 live subscriptions generating $7,447 in monthly recurring revenue.",
+    "DEEPER INSIGHTS",
+    "Revenue forecastPRO",
+    "Revenue at riskPRO",
+    "Top products by MRRPRO",
+    "Retention pulsePRO",
+    "Upcoming renewals",
+    "Recent subscriptions",
+    "MRR historyPRO",
+    "Churn riskPRO",
+    "Subscriber movement",
+    "Status mix",
+    "Action Center",
+    "Renewal outlook",
+    "RefundsPRO"
+   ],
+   "labels": [],
+   "tabs": [],
+   "retry_text_hits": [],
+   "retry_attr_hits": [],
+   "payment_retry_key_in_dom": false,
+   "disclosures_expanded": 0,
+   "import_export_controls": [],
+   "screenshot": null
+  },
+  {
+   "name": "pb-my-account",
+   "url": "/wp-admin/admin.php?page=arraysubs-mainadmin#/profile-builder/my-account",
+   "title": "My Account Editor - ArraySubs",
+   "form_fields": 1,
+   "headings": [
+    "Menu Items",
+    "How It Works",
+    "Reorder and rename",
+    "Keep essential pages",
+    "Add custom content",
+    "Control direct access",
+    "Hide optional items"
+   ],
+   "labels": [
+    "Enable My Account menu items customization"
+   ],
+   "tabs": [],
+   "retry_text_hits": [],
+   "retry_attr_hits": [],
+   "payment_retry_key_in_dom": false,
+   "disclosures_expanded": 0,
+   "import_export_controls": [],
+   "screenshot": null
+  },
+  {
+   "name": "pb-profile-form",
+   "url": "/wp-admin/admin.php?page=arraysubs-mainadmin#/profile-builder/profile-form",
+   "title": "Profile Fields - ArraySubs",
+   "form_fields": 3,
+   "headings": [
+    "Custom Profile Fields",
+    "Avatar Settings",
+    "How It Works",
+    "Add and arrange fields",
+    "Keep saved field keys",
+    "Allow profile photos",
+    "Let customers update their details"
+   ],
+   "labels": [
+    "Enable custom profile fields",
+    "Enable avatar upload",
+    "Max File Size (MB)"
+   ],
+   "tabs": [],
+   "retry_text_hits": [],
+   "retry_attr_hits": [],
+   "payment_retry_key_in_dom": false,
+   "disclosures_expanded": 0,
+   "import_export_controls": [],
+   "screenshot": null
+  },
+  {
+   "name": "reports",
+   "url": "/wp-admin/admin.php?page=arraysubs-mainadmin#/reports",
+   "title": "Reports - ArraySubs",
+   "form_fields": 1,
+   "headings": [
+    "Search reports",
+    "Subscription Performance",
+    "Retention Analytics",
+    "AI Churn Analysis",
+    "AI Revenue Forecast",
+    "Orders Analytics",
+    "Revenue Analytics",
+    "Products Analytics",
+    "Variations Analytics",
+    "Customers Analytics",
+    "Orders",
+    "Subscriptions",
+    "Member Insights",
+    "Store Credit Balances",
+    "Credit Transaction History",
+    "Activity Audit Trail",
+    "Gateway Health & Webhooks",
+    "Scheduled Job Logs"
+   ],
+   "labels": [
+    "Search reports"
+   ],
+   "tabs": [],
+   "retry_text_hits": [],
+   "retry_attr_hits": [],
+   "payment_retry_key_in_dom": false,
+   "disclosures_expanded": 0,
+   "import_export_controls": [],
+   "screenshot": null
+  },
+  {
+   "name": "settings-content-gate",
+   "url": "/wp-admin/admin.php?page=arraysubs-mainadmin#/settings/content-gate",
+   "title": "Content Gate - ArraySubs",
+   "form_fields": 1,
+   "headings": [
+    "Protect the right content in the right place",
+    "Default Message",
+    "Full Page Gate",
+    "Elementor",
+    "Gutenberg",
+    "Shortcode",
+    "Programmatic",
+    "Shortcode examples",
+    "Programmatic PHP examples"
+   ],
+   "labels": [
+    "Message when content is restricted"
+   ],
+   "tabs": [],
+   "retry_text_hits": [],
+   "retry_attr_hits": [],
+   "payment_retry_key_in_dom": false,
+   "disclosures_expanded": 0,
+   "import_export_controls": [],
+   "screenshot": "/home/server-manager/www/arrayhash/mirror-help.arrayhash.com/public/wp-content/plugins/qa/stripe-dev-support-2026-10-18/screenshots/dv61-settings-content-gate.png"
+  },
+  {
+   "name": "settings-feature-manager",
+   "url": "/wp-admin/admin.php?page=arraysubs-mainadmin#/settings/feature-manager",
+   "title": "Feature Manager Settings - ArraySubs",
+   "form_fields": 7,
+   "headings": [
+    "Display Settings",
+    "Aggregation Settings"
+   ],
+   "labels": [
+    "Show on Product Page",
+    "Show in My Account",
+    "Show Usage Count in My Account",
+    "Show Usage Count in Admin",
+    "Feature Aggregation Mode",
+    "Per Subscription",
+    "Combine",
+    "Highest value"
+   ],
+   "tabs": [],
+   "retry_text_hits": [],
+   "retry_attr_hits": [],
+   "payment_retry_key_in_dom": false,
+   "disclosures_expanded": 0,
+   "import_export_controls": [
+    "Quick Setup & Import/Export -> #/easy-setup"
+   ],
+   "screenshot": "/home/server-manager/www/arrayhash/mirror-help.arrayhash.com/public/wp-content/plugins/qa/stripe-dev-support-2026-10-18/screenshots/dv61-settings-feature-manager.png"
+  },
+  {
+   "name": "settings-general",
+   "url": "/wp-admin/admin.php?page=arraysubs-mainadmin#/settings/general",
+   "title": "General - ArraySubs",
+   "form_fields": 30,
+   "headings": [
+    "Multiple Subscriptions",
+    "Cart Info Editor",
+    "Customize Shop & My Account Experiences",
+    "Insightful Cards",
+    "Compact Table",
+    "Checkout & Trials",
+    "Grace Period",
+    "Renewal Sync",
+    "Renewal Performance",
+    "Email Reminder Schedule",
+    "Audit Logs",
+    "Customer Actions",
+    "Cancellation Settings",
+    "Automatic Payments"
+   ],
+   "labels": [
+    "Allow Multiple Subscriptions in Cart",
+    "One Subscription per Customer",
+    "One Subscription per Product",
+    "Allow Mixed Checkout",
+    "Allow Different Billing Cycles",
+    "Hide First billing cycle info",
+    "Hide shipping charge info",
+    "Hide Duration info",
+    "Subscription Purchase Button Text",
+    "Subscription Box Button Text",
+    "Subscription Bundle Button Text",
+    "One Click Checkout",
+    "Subscription List View in 'My Account'",
+    "Insightful Cards",
+    "Compact Table",
+    "Require Payment Method for Trials",
+    "One Trial per Customer",
+    "Generate Invoice Before Due",
+    "Unit",
+    "Days Active After Due",
+    "Days On-Hold Before Cancel",
+    "Sync Renewals to Next Billing Cycle",
+    "Spread Renewals Over (Hours)",
+    "Parallel Queue Runners",
+    "Sweep Batch Size",
+    "Renewal Reminder (Days Before)",
+    "Expiring Soon Reminder (Days Before)",
+    "Reminder Emails Per Minute (0 = Unlimited)",
+    "Scheduled-Job Logging",
+    "Keep Job Logs For (Days, 0 = Forever)",
+    "Allow Cancellation",
+    "Allow Early Renew",
+    "Cancel Immediately",
+    "Allow Customers to Turn Off Auto-Renew"
+   ],
+   "tabs": [],
+   "retry_text_hits": [
+    "When multiple subscription plans are allowed in one checkout, this setting controls whether those plans may use different billing periods or intervals.",
+    "Caps how many renewal reminder emails are sent per minute so large renewal days cannot overwhelm your SMTP provider's rate limits. Reminders over the cap are automatically retried a few minutes later — never dropped. Lea"
+   ],
+   "retry_attr_hits": [],
+   "payment_retry_key_in_dom": false,
+   "disclosures_expanded": 0,
+   "import_export_controls": [
+    "Quick Setup & Import/Export -> #/easy-setup"
+   ],
+   "screenshot": "/home/server-manager/www/arrayhash/mirror-help.arrayhash.com/public/wp-content/plugins/qa/stripe-dev-support-2026-10-18/screenshots/dv61-settings-general.png"
+  },
+  {
+   "name": "settings-integrations",
+   "url": "/wp-admin/admin.php?page=arraysubs-mainadmin#/settings/integrations",
+   "title": "Integrations - ArraySubs",
+   "form_fields": 8,
+   "headings": [
+    "LearnPress",
+    "Affiliates Manager",
+    "CartFlows",
+    "WP Fusion",
+    "FluentCRM",
+    "Tutor LMS",
+    "Academy LMS",
+    "License Manager for WooCommerce"
+   ],
+   "labels": [
+    "Enable LearnPress Integration",
+    "Enable Affiliates Manager Integration",
+    "Enable CartFlows Integration",
+    "Enable WP Fusion Integration",
+    "Enable FluentCRM Integration",
+    "Enable Tutor LMS Integration",
+    "Enable Academy LMS Integration",
+    "Enable License Manager Integration"
+   ],
+   "tabs": [],
+   "retry_text_hits": [],
+   "retry_attr_hits": [],
+   "payment_retry_key_in_dom": false,
+   "disclosures_expanded": 0,
+   "import_export_controls": [
+    "Quick Setup & Import/Export -> #/easy-setup"
+   ],
+   "screenshot": "/home/server-manager/www/arrayhash/mirror-help.arrayhash.com/public/wp-content/plugins/qa/stripe-dev-support-2026-10-18/screenshots/dv61-settings-integrations.png"
+  },
+  {
+   "name": "settings-plan-switching",
+   "url": "/wp-admin/admin.php?page=arraysubs-mainadmin#/settings/plan-switching",
+   "title": "Plan Switching - ArraySubs",
+   "form_fields": 1,
+   "headings": [
+    "Plan Switching",
+    "Auto-Downgrade"
+   ],
+   "labels": [
+    "Enable Plan Switching",
+    "Auto-Downgrade Timing"
+   ],
+   "tabs": [],
+   "retry_text_hits": [],
+   "retry_attr_hits": [],
+   "payment_retry_key_in_dom": false,
+   "disclosures_expanded": 0,
+   "import_export_controls": [
+    "Quick Setup & Import/Export -> #/easy-setup"
+   ],
+   "screenshot": "/home/server-manager/www/arrayhash/mirror-help.arrayhash.com/public/wp-content/plugins/qa/stripe-dev-support-2026-10-18/screenshots/dv61-settings-plan-switching.png"
+  },
+  {
+   "name": "settings-refunds",
+   "url": "/wp-admin/admin.php?page=arraysubs-mainadmin#/settings/refunds",
+   "title": "Refunds - ArraySubs",
+   "form_fields": 6,
+   "headings": [
+    "Refund Settings",
+    "Gateway Refunds",
+    "Prorated Refunds"
+   ],
+   "labels": [
+    "Refund on Cancellation",
+    "Allow Immediate Refund",
+    "Refund at End of Period",
+    "No Automatic Refund",
+    "Automatic Gateway Refund",
+    "Allow Prorated Refunds",
+    "Minimum Refund Amount"
+   ],
+   "tabs": [],
+   "retry_text_hits": [],
+   "retry_attr_hits": [],
+   "payment_retry_key_in_dom": false,
+   "disclosures_expanded": 0,
+   "import_export_controls": [
+    "Quick Setup & Import/Export -> #/easy-setup"
+   ],
+   "screenshot": "/home/server-manager/www/arrayhash/mirror-help.arrayhash.com/public/wp-content/plugins/qa/stripe-dev-support-2026-10-18/screenshots/dv61-settings-refunds.png"
+  },
+  {
+   "name": "settings-skip-pause",
+   "url": "/wp-admin/admin.php?page=arraysubs-mainadmin#/settings/skip-pause",
+   "title": "Skip & Pause - ArraySubs",
+   "form_fields": 2,
+   "headings": [
+    "Skip Next Renewal",
+    "Pause Subscription (Vacation Mode)"
+   ],
+   "labels": [
+    "Enable Skip Renewal",
+    "Enable Pause Subscription"
+   ],
+   "tabs": [],
+   "retry_text_hits": [],
+   "retry_attr_hits": [],
+   "payment_retry_key_in_dom": false,
+   "disclosures_expanded": 0,
+   "import_export_controls": [
+    "Quick Setup & Import/Export -> #/easy-setup"
+   ],
+   "screenshot": "/home/server-manager/www/arrayhash/mirror-help.arrayhash.com/public/wp-content/plugins/qa/stripe-dev-support-2026-10-18/screenshots/dv61-settings-skip-pause.png"
+  },
+  {
+   "name": "settings-toolkit",
+   "url": "/wp-admin/admin.php?page=arraysubs-mainadmin#/settings/toolkit",
+   "title": "Toolkit - ArraySubs",
+   "form_fields": 4,
+   "headings": [
+    "Admin Bar",
+    "Admin Dashboard Access",
+    "WordPress Login Page",
+    "Login as User"
+   ],
+   "labels": [
+    "Hide admin bar for non-admin users",
+    "Restrict wp-admin access",
+    "Hide WordPress login page",
+    "Enable Login as User"
+   ],
+   "tabs": [],
+   "retry_text_hits": [],
+   "retry_attr_hits": [],
+   "payment_retry_key_in_dom": false,
+   "disclosures_expanded": 0,
+   "import_export_controls": [
+    "Quick Setup & Import/Export -> #/easy-setup"
+   ],
+   "screenshot": "/home/server-manager/www/arrayhash/mirror-help.arrayhash.com/public/wp-content/plugins/qa/stripe-dev-support-2026-10-18/screenshots/dv61-settings-toolkit.png"
+  },
+  {
+   "name": "shortcodes",
+   "url": "/wp-admin/admin.php?page=arraysubs-mainadmin#/shortcodes",
+   "title": "Shortcodes - ArraySubs",
+   "form_fields": 0,
+   "headings": [
+    "All shortcode tools in one place",
+    "Account",
+    "Current User Name",
+    "Login Link",
+    "Logout Link",
+    "Membership",
+    "Content Restriction",
+    "Visibility Wrapper",
+    "Store Credit",
+    "Buy Store Credits"
+   ],
+   "labels": [],
+   "tabs": [],
+   "retry_text_hits": [],
+   "retry_attr_hits": [],
+   "payment_retry_key_in_dom": false,
+   "disclosures_expanded": 0,
+   "import_export_controls": [],
+   "screenshot": null
+  },
+  {
+   "name": "store-credit-history",
+   "url": "/wp-admin/admin.php?page=arraysubs-mainadmin#/store-credit/history",
+   "title": "All Credit Transactions - ArraySubs",
+   "form_fields": 2,
+   "headings": [],
+   "labels": [
+    "Filters:"
+   ],
+   "tabs": [],
+   "retry_text_hits": [],
+   "retry_attr_hits": [],
+   "payment_retry_key_in_dom": false,
+   "disclosures_expanded": 0,
+   "import_export_controls": [],
+   "screenshot": null
+  },
+  {
+   "name": "store-credit-settings",
+   "url": "/wp-admin/admin.php?page=arraysubs-mainadmin#/store-credit/settings",
+   "title": "Store Credit Settings - ArraySubs",
+   "form_fields": 8,
+   "headings": [
+    "Credit Application",
+    "Credit Expiration",
+    "Credit Purchase"
+   ],
+   "labels": [
+    "Auto-Apply to Renewals",
+    "Allow at Checkout",
+    "Minimum Order Amount",
+    "Expiration Period (Days)",
+    "Enable Credit Purchases",
+    "Minimum Purchase Amount",
+    "Maximum Purchase Amount",
+    "Default Purchase Amount"
+   ],
+   "tabs": [],
+   "retry_text_hits": [],
+   "retry_attr_hits": [],
+   "payment_retry_key_in_dom": false,
+   "disclosures_expanded": 0,
+   "import_export_controls": [],
+   "screenshot": "/home/server-manager/www/arrayhash/mirror-help.arrayhash.com/public/wp-content/plugins/qa/stripe-dev-support-2026-10-18/screenshots/dv61-store-credit-settings.png"
+  },
+  {
+   "name": "store-credit",
+   "url": "/wp-admin/admin.php?page=arraysubs-mainadmin#/store-credit",
+   "title": "Store Credit Management - ArraySubs",
+   "form_fields": 1,
+   "headings": [
+    "Manage a customer’s store credit"
+   ],
+   "labels": [
+    "Search here"
+   ],
+   "tabs": [],
+   "retry_text_hits": [],
+   "retry_attr_hits": [],
+   "payment_retry_key_in_dom": false,
+   "disclosures_expanded": 0,
+   "import_export_controls": [],
+   "screenshot": null
+  },
+  {
+   "name": "subscriptions-form",
+   "url": "/wp-admin/admin.php?page=arraysubs-mainadmin#/subscriptions/form",
+   "title": "Add New Subscription - ArraySubs",
+   "form_fields": 25,
+   "headings": [
+    "General",
+    "Product & Subscription Details",
+    "Trial Settings",
+    "Different Renewal Price",
+    "Billing Information & Addresses"
+   ],
+   "labels": [
+    "Customer*",
+    "Subscription Product*",
+    "Quantity*",
+    "Recurring Amount*",
+    "Billing Interval*",
+    "Billing Period*",
+    "Subscription Length (0 = Never Expires)",
+    "Signup Fee",
+    "Trial Length (0 = No Trial)",
+    "Trial Period",
+    "Enable Different Renewal Price",
+    "Invoice Email",
+    "First Name",
+    "Last Name",
+    "Company (optional)",
+    "Address Line 1",
+    "Address Line 2 (optional)",
+    "City",
+    "State / Province",
+    "Postcode / ZIP",
+    "Country",
+    "Phone",
+    "Billing Email"
+   ],
+   "tabs": [],
+   "retry_text_hits": [
+    "Billing Interval*"
+   ],
+   "retry_attr_hits": [
+    "input[placeholder=Enter billing interval]"
+   ],
+   "payment_retry_key_in_dom": false,
+   "disclosures_expanded": 0,
+   "import_export_controls": [],
+   "screenshot": null
+  },
+  {
+   "name": "subscriptions",
+   "url": "/wp-admin/admin.php?page=arraysubs-mainadmin#/subscriptions",
+   "title": "Subscriptions - ArraySubs",
+   "form_fields": 24,
+   "headings": [],
+   "labels": [
+    "Gateway"
+   ],
+   "tabs": [],
+   "retry_text_hits": [
+    "Sqa sqa-p2-noretry",
+    "sqa-p2-noretry@example.com",
+    "Sqa sqa-p2-ladder",
+    "sqa-p2-ladder@example.com"
+   ],
+   "retry_attr_hits": [],
+   "payment_retry_key_in_dom": false,
+   "disclosures_expanded": 0,
+   "import_export_controls": [
+    "Export CSV",
+    "Choose export columns"
+   ],
+   "screenshot": null
+  },
+  {
+   "name": "wc-arraysubs-stripe-config",
+   "url": "/wp-admin/admin.php?page=wc-settings&tab=checkout&section=arraysubs_stripe",
+   "title": "WooCommerce settings ‹ mirror-help.arrayhash.com — WordPress",
+   "form_fields": 4,
+   "headings": [
+    "Payments",
+    "Stripe"
+   ],
+   "labels": [
+    "Secondary webhook signing secret",
+    "Secondary webhook endpoint ID"
+   ],
+   "tabs": [],
+   "retry_text_hits": [],
+   "retry_attr_hits": [],
+   "payment_retry_key_in_dom": false,
+   "disclosures_expanded": 0,
+   "import_export_controls": [],
+   "screenshot": "/home/server-manager/www/arrayhash/mirror-help.arrayhash.com/public/wp-content/plugins/qa/stripe-dev-support-2026-10-18/screenshots/dv61-wc-arraysubs-stripe-config.png"
+  },
+  {
+   "name": "wc-paddle-settings",
+   "url": "/wp-admin/admin.php?page=wc-settings&tab=checkout&section=arraysubs_paddle",
+   "title": "WooCommerce settings ‹ mirror-help.arrayhash.com — WordPress",
+   "form_fields": 12,
+   "headings": [
+    "Payments",
+    "Paddle (ArraySubs)",
+    "Enable/Disable",
+    "Title",
+    "Description",
+    "Test Mode",
+    "API Key",
+    "Client-Side Token",
+    "Seller ID",
+    "Default tax category",
+    "Allow early renewal",
+    "Webhook Secret",
+    "Default Payment Link",
+    "Webhook URL",
+    "Checkout Restrictions"
+   ],
+   "labels": [
+    "Enable/Disable",
+    "Enable this payment gateway",
+    "Title",
+    "Description",
+    "Test Mode",
+    "Enable Paddle Sandbox mode",
+    "API Key",
+    "Client-Side Token",
+    "Seller ID",
+    "Default tax category",
+    "Allow early renewal",
+    "Let customers pay a renewal before it is due",
+    "Webhook Secret"
+   ],
+   "tabs": [],
+   "retry_text_hits": [],
+   "retry_attr_hits": [],
+   "payment_retry_key_in_dom": false,
+   "disclosures_expanded": 0,
+   "import_export_controls": [],
+   "screenshot": "/home/server-manager/www/arrayhash/mirror-help.arrayhash.com/public/wp-content/plugins/qa/stripe-dev-support-2026-10-18/screenshots/dv61-wc-paddle-settings.png"
+  },
+  {
+   "name": "wc-payments",
+   "url": "/wp-admin/admin.php?page=wc-settings&tab=checkout&other_pes_section=expanded",
+   "title": "WooCommerce settings ‹ mirror-help.arrayhash.com — WordPress",
+   "form_fields": 2,
+   "headings": [
+    "Payments",
+    "Save 15% on processing fees during your first 6 months when you switch to WooPayments.",
+    "WALLETS & EXPRESS CHECKOUTS",
+    "BUY NOW, PAY LATER",
+    "PAYMENT PROVIDERS"
+   ],
+   "labels": [],
+   "tabs": [],
+   "retry_text_hits": [],
+   "retry_attr_hits": [],
+   "payment_retry_key_in_dom": false,
+   "disclosures_expanded": 14,
+   "import_export_controls": [],
+   "screenshot": "/home/server-manager/www/arrayhash/mirror-help.arrayhash.com/public/wp-content/plugins/qa/stripe-dev-support-2026-10-18/screenshots/dv61-wc-payments.png"
+  },
+  {
+   "name": "wc-paypal-settings",
+   "url": "/wp-admin/admin.php?page=wc-settings&tab=checkout&section=arraysubs_paypal",
+   "title": "WooCommerce settings ‹ mirror-help.arrayhash.com — WordPress",
+   "form_fields": 9,
+   "headings": [
+    "Payments",
+    "PayPal (ArraySubs)",
+    "Enable/Disable",
+    "Title",
+    "Description",
+    "Test Mode",
+    "Client ID",
+    "Client Secret",
+    "Webhook ID",
+    "Required webhook events",
+    "Webhook URL",
+    "Checkout Restrictions"
+   ],
+   "labels": [
+    "Enable/Disable",
+    "Enable this payment gateway",
+    "Title",
+    "Description",
+    "Test Mode",
+    "Enable PayPal Sandbox mode",
+    "Client ID",
+    "Client Secret",
+    "Webhook ID"
+   ],
+   "tabs": [],
+   "retry_text_hits": [],
+   "retry_attr_hits": [],
+   "payment_retry_key_in_dom": false,
+   "disclosures_expanded": 0,
+   "import_export_controls": [],
+   "screenshot": "/home/server-manager/www/arrayhash/mirror-help.arrayhash.com/public/wp-content/plugins/qa/stripe-dev-support-2026-10-18/screenshots/dv61-wc-paypal-settings.png"
+  },
+  {
+   "name": "wc-stripe-arraysubs-placeholder",
+   "url": "/wp-admin/admin.php?page=wc-settings&tab=checkout&section=arraysubs_stripe_setup",
+   "title": "WooCommerce settings ‹ mirror-help.arrayhash.com — WordPress",
+   "form_fields": 2,
+   "headings": [
+    "Payments"
+   ],
+   "labels": [],
+   "tabs": [],
+   "retry_text_hits": [],
+   "retry_attr_hits": [],
+   "payment_retry_key_in_dom": false,
+   "disclosures_expanded": 0,
+   "import_export_controls": [],
+   "screenshot": "/home/server-manager/www/arrayhash/mirror-help.arrayhash.com/public/wp-content/plugins/qa/stripe-dev-support-2026-10-18/screenshots/dv61-wc-stripe-arraysubs-placeholder.png"
+  },
+  {
+   "name": "wc-stripe-methods",
+   "url": "/wp-admin/admin.php?page=wc-settings&tab=checkout&section=stripe&panel=methods",
+   "title": "WooCommerce settings ‹ mirror-help.arrayhash.com — WordPress",
+   "form_fields": 24,
+   "headings": [
+    "Payments",
+    "Stripe",
+    "Automate tax compliance with Stripe Tax",
+    "Payments accepted on checkout",
+    "Payment methods",
+    "Express checkouts"
+   ],
+   "labels": [
+    "Credit card / debit card",
+    "ACH Direct Debit",
+    "Alipay",
+    "Klarna",
+    "Affirm",
+    "Afterpay",
+    "WeChat Pay",
+    "Cash App Pay",
+    "BLIK",
+    "EPS",
+    "Bancontact",
+    "iDEAL | Wero",
+    "OXXO",
+    "Direct debit payment",
+    "Przelewy24",
+    "Sofort",
+    "Multibanco",
+    "Pre-Authorized Debit",
+    "Bacs Direct Debit",
+    "Apple Pay / Google Pay Input",
+    "Link by Stripe Input",
+    "Amazon Pay Input"
+   ],
+   "tabs": [
+    "Payment Methods",
+    "Settings",
+    "ArraySubs Config"
+   ],
+   "retry_text_hits": [],
+   "retry_attr_hits": [],
+   "payment_retry_key_in_dom": false,
+   "disclosures_expanded": 0,
+   "import_export_controls": [],
+   "screenshot": "/home/server-manager/www/arrayhash/mirror-help.arrayhash.com/public/wp-content/plugins/qa/stripe-dev-support-2026-10-18/screenshots/dv61-wc-stripe-methods.png"
+  },
+  {
+   "name": "wc-stripe-settings",
+   "url": "/wp-admin/admin.php?page=wc-settings&tab=checkout&section=stripe&panel=settings",
+   "title": "WooCommerce settings ‹ mirror-help.arrayhash.com — WordPress",
+   "form_fields": 15,
+   "headings": [
+    "Payments",
+    "Stripe",
+    "Automate tax compliance with Stripe Tax",
+    "General",
+    "Test mode",
+    "Account details",
+    "admin-email-redacted@example.invalid",
+    "Payments & transactions",
+    "Payments settings",
+    "Transaction preferences",
+    "Customer bank statement",
+    "Advanced settings",
+    "Debug mode",
+    "Enable Optimized Checkout Suite (recommended)",
+    "LAYOUT",
+    "Adaptive Pricing"
+   ],
+   "labels": [
+    "Enable Stripe",
+    "Enable test mode",
+    "Enable saved card payment methods",
+    "Enable saved iDEAL | Wero payments for repeat payments",
+    "Enable saved Bancontact payments for repeat payments",
+    "Issue an authorization on checkout, and capture later",
+    "FULL BANK STATEMENT",
+    "Add customer order number to the bank statement",
+    "Log debug messages",
+    "Dynamically display the most relevant payment methods you've enabled",
+    "LAYOUT",
+    "Accordion",
+    "Tabs",
+    "Let customers pay in their local currency with Adaptive Pricing"
+   ],
+   "tabs": [
+    "Payment Methods",
+    "Settings",
+    "ArraySubs Config"
+   ],
+   "retry_text_hits": [],
+   "retry_attr_hits": [],
+   "payment_retry_key_in_dom": false,
+   "disclosures_expanded": 0,
+   "import_export_controls": [],
+   "screenshot": "/home/server-manager/www/arrayhash/mirror-help.arrayhash.com/public/wp-content/plugins/qa/stripe-dev-support-2026-10-18/screenshots/dv61-wc-stripe-settings.png"
+  },
+  {
+   "name": "you-may-need",
+   "url": "/wp-admin/admin.php?page=arraysubs-mainadmin#/you-may-need",
+   "title": "You may need - ArraySubs",
+   "form_fields": 0,
+   "headings": [
+    "More ways to sell.",
+    "Start with the part of your business you want to grow.",
+    "Your best products. One subscription.",
+    "Make cancellation a conversation.",
+    "Turn store data into a plan.",
+    "Find the tools that fit your next move.",
+    "More possibilities across Free and Pro.",
+    "Keep your foundation. Expand what you can do.",
+    "Real people. Right here to help.",
+    "Talk directly to the people building ArraySubs.",
+    "Build on what you have already started.",
+    "Choose your Pro plan",
+    "Add Pro to your store",
+    "Start with one opportunity",
+    "A few things you might be wondering.",
+    "Your next stage starts with one good move."
+   ],
+   "labels": [],
+   "tabs": [],
+   "retry_text_hits": [
+    "Your free foundation stays free. Automatic payments, payment retry handling, one-time Lifetime Deals, advanced content gating, and customer-built Subscription Boxes are already in core. Pro adds your next layer of possib",
+    "Billing & recovery\tAutomatic payments, supported payment retries, grace periods, and auto-downgrade rules\tCycle-based renewal pricing, flexible billing choices, renewal sync, and early renewal",
+    "Yes. Automatic payments through supported gateways, payment retry handling, and customer-built Subscription Boxes are part of the free core. Pro adds merchant-curated Subscription Bundles and the advanced tools shown her"
+   ],
+   "retry_attr_hits": [],
+   "payment_retry_key_in_dom": false,
+   "disclosures_expanded": 4,
+   "import_export_controls": [],
+   "screenshot": null
+  }
+ ],
+ "gateway_logs_cards_expanded": {
+  "Paddle": {
+   "retry_text": false,
+   "link": "WooCommerce Settings -> wc-settings&tab=checkout&section=arraysubs_paddle"
+  },
+  "PayPal": {
+   "retry_text": false,
+   "link": "WooCommerce Settings -> wc-settings&tab=checkout&section=arraysubs_paypal"
+  },
+  "Stripe": {
+   "retry_text": false,
+   "link": "WooCommerce Settings -> wc-settings&tab=checkout&section=stripe"
+  },
+  "Mollie": {
+   "retry_text": false,
+   "link": "WooCommerce Settings -> wc-settings&tab=checkout&section=mollie"
+  }
+ },
+ "setup_wizard_steps": [
+  {
+   "i": 0,
+   "active": "1\nYour Business",
+   "progress": [
+    "Your Business",
+    "Billing & Renewal Rules",
+    "Customize Shop & My Account Experiences",
+    "Checkout & Cart Rules",
+    "Plan Switching",
+    "Cancellation & Retention",
+    "Refunds",
+    "Emails & Notifications",
+    "Additional Features & Tools",
+    "Review & Apply"
+   ],
+   "heads": [
+    "Your Business",
+    "What type of subscription business are you running?",
+    "SaaS / Digital Software",
+    "Physical Subscription Box",
+    "Membership / Community",
+    "Digital Content",
+    "Professional Services",
+    "Nonprofit / Donations",
+    "Other / Custom",
+    "What is your primary billing cycle?",
+    "Weekly",
+    "Monthly",
+    "Yearly",
+    "Custom",
+    "How many subscription plans do you offer?",
+    "One plan",
+    "Multiple plans / tiers",
+    "Do you offer free trials?",
+    "Yes",
+    "No"
+   ],
+   "hits": [],
+   "len": 1370,
+   "buttons": [
+    "Skip",
+    "Next"
+   ]
+  },
+  {
+   "i": 1,
+   "active": "2\nBilling & Renewal Rules",
+   "heads": [
+    "Billing & Renewal Rules",
+    "How strict should unpaid renewals be handled?",
+    "Strict",
+    "Standard",
+    "Lenient",
+    "Custom",
+    "When should renewal invoices be generated?",
+    "6 hours before due date",
+    "1 day before due date",
+    "3 days before due date",
+    "Should new subscriptions renew on the next billing-cycle boundary?",
+    "Yes",
+    "No",
+    "Allow Early Renew",
+    "What billing flexibility should customers have?",
+    "Allow skipping the next renewal",
+    "Allow pausing the subscription"
+   ],
+   "hits": [],
+   "len": 1375,
+   "buttons": [
+    "Skip",
+    "Next"
+   ]
+  },
+  {
+   "i": 2,
+   "active": "3\nCustomize Shop & My Account Experiences",
+   "heads": [
+    "Customize Shop & My Account Experiences",
+    "Subscription Purchase Button Text",
+    "Subscription Box Button Text",
+    "Subscription Bundle Button Text",
+    "One Click Checkout",
+    "Subscription List View in 'My Account'",
+    "Insightful Cards",
+    "Compact Table"
+   ],
+   "hits": [],
+   "len": 1043,
+   "buttons": [
+    "Skip",
+    "Next"
+   ]
+  },
+  {
+   "i": 3,
+   "active": "4\nCheckout & Cart Rules",
+   "heads": [
+    "Checkout & Cart Rules",
+    "Can customers have multiple active subscriptions?",
+    "Allow multiple subscriptions",
+    "Only one subscription per customer",
+    "One subscription per product",
+    "Allow subscription and non-subscription products in the same cart?",
+    "Yes",
+    "No",
+    "Allow subscriptions with different billing cycles in the same cart?",
+    "Hide First billing cycle info",
+    "Hide shipping charge info",
+    "Hide Duration info"
+   ],
+   "hits": [],
+   "len": 765,
+   "buttons": [
+    "Skip",
+    "Next"
+   ]
+  },
+  {
+   "i": 4,
+   "active": "5\nPlan Switching",
+   "heads": [
+    "Plan Switching",
+    "Should customers be able to switch plans from the portal?",
+    "Allow all switching directions",
+    "Only upgrades and downgrades",
+    "Only upgrades",
+    "Disable plan switching"
+   ],
+   "hits": [],
+   "len": 481,
+   "buttons": [
+    "Skip",
+    "Next"
+   ]
+  },
+  {
+   "i": 5,
+   "active": "6\nCancellation & Retention",
+   "heads": [
+    "Cancellation & Retention",
+    "Allow customers to cancel subscriptions from My Account?",
+    "Yes",
+    "No",
+    "When should a cancellation take effect?",
+    "Immediately",
+    "At the end of the billing period",
+    "Should customers be required to provide a cancellation reason?",
+    "Show retention offers during the cancellation flow?"
+   ],
+   "hits": [],
+   "len": 582,
+   "buttons": [
+    "Skip",
+    "Next"
+   ]
+  },
+  {
+   "i": 6,
+   "active": "7\nRefunds",
+   "heads": [
+    "Refunds",
+    "What should the default refund behavior be on cancellation?",
+    "Allow immediate refund",
+    "Refund at end of period",
+    "No automatic refund",
+    "Automatic Gateway Refund",
+    "Allow Prorated Refunds",
+    "Minimum Refund Amount"
+   ],
+   "hits": [],
+   "len": 807,
+   "buttons": [
+    "Skip",
+    "Next"
+   ]
+  },
+  {
+   "i": 7,
+   "active": "8\nEmails & Notifications",
+   "heads": [
+    "Emails & Notifications",
+    "How many customer email notifications should be sent?",
+    "All notifications",
+    "Essential only",
+    "Minimal",
+    "Let me choose",
+    "How many days before renewal should customers get a reminder?",
+    "Which admin notifications should stay enabled?",
+    "New subscription created",
+    "Subscription scheduled to cancel",
+    "Subscription cancelled",
+    "Payment failed",
+    "Security & Updates (required): Receive emergency security updates, release notes and communications.",
+    "Receive occasional mega offer notifications.",
+    "Receive article notifications about case studies and ecommerce marketing hacks."
+   ],
+   "hits": [],
+   "len": 1168,
+   "buttons": [
+    "Skip",
+    "Next"
+   ]
+  },
+  {
+   "i": 8,
+   "active": "9\nAdditional Features & Tools",
+   "heads": [
+    "Additional Features & Tools",
+    "Which optional features should be enabled now?",
+    "Store Credit System",
+    "Should store credit automatically apply to renewal payments?",
+    "Yes",
+    "No",
+    "When should store credits expire?",
+    "Feature Manager",
+    "Show Feature Manager highlights on product pages?",
+    "Activity Audit Log",
+    "Enable User Impersonation",
+    "Hide Admin Bar for Customers",
+    "Restrict WP Dashboard Access",
+    "Multi-Login Prevention"
+   ],
+   "hits": [],
+   "len": 1202,
+   "buttons": [
+    "Skip",
+    "Next"
+   ]
+  },
+  {
+   "i": 9,
+   "active": "10\nReview & Apply",
+   "heads": [
+    "Review your configuration"
+   ],
+   "hits": [],
+   "len": 3059,
+   "buttons": [
+    "Apply Settings"
+   ]
+  }
+ ],
+ "setup_wizard_closed_with": "Close modal -> 'Discard wizard progress?' -> Discard wizard (Apply Settings never clicked)",
+ "easy_setup_export": {
+  "how": "1-Minute Setup > Export Settings button (agent-browser download)",
+  "bytes": 23550,
+  "meta": {
+   "format": "arraysubs-settings",
+   "module_version": "2.0.0",
+   "plugin_version": "2.0.9",
+   "pro_version": "1.2.8",
+   "export_date": "2026-10-19T17:31:58+06:00",
+   "sections": [
+    "subscription_settings",
+    "cancellation_flow",
+    "store_credit",
+    "feature_manager",
+    "myaccount_builder",
+    "checkout_builder",
+    "members_access",
+    "toolkit",
+    "integrations",
+    "audits",
+    "cart_info_editor",
+    "emails",
+    "profile_fields",
+    "modules"
+   ]
+  },
+  "options.arraysubs_settings.payment_retry": {
+   "enabled": true,
+   "interval_hours": [
+    24,
+    24,
+    24
+   ],
+   "stop_on_hard_decline": true
+  }
+ },
+ "easy_setup_import_select_step": {
+  "how": "Import Settings > Choose JSON File (unmodified export) > client-side parse; then Cancel. Import Selected never clicked.",
+  "subscription_settings_entry": "Subscription Settings - Billing, renewals, checkout, trials, retries, plan switching, proration, and refunds (checked by default)",
+  "buttons": [
+   "Import Selected",
+   "Cancel"
+  ],
+  "screenshot": "/home/server-manager/www/arrayhash/mirror-help.arrayhash.com/public/wp-content/plugins/qa/stripe-dev-support-2026-10-18/screenshots/dv61-easy-setup-import-select.png"
+ }
+}

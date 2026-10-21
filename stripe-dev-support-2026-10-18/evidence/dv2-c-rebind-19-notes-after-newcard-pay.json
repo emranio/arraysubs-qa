@@ -1,0 +1,16 @@
+{
+    "sub": 68788,
+    "order": 68965,
+    "since": "2026-10-19T12:53:00+00:00",
+    "order_notes": [
+        "2026-10-19T12:54:30+00:00 | Stripe payment intent created (Payment Intent ID: pi_3USG5BJG5OzSNVs20cFl4rQm)",
+        "2026-10-19T12:54:31+00:00 | Payment via Credit / Debit Card (ch_3USG5BJG5OzSNVs20ylyk3bg).",
+        "2026-10-19T12:54:32+00:00 | Email \"New order\" sent.",
+        "2026-10-19T12:54:33+00:00 | Stripe charge complete (Charge ID: ch_3USG5BJG5OzSNVs20ylyk3bg)"
+    ],
+    "subscription_notes": [
+        "2026-10-19T12:54:33+00:00 | Payment successful - Order #68965 (&#036;7.31)",
+        "2026-10-19T12:54:33+00:00 | Email sent: [ArraySubs] Renewal Payment Successful",
+        "2026-10-19T12:54:31+00:00 | [Gateway: stripe] Stripe payment confirmed via official webhook for order #68965."
+    ]
+}

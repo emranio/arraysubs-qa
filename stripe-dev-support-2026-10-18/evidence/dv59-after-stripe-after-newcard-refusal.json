@@ -1,0 +1,33 @@
+{
+    "checked_at_utc": "2026-10-19T11:41:41+00:00",
+    "customer": "cus_VTB1PicZN8Kd3H",
+    "customer_default_pm": "pm_1USEfcJG5OzSNVs2TewrGbne",
+    "payment_intents": [
+        {
+            "id": "pi_3USEkOJG5OzSNVs20jlEvHCg",
+            "created": "2026-10-19T11:28:56+00:00",
+            "status": "requires_payment_method",
+            "amount": 731,
+            "amount_received": 0,
+            "currency": "usd",
+            "pm": null,
+            "latest_charge": "ch_3USEkOJG5OzSNVs20OXF8AXh",
+            "last_error_code": "card_declined",
+            "last_error_decline": "generic_decline",
+            "off_session_flag": "true",
+            "meta_order_id": "68822",
+            "meta_subscription_id": "68770",
+            "setup_future_usage": null,
+            "next_action": null,
+            "description": null
+        }
+    ],
+    "customer_pms": [
+        {
+            "id": "pm_1USEfcJG5OzSNVs2TewrGbne",
+            "last4": "0341",
+            "brand": "visa",
+            "created": "2026-10-19T11:24:00+00:00"
+        }
+    ]
+}

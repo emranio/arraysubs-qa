@@ -1,0 +1,168 @@
+{
+ "68881": {
+  "read_at_utc": "2026-10-19 11:59:32",
+  "post_status": "arraysubs-active",
+  "developer_recovery": {
+   "retry_attempts": 3,
+   "next_retry_at": 1792497163,
+   "next_retry_at_utc": "2026-10-20 11:52:43",
+   "last_failure_at": 1792410791,
+   "failure_category": "card_declined",
+   "phase": "before_on_hold",
+   "unpaid_renewal_order_id": 68903
+  },
+  "meta": {
+   "_payment_retry_attempts": "3",
+   "_payment_retry_next_attempt_at": "2026-10-20 11:52:43",
+   "_payment_retry_last_attempt_at": "2026-10-19 11:52:43",
+   "_last_payment_failure": "2026-10-19 11:53:11",
+   "_pending_renewal_order_id": "68903"
+  },
+  "pending_actions": [],
+  "as_has_scheduled_process_renewal": false,
+  "non_canceled_process_renewal_actions": [
+   {
+    "action_id": "101188",
+    "hook": "arraysubs_process_renewal",
+    "status": "complete",
+    "scheduled_date_gmt": "2026-10-19 15:31:09",
+    "last_attempt_gmt": "2026-10-19 11:51:40",
+    "args": "[68881]"
+   },
+   {
+    "action_id": "101190",
+    "hook": "arraysubs_process_renewal",
+    "status": "complete",
+    "scheduled_date_gmt": "2026-10-20 11:51:39",
+    "last_attempt_gmt": "2026-10-19 11:52:17",
+    "args": "[68881]"
+   },
+   {
+    "action_id": "101191",
+    "hook": "arraysubs_process_renewal",
+    "status": "complete",
+    "scheduled_date_gmt": "2026-10-20 11:52:14",
+    "last_attempt_gmt": "2026-10-19 11:52:44",
+    "args": "[68881]"
+   },
+   {
+    "action_id": "101192",
+    "hook": "arraysubs_process_renewal",
+    "status": "complete",
+    "scheduled_date_gmt": "2026-10-20 11:52:43",
+    "last_attempt_gmt": "2026-10-19 11:53:13",
+    "args": "[68881]"
+   }
+  ],
+  "retry_notes": [
+   {
+    "id": 68937,
+    "gmt": "2026-10-19 11:59:05",
+    "text": "[Send Stripe Renewal Verification] &#10003; SuccessRan scheduled action for subscription #68881."
+   },
+   {
+    "id": 68931,
+    "gmt": "2026-10-19 11:53:11",
+    "text": "Reached the configured retry limit (3). No further automatic retries will be scheduled. The subscription will continue through the standard grace period; an admin or customer can also trigger a manual retry."
+   },
+   {
+    "id": 68924,
+    "gmt": "2026-10-19 11:52:43",
+    "text": "Scheduled retry 3 of 3 at 20 October, 2026 5:52 PM. Plugin verifies with the gateway before re-charging to avoid double charges."
+   },
+   {
+    "id": 68917,
+    "gmt": "2026-10-19 11:52:15",
+    "text": "Scheduled retry 2 of 3 at 20 October, 2026 5:52 PM. Plugin verifies with the gateway before re-charging to avoid double charges."
+   },
+   {
+    "id": 68912,
+    "gmt": "2026-10-19 11:51:39",
+    "text": "Scheduled retry 1 of 3 at 20 October, 2026 5:51 PM. Plugin verifies with the gateway before re-charging to avoid double charges."
+   }
+  ]
+ },
+ "68512": {
+  "read_at_utc": "2026-10-19 11:59:35",
+  "post_status": "arraysubs-active",
+  "developer_recovery": {
+   "retry_attempts": 3,
+   "next_retry_at": 1792489460,
+   "next_retry_at_utc": "2026-10-20 09:44:20",
+   "last_failure_at": 1792403077,
+   "failure_category": "card_declined",
+   "phase": "before_on_hold",
+   "unpaid_renewal_order_id": 68550
+  },
+  "meta": {
+   "_payment_retry_attempts": "3",
+   "_payment_retry_next_attempt_at": "2026-10-20 09:44:20",
+   "_payment_retry_last_attempt_at": "2026-10-19 09:44:20",
+   "_last_payment_failure": "2026-10-19 09:44:37",
+   "_pending_renewal_order_id": "68550"
+  },
+  "pending_actions": [],
+  "as_has_scheduled_process_renewal": false,
+  "non_canceled_process_renewal_actions": [
+   {
+    "action_id": "100964",
+    "hook": "arraysubs_process_renewal",
+    "status": "complete",
+    "scheduled_date_gmt": "2026-10-19 12:32:43",
+    "last_attempt_gmt": "2026-10-19 09:43:26",
+    "args": "[68512]"
+   },
+   {
+    "action_id": "100973",
+    "hook": "arraysubs_process_renewal",
+    "status": "complete",
+    "scheduled_date_gmt": "2026-10-20 09:43:25",
+    "last_attempt_gmt": "2026-10-19 09:44:04",
+    "args": "[68512]"
+   },
+   {
+    "action_id": "100975",
+    "hook": "arraysubs_process_renewal",
+    "status": "complete",
+    "scheduled_date_gmt": "2026-10-20 09:44:03",
+    "last_attempt_gmt": "2026-10-19 09:44:21",
+    "args": "[68512]"
+   },
+   {
+    "action_id": "100976",
+    "hook": "arraysubs_process_renewal",
+    "status": "complete",
+    "scheduled_date_gmt": "2026-10-20 09:44:20",
+    "last_attempt_gmt": "2026-10-19 09:44:38",
+    "args": "[68512]"
+   }
+  ],
+  "retry_notes": [
+   {
+    "id": 68634,
+    "gmt": "2026-10-19 09:53:04",
+    "text": "[Send Stripe Renewal Verification] &#10003; SuccessRan scheduled action for subscription #68512."
+   },
+   {
+    "id": 68589,
+    "gmt": "2026-10-19 09:44:37",
+    "text": "Reached the configured retry limit (3). No further automatic retries will be scheduled. The subscription will continue through the standard grace period; an admin or customer can also trigger a manual retry."
+   },
+   {
+    "id": 68582,
+    "gmt": "2026-10-19 09:44:20",
+    "text": "Scheduled retry 3 of 3 at 20 October, 2026 3:44 PM. Plugin verifies with the gateway before re-charging to avoid double charges."
+   },
+   {
+    "id": 68575,
+    "gmt": "2026-10-19 09:44:03",
+    "text": "Scheduled retry 2 of 3 at 20 October, 2026 3:44 PM. Plugin verifies with the gateway before re-charging to avoid double charges."
+   },
+   {
+    "id": 68560,
+    "gmt": "2026-10-19 09:43:26",
+    "text": "Scheduled retry 1 of 3 at 20 October, 2026 3:43 PM. Plugin verifies with the gateway before re-charging to avoid double charges."
+   }
+  ]
+ }
+}

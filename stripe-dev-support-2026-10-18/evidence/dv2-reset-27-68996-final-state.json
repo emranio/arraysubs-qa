@@ -1,0 +1,167 @@
+{
+    "taken_at_utc": "2026-10-19T13:28:37Z",
+    "subscription_id": 68996,
+    "post_status": "arraysubs-active",
+    "meta": {
+        "_last_payment_failure": "2026-10-19 13:27:30",
+        "_last_payment_failure_reason": "Your card was declined.",
+        "_last_payment_failure_category": "card_declined",
+        "_payment_retry_attempts": "<absent>",
+        "_payment_retry_last_attempt_at": "<absent>",
+        "_payment_retry_next_attempt_at": "<absent>",
+        "_renewal_failure_resolved": "<absent>",
+        "_renewal_failure_resolved_at": "<absent>",
+        "_renewal_failure_resolved_by": "<absent>",
+        "_pending_renewal_order_id": "69022",
+        "_next_payment_date": "2026-10-19 13:21:35",
+        "_payment_gateway": "stripe",
+        "_gateway_payment_method_id": "pm_1USGSLJG5OzSNVs2Rq3U3j5W",
+        "_gateway_customer_id": "cus_VTCsQXyRiRmQfB",
+        "_gateway_status": "active",
+        "_payment_method_updated_at": "2026-10-19 13:25:17",
+        "_payment_method_source": "stripe",
+        "_payment_method_last4": "0341",
+        "_arraysubs_lifecycle_attempt_seq": "2"
+    },
+    "developer_recovery": {
+        "policy": {
+            "before_on_hold": 3,
+            "before_on_hold_source": "site",
+            "before_cancel": 7,
+            "before_cancel_source": "site"
+        },
+        "due_at": 1792416095,
+        "on_hold_at": null,
+        "hold_eligible_at": 1792675295,
+        "cancel_eligible_at": 1793280095,
+        "evaluated_at": 1792416517,
+        "phase": "before_on_hold",
+        "renewal_overdue": true,
+        "unpaid_renewal_order_id": 69022,
+        "awaiting_gateway_settlement": false,
+        "can_enter_on_hold": false,
+        "can_cancel_overdue": false,
+        "retry_attempts": 0,
+        "next_retry_at": null,
+        "last_failure_at": 1792416450,
+        "failure_category": "card_declined"
+    },
+    "admin_detail_rest_status": 200,
+    "admin_detail_actions": {
+        "status": "arraysubs-active",
+        "can_retry_payment": true,
+        "can_sync_gateway": true,
+        "can_prorated_refund": false,
+        "payment_gateway": "stripe",
+        "last_payment_failure": "2026-10-19 13:27:30",
+        "pending_renewal_order_id": 69022,
+        "waiting_cancellation": false
+    },
+    "admin_detail_meta": {
+        "_waiting_cancellation": false,
+        "_cancellation_scheduled_date": "",
+        "_cancellation_reason": "",
+        "_last_payment_failure": "2026-10-19 13:27:30",
+        "_payment_gateway": "stripe",
+        "_payment_retry_attempts": 0,
+        "_payment_retry_next_attempt_at": null,
+        "_pending_renewal_order_id": 69022,
+        "_pending_switch": null
+    },
+    "pro_renewal_failures": {
+        "route": "GET /arraysubs/v1/audits/renewal-failures",
+        "http_status": 200,
+        "total": 5,
+        "listed": true,
+        "row": {
+            "subscription_id": 68996,
+            "subscription_status": "arraysubs-active",
+            "failure_category": "card_declined",
+            "failed_at": "2026-10-19 13:27:30",
+            "next_retry_at": "",
+            "retry_attempts": 0,
+            "order_id": 69022,
+            "order_status": "failed",
+            "can_retry": true
+        }
+    },
+    "action_scheduler_args_id": [
+        {
+            "action_id": "101259",
+            "hook": "arraysubs_generate_renewal_invoice",
+            "status": "canceled",
+            "scheduled_date_gmt": "2026-10-20 11:18:33",
+            "last_attempt_gmt": "0000-00-00 00:00:00"
+        },
+        {
+            "action_id": "101260",
+            "hook": "arraysubs_process_renewal",
+            "status": "canceled",
+            "scheduled_date_gmt": "2026-10-20 17:18:33",
+            "last_attempt_gmt": "0000-00-00 00:00:00"
+        },
+        {
+            "action_id": "101262",
+            "hook": "arraysubs_generate_renewal_invoice",
+            "status": "canceled",
+            "scheduled_date_gmt": "2026-10-20 11:18:33",
+            "last_attempt_gmt": "0000-00-00 00:00:00"
+        },
+        {
+            "action_id": "101263",
+            "hook": "arraysubs_process_renewal",
+            "status": "canceled",
+            "scheduled_date_gmt": "2026-10-20 17:18:33",
+            "last_attempt_gmt": "0000-00-00 00:00:00"
+        },
+        {
+            "action_id": "101266",
+            "hook": "arraysubs_generate_renewal_invoice",
+            "status": "canceled",
+            "scheduled_date_gmt": "2026-10-20 11:18:33",
+            "last_attempt_gmt": "0000-00-00 00:00:00"
+        },
+        {
+            "action_id": "101267",
+            "hook": "arraysubs_process_renewal",
+            "status": "canceled",
+            "scheduled_date_gmt": "2026-10-20 17:18:33",
+            "last_attempt_gmt": "0000-00-00 00:00:00"
+        },
+        {
+            "action_id": "101268",
+            "hook": "arraysubs_generate_renewal_invoice",
+            "status": "canceled",
+            "scheduled_date_gmt": "2026-10-20 11:20:04",
+            "last_attempt_gmt": "0000-00-00 00:00:00"
+        },
+        {
+            "action_id": "101269",
+            "hook": "arraysubs_process_renewal",
+            "status": "canceled",
+            "scheduled_date_gmt": "2026-10-20 17:20:04",
+            "last_attempt_gmt": "0000-00-00 00:00:00"
+        },
+        {
+            "action_id": "101270",
+            "hook": "arraysubs_generate_renewal_invoice",
+            "status": "complete",
+            "scheduled_date_gmt": "2026-10-19 13:21:05",
+            "last_attempt_gmt": "2026-10-19 13:22:06"
+        },
+        {
+            "action_id": "101271",
+            "hook": "arraysubs_process_renewal",
+            "status": "complete",
+            "scheduled_date_gmt": "2026-10-19 17:21:35",
+            "last_attempt_gmt": "2026-10-19 13:22:47"
+        },
+        {
+            "action_id": "101277",
+            "hook": "arraysubs_process_renewal",
+            "status": "complete",
+            "scheduled_date_gmt": "2026-10-20 13:22:46",
+            "last_attempt_gmt": "2026-10-19 13:27:31"
+        }
+    ]
+}

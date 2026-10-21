@@ -1,0 +1,22 @@
+{
+    "queried_at_utc": "2026-10-19T13:25:37Z",
+    "filter": {
+        "obj": "pm_1USGSLJG5OzSNVs2Rq3U3j5W",
+        "gte": 1792416300,
+        "type": "payment_method.updated"
+    },
+    "events": [
+        {
+            "id": "evt_1USGYxJG5OzSNVs2QNKIMC0e",
+            "type": "payment_method.updated",
+            "created_utc": "2026-10-19T13:25:15Z",
+            "object_id": "pm_1USGSLJG5OzSNVs2Rq3U3j5W",
+            "object_customer": "cus_VTCsQXyRiRmQfB",
+            "previous_attributes_keys": [
+                "billing_details"
+            ],
+            "pending_webhooks": 0,
+            "request_id": "req_MKogb1E1tNlv0H"
+        }
+    ]
+}

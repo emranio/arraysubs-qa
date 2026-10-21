@@ -1,0 +1,47 @@
+{
+    "before": "2026-10-19T07:03:38+00:00",
+    "after": "2026-10-19T20:03:52+00:00",
+    "options": {
+        "arraysubs_settings": "identical",
+        "active_plugins": "identical",
+        "woocommerce_checkout_page_id": "identical",
+        "woocommerce_cart_page_id": "identical",
+        "woocommerce_myaccount_page_id": "identical",
+        "woocommerce_enable_guest_checkout": "identical",
+        "woocommerce_enable_checkout_login_reminder": "identical",
+        "woocommerce_enable_signup_and_login_from_checkout": "identical",
+        "woocommerce_enable_myaccount_registration": "identical",
+        "woocommerce_registration_generate_password": "identical",
+        "woocommerce_coming_soon": "identical",
+        "woocommerce_store_pages_only": "identical",
+        "woocommerce_calc_taxes": "identical",
+        "woocommerce_currency": "identical",
+        "woocommerce_hold_stock_minutes": "identical",
+        "woocommerce_default_customer_address": "identical",
+        "woocommerce_feature_custom_order_tables_enabled": "identical"
+    },
+    "hash_only": {
+        "woocommerce_stripe_settings": "identical",
+        "arraysubs_stripe_extras": "identical"
+    },
+    "sections": {
+        "payment_retry": "identical",
+        "renewals": "identical",
+        "store_credit": "identical",
+        "plan_switching": "identical",
+        "proration": "identical",
+        "automatic_payments": "identical",
+        "members_access": "identical",
+        "feature_manager": "identical",
+        "trials": "identical",
+        "cancellation": "identical",
+        "customer_actions": "identical",
+        "pause_subscription": "identical",
+        "skip_renewal": "identical",
+        "multiple_subscriptions": "identical",
+        "checkout": "identical",
+        "refunds": "identical"
+    },
+    "arraysubs_settings_changed_paths": [],
+    "all_identical": true
+}

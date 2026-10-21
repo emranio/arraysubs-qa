@@ -1,0 +1,6 @@
+2026-10-19T12:54:31+00:00 INFO [Gateway: stripe] Stripe payment confirmed via official webhook for order #68965.
+2026-10-19T12:54:31+00:00 INFO [Gateway: arraysubs_stripe] [Webhook] Webhook received
+2026-10-19T12:54:31+00:00 INFO [Gateway: arraysubs_stripe] [Webhook] Duplicate webhook event skipped: evt_3USG5BJG5OzSNVs201xooU0h
+2026-10-19T12:54:32+00:00 INFO [Gateway: arraysubs_stripe] [Webhook] Webhook received
+2026-10-19T12:54:32+00:00 INFO [Gateway: stripe] Stripe payment confirmed via official webhook for order #68965.
+2026-10-19T12:54:33+00:00 INFO [Gateway: arraysubs_stripe] [Webhook] Webhook processed: payment_intent.succeeded → payment_succeeded (subscription: 68788, order: 68965)

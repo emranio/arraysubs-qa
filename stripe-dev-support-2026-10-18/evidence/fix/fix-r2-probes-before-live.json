@@ -1,0 +1,40 @@
+{
+    "rs_f1_null_response": "stripe_empty_response",
+    "rs_f1_object_response": "pm_x",
+    "rs_f2_missing_pm": "renewal_payment_method_binding_invalid -> missing_payment_method (hard)",
+    "rs_f2_stripe_error_code": "resource_missing",
+    "rs_f1_empty_response_category": "processing_error",
+    "mb_f2_newer_69202": {
+        "stamp": "2026-10-19 19:03:58",
+        "order": 69222,
+        "newer": false
+    },
+    "mb_f2_newer_68473": {
+        "stamp": "(none)",
+        "order": 68473,
+        "newer": false
+    },
+    "mb_f2_newer_69202_unstamped": false,
+    "mb_f1_settling_69202_now": false,
+    "mb_f1_settling_69202_onhold_txn": true,
+    "rs_f3_retry_at": "2026-10-20 19:06:41",
+    "rs_f3_now": {
+        "due": "2026-10-19 19:06:13",
+        "hold_eligible_at": "2026-10-22 19:06:13"
+    },
+    "rs_f3_retry_at_window_edge": {
+        "fake_due": "2026-10-17 19:16:41",
+        "window_end": "2026-10-20 19:16:41",
+        "hold_eligible_at": "2026-10-20 20:06:41"
+    },
+    "rs_f3_retry_after_window": {
+        "fake_due": "2026-10-17 07:06:41",
+        "hold_eligible_at": "2026-10-20 07:06:41"
+    },
+    "rs_f3_offset_seconds": 17876,
+    "rs_f3_retry_30min_after_window_end": {
+        "fake_due": "2026-10-17 18:36:41",
+        "window_end": "2026-10-20 18:36:41",
+        "hold_eligible_at": "2026-10-20 20:06:41"
+    }
+}

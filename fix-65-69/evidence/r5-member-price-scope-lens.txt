@@ -1,0 +1,186 @@
+### P1 migration 197->495 (no trial), member per-item 15% rule on all products | user=468 product=495 qty=1 migrate-settings=on trial=- signup=- sync=site meta=[]
+  add-to-cart validation: true
+  add_to_cart key=35051070
+  line #495 qty=1 unit_price=42.49 line_subtotal=42.49 line_total=42.49 | data.trial_length=0 signup_fee=0 | hasTrial=false isMigration=true | migration=eligible sub=27494 upgrade net=4.48 new_next=2026-10-31 18:00:00
+  cart: subtotal=42.49 fees=0.00 TOTAL=42.49 needs_payment=true
+  [classic cart product-price] $42.49 / Every month
+  [classic cart product-subtotal] $42.49 Every month
+  [mini-cart item] × Pro Monthly Every month Renewals: $42.49 every 1 month Today's charge: $42.49 Next charge: 1 November, 2026 ($42.49) Duration: Continues until cancelled Checkout action: Replaces your current Basic Monthly subscription Credit applied: $10.75 1 × $42.49 / Every monthEvery month
+  [classic checkout product-name] Pro Monthly Every month  × 1Every month Renewals: $42.49 every 1 month Today's charge: $42.49 Next charge: 1 November, 2026 ($42.49) Duration: Continues until cancelled Checkout action: Replaces your current Basic Monthly subscription Credit applied: $10.75
+  [classic checkout product-total] $42.49 Every month
+  [classic checkout summary 0] Recurring: $42.49 every 1 monthReplaces your current Basic Monthly subscription
+  [classic checkout summary 1] Today's Charge: $42.49
+  [classic checkout summary 2] Next Charge: 1 November, 2026 ($42.49)
+  [classic checkout order-total] $42.49
+  [store api ext] {"has_trial":false,"trial_schedule":""}
+  [store api totals] price=4249 regular=4999 line_subtotal=4249
+  [store api item_data 0] Renewals: $42.49 every 1 month
+  [store api item_data 1] Today's charge: $42.49
+  [store api item_data 2] Next charge: 1 November, 2026 ($42.49)
+  [store api item_data 4] Checkout action: Replaces your current Basic Monthly subscription
+  [store api item_data 5] Credit applied: $10.75
+  [email snapshot 0] Renewals: $42.49 every 1 month
+  [email snapshot 1] Today's charge: $42.49
+  [email snapshot 2] Next charge: 1 November, 2026 ($42.49)
+  [email snapshot 4] Checkout action: Replaces your current Basic Monthly subscription
+  [email snapshot 5] Credit applied: $10.75
+  WORDING (migration line): no trial / sync wording
+  guard: case=rolled-back-clean, fixture identical blocked_writes=1 http_attempts=0 mail_blocked=0 notices=0
+    blocked: INSERT INTO `wp_usermeta` (`user_id`, `meta_key`, `meta_value`) VALUES (468, '_woocommerce
+### P1c control: same migration, no member rule | user=468 product=495 qty=1 migrate-settings=on trial=- signup=- sync=site meta=[]
+  add-to-cart validation: true
+  add_to_cart key=35051070
+  line #495 qty=1 unit_price=7.17 line_subtotal=7.17 line_total=7.17 | data.trial_length=0 signup_fee=0 | hasTrial=false isMigration=true | migration=eligible sub=27494 upgrade net=7.17 new_next=2026-10-31 18:00:00
+  cart: subtotal=7.17 fees=0.00 TOTAL=7.17 needs_payment=true
+  [classic cart product-price] $7.17 / Every month
+  [classic cart product-subtotal] $7.17 Every month
+  [mini-cart item] × Pro Monthly Every month Renewals: $49.99 every 1 month Today's charge: $7.17 Next charge: 1 November, 2026 ($49.99) Duration: Continues until cancelled Checkout action: Replaces your current Basic Monthly subscription Credit applied: $10.75 1 × $7.17 / Every monthEvery month
+  [classic checkout product-name] Pro Monthly Every month  × 1Every month Renewals: $49.99 every 1 month Today's charge: $7.17 Next charge: 1 November, 2026 ($49.99) Duration: Continues until cancelled Checkout action: Replaces your current Basic Monthly subscription Credit applied: $10.75
+  [classic checkout product-total] $7.17 Every month
+  [classic checkout summary 0] Recurring: $49.99 every 1 monthReplaces your current Basic Monthly subscription
+  [classic checkout summary 1] Today's Charge: $7.17
+  [classic checkout summary 2] Next Charge: 1 November, 2026 ($49.99)
+  [classic checkout order-total] $7.17
+  [store api ext] {"has_trial":false,"trial_schedule":""}
+  [store api totals] price=717 regular=4999 line_subtotal=717
+  [store api item_data 0] Renewals: $49.99 every 1 month
+  [store api item_data 1] Today's charge: $7.17
+  [store api item_data 2] Next charge: 1 November, 2026 ($49.99)
+  [store api item_data 4] Checkout action: Replaces your current Basic Monthly subscription
+  [store api item_data 5] Credit applied: $10.75
+  [email snapshot 0] Renewals: $49.99 every 1 month
+  [email snapshot 1] Today's charge: $7.17
+  [email snapshot 2] Next charge: 1 November, 2026 ($49.99)
+  [email snapshot 4] Checkout action: Replaces your current Basic Monthly subscription
+  [email snapshot 5] Credit applied: $10.75
+  WORDING (migration line): no trial / sync wording
+  guard: case=rolled-back-clean, fixture identical blocked_writes=1 http_attempts=0 mail_blocked=0 notices=0
+    blocked: INSERT INTO `wp_usermeta` (`user_id`, `meta_key`, `meta_value`) VALUES (468, '_woocommerce
+### P2 genuine trial line (migrate settings off), 495 with 7-day trial, member per-item 15% (#074 claim) | user=468 product=495 qty=1 migrate-settings=off trial=7 signup=- sync=site meta=[]
+  add-to-cart validation: true
+  add_to_cart key=35051070
+  line #495 qty=1 unit_price=42.49 line_subtotal=42.49 line_total=42.49 | data.trial_length=7 signup_fee=0 | hasTrial=true isMigration=false | migration=none
+  cart: subtotal=42.49 fees=0.00 TOTAL=42.49 needs_payment=true
+  [classic cart product-price] $42.49 / Every month7 days free trial
+  [classic cart product-subtotal] Free for 7 daysThen $42.49 every 1 month
+  [mini-cart item] × Pro Monthly Every month After trial: $42.49 every 1 month Free trial: 7 days Today's charge: $42.49 First charge: 27 October, 2026 ($42.49) Duration: Continues until cancelled 1 × $42.49 / Every month7 days free trialEvery month
+  [classic checkout product-name] Pro Monthly Every month  × 1Every month7 days free trial After trial: $42.49 every 1 month Free trial: 7 days Today's charge: $42.49 First charge: 27 October, 2026 ($42.49) Duration: Continues until cancelled
+  [classic checkout product-total] Free for 7 daysThen $42.49 every 1 month
+  [classic checkout summary 0] After Trial: $42.49 every 1 month
+  [classic checkout summary 1] Free Trial: 7 days
+  [classic checkout summary 2] Today's Charge: $42.49
+  [classic checkout summary 3] First Charge: 27 October, 2026 ($42.49)
+  [classic checkout order-total] $42.49
+  [store api ext] {"has_trial":true,"trial_schedule":"7 days"}
+  [store api totals] price=4249 regular=4999 line_subtotal=4249
+  [store api item_data 0] After trial: $42.49 every 1 month
+  [store api item_data 1] Free trial: 7 days
+  [store api item_data 2] Today's charge: $42.49
+  [store api item_data 3] First charge: 27 October, 2026 ($42.49)
+  [email snapshot 0] After trial: $42.49 every 1 month
+  [email snapshot 1] Free trial: 7 days
+  [email snapshot 2] Today's charge: $42.49
+  [email snapshot 3] First charge: 27 October, 2026 ($42.49)
+  WORDING (non-migration line): free trial @ classic cart product-price ; Free for @ classic cart product-subtotal ; free trial @ mini-cart item ; Free trial @ mini-cart item ; After trial @ mini-cart item ; First charge @ mini-cart item ; free trial @ classic checkout product-name ; Free trial @ classic checkout product-name ; After trial @ classic checkout product-name ; First charge @ classic checkout product-name ; Free for @ classic checkout product-total ; After Trial @ classic checkout summary 0 ; Free Trial @ classic checkout summary 1 ; First Charge @ classic checkout summary 3 ; "has_trial":true @ store api ext ; After trial @ store api item_data 0 ; Free trial @ store api item_data 1 ; First charge @ store api item_data 3 ; After trial @ email snapshot 0 ; Free trial @ email snapshot 1 ; First charge @ email snapshot 3
+  guard: case=rolled-back-clean, fixture identical blocked_writes=1 http_attempts=0 mail_blocked=0 notices=0
+    blocked: INSERT INTO `wp_usermeta` (`user_id`, `meta_key`, `meta_value`) VALUES (468, '_woocommerce
+### P3 renewal sync prorate (migrate settings off), 495, member per-item 15% | user=468 product=495 qty=1 migrate-settings=off trial=- signup=- sync='prorate' meta=[]
+  add-to-cart validation: true
+  add_to_cart key=35051070
+  line #495 qty=1 unit_price=42.49 line_subtotal=42.49 line_total=42.49 | data.trial_length=0 signup_fee=0 | hasTrial=false isMigration=false | migration=none
+  cart: subtotal=42.49 fees=0.00 TOTAL=42.49 needs_payment=true
+  [classic cart product-price] $42.49 / Every month
+  [classic cart product-subtotal] $42.49 Every month
+  [mini-cart item] × Pro Monthly Every month Renewals: $42.49 every 1 month Today's charge: $42.49 prorated until the synced renewal date Next charge: 1 November, 2026 ($42.49) Duration: Continues until cancelled 1 × $42.49 / Every monthEvery month
+  [classic checkout product-name] Pro Monthly Every month  × 1Every month Renewals: $42.49 every 1 month Today's charge: $42.49 prorated until the synced renewal date Next charge: 1 November, 2026 ($42.49) Duration: Continues until cancelled
+  [classic checkout product-total] $42.49 Every month
+  [classic checkout summary 0] Recurring: $42.49 every 1 monthFirst full renewal: 1 November, 2026 ($42.49)
+  [classic checkout summary 1] Today's Charge: $42.49 prorated until the synced renewal date
+  [classic checkout summary 2] Next Charge: 1 November, 2026 ($42.49)
+  [classic checkout order-total] $42.49
+  [store api ext] {"has_trial":false,"trial_schedule":""}
+  [store api totals] price=4249 regular=4999 line_subtotal=4249
+  [store api item_data 0] Renewals: $42.49 every 1 month
+  [store api item_data 1] Today's charge: $42.49 prorated until the synced renewal date
+  [store api item_data 2] Next charge: 1 November, 2026 ($42.49)
+  [email snapshot 0] Renewals: $42.49 every 1 month
+  [email snapshot 1] Today's charge: $42.49 prorated until the synced renewal date
+  [email snapshot 2] Next charge: 1 November, 2026 ($42.49)
+  WORDING (non-migration line): prorated until the synced renewal date @ mini-cart item ; prorated until the synced renewal date @ classic checkout product-name ; First full renewal @ classic checkout summary 0 ; prorated until the synced renewal date @ classic checkout summary 1 ; prorated until the synced renewal date @ store api item_data 1 ; prorated until the synced renewal date @ email snapshot 1
+  guard: case=rolled-back-clean, fixture identical blocked_writes=1 http_attempts=0 mail_blocked=0 notices=0
+    blocked: INSERT INTO `wp_usermeta` (`user_id`, `meta_key`, `meta_value`) VALUES (468, '_woocommerce
+### P3c control: renewal sync prorate, no member rule | user=468 product=495 qty=1 migrate-settings=off trial=- signup=- sync='prorate' meta=[]
+  add-to-cart validation: true
+  add_to_cart key=35051070
+  line #495 qty=1 unit_price=17.74 line_subtotal=17.74 line_total=17.74 | data.trial_length=0 signup_fee=0 | hasTrial=false isMigration=false | migration=none
+  cart: subtotal=17.74 fees=0.00 TOTAL=17.74 needs_payment=true
+  [classic cart product-price] $17.74 / Every month
+  [classic cart product-subtotal] $17.74 Every month
+  [mini-cart item] × Pro Monthly Every month Renewals: $49.99 every 1 month Today's charge: $17.74 prorated until the synced renewal date Next charge: 1 November, 2026 ($49.99) Duration: Continues until cancelled 1 × $17.74 / Every monthEvery month
+  [classic checkout product-name] Pro Monthly Every month  × 1Every month Renewals: $49.99 every 1 month Today's charge: $17.74 prorated until the synced renewal date Next charge: 1 November, 2026 ($49.99) Duration: Continues until cancelled
+  [classic checkout product-total] $17.74 Every month
+  [classic checkout summary 0] Recurring: $49.99 every 1 monthFirst full renewal: 1 November, 2026 ($49.99)
+  [classic checkout summary 1] Today's Charge: $17.74 prorated until the synced renewal date
+  [classic checkout summary 2] Next Charge: 1 November, 2026 ($49.99)
+  [classic checkout order-total] $17.74
+  [store api ext] {"has_trial":false,"trial_schedule":""}
+  [store api totals] price=1774 regular=4999 line_subtotal=1774
+  [store api item_data 0] Renewals: $49.99 every 1 month
+  [store api item_data 1] Today's charge: $17.74 prorated until the synced renewal date
+  [store api item_data 2] Next charge: 1 November, 2026 ($49.99)
+  [email snapshot 0] Renewals: $49.99 every 1 month
+  [email snapshot 1] Today's charge: $17.74 prorated until the synced renewal date
+  [email snapshot 2] Next charge: 1 November, 2026 ($49.99)
+  WORDING (non-migration line): prorated until the synced renewal date @ mini-cart item ; prorated until the synced renewal date @ classic checkout product-name ; First full renewal @ classic checkout summary 0 ; prorated until the synced renewal date @ classic checkout summary 1 ; prorated until the synced renewal date @ store api item_data 1 ; prorated until the synced renewal date @ email snapshot 1
+  guard: case=rolled-back-clean, fixture identical blocked_writes=1 http_attempts=0 mail_blocked=0 notices=0
+    blocked: INSERT INTO `wp_usermeta` (`user_id`, `meta_key`, `meta_value`) VALUES (468, '_woocommerce
+### P4 segment plan (default thirds, day 20 = prorate segment), site sync setting (off), member per-item 15% | user=468 product=495 qty=1 migrate-settings=off trial=- signup=- sync=site meta={"_arraysubs_flex_sync_enabled":"yes"}
+  add-to-cart validation: true
+  add_to_cart key=35051070
+  line #495 qty=1 unit_price=42.49 line_subtotal=42.49 line_total=42.49 | data.trial_length=0 signup_fee=0 | hasTrial=false isMigration=false | migration=none
+  cart: subtotal=42.49 fees=0.00 TOTAL=42.49 needs_payment=true
+  [classic cart product-price] $42.49 / Every month
+  [classic cart product-subtotal] $42.49 Every month
+  [mini-cart item] × Pro Monthly Every month Renewals: $42.49 every 1 month Today's charge: $42.49 prorated until the synced renewal date Next charge: 1 November, 2026 ($42.49) Duration: Continues until cancelled 1 × $42.49 / Every monthEvery month
+  [classic checkout product-name] Pro Monthly Every month  × 1Every month Renewals: $42.49 every 1 month Today's charge: $42.49 prorated until the synced renewal date Next charge: 1 November, 2026 ($42.49) Duration: Continues until cancelled
+  [classic checkout product-total] $42.49 Every month
+  [classic checkout summary 0] Recurring: $42.49 every 1 monthFirst full renewal: 1 November, 2026 ($42.49)
+  [classic checkout summary 1] Today's Charge: $42.49 prorated until the synced renewal date
+  [classic checkout summary 2] Next Charge: 1 November, 2026 ($42.49)
+  [classic checkout order-total] $42.49
+  [store api ext] {"has_trial":false,"trial_schedule":""}
+  [store api totals] price=4249 regular=4999 line_subtotal=4249
+  [store api item_data 0] Renewals: $42.49 every 1 month
+  [store api item_data 1] Today's charge: $42.49 prorated until the synced renewal date
+  [store api item_data 2] Next charge: 1 November, 2026 ($42.49)
+  [email snapshot 0] Renewals: $42.49 every 1 month
+  [email snapshot 1] Today's charge: $42.49 prorated until the synced renewal date
+  [email snapshot 2] Next charge: 1 November, 2026 ($42.49)
+  WORDING (non-migration line): prorated until the synced renewal date @ mini-cart item ; prorated until the synced renewal date @ classic checkout product-name ; First full renewal @ classic checkout summary 0 ; prorated until the synced renewal date @ classic checkout summary 1 ; prorated until the synced renewal date @ store api item_data 1 ; prorated until the synced renewal date @ email snapshot 1
+  guard: case=rolled-back-clean, fixture identical blocked_writes=1 http_attempts=0 mail_blocked=0 notices=0
+    blocked: INSERT INTO `wp_usermeta` (`user_id`, `meta_key`, `meta_value`) VALUES (468, '_woocommerce
+### P4c control: same segment plan, no member rule | user=468 product=495 qty=1 migrate-settings=off trial=- signup=- sync=site meta={"_arraysubs_flex_sync_enabled":"yes"}
+  add-to-cart validation: true
+  add_to_cart key=35051070
+  line #495 qty=1 unit_price=17.74 line_subtotal=17.74 line_total=17.74 | data.trial_length=0 signup_fee=0 | hasTrial=false isMigration=false | migration=none
+  cart: subtotal=17.74 fees=0.00 TOTAL=17.74 needs_payment=true
+  [classic cart product-price] $17.74 / Every month
+  [classic cart product-subtotal] $17.74 Every month
+  [mini-cart item] × Pro Monthly Every month Renewals: $49.99 every 1 month Today's charge: $17.74 prorated until the synced renewal date Next charge: 1 November, 2026 ($49.99) Duration: Continues until cancelled 1 × $17.74 / Every monthEvery month
+  [classic checkout product-name] Pro Monthly Every month  × 1Every month Renewals: $49.99 every 1 month Today's charge: $17.74 prorated until the synced renewal date Next charge: 1 November, 2026 ($49.99) Duration: Continues until cancelled
+  [classic checkout product-total] $17.74 Every month
+  [classic checkout summary 0] Recurring: $49.99 every 1 monthFirst full renewal: 1 November, 2026 ($49.99)
+  [classic checkout summary 1] Today's Charge: $17.74 prorated until the synced renewal date
+  [classic checkout summary 2] Next Charge: 1 November, 2026 ($49.99)
+  [classic checkout order-total] $17.74
+  [store api ext] {"has_trial":false,"trial_schedule":""}
+  [store api totals] price=1774 regular=4999 line_subtotal=1774
+  [store api item_data 0] Renewals: $49.99 every 1 month
+  [store api item_data 1] Today's charge: $17.74 prorated until the synced renewal date
+  [store api item_data 2] Next charge: 1 November, 2026 ($49.99)
+  [email snapshot 0] Renewals: $49.99 every 1 month
+  [email snapshot 1] Today's charge: $17.74 prorated until the synced renewal date
+  [email snapshot 2] Next charge: 1 November, 2026 ($49.99)
+  WORDING (non-migration line): prorated until the synced renewal date @ mini-cart item ; prorated until the synced renewal date @ classic checkout product-name ; First full renewal @ classic checkout summary 0 ; prorated until the synced renewal date @ classic checkout summary 1 ; prorated until the synced renewal date @ store api item_data 1 ; prorated until the synced renewal date @ email snapshot 1
+  guard: case=rolled-back-clean, fixture identical blocked_writes=1 http_attempts=0 mail_blocked=0 notices=0
+    blocked: INSERT INTO `wp_usermeta` (`user_id`, `meta_key`, `meta_value`) VALUES (468, '_woocommerce

@@ -1,0 +1,252 @@
+{
+    "taken_at_utc": "2026-10-19T11:30:50+00:00",
+    "subscription_id": 68753,
+    "developer_data": {
+        "identity": {
+            "id": 68753,
+            "customer_id": 587,
+            "guest": false,
+            "customer_email": "sqa-dv58-classic@example.com",
+            "created_at": 1792408766,
+            "evaluated_at": 1792409450
+        },
+        "status": {
+            "stored": "arraysubs-active",
+            "has_view_entitlement": true,
+            "terminal": false
+        },
+        "plan": {
+            "product_id": 68271,
+            "variation_id": null,
+            "effective_product_id": 68271,
+            "name": "SQA Daily Stripe Plan",
+            "quantity": 1
+        },
+        "pricing": {
+            "currency": "USD",
+            "initial_amount": "7.31",
+            "recurring_amount": "7.31",
+            "effective_recurring_amount": 7.31,
+            "signup_fee": "0",
+            "different_renewal_price_enabled": false,
+            "different_renewal_price": "0",
+            "different_renewal_price_after": 1
+        },
+        "schedule": {
+            "period": "day",
+            "interval": 1,
+            "length": 0,
+            "start_at": 1792408766,
+            "next_payment_at": 1792409411,
+            "last_payment_at": 1792408796,
+            "completed_payments": 1,
+            "provider_owns_billing_clock": false
+        },
+        "trial": {
+            "active": false,
+            "length": 0,
+            "period": "",
+            "ends_at": null
+        },
+        "recovery": {
+            "policy": {
+                "before_on_hold": 3,
+                "before_on_hold_source": "site",
+                "before_cancel": 7,
+                "before_cancel_source": "site"
+            },
+            "due_at": 1792409411,
+            "on_hold_at": null,
+            "hold_eligible_at": 1792668611,
+            "cancel_eligible_at": 1793273411,
+            "evaluated_at": 1792409450,
+            "phase": "before_on_hold",
+            "renewal_overdue": true,
+            "unpaid_renewal_order_id": 68843,
+            "awaiting_gateway_settlement": false,
+            "can_enter_on_hold": false,
+            "can_cancel_overdue": false,
+            "retry_attempts": 0,
+            "next_retry_at": null,
+            "last_failure_at": null,
+            "failure_category": null
+        },
+        "cancellation": {
+            "scheduled": false,
+            "scheduled_at": null,
+            "cancelled_at": null,
+            "reason": null,
+            "actor": null
+        },
+        "pending_switch": null,
+        "family": {
+            "parent_id": null,
+            "kind": null,
+            "billing_owner_id": 68753,
+            "orphaned": false,
+            "children": {
+                "items": [],
+                "page": 1,
+                "per_page": 20,
+                "has_more": false,
+                "next_page": null
+            }
+        },
+        "order_references": {
+            "initial_order_id": 68752,
+            "original_order_id": null,
+            "pending_renewal_order_id": 68843,
+            "pending_plan_switch_order_id": null
+        },
+        "orders": {
+            "items": [
+                68752,
+                68843
+            ],
+            "page": 1,
+            "per_page": 20,
+            "has_more": false,
+            "next_page": null
+        },
+        "billing": {
+            "first_name": "Sqa",
+            "last_name": "sqa-dv58-classic",
+            "company": "",
+            "address_1": "100 QA Test Street",
+            "address_2": "",
+            "city": "San Francisco",
+            "state": "CA",
+            "postcode": "94105",
+            "country": "US",
+            "email": "sqa-dv58-classic@example.com",
+            "phone": "4155550100"
+        },
+        "shipping": [],
+        "modules": []
+    },
+    "orders": [
+        {
+            "id": 68752,
+            "status": "completed",
+            "total": "7.31",
+            "currency": "USD",
+            "created": "2026-10-19T11:19:26+00:00",
+            "paid": "2026-10-19T11:19:54+00:00",
+            "payment_method": "stripe",
+            "transaction_id": "ch_3USEbFJG5OzSNVs217O2UvB0",
+            "stripe_intent_id": "pi_3USEbFJG5OzSNVs211R75z7z",
+            "stripe_source_id": "pm_1USEbAJG5OzSNVs2dqyED8fl",
+            "stripe_customer_id": "cus_VTAx7ozG2Cs2sm",
+            "type": "Subs Purchase"
+        },
+        {
+            "id": 68843,
+            "status": "pending",
+            "total": "7.31",
+            "currency": "USD",
+            "created": "2026-10-19T11:30:05+00:00",
+            "paid": null,
+            "payment_method": "stripe",
+            "transaction_id": "",
+            "stripe_intent_id": "",
+            "stripe_source_id": "",
+            "stripe_customer_id": "",
+            "type": "Subs Renew"
+        }
+    ],
+    "actions": [
+        {
+            "action_id": "101103",
+            "hook": "arraysubs_generate_renewal_invoice",
+            "status": "canceled",
+            "scheduled_date_gmt": "2026-10-20 07:36:39",
+            "last_attempt_gmt": "0000-00-00 00:00:00",
+            "args": "[68753]"
+        },
+        {
+            "action_id": "101104",
+            "hook": "arraysubs_process_renewal",
+            "status": "canceled",
+            "scheduled_date_gmt": "2026-10-20 13:36:39",
+            "last_attempt_gmt": "0000-00-00 00:00:00",
+            "args": "[68753]"
+        },
+        {
+            "action_id": "101105",
+            "hook": "arraysubs_generate_renewal_invoice",
+            "status": "canceled",
+            "scheduled_date_gmt": "2026-10-20 07:36:39",
+            "last_attempt_gmt": "0000-00-00 00:00:00",
+            "args": "[68753]"
+        },
+        {
+            "action_id": "101106",
+            "hook": "arraysubs_process_renewal",
+            "status": "canceled",
+            "scheduled_date_gmt": "2026-10-20 13:36:39",
+            "last_attempt_gmt": "0000-00-00 00:00:00",
+            "args": "[68753]"
+        },
+        {
+            "action_id": "101147",
+            "hook": "arraysubs_generate_renewal_invoice",
+            "status": "complete",
+            "scheduled_date_gmt": "2026-10-19 11:29:41",
+            "last_attempt_gmt": "2026-10-19 11:30:08",
+            "args": "[68753]"
+        },
+        {
+            "action_id": "101148",
+            "hook": "arraysubs_process_renewal",
+            "status": "pending",
+            "scheduled_date_gmt": "2026-10-19 13:47:24",
+            "last_attempt_gmt": "0000-00-00 00:00:00",
+            "args": "[68753]"
+        }
+    ],
+    "meta": {
+        "_billing_period": "day",
+        "_billing_interval": "1",
+        "_subscription_length": "0",
+        "_start_date": "2026-10-19 11:19:26",
+        "_next_payment_date": "2026-10-19 11:30:11",
+        "_customer_id": "587",
+        "_customer_email": "sqa-dv58-classic@example.com",
+        "_payment_method": "stripe",
+        "_payment_method_title": "Stripe",
+        "_subscription_price": "7.31",
+        "_recurring_amount": "7.31",
+        "_signup_fee": "0",
+        "_currency": "USD",
+        "_trial_length": "0",
+        "_trial_period": "",
+        "_product_id": "68271",
+        "_variation_id": "0",
+        "_quantity": "1",
+        "_parent_order_id": "68752",
+        "_order_ids": "[68752,68843]",
+        "_enable_different_renewal_price": "no",
+        "_different_renewal_price": "0",
+        "_different_renewal_price_after": "1",
+        "_completed_payments": "1",
+        "_cached_product_name": "SQA Daily Stripe Plan",
+        "_cached_product_sku": "",
+        "_cached_product_data": "{\"id\":68271,\"parent_id\":68271,\"variation_id\":0,\"name\":\"SQA Daily Stripe Plan\",\"sku\":\"\",\"type\":\"simple\",\"price\":\"7.31\",\"regular_price\":\"7.31\",\"sale_price\":\"\",\"virtual\":true,\"downloadable\":false,\"cached_at\":\"2026-10-19 11:19:27\"}",
+        "_billing_address": "{\"first_name\":\"Sqa\",\"last_name\":\"sqa-dv58-classic\",\"company\":\"\",\"address_1\":\"100 QA Test Street\",\"address_2\":\"\",\"city\":\"San Francisco\",\"state\":\"CA\",\"postcode\":\"94105\",\"country\":\"US\",\"email\":\"sqa-dv58-classic@example.com\",\"phone\":\"4155550100\"}",
+        "_invoice_email": "sqa-dv58-classic@example.com",
+        "_payment_gateway": "stripe",
+        "_gateway_status": "active",
+        "_gateway_customer_id": "cus_VTAx7ozG2Cs2sm",
+        "_gateway_payment_method_id": "pm_1USEbAJG5OzSNVs2dqyED8fl",
+        "_payment_method_type": "card",
+        "_payment_method_brand": "visa",
+        "_payment_method_last4": "3184",
+        "_payment_method_expiry_month": "12",
+        "_payment_method_expiry_year": "2030",
+        "_last_gateway_transaction_id": "ch_3USEbFJG5OzSNVs217O2UvB0",
+        "_last_payment_date": "2026-10-19 11:19:56",
+        "_renewal_invoice_action_id": "101147",
+        "_renewal_action_id": "101148",
+        "_pending_renewal_order_id": "68843"
+    }
+}

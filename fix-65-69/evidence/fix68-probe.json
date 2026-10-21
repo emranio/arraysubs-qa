@@ -1,0 +1,57 @@
+{
+    "hooks": {
+        "woocommerce_payment_token_added": [],
+        "woocommerce_add_payment_method_success": [],
+        "arraysubs_gateway_rebind_mollie_mandate": [],
+        "arraysubs_gateway_rebind_payment_method": [
+            "10:ArraySubs\\Features\\AutomaticPayments\\Services\\MollieMandateRebinder::filterRebindResult"
+        ],
+        "arraysubs_gateway_revoke_payment_authorisation": [
+            "10:ArraySubs\\Features\\AutomaticPayments\\Services\\MollieMandateRebinder::filterRevokeResult"
+        ]
+    },
+    "capability_payment_method_update": false,
+    "update_mechanism": {
+        "success": false,
+        "type": "",
+        "url": "",
+        "message": "A Mollie mandate can only be replaced by a new first payment, which ArraySubs does not take for an existing subscription. A customer whose card or account changes pays each renewal from its payment link.",
+        "raw": []
+    },
+    "unsupported_messages_keys": [
+        "pause",
+        "resume",
+        "product_sync",
+        "customer_portal",
+        "card_auto_update",
+        "payment_method_update"
+    ],
+    "revoke_without_client": {
+        "success": false,
+        "message": "No Mollie API key is configured for the store's current mode."
+    },
+    "rebind_without_client": {
+        "success": false,
+        "mandate_id": "",
+        "message": "No Mollie API key is configured for the store's current mode."
+    },
+    "temp_subscription": 69712,
+    "rebind_new_mandate": {
+        "success": true,
+        "mandate_id": "mdt_new",
+        "message": "Your payment method has been updated for future renewals."
+    },
+    "rebind_new_mandate_status": "active",
+    "rebind_new_mandate_bound": "mdt_new",
+    "rebind_same_mandate": {
+        "success": true,
+        "mandate_id": "mdt_new",
+        "message": "This subscription already uses the current Mollie mandate."
+    },
+    "rebind_same_mandate_status": "active",
+    "rebind_same_mandate_inactive_status": "inactive",
+    "cleanup": {
+        "notes_deleted": 4,
+        "post_exists_after": false
+    }
+}

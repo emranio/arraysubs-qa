@@ -1,0 +1,108 @@
+Issue 61 code sweep (case-insensitive): payment_retry|paymentRetry|interval_hours|stop_on_hard_decline|retry ladder|Retry interval|hard decline|Automatic retries
+Roots: arraysubs/src, arraysubspro/src, arraysubs/public/build, arraysubspro/public/build (node_modules/vendor excluded)
+Plugin revisions: arraysubs 4791832, arraysubspro edaa401
+
+Total hits: 102 | hits in React sources (src/resources) or shipped bundles (public/build): 0
+
+arraysubs/src/functions/settings-helpers.php:59 | backend logic (not UI) | 'payment_retry' => [
+arraysubs/src/functions/settings-helpers.php:64 | backend logic (not UI) | 'interval_hours' => [24, 24, 24],
+arraysubs/src/functions/settings-helpers.php:65 | comment (not UI) | // A card that is expired, invalid, or reported as a hard decline will
+arraysubs/src/functions/settings-helpers.php:68 | backend logic (not UI) | 'stop_on_hard_decline' => true,
+arraysubs/src/functions/gateway-helpers.php:238 | STALE DOCBLOCK: claims 'Stripe gateway exposes max_attempts and interval as admin-configurable' | * via the `arraysubs_payment_retry_config` filter (Stripe gateway exposes
+arraysubs/src/functions/gateway-helpers.php:245 | backend logic (not UI) | function arraysubs_get_payment_retry_config(int $subscription_id): array
+arraysubs/src/functions/gateway-helpers.php:247 | backend logic (not UI) | $settings = \ArraySubs\Supports\Config::get('settings.payment_retry', []);
+arraysubs/src/functions/gateway-helpers.php:250 | backend logic (not UI) | $intervals = arraysubs_normalize_retry_intervals($settings['interval_hours'] ?? [24, 24, 24]);
+arraysubs/src/functions/gateway-helpers.php:258 | backend logic (not UI) | 'stop_on_hard_decline' => ! isset($settings['stop_on_hard_decline'])
+arraysubs/src/functions/gateway-helpers.php:259 | backend logic (not UI) | || ! empty($settings['stop_on_hard_decline']),
+arraysubs/src/functions/gateway-helpers.php:272 | backend logic (not UI) | $config = apply_filters('arraysubs_payment_retry_config', $defaults, $subscription_id);
+arraysubs/src/functions/gateway-helpers.php:303 | backend logic (not UI) | 'stop_on_hard_decline' => ! empty($config['stop_on_hard_decline']),
+arraysubs/src/functions/gateway-helpers.php:308 | comment (not UI) | * Normalize a retry ladder into a list of second counts.
+arraysubs/src/functions/gateway-helpers.php:335 | comment (not UI) | * Clamp an already-in-seconds retry ladder.
+arraysubs/src/functions/gateway-helpers.php:380 | comment (not UI) | * Filter which failure categories count as hard declines.
+arraysubs/src/functions/gateway-helpers.php:399 | backend logic (not UI) | function arraysubs_get_payment_retry_attempts(int $subscription_id): int
+arraysubs/src/functions/gateway-helpers.php:401 | backend logic (not UI) | return (int) get_post_meta($subscription_id, '_payment_retry_attempts', true);
+arraysubs/src/functions/gateway-helpers.php:415 | backend logic (not UI) | function arraysubs_reset_payment_retry_attempts(int $subscription_id): void
+arraysubs/src/functions/gateway-helpers.php:417 | backend logic (not UI) | delete_post_meta($subscription_id, '_payment_retry_attempts');
+arraysubs/src/functions/gateway-helpers.php:418 | backend logic (not UI) | delete_post_meta($subscription_id, '_payment_retry_last_attempt_at');
+arraysubs/src/functions/gateway-helpers.php:419 | backend logic (not UI) | delete_post_meta($subscription_id, '_payment_retry_next_attempt_at');
+arraysubs/src/functions/gateway-helpers.php:496 | comment (not UI) | * is not worth automatic retries, while `processing_error` usually is.
+arraysubs/src/functions/gateway-helpers.php:541 | comment (not UI) | // the retry ladder running against a charge that can never be sent and
+arraysubs/src/functions/cancellation-helpers.php:495 | backend logic (not UI) | if (function_exists('arraysubs_reset_payment_retry_attempts')) {
+arraysubs/src/functions/cancellation-helpers.php:496 | backend logic (not UI) | arraysubs_reset_payment_retry_attempts($subscription_id);
+arraysubs/src/functions/cancellation-helpers.php:501 | backend logic (not UI) | delete_post_meta($subscription_id, '_payment_retry_attempts');
+arraysubs/src/functions/cancellation-helpers.php:502 | backend logic (not UI) | delete_post_meta($subscription_id, '_payment_retry_last_attempt_at');
+arraysubs/src/functions/cancellation-helpers.php:503 | backend logic (not UI) | delete_post_meta($subscription_id, '_payment_retry_next_attempt_at');
+arraysubs/src/Features/Subscriptions/Services/OrderIntegration.php:1680 | backend logic (not UI) | if (function_exists('arraysubs_reset_payment_retry_attempts')) {
+arraysubs/src/Features/Subscriptions/Services/OrderIntegration.php:1681 | backend logic (not UI) | arraysubs_reset_payment_retry_attempts($subscription_id);
+arraysubs/src/Features/EasySetup/REST/SetupController.php:92 | INDIRECT UI PATH: maps payment_retry into the 'subscription_settings' section of 1-Minute Setup > Export/Import Settings (JSON file round trip, no form control) | 'payment_retry',
+arraysubs/src/Features/SubscriptionAdmin/REST/SubscriptionController.php:598 | backend logic (not UI) | '_payment_retry_attempts' => (int) get_post_meta($subscription_id, '_payment_retry_attempts', true),
+arraysubs/src/Features/SubscriptionAdmin/REST/SubscriptionController.php:599 | backend logic (not UI) | '_payment_retry_next_attempt_at' => get_post_meta($subscription_id, '_payment_retry_next_attempt_at', true) ?: null,
+arraysubs/src/Features/Integrations/Services/LifecycleDispatcher.php:217 | comment (not UI) | * hard decline. Each attempt gets the next sequence number instead, so its
+arraysubs/src/Features/Integrations/Services/Traits/LifecycleDetailsTrait.php:18 | backend logic (not UI) | add_action('arraysubs_payment_retry_scheduled', [$this, 'onRetryScheduled'], 30, 4);
+arraysubs/src/Features/Integrations/Services/Traits/LifecycleDetailsTrait.php:19 | backend logic (not UI) | add_action('arraysubs_payment_retry_exhausted', [$this, 'onRetryExhausted'], 30, 2);
+arraysubs/src/Features/PlanSwitching/Services/AutoDowngradeHandler.php:823 | backend logic (not UI) | if (function_exists('arraysubs_reset_payment_retry_attempts')) {
+arraysubs/src/Features/PlanSwitching/Services/AutoDowngradeHandler.php:824 | backend logic (not UI) | arraysubs_reset_payment_retry_attempts($subscription_id);
+arraysubs/src/Features/MainAdmin/REST/SettingsController.php:293 | REST WRITE PATH: POST /arraysubs/v1/settings/save sanitizes payment_retry (no admin page sends it) | if (isset($settings['payment_retry']) && is_array($settings['payment_retry'])) {
+arraysubs/src/Features/MainAdmin/REST/SettingsController.php:294 | backend logic (not UI) | $retry_settings = $settings['payment_retry'];
+arraysubs/src/Features/MainAdmin/REST/SettingsController.php:295 | backend logic (not UI) | $intervals = array_key_exists('interval_hours', $retry_settings)
+arraysubs/src/Features/MainAdmin/REST/SettingsController.php:296 | backend logic (not UI) | ? $this->sanitizeRetryIntervals($retry_settings['interval_hours'])
+arraysubs/src/Features/MainAdmin/REST/SettingsController.php:299 | backend logic (not UI) | $sanitized['payment_retry'] = [
+arraysubs/src/Features/MainAdmin/REST/SettingsController.php:301 | backend logic (not UI) | 'interval_hours' => $intervals,
+arraysubs/src/Features/MainAdmin/REST/SettingsController.php:302 | backend logic (not UI) | 'stop_on_hard_decline' => (bool) ($retry_settings['stop_on_hard_decline'] ?? true),
+arraysubs/src/Features/MainAdmin/REST/SettingsController.php:743 | comment (not UI) | * Sanitize the retry ladder stored in hours.
+arraysubs/src/Features/MainAdmin/REST/SettingsController.php:745 | comment (not UI) | * @param mixed $intervals Retry intervals.
+arraysubs/src/Features/AutomaticPayments/Gateways/PayPal/PayPalGateway.php:162 | backend logic (not UI) | add_filter('arraysubs_payment_retry_config', [$this, 'publishRetryConfigForSubscription'], 10, 2);
+arraysubs/src/Features/AutomaticPayments/Gateways/Paddle/PaddleGateway.php:450 | backend logic (not UI) | add_filter('arraysubs_payment_retry_config', [$this, 'publishRetryConfigForSubscription'], 10, 2);
+arraysubs/src/Features/AutomaticPayments/Gateways/Paddle/Traits/PaddleWebhooksTrait.php:1233 | backend logic (not UI) | if (function_exists('arraysubs_reset_payment_retry_attempts')) {
+arraysubs/src/Features/AutomaticPayments/Gateways/Paddle/Traits/PaddleWebhooksTrait.php:1234 | backend logic (not UI) | arraysubs_reset_payment_retry_attempts($subscription_id);
+arraysubs/src/Features/AutomaticPayments/Gateways/Mollie/MollieDelegate.php:143 | backend logic (not UI) | add_filter('arraysubs_payment_retry_config', [$this, 'publishRetryConfigForSubscription'], 10, 2);
+arraysubs/src/Features/AutomaticPayments/Gateways/Mollie/MollieDelegate.php:1150 | comment (not UI) | * @return array{enabled: bool, max_attempts: int, interval_seconds: int, intervals: array<int, int>, stop_on_hard_decline: bool}
+arraysubs/src/Features/AutomaticPayments/Gateways/Mollie/MollieDelegate.php:1154 | backend logic (not UI) | $settings = Config::get('settings.payment_retry', []);
+arraysubs/src/Features/AutomaticPayments/Gateways/Mollie/MollieDelegate.php:1158 | backend logic (not UI) | ? arraysubs_normalize_retry_intervals($settings['interval_hours'] ?? [24, 24, 24])
+arraysubs/src/Features/AutomaticPayments/Gateways/Mollie/MollieDelegate.php:1166 | backend logic (not UI) | 'stop_on_hard_decline' => ! isset($settings['stop_on_hard_decline'])
+arraysubs/src/Features/AutomaticPayments/Gateways/Mollie/MollieDelegate.php:1167 | backend logic (not UI) | || ! empty($settings['stop_on_hard_decline']),
+arraysubs/src/Features/AutomaticPayments/Gateways/Mollie/MollieDelegate.php:1879 | comment (not UI) | // returned while charging: classification, the retry ladder, and the
+arraysubs/src/Features/AutomaticPayments/Gateways/Mollie/MollieDelegate.php:1936 | backend logic (not UI) | if (function_exists('arraysubs_reset_payment_retry_attempts')) {
+arraysubs/src/Features/AutomaticPayments/Gateways/Mollie/MollieDelegate.php:1937 | backend logic (not UI) | arraysubs_reset_payment_retry_attempts($subscription_id);
+arraysubs/src/Features/AutomaticPayments/Gateways/Stripe/StripeDelegate.php:174 | backend logic (not UI) | add_filter('arraysubs_payment_retry_config', [$this, 'publishRetryConfigForSubscription'], 10, 2);
+arraysubs/src/Features/AutomaticPayments/Gateways/Stripe/Traits/StripeWebhookEventsTrait.php:508 | backend logic (not UI) | if (function_exists('arraysubs_reset_payment_retry_attempts')) {
+arraysubs/src/Features/AutomaticPayments/Gateways/Stripe/Traits/StripeWebhookEventsTrait.php:509 | backend logic (not UI) | arraysubs_reset_payment_retry_attempts($subscription_id);
+arraysubs/src/Features/AutomaticPayments/Gateways/Stripe/Traits/StripeRenewalPaymentTrait.php:481 | comment (not UI) | * @return array{enabled: bool, max_attempts: int, interval_seconds: int, intervals: array<int, int>, stop_on_hard_decline: bool}
+arraysubs/src/Features/AutomaticPayments/Gateways/Stripe/Traits/StripeRenewalPaymentTrait.php:485 | backend logic (not UI) | $settings = Config::get('settings.payment_retry', []);
+arraysubs/src/Features/AutomaticPayments/Gateways/Stripe/Traits/StripeRenewalPaymentTrait.php:489 | backend logic (not UI) | ? arraysubs_normalize_retry_intervals($settings['interval_hours'] ?? [24, 24, 24])
+arraysubs/src/Features/AutomaticPayments/Gateways/Stripe/Traits/StripeRenewalPaymentTrait.php:497 | backend logic (not UI) | 'stop_on_hard_decline' => ! isset($settings['stop_on_hard_decline'])
+arraysubs/src/Features/AutomaticPayments/Gateways/Stripe/Traits/StripeRenewalPaymentTrait.php:498 | backend logic (not UI) | || ! empty($settings['stop_on_hard_decline']),
+arraysubs/src/Features/AutomaticPayments/Services/MollieMandateRebinder.php:395 | backend logic (not UI) | if (function_exists('arraysubs_reset_payment_retry_attempts')) {
+arraysubs/src/Features/AutomaticPayments/Services/MollieMandateRebinder.php:396 | backend logic (not UI) | arraysubs_reset_payment_retry_attempts($subscription_id);
+arraysubs/src/Features/AutomaticPayments/Services/MollieFailureClassifier.php:8 | comment (not UI) | * The retry ladder relies on that category to tell a failure that can resolve
+arraysubs/src/Features/AutomaticPayments/Services/MollieFailureClassifier.php:11 | comment (not UI) | * Mollie failure as a plain card decline made all of them hard declines, so no
+arraysubs/src/Features/AutomaticPayments/Services/MollieFailureClassifier.php:71 | comment (not UI) | * unknown reason) is a generic decline, which the retry ladder retries.
+arraysubs/src/Features/AutomaticPayments/Services/StripeWebhookAutoHealer.php:359 | UNRELATED: webhook auto-heal notice ('Automatic retries have stopped' refers to webhook repair attempts) | __('ArraySubs could not repair the Stripe secondary webhook after %d attempts. Automatic retries have stopped to prevent repeated Stripe API calls. Stripe subscription events may be missed until the w
+arraysubs/src/Features/AutomaticPayments/Abstracts/AbstractArraySubsGateway.php:679 | comment (not UI) | * gateways register this on `arraysubs_payment_retry_config`.
+arraysubs/src/Features/RecurringBilling/Services/RenewalProcessor.php:410 | backend logic (not UI) | $retry_attempts = arraysubs_get_payment_retry_attempts($subscription_id);
+arraysubs/src/Features/RecurringBilling/Services/RenewalProcessor.php:465 | backend logic (not UI) | arraysubs_reset_payment_retry_attempts($subscription_id);
+arraysubs/src/Features/RecurringBilling/Services/RenewalProcessor.php:472 | backend logic (not UI) | $attempt = arraysubs_get_payment_retry_attempts($subscription_id);
+arraysubs/src/Features/RecurringBilling/Services/RenewalProcessor.php:479 | backend logic (not UI) | arraysubs_reset_payment_retry_attempts($subscription_id);
+arraysubs/src/Features/RecurringBilling/Services/RenewalProcessor.php:570 | backend logic (not UI) | $attempts = arraysubs_get_payment_retry_attempts($subscription_id);
+arraysubs/src/Features/RecurringBilling/Services/RenewalProcessor.php:572 | backend logic (not UI) | update_post_meta($subscription_id, '_payment_retry_attempts', 1);
+arraysubs/src/Features/RecurringBilling/Services/RenewalProcessor.php:627 | comment (not UI) | * processing gets: classification, notes, the retry ladder, and the failure
+arraysubs/src/Features/RecurringBilling/Services/RenewalProcessor.php:727 | backend logic (not UI) | arraysubs_reset_payment_retry_attempts($subscription_id);
+arraysubs/src/Features/RecurringBilling/Services/RenewalProcessor.php:846 | backend logic (not UI) | $config   = arraysubs_get_payment_retry_config($subscription_id);
+arraysubs/src/Features/RecurringBilling/Services/RenewalProcessor.php:847 | backend logic (not UI) | $attempts = arraysubs_get_payment_retry_attempts($subscription_id);
+arraysubs/src/Features/RecurringBilling/Services/RenewalProcessor.php:852 | UI TEXT (not a control): private subscription note shown in admin Subscription Notes; says 'Automatic retries are disabled in the gateway settings' although no gateway setting exists | __('Automatic retries are disabled in the gateway settings. The next attempt requires a manual retry.', 'arraysubs'),
+arraysubs/src/Features/RecurringBilling/Services/RenewalProcessor.php:866 | UI TEXT (not a control): private note 'Reached the configured retry limit (%d)...' | __('Reached the configured retry limit (%d). No further automatic retries will be scheduled. The subscription will continue through the standard grace period; an admin or customer can also trigger a m
+arraysubs/src/Features/RecurringBilling/Services/RenewalProcessor.php:874 | backend logic (not UI) | do_action('arraysubs_payment_retry_exhausted', arraysubs_get_subscription($subscription_id), $attempts);
+arraysubs/src/Features/RecurringBilling/Services/RenewalProcessor.php:884 | backend logic (not UI) | ! empty($config['stop_on_hard_decline'])
+arraysubs/src/Features/RecurringBilling/Services/RenewalProcessor.php:925 | backend logic (not UI) | update_post_meta($subscription_id, '_payment_retry_attempts', $next_attempt);
+arraysubs/src/Features/RecurringBilling/Services/RenewalProcessor.php:926 | backend logic (not UI) | update_post_meta($subscription_id, '_payment_retry_last_attempt_at', current_time('mysql', true));
+arraysubs/src/Features/RecurringBilling/Services/RenewalProcessor.php:927 | backend logic (not UI) | update_post_meta($subscription_id, '_payment_retry_next_attempt_at', gmdate('Y-m-d H:i:s', $next_attempt_at));
+arraysubs/src/Features/RecurringBilling/Services/RenewalProcessor.php:929 | backend logic (not UI) | do_action('arraysubs_payment_retry_scheduled', arraysubs_get_subscription($subscription_id), $next_attempt, $next_attempt_at, (int) $scheduled_action);
+arraysubs/src/Features/RecurringBilling/Services/RenewalRespreader.php:201 | backend logic (not UI) | $retry_at_raw = (string) get_post_meta($subscription_id, '_payment_retry_next_attempt_at', true);
+arraysubs/src/Features/RecurringBilling/Services/GracePolicy.php:100 | backend logic (not UI) | 'retry_attempts' => (int) get_post_meta($id, '_payment_retry_attempts', true),
+arraysubs/src/Features/RecurringBilling/Services/GracePolicy.php:101 | backend logic (not UI) | 'next_retry_at' => self::timestamp(get_post_meta($id, '_payment_retry_next_attempt_at', true)),
+arraysubspro/src/Features/Audits/REST/RenewalFailureController.php:342 | backend logic (not UI) | 'last_attempted_at'     => (string) get_post_meta($subscription_id, '_payment_retry_last_attempt_at', true),
+arraysubspro/src/Features/Audits/REST/RenewalFailureController.php:343 | backend logic (not UI) | 'last_attempted_timestamp' => $this->timestampFromMeta(get_post_meta($subscription_id, '_payment_retry_last_attempt_at', true)),
+arraysubspro/src/Features/Audits/REST/RenewalFailureController.php:344 | backend logic (not UI) | 'next_retry_at'         => (string) get_post_meta($subscription_id, '_payment_retry_next_attempt_at', true),
+arraysubspro/src/Features/Audits/REST/RenewalFailureController.php:345 | backend logic (not UI) | 'next_retry_timestamp'  => $this->timestampFromMeta(get_post_meta($subscription_id, '_payment_retry_next_attempt_at', true)),
+arraysubspro/src/Features/Audits/REST/RenewalFailureController.php:346 | backend logic (not UI) | 'retry_attempts'        => (int) get_post_meta($subscription_id, '_payment_retry_attempts', true),
+arraysubspro/src/Features/AiInsights/Services/ChurnDataService.php:378 | backend logic (not UI) | MAX(CASE WHEN m.meta_key = '_payment_retry_attempts' THEN m.meta_value END) AS retry_attempts,

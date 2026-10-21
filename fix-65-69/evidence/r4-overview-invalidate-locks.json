@@ -1,0 +1,113 @@
+{
+    "started_utc": "2026-10-20T13:31:34+00:00",
+    "fixture_before_hash": "cd9b928b9ff6c3baf1a70170c205b77d",
+    "overview_rows_before": "40cd750bba9870f18aada2478b24840a",
+    "options_total": 1307,
+    "action_102189": "pending",
+    "shipped_invalidateCache": {
+        "others_busy_at_start": [],
+        "delete_ms": 5.55,
+        "delete_error": "",
+        "delete_rows_affected": 0,
+        "my_trx": {
+            "trx_id": "70903345",
+            "trx_rows_locked": "1333",
+            "trx_lock_structs": "27",
+            "trx_rows_modified": "1"
+        },
+        "my_locks_on_options": [
+            {
+                "idx": null,
+                "type": "TABLE",
+                "mode": "IX",
+                "n": "1",
+                "supremum": null
+            },
+            {
+                "idx": "PRIMARY",
+                "type": "RECORD",
+                "mode": "X",
+                "n": "1331",
+                "supremum": "24"
+            },
+            {
+                "idx": "PRIMARY",
+                "type": "RECORD",
+                "mode": "X,GAP",
+                "n": "1",
+                "supremum": "0"
+            },
+            {
+                "idx": "PRIMARY",
+                "type": "RECORD",
+                "mode": "X,REC_NOT_GAP",
+                "n": "1",
+                "supremum": "0"
+            }
+        ],
+        "other_conn_lock_existing_row": {
+            "ms": 4.2,
+            "error": "Statement aborted because lock(s) could not be acquired immediately and NOWAIT is set."
+        },
+        "other_conn_insert_new_option": {
+            "ms": 1001.2,
+            "result": false,
+            "error": "Lock wait timeout exceeded; try restarting transaction"
+        },
+        "case_end": "rolled-back-clean, fixture identical"
+    },
+    "escaped_fix": {
+        "others_busy_at_start": [],
+        "delete_ms": 0.58,
+        "delete_error": "",
+        "delete_rows_affected": 0,
+        "my_trx": {
+            "trx_id": "70903348",
+            "trx_rows_locked": "4",
+            "trx_lock_structs": "3",
+            "trx_rows_modified": "1"
+        },
+        "my_locks_on_options": [
+            {
+                "idx": null,
+                "type": "TABLE",
+                "mode": "IX",
+                "n": "1",
+                "supremum": null
+            },
+            {
+                "idx": "option_name",
+                "type": "RECORD",
+                "mode": "X",
+                "n": "2",
+                "supremum": "0"
+            },
+            {
+                "idx": "PRIMARY",
+                "type": "RECORD",
+                "mode": "X,REC_NOT_GAP",
+                "n": "2",
+                "supremum": "0"
+            }
+        ],
+        "other_conn_lock_existing_row": {
+            "ms": 1.1,
+            "error": "none (lock granted)"
+        },
+        "other_conn_insert_new_option": {
+            "ms": 0.9,
+            "result": 1,
+            "error": "none (insert went through)"
+        },
+        "case_end": "rolled-back-clean, fixture identical"
+    },
+    "fixture_after_hash": "cd9b928b9ff6c3baf1a70170c205b77d",
+    "fixture_diff": [],
+    "overview_rows_after": "40cd750bba9870f18aada2478b24840a",
+    "leftover_probe_rows": 0,
+    "action_102189_after": "pending",
+    "lost_cases": 0,
+    "http_log": [],
+    "mail_blocked": 0,
+    "finished_utc": "2026-10-20T13:31:38+00:00"
+}

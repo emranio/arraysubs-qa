@@ -1,0 +1,23 @@
+{"code":"card_declined","decline_code":"generic_decline","advice_code":"try_again_later"} => generic_decline              generic_decline        soft
+{"code":"card_declined","decline_code":"insufficient_funds"}                => insufficient_funds           insufficient_funds     soft
+{"code":"card_declined","decline_code":"lost_card","advice_code":"do_not_try_again"} => lost_card                    card_declined          HARD
+{"code":"card_declined","decline_code":"generic_decline","advice_code":"do_not_try_again"} => do_not_try_again             card_declined          HARD
+{"code":"card_declined","decline_code":"do_not_honor"}                      => do_not_honor                 generic_decline        soft
+{"code":"card_declined","decline_code":"transaction_not_allowed","advice_code":"try_again_later"} => generic_decline              generic_decline        soft
+{"code":"card_declined"}                                                    => card_declined                card_declined          HARD
+{"code":"expired_card","decline_code":"expired_card"}                       => expired_card                 expired_card           HARD
+{"code":"incorrect_cvc","decline_code":"incorrect_cvc"}                     => incorrect_cvc                incorrect_cvc          HARD
+{"code":"processing_error"}                                                 => processing_error             processing_error       soft
+{"code":"card_declined","decline_code":"card_velocity_exceeded"}            => card_velocity_exceeded       generic_decline        soft
+{"code":"card_declined","decline_code":"stolen_card"}                       => stolen_card                  card_declined          HARD
+{"code":"card_declined","advice_code":"confirm_card_data"}                  => confirm_card_data            invalid_card           HARD
+[]                                                                          => stripe_api_error             unknown                soft
+renewal_payment_method_binding_invalid                                      =>                              missing_payment_method HARD
+renewal_payment_method_verification_failed                                  =>                              processing_error       soft
+missing_credentials                                                         =>                              missing_payment_method HARD
+unexpected_status                                                           =>                              unknown                soft
+--- with gateway message (as RenewalProcessor classifies)
+{"code":"card_declined","decline_code":"some_new_reason"}                   => generic_decline        generic_decline    soft
+{"code":"card_declined","decline_code":"some_new_reason","advice_code":"do_not_try_again"} => do_not_try_again       card_declined      HARD
+{"code":"card_declined","decline_code":"card_velocity_exceeded"}            => card_velocity_exceeded generic_decline    soft
+{"code":"card_declined","decline_code":"generic_decline"}                   => generic_decline        generic_decline    soft

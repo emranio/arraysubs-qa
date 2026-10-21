@@ -1,0 +1,15 @@
+post_date_gmt	post_content
+2026-10-19 21:49:20	Payment successful - <a href="https://mirror-help.arrayhash.com/wp-admin/post.php?post=69406&amp;action=edit">Order #69406</a> (<span class="woocommerce-Price-amount amount"><span 
+2026-10-19 21:49:20	Email sent: [ArraySubs] Renewal Payment Successful
+2026-10-19 21:49:17	[Gateway: stripe] Stripe payment confirmed via official webhook for order #69406.
+2026-10-19 21:48:59	[Process Renewal] <strong style="color:#991b1b">&#10007; Failed</strong><br>Your card was declined.
+2026-10-19 21:47:39	[Process Renewal] <strong style="color:#991b1b">&#10007; Failed</strong><br>Your card was declined.
+2026-10-19 21:47:39	Email sent: [ArraySubs] Renewal Payment Failed
+2026-10-19 21:47:39	Payment failed for <a href="https://mirror-help.arrayhash.com/wp-admin/post.php?post=69406&amp;action=edit">Order #69406</a>. Gateway: Stripe. Reason: Your card was declined.
+2026-10-19 21:47:39	Scheduled retry 1 of 3 at 21 October, 2026 3:47 AM. Plugin verifies with the gateway before re-charging to avoid double charges.
+2026-10-19 21:47:39	Renewal payment failed: the card was declined. Gateway message: "Your card was declined.".
+2026-10-19 21:47:38	[Gateway: stripe] Payment failed — generic_decline: Your card was declined.
+2026-10-19 21:47:36	[Gateway: stripe] Creating Stripe off-session renewal PaymentIntent for order #69406.
+2026-10-19 21:47:04	[Generate Renewal Invoice] <strong style="color:#1e4620">&#10003; Success</strong><br>Ran scheduled action for subscription #69202.
+2026-10-19 21:47:04	Renewal invoice <a href="https://mirror-help.arrayhash.com/wp-admin/post.php?post=69406&amp;action=edit">#69406</a> generated for payment due on 20 October, 2026 3:47 AM.
+2026-10-19 21:45:46	Renewal date changed through the developer API.

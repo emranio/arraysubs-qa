@@ -1,0 +1,16 @@
+{
+    "snapshot": "/home/server-manager/www/arrayhash/mirror-help.arrayhash.com/public/wp-content/plugins/qa/stripe-dev-support-2026-10-18/snapshots/settings-before-dv60.json",
+    "apply": true,
+    "results": {
+        "arraysubs_settings": "restored (hash verified)"
+    },
+    "active_plugins_exact_array_matches_snapshot": true,
+    "active_plugins_set_matches_snapshot": true,
+    "active_plugins_now": [
+        "arraysubs/arraysubs.php",
+        "arraysubspro/arraysubspro.php",
+        "woocommerce-gateway-stripe/woocommerce-gateway-stripe.php",
+        "woocommerce/woocommerce.php",
+        "wp-mail-smtp/wp_mail_smtp.php"
+    ]
+}

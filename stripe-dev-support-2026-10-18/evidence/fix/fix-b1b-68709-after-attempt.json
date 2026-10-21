@@ -1,0 +1,55 @@
+{
+    "subscription": 68709,
+    "status": "arraysubs-active",
+    "meta": {
+        "_gateway_customer_id": "cus_VTAfpPVaUhxMOj",
+        "_gateway_payment_method_id": "pm_1USMUlJG5OzSNVs2WkzBJePc",
+        "_payment_method_brand": "mastercard",
+        "_payment_method_last4": "4444",
+        "_gateway_status": "active",
+        "_last_payment_failure": "",
+        "_last_payment_failure_category": "",
+        "_payment_retry_attempts": "",
+        "_payment_retry_next_attempt_at": "",
+        "_pending_renewal_order_id": "",
+        "_next_payment_date": "2026-10-20 19:44:09",
+        "_arraysubs_payment_action_intent_id": "",
+        "_arraysubs_stripe_portal_requested_at": ""
+    },
+    "derived_next_retry_at": null,
+    "bound_pm": {
+        "id": "pm_1USMUlJG5OzSNVs2WkzBJePc",
+        "customer": "cus_VTAfpPVaUhxMOj",
+        "type": "card",
+        "last4": "4444"
+    },
+    "wc_tokens": [
+        {
+            "id": 72,
+            "pm": "pm_1USEKOJG5OzSNVs2NFfols6o",
+            "last4": "3184",
+            "default": true
+        }
+    ],
+    "orders": {
+        "69304": {
+            "status": "completed",
+            "paid": true,
+            "intent": "pi_3USMWUJG5OzSNVs20ud2nnup",
+            "source": "pm_1USMUlJG5OzSNVs2WkzBJePc",
+            "action_intent": "",
+            "transaction": "ch_3USMWUJG5OzSNVs20iFYXgV9",
+            "billing_email": "sqa-dv58-block@example.com"
+        }
+    },
+    "next_actions": {
+        "arraysubs_process_renewal": {
+            "timestamp": 1792537851,
+            "datetime": "2026-10-20 23:10:51"
+        },
+        "arraysubs_generate_renewal_invoice": {
+            "timestamp": 1792516251,
+            "datetime": "2026-10-20 17:10:51"
+        }
+    }
+}

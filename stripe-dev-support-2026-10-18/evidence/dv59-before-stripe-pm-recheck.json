@@ -1,0 +1,51 @@
+{
+    "checked_at_utc": "2026-10-19T11:48:24+00:00",
+    "pm": {
+        "pm_1USEmEJG5OzSNVs2C0j7Paip": {
+            "customer": null,
+            "last4": "4242",
+            "created": "2026-10-19T11:30:50+00:00",
+            "allow_redisplay": "unspecified",
+            "error": null
+        }
+    },
+    "charges": [
+        {
+            "id": "ch_3USEkHJG5OzSNVs21BIoyYvX",
+            "created": "2026-10-19T11:30:54+00:00",
+            "amount": 731,
+            "status": "succeeded",
+            "paid": true,
+            "captured": true,
+            "pi": "pi_3USEkHJG5OzSNVs213JINANu",
+            "pm": "pm_1USEmEJG5OzSNVs2C0j7Paip",
+            "last4": "4242",
+            "outcome": "authorized",
+            "failure_code": null,
+            "decline": null
+        },
+        {
+            "id": "ch_3USEkHJG5OzSNVs21W22n1Rj",
+            "created": "2026-10-19T11:28:49+00:00",
+            "amount": 731,
+            "status": "failed",
+            "paid": false,
+            "captured": false,
+            "pi": "pi_3USEkHJG5OzSNVs213JINANu",
+            "pm": "pm_1USEgsJG5OzSNVs2HaG6eb9j",
+            "last4": "0341",
+            "outcome": "issuer_declined",
+            "failure_code": "card_declined",
+            "decline": "generic_decline"
+        }
+    ],
+    "wc_tokens": [
+        {
+            "token_id": 78,
+            "gateway": "stripe",
+            "pm": "pm_1USEgsJG5OzSNVs2HaG6eb9j",
+            "last4": "0341",
+            "default": true
+        }
+    ]
+}

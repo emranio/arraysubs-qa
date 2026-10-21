@@ -1,0 +1,368 @@
+{
+    "taken_at_utc": "2026-10-19T12:52:45+00:00",
+    "subscription_id": 68770,
+    "developer_data": {
+        "identity": {
+            "id": 68770,
+            "customer_id": 589,
+            "guest": false,
+            "customer_email": "sqa-dv59-after@example.com",
+            "created_at": 1792409044,
+            "evaluated_at": 1792414365
+        },
+        "status": {
+            "stored": "arraysubs-active",
+            "has_view_entitlement": true,
+            "terminal": false
+        },
+        "plan": {
+            "product_id": 68435,
+            "variation_id": null,
+            "effective_product_id": 68435,
+            "name": "SQA Daily Trial Plan",
+            "quantity": 1
+        },
+        "pricing": {
+            "currency": "USD",
+            "initial_amount": "7.31",
+            "recurring_amount": "7.31",
+            "effective_recurring_amount": 7.31,
+            "signup_fee": "0",
+            "different_renewal_price_enabled": false,
+            "different_renewal_price": "0",
+            "different_renewal_price_after": 1
+        },
+        "schedule": {
+            "period": "day",
+            "interval": 1,
+            "length": 0,
+            "start_at": 1792409044,
+            "next_payment_at": 1792495702,
+            "last_payment_at": 1792414187,
+            "completed_payments": 1,
+            "provider_owns_billing_clock": false
+        },
+        "trial": {
+            "active": false,
+            "length": 0,
+            "period": "day",
+            "ends_at": null
+        },
+        "recovery": {
+            "policy": {
+                "before_on_hold": 3,
+                "before_on_hold_source": "site",
+                "before_cancel": 7,
+                "before_cancel_source": "site"
+            },
+            "due_at": 1792495702,
+            "on_hold_at": null,
+            "hold_eligible_at": 1792754902,
+            "cancel_eligible_at": 1793359702,
+            "evaluated_at": 1792414365,
+            "phase": "none",
+            "renewal_overdue": false,
+            "unpaid_renewal_order_id": null,
+            "awaiting_gateway_settlement": false,
+            "can_enter_on_hold": false,
+            "can_cancel_overdue": false,
+            "retry_attempts": 0,
+            "next_retry_at": null,
+            "last_failure_at": null,
+            "failure_category": null
+        },
+        "cancellation": {
+            "scheduled": false,
+            "scheduled_at": null,
+            "cancelled_at": null,
+            "reason": null,
+            "actor": null
+        },
+        "pending_switch": null,
+        "family": {
+            "parent_id": null,
+            "kind": null,
+            "billing_owner_id": 68770,
+            "orphaned": false,
+            "children": {
+                "items": [],
+                "page": 1,
+                "per_page": 20,
+                "has_more": false,
+                "next_page": null
+            }
+        },
+        "order_references": {
+            "initial_order_id": 68769,
+            "original_order_id": null,
+            "pending_renewal_order_id": null,
+            "pending_plan_switch_order_id": null
+        },
+        "orders": {
+            "items": [
+                68769,
+                68822
+            ],
+            "page": 1,
+            "per_page": 20,
+            "has_more": false,
+            "next_page": null
+        },
+        "billing": {
+            "first_name": "Sqa",
+            "last_name": "sqa-dv59-after",
+            "company": "",
+            "address_1": "100 QA Test Street",
+            "address_2": "",
+            "city": "San Francisco",
+            "state": "CA",
+            "postcode": "94105",
+            "country": "US",
+            "email": "sqa-dv59-after@example.com",
+            "phone": "4155550100"
+        },
+        "shipping": {
+            "first_name": "Sqa",
+            "last_name": "sqa-dv59-after",
+            "company": "",
+            "address_1": "100 QA Test Street",
+            "address_2": "",
+            "city": "San Francisco",
+            "state": "CA",
+            "postcode": "94105",
+            "country": "US"
+        },
+        "modules": []
+    },
+    "orders": [
+        {
+            "id": 68769,
+            "status": "completed",
+            "total": "0.00",
+            "currency": "USD",
+            "created": "2026-10-19T11:24:02+00:00",
+            "paid": "2026-10-19T11:24:08+00:00",
+            "payment_method": "stripe",
+            "transaction_id": "",
+            "stripe_intent_id": "",
+            "stripe_source_id": "pm_1USEfcJG5OzSNVs2TewrGbne",
+            "stripe_customer_id": "cus_VTB1PicZN8Kd3H",
+            "type": "Subs Trial"
+        },
+        {
+            "id": 68822,
+            "status": "completed",
+            "total": "7.31",
+            "currency": "USD",
+            "created": "2026-10-19T11:28:09+00:00",
+            "paid": "2026-10-19T12:49:46+00:00",
+            "payment_method": "stripe",
+            "transaction_id": "ch_3USG0ZJG5OzSNVs21H2c5wUt",
+            "stripe_intent_id": "pi_3USG0ZJG5OzSNVs21Rq8uGbe",
+            "stripe_source_id": "pm_1USG0TJG5OzSNVs2Y8ki6bwm",
+            "stripe_customer_id": "cus_VTB1PicZN8Kd3H",
+            "type": "Subs Renew"
+        }
+    ],
+    "actions": [
+        {
+            "action_id": "101113",
+            "hook": "arraysubs_generate_renewal_invoice",
+            "status": "canceled",
+            "scheduled_date_gmt": "2026-10-20 05:40:53",
+            "last_attempt_gmt": "0000-00-00 00:00:00",
+            "args": "[68770]"
+        },
+        {
+            "action_id": "101114",
+            "hook": "arraysubs_process_renewal",
+            "status": "canceled",
+            "scheduled_date_gmt": "2026-10-20 11:40:53",
+            "last_attempt_gmt": "0000-00-00 00:00:00",
+            "args": "[68770]"
+        },
+        {
+            "action_id": "101115",
+            "hook": "arraysubs_gateway_meta_retry",
+            "status": "complete",
+            "scheduled_date_gmt": "2026-10-19 11:25:10",
+            "last_attempt_gmt": "2026-10-19 11:26:06",
+            "args": "[68770,68769,\"evt_1USEfjJG5OzSNVs2oy1B7oim\",1]"
+        },
+        {
+            "action_id": "101116",
+            "hook": "arraysubs_generate_renewal_invoice",
+            "status": "canceled",
+            "scheduled_date_gmt": "2026-10-20 05:40:53",
+            "last_attempt_gmt": "0000-00-00 00:00:00",
+            "args": "[68770]"
+        },
+        {
+            "action_id": "101117",
+            "hook": "arraysubs_process_renewal",
+            "status": "canceled",
+            "scheduled_date_gmt": "2026-10-20 11:40:53",
+            "last_attempt_gmt": "0000-00-00 00:00:00",
+            "args": "[68770]"
+        },
+        {
+            "action_id": "101136",
+            "hook": "arraysubs_generate_renewal_invoice",
+            "status": "canceled",
+            "scheduled_date_gmt": "2026-10-20 05:40:53",
+            "last_attempt_gmt": "0000-00-00 00:00:00",
+            "args": "[68770]"
+        },
+        {
+            "action_id": "101137",
+            "hook": "arraysubs_process_renewal",
+            "status": "canceled",
+            "scheduled_date_gmt": "2026-10-20 11:40:53",
+            "last_attempt_gmt": "0000-00-00 00:00:00",
+            "args": "[68770]"
+        },
+        {
+            "action_id": "101138",
+            "hook": "arraysubs_generate_renewal_invoice",
+            "status": "canceled",
+            "scheduled_date_gmt": "2026-10-20 05:43:40",
+            "last_attempt_gmt": "0000-00-00 00:00:00",
+            "args": "[68770]"
+        },
+        {
+            "action_id": "101139",
+            "hook": "arraysubs_process_renewal",
+            "status": "canceled",
+            "scheduled_date_gmt": "2026-10-20 11:43:40",
+            "last_attempt_gmt": "0000-00-00 00:00:00",
+            "args": "[68770]"
+        },
+        {
+            "action_id": "101140",
+            "hook": "arraysubs_generate_renewal_invoice",
+            "status": "complete",
+            "scheduled_date_gmt": "2026-10-19 11:27:52",
+            "last_attempt_gmt": "2026-10-19 11:28:10",
+            "args": "[68770]"
+        },
+        {
+            "action_id": "101141",
+            "hook": "arraysubs_process_renewal",
+            "status": "complete",
+            "scheduled_date_gmt": "2026-10-19 11:45:11",
+            "last_attempt_gmt": "2026-10-19 11:28:59",
+            "args": "[68770]"
+        },
+        {
+            "action_id": "101166",
+            "hook": "arraysubs_send_stripe_renewal_verification",
+            "status": "complete",
+            "scheduled_date_gmt": "2026-10-19 11:37:09",
+            "last_attempt_gmt": "2026-10-19 11:38:05",
+            "args": "[68770,68822,\"pi_3USEkOJG5OzSNVs20jlEvHCg\",1]"
+        },
+        {
+            "action_id": "101229",
+            "hook": "arraysubs_gateway_meta_retry",
+            "status": "complete",
+            "scheduled_date_gmt": "2026-10-19 12:50:47",
+            "last_attempt_gmt": "2026-10-19 12:51:05",
+            "args": "[68770,68822,\"evt_3USG0ZJG5OzSNVs21ptSbemb\",1]"
+        },
+        {
+            "action_id": "101230",
+            "hook": "arraysubs_generate_renewal_invoice",
+            "status": "pending",
+            "scheduled_date_gmt": "2026-10-20 05:45:11",
+            "last_attempt_gmt": "0000-00-00 00:00:00",
+            "args": "[68770]"
+        },
+        {
+            "action_id": "101231",
+            "hook": "arraysubs_process_renewal",
+            "status": "pending",
+            "scheduled_date_gmt": "2026-10-20 11:45:11",
+            "last_attempt_gmt": "0000-00-00 00:00:00",
+            "args": "[68770]"
+        }
+    ],
+    "meta": {
+        "_billing_period": "day",
+        "_billing_interval": "1",
+        "_subscription_length": "0",
+        "_start_date": "2026-10-19 11:24:04",
+        "_next_payment_date": "2026-10-20 11:28:22",
+        "_customer_id": "589",
+        "_customer_email": "sqa-dv59-after@example.com",
+        "_payment_method": "stripe",
+        "_payment_method_title": "Stripe",
+        "_subscription_price": "7.31",
+        "_recurring_amount": "7.31",
+        "_signup_fee": "0",
+        "_currency": "USD",
+        "_trial_length": "0",
+        "_trial_period": "day",
+        "_product_id": "68435",
+        "_variation_id": "0",
+        "_quantity": "1",
+        "_parent_order_id": "68769",
+        "_order_ids": "[68769,68822]",
+        "_enable_different_renewal_price": "no",
+        "_different_renewal_price": "0",
+        "_different_renewal_price_after": "1",
+        "_completed_payments": "1",
+        "_trial_end_date": "2026-10-20 11:24:04",
+        "_cached_product_name": "SQA Daily Trial Plan",
+        "_cached_product_sku": "",
+        "_cached_product_data": "{\"id\":68435,\"parent_id\":68435,\"variation_id\":0,\"name\":\"SQA Daily Trial Plan\",\"sku\":\"\",\"type\":\"simple\",\"price\":\"7.31\",\"regular_price\":\"7.31\",\"sale_price\":\"\",\"virtual\":true,\"downloadable\":false,\"cached_at\":\"2026-10-19 11:24:04\"}",
+        "_billing_address": "{\"first_name\":\"Sqa\",\"last_name\":\"sqa-dv59-after\",\"company\":\"\",\"address_1\":\"100 QA Test Street\",\"address_2\":\"\",\"city\":\"San Francisco\",\"state\":\"CA\",\"postcode\":\"94105\",\"country\":\"US\",\"email\":\"sqa-dv59-after@example.com\",\"phone\":\"4155550100\"}",
+        "_shipping_address": "{\"first_name\":\"Sqa\",\"last_name\":\"sqa-dv59-after\",\"company\":\"\",\"address_1\":\"100 QA Test Street\",\"address_2\":\"\",\"city\":\"San Francisco\",\"state\":\"CA\",\"postcode\":\"94105\",\"country\":\"US\"}",
+        "_invoice_email": "sqa-dv59-after@example.com",
+        "_last_payment_date": "2026-10-19 12:49:47",
+        "_payment_gateway": "stripe",
+        "_gateway_status": "active",
+        "_gateway_customer_id": "cus_VTB1PicZN8Kd3H",
+        "_gateway_payment_method_id": "pm_1USG0TJG5OzSNVs2Y8ki6bwm",
+        "_payment_method_type": "link",
+        "_payment_method_brand": "visa",
+        "_payment_method_last4": "0341",
+        "_payment_method_expiry_month": "12",
+        "_payment_method_expiry_year": "2030",
+        "_payment_method_updated_at": "2026-10-19 11:26:05",
+        "_payment_method_source": "stripe",
+        "_arraysubs_lifecycle_attempt_seq": "1",
+        "_arraysubs_gateway_payment_failure_email_effects": {
+            "84d48dd119f8755171dbceef09e2e413faeab3cbf63a613eaf0f1c897ada876d": {
+                "status": "sent",
+                "effect": "woocommerce_admin_email",
+                "gateway": "stripe",
+                "order_id": 68822,
+                "provider_attempt": "pi_3USEkOJG5OzSNVs20jlEvHCg",
+                "sent_at": "2026-10-19 11:28:58"
+            },
+            "4ffa6f53b2d16d94c0eabe0aa132fee6e4aab9f7691578874a8453de710bab7a": {
+                "status": "sent",
+                "effect": "customer_email",
+                "gateway": "stripe",
+                "order_id": 68822,
+                "provider_attempt": "pi_3USEkOJG5OzSNVs20jlEvHCg",
+                "sent_at": "2026-10-19 11:28:59"
+            },
+            "ac31f3cbd30e8d0312186dc2ef543a9212c5932468e786accfd51808ce39928b": {
+                "status": "sent",
+                "effect": "admin_email",
+                "gateway": "stripe",
+                "order_id": 68822,
+                "provider_attempt": "pi_3USEkOJG5OzSNVs20jlEvHCg",
+                "sent_at": "2026-10-19 11:28:59"
+            }
+        },
+        "_arraysubs_payment_action_url": "https://mirror-help.arrayhash.com/checkout/order-pay/68822/?pay_for_order=true&key=<redacted>&wc-stripe-confirmation=1",
+        "_arraysubs_payment_action_intent_id": "pi_3USEkOJG5OzSNVs20jlEvHCg",
+        "_payment_method_wallet": "link",
+        "_last_gateway_transaction_id": "ch_3USG0ZJG5OzSNVs21H2c5wUt",
+        "_renewal_invoice_action_id": "101230",
+        "_renewal_action_id": "101231",
+        "_current_cycle_order_id": "68822"
+    }
+}

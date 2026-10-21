@@ -1,0 +1,46 @@
+code=card_declined        message="Your card was declined."              => category='card_declined'      is_hard=true
+code=generic_decline      message="Your card was declined."              => category='generic_decline'    is_hard=false
+code=insufficient_funds   message="Your card has insufficient funds."    => category='insufficient_funds' is_hard=false
+code=card_declined        message="Your card has insufficient funds."    => category='card_declined'      is_hard=true
+code=lost_card            message=""                                     => category='unknown'            is_hard=false
+code=expired_card         message=""                                     => category='expired_card'       is_hard=true
+[
+    {
+        "code": "card_declined",
+        "message": "Your card was declined.",
+        "category": "card_declined",
+        "is_hard": true
+    },
+    {
+        "code": "generic_decline",
+        "message": "Your card was declined.",
+        "category": "generic_decline",
+        "is_hard": false
+    },
+    {
+        "code": "insufficient_funds",
+        "message": "Your card has insufficient funds.",
+        "category": "insufficient_funds",
+        "is_hard": false
+    },
+    {
+        "code": "card_declined",
+        "message": "Your card has insufficient funds.",
+        "category": "card_declined",
+        "is_hard": true
+    },
+    {
+        "code": "lost_card",
+        "message": "",
+        "category": "unknown",
+        "is_hard": false
+    },
+    {
+        "code": "expired_card",
+        "message": "",
+        "category": "expired_card",
+        "is_hard": true
+    }
+]
+settings payment_retry read at 2026-10-19T10:49:10Z:
+{"enabled":true,"interval_hours":[24,24,24],"stop_on_hard_decline":true}

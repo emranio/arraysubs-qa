@@ -1,0 +1,111 @@
+{
+    "label": "after-verification",
+    "taken_at_utc": "2026-10-19T11:34:54+00:00",
+    "subscription_id": 68753,
+    "post_status": "arraysubs-active",
+    "user_id": 587,
+    "subscription_meta": {
+        "_customer_id": "587",
+        "_gateway_customer_id": "cus_VTAx7ozG2Cs2sm",
+        "_gateway_payment_method_id": "pm_1USEbAJG5OzSNVs2dqyED8fl",
+        "_payment_gateway": "stripe",
+        "_payment_method": "stripe",
+        "_payment_method_last4": "3184",
+        "_gateway_status": "active",
+        "_next_payment_date": "2026-10-20 11:30:11",
+        "_pending_renewal_order_id": "",
+        "_arraysubs_payment_action_intent_id": "",
+        "_last_payment_date": "2026-10-19 11:34:07",
+        "_completed_payments": "2",
+        "_renewal_action_id": "101164",
+        "_renewal_invoice_action_id": "101163",
+        "_waiting_cancellation": "",
+        "_arraysubs_payment_action_url_present": false
+    },
+    "wc_tokens_db": [
+        {
+            "token_id": "75",
+            "gateway_id": "stripe",
+            "token": "pm_1USEbAJG5OzSNVs2dqyED8fl",
+            "user_id": "587",
+            "type": "CC",
+            "is_default": "1"
+        }
+    ],
+    "stripe_payment_method": {
+        "id": "pm_1USEbAJG5OzSNVs2dqyED8fl",
+        "customer": "cus_VTAx7ozG2Cs2sm",
+        "type": "card",
+        "card_last4": "3184",
+        "card_brand": "visa",
+        "allow_redisplay": "unspecified",
+        "created_utc": "2026-10-19T11:19:24+00:00",
+        "error": null
+    },
+    "stripe_customer": {
+        "id": "cus_VTAx7ozG2Cs2sm",
+        "default_payment_method": "pm_1USEbAJG5OzSNVs2dqyED8fl",
+        "error": null
+    },
+    "stripe_customer_card_pms": [
+        {
+            "id": "pm_1USEbAJG5OzSNVs2dqyED8fl",
+            "last4": "3184",
+            "allow_redisplay": "unspecified",
+            "created_utc": "2026-10-19T11:19:24+00:00"
+        }
+    ],
+    "stripe_payment_intents": [
+        {
+            "id": "pi_3USEmJJG5OzSNVs21Xi6PjuW",
+            "created_utc": "2026-10-19T11:30:55+00:00",
+            "status": "succeeded",
+            "amount": 731,
+            "currency": "usd",
+            "payment_method": "pm_1USEbAJG5OzSNVs2dqyED8fl",
+            "setup_future_usage": null,
+            "off_session_confirmation": "68843",
+            "metadata": {
+                "order_id": "68843",
+                "renewal": "true",
+                "site_url": "https://mirror-help.arrayhash.com",
+                "subscription_id": "68753"
+            },
+            "latest_charge": "ch_3USEmJJG5OzSNVs21VvPajQU",
+            "last_payment_error_code": null,
+            "last_payment_error_decline_code": null,
+            "last_payment_error_message": null,
+            "next_action_type": null
+        },
+        {
+            "id": "pi_3USEbFJG5OzSNVs211R75z7z",
+            "created_utc": "2026-10-19T11:19:29+00:00",
+            "status": "succeeded",
+            "amount": 731,
+            "currency": "usd",
+            "payment_method": "pm_1USEbAJG5OzSNVs2dqyED8fl",
+            "setup_future_usage": "off_session",
+            "off_session_confirmation": "68752",
+            "metadata": {
+                "arraysubs_subscription_cart": "true",
+                "customer_email": "sqa-dv58-classic@example.com",
+                "customer_name": "Sqa sqa-dv58-classic",
+                "is_legacy_checkout_enabled": "no",
+                "is_oc_enabled": "yes",
+                "order_id": "68752",
+                "order_key": "<redacted>",
+                "payment_type": "single",
+                "pmc_enabled": "yes",
+                "save_payment_method": "true",
+                "signature": "<redacted>",
+                "site_url": "https://mirror-help.arrayhash.com",
+                "tax_amount": "0"
+            },
+            "latest_charge": "ch_3USEbFJG5OzSNVs217O2UvB0",
+            "last_payment_error_code": null,
+            "last_payment_error_decline_code": null,
+            "last_payment_error_message": null,
+            "next_action_type": null
+        }
+    ]
+}

@@ -1,0 +1,31 @@
+# dv56 gateway log excerpt (wc-logs/arraysubs-gateway-2026-10-19-78bb4e363cf06bd57b374ad524b53f11.log; line numbers kept), sub 68677 / cus_VTAa4eDbx66HA2
+# Portal Add clicked 2026-10-19T10:58:57Z (pm_1USEHNJG5OzSNVs2nPZUVDFH Mastercard 4444, default in portal); admin Resync 11:03:36Z + 11:04:25Z; renewal action 101074 run 11:07:49Z; WC Add payment method 11:09:53Z (pm_1USERyJG5OzSNVs2jd23cMGv, WC token 73); WC Make default 11:11:37Z
+# Other testers' lines between these ranges are omitted.
+196: 2026-10-19T10:56:31+00:00 INFO [Gateway: arraysubs_stripe] [Webhook] Webhook received
+197: 2026-10-19T10:56:31+00:00 INFO [Gateway: stripe] Payment method updated by Stripe: Visa ending in 4242
+198: 2026-10-19T10:56:31+00:00 INFO [Gateway: stripe] Stripe payment confirmed via official webhook for order #68676.
+199: 2026-10-19T10:56:31+00:00 INFO [Gateway: arraysubs_stripe] [Webhook] Webhook processed: payment_method.attached → payment_method_updated (subscription: 68677, order: 68676)
+200: 2026-10-19T10:56:31+00:00 INFO [Gateway: arraysubs_stripe] [Webhook] Webhook processed: payment_intent.succeeded → payment_succeeded (subscription: 68677, order: 68676)
+201: 2026-10-19T10:56:31+00:00 INFO [Gateway: arraysubs_stripe] [Webhook] Webhook received
+202: 2026-10-19T10:56:31+00:00 INFO [Gateway: arraysubs_stripe] [Webhook] Webhook processed: customer.updated → payment_method_updated (subscription: 0, order: 0)
+203: 2026-10-19T10:59:00+00:00 INFO [Gateway: arraysubs_stripe] [Webhook] Webhook received
+204: 2026-10-19T10:59:00+00:00 INFO [Gateway: arraysubs_stripe] [Webhook] Webhook received
+205: 2026-10-19T10:59:00+00:00 WARNING [Gateway: stripe] [Webhook] Refused to bind Stripe payment method pm_1USEHNJG5OzSNVs2nPZUVDFH to subscription #68677: renewal_payment_method_binding_changed
+206: 2026-10-19T10:59:01+00:00 WARNING [Gateway: stripe] [Webhook] Refused to bind Stripe payment method pm_1USEHNJG5OzSNVs2nPZUVDFH to subscription #68677: renewal_payment_method_binding_changed
+207: 2026-10-19T10:59:02+00:00 INFO [Gateway: arraysubs_stripe] [Webhook] Webhook received
+208: 2026-10-19T10:59:02+00:00 INFO [Gateway: arraysubs_stripe] [Webhook] Webhook processed: customer.updated → payment_method_updated (subscription: 0, order: 0)
+228: 2026-10-19T11:03:36+00:00 INFO [Gateway: stripe] Gateway sync completed: no changes required.
+229: 2026-10-19T11:04:25+00:00 INFO [Gateway: stripe] Gateway sync completed: no changes required.
+230: 2026-10-19T11:07:49+00:00 INFO [Gateway: stripe] Creating Stripe off-session renewal PaymentIntent for order #68726.
+231: 2026-10-19T11:07:52+00:00 INFO [Gateway: arraysubs_stripe] [Webhook] Webhook received
+232: 2026-10-19T11:07:52+00:00 INFO [Gateway: arraysubs_stripe] [Webhook] Duplicate webhook event skipped: evt_3USEPyJG5OzSNVs20Cj2fS1g
+233: 2026-10-19T11:07:52+00:00 INFO [Gateway: stripe] Stripe payment confirmed via official webhook for order #68726.
+234: 2026-10-19T11:07:53+00:00 INFO [Gateway: arraysubs_stripe] [Webhook] Webhook received
+235: 2026-10-19T11:07:53+00:00 INFO [Gateway: stripe] Stripe payment confirmed via official webhook for order #68726.
+236: 2026-10-19T11:07:53+00:00 INFO [Gateway: arraysubs_stripe] [Webhook] Webhook processed: payment_intent.succeeded → payment_succeeded (subscription: 68677, order: 68726)
+237: 2026-10-19T11:09:58+00:00 INFO [Gateway: arraysubs_stripe] [Webhook] Webhook received
+238: 2026-10-19T11:09:58+00:00 WARNING [Gateway: stripe] [Webhook] Refused to bind Stripe payment method pm_1USERyJG5OzSNVs2jd23cMGv to subscription #68677: renewal_payment_method_binding_changed
+239: 2026-10-19T11:09:59+00:00 INFO [Gateway: arraysubs_stripe] [Webhook] Webhook received
+240: 2026-10-19T11:09:59+00:00 WARNING [Gateway: stripe] [Webhook] Refused to bind Stripe payment method pm_1USERyJG5OzSNVs2jd23cMGv to subscription #68677: renewal_payment_method_binding_changed
+246: 2026-10-19T11:11:40+00:00 INFO [Gateway: arraysubs_stripe] [Webhook] Webhook received
+247: 2026-10-19T11:11:40+00:00 INFO [Gateway: arraysubs_stripe] [Webhook] Webhook processed: customer.updated → payment_method_updated (subscription: 0, order: 0)

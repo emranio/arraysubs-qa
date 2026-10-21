@@ -1,0 +1,35 @@
+dv2c "one-time PaymentMethod rebind" deep-verify-2 - timeline (all UTC, 2026-10-19). Core 4791832, Pro edaa401, WC Stripe 10.9.0 test mode.
+Fixture: subscription 68788 (customer 588 sqa-dv59-before, cus_VTB3WyfpHE0Hmp), carried over from dv59 (control renewal order 68819).
+Browser session: dv2c-cust (customer 588). No settings changed.
+
+Baseline (12:45:27-12:45:51)
+  sub 68788 active; _gateway_customer_id=cus_VTB3WyfpHE0Hmp; _gateway_payment_method_id=pm_1USEmEJG5OzSNVs2C0j7Paip (4242); _gateway_status=active
+  Stripe pm_1USEmEJG5OzSNVs2C0j7Paip: type=card, customer=null. PI pi_3USEkHJG5OzSNVs213JINANu setup_future_usage=null.
+  Customer's only attached PM / WC token: pm_1USEgsJG5OzSNVs2HaG6eb9j (0341, token 78, Stripe default PM).
+  dv59 order 68819 meta: _arraysubs_charge_attempt_gateway=stripe, _stripe_source_id=pm_1USEmEJG5OzSNVs2C0j7Paip (why the dv59 capture rebound).
+  Retry config: enabled, 3 attempts, 24h intervals, stop_on_hard_decline=true.
+  Customer UI: Renewals On "renewed automatically"; Card on File "Visa ending in 4242 Expires 12/2030".
+
+Step 2 - automatic renewal
+  12:48:10  setNextPaymentDate(12:49:40) accepted -> invoice 101225 (12:49:10), process_renewal 101226 (14:36:32, spread offset 6412 s); 101154/101155 canceled
+  12:50:04-09  101225 run by the queue runner -> renewal order 68965 (pending, payment_method=stripe, no _stripe_* / no charge-attempt meta)
+  12:50:41-49  101226 run via WP-CLI
+    12:50:44  note "[Gateway: stripe] Creating Stripe off-session renewal PaymentIntent for order #68965." (logged before verification)
+    12:50:45  "[Gateway: stripe] Payment failed - renewal_payment_method_binding_invalid: The stored Stripe payment method is not an exact reusable off-session match for this subscription. No charge was attempted."
+              order 68965 Pending -> Failed; still no _arraysubs_charge_attempt_* meta, no _stripe_* meta
+    12:50:46  _last_payment_failure_category=unknown; "Scheduled retry 1 of 3 at 20 October, 2026 6:50 PM" -> action 101234 process_renewal 2026-10-20 12:50:46; _payment_retry_attempts=1
+    12:50:46-48  mail: admin "Order #68965 has failed", customer + admin "Payment failed for subscription #68788" (customer Pay Now = plain order-pay link)
+  Stripe: no PaymentIntent for order 68965 (customer PI list + account-wide PI list since 12:45 + metadata search all empty for 68965).
+  12:52:04  sweep 101224 ran (after the failure); order 68965 got no action meta and no send_stripe_renewal_verification action (query requires _arraysubs_charge_attempt_gateway=stripe).
+
+Step 3 - customer pays 68965 via order-pay with a new card
+  12:52:58  My Account > subscription 68788 > Related Orders #68965 "Pay" -> ordinary order-pay page (Stripe + Paddle + bank + check + COD; saved Visa 0341 preselected + "Use a new payment method")
+            WC "Save payment information to my account" checkbox present but hidden (Link enabled), unchecked; Link "Save my information for faster checkout" left unchecked
+  12:54:26  "Use a new payment method" > Card, 4242 4242 4242 4242 12/30 123, Pay for order (single click)
+  12:54:26  new PM pm_1USG58JG5OzSNVs2lRuRO6Co created; 12:54:29 WC Stripe PI pi_3USG5BJG5OzSNVs20cFl4rQm (customer cus_VTB3WyfpHE0Hmp, setup_future_usage=null, metadata order_id=68965 only) -> ch_3USG5BJG5OzSNVs20ylyk3bg succeeded 731 USD cents
+  12:54:31  order 68965 paid -> completed ("Order completed / Thank you. Your order has been fulfilled.", 12:54:36); webhook payment_intent.succeeded processed; retry 101234 canceled; next cycle 101239 (invoice 2026-10-20 08:36:32) / 101240 (process 2026-10-20 14:36:32)
+  12:55:12  sub 68788 _gateway_payment_method_id STILL pm_1USEmEJG5OzSNVs2C0j7Paip (no rebind, no note); _last_gateway_transaction_id still ch_3USEkHJG5OzSNVs21BIoyYvX
+            order 68965: _stripe_source_id=pm_1USG58JG5OzSNVs2lRuRO6Co, _stripe_customer_id=cus_VTB3WyfpHE0Hmp, NO _arraysubs_charge_attempt_gateway
+  12:55:25  Stripe pm_1USG58JG5OzSNVs2lRuRO6Co customer=null; pm_1USEmEJG5OzSNVs2C0j7Paip customer=null; no new WC token (only token 78 / 0341)
+  12:57:38  delegate's own verifyAutomaticRenewalPaymentMethod (via recoveryVerifyRenewalBinding) for the stored pair -> renewal_payment_method_binding_invalid; classify -> unknown; hard decline -> false
+  Customer UI after payment: still "Renewals On", "Card on File: Visa ending in 4242" - i.e. next cycle (101240) will fail the same way.

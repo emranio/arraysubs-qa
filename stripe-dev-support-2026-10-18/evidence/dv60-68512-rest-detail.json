@@ -1,0 +1,291 @@
+{
+    "route": "/arraysubs/v1/subscriptions/68512/detail",
+    "status": 200,
+    "fetched_at_utc": "2026-10-19 11:45:21",
+    "retry_paths": {
+        "content.meta._payment_retry_attempts": 3,
+        "content.meta._payment_retry_next_attempt_at": "2026-10-20 09:44:20",
+        "content.actions.can_retry_payment": true
+    },
+    "payload": {
+        "code": 200,
+        "message": null,
+        "content": {
+            "id": 68512,
+            "title": "Subscription for SQA Daily Trial Plan - Sqa sqa-p2-ladder",
+            "status": "arraysubs-active",
+            "created_date": "2026-10-19 15:40:32",
+            "created_date_gmt": "2026-10-19 09:40:32",
+            "created_date_display": "19 October, 2026 3:40 PM",
+            "customer_id": 583,
+            "customer_email": "sqa-p2-ladder@example.com",
+            "invoice_email": "sqa-p2-ladder@example.com",
+            "product_id": 68435,
+            "variation_id": 0,
+            "quantity": 1,
+            "billing_period": "day",
+            "billing_interval": 1,
+            "billing_schedule_display": "Every 1 day",
+            "subscription_length": 0,
+            "subscription_price": 7.31,
+            "recurring_amount": 7.31,
+            "base_recurring_amount": 7.31,
+            "effective_recurring_amount": 7.31,
+            "active_retention_discount": null,
+            "signup_fee": 0,
+            "currency": "USD",
+            "enable_different_renewal_price": false,
+            "different_renewal_price": 0,
+            "different_renewal_price_after": 1,
+            "completed_payments": 0,
+            "total_paid": 0,
+            "start_date": "2026-10-19 09:40:32",
+            "start_date_display": "19 October, 2026 3:40 PM",
+            "next_payment_date": "2026-10-19 09:43:18",
+            "next_payment_date_display": "19 October, 2026 3:43 PM",
+            "last_payment_date": "2026-10-19 09:40:37",
+            "last_payment_date_display": "19 October, 2026 3:40 PM",
+            "end_date": "",
+            "end_date_display": "",
+            "trial_length": 0,
+            "trial_period": "day",
+            "trial_end_date": "2026-10-20 09:40:32",
+            "trial_end_date_display": "20 October, 2026 3:40 PM",
+            "payment_method": "stripe",
+            "payment_method_title": "Stripe",
+            "billing_address": {
+                "first_name": "Sqa",
+                "last_name": "sqa-p2-ladder",
+                "company": "",
+                "address_1": "100 QA Test Street",
+                "address_2": "",
+                "city": "San Francisco",
+                "state": "CA",
+                "postcode": "94105",
+                "country": "US",
+                "email": "sqa-p2-ladder@example.com",
+                "phone": "4155550100"
+            },
+            "shipping_address": {
+                "first_name": "Sqa",
+                "last_name": "sqa-p2-ladder",
+                "company": "",
+                "address_1": "100 QA Test Street",
+                "address_2": "",
+                "city": "San Francisco",
+                "state": "CA",
+                "postcode": "94105",
+                "country": "US"
+            },
+            "parent_order_id": 68511,
+            "order_ids": [
+                68511,
+                68550
+            ],
+            "meta": {
+                "_waiting_cancellation": false,
+                "_cancellation_scheduled_date": "",
+                "_cancellation_reason": "",
+                "_last_payment_failure": "2026-10-19 09:44:37",
+                "_payment_gateway": "stripe",
+                "_payment_retry_attempts": 3,
+                "_payment_retry_next_attempt_at": "2026-10-20 09:44:20",
+                "_pending_renewal_order_id": 68550,
+                "_pending_switch": null
+            },
+            "cancellation": {
+                "is_cancelled": false,
+                "is_waiting_cancellation": false,
+                "scheduled_date": null,
+                "scheduled_date_display": null,
+                "cancelled_date": null,
+                "cancelled_date_display": null,
+                "reason": null,
+                "reason_label": null,
+                "reason_details": [],
+                "other_reason": null,
+                "retention_offers": {
+                    "shown": [],
+                    "shown_date": null,
+                    "shown_date_display": null,
+                    "accepted": null,
+                    "accepted_date": null,
+                    "accepted_date_display": null
+                },
+                "has_retention_history": false
+            },
+            "cancellation_reasons": [
+                {
+                    "value": "too_expensive",
+                    "label": "Too expensive"
+                },
+                {
+                    "value": "not_using",
+                    "label": "Not using it enough"
+                },
+                {
+                    "value": "found_alternative",
+                    "label": "Found a better alternative"
+                },
+                {
+                    "value": "missing_features",
+                    "label": "Missing features I need"
+                },
+                {
+                    "value": "technical_issues",
+                    "label": "Technical issues"
+                },
+                {
+                    "value": "temporary_pause",
+                    "label": "Just need a temporary break"
+                },
+                {
+                    "value": "shipping_issues",
+                    "label": "Shipping or delivery problems"
+                },
+                {
+                    "value": "other",
+                    "label": "Other"
+                }
+            ],
+            "pending_switch": null,
+            "actions": {
+                "status": "arraysubs-active",
+                "can_retry_payment": true,
+                "can_sync_gateway": true,
+                "can_prorated_refund": false,
+                "prorated_refund": {
+                    "available": false,
+                    "reason": "Prorated refunds are disabled"
+                },
+                "payment_gateway": "stripe",
+                "last_payment_failure": "2026-10-19 09:44:37",
+                "pending_renewal_order_id": 68550,
+                "waiting_cancellation": false
+            },
+            "shipping": {
+                "needs_shipping": false,
+                "shipping_type": "recurring",
+                "shipping_method_id": "",
+                "shipping_method_title": "",
+                "shipping_total": 0,
+                "renewal_shipping_total": 0,
+                "initial_shipping_paid": false
+            },
+            "customer": {
+                "id": 583,
+                "display_name": "Sqa sqa-p2-ladder",
+                "user_login": "sqa-p2-ladder",
+                "email": "sqa-p2-ladder@example.com",
+                "registered": "2026-10-19 09:39:54",
+                "registered_display": "19 October, 2026 3:39 PM"
+            },
+            "product": {
+                "id": 68435,
+                "name": "SQA Daily Trial Plan",
+                "sku": "",
+                "image": false,
+                "permalink": "https://mirror-help.arrayhash.com/product/sqa-daily-trial-plan/",
+                "type": "simple"
+            },
+            "orders": [
+                {
+                    "id": 68550,
+                    "date": "2026-10-19 09:43:04",
+                    "date_timestamp": 1792402984,
+                    "date_display": "19 October, 2026 3:43 PM",
+                    "status": "failed",
+                    "total": "7.31",
+                    "formatted_total": "$7.31",
+                    "is_renewal": true,
+                    "total_refunded": 0,
+                    "formatted_refunded": "",
+                    "is_fully_refunded": false,
+                    "refunds": []
+                },
+                {
+                    "id": 68511,
+                    "date": "2026-10-19 09:40:30",
+                    "date_timestamp": 1792402830,
+                    "date_display": "19 October, 2026 3:40 PM",
+                    "status": "completed",
+                    "total": "0.00",
+                    "formatted_total": "$0.00",
+                    "is_renewal": false,
+                    "total_refunded": 0,
+                    "formatted_refunded": "",
+                    "is_fully_refunded": true,
+                    "refunds": []
+                }
+            ],
+            "total_refunded": 0,
+            "formatted_total_refunded": "",
+            "gateway_info": {
+                "slug": "stripe",
+                "title": "Stripe",
+                "status": "active",
+                "is_automatic": true,
+                "gateway_is_automatic": true,
+                "has_remote_binding": true,
+                "customer_id": "cus_VT9MOhfJmOOXmT",
+                "payment_method_id": "pm_1USD3QJG5OzSNVs2SMQPe1n2",
+                "session_id": "",
+                "last_transaction_id": "",
+                "payment_method": {
+                    "gateway": "stripe",
+                    "title": "Visa ending in 0341",
+                    "brand": "visa",
+                    "last4": "0341",
+                    "expiry": "12/2030",
+                    "is_expired": false,
+                    "can_update": true,
+                    "update_url": "",
+                    "update_type": "stripe_portal"
+                },
+                "capabilities": {
+                    "automatic_payments": true,
+                    "trials": true,
+                    "refunds": true,
+                    "partial_refunds": true,
+                    "sca": true,
+                    "supports_sync": true,
+                    "pause": false,
+                    "resume": false,
+                    "cancel_at_period_end": true,
+                    "remote_cancel_at_period_end": false,
+                    "cancel_at_period_end_reversible": true,
+                    "product_sync": false,
+                    "plan_switch": true,
+                    "retention_amount_update": true,
+                    "midcycle_amount_update": true,
+                    "mixed_cart": true,
+                    "multiple_subscriptions": true,
+                    "different_billing_cycles": true,
+                    "customer_defined_billing_cycles": true,
+                    "customer_defined_pricing": true,
+                    "quantity": true,
+                    "signup_fee": true,
+                    "shipping": true,
+                    "coupons": true,
+                    "recurring_coupons": true,
+                    "payment_method_update": true,
+                    "card_auto_update": true,
+                    "card_expiry_notice": true,
+                    "disputes": true,
+                    "hosted_payment_page": true,
+                    "customer_portal": true,
+                    "early_renewal": true,
+                    "remote_billing_date": false,
+                    "charge_history": true
+                },
+                "capability_notes": [],
+                "supports_sync": true,
+                "can_detach": true
+            },
+            "coupon": null,
+            "login_as_user_url": "https://mirror-help.arrayhash.com/wp-login.php?action=arraysubs_login_as_user&user_id=583&_wpnonce=<redacted>&back_url=https%3A%2F%2Fmirror-help.arrayhash.com%2Fwp-admin%2Fusers.php",
+            "login_as_user_available": true,
+            "login_as_user_reason": ""
+        }
+    }
+}

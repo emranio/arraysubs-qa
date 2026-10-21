@@ -1,0 +1,40 @@
+{
+    "checked_at_utc": "2026-10-19T11:35:51+00:00",
+    "customer": "cus_VTB2LHa0r3ap3I",
+    "payment_intents": [
+        {
+            "id": "pi_3USElvJG5OzSNVs21djGGVsF",
+            "created_utc": "2026-10-19T11:30:31+00:00",
+            "status": "requires_payment_method",
+            "amount": 731,
+            "pm": null,
+            "off_session_err": "authentication_required",
+            "latest_charge": null,
+            "order_id": "68846",
+            "description": null
+        },
+        {
+            "id": "pi_3USEgsJG5OzSNVs212Y1rbLA",
+            "created_utc": "2026-10-19T11:25:18+00:00",
+            "status": "succeeded",
+            "amount": 731,
+            "pm": "pm_1USEgmJG5OzSNVs2FkAEMUcK",
+            "off_session_err": null,
+            "latest_charge": "ch_3USEgsJG5OzSNVs21JCWIELS",
+            "order_id": "68780",
+            "description": "mirror-help.arrayhash.com - Order 68780"
+        }
+    ],
+    "charges": [
+        {
+            "id": "ch_3USEgsJG5OzSNVs21JCWIELS",
+            "created_utc": "2026-10-19T11:25:35+00:00",
+            "status": "succeeded",
+            "paid": true,
+            "captured": true,
+            "amount": 731,
+            "pi": "pi_3USEgsJG5OzSNVs212Y1rbLA",
+            "refunded": false
+        }
+    ]
+}

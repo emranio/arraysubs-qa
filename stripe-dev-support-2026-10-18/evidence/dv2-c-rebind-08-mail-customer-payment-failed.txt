@@ -1,0 +1,26 @@
+mirror-help.arrayhash.com ( https://mirror-help.arrayhash.com )
+
+**************
+Payment failed
+**************
+
+Hi Sqa,
+
+Unfortunately, the renewal payment for your subscription #68788 could not be completed.
+
+-------------------
+Subscription #68788
+-------------------
+
+Product SQA Daily Trial Plan Amount Due $ 7.31 Status Active
+
+Please review the order and complete payment to avoid service interruption.
+
+Pay Now ( https://mirror-help.arrayhash.com/checkout/order-pay/68965/?pay_for_order=true&key=<r> )
+
+Manage your subscription ( https://mirror-help.arrayhash.com/my-account/as-subscriptions/ )
+
+Please update your payment method to avoid service interruption.
+
+mirror-help.arrayhash.com
+Hakirmor, Bogura, 5800, United Kingdom (UK)

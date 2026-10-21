@@ -1,0 +1,42 @@
+{
+    "order": 69364,
+    "status": "completed",
+    "paid": true,
+    "transaction": "ch_3USNbFJG5Oz",
+    "stripe_intent_id": "pi_3USNbFJG5OzSNVs20i9vO8Ph",
+    "attempt_result": "pi_3USNbFJG5OzSNVs20i9vO8Ph",
+    "attempt_snapshot_pm": "pm_1USNZaJG5OzSNVs2qh72zCu8",
+    "source_pm": "pm_1USNZaJG5OzSNVs2qh72zCu8",
+    "action_intent": "",
+    "action_required_at": "",
+    "outbox": "",
+    "sub": 68753,
+    "sub_status": "arraysubs-active",
+    "sub_pm": "pm_1USNZaJG5OzSNVs2qh72zCu8",
+    "sub_last4": "4242",
+    "sub_failure": "",
+    "sub_failure_category": "",
+    "sub_retry_attempts": "",
+    "derived_next_retry": null,
+    "next_payment_date": "2026-10-20 20:53:12",
+    "pis": {
+        "pi_3USNbFJG5OzSNVs20i9vO8Ph": {
+            "status": "succeeded",
+            "pm": "pm_1USNZaJG5OzSNVs2qh72zCu8",
+            "received": 731,
+            "capturable": 0,
+            "cancellation_reason": null,
+            "last_error": null,
+            "setup_future_usage": null
+        },
+        "pi_3USNYmJG5OzSNVs21Y5kEX5F": {
+            "status": "canceled",
+            "pm": "",
+            "received": 0,
+            "capturable": 0,
+            "cancellation_reason": "abandoned",
+            "last_error": null,
+            "setup_future_usage": null
+        }
+    }
+}

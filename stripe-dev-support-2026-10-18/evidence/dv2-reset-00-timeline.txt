@@ -1,0 +1,52 @@
+# dv2a "reset on same-pm bind" - run timeline (UTC, 2026-10-19). Core 4791832, Pro edaa401, WC Stripe 10.9.0 test mode.
+# Browser sessions: dv2a-admin (admin), dv2a-cust (591 sqa-dv60-ladder, then 592 sqa-dv2-reset).
+
+## Part 1 - fixture 68881 (exhausted ladder, failed renewal 68903), no settings change
+13:12:17  BEFORE  dv2-reset-01-68881-before-state.json, snapshots/sub-68881-dv2-reset-before.json
+          _last_payment_failure 2026-10-19 11:53:11, category card_declined, _payment_retry_attempts 3,
+          _payment_retry_next_attempt_at 2026-10-20 11:52:43, recovery.retry_attempts 3, last_failure_at 1792410791,
+          admin actions.can_retry_payment true, Pro GET /arraysubs/v1/audits/renewal-failures total 5, 68881 listed.
+          Screenshots dv2-reset-01-68881-admin-before.png (Retry Payment visible), dv2-reset-02-68881-customer-before.png (Retry Payment visible).
+13:13:44  TRIGGER POST payment_methods/pm_1USF2UJG5OzSNVs2ystkVGZw billing_details.name="Sqa dv2 reset test" (dv2-reset-03-68881-trigger.json)
+          Stripe event evt_1USGNoJG5OzSNVs22bQLWhu2 payment_method.updated, previous_attributes = billing_details only.
+13:13:46-47 gateway log: Webhook received / "Payment method updated by Stripe: Visa ending in 0341" /
+          "Webhook processed: payment_method.updated -> payment_method_updated (subscription: 68881, order: 68903)" (dv2-reset-09-68881-gateway-log.txt)
+13:13:59  AFTER   dv2-reset-04-68881-after-state.json, snapshots/sub-68881-dv2-reset-after.json
+          _gateway_payment_method_id unchanged (pm_1USF2UJG5OzSNVs2ystkVGZw); _payment_method_updated_at 13:13:47;
+          _last_payment_failure/_reason/_category, _payment_retry_attempts/_last_attempt_at/_next_attempt_at all ABSENT;
+          _pending_renewal_order_id 68903 kept, order 68903 still failed/unpaid;
+          recovery.retry_attempts 0, next_retry_at null, last_failure_at null, failure_category null;
+          actions.can_retry_payment false; Pro renewal-failures total 4, 68881 NOT listed.
+          Screenshots dv2-reset-05-68881-admin-after.png (no Retry Payment), dv2-reset-06-68881-customer-after.png (no Retry Payment; order 68903 Failed + Pay),
+          dv2-reset-07-renewal-failures-after-68881.png (Audits > Renewal Failures lists 68525, 68512, 1773, 959 only).
+
+## Part 2 - fresh fixture 68996 with a queued retry (settings window 13:19:41Z-13:26:08Z)
+13:17     customer 592 sqa-dv2-reset created; 13:18:24-44 block checkout trial 68435 card 4000 0000 0000 0341 -> order 68995 completed, sub 68996 trial.
+13:18:58  setup_intent.succeeded bound pm_1USGSLJG5OzSNVs2Rq3U3j5W (cus_VTCsQXyRiRmQfB). 13:20:05 gateway_meta_retry 101261 (system) re-bound the same pm.
+13:19:xx  settings-before-dv2a.json vs settings-original-r2.json: all_identical true (dv2-reset-12-...json)
+13:19:41  set-retry-settings 1 0 24,24,24 -> {"enabled":true,"interval_hours":[24,24,24],"stop_on_hard_decline":false}
+13:20:06  endTrial + setNextPaymentDate(time()+90) -> next payment 13:21:35 (dv2-reset-14-...json)
+13:22:06  101270 arraysubs_generate_renewal_invoice completed by queue runner -> renewal order 69022
+13:22:41-47 wp action-scheduler action run 101271 (attempt 0) -> pi_3USGWWJG5OzSNVs21XYG019B card_declined
+          retry 1 queued: action 101277 arraysubs_process_renewal pending 2026-10-20 13:22:46;
+          _payment_retry_attempts 1, _payment_retry_next_attempt_at 2026-10-20 13:22:46, _last_payment_failure 13:22:45 (dv2-reset-15/16-...json)
+13:24:04  101278 arraysubs_send_stripe_renewal_verification ran (system, issue 059 path; not run by tester)
+13:24:37  BEFORE trigger: can_retry_payment true, Pro listed, recovery.retry_attempts 1, next_retry_at 1792502566.
+          Screenshots dv2-reset-17-68996-admin-before.png, dv2-reset-18-68996-customer-before.png (Retry Payment visible on both).
+13:25:15  TRIGGER POST payment_methods/pm_1USGSLJG5OzSNVs2Rq3U3j5W billing_details.name (dv2-reset-19-68996-trigger.json)
+          Stripe event evt_1USGYxJG5OzSNVs2QNKIMC0e payment_method.updated (previous_attributes billing_details)
+13:25:17  gateway log: "Payment method updated by Stripe: Visa ending in 0341" / processed (subscription: 68996, order: 69022)
+13:25:31  AFTER (dv2-reset-20-...json, snapshots/sub-68996-dv2-reset-after-samepm.json): same pm; all failure/retry meta ABSENT;
+          recovery.retry_attempts 0, next_retry_at null, last_failure_at null; can_retry_payment false; Pro total 4, 68996 not listed;
+          action 101277 STILL PENDING 2026-10-20 13:22:46. Screenshots dv2-reset-22/23 (no Retry Payment on admin and customer pages).
+13:26:08  restore-settings arraysubs_settings apply -> "restored (hash verified)"; settings-after-dv2a.json vs settings-original-r2.json all_identical true
+          (dv2-reset-24/25); live payment_retry = {"enabled":true,"interval_hours":[24,24,24],"stop_on_hard_decline":true}
+13:27:27-31 queued retry 101277 run once via ActionScheduler::runner()->process_action(101277,'Action Scheduler CLI') with read-only observers
+          (dv2-reset-26-68996-run-queued-retry-observed.json):
+          - arraysubs_pre_retry_charge_verification NOT applied (neither PHP_INT_MIN nor PHP_INT_MAX observer fired)
+          - arraysubs_renewal_payment_attempt attempt = 0 (lifecycle capture: renewal_payment_attempted attempt 0, not retry_attempted attempt 1)
+          - Stripe calls: GET /v1/payment_intents/pi_3USGWW... (200), GET /v1/payment_intents (200), GET /v1/payment_methods/pm_1USGSL... (200), POST /v1/payment_intents (402)
+            -> the gateway's own stored-intent + sibling-PI reconciliation still ran inside processRenewalPayment
+          - new PI pi_3USGb6JG5OzSNVs2113HngyQ card_declined; notes: "No automatic retry was scheduled because this failure will not resolve on its own..."
+          - after: _last_payment_failure 13:27:30 re-written, _payment_retry_attempts absent (0), no pending retry action; recovery.retry_attempts 0
+          Stripe: 2 PaymentIntents for order 69022, both requires_payment_method, amount_received 0 (dv2-reset-28-68996-stripe-pis.json)

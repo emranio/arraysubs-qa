@@ -1,0 +1,22 @@
+{
+    "sub": 68788,
+    "order": 68965,
+    "since": "2026-10-19T12:47:00+00:00",
+    "order_notes": [
+        "2026-10-19T12:50:09+00:00 | Renewal order for subscription #68788 (Cycle #2, scheduled for 19 October, 2026 6:49 PM, billing every 1 day). Order generated on 19 October, 2026 6:50 PM.",
+        "2026-10-19T12:50:45+00:00 | [Gateway: stripe] Payment failed — renewal_payment_method_binding_invalid: The stored Stripe payment method is not an exact reusable off-session match for this subscription. No charge was attempted.",
+        "2026-10-19T12:50:45+00:00 | Renewal payment failed: The stored Stripe payment method is not an exact reusable off-session match for this subscription. No charge was attempted. Order status changed from Pending payment to Failed.",
+        "2026-10-19T12:50:46+00:00 | Email \"Failed order\" sent."
+    ],
+    "subscription_notes": [
+        "2026-10-19T12:50:48+00:00 | [Process Renewal] &#10007; FailedThe stored Stripe payment method is not an exact reusable off-session match for this subscription. No charge was attempted.",
+        "2026-10-19T12:50:47+00:00 | Email sent: [ArraySubs] Renewal Payment Failed",
+        "2026-10-19T12:50:47+00:00 | Payment failed for Order #68965. Gateway: Stripe. Reason: The stored Stripe payment method is not an exact reusable off-session match for this subscription. No charge was attempted.",
+        "2026-10-19T12:50:46+00:00 | Scheduled retry 1 of 3 at 20 October, 2026 6:50 PM. Plugin verifies with the gateway before re-charging to avoid double charges.",
+        "2026-10-19T12:50:45+00:00 | [Gateway: stripe] Payment failed — renewal_payment_method_binding_invalid: The stored Stripe payment method is not an exact reusable off-session match for this subscription. No charge was attempted.",
+        "2026-10-19T12:50:44+00:00 | [Gateway: stripe] Creating Stripe off-session renewal PaymentIntent for order #68965.",
+        "2026-10-19T12:50:09+00:00 | Renewal invoice #68965 generated for payment due on 19 October, 2026 6:49 PM.",
+        "2026-10-19T12:50:09+00:00 | [Generate Renewal Invoice] &#10003; SuccessRan scheduled action for subscription #68788.",
+        "2026-10-19T12:48:10+00:00 | Renewal date changed through the developer API."
+    ]
+}

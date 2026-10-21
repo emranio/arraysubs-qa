@@ -1,0 +1,27 @@
+### H Pro bundle 11095 (bundle total set via data price), pro_member 54, live rule | mode=live user=54 roles=customer|pro_member qualifying_rules=1 | product=11095 variation=0 qty=1 migrate=off sync=site(off)
+  DiscountHooks via real constructor: get_price filters before=yes, filterPrice prio simple=100 variation=100
+  add-to-cart: validation=true key=98a0182c
+  line #11095/0 qty=1 | engine-set get_price('edit')=39.73 | charged get_price()=39.73 | regular=46.74 | line_subtotal=39.73 line_total=39.73
+    sub data: price(recurring)=39.73 trial=0 day | sync: applies=true mode=prorate seg=2 initial_unit=14.10 full_unit=39.73 next=2026-10-31 18:00:00
+  fee 'Store Credit Applied' total=-0.02
+  cart: subtotal=39.73 fees=-0.02 TOTAL=39.71
+  unsaved order from cart: id=0 items=[#11095 subtotal=39.73 total=39.73] ORDER TOTAL=39.71
+  guard: case=rolled-back-clean, fixture identical blocked_writes=0 http_attempts=0 mail_blocked=0 notices=0
+### H-c bundle control: no qualifying member rule | mode=none user=54 roles=customer|pro_member qualifying_rules=0 | product=11095 variation=0 qty=1 migrate=off sync=site(off)
+  DiscountHooks via real constructor: get_price filters before=yes, filterPrice prio simple=100 variation=100
+  add-to-cart: validation=true key=e8f30094
+  line #11095/0 qty=1 | engine-set get_price('edit')=46.74 | charged get_price()=46.74 | regular=54.99 | line_subtotal=46.74 line_total=46.74
+    sub data: price(recurring)=46.74 trial=0 day | sync: applies=true mode=prorate seg=2 initial_unit=16.59 full_unit=46.74 next=2026-10-31 18:00:00
+  fee 'Store Credit Applied' total=-0.02
+  cart: subtotal=46.74 fees=-0.02 TOTAL=46.72
+  unsaved order from cart: id=0 items=[#11095 subtotal=46.74 total=46.74] ORDER TOTAL=46.72
+  guard: case=rolled-back-clean, fixture identical blocked_writes=0 http_attempts=0 mail_blocked=0 notices=0
+### H-f bundle, fix simulated | mode=fixsim user=54 roles=customer|pro_member qualifying_rules=1 | product=11095 variation=0 qty=1 migrate=off sync=site(off)
+  DiscountHooks via real constructor: get_price filters before=yes, filterPrice prio simple=100 variation=100
+  add-to-cart: validation=true key=98a0182c
+  line #11095/0 qty=1 | engine-set get_price('edit')=39.73 | charged get_price()=39.73 | regular=46.74 | line_subtotal=39.73 line_total=39.73
+    sub data: price(recurring)=39.73 trial=0 day | sync: applies=true mode=prorate seg=2 initial_unit=14.10 full_unit=39.73 next=2026-10-31 18:00:00
+  fee 'Store Credit Applied' total=-0.02
+  cart: subtotal=39.73 fees=-0.02 TOTAL=39.71
+  unsaved order from cart: id=0 items=[#11095 subtotal=39.73 total=39.73] ORDER TOTAL=39.71
+  guard: case=rolled-back-clean, fixture identical blocked_writes=0 http_attempts=0 mail_blocked=0 notices=0

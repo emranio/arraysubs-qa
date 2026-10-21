@@ -1,0 +1,29 @@
+Mailpit ID: 4SdNYnTzvGfgqXHyOS0Vu8
+Subject: [mirror-help.arrayhash.com] Verify your subscription renewal #68753
+To: sqa-dv58-classic@example.com  Date: 2026-10-19T11:31:06Z
+(order keys redacted as key=<r>)
+-----
+mirror-help.arrayhash.com ( https://mirror-help.arrayhash.com )
+
+*******************************
+Your renewal needs verification
+*******************************
+
+Hi Sqa,
+
+Your subscription renewal payment needs an extra verification step before it can be completed.
+
+---------------
+Renewal details
+---------------
+
+Subscription ID #68753 Renewal Order #68843 Payment amount $7.31 Payment Method Visa ending in 3184 Grace period 22 October, 2026 5:31 PM
+
+Complete verification ( https://mirror-help.arrayhash.com/checkout/order-pay/68843/?pay_for_order=true&key=<r>&wc-stripe-confirmation=1 )
+
+If verification is not completed, the renewal order will remain unpaid and the subscription will continue through the normal grace-period process.
+
+Complete verification as soon as possible to keep your subscription active.
+
+mirror-help.arrayhash.com
+Hakirmor, Bogura, 5800, United Kingdom (UK)

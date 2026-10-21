@@ -1,0 +1,30 @@
+### NP1 migration, trial 7, no signup, require_pm OFF | user=468 product=495 migrate-settings=on trial=7 signup=- | one_trial_per_customer=true
+  add-to-cart validation: true
+  add_to_cart key=35051070
+  check_cart_items errors: none
+  after_checkout_validation error codes: none
+  line #495 qty=1 unit_price=7.22 line_subtotal=7.22 line_total=7.22 | data.trial_length=7 signup_fee=0 | CartSummary::hasTrial=false | migration=eligible sub=27494 upgrade net=7.22 new_next=2026-10-31 18:00:00
+  cart: subtotal=7.22 fees=0.00 TOTAL=7.22
+  trials.require_payment_method=false | cart total=7.22 | WC()->cart->needs_payment()=false
+  guard: case=rolled-back-clean, fixture identical blocked_writes=1 http_attempts=0 mail_blocked=0 notices=0
+    blocked: INSERT INTO `wp_usermeta` (`user_id`, `meta_key`, `meta_value`) VALUES (468, '_woocommerce
+### NP2 migration, trial 7, no signup, require_pm ON | user=468 product=495 migrate-settings=on trial=7 signup=- | one_trial_per_customer=true
+  add-to-cart validation: true
+  add_to_cart key=35051070
+  check_cart_items errors: none
+  after_checkout_validation error codes: none
+  line #495 qty=1 unit_price=7.22 line_subtotal=7.22 line_total=7.22 | data.trial_length=7 signup_fee=0 | CartSummary::hasTrial=false | migration=eligible sub=27494 upgrade net=7.22 new_next=2026-10-31 18:00:00
+  cart: subtotal=7.22 fees=0.00 TOTAL=7.22
+  trials.require_payment_method=true | cart total=7.22 | WC()->cart->needs_payment()=true
+  guard: case=rolled-back-clean, fixture identical blocked_writes=1 http_attempts=0 mail_blocked=0 notices=0
+    blocked: INSERT INTO `wp_usermeta` (`user_id`, `meta_key`, `meta_value`) VALUES (468, '_woocommerce
+### NP3 migration, no trial, require_pm OFF | user=468 product=495 migrate-settings=on trial=- signup=- | one_trial_per_customer=true
+  add-to-cart validation: true
+  add_to_cart key=35051070
+  check_cart_items errors: none
+  after_checkout_validation error codes: none
+  line #495 qty=1 unit_price=7.22 line_subtotal=7.22 line_total=7.22 | data.trial_length=0 signup_fee=0 | CartSummary::hasTrial=false | migration=eligible sub=27494 upgrade net=7.22 new_next=2026-10-31 18:00:00
+  cart: subtotal=7.22 fees=0.00 TOTAL=7.22
+  trials.require_payment_method=false | cart total=7.22 | WC()->cart->needs_payment()=true
+  guard: case=rolled-back-clean, fixture identical blocked_writes=1 http_attempts=0 mail_blocked=0 notices=0
+    blocked: INSERT INTO `wp_usermeta` (`user_id`, `meta_key`, `meta_value`) VALUES (468, '_woocommerce

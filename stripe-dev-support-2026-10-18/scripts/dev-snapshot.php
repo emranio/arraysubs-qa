@@ -77,6 +77,22 @@ foreach (get_post_meta($sub_id) as $k => $v) {
     $meta[$k] = count($v) === 1 ? maybe_unserialize($v[0]) : array_map('maybe_unserialize', $v);
 }
 
+// Order keys (e.g. inside _arraysubs_payment_action_url) must never land in
+// QA evidence: redact every wc_order_ key and key= query value recursively.
+$redact = static function ($value) use (&$redact) {
+    if (is_array($value)) {
+        return array_map($redact, $value);
+    }
+    if (! is_string($value)) {
+        return $value;
+    }
+    $value = preg_replace('/wc_order_[A-Za-z0-9]+/', 'wc_order_<redacted>', $value);
+    return preg_replace('/([?&](?:amp;)?key=)[^&#"\s]+/', '$1<redacted>', $value);
+};
+unset($meta['_order_key']);
+$meta = $redact($meta);
+$data = $redact($data);
+
 $out = [
     'taken_at_utc' => gmdate('c'),
     'subscription_id' => $sub_id,

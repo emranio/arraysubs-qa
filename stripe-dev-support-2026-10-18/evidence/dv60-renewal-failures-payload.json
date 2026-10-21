@@ -1,0 +1,38 @@
+{
+    "http": 200,
+    "fetched_at_utc": "2026-10-19 11:54:55",
+    "total": 7,
+    "top_keys": [
+        "code",
+        "message",
+        "content"
+    ],
+    "rows": [
+        {
+            "subscription_id": 68881,
+            "subscription_status": "arraysubs-active",
+            "failure_category": "card_declined",
+            "failed_at": "2026-10-19 11:53:11",
+            "last_attempted_at": "2026-10-19 11:52:43",
+            "next_retry_at": "2026-10-20 11:52:43",
+            "next_retry_timestamp": 1792497163,
+            "retry_attempts": 3,
+            "order_id": 68903,
+            "order_status": "failed",
+            "can_retry": true
+        },
+        {
+            "subscription_id": 68512,
+            "subscription_status": "arraysubs-active",
+            "failure_category": "card_declined",
+            "failed_at": "2026-10-19 09:44:37",
+            "last_attempted_at": "2026-10-19 09:44:20",
+            "next_retry_at": "2026-10-20 09:44:20",
+            "next_retry_timestamp": 1792489460,
+            "retry_attempts": 3,
+            "order_id": 68550,
+            "order_status": "failed",
+            "can_retry": true
+        }
+    ]
+}

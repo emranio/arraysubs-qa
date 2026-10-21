@@ -1,0 +1,6 @@
+2026-10-19T12:49:47+00:00 INFO [Gateway: arraysubs_stripe] [Webhook] Webhook received
+2026-10-19T12:49:47+00:00 INFO [Gateway: arraysubs_stripe] [Webhook] Duplicate webhook event skipped: evt_3USG0ZJG5OzSNVs21ptSbemb
+2026-10-19T12:49:48+00:00 INFO [Gateway: arraysubs_stripe] [Webhook] Webhook received
+2026-10-19T12:49:48+00:00 INFO [Gateway: arraysubs_stripe] [Webhook] Duplicate webhook event skipped: evt_3USG0ZJG5OzSNVs211QyPMhc
+2026-10-19T12:50:44+00:00 INFO [Gateway: stripe] Creating Stripe off-session renewal PaymentIntent for order #68965.
+2026-10-19T12:50:45+00:00 ERROR [Gateway: stripe] [Gateway: stripe] Payment failed — renewal_payment_method_binding_invalid: The stored Stripe payment method is not an exact reusable off-session match for this subscription. No charge was attempted.

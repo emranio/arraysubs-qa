@@ -1,0 +1,2 @@
+order failed intent=pi_3USDAtJG5Oz pi_status=requires_action pi_pm=pm_1USMXkJG5Oz snapshot=pm_1USD8RJG5Oz
+action_intent=- required_at=- sub_action=- outbox=["suppressed"]

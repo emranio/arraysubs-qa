@@ -1,0 +1,215 @@
+{
+    "now_utc": "2026-10-19T12:50:48+00:00",
+    "order": {
+        "id": 68822,
+        "status": "completed",
+        "customer_id": 589,
+        "billing_email": "sqa-dv2-link-1792414105@example.com",
+        "total": "7.31",
+        "currency": "USD",
+        "payment_method": "stripe",
+        "payment_method_title": "Link",
+        "transaction_id": "ch_3USG0ZJG5OzSNVs21H2c5wUt",
+        "date_paid": "2026-10-19T18:49:46+00:00",
+        "needs_payment": false,
+        "is_paid": true,
+        "meta": {
+            "_billing_address_index": "Sqa sqa-dv59-after  100 QA Test Street  San Francisco CA 94105 US sqa-dv2-link-1792414105@example.com ",
+            "_shipping_address_index": "Sqa sqa-dv59-after  100 QA Test Street  San Francisco CA 94105 US ",
+            "_arraysubs_charge_attempt_at": "2026-10-19 11:28:56",
+            "_arraysubs_charge_attempt_gateway": "stripe",
+            "_arraysubs_charge_attempt_id": "439084de-6b0c-4bc1-8324-ce8a8838d0f1",
+            "_arraysubs_charge_attempt_transaction_id": "pi_3USEkOJG5OzSNVs20jlEvHCg",
+            "_arraysubs_computed_type": "Subs Renew",
+            "_arraysubs_has_subscription_product": "yes",
+            "_arraysubs_payment_action_intent_id": "pi_3USEkOJG5OzSNVs20jlEvHCg",
+            "_arraysubs_payment_action_required_at": "2026-10-19 11:37:04",
+            "_arraysubs_payment_action_url": "https://mirror-help.arrayhash.com/checkout/order-pay/68822/?pay_for_order=true&key=<r>&wc-stripe-confirmation=1",
+            "_arraysubs_pending_transaction_id": "pi_3USEkOJG5OzSNVs20jlEvHCg",
+            "_arraysubs_renewal_payment_success_email_sent": "yes",
+            "_arraysubs_stripe_requires_action_notice_key": {
+                "49b220449d7ff9cc92de558029c21b5d77dcc15c04fd9eba6be9341e10cb284d": {
+                    "status": "superseded",
+                    "intent_id": "pi_3USEkOJG5OzSNVs20jlEvHCg",
+                    "attempts": 0,
+                    "updated_at": "2026-10-19 11:38:04"
+                }
+            },
+            "_gateway_customer_id": "cus_VTB1PicZN8Kd3H",
+            "_gateway_payment_method_id": "pm_1USEfcJG5OzSNVs2TewrGbne",
+            "_is_renewal_order": "yes",
+            "_last_gateway_transaction_id": "pi_3USEkOJG5OzSNVs20jlEvHCg",
+            "_payment_gateway": "stripe",
+            "_renewal_cycle_number": "1",
+            "_renewal_scheduled_date": "2026-10-19 11:28:22",
+            "_stripe_charge_captured": "yes",
+            "_stripe_currency": "USD",
+            "_stripe_customer_id": "cus_VTB1PicZN8Kd3H",
+            "_stripe_fee": "0.51",
+            "_stripe_intent_id": "pi_3USG0ZJG5OzSNVs21Rq8uGbe",
+            "_stripe_net": "6.8",
+            "_stripe_source_id": "pm_1USG0TJG5OzSNVs2Y8ki6bwm",
+            "_stripe_upe_payment_type": "link",
+            "_subscription_id": "68770",
+            "_subscription_payment_processed": "yes",
+            "_subscription_renewal": "68770",
+            "_wc_order_<redacted>_device_type": "Desktop",
+            "_wc_order_<redacted>_session_count": "1",
+            "_wc_order_<redacted>_session_entry": "https://mirror-help.arrayhash.com/my-account/?sqa=1792414003682",
+            "_wc_order_<redacted>_session_pages": "4",
+            "_wc_order_<redacted>_session_start_time": "2026-10-19 12:46:45",
+            "_wc_order_<redacted>_source_type": "typein",
+            "_wc_order_<redacted>_user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.0.0 Safari/537.36",
+            "_wc_order_<redacted>_utm_source": "(direct)"
+        }
+    },
+    "order_notes": [
+        [
+            "2026-10-19T18:49:48+00:00",
+            "system",
+            "Stripe charge complete (Charge ID: ch_3USG0ZJG5OzSNVs21H2c5wUt)"
+        ],
+        [
+            "2026-10-19T18:49:47+00:00",
+            "system",
+            "Email \"New order\" sent."
+        ],
+        [
+            "2026-10-19T18:49:46+00:00",
+            "system",
+            "Payment via Link (ch_3USG0ZJG5OzSNVs21H2c5wUt)."
+        ],
+        [
+            "2026-10-19T18:49:45+00:00",
+            "system",
+            "Stripe payment intent created (Payment Intent ID: pi_3USG0ZJG5OzSNVs21Rq8uGbe)"
+        ],
+        [
+            "2026-10-19T17:28:59+00:00",
+            "system",
+            "[Gateway: stripe] Payment failed \u2014 card_declined: Your card was declined."
+        ],
+        [
+            "2026-10-19T17:28:58+00:00",
+            "system",
+            "Email \"Failed order\" sent."
+        ],
+        [
+            "2026-10-19T17:28:58+00:00",
+            "system",
+            "Renewal payment failed: Your card was declined. Order status changed from Pending payment to Failed."
+        ],
+        [
+            "2026-10-19T17:28:57+00:00",
+            "system",
+            "[Gateway: stripe] Payment failed \u2014 card_declined: Your card was declined."
+        ],
+        [
+            "2026-10-19T17:28:10+00:00",
+            "system",
+            "Renewal order for subscription #68770 (Cycle #1, scheduled for 19 October, 2026 5:28 PM, billing every 1 day). Order generated on 19 October, 2026 5:28 PM."
+        ]
+    ],
+    "subscription": {
+        "id": 68770,
+        "status": "arraysubs-active",
+        "meta": {
+            "_arraysubs_gateway_payment_failure_email_effects": {
+                "84d48dd119f8755171dbceef09e2e413faeab3cbf63a613eaf0f1c897ada876d": {
+                    "status": "sent",
+                    "effect": "woocommerce_admin_email",
+                    "gateway": "stripe",
+                    "order_id": 68822,
+                    "provider_attempt": "pi_3USEkOJG5OzSNVs20jlEvHCg",
+                    "sent_at": "2026-10-19 11:28:58"
+                },
+                "4ffa6f53b2d16d94c0eabe0aa132fee6e4aab9f7691578874a8453de710bab7a": {
+                    "status": "sent",
+                    "effect": "customer_email",
+                    "gateway": "stripe",
+                    "order_id": 68822,
+                    "provider_attempt": "pi_3USEkOJG5OzSNVs20jlEvHCg",
+                    "sent_at": "2026-10-19 11:28:59"
+                },
+                "ac31f3cbd30e8d0312186dc2ef543a9212c5932468e786accfd51808ce39928b": {
+                    "status": "sent",
+                    "effect": "admin_email",
+                    "gateway": "stripe",
+                    "order_id": 68822,
+                    "provider_attempt": "pi_3USEkOJG5OzSNVs20jlEvHCg",
+                    "sent_at": "2026-10-19 11:28:59"
+                }
+            },
+            "_arraysubs_lifecycle_attempt_seq": "1",
+            "_arraysubs_payment_action_intent_id": "pi_3USEkOJG5OzSNVs20jlEvHCg",
+            "_arraysubs_payment_action_url": "https://mirror-help.arrayhash.com/checkout/order-pay/68822/?pay_for_order=true&key=<r>&wc-stripe-confirmation=1",
+            "_billing_address": "{\"first_name\":\"Sqa\",\"last_name\":\"sqa-dv59-after\",\"company\":\"\",\"address_1\":\"100 QA Test Street\",\"address_2\":\"\",\"city\":\"San Francisco\",\"state\":\"CA\",\"postcode\":\"94105\",\"country\":\"US\",\"email\":\"sqa-dv59-after@example.com\",\"phone\":\"4155550100\"}",
+            "_billing_interval": "1",
+            "_billing_period": "day",
+            "_cached_product_data": "{\"id\":68435,\"parent_id\":68435,\"variation_id\":0,\"name\":\"SQA Daily Trial Plan\",\"sku\":\"\",\"type\":\"simple\",\"price\":\"7.31\",\"regular_price\":\"7.31\",\"sale_price\":\"\",\"virtual\":true,\"downloadable\":false,\"cached_at\":\"2026-10-19 11:24:04\"}",
+            "_cached_product_name": "SQA Daily Trial Plan",
+            "_cached_product_sku": "",
+            "_completed_payments": "1",
+            "_currency": "USD",
+            "_current_cycle_order_id": "68822",
+            "_customer_email": "sqa-dv59-after@example.com",
+            "_customer_id": "589",
+            "_different_renewal_price": "0",
+            "_different_renewal_price_after": "1",
+            "_enable_different_renewal_price": "no",
+            "_gateway_customer_id": "cus_VTB1PicZN8Kd3H",
+            "_gateway_payment_method_id": "pm_1USG0TJG5OzSNVs2Y8ki6bwm",
+            "_gateway_status": "active",
+            "_invoice_email": "sqa-dv59-after@example.com",
+            "_last_gateway_transaction_id": "ch_3USG0ZJG5OzSNVs21H2c5wUt",
+            "_last_payment_date": "2026-10-19 12:49:47",
+            "_next_payment_date": "2026-10-20 11:28:22",
+            "_order_ids": "[68769,68822]",
+            "_parent_order_id": "68769",
+            "_payment_gateway": "stripe",
+            "_payment_method": "stripe",
+            "_payment_method_brand": "visa",
+            "_payment_method_expiry_month": "12",
+            "_payment_method_expiry_year": "2030",
+            "_payment_method_last4": "0341",
+            "_payment_method_source": "stripe",
+            "_payment_method_title": "Stripe",
+            "_payment_method_type": "link",
+            "_payment_method_updated_at": "2026-10-19 11:26:05",
+            "_payment_method_wallet": "link",
+            "_product_id": "68435",
+            "_quantity": "1",
+            "_recurring_amount": "7.31",
+            "_renewal_action_id": "101231",
+            "_renewal_invoice_action_id": "101230",
+            "_shipping_address": "{\"first_name\":\"Sqa\",\"last_name\":\"sqa-dv59-after\",\"company\":\"\",\"address_1\":\"100 QA Test Street\",\"address_2\":\"\",\"city\":\"San Francisco\",\"state\":\"CA\",\"postcode\":\"94105\",\"country\":\"US\"}",
+            "_signup_fee": "0",
+            "_start_date": "2026-10-19 11:24:04",
+            "_subscription_length": "0",
+            "_subscription_price": "7.31",
+            "_trial_end_date": "2026-10-20 11:24:04",
+            "_trial_length": "0",
+            "_trial_period": "day",
+            "_variation_id": "0"
+        }
+    },
+    "customer": {
+        "id": 589,
+        "login": "sqa-dv59-after",
+        "email": "sqa-dv59-after@example.com",
+        "roles": [
+            "customer"
+        ],
+        "wp__stripe_customer_id": "cus_VTB1PicZN8Kd3H"
+    },
+    "wc_tokens": [
+        {
+            "token_id": "76",
+            "gateway_id": "stripe",
+            "token": "pm_1USEfcJG5OzSNVs2TewrGbne",
+            "type": "CC",
+            "is_default": "1"
+        }
+    ],
+    "customer_subscriptions": []
+}

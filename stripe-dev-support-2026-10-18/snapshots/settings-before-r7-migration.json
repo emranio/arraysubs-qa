@@ -1,0 +1,1312 @@
+{
+    "captured_at_utc": "2026-10-20T22:58:31+00:00",
+    "site": "https://mirror-help.arrayhash.com/",
+    "plugin_versions": {
+        "arraysubs": "2.0.9",
+        "arraysubspro": "1.2.8",
+        "woocommerce": "11.0.1",
+        "stripe": "10.9.0"
+    },
+    "options": {
+        "arraysubs_settings": {
+            "exists": true,
+            "sha256": "8cacd06beeaeee3cdc9e8752c8249044aa5c36f5cb13ab276e621286fec95432",
+            "b64": "YToyODp7czo4OiJkZWZhdWx0cyI7YToyOntzOjE0OiJiaWxsaW5nX3BlcmlvZCI7czo1OiJtb250aCI7czoxNjoiYmlsbGluZ19pbnRlcnZhbCI7aToxO31zOjExOiJidXR0b25fdGV4dCI7YTo0OntzOjExOiJhZGRfdG9fY2FydCI7czowOiIiO3M6MTY6InN1YnNjcmlwdGlvbl9ib3giO3M6MDoiIjtzOjE5OiJzdWJzY3JpcHRpb25fYnVuZGxlIjtzOjA6IiI7czoxMToicGxhY2Vfb3JkZXIiO3M6MDoiIjt9czoxNToiY3VzdG9tZXJfcG9ydGFsIjthOjE6e3M6MjI6InN1YnNjcmlwdGlvbl9saXN0X3ZpZXciO3M6NToiY2FyZHMiO31zOjIyOiJtdWx0aXBsZV9zdWJzY3JpcHRpb25zIjthOjY6e3M6MjI6ImFsbG93X211bHRpcGxlX2luX2NhcnQiO2I6MTtzOjE2OiJvbmVfcGVyX2N1c3RvbWVyIjtiOjA7czoyNDoiYXV0b19taWdyYXRlX29uX2NoZWNrb3V0IjtiOjA7czoxNToib25lX3Blcl9wcm9kdWN0IjtiOjA7czoxNjoiYWxsb3dfbWl4ZWRfY2FydCI7YjoxO3M6MjI6ImFsbG93X2RpZmZlcmVudF9jeWNsZXMiO2I6MTt9czo4OiJyZW5ld2FscyI7YTo5OntzOjI1OiJncmFjZV9kYXlzX2JlZm9yZV9vbl9ob2xkIjtpOjM7czoyNDoiZ3JhY2VfZGF5c19iZWZvcmVfY2FuY2VsIjtpOjc7czoyNDoiaW52b2ljZV9iZWZvcmVfZHVlX3ZhbHVlIjtpOjY7czoyMzoiaW52b2ljZV9iZWZvcmVfZHVlX3VuaXQiO3M6NToiaG91cnMiO3M6MjE6InN5bmNfdG9fYmlsbGluZ19jeWNsZSI7YjowO3M6MjI6InN5bmNfZmlyc3RfY2hhcmdlX21vZGUiO3M6NzoicHJvcmF0ZSI7czoxOToic3ByZWFkX3dpbmRvd19ob3VycyI7aTo2O3M6MjQ6InF1ZXVlX2NvbmN1cnJlbnRfYmF0Y2hlcyI7aToyO3M6MTY6InN3ZWVwX2JhdGNoX3NpemUiO2k6NTA7fXM6MTM6InBheW1lbnRfcmV0cnkiO2E6Mzp7czo3OiJlbmFibGVkIjtiOjE7czoxNDoiaW50ZXJ2YWxfaG91cnMiO2E6Mzp7aTowO2k6MjQ7aToxO2k6MjQ7aToyO2k6MjQ7fXM6MjA6InN0b3Bfb25faGFyZF9kZWNsaW5lIjtiOjE7fXM6NjoiYXVkaXRzIjthOjI6e3M6MTI6ImpvYl9sb2dfbW9kZSI7czozOiJhbGwiO3M6MjI6ImpvYl9sb2dfcmV0ZW50aW9uX2RheXMiO2k6MzA7fXM6MTI6InN0b3JlX2NyZWRpdCI7YTo4OntzOjIyOiJhdXRvX2FwcGx5X3RvX3JlbmV3YWxzIjtiOjE7czoxNzoiYXBwbHlfYXRfY2hlY2tvdXQiO2I6MTtzOjE2OiJtaW5fb3JkZXJfYW1vdW50IjtkOjU7czoxNToiZXhwaXJhdGlvbl9kYXlzIjtpOjA7czoxNToiZW5hYmxlX3B1cmNoYXNlIjtiOjE7czoxOToibWluX3B1cmNoYXNlX2Ftb3VudCI7ZDoxMDtzOjE5OiJtYXhfcHVyY2hhc2VfYW1vdW50IjtkOjUwMDtzOjIzOiJkZWZhdWx0X3B1cmNoYXNlX2Ftb3VudCI7ZDo1MDt9czoxNjoiY2FydF9pbmZvX2VkaXRvciI7YTozOntzOjI5OiJoaWRlX2ZpcnN0X2JpbGxpbmdfY3ljbGVfaW5mbyI7YjowO3M6MjU6ImhpZGVfc2hpcHBpbmdfY2hhcmdlX2luZm8iO2I6MDtzOjE4OiJoaWRlX2R1cmF0aW9uX2luZm8iO2I6MDt9czoxMjoiY2FuY2VsbGF0aW9uIjthOjc6e3M6MTg6ImNhbmNlbF9pbW1lZGlhdGVseSI7YjoxO3M6MTQ6InJlcXVpcmVfcmVhc29uIjtiOjE7czo3OiJyZWFzb25zIjthOjg6e2k6MDthOjM6e3M6MjoiaWQiO3M6MTM6InRvb19leHBlbnNpdmUiO3M6Mzoia2V5IjtzOjEzOiJ0b29fZXhwZW5zaXZlIjtzOjU6ImxhYmVsIjtzOjEzOiJUb28gZXhwZW5zaXZlIjt9aToxO2E6Mzp7czoyOiJpZCI7czo5OiJub3RfdXNpbmciO3M6Mzoia2V5IjtzOjk6Im5vdF91c2luZyI7czo1OiJsYWJlbCI7czoxOToiTm90IHVzaW5nIGl0IGVub3VnaCI7fWk6MjthOjM6e3M6MjoiaWQiO3M6MTc6ImZvdW5kX2FsdGVybmF0aXZlIjtzOjM6ImtleSI7czoxNzoiZm91bmRfYWx0ZXJuYXRpdmUiO3M6NToibGFiZWwiO3M6MjY6IkZvdW5kIGEgYmV0dGVyIGFsdGVybmF0aXZlIjt9aTozO2E6Mzp7czoyOiJpZCI7czoxNjoibWlzc2luZ19mZWF0dXJlcyI7czozOiJrZXkiO3M6MTY6Im1pc3NpbmdfZmVhdHVyZXMiO3M6NToibGFiZWwiO3M6MjM6Ik1pc3NpbmcgZmVhdHVyZXMgSSBuZWVkIjt9aTo0O2E6Mzp7czoyOiJpZCI7czoxNjoidGVjaG5pY2FsX2lzc3VlcyI7czozOiJrZXkiO3M6MTY6InRlY2huaWNhbF9pc3N1ZXMiO3M6NToibGFiZWwiO3M6MTY6IlRlY2huaWNhbCBpc3N1ZXMiO31pOjU7YTozOntzOjI6ImlkIjtzOjE1OiJ0ZW1wb3JhcnlfcGF1c2UiO3M6Mzoia2V5IjtzOjE1OiJ0ZW1wb3JhcnlfcGF1c2UiO3M6NToibGFiZWwiO3M6Mjc6Ikp1c3QgbmVlZCBhIHRlbXBvcmFyeSBicmVhayI7fWk6NjthOjM6e3M6MjoiaWQiO3M6MTU6InNoaXBwaW5nX2lzc3VlcyI7czozOiJrZXkiO3M6MTU6InNoaXBwaW5nX2lzc3VlcyI7czo1OiJsYWJlbCI7czoyOToiU2hpcHBpbmcgb3IgZGVsaXZlcnkgcHJvYmxlbXMiO31pOjc7YTozOntzOjI6ImlkIjtzOjU6Im90aGVyIjtzOjM6ImtleSI7czo1OiJvdGhlciI7czo1OiJsYWJlbCI7czo1OiJPdGhlciI7fX1zOjI0OiJyZXRlbnRpb25fb2ZmZXJzX2VuYWJsZWQiO2I6MDtzOjE2OiJyZXRlbnRpb25fb2ZmZXJzIjthOjU6e3M6ODoiZGlzY291bnQiO2E6MTM6e3M6NzoiZW5hYmxlZCI7YjowO3M6MTU6InRyaWdnZXJfcmVhc29ucyI7YTowOnt9czoxNjoiZGlzY291bnRfcGVyY2VudCI7aToyMDtzOjE1OiJkaXNjb3VudF9jeWNsZXMiO2k6MztzOjg6ImhlYWRsaW5lIjtzOjA6IiI7czoxMToiZGVzY3JpcHRpb24iO3M6MDoiIjtzOjI1OiJtaW5fc3Vic2NyaXB0aW9uX2FnZV9kYXlzIjtpOjA7czoyMjoibWluX3N1YnNjcmlwdGlvbl92YWx1ZSI7ZDowO3M6MjI6Im1heF9zdWJzY3JpcHRpb25fdmFsdWUiO2Q6MDtzOjIwOiJtaW5fdXNlcl90b3RhbF92YWx1ZSI7ZDowO3M6MjA6Im1heF91c2VyX3RvdGFsX3ZhbHVlIjtkOjA7czoxODoibWluX3JlbWFpbmluZ19kYXlzIjtpOjA7czoxODoibWF4X3JlbWFpbmluZ19kYXlzIjtpOjA7fXM6NToicGF1c2UiO2E6MTI6e3M6NzoiZW5hYmxlZCI7YjowO3M6MTU6InRyaWdnZXJfcmVhc29ucyI7YTowOnt9czoxNDoibWF4X3BhdXNlX2RheXMiO2k6MzA7czo4OiJoZWFkbGluZSI7czowOiIiO3M6MTE6ImRlc2NyaXB0aW9uIjtzOjA6IiI7czoyNToibWluX3N1YnNjcmlwdGlvbl9hZ2VfZGF5cyI7aTowO3M6MjI6Im1pbl9zdWJzY3JpcHRpb25fdmFsdWUiO2Q6MDtzOjIyOiJtYXhfc3Vic2NyaXB0aW9uX3ZhbHVlIjtkOjA7czoyMDoibWluX3VzZXJfdG90YWxfdmFsdWUiO2Q6MDtzOjIwOiJtYXhfdXNlcl90b3RhbF92YWx1ZSI7ZDowO3M6MTg6Im1pbl9yZW1haW5pbmdfZGF5cyI7aTowO3M6MTg6Im1heF9yZW1haW5pbmdfZGF5cyI7aTowO31zOjk6ImRvd25ncmFkZSI7YToxMTp7czo3OiJlbmFibGVkIjtiOjA7czoxNToidHJpZ2dlcl9yZWFzb25zIjthOjA6e31zOjg6ImhlYWRsaW5lIjtzOjA6IiI7czoxMToiZGVzY3JpcHRpb24iO3M6MDoiIjtzOjI1OiJtaW5fc3Vic2NyaXB0aW9uX2FnZV9kYXlzIjtpOjA7czoyMjoibWluX3N1YnNjcmlwdGlvbl92YWx1ZSI7ZDowO3M6MjI6Im1heF9zdWJzY3JpcHRpb25fdmFsdWUiO2Q6MDtzOjIwOiJtaW5fdXNlcl90b3RhbF92YWx1ZSI7ZDowO3M6MjA6Im1heF91c2VyX3RvdGFsX3ZhbHVlIjtkOjA7czoxODoibWluX3JlbWFpbmluZ19kYXlzIjtpOjA7czoxODoibWF4X3JlbWFpbmluZ19kYXlzIjtpOjA7fXM6NDoic2tpcCI7YToxMTp7czo3OiJlbmFibGVkIjtiOjA7czoxNToidHJpZ2dlcl9yZWFzb25zIjthOjA6e31zOjg6ImhlYWRsaW5lIjtzOjA6IiI7czoxMToiZGVzY3JpcHRpb24iO3M6MDoiIjtzOjI1OiJtaW5fc3Vic2NyaXB0aW9uX2FnZV9kYXlzIjtpOjA7czoyMjoibWluX3N1YnNjcmlwdGlvbl92YWx1ZSI7ZDowO3M6MjI6Im1heF9zdWJzY3JpcHRpb25fdmFsdWUiO2Q6MDtzOjIwOiJtaW5fdXNlcl90b3RhbF92YWx1ZSI7ZDowO3M6MjA6Im1heF91c2VyX3RvdGFsX3ZhbHVlIjtkOjA7czoxODoibWluX3JlbWFpbmluZ19kYXlzIjtpOjA7czoxODoibWF4X3JlbWFpbmluZ19kYXlzIjtpOjA7fXM6MTU6ImNvbnRhY3Rfc3VwcG9ydCI7YToxMzp7czo3OiJlbmFibGVkIjtiOjA7czoxNToidHJpZ2dlcl9yZWFzb25zIjthOjA6e31zOjExOiJzdXBwb3J0X3VybCI7czowOiIiO3M6ODoiaGVhZGxpbmUiO3M6MDoiIjtzOjExOiJkZXNjcmlwdGlvbiI7czowOiIiO3M6MTE6ImJ1dHRvbl90ZXh0IjtzOjA6IiI7czoyNToibWluX3N1YnNjcmlwdGlvbl9hZ2VfZGF5cyI7aTowO3M6MjI6Im1pbl9zdWJzY3JpcHRpb25fdmFsdWUiO2Q6MDtzOjIyOiJtYXhfc3Vic2NyaXB0aW9uX3ZhbHVlIjtkOjA7czoyMDoibWluX3VzZXJfdG90YWxfdmFsdWUiO2Q6MDtzOjIwOiJtYXhfdXNlcl90b3RhbF92YWx1ZSI7ZDowO3M6MTg6Im1pbl9yZW1haW5pbmdfZGF5cyI7aTowO3M6MTg6Im1heF9yZW1haW5pbmdfZGF5cyI7aTowO319czoyMDoiZm9ybV9idWlsZGVyX2VuYWJsZWQiO2I6MDtzOjExOiJmb3JtX2NvbmZpZyI7YTowOnt9fXM6MTQ6InBsYW5fc3dpdGNoaW5nIjthOjc6e3M6NzoiZW5hYmxlZCI7YjowO3M6MTQ6ImFsbG93X3VwZ3JhZGVzIjtiOjA7czoxNjoiYWxsb3dfZG93bmdyYWRlcyI7YjowO3M6MTc6ImFsbG93X2Nyb3NzZ3JhZGVzIjtiOjA7czoxNDoicHJvcmF0aW9uX3R5cGUiO3M6MTk6InByb3JhdGVfaW1tZWRpYXRlbHkiO3M6MjE6ImFsbG93X2N1c3RvbWVyX3N3aXRjaCI7YjowO3M6MjE6ImF1dG9fZG93bmdyYWRlX3RpbWluZyI7czo5OiJvbl9leHBpcmUiO31zOjk6InByb3JhdGlvbiI7YTozOntzOjE1OiJyb3VuZGluZ19tZXRob2QiO3M6NToicm91bmQiO3M6MTE6InN3aXRjaF9mZWVzIjthOjM6e3M6NzoidXBncmFkZSI7ZDowO3M6OToiZG93bmdyYWRlIjtkOjA7czoxMDoiY3Jvc3NncmFkZSI7ZDowO31zOjE0OiJtaW5pbXVtX2NoYXJnZSI7ZDowO31zOjc6InJlZnVuZHMiO2E6NDp7czoyMToiY2FuY2VsbGF0aW9uX2JlaGF2aW9yIjtzOjQ6Im5vbmUiO3M6MTk6ImF1dG9fZ2F0ZXdheV9yZWZ1bmQiO2I6MDtzOjIyOiJhbGxvd19wcm9yYXRlZF9yZWZ1bmRzIjtiOjA7czoxNDoibWluaW11bV9hbW91bnQiO2Q6MDt9czoxNToiZmVhdHVyZV9tYW5hZ2VyIjthOjY6e3M6MjA6InNob3dfb25fcHJvZHVjdF9wYWdlIjtiOjE7czoxODoic2hvd19pbl9teV9hY2NvdW50IjtiOjE7czoxNjoiYWdncmVnYXRpb25fbW9kZSI7czoxNjoicGVyX3N1YnNjcmlwdGlvbiI7czoyMToibXlfYWNjb3VudF9wYWdlX3RpdGxlIjtzOjA6IiI7czozMDoic2hvd191c2FnZV9jb3VudF9pbl9teV9hY2NvdW50IjtiOjE7czoyNToic2hvd191c2FnZV9jb3VudF9pbl9hZG1pbiI7YjoxO31zOjg6ImNoZWNrb3V0IjthOjM6e3M6MTQ6Im9uZV9jbGlja19tb2RlIjtzOjc6ImRlZmF1bHQiO3M6MTc6ImRpc2FibGVfY2FydF9wYWdlIjtiOjA7czoyODoibm9uX3N1YnNjcmlwdGlvbl9idXR0b25fdGV4dCI7czowOiIiO31zOjY6InRyaWFscyI7YToyOntzOjIyOiJyZXF1aXJlX3BheW1lbnRfbWV0aG9kIjtiOjE7czoyMjoib25lX3RyaWFsX3Blcl9jdXN0b21lciI7YjoxO31zOjE2OiJjdXN0b21lcl9hY3Rpb25zIjthOjI6e3M6MTg6ImFsbG93X2NhbmNlbGxhdGlvbiI7YjoxO3M6MTc6ImFsbG93X2Vhcmx5X3JlbmV3IjtiOjE7fXM6MTg6InBhdXNlX3N1YnNjcmlwdGlvbiI7YTo4OntzOjc6ImVuYWJsZWQiO2I6MDtzOjE3OiJtYXhfZHVyYXRpb25fZGF5cyI7aTozMDtzOjI3OiJtYXhfcGF1c2VzX3Blcl9zdWJzY3JpcHRpb24iO2k6MjtzOjIzOiJtaW5fZGF5c19iZXR3ZWVuX3BhdXNlcyI7aTowO3M6MTg6ImN1c3RvbWVyX2Nhbl9wYXVzZSI7YjowO3M6MTk6ImN1c3RvbWVyX2Nhbl9yZXN1bWUiO2I6MDtzOjE0OiJyZXF1aXJlX3JlYXNvbiI7YjoxO3M6MTk6ImFjY2Vzc19kdXJpbmdfcGF1c2UiO3M6NDoibm9uZSI7fXM6MTI6InNraXBfcmVuZXdhbCI7YTo0OntzOjc6ImVuYWJsZWQiO2I6MDtzOjEwOiJtYXhfY3ljbGVzIjtpOjM7czoxMToiY3V0b2ZmX2RheXMiO2k6MjtzOjE3OiJjdXN0b21lcl9jYW5fc2tpcCI7YjowO31zOjE1OiJwcm9maWxlX2J1aWxkZXIiO2E6Mjp7czoyOToiY3VzdG9tX3Byb2ZpbGVfZmllbGRzX2VuYWJsZWQiO2I6MTtzOjI5OiJteV9hY2NvdW50X21lbnVfaXRlbXNfZW5hYmxlZCI7YjoxO31zOjY6ImVtYWlscyI7YToyNzp7czoxMToiYWRtaW5fZW1haWwiO3M6MDoiIjtzOjIyOiJhZG1pbl9uZXdfc3Vic2NyaXB0aW9uIjtiOjE7czoxNToiYWRtaW5fY2FuY2VsbGVkIjtiOjE7czoyNjoiYWRtaW5fcGVuZGluZ19jYW5jZWxsYXRpb24iO2I6MTtzOjIwOiJhZG1pbl9wYXltZW50X2ZhaWxlZCI7YjoxO3M6Mjc6InJlbmV3YWxfcmVtaW5kZXJfcmF0ZV9saW1pdCI7aTowO3M6MTY6Im5ld19zdWJzY3JpcHRpb24iO2E6MTp7czo3OiJlbmFibGVkIjtiOjE7fXM6MjA6InN1YnNjcmlwdGlvbl9vbl9ob2xkIjthOjE6e3M6NzoiZW5hYmxlZCI7YjoxO31zOjMzOiJzdWJzY3JpcHRpb25fcGVuZGluZ19jYW5jZWxsYXRpb24iO2E6MTp7czo3OiJlbmFibGVkIjtiOjE7fXM6MjI6InN1YnNjcmlwdGlvbl9jYW5jZWxsZWQiO2E6MTp7czo3OiJlbmFibGVkIjtiOjE7fXM6MjA6InN1YnNjcmlwdGlvbl9leHBpcmVkIjthOjE6e3M6NzoiZW5hYmxlZCI7YjoxO31zOjE0OiJhdXRvX2Rvd25ncmFkZSI7YToxOntzOjc6ImVuYWJsZWQiO2I6MTt9czoxNjoicmVuZXdhbF91cGNvbWluZyI7YToyOntzOjc6ImVuYWJsZWQiO2I6MTtzOjExOiJkYXlzX2JlZm9yZSI7aTozO31zOjE1OiJyZW5ld2FsX2ludm9pY2UiO2E6MTp7czo3OiJlbmFibGVkIjtiOjE7fXM6MjQ6InJlbmV3YWxfcGF5bWVudF9yZWNlaXZlZCI7YToxOntzOjc6ImVuYWJsZWQiO2I6MTt9czoxNDoicGF5bWVudF9mYWlsZWQiO2E6MTp7czo3OiJlbmFibGVkIjtiOjE7fXM6Mjc6InJldGVudGlvbl9kaXNjb3VudF9hY2NlcHRlZCI7YToxOntzOjc6ImVuYWJsZWQiO2I6MTt9czoyNDoic3Vic2NyaXB0aW9uX3JlYWN0aXZhdGVkIjthOjE6e3M6NzoiZW5hYmxlZCI7YjoxO31zOjEzOiJ0cmlhbF9zdGFydGVkIjthOjE6e3M6NzoiZW5hYmxlZCI7YjoxO31zOjE1OiJ0cmlhbF9jb252ZXJ0ZWQiO2E6MTp7czo3OiJlbmFibGVkIjtiOjE7fXM6MTM6ImV4cGlyaW5nX3Nvb24iO2E6Mjp7czo3OiJlbmFibGVkIjtiOjE7czoxMToiZGF5c19iZWZvcmUiO2k6Nzt9czoxMzoiY2FyZF9leHBpcmluZyI7YToxOntzOjc6ImVuYWJsZWQiO2I6MTt9czoyOToicmVuZXdhbF9yZXF1aXJlc192ZXJpZmljYXRpb24iO2E6MTp7czo3OiJlbmFibGVkIjtiOjE7fXM6MjA6InN1YnNjcmlwdGlvbl9za2lwcGVkIjthOjE6e3M6NzoiZW5hYmxlZCI7YjoxO31zOjExOiJza2lwX3VuZG9uZSI7YToxOntzOjc6ImVuYWJsZWQiO2I6MTt9czoxOToic3Vic2NyaXB0aW9uX3BhdXNlZCI7YToxOntzOjc6ImVuYWJsZWQiO2I6MTt9czoyMDoic3Vic2NyaXB0aW9uX3Jlc3VtZWQiO2E6MTp7czo3OiJlbmFibGVkIjtiOjE7fX1zOjE4OiJhdXRvbWF0aWNfcGF5bWVudHMiO2E6MTp7czoyMzoiYWxsb3dfYXV0b19yZW5ld190b2dnbGUiO2I6MTt9czoxNDoibWVtYmVyc19hY2Nlc3MiO2E6MTQ6e3M6NzoiZW5hYmxlZCI7YjoxO3M6MjA6ImRlZmF1bHRfcmVkaXJlY3RfdXJsIjtzOjg6Ii9wcmljaW5nIjtzOjE1OiJkZWZhdWx0X21lc3NhZ2UiO3M6NTU6IlRoaXMgY29udGVudCBpcyByZXN0cmljdGVkLiBQbGVhc2Ugc3Vic2NyaWJlIHRvIGFjY2Vzcy4iO3M6MTk6ImNhY2hlX2NvbXBhdGliaWxpdHkiO2I6MDtzOjE4OiJyb2xlX21hcHBpbmdfcnVsZXMiO2E6MTp7aTowO2E6ODp7czoyOiJpZCI7czoxODoiczlfcm9sZV9wcm9fbWVtYmVyIjtzOjc6ImVuYWJsZWQiO2I6MTtzOjQ6Im5hbWUiO3M6MzE6IlBybyBQbGFuIGdyYW50cyBQcm8gTWVtYmVyIHJvbGUiO3M6MTA6ImNvbmRpdGlvbnMiO2E6Mjp7czo1OiJsb2dpYyI7czozOiJhbmQiO3M6NToicnVsZXMiO2E6MTp7aTowO2E6Mjp7czo0OiJ0eXBlIjtzOjIzOiJoYXNfYWN0aXZlX3N1YnNjcmlwdGlvbiI7czoxMToicHJvZHVjdF9pZHMiO2E6MTp7aTowO2k6MjMzO319fX1zOjk6ImFkZF9yb2xlcyI7YToxOntpOjA7czoxMDoicHJvX21lbWJlciI7fXM6MTI6InJlbW92ZV9yb2xlcyI7YTowOnt9czoxNjoib25faG9sZF9iZWhhdmlvciI7czo0OiJrZWVwIjtzOjEzOiJmYWxsYmFja19yb2xlIjtzOjEwOiJzdWJzY3JpYmVyIjt9fXM6OToidXJsX3J1bGVzIjthOjQ6e2k6MDthOjE0OntzOjI6ImlkIjtzOjIyOiJzOV91cmxfcHJlbWl1bV9jb250ZW50IjtzOjc6ImVuYWJsZWQiO2I6MTtzOjQ6Im5hbWUiO3M6MjQ6IlByZW1pdW0gQ29udGVudCBVUkwgZ2F0ZSI7czo4OiJwcmlvcml0eSI7aToxMDtzOjc6InBhdHRlcm4iO3M6MTY6Ii9wcmVtaXVtLWNvbnRlbnQiO3M6MTI6InBhdHRlcm5fdHlwZSI7czo2OiJwcmVmaXgiO3M6MTA6ImV4Y2x1c2lvbnMiO2E6MDp7fXM6MTA6ImNvbmRpdGlvbnMiO2E6Mjp7czo1OiJsb2dpYyI7czozOiJhbmQiO3M6NToicnVsZXMiO2E6MTp7aTowO2E6Mjp7czo0OiJ0eXBlIjtzOjIzOiJoYXNfYWN0aXZlX3N1YnNjcmlwdGlvbiI7czoxMToicHJvZHVjdF9pZHMiO2E6MTp7aTowO2k6MjMzO319fX1zOjY6ImFjdGlvbiI7czo4OiJyZWRpcmVjdCI7czoxMjoicmVkaXJlY3RfdXJsIjtzOjg6Ii9wcmljaW5nIjtzOjc6Im1lc3NhZ2UiO3M6MDoiIjtzOjE2OiJzY2hlZHVsZV9lbmFibGVkIjtiOjA7czoxNDoic2NoZWR1bGVfdmFsdWUiO2k6MDtzOjEzOiJzY2hlZHVsZV91bml0IjtzOjQ6ImRheXMiO31pOjE7YToxNDp7czoyOiJpZCI7czozMToiczE4X3VybF9zdGFuZGFyZF93ZWVrbHlfY29udGVudCI7czo3OiJlbmFibGVkIjtiOjE7czo0OiJuYW1lIjtzOjMyOiJTdGFuZGFyZCBXZWVrbHkgQ29udGVudCBVUkwgZ2F0ZSI7czo4OiJwcmlvcml0eSI7aTo1O3M6NzoicGF0dGVybiI7czoyNDoiL3N0YW5kYXJkLXdlZWtseS1jb250ZW50IjtzOjEyOiJwYXR0ZXJuX3R5cGUiO3M6NjoicHJlZml4IjtzOjEwOiJleGNsdXNpb25zIjthOjA6e31zOjEwOiJjb25kaXRpb25zIjthOjI6e3M6NToibG9naWMiO3M6MzoiYW5kIjtzOjU6InJ1bGVzIjthOjE6e2k6MDthOjI6e3M6NDoidHlwZSI7czoyMzoiaGFzX2FjdGl2ZV9zdWJzY3JpcHRpb24iO3M6MTE6InByb2R1Y3RfaWRzIjthOjE6e2k6MDtpOjIwMDt9fX19czo2OiJhY3Rpb24iO3M6NzoibWVzc2FnZSI7czoxMjoicmVkaXJlY3RfdXJsIjtzOjA6IiI7czo3OiJtZXNzYWdlIjtzOjcxOiJUaGlzIFN0YW5kYXJkIFdlZWtseSBjb250ZW50IGlzIHJlc3RyaWN0ZWQuIFBsZWFzZSBzdWJzY3JpYmUgdG8gYWNjZXNzLiI7czoxNjoic2NoZWR1bGVfZW5hYmxlZCI7YjowO3M6MTQ6InNjaGVkdWxlX3ZhbHVlIjtpOjA7czoxMzoic2NoZWR1bGVfdW5pdCI7czo0OiJkYXlzIjt9aToyO2E6MTQ6e3M6MjoiaWQiO3M6Mjg6InMxOF91cmxfZml4ZWRfcGVyaW9kX2NvbnRlbnQiO3M6NzoiZW5hYmxlZCI7YjoxO3M6NDoibmFtZSI7czoyOToiRml4ZWQgUGVyaW9kIENvbnRlbnQgVVJMIGdhdGUiO3M6ODoicHJpb3JpdHkiO2k6NTtzOjc6InBhdHRlcm4iO3M6MjE6Ii9maXhlZC1wZXJpb2QtY29udGVudCI7czoxMjoicGF0dGVybl90eXBlIjtzOjY6InByZWZpeCI7czoxMDoiZXhjbHVzaW9ucyI7YTowOnt9czoxMDoiY29uZGl0aW9ucyI7YToyOntzOjU6ImxvZ2ljIjtzOjM6ImFuZCI7czo1OiJydWxlcyI7YToxOntpOjA7YToyOntzOjQ6InR5cGUiO3M6MjM6Imhhc19hY3RpdmVfc3Vic2NyaXB0aW9uIjtzOjExOiJwcm9kdWN0X2lkcyI7YToxOntpOjA7aToxNjgzO319fX1zOjY6ImFjdGlvbiI7czo3OiJtZXNzYWdlIjtzOjEyOiJyZWRpcmVjdF91cmwiO3M6MDoiIjtzOjc6Im1lc3NhZ2UiO3M6Njg6IlRoaXMgRml4ZWQgUGVyaW9kIGNvbnRlbnQgaXMgcmVzdHJpY3RlZC4gUGxlYXNlIHN1YnNjcmliZSB0byBhY2Nlc3MuIjtzOjE2OiJzY2hlZHVsZV9lbmFibGVkIjtiOjA7czoxNDoic2NoZWR1bGVfdmFsdWUiO2k6MDtzOjEzOiJzY2hlZHVsZV91bml0IjtzOjQ6ImRheXMiO31pOjM7YToxNDp7czoyOiJpZCI7czozMDoibWFudWFsX3NjcmVlbnNob3RfY29uZmxpY3RfdXJsIjtzOjc6ImVuYWJsZWQiO2I6MTtzOjQ6Im5hbWUiO3M6MzU6Ik1hbnVhbCBTY3JlZW5zaG90IENvbmZsaWN0IFVSTCBSdWxlIjtzOjg6InByaW9yaXR5IjtpOjIwO3M6NzoicGF0dGVybiI7czoyNzoiL21hbnVhbC1zY3JlZW5zaG90LWNvbmZsaWN0IjtzOjEyOiJwYXR0ZXJuX3R5cGUiO3M6NjoicHJlZml4IjtzOjEwOiJleGNsdXNpb25zIjthOjA6e31zOjEwOiJjb25kaXRpb25zIjthOjI6e3M6NToibG9naWMiO3M6MzoiYW5kIjtzOjU6InJ1bGVzIjthOjE6e2k6MDthOjI6e3M6NDoidHlwZSI7czo5OiJ1c2VyX3JvbGUiO3M6NToicm9sZXMiO2E6MTp7aTowO3M6MTA6InN1YnNjcmliZXIiO319fX1zOjY6ImFjdGlvbiI7czo4OiJyZWRpcmVjdCI7czoxMjoicmVkaXJlY3RfdXJsIjtzOjg6Ii9wcmljaW5nIjtzOjc6Im1lc3NhZ2UiO3M6MDoiIjtzOjE2OiJzY2hlZHVsZV9lbmFibGVkIjtiOjA7czoxNDoic2NoZWR1bGVfdmFsdWUiO2k6MDtzOjEzOiJzY2hlZHVsZV91bml0IjtzOjQ6ImRheXMiO319czo5OiJjcHRfcnVsZXMiO2E6MTp7aTowO2E6MTY6e3M6MjoiaWQiO3M6Mjg6InJ1bGVfMTc4NDY2MjI3ODQ1NV85NnJwbHp4cmEiO3M6NzoiZW5hYmxlZCI7YjoxO3M6NDoibmFtZSI7czozMjoiUHJlbWl1bSBMaWJyYXJ5IOKAlCBtZW1iZXJzIG9ubHkiO3M6MTE6InRhcmdldF90eXBlIjtzOjg6InRheG9ub215IjtzOjk6InBvc3RfdHlwZSI7czo0OiJwb3N0IjtzOjg6InRheG9ub215IjtzOjg6ImNhdGVnb3J5IjtzOjg6InRlcm1faWRzIjthOjI6e2k6MDtpOjMwO2k6MTtpOjI5O31zOjg6InBvc3RfaWRzIjthOjA6e31zOjEwOiJjb25kaXRpb25zIjthOjI6e3M6NToibG9naWMiO3M6MzoiYW5kIjtzOjU6InJ1bGVzIjthOjE6e2k6MDthOjU6e3M6NDoidHlwZSI7czoyMzoiaGFzX2FjdGl2ZV9zdWJzY3JpcHRpb24iO3M6MjoiaWQiO3M6Mjg6ImNvbmRfMTc4NDY2MjI4OTY2NF9kNDIwdGtocGgiO3M6ODoib3BlcmF0b3IiO3M6MjoiPj0iO3M6NjoiYW1vdW50IjtpOjEwMDtzOjExOiJwcm9kdWN0X2lkcyI7YToxOntpOjA7aToyMzM7fX19fXM6NjoiYWN0aW9uIjtzOjc6Im1lc3NhZ2UiO3M6MTI6InJlZGlyZWN0X3VybCI7czowOiIiO3M6NzoibWVzc2FnZSI7czo4NjoiVGhlIFByZW1pdW0gTGlicmFyeSBpcyBmb3IgbWVtYmVycy4gSm9pbiBhIHBsYW4gdG8gdW5sb2NrIGV2ZXJ5IHR1dG9yaWFsIGFuZCB3b3Jrc2hvcC4iO3M6MTY6ImFyY2hpdmVfYmVoYXZpb3IiO3M6OToic2hvd19sb2NrIjtzOjE2OiJzY2hlZHVsZV9lbmFibGVkIjtiOjE7czoxNDoic2NoZWR1bGVfdmFsdWUiO2k6NztzOjEzOiJzY2hlZHVsZV91bml0IjtzOjQ6ImRheXMiO319czoxNDoiZG93bmxvYWRfcnVsZXMiO2E6MDp7fXM6MTQ6ImRpc2NvdW50X3J1bGVzIjthOjE6e2k6MDthOjE2OntzOjI6ImlkIjtzOjI4OiJydWxlXzE3ODQ2NjI3MzQyOTdfcWJvdDQ3aGZtIjtzOjc6ImVuYWJsZWQiO2I6MTtzOjQ6Im5hbWUiO3M6MjE6IkdvbGQgbWVtYmVycyBzYXZlIDE1JSI7czoxMDoiY29uZGl0aW9ucyI7YToyOntzOjU6ImxvZ2ljIjtzOjM6ImFuZCI7czo1OiJydWxlcyI7YToxOntpOjA7YTo1OntzOjQ6InR5cGUiO3M6OToidXNlcl9yb2xlIjtzOjI6ImlkIjtzOjI4OiJjb25kXzE3ODQ2NjI3NDU3OTVfY3l4bG9rZmloIjtzOjg6Im9wZXJhdG9yIjtzOjI6Ij49IjtzOjY6ImFtb3VudCI7aToxMDA7czo1OiJyb2xlcyI7YToxOntpOjA7czoxMDoicHJvX21lbWJlciI7fX19fXM6MTI6InRhcmdldF9zY29wZSI7czozOiJhbGwiO3M6MTg6InRhcmdldF9wcm9kdWN0X2lkcyI7YTowOnt9czoxOToidGFyZ2V0X2NhdGVnb3J5X2lkcyI7YTowOnt9czoxNDoidGFyZ2V0X3RhZ19pZHMiO2E6MDp7fXM6MjE6ImV4Y2x1c2lvbl9wcm9kdWN0X2lkcyI7YTowOnt9czoyMjoiZXhjbHVzaW9uX2NhdGVnb3J5X2lkcyI7YTowOnt9czoxMzoiZGlzY291bnRfdHlwZSI7czoxMDoicGVyY2VudGFnZSI7czoxNDoiZGlzY291bnRfdmFsdWUiO2k6MTU7czo4OiJhcHBseV90byI7czo4OiJwZXJfaXRlbSI7czoxNjoic2NoZWR1bGVfZW5hYmxlZCI7YjowO3M6MTQ6InNjaGVkdWxlX3ZhbHVlIjtpOjA7czoxMzoic2NoZWR1bGVfdW5pdCI7czo0OiJkYXlzIjt9fXM6MTU6ImVjb21tZXJjZV9ydWxlcyI7YToxOntpOjA7YToxNTp7czoyOiJpZCI7czoyODoicnVsZV8xNzg0NjYyNjc2Mzc4X21hYTN0ZTA4cyI7czo3OiJlbmFibGVkIjtiOjA7czo0OiJuYW1lIjtzOjIwOiJQcml2YXRlIG1lbWJlciBzdG9yZSI7czoxMDoiY29uZGl0aW9ucyI7YToyOntzOjU6ImxvZ2ljIjtzOjM6ImFuZCI7czo1OiJydWxlcyI7YToxOntpOjA7YTo1OntzOjQ6InR5cGUiO3M6MjM6Imhhc19hY3RpdmVfc3Vic2NyaXB0aW9uIjtzOjI6ImlkIjtzOjI4OiJjb25kXzE3ODQ2NjI2OTM5NDVfM3p2MTMwYWc0IjtzOjg6Im9wZXJhdG9yIjtzOjI6Ij49IjtzOjY6ImFtb3VudCI7aToxMDA7czoxMToicHJvZHVjdF9pZHMiO2E6MTp7aTowO2k6MzEzNTc7fX19fXM6NToic2NvcGUiO3M6MzoiYWxsIjtzOjE4OiJ0YXJnZXRfcHJvZHVjdF9pZHMiO2E6MDp7fXM6MTk6InRhcmdldF9jYXRlZ29yeV9pZHMiO2E6MDp7fXM6MjE6ImV4Y2x1c2lvbl9wcm9kdWN0X2lkcyI7YTo1OntpOjA7aTozMTM0MDtpOjE7aTozMTM0NztpOjI7aTozMTM1NztpOjM7aTozMTM2MztpOjQ7aTo2Mzt9czoyMjoiZXhjbHVzaW9uX2NhdGVnb3J5X2lkcyI7YToxOntpOjA7aToxOTt9czo2OiJhY3Rpb24iO3M6MTQ6ImJsb2NrX3B1cmNoYXNlIjtzOjEyOiJyZWRpcmVjdF91cmwiO3M6MDoiIjtzOjc6Im1lc3NhZ2UiO3M6NzU6IlRoaXMgcHJvZHVjdCBpcyBhdmFpbGFibGUgdG8gbWVtYmVycyBvbmx5LiBKb2luIG5vdyB0byB1bmxvY2sgcHVyY2hhc2luZyAyLiI7czoxNjoic2NoZWR1bGVfZW5hYmxlZCI7YjowO3M6MTQ6InNjaGVkdWxlX3ZhbHVlIjtpOjA7czoxMzoic2NoZWR1bGVfdW5pdCI7czo0OiJkYXlzIjt9fXM6MTM6ImNvbW1lbnRfcnVsZXMiO2E6MDp7fXM6MjA6InB1cmNoYXNlX2xpbWl0X3J1bGVzIjthOjA6e31zOjE3OiJkb3dubG9hZF9zZXR0aW5ncyI7YTozOntzOjIxOiJwcm90ZWN0ZWRfZGlyZWN0b3JpZXMiO2E6MDp7fXM6MTM6InNlcnZlX3ZpYV9waHAiO2I6MDtzOjE3OiJzaWduZWRfdXJsX2V4cGlyeSI7aTozNjAwO31zOjEzOiJyZXF1aXJlX2xvZ2luIjtiOjE7fXM6MTQ6Im1lbWJlcl9zdHlsaW5nIjthOjI6e3M6NzoiZW5hYmxlZCI7YjoxO3M6NToicnVsZXMiO2E6MDp7fX1zOjc6InRvb2xraXQiO2E6MTA6e3M6MTQ6ImhpZGVfYWRtaW5fYmFyIjtiOjA7czoxNzoicmVzdHJpY3Rfd3BfYWRtaW4iO2I6MDtzOjE3OiJ3cF9hZG1pbl9yZWRpcmVjdCI7czoxMDoibXlfYWNjb3VudCI7czoxMzoiYWxsb3dlZF9yb2xlcyI7YToxOntpOjA7czoxMjoic2hvcF9tYW5hZ2VyIjt9czoxMzoiaGlkZV93cF9sb2dpbiI7YjowO3M6MTc6IndwX2xvZ2luX3JlZGlyZWN0IjtzOjEwOiJteV9hY2NvdW50IjtzOjEzOiJsb2dpbl9hc191c2VyIjtiOjE7czoyMjoibXVsdGlfbG9naW5fcHJldmVudGlvbiI7YjowO3M6MjQ6Im11bHRpX2xvZ2luX21heF9zZXNzaW9ucyI7aToxO3M6MjY6Im11bHRpX2xvZ2luX2luY2x1ZGVfYWRtaW5zIjtiOjA7fXM6MTM6ImF1ZGl0X2xvZ2dpbmciO2E6NDp7czo3OiJwcm9kdWN0IjtiOjE7czo2OiJjb3Vwb24iO2I6MTtzOjU6ImVtYWlsIjtiOjE7czo4OiJzZXR0aW5ncyI7YjoxO31zOjEyOiJpbnRlZ3JhdGlvbnMiO2E6ODp7czoxMDoibGVhcm5wcmVzcyI7YToyOntzOjc6ImVuYWJsZWQiO2I6MDtzOjE4OiJyZXN0cmljdGVkX21lc3NhZ2UiO3M6MDoiIjt9czoxODoiYWZmaWxpYXRlc19tYW5hZ2VyIjthOjE6e3M6NzoiZW5hYmxlZCI7YjowO31zOjk6ImNhcnRmbG93cyI7YToxOntzOjc6ImVuYWJsZWQiO2I6MDt9czo5OiJ3cF9mdXNpb24iO2E6MTp7czo3OiJlbmFibGVkIjtiOjA7fXM6OToiZmx1ZW50Y3JtIjthOjE6e3M6NzoiZW5hYmxlZCI7YjowO31zOjk6InR1dG9yX2xtcyI7YToxOntzOjc6ImVuYWJsZWQiO2I6MDt9czoxMToiYWNhZGVteV9sbXMiO2E6MTp7czo3OiJlbmFibGVkIjtiOjA7fXM6MTU6ImxpY2Vuc2VfbWFuYWdlciI7YToyOntzOjc6ImVuYWJsZWQiO2I6MDtzOjIyOiJyZWxlYXNlX3NlYXRzX29uX2xhcHNlIjtiOjA7fX1zOjE2OiJjaGVja291dF9idWlsZGVyIjthOjc6e3M6MjA6ImNvcHlfdG9fc3Vic2NyaXB0aW9uIjtiOjE7czoxNToiY29weV90b19yZW5ld2FsIjtiOjE7czoxOToic2hvd19vbl9vcmRlcl9hZG1pbiI7YjoxO3M6MjI6InNob3dfb25fb3JkZXJfY3VzdG9tZXIiO2I6MTtzOjI3OiJzaG93X29uX3N1YnNjcmlwdGlvbl9kZXRhaWwiO2I6MTtzOjE1OiJ1cGxvYWRzX2VuYWJsZWQiO2I6MTtzOjE2OiJ1cGxvYWRzX21heF9zaXplIjtpOjU7fX0=",
+            "readable": {
+                "defaults": {
+                    "billing_period": "month",
+                    "billing_interval": 1
+                },
+                "button_text": {
+                    "add_to_cart": "",
+                    "subscription_box": "",
+                    "subscription_bundle": "",
+                    "place_order": ""
+                },
+                "customer_portal": {
+                    "subscription_list_view": "cards"
+                },
+                "multiple_subscriptions": {
+                    "allow_multiple_in_cart": true,
+                    "one_per_customer": false,
+                    "auto_migrate_on_checkout": false,
+                    "one_per_product": false,
+                    "allow_mixed_cart": true,
+                    "allow_different_cycles": true
+                },
+                "renewals": {
+                    "grace_days_before_on_hold": 3,
+                    "grace_days_before_cancel": 7,
+                    "invoice_before_due_value": 6,
+                    "invoice_before_due_unit": "hours",
+                    "sync_to_billing_cycle": false,
+                    "sync_first_charge_mode": "prorate",
+                    "spread_window_hours": 6,
+                    "queue_concurrent_batches": 2,
+                    "sweep_batch_size": 50
+                },
+                "payment_retry": {
+                    "enabled": true,
+                    "interval_hours": [
+                        24,
+                        24,
+                        24
+                    ],
+                    "stop_on_hard_decline": true
+                },
+                "audits": {
+                    "job_log_mode": "all",
+                    "job_log_retention_days": 30
+                },
+                "store_credit": {
+                    "auto_apply_to_renewals": true,
+                    "apply_at_checkout": true,
+                    "min_order_amount": 5.0,
+                    "expiration_days": 0,
+                    "enable_purchase": true,
+                    "min_purchase_amount": 10.0,
+                    "max_purchase_amount": 500.0,
+                    "default_purchase_amount": 50.0
+                },
+                "cart_info_editor": {
+                    "hide_first_billing_cycle_info": false,
+                    "hide_shipping_charge_info": false,
+                    "hide_duration_info": false
+                },
+                "cancellation": {
+                    "cancel_immediately": true,
+                    "require_reason": true,
+                    "reasons": [
+                        {
+                            "id": "too_expensive",
+                            "key": "too_expensive",
+                            "label": "Too expensive"
+                        },
+                        {
+                            "id": "not_using",
+                            "key": "not_using",
+                            "label": "Not using it enough"
+                        },
+                        {
+                            "id": "found_alternative",
+                            "key": "found_alternative",
+                            "label": "Found a better alternative"
+                        },
+                        {
+                            "id": "missing_features",
+                            "key": "missing_features",
+                            "label": "Missing features I need"
+                        },
+                        {
+                            "id": "technical_issues",
+                            "key": "technical_issues",
+                            "label": "Technical issues"
+                        },
+                        {
+                            "id": "temporary_pause",
+                            "key": "temporary_pause",
+                            "label": "Just need a temporary break"
+                        },
+                        {
+                            "id": "shipping_issues",
+                            "key": "shipping_issues",
+                            "label": "Shipping or delivery problems"
+                        },
+                        {
+                            "id": "other",
+                            "key": "other",
+                            "label": "Other"
+                        }
+                    ],
+                    "retention_offers_enabled": false,
+                    "retention_offers": {
+                        "discount": {
+                            "enabled": false,
+                            "trigger_reasons": [],
+                            "discount_percent": 20,
+                            "discount_cycles": 3,
+                            "headline": "",
+                            "description": "",
+                            "min_subscription_age_days": 0,
+                            "min_subscription_value": 0.0,
+                            "max_subscription_value": 0.0,
+                            "min_user_total_value": 0.0,
+                            "max_user_total_value": 0.0,
+                            "min_remaining_days": 0,
+                            "max_remaining_days": 0
+                        },
+                        "pause": {
+                            "enabled": false,
+                            "trigger_reasons": [],
+                            "max_pause_days": 30,
+                            "headline": "",
+                            "description": "",
+                            "min_subscription_age_days": 0,
+                            "min_subscription_value": 0.0,
+                            "max_subscription_value": 0.0,
+                            "min_user_total_value": 0.0,
+                            "max_user_total_value": 0.0,
+                            "min_remaining_days": 0,
+                            "max_remaining_days": 0
+                        },
+                        "downgrade": {
+                            "enabled": false,
+                            "trigger_reasons": [],
+                            "headline": "",
+                            "description": "",
+                            "min_subscription_age_days": 0,
+                            "min_subscription_value": 0.0,
+                            "max_subscription_value": 0.0,
+                            "min_user_total_value": 0.0,
+                            "max_user_total_value": 0.0,
+                            "min_remaining_days": 0,
+                            "max_remaining_days": 0
+                        },
+                        "skip": {
+                            "enabled": false,
+                            "trigger_reasons": [],
+                            "headline": "",
+                            "description": "",
+                            "min_subscription_age_days": 0,
+                            "min_subscription_value": 0.0,
+                            "max_subscription_value": 0.0,
+                            "min_user_total_value": 0.0,
+                            "max_user_total_value": 0.0,
+                            "min_remaining_days": 0,
+                            "max_remaining_days": 0
+                        },
+                        "contact_support": {
+                            "enabled": false,
+                            "trigger_reasons": [],
+                            "support_url": "",
+                            "headline": "",
+                            "description": "",
+                            "button_text": "",
+                            "min_subscription_age_days": 0,
+                            "min_subscription_value": 0.0,
+                            "max_subscription_value": 0.0,
+                            "min_user_total_value": 0.0,
+                            "max_user_total_value": 0.0,
+                            "min_remaining_days": 0,
+                            "max_remaining_days": 0
+                        }
+                    },
+                    "form_builder_enabled": false,
+                    "form_config": []
+                },
+                "plan_switching": {
+                    "enabled": false,
+                    "allow_upgrades": false,
+                    "allow_downgrades": false,
+                    "allow_crossgrades": false,
+                    "proration_type": "prorate_immediately",
+                    "allow_customer_switch": false,
+                    "auto_downgrade_timing": "on_expire"
+                },
+                "proration": {
+                    "rounding_method": "round",
+                    "switch_fees": {
+                        "upgrade": 0.0,
+                        "downgrade": 0.0,
+                        "crossgrade": 0.0
+                    },
+                    "minimum_charge": 0.0
+                },
+                "refunds": {
+                    "cancellation_behavior": "none",
+                    "auto_gateway_refund": false,
+                    "allow_prorated_refunds": false,
+                    "minimum_amount": 0.0
+                },
+                "feature_manager": {
+                    "show_on_product_page": true,
+                    "show_in_my_account": true,
+                    "aggregation_mode": "per_subscription",
+                    "my_account_page_title": "",
+                    "show_usage_count_in_my_account": true,
+                    "show_usage_count_in_admin": true
+                },
+                "checkout": {
+                    "one_click_mode": "default",
+                    "disable_cart_page": false,
+                    "non_subscription_button_text": ""
+                },
+                "trials": {
+                    "require_payment_method": true,
+                    "one_trial_per_customer": true
+                },
+                "customer_actions": {
+                    "allow_cancellation": true,
+                    "allow_early_renew": true
+                },
+                "pause_subscription": {
+                    "enabled": false,
+                    "max_duration_days": 30,
+                    "max_pauses_per_subscription": 2,
+                    "min_days_between_pauses": 0,
+                    "customer_can_pause": false,
+                    "customer_can_resume": false,
+                    "require_reason": true,
+                    "access_during_pause": "none"
+                },
+                "skip_renewal": {
+                    "enabled": false,
+                    "max_cycles": 3,
+                    "cutoff_days": 2,
+                    "customer_can_skip": false
+                },
+                "profile_builder": {
+                    "custom_profile_fields_enabled": true,
+                    "my_account_menu_items_enabled": true
+                },
+                "emails": {
+                    "admin_email": "",
+                    "admin_new_subscription": true,
+                    "admin_cancelled": true,
+                    "admin_pending_cancellation": true,
+                    "admin_payment_failed": true,
+                    "renewal_reminder_rate_limit": 0,
+                    "new_subscription": {
+                        "enabled": true
+                    },
+                    "subscription_on_hold": {
+                        "enabled": true
+                    },
+                    "subscription_pending_cancellation": {
+                        "enabled": true
+                    },
+                    "subscription_cancelled": {
+                        "enabled": true
+                    },
+                    "subscription_expired": {
+                        "enabled": true
+                    },
+                    "auto_downgrade": {
+                        "enabled": true
+                    },
+                    "renewal_upcoming": {
+                        "enabled": true,
+                        "days_before": 3
+                    },
+                    "renewal_invoice": {
+                        "enabled": true
+                    },
+                    "renewal_payment_received": {
+                        "enabled": true
+                    },
+                    "payment_failed": {
+                        "enabled": true
+                    },
+                    "retention_discount_accepted": {
+                        "enabled": true
+                    },
+                    "subscription_reactivated": {
+                        "enabled": true
+                    },
+                    "trial_started": {
+                        "enabled": true
+                    },
+                    "trial_converted": {
+                        "enabled": true
+                    },
+                    "expiring_soon": {
+                        "enabled": true,
+                        "days_before": 7
+                    },
+                    "card_expiring": {
+                        "enabled": true
+                    },
+                    "renewal_requires_verification": {
+                        "enabled": true
+                    },
+                    "subscription_skipped": {
+                        "enabled": true
+                    },
+                    "skip_undone": {
+                        "enabled": true
+                    },
+                    "subscription_paused": {
+                        "enabled": true
+                    },
+                    "subscription_resumed": {
+                        "enabled": true
+                    }
+                },
+                "automatic_payments": {
+                    "allow_auto_renew_toggle": true
+                },
+                "members_access": {
+                    "enabled": true,
+                    "default_redirect_url": "/pricing",
+                    "default_message": "This content is restricted. Please subscribe to access.",
+                    "cache_compatibility": false,
+                    "role_mapping_rules": [
+                        {
+                            "id": "s9_role_pro_member",
+                            "enabled": true,
+                            "name": "Pro Plan grants Pro Member role",
+                            "conditions": {
+                                "logic": "and",
+                                "rules": [
+                                    {
+                                        "type": "has_active_subscription",
+                                        "product_ids": [
+                                            233
+                                        ]
+                                    }
+                                ]
+                            },
+                            "add_roles": [
+                                "pro_member"
+                            ],
+                            "remove_roles": [],
+                            "on_hold_behavior": "keep",
+                            "fallback_role": "subscriber"
+                        }
+                    ],
+                    "url_rules": [
+                        {
+                            "id": "s9_url_premium_content",
+                            "enabled": true,
+                            "name": "Premium Content URL gate",
+                            "priority": 10,
+                            "pattern": "/premium-content",
+                            "pattern_type": "prefix",
+                            "exclusions": [],
+                            "conditions": {
+                                "logic": "and",
+                                "rules": [
+                                    {
+                                        "type": "has_active_subscription",
+                                        "product_ids": [
+                                            233
+                                        ]
+                                    }
+                                ]
+                            },
+                            "action": "redirect",
+                            "redirect_url": "/pricing",
+                            "message": "",
+                            "schedule_enabled": false,
+                            "schedule_value": 0,
+                            "schedule_unit": "days"
+                        },
+                        {
+                            "id": "s18_url_standard_weekly_content",
+                            "enabled": true,
+                            "name": "Standard Weekly Content URL gate",
+                            "priority": 5,
+                            "pattern": "/standard-weekly-content",
+                            "pattern_type": "prefix",
+                            "exclusions": [],
+                            "conditions": {
+                                "logic": "and",
+                                "rules": [
+                                    {
+                                        "type": "has_active_subscription",
+                                        "product_ids": [
+                                            200
+                                        ]
+                                    }
+                                ]
+                            },
+                            "action": "message",
+                            "redirect_url": "",
+                            "message": "This Standard Weekly content is restricted. Please subscribe to access.",
+                            "schedule_enabled": false,
+                            "schedule_value": 0,
+                            "schedule_unit": "days"
+                        },
+                        {
+                            "id": "s18_url_fixed_period_content",
+                            "enabled": true,
+                            "name": "Fixed Period Content URL gate",
+                            "priority": 5,
+                            "pattern": "/fixed-period-content",
+                            "pattern_type": "prefix",
+                            "exclusions": [],
+                            "conditions": {
+                                "logic": "and",
+                                "rules": [
+                                    {
+                                        "type": "has_active_subscription",
+                                        "product_ids": [
+                                            1683
+                                        ]
+                                    }
+                                ]
+                            },
+                            "action": "message",
+                            "redirect_url": "",
+                            "message": "This Fixed Period content is restricted. Please subscribe to access.",
+                            "schedule_enabled": false,
+                            "schedule_value": 0,
+                            "schedule_unit": "days"
+                        },
+                        {
+                            "id": "manual_screenshot_conflict_url",
+                            "enabled": true,
+                            "name": "Manual Screenshot Conflict URL Rule",
+                            "priority": 20,
+                            "pattern": "/manual-screenshot-conflict",
+                            "pattern_type": "prefix",
+                            "exclusions": [],
+                            "conditions": {
+                                "logic": "and",
+                                "rules": [
+                                    {
+                                        "type": "user_role",
+                                        "roles": [
+                                            "subscriber"
+                                        ]
+                                    }
+                                ]
+                            },
+                            "action": "redirect",
+                            "redirect_url": "/pricing",
+                            "message": "",
+                            "schedule_enabled": false,
+                            "schedule_value": 0,
+                            "schedule_unit": "days"
+                        }
+                    ],
+                    "cpt_rules": [
+                        {
+                            "id": "rule_1784662278455_96rplzxra",
+                            "enabled": true,
+                            "name": "Premium Library \u2014 members only",
+                            "target_type": "taxonomy",
+                            "post_type": "post",
+                            "taxonomy": "category",
+                            "term_ids": [
+                                30,
+                                29
+                            ],
+                            "post_ids": [],
+                            "conditions": {
+                                "logic": "and",
+                                "rules": [
+                                    {
+                                        "type": "has_active_subscription",
+                                        "id": "cond_1784662289664_d420tkhph",
+                                        "operator": ">=",
+                                        "amount": 100,
+                                        "product_ids": [
+                                            233
+                                        ]
+                                    }
+                                ]
+                            },
+                            "action": "message",
+                            "redirect_url": "",
+                            "message": "The Premium Library is for members. Join a plan to unlock every tutorial and workshop.",
+                            "archive_behavior": "show_lock",
+                            "schedule_enabled": true,
+                            "schedule_value": 7,
+                            "schedule_unit": "days"
+                        }
+                    ],
+                    "download_rules": [],
+                    "discount_rules": [
+                        {
+                            "id": "rule_1784662734297_qbot47hfm",
+                            "enabled": true,
+                            "name": "Gold members save 15%",
+                            "conditions": {
+                                "logic": "and",
+                                "rules": [
+                                    {
+                                        "type": "user_role",
+                                        "id": "cond_1784662745795_cyxlokfih",
+                                        "operator": ">=",
+                                        "amount": 100,
+                                        "roles": [
+                                            "pro_member"
+                                        ]
+                                    }
+                                ]
+                            },
+                            "target_scope": "all",
+                            "target_product_ids": [],
+                            "target_category_ids": [],
+                            "target_tag_ids": [],
+                            "exclusion_product_ids": [],
+                            "exclusion_category_ids": [],
+                            "discount_type": "percentage",
+                            "discount_value": 15,
+                            "apply_to": "per_item",
+                            "schedule_enabled": false,
+                            "schedule_value": 0,
+                            "schedule_unit": "days"
+                        }
+                    ],
+                    "ecommerce_rules": [
+                        {
+                            "id": "rule_1784662676378_maa3te08s",
+                            "enabled": false,
+                            "name": "Private member store",
+                            "conditions": {
+                                "logic": "and",
+                                "rules": [
+                                    {
+                                        "type": "has_active_subscription",
+                                        "id": "cond_1784662693945_3zv130ag4",
+                                        "operator": ">=",
+                                        "amount": 100,
+                                        "product_ids": [
+                                            31357
+                                        ]
+                                    }
+                                ]
+                            },
+                            "scope": "all",
+                            "target_product_ids": [],
+                            "target_category_ids": [],
+                            "exclusion_product_ids": [
+                                31340,
+                                31347,
+                                31357,
+                                31363,
+                                63
+                            ],
+                            "exclusion_category_ids": [
+                                19
+                            ],
+                            "action": "block_purchase",
+                            "redirect_url": "",
+                            "message": "This product is available to members only. Join now to unlock purchasing 2.",
+                            "schedule_enabled": false,
+                            "schedule_value": 0,
+                            "schedule_unit": "days"
+                        }
+                    ],
+                    "comment_rules": [],
+                    "purchase_limit_rules": [],
+                    "download_settings": {
+                        "protected_directories": [],
+                        "serve_via_php": false,
+                        "signed_url_expiry": 3600
+                    },
+                    "require_login": true
+                },
+                "member_styling": {
+                    "enabled": true,
+                    "rules": []
+                },
+                "toolkit": {
+                    "hide_admin_bar": false,
+                    "restrict_wp_admin": false,
+                    "wp_admin_redirect": "my_account",
+                    "allowed_roles": [
+                        "shop_manager"
+                    ],
+                    "hide_wp_login": false,
+                    "wp_login_redirect": "my_account",
+                    "login_as_user": true,
+                    "multi_login_prevention": false,
+                    "multi_login_max_sessions": 1,
+                    "multi_login_include_admins": false
+                },
+                "audit_logging": {
+                    "product": true,
+                    "coupon": true,
+                    "email": true,
+                    "settings": true
+                },
+                "integrations": {
+                    "learnpress": {
+                        "enabled": false,
+                        "restricted_message": ""
+                    },
+                    "affiliates_manager": {
+                        "enabled": false
+                    },
+                    "cartflows": {
+                        "enabled": false
+                    },
+                    "wp_fusion": {
+                        "enabled": false
+                    },
+                    "fluentcrm": {
+                        "enabled": false
+                    },
+                    "tutor_lms": {
+                        "enabled": false
+                    },
+                    "academy_lms": {
+                        "enabled": false
+                    },
+                    "license_manager": {
+                        "enabled": false,
+                        "release_seats_on_lapse": false
+                    }
+                },
+                "checkout_builder": {
+                    "copy_to_subscription": true,
+                    "copy_to_renewal": true,
+                    "show_on_order_admin": true,
+                    "show_on_order_customer": true,
+                    "show_on_subscription_detail": true,
+                    "uploads_enabled": true,
+                    "uploads_max_size": 5
+                }
+            }
+        },
+        "active_plugins": {
+            "exists": true,
+            "sha256": "938dc4243b148e9a0c32d1ebbf938b0cdd324d4c7913b76dccf2df906fe547bf",
+            "b64": "YTo1OntpOjA7czoyMzoiYXJyYXlzdWJzL2FycmF5c3Vicy5waHAiO2k6MTtzOjI5OiJhcnJheXN1YnNwcm8vYXJyYXlzdWJzcHJvLnBocCI7aTozO3M6NTc6Indvb2NvbW1lcmNlLWdhdGV3YXktc3RyaXBlL3dvb2NvbW1lcmNlLWdhdGV3YXktc3RyaXBlLnBocCI7aTo0O3M6Mjc6Indvb2NvbW1lcmNlL3dvb2NvbW1lcmNlLnBocCI7aTo1O3M6Mjk6IndwLW1haWwtc210cC93cF9tYWlsX3NtdHAucGhwIjt9",
+            "readable": {
+                "0": "arraysubs/arraysubs.php",
+                "1": "arraysubspro/arraysubspro.php",
+                "3": "woocommerce-gateway-stripe/woocommerce-gateway-stripe.php",
+                "4": "woocommerce/woocommerce.php",
+                "5": "wp-mail-smtp/wp_mail_smtp.php"
+            }
+        },
+        "woocommerce_checkout_page_id": {
+            "exists": true,
+            "sha256": "cb68b06e4977e84e511919cd42c0e80ffd54f2c4241ea8d12816c92d753f30b3",
+            "b64": "czoxOiI4Ijs=",
+            "readable": "8"
+        },
+        "woocommerce_cart_page_id": {
+            "exists": true,
+            "sha256": "f913ae69248414d716644f1a999693fccf78d2df8421b5c04b91da282380bac1",
+            "b64": "czoxOiI3Ijs=",
+            "readable": "7"
+        },
+        "woocommerce_myaccount_page_id": {
+            "exists": true,
+            "sha256": "7b1fe31959d845828a06c00c7d49f08562d4d6b3365f7a4bfc83c48798b7b4b7",
+            "b64": "czoxOiI5Ijs=",
+            "readable": "9"
+        },
+        "woocommerce_enable_guest_checkout": {
+            "exists": true,
+            "sha256": "8c5b18b37b7e7f484a4676075d725f2a590ad75512f95a2ad86d6de04ce0dd07",
+            "b64": "czozOiJ5ZXMiOw==",
+            "readable": "yes"
+        },
+        "woocommerce_enable_checkout_login_reminder": {
+            "exists": true,
+            "sha256": "8c5b18b37b7e7f484a4676075d725f2a590ad75512f95a2ad86d6de04ce0dd07",
+            "b64": "czozOiJ5ZXMiOw==",
+            "readable": "yes"
+        },
+        "woocommerce_enable_signup_and_login_from_checkout": {
+            "exists": true,
+            "sha256": "8c5b18b37b7e7f484a4676075d725f2a590ad75512f95a2ad86d6de04ce0dd07",
+            "b64": "czozOiJ5ZXMiOw==",
+            "readable": "yes"
+        },
+        "woocommerce_enable_myaccount_registration": {
+            "exists": true,
+            "sha256": "8c5b18b37b7e7f484a4676075d725f2a590ad75512f95a2ad86d6de04ce0dd07",
+            "b64": "czozOiJ5ZXMiOw==",
+            "readable": "yes"
+        },
+        "woocommerce_registration_generate_password": {
+            "exists": true,
+            "sha256": "8c5b18b37b7e7f484a4676075d725f2a590ad75512f95a2ad86d6de04ce0dd07",
+            "b64": "czozOiJ5ZXMiOw==",
+            "readable": "yes"
+        },
+        "woocommerce_coming_soon": {
+            "exists": true,
+            "sha256": "0227ce59e87e525e2554ee7060591a3fe435f6bc1c663ba9c72524a3fdf26871",
+            "b64": "czoyOiJubyI7",
+            "readable": "no"
+        },
+        "woocommerce_store_pages_only": {
+            "exists": true,
+            "sha256": "0227ce59e87e525e2554ee7060591a3fe435f6bc1c663ba9c72524a3fdf26871",
+            "b64": "czoyOiJubyI7",
+            "readable": "no"
+        },
+        "woocommerce_calc_taxes": {
+            "exists": true,
+            "sha256": "0227ce59e87e525e2554ee7060591a3fe435f6bc1c663ba9c72524a3fdf26871",
+            "b64": "czoyOiJubyI7",
+            "readable": "no"
+        },
+        "woocommerce_currency": {
+            "exists": true,
+            "sha256": "797c53bbc74aa20a4811fa33ed3443485b593a1e581bfa3a6fb6aea7f0e677ed",
+            "b64": "czozOiJVU0QiOw==",
+            "readable": "USD"
+        },
+        "woocommerce_hold_stock_minutes": {
+            "exists": true,
+            "sha256": "712107c1bd5a5b155d6c94efa57b954547b786c495c8cb4b330b0b88f7b411f2",
+            "b64": "czoyOiI2MCI7",
+            "readable": "60"
+        },
+        "woocommerce_default_customer_address": {
+            "exists": true,
+            "sha256": "e8f4358f9b3c36df620b98f8c227e1889f4970a17ce84a864c3774592da795d9",
+            "b64": "czo0OiJiYXNlIjs=",
+            "readable": "base"
+        },
+        "woocommerce_feature_custom_order_tables_enabled": {
+            "exists": false,
+            "sha256": "28859e345f55ce45426724100617830af221bdf3e01f4333ee34ba58d2df4429",
+            "b64": "Tjs=",
+            "readable": null
+        }
+    },
+    "hash_only": {
+        "woocommerce_stripe_settings": {
+            "exists": true,
+            "sha256": "01b57359db1fcbe0b5dbf67d38aa6e1a5ad3e679ebbdce730717d3d992bac105"
+        },
+        "arraysubs_stripe_extras": {
+            "exists": true,
+            "sha256": "ab1cf74d44a33dabe3b4694795250f65337e57a07cf484eb340ebbd27f87439b"
+        }
+    },
+    "sections": {
+        "payment_retry": {
+            "label": "retry ladder",
+            "sha256": "4c3f69584576a654434c4c4e5d7044e77892c57c053978f96b7c53b5df9db98c",
+            "value": {
+                "enabled": true,
+                "interval_hours": [
+                    24,
+                    24,
+                    24
+                ],
+                "stop_on_hard_decline": true
+            }
+        },
+        "renewals": {
+            "label": "grace/invoice lead/spread",
+            "sha256": "c8f296bd58fd4a46c22b8077ba740f9b4972e0711b6be60f5bbf8205318ab53b",
+            "value": {
+                "grace_days_before_on_hold": 3,
+                "grace_days_before_cancel": 7,
+                "invoice_before_due_value": 6,
+                "invoice_before_due_unit": "hours",
+                "sync_to_billing_cycle": false,
+                "sync_first_charge_mode": "prorate",
+                "spread_window_hours": 6,
+                "queue_concurrent_batches": 2,
+                "sweep_batch_size": 50
+            }
+        },
+        "store_credit": {
+            "label": "store credit",
+            "sha256": "64bc4f915c7bd522ab3976f3476895d4cdbab1c4e820df6e314868c2bc904f31",
+            "value": {
+                "auto_apply_to_renewals": true,
+                "apply_at_checkout": true,
+                "min_order_amount": 5.0,
+                "expiration_days": 0,
+                "enable_purchase": true,
+                "min_purchase_amount": 10.0,
+                "max_purchase_amount": 500.0,
+                "default_purchase_amount": 50.0
+            }
+        },
+        "plan_switching": {
+            "label": "plan switching",
+            "sha256": "75a3ec856a1080854e832126023702775d21556f116387f30c1df7d95364dbe5",
+            "value": {
+                "enabled": false,
+                "allow_upgrades": false,
+                "allow_downgrades": false,
+                "allow_crossgrades": false,
+                "proration_type": "prorate_immediately",
+                "allow_customer_switch": false,
+                "auto_downgrade_timing": "on_expire"
+            }
+        },
+        "proration": {
+            "label": "plan switching proration",
+            "sha256": "3d1547be43e4c4fbb73d6ba9ff5bae38b57bf523e89f97d07d813ae3313f865e",
+            "value": {
+                "rounding_method": "round",
+                "switch_fees": {
+                    "upgrade": 0.0,
+                    "downgrade": 0.0,
+                    "crossgrade": 0.0
+                },
+                "minimum_charge": 0.0
+            }
+        },
+        "automatic_payments": {
+            "label": "auto-renew toggle",
+            "sha256": "0212e8c55c26e301414d64c81a60ee636b9e8048892c0c16458d18228dfb1af4",
+            "value": {
+                "allow_auto_renew_toggle": true
+            }
+        },
+        "members_access": {
+            "label": "member access",
+            "sha256": "babf11371a7f5b0023a29b43f24430025a72a2b29232f54d5348993088e65e43",
+            "value": {
+                "enabled": true,
+                "default_redirect_url": "/pricing",
+                "default_message": "This content is restricted. Please subscribe to access.",
+                "cache_compatibility": false,
+                "role_mapping_rules": [
+                    {
+                        "id": "s9_role_pro_member",
+                        "enabled": true,
+                        "name": "Pro Plan grants Pro Member role",
+                        "conditions": {
+                            "logic": "and",
+                            "rules": [
+                                {
+                                    "type": "has_active_subscription",
+                                    "product_ids": [
+                                        233
+                                    ]
+                                }
+                            ]
+                        },
+                        "add_roles": [
+                            "pro_member"
+                        ],
+                        "remove_roles": [],
+                        "on_hold_behavior": "keep",
+                        "fallback_role": "subscriber"
+                    }
+                ],
+                "url_rules": [
+                    {
+                        "id": "s9_url_premium_content",
+                        "enabled": true,
+                        "name": "Premium Content URL gate",
+                        "priority": 10,
+                        "pattern": "/premium-content",
+                        "pattern_type": "prefix",
+                        "exclusions": [],
+                        "conditions": {
+                            "logic": "and",
+                            "rules": [
+                                {
+                                    "type": "has_active_subscription",
+                                    "product_ids": [
+                                        233
+                                    ]
+                                }
+                            ]
+                        },
+                        "action": "redirect",
+                        "redirect_url": "/pricing",
+                        "message": "",
+                        "schedule_enabled": false,
+                        "schedule_value": 0,
+                        "schedule_unit": "days"
+                    },
+                    {
+                        "id": "s18_url_standard_weekly_content",
+                        "enabled": true,
+                        "name": "Standard Weekly Content URL gate",
+                        "priority": 5,
+                        "pattern": "/standard-weekly-content",
+                        "pattern_type": "prefix",
+                        "exclusions": [],
+                        "conditions": {
+                            "logic": "and",
+                            "rules": [
+                                {
+                                    "type": "has_active_subscription",
+                                    "product_ids": [
+                                        200
+                                    ]
+                                }
+                            ]
+                        },
+                        "action": "message",
+                        "redirect_url": "",
+                        "message": "This Standard Weekly content is restricted. Please subscribe to access.",
+                        "schedule_enabled": false,
+                        "schedule_value": 0,
+                        "schedule_unit": "days"
+                    },
+                    {
+                        "id": "s18_url_fixed_period_content",
+                        "enabled": true,
+                        "name": "Fixed Period Content URL gate",
+                        "priority": 5,
+                        "pattern": "/fixed-period-content",
+                        "pattern_type": "prefix",
+                        "exclusions": [],
+                        "conditions": {
+                            "logic": "and",
+                            "rules": [
+                                {
+                                    "type": "has_active_subscription",
+                                    "product_ids": [
+                                        1683
+                                    ]
+                                }
+                            ]
+                        },
+                        "action": "message",
+                        "redirect_url": "",
+                        "message": "This Fixed Period content is restricted. Please subscribe to access.",
+                        "schedule_enabled": false,
+                        "schedule_value": 0,
+                        "schedule_unit": "days"
+                    },
+                    {
+                        "id": "manual_screenshot_conflict_url",
+                        "enabled": true,
+                        "name": "Manual Screenshot Conflict URL Rule",
+                        "priority": 20,
+                        "pattern": "/manual-screenshot-conflict",
+                        "pattern_type": "prefix",
+                        "exclusions": [],
+                        "conditions": {
+                            "logic": "and",
+                            "rules": [
+                                {
+                                    "type": "user_role",
+                                    "roles": [
+                                        "subscriber"
+                                    ]
+                                }
+                            ]
+                        },
+                        "action": "redirect",
+                        "redirect_url": "/pricing",
+                        "message": "",
+                        "schedule_enabled": false,
+                        "schedule_value": 0,
+                        "schedule_unit": "days"
+                    }
+                ],
+                "cpt_rules": [
+                    {
+                        "id": "rule_1784662278455_96rplzxra",
+                        "enabled": true,
+                        "name": "Premium Library \u2014 members only",
+                        "target_type": "taxonomy",
+                        "post_type": "post",
+                        "taxonomy": "category",
+                        "term_ids": [
+                            30,
+                            29
+                        ],
+                        "post_ids": [],
+                        "conditions": {
+                            "logic": "and",
+                            "rules": [
+                                {
+                                    "type": "has_active_subscription",
+                                    "id": "cond_1784662289664_d420tkhph",
+                                    "operator": ">=",
+                                    "amount": 100,
+                                    "product_ids": [
+                                        233
+                                    ]
+                                }
+                            ]
+                        },
+                        "action": "message",
+                        "redirect_url": "",
+                        "message": "The Premium Library is for members. Join a plan to unlock every tutorial and workshop.",
+                        "archive_behavior": "show_lock",
+                        "schedule_enabled": true,
+                        "schedule_value": 7,
+                        "schedule_unit": "days"
+                    }
+                ],
+                "download_rules": [],
+                "discount_rules": [
+                    {
+                        "id": "rule_1784662734297_qbot47hfm",
+                        "enabled": true,
+                        "name": "Gold members save 15%",
+                        "conditions": {
+                            "logic": "and",
+                            "rules": [
+                                {
+                                    "type": "user_role",
+                                    "id": "cond_1784662745795_cyxlokfih",
+                                    "operator": ">=",
+                                    "amount": 100,
+                                    "roles": [
+                                        "pro_member"
+                                    ]
+                                }
+                            ]
+                        },
+                        "target_scope": "all",
+                        "target_product_ids": [],
+                        "target_category_ids": [],
+                        "target_tag_ids": [],
+                        "exclusion_product_ids": [],
+                        "exclusion_category_ids": [],
+                        "discount_type": "percentage",
+                        "discount_value": 15,
+                        "apply_to": "per_item",
+                        "schedule_enabled": false,
+                        "schedule_value": 0,
+                        "schedule_unit": "days"
+                    }
+                ],
+                "ecommerce_rules": [
+                    {
+                        "id": "rule_1784662676378_maa3te08s",
+                        "enabled": false,
+                        "name": "Private member store",
+                        "conditions": {
+                            "logic": "and",
+                            "rules": [
+                                {
+                                    "type": "has_active_subscription",
+                                    "id": "cond_1784662693945_3zv130ag4",
+                                    "operator": ">=",
+                                    "amount": 100,
+                                    "product_ids": [
+                                        31357
+                                    ]
+                                }
+                            ]
+                        },
+                        "scope": "all",
+                        "target_product_ids": [],
+                        "target_category_ids": [],
+                        "exclusion_product_ids": [
+                            31340,
+                            31347,
+                            31357,
+                            31363,
+                            63
+                        ],
+                        "exclusion_category_ids": [
+                            19
+                        ],
+                        "action": "block_purchase",
+                        "redirect_url": "",
+                        "message": "This product is available to members only. Join now to unlock purchasing 2.",
+                        "schedule_enabled": false,
+                        "schedule_value": 0,
+                        "schedule_unit": "days"
+                    }
+                ],
+                "comment_rules": [],
+                "purchase_limit_rules": [],
+                "download_settings": {
+                    "protected_directories": [],
+                    "serve_via_php": false,
+                    "signed_url_expiry": 3600
+                },
+                "require_login": true
+            }
+        },
+        "feature_manager": {
+            "label": "feature settings",
+            "sha256": "faf77044ccffaf9894ef6ac4f5bc16d6924c6e1c75c60116cfc124f5a4998386",
+            "value": {
+                "show_on_product_page": true,
+                "show_in_my_account": true,
+                "aggregation_mode": "per_subscription",
+                "my_account_page_title": "",
+                "show_usage_count_in_my_account": true,
+                "show_usage_count_in_admin": true
+            }
+        },
+        "trials": {
+            "label": "trials",
+            "sha256": "3d55cf4c9ec392ce320930e109a296fd9eac2cf88dd124c34eda694af6fb824a",
+            "value": {
+                "require_payment_method": true,
+                "one_trial_per_customer": true
+            }
+        },
+        "cancellation": {
+            "label": "cancellation",
+            "sha256": "f93a38b7f73348c23be66e22e896dcbd419a13d786c9a247480732b1458d06f0",
+            "value": {
+                "cancel_immediately": true,
+                "require_reason": true,
+                "reasons": [
+                    {
+                        "id": "too_expensive",
+                        "key": "too_expensive",
+                        "label": "Too expensive"
+                    },
+                    {
+                        "id": "not_using",
+                        "key": "not_using",
+                        "label": "Not using it enough"
+                    },
+                    {
+                        "id": "found_alternative",
+                        "key": "found_alternative",
+                        "label": "Found a better alternative"
+                    },
+                    {
+                        "id": "missing_features",
+                        "key": "missing_features",
+                        "label": "Missing features I need"
+                    },
+                    {
+                        "id": "technical_issues",
+                        "key": "technical_issues",
+                        "label": "Technical issues"
+                    },
+                    {
+                        "id": "temporary_pause",
+                        "key": "temporary_pause",
+                        "label": "Just need a temporary break"
+                    },
+                    {
+                        "id": "shipping_issues",
+                        "key": "shipping_issues",
+                        "label": "Shipping or delivery problems"
+                    },
+                    {
+                        "id": "other",
+                        "key": "other",
+                        "label": "Other"
+                    }
+                ],
+                "retention_offers_enabled": false,
+                "retention_offers": {
+                    "discount": {
+                        "enabled": false,
+                        "trigger_reasons": [],
+                        "discount_percent": 20,
+                        "discount_cycles": 3,
+                        "headline": "",
+                        "description": "",
+                        "min_subscription_age_days": 0,
+                        "min_subscription_value": 0.0,
+                        "max_subscription_value": 0.0,
+                        "min_user_total_value": 0.0,
+                        "max_user_total_value": 0.0,
+                        "min_remaining_days": 0,
+                        "max_remaining_days": 0
+                    },
+                    "pause": {
+                        "enabled": false,
+                        "trigger_reasons": [],
+                        "max_pause_days": 30,
+                        "headline": "",
+                        "description": "",
+                        "min_subscription_age_days": 0,
+                        "min_subscription_value": 0.0,
+                        "max_subscription_value": 0.0,
+                        "min_user_total_value": 0.0,
+                        "max_user_total_value": 0.0,
+                        "min_remaining_days": 0,
+                        "max_remaining_days": 0
+                    },
+                    "downgrade": {
+                        "enabled": false,
+                        "trigger_reasons": [],
+                        "headline": "",
+                        "description": "",
+                        "min_subscription_age_days": 0,
+                        "min_subscription_value": 0.0,
+                        "max_subscription_value": 0.0,
+                        "min_user_total_value": 0.0,
+                        "max_user_total_value": 0.0,
+                        "min_remaining_days": 0,
+                        "max_remaining_days": 0
+                    },
+                    "skip": {
+                        "enabled": false,
+                        "trigger_reasons": [],
+                        "headline": "",
+                        "description": "",
+                        "min_subscription_age_days": 0,
+                        "min_subscription_value": 0.0,
+                        "max_subscription_value": 0.0,
+                        "min_user_total_value": 0.0,
+                        "max_user_total_value": 0.0,
+                        "min_remaining_days": 0,
+                        "max_remaining_days": 0
+                    },
+                    "contact_support": {
+                        "enabled": false,
+                        "trigger_reasons": [],
+                        "support_url": "",
+                        "headline": "",
+                        "description": "",
+                        "button_text": "",
+                        "min_subscription_age_days": 0,
+                        "min_subscription_value": 0.0,
+                        "max_subscription_value": 0.0,
+                        "min_user_total_value": 0.0,
+                        "max_user_total_value": 0.0,
+                        "min_remaining_days": 0,
+                        "max_remaining_days": 0
+                    }
+                },
+                "form_builder_enabled": false,
+                "form_config": []
+            }
+        },
+        "customer_actions": {
+            "label": "customer actions",
+            "sha256": "cf45adcaf32d889bddd27cf5fd69d89148c92d2099a8e23133d10d9721157c75",
+            "value": {
+                "allow_cancellation": true,
+                "allow_early_renew": true
+            }
+        },
+        "pause_subscription": {
+            "label": "pause",
+            "sha256": "928d857fb60e6dda87f020a5d8f94a9696db685404c297aeeca0a34198103249",
+            "value": {
+                "enabled": false,
+                "max_duration_days": 30,
+                "max_pauses_per_subscription": 2,
+                "min_days_between_pauses": 0,
+                "customer_can_pause": false,
+                "customer_can_resume": false,
+                "require_reason": true,
+                "access_during_pause": "none"
+            }
+        },
+        "skip_renewal": {
+            "label": "skip",
+            "sha256": "149ff251d871d638c8bb92e44872cf59e714e0657aaec64d43407b660cf15c92",
+            "value": {
+                "enabled": false,
+                "max_cycles": 3,
+                "cutoff_days": 2,
+                "customer_can_skip": false
+            }
+        },
+        "multiple_subscriptions": {
+            "label": "multiple subscriptions",
+            "sha256": "a4179a1cc817c52e8912ffd788e1a9cdbd5c5ba0731c8820d17f6056138ec56a",
+            "value": {
+                "allow_multiple_in_cart": true,
+                "one_per_customer": false,
+                "auto_migrate_on_checkout": false,
+                "one_per_product": false,
+                "allow_mixed_cart": true,
+                "allow_different_cycles": true
+            }
+        },
+        "checkout": {
+            "label": "checkout",
+            "sha256": "8877038a30ace7b2b8afb22ee0c770d6a4fd454e071cf20f299a36919e157db7",
+            "value": {
+                "one_click_mode": "default",
+                "disable_cart_page": false,
+                "non_subscription_button_text": ""
+            }
+        },
+        "refunds": {
+            "label": "refunds",
+            "sha256": "ce1496c98467abb2b9e81f7b1c9a379e155108fea6a66056ed5cbb8d6fcbb20a",
+            "value": {
+                "cancellation_behavior": "none",
+                "auto_gateway_refund": false,
+                "allow_prorated_refunds": false,
+                "minimum_amount": 0.0
+            }
+        }
+    },
+    "settings_last_saved_at": "1792440230"
+}

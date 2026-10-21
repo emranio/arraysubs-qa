@@ -1,0 +1,108 @@
+Activity Audits
+Gateway Logs
+Renewal Failures
+Portal Action Failures
+Access-Rule Conflicts
+Scheduled-Job Logs
+
+Troubleshooting queue for failed renewal payments that still need action.
+
+Refresh
+Subscription	Customer	Failure	Failed	Last Attempted	Order	Actions
+#68881
+Active
+stripe
+	Sqa sqa-dv60-ladder
+sqa-dv60-ladder@example.com
+	
+the card was declined by the issuer
+Your card was declined.
+	Oct 19, 2026, 5:53 PM	Oct 19, 2026, 5:52 PM
+Retries: 3
+Next: Oct 20, 2026, 5:52 PM
+	#68903
+Failed
+$7.31
+	
+Retry
+Mark Resolved
+
+#68770
+Active
+stripe
+	Sqa sqa-dv59-after
+sqa-dv59-after@example.com
+	
+the card was declined by the issuer
+Your card was declined.
+	Oct 19, 2026, 5:28 PM	-	#68822
+Failed
+$7.31
+	
+Retry
+Mark Resolved
+
+#68525
+Active
+stripe
+	Sqa sqa-p2-grace
+sqa-p2-grace@example.com
+	
+the card was declined by the issuer
+Your card was declined.
+	Oct 19, 2026, 3:43 PM	Oct 19, 2026, 3:43 PM
+Retries: 1
+Next: Oct 20, 2026, 3:43 PM
+	#68553
+Failed
+$7.31
+	
+Retry
+Mark Resolved
+
+#68512
+Active
+stripe
+	Sqa sqa-p2-ladder
+sqa-p2-ladder@example.com
+	
+the card was declined by the issuer
+Your card was declined.
+	Oct 19, 2026, 3:44 PM	Oct 19, 2026, 3:44 PM
+Retries: 3
+Next: Oct 20, 2026, 3:44 PM
+	#68550
+Failed
+$7.31
+	
+Retry
+Mark Resolved
+
+#1773
+Cancelled
+stripe
+	Cust One
+cust1@example.com
+	
+an unknown error
+No such customer: 'cus_stage20_fixture'
+	Jun 24, 2026, 11:52 PM	Jun 24, 2026, 11:52 PM
+Retries: 2
+Next: Jun 25, 2026, 11:52 PM
+	-	
+Retry
+Mark Resolved
+
+#959
+Cancelled
+bacs
+	customer-classic
+customer-classic@example.test
+	
+an unknown error
+No gateway reason recorded.
+	May 25, 2026, 12:03 AM	May 25, 2026, 12:03 AM
+Next: May 26, 2026, 12:03 AM
+	-	
+Retry
+Mark Resolved

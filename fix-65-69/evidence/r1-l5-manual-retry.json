@@ -1,0 +1,7 @@
+{
+    "success": false,
+    "status": "pending",
+    "message": "No new charge was made. A payment for this renewal is still in progress or waiting for confirmation.",
+    "order_id": 69693
+}
+order=failed paid=false

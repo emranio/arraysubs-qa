@@ -1,0 +1,40 @@
+{
+    "sub": 68788,
+    "order": 68819,
+    "order_notes": [
+        "2026-10-19T11:28:09+00:00 | Renewal order for subscription #68788 (Cycle #1, scheduled for 19 October, 2026 5:28 PM, billing every 1 day). Order generated on 19 October, 2026 5:28 PM.",
+        "2026-10-19T11:28:50+00:00 | [Gateway: stripe] Payment failed — card_declined: Your card was declined.",
+        "2026-10-19T11:28:50+00:00 | Renewal payment failed: Your card was declined. Order status changed from Pending payment to Failed.",
+        "2026-10-19T11:28:51+00:00 | Email \"Failed order\" sent.",
+        "2026-10-19T11:28:51+00:00 | [Gateway: stripe] Payment failed — card_declined: Your card was declined.",
+        "2026-10-19T11:30:56+00:00 | Payment via Credit / Debit Card (ch_3USEkHJG5OzSNVs21BIoyYvX).",
+        "2026-10-19T11:30:57+00:00 | Email \"New order\" sent.",
+        "2026-10-19T11:30:59+00:00 | Stripe charge complete (Charge ID: ch_3USEkHJG5OzSNVs21BIoyYvX)"
+    ],
+    "subscription_notes": [
+        "2026-10-19T11:30:58+00:00 | Payment successful - Order #68819 (&#036;7.31)",
+        "2026-10-19T11:30:58+00:00 | Email sent: [ArraySubs] Renewal Payment Successful",
+        "2026-10-19T11:30:57+00:00 | [Gateway: stripe] Stripe payment confirmed via official webhook for order #68819.",
+        "2026-10-19T11:28:52+00:00 | [Process Renewal] &#10007; FailedYour card was declined.",
+        "2026-10-19T11:28:52+00:00 | Email sent: [ArraySubs] Renewal Payment Failed",
+        "2026-10-19T11:28:51+00:00 | Payment failed for Order #68819. Gateway: Stripe. Reason: Your card was declined.",
+        "2026-10-19T11:28:51+00:00 | No automatic retry was scheduled because this failure will not resolve on its own: the card was declined by the issuer. The customer needs to update their payment method.",
+        "2026-10-19T11:28:51+00:00 | Renewal payment failed: the card was declined by the issuer. Gateway message: \"Your card was declined.\".",
+        "2026-10-19T11:28:50+00:00 | [Gateway: stripe] Payment failed — card_declined: Your card was declined.",
+        "2026-10-19T11:28:48+00:00 | [Gateway: stripe] Creating Stripe off-session renewal PaymentIntent for order #68819.",
+        "2026-10-19T11:28:09+00:00 | Renewal invoice #68819 generated for payment due on 19 October, 2026 5:28 PM.",
+        "2026-10-19T11:28:09+00:00 | [Generate Renewal Invoice] &#10003; SuccessRan scheduled action for subscription #68788.",
+        "2026-10-19T11:27:05+00:00 | [Gateway Meta Retry] &#10003; SuccessRan scheduled action for subscription #68788.",
+        "2026-10-19T11:27:05+00:00 | [Gateway: stripe] Payment method updated by Stripe: Visa ending in 0341",
+        "2026-10-19T11:26:48+00:00 | Renewal date changed through the developer API.",
+        "2026-10-19T11:26:47+00:00 | Email sent: [ArraySubs] Trial Converted",
+        "2026-10-19T11:26:47+00:00 | Free trial ended. Subscription converted to paid.",
+        "2026-10-19T11:26:47+00:00 | Email sent: [ArraySubs] New Subscription",
+        "2026-10-19T11:26:46+00:00 | Status changed from Trial to Active. Changed by System.",
+        "2026-10-19T11:25:29+00:00 | Payment successful - Order #68786 (&#036;0.00)",
+        "2026-10-19T11:25:27+00:00 | Email sent: [ArraySubs] Trial Started",
+        "2026-10-19T11:25:27+00:00 | Free trial started. Trial ends on 20 October, 2026 5:25 PM.",
+        "2026-10-19T11:25:22+00:00 | Status changed from new to Trial. Changed by System.",
+        "2026-10-19T11:25:22+00:00 | Subscription created."
+    ]
+}

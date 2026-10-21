@@ -1,0 +1,31 @@
+### 2571 - 1 excl yes 10 2569
+line_subtotal=8.2645 line_subtotal_tax=1.7400 line_total=8.2645 line_tax=1.7400 cart_price=10
+[item meta] Today's charge: $10.00 (incl. VAT)
+line_subtotal=8.2645 line_subtotal_tax=1.7400 line_total=8.2645 line_tax=1.7400 cart_price=10
+[item meta] Today's charge: $10.00 (incl. VAT)
+== totals subtotal=16.52 subtotal_tax=3.48 discount=0 discount_tax=0 fee_total=0 fee_tax=0 shipping=0 total_tax=3.48 TOTAL=20.00
+[classic table] Today's Charge: Smoke Plan Plus$10.00 (incl. VAT)
+[classic table] Today's Charge: Smoke Plan$10.00 (incl. VAT)
+== PROTO sum=20.00 cart_total=20.00 MATCH
+### 2571 - 1 incl yes 10 2569
+line_subtotal=8.2645 line_subtotal_tax=1.7400 line_total=8.2645 line_tax=1.7400 cart_price=10
+[item meta] Today's charge: $10.00
+line_subtotal=8.2645 line_subtotal_tax=1.7400 line_total=8.2645 line_tax=1.7400 cart_price=10
+[item meta] Today's charge: $10.00
+== totals subtotal=16.52 subtotal_tax=3.48 discount=0 discount_tax=0 fee_total=0 fee_tax=0 shipping=0 total_tax=3.48 TOTAL=20.00
+[classic table] Today's Charge: Smoke Plan Plus$10.00
+[classic table] Today's Charge: Smoke Plan$10.00
+== PROTO sum=20.00 cart_total=20.00 MATCH
+### 206 welcome15 1 excl no -
+line_subtotal=19.9900 line_subtotal_tax=4.2000 line_total=16.9900 line_tax=3.5700 cart_price=19.99
+[item meta] Signup fee: $4.99 (one-time)
+[item meta] Today's charge: $26.60 (incl. VAT)
+== totals subtotal=19.99 subtotal_tax=4.2 discount=3 discount_tax=0.63 fee_total=4.99 fee_tax=1.05 shipping=0 total_tax=4.62 TOTAL=26.60
+[classic table] Today's Charge$26.60 (incl. VAT)
+== PROTO sum=26.60 cart_total=26.60 MATCH
+### 2571 qa-audit-coupon 1 excl no 209
+line_subtotal=209.0000 line_subtotal_tax=43.8900 line_total=188.1000 line_tax=39.5000 cart_price=209
+[item meta] Today's charge: $227.60 (incl. VAT)
+== totals subtotal=209 subtotal_tax=43.89 discount=20.9 discount_tax=4.389 fee_total=0 fee_tax=0 shipping=0 total_tax=39.5 TOTAL=227.60
+[classic table] Today's Charge$227.60 (incl. VAT)
+== PROTO sum=227.60 cart_total=227.60 MATCH

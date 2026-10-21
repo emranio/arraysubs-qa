@@ -1,0 +1,29 @@
+== arraysubs-gateway new lines (after line 373)
+2026-10-19T12:49:47+00:00 INFO [Gateway: arraysubs_stripe] [Webhook] Webhook received
+2026-10-19T12:49:47+00:00 INFO [Gateway: arraysubs_stripe] [Webhook] Duplicate webhook event skipped: evt_3USG0ZJG5OzSNVs21ptSbemb
+2026-10-19T12:49:48+00:00 INFO [Gateway: arraysubs_stripe] [Webhook] Webhook received
+2026-10-19T12:49:48+00:00 INFO [Gateway: arraysubs_stripe] [Webhook] Duplicate webhook event skipped: evt_3USG0ZJG5OzSNVs211QyPMhc
+2026-10-19T12:50:44+00:00 INFO [Gateway: stripe] Creating Stripe off-session renewal PaymentIntent for order #68965.
+2026-10-19T12:50:45+00:00 ERROR [Gateway: stripe] [Gateway: stripe] Payment failed — renewal_payment_method_binding_invalid: The stored Stripe payment method is not an exact reusable off-session match for this subscription. No charge was attempted.
+== woocommerce-gateway-stripe new lines (after line 1)
+== wc_logger new lines (after line 20)
+== new log files
+transactional-emails-2026-10-19-5c3603bcfe7f1569bb8a19bfbe039aae.log
+arraysubs-gateway-2026-10-19-78bb4e363cf06bd57b374ad524b53f11.log
+arraysubs-2026-10-19-52b4f313e8be78f4a16c2d38c6caf710.log
+wc_logger-2026-10-19-dd7b72b0460c2d638f4d4a7ac9271d12.log
+wc-analytics-order-import-2026-10-19-55c2a9dfd8e314e06da49b748c65b838.log
+woocommerce-gateway-stripe-2026-10-19-f2be582db518a39ca7b1a1093a71ac93.log
+arraysubs-gateway-2026-10-18-2ac4ac0eec0cd1b1aa1877da8d59352e.log
+transactional-emails-2026-10-18-716a1e71d0c0cfeb414977811d2edd35.log
+== arraysubs-2026-10-19 (new file created during the Store API request)
+2026-10-19T12:49:41+00:00 ERROR Subscription checkout creation failed for order #68822 (arraysubs_checkout_recovery_ambiguous_item).
+== lifecycle capture lines for sub 68770 after 12:49Z
+2026-10-19T12:49:48.128675Z renewed rest=True path=/wp-json/wc/store/v1/checkout/68822 source_hook=arraysubs_renewal_payment_complete order=68822
+2026-10-19T12:49:48.212802Z grace_recovered rest=True path=/wp-json/wc/store/v1/checkout/68822 source_hook=arraysubs_grace_recovered order=68822
+== read-only policy check
+orderRequiresReusableMethod(68822)=false
+== mail since baseline 28j22ADHcV1XsFRFtfzaS1 (sub 68770/order 68822 only)
+4p6AAcN2WYi73osK7EJ4iv 12:49:47Z admin: You've got a new order: #68822
+4qoxP9fReGyjgGFKPnojQD 12:49:47Z sqa-dv59-after@example.com: Payment received for subscription #68770 (Payment Method Link, next payment 20 Oct 2026)
+(unrelated in the same window: 2XKWf6jXRUtIQsMA6Of7IR / 36ElSIxeg9aNreQTnc7NiE / 4wYP8sdVMo7NeUp0MT6TFU are for order 68965 / sub 68788, customer 588, another agent's fixture)

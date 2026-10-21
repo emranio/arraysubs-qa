@@ -1,0 +1,7 @@
+68512 status=arraysubs-active attempts=3 meta_next=2026-10-20 09:44:20 derived=NULL dev.next_retry_at=null
+68525 status=arraysubs-cancelled attempts=1 meta_next=2026-10-20 09:43:29 derived=NULL dev.next_retry_at=null
+68881 status=arraysubs-active attempts= meta_next=- derived=NULL dev.next_retry_at=null
+68996 status=arraysubs-active attempts= meta_next=- derived=NULL dev.next_retry_at=null
+68439 status=arraysubs-active attempts= meta_next=- derived=NULL dev.next_retry_at=null
+68665 status=arraysubs-active attempts= meta_next=- derived=NULL dev.next_retry_at=null
+subs with attempts>0 and pending action: 0

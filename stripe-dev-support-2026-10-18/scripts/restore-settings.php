@@ -12,8 +12,8 @@
  */
 
 $file = $args[0] ?? '';
-$names = isset($args[1]) && '--apply' !== $args[1] ? array_filter(array_map('trim', explode(',', $args[1]))) : ['arraysubs_settings'];
-$apply = in_array('--apply', $args, true);
+$names = isset($args[1]) && ! in_array($args[1], ['--apply', 'apply'], true) ? array_filter(array_map('trim', explode(',', $args[1]))) : ['arraysubs_settings'];
+$apply = in_array('--apply', $args, true) || in_array('apply', $args, true); // WP-CLI rejects unknown --flags, so pass the bare word 'apply'.
 $snap = json_decode((string) file_get_contents($file), true);
 if (! is_array($snap) || empty($snap['options'])) {
     WP_CLI::error('Not a snapshot file: ' . $file);

@@ -1,0 +1,211 @@
+{
+    "now_utc": "2026-10-19 11:44:35",
+    "now_ts": 1792410275,
+    "id": 68512,
+    "post_status": "arraysubs-active",
+    "meta": {
+        "_payment_retry_attempts": "3",
+        "_payment_retry_last_attempt_at": "2026-10-19 09:44:20",
+        "_payment_retry_next_attempt_at": "2026-10-20 09:44:20",
+        "_last_payment_failure": "2026-10-19 09:44:37",
+        "_last_payment_failure_category": "card_declined",
+        "_last_payment_failure_reason": "Your card was declined.",
+        "_next_payment_date": "2026-10-19 09:43:18",
+        "_pending_renewal_order_id": "68550",
+        "_payment_gateway": "stripe",
+        "_customer_id": "583",
+        "_parent_order_id": "68511",
+        "_order_ids": "[68511,68550]",
+        "_renewal_failure_resolved": "",
+        "_stripe_payment_method": "",
+        "_payment_method": "stripe",
+        "_stripe_customer_id": ""
+    },
+    "dev_recovery": {
+        "due_at": 1792402998,
+        "evaluated_at": 1792410275,
+        "phase": "before_on_hold",
+        "renewal_overdue": true,
+        "unpaid_renewal_order_id": 68550,
+        "awaiting_gateway_settlement": false,
+        "retry_attempts": 3,
+        "next_retry_at": 1792489460,
+        "last_failure_at": 1792403077,
+        "failure_category": "card_declined",
+        "next_retry_at_utc": "2026-10-20 09:44:20"
+    },
+    "dev_status": {
+        "stored": "arraysubs-active",
+        "has_view_entitlement": true,
+        "terminal": false
+    },
+    "dev_schedule_next_payment_at_utc": "2026-10-19 09:43:18",
+    "retry_config": {
+        "enabled": true,
+        "max_attempts": 3,
+        "interval_seconds": 86400,
+        "intervals": [
+            86400,
+            86400,
+            86400
+        ],
+        "stop_on_hard_decline": true
+    },
+    "actions": [
+        {
+            "action_id": "100944",
+            "hook": "arraysubs_generate_renewal_invoice",
+            "status": "canceled",
+            "scheduled_date_gmt": "2026-10-20 06:29:57",
+            "last_attempt_gmt": "0000-00-00 00:00:00",
+            "args": "[68512]"
+        },
+        {
+            "action_id": "100945",
+            "hook": "arraysubs_process_renewal",
+            "status": "canceled",
+            "scheduled_date_gmt": "2026-10-20 12:29:57",
+            "last_attempt_gmt": "0000-00-00 00:00:00",
+            "args": "[68512]"
+        },
+        {
+            "action_id": "100946",
+            "hook": "arraysubs_gateway_meta_retry",
+            "status": "complete",
+            "scheduled_date_gmt": "2026-10-19 09:41:37",
+            "last_attempt_gmt": "2026-10-19 09:42:04",
+            "args": "[68512,68511,\"evt_1USD3XJG5OzSNVs2Of1amRCF\",1]"
+        },
+        {
+            "action_id": "100947",
+            "hook": "arraysubs_generate_renewal_invoice",
+            "status": "canceled",
+            "scheduled_date_gmt": "2026-10-20 06:29:57",
+            "last_attempt_gmt": "0000-00-00 00:00:00",
+            "args": "[68512]"
+        },
+        {
+            "action_id": "100948",
+            "hook": "arraysubs_process_renewal",
+            "status": "canceled",
+            "scheduled_date_gmt": "2026-10-20 12:29:57",
+            "last_attempt_gmt": "0000-00-00 00:00:00",
+            "args": "[68512]"
+        },
+        {
+            "action_id": "100959",
+            "hook": "arraysubs_generate_renewal_invoice",
+            "status": "canceled",
+            "scheduled_date_gmt": "2026-10-20 06:29:57",
+            "last_attempt_gmt": "0000-00-00 00:00:00",
+            "args": "[68512]"
+        },
+        {
+            "action_id": "100960",
+            "hook": "arraysubs_process_renewal",
+            "status": "canceled",
+            "scheduled_date_gmt": "2026-10-20 12:29:57",
+            "last_attempt_gmt": "0000-00-00 00:00:00",
+            "args": "[68512]"
+        },
+        {
+            "action_id": "100961",
+            "hook": "arraysubs_generate_renewal_invoice",
+            "status": "canceled",
+            "scheduled_date_gmt": "2026-10-20 06:31:12",
+            "last_attempt_gmt": "0000-00-00 00:00:00",
+            "args": "[68512]"
+        },
+        {
+            "action_id": "100962",
+            "hook": "arraysubs_process_renewal",
+            "status": "canceled",
+            "scheduled_date_gmt": "2026-10-20 12:31:12",
+            "last_attempt_gmt": "0000-00-00 00:00:00",
+            "args": "[68512]"
+        },
+        {
+            "action_id": "100963",
+            "hook": "arraysubs_generate_renewal_invoice",
+            "status": "complete",
+            "scheduled_date_gmt": "2026-10-19 09:42:48",
+            "last_attempt_gmt": "2026-10-19 09:43:05",
+            "args": "[68512]"
+        },
+        {
+            "action_id": "100964",
+            "hook": "arraysubs_process_renewal",
+            "status": "complete",
+            "scheduled_date_gmt": "2026-10-19 12:32:43",
+            "last_attempt_gmt": "2026-10-19 09:43:26",
+            "args": "[68512]"
+        },
+        {
+            "action_id": "100973",
+            "hook": "arraysubs_process_renewal",
+            "status": "complete",
+            "scheduled_date_gmt": "2026-10-20 09:43:25",
+            "last_attempt_gmt": "2026-10-19 09:44:04",
+            "args": "[68512]"
+        },
+        {
+            "action_id": "100975",
+            "hook": "arraysubs_process_renewal",
+            "status": "complete",
+            "scheduled_date_gmt": "2026-10-20 09:44:03",
+            "last_attempt_gmt": "2026-10-19 09:44:21",
+            "args": "[68512]"
+        },
+        {
+            "action_id": "100976",
+            "hook": "arraysubs_process_renewal",
+            "status": "complete",
+            "scheduled_date_gmt": "2026-10-20 09:44:20",
+            "last_attempt_gmt": "2026-10-19 09:44:38",
+            "args": "[68512]"
+        },
+        {
+            "action_id": "100997",
+            "hook": "arraysubs_send_stripe_renewal_verification",
+            "status": "complete",
+            "scheduled_date_gmt": "2026-10-19 09:52:09",
+            "last_attempt_gmt": "2026-10-19 09:53:04",
+            "args": "[68512,68550,\"pi_3USD7QJG5OzSNVs204I3O4KH\",1]"
+        }
+    ],
+    "pending_actions": [],
+    "as_has_scheduled_process_renewal": false,
+    "notes_latest": [
+        {
+            "id": 68634,
+            "gmt": "2026-10-19 09:53:04",
+            "text": "[Send Stripe Renewal Verification] &#10003; SuccessRan scheduled action for subscription #68512."
+        },
+        {
+            "id": 68593,
+            "gmt": "2026-10-19 09:44:38",
+            "text": "[Gateway: stripe] Payment failed \u2014 card_declined: Your card was declined."
+        },
+        {
+            "id": 68592,
+            "gmt": "2026-10-19 09:44:38",
+            "text": "[Process Renewal] &#10007; FailedYour card was declined."
+        },
+        {
+            "id": 68591,
+            "gmt": "2026-10-19 09:44:37",
+            "text": "Email sent: [ArraySubs] Renewal Payment Failed"
+        },
+        {
+            "id": 68590,
+            "gmt": "2026-10-19 09:44:37",
+            "text": "Payment failed for Order #68550. Gateway: Stripe. Reason: Your card was declined."
+        },
+        {
+            "id": 68589,
+            "gmt": "2026-10-19 09:44:37",
+            "text": "Reached the configured retry limit (3). No further automatic retries will be scheduled. The subscription will continue through the standard grace period; an admin or customer can also trigger a manual retry."
+        }
+    ],
+    "notes_total": 44
+}

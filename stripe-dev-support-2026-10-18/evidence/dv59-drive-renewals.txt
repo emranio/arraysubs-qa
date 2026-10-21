@@ -1,0 +1,14 @@
+sub 68788 endTrial at 2026-10-19T11:26:46+00:00
+after endTrial: status=arraysubs-active next=2026-10-20 11:26:47 trial_end=2026-10-20 11:25:21
+setNextPaymentDate(1792409298 = 2026-10-19T11:28:18+00:00) at 2026-10-19T11:26:48+00:00
+after setNextPaymentDate: status=arraysubs-active next=2026-10-19 11:28:18 invoice_action=101134 renewal_action=101135
+sub 68770 endTrial at 2026-10-19T11:26:50+00:00
+after endTrial: status=arraysubs-active next=2026-10-20 11:26:51 trial_end=2026-10-20 11:24:04
+setNextPaymentDate(1792409302 = 2026-10-19T11:28:22+00:00) at 2026-10-19T11:26:52+00:00
+after setNextPaymentDate: status=arraysubs-active next=2026-10-19 11:28:22 invoice_action=101140 renewal_action=101141
+run 101135 (before, sub 68788) start 2026-10-19T11:28:45Z
+Success: Executed 1 action.
+end 2026-10-19T11:28:52Z
+run 101141 (after, sub 68770) start 2026-10-19T11:28:52Z
+Success: Executed 1 action.
+end 2026-10-19T11:29:00Z

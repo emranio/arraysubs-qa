@@ -1,0 +1,28 @@
+== WP-CLI 2026-10-20T09:32:37Z
+{
+    "is_ssl": false,
+    "get_site_url": "https://mirror-help.arrayhash.com",
+    "site_identity_url": "https://mirror-help.arrayhash.com",
+    "site_identity_key": "mirror-help.arrayhash.com",
+    "matches_home_option": true,
+    "matches_https": true,
+    "matches_http_slash": true,
+    "matches_other_site": false,
+    "matches_empty": false,
+    "checkout_creation_key": "d6a3fb10cacd9ceb",
+    "plan_switch_key": "b157991a6c3fedd2"
+}
+== plain php as www-data, no HTTPS
+{
+    "is_ssl": false,
+    "get_site_url": "http://mirror-help.arrayhash.com",
+    "site_identity_url": "https://mirror-help.arrayhash.com",
+    "site_identity_key": "mirror-help.arrayhash.com",
+    "matches_home_option": true,
+    "matches_https": true,
+    "matches_http_slash": true,
+    "matches_other_site": false,
+    "matches_empty": false,
+    "checkout_creation_key": "d6a3fb10cacd9ceb",
+    "plan_switch_key": "b157991a6c3fedd2"
+}

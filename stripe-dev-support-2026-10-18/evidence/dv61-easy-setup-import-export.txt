@@ -1,0 +1,30 @@
+Issue 61 - Easy Setup (1-Minute Setup) export/import inspection - 2026-10-19T11:41:00Z
+Route: https://mirror-help.arrayhash.com/wp-admin/admin.php?page=arraysubs-mainadmin#/easy-setup (session dv61-admin, user admin)
+Every ArraySubs settings page (General, Toolkit, Plan Switching, Refunds, Skip & Pause, Feature Manager, Integrations) shows a 'Quick Setup & Import/Export' link -> #/easy-setup.
+
+1) EXPORT (UI button 'Export Settings', read-only GET /arraysubs/v1/easy-setup/export), file arraysubs-settings-<date>.json kept in the agent scratchpad only (23550 bytes):
+   meta.format=arraysubs-settings module_version=2.0.0 plugin_version=2.0.9 pro_version=1.2.8 export_date=2026-10-19T17:31:58+06:00
+   meta.sections=['subscription_settings', 'cancellation_flow', 'store_credit', 'feature_manager', 'myaccount_builder', 'checkout_builder', 'members_access', 'toolkit', 'integrations', 'audits', 'cart_info_editor', 'emails', 'profile_fields', 'modules']
+   options.arraysubs_settings.payment_retry={"enabled": true, "interval_hours": [24, 24, 24], "stop_on_hard_decline": true}
+
+2) IMPORT UI (inspected, nothing imported): Import Settings > Choose JSON File (the unmodified export) > client-side parse > section list:
+   'Subscription Settings' - 'Billing, renewals, checkout, trials, retries, plan switching, proration, and refunds' (checked by default; 14 sections listed)
+   Buttons: 'Import Selected', 'Cancel'. Clicked 'Cancel' -> select step closed, no result panel (selectStillOpen=false, resultShown=false).
+   Screenshot: /home/server-manager/www/arrayhash/mirror-help.arrayhash.com/public/wp-content/plugins/qa/stripe-dev-support-2026-10-18/screenshots/dv61-easy-setup-import-select.png
+   Code: SetupController::SETTINGS_KEY_MAP['subscription_settings'] includes 'payment_retry' (arraysubs/src/Features/EasySetup/REST/SetupController.php:92); importSettings() -> prepareImportSection() -> sanitizeMainSettings() (SettingsController::sanitizeSettings, SettingsController.php:293-303) -> applyImportedSettingsPatch() -> persistImportChanges(). No checksum/signature: a hand-edited file passes validateImportPayload() if format/module_version/manifest are intact.
+
+3) DRY RUN of the import pipeline via Reflection (no constructor, persistImportChanges NOT called, nothing written). Input: the export above with payment_retry edited in memory to {enabled:true, interval_hours:[6,48,168], stop_on_hard_decline:false}:
+   validateImportPayload: true
+   prepared.found=true keys=defaults,button_text,multiple_subscriptions,renewals,payment_retry,checkout,trials,customer_actions,skip_renewal,pause_subscription,plan_switching,proration,refunds,automatic_payments
+   prepared.payment_retry={"enabled":true,"interval_hours":[6,48,168],"stop_on_hard_decline":false}
+   sanitized.payment_retry={"enabled":true,"interval_hours":[6,48,168],"stop_on_hard_decline":false}
+   validateSanitizedPatch: true
+   WOULD STORE next.payment_retry={"enabled":true,"interval_hours":[6,48,168],"stop_on_hard_decline":false}
+   stored payment_retry before={"enabled":true,"interval_hours":[24,24,24],"stop_on_hard_decline":true} after={"enabled":true,"interval_hours":[24,24,24],"stop_on_hard_decline":true}
+   last_saved_at before=1792403339 after=1792403339
+   option unchanged=true
+
+4) SETUP WIZARD (Review setup): 10 steps - Your Business, Billing & Renewal Rules, Customize Shop & My Account Experiences, Checkout & Cart Rules, Plan Switching, Cancellation & Retention, Refunds, Emails & Notifications, Additional Features & Tools, Review & Apply ('37 answers are ready to apply'). No step or review row mentions retry/retries/ladder/hard decline/dunning/interval. Closed via 'Close modal' -> 'Discard wizard progress?' -> 'Discard wizard'; 'Apply Settings' never clicked. Wizard source (arraysubs/src/resources/pages/EasySetup/wizard/*, 10 files): 0 matches for retry|retries|dunning.
+   Screenshots: /home/server-manager/www/arrayhash/mirror-help.arrayhash.com/public/wp-content/plugins/qa/stripe-dev-support-2026-10-18/screenshots/dv61-easy-setup-wizard-step1.png, /home/server-manager/www/arrayhash/mirror-help.arrayhash.com/public/wp-content/plugins/qa/stripe-dev-support-2026-10-18/screenshots/dv61-easy-setup-wizard-review.png
+
+5) Stored settings after all steps: {"payment_retry":{"enabled":true,"interval_hours":[24,24,24],"stop_on_hard_decline":true},"arraysubs_settings_last_saved_at":1792403339} (1792403339 = 2026-10-19T09:48:59Z, before this test)

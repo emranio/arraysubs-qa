@@ -220,3 +220,120 @@
 {"timestamp":"2026-10-18T17:31:10.07969+06:00","action":"edit","task_id":53,"detail":"Guard alternate renewal prices through subscription billing constraints"}
 {"timestamp":"2026-10-18T18:00:15.810975+06:00","action":"edit","task_id":51,"detail":"Developer support Stripe browser verification needs test configuration"}
 {"timestamp":"2026-10-19T09:33:43.394259074+02:00","action":"create","task_id":55,"detail":"Block checkout once produced two concurrent orders and charges"}
+{"timestamp":"2026-10-19T11:18:06.990651009+02:00","action":"create","task_id":56,"detail":"Stripe portal card updates are always refused for existing subscriptions"}
+{"timestamp":"2026-10-19T11:21:05.887219876+02:00","action":"edit","task_id":56,"detail":"Stripe portal card updates are always refused for existing subscriptions"}
+{"timestamp":"2026-10-19T11:25:49.478860658+02:00","action":"create","task_id":57,"detail":"Stripe declines are always classified as hard card_declined, so retries never run"}
+{"timestamp":"2026-10-19T11:35:08.65914517+02:00","action":"create","task_id":58,"detail":"Authentication-required Stripe renewal cannot be completed after a 3DS checkout"}
+{"timestamp":"2026-10-19T11:38:58.102543582+02:00","action":"create","task_id":59,"detail":"Verification sweep turns declined Stripe renewals into authentication cases and locks Pay Now"}
+{"timestamp":"2026-10-19T11:49:45.245744758+02:00","action":"create","task_id":60,"detail":"Developer data keeps a past retry time after the retry ladder is exhausted"}
+{"timestamp":"2026-10-19T11:49:45.333519174+02:00","action":"create","task_id":61,"detail":"Payment retry ladder has no admin setting although notes point merchants to it"}
+{"timestamp":"2026-10-19T11:52:16.548859316+02:00","action":"edit","task_id":59,"detail":"Verification sweep turns declined Stripe renewals into authentication cases and locks Pay Now"}
+{"timestamp":"2026-10-19T16:00:56.984346195+02:00","action":"create","task_id":62,"detail":"Paying a failed Stripe renewal with an unsaved card rebinds the subscription to an unusable payment method"}
+{"timestamp":"2026-10-19T16:00:57.082357278+02:00","action":"create","task_id":63,"detail":"Store API order payment (Link) bypasses the renewal verification lock and leaves stale action markers"}
+{"timestamp":"2026-10-19T16:00:57.205737611+02:00","action":"create","task_id":64,"detail":"Same-payment-method Stripe events wipe renewal failure and retry state"}
+{"timestamp":"2026-10-19T16:01:19.409753062+02:00","action":"edit","task_id":56,"detail":"Stripe portal card updates are always refused for existing subscriptions"}
+{"timestamp":"2026-10-19T16:01:19.488449069+02:00","action":"edit","task_id":57,"detail":"Stripe declines are always classified as hard card_declined, so retries never run"}
+{"timestamp":"2026-10-19T16:01:19.616834187+02:00","action":"edit","task_id":58,"detail":"Authentication-required Stripe renewal cannot be completed after a 3DS checkout"}
+{"timestamp":"2026-10-19T16:01:19.73599663+02:00","action":"edit","task_id":59,"detail":"Verification sweep turns declined Stripe renewals into authentication cases and locks Pay Now"}
+{"timestamp":"2026-10-19T16:01:19.808590431+02:00","action":"edit","task_id":60,"detail":"Developer data keeps a past retry time after the retry ladder is exhausted"}
+{"timestamp":"2026-10-19T16:01:19.898482631+02:00","action":"edit","task_id":61,"detail":"Payment retry ladder has no admin setting although notes point merchants to it"}
+{"timestamp":"2026-10-19T20:18:45.391664125+02:00","action":"move","task_id":57,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-10-19T20:24:21.284659985+02:00","action":"move","task_id":60,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-10-19T20:29:42.056225223+02:00","action":"move","task_id":59,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-10-19T20:29:42.059594194+02:00","action":"move","task_id":63,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-10-19T20:36:21.120746516+02:00","action":"move","task_id":56,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-10-19T20:36:21.12304569+02:00","action":"move","task_id":62,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-10-19T20:36:21.123995095+02:00","action":"move","task_id":64,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-10-19T20:43:07.558436591+02:00","action":"move","task_id":61,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-10-19T20:51:40.565972149+02:00","action":"move","task_id":58,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-10-19T23:52:54.573774777+02:00","action":"create","task_id":65,"detail":"Stripe: a WooCommerce-created Pay-page PaymentIntent stops later automatic renewal attempts"}
+{"timestamp":"2026-10-19T23:53:15.976809898+02:00","action":"create","task_id":66,"detail":"Stripe: a Pay-page bank debit or payment under review is not treated as settling by the grace sweeps"}
+{"timestamp":"2026-10-19T23:53:16.06597448+02:00","action":"create","task_id":67,"detail":"Stripe: asynchronous renewal failures are not recorded as payment failures or retried"}
+{"timestamp":"2026-10-19T23:53:16.147540454+02:00","action":"create","task_id":68,"detail":"Mollie mandate rebinder listens to a WooCommerce action that never fires"}
+{"timestamp":"2026-10-20T00:35:28.09619978+02:00","action":"move","task_id":56,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-10-20T00:35:28.104553513+02:00","action":"move","task_id":57,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-10-20T00:35:28.106134542+02:00","action":"move","task_id":58,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-10-20T00:35:28.106965258+02:00","action":"move","task_id":59,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-10-20T00:35:28.107765255+02:00","action":"move","task_id":60,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-10-20T00:35:28.109812581+02:00","action":"move","task_id":61,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-10-20T00:35:28.11117244+02:00","action":"move","task_id":62,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-10-20T00:35:28.113815745+02:00","action":"move","task_id":63,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-10-20T00:35:28.117080085+02:00","action":"move","task_id":64,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-10-20T08:33:56.997190351+02:00","action":"create","task_id":69,"detail":"Checkout summary Today's Charge ignores initial-payment-only coupons and tax"}
+{"timestamp":"2026-10-20T08:36:08.813004909+02:00","action":"move","task_id":65,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-10-20T09:06:09.048401394+02:00","action":"move","task_id":68,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-10-20T09:10:57.346725706+02:00","action":"move","task_id":68,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-10-20T09:17:55.078917766+02:00","action":"move","task_id":67,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-10-20T09:30:42.659453767+02:00","action":"move","task_id":69,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-10-20T09:45:31.227879593+02:00","action":"create","task_id":70,"detail":"Paddle: site URL checks fail when the same data is read over HTTPS and in a non-HTTPS scheduled run"}
+{"timestamp":"2026-10-20T09:47:15.2879009+02:00","action":"move","task_id":70,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-10-20T09:51:18.266713091+02:00","action":"move","task_id":66,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-10-20T14:13:53.605820395+02:00","action":"create","task_id":71,"detail":"Pay page accepts a second payment while an automatic renewal debit is still in flight"}
+{"timestamp":"2026-10-20T14:13:53.676809584+02:00","action":"create","task_id":72,"detail":"Initial-order charge attribution gives a subscription a negative share when a discount is larger than its line"}
+{"timestamp":"2026-10-20T16:24:13.348702683+02:00","action":"create","task_id":73,"detail":"Per-cart member discount counts a free-trial line at its regular price, so a fixed discount comes off products the rule excludes"}
+{"timestamp":"2026-10-20T16:24:13.437256832+02:00","action":"create","task_id":74,"detail":"Per-item member discount price overrides a free trial's $0 cart price, so members pay for a free trial"}
+{"timestamp":"2026-10-20T16:24:13.517777608+02:00","action":"create","task_id":75,"detail":"Paid checkout-migration (plan_switch_checkout) order never switches the subscription: arraysubs_order_paid is suppressed for it"}
+{"timestamp":"2026-10-20T16:24:13.586382325+02:00","action":"create","task_id":76,"detail":"Checkout migration to a plan with a free trial can make needs_payment() false while the cart total is above zero"}
+{"timestamp":"2026-10-20T16:24:13.654378281+02:00","action":"create","task_id":77,"detail":"Pro OverviewHooks::invalidateCache() runs an unescaped LIKE DELETE that scans and locks every wp_options row on each status change"}
+{"timestamp":"2026-10-20T18:45:27.433915457+02:00","action":"edit","task_id":74,"detail":"Per-item member discount price overrides every engine-set cart price (free trial $0, checkout migration, renewal-sync and segment prorate), so members are overcharged"}
+{"timestamp":"2026-10-20T18:45:44.749808165+02:00","action":"edit","task_id":76,"detail":"Checkout migration to a plan with a free trial can make needs_payment() false while the cart total is above zero"}
+{"timestamp":"2026-10-20T18:46:01.433353619+02:00","action":"create","task_id":78,"detail":"Pro subscription bundle get_price() ignores the cart's set_price(), so a bundle in its renewal-sync prorate segment is charged the full bundle price"}
+{"timestamp":"2026-10-20T18:46:13.114910833+02:00","action":"edit","task_id":71,"detail":"Pay page accepts a second payment while an automatic renewal debit is still in flight"}
+{"timestamp":"2026-10-20T19:27:41.312057055+02:00","action":"move","task_id":71,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-10-20T19:27:41.374256438+02:00","action":"move","task_id":72,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-10-20T19:27:41.431367855+02:00","action":"move","task_id":73,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-10-20T19:27:41.495382141+02:00","action":"move","task_id":74,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-10-20T19:27:41.561998394+02:00","action":"move","task_id":75,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-10-20T19:27:41.629221543+02:00","action":"move","task_id":76,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-10-20T19:27:41.691784382+02:00","action":"move","task_id":77,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-10-20T19:27:41.759111466+02:00","action":"move","task_id":78,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-10-21T01:33:16.256608685+02:00","action":"edit","task_id":65,"detail":"Stripe: a WooCommerce-created Pay-page PaymentIntent stops later automatic renewal attempts"}
+{"timestamp":"2026-10-21T01:33:16.317131111+02:00","action":"move","task_id":65,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-10-21T01:33:16.380066873+02:00","action":"edit","task_id":66,"detail":"Stripe: a Pay-page bank debit or payment under review is not treated as settling by the grace sweeps"}
+{"timestamp":"2026-10-21T01:33:16.43971834+02:00","action":"move","task_id":66,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-10-21T01:33:16.502943811+02:00","action":"edit","task_id":67,"detail":"Stripe: asynchronous renewal failures are not recorded as payment failures or retried"}
+{"timestamp":"2026-10-21T01:33:16.562513326+02:00","action":"move","task_id":67,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-10-21T01:33:16.634702109+02:00","action":"edit","task_id":69,"detail":"Checkout summary Today's Charge ignores initial-payment-only coupons and tax"}
+{"timestamp":"2026-10-21T01:33:16.6995952+02:00","action":"move","task_id":69,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-10-21T01:33:16.761692213+02:00","action":"edit","task_id":70,"detail":"Paddle: site URL checks fail when the same data is read over HTTPS and in a non-HTTPS scheduled run"}
+{"timestamp":"2026-10-21T01:33:16.820856564+02:00","action":"move","task_id":70,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-10-21T01:34:12.076271687+02:00","action":"create","task_id":79,"detail":"Product decision: a plan switch at checkout charges the target plan's signup fee (a switch from the subscription screen does not)"}
+{"timestamp":"2026-10-21T01:34:12.13025668+02:00","action":"create","task_id":80,"detail":"Order charge attribution: when no item gives a subscription any amount, the single linked subscription owns the whole order total (legacy branch)"}
+{"timestamp":"2026-10-21T01:34:12.184050137+02:00","action":"create","task_id":81,"detail":"Pro subscription shipping: free-shipping subscriptions with a renewal shipping override get renewal lines labelled with the checkout package name"}
+{"timestamp":"2026-10-21T01:34:12.235743761+02:00","action":"create","task_id":82,"detail":"Store API pay-for-order still validates the session cart against One Subscription Per Customer restrictions"}
+{"timestamp":"2026-10-21T01:34:12.290844218+02:00","action":"create","task_id":83,"detail":"Developer API DiscountEngine reader reports a wrong member price for Pro subscription bundles; Store API product sale_price for bundles can differ in a fresh request"}
+{"timestamp":"2026-10-21T02:09:42.41524551+02:00","action":"edit","task_id":71,"detail":"Pay page accepts a second payment while an automatic renewal debit is still in flight"}
+{"timestamp":"2026-10-21T02:09:42.480345234+02:00","action":"move","task_id":71,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-10-21T02:09:42.549274969+02:00","action":"edit","task_id":72,"detail":"Initial-order charge attribution gives a subscription a negative share when a discount is larger than its line"}
+{"timestamp":"2026-10-21T02:09:42.619215062+02:00","action":"move","task_id":72,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-10-21T02:09:42.686052005+02:00","action":"edit","task_id":73,"detail":"Per-cart member discount counts a free-trial line at its regular price, so a fixed discount comes off products the rule excludes"}
+{"timestamp":"2026-10-21T02:09:42.742797118+02:00","action":"move","task_id":73,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-10-21T02:09:42.802100176+02:00","action":"edit","task_id":74,"detail":"Per-item member discount price overrides every engine-set cart price (free trial $0, checkout migration, renewal-sync and segment prorate), so members are overcharged"}
+{"timestamp":"2026-10-21T02:09:42.855372392+02:00","action":"move","task_id":74,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-10-21T02:09:42.918625263+02:00","action":"edit","task_id":75,"detail":"Paid checkout-migration (plan_switch_checkout) order never switches the subscription: arraysubs_order_paid is suppressed for it"}
+{"timestamp":"2026-10-21T02:09:42.974276993+02:00","action":"move","task_id":75,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-10-21T02:09:43.029683247+02:00","action":"edit","task_id":76,"detail":"Checkout migration to a plan with a free trial can make needs_payment() false while the cart total is above zero"}
+{"timestamp":"2026-10-21T02:09:43.098370551+02:00","action":"move","task_id":76,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-10-21T02:09:43.169193124+02:00","action":"edit","task_id":77,"detail":"Pro OverviewHooks::invalidateCache() runs an unescaped LIKE DELETE that scans and locks every wp_options row on each status change"}
+{"timestamp":"2026-10-21T02:09:43.238641292+02:00","action":"move","task_id":77,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-10-21T02:09:43.327344977+02:00","action":"edit","task_id":78,"detail":"Pro subscription bundle get_price() ignores the cart's set_price(), so a bundle in its renewal-sync prorate segment is charged the full bundle price"}
+{"timestamp":"2026-10-21T02:09:43.389101587+02:00","action":"move","task_id":78,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-10-21T07:18:53.64766588+02:00","action":"edit","task_id":79,"detail":"Product decision: a plan switch at checkout charges the target plan's signup fee (a switch from the subscription screen does not)"}
+{"timestamp":"2026-10-21T07:18:53.809603864+02:00","action":"move","task_id":79,"detail":"open -\u003e closed"}
+{"timestamp":"2026-10-21T07:18:53.899824047+02:00","action":"edit","task_id":80,"detail":"Order charge attribution: when no item gives a subscription any amount, the single linked subscription owns the whole order total (legacy branch)"}
+{"timestamp":"2026-10-21T07:18:54.002218859+02:00","action":"move","task_id":80,"detail":"open -\u003e closed"}
+{"timestamp":"2026-10-21T07:18:54.104277108+02:00","action":"move","task_id":81,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-10-21T07:18:54.184687185+02:00","action":"move","task_id":82,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-10-21T07:18:54.311731387+02:00","action":"move","task_id":83,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-10-21T10:47:53.2047328+02:00","action":"edit","task_id":81,"detail":"Pro subscription shipping: free-shipping subscriptions with a renewal shipping override get renewal lines labelled with the checkout package name"}
+{"timestamp":"2026-10-21T10:47:53.268765713+02:00","action":"move","task_id":81,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-10-21T10:47:53.326614946+02:00","action":"edit","task_id":82,"detail":"Store API pay-for-order still validates the session cart against One Subscription Per Customer restrictions"}
+{"timestamp":"2026-10-21T10:47:53.386339274+02:00","action":"move","task_id":82,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-10-21T10:47:53.455103576+02:00","action":"edit","task_id":83,"detail":"Developer API DiscountEngine reader reports a wrong member price for Pro subscription bundles; Store API product sale_price for bundles can differ in a fresh request"}
+{"timestamp":"2026-10-21T10:47:53.521094075+02:00","action":"move","task_id":83,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-10-21T11:53:56.25062+02:00","action":"edit","task_id":81,"detail":"Pro subscription shipping: free-shipping subscriptions with a renewal shipping override get renewal lines labelled with the checkout package name"}
+{"timestamp":"2026-10-21T12:24:22.656257144+02:00","action":"create","task_id":84,"detail":"Pro subscription shipping: a plan switch to a product with blank shipping overrides drops renewal shipping to 0"}
+{"timestamp":"2026-10-21T12:47:09.962655897+02:00","action":"edit","task_id":84,"detail":"Pro subscription shipping: a plan switch to a product with blank shipping overrides drops renewal shipping to 0"}
+{"timestamp":"2026-10-21T12:47:10.025912211+02:00","action":"edit","task_id":81,"detail":"Pro subscription shipping: free-shipping subscriptions with a renewal shipping override get renewal lines labelled with the checkout package name"}
+{"timestamp":"2026-10-21T14:31:42.42376495+02:00","action":"edit","task_id":84,"detail":"Pro subscription shipping: a plan switch to a product with blank shipping overrides drops renewal shipping to 0"}
+{"timestamp":"2026-10-21T14:31:42.487908668+02:00","action":"move","task_id":84,"detail":"open -\u003e closed"}

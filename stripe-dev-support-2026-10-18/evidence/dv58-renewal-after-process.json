@@ -1,0 +1,143 @@
+{
+    "checked_at_utc": "2026-10-19T11:10:39+00:00",
+    "subscription": {
+        "id": 68709,
+        "post_status": "arraysubs-active",
+        "meta": {
+            "_next_payment_date": "2026-10-19 11:09:55",
+            "_pending_renewal_order_id": "68736",
+            "_gateway_payment_method_id": "pm_1USEKOJG5OzSNVs2NFfols6o",
+            "_arraysubs_payment_action_intent_id": "pi_3USESYJG5OzSNVs21QSPrfSN",
+            "_arraysubs_payment_action_url": "https://mirror-help.arrayhash.com/checkout/order-pay/68736/?pay_for_order=true&key=<r>&wc-stripe-confirmation=1",
+            "_renewal_action_id": "101079",
+            "_renewal_invoice_action_id": "101078",
+            "_completed_payments": "1",
+            "_last_payment_date": "2026-10-19 11:03:02"
+        },
+        "meta_extra": {
+            "_last_gateway_transaction_id": "ch_3USEKTJG5OzSNVs21sPmclhS"
+        }
+    },
+    "actions": [
+        {
+            "action_id": "101065",
+            "hook": "arraysubs_generate_renewal_invoice",
+            "status": "canceled",
+            "scheduled_date_gmt": "2026-10-20 08:28:49",
+            "last_attempt_gmt": "0000-00-00 00:00:00"
+        },
+        {
+            "action_id": "101066",
+            "hook": "arraysubs_process_renewal",
+            "status": "canceled",
+            "scheduled_date_gmt": "2026-10-20 14:28:49",
+            "last_attempt_gmt": "0000-00-00 00:00:00"
+        },
+        {
+            "action_id": "101067",
+            "hook": "arraysubs_generate_renewal_invoice",
+            "status": "canceled",
+            "scheduled_date_gmt": "2026-10-20 08:28:49",
+            "last_attempt_gmt": "0000-00-00 00:00:00"
+        },
+        {
+            "action_id": "101068",
+            "hook": "arraysubs_process_renewal",
+            "status": "canceled",
+            "scheduled_date_gmt": "2026-10-20 14:28:49",
+            "last_attempt_gmt": "0000-00-00 00:00:00"
+        },
+        {
+            "action_id": "101078",
+            "hook": "arraysubs_generate_renewal_invoice",
+            "status": "complete",
+            "scheduled_date_gmt": "2026-10-19 11:09:26",
+            "last_attempt_gmt": "2026-10-19 11:10:06"
+        },
+        {
+            "action_id": "101079",
+            "hook": "arraysubs_process_renewal",
+            "status": "complete",
+            "scheduled_date_gmt": "2026-10-19 14:36:37",
+            "last_attempt_gmt": "2026-10-19 11:10:31"
+        },
+        {
+            "action_id": "101081",
+            "hook": "arraysubs_send_stripe_renewal_verification",
+            "status": "pending",
+            "scheduled_date_gmt": "2026-10-19 11:10:36",
+            "last_attempt_gmt": "0000-00-00 00:00:00"
+        }
+    ],
+    "order": {
+        "id": 68736,
+        "status": "pending",
+        "total": "7.31",
+        "payment_method": "stripe",
+        "created_utc": "2026-10-19T11:10:04+00:00",
+        "is_paid": false,
+        "token_ids": [],
+        "meta": {
+            "_arraysubs_charge_attempt_at": "2026-10-19 11:10:30",
+            "_arraysubs_charge_attempt_gateway": "stripe",
+            "_arraysubs_charge_attempt_id": "68b34d53-c1de-49b0-b5a4-4ca60dbfd985",
+            "_arraysubs_charge_attempt_transaction_id": "pi_3USESYJG5OzSNVs21QSPrfSN",
+            "_arraysubs_computed_type": "Subs Renew",
+            "_arraysubs_has_subscription_product": "yes",
+            "_arraysubs_payment_action_intent_id": "pi_3USESYJG5OzSNVs21QSPrfSN",
+            "_arraysubs_payment_action_required_at": "2026-10-19 11:10:32",
+            "_arraysubs_payment_action_url": "https://mirror-help.arrayhash.com/checkout/order-pay/68736/?pay_for_order=true&key=<r>&wc-stripe-confirmation=1",
+            "_arraysubs_pending_transaction_id": "pi_3USESYJG5OzSNVs21QSPrfSN",
+            "_arraysubs_stripe_requires_action_notice_key": "{\"3c272601977a3e3092aba4ab47d40f82d04036c355ab5ed8736fd124b1059ccf\":{\"status\":\"pending\",\"intent_id\":\"pi_3USESYJG5OzSNVs21QSPrfSN\",\"attempts\":0,\"updated_at\":\"2026-10-19 11:10:32\"}}",
+            "_gateway_payment_method_id": "pm_1USEKOJG5OzSNVs2NFfols6o",
+            "_is_renewal_order": "yes",
+            "_payment_gateway": "stripe",
+            "_renewal_cycle_number": "2",
+            "_renewal_scheduled_date": "2026-10-19 11:09:55",
+            "_stripe_customer_id": "cus_VTAfpPVaUhxMOj",
+            "_stripe_intent_id": "pi_3USESYJG5OzSNVs21QSPrfSN",
+            "_stripe_source_id": "pm_1USEKOJG5OzSNVs2NFfols6o",
+            "_stripe_upe_payment_type": "card",
+            "_subscription_id": "68709",
+            "_subscription_renewal": "68709"
+        },
+        "notes": [
+            "2026-10-19T11:10:05+00:00 | Renewal order for subscription #68709 (Cycle #2, scheduled for 19 October, 2026 5:09 PM, billing every 1 day). Order generated on 19 October, 2026 5:10 PM.",
+            "2026-10-19T11:10:31+00:00 | [Gateway: stripe] Payment failed \u2014 requires_action: Payment requires customer authentication.",
+            "2026-10-19T11:10:31+00:00 | Payment requires customer authentication."
+        ]
+    },
+    "stripe_pi": {
+        "id": "pi_3USESYJG5OzSNVs21QSPrfSN",
+        "status": "requires_payment_method",
+        "amount": 731,
+        "pm": null,
+        "customer": "cus_VTAfpPVaUhxMOj",
+        "last_error_code": "authentication_required",
+        "last_error_decline": "authentication_required",
+        "last_error_msg": "This payment requires authentication. If the customer is off session, ask them to return to your application and complete the payment.",
+        "next_action": null,
+        "latest_charge": null,
+        "setup_future_usage": null,
+        "pm_types": [
+            "card"
+        ],
+        "created": "2026-10-19T11:10:30+00:00"
+    },
+    "subscription_notes": [
+        "2026-10-19T11:10:31+00:00 | [Gateway: stripe] Payment failed \u2014 requires_action: Payment requires customer authentication.",
+        "2026-10-19T11:10:31+00:00 | [Process Renewal] &#10003; SuccessProcessed renewal for subscription #68709.",
+        "2026-10-19T11:10:30+00:00 | [Gateway: stripe] Creating Stripe off-session renewal PaymentIntent for order #68736.",
+        "2026-10-19T11:10:05+00:00 | Renewal invoice #68736 generated for payment due on 19 October, 2026 5:09 PM.",
+        "2026-10-19T11:10:05+00:00 | [Generate Renewal Invoice] &#10003; SuccessRan scheduled action for subscription #68709.",
+        "2026-10-19T11:08:26+00:00 | Renewal date changed through the developer API.",
+        "2026-10-19T11:03:02+00:00 | Payment successful - Order #68708 (&#036;7.31)",
+        "2026-10-19T11:03:01+00:00 | Status changed from Pending to Active. Changed by Gateway (Stripe).",
+        "2026-10-19T11:03:01+00:00 | Email sent: [ArraySubs] New Subscription",
+        "2026-10-19T11:02:58+00:00 | [Gateway: stripe] Stripe payment confirmed via official webhook for order #68708.",
+        "2026-10-19T11:02:58+00:00 | [Gateway: stripe] Payment method updated by Stripe: Visa ending in 3184",
+        "2026-10-19T11:02:12+00:00 | [Gateway: stripe] Stripe payment requires customer authentication during checkout.",
+        "2026-10-19T11:02:08+00:00 | Status changed from new to Pending. Changed by System.",
+        "2026-10-19T11:02:08+00:00 | Subscription created."
+    ]
+}

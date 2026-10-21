@@ -1,0 +1,54 @@
+{
+    "checked_at_utc": "2026-10-19T12:46:16+00:00",
+    "customer": "cus_VTB1PicZN8Kd3H",
+    "payment_intents": [
+        {
+            "id": "pi_3USEkOJG5OzSNVs20jlEvHCg",
+            "created_utc": "2026-10-19T11:28:56+00:00",
+            "status": "requires_payment_method",
+            "amount": 731,
+            "amount_received": 0,
+            "payment_method": null,
+            "payment_method_types": [
+                "card"
+            ],
+            "setup_future_usage": null,
+            "off_session_error": "card_declined",
+            "decline_code": "generic_decline",
+            "latest_charge": "ch_3USEkOJG5OzSNVs20OXF8AXh",
+            "meta": {
+                "order_id": "68822",
+                "renewal": "true",
+                "site_url": "https://mirror-help.arrayhash.com",
+                "subscription_id": "68770"
+            },
+            "description": null
+        }
+    ],
+    "charges": [
+        {
+            "id": "ch_3USEkOJG5OzSNVs20OXF8AXh",
+            "created_utc": "2026-10-19T11:28:56+00:00",
+            "status": "failed",
+            "paid": false,
+            "amount": 731,
+            "pi": "pi_3USEkOJG5OzSNVs20jlEvHCg",
+            "pm": "pm_1USEfcJG5OzSNVs2TewrGbne",
+            "pm_type": "card",
+            "refunded": false
+        }
+    ],
+    "attached_payment_methods": [
+        {
+            "id": "pm_1USEfcJG5OzSNVs2TewrGbne",
+            "type": "card",
+            "created_utc": "2026-10-19T11:24:00+00:00",
+            "customer": "cus_VTB1PicZN8Kd3H",
+            "card_last4": "0341",
+            "card_wallet": null,
+            "link_email": null,
+            "allow_redisplay": "unspecified"
+        }
+    ],
+    "customer_default_pm": "pm_1USEfcJG5OzSNVs2TewrGbne"
+}

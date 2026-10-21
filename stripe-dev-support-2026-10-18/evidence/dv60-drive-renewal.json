@@ -1,0 +1,112 @@
+{
+    "before_status": "arraysubs-trial",
+    "before_next_payment": "2026-10-20 11:47:42",
+    "endTrial_at_utc": "2026-10-19 11:49:33",
+    "endTrial": {
+        "status": {
+            "stored": "arraysubs-active",
+            "has_view_entitlement": true,
+            "terminal": false
+        },
+        "next_payment_at_utc": "2026-10-20 11:49:34"
+    },
+    "setNextPaymentDate_target_utc": "2026-10-19 11:51:04",
+    "setNextPaymentDate": {
+        "status": {
+            "stored": "arraysubs-active",
+            "has_view_entitlement": true,
+            "terminal": false
+        },
+        "next_payment_at_utc": "2026-10-19 11:51:04"
+    },
+    "actions": [
+        {
+            "action_id": "101173",
+            "hook": "arraysubs_generate_renewal_invoice",
+            "status": "canceled",
+            "scheduled_date_gmt": "2026-10-20 09:27:47",
+            "last_attempt_gmt": "0000-00-00 00:00:00",
+            "args": "[68881]"
+        },
+        {
+            "action_id": "101174",
+            "hook": "arraysubs_process_renewal",
+            "status": "canceled",
+            "scheduled_date_gmt": "2026-10-20 15:27:47",
+            "last_attempt_gmt": "0000-00-00 00:00:00",
+            "args": "[68881]"
+        },
+        {
+            "action_id": "101175",
+            "hook": "arraysubs_gateway_meta_retry",
+            "status": "complete",
+            "scheduled_date_gmt": "2026-10-19 11:48:49",
+            "last_attempt_gmt": "2026-10-19 11:49:07",
+            "args": "[68881,68880,\"evt_1USF2cJG5OzSNVs2LYUvIy7T\",1]"
+        },
+        {
+            "action_id": "101176",
+            "hook": "arraysubs_generate_renewal_invoice",
+            "status": "canceled",
+            "scheduled_date_gmt": "2026-10-20 09:27:47",
+            "last_attempt_gmt": "0000-00-00 00:00:00",
+            "args": "[68881]"
+        },
+        {
+            "action_id": "101177",
+            "hook": "arraysubs_process_renewal",
+            "status": "canceled",
+            "scheduled_date_gmt": "2026-10-20 15:27:47",
+            "last_attempt_gmt": "0000-00-00 00:00:00",
+            "args": "[68881]"
+        },
+        {
+            "action_id": "101183",
+            "hook": "arraysubs_generate_renewal_invoice",
+            "status": "canceled",
+            "scheduled_date_gmt": "2026-10-20 09:27:47",
+            "last_attempt_gmt": "0000-00-00 00:00:00",
+            "args": "[68881]"
+        },
+        {
+            "action_id": "101184",
+            "hook": "arraysubs_process_renewal",
+            "status": "canceled",
+            "scheduled_date_gmt": "2026-10-20 15:27:47",
+            "last_attempt_gmt": "0000-00-00 00:00:00",
+            "args": "[68881]"
+        },
+        {
+            "action_id": "101185",
+            "hook": "arraysubs_generate_renewal_invoice",
+            "status": "canceled",
+            "scheduled_date_gmt": "2026-10-20 09:29:39",
+            "last_attempt_gmt": "0000-00-00 00:00:00",
+            "args": "[68881]"
+        },
+        {
+            "action_id": "101186",
+            "hook": "arraysubs_process_renewal",
+            "status": "canceled",
+            "scheduled_date_gmt": "2026-10-20 15:29:39",
+            "last_attempt_gmt": "0000-00-00 00:00:00",
+            "args": "[68881]"
+        },
+        {
+            "action_id": "101187",
+            "hook": "arraysubs_generate_renewal_invoice",
+            "status": "pending",
+            "scheduled_date_gmt": "2026-10-19 11:50:35",
+            "last_attempt_gmt": "0000-00-00 00:00:00",
+            "args": "[68881]"
+        },
+        {
+            "action_id": "101188",
+            "hook": "arraysubs_process_renewal",
+            "status": "pending",
+            "scheduled_date_gmt": "2026-10-19 15:31:09",
+            "last_attempt_gmt": "0000-00-00 00:00:00",
+            "args": "[68881]"
+        }
+    ]
+}

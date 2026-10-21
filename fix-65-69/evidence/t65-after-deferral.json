@@ -1,0 +1,57 @@
+{
+    "utc": "2026-10-20 07:04:42",
+    "order": 69693,
+    "status": "failed",
+    "paid": false,
+    "transaction_id": "",
+    "order_meta": {
+        "_stripe_intent_id": "pi_3USX5BJG5OzSNVs201oOhjZC",
+        "_arraysubs_pending_transaction_id": "pi_3USX5BJG5OzSNVs201oOhjZC",
+        "_arraysubs_charge_attempt_transaction_id": "pi_3USX1YJG5OzSNVs21za2Rvim",
+        "_arraysubs_charge_attempt_seq": "",
+        "_arraysubs_customer_attempt_seen": "pi_3USX1YJG5OzSNVs21za2Rvim|pm_1USX2dJG5OzSNVs2CC382Tgu|1792479666",
+        "_arraysubs_customer_pay_started_at": "1792479815",
+        "_arraysubs_payment_action_intent_id": "",
+        "_arraysubs_pending_deadline": "",
+        "_gateway_payment_method_id": "pm_1USWsdJG5OzSNVs20gn5gxhr"
+    },
+    "subscription_meta": {
+        "_gateway_payment_method_id": "pm_1USWsdJG5OzSNVs20gn5gxhr",
+        "_last_payment_failure": "2026-10-20 06:59:53",
+        "_last_payment_failure_category": "generic_decline",
+        "_payment_retry_attempts": "1",
+        "_pending_renewal_order_id": "69693",
+        "_next_payment_date": "2026-10-20 06:59:34"
+    },
+    "subscription_status": "arraysubs-active",
+    "next_renewal_action": {
+        "id": 102036,
+        "at": "2026-10-20 07:33:37"
+    },
+    "intents": {
+        "pi_3USX5BJG5OzSNVs201oOhjZC": {
+            "status": "requires_action",
+            "created": "07:03:37",
+            "amount": 731,
+            "received": 0,
+            "capturable": 0,
+            "payment_method": "pm_1USX57JG5OzSNVs2Hu1SorFa",
+            "meta_order_id": "69693",
+            "meta_subscription_id": null,
+            "cancellation_reason": null,
+            "last_error": null
+        },
+        "pi_3USX1YJG5OzSNVs21za2Rvim": {
+            "status": "requires_action",
+            "created": "06:59:52",
+            "amount": 731,
+            "received": 0,
+            "capturable": 0,
+            "payment_method": "pm_1USX2dJG5OzSNVs2CC382Tgu",
+            "meta_order_id": "69693",
+            "meta_subscription_id": "69676",
+            "cancellation_reason": null,
+            "last_error": null
+        }
+    }
+}

@@ -1,0 +1,55 @@
+{
+    "subscription": 68788,
+    "status": "arraysubs-active",
+    "meta": {
+        "_gateway_customer_id": "cus_VTB3WyfpHE0Hmp",
+        "_gateway_payment_method_id": "pm_1USEmEJG5OzSNVs2C0j7Paip",
+        "_payment_method_brand": "visa",
+        "_payment_method_last4": "4242",
+        "_gateway_status": "active",
+        "_last_payment_failure": "",
+        "_last_payment_failure_category": "",
+        "_payment_retry_attempts": "",
+        "_payment_retry_next_attempt_at": "",
+        "_pending_renewal_order_id": "",
+        "_next_payment_date": "2026-10-20 12:49:40",
+        "_arraysubs_payment_action_intent_id": "",
+        "_arraysubs_stripe_portal_requested_at": ""
+    },
+    "derived_next_retry_at": null,
+    "bound_pm": {
+        "id": "pm_1USEmEJG5OzSNVs2C0j7Paip",
+        "customer": null,
+        "type": "card",
+        "last4": "4242"
+    },
+    "wc_tokens": [
+        {
+            "id": 78,
+            "pm": "pm_1USEgsJG5OzSNVs2HaG6eb9j",
+            "last4": "0341",
+            "default": true
+        }
+    ],
+    "orders": {
+        "68965": {
+            "status": "completed",
+            "paid": true,
+            "intent": "pi_3USG5BJG5OzSNVs20cFl4rQm",
+            "source": "pm_1USG58JG5OzSNVs2lRuRO6Co",
+            "action_intent": "",
+            "transaction": "ch_3USG5BJG5OzSNVs20ylyk3bg",
+            "billing_email": "sqa-dv59-before@example.com"
+        }
+    },
+    "next_actions": {
+        "arraysubs_process_renewal": {
+            "timestamp": 1792506992,
+            "datetime": "2026-10-20 14:36:32"
+        },
+        "arraysubs_generate_renewal_invoice": {
+            "timestamp": 1792485392,
+            "datetime": "2026-10-20 08:36:32"
+        }
+    }
+}

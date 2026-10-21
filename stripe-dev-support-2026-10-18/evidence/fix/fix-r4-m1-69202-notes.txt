@@ -1,0 +1,11 @@
+post_date_gmt	post_content
+2026-10-19 22:34:09	[Process Renewal] <strong style="color:#1e4620">&#10003; Success</strong><br>Processed renewal for subscription #69202.
+2026-10-19 22:34:08	[Gateway: stripe] Stripe payment confirmed via official webhook for order #69436.
+2026-10-19 22:34:08	Payment successful - <a href="https://mirror-help.arrayhash.com/wp-admin/post.php?post=69436&amp;action=edit">Order #69436</a> (<span class="woocommerce-Price-amount amount"><span class="woo
+2026-10-19 22:34:08	Email sent: [ArraySubs] Renewal Payment Successful
+2026-10-19 22:34:05	[Gateway: stripe] Creating Stripe off-session renewal PaymentIntent for order #69436.
+2026-10-19 22:28:22	[Gateway: stripe] Renewal order #69436 is still unpaid, so the new payment method will be charged in about 5 minutes.
+2026-10-19 22:28:22	[Gateway: stripe] Payment method updated by Stripe: Visa ending in 4242
+2026-10-19 22:27:44	[Process Renewal] <strong style="color:#991b1b">&#10007; Failed</strong><br>Your card was declined.
+2026-10-19 22:27:44	Email sent: [ArraySubs] Renewal Payment Failed
+2026-10-19 22:27:43	Payment failed for <a href="https://mirror-help.arrayhash.com/wp-admin/post.php?post=69436&amp;action=edit">Order #69436</a>. Gateway: Stripe. Reason: Your card was declined.

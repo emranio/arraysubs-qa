@@ -1,0 +1,30 @@
+### C8 side effect, CURRENT: per-item 100% on [2569] + per-cart $30 on [2569,495]; cart 2569+495 | user=1 emulate_fix=no
+  rule: sk-probe-0 per_item percentage value=100 scope=specific_products targets=[2569] excl=[]
+  rule: sk-probe-1 per_cart fixed value=30 scope=specific_products targets=[2569,495] excl=[]
+  L0 #2569 Smoke Plan qty=1 regular=10.00 line_subtotal=0.00 line_total=0.00 | engine saw: line_subtotal=0.00 unit_subtotal(used as base)=10.00
+  L1 #495 Pro Monthly qty=1 regular=49.99 line_subtotal=49.99 line_total=49.99 | engine saw: line_subtotal=49.99 unit_subtotal(used as base)=49.99
+  fee 'Member discount' amount=-20.00 total(after WC cap)=-20.00 weights=L1=49.99
+  cart: items_subtotal=49.99 fees=-20.00 shipping=0.00 TOTAL=29.99
+  guard: case=rolled-back-clean, fixture identical blocked_writes=0 http_calls=0 mail_blocked=0 notices=0
+### C9 side effect, FIX: same as C8 + emulated fix | user=1 emulate_fix=yes
+  rule: sk-probe-0 per_item percentage value=100 scope=specific_products targets=[2569] excl=[]
+  rule: sk-probe-1 per_cart fixed value=30 scope=specific_products targets=[2569,495] excl=[]
+  L0 #2569 Smoke Plan qty=1 regular=10.00 line_subtotal=0.00 line_total=0.00 | engine saw: line_subtotal=0.00 unit_subtotal(used as base)=0.00
+  L1 #495 Pro Monthly qty=1 regular=49.99 line_subtotal=49.99 line_total=49.99 | engine saw: line_subtotal=49.99 unit_subtotal(used as base)=49.99
+  fee 'Member discount' amount=-30.00 total(after WC cap)=-30.00 weights=L1=49.99
+  cart: items_subtotal=49.99 fees=-30.00 shipping=0.00 TOTAL=19.99
+  guard: case=rolled-back-clean, fixture identical blocked_writes=0 http_calls=0 mail_blocked=0 notices=0
+### C10 partial per-item, CURRENT: per-item 50% on [2569] + per-cart $30 on [2569,495]; cart 2569+495 | user=1 emulate_fix=no
+  rule: sk-probe-0 per_item percentage value=50 scope=specific_products targets=[2569] excl=[]
+  rule: sk-probe-1 per_cart fixed value=30 scope=specific_products targets=[2569,495] excl=[]
+  L0 #2569 Smoke Plan qty=1 regular=10.00 line_subtotal=5.00 line_total=5.00 | engine saw: line_subtotal=5.00 unit_subtotal(used as base)=5.00
+  L1 #495 Pro Monthly qty=1 regular=49.99 line_subtotal=49.99 line_total=49.99 | engine saw: line_subtotal=49.99 unit_subtotal(used as base)=49.99
+  fee 'Member discount' amount=-30.00 total(after WC cap)=-30.00 weights=L0=5.00,L1=49.99
+  cart: items_subtotal=54.99 fees=-30.00 shipping=0.00 TOTAL=24.99
+  guard: case=rolled-back-clean, fixture identical blocked_writes=0 http_calls=0 mail_blocked=0 notices=0
+### C11 ASIDE: per-item 50% member rule on trial product 550 only; cart 550 | user=1 emulate_fix=no
+  rule: sk-probe-0 per_item percentage value=50 scope=specific_products targets=[550] excl=[]
+  L0 #550 Trial 14-Day qty=1 regular=29.99 line_subtotal=15.00 line_total=15.00 | engine saw: (not evaluated)
+  fees: none
+  cart: items_subtotal=15.00 fees=0.00 shipping=0.00 TOTAL=15.00
+  guard: case=rolled-back-clean, fixture identical blocked_writes=0 http_calls=0 mail_blocked=0 notices=0

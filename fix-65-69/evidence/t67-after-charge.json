@@ -1,0 +1,42 @@
+{
+    "utc": "2026-10-20 07:46:51",
+    "order": 69774,
+    "status": "on-hold",
+    "paid": false,
+    "transaction_id": "py_3USXkyJG5OzSNVs20q3j8s9P",
+    "order_meta": {
+        "_stripe_intent_id": "pi_3USXkyJG5OzSNVs20pbxJwXm",
+        "_arraysubs_pending_transaction_id": "pi_3USXkyJG5OzSNVs20pbxJwXm",
+        "_arraysubs_charge_attempt_transaction_id": "pi_3USXkyJG5OzSNVs20pbxJwXm",
+        "_arraysubs_charge_attempt_seq": "",
+        "_arraysubs_customer_attempt_seen": "",
+        "_arraysubs_customer_pay_started_at": "",
+        "_arraysubs_payment_action_intent_id": "",
+        "_arraysubs_pending_deadline": "2026-10-27 07:46:48",
+        "_gateway_payment_method_id": "pm_1USXisJG5OzSNVs2sgLiPJd5"
+    },
+    "subscription_meta": {
+        "_gateway_payment_method_id": "pm_1USXisJG5OzSNVs2sgLiPJd5",
+        "_last_payment_failure": "",
+        "_last_payment_failure_category": "",
+        "_payment_retry_attempts": "",
+        "_pending_renewal_order_id": "69774",
+        "_next_payment_date": "2026-10-20 07:46:20"
+    },
+    "subscription_status": "arraysubs-active",
+    "next_renewal_action": null,
+    "intents": {
+        "pi_3USXkyJG5OzSNVs20pbxJwXm": {
+            "status": "processing",
+            "created": "07:46:48",
+            "amount": 731,
+            "received": 0,
+            "capturable": 0,
+            "payment_method": "pm_1USXisJG5OzSNVs2sgLiPJd5",
+            "meta_order_id": "69774",
+            "meta_subscription_id": "69756",
+            "cancellation_reason": null,
+            "last_error": null
+        }
+    }
+}

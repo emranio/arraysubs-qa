@@ -1,0 +1,48 @@
+{
+    "id": "pi_3USEJEJG5OzSNVs21r9uU7nr",
+    "status": "requires_payment_method",
+    "amount": 731,
+    "currency": "usd",
+    "customer": "cus_VTAYfIkcEgRtLH",
+    "payment_method": null,
+    "off_session_confirm": "automatic",
+    "created_utc": "2026-10-19T11:00:53+00:00",
+    "metadata": {
+        "order_id": "68694",
+        "renewal": "true",
+        "site_url": "https://mirror-help.arrayhash.com",
+        "subscription_id": "68665"
+    },
+    "latest_charge": "ch_3USEJEJG5OzSNVs21YjkNr7R",
+    "last_payment_error": {
+        "type": "card_error",
+        "code": "card_declined",
+        "decline_code": "generic_decline",
+        "message": "Your card was declined.",
+        "charge": "ch_3USEJEJG5OzSNVs21YjkNr7R",
+        "payment_method_id": "pm_1USEDAJG5OzSNVs20wWVbJF7",
+        "payment_method_last4": "0341"
+    },
+    "charge": {
+        "id": "ch_3USEJEJG5OzSNVs21YjkNr7R",
+        "status": "failed",
+        "failure_code": "card_declined",
+        "failure_message": "Your card was declined.",
+        "outcome": {
+            "type": "issuer_declined",
+            "reason": "generic_decline",
+            "network_status": "declined_by_network",
+            "seller_message": "The bank did not return any further details with this decline."
+        }
+    },
+    "all_customer_payment_intents": [
+        {
+            "id": "pi_3USEJEJG5OzSNVs21r9uU7nr",
+            "status": "requires_payment_method",
+            "amount": 731,
+            "created_utc": "2026-10-19T11:00:53+00:00",
+            "code": "card_declined",
+            "decline_code": "generic_decline"
+        }
+    ]
+}

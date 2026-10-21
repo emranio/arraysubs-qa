@@ -1,0 +1,29 @@
+[
+    {
+        "event": "evt_3USEJEJG5OzSNVs214PQEeJa",
+        "type": "payment_intent.created",
+        "created_utc": "2026-10-19T11:00:53+00:00",
+        "object": "pi_3USEJEJG5OzSNVs21r9uU7nr",
+        "code": null,
+        "decline_code": null,
+        "pending_webhooks": 0
+    },
+    {
+        "event": "evt_3USEJEJG5OzSNVs21W6fCTuJ",
+        "type": "charge.failed",
+        "created_utc": "2026-10-19T11:00:53+00:00",
+        "object": "ch_3USEJEJG5OzSNVs21YjkNr7R",
+        "code": "card_declined",
+        "decline_code": "generic_decline",
+        "pending_webhooks": 0
+    },
+    {
+        "event": "evt_3USEJEJG5OzSNVs21kVqH6hx",
+        "type": "payment_intent.payment_failed",
+        "created_utc": "2026-10-19T11:00:53+00:00",
+        "object": "pi_3USEJEJG5OzSNVs21r9uU7nr",
+        "code": "card_declined",
+        "decline_code": "generic_decline",
+        "pending_webhooks": 0
+    }
+]

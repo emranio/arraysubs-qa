@@ -1,0 +1,8 @@
+== Stripe calls
+GET payment_intents/pi_3USYAQJG5OzSNVs21UszEY7E -> 200 status=requires_payment_method
+GET payment_intents -> 200 status=list
+GET payment_intents/pi_3USYAQJG5OzSNVs21UszEY7E -> 200 status=requires_payment_method
+GET payment_intents -> 200 status=list
+GET payment_methods/pm_1USWsdJG5OzSNVs20gn5gxhr -> 200 status=payment_method
+POST payment_intents -> 402 error=card_declined Your card was declined.
+== new notes

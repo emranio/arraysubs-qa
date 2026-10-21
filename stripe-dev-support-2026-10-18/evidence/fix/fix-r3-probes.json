@@ -1,0 +1,26 @@
+{
+    "l1_next_pending_101610": "2026-10-21 00:04:09",
+    "l1_queue_attempt_with_pending_action": "not queued (pending action kept)",
+    "l1_helper_retry_at": "2026-10-21 00:04:09",
+    "l4_default_ladder_retry_6h_late": {
+        "due": "2026-10-17 18:04:09",
+        "window_end": "2026-10-20 18:04:09",
+        "hold_eligible_at": "2026-10-21 01:04:09",
+        "waits": true
+    },
+    "l4_ladder_24_48_72_retry3": {
+        "hold_eligible_at": "2026-10-20 18:04:09",
+        "waits": false
+    },
+    "m1_missing_pm_real_customer": "renewal_payment_method_binding_invalid",
+    "m1_missing_pm_unknown_customer": "renewal_payment_method_verification_failed",
+    "m1_similar_object_message": "soft",
+    "m2a_seen": {
+        "first": true,
+        "kept_on_repeat": true,
+        "other_card": 0,
+        "meta_restored": true
+    },
+    "l3_paid_processed_pointer": false,
+    "l3_pointer_is_found_order": false
+}

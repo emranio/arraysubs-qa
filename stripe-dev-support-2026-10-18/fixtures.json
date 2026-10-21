@@ -231,6 +231,2176 @@
             "label": "S02-A block process_renewal",
             "recorded_at_utc": "2026-10-19T07:30:56+00:00",
             "phase": "phase-1"
+        },
+        {
+            "kind": "customer",
+            "id": 579,
+            "label": "sqa-p2-decline S03 decline 0341, S04 retry ladder",
+            "recorded_at_utc": "2026-10-19T09:11:47+00:00",
+            "phase": "phase-2"
+        },
+        {
+            "kind": "customer",
+            "id": 580,
+            "label": "sqa-p2-auth S03 authentication 3184",
+            "recorded_at_utc": "2026-10-19T09:11:49+00:00",
+            "phase": "phase-2"
+        },
+        {
+            "kind": "customer",
+            "id": 581,
+            "label": "sqa-p2-noretry S04 retry disabled",
+            "recorded_at_utc": "2026-10-19T09:11:51+00:00",
+            "phase": "phase-2"
+        },
+        {
+            "kind": "customer",
+            "id": 582,
+            "label": "sqa-p2-grace S04 grace windows and overrides",
+            "recorded_at_utc": "2026-10-19T09:11:53+00:00",
+            "phase": "phase-2"
+        },
+        {
+            "kind": "order",
+            "id": 68417,
+            "label": "S03 decline initial order 4242",
+            "recorded_at_utc": "2026-10-19T09:13:30+00:00",
+            "phase": "phase-2"
+        },
+        {
+            "kind": "subscription",
+            "id": 68418,
+            "label": "S03 decline subscription",
+            "recorded_at_utc": "2026-10-19T09:13:32+00:00",
+            "phase": "phase-2"
+        },
+        {
+            "kind": "product",
+            "id": 68435,
+            "label": "SQA Daily Trial Plan 1-day trial 7.31/day",
+            "recorded_at_utc": "2026-10-19T09:18:47+00:00",
+            "phase": "phase-2"
+        },
+        {
+            "kind": "order",
+            "id": 68438,
+            "label": "S03 decline trial order 0341",
+            "recorded_at_utc": "2026-10-19T09:20:22+00:00",
+            "phase": "phase-2"
+        },
+        {
+            "kind": "subscription",
+            "id": 68439,
+            "label": "S03/S04 decline trial subscription 0341",
+            "recorded_at_utc": "2026-10-19T09:20:24+00:00",
+            "phase": "phase-2"
+        },
+        {
+            "kind": "order",
+            "id": 68443,
+            "label": "S03 issue-56 impact renewal invoice for 68418",
+            "recorded_at_utc": "2026-10-19T09:20:26+00:00",
+            "phase": "phase-2"
+        },
+        {
+            "kind": "action",
+            "id": 100899,
+            "label": "S03 68418 process_renewal issue-56 impact",
+            "recorded_at_utc": "2026-10-19T09:20:38+00:00",
+            "phase": "unspecified"
+        },
+        {
+            "kind": "order",
+            "id": 68465,
+            "label": "S03 auth initial order 3184",
+            "recorded_at_utc": "2026-10-19T09:24:25+00:00",
+            "phase": "phase-2"
+        },
+        {
+            "kind": "subscription",
+            "id": 68466,
+            "label": "S03 auth subscription 3184",
+            "recorded_at_utc": "2026-10-19T09:24:27+00:00",
+            "phase": "phase-2"
+        },
+        {
+            "kind": "action",
+            "id": 100916,
+            "label": "S03 decline 68439 first collection process_renewal",
+            "recorded_at_utc": "2026-10-19T09:24:30+00:00",
+            "phase": "phase-2"
+        },
+        {
+            "kind": "action",
+            "id": 100930,
+            "label": "S03 auth 68466 process_renewal",
+            "recorded_at_utc": "2026-10-19T09:29:01+00:00",
+            "phase": "unspecified"
+        },
+        {
+            "kind": "customer",
+            "id": 583,
+            "label": "sqa-p2-ladder S04 retry ladder and exhaustion",
+            "recorded_at_utc": "2026-10-19T09:39:56+00:00",
+            "phase": "phase-2"
+        },
+        {
+            "kind": "order",
+            "id": 68511,
+            "label": "S04 ladder trial order",
+            "recorded_at_utc": "2026-10-19T09:41:38+00:00",
+            "phase": "phase-2"
+        },
+        {
+            "kind": "subscription",
+            "id": 68512,
+            "label": "S04 ladder subscription 0341",
+            "recorded_at_utc": "2026-10-19T09:41:40+00:00",
+            "phase": "phase-2"
+        },
+        {
+            "kind": "order",
+            "id": 68524,
+            "label": "S04 grace trial order",
+            "recorded_at_utc": "2026-10-19T09:41:42+00:00",
+            "phase": "phase-2"
+        },
+        {
+            "kind": "subscription",
+            "id": 68525,
+            "label": "S04 grace override subscription 0341",
+            "recorded_at_utc": "2026-10-19T09:41:44+00:00",
+            "phase": "phase-2"
+        },
+        {
+            "kind": "action",
+            "id": 100964,
+            "label": "S04 ladder initial attempt",
+            "recorded_at_utc": "2026-10-19T09:43:19+00:00",
+            "phase": "phase-2"
+        },
+        {
+            "kind": "action",
+            "id": 100970,
+            "label": "S04 grace initial attempt",
+            "recorded_at_utc": "2026-10-19T09:43:21+00:00",
+            "phase": "phase-2"
+        },
+        {
+            "kind": "action",
+            "id": 100973,
+            "label": "S04 ladder retry 1",
+            "recorded_at_utc": "2026-10-19T09:43:57+00:00",
+            "phase": "phase-2"
+        },
+        {
+            "kind": "action",
+            "id": 100975,
+            "label": "S04 ladder retry 2",
+            "recorded_at_utc": "2026-10-19T09:44:15+00:00",
+            "phase": "phase-2"
+        },
+        {
+            "kind": "action",
+            "id": 100976,
+            "label": "S04 ladder retry 3",
+            "recorded_at_utc": "2026-10-19T09:44:32+00:00",
+            "phase": "phase-2"
+        },
+        {
+            "kind": "order",
+            "id": 68598,
+            "label": "S04 noretry trial order",
+            "recorded_at_utc": "2026-10-19T09:46:07+00:00",
+            "phase": "phase-2"
+        },
+        {
+            "kind": "subscription",
+            "id": 68599,
+            "label": "S04 retry-disabled subscription 0341",
+            "recorded_at_utc": "2026-10-19T09:46:10+00:00",
+            "phase": "phase-2"
+        },
+        {
+            "kind": "action",
+            "id": 100992,
+            "label": "S04 noretry attempt",
+            "recorded_at_utc": "2026-10-19T09:48:08+00:00",
+            "phase": "phase-2"
+        },
+        {
+            "kind": "order",
+            "id": 68614,
+            "label": "S04 noretry failed renewal",
+            "recorded_at_utc": "2026-10-19T09:48:36+00:00",
+            "phase": "phase-2"
+        },
+        {
+            "kind": "customer",
+            "id": 584,
+            "label": "dv56 portal card update customer sqa-dv56-portal",
+            "recorded_at_utc": "2026-10-19T10:50:07+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "customer",
+            "id": 585,
+            "label": "dv57 decline classification customer sqa-dv57-decline",
+            "recorded_at_utc": "2026-10-19T10:50:13+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "customer",
+            "id": 586,
+            "label": "dv58 sqa-dv58-block Block 3DS checkout customer issue 58",
+            "recorded_at_utc": "2026-10-19T10:51:18+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "subscription",
+            "id": 68665,
+            "label": "dv57 trial sub card 0341 customer 585",
+            "recorded_at_utc": "2026-10-19T10:56:42+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "subscription",
+            "id": 68677,
+            "label": "dv56 portal card update subscription user 584",
+            "recorded_at_utc": "2026-10-19T10:56:43+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "order",
+            "id": 68664,
+            "label": "dv57 initial trial order SetupIntent no charge sub 68665",
+            "recorded_at_utc": "2026-10-19T10:56:44+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "order",
+            "id": 68676,
+            "label": "dv56 initial block checkout order 4242 for sub 68677",
+            "recorded_at_utc": "2026-10-19T10:56:46+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "stripe_object",
+            "id": "cus_VTAYfIkcEgRtLH",
+            "label": "dv57 Stripe customer for user 585",
+            "recorded_at_utc": "2026-10-19T10:56:46+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "stripe_object",
+            "id": "pm_1USEDAJG5OzSNVs20wWVbJF7",
+            "label": "dv57 card 0341 payment method sub 68665",
+            "recorded_at_utc": "2026-10-19T10:56:48+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "stripe_object",
+            "id": "seti_1USEDEJG5OzSNVs2BCuCo0Uo",
+            "label": "dv57 checkout SetupIntent order 68664",
+            "recorded_at_utc": "2026-10-19T10:56:51+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "action",
+            "id": "block-checkout-place-order",
+            "label": "dv57 Block checkout Place Order 2026-10-19T10:54:36Z product 68435 card 0341",
+            "recorded_at_utc": "2026-10-19T10:56:54+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "stripe_object",
+            "id": "cus_VTAa4eDbx66HA2",
+            "label": "dv56 Stripe customer for user 584 sub 68677",
+            "recorded_at_utc": "2026-10-19T10:56:56+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "stripe_object",
+            "id": "pm_1USEEsJG5OzSNVs2J5K5YdAm",
+            "label": "dv56 original Visa 4242 bound at checkout sub 68677",
+            "recorded_at_utc": "2026-10-19T10:56:59+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "action",
+            "id": "devapi-endTrial-68665",
+            "label": "dv57 Developer endTrial sub 68665 at 2026-10-19T10:58:03Z",
+            "recorded_at_utc": "2026-10-19T10:58:13+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "action",
+            "id": "devapi-setNextPaymentDate-68665",
+            "label": "dv57 setNextPaymentDate 2026-10-19T10:59:35Z sub 68665",
+            "recorded_at_utc": "2026-10-19T10:58:15+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "action",
+            "id": 101055,
+            "label": "dv57 arraysubs_generate_renewal_invoice sub 68665",
+            "recorded_at_utc": "2026-10-19T10:58:17+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "action",
+            "id": 101056,
+            "label": "dv57 arraysubs_process_renewal sub 68665",
+            "recorded_at_utc": "2026-10-19T10:58:19+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "order",
+            "id": 68694,
+            "label": "dv57 renewal order 7.31 USD sub 68665",
+            "recorded_at_utc": "2026-10-19T11:00:31+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "stripe_object",
+            "id": "pm_1USEHNJG5OzSNVs2nPZUVDFH",
+            "label": "dv56 new Mastercard 4444 added via billing portal as default cus_VTAa4eDbx66HA2",
+            "recorded_at_utc": "2026-10-19T11:01:45+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "stripe_object",
+            "id": "pi_3USEJEJG5OzSNVs21r9uU7nr",
+            "label": "dv57 renewal PI order 68694 code card_declined decline_code generic_decline",
+            "recorded_at_utc": "2026-10-19T11:01:46+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "stripe_object",
+            "id": "seti_1USEGYJG5OzSNVs2GGWUVOae",
+            "label": "dv56 portal SetupIntent for Mastercard 4444",
+            "recorded_at_utc": "2026-10-19T11:01:47+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "stripe_object",
+            "id": "ch_3USEJEJG5OzSNVs21YjkNr7R",
+            "label": "dv57 failed renewal charge order 68694",
+            "recorded_at_utc": "2026-10-19T11:01:48+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "stripe_object",
+            "id": "bps_1USEGIJG5OzSNVs2p9M45AjY",
+            "label": "dv56 billing portal session from Update payment method sub 68677",
+            "recorded_at_utc": "2026-10-19T11:01:49+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "action",
+            "id": "101056-run",
+            "label": "dv57 explicit wp action-scheduler action run 101056 at 2026-10-19T11:00:49Z",
+            "recorded_at_utc": "2026-10-19T11:01:51+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "stripe_object",
+            "id": "evt_1USEHPJG5OzSNVs2HFRrOTDn,evt_1USEHPJG5OzSNVs2SUAXPIr4,evt_1USEHPJG5OzSNVs2089BEY8N",
+            "label": "dv56 portal events payment_method.attached setup_intent.succeeded customer.updated",
+            "recorded_at_utc": "2026-10-19T11:01:52+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "subscription",
+            "id": 68709,
+            "label": "dv58 customer 586 Block 3DS checkout subscription",
+            "recorded_at_utc": "2026-10-19T11:04:25+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "order",
+            "id": 68708,
+            "label": "dv58 initial Block checkout order 3DS card 3184 completed 11:03:00Z",
+            "recorded_at_utc": "2026-10-19T11:04:27+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "stripe_object",
+            "id": "cus_VTAfpPVaUhxMOj",
+            "label": "dv58 Stripe customer of user 586",
+            "recorded_at_utc": "2026-10-19T11:04:29+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "stripe_object",
+            "id": "pm_1USEKOJG5OzSNVs2NFfols6o",
+            "label": "dv58 card 3184 PaymentMethod WC token 72",
+            "recorded_at_utc": "2026-10-19T11:04:31+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "stripe_object",
+            "id": "pi_3USEKTJG5OzSNVs21UIttNnE",
+            "label": "dv58 initial checkout PI charge ch_3USEKTJG5OzSNVs21sPmclhS",
+            "recorded_at_utc": "2026-10-19T11:04:33+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "note",
+            "id": "dv58-wc-token-72",
+            "label": "dv58 WC token 72 created after 3DS verify for user 586",
+            "recorded_at_utc": "2026-10-19T11:04:35+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "action",
+            "id": "gateway-sync-68677-x2",
+            "label": "dv56 admin Resync from Gateway clicked twice 11:03:36Z and 11:04:25Z both no changes required",
+            "recorded_at_utc": "2026-10-19T11:04:52+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "action",
+            "id": "setNextPaymentDate-68677",
+            "label": "dv56 setNextPaymentDate now+90s to 2026-10-19T11:07:07Z",
+            "recorded_at_utc": "2026-10-19T11:05:46+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "action",
+            "id": 101073,
+            "label": "dv56 arraysubs_generate_renewal_invoice sub 68677",
+            "recorded_at_utc": "2026-10-19T11:05:48+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "action",
+            "id": 101074,
+            "label": "dv56 arraysubs_process_renewal sub 68677",
+            "recorded_at_utc": "2026-10-19T11:05:50+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "order",
+            "id": 68726,
+            "label": "dv56 renewal invoice for sub 68677 generated by action 101073",
+            "recorded_at_utc": "2026-10-19T11:07:40+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "action",
+            "id": 101078,
+            "label": "dv58 arraysubs_generate_renewal_invoice sub 68709 after setNextPaymentDate 11:08:25Z",
+            "recorded_at_utc": "2026-10-19T11:08:34+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "action",
+            "id": 101079,
+            "label": "dv58 arraysubs_process_renewal sub 68709 to run explicitly",
+            "recorded_at_utc": "2026-10-19T11:08:37+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "note",
+            "id": "dv58-setNextPaymentDate",
+            "label": "dv58 setNextPaymentDate 68709 to 2026-10-19T11:09:55Z run 11:08:25Z",
+            "recorded_at_utc": "2026-10-19T11:08:39+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "stripe_object",
+            "id": "pi_3USEPyJG5OzSNVs20mP0S9dC",
+            "label": "dv56 renewal PI order 68726 sub 68677 charged OLD pm_1USEEsJG5OzSNVs2J5K5YdAm visa 4242 succeeded",
+            "recorded_at_utc": "2026-10-19T11:08:40+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "stripe_object",
+            "id": "ch_3USEPyJG5OzSNVs20H80QuHh",
+            "label": "dv56 renewal charge order 68726 visa 4242",
+            "recorded_at_utc": "2026-10-19T11:08:42+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "stripe_object",
+            "id": "pi_3USEEwJG5OzSNVs21vLUQG5i",
+            "label": "dv56 initial checkout PI order 68676",
+            "recorded_at_utc": "2026-10-19T11:08:45+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "action",
+            "id": "run-101074",
+            "label": "dv56 ran arraysubs_process_renewal 101074 via WP-CLI at 2026-10-19T11:07:49Z",
+            "recorded_at_utc": "2026-10-19T11:08:47+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "order",
+            "id": 68736,
+            "label": "dv58 renewal order sub 68709 cycle 2",
+            "recorded_at_utc": "2026-10-19T11:10:27+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "stripe_object",
+            "id": "pi_3USESYJG5OzSNVs21QSPrfSN",
+            "label": "dv58 renewal PI order 68736 requires_payment_method authentication_required",
+            "recorded_at_utc": "2026-10-19T11:10:50+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "action",
+            "id": 101081,
+            "label": "dv58 arraysubs_send_stripe_renewal_verification sub 68709 order 68736",
+            "recorded_at_utc": "2026-10-19T11:10:53+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "note",
+            "id": "dv58-process-renewal-101079-run",
+            "label": "dv58 ran process_renewal 101079 explicitly 11:10:27Z",
+            "recorded_at_utc": "2026-10-19T11:10:55+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "stripe_object",
+            "id": "pm_1USERyJG5OzSNVs2jd23cMGv",
+            "label": "dv56 Mastercard 4444 added via WC My Account Add payment method WC token 73",
+            "recorded_at_utc": "2026-10-19T11:11:23+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "note",
+            "id": 101071,
+            "label": "dv57 system-created arraysubs_send_stripe_renewal_verification for sub 68665 order 68694 created by recurring sweep 101041 at 2026-10-19T11:05:04Z, not run by tester, outbox superseded 11:06:04Z",
+            "recorded_at_utc": "2026-10-19T11:11:25+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "stripe_object",
+            "id": "seti_1USES0JG5OzSNVs27Timz7dw",
+            "label": "dv56 WC add-payment-method SetupIntent",
+            "recorded_at_utc": "2026-10-19T11:11:26+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "stripe_object",
+            "id": "evt_3USEJEJG5OzSNVs21kVqH6hx",
+            "label": "dv57 payment_intent.payment_failed for pi_3USEJEJG5OzSNVs21r9uU7nr",
+            "recorded_at_utc": "2026-10-19T11:11:27+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "stripe_object",
+            "id": "evt_1USES1JG5OzSNVs25NnWNKny,evt_1USES1JG5OzSNVs29FG2Jdva",
+            "label": "dv56 WC add-card events payment_method.attached setup_intent.succeeded refused",
+            "recorded_at_utc": "2026-10-19T11:11:28+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "note",
+            "id": "mailpit-5AjnIlImjG8ZQTo5GZzTZ1",
+            "label": "dv57 customer failure email Reason the card was declined by the issuer",
+            "recorded_at_utc": "2026-10-19T11:11:29+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "action",
+            "id": "wc-add-payment-method-token-73",
+            "label": "dv56 customer added Mastercard 4444 via My Account Add payment method 11:09:53Z",
+            "recorded_at_utc": "2026-10-19T11:11:30+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "action",
+            "id": "wc-make-default-token-73",
+            "label": "dv56 customer clicked Make default on WC Mastercard token 73 at 11:11:37Z Stripe default became pm_1USERyJG5OzSNVs2jd23cMGv",
+            "recorded_at_utc": "2026-10-19T11:12:52+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "stripe_object",
+            "id": "evt_1USETfJG5OzSNVs2cOGINJwJ",
+            "label": "dv56 customer.updated after WC Make default processed with subscription 0",
+            "recorded_at_utc": "2026-10-19T11:12:54+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "note",
+            "id": "dv56-verifier-probe",
+            "label": "dv56 read-only Reflection call of verifyAutomaticRenewalPaymentMethod for sub 68677 stored pm OK both new pms renewal_payment_method_binding_changed meta unchanged",
+            "recorded_at_utc": "2026-10-19T11:13:31+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "customer",
+            "id": 587,
+            "label": "dv58c classic-checkout scope check customer sqa-dv58-classic",
+            "recorded_at_utc": "2026-10-19T11:15:37+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "action",
+            "id": 101076,
+            "label": "dv56 pending arraysubs_generate_renewal_invoice sub 68677 scheduled 2026-10-20 05:13:36 created by renewal",
+            "recorded_at_utc": "2026-10-19T11:16:25+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "action",
+            "id": 101077,
+            "label": "dv56 pending arraysubs_process_renewal sub 68677 scheduled 2026-10-20 11:13:36 created by renewal",
+            "recorded_at_utc": "2026-10-19T11:16:27+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "note",
+            "id": "dv56-wc-tokens-70-73",
+            "label": "dv56 user 584 WC tokens 70 visa 4242 pm_1USEEsJG5OzSNVs2J5K5YdAm and 73 mastercard 4444 pm_1USERyJG5OzSNVs2jd23cMGv now default",
+            "recorded_at_utc": "2026-10-19T11:16:29+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "stripe_object",
+            "id": "ch_3USEEwJG5OzSNVs214GMPZYG",
+            "label": "dv56 initial checkout charge order 68676",
+            "recorded_at_utc": "2026-10-19T11:16:31+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "subscription",
+            "id": 68753,
+            "label": "dv58c customer 587 CLASSIC checkout 3DS card 3184 subscription",
+            "recorded_at_utc": "2026-10-19T11:20:31+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "order",
+            "id": 68752,
+            "label": "dv58c initial CLASSIC checkout order 3DS card 3184 completed 11:19:54Z",
+            "recorded_at_utc": "2026-10-19T11:20:33+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "stripe_object",
+            "id": "cus_VTAx7ozG2Cs2sm",
+            "label": "dv58c Stripe customer of user 587",
+            "recorded_at_utc": "2026-10-19T11:20:36+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "stripe_object",
+            "id": "pm_1USEbAJG5OzSNVs2dqyED8fl",
+            "label": "dv58c card 3184 PaymentMethod WC token 75",
+            "recorded_at_utc": "2026-10-19T11:20:38+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "stripe_object",
+            "id": "pi_3USEbFJG5OzSNVs211R75z7z",
+            "label": "dv58c initial classic checkout PI charge ch_3USEbFJG5OzSNVs217O2UvB0",
+            "recorded_at_utc": "2026-10-19T11:20:41+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "action",
+            "id": "place-order-classic-68752",
+            "label": "dv58c Place order clicked 11:19:24Z 3DS COMPLETE 11:19:48Z order-received 11:20:00Z",
+            "recorded_at_utc": "2026-10-19T11:20:43+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "note",
+            "id": "dv58c-wc-token-75",
+            "label": "dv58c WC token 75 present 11:20:15Z right after classic 3DS checkout for user 587",
+            "recorded_at_utc": "2026-10-19T11:20:46+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "stripe_object",
+            "id": "ch_3USESYJG5OzSNVs21tGp3lEk",
+            "label": "dv58 renewal charge PI pi_3USESYJG5OzSNVs21QSPrfSN order 68736 succeeded 11:20:05Z",
+            "recorded_at_utc": "2026-10-19T11:21:07+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "note",
+            "id": "dv58-pending-actions-101110-101111",
+            "label": "dv58 system-scheduled cycle-3 invoice 101110 and process_renewal 101111 for sub 68709 not run",
+            "recorded_at_utc": "2026-10-19T11:21:09+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "customer",
+            "id": 588,
+            "label": "dv59 sqa-dv59-before pre-sweep new-card counterexample",
+            "recorded_at_utc": "2026-10-19T11:22:45+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "customer",
+            "id": 590,
+            "label": "dv58 variant sqa-dv58-block-nt Block 3DS checkout with post-3DS update_order_status AJAX aborted in browser",
+            "recorded_at_utc": "2026-10-19T11:22:47+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "customer",
+            "id": 589,
+            "label": "dv59 sqa-dv59-after post-sweep reproduction",
+            "recorded_at_utc": "2026-10-19T11:22:48+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "subscription",
+            "id": 68770,
+            "label": "dv59 sqa-dv59-after trial 68435 card 0341",
+            "recorded_at_utc": "2026-10-19T11:24:59+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "order",
+            "id": 68769,
+            "label": "dv59 sqa-dv59-after trial checkout order",
+            "recorded_at_utc": "2026-10-19T11:25:02+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "stripe_object",
+            "id": "cus_VTB1PicZN8Kd3H",
+            "label": "dv59 sqa-dv59-after Stripe customer",
+            "recorded_at_utc": "2026-10-19T11:25:04+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "stripe_object",
+            "id": "pm_1USEfcJG5OzSNVs2TewrGbne",
+            "label": "dv59 sqa-dv59-after card 0341 PM",
+            "recorded_at_utc": "2026-10-19T11:25:07+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "stripe_object",
+            "id": "seti_1USEfiJG5OzSNVs2NiK3T4WG",
+            "label": "dv59 sqa-dv59-after checkout SetupIntent",
+            "recorded_at_utc": "2026-10-19T11:25:09+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "subscription",
+            "id": 68788,
+            "label": "dv59 sqa-dv59-before trial 68435 card 0341",
+            "recorded_at_utc": "2026-10-19T11:26:09+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "order",
+            "id": 68786,
+            "label": "dv59 sqa-dv59-before trial checkout order",
+            "recorded_at_utc": "2026-10-19T11:26:12+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "stripe_object",
+            "id": "cus_VTB3WyfpHE0Hmp",
+            "label": "dv59 sqa-dv59-before Stripe customer",
+            "recorded_at_utc": "2026-10-19T11:26:15+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "stripe_object",
+            "id": "pm_1USEgsJG5OzSNVs2HaG6eb9j",
+            "label": "dv59 sqa-dv59-before card 0341 PM",
+            "recorded_at_utc": "2026-10-19T11:26:19+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "stripe_object",
+            "id": "seti_1USEgyJG5OzSNVs2qGcCA5zu",
+            "label": "dv59 sqa-dv59-before checkout SetupIntent",
+            "recorded_at_utc": "2026-10-19T11:26:23+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "subscription",
+            "id": 68781,
+            "label": "dv58 variant customer 590 Block 3DS checkout post-3DS AJAX aborted",
+            "recorded_at_utc": "2026-10-19T11:26:40+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "order",
+            "id": 68780,
+            "label": "dv58 variant initial Block 3DS order update_order_status aborted in browser",
+            "recorded_at_utc": "2026-10-19T11:26:43+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "stripe_object",
+            "id": "cus_VTB2LHa0r3ap3I",
+            "label": "dv58 variant Stripe customer of user 590",
+            "recorded_at_utc": "2026-10-19T11:26:45+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "stripe_object",
+            "id": "pm_1USEgmJG5OzSNVs2FkAEMUcK",
+            "label": "dv58 variant card 3184 PaymentMethod",
+            "recorded_at_utc": "2026-10-19T11:26:48+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "stripe_object",
+            "id": "pi_3USEgsJG5OzSNVs212Y1rbLA",
+            "label": "dv58 variant initial checkout PI",
+            "recorded_at_utc": "2026-10-19T11:26:50+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "note",
+            "id": "dv58-variant-abort-route",
+            "label": "dv58 browser route aborted wc_stripe_update_order_status XHR after 3DS COMPLETE 11:25:34Z order 68780",
+            "recorded_at_utc": "2026-10-19T11:26:53+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "action",
+            "id": "setNextPaymentDate-68753",
+            "label": "dv58c setNextPaymentDate now+90s to 2026-10-19T11:30:11Z run 11:28:42Z",
+            "recorded_at_utc": "2026-10-19T11:28:50+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "action",
+            "id": 101147,
+            "label": "dv58c arraysubs_generate_renewal_invoice sub 68753",
+            "recorded_at_utc": "2026-10-19T11:28:53+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "action",
+            "id": 101149,
+            "label": "dv58 variant arraysubs_generate_renewal_invoice sub 68781",
+            "recorded_at_utc": "2026-10-19T11:28:55+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "action",
+            "id": 101148,
+            "label": "dv58c arraysubs_process_renewal sub 68753 to run explicitly",
+            "recorded_at_utc": "2026-10-19T11:28:56+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "action",
+            "id": 101150,
+            "label": "dv58 variant arraysubs_process_renewal sub 68781 to run explicitly",
+            "recorded_at_utc": "2026-10-19T11:28:58+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "note",
+            "id": "dv58c-canceled-101105-101106",
+            "label": "dv58c original renewal actions 101105 101106 canceled by setNextPaymentDate",
+            "recorded_at_utc": "2026-10-19T11:28:58+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "note",
+            "id": "dv58-variant-setNextPaymentDate",
+            "label": "dv58 setNextPaymentDate 68781 to 2026-10-19T11:30:15Z run 11:28:45Z",
+            "recorded_at_utc": "2026-10-19T11:29:01+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "order",
+            "id": 68846,
+            "label": "dv58 variant renewal order sub 68781 cycle 2",
+            "recorded_at_utc": "2026-10-19T11:30:27+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "order",
+            "id": 68843,
+            "label": "dv58c renewal order sub 68753 cycle 2 generated by action 101147 at 11:30:08Z",
+            "recorded_at_utc": "2026-10-19T11:30:37+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "stripe_object",
+            "id": "pi_3USElvJG5OzSNVs21djGGVsF",
+            "label": "dv58 variant renewal PI order 68846 authentication_required",
+            "recorded_at_utc": "2026-10-19T11:30:46+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "action",
+            "id": 101152,
+            "label": "dv58 variant arraysubs_send_stripe_renewal_verification sub 68781 order 68846",
+            "recorded_at_utc": "2026-10-19T11:30:49+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "note",
+            "id": "dv58-variant-process-renewal-101150-run",
+            "label": "dv58 ran process_renewal 101150 explicitly 11:30:27Z",
+            "recorded_at_utc": "2026-10-19T11:30:52+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "action",
+            "id": "101148-run",
+            "label": "dv58c explicit wp action-scheduler action run 101148 at 2026-10-19T11:30:51Z finished 11:30:56Z",
+            "recorded_at_utc": "2026-10-19T11:31:05+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "stripe_object",
+            "id": "pi_3USEmJJG5OzSNVs21Xi6PjuW",
+            "label": "dv58c renewal PI order 68843 off-session authentication required",
+            "recorded_at_utc": "2026-10-19T11:31:22+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "action",
+            "id": 101153,
+            "label": "dv58c system-created arraysubs_send_stripe_renewal_verification sub 68753 order 68843 completed 11:31:07Z",
+            "recorded_at_utc": "2026-10-19T11:31:25+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "note",
+            "id": "mailpit-4SdNYnTzvGfgqXHyOS0Vu8",
+            "label": "dv58c verification email Verify your subscription renewal 68753 order 68843 Visa ending in 3184 grace 22 October 5:31 PM",
+            "recorded_at_utc": "2026-10-19T11:31:59+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "order",
+            "id": 68819,
+            "label": "dv59 sqa-dv59-before renewal order declined then paid with new card pre-sweep",
+            "recorded_at_utc": "2026-10-19T11:32:39+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "order",
+            "id": 68822,
+            "label": "dv59 sqa-dv59-after renewal order declined left for sweep",
+            "recorded_at_utc": "2026-10-19T11:32:42+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "action",
+            "id": 101134,
+            "label": "dv59 generate_renewal_invoice sub 68788",
+            "recorded_at_utc": "2026-10-19T11:32:44+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "action",
+            "id": 101135,
+            "label": "dv59 process_renewal sub 68788 run explicitly decline",
+            "recorded_at_utc": "2026-10-19T11:32:47+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "action",
+            "id": 101140,
+            "label": "dv59 generate_renewal_invoice sub 68770",
+            "recorded_at_utc": "2026-10-19T11:32:50+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "action",
+            "id": 101141,
+            "label": "dv59 process_renewal sub 68770 run explicitly decline",
+            "recorded_at_utc": "2026-10-19T11:32:53+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "action",
+            "id": 101154,
+            "label": "dv59 auto next generate_renewal_invoice sub 68788",
+            "recorded_at_utc": "2026-10-19T11:32:55+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "action",
+            "id": 101155,
+            "label": "dv59 auto next process_renewal sub 68788",
+            "recorded_at_utc": "2026-10-19T11:32:58+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "action",
+            "id": 101122,
+            "label": "dv59 auto canceled renewal actions sub 68788 101122-101133",
+            "recorded_at_utc": "2026-10-19T11:33:01+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "action",
+            "id": 101136,
+            "label": "dv59 auto canceled renewal actions sub 68770 101136-101139",
+            "recorded_at_utc": "2026-10-19T11:33:04+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "stripe_object",
+            "id": "pi_3USEkHJG5OzSNVs213JINANu",
+            "label": "dv59 before renewal PI declined then succeeded on new card",
+            "recorded_at_utc": "2026-10-19T11:33:07+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "stripe_object",
+            "id": "ch_3USEkHJG5OzSNVs21W22n1Rj",
+            "label": "dv59 before failed charge 0341",
+            "recorded_at_utc": "2026-10-19T11:33:09+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "stripe_object",
+            "id": "ch_3USEkHJG5OzSNVs21BIoyYvX",
+            "label": "dv59 before succeeded charge 4242",
+            "recorded_at_utc": "2026-10-19T11:33:11+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "stripe_object",
+            "id": "pm_1USEmEJG5OzSNVs2C0j7Paip",
+            "label": "dv59 before new 4242 PM unattached",
+            "recorded_at_utc": "2026-10-19T11:33:14+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "stripe_object",
+            "id": "pi_3USEkOJG5OzSNVs20jlEvHCg",
+            "label": "dv59 after renewal PI declined",
+            "recorded_at_utc": "2026-10-19T11:33:17+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "stripe_object",
+            "id": "ch_3USEkOJG5OzSNVs20OXF8AXh",
+            "label": "dv59 after failed charge 0341",
+            "recorded_at_utc": "2026-10-19T11:33:19+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "action",
+            "id": "verify-pay-saved-token-75-68843",
+            "label": "dv58c customer selected saved Visa 3184 token 75 on verification page clicked Pay for order 11:32:41Z 3DS COMPLETE 11:33:58Z order-received 11:34:11Z",
+            "recorded_at_utc": "2026-10-19T11:38:56+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "stripe_object",
+            "id": "ch_3USEmJJG5OzSNVs21VvPajQU",
+            "label": "dv58c renewal charge order 68843 on existing PI pi_3USEmJJG5OzSNVs21Xi6PjuW 3DS authenticated",
+            "recorded_at_utc": "2026-10-19T11:38:58+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "stripe_object",
+            "id": "ch_3USEbFJG5OzSNVs217O2UvB0",
+            "label": "dv58c initial classic checkout charge order 68752",
+            "recorded_at_utc": "2026-10-19T11:39:02+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "stripe_object",
+            "id": "evt_3USEmJJG5OzSNVs21QeOvHi3,evt_3USEmJJG5OzSNVs21VODAMi5,evt_3USEmJJG5OzSNVs21cSrBBp0",
+            "label": "dv58c renewal PI requires_action from ArraySubs confirm, requires_action from WC Stripe client confirmPayment, succeeded",
+            "recorded_at_utc": "2026-10-19T11:39:06+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "action",
+            "id": 101163,
+            "label": "dv58c system-created next-cycle arraysubs_generate_renewal_invoice sub 68753 pending 2026-10-20 07:47:24",
+            "recorded_at_utc": "2026-10-19T11:39:09+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "action",
+            "id": 101164,
+            "label": "dv58c system-created next-cycle arraysubs_process_renewal sub 68753 pending 2026-10-20 13:47:24",
+            "recorded_at_utc": "2026-10-19T11:39:12+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "note",
+            "id": "mailpit-7Em1fQhBVGztWWZn1CQvoo",
+            "label": "dv58c Payment received for subscription 68753 email 11:34:08Z",
+            "recorded_at_utc": "2026-10-19T11:39:14+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "note",
+            "id": "dv61-ui-sweep",
+            "label": "issue 61 deep-verify: read-only admin UI and code sweep, session dv61-admin; no customer, subscription, order, action or Stripe object created; no settings saved; Easy Setup export downloaded to scratchpad only; import inspected to the section-select step then cancelled; import pipeline dry-run via reflection without persisting",
+            "recorded_at_utc": "2026-10-19T11:39:45+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "customer",
+            "id": 591,
+            "label": "dv60 retry ladder customer sqa-dv60-ladder",
+            "recorded_at_utc": "2026-10-19T11:46:25+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "action",
+            "id": "settings-change-dv60",
+            "label": "dv60 set-retry-settings 1 0 24,24,24 at 2026-10-19T11:45:59Z",
+            "recorded_at_utc": "2026-10-19T11:46:28+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "subscription",
+            "id": 68881,
+            "label": "dv60 trial 68435 card 0341 customer 591",
+            "recorded_at_utc": "2026-10-19T11:48:19+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "order",
+            "id": 68880,
+            "label": "dv60 parent trial checkout order block checkout customer 591",
+            "recorded_at_utc": "2026-10-19T11:48:23+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "stripe_object",
+            "id": "seti_1USF2bJG5OzSNVs2rh64ziSt",
+            "label": "dv60 SetupIntent order 68880",
+            "recorded_at_utc": "2026-10-19T11:48:26+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "stripe_object",
+            "id": "pm_1USF2UJG5OzSNVs2ystkVGZw",
+            "label": "dv60 PaymentMethod card 0341 sub 68881",
+            "recorded_at_utc": "2026-10-19T11:48:29+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "stripe_object",
+            "id": "cus_VTBPCTCftcrwfA",
+            "label": "dv60 Stripe customer for WP user 591",
+            "recorded_at_utc": "2026-10-19T11:48:34+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "action",
+            "id": "dev-endTrial-setNextPaymentDate-68881",
+            "label": "dv60 endTrial then setNextPaymentDate time+90 on sub 68881",
+            "recorded_at_utc": "2026-10-19T11:49:30+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "action",
+            "id": 101166,
+            "label": "dv59 sweep-created send_stripe_renewal_verification for ordinary decline 68770/68822 ended superseded",
+            "recorded_at_utc": "2026-10-19T11:49:39+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "note",
+            "id": "dv59-result",
+            "label": "dv59 issue 59 reproduced: sweep 101129 marked ordinary decline order 68822 as verification; new card refused; pre-sweep counterexample 68819 paid with new card",
+            "recorded_at_utc": "2026-10-19T11:49:42+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "action",
+            "id": 101187,
+            "label": "dv60 arraysubs_generate_renewal_invoice sub 68881 queue runner",
+            "recorded_at_utc": "2026-10-19T11:49:46+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "action",
+            "id": 101188,
+            "label": "dv60 arraysubs_process_renewal attempt0 sub 68881 run explicitly",
+            "recorded_at_utc": "2026-10-19T11:49:50+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "order",
+            "id": 68903,
+            "label": "dv60 renewal invoice sub 68881",
+            "recorded_at_utc": "2026-10-19T11:51:27+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "action",
+            "id": 101190,
+            "label": "dv60 arraysubs_process_renewal retry1 sub 68881 scheduled 2026-10-20 11:51:39 run explicitly",
+            "recorded_at_utc": "2026-10-19T11:52:07+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "action",
+            "id": 101191,
+            "label": "dv60 arraysubs_process_renewal retry2 sub 68881 scheduled 2026-10-20 11:52:14 run explicitly",
+            "recorded_at_utc": "2026-10-19T11:52:35+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "action",
+            "id": 101192,
+            "label": "dv60 arraysubs_process_renewal retry3 sub 68881 scheduled 2026-10-20 11:52:43 run explicitly",
+            "recorded_at_utc": "2026-10-19T11:53:03+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "action",
+            "id": "settings-restore-dv60",
+            "label": "dv60 restore-settings arraysubs_settings from settings-before-dv60.json at 2026-10-19T11:53:16Z all_identical true vs original-r2",
+            "recorded_at_utc": "2026-10-19T11:53:36+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "stripe_object",
+            "id": "pi_3USF6IJG5OzSNVs21G74KqjJ",
+            "label": "dv60 attempt0 PI order 68903 card_declined generic_decline 11:51:34Z",
+            "recorded_at_utc": "2026-10-19T11:54:28+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "stripe_object",
+            "id": "pi_3USF6vJG5OzSNVs20RzY4Wi4",
+            "label": "dv60 retry1 PI order 68903 card_declined 11:52:13Z",
+            "recorded_at_utc": "2026-10-19T11:54:31+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "stripe_object",
+            "id": "pi_3USF7NJG5OzSNVs20U3hZdYJ",
+            "label": "dv60 retry2 PI order 68903 card_declined 11:52:41Z",
+            "recorded_at_utc": "2026-10-19T11:54:34+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "stripe_object",
+            "id": "pi_3USF7pJG5OzSNVs21r8pTcRb",
+            "label": "dv60 retry3 PI order 68903 card_declined 11:53:09Z",
+            "recorded_at_utc": "2026-10-19T11:54:38+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "action",
+            "id": 101195,
+            "label": "dv60 observed arraysubs_send_stripe_renewal_verification sub 68881 order 68903 created by system sweep 101171 at 11:58:05Z not run by tester",
+            "recorded_at_utc": "2026-10-19T11:58:52+00:00",
+            "phase": "deep-verify"
+        },
+        {
+            "kind": "action",
+            "id": 101225,
+            "label": "dv2c rebind sub 68788 generate_renewal_invoice after setNextPaymentDate 12:49:40Z",
+            "recorded_at_utc": "2026-10-19T12:48:21+00:00",
+            "phase": "deep-verify-2"
+        },
+        {
+            "kind": "action",
+            "id": 101226,
+            "label": "dv2c rebind sub 68788 process_renewal run explicitly",
+            "recorded_at_utc": "2026-10-19T12:48:23+00:00",
+            "phase": "deep-verify-2"
+        },
+        {
+            "kind": "action",
+            "id": 101154,
+            "label": "dv2c rebind canceled by setNextPaymentDate 101154-101155 sub 68788",
+            "recorded_at_utc": "2026-10-19T12:48:26+00:00",
+            "phase": "deep-verify-2"
+        },
+        {
+            "kind": "order",
+            "id": 68965,
+            "label": "dv2c rebind sub 68788 renewal order after one-time PM rebind",
+            "recorded_at_utc": "2026-10-19T12:50:38+00:00",
+            "phase": "deep-verify-2"
+        },
+        {
+            "kind": "action",
+            "id": 101234,
+            "label": "dv2c rebind automatic retry 1 of 3 scheduled after binding_invalid sub 68788",
+            "recorded_at_utc": "2026-10-19T12:51:13+00:00",
+            "phase": "deep-verify-2"
+        },
+        {
+            "kind": "stripe_object",
+            "id": "pi_3USG5BJG5OzSNVs20cFl4rQm",
+            "label": "dv2c rebind order 68965 customer order-pay PI succeeded setup_future_usage null",
+            "recorded_at_utc": "2026-10-19T12:56:24+00:00",
+            "phase": "deep-verify-2"
+        },
+        {
+            "kind": "stripe_object",
+            "id": "ch_3USG5BJG5OzSNVs20ylyk3bg",
+            "label": "dv2c rebind order 68965 succeeded charge 4242",
+            "recorded_at_utc": "2026-10-19T12:56:27+00:00",
+            "phase": "deep-verify-2"
+        },
+        {
+            "kind": "stripe_object",
+            "id": "pm_1USG58JG5OzSNVs2lRuRO6Co",
+            "label": "dv2c rebind order 68965 new 4242 PM unattached not bound",
+            "recorded_at_utc": "2026-10-19T12:56:30+00:00",
+            "phase": "deep-verify-2"
+        },
+        {
+            "kind": "action",
+            "id": 101239,
+            "label": "dv2c rebind next-cycle generate_renewal_invoice sub 68788 left pending 2026-10-20 08:36:32Z",
+            "recorded_at_utc": "2026-10-19T12:56:32+00:00",
+            "phase": "deep-verify-2"
+        },
+        {
+            "kind": "action",
+            "id": 101240,
+            "label": "dv2c rebind next-cycle process_renewal sub 68788 left pending 2026-10-20 14:36:32Z will hit binding_invalid",
+            "recorded_at_utc": "2026-10-19T12:56:35+00:00",
+            "phase": "deep-verify-2"
+        },
+        {
+            "kind": "stripe_object",
+            "id": "pi_3USG0ZJG5OzSNVs21Rq8uGbe",
+            "label": "dv2-express Link express PI that paid locked renewal order 68822 via Store API",
+            "recorded_at_utc": "2026-10-19T12:56:53+00:00",
+            "phase": "deep-verify-2"
+        },
+        {
+            "kind": "stripe_object",
+            "id": "ch_3USG0ZJG5OzSNVs21H2c5wUt",
+            "label": "dv2-express Link charge 7.31 for order 68822",
+            "recorded_at_utc": "2026-10-19T12:56:56+00:00",
+            "phase": "deep-verify-2"
+        },
+        {
+            "kind": "stripe_object",
+            "id": "pm_1USG0TJG5OzSNVs2Y8ki6bwm",
+            "label": "dv2-express unattached Link PM now bound to sub 68770",
+            "recorded_at_utc": "2026-10-19T12:56:58+00:00",
+            "phase": "deep-verify-2"
+        },
+        {
+            "kind": "action",
+            "id": 101230,
+            "label": "dv2-express generate_renewal_invoice sub 68770 scheduled by express-paid renewal pending 2026-10-20 05:45Z not run",
+            "recorded_at_utc": "2026-10-19T12:57:03+00:00",
+            "phase": "deep-verify-2"
+        },
+        {
+            "kind": "action",
+            "id": 101231,
+            "label": "dv2-express process_renewal sub 68770 scheduled by express-paid renewal pending 2026-10-20 11:45Z not run",
+            "recorded_at_utc": "2026-10-19T12:57:07+00:00",
+            "phase": "deep-verify-2"
+        },
+        {
+            "kind": "note",
+            "id": "sqa-dv2-link-1792414105@example.com",
+            "label": "dv2-express Stripe Link sandbox account created in Link popup for order 68822",
+            "recorded_at_utc": "2026-10-19T12:57:10+00:00",
+            "phase": "deep-verify-2"
+        },
+        {
+            "kind": "note",
+            "id": "dv2c-rebind-result",
+            "label": "dv2c rebind: sub 68788 bound to unattached one-time PM fails next renewal with renewal_payment_method_binding_invalid (no marker, no PI) but category unknown so retry 1 of 3 WAS scheduled (101234); customer order-pay new card paid 68965, no rebind (no marker), new PM pm_1USG58 unattached",
+            "recorded_at_utc": "2026-10-19T13:02:29+00:00",
+            "phase": "deep-verify-2"
+        },
+        {
+            "kind": "action",
+            "id": "dv2a-pm-update-68881",
+            "label": "dv2a reset same-pm test: POST payment_methods pm_1USF2UJG5OzSNVs2ystkVGZw billing_details.name on sub 68881 (no settings change)",
+            "recorded_at_utc": "2026-10-19T13:13:41+00:00",
+            "phase": "deep-verify-2"
+        },
+        {
+            "kind": "stripe_object",
+            "id": "evt_1USGNoJG5OzSNVs22bQLWhu2",
+            "label": "dv2a payment_method.updated same-pm event on pm_1USF2U (sub 68881) processed 13:13:47Z wiped failure+retry meta",
+            "recorded_at_utc": "2026-10-19T13:15:25+00:00",
+            "phase": "deep-verify-2"
+        },
+        {
+            "kind": "customer",
+            "id": 592,
+            "label": "dv2a reset-on-same-pm queued-retry customer sqa-dv2-reset",
+            "recorded_at_utc": "2026-10-19T13:17:24+00:00",
+            "phase": "deep-verify-2"
+        },
+        {
+            "kind": "subscription",
+            "id": 68996,
+            "label": "dv2a trial 68435 card 0341 customer 592 (reset-on-same-pm queued retry)",
+            "recorded_at_utc": "2026-10-19T13:19:03+00:00",
+            "phase": "deep-verify-2"
+        },
+        {
+            "kind": "order",
+            "id": 68995,
+            "label": "dv2a parent trial checkout order block checkout customer 592",
+            "recorded_at_utc": "2026-10-19T13:19:06+00:00",
+            "phase": "deep-verify-2"
+        },
+        {
+            "kind": "stripe_object",
+            "id": "pm_1USGSLJG5OzSNVs2Rq3U3j5W",
+            "label": "dv2a PaymentMethod card 0341 bound to sub 68996",
+            "recorded_at_utc": "2026-10-19T13:19:20+00:00",
+            "phase": "deep-verify-2"
+        },
+        {
+            "kind": "stripe_object",
+            "id": "cus_VTCsQXyRiRmQfB",
+            "label": "dv2a Stripe customer for WP user 592",
+            "recorded_at_utc": "2026-10-19T13:19:23+00:00",
+            "phase": "deep-verify-2"
+        },
+        {
+            "kind": "stripe_object",
+            "id": "seti_1USGSVJG5OzSNVs2F6XVefRj",
+            "label": "dv2a SetupIntent order 68995",
+            "recorded_at_utc": "2026-10-19T13:19:25+00:00",
+            "phase": "deep-verify-2"
+        },
+        {
+            "kind": "action",
+            "id": "settings-change-dv2a",
+            "label": "dv2a set-retry-settings 1 0 24,24,24 at 2026-10-19T13:19:41Z",
+            "recorded_at_utc": "2026-10-19T13:19:46+00:00",
+            "phase": "deep-verify-2"
+        },
+        {
+            "kind": "action",
+            "id": "dev-endTrial-setNextPaymentDate-68996",
+            "label": "dv2a endTrial then setNextPaymentDate time+90 on sub 68996",
+            "recorded_at_utc": "2026-10-19T13:20:09+00:00",
+            "phase": "deep-verify-2"
+        },
+        {
+            "kind": "action",
+            "id": 101270,
+            "label": "dv2a arraysubs_generate_renewal_invoice sub 68996 queue runner 13:22:06Z",
+            "recorded_at_utc": "2026-10-19T13:22:36+00:00",
+            "phase": "deep-verify-2"
+        },
+        {
+            "kind": "order",
+            "id": 69022,
+            "label": "dv2a renewal invoice sub 68996",
+            "recorded_at_utc": "2026-10-19T13:22:38+00:00",
+            "phase": "deep-verify-2"
+        },
+        {
+            "kind": "action",
+            "id": 101271,
+            "label": "dv2a arraysubs_process_renewal attempt0 sub 68996 run explicitly",
+            "recorded_at_utc": "2026-10-19T13:22:41+00:00",
+            "phase": "deep-verify-2"
+        },
+        {
+            "kind": "action",
+            "id": 101277,
+            "label": "dv2a arraysubs_process_renewal retry1 sub 68996 scheduled 2026-10-20 13:22:46 (queued before same-pm event)",
+            "recorded_at_utc": "2026-10-19T13:24:19+00:00",
+            "phase": "deep-verify-2"
+        },
+        {
+            "kind": "action",
+            "id": 101278,
+            "label": "dv2a observed arraysubs_send_stripe_renewal_verification sub 68996 order 69022 queued by system after decline, not run by tester",
+            "recorded_at_utc": "2026-10-19T13:24:22+00:00",
+            "phase": "deep-verify-2"
+        },
+        {
+            "kind": "action",
+            "id": "dv2a-pm-update-68996",
+            "label": "dv2a reset same-pm test with queued retry 101277: POST payment_methods pm_1USGSLJG5OzSNVs2Rq3U3j5W billing_details.name on sub 68996",
+            "recorded_at_utc": "2026-10-19T13:25:12+00:00",
+            "phase": "deep-verify-2"
+        },
+        {
+            "kind": "action",
+            "id": "settings-restore-dv2a",
+            "label": "dv2a restore-settings arraysubs_settings from settings-before-dv2a.json at 2026-10-19T13:26:08Z all_identical true vs original-r2 (window 13:19:41Z-2026-10-19T13:26:08Z)",
+            "recorded_at_utc": "2026-10-19T13:26:28+00:00",
+            "phase": "deep-verify-2"
+        },
+        {
+            "kind": "stripe_object",
+            "id": "evt_1USGYxJG5OzSNVs2QNKIMC0e",
+            "label": "dv2a payment_method.updated same-pm event on pm_1USGSL (sub 68996) processed 13:25:17Z wiped failure+retry meta while retry 101277 pending",
+            "recorded_at_utc": "2026-10-19T13:26:30+00:00",
+            "phase": "deep-verify-2"
+        },
+        {
+            "kind": "action",
+            "id": "101277-run",
+            "label": "dv2a run queued retry 101277 sub 68996 explicitly (ActionScheduler runner process_action, read-only observers) after same-pm reset and settings restore",
+            "recorded_at_utc": "2026-10-19T13:27:24+00:00",
+            "phase": "deep-verify-2"
+        },
+        {
+            "kind": "stripe_object",
+            "id": "pi_3USGWWJG5OzSNVs21XYG019B",
+            "label": "dv2a attempt0 PI order 69022 card_declined generic_decline 13:22:44Z",
+            "recorded_at_utc": "2026-10-19T13:31:50+00:00",
+            "phase": "deep-verify-2"
+        },
+        {
+            "kind": "stripe_object",
+            "id": "pi_3USGb6JG5OzSNVs2113HngyQ",
+            "label": "dv2a queued retry 101277 PI order 69022 card_declined generic_decline 13:27:28Z (ran as attempt 0 after reset)",
+            "recorded_at_utc": "2026-10-19T13:31:53+00:00",
+            "phase": "deep-verify-2"
+        },
+        {
+            "kind": "action",
+            "id": 101261,
+            "label": "dv2a observed arraysubs_gateway_meta_retry evt_1USGSWJG5OzSNVs2d3yp7d6x sub 68996 ran 13:20:05Z by queue runner (official setup_intent repair, same-pm bind, not run by tester)",
+            "recorded_at_utc": "2026-10-19T13:31:55+00:00",
+            "phase": "deep-verify-2"
+        },
+        {
+            "kind": "customer",
+            "id": 593,
+            "label": "sqa-fix57-decline #57/#60/#64 decline fixture",
+            "recorded_at_utc": "2026-10-19T19:02:16+00:00",
+            "phase": "fix-56-64"
+        },
+        {
+            "kind": "customer",
+            "id": 594,
+            "label": "sqa-fix56-portal #56 portal default change",
+            "recorded_at_utc": "2026-10-19T19:02:19+00:00",
+            "phase": "fix-56-64"
+        },
+        {
+            "kind": "customer",
+            "id": 595,
+            "label": "sqa-fix56-account #56 My Account make default",
+            "recorded_at_utc": "2026-10-19T19:02:21+00:00",
+            "phase": "fix-56-64"
+        },
+        {
+            "kind": "customer",
+            "id": 596,
+            "label": "sqa-fix62-repair #62 recovery rebind",
+            "recorded_at_utc": "2026-10-19T19:02:24+00:00",
+            "phase": "fix-56-64"
+        },
+        {
+            "kind": "subscription",
+            "id": 69202,
+            "label": "#57/#60/#64 decline (customer 593, 0341)",
+            "recorded_at_utc": "2026-10-19T19:04:25+00:00",
+            "phase": "fix-56-64"
+        },
+        {
+            "kind": "order",
+            "id": 69201,
+            "label": "trial checkout for fix57 sub",
+            "recorded_at_utc": "2026-10-19T19:04:28+00:00",
+            "phase": "fix-56-64"
+        },
+        {
+            "kind": "action",
+            "id": 101496,
+            "label": "invoice for 69202",
+            "recorded_at_utc": "2026-10-19T19:04:54+00:00",
+            "phase": "fix-56-64"
+        },
+        {
+            "kind": "action",
+            "id": 101497,
+            "label": "process_renewal for 69202",
+            "recorded_at_utc": "2026-10-19T19:04:56+00:00",
+            "phase": "fix-56-64"
+        },
+        {
+            "kind": "order",
+            "id": 69222,
+            "label": "renewal for 69202",
+            "recorded_at_utc": "2026-10-19T19:06:47+00:00",
+            "phase": "fix-56-64"
+        },
+        {
+            "kind": "action",
+            "id": 101503,
+            "label": "retry 1 for 69202",
+            "recorded_at_utc": "2026-10-19T19:07:18+00:00",
+            "phase": "fix-56-64"
+        },
+        {
+            "kind": "order",
+            "id": 69233,
+            "label": "#56 plan checkout customer 594",
+            "recorded_at_utc": "2026-10-19T19:12:05+00:00",
+            "phase": "fix-56-64"
+        },
+        {
+            "kind": "subscription",
+            "id": 69234,
+            "label": "#56 customer 594 4242",
+            "recorded_at_utc": "2026-10-19T19:12:07+00:00",
+            "phase": "fix-56-64"
+        },
+        {
+            "kind": "order",
+            "id": 69244,
+            "label": "#56 plan checkout customer 595",
+            "recorded_at_utc": "2026-10-19T19:12:20+00:00",
+            "phase": "fix-56-64"
+        },
+        {
+            "kind": "subscription",
+            "id": 69245,
+            "label": "#56 customer 595 4242",
+            "recorded_at_utc": "2026-10-19T19:12:23+00:00",
+            "phase": "fix-56-64"
+        },
+        {
+            "kind": "action",
+            "id": 101520,
+            "label": "invoice for 68788 (fix test)",
+            "recorded_at_utc": "2026-10-19T19:20:22+00:00",
+            "phase": "fix-56-64"
+        },
+        {
+            "kind": "action",
+            "id": 101521,
+            "label": "process_renewal for 68788 (fix test)",
+            "recorded_at_utc": "2026-10-19T19:20:25+00:00",
+            "phase": "fix-56-64"
+        },
+        {
+            "kind": "order",
+            "id": 69261,
+            "label": "renewal for 68788 fix test",
+            "recorded_at_utc": "2026-10-19T19:22:04+00:00",
+            "phase": "fix-56-64"
+        },
+        {
+            "kind": "action",
+            "id": 101547,
+            "label": "renewal attempt after card change 68781",
+            "recorded_at_utc": "2026-10-19T19:38:11+00:00",
+            "phase": "fix-56-64"
+        },
+        {
+            "kind": "action",
+            "id": 101549,
+            "label": "second renewal attempt 68781",
+            "recorded_at_utc": "2026-10-19T19:42:08+00:00",
+            "phase": "fix-56-64"
+        },
+        {
+            "kind": "action",
+            "id": 101553,
+            "label": "invoice 68709 B1 retest",
+            "recorded_at_utc": "2026-10-19T19:42:51+00:00",
+            "phase": "fix-56-64"
+        },
+        {
+            "kind": "action",
+            "id": 101554,
+            "label": "process_renewal 68709 B1 retest",
+            "recorded_at_utc": "2026-10-19T19:42:54+00:00",
+            "phase": "fix-56-64"
+        },
+        {
+            "kind": "order",
+            "id": 69304,
+            "label": "renewal 68709 B1 retest",
+            "recorded_at_utc": "2026-10-19T19:44:31+00:00",
+            "phase": "fix-56-64"
+        },
+        {
+            "kind": "action",
+            "id": 101558,
+            "label": "attempt after card change 68709",
+            "recorded_at_utc": "2026-10-19T19:45:47+00:00",
+            "phase": "fix-56-64"
+        },
+        {
+            "kind": "action",
+            "id": 101607,
+            "label": "69202 retry 2 after F8 abandoned-attempt test",
+            "recorded_at_utc": "2026-10-19T20:47:33+00:00",
+            "phase": "fix-56-64"
+        },
+        {
+            "kind": "stripe_object",
+            "id": "pi_3USNSHJG5OzSNVs20vGm1YGy",
+            "label": "69222 retry-1 replacement PI (declined)",
+            "recorded_at_utc": "2026-10-19T20:47:35+00:00",
+            "phase": "fix-56-64"
+        },
+        {
+            "kind": "action",
+            "id": 101609,
+            "label": "69202 next cycle after CAS rebind test (101609:arraysubs_generate_renewal_invoice@2026-10-20)",
+            "recorded_at_utc": "2026-10-19T20:49:31+00:00",
+            "phase": "fix-56-64"
+        },
+        {
+            "kind": "action",
+            "id": 101610,
+            "label": "69202 next cycle after CAS rebind test (101610:arraysubs_process_renewal@2026-10-21)",
+            "recorded_at_utc": "2026-10-19T20:49:35+00:00",
+            "phase": "fix-56-64"
+        },
+        {
+            "kind": "action",
+            "id": 101612,
+            "label": "68753 B1 regression (round 2) renewal pulled forward",
+            "recorded_at_utc": "2026-10-19T20:51:55+00:00",
+            "phase": "fix-56-64"
+        },
+        {
+            "kind": "action",
+            "id": 101613,
+            "label": "68753 B1 regression (round 2) renewal pulled forward",
+            "recorded_at_utc": "2026-10-19T20:51:58+00:00",
+            "phase": "fix-56-64"
+        },
+        {
+            "kind": "order",
+            "id": 69364,
+            "label": "68753 renewal awaiting authentication (B1 round-2 regression)",
+            "recorded_at_utc": "2026-10-19T20:53:49+00:00",
+            "phase": "fix-56-64"
+        },
+        {
+            "kind": "action",
+            "id": 101621,
+            "label": "68753 B1 new-card attempt (round-2 regression)",
+            "recorded_at_utc": "2026-10-19T20:55:13+00:00",
+            "phase": "fix-56-64"
+        },
+        {
+            "kind": "action",
+            "id": 101623,
+            "label": "68753 next cycle after B1 round-2 regression (arraysubs_generate_renewal_invoice 2026-10-20_17:10:25)",
+            "recorded_at_utc": "2026-10-19T20:56:55+00:00",
+            "phase": "fix-56-64"
+        },
+        {
+            "kind": "action",
+            "id": 101624,
+            "label": "68753 next cycle after B1 round-2 regression (arraysubs_process_renewal 2026-10-20_23:10:25)",
+            "recorded_at_utc": "2026-10-19T20:56:58+00:00",
+            "phase": "fix-56-64"
+        },
+        {
+            "kind": "action",
+            "id": 101661,
+            "label": "69202 M2a live test renewal pulled forward (arraysubs_generate_renewal_invoice 2026-10-19_21:46:46)",
+            "recorded_at_utc": "2026-10-19T21:45:49+00:00",
+            "phase": "fix-56-64"
+        },
+        {
+            "kind": "action",
+            "id": 101662,
+            "label": "69202 M2a live test renewal pulled forward (arraysubs_process_renewal 2026-10-20_02:45:12)",
+            "recorded_at_utc": "2026-10-19T21:45:52+00:00",
+            "phase": "fix-56-64"
+        },
+        {
+            "kind": "order",
+            "id": 69406,
+            "label": "69202 renewal for M2a live test (declines on 0341)",
+            "recorded_at_utc": "2026-10-19T21:47:44+00:00",
+            "phase": "fix-56-64"
+        },
+        {
+            "kind": "action",
+            "id": 101665,
+            "label": "69202 retry 1 for 69406 (M2a live test)",
+            "recorded_at_utc": "2026-10-19T21:48:03+00:00",
+            "phase": "fix-56-64"
+        },
+        {
+            "kind": "action",
+            "id": 101669,
+            "label": "69202 next cycle after M2a live test (arraysubs_generate_renewal_invoice 2026-10-20_20:45:12)",
+            "recorded_at_utc": "2026-10-19T21:49:58+00:00",
+            "phase": "fix-56-64"
+        },
+        {
+            "kind": "action",
+            "id": 101670,
+            "label": "69202 next cycle after M2a live test (arraysubs_process_renewal 2026-10-21_02:45:12)",
+            "recorded_at_utc": "2026-10-19T21:50:00+00:00",
+            "phase": "fix-56-64"
+        },
+        {
+            "kind": "action",
+            "id": 101667,
+            "label": "69202 deferred attempt (M2a 30-min grace)",
+            "recorded_at_utc": "2026-10-19T21:50:03+00:00",
+            "phase": "fix-56-64"
+        },
+        {
+            "kind": "action",
+            "id": 101695,
+            "label": "69202 round-4 M1 live test (arraysubs_generate_renewal_invoice 2026-10-19_22:26:47)",
+            "recorded_at_utc": "2026-10-19T22:25:50+00:00",
+            "phase": "fix-56-64"
+        },
+        {
+            "kind": "action",
+            "id": 101696,
+            "label": "69202 round-4 M1 live test (arraysubs_process_renewal 2026-10-20_03:25:13)",
+            "recorded_at_utc": "2026-10-19T22:25:52+00:00",
+            "phase": "fix-56-64"
+        },
+        {
+            "kind": "order",
+            "id": 69436,
+            "label": "69202 renewal for round-4 M1 live test (declines on 0341)",
+            "recorded_at_utc": "2026-10-19T22:27:49+00:00",
+            "phase": "fix-56-64"
+        },
+        {
+            "kind": "action",
+            "id": 101702,
+            "label": "69202 retry 1 for 69436 (round-4 M1 test, expected to be replaced)",
+            "recorded_at_utc": "2026-10-19T22:28:07+00:00",
+            "phase": "fix-56-64"
+        },
+        {
+            "kind": "action",
+            "id": 101703,
+            "label": "69202 new-card attempt that replaced retry 101702 (round-4 M1 test)",
+            "recorded_at_utc": "2026-10-19T22:28:55+00:00",
+            "phase": "fix-56-64"
+        },
+        {
+            "kind": "action",
+            "id": 101708,
+            "label": "69202 next cycle after round-4 M1 test (arraysubs_generate_renewal_invoice 2026-10-20_21:25:13)",
+            "recorded_at_utc": "2026-10-19T22:34:33+00:00",
+            "phase": "fix-56-64"
+        },
+        {
+            "kind": "action",
+            "id": 101709,
+            "label": "69202 next cycle after round-4 M1 test (arraysubs_process_renewal 2026-10-21_03:25:13)",
+            "recorded_at_utc": "2026-10-19T22:34:35+00:00",
+            "phase": "fix-56-64"
+        },
+        {
+            "kind": "customer",
+            "id": 597,
+            "label": "sqa-fix65-paypage #65 two abandoned Pay-page attempts",
+            "recorded_at_utc": "2026-10-20T06:49:41+00:00",
+            "phase": "fix-65-69"
+        },
+        {
+            "kind": "subscription",
+            "id": 69676,
+            "label": "#65 fixture sub (trial plan, card 0341)",
+            "recorded_at_utc": "2026-10-20T06:58:13+00:00",
+            "phase": "fix-65-69"
+        },
+        {
+            "kind": "order",
+            "id": 69675,
+            "label": "#65 trial checkout order",
+            "recorded_at_utc": "2026-10-20T06:58:15+00:00",
+            "phase": "fix-65-69"
+        },
+        {
+            "kind": "action",
+            "id": 102026,
+            "label": "#65 invoice pulled forward",
+            "recorded_at_utc": "2026-10-20T06:58:18+00:00",
+            "phase": "fix-65-69"
+        },
+        {
+            "kind": "action",
+            "id": 102027,
+            "label": "#65 renewal pulled forward",
+            "recorded_at_utc": "2026-10-20T06:58:20+00:00",
+            "phase": "fix-65-69"
+        },
+        {
+            "kind": "order",
+            "id": 69693,
+            "label": "#65 renewal order",
+            "recorded_at_utc": "2026-10-20T06:58:43+00:00",
+            "phase": "fix-65-69"
+        },
+        {
+            "kind": "action",
+            "id": 102029,
+            "label": "#65 renewal re-queued (ran early)",
+            "recorded_at_utc": "2026-10-20T06:58:59+00:00",
+            "phase": "fix-65-69"
+        },
+        {
+            "kind": "action",
+            "id": 102030,
+            "label": "#65 renewal re-queued (ran early, 2nd)",
+            "recorded_at_utc": "2026-10-20T06:59:48+00:00",
+            "phase": "fix-65-69"
+        },
+        {
+            "kind": "action",
+            "id": 102032,
+            "label": "#65 retry 1 (+24h)",
+            "recorded_at_utc": "2026-10-20T07:00:09+00:00",
+            "phase": "fix-65-69"
+        },
+        {
+            "kind": "action",
+            "id": 102036,
+            "label": "#65 deferred attempt (Pay stamp + 30 min)",
+            "recorded_at_utc": "2026-10-20T07:04:40+00:00",
+            "phase": "fix-65-69"
+        },
+        {
+            "kind": "note",
+            "id": "subscription 69712",
+            "label": "#68 probe temporary draft subscription; deleted by the probe with its 4 notes",
+            "recorded_at_utc": "2026-10-20T07:10:19+00:00",
+            "phase": "fix-65-69"
+        },
+        {
+            "kind": "action",
+            "id": 102071,
+            "label": "#65 retry 2 (run early to start round 2)",
+            "recorded_at_utc": "2026-10-20T07:42:43+00:00",
+            "phase": "fix-65-69"
+        },
+        {
+            "kind": "action",
+            "id": 102073,
+            "label": "#65 round-2 deferred attempt (runs via system cron)",
+            "recorded_at_utc": "2026-10-20T07:43:04+00:00",
+            "phase": "fix-65-69"
+        },
+        {
+            "kind": "customer",
+            "id": 598,
+            "label": "sqa-fix67-ach #67 ACH async failure",
+            "recorded_at_utc": "2026-10-20T07:43:39+00:00",
+            "phase": "fix-65-69"
+        },
+        {
+            "kind": "subscription",
+            "id": 69756,
+            "label": "#67 fixture sub (trial plan, card 4242, to be bound to ACH)",
+            "recorded_at_utc": "2026-10-20T07:44:33+00:00",
+            "phase": "fix-65-69"
+        },
+        {
+            "kind": "order",
+            "id": 69755,
+            "label": "#67 trial checkout order",
+            "recorded_at_utc": "2026-10-20T07:44:35+00:00",
+            "phase": "fix-65-69"
+        },
+        {
+            "kind": "stripe_object",
+            "id": "pm_1USXisJG5OzSNVs2sgLiPJd5",
+            "label": "#67 test ACH PM (account 000222222227 insufficient funds), mandate mandate_1USXisJG5OzSNVs2z3xPKvtV, seti_1USXisJG5OzSNVs2s6bLCJIo",
+            "recorded_at_utc": "2026-10-20T07:45:06+00:00",
+            "phase": "fix-65-69"
+        },
+        {
+            "kind": "action",
+            "id": 102086,
+            "label": "#67 invoice pulled forward",
+            "recorded_at_utc": "2026-10-20T07:45:28+00:00",
+            "phase": "fix-65-69"
+        },
+        {
+            "kind": "action",
+            "id": 102087,
+            "label": "#67 renewal pulled forward",
+            "recorded_at_utc": "2026-10-20T07:45:31+00:00",
+            "phase": "fix-65-69"
+        },
+        {
+            "kind": "order",
+            "id": 69774,
+            "label": "#67 ACH renewal order",
+            "recorded_at_utc": "2026-10-20T07:46:45+00:00",
+            "phase": "fix-65-69"
+        },
+        {
+            "kind": "action",
+            "id": 102090,
+            "label": "#67 retry 1 (run early)",
+            "recorded_at_utc": "2026-10-20T07:48:46+00:00",
+            "phase": "fix-65-69"
+        },
+        {
+            "kind": "action",
+            "id": 102092,
+            "label": "#67 retry 2 (+24h, left pending)",
+            "recorded_at_utc": "2026-10-20T07:50:49+00:00",
+            "phase": "fix-65-69"
+        },
+        {
+            "kind": "stripe_object",
+            "id": "pm_1USXt7JG5OzSNVs28Qn5fkET",
+            "label": "#66 test ACH PM (account 000000000009), mandate mandate_1USXt7JG5OzSNVs2OM43fCgO",
+            "recorded_at_utc": "2026-10-20T07:55:33+00:00",
+            "phase": "fix-65-69"
+        },
+        {
+            "kind": "order",
+            "id": 69807,
+            "label": "#66 renewal invoice paid pay-page-like by ACH (stays processing)",
+            "recorded_at_utc": "2026-10-20T07:57:06+00:00",
+            "phase": "fix-65-69"
+        },
+        {
+            "kind": "action",
+            "id": 102100,
+            "label": "#66 invoice pulled forward",
+            "recorded_at_utc": "2026-10-20T07:57:09+00:00",
+            "phase": "fix-65-69"
+        },
+        {
+            "kind": "action",
+            "id": 102101,
+            "label": "#66 renewal action",
+            "recorded_at_utc": "2026-10-20T07:57:11+00:00",
+            "phase": "fix-65-69"
+        },
+        {
+            "kind": "product",
+            "id": 69815,
+            "label": "#69 SQA Yearly 209 Plan",
+            "recorded_at_utc": "2026-10-20T07:59:12+00:00",
+            "phase": "fix-65-69"
+        },
+        {
+            "kind": "order",
+            "id": 69818,
+            "label": "#69 bacs order for email snapshot (2571 + qa-audit-coupon)",
+            "recorded_at_utc": "2026-10-20T08:04:01+00:00",
+            "phase": "fix-65-69"
+        },
+        {
+            "kind": "subscription",
+            "id": 69819,
+            "label": "#69 email snapshot subscription",
+            "recorded_at_utc": "2026-10-20T08:04:04+00:00",
+            "phase": "fix-65-69"
+        },
+        {
+            "kind": "customer",
+            "id": 599,
+            "label": "#69 guest checkout account sqa-fix69-mail",
+            "recorded_at_utc": "2026-10-20T08:04:06+00:00",
+            "phase": "fix-65-69"
+        },
+        {
+            "kind": "action",
+            "id": 102116,
+            "label": "#65 retry 3 (+24h, left pending)",
+            "recorded_at_utc": "2026-10-20T08:15:27+00:00",
+            "phase": "fix-65-69"
+        },
+        {
+            "kind": "action",
+            "id": 102117,
+            "label": "#65 gateway meta retry for deferred sync-decline webhook",
+            "recorded_at_utc": "2026-10-20T08:15:29+00:00",
+            "phase": "fix-65-69"
+        },
+        {
+            "kind": "action",
+            "id": 102179,
+            "label": "#65/r1-L3 retry 3 re-queued by the reconcile step (replaces cancelled 102116)",
+            "recorded_at_utc": "2026-10-20T09:25:49+00:00",
+            "phase": "fix-65-69"
+        },
+        {
+            "kind": "action",
+            "id": 102188,
+            "label": "#65/r1-L1 busy-branch look-again (removed after the test)",
+            "recorded_at_utc": "2026-10-20T09:29:24+00:00",
+            "phase": "fix-65-69"
+        },
+        {
+            "kind": "action",
+            "id": 102189,
+            "label": "#65 retry 3 restored at 2026-10-21 08:13:07 after the r1-L1 test",
+            "recorded_at_utc": "2026-10-20T09:29:28+00:00",
+            "phase": "fix-65-69"
+        },
+        {
+            "kind": "customer",
+            "id": 1520,
+            "label": "sqa-fix75-c1 #75/#76 checkout migration browser check",
+            "recorded_at_utc": "2026-10-20T23:00:10+00:00",
+            "phase": "fix-71-78"
+        },
+        {
+            "kind": "subscription",
+            "id": 87088,
+            "label": "sqa-fix75-c1 Basic Monthly x2 (cart added twice), #75 migration source",
+            "recorded_at_utc": "2026-10-20T23:03:59+00:00",
+            "phase": "fix-71-78"
+        },
+        {
+            "kind": "order",
+            "id": 87087,
+            "label": "sqa-fix75-c1 Basic Monthly initial order (card 4242)",
+            "recorded_at_utc": "2026-10-20T23:04:03+00:00",
+            "phase": "fix-71-78"
+        },
+        {
+            "kind": "order",
+            "id": 87640,
+            "label": "sqa-fix75-c1 checkout migration order Basic->Pro x2 (card 4242), refunded in full for the #75 refund check",
+            "recorded_at_utc": "2026-10-20T23:09:05+00:00",
+            "phase": "fix-71-78"
+        },
+        {
+            "kind": "customer",
+            "id": 2595,
+            "label": "sqa-fix81-c1 #81 browser test (free shipping + renewal override)",
+            "recorded_at_utc": "2026-10-21T09:48:50+00:00",
+            "phase": "fix-71-78"
+        },
+        {
+            "kind": "order",
+            "id": 97429,
+            "label": "sqa-fix81-c1 parent order, Free shipping, bacs",
+            "recorded_at_utc": "2026-10-21T09:50:58+00:00",
+            "phase": "fix-71-78"
+        },
+        {
+            "kind": "subscription",
+            "id": 97430,
+            "label": "sqa-fix81-c1 product 61 (overrides 150/100)",
+            "recorded_at_utc": "2026-10-21T09:51:00+00:00",
+            "phase": "fix-71-78"
+        },
+        {
+            "kind": "order",
+            "id": 97541,
+            "label": "sqa-fix81-c1 renewal order of sub 97430",
+            "recorded_at_utc": "2026-10-21T09:52:17+00:00",
+            "phase": "fix-71-78"
         }
     ]
 }

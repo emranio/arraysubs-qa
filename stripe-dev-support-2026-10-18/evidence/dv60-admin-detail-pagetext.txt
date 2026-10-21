@@ -1,0 +1,343 @@
+All Subscriptions
+New custom subscription
+
+Subscription for SQA Daily Trial Plan - Sqa sqa-dv60-ladder
+
+Edit Subscription
+ACTIVE
+Cancel Subscription
+Retry Payment
+Feature Log
+Store Credit
+Login as Customer
+Subscription
+Subscription ID:
+#68881
+Created:
+19 October, 2026 5:47 PM
+Start Date:
+19 October, 2026 5:47 PM
+Next Payment:
+19 October, 2026 5:51 PM
+Last Payment:
+19 October, 2026 5:47 PM
+Total Paid:
+$0.00
+Skip & Pause
+Skip Renewals
+No cycles currently skipped
+Vacation Mode
+Subscription is active
+Skip & Pause features are not enabled. Enable them in Settings.
+Customer Information
+Name:
+Sqa sqa-dv60-ladder
+Email:
+sqa-dv60-ladder@example.com
+Invoice Email:
+sqa-dv60-ladder@example.com
+Registered:
+19 October, 2026 5:46 PM
+Product
+Name:
+SQA Daily Trial Plan
+SKU:
+-
+Quantity:
+1
+Billing Information
+Recurring Amount:
+$7.31
+Billing Schedule:
+Every 1 day
+Completed Payments:
+0
+Payment Method:
+Stripe
+Payment Gateway
+CONNECTED
+Gateway:
+Stripe
+Card on File:
+Visa ending in 0341
+Expires:
+12/2030
+Customer ID:
+cus_VTBPCTCftcrwfA
+Resync from Gateway
+Detach Gateway
+Billing Address
+Sqa sqa-dv60-ladder
+100 QA Test Street
+San Francisco, CA 94105
+US
+
+Email: sqa-dv60-ladder@example.com
+Phone: 4155550100
+Shipping Address
+Sqa sqa-dv60-ladder
+100 QA Test Street
+San Francisco, CA 94105
+US
+Order History
+Order	Date	Status	Total	Refunded	Type	Actions
+#68903	19 October, 2026 5:51 PM	failed	$7.31	-	Renewal	View Order
+#68880	19 October, 2026 5:47 PM	completed	$0.00	-	Initial	View Order
+Payment Timeline
+Note
+19 October, 2026 5:53 PM
+
+[Process Renewal] ✗ Failed
+Your card was declined.
+
+Payment Failed
+19 October, 2026 5:53 PM
+
+Email sent: [ArraySubs] Renewal Payment Failed
+
+Renewal Payment Failed
+19 October, 2026 5:53 PM
+
+Payment failed for Order #68903. Gateway: Stripe. Reason: Your card was declined.
+
+Note
+19 October, 2026 5:53 PM
+
+Reached the configured retry limit (3). No further automatic retries will be scheduled. The subscription will continue through the standard grace period; an admin or customer can also trigger a manual retry.
+
+Renewal Payment Failed
+19 October, 2026 5:53 PM
+
+Renewal payment failed: the card was declined by the issuer. Gateway message: "Your card was declined.".
+
+Show All (44)
+Subscription Notes
+[Process Renewal] ✗ Failed
+Your card was declined.
+System
+19 October, 2026 5:53 PM
+Customer
+Delete
+Email sent: [ArraySubs] Renewal Payment Failed
+System
+19 October, 2026 5:53 PM
+Private
+Delete
+Payment failed for Order #68903. Gateway: Stripe. Reason: Your card was declined.
+System
+19 October, 2026 5:53 PM
+Customer
+Delete
+Reached the configured retry limit (3). No further automatic retries will be scheduled. The subscription will continue through the standard grace period; an admin or customer can also trigger a manual retry.
+System
+19 October, 2026 5:53 PM
+Private
+Delete
+Renewal payment failed: the card was declined by the issuer. Gateway message: "Your card was declined.".
+System
+19 October, 2026 5:53 PM
+Private
+Delete
+Payment failed — card_declined: Your card was declined.
+Gateway
+stripe
+19 October, 2026 5:53 PM
+Private
+Delete
+Creating Stripe off-session renewal PaymentIntent for order #68903.
+Gateway
+stripe
+19 October, 2026 5:53 PM
+Private
+Delete
+[Process Renewal] ✗ Failed
+Your card was declined.
+System
+19 October, 2026 5:52 PM
+Customer
+Delete
+Email sent: [ArraySubs] Renewal Payment Failed
+System
+19 October, 2026 5:52 PM
+Private
+Delete
+Payment failed for Order #68903. Gateway: Stripe. Reason: Your card was declined.
+System
+19 October, 2026 5:52 PM
+Customer
+Delete
+Scheduled retry 3 of 3 at 20 October, 2026 5:52 PM. Plugin verifies with the gateway before re-charging to avoid double charges.
+System
+19 October, 2026 5:52 PM
+Private
+Delete
+Renewal payment failed: the card was declined by the issuer. Gateway message: "Your card was declined.".
+System
+19 October, 2026 5:52 PM
+Private
+Delete
+Payment failed — card_declined: Your card was declined.
+Gateway
+stripe
+19 October, 2026 5:52 PM
+Private
+Delete
+Creating Stripe off-session renewal PaymentIntent for order #68903.
+Gateway
+stripe
+19 October, 2026 5:52 PM
+Private
+Delete
+[Process Renewal] ✗ Failed
+Your card was declined.
+System
+19 October, 2026 5:52 PM
+Customer
+Delete
+Email sent: [ArraySubs] Renewal Payment Failed
+System
+19 October, 2026 5:52 PM
+Private
+Delete
+Payment failed for Order #68903. Gateway: Stripe. Reason: Your card was declined.
+System
+19 October, 2026 5:52 PM
+Customer
+Delete
+Scheduled retry 2 of 3 at 20 October, 2026 5:52 PM. Plugin verifies with the gateway before re-charging to avoid double charges.
+System
+19 October, 2026 5:52 PM
+Private
+Delete
+Renewal payment failed: the card was declined by the issuer. Gateway message: "Your card was declined.".
+System
+19 October, 2026 5:52 PM
+Private
+Delete
+Payment failed — card_declined: Your card was declined.
+Gateway
+stripe
+19 October, 2026 5:52 PM
+Private
+Delete
+Creating Stripe off-session renewal PaymentIntent for order #68903.
+Gateway
+stripe
+19 October, 2026 5:52 PM
+Private
+Delete
+[Process Renewal] ✗ Failed
+Your card was declined.
+System
+19 October, 2026 5:51 PM
+Customer
+Delete
+Scheduled retry 1 of 3 at 20 October, 2026 5:51 PM. Plugin verifies with the gateway before re-charging to avoid double charges.
+System
+19 October, 2026 5:51 PM
+Private
+Delete
+Email sent: [ArraySubs] Renewal Payment Failed
+System
+19 October, 2026 5:51 PM
+Private
+Delete
+Renewal payment failed: the card was declined by the issuer. Gateway message: "Your card was declined.".
+System
+19 October, 2026 5:51 PM
+Private
+Delete
+Payment failed for Order #68903. Gateway: Stripe. Reason: Your card was declined.
+System
+19 October, 2026 5:51 PM
+Customer
+Delete
+Payment failed — card_declined: Your card was declined.
+Gateway
+stripe
+19 October, 2026 5:51 PM
+Private
+Delete
+Creating Stripe off-session renewal PaymentIntent for order #68903.
+Gateway
+stripe
+19 October, 2026 5:51 PM
+Private
+Delete
+[Generate Renewal Invoice] ✓ Success
+Ran scheduled action for subscription #68881.
+System
+19 October, 2026 5:51 PM
+Customer
+Delete
+Renewal invoice #68903 generated for payment due on 19 October, 2026 5:51 PM.
+System
+19 October, 2026 5:51 PM
+Customer
+Delete
+Renewal date changed through the developer API.
+System
+19 October, 2026 5:49 PM
+Private
+Delete
+Email sent: [ArraySubs] Trial Converted
+System
+19 October, 2026 5:49 PM
+Private
+Delete
+Free trial ended. Subscription converted to paid.
+System
+19 October, 2026 5:49 PM
+Customer
+Delete
+Email sent: [ArraySubs] New Subscription
+System
+19 October, 2026 5:49 PM
+Private
+Delete
+Status changed from Trial to Active. Changed by System.
+System
+19 October, 2026 5:49 PM
+Customer
+Delete
+[Gateway Meta Retry] ✓ Success
+Ran scheduled action for subscription #68881.
+System
+19 October, 2026 5:49 PM
+Customer
+Delete
+Payment method updated by Stripe: Visa ending in 0341
+Gateway
+stripe
+19 October, 2026 5:49 PM
+Private
+Delete
+Payment successful - Order #68880 ($0.00)
+System
+19 October, 2026 5:47 PM
+Customer
+Delete
+Email sent: [ArraySubs] Trial Started
+System
+19 October, 2026 5:47 PM
+Private
+Delete
+Free trial started. Trial ends on 20 October, 2026 5:47 PM.
+System
+19 October, 2026 5:47 PM
+Customer
+Delete
+Subscription created.
+System
+19 October, 2026 5:47 PM
+Customer
+Delete
+Status changed from new to Trial. Changed by System.
+System
+19 October, 2026 5:47 PM
+Customer
+Delete
+Add note
+Private note
+Note to customer
+Add

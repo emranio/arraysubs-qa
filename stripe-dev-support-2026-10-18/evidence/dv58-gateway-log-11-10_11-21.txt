@@ -1,0 +1,30 @@
+2026-10-19T11:10:30+00:00 INFO [Gateway: stripe] Creating Stripe off-session renewal PaymentIntent for order #68736.
+2026-10-19T11:10:31+00:00 ERROR [Gateway: stripe] [Gateway: stripe] Payment failed — requires_action: Payment requires customer authentication.
+2026-10-19T11:10:32+00:00 INFO [Gateway: arraysubs_stripe] [Webhook] Webhook received
+2026-10-19T11:10:32+00:00 INFO [Gateway: arraysubs_stripe] [Webhook] Duplicate webhook event skipped: evt_3USESYJG5OzSNVs21zkdGWVd
+2026-10-19T11:11:04+00:00 WARNING [Gateway: stripe] Renewal payment requires customer authentication. Verification email queued.
+2026-10-19T11:11:40+00:00 INFO [Gateway: arraysubs_stripe] [Webhook] Webhook received
+2026-10-19T11:11:40+00:00 INFO [Gateway: arraysubs_stripe] [Webhook] Webhook processed: customer.updated → payment_method_updated (subscription: 0, order: 0)
+2026-10-19T11:18:21+00:00 INFO [Gateway: arraysubs_stripe] [Webhook] Webhook received
+2026-10-19T11:18:21+00:00 INFO [Gateway: arraysubs_stripe] [Webhook] Duplicate webhook event skipped: evt_3USESYJG5OzSNVs21EE9KjlP
+2026-10-19T11:18:25+00:00 INFO [Gateway: arraysubs_stripe] [Webhook] Webhook received
+2026-10-19T11:18:25+00:00 INFO [Gateway: arraysubs_stripe] [Webhook] Duplicate webhook event skipped: evt_3USESYJG5OzSNVs210j9yznr
+2026-10-19T11:19:31+00:00 INFO [Gateway: arraysubs_stripe] [Webhook] Webhook received
+2026-10-19T11:19:31+00:00 WARNING [Gateway: stripe] Stripe payment requires customer authentication during checkout.
+2026-10-19T11:19:31+00:00 INFO [Gateway: arraysubs_stripe] [Webhook] Webhook processed: payment_intent.requires_action → payment_requires_action (subscription: 68753, order: 68752)
+2026-10-19T11:19:52+00:00 INFO [Gateway: arraysubs_stripe] [Webhook] Webhook received
+2026-10-19T11:19:52+00:00 INFO [Gateway: arraysubs_stripe] [Webhook] Webhook received
+2026-10-19T11:19:52+00:00 INFO [Gateway: arraysubs_stripe] [Webhook] Webhook processed: payment_method.attached → payment_method_updated (subscription: 0, order: 0)
+2026-10-19T11:19:52+00:00 INFO [Gateway: arraysubs_stripe] [Webhook] Webhook received
+2026-10-19T11:19:52+00:00 INFO [Gateway: arraysubs_stripe] [Webhook] Duplicate webhook event skipped: evt_3USEbFJG5OzSNVs21WuDkCyj
+2026-10-19T11:19:52+00:00 INFO [Gateway: stripe] Stripe payment confirmed via official webhook for order #68752.
+2026-10-19T11:19:52+00:00 INFO [Gateway: arraysubs_stripe] [Webhook] Webhook processed: payment_intent.succeeded → payment_succeeded (subscription: 68753, order: 68752)
+2026-10-19T11:19:52+00:00 INFO [Gateway: stripe] Stripe payment confirmed via official webhook for order #68752.
+2026-10-19T11:20:01+00:00 INFO [Gateway: arraysubs_stripe] [Webhook] Webhook received
+2026-10-19T11:20:01+00:00 INFO [Gateway: arraysubs_stripe] [Webhook] Webhook processed: customer.updated → payment_method_updated (subscription: 0, order: 0)
+2026-10-19T11:20:07+00:00 INFO [Gateway: arraysubs_stripe] [Webhook] Webhook received
+2026-10-19T11:20:08+00:00 INFO [Gateway: stripe] Stripe payment confirmed via official webhook for order #68736.
+2026-10-19T11:20:08+00:00 INFO [Gateway: arraysubs_stripe] [Webhook] Webhook processed: payment_intent.succeeded → payment_succeeded (subscription: 68709, order: 68736)
+2026-10-19T11:20:08+00:00 INFO [Gateway: stripe] Stripe payment confirmed via official webhook for order #68736.
+2026-10-19T11:20:09+00:00 INFO [Gateway: arraysubs_stripe] [Webhook] Webhook received
+2026-10-19T11:20:09+00:00 INFO [Gateway: arraysubs_stripe] [Webhook] Duplicate webhook event skipped: evt_3USESYJG5OzSNVs21hHFOw0S

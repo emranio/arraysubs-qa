@@ -1,0 +1,18 @@
+{
+    "delegate": "ArraySubs\\Features\\AutomaticPayments\\Gateways\\Stripe\\StripeDelegate",
+    "is_reusable_type_link": true,
+    "result": {
+        "error_code": "renewal_payment_method_binding_invalid",
+        "message": "The stored Stripe payment method is not an exact reusable off-session match for this subscription. No charge was attempted."
+    },
+    "meta_before": {
+        "pm": "pm_1USG0TJG5OzSNVs2Y8ki6bwm",
+        "type": "link",
+        "updated": "2026-10-19 11:26:05"
+    },
+    "meta_after": {
+        "pm": "pm_1USG0TJG5OzSNVs2Y8ki6bwm",
+        "type": "link",
+        "updated": "2026-10-19 11:26:05"
+    }
+}

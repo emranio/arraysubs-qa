@@ -1,0 +1,30 @@
+### F1 fixed $30 per cart on [550 trial, 2569]; cart 550 + 2569 + 495 (495 not targeted) | decimals=2 tax=n prices_incl=n display_incl=n sync=off | coupon=- | store-credit hook=off
+  fee 'Member discount' total=-30.00 tax=0.00 kind=- weights=L0=29.99,L1=10.00
+  cart: subtotal=59.99 discount=0.00 fees=-30.00 shipping=0.00(+tax 0.00) total_tax=0.00 TOTAL=29.99
+  -- L0 key=4d238f #550 Trial 14-Day qty=1 line_total=0.0000 line_tax=0.0000 | sync=no | hasTrial=true
+     helper: line=0.00 fees=-22.50 signup=0.00 shipping=0.00 remainder=22.50 tax=0.00 gross=0.00 | other=0.00
+     [item] Today's charge: Free today
+  -- L1 key=502369 #2569 Smoke Plan qty=1 line_total=10.0000 line_tax=0.0000 | sync=no | hasTrial=false
+     helper: line=10.00 fees=-7.50 signup=0.00 shipping=0.00 remainder=-2.50 tax=0.00 gross=0.00 | other=-10.00
+     [item] Today's charge: Free today
+  -- L2 key=cbe4ce #495 Pro Monthly qty=1 line_total=49.9900 line_tax=0.0000 | sync=no | hasTrial=false
+     helper: line=49.99 fees=0.00 signup=0.00 shipping=0.00 remainder=-20.00 tax=0.00 gross=29.99 | other=-20.00
+     [item] Today's charge: $29.99
+     [email L0] Today's charge: Free today
+     [email L1] Today's charge: Free today
+     [email L2] Today's charge: $29.99
+  CHECK helper_sum=29.99 item_sum=29.99 table_sum=29.99 email_sum=29.99 TOTAL=29.99 => ALL MATCH
+  guard: case=rolled-back-clean, fixture identical blocked_writes=0 http_blocked=0 mail_blocked=0 notices=0
+### F2 control: same rule, cart 2569 + 495 (no trial line) | decimals=2 tax=n prices_incl=n display_incl=n sync=off | coupon=- | store-credit hook=off
+  fee 'Member discount' total=-10.00 tax=0.00 kind=- weights=L0=10.00
+  cart: subtotal=59.99 discount=0.00 fees=-10.00 shipping=0.00(+tax 0.00) total_tax=0.00 TOTAL=49.99
+  -- L0 key=bcab3c #2569 Smoke Plan qty=1 line_total=10.0000 line_tax=0.0000 | sync=no | hasTrial=false
+     helper: line=10.00 fees=-10.00 signup=0.00 shipping=0.00 remainder=0.00 tax=0.00 gross=0.00 | other=-10.00
+     [item] Today's charge: Free today
+  -- L1 key=29be8f #495 Pro Monthly qty=1 line_total=49.9900 line_tax=0.0000 | sync=no | hasTrial=false
+     helper: line=49.99 fees=0.00 signup=0.00 shipping=0.00 remainder=0.00 tax=0.00 gross=49.99 | other=0.00
+     [item] Today's charge: $49.99
+     [email L0] Today's charge: Free today
+     [email L1] Today's charge: $49.99
+  CHECK helper_sum=49.99 item_sum=49.99 table_sum=49.99 email_sum=49.99 TOTAL=49.99 => ALL MATCH
+  guard: case=rolled-back-clean, fixture identical blocked_writes=0 http_blocked=0 mail_blocked=0 notices=0

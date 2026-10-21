@@ -1,0 +1,58 @@
+{
+    "checked_at_utc": "2026-10-19T11:20:50+00:00",
+    "wc_tokens": [
+        {
+            "token_id": "72",
+            "gateway_id": "stripe",
+            "token": "pm_1USEKOJG5OzSNVs2NFfols6o",
+            "user_id": "586",
+            "type": "CC",
+            "is_default": "1"
+        }
+    ],
+    "subscription": {
+        "id": 68709,
+        "post_status": "arraysubs-active",
+        "meta": {
+            "_completed_payments": "2",
+            "_customer_email": "sqa-dv58-block@example.com",
+            "_customer_id": "586",
+            "_gateway_customer_id": "cus_VTAfpPVaUhxMOj",
+            "_gateway_payment_method_id": "pm_1USEKOJG5OzSNVs2NFfols6o",
+            "_gateway_status": "active",
+            "_last_gateway_transaction_id": "ch_3USESYJG5OzSNVs21tGp3lEk",
+            "_last_payment_date": "2026-10-19 11:20:11",
+            "_next_payment_date": "2026-10-20 11:09:55",
+            "_payment_gateway": "stripe",
+            "_payment_method": "stripe",
+            "_payment_method_brand": "visa",
+            "_payment_method_expiry_month": "12",
+            "_payment_method_expiry_year": "2030",
+            "_payment_method_last4": "3184",
+            "_payment_method_source": "stripe",
+            "_payment_method_title": "Stripe",
+            "_payment_method_type": "card",
+            "_payment_method_updated_at": "2026-10-19 11:02:58",
+            "_renewal_action_id": "101111",
+            "_renewal_invoice_action_id": "101110"
+        }
+    },
+    "stripe_customer_user_meta": "cus_VTAfpPVaUhxMOj",
+    "stripe_pm": {
+        "id": "pm_1USEKOJG5OzSNVs2NFfols6o",
+        "customer": "cus_VTAfpPVaUhxMOj",
+        "type": "card",
+        "last4": "3184",
+        "exp": "12/2030",
+        "allow_redisplay": "unspecified",
+        "error": null
+    },
+    "stripe_customer": {
+        "id": "cus_VTAfpPVaUhxMOj",
+        "default_pm": "pm_1USEKOJG5OzSNVs2NFfols6o",
+        "email": "sqa-dv58-block@example.com"
+    },
+    "stripe_customer_pms": [
+        "pm_1USEKOJG5OzSNVs2NFfols6o 3184 created=2026-10-19T11:02:05+00:00"
+    ]
+}

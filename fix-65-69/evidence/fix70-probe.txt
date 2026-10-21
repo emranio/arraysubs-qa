@@ -1,0 +1,24 @@
+== WP-CLI (HTTPS) 2026-10-20T07:50:43Z
+{
+    "is_ssl": false,
+    "get_site_url": "https://mirror-help.arrayhash.com",
+    "site_identity_url": "https://mirror-help.arrayhash.com",
+    "matches_https": true,
+    "matches_http_slash": true,
+    "matches_other_site": false,
+    "matches_empty": false,
+    "checkout_creation_key": "9b21c7860e73f915",
+    "plan_switch_key": "caba471631c5f754"
+}
+== plain php as www-data, no HTTPS (like the system cron)
+{
+    "is_ssl": false,
+    "get_site_url": "http://mirror-help.arrayhash.com",
+    "site_identity_url": "https://mirror-help.arrayhash.com",
+    "matches_https": true,
+    "matches_http_slash": true,
+    "matches_other_site": false,
+    "matches_empty": false,
+    "checkout_creation_key": "9b21c7860e73f915",
+    "plan_switch_key": "caba471631c5f754"
+}

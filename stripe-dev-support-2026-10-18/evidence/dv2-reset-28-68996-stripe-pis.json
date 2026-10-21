@@ -1,0 +1,36 @@
+{
+    "queried_at_utc": "2026-10-19T13:28:54Z",
+    "customer": "cus_VTCsQXyRiRmQfB",
+    "payment_intents": [
+        {
+            "id": "pi_3USGb6JG5OzSNVs2113HngyQ",
+            "created_utc": "2026-10-19T13:27:28Z",
+            "status": "requires_payment_method",
+            "amount": 731,
+            "amount_received": 0,
+            "currency": "usd",
+            "payment_method": null,
+            "off_session_metadata_order": "69022",
+            "metadata_subscription": "68996",
+            "last_error": {
+                "code": "card_declined",
+                "decline_code": "generic_decline"
+            }
+        },
+        {
+            "id": "pi_3USGWWJG5OzSNVs21XYG019B",
+            "created_utc": "2026-10-19T13:22:44Z",
+            "status": "requires_payment_method",
+            "amount": 731,
+            "amount_received": 0,
+            "currency": "usd",
+            "payment_method": null,
+            "off_session_metadata_order": "69022",
+            "metadata_subscription": "68996",
+            "last_error": {
+                "code": "card_declined",
+                "decline_code": "generic_decline"
+            }
+        }
+    ]
+}

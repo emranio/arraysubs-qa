@@ -1,0 +1,7 @@
+2026-10-19T09:13:17+00:00 INFO [Gateway: arraysubs_stripe] [Webhook] Webhook processed: payment_intent.succeeded → payment_succeeded (subscription: 68418, order: 68417)
+2026-10-19T09:13:17+00:00 INFO [Gateway: arraysubs_stripe] [Webhook] Webhook processed: payment_method.attached → payment_method_updated (subscription: 68418, order: 68417)
+2026-10-19T09:13:17+00:00 INFO [Gateway: arraysubs_stripe] [Webhook] Webhook processed: customer.updated → payment_method_updated (subscription: 0, order: 0)
+2026-10-19T09:15:02+00:00 WARNING [Gateway: stripe] [Webhook] Refused to bind Stripe payment method pm_1USCekJG5OzSNVs2zsEjOcs6 to subscription #68418: renewal_payment_method_binding_changed
+2026-10-19T09:15:03+00:00 WARNING [Gateway: stripe] [Webhook] Refused to bind Stripe payment method pm_1USCekJG5OzSNVs2zsEjOcs6 to subscription #68418: renewal_payment_method_binding_changed
+2026-10-19T09:15:04+00:00 INFO [Gateway: arraysubs_stripe] [Webhook] Webhook processed: customer.updated → payment_method_updated (subscription: 0, order: 0)
+2026-10-19T09:15:20+00:00 WARNING [Gateway: stripe] [Webhook] Refused to bind Stripe payment method pm_1USCekJG5OzSNVs2zsEjOcs6 to subscription #68418: renewal_payment_method_binding_changed

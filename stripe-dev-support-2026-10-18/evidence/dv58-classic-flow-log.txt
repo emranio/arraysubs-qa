@@ -1,0 +1,99 @@
+dv58c - Issue #58 scope check through the CLASSIC checkout (deep-verify phase, 2026-10-19, times UTC)
+Environment: core 4791832, Pro edaa401, WooCommerce Stripe Gateway 10.9.0 (test mode). Browser session dv58c-cust (agent-browser, 1280x1000).
+Order keys and client secrets are redacted (key=<r>). No settings were changed.
+
+FIXTURES
+- Customer 587 sqa-dv58-classic / sqa-dv58-classic@example.com (role customer), Stripe customer cus_VTAx7ozG2Cs2sm
+- Subscription 68753 (product 68271 SQA Daily Stripe Plan, 7.31 USD/day)
+- Initial order 68752 (classic checkout, card 4000 0027 6000 3184), PI pi_3USEbFJG5OzSNVs211R75z7z, charge ch_3USEbFJG5OzSNVs217O2UvB0
+- PaymentMethod pm_1USEbAJG5OzSNVs2dqyED8fl (visa 3184, created 11:19:24) = WC token 75 (stripe, CC, default)
+- Renewal order 68843 (cycle 2), PI pi_3USEmJJG5OzSNVs21Xi6PjuW, charge ch_3USEmJJG5OzSNVs21VvPajQU
+- Actions: 101147 generate_renewal_invoice (queue runner, complete 11:30:08), 101148 process_renewal (run explicitly 11:30:51-11:30:56),
+  101153 send_stripe_renewal_verification (system, complete 11:31:07); next cycle 101163 invoice (pending 2026-10-20 07:47:24),
+  101164 process_renewal (pending 2026-10-20 13:47:24). Original 101105/101106 canceled by setNextPaymentDate.
+
+1. CLASSIC CHECKOUT (https://mirror-help.arrayhash.com/sqa-classic-checkout/)
+- 11:16 add-to-cart 68271 via /?add-to-cart=68271; cart showed "SQA Daily Stripe Plan $7.31".
+- Classic page loaded without redirect: form.checkout, #wc-stripe-upe-form, gateways stripe(checked)/arraysubs_paddle/bacs/cheque,
+  hidden checked checkbox wc-stripe-new-payment-method, no saved-token radios. Mandate text: "By providing your card information,
+  you allow ArrayHash sandbox to charge your card for future payments in accordance with their terms."
+  After typing the card, Stripe Link's "Save my information for faster checkout" appeared, left unchecked.
+  Screenshots dv58-classic-01-checkout-upe.png, dv58-classic-02-card-typed.png.
+- 11:19:24 clicked #place_order once. 3DS2 test modal ("3D Secure 2 Test Page") appeared (dv58-classic-03-3ds-challenge.png).
+- 11:19:48 clicked COMPLETE at (766,680). 11:20:00 at /checkout/order-received/68752/?key=<r>:
+  "Order completed / Thank you. Your order has been fulfilled." Related Subscriptions "#68753 Active 20 October, 2026 $7.31 / Every day"
+  (dv58-classic-04-order-received.png).
+- Order 68752 notes: 11:19:29 "Stripe payment intent created (Payment Intent ID: pi_3USEbFJG5OzSNVs211R75z7z)";
+  11:19:54 "Payment via Credit / Debit Card (ch_3USEbFJG5OzSNVs217O2UvB0)."; 11:19:55 "Email "Completed order" sent.";
+  11:19:57 "Stripe charge complete (Charge ID: ch_3USEbFJG5OzSNVs217O2UvB0)". Paid 11:19:54, status completed.
+  Meta _stripe_upe_redirect_processed present. No multi-minute deferred-webhook wait.
+- Lifecycle capture: activated 11:19:56 in wc_ajax=wc_stripe_update_order_status (classic post-3DS AJAX), not in a webhook request.
+- Gateway log:
+  2026-10-19T11:19:31+00:00 INFO [Gateway: arraysubs_stripe] [Webhook] Webhook processed: payment_intent.requires_action → payment_requires_action (subscription: 68753, order: 68752)
+  2026-10-19T11:19:52+00:00 INFO [Gateway: stripe] Stripe payment confirmed via official webhook for order #68752.
+  2026-10-19T11:19:52+00:00 INFO [Gateway: arraysubs_stripe] [Webhook] Webhook processed: payment_intent.succeeded → payment_succeeded (subscription: 68753, order: 68752)
+
+2. WC TOKENS / BINDING
+- 11:20:15 wp_woocommerce_payment_tokens user 587: token_id 75, stripe, pm_1USEbAJG5OzSNVs2dqyED8fl, CC, is_default 1.
+- 11:21:38 (dv58-classic-binding-after-checkout.json) and 11:25:06-11:25:09 (dv58-classic-binding-5min-after-checkout.json): unchanged.
+- Subscription 68753: _gateway_payment_method_id = pm_1USEbAJG5OzSNVs2dqyED8fl (= token 75), _gateway_customer_id = cus_VTAx7ozG2Cs2sm.
+- Stripe PM: customer cus_VTAx7ozG2Cs2sm, allow_redisplay "unspecified"; customer default_payment_method = same PM.
+- My Account > Payment methods: "Visa ending in 3184  12/30  Delete" (dv58-classic-05-my-account-payment-methods.png).
+
+3. RENEWAL
+- 11:28:42 setNextPaymentDate(time()+90) -> _next_payment_date 2026-10-19 11:30:11; new actions 101147/101148.
+- 11:30:07 renewal order 68843 created (pending): "Renewal order for subscription #68753 (Cycle #2, ...)".
+- 11:30:51 wp action-scheduler action run 101148 -> "Success: Executed 1 action." (11:30:56).
+- Order 68843 notes: 11:30:56 "[Gateway: stripe] Payment failed — requires_action: Payment requires customer authentication."
+  and "Payment requires customer authentication."
+- PI pi_3USEmJJG5OzSNVs21Xi6PjuW (created 11:30:55): status requires_payment_method, payment_method null,
+  last_payment_error.code authentication_required ("This payment requires authentication. If the customer is off session, ...").
+- Subscription meta: _pending_renewal_order_id 68843, _arraysubs_payment_action_intent_id pi_3USEmJJG5OzSNVs21Xi6PjuW, action URL stored.
+  Developer recovery: phase before_on_hold, renewal_overdue true, unpaid_renewal_order_id 68843, failure_category null.
+- Email Mailpit 4SdNYnTzvGfgqXHyOS0Vu8 (11:31:06) "[mirror-help.arrayhash.com] Verify your subscription renewal #68753":
+  "Your renewal needs verification" ... "Payment Method Visa ending in 3184 Grace period 22 October, 2026 5:31 PM"
+  "Complete verification ( https://mirror-help.arrayhash.com/checkout/order-pay/68843/?pay_for_order=true&key=<r>&wc-stripe-confirmation=1 )"
+  (dv58-classic-verification-email.txt).
+
+4. VERIFICATION AS CUSTOMER
+- 11:32:09 opened the email link (logged in as 587). Page "Pay for order": express buttons Amazon Pay and "Pay securely with link";
+  "Payment methods" box: radio "Visa ending in 3184 (expires 12/30)" (wc-stripe-payment-token=75, checked) and
+  "Use a new payment method"; button "Pay for order". No notice. (dv58-classic-06-verify-page.png, dv58-classic-06b-verify-page-full.png)
+- 11:32:41 clicked the saved-card radio and "Pay for order" once. POST order-pay -> 303 -> order-pay#wc-stripe-confirm-pi:68843:<r>:<r>.
+  3DS2 test modal opened (dv58-classic-07-after-pay-click.png, dv58-classic-08-verify-3ds-challenge.png).
+  Stripe during challenge (11:33:41): SAME PI pi_3USEmJJG5OzSNVs21Xi6PjuW requires_action, payment_method pm_1USEbAJG5OzSNVs2dqyED8fl,
+  next_action use_stripe_sdk; no new PI (dv58-classic-during-verify-3ds.json).
+- 11:33:58 clicked COMPLETE. Browser: POST api.stripe.com/v1/3ds2/challenge_complete, GET payment_intents/pi_3USEmJJG5OzSNVs21Xi6PjuW,
+  POST /?wc-ajax=wc_stripe_update_order_status, then 11:34:11 /checkout/order-received/68843/?key=<r>:
+  "Order completed / Thank you. Your order has been fulfilled." "#68753 Active 20 October, 2026" (dv58-classic-09-renewal-order-received.png).
+- Order 68843: completed, paid 11:34:06, transaction ch_3USEmJJG5OzSNVs21VvPajQU, _stripe_intent_id pi_3USEmJJG5OzSNVs21Xi6PjuW.
+  Notes 11:34:06 "Payment via Stripe (ch_3USEmJJG5OzSNVs21VvPajQU)."; 11:34:09 "Stripe charge complete (Charge ID: ch_3USEmJJG5OzSNVs21VvPajQU)".
+- Gateway log:
+  2026-10-19T11:30:54+00:00 INFO [Gateway: stripe] Creating Stripe off-session renewal PaymentIntent for order #68843.
+  2026-10-19T11:34:04+00:00 INFO [Gateway: stripe] Stripe payment confirmed via official webhook for order #68843.
+  2026-10-19T11:34:04+00:00 INFO [Gateway: arraysubs_stripe] [Webhook] Webhook processed: payment_intent.succeeded → payment_succeeded (subscription: 68753, order: 68843)
+  2026-10-19T11:34:04+00:00 INFO [Gateway: arraysubs_stripe] [Webhook] Webhook processed: charge.succeeded → payment_succeeded (subscription: 68753, order: 68843)
+- Stripe events for the renewal PI: 11:30:55 payment_intent.created + payment_intent.payment_failed (req_3s5un8k95fAnsO, ArraySubs key);
+  11:32:43 payment_intent.requires_action (req_0WK1xIInG9uv5Q, idempotency key arraysubs-renewal-confirm-68843-pi_3USEmJJG5OzSNVs21Xi6PjuW-<hash>);
+  11:32:48 payment_intent.requires_action (req_FpmLyab2CyqFNI, 36-char key; WC Stripe upe-classic.js confirm-pi handler calls
+  stripe.confirmPayment({clientSecret, redirect:"if_required"}) on the same PI); 11:34:00 payment_intent.succeeded + charge.succeeded.
+  For comparison the initial checkout PI had a single requires_action event.
+
+5. FINAL STATE (11:34:54-11:34:58, dv58-classic-state-after-verification.json, snapshots/sub-68753-dv58c-after-verification.json)
+- Subscription 68753 arraysubs-active, _completed_payments 2, _last_payment_date 2026-10-19 11:34:07, _next_payment_date 2026-10-20 11:30:11,
+  _pending_renewal_order_id "", _arraysubs_payment_action_intent_id "", action URL cleared; recovery phase none, renewal_overdue false.
+- Stripe PIs for cus_VTAx7ozG2Cs2sm: exactly two, both succeeded, 731 usd, pm_1USEbAJG5OzSNVs2dqyED8fl:
+  pi_3USEbFJG5OzSNVs211R75z7z (order 68752) and pi_3USEmJJG5OzSNVs21Xi6PjuW (order 68843). Charges: exactly two
+  (ch_3USEbFJG5OzSNVs217O2UvB0, ch_3USEmJJG5OzSNVs21VvPajQU), both 3DS "authenticated". No duplicate collection.
+- Customer page /my-account/as-view-subscription/68753/: "Status: Active", "Next Payment: 20 October, 2026 5:30 PM",
+  "Card on File: Visa ending in 3184 Expires 12/2030", related orders #68843 Completed, #68752 Completed,
+  note "Payment successful – Order #68843 ($7.31)" (dv58-classic-10-customer-subscription.png).
+- Email Mailpit 7Em1fQhBVGztWWZn1CQvoo (11:34:08) "[mirror-help.arrayhash.com] Payment received for subscription #68753".
+- Lifecycle: renewal_invoice_created 11:30:08, renewal_payment_attempted 11:30:54, renewal_payment_result 11:30:56, grace_entered 11:30:56,
+  renewed 11:34:08 (wc_ajax=wc_stripe_update_order_status).
+
+READ-ONLY CONTEXT
+- wp_woocommerce_payment_tokens: user 580 (issue #58 fixture) has no token; user 586 (parallel dv58 Block re-run) has token 72.
+- WooCommerce Stripe 10.9.0 code: the WC token is created in WC_Stripe_UPE_Payment_Gateway::process_order_for_confirmed_intent()
+  (create_payment_token_for_user), reached from update_order_status_ajax / process_upe_redirect_payment; the deferred webhook
+  handler handle_deferred_payment_intent_succeeded() calls process_response() only (no token).

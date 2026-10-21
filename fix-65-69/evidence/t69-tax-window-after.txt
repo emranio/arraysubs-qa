@@ -1,0 +1,5 @@
+woocommerce_calc_taxes=no
+woocommerce_prices_include_tax=yes
+woocommerce_tax_display_cart=excl
+woocommerce_tax_display_shop=excl
+woocommerce_tax_based_on=shipping

@@ -1,0 +1,13 @@
+post_date_gmt	post_content
+2026-10-19 20:56:08	[Process Renewal] <strong style="color:#1e4620">&#10003; Success</strong><br>Processed renewal for subscription #68753.
+2026-10-19 20:56:08	Payment successful - <a href="https://mirror-help.arrayhash.com/wp-admin/post.php?post=69364&amp;action=edit">Order #69364</a> (<span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-curre
+2026-10-19 20:56:07	[Gateway: stripe] Stripe payment confirmed via official webhook for order #69364.
+2026-10-19 20:56:07	Email sent: [ArraySubs] Renewal Payment Successful
+2026-10-19 20:56:05	[Gateway: stripe] Creating Stripe off-session renewal PaymentIntent for order #69364.
+2026-10-19 20:56:05	[Gateway: stripe] Canceled superseded Stripe authentication request pi_3USNYmJG5OzSNVs21Y5kEX5F before retrying with the updated payment method.
+2026-10-19 20:54:54	[Gateway: stripe] Renewal order #69364 is still unpaid, so the new payment method will be charged in about a minute.
+2026-10-19 20:54:53	[Gateway: stripe] Payment method updated by Stripe: Visa ending in 4242
+2026-10-19 20:54:04	[Send Stripe Renewal Verification] <strong style="color:#1e4620">&#10003; Success</strong><br>Ran scheduled action for subscription #68753.
+2026-10-19 20:54:04	Email sent: [ArraySubs] Renewal Requires Verification
+2026-10-19 20:53:33	[Process Renewal] <strong style="color:#1e4620">&#10003; Success</strong><br>Processed renewal for subscription #68753.
+2026-10-19 20:53:33	[Gateway: stripe] Payment failed — requires_action: Payment requires customer authentication.

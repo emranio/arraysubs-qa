@@ -1,0 +1,104 @@
+{
+    "checked_at_utc": "2026-10-19T12:51:11+00:00",
+    "customer": "cus_VTB1PicZN8Kd3H",
+    "payment_intents": [
+        {
+            "id": "pi_3USG0ZJG5OzSNVs21Rq8uGbe",
+            "created_utc": "2026-10-19T12:49:43+00:00",
+            "status": "succeeded",
+            "amount": 731,
+            "amount_received": 731,
+            "payment_method": "pm_1USG0TJG5OzSNVs2Y8ki6bwm",
+            "payment_method_types": [
+                "link"
+            ],
+            "setup_future_usage": null,
+            "off_session_error": null,
+            "decline_code": null,
+            "latest_charge": "ch_3USG0ZJG5OzSNVs21H2c5wUt",
+            "meta": {
+                "order_id": "68822",
+                "payment_type": "single",
+                "site_url": "https://mirror-help.arrayhash.com"
+            },
+            "description": "mirror-help.arrayhash.com - Order 68822"
+        },
+        {
+            "id": "pi_3USEkOJG5OzSNVs20jlEvHCg",
+            "created_utc": "2026-10-19T11:28:56+00:00",
+            "status": "requires_payment_method",
+            "amount": 731,
+            "amount_received": 0,
+            "payment_method": null,
+            "payment_method_types": [
+                "card"
+            ],
+            "setup_future_usage": null,
+            "off_session_error": "card_declined",
+            "decline_code": "generic_decline",
+            "latest_charge": "ch_3USEkOJG5OzSNVs20OXF8AXh",
+            "meta": {
+                "order_id": "68822",
+                "renewal": "true",
+                "site_url": "https://mirror-help.arrayhash.com",
+                "subscription_id": "68770"
+            },
+            "description": null
+        }
+    ],
+    "charges": [
+        {
+            "id": "ch_3USG0ZJG5OzSNVs21H2c5wUt",
+            "created_utc": "2026-10-19T12:49:43+00:00",
+            "status": "succeeded",
+            "paid": true,
+            "amount": 731,
+            "pi": "pi_3USG0ZJG5OzSNVs21Rq8uGbe",
+            "pm": "pm_1USG0TJG5OzSNVs2Y8ki6bwm",
+            "pm_type": "link",
+            "refunded": false
+        },
+        {
+            "id": "ch_3USEkOJG5OzSNVs20OXF8AXh",
+            "created_utc": "2026-10-19T11:28:56+00:00",
+            "status": "failed",
+            "paid": false,
+            "amount": 731,
+            "pi": "pi_3USEkOJG5OzSNVs20jlEvHCg",
+            "pm": "pm_1USEfcJG5OzSNVs2TewrGbne",
+            "pm_type": "card",
+            "refunded": false
+        }
+    ],
+    "attached_payment_methods": [
+        {
+            "id": "pm_1USEfcJG5OzSNVs2TewrGbne",
+            "type": "card",
+            "created_utc": "2026-10-19T11:24:00+00:00",
+            "customer": "cus_VTB1PicZN8Kd3H",
+            "card_last4": "0341",
+            "card_wallet": null,
+            "link_email": null,
+            "allow_redisplay": "unspecified"
+        }
+    ],
+    "customer_default_pm": "pm_1USEfcJG5OzSNVs2TewrGbne",
+    "pm_detail": {
+        "pm_1USG0TJG5OzSNVs2Y8ki6bwm": {
+            "type": "link",
+            "customer": null,
+            "created_utc": "2026-10-19T12:49:37+00:00",
+            "card_last4": null,
+            "allow_redisplay": "unspecified",
+            "error": null
+        },
+        "pm_1USEfcJG5OzSNVs2TewrGbne": {
+            "type": "card",
+            "customer": "cus_VTB1PicZN8Kd3H",
+            "created_utc": "2026-10-19T11:24:00+00:00",
+            "card_last4": "0341",
+            "allow_redisplay": "unspecified",
+            "error": null
+        }
+    }
+}

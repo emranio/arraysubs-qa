@@ -1,0 +1,103 @@
+{
+    "shipped_delete": {
+        "sql": "DELETE FROM wp_options WHERE option_name LIKE '_transient_arraysubs_overview_%' OR option_name LIKE '_transient_timeout_arraysubs_overview_%'",
+        "explain": [
+            {
+                "id": "1",
+                "select_type": "DELETE",
+                "table": "wp_options",
+                "partitions": null,
+                "type": "ALL",
+                "possible_keys": null,
+                "key": null,
+                "key_len": null,
+                "ref": null,
+                "rows": "1361",
+                "filtered": "100.00",
+                "Extra": "Using where"
+            }
+        ],
+        "err": "",
+        "json_access_type": "ALL",
+        "json_key": null,
+        "json_rows_examined_per_scan": 1361,
+        "json_attached_condition": "((`site_mirror-help.arrayhash.com`.`wp_options`.`option_name` like '_transient_arraysubs_overview_%') or (`site_mirror-help.arrayhash.com`.`wp_options`.`option_name` like '_transient_timeout_arraysubs_overview_%'))"
+    },
+    "escaped_delete": {
+        "sql": "DELETE FROM wp_options WHERE option_name LIKE '\\\\_transient\\\\_arraysubs\\\\_overview\\\\_%' OR option_name LIKE '\\\\_transient\\\\_timeout\\\\_arraysubs\\\\_overview\\\\_%'",
+        "explain": [
+            {
+                "id": "1",
+                "select_type": "DELETE",
+                "table": "wp_options",
+                "partitions": null,
+                "type": "range",
+                "possible_keys": "option_name",
+                "key": "option_name",
+                "key_len": "766",
+                "ref": "const",
+                "rows": "2",
+                "filtered": "100.00",
+                "Extra": "Using where"
+            }
+        ],
+        "err": "",
+        "json_access_type": "range",
+        "json_key": "option_name",
+        "json_rows_examined_per_scan": 2,
+        "json_attached_condition": "((`site_mirror-help.arrayhash.com`.`wp_options`.`option_name` like '\\\\_transient\\\\_arraysubs\\\\_overview\\\\_%') or (`site_mirror-help.arrayhash.com`.`wp_options`.`option_name` like '\\\\_transient\\\\_timeout\\\\_arraysubs\\\\_overview\\\\_%'))"
+    },
+    "shipped_select": {
+        "sql": "SELECT option_id FROM wp_options WHERE option_name LIKE '_transient_arraysubs_overview_%' OR option_name LIKE '_transient_timeout_arraysubs_overview_%'",
+        "explain": [
+            {
+                "id": "1",
+                "select_type": "SIMPLE",
+                "table": "wp_options",
+                "partitions": null,
+                "type": "index",
+                "possible_keys": null,
+                "key": "option_name",
+                "key_len": "766",
+                "ref": null,
+                "rows": "1361",
+                "filtered": "20.99",
+                "Extra": "Using where; Using index"
+            }
+        ],
+        "err": "",
+        "json_access_type": "index",
+        "json_key": "option_name",
+        "json_rows_examined_per_scan": 1361,
+        "json_attached_condition": "((`site_mirror-help.arrayhash.com`.`wp_options`.`option_name` like '_transient_arraysubs_overview_%') or (`site_mirror-help.arrayhash.com`.`wp_options`.`option_name` like '_transient_timeout_arraysubs_overview_%'))"
+    },
+    "escaped_select": {
+        "sql": "SELECT option_id FROM wp_options WHERE option_name LIKE '\\\\_transient\\\\_arraysubs\\\\_overview\\\\_%' OR option_name LIKE '\\\\_transient\\\\_timeout\\\\_arraysubs\\\\_overview\\\\_%'",
+        "explain": [
+            {
+                "id": "1",
+                "select_type": "SIMPLE",
+                "table": "wp_options",
+                "partitions": null,
+                "type": "range",
+                "possible_keys": "option_name",
+                "key": "option_name",
+                "key_len": "766",
+                "ref": null,
+                "rows": "2",
+                "filtered": "100.00",
+                "Extra": "Using where; Using index"
+            }
+        ],
+        "err": "",
+        "json_access_type": "range",
+        "json_key": "option_name",
+        "json_rows_examined_per_scan": 2,
+        "json_attached_condition": "((`site_mirror-help.arrayhash.com`.`wp_options`.`option_name` like '\\\\_transient\\\\_arraysubs\\\\_overview\\\\_%') or (`site_mirror-help.arrayhash.com`.`wp_options`.`option_name` like '\\\\_transient\\\\_timeout\\\\_arraysubs\\\\_overview\\\\_%'))"
+    },
+    "counts": {
+        "total": "1307",
+        "unescaped_match": "0",
+        "escaped_match": "0"
+    }
+}

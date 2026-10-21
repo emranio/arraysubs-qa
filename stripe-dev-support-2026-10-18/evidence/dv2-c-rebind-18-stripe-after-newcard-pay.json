@@ -1,0 +1,118 @@
+{
+    "checked_at_utc": "2026-10-19T12:55:25+00:00",
+    "customer": "cus_VTB3WyfpHE0Hmp",
+    "pm": {
+        "pm_1USG58JG5OzSNVs2lRuRO6Co": {
+            "object": "payment_method",
+            "type": "card",
+            "customer": null,
+            "brand": "visa",
+            "last4": "4242",
+            "created": "2026-10-19T12:54:26+00:00",
+            "allow_redisplay": "unspecified",
+            "error": null
+        },
+        "pm_1USEmEJG5OzSNVs2C0j7Paip": {
+            "object": "payment_method",
+            "type": "card",
+            "customer": null,
+            "brand": "visa",
+            "last4": "4242",
+            "created": "2026-10-19T11:30:50+00:00",
+            "allow_redisplay": "unspecified",
+            "error": null
+        },
+        "pm_1USEgsJG5OzSNVs2HaG6eb9j": {
+            "object": "payment_method",
+            "type": "card",
+            "customer": "cus_VTB3WyfpHE0Hmp",
+            "brand": "visa",
+            "last4": "0341",
+            "created": "2026-10-19T11:25:18+00:00",
+            "allow_redisplay": "unspecified",
+            "error": null
+        }
+    },
+    "customer_default_pm": "pm_1USEgsJG5OzSNVs2HaG6eb9j",
+    "payment_intents": [
+        {
+            "id": "pi_3USG5BJG5OzSNVs20cFl4rQm",
+            "created": "2026-10-19T12:54:29+00:00",
+            "status": "succeeded",
+            "amount": 731,
+            "amount_received": 731,
+            "pm": "pm_1USG58JG5OzSNVs2lRuRO6Co",
+            "latest_charge": "ch_3USG5BJG5OzSNVs20ylyk3bg",
+            "last_error_code": null,
+            "setup_future_usage": null,
+            "meta_renewal": null,
+            "meta_order_id": "68965",
+            "meta_subscription_id": null,
+            "description": "mirror-help.arrayhash.com - Order 68965"
+        },
+        {
+            "id": "pi_3USEkHJG5OzSNVs213JINANu",
+            "created": "2026-10-19T11:28:49+00:00",
+            "status": "succeeded",
+            "amount": 731,
+            "amount_received": 731,
+            "pm": "pm_1USEmEJG5OzSNVs2C0j7Paip",
+            "latest_charge": "ch_3USEkHJG5OzSNVs21BIoyYvX",
+            "last_error_code": null,
+            "setup_future_usage": null,
+            "meta_renewal": "true",
+            "meta_order_id": "68819",
+            "meta_subscription_id": "68788",
+            "description": null
+        }
+    ],
+    "charges": [
+        {
+            "id": "ch_3USG5BJG5OzSNVs20ylyk3bg",
+            "created": "2026-10-19T12:54:29+00:00",
+            "amount": 731,
+            "status": "succeeded",
+            "pi": "pi_3USG5BJG5OzSNVs20cFl4rQm",
+            "pm": "pm_1USG58JG5OzSNVs2lRuRO6Co",
+            "last4": "4242",
+            "failure_code": null
+        },
+        {
+            "id": "ch_3USEkHJG5OzSNVs21BIoyYvX",
+            "created": "2026-10-19T11:30:54+00:00",
+            "amount": 731,
+            "status": "succeeded",
+            "pi": "pi_3USEkHJG5OzSNVs213JINANu",
+            "pm": "pm_1USEmEJG5OzSNVs2C0j7Paip",
+            "last4": "4242",
+            "failure_code": null
+        },
+        {
+            "id": "ch_3USEkHJG5OzSNVs21W22n1Rj",
+            "created": "2026-10-19T11:28:49+00:00",
+            "amount": 731,
+            "status": "failed",
+            "pi": "pi_3USEkHJG5OzSNVs213JINANu",
+            "pm": "pm_1USEgsJG5OzSNVs2HaG6eb9j",
+            "last4": "0341",
+            "failure_code": "card_declined"
+        }
+    ],
+    "customer_pms": [
+        {
+            "id": "pm_1USEgsJG5OzSNVs2HaG6eb9j",
+            "last4": "0341",
+            "created": "2026-10-19T11:25:18+00:00"
+        }
+    ],
+    "wc_tokens": [
+        {
+            "token_id": 78,
+            "gateway": "stripe",
+            "pm": "pm_1USEgsJG5OzSNVs2HaG6eb9j",
+            "last4": "0341",
+            "default": true
+        }
+    ],
+    "user_stripe_customer_meta": "cus_VTB3WyfpHE0Hmp"
+}

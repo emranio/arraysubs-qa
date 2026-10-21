@@ -1,0 +1,73 @@
+My account
+Dashboard
+Orders
+Subscriptions 1
+Store Credit
+My Features
+Downloads
+Addresses
+Payment methods
+Account details
+Log out
+Subscription #68881
+Status:	Active
+Product:	SQA Daily Trial Plan
+Start Date:	19 October, 2026 5:47 PM
+Next Payment:	19 October, 2026 5:51 PM
+Recurring Amount:	$7.31 Every day
+
+Renewals:
+On
+Your subscription will be renewed automatically.
+
+Payment Method:	Stripe Manage payment methods
+Card on File:	Visa ending in 0341 Expires 12/2030
+Update payment method
+Manage Your Subscription
+Retry Payment
+
+Before you go, explore the flexible options above—a different plan or a short break may be a better fit.
+
+Cancel Subscription
+Related Orders
+Order	Date	Status	Total	Actions
+#68903	19 October, 2026	Failed	$7.31	
+View
+Pay
+
+#68880	19 October, 2026	Completed	$0.00	
+View
+Subscription Notes
+Payment failed for Order #68903. Gateway: Stripe. Reason: Your card was declined.
+SYSTEM
+19 October, 2026 5:53 PM
+Payment failed for Order #68903. Gateway: Stripe. Reason: Your card was declined.
+SYSTEM
+19 October, 2026 5:52 PM
+Payment failed for Order #68903. Gateway: Stripe. Reason: Your card was declined.
+SYSTEM
+19 October, 2026 5:52 PM
+Payment failed for Order #68903. Gateway: Stripe. Reason: Your card was declined.
+SYSTEM
+19 October, 2026 5:51 PM
+Renewal invoice #68903 generated for payment due on 19 October, 2026 5:51 PM.
+SYSTEM
+19 October, 2026 5:51 PM
+Free trial ended. Subscription converted to paid.
+SYSTEM
+19 October, 2026 5:49 PM
+Status changed from Trial to Active. Changed by System.
+SYSTEM
+19 October, 2026 5:49 PM
+Payment successful – Order #68880 ($0.00)
+SYSTEM
+19 October, 2026 5:47 PM
+Free trial started. Trial ends on 20 October, 2026 5:47 PM.
+SYSTEM
+19 October, 2026 5:47 PM
+Subscription created.
+SYSTEM
+19 October, 2026 5:47 PM
+Status changed from new to Trial. Changed by System.
+SYSTEM
+19 October, 2026 5:47 PM

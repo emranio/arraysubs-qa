@@ -1,0 +1,72 @@
+{
+ "subscription": 68881,
+ "renewal_order": 68903,
+ "settings_during_run": {
+  "payment_retry": {
+   "enabled": true,
+   "interval_hours": [
+    24,
+    24,
+    24
+   ],
+   "stop_on_hard_decline": false
+  },
+  "changed_at_utc": "2026-10-19T11:45:59Z",
+  "restored_at_utc": "2026-10-19T11:53:16Z"
+ },
+ "attempts": [
+  {
+   "attempt": "0 (initial renewal)",
+   "action_id": 101188,
+   "action_scheduled_gmt": "2026-10-19 15:31:09",
+   "run_explicitly_utc": "11:51:31-11:51:40",
+   "payment_intent": "pi_3USF6IJG5OzSNVs21G74KqjJ",
+   "pi_created_utc": "2026-10-19 11:51:34",
+   "failure_recorded_utc": "2026-10-19 11:51:36",
+   "next_action_id": 101190,
+   "next_action_scheduled_gmt": "2026-10-20 11:51:39",
+   "meta_next_attempt_at_after": "2026-10-20 11:51:39",
+   "note": "Scheduled retry 1 of 3 at 20 October, 2026 5:51 PM (note 68912, 11:51:39Z)"
+  },
+  {
+   "attempt": "retry 1",
+   "action_id": 101190,
+   "action_scheduled_gmt": "2026-10-20 11:51:39",
+   "run_explicitly_utc": "11:52:07-11:52:17",
+   "payment_intent": "pi_3USF6vJG5OzSNVs20RzY4Wi4",
+   "pi_created_utc": "2026-10-19 11:52:13",
+   "failure_recorded_utc": "2026-10-19 11:52:14",
+   "next_action_id": 101191,
+   "next_action_scheduled_gmt": "2026-10-20 11:52:14",
+   "meta_next_attempt_at_after": "2026-10-20 11:52:14",
+   "note": "Scheduled retry 2 of 3 at 20 October, 2026 5:52 PM (note 68917, 11:52:15Z)"
+  },
+  {
+   "attempt": "retry 2",
+   "action_id": 101191,
+   "action_scheduled_gmt": "2026-10-20 11:52:14",
+   "run_explicitly_utc": "11:52:35-11:52:45",
+   "payment_intent": "pi_3USF7NJG5OzSNVs20U3hZdYJ",
+   "pi_created_utc": "2026-10-19 11:52:41",
+   "failure_recorded_utc": "2026-10-19 11:52:42",
+   "next_action_id": 101192,
+   "next_action_scheduled_gmt": "2026-10-20 11:52:43",
+   "meta_next_attempt_at_after": "2026-10-20 11:52:43",
+   "note": "Scheduled retry 3 of 3 at 20 October, 2026 5:52 PM (note 68924, 11:52:43Z)"
+  },
+  {
+   "attempt": "retry 3",
+   "action_id": 101192,
+   "action_scheduled_gmt": "2026-10-20 11:52:43",
+   "run_explicitly_utc": "11:53:03-11:53:13",
+   "payment_intent": "pi_3USF7pJG5OzSNVs21r8pTcRb",
+   "pi_created_utc": "2026-10-19 11:53:09",
+   "failure_recorded_utc": "2026-10-19 11:53:11",
+   "next_action_id": null,
+   "next_action_scheduled_gmt": null,
+   "meta_next_attempt_at_after": "2026-10-20 11:52:43 (unchanged = scheduled time of the already-completed action 101192)",
+   "note": "Reached the configured retry limit (3). ... (note 68931, 11:53:11Z); lifecycle retry_exhausted 11:53:11.809Z attempt 3"
+  }
+ ],
+ "all_declines": "card_declined / generic_decline, 731 USD cents, PaymentMethod pm_1USF2UJG5OzSNVs2ystkVGZw (Visa 0341), Stripe customer cus_VTBPCTCftcrwfA"
+}
