@@ -1,0 +1,1608 @@
+{
+    "checks": [
+        {
+            "check": "Own disposable fallback customer created",
+            "passed": true
+        },
+        {
+            "check": "Own complete manual subscription snapshot created",
+            "passed": true
+        },
+        {
+            "check": "All 25 core email classes are available",
+            "passed": true
+        },
+        {
+            "check": "Own product is genuinely deleted before fallback checks",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_new_subscription sends only when a recipient exists",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_new_subscription uses only the recorded fixture address",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_new_subscription never resolves a missing product to a sample record",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_new_subscription html renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_new_subscription plain renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_renewal_reminder sends only when a recipient exists",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_renewal_reminder uses only the recorded fixture address",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_renewal_reminder never resolves a missing product to a sample record",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_renewal_reminder html renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_renewal_reminder plain renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_renewal_invoice sends only when a recipient exists",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_renewal_invoice uses only the recorded fixture address",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_renewal_invoice never resolves a missing product to a sample record",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_renewal_invoice html renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_renewal_invoice plain renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_payment_successful sends only when a recipient exists",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_payment_successful uses only the recorded fixture address",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_payment_successful never resolves a missing product to a sample record",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_payment_successful html renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_payment_successful plain renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_payment_failed sends only when a recipient exists",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_payment_failed uses only the recorded fixture address",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_payment_failed never resolves a missing product to a sample record",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_payment_failed html renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_payment_failed plain renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_subscription_on_hold sends only when a recipient exists",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_subscription_on_hold uses only the recorded fixture address",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_subscription_on_hold never resolves a missing product to a sample record",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_subscription_on_hold html renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_subscription_on_hold plain renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_subscription_pending_cancellation sends only when a recipient exists",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_subscription_pending_cancellation uses only the recorded fixture address",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_subscription_pending_cancellation never resolves a missing product to a sample record",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_subscription_pending_cancellation html renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_subscription_pending_cancellation plain renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_subscription_cancelled sends only when a recipient exists",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_subscription_cancelled uses only the recorded fixture address",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_subscription_cancelled never resolves a missing product to a sample record",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_subscription_cancelled html renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_subscription_cancelled plain renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_subscription_expired sends only when a recipient exists",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_subscription_expired uses only the recorded fixture address",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_subscription_expired never resolves a missing product to a sample record",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_subscription_expired html renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_subscription_expired plain renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_expiring_soon sends only when a recipient exists",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_expiring_soon uses only the recorded fixture address",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_expiring_soon never resolves a missing product to a sample record",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_expiring_soon html renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_expiring_soon plain renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_auto_downgrade sends only when a recipient exists",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_auto_downgrade uses only the recorded fixture address",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_auto_downgrade never resolves a missing product to a sample record",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_auto_downgrade html renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_auto_downgrade plain renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_retention_discount_accepted sends only when a recipient exists",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_retention_discount_accepted uses only the recorded fixture address",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_retention_discount_accepted never resolves a missing product to a sample record",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_retention_discount_accepted html renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_retention_discount_accepted plain renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_subscription_reactivated sends only when a recipient exists",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_subscription_reactivated uses only the recorded fixture address",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_subscription_reactivated never resolves a missing product to a sample record",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_subscription_reactivated html renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_subscription_reactivated plain renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_subscription_skipped sends only when a recipient exists",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_subscription_skipped uses only the recorded fixture address",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_subscription_skipped never resolves a missing product to a sample record",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_subscription_skipped html renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_subscription_skipped plain renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_skip_undone sends only when a recipient exists",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_skip_undone uses only the recorded fixture address",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_skip_undone never resolves a missing product to a sample record",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_skip_undone html renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_skip_undone plain renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_subscription_paused sends only when a recipient exists",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_subscription_paused uses only the recorded fixture address",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_subscription_paused never resolves a missing product to a sample record",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_subscription_paused html renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_subscription_paused plain renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_subscription_resumed sends only when a recipient exists",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_subscription_resumed uses only the recorded fixture address",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_subscription_resumed never resolves a missing product to a sample record",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_subscription_resumed html renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_subscription_resumed plain renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_trial_started sends only when a recipient exists",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_trial_started uses only the recorded fixture address",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_trial_started never resolves a missing product to a sample record",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_trial_started html renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_trial_started plain renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_trial_converted sends only when a recipient exists",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_trial_converted uses only the recorded fixture address",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_trial_converted never resolves a missing product to a sample record",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_trial_converted html renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_trial_converted plain renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_renewal_requires_verification sends only when a recipient exists",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_renewal_requires_verification uses only the recorded fixture address",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_renewal_requires_verification never resolves a missing product to a sample record",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_renewal_requires_verification html renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_renewal_requires_verification plain renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_card_expiring sends only when a recipient exists",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_card_expiring uses only the recorded fixture address",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_card_expiring never resolves a missing product to a sample record",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_card_expiring html renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_card_expiring plain renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_admin_new_subscription sends only when a recipient exists",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_admin_new_subscription never resolves a missing product to a sample record",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_admin_new_subscription html renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_admin_new_subscription plain renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_admin_payment_failed sends only when a recipient exists",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_admin_payment_failed never resolves a missing product to a sample record",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_admin_payment_failed html renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_admin_payment_failed plain renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_admin_subscription_pending_cancellation sends only when a recipient exists",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_admin_subscription_pending_cancellation never resolves a missing product to a sample record",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_admin_subscription_pending_cancellation html renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_admin_subscription_pending_cancellation plain renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_admin_subscription_cancelled sends only when a recipient exists",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_admin_subscription_cancelled never resolves a missing product to a sample record",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_admin_subscription_cancelled html renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "deleted-product arraysubs_admin_subscription_cancelled plain renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "Deleting own customer preserves the independent fixture subscription",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_new_subscription sends only when a recipient exists",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_new_subscription uses only the recorded fixture address",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_new_subscription never resolves a missing product to a sample record",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_new_subscription uses its own order billing fallback",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_new_subscription html renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_new_subscription plain renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_renewal_reminder sends only when a recipient exists",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_renewal_reminder uses only the recorded fixture address",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_renewal_reminder never resolves a missing product to a sample record",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_renewal_reminder uses its own order billing fallback",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_renewal_reminder html renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_renewal_reminder plain renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_renewal_invoice sends only when a recipient exists",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_renewal_invoice uses only the recorded fixture address",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_renewal_invoice never resolves a missing product to a sample record",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_renewal_invoice uses its own order billing fallback",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_renewal_invoice html renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_renewal_invoice plain renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_payment_successful sends only when a recipient exists",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_payment_successful uses only the recorded fixture address",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_payment_successful never resolves a missing product to a sample record",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_payment_successful uses its own order billing fallback",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_payment_successful html renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_payment_successful plain renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_payment_failed sends only when a recipient exists",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_payment_failed uses only the recorded fixture address",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_payment_failed never resolves a missing product to a sample record",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_payment_failed uses its own order billing fallback",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_payment_failed html renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_payment_failed plain renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_subscription_on_hold sends only when a recipient exists",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_subscription_on_hold uses only the recorded fixture address",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_subscription_on_hold never resolves a missing product to a sample record",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_subscription_on_hold uses its own order billing fallback",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_subscription_on_hold html renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_subscription_on_hold plain renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_subscription_pending_cancellation sends only when a recipient exists",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_subscription_pending_cancellation uses only the recorded fixture address",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_subscription_pending_cancellation never resolves a missing product to a sample record",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_subscription_pending_cancellation uses its own order billing fallback",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_subscription_pending_cancellation html renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_subscription_pending_cancellation plain renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_subscription_cancelled sends only when a recipient exists",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_subscription_cancelled uses only the recorded fixture address",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_subscription_cancelled never resolves a missing product to a sample record",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_subscription_cancelled uses its own order billing fallback",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_subscription_cancelled html renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_subscription_cancelled plain renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_subscription_expired sends only when a recipient exists",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_subscription_expired uses only the recorded fixture address",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_subscription_expired never resolves a missing product to a sample record",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_subscription_expired uses its own order billing fallback",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_subscription_expired html renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_subscription_expired plain renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_expiring_soon sends only when a recipient exists",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_expiring_soon uses only the recorded fixture address",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_expiring_soon never resolves a missing product to a sample record",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_expiring_soon uses its own order billing fallback",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_expiring_soon html renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_expiring_soon plain renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_auto_downgrade sends only when a recipient exists",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_auto_downgrade uses only the recorded fixture address",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_auto_downgrade never resolves a missing product to a sample record",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_auto_downgrade uses its own order billing fallback",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_auto_downgrade html renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_auto_downgrade plain renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_retention_discount_accepted sends only when a recipient exists",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_retention_discount_accepted uses only the recorded fixture address",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_retention_discount_accepted never resolves a missing product to a sample record",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_retention_discount_accepted uses its own order billing fallback",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_retention_discount_accepted html renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_retention_discount_accepted plain renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_subscription_reactivated sends only when a recipient exists",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_subscription_reactivated uses only the recorded fixture address",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_subscription_reactivated never resolves a missing product to a sample record",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_subscription_reactivated uses its own order billing fallback",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_subscription_reactivated html renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_subscription_reactivated plain renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_subscription_skipped sends only when a recipient exists",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_subscription_skipped uses only the recorded fixture address",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_subscription_skipped never resolves a missing product to a sample record",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_subscription_skipped uses its own order billing fallback",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_subscription_skipped html renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_subscription_skipped plain renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_skip_undone sends only when a recipient exists",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_skip_undone uses only the recorded fixture address",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_skip_undone never resolves a missing product to a sample record",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_skip_undone uses its own order billing fallback",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_skip_undone html renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_skip_undone plain renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_subscription_paused sends only when a recipient exists",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_subscription_paused uses only the recorded fixture address",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_subscription_paused never resolves a missing product to a sample record",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_subscription_paused uses its own order billing fallback",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_subscription_paused html renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_subscription_paused plain renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_subscription_resumed sends only when a recipient exists",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_subscription_resumed uses only the recorded fixture address",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_subscription_resumed never resolves a missing product to a sample record",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_subscription_resumed uses its own order billing fallback",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_subscription_resumed html renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_subscription_resumed plain renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_trial_started sends only when a recipient exists",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_trial_started uses only the recorded fixture address",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_trial_started never resolves a missing product to a sample record",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_trial_started uses its own order billing fallback",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_trial_started html renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_trial_started plain renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_trial_converted sends only when a recipient exists",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_trial_converted uses only the recorded fixture address",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_trial_converted never resolves a missing product to a sample record",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_trial_converted uses its own order billing fallback",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_trial_converted html renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_trial_converted plain renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_renewal_requires_verification sends only when a recipient exists",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_renewal_requires_verification uses only the recorded fixture address",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_renewal_requires_verification never resolves a missing product to a sample record",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_renewal_requires_verification uses its own order billing fallback",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_renewal_requires_verification html renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_renewal_requires_verification plain renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_card_expiring sends only when a recipient exists",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_card_expiring uses only the recorded fixture address",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_card_expiring never resolves a missing product to a sample record",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_card_expiring uses its own order billing fallback",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_card_expiring html renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_card_expiring plain renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_admin_new_subscription sends only when a recipient exists",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_admin_new_subscription never resolves a missing product to a sample record",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_admin_new_subscription uses its own order billing fallback",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_admin_new_subscription html renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_admin_new_subscription plain renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_admin_payment_failed sends only when a recipient exists",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_admin_payment_failed never resolves a missing product to a sample record",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_admin_payment_failed uses its own order billing fallback",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_admin_payment_failed html renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_admin_payment_failed plain renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_admin_subscription_pending_cancellation sends only when a recipient exists",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_admin_subscription_pending_cancellation never resolves a missing product to a sample record",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_admin_subscription_pending_cancellation uses its own order billing fallback",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_admin_subscription_pending_cancellation html renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_admin_subscription_pending_cancellation plain renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_admin_subscription_cancelled sends only when a recipient exists",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_admin_subscription_cancelled never resolves a missing product to a sample record",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_admin_subscription_cancelled uses its own order billing fallback",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_admin_subscription_cancelled html renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "deleted-customer arraysubs_admin_subscription_cancelled plain renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_new_subscription sends only when a recipient exists",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_new_subscription never resolves a missing product to a sample record",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_new_subscription uses its own order billing fallback",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_new_subscription html renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_new_subscription plain renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_renewal_reminder sends only when a recipient exists",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_renewal_reminder never resolves a missing product to a sample record",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_renewal_reminder uses its own order billing fallback",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_renewal_reminder html renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_renewal_reminder plain renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_renewal_invoice sends only when a recipient exists",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_renewal_invoice never resolves a missing product to a sample record",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_renewal_invoice uses its own order billing fallback",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_renewal_invoice html renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_renewal_invoice plain renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_payment_successful sends only when a recipient exists",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_payment_successful never resolves a missing product to a sample record",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_payment_successful uses its own order billing fallback",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_payment_successful html renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_payment_successful plain renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_payment_failed sends only when a recipient exists",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_payment_failed never resolves a missing product to a sample record",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_payment_failed uses its own order billing fallback",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_payment_failed html renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_payment_failed plain renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_subscription_on_hold sends only when a recipient exists",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_subscription_on_hold never resolves a missing product to a sample record",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_subscription_on_hold uses its own order billing fallback",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_subscription_on_hold html renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_subscription_on_hold plain renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_subscription_pending_cancellation sends only when a recipient exists",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_subscription_pending_cancellation never resolves a missing product to a sample record",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_subscription_pending_cancellation uses its own order billing fallback",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_subscription_pending_cancellation html renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_subscription_pending_cancellation plain renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_subscription_cancelled sends only when a recipient exists",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_subscription_cancelled never resolves a missing product to a sample record",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_subscription_cancelled uses its own order billing fallback",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_subscription_cancelled html renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_subscription_cancelled plain renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_subscription_expired sends only when a recipient exists",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_subscription_expired never resolves a missing product to a sample record",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_subscription_expired uses its own order billing fallback",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_subscription_expired html renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_subscription_expired plain renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_expiring_soon sends only when a recipient exists",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_expiring_soon never resolves a missing product to a sample record",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_expiring_soon uses its own order billing fallback",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_expiring_soon html renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_expiring_soon plain renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_auto_downgrade sends only when a recipient exists",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_auto_downgrade never resolves a missing product to a sample record",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_auto_downgrade uses its own order billing fallback",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_auto_downgrade html renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_auto_downgrade plain renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_retention_discount_accepted sends only when a recipient exists",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_retention_discount_accepted never resolves a missing product to a sample record",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_retention_discount_accepted uses its own order billing fallback",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_retention_discount_accepted html renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_retention_discount_accepted plain renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_subscription_reactivated sends only when a recipient exists",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_subscription_reactivated never resolves a missing product to a sample record",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_subscription_reactivated uses its own order billing fallback",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_subscription_reactivated html renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_subscription_reactivated plain renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_subscription_skipped sends only when a recipient exists",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_subscription_skipped never resolves a missing product to a sample record",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_subscription_skipped uses its own order billing fallback",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_subscription_skipped html renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_subscription_skipped plain renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_skip_undone sends only when a recipient exists",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_skip_undone never resolves a missing product to a sample record",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_skip_undone uses its own order billing fallback",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_skip_undone html renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_skip_undone plain renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_subscription_paused sends only when a recipient exists",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_subscription_paused never resolves a missing product to a sample record",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_subscription_paused uses its own order billing fallback",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_subscription_paused html renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_subscription_paused plain renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_subscription_resumed sends only when a recipient exists",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_subscription_resumed never resolves a missing product to a sample record",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_subscription_resumed uses its own order billing fallback",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_subscription_resumed html renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_subscription_resumed plain renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_trial_started sends only when a recipient exists",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_trial_started never resolves a missing product to a sample record",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_trial_started uses its own order billing fallback",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_trial_started html renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_trial_started plain renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_trial_converted sends only when a recipient exists",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_trial_converted never resolves a missing product to a sample record",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_trial_converted uses its own order billing fallback",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_trial_converted html renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_trial_converted plain renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_renewal_requires_verification sends only when a recipient exists",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_renewal_requires_verification never resolves a missing product to a sample record",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_renewal_requires_verification uses its own order billing fallback",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_renewal_requires_verification html renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_renewal_requires_verification plain renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_card_expiring sends only when a recipient exists",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_card_expiring never resolves a missing product to a sample record",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_card_expiring uses its own order billing fallback",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_card_expiring html renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_card_expiring plain renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_admin_new_subscription sends only when a recipient exists",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_admin_new_subscription never resolves a missing product to a sample record",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_admin_new_subscription uses its own order billing fallback",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_admin_new_subscription html renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_admin_new_subscription plain renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_admin_payment_failed sends only when a recipient exists",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_admin_payment_failed never resolves a missing product to a sample record",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_admin_payment_failed uses its own order billing fallback",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_admin_payment_failed html renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_admin_payment_failed plain renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_admin_subscription_pending_cancellation sends only when a recipient exists",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_admin_subscription_pending_cancellation never resolves a missing product to a sample record",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_admin_subscription_pending_cancellation uses its own order billing fallback",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_admin_subscription_pending_cancellation html renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_admin_subscription_pending_cancellation plain renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_admin_subscription_cancelled sends only when a recipient exists",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_admin_subscription_cancelled never resolves a missing product to a sample record",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_admin_subscription_cancelled uses its own order billing fallback",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_admin_subscription_cancelled html renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "no-recipient arraysubs_admin_subscription_cancelled plain renders without preview customer data",
+            "passed": true
+        },
+        {
+            "check": "Missing\/deleted related records produce no email-source warning or notice",
+            "passed": true
+        }
+    ],
+    "failure": null,
+    "warnings": [],
+    "mail_intercepted_count": 54,
+    "external_mail_sent": 0,
+    "deleted_fixtures": {
+        "user": 430,
+        "product": 19802,
+        "subscription": 19804,
+        "order": 19808
+    },
+    "saved_settings_unchanged": true,
+    "active_plugins_unchanged": true
+}

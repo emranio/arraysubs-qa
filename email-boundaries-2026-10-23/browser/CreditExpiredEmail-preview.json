@@ -1,0 +1,20 @@
+{
+  "featureTypeAttributes": [],
+  "links": [
+    {
+      "href": "http://localhost:10013/",
+      "text": "wp-test2"
+    },
+    {
+      "href": "http://localhost:10013/shop/",
+      "text": "Visit Our Shop"
+    },
+    {
+      "href": "http://localhost:10013/my-account/as-store-credit/",
+      "text": "View your store credit balance"
+    }
+  ],
+  "selected": "ArraySubsPro\\Features\\StoreCredit\\Emails\\CreditExpiredEmail",
+  "subject": "[wp-test2] Your store credit has expired",
+  "text": "\t\n\nwp-test2\n\nYour store credit has expired\n\n\n\nHi there,\n\nWe wanted to let you know that 0.00$ of your store credit has expired.\n\nExpired Credit\t0.00$\n\nThis credit is no longer available for use. If you have any questions, please contact our support team.\n\nVisit Our Shop\n\nView your store credit balance\n\nCredit has expired and is no longer available for use. Visit our shop to explore current offers!\n\n\n\n\nwp-test2\n30 North Gould Street, ste r, 30 North Gould Street, ste r, Sheridan, WY 82801, United States (US)\n\n\t"
+}

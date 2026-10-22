@@ -1,0 +1,27 @@
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Your subscription has expired
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+Hi John,
+
+Your subscription #12345 has expired.
+
+----------
+Subscription #12345
+----------
+
+Product: Sample Subscription Product
+Status: Expired
+
+Your subscription term has ended. We hope you enjoyed our service!
+
+If you would like to continue enjoying our services, visit our store to subscribe again.
+
+Subscribe Again: http://localhost:10013/shop/
+
+----------
+
+Your subscription term has ended. Visit our store to subscribe again and continue enjoying our services.
+
+wp-test2
+30 North Gould Street, ste r, 30 North Gould Street, ste r, Sheridan, WY 82801, United States (US)

@@ -1,0 +1,26 @@
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Your subscription has been reactivated!
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+Hi John,
+
+Great news! Your subscription for Sample Subscription Product has been reactivated and is now active again.
+
+----------
+SUBSCRIPTION DETAILS
+----------
+
+Subscription ID: #12345
+Product: Sample Subscription Product
+Status: Active
+
+Your subscription is now active and you will be charged on your next payment date. Thank you for continuing with us!
+
+View your subscription here: http://localhost:10013/my-account/as-subscriptions/
+
+----------
+
+Your subscription is now active again and you will be charged on your next payment date.
+
+wp-test2
+30 North Gould Street, ste r, 30 North Gould Street, ste r, Sheridan, WY 82801, United States (US)

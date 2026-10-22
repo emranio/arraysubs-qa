@@ -1,0 +1,16 @@
+{
+  "featureTypeAttributes": [],
+  "links": [
+    {
+      "href": "http://localhost:10013/",
+      "text": "wp-test2"
+    },
+    {
+      "href": "http://localhost:10013/my-account/as-subscriptions/",
+      "text": "Manage subscription"
+    }
+  ],
+  "selected": "ArraySubs\\Features\\Emails\\Emails\\SubscriptionPausedEmail",
+  "subject": "[wp-test2] Subscription paused for Sample Subscription Product",
+  "text": "\t\n\nwp-test2\n\nYour subscription is paused\n\n\n\nHi John,\n\nYour Sample Subscription Product subscription is now paused. Renewal billing is suspended during the pause.\n\nSubscription #0\nProduct\tSample Subscription Product\nStatus\tPaused\nPaused On\tOctober 23, 2026\nPause Duration\t30 days\nScheduled Resume\tNovember 22, 2026\nReason\tNot specified\n\nYou can review the pause or resume your subscription sooner from your account.\n\nManage subscription\n\nRenewal billing is suspended while your subscription is paused. It will resume automatically on the date shown above unless you resume it sooner.\n\n\n\n\nwp-test2\n30 North Gould Street, ste r, 30 North Gould Street, ste r, Sheridan, WY 82801, United States (US)\n\n\t"
+}

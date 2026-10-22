@@ -1,0 +1,27 @@
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Your subscription renews soon
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+Hi John,
+
+This is a friendly reminder that your subscription will renew in 3 days.
+
+----------
+Subscription #12345
+----------
+
+Product: Sample Subscription Product
+Renewal Amount: 29.99$
+: 
+Payment Method: Direct bank transfer
+
+Please make sure the upcoming renewal invoice is paid on time to keep your subscription active.
+
+Manage your subscription: http://localhost:10013/my-account/as-subscriptions/
+
+----------
+
+If you wish to make any changes to your subscription, please visit your account page.
+
+wp-test2
+30 North Gould Street, ste r, 30 North Gould Street, ste r, Sheridan, WY 82801, United States (US)

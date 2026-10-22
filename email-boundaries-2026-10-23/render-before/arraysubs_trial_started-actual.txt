@@ -1,0 +1,25 @@
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Your free trial has started!
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+Hi Alice &amp; QA,
+
+Your free trial for Alice &amp; QA &lt;Library&gt; has started! Enjoy full access during your trial period.
+
+----------
+TRIAL DETAILS
+----------
+
+Subscription ID: #19531
+Product: Alice &amp; QA &lt;Library&gt;
+Post-Trial Price: 31.25&#036; / Every month
+
+When your trial ends, your subscription will automatically convert to a paid subscription and your payment method will be charged.
+
+Manage your subscription here: http://localhost:10013/my-account/as-subscriptions/
+
+----------
+
+Enjoy your free trial! You will be automatically charged when the trial period ends unless you cancel before then.
+
+wp-test2<br />30 North Gould Street, ste r, 30 North Gould Street, ste r, Sheridan, WY 82801, United States (US)

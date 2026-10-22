@@ -1,0 +1,28 @@
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Your trial has been converted to a paid subscription
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+Hi John,
+
+Great news! Your free trial for Sample Subscription Product has ended and your subscription has been successfully converted to a paid subscription.
+
+----------
+SUBSCRIPTION DETAILS
+----------
+
+Subscription ID: #12345
+Product: Sample Subscription Product
+Status: Active
+Subscription Price: 29.99$
+Next Payment Date: November 23, 2026
+
+Thank you for continuing with your subscription! We appreciate your business.
+
+View your subscription here: http://localhost:10013/my-account/as-subscriptions/
+
+----------
+
+Thank you for continuing with your subscription! Your payment method has been charged and your subscription is now active.
+
+wp-test2
+30 North Gould Street, ste r, 30 North Gould Street, ste r, Sheridan, WY 82801, United States (US)

@@ -1,0 +1,19 @@
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+New subscription received
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+You have received a new subscription from Alice & QA Email. Subscription #19818 details are shown below.
+
+----------
+Subscription #19818
+----------
+
+Customer: Alice & QA Email (email-qa-alpha-np9yoot4kg@example.invalid)
+Product: Alice & QA <Library>
+Recurring Amount: 31.25£ / Every month
+Start Date: October 23, 2026 3:34 am
+Next Payment: November 22, 2026 3:34 am
+Payment Method: Manual QA
+
+View Subscription: http://localhost:10013/wp-admin/admin.php?page=arraysubs-mainadmin#/subscriptions/detail/19818wp-test2
+30 North Gould Street, ste r, 30 North Gould Street, ste r, Sheridan, WY 82801, United States (US)

@@ -1,0 +1,24 @@
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Your subscription is now active!
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+Hi John,
+
+Great news! Your subscription is now active. Here are the details:
+
+----------
+Subscription #12345
+----------
+
+Product: Sample Subscription Product
+Price: 29.99&#036; / every month
+Start Date: October 23, 2026
+Next Payment: November 22, 2026
+
+View your subscription: http://localhost:10013/my-account/as-subscriptions/
+
+----------
+
+Thank you for subscribing! If you have any questions, please contact us.
+
+wp-test2<br />30 North Gould Street, ste r, 30 North Gould Street, ste r, Sheridan, WY 82801, United States (US)

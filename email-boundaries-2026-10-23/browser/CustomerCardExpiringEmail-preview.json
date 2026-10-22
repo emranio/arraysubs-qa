@@ -1,0 +1,16 @@
+{
+  "featureTypeAttributes": [],
+  "links": [
+    {
+      "href": "http://localhost:10013/",
+      "text": "wp-test2"
+    },
+    {
+      "href": "http://localhost:10013/my-account/as-subscriptions/",
+      "text": "Update Payment Method Now"
+    }
+  ],
+  "selected": "ArraySubs\\Features\\Emails\\Emails\\CustomerCardExpiringEmail",
+  "subject": "[wp-test2] Update the card for subscription #12345",
+  "text": "\t\n\nwp-test2\n\nYour card is expiring soon\n\n\n\nHi John,\n\nThe payment card ending in that is used for your subscription is expiring on soon.\n\nTo ensure uninterrupted service, please update your payment method before the expiration date.\n\nSubscription Details\nSubscription ID\t#0\nProduct\tN/A\nCard Ending In\t**** **** ****\nCard Expires\tsoon\n\nUpdate Payment Method Now\n\nIf you do not update your payment method, your next renewal payment may fail and your subscription may be put on hold.\n\nPlease update your payment method to avoid renewal interruptions.\n\n\n\n\nwp-test2\n30 North Gould Street, ste r, 30 North Gould Street, ste r, Sheridan, WY 82801, United States (US)\n\n\t"
+}

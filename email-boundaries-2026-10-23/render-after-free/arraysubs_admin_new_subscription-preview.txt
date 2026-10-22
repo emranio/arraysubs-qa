@@ -1,0 +1,19 @@
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+New subscription received
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+You have received a new subscription from John Doe. Subscription #12345 details are shown below.
+
+----------
+Subscription #12345
+----------
+
+Customer: John Doe (customer@example.com)
+Product: Sample Subscription Product
+Recurring Amount: 29.99$ / every month
+Start Date: October 23, 2026
+Next Payment: November 22, 2026
+Payment Method: Direct bank transfer
+
+View Subscription: http://localhost:10013/wp-admin/admin.php?page=arraysubs-mainadmin#/subscriptionswp-test2
+30 North Gould Street, ste r, 30 North Gould Street, ste r, Sheridan, WY 82801, United States (US)

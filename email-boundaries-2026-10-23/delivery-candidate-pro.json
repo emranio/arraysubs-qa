@@ -1,0 +1,210 @@
+{
+    "manager_source": "\/private\/tmp\/arraysubs-email-delivery\/src\/Features\/Emails\/Services\/EmailManager.php",
+    "candidate_templates": true,
+    "checks": [
+        {
+            "check": "Normal core boot registers EmailManager",
+            "passed": true
+        },
+        {
+            "check": "Disposable first customer created",
+            "passed": true
+        },
+        {
+            "check": "Disposable first manual subscription created",
+            "passed": true
+        },
+        {
+            "check": "Disposable second customer created",
+            "passed": true
+        },
+        {
+            "check": "Disposable second manual subscription created",
+            "passed": true
+        },
+        {
+            "check": "Failed mail transport is reported as false",
+            "passed": true
+        },
+        {
+            "check": "Shared static delivery contract reports failed transport",
+            "passed": true
+        },
+        {
+            "check": "Successful intercepted transport is reported as true",
+            "passed": true
+        },
+        {
+            "check": "Shared static delivery contract reuses the normally booted manager",
+            "passed": true
+        },
+        {
+            "check": "Woo-disabled email returns false without mail",
+            "passed": true
+        },
+        {
+            "check": "Feature-disabled email returns false without mail",
+            "passed": true
+        },
+        {
+            "check": "Missing subscription returns false without mail",
+            "passed": true
+        },
+        {
+            "check": "Missing recipient returns false without mail",
+            "passed": true
+        },
+        {
+            "check": "invoice failed delivery leaves its sent marker unset",
+            "passed": true
+        },
+        {
+            "check": "invoice retry records delivery only after success",
+            "passed": true
+        },
+        {
+            "check": "invoice successful email is deduped",
+            "passed": true
+        },
+        {
+            "check": "success failed delivery leaves its sent marker unset",
+            "passed": true
+        },
+        {
+            "check": "success retry records delivery only after success",
+            "passed": true
+        },
+        {
+            "check": "success successful email is deduped",
+            "passed": true
+        },
+        {
+            "check": "trial failed delivery leaves its sent marker unset",
+            "passed": true
+        },
+        {
+            "check": "trial retry records delivery only after success",
+            "passed": true
+        },
+        {
+            "check": "trial successful email is deduped",
+            "passed": true
+        },
+        {
+            "check": "reminder failed delivery leaves its sent marker unset",
+            "passed": true
+        },
+        {
+            "check": "reminder retry records delivery only after success",
+            "passed": true
+        },
+        {
+            "check": "reminder successful email is deduped",
+            "passed": true
+        },
+        {
+            "check": "Partial pending-cancellation failure does not finalize both deliveries",
+            "passed": true
+        },
+        {
+            "check": "Pending-cancellation retry sends only its unsuccessful recipient",
+            "passed": true
+        },
+        {
+            "check": "Both delivered pending-cancellation emails are deduped",
+            "passed": true
+        },
+        {
+            "check": "Undo clears combined and per-recipient delivery markers",
+            "passed": true
+        },
+        {
+            "check": "Nested new_subscription success cannot finalize an unsuccessful outer email",
+            "passed": true
+        },
+        {
+            "check": "Nested subscription_cancelled success cannot finalize an unsuccessful outer email",
+            "passed": true
+        },
+        {
+            "check": "Outer singleton remains usable after nested deliveries",
+            "passed": true
+        },
+        {
+            "check": "Exact failure ledger releases failed delivery claims for retry",
+            "passed": true
+        },
+        {
+            "check": "Exact failure ledger still dedupes successful customer\/admin effects",
+            "passed": true
+        },
+        {
+            "check": "admin_subscription_cancelled html renders and reaches intercepted transport",
+            "passed": true
+        },
+        {
+            "check": "admin_subscription_cancelled html uses the registered core details page",
+            "passed": true
+        },
+        {
+            "check": "admin_subscription_cancelled plain renders and reaches intercepted transport",
+            "passed": true
+        },
+        {
+            "check": "admin_subscription_cancelled plain uses the registered core details page",
+            "passed": true
+        },
+        {
+            "check": "admin_subscription_pending_cancellation html renders and reaches intercepted transport",
+            "passed": true
+        },
+        {
+            "check": "admin_subscription_pending_cancellation html uses the registered core details page",
+            "passed": true
+        },
+        {
+            "check": "admin_subscription_pending_cancellation plain renders and reaches intercepted transport",
+            "passed": true
+        },
+        {
+            "check": "admin_subscription_pending_cancellation plain uses the registered core details page",
+            "passed": true
+        },
+        {
+            "check": "admin_payment_failed html renders and reaches intercepted transport",
+            "passed": true
+        },
+        {
+            "check": "admin_payment_failed html uses the registered core details page",
+            "passed": true
+        },
+        {
+            "check": "admin_payment_failed plain renders and reaches intercepted transport",
+            "passed": true
+        },
+        {
+            "check": "admin_payment_failed plain uses the registered core details page",
+            "passed": true
+        }
+    ],
+    "failure": null,
+    "mail_intercepted_count": 30,
+    "external_mail_sent": 0,
+    "deleted_fixtures": {
+        "users": [
+            406,
+            407
+        ],
+        "product": 19605,
+        "subscriptions": [
+            19607,
+            19612
+        ],
+        "orders": [
+            19611,
+            19616
+        ]
+    },
+    "saved_settings_unchanged": true,
+    "active_plugins_unchanged": true
+}

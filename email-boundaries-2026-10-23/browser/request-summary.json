@@ -1,0 +1,14 @@
+{
+  "send_preview_requests": 0,
+  "mutating_requests": [
+    "[38833.557] POST http://localhost:10013/wp-admin/admin-ajax.php (XHR) 200",
+    "[38833.1790] POST http://localhost:10013/wp-admin/admin-ajax.php (XHR) 200",
+    "[38833.1849] POST http://localhost:10013/wp-admin/admin-ajax.php (XHR) 200",
+    "[38833.2470] POST http://localhost:10013/wp-json/wc-admin/options?_locale=user (Fetch) 200",
+    "[38833.2484] POST http://localhost:10013/wp-json/wc-admin/options?_locale=user (Fetch) 200",
+    "[38833.3741] POST http://localhost:10013/wp-json/wc-admin/options?_locale=user (Fetch) 200",
+    "[38833.3761] POST http://localhost:10013/wp-json/wc-admin/options?_locale=user (Fetch) 200"
+  ],
+  "preview_frame_requests": 35,
+  "preview_subject_requests": 35
+}

@@ -1,0 +1,21 @@
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Subscription payment failed
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+The automatic renewal payment for subscription #19531 from Alice &amp; QA Email has failed.
+
+----------
+Subscription #19531
+----------
+
+Customer: Alice &amp; QA Email (email-qa-alpha-jmfha7z8da@example.invalid)
+Product: Alice &amp; QA &lt;Library&gt;
+Order: #19541
+Amount: 31.25&pound;
+Status: Active
+
+Please review the subscription and take appropriate action.
+
+View Subscription: http://localhost:10013/wp-admin/admin.php?page=arraysubs#/subscriptions/19531
+
+wp-test2<br />30 North Gould Street, ste r, 30 North Gould Street, ste r, Sheridan, WY 82801, United States (US)

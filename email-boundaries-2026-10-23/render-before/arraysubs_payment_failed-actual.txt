@@ -1,0 +1,27 @@
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Payment failed
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+Hi Alice &amp; QA,
+
+Unfortunately, the renewal payment for your subscription #19531 could not be completed.
+
+----------
+Subscription #19531
+----------
+
+Product: Alice &amp; QA &lt;Library&gt;
+Amount Due: 31.25&pound;
+Status: Active
+
+Please review the order and complete payment to avoid service interruption.
+
+Pay Now: http://localhost:10013/checkout-2/order-pay/19541/?pay_for_order=true&#038;key=wc_order_E9kfpHAP8xhlq
+
+Manage your subscription: http://localhost:10013/my-account/as-subscriptions/
+
+----------
+
+Please update your payment method to avoid service interruption.
+
+wp-test2<br />30 North Gould Street, ste r, 30 North Gould Street, ste r, Sheridan, WY 82801, United States (US)

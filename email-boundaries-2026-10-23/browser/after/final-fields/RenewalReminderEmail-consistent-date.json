@@ -1,0 +1,19 @@
+{
+  "links": [
+    {
+      "href": "http://localhost:10013/",
+      "text": "wp-test2"
+    },
+    {
+      "href": "http://localhost:10013/my-account/as-subscriptions/",
+      "text": "Manage your subscription"
+    }
+  ],
+  "subject": "[wp-test2] Your subscription #12345 renews soon",
+  "text": "\t\n\nwp-test2\n\nYour subscription renews soon\n\n\n\nHi John,\n\nThis is a friendly reminder that your subscription will renew in 3 days.\n\nSubscription #12345\nProduct\tSample Subscription Product\nRenewal Amount\t29.99$\nNext Payment Date\tOctober 26, 2026\nPayment Method\tDirect bank transfer\n\nPlease make sure the upcoming renewal invoice is paid on time to keep your subscription active.\n\nManage your subscription\n\nIf you wish to make any changes to your subscription, please visit your account page.\n\n\n\n\nwp-test2\n30 North Gould Street, ste r, 30 North Gould Street, ste r, Sheridan, WY 82801, United States (US)\n\n\t",
+  "timezone": "+06:00",
+  "now": "2026-10-23T03:43:32+06:00",
+  "expected_three_day_date": "October 26, 2026",
+  "three_day_notice_present": true,
+  "expected_date_present": true
+}

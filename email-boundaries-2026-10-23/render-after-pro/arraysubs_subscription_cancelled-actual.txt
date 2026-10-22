@@ -1,0 +1,25 @@
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Your subscription has been cancelled
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+Hi Alice & QA,
+
+Your subscription #19819 has been cancelled.
+
+----------
+Subscription #19819
+----------
+
+Product: Alice & QA <Library>
+Status: Cancelled
+
+Your access to the subscription benefits has ended. If you change your mind, you can always subscribe again.
+
+Browse our products: http://localhost:10013/shop/
+
+----------
+
+We are sorry to see you go. If you change your mind, you can always subscribe again.
+
+wp-test2
+30 North Gould Street, ste r, 30 North Gould Street, ste r, Sheridan, WY 82801, United States (US)

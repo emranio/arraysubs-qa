@@ -1,0 +1,24 @@
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Your subscription is on hold
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+Hi John,
+
+Your subscription #0 has been put on hold.
+
+----------
+Subscription #0
+----------
+
+Product: N/A
+Status: On Hold
+
+This may be due to a payment issue. Please log in to your account and update your payment method to reactivate your subscription.
+
+Manage your subscription: http://localhost:10013/my-account/as-subscriptions/
+
+----------
+
+Your subscription has been put on hold. This may be due to a payment issue. Please update your payment method to reactivate your subscription.
+
+wp-test2<br />30 North Gould Street, ste r, 30 North Gould Street, ste r, Sheridan, WY 82801, United States (US)

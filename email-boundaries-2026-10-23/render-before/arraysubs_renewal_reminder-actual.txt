@@ -1,0 +1,26 @@
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Your subscription renews soon
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+Hi Alice &amp; QA,
+
+Your subscription is scheduled to end in 3 days. A final invoice may be generated before the subscription ends if a final billing cycle is due.
+
+----------
+Subscription #19531
+----------
+
+Product: Alice &amp; QA &lt;Library&gt;
+Renewal Amount: 31.25&#036;
+End Date: January 21, 2027 3:22 am
+Payment Method: Manual QA
+
+No action is required unless you want to renew, change, or extend the subscription before it ends.
+
+Manage your subscription: http://localhost:10013/my-account/as-subscriptions/
+
+----------
+
+If you wish to make any changes to your subscription, please visit your account page.
+
+wp-test2<br />30 North Gould Street, ste r, 30 North Gould Street, ste r, Sheridan, WY 82801, United States (US)

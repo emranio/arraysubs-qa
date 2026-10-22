@@ -1,0 +1,66 @@
+[log] JQMIGRATE: Migrate is installed with logging active, version 3.4.1
+[info] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold
+[warning] JQMIGRATE: jQuery.fn.change() event shorthand is deprecated
+[trace] console.trace
+[warning] JQMIGRATE: jQuery.trim is deprecated; use String.prototype.trim
+[trace] console.trace
+[log] JQMIGRATE: Migrate is installed with logging active, version 3.4.1
+[info] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold
+[warning] JQMIGRATE: jQuery.fn.change() event shorthand is deprecated
+[trace] console.trace
+[warning] JQMIGRATE: jQuery.trim is deprecated; use String.prototype.trim
+[trace] console.trace
+[warning] The `useSelect` hook returns different values when called with the same state and parameters.
+This can lead to unnecessary re-renders and performance issues if not fixed.
+
+Non-equal value keys: %s
+
+ alerts
+[log] JQMIGRATE: Migrate is installed with logging active, version 3.4.1
+[info] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold
+[warning] JQMIGRATE: jQuery.fn.change() event shorthand is deprecated
+[trace] console.trace
+[warning] The `useSelect` hook returns different values when called with the same state and parameters.
+This can lead to unnecessary re-renders and performance issues if not fixed.
+
+Non-equal value keys: %s
+
+ alerts
+[warning] JQMIGRATE: jQuery.trim is deprecated; use String.prototype.trim
+[trace] console.trace
+[log] JQMIGRATE: Migrate is installed with logging active, version 3.4.1
+[info] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold
+[warning] JQMIGRATE: jQuery.fn.change() event shorthand is deprecated
+[trace] console.trace
+[warning] JQMIGRATE: jQuery.trim is deprecated; use String.prototype.trim
+[trace] console.trace
+[warning] The `useSelect` hook returns different values when called with the same state and parameters.
+This can lead to unnecessary re-renders and performance issues if not fixed.
+
+Non-equal value keys: %s
+
+ alerts
+[log] JQMIGRATE: Migrate is installed with logging active, version 3.4.1
+[info] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold
+[warning] JQMIGRATE: jQuery.fn.change() event shorthand is deprecated
+[trace] console.trace
+[warning] The `useSelect` hook returns different values when called with the same state and parameters.
+This can lead to unnecessary re-renders and performance issues if not fixed.
+
+Non-equal value keys: %s
+
+ alerts
+[warning] JQMIGRATE: jQuery.trim is deprecated; use String.prototype.trim
+[trace] console.trace
+[log] JQMIGRATE: Migrate is installed with logging active, version 3.4.1
+[info] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold
+[warning] JQMIGRATE: jQuery.fn.change() event shorthand is deprecated
+[trace] console.trace
+[warning] The `useSelect` hook returns different values when called with the same state and parameters.
+This can lead to unnecessary re-renders and performance issues if not fixed.
+
+Non-equal value keys: %s
+
+ alerts
+[warning] JQMIGRATE: jQuery.trim is deprecated; use String.prototype.trim
+[trace] console.trace

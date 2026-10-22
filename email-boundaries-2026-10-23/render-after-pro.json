@@ -1,0 +1,1012 @@
+{
+    "pro_loaded": true,
+    "checks": [
+        {
+            "check": "All core email classes register",
+            "passed": true
+        },
+        {
+            "check": "Only available core \/ Pro email classes register",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_new_subscription html preview renders",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_new_subscription html preview does not show subscription zero",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_new_subscription plain preview renders",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_new_subscription plain preview does not show subscription zero",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_new_subscription html real fixture renders",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_new_subscription html admin links use registered page",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_new_subscription plain real fixture renders",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_new_subscription plain admin links use registered page",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_new_subscription plaintext omits HTML and entity-escaped customer names",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_renewal_reminder html preview renders",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_renewal_reminder html preview does not show subscription zero",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_renewal_reminder plain preview renders",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_renewal_reminder plain preview does not show subscription zero",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_renewal_reminder html real fixture renders",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_renewal_reminder html admin links use registered page",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_renewal_reminder plain real fixture renders",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_renewal_reminder plain admin links use registered page",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_renewal_reminder plaintext omits HTML and entity-escaped customer names",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_renewal_invoice html preview renders",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_renewal_invoice html preview does not show subscription zero",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_renewal_invoice plain preview renders",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_renewal_invoice plain preview does not show subscription zero",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_renewal_invoice html real fixture renders",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_renewal_invoice html admin links use registered page",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_renewal_invoice plain real fixture renders",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_renewal_invoice plain admin links use registered page",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_renewal_invoice plaintext omits HTML and entity-escaped customer names",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_payment_successful html preview renders",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_payment_successful html preview does not show subscription zero",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_payment_successful plain preview renders",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_payment_successful plain preview does not show subscription zero",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_payment_successful html real fixture renders",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_payment_successful html admin links use registered page",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_payment_successful plain real fixture renders",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_payment_successful plain admin links use registered page",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_payment_successful plaintext omits HTML and entity-escaped customer names",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_payment_failed html preview renders",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_payment_failed html preview does not show subscription zero",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_payment_failed plain preview renders",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_payment_failed plain preview does not show subscription zero",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_payment_failed html real fixture renders",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_payment_failed html admin links use registered page",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_payment_failed plain real fixture renders",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_payment_failed plain admin links use registered page",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_payment_failed plaintext omits HTML and entity-escaped customer names",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_subscription_on_hold html preview renders",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_subscription_on_hold html preview does not show subscription zero",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_subscription_on_hold plain preview renders",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_subscription_on_hold plain preview does not show subscription zero",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_subscription_on_hold html real fixture renders",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_subscription_on_hold html admin links use registered page",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_subscription_on_hold plain real fixture renders",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_subscription_on_hold plain admin links use registered page",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_subscription_on_hold plaintext omits HTML and entity-escaped customer names",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_subscription_pending_cancellation html preview renders",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_subscription_pending_cancellation html preview does not show subscription zero",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_subscription_pending_cancellation plain preview renders",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_subscription_pending_cancellation plain preview does not show subscription zero",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_subscription_pending_cancellation html real fixture renders",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_subscription_pending_cancellation html admin links use registered page",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_subscription_pending_cancellation plain real fixture renders",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_subscription_pending_cancellation plain admin links use registered page",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_subscription_pending_cancellation plaintext omits HTML and entity-escaped customer names",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_subscription_cancelled html preview renders",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_subscription_cancelled html preview does not show subscription zero",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_subscription_cancelled plain preview renders",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_subscription_cancelled plain preview does not show subscription zero",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_subscription_cancelled html real fixture renders",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_subscription_cancelled html admin links use registered page",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_subscription_cancelled plain real fixture renders",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_subscription_cancelled plain admin links use registered page",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_subscription_cancelled plaintext omits HTML and entity-escaped customer names",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_subscription_expired html preview renders",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_subscription_expired html preview does not show subscription zero",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_subscription_expired plain preview renders",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_subscription_expired plain preview does not show subscription zero",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_subscription_expired html real fixture renders",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_subscription_expired html admin links use registered page",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_subscription_expired plain real fixture renders",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_subscription_expired plain admin links use registered page",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_subscription_expired plaintext omits HTML and entity-escaped customer names",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_expiring_soon html preview renders",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_expiring_soon html preview does not show subscription zero",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_expiring_soon plain preview renders",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_expiring_soon plain preview does not show subscription zero",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_expiring_soon html real fixture renders",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_expiring_soon html admin links use registered page",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_expiring_soon plain real fixture renders",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_expiring_soon plain admin links use registered page",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_expiring_soon plaintext omits HTML and entity-escaped customer names",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_auto_downgrade html preview renders",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_auto_downgrade html preview does not show subscription zero",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_auto_downgrade plain preview renders",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_auto_downgrade plain preview does not show subscription zero",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_auto_downgrade html real fixture renders",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_auto_downgrade html admin links use registered page",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_auto_downgrade plain real fixture renders",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_auto_downgrade plain admin links use registered page",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_auto_downgrade plaintext omits HTML and entity-escaped customer names",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_retention_discount_accepted html preview renders",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_retention_discount_accepted html preview does not show subscription zero",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_retention_discount_accepted plain preview renders",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_retention_discount_accepted plain preview does not show subscription zero",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_retention_discount_accepted html real fixture renders",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_retention_discount_accepted html admin links use registered page",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_retention_discount_accepted plain real fixture renders",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_retention_discount_accepted plain admin links use registered page",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_retention_discount_accepted plaintext omits HTML and entity-escaped customer names",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_subscription_reactivated html preview renders",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_subscription_reactivated html preview does not show subscription zero",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_subscription_reactivated plain preview renders",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_subscription_reactivated plain preview does not show subscription zero",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_subscription_reactivated html real fixture renders",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_subscription_reactivated html admin links use registered page",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_subscription_reactivated plain real fixture renders",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_subscription_reactivated plain admin links use registered page",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_subscription_reactivated plaintext omits HTML and entity-escaped customer names",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_subscription_skipped html preview renders",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_subscription_skipped html preview does not show subscription zero",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_subscription_skipped plain preview renders",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_subscription_skipped plain preview does not show subscription zero",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_subscription_skipped html real fixture renders",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_subscription_skipped html admin links use registered page",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_subscription_skipped plain real fixture renders",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_subscription_skipped plain admin links use registered page",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_subscription_skipped plaintext omits HTML and entity-escaped customer names",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_skip_undone html preview renders",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_skip_undone html preview does not show subscription zero",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_skip_undone plain preview renders",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_skip_undone plain preview does not show subscription zero",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_skip_undone html real fixture renders",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_skip_undone html admin links use registered page",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_skip_undone plain real fixture renders",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_skip_undone plain admin links use registered page",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_skip_undone plaintext omits HTML and entity-escaped customer names",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_subscription_paused html preview renders",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_subscription_paused html preview does not show subscription zero",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_subscription_paused plain preview renders",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_subscription_paused plain preview does not show subscription zero",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_subscription_paused html real fixture renders",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_subscription_paused html admin links use registered page",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_subscription_paused plain real fixture renders",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_subscription_paused plain admin links use registered page",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_subscription_paused plaintext omits HTML and entity-escaped customer names",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_subscription_resumed html preview renders",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_subscription_resumed html preview does not show subscription zero",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_subscription_resumed plain preview renders",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_subscription_resumed plain preview does not show subscription zero",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_subscription_resumed html real fixture renders",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_subscription_resumed html admin links use registered page",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_subscription_resumed plain real fixture renders",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_subscription_resumed plain admin links use registered page",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_subscription_resumed plaintext omits HTML and entity-escaped customer names",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_trial_started html preview renders",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_trial_started html preview does not show subscription zero",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_trial_started plain preview renders",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_trial_started plain preview does not show subscription zero",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_trial_started html real fixture renders",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_trial_started html admin links use registered page",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_trial_started plain real fixture renders",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_trial_started plain admin links use registered page",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_trial_started plaintext omits HTML and entity-escaped customer names",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_trial_converted html preview renders",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_trial_converted html preview does not show subscription zero",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_trial_converted plain preview renders",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_trial_converted plain preview does not show subscription zero",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_trial_converted html real fixture renders",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_trial_converted html admin links use registered page",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_trial_converted plain real fixture renders",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_trial_converted plain admin links use registered page",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_trial_converted plaintext omits HTML and entity-escaped customer names",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_renewal_requires_verification html preview renders",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_renewal_requires_verification html preview does not show subscription zero",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_renewal_requires_verification plain preview renders",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_renewal_requires_verification plain preview does not show subscription zero",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_renewal_requires_verification html real fixture renders",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_renewal_requires_verification html admin links use registered page",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_renewal_requires_verification plain real fixture renders",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_renewal_requires_verification plain admin links use registered page",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_renewal_requires_verification plaintext omits HTML and entity-escaped customer names",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_card_expiring html preview renders",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_card_expiring html preview does not show subscription zero",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_card_expiring plain preview renders",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_card_expiring plain preview does not show subscription zero",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_card_expiring html real fixture renders",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_card_expiring html admin links use registered page",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_card_expiring plain real fixture renders",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_card_expiring plain admin links use registered page",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_card_expiring plaintext omits HTML and entity-escaped customer names",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_admin_new_subscription html preview renders",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_admin_new_subscription html preview does not show subscription zero",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_admin_new_subscription plain preview renders",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_admin_new_subscription plain preview does not show subscription zero",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_admin_new_subscription html real fixture renders",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_admin_new_subscription html admin links use registered page",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_admin_new_subscription plain real fixture renders",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_admin_new_subscription plain admin links use registered page",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_admin_new_subscription plaintext omits HTML and entity-escaped customer names",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_admin_payment_failed html preview renders",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_admin_payment_failed html preview does not show subscription zero",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_admin_payment_failed plain preview renders",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_admin_payment_failed plain preview does not show subscription zero",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_admin_payment_failed html real fixture renders",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_admin_payment_failed html admin links use registered page",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_admin_payment_failed plain real fixture renders",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_admin_payment_failed plain admin links use registered page",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_admin_payment_failed plaintext omits HTML and entity-escaped customer names",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_admin_subscription_pending_cancellation html preview renders",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_admin_subscription_pending_cancellation html preview does not show subscription zero",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_admin_subscription_pending_cancellation plain preview renders",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_admin_subscription_pending_cancellation plain preview does not show subscription zero",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_admin_subscription_pending_cancellation html real fixture renders",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_admin_subscription_pending_cancellation html admin links use registered page",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_admin_subscription_pending_cancellation plain real fixture renders",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_admin_subscription_pending_cancellation plain admin links use registered page",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_admin_subscription_pending_cancellation plaintext omits HTML and entity-escaped customer names",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_admin_subscription_cancelled html preview renders",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_admin_subscription_cancelled html preview does not show subscription zero",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_admin_subscription_cancelled plain preview renders",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_admin_subscription_cancelled plain preview does not show subscription zero",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_admin_subscription_cancelled html real fixture renders",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_admin_subscription_cancelled html admin links use registered page",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_admin_subscription_cancelled plain real fixture renders",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_admin_subscription_cancelled plain admin links use registered page",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_admin_subscription_cancelled plaintext omits HTML and entity-escaped customer names",
+            "passed": true
+        },
+        {
+            "check": "payment_failed does not reuse another customer payment URL without valid order",
+            "passed": true
+        },
+        {
+            "check": "payment_failed clears stale order placeholders without valid order",
+            "passed": true
+        },
+        {
+            "check": "payment_failed does not reuse another customer payment URL without valid order",
+            "passed": true
+        },
+        {
+            "check": "payment_failed clears stale order placeholders without valid order",
+            "passed": true
+        },
+        {
+            "check": "renewal_invoice does not reuse another customer payment URL without valid order",
+            "passed": true
+        },
+        {
+            "check": "renewal_invoice clears stale order placeholders without valid order",
+            "passed": true
+        },
+        {
+            "check": "renewal_invoice does not reuse another customer payment URL without valid order",
+            "passed": true
+        },
+        {
+            "check": "renewal_invoice clears stale order placeholders without valid order",
+            "passed": true
+        },
+        {
+            "check": "payment_successful does not reuse another customer payment URL without valid order",
+            "passed": true
+        },
+        {
+            "check": "payment_successful clears stale order placeholders without valid order",
+            "passed": true
+        },
+        {
+            "check": "payment_successful does not reuse another customer payment URL without valid order",
+            "passed": true
+        },
+        {
+            "check": "payment_successful clears stale order placeholders without valid order",
+            "passed": true
+        },
+        {
+            "check": "admin_payment_failed does not reuse another customer payment URL without valid order",
+            "passed": true
+        },
+        {
+            "check": "admin_payment_failed clears stale order placeholders without valid order",
+            "passed": true
+        },
+        {
+            "check": "admin_payment_failed does not reuse another customer payment URL without valid order",
+            "passed": true
+        },
+        {
+            "check": "admin_payment_failed clears stale order placeholders without valid order",
+            "passed": true
+        },
+        {
+            "check": "Recurring price in email body uses subscription currency",
+            "passed": true
+        },
+        {
+            "check": "Email placeholder helper uses subscription currency",
+            "passed": true
+        },
+        {
+            "check": "No email-source PHP warnings\/notices across preview and actual renders",
+            "passed": true
+        }
+    ],
+    "failure": null,
+    "warnings": [],
+    "intercepted_mail_count": 38,
+    "outbound_transport_blocked": true,
+    "deleted_fixtures": {
+        "users": {
+            "alpha": 434,
+            "beta": 436
+        },
+        "products": {
+            "alpha": 19816,
+            "beta": 19828
+        },
+        "subscriptions": {
+            "alpha": 19819,
+            "beta": 19832
+        },
+        "orders": [
+            19839
+        ]
+    },
+    "settings_unchanged": true,
+    "active_plugins_unchanged": true
+}

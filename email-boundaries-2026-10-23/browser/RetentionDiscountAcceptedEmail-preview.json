@@ -1,0 +1,16 @@
+{
+  "featureTypeAttributes": [],
+  "links": [
+    {
+      "href": "http://localhost:10013/",
+      "text": "wp-test2"
+    },
+    {
+      "href": "http://localhost:10013/my-account/as-subscriptions/",
+      "text": "View Your Subscription"
+    }
+  ],
+  "selected": "ArraySubs\\Features\\Emails\\Emails\\RetentionDiscountAcceptedEmail",
+  "subject": "[wp-test2] Your retention discount for Sample Subscription Product is active",
+  "text": "\t\n\nwp-test2\n\nYour subscription discount is now active\n\n\n\nHi John,\n\nYou accepted our Special discount offer for your subscription, and your discount is now active.\n\nDiscount Details\nSubscription ID\t#0\nOffer\tSpecial discount offer\nDiscount\t20%\nPrevious recurring amount\t29.99$\nNew recurring amount\t23.99$\nSavings per renewal\t6.00$\nApplies to\tYour next 3 renewals\nNext payment date\tNovember 22, 2026\n\nWe\u2019ve updated your subscription, and future eligible renewals will use this discounted amount automatically.\n\nView Your Subscription\n\nThanks for staying with us. Your next renewals will use the discounted amount shown in this email while the offer remains active.\n\n\n\n\nwp-test2\n30 North Gould Street, ste r, 30 North Gould Street, ste r, Sheridan, WY 82801, United States (US)\n\n\t"
+}

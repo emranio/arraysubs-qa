@@ -1,0 +1,14 @@
+{
+  "links": [
+    {
+      "href": "http://localhost:10013/",
+      "text": "wp-test2"
+    },
+    {
+      "href": "http://localhost:10013/wp-admin/admin.php?page=arraysubs-mainadmin#/subscriptions",
+      "text": "View Subscription"
+    }
+  ],
+  "subject": "[wp-test2] New subscription #12345 from John Doe",
+  "text": "\t\n\nwp-test2\n\nNew subscription received\n\n\n\nYou have received a new subscription from John Doe. Subscription #12345 details are shown below.\n\nSubscription #12345\nCustomer\tJohn Doe (customer@example.com)\nProduct\tSample Subscription Product\nRecurring Amount\t29.99$ / every month\nStart Date\tOctober 23, 2026\nNext Payment\tNovember 22, 2026\nPayment Method\tDirect bank transfer\n\nView Subscription\n\n\n\n\nwp-test2\n30 North Gould Street, ste r, 30 North Gould Street, ste r, Sheridan, WY 82801, United States (US)\n\n\t"
+}

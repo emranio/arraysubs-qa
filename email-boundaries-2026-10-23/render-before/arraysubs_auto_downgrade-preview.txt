@@ -1,0 +1,24 @@
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Your subscription plan has changed
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+Hi John,
+
+Your subscription #0 has been automatically updated to a new plan.
+
+----------
+Subscription #0
+----------
+
+Previous Plan: #0
+New Plan: #0
+Status: Active
+
+Your subscription has been automatically adjusted to keep your access active. No action is needed on your part.
+
+View your subscription: http://localhost:10013/my-account/as-subscriptions/
+
+---
+
+Your subscription has been automatically adjusted. You can view your subscription details in your account.
+

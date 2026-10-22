@@ -1,0 +1,16 @@
+{
+  "featureTypeAttributes": [],
+  "links": [
+    {
+      "href": "http://localhost:10013/",
+      "text": "wp-test2"
+    },
+    {
+      "href": "http://localhost:10013/my-account/as-subscriptions/",
+      "text": "Manage Your Subscription"
+    }
+  ],
+  "selected": "ArraySubs\\Features\\Emails\\Emails\\TrialStartedEmail",
+  "subject": "[wp-test2] Your free trial for Sample Subscription Product has started",
+  "text": "\t\n\nwp-test2\n\nYour free trial has started!\n\n\n\nHi John,\n\nYour free trial for Sample Subscription Product has started! Enjoy full access during your trial period.\n\nTrial Details\nSubscription ID\t#12345\nProduct\tSample Subscription Product\nTrial Length\t7 days\nTrial Ends On\tOctober 30, 2026 3:31 am\nPost-Trial Price\t29.99$ / every month\n\nWhen your trial ends, your subscription will automatically convert to a paid subscription and your payment method will be charged.\n\nManage Your Subscription\n\nEnjoy your free trial! You will be automatically charged when the trial period ends unless you cancel before then.\n\n\n\n\nwp-test2\n30 North Gould Street, ste r, 30 North Gould Street, ste r, Sheridan, WY 82801, United States (US)\n\n\t"
+}

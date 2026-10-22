@@ -1,0 +1,16 @@
+{
+  "featureTypeAttributes": [],
+  "links": [
+    {
+      "href": "http://localhost:10013/",
+      "text": "wp-test2"
+    },
+    {
+      "href": "http://localhost:10013/my-account/as-subscriptions/",
+      "text": "Manage your subscription"
+    }
+  ],
+  "selected": "ArraySubs\\Features\\Emails\\Emails\\RenewalReminderEmail",
+  "subject": "[wp-test2] Your subscription #12345 renews soon",
+  "text": "\t\n\nwp-test2\n\nYour subscription renews soon\n\n\n\nHi John,\n\nThis is a friendly reminder that your subscription will renew in 3 days.\n\nSubscription #0\nProduct\tN/A\nRenewal Amount\t0.00$\n\t\nPayment Method\tN/A\n\nPlease make sure the upcoming renewal invoice is paid on time to keep your subscription active.\n\nManage your subscription\n\nIf you wish to make any changes to your subscription, please visit your account page.\n\n\n\n\nwp-test2\n30 North Gould Street, ste r, 30 North Gould Street, ste r, Sheridan, WY 82801, United States (US)\n\n\t"
+}

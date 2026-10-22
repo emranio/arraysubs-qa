@@ -1,0 +1,16 @@
+{
+  "featureTypeAttributes": [],
+  "links": [
+    {
+      "href": "http://localhost:10013/",
+      "text": "wp-test2"
+    },
+    {
+      "href": "http://localhost:10013/my-account/as-subscriptions/",
+      "text": "View Your Subscription"
+    }
+  ],
+  "selected": "ArraySubs\\Features\\Emails\\Emails\\SubscriptionReactivatedEmail",
+  "subject": "[wp-test2] Your subscription for Sample Subscription Product has been reactivated",
+  "text": "\t\n\nwp-test2\n\nYour subscription has been reactivated!\n\n\n\nHi John,\n\nGreat news! Your subscription for Sample Subscription Product has been reactivated and is now active again.\n\nSubscription Details\nSubscription ID\t#12345\nProduct\tSample Subscription Product\nStatus\tActive\n\nYour subscription is now active and you will be charged on your next payment date. Thank you for continuing with us!\n\nView Your Subscription\n\nYour subscription is now active again and you will be charged on your next payment date.\n\n\n\n\nwp-test2\n30 North Gould Street, ste r, 30 North Gould Street, ste r, Sheridan, WY 82801, United States (US)\n\n\t"
+}

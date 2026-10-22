@@ -1,0 +1,18 @@
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Subscription cancelled
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+Subscription #12345 for John Doe has been cancelled by Customer (John Doe).
+
+----------
+Subscription #12345
+----------
+
+Customer: John Doe (customer@example.com)
+Product: Sample Subscription Product
+Status: Cancelled
+
+View Subscription: http://localhost:10013/wp-admin/admin.php?page=arraysubs-mainadmin#/subscriptions
+
+wp-test2
+30 North Gould Street, ste r, 30 North Gould Street, ste r, Sheridan, WY 82801, United States (US)

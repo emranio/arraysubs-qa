@@ -1,0 +1,25 @@
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Your regular renewal schedule is restored
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+Hi Alice &amp; QA,
+
+The skip for 1 renewal cycle of your Alice &amp; QA &lt;Library&gt; subscription has been removed.
+
+----------
+Subscription #19531
+----------
+
+Product: Alice &amp; QA &lt;Library&gt;
+Renewal Cycles Restored: 1
+Next Payment: November 22, 2026 3:22 am
+
+Renewal billing will continue on the restored schedule.
+
+Manage subscription: http://localhost:10013/my-account/as-subscriptions/
+
+----------
+
+Your subscription is back on its regular billing schedule. The next payment will be collected on the restored date shown above.
+
+wp-test2<br />30 North Gould Street, ste r, 30 North Gould Street, ste r, Sheridan, WY 82801, United States (US)

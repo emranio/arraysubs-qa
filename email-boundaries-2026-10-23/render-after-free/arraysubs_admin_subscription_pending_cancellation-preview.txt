@@ -1,0 +1,18 @@
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Subscription scheduled to cancel
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+Subscription #12345 from John Doe is scheduled to cancel at the end of the current billing period.
+
+----------
+Subscription #12345
+----------
+
+Customer: John Doe (customer@example.com)
+Product: Sample Subscription Product
+Status: Scheduled to cancel
+
+View subscription: http://localhost:10013/wp-admin/admin.php?page=arraysubs-mainadmin#/subscriptions
+
+wp-test2
+30 North Gould Street, ste r, 30 North Gould Street, ste r, Sheridan, WY 82801, United States (US)

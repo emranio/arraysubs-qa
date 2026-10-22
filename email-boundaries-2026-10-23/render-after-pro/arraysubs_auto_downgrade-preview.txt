@@ -1,0 +1,24 @@
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Your subscription plan has changed
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+Hi John,
+
+Your subscription #12345 has been automatically updated to a new plan.
+
+----------
+Subscription #12345
+----------
+
+Previous Plan: Previous Plan
+New Plan: New Plan
+Status: Active
+Next Payment: November 22, 2026
+
+Your subscription has been automatically adjusted to keep your access active. No action is needed on your part.
+
+View your subscription: http://localhost:10013/my-account/as-subscriptions/
+
+---
+
+Your subscription has been automatically adjusted. You can view your subscription details in your account.

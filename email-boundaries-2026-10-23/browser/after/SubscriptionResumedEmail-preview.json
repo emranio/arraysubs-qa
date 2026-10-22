@@ -1,0 +1,16 @@
+{
+  "featureTypeAttributes": [],
+  "links": [
+    {
+      "href": "http://localhost:10013/",
+      "text": "wp-test2"
+    },
+    {
+      "href": "http://localhost:10013/my-account/as-subscriptions/",
+      "text": "Manage subscription"
+    }
+  ],
+  "selected": "ArraySubs\\Features\\Emails\\Emails\\SubscriptionResumedEmail",
+  "subject": "[wp-test2] Subscription resumed for Sample Subscription Product",
+  "text": "\t\n\nwp-test2\n\nYour subscription has resumed\n\n\n\nHi John,\n\nYour Sample Subscription Product subscription has successfully resumed and renewal billing is active again.\n\nSubscription #12345\nProduct\tSample Subscription Product\nStatus\tActive\nTime Paused\t30 days\nNext Payment\tNovember 23, 2026\n\nNo further action is needed. You can review the current renewal schedule from your account.\n\nManage subscription\n\nRenewal billing is active again. Your next payment will be collected on the updated date shown above.\n\n\n\n\nwp-test2\n30 North Gould Street, ste r, 30 North Gould Street, ste r, Sheridan, WY 82801, United States (US)\n\n\t"
+}

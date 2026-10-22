@@ -1,0 +1,25 @@
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Your subscription plan has changed
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+Hi Alice &amp; QA,
+
+Your subscription #19531 has been automatically updated to a new plan.
+
+----------
+Subscription #19531
+----------
+
+Previous Plan: Alice &amp; QA &lt;Library&gt;
+New Plan: Bob QA &lt;Library&gt;
+Status: Active
+Next Payment: November 22, 2026 3:22 am
+
+Your subscription has been automatically adjusted to keep your access active. No action is needed on your part.
+
+View your subscription: http://localhost:10013/my-account/as-subscriptions/
+
+---
+
+Your subscription has been automatically adjusted. You can view your subscription details in your account.
+

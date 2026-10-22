@@ -1,0 +1,25 @@
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Your trial has been converted to a paid subscription
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+Hi John,
+
+Great news! Your free trial for N/A has ended and your subscription has been successfully converted to a paid subscription.
+
+----------
+SUBSCRIPTION DETAILS
+----------
+
+Subscription ID: #0
+Product: N/A
+Status: Active
+
+Thank you for continuing with your subscription! We appreciate your business.
+
+View your subscription here: http://localhost:10013/my-account/as-subscriptions/
+
+----------
+
+Thank you for continuing with your subscription! Your payment method has been charged and your subscription is now active.
+
+wp-test2<br />30 North Gould Street, ste r, 30 North Gould Street, ste r, Sheridan, WY 82801, United States (US)

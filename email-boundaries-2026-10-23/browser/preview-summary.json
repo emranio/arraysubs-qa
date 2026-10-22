@@ -1,0 +1,29 @@
+{
+  "total": 29,
+  "fatal": [],
+  "body_subscription_zero": [
+    "SubscriptionOnHoldEmail",
+    "AdminSubscriptionPendingCancellationEmail",
+    "SkipUndoneEmail",
+    "SubscriptionPausedEmail",
+    "SubscriptionCancelledEmail",
+    "AdminPaymentFailedEmail",
+    "PaymentFailedEmail",
+    "SubscriptionExpiringSoonEmail",
+    "AutoDowngradeEmail",
+    "RenewalInvoiceEmail",
+    "SubscriptionSkippedEmail",
+    "PaymentSuccessfulEmail",
+    "SubscriptionExpiredEmail",
+    "SubscriptionPendingCancellationEmail",
+    "AdminSubscriptionCancelledEmail",
+    "SubscriptionResumedEmail",
+    "RenewalReminderEmail"
+  ],
+  "body_order_zero": [
+    "CreditUsedEmail"
+  ],
+  "unresolved_placeholders": {},
+  "feature_type_attributes": {},
+  "empty_content": []
+}

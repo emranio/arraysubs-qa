@@ -1,0 +1,20 @@
+{
+  "featureTypeAttributes": [],
+  "links": [
+    {
+      "href": "http://localhost:10013/",
+      "text": "wp-test2"
+    },
+    {
+      "href": "http://localhost:10013/my-account/view-order/",
+      "text": "#0"
+    },
+    {
+      "href": "http://localhost:10013/my-account/view-order/",
+      "text": "View order details"
+    }
+  ],
+  "selected": "ArraySubsPro\\Features\\StoreCredit\\Emails\\CreditUsedEmail",
+  "subject": "[wp-test2] Store credit used for Order #12345",
+  "text": "\t\n\nwp-test2\n\nStore credit applied to your order\n\n\n\nHi there,\n\n0.00$ from your store credit has been applied to order #0.\n\nCredit Applied\t0.00$\nRemaining Balance\t0.00$\nOrder\t#0\n\nView order details\n\nThank you for your purchase!\n\n\n\n\nwp-test2\n30 North Gould Street, ste r, 30 North Gould Street, ste r, Sheridan, WY 82801, United States (US)\n\n\t"
+}

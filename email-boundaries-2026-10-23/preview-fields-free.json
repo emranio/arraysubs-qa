@@ -1,0 +1,36 @@
+{
+    "checks": [
+        {
+            "check": "Reminder preview has a date label and value",
+            "passed": true
+        },
+        {
+            "check": "Reminder sample date matches its three-day notice",
+            "passed": true
+        },
+        {
+            "check": "HTML reminder preview includes the shared date label",
+            "passed": true
+        },
+        {
+            "check": "HTML\/plain card previews contain sample card digits",
+            "passed": true
+        },
+        {
+            "check": "Card preview uses a sample month\/year",
+            "passed": true
+        },
+        {
+            "check": "Real subscription card metadata replaces all preview samples",
+            "passed": true
+        },
+        {
+            "check": "Missing real card digits remain explicit without sample leakage",
+            "passed": true
+        }
+    ],
+    "deleted_subscription": 19862,
+    "fixture_deleted": true,
+    "settings_unchanged": true,
+    "plugins_unchanged": true
+}

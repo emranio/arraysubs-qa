@@ -1,0 +1,18 @@
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Subscription cancelled
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+Subscription #19818 for Alice & QA Email has been cancelled by System.
+
+----------
+Subscription #19818
+----------
+
+Customer: Alice & QA Email (email-qa-alpha-np9yoot4kg@example.invalid)
+Product: Alice & QA <Library>
+Status: Cancelled
+
+View Subscription: http://localhost:10013/wp-admin/admin.php?page=arraysubs-mainadmin#/subscriptions/detail/19818
+
+wp-test2
+30 North Gould Street, ste r, 30 North Gould Street, ste r, Sheridan, WY 82801, United States (US)

@@ -1,0 +1,184 @@
+{
+    "mode": "order-link-before",
+    "initial_mailer_loaded": true,
+    "checks": [
+        {
+            "name": "isolated cold raw credit action sends once",
+            "pass": true,
+            "details": {
+                "count": 1
+            }
+        },
+        {
+            "name": "warm raw credit action sends once",
+            "pass": true,
+            "details": {
+                "count": 1
+            }
+        },
+        {
+            "name": "actual queued notification dispatcher sends once",
+            "pass": true,
+            "details": {
+                "count": 1
+            }
+        },
+        {
+            "name": "arraysubs_credits_applied_to_order queued notification sends once",
+            "pass": true,
+            "details": {
+                "count": 1
+            }
+        },
+        {
+            "name": "arraysubs_credit_expiring_soon queued notification sends once",
+            "pass": true,
+            "details": {
+                "count": 1
+            }
+        },
+        {
+            "name": "arraysubs_credit_expired queued notification sends once",
+            "pass": true,
+            "details": {
+                "count": 1
+            }
+        },
+        {
+            "name": "subscription credit queued notification forwards customer",
+            "pass": true,
+            "details": {
+                "count": 1,
+                "subscription_context": "request-local metadata filter, no stored subscription"
+            }
+        },
+        {
+            "name": "deferred raw event does not send before worker",
+            "pass": true,
+            "details": {
+                "count": 0,
+                "queue_observed": 1
+            }
+        },
+        {
+            "name": "Added plaintext literal customer name",
+            "pass": true,
+            "details": []
+        },
+        {
+            "name": "Added plaintext contains no footer HTML markup",
+            "pass": true,
+            "details": []
+        },
+        {
+            "name": "Added plaintext contains no HTML entities",
+            "pass": true,
+            "details": []
+        },
+        {
+            "name": "Used plaintext literal customer name",
+            "pass": true,
+            "details": []
+        },
+        {
+            "name": "Used plaintext contains no footer HTML markup",
+            "pass": true,
+            "details": []
+        },
+        {
+            "name": "Used plaintext contains no HTML entities",
+            "pass": true,
+            "details": []
+        },
+        {
+            "name": "real used email keeps its actual order detail URL",
+            "pass": true,
+            "details": {
+                "url": "http://localhost:10013/my-account/view-order/19811/"
+            }
+        },
+        {
+            "name": "Expiring plaintext literal customer name",
+            "pass": true,
+            "details": []
+        },
+        {
+            "name": "Expiring plaintext contains no footer HTML markup",
+            "pass": true,
+            "details": []
+        },
+        {
+            "name": "Expiring plaintext contains no HTML entities",
+            "pass": true,
+            "details": []
+        },
+        {
+            "name": "Expired plaintext literal customer name",
+            "pass": true,
+            "details": []
+        },
+        {
+            "name": "Expired plaintext contains no footer HTML markup",
+            "pass": true,
+            "details": []
+        },
+        {
+            "name": "Expired plaintext contains no HTML entities",
+            "pass": true,
+            "details": []
+        },
+        {
+            "name": "missing customers produce no mail",
+            "pass": true,
+            "details": []
+        },
+        {
+            "name": "Added zero-context preview uses sample customer and amount",
+            "pass": true,
+            "details": []
+        },
+        {
+            "name": "Used zero-context preview uses sample customer and amount",
+            "pass": true,
+            "details": []
+        },
+        {
+            "name": "used preview keeps sample id but links to valid Orders list",
+            "pass": false,
+            "details": []
+        },
+        {
+            "name": "Expiring zero-context preview uses sample customer and amount",
+            "pass": true,
+            "details": []
+        },
+        {
+            "name": "expiring preview shows seven days",
+            "pass": true,
+            "details": []
+        },
+        {
+            "name": "Expired zero-context preview uses sample customer and amount",
+            "pass": true,
+            "details": []
+        },
+        {
+            "name": "real zero balances remain zero without preview values",
+            "pass": true,
+            "details": []
+        }
+    ],
+    "isolated_mailer_reset": true,
+    "fixture_user_id": 431,
+    "fixture_order_id": 19811,
+    "rendered_plain": {
+        "Added": "=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\nStore credit has been added to your account!\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n\nHi A & B,\n\nGreat news! 12.50$ has been added to your store credit balance.\n\n----------\nCredit Added: 12.50$\nNew Balance: 25.00$\nSource: Admin adjustment\n----------\n\nYou can use your store credit for future purchases or let it be applied automatically to your subscription renewals.\n\nView your store credit balance:\nhttp://localhost:10013/my-account/store-credit/\n\n----------\n\nThanks & welcome!\n\nStore & Co Help",
+        "Used": "=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\nStore credit applied to your order\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n\nHi A & B,\n\n12.50$ from your store credit has been applied to order #19811.\n\n----------\nCredit Applied: 12.50$\nRemaining Balance: 0.00$\nOrder: #19811\n----------\n\nView order details:\nhttp://localhost:10013/my-account/view-order/19811/\n\n----------\n\nThanks & welcome!\n\nStore & Co Help",
+        "Expiring": "=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\nYour store credit is expiring soon!\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n\nHi A & B,\n\nJust a friendly reminder: 12.50$ of your store credit will expire in 7 days!\n\n----------\nExpiring Credit: 12.50$\nExpiration Date: October 30, 2026\nDays Remaining: 7 days\n----------\n\nDon't let your credit go to waste! Use it for your next purchase or it will be applied automatically to your subscription renewal.\n\nShop Now:\nhttp://localhost:10013/shop/\n\nView your store credit balance:\nhttp://localhost:10013/my-account/store-credit/\n\n----------\n\nThanks & welcome!\n\nStore & Co Help",
+        "Expired": "=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\nYour store credit has expired\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n\nHi A & B,\n\nWe wanted to let you know that 12.50$ of your store credit has expired.\n\n----------\nExpired Credit: 12.50$\n----------\n\nThis credit is no longer available for use. If you have any questions, please contact our support team.\n\nVisit Our Shop:\nhttp://localhost:10013/shop/\n\nView your store credit balance:\nhttp://localhost:10013/my-account/store-credit/\n\n----------\n\nThanks & welcome!\n\nStore & Co Help"
+    },
+    "fixture_order_deleted": true,
+    "fixture_deleted": true,
+    "settings_unchanged": true,
+    "activation_unchanged": true
+}

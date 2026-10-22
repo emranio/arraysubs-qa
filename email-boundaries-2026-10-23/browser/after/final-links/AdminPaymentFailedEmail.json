@@ -1,0 +1,18 @@
+{
+  "links": [
+    {
+      "href": "http://localhost:10013/",
+      "text": "wp-test2"
+    },
+    {
+      "href": "http://localhost:10013/wp-admin/admin.php?page=wc-orders",
+      "text": "#12345"
+    },
+    {
+      "href": "http://localhost:10013/wp-admin/admin.php?page=arraysubs-mainadmin#/subscriptions",
+      "text": "View Subscription"
+    }
+  ],
+  "subject": "[wp-test2] Payment failed for subscription #12345",
+  "text": "\t\n\nwp-test2\n\nSubscription payment failed\n\n\n\nThe automatic renewal payment for subscription #12345 from John Doe has failed.\n\nSubscription #12345\nCustomer\tJohn Doe (customer@example.com)\nProduct\tSample Subscription Product\nOrder\t#12345\nAmount\t29.99$\nStatus\tActive\n\nPlease review the subscription and take appropriate action.\n\nView Subscription\n\n\n\n\nwp-test2\n30 North Gould Street, ste r, 30 North Gould Street, ste r, Sheridan, WY 82801, United States (US)\n\n\t"
+}

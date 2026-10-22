@@ -1,0 +1,16 @@
+{
+  "featureTypeAttributes": [],
+  "links": [
+    {
+      "href": "http://localhost:10013/",
+      "text": "wp-test2"
+    },
+    {
+      "href": "http://localhost:10013/my-account/as-subscriptions/",
+      "text": "View Your Subscription"
+    }
+  ],
+  "selected": "ArraySubs\\Features\\Emails\\Emails\\AutoDowngradeEmail",
+  "subject": "[wp-test2] Your subscription #12345 has been changed to New Plan",
+  "text": "\t\n\nwp-test2\n\nYour subscription plan has changed\n\n\n\nHi John,\n\nYour subscription #12345 has been automatically updated to a new plan.\n\nSubscription #12345\nPrevious Plan\tPrevious Plan\nNew Plan\tNew Plan\nStatus\tActive\nNext Payment\tNovember 22, 2026\n\nYour subscription has been automatically adjusted to keep your access active. No action is needed on your part.\n\nView Your Subscription\n\nYour subscription has been automatically adjusted. You can view your subscription details in your account.\n\n\n\n\nwp-test2\n30 North Gould Street, ste r, 30 North Gould Street, ste r, Sheridan, WY 82801, United States (US)\n\n\t"
+}

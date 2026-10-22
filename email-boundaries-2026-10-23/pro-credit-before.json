@@ -1,0 +1,110 @@
+{
+    "mode": "before",
+    "initial_mailer_loaded": true,
+    "checks": [
+        {
+            "name": "cold raw credit action sends once",
+            "pass": true,
+            "details": {
+                "count": 1
+            }
+        },
+        {
+            "name": "warm raw credit action sends once",
+            "pass": true,
+            "details": {
+                "count": 1
+            }
+        },
+        {
+            "name": "actual queued notification dispatcher sends once",
+            "pass": false,
+            "details": {
+                "count": 0
+            }
+        },
+        {
+            "name": "deferred raw event does not send before worker",
+            "pass": false,
+            "details": {
+                "count": 1,
+                "queue_observed": 1
+            }
+        },
+        {
+            "name": "Added plaintext literal customer name",
+            "pass": false,
+            "details": []
+        },
+        {
+            "name": "Added plaintext contains no HTML markup",
+            "pass": false,
+            "details": []
+        },
+        {
+            "name": "Added plaintext contains no HTML entities",
+            "pass": false,
+            "details": []
+        },
+        {
+            "name": "Used plaintext literal customer name",
+            "pass": false,
+            "details": []
+        },
+        {
+            "name": "Used plaintext contains no HTML markup",
+            "pass": false,
+            "details": []
+        },
+        {
+            "name": "Used plaintext contains no HTML entities",
+            "pass": false,
+            "details": []
+        },
+        {
+            "name": "Expiring plaintext literal customer name",
+            "pass": false,
+            "details": []
+        },
+        {
+            "name": "Expiring plaintext contains no HTML markup",
+            "pass": false,
+            "details": []
+        },
+        {
+            "name": "Expiring plaintext contains no HTML entities",
+            "pass": false,
+            "details": []
+        },
+        {
+            "name": "Expired plaintext literal customer name",
+            "pass": false,
+            "details": []
+        },
+        {
+            "name": "Expired plaintext contains no HTML markup",
+            "pass": false,
+            "details": []
+        },
+        {
+            "name": "Expired plaintext contains no HTML entities",
+            "pass": false,
+            "details": []
+        },
+        {
+            "name": "missing customers produce no mail",
+            "pass": true,
+            "details": []
+        }
+    ],
+    "fixture_user_id": 393,
+    "rendered_plain": {
+        "Added": "=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\nStore credit has been added to your account!\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n\nHi A &amp; B,\n\nGreat news! 12.50&#036; has been added to your store credit balance.\n\n----------\nCredit Added: 12.50&#036;\nNew Balance: 25.00&#036;\nSource: Admin adjustment\n----------\n\nYou can use your store credit for future purchases or let it be applied automatically to your subscription renewals.\n\nView your store credit balance:\nhttp://localhost:10013/my-account/as-store-credit/\n\n----------\n\nYou can use your store credit towards future purchases and subscription renewals.\n\n<p>Store &amp; Co <a href=\"https://example.invalid/help\">Help</a></p>",
+        "Used": "=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\nStore credit applied to your order\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n\nHi A &amp; B,\n\n12.50&#036; from your store credit has been applied to order #0.\n\n----------\nCredit Applied: 12.50&#036;\nRemaining Balance: 0.00&#036;\nOrder: #0\n----------\n\nView order details:\nhttp://localhost:10013/my-account/view-order/\n\n----------\n\nThank you for your purchase!\n\n<p>Store &amp; Co <a href=\"https://example.invalid/help\">Help</a></p>",
+        "Expiring": "=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\nYour store credit is expiring soon!\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n\nHi A &amp; B,\n\nJust a friendly reminder: 12.50&#036; of your store credit will expire in 7 days!\n\n----------\nExpiring Credit: 12.50&#036;\nExpiration Date: October 30, 2026\nDays Remaining: 7 days\n----------\n\nDon&#039;t let your credit go to waste! Use it for your next purchase or it will be applied automatically to your subscription renewal.\n\nShop Now:\nhttp://localhost:10013/shop/\n\nView your store credit balance:\nhttp://localhost:10013/my-account/as-store-credit/\n\n----------\n\nUse your credit before it expires! Shop now or apply it to your subscription renewal.\n\n<p>Store &amp; Co <a href=\"https://example.invalid/help\">Help</a></p>",
+        "Expired": "=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\nYour store credit has expired\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n\nHi A &amp; B,\n\nWe wanted to let you know that 12.50&#036; of your store credit has expired.\n\n----------\nExpired Credit: 12.50&#036;\n----------\n\nThis credit is no longer available for use. If you have any questions, please contact our support team.\n\nVisit Our Shop:\nhttp://localhost:10013/shop/\n\nView your store credit balance:\nhttp://localhost:10013/my-account/as-store-credit/\n\n----------\n\nCredit has expired and is no longer available for use. Visit our shop to explore current offers!\n\n<p>Store &amp; Co <a href=\"https://example.invalid/help\">Help</a></p>"
+    },
+    "fixture_deleted": true,
+    "settings_unchanged": true,
+    "activation_unchanged": true
+}

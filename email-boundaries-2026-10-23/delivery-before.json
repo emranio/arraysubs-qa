@@ -1,0 +1,50 @@
+{
+    "manager_source": "\/Users\/emran\/Local Sites\/wp-test2\/app\/public\/wp-content\/plugins\/arraysubs\/src\/Features\/Emails\/Services\/EmailManager.php",
+    "candidate_templates": false,
+    "checks": [
+        {
+            "check": "Normal core boot registers EmailManager",
+            "passed": true
+        },
+        {
+            "check": "Disposable first customer created",
+            "passed": true
+        },
+        {
+            "check": "Disposable first manual subscription created",
+            "passed": true
+        },
+        {
+            "check": "Disposable second customer created",
+            "passed": true
+        },
+        {
+            "check": "Disposable second manual subscription created",
+            "passed": true
+        },
+        {
+            "check": "Failed mail transport is reported as false",
+            "passed": false
+        }
+    ],
+    "failure": "RuntimeException: Failed mail transport is reported as false",
+    "mail_intercepted_count": 1,
+    "external_mail_sent": 0,
+    "deleted_fixtures": {
+        "users": [
+            398,
+            399
+        ],
+        "product": 19568,
+        "subscriptions": [
+            19570,
+            19575
+        ],
+        "orders": [
+            19574,
+            19579
+        ]
+    },
+    "saved_settings_unchanged": true,
+    "active_plugins_unchanged": true
+}

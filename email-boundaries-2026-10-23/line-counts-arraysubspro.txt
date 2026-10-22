@@ -1,0 +1,13 @@
+     342 arraysubspro/src/Features/StoreCredit/Emails/CreditAddedEmail.php
+     270 arraysubspro/src/Features/StoreCredit/Emails/CreditExpiredEmail.php
+     296 arraysubspro/src/Features/StoreCredit/Emails/CreditExpiringEmail.php
+     316 arraysubspro/src/Features/StoreCredit/Emails/CreditUsedEmail.php
+      78 arraysubspro/src/Features/StoreCredit/templates/emails/credit-added.php
+      72 arraysubspro/src/Features/StoreCredit/templates/emails/credit-expired.php
+      93 arraysubspro/src/Features/StoreCredit/templates/emails/credit-expiring.php
+      79 arraysubspro/src/Features/StoreCredit/templates/emails/credit-used.php
+      55 arraysubspro/src/Features/StoreCredit/templates/emails/plain/credit-added.php
+      57 arraysubspro/src/Features/StoreCredit/templates/emails/plain/credit-expired.php
+      68 arraysubspro/src/Features/StoreCredit/templates/emails/plain/credit-expiring.php
+      53 arraysubspro/src/Features/StoreCredit/templates/emails/plain/credit-used.php
+    1779 total

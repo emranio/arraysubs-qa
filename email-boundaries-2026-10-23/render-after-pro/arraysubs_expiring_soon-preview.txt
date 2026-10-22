@@ -1,0 +1,27 @@
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Your subscription is ending soon
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+Hi John,
+
+Your subscription is scheduled to end in 7 days. A final invoice may be generated before the subscription ends if a final billing cycle is due.
+
+----------
+Subscription #12345
+----------
+
+Product: Sample Subscription Product
+Renewal Amount: 29.99$
+End Date: N/A
+Payment Method: Direct bank transfer
+
+No action is required unless you want to renew, change, or extend the subscription before it ends.
+
+Manage your subscription: http://localhost:10013/my-account/as-subscriptions/
+
+----------
+
+No action is required unless you want to renew, change, or extend the subscription before it ends.
+
+wp-test2
+30 North Gould Street, ste r, 30 North Gould Street, ste r, Sheridan, WY 82801, United States (US)

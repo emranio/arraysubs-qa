@@ -1,0 +1,29 @@
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Your card is expiring soon
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+Hi Alice &amp; QA,
+
+The payment card ending in  that is used for your subscription is expiring on soon.
+
+To ensure uninterrupted service, please update your payment method before the expiration date.
+
+----------
+SUBSCRIPTION DETAILS
+----------
+
+Subscription ID: #19531
+Product: Alice &amp; QA &lt;Library&gt;
+Card Ending In: **** **** **** 
+Card Expires: soon
+
+UPDATE YOUR PAYMENT METHOD:
+http://localhost:10013/my-account/as-subscriptions/
+
+If you do not update your payment method, your next renewal payment may fail and your subscription may be put on hold.
+
+----------
+
+Please update your payment method to avoid renewal interruptions.
+
+wp-test2<br />30 North Gould Street, ste r, 30 North Gould Street, ste r, Sheridan, WY 82801, United States (US)

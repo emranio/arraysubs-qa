@@ -1,0 +1,102 @@
+[
+  {
+    "label": "[ArraySubs] New Subscription",
+    "value": "ArraySubs\\Features\\Emails\\Emails\\NewSubscriptionEmail"
+  },
+  {
+    "label": "[ArraySubs] Renewal Reminder",
+    "value": "ArraySubs\\Features\\Emails\\Emails\\RenewalReminderEmail"
+  },
+  {
+    "label": "[ArraySubs] Renewal Invoice",
+    "value": "ArraySubs\\Features\\Emails\\Emails\\RenewalInvoiceEmail"
+  },
+  {
+    "label": "[ArraySubs] Renewal Payment Successful",
+    "value": "ArraySubs\\Features\\Emails\\Emails\\PaymentSuccessfulEmail"
+  },
+  {
+    "label": "[ArraySubs] Renewal Payment Failed",
+    "value": "ArraySubs\\Features\\Emails\\Emails\\PaymentFailedEmail"
+  },
+  {
+    "label": "[ArraySubs] Subscription On Hold",
+    "value": "ArraySubs\\Features\\Emails\\Emails\\SubscriptionOnHoldEmail"
+  },
+  {
+    "label": "[ArraySubs] Subscription Scheduled to Cancel",
+    "value": "ArraySubs\\Features\\Emails\\Emails\\SubscriptionPendingCancellationEmail"
+  },
+  {
+    "label": "[ArraySubs] Subscription Cancelled",
+    "value": "ArraySubs\\Features\\Emails\\Emails\\SubscriptionCancelledEmail"
+  },
+  {
+    "label": "[ArraySubs] Subscription Expired",
+    "value": "ArraySubs\\Features\\Emails\\Emails\\SubscriptionExpiredEmail"
+  },
+  {
+    "label": "[ArraySubs] Subscription Expiring Soon",
+    "value": "ArraySubs\\Features\\Emails\\Emails\\SubscriptionExpiringSoonEmail"
+  },
+  {
+    "label": "[ArraySubs] Subscription Auto-Downgraded",
+    "value": "ArraySubs\\Features\\Emails\\Emails\\AutoDowngradeEmail"
+  },
+  {
+    "label": "[ArraySubs] Retention Discount Accepted",
+    "value": "ArraySubs\\Features\\Emails\\Emails\\RetentionDiscountAcceptedEmail"
+  },
+  {
+    "label": "[ArraySubs] Subscription Reactivated",
+    "value": "ArraySubs\\Features\\Emails\\Emails\\SubscriptionReactivatedEmail"
+  },
+  {
+    "label": "[ArraySubs] Renewal Skipped",
+    "value": "ArraySubs\\Features\\Emails\\Emails\\SubscriptionSkippedEmail"
+  },
+  {
+    "label": "[ArraySubs] Renewal Skip Removed",
+    "value": "ArraySubs\\Features\\Emails\\Emails\\SkipUndoneEmail"
+  },
+  {
+    "label": "[ArraySubs] Subscription Paused",
+    "value": "ArraySubs\\Features\\Emails\\Emails\\SubscriptionPausedEmail"
+  },
+  {
+    "label": "[ArraySubs] Subscription Resumed",
+    "value": "ArraySubs\\Features\\Emails\\Emails\\SubscriptionResumedEmail"
+  },
+  {
+    "label": "[ArraySubs] Trial Started",
+    "value": "ArraySubs\\Features\\Emails\\Emails\\TrialStartedEmail"
+  },
+  {
+    "label": "[ArraySubs] Trial Converted",
+    "value": "ArraySubs\\Features\\Emails\\Emails\\TrialConvertedEmail"
+  },
+  {
+    "label": "[ArraySubs] Renewal Requires Verification",
+    "value": "ArraySubs\\Features\\Emails\\Emails\\RenewalRequiresVerificationEmail"
+  },
+  {
+    "label": "[ArraySubs] Card Expiring",
+    "value": "ArraySubs\\Features\\Emails\\Emails\\CustomerCardExpiringEmail"
+  },
+  {
+    "label": "[ArraySubs] New Subscription (Admin)",
+    "value": "ArraySubs\\Features\\Emails\\Emails\\AdminNewSubscriptionEmail"
+  },
+  {
+    "label": "[ArraySubs] Payment Failed (Admin)",
+    "value": "ArraySubs\\Features\\Emails\\Emails\\AdminPaymentFailedEmail"
+  },
+  {
+    "label": "[ArraySubs] Subscription Scheduled to Cancel (Admin)",
+    "value": "ArraySubs\\Features\\Emails\\Emails\\AdminSubscriptionPendingCancellationEmail"
+  },
+  {
+    "label": "[ArraySubs] Subscription Cancelled (Admin)",
+    "value": "ArraySubs\\Features\\Emails\\Emails\\AdminSubscriptionCancelledEmail"
+  }
+]

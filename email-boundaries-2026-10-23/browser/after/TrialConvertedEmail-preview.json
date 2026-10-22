@@ -1,0 +1,16 @@
+{
+  "featureTypeAttributes": [],
+  "links": [
+    {
+      "href": "http://localhost:10013/",
+      "text": "wp-test2"
+    },
+    {
+      "href": "http://localhost:10013/my-account/as-subscriptions/",
+      "text": "View Your Subscription"
+    }
+  ],
+  "selected": "ArraySubs\\Features\\Emails\\Emails\\TrialConvertedEmail",
+  "subject": "[wp-test2] Your trial for Sample Subscription Product has converted to a paid subscription",
+  "text": "\t\n\nwp-test2\n\nYour trial has been converted to a paid subscription\n\n\n\nHi John,\n\nGreat news! Your free trial for Sample Subscription Product has ended and your subscription has been successfully converted to a paid subscription.\n\nSubscription Details\nSubscription ID\t#12345\nProduct\tSample Subscription Product\nStatus\tActive\nSubscription Price\t29.99$\nNext Payment Date\tNovember 23, 2026\n\nThank you for continuing with your subscription! We appreciate your business.\n\nView Your Subscription\n\nThank you for continuing with your subscription! Your payment method has been charged and your subscription is now active.\n\n\n\n\nwp-test2\n30 North Gould Street, ste r, 30 North Gould Street, ste r, Sheridan, WY 82801, United States (US)\n\n\t"
+}

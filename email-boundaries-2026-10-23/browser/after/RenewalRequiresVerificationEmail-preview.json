@@ -1,0 +1,16 @@
+{
+  "featureTypeAttributes": [],
+  "links": [
+    {
+      "href": "http://localhost:10013/",
+      "text": "wp-test2"
+    },
+    {
+      "href": "http://localhost:10013/checkout-2/",
+      "text": "Complete verification"
+    }
+  ],
+  "selected": "ArraySubs\\Features\\Emails\\Emails\\RenewalRequiresVerificationEmail",
+  "subject": "[wp-test2] Verify your subscription renewal #12345",
+  "text": "\t\n\nwp-test2\n\nYour renewal needs verification\n\n\n\nHi John,\n\nYour subscription renewal payment needs an extra verification step before it can be completed.\n\nRenewal details\nSubscription ID\t#12345\nRenewal Order\t#67890\nPayment amount\t29.99$\nGrace period\tOctober 26, 2026 3:31 am\n\nComplete verification\n\nIf verification is not completed, the renewal order will remain unpaid and the subscription will continue through the normal grace-period process.\n\nComplete verification as soon as possible to keep your subscription active.\n\n\n\n\nwp-test2\n30 North Gould Street, ste r, 30 North Gould Street, ste r, Sheridan, WY 82801, United States (US)\n\n\t"
+}

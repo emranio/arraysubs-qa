@@ -1,0 +1,19 @@
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Subscription payment failed
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+The automatic renewal payment for subscription #0 from John Doe has failed.
+
+----------
+Subscription #0
+----------
+
+Customer: John Doe (customer@example.com)
+Product: N/A
+Status: Active
+
+Please review the subscription and take appropriate action.
+
+View Subscription: http://localhost:10013/wp-admin/admin.php?page=arraysubs#/subscriptions/0
+
+wp-test2<br />30 North Gould Street, ste r, 30 North Gould Street, ste r, Sheridan, WY 82801, United States (US)

@@ -1,0 +1,16 @@
+{
+  "featureTypeAttributes": [],
+  "links": [
+    {
+      "href": "http://localhost:10013/",
+      "text": "wp-test2"
+    },
+    {
+      "href": "http://localhost:10013/my-account/as-store-credit/",
+      "text": "View your store credit balance"
+    }
+  ],
+  "selected": "ArraySubsPro\\Features\\StoreCredit\\Emails\\CreditAddedEmail",
+  "subject": "[wp-test2] Store credit added to your account",
+  "text": "\t\n\nwp-test2\n\nStore credit has been added to your account!\n\n\n\nHi there,\n\nGreat news! 0.00$ has been added to your store credit balance.\n\nCredit Added\t0.00$\nNew Balance\t0.00$\nSource\t\n\nYou can use your store credit for future purchases or let it be applied automatically to your subscription renewals.\n\nView your store credit balance\n\nYou can use your store credit towards future purchases and subscription renewals.\n\n\n\n\nwp-test2\n30 North Gould Street, ste r, 30 North Gould Street, ste r, Sheridan, WY 82801, United States (US)\n\n\t"
+}

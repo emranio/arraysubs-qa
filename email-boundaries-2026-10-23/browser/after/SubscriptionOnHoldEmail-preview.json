@@ -1,0 +1,16 @@
+{
+  "featureTypeAttributes": [],
+  "links": [
+    {
+      "href": "http://localhost:10013/",
+      "text": "wp-test2"
+    },
+    {
+      "href": "http://localhost:10013/my-account/as-subscriptions/",
+      "text": "Manage your subscription"
+    }
+  ],
+  "selected": "ArraySubs\\Features\\Emails\\Emails\\SubscriptionOnHoldEmail",
+  "subject": "[wp-test2] Your subscription #12345 is on hold",
+  "text": "\t\n\nwp-test2\n\nYour subscription is on hold\n\n\n\nHi John,\n\nYour subscription #12345 has been put on hold.\n\nSubscription #12345\nProduct\tSample Subscription Product\nStatus\tOn Hold\n\nThis may be due to a payment issue. Please log in to your account and update your payment method to reactivate your subscription.\n\nManage your subscription\n\nYour subscription has been put on hold. This may be due to a payment issue. Please update your payment method to reactivate your subscription.\n\n\n\n\nwp-test2\n30 North Gould Street, ste r, 30 North Gould Street, ste r, Sheridan, WY 82801, United States (US)\n\n\t"
+}

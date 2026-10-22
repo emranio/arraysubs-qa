@@ -1,0 +1,14 @@
+{
+  "links": [
+    {
+      "href": "http://localhost:10013/",
+      "text": "wp-test2"
+    },
+    {
+      "href": "http://localhost:10013/my-account/as-subscriptions/",
+      "text": "View your subscription"
+    }
+  ],
+  "subject": "[wp-test2] Your subscription #12345 is active",
+  "text": "\t\n\nwp-test2\n\nYour subscription is now active!\n\n\n\nHi John,\n\nGreat news! Your subscription is now active. Here are the details:\n\nSubscription #12345\nProduct\tSample Subscription Product\nPrice\t29.99$ / every month\nStart Date\tOctober 23, 2026\nNext Payment\tNovember 22, 2026\n\nView your subscription\n\nThank you for subscribing! If you have any questions, please contact us.\n\n\n\n\nwp-test2\n30 North Gould Street, ste r, 30 North Gould Street, ste r, Sheridan, WY 82801, United States (US)\n\n\t"
+}

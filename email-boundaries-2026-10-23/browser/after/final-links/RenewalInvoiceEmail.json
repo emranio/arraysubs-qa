@@ -1,0 +1,14 @@
+{
+  "links": [
+    {
+      "href": "http://localhost:10013/",
+      "text": "wp-test2"
+    },
+    {
+      "href": "http://localhost:10013/checkout-2/",
+      "text": "Pay for this order"
+    }
+  ],
+  "subject": "[wp-test2] Invoice for subscription #12345",
+  "text": "\t\n\nwp-test2\n\nYour renewal order\n\n\n\nHi John,\n\nA renewal order has been created for your subscription #12345.\n\nOrder #12345\nSubscription\t#12345\nProduct\tSample Subscription Product\nAmount\t29.99$\nDue Date\tNovember 22, 2026\n\nPay for this order\n\nPlease pay this renewal invoice before the due date to keep your subscription active.\n\n\n\n\nwp-test2\n30 North Gould Street, ste r, 30 North Gould Street, ste r, Sheridan, WY 82801, United States (US)\n\n\t"
+}

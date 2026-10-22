@@ -1,0 +1,16 @@
+{
+  "featureTypeAttributes": [],
+  "links": [
+    {
+      "href": "http://localhost:10013/",
+      "text": "wp-test2"
+    },
+    {
+      "href": "http://localhost:10013/my-account/as-subscriptions/",
+      "text": "View your subscription"
+    }
+  ],
+  "selected": "ArraySubs\\Features\\Emails\\Emails\\PaymentSuccessfulEmail",
+  "subject": "[wp-test2] Payment received for subscription #12345",
+  "text": "\t\n\nwp-test2\n\nPayment received\n\n\n\nHi John,\n\nWe have received your payment for subscription #12345. Your subscription has been renewed.\n\nSubscription #12345\nProduct\tSample Subscription Product\nAmount Paid\t29.99$\nPayment Method\tDirect bank transfer\nNext Payment Date\tNovember 22, 2026\n\nView your subscription\n\nThank you for your continued subscription!\n\n\n\n\nwp-test2\n30 North Gould Street, ste r, 30 North Gould Street, ste r, Sheridan, WY 82801, United States (US)\n\n\t"
+}

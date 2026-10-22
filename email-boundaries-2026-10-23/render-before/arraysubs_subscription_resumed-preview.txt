@@ -1,0 +1,26 @@
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Your subscription has resumed
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+Hi John,
+
+Your Sample Subscription Product subscription has successfully resumed and renewal billing is active again.
+
+----------
+Subscription #0
+----------
+
+Product: Sample Subscription Product
+Status: Active
+Time Paused: 30 days
+Next Payment: November 23, 2026
+
+No further action is needed. You can review the current renewal schedule from your account.
+
+Manage subscription: http://localhost:10013/my-account/as-subscriptions/
+
+----------
+
+Renewal billing is active again. Your next payment will be collected on the updated date shown above.
+
+wp-test2<br />30 North Gould Street, ste r, 30 North Gould Street, ste r, Sheridan, WY 82801, United States (US)

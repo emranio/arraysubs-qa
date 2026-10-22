@@ -1,0 +1,18 @@
+{
+  "links": [
+    {
+      "href": "http://localhost:10013/",
+      "text": "wp-test2"
+    },
+    {
+      "href": "http://localhost:10013/my-account/orders/",
+      "text": "#12345"
+    },
+    {
+      "href": "http://localhost:10013/my-account/orders/",
+      "text": "View order details"
+    }
+  ],
+  "subject": "[wp-test2] Store credit used for Order #12345",
+  "text": "\t\n\nwp-test2\n\nStore credit applied to your order\n\n\n\nHi John Doe,\n\n20.00$ from your store credit has been applied to order #12345.\n\nCredit Applied\t20.00$\nRemaining Balance\t30.00$\nOrder\t#12345\n\nView order details\n\nThank you for your purchase!\n\n\n\n\nwp-test2\n30 North Gould Street, ste r, 30 North Gould Street, ste r, Sheridan, WY 82801, United States (US)\n\n\t"
+}

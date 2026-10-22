@@ -1,0 +1,20 @@
+{
+  "featureTypeAttributes": [],
+  "links": [
+    {
+      "href": "http://localhost:10013/",
+      "text": "wp-test2"
+    },
+    {
+      "href": "http://localhost:10013/checkout-2/",
+      "text": "Pay Now"
+    },
+    {
+      "href": "http://localhost:10013/my-account/as-subscriptions/",
+      "text": "Manage your subscription"
+    }
+  ],
+  "selected": "ArraySubs\\Features\\Emails\\Emails\\PaymentFailedEmail",
+  "subject": "[wp-test2] Payment failed for subscription #12345",
+  "text": "\t\n\nwp-test2\n\nPayment failed\n\n\n\nHi John,\n\nUnfortunately, the renewal payment for your subscription #12345 could not be completed.\n\nSubscription #12345\nProduct\tSample Subscription Product\nAmount Due\t29.99$\nStatus\tActive\n\nPlease review the order and complete payment to avoid service interruption.\n\nPay Now\n\nManage your subscription\n\nPlease update your payment method to avoid service interruption.\n\n\n\n\nwp-test2\n30 North Gould Street, ste r, 30 North Gould Street, ste r, Sheridan, WY 82801, United States (US)\n\n\t"
+}

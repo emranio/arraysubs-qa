@@ -1,0 +1,16 @@
+{
+  "featureTypeAttributes": [],
+  "links": [
+    {
+      "href": "http://localhost:10013/",
+      "text": "wp-test2"
+    },
+    {
+      "href": "http://localhost:10013/shop/",
+      "text": "Subscribe Again"
+    }
+  ],
+  "selected": "ArraySubs\\Features\\Emails\\Emails\\SubscriptionExpiredEmail",
+  "subject": "[wp-test2] Your subscription #12345 has expired",
+  "text": "\t\n\nwp-test2\n\nYour subscription has expired\n\n\n\nHi John,\n\nYour subscription #0 has expired.\n\nSubscription #0\nProduct\tN/A\nStatus\tExpired\n\nYour subscription term has ended. We hope you enjoyed our service!\n\nIf you would like to continue enjoying our services, visit our store to subscribe again.\n\nSubscribe Again\n\nYour subscription term has ended. Visit our store to subscribe again and continue enjoying our services.\n\n\n\n\nwp-test2\n30 North Gould Street, ste r, 30 North Gould Street, ste r, Sheridan, WY 82801, United States (US)\n\n\t"
+}

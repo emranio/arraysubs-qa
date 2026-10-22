@@ -1,0 +1,24 @@
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Your renewal order
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+Hi Alice &amp; QA,
+
+A renewal order has been created for your subscription #19531.
+
+----------
+Order #19541
+----------
+
+Subscription: #19531
+Product: Alice &amp; QA &lt;Library&gt;
+Amount: 31.25&pound;
+Due Date: November 22, 2026 3:22 am
+
+Pay for this order: http://localhost:10013/checkout-2/order-pay/19541/?pay_for_order=true&#038;key=wc_order_E9kfpHAP8xhlq
+
+----------
+
+Please pay this renewal invoice before the due date to keep your subscription active.
+
+wp-test2<br />30 North Gould Street, ste r, 30 North Gould Street, ste r, Sheridan, WY 82801, United States (US)

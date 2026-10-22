@@ -1,0 +1,28 @@
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Your subscription is paused
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+Hi Alice & QA,
+
+Your Alice & QA <Library> subscription is now paused. Renewal billing is suspended during the pause.
+
+----------
+Subscription #19818
+----------
+
+Product: Alice & QA <Library>
+Status: Paused
+Pause Duration: Indefinite
+Scheduled Resume: Indefinite
+Reason: Not specified
+
+You can review the pause or resume your subscription sooner from your account.
+
+Manage subscription: http://localhost:10013/my-account/as-subscriptions/
+
+----------
+
+Renewal billing is suspended while your subscription is paused. It will resume automatically on the date shown above unless you resume it sooner.
+
+wp-test2
+30 North Gould Street, ste r, 30 North Gould Street, ste r, Sheridan, WY 82801, United States (US)

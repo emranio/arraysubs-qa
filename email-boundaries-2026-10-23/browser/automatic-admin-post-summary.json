@@ -1,0 +1,95 @@
+[
+  {
+    "requestId": "38833.557",
+    "url": "http://localhost:10013/wp-admin/admin-ajax.php",
+    "status": 200,
+    "body": {
+      "action": [
+        "get-community-events"
+      ],
+      "top_keys": [
+        "_wpnonce",
+        "timezone",
+        "action"
+      ]
+    }
+  },
+  {
+    "requestId": "38833.1790",
+    "url": "http://localhost:10013/wp-admin/admin-ajax.php",
+    "status": 200,
+    "body": {
+      "action": [
+        "heartbeat"
+      ],
+      "top_keys": [
+        "interval",
+        "_nonce",
+        "action",
+        "screen_id",
+        "has_focus"
+      ]
+    }
+  },
+  {
+    "requestId": "38833.1849",
+    "url": "http://localhost:10013/wp-admin/admin-ajax.php",
+    "status": 200,
+    "body": {
+      "action": [
+        "heartbeat"
+      ],
+      "top_keys": [
+        "interval",
+        "_nonce",
+        "action",
+        "screen_id",
+        "has_focus"
+      ]
+    }
+  },
+  {
+    "requestId": "38833.2470",
+    "url": "http://localhost:10013/wp-json/wc-admin/options?_locale=user",
+    "status": 200,
+    "body": {
+      "woocommerce_clear_ces_tracks_queue_for_page": {
+        "pagenow": "woocommerce_page_wc-settings",
+        "adminpage": "woocommerce_page_wc-settings"
+      }
+    }
+  },
+  {
+    "requestId": "38833.2484",
+    "url": "http://localhost:10013/wp-json/wc-admin/options?_locale=user",
+    "status": 200,
+    "body": {
+      "woocommerce_clear_ces_tracks_queue_for_page": {
+        "pagenow": "woocommerce_page_wc-settings",
+        "adminpage": "woocommerce_page_wc-settings"
+      }
+    }
+  },
+  {
+    "requestId": "38833.3741",
+    "url": "http://localhost:10013/wp-json/wc-admin/options?_locale=user",
+    "status": 200,
+    "body": {
+      "woocommerce_clear_ces_tracks_queue_for_page": {
+        "pagenow": "woocommerce_page_wc-settings",
+        "adminpage": "woocommerce_page_wc-settings"
+      }
+    }
+  },
+  {
+    "requestId": "38833.3761",
+    "url": "http://localhost:10013/wp-json/wc-admin/options?_locale=user",
+    "status": 200,
+    "body": {
+      "woocommerce_clear_ces_tracks_queue_for_page": {
+        "pagenow": "woocommerce_page_wc-settings",
+        "adminpage": "woocommerce_page_wc-settings"
+      }
+    }
+  }
+]

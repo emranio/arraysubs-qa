@@ -1,0 +1,24 @@
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Payment failed
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+Hi John,
+
+Unfortunately, the renewal payment for your subscription #0 could not be completed.
+
+----------
+Subscription #0
+----------
+
+Product: N/A
+Status: Active
+
+Please review the order and complete payment to avoid service interruption.
+
+Manage your subscription: http://localhost:10013/my-account/as-subscriptions/
+
+----------
+
+Please update your payment method to avoid service interruption.
+
+wp-test2<br />30 North Gould Street, ste r, 30 North Gould Street, ste r, Sheridan, WY 82801, United States (US)

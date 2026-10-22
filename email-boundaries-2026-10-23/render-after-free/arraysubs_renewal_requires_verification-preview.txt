@@ -1,0 +1,24 @@
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Your renewal needs verification
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+Hi John,
+
+Your subscription renewal payment needs an extra verification step before it can be completed.
+
+Subscription ID: #12345
+Renewal Order: #67890
+Payment amount: 29.99$
+Grace period: October 26, 2026 3:34 am
+
+Complete verification:
+http://localhost:10013/checkout-2/
+
+If verification is not completed, the renewal order will remain unpaid and the subscription will continue through the normal grace-period process.
+
+----------
+
+Complete verification as soon as possible to keep your subscription active.
+
+wp-test2
+30 North Gould Street, ste r, 30 North Gould Street, ste r, Sheridan, WY 82801, United States (US)

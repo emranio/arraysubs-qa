@@ -1,0 +1,25 @@
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Your subscription is scheduled to cancel
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+Hi Alice & QA,
+
+Your subscription #19819 is scheduled to cancel at the end of the current billing period. You will continue to have access until then, after which no further payments will be charged.
+
+----------
+Subscription #19819
+----------
+
+Product: Alice & QA <Library>
+Status: Scheduled to cancel
+
+Changed your mind? You can undo the scheduled cancellation from your account at any time before the cancellation date.
+
+Manage subscription: http://localhost:10013/my-account/as-view-subscription/19819/
+
+----------
+
+You will continue to have access until the cancellation date. If you change your mind, you can undo the scheduled cancellation from your account.
+
+wp-test2
+30 North Gould Street, ste r, 30 North Gould Street, ste r, Sheridan, WY 82801, United States (US)

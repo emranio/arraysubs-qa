@@ -1,0 +1,16 @@
+{
+  "featureTypeAttributes": [],
+  "links": [
+    {
+      "href": "http://localhost:10013/",
+      "text": "wp-test2"
+    },
+    {
+      "href": "http://localhost:10013/shop/",
+      "text": "Browse our products"
+    }
+  ],
+  "selected": "ArraySubs\\Features\\Emails\\Emails\\SubscriptionCancelledEmail",
+  "subject": "[wp-test2] Your subscription #12345 has been cancelled",
+  "text": "\t\n\nwp-test2\n\nYour subscription has been cancelled\n\n\n\nHi John,\n\nYour subscription #12345 has been cancelled.\n\nSubscription #12345\nProduct\tSample Subscription Product\nStatus\tCancelled\n\nYour access to the subscription benefits has ended. If you change your mind, you can always subscribe again.\n\nBrowse our products\n\nWe are sorry to see you go. If you change your mind, you can always subscribe again.\n\n\n\n\nwp-test2\n30 North Gould Street, ste r, 30 North Gould Street, ste r, Sheridan, WY 82801, United States (US)\n\n\t"
+}

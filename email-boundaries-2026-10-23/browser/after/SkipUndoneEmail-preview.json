@@ -1,0 +1,16 @@
+{
+  "featureTypeAttributes": [],
+  "links": [
+    {
+      "href": "http://localhost:10013/",
+      "text": "wp-test2"
+    },
+    {
+      "href": "http://localhost:10013/my-account/as-subscriptions/",
+      "text": "Manage subscription"
+    }
+  ],
+  "selected": "ArraySubs\\Features\\Emails\\Emails\\SkipUndoneEmail",
+  "subject": "[wp-test2] Renewal schedule restored for Sample Subscription Product",
+  "text": "\t\n\nwp-test2\n\nYour regular renewal schedule is restored\n\n\n\nHi John,\n\nThe skip for 1 renewal cycle of your Sample Subscription Product subscription has been removed.\n\nSubscription #12345\nProduct\tSample Subscription Product\nRenewal Cycles Restored\t1\nNext Payment\tNovember 23, 2026\n\nRenewal billing will continue on the restored schedule.\n\nManage subscription\n\nYour subscription is back on its regular billing schedule. The next payment will be collected on the restored date shown above.\n\n\n\n\nwp-test2\n30 North Gould Street, ste r, 30 North Gould Street, ste r, Sheridan, WY 82801, United States (US)\n\n\t"
+}

@@ -1,0 +1,291 @@
+{
+    "checks": [
+        {
+            "check": "Pro remains active while only this request disables modules",
+            "passed": true
+        },
+        {
+            "check": "Request-local module filter is applied before provider boot",
+            "passed": true
+        },
+        {
+            "check": "Both premium providers boot dormant",
+            "passed": true
+        },
+        {
+            "check": "All 25 core emails register with premium modules disabled",
+            "passed": true
+        },
+        {
+            "check": "All four Pro credit email classes stay unregistered",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_customer_credit_added is absent from transactional email registration",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_customer_credit_added notification has no email callback",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_subscription_credit_added is absent from transactional email registration",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_subscription_credit_added notification has no email callback",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_credits_applied_to_order is absent from transactional email registration",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_credits_applied_to_order notification has no email callback",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_credit_expiring_soon is absent from transactional email registration",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_credit_expiring_soon notification has no email callback",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_credit_expired is absent from transactional email registration",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_credit_expired notification has no email callback",
+            "passed": true
+        },
+        {
+            "check": "Core retention email remains registered while premium offers are unavailable",
+            "passed": true
+        },
+        {
+            "check": "Premium cancellation configuration and offer endpoints are absent",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_new_subscription html renders with modules disabled",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_new_subscription plain renders with modules disabled",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_renewal_reminder html renders with modules disabled",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_renewal_reminder plain renders with modules disabled",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_renewal_invoice html renders with modules disabled",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_renewal_invoice plain renders with modules disabled",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_payment_successful html renders with modules disabled",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_payment_successful plain renders with modules disabled",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_payment_failed html renders with modules disabled",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_payment_failed plain renders with modules disabled",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_subscription_on_hold html renders with modules disabled",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_subscription_on_hold plain renders with modules disabled",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_subscription_pending_cancellation html renders with modules disabled",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_subscription_pending_cancellation plain renders with modules disabled",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_subscription_cancelled html renders with modules disabled",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_subscription_cancelled plain renders with modules disabled",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_subscription_expired html renders with modules disabled",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_subscription_expired plain renders with modules disabled",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_expiring_soon html renders with modules disabled",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_expiring_soon plain renders with modules disabled",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_auto_downgrade html renders with modules disabled",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_auto_downgrade plain renders with modules disabled",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_retention_discount_accepted html renders with modules disabled",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_retention_discount_accepted plain renders with modules disabled",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_subscription_reactivated html renders with modules disabled",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_subscription_reactivated plain renders with modules disabled",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_subscription_skipped html renders with modules disabled",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_subscription_skipped plain renders with modules disabled",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_skip_undone html renders with modules disabled",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_skip_undone plain renders with modules disabled",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_subscription_paused html renders with modules disabled",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_subscription_paused plain renders with modules disabled",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_subscription_resumed html renders with modules disabled",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_subscription_resumed plain renders with modules disabled",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_trial_started html renders with modules disabled",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_trial_started plain renders with modules disabled",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_trial_converted html renders with modules disabled",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_trial_converted plain renders with modules disabled",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_renewal_requires_verification html renders with modules disabled",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_renewal_requires_verification plain renders with modules disabled",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_card_expiring html renders with modules disabled",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_card_expiring plain renders with modules disabled",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_admin_new_subscription html renders with modules disabled",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_admin_new_subscription plain renders with modules disabled",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_admin_payment_failed html renders with modules disabled",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_admin_payment_failed plain renders with modules disabled",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_admin_subscription_pending_cancellation html renders with modules disabled",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_admin_subscription_pending_cancellation plain renders with modules disabled",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_admin_subscription_cancelled html renders with modules disabled",
+            "passed": true
+        },
+        {
+            "check": "arraysubs_admin_subscription_cancelled plain renders with modules disabled",
+            "passed": true
+        },
+        {
+            "check": "Module-off email render has no PHP warning or notice",
+            "passed": true
+        },
+        {
+            "check": "Inventory and preview rendering trigger no mail",
+            "passed": true
+        },
+        {
+            "check": "No module-save lifecycle action is simulated",
+            "passed": true
+        }
+    ],
+    "failure": null,
+    "warnings": [],
+    "mail_intercepted_count": 0,
+    "external_mail_sent": 0,
+    "fixtures": [],
+    "saved_settings_unchanged": true,
+    "active_plugins_unchanged": true
+}

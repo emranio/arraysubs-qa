@@ -387,3 +387,32 @@
 {"timestamp":"2026-10-23T02:46:25.975997+06:00","action":"edit","task_id":86,"detail":"Verify My Account and storefront Free/Pro endpoint boundaries"}
 {"timestamp":"2026-10-23T02:46:25.976098+06:00","action":"release","task_id":86,"detail":"burnside-chartula"}
 {"timestamp":"2026-10-23T02:46:25.990523+06:00","action":"move","task_id":86,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-10-23T03:16:48.445463+06:00","action":"create","task_id":91,"detail":"Verify subscription and credit email Free Pro boundaries"}
+{"timestamp":"2026-10-23T03:18:51.360689+06:00","action":"create","task_id":92,"detail":"Email delivery tracking suppresses retries and admin links target obsolete routes"}
+{"timestamp":"2026-10-23T03:22:10.036756+06:00","action":"create","task_id":93,"detail":"Store credit emails bypass Woo deferred delivery and render HTML in plain text"}
+{"timestamp":"2026-10-23T03:22:46.358267+06:00","action":"edit","task_id":91,"detail":"Verify subscription and credit email Free Pro boundaries"}
+{"timestamp":"2026-10-23T03:23:21.262433+06:00","action":"edit","task_id":93,"detail":"Store credit emails bypass Woo deferred delivery and render HTML in plain text"}
+{"timestamp":"2026-10-23T03:24:40.500434+06:00","action":"edit","task_id":92,"detail":"Email delivery tracking suppresses retries and admin links target obsolete routes"}
+{"timestamp":"2026-10-23T03:25:22.106308+06:00","action":"edit","task_id":92,"detail":"Email delivery tracking suppresses retries and admin links target obsolete routes"}
+{"timestamp":"2026-10-23T03:26:12.044627+06:00","action":"edit","task_id":93,"detail":"Store credit emails bypass Woo deferred delivery and render HTML in plain text"}
+{"timestamp":"2026-10-23T03:26:49.77282+06:00","action":"edit","task_id":92,"detail":"Email delivery tracking suppresses retries and admin links target obsolete routes"}
+{"timestamp":"2026-10-23T03:30:06.432415+06:00","action":"edit","task_id":93,"detail":"Store credit emails bypass Woo deferred delivery and render HTML in plain text"}
+{"timestamp":"2026-10-23T03:33:24.638884+06:00","action":"edit","task_id":93,"detail":"Store credit emails bypass Woo deferred delivery and render HTML in plain text"}
+{"timestamp":"2026-10-23T03:33:33.521381+06:00","action":"edit","task_id":92,"detail":"Email delivery tracking suppresses retries and admin links target obsolete routes"}
+{"timestamp":"2026-10-23T03:34:14.347982+06:00","action":"edit","task_id":93,"detail":"Store credit emails bypass Woo deferred delivery and render HTML in plain text"}
+{"timestamp":"2026-10-23T03:38:50.787914+06:00","action":"edit","task_id":92,"detail":"Email delivery tracking suppresses retries and admin links target obsolete routes"}
+{"timestamp":"2026-10-23T03:38:50.78921+06:00","action":"release","task_id":92,"detail":"cowman-soho"}
+{"timestamp":"2026-10-23T03:38:53.10165+06:00","action":"edit","task_id":93,"detail":"Store credit emails bypass Woo deferred delivery and render HTML in plain text"}
+{"timestamp":"2026-10-23T03:38:53.164533+06:00","action":"move","task_id":93,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-10-23T03:38:53.225784+06:00","action":"edit","task_id":93,"detail":"Store credit emails bypass Woo deferred delivery and render HTML in plain text"}
+{"timestamp":"2026-10-23T03:38:53.225934+06:00","action":"release","task_id":93,"detail":"bang-sural"}
+{"timestamp":"2026-10-23T03:39:42.192189+06:00","action":"edit","task_id":91,"detail":"Verify subscription and credit email Free Pro boundaries"}
+{"timestamp":"2026-10-23T03:39:42.216342+06:00","action":"edit","task_id":91,"detail":"Verify subscription and credit email Free Pro boundaries"}
+{"timestamp":"2026-10-23T03:39:42.216601+06:00","action":"release","task_id":91,"detail":"burnside-chartula"}
+{"timestamp":"2026-10-23T03:39:42.235803+06:00","action":"move","task_id":91,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-10-23T03:40:45.098293+06:00","action":"edit","task_id":91,"detail":"Verify subscription and credit email Free Pro boundaries"}
+{"timestamp":"2026-10-23T03:40:45.099949+06:00","action":"claim","task_id":91,"detail":"burnside-chartula"}
+{"timestamp":"2026-10-23T03:44:18.39065+06:00","action":"edit","task_id":91,"detail":"Verify subscription and credit email Free Pro boundaries"}
+{"timestamp":"2026-10-23T03:44:18.424373+06:00","action":"edit","task_id":91,"detail":"Verify subscription and credit email Free Pro boundaries"}
+{"timestamp":"2026-10-23T03:44:18.424556+06:00","action":"release","task_id":91,"detail":"burnside-chartula"}
+{"timestamp":"2026-10-23T03:44:18.448582+06:00","action":"move","task_id":91,"detail":"in-progress -\u003e closed"}

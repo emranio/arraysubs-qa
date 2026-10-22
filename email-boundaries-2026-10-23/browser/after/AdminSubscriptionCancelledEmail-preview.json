@@ -1,0 +1,16 @@
+{
+  "featureTypeAttributes": [],
+  "links": [
+    {
+      "href": "http://localhost:10013/",
+      "text": "wp-test2"
+    },
+    {
+      "href": "http://localhost:10013/wp-admin/admin.php?page=arraysubs-mainadmin#/subscriptions/detail/0",
+      "text": "View Subscription"
+    }
+  ],
+  "selected": "ArraySubs\\Features\\Emails\\Emails\\AdminSubscriptionCancelledEmail",
+  "subject": "[wp-test2] Subscription #12345 cancelled by Customer (John Doe)",
+  "text": "\t\n\nwp-test2\n\nSubscription cancelled\n\n\n\nSubscription #12345 for John Doe has been cancelled by Customer (John Doe).\n\nSubscription #12345\nCustomer\tJohn Doe (customer@example.com)\nProduct\tSample Subscription Product\nStatus\tCancelled\n\nView Subscription\n\n\n\n\nwp-test2\n30 North Gould Street, ste r, 30 North Gould Street, ste r, Sheridan, WY 82801, United States (US)\n\n\t"
+}

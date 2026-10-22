@@ -1,0 +1,126 @@
+{
+    "source": "/tmp/arraysubs-credit-emails",
+    "checks": [
+        {
+            "name": "Added body uses GBP source currency",
+            "pass": true,
+            "details": {
+                "expected": "12.50\u00a3"
+            }
+        },
+        {
+            "name": "Added placeholders use GBP source currency",
+            "pass": true,
+            "details": {
+                "actual": "12.50\u00a3",
+                "expected": "12.50\u00a3"
+            }
+        },
+        {
+            "name": "customer-only next trigger resets currency to store currency",
+            "pass": true,
+            "details": []
+        },
+        {
+            "name": "Used body uses GBP source currency",
+            "pass": true,
+            "details": {
+                "expected": "12.50\u00a3"
+            }
+        },
+        {
+            "name": "Used placeholders use GBP source currency",
+            "pass": true,
+            "details": {
+                "actual": "12.50\u00a3",
+                "expected": "12.50\u00a3"
+            }
+        },
+        {
+            "name": "foreign-currency remaining balance excludes customer store currency",
+            "pass": true,
+            "details": {
+                "expected": "7.00\u00a3",
+                "customer_store_balance": 5,
+                "subscription_GBP_balance": 7
+            }
+        },
+        {
+            "name": "Expiring body uses GBP source currency",
+            "pass": true,
+            "details": {
+                "expected": "12.50\u00a3"
+            }
+        },
+        {
+            "name": "Expiring placeholders use GBP source currency",
+            "pass": true,
+            "details": {
+                "actual": "12.50\u00a3",
+                "expected": "12.50\u00a3"
+            }
+        },
+        {
+            "name": "Expired body uses GBP source currency",
+            "pass": true,
+            "details": {
+                "expected": "12.50\u00a3"
+            }
+        },
+        {
+            "name": "Expired placeholders use GBP source currency",
+            "pass": true,
+            "details": {
+                "actual": "12.50\u00a3",
+                "expected": "12.50\u00a3"
+            }
+        },
+        {
+            "name": "email rendering leaves own balances unchanged",
+            "pass": true,
+            "details": []
+        },
+        {
+            "name": "same-currency customer and owned subscription balances still combine",
+            "pass": true,
+            "details": []
+        },
+        {
+            "name": "different-currency subscription balance is excluded",
+            "pass": true,
+            "details": []
+        },
+        {
+            "name": "different-owner subscription balance is excluded",
+            "pass": true,
+            "details": []
+        },
+        {
+            "name": "real zero foreign balance remains zero",
+            "pass": true,
+            "details": []
+        },
+        {
+            "name": "expired credit can use surviving subscription currency when log is missing",
+            "pass": true,
+            "details": []
+        }
+    ],
+    "fixtures": {
+        "customer": 425,
+        "subscription": 19777,
+        "draft_credit_log": 19780,
+        "pending_order": 19781,
+        "store_currency": "USD"
+    },
+    "plain": {
+        "Added": "=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\nStore credit has been added to your account!\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n\nHi QA93 Currency,\n\nGreat news! 12.50\u00a3 has been added to your store credit balance.\n\n----------\nCredit Added: 12.50\u00a3\nNew Balance: 7.00\u00a3\nSource: Admin adjustment\n----------\n\nYou can use your store credit for future purchases or let it be applied automatically to your subscription renewals.\n\nView your store credit balance:\nhttp://localhost:10013/my-account/store-credit/\n\n----------\n\nYou can use your store credit towards future purchases and subscription renewals.\n\nwp-test2\n30 North Gould Street, ste r, 30 North Gould Street, ste r, Sheridan, WY 82801, United States (US)",
+        "Used": "=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\nStore credit applied to your order\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n\nHi QA93 Currency,\n\n12.50\u00a3 from your store credit has been applied to order #19781.\n\n----------\nCredit Applied: 12.50\u00a3\nRemaining Balance: 7.00\u00a3\nOrder: #19781\n----------\n\nView order details:\nhttp://localhost:10013/my-account/view-order/19781/\n\n----------\n\nThank you for your purchase!\n\nwp-test2\n30 North Gould Street, ste r, 30 North Gould Street, ste r, Sheridan, WY 82801, United States (US)",
+        "Expiring": "=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\nYour store credit is expiring soon!\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n\nHi QA93 Currency,\n\nJust a friendly reminder: 12.50\u00a3 of your store credit will expire in 7 days!\n\n----------\nExpiring Credit: 12.50\u00a3\nExpiration Date: October 30, 2026\nDays Remaining: 7 days\n----------\n\nDon't let your credit go to waste! Use it for your next purchase or it will be applied automatically to your subscription renewal.\n\nShop Now:\nhttp://localhost:10013/shop/\n\nView your store credit balance:\nhttp://localhost:10013/my-account/store-credit/\n\n----------\n\nUse your credit before it expires! Shop now or apply it to your subscription renewal.\n\nwp-test2\n30 North Gould Street, ste r, 30 North Gould Street, ste r, Sheridan, WY 82801, United States (US)",
+        "Expired": "=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\nYour store credit has expired\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n\nHi QA93 Currency,\n\nWe wanted to let you know that 12.50\u00a3 of your store credit has expired.\n\n----------\nExpired Credit: 12.50\u00a3\n----------\n\nThis credit is no longer available for use. If you have any questions, please contact our support team.\n\nVisit Our Shop:\nhttp://localhost:10013/shop/\n\nView your store credit balance:\nhttp://localhost:10013/my-account/store-credit/\n\n----------\n\nCredit has expired and is no longer available for use. Visit our shop to explore current offers!\n\nwp-test2\n30 North Gould Street, ste r, 30 North Gould Street, ste r, Sheridan, WY 82801, United States (US)"
+    },
+    "cleanup": true,
+    "settings_unchanged": true,
+    "activation_unchanged": true,
+    "intercepted_mail_count": 10
+}

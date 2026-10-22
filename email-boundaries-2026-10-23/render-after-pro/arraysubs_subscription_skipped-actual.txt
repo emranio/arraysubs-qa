@@ -1,0 +1,27 @@
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Your renewal has been skipped
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+Hi Alice & QA,
+
+We skipped 1 upcoming renewal cycle for your Alice & QA <Library> subscription.
+
+----------
+Subscription #19819
+----------
+
+Product: Alice & QA <Library>
+Renewal Cycles Skipped: 1
+Next Payment: November 22, 2026 3:34 am
+Reason: Not specified
+
+You can review the updated renewal schedule from your account.
+
+Manage subscription: http://localhost:10013/my-account/as-subscriptions/
+
+----------
+
+No payment will be collected for the skipped renewal cycle. Your subscription will renew on the updated payment date shown above.
+
+wp-test2
+30 North Gould Street, ste r, 30 North Gould Street, ste r, Sheridan, WY 82801, United States (US)

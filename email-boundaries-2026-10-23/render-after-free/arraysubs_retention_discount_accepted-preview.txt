@@ -1,0 +1,31 @@
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Your subscription discount is now active
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+Hi John,
+
+You accepted our Special discount offer for your subscription, and your discount is now active.
+
+----------
+DISCOUNT DETAILS
+----------
+
+Subscription ID: #12345
+Offer: Special discount offer
+Discount: 20%
+Previous recurring amount: 29.99$
+New recurring amount: 23.99$
+Savings per renewal: 6.00$
+Applies to: Your next 3 renewals
+Next payment date: November 22, 2026
+
+We’ve updated your subscription, and future eligible renewals will use this discounted amount automatically.
+
+View your subscription here: http://localhost:10013/my-account/as-subscriptions/
+
+----------
+
+Thanks for staying with us. Your next renewals will use the discounted amount shown in this email while the offer remains active.
+
+wp-test2
+30 North Gould Street, ste r, 30 North Gould Street, ste r, Sheridan, WY 82801, United States (US)

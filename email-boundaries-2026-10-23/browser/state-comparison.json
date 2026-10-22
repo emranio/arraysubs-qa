@@ -1,0 +1,9 @@
+{
+  "active_plugins": true,
+  "coming_soon": true,
+  "modules": true,
+  "arraysubs_settings_hash": true,
+  "menu_hash": true,
+  "profile_fields_hash": true,
+  "email_option_hashes": true
+}

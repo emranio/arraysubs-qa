@@ -1,0 +1,17 @@
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Subscription scheduled to cancel
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+Subscription #19531 from Alice &amp; QA Email is scheduled to cancel at the end of the current billing period.
+
+----------
+Subscription #19531
+----------
+
+Customer: Alice &amp; QA Email (email-qa-alpha-jmfha7z8da@example.invalid)
+Product: Alice &amp; QA &lt;Library&gt;
+Status: Scheduled to cancel
+
+View subscription: http://localhost:10013/wp-admin/admin.php?page=arraysubs#/subscriptions/19531
+
+wp-test2<br />30 North Gould Street, ste r, 30 North Gould Street, ste r, Sheridan, WY 82801, United States (US)

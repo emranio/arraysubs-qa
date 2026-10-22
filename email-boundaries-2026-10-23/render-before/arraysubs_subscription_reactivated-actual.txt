@@ -1,0 +1,26 @@
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Your subscription has been reactivated!
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+Hi Alice &amp; QA,
+
+Great news! Your subscription for Alice &amp; QA &lt;Library&gt; has been reactivated and is now active again.
+
+----------
+SUBSCRIPTION DETAILS
+----------
+
+Subscription ID: #19531
+Product: Alice &amp; QA &lt;Library&gt;
+Status: Active
+Next Payment Date: November 22, 2026 3:22 am
+
+Your subscription is now active and you will be charged on your next payment date. Thank you for continuing with us!
+
+View your subscription here: http://localhost:10013/my-account/as-subscriptions/
+
+----------
+
+Your subscription is now active again and you will be charged on your next payment date.
+
+wp-test2<br />30 North Gould Street, ste r, 30 North Gould Street, ste r, Sheridan, WY 82801, United States (US)

@@ -1,0 +1,16 @@
+{
+  "featureTypeAttributes": [],
+  "links": [
+    {
+      "href": "http://localhost:10013/",
+      "text": "wp-test2"
+    },
+    {
+      "href": "http://localhost:10013/my-account/as-subscriptions/",
+      "text": "Manage subscription"
+    }
+  ],
+  "selected": "ArraySubs\\Features\\Emails\\Emails\\SubscriptionSkippedEmail",
+  "subject": "[wp-test2] Renewal skipped for Sample Subscription Product",
+  "text": "\t\n\nwp-test2\n\nYour renewal has been skipped\n\n\n\nHi John,\n\nWe skipped 1 upcoming renewal cycle for your Sample Subscription Product subscription.\n\nSubscription #12345\nProduct\tSample Subscription Product\nRenewal Cycles Skipped\t1\nNext Payment\tDecember 23, 2026\nReason\tNot specified\n\nYou can review the updated renewal schedule from your account.\n\nManage subscription\n\nNo payment will be collected for the skipped renewal cycle. Your subscription will renew on the updated payment date shown above.\n\n\n\n\nwp-test2\n30 North Gould Street, ste r, 30 North Gould Street, ste r, Sheridan, WY 82801, United States (US)\n\n\t"
+}

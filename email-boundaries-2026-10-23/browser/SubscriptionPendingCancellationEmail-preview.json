@@ -1,0 +1,16 @@
+{
+  "featureTypeAttributes": [],
+  "links": [
+    {
+      "href": "http://localhost:10013/",
+      "text": "wp-test2"
+    },
+    {
+      "href": "http://localhost:10013/my-account/as-view-subscription/",
+      "text": "Manage subscription"
+    }
+  ],
+  "selected": "ArraySubs\\Features\\Emails\\Emails\\SubscriptionPendingCancellationEmail",
+  "subject": "[wp-test2] Subscription #12345 scheduled to cancel on October 23, 2026",
+  "text": "\t\n\nwp-test2\n\nYour subscription is scheduled to cancel\n\n\n\nHi John,\n\nYour subscription #0 is scheduled to cancel at the end of the current billing period. You will continue to have access until then, after which no further payments will be charged.\n\nSubscription #0\nProduct\tN/A\nStatus\tScheduled to cancel\n\nChanged your mind? You can undo the scheduled cancellation from your account at any time before the cancellation date.\n\nManage subscription\n\nYou will continue to have access until the cancellation date. If you change your mind, you can undo the scheduled cancellation from your account.\n\n\n\n\nwp-test2\n30 North Gould Street, ste r, 30 North Gould Street, ste r, Sheridan, WY 82801, United States (US)\n\n\t"
+}

@@ -1,0 +1,20 @@
+{
+  "featureTypeAttributes": [],
+  "links": [
+    {
+      "href": "http://localhost:10013/",
+      "text": "wp-test2"
+    },
+    {
+      "href": "http://localhost:10013/shop/",
+      "text": "Shop Now"
+    },
+    {
+      "href": "http://localhost:10013/my-account/as-store-credit/",
+      "text": "View your store credit balance"
+    }
+  ],
+  "selected": "ArraySubsPro\\Features\\StoreCredit\\Emails\\CreditExpiringEmail",
+  "subject": "[wp-test2] Your store credit expires soon",
+  "text": "\t\n\nwp-test2\n\nYour store credit is expiring soon!\n\n\n\nHi John Doe,\n\nJust a friendly reminder: 30.00$ of your store credit will expire in 7 days!\n\nExpiring Credit\t30.00$\nExpiration Date\tOctober 30, 2026\nDays Remaining\t7 days\n\nDon't let your credit go to waste! Use it for your next purchase or it will be applied automatically to your subscription renewal.\n\nShop Now\n\nView your store credit balance\n\nUse your credit before it expires! Shop now or apply it to your subscription renewal.\n\n\n\n\nwp-test2\n30 North Gould Street, ste r, 30 North Gould Street, ste r, Sheridan, WY 82801, United States (US)\n\n\t"
+}

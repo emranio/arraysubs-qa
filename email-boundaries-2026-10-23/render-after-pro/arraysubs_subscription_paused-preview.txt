@@ -1,0 +1,29 @@
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Your subscription is paused
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+Hi John,
+
+Your Sample Subscription Product subscription is now paused. Renewal billing is suspended during the pause.
+
+----------
+Subscription #12345
+----------
+
+Product: Sample Subscription Product
+Status: Paused
+Paused On: October 23, 2026
+Pause Duration: 30 days
+Scheduled Resume: November 22, 2026
+Reason: Not specified
+
+You can review the pause or resume your subscription sooner from your account.
+
+Manage subscription: http://localhost:10013/my-account/as-subscriptions/
+
+----------
+
+Renewal billing is suspended while your subscription is paused. It will resume automatically on the date shown above unless you resume it sooner.
+
+wp-test2
+30 North Gould Street, ste r, 30 North Gould Street, ste r, Sheridan, WY 82801, United States (US)

@@ -1,0 +1,26 @@
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Your regular renewal schedule is restored
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+Hi John,
+
+The skip for 1 renewal cycle of your Sample Subscription Product subscription has been removed.
+
+----------
+Subscription #12345
+----------
+
+Product: Sample Subscription Product
+Renewal Cycles Restored: 1
+Next Payment: November 23, 2026
+
+Renewal billing will continue on the restored schedule.
+
+Manage subscription: http://localhost:10013/my-account/as-subscriptions/
+
+----------
+
+Your subscription is back on its regular billing schedule. The next payment will be collected on the restored date shown above.
+
+wp-test2
+30 North Gould Street, ste r, 30 North Gould Street, ste r, Sheridan, WY 82801, United States (US)

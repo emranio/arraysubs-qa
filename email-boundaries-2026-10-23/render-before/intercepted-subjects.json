@@ -1,0 +1,154 @@
+[
+    {
+        "email": "arraysubs_new_subscription",
+        "subject": "[wp-test2] Your subscription #19531 is active"
+    },
+    {
+        "email": "arraysubs_renewal_reminder",
+        "subject": "[wp-test2] Your subscription #19531 is ending soon"
+    },
+    {
+        "email": "arraysubs_renewal_invoice",
+        "subject": "[wp-test2] Invoice for subscription #19531"
+    },
+    {
+        "email": "arraysubs_payment_successful",
+        "subject": "[wp-test2] Payment received for subscription #19531"
+    },
+    {
+        "email": "arraysubs_payment_failed",
+        "subject": "[wp-test2] Payment failed for subscription #19531"
+    },
+    {
+        "email": "arraysubs_subscription_on_hold",
+        "subject": "[wp-test2] Your subscription #19531 is on hold"
+    },
+    {
+        "email": "arraysubs_subscription_pending_cancellation",
+        "subject": "[wp-test2] Subscription #19531 scheduled to cancel on end of billing period"
+    },
+    {
+        "email": "arraysubs_subscription_cancelled",
+        "subject": "[wp-test2] Your subscription #19531 has been cancelled"
+    },
+    {
+        "email": "arraysubs_subscription_expired",
+        "subject": "[wp-test2] Your subscription #19531 has expired"
+    },
+    {
+        "email": "arraysubs_expiring_soon",
+        "subject": "[wp-test2] Your subscription #19531 is ending soon"
+    },
+    {
+        "email": "arraysubs_auto_downgrade",
+        "subject": "[wp-test2] Your subscription #19531 has been changed to Bob QA"
+    },
+    {
+        "email": "arraysubs_retention_discount_accepted",
+        "subject": "[wp-test2] Your retention discount for Alice & QA is active"
+    },
+    {
+        "email": "arraysubs_subscription_reactivated",
+        "subject": "[wp-test2] Your subscription for Alice & QA has been reactivated"
+    },
+    {
+        "email": "arraysubs_subscription_skipped",
+        "subject": "[wp-test2] Renewal skipped for Alice & QA"
+    },
+    {
+        "email": "arraysubs_skip_undone",
+        "subject": "[wp-test2] Renewal schedule restored for Alice & QA"
+    },
+    {
+        "email": "arraysubs_subscription_paused",
+        "subject": "[wp-test2] Subscription paused for Alice & QA"
+    },
+    {
+        "email": "arraysubs_subscription_resumed",
+        "subject": "[wp-test2] Subscription resumed for Alice & QA"
+    },
+    {
+        "email": "arraysubs_trial_started",
+        "subject": "[wp-test2] Your free trial for Alice & QA has started"
+    },
+    {
+        "email": "arraysubs_trial_converted",
+        "subject": "[wp-test2] Your trial for Alice & QA has converted to a paid subscription"
+    },
+    {
+        "email": "arraysubs_renewal_requires_verification",
+        "subject": "[wp-test2] Verify your subscription renewal #19531"
+    },
+    {
+        "email": "arraysubs_card_expiring",
+        "subject": "[wp-test2] Update the card for subscription #19531"
+    },
+    {
+        "email": "arraysubs_admin_new_subscription",
+        "subject": "[wp-test2] New subscription #19531 from Alice & QA Email"
+    },
+    {
+        "email": "arraysubs_admin_payment_failed",
+        "subject": "[wp-test2] Payment failed for subscription #19531"
+    },
+    {
+        "email": "arraysubs_admin_subscription_pending_cancellation",
+        "subject": "[wp-test2] Subscription #19531 scheduled to cancel on end of billing period"
+    },
+    {
+        "email": "arraysubs_admin_subscription_cancelled",
+        "subject": "[wp-test2] Subscription #19531 cancelled by System"
+    },
+    {
+        "email": "arraysubs_admin_subscription_cancelled",
+        "subject": "QA Alice & QA Email order 19541 31.25\u00a3 http:\/\/localhost:10013\/checkout-2\/order-pay\/19541\/?pay_for_order=true&key=wc_order_E9kfpHAP8xhlq http:\/\/localhost:10013\/checkout-2\/order-pay\/19541\/?pay_for_order=true&key=wc_order_E9kfpHAP8xhlq"
+    },
+    {
+        "email": "arraysubs_admin_subscription_cancelled",
+        "subject": "QA Bob QA Email order 19541 31.25\u00a3 http:\/\/localhost:10013\/checkout-2\/order-pay\/19541\/?pay_for_order=true&key=wc_order_E9kfpHAP8xhlq http:\/\/localhost:10013\/checkout-2\/order-pay\/19541\/?pay_for_order=true&key=wc_order_E9kfpHAP8xhlq"
+    },
+    {
+        "email": "arraysubs_admin_subscription_cancelled",
+        "subject": "QA Bob QA Email order 19541 31.25\u00a3 http:\/\/localhost:10013\/checkout-2\/order-pay\/19541\/?pay_for_order=true&key=wc_order_E9kfpHAP8xhlq http:\/\/localhost:10013\/checkout-2\/order-pay\/19541\/?pay_for_order=true&key=wc_order_E9kfpHAP8xhlq"
+    },
+    {
+        "email": "arraysubs_admin_subscription_cancelled",
+        "subject": "QA Alice & QA Email order 19541 31.25\u00a3 http:\/\/localhost:10013\/checkout-2\/order-pay\/19541\/?pay_for_order=true&key=wc_order_E9kfpHAP8xhlq {retry_url}"
+    },
+    {
+        "email": "arraysubs_admin_subscription_cancelled",
+        "subject": "QA Bob QA Email order 19541 31.25\u00a3 http:\/\/localhost:10013\/checkout-2\/order-pay\/19541\/?pay_for_order=true&key=wc_order_E9kfpHAP8xhlq {retry_url}"
+    },
+    {
+        "email": "arraysubs_admin_subscription_cancelled",
+        "subject": "QA Bob QA Email order 19541 31.25\u00a3 http:\/\/localhost:10013\/checkout-2\/order-pay\/19541\/?pay_for_order=true&key=wc_order_E9kfpHAP8xhlq {retry_url}"
+    },
+    {
+        "email": "arraysubs_admin_subscription_cancelled",
+        "subject": "QA Alice & QA Email order 19541 31.25\u00a3 {order_pay_url} {retry_url}"
+    },
+    {
+        "email": "arraysubs_admin_subscription_cancelled",
+        "subject": "QA Bob QA Email order 19541 31.25\u00a3 {order_pay_url} {retry_url}"
+    },
+    {
+        "email": "arraysubs_admin_subscription_cancelled",
+        "subject": "QA Bob QA Email order 19541 31.25\u00a3 {order_pay_url} {retry_url}"
+    },
+    {
+        "email": "arraysubs_admin_subscription_cancelled",
+        "subject": "QA Alice & QA Email order 19541 31.25\u00a3 {order_pay_url} {retry_url}"
+    },
+    {
+        "email": "arraysubs_admin_subscription_cancelled",
+        "subject": "QA Bob QA Email order 19541 31.25\u00a3 {order_pay_url} {retry_url}"
+    },
+    {
+        "email": "arraysubs_admin_subscription_cancelled",
+        "subject": "QA Bob QA Email order 19541 31.25\u00a3 {order_pay_url} {retry_url}"
+    },
+    {
+        "email": "arraysubs_admin_subscription_cancelled",
+        "subject": "[wp-test2] Your subscription #19531 is active"
+    }
+]

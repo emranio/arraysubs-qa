@@ -1,0 +1,81 @@
+{
+  "targeted_types": 6,
+  "no_id_zero_links": true,
+  "no_mock_12345_destinations": true,
+  "links": [
+    {
+      "class": "AdminSubscriptionCancelledEmail",
+      "href": "http://localhost:10013/",
+      "text": "wp-test2"
+    },
+    {
+      "class": "AdminSubscriptionCancelledEmail",
+      "href": "http://localhost:10013/wp-admin/admin.php?page=arraysubs-mainadmin#/subscriptions",
+      "text": "View Subscription"
+    },
+    {
+      "class": "AdminNewSubscriptionEmail",
+      "href": "http://localhost:10013/",
+      "text": "wp-test2"
+    },
+    {
+      "class": "AdminNewSubscriptionEmail",
+      "href": "http://localhost:10013/wp-admin/admin.php?page=arraysubs-mainadmin#/subscriptions",
+      "text": "View Subscription"
+    },
+    {
+      "class": "CreditUsedEmail",
+      "href": "http://localhost:10013/",
+      "text": "wp-test2"
+    },
+    {
+      "class": "CreditUsedEmail",
+      "href": "http://localhost:10013/my-account/orders/",
+      "text": "#12345"
+    },
+    {
+      "class": "CreditUsedEmail",
+      "href": "http://localhost:10013/my-account/orders/",
+      "text": "View order details"
+    },
+    {
+      "class": "RenewalInvoiceEmail",
+      "href": "http://localhost:10013/",
+      "text": "wp-test2"
+    },
+    {
+      "class": "RenewalInvoiceEmail",
+      "href": "http://localhost:10013/checkout-2/",
+      "text": "Pay for this order"
+    },
+    {
+      "class": "AdminPaymentFailedEmail",
+      "href": "http://localhost:10013/",
+      "text": "wp-test2"
+    },
+    {
+      "class": "AdminPaymentFailedEmail",
+      "href": "http://localhost:10013/wp-admin/admin.php?page=wc-orders",
+      "text": "#12345"
+    },
+    {
+      "class": "AdminPaymentFailedEmail",
+      "href": "http://localhost:10013/wp-admin/admin.php?page=arraysubs-mainadmin#/subscriptions",
+      "text": "View Subscription"
+    },
+    {
+      "class": "AdminSubscriptionPendingCancellationEmail",
+      "href": "http://localhost:10013/",
+      "text": "wp-test2"
+    },
+    {
+      "class": "AdminSubscriptionPendingCancellationEmail",
+      "href": "http://localhost:10013/wp-admin/admin.php?page=arraysubs-mainadmin#/subscriptions",
+      "text": "View Subscription"
+    }
+  ],
+  "free_core_types": 25,
+  "free_pro_types": 0,
+  "restored_core_types": 25,
+  "restored_pro_types": 4
+}

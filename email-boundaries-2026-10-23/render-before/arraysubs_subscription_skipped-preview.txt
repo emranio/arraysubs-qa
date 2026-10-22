@@ -1,0 +1,26 @@
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Your renewal has been skipped
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+Hi John,
+
+We skipped 1 upcoming renewal cycle for your Sample Subscription Product subscription.
+
+----------
+Subscription #0
+----------
+
+Product: Sample Subscription Product
+Renewal Cycles Skipped: 1
+Next Payment: December 23, 2026
+Reason: Not specified
+
+You can review the updated renewal schedule from your account.
+
+Manage subscription: http://localhost:10013/my-account/as-subscriptions/
+
+----------
+
+No payment will be collected for the skipped renewal cycle. Your subscription will renew on the updated payment date shown above.
+
+wp-test2<br />30 North Gould Street, ste r, 30 North Gould Street, ste r, Sheridan, WY 82801, United States (US)
