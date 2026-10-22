@@ -1,0 +1,9 @@
+{
+    "subscription_removed": true,
+    "order_removed": true,
+    "product_removed": true,
+    "customer_removed": true,
+    "admin_removed": true,
+    "mu_fixture_removed": true,
+    "credentials_removed": true
+}

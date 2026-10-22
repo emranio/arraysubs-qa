@@ -1,0 +1,54 @@
+PASS: Default paid initial order activates once
+PASS: Default activation retains one invoice and one charge job
+PASS: Contended subscription lock leaves payment unprocessed and queues replay: regular
+PASS: Paid replay completes exactly once after subscription lock releases: regular
+PASS: Contended subscription lock leaves payment unprocessed and queues replay: explicit
+PASS: Paid replay completes exactly once after subscription lock releases: explicit
+PASS: Paid processing order can leave subscription pending
+PASS: Deferred payment retains payment count and payment date
+PASS: Deferred payment retains reusable payment token
+PASS: Deferred payment retains gateway capture and success event
+PASS: Pending deferral emits no activation or trial event and queues no renewal work
+PASS: Deferred action receives fresh objects after persisted payment/status
+PASS: Filter receives subscription, order and gateway context
+PASS: Saved standard checkout fields are available without a checkout request
+PASS: Additional checkout field preserves saved value: tec-logic/imei
+PASS: Additional checkout field preserves saved value: tec-logic/zero
+PASS: Additional checkout field preserves saved value: tec-logic/negative
+PASS: Additional checkout field preserves saved value: tec-logic/false
+PASS: Additional checkout field preserves saved value: tec-logic/array
+PASS: Context excludes arbitrary private order metadata
+PASS: Pro exposes saved Checkout Builder fields
+PASS: Deferral preserves agreed start and next-payment dates
+PASS: Completed transition and replay do not duplicate deferred payment effects
+PASS: Manual pending approval clears deferral and activates with both renewal jobs
+PASS: Manual approval retains the original billing date
+PASS: Repeated approval and initial-order replay remain idempotent
+PASS: On-hold deferral retains hold date and no renewal work
+PASS: Deferred on-hold cannot be charged by renewal processor
+PASS: Deferred on-hold is excluded from overdue cancellation
+PASS: Approval of overdue on-hold keeps due date and queues immediately runnable invoice/charge
+PASS: On-hold approval announces initial activation exactly once
+PASS: Trials retain existing trial behavior when callback requests deferral
+PASS: Remote billing clocks retain default activation
+PASS: Invalid filter return falls back to default: "publish"
+PASS: Invalid filter return falls back to default: "pending"
+PASS: Invalid filter return falls back to default: false
+PASS: Invalid filter return falls back to default: null
+PASS: Invalid filter return falls back to default: ["arraysubs-pending"]
+PASS: Paid renewal bypasses initial-payment filter and advances normally
+PASS: Manual pending approval refuses an elapsed fixed calendar end
+PASS: Fixed calendar expiration remains authoritative during deferral
+PASS: An expired deferred subscription retains its marker and cannot bypass the elapsed fixed end
+PASS: Pro bundle children mirror deferred parent before deferred action fires
+PASS: Deferred parent activation action observes completed Pro child mirroring
+PASS: Persistent plugin activation and settings remain unchanged
+PASS: All fixture subscriptions, orders, product and customer are removed
+{
+    "mode": "core-plus-pro",
+    "hpos": true,
+    "checks": 46,
+    "passed": 46,
+    "failed": [],
+    "fixture_mails_captured": 60
+}

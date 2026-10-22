@@ -1,0 +1,22 @@
+{
+    "captured_at_utc": "2026-10-22T20:03:52+00:00",
+    "site_url": "http://localhost:10013",
+    "browser_actor": {
+        "user_id": 376,
+        "role": "administrator"
+    },
+    "subscription_id": 18946,
+    "subscription_status": "arraysubs-active",
+    "order_id": 18945,
+    "order_status": "completed",
+    "deferred_marker_present": false,
+    "initial_payment_order": 18945,
+    "completed_payments": 1,
+    "original_next_payment_date": "2026-11-21 19:59:01",
+    "current_next_payment_date": "2026-11-21 19:59:01",
+    "billing_date_unchanged": true,
+    "renewal_charge_scheduled": true,
+    "renewal_invoice_scheduled": true,
+    "charge_timestamp": 1795300290,
+    "invoice_timestamp": 1795041090
+}
