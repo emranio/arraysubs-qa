@@ -1,0 +1,184 @@
+- generic
+  - StaticText "You are logged in as "
+  - strong
+    - StaticText "Finley Sullivan (demo260927_220)"
+  - link "Go back as admin (dev-email@wpengine.local)" [ref=e2]
+  - link "Skip to content" [ref=e1]
+  - banner
+    - paragraph
+      - link "wp-test2" [ref=e9]
+    - navigation
+      - list
+        - list
+          - listitem [level=2]
+            - link "Cart" [ref=e33]
+          - listitem [level=2]
+            - link "Cart" [ref=e34]
+          - listitem [level=2]
+            - link "Checkout" [ref=e35]
+          - listitem [level=2]
+            - link "Checkout" [ref=e36]
+          - listitem [level=2]
+            - link "Checkout Page" [ref=e37]
+          - listitem [level=2]
+            - link "Default Redirect Page" [ref=e38]
+          - listitem [level=2]
+            - link "Demo · Account Checklist" [ref=e39]
+          - listitem [level=2]
+            - link "Demo · Content Gate Demo Hub" [ref=e40]
+          - listitem [level=2]
+            - link "Demo · Download Library" [ref=e41]
+          - listitem [level=2]
+            - link "Demo · Loyal Plus Member Resource" [ref=e42]
+          - listitem [level=2]
+            - link "Demo · Masterclass Feature Access" [ref=e43]
+          - listitem [level=2]
+            - link "Demo · Member Library" [ref=e44]
+          - listitem [level=2]
+            - link "Demo · Member or Workshop Buyer" [ref=e45]
+          - listitem [level=2]
+            - link "Demo · Member Role Resource" [ref=e46]
+          - listitem [level=2]
+            - link "Demo · Member Support" [ref=e47]
+          - listitem [level=2]
+            - link "Demo · Membership Plans" [ref=e48]
+          - listitem [level=2]
+            - link "Demo · Premium Masterclass" [ref=e49]
+          - listitem [level=2]
+            - link "Demo · Premium Upgrade Resource" [ref=e50]
+          - listitem [level=2]
+            - link "Demo · Private Member Dashboard" [ref=e51]
+          - listitem [level=2]
+            - link "Demo · Professional Workspace" [ref=e52]
+          - listitem [level=2]
+            - link "Demo · Public Preview with a Gated Lesson" [ref=e53]
+          - listitem [level=2]
+            - link "Demo · Purchased Workshop Replay" [ref=e54]
+          - listitem [level=2]
+            - link "Demo · Renewal Help" [ref=e55]
+          - listitem [level=2]
+            - link "Demo · Shortcode Access Examples" [ref=e56]
+          - listitem [level=2]
+            - link "Demo · Team Workspace" [ref=e57]
+          - listitem [level=2]
+            - link "Demo · VIP Loyalty Lounge" [ref=e58]
+          - listitem [level=2]
+            - link "Demo · Visitor Welcome" [ref=e59]
+          - listitem [level=2]
+            - link "Demo · Welcome and Getting Started" [ref=e60]
+          - listitem [level=2]
+            - link "Elementor #399" [ref=e61]
+          - listitem [level=2]
+            - link "Lost Password" [ref=e62]
+          - listitem [level=2]
+            - link "Member Login" [ref=e63]
+          - listitem [level=2]
+            - link "Member LogOut" [ref=e64]
+          - listitem [level=2]
+            - link "Member TOS Page" [ref=e65]
+          - listitem [level=2]
+            - link "My Account" [ref=e66]
+          - listitem [level=2]
+            - link "My account" [ref=e67]
+          - listitem [level=2]
+            - link "Public Individual Page" [ref=e68]
+          - listitem [level=2]
+            - link "QA credit shortcode 20261023" [ref=e69]
+          - listitem [level=2]
+            - link "Register" [ref=e70]
+          - listitem [level=2]
+            - link "Sample Page" [ref=e71]
+          - listitem [level=2]
+            - link "Sample Page" [ref=e72]
+          - listitem [level=2]
+            - link "Shop" [ref=e73]
+          - listitem [level=2]
+            - link "Subscription Plan" [ref=e74]
+          - listitem [level=2]
+            - link "Thank You Page" [ref=e75]
+          - listitem [level=2]
+            - link "today is Sunday" [ref=e76]
+    - link "My Account" [ref=e3]
+      - generic
+        - image
+    - button "Number of items in the cart: 0" [ref=e4]
+      - image
+  - main
+    - generic
+      - heading "QA credit shortcode 20261023" [level=1, ref=e5]
+      - generic
+        - image "Awaiting product image"
+        - heading "Demo · Store Credit $25" [level=1, ref=e10]
+        - paragraph
+          - StaticText "25.00$"
+        - paragraph
+          - strong
+            - StaticText "Credit Amount:"
+          - StaticText " 25.00$"
+        - paragraph
+          - StaticText "Store Credit $25 — demo catalog."
+        - button "Buy Credits" [ref=e13]
+        - generic
+          - StaticText "SKU: DEMO-260927-CREDIT-25 Category: "
+          - link "Demo Gift Credit" [ref=e14]
+        - tablist
+          - StaticText "  "
+          - tab "Description" [selected, ref=e15]
+          - StaticText "  "
+          - StaticText "  "
+          - tab "Reviews (0)" [ref=e16]
+          - StaticText "  "
+        - tabpanel " Description "
+          - heading "Description" [level=2, ref=e17]
+          - paragraph
+            - StaticText "Sample catalog item for the June–September 2026 demonstration store."
+        - generic
+          - heading "Related products" [level=2, ref=e18]
+          - list
+            - listitem [level=1]
+              - link "Placeholder Demo · Store Credit $50 50.00$" [ref=e27]
+                - image "Placeholder"
+                - heading "Demo · Store Credit $50" [level=2, ref=e31]
+                - StaticText "50.00"
+                - StaticText "$"
+              - link "Add to cart: “Demo · Store Credit $50”" [ref=e28]
+                - StaticText "Buy Credits"
+            - listitem [level=1]
+              - link "Placeholder Demo · Store Credit $100 100.00$" [ref=e29]
+                - image "Placeholder"
+                - heading "Demo · Store Credit $100" [level=2, ref=e32]
+                - StaticText "100.00"
+                - StaticText "$"
+              - link "Add to cart: “Demo · Store Credit $100”" [ref=e30]
+                - StaticText "Buy Credits"
+  - contentinfo
+    - heading "wp-test2" [level=2, ref=e6]
+      - link "wp-test2" [ref=e11]
+    - navigation " 2" [ref=e7]
+      - list
+        - listitem [level=1]
+          - link "Blog" [ref=e19]
+        - listitem [level=1]
+          - link "About" [ref=e20]
+        - listitem [level=1]
+          - link "FAQs" [ref=e21]
+        - listitem [level=1]
+          - link "Authors" [ref=e22]
+    - navigation " 3" [ref=e8]
+      - list
+        - listitem [level=1]
+          - link "Events" [ref=e23]
+        - listitem [level=1]
+          - link "Shop" [ref=e24]
+        - listitem [level=1]
+          - link "Patterns" [ref=e25]
+        - listitem [level=1]
+          - link "Themes" [ref=e26]
+    - paragraph
+      - StaticText "Twenty Twenty-Five"
+    - paragraph
+      - StaticText "Designed with "
+      - link "WordPress" [ref=e12]
+  - generic
+  - generic
+  - status

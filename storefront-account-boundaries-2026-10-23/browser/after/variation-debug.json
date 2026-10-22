@@ -1,0 +1,49 @@
+{
+  "featureElements": [
+    {
+      "class": "arraysubspro-product-features",
+      "display": "none",
+      "tag": "DIV",
+      "text": ""
+    }
+  ],
+  "headings": [
+    "QA boundary variation features 20261023",
+    "Additional information",
+    "\n\t\t\tReviews\t\t",
+    "\n\t\t\t\tRelated products\t\t\t",
+    "12",
+    "QPC QA 2026-09-10 Advanced Annual",
+    "QPC QA 2026-09-10 Box",
+    "QPC QA 2026-09-10 Box",
+    "QPC QA 2026-09-10 Bundle",
+    "QPC QA 2026-09-10 Child A",
+    "wp-test2",
+    "\n\t\t\t\t\t\t\n\t\t\tYour cart\t\t\n\t\t\t\t(items: 0)\n\t\t\t\t\t",
+    "\n\t\t\t\t\t\tProducts in cart\t\t\t\t\t"
+  ],
+  "scripts": [
+    "http://localhost:10013/wp-content/plugins/arraysubspro/public/build/feature-manager-frontend.js?ver=f7bb093a92953b49387f"
+  ],
+  "variationData": [
+    {
+      "featureFields": {
+        "arraysubs_features_html": ""
+      },
+      "id": 19373
+    },
+    {
+      "featureFields": {
+        "arraysubs_features_html": ""
+      },
+      "id": 19375
+    },
+    {
+      "featureFields": {
+        "arraysubs_features_html": ""
+      },
+      "id": 19377
+    }
+  ],
+  "variationId": "19373"
+}

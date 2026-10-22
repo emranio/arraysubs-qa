@@ -1,0 +1,44 @@
+[A3C6F9343C46300844C79A66C5CB3298] GET http://localhost:10013/shop/ (Document) 200
+[60448161FA572A663E586206112196DA] GET http://localhost:10013/shop/?sfa=pro1 (Document) 200
+[28383.385] GET http://localhost:10013/wp-json/wc/store/v1/cart (Fetch) 200
+[60CF35521AD7B42C023A4B9FD07C271F] GET http://localhost:10013/product/demo-%c2%b7-lifetime-resource-library/?sfa=pro1 (Document) 200
+[28383.615] GET http://localhost:10013/wp-json/wc/store/v1/cart (Fetch) 200
+[6CB32C1F37F20D5BBF2F83E644A92842] GET http://localhost:10013/cart-2/?sfa=pro1 (Document) 200
+[28383.839] GET http://localhost:10013/cart-2/undefinedwc/store/v1/cart (Fetch)
+[28383.839] GET http://localhost:10013/cart/ (Fetch) 200
+[28383.849] POST http://localhost:10013/wp-json/wc/store/v1/batch?_locale=site (Fetch) 207
+[28383.850] GET http://localhost:10013/cart-2/undefinedwc/store/v1/cart (Fetch)
+[28383.850] GET http://localhost:10013/cart/ (Fetch) 200
+[28383.851] GET http://localhost:10013/cart-2/undefinedwc/store/v1/cart (Fetch)
+[28383.851] GET http://localhost:10013/cart/ (Fetch) 200
+[28383.852] GET http://localhost:10013/cart-2/undefinedwc/store/v1/cart (Fetch)
+[28383.852] GET http://localhost:10013/cart/ (Fetch) 200
+[28383.853] GET http://localhost:10013/cart-2/undefinedwc/store/v1/cart (Fetch)
+[28383.853] GET http://localhost:10013/cart/ (Fetch) 200
+[28383.854] GET http://localhost:10013/cart-2/undefinedwc/store/v1/cart (Fetch)
+[28383.854] GET http://localhost:10013/cart/ (Fetch) 200
+[7809A21A701425E2CF0267D2A8022844] GET http://localhost:10013/my-account/?sfa=pro-guest (Document) 200
+[28383.1041] GET http://localhost:10013/wp-json/wc/store/v1/cart (Fetch) 200
+[4CCB6189D3945B160357604419A141B9] GET http://localhost:10013/my-account/as-features/?sfa=pro-guest (Document) 200
+[28383.1231] GET http://localhost:10013/wp-json/wc/store/v1/cart (Fetch) 200
+[50B57B632A21A2CD83DC64320CAEB400] GET http://localhost:10013/my-account/as-store-credit/?sfa=pro-guest (Document) 200
+[28383.1418] GET http://localhost:10013/wp-json/wc/store/v1/cart (Fetch) 200
+[105F2CB8BE6DE3FA5A5B0C892F98A5CE] GET http://localhost:10013/product/demo-%c2%b7-membership-tier/?sfa=pro-variation (Document) 200
+[28383.1657] GET http://localhost:10013/wp-json/wc/store/v1/cart (Fetch) 200
+[412939627BBBD4137827380C46CBD8FC] GET http://localhost:10013/product/demo-%c2%b7-store-credit-25/?sfa=pro-premium (Document) 200
+[28383.1889] GET http://localhost:10013/wp-json/wc/store/v1/cart (Fetch) 200
+[382D06FC8F15B8245D68AD6E3EDB31A6] GET http://localhost:10013/product/demo-%c2%b7-coffee-and-tea-membership-bundle/?sfa=pro-premium (Document) 200
+[28383.2118] GET http://localhost:10013/wp-json/wc/store/v1/cart (Fetch) 200
+[5947FEDBF3725B5CDCBD83C7325DE5ED] GET http://localhost:10013/product/qa-boundary-variation-features-20261023/?sfa=before-fix (Document) 200
+[28383.2361] GET http://localhost:10013/wp-json/wc/store/v1/cart (Fetch) 200
+[E81CC9527638C92CBFB1142A98E92D72] GET http://localhost:10013/shop/?sfa=free1 (Document) 200
+[28383.2592] GET http://localhost:10013/wp-json/wc/store/v1/cart (Fetch) 200
+[7F2661C7E70270920EA337A870721E20] GET http://localhost:10013/product/demo-%c2%b7-lifetime-resource-library/?sfa=free1 (Document) 200
+[28383.2818] GET http://localhost:10013/wp-json/wc/store/v1/cart (Fetch) 200
+[B42CA46A9C437A8C552CACE49E296CC3] GET http://localhost:10013/cart-2/?sfa=free1 (Document) 200
+[28383.3028] GET http://localhost:10013/cart-2/undefinedwc/store/v1/cart (Fetch)
+[28383.3028] GET http://localhost:10013/cart/ (Fetch) 200
+[ACD93D9CEDBB040C4043459DAE4A5FCD] GET http://localhost:10013/product/demo-%c2%b7-store-credit-25/?sfa=free1 (Document) 200
+[28383.3252] GET http://localhost:10013/wp-json/wc/store/v1/cart (Fetch) 200
+[C37B3364BF7C1BD9133CC2EAB1894E9E] GET http://localhost:10013/product/demo-%c2%b7-coffee-and-tea-membership-bundle/?sfa=free1 (Document) 200
+[28383.3475] GET http://localhost:10013/wp-json/wc/store/v1/cart (Fetch) 200

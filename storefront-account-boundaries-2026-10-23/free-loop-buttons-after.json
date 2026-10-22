@@ -1,0 +1,14 @@
+[
+    {
+        "id": 6725,
+        "purchasable": false,
+        "button": "Read more",
+        "url": "http:\/\/localhost:10013\/product\/demo-%c2%b7-store-credit-25\/"
+    },
+    {
+        "id": 6728,
+        "purchasable": false,
+        "button": "Read more",
+        "url": "http:\/\/localhost:10013\/product\/demo-%c2%b7-coffee-and-tea-membership-bundle\/"
+    }
+]

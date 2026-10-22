@@ -1,0 +1,559 @@
+- generic
+  - generic
+    - navigation "Main menu" [ref=e1]
+      - link "Skip to main content" [ref=e2]
+      - link "Skip to toolbar" [ref=e3]
+      - list
+        - listitem [level=1]
+          - link "Dashboard" [ref=e5]
+            - StaticText "Dashboard"
+          - list
+            - listitem [level=2]
+              - link "Home" [ref=e32]
+            - listitem [level=2]
+              - link "Updates 5" [ref=e33]
+                - StaticText "Updates 5"
+        - listitem [level=1]
+          - link "Posts" [ref=e6]
+            - StaticText "Posts"
+          - list
+            - listitem [level=2]
+              - link "All Posts" [ref=e34]
+            - listitem [level=2]
+              - link "Add Post" [ref=e35]
+            - listitem [level=2]
+              - link "Categories" [ref=e36]
+            - listitem [level=2]
+              - link "Tags" [ref=e37]
+        - listitem [level=1]
+          - link "Media" [ref=e7]
+            - StaticText "Media"
+          - list
+            - listitem [level=2]
+              - link "Library" [ref=e38]
+            - listitem [level=2]
+              - link "Add Media File" [ref=e39]
+        - listitem [level=1]
+          - link "Pages" [ref=e8]
+            - StaticText "Pages"
+          - list
+            - listitem [level=2]
+              - link "All Pages" [ref=e40]
+            - listitem [level=2]
+              - link "Add Page" [ref=e41]
+        - listitem [level=1]
+          - link "Comments" [ref=e9]
+            - StaticText "Comments"
+        - listitem [level=1]
+          - link "ArraySubs" [ref=e10]
+            - StaticText "ArraySubs"
+          - list
+            - listitem [level=2]
+              - link "Home" [ref=e42]
+            - listitem [level=2]
+              - link "Subscriptions" [ref=e43]
+            - listitem [level=2]
+              - link "You may need" [ref=e44]
+            - listitem [level=2]
+              - link "Manage Members" [ref=e45]
+            - listitem [level=2]
+              - link "Cancellation Flow" [ref=e46]
+            - listitem [level=2]
+              - link "Member Access" [ref=e47]
+            - listitem [level=2]
+              - link "Profile & My Account" [ref=e48]
+            - listitem [level=2]
+              - link "Reports" [ref=e49]
+            - listitem [level=2]
+              - link "Shortcodes" [ref=e50]
+            - listitem [level=2]
+              - link "Audits" [ref=e51]
+            - listitem [level=2]
+              - link "1-Minute Setup" [ref=e52]
+            - listitem [level=2]
+              - link "Modules" [ref=e53]
+            - listitem [level=2]
+              - link "Settings" [ref=e54]
+            - listitem [level=2]
+              - link "Help" [ref=e55]
+        - listitem [level=1]
+          - link "WPSubscription" [ref=e11]
+            - StaticText "WPSubscription"
+          - list
+            - listitem [level=2]
+              - link "Overview" [ref=e56]
+            - listitem [level=2]
+              - link "Plans" [ref=e57]
+            - listitem [level=2]
+              - link "Delivery" [ref=e58]
+            - listitem [level=2]
+              - link "Subscriptions" [ref=e59]
+            - listitem [level=2]
+              - link "Reports" [ref=e60]
+            - listitem [level=2]
+              - link "Health" [ref=e61]
+            - listitem [level=2]
+              - link "Integrations" [ref=e62]
+            - listitem [level=2]
+              - link "Cancellation Flow" [ref=e63]
+            - listitem [level=2]
+              - link "Settings" [ref=e64]
+            - listitem [level=2]
+              - link "License" [ref=e65]
+            - listitem [level=2]
+              - link "Help" [ref=e66]
+            - listitem [level=2]
+            - listitem [level=2]
+        - listitem [level=1]
+          - link "WooCommerce" [ref=e12]
+            - StaticText "WooCommerce"
+          - list
+            - listitem [level=2]
+              - link "Home 2" [ref=e67]
+                - StaticText "Home 2"
+            - listitem [level=2]
+              - link "Orders 93" [ref=e68]
+                - StaticText "Orders 93"
+            - listitem [level=2]
+              - link "Subscriptions" [ref=e69]
+            - listitem [level=2]
+              - link "Customers" [ref=e70]
+            - listitem [level=2]
+              - link "Coupons" [ref=e71]
+            - listitem [level=2]
+              - link "Reports" [ref=e72]
+            - listitem [level=2]
+              - link "Settings" [ref=e73]
+            - listitem [level=2]
+              - link "Status" [ref=e74]
+            - listitem [level=2]
+              - link "Extensions" [ref=e75]
+        - listitem [level=1]
+          - link "Products" [ref=e13]
+            - StaticText "Products"
+          - list
+            - listitem [level=2]
+              - link "All Products" [ref=e76]
+            - listitem [level=2]
+              - link "Add new product" [ref=e77]
+            - listitem [level=2]
+              - link "Brands" [ref=e78]
+            - listitem [level=2]
+              - link "Categories" [ref=e79]
+            - listitem [level=2]
+              - link "Tags" [ref=e80]
+            - listitem [level=2]
+              - link "Attributes" [ref=e81]
+            - listitem [level=2]
+              - link "Reviews" [ref=e82]
+        - listitem [level=1]
+          - link "Payments" [ref=e14]
+            - StaticText "Payments"
+        - listitem [level=1]
+          - link "Analytics" [ref=e15]
+            - StaticText "Analytics"
+          - list
+            - listitem [level=2]
+              - link "Overview" [ref=e83]
+            - listitem [level=2]
+              - link "Products" [ref=e84]
+            - listitem [level=2]
+              - link "Revenue" [ref=e85]
+            - listitem [level=2]
+              - link "Orders" [ref=e86]
+            - listitem [level=2]
+              - link "Variations" [ref=e87]
+            - listitem [level=2]
+              - link "Categories" [ref=e88]
+            - listitem [level=2]
+              - link "Coupons" [ref=e89]
+            - listitem [level=2]
+              - link "Taxes" [ref=e90]
+            - listitem [level=2]
+              - link "Downloads" [ref=e91]
+            - listitem [level=2]
+              - link "Stock" [ref=e92]
+            - listitem [level=2]
+              - link "Settings" [ref=e93]
+        - listitem [level=1]
+          - link "Marketing" [ref=e16]
+            - StaticText "Marketing"
+          - list
+            - listitem [level=2]
+              - link "Overview" [ref=e94]
+            - listitem [level=2]
+              - link "Coupons" [ref=e95]
+        - listitem [level=1]
+          - link "Appearance" [ref=e17]
+            - StaticText "Appearance"
+          - list
+            - listitem [level=2]
+              - link "Themes" [ref=e96]
+            - listitem [level=2]
+              - link "Editor" [ref=e97]
+            - listitem [level=2]
+              - link "Fonts" [ref=e98]
+        - listitem [level=1]
+          - link "Plugins 5" [ref=e18]
+            - generic
+              - StaticText "Plugins 5"
+          - list
+            - listitem [level=2]
+              - link "Installed Plugins" [ref=e99]
+            - listitem [level=2]
+              - link "Add Plugin" [ref=e100]
+        - listitem [level=1]
+          - link "Users" [ref=e19]
+            - StaticText "Users"
+          - list
+            - listitem [level=2]
+              - link "All Users" [ref=e101]
+            - listitem [level=2]
+              - link "Add User" [ref=e102]
+            - listitem [level=2]
+              - link "Profile" [ref=e103]
+        - listitem [level=1]
+          - link "Tools" [ref=e20]
+            - StaticText "Tools"
+          - list
+            - listitem [level=2]
+              - link "Available Tools" [ref=e104]
+            - listitem [level=2]
+              - link "Import" [ref=e105]
+            - listitem [level=2]
+              - link "Export" [ref=e106]
+            - listitem [level=2]
+              - link "Site Health 1" [ref=e107]
+                - StaticText "Site Health 1"
+            - listitem [level=2]
+              - link "Export Personal Data" [ref=e108]
+            - listitem [level=2]
+              - link "Erase Personal Data" [ref=e109]
+            - listitem [level=2]
+              - link "Scheduled Actions" [ref=e110]
+            - listitem [level=2]
+              - link "Theme File Editor" [ref=e111]
+            - listitem [level=2]
+              - link "Plugin File Editor" [ref=e112]
+        - listitem [level=1]
+          - link "Settings" [ref=e21]
+            - StaticText "Settings"
+          - list
+            - listitem [level=2]
+              - link "General" [ref=e113]
+            - listitem [level=2]
+              - link "Connectors" [ref=e114]
+            - listitem [level=2]
+              - link "Writing" [ref=e115]
+            - listitem [level=2]
+              - link "Reading" [ref=e116]
+            - listitem [level=2]
+              - link "Discussion" [ref=e117]
+            - listitem [level=2]
+              - link "Media" [ref=e118]
+            - listitem [level=2]
+              - link "Permalinks" [ref=e119]
+            - listitem [level=2]
+              - link "Privacy" [ref=e120]
+        - listitem [level=1]
+          - button "Collapse Main menu" [expanded=true, ref=e22]
+            - StaticText "Collapse Menu"
+    - generic
+      - navigation "Toolbar" [ref=e4]
+        - menu
+          - group
+            - menuitem "About WordPress" [expanded=false, ref=e24]
+              - StaticText "About WordPress"
+          - group
+            - menuitem "wp-test2" [expanded=false, ref=e25]
+          - group
+            - menuitem "Coming soon" [ref=e26]
+          - group
+            - menuitem "5 updates available" [ref=e27]
+              - StaticText "5 updates available"
+          - group
+            - menuitem "⌘K Open command palette" [ref=e28]
+              - generic
+                - StaticText "⌘K"
+                - StaticText "Open command palette"
+          - group
+            - menuitem "0 Comments in moderation" [ref=e29]
+              - StaticText "0 Comments in moderation"
+          - group
+            - menuitem "New" [expanded=false, ref=e30]
+              - StaticText "New"
+        - menu
+          - group
+            - menuitem "Howdy, admin" [expanded=false, ref=e31]
+              - StaticText "Howdy, admin"
+      - main
+        - generic
+          - sectionheader
+            - navigation
+              - list
+                - listitem [level=1]
+                  - link "Reports" [ref=e156]
+            - StaticText "Find the reports you need for your subscription business."
+          - main
+            - search
+              - LabelText
+                - StaticText "Search reports"
+              - status
+                - StaticText "17 reports"
+              - searchbox "Search reports" [ref=e138]
+            - generic
+              - article "Subscription Performance" [ref=e121]
+                - heading "Subscription Performance" [level=3, ref=e139]
+                - StaticText "PRO"
+                - list
+                  - listitem [level=1]
+                    - ListMarker "• "
+                    - StaticText "MRR, active subscriptions, churn, trial conversions, and average revenue per user."
+                  - listitem [level=1]
+                    - ListMarker "• "
+                    - StaticText "Trends for recurring revenue, renewals, subscriber growth, and cancellations."
+                  - listitem [level=1]
+                    - ListMarker "• "
+                    - StaticText "Top products by subscriptions and revenue, plus customers by lifetime value."
+                  - listitem [level=1]
+                    - ListMarker "• "
+                    - StaticText "Leading cancellation reasons and products with the highest churn."
+                - StaticText "Enable this feature to open the report."
+              - article "Retention Analytics" [ref=e122]
+                - heading "Retention Analytics" [level=3, ref=e140]
+                - StaticText "PRO"
+                - list
+                  - listitem [level=1]
+                    - ListMarker "• "
+                    - StaticText "Customer and MRR retention rates, monthly cohorts, and average retention periods."
+                  - listitem [level=1]
+                    - ListMarker "• "
+                    - StaticText "Voluntary and payment-related churn over the last 12 months."
+                  - listitem [level=1]
+                    - ListMarker "• "
+                    - StaticText "Top cancellation reasons and retention offer activity logs."
+                  - listitem [level=1]
+                    - ListMarker "• "
+                    - StaticText "Product filters to compare retention for a specific subscription product."
+                - StaticText "Enable this feature to open the report."
+              - article "AI Churn Analysis" [ref=e123]
+                - heading "AI Churn Analysis" [level=3, ref=e141]
+                - StaticText "PRO"
+                - list
+                  - listitem [level=1]
+                    - ListMarker "• "
+                    - StaticText "Subscription risk scores grouped into high, medium, and low risk."
+                  - listitem [level=1]
+                    - ListMarker "• "
+                    - StaticText "Monthly revenue at risk and billing signals behind each score."
+                  - listitem [level=1]
+                    - ListMarker "• "
+                    - StaticText "AI explanations and recommended actions for at-risk subscribers."
+                - StaticText "Enable this feature to open the report."
+              - article "AI Revenue Forecast" [ref=e124]
+                - heading "AI Revenue Forecast" [level=3, ref=e142]
+                - StaticText "PRO"
+                - list
+                  - listitem [level=1]
+                    - ListMarker "• "
+                    - StaticText "MRR or ARR projections for 6, 12, or 24 months, with assumptions and risks."
+                  - listitem [level=1]
+                    - ListMarker "• "
+                    - StaticText "Collected revenue history split between renewals and new business."
+                  - listitem [level=1]
+                    - ListMarker "• "
+                    - StaticText "New and cancelled subscriptions, and the net change each month."
+                  - listitem [level=1]
+                    - ListMarker "• "
+                    - StaticText "Current recurring revenue and subscribers by billing frequency."
+                - StaticText "Enable this feature to open the report."
+              - article "Orders Analytics" [ref=e125]
+                - heading "Orders Analytics" [level=3, ref=e143]
+                - StaticText "PRO"
+                - list
+                  - listitem [level=1]
+                    - ListMarker "• "
+                    - StaticText "Order counts, sales totals, and individual orders for the selected period."
+                  - listitem [level=1]
+                    - ListMarker "• "
+                    - StaticText "Order types for subscription purchases, renewals, trials, plan switches, and credit purchases."
+                  - listitem [level=1]
+                    - ListMarker "• "
+                    - StaticText "Advanced filters to focus on specific subscription order types."
+                - StaticText "Enable this feature to open the report."
+              - article "Revenue Analytics" [ref=e126]
+                - heading "Revenue Analytics" [level=3, ref=e144]
+                - StaticText "PRO"
+                - list
+                  - listitem [level=1]
+                    - ListMarker "• "
+                    - StaticText "Store revenue totals and trends for the selected date range."
+                  - listitem [level=1]
+                    - ListMarker "• "
+                    - StaticText "Revenue from subscription renewal and plan switch orders."
+                  - listitem [level=1]
+                    - ListMarker "• "
+                    - StaticText "Store credit purchase amounts alongside the standard revenue metrics."
+                - StaticText "Enable this feature to open the report."
+              - article "Products Analytics" [ref=e127]
+                - heading "Products Analytics" [level=3, ref=e145]
+                - StaticText "PRO"
+                - list
+                  - listitem [level=1]
+                    - ListMarker "• "
+                    - StaticText "Items sold, net sales, and order counts by product."
+                  - listitem [level=1]
+                    - ListMarker "• "
+                    - StaticText "Product sales trends and comparisons over the selected period."
+                  - listitem [level=1]
+                    - ListMarker "• "
+                    - StaticText "A subscription-products-only filter to narrow the report."
+                - StaticText "Enable this feature to open the report."
+              - article "Variations Analytics" [ref=e128]
+                - heading "Variations Analytics" [level=3, ref=e146]
+                - StaticText "PRO"
+                - list
+                  - listitem [level=1]
+                    - ListMarker "• "
+                    - StaticText "Items sold, net sales, and order counts by product variation."
+                  - listitem [level=1]
+                    - ListMarker "• "
+                    - StaticText "Sales comparisons between variations of your products."
+                  - listitem [level=1]
+                    - ListMarker "• "
+                    - StaticText "A subscription-variations-only filter to narrow the report."
+                - StaticText "Enable this feature to open the report."
+              - article "Customers Analytics" [ref=e129]
+                - heading "Customers Analytics" [level=3, ref=e147]
+                - StaticText "PRO"
+                - list
+                  - listitem [level=1]
+                    - ListMarker "• "
+                    - StaticText "Customer order counts, total spending, and average order value."
+                  - listitem [level=1]
+                    - ListMarker "• "
+                    - StaticText "Subscription statuses for each customer and filters for those statuses."
+                  - listitem [level=1]
+                    - ListMarker "• "
+                    - StaticText "Member detail links to explore individual subscription profiles."
+                - StaticText "Enable this feature to open the report."
+              - article "Orders" [ref=e130]
+                - heading "Orders" [level=3, ref=e148]
+                - StaticText "PRO"
+                - list
+                  - listitem [level=1]
+                    - ListMarker "• "
+                    - StaticText "Individual WooCommerce orders with subscription type and coupon columns."
+                  - listitem [level=1]
+                    - ListMarker "• "
+                    - StaticText "Order counts grouped by type in the summary panel."
+                  - listitem [level=1]
+                    - ListMarker "• "
+                    - StaticText "Type and coupon filters to find specific orders."
+                - StaticText "Enable this feature to open the report."
+              - article "Subscriptions" [ref=e131]
+                - heading "Subscriptions" [level=3, ref=e149]
+                - list
+                  - listitem [level=1]
+                    - ListMarker "• "
+                    - StaticText "Searchable subscription records with status and date filters."
+                  - listitem [level=1]
+                    - ListMarker "• "
+                    - StaticText "Open a subscription to see its lifecycle, related orders, and activity notes."
+                  - listitem [level=1]
+                    - ListMarker "• "
+                    - StaticText "CSV exports of subscription data for further analysis."
+                - link "Open Subscriptions (opens in a new tab)" [ref=e157]
+                  - StaticText "Open report"
+              - article "Member Insights" [ref=e132]
+                - heading "Member Insights" [level=3, ref=e150]
+                - list
+                  - listitem [level=1]
+                    - ListMarker "• "
+                    - StaticText "Individual member profiles with subscription statistics and active plans."
+                  - listitem [level=1]
+                    - ListMarker "• "
+                    - StaticText "Order history, purchased products, and lifetime spending."
+                  - listitem [level=1]
+                    - ListMarker "• "
+                    - StaticText "Customer addresses and registration details."
+                - link "Open Member Insights (opens in a new tab)" [ref=e158]
+                  - StaticText "Open report"
+              - article "Store Credit Balances" [ref=e133]
+                - heading "Store Credit Balances" [level=3, ref=e151]
+                - StaticText "PRO"
+                - list
+                  - listitem [level=1]
+                    - ListMarker "• "
+                    - StaticText "Current store credit balances for your customers."
+                  - listitem [level=1]
+                    - ListMarker "• "
+                    - StaticText "Customer search to find a specific account balance."
+                  - listitem [level=1]
+                    - ListMarker "• "
+                    - StaticText "Balance adjustments when a customer needs credit added or removed."
+                - StaticText "Enable this feature to open the report."
+              - article "Credit Transaction History" [ref=e134]
+                - heading "Credit Transaction History" [level=3, ref=e152]
+                - StaticText "PRO"
+                - list
+                  - listitem [level=1]
+                    - ListMarker "• "
+                    - StaticText "Credits, debits, refunds, and manual balance adjustments."
+                  - listitem [level=1]
+                    - ListMarker "• "
+                    - StaticText "Transaction amounts and the customer accounts they affect."
+                  - listitem [level=1]
+                    - ListMarker "• "
+                    - StaticText "Date filters to review credit activity for a specific period."
+                - StaticText "Enable this feature to open the report."
+              - article "Activity Audit Trail" [ref=e135]
+                - heading "Activity Audit Trail" [level=3, ref=e153]
+                - StaticText "PRO"
+                - list
+                  - listitem [level=1]
+                    - ListMarker "• "
+                    - StaticText "Subscription and member actions with the actor, timestamp, and affected record."
+                  - listitem [level=1]
+                    - ListMarker "• "
+                    - StaticText "Previous and changed values for recorded updates."
+                  - listitem [level=1]
+                    - ListMarker "• "
+                    - StaticText "Author, entity, date, and text filters to trace specific activity."
+                - StaticText "Enable this feature to open the report."
+              - article "Gateway Health & Webhooks" [ref=e136]
+                - heading "Gateway Health & Webhooks" [level=3, ref=e154]
+                - list
+                  - listitem [level=1]
+                    - ListMarker "• "
+                    - StaticText "Payment gateway status and supported subscription capabilities."
+                  - listitem [level=1]
+                    - ListMarker "• "
+                    - StaticText "Webhook event history and processing results."
+                  - listitem [level=1]
+                    - ListMarker "• "
+                    - StaticText "Gateway and event-type filters to investigate payment issues."
+                - link "Open Gateway Health & Webhooks (opens in a new tab)" [ref=e159]
+                  - StaticText "Open report"
+              - article "Scheduled Job Logs" [ref=e137]
+                - heading "Scheduled Job Logs" [level=3, ref=e155]
+                - StaticText "PRO"
+                - list
+                  - listitem [level=1]
+                    - ListMarker "• "
+                    - StaticText "Execution history for renewals, emails, and other scheduled subscription jobs."
+                  - listitem [level=1]
+                    - ListMarker "• "
+                    - StaticText "Success or failure status, run dates, and job details."
+                  - listitem [level=1]
+                    - ListMarker "• "
+                    - StaticText "Date filters to investigate a particular period."
+                - StaticText "Enable this feature to open the report."
+    - contentinfo
+      - paragraph
+        - generic
+          - StaticText "Thank you for creating with "
+          - link "WordPress" [ref=e23]
+          - StaticText "."
+      - paragraph
+        - StaticText "Version 7.1.3"

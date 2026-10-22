@@ -1,0 +1,21 @@
+{
+  "jsonScripts": [],
+  "matchingResourceURLs": [
+    "http://localhost:10013/wp-content/plugins/woocommerce/assets/client/blocks/@woocommerce/stores/woocommerce/cart.js?ver=3cb6a716bf84517f4eff",
+    "http://localhost:10013/wp-includes/js/dist/script-modules/interactivity/index.js?ver=efaa5193bbad9c60ffd1"
+  ],
+  "moduleScripts": [
+    {
+      "id": "woocommerce/customer-account-js-module",
+      "src": "http://localhost:10013/wp-content/plugins/woocommerce/assets/client/blocks/woocommerce/customer-account.js?ver=4d4c517c6dc2b50c4b86"
+    },
+    {
+      "id": "woocommerce/mini-cart-js-module",
+      "src": "http://localhost:10013/wp-content/plugins/woocommerce/assets/client/blocks/woocommerce/mini-cart.js?ver=1bd2060615618c2424e6"
+    },
+    {
+      "id": "@wordpress/block-library/navigation/view-js-module",
+      "src": "http://localhost:10013/wp-includes/js/dist/script-modules/block-library/navigation/view.js?ver=1bf28ded04f9f188bdcb"
+    }
+  ]
+}

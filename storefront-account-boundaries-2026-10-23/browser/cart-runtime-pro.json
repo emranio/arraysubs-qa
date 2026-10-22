@@ -1,0 +1,18 @@
+{
+  "wcBlocksConfigApi": null,
+  "wcBlocksConfigKeys": [
+    "pluginUrl",
+    "restApiRoutes",
+    "defaultAvatar",
+    "wordCountType"
+  ],
+  "wcSettingsExists": true,
+  "wcSettingsKeys": [
+    "wcBlocksConfig",
+    "experimentalWcRestApiV4"
+  ],
+  "wcStoreApiNoncePresent": false,
+  "wcStoreApiRoot": null,
+  "wpApiSettingsPresent": false,
+  "wpApiSettingsRoot": null
+}

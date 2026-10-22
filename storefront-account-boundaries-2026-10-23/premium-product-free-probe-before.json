@@ -1,0 +1,24 @@
+[
+    {
+        "id": 6725,
+        "class": "WC_Product_Simple",
+        "get_type": "simple",
+        "terms": [
+            "arraysubs_store_credit"
+        ],
+        "price": "25",
+        "purchasable": true,
+        "status": "publish"
+    },
+    {
+        "id": 6728,
+        "class": "WC_Product_Simple",
+        "get_type": "simple",
+        "terms": [
+            "arraysubs_subscription_bundle"
+        ],
+        "price": "39.6",
+        "purchasable": true,
+        "status": "publish"
+    }
+]

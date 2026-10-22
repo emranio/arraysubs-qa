@@ -1,0 +1,172 @@
+{
+    "active_plugins": [
+        "ai-provider-for-anthropic\/plugin.php",
+        "ai-provider-for-google\/plugin.php",
+        "ai-provider-for-openai\/plugin.php",
+        "arraysubs\/arraysubs.php",
+        "arraysubspro\/arraysubspro.php",
+        "subscription-pro\/subscription-pro.php",
+        "subscription\/subscription.php",
+        "woocommerce\/woocommerce.php"
+    ],
+    "modules": {
+        "audits": true,
+        "cancellation_flow": true,
+        "checkout_builder": true,
+        "feature_manager": true,
+        "profile_builder": true,
+        "store_credit": true,
+        "subscription_box": true,
+        "subscription_bundle": true
+    },
+    "portal_settings": {
+        "subscription_list_view": "cards"
+    },
+    "profile_settings": {
+        "custom_profile_fields_enabled": true,
+        "my_account_menu_items_enabled": true
+    },
+    "myaccount_menu": [
+        {
+            "id": "dashboard",
+            "label": "Dashboard",
+            "type": "default",
+            "enabled": true,
+            "position": 0
+        },
+        {
+            "id": "orders",
+            "label": "Orders",
+            "type": "default",
+            "enabled": true,
+            "position": 1
+        },
+        {
+            "id": "subscriptions",
+            "label": "Memberships",
+            "type": "default",
+            "enabled": true,
+            "position": 2
+        },
+        {
+            "id": "store-credit",
+            "label": "Store Credit",
+            "type": "default",
+            "enabled": true,
+            "position": 3
+        },
+        {
+            "id": "downloads",
+            "label": "Downloads",
+            "type": "default",
+            "enabled": true,
+            "position": 4
+        },
+        {
+            "id": "edit-address",
+            "label": "Addresses",
+            "type": "default",
+            "enabled": true,
+            "position": 5
+        },
+        {
+            "id": "edit-account",
+            "label": "Account details",
+            "type": "default",
+            "enabled": true,
+            "position": 6
+        },
+        {
+            "id": "customer-logout",
+            "label": "Log out",
+            "type": "default",
+            "enabled": true,
+            "position": 7
+        }
+    ],
+    "profile_fields": [],
+    "customer_224": {
+        "ID": 224,
+        "user_login": "demo260927_220",
+        "user_email": "demo.260927.220@example.test",
+        "display_name": "Finley Sullivan",
+        "roles": [
+            "customer",
+            "demo_member",
+            "demo_premium"
+        ],
+        "meta": {
+            "nickname": [
+                "demo260927_220"
+            ],
+            "first_name": [
+                "Finley"
+            ],
+            "last_name": [
+                "Sullivan"
+            ],
+            "description": [
+                ""
+            ],
+            "billing_first_name": [
+                "Finley"
+            ],
+            "billing_last_name": [
+                "Sullivan"
+            ],
+            "billing_address_1": [
+                "319 Demo Avenue"
+            ],
+            "billing_city": [
+                "Toronto"
+            ],
+            "billing_state": [
+                "ON"
+            ],
+            "billing_postcode": [
+                "M5V 2T6"
+            ],
+            "billing_country": [
+                "CA"
+            ],
+            "billing_email": [
+                "demo.260927.220@example.test"
+            ],
+            "billing_phone": [
+                "+1 202 555 0319"
+            ],
+            "shipping_first_name": [
+                "Finley"
+            ],
+            "shipping_last_name": [
+                "Sullivan"
+            ],
+            "shipping_address_1": [
+                "319 Demo Avenue"
+            ],
+            "shipping_city": [
+                "Toronto"
+            ],
+            "shipping_state": [
+                "ON"
+            ],
+            "shipping_postcode": [
+                "M5V 2T6"
+            ],
+            "shipping_country": [
+                "CA"
+            ],
+            "shipping_phone": [
+                "+1 202 555 0319"
+            ],
+            "_arraysubs_additional_shipping_addresses": [
+                "a:0:{}"
+            ]
+        }
+    },
+    "pages": {
+        "account": "http:\/\/localhost:10013\/my-account\/",
+        "shop": "http:\/\/localhost:10013\/shop\/",
+        "cart": "http:\/\/localhost:10013\/cart-2\/"
+    }
+}

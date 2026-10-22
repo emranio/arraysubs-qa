@@ -1,0 +1,34 @@
+[
+  {
+    "path": "/my-account/",
+    "text": "Dashboard"
+  },
+  {
+    "path": "/my-account/orders/",
+    "text": "Orders"
+  },
+  {
+    "path": "/my-account/as-subscriptions/",
+    "text": "Memberships\t\t\t\t1"
+  },
+  {
+    "path": "/my-account/as-store-credit/",
+    "text": "Store Credit"
+  },
+  {
+    "path": "/my-account/downloads/",
+    "text": "Downloads"
+  },
+  {
+    "path": "/my-account/edit-address/",
+    "text": "Addresses"
+  },
+  {
+    "path": "/my-account/edit-account/",
+    "text": "Account details"
+  },
+  {
+    "path": "/my-account/as-features/",
+    "text": "My Features"
+  }
+]

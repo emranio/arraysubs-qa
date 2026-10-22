@@ -1,0 +1,21 @@
+[
+  {
+    "action": "http://localhost:10013/qa-credit-shortcode-20261023/?sfa=after-fix1",
+    "buttons": [
+      "Buy Credits"
+    ],
+    "method": "post",
+    "productInputs": [
+      {
+        "name": "add-to-cart",
+        "value": "6725"
+      }
+    ]
+  },
+  {
+    "action": "http://localhost:10013/wp-comments-post.php",
+    "buttons": [],
+    "method": "post",
+    "productInputs": []
+  }
+]

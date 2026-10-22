@@ -1,0 +1,58 @@
+- paragraph
+  - StaticText "Need to modify or cancel this subscription? Please contact the site administrator at "
+  - link "dev-email@wpengine.local" [ref=e12]
+  - StaticText "."
+- article "Demo · Lifetime Resource Library (#8326)" [ref=e7]
+  - sectionheader
+    - heading "Demo · Lifetime Resource Library (#8326)" [level=3, ref=e17]
+      - StaticText "Demo · Lifetime Resource Library (#8326)"
+    - StaticText "Active"
+  - DescriptionList
+    - term "Price / Billing"
+    - definition
+      - StaticText "349.00$ Lifetime Deal"
+    - term "Start Date"
+    - definition
+      - StaticText "September 27, 2026 9:54 am"
+    - term "Next Renewal"
+    - definition
+      - StaticText "Lifetime Deal"
+    - term "Access Status"
+    - definition
+      - StaticText "Until canceled"
+  - link "View Details" [ref=e13]
+  - link "View Initial Order" [ref=e14]
+- table
+  - rowgroup
+    - row
+      - columnheader "Subscription" [ref=e26]
+      - columnheader "Status" [ref=e27]
+      - columnheader "Product" [ref=e28]
+      - columnheader "Next Payment" [ref=e29]
+      - columnheader "Total" [ref=e30]
+      - columnheader "Actions" [ref=e31]
+  - row
+    - cell "No subscriptions available yet." [ref=e18]
+      - paragraph
+        - StaticText "No subscriptions available yet."
+- link "View Details" [ref=e13]
+- link "View Initial Order" [ref=e14]
+- row
+  - cell "No subscriptions available yet." [ref=e18]
+    - paragraph
+      - StaticText "No subscriptions available yet."
+- heading "Demo · Lifetime Resource Library (#8326)" [level=3, ref=e17]
+  - StaticText "Demo · Lifetime Resource Library (#8326)"
+- StaticText "Active"
+- term "Price / Billing"
+- definition
+  - StaticText "349.00$ Lifetime Deal"
+- term "Start Date"
+- definition
+  - StaticText "September 27, 2026 9:54 am"
+- term "Next Renewal"
+- definition
+  - StaticText "Lifetime Deal"
+- term "Access Status"
+- definition
+  - StaticText "Until canceled"

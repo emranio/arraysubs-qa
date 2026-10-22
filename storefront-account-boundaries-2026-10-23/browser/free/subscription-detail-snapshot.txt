@@ -1,0 +1,86 @@
+- heading "Subscription #8326" [level=2, ref=e7]
+- paragraph
+  - StaticText "Need to modify or cancel this subscription? Please contact the site administrator at "
+  - link "dev-email@wpengine.local" [ref=e18]
+  - StaticText "."
+- table
+  - row
+    - rowheader "Status:" [ref=e21]
+    - cell "Active" [ref=e22]
+  - row
+    - rowheader "Product:" [ref=e23]
+    - cell "Demo · Lifetime Resource Library" [ref=e24]
+      - link "Demo · Lifetime Resource Library" [ref=e45]
+  - row
+    - rowheader "Start Date:" [ref=e25]
+    - cell "September 27, 2026 9:54 am" [ref=e26]
+  - row
+    - rowheader "Next Payment:" [ref=e27]
+    - cell "Lifetime Deal — No recurring payment" [ref=e28]
+  - row
+    - rowheader "Recurring Amount:" [ref=e29]
+    - cell "349.00$ Lifetime Deal" [ref=e30]
+      - StaticText "349.00$ Lifetime Deal"
+  - row
+    - rowheader "Payment Method:" [ref=e31]
+    - cell "Demo payment (manual) Manage payment methods" [ref=e32]
+      - StaticText "Demo payment (manual) "
+      - link "Manage payment methods" [ref=e46]
+- heading "Manage Your Subscription" [level=3, ref=e8]
+- heading "Skip Next Renewal" [level=4, ref=e9]
+- paragraph
+  - StaticText "Need a break? Skip your next billing cycle without cancelling your subscription."
+- button "Skip Next Renewal" [ref=e10]
+- heading "Vacation Mode" [level=4, ref=e11]
+- paragraph
+  - StaticText "Going on vacation? Pause your subscription and resume when you're back."
+- button "Pause Subscription" [ref=e12]
+- heading "Related Orders" [level=3, ref=e13]
+- table
+  - rowgroup
+    - row
+      - columnheader "Order" [ref=e47]
+      - columnheader "Date" [ref=e48]
+      - columnheader "Status" [ref=e49]
+      - columnheader "Total" [ref=e50]
+      - columnheader "Actions" [ref=e51]
+  - row
+    - cell "#8327" [ref=e33]
+      - link "#8327" [ref=e52]
+    - cell "September 27, 2026" [ref=e34]
+    - cell "Completed" [ref=e35]
+    - cell "349.00$" [ref=e36]
+      - StaticText "349.00$"
+    - cell "View" [ref=e37]
+      - link "View" [ref=e53]
+- row
+  - rowheader "Status:" [ref=e21]
+  - cell "Active" [ref=e22]
+- row
+  - rowheader "Product:" [ref=e23]
+  - cell "Demo · Lifetime Resource Library" [ref=e24]
+    - link "Demo · Lifetime Resource Library" [ref=e45]
+- row
+  - rowheader "Start Date:" [ref=e25]
+  - cell "September 27, 2026 9:54 am" [ref=e26]
+- row
+  - rowheader "Next Payment:" [ref=e27]
+  - cell "Lifetime Deal — No recurring payment" [ref=e28]
+- row
+  - rowheader "Recurring Amount:" [ref=e29]
+  - cell "349.00$ Lifetime Deal" [ref=e30]
+    - StaticText "349.00$ Lifetime Deal"
+- row
+  - rowheader "Payment Method:" [ref=e31]
+  - cell "Demo payment (manual) Manage payment methods" [ref=e32]
+    - StaticText "Demo payment (manual) "
+    - link "Manage payment methods" [ref=e46]
+- row
+  - cell "#8327" [ref=e33]
+    - link "#8327" [ref=e52]
+  - cell "September 27, 2026" [ref=e34]
+  - cell "Completed" [ref=e35]
+  - cell "349.00$" [ref=e36]
+    - StaticText "349.00$"
+  - cell "View" [ref=e37]
+    - link "View" [ref=e53]

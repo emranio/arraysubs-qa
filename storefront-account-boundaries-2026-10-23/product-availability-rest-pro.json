@@ -1,0 +1,233 @@
+{
+    "mode": "pro",
+    "live_modules_at_boot": {
+        "store_credit": 1,
+        "subscription_bundle": 1
+    },
+    "checks": [
+        {
+            "check": "Disposable customer created",
+            "passed": true
+        },
+        {
+            "check": "Core boot registers the product\/payment availability service",
+            "passed": true
+        },
+        {
+            "check": "Ordinary products remain available",
+            "passed": true
+        },
+        {
+            "check": "store_credit preserves its raw stored product type",
+            "passed": true
+        },
+        {
+            "check": "store_credit follows actual provider availability",
+            "passed": true
+        },
+        {
+            "check": "store_credit guard permits the enabled premium module",
+            "passed": true
+        },
+        {
+            "check": "store_credit live premium product remains genuinely purchasable",
+            "passed": true
+        },
+        {
+            "check": "store_credit disabled module blocks product purchase",
+            "passed": true
+        },
+        {
+            "check": "store_credit unavailable catalog button offers product details",
+            "passed": true
+        },
+        {
+            "check": "store_credit cannot enter a real WooCommerce cart while unavailable",
+            "passed": true
+        },
+        {
+            "check": "store_credit direct Store API add-item cannot bypass purchase refusal",
+            "passed": true
+        },
+        {
+            "check": "store_credit unpaid initial order is blocked",
+            "passed": true
+        },
+        {
+            "check": "store_credit blocked order still requires payment rather than becoming free",
+            "passed": true
+        },
+        {
+            "check": "store_credit order hides only its Pay action",
+            "passed": true
+        },
+        {
+            "check": "store_credit payment form gives a controlled refusal",
+            "passed": true
+        },
+        {
+            "check": "store_credit real Store API payment is rejected before dispatch",
+            "passed": true
+        },
+        {
+            "check": "store_credit denied payment changes no order data and reaches no payment callback",
+            "passed": true
+        },
+        {
+            "check": "store_credit WooCommerce authorization rejects nonowners before the guard",
+            "passed": true
+        },
+        {
+            "check": "store_credit unauthorized request changes no order and reaches no callback",
+            "passed": true
+        },
+        {
+            "check": "store_credit existing renewal is exempt",
+            "passed": true
+        },
+        {
+            "check": "store_credit exempt renewal passes guard without invoking a gateway",
+            "passed": true
+        },
+        {
+            "check": "store_credit plan_switch order is exempt",
+            "passed": true
+        },
+        {
+            "check": "store_credit plan_switch_checkout order is exempt",
+            "passed": true
+        },
+        {
+            "check": "store_credit checkout-migration line is exempt",
+            "passed": true
+        },
+        {
+            "check": "store_credit already-paid order is exempt without rerunning fulfillment",
+            "passed": true
+        },
+        {
+            "check": "subscription_bundle preserves its raw stored product type",
+            "passed": true
+        },
+        {
+            "check": "subscription_bundle follows actual provider availability",
+            "passed": true
+        },
+        {
+            "check": "subscription_bundle guard permits the enabled premium module",
+            "passed": true
+        },
+        {
+            "check": "subscription_bundle live premium product remains genuinely purchasable",
+            "passed": true
+        },
+        {
+            "check": "subscription_bundle disabled module blocks product purchase",
+            "passed": true
+        },
+        {
+            "check": "subscription_bundle unavailable catalog button offers product details",
+            "passed": true
+        },
+        {
+            "check": "subscription_bundle cannot enter a real WooCommerce cart while unavailable",
+            "passed": true
+        },
+        {
+            "check": "subscription_bundle direct Store API add-item cannot bypass purchase refusal",
+            "passed": true
+        },
+        {
+            "check": "subscription_bundle unpaid initial order is blocked",
+            "passed": true
+        },
+        {
+            "check": "subscription_bundle blocked order still requires payment rather than becoming free",
+            "passed": true
+        },
+        {
+            "check": "subscription_bundle order hides only its Pay action",
+            "passed": true
+        },
+        {
+            "check": "subscription_bundle payment form gives a controlled refusal",
+            "passed": true
+        },
+        {
+            "check": "subscription_bundle real Store API payment is rejected before dispatch",
+            "passed": true
+        },
+        {
+            "check": "subscription_bundle denied payment changes no order data and reaches no payment callback",
+            "passed": true
+        },
+        {
+            "check": "subscription_bundle WooCommerce authorization rejects nonowners before the guard",
+            "passed": true
+        },
+        {
+            "check": "subscription_bundle unauthorized request changes no order and reaches no callback",
+            "passed": true
+        },
+        {
+            "check": "subscription_bundle existing renewal is exempt",
+            "passed": true
+        },
+        {
+            "check": "subscription_bundle exempt renewal passes guard without invoking a gateway",
+            "passed": true
+        },
+        {
+            "check": "subscription_bundle plan_switch order is exempt",
+            "passed": true
+        },
+        {
+            "check": "subscription_bundle plan_switch_checkout order is exempt",
+            "passed": true
+        },
+        {
+            "check": "subscription_bundle checkout-migration line is exempt",
+            "passed": true
+        },
+        {
+            "check": "subscription_bundle already-paid order is exempt without rerunning fulfillment",
+            "passed": true
+        },
+        {
+            "check": "An ordinary disposable product can enter the isolated cart",
+            "passed": true
+        },
+        {
+            "check": "A previously cached cart line cannot bypass the raw-type guard after becoming unavailable",
+            "passed": true
+        }
+    ],
+    "failure": null,
+    "raw_type_probe": {
+        "store_credit": {
+            "id": 19482,
+            "class": "ArraySubsPro\\Features\\StoreCredit\\Product\\StoreCreditProduct",
+            "stored_type": "arraysubs_store_credit"
+        },
+        "subscription_bundle": {
+            "id": 19484,
+            "class": "ArraySubsPro\\Features\\SubscriptionBundle\\Services\\SubscriptionBundleProduct",
+            "stored_type": "arraysubs_subscription_bundle"
+        }
+    },
+    "deleted_fixtures": {
+        "customer": 391,
+        "products": [
+            19480,
+            19482,
+            19484,
+            19488
+        ],
+        "orders": [
+            19486,
+            19487
+        ]
+    },
+    "saved_settings_unchanged": true,
+    "active_plugins_unchanged": true
+}

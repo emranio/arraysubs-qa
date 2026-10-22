@@ -1,0 +1,12 @@
+{
+    "customer_id": 387,
+    "login": "qa-avatar-jlzmwqexqd",
+    "email": "qa-avatar-jlzmwqexqd@example.invalid",
+    "role": "customer",
+    "setting_existed": false,
+    "original_avatar_settings": null,
+    "temporary_avatar_settings": {
+        "enabled": true,
+        "max_file_size": 2
+    }
+}

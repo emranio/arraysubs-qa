@@ -1,0 +1,14 @@
+{
+    "avatar_setting_restored": true,
+    "avatar_user_deleted": true,
+    "order_status_before_delete": "pending",
+    "order_deleted": true,
+    "deleted_variations": [
+        19373,
+        19375,
+        19377
+    ],
+    "parent_product_deleted": true,
+    "shortcode_page_deleted": true,
+    "active_pro": true
+}

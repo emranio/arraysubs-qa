@@ -1,0 +1,8 @@
+[A3C6F9343C46300844C79A66C5CB3298] GET http://localhost:10013/shop/ (Document) 200
+[60448161FA572A663E586206112196DA] GET http://localhost:10013/shop/?sfa=pro1 (Document) 200
+[28383.385] GET http://localhost:10013/wp-json/wc/store/v1/cart (Fetch) 200
+[60CF35521AD7B42C023A4B9FD07C271F] GET http://localhost:10013/product/demo-%c2%b7-lifetime-resource-library/?sfa=pro1 (Document) 200
+[28383.615] GET http://localhost:10013/wp-json/wc/store/v1/cart (Fetch) 200
+[6CB32C1F37F20D5BBF2F83E644A92842] GET http://localhost:10013/cart-2/?sfa=pro1 (Document) 200
+[28383.839] GET http://localhost:10013/cart-2/undefinedwc/store/v1/cart (Fetch)
+[28383.839] GET http://localhost:10013/cart/ (Fetch)

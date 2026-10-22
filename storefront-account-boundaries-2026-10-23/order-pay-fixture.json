@@ -1,0 +1,8 @@
+{
+    "order_id": 19408,
+    "customer_id": 224,
+    "product_id": 6725,
+    "status": "pending",
+    "pay_url": "http:\/\/localhost:10013\/checkout-2\/order-pay\/19408\/?pay_for_order=true&key=wc_order_xAUGGuUfMSl5V",
+    "total": "25.00"
+}

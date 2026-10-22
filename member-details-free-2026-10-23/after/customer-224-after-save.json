@@ -1,0 +1,117 @@
+{
+    "ID": 224,
+    "user_login": "demo260927_220",
+    "user_email": "demo.260927.220@example.test",
+    "display_name": "Finley Sullivan",
+    "roles": [
+        "customer",
+        "demo_member",
+        "demo_premium"
+    ],
+    "meta": {
+        "nickname": [
+            "demo260927_220"
+        ],
+        "first_name": [
+            "Finley"
+        ],
+        "last_name": [
+            "Sullivan"
+        ],
+        "description": [
+            ""
+        ],
+        "billing_first_name": [
+            "Finley"
+        ],
+        "billing_last_name": [
+            "Sullivan"
+        ],
+        "billing_address_1": [
+            "319 Demo Avenue"
+        ],
+        "billing_city": [
+            "Toronto"
+        ],
+        "billing_state": [
+            "ON"
+        ],
+        "billing_postcode": [
+            "M5V 2T6"
+        ],
+        "billing_country": [
+            "CA"
+        ],
+        "billing_email": [
+            "demo.260927.220@example.test"
+        ],
+        "billing_phone": [
+            "+1 202 555 0319"
+        ],
+        "shipping_first_name": [
+            "Finley"
+        ],
+        "shipping_last_name": [
+            "Sullivan"
+        ],
+        "shipping_address_1": [
+            "319 Demo Avenue"
+        ],
+        "shipping_city": [
+            "Toronto"
+        ],
+        "shipping_state": [
+            "ON"
+        ],
+        "shipping_postcode": [
+            "M5V 2T6"
+        ],
+        "shipping_country": [
+            "CA"
+        ],
+        "shipping_phone": [
+            "+1 202 555 0319"
+        ]
+    },
+    "meta_hashes": {
+        "nickname": "ede7b7cd9738a1a7525c92f286e930f5e1b054c9269bc56822af0597e5ca7cc8",
+        "first_name": "44b389b7b52502614b86501190016e95432fd511fe000ce102699735e8b115ae",
+        "last_name": "ad9a43f09cce7d62c582c1a549447897b5bf4486f1c5c62855364624da8797f8",
+        "description": "02db060eff943c9d3e99f79dd573e1e2ab0d52d4dd041f59a0bc63f453f0af82",
+        "rich_editing": "bca7b86582d2e065a76fdae8d555d6150567cae3ebf8197c824ff907bad275c7",
+        "syntax_highlighting": "bca7b86582d2e065a76fdae8d555d6150567cae3ebf8197c824ff907bad275c7",
+        "infinite_scrolling": "bca7b86582d2e065a76fdae8d555d6150567cae3ebf8197c824ff907bad275c7",
+        "comment_shortcuts": "fca60385bdc05e4ebceb47a420ebbfdce305a2eed96be1bca671586741d67fd9",
+        "admin_color": "e8575c28b3ca4614596b587383dfd4f08e05990c7affb3a756eaab93d1ac3314",
+        "use_ssl": "fca7ef1f513c5262860fd2a0461647b39707570961815be078d540375ece6ef7",
+        "show_admin_bar_front": "bca7b86582d2e065a76fdae8d555d6150567cae3ebf8197c824ff907bad275c7",
+        "locale": "02db060eff943c9d3e99f79dd573e1e2ab0d52d4dd041f59a0bc63f453f0af82",
+        "wp_capabilities": "7eeb2dd0b0251f03ab88b655e6efcf36ebe3575c67852466aa56f5d7e77c1dc0",
+        "wp_user_level": "fca7ef1f513c5262860fd2a0461647b39707570961815be078d540375ece6ef7",
+        "dismissed_wp_pointers": "02db060eff943c9d3e99f79dd573e1e2ab0d52d4dd041f59a0bc63f453f0af82",
+        "last_update": "2286b97a69b3f19497d6f58859a4196daa0097bb01a7177a5702b0a380c5cb10",
+        "billing_first_name": "44b389b7b52502614b86501190016e95432fd511fe000ce102699735e8b115ae",
+        "billing_last_name": "ad9a43f09cce7d62c582c1a549447897b5bf4486f1c5c62855364624da8797f8",
+        "billing_address_1": "0e2c2d286b34d52395935e055c5a0791c04744990b702e70844d824bec775808",
+        "billing_city": "c0bd463cfa063a47591d748a37dadff06e665a96f6347a8cd2fdde0bf2df27cd",
+        "billing_state": "b81147ba9dbefe819210528968b9097ae91aef5a76970bd4e329f1a971c11479",
+        "billing_postcode": "194aa161b6d5b8333b1e762e49afcad4bb10868875958557ed0c7edf63734d10",
+        "billing_country": "7bc6543e12cb142c687e0d5411ceb3d771cecc1c6a48bcc19e2af78c013d8a0d",
+        "billing_email": "d2931076c26d88120580b98a7ca0641d033f0a159aae1e70b91bd6f3285a3f09",
+        "billing_phone": "2e0598043f47e1a770b0496f699466d53de556b327f2461ae7393626f73787bb",
+        "shipping_first_name": "44b389b7b52502614b86501190016e95432fd511fe000ce102699735e8b115ae",
+        "shipping_last_name": "ad9a43f09cce7d62c582c1a549447897b5bf4486f1c5c62855364624da8797f8",
+        "shipping_address_1": "0e2c2d286b34d52395935e055c5a0791c04744990b702e70844d824bec775808",
+        "shipping_city": "c0bd463cfa063a47591d748a37dadff06e665a96f6347a8cd2fdde0bf2df27cd",
+        "shipping_state": "b81147ba9dbefe819210528968b9097ae91aef5a76970bd4e329f1a971c11479",
+        "shipping_postcode": "194aa161b6d5b8333b1e762e49afcad4bb10868875958557ed0c7edf63734d10",
+        "shipping_country": "7bc6543e12cb142c687e0d5411ceb3d771cecc1c6a48bcc19e2af78c013d8a0d",
+        "shipping_phone": "2e0598043f47e1a770b0496f699466d53de556b327f2461ae7393626f73787bb",
+        "_demo_20260927": "2ff76101483c3275aec53397fdd501512c1882e1cef59be65724e0d76510ec98",
+        "paying_customer": "7ad742edb7e866caa78ced1e4455d2e9cbd8adb2074e7c323d21b4e67732e755",
+        "_arraysubs_store_credit": "4b928265703dbe10a11e66a6335ac4fc9c7149573b34de58b5ad445f435092d6",
+        "wc_money_spent_wp": "0f80eb1d1454baad2e80b0bc5879f8d3301b5fc226717693ce2c3236f9d0c036",
+        "wc_order_count_wp": "7ad742edb7e866caa78ced1e4455d2e9cbd8adb2074e7c323d21b4e67732e755",
+        "_arraysubs_additional_shipping_addresses": "898ad8566a298470c93d76cd23eaeab85040484209914373e29e6a080157fdf1"
+    }
+}

@@ -1,0 +1,11 @@
+{
+  "active_plugins": true,
+  "modules": true,
+  "portal_settings": true,
+  "profile_settings": true,
+  "myaccount_menu": true,
+  "profile_fields": true,
+  "customer_224": true,
+  "pages": true,
+  "visibility": true
+}

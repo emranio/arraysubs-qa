@@ -1,0 +1,26 @@
+[
+  {
+    "path": "/my-account/",
+    "text": "Dashboard"
+  },
+  {
+    "path": "/my-account/as-subscriptions/",
+    "text": "Subscriptions\t\t\t\t1"
+  },
+  {
+    "path": "/my-account/orders/",
+    "text": "Orders"
+  },
+  {
+    "path": "/my-account/downloads/",
+    "text": "Downloads"
+  },
+  {
+    "path": "/my-account/edit-address/",
+    "text": "Addresses"
+  },
+  {
+    "path": "/my-account/edit-account/",
+    "text": "Account details"
+  }
+]

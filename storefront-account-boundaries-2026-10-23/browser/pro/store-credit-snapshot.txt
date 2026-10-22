@@ -1,0 +1,87 @@
+- StaticText "Your Store Credit Balance"
+- generic
+  - StaticText "40.00$"
+- link "+ Buy More Credit" [ref=e12]
+- generic
+  - heading "Purchase Store Credit" [level=3, ref=e13]
+  - paragraph
+    - StaticText "Add more credit to your account for future purchases and subscription renewals."
+  - heading "QPC QA 20260910 Credit" [level=4, ref=e14]
+  - generic
+    - StaticText "50.00$"
+  - StaticText "+30% Bonus"
+  - generic
+    - StaticText "Price: "
+    - StaticText "Original price was: 50.00$."
+    - StaticText "Current price is: 45.00$."
+  - link "Buy Now" [ref=e20]
+  - heading "Demo · Store Credit $25" [level=4, ref=e15]
+  - generic
+    - StaticText "25.00$"
+  - generic
+    - StaticText "Price: 25.00$"
+  - link "Buy Now" [ref=e21]
+  - heading "Demo · Store Credit $50" [level=4, ref=e16]
+  - generic
+    - StaticText "50.00$"
+  - generic
+    - StaticText "Price: 50.00$"
+  - link "Buy Now" [ref=e22]
+  - heading "Demo · Store Credit $100" [level=4, ref=e17]
+  - generic
+    - StaticText "100.00$"
+  - StaticText "+10% Bonus"
+  - generic
+    - StaticText "Price: 100.00$"
+  - link "Buy Now" [ref=e23]
+- heading "Transaction History" [level=3, ref=e7]
+- table
+  - rowgroup
+    - row
+      - columnheader "DATE" [ref=e36]
+      - columnheader "TITLE" [ref=e37]
+      - columnheader "INFO" [ref=e38]
+  - row
+    - cell "September 19, 2026 7:00 am" [ref=e24]
+    - cell "Demo promotional credit PROMOTIONAL" [ref=e25]
+      - StaticText "Demo promotional credit"
+      - StaticText "PROMOTIONAL"
+    - cell "+40.00$—" [ref=e26]
+      - StaticText "+40.00$—"
+- heading "QPC QA 20260910 Credit" [level=4, ref=e14]
+- generic
+  - StaticText "50.00$"
+- StaticText "+30% Bonus"
+- generic
+  - StaticText "Price: "
+  - StaticText "Original price was: 50.00$."
+  - StaticText "Current price is: 45.00$."
+- link "Buy Now" [ref=e20]
+- heading "Demo · Store Credit $25" [level=4, ref=e15]
+- generic
+  - StaticText "25.00$"
+- generic
+  - StaticText "Price: 25.00$"
+- link "Buy Now" [ref=e21]
+- heading "Demo · Store Credit $50" [level=4, ref=e16]
+- generic
+  - StaticText "50.00$"
+- generic
+  - StaticText "Price: 50.00$"
+- link "Buy Now" [ref=e22]
+- heading "Demo · Store Credit $100" [level=4, ref=e17]
+- generic
+  - StaticText "100.00$"
+- StaticText "+10% Bonus"
+- generic
+  - StaticText "Price: 100.00$"
+- link "Buy Now" [ref=e23]
+- row
+  - cell "September 19, 2026 7:00 am" [ref=e24]
+  - cell "Demo promotional credit PROMOTIONAL" [ref=e25]
+    - StaticText "Demo promotional credit"
+    - StaticText "PROMOTIONAL"
+  - cell "+40.00$—" [ref=e26]
+    - StaticText "+40.00$—"
+- StaticText "Original price was: 50.00$."
+- StaticText "Current price is: 45.00$."

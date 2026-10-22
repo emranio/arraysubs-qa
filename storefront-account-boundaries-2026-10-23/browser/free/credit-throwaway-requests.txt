@@ -1,0 +1,20 @@
+[E50A9F314F3864359FF3DF24959BA482] GET http://localhost:10013/cart-2/?sfa=free-credit-guard (Document) 200
+[32513.211] GET http://localhost:10013/cart-2/undefinedwc/store/v1/cart (Fetch)
+[32513.211] GET http://localhost:10013/cart/ (Fetch)
+[EDE47F5D9675602BD78ED6CB3953C5CC] GET http://localhost:10013/cart-2/?sfa=free-credit-guard (Document) 200
+[32533.211] GET http://localhost:10013/cart-2/undefinedwc/store/v1/cart (Fetch)
+[32533.211] GET http://localhost:10013/cart/ (Fetch) 200
+[259DEF409550581CCD07F75F7A5A97FF] GET http://localhost:10013/product/demo-%c2%b7-store-credit-25/?sfa=free-credit-guard (Document) 200
+[32533.436] GET http://localhost:10013/wp-json/wc/store/v1/cart (Fetch) 200
+[D50D670947F7FA0597B3E73973C90D6B] POST http://localhost:10013/product/demo-%c2%b7-store-credit-25/ (Document)
+[D50D670947F7FA0597B3E73973C90D6B] GET http://localhost:10013/checkout-2/ (Document) 200
+[32533.674] POST http://localhost:10013/wp-admin/admin-ajax.php (Fetch) 200
+[B93DFC92D9B1A7281F68BF0ED20E37B1] GET http://localhost:10013/cart-2/?sfa=free-credit-guard (Document) 200
+[32533.938] GET http://localhost:10013/cart-2/undefinedwc/store/v1/cart (Fetch)
+[32533.938] GET http://localhost:10013/cart/ (Fetch) 200
+[32533.941] GET http://localhost:10013/cart-2/undefinedwc/store/v1/cart (Fetch)
+[32533.941] GET http://localhost:10013/cart/ (Fetch) 200
+[32533.942] GET http://localhost:10013/cart-2/undefinedwc/store/v1/cart (Fetch)
+[32533.942] GET http://localhost:10013/cart/ (Fetch) 200
+[32533.943] GET http://localhost:10013/cart-2/undefinedwc/store/v1/cart (Fetch)
+[32533.943] GET http://localhost:10013/cart/ (Fetch) 200

@@ -1,0 +1,1 @@
+http://localhost:10013/product/demo-%c2%b7-lifetime-resource-library/

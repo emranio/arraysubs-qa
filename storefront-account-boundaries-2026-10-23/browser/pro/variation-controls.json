@@ -1,0 +1,37 @@
+{
+  "selects": [
+    {
+      "id": "tier",
+      "name": "attribute_tier",
+      "options": [
+        {
+          "text": "Choose an option",
+          "value": ""
+        }
+      ]
+    }
+  ],
+  "variationId": "0",
+  "variations": [
+    {
+      "attributes": {
+        "attribute_tier": "basic"
+      },
+      "featureFields": [],
+      "is_in_stock": true,
+      "is_purchasable": true,
+      "variation_id": 6723,
+      "variation_is_visible": true
+    },
+    {
+      "attributes": {
+        "attribute_tier": "professional"
+      },
+      "featureFields": [],
+      "is_in_stock": true,
+      "is_purchasable": true,
+      "variation_id": 6724,
+      "variation_is_visible": true
+    }
+  ]
+}

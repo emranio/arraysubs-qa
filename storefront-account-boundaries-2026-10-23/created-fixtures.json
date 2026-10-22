@@ -1,0 +1,12 @@
+{
+    "variable_product": 19371,
+    "variations": {
+        "Basic": 19373,
+        "Pro": 19375,
+        "Inherited": 19377
+    },
+    "variable_url": "http:\/\/localhost:10013\/product\/qa-boundary-variation-features-20261023\/",
+    "shortcode_page": 19379,
+    "shortcode_url": "http:\/\/localhost:10013\/qa-credit-shortcode-20261023\/",
+    "credit_product": 6725
+}

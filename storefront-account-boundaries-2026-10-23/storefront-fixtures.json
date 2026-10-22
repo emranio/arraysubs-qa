@@ -1,0 +1,63 @@
+{
+    "variables": [
+        {
+            "parent_id": 6722,
+            "variation_id": 6723,
+            "parent_status": "publish",
+            "url": "http:\/\/localhost:10013\/product\/demo-%c2%b7-membership-tier\/",
+            "name": "Demo \u00b7 Membership Tier",
+            "features": [
+                {
+                    "label": "Library Access",
+                    "enabled": true
+                },
+                {
+                    "label": "Monthly Downloads",
+                    "enabled": true
+                },
+                {
+                    "label": "Masterclasses",
+                    "enabled": true
+                },
+                {
+                    "label": "Team Seats",
+                    "enabled": true
+                },
+                {
+                    "label": "Support Level",
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "parent_id": 6722,
+            "variation_id": 6724,
+            "parent_status": "publish",
+            "url": "http:\/\/localhost:10013\/product\/demo-%c2%b7-membership-tier\/",
+            "name": "Demo \u00b7 Membership Tier",
+            "features": [
+                {
+                    "label": "Library Access",
+                    "enabled": true
+                },
+                {
+                    "label": "Monthly Downloads",
+                    "enabled": true
+                },
+                {
+                    "label": "Masterclasses",
+                    "enabled": true
+                },
+                {
+                    "label": "Team Seats",
+                    "enabled": true
+                },
+                {
+                    "label": "Support Level",
+                    "enabled": true
+                }
+            ]
+        }
+    ],
+    "credit_products": []
+}

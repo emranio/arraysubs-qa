@@ -1,0 +1,53 @@
+- heading "My Features" [level=2, ref=e7]
+- paragraph
+  - StaticText "Below are all the features included with your active subscriptions."
+- table
+  - rowgroup
+    - row
+      - columnheader "Demo · Lifetime Resource Library Subscription #8326" [ref=e38]
+        - StaticText "Demo · Lifetime Resource Library "
+        - link "Subscription #8326" [ref=e50]
+    - row
+      - columnheader "Feature" [ref=e39]
+      - columnheader "Your Entitlement" [ref=e40]
+      - columnheader "Usage" [ref=e41]
+  - row
+    - cell "Library Access" [ref=e14]
+    - cell "✓ Yes" [ref=e15]
+    - cell "—" [ref=e16]
+  - row
+    - cell "Monthly Downloads" [ref=e17]
+    - cell "15" [ref=e18]
+    - cell "0 / 15" [ref=e19]
+  - row
+    - cell "Masterclasses" [ref=e20]
+    - cell "✓ Yes" [ref=e21]
+    - cell "—" [ref=e22]
+  - row
+    - cell "Team Seats" [ref=e23]
+    - cell "5" [ref=e24]
+    - cell "0 / 5" [ref=e25]
+  - row
+    - cell "Support Level" [ref=e26]
+    - cell "Priority" [ref=e27]
+    - cell "—" [ref=e28]
+- row
+  - cell "Library Access" [ref=e14]
+  - cell "✓ Yes" [ref=e15]
+  - cell "—" [ref=e16]
+- row
+  - cell "Monthly Downloads" [ref=e17]
+  - cell "15" [ref=e18]
+  - cell "0 / 15" [ref=e19]
+- row
+  - cell "Masterclasses" [ref=e20]
+  - cell "✓ Yes" [ref=e21]
+  - cell "—" [ref=e22]
+- row
+  - cell "Team Seats" [ref=e23]
+  - cell "5" [ref=e24]
+  - cell "0 / 5" [ref=e25]
+- row
+  - cell "Support Level" [ref=e26]
+  - cell "Priority" [ref=e27]
+  - cell "—" [ref=e28]

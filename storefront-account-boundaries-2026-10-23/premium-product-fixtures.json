@@ -1,0 +1,37 @@
+[
+    {
+        "id": 5898,
+        "type": "arraysubs_store_credit",
+        "name": "QPC QA 20260910 Credit",
+        "url": "http:\/\/localhost:10013\/product\/qpc-qa-20260910-credit\/",
+        "price": "45.00"
+    },
+    {
+        "id": 6725,
+        "type": "arraysubs_store_credit",
+        "name": "Demo \u00b7 Store Credit $25",
+        "url": "http:\/\/localhost:10013\/product\/demo-%c2%b7-store-credit-25\/",
+        "price": "25"
+    },
+    {
+        "id": 6726,
+        "type": "arraysubs_store_credit",
+        "name": "Demo \u00b7 Store Credit $50",
+        "url": "http:\/\/localhost:10013\/product\/demo-%c2%b7-store-credit-50\/",
+        "price": "50"
+    },
+    {
+        "id": 5905,
+        "type": "arraysubs_subscription_bundle",
+        "name": "QPC QA 2026-09-10 Bundle",
+        "url": "http:\/\/localhost:10013\/product\/qpc-qa-2026-09-10-bundle\/",
+        "price": "13.5"
+    },
+    {
+        "id": 6728,
+        "type": "arraysubs_subscription_bundle",
+        "name": "Demo \u00b7 Coffee and Tea Membership Bundle",
+        "url": "http:\/\/localhost:10013\/product\/demo-%c2%b7-coffee-and-tea-membership-bundle\/",
+        "price": "50.4"
+    }
+]

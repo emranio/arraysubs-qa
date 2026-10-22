@@ -1,0 +1,38 @@
+- status
+  - generic
+    - link "Confirm email address" [ref=e13]
+    - StaticText "Confirm your email address to check for past orders and link them to your account."
+- table
+  - rowgroup
+    - row
+      - columnheader "Order" [ref=e26]
+      - columnheader "Date" [ref=e27]
+      - columnheader "Status" [ref=e28]
+      - columnheader "Total" [ref=e29]
+      - columnheader "Actions" [ref=e30]
+  - row
+    - rowheader "View order number 8327" [ref=e14]
+      - link "View order number 8327" [ref=e31]
+        - StaticText "#8327"
+    - cell "September 27, 2026" [ref=e15]
+      - time
+        - StaticText "September 27, 2026"
+    - cell "Completed" [ref=e16]
+    - cell "349.00$ for 1 item" [ref=e17]
+      - StaticText "349.00$ for 1 item"
+    - cell "View order 8327" [ref=e18]
+      - link "View order 8327" [ref=e32]
+        - StaticText "View"
+- row
+  - rowheader "View order number 8327" [ref=e14]
+    - link "View order number 8327" [ref=e31]
+      - StaticText "#8327"
+  - cell "September 27, 2026" [ref=e15]
+    - time
+      - StaticText "September 27, 2026"
+  - cell "Completed" [ref=e16]
+  - cell "349.00$ for 1 item" [ref=e17]
+    - StaticText "349.00$ for 1 item"
+  - cell "View order 8327" [ref=e18]
+    - link "View order 8327" [ref=e32]
+      - StaticText "View"

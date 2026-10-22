@@ -1,0 +1,17 @@
+[21280.622] GET http://localhost:10013/wp-json/arraysubs/v1/members/224 (Fetch) 200
+[21280.623] GET http://localhost:10013/wp-json/arraysubs/v1/members/224 (Fetch) 200
+[21280.626] GET http://localhost:10013/wp-json/arraysubs/v1/members/search?query=Rowan+Sullivan (Fetch) 200
+[21280.627] GET http://localhost:10013/wp-json/arraysubs/v1/members/223 (Fetch) 200
+[21280.630] GET http://localhost:10013/wp-json/arraysubs/v1/members/search?query=Finley+Sullivan (Fetch) 200
+[21280.632] GET http://localhost:10013/wp-json/arraysubs/v1/members/224 (Fetch) 200
+[21280.1200] GET http://localhost:10013/wp-json/arraysubs/v1/members/224 (Fetch) 200
+[21280.1201] GET http://localhost:10013/wp-json/arraysubs/v1/members/224 (Fetch) 200
+[21280.1206] POST http://localhost:10013/wp-json/arraysubs/v1/members/224 (Fetch) 200
+[21279.563] GET http://localhost:10013/wp-json/arraysubs/v1/members/224 (Fetch) 200
+[21279.564] GET http://localhost:10013/wp-json/arraysubs/v1/members/224 (Fetch) 200
+[21279.1686] GET http://localhost:10013/wp-json/arraysubs/v1/members/224 (Fetch) 200
+[21279.1687] GET http://localhost:10013/wp-json/arraysubs/v1/members/224 (Fetch) 200
+[23709.563] GET http://localhost:10013/wp-json/arraysubs/v1/members/144 (Fetch) 200
+[23709.564] GET http://localhost:10013/wp-json/arraysubs/v1/members/144 (Fetch) 200
+[23709.1703] GET http://localhost:10013/wp-json/arraysubs/v1/members/224 (Fetch) 200
+[23709.1704] GET http://localhost:10013/wp-json/arraysubs/v1/members/224 (Fetch) 200

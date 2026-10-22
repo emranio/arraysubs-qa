@@ -1,0 +1,24 @@
+- paragraph
+  - StaticText "The following addresses will be used on the checkout page by default."
+- sectionheader
+  - heading "Billing address" [level=2, ref=e11]
+  - link "Edit Billing address" [ref=e12]
+- group
+  - StaticText "Finley Sullivan"
+  - LineBreak "\n"
+  - StaticText "319 Demo Avenue"
+  - LineBreak "\n"
+  - StaticText "Toronto ON M5V 2T6"
+  - LineBreak "\n"
+  - StaticText "Canada"
+- sectionheader
+  - heading "Shipping address" [level=2, ref=e13]
+  - link "Edit Shipping address" [ref=e14]
+- group
+  - StaticText "Finley Sullivan"
+  - LineBreak "\n"
+  - StaticText "319 Demo Avenue"
+  - LineBreak "\n"
+  - StaticText "Toronto ON M5V 2T6"
+  - LineBreak "\n"
+  - StaticText "Canada"

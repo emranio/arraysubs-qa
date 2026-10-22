@@ -1,0 +1,28 @@
+[CFDFE2322ACC409B6EBE2A79DD5B467F] GET http://localhost:10013/wp-admin/?localwp_auto_login=1 (Document)
+[CFDFE2322ACC409B6EBE2A79DD5B467F] GET http://localhost:10013/wp-admin/user/ (Document)
+[CFDFE2322ACC409B6EBE2A79DD5B467F] GET http://localhost:10013/wp-admin/ (Document) 200
+[28250.557] POST http://localhost:10013/wp-admin/admin-ajax.php (XHR)
+[3C8723FC0C0B201205E834DB96755613] GET http://localhost:10013/wp-admin/user-edit.php?user_id=224 (Document) 200
+[28250.566] GET http://localhost:10013/wp-admin/admin-ajax.php?action=woocommerce_load_status_widget&security=REDACTED (XHR)
+[28250.567] GET http://localhost:10013/wp-admin/admin-ajax.php?action=woocommerce_load_recent_reviews_widget&security=REDACTED (XHR)
+[295E66454C128D50D1EE2EA4654ED5F4] GET http://localhost:10013/wp-login.php?action=arraysubs_login_as_user&user_id=224&_wpnonce=REDACTED&back_url=http%3A%2F%2Flocalhost%3A10013%2Fwp-admin%2Fuser-edit.php%3Fuser_id%3D224 (Document)
+[295E66454C128D50D1EE2EA4654ED5F4] GET http://localhost:10013/ (Document) 200
+[D5F54F35863F8BED817B8F74F1371358] GET http://localhost:10013/my-account/ (Document) 200
+[6D78AAFD18C3C41CA73820297B6BCD1B] GET http://localhost:10013/my-account/?sfa=pro1 (Document) 200
+[28250.1655] GET http://localhost:10013/wp-json/wc/store/v1/cart (Fetch) 200
+[D28A5683C86E6D972A72C57318F0A378] GET http://localhost:10013/my-account/as-subscriptions/ (Document) 200
+[28250.1850] GET http://localhost:10013/wp-json/wc/store/v1/cart (Fetch) 200
+[03B861878C203F82DD9E8788E90ACE57] GET http://localhost:10013/my-account/as-view-subscription/8326/ (Document) 200
+[28250.2045] GET http://localhost:10013/wp-json/wc/store/v1/cart (Fetch) 200
+[DE9C1BDE99B4CD189E4382A49AC9C3B0] GET http://localhost:10013/my-account/orders/?sfa=pro1 (Document) 200
+[28250.2240] GET http://localhost:10013/wp-json/wc/store/v1/cart (Fetch) 200
+[D87F4890E4774E7B25765587B3D7B530] GET http://localhost:10013/my-account/downloads/?sfa=pro1 (Document) 200
+[28250.2435] GET http://localhost:10013/wp-json/wc/store/v1/cart (Fetch) 200
+[FD37C62BAF705D33B5C8DDA5E4DD5A6B] GET http://localhost:10013/my-account/edit-address/?sfa=pro1 (Document) 200
+[28250.2634] GET http://localhost:10013/wp-json/wc/store/v1/cart (Fetch) 200
+[E037178D88DB8E410D6EC78318E9C5F1] GET http://localhost:10013/my-account/edit-account/?sfa=pro1 (Document) 200
+[28250.2839] GET http://localhost:10013/wp-json/wc/store/v1/cart (Fetch) 200
+[427DF2D3E6BA1DDFB691186D78C486E9] GET http://localhost:10013/my-account/as-store-credit/?sfa=pro1 (Document) 200
+[28250.3036] GET http://localhost:10013/wp-json/wc/store/v1/cart (Fetch) 200
+[5B6AAEBF4B84B6C4D6494F531D19B184] GET http://localhost:10013/my-account/as-features/?sfa=pro1 (Document) 200
+[28250.3231] GET http://localhost:10013/wp-json/wc/store/v1/cart (Fetch) 200

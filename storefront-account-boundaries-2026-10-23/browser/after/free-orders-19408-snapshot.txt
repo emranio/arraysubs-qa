@@ -1,0 +1,68 @@
+- status
+  - generic
+    - link "Confirm email address" [ref=e13]
+    - StaticText "Confirm your email address to check for past orders and link them to your account."
+- table
+  - rowgroup
+    - row
+      - columnheader "Order" [ref=e31]
+      - columnheader "Date" [ref=e32]
+      - columnheader "Status" [ref=e33]
+      - columnheader "Total" [ref=e34]
+      - columnheader "Actions" [ref=e35]
+  - row
+    - rowheader "View order number 19408" [ref=e14]
+      - link "View order number 19408" [ref=e36]
+        - StaticText "#19408"
+    - cell "October 23, 2026" [ref=e15]
+      - time
+        - StaticText "October 23, 2026"
+    - cell "Pending payment" [ref=e16]
+    - cell "25.00$ for 1 item" [ref=e17]
+      - StaticText "25.00$ for 1 item"
+    - cell "View order 19408 Cancel order 19408" [ref=e18]
+      - link "View order 19408" [ref=e37]
+        - StaticText "View"
+      - link "Cancel order 19408" [ref=e38]
+        - StaticText "Cancel"
+  - row
+    - rowheader "View order number 8327" [ref=e19]
+      - link "View order number 8327" [ref=e39]
+        - StaticText "#8327"
+    - cell "September 27, 2026" [ref=e20]
+      - time
+        - StaticText "September 27, 2026"
+    - cell "Completed" [ref=e21]
+    - cell "349.00$ for 1 item" [ref=e22]
+      - StaticText "349.00$ for 1 item"
+    - cell "View order 8327" [ref=e23]
+      - link "View order 8327" [ref=e40]
+        - StaticText "View"
+- row
+  - rowheader "View order number 19408" [ref=e14]
+    - link "View order number 19408" [ref=e36]
+      - StaticText "#19408"
+  - cell "October 23, 2026" [ref=e15]
+    - time
+      - StaticText "October 23, 2026"
+  - cell "Pending payment" [ref=e16]
+  - cell "25.00$ for 1 item" [ref=e17]
+    - StaticText "25.00$ for 1 item"
+  - cell "View order 19408 Cancel order 19408" [ref=e18]
+    - link "View order 19408" [ref=e37]
+      - StaticText "View"
+    - link "Cancel order 19408" [ref=e38]
+      - StaticText "Cancel"
+- row
+  - rowheader "View order number 8327" [ref=e19]
+    - link "View order number 8327" [ref=e39]
+      - StaticText "#8327"
+  - cell "September 27, 2026" [ref=e20]
+    - time
+      - StaticText "September 27, 2026"
+  - cell "Completed" [ref=e21]
+  - cell "349.00$ for 1 item" [ref=e22]
+    - StaticText "349.00$ for 1 item"
+  - cell "View order 8327" [ref=e23]
+    - link "View order 8327" [ref=e40]
+      - StaticText "View"

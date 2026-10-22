@@ -1,0 +1,102 @@
+- paragraph
+  - StaticText "Order #"
+  - mark
+    - StaticText "8327"
+  - StaticText " was placed on "
+  - mark
+    - StaticText "September 27, 2026"
+  - StaticText " and is currently "
+  - mark
+    - StaticText "Completed"
+  - StaticText "."
+- generic
+  - heading "Order details" [level=2, ref=e11]
+  - table
+    - rowgroup
+      - row
+        - columnheader "Product" [ref=e36]
+        - columnheader "Total" [ref=e37]
+    - row
+      - cell "Demo · Lifetime Resource Library (Lifetime Deal) ×1" [ref=e26]
+        - link "Demo · Lifetime Resource Library" [ref=e38]
+        - StaticText " (Lifetime Deal) "
+        - strong
+          - StaticText "×1"
+      - cell "349.00$" [ref=e27]
+        - StaticText "349.00$"
+    - rowgroup
+      - row
+        - rowheader "Subtotal:" [ref=e39]
+        - cell "349.00$" [ref=e40]
+          - StaticText "349.00$"
+      - row
+        - rowheader "Total:" [ref=e41]
+        - cell "349.00$" [ref=e42]
+          - StaticText "349.00$"
+      - row
+        - rowheader "Payment method:" [ref=e43]
+        - cell "Demo payment (manual)" [ref=e44]
+      - row
+        - rowheader "Note:" [ref=e45]
+        - cell "Synthetic demo transaction." [ref=e46]
+  - paragraph
+    - link "Order again" [ref=e15]
+  - generic
+    - heading "Related Subscriptions" [level=2, ref=e16]
+    - table
+      - rowgroup
+        - row
+          - columnheader "Subscription" [ref=e51]
+          - columnheader "Status" [ref=e52]
+          - columnheader "Next Payment" [ref=e53]
+          - columnheader "Total" [ref=e54]
+      - row
+        - cell "#8326" [ref=e47]
+          - link "#8326" [ref=e55]
+        - cell "Active" [ref=e48]
+        - cell "—" [ref=e49]
+        - cell "349.00$ / Lifetime Deal" [ref=e50]
+          - StaticText "349.00$ / Lifetime Deal"
+- generic
+  - heading "Billing address" [level=2, ref=e12]
+  - StaticText "Finley Sullivan"
+  - LineBreak "\n"
+  - StaticText "319 Demo Avenue"
+  - LineBreak "\n"
+  - StaticText "Toronto ON M5V 2T6"
+  - LineBreak "\n"
+  - StaticText "Canada"
+  - paragraph
+    - StaticText ""
+    - StaticText "+1 202 555 0319"
+  - paragraph
+    - StaticText ""
+    - StaticText "demo.260927.220@example.test"
+- StaticText "Finley Sullivan"
+- LineBreak "\n"
+- StaticText "319 Demo Avenue"
+- LineBreak "\n"
+- StaticText "Toronto ON M5V 2T6"
+- LineBreak "\n"
+- StaticText "Canada"
+- paragraph
+  - StaticText ""
+  - StaticText "+1 202 555 0319"
+- paragraph
+  - StaticText ""
+  - StaticText "demo.260927.220@example.test"
+- row
+  - cell "Demo · Lifetime Resource Library (Lifetime Deal) ×1" [ref=e26]
+    - link "Demo · Lifetime Resource Library" [ref=e38]
+    - StaticText " (Lifetime Deal) "
+    - strong
+      - StaticText "×1"
+  - cell "349.00$" [ref=e27]
+    - StaticText "349.00$"
+- row
+  - cell "#8326" [ref=e47]
+    - link "#8326" [ref=e55]
+  - cell "Active" [ref=e48]
+  - cell "—" [ref=e49]
+  - cell "349.00$ / Lifetime Deal" [ref=e50]
+    - StaticText "349.00$ / Lifetime Deal"

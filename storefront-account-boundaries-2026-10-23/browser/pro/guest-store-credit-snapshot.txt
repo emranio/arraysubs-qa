@@ -1,0 +1,32 @@
+- heading "Login" [level=2, ref=e5]
+- generic
+  - LabelText
+    - StaticText "Username or email address"
+    - StaticText "Required"
+  - textbox "Username or email address Required" [required, ref=e10]
+  - LabelText
+    - StaticText "Password"
+    - StaticText "Required"
+  - textbox "Password Required" [required, ref=e11]
+  - button "Show password" [ref=e12]
+  - LabelText
+    - checkbox "Remember me" [checked=false, ref=e16]
+    - StaticText "Remember me"
+  - button "Log in" [ref=e13]
+  - paragraph
+    - link "Lost your password?" [ref=e17]
+- LabelText
+  - StaticText "Username or email address"
+  - StaticText "Required"
+- textbox "Username or email address Required" [required, ref=e10]
+- LabelText
+  - StaticText "Password"
+  - StaticText "Required"
+- textbox "Password Required" [required, ref=e11]
+- button "Show password" [ref=e12]
+- LabelText
+  - checkbox "Remember me" [checked=false, ref=e16]
+  - StaticText "Remember me"
+- button "Log in" [ref=e13]
+- StaticText "Required"
+- StaticText "Required"

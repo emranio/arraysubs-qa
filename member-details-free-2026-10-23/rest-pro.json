@@ -1,0 +1,92 @@
+{
+    "mode": "pro",
+    "checks": [
+        {
+            "check": "Administrator can read an existing member",
+            "passed": true
+        },
+        {
+            "check": "Shared account, address and purchase sections are returned",
+            "passed": true
+        },
+        {
+            "check": "Premium credit is present only when its provider is live",
+            "passed": true
+        },
+        {
+            "check": "There is exactly one member read route",
+            "passed": true
+        },
+        {
+            "check": "Core owns the route in both configurations",
+            "passed": true
+        },
+        {
+            "check": "Member search finds the target customer",
+            "passed": true
+        },
+        {
+            "check": "Missing members return 404",
+            "passed": true
+        },
+        {
+            "check": "Invalid profile saves are rejected without changing the account",
+            "passed": true
+        },
+        {
+            "check": "A paid subscription fixture exists",
+            "passed": true
+        },
+        {
+            "check": "Member subscription totals reflect actual recurring billing amounts",
+            "passed": true
+        },
+        {
+            "check": "Member totals use the subscription currency",
+            "passed": true
+        },
+        {
+            "check": "Switching credit off leaves core member details available without premium balances",
+            "passed": true
+        },
+        {
+            "check": "Disabled credit does not add customer shortcuts",
+            "passed": true
+        },
+        {
+            "check": "Anonymous visitors cannot read member data",
+            "passed": true
+        },
+        {
+            "check": "Customers cannot use the administrative member API",
+            "passed": true
+        },
+        {
+            "check": "Customers cannot edit through the administrative member API",
+            "passed": true
+        },
+        {
+            "check": "Disposable shop manager created for capability checks",
+            "passed": true
+        },
+        {
+            "check": "Shop managers can view customer members",
+            "passed": true
+        },
+        {
+            "check": "Shop managers cannot edit administrator profiles",
+            "passed": true
+        },
+        {
+            "check": "Shop managers can reach validation only for editable customer profiles",
+            "passed": true
+        }
+    ],
+    "paid_fixture": {
+        "subscription_id": 8326,
+        "customer_id": 224,
+        "recurring_amount": 349,
+        "currency": "USD"
+    },
+    "temporary_manager_id_deleted": 382
+}

@@ -1,0 +1,35 @@
+- navigation "Account pages" [ref=e6]
+  - list
+    - listitem [level=1]
+      - link "Dashboard" [ref=e17]
+    - listitem [level=1]
+      - link "Subscriptions 1" [ref=e18]
+        - StaticText "Subscriptions 1"
+    - listitem [level=1]
+      - link "Orders" [ref=e19]
+    - listitem [level=1]
+      - link "Downloads" [ref=e20]
+    - listitem [level=1]
+      - link "Addresses" [ref=e21]
+    - listitem [level=1]
+      - link "Account details" [ref=e22]
+    - listitem [level=1]
+      - link "Log out" [ref=e23]
+- paragraph
+  - StaticText "Hello "
+  - strong
+    - StaticText "Finley Sullivan"
+  - StaticText " (not "
+  - strong
+    - StaticText "Finley Sullivan"
+  - StaticText "? "
+  - link "Log out" [ref=e11]
+  - StaticText ")"
+- paragraph
+  - StaticText "From your account dashboard you can view your "
+  - link "recent orders" [ref=e12]
+  - StaticText ", manage your "
+  - link "shipping and billing addresses" [ref=e13]
+  - StaticText ", and "
+  - link "edit your password and account details" [ref=e14]
+  - StaticText "."

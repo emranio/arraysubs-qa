@@ -1,0 +1,12 @@
+{
+  "memberProviders": [
+    "ArraySubs\\Features\\MemberInsight\\Provider"
+  ],
+  "menu": {
+    "icon": "UserSearch",
+    "id": "manage-members",
+    "path": "/manage-members",
+    "title": "Manage Members",
+    "visiblity": 1
+  }
+}

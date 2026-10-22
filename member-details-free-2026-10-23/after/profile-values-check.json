@@ -1,0 +1,8 @@
+{
+  "profile_and_address_values_unchanged": true,
+  "metadata_only_diff_keys": [
+    "_arraysubs_additional_shipping_addresses",
+    "last_update"
+  ],
+  "note": "Normal WooCommerce save bookkeeping; no restore required or performed."
+}

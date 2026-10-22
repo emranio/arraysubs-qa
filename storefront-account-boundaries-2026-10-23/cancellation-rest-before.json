@@ -1,0 +1,16 @@
+{
+    "checks": [
+        {
+            "check": "Unused Pro cancellation route is not registered",
+            "passed": false
+        }
+    ],
+    "failure": "RuntimeException: Unused Pro cancellation route is not registered",
+    "deleted_fixtures": {
+        "users": [],
+        "product": 0,
+        "subscriptions": []
+    },
+    "saved_settings_unchanged": true,
+    "active_plugins_unchanged": true
+}

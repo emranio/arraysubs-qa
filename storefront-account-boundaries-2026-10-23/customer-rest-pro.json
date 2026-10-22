@@ -1,0 +1,157 @@
+{
+    "pro_loaded": true,
+    "subscription_id": 8326,
+    "owner_id": 224,
+    "other_customer_id": 2,
+    "checks": [
+        {
+            "check": "Existing second ordinary customer available",
+            "passed": true
+        },
+        {
+            "check": "my-subscriptions\/8326\/shipping-address \/ guest status 401",
+            "passed": true
+        },
+        {
+            "check": "my-subscriptions\/8326\/shipping-address \/ different customer status 403",
+            "passed": true
+        },
+        {
+            "check": "my-subscriptions\/8326\/shipping-address \/ owner status 400",
+            "passed": true
+        },
+        {
+            "check": "Virtual lifetime subscription returns its expected no-shipping policy",
+            "passed": true
+        },
+        {
+            "check": "subscriptions\/8326\/payment-method \/ guest status 401",
+            "passed": true
+        },
+        {
+            "check": "subscriptions\/8326\/payment-method \/ different customer status 403",
+            "passed": true
+        },
+        {
+            "check": "subscriptions\/8326\/payment-method \/ owner status 404",
+            "passed": true
+        },
+        {
+            "check": "Lifetime subscription returns controlled missing-method response",
+            "passed": true
+        },
+        {
+            "check": "my-features\/subscription\/8326 \/ guest status 401",
+            "passed": true
+        },
+        {
+            "check": "my-features\/subscription\/8326 \/ different customer status 403",
+            "passed": true
+        },
+        {
+            "check": "my-features\/subscription\/8326 \/ owner status 200",
+            "passed": true
+        },
+        {
+            "check": "Subscription feature response omits internal feature types",
+            "passed": true
+        },
+        {
+            "check": "my-subscriptions\/8326\/early-renew \/ guest status 401",
+            "passed": true
+        },
+        {
+            "check": "my-subscriptions\/8326\/early-renew \/ different customer status 403",
+            "passed": true
+        },
+        {
+            "check": "my-subscriptions\/8326\/early-renew \/ owner status 200",
+            "passed": true
+        },
+        {
+            "check": "my-features refuses anonymous access or is absent in Free",
+            "passed": true
+        },
+        {
+            "check": "my-features current customer 224 loads",
+            "passed": true
+        },
+        {
+            "check": "Feature customer identity ignores requested foreign ID for 224",
+            "passed": true
+        },
+        {
+            "check": "Aggregated feature response omits internal types for 224",
+            "passed": true
+        },
+        {
+            "check": "my-features current customer 2 loads",
+            "passed": true
+        },
+        {
+            "check": "Feature customer identity ignores requested foreign ID for 2",
+            "passed": true
+        },
+        {
+            "check": "Aggregated feature response omits internal types for 2",
+            "passed": true
+        },
+        {
+            "check": "my-credits refuses anonymous access or is absent in Free",
+            "passed": true
+        },
+        {
+            "check": "my-credits current customer 224 loads",
+            "passed": true
+        },
+        {
+            "check": "Credit balance is current customer only for 224",
+            "passed": true
+        },
+        {
+            "check": "my-credits current customer 2 loads",
+            "passed": true
+        },
+        {
+            "check": "Credit balance is current customer only for 2",
+            "passed": true
+        },
+        {
+            "check": "my-credits\/history refuses anonymous access or is absent in Free",
+            "passed": true
+        },
+        {
+            "check": "my-credits\/history current customer 224 loads",
+            "passed": true
+        },
+        {
+            "check": "Credit balance is current customer only for 224",
+            "passed": true
+        },
+        {
+            "check": "my-credits\/history current customer 2 loads",
+            "passed": true
+        },
+        {
+            "check": "Credit balance is current customer only for 2",
+            "passed": true
+        },
+        {
+            "check": "Customer cannot read admin API members\/224",
+            "passed": true
+        },
+        {
+            "check": "Customer cannot read admin API features\/product\/6725",
+            "passed": true
+        },
+        {
+            "check": "Customer cannot read admin API credits\/customer\/224",
+            "passed": true
+        },
+        {
+            "check": "Customer cannot read admin API cancellation\/form-config",
+            "passed": true
+        }
+    ],
+    "failure": null
+}

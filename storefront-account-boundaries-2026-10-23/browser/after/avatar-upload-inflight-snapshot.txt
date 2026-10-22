@@ -1,0 +1,70 @@
+- generic
+  - LabelText
+    - StaticText "First name"
+  - textbox "First name" [required, ref=e11]
+  - LabelText
+    - StaticText "Last name"
+  - textbox "Last name" [required, ref=e12]
+  - LabelText
+    - StaticText "Display name"
+  - textbox "Display name" [required, ref=e13]: QA disposable avatar 20261023
+    - StaticText "QA disposable avatar 20261023"
+  - emphasis
+    - StaticText "This will be how your name will be displayed in the account section and in reviews"
+  - LabelText
+    - StaticText "Email address"
+  - textbox "Email address" [required, ref=e14]: qa-avatar-jlzmwqexqd@example.invalid
+    - StaticText "qa-avatar-jlzmwqexqd@example.invalid"
+  - group "Password change"
+    - Legend
+      - StaticText "Password change"
+    - LabelText
+      - StaticText "Current password (leave blank to leave unchanged)"
+    - textbox "Current password (leave blank to leave unchanged)" [ref=e17]
+    - button "Show password" [ref=e18]
+    - LabelText
+      - StaticText "New password (leave blank to leave unchanged)"
+    - textbox "New password (leave blank to leave unchanged)" [ref=e19]
+    - button "Show password" [ref=e20]
+    - LabelText
+      - StaticText "Confirm new password"
+    - textbox "Confirm new password" [ref=e21]
+    - button "Show password" [ref=e22]
+  - generic
+    - heading "Profile Photo" [level=3, ref=e23]
+    - image "Avatar"
+    - LabelText [disabled, ref=e34] clickable [cursor:pointer]
+      - StaticText "Upload Avatar"
+    - paragraph
+      - StaticText "Uploading..."
+  - paragraph
+    - button "Save changes" [ref=e24]
+- LabelText
+  - StaticText "First name"
+- textbox "First name" [required, ref=e11]
+- LabelText
+  - StaticText "Last name"
+- textbox "Last name" [required, ref=e12]
+- LabelText
+  - StaticText "Display name"
+- textbox "Display name" [required, ref=e13]: QA disposable avatar 20261023
+  - StaticText "QA disposable avatar 20261023"
+- emphasis
+  - StaticText "This will be how your name will be displayed in the account section and in reviews"
+- LabelText
+  - StaticText "Email address"
+- textbox "Email address" [required, ref=e14]: qa-avatar-jlzmwqexqd@example.invalid
+  - StaticText "qa-avatar-jlzmwqexqd@example.invalid"
+- LabelText
+  - StaticText "Current password (leave blank to leave unchanged)"
+- textbox "Current password (leave blank to leave unchanged)" [ref=e17]
+- button "Show password" [ref=e18]
+- LabelText
+  - StaticText "New password (leave blank to leave unchanged)"
+- textbox "New password (leave blank to leave unchanged)" [ref=e19]
+- button "Show password" [ref=e20]
+- LabelText
+  - StaticText "Confirm new password"
+- textbox "Confirm new password" [ref=e21]
+- button "Show password" [ref=e22]
+- image "Avatar"

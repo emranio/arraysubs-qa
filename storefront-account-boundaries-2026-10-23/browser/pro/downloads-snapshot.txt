@@ -1,0 +1,43 @@
+- table
+  - rowgroup
+    - row
+      - columnheader "Product" [ref=e42]
+      - columnheader "Downloads remaining" [ref=e43]
+      - columnheader "Expires" [ref=e44]
+      - columnheader "Download" [ref=e45]
+  - row
+    - cell "New Download Rule" [ref=e22]
+    - cell "∞" [ref=e23]
+    - cell "Never" [ref=e24]
+    - cell "woocommerce-placeholder" [ref=e25]
+      - link "woocommerce-placeholder" [ref=e46]
+  - row
+    - cell "Demo · Member guide download" [ref=e26]
+    - cell "10" [ref=e27]
+    - cell "January 21, 2027" [ref=e28]
+    - cell "Member Guide" [ref=e29]
+      - link "Member Guide" [ref=e47]
+  - row
+    - cell "Demo · Premium resource allowance" [ref=e30]
+    - cell "30" [ref=e31]
+    - cell "October 23, 2027" [ref=e32]
+    - cell "Premium Planning Guide" [ref=e33]
+      - link "Premium Planning Guide" [ref=e48]
+- row
+  - cell "New Download Rule" [ref=e22]
+  - cell "∞" [ref=e23]
+  - cell "Never" [ref=e24]
+  - cell "woocommerce-placeholder" [ref=e25]
+    - link "woocommerce-placeholder" [ref=e46]
+- row
+  - cell "Demo · Member guide download" [ref=e26]
+  - cell "10" [ref=e27]
+  - cell "January 21, 2027" [ref=e28]
+  - cell "Member Guide" [ref=e29]
+    - link "Member Guide" [ref=e47]
+- row
+  - cell "Demo · Premium resource allowance" [ref=e30]
+  - cell "30" [ref=e31]
+  - cell "October 23, 2027" [ref=e32]
+  - cell "Premium Planning Guide" [ref=e33]
+    - link "Premium Planning Guide" [ref=e48]

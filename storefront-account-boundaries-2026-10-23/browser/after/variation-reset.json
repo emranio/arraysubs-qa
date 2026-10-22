@@ -1,0 +1,30 @@
+{
+  "featureWrappers": [
+    {
+      "display": "none",
+      "text": "\n                    "
+    }
+  ],
+  "selected": "",
+  "variationFeatureFields": [
+    {
+      "fields": [
+        "arraysubs_features_html"
+      ],
+      "id": 19373
+    },
+    {
+      "fields": [
+        "arraysubs_features_html"
+      ],
+      "id": 19375
+    },
+    {
+      "fields": [
+        "arraysubs_features_html"
+      ],
+      "id": 19377
+    }
+  ],
+  "variationId": ""
+}

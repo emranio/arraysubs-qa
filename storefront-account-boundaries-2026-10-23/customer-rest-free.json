@@ -1,0 +1,97 @@
+{
+    "pro_loaded": false,
+    "subscription_id": 8326,
+    "owner_id": 224,
+    "other_customer_id": 2,
+    "checks": [
+        {
+            "check": "Existing second ordinary customer available",
+            "passed": true
+        },
+        {
+            "check": "my-subscriptions\/8326\/shipping-address \/ guest status 401",
+            "passed": true
+        },
+        {
+            "check": "my-subscriptions\/8326\/shipping-address \/ different customer status 403",
+            "passed": true
+        },
+        {
+            "check": "my-subscriptions\/8326\/shipping-address \/ owner status 400",
+            "passed": true
+        },
+        {
+            "check": "Virtual lifetime subscription returns its expected no-shipping policy",
+            "passed": true
+        },
+        {
+            "check": "subscriptions\/8326\/payment-method \/ guest status 401",
+            "passed": true
+        },
+        {
+            "check": "subscriptions\/8326\/payment-method \/ different customer status 403",
+            "passed": true
+        },
+        {
+            "check": "subscriptions\/8326\/payment-method \/ owner status 404",
+            "passed": true
+        },
+        {
+            "check": "Lifetime subscription returns controlled missing-method response",
+            "passed": true
+        },
+        {
+            "check": "my-features\/subscription\/8326 \/ guest status 404",
+            "passed": true
+        },
+        {
+            "check": "my-features\/subscription\/8326 \/ different customer status 404",
+            "passed": true
+        },
+        {
+            "check": "my-features\/subscription\/8326 \/ owner status 404",
+            "passed": true
+        },
+        {
+            "check": "my-subscriptions\/8326\/early-renew \/ guest status 404",
+            "passed": true
+        },
+        {
+            "check": "my-subscriptions\/8326\/early-renew \/ different customer status 404",
+            "passed": true
+        },
+        {
+            "check": "my-subscriptions\/8326\/early-renew \/ owner status 404",
+            "passed": true
+        },
+        {
+            "check": "my-features refuses anonymous access or is absent in Free",
+            "passed": true
+        },
+        {
+            "check": "my-credits refuses anonymous access or is absent in Free",
+            "passed": true
+        },
+        {
+            "check": "my-credits\/history refuses anonymous access or is absent in Free",
+            "passed": true
+        },
+        {
+            "check": "Customer cannot read admin API members\/224",
+            "passed": true
+        },
+        {
+            "check": "Customer cannot read admin API features\/product\/6725",
+            "passed": true
+        },
+        {
+            "check": "Customer cannot read admin API credits\/customer\/224",
+            "passed": true
+        },
+        {
+            "check": "Customer cannot read admin API cancellation\/form-config",
+            "passed": true
+        }
+    ],
+    "failure": null
+}

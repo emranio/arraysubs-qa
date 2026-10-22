@@ -1,0 +1,35 @@
+{
+    "19371": [
+        {
+            "id": "qa-parent",
+            "name": "Parent library credits",
+            "type": "number",
+            "value": "5",
+            "enabled": true,
+            "order": 0,
+            "reset_period": "none"
+        }
+    ],
+    "19373": [
+        {
+            "id": "qa-basic",
+            "name": "Basic download credits",
+            "type": "number",
+            "value": "10",
+            "enabled": true,
+            "order": 0,
+            "reset_period": "none"
+        }
+    ],
+    "19375": [
+        {
+            "id": "qa-pro",
+            "name": "Pro download credits",
+            "type": "number",
+            "value": "20",
+            "enabled": true,
+            "order": 0,
+            "reset_period": "none"
+        }
+    ]
+}

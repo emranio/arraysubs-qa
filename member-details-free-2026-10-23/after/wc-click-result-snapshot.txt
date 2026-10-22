@@ -1,0 +1,1062 @@
+- generic
+  - generic
+    - navigation "Main menu" [ref=e1]
+      - link "Skip to main content" [ref=e2]
+      - link "Skip to toolbar" [ref=e3]
+      - list
+        - listitem [level=1]
+          - link "Dashboard" [ref=e7]
+            - StaticText "Dashboard"
+          - list
+            - listitem [level=2]
+              - link "Home" [ref=e35]
+            - listitem [level=2]
+              - link "Updates 5" [ref=e36]
+                - StaticText "Updates 5"
+        - listitem [level=1]
+          - link "Posts" [ref=e8]
+            - StaticText "Posts"
+          - list
+            - listitem [level=2]
+              - link "All Posts" [ref=e37]
+            - listitem [level=2]
+              - link "Add Post" [ref=e38]
+            - listitem [level=2]
+              - link "Categories" [ref=e39]
+            - listitem [level=2]
+              - link "Tags" [ref=e40]
+        - listitem [level=1]
+          - link "Media" [ref=e9]
+            - StaticText "Media"
+          - list
+            - listitem [level=2]
+              - link "Library" [ref=e41]
+            - listitem [level=2]
+              - link "Add Media File" [ref=e42]
+        - listitem [level=1]
+          - link "Pages" [ref=e10]
+            - StaticText "Pages"
+          - list
+            - listitem [level=2]
+              - link "All Pages" [ref=e43]
+            - listitem [level=2]
+              - link "Add Page" [ref=e44]
+        - listitem [level=1]
+          - link "Comments" [ref=e11]
+            - StaticText "Comments"
+        - listitem [level=1]
+          - link "ArraySubs" [ref=e12]
+            - StaticText "ArraySubs"
+          - list
+            - listitem [level=2]
+              - link "Home" [ref=e45]
+            - listitem [level=2]
+              - link "Subscriptions" [ref=e46]
+            - listitem [level=2]
+              - link "Manage Members" [ref=e47]
+            - listitem [level=2]
+              - link "Store Credit" [ref=e48]
+            - listitem [level=2]
+              - link "Cancellation Flow" [ref=e49]
+            - listitem [level=2]
+              - link "Member Access" [ref=e50]
+            - listitem [level=2]
+              - link "Checkout Builder" [ref=e51]
+            - listitem [level=2]
+              - link "Profile & My Account" [ref=e52]
+            - listitem [level=2]
+              - link "Reports" [ref=e53]
+            - listitem [level=2]
+              - link "Shortcodes" [ref=e54]
+            - listitem [level=2]
+              - link "Audits" [ref=e55]
+            - listitem [level=2]
+              - link "1-Minute Setup" [ref=e56]
+            - listitem [level=2]
+              - link "Modules" [ref=e57]
+            - listitem [level=2]
+              - link "Settings" [ref=e58]
+            - listitem [level=2]
+              - link "License" [ref=e59]
+            - listitem [level=2]
+              - link "Help" [ref=e60]
+        - listitem [level=1]
+          - link "WPSubscription" [ref=e13]
+            - StaticText "WPSubscription"
+          - list
+            - listitem [level=2]
+              - link "Overview" [ref=e61]
+            - listitem [level=2]
+              - link "Plans" [ref=e62]
+            - listitem [level=2]
+              - link "Delivery" [ref=e63]
+            - listitem [level=2]
+              - link "Subscriptions" [ref=e64]
+            - listitem [level=2]
+              - link "Reports" [ref=e65]
+            - listitem [level=2]
+              - link "Health" [ref=e66]
+            - listitem [level=2]
+              - link "Integrations" [ref=e67]
+            - listitem [level=2]
+              - link "Cancellation Flow" [ref=e68]
+            - listitem [level=2]
+              - link "Settings" [ref=e69]
+            - listitem [level=2]
+              - link "License" [ref=e70]
+            - listitem [level=2]
+              - link "Help" [ref=e71]
+            - listitem [level=2]
+            - listitem [level=2]
+        - listitem [level=1]
+          - link "WooCommerce" [ref=e14]
+            - StaticText "WooCommerce"
+          - list
+            - listitem [level=2]
+              - link "Home 2" [ref=e72]
+                - StaticText "Home 2"
+            - listitem [level=2]
+              - link "Orders 93" [ref=e73]
+                - StaticText "Orders 93"
+            - listitem [level=2]
+              - link "Subscriptions" [ref=e74]
+            - listitem [level=2]
+              - link "Customers" [ref=e75]
+            - listitem [level=2]
+              - link "Coupons" [ref=e76]
+            - listitem [level=2]
+              - link "Reports" [ref=e77]
+            - listitem [level=2]
+              - link "Settings" [ref=e78]
+            - listitem [level=2]
+              - link "Status" [ref=e79]
+            - listitem [level=2]
+              - link "Extensions" [ref=e80]
+        - listitem [level=1]
+          - link "Products" [ref=e15]
+            - StaticText "Products"
+          - list
+            - listitem [level=2]
+              - link "All Products" [ref=e81]
+            - listitem [level=2]
+              - link "Add new product" [ref=e82]
+            - listitem [level=2]
+              - link "Brands" [ref=e83]
+            - listitem [level=2]
+              - link "Categories" [ref=e84]
+            - listitem [level=2]
+              - link "Tags" [ref=e85]
+            - listitem [level=2]
+              - link "Attributes" [ref=e86]
+            - listitem [level=2]
+              - link "Reviews" [ref=e87]
+        - listitem [level=1]
+          - link "Payments" [ref=e16]
+            - StaticText "Payments"
+        - listitem [level=1]
+          - link "Analytics" [ref=e17]
+            - StaticText "Analytics"
+          - list
+            - listitem [level=2]
+              - link "Overview" [ref=e88]
+            - listitem [level=2]
+              - link "Products" [ref=e89]
+            - listitem [level=2]
+              - link "Revenue" [ref=e90]
+            - listitem [level=2]
+              - link "Revenue Forecast" [ref=e91]
+            - listitem [level=2]
+              - link "Churn Analysis" [ref=e92]
+            - listitem [level=2]
+              - link "Retention" [ref=e93]
+            - listitem [level=2]
+              - link "Orders" [ref=e94]
+            - listitem [level=2]
+              - link "Refunds" [ref=e95]
+            - listitem [level=2]
+              - link "Variations" [ref=e96]
+            - listitem [level=2]
+              - link "Categories" [ref=e97]
+            - listitem [level=2]
+              - link "Coupons" [ref=e98]
+            - listitem [level=2]
+              - link "Taxes" [ref=e99]
+            - listitem [level=2]
+              - link "Downloads" [ref=e100]
+            - listitem [level=2]
+              - link "Stock" [ref=e101]
+            - listitem [level=2]
+              - link "Settings" [ref=e102]
+        - listitem [level=1]
+          - link "Marketing" [ref=e18]
+            - StaticText "Marketing"
+          - list
+            - listitem [level=2]
+              - link "Overview" [ref=e103]
+            - listitem [level=2]
+              - link "Coupons" [ref=e104]
+        - listitem [level=1]
+          - link "Appearance" [ref=e19]
+            - StaticText "Appearance"
+          - list
+            - listitem [level=2]
+              - link "Themes" [ref=e105]
+            - listitem [level=2]
+              - link "Editor" [ref=e106]
+            - listitem [level=2]
+              - link "Fonts" [ref=e107]
+        - listitem [level=1]
+          - link "Plugins 5" [ref=e20]
+            - generic
+              - StaticText "Plugins 5"
+          - list
+            - listitem [level=2]
+              - link "Installed Plugins" [ref=e108]
+            - listitem [level=2]
+              - link "Add Plugin" [ref=e109]
+        - listitem [level=1]
+          - link "Users" [ref=e21]
+            - StaticText "Users"
+          - list
+            - listitem [level=2]
+              - link "All Users" [ref=e110]
+            - listitem [level=2]
+              - link "Add User" [ref=e111]
+            - listitem [level=2]
+              - link "Profile" [ref=e112]
+        - listitem [level=1]
+          - link "Tools" [ref=e22]
+            - StaticText "Tools"
+          - list
+            - listitem [level=2]
+              - link "Available Tools" [ref=e113]
+            - listitem [level=2]
+              - link "Import" [ref=e114]
+            - listitem [level=2]
+              - link "Export" [ref=e115]
+            - listitem [level=2]
+              - link "Site Health 1" [ref=e116]
+                - StaticText "Site Health 1"
+            - listitem [level=2]
+              - link "Export Personal Data" [ref=e117]
+            - listitem [level=2]
+              - link "Erase Personal Data" [ref=e118]
+            - listitem [level=2]
+              - link "Scheduled Actions" [ref=e119]
+            - listitem [level=2]
+              - link "Theme File Editor" [ref=e120]
+            - listitem [level=2]
+              - link "Plugin File Editor" [ref=e121]
+        - listitem [level=1]
+          - link "Settings" [ref=e23]
+            - StaticText "Settings"
+          - list
+            - listitem [level=2]
+              - link "General" [ref=e122]
+            - listitem [level=2]
+              - link "Connectors" [ref=e123]
+            - listitem [level=2]
+              - link "Writing" [ref=e124]
+            - listitem [level=2]
+              - link "Reading" [ref=e125]
+            - listitem [level=2]
+              - link "Discussion" [ref=e126]
+            - listitem [level=2]
+              - link "Media" [ref=e127]
+            - listitem [level=2]
+              - link "Permalinks" [ref=e128]
+            - listitem [level=2]
+              - link "Privacy" [ref=e129]
+        - listitem [level=1]
+          - button "Collapse Main menu" [expanded=true, ref=e24]
+            - StaticText "Collapse Menu"
+    - generic
+      - navigation "Toolbar" [ref=e4]
+        - menu
+          - group
+            - menuitem "About WordPress" [expanded=false, ref=e25]
+              - StaticText "About WordPress"
+          - group
+            - menuitem "wp-test2" [expanded=false, ref=e26]
+          - group
+            - menuitem "Coming soon" [ref=e27]
+          - group
+            - menuitem "5 updates available" [ref=e28]
+              - StaticText "5 updates available"
+          - group
+            - menuitem "⌘K Open command palette" [ref=e29]
+              - generic
+                - StaticText "⌘K"
+                - StaticText "Open command palette"
+          - group
+            - menuitem "0 Comments in moderation" [ref=e30]
+              - StaticText "0 Comments in moderation"
+          - group
+            - menuitem "New" [expanded=false, ref=e31]
+              - StaticText "New"
+        - menu
+          - group
+            - menuitem "Howdy, admin" [expanded=false, ref=e32]
+              - StaticText "Howdy, admin"
+      - main
+        - generic
+          - generic [ref=e5] clickable [onclick]
+            - heading "Customers" [level=1, ref=e33]
+            - heading "Store Activity" [level=2, ref=e34]
+            - complementary "Store Activity"
+              - tablist
+                - tab "Activity" [ref=e133]
+                  - StaticText "unread activity"
+                - tab "Finish setup" [ref=e134]
+            - generic
+              - generic
+                - heading "Filters" [level=2, ref=e130]
+                - StaticText "Show"
+                - button "All Customers" [expanded=false, ref=e135]
+                  - StaticText "All Customers"
+                - StaticText "Data status"
+                - status
+                  - StaticText "Last updated"
+                  - StaticText "Oct 23 at 01:10"
+                  - StaticText "Next update"
+                  - StaticText "Oct 23 at 13:10"
+                  - button "Manually trigger analytics data import" [ref=e136]
+                    - StaticText "Update now"
+              - heading "Customers" [level=2, ref=e131]
+              - generic [ref=e137] clickable [onclick]
+                - combobox [expanded=false, ref=e143]
+                - StaticText "Move backward for selected items"
+              - button "Download" [ref=e132]
+                - StaticText "Download"
+              - button "Choose which values to display" [expanded=false, ref=e138]
+                - image
+              - group "Customers(scroll to see more)" [ref=e139] focusable [tabindex]
+                - table "Customers(scroll to see more)"
+                  - caption
+                    - StaticText "Customers(scroll to see more)"
+                  - row
+                    - columnheader "Name Sort by Name in descending order" [ref=e146]
+                      - button "Name" [ref=e473]
+                        - StaticText "Name"
+                      - StaticText "Sort by Name in descending order"
+                    - columnheader "Username" [ref=e147]
+                      - StaticText "Username"
+                    - columnheader "Subscription Status" [ref=e148]
+                      - StaticText "Subscription Status"
+                    - columnheader "Last active Sort by Last active in ascending order" [ref=e149]
+                      - button "Last active" [ref=e474]
+                        - StaticText "Last active"
+                      - StaticText "Sort by Last active in ascending order"
+                    - columnheader "Date registered Sort by Date registered in descending order" [ref=e150]
+                      - button "Date registered" [ref=e475]
+                        - StaticText "Date registered"
+                      - StaticText "Sort by Date registered in descending order"
+                    - columnheader "Email" [ref=e151]
+                      - StaticText "Email"
+                    - columnheader "Orders Sort by Orders in descending order" [ref=e152]
+                      - button "Orders" [ref=e476]
+                        - StaticText "Orders"
+                      - StaticText "Sort by Orders in descending order"
+                    - columnheader "Total spend Sort by Total spend in descending order" [ref=e153]
+                      - button "Total spend" [ref=e477]
+                        - StaticText "Total spend"
+                      - StaticText "Sort by Total spend in descending order"
+                    - columnheader "Average order value" [ref=e154]
+                      - StaticText "Average order value"
+                    - columnheader "Country / Region Sort by Country / Region in descending order" [ref=e155]
+                      - button "Country / Region" [ref=e478]
+                        - StaticText "Country / Region"
+                      - StaticText "Sort by Country / Region in descending order"
+                    - columnheader "City Sort by City in descending order" [ref=e156]
+                      - button "City" [ref=e479]
+                        - StaticText "City"
+                      - StaticText "Sort by City in descending order"
+                    - columnheader "Region Sort by Region in descending order" [ref=e157]
+                      - button "Region" [ref=e480]
+                        - StaticText "Region"
+                      - StaticText "Sort by Region in descending order"
+                    - columnheader "Postal code Sort by Postal code in descending order" [ref=e158]
+                      - button "Postal code" [ref=e481]
+                        - StaticText "Postal code"
+                      - StaticText "Sort by Postal code in descending order"
+                  - row
+                    - rowheader "Finley Parker" [ref=e159]
+                      - link "Finley Parker" [ref=e482]
+                    - cell "demo260927_140 Member details | Store credits" [ref=e160]
+                      - StaticText "demo260927_140"
+                      - generic
+                        - link "Member details" [ref=e535]
+                        - StaticText " | "
+                        - link "Store credits" [ref=e536]
+                    - cell "Active" [ref=e161]
+                    - cell "October 22, 2026" [ref=e162]
+                      - time
+                        - StaticText "October 22, 2026"
+                    - cell "August 19, 2026" [ref=e163]
+                      - time
+                        - StaticText "August 19, 2026"
+                    - cell "demo.260927.140@example.test" [ref=e164]
+                      - link "demo.260927.140@example.test" [ref=e483]
+                    - cell "4" [ref=e165]
+                    - cell "163.26$" [ref=e166]
+                    - cell "40.82$" [ref=e167]
+                    - cell "United States (US)" [ref=e168]
+                      - StaticText "United States (US)"
+                    - cell "New York" [ref=e169]
+                    - cell "NY" [ref=e170]
+                    - cell "10001" [ref=e171]
+                  - row
+                    - rowheader "Casey Reed" [ref=e172]
+                      - link "Casey Reed" [ref=e484]
+                    - cell "demo260927_106 Member details | Store credits" [ref=e173]
+                      - StaticText "demo260927_106"
+                      - generic
+                        - link "Member details" [ref=e537]
+                        - StaticText " | "
+                        - link "Store credits" [ref=e538]
+                    - cell "Active" [ref=e174]
+                    - cell "October 22, 2026" [ref=e175]
+                      - time
+                        - StaticText "October 22, 2026"
+                    - cell "August 6, 2026" [ref=e176]
+                      - time
+                        - StaticText "August 6, 2026"
+                    - cell "demo.260927.106@example.test" [ref=e177]
+                      - link "demo.260927.106@example.test" [ref=e485]
+                    - cell "3" [ref=e178]
+                    - cell "58.00$" [ref=e179]
+                    - cell "19.33$" [ref=e180]
+                    - cell "Canada" [ref=e181]
+                      - StaticText "Canada"
+                    - cell "Toronto" [ref=e182]
+                    - cell "ON" [ref=e183]
+                    - cell "M5V 2T6" [ref=e184]
+                  - row
+                    - rowheader "Jordan Ellis" [ref=e185]
+                      - link "Jordan Ellis" [ref=e486]
+                    - cell "demo260927_142 Member details | Store credits" [ref=e186]
+                      - StaticText "demo260927_142"
+                      - generic
+                        - link "Member details" [ref=e539]
+                        - StaticText " | "
+                        - link "Store credits" [ref=e540]
+                    - cell "Active" [ref=e187]
+                    - cell "October 22, 2026" [ref=e188]
+                      - time
+                        - StaticText "October 22, 2026"
+                    - cell "August 20, 2026" [ref=e189]
+                      - time
+                        - StaticText "August 20, 2026"
+                    - cell "demo.260927.142@example.test" [ref=e190]
+                      - link "demo.260927.142@example.test" [ref=e487]
+                    - cell "2" [ref=e191]
+                    - cell "78.00$" [ref=e192]
+                    - cell "39.00$" [ref=e193]
+                    - cell "Canada" [ref=e194]
+                      - StaticText "Canada"
+                    - cell "Toronto" [ref=e195]
+                    - cell "ON" [ref=e196]
+                    - cell "M5V 2T6" [ref=e197]
+                  - row
+                    - rowheader "Rowan Parker" [ref=e198]
+                      - link "Rowan Parker" [ref=e488]
+                    - cell "demo260927_139 Member details | Store credits" [ref=e199]
+                      - StaticText "demo260927_139"
+                      - generic
+                        - link "Member details" [ref=e541]
+                        - StaticText " | "
+                        - link "Store credits" [ref=e542]
+                    - cell "Active" [ref=e200]
+                    - cell "October 22, 2026" [ref=e201]
+                      - time
+                        - StaticText "October 22, 2026"
+                    - cell "August 19, 2026" [ref=e202]
+                      - time
+                        - StaticText "August 19, 2026"
+                    - cell "demo.260927.139@example.test" [ref=e203]
+                      - link "demo.260927.139@example.test" [ref=e489]
+                    - cell "2" [ref=e204]
+                    - cell "48.00$" [ref=e205]
+                    - cell "24.00$" [ref=e206]
+                    - cell "United States (US)" [ref=e207]
+                      - StaticText "United States (US)"
+                    - cell "San Francisco" [ref=e208]
+                    - cell "CA" [ref=e209]
+                    - cell "94105" [ref=e210]
+                  - row
+                    - rowheader "Jamie Morgan" [ref=e211]
+                      - link "Jamie Morgan" [ref=e490]
+                    - cell "demo260927_029 Member details | Store credits" [ref=e212]
+                      - StaticText "demo260927_029"
+                      - generic
+                        - link "Member details" [ref=e543]
+                        - StaticText " | "
+                        - link "Store credits" [ref=e544]
+                    - cell "Active, Cancelled" [ref=e213]
+                    - cell "October 21, 2026" [ref=e214]
+                      - time
+                        - StaticText "October 21, 2026"
+                    - cell "July 7, 2026" [ref=e215]
+                      - time
+                        - StaticText "July 7, 2026"
+                    - cell "demo.260927.029@example.test" [ref=e216]
+                      - link "demo.260927.029@example.test" [ref=e491]
+                    - cell "11" [ref=e217]
+                    - cell "549.00$" [ref=e218]
+                    - cell "49.91$" [ref=e219]
+                    - cell "Australia" [ref=e220]
+                      - StaticText "Australia"
+                    - cell "Sydney" [ref=e221]
+                    - cell "NSW" [ref=e222]
+                    - cell "2000" [ref=e223]
+                  - row
+                    - rowheader "Dakota Sullivan" [ref=e224]
+                      - link "Dakota Sullivan" [ref=e492]
+                    - cell "demo260927_211 Member details | Store credits" [ref=e225]
+                      - StaticText "demo260927_211"
+                      - generic
+                        - link "Member details" [ref=e545]
+                        - StaticText " | "
+                        - link "Store credits" [ref=e546]
+                    - cell "Active" [ref=e226]
+                    - cell "October 21, 2026" [ref=e227]
+                      - time
+                        - StaticText "October 21, 2026"
+                    - cell "September 16, 2026" [ref=e228]
+                      - time
+                        - StaticText "September 16, 2026"
+                    - cell "demo.260927.211@example.test" [ref=e229]
+                      - link "demo.260927.211@example.test" [ref=e493]
+                    - cell "1" [ref=e230]
+                    - cell "19.00$" [ref=e231]
+                    - cell "19.00$" [ref=e232]
+                    - cell "United States (US)" [ref=e233]
+                      - StaticText "United States (US)"
+                    - cell "San Francisco" [ref=e234]
+                    - cell "CA" [ref=e235]
+                    - cell "94105" [ref=e236]
+                  - row
+                    - rowheader "Robin Sullivan" [ref=e237]
+                      - link "Robin Sullivan" [ref=e494]
+                    - cell "demo260927_212 Member details | Store credits" [ref=e238]
+                      - StaticText "demo260927_212"
+                      - generic
+                        - link "Member details" [ref=e547]
+                        - StaticText " | "
+                        - link "Store credits" [ref=e548]
+                    - cell "Active" [ref=e239]
+                    - cell "October 21, 2026" [ref=e240]
+                      - time
+                        - StaticText "October 21, 2026"
+                    - cell "September 16, 2026" [ref=e241]
+                      - time
+                        - StaticText "September 16, 2026"
+                    - cell "demo.260927.212@example.test" [ref=e242]
+                      - link "demo.260927.212@example.test" [ref=e495]
+                    - cell "1" [ref=e243]
+                    - cell "0.00$" [ref=e244]
+                    - cell "0.00$" [ref=e245]
+                    - cell "United States (US)" [ref=e246]
+                      - StaticText "United States (US)"
+                    - cell "New York" [ref=e247]
+                    - cell "NY" [ref=e248]
+                    - cell "10001" [ref=e249]
+                  - row
+                    - rowheader "Cameron Sullivan" [ref=e250]
+                      - link "Cameron Sullivan" [ref=e496]
+                    - cell "demo260927_210 Member details | Store credits" [ref=e251]
+                      - StaticText "demo260927_210"
+                      - generic
+                        - link "Member details" [ref=e549]
+                        - StaticText " | "
+                        - link "Store credits" [ref=e550]
+                    - cell "Active" [ref=e252]
+                    - cell "October 21, 2026" [ref=e253]
+                      - time
+                        - StaticText "October 21, 2026"
+                    - cell "September 15, 2026" [ref=e254]
+                      - time
+                        - StaticText "September 15, 2026"
+                    - cell "demo.260927.210@example.test" [ref=e255]
+                      - link "demo.260927.210@example.test" [ref=e497]
+                    - cell "2" [ref=e256]
+                    - cell "108.15$" [ref=e257]
+                    - cell "54.08$" [ref=e258]
+                    - cell "Bangladesh" [ref=e259]
+                      - StaticText "Bangladesh"
+                    - cell "Dhaka" [ref=e260]
+                    - cell
+                    - cell "1205" [ref=e261]
+                  - row
+                    - rowheader "Emery Morgan" [ref=e262]
+                      - link "Emery Morgan" [ref=e498]
+                    - cell "demo260927_037 Member details | Store credits" [ref=e263]
+                      - StaticText "demo260927_037"
+                      - generic
+                        - link "Member details" [ref=e551]
+                        - StaticText " | "
+                        - link "Store credits" [ref=e552]
+                    - cell "Expired" [ref=e264]
+                    - cell "October 19, 2026" [ref=e265]
+                      - time
+                        - StaticText "October 19, 2026"
+                    - cell "July 10, 2026" [ref=e266]
+                      - time
+                        - StaticText "July 10, 2026"
+                    - cell "demo.260927.037@example.test" [ref=e267]
+                      - link "demo.260927.037@example.test" [ref=e499]
+                    - cell "6" [ref=e268]
+                    - cell "361.30$" [ref=e269]
+                    - cell "60.22$" [ref=e270]
+                    - cell "United States (US)" [ref=e271]
+                      - StaticText "United States (US)"
+                    - cell "San Francisco" [ref=e272]
+                    - cell "CA" [ref=e273]
+                    - cell "94105" [ref=e274]
+                  - row
+                    - rowheader "Skyler Parker" [ref=e275]
+                      - link "Skyler Parker" [ref=e500]
+                    - cell "demo260927_138 Member details | Store credits" [ref=e276]
+                      - StaticText "demo260927_138"
+                      - generic
+                        - link "Member details" [ref=e553]
+                        - StaticText " | "
+                        - link "Store credits" [ref=e554]
+                    - cell "Active" [ref=e277]
+                    - cell "October 19, 2026" [ref=e278]
+                      - time
+                        - StaticText "October 19, 2026"
+                    - cell "August 19, 2026" [ref=e279]
+                      - time
+                        - StaticText "August 19, 2026"
+                    - cell "demo.260927.138@example.test" [ref=e280]
+                      - link "demo.260927.138@example.test" [ref=e501]
+                    - cell "3" [ref=e281]
+                    - cell "102.95$" [ref=e282]
+                    - cell "34.32$" [ref=e283]
+                    - cell "Bangladesh" [ref=e284]
+                      - StaticText "Bangladesh"
+                    - cell "Dhaka" [ref=e285]
+                    - cell
+                    - cell "1205" [ref=e286]
+                  - row
+                    - rowheader "Alex Bailey" [ref=e287]
+                      - link "Alex Bailey" [ref=e502]
+                    - cell "demo260927_187 Member details | Store credits" [ref=e288]
+                      - StaticText "demo260927_187"
+                      - generic
+                        - link "Member details" [ref=e555]
+                        - StaticText " | "
+                        - link "Store credits" [ref=e556]
+                    - cell "Cancelled" [ref=e289]
+                    - cell "October 19, 2026" [ref=e290]
+                      - time
+                        - StaticText "October 19, 2026"
+                    - cell "September 7, 2026" [ref=e291]
+                      - time
+                        - StaticText "September 7, 2026"
+                    - cell "demo.260927.187@example.test" [ref=e292]
+                      - link "demo.260927.187@example.test" [ref=e503]
+                    - cell "3" [ref=e293]
+                    - cell "41.25$" [ref=e294]
+                    - cell "13.75$" [ref=e295]
+                    - cell "United States (US)" [ref=e296]
+                      - StaticText "United States (US)"
+                    - cell "San Francisco" [ref=e297]
+                    - cell "CA" [ref=e298]
+                    - cell "94105" [ref=e299]
+                  - row
+                    - rowheader "Casey Ellis" [ref=e300]
+                      - link "Casey Ellis" [ref=e504]
+                    - cell "demo260927_146 Member details | Store credits" [ref=e301]
+                      - StaticText "demo260927_146"
+                      - generic
+                        - link "Member details" [ref=e557]
+                        - StaticText " | "
+                        - link "Store credits" [ref=e558]
+                    - cell "Active" [ref=e302]
+                    - cell "October 19, 2026" [ref=e303]
+                      - time
+                        - StaticText "October 19, 2026"
+                    - cell "August 22, 2026" [ref=e304]
+                      - time
+                        - StaticText "August 22, 2026"
+                    - cell "demo.260927.146@example.test" [ref=e305]
+                      - link "demo.260927.146@example.test" [ref=e505]
+                    - cell "1" [ref=e306]
+                    - cell "99.00$" [ref=e307]
+                    - cell "99.00$" [ref=e308]
+                    - cell "United States (US)" [ref=e309]
+                      - StaticText "United States (US)"
+                    - cell "New York" [ref=e310]
+                    - cell "NY" [ref=e311]
+                    - cell "10001" [ref=e312]
+                  - row
+                    - rowheader "Riley Brooks" [ref=e313]
+                      - link "Riley Brooks" [ref=e506]
+                    - cell "demo260927_085 Member details | Store credits" [ref=e314]
+                      - StaticText "demo260927_085"
+                      - generic
+                        - link "Member details" [ref=e559]
+                        - StaticText " | "
+                        - link "Store credits" [ref=e560]
+                    - cell "Active" [ref=e315]
+                    - cell "October 19, 2026" [ref=e316]
+                      - time
+                        - StaticText "October 19, 2026"
+                    - cell "July 29, 2026" [ref=e317]
+                      - time
+                        - StaticText "July 29, 2026"
+                    - cell "demo.260927.085@example.test" [ref=e318]
+                      - link "demo.260927.085@example.test" [ref=e507]
+                    - cell "4" [ref=e319]
+                    - cell "134.12$" [ref=e320]
+                    - cell "33.53$" [ref=e321]
+                    - cell "United States (US)" [ref=e322]
+                      - StaticText "United States (US)"
+                    - cell "San Francisco" [ref=e323]
+                    - cell "CA" [ref=e324]
+                    - cell "94105" [ref=e325]
+                  - row
+                    - rowheader "AveryQA Ellis" [ref=e326]
+                      - link "AveryQA Ellis" [ref=e508]
+                    - cell "demo260927_141 Member details | Store credits" [ref=e327]
+                      - StaticText "demo260927_141"
+                      - generic
+                        - link "Member details" [ref=e561]
+                        - StaticText " | "
+                        - link "Store credits" [ref=e562]
+                    - cell "Cancelled" [ref=e328]
+                    - cell "October 19, 2026" [ref=e329]
+                      - time
+                        - StaticText "October 19, 2026"
+                    - cell "August 20, 2026" [ref=e330]
+                      - time
+                        - StaticText "August 20, 2026"
+                    - cell "demo.260927.141@example.test" [ref=e331]
+                      - link "demo.260927.141@example.test" [ref=e509]
+                    - cell "4" [ref=e332]
+                    - cell "83.90$" [ref=e333]
+                    - cell "20.98$" [ref=e334]
+                    - cell "United Kingdom (UK)" [ref=e335]
+                      - StaticText "United Kingdom (UK)"
+                    - cell "Manchester" [ref=e336]
+                    - cell
+                    - cell "SW1A 1AA" [ref=e337]
+                  - row
+                    - rowheader "Cameron Carter" [ref=e338]
+                      - link "Cameron Carter" [ref=e510]
+                    - cell "demo260927_070 Member details | Store credits" [ref=e339]
+                      - StaticText "demo260927_070"
+                      - generic
+                        - link "Member details" [ref=e563]
+                        - StaticText " | "
+                        - link "Store credits" [ref=e564]
+                    - cell "Active" [ref=e340]
+                    - cell "October 19, 2026" [ref=e341]
+                      - time
+                        - StaticText "October 19, 2026"
+                    - cell "July 23, 2026" [ref=e342]
+                      - time
+                        - StaticText "July 23, 2026"
+                    - cell "demo.260927.070@example.test" [ref=e343]
+                      - link "demo.260927.070@example.test" [ref=e511]
+                    - cell "4" [ref=e344]
+                    - cell "191.30$" [ref=e345]
+                    - cell "47.83$" [ref=e346]
+                    - cell "Canada" [ref=e347]
+                      - StaticText "Canada"
+                    - cell "Toronto" [ref=e348]
+                    - cell "ON" [ref=e349]
+                    - cell "M5V 2T6" [ref=e350]
+                  - row
+                    - rowheader "Jordan Morgan" [ref=e351]
+                      - link "Jordan Morgan" [ref=e512]
+                    - cell "demo260927_022 Member details | Store credits" [ref=e352]
+                      - StaticText "demo260927_022"
+                      - generic
+                        - link "Member details" [ref=e565]
+                        - StaticText " | "
+                        - link "Store credits" [ref=e566]
+                    - cell "Active, Cancelled" [ref=e353]
+                    - cell "October 19, 2026" [ref=e354]
+                      - time
+                        - StaticText "October 19, 2026"
+                    - cell "July 5, 2026" [ref=e355]
+                      - time
+                        - StaticText "July 5, 2026"
+                    - cell "demo.260927.022@example.test" [ref=e356]
+                      - link "demo.260927.022@example.test" [ref=e513]
+                    - cell "14" [ref=e357]
+                    - cell "500.85$" [ref=e358]
+                    - cell "35.77$" [ref=e359]
+                    - cell "Canada" [ref=e360]
+                      - StaticText "Canada"
+                    - cell "Toronto" [ref=e361]
+                    - cell "ON" [ref=e362]
+                    - cell "M5V 2T6" [ref=e363]
+                  - row
+                    - rowheader "Harper Sullivan" [ref=e364]
+                      - link "Harper Sullivan" [ref=e514]
+                    - cell "demo260927_213 Member details | Store credits" [ref=e365]
+                      - StaticText "demo260927_213"
+                      - generic
+                        - link "Member details" [ref=e567]
+                        - StaticText " | "
+                        - link "Store credits" [ref=e568]
+                    - cell "Cancelled" [ref=e366]
+                    - cell "October 19, 2026" [ref=e367]
+                      - time
+                        - StaticText "October 19, 2026"
+                    - cell "September 17, 2026" [ref=e368]
+                      - time
+                        - StaticText "September 17, 2026"
+                    - cell "demo.260927.213@example.test" [ref=e369]
+                      - link "demo.260927.213@example.test" [ref=e515]
+                    - cell "1" [ref=e370]
+                    - cell "84.00$" [ref=e371]
+                    - cell "84.00$" [ref=e372]
+                    - cell "United Kingdom (UK)" [ref=e373]
+                      - StaticText "United Kingdom (UK)"
+                    - cell "London" [ref=e374]
+                    - cell
+                    - cell "SW1A 1AA" [ref=e375]
+                  - row
+                    - rowheader "Taylor Ellis" [ref=e376]
+                      - link "Taylor Ellis" [ref=e516]
+                    - cell "demo260927_143 Member details | Store credits" [ref=e377]
+                      - StaticText "demo260927_143"
+                      - generic
+                        - link "Member details" [ref=e569]
+                        - StaticText " | "
+                        - link "Store credits" [ref=e570]
+                    - cell "Cancelled" [ref=e378]
+                    - cell "October 19, 2026" [ref=e379]
+                      - time
+                        - StaticText "October 19, 2026"
+                    - cell "August 21, 2026" [ref=e380]
+                      - time
+                        - StaticText "August 21, 2026"
+                    - cell "demo.260927.143@example.test" [ref=e381]
+                      - link "demo.260927.143@example.test" [ref=e517]
+                    - cell "2" [ref=e382]
+                    - cell "153.00$" [ref=e383]
+                    - cell "76.50$" [ref=e384]
+                    - cell "Australia" [ref=e385]
+                      - StaticText "Australia"
+                    - cell "Sydney" [ref=e386]
+                    - cell "NSW" [ref=e387]
+                    - cell "2000" [ref=e388]
+                  - row
+                    - rowheader "Sam Sullivan" [ref=e389]
+                      - link "Sam Sullivan" [ref=e518]
+                    - cell "demo260927_208 Member details | Store credits" [ref=e390]
+                      - StaticText "demo260927_208"
+                      - generic
+                        - link "Member details" [ref=e571]
+                        - StaticText " | "
+                        - link "Store credits" [ref=e572]
+                    - cell "Active" [ref=e391]
+                    - cell "October 19, 2026" [ref=e392]
+                      - time
+                        - StaticText "October 19, 2026"
+                    - cell "September 15, 2026" [ref=e393]
+                      - time
+                        - StaticText "September 15, 2026"
+                    - cell "demo.260927.208@example.test" [ref=e394]
+                      - link "demo.260927.208@example.test" [ref=e519]
+                    - cell "1" [ref=e395]
+                    - cell "35.00$" [ref=e396]
+                    - cell "35.00$" [ref=e397]
+                    - cell "Canada" [ref=e398]
+                      - StaticText "Canada"
+                    - cell "Toronto" [ref=e399]
+                    - cell "ON" [ref=e400]
+                    - cell "M5V 2T6" [ref=e401]
+                  - row
+                    - rowheader "Reese Foster" [ref=e402]
+                      - link "Reese Foster" [ref=e520]
+                    - cell "demo260927_176 Member details | Store credits" [ref=e403]
+                      - StaticText "demo260927_176"
+                      - generic
+                        - link "Member details" [ref=e573]
+                        - StaticText " | "
+                        - link "Store credits" [ref=e574]
+                    - cell "Active" [ref=e404]
+                    - cell "October 19, 2026" [ref=e405]
+                      - time
+                        - StaticText "October 19, 2026"
+                    - cell "September 2, 2026" [ref=e406]
+                      - time
+                        - StaticText "September 2, 2026"
+                    - cell "demo.260927.176@example.test" [ref=e407]
+                      - link "demo.260927.176@example.test" [ref=e521]
+                    - cell "3" [ref=e408]
+                    - cell "66.75$" [ref=e409]
+                    - cell "22.25$" [ref=e410]
+                    - cell "United States (US)" [ref=e411]
+                      - StaticText "United States (US)"
+                    - cell "New York" [ref=e412]
+                    - cell "NY" [ref=e413]
+                    - cell "10001" [ref=e414]
+                  - row
+                    - rowheader "Avery Morgan" [ref=e415]
+                      - link "Avery Morgan" [ref=e522]
+                    - cell "demo260927_021 Member details | Store credits" [ref=e416]
+                      - StaticText "demo260927_021"
+                      - generic
+                        - link "Member details" [ref=e575]
+                        - StaticText " | "
+                        - link "Store credits" [ref=e576]
+                    - cell "Active, Expired" [ref=e417]
+                    - cell "October 19, 2026" [ref=e418]
+                      - time
+                        - StaticText "October 19, 2026"
+                    - cell "July 4, 2026" [ref=e419]
+                      - time
+                        - StaticText "July 4, 2026"
+                    - cell "demo.260927.021@example.test" [ref=e420]
+                      - link "demo.260927.021@example.test" [ref=e523]
+                    - cell "8" [ref=e421]
+                    - cell "660.35$" [ref=e422]
+                    - cell "82.54$" [ref=e423]
+                    - cell "United Kingdom (UK)" [ref=e424]
+                      - StaticText "United Kingdom (UK)"
+                    - cell "London" [ref=e425]
+                    - cell
+                    - cell "SW1A 1AA" [ref=e426]
+                  - row
+                    - rowheader "Quinn Parker" [ref=e427]
+                      - link "Quinn Parker" [ref=e524]
+                    - cell "demo260927_135 Member details | Store credits" [ref=e428]
+                      - StaticText "demo260927_135"
+                      - generic
+                        - link "Member details" [ref=e577]
+                        - StaticText " | "
+                        - link "Store credits" [ref=e578]
+                    - cell "Active" [ref=e429]
+                    - cell "October 19, 2026" [ref=e430]
+                      - time
+                        - StaticText "October 19, 2026"
+                    - cell "August 17, 2026" [ref=e431]
+                      - time
+                        - StaticText "August 17, 2026"
+                    - cell "demo.260927.135@example.test" [ref=e432]
+                      - link "demo.260927.135@example.test" [ref=e525]
+                    - cell "2" [ref=e433]
+                    - cell "80.85$" [ref=e434]
+                    - cell "40.43$" [ref=e435]
+                    - cell "United Kingdom (UK)" [ref=e436]
+                      - StaticText "United Kingdom (UK)"
+                    - cell "London" [ref=e437]
+                    - cell
+                    - cell "SW1A 1AA" [ref=e438]
+                  - row
+                    - rowheader "Jordan Carter" [ref=e439]
+                      - link "Jordan Carter" [ref=e526]
+                    - cell "demo260927_062 Member details | Store credits" [ref=e440]
+                      - StaticText "demo260927_062"
+                      - generic
+                        - link "Member details" [ref=e579]
+                        - StaticText " | "
+                        - link "Store credits" [ref=e580]
+                    - cell "Active" [ref=e441]
+                    - cell "October 19, 2026" [ref=e442]
+                      - time
+                        - StaticText "October 19, 2026"
+                    - cell "July 20, 2026" [ref=e443]
+                      - time
+                        - StaticText "July 20, 2026"
+                    - cell "demo.260927.062@example.test" [ref=e444]
+                      - link "demo.260927.062@example.test" [ref=e527]
+                    - cell "2" [ref=e445]
+                    - cell "121.63$" [ref=e446]
+                    - cell "60.82$" [ref=e447]
+                    - cell "United States (US)" [ref=e448]
+                      - StaticText "United States (US)"
+                    - cell "New York" [ref=e449]
+                    - cell "NY" [ref=e450]
+                    - cell "10001" [ref=e451]
+                  - row
+                    - rowheader "Jamie Sullivan" [ref=e452]
+                      - link "Jamie Sullivan" [ref=e528]
+                    - cell "demo260927_209 Member details | Store credits" [ref=e453]
+                      - StaticText "demo260927_209"
+                      - generic
+                        - link "Member details" [ref=e581]
+                        - StaticText " | "
+                        - link "Store credits" [ref=e582]
+                    - cell "Active" [ref=e454]
+                    - cell "October 19, 2026" [ref=e455]
+                      - time
+                        - StaticText "October 19, 2026"
+                    - cell "September 15, 2026" [ref=e456]
+                      - time
+                        - StaticText "September 15, 2026"
+                    - cell "demo.260927.209@example.test" [ref=e457]
+                      - link "demo.260927.209@example.test" [ref=e529]
+                    - cell "1" [ref=e458]
+                    - cell "24.00$" [ref=e459]
+                    - cell "24.00$" [ref=e460]
+                    - cell "Australia" [ref=e461]
+                      - StaticText "Australia"
+                    - cell "Sydney" [ref=e462]
+                    - cell "NSW" [ref=e463]
+                    - cell "2000" [ref=e464]
+                  - row
+                    - rowheader "Guest" [ref=e465]
+                    - cell
+                    - cell "—" [ref=e466]
+                    - cell "October 18, 2026" [ref=e467]
+                      - time
+                        - StaticText "October 18, 2026"
+                    - cell "—" [ref=e468]
+                    - cell "ps-85a456af@example.test" [ref=e469]
+                      - link "ps-85a456af@example.test" [ref=e530]
+                    - cell "1" [ref=e470]
+                    - cell "0.00$" [ref=e471]
+                    - cell "0.00$" [ref=e472]
+                    - cell
+                    - cell
+                    - cell
+                    - cell
+              - generic
+                - status
+                  - StaticText "Page 1 of 12"
+                - button "Previous Page" [disabled, ref=e140]
+                - button "Next Page" [ref=e141]
+                - LabelText
+                  - StaticText "Go to page"
+                  - spinbutton "Go to page" [ref=e144]: 1
+                    - StaticText "1"
+                - generic [ref=e142] clickable [cursor:pointer]
+                  - LabelText
+                    - StaticText "Rows per page"
+                  - generic
+                    - combobox "Rows per page" [expanded=false, ref=e145]: 25
+                      - MenuListPopup
+                        - option "25" [selected, ref=e531]
+                        - option "50" [ref=e532]
+                        - option "75" [ref=e533]
+                        - option "100" [ref=e534]
+              - complementary
+                - StaticText "276"
+                - StaticText "customers"
+                - StaticText "6.5661"
+                - StaticText "Average orders"
+                - StaticText "191.78$"
+                - StaticText "Average lifetime spend"
+                - StaticText "57.87$"
+                - StaticText "Average order value"
+    - contentinfo
+      - paragraph
+        - generic
+          - StaticText "If you like "
+          - strong
+            - StaticText "WooCommerce"
+          - StaticText " please leave us a "
+          - link "five star" [ref=e6]
+            - StaticText "★★★★★"
+          - StaticText " rating. A huge thanks in advance!"
+      - paragraph
+        - StaticText "Version 11.1.2"

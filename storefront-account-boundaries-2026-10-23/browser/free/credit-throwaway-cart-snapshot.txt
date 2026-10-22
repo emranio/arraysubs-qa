@@ -1,0 +1,152 @@
+- generic
+  - link "Skip to content" [ref=e1]
+  - banner
+    - paragraph
+      - link "wp-test2" [ref=e8]
+    - navigation
+      - list
+        - list
+          - listitem [level=2]
+            - link "Cart" [ref=e25]
+          - listitem [level=2]
+            - link "Cart" [ref=e26]
+          - listitem [level=2]
+            - link "Checkout" [ref=e27]
+          - listitem [level=2]
+            - link "Checkout" [ref=e28]
+          - listitem [level=2]
+            - link "Checkout Page" [ref=e29]
+          - listitem [level=2]
+            - link "Default Redirect Page" [ref=e30]
+          - listitem [level=2]
+            - link "Demo · Account Checklist" [ref=e31]
+          - listitem [level=2]
+            - link "Demo · Content Gate Demo Hub" [ref=e32]
+          - listitem [level=2]
+            - link "Demo · Download Library" [ref=e33]
+          - listitem [level=2]
+            - link "Demo · Loyal Plus Member Resource" [ref=e34]
+          - listitem [level=2]
+            - link "Demo · Masterclass Feature Access" [ref=e35]
+          - listitem [level=2]
+            - link "Demo · Member Library" [ref=e36]
+          - listitem [level=2]
+            - link "Demo · Member or Workshop Buyer" [ref=e37]
+          - listitem [level=2]
+            - link "Demo · Member Role Resource" [ref=e38]
+          - listitem [level=2]
+            - link "Demo · Member Support" [ref=e39]
+          - listitem [level=2]
+            - link "Demo · Membership Plans" [ref=e40]
+          - listitem [level=2]
+            - link "Demo · Premium Masterclass" [ref=e41]
+          - listitem [level=2]
+            - link "Demo · Premium Upgrade Resource" [ref=e42]
+          - listitem [level=2]
+            - link "Demo · Private Member Dashboard" [ref=e43]
+          - listitem [level=2]
+            - link "Demo · Professional Workspace" [ref=e44]
+          - listitem [level=2]
+            - link "Demo · Public Preview with a Gated Lesson" [ref=e45]
+          - listitem [level=2]
+            - link "Demo · Purchased Workshop Replay" [ref=e46]
+          - listitem [level=2]
+            - link "Demo · Renewal Help" [ref=e47]
+          - listitem [level=2]
+            - link "Demo · Shortcode Access Examples" [ref=e48]
+          - listitem [level=2]
+            - link "Demo · Team Workspace" [ref=e49]
+          - listitem [level=2]
+            - link "Demo · VIP Loyalty Lounge" [ref=e50]
+          - listitem [level=2]
+            - link "Demo · Visitor Welcome" [ref=e51]
+          - listitem [level=2]
+            - link "Demo · Welcome and Getting Started" [ref=e52]
+          - listitem [level=2]
+            - link "Elementor #399" [ref=e53]
+          - listitem [level=2]
+            - link "Lost Password" [ref=e54]
+          - listitem [level=2]
+            - link "Member Login" [ref=e55]
+          - listitem [level=2]
+            - link "Member LogOut" [ref=e56]
+          - listitem [level=2]
+            - link "Member TOS Page" [ref=e57]
+          - listitem [level=2]
+            - link "My Account" [ref=e58]
+          - listitem [level=2]
+            - link "My account" [ref=e59]
+          - listitem [level=2]
+            - link "Public Individual Page" [ref=e60]
+          - listitem [level=2]
+            - link "QA credit shortcode 20261023" [ref=e61]
+          - listitem [level=2]
+            - link "Register" [ref=e62]
+          - listitem [level=2]
+            - link "Sample Page" [ref=e63]
+          - listitem [level=2]
+            - link "Sample Page" [ref=e64]
+          - listitem [level=2]
+            - link "Shop" [ref=e65]
+          - listitem [level=2]
+            - link "Subscription Plan" [ref=e66]
+          - listitem [level=2]
+            - link "Thank You Page" [ref=e67]
+          - listitem [level=2]
+            - link "today is Sunday" [ref=e68]
+    - link "Login" [ref=e4]
+      - image
+  - main
+    - heading "Cart" [level=1, ref=e2]
+    - generic [ref=e3] clickable [onclick]
+      - generic
+        - table "Products in cart"
+          - caption
+            - heading "Products in cart" [level=2, ref=e14]
+          - rowgroup
+            - row
+              - columnheader "DETAILS" [ref=e23]
+                - StaticText "DETAILS"
+              - columnheader "TOTAL" [ref=e24]
+          - row "Loading products in cart…"
+            - cell
+            - cell
+            - cell
+          - row "Loading products in cart…"
+            - cell
+            - cell
+            - cell
+        - heading "CART TOTALS" [level=2, ref=e9]
+        - heading "Add coupons" [level=2, ref=e10]
+          - button "Add coupons" [expanded=false, ref=e13]
+        - StaticText "Estimated total"
+  - contentinfo
+    - heading "wp-test2" [level=2, ref=e5]
+      - link "wp-test2" [ref=e11]
+    - navigation " 2" [ref=e6]
+      - list
+        - listitem [level=1]
+          - link "Blog" [ref=e15]
+        - listitem [level=1]
+          - link "About" [ref=e16]
+        - listitem [level=1]
+          - link "FAQs" [ref=e17]
+        - listitem [level=1]
+          - link "Authors" [ref=e18]
+    - navigation " 3" [ref=e7]
+      - list
+        - listitem [level=1]
+          - link "Events" [ref=e19]
+        - listitem [level=1]
+          - link "Shop" [ref=e20]
+        - listitem [level=1]
+          - link "Patterns" [ref=e21]
+        - listitem [level=1]
+          - link "Themes" [ref=e22]
+    - paragraph
+      - StaticText "Twenty Twenty-Five"
+    - paragraph
+      - StaticText "Designed with "
+      - link "WordPress" [ref=e12]
+  - generic
+  - status

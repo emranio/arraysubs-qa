@@ -1,0 +1,106 @@
+{
+    "checks": [
+        {
+            "check": "Unused Pro cancellation route is not registered",
+            "passed": true
+        },
+        {
+            "check": "Canonical core customer cancellation route is registered",
+            "passed": true
+        },
+        {
+            "check": "Administrator exists for invalid admin configuration check",
+            "passed": true
+        },
+        {
+            "check": "Disposable owner customer created",
+            "passed": true
+        },
+        {
+            "check": "Disposable other customer created",
+            "passed": true
+        },
+        {
+            "check": "Disposable draft product created",
+            "passed": true
+        },
+        {
+            "check": "Disposable active manual-payment subscription created",
+            "passed": true
+        },
+        {
+            "check": "Retired Pro route returns 404 without changing the subscription",
+            "passed": true
+        },
+        {
+            "check": "Missing or whitespace required reason returns a controlled 400",
+            "passed": true
+        },
+        {
+            "check": "Rejected required reason leaves lifecycle and metadata unchanged",
+            "passed": true
+        },
+        {
+            "check": "Missing or whitespace required reason returns a controlled 400",
+            "passed": true
+        },
+        {
+            "check": "Rejected required reason leaves lifecycle and metadata unchanged",
+            "passed": true
+        },
+        {
+            "check": "Disabled customer cancellation cannot be bypassed",
+            "passed": true
+        },
+        {
+            "check": "A different customer cannot cancel the fixture",
+            "passed": true
+        },
+        {
+            "check": "Anonymous cancellation is rejected",
+            "passed": true
+        },
+        {
+            "check": "Denied ownership requests leave the fixture unchanged",
+            "passed": true
+        },
+        {
+            "check": "Valid required reason schedules cancellation according to merchant timing",
+            "passed": true
+        },
+        {
+            "check": "Client immediate override cannot shorten the paid period",
+            "passed": true
+        },
+        {
+            "check": "Canonical cancellation records the supplied reason",
+            "passed": true
+        },
+        {
+            "check": "Disposable active manual-payment subscription created",
+            "passed": true
+        },
+        {
+            "check": "Optional blank reason still permits canonical immediate cancellation",
+            "passed": true
+        },
+        {
+            "check": "Invalid admin cancellation form config returns WP_Error instead of TypeError",
+            "passed": true
+        }
+    ],
+    "failure": null,
+    "deleted_fixtures": {
+        "users": {
+            "owner": 383,
+            "other": 384
+        },
+        "product": 19384,
+        "subscriptions": [
+            19386,
+            19397
+        ]
+    },
+    "saved_settings_unchanged": true,
+    "active_plugins_unchanged": true
+}

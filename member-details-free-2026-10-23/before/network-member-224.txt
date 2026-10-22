@@ -1,0 +1,8 @@
+[21071.1147] GET http://localhost:10013/wp-json/arraysubs/v1/subscriptions/8326/detail (Fetch) 200
+[21071.1148] GET http://localhost:10013/wp-json/arraysubs/v1/subscriptions/8326/detail (Fetch) 200
+[21071.1168] GET http://localhost:10013/wp-json/arraysubs/v1/members/224 (Fetch) 404
+[21071.1169] GET http://localhost:10013/wp-json/arraysubs/v1/members/224 (Fetch) 404
+[21280.581] GET http://localhost:10013/wp-json/arraysubs/v1/subscriptions/8326/detail (Fetch) 200
+[21280.582] GET http://localhost:10013/wp-json/arraysubs/v1/subscriptions/8326/detail (Fetch) 200
+[21280.603] GET http://localhost:10013/wp-json/arraysubs/v1/members/224 (Fetch) 404
+[21280.604] GET http://localhost:10013/wp-json/arraysubs/v1/members/224 (Fetch) 404

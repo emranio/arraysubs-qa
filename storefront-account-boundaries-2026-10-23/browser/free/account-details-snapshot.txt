@@ -1,0 +1,66 @@
+- generic
+  - LabelText
+    - StaticText "First name"
+  - textbox "First name" [required, ref=e11]: Finley
+    - StaticText "Finley"
+  - LabelText
+    - StaticText "Last name"
+  - textbox "Last name" [required, ref=e12]: Sullivan
+    - StaticText "Sullivan"
+  - LabelText
+    - StaticText "Display name"
+  - textbox "Display name" [required, ref=e13]: Finley Sullivan
+    - StaticText "Finley Sullivan"
+  - emphasis
+    - StaticText "This will be how your name will be displayed in the account section and in reviews"
+  - LabelText
+    - StaticText "Email address"
+  - textbox "Email address" [required, ref=e14]: demo.260927.220@example.test
+    - StaticText "demo.260927.220@example.test"
+  - group "Password change"
+    - Legend
+      - StaticText "Password change"
+    - LabelText
+      - StaticText "Current password (leave blank to leave unchanged)"
+    - textbox "Current password (leave blank to leave unchanged)" [ref=e17]
+    - button "Show password" [ref=e18]
+    - LabelText
+      - StaticText "New password (leave blank to leave unchanged)"
+    - textbox "New password (leave blank to leave unchanged)" [ref=e19]
+    - button "Show password" [ref=e20]
+    - LabelText
+      - StaticText "Confirm new password"
+    - textbox "Confirm new password" [ref=e21]
+    - button "Show password" [ref=e22]
+  - paragraph
+    - button "Save changes" [ref=e23]
+- LabelText
+  - StaticText "First name"
+- textbox "First name" [required, ref=e11]: Finley
+  - StaticText "Finley"
+- LabelText
+  - StaticText "Last name"
+- textbox "Last name" [required, ref=e12]: Sullivan
+  - StaticText "Sullivan"
+- LabelText
+  - StaticText "Display name"
+- textbox "Display name" [required, ref=e13]: Finley Sullivan
+  - StaticText "Finley Sullivan"
+- emphasis
+  - StaticText "This will be how your name will be displayed in the account section and in reviews"
+- LabelText
+  - StaticText "Email address"
+- textbox "Email address" [required, ref=e14]: demo.260927.220@example.test
+  - StaticText "demo.260927.220@example.test"
+- LabelText
+  - StaticText "Current password (leave blank to leave unchanged)"
+- textbox "Current password (leave blank to leave unchanged)" [ref=e17]
+- button "Show password" [ref=e18]
+- LabelText
+  - StaticText "New password (leave blank to leave unchanged)"
+- textbox "New password (leave blank to leave unchanged)" [ref=e19]
+- button "Show password" [ref=e20]
+- LabelText
+  - StaticText "Confirm new password"
+- textbox "Confirm new password" [ref=e21]
+- button "Show password" [ref=e22]

@@ -337,3 +337,53 @@
 {"timestamp":"2026-10-21T12:47:10.025912211+02:00","action":"edit","task_id":81,"detail":"Pro subscription shipping: free-shipping subscriptions with a renewal shipping override get renewal lines labelled with the checkout package name"}
 {"timestamp":"2026-10-21T14:31:42.42376495+02:00","action":"edit","task_id":84,"detail":"Pro subscription shipping: a plan switch to a product with blank shipping overrides drops renewal shipping to 0"}
 {"timestamp":"2026-10-21T14:31:42.487908668+02:00","action":"move","task_id":84,"detail":"open -\u003e closed"}
+{"timestamp":"2026-10-23T01:24:15.788242+06:00","action":"create","task_id":85,"detail":"Free subscription customer detail link opens Pro-only Member Insight endpoint"}
+{"timestamp":"2026-10-23T01:51:06.728839+06:00","action":"edit","task_id":85,"detail":"Member details backend remains in Pro although the page should work in Free"}
+{"timestamp":"2026-10-23T01:58:09.613136+06:00","action":"edit","task_id":85,"detail":"Member details backend remains in Pro although the page should work in Free"}
+{"timestamp":"2026-10-23T01:58:09.613307+06:00","action":"claim","task_id":85,"detail":"burnside-chartula"}
+{"timestamp":"2026-10-23T01:58:09.625813+06:00","action":"move","task_id":85,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-10-23T01:58:09.636887+06:00","action":"edit","task_id":85,"detail":"Member details backend remains in Pro although the page should work in Free"}
+{"timestamp":"2026-10-23T02:15:23.528606+06:00","action":"edit","task_id":85,"detail":"Member details backend remains in Pro although the page should work in Free"}
+{"timestamp":"2026-10-23T02:15:23.541011+06:00","action":"move","task_id":85,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-10-23T02:15:23.551794+06:00","action":"edit","task_id":85,"detail":"Member details backend remains in Pro although the page should work in Free"}
+{"timestamp":"2026-10-23T02:15:23.551869+06:00","action":"release","task_id":85,"detail":"burnside-chartula"}
+{"timestamp":"2026-10-23T02:16:22.676658+06:00","action":"edit","task_id":85,"detail":"Member details backend remains in Pro although the page should work in Free"}
+{"timestamp":"2026-10-23T02:17:12.519899+06:00","action":"create","task_id":86,"detail":"Verify My Account and storefront Free/Pro endpoint boundaries"}
+{"timestamp":"2026-10-23T02:18:04.874+06:00","action":"edit","task_id":86,"detail":"Verify My Account and storefront Free/Pro endpoint boundaries"}
+{"timestamp":"2026-10-23T02:18:04.874117+06:00","action":"claim","task_id":86,"detail":"burnside-chartula"}
+{"timestamp":"2026-10-23T02:18:04.88717+06:00","action":"move","task_id":86,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-10-23T02:22:37.984871+06:00","action":"create","task_id":87,"detail":"Pro customer cancellation endpoint bypasses core cancellation policy"}
+{"timestamp":"2026-10-23T02:22:37.998572+06:00","action":"create","task_id":88,"detail":"Variation-specific product features never render after selecting a variation"}
+{"timestamp":"2026-10-23T02:23:18.648121+06:00","action":"move","task_id":87,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-10-23T02:23:18.663403+06:00","action":"edit","task_id":87,"detail":"Pro customer cancellation endpoint bypasses core cancellation policy"}
+{"timestamp":"2026-10-23T02:23:19.844315+06:00","action":"edit","task_id":88,"detail":"Variation-specific product features never render after selecting a variation"}
+{"timestamp":"2026-10-23T02:23:19.844442+06:00","action":"claim","task_id":88,"detail":"bang-sural"}
+{"timestamp":"2026-10-23T02:23:19.858605+06:00","action":"move","task_id":88,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-10-23T02:24:36.430294+06:00","action":"edit","task_id":87,"detail":"Pro customer cancellation endpoint bypasses core cancellation policy"}
+{"timestamp":"2026-10-23T02:25:52.032878+06:00","action":"edit","task_id":88,"detail":"Variation-specific product features never render after selecting a variation"}
+{"timestamp":"2026-10-23T02:26:31.202053+06:00","action":"edit","task_id":86,"detail":"Verify My Account and storefront Free/Pro endpoint boundaries"}
+{"timestamp":"2026-10-23T02:27:40.95691+06:00","action":"edit","task_id":87,"detail":"Pro customer cancellation endpoint bypasses core cancellation policy"}
+{"timestamp":"2026-10-23T02:28:04.916783+06:00","action":"edit","task_id":88,"detail":"Variation-specific product features never render after selecting a variation"}
+{"timestamp":"2026-10-23T02:29:08.25948+06:00","action":"edit","task_id":88,"detail":"Variation-specific product features never render after selecting a variation"}
+{"timestamp":"2026-10-23T02:34:57.612711+06:00","action":"create","task_id":89,"detail":"Avatar Remove control loses pending state after uploading a new photo"}
+{"timestamp":"2026-10-23T02:35:06.350208+06:00","action":"create","task_id":90,"detail":"Woo Cart interactivity requests undefined Store API root"}
+{"timestamp":"2026-10-23T02:35:16.100093+06:00","action":"move","task_id":89,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-10-23T02:36:37.082665+06:00","action":"edit","task_id":89,"detail":"Avatar Remove control loses pending state after uploading a new photo"}
+{"timestamp":"2026-10-23T02:37:02.420059+06:00","action":"edit","task_id":89,"detail":"Avatar Remove control loses pending state after uploading a new photo"}
+{"timestamp":"2026-10-23T02:37:54.334889+06:00","action":"edit","task_id":86,"detail":"Verify My Account and storefront Free/Pro endpoint boundaries"}
+{"timestamp":"2026-10-23T02:38:08.334098+06:00","action":"edit","task_id":89,"detail":"Avatar Remove control loses pending state after uploading a new photo"}
+{"timestamp":"2026-10-23T02:38:28.392227+06:00","action":"edit","task_id":89,"detail":"Avatar Remove control loses pending state after uploading a new photo"}
+{"timestamp":"2026-10-23T02:41:09.605791+06:00","action":"edit","task_id":88,"detail":"Variation-specific product features never render after selecting a variation"}
+{"timestamp":"2026-10-23T02:41:09.620558+06:00","action":"move","task_id":88,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-10-23T02:41:09.633448+06:00","action":"edit","task_id":88,"detail":"Variation-specific product features never render after selecting a variation"}
+{"timestamp":"2026-10-23T02:41:09.633539+06:00","action":"release","task_id":88,"detail":"bang-sural"}
+{"timestamp":"2026-10-23T02:43:02.037111+06:00","action":"edit","task_id":87,"detail":"Pro customer cancellation endpoint bypasses core cancellation policy"}
+{"timestamp":"2026-10-23T02:43:02.038024+06:00","action":"release","task_id":87,"detail":"cowman-soho"}
+{"timestamp":"2026-10-23T02:45:07.860196+06:00","action":"edit","task_id":89,"detail":"Avatar Remove control loses pending state after uploading a new photo"}
+{"timestamp":"2026-10-23T02:45:07.873293+06:00","action":"move","task_id":89,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-10-23T02:45:07.885861+06:00","action":"edit","task_id":89,"detail":"Avatar Remove control loses pending state after uploading a new photo"}
+{"timestamp":"2026-10-23T02:45:07.885951+06:00","action":"release","task_id":89,"detail":"bang-sural"}
+{"timestamp":"2026-10-23T02:46:25.962685+06:00","action":"edit","task_id":86,"detail":"Verify My Account and storefront Free/Pro endpoint boundaries"}
+{"timestamp":"2026-10-23T02:46:25.975997+06:00","action":"edit","task_id":86,"detail":"Verify My Account and storefront Free/Pro endpoint boundaries"}
+{"timestamp":"2026-10-23T02:46:25.976098+06:00","action":"release","task_id":86,"detail":"burnside-chartula"}
+{"timestamp":"2026-10-23T02:46:25.990523+06:00","action":"move","task_id":86,"detail":"in-progress -\u003e closed"}
