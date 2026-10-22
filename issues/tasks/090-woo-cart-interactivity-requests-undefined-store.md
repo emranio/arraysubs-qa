@@ -1,17 +1,15 @@
 ---
 id: 90
 title: Woo Cart interactivity requests undefined Store API root
-status: in-progress
+status: closed
 priority: medium
 created: 2026-10-23T02:35:06.349827+06:00
-updated: 2026-10-23T03:55:20.507143+06:00
+updated: 2026-10-23T04:16:35.231463+06:00
 tags:
     - qa
     - woocommerce
     - storefront
 parent: 86
-claimed_by: burnside-chartula
-claimed_at: 2026-10-23T03:55:20.507061+06:00
 class: standard
 ---
 
@@ -30,3 +28,6 @@ User explicitly requested fixing and properly testing this cart issue on2026-10-
 
 [[2026-10-23]] Fri 03:55
 Causal investigation isolates malformed requests to the inactive Woo Mini-Cart module on configured Cart/Checkout. Main Cart empty/populated React rendering succeeds after waiting for visible product content; earlier skeleton evidence was transitional. Public render-filter compatibility fix is reviewed in core worktree codex/fix-cart-bootstrap, commit8a03618. No Woo vendor edits or global API/bootstrap changes. Browser regression follows baseline quantity/removal checks.
+
+[[2026-10-23]] Fri 04:16
+Completed under active task #90, scheduled 2026-10-23 Asia/Dhaka, plan qa/cart-bootstrap-2026-10-23/plan.md. Core commit 8a03618 removes only the unused Mini-Cart module from native Cart/Checkout fallbacks through the public render filter; Woo/WordPress/theme sources unchanged. Real browser routes: http://localhost:10013/cart-2/, /checkout-2/, and disposable product pages. Seven Pro/Free guest/customer cases passed: ordinary quantities/totals 25→50→0 USD, Pro monthly12→24→0, Free monthly terms/removal12→0, and mixed customer carts37→62→12→0 in both modes. Native storefront drawer and cross-sell25+7=32 work; legitimate ProductButton state remains. No malformed URLs, page/Cart errors, checkout submissions or owned orders; draft IDs0. Supplemental render checks passed7/7 per mode. Customer438, login qa_cart_90_1792705957, fixture email@example.invalid, role customer, was positively verified before mutations and deleted afterward; products19879/19881/19887 deleted. Subscription/order IDs N/A. Both final carts empty, own sessions closed, credentials removed. Exact initial8-plugin order, Coming Soon yes, settings/modules/menu/profile/share-key hashes and Cart/Checkout configuration restored. Core draft updated. Earlier main-Cart skeleton was transitional; no persistent loading fix is claimed. Later repeated cases used reduced-motion/native keyboard after capture-tool animation freeze; no runtime/CSS patches or payment testing. Report qa/cart-bootstrap-2026-10-23/report.md plus independent/privacy reviews contain proof and limits. Unrelated changes/issues preserved. No lint/Composer, push, release or deployment.
