@@ -1,0 +1,13 @@
+{
+  "checkoutDraftOrderId": 0,
+  "currentUserId": 438,
+  "errors": [],
+  "items": [],
+  "mainCartText": "Your cart is currently empty!\nNew in store\nQA Cart 90 Cross-sell\n7.00$\nPurchase now\ntest\n13.00$ / month\nSubscribe Now\n12\n12.00$ / month\nSubscribe Now\ntest\n122.00$ / month\nSubscribe Now",
+  "malformedRequests": [],
+  "miniCartModule": false,
+  "productButtonModule": true,
+  "reducedMotion": true,
+  "total": "0",
+  "url": "http://localhost:10013/cart-2/?qa-cart90=free-customer-mixed-remove"
+}

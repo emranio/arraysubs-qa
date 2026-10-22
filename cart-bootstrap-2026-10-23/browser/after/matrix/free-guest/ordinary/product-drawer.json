@@ -1,0 +1,35 @@
+{
+  "cartErrors": [],
+  "checkoutDraftOrderId": 0,
+  "currentUserId": 0,
+  "drawerText": "Your cart\n(items: 1)\nProducts in cart\nQA Cart 90 Ordinary\n25.00$\n\u2212\n+\n25.00$\nSubtotal\n25.00$\nShipping and discounts calculated at checkout.\nView my cart\nGo to checkout",
+  "interactivityNamespaces": [
+    "woocommerce/products",
+    "woocommerce",
+    "woocommerce/mini-cart-title-items-counter-block",
+    "woocommerce/mini-cart-products-table-block",
+    "woocommerce/mini-cart-footer-block",
+    "woocommerce/mini-cart",
+    "woocommerce/product-button",
+    "woocommerce/store-notices",
+    "core/router"
+  ],
+  "items": [
+    {
+      "id": 19879,
+      "lineTotal": "2500",
+      "name": "QA Cart 90 Ordinary",
+      "quantity": 1
+    }
+  ],
+  "mainCartText": null,
+  "malformedRequests": [],
+  "miniCartModule": true,
+  "miniCartVisibility": [
+    "visible"
+  ],
+  "productButtonModule": true,
+  "sharedCartRestUrl": "http://localhost:10013/wp-json/",
+  "total": "2500",
+  "url": "http://localhost:10013/product/qa-cart-90-ordinary/?qa-cart90=free-guest-ordinary-drawer"
+}

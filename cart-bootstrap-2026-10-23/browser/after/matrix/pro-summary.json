@@ -1,0 +1,74 @@
+[
+  {
+    "pass": true,
+    "role": "customer",
+    "mode": "pro",
+    "case": "mixed",
+    "customer_id": 438,
+    "totals": [
+      37,
+      62,
+      12,
+      0
+    ],
+    "no_order_submission": true,
+    "evidence": "pro-customer/mixed",
+    "malformed_request_count": 0,
+    "page_errors": [],
+    "draft_order_ids": []
+  },
+  {
+    "pass": true,
+    "session": "cart90-customer-motion",
+    "mode": "pro",
+    "role": "customer",
+    "customer_id": 438,
+    "product_id": 19879,
+    "quantity_totals": [
+      25,
+      50,
+      0
+    ],
+    "no_order_submission": true,
+    "evidence": "pro-customer/ordinary",
+    "malformed_request_count": 0,
+    "page_errors": [],
+    "draft_order_ids": []
+  },
+  {
+    "pass": true,
+    "session": "cart90-guest-motion",
+    "mode": "pro",
+    "role": "guest",
+    "customer_id": 0,
+    "product_id": 19879,
+    "quantity_totals": [
+      25,
+      50,
+      0
+    ],
+    "no_order_submission": true,
+    "evidence": "pro-guest/ordinary",
+    "malformed_request_count": 0,
+    "page_errors": [],
+    "draft_order_ids": []
+  },
+  {
+    "pass": true,
+    "session": "cart90-guest-motion",
+    "mode": "pro",
+    "role": "guest",
+    "customer_id": 0,
+    "product_id": 19881,
+    "quantity_totals": [
+      12,
+      24,
+      0
+    ],
+    "no_order_submission": true,
+    "evidence": "pro-guest/subscription",
+    "malformed_request_count": 0,
+    "page_errors": [],
+    "draft_order_ids": []
+  }
+]

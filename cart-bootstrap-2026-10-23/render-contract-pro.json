@@ -1,0 +1,54 @@
+{
+    "pro_active": true,
+    "results": [
+        {
+            "case": "cart-hidden",
+            "same_markup": true,
+            "before_queued": true,
+            "after_queued": false,
+            "cart_conditional": true,
+            "checkout_conditional": false,
+            "passed": true
+        },
+        {
+            "case": "cart-removed",
+            "same_markup": true,
+            "before_queued": false,
+            "after_queued": false,
+            "cart_conditional": true,
+            "checkout_conditional": false,
+            "passed": true
+        },
+        {
+            "case": "checkout-hidden",
+            "same_markup": true,
+            "before_queued": true,
+            "after_queued": false,
+            "cart_conditional": false,
+            "checkout_conditional": true,
+            "passed": true
+        },
+        {
+            "case": "checkout-removed",
+            "same_markup": true,
+            "before_queued": false,
+            "after_queued": false,
+            "cart_conditional": false,
+            "checkout_conditional": true,
+            "passed": true
+        },
+        {
+            "case": "interactive-syntax-0",
+            "passed": true
+        },
+        {
+            "case": "interactive-syntax-1",
+            "passed": true
+        },
+        {
+            "case": "normal-product-active-mini-cart",
+            "passed": true
+        }
+    ],
+    "passed": true
+}

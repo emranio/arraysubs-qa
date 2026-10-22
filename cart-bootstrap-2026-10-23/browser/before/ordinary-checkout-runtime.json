@@ -1,0 +1,43 @@
+{
+  "jsonScripts": [],
+  "placeOrderButton": "Place Order",
+  "requests": [],
+  "scripts": [
+    {
+      "id": "wc-cart-checkout-base-js",
+      "src": "http://localhost:10013/wp-content/plugins/woocommerce/assets/client/blocks/wc-cart-checkout-base-frontend.js?ver=fb0069b802d50bd5bf47",
+      "type": ""
+    },
+    {
+      "id": "wc-cart-checkout-vendors-js",
+      "src": "http://localhost:10013/wp-content/plugins/woocommerce/assets/client/blocks/wc-cart-checkout-vendors-frontend.js?ver=d075c6ab8086318714ff",
+      "type": ""
+    },
+    {
+      "id": "wc-blocks-checkout-events-js",
+      "src": "http://localhost:10013/wp-content/plugins/woocommerce/assets/client/blocks/blocks-checkout-events.js?ver=1cd9ffa6e3cff96ad1b2",
+      "type": ""
+    },
+    {
+      "id": "wc-blocks-checkout-js",
+      "src": "http://localhost:10013/wp-content/plugins/woocommerce/assets/client/blocks/blocks-checkout.js?ver=1082650d449aab026b31",
+      "type": ""
+    },
+    {
+      "id": "wc-checkout-block-frontend-js",
+      "src": "http://localhost:10013/wp-content/plugins/woocommerce/assets/client/blocks/checkout-frontend.js?ver=1577e157b25df4816395",
+      "type": ""
+    },
+    {
+      "id": "arraysubspro-checkout-builder-frontend-js",
+      "src": "http://localhost:10013/wp-content/plugins/arraysubspro/public/build/checkout-builder-frontend.js?ver=0e9ccc72bb5f17ce2352",
+      "type": ""
+    },
+    {
+      "id": "arraysubs-checkout-session-guard-js",
+      "src": "http://localhost:10013/wp-content/plugins/arraysubs/public/build/checkout-session-guard.js?ver=d6fe2f0bd3d42a2b5466",
+      "type": ""
+    }
+  ],
+  "url": "http://localhost:10013/checkout-2/"
+}

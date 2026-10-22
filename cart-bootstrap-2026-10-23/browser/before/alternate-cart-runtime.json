@@ -1,0 +1,696 @@
+{
+  "interactivityData": [
+    {
+      "id": "wp-script-module-data-@wordpress/interactivity",
+      "keys": [
+        "config",
+        "state",
+        "derivedStateClosures"
+      ],
+      "type": "application/json"
+    }
+  ],
+  "miniCartVisibility": [
+    "visible"
+  ],
+  "reactContainerKeys": [
+    "__reactContainer$6dhsqvpczji"
+  ],
+  "scripts": [
+    {
+      "id": "wc-dependency-detection",
+      "inlineChars": 3683,
+      "order": 0,
+      "src": "",
+      "type": ""
+    },
+    {
+      "id": "jquery-core-js",
+      "inlineChars": 0,
+      "order": 1,
+      "src": "http://localhost:10013/wp-includes/js/jquery/jquery.js?ver=3.7.1",
+      "type": ""
+    },
+    {
+      "id": "jquery-migrate-js",
+      "inlineChars": 0,
+      "order": 2,
+      "src": "http://localhost:10013/wp-includes/js/jquery/jquery-migrate.js?ver=3.4.1",
+      "type": ""
+    },
+    {
+      "id": "wp-react-refresh-runtime-js",
+      "inlineChars": 0,
+      "order": 3,
+      "src": "http://localhost:10013/wp-includes/js/dist/development/react-refresh-runtime.js?ver=0.14.0",
+      "type": ""
+    },
+    {
+      "id": "wp-react-refresh-entry-js",
+      "inlineChars": 0,
+      "order": 4,
+      "src": "http://localhost:10013/wp-includes/js/dist/development/react-refresh-entry.js?ver=0.14.0",
+      "type": ""
+    },
+    {
+      "id": "wc-jquery-blockui-js",
+      "inlineChars": 0,
+      "order": 5,
+      "src": "http://localhost:10013/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.js?ver=2.7.0-wc.11.1.2",
+      "type": ""
+    },
+    {
+      "id": "wc-add-to-cart-js-extra",
+      "inlineChars": 264,
+      "order": 6,
+      "src": "",
+      "type": ""
+    },
+    {
+      "id": "wc-add-to-cart-js",
+      "inlineChars": 0,
+      "order": 7,
+      "src": "http://localhost:10013/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.js?ver=11.1.2",
+      "type": ""
+    },
+    {
+      "id": "wc-js-cookie-js",
+      "inlineChars": 0,
+      "order": 8,
+      "src": "http://localhost:10013/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.js?ver=2.1.4-wc.11.1.2",
+      "type": ""
+    },
+    {
+      "id": "woocommerce-js-extra",
+      "inlineChars": 215,
+      "order": 9,
+      "src": "",
+      "type": ""
+    },
+    {
+      "id": "woocommerce-js",
+      "inlineChars": 0,
+      "order": 10,
+      "src": "http://localhost:10013/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.js?ver=11.1.2",
+      "type": ""
+    },
+    {
+      "id": "wp-importmap",
+      "inlineChars": 812,
+      "order": 11,
+      "src": "",
+      "type": "importmap"
+    },
+    {
+      "id": "woocommerce/customer-account-js-module",
+      "inlineChars": 0,
+      "order": 12,
+      "src": "http://localhost:10013/wp-content/plugins/woocommerce/assets/client/blocks/woocommerce/customer-account.js?ver=4d4c517c6dc2b50c4b86",
+      "type": "module"
+    },
+    {
+      "id": "woocommerce/mini-cart-js-module",
+      "inlineChars": 0,
+      "order": 13,
+      "src": "http://localhost:10013/wp-content/plugins/woocommerce/assets/client/blocks/woocommerce/mini-cart.js?ver=1bd2060615618c2424e6",
+      "type": "module"
+    },
+    {
+      "id": "",
+      "inlineChars": 386,
+      "order": 14,
+      "src": "",
+      "type": "speculationrules"
+    },
+    {
+      "id": "@wordpress/block-library/navigation/view-js-module",
+      "inlineChars": 0,
+      "order": 15,
+      "src": "http://localhost:10013/wp-includes/js/dist/script-modules/block-library/navigation/view.js?ver=1bf28ded04f9f188bdcb",
+      "type": "module"
+    },
+    {
+      "id": "wp-script-module-data-@wordpress/interactivity",
+      "inlineChars": 2742,
+      "order": 16,
+      "src": "",
+      "type": "application/json"
+    },
+    {
+      "id": "",
+      "inlineChars": 152,
+      "order": 17,
+      "src": "",
+      "type": ""
+    },
+    {
+      "id": "wc-dependency-detection-registry",
+      "inlineChars": 4272,
+      "order": 18,
+      "src": "",
+      "type": ""
+    },
+    {
+      "id": "wp-hooks-js",
+      "inlineChars": 0,
+      "order": 19,
+      "src": "http://localhost:10013/wp-includes/js/dist/hooks.js?ver=f0f188028580e8dc1255",
+      "type": ""
+    },
+    {
+      "id": "wp-hooks-js-after",
+      "inlineChars": 8963,
+      "order": 20,
+      "src": "",
+      "type": ""
+    },
+    {
+      "id": "wp-i18n-js",
+      "inlineChars": 0,
+      "order": 21,
+      "src": "http://localhost:10013/wp-includes/js/dist/i18n.js?ver=1dfe7db3940c23ea9216",
+      "type": ""
+    },
+    {
+      "id": "wp-i18n-js-after",
+      "inlineChars": 99,
+      "order": 22,
+      "src": "",
+      "type": ""
+    },
+    {
+      "id": "wp-subscription-gateway-settings-script-js",
+      "inlineChars": 0,
+      "order": 23,
+      "src": "http://localhost:10013/wp-content/plugins/subscription/assets/js/gateway.js?ver=2.4.0",
+      "type": ""
+    },
+    {
+      "id": "wp-subscription-gateway-settings-toggle-script-js",
+      "inlineChars": 0,
+      "order": 24,
+      "src": "http://localhost:10013/wp-content/plugins/subscription/assets/js/gateway_options_toggler.js?ver=2.4.0",
+      "type": ""
+    },
+    {
+      "id": "wp-polyfill-js",
+      "inlineChars": 0,
+      "order": 25,
+      "src": "http://localhost:10013/wp-includes/js/dist/vendor/wp-polyfill.js?ver=3.15.0",
+      "type": ""
+    },
+    {
+      "id": "wc-cart-checkout-base-js",
+      "inlineChars": 0,
+      "order": 26,
+      "src": "http://localhost:10013/wp-content/plugins/woocommerce/assets/client/blocks/wc-cart-checkout-base-frontend.js?ver=fb0069b802d50bd5bf47",
+      "type": ""
+    },
+    {
+      "id": "wc-cart-checkout-vendors-js",
+      "inlineChars": 0,
+      "order": 27,
+      "src": "http://localhost:10013/wp-content/plugins/woocommerce/assets/client/blocks/wc-cart-checkout-vendors-frontend.js?ver=d075c6ab8086318714ff",
+      "type": ""
+    },
+    {
+      "id": "react-js",
+      "inlineChars": 0,
+      "order": 28,
+      "src": "http://localhost:10013/wp-includes/js/dist/vendor/react.js?ver=18.3.1.1",
+      "type": ""
+    },
+    {
+      "id": "react-jsx-runtime-js",
+      "inlineChars": 0,
+      "order": 29,
+      "src": "http://localhost:10013/wp-includes/js/dist/vendor/react-jsx-runtime.js?ver=18.3.1",
+      "type": ""
+    },
+    {
+      "id": "react-dom-js",
+      "inlineChars": 0,
+      "order": 30,
+      "src": "http://localhost:10013/wp-includes/js/dist/vendor/react-dom.js?ver=18.3.1.1",
+      "type": ""
+    },
+    {
+      "id": "wc-types-js",
+      "inlineChars": 0,
+      "order": 31,
+      "src": "http://localhost:10013/wp-content/plugins/woocommerce/assets/client/blocks/wc-types.js?ver=c4b7280ca0810ce973be",
+      "type": ""
+    },
+    {
+      "id": "wc-blocks-checkout-events-js",
+      "inlineChars": 0,
+      "order": 32,
+      "src": "http://localhost:10013/wp-content/plugins/woocommerce/assets/client/blocks/blocks-checkout-events.js?ver=1cd9ffa6e3cff96ad1b2",
+      "type": ""
+    },
+    {
+      "id": "wp-private-apis-js",
+      "inlineChars": 0,
+      "order": 33,
+      "src": "http://localhost:10013/wp-includes/js/dist/private-apis.js?ver=eb85f28c4c729bb4f002",
+      "type": ""
+    },
+    {
+      "id": "wp-url-js",
+      "inlineChars": 0,
+      "order": 34,
+      "src": "http://localhost:10013/wp-includes/js/dist/url.js?ver=7b0de086d4ae11d55704",
+      "type": ""
+    },
+    {
+      "id": "wp-api-fetch-js",
+      "inlineChars": 0,
+      "order": 35,
+      "src": "http://localhost:10013/wp-includes/js/dist/api-fetch.js?ver=6f2a4faeee3c722b1e57",
+      "type": ""
+    },
+    {
+      "id": "wp-api-fetch-js-after",
+      "inlineChars": 409,
+      "order": 36,
+      "src": "",
+      "type": ""
+    },
+    {
+      "id": "wc-settings-js-before",
+      "inlineChars": 128739,
+      "order": 37,
+      "src": "",
+      "type": ""
+    },
+    {
+      "id": "wc-settings-js",
+      "inlineChars": 0,
+      "order": 38,
+      "src": "http://localhost:10013/wp-content/plugins/woocommerce/assets/client/blocks/wc-settings.js?ver=5cdaba16c87338181b77",
+      "type": ""
+    },
+    {
+      "id": "wp-deprecated-js",
+      "inlineChars": 0,
+      "order": 39,
+      "src": "http://localhost:10013/wp-includes/js/dist/deprecated.js?ver=fe587bac92b7d0ef760e",
+      "type": ""
+    },
+    {
+      "id": "wp-dom-js",
+      "inlineChars": 0,
+      "order": 40,
+      "src": "http://localhost:10013/wp-includes/js/dist/dom.js?ver=c95f94cbbc1ac3fde84f",
+      "type": ""
+    },
+    {
+      "id": "wp-escape-html-js",
+      "inlineChars": 0,
+      "order": 41,
+      "src": "http://localhost:10013/wp-includes/js/dist/escape-html.js?ver=87ebe53e97bba59805a5",
+      "type": ""
+    },
+    {
+      "id": "wp-element-js",
+      "inlineChars": 0,
+      "order": 42,
+      "src": "http://localhost:10013/wp-includes/js/dist/element.js?ver=4a4370b2b349066fd440",
+      "type": ""
+    },
+    {
+      "id": "wp-is-shallow-equal-js",
+      "inlineChars": 0,
+      "order": 43,
+      "src": "http://localhost:10013/wp-includes/js/dist/is-shallow-equal.js?ver=7ad271045c1fe60f5496",
+      "type": ""
+    },
+    {
+      "id": "wp-keycodes-js",
+      "inlineChars": 0,
+      "order": 44,
+      "src": "http://localhost:10013/wp-includes/js/dist/keycodes.js?ver=d0b4204e4bbeb412df6e",
+      "type": ""
+    },
+    {
+      "id": "wp-priority-queue-js",
+      "inlineChars": 0,
+      "order": 45,
+      "src": "http://localhost:10013/wp-includes/js/dist/priority-queue.js?ver=6c0aa59b65d55dfd509b",
+      "type": ""
+    },
+    {
+      "id": "wp-undo-manager-js",
+      "inlineChars": 0,
+      "order": 46,
+      "src": "http://localhost:10013/wp-includes/js/dist/undo-manager.js?ver=4554fce6276d8910a4ae",
+      "type": ""
+    },
+    {
+      "id": "wp-compose-js",
+      "inlineChars": 0,
+      "order": 47,
+      "src": "http://localhost:10013/wp-includes/js/dist/compose.js?ver=0e8bde2a499ea6073b42",
+      "type": ""
+    },
+    {
+      "id": "wp-redux-routine-js",
+      "inlineChars": 0,
+      "order": 48,
+      "src": "http://localhost:10013/wp-includes/js/dist/redux-routine.js?ver=acca2b4857d83ad1790e",
+      "type": ""
+    },
+    {
+      "id": "wp-data-js",
+      "inlineChars": 0,
+      "order": 49,
+      "src": "http://localhost:10013/wp-includes/js/dist/data.js?ver=14a216e0932d72c22976",
+      "type": ""
+    },
+    {
+      "id": "wp-data-js-after",
+      "inlineChars": 191,
+      "order": 50,
+      "src": "",
+      "type": ""
+    },
+    {
+      "id": "wc-blocks-registry-js",
+      "inlineChars": 0,
+      "order": 51,
+      "src": "http://localhost:10013/wp-content/plugins/woocommerce/assets/client/blocks/wc-blocks-registry.js?ver=8cf98119f62dbfe139c2",
+      "type": ""
+    },
+    {
+      "id": "wp-data-controls-js",
+      "inlineChars": 0,
+      "order": 52,
+      "src": "http://localhost:10013/wp-includes/js/dist/data-controls.js?ver=7e8f932da184d5537725",
+      "type": ""
+    },
+    {
+      "id": "wp-html-entities-js",
+      "inlineChars": 0,
+      "order": 53,
+      "src": "http://localhost:10013/wp-includes/js/dist/html-entities.js?ver=a976ff3a0f00bc2999a3",
+      "type": ""
+    },
+    {
+      "id": "wp-dom-ready-js",
+      "inlineChars": 0,
+      "order": 54,
+      "src": "http://localhost:10013/wp-includes/js/dist/dom-ready.js?ver=3fe927cab37bf38d6a23",
+      "type": ""
+    },
+    {
+      "id": "wp-a11y-js",
+      "inlineChars": 0,
+      "order": 55,
+      "src": "http://localhost:10013/wp-includes/js/dist/a11y.js?ver=31c6cec5a4ff7aff483d",
+      "type": ""
+    },
+    {
+      "id": "moment-js",
+      "inlineChars": 0,
+      "order": 56,
+      "src": "http://localhost:10013/wp-includes/js/dist/vendor/moment.js?ver=2.30.1",
+      "type": ""
+    },
+    {
+      "id": "moment-js-after",
+      "inlineChars": 535,
+      "order": 57,
+      "src": "",
+      "type": ""
+    },
+    {
+      "id": "wp-date-js",
+      "inlineChars": 0,
+      "order": 58,
+      "src": "http://localhost:10013/wp-includes/js/dist/date.js?ver=8173fc0fc12b7bb7eaf0",
+      "type": ""
+    },
+    {
+      "id": "wp-date-js-after",
+      "inlineChars": 915,
+      "order": 59,
+      "src": "",
+      "type": ""
+    },
+    {
+      "id": "wp-primitives-js",
+      "inlineChars": 0,
+      "order": 60,
+      "src": "http://localhost:10013/wp-includes/js/dist/primitives.js?ver=44cc5a35c7b9fe07a838",
+      "type": ""
+    },
+    {
+      "id": "wp-rich-text-js",
+      "inlineChars": 0,
+      "order": 61,
+      "src": "http://localhost:10013/wp-includes/js/dist/rich-text.js?ver=3e5852e42cee1c239bae",
+      "type": ""
+    },
+    {
+      "id": "wp-theme-js",
+      "inlineChars": 0,
+      "order": 62,
+      "src": "http://localhost:10013/wp-includes/js/dist/theme.js?ver=56a75cc08ae66c1fcb7a",
+      "type": ""
+    },
+    {
+      "id": "wp-warning-js",
+      "inlineChars": 0,
+      "order": 63,
+      "src": "http://localhost:10013/wp-includes/js/dist/warning.js?ver=a0978839debc564a6608",
+      "type": ""
+    },
+    {
+      "id": "wp-components-js",
+      "inlineChars": 0,
+      "order": 64,
+      "src": "http://localhost:10013/wp-includes/js/dist/components.js?ver=9b751f17060211272a5c",
+      "type": ""
+    },
+    {
+      "id": "wp-notices-js",
+      "inlineChars": 0,
+      "order": 65,
+      "src": "http://localhost:10013/wp-includes/js/dist/notices.js?ver=c09a068fdab0eb465e14",
+      "type": ""
+    },
+    {
+      "id": "wc-blocks-middleware-js-before",
+      "inlineChars": 168,
+      "order": 66,
+      "src": "",
+      "type": ""
+    },
+    {
+      "id": "wc-blocks-middleware-js",
+      "inlineChars": 0,
+      "order": 67,
+      "src": "http://localhost:10013/wp-content/plugins/woocommerce/assets/client/blocks/wc-blocks-middleware.js?ver=2c049fe250c153b7cac8",
+      "type": ""
+    },
+    {
+      "id": "wc-blocks-data-store-js",
+      "inlineChars": 0,
+      "order": 68,
+      "src": "http://localhost:10013/wp-content/plugins/woocommerce/assets/client/blocks/wc-blocks-data.js?ver=afe6cbed0b2d6966962a",
+      "type": ""
+    },
+    {
+      "id": "wc-sanitize-js",
+      "inlineChars": 0,
+      "order": 69,
+      "src": "http://localhost:10013/wp-content/plugins/woocommerce/assets/client/admin/sanitize/index.js?ver=6cc3684099bd6a5547b8",
+      "type": ""
+    },
+    {
+      "id": "wc-blocks-components-js",
+      "inlineChars": 0,
+      "order": 70,
+      "src": "http://localhost:10013/wp-content/plugins/woocommerce/assets/client/blocks/blocks-components.js?ver=024deac35759b91da09e",
+      "type": ""
+    },
+    {
+      "id": "wc-blocks-checkout-js",
+      "inlineChars": 0,
+      "order": 71,
+      "src": "http://localhost:10013/wp-content/plugins/woocommerce/assets/client/blocks/blocks-checkout.js?ver=1082650d449aab026b31",
+      "type": ""
+    },
+    {
+      "id": "wc-blocks-shared-context-js",
+      "inlineChars": 0,
+      "order": 72,
+      "src": "http://localhost:10013/wp-content/plugins/woocommerce/assets/client/blocks/wc-blocks-shared-context.js?ver=621353d8a3a7c8d44b41",
+      "type": ""
+    },
+    {
+      "id": "wc-blocks-shared-hocs-js",
+      "inlineChars": 0,
+      "order": 73,
+      "src": "http://localhost:10013/wp-content/plugins/woocommerce/assets/client/blocks/wc-blocks-shared-hocs.js?ver=781196b1e16b60e862cb",
+      "type": ""
+    },
+    {
+      "id": "wc-price-format-js",
+      "inlineChars": 0,
+      "order": 74,
+      "src": "http://localhost:10013/wp-content/plugins/woocommerce/assets/client/blocks/price-format.js?ver=0df720e448f7ab3c5d0d",
+      "type": ""
+    },
+    {
+      "id": "wp-autop-js",
+      "inlineChars": 0,
+      "order": 75,
+      "src": "http://localhost:10013/wp-includes/js/dist/autop.js?ver=4e10a18cb6f21a043fc0",
+      "type": ""
+    },
+    {
+      "id": "wp-plugins-js",
+      "inlineChars": 0,
+      "order": 76,
+      "src": "http://localhost:10013/wp-includes/js/dist/plugins.js?ver=673d1e05ca49004ab160",
+      "type": ""
+    },
+    {
+      "id": "wp-style-engine-js",
+      "inlineChars": 0,
+      "order": 77,
+      "src": "http://localhost:10013/wp-includes/js/dist/style-engine.js?ver=914befb08774033e6265",
+      "type": ""
+    },
+    {
+      "id": "wp-wordcount-js",
+      "inlineChars": 0,
+      "order": 78,
+      "src": "http://localhost:10013/wp-includes/js/dist/wordcount.js?ver=f0b1f0e977b2ff6e0132",
+      "type": ""
+    },
+    {
+      "id": "sdevs_subscrpt_cart_block-js",
+      "inlineChars": 0,
+      "order": 79,
+      "src": "http://localhost:10013/wp-content/plugins/subscription/build/index.js?ver=c059c4f1ac73c2904203",
+      "type": ""
+    },
+    {
+      "id": "wc-payment-method-bacs-js",
+      "inlineChars": 0,
+      "order": 80,
+      "src": "http://localhost:10013/wp-content/plugins/woocommerce/assets/client/blocks/wc-payment-method-bacs.js?ver=7d378c9eeec5f2eabd09",
+      "type": ""
+    },
+    {
+      "id": "wc-payment-method-cod-js",
+      "inlineChars": 0,
+      "order": 81,
+      "src": "http://localhost:10013/wp-content/plugins/woocommerce/assets/client/blocks/wc-payment-method-cod.js?ver=e07cd4ec5463958cbf43",
+      "type": ""
+    },
+    {
+      "id": "wc-cart-block-frontend-js",
+      "inlineChars": 0,
+      "order": 82,
+      "src": "http://localhost:10013/wp-content/plugins/woocommerce/assets/client/blocks/cart-frontend.js?ver=d280e168288559e9bb34",
+      "type": ""
+    },
+    {
+      "id": "arraysubs-subscription-box-frontend-js",
+      "inlineChars": 0,
+      "order": 83,
+      "src": "http://localhost:10013/wp-content/plugins/arraysubs/public/build/subscription-box-frontend.js?ver=69f10fdc6bb9574616fb",
+      "type": ""
+    },
+    {
+      "id": "sourcebuster-js-js",
+      "inlineChars": 0,
+      "order": 84,
+      "src": "http://localhost:10013/wp-content/plugins/woocommerce/assets/js/sourcebuster/sourcebuster.js?ver=11.1.2",
+      "type": ""
+    },
+    {
+      "id": "wc-order-attribution-js-extra",
+      "inlineChars": 748,
+      "order": 85,
+      "src": "",
+      "type": ""
+    },
+    {
+      "id": "wc-order-attribution-js",
+      "inlineChars": 0,
+      "order": 86,
+      "src": "http://localhost:10013/wp-content/plugins/woocommerce/assets/js/frontend/order-attribution.js?ver=11.1.2",
+      "type": ""
+    },
+    {
+      "id": "arraysubspro-flexible-subscription-js-extra",
+      "inlineChars": 501,
+      "order": 87,
+      "src": "",
+      "type": ""
+    },
+    {
+      "id": "arraysubspro-flexible-subscription-js",
+      "inlineChars": 0,
+      "order": 88,
+      "src": "http://localhost:10013/wp-content/plugins/arraysubspro/public/build/flexible-subscription.js?ver=c51f13609a6e7de11890",
+      "type": ""
+    }
+  ],
+  "url": "http://localhost:10013/cart/",
+  "wcSettingsKeys": [
+    "shippingCostRequiresAddress",
+    "wcBlocksConfig",
+    "taxLabel",
+    "displayCartPricesIncludingTax",
+    "templatePartEditUri",
+    "paymentMethodSortOrder",
+    "paymentMethodData",
+    "defaultFields",
+    "addressFieldsLocations",
+    "miniCartFooterDescription",
+    "hasFilterableProducts",
+    "isRenderingPhpTemplate",
+    "loopShopPerPage",
+    "minColumns",
+    "maxColumns",
+    "defaultColumns",
+    "minRows",
+    "maxRows",
+    "defaultRows",
+    "countryData",
+    "displayItemizedTaxes",
+    "taxesEnabled",
+    "couponsEnabled",
+    "shippingEnabled",
+    "hasDarkEditorStyleSupport",
+    "isBlockTheme",
+    "shippingMethodsExist",
+    "adminUrl",
+    "countries",
+    "currency",
+    "currentUserId",
+    "currentUserIsAdmin",
+    "currentThemeIsFSETheme",
+    "dateFormat",
+    "homeUrl",
+    "locale",
+    "isRemoteLoggingEnabled",
+    "dashboardUrl",
+    "orderStatuses",
+    "placeholderImgSrc",
+    "productsSettings",
+    "siteTitle",
+    "storePages",
+    "wcAssetUrl",
+    "wcVersion",
+    "wpLoginUrl",
+    "wpVersion",
+    "experimentalWcRestApiV4",
+    "experimentalCartSaveForLater"
+  ]
+}

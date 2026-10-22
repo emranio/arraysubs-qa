@@ -1,0 +1,35 @@
+{
+  "cartErrors": [],
+  "checkoutDraftOrderId": 0,
+  "currentUserId": 0,
+  "drawerText": "Your cart\n(items: 2)\nProducts in cart\nQA Cart 90 Subscription\n12.00$\nRenewals: 24.00$ every 1 month / Today's charge: 24.00$ / Next charge: November 23, 2026 / Duration: Continues until cancelled\n\u2212\n+\n24.00$\nSubtotal\n24.00$\nShipping and discounts calculated at checkout.\nView my cart\nGo to checkout",
+  "interactivityNamespaces": [
+    "woocommerce/products",
+    "woocommerce",
+    "woocommerce/mini-cart-title-items-counter-block",
+    "woocommerce/mini-cart-products-table-block",
+    "woocommerce/mini-cart-footer-block",
+    "woocommerce/mini-cart",
+    "woocommerce/product-button",
+    "woocommerce/store-notices",
+    "core/router"
+  ],
+  "items": [
+    {
+      "id": 19881,
+      "lineTotal": "2400",
+      "name": "QA Cart 90 Subscription",
+      "quantity": 2
+    }
+  ],
+  "mainCartText": null,
+  "malformedRequests": [],
+  "miniCartModule": true,
+  "miniCartVisibility": [
+    "visible"
+  ],
+  "productButtonModule": true,
+  "sharedCartRestUrl": "http://localhost:10013/wp-json/",
+  "total": "2400",
+  "url": "http://localhost:10013/product/qa-cart-90-subscription/?qa-cart90=pro-guest-subscription-drawer"
+}

@@ -1,0 +1,20 @@
+{
+  "checkoutDraftOrderId": 0,
+  "currentUserId": 438,
+  "errors": [],
+  "items": [
+    {
+      "id": 19879,
+      "lineTotal": "2500",
+      "name": "QA Cart 90 Ordinary",
+      "quantity": 1
+    }
+  ],
+  "mainCartText": null,
+  "malformedRequests": [],
+  "miniCartModule": false,
+  "productButtonModule": false,
+  "reducedMotion": true,
+  "total": "2500",
+  "url": "http://localhost:10013/checkout-2/"
+}

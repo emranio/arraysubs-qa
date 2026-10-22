@@ -1,0 +1,54 @@
+[
+  {
+    "pass": true,
+    "role": "customer",
+    "mode": "free",
+    "case": "mixed",
+    "customer_id": 438,
+    "totals": [
+      37,
+      62,
+      12,
+      0
+    ],
+    "no_order_submission": true,
+    "evidence": "free-customer/mixed",
+    "malformed_request_count": 0,
+    "page_errors": [],
+    "draft_order_ids": []
+  },
+  {
+    "pass": true,
+    "role": "guest",
+    "mode": "free",
+    "case": "monthly",
+    "customer_id": 0,
+    "totals": [
+      12,
+      0
+    ],
+    "no_order_submission": true,
+    "evidence": "free-guest/monthly",
+    "malformed_request_count": 0,
+    "page_errors": [],
+    "draft_order_ids": []
+  },
+  {
+    "pass": true,
+    "session": "cart90-guest-motion",
+    "mode": "free",
+    "role": "guest",
+    "customer_id": 0,
+    "product_id": 19879,
+    "quantity_totals": [
+      25,
+      50,
+      0
+    ],
+    "no_order_submission": true,
+    "evidence": "free-guest/ordinary",
+    "malformed_request_count": 0,
+    "page_errors": [],
+    "draft_order_ids": []
+  }
+]

@@ -1,0 +1,31 @@
+{
+  "cartErrors": [],
+  "checkoutDraftOrderId": 0,
+  "currentUserId": 0,
+  "drawerText": null,
+  "interactivityNamespaces": [
+    "woocommerce",
+    "woocommerce/product-button",
+    "woocommerce/products",
+    "woocommerce/store-notices",
+    "core/router"
+  ],
+  "items": [
+    {
+      "id": 19879,
+      "lineTotal": "2500",
+      "name": "QA Cart 90 Ordinary",
+      "quantity": 1
+    }
+  ],
+  "mainCartText": "Products in cart\nPRODUCT\t\nDETAILS\n\tTOTAL\n\t\nQA Cart 90 Ordinary\n25.00$\n\u2212\n+\n\t\n25.00$\nYou may be interested in\u2026\nQA Cart 90 Cross-sell\n7.00$\nPurchase now\nCART TOTALS\nAdd coupons\nEstimated total\n25.00$\nProceed to Checkout",
+  "malformedRequests": [],
+  "miniCartModule": false,
+  "miniCartVisibility": [
+    "hidden"
+  ],
+  "productButtonModule": true,
+  "sharedCartRestUrl": "http://localhost:10013/wp-json/",
+  "total": "2500",
+  "url": "http://localhost:10013/cart-2/"
+}

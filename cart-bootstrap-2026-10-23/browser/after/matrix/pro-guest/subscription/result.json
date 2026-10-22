@@ -1,0 +1,14 @@
+{
+  "pass": true,
+  "session": "cart90-guest-motion",
+  "mode": "pro",
+  "role": "guest",
+  "customer_id": 0,
+  "product_id": 19881,
+  "quantity_totals": [
+    12,
+    24,
+    0
+  ],
+  "no_order_submission": true
+}

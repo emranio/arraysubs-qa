@@ -1,0 +1,20 @@
+{
+  "checkoutDraftOrderId": 0,
+  "currentUserId": 0,
+  "errors": [],
+  "items": [
+    {
+      "id": 19881,
+      "lineTotal": "1200",
+      "name": "QA Cart 90 Subscription",
+      "quantity": 1
+    }
+  ],
+  "mainCartText": "Products in cart\nPRODUCT\t\nDETAILS\n\tTOTAL\n\t\nQA Cart 90 Subscription\n12.00$\nRenewals:\n12.00$ every 1 month\nToday's charge:\n12.00$\nNext charge:\nNovember 23, 2026\nDuration:\nContinues until cancelled\n\u2212\n+\n\t\n12.00$\nCART TOTALS\nAdd coupons\nEstimated total\n12.00$\nProceed to Checkout",
+  "malformedRequests": [],
+  "miniCartModule": false,
+  "productButtonModule": false,
+  "reducedMotion": true,
+  "total": "1200",
+  "url": "http://localhost:10013/cart-2/?qa-cart90=free-guest-monthly-items"
+}

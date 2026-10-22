@@ -1,0 +1,17 @@
+[info] [WooCommerce] Dependency detection enabled. Warnings will be shown for scripts that access wc.* globals without proper dependencies.
+[log] JQMIGRATE: Migrate is installed with logging active, version 3.4.1
+[info] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold
+[warning] JQMIGRATE: jQuery.fn.change() event shorthand is deprecated
+[trace] console.trace
+[info] [WooCommerce] Dependency detection enabled. Warnings will be shown for scripts that access wc.* globals without proper dependencies.
+[log] JQMIGRATE: Migrate is installed with logging active, version 3.4.1
+[info] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold
+[warning] JQMIGRATE: jQuery.fn.change() event shorthand is deprecated
+[trace] console.trace
+[info] [WooCommerce] Dependency detection enabled. Warnings will be shown for scripts that access wc.* globals without proper dependencies.
+[log] JQMIGRATE: Migrate is installed with logging active, version 3.4.1
+[info] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold
+[warning] JQMIGRATE: jQuery.fn.change() event shorthand is deprecated
+[trace] console.trace
+[warning] [WooCommerce] An inline or unknown script accessed wc.wcBlocksData without proper dependency declaration. This script should declare "wc-blocks-data-store" as a dependency.
+[warning] [WooCommerce] An inline or unknown script accessed wc.wcSettings without proper dependency declaration. This script should declare "wc-settings" as a dependency.

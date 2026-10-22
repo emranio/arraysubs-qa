@@ -1,0 +1,12 @@
+{
+  "pass": true,
+  "role": "guest",
+  "mode": "free",
+  "case": "monthly",
+  "customer_id": 0,
+  "totals": [
+    12,
+    0
+  ],
+  "no_order_submission": true
+}

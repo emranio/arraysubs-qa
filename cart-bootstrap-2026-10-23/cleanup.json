@@ -1,0 +1,12 @@
+{
+  "deleted_orders": [],
+  "deleted_products": [
+    19879,
+    19881,
+    19887
+  ],
+  "deleted_customer": 438,
+  "verified_absent": true,
+  "temporary_credentials_removed": true,
+  "owned_browser_sessions_closed": true
+}

@@ -1,0 +1,44 @@
+{
+    "created_at": "2026-10-22T21:52:37+00:00",
+    "task": 90,
+    "products": {
+        "ordinary": {
+            "id": 19879,
+            "url": "http://localhost:10013/product/qa-cart-90-ordinary/",
+            "price": 25,
+            "subscription_data": null
+        },
+        "subscription": {
+            "id": 19881,
+            "url": "http://localhost:10013/product/qa-cart-90-subscription/",
+            "price": 12,
+            "subscription_data": {
+                "product_id": 19881,
+                "price": "12",
+                "period": "month",
+                "interval": 1,
+                "length": 0,
+                "trial_length": 0,
+                "trial_period": "day",
+                "signup_fee": 0,
+                "enable_different_renewal_price": false,
+                "different_renewal_price": "",
+                "different_renewal_price_after": 1,
+                "flex_mode": "fixed",
+                "flex_periods": [
+                    "month"
+                ]
+            }
+        },
+        "cross_sell": {
+            "id": 19887,
+            "url": "http://localhost:10013/product/qa-cart-90-cross-sell/",
+            "price": 7
+        }
+    },
+    "customer": {
+        "id": 438,
+        "login": "qa_cart_90_1792705957",
+        "email": "qa_cart_90_1792705957@example.invalid"
+    }
+}

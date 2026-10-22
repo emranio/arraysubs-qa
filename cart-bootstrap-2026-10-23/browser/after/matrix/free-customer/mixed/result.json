@@ -1,0 +1,14 @@
+{
+  "pass": true,
+  "role": "customer",
+  "mode": "free",
+  "case": "mixed",
+  "customer_id": 438,
+  "totals": [
+    37,
+    62,
+    12,
+    0
+  ],
+  "no_order_submission": true
+}

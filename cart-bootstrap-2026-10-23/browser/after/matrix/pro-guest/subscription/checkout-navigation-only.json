@@ -1,0 +1,23 @@
+{
+  "cartErrors": [],
+  "checkoutDraftOrderId": 0,
+  "currentUserId": 0,
+  "drawerText": null,
+  "interactivityNamespaces": [],
+  "items": [
+    {
+      "id": 19881,
+      "lineTotal": "2400",
+      "name": "QA Cart 90 Subscription",
+      "quantity": 2
+    }
+  ],
+  "mainCartText": null,
+  "malformedRequests": [],
+  "miniCartModule": false,
+  "miniCartVisibility": [],
+  "productButtonModule": false,
+  "sharedCartRestUrl": null,
+  "total": "2400",
+  "url": "http://localhost:10013/checkout-2/"
+}

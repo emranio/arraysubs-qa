@@ -1,0 +1,14 @@
+{
+  "pass": true,
+  "session": "cart90-customer-motion",
+  "mode": "pro",
+  "role": "customer",
+  "customer_id": 438,
+  "product_id": 19879,
+  "quantity_totals": [
+    25,
+    50,
+    0
+  ],
+  "no_order_submission": true
+}

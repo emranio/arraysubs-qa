@@ -416,3 +416,6 @@
 {"timestamp":"2026-10-23T03:44:18.424373+06:00","action":"edit","task_id":91,"detail":"Verify subscription and credit email Free Pro boundaries"}
 {"timestamp":"2026-10-23T03:44:18.424556+06:00","action":"release","task_id":91,"detail":"burnside-chartula"}
 {"timestamp":"2026-10-23T03:44:18.448582+06:00","action":"move","task_id":91,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-10-23T03:48:41.949281+06:00","action":"edit","task_id":90,"detail":"Woo Cart interactivity requests undefined Store API root"}
+{"timestamp":"2026-10-23T03:48:41.95041+06:00","action":"claim","task_id":90,"detail":"burnside-chartula"}
+{"timestamp":"2026-10-23T03:55:20.507386+06:00","action":"edit","task_id":90,"detail":"Woo Cart interactivity requests undefined Store API root"}

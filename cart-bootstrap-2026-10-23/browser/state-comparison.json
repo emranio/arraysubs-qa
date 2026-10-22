@@ -1,0 +1,11 @@
+{
+  "active_plugins": true,
+  "options": true,
+  "share_key_hash": true,
+  "modules": true,
+  "arraysubs_settings_hash": true,
+  "menu_hash": true,
+  "profile_fields_hash": true,
+  "pages": true,
+  "version": true
+}

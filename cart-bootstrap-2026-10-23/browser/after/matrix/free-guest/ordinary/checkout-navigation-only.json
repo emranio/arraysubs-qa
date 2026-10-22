@@ -1,0 +1,23 @@
+{
+  "cartErrors": [],
+  "checkoutDraftOrderId": 0,
+  "currentUserId": 0,
+  "drawerText": null,
+  "interactivityNamespaces": [],
+  "items": [
+    {
+      "id": 19879,
+      "lineTotal": "5000",
+      "name": "QA Cart 90 Ordinary",
+      "quantity": 2
+    }
+  ],
+  "mainCartText": null,
+  "malformedRequests": [],
+  "miniCartModule": false,
+  "miniCartVisibility": [],
+  "productButtonModule": false,
+  "sharedCartRestUrl": null,
+  "total": "5000",
+  "url": "http://localhost:10013/checkout-2/"
+}
