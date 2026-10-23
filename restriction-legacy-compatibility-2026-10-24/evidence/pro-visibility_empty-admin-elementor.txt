@@ -1,0 +1,42 @@
+- generic
+  - navigation "Toolbar" [ref=e1]
+    - menu
+      - group
+        - menuitem "About WordPress" [expanded=false, ref=e3]
+          - StaticText "About WordPress"
+      - group
+        - menuitem "wp-test2" [expanded=false, ref=e4]
+      - group
+        - menuitem "Live" [ref=e5]
+      - group
+        - menuitem "Edit Site" [ref=e6]
+      - group
+        - menuitem "5 updates available" [ref=e7]
+          - StaticText "5 updates available"
+      - group
+        - menuitem "0 Comments in moderation" [ref=e8]
+          - StaticText "0 Comments in moderation"
+      - group
+        - menuitem "New" [expanded=false, ref=e9]
+          - StaticText "New"
+      - group
+        - menuitem "Edit Page" [ref=e10]
+      - link " Edit with Elementor" [ref=e2]
+        - StaticText ""
+        - StaticText "Edit with Elementor"
+      - group
+        - menuitem " Elementor Debugger" [expanded=false, ref=e11]
+          - StaticText ""
+          - StaticText "Elementor Debugger"
+    - menu
+      - group
+        - menuitem "Howdy, admin" [expanded=false, ref=e12]
+          - StaticText "Howdy, admin"
+      - group
+        - menuitem "Search" [ref=e13]
+          - generic
+            - textbox "Search" [ref=e14]
+            - LabelText
+              - StaticText "Search"
+  - StaticText "desktop"
+  - status

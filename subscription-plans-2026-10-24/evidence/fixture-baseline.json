@@ -1,0 +1,901 @@
+{
+    "regular": {
+        "id": 20064,
+        "name": "Plans QA 2026-10-24 Regular control",
+        "slug": "",
+        "date_created": {
+            "date": "2026-10-23 21:28:05.000000",
+            "timezone_type": 1,
+            "timezone": "+00:00"
+        },
+        "date_modified": {
+            "date": "2026-10-23 21:28:05.000000",
+            "timezone_type": 1,
+            "timezone": "+00:00"
+        },
+        "status": "draft",
+        "featured": false,
+        "catalog_visibility": "visible",
+        "description": "",
+        "short_description": "",
+        "sku": "",
+        "global_unique_id": "",
+        "price": "15",
+        "regular_price": "15",
+        "sale_price": "",
+        "date_on_sale_from": null,
+        "date_on_sale_to": null,
+        "total_sales": 0,
+        "tax_status": "taxable",
+        "tax_class": "",
+        "manage_stock": false,
+        "stock_quantity": null,
+        "stock_status": "instock",
+        "backorders": "no",
+        "low_stock_amount": "",
+        "sold_individually": false,
+        "weight": "",
+        "length": "",
+        "width": "",
+        "height": "",
+        "upsell_ids": [],
+        "cross_sell_ids": [],
+        "parent_id": 0,
+        "reviews_allowed": true,
+        "purchase_note": "",
+        "attributes": [],
+        "default_attributes": [],
+        "menu_order": 0,
+        "post_password": "",
+        "virtual": false,
+        "downloadable": false,
+        "category_ids": [
+            15
+        ],
+        "tag_ids": [],
+        "brand_ids": [],
+        "shipping_class_id": 0,
+        "downloads": [],
+        "image_id": "",
+        "gallery_image_ids": [],
+        "download_limit": -1,
+        "download_expiry": -1,
+        "rating_counts": [],
+        "average_rating": "0",
+        "review_count": 0,
+        "cogs_value": null,
+        "meta_data": [
+            {
+                "id": 110264,
+                "key": "_subscrpt_visible_to_roles",
+                "value": []
+            }
+        ]
+    },
+    "variable": {
+        "id": 20066,
+        "name": "Plans QA 2026-10-24 Variable",
+        "slug": "",
+        "date_created": {
+            "date": "2026-10-23 21:28:05.000000",
+            "timezone_type": 1,
+            "timezone": "+00:00"
+        },
+        "date_modified": {
+            "date": "2026-10-23 21:28:05.000000",
+            "timezone_type": 1,
+            "timezone": "+00:00"
+        },
+        "status": "draft",
+        "featured": false,
+        "catalog_visibility": "visible",
+        "description": "",
+        "short_description": "",
+        "sku": "",
+        "global_unique_id": "",
+        "price": "11",
+        "regular_price": "",
+        "sale_price": "",
+        "date_on_sale_from": null,
+        "date_on_sale_to": null,
+        "total_sales": 0,
+        "tax_status": "taxable",
+        "tax_class": "",
+        "manage_stock": false,
+        "stock_quantity": null,
+        "stock_status": "instock",
+        "backorders": "no",
+        "low_stock_amount": "",
+        "sold_individually": false,
+        "weight": "",
+        "length": "",
+        "width": "",
+        "height": "",
+        "upsell_ids": [],
+        "cross_sell_ids": [],
+        "parent_id": 0,
+        "reviews_allowed": true,
+        "purchase_note": "",
+        "attributes": {
+            "size": {}
+        },
+        "default_attributes": [],
+        "menu_order": 0,
+        "post_password": "",
+        "virtual": false,
+        "downloadable": false,
+        "category_ids": [
+            15
+        ],
+        "tag_ids": [],
+        "brand_ids": [],
+        "shipping_class_id": 0,
+        "downloads": [],
+        "image_id": "",
+        "gallery_image_ids": [],
+        "download_limit": -1,
+        "download_expiry": -1,
+        "rating_counts": [],
+        "average_rating": "0",
+        "review_count": 0,
+        "cogs_value": null,
+        "meta_data": [
+            {
+                "id": 110287,
+                "key": "_subscrpt_visible_to_roles",
+                "value": []
+            },
+            {
+                "id": 110309,
+                "key": "_is_subscription",
+                "value": "yes"
+            },
+            {
+                "id": 110310,
+                "key": "_arraysubs_shipping_type",
+                "value": "one-time"
+            },
+            {
+                "id": 110311,
+                "key": "_arraysubs_initial_shipping_override",
+                "value": "8"
+            }
+        ]
+    },
+    "small": {
+        "id": 20068,
+        "name": "Plans QA 2026-10-24 Variable - Small",
+        "slug": "plans-qa-2026-10-24-variable-small",
+        "date_created": {
+            "date": "2026-10-23 21:28:05.000000",
+            "timezone_type": 1,
+            "timezone": "+00:00"
+        },
+        "date_modified": {
+            "date": "2026-10-23 21:28:05.000000",
+            "timezone_type": 1,
+            "timezone": "+00:00"
+        },
+        "status": "publish",
+        "featured": false,
+        "catalog_visibility": "visible",
+        "description": "",
+        "short_description": "",
+        "sku": "",
+        "global_unique_id": "",
+        "price": "11",
+        "regular_price": "11",
+        "sale_price": "",
+        "date_on_sale_from": null,
+        "date_on_sale_to": null,
+        "total_sales": "0",
+        "tax_status": "taxable",
+        "tax_class": "parent",
+        "manage_stock": false,
+        "stock_quantity": null,
+        "stock_status": "instock",
+        "backorders": "no",
+        "low_stock_amount": "",
+        "sold_individually": false,
+        "weight": "",
+        "length": "",
+        "width": "",
+        "height": "",
+        "upsell_ids": [],
+        "cross_sell_ids": [],
+        "parent_id": 20066,
+        "reviews_allowed": false,
+        "purchase_note": "",
+        "attributes": {
+            "size": "Small"
+        },
+        "default_attributes": [],
+        "menu_order": 0,
+        "post_password": "",
+        "virtual": false,
+        "downloadable": false,
+        "category_ids": [],
+        "tag_ids": [],
+        "brand_ids": [],
+        "shipping_class_id": 0,
+        "downloads": [],
+        "image_id": 0,
+        "gallery_image_ids": [],
+        "download_limit": -1,
+        "download_expiry": -1,
+        "rating_counts": [],
+        "average_rating": 0,
+        "review_count": 0,
+        "cogs_value": null,
+        "attribute_summary": "Size: Small",
+        "cogs_value_is_additive": false,
+        "meta_data": [
+            {
+                "id": 110335,
+                "key": "_is_subscription",
+                "value": "yes"
+            },
+            {
+                "id": 110336,
+                "key": "_subscription_period",
+                "value": "month"
+            },
+            {
+                "id": 110337,
+                "key": "_subscription_interval",
+                "value": "1"
+            }
+        ]
+    },
+    "large": {
+        "id": 20070,
+        "name": "Plans QA 2026-10-24 Variable - Large",
+        "slug": "plans-qa-2026-10-24-variable-large",
+        "date_created": {
+            "date": "2026-10-23 21:28:05.000000",
+            "timezone_type": 1,
+            "timezone": "+00:00"
+        },
+        "date_modified": {
+            "date": "2026-10-23 21:28:05.000000",
+            "timezone_type": 1,
+            "timezone": "+00:00"
+        },
+        "status": "publish",
+        "featured": false,
+        "catalog_visibility": "visible",
+        "description": "",
+        "short_description": "",
+        "sku": "",
+        "global_unique_id": "",
+        "price": "22",
+        "regular_price": "22",
+        "sale_price": "",
+        "date_on_sale_from": null,
+        "date_on_sale_to": null,
+        "total_sales": "0",
+        "tax_status": "taxable",
+        "tax_class": "parent",
+        "manage_stock": false,
+        "stock_quantity": null,
+        "stock_status": "instock",
+        "backorders": "no",
+        "low_stock_amount": "",
+        "sold_individually": false,
+        "weight": "",
+        "length": "",
+        "width": "",
+        "height": "",
+        "upsell_ids": [],
+        "cross_sell_ids": [],
+        "parent_id": 20066,
+        "reviews_allowed": false,
+        "purchase_note": "",
+        "attributes": {
+            "size": "Large"
+        },
+        "default_attributes": [],
+        "menu_order": 0,
+        "post_password": "",
+        "virtual": false,
+        "downloadable": false,
+        "category_ids": [],
+        "tag_ids": [],
+        "brand_ids": [],
+        "shipping_class_id": 0,
+        "downloads": [],
+        "image_id": 0,
+        "gallery_image_ids": [],
+        "download_limit": -1,
+        "download_expiry": -1,
+        "rating_counts": [],
+        "average_rating": 0,
+        "review_count": 0,
+        "cogs_value": null,
+        "attribute_summary": "Size: Large",
+        "cogs_value_is_additive": false,
+        "meta_data": [
+            {
+                "id": 110362,
+                "key": "_is_subscription",
+                "value": "yes"
+            },
+            {
+                "id": 110363,
+                "key": "_subscription_period",
+                "value": "month"
+            },
+            {
+                "id": 110364,
+                "key": "_subscription_interval",
+                "value": "1"
+            }
+        ]
+    },
+    "box": {
+        "id": 20072,
+        "name": "Plans QA 2026-10-24 Box",
+        "slug": "",
+        "date_created": {
+            "date": "2026-10-23 21:28:05.000000",
+            "timezone_type": 1,
+            "timezone": "+00:00"
+        },
+        "date_modified": {
+            "date": "2026-10-23 21:28:05.000000",
+            "timezone_type": 1,
+            "timezone": "+00:00"
+        },
+        "status": "draft",
+        "featured": false,
+        "catalog_visibility": "visible",
+        "description": "Build a monthly QA box from our named test products.",
+        "short_description": "",
+        "sku": "",
+        "global_unique_id": "",
+        "price": "",
+        "regular_price": "",
+        "sale_price": "",
+        "date_on_sale_from": null,
+        "date_on_sale_to": null,
+        "total_sales": 0,
+        "tax_status": "taxable",
+        "tax_class": "",
+        "manage_stock": false,
+        "stock_quantity": null,
+        "stock_status": "instock",
+        "backorders": "no",
+        "low_stock_amount": "",
+        "sold_individually": true,
+        "weight": "",
+        "length": "",
+        "width": "",
+        "height": "",
+        "upsell_ids": [],
+        "cross_sell_ids": [],
+        "parent_id": 0,
+        "reviews_allowed": true,
+        "purchase_note": "",
+        "attributes": [],
+        "default_attributes": [],
+        "menu_order": 0,
+        "post_password": "",
+        "virtual": false,
+        "downloadable": false,
+        "category_ids": [
+            15
+        ],
+        "tag_ids": [],
+        "brand_ids": [],
+        "shipping_class_id": 0,
+        "downloads": [],
+        "image_id": "",
+        "gallery_image_ids": [],
+        "download_limit": -1,
+        "download_expiry": -1,
+        "rating_counts": [],
+        "average_rating": "0",
+        "review_count": 0,
+        "cogs_value": null,
+        "meta_data": [
+            {
+                "id": 110368,
+                "key": "_subscrpt_visible_to_roles",
+                "value": []
+            },
+            {
+                "id": 110390,
+                "key": "_arraysubs_shipping_type",
+                "value": "recurring"
+            },
+            {
+                "id": 110391,
+                "key": "_arraysubs_quick_creation_key",
+                "value": "e539fadfd3bbbc241d560e8507408bbb2aadfb8b21993ae637138ba2e094b15f"
+            },
+            {
+                "id": 110392,
+                "key": "_arraysubs_quick_creation_payload",
+                "value": "f220dbb72622d3af7b2a01d247dfb234ddb310d5b7794de4bdb878357f4f820e"
+            },
+            {
+                "id": 110393,
+                "key": "_arraysubs_subscription_box",
+                "value": "yes"
+            },
+            {
+                "id": 110394,
+                "key": "_is_subscription",
+                "value": "yes"
+            },
+            {
+                "id": 110395,
+                "key": "_trial_length",
+                "value": "0"
+            },
+            {
+                "id": 110396,
+                "key": "_signup_fee",
+                "value": "0"
+            },
+            {
+                "id": 110397,
+                "key": "_arraysubs_box_config",
+                "value": "{\"schedule\":{\"mode\":\"fixed\",\"flexible_periods\":[\"month\"],\"period\":\"month\",\"interval\":1,\"length\":0,\"keep_signup_fees\":false},\"steps\":[{\"id\":\"step_1789022961631_uypybr7ah\",\"title\":\"Choose your monthly item\",\"elements\":[{\"id\":\"el_1789022970239_82fqhhe44\",\"type\":\"product\",\"label\":\"Required monthly item\",\"required\":true,\"settings\":{\"product_id\":5891,\"max_qty\":1}}]}],\"discounts\":{\"basis\":\"total_value\",\"max_value\":20,\"boundaries\":[],\"ranges\":[{\"freebies\":[],\"discount\":{\"type\":\"none\",\"amount\":0}}]},\"renewal_sync\":{\"enabled\":false,\"seg1_end\":0,\"seg2_end\":0,\"seg1_active\":true,\"seg2_active\":true,\"seg3_active\":true}}"
+            },
+            {
+                "id": 110398,
+                "key": "_subscription_period",
+                "value": "month"
+            },
+            {
+                "id": 110399,
+                "key": "_subscription_interval",
+                "value": "1"
+            },
+            {
+                "id": 110400,
+                "key": "_subscription_length",
+                "value": "0"
+            },
+            {
+                "id": 110401,
+                "key": "_subscrpt_visible_to_roles",
+                "value": []
+            },
+            {
+                "id": 110402,
+                "key": "_subscrpt_enabled",
+                "value": ""
+            },
+            {
+                "id": 110403,
+                "key": "_subscrpt_timing_per",
+                "value": "1"
+            },
+            {
+                "id": 110404,
+                "key": "_subscrpt_timing_option",
+                "value": "days"
+            },
+            {
+                "id": 110405,
+                "key": "_subscrpt_trial_timing_per",
+                "value": ""
+            },
+            {
+                "id": 110406,
+                "key": "_subscrpt_trial_timing_option",
+                "value": "days"
+            },
+            {
+                "id": 110407,
+                "key": "_subscrpt_cart_btn_label",
+                "value": ""
+            },
+            {
+                "id": 110408,
+                "key": "_subscrpt_user_cancel",
+                "value": "yes"
+            },
+            {
+                "id": 110409,
+                "key": "_subscrpt_limit",
+                "value": "unlimited"
+            },
+            {
+                "id": 110410,
+                "key": "_subscrpt_max_no_payment",
+                "value": "0"
+            },
+            {
+                "id": 110411,
+                "key": "_subscrpt_delivery_timing_per",
+                "value": ""
+            },
+            {
+                "id": 110412,
+                "key": "_subscrpt_delivery_timing_option",
+                "value": "days"
+            },
+            {
+                "id": 110413,
+                "key": "_subscrpt_synchronize_delivery_schedule",
+                "value": "no"
+            },
+            {
+                "id": 110414,
+                "key": "_subscrpt_synchronize_delivery_day",
+                "value": "Mon"
+            },
+            {
+                "id": 110415,
+                "key": "_subscrpt_payment_type",
+                "value": "recurring"
+            },
+            {
+                "id": 110416,
+                "key": "_subscrpt_access_ends_timing",
+                "value": "after_full_duration"
+            },
+            {
+                "id": 110417,
+                "key": "_subscrpt_custom_access_duration_time",
+                "value": "1"
+            },
+            {
+                "id": 110418,
+                "key": "_subscrpt_custom_access_duration_type",
+                "value": "months"
+            },
+            {
+                "id": 110419,
+                "key": "_arraysubs_upgrade_products",
+                "value": []
+            },
+            {
+                "id": 110420,
+                "key": "_arraysubs_downgrade_products",
+                "value": []
+            },
+            {
+                "id": 110421,
+                "key": "_arraysubs_crossgrade_products",
+                "value": []
+            },
+            {
+                "id": 110422,
+                "key": "_arraysubs_subscription_mode",
+                "value": "fixed"
+            },
+            {
+                "id": 110423,
+                "key": "_arraysubs_flexible_periods",
+                "value": [
+                    "month"
+                ]
+            },
+            {
+                "id": 110424,
+                "key": "_arraysubs_product_redirect_enabled",
+                "value": "no"
+            },
+            {
+                "id": 110425,
+                "key": "_arraysubs_product_redirect_action",
+                "value": "redirect"
+            },
+            {
+                "id": 110426,
+                "key": "_arraysubs_product_redirect_page",
+                "value": "0"
+            },
+            {
+                "id": 110427,
+                "key": "_arraysubs_fixed_end_date_type",
+                "value": "recurring_annual"
+            },
+            {
+                "id": 110428,
+                "key": "_arraysubs_fixed_end_date",
+                "value": "01-01"
+            },
+            {
+                "id": 110429,
+                "key": "_arraysubs_enrollment_window_start",
+                "value": ""
+            },
+            {
+                "id": 110430,
+                "key": "_arraysubs_enrollment_window_end",
+                "value": ""
+            },
+            {
+                "id": 110431,
+                "key": "_arraysubs_fixed_end_renewal",
+                "value": "expire"
+            },
+            {
+                "id": 110432,
+                "key": "_arraysubs_restrict_config",
+                "value": "{\"enabled\":false,\"mode\":\"restrict\",\"visShow\":\"logged_in\",\"status\":[],\"roles\":[],\"products\":[],\"variations\":[],\"purchased\":[],\"lifetimeSpent\":\"\",\"condition\":\"and\",\"feature\":\"\",\"featureMatch\":\"has\",\"featureValue\":\"\",\"featureOp\":\">=\",\"aggregation\":\"sum\",\"deniedAction\":\"message\",\"message\":\"\",\"redirectType\":\"page\",\"redirectPageId\":0,\"redirectPageLabel\":\"\",\"redirectUrl\":\"\",\"loginRequired\":false,\"showToAdmins\":true}"
+            }
+        ]
+    },
+    "bundle": {
+        "id": 20074,
+        "name": "Plans QA 2026-10-24 Bundle",
+        "slug": "",
+        "date_created": {
+            "date": "2026-10-23 21:28:05.000000",
+            "timezone_type": 1,
+            "timezone": "+00:00"
+        },
+        "date_modified": {
+            "date": "2026-10-23 21:28:05.000000",
+            "timezone_type": 1,
+            "timezone": "+00:00"
+        },
+        "status": "draft",
+        "featured": false,
+        "catalog_visibility": "visible",
+        "description": "Monthly QA bundle of Child A and Child B with a 10 percent discount.",
+        "short_description": "",
+        "sku": "",
+        "global_unique_id": "",
+        "price": "15",
+        "regular_price": "15",
+        "sale_price": "",
+        "date_on_sale_from": null,
+        "date_on_sale_to": null,
+        "total_sales": 0,
+        "tax_status": "taxable",
+        "tax_class": "",
+        "manage_stock": false,
+        "stock_quantity": null,
+        "stock_status": "instock",
+        "backorders": "no",
+        "low_stock_amount": "",
+        "sold_individually": true,
+        "weight": "",
+        "length": "",
+        "width": "",
+        "height": "",
+        "upsell_ids": [],
+        "cross_sell_ids": [],
+        "parent_id": 0,
+        "reviews_allowed": true,
+        "purchase_note": "",
+        "attributes": [],
+        "default_attributes": [],
+        "menu_order": 0,
+        "post_password": "",
+        "virtual": false,
+        "downloadable": false,
+        "category_ids": [
+            15
+        ],
+        "tag_ids": [],
+        "brand_ids": [],
+        "shipping_class_id": 0,
+        "downloads": [],
+        "image_id": "",
+        "gallery_image_ids": [],
+        "download_limit": -1,
+        "download_expiry": -1,
+        "rating_counts": [],
+        "average_rating": "0",
+        "review_count": 0,
+        "cogs_value": null,
+        "meta_data": [
+            {
+                "id": 110433,
+                "key": "_subscrpt_visible_to_roles",
+                "value": []
+            },
+            {
+                "id": 110456,
+                "key": "_arraysubs_shipping_type",
+                "value": "recurring"
+            },
+            {
+                "id": 110457,
+                "key": "_arraysubs_quick_creation_key",
+                "value": "5addd738240e6be63c649c9960e7e723e010bda511c755656dce74701433508f"
+            },
+            {
+                "id": 110458,
+                "key": "_arraysubs_quick_creation_payload",
+                "value": "0a5400c45591bbc534e8f2ddf3a901aec20401375bd215d012eb67d21076b3a8"
+            },
+            {
+                "id": 110459,
+                "key": "_arraysubs_subscription_bundle",
+                "value": "yes"
+            },
+            {
+                "id": 110460,
+                "key": "_is_subscription",
+                "value": "yes"
+            },
+            {
+                "id": 110461,
+                "key": "_trial_length",
+                "value": "0"
+            },
+            {
+                "id": 110462,
+                "key": "_signup_fee",
+                "value": "0"
+            },
+            {
+                "id": 110463,
+                "key": "_arraysubs_bundle_config",
+                "value": "{\"schedule\":{\"mode\":\"fixed\",\"flexible_periods\":[\"month\"],\"period\":\"month\",\"interval\":1,\"length\":0,\"keep_signup_fees\":false},\"products\":[{\"id\":\"p_1789023141892_2qqigx3un\",\"product_id\":5891,\"qty\":1},{\"id\":\"p_1789023192718_0acbq2e7q\",\"product_id\":5893,\"qty\":1}],\"discount\":{\"type\":\"percent\",\"amount\":10},\"renewal_sync\":{\"enabled\":false,\"seg1_end\":10,\"seg2_end\":20,\"seg1_active\":true,\"seg2_active\":true,\"seg3_active\":true}}"
+            },
+            {
+                "id": 110464,
+                "key": "_subscription_period",
+                "value": "month"
+            },
+            {
+                "id": 110465,
+                "key": "_subscription_interval",
+                "value": "1"
+            },
+            {
+                "id": 110466,
+                "key": "_subscription_length",
+                "value": "0"
+            },
+            {
+                "id": 110467,
+                "key": "_subscrpt_visible_to_roles",
+                "value": []
+            }
+        ]
+    },
+    "simple": {
+        "id": 20077,
+        "name": "Plans QA 2026-10-24 Simple",
+        "slug": "plans-qa-2026-10-24-simple",
+        "date_created": {
+            "date": "2026-10-23 21:32:48.000000",
+            "timezone_type": 1,
+            "timezone": "+00:00"
+        },
+        "date_modified": {
+            "date": "2026-10-23 21:33:23.000000",
+            "timezone_type": 1,
+            "timezone": "+00:00"
+        },
+        "status": "publish",
+        "featured": false,
+        "catalog_visibility": "search",
+        "description": "Dedicated subscription plan browser fixture.",
+        "short_description": "Preserve this short description.",
+        "sku": "PLANS-QA-20261024",
+        "global_unique_id": "",
+        "price": "29.00",
+        "regular_price": "29.00",
+        "sale_price": "24.00",
+        "date_on_sale_from": {
+            "date": "2026-10-24 21:33:23.000000",
+            "timezone_type": 1,
+            "timezone": "+00:00"
+        },
+        "date_on_sale_to": {
+            "date": "2026-10-30 21:33:23.000000",
+            "timezone_type": 1,
+            "timezone": "+00:00"
+        },
+        "total_sales": 0,
+        "tax_status": "taxable",
+        "tax_class": "",
+        "manage_stock": true,
+        "stock_quantity": 17,
+        "stock_status": "instock",
+        "backorders": "no",
+        "low_stock_amount": "",
+        "sold_individually": true,
+        "weight": "",
+        "length": "",
+        "width": "",
+        "height": "",
+        "upsell_ids": [],
+        "cross_sell_ids": [],
+        "parent_id": 0,
+        "reviews_allowed": true,
+        "purchase_note": "",
+        "attributes": [],
+        "default_attributes": [],
+        "menu_order": 0,
+        "post_password": "",
+        "virtual": false,
+        "downloadable": false,
+        "category_ids": [
+            15
+        ],
+        "tag_ids": [],
+        "brand_ids": [],
+        "shipping_class_id": 0,
+        "downloads": [],
+        "image_id": "",
+        "gallery_image_ids": [],
+        "download_limit": -1,
+        "download_expiry": -1,
+        "rating_counts": [],
+        "average_rating": "0",
+        "review_count": 0,
+        "cogs_value": null,
+        "meta_data": [
+            {
+                "id": 110477,
+                "key": "_subscrpt_visible_to_roles",
+                "value": []
+            },
+            {
+                "id": 110501,
+                "key": "_is_subscription",
+                "value": "yes"
+            },
+            {
+                "id": 110502,
+                "key": "_subscription_period",
+                "value": "month"
+            },
+            {
+                "id": 110503,
+                "key": "_trial_period",
+                "value": "day"
+            },
+            {
+                "id": 110504,
+                "key": "_subscription_interval",
+                "value": "2"
+            },
+            {
+                "id": 110505,
+                "key": "_subscription_length",
+                "value": "6"
+            },
+            {
+                "id": 110506,
+                "key": "_trial_length",
+                "value": "7"
+            },
+            {
+                "id": 110507,
+                "key": "_signup_fee",
+                "value": "5.00"
+            },
+            {
+                "id": 110508,
+                "key": "_arraysubs_shipping_type",
+                "value": "recurring"
+            },
+            {
+                "id": 110509,
+                "key": "_arraysubs_subscription_mode",
+                "value": "fixed"
+            },
+            {
+                "id": 110510,
+                "key": "_arraysubs_flexible_periods",
+                "value": [
+                    "month"
+                ]
+            },
+            {
+                "id": 110511,
+                "key": "_arraysubs_quick_creation_key",
+                "value": "487f7ba5b4b179b8c00470e78d2b88347f64499a4599a05b2d2defb8bbb24452"
+            },
+            {
+                "id": 110512,
+                "key": "_arraysubs_quick_creation_payload",
+                "value": "a8a2488f28a0ae5172ceb6681abf50406e83ac32612c08cddee0ad3519a823c1"
+            }
+        ]
+    }
+}

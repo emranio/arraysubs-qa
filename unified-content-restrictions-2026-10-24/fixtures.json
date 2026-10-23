@@ -1,0 +1,20 @@
+{
+  "admin": 1,
+  "member": 224,
+  "customer": 439,
+  "post": 19998,
+  "urls": {
+    "post": "http://localhost:10013/qa-unified-post-20261024/",
+    "gutenberg": "http://localhost:10013/qa-unified-gutenberg-20261024/",
+    "elementor": "http://localhost:10013/qa-unified-elementor-20261024/",
+    "redirect": "http://localhost:10013/qa-unified-redirect-20261024/",
+    "shortcode_redirect": "http://localhost:10013/qa-unified-shortcode-redirect-20261024/"
+  },
+  "gutenberg": 19999,
+  "elementor": 20000,
+  "redirect": 20001,
+  "shortcode_redirect": 20028,
+  "author_post": 20006,
+  "author_gutenberg": 20007,
+  "author_elementor": 20008
+}

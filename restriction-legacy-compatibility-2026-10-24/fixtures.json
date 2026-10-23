@@ -1,0 +1,19 @@
+{
+    "admin": 1,
+    "member": 224,
+    "customer": 440,
+    "post": 20079,
+    "urls": {
+        "post": "http:\/\/localhost:10013\/qa-legacy-post-20261024\/",
+        "gutenberg": "http:\/\/localhost:10013\/qa-legacy-gutenberg-20261024\/",
+        "elementor": "http:\/\/localhost:10013\/qa-legacy-elementor-20261024\/",
+        "author_post": "http:\/\/localhost:10013\/qa-legacy-author_post-20261024\/",
+        "author_gutenberg": "http:\/\/localhost:10013\/qa-legacy-author_gutenberg-20261024\/",
+        "author_elementor": "http:\/\/localhost:10013\/qa-legacy-author_elementor-20261024\/"
+    },
+    "gutenberg": 20080,
+    "elementor": 20081,
+    "author_post": 20082,
+    "author_gutenberg": 20083,
+    "author_elementor": 20084
+}

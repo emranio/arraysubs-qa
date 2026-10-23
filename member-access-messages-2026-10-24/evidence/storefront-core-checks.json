@@ -1,0 +1,202 @@
+[
+  {
+    "passed": true,
+    "check": "ecommerce_rules: off renders expected message"
+  },
+  {
+    "passed": true,
+    "check": "ecommerce_rules: off suppresses stored custom text"
+  },
+  {
+    "passed": true,
+    "check": "url_rules: off renders expected message"
+  },
+  {
+    "passed": true,
+    "check": "url_rules: off suppresses stored custom text"
+  },
+  {
+    "passed": true,
+    "check": "cpt_rules: off renders expected message"
+  },
+  {
+    "passed": true,
+    "check": "cpt_rules: off suppresses stored custom text"
+  },
+  {
+    "passed": true,
+    "check": "comment_rules: off renders expected message"
+  },
+  {
+    "passed": true,
+    "check": "comment_rules: off suppresses stored custom text"
+  },
+  {
+    "passed": true,
+    "check": "purchase_limit_rules: off renders expected message"
+  },
+  {
+    "passed": true,
+    "check": "purchase_limit_rules: off suppresses stored custom text"
+  },
+  {
+    "passed": true,
+    "check": "ecommerce_rules: on renders expected message"
+  },
+  {
+    "passed": true,
+    "check": "ecommerce_rules: custom link displayed"
+  },
+  {
+    "passed": true,
+    "check": "ecommerce_rules: custom formatting content displayed"
+  },
+  {
+    "passed": true,
+    "check": "url_rules: on renders expected message"
+  },
+  {
+    "passed": true,
+    "check": "url_rules: custom link displayed"
+  },
+  {
+    "passed": true,
+    "check": "url_rules: custom formatting content displayed"
+  },
+  {
+    "passed": true,
+    "check": "cpt_rules: on renders expected message"
+  },
+  {
+    "passed": true,
+    "check": "cpt_rules: custom link displayed"
+  },
+  {
+    "passed": true,
+    "check": "cpt_rules: custom formatting content displayed"
+  },
+  {
+    "passed": true,
+    "check": "comment_rules: on renders expected message"
+  },
+  {
+    "passed": true,
+    "check": "comment_rules: custom link displayed"
+  },
+  {
+    "passed": true,
+    "check": "comment_rules: custom formatting content displayed"
+  },
+  {
+    "passed": true,
+    "check": "purchase_limit_rules: on renders expected message"
+  },
+  {
+    "passed": true,
+    "check": "purchase_limit_rules: custom link displayed"
+  },
+  {
+    "passed": true,
+    "check": "purchase_limit_rules: custom formatting content displayed"
+  },
+  {
+    "passed": true,
+    "check": "ecommerce_rules: empty renders expected message"
+  },
+  {
+    "passed": true,
+    "check": "ecommerce_rules: empty suppresses stored custom text"
+  },
+  {
+    "passed": true,
+    "check": "url_rules: empty renders expected message"
+  },
+  {
+    "passed": true,
+    "check": "url_rules: empty suppresses stored custom text"
+  },
+  {
+    "passed": true,
+    "check": "cpt_rules: empty renders expected message"
+  },
+  {
+    "passed": true,
+    "check": "cpt_rules: empty suppresses stored custom text"
+  },
+  {
+    "passed": true,
+    "check": "comment_rules: empty renders expected message"
+  },
+  {
+    "passed": true,
+    "check": "comment_rules: empty suppresses stored custom text"
+  },
+  {
+    "passed": true,
+    "check": "purchase_limit_rules: empty renders expected message"
+  },
+  {
+    "passed": true,
+    "check": "purchase_limit_rules: empty suppresses stored custom text"
+  },
+  {
+    "passed": true,
+    "check": "ecommerce_rules: blank renders expected message"
+  },
+  {
+    "passed": true,
+    "check": "ecommerce_rules: blank suppresses stored custom text"
+  },
+  {
+    "passed": true,
+    "check": "url_rules: blank renders expected message"
+  },
+  {
+    "passed": true,
+    "check": "url_rules: blank suppresses stored custom text"
+  },
+  {
+    "passed": true,
+    "check": "cpt_rules: blank renders expected message"
+  },
+  {
+    "passed": true,
+    "check": "cpt_rules: blank suppresses stored custom text"
+  },
+  {
+    "passed": true,
+    "check": "comment_rules: blank renders expected message"
+  },
+  {
+    "passed": true,
+    "check": "comment_rules: blank suppresses stored custom text"
+  },
+  {
+    "passed": true,
+    "check": "purchase_limit_rules: blank renders expected message"
+  },
+  {
+    "passed": true,
+    "check": "purchase_limit_rules: blank suppresses stored custom text"
+  },
+  {
+    "passed": true,
+    "check": "ecommerce_rules: later global edit used without resaving rule"
+  },
+  {
+    "passed": true,
+    "check": "url_rules: later global edit used without resaving rule"
+  },
+  {
+    "passed": true,
+    "check": "cpt_rules: later global edit used without resaving rule"
+  },
+  {
+    "passed": true,
+    "check": "comment_rules: later global edit used without resaving rule"
+  },
+  {
+    "passed": true,
+    "check": "purchase_limit_rules: later global edit used without resaving rule"
+  }
+]

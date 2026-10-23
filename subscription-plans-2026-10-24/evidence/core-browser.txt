@@ -1,0 +1,57 @@
+Plugin 'arraysubspro' deactivated.
+Success: Deactivated 1 of 1 plugins.
+CORE MENU "[\"Home\",\"Plans\",\"Subscriptions\",\"You may need\",\"Manage Members\",\"Cancellation Flow\",\"Member Access\",\"Profile & My Account\",\"Shortcodes\",\"Integrations\",\"Modules\",\"Settings\",\"Reports\",\"Audits\",\"1-Minute Setup\",\"Help\"]"
+
+click Edit subscription billings e170
+✓ Done
+fill Price e13
+✓ Done
+click Next e8
+✓ Done
+click Next e8
+✓ Done
+click Next e8
+✓ Done
+click Next e9
+✓ Done
+click Next e9
+✓ Done
+click Next e8
+✓ Done
+click Save billings e8
+✓ Done
+click Save billings e13
+✓ Done
+click Done e8
+✓ Done
+CORE BILLING EDIT BROWSER PASS
+click Add new plan e135
+✓ Done
+click Next e8
+✓ Done
+fill Product title e11
+✓ Done
+fill Price e13
+✓ Done
+click Next e8
+✓ Done
+click Next e8
+✓ Done
+click Next e8
+✓ Done
+click Next e9
+✓ Done
+click Next e9
+✓ Done
+click Next e8
+✓ Done
+click Create product e8
+✓ Done
+click Create product e13
+✓ Done
+CORE CREATE AND EDIT BROWSER PASS
+click Done e8
+✓ Done
+{"pro":false,"price":"38.00","shipping":"8.00"}
+Plugin 'arraysubspro' activated.
+Success: Activated 1 of 1 plugins.

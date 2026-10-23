@@ -1,0 +1,21 @@
+Deprecated: Elementor\Modules\GlobalClasses\Atomic_Global_Styles::get_cache_root_key(): Implicitly marking parameter $key as nullable is deprecated, the explicit nullable type must be used instead in /Users/emran/Local Sites/wp-test2/app/public/wp-content/plugins/elementor/modules/global-classes/atomic-global-styles.php on line 410
+{
+    "admin": 1,
+    "member": 224,
+    "customer": 439,
+    "post": 19998,
+    "urls": {
+        "post": "http:\/\/localhost:10013\/qa-unified-post-20261024\/",
+        "gutenberg": "http:\/\/localhost:10013\/qa-unified-gutenberg-20261024\/",
+        "elementor": "http:\/\/localhost:10013\/qa-unified-elementor-20261024\/",
+        "redirect": "http:\/\/localhost:10013\/qa-unified-redirect-20261024\/"
+    },
+    "gutenberg": 19999,
+    "elementor": 20000,
+    "redirect": 20001
+}
+PHP: 2026-10-24 03:08:02 [notice X 0][/Users/emran/Local Sites/wp-test2/app/public/wp-content/plugins/elementor/modules/global-classes/atomic-global-styles.php::410] Elementor\Modules\GlobalClasses\Atomic_Global_Styles::get_cache_root_key(): Implicitly marking parameter $key as nullable is deprecated, the explicit nullable type must be used instead [array (
+  'trace' => '
+#0: Elementor\Core\Logger\Manager -> shutdown()
+',
+)]

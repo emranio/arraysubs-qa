@@ -1,0 +1,117 @@
+- generic
+  - heading "Edit \"QA legacy author_elementor 20261024\" with Elementor" [level=1, ref=e1]
+  - generic [ref=e2] clickable [onclick]
+    - banner
+      - button "Elementor Logo" [ref=e4]
+        - image "Elementor Logo"
+      - button "Add Element" [ref=e5]
+      - button "Angie" [ref=e6]
+      - button "History" [ref=e7]
+      - button "Design System" [ref=e8]
+      - button "Page Settings" [ref=e9]
+      - separator
+      - button "QA legacy author_elementor 20261024" [ref=e10]
+        - StaticText "QA legacy author_elementor 20261024"
+      - separator
+      - generic
+        - tablist "Switch Device"
+          - tab "Desktop" [selected, ref=e22]
+          - tab "Tablet Portrait (up to 1024px)" [ref=e23]
+          - tab "Mobile Portrait (up to 767px)" [ref=e24]
+      - separator
+      - button "What's New" [ref=e11]
+        - StaticText "9"
+      - button "Finder" [ref=e12]
+      - button "Structure" [ref=e13]
+      - button "Preview Changes" [ref=e14]
+      - group
+        - button "Publish" [disabled, ref=e16]
+        - button "Save Options" [ref=e17]
+  - generic
+    - complementary "Edit Container"
+      - generic
+        - sectionheader
+          - heading "Edit Container" [level=2, ref=e25]
+        - main
+          - generic
+            - button " Layout" [ref=e26]
+              - StaticText ""
+              - StaticText "Layout"
+            - button " Style" [ref=e27]
+              - StaticText ""
+              - StaticText "Style"
+            - button " Advanced" [ref=e28]
+              - StaticText ""
+              - StaticText "Advanced"
+            - generic
+              - button "Layout" [ref=e31]
+                - StaticText "Layout"
+              - button "Motion Effects" [ref=e32]
+                - StaticText "Motion Effects"
+              - button "Transform" [ref=e33]
+                - StaticText "Transform"
+              - button "Responsive" [ref=e34]
+                - StaticText "Responsive"
+              - button "Attributes" [ref=e35]
+                - StaticText "Attributes"
+              - button "ArraySubs Content Restrictions" [ref=e36]
+                - StaticText "ArraySubs Content Restrictions"
+              - LabelText
+                - StaticText "Enable Restriction"
+              - checkbox [checked=true, ref=e41] clickable [cursor:pointer]
+                - StaticText "No"
+                - StaticText "Yes"
+              - strong
+                - StaticText "Original access rules are preserved"
+              - paragraph
+                - StaticText "Opening or saving this page keeps its existing access behavior. These original rules are read-only until you choose to convert them."
+              - paragraph
+                - StaticText "Any logged-in user can access this content; the other conditions are ignored."
+              - paragraph
+                - StaticText "Conversion changes this draft to the current rules and requires login. Logged-out visibility and login-only overrides may change. Review every condition before publishing."
+              - button "Convert to current rules" [ref=e37]
+              - button "Custom CSS" [ref=e38]
+                - StaticText "Custom CSS"
+            - link "Need Help" [ref=e29]
+              - StaticText "Need Help"
+            - generic
+              - StaticText "Access all Pro widgets. "
+              - link "Upgrade Now" [ref=e39]
+        - LabelText
+          - StaticText "Hide Panel (⌘ + P)"
+    - main "Preview" [ref=e3]
+      - Iframe "Preview" [ref=e15]
+        - generic
+          - generic
+            - generic
+              - list
+                - listitem "Add Container" [level=1, ref=e47]
+                - listitem "Edit Container" [level=1, ref=e48]
+                - listitem "Delete Container" [level=1, ref=e49]
+              - group
+                - heading "QA LEGACY PROTECTED ELEMENTOR" [level=2, ref=e46]
+            - region "Add new layout element" [ref=e42]
+              - button "Add New Container" [ref=e43]
+              - button "Add Template" [ref=e44]
+              - button "Build with AI" [ref=e45]
+              - StaticText "Drag widget here"
+          - StaticText "desktop"
+          - status
+    - complementary "Structure"
+      - generic
+        - generic
+          - button "Expand all elements" [ref=e18]
+          - button "" [ref=e19]
+            - StaticText ""
+          - heading "Structure" [level=2, ref=e20]
+          - button "Close structure" [ref=e21]
+        - generic [ref=e40] clickable [cursor:pointer, tabindex]
+          - StaticText "Show/hide inner elements"
+          - StaticText "Container"
+        - generic
+          - generic
+            - StaticText "Access all Pro widgets. "
+            - link "Upgrade Now" [ref=e30]
+          - generic
+            - StaticText "Resize structure"
+  - status

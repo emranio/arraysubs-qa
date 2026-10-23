@@ -1,0 +1,66 @@
+ 264 arraysubs/arraysubs.php
+ 123 arraysubs/src/Developer/MemberAccess.php
+ 849 arraysubs/src/Features/ElementorIntegration/Services/Hooks.php
+ 361 arraysubs/src/Features/ElementorIntegration/assets/editor.js
+ 368 arraysubs/src/Features/GutenbergIntegration/Services/Hooks.php
+ 106 arraysubs/src/Features/GutenbergIntegration/block/edit.js
+  40 arraysubs/src/Features/GutenbergIntegration/block/editor.scss
+  31 arraysubs/src/Features/GutenbergIntegration/block/index.js
+  28 arraysubs/src/Features/GutenbergIntegration/block/render.php
+ 289 arraysubs/src/Features/MainAdmin/Services/Hooks.php
+ 398 arraysubs/src/Features/MainAdmin/Services/MenuConfig.php
+1501 arraysubs/src/Features/MembersAccess/REST/RestrictionController.php
+1250 arraysubs/src/Features/MembersAccess/Services/CommentRestriction.php
+ 531 arraysubs/src/Features/MembersAccess/Services/ContentGating.php
+1480 arraysubs/src/Features/MembersAccess/Services/EcommerceRestriction.php
+ 562 arraysubs/src/Features/MembersAccess/Services/Hooks.php
+ 482 arraysubs/src/Features/MembersAccess/Services/PostRestrictionConfig.php
+ 109 arraysubs/src/Features/MembersAccess/Services/PostRestrictionGate.php
+1283 arraysubs/src/Features/MembersAccess/Services/PurchaseLimit.php
+ 165 arraysubs/src/Features/MembersAccess/Services/UrlRestrictor.php
+ 138 arraysubs/src/Features/MembersAccess/post-restriction/RestrictionFields.jsx
+ 337 arraysubs/src/Features/MembersAccess/post-restriction/config.js
+ 140 arraysubs/src/Features/MembersAccess/post-restriction/style.scss
+ 315 arraysubs/src/Features/QuickProductCreation/REST/ProductController.php
+2101 arraysubs/src/Supports/ActionScheduler.php
+ 566 arraysubs/src/functions/restriction-helpers.php
+ 757 arraysubs/src/resources/Main.jsx
+ 446 arraysubs/src/resources/components/ContentGate/contentGateGuideData.js
+  35 arraysubs/src/resources/components/quick-product/ProductReview.jsx
+  27 arraysubs/src/resources/components/quick-product/QuickProductHost.jsx
+ 639 arraysubs/src/resources/components/quick-product/QuickProductWizard.jsx
+ 180 arraysubs/src/resources/components/quick-product/fields.js
+   8 arraysubs/src/resources/components/quick-product/launch.js
+ 217 arraysubs/src/resources/libs/data-list/components/Header.jsx
+ 941 arraysubs/src/resources/libs/data-list/index.js
+ 544 arraysubs/src/resources/pages/MembersAccess/CommentRulesTab.jsx
+ 508 arraysubs/src/resources/pages/MembersAccess/CptRulesTab.jsx
+ 474 arraysubs/src/resources/pages/MembersAccess/EcommerceRulesTab.jsx
+ 561 arraysubs/src/resources/pages/MembersAccess/PurchaseLimitRulesTab.jsx
+ 385 arraysubs/src/resources/pages/MembersAccess/UrlRulesTab.jsx
+  18 arraysubs/src/Features/ElementorIntegration/Controls/CompatibilityNotice.php
+  20 arraysubs/src/Features/ElementorIntegration/Controls/LoginSwitcher.php
+  69 arraysubs/src/Features/ElementorIntegration/Services/RestrictionSettings.php
+  70 arraysubs/src/Features/ElementorIntegration/assets/editor.css
+  88 arraysubs/src/Features/MembersAccess/Services/RestrictionCompatibility.php
+ 148 arraysubs/src/Features/QuickProductCreation/REST/PlanBillingController.php
+ 118 arraysubs/src/Features/QuickProductCreation/REST/PlansController.php
+  54 arraysubs/src/Features/QuickProductCreation/Services/PlanBilling.php
+ 109 arraysubs/src/Features/QuickProductCreation/Services/PlanCatalog.php
+ 234 arraysubs/src/resources/components/ContentGate/AccessRuleSections.jsx
+  92 arraysubs/src/resources/components/ContentGate/LegacyAccessNotice.jsx
+  41 arraysubs/src/resources/components/ContentGate/RestrictionMessageField.jsx
+  52 arraysubs/src/resources/components/ContentGate/RuleMessageField.jsx
+  96 arraysubs/src/resources/components/ContentGate/access-rule-sections.scss
+  13 arraysubs/src/resources/components/ContentGate/accessConditions.js
+  18 arraysubs/src/resources/components/ContentGate/legacyAccessSummary.js
+  98 arraysubs/src/resources/components/ContentGate/restrictionCompatibility.js
+  14 arraysubs/src/resources/components/ContentGate/rule-message-field.scss
+  25 arraysubs/src/resources/components/quick-product/VariationPicker.jsx
+  64 arraysubs/src/resources/pages/SubscriptionPlans/PlanActions.jsx
+  15 arraysubs/src/resources/pages/SubscriptionPlans/api.js
+  80 arraysubs/src/resources/pages/SubscriptionPlans/index.jsx
+  27 arraysubs/src/resources/pages/SubscriptionPlans/plans.scss
+ 277 arraysubspro/arraysubspro.php
+ 241 arraysubspro/src/Features/QuickProductCreation/Services/Hooks.php
+  75 arraysubspro/src/Features/QuickProductCreation/Services/PlanEditing.php

@@ -1,0 +1,21 @@
+{
+    "admin": 1,
+    "member": 224,
+    "customer": 455,
+    "post": 20187,
+    "urls": {
+        "post": "http:\/\/localhost:10013\/qa-final-access-post-20261024\/",
+        "gutenberg": "http:\/\/localhost:10013\/qa-final-access-gutenberg-20261024\/",
+        "elementor": "http:\/\/localhost:10013\/qa-final-access-elementor-20261024\/",
+        "author_post": "http:\/\/localhost:10013\/qa-final-access-author_post-20261024\/",
+        "author_gutenberg": "http:\/\/localhost:10013\/qa-final-access-author_gutenberg-20261024\/",
+        "author_elementor": "http:\/\/localhost:10013\/qa-final-access-author_elementor-20261024\/",
+        "product": "http:\/\/localhost:10013\/product\/qa-final-classic-restriction-20261024\/"
+    },
+    "gutenberg": 20188,
+    "elementor": 20189,
+    "author_post": 20190,
+    "author_gutenberg": 20191,
+    "author_elementor": 20192,
+    "product": 20335
+}

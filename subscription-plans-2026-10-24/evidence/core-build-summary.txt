@@ -1,0 +1,4 @@
+  external "React" 42 bytes [built] [code generated]
+  external ["wp","htmlEntities"] 42 bytes [built] [code generated]
+  
+2026-10-24 03:54:55: webpack 5.105.2 compiled successfully in 5238 ms (477b72c5e186340b1fd3)

@@ -1,0 +1,4 @@
+- generic
+  - heading "QA LEGACY PROTECTED ELEMENTOR" [level=2, ref=e1]
+  - StaticText "desktop"
+  - status

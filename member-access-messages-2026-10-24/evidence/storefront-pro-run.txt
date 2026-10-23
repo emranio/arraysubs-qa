@@ -1,0 +1,6 @@
+pro off passed for all five rule types
+pro on passed for all five rule types
+pro empty passed for all five rule types
+pro blank passed for all five rule types
+pro global update passed for all five rule types
+{"passed": 50, "total": 50}

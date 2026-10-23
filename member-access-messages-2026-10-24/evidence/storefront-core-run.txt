@@ -1,0 +1,6 @@
+core off passed for all five rule types
+core on passed for all five rule types
+core empty passed for all five rule types
+core blank passed for all five rule types
+core global update passed for all five rule types
+{"passed": 50, "total": 50}

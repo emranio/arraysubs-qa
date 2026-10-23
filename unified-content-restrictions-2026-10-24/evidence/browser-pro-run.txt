@@ -1,0 +1,10 @@
+pro public passed for all three surfaces and four roles
+pro login_only passed for all three surfaces and four roles
+pro any_fail passed for all three surfaces and four roles
+pro any_pass passed for all three surfaces and four roles
+pro all_fail passed for all three surfaces and four roles
+pro admin_bypass passed for all three surfaces and four roles
+pro custom passed for all three surfaces and four roles
+pro empty passed for all three surfaces and four roles
+pro blank passed for all three surfaces and four roles
+{"passed": 216, "total": 216}

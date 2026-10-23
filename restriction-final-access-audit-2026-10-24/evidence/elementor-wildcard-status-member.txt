@@ -1,0 +1,5 @@
+- generic
+  - paragraph
+    - StaticText "QA FINAL SECURITY DENIED"
+  - StaticText "desktop"
+  - status

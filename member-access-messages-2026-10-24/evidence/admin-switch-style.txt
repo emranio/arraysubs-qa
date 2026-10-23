@@ -1,0 +1,1 @@
+"{\"checked\":true,\"accent\":\"#3858e9\",\"switchColor\":\"rgb(56, 88, 233)\"}"

@@ -1,0 +1,14 @@
+[
+  {
+    "check": "Active member 224 retains url access",
+    "passed": true
+  },
+  {
+    "check": "Active member 224 retains cpt access",
+    "passed": true
+  },
+  {
+    "check": "Active member 224 retains comments access",
+    "passed": true
+  }
+]

@@ -1,0 +1,76 @@
+{
+  "post": {
+    "accessVersion": 1,
+    "enabled": true,
+    "status": [],
+    "roles": [
+      "demo_premium"
+    ],
+    "products": [
+      2147483000
+    ],
+    "variations": [],
+    "purchased": [],
+    "lifetimeSpent": "",
+    "condition": "or",
+    "feature": "",
+    "featureMatch": "has",
+    "featureValue": "",
+    "featureOp": ">=",
+    "aggregation": "sum",
+    "deniedAction": "message",
+    "message": "<p>QA FINAL CUSTOM <strong>saved message</strong></p>",
+    "useDefaultMessage": false,
+    "redirectType": "page",
+    "redirectPageId": 0,
+    "redirectPageLabel": "",
+    "redirectUrl": "",
+    "loginRequired": false,
+    "showToAdmins": false,
+    "legacy": {
+      "mode": "restrict",
+      "show": "logged_in",
+      "loginOnly": false,
+      "fallback": "",
+      "surface": "post"
+    },
+    "mode": "restrict"
+  },
+  "product": {
+    "accessVersion": 1,
+    "enabled": true,
+    "status": [],
+    "roles": [
+      "demo_premium"
+    ],
+    "products": [
+      2147483000
+    ],
+    "variations": [],
+    "purchased": [],
+    "lifetimeSpent": "",
+    "condition": "or",
+    "feature": "",
+    "featureMatch": "has",
+    "featureValue": "",
+    "featureOp": ">=",
+    "aggregation": "sum",
+    "deniedAction": "message",
+    "message": "QA FINAL CLASSIC DENIED",
+    "useDefaultMessage": false,
+    "redirectType": "page",
+    "redirectPageId": 0,
+    "redirectPageLabel": "",
+    "redirectUrl": "",
+    "loginRequired": false,
+    "showToAdmins": false,
+    "legacy": {
+      "mode": "restrict",
+      "show": "logged_in",
+      "loginOnly": false,
+      "fallback": "",
+      "surface": "post"
+    },
+    "mode": "restrict"
+  }
+}

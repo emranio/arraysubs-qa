@@ -1,0 +1,5 @@
+{
+  "raw": "{\"accessVersion\":1,\"enabled\":true,\"status\":[],\"roles\":[],\"products\":[],\"variations\":[],\"purchased\":[],\"lifetimeSpent\":\"\",\"condition\":\"and\",\"feature\":\"\",\"featureMatch\":\"has\",\"featureValue\":\"\",\"featureOp\":\">=\",\"aggregation\":\"sum\",\"deniedAction\":\"message\",\"message\":\"<p>QA preserved direct-meta restriction<\\/p>\",\"useDefaultMessage\":false,\"redirectType\":\"page\",\"redirectPageId\":0,\"redirectPageLabel\":\"\",\"redirectUrl\":\"\",\"loginRequired\":false,\"showToAdmins\":false,\"legacy\":{\"mode\":\"conditions\",\"show\":\"logged_in\",\"loginOnly\":false,\"fallback\":\"\",\"surface\":\"meta\",\"conditions\":{\"logic\":\"and\",\"rules\":[{\"type\":\"user_role\",\"roles\":[\"qa_final_missing_role\"]}]}}}",
+  "enabled": "1",
+  "tree": "{\"logic\":\"and\",\"rules\":[{\"type\":\"user_role\",\"roles\":[\"qa_final_missing_role\"]}]}"
+}

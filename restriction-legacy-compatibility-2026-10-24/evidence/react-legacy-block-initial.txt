@@ -1,0 +1,200 @@
+- generic
+  - generic
+    - generic
+      - navigation "Toolbar" [ref=e1]
+        - menu
+          - group
+            - menuitem "About WordPress" [expanded=false, ref=e4]
+              - StaticText "About WordPress"
+          - group
+            - menuitem "wp-test2" [expanded=false, ref=e5]
+          - group
+            - menuitem "Live" [ref=e6]
+          - group
+            - menuitem "5 updates available" [ref=e7]
+              - StaticText "5 updates available"
+          - group
+            - menuitem "⌘K Open command palette" [ref=e8]
+              - generic
+                - StaticText "⌘K"
+                - StaticText "Open command palette"
+          - group
+            - menuitem "0 Comments in moderation" [ref=e9]
+              - StaticText "0 Comments in moderation"
+          - group
+            - menuitem "New" [expanded=false, ref=e10]
+              - StaticText "New"
+          - group
+            - menuitem "View Page" [ref=e11]
+        - menu
+          - group
+            - menuitem "Howdy, admin" [expanded=false, ref=e12]
+              - StaticText "Howdy, admin"
+      - main
+        - generic
+          - heading "Edit Page" [level=1, ref=e2]
+          - generic [ref=e3] clickable [onclick]
+            - generic
+              - generic
+                - region "Editor top bar" [ref=e13]
+                  - generic [ref=e15] clickable [onclick]
+                    - link "View Pages" [ref=e29]
+                  - toolbar "Document tools"
+                    - button "Block Inserter" [expanded=false, ref=e30]
+                    - button "Undo" [disabled, ref=e24]
+                    - button "Redo" [disabled, ref=e25]
+                    - button "Document Overview" [expanded=true, ref=e31]
+                    - button " Edit with Elementor" [ref=e32]
+                      - StaticText " Edit with Elementor"
+                  - button "QA legacy author_gutenberg 20261024 · Page" [ref=e16]
+                    - heading "QA legacy author_gutenberg 20261024 · Page" [level=1, ref=e26]
+                      - StaticText "QA legacy author_gutenberg 20261024"
+                      - StaticText "· Page"
+                  - link "View Page" [ref=e17]
+                  - button "View" [expanded=false, ref=e27]
+                  - button "Settings" [expanded=true, ref=e18]
+                  - button "Save" [disabled, ref=e19]
+                  - button "Options" [expanded=false, ref=e28]
+                - generic
+                  - region "Document Overview" [ref=e20]
+                    - button "Close" [ref=e33]
+                    - tablist
+                      - tab "List View" [selected, ref=e36]
+                        - StaticText "List View"
+                      - tab "Outline" [ref=e37]
+                        - StaticText "Outline"
+                    - tabpanel "List View"
+                      - application "Block navigation structure"
+                        - treegrid "Block navigation structure"
+                          - row " Restricted Content Options" [level=1]
+                            - gridcell " Restricted Content" [selected, ref=e55]
+                              - link " Restricted Content" [expanded=false, ref=e63]
+                                - StaticText ""
+                                - StaticText "Restricted Content"
+                            - gridcell "Options" [selected, ref=e56]
+                              - button "Options" [expanded=false, ref=e66]
+                  - region "Editor content" [ref=e21]
+                    - generic
+                      - toolbar "Block tools"
+                        - generic
+                          - generic
+                            - button "Restricted Content" [expanded=false, ref=e64]
+                              - StaticText ""
+                            - StaticText "Change block type or style"
+                          - generic [ref=e57] clickable [onclick]
+                            - generic
+                              - button "Align" [expanded=false, ref=e67]
+                              - StaticText "Change alignment"
+                          - button "Options" [expanded=false, ref=e65]
+                      - Iframe "Editor canvas" [ref=e38] focusable [tabindex]
+                        - generic
+                          - textbox "Add title" [ref=e85]: QA legacy author_gutenberg 20261024
+                            - StaticText "QA legacy author_gutenberg 20261024"
+                          - document "Block: Restricted Content"
+                            - StaticText "Information notice"
+                            - StaticText "Restricted on the frontend by your access rules. The editor always shows these blocks."
+                            - document "Block: Paragraph": QA LEGACY PROTECTED GUTENBERG
+                              - StaticText "QA LEGACY PROTECTED GUTENBERG"
+                            - button "Add block" [expanded=false, ref=e86]
+                  - region "Editor settings" [ref=e22]
+                    - generic
+                      - generic
+                        - tablist
+                          - tab "Page" [ref=e40]
+                            - StaticText "Page"
+                          - tab "Block" [selected, ref=e41]
+                            - StaticText "Block"
+                        - button "Close Settings" [ref=e39]
+                      - tabpanel "Block"
+                        - StaticText ""
+                        - heading "Restricted Content" [level=2, ref=e42]
+                          - StaticText "Restricted Content"
+                        - StaticText "A container whose nested blocks are shown or hidden based on subscription, role, purchase, or plan-feature rules."
+                        - generic [ref=e43] clickable [onclick]
+                          - heading "ArraySubs Content Restrictions" [level=2, ref=e46]
+                            - button "ArraySubs Content Restrictions" [expanded=true, ref=e58]
+                          - checkbox "Restrict access to this content" [checked=true, ref=e47]
+                          - paragraph
+                            - StaticText "When off, these blocks are shown without this restriction."
+                          - heading "Previous access rules" [level=2, ref=e48]
+                            - button "Previous access rules" [expanded=true, ref=e59]
+                          - StaticText "Information notice"
+                          - StaticText "These settings keep their original access behavior. Saving this content or editing its message does not convert the access rules."
+                          - paragraph
+                            - StaticText "Logged-in users only. Other saved conditions are ignored by the original login-only rule."
+                          - button "Review current access rules" [ref=e49]
+                          - heading "Always Show To Admins" [level=2, ref=e50]
+                            - button "Always Show To Admins" [expanded=true, ref=e60]
+                          - checkbox "Always Show To Admins" [checked=false, ref=e51]
+                          - paragraph
+                            - StaticText "Administrators can access this content without meeting any other condition."
+                          - heading "How denied access is handled" [level=2, ref=e52]
+                            - button "How denied access is handled" [expanded=true, ref=e61]
+                          - paragraph
+                            - StaticText "The protected blocks are replaced with a message."
+                          - checkbox "Use custom message" [checked=true, ref=e53]
+                          - paragraph
+                            - StaticText "When off, the default message is shown."
+                          - paragraph
+                            - StaticText "Leave empty to use the default message from "
+                            - link "ArraySubs → Settings → Content Gate (opens in a new tab)" [ref=e62]
+                              - StaticText "ArraySubs → Settings → Content Gate"
+                              - StaticText "(opens in a new tab)"
+                            - StaticText "."
+                          - LabelText
+                            - StaticText "Custom message"
+                          - application
+                            - generic
+                              - group
+                                - toolbar
+                                  - generic
+                                    - group
+                                      - generic
+                                        - button "Bold" [ref=e71]
+                                          - button [ref=e78]
+                                        - button "Italic" [ref=e72]
+                                          - button [ref=e79]
+                                    - group
+                                      - generic
+                                        - button "Bulleted list" [ref=e73]
+                                          - button [ref=e80]
+                                        - button "Numbered list" [ref=e74]
+                                          - button [ref=e81]
+                                    - group
+                                      - generic
+                                        - button "Insert/edit link" [ref=e75]
+                                          - button [ref=e82]
+                                        - button "Remove link" [ref=e76]
+                                          - button [ref=e83]
+                                    - group
+                                      - button "Clear formatting" [ref=e77]
+                                        - button [ref=e84]
+                              - group
+                                - Iframe "Rich Text Area. Press Alt-Shift-H for help." [ref=e68]
+                                  - paragraph
+                                    - StaticText "QA LEGACY CUSTOM "
+                                    - strong
+                                      - StaticText "saved message"
+                              - group
+                                - generic
+                                  - generic [ref=e69] clickable [cursor:pointer]
+                                  - StaticText ""
+                                  - generic
+                                    - StaticText " POWERED BY "
+                                    - link "TINY" [ref=e70]
+                          - paragraph
+                            - StaticText "Shown when access is denied. Leave empty to use the default message."
+                        - heading "Advanced" [level=2, ref=e44]
+                          - button "Advanced" [expanded=false, ref=e54]
+                        - button "Skip to the selected block" [ref=e45]
+                  - region "Editor publish" [ref=e23]
+                    - button "Open save panel" [expanded=false, disabled, ref=e34]
+                - region "Editor footer" [ref=e14]
+                  - list "Block breadcrumb"
+                    - listitem [level=1]
+                      - button "Page" [ref=e35]
+                    - listitem [level=1]
+                      - StaticText "Restricted Content"
+  - paragraph
+    - StaticText "Notifications"
+  - StaticText "These settings keep their original access behavior. Saving this content or editing its message does not convert the access rules."

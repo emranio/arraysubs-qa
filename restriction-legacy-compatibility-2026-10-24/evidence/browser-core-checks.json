@@ -1,0 +1,482 @@
+[
+  {
+    "passed": true,
+    "check": "core/legacy_login/guest/post protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "core/legacy_login/guest/post denial message/blank fallback"
+  },
+  {
+    "passed": true,
+    "check": "core/legacy_login/guest/gutenberg protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "core/legacy_login/guest/gutenberg denial message/blank fallback"
+  },
+  {
+    "passed": true,
+    "check": "core/legacy_login/guest/elementor protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "core/legacy_login/guest/elementor denial message/blank fallback"
+  },
+  {
+    "passed": true,
+    "check": "core/legacy_login/customer/post protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "core/legacy_login/customer/post denial message/blank fallback"
+  },
+  {
+    "passed": true,
+    "check": "core/legacy_login/customer/gutenberg protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "core/legacy_login/customer/gutenberg denial message/blank fallback"
+  },
+  {
+    "passed": true,
+    "check": "core/legacy_login/customer/elementor protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "core/legacy_login/customer/elementor denial message/blank fallback"
+  },
+  {
+    "passed": true,
+    "check": "core/legacy_login/member/post protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "core/legacy_login/member/post denial message/blank fallback"
+  },
+  {
+    "passed": true,
+    "check": "core/legacy_login/member/gutenberg protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "core/legacy_login/member/gutenberg denial message/blank fallback"
+  },
+  {
+    "passed": true,
+    "check": "core/legacy_login/member/elementor protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "core/legacy_login/member/elementor denial message/blank fallback"
+  },
+  {
+    "passed": true,
+    "check": "core/legacy_login/admin/post protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "core/legacy_login/admin/post denial message/blank fallback"
+  },
+  {
+    "passed": true,
+    "check": "core/legacy_login/admin/gutenberg protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "core/legacy_login/admin/gutenberg denial message/blank fallback"
+  },
+  {
+    "passed": true,
+    "check": "core/legacy_login/admin/elementor protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "core/legacy_login/admin/elementor denial message/blank fallback"
+  },
+  {
+    "passed": true,
+    "check": "core/visibility_out/guest/post protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "core/visibility_out/guest/post denial message/blank fallback"
+  },
+  {
+    "passed": true,
+    "check": "core/visibility_out/guest/gutenberg protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "core/visibility_out/guest/gutenberg denial message/blank fallback"
+  },
+  {
+    "passed": true,
+    "check": "core/visibility_out/guest/elementor protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "core/visibility_out/guest/elementor denial message/blank fallback"
+  },
+  {
+    "passed": true,
+    "check": "core/visibility_out/customer/post protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "core/visibility_out/customer/post denial message/blank fallback"
+  },
+  {
+    "passed": true,
+    "check": "core/visibility_out/customer/gutenberg protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "core/visibility_out/customer/gutenberg denial message/blank fallback"
+  },
+  {
+    "passed": true,
+    "check": "core/visibility_out/customer/elementor protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "core/visibility_out/customer/elementor denial message/blank fallback"
+  },
+  {
+    "passed": true,
+    "check": "core/visibility_out/member/post protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "core/visibility_out/member/post denial message/blank fallback"
+  },
+  {
+    "passed": true,
+    "check": "core/visibility_out/member/gutenberg protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "core/visibility_out/member/gutenberg denial message/blank fallback"
+  },
+  {
+    "passed": true,
+    "check": "core/visibility_out/member/elementor protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "core/visibility_out/member/elementor denial message/blank fallback"
+  },
+  {
+    "passed": true,
+    "check": "core/visibility_out/admin/post protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "core/visibility_out/admin/post denial message/blank fallback"
+  },
+  {
+    "passed": true,
+    "check": "core/visibility_out/admin/gutenberg protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "core/visibility_out/admin/gutenberg denial message/blank fallback"
+  },
+  {
+    "passed": true,
+    "check": "core/visibility_out/admin/elementor protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "core/visibility_out/admin/elementor denial message/blank fallback"
+  },
+  {
+    "passed": true,
+    "check": "core/visibility_empty/guest/post protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "core/visibility_empty/guest/post denial message/blank fallback"
+  },
+  {
+    "passed": true,
+    "check": "core/visibility_empty/guest/gutenberg protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "core/visibility_empty/guest/gutenberg denial message/blank fallback"
+  },
+  {
+    "passed": true,
+    "check": "core/visibility_empty/guest/elementor protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "core/visibility_empty/guest/elementor denial message/blank fallback"
+  },
+  {
+    "passed": true,
+    "check": "core/visibility_empty/customer/post protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "core/visibility_empty/customer/post denial message/blank fallback"
+  },
+  {
+    "passed": true,
+    "check": "core/visibility_empty/customer/gutenberg protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "core/visibility_empty/customer/gutenberg denial message/blank fallback"
+  },
+  {
+    "passed": true,
+    "check": "core/visibility_empty/customer/elementor protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "core/visibility_empty/customer/elementor denial message/blank fallback"
+  },
+  {
+    "passed": true,
+    "check": "core/visibility_empty/member/post protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "core/visibility_empty/member/post denial message/blank fallback"
+  },
+  {
+    "passed": true,
+    "check": "core/visibility_empty/member/gutenberg protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "core/visibility_empty/member/gutenberg denial message/blank fallback"
+  },
+  {
+    "passed": true,
+    "check": "core/visibility_empty/member/elementor protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "core/visibility_empty/member/elementor denial message/blank fallback"
+  },
+  {
+    "passed": true,
+    "check": "core/visibility_empty/admin/post protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "core/visibility_empty/admin/post denial message/blank fallback"
+  },
+  {
+    "passed": true,
+    "check": "core/visibility_empty/admin/gutenberg protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "core/visibility_empty/admin/gutenberg denial message/blank fallback"
+  },
+  {
+    "passed": true,
+    "check": "core/visibility_empty/admin/elementor protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "core/visibility_empty/admin/elementor denial message/blank fallback"
+  },
+  {
+    "passed": true,
+    "check": "core/current_any_fail/guest/post protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "core/current_any_fail/guest/post denial message/blank fallback"
+  },
+  {
+    "passed": true,
+    "check": "core/current_any_fail/guest/gutenberg protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "core/current_any_fail/guest/gutenberg denial message/blank fallback"
+  },
+  {
+    "passed": true,
+    "check": "core/current_any_fail/guest/elementor protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "core/current_any_fail/guest/elementor denial message/blank fallback"
+  },
+  {
+    "passed": true,
+    "check": "core/current_any_fail/customer/post protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "core/current_any_fail/customer/post denial message/blank fallback"
+  },
+  {
+    "passed": true,
+    "check": "core/current_any_fail/customer/gutenberg protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "core/current_any_fail/customer/gutenberg denial message/blank fallback"
+  },
+  {
+    "passed": true,
+    "check": "core/current_any_fail/customer/elementor protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "core/current_any_fail/customer/elementor denial message/blank fallback"
+  },
+  {
+    "passed": true,
+    "check": "core/current_any_fail/member/post protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "core/current_any_fail/member/post denial message/blank fallback"
+  },
+  {
+    "passed": true,
+    "check": "core/current_any_fail/member/gutenberg protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "core/current_any_fail/member/gutenberg denial message/blank fallback"
+  },
+  {
+    "passed": true,
+    "check": "core/current_any_fail/member/elementor protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "core/current_any_fail/member/elementor denial message/blank fallback"
+  },
+  {
+    "passed": true,
+    "check": "core/current_any_fail/admin/post protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "core/current_any_fail/admin/post denial message/blank fallback"
+  },
+  {
+    "passed": true,
+    "check": "core/current_any_fail/admin/gutenberg protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "core/current_any_fail/admin/gutenberg denial message/blank fallback"
+  },
+  {
+    "passed": true,
+    "check": "core/current_any_fail/admin/elementor protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "core/current_any_fail/admin/elementor denial message/blank fallback"
+  },
+  {
+    "passed": true,
+    "check": "core/transitional_custom/guest/post protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "core/transitional_custom/guest/post denial message/blank fallback"
+  },
+  {
+    "passed": true,
+    "check": "core/transitional_custom/guest/gutenberg protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "core/transitional_custom/guest/gutenberg denial message/blank fallback"
+  },
+  {
+    "passed": true,
+    "check": "core/transitional_custom/guest/elementor protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "core/transitional_custom/guest/elementor denial message/blank fallback"
+  },
+  {
+    "passed": true,
+    "check": "core/transitional_custom/customer/post protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "core/transitional_custom/customer/post denial message/blank fallback"
+  },
+  {
+    "passed": true,
+    "check": "core/transitional_custom/customer/gutenberg protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "core/transitional_custom/customer/gutenberg denial message/blank fallback"
+  },
+  {
+    "passed": true,
+    "check": "core/transitional_custom/customer/elementor protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "core/transitional_custom/customer/elementor denial message/blank fallback"
+  },
+  {
+    "passed": true,
+    "check": "core/transitional_custom/member/post protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "core/transitional_custom/member/post denial message/blank fallback"
+  },
+  {
+    "passed": true,
+    "check": "core/transitional_custom/member/gutenberg protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "core/transitional_custom/member/gutenberg denial message/blank fallback"
+  },
+  {
+    "passed": true,
+    "check": "core/transitional_custom/member/elementor protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "core/transitional_custom/member/elementor denial message/blank fallback"
+  },
+  {
+    "passed": true,
+    "check": "core/transitional_custom/admin/post protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "core/transitional_custom/admin/post denial message/blank fallback"
+  },
+  {
+    "passed": true,
+    "check": "core/transitional_custom/admin/gutenberg protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "core/transitional_custom/admin/gutenberg denial message/blank fallback"
+  },
+  {
+    "passed": true,
+    "check": "core/transitional_custom/admin/elementor protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "core/transitional_custom/admin/elementor denial message/blank fallback"
+  }
+]

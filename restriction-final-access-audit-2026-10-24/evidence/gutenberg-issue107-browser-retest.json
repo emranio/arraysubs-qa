@@ -1,0 +1,10 @@
+{
+  "fixture": 20191,
+  "url": "http://localhost:10013/qa-final-access-author_gutenberg-20261024/",
+  "method": "Actual agent-browser navigation and get text body; recorded observations from tool output",
+  "cases": [
+    {"state": "invalid_login", "actor": "admin1", "time": "2026-10-24 04:12:06", "expected": "denied", "observedText": "QA FINAL CUSTOM saved message", "protectedBodyPresent": false, "pass": true},
+    {"state": "old_enabled_false", "actor": "guest", "time": "2026-10-24 04:12:52", "expected": "denied", "observedText": "QA FINAL CUSTOM saved message", "protectedBodyPresent": false, "pass": true}
+  ],
+  "screenshotLimitation": "After-fix screenshot capture stalled across root and isolated sessions; full browser text and saved snapshots supplement earlier before-fix and layout screenshots. No screenshot pass is claimed."
+}

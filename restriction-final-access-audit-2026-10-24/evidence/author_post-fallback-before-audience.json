@@ -1,0 +1,34 @@
+[
+  {
+    "kind": "author_post",
+    "stage": "fallback-before",
+    "role": "guest",
+    "expected_allowed": false,
+    "actual_allowed": false,
+    "passed": true
+  },
+  {
+    "kind": "author_post",
+    "stage": "fallback-before",
+    "role": "customer",
+    "expected_allowed": false,
+    "actual_allowed": false,
+    "passed": true
+  },
+  {
+    "kind": "author_post",
+    "stage": "fallback-before",
+    "role": "member",
+    "expected_allowed": false,
+    "actual_allowed": false,
+    "passed": true
+  },
+  {
+    "kind": "author_post",
+    "stage": "fallback-before",
+    "role": "admin",
+    "expected_allowed": false,
+    "actual_allowed": false,
+    "passed": true
+  }
+]

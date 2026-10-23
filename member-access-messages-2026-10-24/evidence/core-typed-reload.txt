@@ -1,0 +1,1 @@
+"{\"enabled\":true,\"content\":\"<p>QA saved editor text. QA custom ecommerce_rules <strong>members only</strong>. <a href=\\\"http://localhost:10013/my-account/\\\">Join now</a>.</p>\"}"

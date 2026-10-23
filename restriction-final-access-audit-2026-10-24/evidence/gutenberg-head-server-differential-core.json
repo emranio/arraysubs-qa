@@ -1,0 +1,833 @@
+{
+    "checks": 331,
+    "cases": 41,
+    "actors": {
+        "guest": 0,
+        "customer": 455,
+        "member": 224,
+        "admin": 1
+    },
+    "failures": [],
+    "audiences": [
+        {
+            "case": "ordinary-any",
+            "actor": "guest",
+            "allowed": false
+        },
+        {
+            "case": "ordinary-any",
+            "actor": "customer",
+            "allowed": false
+        },
+        {
+            "case": "ordinary-any",
+            "actor": "member",
+            "allowed": true
+        },
+        {
+            "case": "ordinary-any",
+            "actor": "admin",
+            "allowed": false
+        },
+        {
+            "case": "ordinary-all-false",
+            "actor": "guest",
+            "allowed": false
+        },
+        {
+            "case": "ordinary-all-false",
+            "actor": "customer",
+            "allowed": false
+        },
+        {
+            "case": "ordinary-all-false",
+            "actor": "member",
+            "allowed": false
+        },
+        {
+            "case": "ordinary-all-false",
+            "actor": "admin",
+            "allowed": false
+        },
+        {
+            "case": "ordinary-all-match",
+            "actor": "guest",
+            "allowed": false
+        },
+        {
+            "case": "ordinary-all-match",
+            "actor": "customer",
+            "allowed": true
+        },
+        {
+            "case": "ordinary-all-match",
+            "actor": "member",
+            "allowed": true
+        },
+        {
+            "case": "ordinary-all-match",
+            "actor": "admin",
+            "allowed": true
+        },
+        {
+            "case": "explicit-old-enabled-false",
+            "actor": "guest",
+            "allowed": false
+        },
+        {
+            "case": "explicit-old-enabled-false",
+            "actor": "customer",
+            "allowed": false
+        },
+        {
+            "case": "explicit-old-enabled-false",
+            "actor": "member",
+            "allowed": false
+        },
+        {
+            "case": "explicit-old-enabled-false",
+            "actor": "admin",
+            "allowed": false
+        },
+        {
+            "case": "guests-only",
+            "actor": "guest",
+            "allowed": true
+        },
+        {
+            "case": "guests-only",
+            "actor": "customer",
+            "allowed": false
+        },
+        {
+            "case": "guests-only",
+            "actor": "member",
+            "allowed": false
+        },
+        {
+            "case": "guests-only",
+            "actor": "admin",
+            "allowed": false
+        },
+        {
+            "case": "uppercase-role",
+            "actor": "guest",
+            "allowed": false
+        },
+        {
+            "case": "uppercase-role",
+            "actor": "customer",
+            "allowed": false
+        },
+        {
+            "case": "uppercase-role",
+            "actor": "member",
+            "allowed": false
+        },
+        {
+            "case": "uppercase-role",
+            "actor": "admin",
+            "allowed": false
+        },
+        {
+            "case": "csv-role",
+            "actor": "guest",
+            "allowed": false
+        },
+        {
+            "case": "csv-role",
+            "actor": "customer",
+            "allowed": false
+        },
+        {
+            "case": "csv-role",
+            "actor": "member",
+            "allowed": true
+        },
+        {
+            "case": "csv-role",
+            "actor": "admin",
+            "allowed": false
+        },
+        {
+            "case": "csv-status",
+            "actor": "guest",
+            "allowed": false
+        },
+        {
+            "case": "csv-status",
+            "actor": "customer",
+            "allowed": false
+        },
+        {
+            "case": "csv-status",
+            "actor": "member",
+            "allowed": true
+        },
+        {
+            "case": "csv-status",
+            "actor": "admin",
+            "allowed": true
+        },
+        {
+            "case": "csv-products",
+            "actor": "guest",
+            "allowed": false
+        },
+        {
+            "case": "csv-products",
+            "actor": "customer",
+            "allowed": false
+        },
+        {
+            "case": "csv-products",
+            "actor": "member",
+            "allowed": false
+        },
+        {
+            "case": "csv-products",
+            "actor": "admin",
+            "allowed": false
+        },
+        {
+            "case": "negative-product",
+            "actor": "guest",
+            "allowed": false
+        },
+        {
+            "case": "negative-product",
+            "actor": "customer",
+            "allowed": false
+        },
+        {
+            "case": "negative-product",
+            "actor": "member",
+            "allowed": false
+        },
+        {
+            "case": "negative-product",
+            "actor": "admin",
+            "allowed": false
+        },
+        {
+            "case": "default-container",
+            "actor": "guest",
+            "allowed": true
+        },
+        {
+            "case": "default-container",
+            "actor": "customer",
+            "allowed": true
+        },
+        {
+            "case": "default-container",
+            "actor": "member",
+            "allowed": true
+        },
+        {
+            "case": "default-container",
+            "actor": "admin",
+            "allowed": true
+        },
+        {
+            "case": "login-value-0",
+            "actor": "guest",
+            "allowed": false
+        },
+        {
+            "case": "login-value-0",
+            "actor": "customer",
+            "allowed": false
+        },
+        {
+            "case": "login-value-0",
+            "actor": "member",
+            "allowed": false
+        },
+        {
+            "case": "login-value-0",
+            "actor": "admin",
+            "allowed": false
+        },
+        {
+            "case": "admin-value-0",
+            "actor": "guest",
+            "allowed": false
+        },
+        {
+            "case": "admin-value-0",
+            "actor": "customer",
+            "allowed": false
+        },
+        {
+            "case": "admin-value-0",
+            "actor": "member",
+            "allowed": false
+        },
+        {
+            "case": "admin-value-0",
+            "actor": "admin",
+            "allowed": true
+        },
+        {
+            "case": "login-value-1",
+            "actor": "guest",
+            "allowed": false
+        },
+        {
+            "case": "login-value-1",
+            "actor": "customer",
+            "allowed": false
+        },
+        {
+            "case": "login-value-1",
+            "actor": "member",
+            "allowed": false
+        },
+        {
+            "case": "login-value-1",
+            "actor": "admin",
+            "allowed": false
+        },
+        {
+            "case": "admin-value-1",
+            "actor": "guest",
+            "allowed": false
+        },
+        {
+            "case": "admin-value-1",
+            "actor": "customer",
+            "allowed": false
+        },
+        {
+            "case": "admin-value-1",
+            "actor": "member",
+            "allowed": false
+        },
+        {
+            "case": "admin-value-1",
+            "actor": "admin",
+            "allowed": true
+        },
+        {
+            "case": "login-value-2",
+            "actor": "guest",
+            "allowed": false
+        },
+        {
+            "case": "login-value-2",
+            "actor": "customer",
+            "allowed": true
+        },
+        {
+            "case": "login-value-2",
+            "actor": "member",
+            "allowed": true
+        },
+        {
+            "case": "login-value-2",
+            "actor": "admin",
+            "allowed": true
+        },
+        {
+            "case": "admin-value-2",
+            "actor": "guest",
+            "allowed": false
+        },
+        {
+            "case": "admin-value-2",
+            "actor": "customer",
+            "allowed": false
+        },
+        {
+            "case": "admin-value-2",
+            "actor": "member",
+            "allowed": false
+        },
+        {
+            "case": "admin-value-2",
+            "actor": "admin",
+            "allowed": true
+        },
+        {
+            "case": "login-value-3",
+            "actor": "guest",
+            "allowed": false
+        },
+        {
+            "case": "login-value-3",
+            "actor": "customer",
+            "allowed": false
+        },
+        {
+            "case": "login-value-3",
+            "actor": "member",
+            "allowed": false
+        },
+        {
+            "case": "login-value-3",
+            "actor": "admin",
+            "allowed": false
+        },
+        {
+            "case": "admin-value-3",
+            "actor": "guest",
+            "allowed": false
+        },
+        {
+            "case": "admin-value-3",
+            "actor": "customer",
+            "allowed": false
+        },
+        {
+            "case": "admin-value-3",
+            "actor": "member",
+            "allowed": false
+        },
+        {
+            "case": "admin-value-3",
+            "actor": "admin",
+            "allowed": true
+        },
+        {
+            "case": "login-value-4",
+            "actor": "guest",
+            "allowed": false
+        },
+        {
+            "case": "login-value-4",
+            "actor": "customer",
+            "allowed": false
+        },
+        {
+            "case": "login-value-4",
+            "actor": "member",
+            "allowed": false
+        },
+        {
+            "case": "login-value-4",
+            "actor": "admin",
+            "allowed": false
+        },
+        {
+            "case": "admin-value-4",
+            "actor": "guest",
+            "allowed": false
+        },
+        {
+            "case": "admin-value-4",
+            "actor": "customer",
+            "allowed": false
+        },
+        {
+            "case": "admin-value-4",
+            "actor": "member",
+            "allowed": false
+        },
+        {
+            "case": "admin-value-4",
+            "actor": "admin",
+            "allowed": false
+        },
+        {
+            "case": "login-value-5",
+            "actor": "guest",
+            "allowed": false
+        },
+        {
+            "case": "login-value-5",
+            "actor": "customer",
+            "allowed": false
+        },
+        {
+            "case": "login-value-5",
+            "actor": "member",
+            "allowed": false
+        },
+        {
+            "case": "login-value-5",
+            "actor": "admin",
+            "allowed": false
+        },
+        {
+            "case": "admin-value-5",
+            "actor": "guest",
+            "allowed": false
+        },
+        {
+            "case": "admin-value-5",
+            "actor": "customer",
+            "allowed": false
+        },
+        {
+            "case": "admin-value-5",
+            "actor": "member",
+            "allowed": false
+        },
+        {
+            "case": "admin-value-5",
+            "actor": "admin",
+            "allowed": true
+        },
+        {
+            "case": "login-value-6",
+            "actor": "guest",
+            "allowed": false
+        },
+        {
+            "case": "login-value-6",
+            "actor": "customer",
+            "allowed": true
+        },
+        {
+            "case": "login-value-6",
+            "actor": "member",
+            "allowed": true
+        },
+        {
+            "case": "login-value-6",
+            "actor": "admin",
+            "allowed": true
+        },
+        {
+            "case": "admin-value-6",
+            "actor": "guest",
+            "allowed": false
+        },
+        {
+            "case": "admin-value-6",
+            "actor": "customer",
+            "allowed": false
+        },
+        {
+            "case": "admin-value-6",
+            "actor": "member",
+            "allowed": false
+        },
+        {
+            "case": "admin-value-6",
+            "actor": "admin",
+            "allowed": true
+        },
+        {
+            "case": "login-value-7",
+            "actor": "guest",
+            "allowed": false
+        },
+        {
+            "case": "login-value-7",
+            "actor": "customer",
+            "allowed": true
+        },
+        {
+            "case": "login-value-7",
+            "actor": "member",
+            "allowed": true
+        },
+        {
+            "case": "login-value-7",
+            "actor": "admin",
+            "allowed": true
+        },
+        {
+            "case": "admin-value-7",
+            "actor": "guest",
+            "allowed": false
+        },
+        {
+            "case": "admin-value-7",
+            "actor": "customer",
+            "allowed": false
+        },
+        {
+            "case": "admin-value-7",
+            "actor": "member",
+            "allowed": false
+        },
+        {
+            "case": "admin-value-7",
+            "actor": "admin",
+            "allowed": true
+        },
+        {
+            "case": "login-value-8",
+            "actor": "guest",
+            "allowed": false
+        },
+        {
+            "case": "login-value-8",
+            "actor": "customer",
+            "allowed": false
+        },
+        {
+            "case": "login-value-8",
+            "actor": "member",
+            "allowed": false
+        },
+        {
+            "case": "login-value-8",
+            "actor": "admin",
+            "allowed": false
+        },
+        {
+            "case": "admin-value-8",
+            "actor": "guest",
+            "allowed": false
+        },
+        {
+            "case": "admin-value-8",
+            "actor": "customer",
+            "allowed": false
+        },
+        {
+            "case": "admin-value-8",
+            "actor": "member",
+            "allowed": false
+        },
+        {
+            "case": "admin-value-8",
+            "actor": "admin",
+            "allowed": false
+        },
+        {
+            "case": "login-value-9",
+            "actor": "guest",
+            "allowed": false
+        },
+        {
+            "case": "login-value-9",
+            "actor": "customer",
+            "allowed": true
+        },
+        {
+            "case": "login-value-9",
+            "actor": "member",
+            "allowed": true
+        },
+        {
+            "case": "login-value-9",
+            "actor": "admin",
+            "allowed": true
+        },
+        {
+            "case": "admin-value-9",
+            "actor": "guest",
+            "allowed": false
+        },
+        {
+            "case": "admin-value-9",
+            "actor": "customer",
+            "allowed": false
+        },
+        {
+            "case": "admin-value-9",
+            "actor": "member",
+            "allowed": false
+        },
+        {
+            "case": "admin-value-9",
+            "actor": "admin",
+            "allowed": true
+        },
+        {
+            "case": "login-value-10",
+            "actor": "guest",
+            "allowed": false
+        },
+        {
+            "case": "login-value-10",
+            "actor": "customer",
+            "allowed": false
+        },
+        {
+            "case": "login-value-10",
+            "actor": "member",
+            "allowed": false
+        },
+        {
+            "case": "login-value-10",
+            "actor": "admin",
+            "allowed": false
+        },
+        {
+            "case": "admin-value-10",
+            "actor": "guest",
+            "allowed": false
+        },
+        {
+            "case": "admin-value-10",
+            "actor": "customer",
+            "allowed": false
+        },
+        {
+            "case": "admin-value-10",
+            "actor": "member",
+            "allowed": false
+        },
+        {
+            "case": "admin-value-10",
+            "actor": "admin",
+            "allowed": true
+        },
+        {
+            "case": "login-value-11",
+            "actor": "guest",
+            "allowed": false
+        },
+        {
+            "case": "login-value-11",
+            "actor": "customer",
+            "allowed": false
+        },
+        {
+            "case": "login-value-11",
+            "actor": "member",
+            "allowed": false
+        },
+        {
+            "case": "login-value-11",
+            "actor": "admin",
+            "allowed": false
+        },
+        {
+            "case": "admin-value-11",
+            "actor": "guest",
+            "allowed": false
+        },
+        {
+            "case": "admin-value-11",
+            "actor": "customer",
+            "allowed": false
+        },
+        {
+            "case": "admin-value-11",
+            "actor": "member",
+            "allowed": false
+        },
+        {
+            "case": "admin-value-11",
+            "actor": "admin",
+            "allowed": true
+        },
+        {
+            "case": "login-value-12",
+            "actor": "guest",
+            "allowed": false
+        },
+        {
+            "case": "login-value-12",
+            "actor": "customer",
+            "allowed": false
+        },
+        {
+            "case": "login-value-12",
+            "actor": "member",
+            "allowed": false
+        },
+        {
+            "case": "login-value-12",
+            "actor": "admin",
+            "allowed": false
+        },
+        {
+            "case": "admin-value-12",
+            "actor": "guest",
+            "allowed": false
+        },
+        {
+            "case": "admin-value-12",
+            "actor": "customer",
+            "allowed": false
+        },
+        {
+            "case": "admin-value-12",
+            "actor": "member",
+            "allowed": false
+        },
+        {
+            "case": "admin-value-12",
+            "actor": "admin",
+            "allowed": true
+        },
+        {
+            "case": "login-value-13",
+            "actor": "guest",
+            "allowed": false
+        },
+        {
+            "case": "login-value-13",
+            "actor": "customer",
+            "allowed": false
+        },
+        {
+            "case": "login-value-13",
+            "actor": "member",
+            "allowed": false
+        },
+        {
+            "case": "login-value-13",
+            "actor": "admin",
+            "allowed": false
+        },
+        {
+            "case": "admin-value-13",
+            "actor": "guest",
+            "allowed": false
+        },
+        {
+            "case": "admin-value-13",
+            "actor": "customer",
+            "allowed": false
+        },
+        {
+            "case": "admin-value-13",
+            "actor": "member",
+            "allowed": false
+        },
+        {
+            "case": "admin-value-13",
+            "actor": "admin",
+            "allowed": true
+        },
+        {
+            "case": "login-value-14",
+            "actor": "guest",
+            "allowed": false
+        },
+        {
+            "case": "login-value-14",
+            "actor": "customer",
+            "allowed": false
+        },
+        {
+            "case": "login-value-14",
+            "actor": "member",
+            "allowed": false
+        },
+        {
+            "case": "login-value-14",
+            "actor": "admin",
+            "allowed": false
+        },
+        {
+            "case": "admin-value-14",
+            "actor": "guest",
+            "allowed": false
+        },
+        {
+            "case": "admin-value-14",
+            "actor": "customer",
+            "allowed": false
+        },
+        {
+            "case": "admin-value-14",
+            "actor": "member",
+            "allowed": false
+        },
+        {
+            "case": "admin-value-14",
+            "actor": "admin",
+            "allowed": true
+        }
+    ]
+}

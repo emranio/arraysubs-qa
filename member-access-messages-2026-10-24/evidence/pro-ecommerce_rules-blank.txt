@@ -1,0 +1,199 @@
+- generic
+  - link "Skip to content" [ref=e1]
+  - banner
+    - paragraph
+      - link "wp-test2" [ref=e10]
+    - navigation
+      - list
+        - list
+          - listitem [level=2]
+            - link "Cart" [ref=e45]
+          - listitem [level=2]
+            - link "Cart" [ref=e46]
+          - listitem [level=2]
+            - link "Checkout" [ref=e47]
+          - listitem [level=2]
+            - link "Checkout" [ref=e48]
+          - listitem [level=2]
+            - link "Checkout Page" [ref=e49]
+          - listitem [level=2]
+            - link "Default Redirect Page" [ref=e50]
+          - listitem [level=2]
+            - link "Demo · Account Checklist" [ref=e51]
+          - listitem [level=2]
+            - link "Demo · Content Gate Demo Hub" [ref=e52]
+          - listitem [level=2]
+            - link "Demo · Download Library" [ref=e53]
+          - listitem [level=2]
+            - link "Demo · Loyal Plus Member Resource" [ref=e54]
+          - listitem [level=2]
+            - link "Demo · Masterclass Feature Access" [ref=e55]
+          - listitem [level=2]
+            - link "Demo · Member Library" [ref=e56]
+          - listitem [level=2]
+            - link "Demo · Member or Workshop Buyer" [ref=e57]
+          - listitem [level=2]
+            - link "Demo · Member Role Resource" [ref=e58]
+          - listitem [level=2]
+            - link "Demo · Member Support" [ref=e59]
+          - listitem [level=2]
+            - link "Demo · Membership Plans" [ref=e60]
+          - listitem [level=2]
+            - link "Demo · Premium Masterclass" [ref=e61]
+          - listitem [level=2]
+            - link "Demo · Premium Upgrade Resource" [ref=e62]
+          - listitem [level=2]
+            - link "Demo · Private Member Dashboard" [ref=e63]
+          - listitem [level=2]
+            - link "Demo · Professional Workspace" [ref=e64]
+          - listitem [level=2]
+            - link "Demo · Public Preview with a Gated Lesson" [ref=e65]
+          - listitem [level=2]
+            - link "Demo · Purchased Workshop Replay" [ref=e66]
+          - listitem [level=2]
+            - link "Demo · Renewal Help" [ref=e67]
+          - listitem [level=2]
+            - link "Demo · Shortcode Access Examples" [ref=e68]
+          - listitem [level=2]
+            - link "Demo · Team Workspace" [ref=e69]
+          - listitem [level=2]
+            - link "Demo · VIP Loyalty Lounge" [ref=e70]
+          - listitem [level=2]
+            - link "Demo · Visitor Welcome" [ref=e71]
+          - listitem [level=2]
+            - link "Demo · Welcome and Getting Started" [ref=e72]
+          - listitem [level=2]
+            - link "Elementor #399" [ref=e73]
+          - listitem [level=2]
+            - link "Lost Password" [ref=e74]
+          - listitem [level=2]
+            - link "Member Login" [ref=e75]
+          - listitem [level=2]
+            - link "Member LogOut" [ref=e76]
+          - listitem [level=2]
+            - link "Member TOS Page" [ref=e77]
+          - listitem [level=2]
+            - link "My Account" [ref=e78]
+          - listitem [level=2]
+            - link "My account" [ref=e79]
+          - listitem [level=2]
+            - link "Public Individual Page" [ref=e80]
+          - listitem [level=2]
+            - link "Register" [ref=e81]
+          - listitem [level=2]
+            - link "Sample Page" [ref=e82]
+          - listitem [level=2]
+            - link "Sample Page" [ref=e83]
+          - listitem [level=2]
+            - link "Shop" [ref=e84]
+          - listitem [level=2]
+            - link "Subscription Plan" [ref=e85]
+          - listitem [level=2]
+            - link "Thank You Page" [ref=e86]
+          - listitem [level=2]
+            - link "today is Sunday" [ref=e87]
+    - link "Login" [ref=e2]
+      - image
+    - button "Number of items in the cart: 0" [ref=e3]
+      - image
+  - main
+    - navigation "Breadcrumb" [ref=e4]
+      - link "Home" [ref=e11]
+      - StaticText "/"
+      - link "Demo Accessories" [ref=e12]
+      - StaticText "/Demo · Limited Edition Flask"
+    - image "Awaiting product image"
+    - heading "Demo · Limited Edition Flask" [level=1, ref=e5]
+    - generic
+      - StaticText "39.00$"
+    - paragraph
+      - StaticText "QA shared default "
+      - strong
+        - StaticText "membership message"
+      - StaticText ". "
+      - link "Sign in" [ref=e13]
+      - StaticText "."
+    - paragraph
+      - StaticText "Limited Edition Flask — demo catalog."
+    - generic
+      - StaticText "SKU: DEMO-260927-LOW-STOCK"
+    - generic
+      - StaticText "Category: "
+      - link "Demo Accessories" [ref=e14]
+    - tablist
+      - tab "Description" [selected, ref=e15]
+      - tab "Additional information" [ref=e16]
+      - tab "Reviews (0)" [ref=e17]
+    - tabpanel "Description"
+      - heading "Description" [level=2, ref=e18]
+      - paragraph
+        - StaticText "Sample catalog item for the June–September 2026 demonstration store."
+    - heading "Related products" [level=2, ref=e6]
+    - list
+      - listitem [level=1]
+        - link "Placeholder" [ref=e29]
+          - image "Placeholder"
+        - heading "Demo · Ceramic Member Mug" [level=3, ref=e21]
+          - link "Demo · Ceramic Member Mug" [ref=e30]
+        - generic
+          - StaticText "16.00$"
+        - link "Add to cart: “Demo · Ceramic Member Mug”" [ref=e22]
+          - StaticText "Purchase now"
+      - listitem [level=1]
+        - link "Placeholder" [ref=e31]
+          - image "Placeholder"
+        - heading "Demo · Everyday Canvas Tote" [level=3, ref=e23]
+          - link "Demo · Everyday Canvas Tote" [ref=e32]
+        - generic
+          - StaticText "24.00$"
+        - link "Add to cart: “Demo · Everyday Canvas Tote”" [ref=e24]
+          - StaticText "Purchase now"
+      - listitem [level=1]
+        - link "Placeholder" [ref=e33]
+          - image "Placeholder"
+        - heading "Demo · Member T-shirt" [level=3, ref=e25]
+          - link "Demo · Member T-shirt" [ref=e34]
+        - generic
+          - StaticText "  "
+          - StaticText "Price range: 26.00$ through 30.00$"
+        - link "Select options for “Demo · Member T-shirt”" [ref=e26]
+          - StaticText "Purchase now"
+      - listitem [level=1]
+        - link "Placeholder" [ref=e35]
+          - image "Placeholder"
+        - heading "Demo · Partner Coffee Equipment" [level=3, ref=e27]
+          - link "Demo · Partner Coffee Equipment" [ref=e36]
+        - generic
+          - StaticText "129.00$"
+        - link "Explore collection" [ref=e28]
+          - StaticText "Purchase now"
+  - contentinfo
+    - heading "wp-test2" [level=2, ref=e7]
+      - link "wp-test2" [ref=e19]
+    - navigation " 2" [ref=e8]
+      - list
+        - listitem [level=1]
+          - link "Blog" [ref=e37]
+        - listitem [level=1]
+          - link "About" [ref=e38]
+        - listitem [level=1]
+          - link "FAQs" [ref=e39]
+        - listitem [level=1]
+          - link "Authors" [ref=e40]
+    - navigation " 3" [ref=e9]
+      - list
+        - listitem [level=1]
+          - link "Events" [ref=e41]
+        - listitem [level=1]
+          - link "Shop" [ref=e42]
+        - listitem [level=1]
+          - link "Patterns" [ref=e43]
+        - listitem [level=1]
+          - link "Themes" [ref=e44]
+    - paragraph
+      - StaticText "Twenty Twenty-Five"
+    - paragraph
+      - StaticText "Designed with "
+      - link "WordPress" [ref=e20]
+  - generic
+  - generic

@@ -1,0 +1,26 @@
+[
+  {
+    "actor": "guest",
+    "private": false,
+    "default": false,
+    "custom": true
+  },
+  {
+    "actor": "member",
+    "private": true,
+    "default": false,
+    "custom": false
+  },
+  {
+    "actor": "customer",
+    "private": true,
+    "default": false,
+    "custom": false
+  },
+  {
+    "actor": "admin",
+    "private": true,
+    "default": false,
+    "custom": false
+  }
+]

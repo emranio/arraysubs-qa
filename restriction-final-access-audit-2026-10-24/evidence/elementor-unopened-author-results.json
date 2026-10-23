@@ -1,0 +1,786 @@
+[
+  {
+    "state": "transitional_off",
+    "before": {
+      "guest": {
+        "private": false,
+        "default": true,
+        "custom": false,
+        "fallback": false
+      },
+      "member": {
+        "private": false,
+        "default": true,
+        "custom": false,
+        "fallback": false
+      },
+      "customer": {
+        "private": false,
+        "default": true,
+        "custom": false,
+        "fallback": false
+      },
+      "admin": {
+        "private": false,
+        "default": true,
+        "custom": false,
+        "fallback": false
+      }
+    },
+    "after": {
+      "guest": {
+        "private": false,
+        "default": true,
+        "custom": false,
+        "fallback": false
+      },
+      "member": {
+        "private": false,
+        "default": true,
+        "custom": false,
+        "fallback": false
+      },
+      "customer": {
+        "private": false,
+        "default": true,
+        "custom": false,
+        "fallback": false
+      },
+      "admin": {
+        "private": false,
+        "default": true,
+        "custom": false,
+        "fallback": false
+      }
+    },
+    "pass": true
+  },
+  {
+    "state": "transitional_inverse_off",
+    "before": {
+      "guest": {
+        "private": false,
+        "default": false,
+        "custom": true,
+        "fallback": false
+      },
+      "member": {
+        "private": false,
+        "default": false,
+        "custom": true,
+        "fallback": false
+      },
+      "customer": {
+        "private": false,
+        "default": false,
+        "custom": true,
+        "fallback": false
+      },
+      "admin": {
+        "private": false,
+        "default": false,
+        "custom": true,
+        "fallback": false
+      }
+    },
+    "after": {
+      "guest": {
+        "private": false,
+        "default": false,
+        "custom": true,
+        "fallback": false
+      },
+      "member": {
+        "private": false,
+        "default": false,
+        "custom": true,
+        "fallback": false
+      },
+      "customer": {
+        "private": false,
+        "default": false,
+        "custom": true,
+        "fallback": false
+      },
+      "admin": {
+        "private": false,
+        "default": false,
+        "custom": true,
+        "fallback": false
+      }
+    },
+    "pass": true
+  },
+  {
+    "state": "legacy_any_fail_absent",
+    "before": {
+      "guest": {
+        "private": false,
+        "default": false,
+        "custom": true,
+        "fallback": false
+      },
+      "member": {
+        "private": false,
+        "default": false,
+        "custom": true,
+        "fallback": false
+      },
+      "customer": {
+        "private": false,
+        "default": false,
+        "custom": true,
+        "fallback": false
+      },
+      "admin": {
+        "private": false,
+        "default": false,
+        "custom": true,
+        "fallback": false
+      }
+    },
+    "after": {
+      "guest": {
+        "private": false,
+        "default": false,
+        "custom": true,
+        "fallback": false
+      },
+      "member": {
+        "private": false,
+        "default": false,
+        "custom": true,
+        "fallback": false
+      },
+      "customer": {
+        "private": false,
+        "default": false,
+        "custom": true,
+        "fallback": false
+      },
+      "admin": {
+        "private": false,
+        "default": false,
+        "custom": true,
+        "fallback": false
+      }
+    },
+    "pass": true
+  },
+  {
+    "state": "legacy_any_pass_absent",
+    "before": {
+      "guest": {
+        "private": false,
+        "default": false,
+        "custom": true,
+        "fallback": false
+      },
+      "member": {
+        "private": true,
+        "default": false,
+        "custom": false,
+        "fallback": false
+      },
+      "customer": {
+        "private": false,
+        "default": false,
+        "custom": true,
+        "fallback": false
+      },
+      "admin": {
+        "private": false,
+        "default": false,
+        "custom": true,
+        "fallback": false
+      }
+    },
+    "after": {
+      "guest": {
+        "private": false,
+        "default": false,
+        "custom": true,
+        "fallback": false
+      },
+      "member": {
+        "private": true,
+        "default": false,
+        "custom": false,
+        "fallback": false
+      },
+      "customer": {
+        "private": false,
+        "default": false,
+        "custom": true,
+        "fallback": false
+      },
+      "admin": {
+        "private": false,
+        "default": false,
+        "custom": true,
+        "fallback": false
+      }
+    },
+    "pass": true
+  },
+  {
+    "state": "legacy_any_fail_explicit_off",
+    "before": {
+      "guest": {
+        "private": false,
+        "default": false,
+        "custom": true,
+        "fallback": false
+      },
+      "member": {
+        "private": false,
+        "default": false,
+        "custom": true,
+        "fallback": false
+      },
+      "customer": {
+        "private": false,
+        "default": false,
+        "custom": true,
+        "fallback": false
+      },
+      "admin": {
+        "private": false,
+        "default": false,
+        "custom": true,
+        "fallback": false
+      }
+    },
+    "after": {
+      "guest": {
+        "private": false,
+        "default": false,
+        "custom": true,
+        "fallback": false
+      },
+      "member": {
+        "private": false,
+        "default": false,
+        "custom": true,
+        "fallback": false
+      },
+      "customer": {
+        "private": false,
+        "default": false,
+        "custom": true,
+        "fallback": false
+      },
+      "admin": {
+        "private": false,
+        "default": false,
+        "custom": true,
+        "fallback": false
+      }
+    },
+    "pass": true
+  },
+  {
+    "state": "legacy_any_pass_explicit_off",
+    "before": {
+      "guest": {
+        "private": false,
+        "default": false,
+        "custom": true,
+        "fallback": false
+      },
+      "member": {
+        "private": true,
+        "default": false,
+        "custom": false,
+        "fallback": false
+      },
+      "customer": {
+        "private": false,
+        "default": false,
+        "custom": true,
+        "fallback": false
+      },
+      "admin": {
+        "private": false,
+        "default": false,
+        "custom": true,
+        "fallback": false
+      }
+    },
+    "after": {
+      "guest": {
+        "private": false,
+        "default": false,
+        "custom": true,
+        "fallback": false
+      },
+      "member": {
+        "private": true,
+        "default": false,
+        "custom": false,
+        "fallback": false
+      },
+      "customer": {
+        "private": false,
+        "default": false,
+        "custom": true,
+        "fallback": false
+      },
+      "admin": {
+        "private": false,
+        "default": false,
+        "custom": true,
+        "fallback": false
+      }
+    },
+    "pass": true
+  },
+  {
+    "state": "visibility_empty",
+    "before": {
+      "guest": {
+        "private": true,
+        "default": false,
+        "custom": false,
+        "fallback": false
+      },
+      "member": {
+        "private": false,
+        "default": false,
+        "custom": false,
+        "fallback": false
+      },
+      "customer": {
+        "private": false,
+        "default": false,
+        "custom": false,
+        "fallback": false
+      },
+      "admin": {
+        "private": false,
+        "default": false,
+        "custom": false,
+        "fallback": false
+      }
+    },
+    "after": {
+      "guest": {
+        "private": true,
+        "default": false,
+        "custom": false,
+        "fallback": false
+      },
+      "member": {
+        "private": false,
+        "default": false,
+        "custom": false,
+        "fallback": false
+      },
+      "customer": {
+        "private": false,
+        "default": false,
+        "custom": false,
+        "fallback": false
+      },
+      "admin": {
+        "private": false,
+        "default": false,
+        "custom": false,
+        "fallback": false
+      }
+    },
+    "pass": true
+  },
+  {
+    "state": "visibility_custom",
+    "before": {
+      "guest": {
+        "private": true,
+        "default": false,
+        "custom": false,
+        "fallback": false
+      },
+      "member": {
+        "private": false,
+        "default": false,
+        "custom": false,
+        "fallback": true
+      },
+      "customer": {
+        "private": false,
+        "default": false,
+        "custom": false,
+        "fallback": true
+      },
+      "admin": {
+        "private": false,
+        "default": false,
+        "custom": false,
+        "fallback": true
+      }
+    },
+    "after": {
+      "guest": {
+        "private": true,
+        "default": false,
+        "custom": false,
+        "fallback": false
+      },
+      "member": {
+        "private": false,
+        "default": false,
+        "custom": false,
+        "fallback": true
+      },
+      "customer": {
+        "private": false,
+        "default": false,
+        "custom": false,
+        "fallback": true
+      },
+      "admin": {
+        "private": false,
+        "default": false,
+        "custom": false,
+        "fallback": true
+      }
+    },
+    "pass": true
+  },
+  {
+    "state": "legacy_login_only",
+    "before": {
+      "guest": {
+        "private": false,
+        "default": false,
+        "custom": true,
+        "fallback": false
+      },
+      "member": {
+        "private": true,
+        "default": false,
+        "custom": false,
+        "fallback": false
+      },
+      "customer": {
+        "private": true,
+        "default": false,
+        "custom": false,
+        "fallback": false
+      },
+      "admin": {
+        "private": true,
+        "default": false,
+        "custom": false,
+        "fallback": false
+      }
+    },
+    "after": {
+      "guest": {
+        "private": false,
+        "default": false,
+        "custom": true,
+        "fallback": false
+      },
+      "member": {
+        "private": true,
+        "default": false,
+        "custom": false,
+        "fallback": false
+      },
+      "customer": {
+        "private": true,
+        "default": false,
+        "custom": false,
+        "fallback": false
+      },
+      "admin": {
+        "private": true,
+        "default": false,
+        "custom": false,
+        "fallback": false
+      }
+    },
+    "pass": true
+  },
+  {
+    "state": "imported_negative",
+    "before": {
+      "guest": {
+        "private": false,
+        "default": true,
+        "custom": false,
+        "fallback": false
+      },
+      "member": {
+        "private": false,
+        "default": true,
+        "custom": false,
+        "fallback": false
+      },
+      "customer": {
+        "private": false,
+        "default": true,
+        "custom": false,
+        "fallback": false
+      },
+      "admin": {
+        "private": false,
+        "default": true,
+        "custom": false,
+        "fallback": false
+      }
+    },
+    "after": {
+      "guest": {
+        "private": false,
+        "default": true,
+        "custom": false,
+        "fallback": false
+      },
+      "member": {
+        "private": false,
+        "default": true,
+        "custom": false,
+        "fallback": false
+      },
+      "customer": {
+        "private": false,
+        "default": true,
+        "custom": false,
+        "fallback": false
+      },
+      "admin": {
+        "private": false,
+        "default": true,
+        "custom": false,
+        "fallback": false
+      }
+    },
+    "pass": true
+  },
+  {
+    "state": "imported_prefix",
+    "before": {
+      "guest": {
+        "private": false,
+        "default": true,
+        "custom": false,
+        "fallback": false
+      },
+      "member": {
+        "private": false,
+        "default": true,
+        "custom": false,
+        "fallback": false
+      },
+      "customer": {
+        "private": false,
+        "default": true,
+        "custom": false,
+        "fallback": false
+      },
+      "admin": {
+        "private": false,
+        "default": true,
+        "custom": false,
+        "fallback": false
+      }
+    },
+    "after": {
+      "guest": {
+        "private": false,
+        "default": true,
+        "custom": false,
+        "fallback": false
+      },
+      "member": {
+        "private": false,
+        "default": true,
+        "custom": false,
+        "fallback": false
+      },
+      "customer": {
+        "private": false,
+        "default": true,
+        "custom": false,
+        "fallback": false
+      },
+      "admin": {
+        "private": false,
+        "default": true,
+        "custom": false,
+        "fallback": false
+      }
+    },
+    "pass": true
+  },
+  {
+    "state": "visibility_imported_nbsp",
+    "before": {
+      "guest": {
+        "private": true,
+        "default": false,
+        "custom": false,
+        "fallback": false
+      },
+      "member": {
+        "private": false,
+        "default": false,
+        "custom": false,
+        "fallback": true
+      },
+      "customer": {
+        "private": false,
+        "default": false,
+        "custom": false,
+        "fallback": true
+      },
+      "admin": {
+        "private": false,
+        "default": false,
+        "custom": false,
+        "fallback": true
+      }
+    },
+    "after": {
+      "guest": {
+        "private": true,
+        "default": false,
+        "custom": false,
+        "fallback": false
+      },
+      "member": {
+        "private": false,
+        "default": false,
+        "custom": false,
+        "fallback": true
+      },
+      "customer": {
+        "private": false,
+        "default": false,
+        "custom": false,
+        "fallback": true
+      },
+      "admin": {
+        "private": false,
+        "default": false,
+        "custom": false,
+        "fallback": true
+      }
+    },
+    "pass": true
+  },
+  {
+    "state": "nested_legacy_any_pass_absent",
+    "before": {
+      "guest": {
+        "private": false,
+        "default": false,
+        "custom": true,
+        "fallback": false
+      },
+      "member": {
+        "private": true,
+        "default": false,
+        "custom": false,
+        "fallback": false
+      },
+      "customer": {
+        "private": false,
+        "default": false,
+        "custom": true,
+        "fallback": false
+      },
+      "admin": {
+        "private": false,
+        "default": false,
+        "custom": true,
+        "fallback": false
+      }
+    },
+    "after": {
+      "guest": {
+        "private": false,
+        "default": false,
+        "custom": true,
+        "fallback": false
+      },
+      "member": {
+        "private": true,
+        "default": false,
+        "custom": false,
+        "fallback": false
+      },
+      "customer": {
+        "private": false,
+        "default": false,
+        "custom": true,
+        "fallback": false
+      },
+      "admin": {
+        "private": false,
+        "default": false,
+        "custom": true,
+        "fallback": false
+      }
+    },
+    "pass": true
+  },
+  {
+    "state": "visibility_imported_overflow",
+    "before": {
+      "guest": {
+        "private": true,
+        "default": false,
+        "custom": false,
+        "fallback": false
+      },
+      "member": {
+        "private": false,
+        "default": false,
+        "custom": false,
+        "fallback": true
+      },
+      "customer": {
+        "private": false,
+        "default": false,
+        "custom": false,
+        "fallback": true
+      },
+      "admin": {
+        "private": false,
+        "default": false,
+        "custom": false,
+        "fallback": true
+      }
+    },
+    "after": {
+      "guest": {
+        "private": true,
+        "default": false,
+        "custom": false,
+        "fallback": false
+      },
+      "member": {
+        "private": false,
+        "default": false,
+        "custom": false,
+        "fallback": true
+      },
+      "customer": {
+        "private": false,
+        "default": false,
+        "custom": false,
+        "fallback": true
+      },
+      "admin": {
+        "private": false,
+        "default": false,
+        "custom": false,
+        "fallback": true
+      }
+    },
+    "pass": true
+  }
+]

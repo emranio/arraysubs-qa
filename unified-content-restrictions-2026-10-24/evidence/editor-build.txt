@@ -1,0 +1,45 @@
+
+> arraysubs@2.1.0 build
+> NODE_ENV=production wp-scripts build --config /tmp/arraysubs-unified-editor-webpack-20261024.cjs
+
+Browserslist: browsers data (caniuse-lite) is 8 months old. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+[dotenv@17.3.1] injecting env (5) from .env -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit
+assets by status 24.2 KiB [compared for emit]
+  assets by path admin/ 16.1 KiB
+    assets by path admin/*.css 15.7 KiB 4 assets
+    assets by status 414 bytes [emitted] 2 assets
+  assets by path gutenberg/ 4.75 KiB
+    asset gutenberg/content-restricted-rtl.css 2.27 KiB [compared for emit] (name: gutenberg/content-restricted)
+    asset gutenberg/content-restricted.css 2.27 KiB [compared for emit] (name: gutenberg/content-restricted)
+    asset gutenberg/content-restricted.asset.php 212 bytes [emitted] [compared for emit] (name: gutenberg/content-restricted)
+  assets by path Features/GutenbergIntegration/block/ 3.36 KiB
+    asset Features/GutenbergIntegration/block/block.json 2.19 KiB [compared for emit] [from: src/Features/GutenbergIntegration/block/block.json] [copied]
+    asset Features/GutenbergIntegration/block/render.php 1.17 KiB [compared for emit] [from: src/Features/GutenbergIntegration/block/render.php] [copied]
+assets by path admin/*.js 166 KiB
+  asset admin/post-restriction-gutenberg.js 83.1 KiB [emitted] [minimized] (name: admin/post-restriction-gutenberg)
+  asset admin/post-restriction-classic.js 83 KiB [emitted] [minimized] (name: admin/post-restriction-classic)
+asset gutenberg/content-restricted.js 74.3 KiB [emitted] [minimized] (name: gutenberg/content-restricted)
+Entrypoint admin/post-restriction-gutenberg 91.1 KiB = admin/post-restriction-gutenberg.css 3.92 KiB admin/post-restriction-gutenberg.js 83.1 KiB admin/post-restriction-gutenberg-rtl.css 3.92 KiB admin/post-restriction-gutenberg.asset.php 234 bytes
+Entrypoint admin/post-restriction-classic 91 KiB = admin/post-restriction-classic.css 3.92 KiB admin/post-restriction-classic.js 83 KiB admin/post-restriction-classic-rtl.css 3.92 KiB admin/post-restriction-classic.asset.php 180 bytes
+Entrypoint gutenberg/content-restricted 79 KiB = gutenberg/content-restricted.css 2.27 KiB gutenberg/content-restricted.js 74.3 KiB gutenberg/content-restricted-rtl.css 2.27 KiB gutenberg/content-restricted.asset.php 212 bytes
+chunk (runtime: admin/post-restriction-gutenberg) admin/post-restriction-gutenberg.css, admin/post-restriction-gutenberg.js, admin/post-restriction-gutenberg-rtl.css, admin/post-restriction-gutenberg.asset.php (admin/post-restriction-gutenberg) 224 KiB (javascript) 3.91 KiB (css/mini-extract) 663 bytes (runtime) [entry] [rendered]
+chunk (runtime: gutenberg/content-restricted) gutenberg/content-restricted.css, gutenberg/content-restricted.js, gutenberg/content-restricted-rtl.css, gutenberg/content-restricted.asset.php (gutenberg/content-restricted) 212 KiB (javascript) 2.27 KiB (css/mini-extract) 663 bytes (runtime) [entry] [rendered]
+chunk (runtime: admin/post-restriction-classic) admin/post-restriction-classic.css, admin/post-restriction-classic.js, admin/post-restriction-classic-rtl.css, admin/post-restriction-classic.asset.php (admin/post-restriction-classic) 224 KiB (javascript) 3.91 KiB (css/mini-extract) 663 bytes (runtime) [entry] [rendered]
+orphan modules 237 KiB (javascript) 3.66 KiB (runtime) [orphan] 150 modules
+runtime modules 1.94 KiB 9 modules
+built modules 660 KiB (javascript) 4.6 KiB (css/mini-extract) [built]
+  modules by path ./src/Features/ 660 KiB (javascript) 3.02 KiB (css/mini-extract)
+    javascript modules 660 KiB
+      ./src/Features/MembersAccess/post-restriction/gutenberg.js + 118 modules 224 KiB [not cacheable] [built] [code generated]
+      ./src/Features/MembersAccess/post-restriction/classic.js + 114 modules 224 KiB [not cacheable] [built] [code generated]
+      ./src/Features/GutenbergIntegration/block/index.js + 116 modules 212 KiB [not cacheable] [built] [code generated]
+    cacheable modules 3.02 KiB
+      css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!./node_modules/@wordpress/scripts/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./src/Features/MembersAccess/post-restriction/style.scss 2.33 KiB [built] [code generated]
+      css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!./node_modules/@wordpress/scripts/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./src/Features/GutenbergIntegration/block/editor.scss 703 bytes [built] [code generated]
+  modules by path ./src/resources/components/ContentGate/ 1.58 KiB
+    css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!./node_modules/@wordpress/scripts/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./src/resources/components/ContentGate/access-rule-sections.scss 1.31 KiB [built] [code generated]
+    css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!./node_modules/@wordpress/scripts/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./src/resources/components/ContentGate/default-message-help.scss 277 bytes [built] [code generated]
+  
+2026-10-24 03:22:19: webpack 5.105.2 compiled successfully in 1014 ms (781eb7c0446375341bcc)

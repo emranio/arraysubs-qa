@@ -1,0 +1,167 @@
+{
+  "diff_check_passed": true,
+  "files": [
+    {
+      "file": "arraysubs/src/Developer/MemberAccess.php",
+      "lines": 123,
+      "syntax_passed": true
+    },
+    {
+      "file": "arraysubs/src/Features/ElementorIntegration/Controls/AjaxSelect.php",
+      "lines": 60,
+      "syntax_passed": true
+    },
+    {
+      "file": "arraysubs/src/Features/ElementorIntegration/Controls/LoginSwitcher.php",
+      "lines": 20,
+      "syntax_passed": true
+    },
+    {
+      "file": "arraysubs/src/Features/ElementorIntegration/Provider.php",
+      "lines": 36,
+      "syntax_passed": true
+    },
+    {
+      "file": "arraysubs/src/Features/ElementorIntegration/Services/ElementCache.php",
+      "lines": 70,
+      "syntax_passed": true
+    },
+    {
+      "file": "arraysubs/src/Features/ElementorIntegration/Services/Hooks.php",
+      "lines": 791,
+      "syntax_passed": true
+    },
+    {
+      "file": "arraysubs/src/Features/ElementorIntegration/assets/editor.css",
+      "lines": 38
+    },
+    {
+      "file": "arraysubs/src/Features/ElementorIntegration/assets/editor.js",
+      "lines": 241
+    },
+    {
+      "file": "arraysubs/src/Features/GutenbergIntegration/Services/Hooks.php",
+      "lines": 352,
+      "syntax_passed": true
+    },
+    {
+      "file": "arraysubs/src/Features/GutenbergIntegration/block/edit.js",
+      "lines": 70
+    },
+    {
+      "file": "arraysubs/src/Features/GutenbergIntegration/block/editor.scss",
+      "lines": 40
+    },
+    {
+      "file": "arraysubs/src/Features/GutenbergIntegration/block/index.js",
+      "lines": 18
+    },
+    {
+      "file": "arraysubs/src/Features/GutenbergIntegration/block/render.php",
+      "lines": 26,
+      "syntax_passed": true
+    },
+    {
+      "file": "arraysubs/src/Features/GutenbergIntegration/block/save.js",
+      "lines": 16
+    },
+    {
+      "file": "arraysubs/src/Features/MembersAccess/Services/CommentRestriction.php",
+      "lines": 1250,
+      "syntax_passed": true
+    },
+    {
+      "file": "arraysubs/src/Features/MembersAccess/Services/ContentGating.php",
+      "lines": 531,
+      "syntax_passed": true
+    },
+    {
+      "file": "arraysubs/src/Features/MembersAccess/Services/EcommerceRestriction.php",
+      "lines": 1480,
+      "syntax_passed": true
+    },
+    {
+      "file": "arraysubs/src/Features/MembersAccess/Services/Hooks.php",
+      "lines": 552,
+      "syntax_passed": true
+    },
+    {
+      "file": "arraysubs/src/Features/MembersAccess/Services/PostRestrictionConfig.php",
+      "lines": 389,
+      "syntax_passed": true
+    },
+    {
+      "file": "arraysubs/src/Features/MembersAccess/Services/PostRestrictionGate.php",
+      "lines": 109,
+      "syntax_passed": true
+    },
+    {
+      "file": "arraysubs/src/Features/MembersAccess/post-restriction/RestrictionFields.jsx",
+      "lines": 128
+    },
+    {
+      "file": "arraysubs/src/Features/MembersAccess/post-restriction/RestrictionPanel.jsx",
+      "lines": 115
+    },
+    {
+      "file": "arraysubs/src/Features/MembersAccess/post-restriction/classic.js",
+      "lines": 52
+    },
+    {
+      "file": "arraysubs/src/Features/MembersAccess/post-restriction/config.js",
+      "lines": 337
+    },
+    {
+      "file": "arraysubs/src/Features/MembersAccess/post-restriction/gutenberg.js",
+      "lines": 56
+    },
+    {
+      "file": "arraysubs/src/Features/MembersAccess/post-restriction/style.scss",
+      "lines": 140
+    },
+    {
+      "file": "arraysubs/src/resources/components/ContentGate/AccessRuleSections.jsx",
+      "lines": 226
+    },
+    {
+      "file": "arraysubs/src/resources/components/ContentGate/ContentGateGuide.jsx",
+      "lines": 282
+    },
+    {
+      "file": "arraysubs/src/resources/components/ContentGate/DefaultMessageHelp.jsx",
+      "lines": 70
+    },
+    {
+      "file": "arraysubs/src/resources/components/ContentGate/DefaultMessageSettings.jsx",
+      "lines": 143
+    },
+    {
+      "file": "arraysubs/src/resources/components/ContentGate/RestrictionMessageField.jsx",
+      "lines": 41
+    },
+    {
+      "file": "arraysubs/src/resources/components/ContentGate/RuleMessageField.jsx",
+      "lines": 52
+    },
+    {
+      "file": "arraysubs/src/resources/components/ContentGate/access-rule-sections.scss",
+      "lines": 65
+    },
+    {
+      "file": "arraysubs/src/resources/components/ContentGate/accessConditions.js",
+      "lines": 13
+    },
+    {
+      "file": "arraysubs/src/resources/components/ContentGate/contentGateGuideData.js",
+      "lines": 446
+    },
+    {
+      "file": "arraysubs/src/resources/components/ContentGate/default-message-help.scss",
+      "lines": 16
+    },
+    {
+      "file": "arraysubs/src/resources/components/ContentGate/rule-message-field.scss",
+      "lines": 14
+    }
+  ]
+}

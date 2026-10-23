@@ -1,0 +1,162 @@
+[
+  {
+    "passed": true,
+    "check": "ecommerce_rules: off hides editor"
+  },
+  {
+    "passed": true,
+    "check": "ecommerce_rules: on restores retained custom text"
+  },
+  {
+    "passed": true,
+    "check": "ecommerce_rules: formatting retained"
+  },
+  {
+    "passed": true,
+    "check": "ecommerce_rules: clicking off hides editor"
+  },
+  {
+    "passed": true,
+    "check": "ecommerce_rules: off/on preserves text"
+  },
+  {
+    "passed": true,
+    "check": "ecommerce_rules: save/reload preserves enabled flag and HTML"
+  },
+  {
+    "passed": true,
+    "check": "ecommerce_rules: Discard restores saved switch"
+  },
+  {
+    "passed": true,
+    "check": "ecommerce_rules: save/reload preserves disabled flag"
+  },
+  {
+    "passed": true,
+    "check": "url_rules: off hides editor"
+  },
+  {
+    "passed": true,
+    "check": "url_rules: on restores retained custom text"
+  },
+  {
+    "passed": true,
+    "check": "url_rules: formatting retained"
+  },
+  {
+    "passed": true,
+    "check": "url_rules: clicking off hides editor"
+  },
+  {
+    "passed": true,
+    "check": "url_rules: off/on preserves text"
+  },
+  {
+    "passed": true,
+    "check": "url_rules: save/reload preserves enabled flag and HTML"
+  },
+  {
+    "passed": true,
+    "check": "url_rules: Discard restores saved switch"
+  },
+  {
+    "passed": true,
+    "check": "url_rules: save/reload preserves disabled flag"
+  },
+  {
+    "passed": true,
+    "check": "cpt_rules: off hides editor"
+  },
+  {
+    "passed": true,
+    "check": "cpt_rules: on restores retained custom text"
+  },
+  {
+    "passed": true,
+    "check": "cpt_rules: formatting retained"
+  },
+  {
+    "passed": true,
+    "check": "cpt_rules: clicking off hides editor"
+  },
+  {
+    "passed": true,
+    "check": "cpt_rules: off/on preserves text"
+  },
+  {
+    "passed": true,
+    "check": "cpt_rules: save/reload preserves enabled flag and HTML"
+  },
+  {
+    "passed": true,
+    "check": "cpt_rules: Discard restores saved switch"
+  },
+  {
+    "passed": true,
+    "check": "cpt_rules: save/reload preserves disabled flag"
+  },
+  {
+    "passed": true,
+    "check": "comment_rules: off hides editor"
+  },
+  {
+    "passed": true,
+    "check": "comment_rules: on restores retained custom text"
+  },
+  {
+    "passed": true,
+    "check": "comment_rules: formatting retained"
+  },
+  {
+    "passed": true,
+    "check": "comment_rules: clicking off hides editor"
+  },
+  {
+    "passed": true,
+    "check": "comment_rules: off/on preserves text"
+  },
+  {
+    "passed": true,
+    "check": "comment_rules: save/reload preserves enabled flag and HTML"
+  },
+  {
+    "passed": true,
+    "check": "comment_rules: Discard restores saved switch"
+  },
+  {
+    "passed": true,
+    "check": "comment_rules: save/reload preserves disabled flag"
+  },
+  {
+    "passed": true,
+    "check": "purchase_limit_rules: off hides editor"
+  },
+  {
+    "passed": true,
+    "check": "purchase_limit_rules: on restores retained custom text"
+  },
+  {
+    "passed": true,
+    "check": "purchase_limit_rules: formatting retained"
+  },
+  {
+    "passed": true,
+    "check": "purchase_limit_rules: clicking off hides editor"
+  },
+  {
+    "passed": true,
+    "check": "purchase_limit_rules: off/on preserves text"
+  },
+  {
+    "passed": true,
+    "check": "purchase_limit_rules: save/reload preserves enabled flag and HTML"
+  },
+  {
+    "passed": true,
+    "check": "purchase_limit_rules: Discard restores saved switch"
+  },
+  {
+    "passed": true,
+    "check": "purchase_limit_rules: save/reload preserves disabled flag"
+  }
+]

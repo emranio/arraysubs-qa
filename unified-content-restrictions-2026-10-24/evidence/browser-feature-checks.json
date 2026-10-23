@@ -1,0 +1,74 @@
+[
+  {
+    "passed": true,
+    "check": "post/guest/feature_pass: real Team Seats feature boundary"
+  },
+  {
+    "passed": true,
+    "check": "gutenberg/guest/feature_pass: real Team Seats feature boundary"
+  },
+  {
+    "passed": true,
+    "check": "elementor/guest/feature_pass: real Team Seats feature boundary"
+  },
+  {
+    "passed": true,
+    "check": "post/customer/feature_pass: real Team Seats feature boundary"
+  },
+  {
+    "passed": true,
+    "check": "gutenberg/customer/feature_pass: real Team Seats feature boundary"
+  },
+  {
+    "passed": true,
+    "check": "elementor/customer/feature_pass: real Team Seats feature boundary"
+  },
+  {
+    "passed": true,
+    "check": "post/member/feature_pass: real Team Seats feature boundary"
+  },
+  {
+    "passed": true,
+    "check": "gutenberg/member/feature_pass: real Team Seats feature boundary"
+  },
+  {
+    "passed": true,
+    "check": "elementor/member/feature_pass: real Team Seats feature boundary"
+  },
+  {
+    "passed": true,
+    "check": "post/guest/feature_fail: real Team Seats feature boundary"
+  },
+  {
+    "passed": true,
+    "check": "gutenberg/guest/feature_fail: real Team Seats feature boundary"
+  },
+  {
+    "passed": true,
+    "check": "elementor/guest/feature_fail: real Team Seats feature boundary"
+  },
+  {
+    "passed": true,
+    "check": "post/customer/feature_fail: real Team Seats feature boundary"
+  },
+  {
+    "passed": true,
+    "check": "gutenberg/customer/feature_fail: real Team Seats feature boundary"
+  },
+  {
+    "passed": true,
+    "check": "elementor/customer/feature_fail: real Team Seats feature boundary"
+  },
+  {
+    "passed": true,
+    "check": "post/member/feature_fail: real Team Seats feature boundary"
+  },
+  {
+    "passed": true,
+    "check": "gutenberg/member/feature_fail: real Team Seats feature boundary"
+  },
+  {
+    "passed": true,
+    "check": "elementor/member/feature_fail: real Team Seats feature boundary"
+  }
+]

@@ -1,0 +1,91 @@
+- generic
+  - StaticText "These settings keep their original access behavior. Saving this content or editing its message does not convert the access rules."
+  - dialog "Access Restriction"
+    - document
+      - generic
+        - heading "Access Restriction" [level=1, ref=e3]
+        - button "Close" [ref=e4]
+      - generic
+        - checkbox "Restrict access to this content" [checked=true, ref=e5]
+        - paragraph
+          - StaticText "When off, the settings below are ignored and Members Access rules apply."
+        - StaticText "Information notice"
+        - StaticText "This restriction has the highest priority for this content. While active, it overrides Shop Access, URL, Post Types, and Comments rules, including their denied actions and archive behavior. URL and Post Types overlaps are listed under Audits → Access-Rule Conflicts."
+        - generic
+          - heading "Previous access rules" [level=3, ref=e6]
+          - StaticText "Information notice"
+          - StaticText "These settings keep their original access behavior. Saving this content or editing its message does not convert the access rules."
+          - paragraph
+            - StaticText "Logged-in users only. Other saved conditions are ignored by the original login-only rule."
+          - button "Review current access rules" [ref=e7]
+        - generic
+          - heading "Always Show To Admins" [level=3, ref=e8]
+          - checkbox "Always Show To Admins" [checked=false, ref=e9]
+          - paragraph
+            - StaticText "Administrators can access this content without meeting any other condition."
+        - generic
+          - heading "How denied access is handled" [level=3, ref=e10]
+          - generic [ref=e11] clickable [cursor:pointer]
+            - LabelText
+              - StaticText "WHAT SHOULD HAPPEN"
+            - generic
+              - combobox "WHAT SHOULD HAPPEN" [expanded=false, ref=e14]: Show a message instead of the content
+                - MenuListPopup
+                  - option "Show a message instead of the content" [selected, ref=e16]
+                  - option "Redirect to another page" [ref=e17]
+          - paragraph
+            - StaticText "The visitor stays on this page and the content is replaced with a message."
+          - checkbox "Use custom message" [checked=true, ref=e12]
+          - paragraph
+            - StaticText "When off, the default message is shown."
+          - paragraph
+            - StaticText "Leave empty to use the default message from "
+            - link "ArraySubs → Settings → Content Gate (opens in a new tab)" [ref=e13]
+              - StaticText "ArraySubs → Settings → Content Gate"
+              - StaticText "(opens in a new tab)"
+            - StaticText "."
+          - LabelText
+            - StaticText "Custom message"
+          - application
+            - generic
+              - group
+                - toolbar
+                  - generic
+                    - group
+                      - generic
+                        - button "Bold" [ref=e20]
+                          - button [ref=e27]
+                        - button "Italic" [ref=e21]
+                          - button [ref=e28]
+                    - group
+                      - generic
+                        - button "Bulleted list" [ref=e22]
+                          - button [ref=e29]
+                        - button "Numbered list" [ref=e23]
+                          - button [ref=e30]
+                    - group
+                      - generic
+                        - button "Insert/edit link" [ref=e24]
+                          - button [ref=e31]
+                        - button "Remove link" [ref=e25]
+                          - button [ref=e32]
+                    - group
+                      - button "Clear formatting" [ref=e26]
+                        - button [ref=e33]
+              - group
+                - Iframe "Rich Text Area. Press Alt-Shift-H for help." [ref=e15]
+                  - paragraph
+                    - StaticText "QA LEGACY CUSTOM "
+                    - strong
+                      - StaticText "saved message"
+              - group
+                - generic
+                  - generic [ref=e18] clickable [cursor:pointer]
+                  - StaticText ""
+                  - generic
+                    - StaticText " POWERED BY "
+                    - link "TINY" [ref=e19]
+          - paragraph
+            - StaticText "Shown when access is denied. Leave empty to use the default message."
+      - button "Cancel" [ref=e1]
+      - button "Apply" [ref=e2]

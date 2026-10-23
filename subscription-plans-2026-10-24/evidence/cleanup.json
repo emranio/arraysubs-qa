@@ -1,0 +1,25 @@
+{
+    "deleted_fixture_ids": [
+        20068,
+        20070,
+        20066,
+        20072,
+        20074,
+        20077,
+        20064,
+        20179
+    ],
+    "remaining_cycle_products": [],
+    "plan_count": "35",
+    "pro_active": true,
+    "module_states": {
+        "audits": true,
+        "cancellation_flow": true,
+        "checkout_builder": true,
+        "feature_manager": true,
+        "profile_builder": true,
+        "store_credit": true,
+        "subscription_box": true,
+        "subscription_bundle": true
+    }
+}

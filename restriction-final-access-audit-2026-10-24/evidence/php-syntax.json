@@ -1,0 +1,47 @@
+[
+  {
+    "file": "src/Features/MembersAccess/Services/PostRestrictionConfig.php",
+    "passed": true,
+    "output": "No syntax errors detected in /Users/emran/Local Sites/wp-test2/app/public/wp-content/plugins/arraysubs/src/Features/MembersAccess/Services/PostRestrictionConfig.php"
+  },
+  {
+    "file": "src/Features/MembersAccess/Services/PostRestrictionGate.php",
+    "passed": true,
+    "output": "No syntax errors detected in /Users/emran/Local Sites/wp-test2/app/public/wp-content/plugins/arraysubs/src/Features/MembersAccess/Services/PostRestrictionGate.php"
+  },
+  {
+    "file": "src/Features/MembersAccess/Services/ConditionEvaluator.php",
+    "passed": true,
+    "output": "No syntax errors detected in /Users/emran/Local Sites/wp-test2/app/public/wp-content/plugins/arraysubs/src/Features/MembersAccess/Services/ConditionEvaluator.php"
+  },
+  {
+    "file": "src/Features/GutenbergIntegration/Services/Hooks.php",
+    "passed": true,
+    "output": "No syntax errors detected in /Users/emran/Local Sites/wp-test2/app/public/wp-content/plugins/arraysubs/src/Features/GutenbergIntegration/Services/Hooks.php"
+  },
+  {
+    "file": "src/Features/GutenbergIntegration/Services/LegacyAttributes.php",
+    "passed": true,
+    "output": "No syntax errors detected in /Users/emran/Local Sites/wp-test2/app/public/wp-content/plugins/arraysubs/src/Features/GutenbergIntegration/Services/LegacyAttributes.php"
+  },
+  {
+    "file": "src/Features/GutenbergIntegration/Services/EditorContentCompatibility.php",
+    "passed": true,
+    "output": "No syntax errors detected in /Users/emran/Local Sites/wp-test2/app/public/wp-content/plugins/arraysubs/src/Features/GutenbergIntegration/Services/EditorContentCompatibility.php"
+  },
+  {
+    "file": "src/Features/GutenbergIntegration/Services/EditorBlockParser.php",
+    "passed": true,
+    "output": "No syntax errors detected in /Users/emran/Local Sites/wp-test2/app/public/wp-content/plugins/arraysubs/src/Features/GutenbergIntegration/Services/EditorBlockParser.php"
+  },
+  {
+    "file": "src/Features/ElementorIntegration/Services/Hooks.php",
+    "passed": true,
+    "output": "No syntax errors detected in /Users/emran/Local Sites/wp-test2/app/public/wp-content/plugins/arraysubs/src/Features/ElementorIntegration/Services/Hooks.php"
+  },
+  {
+    "file": "src/Features/ElementorIntegration/Services/RestrictionSettings.php",
+    "passed": true,
+    "output": "No syntax errors detected in /Users/emran/Local Sites/wp-test2/app/public/wp-content/plugins/arraysubs/src/Features/ElementorIntegration/Services/RestrictionSettings.php"
+  }
+]

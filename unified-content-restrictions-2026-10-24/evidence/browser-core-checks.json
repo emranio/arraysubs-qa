@@ -1,0 +1,578 @@
+[
+  {
+    "passed": true,
+    "check": "post/guest/login_only: expected denial message"
+  },
+  {
+    "passed": true,
+    "check": "post/guest/login_only: protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "gutenberg/guest/login_only: expected denial message"
+  },
+  {
+    "passed": true,
+    "check": "gutenberg/guest/login_only: protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "elementor/guest/login_only: expected denial message"
+  },
+  {
+    "passed": true,
+    "check": "elementor/guest/login_only: protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "post/customer/login_only: expected protected content"
+  },
+  {
+    "passed": true,
+    "check": "post/customer/login_only: protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "gutenberg/customer/login_only: expected protected content"
+  },
+  {
+    "passed": true,
+    "check": "gutenberg/customer/login_only: protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "elementor/customer/login_only: expected protected content"
+  },
+  {
+    "passed": true,
+    "check": "elementor/customer/login_only: protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "post/member/login_only: expected protected content"
+  },
+  {
+    "passed": true,
+    "check": "post/member/login_only: protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "gutenberg/member/login_only: expected protected content"
+  },
+  {
+    "passed": true,
+    "check": "gutenberg/member/login_only: protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "elementor/member/login_only: expected protected content"
+  },
+  {
+    "passed": true,
+    "check": "elementor/member/login_only: protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "post/admin/login_only: expected protected content"
+  },
+  {
+    "passed": true,
+    "check": "post/admin/login_only: protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "gutenberg/admin/login_only: expected protected content"
+  },
+  {
+    "passed": true,
+    "check": "gutenberg/admin/login_only: protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "elementor/admin/login_only: expected protected content"
+  },
+  {
+    "passed": true,
+    "check": "elementor/admin/login_only: protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "post/guest/any_fail: expected denial message"
+  },
+  {
+    "passed": true,
+    "check": "post/guest/any_fail: protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "gutenberg/guest/any_fail: expected denial message"
+  },
+  {
+    "passed": true,
+    "check": "gutenberg/guest/any_fail: protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "elementor/guest/any_fail: expected denial message"
+  },
+  {
+    "passed": true,
+    "check": "elementor/guest/any_fail: protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "post/customer/any_fail: expected denial message"
+  },
+  {
+    "passed": true,
+    "check": "post/customer/any_fail: protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "gutenberg/customer/any_fail: expected denial message"
+  },
+  {
+    "passed": true,
+    "check": "gutenberg/customer/any_fail: protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "elementor/customer/any_fail: expected denial message"
+  },
+  {
+    "passed": true,
+    "check": "elementor/customer/any_fail: protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "post/member/any_fail: expected denial message"
+  },
+  {
+    "passed": true,
+    "check": "post/member/any_fail: protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "gutenberg/member/any_fail: expected denial message"
+  },
+  {
+    "passed": true,
+    "check": "gutenberg/member/any_fail: protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "elementor/member/any_fail: expected denial message"
+  },
+  {
+    "passed": true,
+    "check": "elementor/member/any_fail: protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "post/admin/any_fail: expected denial message"
+  },
+  {
+    "passed": true,
+    "check": "post/admin/any_fail: protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "gutenberg/admin/any_fail: expected denial message"
+  },
+  {
+    "passed": true,
+    "check": "gutenberg/admin/any_fail: protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "elementor/admin/any_fail: expected denial message"
+  },
+  {
+    "passed": true,
+    "check": "elementor/admin/any_fail: protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "post/guest/any_pass: expected denial message"
+  },
+  {
+    "passed": true,
+    "check": "post/guest/any_pass: protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "gutenberg/guest/any_pass: expected denial message"
+  },
+  {
+    "passed": true,
+    "check": "gutenberg/guest/any_pass: protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "elementor/guest/any_pass: expected denial message"
+  },
+  {
+    "passed": true,
+    "check": "elementor/guest/any_pass: protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "post/customer/any_pass: expected denial message"
+  },
+  {
+    "passed": true,
+    "check": "post/customer/any_pass: protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "gutenberg/customer/any_pass: expected denial message"
+  },
+  {
+    "passed": true,
+    "check": "gutenberg/customer/any_pass: protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "elementor/customer/any_pass: expected denial message"
+  },
+  {
+    "passed": true,
+    "check": "elementor/customer/any_pass: protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "post/member/any_pass: expected protected content"
+  },
+  {
+    "passed": true,
+    "check": "post/member/any_pass: protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "gutenberg/member/any_pass: expected protected content"
+  },
+  {
+    "passed": true,
+    "check": "gutenberg/member/any_pass: protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "elementor/member/any_pass: expected protected content"
+  },
+  {
+    "passed": true,
+    "check": "elementor/member/any_pass: protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "post/admin/any_pass: expected denial message"
+  },
+  {
+    "passed": true,
+    "check": "post/admin/any_pass: protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "gutenberg/admin/any_pass: expected denial message"
+  },
+  {
+    "passed": true,
+    "check": "gutenberg/admin/any_pass: protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "elementor/admin/any_pass: expected denial message"
+  },
+  {
+    "passed": true,
+    "check": "elementor/admin/any_pass: protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "post/guest/admin_bypass: expected denial message"
+  },
+  {
+    "passed": true,
+    "check": "post/guest/admin_bypass: protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "gutenberg/guest/admin_bypass: expected denial message"
+  },
+  {
+    "passed": true,
+    "check": "gutenberg/guest/admin_bypass: protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "elementor/guest/admin_bypass: expected denial message"
+  },
+  {
+    "passed": true,
+    "check": "elementor/guest/admin_bypass: protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "post/customer/admin_bypass: expected denial message"
+  },
+  {
+    "passed": true,
+    "check": "post/customer/admin_bypass: protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "gutenberg/customer/admin_bypass: expected denial message"
+  },
+  {
+    "passed": true,
+    "check": "gutenberg/customer/admin_bypass: protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "elementor/customer/admin_bypass: expected denial message"
+  },
+  {
+    "passed": true,
+    "check": "elementor/customer/admin_bypass: protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "post/member/admin_bypass: expected denial message"
+  },
+  {
+    "passed": true,
+    "check": "post/member/admin_bypass: protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "gutenberg/member/admin_bypass: expected denial message"
+  },
+  {
+    "passed": true,
+    "check": "gutenberg/member/admin_bypass: protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "elementor/member/admin_bypass: expected denial message"
+  },
+  {
+    "passed": true,
+    "check": "elementor/member/admin_bypass: protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "post/admin/admin_bypass: expected protected content"
+  },
+  {
+    "passed": true,
+    "check": "post/admin/admin_bypass: protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "gutenberg/admin/admin_bypass: expected protected content"
+  },
+  {
+    "passed": true,
+    "check": "gutenberg/admin/admin_bypass: protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "elementor/admin/admin_bypass: expected protected content"
+  },
+  {
+    "passed": true,
+    "check": "elementor/admin/admin_bypass: protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "post/guest/custom: expected denial message"
+  },
+  {
+    "passed": true,
+    "check": "post/guest/custom: protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "gutenberg/guest/custom: expected denial message"
+  },
+  {
+    "passed": true,
+    "check": "gutenberg/guest/custom: protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "elementor/guest/custom: expected denial message"
+  },
+  {
+    "passed": true,
+    "check": "elementor/guest/custom: protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "post/customer/custom: expected denial message"
+  },
+  {
+    "passed": true,
+    "check": "post/customer/custom: protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "gutenberg/customer/custom: expected denial message"
+  },
+  {
+    "passed": true,
+    "check": "gutenberg/customer/custom: protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "elementor/customer/custom: expected denial message"
+  },
+  {
+    "passed": true,
+    "check": "elementor/customer/custom: protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "post/member/custom: expected denial message"
+  },
+  {
+    "passed": true,
+    "check": "post/member/custom: protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "gutenberg/member/custom: expected denial message"
+  },
+  {
+    "passed": true,
+    "check": "gutenberg/member/custom: protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "elementor/member/custom: expected denial message"
+  },
+  {
+    "passed": true,
+    "check": "elementor/member/custom: protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "post/admin/custom: expected denial message"
+  },
+  {
+    "passed": true,
+    "check": "post/admin/custom: protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "gutenberg/admin/custom: expected denial message"
+  },
+  {
+    "passed": true,
+    "check": "gutenberg/admin/custom: protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "elementor/admin/custom: expected denial message"
+  },
+  {
+    "passed": true,
+    "check": "elementor/admin/custom: protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "post/guest/empty: expected denial message"
+  },
+  {
+    "passed": true,
+    "check": "post/guest/empty: protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "gutenberg/guest/empty: expected denial message"
+  },
+  {
+    "passed": true,
+    "check": "gutenberg/guest/empty: protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "elementor/guest/empty: expected denial message"
+  },
+  {
+    "passed": true,
+    "check": "elementor/guest/empty: protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "post/customer/empty: expected denial message"
+  },
+  {
+    "passed": true,
+    "check": "post/customer/empty: protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "gutenberg/customer/empty: expected denial message"
+  },
+  {
+    "passed": true,
+    "check": "gutenberg/customer/empty: protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "elementor/customer/empty: expected denial message"
+  },
+  {
+    "passed": true,
+    "check": "elementor/customer/empty: protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "post/member/empty: expected denial message"
+  },
+  {
+    "passed": true,
+    "check": "post/member/empty: protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "gutenberg/member/empty: expected denial message"
+  },
+  {
+    "passed": true,
+    "check": "gutenberg/member/empty: protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "elementor/member/empty: expected denial message"
+  },
+  {
+    "passed": true,
+    "check": "elementor/member/empty: protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "post/admin/empty: expected denial message"
+  },
+  {
+    "passed": true,
+    "check": "post/admin/empty: protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "gutenberg/admin/empty: expected denial message"
+  },
+  {
+    "passed": true,
+    "check": "gutenberg/admin/empty: protected content visibility"
+  },
+  {
+    "passed": true,
+    "check": "elementor/admin/empty: expected denial message"
+  },
+  {
+    "passed": true,
+    "check": "elementor/admin/empty: protected content visibility"
+  }
+]

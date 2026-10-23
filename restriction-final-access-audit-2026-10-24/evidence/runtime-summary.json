@@ -1,0 +1,30 @@
+{
+  "runtime-backend-pro.txt": {
+    "passed": 401,
+    "total": 401
+  },
+  "runtime-backend-core.txt": {
+    "passed": 401,
+    "total": 401
+  },
+  "legacy-regression-final-pro.txt": {
+    "passed": 589,
+    "total": 589
+  },
+  "legacy-regression-final-core.txt": {
+    "passed": 589,
+    "total": 589
+  },
+  "unified-regression-final-pro.txt": {
+    "passed": 332,
+    "total": 332
+  },
+  "unified-regression-final-core.txt": {
+    "passed": 332,
+    "total": 332
+  },
+  "elementor-native-runtime.txt": {
+    "checks": 433,
+    "failures": 0
+  }
+}

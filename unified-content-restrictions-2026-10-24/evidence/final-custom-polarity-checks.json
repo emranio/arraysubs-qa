@@ -1,0 +1,146 @@
+[
+  {
+    "passed": true,
+    "check": "core/any_fail/post: selected custom/default message"
+  },
+  {
+    "passed": true,
+    "check": "core/any_fail/post: protected content hidden"
+  },
+  {
+    "passed": true,
+    "check": "core/any_fail/gutenberg: selected custom/default message"
+  },
+  {
+    "passed": true,
+    "check": "core/any_fail/gutenberg: protected content hidden"
+  },
+  {
+    "passed": true,
+    "check": "core/any_fail/elementor: selected custom/default message"
+  },
+  {
+    "passed": true,
+    "check": "core/any_fail/elementor: protected content hidden"
+  },
+  {
+    "passed": true,
+    "check": "core/custom/post: selected custom/default message"
+  },
+  {
+    "passed": true,
+    "check": "core/custom/post: protected content hidden"
+  },
+  {
+    "passed": true,
+    "check": "core/custom/gutenberg: selected custom/default message"
+  },
+  {
+    "passed": true,
+    "check": "core/custom/gutenberg: protected content hidden"
+  },
+  {
+    "passed": true,
+    "check": "core/custom/elementor: selected custom/default message"
+  },
+  {
+    "passed": true,
+    "check": "core/custom/elementor: protected content hidden"
+  },
+  {
+    "passed": true,
+    "check": "core/empty/post: selected custom/default message"
+  },
+  {
+    "passed": true,
+    "check": "core/empty/post: protected content hidden"
+  },
+  {
+    "passed": true,
+    "check": "core/empty/gutenberg: selected custom/default message"
+  },
+  {
+    "passed": true,
+    "check": "core/empty/gutenberg: protected content hidden"
+  },
+  {
+    "passed": true,
+    "check": "core/empty/elementor: selected custom/default message"
+  },
+  {
+    "passed": true,
+    "check": "core/empty/elementor: protected content hidden"
+  },
+  {
+    "passed": true,
+    "check": "pro/any_fail/post: selected custom/default message"
+  },
+  {
+    "passed": true,
+    "check": "pro/any_fail/post: protected content hidden"
+  },
+  {
+    "passed": true,
+    "check": "pro/any_fail/gutenberg: selected custom/default message"
+  },
+  {
+    "passed": true,
+    "check": "pro/any_fail/gutenberg: protected content hidden"
+  },
+  {
+    "passed": true,
+    "check": "pro/any_fail/elementor: selected custom/default message"
+  },
+  {
+    "passed": true,
+    "check": "pro/any_fail/elementor: protected content hidden"
+  },
+  {
+    "passed": true,
+    "check": "pro/custom/post: selected custom/default message"
+  },
+  {
+    "passed": true,
+    "check": "pro/custom/post: protected content hidden"
+  },
+  {
+    "passed": true,
+    "check": "pro/custom/gutenberg: selected custom/default message"
+  },
+  {
+    "passed": true,
+    "check": "pro/custom/gutenberg: protected content hidden"
+  },
+  {
+    "passed": true,
+    "check": "pro/custom/elementor: selected custom/default message"
+  },
+  {
+    "passed": true,
+    "check": "pro/custom/elementor: protected content hidden"
+  },
+  {
+    "passed": true,
+    "check": "pro/empty/post: selected custom/default message"
+  },
+  {
+    "passed": true,
+    "check": "pro/empty/post: protected content hidden"
+  },
+  {
+    "passed": true,
+    "check": "pro/empty/gutenberg: selected custom/default message"
+  },
+  {
+    "passed": true,
+    "check": "pro/empty/gutenberg: protected content hidden"
+  },
+  {
+    "passed": true,
+    "check": "pro/empty/elementor: selected custom/default message"
+  },
+  {
+    "passed": true,
+    "check": "pro/empty/elementor: protected content hidden"
+  }
+]

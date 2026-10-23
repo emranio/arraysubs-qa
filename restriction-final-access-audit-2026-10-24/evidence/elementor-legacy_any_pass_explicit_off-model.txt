@@ -1,0 +1,1 @@
+"{\"version\":\"1\",\"initialized\":true,\"serialized\":{\"arraysubs_enable\":\"yes\",\"arraysubs_show_to_admins\":\"\",\"arraysubs_roles\":[\"demo_premium\"],\"arraysubs_products\":[2147483000],\"arraysubs_condition\":\"or\",\"arraysubs_message\":\"<p>QA FINAL ELEMENTOR AUDIT CUSTOM</p>\",\"arraysubs_mode\":\"restrict\",\"arraysubs_access_version\":\"1\"},\"dirty\":false}"

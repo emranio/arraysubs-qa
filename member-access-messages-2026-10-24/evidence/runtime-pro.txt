@@ -1,0 +1,288 @@
+Deprecated: Elementor\Modules\GlobalClasses\Atomic_Global_Styles::get_cache_root_key(): Implicitly marking parameter $key as nullable is deprecated, the explicit nullable type must be used instead in /Users/emran/Local Sites/wp-test2/app/public/wp-content/plugins/elementor/modules/global-classes/atomic-global-styles.php on line 410
+{
+    "passed": 69,
+    "total": 69,
+    "checks": [
+        {
+            "passed": true,
+            "check": "Shared default for disabled\/blank case 0"
+        },
+        {
+            "passed": true,
+            "check": "Shared default for disabled\/blank case 1"
+        },
+        {
+            "passed": true,
+            "check": "Shared default for disabled\/blank case 2"
+        },
+        {
+            "passed": true,
+            "check": "Shared default for disabled\/blank case 3"
+        },
+        {
+            "passed": true,
+            "check": "Shared default for disabled\/blank case 4"
+        },
+        {
+            "passed": true,
+            "check": "Shared default for disabled\/blank case 5"
+        },
+        {
+            "passed": true,
+            "check": "Enabled rich HTML and absolute link preserved"
+        },
+        {
+            "passed": true,
+            "check": "Custom output removes unsafe script markup"
+        },
+        {
+            "passed": true,
+            "check": "Disabled custom follows later global edits"
+        },
+        {
+            "passed": true,
+            "check": "Empty shared message uses built-in fallback"
+        },
+        {
+            "passed": true,
+            "check": "Purchase limits use shared default"
+        },
+        {
+            "passed": true,
+            "check": "Purchase limit placeholders rendered"
+        },
+        {
+            "passed": true,
+            "check": "Purchase limit product name escaped"
+        },
+        {
+            "passed": true,
+            "check": "url_rules: switch sanitized as boolean true"
+        },
+        {
+            "passed": true,
+            "check": "url_rules: switch retains HTML message true"
+        },
+        {
+            "passed": true,
+            "check": "url_rules: switch sanitized as boolean false"
+        },
+        {
+            "passed": true,
+            "check": "url_rules: switch retains HTML message false"
+        },
+        {
+            "passed": true,
+            "check": "url_rules: switch sanitized as boolean \"false\""
+        },
+        {
+            "passed": true,
+            "check": "url_rules: switch retains HTML message \"false\""
+        },
+        {
+            "passed": true,
+            "check": "url_rules: switch sanitized as boolean \"0\""
+        },
+        {
+            "passed": true,
+            "check": "url_rules: switch retains HTML message \"0\""
+        },
+        {
+            "passed": true,
+            "check": "url_rules: switch sanitized as boolean \"1\""
+        },
+        {
+            "passed": true,
+            "check": "url_rules: switch retains HTML message \"1\""
+        },
+        {
+            "passed": true,
+            "check": "cpt_rules: switch sanitized as boolean true"
+        },
+        {
+            "passed": true,
+            "check": "cpt_rules: switch retains HTML message true"
+        },
+        {
+            "passed": true,
+            "check": "cpt_rules: switch sanitized as boolean false"
+        },
+        {
+            "passed": true,
+            "check": "cpt_rules: switch retains HTML message false"
+        },
+        {
+            "passed": true,
+            "check": "cpt_rules: switch sanitized as boolean \"false\""
+        },
+        {
+            "passed": true,
+            "check": "cpt_rules: switch retains HTML message \"false\""
+        },
+        {
+            "passed": true,
+            "check": "cpt_rules: switch sanitized as boolean \"0\""
+        },
+        {
+            "passed": true,
+            "check": "cpt_rules: switch retains HTML message \"0\""
+        },
+        {
+            "passed": true,
+            "check": "cpt_rules: switch sanitized as boolean \"1\""
+        },
+        {
+            "passed": true,
+            "check": "cpt_rules: switch retains HTML message \"1\""
+        },
+        {
+            "passed": true,
+            "check": "ecommerce_rules: switch sanitized as boolean true"
+        },
+        {
+            "passed": true,
+            "check": "ecommerce_rules: switch retains HTML message true"
+        },
+        {
+            "passed": true,
+            "check": "ecommerce_rules: switch sanitized as boolean false"
+        },
+        {
+            "passed": true,
+            "check": "ecommerce_rules: switch retains HTML message false"
+        },
+        {
+            "passed": true,
+            "check": "ecommerce_rules: switch sanitized as boolean \"false\""
+        },
+        {
+            "passed": true,
+            "check": "ecommerce_rules: switch retains HTML message \"false\""
+        },
+        {
+            "passed": true,
+            "check": "ecommerce_rules: switch sanitized as boolean \"0\""
+        },
+        {
+            "passed": true,
+            "check": "ecommerce_rules: switch retains HTML message \"0\""
+        },
+        {
+            "passed": true,
+            "check": "ecommerce_rules: switch sanitized as boolean \"1\""
+        },
+        {
+            "passed": true,
+            "check": "ecommerce_rules: switch retains HTML message \"1\""
+        },
+        {
+            "passed": true,
+            "check": "comment_rules: switch sanitized as boolean true"
+        },
+        {
+            "passed": true,
+            "check": "comment_rules: switch retains HTML message true"
+        },
+        {
+            "passed": true,
+            "check": "comment_rules: switch sanitized as boolean false"
+        },
+        {
+            "passed": true,
+            "check": "comment_rules: switch retains HTML message false"
+        },
+        {
+            "passed": true,
+            "check": "comment_rules: switch sanitized as boolean \"false\""
+        },
+        {
+            "passed": true,
+            "check": "comment_rules: switch retains HTML message \"false\""
+        },
+        {
+            "passed": true,
+            "check": "comment_rules: switch sanitized as boolean \"0\""
+        },
+        {
+            "passed": true,
+            "check": "comment_rules: switch retains HTML message \"0\""
+        },
+        {
+            "passed": true,
+            "check": "comment_rules: switch sanitized as boolean \"1\""
+        },
+        {
+            "passed": true,
+            "check": "comment_rules: switch retains HTML message \"1\""
+        },
+        {
+            "passed": true,
+            "check": "purchase_limit_rules: switch sanitized as boolean true"
+        },
+        {
+            "passed": true,
+            "check": "purchase_limit_rules: switch retains HTML message true"
+        },
+        {
+            "passed": true,
+            "check": "purchase_limit_rules: switch sanitized as boolean false"
+        },
+        {
+            "passed": true,
+            "check": "purchase_limit_rules: switch retains HTML message false"
+        },
+        {
+            "passed": true,
+            "check": "purchase_limit_rules: switch sanitized as boolean \"false\""
+        },
+        {
+            "passed": true,
+            "check": "purchase_limit_rules: switch retains HTML message \"false\""
+        },
+        {
+            "passed": true,
+            "check": "purchase_limit_rules: switch sanitized as boolean \"0\""
+        },
+        {
+            "passed": true,
+            "check": "purchase_limit_rules: switch retains HTML message \"0\""
+        },
+        {
+            "passed": true,
+            "check": "purchase_limit_rules: switch sanitized as boolean \"1\""
+        },
+        {
+            "passed": true,
+            "check": "purchase_limit_rules: switch retains HTML message \"1\""
+        },
+        {
+            "passed": true,
+            "check": "Anonymous settings access denied"
+        },
+        {
+            "passed": true,
+            "check": "Anonymous settings write denied"
+        },
+        {
+            "passed": true,
+            "check": "Per-product settings still take precedence"
+        },
+        {
+            "passed": true,
+            "check": "Per-product adapter retains its custom message"
+        },
+        {
+            "passed": true,
+            "check": "Per-post comment adapter retains its custom message"
+        },
+        {
+            "passed": true,
+            "check": "Per-post content message unchanged"
+        }
+    ]
+}
+PHP: 2026-10-24 02:56:25 [notice X 0][/Users/emran/Local Sites/wp-test2/app/public/wp-content/plugins/elementor/modules/global-classes/atomic-global-styles.php::410] Elementor\Modules\GlobalClasses\Atomic_Global_Styles::get_cache_root_key(): Implicitly marking parameter $key as nullable is deprecated, the explicit nullable type must be used instead [array (
+  'trace' => '
+#0: Elementor\Core\Logger\Manager -> shutdown()
+',
+)]

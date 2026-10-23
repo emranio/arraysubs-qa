@@ -1,0 +1,13 @@
+PASS src/resources/libs/confirm-dialog/__tests__/retry.test.jsx
+  core confirmation
+    ✓ keeps repeated failures visible and closes on a successful retry (52 ms)
+    ✓ cancel closes after a failure and a new confirmation clears the old error (6 ms)
+  Pro confirmation
+    ✓ keeps repeated failures visible and closes on a successful retry (14 ms)
+    ✓ cancel closes after a failure and a new confirmation clears the old error (6 ms)
+
+Test Suites: 1 passed, 1 total
+Tests:       4 passed, 4 total
+Snapshots:   0 total
+Time:        0.774 s
+Ran all test suites.

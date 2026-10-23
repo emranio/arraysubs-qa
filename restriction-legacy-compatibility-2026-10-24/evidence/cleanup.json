@@ -1,0 +1,23 @@
+{
+  "fixtures": {
+    "pagesRemoved": true,
+    "customerRemoved": true,
+    "defaultRestored": true,
+    "visibilityRestored": true,
+    "pluginsRestored": true,
+    "privateBackupRemoved": true
+  },
+  "auth": {
+    "scopedTokensInvalid": true,
+    "tokensChecked": 3,
+    "privateTokenFileRemoved": true,
+    "privateStateRemoved": true
+  },
+  "rootBrowserSessionsClosed": true,
+  "finalReadback": {
+    "allSixFixturePagesRemoved": true,
+    "customerRemoved": true,
+    "coreLoaded": true,
+    "proLoaded": true
+  }
+}

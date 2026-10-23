@@ -1,0 +1,478 @@
+{
+    "mode": "core",
+    "date": "2026-10-24",
+    "timezone": "Asia/Dhaka",
+    "checks": [
+        {
+            "name": "Expected plugin mode is loaded",
+            "passed": true,
+            "evidence": {
+                "admin_id": 1,
+                "pro_loaded": false,
+                "rest_base": "http://localhost:10013/wp-json/"
+            }
+        },
+        {
+            "name": "Existing plan GET returns prefilled prices/billing/version",
+            "passed": true,
+            "evidence": {
+                "status": 200,
+                "values": {
+                    "_subscription_period": "month",
+                    "_subscription_interval": "1",
+                    "_subscription_length": "0",
+                    "_trial_length": "0",
+                    "_trial_period": "day",
+                    "_signup_fee": "2",
+                    "_enable_renewal_price": false,
+                    "_renewal_price": "",
+                    "_renewal_price_after": 1,
+                    "title": "Plans QA 2026-10-24 REST supplement core",
+                    "description": "<p>Preserve <strong>rich description</strong> and shortcode [qa_plan].</p>",
+                    "regular_price": "79.90",
+                    "sale_price": "59.90",
+                    "virtual": false
+                }
+            }
+        },
+        {
+            "name": "Dedicated private plan appears in subscription catalog",
+            "passed": true,
+            "evidence": {
+                "status": 200,
+                "ids": [
+                    20104
+                ]
+            }
+        },
+        {
+            "name": "Changed product type rejected",
+            "passed": true,
+            "evidence": {
+                "status": 400,
+                "error": "arraysubs_quick_product_invalid",
+                "unchanged": true
+            }
+        },
+        {
+            "name": "Invalid title shape rejected",
+            "passed": true,
+            "evidence": {
+                "status": 400,
+                "error": "arraysubs_quick_product_invalid",
+                "unchanged": true
+            }
+        },
+        {
+            "name": "Empty title rejected",
+            "passed": true,
+            "evidence": {
+                "status": 400,
+                "error": "arraysubs_quick_product_invalid",
+                "unchanged": true
+            }
+        },
+        {
+            "name": "Invalid description shape rejected",
+            "passed": true,
+            "evidence": {
+                "status": 400,
+                "error": "arraysubs_quick_product_invalid",
+                "unchanged": true
+            }
+        },
+        {
+            "name": "Zero price rejected",
+            "passed": true,
+            "evidence": {
+                "status": 400,
+                "error": "arraysubs_quick_product_invalid",
+                "unchanged": true
+            }
+        },
+        {
+            "name": "Negative sale rejected",
+            "passed": true,
+            "evidence": {
+                "status": 400,
+                "error": "arraysubs_quick_product_invalid",
+                "unchanged": true
+            }
+        },
+        {
+            "name": "Sale above regular price rejected",
+            "passed": true,
+            "evidence": {
+                "status": 400,
+                "error": "arraysubs_quick_product_invalid",
+                "unchanged": true
+            }
+        },
+        {
+            "name": "Invalid settings shape rejected",
+            "passed": true,
+            "evidence": {
+                "status": 400,
+                "error": "arraysubs_quick_product_invalid",
+                "unchanged": true
+            }
+        },
+        {
+            "name": "Nested billing value rejected",
+            "passed": true,
+            "evidence": {
+                "status": 400,
+                "error": "arraysubs_quick_product_invalid",
+                "unchanged": true
+            }
+        },
+        {
+            "name": "Out-of-range interval rejected",
+            "passed": true,
+            "evidence": {
+                "status": 400,
+                "error": "arraysubs_quick_product_invalid",
+                "unchanged": true
+            }
+        },
+        {
+            "name": "Invalid period rejected",
+            "passed": true,
+            "evidence": {
+                "status": 400,
+                "error": "arraysubs_quick_product_invalid",
+                "unchanged": true
+            }
+        },
+        {
+            "name": "Missing version rejected",
+            "passed": true,
+            "evidence": {
+                "status": 409,
+                "error": "arraysubs_plan_changed",
+                "unchanged": true
+            }
+        },
+        {
+            "name": "Malformed JSON rejected",
+            "passed": true,
+            "evidence": {
+                "status": 400,
+                "unchanged": true
+            }
+        },
+        {
+            "name": "Oversized JSON rejected",
+            "passed": true,
+            "evidence": {
+                "status": 400,
+                "unchanged": true
+            }
+        },
+        {
+            "name": "Valid billing update succeeds",
+            "passed": true,
+            "evidence": {
+                "status": 200
+            }
+        },
+        {
+            "name": "Scheduled sale and unrelated WooCommerce properties are preserved",
+            "passed": true,
+            "evidence": {
+                "differences": []
+            }
+        },
+        {
+            "name": "Stale version rejected without overwriting the new billing",
+            "passed": true,
+            "evidence": {
+                "status": 409,
+                "error": "arraysubs_plan_changed"
+            }
+        },
+        {
+            "name": "Nonplan GET denied",
+            "passed": true,
+            "evidence": {
+                "status": 404
+            }
+        },
+        {
+            "name": "Nonplan POST denied",
+            "passed": true,
+            "evidence": {
+                "status": 404
+            }
+        },
+        {
+            "name": "Missing plan GET denied",
+            "passed": true,
+            "evidence": {
+                "status": 404
+            }
+        },
+        {
+            "name": "Nonplan row action denied",
+            "passed": true,
+            "evidence": {
+                "status": 404
+            }
+        },
+        {
+            "name": "Unknown row action denied",
+            "passed": true,
+            "evidence": {
+                "status": 400
+            }
+        },
+        {
+            "name": "anonymous denied GET /plans",
+            "passed": true,
+            "evidence": {
+                "status": 401
+            }
+        },
+        {
+            "name": "anonymous denied GET /plans/counts",
+            "passed": true,
+            "evidence": {
+                "status": 401
+            }
+        },
+        {
+            "name": "anonymous denied GET /quick-products/options",
+            "passed": true,
+            "evidence": {
+                "status": 401
+            }
+        },
+        {
+            "name": "anonymous denied GET /quick-products/20104",
+            "passed": true,
+            "evidence": {
+                "status": 401
+            }
+        },
+        {
+            "name": "anonymous denied POST /quick-products/20104",
+            "passed": true,
+            "evidence": {
+                "status": 401
+            }
+        },
+        {
+            "name": "anonymous denied POST /plans/20104/actions",
+            "passed": true,
+            "evidence": {
+                "status": 401
+            }
+        },
+        {
+            "name": "customer denied GET /plans",
+            "passed": true,
+            "evidence": {
+                "status": 403
+            }
+        },
+        {
+            "name": "customer denied GET /plans/counts",
+            "passed": true,
+            "evidence": {
+                "status": 403
+            }
+        },
+        {
+            "name": "customer denied GET /quick-products/options",
+            "passed": true,
+            "evidence": {
+                "status": 403
+            }
+        },
+        {
+            "name": "customer denied GET /quick-products/20104",
+            "passed": true,
+            "evidence": {
+                "status": 403
+            }
+        },
+        {
+            "name": "customer denied POST /quick-products/20104",
+            "passed": true,
+            "evidence": {
+                "status": 403
+            }
+        },
+        {
+            "name": "customer denied POST /plans/20104/actions",
+            "passed": true,
+            "evidence": {
+                "status": 403
+            }
+        },
+        {
+            "name": "Editor without publish can read /plans",
+            "passed": true,
+            "evidence": {
+                "status": 200,
+                "can_publish": false
+            }
+        },
+        {
+            "name": "Editor without publish can read /quick-products/options",
+            "passed": true,
+            "evidence": {
+                "status": 200,
+                "can_publish": false
+            }
+        },
+        {
+            "name": "Editor without publish can read /quick-products/20104",
+            "passed": true,
+            "evidence": {
+                "status": 200,
+                "can_publish": false
+            }
+        },
+        {
+            "name": "Editor without publish can update existing billing",
+            "passed": true,
+            "evidence": {
+                "status": 200,
+                "can_publish": false
+            }
+        },
+        {
+            "name": "Editor without publish cannot create a product",
+            "passed": true,
+            "evidence": {
+                "status": 403
+            }
+        },
+        {
+            "name": "Core-only billing update succeeds and preserves unavailable Pro metadata",
+            "passed": true,
+            "evidence": {
+                "status": 200,
+                "before": {
+                    "_enable_renewal_price": "yes",
+                    "_renewal_price": "44",
+                    "_renewal_price_after": "2",
+                    "_arraysubs_shipping_type": "one-time",
+                    "_arraysubs_initial_shipping_override": "7.50",
+                    "_arraysubs_subscription_mode": "full_flexible",
+                    "_arraysubs_flexible_periods": [
+                        "month",
+                        "year"
+                    ],
+                    "_arraysubs_fixed_end_date_enabled": "yes",
+                    "_arraysubs_fixed_end_date": "12-31",
+                    "_arraysubs_flex_sync_enabled": "yes"
+                },
+                "after": {
+                    "_enable_renewal_price": "yes",
+                    "_renewal_price": "44",
+                    "_renewal_price_after": "2",
+                    "_arraysubs_shipping_type": "one-time",
+                    "_arraysubs_initial_shipping_override": "7.50",
+                    "_arraysubs_subscription_mode": "full_flexible",
+                    "_arraysubs_flexible_periods": [
+                        "month",
+                        "year"
+                    ],
+                    "_arraysubs_fixed_end_date_enabled": "yes",
+                    "_arraysubs_fixed_end_date": "12-31",
+                    "_arraysubs_flex_sync_enabled": "yes"
+                }
+            }
+        },
+        {
+            "name": "Lifetime normalizes interval/length/trial and saves",
+            "passed": true,
+            "evidence": {
+                "status": 200,
+                "meta": {
+                    "_subscription_period": "lifetime",
+                    "_subscription_interval": "1",
+                    "_subscription_length": "0",
+                    "_trial_length": "0",
+                    "_trial_period": "day",
+                    "_enable_renewal_price": "yes",
+                    "_arraysubs_fixed_end_date_enabled": "yes",
+                    "_arraysubs_flex_sync_enabled": "yes"
+                }
+            }
+        },
+        {
+            "name": "Plan can be moved to trash",
+            "passed": true,
+            "evidence": {
+                "status": 200
+            }
+        },
+        {
+            "name": "Trashed plan billing GET denied",
+            "passed": true,
+            "evidence": {
+                "status": 404
+            }
+        },
+        {
+            "name": "Trashed plan billing POST denied",
+            "passed": true,
+            "evidence": {
+                "status": 404
+            }
+        },
+        {
+            "name": "Trash restore succeeds",
+            "passed": true,
+            "evidence": {
+                "status": 200,
+                "restored_status": "private"
+            }
+        }
+    ],
+    "fixtures": {
+        "plan": 20104,
+        "nonplan": 20106,
+        "customer": {
+            "id": 445,
+            "login": "plans_qa_rest_customer_364621adda394bec914305f25438c384",
+            "role": "customer"
+        },
+        "editor": {
+            "id": 446,
+            "login": "plans_qa_rest_editor_364621adda394bec914305f25438c384",
+            "role": "subscriber with individual edit/manage caps; publish_products=false"
+        }
+    },
+    "cleanup": {
+        "products": {
+            "20104": true,
+            "20106": true
+        },
+        "users": {
+            "445": true,
+            "446": true
+        }
+    },
+    "environment": {
+        "admin_id": 1,
+        "pro_loaded": false,
+        "rest_base": "http://localhost:10013/wp-json/",
+        "capabilities": {
+            "pro_plugin_active": false,
+            "license_active": false,
+            "different_renewal_price": false,
+            "renewal_sync": false,
+            "flexible_subscription": false,
+            "fixed_period_membership": false,
+            "shipping": false,
+            "store_credit": false
+        }
+    },
+    "passed": 48,
+    "failed": 0,
+    "report_path": "/Users/emran/Local Sites/wp-test2/app/public/wp-content/plugins/qa/subscription-plans-2026-10-24/evidence/rest-data-core.json"
+}

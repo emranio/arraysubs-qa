@@ -1,0 +1,17 @@
+- heading "Access Restriction" [level=1, ref=e3]
+- button "Close" [ref=e4]
+- checkbox "Restrict access to this content" [checked=true, ref=e5]
+- heading "Previous access rules" [level=3, ref=e6]
+- button "Review current access rules" [ref=e7]
+- heading "Always Show To Admins" [level=3, ref=e8]
+- checkbox "Always Show To Admins" [checked=false, ref=e9]
+- heading "How denied access is handled" [level=3, ref=e10]
+- generic "What Should HappenShow a message instead of the contentRedirect to another page" [ref=e11] clickable [cursor:pointer]
+  - combobox "WHAT SHOULD HAPPEN" [expanded=false, ref=e15]: Show a message instead of the content
+    - option "Show a message instead of the content" [selected, ref=e16]
+    - option "Redirect to another page" [ref=e17]
+- checkbox "Use custom message" [checked=true, ref=e12]
+- link "ArraySubs → Settings → Content Gate (opens in a new tab)" [ref=e14]
+- textbox "Custom message" [ref=e13]: QA FINAL SECURITY DENIED
+- button "Cancel" [ref=e1]
+- button "Apply" [ref=e2]

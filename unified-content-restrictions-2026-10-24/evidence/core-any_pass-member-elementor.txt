@@ -1,0 +1,4 @@
+- generic
+  - heading "QA PROTECTED ELEMENTOR CONTENT" [level=2, ref=e1]
+  - StaticText "desktop"
+  - status

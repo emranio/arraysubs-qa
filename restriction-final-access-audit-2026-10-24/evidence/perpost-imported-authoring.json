@@ -1,0 +1,17 @@
+[
+  {
+    "case": "enabled-string",
+    "saved": true,
+    "audience_preserved": true
+  },
+  {
+    "case": "login-string",
+    "saved": true,
+    "audience_preserved": true
+  },
+  {
+    "case": "admin-null",
+    "saved": true,
+    "audience_preserved": true
+  }
+]

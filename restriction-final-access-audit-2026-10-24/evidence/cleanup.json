@@ -1,0 +1,17 @@
+{
+  "pagesRemoved": true,
+  "removedFixtures": {
+    "post": true,
+    "gutenberg": true,
+    "elementor": true,
+    "author_post": true,
+    "author_gutenberg": true,
+    "author_elementor": true,
+    "product": true
+  },
+  "customerRemoved": true,
+  "defaultRestored": true,
+  "visibilityRestored": true,
+  "pluginsRestored": true,
+  "privateBackupRemoved": true
+}

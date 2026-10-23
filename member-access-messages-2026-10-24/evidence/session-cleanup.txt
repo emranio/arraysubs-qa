@@ -1,0 +1,1 @@
+Revoked 3 temporary WordPress login tokens; existing user passwords and sessions preserved.

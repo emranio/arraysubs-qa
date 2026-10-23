@@ -1,0 +1,6 @@
+ecommerce_rules passed
+url_rules passed
+cpt_rules passed
+comment_rules passed
+purchase_limit_rules passed
+{"passed": 40, "total": 40}

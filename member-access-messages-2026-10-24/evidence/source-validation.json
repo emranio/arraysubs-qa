@@ -1,0 +1,73 @@
+{
+  "files": [
+    {
+      "file": "arraysubs/src/Features/MembersAccess/REST/RestrictionController.php",
+      "lines": 1501,
+      "syntax_ok": true
+    },
+    {
+      "file": "arraysubs/src/Features/MembersAccess/Services/CommentRestriction.php",
+      "lines": 1246,
+      "syntax_ok": true
+    },
+    {
+      "file": "arraysubs/src/Features/MembersAccess/Services/ContentGating.php",
+      "lines": 531,
+      "syntax_ok": true
+    },
+    {
+      "file": "arraysubs/src/Features/MembersAccess/Services/EcommerceRestriction.php",
+      "lines": 1480,
+      "syntax_ok": true
+    },
+    {
+      "file": "arraysubs/src/Features/MembersAccess/Services/Hooks.php",
+      "lines": 555,
+      "syntax_ok": true
+    },
+    {
+      "file": "arraysubs/src/Features/MembersAccess/Services/PurchaseLimit.php",
+      "lines": 1283,
+      "syntax_ok": true
+    },
+    {
+      "file": "arraysubs/src/Features/MembersAccess/Services/UrlRestrictor.php",
+      "lines": 165,
+      "syntax_ok": true
+    },
+    {
+      "file": "arraysubs/src/functions/restriction-helpers.php",
+      "lines": 566,
+      "syntax_ok": true
+    },
+    {
+      "file": "arraysubs/src/resources/pages/MembersAccess/CommentRulesTab.jsx",
+      "lines": 544
+    },
+    {
+      "file": "arraysubs/src/resources/pages/MembersAccess/CptRulesTab.jsx",
+      "lines": 508
+    },
+    {
+      "file": "arraysubs/src/resources/pages/MembersAccess/EcommerceRulesTab.jsx",
+      "lines": 474
+    },
+    {
+      "file": "arraysubs/src/resources/pages/MembersAccess/PurchaseLimitRulesTab.jsx",
+      "lines": 561
+    },
+    {
+      "file": "arraysubs/src/resources/pages/MembersAccess/UrlRulesTab.jsx",
+      "lines": 385
+    },
+    {
+      "file": "arraysubs/src/resources/components/ContentGate/RuleMessageField.jsx",
+      "lines": 52
+    },
+    {
+      "file": "arraysubs/src/resources/components/ContentGate/rule-message-field.scss",
+      "lines": 14
+    }
+  ],
+  "diff_check_ok": true
+}

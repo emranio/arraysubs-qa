@@ -1,0 +1,167 @@
+- generic
+  - link "Skip to content" [ref=e1]
+  - banner
+    - paragraph
+      - link "wp-test2" [ref=e9]
+    - navigation
+      - list
+        - list
+          - listitem [level=2]
+            - link "Cart" [ref=e26]
+          - listitem [level=2]
+            - link "Cart" [ref=e27]
+          - listitem [level=2]
+            - link "Checkout" [ref=e28]
+          - listitem [level=2]
+            - link "Checkout" [ref=e29]
+          - listitem [level=2]
+            - link "Checkout Page" [ref=e30]
+          - listitem [level=2]
+            - link "Default Redirect Page" [ref=e31]
+          - listitem [level=2]
+            - link "Demo · Account Checklist" [ref=e32]
+          - listitem [level=2]
+            - link "Demo · Content Gate Demo Hub" [ref=e33]
+          - listitem [level=2]
+            - link "Demo · Download Library" [ref=e34]
+          - listitem [level=2]
+            - link "Demo · Loyal Plus Member Resource" [ref=e35]
+          - listitem [level=2]
+            - link "Demo · Masterclass Feature Access" [ref=e36]
+          - listitem [level=2]
+            - link "Demo · Member Library" [ref=e37]
+          - listitem [level=2]
+            - link "Demo · Member or Workshop Buyer" [ref=e38]
+          - listitem [level=2]
+            - link "Demo · Member Role Resource" [ref=e39]
+          - listitem [level=2]
+            - link "Demo · Member Support" [ref=e40]
+          - listitem [level=2]
+            - link "Demo · Membership Plans" [ref=e41]
+          - listitem [level=2]
+            - link "Demo · Premium Masterclass" [ref=e42]
+          - listitem [level=2]
+            - link "Demo · Premium Upgrade Resource" [ref=e43]
+          - listitem [level=2]
+            - link "Demo · Private Member Dashboard" [ref=e44]
+          - listitem [level=2]
+            - link "Demo · Professional Workspace" [ref=e45]
+          - listitem [level=2]
+            - link "Demo · Public Preview with a Gated Lesson" [ref=e46]
+          - listitem [level=2]
+            - link "Demo · Purchased Workshop Replay" [ref=e47]
+          - listitem [level=2]
+            - link "Demo · Renewal Help" [ref=e48]
+          - listitem [level=2]
+            - link "Demo · Shortcode Access Examples" [ref=e49]
+          - listitem [level=2]
+            - link "Demo · Team Workspace" [ref=e50]
+          - listitem [level=2]
+            - link "Demo · VIP Loyalty Lounge" [ref=e51]
+          - listitem [level=2]
+            - link "Demo · Visitor Welcome" [ref=e52]
+          - listitem [level=2]
+            - link "Demo · Welcome and Getting Started" [ref=e53]
+          - listitem [level=2]
+            - link "Elementor #19967" [ref=e54]
+          - listitem [level=2]
+            - link "Elementor #399" [ref=e55]
+          - listitem [level=2]
+            - link "Lost Password" [ref=e56]
+          - listitem [level=2]
+            - link "Member Login" [ref=e57]
+          - listitem [level=2]
+            - link "Member LogOut" [ref=e58]
+          - listitem [level=2]
+            - link "Member TOS Page" [ref=e59]
+          - listitem [level=2]
+            - link "My Account" [ref=e60]
+          - listitem [level=2]
+            - link "My account" [ref=e61]
+          - listitem [level=2]
+            - link "Public Individual Page" [ref=e62]
+          - listitem [level=2]
+            - link "QA final access author_elementor 20261024" [ref=e63]
+          - listitem [level=2]
+            - link "QA final access author_gutenberg 20261024" [ref=e64]
+          - listitem [level=2]
+            - link "QA final access author_post saved 20261024QA final access author_post 20261024" [ref=e65]
+          - listitem [level=2]
+            - link "QA final access elementor 20261024" [ref=e66]
+          - listitem [level=2]
+            - link "QA final access gutenberg 20261024" [ref=e67]
+          - listitem [level=2]
+            - link "QA final access post 20261024" [ref=e68]
+          - listitem [level=2]
+            - link "Register" [ref=e69]
+          - listitem [level=2]
+            - link "Sample Page" [ref=e70]
+          - listitem [level=2]
+            - link "Sample Page" [ref=e71]
+          - listitem [level=2]
+            - link "Shop" [ref=e72]
+          - listitem [level=2]
+            - link "Subscription Plan" [ref=e73]
+          - listitem [level=2]
+            - link "Thank You Page" [ref=e74]
+          - listitem [level=2]
+            - link "today is Sunday" [ref=e75]
+    - link "My Account" [ref=e2]
+      - generic
+        - image
+    - button "Number of items in the cart: 0" [ref=e3]
+      - image
+  - main
+    - navigation "Breadcrumb" [ref=e4]
+      - link "Home" [ref=e10]
+      - StaticText "/QA final classic restriction 20261024"
+    - image "Awaiting product image"
+    - heading "QA final classic restriction 20261024" [level=1, ref=e5]
+    - generic
+      - StaticText "1.00$"
+    - paragraph
+      - StaticText "QA FINAL PROTECTED PRODUCT"
+    - generic
+      - LabelText
+        - StaticText "QA final classic restriction 20261024 quantity"
+      - spinbutton "Product quantity" [ref=e11]: 1
+        - StaticText "1"
+      - button "Purchase now" [ref=e12]
+    - tablist
+      - tab "Description" [selected, ref=e13]
+      - tab "Reviews (0)" [ref=e14]
+    - tabpanel "Description"
+      - heading "Description" [level=2, ref=e15]
+      - paragraph
+        - StaticText "QA FINAL PROTECTED PRODUCT"
+  - contentinfo
+    - heading "wp-test2" [level=2, ref=e6]
+      - link "wp-test2" [ref=e16]
+    - navigation " 2" [ref=e7]
+      - list
+        - listitem [level=1]
+          - link "Blog" [ref=e18]
+        - listitem [level=1]
+          - link "About" [ref=e19]
+        - listitem [level=1]
+          - link "FAQs" [ref=e20]
+        - listitem [level=1]
+          - link "Authors" [ref=e21]
+    - navigation " 3" [ref=e8]
+      - list
+        - listitem [level=1]
+          - link "Events" [ref=e22]
+        - listitem [level=1]
+          - link "Shop" [ref=e23]
+        - listitem [level=1]
+          - link "Patterns" [ref=e24]
+        - listitem [level=1]
+          - link "Themes" [ref=e25]
+    - paragraph
+      - StaticText "Twenty Twenty-Five"
+    - paragraph
+      - StaticText "Designed with "
+      - link "WordPress" [ref=e17]
+  - generic
+  - generic
+  - status

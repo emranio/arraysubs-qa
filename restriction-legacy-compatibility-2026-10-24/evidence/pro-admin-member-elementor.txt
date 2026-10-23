@@ -1,0 +1,7 @@
+- generic
+  - paragraph
+    - StaticText "QA LEGACY CUSTOM "
+    - strong
+      - StaticText "saved message"
+  - StaticText "desktop"
+  - status

@@ -1,0 +1,16 @@
+---
+id: 107
+title: Old Gutenberg raw attributes bypass their original schema and can expose protected blocks
+status: closed
+priority: critical
+created: 2026-10-24T03:59:13.247942+06:00
+updated: 2026-10-24T04:19:34.45253+06:00
+started: 2026-10-24T03:59:15.627892+06:00
+completed: 2026-10-24T04:19:34.45253+06:00
+class: standard
+---
+
+Active QA task: #2, scheduled 2026-10-24; plan: qa/restriction-final-access-audit-2026-10-24/plan.md. Subscription/order IDs: N/A. Affected fixture page:20191. Users: admin1, administrator; guest N/A; customer455 and member224 are scope counterexamples. URL: http://localhost:10013/qa-final-access-author_gutenberg-20261024/; isolated final-react admin and final-react-guest browser contexts. Reproduce A: seed old unversioned Restricted Content attrs roles demo_premium, product2147483000, condition or, showToAdmins false, custom message, loginRequired numeric2; visit as admin1. Expected: original WordPress HEAD block schema rejects numeric2 and supplies loginRequired false, so admin fails both optional conditions and sees denial. Actual: current raw compatibility passes numeric2 to REST boolean sanitization as true, creating the old login-only override and showing protected content. Reproduce B: seed explicit old mode restrict plus enabled false with same rules, visit as guest. Expected: original block had no enabled field and still denied guest. Actual: current code treats false as a disabled restriction and shows content. Proof: actual WP_Block_Type HEAD-schema preparation yields oldLogin false vs current newLogin true for numeric2,-1, nonempty array/object and yes; browser screenshots gutenberg-invalid-login-before-fix.png and gutenberg-ignored-enabled-before-fix.png under current QA evidence show QA FINAL PROTECTED GUTENBERG AUTHOR. Scope: well-typed native legacy ANY baseline correctly denied guest/customer/admin and allowed member224. Valid string false also changes original server truthiness, causing restrictive audience drift. Plan: restore original Gutenberg schema/default validation before compatibility normalization and mirror accepted boolean semantics in editor parsing; preserve explicit version1 descriptors and version2 behavior.
+
+[[2026-10-24]] Sat 04:19
+Fixed: unversioned Gutenberg values now pass through the original WordPress schema and truthiness before versioning. Exact eleven whitelisted original shortcode condition strings survive normalization and editor saves. Authorized core REST edit reads canonicalize before core block-hook serialization without changing stored content. Actual HEAD gate differential passes331 checks with Pro and331 core-only; official WordPress parser/serializer/Edit tests379; real REST/preload/template/part/widget read-only tests37. Browser retests on20191: numeric loginRequired2 denies admin1; explicit old mode+enabledfalse denies guest, both show custom denial and hide protected marker. Proof: qa/restriction-final-access-audit-2026-10-24/evidence/gutenberg-issue107-browser-retest.json plus original before-fix screenshots. Native ANY title/body save audience also preserved in four-actor browser checks. Screenshot after-fix capture stalled globally; no screenshot pass claimed.

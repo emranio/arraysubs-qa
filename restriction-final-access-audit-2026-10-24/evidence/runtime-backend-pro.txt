@@ -1,0 +1,2414 @@
+{
+    "passed": 401,
+    "total": 401,
+    "fatal": null,
+    "pro_loaded": true,
+    "checks": [
+        {
+            "passed": true,
+            "check": "original login-only ANY stale conditions/guest: unchanged raw record matches HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original login-only ANY stale conditions/member: unchanged raw record matches HEAD audience",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "original login-only ANY stale conditions/admin: unchanged raw record matches HEAD audience",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "original login-only ANY stale conditions: inspecting existing record writes nothing",
+            "actual": "{\"_arraysubs_restrict_config\":[\"{\\\"enabled\\\":true,\\\"mode\\\":\\\"restrict\\\",\\\"showToAdmins\\\":false,\\\"loginRequired\\\":true,\\\"roles\\\":[\\\"qa_final_missing_role\\\"],\\\"products\\\":[2147483000],\\\"condition\\\":\\\"or\\\"}\"]}",
+            "expected": "{\"_arraysubs_restrict_config\":[\"{\\\"enabled\\\":true,\\\"mode\\\":\\\"restrict\\\",\\\"showToAdmins\\\":false,\\\"loginRequired\\\":true,\\\"roles\\\":[\\\"qa_final_missing_role\\\"],\\\"products\\\":[2147483000],\\\"condition\\\":\\\"or\\\"}\"]}"
+        },
+        {
+            "passed": true,
+            "check": "original login-only ANY stale conditions/guest: canonical classic-editor save keeps HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original login-only ANY stale conditions/member: canonical classic-editor save keeps HEAD audience",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "original login-only ANY stale conditions/admin: canonical classic-editor save keeps HEAD audience",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "original login-only ANY stale conditions/guest: cached old payload save keeps HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original login-only ANY stale conditions/member: cached old payload save keeps HEAD audience",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "original login-only ANY stale conditions/admin: cached old payload save keeps HEAD audience",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "original login-only ANY stale conditions: authenticated REST editor save succeeds",
+            "actual": 200,
+            "expected": 200
+        },
+        {
+            "passed": true,
+            "check": "original login-only ANY stale conditions/guest: REST editor save keeps HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original login-only ANY stale conditions/member: REST editor save keeps HEAD audience",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "original login-only ANY stale conditions/admin: REST editor save keeps HEAD audience",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "original ordinary ANY all failing/guest: unchanged raw record matches HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original ordinary ANY all failing/member: unchanged raw record matches HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original ordinary ANY all failing/admin: unchanged raw record matches HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original ordinary ANY all failing: inspecting existing record writes nothing",
+            "actual": "{\"_arraysubs_restrict_config\":[\"{\\\"enabled\\\":true,\\\"mode\\\":\\\"restrict\\\",\\\"showToAdmins\\\":false,\\\"roles\\\":[\\\"qa_final_missing_role\\\"],\\\"products\\\":[2147483000],\\\"condition\\\":\\\"or\\\"}\"]}",
+            "expected": "{\"_arraysubs_restrict_config\":[\"{\\\"enabled\\\":true,\\\"mode\\\":\\\"restrict\\\",\\\"showToAdmins\\\":false,\\\"roles\\\":[\\\"qa_final_missing_role\\\"],\\\"products\\\":[2147483000],\\\"condition\\\":\\\"or\\\"}\"]}"
+        },
+        {
+            "passed": true,
+            "check": "original ordinary ANY all failing/guest: canonical classic-editor save keeps HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original ordinary ANY all failing/member: canonical classic-editor save keeps HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original ordinary ANY all failing/admin: canonical classic-editor save keeps HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original ordinary ANY all failing/guest: cached old payload save keeps HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original ordinary ANY all failing/member: cached old payload save keeps HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original ordinary ANY all failing/admin: cached old payload save keeps HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original ordinary ANY all failing: authenticated REST editor save succeeds",
+            "actual": 200,
+            "expected": 200
+        },
+        {
+            "passed": true,
+            "check": "original ordinary ANY all failing/guest: REST editor save keeps HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original ordinary ANY all failing/member: REST editor save keeps HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original ordinary ANY all failing/admin: REST editor save keeps HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original ordinary ANY one passing/guest: unchanged raw record matches HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original ordinary ANY one passing/member: unchanged raw record matches HEAD audience",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "original ordinary ANY one passing/admin: unchanged raw record matches HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original ordinary ANY one passing: inspecting existing record writes nothing",
+            "actual": "{\"_arraysubs_restrict_config\":[\"{\\\"enabled\\\":true,\\\"mode\\\":\\\"restrict\\\",\\\"showToAdmins\\\":false,\\\"roles\\\":[\\\"customer\\\"],\\\"products\\\":[2147483000],\\\"condition\\\":\\\"or\\\"}\"]}",
+            "expected": "{\"_arraysubs_restrict_config\":[\"{\\\"enabled\\\":true,\\\"mode\\\":\\\"restrict\\\",\\\"showToAdmins\\\":false,\\\"roles\\\":[\\\"customer\\\"],\\\"products\\\":[2147483000],\\\"condition\\\":\\\"or\\\"}\"]}"
+        },
+        {
+            "passed": true,
+            "check": "original ordinary ANY one passing/guest: canonical classic-editor save keeps HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original ordinary ANY one passing/member: canonical classic-editor save keeps HEAD audience",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "original ordinary ANY one passing/admin: canonical classic-editor save keeps HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original ordinary ANY one passing/guest: cached old payload save keeps HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original ordinary ANY one passing/member: cached old payload save keeps HEAD audience",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "original ordinary ANY one passing/admin: cached old payload save keeps HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original ordinary ANY one passing: authenticated REST editor save succeeds",
+            "actual": 200,
+            "expected": 200
+        },
+        {
+            "passed": true,
+            "check": "original ordinary ANY one passing/guest: REST editor save keeps HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original ordinary ANY one passing/member: REST editor save keeps HEAD audience",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "original ordinary ANY one passing/admin: REST editor save keeps HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original ordinary ALL one failing/guest: unchanged raw record matches HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original ordinary ALL one failing/member: unchanged raw record matches HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original ordinary ALL one failing/admin: unchanged raw record matches HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original ordinary ALL one failing: inspecting existing record writes nothing",
+            "actual": "{\"_arraysubs_restrict_config\":[\"{\\\"enabled\\\":true,\\\"mode\\\":\\\"restrict\\\",\\\"showToAdmins\\\":false,\\\"roles\\\":[\\\"customer\\\"],\\\"products\\\":[2147483000],\\\"condition\\\":\\\"and\\\"}\"]}",
+            "expected": "{\"_arraysubs_restrict_config\":[\"{\\\"enabled\\\":true,\\\"mode\\\":\\\"restrict\\\",\\\"showToAdmins\\\":false,\\\"roles\\\":[\\\"customer\\\"],\\\"products\\\":[2147483000],\\\"condition\\\":\\\"and\\\"}\"]}"
+        },
+        {
+            "passed": true,
+            "check": "original ordinary ALL one failing/guest: canonical classic-editor save keeps HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original ordinary ALL one failing/member: canonical classic-editor save keeps HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original ordinary ALL one failing/admin: canonical classic-editor save keeps HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original ordinary ALL one failing/guest: cached old payload save keeps HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original ordinary ALL one failing/member: cached old payload save keeps HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original ordinary ALL one failing/admin: cached old payload save keeps HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original ordinary ALL one failing: authenticated REST editor save succeeds",
+            "actual": 200,
+            "expected": 200
+        },
+        {
+            "passed": true,
+            "check": "original ordinary ALL one failing/guest: REST editor save keeps HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original ordinary ALL one failing/member: REST editor save keeps HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original ordinary ALL one failing/admin: REST editor save keeps HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original guest visibility/guest: unchanged raw record matches HEAD audience",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "original guest visibility/member: unchanged raw record matches HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original guest visibility/admin: unchanged raw record matches HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original guest visibility: inspecting existing record writes nothing",
+            "actual": "{\"_arraysubs_restrict_config\":[\"{\\\"enabled\\\":true,\\\"mode\\\":\\\"visibility\\\",\\\"showToAdmins\\\":false,\\\"visShow\\\":\\\"logged_out\\\"}\"]}",
+            "expected": "{\"_arraysubs_restrict_config\":[\"{\\\"enabled\\\":true,\\\"mode\\\":\\\"visibility\\\",\\\"showToAdmins\\\":false,\\\"visShow\\\":\\\"logged_out\\\"}\"]}"
+        },
+        {
+            "passed": true,
+            "check": "original guest visibility/guest: canonical classic-editor save keeps HEAD audience",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "original guest visibility/member: canonical classic-editor save keeps HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original guest visibility/admin: canonical classic-editor save keeps HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original guest visibility/guest: cached old payload save keeps HEAD audience",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "original guest visibility/member: cached old payload save keeps HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original guest visibility/admin: cached old payload save keeps HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original guest visibility: authenticated REST editor save succeeds",
+            "actual": 200,
+            "expected": 200
+        },
+        {
+            "passed": true,
+            "check": "original guest visibility/guest: REST editor save keeps HEAD audience",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "original guest visibility/member: REST editor save keeps HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original guest visibility/admin: REST editor save keeps HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original logged-in visibility/guest: unchanged raw record matches HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original logged-in visibility/member: unchanged raw record matches HEAD audience",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "original logged-in visibility/admin: unchanged raw record matches HEAD audience",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "original logged-in visibility: inspecting existing record writes nothing",
+            "actual": "{\"_arraysubs_restrict_config\":[\"{\\\"enabled\\\":true,\\\"mode\\\":\\\"visibility\\\",\\\"showToAdmins\\\":false,\\\"visShow\\\":\\\"logged_in\\\"}\"]}",
+            "expected": "{\"_arraysubs_restrict_config\":[\"{\\\"enabled\\\":true,\\\"mode\\\":\\\"visibility\\\",\\\"showToAdmins\\\":false,\\\"visShow\\\":\\\"logged_in\\\"}\"]}"
+        },
+        {
+            "passed": true,
+            "check": "original logged-in visibility/guest: canonical classic-editor save keeps HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original logged-in visibility/member: canonical classic-editor save keeps HEAD audience",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "original logged-in visibility/admin: canonical classic-editor save keeps HEAD audience",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "original logged-in visibility/guest: cached old payload save keeps HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original logged-in visibility/member: cached old payload save keeps HEAD audience",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "original logged-in visibility/admin: cached old payload save keeps HEAD audience",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "original logged-in visibility: authenticated REST editor save succeeds",
+            "actual": 200,
+            "expected": 200
+        },
+        {
+            "passed": true,
+            "check": "original logged-in visibility/guest: REST editor save keeps HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original logged-in visibility/member: REST editor save keeps HEAD audience",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "original logged-in visibility/admin: REST editor save keeps HEAD audience",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "original disabled rules/guest: unchanged raw record matches HEAD audience",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "original disabled rules/member: unchanged raw record matches HEAD audience",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "original disabled rules/admin: unchanged raw record matches HEAD audience",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "original disabled rules: inspecting existing record writes nothing",
+            "actual": "{\"_arraysubs_restrict_config\":[\"{\\\"enabled\\\":false,\\\"mode\\\":\\\"restrict\\\",\\\"showToAdmins\\\":false,\\\"roles\\\":[\\\"qa_final_missing_role\\\"]}\"]}",
+            "expected": "{\"_arraysubs_restrict_config\":[\"{\\\"enabled\\\":false,\\\"mode\\\":\\\"restrict\\\",\\\"showToAdmins\\\":false,\\\"roles\\\":[\\\"qa_final_missing_role\\\"]}\"]}"
+        },
+        {
+            "passed": true,
+            "check": "original disabled rules/guest: canonical classic-editor save keeps HEAD audience",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "original disabled rules/member: canonical classic-editor save keeps HEAD audience",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "original disabled rules/admin: canonical classic-editor save keeps HEAD audience",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "original disabled rules/guest: cached old payload save keeps HEAD audience",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "original disabled rules/member: cached old payload save keeps HEAD audience",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "original disabled rules/admin: cached old payload save keeps HEAD audience",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "original disabled rules: authenticated REST editor save succeeds",
+            "actual": 200,
+            "expected": 200
+        },
+        {
+            "passed": true,
+            "check": "original disabled rules/guest: REST editor save keeps HEAD audience",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "original disabled rules/member: REST editor save keeps HEAD audience",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "original disabled rules/admin: REST editor save keeps HEAD audience",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "original truthy string enabled false/guest: unchanged raw record matches HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original truthy string enabled false/member: unchanged raw record matches HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original truthy string enabled false/admin: unchanged raw record matches HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original truthy string enabled false: inspecting existing record writes nothing",
+            "actual": "{\"_arraysubs_restrict_config\":[\"{\\\"enabled\\\":\\\"false\\\",\\\"mode\\\":\\\"restrict\\\",\\\"showToAdmins\\\":false,\\\"roles\\\":[\\\"qa_final_missing_role\\\"]}\"]}",
+            "expected": "{\"_arraysubs_restrict_config\":[\"{\\\"enabled\\\":\\\"false\\\",\\\"mode\\\":\\\"restrict\\\",\\\"showToAdmins\\\":false,\\\"roles\\\":[\\\"qa_final_missing_role\\\"]}\"]}"
+        },
+        {
+            "passed": true,
+            "check": "original truthy string enabled false/guest: canonical classic-editor save keeps HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original truthy string enabled false/member: canonical classic-editor save keeps HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original truthy string enabled false/admin: canonical classic-editor save keeps HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original truthy string enabled false/guest: cached old payload save keeps HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original truthy string enabled false/member: cached old payload save keeps HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original truthy string enabled false/admin: cached old payload save keeps HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original truthy string enabled false: authenticated REST editor save succeeds",
+            "actual": 200,
+            "expected": 200
+        },
+        {
+            "passed": true,
+            "check": "original truthy string enabled false/guest: REST editor save keeps HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original truthy string enabled false/member: REST editor save keeps HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original truthy string enabled false/admin: REST editor save keeps HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original truthy string login false/guest: unchanged raw record matches HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original truthy string login false/member: unchanged raw record matches HEAD audience",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "original truthy string login false/admin: unchanged raw record matches HEAD audience",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "original truthy string login false: inspecting existing record writes nothing",
+            "actual": "{\"_arraysubs_restrict_config\":[\"{\\\"enabled\\\":true,\\\"mode\\\":\\\"restrict\\\",\\\"showToAdmins\\\":false,\\\"loginRequired\\\":\\\"false\\\"}\"]}",
+            "expected": "{\"_arraysubs_restrict_config\":[\"{\\\"enabled\\\":true,\\\"mode\\\":\\\"restrict\\\",\\\"showToAdmins\\\":false,\\\"loginRequired\\\":\\\"false\\\"}\"]}"
+        },
+        {
+            "passed": true,
+            "check": "original truthy string login false/guest: canonical classic-editor save keeps HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original truthy string login false/member: canonical classic-editor save keeps HEAD audience",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "original truthy string login false/admin: canonical classic-editor save keeps HEAD audience",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "original truthy string login false/guest: cached old payload save keeps HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original truthy string login false/member: cached old payload save keeps HEAD audience",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "original truthy string login false/admin: cached old payload save keeps HEAD audience",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "original truthy string login false: authenticated REST editor save succeeds",
+            "actual": 200,
+            "expected": 200
+        },
+        {
+            "passed": true,
+            "check": "original truthy string login false/guest: REST editor save keeps HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original truthy string login false/member: REST editor save keeps HEAD audience",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "original truthy string login false/admin: REST editor save keeps HEAD audience",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "original explicit null administrator bypass/guest: unchanged raw record matches HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original explicit null administrator bypass/member: unchanged raw record matches HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original explicit null administrator bypass/admin: unchanged raw record matches HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original explicit null administrator bypass: inspecting existing record writes nothing",
+            "actual": "{\"_arraysubs_restrict_config\":[\"{\\\"enabled\\\":true,\\\"mode\\\":\\\"restrict\\\",\\\"showToAdmins\\\":null,\\\"roles\\\":[\\\"qa_final_missing_role\\\"]}\"]}",
+            "expected": "{\"_arraysubs_restrict_config\":[\"{\\\"enabled\\\":true,\\\"mode\\\":\\\"restrict\\\",\\\"showToAdmins\\\":null,\\\"roles\\\":[\\\"qa_final_missing_role\\\"]}\"]}"
+        },
+        {
+            "passed": true,
+            "check": "original explicit null administrator bypass/guest: canonical classic-editor save keeps HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original explicit null administrator bypass/member: canonical classic-editor save keeps HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original explicit null administrator bypass/admin: canonical classic-editor save keeps HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original explicit null administrator bypass/guest: cached old payload save keeps HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original explicit null administrator bypass/member: cached old payload save keeps HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original explicit null administrator bypass/admin: cached old payload save keeps HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original explicit null administrator bypass: authenticated REST editor save succeeds",
+            "actual": 200,
+            "expected": 200
+        },
+        {
+            "passed": true,
+            "check": "original explicit null administrator bypass/guest: REST editor save keeps HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original explicit null administrator bypass/member: REST editor save keeps HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original explicit null administrator bypass/admin: REST editor save keeps HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original truthy string administrator bypass/guest: unchanged raw record matches HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original truthy string administrator bypass/member: unchanged raw record matches HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original truthy string administrator bypass/admin: unchanged raw record matches HEAD audience",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "original truthy string administrator bypass: inspecting existing record writes nothing",
+            "actual": "{\"_arraysubs_restrict_config\":[\"{\\\"enabled\\\":true,\\\"mode\\\":\\\"restrict\\\",\\\"showToAdmins\\\":\\\"false\\\",\\\"roles\\\":[\\\"qa_final_missing_role\\\"]}\"]}",
+            "expected": "{\"_arraysubs_restrict_config\":[\"{\\\"enabled\\\":true,\\\"mode\\\":\\\"restrict\\\",\\\"showToAdmins\\\":\\\"false\\\",\\\"roles\\\":[\\\"qa_final_missing_role\\\"]}\"]}"
+        },
+        {
+            "passed": true,
+            "check": "original truthy string administrator bypass/guest: canonical classic-editor save keeps HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original truthy string administrator bypass/member: canonical classic-editor save keeps HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original truthy string administrator bypass/admin: canonical classic-editor save keeps HEAD audience",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "original truthy string administrator bypass/guest: cached old payload save keeps HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original truthy string administrator bypass/member: cached old payload save keeps HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original truthy string administrator bypass/admin: cached old payload save keeps HEAD audience",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "original truthy string administrator bypass: authenticated REST editor save succeeds",
+            "actual": 200,
+            "expected": 200
+        },
+        {
+            "passed": true,
+            "check": "original truthy string administrator bypass/guest: REST editor save keeps HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original truthy string administrator bypass/member: REST editor save keeps HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original truthy string administrator bypass/admin: REST editor save keeps HEAD audience",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "original string zero administrator bypass/guest: unchanged raw record matches HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original string zero administrator bypass/member: unchanged raw record matches HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original string zero administrator bypass/admin: unchanged raw record matches HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original string zero administrator bypass: inspecting existing record writes nothing",
+            "actual": "{\"_arraysubs_restrict_config\":[\"{\\\"enabled\\\":true,\\\"mode\\\":\\\"restrict\\\",\\\"showToAdmins\\\":\\\"0\\\",\\\"roles\\\":[\\\"qa_final_missing_role\\\"]}\"]}",
+            "expected": "{\"_arraysubs_restrict_config\":[\"{\\\"enabled\\\":true,\\\"mode\\\":\\\"restrict\\\",\\\"showToAdmins\\\":\\\"0\\\",\\\"roles\\\":[\\\"qa_final_missing_role\\\"]}\"]}"
+        },
+        {
+            "passed": true,
+            "check": "original string zero administrator bypass/guest: canonical classic-editor save keeps HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original string zero administrator bypass/member: canonical classic-editor save keeps HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original string zero administrator bypass/admin: canonical classic-editor save keeps HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original string zero administrator bypass/guest: cached old payload save keeps HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original string zero administrator bypass/member: cached old payload save keeps HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original string zero administrator bypass/admin: cached old payload save keeps HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original string zero administrator bypass: authenticated REST editor save succeeds",
+            "actual": 200,
+            "expected": 200
+        },
+        {
+            "passed": true,
+            "check": "original string zero administrator bypass/guest: REST editor save keeps HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original string zero administrator bypass/member: REST editor save keeps HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original string zero administrator bypass/admin: REST editor save keeps HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original empty configuration/guest: unchanged raw record matches HEAD audience",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "original empty configuration/member: unchanged raw record matches HEAD audience",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "original empty configuration/admin: unchanged raw record matches HEAD audience",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "original empty configuration: inspecting existing record writes nothing",
+            "actual": "{\"_arraysubs_restrict_config\":[\"{\\\"enabled\\\":true,\\\"mode\\\":\\\"restrict\\\",\\\"showToAdmins\\\":false}\"]}",
+            "expected": "{\"_arraysubs_restrict_config\":[\"{\\\"enabled\\\":true,\\\"mode\\\":\\\"restrict\\\",\\\"showToAdmins\\\":false}\"]}"
+        },
+        {
+            "passed": true,
+            "check": "original empty configuration/guest: canonical classic-editor save keeps HEAD audience",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "original empty configuration/member: canonical classic-editor save keeps HEAD audience",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "original empty configuration/admin: canonical classic-editor save keeps HEAD audience",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "original empty configuration/guest: cached old payload save keeps HEAD audience",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "original empty configuration/member: cached old payload save keeps HEAD audience",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "original empty configuration/admin: cached old payload save keeps HEAD audience",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "original empty configuration: authenticated REST editor save succeeds",
+            "actual": 200,
+            "expected": 200
+        },
+        {
+            "passed": true,
+            "check": "original empty configuration/guest: REST editor save keeps HEAD audience",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "original empty configuration/member: REST editor save keeps HEAD audience",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "original empty configuration/admin: REST editor save keeps HEAD audience",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "original scalar role ignored/guest: unchanged raw record matches HEAD audience",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "original scalar role ignored/member: unchanged raw record matches HEAD audience",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "original scalar role ignored/admin: unchanged raw record matches HEAD audience",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "original scalar role ignored: inspecting existing record writes nothing",
+            "actual": "{\"_arraysubs_restrict_config\":[\"{\\\"enabled\\\":true,\\\"mode\\\":\\\"restrict\\\",\\\"showToAdmins\\\":false,\\\"roles\\\":\\\"qa_final_missing_role\\\"}\"]}",
+            "expected": "{\"_arraysubs_restrict_config\":[\"{\\\"enabled\\\":true,\\\"mode\\\":\\\"restrict\\\",\\\"showToAdmins\\\":false,\\\"roles\\\":\\\"qa_final_missing_role\\\"}\"]}"
+        },
+        {
+            "passed": true,
+            "check": "original scalar role ignored/guest: canonical classic-editor save keeps HEAD audience",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "original scalar role ignored/member: canonical classic-editor save keeps HEAD audience",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "original scalar role ignored/admin: canonical classic-editor save keeps HEAD audience",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "original scalar role ignored/guest: cached old payload save keeps HEAD audience",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "original scalar role ignored/member: cached old payload save keeps HEAD audience",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "original scalar role ignored/admin: cached old payload save keeps HEAD audience",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "original scalar role ignored: authenticated REST editor save succeeds",
+            "actual": 200,
+            "expected": 200
+        },
+        {
+            "passed": true,
+            "check": "original scalar role ignored/guest: REST editor save keeps HEAD audience",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "original scalar role ignored/member: REST editor save keeps HEAD audience",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "original scalar role ignored/admin: REST editor save keeps HEAD audience",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "original nested malformed token ignored/guest: unchanged raw record matches HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original nested malformed token ignored/member: unchanged raw record matches HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original nested malformed token ignored/admin: unchanged raw record matches HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original nested malformed token ignored: inspecting existing record writes nothing",
+            "actual": "{\"_arraysubs_restrict_config\":[\"{\\\"enabled\\\":true,\\\"mode\\\":\\\"restrict\\\",\\\"showToAdmins\\\":false,\\\"roles\\\":[{\\\"bad\\\":true}]}\"]}",
+            "expected": "{\"_arraysubs_restrict_config\":[\"{\\\"enabled\\\":true,\\\"mode\\\":\\\"restrict\\\",\\\"showToAdmins\\\":false,\\\"roles\\\":[{\\\"bad\\\":true}]}\"]}"
+        },
+        {
+            "passed": true,
+            "check": "original nested malformed token ignored/guest: canonical classic-editor save keeps HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original nested malformed token ignored/member: canonical classic-editor save keeps HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original nested malformed token ignored/admin: canonical classic-editor save keeps HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original nested malformed token ignored/guest: cached old payload save keeps HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original nested malformed token ignored/member: cached old payload save keeps HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original nested malformed token ignored/admin: cached old payload save keeps HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original nested malformed token ignored: authenticated REST editor save succeeds",
+            "actual": 200,
+            "expected": 200
+        },
+        {
+            "passed": true,
+            "check": "original nested malformed token ignored/guest: REST editor save keeps HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original nested malformed token ignored/member: REST editor save keeps HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original nested malformed token ignored/admin: REST editor save keeps HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original unknown mode defaults restrict/guest: unchanged raw record matches HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original unknown mode defaults restrict/member: unchanged raw record matches HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original unknown mode defaults restrict/admin: unchanged raw record matches HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original unknown mode defaults restrict: inspecting existing record writes nothing",
+            "actual": "{\"_arraysubs_restrict_config\":[\"{\\\"enabled\\\":true,\\\"mode\\\":\\\"unexpected\\\",\\\"showToAdmins\\\":false,\\\"roles\\\":[\\\"qa_final_missing_role\\\"]}\"]}",
+            "expected": "{\"_arraysubs_restrict_config\":[\"{\\\"enabled\\\":true,\\\"mode\\\":\\\"unexpected\\\",\\\"showToAdmins\\\":false,\\\"roles\\\":[\\\"qa_final_missing_role\\\"]}\"]}"
+        },
+        {
+            "passed": true,
+            "check": "original unknown mode defaults restrict/guest: canonical classic-editor save keeps HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original unknown mode defaults restrict/member: canonical classic-editor save keeps HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original unknown mode defaults restrict/admin: canonical classic-editor save keeps HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original unknown mode defaults restrict/guest: cached old payload save keeps HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original unknown mode defaults restrict/member: cached old payload save keeps HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original unknown mode defaults restrict/admin: cached old payload save keeps HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original unknown mode defaults restrict: authenticated REST editor save succeeds",
+            "actual": 200,
+            "expected": 200
+        },
+        {
+            "passed": true,
+            "check": "original unknown mode defaults restrict/guest: REST editor save keeps HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original unknown mode defaults restrict/member: REST editor save keeps HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "original unknown mode defaults restrict/admin: REST editor save keeps HEAD audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "disabled canonical with active fallback/guest: effective fallback matches original audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "disabled canonical with active fallback/member: effective fallback matches original audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "disabled canonical with active fallback/admin: effective fallback matches original audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "disabled canonical with active fallback: editor identifies the actually effective source",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "disabled canonical with active fallback: effective-source inspection writes nothing",
+            "actual": "{\"_arraysubs_restrict_config\":[\"{\\\"enabled\\\":false,\\\"mode\\\":\\\"restrict\\\",\\\"showToAdmins\\\":false}\"],\"_arraysubs_restrict_enabled\":[\"1\"],\"_arraysubs_restrict_conditions\":[\"{\\\"logic\\\":\\\"and\\\",\\\"rules\\\":[{\\\"type\\\":\\\"user_role\\\",\\\"roles\\\":[\\\"qa_final_missing_role\\\"]}]}\"],\"_arraysubs_restrict_message\":[\"<p>QA effective legacy fallback message<\\/p>\"]}",
+            "expected": "{\"_arraysubs_restrict_config\":[\"{\\\"enabled\\\":false,\\\"mode\\\":\\\"restrict\\\",\\\"showToAdmins\\\":false}\"],\"_arraysubs_restrict_enabled\":[\"1\"],\"_arraysubs_restrict_conditions\":[\"{\\\"logic\\\":\\\"and\\\",\\\"rules\\\":[{\\\"type\\\":\\\"user_role\\\",\\\"roles\\\":[\\\"qa_final_missing_role\\\"]}]}\"],\"_arraysubs_restrict_message\":[\"<p>QA effective legacy fallback message<\\/p>\"]}"
+        },
+        {
+            "passed": true,
+            "check": "disabled canonical with active fallback: adopted fallback gains no administrator bypass",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "disabled canonical with active fallback: adopted fallback preserves denied message",
+            "actual": "<p>QA effective legacy fallback message</p>",
+            "expected": "<p>QA effective legacy fallback message</p>"
+        },
+        {
+            "passed": true,
+            "check": "disabled canonical with active fallback/guest: exact unchanged cached original payload preserves effective audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "disabled canonical with active fallback/member: exact unchanged cached original payload preserves effective audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "disabled canonical with active fallback/admin: exact unchanged cached original payload preserves effective audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "disabled canonical with active fallback/guest: unchanged classic save preserves effective audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "disabled canonical with active fallback/member: unchanged classic save preserves effective audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "disabled canonical with active fallback/admin: unchanged classic save preserves effective audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "disabled canonical with active fallback: unchanged REST save succeeds",
+            "actual": 200,
+            "expected": 200
+        },
+        {
+            "passed": true,
+            "check": "disabled canonical with active fallback/guest: unchanged REST save preserves effective audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "disabled canonical with active fallback/member: unchanged REST save preserves effective audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "disabled canonical with active fallback/admin: unchanged REST save preserves effective audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "disabled canonical with active fallback: deliberate current UI Off remains available",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "disabled canonical with active fallback: deliberate Off removes the local fallback override",
+            "actual": null,
+            "expected": null
+        },
+        {
+            "passed": true,
+            "check": "empty enabled canonical with active fallback/guest: effective fallback matches original audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "empty enabled canonical with active fallback/member: effective fallback matches original audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "empty enabled canonical with active fallback/admin: effective fallback matches original audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "empty enabled canonical with active fallback: editor identifies the actually effective source",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "empty enabled canonical with active fallback: effective-source inspection writes nothing",
+            "actual": "{\"_arraysubs_restrict_config\":[\"{\\\"enabled\\\":true,\\\"mode\\\":\\\"restrict\\\",\\\"showToAdmins\\\":false}\"],\"_arraysubs_restrict_enabled\":[\"1\"],\"_arraysubs_restrict_conditions\":[\"{\\\"logic\\\":\\\"and\\\",\\\"rules\\\":[{\\\"type\\\":\\\"user_role\\\",\\\"roles\\\":[\\\"qa_final_missing_role\\\"]}]}\"],\"_arraysubs_restrict_message\":[\"<p>QA effective legacy fallback message<\\/p>\"]}",
+            "expected": "{\"_arraysubs_restrict_config\":[\"{\\\"enabled\\\":true,\\\"mode\\\":\\\"restrict\\\",\\\"showToAdmins\\\":false}\"],\"_arraysubs_restrict_enabled\":[\"1\"],\"_arraysubs_restrict_conditions\":[\"{\\\"logic\\\":\\\"and\\\",\\\"rules\\\":[{\\\"type\\\":\\\"user_role\\\",\\\"roles\\\":[\\\"qa_final_missing_role\\\"]}]}\"],\"_arraysubs_restrict_message\":[\"<p>QA effective legacy fallback message<\\/p>\"]}"
+        },
+        {
+            "passed": true,
+            "check": "empty enabled canonical with active fallback: adopted fallback gains no administrator bypass",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "empty enabled canonical with active fallback: adopted fallback preserves denied message",
+            "actual": "<p>QA effective legacy fallback message</p>",
+            "expected": "<p>QA effective legacy fallback message</p>"
+        },
+        {
+            "passed": true,
+            "check": "empty enabled canonical with active fallback/guest: exact unchanged cached original payload preserves effective audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "empty enabled canonical with active fallback/member: exact unchanged cached original payload preserves effective audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "empty enabled canonical with active fallback/admin: exact unchanged cached original payload preserves effective audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "empty enabled canonical with active fallback/guest: unchanged classic save preserves effective audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "empty enabled canonical with active fallback/member: unchanged classic save preserves effective audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "empty enabled canonical with active fallback/admin: unchanged classic save preserves effective audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "empty enabled canonical with active fallback: unchanged REST save succeeds",
+            "actual": 200,
+            "expected": 200
+        },
+        {
+            "passed": true,
+            "check": "empty enabled canonical with active fallback/guest: unchanged REST save preserves effective audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "empty enabled canonical with active fallback/member: unchanged REST save preserves effective audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "empty enabled canonical with active fallback/admin: unchanged REST save preserves effective audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "empty enabled canonical with active fallback: deliberate current UI Off remains available",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "empty enabled canonical with active fallback: deliberate Off removes the local fallback override",
+            "actual": null,
+            "expected": null
+        },
+        {
+            "passed": true,
+            "check": "disabled canonical with valid empty fallback/guest: effective fallback matches original audience",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "disabled canonical with valid empty fallback/member: effective fallback matches original audience",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "disabled canonical with valid empty fallback/admin: effective fallback matches original audience",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "disabled canonical with valid empty fallback: editor identifies the actually effective source",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "disabled canonical with valid empty fallback: effective-source inspection writes nothing",
+            "actual": "{\"_arraysubs_restrict_config\":[\"{\\\"enabled\\\":false,\\\"mode\\\":\\\"restrict\\\",\\\"showToAdmins\\\":false}\"],\"_arraysubs_restrict_enabled\":[\"1\"],\"_arraysubs_restrict_conditions\":[\"[]\"],\"_arraysubs_restrict_message\":[\"<p>QA effective legacy fallback message<\\/p>\"]}",
+            "expected": "{\"_arraysubs_restrict_config\":[\"{\\\"enabled\\\":false,\\\"mode\\\":\\\"restrict\\\",\\\"showToAdmins\\\":false}\"],\"_arraysubs_restrict_enabled\":[\"1\"],\"_arraysubs_restrict_conditions\":[\"[]\"],\"_arraysubs_restrict_message\":[\"<p>QA effective legacy fallback message<\\/p>\"]}"
+        },
+        {
+            "passed": true,
+            "check": "disabled canonical with valid empty fallback: adopted fallback gains no administrator bypass",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "disabled canonical with valid empty fallback: adopted fallback preserves denied message",
+            "actual": "<p>QA effective legacy fallback message</p>",
+            "expected": "<p>QA effective legacy fallback message</p>"
+        },
+        {
+            "passed": true,
+            "check": "disabled canonical with valid empty fallback/guest: exact unchanged cached original payload preserves effective audience",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "disabled canonical with valid empty fallback/member: exact unchanged cached original payload preserves effective audience",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "disabled canonical with valid empty fallback/admin: exact unchanged cached original payload preserves effective audience",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "disabled canonical with valid empty fallback/guest: unchanged classic save preserves effective audience",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "disabled canonical with valid empty fallback/member: unchanged classic save preserves effective audience",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "disabled canonical with valid empty fallback/admin: unchanged classic save preserves effective audience",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "disabled canonical with valid empty fallback: unchanged REST save succeeds",
+            "actual": 200,
+            "expected": 200
+        },
+        {
+            "passed": true,
+            "check": "disabled canonical with valid empty fallback/guest: unchanged REST save preserves effective audience",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "disabled canonical with valid empty fallback/member: unchanged REST save preserves effective audience",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "disabled canonical with valid empty fallback/admin: unchanged REST save preserves effective audience",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "disabled canonical with valid empty fallback: deliberate current UI Off remains available",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "disabled canonical with valid empty fallback: deliberate Off removes the local fallback override",
+            "actual": null,
+            "expected": null
+        },
+        {
+            "passed": true,
+            "check": "disabled canonical with invalid fallback JSON/guest: effective fallback matches original audience",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "disabled canonical with invalid fallback JSON/member: effective fallback matches original audience",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "disabled canonical with invalid fallback JSON/admin: effective fallback matches original audience",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "disabled canonical with invalid fallback JSON: editor identifies the actually effective source",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "disabled canonical with invalid fallback JSON: effective-source inspection writes nothing",
+            "actual": "{\"_arraysubs_restrict_config\":[\"{\\\"enabled\\\":false,\\\"mode\\\":\\\"restrict\\\",\\\"showToAdmins\\\":false}\"],\"_arraysubs_restrict_enabled\":[\"1\"],\"_arraysubs_restrict_conditions\":[\"invalid-json\"],\"_arraysubs_restrict_message\":[\"<p>QA effective legacy fallback message<\\/p>\"]}",
+            "expected": "{\"_arraysubs_restrict_config\":[\"{\\\"enabled\\\":false,\\\"mode\\\":\\\"restrict\\\",\\\"showToAdmins\\\":false}\"],\"_arraysubs_restrict_enabled\":[\"1\"],\"_arraysubs_restrict_conditions\":[\"invalid-json\"],\"_arraysubs_restrict_message\":[\"<p>QA effective legacy fallback message<\\/p>\"]}"
+        },
+        {
+            "passed": true,
+            "check": "disabled canonical with invalid fallback JSON/guest: unchanged classic save preserves effective audience",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "disabled canonical with invalid fallback JSON/member: unchanged classic save preserves effective audience",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "disabled canonical with invalid fallback JSON/admin: unchanged classic save preserves effective audience",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "disabled canonical with invalid fallback JSON: unchanged REST save succeeds",
+            "actual": 200,
+            "expected": 200
+        },
+        {
+            "passed": true,
+            "check": "disabled canonical with invalid fallback JSON/guest: unchanged REST save preserves effective audience",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "disabled canonical with invalid fallback JSON/member: unchanged REST save preserves effective audience",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "disabled canonical with invalid fallback JSON/admin: unchanged REST save preserves effective audience",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "disabled canonical with disabled fallback/guest: effective fallback matches original audience",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "disabled canonical with disabled fallback/member: effective fallback matches original audience",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "disabled canonical with disabled fallback/admin: effective fallback matches original audience",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "disabled canonical with disabled fallback: editor identifies the actually effective source",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "disabled canonical with disabled fallback: effective-source inspection writes nothing",
+            "actual": "{\"_arraysubs_restrict_config\":[\"{\\\"enabled\\\":false,\\\"mode\\\":\\\"restrict\\\",\\\"showToAdmins\\\":false}\"],\"_arraysubs_restrict_enabled\":[\"0\"],\"_arraysubs_restrict_conditions\":[\"{\\\"logic\\\":\\\"and\\\",\\\"rules\\\":[{\\\"type\\\":\\\"user_role\\\",\\\"roles\\\":[\\\"qa_final_missing_role\\\"]}]}\"],\"_arraysubs_restrict_message\":[\"<p>QA effective legacy fallback message<\\/p>\"]}",
+            "expected": "{\"_arraysubs_restrict_config\":[\"{\\\"enabled\\\":false,\\\"mode\\\":\\\"restrict\\\",\\\"showToAdmins\\\":false}\"],\"_arraysubs_restrict_enabled\":[\"0\"],\"_arraysubs_restrict_conditions\":[\"{\\\"logic\\\":\\\"and\\\",\\\"rules\\\":[{\\\"type\\\":\\\"user_role\\\",\\\"roles\\\":[\\\"qa_final_missing_role\\\"]}]}\"],\"_arraysubs_restrict_message\":[\"<p>QA effective legacy fallback message<\\/p>\"]}"
+        },
+        {
+            "passed": true,
+            "check": "disabled canonical with disabled fallback/guest: unchanged classic save preserves effective audience",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "disabled canonical with disabled fallback/member: unchanged classic save preserves effective audience",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "disabled canonical with disabled fallback/admin: unchanged classic save preserves effective audience",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "disabled canonical with disabled fallback: unchanged REST save succeeds",
+            "actual": 200,
+            "expected": 200
+        },
+        {
+            "passed": true,
+            "check": "disabled canonical with disabled fallback/guest: unchanged REST save preserves effective audience",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "disabled canonical with disabled fallback/member: unchanged REST save preserves effective audience",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "disabled canonical with disabled fallback/admin: unchanged REST save preserves effective audience",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "active canonical outranks fallback/guest: effective fallback matches original audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "active canonical outranks fallback/member: effective fallback matches original audience",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "active canonical outranks fallback/admin: effective fallback matches original audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "active canonical outranks fallback: editor identifies the actually effective source",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "active canonical outranks fallback: effective-source inspection writes nothing",
+            "actual": "{\"_arraysubs_restrict_config\":[\"{\\\"enabled\\\":true,\\\"mode\\\":\\\"restrict\\\",\\\"showToAdmins\\\":false,\\\"roles\\\":[\\\"customer\\\"]}\"],\"_arraysubs_restrict_enabled\":[\"1\"],\"_arraysubs_restrict_conditions\":[\"{\\\"logic\\\":\\\"and\\\",\\\"rules\\\":[{\\\"type\\\":\\\"user_role\\\",\\\"roles\\\":[\\\"qa_final_missing_role\\\"]}]}\"],\"_arraysubs_restrict_message\":[\"<p>QA effective legacy fallback message<\\/p>\"]}",
+            "expected": "{\"_arraysubs_restrict_config\":[\"{\\\"enabled\\\":true,\\\"mode\\\":\\\"restrict\\\",\\\"showToAdmins\\\":false,\\\"roles\\\":[\\\"customer\\\"]}\"],\"_arraysubs_restrict_enabled\":[\"1\"],\"_arraysubs_restrict_conditions\":[\"{\\\"logic\\\":\\\"and\\\",\\\"rules\\\":[{\\\"type\\\":\\\"user_role\\\",\\\"roles\\\":[\\\"qa_final_missing_role\\\"]}]}\"],\"_arraysubs_restrict_message\":[\"<p>QA effective legacy fallback message<\\/p>\"]}"
+        },
+        {
+            "passed": true,
+            "check": "active canonical outranks fallback/guest: unchanged classic save preserves effective audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "active canonical outranks fallback/member: unchanged classic save preserves effective audience",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "active canonical outranks fallback/admin: unchanged classic save preserves effective audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "active canonical outranks fallback: unchanged REST save succeeds",
+            "actual": 200,
+            "expected": 200
+        },
+        {
+            "passed": true,
+            "check": "active canonical outranks fallback/guest: unchanged REST save preserves effective audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "active canonical outranks fallback/member: unchanged REST save preserves effective audience",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "active canonical outranks fallback/admin: unchanged REST save preserves effective audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Variation/guest: active parent retains priority over dormant child fallback",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Variation/member: active parent retains priority over dormant child fallback",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Variation/admin: active parent retains priority over dormant child fallback",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Variation editor does not promote a dormant fallback over its active parent",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Variation parent guest-only meta and child denies/guest: inactive parent meta is not inherited",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Variation parent guest-only meta and child denies/member: inactive parent meta is not inherited",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Variation parent guest-only meta and child denies/admin: inactive parent meta is not inherited",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Variation parent denying meta and child guest-only/guest: inactive parent meta is not inherited",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Variation parent denying meta and child guest-only/member: inactive parent meta is not inherited",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Variation parent denying meta and child guest-only/admin: inactive parent meta is not inherited",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Variation parent denying meta and no child fallback/guest: inactive parent meta is not inherited",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Variation parent denying meta and no child fallback/member: inactive parent meta is not inherited",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Variation parent denying meta and no child fallback/admin: inactive parent meta is not inherited",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "nested guest OR customer/guest: direct meta matches HEAD",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "nested guest OR customer/member: direct meta matches HEAD",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "nested guest OR customer/admin: direct meta matches HEAD",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "nested guest OR customer: original meta reads write nothing",
+            "actual": "{\"_arraysubs_restrict_enabled\":[\"1\"],\"_arraysubs_restrict_conditions\":[\"{\\\"logic\\\":\\\"or\\\",\\\"rules\\\":[{\\\"type\\\":\\\"group\\\",\\\"logic\\\":\\\"and\\\",\\\"rules\\\":[{\\\"type\\\":\\\"user_role\\\",\\\"roles\\\":[\\\"customer\\\"]},{\\\"type\\\":\\\"user_login_status\\\",\\\"login_status\\\":\\\"logged_in\\\"}]},{\\\"type\\\":\\\"user_login_status\\\",\\\"login_status\\\":\\\"logged_out\\\"}]}\"]}",
+            "expected": "{\"_arraysubs_restrict_enabled\":[\"1\"],\"_arraysubs_restrict_conditions\":[\"{\\\"logic\\\":\\\"or\\\",\\\"rules\\\":[{\\\"type\\\":\\\"group\\\",\\\"logic\\\":\\\"and\\\",\\\"rules\\\":[{\\\"type\\\":\\\"user_role\\\",\\\"roles\\\":[\\\"customer\\\"]},{\\\"type\\\":\\\"user_login_status\\\",\\\"login_status\\\":\\\"logged_in\\\"}]},{\\\"type\\\":\\\"user_login_status\\\",\\\"login_status\\\":\\\"logged_out\\\"}]}\"]}"
+        },
+        {
+            "passed": true,
+            "check": "nested guest OR customer/guest: direct-meta first save preserves audience",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "nested guest OR customer/member: direct-meta first save preserves audience",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "nested guest OR customer/admin: direct-meta first save preserves audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "unknown rule cannot pass ANY/guest: direct meta matches HEAD",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "unknown rule cannot pass ANY/member: direct meta matches HEAD",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "unknown rule cannot pass ANY/admin: direct meta matches HEAD",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "unknown rule cannot pass ANY: original meta reads write nothing",
+            "actual": "{\"_arraysubs_restrict_enabled\":[\"1\"],\"_arraysubs_restrict_conditions\":[\"{\\\"logic\\\":\\\"or\\\",\\\"rules\\\":[{\\\"type\\\":\\\"unknown\\\"},{\\\"type\\\":\\\"user_role\\\",\\\"roles\\\":[\\\"qa_final_missing_role\\\"]}]}\"]}",
+            "expected": "{\"_arraysubs_restrict_enabled\":[\"1\"],\"_arraysubs_restrict_conditions\":[\"{\\\"logic\\\":\\\"or\\\",\\\"rules\\\":[{\\\"type\\\":\\\"unknown\\\"},{\\\"type\\\":\\\"user_role\\\",\\\"roles\\\":[\\\"qa_final_missing_role\\\"]}]}\"]}"
+        },
+        {
+            "passed": true,
+            "check": "unknown rule cannot pass ANY/guest: direct-meta first save preserves audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "unknown rule cannot pass ANY/member: direct-meta first save preserves audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "unknown rule cannot pass ANY/admin: direct-meta first save preserves audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "malformed rule cannot disappear from ALL/guest: direct meta matches HEAD",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "malformed rule cannot disappear from ALL/member: direct meta matches HEAD",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "malformed rule cannot disappear from ALL/admin: direct meta matches HEAD",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "malformed rule cannot disappear from ALL: original meta reads write nothing",
+            "actual": "{\"_arraysubs_restrict_enabled\":[\"1\"],\"_arraysubs_restrict_conditions\":[\"{\\\"logic\\\":\\\"and\\\",\\\"rules\\\":[{\\\"type\\\":\\\"user_login_status\\\",\\\"login_status\\\":\\\"logged_in\\\"},\\\"malformed\\\"]}\"]}",
+            "expected": "{\"_arraysubs_restrict_enabled\":[\"1\"],\"_arraysubs_restrict_conditions\":[\"{\\\"logic\\\":\\\"and\\\",\\\"rules\\\":[{\\\"type\\\":\\\"user_login_status\\\",\\\"login_status\\\":\\\"logged_in\\\"},\\\"malformed\\\"]}\"]}"
+        },
+        {
+            "passed": true,
+            "check": "malformed rule cannot disappear from ALL/guest: direct-meta first save preserves audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "malformed rule cannot disappear from ALL/member: direct-meta first save preserves audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "malformed rule cannot disappear from ALL/admin: direct-meta first save preserves audience",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "empty tree keeps public local precedence/guest: direct meta matches HEAD",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "empty tree keeps public local precedence/member: direct meta matches HEAD",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "empty tree keeps public local precedence/admin: direct meta matches HEAD",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "empty tree keeps public local precedence: original meta reads write nothing",
+            "actual": "{\"_arraysubs_restrict_enabled\":[\"1\"],\"_arraysubs_restrict_conditions\":[\"{\\\"logic\\\":\\\"and\\\",\\\"rules\\\":[]}\"]}",
+            "expected": "{\"_arraysubs_restrict_enabled\":[\"1\"],\"_arraysubs_restrict_conditions\":[\"{\\\"logic\\\":\\\"and\\\",\\\"rules\\\":[]}\"]}"
+        },
+        {
+            "passed": true,
+            "check": "empty tree keeps public local precedence/guest: direct-meta first save preserves audience",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "empty tree keeps public local precedence/member: direct-meta first save preserves audience",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "empty tree keeps public local precedence/admin: direct-meta first save preserves audience",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Version 2 and/guest: login never satisfies a failed match group",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Version 2 and/member: login never satisfies a failed match group",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Version 2 and/admin: login never satisfies a failed match group",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Version 2 and: login is outside the match group",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Version 2 or/guest: login never satisfies a failed match group",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Version 2 or/member: login never satisfies a failed match group",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Version 2 or/admin: login never satisfies a failed match group",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Version 2 or: login is outside the match group",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Unsupported status \"qa-final-unknown-status\"/guest cannot unlock ANY",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Unsupported status \"qa-final-unknown-status\"/member cannot unlock ANY",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Unsupported status \"qa-final-unknown-status\"/admin cannot unlock ANY",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Unsupported status \"any\"/guest cannot unlock ANY",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Unsupported status \"any\"/member cannot unlock ANY",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Unsupported status \"any\"/admin cannot unlock ANY",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Unsupported status \"publish\"/guest cannot unlock ANY",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Unsupported status \"publish\"/member cannot unlock ANY",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Unsupported status \"publish\"/admin cannot unlock ANY",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Unsupported status \"ARRAYSUBS-ACTIVE\"/guest cannot unlock ANY",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Unsupported status \"ARRAYSUBS-ACTIVE\"/member cannot unlock ANY",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Unsupported status \"ARRAYSUBS-ACTIVE\"/admin cannot unlock ANY",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Unsupported status null/guest cannot unlock ANY",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Unsupported status null/member cannot unlock ANY",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Unsupported status null/admin cannot unlock ANY",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Unsupported status [\"invalid\"]/guest cannot unlock ANY",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Unsupported status [\"invalid\"]/member cannot unlock ANY",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Unsupported status [\"invalid\"]/admin cannot unlock ANY",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Unsupported status 1/guest cannot unlock ANY",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Unsupported status 1/member cannot unlock ANY",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Unsupported status 1/admin cannot unlock ANY",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Malformed scalar status list \"active\" cannot unlock ANY",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Malformed scalar status list false cannot unlock ANY",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Malformed scalar status list 1 cannot unlock ANY",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Malformed scalar status list null cannot unlock ANY",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Valid/mixed status list preserves explicit active selection [\"active\"]",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Valid/mixed status list preserves explicit active selection [\"arraysubs-active\"]",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Valid/mixed status list preserves explicit active selection [\"active\",\"qa-final-unknown-status\"]",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Valid/mixed status list preserves explicit active selection [\"any\",\"active\"]",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Registered custom ArraySubs status remains supported",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Shared settings were not changed",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Disposable audit post removed",
+            "actual": null,
+            "expected": null
+        },
+        {
+            "passed": true,
+            "check": "Disposable audit post removed",
+            "actual": null,
+            "expected": null
+        },
+        {
+            "passed": true,
+            "check": "Disposable audit post removed",
+            "actual": null,
+            "expected": null
+        },
+        {
+            "passed": true,
+            "check": "Disposable audit post removed",
+            "actual": null,
+            "expected": null
+        }
+    ]
+}

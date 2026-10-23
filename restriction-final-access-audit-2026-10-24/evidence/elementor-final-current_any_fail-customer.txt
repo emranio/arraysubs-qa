@@ -1,0 +1,7 @@
+- generic
+  - paragraph
+    - StaticText "QA FINAL CUSTOM "
+    - strong
+      - StaticText "saved message"
+  - StaticText "desktop"
+  - status

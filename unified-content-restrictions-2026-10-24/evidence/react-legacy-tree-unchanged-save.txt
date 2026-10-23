@@ -1,0 +1,7 @@
+Deprecated: Elementor\Modules\GlobalClasses\Atomic_Global_Styles::get_cache_root_key(): Implicitly marking parameter $key as nullable is deprecated, the explicit nullable type must be used instead in /Users/emran/Local Sites/wp-test2/app/public/wp-content/plugins/elementor/modules/global-classes/atomic-global-styles.php on line 410
+{"accessVersion":1,"enabled":true,"status":[],"roles":[],"products":[],"variations":[],"purchased":[],"lifetimeSpent":"","condition":"and","feature":"","featureMatch":"has","featureValue":"","featureOp":">=","aggregation":"sum","deniedAction":"message","message":"<p>QA TREE CUSTOM preserved<\/p>","useDefaultMessage":false,"redirectType":"page","redirectPageId":0,"redirectPageLabel":"","redirectUrl":"","loginRequired":false,"showToAdmins":false,"legacy":{"mode":"conditions","show":"logged_in","loginOnly":false,"fallback":"","surface":"meta","conditions":{"logic":"or","rules":[{"logic":"and","rules":[{"type":"user_role","roles":["qa_nonexistent_role"]},{"type":"lifetime_spent","operator":">=","amount":999999}]},{"type":"user_role","roles":["administrator"]}]}}}
+PHP: 2026-10-24 03:47:04 [notice X 0][/Users/emran/Local Sites/wp-test2/app/public/wp-content/plugins/elementor/modules/global-classes/atomic-global-styles.php::410] Elementor\Modules\GlobalClasses\Atomic_Global_Styles::get_cache_root_key(): Implicitly marking parameter $key as nullable is deprecated, the explicit nullable type must be used instead [array (
+  'trace' => '
+#0: Elementor\Core\Logger\Manager -> shutdown()
+',
+)]

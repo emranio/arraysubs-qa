@@ -1,0 +1,5 @@
+QA_RESULT:{"id":20192,"url":"http:\/\/localhost:10013\/qa-final-access-author_elementor-20261024\/","data":[{"id":"finalgate1","elType":"container","settings":{"arraysubs_enable":"yes","arraysubs_show_to_admins":"","arraysubs_roles":["qa_nonexistent_role"],"arraysubs_products":[2147483000],"arraysubs_condition":"or","arraysubs_message":"<p>QA FINAL ELEMENTOR AUDIT CUSTOM<\/p>","arraysubs_mode":"restrict","arraysubs_login_required":""},"elements":[{"id":"finaltitle1","elType":"widget","widgetType":"heading","settings":{"title":"QA FINAL ELEMENTOR UNOPENED PRIVATE"},"elements":[]}],"isInner":false}]}PHP: 2026-10-24 04:02:32 [notice X 0][/Users/emran/Local Sites/wp-test2/app/public/wp-content/plugins/elementor/modules/global-classes/atomic-global-styles.php::410] Elementor\Modules\GlobalClasses\Atomic_Global_Styles::get_cache_root_key(): Implicitly marking parameter $key as nullable is deprecated, the explicit nullable type must be used instead [array (
+  'trace' => '
+#0: Elementor\Core\Logger\Manager -> shutdown()
+',
+)]

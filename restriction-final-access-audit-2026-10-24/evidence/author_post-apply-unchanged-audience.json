@@ -1,0 +1,34 @@
+[
+  {
+    "kind": "author_post",
+    "stage": "apply-unchanged",
+    "role": "guest",
+    "expected_allowed": false,
+    "actual_allowed": false,
+    "passed": true
+  },
+  {
+    "kind": "author_post",
+    "stage": "apply-unchanged",
+    "role": "customer",
+    "expected_allowed": false,
+    "actual_allowed": false,
+    "passed": true
+  },
+  {
+    "kind": "author_post",
+    "stage": "apply-unchanged",
+    "role": "member",
+    "expected_allowed": true,
+    "actual_allowed": true,
+    "passed": true
+  },
+  {
+    "kind": "author_post",
+    "stage": "apply-unchanged",
+    "role": "admin",
+    "expected_allowed": false,
+    "actual_allowed": false,
+    "passed": true
+  }
+]

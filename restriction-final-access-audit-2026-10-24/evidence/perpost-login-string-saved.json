@@ -1,0 +1,36 @@
+{
+  "raw": "{\"enabled\":true,\"mode\":\"restrict\",\"showToAdmins\":false,\"message\":\"QA FINAL SECURITY DENIED\",\"loginRequired\":\"false\"}",
+  "canonical": {
+    "accessVersion": 1,
+    "enabled": true,
+    "status": [],
+    "roles": [],
+    "products": [],
+    "variations": [],
+    "purchased": [],
+    "lifetimeSpent": "",
+    "condition": "and",
+    "feature": "",
+    "featureMatch": "has",
+    "featureValue": "",
+    "featureOp": ">=",
+    "aggregation": "sum",
+    "deniedAction": "message",
+    "message": "QA FINAL SECURITY DENIED",
+    "useDefaultMessage": false,
+    "redirectType": "page",
+    "redirectPageId": 0,
+    "redirectPageLabel": "",
+    "redirectUrl": "",
+    "loginRequired": true,
+    "showToAdmins": false,
+    "legacy": {
+      "mode": "restrict",
+      "show": "logged_in",
+      "loginOnly": true,
+      "fallback": "",
+      "surface": "post"
+    },
+    "mode": "restrict"
+  }
+}

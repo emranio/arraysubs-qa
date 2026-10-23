@@ -1,0 +1,15 @@
+Deprecated: Elementor\Modules\GlobalClasses\Atomic_Global_Styles::get_cache_root_key(): Implicitly marking parameter $key as nullable is deprecated, the explicit nullable type must be used instead in /Users/emran/Local Sites/wp-test2/app/public/wp-content/plugins/elementor/modules/global-classes/atomic-global-styles.php on line 410
+<!-- wp:arraysubs/content-restricted {"enabled":true,"condition":"or","message":"\u003cp\u003eQA LEGACY CUSTOM \u003cstrong\u003esaved message\u003c/strong\u003e\u003c/p\u003e","useDefaultMessage":false,"loginRequired":true,"showToAdmins":false,"accessVersion":2} -->
+<div class="wp-block-arraysubs-content-restricted"><!-- wp:paragraph -->
+<p>QA LEGACY PROTECTED GUTENBERG — legacy author save</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:arraysubs/content-restricted -->
+
+<!-- wp:arraysubs/content-restricted {"enabled":true,"useDefaultMessage":true,"accessVersion":2} -->
+<div class="wp-block-arraysubs-content-restricted"></div>
+<!-- /wp:arraysubs/content-restricted -->
+PHP: 2026-10-24 03:45:47 [notice X 0][/Users/emran/Local Sites/wp-test2/app/public/wp-content/plugins/elementor/modules/global-classes/atomic-global-styles.php::410] Elementor\Modules\GlobalClasses\Atomic_Global_Styles::get_cache_root_key(): Implicitly marking parameter $key as nullable is deprecated, the explicit nullable type must be used instead [array (
+  'trace' => '
+#0: Elementor\Core\Logger\Manager -> shutdown()
+',
+)]

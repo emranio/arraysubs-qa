@@ -1,0 +1,17 @@
+{
+  "tokens": [
+    {
+      "user": 1,
+      "temporaryTokenRevoked": true
+    },
+    {
+      "user": 455,
+      "temporaryTokenRevoked": true
+    },
+    {
+      "user": 224,
+      "temporaryTokenRevoked": true
+    }
+  ],
+  "privateFilesRemoved": true
+}

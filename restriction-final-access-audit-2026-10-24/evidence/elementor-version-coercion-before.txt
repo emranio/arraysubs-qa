@@ -1,0 +1,34 @@
+Read-only independent review, 2026-10-24.
+Task: final access audit #3 / cross-agent independent review.
+Source: actual arraysubs/src/Features/ElementorIntegration/assets/editor.js.
+
+Raw native settings:
+{"arraysubs_enable":"yes","arraysubs_access_version":-1,"arraysubs_custom_message_enabled":"","arraysubs_login_required":"yes","arraysubs_roles":["qa_final_missing_role"],"arraysubs_condition":"or","arraysubs_show_to_admins":""}
+
+Executed the actual ensureAccessFormat function from editor.js in a Node VM
+with a Backbone-shaped settings model and the raw savedSettings map. No source
+files were changed. The only source instrumentation exposed the existing private
+function on the VM global for invocation.
+
+Observed version identification:
+{"before":-1,"after":"1"}
+
+Then executed actual WordPress via WP-CLI --allow-root, with the LocalWP MySQL
+socket and current user224 (demo260927_220; customer/demo_member/demo_premium).
+Used reflection to invoke the actual Elementor Hooks::applyRestriction on the
+same settings before and after the version emitted by the actual JS function.
+
+Observed decision:
+{"before_allowed":false,"after_js_stamp_allowed":true}
+
+Cause: server RestrictionCompatibility::isLegacy casts the marker to int. -1 is
+neither >=2 nor exactly1, so the explicit custom-message flag identifies the
+transitional current format. The editor's old truthy-number branch instead
+clamps every nonzero marker below2 to1, changing the gate to the original
+login-only override. The nonmatching ANY group then stops controlling access.
+
+Expected: identifying the format during an ordinary editor load/save preserves
+the pre-save audience. Classification must follow the same raw-data contract as
+the server before persisting a canonical version marker.
+
+No fixture records, settings or source files were written by this proof.

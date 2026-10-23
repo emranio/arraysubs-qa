@@ -76,8 +76,8 @@ try {
     $assert(str_contains($unrestricted, 'DOC_PUBLIC_MARKER'), 'No-clause shortcode intentionally returns its content');
     $admin_default = do_shortcode('[arraysubs_restrict roles="doc-role-does-not-exist"]DOC_ADMIN_MARKER[/arraysubs_restrict]');
     $assert(str_contains($admin_default, 'DOC_ADMIN_MARKER') === current_user_can('manage_options'), 'Default administrator bypass agrees with manage_options');
-    $login_only = do_shortcode('[arraysubs_restrict login_required="true" status="cancelled" roles="doc-role-does-not-exist" show_to_admins="false"]DOC_LOGIN_MARKER[/arraysubs_restrict]');
-    $assert(str_contains($login_only, 'DOC_LOGIN_MARKER') === is_user_logged_in(), 'login_required=true overrides the other clauses');
+    $login_prerequisite = do_shortcode('[arraysubs_restrict access_version="2" login_required="true" status="cancelled" roles="doc-role-does-not-exist" show_to_admins="false"]DOC_LOGIN_MARKER[/arraysubs_restrict]');
+    $assert(!str_contains($login_prerequisite, 'DOC_LOGIN_MARKER'), 'login_required=true preserves the other clauses; an unmatched role still denies access');
     $assert(arraysubs_user_meets_conditions(0, ['rules' => []]), 'Empty custom rules grant even to a guest');
     $assert(!arraysubs_user_meets_conditions($user_id, ['rules' => [['type' => 'doc-unknown-rule']]]), 'Unknown rule types fail');
     $assert(!arraysubs_user_meets_conditions($user_id, ['rules' => [['type' => 'has_active_subscription', 'product_ids' => [(string) $product_id]]]]), 'Direct product IDs must be integer values');

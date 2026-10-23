@@ -1,0 +1,2007 @@
+{
+    "passed": 332,
+    "total": 332,
+    "admin_id": 1,
+    "customer_id": 2,
+    "pro_loaded": false,
+    "checks": [
+        {
+            "passed": true,
+            "check": "Shared default message is the initial choice",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Empty configuration starts with optional login",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Administrator bypass defaults on",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Public empty gate: per-post user 0",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Public empty gate: Gutenberg user 0",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Public empty gate: Elementor user 0",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Public empty gate: Shortcode user 0",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Public empty gate: per-post user 2",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Public empty gate: Gutenberg user 2",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Public empty gate: Elementor user 2",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Public empty gate: Shortcode user 2",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Login only: per-post user 0",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Login only: Gutenberg user 0",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Login only: Elementor user 0",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Login only: Shortcode user 0",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Login only: per-post user 2",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Login only: Gutenberg user 2",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Login only: Elementor user 2",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Login only: Shortcode user 2",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Unmatched role: per-post user 0",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Unmatched role: Gutenberg user 0",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Unmatched role: Elementor user 0",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Unmatched role: Shortcode user 0",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Unmatched role: per-post user 2",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Unmatched role: Gutenberg user 2",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Unmatched role: Elementor user 2",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Unmatched role: Shortcode user 2",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Matching role: per-post user 0",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Matching role: Gutenberg user 0",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Matching role: Elementor user 0",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Matching role: Shortcode user 0",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Matching role: per-post user 2",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Matching role: Gutenberg user 2",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Matching role: Elementor user 2",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Matching role: Shortcode user 2",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Login never overrides unmatched role AND: per-post user 0",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Login never overrides unmatched role AND: Gutenberg user 0",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Login never overrides unmatched role AND: Elementor user 0",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Login never overrides unmatched role AND: Shortcode user 0",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Login never overrides unmatched role AND: per-post user 2",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Login never overrides unmatched role AND: Gutenberg user 2",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Login never overrides unmatched role AND: Elementor user 2",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Login never overrides unmatched role AND: Shortcode user 2",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Login never overrides unmatched role OR: per-post user 0",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Login never overrides unmatched role OR: Gutenberg user 0",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Login never overrides unmatched role OR: Elementor user 0",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Login never overrides unmatched role OR: Shortcode user 0",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Login never overrides unmatched role OR: per-post user 2",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Login never overrides unmatched role OR: Gutenberg user 2",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Login never overrides unmatched role OR: Elementor user 2",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Login never overrides unmatched role OR: Shortcode user 2",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Role OR failing status: per-post user 0",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Role OR failing status: Gutenberg user 0",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Role OR failing status: Elementor user 0",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Role OR failing status: Shortcode user 0",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Role OR failing status: per-post user 2",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Role OR failing status: Gutenberg user 2",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Role OR failing status: Elementor user 2",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Role OR failing status: Shortcode user 2",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Role AND failing status: per-post user 0",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Role AND failing status: Gutenberg user 0",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Role AND failing status: Elementor user 0",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Role AND failing status: Shortcode user 0",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Role AND failing status: per-post user 2",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Role AND failing status: Gutenberg user 2",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Role AND failing status: Elementor user 2",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Role AND failing status: Shortcode user 2",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Two failing clauses OR: per-post user 0",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Two failing clauses OR: Gutenberg user 0",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Two failing clauses OR: Elementor user 0",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Two failing clauses OR: Shortcode user 0",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Two failing clauses OR: per-post user 2",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Two failing clauses OR: Gutenberg user 2",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Two failing clauses OR: Elementor user 2",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Two failing clauses OR: Shortcode user 2",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Unmatched product: per-post user 0",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Unmatched product: Gutenberg user 0",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Unmatched product: Elementor user 0",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Unmatched product: Shortcode user 0",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Unmatched product: per-post user 2",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Unmatched product: Gutenberg user 2",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Unmatched product: Elementor user 2",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Unmatched product: Shortcode user 2",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Unmatched variation: per-post user 0",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Unmatched variation: Gutenberg user 0",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Unmatched variation: Elementor user 0",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Unmatched variation: Shortcode user 0",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Unmatched variation: per-post user 2",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Unmatched variation: Gutenberg user 2",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Unmatched variation: Elementor user 2",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Unmatched variation: Shortcode user 2",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Unpurchased product: per-post user 0",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Unpurchased product: Gutenberg user 0",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Unpurchased product: Elementor user 0",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Unpurchased product: Shortcode user 0",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Unpurchased product: per-post user 2",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Unpurchased product: Gutenberg user 2",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Unpurchased product: Elementor user 2",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Unpurchased product: Shortcode user 2",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Unmatched feature: per-post user 0",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Unmatched feature: Gutenberg user 0",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Unmatched feature: Elementor user 0",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Unmatched feature: Shortcode user 0",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Unmatched feature: per-post user 2",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Unmatched feature: Gutenberg user 2",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Unmatched feature: Elementor user 2",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Unmatched feature: Shortcode user 2",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Zero spend is an applied rule: per-post user 0",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Zero spend is an applied rule: Gutenberg user 0",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Zero spend is an applied rule: Elementor user 0",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Zero spend is an applied rule: Shortcode user 0",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Zero spend is an applied rule: per-post user 2",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Zero spend is an applied rule: Gutenberg user 2",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Zero spend is an applied rule: Elementor user 2",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Zero spend is an applied rule: Shortcode user 2",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Positive spend boundary: per-post user 0",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Positive spend boundary: Gutenberg user 0",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Positive spend boundary: Elementor user 0",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Positive spend boundary: Shortcode user 0",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Positive spend boundary: per-post user 2",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Positive spend boundary: Gutenberg user 2",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Positive spend boundary: Elementor user 2",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Positive spend boundary: Shortcode user 2",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Feature child fields without feature are ignored: per-post user 0",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Feature child fields without feature are ignored: Gutenberg user 0",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Feature child fields without feature are ignored: Elementor user 0",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Feature child fields without feature are ignored: Shortcode user 0",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Feature child fields without feature are ignored: per-post user 2",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Feature child fields without feature are ignored: Gutenberg user 2",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Feature child fields without feature are ignored: Elementor user 2",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Feature child fields without feature are ignored: Shortcode user 2",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Real active status: per-post",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Real active status: Gutenberg",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Real active status: Elementor",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Real active status: Shortcode",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Real subscribed product: per-post",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Real subscribed product: Gutenberg",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Real subscribed product: Elementor",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Real subscribed product: Shortcode",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Real subscription AND impossible role: per-post",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Real subscription AND impossible role: Gutenberg",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Real subscription AND impossible role: Elementor",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Real subscription AND impossible role: Shortcode",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Real subscription OR impossible role: per-post",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Real subscription OR impossible role: Gutenberg",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Real subscription OR impossible role: Elementor",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Real subscription OR impossible role: Shortcode",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Feature presence: per-post",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Feature presence: Gutenberg",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Feature presence: Elementor",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Feature presence: Shortcode",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Feature total equals boundary: per-post",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Feature total equals boundary: Gutenberg",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Feature total equals boundary: Elementor",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Feature total equals boundary: Shortcode",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Feature total below boundary: per-post",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Feature total below boundary: Gutenberg",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Feature total below boundary: Elementor",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Feature total below boundary: Shortcode",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Feature single equals boundary: per-post",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Feature single equals boundary: Gutenberg",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Feature single equals boundary: Elementor",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Feature single equals boundary: Shortcode",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Feature single below boundary: per-post",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Feature single below boundary: Gutenberg",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Feature single below boundary: Elementor",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Feature single below boundary: Shortcode",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Feature custom equal: per-post",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Feature custom equal: Gutenberg",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Feature custom equal: Elementor",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Feature custom equal: Shortcode",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Feature custom greater: per-post",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Feature custom greater: Gutenberg",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Feature custom greater: Elementor",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Feature custom greater: Shortcode",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Feature missing AND real product: per-post",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Feature missing AND real product: Gutenberg",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Feature missing AND real product: Elementor",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Feature missing AND real product: Shortcode",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Feature missing OR real product: per-post",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Feature missing OR real product: Gutenberg",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Feature missing OR real product: Elementor",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Feature missing OR real product: Shortcode",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Admin bypass 0: per-post and",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Admin bypass 0: Gutenberg and",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Admin bypass 0: Elementor and",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Admin bypass 0: Shortcode and",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Admin bypass 1: per-post and",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Admin bypass 1: Gutenberg and",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Admin bypass 1: Elementor and",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Admin bypass 1: Shortcode and",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Admin bypass 0: per-post or",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Admin bypass 0: Gutenberg or",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Admin bypass 0: Elementor or",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Admin bypass 0: Shortcode or",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Admin bypass 1: per-post or",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Admin bypass 1: Gutenberg or",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Admin bypass 1: Elementor or",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Admin bypass 1: Shortcode or",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Condition 0 forces login on the server",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Condition 0 produces exactly one match clause",
+            "actual": 1,
+            "expected": 1
+        },
+        {
+            "passed": true,
+            "check": "Condition 0 keeps login outside match logic",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Condition 1 forces login on the server",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Condition 1 produces exactly one match clause",
+            "actual": 1,
+            "expected": 1
+        },
+        {
+            "passed": true,
+            "check": "Condition 1 keeps login outside match logic",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Condition 2 forces login on the server",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Condition 2 produces exactly one match clause",
+            "actual": 1,
+            "expected": 1
+        },
+        {
+            "passed": true,
+            "check": "Condition 2 keeps login outside match logic",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Condition 3 forces login on the server",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Condition 3 produces exactly one match clause",
+            "actual": 1,
+            "expected": 1
+        },
+        {
+            "passed": true,
+            "check": "Condition 3 keeps login outside match logic",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Condition 4 forces login on the server",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Condition 4 produces exactly one match clause",
+            "actual": 1,
+            "expected": 1
+        },
+        {
+            "passed": true,
+            "check": "Condition 4 keeps login outside match logic",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Condition 5 forces login on the server",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Condition 5 produces exactly one match clause",
+            "actual": 1,
+            "expected": 1
+        },
+        {
+            "passed": true,
+            "check": "Condition 5 keeps login outside match logic",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Condition 6 forces login on the server",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Condition 6 produces exactly one match clause",
+            "actual": 1,
+            "expected": 1
+        },
+        {
+            "passed": true,
+            "check": "Condition 6 keeps login outside match logic",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Cleared conditions permit login to be switched off",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Empty enabled per-post configuration is inactive",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Disabled gate remains inactive with saved conditions",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Gutenberg disabled gate preserves content",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Elementor disabled gate preserves content",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Unknown/all condition logic normalizes: \"AND\"",
+            "actual": "and",
+            "expected": "and"
+        },
+        {
+            "passed": true,
+            "check": "Unknown/all condition logic enforces AND: \"AND\"",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Unknown/all condition logic normalizes: \" and \"",
+            "actual": "and",
+            "expected": "and"
+        },
+        {
+            "passed": true,
+            "check": "Unknown/all condition logic enforces AND: \" and \"",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Unknown/all condition logic normalizes: \"\"",
+            "actual": "and",
+            "expected": "and"
+        },
+        {
+            "passed": true,
+            "check": "Unknown/all condition logic enforces AND: \"\"",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Unknown/all condition logic normalizes: \"xor\"",
+            "actual": "and",
+            "expected": "and"
+        },
+        {
+            "passed": true,
+            "check": "Unknown/all condition logic enforces AND: \"xor\"",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Unknown/all condition logic normalizes: null",
+            "actual": "and",
+            "expected": "and"
+        },
+        {
+            "passed": true,
+            "check": "Unknown/all condition logic enforces AND: null",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Unknown/all condition logic normalizes: []",
+            "actual": "and",
+            "expected": "and"
+        },
+        {
+            "passed": true,
+            "check": "Unknown/all condition logic enforces AND: []",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Unknown/all condition logic normalizes: 1",
+            "actual": "and",
+            "expected": "and"
+        },
+        {
+            "passed": true,
+            "check": "Unknown/all condition logic enforces AND: 1",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "OR condition logic normalizes: OR",
+            "actual": "or",
+            "expected": "or"
+        },
+        {
+            "passed": true,
+            "check": "Gutenberg normalized OR accepts matching role: OR",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Elementor normalized OR accepts matching role: OR",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Shortcode normalized OR accepts matching role: OR",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "OR condition logic normalizes:  Or ",
+            "actual": "or",
+            "expected": "or"
+        },
+        {
+            "passed": true,
+            "check": "Gutenberg normalized OR accepts matching role:  Or ",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Elementor normalized OR accepts matching role:  Or ",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Shortcode normalized OR accepts matching role:  Or ",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "OR condition logic normalizes: or",
+            "actual": "or",
+            "expected": "or"
+        },
+        {
+            "passed": true,
+            "check": "Gutenberg normalized OR accepts matching role: or",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Elementor normalized OR accepts matching role: or",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Shortcode normalized OR accepts matching role: or",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Unknown/malformed evaluator rule denies: {\"type\":\"qa_unknown_condition\"}",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Unknown/malformed evaluator rule denies: \"not-an-array\"",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Nested groups normalize match logic independently",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Message 0 retains saved custom text",
+            "actual": "<p>QA <em>custom</em> <a href=\"https://example.test/custom\">Custom link</a></p>",
+            "expected": "<p>QA <em>custom</em> <a href=\"https://example.test/custom\">Custom link</a></p>"
+        },
+        {
+            "passed": true,
+            "check": "Message 0 resolves default/custom",
+            "actual": "<p>QA shared <strong>default</strong> <a href=\"https://example.test/join\">Join</a></p>",
+            "expected": "<p>QA shared <strong>default</strong> <a href=\"https://example.test/join\">Join</a></p>"
+        },
+        {
+            "passed": true,
+            "check": "Message 0: Gutenberg shows selected message",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Message 0: Gutenberg withholds private content",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Message 0: Elementor shows selected message",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Message 0: Elementor withholds private content",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Message 0: Shortcode shows selected message",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Message 0: Shortcode withholds private content",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Message 1 retains saved custom text",
+            "actual": "<p>QA <em>custom</em> <a href=\"https://example.test/custom\">Custom link</a></p>",
+            "expected": "<p>QA <em>custom</em> <a href=\"https://example.test/custom\">Custom link</a></p>"
+        },
+        {
+            "passed": true,
+            "check": "Message 1 resolves default/custom",
+            "actual": "<p>QA <em>custom</em> <a href=\"https://example.test/custom\">Custom link</a></p>",
+            "expected": "<p>QA <em>custom</em> <a href=\"https://example.test/custom\">Custom link</a></p>"
+        },
+        {
+            "passed": true,
+            "check": "Message 1: Gutenberg shows selected message",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Message 1: Gutenberg withholds private content",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Message 1: Elementor shows selected message",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Message 1: Elementor withholds private content",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Message 1: Shortcode shows selected message",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Message 1: Shortcode withholds private content",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Message 2 retains saved custom text",
+            "actual": "",
+            "expected": ""
+        },
+        {
+            "passed": true,
+            "check": "Message 2 resolves default/custom",
+            "actual": "<p>QA shared <strong>default</strong> <a href=\"https://example.test/join\">Join</a></p>",
+            "expected": "<p>QA shared <strong>default</strong> <a href=\"https://example.test/join\">Join</a></p>"
+        },
+        {
+            "passed": true,
+            "check": "Message 2: Gutenberg shows selected message",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Message 2: Gutenberg withholds private content",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Message 2: Elementor shows selected message",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Message 2: Elementor withholds private content",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Message 2: Shortcode shows selected message",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Message 2: Shortcode withholds private content",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Message 3 retains saved custom text",
+            "actual": "  ",
+            "expected": "  "
+        },
+        {
+            "passed": true,
+            "check": "Message 3 resolves default/custom",
+            "actual": "<p>QA shared <strong>default</strong> <a href=\"https://example.test/join\">Join</a></p>",
+            "expected": "<p>QA shared <strong>default</strong> <a href=\"https://example.test/join\">Join</a></p>"
+        },
+        {
+            "passed": true,
+            "check": "Message 3: Gutenberg shows selected message",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Message 3: Gutenberg withholds private content",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Message 3: Elementor shows selected message",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Message 3: Elementor withholds private content",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Message 3: Shortcode shows selected message",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Message 3: Shortcode withholds private content",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Message 4 retains saved custom text",
+            "actual": "<p><br></p>",
+            "expected": "<p><br></p>"
+        },
+        {
+            "passed": true,
+            "check": "Message 4 resolves default/custom",
+            "actual": "<p>QA shared <strong>default</strong> <a href=\"https://example.test/join\">Join</a></p>",
+            "expected": "<p>QA shared <strong>default</strong> <a href=\"https://example.test/join\">Join</a></p>"
+        },
+        {
+            "passed": true,
+            "check": "Message 4: Gutenberg shows selected message",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Message 4: Gutenberg withholds private content",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Message 4: Elementor shows selected message",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Message 4: Elementor withholds private content",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Message 4: Shortcode shows selected message",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Message 4: Shortcode withholds private content",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Message 5 retains saved custom text",
+            "actual": "<p>&nbsp; </p>",
+            "expected": "<p>&nbsp; </p>"
+        },
+        {
+            "passed": true,
+            "check": "Message 5 resolves default/custom",
+            "actual": "<p>QA shared <strong>default</strong> <a href=\"https://example.test/join\">Join</a></p>",
+            "expected": "<p>QA shared <strong>default</strong> <a href=\"https://example.test/join\">Join</a></p>"
+        },
+        {
+            "passed": true,
+            "check": "Message 5: Gutenberg shows selected message",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Message 5: Gutenberg withholds private content",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Message 5: Elementor shows selected message",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Message 5: Elementor withholds private content",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Message 5: Shortcode shows selected message",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Message 5: Shortcode withholds private content",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Message 6 retains saved custom text",
+            "actual": "\u00a0",
+            "expected": "\u00a0"
+        },
+        {
+            "passed": true,
+            "check": "Message 6 resolves default/custom",
+            "actual": "<p>QA shared <strong>default</strong> <a href=\"https://example.test/join\">Join</a></p>",
+            "expected": "<p>QA shared <strong>default</strong> <a href=\"https://example.test/join\">Join</a></p>"
+        },
+        {
+            "passed": true,
+            "check": "Message 6: Gutenberg shows selected message",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Message 6: Gutenberg withholds private content",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Message 6: Elementor shows selected message",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Message 6: Elementor withholds private content",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Message 6: Shortcode shows selected message",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Message 6: Shortcode withholds private content",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Message 7 retains saved custom text",
+            "actual": "<!-- empty -->",
+            "expected": "<!-- empty -->"
+        },
+        {
+            "passed": true,
+            "check": "Message 7 resolves default/custom",
+            "actual": "<p>QA shared <strong>default</strong> <a href=\"https://example.test/join\">Join</a></p>",
+            "expected": "<p>QA shared <strong>default</strong> <a href=\"https://example.test/join\">Join</a></p>"
+        },
+        {
+            "passed": true,
+            "check": "Message 7: Gutenberg shows selected message",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Message 7: Gutenberg withholds private content",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Message 7: Elementor shows selected message",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Message 7: Elementor withholds private content",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Message 7: Shortcode shows selected message",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Message 7: Shortcode withholds private content",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Default follows later global edits while custom text is retained",
+            "actual": "<p>Changed QA shared message</p>",
+            "expected": "<p>Changed QA shared message</p>"
+        },
+        {
+            "passed": true,
+            "check": "Empty global rich HTML uses built-in fallback",
+            "actual": "This content is restricted. Please subscribe to access.",
+            "expected": "This content is restricted. Please subscribe to access."
+        },
+        {
+            "passed": true,
+            "check": "Custom message sanitizes events, unsafe links and iframes",
+            "actual": false,
+            "expected": false
+        },
+        {
+            "passed": true,
+            "check": "Custom message preserves safe formatting",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Zero is meaningful custom message text",
+            "actual": "0",
+            "expected": "0"
+        },
+        {
+            "passed": true,
+            "check": "Post content message adapter default=1",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Purchase message adapter default=1",
+            "actual": "<p>QA shared <strong>default</strong> <a href=\"https://example.test/join\">Join</a></p>",
+            "expected": "<p>QA shared <strong>default</strong> <a href=\"https://example.test/join\">Join</a></p>"
+        },
+        {
+            "passed": true,
+            "check": "Comment message adapter default=1",
+            "actual": "<p>QA shared <strong>default</strong> <a href=\"https://example.test/join\">Join</a></p>",
+            "expected": "<p>QA shared <strong>default</strong> <a href=\"https://example.test/join\">Join</a></p>"
+        },
+        {
+            "passed": true,
+            "check": "Post content message adapter default=0",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Purchase message adapter default=0",
+            "actual": "<p>QA <em>custom</em> <a href=\"https://example.test/custom\">Custom link</a></p>",
+            "expected": "<p>QA <em>custom</em> <a href=\"https://example.test/custom\">Custom link</a></p>"
+        },
+        {
+            "passed": true,
+            "check": "Comment message adapter default=0",
+            "actual": "<p>QA <em>custom</em> <a href=\"https://example.test/custom\">Custom link</a></p>",
+            "expected": "<p>QA <em>custom</em> <a href=\"https://example.test/custom\">Custom link</a></p>"
+        },
+        {
+            "passed": true,
+            "check": "Disabled per-post gate yields to surrounding access rules",
+            "actual": null,
+            "expected": null
+        },
+        {
+            "passed": true,
+            "check": "Runtime assertions leave saved settings unchanged",
+            "actual": true,
+            "expected": true
+        },
+        {
+            "passed": true,
+            "check": "Runtime assertions leave user metadata unchanged",
+            "actual": true,
+            "expected": true
+        }
+    ]
+}
+PHP: 2026-10-24 04:08:27 [notice X 0][/Users/emran/Local Sites/wp-test2/app/public/wp-content/plugins/elementor/modules/global-classes/atomic-global-styles.php::410] Elementor\Modules\GlobalClasses\Atomic_Global_Styles::get_cache_root_key(): Implicitly marking parameter $key as nullable is deprecated, the explicit nullable type must be used instead [array (
+  'trace' => '
+#0: Elementor\Core\Logger\Manager -> shutdown()
+',
+)]
+Deprecated: Elementor\Modules\GlobalClasses\Atomic_Global_Styles::get_cache_root_key(): Implicitly marking parameter $key as nullable is deprecated, the explicit nullable type must be used instead in /Users/emran/Local Sites/wp-test2/app/public/wp-content/plugins/elementor/modules/global-classes/atomic-global-styles.php on line 410

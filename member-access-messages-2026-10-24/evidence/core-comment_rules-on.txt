@@ -1,0 +1,178 @@
+- generic
+  - link "Skip to content" [ref=e1]
+  - banner
+    - paragraph
+      - link "wp-test2" [ref=e11]
+    - navigation
+      - list
+        - list
+          - listitem [level=2]
+            - link "Cart" [ref=e39]
+          - listitem [level=2]
+            - link "Cart" [ref=e40]
+          - listitem [level=2]
+            - link "Checkout" [ref=e41]
+          - listitem [level=2]
+            - link "Checkout" [ref=e42]
+          - listitem [level=2]
+            - link "Checkout Page" [ref=e43]
+          - listitem [level=2]
+            - link "Default Redirect Page" [ref=e44]
+          - listitem [level=2]
+            - link "Demo · Account Checklist" [ref=e45]
+          - listitem [level=2]
+            - link "Demo · Content Gate Demo Hub" [ref=e46]
+          - listitem [level=2]
+            - link "Demo · Download Library" [ref=e47]
+          - listitem [level=2]
+            - link "Demo · Loyal Plus Member Resource" [ref=e48]
+          - listitem [level=2]
+            - link "Demo · Masterclass Feature Access" [ref=e49]
+          - listitem [level=2]
+            - link "Demo · Member Library" [ref=e50]
+          - listitem [level=2]
+            - link "Demo · Member or Workshop Buyer" [ref=e51]
+          - listitem [level=2]
+            - link "Demo · Member Role Resource" [ref=e52]
+          - listitem [level=2]
+            - link "Demo · Member Support" [ref=e53]
+          - listitem [level=2]
+            - link "Demo · Membership Plans" [ref=e54]
+          - listitem [level=2]
+            - link "Demo · Premium Masterclass" [ref=e55]
+          - listitem [level=2]
+            - link "Demo · Premium Upgrade Resource" [ref=e56]
+          - listitem [level=2]
+            - link "Demo · Private Member Dashboard" [ref=e57]
+          - listitem [level=2]
+            - link "Demo · Professional Workspace" [ref=e58]
+          - listitem [level=2]
+            - link "Demo · Public Preview with a Gated Lesson" [ref=e59]
+          - listitem [level=2]
+            - link "Demo · Purchased Workshop Replay" [ref=e60]
+          - listitem [level=2]
+            - link "Demo · Renewal Help" [ref=e61]
+          - listitem [level=2]
+            - link "Demo · Shortcode Access Examples" [ref=e62]
+          - listitem [level=2]
+            - link "Demo · Team Workspace" [ref=e63]
+          - listitem [level=2]
+            - link "Demo · VIP Loyalty Lounge" [ref=e64]
+          - listitem [level=2]
+            - link "Demo · Visitor Welcome" [ref=e65]
+          - listitem [level=2]
+            - link "Demo · Welcome and Getting Started" [ref=e66]
+          - listitem [level=2]
+            - link "Elementor #399" [ref=e67]
+          - listitem [level=2]
+            - link "Lost Password" [ref=e68]
+          - listitem [level=2]
+            - link "Member Login" [ref=e69]
+          - listitem [level=2]
+            - link "Member LogOut" [ref=e70]
+          - listitem [level=2]
+            - link "Member TOS Page" [ref=e71]
+          - listitem [level=2]
+            - link "My Account" [ref=e72]
+          - listitem [level=2]
+            - link "My account" [ref=e73]
+          - listitem [level=2]
+            - link "Public Individual Page" [ref=e74]
+          - listitem [level=2]
+            - link "Register" [ref=e75]
+          - listitem [level=2]
+            - link "Sample Page" [ref=e76]
+          - listitem [level=2]
+            - link "Sample Page" [ref=e77]
+          - listitem [level=2]
+            - link "Shop" [ref=e78]
+          - listitem [level=2]
+            - link "Subscription Plan" [ref=e79]
+          - listitem [level=2]
+            - link "Thank You Page" [ref=e80]
+          - listitem [level=2]
+            - link "today is Sunday" [ref=e81]
+    - link "Login" [ref=e2]
+      - image
+    - button "Number of items in the cart: 0" [ref=e3]
+      - image
+  - main
+    - generic
+      - heading "Demo · Member Discussion" [level=1, ref=e4]
+      - paragraph
+        - StaticText "Written by"
+      - link "admin" [ref=e12]
+      - paragraph
+        - StaticText "in"
+      - link "Uncategorized" [ref=e13]
+      - heading "Member Discussion" [level=2, ref=e5]
+      - paragraph
+        - StaticText "This sample content demonstrates a configured access rule tied to the demo plans and purchase history."
+      - paragraph
+        - StaticText "QA custom comment_rules "
+        - strong
+          - StaticText "members only"
+        - StaticText ". "
+        - link "Join now" [ref=e14]
+        - StaticText "."
+      - navigation "Post navigation" [ref=e6]
+        - link "Demo · Workshop Bonus" [ref=e17]
+        - link "Demo · Community Questions" [ref=e18]
+    - generic
+      - heading "MORE POSTS" [level=2, ref=e7]
+      - list
+        - listitem [level=1]
+          - heading "Demo · URL-protected Member Resource" [level=3, ref=e19]
+            - link "Demo · URL-protected Member Resource" [ref=e23]
+          - link "September 27, 2026" [ref=e24]
+            - time
+              - StaticText "September 27, 2026"
+        - listitem [level=1]
+          - heading "Demo · URL-protected Premium Resource" [level=3, ref=e20]
+            - link "Demo · URL-protected Premium Resource" [ref=e25]
+          - link "September 27, 2026" [ref=e26]
+            - time
+              - StaticText "September 27, 2026"
+        - listitem [level=1]
+          - heading "Demo · Week-two Learning Resource" [level=3, ref=e21]
+            - link "Demo · Week-two Learning Resource" [ref=e27]
+          - link "September 27, 2026" [ref=e28]
+            - time
+              - StaticText "September 27, 2026"
+        - listitem [level=1]
+          - heading "Demo · Member Lesson" [level=3, ref=e22]
+            - link "Demo · Member Lesson" [ref=e29]
+          - link "September 27, 2026" [ref=e30]
+            - time
+              - StaticText "September 27, 2026"
+  - contentinfo
+    - heading "wp-test2" [level=2, ref=e8]
+      - link "wp-test2" [ref=e15]
+    - navigation " 2" [ref=e9]
+      - list
+        - listitem [level=1]
+          - link "Blog" [ref=e31]
+        - listitem [level=1]
+          - link "About" [ref=e32]
+        - listitem [level=1]
+          - link "FAQs" [ref=e33]
+        - listitem [level=1]
+          - link "Authors" [ref=e34]
+    - navigation " 3" [ref=e10]
+      - list
+        - listitem [level=1]
+          - link "Events" [ref=e35]
+        - listitem [level=1]
+          - link "Shop" [ref=e36]
+        - listitem [level=1]
+          - link "Patterns" [ref=e37]
+        - listitem [level=1]
+          - link "Themes" [ref=e38]
+    - paragraph
+      - StaticText "Twenty Twenty-Five"
+    - paragraph
+      - StaticText "Designed with "
+      - link "WordPress" [ref=e16]
+  - generic
+  - generic
+  - status

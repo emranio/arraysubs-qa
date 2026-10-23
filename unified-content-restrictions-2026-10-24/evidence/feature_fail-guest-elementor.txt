@@ -1,0 +1,10 @@
+- generic
+  - paragraph
+    - StaticText "QA UNIFIED DEFAULT "
+    - strong
+      - StaticText "message"
+    - StaticText ". "
+    - link "Sign in" [ref=e1]
+    - StaticText "."
+  - StaticText "desktop"
+  - status

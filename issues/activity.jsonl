@@ -421,3 +421,95 @@
 {"timestamp":"2026-10-23T03:55:20.507386+06:00","action":"edit","task_id":90,"detail":"Woo Cart interactivity requests undefined Store API root"}
 {"timestamp":"2026-10-23T04:16:35.231901+06:00","action":"edit","task_id":90,"detail":"Woo Cart interactivity requests undefined Store API root"}
 {"timestamp":"2026-10-23T04:16:35.23287+06:00","action":"release","task_id":90,"detail":"burnside-chartula"}
+{"timestamp":"2026-10-24T03:12:23.569244+06:00","action":"create","task_id":94,"detail":"Restricted shortcodes skip guest redirects after login prerequisite check"}
+{"timestamp":"2026-10-24T03:12:26.867951+06:00","action":"create","task_id":95,"detail":"Elementor logged-in users control renders as a checkbox instead of a switch"}
+{"timestamp":"2026-10-24T03:12:30.226152+06:00","action":"move","task_id":95,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-10-24T03:13:10.562948+06:00","action":"edit","task_id":95,"detail":"Elementor logged-in users control renders as a checkbox instead of a switch"}
+{"timestamp":"2026-10-24T03:13:14.21332+06:00","action":"move","task_id":95,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-10-24T03:13:17.762232+06:00","action":"edit","task_id":95,"detail":"Elementor logged-in users control renders as a checkbox instead of a switch"}
+{"timestamp":"2026-10-24T03:13:17.762347+06:00","action":"release","task_id":95,"detail":"reaccuse-stolist"}
+{"timestamp":"2026-10-24T03:14:29.059083+06:00","action":"edit","task_id":94,"detail":"Restricted shortcodes skip guest redirects after login prerequisite check"}
+{"timestamp":"2026-10-24T03:14:29.07568+06:00","action":"move","task_id":94,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-10-24T03:16:17.967561+06:00","action":"create","task_id":96,"detail":"Elementor custom feature comparison displays a blank default operator"}
+{"timestamp":"2026-10-24T03:16:45.769512+06:00","action":"move","task_id":96,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-10-24T03:19:09.930357+06:00","action":"create","task_id":97,"detail":"Elementor ArraySubs restriction controls use Elementor accents instead of the WordPress admin scheme"}
+{"timestamp":"2026-10-24T03:19:09.976612+06:00","action":"move","task_id":97,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-10-24T03:22:08.028981+06:00","action":"create","task_id":98,"detail":"Elementor saved feature picker displays the wrong label after reload"}
+{"timestamp":"2026-10-24T03:22:08.071725+06:00","action":"move","task_id":98,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-10-24T03:24:11.104984+06:00","action":"edit","task_id":97,"detail":"Elementor ArraySubs restriction controls use Elementor accents instead of the WordPress admin scheme"}
+{"timestamp":"2026-10-24T03:24:11.149233+06:00","action":"move","task_id":97,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-10-24T03:24:11.190108+06:00","action":"edit","task_id":97,"detail":"Elementor ArraySubs restriction controls use Elementor accents instead of the WordPress admin scheme"}
+{"timestamp":"2026-10-24T03:24:11.190196+06:00","action":"release","task_id":97,"detail":"reaccuse-stolist"}
+{"timestamp":"2026-10-24T03:24:11.231276+06:00","action":"edit","task_id":98,"detail":"Elementor saved feature picker displays the wrong label after reload"}
+{"timestamp":"2026-10-24T03:24:11.27573+06:00","action":"move","task_id":98,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-10-24T03:24:11.317542+06:00","action":"edit","task_id":98,"detail":"Elementor saved feature picker displays the wrong label after reload"}
+{"timestamp":"2026-10-24T03:24:11.318102+06:00","action":"release","task_id":98,"detail":"reaccuse-stolist"}
+{"timestamp":"2026-10-24T03:25:10.675476+06:00","action":"edit","task_id":96,"detail":"Elementor custom feature comparison displays a blank default operator"}
+{"timestamp":"2026-10-24T03:25:10.71785+06:00","action":"move","task_id":96,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-10-24T03:25:10.758268+06:00","action":"edit","task_id":96,"detail":"Elementor custom feature comparison displays a blank default operator"}
+{"timestamp":"2026-10-24T03:25:10.758366+06:00","action":"release","task_id":96,"detail":"reaccuse-stolist"}
+{"timestamp":"2026-10-24T03:28:41.599021+06:00","action":"edit","task_id":94,"detail":"Restricted shortcodes skip guest redirects after login prerequisite check"}
+{"timestamp":"2026-10-24T03:28:41.599658+06:00","action":"release","task_id":94,"detail":"unified-restrictions-qa"}
+{"timestamp":"2026-10-24T03:41:36.971486+06:00","action":"create","task_id":99,"detail":"Billing edit wizard labels the final step Review \u0026 create"}
+{"timestamp":"2026-10-24T03:43:48.304438+06:00","action":"create","task_id":100,"detail":"Elementor unversioned custom-message settings lose conditions during display filtering"}
+{"timestamp":"2026-10-24T03:43:59.084904+06:00","action":"move","task_id":100,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-10-24T03:44:51.576195+06:00","action":"move","task_id":99,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-10-24T03:44:51.619952+06:00","action":"edit","task_id":99,"detail":"Billing edit wizard labels the final step Review \u0026 create"}
+{"timestamp":"2026-10-24T03:46:30.037409+06:00","action":"create","task_id":101,"detail":"Elementor conversion draft shows stale custom-message switch state"}
+{"timestamp":"2026-10-24T03:46:45.987173+06:00","action":"edit","task_id":99,"detail":"Billing edit wizard labels the final step Review \u0026 create"}
+{"timestamp":"2026-10-24T03:46:46.029355+06:00","action":"move","task_id":99,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-10-24T03:46:46.660381+06:00","action":"move","task_id":101,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-10-24T03:47:11.318992+06:00","action":"edit","task_id":100,"detail":"Elementor unversioned custom-message settings lose conditions during display filtering"}
+{"timestamp":"2026-10-24T03:47:11.333555+06:00","action":"move","task_id":100,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-10-24T03:47:11.345995+06:00","action":"edit","task_id":100,"detail":"Elementor unversioned custom-message settings lose conditions during display filtering"}
+{"timestamp":"2026-10-24T03:47:11.346087+06:00","action":"release","task_id":100,"detail":"legacy-root"}
+{"timestamp":"2026-10-24T03:47:57.388448+06:00","action":"create","task_id":102,"detail":"Shared confirmation closes after a failed plan save"}
+{"timestamp":"2026-10-24T03:48:30.176127+06:00","action":"move","task_id":102,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-10-24T03:49:27.693885+06:00","action":"edit","task_id":101,"detail":"Elementor conversion draft shows stale custom-message switch state"}
+{"timestamp":"2026-10-24T03:49:27.735443+06:00","action":"move","task_id":101,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-10-24T03:49:27.776413+06:00","action":"edit","task_id":101,"detail":"Elementor conversion draft shows stale custom-message switch state"}
+{"timestamp":"2026-10-24T03:49:27.77652+06:00","action":"release","task_id":101,"detail":"reaccuse-stolist"}
+{"timestamp":"2026-10-24T03:52:57.267224+06:00","action":"edit","task_id":101,"detail":"Elementor conversion draft shows stale custom-message switch state"}
+{"timestamp":"2026-10-24T03:53:12.034087+06:00","action":"edit","task_id":102,"detail":"Shared confirmation closes after a failed plan save"}
+{"timestamp":"2026-10-24T03:53:12.08105+06:00","action":"move","task_id":102,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-10-24T03:53:54.232654+06:00","action":"create","task_id":103,"detail":"Plans toolbar overflows the mobile viewport"}
+{"timestamp":"2026-10-24T03:54:25.353859+06:00","action":"edit","task_id":103,"detail":"Plans toolbar overflows the mobile viewport"}
+{"timestamp":"2026-10-24T03:54:25.42155+06:00","action":"move","task_id":103,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-10-24T03:54:49.019755+06:00","action":"move","task_id":103,"detail":"closed -\u003e in-progress"}
+{"timestamp":"2026-10-24T03:54:49.066887+06:00","action":"edit","task_id":103,"detail":"Plans toolbar overflows the mobile viewport"}
+{"timestamp":"2026-10-24T03:55:36.993976+06:00","action":"edit","task_id":103,"detail":"Plans toolbar overflows the mobile viewport"}
+{"timestamp":"2026-10-24T03:55:37.037287+06:00","action":"move","task_id":103,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-10-24T03:56:28.10719+06:00","action":"create","task_id":104,"detail":"Legacy per-post boolean normalization changes the allowed audience"}
+{"timestamp":"2026-10-24T03:57:34.912672+06:00","action":"create","task_id":105,"detail":"Unsupported subscription statuses can unlock Match Any access"}
+{"timestamp":"2026-10-24T03:57:51.114218+06:00","action":"create","task_id":106,"detail":"Elementor unrelated heading save can silently turn current ANY restrictions into login-only access"}
+{"timestamp":"2026-10-24T03:58:56.517947+06:00","action":"move","task_id":106,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-10-24T03:59:03.771798+06:00","action":"edit","task_id":104,"detail":"Legacy per-post boolean normalization changes the allowed audience"}
+{"timestamp":"2026-10-24T03:59:03.787293+06:00","action":"edit","task_id":105,"detail":"Unsupported subscription statuses can unlock Match Any access"}
+{"timestamp":"2026-10-24T03:59:13.248211+06:00","action":"create","task_id":107,"detail":"Old Gutenberg raw attributes bypass their original schema and can expose protected blocks"}
+{"timestamp":"2026-10-24T03:59:15.628054+06:00","action":"move","task_id":107,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-10-24T03:59:36.771915+06:00","action":"edit","task_id":104,"detail":"Legacy per-post boolean normalization changes the allowed audience"}
+{"timestamp":"2026-10-24T03:59:36.773082+06:00","action":"release","task_id":104,"detail":"prickle-julid"}
+{"timestamp":"2026-10-24T03:59:36.789052+06:00","action":"move","task_id":104,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-10-24T03:59:36.805727+06:00","action":"edit","task_id":105,"detail":"Unsupported subscription statuses can unlock Match Any access"}
+{"timestamp":"2026-10-24T03:59:36.805869+06:00","action":"release","task_id":105,"detail":"prickle-julid"}
+{"timestamp":"2026-10-24T03:59:36.82065+06:00","action":"move","task_id":105,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-10-24T04:01:46.853958+06:00","action":"edit","task_id":106,"detail":"Elementor unrelated heading save can silently turn current ANY restrictions into login-only access"}
+{"timestamp":"2026-10-24T04:04:25.680934+06:00","action":"create","task_id":108,"detail":"Ordinary save can erase an effective legacy fallback restriction"}
+{"timestamp":"2026-10-24T04:06:22.055776+06:00","action":"edit","task_id":106,"detail":"Elementor unrelated heading save can silently turn current ANY restrictions into login-only access"}
+{"timestamp":"2026-10-24T04:06:22.100249+06:00","action":"move","task_id":106,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-10-24T04:06:22.13999+06:00","action":"edit","task_id":106,"detail":"Elementor unrelated heading save can silently turn current ANY restrictions into login-only access"}
+{"timestamp":"2026-10-24T04:06:22.140128+06:00","action":"release","task_id":106,"detail":"reaccuse-stolist"}
+{"timestamp":"2026-10-24T04:07:22.082361+06:00","action":"edit","task_id":108,"detail":"Ordinary save can erase an effective legacy fallback restriction"}
+{"timestamp":"2026-10-24T04:08:06.8065+06:00","action":"move","task_id":106,"detail":"closed -\u003e in-progress"}
+{"timestamp":"2026-10-24T04:08:06.850382+06:00","action":"edit","task_id":106,"detail":"Elementor unrelated heading save can silently turn current ANY restrictions into login-only access"}
+{"timestamp":"2026-10-24T04:08:45.081575+06:00","action":"edit","task_id":108,"detail":"Ordinary save can erase an effective legacy fallback restriction"}
+{"timestamp":"2026-10-24T04:08:45.082783+06:00","action":"release","task_id":108,"detail":"prickle-julid"}
+{"timestamp":"2026-10-24T04:08:45.107648+06:00","action":"move","task_id":108,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-10-24T04:09:43.212367+06:00","action":"edit","task_id":106,"detail":"Elementor unrelated heading save can silently turn current ANY restrictions into login-only access"}
+{"timestamp":"2026-10-24T04:09:43.255229+06:00","action":"move","task_id":106,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-10-24T04:09:43.297112+06:00","action":"edit","task_id":106,"detail":"Elementor unrelated heading save can silently turn current ANY restrictions into login-only access"}
+{"timestamp":"2026-10-24T04:09:43.297207+06:00","action":"release","task_id":106,"detail":"reaccuse-stolist"}
+{"timestamp":"2026-10-24T04:18:59.856333+06:00","action":"edit","task_id":107,"detail":"Old Gutenberg raw attributes bypass their original schema and can expose protected blocks"}
+{"timestamp":"2026-10-24T04:18:59.857184+06:00","action":"release","task_id":107,"detail":"unflat-gallein"}
+{"timestamp":"2026-10-24T04:19:34.410464+06:00","action":"edit","task_id":107,"detail":"Old Gutenberg raw attributes bypass their original schema and can expose protected blocks"}
+{"timestamp":"2026-10-24T04:19:34.452652+06:00","action":"move","task_id":107,"detail":"in-progress -\u003e closed"}

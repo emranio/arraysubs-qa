@@ -1,0 +1,3 @@
+- generic
+  - StaticText "desktop"
+  - status

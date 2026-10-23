@@ -1,0 +1,10 @@
+No syntax errors detected in arraysubs/src/Features/ElementorIntegration/Services/Hooks.php
+No syntax errors detected in arraysubs/src/Features/ElementorIntegration/Services/RestrictionSettings.php
+No syntax errors detected in arraysubs/src/Features/ElementorIntegration/Controls/CompatibilityNotice.php
+No syntax errors detected in arraysubs/src/Features/ElementorIntegration/Controls/LoginSwitcher.php
+No syntax errors detected in arraysubs/src/Features/GutenbergIntegration/Services/Hooks.php
+No syntax errors detected in arraysubs/src/Features/GutenbergIntegration/block/render.php
+No syntax errors detected in arraysubs/src/Features/MembersAccess/Services/PostRestrictionConfig.php
+No syntax errors detected in arraysubs/src/Features/MembersAccess/Services/PostRestrictionGate.php
+No syntax errors detected in arraysubs/src/Features/MembersAccess/Services/RestrictionCompatibility.php
+No syntax errors detected in arraysubs/src/Features/MembersAccess/Services/Hooks.php

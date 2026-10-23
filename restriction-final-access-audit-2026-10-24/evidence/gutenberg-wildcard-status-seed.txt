@@ -1,0 +1,5 @@
+QA_RESULT:{"case":"wildcard-status","kind":"gutenberg","raw":{"enabled":true,"roles":["qa_final_missing_role"],"showToAdmins":false,"message":"QA FINAL SECURITY DENIED","accessVersion":2,"status":["any"],"condition":"or"}}PHP: 2026-10-24 03:59:07 [notice X 0][/Users/emran/Local Sites/wp-test2/app/public/wp-content/plugins/elementor/modules/global-classes/atomic-global-styles.php::410] Elementor\Modules\GlobalClasses\Atomic_Global_Styles::get_cache_root_key(): Implicitly marking parameter $key as nullable is deprecated, the explicit nullable type must be used instead [array (
+  'trace' => '
+#0: Elementor\Core\Logger\Manager -> shutdown()
+',
+)]

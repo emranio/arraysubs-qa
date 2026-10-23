@@ -1,0 +1,50 @@
+{
+    "url_rules": {
+        "id": "demo260927-url-members",
+        "message": "<p>QA custom url_rules <strong>members only<\/strong>. <a href=\"http:\/\/localhost:10013\/my-account\/\">Join now<\/a>.<\/p>",
+        "custom_message_enabled": false
+    },
+    "cpt_rules": {
+        "id": "demo260927-cpt-lesson",
+        "message": "<p>QA custom cpt_rules <strong>members only<\/strong>. <a href=\"http:\/\/localhost:10013\/my-account\/\">Join now<\/a>.<\/p>",
+        "custom_message_enabled": false
+    },
+    "ecommerce_rules": {
+        "id": "demo260927-shop-flask",
+        "message": "<p>QA custom ecommerce_rules <strong>members only<\/strong>. <a href=\"http:\/\/localhost:10013\/my-account\/\">Join now<\/a>.<\/p>",
+        "custom_message_enabled": false
+    },
+    "comment_rules": {
+        "id": "demo260927-comment-members",
+        "message": "<p>QA custom comment_rules <strong>members only<\/strong>. <a href=\"http:\/\/localhost:10013\/my-account\/\">Join now<\/a>.<\/p>",
+        "custom_message_enabled": false
+    },
+    "purchase_limit_rules": {
+        "id": "demo260927-limit-mugs",
+        "message": "<p>QA custom purchase_limit_rules <strong>members only<\/strong>. <a href=\"http:\/\/localhost:10013\/my-account\/\">Join now<\/a>.<\/p>",
+        "custom_message_enabled": false
+    },
+    "targets": {
+        "9237": {
+            "url": "http:\/\/localhost:10013\/2026\/09\/27\/demo-cpt-lesson\/",
+            "per_post_active": false
+        },
+        "9239": {
+            "url": "http:\/\/localhost:10013\/2026\/09\/27\/demo-public-discussion\/",
+            "per_post_active": false
+        },
+        "6702": {
+            "url": "http:\/\/localhost:10013\/product\/demo-%c2%b7-limited-edition-flask\/",
+            "per_post_active": false
+        },
+        "6698": {
+            "url": "http:\/\/localhost:10013\/product\/demo-%c2%b7-ceramic-member-mug\/",
+            "per_post_active": false
+        }
+    }
+}
+PHP: 2026-10-24 02:48:44 [notice X 0][/Users/emran/Local Sites/wp-test2/app/public/wp-content/plugins/elementor/modules/global-classes/atomic-global-styles.php::410] Elementor\Modules\GlobalClasses\Atomic_Global_Styles::get_cache_root_key(): Implicitly marking parameter $key as nullable is deprecated, the explicit nullable type must be used instead [array (
+  'trace' => '
+#0: Elementor\Core\Logger\Manager -> shutdown()
+',
+)]

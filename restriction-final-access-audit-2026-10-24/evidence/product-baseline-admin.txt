@@ -1,0 +1,194 @@
+- generic
+  - navigation "Toolbar" [ref=e2]
+    - menu
+      - group
+        - menuitem "About WordPress" [expanded=false, ref=e17]
+          - StaticText "About WordPress"
+      - group
+        - menuitem "wp-test2" [expanded=false, ref=e18]
+      - group
+        - menuitem "Live" [ref=e19]
+      - group
+        - menuitem "Edit Site" [ref=e20]
+      - group
+        - menuitem "5 updates available" [ref=e21]
+          - StaticText "5 updates available"
+      - group
+        - menuitem "0 Comments in moderation" [ref=e22]
+          - StaticText "0 Comments in moderation"
+      - group
+        - menuitem "New" [expanded=false, ref=e23]
+          - StaticText "New"
+      - group
+        - menuitem "Edit product" [ref=e24]
+    - menu
+      - group
+        - menuitem "Howdy, admin" [expanded=false, ref=e25]
+          - StaticText "Howdy, admin"
+      - group
+        - menuitem "Search" [ref=e26]
+          - generic
+            - textbox "Search" [ref=e35]
+            - LabelText
+              - StaticText "Search"
+  - link "Skip to content" [ref=e1]
+  - banner
+    - paragraph
+      - link "wp-test2" [ref=e10]
+    - navigation
+      - list
+        - list
+          - listitem [level=2]
+            - link "Cart" [ref=e36]
+          - listitem [level=2]
+            - link "Cart" [ref=e37]
+          - listitem [level=2]
+            - link "Checkout" [ref=e38]
+          - listitem [level=2]
+            - link "Checkout" [ref=e39]
+          - listitem [level=2]
+            - link "Checkout Page" [ref=e40]
+          - listitem [level=2]
+            - link "Default Redirect Page" [ref=e41]
+          - listitem [level=2]
+            - link "Demo · Account Checklist" [ref=e42]
+          - listitem [level=2]
+            - link "Demo · Content Gate Demo Hub" [ref=e43]
+          - listitem [level=2]
+            - link "Demo · Download Library" [ref=e44]
+          - listitem [level=2]
+            - link "Demo · Loyal Plus Member Resource" [ref=e45]
+          - listitem [level=2]
+            - link "Demo · Masterclass Feature Access" [ref=e46]
+          - listitem [level=2]
+            - link "Demo · Member Library" [ref=e47]
+          - listitem [level=2]
+            - link "Demo · Member or Workshop Buyer" [ref=e48]
+          - listitem [level=2]
+            - link "Demo · Member Role Resource" [ref=e49]
+          - listitem [level=2]
+            - link "Demo · Member Support" [ref=e50]
+          - listitem [level=2]
+            - link "Demo · Membership Plans" [ref=e51]
+          - listitem [level=2]
+            - link "Demo · Premium Masterclass" [ref=e52]
+          - listitem [level=2]
+            - link "Demo · Premium Upgrade Resource" [ref=e53]
+          - listitem [level=2]
+            - link "Demo · Private Member Dashboard" [ref=e54]
+          - listitem [level=2]
+            - link "Demo · Professional Workspace" [ref=e55]
+          - listitem [level=2]
+            - link "Demo · Public Preview with a Gated Lesson" [ref=e56]
+          - listitem [level=2]
+            - link "Demo · Purchased Workshop Replay" [ref=e57]
+          - listitem [level=2]
+            - link "Demo · Renewal Help" [ref=e58]
+          - listitem [level=2]
+            - link "Demo · Shortcode Access Examples" [ref=e59]
+          - listitem [level=2]
+            - link "Demo · Team Workspace" [ref=e60]
+          - listitem [level=2]
+            - link "Demo · VIP Loyalty Lounge" [ref=e61]
+          - listitem [level=2]
+            - link "Demo · Visitor Welcome" [ref=e62]
+          - listitem [level=2]
+            - link "Demo · Welcome and Getting Started" [ref=e63]
+          - listitem [level=2]
+            - link "Elementor #19967" [ref=e64]
+          - listitem [level=2]
+            - link "Elementor #399" [ref=e65]
+          - listitem [level=2]
+            - link "Lost Password" [ref=e66]
+          - listitem [level=2]
+            - link "Member Login" [ref=e67]
+          - listitem [level=2]
+            - link "Member LogOut" [ref=e68]
+          - listitem [level=2]
+            - link "Member TOS Page" [ref=e69]
+          - listitem [level=2]
+            - link "My Account" [ref=e70]
+          - listitem [level=2]
+            - link "My account" [ref=e71]
+          - listitem [level=2]
+            - link "Public Individual Page" [ref=e72]
+          - listitem [level=2]
+            - link "QA final access author_elementor 20261024" [ref=e73]
+          - listitem [level=2]
+            - link "QA final access author_gutenberg 20261024" [ref=e74]
+          - listitem [level=2]
+            - link "QA final access author_post saved 20261024QA final access author_post 20261024" [ref=e75]
+          - listitem [level=2]
+            - link "QA final access elementor 20261024" [ref=e76]
+          - listitem [level=2]
+            - link "QA final access gutenberg 20261024" [ref=e77]
+          - listitem [level=2]
+            - link "QA final access post 20261024" [ref=e78]
+          - listitem [level=2]
+            - link "Register" [ref=e79]
+          - listitem [level=2]
+            - link "Sample Page" [ref=e80]
+          - listitem [level=2]
+            - link "Sample Page" [ref=e81]
+          - listitem [level=2]
+            - link "Shop" [ref=e82]
+          - listitem [level=2]
+            - link "Subscription Plan" [ref=e83]
+          - listitem [level=2]
+            - link "Thank You Page" [ref=e84]
+          - listitem [level=2]
+            - link "today is Sunday" [ref=e85]
+    - link "My Account" [ref=e3]
+      - generic
+        - image
+    - button "Number of items in the cart: 2" [ref=e4]
+      - image
+      - StaticText "2"
+  - main
+    - navigation "Breadcrumb" [ref=e5]
+      - link "Home" [ref=e11]
+      - StaticText "/QA final classic restriction 20261024"
+    - image "Awaiting product image"
+    - heading "QA final classic restriction 20261024" [level=1, ref=e6]
+    - generic
+      - StaticText "1.00$"
+    - paragraph
+      - StaticText "QA FINAL CLASSIC DENIED"
+    - tablist
+      - tab "Description" [selected, ref=e12]
+      - tab "Reviews" [ref=e13]
+    - tabpanel "Description"
+      - heading "Description" [level=2, ref=e14]
+      - paragraph
+        - StaticText "QA FINAL CLASSIC DENIED"
+  - contentinfo
+    - heading "wp-test2" [level=2, ref=e7]
+      - link "wp-test2" [ref=e15]
+    - navigation " 2" [ref=e8]
+      - list
+        - listitem [level=1]
+          - link "Blog" [ref=e27]
+        - listitem [level=1]
+          - link "About" [ref=e28]
+        - listitem [level=1]
+          - link "FAQs" [ref=e29]
+        - listitem [level=1]
+          - link "Authors" [ref=e30]
+    - navigation " 3" [ref=e9]
+      - list
+        - listitem [level=1]
+          - link "Events" [ref=e31]
+        - listitem [level=1]
+          - link "Shop" [ref=e32]
+        - listitem [level=1]
+          - link "Patterns" [ref=e33]
+        - listitem [level=1]
+          - link "Themes" [ref=e34]
+    - paragraph
+      - StaticText "Twenty Twenty-Five"
+    - paragraph
+      - StaticText "Designed with "
+      - link "WordPress" [ref=e16]
+  - generic
+  - generic
+  - status
