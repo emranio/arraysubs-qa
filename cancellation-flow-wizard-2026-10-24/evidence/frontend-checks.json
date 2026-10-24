@@ -1,0 +1,34 @@
+[
+  {
+    "passed": true,
+    "check": "Required reason disables Continue until selected"
+  },
+  {
+    "passed": true,
+    "check": "Saved edited reason label appears in My Account"
+  },
+  {
+    "passed": true,
+    "check": "Saved 23 percent discount displays and acceptance changes 40.00 to 30.80 for two renewals"
+  },
+  {
+    "passed": true,
+    "check": "Temporary-break reason shows only the matching pause offer and acceptance pauses the subscription"
+  },
+  {
+    "passed": true,
+    "check": "Price reason shows the approved smaller plan and acceptance schedules the 20.00 downgrade"
+  },
+  {
+    "passed": true,
+    "check": "Technical-issues reason shows support only and its link opens the configured support page"
+  },
+  {
+    "passed": true,
+    "check": "Retention-off cancellation succeeds and records the selected reason"
+  },
+  {
+    "passed": true,
+    "check": "Core without Pro loads edited reasons and permits cancellation with an optional blank reason"
+  }
+]

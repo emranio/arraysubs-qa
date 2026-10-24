@@ -1,0 +1,10 @@
+{
+  "background": "rgba(0, 0, 0, 0)",
+  "contentPadding": "16px",
+  "footerPadding": "12px 16px",
+  "height": 577,
+  "noSidebar": true,
+  "progressDisplay": "grid",
+  "progressTop": 57,
+  "width": 1280
+}

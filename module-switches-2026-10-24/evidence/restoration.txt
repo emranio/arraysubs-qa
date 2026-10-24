@@ -1,0 +1,1 @@
+Success: Original settings, plugin activation, save timestamp and coming-soon option restored exactly; four fixture pages and editor removed; Pro booted.

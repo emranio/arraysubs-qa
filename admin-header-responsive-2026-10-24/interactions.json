@@ -1,0 +1,205 @@
+[
+  {
+    "check": "mobile section navigation",
+    "state": {
+      "hash": "#/settings/refunds",
+      "selected": "settings-refunds",
+      "focus": "<body class=\"wp-admin wp-core-ui js theme-twentytwentyfive wc-wp-version-gte-53 wc-wp-version-gte-55 wc-wp-version-gte-70 toplevel_page_arraysubs-mainadmin auto-fold admin-bar branch-7-1 version-7-1-3 admin-color-modern locale-en-us svg wp-theme-twentytwentyfive customize-support dialog-body dialog-"
+    }
+  },
+  {
+    "check": "browser Back restores selection",
+    "state": {
+      "hash": "#/settings/general",
+      "selected": "settings-general",
+      "focus": "<body class=\"wp-admin wp-core-ui js theme-twentytwentyfive wc-wp-version-gte-53 wc-wp-version-gte-55 wc-wp-version-gte-70 toplevel_page_arraysubs-mainadmin auto-fold admin-bar branch-7-1 version-7-1-3 admin-color-modern locale-en-us svg wp-theme-twentytwentyfive customize-support dialog-body dialog-"
+    }
+  },
+  {
+    "check": "keyboard mobile selector typeahead",
+    "state": {
+      "hash": "#/settings/toolkit",
+      "selected": "settings-toolkit",
+      "verifiedAfterRouteSettled": true
+    }
+  },
+  {
+    "check": "sticky toolbar offset",
+    "state": {
+      "width": 390,
+      "scrollY": 500,
+      "headerTop": 0,
+      "toolbarBottom": -454
+    }
+  },
+  {
+    "check": "sticky toolbar offset",
+    "state": {
+      "width": 768,
+      "scrollY": 1000,
+      "headerTop": 46,
+      "toolbarBottom": 46
+    }
+  },
+  {
+    "check": "sticky toolbar offset",
+    "state": {
+      "width": 1440,
+      "scrollY": 1500,
+      "headerTop": 32,
+      "toolbarBottom": 32
+    }
+  },
+  {
+    "check": "desktop keyboard focus and WordPress accent",
+    "state": {
+      "text": "Toolkit",
+      "outline": "rgb(56, 88, 233)",
+      "outlineStyle": "solid",
+      "scheme": "#3858e9",
+      "focusVisible": true
+    }
+  },
+  {
+    "check": "desktop tab navigation",
+    "state": {
+      "hash": "#/settings/toolkit",
+      "selected": "settings-toolkit",
+      "focus": "<body class=\"wp-admin wp-core-ui js theme-twentytwentyfive wc-wp-version-gte-53 wc-wp-version-gte-55 wc-wp-version-gte-70 toplevel_page_arraysubs-mainadmin auto-fold admin-bar branch-7-1 version-7-1-3 admin-color-modern locale-en-us svg wp-theme-twentytwentyfive customize-support dialog-body dialog-"
+    }
+  },
+  {
+    "check": "mobile Emails external admin navigation",
+    "url": "http://localhost:10013/wp-admin/admin.php?page=wc-settings&tab=email"
+  },
+  {
+    "check": "separate content overflow",
+    "state": {
+      "route": "#/subscriptions",
+      "width": 390,
+      "pageWidth": 675,
+      "headerRight": 390,
+      "overflow": [
+        {
+          "tag": "DIV",
+          "class": "arraysubs-dl-toolbar-main",
+          "right": 674.703125
+        },
+        {
+          "tag": "DIV",
+          "class": "arraysubs-dl-search-group",
+          "right": 674.703125
+        },
+        {
+          "tag": "INPUT",
+          "class": "",
+          "right": 673.703125
+        },
+        {
+          "tag": "A",
+          "class": "button button-primary arraysubs-dl-add-new-btn",
+          "right": 520.390625
+        },
+        {
+          "tag": "DIV",
+          "class": "arraysubs-export-actions",
+          "right": 674.703125
+        },
+        {
+          "tag": "BUTTON",
+          "class": "button button-secondary arraysubs-dl-custom-btn arraysubs-export-actions__csv",
+          "right": 641.703125
+        },
+        {
+          "tag": "DIV",
+          "class": "arraysubs-export-columns",
+          "right": 674.703125
+        },
+        {
+          "tag": "BUTTON",
+          "class": "button button-secondary arraysubs-dl-custom-btn arraysubs-export-columns__trigger",
+          "right": 674.703125
+        },
+        {
+          "tag": "svg",
+          "class": {},
+          "right": 665.703125
+        },
+        {
+          "tag": "rect",
+          "class": {},
+          "right": 663.703125
+        }
+      ]
+    }
+  },
+  {
+    "check": "separate content overflow",
+    "state": {
+      "route": "#/store-credit/history",
+      "width": 390,
+      "pageWidth": 598,
+      "headerRight": 390,
+      "overflow": [
+        {
+          "tag": "DIV",
+          "class": "arraysubs-credit-history__filter-group",
+          "right": 438.328125
+        },
+        {
+          "tag": "SELECT",
+          "class": "",
+          "right": 437.328125
+        },
+        {
+          "tag": "TABLE",
+          "class": "arraysubs-credit-history__table",
+          "right": 597.578125
+        },
+        {
+          "tag": "THEAD",
+          "class": "",
+          "right": 597.078125
+        },
+        {
+          "tag": "TR",
+          "class": "",
+          "right": 597.078125
+        },
+        {
+          "tag": "TH",
+          "class": "",
+          "right": 405.5
+        },
+        {
+          "tag": "TH",
+          "class": "",
+          "right": 512.359375
+        },
+        {
+          "tag": "TH",
+          "class": "",
+          "right": 597.078125
+        },
+        {
+          "tag": "TBODY",
+          "class": "",
+          "right": 597.078125
+        },
+        {
+          "tag": "TR",
+          "class": "",
+          "right": 597.078125
+        }
+      ]
+    }
+  },
+  {
+    "check": "single title styles",
+    "state": {
+      "font": "18px",
+      "padding": "0px",
+      "headerHeight": 77.6875
+    }
+  }
+]

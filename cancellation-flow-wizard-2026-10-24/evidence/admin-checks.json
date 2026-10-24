@@ -1,0 +1,118 @@
+[
+  {
+    "passed": true,
+    "check": "Step 1 contains both reason settings"
+  },
+  {
+    "passed": true,
+    "check": "Step 2 contains master switch"
+  },
+  {
+    "passed": true,
+    "check": "Offers remain configurable when master is off"
+  },
+  {
+    "passed": true,
+    "check": "Disabled master has explanatory notice"
+  },
+  {
+    "passed": true,
+    "check": "Offer reason choices reflect unsaved new reason"
+  },
+  {
+    "passed": true,
+    "check": "Invalid min/max blocks continuing"
+  },
+  {
+    "passed": true,
+    "check": "Validation error is visible"
+  },
+  {
+    "passed": true,
+    "check": "Discount over 100 percent blocks continuing"
+  },
+  {
+    "passed": true,
+    "check": "Step 4 follows Discount"
+  },
+  {
+    "passed": true,
+    "check": "Step 5 follows Pause"
+  },
+  {
+    "passed": true,
+    "check": "Step 6 follows Downgrade"
+  },
+  {
+    "passed": true,
+    "check": "Missing enabled support URL blocks review"
+  },
+  {
+    "passed": true,
+    "check": "Review shows current unsaved discount"
+  },
+  {
+    "passed": true,
+    "check": "Review does not save changes automatically"
+  },
+  {
+    "passed": true,
+    "check": "Review includes unsaved reason"
+  },
+  {
+    "passed": true,
+    "check": "Removed reason stays removed on review"
+  },
+  {
+    "passed": true,
+    "check": "Closing dirty wizard opens shared confirmation"
+  },
+  {
+    "passed": true,
+    "check": "Keep editing preserves review"
+  },
+  {
+    "passed": true,
+    "check": "Failed save retains all current edits"
+  },
+  {
+    "passed": true,
+    "check": "Failed save produces visible error toast"
+  },
+  {
+    "passed": true,
+    "check": "Saved discount survives reload"
+  },
+  {
+    "passed": true,
+    "check": "Saved reason label survives reload"
+  },
+  {
+    "passed": true,
+    "check": "Deleted reason does not resurrect on reload"
+  },
+  {
+    "passed": true,
+    "check": "Discard restores saved 23 percent after reopening"
+  },
+  {
+    "passed": true,
+    "check": "390px editor has no horizontal overflow"
+  },
+  {
+    "passed": true,
+    "check": "Mobile review keeps the current step visible"
+  },
+  {
+    "passed": true,
+    "check": "Accent follows the Sunrise WordPress admin color scheme"
+  },
+  {
+    "passed": true,
+    "check": "Review rejects an invalid earlier field and focuses billing cycles"
+  },
+  {
+    "passed": true,
+    "check": "Enter in a valid input advances to the next step"
+  }
+]

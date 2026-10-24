@@ -1,0 +1,19 @@
+{
+  "buttons": [
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px",
+      "color": "rgb(100, 105, 112)",
+      "iconWidth": "28px",
+      "label": "Edit reason"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px",
+      "color": "rgb(100, 105, 112)",
+      "iconWidth": "28px",
+      "label": "Delete reason"
+    }
+  ],
+  "gap": "16px"
+}

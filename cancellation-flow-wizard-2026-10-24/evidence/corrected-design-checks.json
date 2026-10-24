@@ -1,0 +1,11 @@
+{
+  "shared_progress_component": true,
+  "no_sidebar": true,
+  "setup_layout_measurements_match": true,
+  "seven_steps_navigate": true,
+  "review_does_not_save": true,
+  "review_edit_link": true,
+  "mobile_no_overflow": true,
+  "discard_works": true,
+  "uncaught_errors": false
+}

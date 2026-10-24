@@ -1,0 +1,10 @@
+{
+    "cancellation_restored": true,
+    "customer_cancellation_policy_restored": true,
+    "unrelated_settings_preserved": true,
+    "plugins_restored": true,
+    "saved_at_restored": true,
+    "test_users_removed": true,
+    "test_posts_removed": true,
+    "test_order_removed": true
+}

@@ -1,0 +1,26 @@
+{
+    "admin": 1,
+    "pages": {
+        "post": {
+            "id": 21042,
+            "url": "http:\/\/localhost:10013\/qa-module-post-20261024\/",
+            "marker": "QA MODULE POST SECRET"
+        },
+        "gutenberg": {
+            "id": 21043,
+            "url": "http:\/\/localhost:10013\/qa-module-gutenberg-20261024\/",
+            "marker": "QA MODULE GUTENBERG SECRET"
+        },
+        "shortcode": {
+            "id": 21044,
+            "url": "http:\/\/localhost:10013\/qa-module-shortcode-20261024\/",
+            "marker": "QA MODULE SHORTCODE SECRET"
+        },
+        "elementor": {
+            "id": 21045,
+            "url": "http:\/\/localhost:10013\/qa-module-elementor-20261024\/",
+            "marker": "QA MODULE ELEMENTOR SECRET"
+        }
+    },
+    "editor": 471
+}

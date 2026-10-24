@@ -1,0 +1,26 @@
+<?php
+defined('ABSPATH') || exit;
+$root = __DIR__;
+$f = json_decode(file_get_contents($root . '/fixtures.json'), true);
+$b = json_decode(file_get_contents('/tmp/arraysubs-cancellation-backup.json'), true);
+$s = get_option('arraysubs_settings');
+$checks = [];
+$check = static function ($ok, $label) use (&$checks) { $checks[] = ['passed'=>(bool)$ok,'check'=>$label]; };
+$check((int)$s['cancellation']['retention_offers']['discount']['discount_percent']===23,'Admin discount saved as 23 percent');
+$check(count($s['cancellation']['reasons'])===8 && $s['cancellation']['reasons'][0]['label']==='Price does not fit my budget','Reason changes persisted and removed temporary row stayed removed');
+$check($s['cancellation']['retention_offers']['skip']===$b['settings']['cancellation']['retention_offers']['skip'],'Saving editor preserves the unedited skip offer');
+$check($s['cancellation']['form_config']===$b['settings']['cancellation']['form_config'],'Saving editor preserves the existing customer form configuration');
+$check($s['cancellation']['retention_offers']['pause']==$b['settings']['cancellation']['retention_offers']['pause'],'Saving other steps preserves pause offer fields');
+$discount = arraysubs_get_subscription_active_retention_discount($f['subscriptions']['discount']);
+$check((int)($discount['amount']??0)===23 && (int)($discount['remaining']??0)===2,'Browser-accepted discount records 23 percent for two renewals');
+$check(get_post_status($f['subscriptions']['pause'])==='arraysubs-paused','Browser-accepted pause changes subscription status');
+$pending = json_decode(get_post_meta($f['subscriptions']['downgrade'],'_pending_switch',true),true);
+$check(($pending['switch_type']??'')==='downgrade' && (int)($pending['target_product_id']??0)===$f['products'][1] && (float)($pending['new_price']??0)===20.0,'Browser-accepted downgrade schedules the configured 20-dollar plan');
+$check(get_post_status($f['subscriptions']['support'])==='arraysubs-active','Support visit leaves subscription active');
+$check(get_post_status($f['subscriptions']['cancel'])==='arraysubs-cancelled' && get_post_meta($f['subscriptions']['cancel'],'_cancellation_reason',true)==='other','Retention-off browser cancellation records selected reason');
+$check(get_post_status($f['subscriptions']['core'])==='arraysubs-cancelled' && get_post_meta($f['subscriptions']['core'],'_cancellation_reason',true)==='','Core-only browser cancellation permits optional blank reason');
+$outside=$s;$original=$b['settings'];unset($outside['cancellation'],$original['cancellation']);$outside['customer_actions']['allow_cancellation']=$original['customer_actions']['allow_cancellation'];
+$check($outside===$original,'Unrelated settings are unchanged by the editor and fixture setup');
+file_put_contents($root.'/evidence/runtime-checks.json',wp_json_encode($checks,JSON_PRETTY_PRINT));
+echo wp_json_encode($checks,JSON_PRETTY_PRINT).PHP_EOL;
+if(in_array(false,array_column($checks,'passed'),true)) WP_CLI::error('A runtime verification failed.');

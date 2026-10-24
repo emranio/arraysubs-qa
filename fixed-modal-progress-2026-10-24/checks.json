@@ -1,0 +1,557 @@
+[
+  {
+    "label": "cancellation-desktop",
+    "before": {
+      "clientHeight": 686,
+      "content": {
+        "bottom": 1200.734375,
+        "height": 1050.4375,
+        "width": 1200,
+        "x": 360,
+        "y": 150.296875
+      },
+      "focus": "arraysubs-modal__close boxed-fullscreen-modal__close",
+      "footer": {
+        "bottom": 900,
+        "height": 64,
+        "width": 1200,
+        "x": 360,
+        "y": 836
+      },
+      "header": {
+        "bottom": 40,
+        "height": 40,
+        "width": 1200,
+        "x": 360,
+        "y": 0
+      },
+      "horizontalOverflow": false,
+      "progress": {
+        "bottom": 142.296875,
+        "height": 86.296875,
+        "width": 1168,
+        "x": 376,
+        "y": 56
+      },
+      "progressInFixedRegion": true,
+      "progressInScroll": false,
+      "scroll": {
+        "bottom": 836,
+        "height": 685.703125,
+        "width": 1920,
+        "x": 0,
+        "y": 150.296875
+      },
+      "scrollHeight": 1050,
+      "top": 0,
+      "viewport": [
+        1920,
+        900
+      ]
+    },
+    "after": {
+      "clientHeight": 686,
+      "content": {
+        "bottom": 836.734375,
+        "height": 1050.4375,
+        "width": 1200,
+        "x": 360,
+        "y": -213.703125
+      },
+      "focus": "arraysubs-modal__close boxed-fullscreen-modal__close",
+      "footer": {
+        "bottom": 900,
+        "height": 64,
+        "width": 1200,
+        "x": 360,
+        "y": 836
+      },
+      "header": {
+        "bottom": 40,
+        "height": 40,
+        "width": 1200,
+        "x": 360,
+        "y": 0
+      },
+      "horizontalOverflow": false,
+      "progress": {
+        "bottom": 142.296875,
+        "height": 86.296875,
+        "width": 1168,
+        "x": 376,
+        "y": 56
+      },
+      "progressInFixedRegion": true,
+      "progressInScroll": false,
+      "scroll": {
+        "bottom": 836,
+        "height": 685.703125,
+        "width": 1920,
+        "x": 0,
+        "y": 150.296875
+      },
+      "scrollHeight": 1050,
+      "top": 364,
+      "viewport": [
+        1920,
+        900
+      ]
+    },
+    "checks": {
+      "fixedRegion": true,
+      "progressDoesNotMove": true,
+      "headerDoesNotMove": true,
+      "footerDoesNotMove": true,
+      "bodyScrolls": true,
+      "fullWidthScroll": true,
+      "noHorizontalOverflow": true,
+      "progressVisible": true,
+      "footerVisible": true,
+      "maxWidth": true
+    }
+  },
+  {
+    "label": "cancellation-mobile",
+    "before": {
+      "clientHeight": 542,
+      "content": {
+        "bottom": 1562.90625,
+        "height": 1384.90625,
+        "width": 390,
+        "x": 0,
+        "y": 178
+      },
+      "focus": "arraysubs-modal__close boxed-fullscreen-modal__close",
+      "footer": {
+        "bottom": 844,
+        "height": 124,
+        "width": 390,
+        "x": 0,
+        "y": 720
+      },
+      "header": {
+        "bottom": 40,
+        "height": 40,
+        "width": 390,
+        "x": 0,
+        "y": 0
+      },
+      "horizontalOverflow": false,
+      "progress": {
+        "bottom": 170,
+        "height": 114,
+        "width": 358,
+        "x": 16,
+        "y": 56
+      },
+      "progressInFixedRegion": true,
+      "progressInScroll": false,
+      "scroll": {
+        "bottom": 720,
+        "height": 542,
+        "width": 390,
+        "x": 0,
+        "y": 178
+      },
+      "scrollHeight": 1385,
+      "top": 0,
+      "viewport": [
+        390,
+        844
+      ]
+    },
+    "after": {
+      "clientHeight": 542,
+      "content": {
+        "bottom": 1162.90625,
+        "height": 1384.90625,
+        "width": 390,
+        "x": 0,
+        "y": -222
+      },
+      "focus": "arraysubs-modal__close boxed-fullscreen-modal__close",
+      "footer": {
+        "bottom": 844,
+        "height": 124,
+        "width": 390,
+        "x": 0,
+        "y": 720
+      },
+      "header": {
+        "bottom": 40,
+        "height": 40,
+        "width": 390,
+        "x": 0,
+        "y": 0
+      },
+      "horizontalOverflow": false,
+      "progress": {
+        "bottom": 170,
+        "height": 114,
+        "width": 358,
+        "x": 16,
+        "y": 56
+      },
+      "progressInFixedRegion": true,
+      "progressInScroll": false,
+      "scroll": {
+        "bottom": 720,
+        "height": 542,
+        "width": 390,
+        "x": 0,
+        "y": 178
+      },
+      "scrollHeight": 1385,
+      "top": 400,
+      "viewport": [
+        390,
+        844
+      ]
+    },
+    "checks": {
+      "fixedRegion": true,
+      "progressDoesNotMove": true,
+      "headerDoesNotMove": true,
+      "footerDoesNotMove": true,
+      "bodyScrolls": true,
+      "fullWidthScroll": true,
+      "noHorizontalOverflow": true,
+      "progressVisible": true,
+      "footerVisible": true,
+      "maxWidth": true
+    }
+  },
+  {
+    "label": "setup-desktop",
+    "before": {
+      "clientHeight": 657,
+      "content": {
+        "bottom": 1091.796875,
+        "height": 912.90625,
+        "width": 1200,
+        "x": 360,
+        "y": 178.890625
+      },
+      "focus": "arraysubs-setup-wizard__step-title",
+      "footer": {
+        "bottom": 900,
+        "height": 64,
+        "width": 1200,
+        "x": 360,
+        "y": 836
+      },
+      "header": {
+        "bottom": 40,
+        "height": 40,
+        "width": 1200,
+        "x": 360,
+        "y": 0
+      },
+      "horizontalOverflow": false,
+      "progress": {
+        "bottom": 170.890625,
+        "height": 114.890625,
+        "width": 1168,
+        "x": 376,
+        "y": 56
+      },
+      "progressInFixedRegion": true,
+      "progressInScroll": false,
+      "scroll": {
+        "bottom": 836,
+        "height": 657.109375,
+        "width": 1920,
+        "x": 0,
+        "y": 178.890625
+      },
+      "scrollHeight": 913,
+      "top": 0,
+      "viewport": [
+        1920,
+        900
+      ]
+    },
+    "after": {
+      "clientHeight": 657,
+      "content": {
+        "bottom": 835.796875,
+        "height": 912.90625,
+        "width": 1200,
+        "x": 360,
+        "y": -77.109375
+      },
+      "focus": "arraysubs-setup-wizard__step-title",
+      "footer": {
+        "bottom": 900,
+        "height": 64,
+        "width": 1200,
+        "x": 360,
+        "y": 836
+      },
+      "header": {
+        "bottom": 40,
+        "height": 40,
+        "width": 1200,
+        "x": 360,
+        "y": 0
+      },
+      "horizontalOverflow": false,
+      "progress": {
+        "bottom": 170.890625,
+        "height": 114.890625,
+        "width": 1168,
+        "x": 376,
+        "y": 56
+      },
+      "progressInFixedRegion": true,
+      "progressInScroll": false,
+      "scroll": {
+        "bottom": 836,
+        "height": 657.109375,
+        "width": 1920,
+        "x": 0,
+        "y": 178.890625
+      },
+      "scrollHeight": 913,
+      "top": 256,
+      "viewport": [
+        1920,
+        900
+      ]
+    },
+    "checks": {
+      "fixedRegion": true,
+      "progressDoesNotMove": true,
+      "headerDoesNotMove": true,
+      "footerDoesNotMove": true,
+      "bodyScrolls": true,
+      "fullWidthScroll": true,
+      "noHorizontalOverflow": true,
+      "progressVisible": true,
+      "footerVisible": true,
+      "maxWidth": true
+    }
+  },
+  {
+    "label": "setup-mobile",
+    "before": {
+      "clientHeight": 598,
+      "content": {
+        "bottom": 1935.8125,
+        "height": 1757.8125,
+        "width": 390,
+        "x": 0,
+        "y": 178
+      },
+      "focus": "arraysubs-setup-wizard__step-title",
+      "footer": {
+        "bottom": 844,
+        "height": 68,
+        "width": 390,
+        "x": 0,
+        "y": 776
+      },
+      "header": {
+        "bottom": 40,
+        "height": 40,
+        "width": 390,
+        "x": 0,
+        "y": 0
+      },
+      "horizontalOverflow": false,
+      "progress": {
+        "bottom": 170,
+        "height": 114,
+        "width": 358,
+        "x": 16,
+        "y": 56
+      },
+      "progressInFixedRegion": true,
+      "progressInScroll": false,
+      "scroll": {
+        "bottom": 776,
+        "height": 598,
+        "width": 390,
+        "x": 0,
+        "y": 178
+      },
+      "scrollHeight": 1758,
+      "top": 0,
+      "viewport": [
+        390,
+        844
+      ]
+    },
+    "after": {
+      "clientHeight": 598,
+      "content": {
+        "bottom": 1535.8125,
+        "height": 1757.8125,
+        "width": 390,
+        "x": 0,
+        "y": -222
+      },
+      "focus": "arraysubs-setup-wizard__step-title",
+      "footer": {
+        "bottom": 844,
+        "height": 68,
+        "width": 390,
+        "x": 0,
+        "y": 776
+      },
+      "header": {
+        "bottom": 40,
+        "height": 40,
+        "width": 390,
+        "x": 0,
+        "y": 0
+      },
+      "horizontalOverflow": false,
+      "progress": {
+        "bottom": 170,
+        "height": 114,
+        "width": 358,
+        "x": 16,
+        "y": 56
+      },
+      "progressInFixedRegion": true,
+      "progressInScroll": false,
+      "scroll": {
+        "bottom": 776,
+        "height": 598,
+        "width": 390,
+        "x": 0,
+        "y": 178
+      },
+      "scrollHeight": 1758,
+      "top": 400,
+      "viewport": [
+        390,
+        844
+      ]
+    },
+    "checks": {
+      "fixedRegion": true,
+      "progressDoesNotMove": true,
+      "headerDoesNotMove": true,
+      "footerDoesNotMove": true,
+      "bodyScrolls": true,
+      "fullWidthScroll": true,
+      "noHorizontalOverflow": true,
+      "progressVisible": true,
+      "footerVisible": true,
+      "maxWidth": true
+    }
+  },
+  {
+    "label": "setup-form-mobile",
+    "before": {
+      "clientHeight": 542,
+      "content": {
+        "bottom": 2077.9375,
+        "height": 1899.9375,
+        "width": 390,
+        "x": 0,
+        "y": 178
+      },
+      "focus": "arraysubs-setup-wizard__step-title",
+      "footer": {
+        "bottom": 844,
+        "height": 124,
+        "width": 390,
+        "x": 0,
+        "y": 720
+      },
+      "header": {
+        "bottom": 40,
+        "height": 40,
+        "width": 390,
+        "x": 0,
+        "y": 0
+      },
+      "horizontalOverflow": false,
+      "progress": {
+        "bottom": 170,
+        "height": 114,
+        "width": 358,
+        "x": 16,
+        "y": 56
+      },
+      "progressInFixedRegion": true,
+      "progressInScroll": false,
+      "scroll": {
+        "bottom": 720,
+        "height": 542,
+        "width": 390,
+        "x": 0,
+        "y": 178
+      },
+      "scrollHeight": 1900,
+      "top": 0,
+      "viewport": [
+        390,
+        844
+      ]
+    },
+    "after": {
+      "clientHeight": 542,
+      "content": {
+        "bottom": 1677.9375,
+        "height": 1899.9375,
+        "width": 390,
+        "x": 0,
+        "y": -222
+      },
+      "focus": "arraysubs-setup-wizard__step-title",
+      "footer": {
+        "bottom": 844,
+        "height": 124,
+        "width": 390,
+        "x": 0,
+        "y": 720
+      },
+      "header": {
+        "bottom": 40,
+        "height": 40,
+        "width": 390,
+        "x": 0,
+        "y": 0
+      },
+      "horizontalOverflow": false,
+      "progress": {
+        "bottom": 170,
+        "height": 114,
+        "width": 358,
+        "x": 16,
+        "y": 56
+      },
+      "progressInFixedRegion": true,
+      "progressInScroll": false,
+      "scroll": {
+        "bottom": 720,
+        "height": 542,
+        "width": 390,
+        "x": 0,
+        "y": 178
+      },
+      "scrollHeight": 1900,
+      "top": 400,
+      "viewport": [
+        390,
+        844
+      ]
+    },
+    "checks": {
+      "fixedRegion": true,
+      "progressDoesNotMove": true,
+      "headerDoesNotMove": true,
+      "footerDoesNotMove": true,
+      "bodyScrolls": true,
+      "fullWidthScroll": true,
+      "noHorizontalOverflow": true,
+      "progressVisible": true,
+      "footerVisible": true,
+      "maxWidth": true
+    }
+  }
+]

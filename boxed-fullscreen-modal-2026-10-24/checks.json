@@ -1,0 +1,855 @@
+[
+  {
+    "label": "cancellation-desktop-card",
+    "geometry": {
+      "beforeContent": null,
+      "clientHeight": 616,
+      "content": {
+        "bottom": 1200.734375,
+        "height": 1160.734375,
+        "width": 1200,
+        "x": 360,
+        "y": 40
+      },
+      "contentPadding": 16,
+      "dividerInset": 16,
+      "footer": {
+        "bottom": 720,
+        "height": 64,
+        "width": 1200,
+        "x": 360,
+        "y": 656
+      },
+      "header": {
+        "bottom": 40,
+        "height": 40,
+        "width": 1200,
+        "x": 360,
+        "y": 0
+      },
+      "headerBorder": "0px",
+      "horizontalOverflow": false,
+      "id": "boxed-fullscreen-modal-:r1:",
+      "modal": {
+        "bottom": 720,
+        "height": 720,
+        "width": 1920,
+        "x": 0,
+        "y": 0
+      },
+      "scroll": {
+        "bottom": 656,
+        "height": 616,
+        "width": 1920,
+        "x": 0,
+        "y": 40
+      },
+      "scrollHeight": 1161,
+      "scrollTop": 0,
+      "scrollbarWidth": 0,
+      "viewport": [
+        1920,
+        720
+      ],
+      "afterLeftScrollTop": 545,
+      "wheelEvents": [
+        {
+          "dy": 600,
+          "inScroll": true,
+          "x": 8,
+          "y": 348
+        },
+        {
+          "dy": -10000,
+          "inScroll": true,
+          "x": 1912,
+          "y": 348
+        }
+      ]
+    },
+    "checks": [
+      {
+        "message": "Modal fills viewport",
+        "pass": true
+      },
+      {
+        "message": "Scroll hit area fills viewport width",
+        "pass": true
+      },
+      {
+        "message": "Content respects max width",
+        "pass": true
+      },
+      {
+        "message": "Header aligns with content",
+        "pass": true
+      },
+      {
+        "message": "Footer aligns with content",
+        "pass": true
+      },
+      {
+        "message": "Header divider is inset to actual content edges",
+        "pass": true
+      },
+      {
+        "message": "Footer visible and no horizontal overflow",
+        "pass": true
+      },
+      {
+        "message": "Type-specific unique modal ID",
+        "pass": true
+      },
+      {
+        "message": "Native wheel scrolls from left margin",
+        "pass": true
+      },
+      {
+        "message": "Native wheel scrolls from right margin",
+        "pass": true
+      },
+      {
+        "message": "Header and footer remain fixed while scrolling",
+        "pass": true
+      },
+      {
+        "message": "Native wheel events target full-width scroll area on both sides",
+        "pass": true
+      }
+    ]
+  },
+  {
+    "label": "cancellation-mobile-card",
+    "geometry": {
+      "beforeContent": null,
+      "clientHeight": 680,
+      "content": {
+        "bottom": 1562.90625,
+        "height": 1522.90625,
+        "width": 390,
+        "x": 0,
+        "y": 40
+      },
+      "contentPadding": 16,
+      "dividerInset": 16,
+      "footer": {
+        "bottom": 844,
+        "height": 124,
+        "width": 390,
+        "x": 0,
+        "y": 720
+      },
+      "header": {
+        "bottom": 40,
+        "height": 40,
+        "width": 390,
+        "x": 0,
+        "y": 0
+      },
+      "headerBorder": "0px",
+      "horizontalOverflow": false,
+      "id": "boxed-fullscreen-modal-:r1:",
+      "modal": {
+        "bottom": 844,
+        "height": 844,
+        "width": 390,
+        "x": 0,
+        "y": 0
+      },
+      "scroll": {
+        "bottom": 720,
+        "height": 680,
+        "width": 390,
+        "x": 0,
+        "y": 40
+      },
+      "scrollHeight": 1523,
+      "scrollTop": 0,
+      "scrollbarWidth": 0,
+      "viewport": [
+        390,
+        844
+      ],
+      "afterLeftScrollTop": 600,
+      "wheelEvents": [
+        {
+          "dy": 600,
+          "inScroll": true,
+          "x": 8,
+          "y": 380
+        },
+        {
+          "dy": -10000,
+          "inScroll": true,
+          "x": 382,
+          "y": 380
+        }
+      ]
+    },
+    "checks": [
+      {
+        "message": "Modal fills viewport",
+        "pass": true
+      },
+      {
+        "message": "Scroll hit area fills viewport width",
+        "pass": true
+      },
+      {
+        "message": "Content respects max width",
+        "pass": true
+      },
+      {
+        "message": "Header aligns with content",
+        "pass": true
+      },
+      {
+        "message": "Footer aligns with content",
+        "pass": true
+      },
+      {
+        "message": "Header divider is inset to actual content edges",
+        "pass": true
+      },
+      {
+        "message": "Footer visible and no horizontal overflow",
+        "pass": true
+      },
+      {
+        "message": "Type-specific unique modal ID",
+        "pass": true
+      },
+      {
+        "message": "Native wheel scrolls from left margin",
+        "pass": true
+      },
+      {
+        "message": "Native wheel scrolls from right margin",
+        "pass": true
+      },
+      {
+        "message": "Header and footer remain fixed while scrolling",
+        "pass": true
+      },
+      {
+        "message": "Native wheel events target full-width scroll area on both sides",
+        "pass": true
+      }
+    ]
+  },
+  {
+    "label": "setup-desktop-card",
+    "geometry": {
+      "beforeContent": null,
+      "clientHeight": 616,
+      "content": {
+        "bottom": 1091.796875,
+        "height": 1051.796875,
+        "width": 1200,
+        "x": 360,
+        "y": 40
+      },
+      "contentPadding": 16,
+      "dividerInset": 16,
+      "footer": {
+        "bottom": 720,
+        "height": 64,
+        "width": 1200,
+        "x": 360,
+        "y": 656
+      },
+      "header": {
+        "bottom": 40,
+        "height": 40,
+        "width": 1200,
+        "x": 360,
+        "y": 0
+      },
+      "headerBorder": "0px",
+      "horizontalOverflow": false,
+      "id": "boxed-fullscreen-modal-:r5:",
+      "modal": {
+        "bottom": 720,
+        "height": 720,
+        "width": 1920,
+        "x": 0,
+        "y": 0
+      },
+      "scroll": {
+        "bottom": 656,
+        "height": 616,
+        "width": 1920,
+        "x": 0,
+        "y": 40
+      },
+      "scrollHeight": 1052,
+      "scrollTop": 0,
+      "scrollbarWidth": 0,
+      "viewport": [
+        1920,
+        720
+      ],
+      "afterLeftScrollTop": 436,
+      "wheelEvents": [
+        {
+          "dy": 600,
+          "inScroll": true,
+          "x": 8,
+          "y": 348
+        },
+        {
+          "dy": -10000,
+          "inScroll": true,
+          "x": 1912,
+          "y": 348
+        }
+      ]
+    },
+    "checks": [
+      {
+        "message": "Modal fills viewport",
+        "pass": true
+      },
+      {
+        "message": "Scroll hit area fills viewport width",
+        "pass": true
+      },
+      {
+        "message": "Content respects max width",
+        "pass": true
+      },
+      {
+        "message": "Header aligns with content",
+        "pass": true
+      },
+      {
+        "message": "Footer aligns with content",
+        "pass": true
+      },
+      {
+        "message": "Header divider is inset to actual content edges",
+        "pass": true
+      },
+      {
+        "message": "Footer visible and no horizontal overflow",
+        "pass": true
+      },
+      {
+        "message": "Type-specific unique modal ID",
+        "pass": true
+      },
+      {
+        "message": "Native wheel scrolls from left margin",
+        "pass": true
+      },
+      {
+        "message": "Native wheel scrolls from right margin",
+        "pass": true
+      },
+      {
+        "message": "Header and footer remain fixed while scrolling",
+        "pass": true
+      },
+      {
+        "message": "Native wheel events target full-width scroll area on both sides",
+        "pass": true
+      }
+    ]
+  },
+  {
+    "label": "setup-mobile-card",
+    "geometry": {
+      "beforeContent": null,
+      "clientHeight": 736,
+      "content": {
+        "bottom": 1935.8125,
+        "height": 1895.8125,
+        "width": 390,
+        "x": 0,
+        "y": 40
+      },
+      "contentPadding": 16,
+      "dividerInset": 16,
+      "footer": {
+        "bottom": 844,
+        "height": 68,
+        "width": 390,
+        "x": 0,
+        "y": 776
+      },
+      "header": {
+        "bottom": 40,
+        "height": 40,
+        "width": 390,
+        "x": 0,
+        "y": 0
+      },
+      "headerBorder": "0px",
+      "horizontalOverflow": false,
+      "id": "boxed-fullscreen-modal-:r9:",
+      "modal": {
+        "bottom": 844,
+        "height": 844,
+        "width": 390,
+        "x": 0,
+        "y": 0
+      },
+      "scroll": {
+        "bottom": 776,
+        "height": 736,
+        "width": 390,
+        "x": 0,
+        "y": 40
+      },
+      "scrollHeight": 1896,
+      "scrollTop": 0,
+      "scrollbarWidth": 0,
+      "viewport": [
+        390,
+        844
+      ],
+      "afterLeftScrollTop": 600,
+      "wheelEvents": [
+        {
+          "dy": 600,
+          "inScroll": true,
+          "x": 8,
+          "y": 408
+        },
+        {
+          "dy": -10000,
+          "inScroll": true,
+          "x": 382,
+          "y": 408
+        }
+      ]
+    },
+    "checks": [
+      {
+        "message": "Modal fills viewport",
+        "pass": true
+      },
+      {
+        "message": "Scroll hit area fills viewport width",
+        "pass": true
+      },
+      {
+        "message": "Content respects max width",
+        "pass": true
+      },
+      {
+        "message": "Header aligns with content",
+        "pass": true
+      },
+      {
+        "message": "Footer aligns with content",
+        "pass": true
+      },
+      {
+        "message": "Header divider is inset to actual content edges",
+        "pass": true
+      },
+      {
+        "message": "Footer visible and no horizontal overflow",
+        "pass": true
+      },
+      {
+        "message": "Type-specific unique modal ID",
+        "pass": true
+      },
+      {
+        "message": "Native wheel scrolls from left margin",
+        "pass": true
+      },
+      {
+        "message": "Native wheel scrolls from right margin",
+        "pass": true
+      },
+      {
+        "message": "Header and footer remain fixed while scrolling",
+        "pass": true
+      },
+      {
+        "message": "Native wheel events target full-width scroll area on both sides",
+        "pass": true
+      }
+    ]
+  },
+  {
+    "label": "product-desktop-final",
+    "geometry": {
+      "beforeContent": {
+        "bottom": 112.796875,
+        "height": 72.796875,
+        "width": 1920,
+        "x": 0,
+        "y": 40
+      },
+      "clientHeight": 423,
+      "content": {
+        "bottom": 724.34375,
+        "height": 611.546875,
+        "width": 800,
+        "x": 560,
+        "y": 112.796875
+      },
+      "contentPadding": 28,
+      "dividerInset": 28,
+      "footer": {
+        "bottom": 600,
+        "height": 64,
+        "width": 800,
+        "x": 560,
+        "y": 536
+      },
+      "header": {
+        "bottom": 40,
+        "height": 40,
+        "width": 800,
+        "x": 560,
+        "y": 0
+      },
+      "headerBorder": "0px",
+      "horizontalOverflow": false,
+      "id": "boxed-fullscreen-modal-:r1p:",
+      "modal": {
+        "bottom": 600,
+        "height": 600,
+        "width": 1920,
+        "x": 0,
+        "y": 0
+      },
+      "scroll": {
+        "bottom": 536,
+        "height": 423.203125,
+        "width": 1920,
+        "x": 0,
+        "y": 112.796875
+      },
+      "scrollHeight": 612,
+      "scrollTop": 0,
+      "scrollbarWidth": 0,
+      "viewport": [
+        1920,
+        600
+      ],
+      "afterLeftScrollTop": 188,
+      "wheelEvents": [
+        {
+          "dy": 600,
+          "inScroll": true,
+          "x": 8,
+          "y": 324
+        },
+        {
+          "dy": -10000,
+          "inScroll": true,
+          "x": 1912,
+          "y": 324
+        }
+      ]
+    },
+    "checks": [
+      {
+        "message": "Modal fills viewport",
+        "pass": true
+      },
+      {
+        "message": "Scroll hit area fills viewport width",
+        "pass": true
+      },
+      {
+        "message": "Content respects max width",
+        "pass": true
+      },
+      {
+        "message": "Header aligns with content",
+        "pass": true
+      },
+      {
+        "message": "Footer aligns with content",
+        "pass": true
+      },
+      {
+        "message": "Header divider is inset to actual content edges",
+        "pass": true
+      },
+      {
+        "message": "Footer visible and no horizontal overflow",
+        "pass": true
+      },
+      {
+        "message": "Type-specific unique modal ID",
+        "pass": true
+      },
+      {
+        "message": "Native wheel scrolls from left margin",
+        "pass": true
+      },
+      {
+        "message": "Native wheel scrolls from right margin",
+        "pass": true
+      },
+      {
+        "message": "Header and footer remain fixed while scrolling",
+        "pass": true
+      },
+      {
+        "message": "Progress stays above the scroll area",
+        "pass": true
+      },
+      {
+        "message": "Native wheel events target full-width scroll area on both sides",
+        "pass": true
+      }
+    ]
+  },
+  {
+    "label": "product-mobile-final",
+    "geometry": {
+      "beforeContent": {
+        "bottom": 112.796875,
+        "height": 72.796875,
+        "width": 390,
+        "x": 0,
+        "y": 40
+      },
+      "clientHeight": 419,
+      "content": {
+        "bottom": 737.140625,
+        "height": 624.34375,
+        "width": 390,
+        "x": 0,
+        "y": 112.796875
+      },
+      "contentPadding": 16,
+      "dividerInset": 16,
+      "footer": {
+        "bottom": 600,
+        "height": 68,
+        "width": 390,
+        "x": 0,
+        "y": 532
+      },
+      "header": {
+        "bottom": 40,
+        "height": 40,
+        "width": 390,
+        "x": 0,
+        "y": 0
+      },
+      "headerBorder": "0px",
+      "horizontalOverflow": false,
+      "id": "boxed-fullscreen-modal-:r1p:",
+      "modal": {
+        "bottom": 600,
+        "height": 600,
+        "width": 390,
+        "x": 0,
+        "y": 0
+      },
+      "scroll": {
+        "bottom": 532,
+        "height": 419.203125,
+        "width": 390,
+        "x": 0,
+        "y": 112.796875
+      },
+      "scrollHeight": 624,
+      "scrollTop": 0,
+      "scrollbarWidth": 0,
+      "viewport": [
+        390,
+        600
+      ],
+      "afterLeftScrollTop": 205,
+      "wheelEvents": [
+        {
+          "dy": 600,
+          "inScroll": true,
+          "x": 8,
+          "y": 322
+        },
+        {
+          "dy": -10000,
+          "inScroll": true,
+          "x": 382,
+          "y": 322
+        }
+      ]
+    },
+    "checks": [
+      {
+        "message": "Modal fills viewport",
+        "pass": true
+      },
+      {
+        "message": "Scroll hit area fills viewport width",
+        "pass": true
+      },
+      {
+        "message": "Content respects max width",
+        "pass": true
+      },
+      {
+        "message": "Header aligns with content",
+        "pass": true
+      },
+      {
+        "message": "Footer aligns with content",
+        "pass": true
+      },
+      {
+        "message": "Header divider is inset to actual content edges",
+        "pass": true
+      },
+      {
+        "message": "Footer visible and no horizontal overflow",
+        "pass": true
+      },
+      {
+        "message": "Type-specific unique modal ID",
+        "pass": true
+      },
+      {
+        "message": "Native wheel scrolls from left margin",
+        "pass": true
+      },
+      {
+        "message": "Native wheel scrolls from right margin",
+        "pass": true
+      },
+      {
+        "message": "Header and footer remain fixed while scrolling",
+        "pass": true
+      },
+      {
+        "message": "Progress stays above the scroll area",
+        "pass": true
+      },
+      {
+        "message": "Native wheel events target full-width scroll area on both sides",
+        "pass": true
+      }
+    ]
+  },
+  {
+    "label": "cancellation-visible-scrollbars-final",
+    "geometry": {
+      "beforeContent": null,
+      "clientHeight": 680,
+      "content": {
+        "bottom": 1595.296875,
+        "height": 1555.296875,
+        "width": 374,
+        "x": 0,
+        "y": 40
+      },
+      "contentPadding": 16,
+      "dividerInset": 16,
+      "footer": {
+        "bottom": 844,
+        "height": 124,
+        "width": 374,
+        "x": 0,
+        "y": 720
+      },
+      "header": {
+        "bottom": 40,
+        "height": 40,
+        "width": 374,
+        "x": 0,
+        "y": 0
+      },
+      "headerBorder": "0px",
+      "horizontalOverflow": false,
+      "id": "boxed-fullscreen-modal-:r1:",
+      "modal": {
+        "bottom": 844,
+        "height": 844,
+        "width": 390,
+        "x": 0,
+        "y": 0
+      },
+      "scroll": {
+        "bottom": 720,
+        "height": 680,
+        "width": 390,
+        "x": 0,
+        "y": 40
+      },
+      "scrollHeight": 1555,
+      "scrollTop": 0,
+      "scrollbarWidth": 16,
+      "viewport": [
+        390,
+        844
+      ],
+      "afterLeftScrollTop": 600,
+      "wheelEvents": [
+        {
+          "dy": 600,
+          "inScroll": true,
+          "x": 8,
+          "y": 380
+        },
+        {
+          "dy": -10000,
+          "inScroll": true,
+          "x": 382,
+          "y": 380
+        }
+      ]
+    },
+    "checks": [
+      {
+        "message": "Modal fills viewport",
+        "pass": true
+      },
+      {
+        "message": "Scroll hit area fills viewport width",
+        "pass": true
+      },
+      {
+        "message": "Content respects max width",
+        "pass": true
+      },
+      {
+        "message": "Header aligns with content",
+        "pass": true
+      },
+      {
+        "message": "Footer aligns with content",
+        "pass": true
+      },
+      {
+        "message": "Header divider is inset to actual content edges",
+        "pass": true
+      },
+      {
+        "message": "Footer visible and no horizontal overflow",
+        "pass": true
+      },
+      {
+        "message": "Type-specific unique modal ID",
+        "pass": true
+      },
+      {
+        "message": "Native wheel scrolls from left margin",
+        "pass": true
+      },
+      {
+        "message": "Native wheel scrolls from right margin",
+        "pass": true
+      },
+      {
+        "message": "Header and footer remain fixed while scrolling",
+        "pass": true
+      },
+      {
+        "message": "Native wheel events target full-width scroll area on both sides",
+        "pass": true
+      }
+    ]
+  }
+]

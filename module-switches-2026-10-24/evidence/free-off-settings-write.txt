@@ -1,0 +1,1 @@
+"{\"status\":200,\"toolkit\":{\"hide_admin_bar\":true,\"restrict_wp_admin\":true,\"wp_admin_redirect\":\"my_account\",\"allowed_roles\":[],\"hide_wp_login\":true,\"wp_login_redirect\":\"my_account\",\"login_as_user\":true,\"multi_login_prevention\":true,\"multi_login_max_sessions\":2,\"multi_login_include_admins\":false}}"

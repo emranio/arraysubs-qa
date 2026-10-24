@@ -1,0 +1,11 @@
+{"kind":"discount","id":20784,"status":"arraysubs-active","retention_discount":"","paused":"","pending_switch":"","reason":""}
+{"kind":"pause","id":20788,"status":"arraysubs-paused","retention_discount":"","paused":"","pending_switch":"","reason":""}
+{"kind":"downgrade","id":20791,"status":"arraysubs-active","retention_discount":"","paused":"","pending_switch":"{\"version\":1,\"pending_switch_id\":\"df2980e0-9e85-4856-87a4-3d774bbf81c8\",\"subscription_id\":20791,\"customer_id\":460,\"customer_email\":\"cancellation-wizard-qa-20261024@example.invalid\",\"source_product_id\":20780,\"source_variation_id\":0,\"source_quantity\":1,\"source_recurring_amount\":\"40.00\",\"source_billing_period\":\"month\",\"source_billing_interval\":1,\"target_product_id\":20782,\"target_variation_id\":0,\"quantity\":1,\"switch_type\":\"downgrade\",\"switch_fee\":\"0.00\",\"new_price\":\"20.00\",\"new_billing_period\":\"month\",\"new_billing_interval\":1,\"currency\":\"USD\",\"price_decimals\":2,\"requested_by\":\"customer\",\"requested_at\":\"2026-10-24 07:01:52\",\"effective_renewal_date\":\"2026-11-23 06:51:14\",\"signature\":\"[redacted]\"}","reason":""}
+{"kind":"support","id":20794,"status":"arraysubs-active","retention_discount":"","paused":"","pending_switch":"","reason":""}
+{"kind":"cancel","id":20797,"status":"arraysubs-active","retention_discount":"","paused":"","pending_switch":"","reason":""}
+{"kind":"core","id":20800,"status":"arraysubs-active","retention_discount":"","paused":"","pending_switch":"","reason":""}
+PHP: 2026-10-24 13:03:36 [notice X 0][/Users/emran/Local Sites/wp-test2/app/public/wp-content/plugins/elementor/modules/global-classes/atomic-global-styles.php::410] Elementor\Modules\GlobalClasses\Atomic_Global_Styles::get_cache_root_key(): Implicitly marking parameter $key as nullable is deprecated, the explicit nullable type must be used instead [array (
+  'trace' => '
+#0: Elementor\Core\Logger\Manager -> shutdown()
+',
+)]

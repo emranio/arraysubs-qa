@@ -1,0 +1,50 @@
+[
+    {
+        "passed": true,
+        "check": "Admin discount saved as 23 percent"
+    },
+    {
+        "passed": true,
+        "check": "Reason changes persisted and removed temporary row stayed removed"
+    },
+    {
+        "passed": true,
+        "check": "Saving editor preserves the unedited skip offer"
+    },
+    {
+        "passed": true,
+        "check": "Saving editor preserves the existing customer form configuration"
+    },
+    {
+        "passed": true,
+        "check": "Saving other steps preserves pause offer fields"
+    },
+    {
+        "passed": true,
+        "check": "Browser-accepted discount records 23 percent for two renewals"
+    },
+    {
+        "passed": true,
+        "check": "Browser-accepted pause changes subscription status"
+    },
+    {
+        "passed": true,
+        "check": "Browser-accepted downgrade schedules the configured 20-dollar plan"
+    },
+    {
+        "passed": true,
+        "check": "Support visit leaves subscription active"
+    },
+    {
+        "passed": true,
+        "check": "Retention-off browser cancellation records selected reason"
+    },
+    {
+        "passed": true,
+        "check": "Core-only browser cancellation permits optional blank reason"
+    },
+    {
+        "passed": true,
+        "check": "Unrelated settings are unchanged by the editor and fixture setup"
+    }
+]
