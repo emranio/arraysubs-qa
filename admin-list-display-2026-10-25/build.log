@@ -1,0 +1,168 @@
+
+> arraysubs@2.1.0 build
+> NODE_ENV=production wp-scripts build
+
+Browserslist: browsers data (caniuse-lite) is 8 months old. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+[dotenv@17.3.1] injecting env (5) from .env -- tip: 🛠️  run anywhere with `dotenvx run -- yourcommand`
+assets by status 2.21 MiB [cached] 122 assets
+assets by status 1.53 MiB [compared for emit]
+  assets by path *.css 352 KiB 61 assets
+  assets by path admin/ 1.02 MiB 38 assets
+  assets by path *.js 73.4 KiB 16 assets
+  assets by path *.php 1.33 KiB
+    asset store-api-cart-subscription.asset.php 93 bytes [compared for emit] (name: store-api-cart-subscription)
+    + 15 assets
+  assets by path gutenberg/ 91 KiB
+    assets by path gutenberg/*.css 5.33 KiB 2 assets
+    + 2 assets
+  assets by path Features/GutenbergIntegration/block/ 3.71 KiB
+    asset Features/GutenbergIntegration/block/block.json 2.38 KiB [compared for emit] [from: src/Features/GutenbergIntegration/block/block.json] [copied]
+    asset Features/GutenbergIntegration/block/render.php 1.32 KiB [compared for emit] [from: src/Features/GutenbergIntegration/block/render.php] [copied]
+Entrypoint admin/mainadmin [big] 637 KiB = admin/mainadmin.css 282 KiB admin/mainadmin.js 73.7 KiB admin/mainadmin-rtl.css 282 KiB admin/mainadmin.asset.php 170 bytes
+Entrypoint admin/customer-member-links 2.22 KiB = admin/customer-member-links.js 2.09 KiB admin/customer-member-links.asset.php 135 bytes
+Entrypoint admin/user-profile-member-button 1.16 KiB = admin/user-profile-member-button.js 1.06 KiB admin/user-profile-member-button.asset.php 109 bytes
+Entrypoint admin/product-edit-page 43.1 KiB = admin/product-edit-page.css 15.8 KiB admin/product-edit-page.js 11.4 KiB admin/product-edit-page-rtl.css 15.8 KiB admin/product-edit-page.asset.php 93 bytes
+Entrypoint admin/email-placeholders 3.96 KiB = admin/email-placeholders.js 3.88 KiB admin/email-placeholders.asset.php 84 bytes
+Entrypoint customer-portal 139 KiB = customer-portal.css 48.2 KiB customer-portal.js 42.4 KiB customer-portal-rtl.css 48.2 KiB customer-portal.asset.php 84 bytes
+Entrypoint automatic-payments-portal 10.5 KiB = automatic-payments-portal.css 1.67 KiB automatic-payments-portal.js 7.09 KiB automatic-payments-portal-rtl.css 1.67 KiB automatic-payments-portal.asset.php 84 bytes
+Entrypoint admin/stripe-settings 7.77 KiB = admin/stripe-settings.css 2.44 KiB admin/stripe-settings.js 2.81 KiB admin/stripe-settings-rtl.css 2.44 KiB admin/stripe-settings.asset.php 84 bytes
+Entrypoint paddle-checkout 6.09 KiB = paddle-checkout.js 6.01 KiB paddle-checkout.asset.php 84 bytes
+Entrypoint paddle-checkout-blocks 2.15 KiB = paddle-checkout-blocks.js 2.06 KiB paddle-checkout-blocks.asset.php 84 bytes
+Entrypoint paypal-checkout-blocks 830 bytes = paypal-checkout-blocks.js 746 bytes paypal-checkout-blocks.asset.php 84 bytes
+Entrypoint members-access-denied 3.48 KiB = members-access-denied.css 1.7 KiB members-access-denied.js 0 bytes members-access-denied-rtl.css 1.7 KiB members-access-denied.asset.php 84 bytes
+Entrypoint member-discount 1.32 KiB = member-discount.css 636 bytes member-discount.js 0 bytes member-discount-rtl.css 636 bytes member-discount.asset.php 84 bytes
+Entrypoint ecommerce-restriction 1.04 KiB = ecommerce-restriction.css 489 bytes ecommerce-restriction.js 0 bytes ecommerce-restriction-rtl.css 489 bytes ecommerce-restriction.asset.php 84 bytes
+Entrypoint comment-restriction 965 bytes = comment-restriction.css 440 bytes comment-restriction.js 0 bytes comment-restriction-rtl.css 441 bytes comment-restriction.asset.php 84 bytes
+Entrypoint purchase-limit 358 bytes = purchase-limit.css 137 bytes purchase-limit.js 0 bytes purchase-limit-rtl.css 137 bytes purchase-limit.asset.php 84 bytes
+Entrypoint subscription-variable-product 1.44 KiB = subscription-variable-product.js 1.36 KiB subscription-variable-product.asset.php 84 bytes
+Entrypoint store-api-cart-subscription 21.7 KiB = store-api-cart-subscription.css 10.5 KiB store-api-cart-subscription.js 633 bytes store-api-cart-subscription-rtl.css 10.5 KiB store-api-cart-subscription.asset.php 93 bytes
+Entrypoint checkout-session-guard 1.45 KiB = checkout-session-guard.js 1.37 KiB checkout-session-guard.asset.php 84 bytes
+Entrypoint admin/subscription-box 139 KiB = admin/subscription-box.css 33.3 KiB admin/subscription-box.js 72.2 KiB admin/subscription-box-rtl.css 33.3 KiB admin/subscription-box.asset.php 156 bytes
+Entrypoint subscription-box-frontend 43.4 KiB = subscription-box-frontend.css 15.8 KiB subscription-box-frontend.js 11.7 KiB subscription-box-frontend-rtl.css 15.8 KiB subscription-box-frontend.asset.php 93 bytes
+Entrypoint admin/coupon-edit-page 767 bytes = admin/coupon-edit-page.js 683 bytes admin/coupon-edit-page.asset.php 84 bytes
+Entrypoint admin/login-as-user-admin 2.3 KiB = admin/login-as-user-admin.css 1.11 KiB admin/login-as-user-admin.js 0 bytes admin/login-as-user-admin-rtl.css 1.11 KiB admin/login-as-user-admin.asset.php 84 bytes
+Entrypoint admin/login-as-user-profile-btn 1.53 KiB = admin/login-as-user-profile-btn.js 1.43 KiB admin/login-as-user-profile-btn.asset.php 109 bytes
+Entrypoint login-as-user-frontend 4.26 KiB = login-as-user-frontend.css 2.09 KiB login-as-user-frontend.js 0 bytes login-as-user-frontend-rtl.css 2.09 KiB login-as-user-frontend.asset.php 84 bytes
+Entrypoint boot 1.26 KiB = boot.css 576 bytes boot.js 58 bytes boot-rtl.css 576 bytes boot.asset.php 84 bytes
+Entrypoint admin/post-restriction-gutenberg 101 KiB = admin/post-restriction-gutenberg.css 4.31 KiB admin/post-restriction-gutenberg.js 92 KiB admin/post-restriction-gutenberg-rtl.css 4.31 KiB admin/post-restriction-gutenberg.asset.php 234 bytes
+Entrypoint admin/post-restriction-classic 101 KiB = admin/post-restriction-classic.css 4.31 KiB admin/post-restriction-classic.js 91.9 KiB admin/post-restriction-classic-rtl.css 4.31 KiB admin/post-restriction-classic.asset.php 180 bytes
+Entrypoint gutenberg/content-restricted 91 KiB = gutenberg/content-restricted.css 2.66 KiB gutenberg/content-restricted.js 85.5 KiB gutenberg/content-restricted-rtl.css 2.67 KiB gutenberg/content-restricted.asset.php 224 bytes
+chunk (runtime: admin/mainadmin) 105-rtl.css, 105.cc0e37b9.chunk.css, 105.257e2d51.chunk.js 36.6 KiB (javascript) 1.93 KiB (css/mini-extract) [rendered]
+chunk (runtime: admin/subscription-box) admin/subscription-box.css, admin/subscription-box.js, admin/subscription-box-rtl.css, admin/subscription-box.asset.php (admin/subscription-box) 143 KiB (javascript) 33.3 KiB (css/mini-extract) 663 bytes (runtime) [entry] [rendered]
+chunk (runtime: admin/mainadmin) 314.64083acf.chunk.js (id hint: default) 21.9 KiB [rendered] split chunk (cache group: default)
+chunk (runtime: admin/mainadmin) 456-rtl.css, 456.2c9c9d69.chunk.css, 456.c099ba2b.chunk.js 24.8 KiB (javascript) 1.12 KiB (css/mini-extract) [rendered]
+chunk (runtime: admin/mainadmin) 827-rtl.css, 827.c2d1a2fe.chunk.css, 827.71b57b1c.chunk.js 30.3 KiB (javascript) 17.9 KiB (css/mini-extract) [rendered]
+chunk (runtime: admin/mainadmin) 1026-rtl.css, 1026.cc0e37b9.chunk.css, 1026.4d3121ae.chunk.js 16.1 KiB (javascript) 1.93 KiB (css/mini-extract) [rendered]
+chunk (runtime: store-api-cart-subscription) store-api-cart-subscription.css, store-api-cart-subscription.js, store-api-cart-subscription-rtl.css, store-api-cart-subscription.asset.php (store-api-cart-subscription) 1.05 KiB (javascript) 10.5 KiB (css/mini-extract) [entry] [rendered]
+chunk (runtime: admin/mainadmin) 1123-rtl.css, 1123.61c15f10.chunk.css, 1123.bc7956a4.chunk.js 29.9 KiB (javascript) 3.05 KiB (css/mini-extract) [rendered]
+chunk (runtime: admin/mainadmin) 1144.ce7993bf.chunk.js 17 KiB [rendered]
+chunk (runtime: ecommerce-restriction) ecommerce-restriction.css, ecommerce-restriction.js, ecommerce-restriction-rtl.css, ecommerce-restriction.asset.php (ecommerce-restriction) 369 bytes (javascript) 488 bytes (css/mini-extract) [entry] [rendered]
+chunk (runtime: admin/mainadmin) 1374-rtl.css, 1374.cc0e37b9.chunk.css, 1374.e840057b.chunk.js 25.1 KiB (javascript) 1.93 KiB (css/mini-extract) [rendered]
+chunk (runtime: admin/mainadmin) vendors/rc-field-form.08e8909e.chunk.js (vendors/rc-field-form) (id hint: defaultVendors) 95.4 KiB [rendered] split chunk (cache group: defaultVendors) (name: vendors/rc-field-form)
+chunk (runtime: admin/mainadmin) 1429.1705bcc3.chunk.js 42.2 KiB [rendered]
+chunk (runtime: admin/mainadmin) 1461-rtl.css, 1461.f2845779.chunk.css, 1461.ffc6800f.chunk.js 49.3 KiB (javascript) 3.05 KiB (css/mini-extract) [rendered]
+chunk (runtime: admin/mainadmin) 1467.0283a0d5.chunk.js (id hint: default) 108 KiB [rendered] split chunk (cache group: default)
+chunk (runtime: admin/mainadmin) 1539.c2edae2d.chunk.js 12.1 KiB [rendered]
+chunk (runtime: admin/mainadmin) vendors/decimal.js-light.1589ab74.chunk.js (vendors/decimal.js-light) (id hint: defaultVendors) 52.1 KiB [rendered] split chunk (cache group: defaultVendors) (name: vendors/decimal.js-light)
+chunk (runtime: admin/mainadmin) 1925.02e696be.chunk.js 36.8 KiB [rendered]
+chunk (runtime: admin/mainadmin) 1976-rtl.css, 1976.def927d3.chunk.css, 1976.a269eddb.chunk.js 181 KiB (javascript) 24.7 KiB (css/mini-extract) [rendered]
+chunk (runtime: admin/mainadmin) 2205-rtl.css, 2205.f2845779.chunk.css, 2205.be7824e9.chunk.js 47.1 KiB (javascript) 3.05 KiB (css/mini-extract) [rendered]
+chunk (runtime: admin/mainadmin) 2455-rtl.css, 2455.2c9c9d69.chunk.css, 2455.3873f632.chunk.js 34.8 KiB (javascript) 1.12 KiB (css/mini-extract) [rendered]
+chunk (runtime: admin/mainadmin) vendors/dnd-kit.84a85066.chunk.js (vendors/dnd-kit) (id hint: defaultVendors) 130 KiB [rendered] split chunk (cache group: defaultVendors) (name: vendors/dnd-kit)
+chunk (runtime: subscription-variable-product) subscription-variable-product.js, subscription-variable-product.asset.php (subscription-variable-product) 2.34 KiB [entry] [rendered]
+chunk (runtime: admin/mainadmin) 3209-rtl.css, 3209.f2845779.chunk.css, 3209.50e988b5.chunk.js 144 KiB (javascript) 3.05 KiB (css/mini-extract) [rendered]
+chunk (runtime: admin/mainadmin) 3329-rtl.css, 3329.9c3bd339.chunk.css, 3329.b54adc0b.chunk.js 17.2 KiB (javascript) 544 bytes (css/mini-extract) [rendered]
+chunk (runtime: admin/mainadmin) 3415-rtl.css, 3415.cc0e37b9.chunk.css, 3415.d2b3073a.chunk.js 17.9 KiB (javascript) 1.93 KiB (css/mini-extract) [rendered]
+chunk (runtime: admin/mainadmin) 3485-rtl.css, 3485.e3f749df.chunk.css, 3485.8c3ac9f7.chunk.js 63.7 KiB (javascript) 4.91 KiB (css/mini-extract) [rendered]
+chunk (runtime: admin/mainadmin) 3491-rtl.css, 3491.cc0e37b9.chunk.css, 3491.f4f6ca56.chunk.js 25.5 KiB (javascript) 1.93 KiB (css/mini-extract) [rendered]
+chunk (runtime: admin/mainadmin) 3548.add41f6c.chunk.js (id hint: default) 26 KiB [rendered] split chunk (cache group: default)
+chunk (runtime: admin/mainadmin) 3569-rtl.css, 3569.5769c8c5.chunk.css, 3569.c1eacf74.chunk.js 21.2 KiB (javascript) 277 bytes (css/mini-extract) [rendered]
+chunk (runtime: admin/mainadmin) 3882.f39ccf64.chunk.js (id hint: default) 107 KiB [rendered] split chunk (cache group: default)
+chunk (runtime: comment-restriction) comment-restriction.css, comment-restriction.js, comment-restriction-rtl.css, comment-restriction.asset.php (comment-restriction) 373 bytes (javascript) 439 bytes (css/mini-extract) [entry] [rendered]
+chunk (runtime: admin/mainadmin) 4059.09071197.chunk.js 32.1 KiB [rendered]
+chunk (runtime: admin/customer-member-links) admin/customer-member-links.js, admin/customer-member-links.asset.php (admin/customer-member-links) 3.78 KiB (javascript) 663 bytes (runtime) [entry] [rendered]
+chunk (runtime: admin/mainadmin) 4154-rtl.css, 4154.cc0e37b9.chunk.css, 4154.2d7af438.chunk.js 12.7 KiB (javascript) 1.93 KiB (css/mini-extract) [rendered]
+chunk (runtime: paddle-checkout) paddle-checkout.js, paddle-checkout.asset.php (paddle-checkout) 12.8 KiB [entry] [rendered]
+chunk (runtime: admin/mainadmin) 4410.e2a8ca45.chunk.js 17 KiB [rendered]
+chunk (runtime: admin/mainadmin) vendors/rc-component.a250115d.chunk.js (vendors/rc-component) (id hint: defaultVendors) 39.8 KiB [rendered] split chunk (cache group: defaultVendors) (name: vendors/rc-component)
+chunk (runtime: admin/mainadmin) 4420-rtl.css, 4420.9c3bd339.chunk.css, 4420.9f616ca3.chunk.js 16 KiB (javascript) 544 bytes (css/mini-extract) [rendered]
+chunk (runtime: admin/mainadmin) 4432-rtl.css, 4432.cc0e37b9.chunk.css, 4432.e4d0bc66.chunk.js 13 KiB (javascript) 1.93 KiB (css/mini-extract) [rendered]
+chunk (runtime: admin/mainadmin) vendors/react-redux.319cb4d1.chunk.js (vendors/react-redux) (id hint: defaultVendors) 36.6 KiB [rendered] split chunk (cache group: defaultVendors) (name: vendors/react-redux)
+chunk (runtime: admin/mainadmin) vendors/reduxjs.bb60b5b3.chunk.js (vendors/reduxjs) (id hint: defaultVendors) 127 KiB [rendered] split chunk (cache group: defaultVendors) (name: vendors/reduxjs)
+chunk (runtime: gutenberg/content-restricted) gutenberg/content-restricted.css, gutenberg/content-restricted.js, gutenberg/content-restricted-rtl.css, gutenberg/content-restricted.asset.php (gutenberg/content-restricted) 230 KiB (javascript) 2.66 KiB (css/mini-extract) 663 bytes (runtime) [entry] [rendered]
+chunk (runtime: paypal-checkout-blocks) paypal-checkout-blocks.js, paypal-checkout-blocks.asset.php (paypal-checkout-blocks) 1.84 KiB [entry] [rendered]
+chunk (runtime: admin/mainadmin) 4600.efc2b8a9.chunk.js (id hint: default) 153 KiB [rendered] split chunk (cache group: default)
+chunk (runtime: admin/mainadmin) 4636-rtl.css, 4636.e3f749df.chunk.css, 4636.41a038eb.chunk.js 14.4 KiB (javascript) 4.91 KiB (css/mini-extract) [rendered]
+chunk (runtime: admin/mainadmin) vendors/es-toolkit.9833637b.chunk.js (vendors/es-toolkit) (id hint: defaultVendors) 42.8 KiB [rendered] split chunk (cache group: defaultVendors) (name: vendors/es-toolkit)
+chunk (runtime: admin/mainadmin) 4731-rtl.css, 4731.c1bd8e72.chunk.css, 4731.fbd78c1e.chunk.js 33.5 KiB (javascript) 107 KiB (asset) 6.71 KiB (css/mini-extract) [rendered]
+chunk (runtime: admin/mainadmin) vendors/d3-shape.10b6735c.chunk.js (vendors/d3-shape) (id hint: defaultVendors) 28.5 KiB [rendered] split chunk (cache group: defaultVendors) (name: vendors/d3-shape)
+chunk (runtime: admin/mainadmin) 5136.96120375.chunk.js (id hint: default) 22.3 KiB (javascript) 259 KiB (asset) [rendered] split chunk (cache group: default)
+chunk (runtime: member-discount) member-discount.css, member-discount.js, member-discount-rtl.css, member-discount.asset.php (member-discount) 321 bytes (javascript) 635 bytes (css/mini-extract) [entry] [rendered]
+chunk (runtime: admin/mainadmin) 5334-rtl.css, 5334.61c15f10.chunk.css, 5334.69f4fc58.chunk.js 84 KiB (javascript) 3.05 KiB (css/mini-extract) [rendered]
+chunk (runtime: admin/mainadmin) 5342-rtl.css, 5342.53dfa1cd.chunk.css, 5342.1b33edda.chunk.js 160 KiB (javascript) 5.08 KiB (css/mini-extract) [rendered]
+chunk (runtime: admin/mainadmin) vendors/d3-scale.54b151c2.chunk.js (vendors/d3-scale) (id hint: defaultVendors) 32.7 KiB [rendered] split chunk (cache group: defaultVendors) (name: vendors/d3-scale)
+chunk (runtime: admin/email-placeholders) admin/email-placeholders.js, admin/email-placeholders.asset.php (admin/email-placeholders) 6.85 KiB [entry] [rendered]
+chunk (runtime: admin/mainadmin) 6075-rtl.css, 6075.2c9c9d69.chunk.css, 6075.95e71562.chunk.js 32 KiB (javascript) 1.12 KiB (css/mini-extract) [rendered]
+chunk (runtime: members-access-denied) members-access-denied.css, members-access-denied.js, members-access-denied-rtl.css, members-access-denied.asset.php (members-access-denied) 49 bytes (javascript) 1.7 KiB (css/mini-extract) [entry] [rendered]
+chunk (runtime: admin/mainadmin) vendors/immer.c0509ca4.chunk.js (vendors/immer) (id hint: defaultVendors) 37.3 KiB [rendered] split chunk (cache group: defaultVendors) (name: vendors/immer)
+chunk (runtime: login-as-user-frontend) login-as-user-frontend.css, login-as-user-frontend.js, login-as-user-frontend-rtl.css, login-as-user-frontend.asset.php (login-as-user-frontend) 165 bytes (javascript) 2.09 KiB (css/mini-extract) [entry] [rendered]
+chunk (runtime: admin/mainadmin) vendors/lucide-react.b5372bfd.chunk.js (vendors/lucide-react) (id hint: defaultVendors) 94.7 KiB [rendered] split chunk (cache group: defaultVendors) (name: vendors/lucide-react)
+chunk (runtime: subscription-box-frontend) subscription-box-frontend.css, subscription-box-frontend.js, subscription-box-frontend-rtl.css, subscription-box-frontend.asset.php (subscription-box-frontend) 36.1 KiB (javascript) 15.8 KiB (css/mini-extract) [entry] [rendered]
+chunk (runtime: checkout-session-guard) checkout-session-guard.js, checkout-session-guard.asset.php (checkout-session-guard) 2.76 KiB [entry] [rendered]
+chunk (runtime: admin/user-profile-member-button) admin/user-profile-member-button.js, admin/user-profile-member-button.asset.php (admin/user-profile-member-button) 1.58 KiB (javascript) 663 bytes (runtime) [entry] [rendered]
+chunk (runtime: automatic-payments-portal) automatic-payments-portal.css, automatic-payments-portal.js, automatic-payments-portal-rtl.css, automatic-payments-portal.asset.php (automatic-payments-portal) 23.8 KiB (javascript) 1.67 KiB (css/mini-extract) [entry] [rendered]
+chunk (runtime: admin/mainadmin) 6658.d4615581.chunk.js 11.7 KiB [rendered]
+chunk (runtime: admin/login-as-user-admin) admin/login-as-user-admin.css, admin/login-as-user-admin.js, admin/login-as-user-admin-rtl.css, admin/login-as-user-admin.asset.php (admin/login-as-user-admin) 156 bytes (javascript) 1.11 KiB (css/mini-extract) [entry] [rendered]
+chunk (runtime: admin/mainadmin) 6772-rtl.css, 6772.cc0e37b9.chunk.css, 6772.212bfb00.chunk.js 17 KiB (javascript) 1.93 KiB (css/mini-extract) [rendered]
+chunk (runtime: admin/mainadmin) 6910.a4c05b41.chunk.js (id hint: default) 76.3 KiB [rendered] split chunk (cache group: default)
+chunk (runtime: admin/mainadmin) vendors/reselect.b95d85bf.chunk.js (vendors/reselect) (id hint: defaultVendors) 21.5 KiB [rendered] split chunk (cache group: defaultVendors) (name: vendors/reselect)
+chunk (runtime: admin/mainadmin) 7493.be45f927.chunk.js 1 KiB [rendered]
+chunk (runtime: admin/mainadmin) 7536-rtl.css, 7536.33b81b62.chunk.css, 7536.1fa06d21.chunk.js 11.8 KiB (javascript) 21.8 KiB (css/mini-extract) [rendered]
+chunk (runtime: boot) boot.css, boot.js, boot-rtl.css, boot.asset.php (boot) 138 bytes (javascript) 574 bytes (css/mini-extract) [entry] [rendered]
+chunk (runtime: admin/mainadmin) 7639-rtl.css, 7639.cc0e37b9.chunk.css, 7639.a88ba270.chunk.js 20.7 KiB (javascript) 1.93 KiB (css/mini-extract) [rendered]
+chunk (runtime: admin/product-edit-page) admin/product-edit-page.css, admin/product-edit-page.js, admin/product-edit-page-rtl.css, admin/product-edit-page.asset.php (admin/product-edit-page) 21.9 KiB (javascript) 15.8 KiB (css/mini-extract) [entry] [rendered]
+chunk (runtime: admin/mainadmin) admin/mainadmin.css, admin/mainadmin.js, admin/mainadmin-rtl.css, admin/mainadmin.asset.php (admin/mainadmin) 415 KiB (javascript) 281 KiB (css/mini-extract) 13.6 KiB (runtime) [entry] [rendered]
+chunk (runtime: admin/mainadmin) 7823-rtl.css, 7823.6d386f53.chunk.css, 7823.799ff79c.chunk.js 31 KiB (javascript) 5.43 KiB (css/mini-extract) [rendered]
+chunk (runtime: admin/mainadmin) 7843.840483d8.chunk.js (id hint: default) 23.2 KiB [rendered] split chunk (cache group: default)
+chunk (runtime: admin/mainadmin) 8098-rtl.css, 8098.cc0e37b9.chunk.css, 8098.bd451426.chunk.js 15.1 KiB (javascript) 1.93 KiB (css/mini-extract) [rendered]
+chunk (runtime: admin/mainadmin) 8153-rtl.css, 8153.2c9c9d69.chunk.css, 8153.0e788725.chunk.js 30.6 KiB (javascript) 1.12 KiB (css/mini-extract) [rendered]
+chunk (runtime: admin/mainadmin) 8250.f8e8677d.chunk.js 25.9 KiB [rendered]
+chunk (runtime: purchase-limit) purchase-limit.css, purchase-limit.js, purchase-limit-rtl.css, purchase-limit.asset.php (purchase-limit) 366 bytes (javascript) 136 bytes (css/mini-extract) [entry] [rendered]
+chunk (runtime: admin/mainadmin) 8467-rtl.css, 8467.7f0529e7.chunk.css, 8467.2078b48c.chunk.js (id hint: default) 106 KiB (javascript) 34.7 KiB (css/mini-extract) [rendered] split chunk (cache group: default)
+chunk (runtime: admin/coupon-edit-page) admin/coupon-edit-page.js, admin/coupon-edit-page.asset.php (admin/coupon-edit-page) 1.56 KiB [entry] [rendered]
+chunk (runtime: admin/mainadmin) 8658.b3092963.chunk.js 39.8 KiB [rendered]
+chunk (runtime: admin/mainadmin) 8673-rtl.css, 8673.97ff67a7.chunk.css, 8673.b7426aeb.chunk.js 60.3 KiB (javascript) 10.4 KiB (css/mini-extract) [rendered]
+chunk (runtime: admin/mainadmin) 8724-rtl.css, 8724.6d386f53.chunk.css, 8724.ef729c3e.chunk.js 29.4 KiB (javascript) 5.43 KiB (css/mini-extract) [rendered]
+chunk (runtime: admin/mainadmin) 8920-rtl.css, 8920.9c3bd339.chunk.css, 8920.274ec922.chunk.js 11.4 KiB (javascript) 544 bytes (css/mini-extract) [rendered]
+chunk (runtime: paddle-checkout-blocks) paddle-checkout-blocks.js, paddle-checkout-blocks.asset.php (paddle-checkout-blocks) 4.44 KiB [entry] [rendered]
+chunk (runtime: admin/mainadmin) 9015.084f6864.chunk.js 20.8 KiB [rendered]
+chunk (runtime: admin/login-as-user-profile-btn) admin/login-as-user-profile-btn.js, admin/login-as-user-profile-btn.asset.php (admin/login-as-user-profile-btn) 2.46 KiB (javascript) 663 bytes (runtime) [entry] [rendered]
+chunk (runtime: admin/mainadmin) 9105-rtl.css, 9105.4e2340ae.chunk.css, 9105.9cb5e134.chunk.js 41.6 KiB (javascript) 2.2 KiB (css/mini-extract) [rendered]
+chunk (runtime: admin/mainadmin) 9148-rtl.css, 9148.9c3bd339.chunk.css, 9148.8ce60694.chunk.js 15.2 KiB (javascript) 544 bytes (css/mini-extract) [rendered]
+chunk (runtime: admin/post-restriction-gutenberg) admin/post-restriction-gutenberg.css, admin/post-restriction-gutenberg.js, admin/post-restriction-gutenberg-rtl.css, admin/post-restriction-gutenberg.asset.php (admin/post-restriction-gutenberg) 241 KiB (javascript) 4.3 KiB (css/mini-extract) 663 bytes (runtime) [entry] [rendered]
+chunk (runtime: admin/mainadmin) vendors/babel.415225a4.chunk.js (vendors/babel) (id hint: defaultVendors) 20.6 KiB [rendered] split chunk (cache group: defaultVendors) (name: vendors/babel)
+chunk (runtime: admin/mainadmin) 9402-rtl.css, 9402.2c9c9d69.chunk.css, 9402.d92aa3fb.chunk.js 20.6 KiB (javascript) 1.12 KiB (css/mini-extract) [rendered]
+chunk (runtime: admin/stripe-settings) admin/stripe-settings.css, admin/stripe-settings.js, admin/stripe-settings-rtl.css, admin/stripe-settings.asset.php (admin/stripe-settings) 5.75 KiB (javascript) 2.44 KiB (css/mini-extract) [entry] [rendered]
+chunk (runtime: admin/mainadmin) 9671-rtl.css, 9671.9c3bd339.chunk.css, 9671.428ba5b8.chunk.js 14.5 KiB (javascript) 544 bytes (css/mini-extract) [rendered]
+chunk (runtime: admin/mainadmin) vendors/recharts.36840306.chunk.js (vendors/recharts) (id hint: defaultVendors) 782 KiB [rendered] split chunk (cache group: defaultVendors) (name: vendors/recharts)
+chunk (runtime: admin/mainadmin) 9854-rtl.css, 9854.5769c8c5.chunk.css, 9854.db6bdd93.chunk.js 17.3 KiB (javascript) 277 bytes (css/mini-extract) [rendered]
+chunk (runtime: customer-portal) customer-portal.css, customer-portal.js, customer-portal-rtl.css, customer-portal.asset.php (customer-portal) 80.2 KiB (javascript) 48.2 KiB (css/mini-extract) [entry] [rendered]
+chunk (runtime: admin/post-restriction-classic) admin/post-restriction-classic.css, admin/post-restriction-classic.js, admin/post-restriction-classic-rtl.css, admin/post-restriction-classic.asset.php (admin/post-restriction-classic) 240 KiB (javascript) 4.3 KiB (css/mini-extract) 663 bytes (runtime) [entry] [rendered]
+orphan modules 3.43 MiB (javascript) 34.8 KiB (runtime) [orphan] 2176 modules
+runtime modules 18.2 KiB 34 modules
+built modules 4.76 MiB (javascript) 492 KiB (css/mini-extract) 366 KiB (asset) [built]
+  modules by path ./node_modules/ 1.96 MiB 517 modules
+  modules by path ./src/ 2.8 MiB (javascript) 492 KiB (css/mini-extract) 366 KiB (asset)
+    javascript modules 2.8 MiB 151 modules
+    css modules 492 KiB 38 modules
+    asset modules 366 KiB (asset) 462 bytes (javascript) 11 modules
+  external "ReactDOM" 42 bytes [built] [code generated]
+  external ["wp","i18n"] 42 bytes [built] [code generated]
+  external "ReactJSXRuntime" 42 bytes [built] [code generated]
+  external ["wp","element"] 42 bytes [built] [code generated]
+  external "React" 42 bytes [built] [code generated]
+  external ["wp","htmlEntities"] 42 bytes [built] [code generated]
+  
+2026-10-25 01:10:28: webpack 5.105.2 compiled successfully in 6450 ms (21aedb14ba03d0d1b590)

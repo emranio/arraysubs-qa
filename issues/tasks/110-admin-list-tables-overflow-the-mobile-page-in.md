@@ -4,7 +4,8 @@ title: Admin list tables overflow the mobile page in Subscriptions and Credit Hi
 status: open
 priority: low
 created: 2026-10-24T13:03:29.34602+06:00
-updated: 2026-10-24T13:03:29.34602+06:00
+updated: 2026-10-25T01:11:11.139795+06:00
+started: 2026-10-25T01:07:08.733625+06:00
 tags:
     - bug
     - admin-ui
@@ -25,3 +26,7 @@ Expected: list controls and tables remain inside the page, with local horizontal
 Actual: document scrollWidth is 674-675px on Subscriptions and 598px on Credit History at innerWidth 390. The shared header remains exactly 390px wide on both routes; overflowing content elements are inside the main table/list.
 Concrete proof: qa/admin-header-responsive-2026-10-24/evidence/subscriptions-content-overflow.png and evidence/store-credit-history-content-overflow.png; measurements.json and interactions.json in that directory record viewport/page/header widths and overflowing element classes. Reproduced in both the page matrix and a separate navigation pass.
 Known scope/counterexamples: Settings, Member Access, Manage Members, and Store Credit > Manage Credits keep document width 390. Desktop layout is usable. This is separate from the shared header issue #26 and the already closed Plans toolbar issue #103. No records, balances, or settings were changed.
+
+2026-10-25: User reported collapsing Customer column on Subscriptions at smaller widths. Scope for this fix: investigate fixed table allocation, keep columns readable inside a local horizontal scroll container, and verify responsive toolbar containment. Also inspect Credit History before closing this issue, since the original issue includes it. Fix plan: reproduce, add scoped table sizing and shared overflow containment where needed, build assets, and retest real browser layouts.
+
+2026-10-25 targeted fix completed for Subscriptions: Customer width changed from 0px to 188.61px at a 1000px viewport. Added a minimum table width and local horizontal scrolling, allowed payment descriptions to wrap, and contained mobile filters/status tabs. Real browser passed at 320, 390, 768, 820, 1000, and 1440px with 20 rows and no document overflow; table scrollLeft 600 at 390px leaves page scrollX 0. Evidence and full scope: qa/admin-list-display-2026-10-25/report.md. Credit History remains a separate unresolved portion of this issue and was not modified in this user-scoped fix; reopening the record preserves it.

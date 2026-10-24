@@ -530,3 +530,25 @@
 {"timestamp":"2026-10-24T16:16:48.888374+06:00","action":"edit","task_id":111,"detail":"Box freebie product picker depends on Member Access module"}
 {"timestamp":"2026-10-24T16:16:48.888466+06:00","action":"release","task_id":111,"detail":"jellily-infarct"}
 {"timestamp":"2026-10-24T16:16:48.900269+06:00","action":"move","task_id":111,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-10-25T01:07:08.845873+06:00","action":"move","task_id":110,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-10-25T01:07:08.878167+06:00","action":"edit","task_id":110,"detail":"Admin list tables overflow the mobile page in Subscriptions and Credit History"}
+{"timestamp":"2026-10-25T01:08:33.823197+06:00","action":"create","task_id":112,"detail":"Subscription Plans Trash action becomes invisible on hover"}
+{"timestamp":"2026-10-25T01:08:44.621648+06:00","action":"move","task_id":112,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-10-25T01:11:11.102018+06:00","action":"edit","task_id":112,"detail":"Subscription Plans Trash action becomes invisible on hover"}
+{"timestamp":"2026-10-25T01:11:11.115982+06:00","action":"move","task_id":112,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-10-25T01:11:11.128204+06:00","action":"edit","task_id":110,"detail":"Admin list tables overflow the mobile page in Subscriptions and Credit History"}
+{"timestamp":"2026-10-25T01:11:11.139893+06:00","action":"move","task_id":110,"detail":"in-progress -\u003e open"}
+{"timestamp":"2026-10-25T02:03:46.875151+06:00","action":"create","task_id":113,"detail":"Subscription detail saves drop shipping email and phone"}
+{"timestamp":"2026-10-25T02:04:02.555798+06:00","action":"move","task_id":113,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-10-25T02:05:09.601814+06:00","action":"edit","task_id":113,"detail":"Subscription detail saves drop shipping email and phone"}
+{"timestamp":"2026-10-25T02:05:09.61582+06:00","action":"edit","task_id":113,"detail":"Subscription detail saves drop shipping email and phone"}
+{"timestamp":"2026-10-25T02:05:09.615912+06:00","action":"release","task_id":113,"detail":"avahi-rimer"}
+{"timestamp":"2026-10-25T02:05:09.62813+06:00","action":"move","task_id":113,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-10-25T02:24:30.729385+06:00","action":"create","task_id":114,"detail":"Checkout Builder section column changes discard existing elements"}
+{"timestamp":"2026-10-25T02:24:51.236701+06:00","action":"move","task_id":114,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-10-25T02:25:16.559658+06:00","action":"edit","task_id":114,"detail":"Checkout Builder section column changes discard existing elements"}
+{"timestamp":"2026-10-25T02:30:45.362299+06:00","action":"edit","task_id":114,"detail":"Checkout Builder section column changes discard existing elements"}
+{"timestamp":"2026-10-25T02:31:02.28594+06:00","action":"edit","task_id":114,"detail":"Checkout Builder section column changes discard existing elements"}
+{"timestamp":"2026-10-25T02:31:02.297808+06:00","action":"move","task_id":114,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-10-25T02:31:02.309587+06:00","action":"edit","task_id":114,"detail":"Checkout Builder section column changes discard existing elements"}
+{"timestamp":"2026-10-25T02:31:02.309676+06:00","action":"release","task_id":114,"detail":"marine-reclimb"}
