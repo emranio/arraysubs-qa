@@ -1,0 +1,118 @@
+[
+  {
+    "card": "Member insights",
+    "url": "http://localhost:10013/wp-admin/admin.php?page=arraysubs-mainadmin#/manage-members",
+    "title": "Manage Members - ArraySubs",
+    "headings": [
+      "Manage Members"
+    ],
+    "text": "Manage Members\n\nView member subscriptions, orders, and account details.\n\nSearch customers\nLatest active customers\nCustomer\tUsername\tActive subscriptions\tTotal spend\tYRR\tStore credit\tOrders\tAOV\tRegistered\nFinley Sullivan\ndemo.260927.220@example.test\nView Details\n|\nWP User\n\tdemo260927_220\nUser ID: 224\n\t1\t349.00$\t0.00$\t40.00$\t1\t349.00$\tSeptember 19, 2026\nRowan Sullivan\ndemo.260927.219@example.test\nView Details\n|\nWP User\n\tdemo260927_219\nUser ID: 223\n\t1\t49.00$\t588.00$\t0.00$\t2\t49.00$\tSeptember 19, 2026\nEmery Sullivan\ndemo.260927.217@example.test\nView Details\n|\nWP User\n\tdemo260927_217\nUser ID: 221\n\t1\t199.00$\t199.00$\t25.00$\t1\t199.00$\tSeptember 18, 2026\nReese Sullivan\ndemo.260927.216@example.test\nView Details\n|\nWP User\n\tdemo260927_216\nUser ID: 220\n\t1\t99.00$\t396.00$\t0.00$\t1\t99.00$\tSeptember 18, 2026\nRobin Sullivan\ndemo.260927.212@example.test\nView Details\n|\nWP User\n\tdemo260927_212\nUser ID: 216\n\t1\t0.00$\t468.00$\t0.00$\t3\t0.00$\tSeptember 16, 2026\nDakota Sullivan\ndemo.260927.211@example.test\nView Details\n|\nWP User\n\tdemo260927_211\nUser ID: 215\n\t1\t19.00$\t228.00$\t1.00$\t2\t9.50$\tSeptember 16, 2026\nCameron Sullivan\ndemo.260927.210@example.test\nView Details\n|\nWP User\n\tdemo260927_210\nUser ID: 214\n\t1\t108.15$\t708.00$\t0.00$\t3\t54.08$\tSeptember 15, 2026\nJamie Sullivan\ndemo.260927.209@example.test\nView Details\n|\nWP User\n\tdemo260927_209\nUser ID: 213\n\t1\t24.00$\t288.00$\t0.00$\t3\t24.00$\tSeptember 15, 2026\nSam Sullivan\ndemo.260927.208@example.test\nView Details\n|\nWP User\n\tdemo260927_208\nUser ID: 212\n\t1\t35.00$\t420.00$\t0.00$\t2\t35.00$\tSeptember 15, 2026\nCasey Sullivan\ndemo.260927.206@example.test\nView Details\n|\nWP User\n\tdemo260927_206\nUser ID: 210\n\t1\t424.12$\t0.00$\t0.00$\t2\t212.06$\tSeptember 14, 2026\n\nOrder counts include all statuses. AOV uses paid orders. YRR annualizes active subscriptions.\n\nBrowse all activ"
+  },
+  {
+    "card": "Gateway health & webhooks",
+    "url": "http://localhost:10013/wp-admin/admin.php?page=arraysubs-mainadmin#/settings/gateways",
+    "title": "Payment Gateways - ArraySubs",
+    "headings": [
+      "Paddle",
+      "PayPal",
+      "Stripe",
+      "Mollie",
+      "Webhook Event Log"
+    ],
+    "text": "Activity Audits\nGateway Logs\nRenewal Failures\nPortal Action Failures\nAccess-Rule Conflicts\nScheduled-Job Logs\n\nMonitor gateway connections, subscription counts, and webhook activity.\n\nPaddle\nSTATUS\nDisabled\nSUBSCRIPTIONS\n0\nLAST WEBHOOK\nNever\nPayPal\nSTATUS\nDisabled\nSUBSCRIPTIONS\n0\nLAST WEBHOOK\nNever\nStripe\nSTATUS\nDisabled\nSUBSCRIPTIONS\n0\nLAST WEBHOOK\nNever\nMollie\nSTATUS\nDisabled\nSUBSCRIPTIONS\n0\nLAST WEBHOOK\nNever\nWebhook Event Log\nAll Gateways\nPaddle\nPayPal\nStripe\nMollie\nAll Event Types\nRefresh\n\nNo webhook events recorded yet."
+  },
+  {
+    "card": "Orders Analytics",
+    "url": "http://localhost:10013/wp-admin/admin.php?page=wc-admin&path=%2Fanalytics%2Forders&period=custom&after=2026-09-25&before=2026-10-24&compare=previous_period",
+    "title": "Orders \u2039 Analytics \u2039 WooCommerce \u2039 wp-test2 \u2014 WooCommerce",
+    "headings": [
+      "Orders",
+      "Store Activity",
+      "Filters",
+      "Orders",
+      "Orders"
+    ],
+    "text": "Orders\nStore Activity\nunread activity\nFilters\nDate range\nCustom (Sep 25 - Oct 24, 2026)\nvs. Previous period (Aug 26 - Sep 24, 2026)\nShow\nAll orders\nType\nAll Types\nData status\nLast updated\nOct 24 at 14:49\nNext update\nOct 25 at 02:49\nUpdate now\n\nList of data points available for filtering. Use arrow keys to cycle through the list. Click a data point for a detailed report.\n\nOrders\n91\n-86%\nNet sales\n1,714.95$\n-88%\nAverage order value\n19.63$\n-11%\nAverage items per order\n1\n12%\nOrders\nCustom (Sep 25 - Oct 24, 2026)\n91\nPrevious period (Aug 26 - Sep 24, 2026)\n666\nBy day\nBy week\nBy month\n25\n29\n3\n7\n11\n15\n19\n23\nSep 2026\nOct\n0\n12\n24\n36\nOrders\nDownload\nOrders(scroll to see more)\nDate\nSort by Date in ascending order\n\tOrder #\nOrder Number\n\tStatus\tType\tCustomer\tCustomer type\tProduct(s)\nProducts\n\t\nItems sold\nSort by Items sold in descending order\n\tCoupon(s)\nCoupons\n\t\nNet sales\nNet sales\nSort by Net sales in descending order\n\tAttribution\nAttribution\n\nOctober 24, 2026\nOctober 24, 2026\n\t\n18418\n\t\nCompleted\n\tSubs Renew\tRowan Parker\tReturning\t\nDemo \u00b7 Membership Tier - basic\n\t1\t\t0.00$\tUnknown\nOctober 24, 2026\nOctober 24, 2026\n\t\n18328\n\t\nProcessing\n\tSubs Renew\tJamie Morgan\tReturning\tDemo \u00b7 Coffee and Tea Membership Bundle\n+3 more\n+3 more\n\t4\t\t0.00$\tUnknown\nOctober 23, 2026\nOctober 23, 2026\n\t\n17597\n\t\nProcessing\n\tSubs Renew\tAvery Morgan\tReturning\tDemo \u00b7 Coffee and Tea Membership Bundle\n+3 more\n+3 more\n\t4\t\t0.00$\tUnknown\nOctober 21, 2026\nOctober 21, 2026\n\t\n11989\n\t\nCompleted\n\tSubs Renew\tReese Hayes\tReturning\t\nDemo \u00b7 Membership Tier - professional\n\t1\t\t0.00$\tUnknown\nOctober 19, 2026\nOctober 19, 2026\n\t\n11985\n\t\nCompleted\n\tSubs Renew\tQuinn Hayes\tReturning\t\nDemo \u00b7 Membership Tier - basic\n\t1\t\t0.00$\tUnknown\nOctober 19, 2026\nOctober 19, 2026\n\t\n11977\n\t\nCompleted\n\tSubs Renew\tJordan Morgan\tReturning\t\nDemo \u00b7 Librar"
+  },
+  {
+    "card": "Revenue Analytics",
+    "url": "http://localhost:10013/wp-admin/admin.php?page=wc-admin&path=%2Fanalytics%2Frevenue&period=custom&after=2026-09-25&before=2026-10-24&compare=previous_period",
+    "title": "Revenue \u2039 Analytics \u2039 WooCommerce \u2039 wp-test2 \u2014 WooCommerce",
+    "headings": [
+      "Revenue",
+      "Store Activity",
+      "Filters",
+      "Gross sales",
+      "Revenue"
+    ],
+    "text": "Revenue\nStore Activity\nunread activity\nFilters\nDate range\nCustom (Sep 25 - Oct 24, 2026)\nvs. Previous period (Aug 26 - Sep 24, 2026)\nData status\nLast updated\nOct 24 at 14:49\nNext update\nOct 25 at 02:49\nUpdate now\n\nList of data points available for filtering. Use arrow keys to cycle through the list. Click a data point for a detailed report.\n\nGross sales\n1,815.00$\n-88%\nReturns\n71.65$\n-76%\nCoupons\n28.40$\n-88%\nNet sales\n1,714.95$\n-88%\nTaxes\n15.03$\n-85%\nShipping\n49.50$\n-90%\nTotal sales\n1,779.48$\n-88%\nTotal Subs Purchase Amount\n721.00$\n-86%\nTotal Subs Renew Amount\n617.00$\n-89%\nTotal Subs Upgrade Amount\n0.00$\n0%\nTotal Credit Purchase Amount\n125.00$\n-86%\nGross sales\nCustom (Sep 25 - Oct 24, 2026)\n1,815.00$\nPrevious period (Aug 26 - Sep 24, 2026)\n14,980.40$\nBy day\nBy week\nBy month\n25\n29\n3\n7\n11\n15\n19\n23\nSep 2026\nOct\n0$\n400$\n800$\n1.2k$\nRevenue\nDownload\nRevenue(scroll to see more)\nDate\nSort by Date in ascending order\n\t\nOrders\nSort by Orders in descending order\n\t\nGross sales\nSort by Gross sales in descending order\n\t\nReturns\nSort by Returns in descending order\n\t\nCoupons\nSort by Coupons in descending order\n\t\nNet sales\nSort by Net sales in descending order\n\t\nTaxes\nSort by Taxes in descending order\n\t\nShipping\nSort by Shipping in descending order\n\t\nTotal sales\nSort by Total sales in descending order\n\tTotal Subs Purchase Amount\tTotal Subs Renew Amount\tTotal Subs Upgrade Amount\tTotal Credit Purchase Amount\nOctober 24, 2026\nOctober 24, 2026\n\t\n2\n\t0.00$\t0.00$\t0.00$\t0.00$\t0.00$\t0.00$\t0.00$\tUS$0.00\tUS$0.00\tUS$0.00\tUS$0.00\nOctober 23, 2026\nOctober 23, 2026\n\t\n1\n\t0.00$\t0.00$\t0.00$\t0.00$\t0.00$\t0.00$\t0.00$\tUS$0.00\tUS$0.00\tUS$0.00\tUS$0.00\nOctober 22, 2026\nOctober 22, 2026\n\t\n0\n\t0.00$\t0.00$\t0.00$\t0.00$\t0.00$\t0.00$\t0.00$\tUS$0.00\tUS$0.00\tUS$0.00\tUS$0.00\nOctober 21, 2026\nOctober 21, 2026\n\t\n1\n\t0.00$\t0.00$"
+  },
+  {
+    "card": "Variations Analytics",
+    "url": "http://localhost:10013/wp-admin/admin.php?page=wc-admin&path=%2Fanalytics%2Fvariations&period=custom&after=2026-09-25&before=2026-10-24&compare=previous_period",
+    "title": "Variations \u2039 Analytics \u2039 WooCommerce \u2039 wp-test2 \u2014 WooCommerce",
+    "headings": [
+      "Variations",
+      "Store Activity",
+      "Filters",
+      "Items sold",
+      "Variations"
+    ],
+    "text": "Variations\nStore Activity\nunread activity\nFilters\nDate range\nCustom (Sep 25 - Oct 24, 2026)\nvs. Previous period (Aug 26 - Sep 24, 2026)\nShow\nAll variations\nProduct Type\nAll Variations\nData status\nLast updated\nOct 24 at 14:49\nNext update\nOct 25 at 02:49\nUpdate now\n\nList of data points available for filtering. Use arrow keys to cycle through the list. Click a data point for a detailed report.\n\nItems sold\n12\n-82%\nNet sales\n366.60$\n-83%\nOrders\n10\n-81%\nItems sold\nCustom (Sep 25 - Oct 24, 2026)\n12\nPrevious period (Aug 26 - Sep 24, 2026)\n67\nBy day\nBy week\nBy month\n25\n29\n3\n7\n11\n15\n19\n23\nSep 2026\nOct\n0\n3\n6\nVariations\nCompare\nDownload\nVariations\n\tProduct / Variation title\t\nSKU\nSort by SKU in descending order\n\t\nItems sold\nSort by Items sold in ascending order\n\t\nNet sales\nNet sales\nSort by Net sales in descending order\n\t\nOrders\nSort by Orders in descending order\n\tStatus\tStock\n\n\t\nDemo \u00b7 Member T-shirt - small\n\tDEMO-260927-SHIRT-SMALL\t4\t96.20$\t\n3\n\tIn stock\t1951\n\n\t\nDemo \u00b7 Membership Tier - basic\n\tDEMO-260927-TIER-BASIC\t3\t72.00$\t\n3\n\tIn stock\t\n\n\t\nDemo \u00b7 Member T-shirt - medium\n\tDEMO-260927-SHIRT-MEDIUM\t2\t50.40$\t\n1\n\tIn stock\t1943\n\n\t\nDemo \u00b7 Membership Tier - professional\n\tDEMO-260927-TIER-PROFESSIONAL\t2\t118.00$\t\n2\n\tIn stock\t\n\n\t\nDemo \u00b7 Member T-shirt - large\n\tDEMO-260927-SHIRT-LARGE\t1\t30.00$\t\n1\n\tIn stock\t1935\n5variations sold12items sold366.60$net sales10orders"
+  },
+  {
+    "card": "Customers Analytics",
+    "url": "http://localhost:10013/wp-admin/admin.php?page=wc-admin&path=%2Fanalytics%2Fcustomers",
+    "title": "Customers \u2039 Analytics \u2039 WooCommerce \u2039 wp-test2 \u2014 WooCommerce",
+    "headings": [
+      "Customers",
+      "Store Activity",
+      "Filters",
+      "Customers"
+    ],
+    "text": "Customers\nStore Activity\nunread activity\nFilters\nShow\nAll Customers\nData status\nLast updated\nOct 24 at 14:49\nNext update\nOct 25 at 02:49\nUpdate now\nCustomers\nMove backward for selected items\nDownload\nCustomers(scroll to see more)\nName\nSort by Name in descending order\n\tUsername\tSubscription Status\t\nLast active\nSort by Last active in ascending order\n\t\nDate registered\nSort by Date registered in descending order\n\tEmail\t\nOrders\nSort by Orders in descending order\n\t\nTotal spend\nSort by Total spend in descending order\n\tYRR\nYearly recurring revenue from active subscriptions.\n\tStore credit\nCurrent customer store credit balance.\n\tAOV\nAverage order value\n\t\nCountry / Region\nSort by Country / Region in descending order\n\t\nCity\nSort by City in descending order\n\t\nRegion\nSort by Region in descending order\n\t\nPostal code\nSort by Postal code in descending order\n\n\nFinley Sullivan\n\t\ndemo260927_220\nMember details | Store credits\n\tActive\tOctober 24, 2026\nOctober 24, 2026\n\tSeptember 19, 2026\nSeptember 19, 2026\n\t\ndemo.260927.220@example.test\n\t1\t349.00$\t0.00$\t40.00$\t349.00$\tCA\nCanada\n\tToronto\tON\tM5V 2T6\n\nCameron Bennett\n\t\ndemo260927_010\nMember details | Store credits\n\tActive\tOctober 24, 2026\nOctober 24, 2026\n\tJune 30, 2026\nJune 30, 2026\n\t\ndemo.260927.010@example.test\n\t6\t621.60$\t0.00$\t40.00$\t103.60$\tCA\nCanada\n\tToronto\tON\tM5V 2T6\n\nRowan Sullivan\n\t\ndemo260927_219\nMember details | Store credits\n\tActive\tOctober 24, 2026\nOctober 24, 2026\n\tSeptember 19, 2026\nSeptember 19, 2026\n\t\ndemo.260927.219@example.test\n\t1\t49.00$\t588.00$\t0.00$\t49.00$\tGB\nUnited Kingdom (UK)\n\tLondon\t\tSW1A 1AA\n\nRobin Carter\n\t\ndemo260927_072\nMember details | Store credits\n\tActive\tOctober 24, 2026\nOctober 24, 2026\n\tJuly 24, 2026\nJuly 24, 2026\n\t\ndemo.260927.072@example.test\n\t4\t139.95$\t468.00$\t0.00$\t34.99$\tBD\nBangladesh\n\tDhaka\t\t1205\n\nHarper"
+  },
+  {
+    "card": "Orders",
+    "url": "http://localhost:10013/wp-admin/admin.php?page=wc-orders",
+    "title": "Orders \u2039 wp-test2 \u2014 WordPress",
+    "headings": [
+      "Help & Support",
+      "Found a bug?",
+      "WooCommerce Onboarding",
+      "Profile Setup Wizard",
+      "Task List",
+      "Extended task List",
+      "Orders"
+    ],
+    "text": "Screen Options\nHelp\nOrders Add order\nAll (1,985) | Pending payment (130) | Processing (95) | On hold (70) | Completed (1,406) | Credit settled (3) | Cancelled (170) | Refunded (21) | Failed (90)\n\nSearch orders:\nOrder ID\nCustomer Email\nCustomers\nProducts\nCoupons\nAll\n\nSelect bulk action\nBulk actions\nChange status to processing\nChange status to on-hold\nChange status to completed\nChange status to cancelled\nMove to Trash\nAll dates\nOctober 2026\nSeptember 2026\nAugust 2026\nJuly 2026\nJune 2026\nAll Types\nCredit Purchase\nSubs Trial\nSubs Renew\nSubs Upgrade\nSubs Purchase\nOther\nAll Coupons\ndemo-welcome10\nSubscription Products Only\nAll Products\nAll sales channels\nAdmin\nCheckout\nPoint of Sale\n1,985\nTOTAL ORDERS\n47\nCREDIT PURCHASE\n16\nSUBS TRIAL\n1,094\nSUBS RENEW\n6\nSUBS UPGRADE\n218\nSUBS PURCHASE\n604\nOTHER\n232\nORDERS WITH COUPON\n1,985 items \u00ab \u2039 \nCurrent Page\n of 100 \nNext page\n\u203a \nLast page\n\u00bb\n\n\nSelect All\n\t\nOrder\nSort ascending.\n\t\nDate\nSort ascending.\n\tStatus\tType\tCoupon(s)\t\nTotal\nSort ascending.\n\tOrigin\n\t\nPreview\n#21090 Cameron Bennett\t30 minutes ago\t\nProcessing\n\tOther\t\u2014\t76.15$\tDirect\n\t\nPreview\n#21009 Rowan Sullivan\t4 hours ago\t\nPending payment\n\tSubs Renew\t\u2014\t49.00$\tUnknown\n\t\nPreview\n#20734 Cameron Morgan\t6 hours ago\t\nPending payment\n\tSubs Renew\t\u2014\t44.00$\tUnknown\n\t\nPreview\n#20730 Harper Carter\t6 hours ago\t\nPending payment\n\tSubs Renew\t\u2014\t39.00$\tUnknown\n\t\nPreview\n#20727 Robin Carter\t6 hours ago\t\nPending payment\n\tSubs Renew\t\u2014\t39.00$\tUnknown\n\t\nPreview\n#19926 Jordan Morgan\t16 hours ago\t\nPending payment\n\tSubs Renew\t\u2014\t44.00$\tUnknown\n\t\nPreview\n#19923 Dakota Carter\t16 hours ago\t\nPending payment\n\tSubs Renew\t\u2014\t19.00$\tUnknown\n\t\nPreview\n#19919 Cameron Carter\t16 hours ago\t\nPending payment\n\tSubs Renew\t\u2014\t19.00$\tUnknown\n\t\nPreview\n#18425 Jordan Ellis\tOct 23, 2026\t\nPending payment\n\tSubs Renew\t\u2014\t6.20$\tUnknown\n\t\n"
+  },
+  {
+    "card": "Store Credit Balances",
+    "url": "http://localhost:10013/wp-admin/admin.php?page=arraysubs-mainadmin#/store-credit",
+    "title": "Store Credit Management - ArraySubs",
+    "headings": [],
+    "text": "Manage Credits\nCredit History\nSettings\n\nView balances, adjust credit, and review transaction history.\n\nSearch customers\nLatest active customers\nCustomer\tUsername\tActive subscriptions\tTotal spend\tYRR\tStore credit\tOrders\tAOV\tRegistered\nFinley Sullivan\ndemo.260927.220@example.test\nView Details\n|\nWP User\n\tdemo260927_220\nUser ID: 224\n\t1\t349.00$\t0.00$\t40.00$\t1\t349.00$\tSeptember 19, 2026\nRowan Sullivan\ndemo.260927.219@example.test\nView Details\n|\nWP User\n\tdemo260927_219\nUser ID: 223\n\t1\t49.00$\t588.00$\t0.00$\t2\t49.00$\tSeptember 19, 2026\nEmery Sullivan\ndemo.260927.217@example.test\nView Details\n|\nWP User\n\tdemo260927_217\nUser ID: 221\n\t1\t199.00$\t199.00$\t25.00$\t1\t199.00$\tSeptember 18, 2026\nReese Sullivan\ndemo.260927.216@example.test\nView Details\n|\nWP User\n\tdemo260927_216\nUser ID: 220\n\t1\t99.00$\t396.00$\t0.00$\t1\t99.00$\tSeptember 18, 2026\nRobin Sullivan\ndemo.260927.212@example.test\nView Details\n|\nWP User\n\tdemo260927_212\nUser ID: 216\n\t1\t0.00$\t468.00$\t0.00$\t3\t0.00$\tSeptember 16, 2026\nDakota Sullivan\ndemo.260927.211@example.test\nView Details\n|\nWP User\n\tdemo260927_211\nUser ID: 215\n\t1\t19.00$\t228.00$\t1.00$\t2\t9.50$\tSeptember 16, 2026\nCameron Sullivan\ndemo.260927.210@example.test\nView Details\n|\nWP User\n\tdemo260927_210\nUser ID: 214\n\t1\t108.15$\t708.00$\t0.00$\t3\t54.08$\tSeptember 15, 2026\nJamie Sullivan\ndemo.260927.209@example.test\nView Details\n|\nWP User\n\tdemo260927_209\nUser ID: 213\n\t1\t24.00$\t288.00$\t0.00$\t3\t24.00$\tSeptember 15, 2026\nSam Sullivan\ndemo.260927.208@example.test\nView Details\n|\nWP User\n\tdemo260927_208\nUser ID: 212\n\t1\t35.00$\t420.00$\t0.00$\t2\t35.00$\tSeptember 15, 2026\nCasey Sullivan\ndemo.260927.206@example.test\nView Details\n|\nWP User\n\tdemo260927_206\nUser ID: 210\n\t1\t424.12$\t0.00$\t0.00$\t2\t212.06$\tSeptember 14, 2026\n\nOrder counts include all statuses. AOV uses paid orders. YRR annualizes active su"
+  },
+  {
+    "card": "Credit Transaction History",
+    "url": "http://localhost:10013/wp-admin/admin.php?page=arraysubs-mainadmin#/store-credit/history",
+    "title": "All Credit Transactions - ArraySubs",
+    "headings": [],
+    "text": "Manage Credits\nCredit History\nSettings\n\nView and manage all store credit transactions\n\nFilters:\nAll Sources\nPlan Switch\nRefund\nAdmin Adjustment\nPromotional\nCredit Purchase\nApplied to Renewal\nApplied to Order\nExpired\nAll Types\nCredit (Added)\nDebit (Deducted)\nTotal: 250 transactions\nID\tDate\tCustomer\tDescription\tAmount\n#20733\tOctober 24, 2026 12:33 pm\t\nHarper Carter\ndemo.260927.073@example.test\n\tAPPLIED TO RENEWAL\nApplied to order #20730\n\t-30.00$\n#19922\tOctober 24, 2026 2:38 am\t\nCameron Carter\ndemo.260927.070@example.test\n\tAPPLIED TO RENEWAL\nApplied to order #19919\n\t-40.00$\n#18428\tOctober 23, 2026 1:10 am\t\nJordan Ellis\ndemo.260927.142@example.test\n\tAPPLIED TO RENEWAL\nApplied to order #18425\n\t-25.00$\n#18421\tOctober 23, 2026 1:10 am\t\nRowan Parker\ndemo.260927.139@example.test\n\tAPPLIED TO RENEWAL\nApplied to order #18418\n\t-24.00$\n#18417\tOctober 23, 2026 1:10 am\t\nCasey Reed\ndemo.260927.106@example.test\n\tAPPLIED TO RENEWAL\nApplied to order #18414\n\t-20.00$\n#18331\tOctober 21, 2026 11:19 am\t\nJamie Morgan\ndemo.260927.029@example.test\n\tAPPLIED TO RENEWAL\nApplied to order #18328\n\t-50.40$\n#18324\tOctober 21, 2026 11:19 am\t\nDakota Sullivan\ndemo.260927.211@example.test\n\tAPPLIED TO RENEWAL\nApplied to order #18321\n\t-19.00$\n#17950\tOctober 19, 2026 5:02 pm\t\nJordan Morgan\ndemo.260927.022@example.test\n\tAPPLIED TO RENEWAL\nApplied to order #17947\n\t-8.00$\n#17743\tOctober 19, 2026 3:34 pm\t\nSam Sullivan\ndemo.260927.208@example.test\n\tAPPLIED TO RENEWAL\nApplied to order #17740\n\t-30.00$\n#17600\tOctober 19, 2026 12:54 pm\t\nAvery Morgan\ndemo.260927.021@example.test\n\tAPPLIED TO RENEWAL\nApplied to order #17597\n\t-50.40$\n#17593\tOctober 19, 2026 12:54 pm\t\nQuinn Parker\ndemo.260927.135@example.test\n\tAPPLIED TO RENEWAL\nApplied to order #17590\n\t-17.15$\n#12013\tOctober 18, 2026 1:25 pm\t\nRiley Sullivan\ndemo.260927.205@e"
+  },
+  {
+    "card": "Activity Audit Trail",
+    "url": "http://localhost:10013/wp-admin/admin.php?page=arraysubs-mainadmin#/audits/activity-audits",
+    "title": "Activity Audits - ArraySubs",
+    "headings": [],
+    "text": "Activity Audits\nGateway Logs\nRenewal Failures\nPortal Action Failures\nAccess-Rule Conflicts\nScheduled-Job Logs\n\nView all subscription activity logs, system actions, and user events.\n\nAll Authors\nSystem\nAdmin\nCustomer\nGateway\nAll Entities\nSubscription\nMember\nProduct\nOrder\nCoupon\nEmail\nSettings\nOther\nReset\nDate\tMeta\tEntity\tActivity\nOct 24, 2026, 6:06 PM\t\nCameron Bennett\nORDER\nPrivate\n\t\nOrder #21090\n\t\nOrder #21090 status changed from Draft to Pending payment.\nchanges ->\n\nOct 24, 2026, 6:06 PM\t\nCameron Bennett\nORDER\nPrivate\n\t\nOrder #21090\n\t\nOrder #21090 status changed from Pending payment to Processing.\nchanges ->\n\nOct 24, 2026, 4:44 PM\t\nadmin\nSETTINGS\nPrivate\n\t\u2014\t\nSettings updated: modules.audits, modules.cancellation_flow, modules.checkout_builder, modules.feature_manager, modules.profile_builder, modules.store_credit, modules.member_access, modules.toolkit.\nchanges ->\n\nOct 24, 2026, 4:43 PM\t\nadmin\nSETTINGS\nPrivate\n\t\u2014\t\nSettings updated: modules.audits, modules.toolkit.\nchanges ->\n\nOct 24, 2026, 4:42 PM\t\nadmin\nSETTINGS\nPrivate\n\t\u2014\t\nSettings updated: modules.cancellation_flow, modules.checkout_builder, modules.feature_manager, modules.profile_builder, modules.store_credit, modules.member_access, modules.toolkit.\nchanges ->\n\nOct 24, 2026, 4:16 PM\t\nadmin\nSETTINGS\nPrivate\n\t\u2014\t\nSettings updated: modules.toolkit.\nchanges ->\n\nOct 24, 2026, 4:16 PM\t\nadmin\nSETTINGS\nPrivate\n\t\u2014\t\nSettings updated: modules.member_access.\nchanges ->\n\nOct 24, 2026, 4:15 PM\t\nadmin\nSETTINGS\nPrivate\n\t\u2014\t\nSettings updated: modules.toolkit.\nchanges ->\n\nOct 24, 2026, 4:15 PM\t\nadmin\nSETTINGS\nPrivate\n\t\u2014\t\nSettings updated: modules.member_access, modules.toolkit.\nchanges ->\n\nOct 24, 2026, 4:15 PM\t\nadmin\nSETTINGS\nPrivate\n\t\u2014\t\nSettings updated: modules.toolkit.\nchanges ->\n\nOct 24, 2026, 4:13 PM\t\nadmin\nSETTINGS\nPrivate\n\t\u2014\t"
+  },
+  {
+    "card": "Scheduled Job Logs",
+    "url": "http://localhost:10013/wp-admin/admin.php?page=arraysubs-mainadmin#/audits/scheduled-job-logs",
+    "title": "Scheduled-Job Logs - ArraySubs",
+    "headings": [],
+    "text": "Activity Audits\nGateway Logs\nRenewal Failures\nPortal Action Failures\nAccess-Rule Conflicts\nScheduled-Job Logs\n\nExecution history for all scheduled subscription jobs.\n\nFrom\nTo\nReset\nDate\tStatus\tJob\tDetails\nOct 24, 2026, 6:36 PM\t\nSuccess\n\t\nBackfill Retention Logs\n#9518\t[Backfill Retention Logs] \u2713 Success\nBackfilled retention analytics after subscription #9518.\nOct 24, 2026, 6:35 PM\t\nSuccess\n\t\nBackfill Retention Logs\n#9518\t[Backfill Retention Logs] \u2713 Success\nBackfilled retention analytics after subscription #9518.\nOct 24, 2026, 6:34 PM\t\nSuccess\n\t\nGateway Reconcile\n\t[Gateway Reconcile] \u2713 Success\nRan gateway payment reconciliation.\nOct 24, 2026, 6:34 PM\t\nSuccess\n\t\nBackfill Retention Logs\n#9518\t[Backfill Retention Logs] \u2713 Success\nBackfilled retention analytics after subscription #9518.\nOct 24, 2026, 6:32 PM\t\nSuccess\n\t\nBackfill Retention Logs\n#9518\t[Backfill Retention Logs] \u2713 Success\nBackfilled retention analytics after subscription #9518.\nOct 24, 2026, 6:32 PM\t\nSuccess\n\t\nBackfill Retention Logs\n#9518\t[Backfill Retention Logs] \u2713 Success\nBackfilled retention analytics after subscription #9518.\nOct 24, 2026, 6:31 PM\t\nSuccess\n\t\nBackfill Retention Logs\n#9518\t[Backfill Retention Logs] \u2713 Success\nBackfilled retention analytics after subscription #9518.\nOct 24, 2026, 6:31 PM\t\nSuccess\n\t\nBackfill Retention Logs\n#9518\t[Backfill Retention Logs] \u2713 Success\nBackfilled retention analytics after subscription #9518.\nOct 24, 2026, 6:29 PM\t\nSuccess\n\t\nBackfill Retention Logs\n#9518\t[Backfill Retention Logs] \u2713 Success\nBackfilled retention analytics after subscription #9518.\nOct 24, 2026, 6:29 PM\t\nSuccess\n\t\nBackfill Retention Logs\n#9518\t[Backfill Retention Logs] \u2713 Success\nBackfilled retention analytics after subscription #9518.\nOct 24, 2026, 6:27 PM\t\nSuccess\n\t\nBackfill Retention Logs\n#9518\t[Backfill "
+  }
+]

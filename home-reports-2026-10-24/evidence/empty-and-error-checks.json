@@ -1,0 +1,5 @@
+{
+    "empty_sales_source_pass": true,
+    "failed_source_shows_error_without_zero_metrics": true,
+    "other_source_stays_available": true
+}

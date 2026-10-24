@@ -1,0 +1,9 @@
+ai-provider-for-anthropic
+ai-provider-for-google
+ai-provider-for-openai
+arraysubs
+arraysubspro
+elementor
+subscription-pro
+subscription
+woocommerce

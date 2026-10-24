@@ -1,0 +1,5 @@
+{"range":"7d","cards":5,"source_errors":0,"native_card":40,"wc_records":40,"analytics_card":8,"native_rest_analytics":8,"rest_status":200,"pass":true}
+{"range":"30d","cards":5,"source_errors":0,"native_card":251,"wc_records":251,"analytics_card":91,"native_rest_analytics":91,"rest_status":200,"pass":true}
+{"range":"90d","cards":5,"source_errors":0,"native_card":1620,"wc_records":1620,"analytics_card":1249,"native_rest_analytics":1249,"rest_status":200,"pass":true}
+{"range":"month","cards":5,"source_errors":0,"native_card":137,"wc_records":137,"analytics_card":24,"native_rest_analytics":24,"rest_status":200,"pass":true}
+ALL_PASS=yes

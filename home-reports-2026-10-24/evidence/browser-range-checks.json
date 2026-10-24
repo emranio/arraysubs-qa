@@ -1,0 +1,30 @@
+[
+  {
+    "range": "7 days",
+    "expected": "8",
+    "orders": "8",
+    "url": "http://localhost:10013/wp-admin/admin.php?page=wc-admin&path=/analytics/orders&period=custom&after=2026-10-18&before=2026-10-24&compare=previous_period",
+    "pass": true
+  },
+  {
+    "range": "90 days",
+    "expected": "1,249",
+    "orders": "1,249",
+    "url": "http://localhost:10013/wp-admin/admin.php?page=wc-admin&path=/analytics/orders&period=custom&after=2026-07-27&before=2026-10-24&compare=previous_period",
+    "pass": true
+  },
+  {
+    "range": "This month",
+    "expected": "24",
+    "orders": "24",
+    "url": "http://localhost:10013/wp-admin/admin.php?page=wc-admin&path=/analytics/orders&period=custom&after=2026-10-01&before=2026-10-24&compare=previous_period",
+    "pass": true
+  },
+  {
+    "range": "30 days",
+    "expected": "91",
+    "orders": "91",
+    "url": "http://localhost:10013/wp-admin/admin.php?page=wc-admin&path=/analytics/orders&period=custom&after=2026-09-25&before=2026-10-24&compare=previous_period",
+    "pass": true
+  }
+]
