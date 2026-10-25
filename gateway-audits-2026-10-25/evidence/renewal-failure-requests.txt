@@ -1,0 +1,6 @@
+[4714.3156] GET http://localhost:10013/wp-json/arraysubs/v1/audits/renewal-failures?page=1&per_page=30 (Fetch) 200
+[4714.3157] GET http://localhost:10013/wp-json/arraysubs/v1/audits/renewal-failures?page=1&per_page=30 (Fetch) 200
+[4714.3159] POST http://localhost:10013/wp-json/arraysubs/v1/audits/renewal-failures/21511/retry (Fetch) 200
+[4714.3160] GET http://localhost:10013/wp-json/arraysubs/v1/audits/renewal-failures?page=1&per_page=30 (Fetch) 200
+[4714.3161] POST http://localhost:10013/wp-json/arraysubs/v1/audits/renewal-failures/21511/resolve (Fetch) 200
+[4714.3162] GET http://localhost:10013/wp-json/arraysubs/v1/audits/renewal-failures?page=1&per_page=30 (Fetch) 200

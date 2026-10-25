@@ -1,0 +1,17 @@
+[
+  {
+    "method": "GET",
+    "path": "audits/renewal-failures",
+    "status": 401
+  },
+  {
+    "method": "POST",
+    "path": "audits/renewal-failures/21511/retry",
+    "status": 401
+  },
+  {
+    "method": "POST",
+    "path": "audits/renewal-failures/21511/resolve",
+    "status": 401
+  }
+]

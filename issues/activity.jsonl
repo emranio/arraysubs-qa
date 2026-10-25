@@ -552,3 +552,6 @@
 {"timestamp":"2026-10-25T02:31:02.297808+06:00","action":"move","task_id":114,"detail":"in-progress -\u003e closed"}
 {"timestamp":"2026-10-25T02:31:02.309587+06:00","action":"edit","task_id":114,"detail":"Checkout Builder section column changes discard existing elements"}
 {"timestamp":"2026-10-25T02:31:02.309676+06:00","action":"release","task_id":114,"detail":"marine-reclimb"}
+{"timestamp":"2026-10-25T20:50:50.843657+06:00","action":"create","task_id":115,"detail":"Portal Action Failures splits HTTP status code digits across lines"}
+{"timestamp":"2026-10-25T20:52:10.248927+06:00","action":"create","task_id":116,"detail":"Gateway Logs cards clip Last Webhook on narrow mobile screens"}
+{"timestamp":"2026-10-25T21:32:33.051525+06:00","action":"create","task_id":117,"detail":"Activity Audits Changes control has an oversized misaligned icon"}

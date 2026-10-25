@@ -1,0 +1,22 @@
+[
+  {
+    "path": "audits/renewal-failures",
+    "status": 200
+  },
+  {
+    "path": "audits/activity-logs",
+    "status": 404
+  },
+  {
+    "path": "audits/portal-action-failures",
+    "status": 404
+  },
+  {
+    "path": "audits/scheduled-job-logs",
+    "status": 404
+  },
+  {
+    "path": "audits/queue-health",
+    "status": 404
+  }
+]
