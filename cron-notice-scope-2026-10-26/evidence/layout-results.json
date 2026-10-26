@@ -1,0 +1,270 @@
+[
+  {
+    "viewport": 1920,
+    "header": {
+      "x": 160,
+      "y": 32,
+      "width": 1760,
+      "right": 1920,
+      "bottom": 113.5
+    },
+    "notice": {
+      "x": 182,
+      "y": 133.5,
+      "width": 1718,
+      "right": 1900,
+      "bottom": 444.578125
+    },
+    "grid": {
+      "x": 182,
+      "y": 464.578125,
+      "width": 1718,
+      "right": 1900,
+      "bottom": 576.984375
+    },
+    "cards": [
+      {
+        "x": 182,
+        "y": 464.578125,
+        "width": 417.5,
+        "right": 599.5,
+        "bottom": 576.984375
+      },
+      {
+        "x": 615.5,
+        "y": 464.578125,
+        "width": 417.5,
+        "right": 1033,
+        "bottom": 576.984375
+      },
+      {
+        "x": 1049,
+        "y": 464.578125,
+        "width": 417.5,
+        "right": 1466.5,
+        "bottom": 576.984375
+      },
+      {
+        "x": 1482.5,
+        "y": 464.578125,
+        "width": 417.5,
+        "right": 1900,
+        "bottom": 576.984375
+      }
+    ],
+    "log": {
+      "x": 182,
+      "y": 606.984375,
+      "width": 1718,
+      "right": 1900,
+      "bottom": 763.484375
+    },
+    "scrollWidth": 1920,
+    "screen": "desktop",
+    "headerBeforeNotice": true,
+    "noticeBeforeCards": true,
+    "fillsRow": true,
+    "equalWidths": true
+  },
+  {
+    "viewport": 3840,
+    "header": {
+      "x": 160,
+      "y": 32,
+      "width": 3680,
+      "right": 3840,
+      "bottom": 113.5
+    },
+    "notice": {
+      "x": 182,
+      "y": 133.5,
+      "width": 3638,
+      "right": 3820,
+      "bottom": 444.578125
+    },
+    "grid": {
+      "x": 182,
+      "y": 464.578125,
+      "width": 3638,
+      "right": 3820,
+      "bottom": 576.984375
+    },
+    "cards": [
+      {
+        "x": 182,
+        "y": 464.578125,
+        "width": 897.5,
+        "right": 1079.5,
+        "bottom": 576.984375
+      },
+      {
+        "x": 1095.5,
+        "y": 464.578125,
+        "width": 897.5,
+        "right": 1993,
+        "bottom": 576.984375
+      },
+      {
+        "x": 2009,
+        "y": 464.578125,
+        "width": 897.5,
+        "right": 2906.5,
+        "bottom": 576.984375
+      },
+      {
+        "x": 2922.5,
+        "y": 464.578125,
+        "width": 897.5,
+        "right": 3820,
+        "bottom": 576.984375
+      }
+    ],
+    "log": {
+      "x": 182,
+      "y": 606.984375,
+      "width": 3638,
+      "right": 3820,
+      "bottom": 763.484375
+    },
+    "scrollWidth": 3840,
+    "screen": "wide",
+    "headerBeforeNotice": true,
+    "noticeBeforeCards": true,
+    "fillsRow": true,
+    "equalWidths": true
+  },
+  {
+    "viewport": 1024,
+    "header": {
+      "x": 160,
+      "y": 32,
+      "width": 864,
+      "right": 1024,
+      "bottom": 113.5
+    },
+    "notice": {
+      "x": 182,
+      "y": 133.5,
+      "width": 822,
+      "right": 1004,
+      "bottom": 502.8125
+    },
+    "grid": {
+      "x": 182,
+      "y": 522.8125,
+      "width": 822,
+      "right": 1004,
+      "bottom": 800.03125
+    },
+    "cards": [
+      {
+        "x": 182,
+        "y": 522.8125,
+        "width": 403,
+        "right": 585,
+        "bottom": 653.421875
+      },
+      {
+        "x": 601,
+        "y": 522.8125,
+        "width": 403,
+        "right": 1004,
+        "bottom": 653.421875
+      },
+      {
+        "x": 182,
+        "y": 669.421875,
+        "width": 403,
+        "right": 585,
+        "bottom": 800.03125
+      },
+      {
+        "x": 601,
+        "y": 669.421875,
+        "width": 403,
+        "right": 1004,
+        "bottom": 800.03125
+      }
+    ],
+    "log": {
+      "x": 182,
+      "y": 830.03125,
+      "width": 822,
+      "right": 1004,
+      "bottom": 986.53125
+    },
+    "scrollWidth": 1024,
+    "screen": "tablet",
+    "headerBeforeNotice": true,
+    "noticeBeforeCards": true,
+    "fillsRow": true,
+    "equalWidths": true
+  },
+  {
+    "viewport": 390,
+    "header": {
+      "x": 0,
+      "y": 46,
+      "width": 390,
+      "right": 390,
+      "bottom": 186
+    },
+    "notice": {
+      "x": 25,
+      "y": 221,
+      "width": 338,
+      "right": 363,
+      "bottom": 852.671875
+    },
+    "grid": {
+      "x": 25,
+      "y": 872.671875,
+      "width": 338,
+      "right": 363,
+      "bottom": 1523.109375
+    },
+    "cards": [
+      {
+        "x": 25,
+        "y": 872.671875,
+        "width": 338,
+        "right": 363,
+        "bottom": 1023.28125
+      },
+      {
+        "x": 25,
+        "y": 1039.28125,
+        "width": 338,
+        "right": 363,
+        "bottom": 1189.890625
+      },
+      {
+        "x": 25,
+        "y": 1205.890625,
+        "width": 338,
+        "right": 363,
+        "bottom": 1356.5
+      },
+      {
+        "x": 25,
+        "y": 1372.5,
+        "width": 338,
+        "right": 363,
+        "bottom": 1523.109375
+      }
+    ],
+    "log": {
+      "x": 25,
+      "y": 1553.109375,
+      "width": 338,
+      "right": 363,
+      "bottom": 1716.015625
+    },
+    "scrollWidth": 390,
+    "screen": "mobile",
+    "headerBeforeNotice": true,
+    "noticeBeforeCards": true,
+    "fillsRow": true,
+    "equalWidths": true
+  }
+]

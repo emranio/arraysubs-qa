@@ -1,0 +1,51 @@
+[
+  {
+    "screen": "wordpress-dashboard",
+    "url": "http://localhost:10013/wp-admin/index.php",
+    "count": 0,
+    "expected": 0,
+    "pass": true
+  },
+  {
+    "screen": "woocommerce-settings",
+    "url": "http://localhost:10013/wp-admin/admin.php?page=wc-settings",
+    "count": 0,
+    "expected": 0,
+    "pass": true
+  },
+  {
+    "screen": "woocommerce-status",
+    "url": "http://localhost:10013/wp-admin/admin.php?page=wc-status",
+    "count": 0,
+    "expected": 0,
+    "pass": true
+  },
+  {
+    "screen": "scheduled-actions",
+    "url": "http://localhost:10013/wp-admin/admin.php?page=wc-status&tab=action-scheduler",
+    "count": 1,
+    "expected": 1,
+    "pass": true
+  },
+  {
+    "screen": "tools-scheduled-actions",
+    "url": "http://localhost:10013/wp-admin/tools.php?page=action-scheduler",
+    "count": 0,
+    "expected": 0,
+    "pass": true
+  },
+  {
+    "screen": "arraysubs-home",
+    "url": "http://localhost:10013/wp-admin/admin.php?page=arraysubs-mainadmin#/overview",
+    "count": 0,
+    "expected": 0,
+    "pass": true
+  },
+  {
+    "screen": "old-gateway-route",
+    "url": "http://localhost:10013/wp-admin/admin.php?page=arraysubs-mainadmin#/settings/gateways",
+    "count": 0,
+    "expected": 0,
+    "pass": true
+  }
+]

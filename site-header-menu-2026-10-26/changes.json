@@ -1,0 +1,36 @@
+{
+    "navigation_id": 23464,
+    "header_id": 23465,
+    "checkout_template_id": 23466,
+    "items": [
+        {
+            "label": "Home",
+            "url": "http://localhost:10013/"
+        },
+        {
+            "label": "Shop",
+            "id": 7,
+            "url": "http://localhost:10013/shop/"
+        },
+        {
+            "label": "Checkout",
+            "id": 5756,
+            "url": "http://localhost:10013/checkout-2/"
+        },
+        {
+            "label": "Checkout Classic",
+            "id": 9,
+            "url": "http://localhost:10013/checkout/"
+        },
+        {
+            "label": "Cart Page",
+            "id": 5755,
+            "url": "http://localhost:10013/cart-2/"
+        },
+        {
+            "label": "My Account",
+            "id": 10,
+            "url": "http://localhost:10013/my-account/"
+        }
+    ]
+}

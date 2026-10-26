@@ -1,0 +1,50 @@
+- heading "Not available on this gateway" [level=4, ref=e26]
+- DescriptionList
+  - term "Card Auto Update"
+  - definition
+    - StaticText "The funding source belongs to the customer's PayPal account, so PayPal manages card replacement itself and ArraySubs is not told about it."
+  - term "Early Renewal"
+  - definition
+    - StaticText "PayPal can only capture a balance a subscription already owes; it cannot be asked to charge early. Doing so would also leave PayPal's own billing date unchanged, so the customer would be charged twice."
+  - term "Skip And Date Changes"
+  - definition
+    - StaticText "PayPal Subscriptions has no call that moves the next billing date, so skipping a payment or changing the renewal date is not possible for PayPal subscriptions."
+  - term "Mixed Cart"
+  - definition
+    - StaticText "A PayPal subscription covers exactly one plan, so a subscription cannot be bought in the same checkout as ordinary products."
+  - term "Multiple Subscriptions"
+  - definition
+    - StaticText "PayPal approves one subscription per checkout, so several subscription plans cannot be bought together."
+  - term "Different Billing Cycles"
+  - definition
+    - StaticText "Each PayPal subscription carries a single billing cycle, so plans on different schedules cannot share one checkout."
+  - term "Recurring Coupons"
+  - definition
+    - StaticText "PayPal Subscriptions has no coupon object. A discount is built into the plan price instead, which means a discount that should stop after a set number of cycles cannot be modelled."
+  - term "Customer Portal"
+  - definition
+    - StaticText "PayPal has no merchant-scoped customer portal. Customers manage the agreement from their own PayPal account."
+- term "Card Auto Update"
+- definition
+  - StaticText "The funding source belongs to the customer's PayPal account, so PayPal manages card replacement itself and ArraySubs is not told about it."
+- term "Early Renewal"
+- definition
+  - StaticText "PayPal can only capture a balance a subscription already owes; it cannot be asked to charge early. Doing so would also leave PayPal's own billing date unchanged, so the customer would be charged twice."
+- term "Skip And Date Changes"
+- definition
+  - StaticText "PayPal Subscriptions has no call that moves the next billing date, so skipping a payment or changing the renewal date is not possible for PayPal subscriptions."
+- term "Mixed Cart"
+- definition
+  - StaticText "A PayPal subscription covers exactly one plan, so a subscription cannot be bought in the same checkout as ordinary products."
+- term "Multiple Subscriptions"
+- definition
+  - StaticText "PayPal approves one subscription per checkout, so several subscription plans cannot be bought together."
+- term "Different Billing Cycles"
+- definition
+  - StaticText "Each PayPal subscription carries a single billing cycle, so plans on different schedules cannot share one checkout."
+- term "Recurring Coupons"
+- definition
+  - StaticText "PayPal Subscriptions has no coupon object. A discount is built into the plan price instead, which means a discount that should stop after a set number of cycles cannot be modelled."
+- term "Customer Portal"
+- definition
+  - StaticText "PayPal has no merchant-scoped customer portal. Customers manage the agreement from their own PayPal account."

@@ -1,0 +1,26 @@
+[
+  {
+    "gateway": "Paddle",
+    "url": "http://localhost:10013/wp-admin/admin.php?page=wc-settings&tab=checkout&section=arraysubs_paddle",
+    "expected": "Paddle (ArraySubs)",
+    "pass": true
+  },
+  {
+    "gateway": "PayPal",
+    "url": "http://localhost:10013/wp-admin/admin.php?page=wc-settings&tab=checkout&section=arraysubs_paypal",
+    "expected": "PayPal (ArraySubs)",
+    "pass": true
+  },
+  {
+    "gateway": "Stripe",
+    "url": "http://localhost:10013/wp-admin/admin.php?page=wc-settings&tab=checkout&section=arraysubs_stripe_setup",
+    "expected": "Stripe (ArraySubs)",
+    "pass": true
+  },
+  {
+    "gateway": "Mollie",
+    "url": "http://localhost:10013/wp-admin/plugins.php?s=mollie&plugin_status=all",
+    "expected": "Mollie Payments for WooCommerce",
+    "pass": true
+  }
+]
