@@ -1,0 +1,11 @@
+{"timestamp":"2026-10-28T02:21:22.607714+06:00","action":"create","task_id":1,"detail":"Install TranslatePress and verify custom source-label baseline"}
+{"timestamp":"2026-10-28T02:26:35.301481+06:00","action":"edit","task_id":1,"detail":"Install TranslatePress and verify custom source-label baseline"}
+{"timestamp":"2026-10-28T02:26:35.301764+06:00","action":"release","task_id":1,"detail":"boatie-chrisom"}
+{"timestamp":"2026-10-28T02:27:27.109255+06:00","action":"create","task_id":2,"detail":"Verify runtime customer payloads and premium dynamic text"}
+{"timestamp":"2026-10-28T02:51:16.435489+06:00","action":"edit","task_id":2,"detail":"Verify runtime customer payloads and premium dynamic text"}
+{"timestamp":"2026-10-28T02:51:16.435936+06:00","action":"release","task_id":2,"detail":"boatie-chrisom"}
+{"timestamp":"2026-10-28T02:51:16.534617+06:00","action":"create","task_id":3,"detail":"Verify direct settings translation management and clean fixtures"}
+{"timestamp":"2026-10-28T03:26:33.033071+06:00","action":"edit","task_id":3,"detail":"Verify direct settings translation management and clean fixtures"}
+{"timestamp":"2026-10-28T03:26:33.123384+06:00","action":"edit","task_id":3,"detail":"Verify direct settings translation management and clean fixtures"}
+{"timestamp":"2026-10-28T03:26:33.123573+06:00","action":"release","task_id":3,"detail":"boatie-chrisom"}
+{"timestamp":"2026-10-28T03:26:33.16205+06:00","action":"move","task_id":3,"detail":"in-progress -\u003e done"}
