@@ -1,0 +1,9 @@
+{
+  "button": "Añadir un plan",
+  "hasTranslation": true,
+  "heading": "Planes de suscripción",
+  "lang": "es-ES",
+  "sharedDefault": "Acciones en lote",
+  "translation": "Añadir un plan",
+  "url": "http://localhost:10013/wp-admin/admin.php?page=arraysubs-mainadmin#/plans"
+}

@@ -1,0 +1,32 @@
+
+> arraysubspro@1.3.0 make-pot
+> node ../arraysubs/workflow-scripts/make-pot.js
+
+Plugin file detected.
+Warning: The string "Product #%d" has 3 different translator comments. (src/Features/Analytics/REST/OverviewController.php:1004)
+translators: %d: product ID
+translators: %d: product ID.
+translators: %d: product id.
+Warning: The string "%s is a required field." has 2 different translator comments. (src/Features/CheckoutBuilder/Services/AdminSubscriptionFields.php:260)
+translators: %s: checkout field label.
+translators: %s: required checkout field label.
+Warning: The string "Select %s" has 2 different translator comments. (src/Features/CheckoutBuilder/Services/FieldRenderer.php:484)
+translators: %s: checkout field label
+translators: %s: field label.
+Warning: The string "Enrollment closes: %s" has 2 different translator comments. (src/Features/FixedPeriodMembership/Services/Hooks.php:1133)
+translators: %s: enrollment close date
+translators: %s: enrollment end/close date
+Warning: The string "%s is required." has 2 different translator comments. (src/Features/ProfileFields/Services/AccountFields.php:259)
+translators: %s: field label
+translators: %s: field name
+Warning: The string "Day %d" has 2 different translator comments. (src/resources/components/subscription-bundle/SyncRenewalsBuilder.jsx:243)
+translators: %d: day of the billing cycle.
+translators: %d: last day of the billing cycle.
+Warning: The string "Remove %s" has 2 different translator comments. (src/resources/pages/RefundAnalytics/components/RefundFilters.jsx:402)
+translators: %s: product name.
+translators: %s: selected product name.
+Warning: The string "%sd" has 2 different translator comments. (src/resources/pages/RefundAnalytics/components/RefundTimingCard.jsx:192)
+translators: %s: formatted elapsed days.
+translators: %s: formatted number of days.
+Success: POT file successfully generated.
+Mapped 58 JavaScript sources to current production assets.

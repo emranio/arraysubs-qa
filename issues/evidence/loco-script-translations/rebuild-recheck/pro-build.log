@@ -1,0 +1,84 @@
+
+> arraysubspro@1.3.0 build
+> NODE_ENV=production wp-scripts build
+
+Browserslist: browsers data (caniuse-lite) is 8 months old. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+[dotenv@17.3.1] injecting env (0) from .env -- tip: ⚙️  enable debug logging with { debug: true }
+assets by path admin/ 1.84 MiB
+  assets by path admin/*.css 365 KiB 22 assets
+  assets by path admin/*.js 1.48 MiB 15 assets
+  assets by path admin/*.php 1.69 KiB 15 assets
+assets by path *.css 70 KiB 16 assets
+assets by path *.js 63.5 KiB
+  asset checkout-builder-frontend.js 37.4 KiB [compared for emit] [minimized] (name: checkout-builder-frontend)
+  asset profile-fields.js 7.25 KiB [compared for emit] [minimized] (name: profile-fields)
+  asset customer-portal-pro.js 7.23 KiB [compared for emit] [minimized] (name: customer-portal-pro)
+  + 5 assets
+assets by path *.php 690 bytes
+  asset checkout-builder-frontend.asset.php 93 bytes [compared for emit] (name: checkout-builder-frontend)
+  asset flexible-subscription.asset.php 93 bytes [compared for emit] (name: flexible-subscription)
+  asset customer-portal-pro.asset.php 84 bytes [compared for emit] (name: customer-portal-pro)
+  + 5 assets
+Entrypoint admin/fixed-period-membership 9.2 KiB = admin/fixed-period-membership.css 3.49 KiB admin/fixed-period-membership.js 2.14 KiB admin/fixed-period-membership-rtl.css 3.49 KiB admin/fixed-period-membership.asset.php 84 bytes
+Entrypoint admin/flexible-renewal-sync 17.7 KiB = admin/flexible-renewal-sync.css 4.93 KiB admin/flexible-renewal-sync.js 7.79 KiB admin/flexible-renewal-sync-rtl.css 4.93 KiB admin/flexible-renewal-sync.asset.php 84 bytes
+Entrypoint admin/feature-manager 46.5 KiB = admin/feature-manager.css 12.1 KiB admin/feature-manager.js 22.2 KiB admin/feature-manager-rtl.css 12.1 KiB admin/feature-manager.asset.php 136 bytes
+Entrypoint admin/analytics-orders 3.36 KiB = admin/analytics-orders.js 3.24 KiB admin/analytics-orders.asset.php 119 bytes
+Entrypoint admin/analytics-products-variations 971 bytes = admin/analytics-products-variations.js 866 bytes admin/analytics-products-variations.asset.php 105 bytes
+Entrypoint admin/analytics-revenue 1.83 KiB = admin/analytics-revenue.js 1.72 KiB admin/analytics-revenue.asset.php 105 bytes
+Entrypoint admin/analytics-order-list 8.32 KiB = admin/analytics-order-list.css 3.7 KiB admin/analytics-order-list.js 866 bytes admin/analytics-order-list-rtl.css 3.7 KiB admin/analytics-order-list.asset.php 84 bytes
+Entrypoint admin/analytics-customers 1.99 KiB = admin/analytics-customers.js 1.88 KiB admin/analytics-customers.asset.php 105 bytes
+Entrypoint admin/analytics-overview 23.2 KiB = admin/analytics-overview.css 4.43 KiB admin/analytics-overview.js 14.2 KiB admin/analytics-overview-rtl.css 4.44 KiB admin/analytics-overview.asset.php 119 bytes
+Entrypoint admin/ai-insights [big] 500 KiB = admin/ai-insights.css 16.8 KiB admin/ai-insights.js 466 KiB admin/ai-insights-rtl.css 16.8 KiB admin/ai-insights.asset.php 156 bytes
+Entrypoint customer-portal-pro 15.8 KiB = customer-portal-pro.css 4.23 KiB customer-portal-pro.js 7.23 KiB customer-portal-pro-rtl.css 4.23 KiB customer-portal-pro.asset.php 84 bytes
+Entrypoint early-renew-portal 12.7 KiB = early-renew-portal.css 2.97 KiB early-renew-portal.js 6.67 KiB early-renew-portal-rtl.css 2.97 KiB early-renew-portal.asset.php 84 bytes
+Entrypoint feature-manager-frontend 2.25 KiB = feature-manager-frontend.css 751 bytes feature-manager-frontend.js 714 bytes feature-manager-frontend-rtl.css 751 bytes feature-manager-frontend.asset.php 84 bytes
+Entrypoint fixed-period-membership 1.28 KiB = fixed-period-membership.css 97 bytes fixed-period-membership.js 1.01 KiB fixed-period-membership-rtl.css 97 bytes fixed-period-membership.asset.php 84 bytes
+Entrypoint admin/checkout-builder 56.1 KiB = admin/checkout-builder.css 28 KiB admin/checkout-builder.js 0 bytes admin/checkout-builder-rtl.css 28 KiB admin/checkout-builder.asset.php 84 bytes
+Entrypoint checkout-builder-frontend 66.1 KiB = checkout-builder-frontend.css 14.3 KiB checkout-builder-frontend.js 37.4 KiB checkout-builder-frontend-rtl.css 14.3 KiB checkout-builder-frontend.asset.php 93 bytes
+Entrypoint admin/flexible-subscription 6.46 KiB = admin/flexible-subscription.css 1.74 KiB admin/flexible-subscription.js 2.89 KiB admin/flexible-subscription-rtl.css 1.74 KiB admin/flexible-subscription.asset.php 84 bytes
+Entrypoint flexible-subscription 8.35 KiB = flexible-subscription.css 2.52 KiB flexible-subscription.js 3.22 KiB flexible-subscription-rtl.css 2.52 KiB flexible-subscription.asset.php 93 bytes
+Entrypoint admin/subscription-bundle 133 KiB = admin/subscription-bundle.css 30.8 KiB admin/subscription-bundle.js 71.5 KiB admin/subscription-bundle-rtl.css 30.8 KiB admin/subscription-bundle.asset.php 156 bytes
+Entrypoint subscription-bundle-frontend 12 KiB = subscription-bundle-frontend.css 5.96 KiB subscription-bundle-frontend.js 0 bytes subscription-bundle-frontend-rtl.css 5.96 KiB subscription-bundle-frontend.asset.php 84 bytes
+Entrypoint admin/retention-analytics [big] 520 KiB = admin/retention-analytics.css 29.1 KiB admin/retention-analytics.js 462 KiB admin/retention-analytics-rtl.css 29.1 KiB admin/retention-analytics.asset.php 156 bytes
+Entrypoint admin/refund-analytics [big] 558 KiB = admin/refund-analytics.css 47.6 KiB admin/refund-analytics.js 463 KiB admin/refund-analytics-rtl.css 47.6 KiB admin/refund-analytics.asset.php 156 bytes
+Entrypoint profile-fields 15.8 KiB = profile-fields.css 4.23 KiB profile-fields.js 7.25 KiB profile-fields-rtl.css 4.23 KiB profile-fields.asset.php 84 bytes
+chunk (runtime: admin/feature-manager) admin/feature-manager.css, admin/feature-manager.js, admin/feature-manager-rtl.css, admin/feature-manager.asset.php (admin/feature-manager) 50.3 KiB (javascript) 12 KiB (css/mini-extract) [entry] [rendered]
+chunk (runtime: customer-portal-pro) customer-portal-pro.css, customer-portal-pro.js, customer-portal-pro-rtl.css, customer-portal-pro.asset.php (customer-portal-pro) 24.2 KiB (javascript) 4.23 KiB (css/mini-extract) [entry] [rendered]
+chunk (runtime: admin/retention-analytics) admin/retention-analytics.css, admin/retention-analytics.js, admin/retention-analytics-rtl.css, admin/retention-analytics.asset.php (admin/retention-analytics) 1.45 MiB (javascript) 29.1 KiB (css/mini-extract) 1.13 KiB (runtime) [entry] [rendered]
+chunk (runtime: admin/fixed-period-membership) admin/fixed-period-membership.css, admin/fixed-period-membership.js, admin/fixed-period-membership-rtl.css, admin/fixed-period-membership.asset.php (admin/fixed-period-membership) 3.78 KiB (javascript) 3.49 KiB (css/mini-extract) [entry] [rendered]
+chunk (runtime: admin/refund-analytics) admin/refund-analytics.css, admin/refund-analytics.js, admin/refund-analytics-rtl.css, admin/refund-analytics.asset.php (admin/refund-analytics) 1.46 MiB (javascript) 47.6 KiB (css/mini-extract) 1.13 KiB (runtime) [entry] [rendered]
+chunk (runtime: admin/analytics-order-list) admin/analytics-order-list.css, admin/analytics-order-list.js, admin/analytics-order-list-rtl.css, admin/analytics-order-list.asset.php (admin/analytics-order-list) 1.9 KiB (javascript) 3.7 KiB (css/mini-extract) [entry] [rendered]
+chunk (runtime: admin/analytics-orders) admin/analytics-orders.js, admin/analytics-orders.asset.php (admin/analytics-orders) 7.07 KiB [entry] [rendered]
+chunk (runtime: flexible-subscription) flexible-subscription.css, flexible-subscription.js, flexible-subscription-rtl.css, flexible-subscription.asset.php (flexible-subscription) 6.58 KiB (javascript) 2.52 KiB (css/mini-extract) [entry] [rendered]
+chunk (runtime: feature-manager-frontend) feature-manager-frontend.css, feature-manager-frontend.js, feature-manager-frontend-rtl.css, feature-manager-frontend.asset.php (feature-manager-frontend) 1.26 KiB (javascript) 750 bytes (css/mini-extract) [entry] [rendered]
+chunk (runtime: fixed-period-membership) fixed-period-membership.css, fixed-period-membership.js, fixed-period-membership-rtl.css, fixed-period-membership.asset.php (fixed-period-membership) 1.68 KiB (javascript) 96 bytes (css/mini-extract) [entry] [rendered]
+chunk (runtime: admin/analytics-revenue) admin/analytics-revenue.js, admin/analytics-revenue.asset.php (admin/analytics-revenue) 3.94 KiB [entry] [rendered]
+chunk (runtime: subscription-bundle-frontend) subscription-bundle-frontend.css, subscription-bundle-frontend.js, subscription-bundle-frontend-rtl.css, subscription-bundle-frontend.asset.php (subscription-bundle-frontend) 549 bytes (javascript) 5.96 KiB (css/mini-extract) [entry] [rendered]
+chunk (runtime: early-renew-portal) early-renew-portal.css, early-renew-portal.js, early-renew-portal-rtl.css, early-renew-portal.asset.php (early-renew-portal) 24.1 KiB (javascript) 2.97 KiB (css/mini-extract) [entry] [rendered]
+chunk (runtime: admin/flexible-renewal-sync) admin/flexible-renewal-sync.css, admin/flexible-renewal-sync.js, admin/flexible-renewal-sync-rtl.css, admin/flexible-renewal-sync.asset.php (admin/flexible-renewal-sync) 17 KiB (javascript) 4.93 KiB (css/mini-extract) [entry] [rendered]
+chunk (runtime: checkout-builder-frontend) checkout-builder-frontend.css, checkout-builder-frontend.js, checkout-builder-frontend-rtl.css, checkout-builder-frontend.asset.php (checkout-builder-frontend) 75.3 KiB (javascript) 14.3 KiB (css/mini-extract) [entry] [rendered]
+chunk (runtime: admin/checkout-builder) admin/checkout-builder.css, admin/checkout-builder.js, admin/checkout-builder-rtl.css, admin/checkout-builder.asset.php (admin/checkout-builder) 295 bytes (javascript) 28 KiB (css/mini-extract) [entry] [rendered]
+chunk (runtime: admin/analytics-customers) admin/analytics-customers.js, admin/analytics-customers.asset.php (admin/analytics-customers) 3.78 KiB [entry] [rendered]
+chunk (runtime: admin/analytics-products-variations) admin/analytics-products-variations.js, admin/analytics-products-variations.asset.php (admin/analytics-products-variations) 1.37 KiB [entry] [rendered]
+chunk (runtime: admin/flexible-subscription) admin/flexible-subscription.css, admin/flexible-subscription.js, admin/flexible-subscription-rtl.css, admin/flexible-subscription.asset.php (admin/flexible-subscription) 5.83 KiB (javascript) 1.74 KiB (css/mini-extract) [entry] [rendered]
+chunk (runtime: admin/subscription-bundle) admin/subscription-bundle.css, admin/subscription-bundle.js, admin/subscription-bundle-rtl.css, admin/subscription-bundle.asset.php (admin/subscription-bundle) 169 KiB (javascript) 30.8 KiB (css/mini-extract) 663 bytes (runtime) [entry] [rendered]
+chunk (runtime: admin/ai-insights) admin/ai-insights.css, admin/ai-insights.js, admin/ai-insights-rtl.css, admin/ai-insights.asset.php (admin/ai-insights) 1.48 MiB (javascript) 16.8 KiB (css/mini-extract) 1.13 KiB (runtime) [entry] [rendered]
+chunk (runtime: admin/analytics-overview) admin/analytics-overview.css, admin/analytics-overview.js, admin/analytics-overview-rtl.css, admin/analytics-overview.asset.php (admin/analytics-overview) 33.2 KiB (javascript) 4.43 KiB (css/mini-extract) [entry] [rendered]
+chunk (runtime: profile-fields) profile-fields.css, profile-fields.js, profile-fields-rtl.css, profile-fields.asset.php (profile-fields) 22.1 KiB (javascript) 4.23 KiB (css/mini-extract) [entry] [rendered]
+orphan modules 5.29 MiB (javascript) 21 KiB (runtime) [orphan] 4083 modules
+runtime modules 4.04 KiB 18 modules
+built modules 214 KiB (css/mini-extract) 4.69 MiB (javascript) [built]
+  cacheable modules 214 KiB (css/mini-extract) 175 KiB (javascript)
+    modules by path ./src/resources/ 213 KiB (css/mini-extract) 103 KiB (javascript)
+      css modules 213 KiB 22 modules
+      javascript modules 103 KiB 11 modules
+    modules by path ./node_modules/ 72 KiB
+      modules by path ./node_modules/use-sync-external-store/ 7.84 KiB 6 modules
+      modules by path ./node_modules/react-is/ 2.48 KiB 2 modules
+      + 3 modules
+    css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!./node_modules/@wordpress/scripts/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!../arraysubs/src/resources/components/subscription-box/subscription...(truncated) 1.04 KiB [built] [code generated]
+  + 14 modules
+  
+2026-10-28 01:07:00: webpack 5.105.2 compiled successfully in 8878 ms (056b6687d8b06bdf06e8)

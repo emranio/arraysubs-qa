@@ -1,0 +1,140 @@
+
+> arraysubs@2.1.0 make-pot
+> node workflow-scripts/make-pot.js
+
+Plugin file detected.
+Warning: The string "%1$s ending in %2$s" has 2 different translator comments. (src/Features/AutomaticPayments/Gateways/Mollie/MollieDelegate.php:1362)
+translators: 1: card brand, 2: last 4 digits
+translators: 1: card brand, 2: last four digits.
+Warning: The string "%1$s — every %2$d %3$s" has 2 different translator comments. (src/Features/AutomaticPayments/Gateways/Paddle/PaddleProductSync.php:456)
+translators: 1: product name, 2: interval count, 3: period.
+translators: 1: product name, 2: billing interval, 3: billing period
+Warning: The string "Paddle checkout setup failed: %s" has 2 different translator comments. (src/Features/AutomaticPayments/Gateways/Paddle/Traits/PaddleCheckoutTrait.php:326)
+translators: %s: error message
+translators: %s: Paddle API error message.
+Warning: The string "%1$s — one-time %2$s %3$s" has 2 different translator comments. (src/Features/AutomaticPayments/Gateways/Paddle/Traits/PaddleCheckoutTrait.php:1051)
+translators: 1: line label, 2: amount, 3: currency code
+translators: 1: product name, 2: amount, 3: currency code
+Warning: The string "Reason: %s." has 3 different translator comments. (src/Features/AutomaticPayments/Services/DisputeRecorder.php:287)
+translators: %s: reason given by the payment provider
+translators: %s: failure reason e.g. "the card issuer or bank refused the payment"
+translators: %s: cancellation reason
+Warning: The string "%1$s: %2$s" has 3 different translator comments. (src/Features/CustomerPortal/Services/SubscriptionCard.php:180)
+translators: 1: feature name, 2: available feature value.
+translators: 1: date label, 2: date value
+translators: 1: variation name, 2: validation message.
+Warning: The string "Subscription #%d" has 2 different translator comments. (src/Features/CustomerPortal/views/view-subscription.php:117)
+translators: %d: subscription detail ID
+translators: %d: subscription ID.
+Warning: The string "%d day" has 2 different translator comments. (src/Features/Emails/Emails/SubscriptionPausedEmail.php:59)
+translators: %d: number of paused days.
+translators: %d: number of days subscription is paused
+Warning: The string "Subscription #%s" has 2 different translator comments. (src/Features/Emails/templates/admin-new-subscription.php:31)
+translators: %s: Subscription ID
+translators: %s: subscription ID.
+Warning: The string "Hi %s," has 3 different translator comments. (src/Features/Emails/templates/customer-auto-downgrade.php:22)
+translators: %s: Customer first name
+translators: %s: Customer first name.
+translators: %s: customer first name.
+Warning: The string "Product: %s" has 2 different translator comments. (src/Features/Emails/templates/plain/admin-new-subscription.php:42)
+translators: %s: product name
+translators: %s: product name.
+Warning: The string "Next Payment: %s" has 2 different translator comments. (src/Features/Emails/templates/plain/admin-new-subscription.php:84)
+translators: %s: next payment date
+translators: %s: next payment date.
+Warning: The string "Status: %s" has 2 different translator comments. (src/Features/Emails/templates/plain/admin-payment-failed.php:65)
+translators: %s: subscription status
+translators: %s: subscription status.
+Warning: The string "Reason: %s" has 3 different translator comments. (src/Features/Emails/templates/plain/admin-subscription-pending-cancellation.php:73)
+translators: %s: reason
+translators: %s: pause reason.
+translators: %s: skip reason.
+Warning: The string "View your subscription: %s" has 2 different translator comments. (src/Features/Emails/templates/plain/customer-auto-downgrade.php:65)
+translators: %s: My Account subscription URL
+translators: %s: subscription management URL
+Warning: The string "Manage subscription: %s" has 2 different translator comments. (src/Features/Emails/templates/plain/customer-skip-undone.php:87)
+translators: %s: customer account URL.
+translators: %s: manage subscription URL
+Warning: The string "Product #%d" has 3 different translator comments. (src/Features/Integrations/Services/FluentCrm.php:327)
+translators: %d: WooCommerce product ID.
+translators: %d: product ID number
+translators: %d: product ID.
+Warning: The string "Login as %s" has 2 different translator comments. (src/Features/LoginAsUser/Services/AdminHooks.php:331)
+translators: %s: user display name
+translators: %s: customer name.
+Warning: The string "Plan %s completed successfully" has 2 different translator comments. (src/Features/PlanSwitching/REST/SwitchController.php:1006)
+translators: %s: switch type.
+translators: %s: switch type
+Warning: The string "%1$s - Subscription #%2$d" has 2 different translator comments. (src/Features/PlanSwitching/Services/PlanManager.php:1533)
+translators: 1: product name, 2: subscription ID
+translators: 1: product name, 2: subscription ID.
+Warning: The string "%1$s (#%2$d)" has 3 different translator comments. (src/Features/ProductLifecycle/Services/Hooks.php:864)
+translators: 1: media title, 2: attachment ID.
+translators: 1: box product name, 2: subscription ID.
+translators: 1: product name, 2: product ID.
+Warning: The string "every %1$d %2$s" has 2 different translator comments. (src/Features/RecurringBilling/Services/OrderCreation.php:302)
+translators: %1$d: interval, %2$s: period (day/week/month/year)
+translators: 1: interval, 2: billing period with the correct plural form.
+Warning: The string "Renewal payment failed: %s" has 3 different translator comments. (src/Features/RecurringBilling/Services/RenewalProcessor.php:882)
+translators: %s: failure reason
+translators: %s: Gateway payment failure message.
+translators: %s: error message
+Warning: The string "Every %s" has 2 different translator comments. (src/Features/SubscriptionAdmin/REST/SubscriptionController.php:555)
+translators: %s: translated billing duration such as "1 day" or "2 months".
+translators: %s: period label (e.g., "week", "month")
+Warning: The string "%d product" has 2 different translator comments. (src/Features/SubscriptionBox/REST/BoxController.php:191)
+translators: %d: number of eligible products.
+translators: %d: freebie count.
+Warning: The string "%d billing cycle" has 2 different translator comments. (src/Features/SubscriptionBox/views/box-builder.php:49)
+translators: %d: total number of billing cycles for subscription duration
+translators: %d: number of billing cycles
+Warning: The string "Gateway (%s)" has 2 different translator comments. (src/Features/SubscriptionNotes/Services/AutoNotes.php:990)
+translators: %s: gateway name
+translators: %s: payment gateway name.
+Warning: The string "Admin (%s)" has 2 different translator comments. (src/Features/SubscriptionNotes/Services/AutoNotes.php:1026)
+translators: %s: admin display name
+translators: %s: administrator display name.
+Warning: The string "Customer (%s)" has 2 different translator comments. (src/Features/SubscriptionNotes/Services/AutoNotes.php:1038)
+translators: %s: customer display name
+translators: %s: customer display name.
+Warning: The string "%s free trial" has 2 different translator comments. (src/Features/SubscriptionProducts/Services/AdminPricing.php:131)
+translators: %s: trial duration, such as 7 days or 1 month.
+translators: %s: trial period duration (e.g., "7 days", "1 month")
+Warning: The string "+ %s signup fee" has 2 different translator comments. (src/Features/SubscriptionProducts/Services/AdminPricing.php:140)
+translators: %s: formatted signup fee amount or range.
+translators: %s: one-time signup fee amount charged at purchase
+Warning: The string "%1$s %2$s for the first %3$d payments, then %4$s %2$s" has 2 different translator comments. (src/Features/SubscriptionProducts/Services/CartSummary.php:296)
+translators: %1$s: initial amount, %2$s: billing schedule, %3$d: initial payment count, %4$s: later amount.
+translators: %1$s: price, %2$s: billing schedule, %3$d: number of payments, %4$s: renewal price
+Warning: The string "%1$s %2$s" has 3 different translator comments. (src/Features/SubscriptionProducts/Services/CartSummary.php:315)
+translators: 1: recurring amount, 2: billing schedule
+translators: 1: subscription price amount, 2: billing cycle frequency
+translators: 1: action label, 2: module title.
+Warning: The string "Renews at %1$s %2$s after %3$d payments." has 2 different translator comments. (src/Features/SubscriptionProducts/Services/Hooks.php:943)
+translators: %1$s renewal price html, %2$s billing schedule text, %3$d payment count
+translators: %1$s: renewal price, %2$s: billing schedule, %3$d: number of initial payments
+Warning: The string "Then %1$s %2$s." has 2 different translator comments. (src/Features/SubscriptionProducts/Services/Hooks.php:945)
+translators: %1$s renewal price html, %2$s billing schedule text
+translators: %1$s: renewal price, %2$s: billing schedule
+Warning: The string "%1$d %2$s" has 4 different translator comments. (src/functions/date-calculations.php:311)
+translators: 1: duration number, 2: period label such as "day" or "weeks".
+translators: 1: billing interval number, 2: billing period label.
+translators: 1: duration number, 2: period name in plural (e.g., "days", "months")
+translators: 1: billing interval, 2: translated billing period.
+Warning: The string "every %s" has 2 different translator comments. (src/functions/subscription-helpers.php:636)
+translators: %s: billing duration such as "1 week" or "2 months".
+translators: %s: billing period.
+Warning: The string "Edit %s" has 2 different translator comments. (src/resources/components/RestrictionRuleBuilder/RuleFlowEditor.jsx:224)
+translators: %s: item name.
+translators: %s: setup wizard section title.
+Warning: The string "Delete %s" has 2 different translator comments. (src/resources/components/RestrictionRuleBuilder/RuleFlowEditor.jsx:277)
+translators: %s: item name or type.
+translators: %s: item type.
+Warning: The string "Day %d" has 2 different translator comments. (src/resources/components/subscription-box/SyncRenewalsBuilder.jsx:279)
+translators: %d: day of the billing cycle.
+translators: %d: last day of the billing cycle.
+Warning: The string "%s navigation" has 2 different translator comments. (src/resources/components/TopHeader.jsx:32)
+Translators: %s is the current admin section, such as Settings.
+translators: %s: navigation group label.
+Success: POT file successfully generated.
+Mapped 226 JavaScript sources to current production assets.

@@ -1,0 +1,58 @@
+
+> arraysubspro@1.3.0 make-pot
+> wp i18n make-pot ./ languages/arraysubspro.pot --exclude=zip --allow-root
+
+Plugin file detected.
+Warning: The string "Product #%d" has 3 different translator comments. (src/Features/Analytics/REST/OverviewController.php:1004)
+translators: %d: product ID
+translators: %d: product ID.
+translators: %d: product id.
+Warning: The string "%d order needs type classification for analytics. " contains placeholders but has no "translators:" comment to clarify their meaning. (src/Features/Analytics/Services/OrderListHooks.php:1344)
+Warning: The string "%s is a required field." contains placeholders but has no "translators:" comment to clarify their meaning. (src/Features/CheckoutBuilder/Services/AdminSubscriptionFields.php:259)
+Warning: The string "%s does not allow this file type." contains placeholders but has no "translators:" comment to clarify their meaning. (src/Features/CheckoutBuilder/Services/CheckoutUploads.php:383)
+Warning: The string "%s contains an expired or invalid upload. Select the file again." contains placeholders but has no "translators:" comment to clarify their meaning. (src/Features/CheckoutBuilder/Services/CheckoutUploads.php:419)
+Warning: The string "%1$s allows a maximum of %2$d files." contains placeholders but has no "translators:" comment to clarify their meaning. (src/Features/CheckoutBuilder/Services/CheckoutUploads.php:424)
+Warning: The string "%1$s must be a nonempty file no larger than %2$s." contains placeholders but has no "translators:" comment to clarify their meaning. (src/Features/CheckoutBuilder/Services/CheckoutUploads.php:429)
+Warning: The string "%s requires a valid start and end date." contains placeholders but has no "translators:" comment to clarify their meaning. (src/Features/CheckoutBuilder/Services/FieldValueValidator.php:60)
+Warning: The string "%s must end on or after its start date." contains placeholders but has no "translators:" comment to clarify their meaning. (src/Features/CheckoutBuilder/Services/FieldValueValidator.php:62)
+Warning: The string "%s must be within the allowed date range." contains placeholders but has no "translators:" comment to clarify their meaning. (src/Features/CheckoutBuilder/Services/FieldValueValidator.php:64)
+Warning: The string "%s contains an invalid selection." contains placeholders but has no "translators:" comment to clarify their meaning. (src/Features/CheckoutBuilder/Services/FieldValueValidator.php:70)
+Warning: The string "%s has an invalid value." contains placeholders but has no "translators:" comment to clarify their meaning. (src/Features/CheckoutBuilder/Services/FieldValueValidator.php:74)
+Warning: The string "%s must be a number." contains placeholders but has no "translators:" comment to clarify their meaning. (src/Features/CheckoutBuilder/Services/FieldValueValidator.php:91)
+Warning: The string "%s must be within the allowed number range." contains placeholders but has no "translators:" comment to clarify their meaning. (src/Features/CheckoutBuilder/Services/FieldValueValidator.php:94)
+Warning: The string "%s must use the configured number increment." contains placeholders but has no "translators:" comment to clarify their meaning. (src/Features/CheckoutBuilder/Services/FieldValueValidator.php:98)
+Warning: The string "%s is not a valid email address." contains placeholders but has no "translators:" comment to clarify their meaning. (src/Features/CheckoutBuilder/Services/FieldValueValidator.php:104)
+Warning: The string "%s is not a valid phone number." contains placeholders but has no "translators:" comment to clarify their meaning. (src/Features/CheckoutBuilder/Services/FieldValueValidator.php:110)
+Warning: The string "%s is not a valid date." contains placeholders but has no "translators:" comment to clarify their meaning. (src/Features/CheckoutBuilder/Services/FieldValueValidator.php:116)
+Warning: The string "%s is not a valid date and time." contains placeholders but has no "translators:" comment to clarify their meaning. (src/Features/CheckoutBuilder/Services/FieldValueValidator.php:124)
+Warning: The string "%s must use the configured time increment." contains placeholders but has no "translators:" comment to clarify their meaning. (src/Features/CheckoutBuilder/Services/FieldValueValidator.php:128)
+Warning: The string "%s is not a valid time." contains placeholders but has no "translators:" comment to clarify their meaning. (src/Features/CheckoutBuilder/Services/FieldValueValidator.php:133)
+Warning: The string "%s is not a valid color." contains placeholders but has no "translators:" comment to clarify their meaning. (src/Features/CheckoutBuilder/Services/FieldValueValidator.php:140)
+Warning: The string "%s exceeds the maximum text length." contains placeholders but has no "translators:" comment to clarify their meaning. (src/Features/CheckoutBuilder/Services/FieldValueValidator.php:151)
+Warning: The string "Enrollment closes: %s" has 2 different translator comments. (src/Features/FixedPeriodMembership/Services/Hooks.php:1133)
+translators: %s: enrollment close date
+translators: %s: enrollment end/close date
+Warning: The string "Customer credit (%s)" contains placeholders but has no "translators:" comment to clarify their meaning. (src/Features/OverviewWidgets/Support/OperationsCards.php:149)
+Warning: The string "%s is required." has 2 different translator comments. (src/Features/ProfileFields/Services/AccountFields.php:259)
+translators: %s: field label
+translators: %s: field name
+Warning: The string "Applied to order #%d" contains placeholders but has no "translators:" comment to clarify their meaning. (src/Features/StoreCredit/Services/CreditManager.php:574)
+Warning: The string "Store credit applied: %s" contains placeholders but has no "translators:" comment to clarify their meaning. (src/Features/StoreCredit/Services/CreditManager.php:596)
+Warning: The string "Refund from order #%d" contains placeholders but has no "translators:" comment to clarify their meaning. (src/Features/StoreCredit/Services/CreditManager.php:736)
+Warning: The string "Refund issued as store credit. %s" contains placeholders but has no "translators:" comment to clarify their meaning. (src/Features/StoreCredit/Services/CreditManager.php:780)
+Warning: The string "Refund issued as store credit: %s" contains placeholders but has no "translators:" comment to clarify their meaning. (src/Features/StoreCredit/Services/CreditManager.php:807)
+Warning: The string "Refund %s as store credit?" contains placeholders but has no "translators:" comment to clarify their meaning. (src/Features/StoreCredit/Services/RefundIntegration.php:135)
+Warning: The string "Refund %s as Store Credit" contains placeholders but has no "translators:" comment to clarify their meaning. (src/Features/StoreCredit/Services/RefundIntegration.php:140)
+Warning: The string "%d payment" contains placeholders but has no "translators:" comment to clarify their meaning. (src/Features/SubscriptionBundle/Services/FrontendHooks.php:111)
+Warning: The string "Up to %d payment" contains placeholders but has no "translators:" comment to clarify their meaning. (src/Features/SubscriptionBundle/Services/FrontendHooks.php:112)
+Warning: The string "Search…" has 3 different translator comments. (public/build/admin/subscription-bundle.js:2)
+translators: %s: allowed billing periods, separated by a slash.
+translators: %s: billing period.
+translators: 1: interval, 2: billing period.
+Warning: The string "Day %d" has 2 different translator comments. (public/build/admin/subscription-bundle.js:11)
+translators: %d: day of the billing cycle.
+translators: %d: last day of the billing cycle.
+Warning: The string "Signup fees summed from the contents" has 2 different translator comments. (public/build/admin/subscription-bundle.js:23)
+translators: %d: maximum billing cycles.
+translators: %d: billing cycles.
+Success: POT file successfully generated.

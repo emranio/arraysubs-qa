@@ -1,0 +1,21 @@
+{
+  "translation-revision-date": "2026-10-27 19:27+0000",
+  "generator": "Loco https://localise.biz/",
+  "source": "public/build/4420.470d0083.chunk.js",
+  "domain": "arraysubs",
+  "locale_data": {
+    "arraysubs": {
+      "": {
+        "domain": "",
+        "lang": "es_ES",
+        "plural-forms": "nplurals=2; plural=(n != 1);"
+      },
+      "Subscriptions": [
+        "Suscripciones"
+      ],
+      "No subscriptions found.": [
+        "No se encontraron suscripciones."
+      ]
+    }
+  }
+}

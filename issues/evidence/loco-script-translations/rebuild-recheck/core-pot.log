@@ -1,0 +1,202 @@
+
+> arraysubs@2.1.0 make-pot
+> wp i18n make-pot ./ languages/arraysubs.pot --exclude=zip --allow-root
+
+Plugin file detected.
+Warning: The string "%1$s ending in %2$s" has 2 different translator comments. (src/Features/AutomaticPayments/Gateways/Mollie/MollieDelegate.php:1362)
+translators: 1: card brand, 2: last 4 digits
+translators: 1: card brand, 2: last four digits.
+Warning: The string "%1$s — every %2$d %3$s" has 2 different translator comments. (src/Features/AutomaticPayments/Gateways/Paddle/PaddleProductSync.php:456)
+translators: 1: product name, 2: interval count, 3: period.
+translators: 1: product name, 2: billing interval, 3: billing period
+Warning: The string "Paddle checkout setup failed: %s" has 2 different translator comments. (src/Features/AutomaticPayments/Gateways/Paddle/Traits/PaddleCheckoutTrait.php:326)
+translators: %s: error message
+translators: %s: Paddle API error message.
+Warning: The string "%1$s — one-time %2$s %3$s" has 2 different translator comments. (src/Features/AutomaticPayments/Gateways/Paddle/Traits/PaddleCheckoutTrait.php:1051)
+translators: 1: line label, 2: amount, 3: currency code
+translators: 1: product name, 2: amount, 3: currency code
+Warning: The string "%1$s (%2$s)" has 4 different translator comments. (src/Features/AutomaticPayments/Gateways/Stripe/Traits/StripePaymentMethodsTrait.php:134)
+translators: 1: wallet type, 2: card title
+translators: 1: display name 2: login name
+translators: 1: plan name, 2: the plan's price and billing schedule, such as "$5.00 every month"
+translators: 1: payment method title, 2: payment method slug.
+Warning: The string "%s cannot process subscription and regular products together in the same checkout. Remove the incompatible items or choose a different payment method." contains placeholders but has no "translators:" comment to clarify their meaning. (src/Features/AutomaticPayments/Services/CartRestrictions.php:340)
+Warning: The string "%s can only process one subscription plan per checkout. Keep a single subscription in the cart or choose a different payment method." contains placeholders but has no "translators:" comment to clarify their meaning. (src/Features/AutomaticPayments/Services/CartRestrictions.php:341)
+Warning: The string "%s cannot process subscription plans with different billing cycles in one checkout. Match the billing schedules or choose a different payment method." contains placeholders but has no "translators:" comment to clarify their meaning. (src/Features/AutomaticPayments/Services/CartRestrictions.php:342)
+Warning: The string "%s cannot process subscriptions with a customer-selected billing schedule. Please choose a different payment method." contains placeholders but has no "translators:" comment to clarify their meaning. (src/Features/AutomaticPayments/Services/CartRestrictions.php:343)
+Warning: The string "%s cannot charge a member or discounted subscription price that differs from the product's standard price. Please choose a different payment method." contains placeholders but has no "translators:" comment to clarify their meaning. (src/Features/AutomaticPayments/Services/CartRestrictions.php:344)
+Warning: The string "%s can only process a quantity of one for a subscription. Reduce the quantity or choose a different payment method." contains placeholders but has no "translators:" comment to clarify their meaning. (src/Features/AutomaticPayments/Services/CartRestrictions.php:345)
+Warning: The string "%s cannot charge a signup fee alongside a subscription. Please choose a different payment method." contains placeholders but has no "translators:" comment to clarify their meaning. (src/Features/AutomaticPayments/Services/CartRestrictions.php:346)
+Warning: The string "%s cannot charge shipping on a subscription. Choose a different payment method or a shipping-free option." contains placeholders but has no "translators:" comment to clarify their meaning. (src/Features/AutomaticPayments/Services/CartRestrictions.php:347)
+Warning: The string "%s cannot apply a discount code to a subscription. Remove the coupon or choose a different payment method." contains placeholders but has no "translators:" comment to clarify their meaning. (src/Features/AutomaticPayments/Services/CartRestrictions.php:348)
+Warning: The string "%s cannot apply a discount that continues on renewals. Remove the coupon or choose a different payment method." contains placeholders but has no "translators:" comment to clarify their meaning. (src/Features/AutomaticPayments/Services/CartRestrictions.php:349)
+Warning: The string "%s cannot accept this cart. Please choose a different payment method." contains placeholders but has no "translators:" comment to clarify their meaning. (src/Features/AutomaticPayments/Services/CartRestrictions.php:352)
+Warning: The string "Reason: %s." has 3 different translator comments. (src/Features/AutomaticPayments/Services/DisputeRecorder.php:287)
+translators: %s: reason given by the payment provider
+translators: %s: failure reason e.g. "the card issuer or bank refused the payment"
+translators: %s: cancellation reason
+Warning: The string "Discount: %s off per eligible renewal." contains placeholders but has no "translators:" comment to clarify their meaning. (src/Features/CouponTracking/Services/Hooks.php:631)
+Warning: The string "Discount: %s off the initial order." contains placeholders but has no "translators:" comment to clarify their meaning. (src/Features/CouponTracking/Services/Hooks.php:637)
+Warning: The string "%1$s: %2$s" has 3 different translator comments. (src/Features/CustomerPortal/Services/SubscriptionCard.php:180)
+translators: 1: feature name, 2: available feature value.
+translators: 1: date label, 2: date value
+translators: 1: variation name, 2: validation message.
+Warning: The string "Subscription #%d" has 2 different translator comments. (src/Features/CustomerPortal/views/view-subscription.php:117)
+translators: %d: subscription detail ID
+translators: %d: subscription ID.
+Warning: The string "%d day" has 2 different translator comments. (src/Features/Emails/Emails/SubscriptionPausedEmail.php:59)
+translators: %d: number of paused days.
+translators: %d: number of days subscription is paused
+Warning: The string "Subscription #%s" has 2 different translator comments. (src/Features/Emails/templates/admin-new-subscription.php:31)
+translators: %s: Subscription ID
+translators: %s: subscription ID.
+Warning: The string "Hi %s," has 3 different translator comments. (src/Features/Emails/templates/customer-auto-downgrade.php:22)
+translators: %s: Customer first name
+translators: %s: Customer first name.
+translators: %s: customer first name.
+Warning: The string "The skip for %1$d renewal cycle of your %2$s subscription has been removed." contains placeholders but has no "translators:" comment to clarify their meaning. (src/Features/Emails/templates/customer-skip-undone.php:35)
+Warning: The string "Your %1$s trial has %2$s resumed." contains placeholders but has no "translators:" comment to clarify their meaning. (src/Features/Emails/templates/customer-subscription-resumed.php:33)
+Warning: The string "Your %1$s subscription has %2$s resumed and renewal billing is active again." contains placeholders but has no "translators:" comment to clarify their meaning. (src/Features/Emails/templates/customer-subscription-resumed.php:34)
+Warning: The string "We skipped %1$d upcoming renewal cycle for your %2$s subscription." contains placeholders but has no "translators:" comment to clarify their meaning. (src/Features/Emails/templates/customer-subscription-skipped.php:44)
+Warning: The string "Product: %s" has 2 different translator comments. (src/Features/Emails/templates/plain/admin-new-subscription.php:42)
+translators: %s: product name
+translators: %s: product name.
+Warning: The string "Next Payment: %s" has 2 different translator comments. (src/Features/Emails/templates/plain/admin-new-subscription.php:84)
+translators: %s: next payment date
+translators: %s: next payment date.
+Warning: The string "Status: %s" has 2 different translator comments. (src/Features/Emails/templates/plain/admin-payment-failed.php:65)
+translators: %s: subscription status
+translators: %s: subscription status.
+Warning: The string "Reason: %s" has 3 different translator comments. (src/Features/Emails/templates/plain/admin-subscription-pending-cancellation.php:73)
+translators: %s: reason
+translators: %s: pause reason.
+translators: %s: skip reason.
+Warning: The string "View your subscription: %s" has 2 different translator comments. (src/Features/Emails/templates/plain/customer-auto-downgrade.php:65)
+translators: %s: My Account subscription URL
+translators: %s: subscription management URL
+Warning: The string "Manage subscription: %s" has 2 different translator comments. (src/Features/Emails/templates/plain/customer-skip-undone.php:87)
+translators: %s: customer account URL.
+translators: %s: manage subscription URL
+Warning: The string "Product #%d" has 3 different translator comments. (src/Features/Integrations/Services/FluentCrm.php:327)
+translators: %d: WooCommerce product ID.
+translators: %d: product ID number
+translators: %d: product ID.
+Warning: The string "URL rule %1$d: %2$s" contains placeholders but has no "translators:" comment to clarify their meaning. (src/Features/MembersAccess/REST/RestrictionController.php:494)
+Warning: The string "Plan %s completed successfully" has 2 different translator comments. (src/Features/PlanSwitching/REST/SwitchController.php:1006)
+translators: %s: switch type.
+translators: %s: switch type
+Warning: The string "Credit settled <span class="count">(%s)</span>" contains placeholders but has no "translators:" comment to clarify their meaning. (src/Features/PlanSwitching/Services/Hooks.php:138)
+Warning: The string "%1$s - Subscription #%2$d" has 2 different translator comments. (src/Features/PlanSwitching/Services/PlanManager.php:1533)
+translators: 1: product name, 2: subscription ID
+translators: 1: product name, 2: subscription ID.
+Warning: The string "%1$s (#%2$d)" has 3 different translator comments. (src/Features/ProductLifecycle/Services/Hooks.php:864)
+translators: 1: media title, 2: attachment ID.
+translators: 1: box product name, 2: subscription ID.
+translators: 1: product name, 2: product ID.
+Warning: The string "Renewal payment failed: %s" has 3 different translator comments. (src/Features/RecurringBilling/Services/RenewalProcessor.php:882)
+translators: %s: failure reason
+translators: %s: Gateway payment failure message.
+translators: %s: error message
+Warning: The string "Every %s" has 2 different translator comments. (src/Features/SubscriptionAdmin/REST/SubscriptionController.php:555)
+translators: %s: translated billing duration such as "1 day" or "2 months".
+translators: %s: period label (e.g., "week", "month")
+Warning: The string "Please select at least %d item(s) in this step." contains placeholders but has no "translators:" comment to clarify their meaning. (src/Features/SubscriptionBox/Services/FrontendHooks.php:258)
+Warning: The string "You can select at most %d item(s) in this step." contains placeholders but has no "translators:" comment to clarify their meaning. (src/Features/SubscriptionBox/Services/FrontendHooks.php:259)
+Warning: The string "Maximum quantity for this item is %d." contains placeholders but has no "translators:" comment to clarify their meaning. (src/Features/SubscriptionBox/Services/FrontendHooks.php:260)
+Warning: The string "You save %s" contains placeholders but has no "translators:" comment to clarify their meaning. (src/Features/SubscriptionBox/Services/FrontendHooks.php:269)
+Warning: The string "Includes free gift: %s" contains placeholders but has no "translators:" comment to clarify their meaning. (src/Features/SubscriptionBox/Services/FrontendHooks.php:270)
+Warning: The string "Add %1$s more to unlock: %2$s" contains placeholders but has no "translators:" comment to clarify their meaning. (src/Features/SubscriptionBox/Services/FrontendHooks.php:271)
+Warning: The string "Add %1$d more item(s) to unlock: %2$s" contains placeholders but has no "translators:" comment to clarify their meaning. (src/Features/SubscriptionBox/Services/FrontendHooks.php:272)
+Warning: The string "%d billing cycle" has 2 different translator comments. (src/Features/SubscriptionBox/views/box-builder.php:49)
+translators: %d: total number of billing cycles for subscription duration
+translators: %d: number of billing cycles
+Warning: The string "Gateway (%s)" has 2 different translator comments. (src/Features/SubscriptionNotes/Services/AutoNotes.php:990)
+translators: %s: gateway name
+translators: %s: payment gateway name.
+Warning: The string "Admin (%s)" has 2 different translator comments. (src/Features/SubscriptionNotes/Services/AutoNotes.php:1026)
+translators: %s: admin display name
+translators: %s: administrator display name.
+Warning: The string "Customer (%s)" has 2 different translator comments. (src/Features/SubscriptionNotes/Services/AutoNotes.php:1038)
+translators: %s: customer display name
+translators: %s: customer display name.
+Warning: The string "%s free trial" has 2 different translator comments. (src/Features/SubscriptionProducts/Services/AdminPricing.php:131)
+translators: %s: trial duration, such as 7 days or 1 month.
+translators: %s: trial period duration (e.g., "7 days", "1 month")
+Warning: The string "+ %s signup fee" has 2 different translator comments. (src/Features/SubscriptionProducts/Services/AdminPricing.php:140)
+translators: %s: formatted signup fee amount or range.
+translators: %s: one-time signup fee amount charged at purchase
+Warning: The string "%1$s %2$s for the first %3$d payments, then %4$s %2$s" has 2 different translator comments. (src/Features/SubscriptionProducts/Services/CartSummary.php:296)
+translators: %1$s: initial amount, %2$s: billing schedule, %3$d: initial payment count, %4$s: later amount.
+translators: %1$s: price, %2$s: billing schedule, %3$d: number of payments, %4$s: renewal price
+Warning: The string "%1$s %2$s" has 3 different translator comments. (src/Features/SubscriptionProducts/Services/CartSummary.php:315)
+translators: 1: recurring amount, 2: billing schedule
+translators: 1: subscription price amount, 2: billing cycle frequency
+translators: 1: action label, 2: module title.
+Warning: The string "Renews at %1$s %2$s after %3$d payments." has 2 different translator comments. (src/Features/SubscriptionProducts/Services/Hooks.php:943)
+translators: %1$s renewal price html, %2$s billing schedule text, %3$d payment count
+translators: %1$s: renewal price, %2$s: billing schedule, %3$d: number of initial payments
+Warning: The string "Then %1$s %2$s." has 2 different translator comments. (src/Features/SubscriptionProducts/Services/Hooks.php:945)
+translators: %1$s renewal price html, %2$s billing schedule text
+translators: %1$s: renewal price, %2$s: billing schedule
+Warning: The string "%1$d %2$s" has 3 different translator comments. (src/functions/date-calculations.php:311)
+translators: 1: duration number, 2: period label such as "day" or "weeks".
+translators: 1: billing interval number, 2: billing period label.
+translators: 1: duration number, 2: period name in plural (e.g., "days", "months")
+Warning: The string "every %s" has 2 different translator comments. (src/functions/subscription-helpers.php:636)
+translators: %s: billing duration such as "1 week" or "2 months".
+translators: %s: billing period.
+Warning: The string "The %s argument is required." contains placeholders but has no "translators:" comment to clarify their meaning. (src/Supports/FlowMattic/Actions.php:80)
+Warning: The string "The %s argument must be a positive integer." contains placeholders but has no "translators:" comment to clarify their meaning. (src/Supports/FlowMattic/Actions.php:87)
+Warning: The string "The %s argument must be a nonempty string." contains placeholders but has no "translators:" comment to clarify their meaning. (src/Supports/FlowMattic/Actions.php:94)
+Warning: The string "%d reasons configured" contains placeholders but has no "translators:" comment to clarify their meaning. (public/build/218.9a0f913a.chunk.js:4)
+Warning: The string "%d offer types enabled" contains placeholders but has no "translators:" comment to clarify their meaning. (public/build/218.9a0f913a.chunk.js:4)
+Warning: The string "%d of 4 offer types enabled" contains placeholders but has no "translators:" comment to clarify their meaning. (public/build/218.9a0f913a.chunk.js:4)
+Warning: The string "%1$s%% off for %2$s billing cycles" contains placeholders but has no "translators:" comment to clarify their meaning. (public/build/218.9a0f913a.chunk.js:4)
+Warning: The string "Pause for up to %d days" contains placeholders but has no "translators:" comment to clarify their meaning. (public/build/218.9a0f913a.chunk.js:4)
+Warning: The string "Please enter a valid value for %s within the allowed range." contains placeholders but has no "translators:" comment to clarify their meaning. (public/build/218.9a0f913a.chunk.js:4)
+Warning: The string "User ID: %d" contains placeholders but has no "translators:" comment to clarify their meaning. (public/build/1587.d397c618.chunk.js:1)
+Warning: The string "%d product(s)" has 2 different translator comments. (public/build/5110.32e8b68b.chunk.js:7)
+translators: %d: number of freebie products.
+translators: %d: freebie count.
+Warning: The string "Day %d" has 2 different translator comments. (public/build/5110.32e8b68b.chunk.js:11)
+translators: %d: day of the billing cycle.
+translators: %d: last day of the billing cycle.
+Warning: The string "Step %1$d of %2$d" contains placeholders but has no "translators:" comment to clarify their meaning. (public/build/5110.32e8b68b.chunk.js:22)
+Warning: The string "Create and publish “%s” in your store?" contains placeholders but has no "translators:" comment to clarify their meaning. (public/build/5110.32e8b68b.chunk.js:22)
+Warning: The string "Remove %s" contains placeholders but has no "translators:" comment to clarify their meaning. (public/build/5430.8601482b.chunk.js:1)
+Warning: The string "Search %s" contains placeholders but has no "translators:" comment to clarify their meaning. (public/build/5430.8601482b.chunk.js:1)
+Warning: The string "Drag to reorder %s" contains placeholders but has no "translators:" comment to clarify their meaning. (public/build/5430.8601482b.chunk.js:1)
+Warning: The string "Enable %s" contains placeholders but has no "translators:" comment to clarify their meaning. (public/build/5430.8601482b.chunk.js:1)
+Warning: The string "Rule %d name" contains placeholders but has no "translators:" comment to clarify their meaning. (public/build/5430.8601482b.chunk.js:1)
+Warning: The string "Move %s up" contains placeholders but has no "translators:" comment to clarify their meaning. (public/build/5430.8601482b.chunk.js:1)
+Warning: The string "Move %s down" contains placeholders but has no "translators:" comment to clarify their meaning. (public/build/5430.8601482b.chunk.js:1)
+Warning: The string "Duplicate %s" contains placeholders but has no "translators:" comment to clarify their meaning. (public/build/5430.8601482b.chunk.js:1)
+Warning: The string "Delete %s" contains placeholders but has no "translators:" comment to clarify their meaning. (public/build/5430.8601482b.chunk.js:1)
+Warning: The string "Rule #%d" contains placeholders but has no "translators:" comment to clarify their meaning. (public/build/5430.8601482b.chunk.js:1)
+Warning: The string "Match any of %d condition or group" contains placeholders but has no "translators:" comment to clarify their meaning. (public/build/5430.8601482b.chunk.js:1)
+Warning: The string "Match all of %d condition or group" contains placeholders but has no "translators:" comment to clarify their meaning. (public/build/5430.8601482b.chunk.js:1)
+Warning: The string "%d day after subscription starts" contains placeholders but has no "translators:" comment to clarify their meaning. (public/build/5430.8601482b.chunk.js:1)
+Warning: The string "%d week after subscription starts" contains placeholders but has no "translators:" comment to clarify their meaning. (public/build/5430.8601482b.chunk.js:1)
+Warning: The string "%d month after subscription starts" contains placeholders but has no "translators:" comment to clarify their meaning. (public/build/5430.8601482b.chunk.js:1)
+Warning: The string "%d file" contains placeholders but has no "translators:" comment to clarify their meaning. (public/build/5430.8601482b.chunk.js:1)
+Warning: The string "%d selected post or page" contains placeholders but has no "translators:" comment to clarify their meaning. (public/build/5430.8601482b.chunk.js:1)
+Warning: The string "%d selected term" contains placeholders but has no "translators:" comment to clarify their meaning. (public/build/5430.8601482b.chunk.js:1)
+Warning: The string "Post type: %s" contains placeholders but has no "translators:" comment to clarify their meaning. (public/build/5430.8601482b.chunk.js:1)
+Warning: The string "%d body class and custom CSS" contains placeholders but has no "translators:" comment to clarify their meaning. (public/build/5430.8601482b.chunk.js:1)
+Warning: The string "%d body class" contains placeholders but has no "translators:" comment to clarify their meaning. (public/build/5430.8601482b.chunk.js:1)
+Warning: The string "%d simultaneous session" contains placeholders but has no "translators:" comment to clarify their meaning. (public/build/5430.8601482b.chunk.js:1)
+Warning: The string "Picked up %1$s, position %2$d of %3$d." contains placeholders but has no "translators:" comment to clarify their meaning. (public/build/5430.8601482b.chunk.js:1)
+Warning: The string "%1$s, position %2$d of %3$d." contains placeholders but has no "translators:" comment to clarify their meaning. (public/build/5430.8601482b.chunk.js:1)
+Warning: The string "Dropped %1$s at position %2$d of %3$d." contains placeholders but has no "translators:" comment to clarify their meaning. (public/build/5430.8601482b.chunk.js:1)
+Warning: The string "Shipping Address %d" contains placeholders but has no "translators:" comment to clarify their meaning. (public/build/5829.1aae3c68.chunk.js:9)
+Warning: The string "Shipping address %d" contains placeholders but has no "translators:" comment to clarify their meaning. (public/build/7770.0783e2dc.chunk.js:2)
+Warning: The string "%d key" contains placeholders but has no "translators:" comment to clarify their meaning. (public/build/8268.14dc4529.chunk.js:8)
+Warning: The string "%d features" contains placeholders but has no "translators:" comment to clarify their meaning. (public/build/8658.b3092963.chunk.js:1)
+Warning: The string "Open %s" contains placeholders but has no "translators:" comment to clarify their meaning. (public/build/9084.73e4c46b.chunk.js:23)
+Warning: The string "Upload files for %s" contains placeholders but has no "translators:" comment to clarify their meaning. (public/build/9774.5d789cf3.chunk.js:2)
+Warning: The string "Choose up to %d files for this field. Remove an existing file to add another." contains placeholders but has no "translators:" comment to clarify their meaning. (public/build/9774.5d789cf3.chunk.js:2)
+Warning: The string "Each file must be %s MB or smaller." contains placeholders but has no "translators:" comment to clarify their meaning. (public/build/9774.5d789cf3.chunk.js:2)
+Warning: The string "Up to %1$d files · %2$s MB each" contains placeholders but has no "translators:" comment to clarify their meaning. (public/build/9774.5d789cf3.chunk.js:2)
+Warning: The string "%s is required." contains placeholders but has no "translators:" comment to clarify their meaning. (public/build/9774.5d789cf3.chunk.js:2)
+Warning: The string "Choose color for %s" contains placeholders but has no "translators:" comment to clarify their meaning. (public/build/9774.5d789cf3.chunk.js:2)
+Success: POT file successfully generated.

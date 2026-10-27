@@ -559,3 +559,50 @@
 {"timestamp":"2026-10-26T19:20:32.429953+06:00","action":"move","task_id":118,"detail":"open -\u003e in-progress"}
 {"timestamp":"2026-10-26T19:24:05.945864+06:00","action":"edit","task_id":118,"detail":"Gateway health settings links open blank Stripe and Mollie payment sections"}
 {"timestamp":"2026-10-26T19:24:05.9619+06:00","action":"move","task_id":118,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-10-28T00:58:02.042109+06:00","action":"create","task_id":119,"detail":"Loco Spanish JSON translations are not loaded for lazy ArraySubs admin pages"}
+{"timestamp":"2026-10-28T01:09:20.663021+06:00","action":"edit","task_id":119,"detail":"Loco Spanish JSON translations are not loaded for lazy ArraySubs admin pages"}
+{"timestamp":"2026-10-28T01:12:16.015866+06:00","action":"edit","task_id":119,"detail":"Loco Spanish JSON translations are not loaded for lazy ArraySubs admin pages"}
+{"timestamp":"2026-10-28T01:12:16.016007+06:00","action":"claim","task_id":119,"detail":"motility-sauqui"}
+{"timestamp":"2026-10-28T01:12:16.03187+06:00","action":"move","task_id":119,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-10-28T01:12:16.046156+06:00","action":"edit","task_id":119,"detail":"Loco Spanish JSON translations are not loaded for lazy ArraySubs admin pages"}
+{"timestamp":"2026-10-28T01:12:16.498788+06:00","action":"create","task_id":120,"detail":"Audit and repair core JavaScript translation coverage"}
+{"timestamp":"2026-10-28T01:12:16.511178+06:00","action":"create","task_id":121,"detail":"Audit and repair Pro JavaScript translation coverage"}
+{"timestamp":"2026-10-28T01:12:16.523181+06:00","action":"create","task_id":122,"detail":"Audit and repair PHP translation coverage in both plugins"}
+{"timestamp":"2026-10-28T01:12:39.571473+06:00","action":"edit","task_id":120,"detail":"Audit and repair core JavaScript translation coverage"}
+{"timestamp":"2026-10-28T01:12:39.572501+06:00","action":"claim","task_id":120,"detail":"acardiac-sonantal"}
+{"timestamp":"2026-10-28T01:12:39.593878+06:00","action":"move","task_id":120,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-10-28T01:12:39.61639+06:00","action":"edit","task_id":120,"detail":"Audit and repair core JavaScript translation coverage"}
+{"timestamp":"2026-10-28T01:12:40.54114+06:00","action":"edit","task_id":121,"detail":"Audit and repair Pro JavaScript translation coverage"}
+{"timestamp":"2026-10-28T01:12:40.541256+06:00","action":"claim","task_id":121,"detail":"pilled-tipulid"}
+{"timestamp":"2026-10-28T01:12:40.555865+06:00","action":"move","task_id":121,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-10-28T01:12:40.568941+06:00","action":"edit","task_id":121,"detail":"Audit and repair Pro JavaScript translation coverage"}
+{"timestamp":"2026-10-28T01:12:50.417238+06:00","action":"edit","task_id":122,"detail":"Audit and repair PHP translation coverage in both plugins"}
+{"timestamp":"2026-10-28T01:12:50.417377+06:00","action":"claim","task_id":122,"detail":"human-medregal"}
+{"timestamp":"2026-10-28T01:12:50.432451+06:00","action":"move","task_id":122,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-10-28T01:19:44.372481+06:00","action":"edit","task_id":121,"detail":"Audit and repair Pro JavaScript translation coverage"}
+{"timestamp":"2026-10-28T01:20:52.479698+06:00","action":"edit","task_id":119,"detail":"Loco Spanish JSON translations are not loaded for lazy ArraySubs admin pages"}
+{"timestamp":"2026-10-28T01:21:14.294152+06:00","action":"edit","task_id":120,"detail":"Audit and repair core JavaScript translation coverage"}
+{"timestamp":"2026-10-28T01:22:16.547108+06:00","action":"edit","task_id":122,"detail":"Audit and repair PHP translation coverage in both plugins"}
+{"timestamp":"2026-10-28T01:22:16.562611+06:00","action":"edit","task_id":122,"detail":"Audit and repair PHP translation coverage in both plugins"}
+{"timestamp":"2026-10-28T01:22:16.562755+06:00","action":"release","task_id":122,"detail":"human-medregal"}
+{"timestamp":"2026-10-28T01:24:19.29196+06:00","action":"edit","task_id":121,"detail":"Audit and repair Pro JavaScript translation coverage"}
+{"timestamp":"2026-10-28T01:25:08.593802+06:00","action":"edit","task_id":120,"detail":"Audit and repair core JavaScript translation coverage"}
+{"timestamp":"2026-10-28T01:26:33.379972+06:00","action":"edit","task_id":121,"detail":"Audit and repair Pro JavaScript translation coverage"}
+{"timestamp":"2026-10-28T01:34:47.766279+06:00","action":"edit","task_id":120,"detail":"Audit and repair core JavaScript translation coverage"}
+{"timestamp":"2026-10-28T01:34:47.780796+06:00","action":"edit","task_id":120,"detail":"Audit and repair core JavaScript translation coverage"}
+{"timestamp":"2026-10-28T01:34:47.78089+06:00","action":"release","task_id":120,"detail":"acardiac-sonantal"}
+{"timestamp":"2026-10-28T01:34:47.7935+06:00","action":"move","task_id":120,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-10-28T01:34:52.697515+06:00","action":"edit","task_id":121,"detail":"Audit and repair Pro JavaScript translation coverage"}
+{"timestamp":"2026-10-28T01:34:52.711377+06:00","action":"edit","task_id":121,"detail":"Audit and repair Pro JavaScript translation coverage"}
+{"timestamp":"2026-10-28T01:34:52.711474+06:00","action":"release","task_id":121,"detail":"pilled-tipulid"}
+{"timestamp":"2026-10-28T01:34:52.72421+06:00","action":"move","task_id":121,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-10-28T01:34:56.160898+06:00","action":"edit","task_id":122,"detail":"Audit and repair PHP translation coverage in both plugins"}
+{"timestamp":"2026-10-28T01:34:56.161057+06:00","action":"claim","task_id":122,"detail":"human-medregal"}
+{"timestamp":"2026-10-28T01:34:56.180138+06:00","action":"edit","task_id":122,"detail":"Audit and repair PHP translation coverage in both plugins"}
+{"timestamp":"2026-10-28T01:34:56.196383+06:00","action":"edit","task_id":122,"detail":"Audit and repair PHP translation coverage in both plugins"}
+{"timestamp":"2026-10-28T01:34:56.19651+06:00","action":"release","task_id":122,"detail":"human-medregal"}
+{"timestamp":"2026-10-28T01:34:56.211631+06:00","action":"move","task_id":122,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-10-28T01:35:51.117429+06:00","action":"edit","task_id":119,"detail":"Loco Spanish JSON translations are not loaded for lazy ArraySubs admin pages"}
+{"timestamp":"2026-10-28T01:35:51.131189+06:00","action":"edit","task_id":119,"detail":"Loco Spanish JSON translations are not loaded for lazy ArraySubs admin pages"}
+{"timestamp":"2026-10-28T01:35:51.13128+06:00","action":"release","task_id":119,"detail":"motility-sauqui"}
+{"timestamp":"2026-10-28T01:35:51.143962+06:00","action":"move","task_id":119,"detail":"in-progress -\u003e closed"}

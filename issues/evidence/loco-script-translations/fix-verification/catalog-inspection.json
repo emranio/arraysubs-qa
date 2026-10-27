@@ -1,0 +1,14 @@
+{
+  "arraysubs": {
+    "pot_lines": 34216,
+    "messages": 7296,
+    "script_references": 77,
+    "missing": []
+  },
+  "arraysubspro": {
+    "pot_lines": 8935,
+    "messages": 1924,
+    "script_references": 41,
+    "missing": []
+  }
+}

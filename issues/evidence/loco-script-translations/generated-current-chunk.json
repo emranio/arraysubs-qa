@@ -1,0 +1,21 @@
+{
+  "translation-revision-date": "2026-10-27 18:57+0000",
+  "generator": "Loco https://localise.biz/",
+  "source": "public/build/7536.021eccd6.chunk.js",
+  "domain": "arraysubs",
+  "locale_data": {
+    "arraysubs": {
+      "": {
+        "domain": "",
+        "lang": "es_ES",
+        "plural-forms": "nplurals=2; plural=n != 1;"
+      },
+      "Subscription Plans": [
+        "Planes de suscripción"
+      ],
+      "Add new plan": [
+        "Añadir un plan"
+      ]
+    }
+  }
+}

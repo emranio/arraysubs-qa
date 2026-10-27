@@ -1,0 +1,21 @@
+{
+  "translation-revision-date": "2026-10-27 19:28+0000",
+  "generator": "Loco https://localise.biz/",
+  "source": "public/build/profile-fields.js",
+  "domain": "arraysubspro",
+  "locale_data": {
+    "arraysubspro": {
+      "": {
+        "domain": "",
+        "lang": "es_ES",
+        "plural-forms": "nplurals=2; plural=(n != 1);"
+      },
+      "Cancel": [
+        "Cancelar"
+      ],
+      "Confirm": [
+        "Confirmar"
+      ]
+    }
+  }
+}

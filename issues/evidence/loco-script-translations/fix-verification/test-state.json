@@ -1,0 +1,11 @@
+{
+  "admin_user": 1,
+  "admin_locale": "",
+  "site_language": "",
+  "pro_active": true,
+  "loco_active": true,
+  "sample_prefixes": [
+    "arraysubs-es_ES",
+    "arraysubspro-es_ES"
+  ]
+}

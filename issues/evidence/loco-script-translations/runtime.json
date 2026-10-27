@@ -1,0 +1,8 @@
+{
+  "button": "Add new plan",
+  "hasTranslation": false,
+  "heading": "Planes de suscripción",
+  "jsTranslation": "Add new plan",
+  "translationTags": [],
+  "url": "http://localhost:10013/wp-admin/admin.php?page=arraysubs-mainadmin#/plans"
+}
