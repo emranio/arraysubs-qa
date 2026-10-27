@@ -707,3 +707,12 @@
 {"timestamp":"2026-10-28T03:26:33.276123+06:00","action":"edit","task_id":128,"detail":"Support multilingual database-saved storefront text in both plugins"}
 {"timestamp":"2026-10-28T03:26:33.276679+06:00","action":"release","task_id":128,"detail":"boatie-chrisom"}
 {"timestamp":"2026-10-28T03:26:33.417822+06:00","action":"move","task_id":128,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-10-28T03:28:05.510141+06:00","action":"create","task_id":135,"detail":"Fix missing Spanish catalogs and button translation discoverability"}
+{"timestamp":"2026-10-28T03:28:17.570287+06:00","action":"move","task_id":135,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-10-28T03:35:31.286471+06:00","action":"edit","task_id":135,"detail":"Fix missing Spanish catalogs and button translation discoverability"}
+{"timestamp":"2026-10-28T03:36:36.708589+06:00","action":"edit","task_id":135,"detail":"Install complete Spanish catalogs discoverable in Loco Translate"}
+{"timestamp":"2026-10-28T03:40:51.62398+06:00","action":"edit","task_id":135,"detail":"Install complete Spanish catalogs discoverable in Loco Translate"}
+{"timestamp":"2026-10-28T03:44:40.587152+06:00","action":"edit","task_id":135,"detail":"Install complete Spanish catalogs discoverable in Loco Translate"}
+{"timestamp":"2026-10-28T03:44:40.601119+06:00","action":"edit","task_id":135,"detail":"Install complete Spanish catalogs discoverable in Loco Translate"}
+{"timestamp":"2026-10-28T03:44:40.601214+06:00","action":"release","task_id":135,"detail":"boatie-chrisom"}
+{"timestamp":"2026-10-28T03:44:40.613678+06:00","action":"move","task_id":135,"detail":"in-progress -\u003e closed"}
