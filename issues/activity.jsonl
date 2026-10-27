@@ -648,3 +648,62 @@
 {"timestamp":"2026-10-28T02:08:52.431565+06:00","action":"release","task_id":127,"detail":"shure-hosel"}
 {"timestamp":"2026-10-28T02:09:39.136541+06:00","action":"edit","task_id":123,"detail":"Add Codex SDK multilingual plugin translation workflow"}
 {"timestamp":"2026-10-28T02:09:39.137483+06:00","action":"release","task_id":123,"detail":"boatie-chrisom"}
+{"timestamp":"2026-10-28T02:19:27.455911+06:00","action":"create","task_id":128,"detail":"Support multilingual database-saved storefront text in both plugins"}
+{"timestamp":"2026-10-28T02:19:46.123346+06:00","action":"create","task_id":129,"detail":"Add shared translation support for core database-saved display text"}
+{"timestamp":"2026-10-28T02:19:46.17149+06:00","action":"create","task_id":130,"detail":"Connect premium database-saved display text to shared multilingual support"}
+{"timestamp":"2026-10-28T02:19:46.216689+06:00","action":"create","task_id":131,"detail":"Review WPML and TranslatePress dynamic-string contracts and regression coverage"}
+{"timestamp":"2026-10-28T02:20:07.135455+06:00","action":"edit","task_id":129,"detail":"Add shared translation support for core database-saved display text"}
+{"timestamp":"2026-10-28T02:20:07.136419+06:00","action":"claim","task_id":129,"detail":"fireboy-morphine"}
+{"timestamp":"2026-10-28T02:20:27.37039+06:00","action":"edit","task_id":131,"detail":"Review WPML and TranslatePress dynamic-string contracts and regression coverage"}
+{"timestamp":"2026-10-28T02:20:27.371213+06:00","action":"claim","task_id":131,"detail":"outray-dyspnea"}
+{"timestamp":"2026-10-28T02:20:28.221497+06:00","action":"edit","task_id":130,"detail":"Connect premium database-saved display text to shared multilingual support"}
+{"timestamp":"2026-10-28T02:20:28.22162+06:00","action":"claim","task_id":130,"detail":"rickle-neuritic"}
+{"timestamp":"2026-10-28T02:24:21.348155+06:00","action":"edit","task_id":130,"detail":"Connect premium database-saved display text to shared multilingual support"}
+{"timestamp":"2026-10-28T02:25:07.723389+06:00","action":"edit","task_id":129,"detail":"Add shared translation support for core database-saved display text"}
+{"timestamp":"2026-10-28T02:25:57.211726+06:00","action":"edit","task_id":131,"detail":"Review WPML and TranslatePress dynamic-string contracts and regression coverage"}
+{"timestamp":"2026-10-28T02:26:05.339453+06:00","action":"edit","task_id":131,"detail":"Review TranslatePress dynamic-string contracts and regression coverage"}
+{"timestamp":"2026-10-28T02:28:00.155845+06:00","action":"edit","task_id":128,"detail":"Support multilingual database-saved storefront text in both plugins"}
+{"timestamp":"2026-10-28T02:28:52.840797+06:00","action":"edit","task_id":131,"detail":"Review TranslatePress dynamic-string contracts and regression coverage"}
+{"timestamp":"2026-10-28T02:29:11.30073+06:00","action":"edit","task_id":130,"detail":"Connect premium database-saved display text to shared multilingual support"}
+{"timestamp":"2026-10-28T02:29:11.315434+06:00","action":"edit","task_id":129,"detail":"Add shared translation support for core database-saved display text"}
+{"timestamp":"2026-10-28T02:31:51.658293+06:00","action":"edit","task_id":128,"detail":"Support multilingual database-saved storefront text in both plugins"}
+{"timestamp":"2026-10-28T02:32:40.622253+06:00","action":"edit","task_id":131,"detail":"Review TranslatePress dynamic-string contracts and regression coverage"}
+{"timestamp":"2026-10-28T02:32:49.863709+06:00","action":"edit","task_id":129,"detail":"Add shared translation support for core database-saved display text"}
+{"timestamp":"2026-10-28T02:37:18.681304+06:00","action":"edit","task_id":131,"detail":"Review TranslatePress dynamic-string contracts and regression coverage"}
+{"timestamp":"2026-10-28T02:37:24.845095+06:00","action":"edit","task_id":129,"detail":"Add shared translation support for core database-saved display text"}
+{"timestamp":"2026-10-28T02:39:50.576298+06:00","action":"edit","task_id":130,"detail":"Connect premium database-saved display text to shared multilingual support"}
+{"timestamp":"2026-10-28T02:46:12.803448+06:00","action":"edit","task_id":129,"detail":"Add shared translation support for core database-saved display text"}
+{"timestamp":"2026-10-28T02:46:12.807098+06:00","action":"release","task_id":129,"detail":"fireboy-morphine"}
+{"timestamp":"2026-10-28T02:46:16.251708+06:00","action":"edit","task_id":130,"detail":"Connect premium database-saved display text to shared multilingual support"}
+{"timestamp":"2026-10-28T02:46:16.252198+06:00","action":"release","task_id":130,"detail":"rickle-neuritic"}
+{"timestamp":"2026-10-28T02:46:26.969767+06:00","action":"edit","task_id":131,"detail":"Review TranslatePress dynamic-string contracts and regression coverage"}
+{"timestamp":"2026-10-28T02:46:26.971779+06:00","action":"release","task_id":131,"detail":"outray-dyspnea"}
+{"timestamp":"2026-10-28T02:47:32.132523+06:00","action":"create","task_id":132,"detail":"Add admin translation catalog and native TranslatePress storage API"}
+{"timestamp":"2026-10-28T02:47:32.337912+06:00","action":"create","task_id":133,"detail":"Add Translations screen to ArraySubs settings"}
+{"timestamp":"2026-10-28T02:47:32.434583+06:00","action":"create","task_id":134,"detail":"Expose premium configurable customer text in shared translations screen"}
+{"timestamp":"2026-10-28T02:47:32.534571+06:00","action":"edit","task_id":128,"detail":"Support multilingual database-saved storefront text in both plugins"}
+{"timestamp":"2026-10-28T02:48:21.303065+06:00","action":"edit","task_id":132,"detail":"Add admin translation catalog and native TranslatePress storage API"}
+{"timestamp":"2026-10-28T02:48:21.305038+06:00","action":"claim","task_id":132,"detail":"fireboy-morphine"}
+{"timestamp":"2026-10-28T02:48:27.697535+06:00","action":"edit","task_id":133,"detail":"Add Translations screen to ArraySubs settings"}
+{"timestamp":"2026-10-28T02:48:27.698334+06:00","action":"claim","task_id":133,"detail":"outray-dyspnea"}
+{"timestamp":"2026-10-28T02:48:33.023785+06:00","action":"edit","task_id":134,"detail":"Expose premium configurable customer text in shared translations screen"}
+{"timestamp":"2026-10-28T02:48:33.024238+06:00","action":"claim","task_id":134,"detail":"rickle-neuritic"}
+{"timestamp":"2026-10-28T02:57:20.379816+06:00","action":"edit","task_id":133,"detail":"Add Translations screen to ArraySubs settings"}
+{"timestamp":"2026-10-28T02:58:08.873397+06:00","action":"edit","task_id":134,"detail":"Expose premium configurable customer text in shared translations screen"}
+{"timestamp":"2026-10-28T02:59:09.603219+06:00","action":"edit","task_id":133,"detail":"Add Translations screen to ArraySubs settings"}
+{"timestamp":"2026-10-28T03:00:20.036126+06:00","action":"edit","task_id":134,"detail":"Expose premium configurable customer text in shared translations screen"}
+{"timestamp":"2026-10-28T03:01:47.497279+06:00","action":"edit","task_id":132,"detail":"Add admin translation catalog and native TranslatePress storage API"}
+{"timestamp":"2026-10-28T03:05:14.597137+06:00","action":"edit","task_id":134,"detail":"Expose premium configurable customer text in shared translations screen"}
+{"timestamp":"2026-10-28T03:06:09.271642+06:00","action":"edit","task_id":134,"detail":"Expose premium configurable customer text in shared translations screen"}
+{"timestamp":"2026-10-28T03:08:00.520789+06:00","action":"edit","task_id":132,"detail":"Add admin translation catalog and native TranslatePress storage API"}
+{"timestamp":"2026-10-28T03:08:36.960602+06:00","action":"edit","task_id":133,"detail":"Add Translations screen to ArraySubs settings"}
+{"timestamp":"2026-10-28T03:18:27.981809+06:00","action":"edit","task_id":132,"detail":"Add admin translation catalog and native TranslatePress storage API"}
+{"timestamp":"2026-10-28T03:18:27.984266+06:00","action":"release","task_id":132,"detail":"fireboy-morphine"}
+{"timestamp":"2026-10-28T03:18:34.140982+06:00","action":"edit","task_id":134,"detail":"Expose premium configurable customer text in shared translations screen"}
+{"timestamp":"2026-10-28T03:18:34.141449+06:00","action":"release","task_id":134,"detail":"rickle-neuritic"}
+{"timestamp":"2026-10-28T03:18:35.781618+06:00","action":"edit","task_id":133,"detail":"Add Translations screen to ArraySubs settings"}
+{"timestamp":"2026-10-28T03:18:35.782431+06:00","action":"release","task_id":133,"detail":"outray-dyspnea"}
+{"timestamp":"2026-10-28T03:26:32.910814+06:00","action":"edit","task_id":128,"detail":"Support multilingual database-saved storefront text in both plugins"}
+{"timestamp":"2026-10-28T03:26:33.276123+06:00","action":"edit","task_id":128,"detail":"Support multilingual database-saved storefront text in both plugins"}
+{"timestamp":"2026-10-28T03:26:33.276679+06:00","action":"release","task_id":128,"detail":"boatie-chrisom"}
+{"timestamp":"2026-10-28T03:26:33.417822+06:00","action":"move","task_id":128,"detail":"in-progress -\u003e closed"}
