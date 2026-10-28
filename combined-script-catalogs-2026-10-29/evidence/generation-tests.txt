@@ -1,0 +1,15 @@
+Combined script generation verification — 2026-10-29
+Task #1; plan ../plan.md.
+Worktree: /tmp/arraysubs-combined-i18n-20261029/arraysubs
+
+Command: node --test workflow-scripts/translation/tests/*.test.mjs
+Result: 60 tests passed, 0 failed, 0 skipped; duration 1208 ms. Tests use temporary fixtures and mocked model clients; no model/network request or live catalog write occurred.
+
+Coverage includes: one combined file from entry/chunk/sibling references; contextual and plural messages; source-only/PHP-only exclusion; fuzzy/empty partial PO behavior; stale manifest/reference rejection; PO retained without purging script entries; JSON replacement preserves PHP outputs and other locales/plugins; atomic publication and failure rollback; CLI/runner behavior and SDK isolation.
+
+Read-only comparison of generated in-memory Spanish combined catalogs against all current installed per-script JSON messages:
+ArraySubs: 79 files; 3831 unique messages; combined 3831; missing 0; changed 0.
+ArraySubs Pro: 17 files; 638 unique messages; combined 638; missing 0; changed 0.
+
+Changed source line counts: i18n-update.js 119; catalog.mjs 252; catalog.test.mjs 291; cli.test.mjs 274; i18n-pipeline.test.mjs 235.
+Whitespace validation: git diff --check passed for owned changed files.

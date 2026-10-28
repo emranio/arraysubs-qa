@@ -1,0 +1,21 @@
+{
+  "url": "http://localhost:10013/wp-admin/admin.php?page=arraysubs-mainadmin#/integrations",
+  "lang": "es",
+  "headings": [
+    "Integraciones",
+    "FlowMattic",
+    "LearnPress",
+    "Affiliates Manager",
+    "CartFlows",
+    "WP Fusion",
+    "FluentCRM",
+    "Tutor LMS",
+    "Academy LMS",
+    "License Manager for WooCommerce",
+    "Insertar/editar un enlace"
+  ],
+  "core": "Integraciones",
+  "lazy": "Conecta tus integraciones",
+  "scripts": [],
+  "combinedEmissions": 1
+}

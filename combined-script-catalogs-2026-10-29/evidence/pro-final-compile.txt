@@ -1,0 +1,6 @@
+
+> arraysubspro@1.3.0 i18n:update
+> node ../arraysubs/workflow-scripts/i18n-update.js
+
+Updated 1 catalog from languages/arraysubspro.pot:
+  es_ES: 1854 messages, 0 untranslated; arraysubspro-es_ES.mo and .l10n.php rebuilt; script JSON: 0 per-script files removed, arraysubspro-es_ES.json written.

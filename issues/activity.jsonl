@@ -716,3 +716,10 @@
 {"timestamp":"2026-10-28T03:44:40.601119+06:00","action":"edit","task_id":135,"detail":"Install complete Spanish catalogs discoverable in Loco Translate"}
 {"timestamp":"2026-10-28T03:44:40.601214+06:00","action":"release","task_id":135,"detail":"boatie-chrisom"}
 {"timestamp":"2026-10-28T03:44:40.613678+06:00","action":"move","task_id":135,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-10-28T06:07:59.901258+06:00","action":"create","task_id":136,"detail":"Elementor restriction rules revert to legacy mode when the editor loads an autosave draft"}
+{"timestamp":"2026-10-28T06:07:59.916406+06:00","action":"create","task_id":137,"detail":"Quick product wizard modal stays mounted across SPA route changes and blocks the next page"}
+{"timestamp":"2026-10-28T06:07:59.930655+06:00","action":"create","task_id":138,"detail":"Checkout Builder address-group field editor warns: setState during render (onSave inside setFieldsConfig updater)"}
+{"timestamp":"2026-10-28T06:07:59.945223+06:00","action":"create","task_id":139,"detail":"Subscription create form warns: uncontrolled input becomes controlled (billing First Name / Address 1)"}
+{"timestamp":"2026-10-28T12:25:47.366976+06:00","action":"move","task_id":136,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-10-28T12:35:33.185607+06:00","action":"edit","task_id":136,"detail":"Elementor restriction rules revert to legacy mode when the editor loads an autosave draft"}
+{"timestamp":"2026-10-28T12:35:33.200181+06:00","action":"move","task_id":136,"detail":"in-progress -\u003e closed"}

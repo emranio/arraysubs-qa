@@ -1,0 +1,16 @@
+{
+  "url": "http://localhost:10013/wp-admin/admin.php?page=wc-admin&path=%2Fanalytics%2Frevenue",
+  "pro": "Importe total de compras de suscripciones",
+  "visible": true,
+  "proScripts": [
+    "http://localhost:10013/wp-content/plugins/arraysubspro/public/build/admin/analytics-overview.js?ver=b2d89ac077c1f1553377",
+    "http://localhost:10013/wp-content/plugins/arraysubspro/public/build/admin/analytics-orders.js?ver=fc5085770dc348f5068e",
+    "http://localhost:10013/wp-content/plugins/arraysubspro/public/build/admin/analytics-products-variations.js?ver=e54b6c4f9f5b3b83ed1e",
+    "http://localhost:10013/wp-content/plugins/arraysubspro/public/build/admin/analytics-revenue.js?ver=589f3f5d755502240d1e",
+    "http://localhost:10013/wp-content/plugins/arraysubspro/public/build/admin/ai-insights.js?ver=76aa55fb57def13327f0",
+    "http://localhost:10013/wp-content/plugins/arraysubspro/public/build/admin/analytics-customers.js?ver=77fffc7675fb058d2c83",
+    "http://localhost:10013/wp-content/plugins/arraysubspro/public/build/admin/retention-analytics.js?ver=c099a515baab65618962",
+    "http://localhost:10013/wp-content/plugins/arraysubspro/public/build/admin/refund-analytics.js?ver=281bb39715c0d2a40e96"
+  ],
+  "catalogCount": 1
+}

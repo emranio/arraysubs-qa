@@ -1,0 +1,18 @@
+{
+  "arraysubs": [
+    "changelog.draft.txt",
+    "workflow-scripts/webpack-i18n-manifest.js",
+    "workflow-scripts/i18n-update.js",
+    "src/Supports/Translations.php",
+    "workflow-scripts/translation/build-references.cjs",
+    "workflow-scripts/translation/README.md",
+    "workflow-scripts/translation/catalog.mjs",
+    "workflow-scripts/tests/script-translations-combined.php",
+    "workflow-scripts/translation/tests/cli.test.mjs",
+    "workflow-scripts/translation/tests/catalog.test.mjs",
+    "workflow-scripts/translation/tests/i18n-pipeline.test.mjs"
+  ],
+  "arraysubspro": [
+    "changelog.draft.txt"
+  ]
+}

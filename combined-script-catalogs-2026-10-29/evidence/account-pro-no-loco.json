@@ -1,0 +1,11 @@
+{
+  "url": "http://localhost:10013/my-account/",
+  "lang": "es",
+  "core": "Mejorar plan",
+  "pro": "Desactivar la renovación automática",
+  "scripts": [
+    "http://localhost:10013/wp-content/plugins/arraysubs/public/build/customer-portal.js?ver=92620c1dfabdcc33aab2",
+    "http://localhost:10013/wp-content/plugins/arraysubspro/public/build/flexible-subscription.js?ver=70f0441acdee51889867"
+  ],
+  "combinedEmissions": 2
+}

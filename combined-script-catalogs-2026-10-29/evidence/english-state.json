@@ -1,0 +1,14 @@
+{
+    "mode": "english",
+    "active_plugins": [
+        "ai-provider-for-anthropic\/plugin.php",
+        "ai-provider-for-google\/plugin.php",
+        "ai-provider-for-openai\/plugin.php",
+        "arraysubs\/arraysubs.php",
+        "arraysubspro\/arraysubspro.php",
+        "elementor\/elementor.php",
+        "woocommerce\/woocommerce.php"
+    ],
+    "user_locale": "en_US",
+    "WPLANG": ""
+}

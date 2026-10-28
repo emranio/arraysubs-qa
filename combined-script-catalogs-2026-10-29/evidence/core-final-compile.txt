@@ -1,0 +1,6 @@
+
+> arraysubs@2.1.0 i18n:update
+> node workflow-scripts/i18n-update.js
+
+Updated 1 catalog from languages/arraysubs.pot:
+  es_ES: 7342 messages, 0 untranslated; arraysubs-es_ES.mo and .l10n.php rebuilt; script JSON: 0 per-script files removed, arraysubs-es_ES.json written.

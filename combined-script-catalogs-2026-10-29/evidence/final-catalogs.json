@@ -1,0 +1,24 @@
+{
+  "arraysubs": {
+    "original_json_files": 79,
+    "final_json_files": [
+      "arraysubs-es_ES.json"
+    ],
+    "messages": 3831,
+    "all_original_translations_preserved": true,
+    "sha256": "3ff65d2f6fe6677dee51e09cf33dd2fdc685ff39b198cc5b87334adc48c0f1c6",
+    "bytes": 374223,
+    "qa_backups_remaining": 0
+  },
+  "arraysubspro": {
+    "original_json_files": 17,
+    "final_json_files": [
+      "arraysubspro-es_ES.json"
+    ],
+    "messages": 638,
+    "all_original_translations_preserved": true,
+    "sha256": "906a10fe0e89d139d0ea0067ce2c8a2109b1cb01a38389cfe6b9578d0a6f701c",
+    "bytes": 51531,
+    "qa_backups_remaining": 0
+  }
+}

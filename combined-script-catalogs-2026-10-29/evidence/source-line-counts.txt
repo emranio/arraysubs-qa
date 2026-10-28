@@ -1,0 +1,15 @@
+     148 /Users/emran/Local Sites/wp-test2/app/public/wp-content/plugins/arraysubs/changelog.draft.txt
+      89 /Users/emran/Local Sites/wp-test2/app/public/wp-content/plugins/arraysubs/workflow-scripts/webpack-i18n-manifest.js
+     119 /Users/emran/Local Sites/wp-test2/app/public/wp-content/plugins/arraysubs/workflow-scripts/i18n-update.js
+     451 /Users/emran/Local Sites/wp-test2/app/public/wp-content/plugins/arraysubs/src/Supports/Translations.php
+      50 /Users/emran/Local Sites/wp-test2/app/public/wp-content/plugins/arraysubs/workflow-scripts/translation/build-references.cjs
+     223 /Users/emran/Local Sites/wp-test2/app/public/wp-content/plugins/arraysubs/workflow-scripts/translation/README.md
+     252 /Users/emran/Local Sites/wp-test2/app/public/wp-content/plugins/arraysubs/workflow-scripts/translation/catalog.mjs
+     209 /Users/emran/Local Sites/wp-test2/app/public/wp-content/plugins/arraysubs/workflow-scripts/tests/script-translations-combined.php
+     274 /Users/emran/Local Sites/wp-test2/app/public/wp-content/plugins/arraysubs/workflow-scripts/translation/tests/cli.test.mjs
+     291 /Users/emran/Local Sites/wp-test2/app/public/wp-content/plugins/arraysubs/workflow-scripts/translation/tests/catalog.test.mjs
+     235 /Users/emran/Local Sites/wp-test2/app/public/wp-content/plugins/arraysubs/workflow-scripts/translation/tests/i18n-pipeline.test.mjs
+      54 /Users/emran/Local Sites/wp-test2/app/public/wp-content/plugins/arraysubspro/changelog.draft.txt
+     592 /Users/emran/Local Sites/wp-test2/app/public/wp-content/plugins/AGENTS.md
+     212 /Users/emran/Local Sites/wp-test2/app/public/wp-content/plugins/documentations/architecture/translations.md
+    3199 total

@@ -1,0 +1,41 @@
+Runtime combined-catalog verification — 2026-10-29
+
+Source under test: /tmp/arraysubs-combined-i18n-20261029/arraysubs/src/Supports/Translations.php
+Regression: workflow-scripts/tests/script-translations-combined.php
+
+Isolated real WordPress + installed Loco execution through WP-CLI, all commands --allow-root.
+Production ArraySubs/Pro/Elementor were skipped for each process. The harness required
+worktree PHP classes, used temporary Config roots + temporary WP_LANG_DIR, and mapped
+fixture plugin URLs through plugins_url. It populated Pro configuration only in the
+Pro scenarios. No saved plugin activation, locale, license or Loco settings changed.
+Loco filesystem jail was limited to the temporary translation root in process memory.
+
+Results:
+- Core only, Loco disabled: 21 combined assertions passed.
+- Core + Pro, Loco disabled: 24 combined assertions passed.
+- Core only, Loco enabled: 23 combined assertions passed.
+- Core + Pro, Loco enabled: 26 combined assertions passed.
+- Existing script translations + Pro: 26 assertions passed.
+- Native WordPress head script rendering: 17 assertions passed.
+- Native WordPress footer script rendering: 17 assertions passed.
+Total: 154 assertions passed.
+
+Combined regression covers:
+- Native load_script_textdomain resolves readable <domain>-<locale>.json.
+- Bundled < system < Loco custom precedence, sparse/empty override preservation.
+- Entry and lazy-module messages available before first consumer.
+- Context keys, plural forms and safe inline escaping.
+- One full combined payload per domain, repeat-print idempotence.
+- External per-script packs supplement missing keys without overriding combined data.
+- Native automatic pack rendering suppressed after preparation (no duplicate/overwrite).
+- Core and Pro domain separation, shared core catalog not emitted twice.
+- Footer-first/head-second enqueue order seeds translations in head before consumption.
+- Loco native single-json callback supports both compiler's 3 args and cleanup's 2 args.
+- Other plugins/templates are unaffected.
+- Clearing final JS translation removes stale combined output even when PHP translations remain.
+- Malformed custom JSON falls back to valid bundled catalog during native lookup.
+- Missing locale does not reuse previous locale data.
+
+PHP syntax checks pass. Files: Translations.php 451 lines; combined regression 209 lines.
+Whitespace check passes. No live browser/Loco editor Save verification claimed here;
+root integration and browser task remain pending.

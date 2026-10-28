@@ -1,0 +1,22 @@
+{
+  "arraysubs": {
+    "prepared_with_existing_distribution_script": true,
+    "json_files": [
+      "arraysubs-es_ES.json"
+    ],
+    "po_mo_php_and_build_manifest_included": true,
+    "no_qa_backups": true,
+    "combined_catalog_matches_live": true,
+    "development_tests_excluded": true
+  },
+  "arraysubspro": {
+    "prepared_with_existing_distribution_script": true,
+    "json_files": [
+      "arraysubspro-es_ES.json"
+    ],
+    "po_mo_php_and_build_manifest_included": true,
+    "no_qa_backups": true,
+    "combined_catalog_matches_live": true,
+    "development_tests_excluded": true
+  }
+}

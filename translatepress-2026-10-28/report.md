@@ -7,6 +7,8 @@ Implementation issues: #128–134 in `qa/issues/`
 
 ## Result
 
+> Superseded on 2026-10-28 (same day): the Settings → Translations screen described below was replaced by the per-field translate icon. See the Follow-up section at the end; the evidence above it is historical.
+
 Completed the scoped English/Spanish cycle. TranslatePress 3.3.8 is installed and active with English (`en_US`) as the source and Spanish (`es_ES`) as the target. Automatic translation is disabled. Loco Translate remains active. WPML was explicitly excluded by the user.
 
 ArraySubs now provides **Settings → Translations** for saved customer-facing text. The screen uses TranslatePress's native dictionaries and configured languages. It preserves original settings, offers searchable groups and optional product selection, and validates runtime variables before saving. It includes registered core and premium configuration sources, rather than scanning arbitrary database values or customer data.
@@ -75,3 +77,7 @@ No payment or order submission, final cancellation, offer acceptance, paid machi
 ## Scope limits
 
 This cycle exercised Spanish with representative core and premium flows on the local site. It does not establish exhaustive coverage of every language, theme, third-party checkout extension or arbitrary custom database field. WPML was skipped at the user's instruction. Existing non-fatal Elementor log notices and duplicate POT translator-comment warnings were outside this change.
+
+## Follow-up (2026-10-28, later the same day)
+
+The dedicated Settings → Translations screen described above was removed at the user's request. Saved text is now translated in place: customer-facing text inputs, textareas and rich-text editors (opt-in per field; keys, URLs, prices, admin-only forms stay single-language) show a tiny translate icon that opens a small dialog listing every configured TranslatePress language (English value as placeholder). The Elementor restriction message gets a "Translate message" button control that opens the same dialog; the Gutenberg block and post restriction panels use the shared message field. Saves still go to the native TranslatePress dictionary through the same `TranslatePressDictionary` adapter and placeholder validation; the catalog, source registry, product lookup and Pro source collector were deleted. Storefront behaviour is unchanged: text is still translatable by clicking it in the TranslatePress visual editor.
