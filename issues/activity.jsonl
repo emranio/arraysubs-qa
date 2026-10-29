@@ -768,3 +768,21 @@
 {"timestamp":"2026-10-29T14:07:07.881914+06:00","action":"edit","task_id":144,"detail":"Renewal invoice email and PDF precede store credit order adjustments"}
 {"timestamp":"2026-10-29T14:07:07.882008+06:00","action":"release","task_id":144,"detail":"befile-inseam"}
 {"timestamp":"2026-10-29T14:07:07.893798+06:00","action":"move","task_id":144,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-10-29T15:16:09.050531+06:00","action":"create","task_id":145,"detail":"Chrome screenshot capture intermittently blocks invoice visual QA"}
+{"timestamp":"2026-10-29T15:20:23.02273+06:00","action":"edit","task_id":145,"detail":"Chrome screenshot capture intermittently blocks invoice visual QA"}
+{"timestamp":"2026-10-29T15:20:23.023863+06:00","action":"release","task_id":145,"detail":"incarn-kunk"}
+{"timestamp":"2026-10-29T15:20:23.038182+06:00","action":"move","task_id":145,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-10-29T15:20:23.051725+06:00","action":"create","task_id":146,"detail":"Subscription related-orders table pushes invoice action outside mobile viewport"}
+{"timestamp":"2026-10-29T15:21:01.479191+06:00","action":"edit","task_id":146,"detail":"Subscription related-orders table pushes invoice action outside mobile viewport"}
+{"timestamp":"2026-10-29T15:21:01.479342+06:00","action":"release","task_id":146,"detail":"incarn-kunk"}
+{"timestamp":"2026-10-29T15:22:05.227485+06:00","action":"edit","task_id":146,"detail":"Subscription related-orders table pushes invoice action outside mobile viewport"}
+{"timestamp":"2026-10-29T15:22:05.228822+06:00","action":"claim","task_id":146,"detail":"zopilote-surprint"}
+{"timestamp":"2026-10-29T15:22:17.930648+06:00","action":"edit","task_id":146,"detail":"Subscription related-orders table pushes invoice action outside mobile viewport"}
+{"timestamp":"2026-10-29T15:24:06.681383+06:00","action":"edit","task_id":146,"detail":"Subscription related-orders table pushes invoice action outside mobile viewport"}
+{"timestamp":"2026-10-29T15:24:06.696154+06:00","action":"edit","task_id":146,"detail":"Subscription related-orders table pushes invoice action outside mobile viewport"}
+{"timestamp":"2026-10-29T15:24:06.69626+06:00","action":"release","task_id":146,"detail":"zopilote-surprint"}
+{"timestamp":"2026-10-29T15:47:26.544301+06:00","action":"edit","task_id":146,"detail":"Subscription related-orders table pushes invoice action outside mobile viewport"}
+{"timestamp":"2026-10-29T15:47:26.545151+06:00","action":"claim","task_id":146,"detail":"incarn-kunk"}
+{"timestamp":"2026-10-29T15:47:26.559065+06:00","action":"edit","task_id":146,"detail":"Subscription related-orders table pushes invoice action outside mobile viewport"}
+{"timestamp":"2026-10-29T15:47:26.559163+06:00","action":"release","task_id":146,"detail":"incarn-kunk"}
+{"timestamp":"2026-10-29T15:47:26.572087+06:00","action":"move","task_id":146,"detail":"in-progress -\u003e closed"}

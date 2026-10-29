@@ -1,0 +1,16 @@
+# Invoice button and PDF visual completion
+
+Scope confirmed 2026-10-29, Asia/Dhaka: resolve the browser screenshot capture failure and finish actual visual verification of the customer subscription invoice button and opened PDF with ArraySubs Pro active and inactive. Existing functional results remain in qa/pdf-invoice-compatibility-2026-10-29/; this is a fresh manual visual QA cycle.
+
+Environment: real local WordPress http://localhost:10013 with the merged fixes, WooCommerce11.1.2 and WP Overnight PDF Invoices & Packing Slips5.16.6. Current baseline core and Pro active, WPO active, Coming Soon=yes. Credentials and local access come from AGENTS.md and the retained disposable QA customer479 (login qa_pdf_invoice_20261029, role customer, email qa.pdf.invoice.20261029@example.test), subscription23967/order23966. AdminID1. Reuse only these identified test records; no purchases, charges, external mail, or unrelated data changes.
+
+Immediate execution schedule on 2026-10-29; fresh board in this directory:
+
+1. Diagnose screenshots on isolated blank/nonblank pages. Use agent-browser CLI with supported per-session browser executable selection, retaining original images and repeated captures as proof. Do not modify shared office-agent profile or default user browser preferences.
+2. Pro active: desktop and narrow viewport customer page, visible View/Invoice/Pay controls, hover/focus/readability and clipping. Click actual Invoice action; inspect native PDF viewer and invoice content, download and render the same PDF for visual inspection. Record screenshots, routes and observations.
+3. Pro inactive: repeat the same page/button/PDF checks under core alone, including native PDF open and downloaded document. Root alone owns plugin/config mutations and restores the exact baseline afterward. PDF-display mode is the primary open test; verify download mode if practical.
+4. Record any reproducible product defect in qa/issues with this plan/task/day, exact route/context, IDs, steps, expected/actual and screenshots; fix and retest within authorized scope. Inspect every final screenshot before signing off. Restore options/plugins, close owned sessions, check touched-file counts, complete report and update prior visual limitation with an evidence link.
+
+Browser sessions use pdf-visual-pro / pdf-visual-core / pdf-visual-admin, isolated from other chats. The initial diagnosis proves Edge156 can capture images through agent-browser without changing the global runtime; use it explicitly to avoid the known intermittent cached Chrome146 compositor issue. Diagnostic subagents may operate only their own shot-diag-* blank/data-page sessions. Poppler render inspection supplements the actual native PDF viewer; it does not replace browser open verification.
+
+User steering during execution: keep the solution simple and properly translatable. The discovered mobile overflow is corrected only with WooCommerce's native responsive table class and five existing escaped gettext labels. Verify English and Spanish through the already configured TranslatePress language URL. Install the official WPO Spanish language pack for its provider-owned Invoice label; do not add another translation system or change the site's default language.

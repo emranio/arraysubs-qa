@@ -1,0 +1,22 @@
+{
+  "core_mobile_no_overflow": true,
+  "core_invoice_within_mobile": true,
+  "core_spanish_labels": true,
+  "core_spanish_actions": true,
+  "core_320_no_overflow": true,
+  "core_click_target_uncovered": true,
+  "core_native_pdf_response": true,
+  "core_download_pdf": true,
+  "core_pdf_order_and_amount": true,
+  "core_browser_errors_empty": true,
+  "pro_mobile_no_overflow": true,
+  "pro_invoice_within_mobile": true,
+  "pro_spanish_labels": true,
+  "pro_spanish_actions": true,
+  "pro_320_no_overflow": true,
+  "pro_click_target_uncovered": true,
+  "pro_native_pdf_response": true,
+  "pro_download_pdf": true,
+  "pro_pdf_order_and_amount": true,
+  "pro_browser_errors_empty": true
+}

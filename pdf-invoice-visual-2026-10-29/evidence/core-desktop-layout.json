@@ -1,0 +1,17 @@
+{
+  "actions": [
+    "View",
+    "Invoice",
+    "Pay"
+  ],
+  "labels": [
+    "Order",
+    "Date",
+    "Status",
+    "Total",
+    "Actions"
+  ],
+  "pageWidth": 1440,
+  "thead": "table-header-group",
+  "viewport": 1440
+}

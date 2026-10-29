@@ -1,0 +1,21 @@
+{
+    "pro_active": true,
+    "pdf_active": true,
+    "options": {
+        "woocommerce_coming_soon": "no",
+        "wpo_wcpdf_documents_settings_invoice": {
+            "enabled": 1,
+            "my_account_buttons": "available"
+        },
+        "wpo_wcpdf_settings_general": {
+            "download_display": "display",
+            "template_path": "default\/Simple",
+            "currency_font": "",
+            "paper_size": "a4"
+        },
+        "wpo_wcpdf_settings_debug": {
+            "enable_cleanup": 1,
+            "cleanup_days": 7
+        }
+    }
+}

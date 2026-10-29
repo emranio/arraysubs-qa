@@ -1,0 +1,22 @@
+{
+  "invoice": {
+    "bottom": 1423.390625,
+    "height": 34,
+    "left": 187.03125,
+    "right": 255.796875,
+    "top": 1389.390625,
+    "width": 68.765625,
+    "x": 187.03125,
+    "y": 1389.390625
+  },
+  "labels": [
+    "Order",
+    "Date",
+    "Status",
+    "Total",
+    "Actions"
+  ],
+  "pageWidth": 390,
+  "thead": "none",
+  "viewport": 390
+}

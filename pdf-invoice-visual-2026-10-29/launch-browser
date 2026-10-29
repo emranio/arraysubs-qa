@@ -1,0 +1,13 @@
+#!/bin/sh
+# Isolate visual QA from the cached Chrome compositor's intermittent capture stall.
+set -eu
+if [ "$#" -ne 3 ]; then
+    echo 'Usage: launch-browser SESSION AUTH_STATE URL' >&2
+    exit 2
+fi
+browser='/Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge'
+if [ ! -x "$browser" ]; then
+    echo 'The tested Edge executable is unavailable; choose and validate another browser first.' >&2
+    exit 1
+fi
+exec agent-browser --session "$1" --executable-path "$browser" --args '--enable-features=CDPScreenshotNewSurface' --state "$2" open "$3"

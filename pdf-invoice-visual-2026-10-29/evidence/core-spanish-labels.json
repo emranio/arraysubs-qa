@@ -1,0 +1,17 @@
+{
+  "actions": [
+    "Ver",
+    "Factura",
+    "Pagar"
+  ],
+  "labels": [
+    "Pedido",
+    "Fecha",
+    "Estado",
+    "Total",
+    "Acciones"
+  ],
+  "lang": "es-ES",
+  "pageWidth": 390,
+  "viewport": 390
+}

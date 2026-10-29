@@ -1,0 +1,28 @@
+{
+  "actions": [
+    "Ver",
+    "Factura",
+    "Pagar"
+  ],
+  "invoice": {
+    "bottom": 387.125,
+    "height": 34,
+    "left": 189.859375,
+    "right": 261.296875,
+    "top": 353.125,
+    "width": 71.4375,
+    "x": 189.859375,
+    "y": 353.125
+  },
+  "labels": [
+    "Pedido",
+    "Fecha",
+    "Estado",
+    "Total",
+    "Acciones"
+  ],
+  "lang": "es-ES",
+  "pageWidth": 320,
+  "pointIsInvoice": true,
+  "viewport": 320
+}
