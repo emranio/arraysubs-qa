@@ -1,0 +1,24 @@
+{
+    "matched_options": [
+        "stylesheet",
+        "template",
+        "current_theme",
+        "active_plugins",
+        "woocommerce_coming_soon",
+        "arraysubs_settings",
+        "arraysubs_avatar_settings"
+    ],
+    "fixtures_removed": [
+        "product_id",
+        "subscription_id",
+        "comments_page_id",
+        "denied_page_id",
+        "customer_id",
+        "order_id"
+    ],
+    "parent_override_removed": true,
+    "theme_removed": true,
+    "core_active": true,
+    "pro_active": true,
+    "loader_autoloaded": true
+}

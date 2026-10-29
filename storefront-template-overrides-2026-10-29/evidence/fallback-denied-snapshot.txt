@@ -1,0 +1,8 @@
+- heading "Access Restricted" [level=1, ref=e1]
+- link "Sign in" [ref=e5]
+- link "choose a membership" [ref=e6]
+- link "View Plans & Pricing" [ref=e2]
+- link "Log In" [ref=e3]
+- link "← Return to Home" [ref=e7]
+- navigation "Website language selector" [ref=e4]
+  - button "Change language" [expanded=false, ref=e8]

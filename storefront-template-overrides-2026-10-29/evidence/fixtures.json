@@ -1,0 +1,17 @@
+{
+    "customer_id": 481,
+    "customer_login": "qa_template_20261029",
+    "customer_email": "qa.template.20261029@example.test",
+    "customer_role": "customer",
+    "product_id": 24095,
+    "order_id": 24097,
+    "subscription_id": 24098,
+    "comments_page_id": 24101,
+    "denied_page_id": 24102,
+    "subscription_url": "http://localhost:10013/my-account/as-view-subscription/24098/",
+    "order_url": "http://localhost:10013/my-account/view-order/24097/",
+    "product_url": "http://localhost:10013/product/qa-template-subscription-20261029/",
+    "comments_url": "http://localhost:10013/qa-template-comments-20261029/",
+    "denied_url": "http://localhost:10013/qa-template-denied-20261029/",
+    "theme_path": "/Users/emran/Local Sites/wp-test2/app/public/wp-content/themes/arraysubs-template-qa"
+}

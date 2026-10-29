@@ -1,0 +1,98 @@
+[
+  {
+    "body": "Skip to content\n\nwp-test2\n\nHome\nShop\nCheckout\nCheckout Classic\nCart Page\nMy Account\nMemberships\nDashboard\nOrders\nMemberships 1\nStore Credit\nDownloads\nAddresses\nAccount details\nLog out\nMy Features\n\nNeed to modify or cancel this subscription? Please contact the site administrator at dev-email@wpengine.local.\n\nQA Template Subscription 20261029 (#24098)\nPending\nPrice / Billing\n25.00$ Every month\nStart Date\nOctober 29, 2026 6:28 pm\nView Details\nView Initial Order\nwp-test2\nBlog\nAbout\nFAQs\nAuthors\nEvents\nShop\nPatterns\nThemes\n\nTwenty Twenty-Five\n\nDesigned with WordPress\n\nYour cart is currently empty!\n\nStart shopping\nEnglish\nSpanish",
+    "markers": [],
+    "title": "Memberships \u2013 wp-test2",
+    "url": "http://localhost:10013/my-account/as-subscriptions/",
+    "expected": "Memberships",
+    "passed": true
+  },
+  {
+    "body": "Skip to content\n\nwp-test2\n\nHome\nShop\nCheckout\nCheckout Classic\nCart Page\nMy Account\nMy account\nDashboard\nOrders\nMemberships 1\nStore Credit\nDownloads\nAddresses\nAccount details\nLog out\nMy Features\nSubscription #24098\n\nNeed to modify or cancel this subscription? Please contact the site administrator at dev-email@wpengine.local.\n\nStatus:\tPending\nProduct:\tQA Template Subscription 20261029\nStart Date:\tOctober 29, 2026 6:28 pm\nRecurring Amount:\t25.00$ Every month\nRelated Orders\nOrder\tDate\tStatus\tTotal\tActions\n#24097\tOctober 29, 2026\tPending payment\t25.00$\t\nView\nPay\nSubscription Notes\nStatus changed from new to Pending. Changed by System.\nSYSTEM\nOctober 29, 2026 6:28 pm\nSubscription created.\nSYSTEM\nOctober 29, 2026 6:28 pm\nwp-test2\nBlog\nAbout\nFAQs\nAuthors\nEvents\nShop\nPatterns\nThemes\n\nTwenty Twenty-Five\n\nDesigned with WordPress\n\nYour cart is currently empty!\n\nStart shopping\nEnglish\nSpanish",
+    "markers": [],
+    "title": "My account \u2013 wp-test2",
+    "url": "http://localhost:10013/my-account/as-view-subscription/24098/",
+    "expected": "Subscription #24098",
+    "passed": true
+  },
+  {
+    "body": "Skip to content\n\nwp-test2\n\nHome\nShop\nCheckout\nCheckout Classic\nCart Page\nMy Account\nOrder #24097\nDashboard\nOrders\nMemberships 1\nStore Credit\nDownloads\nAddresses\nAccount details\nLog out\nMy Features\n\nOrder #24097 was placed on October 29, 2026 and is currently Pending payment.\n\nOrder details\nProduct\tTotal\nQA Template Subscription 20261029 (Every month) \u00d7\u00a01\t25.00$\nSubtotal:\t25.00$\nTotal:\t25.00$\nActions:\tPayCancel\nRelated Subscriptions\nSubscription\tStatus\tNext Payment\tTotal\n#24098\tPending\tNovember 29, 2026\t25.00$ / Every month\nBilling address\nN/A\n\nqa.template.20261029@example.test\n\nwp-test2\nBlog\nAbout\nFAQs\nAuthors\nEvents\nShop\nPatterns\nThemes\n\nTwenty Twenty-Five\n\nDesigned with WordPress\n\nYour cart is currently empty!\n\nStart shopping\nEnglish\nSpanish",
+    "markers": [],
+    "title": "Order #24097 \u2013 wp-test2",
+    "url": "http://localhost:10013/my-account/view-order/24097/",
+    "expected": "Related Subscriptions",
+    "passed": true
+  },
+  {
+    "body": "Skip to content\n\nwp-test2\n\nHome\nShop\nCheckout\nCheckout Classic\nCart Page\nMy Account\nMy account\nDashboard\nOrders\nMemberships 1\nStore Credit\nDownloads\nAddresses\nAccount details\nLog out\nMy Features\nYour Store Credit Balance\n0.00$\n+ Buy More Credit\nPurchase Store Credit\n\nAdd more credit to your account for future purchases and subscription renewals.\n\nQPC QA 20260910 Credit\n50.00$\n+30% Bonus\nPrice: 50.00$ \nOriginal price was: 50.00$.\n45.00$\nCurrent price is: 45.00$.\nBuy Now\nDemo \u00b7 Store Credit $25\n25.00$\nPrice: 25.00$\nBuy Now\nDemo \u00b7 Store Credit $50\n50.00$\nPrice: 50.00$\nBuy Now\nDemo \u00b7 Store Credit $100\n100.00$\n+10% Bonus\nPrice: 100.00$\nBuy Now\nTransaction History\n\nNo credit transactions yet.\n\nStore credit can be earned through refunds, subscription rewards, or promotional offers.\n\nwp-test2\nBlog\nAbout\nFAQs\nAuthors\nEvents\nShop\nPatterns\nThemes\n\nTwenty Twenty-Five\n\nDesigned with WordPress\n\nYour cart is currently empty!\n\nStart shopping\nEnglish\nSpanish",
+    "markers": [],
+    "title": "My account \u2013 wp-test2",
+    "url": "http://localhost:10013/my-account/as-store-credit/",
+    "expected": "Your Store Credit Balance",
+    "passed": true
+  },
+  {
+    "body": "Skip to content\n\nwp-test2\n\nHome\nShop\nCheckout\nCheckout Classic\nCart Page\nMy Account\nMy account\nDashboard\nOrders\nMemberships 1\nStore Credit\nDownloads\nAddresses\nAccount details\nLog out\nMy Features\nMy Features\n\nBelow are all the features included with your active subscriptions.\n\nYou don't have any features yet. Subscribe to a plan to unlock features!\nBrowse Products\nwp-test2\nBlog\nAbout\nFAQs\nAuthors\nEvents\nShop\nPatterns\nThemes\n\nTwenty Twenty-Five\n\nDesigned with WordPress\n\nYour cart is currently empty!\n\nStart shopping\nEnglish\nSpanish",
+    "markers": [],
+    "title": "My account \u2013 wp-test2",
+    "url": "http://localhost:10013/my-account/as-features/",
+    "expected": "My Features",
+    "passed": true
+  },
+  {
+    "body": "Skip to content\n\nwp-test2\n\nHome\nShop\nCheckout\nCheckout Classic\nCart Page\nMy Account\nAccount details\nDashboard\nOrders\nMemberships 1\nStore Credit\nDownloads\nAddresses\nAccount details\nLog out\nMy Features\n\nFirst name\u00a0*\n\nLast name\u00a0*\n\nDisplay name\u00a0*\nThis will be how your name will be displayed in the account section and in reviews\n\nEmail address\u00a0*\n\nPassword change\n\nCurrent password (leave blank to leave unchanged)\n\nNew password (leave blank to leave unchanged)\n\nConfirm new password\n\nProfile Photo\nUpload Avatar\n\nSave changes\n\nwp-test2\nBlog\nAbout\nFAQs\nAuthors\nEvents\nShop\nPatterns\nThemes\n\nTwenty Twenty-Five\n\nDesigned with WordPress\n\nYour cart is currently empty!\n\nStart shopping\nEnglish\nSpanish",
+    "markers": [],
+    "title": "Account details \u2013 wp-test2",
+    "url": "http://localhost:10013/my-account/edit-account/",
+    "expected": "Profile Photo",
+    "passed": true
+  },
+  {
+    "body": "Skip to content\n\nwp-test2\n\nHome\nShop\nCheckout\nCheckout Classic\nCart Page\nMy Account\nHome\u00a0/\u00a0Uncategorized\u00a0/\u00a0QA Template Subscription 20261029\nQA Template Subscription 20261029\n25.00$ / month\n\nBilling Period\nMonth\nYear\nChoose how often you are billed.\nSubscription Length\nNumber of billing cycles\nQA Template Subscription 20261029 quantity\nSubscribe Now\nCategory: Uncategorized\nReviews (0)\nReviews\n\nThere are no reviews yet.\n\nBe the first to review \u201cQA Template Subscription 20261029\u201d\nYour rating\u00a0*\n\n1 of 5 stars 2 of 5 stars 3 of 5 stars 4 of 5 stars 5 of 5 stars\n\nYour review\u00a0*\n\nRelated products\nSALE\nPRODUCT ON SALE\n12 prod\n12.00$ \nOriginal price was: 12.00$.\n6.00$\nCurrent price is: 6.00$.\n / month\nSubscribe Now\nSALE\nPRODUCT ON SALE\nQPC QA 2026-09-10 Advanced Annual\n45.00$ \nOriginal price was: 45.00$.\n39.00$\nCurrent price is: 39.00$.\n / 2 months\nSubscribe Now\nQPC QA 2026-09-10 Box\nPriced by your selection / month\nCreate Subscription Box\nQPC QA 2026-09-10 Bundle\n15.00$ \nOriginal price was: 15.00$.\n13.50$\nCurrent price is: 13.50$.\n / month\nSubscribe Now\nQPC QA 2026-09-10 Child A\n5.00$ / month\nSubscribe Now\nwp-test2\nBlog\nAbout\nFAQs\nAuthors\nEvents\nShop\nPatterns\nThemes\n\nTwenty Twenty-Five\n\nDesigned with WordPress\n\nYour cart is currently empty!\n\nStart shopping\nEnglish\nSpanish",
+    "markers": [],
+    "title": "QA Template Subscription 20261029 \u2013 wp-test2",
+    "url": "http://localhost:10013/product/qa-template-subscription-20261029/",
+    "expected": "Billing Period",
+    "passed": true
+  },
+  {
+    "body": "Skip to content\n\nwp-test2\n\nHome\nShop\nCheckout\nCheckout Classic\nCart Page\nMy Account\nHome\u00a0/\u00a0Uncategorized\u00a0/\u00a0test\ntest\n13.00$ / month\n\nRenews at 123.00$ every month after 3 payments.\n\nMembership ends: January 1, 2027\n\ntest\n\ntest quantity\nSubscribe Now\nCategory: Uncategorized\nDescription Reviews (0)\nDescription\n\ntest\n\nRelated products\nSALE\nPRODUCT ON SALE\n12 prod\n12.00$ \nOriginal price was: 12.00$.\n6.00$\nCurrent price is: 6.00$.\n / month\nSubscribe Now\nSALE\nPRODUCT ON SALE\nQPC QA 2026-09-10 Advanced Annual\n45.00$ \nOriginal price was: 45.00$.\n39.00$\nCurrent price is: 39.00$.\n / 2 months\nSubscribe Now\nQPC QA 2026-09-10 Box\nPriced by your selection / month\nCreate Subscription Box\nQPC QA 2026-09-10 Bundle\n15.00$ \nOriginal price was: 15.00$.\n13.50$\nCurrent price is: 13.50$.\n / month\nSubscribe Now\nQPC QA 2026-09-10 Child A\n5.00$ / month\nSubscribe Now\nwp-test2\nBlog\nAbout\nFAQs\nAuthors\nEvents\nShop\nPatterns\nThemes\n\nTwenty Twenty-Five\n\nDesigned with WordPress\n\nYour cart is currently empty!\n\nStart shopping\nEnglish\nSpanish",
+    "markers": [],
+    "title": "test \u2013 wp-test2",
+    "url": "http://localhost:10013/product/test-3/",
+    "expected": "test",
+    "passed": true
+  },
+  {
+    "body": "Skip to content\n\nwp-test2\n\nHome\nShop\nCheckout\nCheckout Classic\nCart Page\nMy Account\nHome\u00a0/\u00a0Demo Member Plans\u00a0/\u00a0Demo \u00b7 Membership Tier\nDemo \u00b7 Membership Tier\n24.00$ \u2013 59.00$\nPrice range: 24.00$ through 59.00$\n / month\n\nMembership Tier \u2014 demo catalog.\n\nTier\t\nChoose an option\nDemo \u00b7 Membership Tier quantity\nSubscribe Now\nSKU: DEMO-260927-VARIABLE-PLAN\nCategory: Demo Member Plans\nDescription Additional information Reviews (0)\nDescription\n\nSample catalog item for the June\u2013September 2026 demonstration store.\n\nRelated products\nDemo \u00b7 Annual Library Pass\n199.00$ / year\nSubscribe Now\nDemo \u00b7 Daily Learning Pass\n3.00$ / day\nSubscribe Now\nDemo \u00b7 Flexible Learning Membership\n35.00$ / month\nSubscribe Now\nDemo \u00b7 Fortnightly Tea Delivery\n25.00$ / 2 weeks\nSubscribe Now\nDemo \u00b7 Library Pass with 14-day Trial\n29.00$ / month\nSubscribe Now\nwp-test2\nBlog\nAbout\nFAQs\nAuthors\nEvents\nShop\nPatterns\nThemes\n\nTwenty Twenty-Five\n\nDesigned with WordPress\n\nYour cart is currently empty!\n\nStart shopping\nEnglish\nSpanish",
+    "markers": [],
+    "title": "Demo \u00b7 Membership Tier \u2013 wp-test2",
+    "url": "http://localhost:10013/product/demo-%c2%b7-membership-tier/",
+    "expected": "Tier",
+    "passed": true
+  },
+  {
+    "body": "Skip to content\n\nwp-test2\n\nHome\nShop\nCheckout\nCheckout Classic\nCart Page\nMy Account\nHome\u00a0/\u00a0Demo Bundles & Boxes\u00a0/\u00a0Demo \u00b7 Build Your Monthly Coffee Box\nDemo \u00b7 Build Your Monthly Coffee Box\nPriced by your selection / month\n\nBuild Your Monthly Coffee Box \u2014 demo catalog.\n\nCreate Subscription Box\nSKU: DEMO-260927-BOX\nCategory: Demo Bundles & Boxes\nDescription Additional information Reviews (0)\nDescription\n\nSample catalog item for the June\u2013September 2026 demonstration store.\n\nRelated products\nDemo \u00b7 Coffee and Tea Membership Bundle\n56.00$ \nOriginal price was: 56.00$.\n50.40$\nCurrent price is: 50.40$.\n / month\nSubscribe Now\nDemo \u00b7 Coffee Gift Set\n16.00$ \u2013 24.00$\nPrice range: 16.00$ through 24.00$\nPurchase now\nwp-test2\nBlog\nAbout\nFAQs\nAuthors\nEvents\nShop\nPatterns\nThemes\n\nTwenty Twenty-Five\n\nDesigned with WordPress\n\nYour cart is currently empty!\n\nStart shopping\nEnglish\nSpanish",
+    "markers": [],
+    "title": "Demo \u00b7 Build Your Monthly Coffee Box \u2013 wp-test2",
+    "url": "http://localhost:10013/product/demo-%c2%b7-build-your-monthly-coffee-box/",
+    "expected": "Create Subscription Box",
+    "passed": true
+  },
+  {
+    "body": "QA comments template page.\n\nQA comments denied.\n\nLeave a Reply\n\nYour email address will not be published. Required fields are marked *\n\nComment * \n\nName * \n\nEmail * \n\nWebsite \n\n Save my name, email, and website in this browser for the next time I comment.\n\nEnglish\nSpanish",
+    "markers": [],
+    "title": "",
+    "url": "http://localhost:10013/qa-template-comments-20261029/",
+    "expected": "QA comments denied.",
+    "passed": true
+  },
+  {
+    "body": "Access Restricted\n\nMembers can open this resource after signing in. Sign in or choose a membership.\n\nView Plans & Pricing\nLog In\n\u2190 Return to Home\nEnglish\nSpanish",
+    "markers": [],
+    "title": "Access Denied - wp-test2",
+    "url": "http://localhost:10013/qa-template-denied-20261029/",
+    "expected": "Access Restricted",
+    "passed": true
+  }
+]

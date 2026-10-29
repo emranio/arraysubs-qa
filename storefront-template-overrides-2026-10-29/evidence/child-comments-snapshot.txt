@@ -1,0 +1,2 @@
+- navigation "Website language selector" [ref=e1]
+  - button "Change language" [expanded=false, ref=e2]

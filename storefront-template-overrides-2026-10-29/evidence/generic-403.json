@@ -1,0 +1,7 @@
+{
+  "body": "QA Generic Theme 403\n\n<p>Members can open this resource after signing in. <a href=\"http://localhost:10013/my-account/\">Sign in</a> or <a href=\"http://localhost:10013/demo-membership-plans/\">choose a membership</a>.</p>",
+  "markers": [
+    "QA Generic Theme 403"
+  ],
+  "status": 403
+}

@@ -1,0 +1,38 @@
+{
+  "result": "passed",
+  "child_theme_templates_rendered": [
+    "arraysubs/customer-portal/cancellation-contact-notice.php",
+    "arraysubs/customer-portal/my-account-subscriptions.php",
+    "arraysubs/customer-portal/subscription-cards.php",
+    "arraysubs/customer-portal/view-subscription.php",
+    "arraysubs/members-access/access-denied.php",
+    "arraysubs/members-access/comment-restricted.php",
+    "arraysubs/subscription-box/box-builder.php",
+    "arraysubs/subscription-checkout/order-subscriptions.php",
+    "arraysubs/subscription-products/product-subscription-info.php",
+    "arraysubs/subscription-products/variable-product-subscription-info.php",
+    "arraysubspro/feature-manager/my-account-features.php",
+    "arraysubspro/fixed-period-membership/product-info.php",
+    "arraysubspro/flexible-subscription/product-options.php",
+    "arraysubspro/profile-fields/avatar-section.php",
+    "arraysubspro/store-credit/my-account-store-credit.php"
+  ],
+  "plugin_fallback_routes": 12,
+  "resolver_assertions": 67,
+  "wp_integration_assertions": 235,
+  "other_checks": [
+    "child over parent",
+    "parent over plugin",
+    "copied parent with child partial",
+    "missing nested partial falls back to plugin",
+    "generic theme 403 retained",
+    "specific override precedes generic 403",
+    "core without Pro",
+    "both list layouts",
+    "guest and other-customer denied",
+    "flexible fields interactive",
+    "copied box builder opens and closes",
+    "390px detail screenshot inspected",
+    "baseline restored"
+  ]
+}

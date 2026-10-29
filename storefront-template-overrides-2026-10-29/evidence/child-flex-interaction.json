@@ -1,0 +1,9 @@
+{
+  "length": "3",
+  "markers": [
+    "QA CHILD arraysubs/subscription-products/product-subscription-info.php",
+    "QA CHILD arraysubspro/flexible-subscription/product-options.php",
+    "QA CHILD arraysubs/subscription-box/box-builder.php"
+  ],
+  "period": "year"
+}

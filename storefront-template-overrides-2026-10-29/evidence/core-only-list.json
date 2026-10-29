@@ -1,0 +1,8 @@
+{
+  "cards": 1,
+  "markers": [
+    "QA CHILD arraysubs/customer-portal/my-account-subscriptions.php",
+    "QA CHILD arraysubs/customer-portal/cancellation-contact-notice.php",
+    "QA CHILD arraysubs/customer-portal/subscription-cards.php"
+  ]
+}

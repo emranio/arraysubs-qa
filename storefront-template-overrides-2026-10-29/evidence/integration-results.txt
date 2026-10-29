@@ -1,0 +1,70 @@
+{
+    "status": "passed",
+    "assertions": 235,
+    "templates": 15,
+    "call_sites": {
+        "arraysubs": {
+            "customer-portal/cancellation-contact-notice.php": [
+                "CustomerPortal/views/my-account-subscriptions.php",
+                "CustomerPortal/views/view-subscription.php"
+            ],
+            "customer-portal/subscription-cards.php": [
+                "CustomerPortal/views/my-account-subscriptions.php"
+            ],
+            "customer-portal/my-account-subscriptions.php": [
+                "CustomerPortal/Services/MyAccountHooks.php"
+            ],
+            "customer-portal/view-subscription.php": [
+                "CustomerPortal/Services/MyAccountHooks.php"
+            ],
+            "members-access/comment-restricted.php": [
+                "MembersAccess/Services/CommentRestriction.php"
+            ],
+            "members-access/access-denied.php": [
+                "MembersAccess/Services/RestrictionResponse.php"
+            ],
+            "subscription-box/box-builder.php": [
+                "SubscriptionBox/Services/FrontendHooks.php"
+            ],
+            "subscription-checkout/order-subscriptions.php": [
+                "SubscriptionCheckout/Services/Traits/CheckoutDisplayTrait.php"
+            ],
+            "subscription-products/variable-product-subscription-info.php": [
+                "SubscriptionProducts/Services/Hooks.php"
+            ],
+            "subscription-products/product-subscription-info.php": [
+                "SubscriptionProducts/Services/Hooks.php"
+            ]
+        },
+        "arraysubspro": {
+            "flexible-subscription/product-options.php": [
+                "FlexibleSubscription/Services/Hooks.php",
+                "FlexibleSubscription/Services/Hooks.php"
+            ],
+            "feature-manager/my-account-features.php": [
+                "FeatureManager/Services/MyAccountHooks.php"
+            ],
+            "fixed-period-membership/product-info.php": [
+                "FixedPeriodMembership/Services/Hooks.php",
+                "FixedPeriodMembership/Services/Hooks.php"
+            ],
+            "profile-fields/avatar-section.php": [
+                "ProfileFields/Services/AccountFields.php"
+            ],
+            "store-credit/my-account-store-credit.php": [
+                "StoreCredit/Services/MyAccountHooks.php"
+            ]
+        }
+    },
+    "runtime": {
+        "simple_product_id": 9624,
+        "variable_product_id": 6722,
+        "box_product_id": 5922
+    },
+    "skips": []
+}
+PHP: 2026-10-29 18:33:05 [notice X 0][/Users/emran/Local Sites/wp-test2/app/public/wp-content/plugins/elementor/modules/global-classes/atomic-global-styles.php::410] Elementor\Modules\GlobalClasses\Atomic_Global_Styles::get_cache_root_key(): Implicitly marking parameter $key as nullable is deprecated, the explicit nullable type must be used instead [array (
+  'trace' => '
+#0: Elementor\Core\Logger\Manager -> shutdown()
+',
+)]

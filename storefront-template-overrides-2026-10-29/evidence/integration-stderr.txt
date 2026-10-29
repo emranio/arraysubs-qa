@@ -1,0 +1,1 @@
+Deprecated: Elementor\Modules\GlobalClasses\Atomic_Global_Styles::get_cache_root_key(): Implicitly marking parameter $key as nullable is deprecated, the explicit nullable type must be used instead in /Users/emran/Local Sites/wp-test2/app/public/wp-content/plugins/elementor/modules/global-classes/atomic-global-styles.php on line 410

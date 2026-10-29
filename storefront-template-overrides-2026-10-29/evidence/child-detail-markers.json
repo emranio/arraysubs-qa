@@ -1,0 +1,6 @@
+{
+  "markers": [
+    "QA CHILD arraysubs/customer-portal/view-subscription.php",
+    "QA CHILD arraysubs/customer-portal/cancellation-contact-notice.php"
+  ]
+}
