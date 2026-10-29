@@ -1,0 +1,1 @@
+"{\"contentType\":\"application/pdf\",\"navigation\":[{\"path\":\"/wp-admin/admin-ajax.php\",\"status\":200}]}"

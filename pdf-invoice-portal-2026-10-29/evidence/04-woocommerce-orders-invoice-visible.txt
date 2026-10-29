@@ -1,0 +1,47 @@
+Skip to content
+
+wp-test2
+
+Home
+Shop
+Checkout
+Checkout Classic
+Cart Page
+My Account
+Orders
+Dashboard
+Orders
+Memberships 1
+Store Credit
+Downloads
+Addresses
+Account details
+Log out
+My Features
+Confirm email address
+Confirm your email address to check for past orders and link them to your account.
+Order	Date	Status	Total	Actions
+#23966	October 29, 2026	Pending payment	25.00$ for 1 item	
+Pay
+View
+Cancel
+Invoice
+wp-test2
+Blog
+About
+FAQs
+Authors
+Events
+Shop
+Patterns
+Themes
+
+Twenty Twenty-Five
+
+Designed with WordPress
+
+Your cart is currently empty!
+
+Start shopping
+English
+Spanish

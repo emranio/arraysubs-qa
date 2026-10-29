@@ -1,0 +1,93 @@
+{
+    "fixtures": {
+        "customer_id": 479,
+        "customer_login": "qa_pdf_invoice_20261029",
+        "customer_email": "qa.pdf.invoice.20261029@example.test",
+        "customer_role": "customer",
+        "product_id": 23964,
+        "order_id": 23966,
+        "subscription_id": 23967,
+        "subscription_url": "http://localhost:10013/my-account/as-view-subscription/23967/",
+        "orders_url": "http://localhost:10013/my-account/orders/",
+        "absent": {
+            "order_id": 23975,
+            "subscription_id": 23976,
+            "url": "http://localhost:10013/my-account/as-view-subscription/23976/"
+        },
+        "paid": {
+            "order_id": 23979,
+            "subscription_id": 23981,
+            "url": "http://localhost:10013/my-account/as-view-subscription/23981/"
+        },
+        "renewal_order_id": 23984,
+        "other_customer_id": 480,
+        "vat_renewal_order_id": 23988
+    },
+    "states": {
+        "existing": {
+            "id": 23966,
+            "status": "pending",
+            "invoice_exists": true,
+            "invoice_number": "1",
+            "native_actions": [
+                "pay",
+                "view",
+                "cancel",
+                "invoice"
+            ]
+        },
+        "absent": {
+            "id": 23975,
+            "status": "pending",
+            "invoice_exists": false,
+            "invoice_number": "",
+            "native_actions": [
+                "pay",
+                "view",
+                "cancel",
+                "invoice"
+            ]
+        },
+        "paid": {
+            "id": 23979,
+            "status": "completed",
+            "invoice_exists": true,
+            "invoice_number": "2",
+            "native_actions": [
+                "view"
+            ]
+        },
+        "renewal": {
+            "id": 23984,
+            "status": "pending",
+            "invoice_exists": false,
+            "invoice_number": "",
+            "native_actions": [
+                "view",
+                "cancel",
+                "invoice"
+            ]
+        }
+    },
+    "policy": {
+        "enabled": 1,
+        "attach_to_email_ids": {
+            "arraysubs_renewal_invoice": "1"
+        },
+        "my_account_buttons": "custom",
+        "my_account_restrict": {
+            "pending": 1
+        },
+        "display_customer_notes": "1",
+        "display_shipping_address": "",
+        "display_number": "",
+        "number_format": {
+            "prefix": "",
+            "suffix": "",
+            "padding": ""
+        },
+        "display_date": ""
+    },
+    "coming_soon": "no",
+    "hpos": true
+}

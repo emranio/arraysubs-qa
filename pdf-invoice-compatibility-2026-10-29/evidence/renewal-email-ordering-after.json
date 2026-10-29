@@ -1,0 +1,26 @@
+{
+    "label": "after",
+    "php_version": "8.2.27",
+    "subscription_id": 23976,
+    "customer_id": 479,
+    "recipient": "qa.pdf.invoice.20261029@example.test",
+    "created_subscription_ids": [],
+    "created_order_ids": [
+        24006
+    ],
+    "credit_grant": 5,
+    "customer_credit_before": 0,
+    "subscription_credit_before": 0,
+    "invoice_mail_attempts": [],
+    "email_delivery_results": [],
+    "credit_grant_log_id": 24005,
+    "order_total_before_event": 25,
+    "final_order_total": 20,
+    "final_order_status": "pending",
+    "credit_from_subscription": 5,
+    "credit_from_customer": 0,
+    "invoice_email_sent_marker": "",
+    "subscription_credit_after": 0,
+    "customer_credit_after": 0,
+    "email_total_matches_final_order": false
+}

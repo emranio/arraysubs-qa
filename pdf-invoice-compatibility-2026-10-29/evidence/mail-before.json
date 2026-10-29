@@ -1,0 +1,45 @@
+{
+  "total": 4,
+  "unread": 4,
+  "count": 4,
+  "messages_count": 4,
+  "messages_unread": 4,
+  "start": 0,
+  "tags": [],
+  "messages": [
+    {
+      "ID": "9xRuwtdGCPqhPsrcWjgNRy",
+      "MessageID": "HZyZ4gKRQSwyEHrlim7xx15duLHroqNtCQ9fUhlFoc@Emrans-MacBook-Air.local",
+      "Read": false,
+      "From": {
+        "Name": "wp-test2",
+        "Address": "dev-email@wpengine.local"
+      },
+      "To": [
+        {
+          "Name": "",
+          "Address": "qa.pdf.invoice.20261029@example.test"
+        }
+      ],
+      "Cc": [],
+      "Bcc": [
+        {
+          "Name": "",
+          "Address": "mailhog@flywheel.local"
+        }
+      ],
+      "ReplyTo": [
+        {
+          "Name": "wp-test2",
+          "Address": "dev-email@wpengine.local"
+        }
+      ],
+      "Subject": "QA PDF INTEGRATION BEFORE",
+      "Created": "2026-10-29T13:18:31.076+06:00",
+      "Tags": [],
+      "Size": 8846,
+      "Attachments": 0,
+      "Snippet": "wp-test2 Your renewal order Hi QA, A renewal order has been created for your subscription #23967. Order #23966 Subscription #23967 Product QA PDF Invoice Portal 20261029 Amount 25.00$ Due Date Novembe..."
+    }
+  ]
+}

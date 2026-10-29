@@ -1,0 +1,35 @@
+{
+  "criticalError": false,
+  "rows": [
+    {
+      "actions": [
+        {
+          "classes": "woocommerce-button button view",
+          "name": "View",
+          "path": "/my-account/view-order/23979/",
+          "queryKeys": [],
+          "rel": "",
+          "target": ""
+        },
+        {
+          "classes": "woocommerce-button button alt invoice",
+          "name": "Invoice",
+          "path": "/wp-admin/admin-ajax.php",
+          "queryKeys": [
+            "action",
+            "document_type",
+            "order_ids",
+            "access_key",
+            "my-account"
+          ],
+          "rel": "noopener noreferrer",
+          "target": "_blank"
+        }
+      ],
+      "order": "#23979",
+      "text": "#23979 October 29, 2026 Completed 25.00$ View Invoice"
+    }
+  ],
+  "status": 200,
+  "title": "My account \u2013 wp-test2"
+}

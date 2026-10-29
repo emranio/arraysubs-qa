@@ -1,0 +1,2 @@
+#!/bin/sh
+exec '/Users/emran/Library/Application Support/Local/lightning-services/php-8.2.27+1/bin/darwin-arm64/bin/php' -c '/Users/emran/Library/Application Support/Local/run/NPLEnP-EU/conf/php/php.ini' /opt/homebrew/bin/wp --path='/Users/emran/Local Sites/wp-test2/app/public' --allow-root "$@"

@@ -1,0 +1,52 @@
+{
+    "php_version": "8.2.27",
+    "subscription_id": 23967,
+    "order_id": 23966,
+    "configured_invoice_attachment_emails": [],
+    "email_results": {
+        "arraysubs_renewal_invoice": {
+            "with_order": {
+                "internal_order_id": 23966,
+                "inherited_object_type": "null",
+                "inherited_order_id": null,
+                "attachment_hook_context": {
+                    "object_type": "null",
+                    "order_id": null
+                },
+                "attachment_count": 0
+            },
+            "without_order": {
+                "internal_order_id": null,
+                "inherited_object_type": "null",
+                "inherited_order_id": null,
+                "attachment_hook_context": {
+                    "object_type": "null",
+                    "order_id": null
+                },
+                "attachment_count": 0
+            }
+        },
+        "arraysubs_payment_successful": {
+            "with_order": {
+                "internal_order_id": 23966,
+                "inherited_object_type": "null",
+                "inherited_order_id": null,
+                "attachment_hook_context": {
+                    "object_type": "null",
+                    "order_id": null
+                },
+                "attachment_count": 0
+            },
+            "without_order": {
+                "internal_order_id": null,
+                "inherited_object_type": "null",
+                "inherited_order_id": null,
+                "attachment_hook_context": {
+                    "object_type": "null",
+                    "order_id": null
+                },
+                "attachment_count": 0
+            }
+        }
+    }
+}

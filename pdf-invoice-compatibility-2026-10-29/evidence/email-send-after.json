@@ -1,0 +1,13 @@
+{
+    "label": "AFTER",
+    "email_id": "arraysubs_renewal_invoice",
+    "recipient": "qa.pdf.invoice.20261029@example.test",
+    "order_context_id": 23966,
+    "attachments": [
+        {
+            "name": "invoice-23966.pdf",
+            "bytes": 229192,
+            "header": "%PDF-1.7"
+        }
+    ]
+}

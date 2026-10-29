@@ -723,3 +723,48 @@
 {"timestamp":"2026-10-28T12:25:47.366976+06:00","action":"move","task_id":136,"detail":"open -\u003e in-progress"}
 {"timestamp":"2026-10-28T12:35:33.185607+06:00","action":"edit","task_id":136,"detail":"Elementor restriction rules revert to legacy mode when the editor loads an autosave draft"}
 {"timestamp":"2026-10-28T12:35:33.200181+06:00","action":"move","task_id":136,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-10-29T12:57:50.964079+06:00","action":"create","task_id":140,"detail":"Existing PDF invoice crashes subscription portal related-orders table"}
+{"timestamp":"2026-10-29T12:59:11.442989+06:00","action":"edit","task_id":140,"detail":"Existing PDF invoice crashes subscription portal related-orders table"}
+{"timestamp":"2026-10-29T13:01:16.28513+06:00","action":"edit","task_id":140,"detail":"Existing PDF invoice crashes subscription portal related-orders table"}
+{"timestamp":"2026-10-29T13:07:35.972092+06:00","action":"move","task_id":140,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-10-29T13:07:35.989447+06:00","action":"edit","task_id":140,"detail":"Existing PDF invoice crashes subscription portal related-orders table"}
+{"timestamp":"2026-10-29T13:10:09.716621+06:00","action":"create","task_id":141,"detail":"Subscription emails omit WooCommerce order context for PDF invoice attachments"}
+{"timestamp":"2026-10-29T13:10:56.507447+06:00","action":"move","task_id":141,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-10-29T13:15:10.11512+06:00","action":"edit","task_id":141,"detail":"Subscription emails omit WooCommerce order context for PDF invoice attachments"}
+{"timestamp":"2026-10-29T13:16:23.619946+06:00","action":"create","task_id":142,"detail":"Subscription portal ignores PDF invoice customer visibility settings"}
+{"timestamp":"2026-10-29T13:19:35.04391+06:00","action":"edit","task_id":141,"detail":"Subscription emails omit WooCommerce order context for PDF invoice attachments"}
+{"timestamp":"2026-10-29T13:21:19.283076+06:00","action":"edit","task_id":141,"detail":"Subscription emails omit WooCommerce order context for PDF invoice attachments"}
+{"timestamp":"2026-10-29T13:21:19.284067+06:00","action":"release","task_id":141,"detail":"heritage-axolysis"}
+{"timestamp":"2026-10-29T13:23:12.177762+06:00","action":"create","task_id":143,"detail":"Renewal orders drop PDF invoice customer identification metadata"}
+{"timestamp":"2026-10-29T13:23:54.275488+06:00","action":"move","task_id":143,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-10-29T13:23:54.292459+06:00","action":"edit","task_id":143,"detail":"Renewal orders drop PDF invoice customer identification metadata"}
+{"timestamp":"2026-10-29T13:25:59.58175+06:00","action":"edit","task_id":143,"detail":"Renewal orders drop PDF invoice customer identification metadata"}
+{"timestamp":"2026-10-29T13:26:07.771217+06:00","action":"edit","task_id":143,"detail":"Renewal orders drop PDF invoice customer identification metadata"}
+{"timestamp":"2026-10-29T13:26:07.771504+06:00","action":"release","task_id":143,"detail":"expense-oocyst"}
+{"timestamp":"2026-10-29T13:29:33.828124+06:00","action":"create","task_id":144,"detail":"Renewal invoice email and PDF precede store credit order adjustments"}
+{"timestamp":"2026-10-29T13:29:55.591647+06:00","action":"move","task_id":144,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-10-29T13:32:50.812673+06:00","action":"edit","task_id":144,"detail":"Renewal invoice email and PDF precede store credit order adjustments"}
+{"timestamp":"2026-10-29T13:35:56.89697+06:00","action":"edit","task_id":144,"detail":"Renewal invoice email and PDF precede store credit order adjustments"}
+{"timestamp":"2026-10-29T13:35:56.898037+06:00","action":"release","task_id":144,"detail":"heritage-axolysis"}
+{"timestamp":"2026-10-29T14:07:07.73106+06:00","action":"edit","task_id":140,"detail":"Existing PDF invoice crashes subscription portal related-orders table"}
+{"timestamp":"2026-10-29T14:07:07.732088+06:00","action":"release","task_id":140,"detail":"befile-inseam"}
+{"timestamp":"2026-10-29T14:07:07.745074+06:00","action":"move","task_id":140,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-10-29T14:07:07.757361+06:00","action":"edit","task_id":141,"detail":"Subscription emails omit WooCommerce order context for PDF invoice attachments"}
+{"timestamp":"2026-10-29T14:07:07.757461+06:00","action":"claim","task_id":141,"detail":"befile-inseam"}
+{"timestamp":"2026-10-29T14:07:07.76943+06:00","action":"edit","task_id":141,"detail":"Subscription emails omit WooCommerce order context for PDF invoice attachments"}
+{"timestamp":"2026-10-29T14:07:07.769524+06:00","action":"release","task_id":141,"detail":"befile-inseam"}
+{"timestamp":"2026-10-29T14:07:07.781539+06:00","action":"move","task_id":141,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-10-29T14:07:07.793994+06:00","action":"move","task_id":142,"detail":"open -\u003e in-progress"}
+{"timestamp":"2026-10-29T14:07:07.806366+06:00","action":"edit","task_id":142,"detail":"Subscription portal ignores PDF invoice customer visibility settings"}
+{"timestamp":"2026-10-29T14:07:07.806466+06:00","action":"release","task_id":142,"detail":"befile-inseam"}
+{"timestamp":"2026-10-29T14:07:07.819897+06:00","action":"move","task_id":142,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-10-29T14:07:07.832995+06:00","action":"edit","task_id":143,"detail":"Renewal orders drop PDF invoice customer identification metadata"}
+{"timestamp":"2026-10-29T14:07:07.833109+06:00","action":"claim","task_id":143,"detail":"befile-inseam"}
+{"timestamp":"2026-10-29T14:07:07.845577+06:00","action":"edit","task_id":143,"detail":"Renewal orders drop PDF invoice customer identification metadata"}
+{"timestamp":"2026-10-29T14:07:07.845679+06:00","action":"release","task_id":143,"detail":"befile-inseam"}
+{"timestamp":"2026-10-29T14:07:07.857763+06:00","action":"move","task_id":143,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-10-29T14:07:07.869809+06:00","action":"edit","task_id":144,"detail":"Renewal invoice email and PDF precede store credit order adjustments"}
+{"timestamp":"2026-10-29T14:07:07.869911+06:00","action":"claim","task_id":144,"detail":"befile-inseam"}
+{"timestamp":"2026-10-29T14:07:07.881914+06:00","action":"edit","task_id":144,"detail":"Renewal invoice email and PDF precede store credit order adjustments"}
+{"timestamp":"2026-10-29T14:07:07.882008+06:00","action":"release","task_id":144,"detail":"befile-inseam"}
+{"timestamp":"2026-10-29T14:07:07.893798+06:00","action":"move","task_id":144,"detail":"in-progress -\u003e closed"}

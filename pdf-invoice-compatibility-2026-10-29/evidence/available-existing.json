@@ -1,0 +1,46 @@
+{
+  "criticalError": false,
+  "rows": [
+    {
+      "actions": [
+        {
+          "classes": "woocommerce-button button view",
+          "name": "View",
+          "path": "/my-account/view-order/23966/",
+          "queryKeys": [],
+          "rel": "",
+          "target": ""
+        },
+        {
+          "classes": "woocommerce-button button alt invoice",
+          "name": "Invoice",
+          "path": "/wp-admin/admin-ajax.php",
+          "queryKeys": [
+            "action",
+            "document_type",
+            "order_ids",
+            "access_key",
+            "my-account"
+          ],
+          "rel": "noopener noreferrer",
+          "target": "_blank"
+        },
+        {
+          "classes": "woocommerce-button button pay",
+          "name": "Pay",
+          "path": "/checkout-2/order-pay/23966/",
+          "queryKeys": [
+            "pay_for_order",
+            "key"
+          ],
+          "rel": "",
+          "target": ""
+        }
+      ],
+      "order": "#23966",
+      "text": "#23966 October 29, 2026 Pending payment 25.00$ View Invoice Pay"
+    }
+  ],
+  "status": 200,
+  "title": "My account \u2013 wp-test2"
+}

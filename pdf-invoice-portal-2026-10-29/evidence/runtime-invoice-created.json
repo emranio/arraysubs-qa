@@ -1,0 +1,40 @@
+{
+    "customer_id": 479,
+    "customer_login": "qa_pdf_invoice_20261029",
+    "customer_email": "qa.pdf.invoice.20261029@example.test",
+    "customer_role": "customer",
+    "product_id": 23964,
+    "order_id": 23966,
+    "subscription_id": 23967,
+    "subscription_url": "http://localhost:10013/my-account/as-view-subscription/23967/",
+    "orders_url": "http://localhost:10013/my-account/orders/",
+    "cli_php_version": "8.2.27",
+    "core_version": "2.1.0",
+    "pro_version": "1.3.0",
+    "woocommerce_version": "11.1.2",
+    "pdf_plugin_version": "5.16.6",
+    "invoice_class": "WPO\\IPS\\Documents\\Invoice",
+    "invoice_exists": true,
+    "deprecated_get_invoice_function_exists": true,
+    "invoice_get_endpoint_url_callable": false,
+    "endpoint_get_document_link_callable": true,
+    "invoice_allowed_in_my_account": true,
+    "standard_woocommerce_actions": {
+        "pay": {
+            "name": "Pay",
+            "has_url": true
+        },
+        "view": {
+            "name": "View",
+            "has_url": true
+        },
+        "cancel": {
+            "name": "Cancel",
+            "has_url": true
+        },
+        "invoice": {
+            "name": "Invoice",
+            "has_url": true
+        }
+    }
+}

@@ -1,0 +1,91 @@
+{
+    "status": "pending",
+    "is_paid": false,
+    "needs_payment": false,
+    "total": "20.00",
+    "related": true,
+    "meta": [
+        {
+            "id": 19734,
+            "key": "_billing_address_index",
+            "value": "         qa.pdf.invoice.20261029@example.test "
+        },
+        {
+            "id": 19735,
+            "key": "_shipping_address_index",
+            "value": "         "
+        },
+        {
+            "id": 19736,
+            "key": "_arraysubs_computed_type",
+            "value": "Subs Renew"
+        },
+        {
+            "id": 19745,
+            "key": "_arraysubs_credit_applied",
+            "value": "5"
+        },
+        {
+            "id": 19748,
+            "key": "_arraysubs_credit_from_customer",
+            "value": "0"
+        },
+        {
+            "id": 19747,
+            "key": "_arraysubs_credit_from_subscription",
+            "value": "5"
+        },
+        {
+            "id": 19744,
+            "key": "_arraysubs_credit_plan",
+            "value": {
+                "key": "43c23f52-bb62-4104-b9df-b9f3cc1fd6f3",
+                "customer_id": 479,
+                "subscription_id": 23976,
+                "subscription": 5,
+                "customer": 0,
+                "currency": "USD"
+            }
+        },
+        {
+            "id": 19746,
+            "key": "_arraysubs_credit_subscription_id",
+            "value": "23976"
+        },
+        {
+            "id": 19737,
+            "key": "_arraysubs_has_subscription_product",
+            "value": "no"
+        },
+        {
+            "id": 19738,
+            "key": "_is_renewal_order",
+            "value": "yes"
+        },
+        {
+            "id": 19741,
+            "key": "_renewal_cycle_number",
+            "value": "1"
+        },
+        {
+            "id": 19742,
+            "key": "_renewal_scheduled_date",
+            "value": "2026-11-29 07:14:15"
+        },
+        {
+            "id": 19739,
+            "key": "_subscription_id",
+            "value": "23976"
+        },
+        {
+            "id": 19740,
+            "key": "_subscription_renewal",
+            "value": "23976"
+        },
+        {
+            "id": 19743,
+            "key": "_wpo_ips_checkout_field",
+            "value": "QA-VAT-20261029"
+        }
+    ]
+}

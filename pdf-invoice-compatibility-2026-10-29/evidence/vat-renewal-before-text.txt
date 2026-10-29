@@ -1,0 +1,44 @@
+Order #23988
+
+Customer IP: 127.0.0.1
+
+General
+
+Date created
+ ‎ : 
+
+Status
+Pending payment
+Processing
+On hold
+Completed
+Credit settled
+Cancelled
+Refunded
+Failed
+Draft
+Pending payment
+
+Customer
+View other orders →
+Profile →
+QA PDF Invoice (#479 &ndash; qa.pdf.invoice.20261029@example.test)
+×
+QA PDF Invoice (#479 – qa.pdf.invoice.20261029@example.test)
+
+ArraySubs Member Details: Open Member Details
+
+Billing
+Edit
+
+No billing address set.
+
+Email address:
+qa.pdf.invoice.20261029@example.test
+
+ArraySubs Subscription: #23976 (arraysubs-pending)
+
+Shipping
+Edit
+
+No shipping address set.

@@ -1,0 +1,40 @@
+Invoice
+
+wp-test2
+
+N/A
+
+Order Number:
+
+24022
+
+Order Date:
+
+October 29, 2026
+
+Product
+
+Quantity
+
+Price
+
+QA PDF Invoice Portal 20261029
+
+1
+
+25.00$
+
+Subtotal
+
+25.00$
+
+Store Credit
+Applied
+
+-5.00$
+
+Total
+
+20.00$
+
+

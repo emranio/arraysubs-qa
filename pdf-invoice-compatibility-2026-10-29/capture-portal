@@ -1,0 +1,12 @@
+#!/bin/sh
+set -e
+cd '/Users/emran/Local Sites/wp-test2/app/public/wp-content/plugins'
+evidence='qa/pdf-invoice-compatibility-2026-10-29/evidence'
+agent-browser --session pdf-matrix-customer open "$2" >/dev/null
+agent-browser --session pdf-matrix-customer wait --load networkidle >/dev/null
+agent-browser --session pdf-matrix-customer snapshot -i > "$evidence/$1-snapshot.txt"
+agent-browser --session pdf-matrix-customer eval --stdin < qa/pdf-invoice-compatibility-2026-10-29/portal-metrics.js > "$evidence/$1.json"
+if [ "${3:-}" = screenshot ]; then
+    agent-browser --session pdf-matrix-customer screenshot --full "$evidence/$1.png" >/dev/null
+fi
+cat "$evidence/$1.json"

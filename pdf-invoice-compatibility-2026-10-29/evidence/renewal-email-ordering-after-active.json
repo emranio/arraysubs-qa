@@ -1,0 +1,44 @@
+{
+    "label": "after-active",
+    "php_version": "8.2.27",
+    "subscription_id": 23976,
+    "customer_id": 479,
+    "recipient": "qa.pdf.invoice.20261029@example.test",
+    "created_subscription_ids": [],
+    "created_order_ids": [
+        24022
+    ],
+    "credit_grant": 5,
+    "customer_credit_before": 0,
+    "subscription_credit_before": 0,
+    "invoice_mail_attempts": [
+        {
+            "subject": "QA PDF RENEWAL ORDERING AFTER-ACTIVE",
+            "body_path": "/Users/emran/Local Sites/wp-test2/app/public/wp-content/plugins/qa/pdf-invoice-compatibility-2026-10-29/evidence/renewal-email-ordering-after-active-body.html"
+        }
+    ],
+    "email_delivery_results": [
+        {
+            "email_id": "arraysubs_renewal_invoice",
+            "accepted_by_transport": true
+        }
+    ],
+    "credit_grant_log_id": 24021,
+    "order_total_before_event": 25,
+    "invoice_order_total_at_send": 20,
+    "invoice_attachments": [
+        {
+            "original_path": "/Users/emran/Local Sites/wp-test2/app/public/wp-content/uploads/wpo_wcpdf_e35bf86986574bdd2d16a5a341e8f377/attachments/document-716a8d8d3df6a2cd2e399bfbf1768291ffbb2cd172859aaef8adfeb088f8c2aa/invoice-24022.pdf",
+            "saved_path": "/Users/emran/Local Sites/wp-test2/app/public/wp-content/plugins/qa/pdf-invoice-compatibility-2026-10-29/evidence/renewal-email-ordering-after-active-invoice-24022.pdf",
+            "bytes": 229272
+        }
+    ],
+    "final_order_total": 20,
+    "final_order_status": "pending",
+    "credit_from_subscription": 5,
+    "credit_from_customer": 0,
+    "invoice_email_sent_marker": "yes",
+    "subscription_credit_after": 0,
+    "customer_credit_after": 0,
+    "email_total_matches_final_order": true
+}
