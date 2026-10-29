@@ -791,3 +791,4 @@
 {"timestamp":"2026-10-30T04:03:49.062242+06:00","action":"move","task_id":147,"detail":"in-progress -\u003e closed"}
 {"timestamp":"2026-10-30T04:03:49.098847+06:00","action":"edit","task_id":148,"detail":"Freemius recovery click rejects inherited double-slash sender labels"}
 {"timestamp":"2026-10-30T04:03:49.099012+06:00","action":"block","task_id":148,"detail":"Sender configuration corrected live and persisted; existing signed recovery link and provider-side error disclosure still need Freemius verification."}
+{"timestamp":"2026-10-30T04:10:20.178699+06:00","action":"create","task_id":149,"detail":"Edge embedded Freemius checkout stalls for default and custom coupons"}
