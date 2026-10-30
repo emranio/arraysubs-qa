@@ -1,0 +1,285 @@
+Skip to main content
+Skip to toolbar
+
+
+Dashboard
+Home
+Updates 12
+
+
+Posts
+All Posts
+Add Post
+Categories
+Tags
+
+
+Media
+Library
+Add Media File
+
+
+Pages
+All Pages
+Add Page
+
+
+Comments
+
+
+KB Articles
+KB Articles
+Add Post
+ArraySubs
+Home
+Subscription Plans
+Subscriptions
+Manage Members
+Store Credit
+Cancellation Flow
+Member Access
+Checkout Builder
+Profile & My Account
+Shortcodes
+Integrations
+Modules
+Settings
+Audits
+License
+1-Minute Setup
+Help
+
+
+WooCommerce
+Home
+Orders 69
+Customers
+Coupons
+Reports
+Settings
+Status
+Extensions
+
+
+Products
+All Products
+Add new product
+Brands
+Categories
+Tags
+Attributes
+Reviews
+
+
+Payments 1
+
+
+Analytics
+Overview
+Products
+Revenue
+Revenue Forecast
+Churn Analysis
+Retention
+Orders
+Refunds
+Variations
+Categories
+Coupons
+Taxes
+Downloads
+Stock
+Settings
+
+
+Marketing
+Overview
+Coupons
+
+
+Appearance
+Themes 2
+Editor
+Fonts
+
+
+Plugins 9
+Installed Plugins
+Add Plugin
+
+
+Users
+All Users
+Add User
+Profile
+
+
+Tools
+Available Tools
+Import
+Export
+Site Health 1
+Export Personal Data
+Erase Personal Data
+Scheduled Actions
+Theme File Editor
+Plugin File Editor
+
+
+Settings
+General
+Connectors
+Writing
+Reading
+Discussion
+Media
+Permalinks
+Privacy
+
+
+WP Mail SMTP
+Settings
+Email Log
+Email Reports
+Tools
+Privacy Compliance
+About Us
+Upgrade to Pro
+Collapse Menu
+About WordPress
+mirror-help.arrayhash.com
+Live
+12
+12 updates available
+⌘K
+Open command palette
+0
+0 Comments in moderation
+New
+Howdy, admin
+Screen Options
+Help
+WordPress 7.1.4 is available! Please update now.
+Dashboard
+WooCommerce Status
+Move up
+Move down
+Show or hide panel
+Net sales this month
+$6,912.84
+Top seller this month
+SQA Daily Stripe Plan
+(152 sales)
+Awaiting processing
+69 orders
+On-hold
+21 orders
+Low in stock
+0 products
+Out of stock
+0 products
+WooCommerce Recent Reviews
+Move up
+Move down
+Show or hide panel
+
+There are no product reviews yet.
+
+WP Mail SMTP
+Move up
+Move down
+Show or hide panel
+View Detailed Email Stats
+
+Automatically keep track of every email sent from your WordPress site and view valuable statistics right here in your dashboard.
+
+Upgrade to WP Mail SMTP Pro
+
+All Emails
+Sent Emails
+Failed Emails
+All Time
+Last 7 days
+Last 14 days
+Last 30 days
+4957 total
+	
+Sent N/A
+	
+Failed N/A
+Site Health Status
+Move up
+Move down
+Show or hide panel
+Should be improved
+
+Your site has a critical issue that should be addressed as soon as possible to improve its performance and security.
+
+Take a look at the 8 items on the Site Health screen.
+
+At a Glance
+Move up
+Move down
+Show or hide panel
+2 Published posts
+39 Published pages
+1 Comment
+
+WordPress 7.1.3 running Twenty Twenty-Five theme.
+Update to 7.1.4
+
+Search engines discouraged
+
+Activity
+Move up
+Move down
+Show or hide panel
+Recently Published
+Oct 19th, 1:07 PM
+SQA Members Daily Content
+May 8th, 8:16 AM
+Hello world!
+Recent Comments
+
+From A WordPress Commenter on Hello world!
+
+Hi, this is a comment. To get started with moderating, editing, and deleting comments, please visit the Comments screen in…
+
+Unapprove | Reply | Edit | Spam | Trash | View
+
+View more comments
+All (1) | Mine (0) | Pending (0) | Approved (1) | Spam (1) | Trash (0)
+Quick Draft
+Move up
+Move down
+Show or hide panel
+Title 
+Content 
+
+
+
+
+WordPress Events and News
+Move up
+Move down
+Show or hide panel
+
+Attend an upcoming event near you.  Select location
+
+There are no events scheduled near you at the moment. Would you like to organize a WordPress event?
+WordPress 7.1.4
+WordPress 7.2 Beta 2 
+WordCamp Central: WordPress Campus Connect at Presidency University: Building Skills, Exploring Careers, and Inspiring the Next Generation
+Open Channels FM: Who Controls Our Software, Open Channels News Week in Review
+Open Channels FM: Look What Was Waiting Down Your List
+
+Meetups 
+(opens in a new tab)
+ | WordCamps 
+(opens in a new tab)
+ | News 
+(opens in a new tab)
+
+Thank you for creating with WordPress.
+
+Get Version 7.1.4
