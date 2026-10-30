@@ -1,0 +1,115 @@
+- generic
+  - link "Skip to content" [ref=e1]
+  - banner
+    - paragraph
+      - link "mirror-help.arrayhash.com" [ref=e10]
+    - navigation
+      - list
+        - listitem [level=1]
+          - link "#test" [ref=e47]
+          - button "#test submenu" [expanded=false, ref=e48]
+        - listitem [level=1]
+          - link "Premium" [ref=e49]
+          - button "Premium submenu" [expanded=false, ref=e50]
+        - listitem [level=1]
+          - link "Cart" [ref=e51]
+        - listitem [level=1]
+          - link "Checkout" [ref=e52]
+        - listitem [level=1]
+          - link "Classic Checkout QA" [ref=e53]
+        - listitem [level=1]
+          - link "My account" [ref=e54]
+        - listitem [level=1]
+          - link "Shop" [ref=e55]
+    - link "My Account" [ref=e2]
+      - image
+    - button "Number of items in the cart: 0" [ref=e3]
+      - image
+  - main
+    - generic
+      - heading "My account" [level=1, ref=e4]
+      - navigation "Account pages" [ref=e5]
+        - list
+          - listitem [level=1]
+            - link "Dashboard" [ref=e19]
+          - listitem [level=1]
+            - link "Orders" [ref=e20]
+          - listitem [level=1]
+            - link "Subscriptions 4" [ref=e21]
+              - StaticText "Subscriptions 4"
+          - listitem [level=1]
+            - link "Store Credit" [ref=e22]
+          - listitem [level=1]
+            - link "My Features" [ref=e23]
+          - listitem [level=1]
+            - link "Downloads" [ref=e24]
+          - listitem [level=1]
+            - link "Addresses" [ref=e25]
+          - listitem [level=1]
+            - link "Payment methods" [ref=e26]
+          - listitem [level=1]
+            - link "Account details" [ref=e27]
+          - listitem [level=1]
+            - link "Log out" [ref=e28]
+      - heading "My Features" [level=2, ref=e6]
+      - paragraph
+        - StaticText "Below are all the features included with your active subscriptions."
+      - table
+        - rowgroup
+          - row
+            - columnheader "RQA0208 Paid Monthly Subscription #109453" [ref=e29]
+              - StaticText "RQA0208 Paid Monthly "
+              - link "Subscription #109453" [ref=e45]
+          - row
+            - columnheader "Feature" [ref=e30]
+            - columnheader "Your Entitlement" [ref=e31]
+            - columnheader "Usage" [ref=e32]
+        - row
+          - cell "RQA0208 Perk" [ref=e13]
+          - cell "RQA0208 benefit" [ref=e14]
+          - cell "—" [ref=e15]
+      - table
+        - rowgroup
+          - row
+            - columnheader "RQA0208 Paid Monthly Subscription #109511" [ref=e33]
+              - StaticText "RQA0208 Paid Monthly "
+              - link "Subscription #109511" [ref=e46]
+          - row
+            - columnheader "Feature" [ref=e34]
+            - columnheader "Your Entitlement" [ref=e35]
+            - columnheader "Usage" [ref=e36]
+        - row
+          - cell "RQA0208 Perk" [ref=e16]
+          - cell "RQA0208 benefit" [ref=e17]
+          - cell "—" [ref=e18]
+  - contentinfo
+    - heading "mirror-help.arrayhash.com" [level=2, ref=e7]
+      - link "mirror-help.arrayhash.com" [ref=e11]
+    - navigation " 2" [ref=e8]
+      - list
+        - listitem [level=1]
+          - link "Blog" [ref=e37]
+        - listitem [level=1]
+          - link "About" [ref=e38]
+        - listitem [level=1]
+          - link "FAQs" [ref=e39]
+        - listitem [level=1]
+          - link "Authors" [ref=e40]
+    - navigation " 3" [ref=e9]
+      - list
+        - listitem [level=1]
+          - link "Events" [ref=e41]
+        - listitem [level=1]
+          - link "Shop" [ref=e42]
+        - listitem [level=1]
+          - link "Patterns" [ref=e43]
+        - listitem [level=1]
+          - link "Themes" [ref=e44]
+    - paragraph
+      - StaticText "Twenty Twenty-Five"
+    - paragraph
+      - StaticText "Desgned with "
+      - link "WordPress" [ref=e12]
+  - generic
+  - generic
+  - status

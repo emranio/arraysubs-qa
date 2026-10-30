@@ -1,0 +1,802 @@
+- generic
+  - generic
+    - navigation "Main menu" [ref=e2]
+      - link "Skip to main content" [ref=e3]
+      - link "Skip to toolbar" [ref=e4]
+      - list
+        - listitem [level=1]
+          - link "Dashboard" [ref=e36]
+            - StaticText "Dashboard"
+          - list
+            - listitem [level=2]
+              - link "Home" [ref=e73]
+            - listitem [level=2]
+              - link "Updates 12" [ref=e74]
+                - StaticText "Updates 12"
+        - listitem [level=1]
+          - link "Posts" [ref=e37]
+            - StaticText "Posts"
+          - list
+            - listitem [level=2]
+              - link "All Posts" [ref=e75]
+            - listitem [level=2]
+              - link "Add Post" [ref=e76]
+            - listitem [level=2]
+              - link "Categories" [ref=e77]
+            - listitem [level=2]
+              - link "Tags" [ref=e78]
+        - listitem [level=1]
+          - link "Media" [ref=e38]
+            - StaticText "Media"
+          - list
+            - listitem [level=2]
+              - link "Library" [ref=e79]
+            - listitem [level=2]
+              - link "Add Media File" [ref=e80]
+        - listitem [level=1]
+          - link "Pages" [ref=e39]
+            - StaticText "Pages"
+          - list
+            - listitem [level=2]
+              - link "All Pages" [ref=e81]
+            - listitem [level=2]
+              - link "Add Page" [ref=e82]
+        - listitem [level=1]
+          - link "Comments" [ref=e40]
+            - StaticText "Comments"
+        - listitem [level=1]
+          - link "KB Articles" [ref=e41]
+            - StaticText "KB Articles"
+          - list
+            - listitem [level=2]
+              - link "KB Articles" [ref=e83]
+            - listitem [level=2]
+              - link "Add Post" [ref=e84]
+        - listitem [level=1]
+          - link "ArraySubs" [ref=e42]
+            - StaticText "ArraySubs"
+          - list
+            - listitem [level=2]
+              - link "Home" [ref=e85]
+            - listitem [level=2]
+              - link "Subscription Plans" [ref=e86]
+            - listitem [level=2]
+              - link "Subscriptions" [ref=e87]
+            - listitem [level=2]
+              - link "Manage Members" [ref=e88]
+            - listitem [level=2]
+              - link "Store Credit" [ref=e89]
+            - listitem [level=2]
+              - link "Cancellation Flow" [ref=e90]
+            - listitem [level=2]
+              - link "Member Access" [ref=e91]
+            - listitem [level=2]
+              - link "Checkout Builder" [ref=e92]
+            - listitem [level=2]
+              - link "Profile & My Account" [ref=e93]
+            - listitem [level=2]
+              - link "Shortcodes" [ref=e94]
+            - listitem [level=2]
+              - link "Integrations" [ref=e95]
+            - listitem [level=2]
+              - link "Modules" [ref=e96]
+            - listitem [level=2]
+              - link "Settings" [ref=e97]
+            - listitem [level=2]
+              - link "Audits" [ref=e98]
+            - listitem [level=2]
+              - link "License" [ref=e99]
+            - listitem [level=2]
+              - link "1-Minute Setup" [ref=e100]
+            - listitem [level=2]
+              - link "Help" [ref=e101]
+        - listitem [level=1]
+          - link "WooCommerce" [ref=e43]
+            - StaticText "WooCommerce"
+          - list
+            - listitem [level=2]
+              - link "Home" [ref=e102]
+            - listitem [level=2]
+              - link "Orders 70" [ref=e103]
+                - StaticText "Orders 70"
+            - listitem [level=2]
+              - link "Customers" [ref=e104]
+            - listitem [level=2]
+              - link "Coupons" [ref=e105]
+            - listitem [level=2]
+              - link "Reports" [ref=e106]
+            - listitem [level=2]
+              - link "Settings" [ref=e107]
+            - listitem [level=2]
+              - link "Status" [ref=e108]
+            - listitem [level=2]
+              - link "Extensions" [ref=e109]
+        - listitem [level=1]
+          - link "Products" [ref=e44]
+            - StaticText "Products"
+          - list
+            - listitem [level=2]
+              - link "All Products" [ref=e110]
+            - listitem [level=2]
+              - link "Add new product" [ref=e111]
+            - listitem [level=2]
+              - link "Brands" [ref=e112]
+            - listitem [level=2]
+              - link "Categories" [ref=e113]
+            - listitem [level=2]
+              - link "Tags" [ref=e114]
+            - listitem [level=2]
+              - link "Attributes" [ref=e115]
+            - listitem [level=2]
+              - link "Reviews" [ref=e116]
+        - listitem [level=1]
+          - link "Payments 1" [ref=e45]
+            - generic
+              - StaticText "Payments 1"
+        - listitem [level=1]
+          - link "Analytics" [ref=e46]
+            - StaticText "Analytics"
+          - list
+            - listitem [level=2]
+              - link "Overview" [ref=e117]
+            - listitem [level=2]
+              - link "Products" [ref=e118]
+            - listitem [level=2]
+              - link "Revenue" [ref=e119]
+            - listitem [level=2]
+              - link "Revenue Forecast" [ref=e120]
+            - listitem [level=2]
+              - link "Churn Analysis" [ref=e121]
+            - listitem [level=2]
+              - link "Retention" [ref=e122]
+            - listitem [level=2]
+              - link "Orders" [ref=e123]
+            - listitem [level=2]
+              - link "Refunds" [ref=e124]
+            - listitem [level=2]
+              - link "Variations" [ref=e125]
+            - listitem [level=2]
+              - link "Categories" [ref=e126]
+            - listitem [level=2]
+              - link "Coupons" [ref=e127]
+            - listitem [level=2]
+              - link "Taxes" [ref=e128]
+            - listitem [level=2]
+              - link "Downloads" [ref=e129]
+            - listitem [level=2]
+              - link "Stock" [ref=e130]
+            - listitem [level=2]
+              - link "Settings" [ref=e131]
+        - listitem [level=1]
+          - link "Marketing" [ref=e47]
+            - StaticText "Marketing"
+          - list
+            - listitem [level=2]
+              - link "Overview" [ref=e132]
+            - listitem [level=2]
+              - link "Coupons" [ref=e133]
+        - listitem [level=1]
+          - link "Appearance" [ref=e48]
+            - StaticText "Appearance"
+          - list
+            - listitem [level=2]
+              - link "Themes 2" [ref=e134]
+                - StaticText "Themes 2"
+            - listitem [level=2]
+              - link "Editor" [ref=e135]
+            - listitem [level=2]
+              - link "Fonts" [ref=e136]
+        - listitem [level=1]
+          - link "Plugins 9" [ref=e49]
+            - generic
+              - StaticText "Plugins 9"
+          - list
+            - listitem [level=2]
+              - link "Installed Plugins" [ref=e137]
+            - listitem [level=2]
+              - link "Add Plugin" [ref=e138]
+        - listitem [level=1]
+          - link "Users" [ref=e50]
+            - StaticText "Users"
+          - list
+            - listitem [level=2]
+              - link "All Users" [ref=e139]
+            - listitem [level=2]
+              - link "Add User" [ref=e140]
+            - listitem [level=2]
+              - link "Profile" [ref=e141]
+        - listitem [level=1]
+          - link "Tools" [ref=e51]
+            - StaticText "Tools"
+          - list
+            - listitem [level=2]
+              - link "Available Tools" [ref=e142]
+            - listitem [level=2]
+              - link "Import" [ref=e143]
+            - listitem [level=2]
+              - link "Export" [ref=e144]
+            - listitem [level=2]
+              - link "Site Health 1" [ref=e145]
+                - StaticText "Site Health 1"
+            - listitem [level=2]
+              - link "Export Personal Data" [ref=e146]
+            - listitem [level=2]
+              - link "Erase Personal Data" [ref=e147]
+            - listitem [level=2]
+              - link "Scheduled Actions" [ref=e148]
+            - listitem [level=2]
+              - link "Theme File Editor" [ref=e149]
+            - listitem [level=2]
+              - link "Plugin File Editor" [ref=e150]
+        - listitem [level=1]
+          - link "Settings" [ref=e52]
+            - StaticText "Settings"
+          - list
+            - listitem [level=2]
+              - link "General" [ref=e151]
+            - listitem [level=2]
+              - link "Connectors" [ref=e152]
+            - listitem [level=2]
+              - link "Writing" [ref=e153]
+            - listitem [level=2]
+              - link "Reading" [ref=e154]
+            - listitem [level=2]
+              - link "Discussion" [ref=e155]
+            - listitem [level=2]
+              - link "Media" [ref=e156]
+            - listitem [level=2]
+              - link "Permalinks" [ref=e157]
+            - listitem [level=2]
+              - link "Privacy" [ref=e158]
+        - listitem [level=1]
+          - link "WP Mail SMTP" [ref=e53]
+            - StaticText "WP Mail SMTP"
+          - list
+            - listitem [level=2]
+              - link "Settings" [ref=e159]
+            - listitem [level=2]
+              - link "Email Log" [ref=e160]
+            - listitem [level=2]
+              - link "Email Reports" [ref=e161]
+            - listitem [level=2]
+              - link "Tools" [ref=e162]
+            - listitem [level=2]
+              - link "Privacy Compliance" [ref=e163]
+            - listitem [level=2]
+              - link "About Us" [ref=e164]
+            - listitem [level=2]
+              - link "Upgrade to Pro" [ref=e165]
+        - listitem [level=1]
+          - button "Collapse Main menu" [expanded=true, ref=e54]
+            - StaticText "Collapse Menu"
+    - generic
+      - navigation "Toolbar" [ref=e7]
+        - menu
+          - group
+            - menuitem "About WordPress" [expanded=false, ref=e59]
+              - StaticText "About WordPress"
+          - group
+            - menuitem "mirror-help.arrayhash.com" [expanded=false, ref=e60]
+          - group
+            - menuitem "Live" [ref=e61]
+          - group
+            - menuitem "12 updates available" [ref=e62]
+              - StaticText "12 updates available"
+          - group
+            - menuitem "⌘K Open command palette" [ref=e63]
+              - generic
+                - StaticText "⌘K"
+                - StaticText "Open command palette"
+          - group
+            - menuitem "0 Comments in moderation" [ref=e64]
+              - StaticText "0 Comments in moderation"
+          - group
+            - menuitem "New" [expanded=false, ref=e65]
+              - StaticText "New"
+          - group
+            - menuitem "View product" [ref=e66]
+        - menu
+          - group
+            - menuitem "Howdy, admin" [expanded=false, ref=e67]
+              - StaticText "Howdy, admin"
+      - generic
+        - generic
+          - heading "Store Activity" [level=2, ref=e68]
+          - complementary "Store Activity"
+            - tablist
+              - tab "Activity" [ref=e166]
+                - StaticText "unread activity"
+          - button "Screen options" [expanded=false, ref=e69]
+          - button "Help" [expanded=false, ref=e70]
+      - main
+        - generic
+          - generic
+            - button "Screen Options" [expanded=false, ref=e71]
+            - button "Help" [expanded=false, ref=e72]
+          - generic [ref=e21] clickable [onclick]
+          - heading "Edit product" [level=1, ref=e22]
+          - link "Back to plans" [ref=e23]
+          - generic
+            - generic
+              - generic
+                - generic
+                  - generic
+                    - LabelText
+                      - StaticText "Product name"
+                    - textbox "Product name" [ref=e178]: PEQA Bundle QA
+                      - StaticText "PEQA Bundle QA"
+                    - link "Skip to Editor" [ref=e179]
+                  - generic
+                    - strong
+                      - StaticText "Permalink:"
+                    - link "https://mirror-help.arrayhash.com/product/peqa-bundle-qa/" [ref=e190]
+                      - StaticText "https://mirror-help.arrayhash.com/product/"
+                      - StaticText "peqa-bundle-qa"
+                      - StaticText "/"
+                    - StaticText " ‎"
+                    - button "Edit permalink" [ref=e191]
+                      - StaticText "Edit"
+                - generic
+                  - heading "Product description" [level=2, ref=e167]
+                    - LabelText
+                      - StaticText "Product description"
+                  - generic
+                    - generic
+                      - generic
+                        - button " Add Media" [ref=e195]
+                          - StaticText " Add Media"
+                        - generic "Describe this product. What makes it unique? What are its most important features?" [ref=e196] focusable [tabindex]
+                          - StaticText ""
+                      - generic
+                        - button "Visual" [ref=e197]
+                        - button "Code" [ref=e198]
+                    - generic
+                      - generic
+                        - button "Bold" [ref=e199]
+                          - StaticText "b"
+                        - button "Italic" [ref=e200]
+                          - StaticText "i"
+                        - button "Insert link" [ref=e201]
+                          - StaticText "link"
+                        - button "Blockquote" [ref=e202]
+                          - StaticText "b-quote"
+                        - button "Deleted text (strikethrough)" [ref=e203]
+                          - StaticText "del"
+                        - button "Inserted text" [ref=e204]
+                          - StaticText "ins"
+                        - button "Insert image" [ref=e205]
+                          - StaticText "img"
+                        - button "Bulleted list" [ref=e206]
+                          - StaticText "ul"
+                        - button "Numbered list" [ref=e207]
+                          - StaticText "ol"
+                        - button "List item" [ref=e208]
+                          - StaticText "li"
+                        - button "Code" [ref=e209]
+                          - StaticText "code"
+                        - button "Insert Read More tag" [ref=e210]
+                          - StaticText "more"
+                        - button "close tags" [ref=e211]
+                        - button "Distraction-free writing mode" [ref=e212]
+                      - textbox [ref=e192]
+                  - generic
+                    - StaticText "Word count: 0"
+                  - generic
+                    - StaticText " "
+                    - StaticText "Last edited by admin on August 30, 2026 at 6:41 pm"
+              - generic
+                - region "Publish" [ref=e168]
+                  - heading "Publish" [level=2, ref=e180]
+                  - generic
+                    - button "Move up" [disabled, ref=e213]
+                      - StaticText "Move up"
+                    - button "Move down" [ref=e214]
+                      - StaticText "Move down"
+                    - button "Show or hide panel" [expanded=true, ref=e215]
+                      - StaticText "Show or hide panel"
+                  - generic
+                    - generic
+                      - generic
+                        - link "Preview Changes (opens in a new tab)" [ref=e281]
+                          - StaticText "Preview Changes"
+                          - StaticText "(opens in a new tab)"
+                      - generic
+                        - generic
+                          - StaticText " Status: "
+                          - StaticText "Published "
+                          - button "Edit status" [ref=e282]
+                            - StaticText "Edit status"
+                        - generic
+                          - StaticText " Visibility: "
+                          - StaticText "Public "
+                          - button "Edit visibility" [ref=e283]
+                            - StaticText "Edit visibility"
+                        - generic
+                          - generic
+                            - StaticText " Published on: Aug 26, 2026 at 18:15"
+                          - button "Edit date and time" [ref=e284]
+                            - StaticText "Edit date and time"
+                        - generic
+                          - StaticText "Catalog visibility: "
+                          - strong
+                            - StaticText "Shop and search results "
+                          - StaticText " "
+                          - link "Edit" [ref=e285]
+                    - generic
+                      - link "Copy to a new draft" [ref=e262]
+                      - link "Move to Trash" [ref=e263]
+                      - button "Update" [ref=e264]
+                - region "Product image" [ref=e169]
+                  - heading "Product image" [level=2, ref=e181]
+                  - generic
+                    - button "Move up" [ref=e216]
+                      - StaticText "Move up"
+                    - button "Move down" [ref=e217]
+                      - StaticText "Move down"
+                    - button "Show or hide panel" [expanded=true, ref=e218]
+                      - StaticText "Show or hide panel"
+                  - paragraph
+                    - button "Set product image" [ref=e219]
+                    - generic "For best results, upload JPEG or PNG files that are 1000 by 1000 pixels or larger. Maximum upload file size: 64 MB." [ref=e220] focusable [tabindex]
+                      - StaticText ""
+                - region "Product gallery" [ref=e170]
+                  - heading "Product gallery" [level=2, ref=e182]
+                  - generic
+                    - button "Move up" [ref=e221]
+                      - StaticText "Move up"
+                    - button "Move down" [ref=e222]
+                      - StaticText "Move down"
+                    - button "Show or hide panel" [expanded=true, ref=e223]
+                      - StaticText "Show or hide panel"
+                  - generic
+                    - list
+                    - paragraph
+                      - link "Add product gallery images" [ref=e224]
+                      - generic "For best results, upload JPEG or PNG files that are 1000 by 1000 pixels or larger. Maximum upload file size: 64 MB." [ref=e225] focusable [tabindex]
+                        - StaticText ""
+                - region "Product categories" [ref=e171]
+                  - heading "Product categories" [level=2, ref=e183]
+                  - generic
+                    - button "Move up" [ref=e226]
+                      - StaticText "Move up"
+                    - button "Move down" [ref=e227]
+                      - StaticText "Move down"
+                    - button "Show or hide panel" [expanded=true, ref=e228]
+                      - StaticText "Show or hide panel"
+                  - generic
+                    - tablist
+                      - tab "All categories" [selected, ref=e254]
+                      - StaticText " "
+                      - tab "Most Used" [ref=e255]
+                    - tabpanel
+                      - list
+                        - listitem [level=1]
+                          - checkbox " 19" [checked=false, ref=e286]
+                        - listitem [level=1]
+                          - checkbox " Clothing" [checked=false, ref=e287]
+                          - list
+                            - listitem [level=2]
+                              - checkbox " Accessories" [checked=true, ref=e304]
+                            - listitem [level=2]
+                              - checkbox " Jackets" [checked=false, ref=e305]
+                            - listitem [level=2]
+                              - checkbox " Shirts" [checked=false, ref=e306]
+                            - listitem [level=2]
+                              - checkbox " Sweater" [checked=false, ref=e307]
+                        - listitem [level=1]
+                          - checkbox " Uncategorized" [checked=false, ref=e288]
+                    - generic
+                      - link "+ Add new category" [ref=e256]
+                - region "Product tags" [ref=e172]
+                  - heading "Product tags" [level=2, ref=e184]
+                  - generic
+                    - button "Move up" [ref=e229]
+                      - StaticText "Move up"
+                    - button "Move down" [ref=e230]
+                      - StaticText "Move down"
+                    - button "Show or hide panel" [expanded=true, ref=e231]
+                      - StaticText "Show or hide panel"
+                  - generic
+                    - generic
+                      - LabelText
+                        - StaticText "Add new tag"
+                      - combobox "Add new tag" [expanded=false, ref=e232]
+                      - button "Add" [ref=e233]
+                      - paragraph
+                        - StaticText "Separate tags with commas"
+                      - list
+                    - paragraph
+                      - button "Choose from the most used tags" [expanded=false, ref=e234]
+                - region "Brands" [ref=e173]
+                  - heading "Brands" [level=2, ref=e185]
+                  - generic
+                    - button "Move up" [ref=e235]
+                      - StaticText "Move up"
+                    - button "Move down" [ref=e236]
+                      - StaticText "Move down"
+                    - button "Show or hide panel" [expanded=true, ref=e237]
+                      - StaticText "Show or hide panel"
+                  - generic
+                    - tablist
+                      - tab "All Brands" [selected, ref=e257]
+                      - StaticText " "
+                      - tab "Most Used" [ref=e258]
+                    - tabpanel
+                      - list
+                    - generic
+                      - link "+ Add New Brand" [ref=e259]
+                - region "ArraySubs Access Restriction" [ref=e174]
+                  - heading "ArraySubs Access Restriction" [level=2, ref=e186]
+                  - generic
+                    - button "Move up" [ref=e238]
+                      - StaticText "Move up"
+                    - button "Move down" [ref=e239]
+                      - StaticText "Move down"
+                    - button "Show or hide panel" [expanded=true, ref=e240]
+                      - StaticText "Show or hide panel"
+                  - generic [ref=e193] clickable [onclick]
+                    - paragraph
+                      - StaticText "No per-post restriction. Members Access rules still apply."
+                    - button "Configure restriction" [ref=e241]
+              - generic
+                - generic
+                  - region "Product data" [ref=e175]
+                    - heading "Product data — Subscription Bundle [ArraySubs] Product types define available product details and attributes, such as downloadable files and variations. They’re also used for analytics and inventory management." [level=2, ref=e187]
+                      - StaticText "Product data — "
+                      - LabelText
+                        - combobox "Product types define available product details and attributes, such as downloadable files and variations. They’re also used for analytics and inventory management." [expanded=false, ref=e242]: Subscription Bundle [ArraySubs]
+                          - MenuListPopup
+                            - group "Product Type"
+                              - option "Simple product" [ref=e289]
+                              - option "Grouped product" [ref=e290]
+                              - option "External/Affiliate product" [ref=e291]
+                              - option "Variable product" [ref=e292]
+                              - option "Subscription Box [ArraySubs]" [ref=e293]
+                              - option "Store Credit" [ref=e294]
+                              - option "Subscription Bundle [ArraySubs]" [selected, ref=e295]
+                        - generic "Product types define available product details and attributes, such as downloadable files and variations. They’re also used for analytics and inventory management." [ref=e243] focusable [tabindex]
+                          - StaticText ""
+                    - generic
+                      - button "Move up" [ref=e244]
+                        - StaticText "Move up"
+                      - button "Move down" [ref=e245]
+                        - StaticText "Move down"
+                      - button "Show or hide panel" [expanded=true, ref=e246]
+                        - StaticText "Show or hide panel"
+                    - generic
+                      - list
+                        - listitem [level=1]
+                          - link "General" [ref=e265]
+                            - StaticText ""
+                            - StaticText "General"
+                        - listitem [level=1]
+                          - link "Inventory" [ref=e266]
+                            - StaticText ""
+                            - StaticText "Inventory"
+                        - listitem [level=1]
+                          - link "Shipping" [ref=e267]
+                            - StaticText ""
+                            - StaticText "Shipping"
+                        - listitem [level=1]
+                          - link "Linked Products" [ref=e268]
+                            - StaticText ""
+                            - StaticText "Linked Products"
+                        - listitem [level=1]
+                          - link "Attributes" [ref=e269]
+                            - StaticText ""
+                            - StaticText "Attributes"
+                        - listitem [level=1]
+                          - link "Feature Manager [AS]" [ref=e270]
+                            - StaticText ""
+                            - StaticText "Feature Manager [AS]"
+                        - listitem [level=1]
+                          - link "Product Redirect [AS]" [ref=e271]
+                            - StaticText ""
+                            - StaticText "Product Redirect [AS]"
+                        - listitem [level=1]
+                          - link "Advanced" [ref=e272]
+                            - StaticText ""
+                            - StaticText "Advanced"
+                        - listitem [level=1]
+                          - link "Get more options" [ref=e273]
+                            - StaticText ""
+                            - StaticText "Get more options"
+                      - generic
+                        - strong
+                          - image "⚠️"
+                          - StaticText " Active Subscriptions"
+                        - LineBreak "\n"
+                        - StaticText "This product has 4 active subscriptions. Deleting this product will NOT affect subscriptions - they will continue using cached product data."
+                        - StaticText "Subscription Bundle Details"
+                        - StaticText "Pick the billing cycle and the products this bundle always contains. Customers buy it with one click — the bundle line carries the whole recurring total and every included product renews and cancels with it."
+                        - generic [ref=e260] clickable [onclick]
+                          - button "Edit Bundle Configuration" [ref=e274]
+                          - StaticText "2 product(s) · every month"
+                          - StaticText "BILLING"
+                          - StaticText "Fixed · every month"
+                          - StaticText " · until cancelled"
+                          - StaticText "No signup fees"
+                          - StaticText "DISCOUNT"
+                          - StaticText "$5.00 off"
+                          - StaticText "−$5.00 on every payment"
+                          - StaticText "FLEXIBLE RENEWAL SYNC"
+                          - StaticText "Store default"
+                          - StaticText "Follows Settings → General"
+                          - table
+                            - rowgroup
+                              - row
+                                - columnheader "PRODUCT" [ref=e308]
+                                - columnheader "QTY" [ref=e309]
+                                - columnheader "UNIT PRICE" [ref=e310]
+                                - columnheader "LINE TOTAL" [ref=e311]
+                            - row
+                              - cell "BUNDLE-CHILD-PLAIN (#11091)" [ref=e296]
+                                - strong
+                                  - StaticText "BUNDLE-CHILD-PLAIN (#11091)"
+                              - cell "2" [ref=e297]
+                              - cell "$5.00" [ref=e298]
+                              - cell "$10.00" [ref=e299]
+                            - row
+                              - cell "BUNDLE-CHILD-SUB (#11089) Subscription" [ref=e300]
+                                - strong
+                                  - StaticText "BUNDLE-CHILD-SUB (#11089)"
+                                - StaticText "Subscription"
+                              - cell "2" [ref=e301]
+                              - cell "$10.00" [ref=e302]
+                              - cell "$20.00" [ref=e303]
+                            - rowgroup
+                              - row
+                                - rowheader "Subtotal" [ref=e312]
+                                - cell "$30.00" [ref=e313]
+                              - row
+                                - rowheader "Discount" [ref=e314]
+                                - cell "−$5.00" [ref=e315]
+                              - row
+                                - rowheader "Total per payment" [ref=e316]
+                                - cell "$25.00" [ref=e317]
+                  - region "Product short description" [ref=e176]
+                    - heading "Product short description Summarize this product in 1-2 short sentences. We’ll show it at the top of the page." [level=2, ref=e188]
+                      - StaticText "Product short description"
+                      - generic "Summarize this product in 1-2 short sentences. We’ll show it at the top of the page." [ref=e194] focusable [tabindex]
+                        - StaticText ""
+                    - generic
+                      - button "Move up" [ref=e247]
+                        - StaticText "Move up"
+                      - button "Move down" [ref=e248]
+                        - StaticText "Move down"
+                      - button "Show or hide panel" [expanded=true, ref=e249]
+                        - StaticText "Show or hide panel"
+                    - generic
+                      - generic
+                        - button " Add Media" [ref=e275]
+                          - StaticText " Add Media"
+                        - generic
+                          - button "Visual" [ref=e276]
+                          - button "Code" [ref=e277]
+                      - generic
+                        - generic
+                          - button "Bold" [ref=e278]
+                            - StaticText "b"
+                          - button "Italic" [ref=e279]
+                            - StaticText "i"
+                          - button "Insert link" [ref=e280]
+                            - StaticText "link"
+                        - textbox [ref=e261]
+                  - region "Reviews" [ref=e177]
+                    - heading "Reviews" [level=2, ref=e189]
+                    - generic
+                      - button "Move up" [ref=e250]
+                        - StaticText "Move up"
+                      - button "Move down" [ref=e251]
+                        - StaticText "Move down"
+                      - button "Show or hide panel" [expanded=true, ref=e252]
+                        - StaticText "Show or hide panel"
+                    - generic
+                      - paragraph
+                        - button "Add Comment" [ref=e253]
+                      - paragraph
+                        - StaticText "No comments yet."
+            - LineBreak "\n"
+  - status
+  - generic [ref=e1] clickable [onclick]
+    - dialog "Configure Subscription Bundle"
+      - heading "Configure Subscription Bundle" [level=2, ref=e5]
+      - button "Close modal" [ref=e6]
+      - button "1 Bundle Products" [ref=e8]
+        - StaticText "1"
+        - StaticText "Bundle Products"
+      - button "2 Discount" [ref=e9]
+        - StaticText "2"
+        - StaticText "Discount"
+      - button "3 Flexible Renewal Sync" [ref=e10]
+        - StaticText "3"
+        - StaticText "Flexible Renewal Sync"
+      - heading "Bundle Schedule" [level=3, ref=e11]
+      - paragraph
+        - StaticText "How often the whole bundle is billed. This cycle also decides which products can go inside it."
+      - heading "Subscription Type" [level=4, ref=e12]
+      - group "Subscription type"
+        - button "Fixed" [ref=e24]
+        - button "Flexible Length" [ref=e25]
+        - button "Full Flexible" [ref=e26]
+      - paragraph
+        - StaticText "Customers subscribe to the exact schedule configured below."
+      - LabelText
+        - StaticText "BILLING PERIOD"
+        - combobox "BILLING PERIOD" [expanded=false, ref=e27]: Month
+          - option "Day" [ref=e55]
+          - option "Week" [ref=e56]
+          - option "Month" [selected, ref=e57]
+          - option "Year" [ref=e58]
+      - LabelText
+        - StaticText "BILLING INTERVAL"
+        - spinbutton "BILLING INTERVAL Charge every X periods" [ref=e28]: 1
+          - StaticText "1"
+        - StaticText "Charge every X periods"
+      - LabelText
+        - StaticText "SUBSCRIPTION LENGTH"
+        - spinbutton "SUBSCRIPTION LENGTH Number of billing cycles (0 = never expires)" [ref=e29]: 0
+          - StaticText "0"
+        - StaticText "Number of billing cycles (0 = never expires)"
+      - LabelText [ref=e13] clickable [cursor:pointer]
+        - checkbox "Keep signup fees Add up the signup fee of every product in this bundle and charge it once on the first payment. Leave unchecked to charge no extra fees." [checked=false, ref=e30]
+        - strong
+          - StaticText "Keep signup fees"
+        - StaticText "Add up the signup fee of every product in this bundle and charge it once on the first payment. Leave unchecked to charge no extra fees."
+      - strong
+        - StaticText "This bundle bills every month."
+      - list
+        - listitem [level=1]
+          - ListMarker "• "
+          - StaticText "Subscription products are only offered when their billing period and interval match this bundle exactly — products on any other cycle are hidden from the search."
+        - listitem [level=1]
+          - ListMarker "• "
+          - StaticText "Regular (non-subscription) products are always available and ship with every payment for as long as the subscription runs."
+        - listitem [level=1]
+          - ListMarker "• "
+          - StaticText "Products using a different renewal price are excluded, because the bundle charges one recurring total."
+        - listitem [level=1]
+          - ListMarker "• "
+          - StaticText "Changing the available billing periods or interval re-checks what is already in the bundle: any subscription product that no longer fits the new cycle is flagged in the product list and left out of the subtotal. Remove it, or set the schedule back, before you can continue."
+        - listitem [level=1]
+          - ListMarker "• "
+          - StaticText "A bundle is sold on its own line, one per order. Its contents are added to the order at zero cost, and the whole bundle renews or cancels as a single subscription."
+        - listitem [level=1]
+          - ListMarker "• "
+          - StaticText "Free trials are switched off for everything inside a bundle."
+      - heading "Bundle Products" [level=3, ref=e14]
+      - paragraph
+        - StaticText "Everything the customer gets in this bundle. Search for a product to add it, set how many of each are included, and use the arrows to arrange them — this is the order the contents are listed in on the storefront, in the cart and on the order."
+      - StaticText "ADD A PRODUCT"
+      - button "Search products…" [expanded=false, ref=e31]
+        - StaticText "Search products…"
+      - StaticText "Type at least 3 characters. Only simple products that can share this bundle's billing cycle are listed. Picking a product that is already in the bundle increases its quantity by one."
+      - StaticText "1"
+      - StaticText "BUNDLE-CHILD-PLAIN (#11091)"
+      - StaticText "$5.00"
+      - LabelText
+        - StaticText "QTY"
+        - spinbutton "QTY" [ref=e32]: 2
+          - StaticText "2"
+      - StaticText "$10.00"
+      - button "Move product up" [disabled, ref=e15]
+      - button "Move product down" [ref=e16]
+      - button "Remove product" [ref=e17]
+      - StaticText "2"
+      - StaticText "BUNDLE-CHILD-SUB (#11089)"
+      - StaticText "Subscription"
+      - StaticText "$10.00"
+      - LabelText
+        - StaticText "QTY"
+        - spinbutton "QTY" [ref=e33]: 2
+          - StaticText "2"
+      - StaticText "$20.00"
+      - button "Move product up" [ref=e18]
+      - button "Move product down" [disabled, ref=e19]
+      - button "Remove product" [ref=e20]
+      - StaticText "BUNDLE SUBTOTAL"
+      - StaticText "$30.00"
+      - StaticText "Charged on every payment, before the discount on the next screen."
+      - generic
+        - button "Cancel" [ref=e34]
+        - button "Continue to Discount" [ref=e35]

@@ -1,0 +1,253 @@
+- generic
+  - link "Skip to content" [ref=e1]
+  - banner
+    - paragraph
+      - link "mirror-help.arrayhash.com" [ref=e7]
+    - navigation
+      - list
+        - listitem [level=1]
+          - link "#test" [ref=e67]
+          - button "#test submenu" [expanded=false, ref=e68]
+        - listitem [level=1]
+          - link "Premium" [ref=e69]
+          - button "Premium submenu" [expanded=false, ref=e70]
+        - listitem [level=1]
+          - link "Cart" [ref=e71]
+        - listitem [level=1]
+          - link "Checkout" [ref=e72]
+        - listitem [level=1]
+          - link "Classic Checkout QA" [ref=e73]
+        - listitem [level=1]
+          - link "My account" [ref=e74]
+        - listitem [level=1]
+          - link "Shop" [ref=e75]
+    - link "My Account" [ref=e2]
+      - image
+  - main
+    - generic
+      - heading "Classic Checkout QA" [level=1, ref=e3]
+      - status
+        - generic
+          - StaticText "Have a coupon? "
+          - button "Enter your coupon code" [expanded=false, ref=e11]
+            - StaticText "Click here to enter your code"
+      - form "Checkout"
+        - generic
+          - IframePresentational "Secure express checkout frame"
+          - IframePresentational "Secure express checkout frame"
+        - paragraph
+          - StaticText "— OR —"
+        - generic
+          - heading "Billing details" [level=3, ref=e12]
+          - paragraph
+            - LabelText
+              - StaticText "Email address"
+            - textbox "Email address" [required, ref=e23]: rqa0208-a@example.invalid
+              - StaticText "rqa0208-a@example.invalid"
+          - paragraph
+            - LabelText
+              - StaticText "First name"
+            - textbox "First name" [required, ref=e24]: RQA0208
+              - StaticText "RQA0208"
+          - paragraph
+            - LabelText
+              - StaticText "Last name"
+            - textbox "Last name" [required, ref=e25]: CustomerA
+              - StaticText "CustomerA"
+          - paragraph
+            - LabelText
+              - StaticText "Country / Region"
+            - generic
+              - combobox "Country / Region" [expanded=false, required, ref=e37]: United Kingdom (UK)
+                - textbox [required, ref=e66]: United Kingdom (UK)
+                  - StaticText "United Kingdom (UK)"
+          - paragraph
+            - LabelText
+              - StaticText "Street address"
+            - textbox "Street address" [required, ref=e26]: 1 QA Street
+              - StaticText "1 QA Street"
+          - paragraph
+            - LabelText
+              - StaticText "Apartment, suite, unit, etc.(optional)"
+            - textbox "Apartment, suite, unit, etc.(optional)" [ref=e27]
+          - paragraph
+            - LabelText
+              - StaticText "Town / City"
+            - textbox "Town / City" [required, ref=e28]: London
+              - StaticText "London"
+          - paragraph
+            - LabelText
+              - StaticText "County(optional)"
+            - textbox "County(optional)" [ref=e29]
+          - paragraph
+            - LabelText
+              - StaticText "Postcode"
+            - textbox "Postcode" [required, ref=e30]: SW1A 1AA
+              - StaticText "SW1A 1AA"
+          - paragraph
+            - LabelText
+              - StaticText "Phone(optional)"
+            - textbox "Phone(optional)" [ref=e31]
+          - heading "Ship to a different address?" [level=3, ref=e13]
+            - LabelText
+              - checkbox "Ship to a different address?" [checked=false, ref=e32]
+              - StaticText "Ship to a different address?"
+          - paragraph
+            - LabelText
+              - StaticText "Order notes(optional)"
+            - textbox "Order notes(optional)" [ref=e33]
+        - heading "Your order" [level=3, ref=e8]
+        - generic
+          - table
+            - rowgroup
+              - row
+                - columnheader "Product" [ref=e38]
+                - columnheader "Subtotal" [ref=e39]
+            - row
+              - cell "RQA0208 Trial Shipping Every month ×1 Every month 7 days free trial + $2.00 signup fee After trial: $7.31 every 1 month Signup fee: $2.00 (one-time) Free trial: 7 days Today's charge: $2.00 signup fee + $3.00 shipping and other charges = $5.00 First charge: 7 November, 2026 ($7.31) Duration: Continues until cancelled Shipping: 🔄 Shipping charged on every renewal" [ref=e34]
+                - StaticText "RQA0208 Trial Shipping Every month "
+                - strong
+                  - StaticText "×1"
+                - LineBreak "\n"
+                - StaticText "Every month"
+                - LineBreak "\n"
+                - StaticText "7 days free trial"
+                - LineBreak "\n"
+                - StaticText "+ $2.00 signup fee"
+                - DescriptionList
+                  - term "After trial:"
+                  - definition
+                    - paragraph
+                      - StaticText "$7.31 every 1 month"
+                  - term "Signup fee:"
+                  - definition
+                    - paragraph
+                      - StaticText "$2.00 (one-time)"
+                  - term "Free trial:"
+                  - definition
+                    - paragraph
+                      - StaticText "7 days"
+                  - term "Today's charge:"
+                  - definition
+                    - paragraph
+                      - StaticText "$2.00 signup fee + $3.00 shipping and other charges = $5.00"
+                  - term "First charge:"
+                  - definition
+                    - paragraph
+                      - StaticText "7 November, 2026 ($7.31)"
+                  - term "Duration:"
+                  - definition
+                    - paragraph
+                      - StaticText "Continues until cancelled"
+                  - term "Shipping:"
+                  - definition
+                    - paragraph
+                      - image "🔄"
+                      - StaticText " Shipping charged on every renewal"
+              - cell "Free for 7 days Then $7.31 every 1 month + $2.00 signup fee due today" [ref=e35]
+                - StaticText "Free for 7 days"
+                - LineBreak "\n"
+                - StaticText "Then $7.31 every 1 month"
+                - LineBreak "\n"
+                - StaticText "+ $2.00 signup fee due today"
+            - rowgroup
+              - row
+                - rowheader "Subtotal" [ref=e40]
+                - cell "$0.00" [ref=e41]
+                  - StaticText "$0.00"
+              - row
+                - rowheader "Shipment" [ref=e42]
+                - cell "Free shipping" [ref=e43]
+                  - list
+                    - listitem [level=1]
+                      - LabelText
+                        - StaticText "Free shipping"
+              - row
+                - cell "* Shipping will be charged on each renewal order." [ref=e44]
+              - row
+                - rowheader "ArraySubs initial shipping: RQA0208 Trial Shipping" [ref=e45]
+                - cell "$3.00" [ref=e46]
+                  - StaticText "$3.00"
+              - row
+                - rowheader "Subscription Signup Fee" [ref=e47]
+                - cell "$2.00" [ref=e48]
+                  - StaticText "$2.00"
+              - row
+                - rowheader "Total" [ref=e49]
+                - cell "$5.00" [ref=e50]
+                  - strong
+                    - StaticText "$5.00"
+              - row
+                - rowheader "After Trial" [ref=e51]
+                - cell "$7.31 every 1 month" [ref=e52]
+                  - StaticText "$7.31 every 1 month"
+              - row
+                - rowheader "Signup Fee" [ref=e53]
+                - cell "$2.00 (one-time)" [ref=e54]
+                  - StaticText "$2.00 (one-time)"
+              - row
+                - rowheader "Free Trial" [ref=e55]
+                - cell "7 days" [ref=e56]
+              - row
+                - rowheader "Today's Charge" [ref=e57]
+                - cell "$2.00 signup fee + $3.00 shipping and other charges = $5.00" [ref=e58]
+                  - StaticText "$2.00 signup fee + $3.00 shipping and other charges = $5.00"
+              - row
+                - rowheader "First Charge" [ref=e59]
+                - cell "7 November, 2026 ($7.31)" [ref=e60]
+                  - StaticText "7 November, 2026 ($7.31)"
+              - row
+                - cell "By completing this purchase, you authorize us to charge your payment method for the recurring subscription amounts on the scheduled dates." [ref=e61]
+                  - paragraph
+                    - StaticText "By completing this purchase, you authorize us to charge your payment method for the recurring subscription amounts on the scheduled dates."
+          - generic
+            - list "Payment methods"
+              - listitem [level=1]
+                - radio "Stripe" [checked=true, ref=e62]
+                - generic
+                  - list
+                    - listitem [level=2]
+                      - radio "Visa ending in 4242 (expires 12/30)" [checked=true, ref=e76]
+                      - alert
+                    - listitem [level=2]
+                      - radio "Use a new payment method" [checked=false, ref=e77]
+              - listitem [level=1]
+                - radio "Paddle" [checked=false, ref=e63]
+              - listitem [level=1]
+                - radio "Direct bank transfer" [checked=false, ref=e64]
+              - listitem [level=1]
+                - radio "Check payments" [checked=false, ref=e65]
+            - paragraph
+              - StaticText "Your personal data will be used to process your order, support your experience throughout this website, and for other purposes described in our "
+              - link "privacy policy" [ref=e36]
+              - StaticText "."
+            - button "Place order" [ref=e14]
+  - contentinfo
+    - heading "mirror-help.arrayhash.com" [level=2, ref=e4]
+      - link "mirror-help.arrayhash.com" [ref=e9]
+    - navigation " 2" [ref=e5]
+      - list
+        - listitem [level=1]
+          - link "Blog" [ref=e15]
+        - listitem [level=1]
+          - link "About" [ref=e16]
+        - listitem [level=1]
+          - link "FAQs" [ref=e17]
+        - listitem [level=1]
+          - link "Authors" [ref=e18]
+    - navigation " 3" [ref=e6]
+      - list
+        - listitem [level=1]
+          - link "Events" [ref=e19]
+        - listitem [level=1]
+          - link "Shop" [ref=e20]
+        - listitem [level=1]
+          - link "Patterns" [ref=e21]
+        - listitem [level=1]
+          - link "Themes" [ref=e22]
+    - paragraph
+      - StaticText "Twenty Twenty-Five"
+    - paragraph
+      - StaticText "Desgned with "
+      - link "WordPress" [ref=e10]
+  - status

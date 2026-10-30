@@ -1,0 +1,648 @@
+- generic
+  - generic
+    - navigation "Main menu" [ref=e1]
+      - link "Skip to main content" [ref=e2]
+      - link "Skip to toolbar" [ref=e3]
+      - list
+        - listitem [level=1]
+          - link "Dashboard" [ref=e9]
+            - StaticText "Dashboard"
+          - list
+            - listitem [level=2]
+              - link "Home" [ref=e41]
+            - listitem [level=2]
+              - link "Updates 12" [ref=e42]
+                - StaticText "Updates 12"
+        - listitem [level=1]
+          - link "Posts" [ref=e10]
+            - StaticText "Posts"
+          - list
+            - listitem [level=2]
+              - link "All Posts" [ref=e43]
+            - listitem [level=2]
+              - link "Add Post" [ref=e44]
+            - listitem [level=2]
+              - link "Categories" [ref=e45]
+            - listitem [level=2]
+              - link "Tags" [ref=e46]
+        - listitem [level=1]
+          - link "Media" [ref=e11]
+            - StaticText "Media"
+          - list
+            - listitem [level=2]
+              - link "Library" [ref=e47]
+            - listitem [level=2]
+              - link "Add Media File" [ref=e48]
+        - listitem [level=1]
+          - link "Pages" [ref=e12]
+            - StaticText "Pages"
+          - list
+            - listitem [level=2]
+              - link "All Pages" [ref=e49]
+            - listitem [level=2]
+              - link "Add Page" [ref=e50]
+        - listitem [level=1]
+          - link "Comments" [ref=e13]
+            - StaticText "Comments"
+        - listitem [level=1]
+          - link "KB Articles" [ref=e14]
+            - StaticText "KB Articles"
+          - list
+            - listitem [level=2]
+              - link "KB Articles" [ref=e51]
+            - listitem [level=2]
+              - link "Add Post" [ref=e52]
+        - listitem [level=1]
+          - link "ArraySubs" [ref=e15]
+            - StaticText "ArraySubs"
+          - list
+            - listitem [level=2]
+              - link "Home" [ref=e53]
+            - listitem [level=2]
+              - link "Subscription Plans" [ref=e54]
+            - listitem [level=2]
+              - link "Subscriptions" [ref=e55]
+            - listitem [level=2]
+              - link "Manage Members" [ref=e56]
+            - listitem [level=2]
+              - link "Store Credit" [ref=e57]
+            - listitem [level=2]
+              - link "Cancellation Flow" [ref=e58]
+            - listitem [level=2]
+              - link "Member Access" [ref=e59]
+            - listitem [level=2]
+              - link "Checkout Builder" [ref=e60]
+            - listitem [level=2]
+              - link "Profile & My Account" [ref=e61]
+            - listitem [level=2]
+              - link "Shortcodes" [ref=e62]
+            - listitem [level=2]
+              - link "Integrations" [ref=e63]
+            - listitem [level=2]
+              - link "Modules" [ref=e64]
+            - listitem [level=2]
+              - link "Settings" [ref=e65]
+            - listitem [level=2]
+              - link "Audits" [ref=e66]
+            - listitem [level=2]
+              - link "License" [ref=e67]
+            - listitem [level=2]
+              - link "1-Minute Setup" [ref=e68]
+            - listitem [level=2]
+              - link "Help" [ref=e69]
+        - listitem [level=1]
+          - link "WooCommerce" [ref=e16]
+            - StaticText "WooCommerce"
+          - list
+            - listitem [level=2]
+              - link "Home" [ref=e70]
+            - listitem [level=2]
+              - link "Orders 70" [ref=e71]
+                - StaticText "Orders 70"
+            - listitem [level=2]
+              - link "Customers" [ref=e72]
+            - listitem [level=2]
+              - link "Coupons" [ref=e73]
+            - listitem [level=2]
+              - link "Reports" [ref=e74]
+            - listitem [level=2]
+              - link "Settings" [ref=e75]
+            - listitem [level=2]
+              - link "Status" [ref=e76]
+            - listitem [level=2]
+              - link "Extensions" [ref=e77]
+        - listitem [level=1]
+          - link "Products" [ref=e17]
+            - StaticText "Products"
+          - list
+            - listitem [level=2]
+              - link "All Products" [ref=e78]
+            - listitem [level=2]
+              - link "Add new product" [ref=e79]
+            - listitem [level=2]
+              - link "Brands" [ref=e80]
+            - listitem [level=2]
+              - link "Categories" [ref=e81]
+            - listitem [level=2]
+              - link "Tags" [ref=e82]
+            - listitem [level=2]
+              - link "Attributes" [ref=e83]
+            - listitem [level=2]
+              - link "Reviews" [ref=e84]
+        - listitem [level=1]
+          - link "Payments 1" [ref=e18]
+            - generic
+              - StaticText "Payments 1"
+        - listitem [level=1]
+          - link "Analytics" [ref=e19]
+            - StaticText "Analytics"
+          - list
+            - listitem [level=2]
+              - link "Overview" [ref=e85]
+            - listitem [level=2]
+              - link "Products" [ref=e86]
+            - listitem [level=2]
+              - link "Revenue" [ref=e87]
+            - listitem [level=2]
+              - link "Revenue Forecast" [ref=e88]
+            - listitem [level=2]
+              - link "Churn Analysis" [ref=e89]
+            - listitem [level=2]
+              - link "Retention" [ref=e90]
+            - listitem [level=2]
+              - link "Orders" [ref=e91]
+            - listitem [level=2]
+              - link "Refunds" [ref=e92]
+            - listitem [level=2]
+              - link "Variations" [ref=e93]
+            - listitem [level=2]
+              - link "Categories" [ref=e94]
+            - listitem [level=2]
+              - link "Coupons" [ref=e95]
+            - listitem [level=2]
+              - link "Taxes" [ref=e96]
+            - listitem [level=2]
+              - link "Downloads" [ref=e97]
+            - listitem [level=2]
+              - link "Stock" [ref=e98]
+            - listitem [level=2]
+              - link "Settings" [ref=e99]
+        - listitem [level=1]
+          - link "Marketing" [ref=e20]
+            - StaticText "Marketing"
+          - list
+            - listitem [level=2]
+              - link "Overview" [ref=e100]
+            - listitem [level=2]
+              - link "Coupons" [ref=e101]
+        - listitem [level=1]
+          - link "Appearance" [ref=e21]
+            - StaticText "Appearance"
+          - list
+            - listitem [level=2]
+              - link "Themes 2" [ref=e102]
+                - StaticText "Themes 2"
+            - listitem [level=2]
+              - link "Editor" [ref=e103]
+            - listitem [level=2]
+              - link "Fonts" [ref=e104]
+        - listitem [level=1]
+          - link "Plugins 9" [ref=e22]
+            - generic
+              - StaticText "Plugins 9"
+          - list
+            - listitem [level=2]
+              - link "Installed Plugins" [ref=e105]
+            - listitem [level=2]
+              - link "Add Plugin" [ref=e106]
+        - listitem [level=1]
+          - link "Users" [ref=e23]
+            - StaticText "Users"
+          - list
+            - listitem [level=2]
+              - link "All Users" [ref=e107]
+            - listitem [level=2]
+              - link "Add User" [ref=e108]
+            - listitem [level=2]
+              - link "Profile" [ref=e109]
+        - listitem [level=1]
+          - link "Tools" [ref=e24]
+            - StaticText "Tools"
+          - list
+            - listitem [level=2]
+              - link "Available Tools" [ref=e110]
+            - listitem [level=2]
+              - link "Import" [ref=e111]
+            - listitem [level=2]
+              - link "Export" [ref=e112]
+            - listitem [level=2]
+              - link "Site Health 1" [ref=e113]
+                - StaticText "Site Health 1"
+            - listitem [level=2]
+              - link "Export Personal Data" [ref=e114]
+            - listitem [level=2]
+              - link "Erase Personal Data" [ref=e115]
+            - listitem [level=2]
+              - link "Scheduled Actions" [ref=e116]
+            - listitem [level=2]
+              - link "Theme File Editor" [ref=e117]
+            - listitem [level=2]
+              - link "Plugin File Editor" [ref=e118]
+        - listitem [level=1]
+          - link "Settings" [ref=e25]
+            - StaticText "Settings"
+          - list
+            - listitem [level=2]
+              - link "General" [ref=e119]
+            - listitem [level=2]
+              - link "Connectors" [ref=e120]
+            - listitem [level=2]
+              - link "Writing" [ref=e121]
+            - listitem [level=2]
+              - link "Reading" [ref=e122]
+            - listitem [level=2]
+              - link "Discussion" [ref=e123]
+            - listitem [level=2]
+              - link "Media" [ref=e124]
+            - listitem [level=2]
+              - link "Permalinks" [ref=e125]
+            - listitem [level=2]
+              - link "Privacy" [ref=e126]
+        - listitem [level=1]
+          - link "WP Mail SMTP" [ref=e26]
+            - StaticText "WP Mail SMTP"
+          - list
+            - listitem [level=2]
+              - link "Settings" [ref=e127]
+            - listitem [level=2]
+              - link "Email Log" [ref=e128]
+            - listitem [level=2]
+              - link "Email Reports" [ref=e129]
+            - listitem [level=2]
+              - link "Tools" [ref=e130]
+            - listitem [level=2]
+              - link "Privacy Compliance" [ref=e131]
+            - listitem [level=2]
+              - link "About Us" [ref=e132]
+            - listitem [level=2]
+              - link "Upgrade to Pro" [ref=e133]
+        - listitem [level=1]
+          - button "Collapse Main menu" [expanded=true, ref=e27]
+            - StaticText "Collapse Menu"
+    - generic
+      - navigation "Toolbar" [ref=e4]
+        - menu
+          - group
+            - menuitem "About WordPress" [expanded=false, ref=e28]
+              - StaticText "About WordPress"
+          - group
+            - menuitem "mirror-help.arrayhash.com" [expanded=false, ref=e29]
+          - group
+            - menuitem "Live" [ref=e30]
+          - group
+            - menuitem "12 updates available" [ref=e31]
+              - StaticText "12 updates available"
+          - group
+            - menuitem "⌘K Open command palette" [ref=e32]
+              - generic
+                - StaticText "⌘K"
+                - StaticText "Open command palette"
+          - group
+            - menuitem "0 Comments in moderation" [ref=e33]
+              - StaticText "0 Comments in moderation"
+          - group
+            - menuitem "New" [expanded=false, ref=e34]
+              - StaticText "New"
+        - menu
+          - group
+            - menuitem "Howdy, admin" [expanded=false, ref=e35]
+              - StaticText "Howdy, admin"
+      - generic
+        - generic
+          - heading "Store Activity" [level=2, ref=e36]
+          - complementary "Store Activity"
+            - tablist
+              - tab "Activity" [ref=e134]
+                - StaticText "unread activity"
+          - button "Screen options" [expanded=false, ref=e37]
+          - button "Help" [expanded=false, ref=e38]
+      - main
+        - generic
+          - generic
+            - button "Screen Options" [expanded=false, ref=e39]
+            - button "Help" [expanded=false, ref=e40]
+          - generic [ref=e5] clickable [onclick]
+          - heading "Edit order" [level=1, ref=e6]
+          - link "Add order" [ref=e7]
+          - generic
+            - generic
+              - region "Order actions" [ref=e135]
+                - heading "Order actions" [level=2, ref=e143]
+                - generic
+                  - button "Move up" [disabled, ref=e156]
+                    - StaticText "Move up"
+                  - button "Move down" [ref=e157]
+                    - StaticText "Move down"
+                  - button "Show or hide panel" [expanded=true, ref=e158]
+                    - StaticText "Show or hide panel"
+                - list
+                  - listitem [level=1]
+                    - link "Login as RQA0208 CustomerA" [ref=e181]
+                      - StaticText "Login as "
+                      - strong
+                        - StaticText "RQA0208 CustomerA"
+                  - listitem [level=1]
+                    - combobox [expanded=false, ref=e182]: Choose an action...
+                      - MenuListPopup
+                        - option "Choose an action..." [selected, ref=e220]
+                        - option "Send order details to customer" [ref=e221]
+                        - option "Resend new order notification" [ref=e222]
+                        - option "Regenerate download permissions" [ref=e223]
+                    - button "Apply " [ref=e183]
+                      - StaticText "Apply"
+                      - StaticText ""
+                  - listitem [level=1]
+                    - link "Move to trash" [ref=e197]
+                    - button "Update" [ref=e184]
+              - region "Order attribution" [ref=e136]
+                - heading "Order attribution" [level=2, ref=e144]
+                - generic
+                  - button "Move up" [ref=e159]
+                    - StaticText "Move up"
+                  - button "Move down" [ref=e160]
+                    - StaticText "Move down"
+                  - button "Show or hide panel" [expanded=true, ref=e161]
+                    - StaticText "Show or hide panel"
+                - heading "Origin" [level=4, ref=e149]
+                - StaticText "Unknown"
+              - region "Customer history" [ref=e137]
+                - heading "Customer history" [level=2, ref=e145]
+                - generic
+                  - button "Move up" [ref=e162]
+                    - StaticText "Move up"
+                  - button "Move down" [ref=e163]
+                    - StaticText "Move down"
+                  - button "Show or hide panel" [expanded=true, ref=e164]
+                    - StaticText "Show or hide panel"
+                - heading "Total orders Total number of orders for this customer, excluding pending payment, failed, and cancelled orders, including the current one." [level=4, ref=e150]
+                  - StaticText "Total orders"
+                  - generic "Total number of orders for this customer, excluding pending payment, failed, and cancelled orders, including the current one." [ref=e165] focusable [tabindex]
+                    - StaticText ""
+                - StaticText "4"
+                - heading "Total revenue This is the Customer Lifetime Value, or the total amount you have earned from this customer's orders." [level=4, ref=e151]
+                  - StaticText "Total revenue"
+                  - generic "This is the Customer Lifetime Value, or the total amount you have earned from this customer's orders." [ref=e166] focusable [tabindex]
+                    - StaticText ""
+                - StaticText "$"
+                - StaticText "25.93"
+                - heading "Average order value" [level=4, ref=e152]
+                - StaticText "$"
+                - StaticText "6.48"
+              - region "Order notes" [ref=e138]
+                - heading "Order notes" [level=2, ref=e146]
+                - generic
+                  - button "Move up" [ref=e167]
+                    - StaticText "Move up"
+                  - button "Move down" [ref=e168]
+                    - StaticText "Move down"
+                  - button "Show or hide panel" [expanded=true, ref=e169]
+                    - StaticText "Show or hide panel"
+                - generic
+                  - LabelText
+                    - StaticText "Add note"
+                  - textbox "Add note" [ref=e153]
+                  - LabelText
+                    - StaticText "Visibility"
+                  - combobox "Visibility" [expanded=false, ref=e154]: Private note
+                    - MenuListPopup
+                      - option "Private note" [selected, ref=e185]
+                      - option "Public note to customer" [ref=e186]
+                  - paragraph
+                    - button "Add private note" [ref=e170]
+                  - list
+                    - listitem [level=1]
+                      - paragraph
+                        - StaticText "Email “New order” sent."
+                      - paragraph
+                        - Abbr "2026-10-31 02:18:47"
+                          - StaticText "31 October, 2026 at 2:18 AM "
+                        - button "Delete system note from 31 October, 2026" [ref=e198]
+                          - StaticText "Delete"
+                    - listitem [level=1]
+                      - paragraph
+                        - StaticText "Payment via Stripe (ch_3UWMG9JG5OzSNVs212hb3ZhF)."
+                      - paragraph
+                        - Abbr "2026-10-31 02:18:46"
+                          - StaticText "31 October, 2026 at 2:18 AM "
+                        - button "Delete system note from 31 October, 2026" [ref=e199]
+                          - StaticText "Delete"
+                    - listitem [level=1]
+                      - paragraph
+                        - StaticText "Early renewal requested by the customer. This invoice covers the renewal originally due on 1 December, 2026 2:14 AM — the billing period is unchanged."
+                      - paragraph
+                        - Abbr "2026-10-31 02:18:44"
+                          - StaticText "31 October, 2026 at 2:18 AM "
+                        - button "Delete system note from 31 October, 2026" [ref=e200]
+                          - StaticText "Delete"
+                    - listitem [level=1]
+                      - paragraph
+                        - StaticText "Renewal order for subscription #109453 (Cycle #2, scheduled for 1 December, 2026 2:14 AM, billing every 1 month). Order generated on 31 October, 2026 2:18 AM."
+                      - paragraph
+                        - Abbr "2026-10-31 02:18:44"
+                          - StaticText "31 October, 2026 at 2:18 AM "
+                        - button "Delete system note from 31 October, 2026" [ref=e201]
+                          - StaticText "Delete"
+            - generic
+              - generic
+                - region "Order data" [ref=e139]
+                  - generic
+                    - heading "Order #109485" [level=2, ref=e171]
+                    - paragraph
+                      - StaticText "Payment via Credit / Debit Card ("
+                      - link "ch_3UWMG9JG5OzSNVs212hb3ZhF" [ref=e187]
+                      - StaticText "). Paid on 31 October, 2026 at 2:18 AM. Customer IP: 172.69.78.166"
+                    - generic
+                      - heading "General" [level=3, ref=e188]
+                      - LabelText
+                        - StaticText "Date created"
+                      - textbox [ref=e189]: 2026-10-31
+                        - StaticText "2026-10-31"
+                      - StaticText " ‎ "
+                      - spinbutton "h" [ref=e190]: 2
+                        - StaticText "02"
+                      - StaticText ": "
+                      - spinbutton "m" [ref=e191]: 18
+                        - StaticText "18"
+                      - LabelText
+                        - StaticText "Status"
+                      - combobox "Completed" [expanded=false, ref=e202]
+                        - textbox [ref=e224]: Completed
+                          - StaticText "Completed"
+                      - LabelText
+                        - StaticText "Customer"
+                        - link "View other orders →" [ref=e203]
+                        - link "Profile →" [ref=e204]
+                      - combobox "× RQA0208 CustomerA (#3252 – rqa0208-a@example.invalid)" [expanded=false, ref=e205]: ×
+RQA0208 CustomerA (#3252 – rqa0208-a@example.invalid)
+                        - textbox "RQA0208 CustomerA (#3252 &ndash; rqa0208-a@example.invalid)" [ref=e225]: ×
+RQA0208 CustomerA (#3252 – rqa0208-a@example.invalid)
+                          - StaticText "×"
+                          - StaticText "RQA0208 CustomerA (#3252 – rqa0208-a@example.invalid)"
+                      - paragraph
+                        - strong
+                          - StaticText "ArraySubs Member Details:"
+                        - link "Open Member Details" [ref=e206]
+                      - heading "Billing Edit " [level=3, ref=e192]
+                        - StaticText "Billing"
+                        - link "Edit " [ref=e207]
+                          - StaticText "Edit"
+                          - StaticText ""
+                      - paragraph
+                        - StaticText "RQA0208 CustomerA"
+                        - LineBreak "\n"
+                        - StaticText "RQA0208"
+                        - LineBreak "\n"
+                        - StaticText "1 QA Street"
+                        - LineBreak "\n"
+                        - StaticText "London"
+                        - LineBreak "\n"
+                        - StaticText "SW1A 1AA"
+                      - strong
+                        - StaticText "Email address:"
+                      - link "rqa0208-a@example.invalid" [ref=e193]
+                      - paragraph
+                        - strong
+                          - StaticText "ArraySubs Subscription:"
+                        - StaticText " "
+                        - link "#109453 " [ref=e208]
+                        - StaticText "(arraysubs-active)"
+                      - heading "Shipping Edit " [level=3, ref=e194]
+                        - StaticText "Shipping"
+                        - link "Edit " [ref=e209]
+                          - StaticText "Edit"
+                          - StaticText ""
+                      - paragraph
+                        - StaticText "RQA0208 CustomerA"
+                        - LineBreak "\n"
+                        - StaticText "1 QA Street"
+                        - LineBreak "\n"
+                        - StaticText "London"
+                        - LineBreak "\n"
+                        - StaticText "SW1A 1AA"
+                - region "Items" [ref=e140]
+                  - generic
+                    - table
+                      - rowgroup
+                        - row
+                          - columnheader "Item" [ref=e210] clickable [cursor:pointer]
+                          - columnheader "Price" [ref=e211] clickable [cursor:pointer]
+                          - columnheader "Qty" [ref=e212] clickable [cursor:pointer]
+                          - columnheader "Total" [ref=e213] clickable [cursor:pointer]
+                          - columnheader "" [ref=e214]
+                      - rowgroup
+                        - row
+                          - cell "" [ref=e215]
+                            - StaticText ""
+                          - cell "RQA0208 Paid Monthly (Every month)" [ref=e216]
+                            - link "RQA0208 Paid Monthly (Every month)" [ref=e226]
+                              - StaticText "RQA0208 Paid Monthly (Every month)"
+                            - table
+                              - rowgroup
+                                - row
+                                  - rowheader "Subscription:" [ref=e234]
+                                  - cell "#109453" [ref=e235]
+                                    - paragraph
+                                      - link "#109453" [ref=e238]
+                          - cell "$7.31" [ref=e217]
+                            - generic
+                              - StaticText "$7.31"
+                          - cell "× 1" [ref=e218]
+                            - generic
+                              - StaticText "× 1"
+                          - cell "$7.31" [ref=e219]
+                            - generic
+                              - StaticText "$7.31"
+                          - cell
+                      - rowgroup
+                      - rowgroup
+                      - rowgroup
+                    - LayoutTable
+                      - generic
+                        - LayoutTableRow
+                          - LayoutTableCell "Items Subtotal:"
+                          - LayoutTableCell
+                          - LayoutTableCell "$7.31"
+                            - StaticText "$7.31"
+                        - LayoutTableRow
+                          - LayoutTableCell "Order Total:"
+                          - LayoutTableCell
+                          - LayoutTableCell "$7.31"
+                            - StaticText "$7.31"
+                    - LayoutTable
+                      - generic
+                        - LayoutTableRow
+                          - LayoutTableCell "Paid: "
+                            - StaticText "Paid:"
+                            - LineBreak "\n"
+                          - LayoutTableCell
+                          - LayoutTableCell "$7.31"
+                            - StaticText "$7.31"
+                        - LayoutTableRow
+                          - LayoutTableCell "31 October, 2026 via Stripe"
+                          - LayoutTableCell
+                    - LayoutTable
+                    - paragraph
+                      - generic "To edit this order change the status back to \"Pending payment\"" [ref=e172] focusable [tabindex]
+                        - StaticText ""
+                      - StaticText " This order is no longer editable."
+                      - button "Refund" [ref=e173]
+                - region "Downloadable product permissions" [ref=e141]
+                  - heading "Downloadable product permissions Note: Permissions for order items will automatically be granted when the order status changes to processing/completed." [level=2, ref=e147]
+                    - StaticText "Downloadable product permissions"
+                    - generic "Note: Permissions for order items will automatically be granted when the order status changes to processing/completed." [ref=e155] focusable [tabindex]
+                      - StaticText ""
+                  - generic
+                    - button "Move up" [ref=e174]
+                      - StaticText "Move up"
+                    - button "Move down" [ref=e175]
+                      - StaticText "Move down"
+                    - button "Show or hide panel" [expanded=true, ref=e176]
+                      - StaticText "Show or hide panel"
+                  - generic
+                    - paragraph
+                      - list
+                        - listitem [level=1]
+                          - textbox "Search for a downloadable product…" [ref=e231]
+                      - button "Grant access" [ref=e195]
+                - region "Custom Fields" [ref=e142]
+                  - heading "Custom Fields" [level=2, ref=e148]
+                  - generic
+                    - button "Move up" [ref=e177]
+                      - StaticText "Move up"
+                    - button "Move down" [ref=e178]
+                      - StaticText "Move down"
+                    - button "Show or hide panel" [expanded=true, ref=e179]
+                      - StaticText "Show or hide panel"
+                  - generic
+                    - generic
+                      - paragraph
+                        - strong
+                          - StaticText "Add New Custom Field:"
+                      - table
+                        - rowgroup
+                          - row
+                            - columnheader "Name" [ref=e227]
+                              - LabelText
+                                - StaticText "Name"
+                            - columnheader "Value" [ref=e228]
+                              - LabelText
+                                - StaticText "Value"
+                        - rowgroup
+                          - row
+                            - cell "Add existing Enter new" [ref=e229]
+                              - generic
+                                - combobox "Add existing" [expanded=false, ref=e236]
+                                  - textbox [ref=e237]: Add existing
+                                    - StaticText "Add existing"
+                              - button "Enter new" [ref=e232]
+                                - StaticText "Enter new"
+                            - cell "Value" [ref=e230]
+                              - textbox "Value" [ref=e233]
+                      - button "Add Custom Field" [ref=e196]
+                    - paragraph
+                      - StaticText "Custom fields can be used to add extra metadata to an order that you can "
+                      - link "use in your theme" [ref=e180]
+                      - StaticText "."
+    - contentinfo
+      - paragraph
+        - generic
+          - StaticText "If you like "
+          - strong
+            - StaticText "WooCommerce"
+          - StaticText " please leave us a "
+          - link "five star" [ref=e8]
+            - StaticText "★★★★★"
+          - StaticText " rating. A huge thanks in advance!"
+      - paragraph
+        - StaticText "Version 11.0.1"
+    - image

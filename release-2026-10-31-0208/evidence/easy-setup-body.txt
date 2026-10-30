@@ -1,0 +1,34 @@
+1-Minute Setup
+
+Set up your subscription business, or transfer your settings between sites
+
+Setup Wizard
+
+Answer a guided set of questions about your subscription business and let the wizard configure the most important settings for you.
+
+Your setup checklist
+Subscription settings
+
+Choose how subscriptions work for your store.
+
+Start setup
+Subscription plan
+
+Give customers something worth subscribing to.
+
+Create a plan
+Set up payments
+
+Connect an automatic gateway for recurring payments.
+
+Set up payments
+Export Settings
+
+Download all your ArraySubs settings as a JSON file. This includes module switches, subscription settings, cancellation flow, emails, member access, profile fields, My Account menu layout, and more.
+
+Export Settings
+Import Settings
+
+Select a previously exported JSON file or paste its contents to restore settings. You can selectively choose which sections to import — unchecked sections will remain untouched.
+
+Import Settings

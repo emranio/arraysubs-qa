@@ -1,0 +1,682 @@
+- generic
+  - generic
+    - navigation "Main menu" [ref=e1]
+      - link "Skip to main content" [ref=e2]
+      - link "Skip to toolbar" [ref=e3]
+      - list
+        - listitem [level=1]
+          - link "Dashboard" [ref=e8]
+            - StaticText "Dashboard"
+          - list
+            - listitem [level=2]
+              - link "Home" [ref=e43]
+            - listitem [level=2]
+              - link "Updates 12" [ref=e44]
+                - StaticText "Updates 12"
+        - listitem [level=1]
+          - link "Posts" [ref=e9]
+            - StaticText "Posts"
+          - list
+            - listitem [level=2]
+              - link "All Posts" [ref=e45]
+            - listitem [level=2]
+              - link "Add Post" [ref=e46]
+            - listitem [level=2]
+              - link "Categories" [ref=e47]
+            - listitem [level=2]
+              - link "Tags" [ref=e48]
+        - listitem [level=1]
+          - link "Media" [ref=e10]
+            - StaticText "Media"
+          - list
+            - listitem [level=2]
+              - link "Library" [ref=e49]
+            - listitem [level=2]
+              - link "Add Media File" [ref=e50]
+        - listitem [level=1]
+          - link "Pages" [ref=e11]
+            - StaticText "Pages"
+          - list
+            - listitem [level=2]
+              - link "All Pages" [ref=e51]
+            - listitem [level=2]
+              - link "Add Page" [ref=e52]
+        - listitem [level=1]
+          - link "Comments" [ref=e12]
+            - StaticText "Comments"
+        - listitem [level=1]
+          - link "KB Articles" [ref=e13]
+            - StaticText "KB Articles"
+          - list
+            - listitem [level=2]
+              - link "KB Articles" [ref=e53]
+            - listitem [level=2]
+              - link "Add Post" [ref=e54]
+        - listitem [level=1]
+          - link "ArraySubs" [ref=e14]
+            - StaticText "ArraySubs"
+          - list
+            - listitem [level=2]
+              - link "Home" [ref=e55]
+            - listitem [level=2]
+              - link "Subscription Plans" [ref=e56]
+            - listitem [level=2]
+              - link "Subscriptions" [ref=e57]
+            - listitem [level=2]
+              - link "Manage Members" [ref=e58]
+            - listitem [level=2]
+              - link "Store Credit" [ref=e59]
+            - listitem [level=2]
+              - link "Cancellation Flow" [ref=e60]
+            - listitem [level=2]
+              - link "Member Access" [ref=e61]
+            - listitem [level=2]
+              - link "Checkout Builder" [ref=e62]
+            - listitem [level=2]
+              - link "Profile & My Account" [ref=e63]
+            - listitem [level=2]
+              - link "Shortcodes" [ref=e64]
+            - listitem [level=2]
+              - link "Integrations" [ref=e65]
+            - listitem [level=2]
+              - link "Modules" [ref=e66]
+            - listitem [level=2]
+              - link "Settings" [ref=e67]
+            - listitem [level=2]
+              - link "Audits" [ref=e68]
+            - listitem [level=2]
+              - link "License" [ref=e69]
+            - listitem [level=2]
+              - link "1-Minute Setup" [ref=e70]
+            - listitem [level=2]
+              - link "Help" [ref=e71]
+        - listitem [level=1]
+          - link "WooCommerce" [ref=e15]
+            - StaticText "WooCommerce"
+          - list
+            - listitem [level=2]
+              - link "Home" [ref=e72]
+            - listitem [level=2]
+              - link "Orders 70" [ref=e73]
+                - StaticText "Orders 70"
+            - listitem [level=2]
+              - link "Customers" [ref=e74]
+            - listitem [level=2]
+              - link "Coupons" [ref=e75]
+            - listitem [level=2]
+              - link "Reports" [ref=e76]
+            - listitem [level=2]
+              - link "Settings" [ref=e77]
+            - listitem [level=2]
+              - link "Status" [ref=e78]
+            - listitem [level=2]
+              - link "Extensions" [ref=e79]
+        - listitem [level=1]
+          - link "Products" [ref=e16]
+            - StaticText "Products"
+          - list
+            - listitem [level=2]
+              - link "All Products" [ref=e80]
+            - listitem [level=2]
+              - link "Add new product" [ref=e81]
+            - listitem [level=2]
+              - link "Brands" [ref=e82]
+            - listitem [level=2]
+              - link "Categories" [ref=e83]
+            - listitem [level=2]
+              - link "Tags" [ref=e84]
+            - listitem [level=2]
+              - link "Attributes" [ref=e85]
+            - listitem [level=2]
+              - link "Reviews" [ref=e86]
+        - listitem [level=1]
+          - link "Payments 1" [ref=e17]
+            - generic
+              - StaticText "Payments 1"
+        - listitem [level=1]
+          - link "Analytics" [ref=e18]
+            - StaticText "Analytics"
+          - list
+            - listitem [level=2]
+              - link "Overview" [ref=e87]
+            - listitem [level=2]
+              - link "Products" [ref=e88]
+            - listitem [level=2]
+              - link "Revenue" [ref=e89]
+            - listitem [level=2]
+              - link "Revenue Forecast" [ref=e90]
+            - listitem [level=2]
+              - link "Churn Analysis" [ref=e91]
+            - listitem [level=2]
+              - link "Retention" [ref=e92]
+            - listitem [level=2]
+              - link "Orders" [ref=e93]
+            - listitem [level=2]
+              - link "Refunds" [ref=e94]
+            - listitem [level=2]
+              - link "Variations" [ref=e95]
+            - listitem [level=2]
+              - link "Categories" [ref=e96]
+            - listitem [level=2]
+              - link "Coupons" [ref=e97]
+            - listitem [level=2]
+              - link "Taxes" [ref=e98]
+            - listitem [level=2]
+              - link "Downloads" [ref=e99]
+            - listitem [level=2]
+              - link "Stock" [ref=e100]
+            - listitem [level=2]
+              - link "Settings" [ref=e101]
+        - listitem [level=1]
+          - link "Marketing" [ref=e19]
+            - StaticText "Marketing"
+          - list
+            - listitem [level=2]
+              - link "Overview" [ref=e102]
+            - listitem [level=2]
+              - link "Coupons" [ref=e103]
+        - listitem [level=1]
+          - link "Appearance" [ref=e20]
+            - StaticText "Appearance"
+          - list
+            - listitem [level=2]
+              - link "Themes 2" [ref=e104]
+                - StaticText "Themes 2"
+            - listitem [level=2]
+              - link "Editor" [ref=e105]
+            - listitem [level=2]
+              - link "Fonts" [ref=e106]
+        - listitem [level=1]
+          - link "Plugins 9" [ref=e21]
+            - generic
+              - StaticText "Plugins 9"
+          - list
+            - listitem [level=2]
+              - link "Installed Plugins" [ref=e107]
+            - listitem [level=2]
+              - link "Add Plugin" [ref=e108]
+        - listitem [level=1]
+          - link "Users" [ref=e22]
+            - StaticText "Users"
+          - list
+            - listitem [level=2]
+              - link "All Users" [ref=e109]
+            - listitem [level=2]
+              - link "Add User" [ref=e110]
+            - listitem [level=2]
+              - link "Profile" [ref=e111]
+        - listitem [level=1]
+          - link "Tools" [ref=e23]
+            - StaticText "Tools"
+          - list
+            - listitem [level=2]
+              - link "Available Tools" [ref=e112]
+            - listitem [level=2]
+              - link "Import" [ref=e113]
+            - listitem [level=2]
+              - link "Export" [ref=e114]
+            - listitem [level=2]
+              - link "Site Health 1" [ref=e115]
+                - StaticText "Site Health 1"
+            - listitem [level=2]
+              - link "Export Personal Data" [ref=e116]
+            - listitem [level=2]
+              - link "Erase Personal Data" [ref=e117]
+            - listitem [level=2]
+              - link "Scheduled Actions" [ref=e118]
+            - listitem [level=2]
+              - link "Theme File Editor" [ref=e119]
+            - listitem [level=2]
+              - link "Plugin File Editor" [ref=e120]
+        - listitem [level=1]
+          - link "Settings" [ref=e24]
+            - StaticText "Settings"
+          - list
+            - listitem [level=2]
+              - link "General" [ref=e121]
+            - listitem [level=2]
+              - link "Connectors" [ref=e122]
+            - listitem [level=2]
+              - link "Writing" [ref=e123]
+            - listitem [level=2]
+              - link "Reading" [ref=e124]
+            - listitem [level=2]
+              - link "Discussion" [ref=e125]
+            - listitem [level=2]
+              - link "Media" [ref=e126]
+            - listitem [level=2]
+              - link "Permalinks" [ref=e127]
+            - listitem [level=2]
+              - link "Privacy" [ref=e128]
+        - listitem [level=1]
+          - link "WP Mail SMTP" [ref=e25]
+            - StaticText "WP Mail SMTP"
+          - list
+            - listitem [level=2]
+              - link "Settings" [ref=e129]
+            - listitem [level=2]
+              - link "Email Log" [ref=e130]
+            - listitem [level=2]
+              - link "Email Reports" [ref=e131]
+            - listitem [level=2]
+              - link "Tools" [ref=e132]
+            - listitem [level=2]
+              - link "Privacy Compliance" [ref=e133]
+            - listitem [level=2]
+              - link "About Us" [ref=e134]
+            - listitem [level=2]
+              - link "Upgrade to Pro" [ref=e135]
+        - listitem [level=1]
+          - button "Collapse Main menu" [expanded=true, ref=e26]
+            - StaticText "Collapse Menu"
+    - generic
+      - navigation "Toolbar" [ref=e4]
+        - menu
+          - group
+            - menuitem "About WordPress" [expanded=false, ref=e28]
+              - StaticText "About WordPress"
+          - group
+            - menuitem "mirror-help.arrayhash.com" [expanded=false, ref=e29]
+          - group
+            - menuitem "Live" [ref=e30]
+          - group
+            - menuitem "12 updates available" [ref=e31]
+              - StaticText "12 updates available"
+          - group
+            - menuitem "⌘K Open command palette" [ref=e32]
+              - generic
+                - StaticText "⌘K"
+                - StaticText "Open command palette"
+          - group
+            - menuitem "0 Comments in moderation" [ref=e33]
+              - StaticText "0 Comments in moderation"
+          - group
+            - menuitem "New" [expanded=false, ref=e34]
+              - StaticText "New"
+          - group
+            - menuitem "View product" [ref=e35]
+        - menu
+          - group
+            - menuitem "Howdy, admin" [expanded=false, ref=e36]
+              - StaticText "Howdy, admin"
+      - generic
+        - generic
+          - heading "Store Activity" [level=2, ref=e37]
+          - complementary "Store Activity"
+            - tablist
+              - tab "Activity" [ref=e136]
+          - button "Screen options" [expanded=false, ref=e38]
+          - button "Help" [expanded=false, ref=e39]
+      - main
+        - generic
+          - generic
+            - button "Screen Options" [expanded=false, ref=e40]
+            - button "Help" [expanded=false, ref=e41]
+          - generic [ref=e5] clickable [onclick]
+          - heading "Edit product" [level=1, ref=e6]
+          - link "Add new product" [ref=e7]
+          - generic
+            - paragraph
+              - StaticText "Product draft updated. "
+              - link "Preview product" [ref=e42]
+            - button "Dismiss this notice." [ref=e27]
+              - StaticText "Dismiss this notice."
+          - generic
+            - generic
+              - generic
+                - generic
+                  - generic
+                    - LabelText
+                      - StaticText "Product name"
+                    - textbox "Product name" [ref=e147]: RQA0208 Redirect Draft
+                      - StaticText "RQA0208 Redirect Draft"
+                    - link "Skip to Editor" [ref=e148]
+                  - generic
+                    - strong
+                      - StaticText "Permalink:"
+                    - link "https://mirror-help.arrayhash.com/product/rqa0208-redirect-draft/" [ref=e158]
+                      - StaticText "https://mirror-help.arrayhash.com/product/"
+                      - StaticText "rqa0208-redirect-draft"
+                      - StaticText "/"
+                    - StaticText " ‎"
+                    - button "Edit permalink" [ref=e159]
+                      - StaticText "Edit"
+                - generic
+                  - heading "Product description" [level=2, ref=e137]
+                    - LabelText
+                      - StaticText "Product description"
+                  - generic
+                    - generic
+                      - generic
+                        - button " Add Media" [ref=e166]
+                          - StaticText " Add Media"
+                        - generic "Describe this product. What makes it unique? What are its most important features?" [ref=e167] focusable [tabindex]
+                          - StaticText ""
+                      - generic
+                        - button "Visual" [ref=e168]
+                        - button "Code" [ref=e169]
+                    - generic
+                      - generic
+                        - button "Bold" [ref=e170]
+                          - StaticText "b"
+                        - button "Italic" [ref=e171]
+                          - StaticText "i"
+                        - button "Insert link" [ref=e172]
+                          - StaticText "link"
+                        - button "Blockquote" [ref=e173]
+                          - StaticText "b-quote"
+                        - button "Deleted text (strikethrough)" [ref=e174]
+                          - StaticText "del"
+                        - button "Inserted text" [ref=e175]
+                          - StaticText "ins"
+                        - button "Insert image" [ref=e176]
+                          - StaticText "img"
+                        - button "Bulleted list" [ref=e177]
+                          - StaticText "ul"
+                        - button "Numbered list" [ref=e178]
+                          - StaticText "ol"
+                        - button "List item" [ref=e179]
+                          - StaticText "li"
+                        - button "Code" [ref=e180]
+                          - StaticText "code"
+                        - button "Insert Read More tag" [ref=e181]
+                          - StaticText "more"
+                        - button "close tags" [ref=e182]
+                        - button "Distraction-free writing mode" [ref=e183]
+                      - textbox [ref=e160]
+                  - generic
+                    - StaticText "Word count: 0"
+                  - generic
+                    - StaticText " "
+                    - StaticText "Last edited by admin on October 31, 2026 at 2:43 am"
+              - generic
+                - region "Publish" [ref=e138]
+                  - heading "Publish" [level=2, ref=e149]
+                  - generic
+                    - button "Move up" [disabled, ref=e184]
+                      - StaticText "Move up"
+                    - button "Move down" [ref=e185]
+                      - StaticText "Move down"
+                    - button "Show or hide panel" [expanded=true, ref=e186]
+                      - StaticText "Show or hide panel"
+                  - generic
+                    - generic
+                      - generic
+                        - button "Save Draft" [ref=e250]
+                        - link "Preview (opens in a new tab)" [ref=e251]
+                          - StaticText "Preview"
+                          - StaticText "(opens in a new tab)"
+                      - generic
+                        - generic
+                          - StaticText " Status: "
+                          - StaticText "Draft "
+                          - button "Edit status" [ref=e252]
+                            - StaticText "Edit status"
+                        - generic
+                          - StaticText " Visibility: "
+                          - StaticText "Public "
+                          - button "Edit visibility" [ref=e253]
+                            - StaticText "Edit visibility"
+                        - generic
+                          - generic
+                            - StaticText " Publish on: Oct 31, 2026 at 02:42"
+                          - button "Edit date and time" [ref=e254]
+                            - StaticText "Edit date and time"
+                        - generic
+                          - StaticText "Catalog visibility: "
+                          - strong
+                            - StaticText "Shop and search results "
+                          - StaticText " "
+                          - link "Edit" [ref=e255]
+                    - generic
+                      - link "Copy to a new draft" [ref=e231]
+                      - link "Move to Trash" [ref=e232]
+                      - button "Publish" [ref=e233]
+                - region "Product image" [ref=e139]
+                  - heading "Product image" [level=2, ref=e150]
+                  - generic
+                    - button "Move up" [ref=e187]
+                      - StaticText "Move up"
+                    - button "Move down" [ref=e188]
+                      - StaticText "Move down"
+                    - button "Show or hide panel" [expanded=true, ref=e189]
+                      - StaticText "Show or hide panel"
+                  - paragraph
+                    - button "Set product image" [ref=e190]
+                    - generic "For best results, upload JPEG or PNG files that are 1000 by 1000 pixels or larger. Maximum upload file size: 64 MB." [ref=e191] focusable [tabindex]
+                      - StaticText ""
+                - region "Product gallery" [ref=e140]
+                  - heading "Product gallery" [level=2, ref=e151]
+                  - generic
+                    - button "Move up" [ref=e192]
+                      - StaticText "Move up"
+                    - button "Move down" [ref=e193]
+                      - StaticText "Move down"
+                    - button "Show or hide panel" [expanded=true, ref=e194]
+                      - StaticText "Show or hide panel"
+                  - generic
+                    - list
+                    - paragraph
+                      - link "Add product gallery images" [ref=e195]
+                      - generic "For best results, upload JPEG or PNG files that are 1000 by 1000 pixels or larger. Maximum upload file size: 64 MB." [ref=e196] focusable [tabindex]
+                        - StaticText ""
+                - region "Product categories" [ref=e141]
+                  - heading "Product categories" [level=2, ref=e152]
+                  - generic
+                    - button "Move up" [ref=e197]
+                      - StaticText "Move up"
+                    - button "Move down" [ref=e198]
+                      - StaticText "Move down"
+                    - button "Show or hide panel" [expanded=true, ref=e199]
+                      - StaticText "Show or hide panel"
+                  - generic
+                    - tablist
+                      - tab "All categories" [selected, ref=e221]
+                      - StaticText " "
+                      - tab "Most Used" [ref=e222]
+                    - tabpanel
+                      - list
+                        - listitem [level=1]
+                          - checkbox " 19" [checked=false, ref=e256]
+                        - listitem [level=1]
+                          - checkbox " Clothing" [checked=false, ref=e257]
+                          - list
+                            - listitem [level=2]
+                              - checkbox " Accessories" [checked=false, ref=e268]
+                            - listitem [level=2]
+                              - checkbox " Jackets" [checked=false, ref=e269]
+                            - listitem [level=2]
+                              - checkbox " Shirts" [checked=false, ref=e270]
+                            - listitem [level=2]
+                              - checkbox " Sweater" [checked=false, ref=e271]
+                        - listitem [level=1]
+                          - checkbox " Uncategorized" [checked=true, ref=e258]
+                    - generic
+                      - link "+ Add new category" [ref=e223]
+                - region "Product tags" [ref=e142]
+                  - heading "Product tags" [level=2, ref=e153]
+                  - generic
+                    - button "Move up" [ref=e200]
+                      - StaticText "Move up"
+                    - button "Move down" [ref=e201]
+                      - StaticText "Move down"
+                    - button "Show or hide panel" [expanded=true, ref=e202]
+                      - StaticText "Show or hide panel"
+                  - generic
+                    - generic
+                      - LabelText
+                        - StaticText "Add new tag"
+                      - combobox "Add new tag" [expanded=false, ref=e203]
+                      - button "Add" [ref=e204]
+                      - paragraph
+                        - StaticText "Separate tags with commas"
+                      - list
+                    - paragraph
+                      - button "Choose from the most used tags" [expanded=false, ref=e205]
+                - region "Brands" [ref=e143]
+                  - heading "Brands" [level=2, ref=e154]
+                  - generic
+                    - button "Move up" [ref=e206]
+                      - StaticText "Move up"
+                    - button "Move down" [ref=e207]
+                      - StaticText "Move down"
+                    - button "Show or hide panel" [expanded=true, ref=e208]
+                      - StaticText "Show or hide panel"
+                  - generic
+                    - tablist
+                      - tab "All Brands" [selected, ref=e224]
+                      - StaticText " "
+                      - tab "Most Used" [ref=e225]
+                    - tabpanel
+                      - list
+                    - generic
+                      - link "+ Add New Brand" [ref=e226]
+                - region "ArraySubs Access Restriction" [ref=e144]
+                  - heading "ArraySubs Access Restriction" [level=2, ref=e155]
+                  - generic
+                    - button "Move up" [ref=e209]
+                      - StaticText "Move up"
+                    - button "Move down" [ref=e210]
+                      - StaticText "Move down"
+                    - button "Show or hide panel" [expanded=true, ref=e211]
+                      - StaticText "Show or hide panel"
+                  - generic [ref=e161] clickable [onclick]
+                    - paragraph
+                      - StaticText "No per-post restriction. Members Access rules still apply."
+                    - button "Configure restriction" [ref=e212]
+              - generic
+                - generic
+                  - region "Product data" [ref=e145]
+                    - heading "Product data — Simple product Simple – covers the vast majority of any products you may sell. Simple products are shipped and have no options. For example, a book. Virtual Downloadable Subscription [AS]" [level=2, ref=e156]
+                      - StaticText "Product data — "
+                      - LabelText
+                        - combobox "Simple – covers the vast majority of any products you may sell. Simple products are shipped and have no options. For example, a book." [expanded=false, ref=e213]: Simple product
+                          - MenuListPopup
+                            - group "Product Type"
+                              - option "Simple product" [selected, ref=e259]
+                              - option "Grouped product" [ref=e260]
+                              - option "External/Affiliate product" [ref=e261]
+                              - option "Variable product" [ref=e262]
+                              - option "Subscription Box [ArraySubs]" [ref=e263]
+                              - option "Store Credit" [ref=e264]
+                              - option "Subscription Bundle [ArraySubs]" [ref=e265]
+                        - generic "Simple – covers the vast majority of any products you may sell. Simple products are shipped and have no options. For example, a book." [ref=e214] focusable [tabindex]
+                          - StaticText ""
+                      - checkbox " Virtual " [checked=true, ref=e162]
+                      - checkbox " Downloadable " [checked=false, ref=e163]
+                      - checkbox " Subscription [AS]" [checked=true, ref=e164]
+                    - generic
+                      - button "Move up" [ref=e215]
+                        - StaticText "Move up"
+                      - button "Move down" [ref=e216]
+                        - StaticText "Move down"
+                      - button "Show or hide panel" [expanded=true, ref=e217]
+                        - StaticText "Show or hide panel"
+                    - generic
+                      - list
+                        - listitem [level=1]
+                          - link "General" [ref=e234]
+                            - StaticText ""
+                            - StaticText "General"
+                        - listitem [level=1]
+                          - link "Inventory" [ref=e235]
+                            - StaticText ""
+                            - StaticText "Inventory"
+                        - listitem [level=1]
+                          - link "Subscription Billings [AS]" [ref=e236]
+                            - StaticText ""
+                            - StaticText "Subscription Billings [AS]"
+                        - listitem [level=1]
+                          - link "Shipping" [ref=e237]
+                            - StaticText ""
+                            - StaticText "Shipping"
+                        - listitem [level=1]
+                          - link "Linked Products" [ref=e238]
+                            - StaticText ""
+                            - StaticText "Linked Products"
+                        - listitem [level=1]
+                          - link "Attributes" [ref=e239]
+                            - StaticText ""
+                            - StaticText "Attributes"
+                        - listitem [level=1]
+                          - link "Feature Manager [AS]" [ref=e240]
+                            - StaticText ""
+                            - StaticText "Feature Manager [AS]"
+                        - listitem [level=1]
+                          - link "Product Redirect [AS]" [ref=e241]
+                            - StaticText ""
+                            - StaticText "Product Redirect [AS]"
+                        - listitem [level=1]
+                          - link "Advanced" [ref=e242]
+                            - StaticText ""
+                            - StaticText "Advanced"
+                        - listitem [level=1]
+                          - link "Get more options" [ref=e243]
+                            - StaticText ""
+                            - StaticText "Get more options"
+                      - generic
+                        - StaticText "Control what happens when a visitor accesses this product's page directly. The product remains purchasable via add-to-cart links and will continue to appear in admin and REST API responses."
+                        - checkbox "Enable redirect" [checked=true, ref=e227]
+                        - StaticText "Activate page-level redirect for this product."
+                        - LabelText
+                          - StaticText "Redirect action"
+                        - generic "Choose what happens when a visitor navigates to this product page." [ref=e228] focusable [tabindex]
+                          - StaticText ""
+                        - combobox "Redirect action" [expanded=false, ref=e229]: Show 404 (page not found)
+                          - MenuListPopup
+                            - option "301 Redirect to a page" [ref=e266]
+                            - option "Show 404 (page not found)" [selected, ref=e267]
+                        - strong
+                          - StaticText "How it works"
+                        - list
+                          - listitem [level=1]
+                            - ListMarker "• "
+                            - StaticText "The redirect fires only for the product page itself. Direct add-to-cart links (?add-to-cart=ID), the REST API, and all backend operations continue to work normally."
+                          - listitem [level=1]
+                            - ListMarker "• "
+                            - StaticText "Variable products: the redirect applies to the parent product page. Individual variations don't have their own pages, so no extra handling is needed."
+                          - listitem [level=1]
+                            - ListMarker "• "
+                            - StaticText "Catalog visibility is a separate WooCommerce setting. To also hide this product from shop listings and search results, change its Catalog Visibility under the Publish panel."
+                          - listitem [level=1]
+                            - ListMarker "• "
+                            - StaticText "Products set to "
+                            - strong
+                              - StaticText "301 Redirect"
+                            - StaticText " transfer SEO authority to the target page. Products set to "
+                            - strong
+                              - StaticText "404"
+                            - StaticText " are automatically excluded from XML sitemaps."
+                          - listitem [level=1]
+                            - ListMarker "• "
+                            - StaticText "If your site uses full-page caching (e.g. a caching plugin or CDN), clear the product URL cache after saving these changes so the new behaviour takes effect immediately."
+                  - region "Product short description" [ref=e146]
+                    - heading "Product short description Summarize this product in 1-2 short sentences. We’ll show it at the top of the page." [level=2, ref=e157]
+                      - StaticText "Product short description"
+                      - generic "Summarize this product in 1-2 short sentences. We’ll show it at the top of the page." [ref=e165] focusable [tabindex]
+                        - StaticText ""
+                    - generic
+                      - button "Move up" [ref=e218]
+                        - StaticText "Move up"
+                      - button "Move down" [ref=e219]
+                        - StaticText "Move down"
+                      - button "Show or hide panel" [expanded=true, ref=e220]
+                        - StaticText "Show or hide panel"
+                    - generic
+                      - generic
+                        - button " Add Media" [ref=e244]
+                          - StaticText " Add Media"
+                        - generic
+                          - button "Visual" [ref=e245]
+                          - button "Code" [ref=e246]
+                      - generic
+                        - generic
+                          - button "Bold" [ref=e247]
+                            - StaticText "b"
+                          - button "Italic" [ref=e248]
+                            - StaticText "i"
+                          - button "Insert link" [ref=e249]
+                            - StaticText "link"
+                        - textbox [ref=e230]
+            - LineBreak "\n"
+  - status

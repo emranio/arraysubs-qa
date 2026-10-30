@@ -1,0 +1,67 @@
+[
+  {
+    "file": "email-contact-01.jpg",
+    "left": "[ArraySubs] New Subscription",
+    "right": "[ArraySubs] Renewal Reminder"
+  },
+  {
+    "file": "email-contact-02.jpg",
+    "left": "[ArraySubs] Renewal Payment Successful",
+    "right": "[ArraySubs] Renewal Payment Failed"
+  },
+  {
+    "file": "email-contact-03.jpg",
+    "left": "[ArraySubs] Subscription On Hold",
+    "right": "[ArraySubs] Subscription Scheduled to Cancel"
+  },
+  {
+    "file": "email-contact-04.jpg",
+    "left": "[ArraySubs] Subscription Cancelled",
+    "right": "[ArraySubs] Subscription Expired"
+  },
+  {
+    "file": "email-contact-05.jpg",
+    "left": "[ArraySubs] Subscription Expiring Soon",
+    "right": "[ArraySubs] Subscription Auto-Downgraded"
+  },
+  {
+    "file": "email-contact-06.jpg",
+    "left": "[ArraySubs] Retention Discount Accepted",
+    "right": "[ArraySubs] Subscription Reactivated"
+  },
+  {
+    "file": "email-contact-07.jpg",
+    "left": "[ArraySubs] Renewal Skipped",
+    "right": "[ArraySubs] Renewal Skip Removed"
+  },
+  {
+    "file": "email-contact-08.jpg",
+    "left": "[ArraySubs] Subscription Paused",
+    "right": "[ArraySubs] Subscription Resumed"
+  },
+  {
+    "file": "email-contact-09.jpg",
+    "left": "[ArraySubs] Renewal Requires Verification",
+    "right": "[ArraySubs] Card Expiring"
+  },
+  {
+    "file": "email-contact-10.jpg",
+    "left": "[ArraySubs] New Subscription (Admin)",
+    "right": "[ArraySubs] Payment Failed (Admin)"
+  },
+  {
+    "file": "email-contact-11.jpg",
+    "left": "[ArraySubs] Subscription Scheduled to Cancel (Admin)",
+    "right": "[ArraySubs] Subscription Cancelled (Admin)"
+  },
+  {
+    "file": "email-contact-12.jpg",
+    "left": "[ArraySubsPro] Store Credit Added",
+    "right": "[ArraySubsPro] Store Credit Expiring Soon"
+  },
+  {
+    "file": "email-contact-13.jpg",
+    "left": "[ArraySubsPro] Store Credit Expired",
+    "right": "N/A"
+  }
+]

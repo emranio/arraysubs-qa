@@ -1,0 +1,130 @@
+- generic
+  - link "Skip to content" [ref=e1]
+  - banner
+    - paragraph
+      - link "mirror-help.arrayhash.com" [ref=e10]
+    - navigation
+      - list
+        - listitem [level=1]
+          - link "#test" [ref=e47]
+          - button "#test submenu" [expanded=false, ref=e48]
+        - listitem [level=1]
+          - link "Premium" [ref=e49]
+          - button "Premium submenu" [expanded=false, ref=e50]
+        - listitem [level=1]
+          - link "Cart" [ref=e51]
+        - listitem [level=1]
+          - link "Checkout" [ref=e52]
+        - listitem [level=1]
+          - link "Classic Checkout QA" [ref=e53]
+        - listitem [level=1]
+          - link "My account" [ref=e54]
+        - listitem [level=1]
+          - link "Shop" [ref=e55]
+    - link "My Account" [ref=e2]
+      - image
+    - button "Number of items in the cart: 0" [ref=e3]
+      - image
+  - main
+    - generic
+      - heading "My account" [level=1, ref=e4]
+      - navigation "Account pages" [ref=e5]
+        - list
+          - listitem [level=1]
+            - link "Dashboard" [ref=e26]
+          - listitem [level=1]
+            - link "Orders" [ref=e27]
+          - listitem [level=1]
+            - link "Subscriptions 3" [ref=e28]
+              - StaticText "Subscriptions 3"
+          - listitem [level=1]
+            - link "Store Credit" [ref=e29]
+          - listitem [level=1]
+            - link "My Features" [ref=e30]
+          - listitem [level=1]
+            - link "Downloads" [ref=e31]
+          - listitem [level=1]
+            - link "Addresses" [ref=e32]
+          - listitem [level=1]
+            - link "Payment methods" [ref=e33]
+          - listitem [level=1]
+            - link "Account details" [ref=e34]
+          - listitem [level=1]
+            - link "Log out" [ref=e35]
+      - StaticText "Your Store Credit Balance"
+      - generic
+        - StaticText "$0.00"
+      - link "+ Buy More Credit" [ref=e11]
+      - generic
+        - heading "Purchase Store Credit" [level=3, ref=e12]
+        - paragraph
+          - StaticText "Add more credit to your account for future purchases and subscription renewals."
+        - heading "Custom Credit" [level=4, ref=e13]
+        - StaticText "You Choose"
+        - StaticText "+10% Bonus"
+        - generic
+          - StaticText "$"
+          - spinbutton [required, ref=e17]: 50
+            - StaticText "50"
+          - paragraph
+            - StaticText "Min: $10.00 – Max: $500.00"
+          - button "Add to Cart" [ref=e18]
+        - heading "Credit Pack $50" [level=4, ref=e14]
+        - generic
+          - StaticText "$50.00"
+        - StaticText "+10% Bonus"
+        - generic
+          - StaticText "Price: $45.00"
+        - link "Buy Now" [ref=e19]
+      - heading "Transaction History" [level=3, ref=e6]
+      - table
+        - rowgroup
+          - row
+            - columnheader "DATE" [ref=e36]
+            - columnheader "TITLE" [ref=e37]
+            - columnheader "INFO" [ref=e38]
+        - row
+          - cell "31 October, 2026 2:23 AM" [ref=e20]
+          - cell "Applied to order #109510 ORDER_APPLIED" [ref=e21]
+            - StaticText "Applied to order #109510"
+            - StaticText "ORDER_APPLIED"
+          - cell "–$1.00—" [ref=e22]
+            - StaticText "–$1.00—"
+        - row
+          - cell "31 October, 2026 2:21 AM" [ref=e23]
+          - cell "RQA0208 release QA credit workflow ADMIN" [ref=e24]
+            - StaticText "RQA0208 release QA credit workflow"
+            - StaticText "ADMIN"
+          - cell "+$1.00—" [ref=e25]
+            - StaticText "+$1.00—"
+  - contentinfo
+    - heading "mirror-help.arrayhash.com" [level=2, ref=e7]
+      - link "mirror-help.arrayhash.com" [ref=e15]
+    - navigation " 2" [ref=e8]
+      - list
+        - listitem [level=1]
+          - link "Blog" [ref=e39]
+        - listitem [level=1]
+          - link "About" [ref=e40]
+        - listitem [level=1]
+          - link "FAQs" [ref=e41]
+        - listitem [level=1]
+          - link "Authors" [ref=e42]
+    - navigation " 3" [ref=e9]
+      - list
+        - listitem [level=1]
+          - link "Events" [ref=e43]
+        - listitem [level=1]
+          - link "Shop" [ref=e44]
+        - listitem [level=1]
+          - link "Patterns" [ref=e45]
+        - listitem [level=1]
+          - link "Themes" [ref=e46]
+    - paragraph
+      - StaticText "Twenty Twenty-Five"
+    - paragraph
+      - StaticText "Desgned with "
+      - link "WordPress" [ref=e16]
+  - generic
+  - generic
+  - status

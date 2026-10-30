@@ -1,0 +1,80 @@
+Activity Audits
+Gateway Logs
+Renewal Failures
+Portal Action Failures
+Access-Rule Conflicts
+Scheduled-Job Logs
+
+Troubleshooting queue for failed customer portal actions.
+
+Refresh
+Action	Customer	Subscription	Error Code	HTTP	Timestamp	Actions
+Cancel
+POST /arraysubs/v1/my-subscriptions/27614/cancel
+	Stripe SCA Fix QA
+stripe-sca-fix-20260815@example.test
+	#27614
+Cancelled
+	update_failed
+Failed to cancel subscription
+	
+500
+	Aug 15, 2026, 5:47 PM	
+View
+Resolve
+
+Cancel
+POST /arraysubs/v1/my-subscriptions/27614/cancel
+	Stripe SCA Fix QA
+stripe-sca-fix-20260815@example.test
+	#27614
+Cancelled
+	update_failed
+Failed to cancel subscription
+	
+500
+	Aug 15, 2026, 5:45 PM	
+View
+Resolve
+
+Cancel
+POST /arraysubs/v1/my-subscriptions/1808/cancel
+	Cust One
+cust1@example.com
+	#1808
+Cancelled
+	subscription_conflict
+This subscription is already being updated. Please refresh and try again.
+	
+409
+	May 25, 2026, 3:59 AM	
+View
+Resolve
+
+Cancel
+POST /arraysubs/v1/my-subscriptions/1808/cancel
+	Cust One
+cust1@example.com
+	#1808
+Cancelled
+	subscription_conflict
+This subscription is already being updated. Please refresh and try again.
+	
+409
+	May 25, 2026, 3:56 AM	
+View
+Resolve
+
+Cancel
+POST /arraysubs/v1/my-subscriptions/1808/cancel
+	Cust One
+cust1@example.com
+	#1808
+Cancelled
+	subscription_conflict
+This subscription is already being updated. Please refresh and try again.
+	
+409
+	May 25, 2026, 3:52 AM	
+View
+Resolve

@@ -4,7 +4,7 @@ title: Subscription related-orders table pushes invoice action outside mobile vi
 status: closed
 priority: medium
 created: 2026-10-29T15:20:23.051423+06:00
-updated: 2026-10-29T15:47:26.571916+06:00
+updated: 2026-10-31T02:25:01.552315+06:00
 started: 2026-10-29T15:47:26.571916+06:00
 completed: 2026-10-29T15:47:26.571916+06:00
 tags:
@@ -32,3 +32,20 @@ Isolated implementation ready for root deployment/visual retest: commit23c9df3b6
 
 [[2026-10-29]] Thu 15:47
 Root verification complete and merged to core main commit23c9df3. Reproduced original527px document overflow at390px with Pro inactive too. Native Woo responsive class plus five existing esc_attr_e labels correct both states:390px page remains390px; Invoice x187..256. Spanish320px labels Pedido/Fecha/Estado/Total/Acciones and actions Ver/Factura/Pagar fit, with visible unoccluded Invoice target. Desktop columns/focus remain correct. Actual pointer and keyboard actions open fully rendered native PDF; download files pass PDF signature/content and rendered visual inspection. Final screenshots/report: qa/pdf-invoice-visual-2026-10-29/report.md. Existing portal regression19 assertions and20 actual browser/layout/translation/PDF observations pass. Exact original four option groups and Pro activation restored; WPO remains active, Coming Soon=yes; official Spanish pack retained. Template1243 lines, draft153; prior draft prefix preserved, Pro unchanged. Owned browser sessions and worktree cleaned up.
+
+
+ReleaseQA2026-10-31 occurrence (priorclosedstatuspreserved):
+ACCESS-002 — Live subscription Related Orders table overflows390px viewport (matches existing closed#146)
+
+- Severity:medium customer-portal responsive regression on live QA. Existing#146 remains closed; coordinator to append this run evidence without changing its status.
+- Active QA task:#4 Customer access and premium workflows, scheduled2026-10-31 Asia/Dhaka; plan qa/release-2026-10-31-0208/plan.md.
+- Subscription109453; orders109452(initial) and109485(early-renewal completed by commerce lane); product109433.
+- CustomerA3252, login rqa0208.customera, testemail rqa0208-a@example.invalid, roleCustomer.
+- URL:https://mirror-help.arrayhash.com/my-account/as-view-subscription/109453/.
+- Browsercontext:rqa0208-owner, isolated A auth copied from commerce private state, viewport390x844. ProfileA current settings. No lifecycle mutation by access lane.
+- Steps:1) Open own subscription detail.2) Set viewport390x844.3) Scroll Related Orders into view and inspect rightmostcolumns.
+- Expected:order table fits usable responsive layout, with Total and View actions reachable within viewport or an explicit contained scrollsurface, without expanding wholepage.
+- Actual:Related Orders table509.8125px wide atleft30; document.scrollWidth540 forwindow.innerWidth390. View actions and much of Total are outside initial viewport; screenshot shows clipped right edge.
+- Proof:evidence/access-related-orders-mobile-viewport.png (390px viewport screenshot),evidence/access-subscription-mobile.png (fullpage width540); direct browser DOM layout corroboration viewport390,pageScrollWidth540,tablewidth509.8125,left30.
+- Knownscope/counterexample:Accountdetails form at390px remains readable and fits. Desktop subscriptiondetail renders fullcolumns. No Invoice action present on this fixture, but same related-orders table issue is recorded in#146. Existing#146 documents fix23c9df3 and local verification2026-10-29; present livebehavior suggests deployment alignment gap, not proof the currentlocalsource fix is broken.
+- Restoration:viewport/session only; no record/settings mutation.

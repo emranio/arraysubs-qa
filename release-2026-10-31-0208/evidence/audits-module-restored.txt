@@ -1,0 +1,749 @@
+- generic
+  - generic
+    - navigation "Main menu" [ref=e1]
+      - link "Skip to main content" [ref=e2]
+      - link "Skip to toolbar" [ref=e3]
+      - list
+        - listitem [level=1]
+          - link "Dashboard" [ref=e6]
+            - StaticText "Dashboard"
+          - list
+            - listitem [level=2]
+              - link "Home" [ref=e34]
+            - listitem [level=2]
+              - link "Updates 12" [ref=e35]
+                - StaticText "Updates 12"
+        - listitem [level=1]
+          - link "Posts" [ref=e7]
+            - StaticText "Posts"
+          - list
+            - listitem [level=2]
+              - link "All Posts" [ref=e36]
+            - listitem [level=2]
+              - link "Add Post" [ref=e37]
+            - listitem [level=2]
+              - link "Categories" [ref=e38]
+            - listitem [level=2]
+              - link "Tags" [ref=e39]
+        - listitem [level=1]
+          - link "Media" [ref=e8]
+            - StaticText "Media"
+          - list
+            - listitem [level=2]
+              - link "Library" [ref=e40]
+            - listitem [level=2]
+              - link "Add Media File" [ref=e41]
+        - listitem [level=1]
+          - link "Pages" [ref=e9]
+            - StaticText "Pages"
+          - list
+            - listitem [level=2]
+              - link "All Pages" [ref=e42]
+            - listitem [level=2]
+              - link "Add Page" [ref=e43]
+        - listitem [level=1]
+          - link "Comments" [ref=e10]
+            - StaticText "Comments"
+        - listitem [level=1]
+          - link "KB Articles" [ref=e11]
+            - StaticText "KB Articles"
+          - list
+            - listitem [level=2]
+              - link "KB Articles" [ref=e44]
+            - listitem [level=2]
+              - link "Add Post" [ref=e45]
+        - listitem [level=1]
+          - link "ArraySubs" [ref=e12]
+            - StaticText "ArraySubs"
+          - list
+            - listitem [level=2]
+              - link "Home" [ref=e46]
+            - listitem [level=2]
+              - link "Subscription Plans" [ref=e47]
+            - listitem [level=2]
+              - link "Subscriptions" [ref=e48]
+            - listitem [level=2]
+              - link "Manage Members" [ref=e49]
+            - listitem [level=2]
+              - link "Store Credit" [ref=e50]
+            - listitem [level=2]
+              - link "Cancellation Flow" [ref=e51]
+            - listitem [level=2]
+              - link "Member Access" [ref=e52]
+            - listitem [level=2]
+              - link "Checkout Builder" [ref=e53]
+            - listitem [level=2]
+              - link "Profile & My Account" [ref=e54]
+            - listitem [level=2]
+              - link "Shortcodes" [ref=e55]
+            - listitem [level=2]
+              - link "Integrations" [ref=e56]
+            - listitem [level=2]
+              - link "Modules" [ref=e57]
+            - listitem [level=2]
+              - link "Settings" [ref=e58]
+            - listitem [level=2]
+              - link "Audits" [ref=e59]
+            - listitem [level=2]
+              - link "License" [ref=e60]
+            - listitem [level=2]
+              - link "1-Minute Setup" [ref=e61]
+            - listitem [level=2]
+              - link "Help" [ref=e62]
+        - listitem [level=1]
+          - link "WooCommerce" [ref=e13]
+            - StaticText "WooCommerce"
+          - list
+            - listitem [level=2]
+              - link "Home" [ref=e63]
+            - listitem [level=2]
+              - link "Orders 70" [ref=e64]
+                - StaticText "Orders 70"
+            - listitem [level=2]
+              - link "Customers" [ref=e65]
+            - listitem [level=2]
+              - link "Coupons" [ref=e66]
+            - listitem [level=2]
+              - link "Reports" [ref=e67]
+            - listitem [level=2]
+              - link "Settings" [ref=e68]
+            - listitem [level=2]
+              - link "Status" [ref=e69]
+            - listitem [level=2]
+              - link "Extensions" [ref=e70]
+        - listitem [level=1]
+          - link "Products" [ref=e14]
+            - StaticText "Products"
+          - list
+            - listitem [level=2]
+              - link "All Products" [ref=e71]
+            - listitem [level=2]
+              - link "Add new product" [ref=e72]
+            - listitem [level=2]
+              - link "Brands" [ref=e73]
+            - listitem [level=2]
+              - link "Categories" [ref=e74]
+            - listitem [level=2]
+              - link "Tags" [ref=e75]
+            - listitem [level=2]
+              - link "Attributes" [ref=e76]
+            - listitem [level=2]
+              - link "Reviews" [ref=e77]
+        - listitem [level=1]
+          - link "Payments 1" [ref=e15]
+            - generic
+              - StaticText "Payments 1"
+        - listitem [level=1]
+          - link "Analytics" [ref=e16]
+            - StaticText "Analytics"
+          - list
+            - listitem [level=2]
+              - link "Overview" [ref=e78]
+            - listitem [level=2]
+              - link "Products" [ref=e79]
+            - listitem [level=2]
+              - link "Revenue" [ref=e80]
+            - listitem [level=2]
+              - link "Revenue Forecast" [ref=e81]
+            - listitem [level=2]
+              - link "Churn Analysis" [ref=e82]
+            - listitem [level=2]
+              - link "Retention" [ref=e83]
+            - listitem [level=2]
+              - link "Orders" [ref=e84]
+            - listitem [level=2]
+              - link "Refunds" [ref=e85]
+            - listitem [level=2]
+              - link "Variations" [ref=e86]
+            - listitem [level=2]
+              - link "Categories" [ref=e87]
+            - listitem [level=2]
+              - link "Coupons" [ref=e88]
+            - listitem [level=2]
+              - link "Taxes" [ref=e89]
+            - listitem [level=2]
+              - link "Downloads" [ref=e90]
+            - listitem [level=2]
+              - link "Stock" [ref=e91]
+            - listitem [level=2]
+              - link "Settings" [ref=e92]
+        - listitem [level=1]
+          - link "Marketing" [ref=e17]
+            - StaticText "Marketing"
+          - list
+            - listitem [level=2]
+              - link "Overview" [ref=e93]
+            - listitem [level=2]
+              - link "Coupons" [ref=e94]
+        - listitem [level=1]
+          - link "Appearance" [ref=e18]
+            - StaticText "Appearance"
+          - list
+            - listitem [level=2]
+              - link "Themes 2" [ref=e95]
+                - StaticText "Themes 2"
+            - listitem [level=2]
+              - link "Editor" [ref=e96]
+            - listitem [level=2]
+              - link "Fonts" [ref=e97]
+        - listitem [level=1]
+          - link "Plugins 9" [ref=e19]
+            - generic
+              - StaticText "Plugins 9"
+          - list
+            - listitem [level=2]
+              - link "Installed Plugins" [ref=e98]
+            - listitem [level=2]
+              - link "Add Plugin" [ref=e99]
+        - listitem [level=1]
+          - link "Users" [ref=e20]
+            - StaticText "Users"
+          - list
+            - listitem [level=2]
+              - link "All Users" [ref=e100]
+            - listitem [level=2]
+              - link "Add User" [ref=e101]
+            - listitem [level=2]
+              - link "Profile" [ref=e102]
+        - listitem [level=1]
+          - link "Tools" [ref=e21]
+            - StaticText "Tools"
+          - list
+            - listitem [level=2]
+              - link "Available Tools" [ref=e103]
+            - listitem [level=2]
+              - link "Import" [ref=e104]
+            - listitem [level=2]
+              - link "Export" [ref=e105]
+            - listitem [level=2]
+              - link "Site Health 1" [ref=e106]
+                - StaticText "Site Health 1"
+            - listitem [level=2]
+              - link "Export Personal Data" [ref=e107]
+            - listitem [level=2]
+              - link "Erase Personal Data" [ref=e108]
+            - listitem [level=2]
+              - link "Scheduled Actions" [ref=e109]
+            - listitem [level=2]
+              - link "Theme File Editor" [ref=e110]
+            - listitem [level=2]
+              - link "Plugin File Editor" [ref=e111]
+        - listitem [level=1]
+          - link "Settings" [ref=e22]
+            - StaticText "Settings"
+          - list
+            - listitem [level=2]
+              - link "General" [ref=e112]
+            - listitem [level=2]
+              - link "Connectors" [ref=e113]
+            - listitem [level=2]
+              - link "Writing" [ref=e114]
+            - listitem [level=2]
+              - link "Reading" [ref=e115]
+            - listitem [level=2]
+              - link "Discussion" [ref=e116]
+            - listitem [level=2]
+              - link "Media" [ref=e117]
+            - listitem [level=2]
+              - link "Permalinks" [ref=e118]
+            - listitem [level=2]
+              - link "Privacy" [ref=e119]
+        - listitem [level=1]
+          - link "WP Mail SMTP" [ref=e23]
+            - StaticText "WP Mail SMTP"
+          - list
+            - listitem [level=2]
+              - link "Settings" [ref=e120]
+            - listitem [level=2]
+              - link "Email Log" [ref=e121]
+            - listitem [level=2]
+              - link "Email Reports" [ref=e122]
+            - listitem [level=2]
+              - link "Tools" [ref=e123]
+            - listitem [level=2]
+              - link "Privacy Compliance" [ref=e124]
+            - listitem [level=2]
+              - link "About Us" [ref=e125]
+            - listitem [level=2]
+              - link "Upgrade to Pro" [ref=e126]
+        - listitem [level=1]
+          - button "Collapse Main menu" [expanded=true, ref=e24]
+            - StaticText "Collapse Menu"
+    - generic
+      - navigation "Toolbar" [ref=e4]
+        - menu
+          - group
+            - menuitem "About WordPress" [expanded=false, ref=e26]
+              - StaticText "About WordPress"
+          - group
+            - menuitem "mirror-help.arrayhash.com" [expanded=false, ref=e27]
+          - group
+            - menuitem "Live" [ref=e28]
+          - group
+            - menuitem "12 updates available" [ref=e29]
+              - StaticText "12 updates available"
+          - group
+            - menuitem "⌘K Open command palette" [ref=e30]
+              - generic
+                - StaticText "⌘K"
+                - StaticText "Open command palette"
+          - group
+            - menuitem "0 Comments in moderation" [ref=e31]
+              - StaticText "0 Comments in moderation"
+          - group
+            - menuitem "New" [expanded=false, ref=e32]
+              - StaticText "New"
+        - menu
+          - group
+            - menuitem "Howdy, admin" [expanded=false, ref=e33]
+              - StaticText "Howdy, admin"
+      - main
+        - generic
+          - sectionheader
+            - navigation "Audits navigation" [ref=e127]
+              - list
+                - listitem [level=1]
+                  - link "Activity Audits" [ref=e272]
+                - listitem [level=1]
+                  - link "Gateway Logs" [ref=e273]
+                - listitem [level=1]
+                  - link "Renewal Failures" [ref=e274]
+                - listitem [level=1]
+                  - link "Portal Action Failures" [ref=e275]
+                - listitem [level=1]
+                  - link "Access-Rule Conflicts" [ref=e276]
+                - listitem [level=1]
+                  - link "Scheduled-Job Logs" [ref=e277]
+            - paragraph
+              - StaticText "View all subscription activity logs, system actions, and user events."
+          - main
+            - combobox [expanded=false, ref=e128]: All Authors
+              - MenuListPopup
+                - option "All Authors" [selected, ref=e138]
+                - option "System" [ref=e139]
+                - option "Admin" [ref=e140]
+                - option "Customer" [ref=e141]
+                - option "Gateway" [ref=e142]
+            - combobox [expanded=false, ref=e129]: All Entities
+              - MenuListPopup
+                - option "All Entities" [selected, ref=e143]
+                - option "Subscription" [ref=e144]
+                - option "Member" [ref=e145]
+                - option "Product" [ref=e146]
+                - option "Order" [ref=e147]
+                - option "Coupon" [ref=e148]
+                - option "Email" [ref=e149]
+                - option "Settings" [ref=e150]
+                - option "Other" [ref=e151]
+            - Date
+              - generic
+                - spinbutton "Day" [ref=e278]: 0
+                  - StaticText "dd"
+                - StaticText "/"
+                - spinbutton "Month" [ref=e279]: 0
+                  - StaticText "mm"
+                - StaticText "/"
+                - spinbutton "Year" [ref=e280]: 0
+                  - StaticText "yyyy"
+              - button "Show date picker" [ref=e135]
+            - Date
+              - generic
+                - spinbutton "Day" [ref=e281]: 0
+                  - StaticText "dd"
+                - StaticText "/"
+                - spinbutton "Month" [ref=e282]: 0
+                  - StaticText "mm"
+                - StaticText "/"
+                - spinbutton "Year" [ref=e283]: 0
+                  - StaticText "yyyy"
+              - button "Show date picker" [ref=e136]
+            - textbox "Search logs... (Enter)" [ref=e130]
+            - button "Reset" [ref=e131]
+            - button [ref=e132]
+            - button "Logging Settings" [ref=e137]
+            - table
+              - rowgroup
+                - row
+                  - columnheader "Date" [ref=e284]
+                  - columnheader "Meta" [ref=e285]
+                  - columnheader "Entity" [ref=e286]
+                  - columnheader "Activity" [ref=e287]
+              - row
+                - cell "Oct 31, 2026, 2:55 AM" [ref=e152]
+                - cell "admin SETTINGS Private" [ref=e153]
+                  - StaticText "admin"
+                  - StaticText "SETTINGS"
+                  - StaticText "Private"
+                - cell "—" [ref=e154]
+                - cell "Settings updated: modules.audits. changes ->" [ref=e155]
+                  - StaticText "Settings updated: modules.audits."
+                  - link "changes ->" [ref=e288]
+              - row
+                - cell "Oct 31, 2026, 2:54 AM" [ref=e156]
+                - cell "admin SETTINGS Private" [ref=e157]
+                  - StaticText "admin"
+                  - StaticText "SETTINGS"
+                  - StaticText "Private"
+                - cell "—" [ref=e158]
+                - cell "Settings updated: modules. changes ->" [ref=e159]
+                  - StaticText "Settings updated: modules."
+                  - link "changes ->" [ref=e289]
+              - row
+                - cell "Oct 31, 2026, 2:50 AM" [ref=e160]
+                - cell "System ORDER Customer" [ref=e161]
+                  - StaticText "System"
+                  - StaticText "ORDER"
+                  - StaticText "Customer"
+                - cell "Subscription #12564 Member #350 Product #12125 Order #109260" [ref=e162]
+                  - link "Subscription #12564" [ref=e290]
+                  - link "Member #350" [ref=e291]
+                  - link "Product #12125" [ref=e292]
+                  - link "Order #109260" [ref=e293]
+                - cell "Payment successful - Order #109260 ($18.00)" [ref=e163]
+                  - generic
+                    - StaticText "Payment successful - "
+                    - link "Order #109260" [ref=e356]
+                    - StaticText " ($18.00)"
+              - row
+                - cell "Oct 31, 2026, 2:50 AM" [ref=e164]
+                - cell "System EMAIL Private" [ref=e165]
+                  - StaticText "System"
+                  - StaticText "EMAIL"
+                  - StaticText "Private"
+                - cell "Subscription #12564 Member #350 Product #12125" [ref=e166]
+                  - link "Subscription #12564" [ref=e294]
+                  - link "Member #350" [ref=e295]
+                  - link "Product #12125" [ref=e296]
+                - cell "Email sent: [ArraySubs] Renewal Payment Successful" [ref=e167]
+                  - StaticText "Email sent: [ArraySubs] Renewal Payment Successful"
+              - row
+                - cell "Oct 31, 2026, 2:50 AM" [ref=e168]
+                - cell "System ORDER Private" [ref=e169]
+                  - StaticText "System"
+                  - StaticText "ORDER"
+                  - StaticText "Private"
+                - cell "Order #109260" [ref=e170]
+                  - link "Order #109260" [ref=e297]
+                - cell "Order #109260 status changed from Pending payment to Completed. changes ->" [ref=e171]
+                  - StaticText "Order #109260 status changed from Pending payment to Completed."
+                  - link "changes ->" [ref=e298]
+              - row
+                - cell "Oct 31, 2026, 2:50 AM" [ref=e172]
+                - cell "stripe SUBSCRIPTION Private" [ref=e173]
+                  - StaticText "stripe"
+                  - StaticText "SUBSCRIPTION"
+                  - StaticText "Private"
+                - cell "Subscription #12564 Member #350 Product #12125 Order #109260" [ref=e174]
+                  - link "Subscription #12564" [ref=e299]
+                  - link "Member #350" [ref=e300]
+                  - link "Product #12125" [ref=e301]
+                  - link "Order #109260" [ref=e302]
+                - cell "Stripe payment confirmed via official webhook for order #109260." [ref=e175]
+                  - StaticText "Stripe payment confirmed via official webhook for order #109260."
+              - row
+                - cell "Oct 31, 2026, 2:50 AM" [ref=e176]
+                - cell "stripe SUBSCRIPTION Private" [ref=e177]
+                  - StaticText "stripe"
+                  - StaticText "SUBSCRIPTION"
+                  - StaticText "Private"
+                - cell "Subscription #12564 Member #350 Product #12125 Order #109260" [ref=e178]
+                  - link "Subscription #12564" [ref=e303]
+                  - link "Member #350" [ref=e304]
+                  - link "Product #12125" [ref=e305]
+                  - link "Order #109260" [ref=e306]
+                - cell "Creating Stripe off-session renewal PaymentIntent for order #109260." [ref=e179]
+                  - StaticText "Creating Stripe off-session renewal PaymentIntent for order #109260."
+              - row
+                - cell "Oct 31, 2026, 2:43 AM" [ref=e180]
+                - cell "admin PRODUCT Private" [ref=e181]
+                  - StaticText "admin"
+                  - StaticText "PRODUCT"
+                  - StaticText "Private"
+                - cell "Product #109573" [ref=e182]
+                  - link "Product #109573" [ref=e307]
+                - cell "Product #109573 moved to trash: RQA0208 Redirect Draft." [ref=e183]
+                  - StaticText "Product #109573 moved to trash: RQA0208 Redirect Draft."
+              - row
+                - cell "Oct 31, 2026, 2:43 AM" [ref=e184]
+                - cell "admin PRODUCT Private" [ref=e185]
+                  - StaticText "admin"
+                  - StaticText "PRODUCT"
+                  - StaticText "Private"
+                - cell "Product #109573" [ref=e186]
+                  - link "Product #109573" [ref=e308]
+                - cell "Product #109573 updated: RQA0208 Redirect Draft — changed name. changes ->" [ref=e187]
+                  - StaticText "Product #109573 updated: RQA0208 Redirect Draft — changed name."
+                  - link "changes ->" [ref=e309]
+              - row
+                - cell "Oct 31, 2026, 2:42 AM" [ref=e188]
+                - cell "admin PRODUCT Private" [ref=e189]
+                  - StaticText "admin"
+                  - StaticText "PRODUCT"
+                  - StaticText "Private"
+                - cell "Product #109573" [ref=e190]
+                  - link "Product #109573" [ref=e310]
+                - cell "Product #109573 created: RQA0208 Paid Monthly (Copy)." [ref=e191]
+                  - StaticText "Product #109573 created: RQA0208 Paid Monthly (Copy)."
+              - row
+                - cell "Oct 31, 2026, 2:39 AM" [ref=e192]
+                - cell "admin SUBSCRIPTION Private" [ref=e193]
+                  - StaticText "admin"
+                  - StaticText "SUBSCRIPTION"
+                  - StaticText "Private"
+                - cell "Subscription #109453 Member #3252 Product #109433 Member #1" [ref=e194]
+                  - link "Subscription #109453" [ref=e311]
+                  - link "Member #3252" [ref=e312]
+                  - link "Product #109433" [ref=e313]
+                  - link "Member #1" [ref=e314]
+                - cell "Subscription details updated by admin (user #1): • Billing Company changed from \"RQA0208\" to \"—\". changes ->" [ref=e195]
+                  - generic
+                    - StaticText "Subscription details updated by admin (user #1):"
+                    - LineBreak "\n"
+                    - StaticText "• Billing Company changed from \"RQA0208\" to \"—\"."
+                  - link "changes ->" [ref=e315]
+              - row
+                - cell "Oct 31, 2026, 2:38 AM" [ref=e196]
+                - cell "admin SETTINGS Private" [ref=e197]
+                  - StaticText "admin"
+                  - StaticText "SETTINGS"
+                  - StaticText "Private"
+                - cell "—" [ref=e198]
+                - cell "Settings updated: cancellation.cancel_immediately. changes ->" [ref=e199]
+                  - StaticText "Settings updated: cancellation.cancel_immediately."
+                  - link "changes ->" [ref=e316]
+              - row
+                - cell "Oct 31, 2026, 2:38 AM" [ref=e200]
+                - cell "admin PRODUCT Private" [ref=e201]
+                  - StaticText "admin"
+                  - StaticText "PRODUCT"
+                  - StaticText "Private"
+                - cell "Product #109500" [ref=e202]
+                  - link "Product #109500" [ref=e317]
+                - cell "Product #109500 moved to trash: RQA0208 Bundle Draft." [ref=e203]
+                  - StaticText "Product #109500 moved to trash: RQA0208 Bundle Draft."
+              - row
+                - cell "Oct 31, 2026, 2:38 AM" [ref=e204]
+                - cell "admin PRODUCT Private" [ref=e205]
+                  - StaticText "admin"
+                  - StaticText "PRODUCT"
+                  - StaticText "Private"
+                - cell "Product #109529" [ref=e206]
+                  - link "Product #109529" [ref=e318]
+                - cell "Product #109529 moved to trash: RQA0208 Box Draft." [ref=e207]
+                  - StaticText "Product #109529 moved to trash: RQA0208 Box Draft."
+              - row
+                - cell "Oct 31, 2026, 2:38 AM" [ref=e208]
+                - cell "admin PRODUCT Private" [ref=e209]
+                  - StaticText "admin"
+                  - StaticText "PRODUCT"
+                  - StaticText "Private"
+                - cell "Product #109544" [ref=e210]
+                  - link "Product #109544" [ref=e319]
+                - cell "Product variation #109544 moved to trash: RQA0208 Variable Draft - Silver." [ref=e211]
+                  - StaticText "Product variation #109544 moved to trash: RQA0208 Variable Draft - Silver."
+              - row
+                - cell "Oct 31, 2026, 2:38 AM" [ref=e212]
+                - cell "admin PRODUCT Private" [ref=e213]
+                  - StaticText "admin"
+                  - StaticText "PRODUCT"
+                  - StaticText "Private"
+                - cell "Product #109542" [ref=e214]
+                  - link "Product #109542" [ref=e320]
+                - cell "Product #109542 moved to trash: RQA0208 Variable Draft." [ref=e215]
+                  - StaticText "Product #109542 moved to trash: RQA0208 Variable Draft."
+              - row
+                - cell "Oct 31, 2026, 2:38 AM" [ref=e216]
+                - cell "admin PRODUCT Private" [ref=e217]
+                  - StaticText "admin"
+                  - StaticText "PRODUCT"
+                  - StaticText "Private"
+                - cell "Product #109546" [ref=e218]
+                  - link "Product #109546" [ref=e321]
+                - cell "Product variation #109546 moved to trash: RQA0208 Variable Draft - Gold." [ref=e219]
+                  - StaticText "Product variation #109546 moved to trash: RQA0208 Variable Draft - Gold."
+              - row
+                - cell "Oct 31, 2026, 2:36 AM" [ref=e220]
+                - cell "RQA0208 CustomerA SUBSCRIPTION Customer" [ref=e221]
+                  - StaticText "RQA0208 CustomerA"
+                  - StaticText "SUBSCRIPTION"
+                  - StaticText "Customer"
+                - cell "Subscription #109475 Member #3252 Product #109466" [ref=e222]
+                  - link "Subscription #109475" [ref=e322]
+                  - link "Member #3252" [ref=e323]
+                  - link "Product #109466" [ref=e324]
+                - cell "Scheduled cancellation removed. Subscription will continue renewing normally." [ref=e223]
+                  - StaticText "Scheduled cancellation removed. Subscription will continue renewing normally."
+              - row
+                - cell "Oct 31, 2026, 2:36 AM" [ref=e224]
+                - cell "RQA0208 CustomerA SUBSCRIPTION Customer" [ref=e225]
+                  - StaticText "RQA0208 CustomerA"
+                  - StaticText "SUBSCRIPTION"
+                  - StaticText "Customer"
+                - cell "Subscription #109475 Member #3252 Product #109466" [ref=e226]
+                  - link "Subscription #109475" [ref=e325]
+                  - link "Member #3252" [ref=e326]
+                  - link "Product #109466" [ref=e327]
+                - cell "Subscription scheduled to cancel on 7 November, 2026 2:17 AM. Scheduled by Customer (RQA0208 CustomerA). Reason: Other changes ->" [ref=e227]
+                  - generic
+                    - StaticText "Subscription scheduled to cancel on "
+                    - strong
+                      - StaticText "7 November, 2026 2:17 AM"
+                    - StaticText ". Scheduled by Customer (RQA0208 CustomerA). Reason: Other"
+                  - link "changes ->" [ref=e328]
+              - row
+                - cell "Oct 31, 2026, 2:36 AM" [ref=e228]
+                - cell "System EMAIL Private" [ref=e229]
+                  - StaticText "System"
+                  - StaticText "EMAIL"
+                  - StaticText "Private"
+                - cell "Subscription #109475 Member #3252 Product #109466" [ref=e230]
+                  - link "Subscription #109475" [ref=e329]
+                  - link "Member #3252" [ref=e330]
+                  - link "Product #109466" [ref=e331]
+                - cell "Email sent: [ArraySubs] Subscription Scheduled to Cancel" [ref=e231]
+                  - StaticText "Email sent: [ArraySubs] Subscription Scheduled to Cancel"
+              - row
+                - cell "Oct 31, 2026, 2:34 AM" [ref=e232]
+                - cell "admin SUBSCRIPTION Private" [ref=e233]
+                  - StaticText "admin"
+                  - StaticText "SUBSCRIPTION"
+                  - StaticText "Private"
+                - cell "Subscription #109453 Member #3252 Product #109433" [ref=e234]
+                  - link "Subscription #109453" [ref=e332]
+                  - link "Member #3252" [ref=e333]
+                  - link "Product #109433" [ref=e334]
+                - cell "RQA0208 release QA private note" [ref=e235]
+                  - paragraph
+                    - StaticText "RQA0208 release QA private note"
+              - row
+                - cell "Oct 31, 2026, 2:33 AM" [ref=e236]
+                - cell "admin SETTINGS Private" [ref=e237]
+                  - StaticText "admin"
+                  - StaticText "SETTINGS"
+                  - StaticText "Private"
+                - cell "—" [ref=e238]
+                - cell "Settings updated: cancellation.cancel_immediately. changes ->" [ref=e239]
+                  - StaticText "Settings updated: cancellation.cancel_immediately."
+                  - link "changes ->" [ref=e335]
+              - row
+                - cell "Oct 31, 2026, 2:32 AM" [ref=e240]
+                - cell "admin SETTINGS Private" [ref=e241]
+                  - StaticText "admin"
+                  - StaticText "SETTINGS"
+                  - StaticText "Private"
+                - cell "—" [ref=e242]
+                - cell "Settings updated: pause_subscription.enabled, pause_subscription.customer_can_pause, pause_subscription.customer_can_resume, pause_subscription.require_reason. changes ->" [ref=e243]
+                  - StaticText "Settings updated: pause_subscription.enabled, pause_subscription.customer_can_pause, pause_subscription.customer_can_resume, pause_subscription.require_reason."
+                  - link "changes ->" [ref=e336]
+              - row
+                - cell "Oct 31, 2026, 2:31 AM" [ref=e244]
+                - cell "System SUBSCRIPTION Private" [ref=e245]
+                  - StaticText "System"
+                  - StaticText "SUBSCRIPTION"
+                  - StaticText "Private"
+                - cell "Subscription #109453 Member #3252 Product #109433" [ref=e246]
+                  - link "Subscription #109453" [ref=e337]
+                  - link "Member #3252" [ref=e338]
+                  - link "Product #109433" [ref=e339]
+                - cell "Subscription resumed by RQA0208 CustomerA after 0 days pause." [ref=e247]
+                  - StaticText "Subscription resumed by RQA0208 CustomerA after 0 days pause."
+              - row
+                - cell "Oct 31, 2026, 2:31 AM" [ref=e248]
+                - cell "System EMAIL Private" [ref=e249]
+                  - StaticText "System"
+                  - StaticText "EMAIL"
+                  - StaticText "Private"
+                - cell "Subscription #109453 Member #3252 Product #109433" [ref=e250]
+                  - link "Subscription #109453" [ref=e340]
+                  - link "Member #3252" [ref=e341]
+                  - link "Product #109433" [ref=e342]
+                - cell "Email sent: [ArraySubs] Subscription Resumed" [ref=e251]
+                  - StaticText "Email sent: [ArraySubs] Subscription Resumed"
+              - row
+                - cell "Oct 31, 2026, 2:31 AM" [ref=e252]
+                - cell "System SUBSCRIPTION Customer" [ref=e253]
+                  - StaticText "System"
+                  - StaticText "SUBSCRIPTION"
+                  - StaticText "Customer"
+                - cell "Subscription #109453 Member #3252 Product #109433" [ref=e254]
+                  - link "Subscription #109453" [ref=e343]
+                  - link "Member #3252" [ref=e344]
+                  - link "Product #109433" [ref=e345]
+                - cell "Status changed from Paused to Active. Changed by Customer (RQA0208 CustomerA). changes ->" [ref=e255]
+                  - generic
+                    - StaticText "Status changed from "
+                    - strong
+                      - StaticText "Paused"
+                    - StaticText " to "
+                    - strong
+                      - StaticText "Active"
+                    - StaticText ". Changed by Customer (RQA0208 CustomerA)."
+                  - link "changes ->" [ref=e346]
+              - row
+                - cell "Oct 31, 2026, 2:30 AM" [ref=e256]
+                - cell "admin PRODUCT Private" [ref=e257]
+                  - StaticText "admin"
+                  - StaticText "PRODUCT"
+                  - StaticText "Private"
+                - cell "Product #109544" [ref=e258]
+                  - link "Product #109544" [ref=e347]
+                - cell "Product #109544 updated: RQA0208 Variable Draft - Silver — changed regular price. changes ->" [ref=e259]
+                  - StaticText "Product #109544 updated: RQA0208 Variable Draft - Silver — changed regular price."
+                  - link "changes ->" [ref=e348]
+              - row
+                - cell "Oct 31, 2026, 2:30 AM" [ref=e260]
+                - cell "admin PRODUCT Private" [ref=e261]
+                  - StaticText "admin"
+                  - StaticText "PRODUCT"
+                  - StaticText "Private"
+                - cell "Product #109544" [ref=e262]
+                  - link "Product #109544" [ref=e349]
+                - cell "Product variation #109544 settings updated for RQA0208 Variable Draft - Silver: Billing period, Billing interval, Subscription length, Trial length, Trial period, Signup fee, Different renewal price, Different renewal price after, Shipping type, Initial shipping override, Renewal shipping override. changes ->" [ref=e263]
+                  - StaticText "Product variation #109544 settings updated for RQA0208 Variable Draft - Silver: Billing period, Billing interval, Subscription length, Trial length, Trial period, Signup fee, Different renewal price, Different renewal price after, Shipping type, Initial shipping override, Renewal shipping override."
+                  - link "changes ->" [ref=e350]
+              - row
+                - cell "Oct 31, 2026, 2:30 AM" [ref=e264]
+                - cell "admin PRODUCT Private" [ref=e265]
+                  - StaticText "admin"
+                  - StaticText "PRODUCT"
+                  - StaticText "Private"
+                - cell "Product #109546" [ref=e266]
+                  - link "Product #109546" [ref=e351]
+                - cell "Product variation #109546 settings updated for RQA0208 Variable Draft - Gold: Billing period, Billing interval, Subscription length, Trial length, Trial period, Signup fee, Different renewal price, Different renewal price after, Shipping type, Initial shipping override, Renewal shipping override. changes ->" [ref=e267]
+                  - StaticText "Product variation #109546 settings updated for RQA0208 Variable Draft - Gold: Billing period, Billing interval, Subscription length, Trial length, Trial period, Signup fee, Different renewal price, Different renewal price after, Shipping type, Initial shipping override, Renewal shipping override."
+                  - link "changes ->" [ref=e352]
+              - row
+                - cell "Oct 31, 2026, 2:30 AM" [ref=e268]
+                - cell "System EMAIL Private" [ref=e269]
+                  - StaticText "System"
+                  - StaticText "EMAIL"
+                  - StaticText "Private"
+                - cell "Subscription #109453 Member #3252 Product #109433" [ref=e270]
+                  - link "Subscription #109453" [ref=e353]
+                  - link "Member #3252" [ref=e354]
+                  - link "Product #109433" [ref=e355]
+                - cell "Email sent: [ArraySubs] Subscription Paused" [ref=e271]
+                  - StaticText "Email sent: [ArraySubs] Subscription Paused"
+            - button "Previous" [disabled, ref=e133]
+            - StaticText "Page"
+            - StaticText " "
+            - StaticText "1"
+            - StaticText " "
+            - StaticText "of"
+            - StaticText " "
+            - StaticText "489"
+            - StaticText "("
+            - StaticText "14653"
+            - StaticText " "
+            - StaticText "total"
+            - StaticText ")"
+            - button "Next" [ref=e134]
+    - contentinfo
+      - paragraph
+        - generic
+          - StaticText "Thank you for creating with "
+          - link "WordPress" [ref=e25]
+          - StaticText "."
+      - paragraph
+        - strong
+          - link "Get Version 7.1.4" [ref=e5]

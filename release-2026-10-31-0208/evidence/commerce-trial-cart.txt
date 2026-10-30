@@ -1,0 +1,130 @@
+- generic
+  - link "Skip to content" [ref=e1]
+  - banner
+    - paragraph
+      - link "mirror-help.arrayhash.com" [ref=e8]
+    - navigation
+      - list
+        - listitem [level=1]
+          - link "#test" [ref=e32]
+          - button "#test submenu" [expanded=false, ref=e33]
+        - listitem [level=1]
+          - link "Premium" [ref=e34]
+          - button "Premium submenu" [expanded=false, ref=e35]
+        - listitem [level=1]
+          - link "Cart" [ref=e36]
+        - listitem [level=1]
+          - link "Checkout" [ref=e37]
+        - listitem [level=1]
+          - link "Classic Checkout QA" [ref=e38]
+        - listitem [level=1]
+          - link "My account" [ref=e39]
+        - listitem [level=1]
+          - link "Shop" [ref=e40]
+    - link "My Account" [ref=e4]
+      - image
+  - main
+    - heading "Cart" [level=1, ref=e2]
+    - generic [ref=e3] clickable [onclick]
+      - generic
+        - table "Products in cart"
+          - caption
+            - heading "Products in cart" [level=2, ref=e14]
+          - rowgroup
+            - row
+              - columnheader "DETAILS" [ref=e25]
+                - StaticText "DETAILS"
+              - columnheader "TOTAL" [ref=e26]
+          - row
+            - rowheader "RQA0208 Trial Shipping" [ref=e15]
+              - link "RQA0208 Trial Shipping" [ref=e27]
+              - StaticText "After trial:"
+              - StaticText "$"
+              - StaticText "7.31"
+              - StaticText " every 1 month"
+              - StaticText "Signup fee:"
+              - StaticText "$"
+              - StaticText "2.00"
+              - StaticText " (one-time)"
+              - StaticText "Free trial:"
+              - StaticText "7 days"
+              - StaticText "Today's charge:"
+              - StaticText "$"
+              - StaticText "2.00"
+              - StaticText " signup fee + "
+              - StaticText "$"
+              - StaticText "3.00"
+              - StaticText " shipping and other charges = "
+              - StaticText "$"
+              - StaticText "5.00"
+              - StaticText "First charge:"
+              - StaticText "7 November, 2026 ("
+              - StaticText "$"
+              - StaticText "7.31"
+              - StaticText ")"
+              - StaticText "Duration:"
+              - StaticText "Continues until cancelled"
+              - StaticText "Shipping:"
+              - StaticText "🔄 Shipping charged on every renewal"
+              - generic
+                - spinbutton "Quantity of RQA0208 Trial Shipping in your cart." [ref=e29]: 1
+                  - StaticText "1"
+                - button "Reduce quantity of RQA0208 Trial Shipping" [disabled, ref=e30]
+                  - StaticText "−"
+                - button "Increase quantity of RQA0208 Trial Shipping" [ref=e31]
+                  - StaticText "+"
+              - button "Remove RQA0208 Trial Shipping from cart" [ref=e28]
+            - cell "$0.00 today (free for 7 days)" [ref=e16]
+              - StaticText "$0.00"
+              - StaticText " today (free for 7 days)"
+        - heading "CART TOTALS" [level=2, ref=e9]
+        - heading "Add coupons" [level=2, ref=e10]
+          - button "Add coupons" [expanded=false, ref=e13]
+        - StaticText "Subtotal"
+        - StaticText "$0.00"
+        - StaticText "ArraySubs initial shipping: RQA0208 Trial Shipping"
+        - StaticText "$3.00"
+        - StaticText "Subscription Signup Fee"
+        - StaticText "$2.00"
+        - StaticText "Free shipping"
+        - strong
+          - StaticText "FREE"
+        - StaticText "Estimated total"
+        - StaticText "$5.00"
+        - list
+          - listitem [level=1]
+            - ListMarker "• "
+            - IframePresentational "Secure express checkout frame"
+          - listitem [level=1]
+            - ListMarker "• "
+            - IframePresentational "Secure express checkout frame"
+        - StaticText "OR"
+  - contentinfo
+    - heading "mirror-help.arrayhash.com" [level=2, ref=e5]
+      - link "mirror-help.arrayhash.com" [ref=e11]
+    - navigation " 2" [ref=e6]
+      - list
+        - listitem [level=1]
+          - link "Blog" [ref=e17]
+        - listitem [level=1]
+          - link "About" [ref=e18]
+        - listitem [level=1]
+          - link "FAQs" [ref=e19]
+        - listitem [level=1]
+          - link "Authors" [ref=e20]
+    - navigation " 3" [ref=e7]
+      - list
+        - listitem [level=1]
+          - link "Events" [ref=e21]
+        - listitem [level=1]
+          - link "Shop" [ref=e22]
+        - listitem [level=1]
+          - link "Patterns" [ref=e23]
+        - listitem [level=1]
+          - link "Themes" [ref=e24]
+    - paragraph
+      - StaticText "Twenty Twenty-Five"
+    - paragraph
+      - StaticText "Desgned with "
+      - link "WordPress" [ref=e12]
+  - status

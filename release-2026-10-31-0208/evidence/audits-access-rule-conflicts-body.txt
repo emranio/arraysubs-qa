@@ -1,0 +1,45 @@
+Activity Audits
+Gateway Logs
+Renewal Failures
+Portal Action Failures
+Access-Rule Conflicts
+Scheduled-Job Logs
+
+Review Members Access URL and content rules that overlap higher-priority per-post restrictions.
+
+Refresh
+Highest priority first:
+Per-post restriction
+Highest saved rule number within each rule type
+Manual Screenshot Conflict Fixture
+/manual-screenshot-conflict/
+View
+Per-post restriction wins
+Members Access URL Rule
+Rule
+Manual Screenshot Conflict URL Rule
+Type
+URL pattern rule
+Applies to
+URL prefix: /manual-screenshot-conflict
+Effect
+Deny when conditions fail
+Conditions
+User role is subscriber
+Per-post Restriction
+Winner
+Rule
+Per-post restriction
+Type
+Per-post restriction
+Applies to
+This single piece of content
+Effect
+Replace content with a message when conditions fail
+Conditions
+User role is customer
+
+Per-post restrictions have higher priority than URL pattern rules.
+
+Replace content with a message when conditions fail
+Disable URL Rule

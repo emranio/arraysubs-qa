@@ -1,0 +1,746 @@
+- generic
+  - generic
+    - navigation "Main menu" [ref=e1]
+      - link "Skip to main content" [ref=e2]
+      - link "Skip to toolbar" [ref=e3]
+      - list
+        - listitem [level=1]
+          - link "Dashboard" [ref=e7]
+            - StaticText "Dashboard"
+          - list
+            - listitem [level=2]
+              - link "Home" [ref=e46]
+            - listitem [level=2]
+              - link "Updates 12" [ref=e47]
+                - StaticText "Updates 12"
+        - listitem [level=1]
+          - link "Posts" [ref=e8]
+            - StaticText "Posts"
+          - list
+            - listitem [level=2]
+              - link "All Posts" [ref=e48]
+            - listitem [level=2]
+              - link "Add Post" [ref=e49]
+            - listitem [level=2]
+              - link "Categories" [ref=e50]
+            - listitem [level=2]
+              - link "Tags" [ref=e51]
+        - listitem [level=1]
+          - link "Media" [ref=e9]
+            - StaticText "Media"
+          - list
+            - listitem [level=2]
+              - link "Library" [ref=e52]
+            - listitem [level=2]
+              - link "Add Media File" [ref=e53]
+        - listitem [level=1]
+          - link "Pages" [ref=e10]
+            - StaticText "Pages"
+          - list
+            - listitem [level=2]
+              - link "All Pages" [ref=e54]
+            - listitem [level=2]
+              - link "Add Page" [ref=e55]
+        - listitem [level=1]
+          - link "Comments" [ref=e11]
+            - StaticText "Comments"
+        - listitem [level=1]
+          - link "KB Articles" [ref=e12]
+            - StaticText "KB Articles"
+          - list
+            - listitem [level=2]
+              - link "KB Articles" [ref=e56]
+            - listitem [level=2]
+              - link "Add Post" [ref=e57]
+        - listitem [level=1]
+          - link "ArraySubs" [ref=e13]
+            - StaticText "ArraySubs"
+          - list
+            - listitem [level=2]
+              - link "Home" [ref=e58]
+            - listitem [level=2]
+              - link "Subscription Plans" [ref=e59]
+            - listitem [level=2]
+              - link "Subscriptions" [ref=e60]
+            - listitem [level=2]
+              - link "Manage Members" [ref=e61]
+            - listitem [level=2]
+              - link "Store Credit" [ref=e62]
+            - listitem [level=2]
+              - link "Cancellation Flow" [ref=e63]
+            - listitem [level=2]
+              - link "Member Access" [ref=e64]
+            - listitem [level=2]
+              - link "Checkout Builder" [ref=e65]
+            - listitem [level=2]
+              - link "Profile & My Account" [ref=e66]
+            - listitem [level=2]
+              - link "Shortcodes" [ref=e67]
+            - listitem [level=2]
+              - link "Integrations" [ref=e68]
+            - listitem [level=2]
+              - link "Modules" [ref=e69]
+            - listitem [level=2]
+              - link "Settings" [ref=e70]
+            - listitem [level=2]
+              - link "Audits" [ref=e71]
+            - listitem [level=2]
+              - link "License" [ref=e72]
+            - listitem [level=2]
+              - link "1-Minute Setup" [ref=e73]
+            - listitem [level=2]
+              - link "Help" [ref=e74]
+        - listitem [level=1]
+          - link "WooCommerce" [ref=e14]
+            - StaticText "WooCommerce"
+          - list
+            - listitem [level=2]
+              - link "Home" [ref=e75]
+            - listitem [level=2]
+              - link "Orders 70" [ref=e76]
+                - StaticText "Orders 70"
+            - listitem [level=2]
+              - link "Customers" [ref=e77]
+            - listitem [level=2]
+              - link "Coupons" [ref=e78]
+            - listitem [level=2]
+              - link "Reports" [ref=e79]
+            - listitem [level=2]
+              - link "Settings" [ref=e80]
+            - listitem [level=2]
+              - link "Status" [ref=e81]
+            - listitem [level=2]
+              - link "Extensions" [ref=e82]
+        - listitem [level=1]
+          - link "Products" [ref=e15]
+            - StaticText "Products"
+          - list
+            - listitem [level=2]
+              - link "All Products" [ref=e83]
+            - listitem [level=2]
+              - link "Add new product" [ref=e84]
+            - listitem [level=2]
+              - link "Brands" [ref=e85]
+            - listitem [level=2]
+              - link "Categories" [ref=e86]
+            - listitem [level=2]
+              - link "Tags" [ref=e87]
+            - listitem [level=2]
+              - link "Attributes" [ref=e88]
+            - listitem [level=2]
+              - link "Reviews" [ref=e89]
+        - listitem [level=1]
+          - link "Payments 1" [ref=e16]
+            - generic
+              - StaticText "Payments 1"
+        - listitem [level=1]
+          - link "Analytics" [ref=e17]
+            - StaticText "Analytics"
+          - list
+            - listitem [level=2]
+              - link "Overview" [ref=e90]
+            - listitem [level=2]
+              - link "Products" [ref=e91]
+            - listitem [level=2]
+              - link "Revenue" [ref=e92]
+            - listitem [level=2]
+              - link "Revenue Forecast" [ref=e93]
+            - listitem [level=2]
+              - link "Churn Analysis" [ref=e94]
+            - listitem [level=2]
+              - link "Retention" [ref=e95]
+            - listitem [level=2]
+              - link "Orders" [ref=e96]
+            - listitem [level=2]
+              - link "Refunds" [ref=e97]
+            - listitem [level=2]
+              - link "Variations" [ref=e98]
+            - listitem [level=2]
+              - link "Categories" [ref=e99]
+            - listitem [level=2]
+              - link "Coupons" [ref=e100]
+            - listitem [level=2]
+              - link "Taxes" [ref=e101]
+            - listitem [level=2]
+              - link "Downloads" [ref=e102]
+            - listitem [level=2]
+              - link "Stock" [ref=e103]
+            - listitem [level=2]
+              - link "Settings" [ref=e104]
+        - listitem [level=1]
+          - link "Marketing" [ref=e18]
+            - StaticText "Marketing"
+          - list
+            - listitem [level=2]
+              - link "Overview" [ref=e105]
+            - listitem [level=2]
+              - link "Coupons" [ref=e106]
+        - listitem [level=1]
+          - link "Appearance" [ref=e19]
+            - StaticText "Appearance"
+          - list
+            - listitem [level=2]
+              - link "Themes 2" [ref=e107]
+                - StaticText "Themes 2"
+            - listitem [level=2]
+              - link "Editor" [ref=e108]
+            - listitem [level=2]
+              - link "Fonts" [ref=e109]
+        - listitem [level=1]
+          - link "Plugins 9" [ref=e20]
+            - generic
+              - StaticText "Plugins 9"
+          - list
+            - listitem [level=2]
+              - link "Installed Plugins" [ref=e110]
+            - listitem [level=2]
+              - link "Add Plugin" [ref=e111]
+        - listitem [level=1]
+          - link "Users" [ref=e21]
+            - StaticText "Users"
+          - list
+            - listitem [level=2]
+              - link "All Users" [ref=e112]
+            - listitem [level=2]
+              - link "Add User" [ref=e113]
+            - listitem [level=2]
+              - link "Profile" [ref=e114]
+        - listitem [level=1]
+          - link "Tools" [ref=e22]
+            - StaticText "Tools"
+          - list
+            - listitem [level=2]
+              - link "Available Tools" [ref=e115]
+            - listitem [level=2]
+              - link "Import" [ref=e116]
+            - listitem [level=2]
+              - link "Export" [ref=e117]
+            - listitem [level=2]
+              - link "Site Health 1" [ref=e118]
+                - StaticText "Site Health 1"
+            - listitem [level=2]
+              - link "Export Personal Data" [ref=e119]
+            - listitem [level=2]
+              - link "Erase Personal Data" [ref=e120]
+            - listitem [level=2]
+              - link "Scheduled Actions" [ref=e121]
+            - listitem [level=2]
+              - link "Theme File Editor" [ref=e122]
+            - listitem [level=2]
+              - link "Plugin File Editor" [ref=e123]
+        - listitem [level=1]
+          - link "Settings" [ref=e23]
+            - StaticText "Settings"
+          - list
+            - listitem [level=2]
+              - link "General" [ref=e124]
+            - listitem [level=2]
+              - link "Connectors" [ref=e125]
+            - listitem [level=2]
+              - link "Writing" [ref=e126]
+            - listitem [level=2]
+              - link "Reading" [ref=e127]
+            - listitem [level=2]
+              - link "Discussion" [ref=e128]
+            - listitem [level=2]
+              - link "Media" [ref=e129]
+            - listitem [level=2]
+              - link "Permalinks" [ref=e130]
+            - listitem [level=2]
+              - link "Privacy" [ref=e131]
+        - listitem [level=1]
+          - link "WP Mail SMTP" [ref=e24]
+            - StaticText "WP Mail SMTP"
+          - list
+            - listitem [level=2]
+              - link "Settings" [ref=e132]
+            - listitem [level=2]
+              - link "Email Log" [ref=e133]
+            - listitem [level=2]
+              - link "Email Reports" [ref=e134]
+            - listitem [level=2]
+              - link "Tools" [ref=e135]
+            - listitem [level=2]
+              - link "Privacy Compliance" [ref=e136]
+            - listitem [level=2]
+              - link "About Us" [ref=e137]
+            - listitem [level=2]
+              - link "Upgrade to Pro" [ref=e138]
+        - listitem [level=1]
+          - button "Collapse Main menu" [expanded=true, ref=e25]
+            - StaticText "Collapse Menu"
+    - generic
+      - navigation "Toolbar" [ref=e4]
+        - menu
+          - group
+            - menuitem "About WordPress" [expanded=false, ref=e29]
+              - StaticText "About WordPress"
+          - group
+            - menuitem "mirror-help.arrayhash.com" [expanded=false, ref=e30]
+          - group
+            - menuitem "Live" [ref=e31]
+          - group
+            - menuitem "12 updates available" [ref=e32]
+              - StaticText "12 updates available"
+          - group
+            - menuitem "⌘K Open command palette" [ref=e33]
+              - generic
+                - StaticText "⌘K"
+                - StaticText "Open command palette"
+          - group
+            - menuitem "0 Comments in moderation" [ref=e34]
+              - StaticText "0 Comments in moderation"
+          - group
+            - menuitem "New" [expanded=false, ref=e35]
+              - StaticText "New"
+        - menu
+          - group
+            - menuitem "Howdy, admin" [expanded=false, ref=e36]
+              - StaticText "Howdy, admin"
+      - main
+        - generic
+          - generic
+            - button "Screen Options" [expanded=false, ref=e37]
+            - button "Help" [expanded=false, ref=e38]
+          - generic
+            - link "WordPress 7.1.4" [ref=e26]
+            - StaticText " is available! "
+            - link "Please update WordPress now" [ref=e27]
+              - StaticText "Please update now"
+            - StaticText "."
+          - heading "Scheduled Actions" [level=1, ref=e5]
+          - StaticText "Search results for \"109453\""
+          - list
+            - listitem [level=1]
+              - link "All" [ref=e39]
+              - StaticText " (49,188)"
+            - StaticText " | "
+            - listitem [level=1]
+              - link "Canceled" [ref=e40]
+              - StaticText " (134)"
+            - StaticText " | "
+            - listitem [level=1]
+              - link "Complete" [ref=e41]
+              - StaticText " (27,328)"
+            - StaticText " | "
+            - listitem [level=1]
+              - link "Failed" [ref=e42]
+              - StaticText " (21,606)"
+            - StaticText " | "
+            - listitem [level=1]
+              - link "Pending" [ref=e43]
+              - StaticText " (120)"
+          - generic
+            - paragraph
+              - LabelText
+                - StaticText "Search hook, args and claim ID:"
+              - searchbox "Search hook, args and claim ID:" [ref=e44]: 109453
+                - StaticText "109453"
+              - button "Search hook, args and claim ID" [ref=e45]
+            - generic
+              - generic
+                - LabelText
+                  - StaticText "Select bulk action"
+                - combobox "Select bulk action" [expanded=false, ref=e139]: Bulk actions
+                  - MenuListPopup
+                    - option "Bulk actions" [selected, ref=e234]
+                    - option "Delete" [ref=e235]
+                - button "Apply" [ref=e140]
+              - generic
+                - StaticText "21 items"
+                - LabelText
+                  - StaticText "Current Page"
+                - textbox "Current Page" [ref=e141]: 1
+                  - StaticText "1"
+                - StaticText " of 3"
+                - link "Next page" [ref=e142]
+                  - StaticText "Next page"
+                - link "Last page" [ref=e143]
+                  - StaticText "Last page"
+              - LineBreak "\n"
+            - table
+              - rowgroup
+                - row
+                  - cell "Select All" [ref=e148]
+                    - checkbox "Select All" [checked=false, ref=e236]
+                    - LabelText
+                      - StaticText "Select All"
+                  - columnheader "Hook Sort descending." [ref=e149]
+                    - link "Hook Sort descending." [ref=e237]
+                      - StaticText "Hook"
+                      - StaticText "Sort descending."
+                  - columnheader "Status Sort descending." [ref=e150]
+                    - link "Status Sort descending." [ref=e238]
+                      - StaticText "Status"
+                      - StaticText "Sort descending."
+                  - columnheader "Arguments" [ref=e151]
+                  - columnheader "Group Sort descending." [ref=e152]
+                    - link "Group Sort descending." [ref=e239]
+                      - StaticText "Group"
+                      - StaticText "Sort descending."
+                  - columnheader "Recurrence" [ref=e153]
+                  - columnheader "Scheduled Date Sort descending." [ref=e154]
+                    - link "Scheduled Date Sort descending." [ref=e240]
+                      - StaticText "Scheduled Date"
+                      - StaticText "Sort descending."
+                  - columnheader "Log" [ref=e155]
+              - rowgroup
+                - row
+                  - cell
+                    - checkbox [checked=false, ref=e241]
+                  - rowheader "arraysubs_resume_subscription" [ref=e156]
+                  - cell "Canceled" [ref=e157]
+                  - cell "0 => 109453" [ref=e158]
+                    - list
+                      - listitem [level=1]
+                        - code
+                          - StaticText "0 => 109453"
+                  - cell "arraysubs-status" [ref=e159]
+                  - cell "Non-repeating" [ref=e160]
+                  - cell "2026-10-31 20:30:41 +0000 (23 hours 45 minutes)" [ref=e161]
+                    - StaticText "2026-10-31 20:30:41 +0000"
+                    - LineBreak "\n"
+                    - StaticText "(23 hours 45 minutes)"
+                  - cell "2026-10-30 20:30:41 +0000 action created 2026-10-30 20:31:31 +0000 action canceled" [ref=e162]
+                    - list
+                      - listitem [level=1]
+                        - ListMarker "1. "
+                        - strong
+                          - StaticText "2026-10-30 20:30:41 +0000"
+                        - LineBreak "\n"
+                        - StaticText "action created"
+                      - listitem [level=1]
+                        - ListMarker "2. "
+                        - strong
+                          - StaticText "2026-10-30 20:31:31 +0000"
+                        - LineBreak "\n"
+                        - StaticText "action canceled"
+                - row
+                  - cell
+                    - checkbox [checked=false, ref=e242]
+                  - rowheader "arraysubs_send_renewal_reminder" [ref=e163]
+                  - cell "Canceled" [ref=e164]
+                  - cell "0 => 109453 1 => 3" [ref=e165]
+                    - list
+                      - listitem [level=1]
+                        - code
+                          - StaticText "0 => 109453"
+                      - listitem [level=1]
+                        - code
+                          - StaticText "1 => 3"
+                  - cell "arraysubs-emails" [ref=e166]
+                  - cell "Non-repeating" [ref=e167]
+                  - cell "2026-11-27 21:55:43 +0000 (4 weeks 1 hour)" [ref=e168]
+                    - StaticText "2026-11-27 21:55:43 +0000"
+                    - LineBreak "\n"
+                    - StaticText "(4 weeks 1 hour)"
+                  - cell "2026-10-30 20:14:38 +0000 action created 2026-10-30 20:18:48 +0000 action canceled" [ref=e169]
+                    - list
+                      - listitem [level=1]
+                        - ListMarker "1. "
+                        - strong
+                          - StaticText "2026-10-30 20:14:38 +0000"
+                        - LineBreak "\n"
+                        - StaticText "action created"
+                      - listitem [level=1]
+                        - ListMarker "2. "
+                        - strong
+                          - StaticText "2026-10-30 20:18:48 +0000"
+                        - LineBreak "\n"
+                        - StaticText "action canceled"
+                - row
+                  - cell
+                    - checkbox [checked=false, ref=e243]
+                  - rowheader "arraysubs_generate_renewal_invoice" [ref=e170]
+                  - cell "Canceled" [ref=e171]
+                  - cell "0 => 109453" [ref=e172]
+                    - list
+                      - listitem [level=1]
+                        - code
+                          - StaticText "0 => 109453"
+                  - cell "arraysubs-billing" [ref=e173]
+                  - cell "Non-repeating" [ref=e174]
+                  - cell "2026-11-30 15:55:43 +0000 (1 month 19 hours)" [ref=e175]
+                    - StaticText "2026-11-30 15:55:43 +0000"
+                    - LineBreak "\n"
+                    - StaticText "(1 month 19 hours)"
+                  - cell "2026-10-30 20:14:37 +0000 action created 2026-10-30 20:14:38 +0000 action canceled" [ref=e176]
+                    - list
+                      - listitem [level=1]
+                        - ListMarker "1. "
+                        - strong
+                          - StaticText "2026-10-30 20:14:37 +0000"
+                        - LineBreak "\n"
+                        - StaticText "action created"
+                      - listitem [level=1]
+                        - ListMarker "2. "
+                        - strong
+                          - StaticText "2026-10-30 20:14:38 +0000"
+                        - LineBreak "\n"
+                        - StaticText "action canceled"
+                - row
+                  - cell
+                    - checkbox [checked=false, ref=e244]
+                  - rowheader "arraysubs_generate_renewal_invoice" [ref=e177]
+                  - cell "Canceled" [ref=e178]
+                  - cell "0 => 109453" [ref=e179]
+                    - list
+                      - listitem [level=1]
+                        - code
+                          - StaticText "0 => 109453"
+                  - cell "arraysubs-billing" [ref=e180]
+                  - cell "Non-repeating" [ref=e181]
+                  - cell "2026-11-30 15:55:43 +0000 (1 month 19 hours)" [ref=e182]
+                    - StaticText "2026-11-30 15:55:43 +0000"
+                    - LineBreak "\n"
+                    - StaticText "(1 month 19 hours)"
+                  - cell "2026-10-30 20:14:38 +0000 action created 2026-10-30 20:18:47 +0000 action canceled" [ref=e183]
+                    - list
+                      - listitem [level=1]
+                        - ListMarker "1. "
+                        - strong
+                          - StaticText "2026-10-30 20:14:38 +0000"
+                        - LineBreak "\n"
+                        - StaticText "action created"
+                      - listitem [level=1]
+                        - ListMarker "2. "
+                        - strong
+                          - StaticText "2026-10-30 20:18:47 +0000"
+                        - LineBreak "\n"
+                        - StaticText "action canceled"
+                - row
+                  - cell
+                    - checkbox [checked=false, ref=e245]
+                  - rowheader "arraysubs_process_renewal" [ref=e184]
+                  - cell "Canceled" [ref=e185]
+                  - cell "0 => 109453" [ref=e186]
+                    - list
+                      - listitem [level=1]
+                        - code
+                          - StaticText "0 => 109453"
+                  - cell "arraysubs-renewals" [ref=e187]
+                  - cell "Non-repeating" [ref=e188]
+                  - cell "2026-11-30 21:55:43 +0000 (1 month 1 day)" [ref=e189]
+                    - StaticText "2026-11-30 21:55:43 +0000"
+                    - LineBreak "\n"
+                    - StaticText "(1 month 1 day)"
+                  - cell "2026-10-30 20:14:37 +0000 action created 2026-10-30 20:14:38 +0000 action canceled" [ref=e190]
+                    - list
+                      - listitem [level=1]
+                        - ListMarker "1. "
+                        - strong
+                          - StaticText "2026-10-30 20:14:37 +0000"
+                        - LineBreak "\n"
+                        - StaticText "action created"
+                      - listitem [level=1]
+                        - ListMarker "2. "
+                        - strong
+                          - StaticText "2026-10-30 20:14:38 +0000"
+                        - LineBreak "\n"
+                        - StaticText "action canceled"
+                - row
+                  - cell
+                    - checkbox [checked=false, ref=e246]
+                  - rowheader "arraysubs_process_renewal" [ref=e191]
+                  - cell "Canceled" [ref=e192]
+                  - cell "0 => 109453" [ref=e193]
+                    - list
+                      - listitem [level=1]
+                        - code
+                          - StaticText "0 => 109453"
+                  - cell "arraysubs-renewals" [ref=e194]
+                  - cell "Non-repeating" [ref=e195]
+                  - cell "2026-11-30 21:55:43 +0000 (1 month 1 day)" [ref=e196]
+                    - StaticText "2026-11-30 21:55:43 +0000"
+                    - LineBreak "\n"
+                    - StaticText "(1 month 1 day)"
+                  - cell "2026-10-30 20:14:38 +0000 action created 2026-10-30 20:18:47 +0000 action canceled" [ref=e197]
+                    - list
+                      - listitem [level=1]
+                        - ListMarker "1. "
+                        - strong
+                          - StaticText "2026-10-30 20:14:38 +0000"
+                        - LineBreak "\n"
+                        - StaticText "action created"
+                      - listitem [level=1]
+                        - ListMarker "2. "
+                        - strong
+                          - StaticText "2026-10-30 20:18:47 +0000"
+                        - LineBreak "\n"
+                        - StaticText "action canceled"
+                - row
+                  - cell
+                    - checkbox [checked=false, ref=e247]
+                  - rowheader "arraysubs_send_renewal_reminder" [ref=e198]
+                  - cell "Canceled" [ref=e199]
+                  - cell "0 => 109453 1 => 3" [ref=e200]
+                    - list
+                      - listitem [level=1]
+                        - code
+                          - StaticText "0 => 109453"
+                      - listitem [level=1]
+                        - code
+                          - StaticText "1 => 3"
+                  - cell "arraysubs-emails" [ref=e201]
+                  - cell "Non-repeating" [ref=e202]
+                  - cell "2026-12-27 21:55:43 +0000 (1 month 4 weeks)" [ref=e203]
+                    - StaticText "2026-12-27 21:55:43 +0000"
+                    - LineBreak "\n"
+                    - StaticText "(1 month 4 weeks)"
+                  - cell "2026-10-30 20:18:48 +0000 action created 2026-10-30 20:20:46 +0000 action canceled" [ref=e204]
+                    - list
+                      - listitem [level=1]
+                        - ListMarker "1. "
+                        - strong
+                          - StaticText "2026-10-30 20:18:48 +0000"
+                        - LineBreak "\n"
+                        - StaticText "action created"
+                      - listitem [level=1]
+                        - ListMarker "2. "
+                        - strong
+                          - StaticText "2026-10-30 20:20:46 +0000"
+                        - LineBreak "\n"
+                        - StaticText "action canceled"
+                - row
+                  - cell
+                    - checkbox [checked=false, ref=e248]
+                  - rowheader "arraysubs_generate_renewal_invoice" [ref=e205]
+                  - cell "Canceled" [ref=e206]
+                  - cell "0 => 109453" [ref=e207]
+                    - list
+                      - listitem [level=1]
+                        - code
+                          - StaticText "0 => 109453"
+                  - cell "arraysubs-billing" [ref=e208]
+                  - cell "Non-repeating" [ref=e209]
+                  - cell "2026-12-30 15:55:43 +0000 (2 months 19 hours)" [ref=e210]
+                    - StaticText "2026-12-30 15:55:43 +0000"
+                    - LineBreak "\n"
+                    - StaticText "(2 months 19 hours)"
+                  - cell "2026-10-30 20:18:47 +0000 action created 2026-10-30 20:20:46 +0000 action canceled" [ref=e211]
+                    - list
+                      - listitem [level=1]
+                        - ListMarker "1. "
+                        - strong
+                          - StaticText "2026-10-30 20:18:47 +0000"
+                        - LineBreak "\n"
+                        - StaticText "action created"
+                      - listitem [level=1]
+                        - ListMarker "2. "
+                        - strong
+                          - StaticText "2026-10-30 20:20:46 +0000"
+                        - LineBreak "\n"
+                        - StaticText "action canceled"
+                - row
+                  - cell
+                    - checkbox [checked=false, ref=e249]
+                  - rowheader "arraysubs_generate_renewal_invoice" [ref=e212]
+                  - cell "Canceled" [ref=e213]
+                  - cell "0 => 109453" [ref=e214]
+                    - list
+                      - listitem [level=1]
+                        - code
+                          - StaticText "0 => 109453"
+                  - cell "arraysubs-billing" [ref=e215]
+                  - cell "Non-repeating" [ref=e216]
+                  - cell "2026-12-30 15:55:43 +0000 (2 months 19 hours)" [ref=e217]
+                    - StaticText "2026-12-30 15:55:43 +0000"
+                    - LineBreak "\n"
+                    - StaticText "(2 months 19 hours)"
+                  - cell "2026-10-30 20:21:12 +0000 action created 2026-10-30 20:30:41 +0000 action canceled" [ref=e218]
+                    - list
+                      - listitem [level=1]
+                        - ListMarker "1. "
+                        - strong
+                          - StaticText "2026-10-30 20:21:12 +0000"
+                        - LineBreak "\n"
+                        - StaticText "action created"
+                      - listitem [level=1]
+                        - ListMarker "2. "
+                        - strong
+                          - StaticText "2026-10-30 20:30:41 +0000"
+                        - LineBreak "\n"
+                        - StaticText "action canceled"
+                - row
+                  - cell
+                    - checkbox [checked=false, ref=e250]
+                  - rowheader "arraysubs_generate_renewal_invoice" [ref=e219]
+                  - cell "Canceled" [ref=e220]
+                  - cell "0 => 109453" [ref=e221]
+                    - list
+                      - listitem [level=1]
+                        - code
+                          - StaticText "0 => 109453"
+                  - cell "arraysubs-billing" [ref=e222]
+                  - cell "Non-repeating" [ref=e223]
+                  - cell "2026-12-30 15:56:32 +0000 (2 months 19 hours)" [ref=e224]
+                    - StaticText "2026-12-30 15:56:32 +0000"
+                    - LineBreak "\n"
+                    - StaticText "(2 months 19 hours)"
+                  - cell "2026-10-30 20:31:30 +0000 action created 2026-10-30 20:31:30 +0000 action canceled" [ref=e225]
+                    - list
+                      - listitem [level=1]
+                        - ListMarker "1. "
+                        - strong
+                          - StaticText "2026-10-30 20:31:30 +0000"
+                        - LineBreak "\n"
+                        - StaticText "action created"
+                      - listitem [level=1]
+                        - ListMarker "2. "
+                        - strong
+                          - StaticText "2026-10-30 20:31:30 +0000"
+                        - LineBreak "\n"
+                        - StaticText "action canceled"
+              - rowgroup
+                - row
+                  - cell "Select All" [ref=e226]
+                    - checkbox "Select All" [checked=false, ref=e251]
+                    - LabelText
+                      - StaticText "Select All"
+                  - columnheader "Hook Sort descending." [ref=e227]
+                    - link "Hook Sort descending." [ref=e252]
+                      - StaticText "Hook"
+                      - StaticText "Sort descending."
+                  - columnheader "Status Sort descending." [ref=e228]
+                    - link "Status Sort descending." [ref=e253]
+                      - StaticText "Status"
+                      - StaticText "Sort descending."
+                  - columnheader "Arguments" [ref=e229]
+                  - columnheader "Group Sort descending." [ref=e230]
+                    - link "Group Sort descending." [ref=e254]
+                      - StaticText "Group"
+                      - StaticText "Sort descending."
+                  - columnheader "Recurrence" [ref=e231]
+                  - columnheader "Scheduled Date Sort descending." [ref=e232]
+                    - link "Scheduled Date Sort descending." [ref=e255]
+                      - StaticText "Scheduled Date"
+                      - StaticText "Sort descending."
+                  - columnheader "Log" [ref=e233]
+            - generic
+              - generic
+                - LabelText
+                  - StaticText "Select bulk action"
+                - combobox "Select bulk action" [expanded=false, ref=e144]: Bulk actions
+                  - MenuListPopup
+                    - option "Bulk actions" [selected, ref=e256]
+                    - option "Delete" [ref=e257]
+                - button "Apply" [ref=e145]
+              - generic
+                - StaticText "21 items"
+                - StaticText "Current Page"
+                - generic
+                  - StaticText "1 of 3"
+                - link "Next page" [ref=e146]
+                  - StaticText "Next page"
+                - link "Last page" [ref=e147]
+                  - StaticText "Last page"
+              - LineBreak "\n"
+    - contentinfo
+      - paragraph
+        - generic
+          - StaticText "Thank you for creating with "
+          - link "WordPress" [ref=e28]
+          - StaticText "."
+      - paragraph
+        - strong
+          - link "Get Version 7.1.4" [ref=e6]

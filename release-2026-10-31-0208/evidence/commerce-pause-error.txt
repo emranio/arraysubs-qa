@@ -1,0 +1,10 @@
+- generic
+  - dialog
+    - generic
+      - heading "Pause Subscription" [level=3, ref=e1]
+      - paragraph
+        - StaticText "Pause your subscription? You can resume at any time."
+      - paragraph
+        - StaticText "A pause reason is required."
+      - button "Cancel" [ref=e2]
+      - button "Pause" [ref=e3]

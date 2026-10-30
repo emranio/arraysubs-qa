@@ -1,0 +1,545 @@
+[
+  {
+    "title": "[ArraySubs] Trial Converted",
+    "url": "https://mirror-help.arrayhash.com/wp-admin/admin.php?page=wc-settings&tab=email&section=arraysubs_trial_converted",
+    "section": "arraysubs_trial_converted",
+    "proof": "email-arraysubs_trial_converted",
+    "result": "PASS",
+    "preview": true,
+    "headings": [
+      "- heading \"Settings\" [level=1, ref=e25]",
+      "- heading \"Emails\" [level=1, ref=e34]",
+      "- heading \"Return to emails [ArraySubs] Trial Converted\" [level=2, ref=e35]",
+      "- heading \"\ud83d\udccb Available Placeholders\" [level=3, ref=e36]",
+      "- heading \"Email preview\" [level=2, ref=e55]",
+      "- heading \"[mirror-help.arrayhash.com] Your trial for Sample Subscription Product has converted to a paid subscription\" [level=3, ref=e166]",
+      "- heading \"Your trial has been converted to a paid subscription\" [level=1, ref=e192]",
+      "- heading \"Subscription Details\" [level=2, ref=e194]"
+    ],
+    "save": "NOT-TESTED"
+  },
+  {
+    "title": "[ArraySubs] Renewal Invoice",
+    "url": "https://mirror-help.arrayhash.com/wp-admin/admin.php?page=wc-settings&tab=email&section=arraysubs_renewal_invoice",
+    "section": "arraysubs_renewal_invoice",
+    "proof": "email-arraysubs_renewal_invoice",
+    "result": "PASS",
+    "preview": true,
+    "headings": [
+      "- heading \"Settings\" [level=1, ref=e25]",
+      "- heading \"Emails\" [level=1, ref=e34]",
+      "- heading \"Return to emails [ArraySubs] Renewal Invoice\" [level=2, ref=e35]",
+      "- heading \"\ud83d\udccb Available Placeholders\" [level=3, ref=e36]",
+      "- heading \"Email preview\" [level=2, ref=e57]",
+      "- heading \"[mirror-help.arrayhash.com] Invoice for subscription #12345\" [level=3, ref=e168]",
+      "- heading \"Your renewal order\" [level=1, ref=e194]",
+      "- heading \"Order #12345\" [level=2, ref=e196]"
+    ],
+    "save": "NOT-TESTED"
+  },
+  {
+    "title": "[ArraySubsPro] Store Credit Used",
+    "url": "https://mirror-help.arrayhash.com/wp-admin/admin.php?page=wc-settings&tab=email&section=arraysubspro_credit_used_email",
+    "section": "arraysubspro_credit_used_email",
+    "proof": "email-arraysubspro_credit_used_email",
+    "result": "PASS",
+    "preview": true,
+    "headings": [
+      "- heading \"Settings\" [level=1, ref=e25]",
+      "- heading \"Emails\" [level=1, ref=e34]",
+      "- heading \"Return to emails [ArraySubsPro] Store Credit Used\" [level=2, ref=e35]",
+      "- heading \"Email preview\" [level=2, ref=e36]",
+      "- heading \"\" [level=3, ref=e147]",
+      "- heading \"Store credit applied to your order\" [level=1, ref=e173]"
+    ],
+    "save": "NOT-TESTED"
+  },
+  {
+    "title": "[ArraySubs] Trial Started",
+    "url": "https://mirror-help.arrayhash.com/wp-admin/admin.php?page=wc-settings&tab=email&section=arraysubs_trial_started",
+    "section": "arraysubs_trial_started",
+    "proof": "email-arraysubs_trial_started",
+    "result": "PASS",
+    "preview": true,
+    "headings": [
+      "- heading \"Settings\" [level=1, ref=e25]",
+      "- heading \"Emails\" [level=1, ref=e34]",
+      "- heading \"Return to emails [ArraySubs] Trial Started\" [level=2, ref=e35]",
+      "- heading \"\ud83d\udccb Available Placeholders\" [level=3, ref=e36]",
+      "- heading \"Email preview\" [level=2, ref=e56]",
+      "- heading \"[mirror-help.arrayhash.com] Your free trial for Sample Subscription Product has started\" [level=3, ref=e167]",
+      "- heading \"Your free trial has started!\" [level=1, ref=e193]",
+      "- heading \"Trial Details\" [level=2, ref=e195]"
+    ],
+    "save": "NOT-TESTED"
+  },
+  {
+    "title": "[ArraySubs] New Subscription",
+    "url": "https://mirror-help.arrayhash.com/wp-admin/admin.php?page=wc-settings&tab=email&section=arraysubs_new_subscription",
+    "section": "arraysubs_new_subscription",
+    "proof": "email-arraysubs_new_subscription",
+    "result": "PASS",
+    "preview": true,
+    "headings": [
+      "- heading \"Settings\" [level=1, ref=e25]",
+      "- heading \"Emails\" [level=1, ref=e34]",
+      "- heading \"Return to emails [ArraySubs] New Subscription\" [level=2, ref=e35]",
+      "- heading \"\ud83d\udccb Available Placeholders\" [level=3, ref=e36]",
+      "- heading \"Email preview\" [level=2, ref=e54]",
+      "- heading \"[mirror-help.arrayhash.com] Your subscription #12345 is active\" [level=3, ref=e165]",
+      "- heading \"Your subscription is now active!\" [level=1, ref=e191]",
+      "- heading \"Subscription #12345\" [level=2, ref=e193]"
+    ],
+    "save": "NOT-TESTED"
+  },
+  {
+    "title": "[ArraySubs] Renewal Reminder",
+    "url": "https://mirror-help.arrayhash.com/wp-admin/admin.php?page=wc-settings&tab=email&section=arraysubs_renewal_reminder",
+    "section": "arraysubs_renewal_reminder",
+    "proof": "email-arraysubs_renewal_reminder",
+    "result": "PASS",
+    "preview": true,
+    "headings": [
+      "- heading \"Settings\" [level=1, ref=e25]",
+      "- heading \"Emails\" [level=1, ref=e34]",
+      "- heading \"Return to emails [ArraySubs] Renewal Reminder\" [level=2, ref=e35]",
+      "- heading \"\ud83d\udccb Available Placeholders\" [level=3, ref=e36]",
+      "- heading \"Email preview\" [level=2, ref=e57]",
+      "- heading \"[mirror-help.arrayhash.com] Your subscription #12345 renews soon\" [level=3, ref=e168]",
+      "- heading \"Your subscription renews soon\" [level=1, ref=e194]",
+      "- heading \"Subscription #12345\" [level=2, ref=e196]"
+    ],
+    "save": "NOT-TESTED"
+  },
+  {
+    "title": "[ArraySubs] Renewal Payment Successful",
+    "url": "https://mirror-help.arrayhash.com/wp-admin/admin.php?page=wc-settings&tab=email&section=arraysubs_payment_successful",
+    "section": "arraysubs_payment_successful",
+    "proof": "email-arraysubs_payment_successful",
+    "result": "PASS",
+    "preview": true,
+    "headings": [
+      "- heading \"Settings\" [level=1, ref=e25]",
+      "- heading \"Emails\" [level=1, ref=e34]",
+      "- heading \"Return to emails [ArraySubs] Renewal Payment Successful\" [level=2, ref=e35]",
+      "- heading \"\ud83d\udccb Available Placeholders\" [level=3, ref=e36]",
+      "- heading \"Email preview\" [level=2, ref=e56]",
+      "- heading \"\" [level=3, ref=e167]",
+      "- heading \"Payment received\" [level=1, ref=e193]",
+      "- heading \"Subscription #12345\" [level=2, ref=e195]"
+    ],
+    "save": "NOT-TESTED"
+  },
+  {
+    "title": "[ArraySubs] Renewal Payment Failed",
+    "url": "https://mirror-help.arrayhash.com/wp-admin/admin.php?page=wc-settings&tab=email&section=arraysubs_payment_failed",
+    "section": "arraysubs_payment_failed",
+    "proof": "email-arraysubs_payment_failed",
+    "result": "PASS",
+    "preview": true,
+    "headings": [
+      "- heading \"Settings\" [level=1, ref=e25]",
+      "- heading \"Emails\" [level=1, ref=e34]",
+      "- heading \"Return to emails [ArraySubs] Renewal Payment Failed\" [level=2, ref=e35]",
+      "- heading \"\ud83d\udccb Available Placeholders\" [level=3, ref=e36]",
+      "- heading \"Email preview\" [level=2, ref=e58]",
+      "- heading \"[mirror-help.arrayhash.com] Payment failed for subscription #12345\" [level=3, ref=e169]",
+      "- heading \"Payment failed\" [level=1, ref=e195]",
+      "- heading \"Subscription #12345\" [level=2, ref=e197]"
+    ],
+    "save": "NOT-TESTED"
+  },
+  {
+    "title": "[ArraySubs] Subscription On Hold",
+    "url": "https://mirror-help.arrayhash.com/wp-admin/admin.php?page=wc-settings&tab=email&section=arraysubs_subscription_on_hold",
+    "section": "arraysubs_subscription_on_hold",
+    "proof": "email-arraysubs_subscription_on_hold",
+    "result": "PASS",
+    "preview": true,
+    "headings": [
+      "- heading \"Settings\" [level=1, ref=e25]",
+      "- heading \"Emails\" [level=1, ref=e34]",
+      "- heading \"Return to emails [ArraySubs] Subscription On Hold\" [level=2, ref=e35]",
+      "- heading \"\ud83d\udccb Available Placeholders\" [level=3, ref=e36]",
+      "- heading \"Email preview\" [level=2, ref=e54]",
+      "- heading \"[mirror-help.arrayhash.com] Your subscription #12345 is on hold\" [level=3, ref=e165]",
+      "- heading \"Your subscription is on hold\" [level=1, ref=e191]",
+      "- heading \"Subscription #12345\" [level=2, ref=e193]"
+    ],
+    "save": "NOT-TESTED"
+  },
+  {
+    "title": "[ArraySubs] Subscription Scheduled to Cancel",
+    "url": "https://mirror-help.arrayhash.com/wp-admin/admin.php?page=wc-settings&tab=email&section=arraysubs_subscription_pending_cancellation",
+    "section": "arraysubs_subscription_pending_cancellation",
+    "proof": "email-arraysubs_subscription_pending_cancellation",
+    "result": "PASS",
+    "preview": true,
+    "headings": [
+      "- heading \"Settings\" [level=1, ref=e25]",
+      "- heading \"Emails\" [level=1, ref=e34]",
+      "- heading \"Return to emails [ArraySubs] Subscription Scheduled to Cancel\" [level=2, ref=e35]",
+      "- heading \"\ud83d\udccb Available Placeholders\" [level=3, ref=e36]",
+      "- heading \"Email preview\" [level=2, ref=e56]",
+      "- heading \"[mirror-help.arrayhash.com] Subscription #12345 scheduled to cancel on 31 October, 2026\" [level=3, ref=e167]",
+      "- heading \"Your subscription is scheduled to cancel\" [level=1, ref=e193]",
+      "- heading \"Subscription #12345\" [level=2, ref=e195]"
+    ],
+    "save": "NOT-TESTED"
+  },
+  {
+    "title": "[ArraySubs] Subscription Cancelled",
+    "url": "https://mirror-help.arrayhash.com/wp-admin/admin.php?page=wc-settings&tab=email&section=arraysubs_subscription_cancelled",
+    "section": "arraysubs_subscription_cancelled",
+    "proof": "email-arraysubs_subscription_cancelled",
+    "result": "PASS",
+    "preview": true,
+    "headings": [
+      "- heading \"Settings\" [level=1, ref=e25]",
+      "- heading \"Emails\" [level=1, ref=e34]",
+      "- heading \"Return to emails [ArraySubs] Subscription Cancelled\" [level=2, ref=e35]",
+      "- heading \"\ud83d\udccb Available Placeholders\" [level=3, ref=e36]",
+      "- heading \"Email preview\" [level=2, ref=e56]",
+      "- heading \"[mirror-help.arrayhash.com] Your subscription #12345 has been cancelled\" [level=3, ref=e167]",
+      "- heading \"Your subscription has been cancelled\" [level=1, ref=e193]",
+      "- heading \"Subscription #12345\" [level=2, ref=e195]"
+    ],
+    "save": "NOT-TESTED"
+  },
+  {
+    "title": "[ArraySubs] Subscription Expired",
+    "url": "https://mirror-help.arrayhash.com/wp-admin/admin.php?page=wc-settings&tab=email&section=arraysubs_subscription_expired",
+    "section": "arraysubs_subscription_expired",
+    "proof": "email-arraysubs_subscription_expired",
+    "result": "PASS",
+    "preview": true,
+    "headings": [
+      "- heading \"Settings\" [level=1, ref=e25]",
+      "- heading \"Emails\" [level=1, ref=e34]",
+      "- heading \"Return to emails [ArraySubs] Subscription Expired\" [level=2, ref=e35]",
+      "- heading \"\ud83d\udccb Available Placeholders\" [level=3, ref=e36]",
+      "- heading \"Email preview\" [level=2, ref=e55]",
+      "- heading \"[mirror-help.arrayhash.com] Your subscription #12345 has expired\" [level=3, ref=e166]",
+      "- heading \"Your subscription has expired\" [level=1, ref=e192]",
+      "- heading \"Subscription #12345\" [level=2, ref=e194]"
+    ],
+    "save": "NOT-TESTED"
+  },
+  {
+    "title": "[ArraySubs] Subscription Expiring Soon",
+    "url": "https://mirror-help.arrayhash.com/wp-admin/admin.php?page=wc-settings&tab=email&section=arraysubs_expiring_soon",
+    "section": "arraysubs_expiring_soon",
+    "proof": "email-arraysubs_expiring_soon",
+    "result": "PASS",
+    "preview": true,
+    "headings": [
+      "- heading \"Settings\" [level=1, ref=e25]",
+      "- heading \"Emails\" [level=1, ref=e34]",
+      "- heading \"Return to emails [ArraySubs] Subscription Expiring Soon\" [level=2, ref=e35]",
+      "- heading \"\ud83d\udccb Available Placeholders\" [level=3, ref=e36]",
+      "- heading \"Email preview\" [level=2, ref=e56]",
+      "- heading \"[mirror-help.arrayhash.com] Your subscription #12345 is ending soon\" [level=3, ref=e167]",
+      "- heading \"Your subscription is ending soon\" [level=1, ref=e193]",
+      "- heading \"Subscription #12345\" [level=2, ref=e195]"
+    ],
+    "save": "NOT-TESTED"
+  },
+  {
+    "title": "[ArraySubs] Subscription Auto-Downgraded",
+    "url": "https://mirror-help.arrayhash.com/wp-admin/admin.php?page=wc-settings&tab=email&section=arraysubs_auto_downgrade",
+    "section": "arraysubs_auto_downgrade",
+    "proof": "email-arraysubs_auto_downgrade",
+    "result": "PASS",
+    "preview": true,
+    "headings": [
+      "- heading \"Settings\" [level=1, ref=e25]",
+      "- heading \"Emails\" [level=1, ref=e34]",
+      "- heading \"Return to emails [ArraySubs] Subscription Auto-Downgraded\" [level=2, ref=e35]",
+      "- heading \"\ud83d\udccb Available Placeholders\" [level=3, ref=e36]",
+      "- heading \"Email preview\" [level=2, ref=e54]",
+      "- heading \"[mirror-help.arrayhash.com] Your subscription #12345 has been changed to New Plan\" [level=3, ref=e165]",
+      "- heading \"Your subscription plan has changed\" [level=1, ref=e191]",
+      "- heading \"Subscription #12345\" [level=2, ref=e193]"
+    ],
+    "save": "NOT-TESTED"
+  },
+  {
+    "title": "[ArraySubs] Retention Discount Accepted",
+    "url": "https://mirror-help.arrayhash.com/wp-admin/admin.php?page=wc-settings&tab=email&section=arraysubs_retention_discount_accepted",
+    "section": "arraysubs_retention_discount_accepted",
+    "proof": "email-arraysubs_retention_discount_accepted",
+    "result": "PASS",
+    "preview": true,
+    "headings": [
+      "- heading \"Settings\" [level=1, ref=e25]",
+      "- heading \"Emails\" [level=1, ref=e34]",
+      "- heading \"Return to emails [ArraySubs] Retention Discount Accepted\" [level=2, ref=e35]",
+      "- heading \"\ud83d\udccb Available Placeholders\" [level=3, ref=e36]",
+      "- heading \"Email preview\" [level=2, ref=e54]",
+      "- heading \"\" [level=3, ref=e165]",
+      "- heading \"Your subscription discount is now active\" [level=1, ref=e191]",
+      "- heading \"Discount Details\" [level=2, ref=e193]"
+    ],
+    "save": "NOT-TESTED"
+  },
+  {
+    "title": "[ArraySubs] Subscription Reactivated",
+    "url": "https://mirror-help.arrayhash.com/wp-admin/admin.php?page=wc-settings&tab=email&section=arraysubs_subscription_reactivated",
+    "section": "arraysubs_subscription_reactivated",
+    "proof": "email-arraysubs_subscription_reactivated",
+    "result": "PASS",
+    "preview": true,
+    "headings": [
+      "- heading \"Settings\" [level=1, ref=e25]",
+      "- heading \"Emails\" [level=1, ref=e34]",
+      "- heading \"Return to emails [ArraySubs] Subscription Reactivated\" [level=2, ref=e35]",
+      "- heading \"\ud83d\udccb Available Placeholders\" [level=3, ref=e36]",
+      "- heading \"Email preview\" [level=2, ref=e54]",
+      "- heading \"[mirror-help.arrayhash.com] Your subscription for Sample Subscription Product has been reactivated\" [level=3, ref=e165]",
+      "- heading \"Your subscription has been reactivated!\" [level=1, ref=e191]",
+      "- heading \"Subscription Details\" [level=2, ref=e193]"
+    ],
+    "save": "NOT-TESTED"
+  },
+  {
+    "title": "[ArraySubs] Renewal Skipped",
+    "url": "https://mirror-help.arrayhash.com/wp-admin/admin.php?page=wc-settings&tab=email&section=arraysubs_subscription_skipped",
+    "section": "arraysubs_subscription_skipped",
+    "proof": "email-arraysubs_subscription_skipped",
+    "result": "PASS",
+    "preview": true,
+    "headings": [
+      "- heading \"Settings\" [level=1, ref=e25]",
+      "- heading \"Emails\" [level=1, ref=e34]",
+      "- heading \"Return to emails [ArraySubs] Renewal Skipped\" [level=2, ref=e35]",
+      "- heading \"\ud83d\udccb Available Placeholders\" [level=3, ref=e36]",
+      "- heading \"Email preview\" [level=2, ref=e56]",
+      "- heading \"[mirror-help.arrayhash.com] Renewal skipped for Sample Subscription Product\" [level=3, ref=e167]",
+      "- heading \"Your renewal has been skipped\" [level=1, ref=e193]",
+      "- heading \"Subscription #12345\" [level=2, ref=e195]"
+    ],
+    "save": "NOT-TESTED"
+  },
+  {
+    "title": "[ArraySubs] Renewal Skip Removed",
+    "url": "https://mirror-help.arrayhash.com/wp-admin/admin.php?page=wc-settings&tab=email&section=arraysubs_skip_undone",
+    "section": "arraysubs_skip_undone",
+    "proof": "email-arraysubs_skip_undone",
+    "result": "PASS",
+    "preview": true,
+    "headings": [
+      "- heading \"Settings\" [level=1, ref=e25]",
+      "- heading \"Emails\" [level=1, ref=e34]",
+      "- heading \"Return to emails [ArraySubs] Renewal Skip Removed\" [level=2, ref=e35]",
+      "- heading \"\ud83d\udccb Available Placeholders\" [level=3, ref=e36]",
+      "- heading \"Email preview\" [level=2, ref=e55]",
+      "- heading \"[mirror-help.arrayhash.com] Renewal schedule restored for Sample Subscription Product\" [level=3, ref=e166]",
+      "- heading \"Your regular renewal schedule is restored\" [level=1, ref=e192]",
+      "- heading \"Subscription #12345\" [level=2, ref=e194]"
+    ],
+    "save": "NOT-TESTED"
+  },
+  {
+    "title": "[ArraySubs] Subscription Paused",
+    "url": "https://mirror-help.arrayhash.com/wp-admin/admin.php?page=wc-settings&tab=email&section=arraysubs_subscription_paused",
+    "section": "arraysubs_subscription_paused",
+    "proof": "email-arraysubs_subscription_paused",
+    "result": "PASS",
+    "preview": true,
+    "headings": [
+      "- heading \"Settings\" [level=1, ref=e25]",
+      "- heading \"Emails\" [level=1, ref=e34]",
+      "- heading \"Return to emails [ArraySubs] Subscription Paused\" [level=2, ref=e35]",
+      "- heading \"\ud83d\udccb Available Placeholders\" [level=3, ref=e36]",
+      "- heading \"Email preview\" [level=2, ref=e58]",
+      "- heading \"\" [level=3, ref=e169]",
+      "- heading \"Your subscription is paused\" [level=1, ref=e195]",
+      "- heading \"Subscription #12345\" [level=2, ref=e197]"
+    ],
+    "save": "NOT-TESTED"
+  },
+  {
+    "title": "[ArraySubs] Subscription Resumed",
+    "url": "https://mirror-help.arrayhash.com/wp-admin/admin.php?page=wc-settings&tab=email&section=arraysubs_subscription_resumed",
+    "section": "arraysubs_subscription_resumed",
+    "proof": "email-arraysubs_subscription_resumed",
+    "result": "PASS",
+    "preview": true,
+    "headings": [
+      "- heading \"Settings\" [level=1, ref=e25]",
+      "- heading \"Emails\" [level=1, ref=e34]",
+      "- heading \"Return to emails [ArraySubs] Subscription Resumed\" [level=2, ref=e35]",
+      "- heading \"\ud83d\udccb Available Placeholders\" [level=3, ref=e36]",
+      "- heading \"Email preview\" [level=2, ref=e56]",
+      "- heading \"[mirror-help.arrayhash.com] Subscription resumed for Sample Subscription Product\" [level=3, ref=e167]",
+      "- heading \"Your subscription has resumed\" [level=1, ref=e193]",
+      "- heading \"Subscription #12345\" [level=2, ref=e195]"
+    ],
+    "save": "NOT-TESTED"
+  },
+  {
+    "title": "[ArraySubs] Renewal Requires Verification",
+    "url": "https://mirror-help.arrayhash.com/wp-admin/admin.php?page=wc-settings&tab=email&section=arraysubs_renewal_requires_verification",
+    "section": "arraysubs_renewal_requires_verification",
+    "proof": "email-arraysubs_renewal_requires_verification",
+    "result": "PASS",
+    "preview": true,
+    "headings": [
+      "- heading \"Settings\" [level=1, ref=e25]",
+      "- heading \"Emails\" [level=1, ref=e34]",
+      "- heading \"Return to emails [ArraySubs] Renewal Requires Verification\" [level=2, ref=e35]",
+      "- heading \"\ud83d\udccb Available Placeholders\" [level=3, ref=e36]",
+      "- heading \"Email preview\" [level=2, ref=e59]",
+      "- heading \"[mirror-help.arrayhash.com] Verify your subscription renewal #12345\" [level=3, ref=e170]",
+      "- heading \"Your renewal needs verification\" [level=1, ref=e196]",
+      "- heading \"Renewal details\" [level=2, ref=e198]"
+    ],
+    "save": "NOT-TESTED"
+  },
+  {
+    "title": "[ArraySubs] Card Expiring",
+    "url": "https://mirror-help.arrayhash.com/wp-admin/admin.php?page=wc-settings&tab=email&section=arraysubs_card_expiring",
+    "section": "arraysubs_card_expiring",
+    "proof": "email-arraysubs_card_expiring",
+    "result": "PASS",
+    "preview": true,
+    "headings": [
+      "- heading \"Settings\" [level=1, ref=e25]",
+      "- heading \"Emails\" [level=1, ref=e34]",
+      "- heading \"Return to emails [ArraySubs] Card Expiring\" [level=2, ref=e35]",
+      "- heading \"\ud83d\udccb Available Placeholders\" [level=3, ref=e36]",
+      "- heading \"Email preview\" [level=2, ref=e54]",
+      "- heading \"[mirror-help.arrayhash.com] Update the card for subscription #12345\" [level=3, ref=e165]",
+      "- heading \"Your card is expiring soon\" [level=1, ref=e191]",
+      "- heading \"Subscription Details\" [level=2, ref=e193]"
+    ],
+    "save": "NOT-TESTED"
+  },
+  {
+    "title": "[ArraySubs] New Subscription (Admin)",
+    "url": "https://mirror-help.arrayhash.com/wp-admin/admin.php?page=wc-settings&tab=email&section=arraysubs_admin_new_subscription",
+    "section": "arraysubs_admin_new_subscription",
+    "proof": "email-arraysubs_admin_new_subscription",
+    "result": "PASS",
+    "preview": true,
+    "headings": [
+      "- heading \"Settings\" [level=1, ref=e25]",
+      "- heading \"Emails\" [level=1, ref=e34]",
+      "- heading \"Return to emails [ArraySubs] New Subscription (Admin)\" [level=2, ref=e35]",
+      "- heading \"\ud83d\udccb Available Placeholders\" [level=3, ref=e36]",
+      "- heading \"Email preview\" [level=2, ref=e54]",
+      "- heading \"[mirror-help.arrayhash.com] New subscription #12345 from John Doe\" [level=3, ref=e165]",
+      "- heading \"New subscription received\" [level=1, ref=e195]",
+      "- heading \"Subscription #12345\" [level=2, ref=e197]"
+    ],
+    "save": "NOT-TESTED"
+  },
+  {
+    "title": "[ArraySubs] Payment Failed (Admin)",
+    "url": "https://mirror-help.arrayhash.com/wp-admin/admin.php?page=wc-settings&tab=email&section=arraysubs_admin_payment_failed",
+    "section": "arraysubs_admin_payment_failed",
+    "proof": "email-arraysubs_admin_payment_failed",
+    "result": "PASS",
+    "preview": true,
+    "headings": [
+      "- heading \"Settings\" [level=1, ref=e25]",
+      "- heading \"Emails\" [level=1, ref=e34]",
+      "- heading \"Return to emails [ArraySubs] Payment Failed (Admin)\" [level=2, ref=e35]",
+      "- heading \"\ud83d\udccb Available Placeholders\" [level=3, ref=e36]",
+      "- heading \"Email preview\" [level=2, ref=e56]",
+      "- heading \"[mirror-help.arrayhash.com] Payment failed for subscription #12345\" [level=3, ref=e167]",
+      "- heading \"Subscription payment failed\" [level=1, ref=e197]",
+      "- heading \"Subscription #12345\" [level=2, ref=e199]"
+    ],
+    "save": "NOT-TESTED"
+  },
+  {
+    "title": "[ArraySubs] Subscription Scheduled to Cancel (Admin)",
+    "url": "https://mirror-help.arrayhash.com/wp-admin/admin.php?page=wc-settings&tab=email&section=arraysubs_admin_subscription_pending_cancellation",
+    "section": "arraysubs_admin_subscription_pending_cancellation",
+    "proof": "email-arraysubs_admin_subscription_pending_cancellation",
+    "result": "PASS",
+    "preview": true,
+    "headings": [
+      "- heading \"Settings\" [level=1, ref=e25]",
+      "- heading \"Emails\" [level=1, ref=e34]",
+      "- heading \"Return to emails [ArraySubs] Subscription Scheduled to Cancel (Admin)\" [level=2, ref=e35]",
+      "- heading \"\ud83d\udccb Available Placeholders\" [level=3, ref=e36]",
+      "- heading \"Email preview\" [level=2, ref=e56]",
+      "- heading \"[mirror-help.arrayhash.com] Subscription #12345 scheduled to cancel on 31 October, 2026\" [level=3, ref=e167]",
+      "- heading \"Subscription scheduled to cancel\" [level=1, ref=e197]",
+      "- heading \"Subscription #12345\" [level=2, ref=e199]"
+    ],
+    "save": "NOT-TESTED"
+  },
+  {
+    "title": "[ArraySubs] Subscription Cancelled (Admin)",
+    "url": "https://mirror-help.arrayhash.com/wp-admin/admin.php?page=wc-settings&tab=email&section=arraysubs_admin_subscription_cancelled",
+    "section": "arraysubs_admin_subscription_cancelled",
+    "proof": "email-arraysubs_admin_subscription_cancelled",
+    "result": "PASS",
+    "preview": true,
+    "headings": [
+      "- heading \"Settings\" [level=1, ref=e25]",
+      "- heading \"Emails\" [level=1, ref=e34]",
+      "- heading \"Return to emails [ArraySubs] Subscription Cancelled (Admin)\" [level=2, ref=e35]",
+      "- heading \"\ud83d\udccb Available Placeholders\" [level=3, ref=e36]",
+      "- heading \"Email preview\" [level=2, ref=e56]",
+      "- heading \"[mirror-help.arrayhash.com] Subscription #12345 cancelled by Customer (John Doe)\" [level=3, ref=e167]",
+      "- heading \"Subscription cancelled\" [level=1, ref=e197]",
+      "- heading \"Subscription #12345\" [level=2, ref=e199]"
+    ],
+    "save": "NOT-TESTED"
+  },
+  {
+    "title": "[ArraySubsPro] Store Credit Added",
+    "url": "https://mirror-help.arrayhash.com/wp-admin/admin.php?page=wc-settings&tab=email&section=arraysubspro_credit_added_email",
+    "section": "arraysubspro_credit_added_email",
+    "proof": "email-arraysubspro_credit_added_email",
+    "result": "PASS",
+    "preview": true,
+    "headings": [
+      "- heading \"Settings\" [level=1, ref=e25]",
+      "- heading \"Emails\" [level=1, ref=e34]",
+      "- heading \"Return to emails [ArraySubsPro] Store Credit Added\" [level=2, ref=e35]",
+      "- heading \"Email preview\" [level=2, ref=e36]",
+      "- heading \"[mirror-help.arrayhash.com] Store credit added to your account\" [level=3, ref=e147]",
+      "- heading \"Store credit has been added to your account!\" [level=1, ref=e173]"
+    ],
+    "save": "NOT-TESTED"
+  },
+  {
+    "title": "[ArraySubsPro] Store Credit Expiring Soon",
+    "url": "https://mirror-help.arrayhash.com/wp-admin/admin.php?page=wc-settings&tab=email&section=arraysubspro_credit_expiring_email",
+    "section": "arraysubspro_credit_expiring_email",
+    "proof": "email-arraysubspro_credit_expiring_email",
+    "result": "PASS",
+    "preview": true,
+    "headings": [
+      "- heading \"Settings\" [level=1, ref=e25]",
+      "- heading \"Emails\" [level=1, ref=e34]",
+      "- heading \"Return to emails [ArraySubsPro] Store Credit Expiring Soon\" [level=2, ref=e35]",
+      "- heading \"Email preview\" [level=2, ref=e36]",
+      "- heading \"[mirror-help.arrayhash.com] Your store credit expires soon\" [level=3, ref=e147]",
+      "- heading \"Your store credit is expiring soon!\" [level=1, ref=e173]"
+    ],
+    "save": "NOT-TESTED"
+  },
+  {
+    "title": "[ArraySubsPro] Store Credit Expired",
+    "url": "https://mirror-help.arrayhash.com/wp-admin/admin.php?page=wc-settings&tab=email&section=arraysubspro_credit_expired_email",
+    "section": "arraysubspro_credit_expired_email",
+    "proof": "email-arraysubspro_credit_expired_email",
+    "result": "PASS",
+    "preview": true,
+    "headings": [
+      "- heading \"Settings\" [level=1, ref=e25]",
+      "- heading \"Emails\" [level=1, ref=e34]",
+      "- heading \"Return to emails [ArraySubsPro] Store Credit Expired\" [level=2, ref=e35]",
+      "- heading \"Email preview\" [level=2, ref=e36]",
+      "- heading \"[mirror-help.arrayhash.com] Your store credit has expired\" [level=3, ref=e147]",
+      "- heading \"Your store credit has expired\" [level=1, ref=e173]"
+    ],
+    "save": "NOT-TESTED"
+  }
+]

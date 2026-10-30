@@ -1,0 +1,197 @@
+- generic
+  - link "Skip to content" [ref=e1]
+  - banner
+    - paragraph
+      - link "mirror-help.arrayhash.com" [ref=e12]
+    - navigation
+      - list
+        - listitem [level=1]
+          - link "#test" [ref=e51]
+          - button "#test submenu" [expanded=false, ref=e52]
+        - listitem [level=1]
+          - link "Premium" [ref=e53]
+          - button "Premium submenu" [expanded=false, ref=e54]
+        - listitem [level=1]
+          - link "Cart" [ref=e55]
+        - listitem [level=1]
+          - link "Checkout" [ref=e56]
+        - listitem [level=1]
+          - link "Classic Checkout QA" [ref=e57]
+        - listitem [level=1]
+          - link "My account" [ref=e58]
+        - listitem [level=1]
+          - link "Shop" [ref=e59]
+    - link "My Account" [ref=e2]
+      - image
+    - button "Number of items in the cart: 0" [ref=e3]
+      - image
+  - main
+    - navigation "Breadcrumb" [ref=e4]
+      - link "Home" [ref=e13]
+      - StaticText "/"
+      - link "Clothing" [ref=e14]
+      - StaticText "/"
+      - link "Accessories" [ref=e15]
+      - StaticText "/PEQA Bundle QA"
+    - image "Awaiting product image"
+    - heading "PEQA Bundle QA" [level=1, ref=e5]
+    - generic
+      - StaticText "Original price was: $30.00."
+      - StaticText "Current price is: $25.00."
+      - StaticText "/ month"
+    - heading "What's Included" [level=4, ref=e6]
+    - list
+      - listitem [level=1]
+        - StaticText "Bundle Perk"
+        - StaticText "Priority support"
+    - heading "Review details" [level=2, ref=e7]
+    - StaticText "Billed every month"
+    - list
+      - listitem [level=1]
+        - StaticText "BUNDLE-CHILD-PLAIN"
+        - StaticText "2 × "
+        - StaticText "$"
+        - StaticText "5.00"
+        - StaticText " each"
+        - StaticText "$"
+        - StaticText "10.00"
+      - listitem [level=1]
+        - StaticText "BUNDLE-CHILD-SUB"
+        - StaticText "2 × "
+        - StaticText "$"
+        - StaticText "10.00"
+        - StaticText " each"
+        - StaticText "$"
+        - StaticText "20.00"
+    - StaticText "Subtotal"
+    - StaticText "$"
+    - StaticText "30.00"
+    - StaticText "Bundle discount"
+    - StaticText "−"
+    - StaticText "$"
+    - StaticText "5.00"
+    - StaticText "Bundle total"
+    - StaticText "$"
+    - StaticText "25.00"
+    - StaticText " "
+    - StaticText "/ month"
+    - generic
+      - LabelText
+        - StaticText "PEQA Bundle QA quantity"
+      - button "Subscribe Now" [ref=e16]
+    - generic
+      - StaticText "Category: "
+      - link "Accessories" [ref=e17]
+    - tablist
+      - tab "Reviews (0)" [selected, ref=e18]
+    - tabpanel "Reviews (0)"
+      - generic
+        - generic
+          - heading "Reviews" [level=2, ref=e31]
+          - paragraph
+            - StaticText "There are no reviews yet."
+        - generic
+          - heading "Be the first to review “PEQA Bundle QA”" [level=3, ref=e50]
+          - generic
+            - LabelText
+              - StaticText "Your rating*"
+            - paragraph
+              - group "Your rating*"
+                - radio " 1 of 5 stars" [checked=false, ref=e62]
+                  - StaticText ""
+                  - StaticText "1 of 5 stars"
+                - radio " 2 of 5 stars" [checked=false, ref=e63]
+                  - StaticText ""
+                  - StaticText "2 of 5 stars"
+                - radio " 3 of 5 stars" [checked=false, ref=e64]
+                  - StaticText ""
+                  - StaticText "3 of 5 stars"
+                - radio " 4 of 5 stars" [checked=false, ref=e65]
+                  - StaticText ""
+                  - StaticText "4 of 5 stars"
+                - radio " 5 of 5 stars" [checked=false, ref=e66]
+                  - StaticText ""
+                  - StaticText "5 of 5 stars"
+            - paragraph
+              - LabelText
+                - StaticText "Your review*"
+              - textbox "Your review*" [required, ref=e60]
+            - paragraph
+              - button "Submit" [ref=e61]
+    - heading "Related products" [level=2, ref=e8]
+    - list
+      - listitem [level=1]
+        - link "Hat" [ref=e32]
+          - image "Hat"
+        - heading "Hat" [level=3, ref=e21]
+          - link "Hat" [ref=e33]
+        - generic
+          - StaticText "$12.00"
+        - button "Add to cart: “Hat”" [ref=e22]
+          - StaticText "Add to cart"
+      - listitem [level=1]
+        - link "Placeholder" [ref=e34]
+          - image "Placeholder"
+        - heading "PEQA Box QA" [level=3, ref=e23]
+          - link "PEQA Box QA" [ref=e35]
+        - StaticText "Priced by your selection / month"
+        - link "Add to cart: “PEQA Box QA”" [ref=e24]
+          - StaticText "Create Subscription Box"
+      - listitem [level=1]
+        - link "Placeholder" [ref=e36]
+          - image "Placeholder"
+        - heading "PEQA Box Switch Test" [level=3, ref=e25]
+          - link "PEQA Box Switch Test" [ref=e37]
+        - StaticText "Priced by your selection / billing cycle"
+        - link "Add to cart: “PEQA Box Switch Test”" [ref=e26]
+          - StaticText "Create Subscription Box"
+      - listitem [level=1]
+        - link "Placeholder" [ref=e38]
+          - image "Placeholder"
+        - heading "PEQA Simple Sub A" [level=3, ref=e27]
+          - link "PEQA Simple Sub A" [ref=e39]
+        - generic
+          - StaticText "$20.00 / month"
+        - button "Add to cart: “PEQA Simple Sub A”" [ref=e28]
+          - StaticText "Subscribe Now"
+      - listitem [level=1]
+        - link "Placeholder" [ref=e40]
+          - image "Placeholder"
+        - heading "PEQA Variable Sub QA" [level=3, ref=e29]
+          - link "PEQA Variable Sub QA" [ref=e41]
+        - generic
+          - StaticText "  "
+          - StaticText "Price range: $15.00 through $25.00"
+          - StaticText "/ month"
+        - link "Select options for “PEQA Variable Sub QA”" [ref=e30]
+          - StaticText "Subscribe Now"
+  - contentinfo
+    - heading "mirror-help.arrayhash.com" [level=2, ref=e9]
+      - link "mirror-help.arrayhash.com" [ref=e19]
+    - navigation " 2" [ref=e10]
+      - list
+        - listitem [level=1]
+          - link "Blog" [ref=e42]
+        - listitem [level=1]
+          - link "About" [ref=e43]
+        - listitem [level=1]
+          - link "FAQs" [ref=e44]
+        - listitem [level=1]
+          - link "Authors" [ref=e45]
+    - navigation " 3" [ref=e11]
+      - list
+        - listitem [level=1]
+          - link "Events" [ref=e46]
+        - listitem [level=1]
+          - link "Shop" [ref=e47]
+        - listitem [level=1]
+          - link "Patterns" [ref=e48]
+        - listitem [level=1]
+          - link "Themes" [ref=e49]
+    - paragraph
+      - StaticText "Twenty Twenty-Five"
+    - paragraph
+      - StaticText "Desgned with "
+      - link "WordPress" [ref=e20]
+  - generic
+  - generic

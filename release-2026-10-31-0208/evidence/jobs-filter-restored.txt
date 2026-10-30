@@ -1,0 +1,196 @@
+Activity Audits
+Gateway Logs
+Renewal Failures
+Portal Action Failures
+Access-Rule Conflicts
+Scheduled-Job Logs
+
+Execution history for all scheduled subscription jobs.
+
+From
+To
+Reset
+Date	Status	Job	Details
+Oct 31, 2026, 2:29 AM	
+Success
+	
+Sweep Plan Switch Finalizations
+	[Sweep Plan Switch Finalizations] ✓ Success
+Ran scheduled action.
+Oct 31, 2026, 2:29 AM	
+Success
+	
+Sweep Retention Event Outbox
+	[Sweep Retention Event Outbox] ✓ Success
+Ran scheduled action for subscription #5377.
+Oct 31, 2026, 2:29 AM	
+Success
+	
+Sweep Stripe Renewal Verifications
+	[Sweep Stripe Renewal Verifications] ✓ Success
+Ran scheduled action.
+Oct 31, 2026, 2:29 AM	
+Success
+	
+Sweep Paddle Plan Switch Checkouts
+	[Sweep Paddle Plan Switch Checkouts] ✓ Success
+Ran scheduled action.
+Oct 31, 2026, 2:29 AM	
+Success
+	
+Sweep Plan Switch Finalizations
+	[Sweep Plan Switch Finalizations] ✓ Success
+Ran scheduled action.
+Oct 31, 2026, 2:22 AM	
+Success
+	
+Auto Heal Stripe Secondary Webhook
+	[Auto Heal Stripe Secondary Webhook] ✓ Success
+Ran scheduled action.
+Oct 31, 2026, 2:19 AM	
+Success
+	
+Sweep Stripe Renewal Verifications
+	[Sweep Stripe Renewal Verifications] ✓ Success
+Ran scheduled action.
+Oct 31, 2026, 2:13 AM	
+Success
+	
+Sweep Retention Event Outbox
+	[Sweep Retention Event Outbox] ✓ Success
+Ran scheduled action for subscription #5376.
+Oct 31, 2026, 2:13 AM	
+Success
+	
+Sweep Paddle Plan Switch Checkouts
+	[Sweep Paddle Plan Switch Checkouts] ✓ Success
+Ran scheduled action.
+Oct 31, 2026, 2:13 AM	
+Success
+	
+Sweep Plan Switch Finalizations
+	[Sweep Plan Switch Finalizations] ✓ Success
+Ran scheduled action.
+Oct 31, 2026, 2:13 AM	
+Success
+	
+Sweep Plan Switch Finalizations
+	[Sweep Plan Switch Finalizations] ✓ Success
+Ran scheduled action.
+Oct 31, 2026, 2:09 AM	
+Success
+	
+Sweep Stripe Renewal Verifications
+	[Sweep Stripe Renewal Verifications] ✓ Success
+Ran scheduled action.
+Oct 31, 2026, 1:59 AM	
+Success
+	
+Sweep Stripe Renewal Verifications
+	[Sweep Stripe Renewal Verifications] ✓ Success
+Ran scheduled action.
+Oct 31, 2026, 1:58 AM	
+Success
+	
+Sweep Paddle Plan Switch Checkouts
+	[Sweep Paddle Plan Switch Checkouts] ✓ Success
+Ran scheduled action.
+Oct 31, 2026, 1:58 AM	
+Success
+	
+Sweep Plan Switch Finalizations
+	[Sweep Plan Switch Finalizations] ✓ Success
+Ran scheduled action.
+Oct 31, 2026, 1:58 AM	
+Success
+	
+Sweep Retention Event Outbox
+	[Sweep Retention Event Outbox] ✓ Success
+Ran scheduled action for subscription #5375.
+Oct 31, 2026, 1:58 AM	
+Success
+	
+Sweep Plan Switch Finalizations
+	[Sweep Plan Switch Finalizations] ✓ Success
+Ran scheduled action.
+Oct 31, 2026, 1:49 AM	
+Success
+	
+Sweep Stripe Renewal Verifications
+	[Sweep Stripe Renewal Verifications] ✓ Success
+Ran scheduled action.
+Oct 31, 2026, 1:42 AM	
+Success
+	
+Sweep Retention Event Outbox
+	[Sweep Retention Event Outbox] ✓ Success
+Ran scheduled action for subscription #5374.
+Oct 31, 2026, 1:42 AM	
+Success
+	
+Sweep Plan Switch Finalizations
+	[Sweep Plan Switch Finalizations] ✓ Success
+Ran scheduled action.
+Oct 31, 2026, 1:42 AM	
+Success
+	
+Sweep Paddle Plan Switch Checkouts
+	[Sweep Paddle Plan Switch Checkouts] ✓ Success
+Ran scheduled action.
+Oct 31, 2026, 1:42 AM	
+Success
+	
+Sweep Plan Switch Finalizations
+	[Sweep Plan Switch Finalizations] ✓ Success
+Ran scheduled action.
+Oct 31, 2026, 1:39 AM	
+Success
+	
+Sweep Stripe Renewal Verifications
+	[Sweep Stripe Renewal Verifications] ✓ Success
+Ran scheduled action.
+Oct 31, 2026, 1:37 AM	
+Success
+	
+Process Renewal
+#36938	[Process Renewal] ✓ Success
+Processed renewal for subscription #36938.
+Oct 31, 2026, 1:29 AM	
+Success
+	
+Sweep Stripe Renewal Verifications
+	[Sweep Stripe Renewal Verifications] ✓ Success
+Ran scheduled action.
+Oct 31, 2026, 1:26 AM	
+Success
+	
+Sweep Retention Event Outbox
+	[Sweep Retention Event Outbox] ✓ Success
+Ran scheduled action for subscription #5373.
+Oct 31, 2026, 1:26 AM	
+Success
+	
+Sweep Plan Switch Finalizations
+	[Sweep Plan Switch Finalizations] ✓ Success
+Ran scheduled action.
+Oct 31, 2026, 1:26 AM	
+Success
+	
+Sweep Paddle Plan Switch Checkouts
+	[Sweep Paddle Plan Switch Checkouts] ✓ Success
+Ran scheduled action.
+Oct 31, 2026, 1:26 AM	
+Success
+	
+Sweep Plan Switch Finalizations
+	[Sweep Plan Switch Finalizations] ✓ Success
+Ran scheduled action.
+Oct 31, 2026, 1:22 AM	
+Success
+	
+Auto Heal Stripe Secondary Webhook
+	[Auto Heal Stripe Secondary Webhook] ✓ Success
+Ran scheduled action.
+Previous
+Page 1 of 579(17343 total)
+Next

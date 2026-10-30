@@ -4,7 +4,7 @@ title: Portal Action Failures splits HTTP status code digits across lines
 status: closed
 priority: low
 created: 2026-10-25T20:50:50.843023+06:00
-updated: 2026-10-25T20:50:50.843023+06:00
+updated: 2026-10-31T02:20:58.259661+06:00
 tags:
     - bug
     - admin-ui
@@ -24,3 +24,6 @@ Cause: HTTP codes reuse the shared job-status badge whose labels allow breaking 
 Resolution: add arraysubs-job-status--http to this badge, prevent code wrapping and icon shrinking, and set the HTTP header/cells to a 72px no-wrap column. Core presentation owns the changes; Pro REST payloads are unchanged. Long renewal/job failure labels retain their existing wrapping behavior.
 Verification: npm run build succeeded with the installed dependencies. Real queue browser preview applied the exact four rules extracted from the compiled mainadmin.css and the class names added by the JSX change. All five 500/409 labels use one text rectangle and 23.5px badge height at 1440px and remain one line at 1024px; no browser JavaScript errors. At 1024px cells are 78px wide, badges 57.16-57.52px wide, and document width equals viewport width. Evidence: evidence/http-status-column/after.png and after-1024.png.
 Scope/limitations: the local installation has Pro inactive, so it cannot load this queue. Visual verification used a temporary browser preview on the actual live test queue, not a deployment of the local bundle. No subscription, customer, order, setting, plugin activation, license, or queue resolution was changed. The preview ends when the browser session closes. No PHPCS/lint or dependency installation.
+
+
+Release QA2026-10-31 observed deployed recurrence (prior closed status preserved). Task#2; day2026-10-31; planqa/release-2026-10-31-0208/plan.md. URLhttps://mirror-help.arrayhash.com/wp-admin/admin.php?page=arraysubs-mainadmin#/audits/portal-action-failures, admin1 administrator, rqa0208-read desktop1280. Subscriptions27614/1808, ordersN/A; displayed synthetic customers/logins as above, IDsnotresolved(read-onlyqueue). Load queue and inspect HTTPcolumn:500renders50/0and409renders40/9 overtwo lines. Expected one line. Proofqa/release-2026-10-31-0208/evidence/audits-portal-action-failures.png and.txt, imageinspected. No queueentrieschanged. Localfixnotproven deployed; deploymentblocker#151 applies.

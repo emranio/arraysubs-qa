@@ -4,7 +4,7 @@ title: Subscription meta is saved onto Grouped and External products
 status: open
 priority: critical
 created: 2026-08-26T14:37:07.156154984+02:00
-updated: 2026-08-30T14:53:48.62348783+02:00
+updated: 2026-10-31T02:27:53.29594+06:00
 tags:
     - product-edit
     - subscription-products
@@ -64,3 +64,18 @@ Admin products list row renders: `PEQA Grouped Leak | Grouped product | Subscrip
 Tagged `[skip]` in `qa/product-edit-regression-qa-report.md` (F-01): *"my take: dont touch it. it's not needed."* No change made; grouped/external products still keep the posted subscription meta.
 
 Re-confirmed while fixing #11: the new product-type guard is scoped to a move to `simple` only, so a box → Grouped conversion still goes through exactly as before (verified on product 33324).
+
+
+ReleaseQA2026-10-31 limited browser occurrence; prior decision/status preserved:
+C3 — Existing#8 partial browser reconfirmation; unsupported Grouped subscription flag retained
+
+- Existing issue qa/issues/tasks/008-subscription-meta-is-saved-onto-grouped-and.md remains open; prior user decision deliberatelynotfixed preserved.
+- Active QA taskprogress#3; scheduled2026-10-31; planqa/release-2026-10-31-0208/plan.md.
+- Affected product109521RQA0208GroupedMetaDraft,run-owned; subscriptions/ordersN/A(notpurchased); actorWPuser1adminadministrator. Browserrqa0208-commerce-admin,ProfileA.
+- Exact URL https://mirror-help.arrayhash.com/wp-admin/post.php?post=109521&action=edit .
+- Steps: duplicateownsimplepaid109433todraft;rename;selectGroupedproduct;SaveDraft;loadcompletedpage;inspectactualcurrenttypeandserverloaded_is_subscriptioninput;switchbackSimplewithoutsave.
+- Expected: unsupportedGroupedtypenotcarrysavedsubscriptionflag.
+- Observed: groupedtypeafterSaveDraftreloadandDOM_is_subscription.checked=true;switchbackSimplevisiblyrevealscheckedSubscriptionAScontrol. SupportingDOMread {type:grouped,isSubscription:true}. NoWP/DBaccess,sodirectmeta/helperresultnotreverified.
+- Evidence: commerce-grouped-reloaded.png/.txt,commerce-grouped-switched-simple.png; allscreenshotsinspected. CurrentPlanssearchRQA0208Groupedcorrectlyreturnsnoentry(commerce-grouped-plan-row.png),counterexampletocurrentvisiblePlansclassification.
+- Scope: groupedconversionofexistingrun-ownedsubscriptioncopyonly;externalproductnotretested. No storefrontpurchaseattempt. No productcodefix.
+

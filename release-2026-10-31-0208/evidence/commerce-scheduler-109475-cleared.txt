@@ -1,0 +1,398 @@
+- generic
+  - generic
+    - navigation "Main menu" [ref=e1]
+      - link "Skip to main content" [ref=e2]
+      - link "Skip to toolbar" [ref=e3]
+      - list
+        - listitem [level=1]
+          - link "Dashboard" [ref=e7]
+            - StaticText "Dashboard"
+          - list
+            - listitem [level=2]
+              - link "Home" [ref=e46]
+            - listitem [level=2]
+              - link "Updates 12" [ref=e47]
+                - StaticText "Updates 12"
+        - listitem [level=1]
+          - link "Posts" [ref=e8]
+            - StaticText "Posts"
+          - list
+            - listitem [level=2]
+              - link "All Posts" [ref=e48]
+            - listitem [level=2]
+              - link "Add Post" [ref=e49]
+            - listitem [level=2]
+              - link "Categories" [ref=e50]
+            - listitem [level=2]
+              - link "Tags" [ref=e51]
+        - listitem [level=1]
+          - link "Media" [ref=e9]
+            - StaticText "Media"
+          - list
+            - listitem [level=2]
+              - link "Library" [ref=e52]
+            - listitem [level=2]
+              - link "Add Media File" [ref=e53]
+        - listitem [level=1]
+          - link "Pages" [ref=e10]
+            - StaticText "Pages"
+          - list
+            - listitem [level=2]
+              - link "All Pages" [ref=e54]
+            - listitem [level=2]
+              - link "Add Page" [ref=e55]
+        - listitem [level=1]
+          - link "Comments" [ref=e11]
+            - StaticText "Comments"
+        - listitem [level=1]
+          - link "KB Articles" [ref=e12]
+            - StaticText "KB Articles"
+          - list
+            - listitem [level=2]
+              - link "KB Articles" [ref=e56]
+            - listitem [level=2]
+              - link "Add Post" [ref=e57]
+        - listitem [level=1]
+          - link "ArraySubs" [ref=e13]
+            - StaticText "ArraySubs"
+          - list
+            - listitem [level=2]
+              - link "Home" [ref=e58]
+            - listitem [level=2]
+              - link "Subscription Plans" [ref=e59]
+            - listitem [level=2]
+              - link "Subscriptions" [ref=e60]
+            - listitem [level=2]
+              - link "Manage Members" [ref=e61]
+            - listitem [level=2]
+              - link "Store Credit" [ref=e62]
+            - listitem [level=2]
+              - link "Cancellation Flow" [ref=e63]
+            - listitem [level=2]
+              - link "Member Access" [ref=e64]
+            - listitem [level=2]
+              - link "Checkout Builder" [ref=e65]
+            - listitem [level=2]
+              - link "Profile & My Account" [ref=e66]
+            - listitem [level=2]
+              - link "Shortcodes" [ref=e67]
+            - listitem [level=2]
+              - link "Integrations" [ref=e68]
+            - listitem [level=2]
+              - link "Modules" [ref=e69]
+            - listitem [level=2]
+              - link "Settings" [ref=e70]
+            - listitem [level=2]
+              - link "Audits" [ref=e71]
+            - listitem [level=2]
+              - link "License" [ref=e72]
+            - listitem [level=2]
+              - link "1-Minute Setup" [ref=e73]
+            - listitem [level=2]
+              - link "Help" [ref=e74]
+        - listitem [level=1]
+          - link "WooCommerce" [ref=e14]
+            - StaticText "WooCommerce"
+          - list
+            - listitem [level=2]
+              - link "Home" [ref=e75]
+            - listitem [level=2]
+              - link "Orders 70" [ref=e76]
+                - StaticText "Orders 70"
+            - listitem [level=2]
+              - link "Customers" [ref=e77]
+            - listitem [level=2]
+              - link "Coupons" [ref=e78]
+            - listitem [level=2]
+              - link "Reports" [ref=e79]
+            - listitem [level=2]
+              - link "Settings" [ref=e80]
+            - listitem [level=2]
+              - link "Status" [ref=e81]
+            - listitem [level=2]
+              - link "Extensions" [ref=e82]
+        - listitem [level=1]
+          - link "Products" [ref=e15]
+            - StaticText "Products"
+          - list
+            - listitem [level=2]
+              - link "All Products" [ref=e83]
+            - listitem [level=2]
+              - link "Add new product" [ref=e84]
+            - listitem [level=2]
+              - link "Brands" [ref=e85]
+            - listitem [level=2]
+              - link "Categories" [ref=e86]
+            - listitem [level=2]
+              - link "Tags" [ref=e87]
+            - listitem [level=2]
+              - link "Attributes" [ref=e88]
+            - listitem [level=2]
+              - link "Reviews" [ref=e89]
+        - listitem [level=1]
+          - link "Payments 1" [ref=e16]
+            - generic
+              - StaticText "Payments 1"
+        - listitem [level=1]
+          - link "Analytics" [ref=e17]
+            - StaticText "Analytics"
+          - list
+            - listitem [level=2]
+              - link "Overview" [ref=e90]
+            - listitem [level=2]
+              - link "Products" [ref=e91]
+            - listitem [level=2]
+              - link "Revenue" [ref=e92]
+            - listitem [level=2]
+              - link "Revenue Forecast" [ref=e93]
+            - listitem [level=2]
+              - link "Churn Analysis" [ref=e94]
+            - listitem [level=2]
+              - link "Retention" [ref=e95]
+            - listitem [level=2]
+              - link "Orders" [ref=e96]
+            - listitem [level=2]
+              - link "Refunds" [ref=e97]
+            - listitem [level=2]
+              - link "Variations" [ref=e98]
+            - listitem [level=2]
+              - link "Categories" [ref=e99]
+            - listitem [level=2]
+              - link "Coupons" [ref=e100]
+            - listitem [level=2]
+              - link "Taxes" [ref=e101]
+            - listitem [level=2]
+              - link "Downloads" [ref=e102]
+            - listitem [level=2]
+              - link "Stock" [ref=e103]
+            - listitem [level=2]
+              - link "Settings" [ref=e104]
+        - listitem [level=1]
+          - link "Marketing" [ref=e18]
+            - StaticText "Marketing"
+          - list
+            - listitem [level=2]
+              - link "Overview" [ref=e105]
+            - listitem [level=2]
+              - link "Coupons" [ref=e106]
+        - listitem [level=1]
+          - link "Appearance" [ref=e19]
+            - StaticText "Appearance"
+          - list
+            - listitem [level=2]
+              - link "Themes 2" [ref=e107]
+                - StaticText "Themes 2"
+            - listitem [level=2]
+              - link "Editor" [ref=e108]
+            - listitem [level=2]
+              - link "Fonts" [ref=e109]
+        - listitem [level=1]
+          - link "Plugins 9" [ref=e20]
+            - generic
+              - StaticText "Plugins 9"
+          - list
+            - listitem [level=2]
+              - link "Installed Plugins" [ref=e110]
+            - listitem [level=2]
+              - link "Add Plugin" [ref=e111]
+        - listitem [level=1]
+          - link "Users" [ref=e21]
+            - StaticText "Users"
+          - list
+            - listitem [level=2]
+              - link "All Users" [ref=e112]
+            - listitem [level=2]
+              - link "Add User" [ref=e113]
+            - listitem [level=2]
+              - link "Profile" [ref=e114]
+        - listitem [level=1]
+          - link "Tools" [ref=e22]
+            - StaticText "Tools"
+          - list
+            - listitem [level=2]
+              - link "Available Tools" [ref=e115]
+            - listitem [level=2]
+              - link "Import" [ref=e116]
+            - listitem [level=2]
+              - link "Export" [ref=e117]
+            - listitem [level=2]
+              - link "Site Health 1" [ref=e118]
+                - StaticText "Site Health 1"
+            - listitem [level=2]
+              - link "Export Personal Data" [ref=e119]
+            - listitem [level=2]
+              - link "Erase Personal Data" [ref=e120]
+            - listitem [level=2]
+              - link "Scheduled Actions" [ref=e121]
+            - listitem [level=2]
+              - link "Theme File Editor" [ref=e122]
+            - listitem [level=2]
+              - link "Plugin File Editor" [ref=e123]
+        - listitem [level=1]
+          - link "Settings" [ref=e23]
+            - StaticText "Settings"
+          - list
+            - listitem [level=2]
+              - link "General" [ref=e124]
+            - listitem [level=2]
+              - link "Connectors" [ref=e125]
+            - listitem [level=2]
+              - link "Writing" [ref=e126]
+            - listitem [level=2]
+              - link "Reading" [ref=e127]
+            - listitem [level=2]
+              - link "Discussion" [ref=e128]
+            - listitem [level=2]
+              - link "Media" [ref=e129]
+            - listitem [level=2]
+              - link "Permalinks" [ref=e130]
+            - listitem [level=2]
+              - link "Privacy" [ref=e131]
+        - listitem [level=1]
+          - link "WP Mail SMTP" [ref=e24]
+            - StaticText "WP Mail SMTP"
+          - list
+            - listitem [level=2]
+              - link "Settings" [ref=e132]
+            - listitem [level=2]
+              - link "Email Log" [ref=e133]
+            - listitem [level=2]
+              - link "Email Reports" [ref=e134]
+            - listitem [level=2]
+              - link "Tools" [ref=e135]
+            - listitem [level=2]
+              - link "Privacy Compliance" [ref=e136]
+            - listitem [level=2]
+              - link "About Us" [ref=e137]
+            - listitem [level=2]
+              - link "Upgrade to Pro" [ref=e138]
+        - listitem [level=1]
+          - button "Collapse Main menu" [expanded=true, ref=e25]
+            - StaticText "Collapse Menu"
+    - generic
+      - navigation "Toolbar" [ref=e4]
+        - menu
+          - group
+            - menuitem "About WordPress" [expanded=false, ref=e29]
+              - StaticText "About WordPress"
+          - group
+            - menuitem "mirror-help.arrayhash.com" [expanded=false, ref=e30]
+          - group
+            - menuitem "Live" [ref=e31]
+          - group
+            - menuitem "12 updates available" [ref=e32]
+              - StaticText "12 updates available"
+          - group
+            - menuitem "⌘K Open command palette" [ref=e33]
+              - generic
+                - StaticText "⌘K"
+                - StaticText "Open command palette"
+          - group
+            - menuitem "0 Comments in moderation" [ref=e34]
+              - StaticText "0 Comments in moderation"
+          - group
+            - menuitem "New" [expanded=false, ref=e35]
+              - StaticText "New"
+        - menu
+          - group
+            - menuitem "Howdy, admin" [expanded=false, ref=e36]
+              - StaticText "Howdy, admin"
+      - main
+        - generic
+          - generic
+            - button "Screen Options" [expanded=false, ref=e37]
+            - button "Help" [expanded=false, ref=e38]
+          - generic
+            - link "WordPress 7.1.4" [ref=e26]
+            - StaticText " is available! "
+            - link "Please update WordPress now" [ref=e27]
+              - StaticText "Please update now"
+            - StaticText "."
+          - heading "Scheduled Actions" [level=1, ref=e5]
+          - StaticText "Search results for \"109475\""
+          - list
+            - listitem [level=1]
+              - link "All" [ref=e39]
+              - StaticText " (49,198)"
+            - StaticText " | "
+            - listitem [level=1]
+              - link "Canceled" [ref=e40]
+              - StaticText " (144)"
+            - StaticText " | "
+            - listitem [level=1]
+              - link "Complete" [ref=e41]
+              - StaticText " (27,336)"
+            - StaticText " | "
+            - listitem [level=1]
+              - link "Failed" [ref=e42]
+              - StaticText " (21,606)"
+            - StaticText " | "
+            - listitem [level=1]
+              - link "Pending" [ref=e43]
+              - StaticText " (112)"
+          - generic
+            - paragraph
+              - LabelText
+                - StaticText "Search hook, args and claim ID:"
+              - searchbox "Search hook, args and claim ID:" [ref=e44]: 109475
+                - StaticText "109475"
+              - button "Search hook, args and claim ID" [ref=e45]
+            - generic
+              - LineBreak "\n"
+            - table
+              - rowgroup
+                - row
+                  - cell "Select All" [ref=e139]
+                    - checkbox "Select All" [checked=false, ref=e156]
+                    - LabelText
+                      - StaticText "Select All"
+                  - columnheader "Hook Sort descending." [ref=e140]
+                    - link "Hook Sort descending." [ref=e157]
+                      - StaticText "Hook"
+                      - StaticText "Sort descending."
+                  - columnheader "Status" [ref=e141]
+                  - columnheader "Arguments" [ref=e142]
+                  - columnheader "Group Sort descending." [ref=e143]
+                    - link "Group Sort descending." [ref=e158]
+                      - StaticText "Group"
+                      - StaticText "Sort descending."
+                  - columnheader "Recurrence" [ref=e144]
+                  - columnheader "Scheduled Date Sort descending." [ref=e145]
+                    - link "Scheduled Date Sort descending." [ref=e159]
+                      - StaticText "Scheduled Date"
+                      - StaticText "Sort descending."
+                  - columnheader "Log" [ref=e146]
+              - rowgroup
+                - row
+                  - cell "No items found." [ref=e147]
+              - rowgroup
+                - row
+                  - cell "Select All" [ref=e148]
+                    - checkbox "Select All" [checked=false, ref=e160]
+                    - LabelText
+                      - StaticText "Select All"
+                  - columnheader "Hook Sort descending." [ref=e149]
+                    - link "Hook Sort descending." [ref=e161]
+                      - StaticText "Hook"
+                      - StaticText "Sort descending."
+                  - columnheader "Status" [ref=e150]
+                  - columnheader "Arguments" [ref=e151]
+                  - columnheader "Group Sort descending." [ref=e152]
+                    - link "Group Sort descending." [ref=e162]
+                      - StaticText "Group"
+                      - StaticText "Sort descending."
+                  - columnheader "Recurrence" [ref=e153]
+                  - columnheader "Scheduled Date Sort descending." [ref=e154]
+                    - link "Scheduled Date Sort descending." [ref=e163]
+                      - StaticText "Scheduled Date"
+                      - StaticText "Sort descending."
+                  - columnheader "Log" [ref=e155]
+    - contentinfo
+      - paragraph
+        - generic
+          - StaticText "Thank you for creating with "
+          - link "WordPress" [ref=e28]
+          - StaticText "."
+      - paragraph
+        - strong
+          - link "Get Version 7.1.4" [ref=e6]

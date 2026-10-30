@@ -1,0 +1,11 @@
+{
+  "verdict": "FAIL",
+  "finished_local": "2026-10-31T03:01:16.879547+06:00",
+  "timezone": "Asia/Dhaka",
+  "elapsed_seconds": 3184,
+  "within_one_hour": true,
+  "browser_sessions_remaining": 0,
+  "global_settings_restored": true,
+  "retained_fixtures_and_gaps": "report.md; mutations.md; commerce-mutations.md",
+  "coverage_register": "coverage-register.json"
+}

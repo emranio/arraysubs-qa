@@ -1,0 +1,139 @@
+- generic
+  - link "Skip to content" [ref=e1]
+  - banner
+    - paragraph
+      - link "mirror-help.arrayhash.com" [ref=e11]
+    - navigation
+      - list
+        - listitem [level=1]
+          - link "#test" [ref=e44]
+          - button "#test submenu" [expanded=false, ref=e45]
+        - listitem [level=1]
+          - link "Premium" [ref=e46]
+          - button "Premium submenu" [expanded=false, ref=e47]
+        - listitem [level=1]
+          - link "Cart" [ref=e48]
+        - listitem [level=1]
+          - link "Checkout" [ref=e49]
+        - listitem [level=1]
+          - link "Classic Checkout QA" [ref=e50]
+        - listitem [level=1]
+          - link "My account" [ref=e51]
+        - listitem [level=1]
+          - link "Shop" [ref=e52]
+    - link "My Account" [ref=e6]
+      - image
+  - main
+    - heading "Order received" [level=1, ref=e2]
+    - paragraph
+      - StaticText "Thank you. Your order has been received."
+    - list
+      - listitem [level=1]
+        - StaticText "Order #:"
+        - StaticText "109474"
+      - listitem [level=1]
+        - StaticText "Date:"
+        - StaticText "31 October, 2026"
+      - listitem [level=1]
+        - StaticText "Total:"
+        - StaticText "$"
+        - StaticText "5.00"
+      - listitem [level=1]
+        - StaticText "Email:"
+        - StaticText "rqa0208-a@example.invalid"
+      - listitem [level=1]
+        - StaticText "Payment:"
+        - StaticText "Credit / Debit Card"
+    - heading "Order details" [level=2, ref=e3]
+    - table
+      - rowgroup
+        - row
+          - columnheader "Product" [ref=e16]
+          - columnheader "Total" [ref=e17]
+      - row
+        - cell "RQA0208 Trial Shipping (Every month) ×1" [ref=e12]
+          - link "RQA0208 Trial Shipping" [ref=e18]
+          - StaticText " (Every month) "
+          - strong
+            - StaticText "×1"
+        - cell "$0.00" [ref=e13]
+          - StaticText "$0.00"
+      - rowgroup
+        - row
+          - rowheader "Shipping:" [ref=e19]
+          - cell "Free shipping" [ref=e20]
+        - row
+          - rowheader "ArraySubs initial shipping: RQA0208 Trial Shipping:" [ref=e21]
+          - cell "$3.00" [ref=e22]
+            - StaticText "$3.00"
+        - row
+          - rowheader "Subscription Signup Fee:" [ref=e23]
+          - cell "$2.00" [ref=e24]
+            - StaticText "$2.00"
+        - row
+          - rowheader "Total:" [ref=e25]
+          - cell "$5.00" [ref=e26]
+            - StaticText "$5.00"
+    - generic
+      - heading "Related Subscriptions" [level=2, ref=e7]
+      - table
+        - rowgroup
+          - row
+            - columnheader "Subscription" [ref=e31]
+            - columnheader "Status" [ref=e32]
+            - columnheader "Next Payment" [ref=e33]
+            - columnheader "Total" [ref=e34]
+        - row
+          - cell "#109475" [ref=e27]
+            - link "#109475" [ref=e35]
+          - cell "Trial" [ref=e28]
+          - cell "7 November, 2026" [ref=e29]
+          - cell "$7.31 / Every month" [ref=e30]
+            - StaticText "$7.31 / Every month"
+    - heading "Shipping address" [level=2, ref=e4]
+    - group
+      - StaticText "RQA0208 CustomerA"
+      - LineBreak "\n"
+      - StaticText "1 QA Street"
+      - LineBreak "\n"
+      - StaticText "London"
+      - LineBreak "\n"
+      - StaticText "SW1A 1AA"
+    - heading "Billing address" [level=2, ref=e5]
+    - group
+      - StaticText "RQA0208 CustomerA"
+      - LineBreak "\n"
+      - StaticText "1 QA Street"
+      - LineBreak "\n"
+      - StaticText "London"
+      - LineBreak "\n"
+      - StaticText "SW1A 1AA"
+  - contentinfo
+    - heading "mirror-help.arrayhash.com" [level=2, ref=e8]
+      - link "mirror-help.arrayhash.com" [ref=e14]
+    - navigation " 2" [ref=e9]
+      - list
+        - listitem [level=1]
+          - link "Blog" [ref=e36]
+        - listitem [level=1]
+          - link "About" [ref=e37]
+        - listitem [level=1]
+          - link "FAQs" [ref=e38]
+        - listitem [level=1]
+          - link "Authors" [ref=e39]
+    - navigation " 3" [ref=e10]
+      - list
+        - listitem [level=1]
+          - link "Events" [ref=e40]
+        - listitem [level=1]
+          - link "Shop" [ref=e41]
+        - listitem [level=1]
+          - link "Patterns" [ref=e42]
+        - listitem [level=1]
+          - link "Themes" [ref=e43]
+    - paragraph
+      - StaticText "Twenty Twenty-Five"
+    - paragraph
+      - StaticText "Desgned with "
+      - link "WordPress" [ref=e15]
+  - status

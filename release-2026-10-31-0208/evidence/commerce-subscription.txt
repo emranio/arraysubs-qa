@@ -1,0 +1,180 @@
+- generic
+  - link "Skip to content" [ref=e1]
+  - banner
+    - paragraph
+      - link "mirror-help.arrayhash.com" [ref=e14]
+    - navigation
+      - list
+        - listitem [level=1]
+          - link "#test" [ref=e68]
+          - button "#test submenu" [expanded=false, ref=e69]
+        - listitem [level=1]
+          - link "Premium" [ref=e70]
+          - button "Premium submenu" [expanded=false, ref=e71]
+        - listitem [level=1]
+          - link "Cart" [ref=e72]
+        - listitem [level=1]
+          - link "Checkout" [ref=e73]
+        - listitem [level=1]
+          - link "Classic Checkout QA" [ref=e74]
+        - listitem [level=1]
+          - link "My account" [ref=e75]
+        - listitem [level=1]
+          - link "Shop" [ref=e76]
+    - link "My Account" [ref=e2]
+      - image
+    - button "Number of items in the cart: 0" [ref=e3]
+      - image
+  - main
+    - generic
+      - heading "My account" [level=1, ref=e4]
+      - navigation "Account pages" [ref=e5]
+        - list
+          - listitem [level=1]
+            - link "Dashboard" [ref=e37]
+          - listitem [level=1]
+            - link "Orders" [ref=e38]
+          - listitem [level=1]
+            - link "Subscriptions 1" [ref=e39]
+              - StaticText "Subscriptions 1"
+          - listitem [level=1]
+            - link "Store Credit" [ref=e40]
+          - listitem [level=1]
+            - link "My Features" [ref=e41]
+          - listitem [level=1]
+            - link "Downloads" [ref=e42]
+          - listitem [level=1]
+            - link "Addresses" [ref=e43]
+          - listitem [level=1]
+            - link "Payment methods" [ref=e44]
+          - listitem [level=1]
+            - link "Account details" [ref=e45]
+          - listitem [level=1]
+            - link "Log out" [ref=e46]
+      - heading "Subscription #109453" [level=2, ref=e6]
+      - table
+        - row
+          - rowheader "Status:" [ref=e17]
+          - cell "Active" [ref=e18]
+        - row
+          - rowheader "Product:" [ref=e19]
+          - cell "RQA0208 Paid Monthly" [ref=e20]
+            - link "RQA0208 Paid Monthly" [ref=e47]
+        - row
+          - rowheader "Start Date:" [ref=e21]
+          - cell "31 October, 2026 2:14 AM" [ref=e22]
+        - row
+          - rowheader "Next Payment:" [ref=e23]
+          - cell "1 December, 2026 2:14 AM" [ref=e24]
+        - row
+          - rowheader "Recurring Amount:" [ref=e25]
+          - cell "$7.31 Every month" [ref=e26]
+            - StaticText "$7.31 Every month"
+        - row
+          - cell "Renewals: Toggle auto-renew Your subscription will be renewed automatically. Pay your next renewal now instead of on 1 December, 2026 2:14 AM. Your billing period is not shortened — the following payment moves to 31 December, 2026 2:14 AM. Renew Early" [ref=e27]
+            - StaticText "Renewals:"
+            - button "Toggle auto-renew" [ref=e48]
+              - StaticText "On"
+            - StaticText "Your subscription will be renewed automatically."
+            - StaticText "Pay your next renewal now instead of on 1 December, 2026 2:14 AM. Your billing period is not shortened — the following payment moves to 31 December, 2026 2:14 AM."
+            - button "Renew Early" [ref=e49]
+        - row
+          - rowheader "Payment Method:" [ref=e28]
+          - cell "Stripe Manage payment methods" [ref=e29]
+            - StaticText "Stripe "
+            - link "Manage payment methods" [ref=e50]
+        - row
+          - rowheader "Card on File:" [ref=e30]
+          - cell "Visa ending in 4242 Expires 12/2030 Update payment method" [ref=e31]
+            - StaticText "Visa ending in 4242 "
+            - StaticText "Expires 12/2030"
+            - LineBreak "\n"
+            - link "Update payment method" [ref=e51]
+      - heading "Manage Your Subscription" [level=3, ref=e7]
+      - paragraph
+        - StaticText "Before you go, explore the flexible options above—a different plan or a short break may be a better fit."
+      - button "Cancel Subscription" [ref=e8]
+      - heading "Related Orders" [level=3, ref=e9]
+      - table
+        - rowgroup
+          - row
+            - columnheader "Order" [ref=e52]
+            - columnheader "Date" [ref=e53]
+            - columnheader "Status" [ref=e54]
+            - columnheader "Total" [ref=e55]
+            - columnheader "Actions" [ref=e56]
+        - row
+          - cell "#109452" [ref=e32]
+            - link "#109452" [ref=e57]
+          - cell "31 October, 2026" [ref=e33]
+          - cell "Completed" [ref=e34]
+          - cell "$7.31" [ref=e35]
+            - StaticText "$7.31"
+          - cell "View" [ref=e36]
+            - link "View" [ref=e58]
+      - heading "Subscription Notes" [level=3, ref=e10]
+      - list
+        - listitem [level=1]
+          - generic
+            - StaticText "Payment successful – "
+            - link "Order #109452" [ref=e59]
+            - StaticText " ($7.31)"
+          - StaticText "SYSTEM"
+          - StaticText "31 October, 2026 2:14 AM"
+        - listitem [level=1]
+          - generic
+            - StaticText "Status changed from "
+            - strong
+              - StaticText "Pending"
+            - StaticText " to "
+            - strong
+              - StaticText "Active"
+            - StaticText ". Changed by Gateway (Stripe)."
+          - StaticText "SYSTEM"
+          - StaticText "31 October, 2026 2:14 AM"
+        - listitem [level=1]
+          - generic
+            - StaticText "Status changed from "
+            - strong
+              - StaticText "new"
+            - StaticText " to "
+            - strong
+              - StaticText "Pending"
+            - StaticText ". Changed by System."
+          - StaticText "SYSTEM"
+          - StaticText "31 October, 2026 2:14 AM"
+        - listitem [level=1]
+          - StaticText "Subscription created."
+          - StaticText "SYSTEM"
+          - StaticText "31 October, 2026 2:14 AM"
+  - contentinfo
+    - heading "mirror-help.arrayhash.com" [level=2, ref=e11]
+      - link "mirror-help.arrayhash.com" [ref=e15]
+    - navigation " 2" [ref=e12]
+      - list
+        - listitem [level=1]
+          - link "Blog" [ref=e60]
+        - listitem [level=1]
+          - link "About" [ref=e61]
+        - listitem [level=1]
+          - link "FAQs" [ref=e62]
+        - listitem [level=1]
+          - link "Authors" [ref=e63]
+    - navigation " 3" [ref=e13]
+      - list
+        - listitem [level=1]
+          - link "Events" [ref=e64]
+        - listitem [level=1]
+          - link "Shop" [ref=e65]
+        - listitem [level=1]
+          - link "Patterns" [ref=e66]
+        - listitem [level=1]
+          - link "Themes" [ref=e67]
+    - paragraph
+      - StaticText "Twenty Twenty-Five"
+    - paragraph
+      - StaticText "Desgned with "
+      - link "WordPress" [ref=e16]
+  - generic
+  - generic
+  - status

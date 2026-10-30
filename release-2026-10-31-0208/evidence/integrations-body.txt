@@ -1,0 +1,94 @@
+Integrations
+
+Connect subscriptions to your other plugins
+
+Choose the connections you need
+
+Integrations start switched off. Review the setup details, enable the ones you need, then save your changes. Each connection takes effect only when its required plugin is active.
+
+AUTOMATION
+FlowMattic
+Plugin inactive
+
+Automate subscriptions, emails, credit, and features
+
+Setup details
+Enable integration
+Setup guide
+LEARNING
+LearnPress
+Plugin inactive
+
+Tie course access to an active subscription
+
+Setup details
+Enable integration
+Setup guide
+AFFILIATES
+Affiliates Manager
+Plugin inactive
+
+Keep paying the referring affiliate on every renewal
+
+Setup details
+Enable integration
+Setup guide
+CHECKOUT
+CartFlows
+Plugin inactive
+
+Create subscriptions from one-click offers
+
+Setup details
+Enable integration
+Setup guide
+CRM
+WP Fusion
+Plugin inactive
+
+Tag CRM contacts as subscriptions change
+
+Setup details
+Enable integration
+Setup guide
+CRM
+FluentCRM
+Plugin inactive
+
+Start automations from subscription events
+
+Setup details
+Enable integration
+Setup guide
+LEARNING
+Tutor LMS
+Plugin inactive
+
+Enrol students while their subscription runs
+
+Setup details
+Enable integration
+Setup guide
+LEARNING
+Academy LMS
+Plugin inactive
+
+Enrol students while their subscription runs
+
+Setup details
+Enable integration
+Setup guide
+LICENSING
+License Manager for WooCommerce
+Plugin inactive
+
+Keep licence keys alive only while paid for
+
+Setup details
+Enable integration
+Setup guide
+Save Settings
+
+Updated at: 31 October, 2026 2:19 AM
+
+Discard Changes

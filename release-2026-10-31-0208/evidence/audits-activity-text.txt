@@ -1,0 +1,348 @@
+Activity Audits
+Gateway Logs
+Renewal Failures
+Portal Action Failures
+Access-Rule Conflicts
+Scheduled-Job Logs
+
+View all subscription activity logs, system actions, and user events.
+
+All Authors
+System
+Admin
+Customer
+Gateway
+All Entities
+Subscription
+Member
+Product
+Order
+Coupon
+Email
+Settings
+Other
+Reset
+Date	Meta	Entity	Activity
+Oct 31, 2026, 2:18 AM	
+System
+ORDER
+Customer
+	
+Subscription #109475
+Member #3252
+Product #109466
+Order #109474
+	
+Payment successful - Order #109474 ($5.00)
+
+Oct 31, 2026, 2:18 AM	
+System
+SUBSCRIPTION
+Customer
+	
+Subscription #109475
+Member #3252
+Product #109466
+	
+Free trial started. Trial ends on 7 November, 2026 2:17 AM.
+
+Oct 31, 2026, 2:18 AM	
+admin
+SETTINGS
+Private
+	—	
+Settings updated: members_access.default_message.
+changes ->
+
+Oct 31, 2026, 2:18 AM	
+System
+EMAIL
+Private
+	
+Subscription #109475
+Member #3252
+Product #109466
+	
+Email sent: [ArraySubs] Trial Started
+
+Oct 31, 2026, 2:18 AM	
+stripe
+SUBSCRIPTION
+Private
+	
+Subscription #109475
+Member #3252
+Product #109466
+Order #109474
+	
+Stripe payment confirmed via official webhook for order #109474.
+
+Oct 31, 2026, 2:18 AM	
+RQA0208 CustomerA
+ORDER
+Private
+	
+Order #109474
+	
+Order #109474 status changed from Pending payment to Processing.
+changes ->
+
+Oct 31, 2026, 2:17 AM	
+System
+SUBSCRIPTION
+Customer
+	
+Subscription #109475
+Member #3252
+Product #109466
+	
+Status changed from new to Trial. Changed by System.
+changes ->
+
+Oct 31, 2026, 2:17 AM	
+System
+SUBSCRIPTION
+Customer
+	
+Subscription #109475
+Member #3252
+Product #109466
+	
+Subscription created.
+
+Oct 31, 2026, 2:17 AM	
+admin
+SUBSCRIPTION
+Private
+	
+Subscription #109453
+Member #3252
+Product #109433
+Member #1
+	
+Subscription details updated by admin (user #1):
+• Billing Company changed from "—" to "RQA0208".
+changes ->
+
+Oct 31, 2026, 2:16 AM	
+admin
+SETTINGS
+Private
+	—	
+Settings updated: members_access.default_message.
+changes ->
+
+Oct 31, 2026, 2:16 AM	
+admin
+SETTINGS
+Private
+	—	
+Settings updated: members_access.default_message.
+changes ->
+
+Oct 31, 2026, 2:16 AM	
+admin
+PRODUCT
+Private
+	
+Product #109466
+	
+Product #109466 updated: RQA0208 Trial Shipping — changed name, slug, status, virtual flag.
+changes ->
+
+Oct 31, 2026, 2:16 AM	
+admin
+PRODUCT
+Private
+	
+Product #109466
+	
+Product #109466 settings updated for RQA0208 Trial Shipping: Subscription length, Trial length, Signup fee, Initial shipping override, Renewal shipping override.
+changes ->
+
+Oct 31, 2026, 2:15 AM	
+admin
+PRODUCT
+Private
+	
+Product #109466
+	
+Product #109466 created: RQA0208 Paid Monthly (Copy).
+
+Oct 31, 2026, 2:14 AM	
+admin
+SETTINGS
+Private
+	—	
+Settings updated: members_access.url_rules.
+changes ->
+
+Oct 31, 2026, 2:14 AM	
+Sqa sqa-fix81-c1
+MEMBER
+Private
+	
+Member #2595
+	
+Member #2595 Customer data updated:
+• Shipping address line 2 changed from "RQA0208" to "—".
+changes ->
+
+Oct 31, 2026, 2:14 AM	
+admin
+SETTINGS
+Private
+	—	
+Settings updated: members_access.url_rules.
+changes ->
+
+Oct 31, 2026, 2:14 AM	
+RQA0208 CustomerA
+MEMBER
+Private
+	
+Member #3252
+	
+Member #3252 Customer data updated:
+• Billing first name changed from "—" to "RQA0208".
+• Billing last name changed from "—" to "CustomerA".
+• Billing address line 1 changed from "—" to "1 QA Street".
+• Billing city changed from "—" to "London".
+• Billing postcode changed from "—" to "SW1A 1AA".
+• Billing country changed from "—" to "GB".
+• Billing email changed from "—" to "rqa0208-a@example.invalid".
+• Shipping first name changed from "—" to "RQA0208".
+• Shipping last name changed from "—" to "CustomerA".
+• Shipping address line 1 changed from "—" to "1 QA Street".
+• Shipping city changed from "—" to "London".
+• Shipping postcode changed from "—" to "SW1A 1AA".
+• Shipping country changed from "—" to "GB".
+changes ->
+
+Oct 31, 2026, 2:14 AM	
+System
+ORDER
+Customer
+	
+Subscription #109453
+Member #3252
+Product #109433
+Order #109452
+	
+Payment successful - Order #109452 ($7.31)
+
+Oct 31, 2026, 2:14 AM	
+System
+SUBSCRIPTION
+Customer
+	
+Subscription #109453
+Member #3252
+Product #109433
+	
+Status changed from Pending to Active. Changed by Gateway (Stripe).
+changes ->
+
+Oct 31, 2026, 2:14 AM	
+System
+EMAIL
+Private
+	
+Subscription #109453
+Member #3252
+Product #109433
+	
+Email sent: [ArraySubs] New Subscription
+
+Oct 31, 2026, 2:14 AM	
+RQA0208 CustomerA
+ORDER
+Private
+	
+Order #109452
+	
+Order #109452 status changed from Pending payment to Completed.
+changes ->
+
+Oct 31, 2026, 2:14 AM	
+stripe
+SUBSCRIPTION
+Private
+	
+Subscription #109453
+Member #3252
+Product #109433
+Order #109452
+	
+Stripe payment confirmed via official webhook for order #109452.
+
+Oct 31, 2026, 2:14 AM	
+System
+SUBSCRIPTION
+Customer
+	
+Subscription #109453
+Member #3252
+Product #109433
+	
+Status changed from new to Pending. Changed by System.
+changes ->
+
+Oct 31, 2026, 2:14 AM	
+System
+SUBSCRIPTION
+Customer
+	
+Subscription #109453
+Member #3252
+Product #109433
+	
+Subscription created.
+
+Oct 31, 2026, 2:14 AM	
+RQA0208 CustomerA
+ORDER
+Private
+	
+Order #109452
+	
+Order #109452 status changed from Draft to Pending payment.
+changes ->
+
+Oct 31, 2026, 2:14 AM	
+admin
+SETTINGS
+Private
+	—	
+Settings updated: plan_switching.enabled.
+changes ->
+
+Oct 31, 2026, 2:14 AM	
+Sqa sqa-fix81-c1
+MEMBER
+Private
+	
+Member #2595
+	
+Member #2595 Customer data updated:
+• Shipping address line 2 changed from "—" to "RQA0208".
+changes ->
+
+Oct 31, 2026, 2:13 AM	
+admin
+SETTINGS
+Private
+	—	
+Settings updated: plan_switching.enabled.
+changes ->
+
+Oct 31, 2026, 2:13 AM	
+admin
+SETTINGS
+Private
+	—	
+Settings updated: members_access.url_rules.
+changes ->
+Previous
+Page 1 of 486(14576 total)
+Next

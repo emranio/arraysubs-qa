@@ -1,0 +1,192 @@
+- generic
+  - link "Skip to content" [ref=e1]
+  - banner
+    - paragraph
+      - link "mirror-help.arrayhash.com" [ref=e15]
+    - navigation
+      - list
+        - listitem [level=1]
+          - link "#test" [ref=e66]
+          - button "#test submenu" [expanded=false, ref=e67]
+        - listitem [level=1]
+          - link "Premium" [ref=e68]
+          - button "Premium submenu" [expanded=false, ref=e69]
+        - listitem [level=1]
+          - link "Cart" [ref=e70]
+        - listitem [level=1]
+          - link "Checkout" [ref=e71]
+        - listitem [level=1]
+          - link "Classic Checkout QA" [ref=e72]
+        - listitem [level=1]
+          - link "My account" [ref=e73]
+        - listitem [level=1]
+          - link "Shop" [ref=e74]
+    - link "My Account" [ref=e2]
+      - image
+    - button "Number of items in the cart: 0" [ref=e3]
+      - image
+  - main
+    - generic
+      - heading "My account" [level=1, ref=e4]
+      - navigation "Account pages" [ref=e5]
+        - list
+          - listitem [level=1]
+            - link "Dashboard" [ref=e38]
+          - listitem [level=1]
+            - link "Orders" [ref=e39]
+          - listitem [level=1]
+            - link "Subscriptions 4" [ref=e40]
+              - StaticText "Subscriptions 4"
+          - listitem [level=1]
+            - link "Store Credit" [ref=e41]
+          - listitem [level=1]
+            - link "My Features" [ref=e42]
+          - listitem [level=1]
+            - link "Downloads" [ref=e43]
+          - listitem [level=1]
+            - link "Addresses" [ref=e44]
+          - listitem [level=1]
+            - link "Payment methods" [ref=e45]
+          - listitem [level=1]
+            - link "Account details" [ref=e46]
+          - listitem [level=1]
+            - link "Log out" [ref=e47]
+      - status
+        - strong
+          - StaticText "This subscription is scheduled to cancel on 7 November, 2026 2:17 AM."
+        - StaticText "You will retain access until that date and no further payments will be charged."
+      - heading "Subscription #109475" [level=2, ref=e6]
+      - table
+        - row
+          - rowheader "Status:" [ref=e19]
+          - cell "Trial Pending Cancellation" [ref=e20]
+            - StaticText "Trial"
+            - StaticText "Pending Cancellation"
+        - row
+          - rowheader "Product:" [ref=e21]
+          - cell "RQA0208 Trial Shipping" [ref=e22]
+            - link "RQA0208 Trial Shipping" [ref=e48]
+        - row
+          - rowheader "Start Date:" [ref=e23]
+          - cell "31 October, 2026 2:17 AM" [ref=e24]
+        - row
+          - rowheader "Cancels On:" [ref=e25]
+          - cell "7 November, 2026 2:17 AM" [ref=e26]
+        - row
+          - rowheader "Recurring Amount:" [ref=e27]
+          - cell "$7.31 Every month" [ref=e28]
+            - StaticText "$7.31 Every month"
+        - row
+          - rowheader "Payment Method:" [ref=e29]
+          - cell "Stripe Manage payment methods" [ref=e30]
+            - StaticText "Stripe "
+            - link "Manage payment methods" [ref=e49]
+        - row
+          - rowheader "Card on File:" [ref=e31]
+          - cell "Visa ending in 4242 Expires 12/2030" [ref=e32]
+            - StaticText "Visa ending in 4242 "
+            - StaticText "Expires 12/2030"
+      - heading "Manage Your Subscription" [level=3, ref=e7]
+      - button "Undo Scheduled Cancellation" [ref=e8]
+      - heading "Shipping Address" [level=3, ref=e9]
+      - paragraph
+        - StaticText "Shipping is charged on each renewal order."
+      - group
+        - StaticText "RQA0208 CustomerA"
+        - LineBreak "\n"
+        - StaticText "1 QA Street"
+        - LineBreak "\n"
+        - StaticText "London, SW1A 1AA"
+        - LineBreak "\n"
+        - StaticText "GB"
+      - button "Update Shipping Address" [ref=e16]
+      - heading "Related Orders" [level=3, ref=e10]
+      - table
+        - rowgroup
+          - row
+            - columnheader "Order" [ref=e50]
+            - columnheader "Date" [ref=e51]
+            - columnheader "Status" [ref=e52]
+            - columnheader "Total" [ref=e53]
+            - columnheader "Actions" [ref=e54]
+        - row
+          - cell "#109474" [ref=e33]
+            - link "#109474" [ref=e55]
+          - cell "31 October, 2026" [ref=e34]
+          - cell "Processing" [ref=e35]
+          - cell "$5.00" [ref=e36]
+            - StaticText "$5.00"
+          - cell "View" [ref=e37]
+            - link "View" [ref=e56]
+      - heading "Subscription Notes" [level=3, ref=e11]
+      - list
+        - listitem [level=1]
+          - generic
+            - StaticText "Subscription scheduled to cancel on "
+            - strong
+              - StaticText "7 November, 2026 2:17 AM"
+            - StaticText ". Scheduled by Customer (RQA0208 CustomerA). Reason: Other"
+          - StaticText "CUSTOMER"
+          - StaticText "RQA0208 CustomerA"
+          - StaticText "31 October, 2026 2:36 AM"
+        - listitem [level=1]
+          - generic
+            - StaticText "Payment successful – "
+            - link "Order #109474" [ref=e57]
+            - StaticText " ($5.00)"
+          - StaticText "SYSTEM"
+          - StaticText "31 October, 2026 2:18 AM"
+        - listitem [level=1]
+          - generic
+            - StaticText "Free trial started. Trial ends on "
+            - strong
+              - StaticText "7 November, 2026 2:17 AM"
+            - StaticText "."
+          - StaticText "SYSTEM"
+          - StaticText "31 October, 2026 2:18 AM"
+        - listitem [level=1]
+          - generic
+            - StaticText "Status changed from "
+            - strong
+              - StaticText "new"
+            - StaticText " to "
+            - strong
+              - StaticText "Trial"
+            - StaticText ". Changed by System."
+          - StaticText "SYSTEM"
+          - StaticText "31 October, 2026 2:17 AM"
+        - listitem [level=1]
+          - StaticText "Subscription created."
+          - StaticText "SYSTEM"
+          - StaticText "31 October, 2026 2:17 AM"
+  - contentinfo
+    - heading "mirror-help.arrayhash.com" [level=2, ref=e12]
+      - link "mirror-help.arrayhash.com" [ref=e17]
+    - navigation " 2" [ref=e13]
+      - list
+        - listitem [level=1]
+          - link "Blog" [ref=e58]
+        - listitem [level=1]
+          - link "About" [ref=e59]
+        - listitem [level=1]
+          - link "FAQs" [ref=e60]
+        - listitem [level=1]
+          - link "Authors" [ref=e61]
+    - navigation " 3" [ref=e14]
+      - list
+        - listitem [level=1]
+          - link "Events" [ref=e62]
+        - listitem [level=1]
+          - link "Shop" [ref=e63]
+        - listitem [level=1]
+          - link "Patterns" [ref=e64]
+        - listitem [level=1]
+          - link "Themes" [ref=e65]
+    - paragraph
+      - StaticText "Twenty Twenty-Five"
+    - paragraph
+      - StaticText "Desgned with "
+      - link "WordPress" [ref=e18]
+  - generic
+  - generic
+  - status

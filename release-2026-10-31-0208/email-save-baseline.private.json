@@ -1,0 +1,114 @@
+{
+  "arraysubs_new_subscription": {
+    "original": "",
+    "state": "original-restored-verified"
+  },
+  "arraysubs_renewal_reminder": {
+    "original": "",
+    "state": "original-restored-verified"
+  },
+  "arraysubs_payment_successful": {
+    "original": "",
+    "state": "original-restored-verified"
+  },
+  "arraysubs_payment_failed": {
+    "original": "",
+    "state": "original-restored-verified"
+  },
+  "arraysubs_trial_started": {
+    "original": "",
+    "state": "original-restored-verified"
+  },
+  "arraysubs_trial_converted": {
+    "original": "",
+    "state": "original-restored-verified"
+  },
+  "arraysubspro_credit_used_email": {
+    "original": "",
+    "state": "original-restored-verified"
+  },
+  "arraysubs_subscription_on_hold": {
+    "original": "",
+    "state": "original-restored-verified"
+  },
+  "arraysubs_subscription_pending_cancellation": {
+    "original": "",
+    "state": "original-restored-verified"
+  },
+  "arraysubs_subscription_cancelled": {
+    "original": "",
+    "state": "original-restored-verified"
+  },
+  "arraysubs_subscription_expired": {
+    "original": "",
+    "state": "original-restored-verified"
+  },
+  "arraysubs_expiring_soon": {
+    "original": "",
+    "state": "original-restored-verified"
+  },
+  "arraysubs_auto_downgrade": {
+    "original": "",
+    "state": "original-restored-verified"
+  },
+  "arraysubs_retention_discount_accepted": {
+    "original": "",
+    "state": "original-restored-verified"
+  },
+  "arraysubs_subscription_reactivated": {
+    "original": "",
+    "state": "original-restored-verified"
+  },
+  "arraysubs_subscription_skipped": {
+    "original": "",
+    "state": "original-restored-verified"
+  },
+  "arraysubs_skip_undone": {
+    "original": "",
+    "state": "original-restored-verified"
+  },
+  "arraysubs_subscription_paused": {
+    "original": "",
+    "state": "original-restored-verified"
+  },
+  "arraysubs_subscription_resumed": {
+    "original": "",
+    "state": "original-restored-verified"
+  },
+  "arraysubs_renewal_requires_verification": {
+    "original": "",
+    "state": "original-restored-verified"
+  },
+  "arraysubs_card_expiring": {
+    "original": "",
+    "state": "original-restored-verified"
+  },
+  "arraysubs_admin_new_subscription": {
+    "original": "",
+    "state": "original-restored-verified"
+  },
+  "arraysubs_admin_payment_failed": {
+    "original": "",
+    "state": "original-restored-verified"
+  },
+  "arraysubs_admin_subscription_pending_cancellation": {
+    "original": "",
+    "state": "original-restored-verified"
+  },
+  "arraysubs_admin_subscription_cancelled": {
+    "original": "",
+    "state": "original-restored-verified"
+  },
+  "arraysubspro_credit_added_email": {
+    "original": "",
+    "state": "original-restored-verified"
+  },
+  "arraysubspro_credit_expiring_email": {
+    "original": "",
+    "state": "original-restored-verified"
+  },
+  "arraysubspro_credit_expired_email": {
+    "original": "",
+    "state": "original-restored-verified"
+  }
+}

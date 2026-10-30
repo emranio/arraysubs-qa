@@ -1,0 +1,16 @@
+Created task #150: Canonical protected page denies an entitled signed-in customer while fresh URL allows access
+  File: /Users/emran/Local Sites/wp-test2/app/public/wp-content/plugins/qa/issues/tasks/150-canonical-protected-page-denies-an-entitled-signed.md
+  Status: open | Priority: high
+  Tags: release-qa, access, environment, cache
+Created task #151: Release QA deployment alignment unverified; new Webhooks and changed UI absent on live target
+  File: /Users/emran/Local Sites/wp-test2/app/public/wp-content/plugins/qa/issues/tasks/151-release-qa-deployment-alignment-unverified-new.md
+  Status: open | Priority: high
+  Tags: release-qa, environment, coverage-blocker
+Created task #152: Live storefront repeats subscription details and puts trial explanations in amount columns
+  File: /Users/emran/Local Sites/wp-test2/app/public/wp-content/plugins/qa/issues/tasks/152-live-storefront-repeats-subscription-details-and.md
+  Status: open | Priority: medium
+  Tags: release-qa, storefront, copy, trial, checkout
+Created task #153: Customer Pause cannot submit when a reason is required because the flow has no reason field
+  File: /Users/emran/Local Sites/wp-test2/app/public/wp-content/plugins/qa/issues/tasks/153-customer-pause-cannot-submit-when-a-reason-is.md
+  Status: open | Priority: critical
+  Tags: release-qa, pause, customer-portal, validation, release-blocker

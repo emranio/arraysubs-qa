@@ -792,3 +792,15 @@
 {"timestamp":"2026-10-30T04:03:49.098847+06:00","action":"edit","task_id":148,"detail":"Freemius recovery click rejects inherited double-slash sender labels"}
 {"timestamp":"2026-10-30T04:03:49.099012+06:00","action":"block","task_id":148,"detail":"Sender configuration corrected live and persisted; existing signed recovery link and provider-side error disclosure still need Freemius verification."}
 {"timestamp":"2026-10-30T04:10:20.178699+06:00","action":"create","task_id":149,"detail":"Edge embedded Freemius checkout stalls for default and custom coupons"}
+{"timestamp":"2026-10-31T02:16:00.858729+06:00","action":"create","task_id":150,"detail":"Canonical protected page denies an entitled signed-in customer while fresh URL allows access"}
+{"timestamp":"2026-10-31T02:17:52.316616+06:00","action":"create","task_id":151,"detail":"Release QA deployment alignment unverified; new Webhooks and changed UI absent on live target"}
+{"timestamp":"2026-10-31T02:18:43.073511+06:00","action":"create","task_id":152,"detail":"Live storefront repeats subscription details and puts trial explanations in amount columns"}
+{"timestamp":"2026-10-31T02:20:58.244516+06:00","action":"edit","task_id":127,"detail":"Escape freezes cancellation editor before discard confirmation"}
+{"timestamp":"2026-10-31T02:20:58.260039+06:00","action":"edit","task_id":115,"detail":"Portal Action Failures splits HTTP status code digits across lines"}
+{"timestamp":"2026-10-31T02:25:01.537219+06:00","action":"edit","task_id":150,"detail":"Canonical protected page denies an entitled signed-in customer while fresh URL allows access"}
+{"timestamp":"2026-10-31T02:25:01.552886+06:00","action":"edit","task_id":146,"detail":"Subscription related-orders table pushes invoice action outside mobile viewport"}
+{"timestamp":"2026-10-31T02:27:53.296341+06:00","action":"edit","task_id":8,"detail":"Subscription meta is saved onto Grouped and External products"}
+{"timestamp":"2026-10-31T02:29:50.386047+06:00","action":"create","task_id":153,"detail":"Customer Pause cannot submit when a reason is required because the flow has no reason field"}
+{"timestamp":"2026-10-31T02:33:16.054864+06:00","action":"edit","task_id":19,"detail":"Subscription Box uploads are publicly readable by URL (PDF/CSV allowed)"}
+{"timestamp":"2026-10-31T02:44:16.621658+06:00","action":"edit","task_id":150,"detail":"Canonical protected page denies an entitled signed-in customer while fresh URL allows access"}
+{"timestamp":"2026-10-31T02:44:16.63701+06:00","action":"edit","task_id":153,"detail":"Customer Pause cannot submit when a reason is required because the flow has no reason field"}

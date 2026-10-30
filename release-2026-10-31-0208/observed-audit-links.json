@@ -1,0 +1,26 @@
+[
+  {
+    "href": "https://mirror-help.arrayhash.com/wp-admin/admin.php?page=arraysubs-mainadmin#/audits/activity-audits",
+    "name": "Activity Audits"
+  },
+  {
+    "href": "https://mirror-help.arrayhash.com/wp-admin/admin.php?page=arraysubs-mainadmin#/settings/gateways",
+    "name": "Gateway Logs"
+  },
+  {
+    "href": "https://mirror-help.arrayhash.com/wp-admin/admin.php?page=arraysubs-mainadmin#/audits/renewal-failures",
+    "name": "Renewal Failures"
+  },
+  {
+    "href": "https://mirror-help.arrayhash.com/wp-admin/admin.php?page=arraysubs-mainadmin#/audits/portal-action-failures",
+    "name": "Portal Action Failures"
+  },
+  {
+    "href": "https://mirror-help.arrayhash.com/wp-admin/admin.php?page=arraysubs-mainadmin#/audits/access-rule-conflicts",
+    "name": "Access-Rule Conflicts"
+  },
+  {
+    "href": "https://mirror-help.arrayhash.com/wp-admin/admin.php?page=arraysubs-mainadmin#/audits/scheduled-job-logs",
+    "name": "Scheduled-Job Logs"
+  }
+]

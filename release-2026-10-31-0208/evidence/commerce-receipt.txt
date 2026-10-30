@@ -1,0 +1,119 @@
+- generic
+  - link "Skip to content" [ref=e1]
+  - banner
+    - paragraph
+      - link "mirror-help.arrayhash.com" [ref=e10]
+    - navigation
+      - list
+        - listitem [level=1]
+          - link "#test" [ref=e37]
+          - button "#test submenu" [expanded=false, ref=e38]
+        - listitem [level=1]
+          - link "Premium" [ref=e39]
+          - button "Premium submenu" [expanded=false, ref=e40]
+        - listitem [level=1]
+          - link "Cart" [ref=e41]
+        - listitem [level=1]
+          - link "Checkout" [ref=e42]
+        - listitem [level=1]
+          - link "Classic Checkout QA" [ref=e43]
+        - listitem [level=1]
+          - link "My account" [ref=e44]
+        - listitem [level=1]
+          - link "Shop" [ref=e45]
+    - link "My Account" [ref=e5]
+      - image
+  - main
+    - heading "Order completed" [level=1, ref=e2]
+    - paragraph
+      - StaticText "Thank you. Your order has been fulfilled."
+    - list
+      - listitem [level=1]
+        - StaticText "Order #:"
+        - StaticText "109452"
+      - listitem [level=1]
+        - StaticText "Date:"
+        - StaticText "31 October, 2026"
+      - listitem [level=1]
+        - StaticText "Total:"
+        - StaticText "$"
+        - StaticText "7.31"
+      - listitem [level=1]
+        - StaticText "Email:"
+        - StaticText "rqa0208-a@example.invalid"
+      - listitem [level=1]
+        - StaticText "Payment:"
+        - StaticText "Credit / Debit Card"
+    - heading "Order details" [level=2, ref=e3]
+    - table
+      - rowgroup
+        - row
+          - columnheader "Product" [ref=e15]
+          - columnheader "Total" [ref=e16]
+      - row
+        - cell "RQA0208 Paid Monthly (Every month) ×1" [ref=e11]
+          - link "RQA0208 Paid Monthly" [ref=e17]
+          - StaticText " (Every month) "
+          - strong
+            - StaticText "×1"
+        - cell "$7.31" [ref=e12]
+          - StaticText "$7.31"
+      - rowgroup
+        - row
+          - rowheader "Total:" [ref=e18]
+          - cell "$7.31" [ref=e19]
+            - StaticText "$7.31"
+    - generic
+      - heading "Related Subscriptions" [level=2, ref=e6]
+      - table
+        - rowgroup
+          - row
+            - columnheader "Subscription" [ref=e24]
+            - columnheader "Status" [ref=e25]
+            - columnheader "Next Payment" [ref=e26]
+            - columnheader "Total" [ref=e27]
+        - row
+          - cell "#109453" [ref=e20]
+            - link "#109453" [ref=e28]
+          - cell "Active" [ref=e21]
+          - cell "1 December, 2026" [ref=e22]
+          - cell "$7.31 / Every month" [ref=e23]
+            - StaticText "$7.31 / Every month"
+    - heading "Billing address" [level=2, ref=e4]
+    - group
+      - StaticText "RQA0208 CustomerA"
+      - LineBreak "\n"
+      - StaticText "1 QA Street"
+      - LineBreak "\n"
+      - StaticText "London"
+      - LineBreak "\n"
+      - StaticText "SW1A 1AA"
+  - contentinfo
+    - heading "mirror-help.arrayhash.com" [level=2, ref=e7]
+      - link "mirror-help.arrayhash.com" [ref=e13]
+    - navigation " 2" [ref=e8]
+      - list
+        - listitem [level=1]
+          - link "Blog" [ref=e29]
+        - listitem [level=1]
+          - link "About" [ref=e30]
+        - listitem [level=1]
+          - link "FAQs" [ref=e31]
+        - listitem [level=1]
+          - link "Authors" [ref=e32]
+    - navigation " 3" [ref=e9]
+      - list
+        - listitem [level=1]
+          - link "Events" [ref=e33]
+        - listitem [level=1]
+          - link "Shop" [ref=e34]
+        - listitem [level=1]
+          - link "Patterns" [ref=e35]
+        - listitem [level=1]
+          - link "Themes" [ref=e36]
+    - paragraph
+      - StaticText "Twenty Twenty-Five"
+    - paragraph
+      - StaticText "Desgned with "
+      - link "WordPress" [ref=e14]
+  - status

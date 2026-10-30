@@ -1,0 +1,530 @@
+Home
+
+Your subscription business, in one glance
+
+7 days
+30 days
+90 days
+This month
+Easy Setup Wizard
++ Subscription Plan
+Last updated just now
+Refresh
+Dismiss
+Your subscription essentials are ready
+
+Complete your setup in any order. Payment setup is optional.
+
+3 of 3 complete
+Done
+Set up your subscription engine
+
+Re-configure how subscriptions work for your store.
+
+Review setup
+Done
+Add a subscription plan
+
+Give customers something worth subscribing to.
+
+Add another plan
+Done
+Set up payments
+
+Connect an automatic gateway for recurring payments.
+
+Manage payments
+OBSERVED DATA
+USD · BASE CURRENCY
+Your subscription base is growing — 46 live subscriptions generating $8,910 in monthly recurring revenue.
+Review the 34 subscriptions needing attention →
+CURRENT MRR
+$8,910
+≈ $106,916 ARR run rate
++ $7/mo trial pipeline (not included) · 8 bundle children excluded
+MRR momentum · 12 months
++27 net
+45
+Active subscriptions
+Net change
+46 live incl. 1 trial →
+—
+69
+New subscriptions
+New subscriptions
+Last 30 days
++15.1%
+$5,093
+Collected revenue
+Collected revenue
+Refund-adjusted · 358 orders
+DEEPER INSIGHTS
+PRO
+Pro reports and guidance on available data
+Revenue forecastPRO
+AI forecast →
+
+No saved MRR forecast is available. It may not have been generated yet, or its saved results may have expired or been cleared.
+
+Open AI forecast, select MRR and generate a forecast, then refresh this page. The report will guide you if an AI connection or active subscriptions are needed.
+
+Revenue at riskPRO
+$1,405.71/mo
+across 12 subscriptions
+Overdue renewals
+$1,078.23
+On hold
+$327.49
+High churn risk
+$222.50
+Scheduled cancellations
+$0.00
+
+Categories overlap — a held subscription is often overdue too. The headline counts each subscription once.
+
+Top products by MRRPRO
+All products →
+1
+SQA Daily Stripe Plan
+$2,669.98
+2
+[QA] Pro Monthly
+$1,800.00
+3
+[QA] Physical Box Monthly
+$1,800.00
+4
+SQA Daily Trial Plan
+$889.99
+5
+Daily Cycle
+$821.81
+
+Share of the $8,910 current MRR attributed to each product.
+
+Retention pulsePRO
+Retention analytics →
+95.2%
+Customer retention
+99.3%
+MRR retention
+$3,971
+MRR retained
+84.6%
+Involuntary churn
+
+From the retention ledger, which classifies involuntary churn and natural expiries separately from cancellations.
+
+Upcoming renewals
+
+The next charges your customers will see.
+
+View all →
+CUSTOMER
+PRODUCT
+DUE
+AMOUNT
+STATUS
+Sqa sqa-dv58-classic
+SQA Daily Stripe Plan
+Oct 31
+$7.31
+Active
+Sqa sqa-fix57-decline
+SQA Daily Trial Plan
+Oct 31
+$7.31
+Active
+Sqa Block
+SQA Daily Stripe Plan
+Oct 31
+$7.31
+Active
+Sqa Block
+SQA Daily Stripe Plan
+Oct 31
+$7.31
+Active
+Sqa Block
+SQA Daily Stripe Plan
+Oct 31
+$7.31
+Active
+Recent subscriptions
+
+The latest sign-ups across all products.
+
+View all →
+CUSTOMER
+PRODUCT
+STARTED
+PRICE
+STATUS
+RQA0208 CustomerA
+RQA0208 Trial Shipping
+Oct 31
+$7.31
+Trial
+RQA0208 CustomerA
+RQA0208 Paid Monthly
+Oct 31
+$7.31
+Active
+Sqa sqa-fix81-c1
+[QA] Physical Box Monthly
+Oct 21
+$1,800.00
+Active
+SQA Fix75
+Pro Monthly
+Oct 21
+$99.98
+Active
+Sqa Fix69mail
+Smoke Plan Plus
+Oct 20
+$20.00
+Pending
+MRR historyPRO
+
+Monthly recurring revenue over the last 12 months.
+
+Subscription performance →
+$8,910
+Dec
+Jan
+Feb
+Mar
+Apr
+May
+Jun
+Jul
+Aug
+Sep
+Oct
+
+Reconstructed from each subscription's start and cancellation dates at its current price, so earlier months are an estimate.
+
+Churn riskPRO
+AI churn analysis →
+1high
+9medium
+46low risk
+TOP RISK DRIVERS
+High monthly value
+23
+Subscription on hold
+10
+Renewal date has passed
+8
+No successful payment yet
+4
+
+Scored from subscription signals. The AI layer has not been generated yet.
+
+Subscriber movement
+
+69 new · 42 cancelled · net +27 in last 30 days
+
+New
+Cancelled
+Net movement
+Oct 2
+Oct 4
+Oct 7
+Oct 10
+Oct 13
+Oct 16
+Oct 19
+Oct 22
+Oct 25
+Oct 28
+0
+10
+20
+30
+40
+-10
+0
+10
+20
+30
+
+Raw start and completed-cancellation events from the subscription record.
+
+Status mix
+
+Every subscription by current status.
+
+499
+subscriptions
+Pending
+16
+3.2%
+Active
+45
+9.0%
+On Hold
+10
+2.0%
+Cancelled
+410
+82.2%
+Expired
+17
+3.4%
+Trial
+1
+0.2%
+
+Active + Trial = 46 live. Select a status to open the filtered list.
+
+Action Center
+
+34 unique subscriptions · ranked by urgency. One subscription can appear under several signals.
+
+Open list →
+Stale pending subscriptions
+Created 7 or more days ago and never activated.
+16
+Review
+On-hold subscriptions
+Held by a failed payment or a manual hold.
+10
+Review
+Overdue or failed renewals
+Renewal payment did not complete on time.
+7
+Review
+Trials ending soon
+Trial ends within 7 days without a successful payment.
+1
+Review
+Scheduled cancellations
+Cancellation completes at the end of the period.
+0
+Clear
+Expiring fixed-term
+Reaches its end date within 30 days.
+0
+Clear
+Renewal outlook
+
+Renewals due ahead, with expected recurring subtotal.
+
+Upcoming renewals →
+NEXT 7 DAYS
+27
+$2,149 expected
+NEXT 30 DAYS
+default
+31
+$4,074 expected
+NEXT 90 DAYS
+36
+$4,164 expected
+
+Recurring subtotal only — shipping and tax are added by the renewal calculator at charge time.
+
+Billing operations
+Renewal queue healthy · last run 46 minutes ago
+42 renewals scheduled
+RefundsPRO
+
+Refunded subscription payments in this range.
+
+Refund report →
+$39.99
+0.8% of collected revenue
+MORE INSIGHTS
+Member insights
+
+Customer accounts with subscription records, across all time.
+
+View report
+Members
+393
+With active subscriptions
+32
+
+Explore member spending, yearly recurring value, orders, discounts, and refunds.
+
+Gateway health & webhooks
+
+Current payment gateway readiness.
+
+View report
+Registered
+4
+Enabled
+2
+Ready
+2
+
+Open gateway health to review capabilities, webhook history, and processing results.
+
+Orders AnalyticsPRO
+
+Store order totals for the selected period.
+
+View report
+Orders
+342
+Net sales
+$4,917.25
+Average order value
+$14.49
+Items sold
+358
+Customers
+40
+
+Uses WooCommerce Analytics date and order status settings.
+
+Revenue AnalyticsPRO
+
+Store sales and subscription revenue for the selected period.
+
+View report
+Net sales
+$4,917.25
+Gross sales
+$4,957.24
+Refunds
+$39.99
+Subscription purchases
+$2,294.99
+Renewals
+$2,622.26
+Plan switches
+$39.99
+Credit purchases
+$0.00
+
+Uses WooCommerce Analytics date and order status settings. Type amounts are net sales for the recorded order types.
+
+Variations AnalyticsPRO
+
+Sales of product variations for the selected period.
+
+View report
+Items sold
+0
+Net sales
+$0.00
+Variations sold
+0
+Orders
+0
+
+Uses the same variation sales and order status rules as WooCommerce Analytics.
+
+Customers AnalyticsPRO
+
+Customer counts and lifetime spending across the store.
+
+View report
+Customers
+434
+Average lifetime spend
+$275.64
+Average order value
+$35.39
+Average orders per customer
+7.5
+
+All customers and lifetime order totals; independent of the selected period.
+
+OrdersPRO
+
+Order records created during the selected period, grouped by type.
+
+View report
+Order records
+397
+Credit Purchase
+0
+Subs Trial
+13
+Subs Renew
+333
+Subs Upgrade
+1
+Subs Purchase
+50
+Other / unclassified
+0
+
+Created in the selected period across all order statuses. Excludes trash and drafts. Uses recorded order types, as the Orders list does.
+
+Store Credit BalancesPRO
+
+Current customer and subscription credit, grouped by currency.
+
+View report
+Customer credit (USD)
+$151.82
+Customers with credit
+11
+Subscriptions with credit
+1
+Subscription credit (USD)
+$6.00 USD
+
+Current positive balances, independent of the selected dates. Customer credit uses the store currency; subscription balances stay in their recorded currencies.
+
+Credit Transaction HistoryPRO
+
+All-time transaction count and the latest credit movements.
+
+View report
+All-time transactions
+66
+RQA0208 CustomerA · Admin Adjustment
+31 October, 2026 2:21 AM
++$1.00 USD
+ArraySubs Credit Harness · reversal
+3 September, 2026 8:41 PM
++$3.00 USD
+ArraySubs Credit Harness · reversal
+3 September, 2026 8:41 PM
++$2.00 USD
+
+Latest three published transactions across all dates. Each amount keeps its recorded currency; credits and debits are not combined into a revenue total.
+
+Activity Audit TrailPRO
+
+Recorded changes and actions for the selected dates.
+
+View report
+Recorded actions
+3,194
+Skip cancelled by RQA0208 CustomerA. Payment date restored: 31 December, 2026.
+System · 31 October, 2026 2:21 AM
+Email sent: [ArraySubs] Renewal Skip Removed
+System · 31 October, 2026 2:21 AM
+1 renewal cycle skipped by RQA0208 CustomerA. Next payment date: 31 January, 2027.
+System · 31 October, 2026 2:20 AM
+
+Latest three records from 2 October, 2026 to 31 October, 2026 in the site timezone. Counts reflect recorded logs.
+
+Scheduled Job LogsPRO
+
+Job execution history for the selected dates.
+
+View report
+Recorded executions
+16,450
+[Sweep Stripe Renewal Verifications] ✓ Success Ran scheduled action.
+31 October, 2026 2:19 AM
+Success
+[Sweep Retention Event Outbox] ✓ Success Ran scheduled action for subscription #5376.
+31 October, 2026 2:13 AM
+Success
+[Sweep Paddle Plan Switch Checkouts] ✓ Success Ran scheduled action.
+31 October, 2026 2:13 AM
+Success
+
+Latest three records from 2 October, 2026 to 31 October, 2026 in the site timezone. Counts reflect recorded logs.
+
+Observed data · base currency USD · site timezone +06:00 · generated just now

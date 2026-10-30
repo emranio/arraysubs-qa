@@ -1,0 +1,220 @@
+- generic
+  - link "Skip to content" [ref=e1]
+  - banner
+    - paragraph
+      - link "mirror-help.arrayhash.com" [ref=e12]
+    - navigation
+      - list
+        - listitem [level=1]
+          - link "#test" [ref=e70]
+          - button "#test submenu" [expanded=false, ref=e71]
+        - listitem [level=1]
+          - link "Premium" [ref=e72]
+          - button "Premium submenu" [expanded=false, ref=e73]
+        - listitem [level=1]
+          - link "Cart" [ref=e74]
+        - listitem [level=1]
+          - link "Checkout" [ref=e75]
+        - listitem [level=1]
+          - link "Classic Checkout QA" [ref=e76]
+        - listitem [level=1]
+          - link "My account" [ref=e77]
+        - listitem [level=1]
+          - link "Shop" [ref=e78]
+    - link "My Account" [ref=e2]
+      - image
+    - button "Number of items in the cart: 0" [ref=e3]
+      - image
+  - main
+    - generic
+      - heading "My account" [level=1, ref=e4]
+      - navigation "Account pages" [ref=e5]
+        - list
+          - listitem [level=1]
+            - link "Dashboard" [ref=e39]
+          - listitem [level=1]
+            - link "Orders" [ref=e40]
+          - listitem [level=1]
+            - link "Subscriptions 1" [ref=e41]
+              - StaticText "Subscriptions 1"
+          - listitem [level=1]
+            - link "Store Credit" [ref=e42]
+          - listitem [level=1]
+            - link "My Features" [ref=e43]
+          - listitem [level=1]
+            - link "Downloads" [ref=e44]
+          - listitem [level=1]
+            - link "Addresses" [ref=e45]
+          - listitem [level=1]
+            - link "Payment methods" [ref=e46]
+          - listitem [level=1]
+            - link "Account details" [ref=e47]
+          - listitem [level=1]
+            - link "Log out" [ref=e48]
+      - heading "Subscription #109453" [level=2, ref=e6]
+      - table
+        - row
+          - rowheader "Status:" [ref=e15]
+          - cell "Cancelled" [ref=e16]
+        - row
+          - rowheader "Product:" [ref=e17]
+          - cell "RQA0208 Paid Monthly" [ref=e18]
+            - link "RQA0208 Paid Monthly" [ref=e49]
+        - row
+          - rowheader "Start Date:" [ref=e19]
+          - cell "31 October, 2026 2:14 AM" [ref=e20]
+        - row
+          - rowheader "End Date:" [ref=e21]
+          - cell "31 October, 2026 2:56 AM" [ref=e22]
+        - row
+          - rowheader "Recurring Amount:" [ref=e23]
+          - cell "$7.31 Every month" [ref=e24]
+            - StaticText "$7.31 Every month"
+        - row
+          - rowheader "Payment Method:" [ref=e25]
+          - cell "Stripe" [ref=e26]
+        - row
+          - rowheader "Card on File:" [ref=e27]
+          - cell "Visa ending in 4242 Expires 12/2030" [ref=e28]
+            - StaticText "Visa ending in 4242 "
+            - StaticText "Expires 12/2030"
+      - heading "Related Orders" [level=3, ref=e7]
+      - table
+        - rowgroup
+          - row
+            - columnheader "Order" [ref=e50]
+            - columnheader "Date" [ref=e51]
+            - columnheader "Status" [ref=e52]
+            - columnheader "Total" [ref=e53]
+            - columnheader "Actions" [ref=e54]
+        - row
+          - cell "#109485" [ref=e29]
+            - link "#109485" [ref=e55]
+          - cell "31 October, 2026" [ref=e30]
+          - cell "Completed" [ref=e31]
+          - cell "$7.31" [ref=e32]
+            - StaticText "$7.31"
+          - cell "View" [ref=e33]
+            - link "View" [ref=e56]
+        - row
+          - cell "#109452" [ref=e34]
+            - link "#109452" [ref=e57]
+          - cell "31 October, 2026" [ref=e35]
+          - cell "Completed" [ref=e36]
+          - cell "$7.31" [ref=e37]
+            - StaticText "$7.31"
+          - cell "View" [ref=e38]
+            - link "View" [ref=e58]
+      - heading "Subscription Notes" [level=3, ref=e8]
+      - list
+        - listitem [level=1]
+          - generic
+            - StaticText "Status changed from "
+            - strong
+              - StaticText "Active"
+            - StaticText " to "
+            - strong
+              - StaticText "Cancelled"
+            - StaticText ". Cancelled by Customer (RQA0208 CustomerA). The cancellation took effect immediately. Reason: Other."
+          - StaticText "SYSTEM"
+          - StaticText "31 October, 2026 2:56 AM"
+        - listitem [level=1]
+          - generic
+            - StaticText "Status changed from "
+            - strong
+              - StaticText "Paused"
+            - StaticText " to "
+            - strong
+              - StaticText "Active"
+            - StaticText ". Changed by Customer (RQA0208 CustomerA)."
+          - StaticText "SYSTEM"
+          - StaticText "31 October, 2026 2:31 AM"
+        - listitem [level=1]
+          - generic
+            - StaticText "Status changed from "
+            - strong
+              - StaticText "Active"
+            - StaticText " to "
+            - strong
+              - StaticText "Paused"
+            - StaticText ". Changed by Customer (RQA0208 CustomerA)."
+          - StaticText "SYSTEM"
+          - StaticText "31 October, 2026 2:30 AM"
+        - listitem [level=1]
+          - generic
+            - StaticText "Payment successful – "
+            - link "Order #109485" [ref=e59]
+            - StaticText " ($7.31)"
+          - StaticText "SYSTEM"
+          - StaticText "31 October, 2026 2:18 AM"
+        - listitem [level=1]
+          - generic
+            - StaticText "Renewal invoice "
+            - link "#109485" [ref=e60]
+            - StaticText " generated for payment due on 1 December, 2026 2:14 AM."
+          - StaticText "SYSTEM"
+          - StaticText "31 October, 2026 2:18 AM"
+        - listitem [level=1]
+          - generic
+            - StaticText "Payment successful – "
+            - link "Order #109452" [ref=e61]
+            - StaticText " ($7.31)"
+          - StaticText "SYSTEM"
+          - StaticText "31 October, 2026 2:14 AM"
+        - listitem [level=1]
+          - generic
+            - StaticText "Status changed from "
+            - strong
+              - StaticText "Pending"
+            - StaticText " to "
+            - strong
+              - StaticText "Active"
+            - StaticText ". Changed by Gateway (Stripe)."
+          - StaticText "SYSTEM"
+          - StaticText "31 October, 2026 2:14 AM"
+        - listitem [level=1]
+          - generic
+            - StaticText "Status changed from "
+            - strong
+              - StaticText "new"
+            - StaticText " to "
+            - strong
+              - StaticText "Pending"
+            - StaticText ". Changed by System."
+          - StaticText "SYSTEM"
+          - StaticText "31 October, 2026 2:14 AM"
+        - listitem [level=1]
+          - StaticText "Subscription created."
+          - StaticText "SYSTEM"
+          - StaticText "31 October, 2026 2:14 AM"
+  - contentinfo
+    - heading "mirror-help.arrayhash.com" [level=2, ref=e9]
+      - link "mirror-help.arrayhash.com" [ref=e13]
+    - navigation " 2" [ref=e10]
+      - list
+        - listitem [level=1]
+          - link "Blog" [ref=e62]
+        - listitem [level=1]
+          - link "About" [ref=e63]
+        - listitem [level=1]
+          - link "FAQs" [ref=e64]
+        - listitem [level=1]
+          - link "Authors" [ref=e65]
+    - navigation " 3" [ref=e11]
+      - list
+        - listitem [level=1]
+          - link "Events" [ref=e66]
+        - listitem [level=1]
+          - link "Shop" [ref=e67]
+        - listitem [level=1]
+          - link "Patterns" [ref=e68]
+        - listitem [level=1]
+          - link "Themes" [ref=e69]
+    - paragraph
+      - StaticText "Twenty Twenty-Five"
+    - paragraph
+      - StaticText "Desgned with "
+      - link "WordPress" [ref=e14]
+  - generic
+  - generic
+  - status

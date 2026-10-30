@@ -1,0 +1,603 @@
+- generic
+  - generic
+    - navigation "Main menu" [ref=e1]
+      - link "Skip to main content" [ref=e2]
+      - link "Skip to toolbar" [ref=e3]
+      - list
+        - listitem [level=1]
+          - link "Dashboard" [ref=e9]
+            - StaticText "Dashboard"
+          - list
+            - listitem [level=2]
+              - link "Home" [ref=e62]
+            - listitem [level=2]
+              - link "Updates 12" [ref=e63]
+                - StaticText "Updates 12"
+        - listitem [level=1]
+          - link "Posts" [ref=e10]
+            - StaticText "Posts"
+          - list
+            - listitem [level=2]
+              - link "All Posts" [ref=e64]
+            - listitem [level=2]
+              - link "Add Post" [ref=e65]
+            - listitem [level=2]
+              - link "Categories" [ref=e66]
+            - listitem [level=2]
+              - link "Tags" [ref=e67]
+        - listitem [level=1]
+          - link "Media" [ref=e11]
+            - StaticText "Media"
+          - list
+            - listitem [level=2]
+              - link "Library" [ref=e68]
+            - listitem [level=2]
+              - link "Add Media File" [ref=e69]
+        - listitem [level=1]
+          - link "Pages" [ref=e12]
+            - StaticText "Pages"
+          - list
+            - listitem [level=2]
+              - link "All Pages" [ref=e70]
+            - listitem [level=2]
+              - link "Add Page" [ref=e71]
+        - listitem [level=1]
+          - link "Comments" [ref=e13]
+            - StaticText "Comments"
+        - listitem [level=1]
+          - link "KB Articles" [ref=e14]
+            - StaticText "KB Articles"
+          - list
+            - listitem [level=2]
+              - link "KB Articles" [ref=e72]
+            - listitem [level=2]
+              - link "Add Post" [ref=e73]
+        - listitem [level=1]
+          - link "ArraySubs" [ref=e15]
+            - StaticText "ArraySubs"
+          - list
+            - listitem [level=2]
+              - link "Home" [ref=e74]
+            - listitem [level=2]
+              - link "Subscription Plans" [ref=e75]
+            - listitem [level=2]
+              - link "Subscriptions" [ref=e76]
+            - listitem [level=2]
+              - link "Manage Members" [ref=e77]
+            - listitem [level=2]
+              - link "Store Credit" [ref=e78]
+            - listitem [level=2]
+              - link "Cancellation Flow" [ref=e79]
+            - listitem [level=2]
+              - link "Member Access" [ref=e80]
+            - listitem [level=2]
+              - link "Checkout Builder" [ref=e81]
+            - listitem [level=2]
+              - link "Profile & My Account" [ref=e82]
+            - listitem [level=2]
+              - link "Shortcodes" [ref=e83]
+            - listitem [level=2]
+              - link "Integrations" [ref=e84]
+            - listitem [level=2]
+              - link "Modules" [ref=e85]
+            - listitem [level=2]
+              - link "Settings" [ref=e86]
+            - listitem [level=2]
+              - link "Audits" [ref=e87]
+            - listitem [level=2]
+              - link "License" [ref=e88]
+            - listitem [level=2]
+              - link "1-Minute Setup" [ref=e89]
+            - listitem [level=2]
+              - link "Help" [ref=e90]
+        - listitem [level=1]
+          - link "WooCommerce" [ref=e16]
+            - StaticText "WooCommerce"
+          - list
+            - listitem [level=2]
+              - link "Home" [ref=e91]
+            - listitem [level=2]
+              - link "Orders 70" [ref=e92]
+                - StaticText "Orders 70"
+            - listitem [level=2]
+              - link "Customers" [ref=e93]
+            - listitem [level=2]
+              - link "Coupons" [ref=e94]
+            - listitem [level=2]
+              - link "Reports" [ref=e95]
+            - listitem [level=2]
+              - link "Settings" [ref=e96]
+            - listitem [level=2]
+              - link "Status" [ref=e97]
+            - listitem [level=2]
+              - link "Extensions" [ref=e98]
+        - listitem [level=1]
+          - link "Products" [ref=e17]
+            - StaticText "Products"
+          - list
+            - listitem [level=2]
+              - link "All Products" [ref=e99]
+            - listitem [level=2]
+              - link "Add new product" [ref=e100]
+            - listitem [level=2]
+              - link "Brands" [ref=e101]
+            - listitem [level=2]
+              - link "Categories" [ref=e102]
+            - listitem [level=2]
+              - link "Tags" [ref=e103]
+            - listitem [level=2]
+              - link "Attributes" [ref=e104]
+            - listitem [level=2]
+              - link "Reviews" [ref=e105]
+        - listitem [level=1]
+          - link "Payments 1" [ref=e18]
+            - generic
+              - StaticText "Payments 1"
+        - listitem [level=1]
+          - link "Analytics" [ref=e19]
+            - StaticText "Analytics"
+          - list
+            - listitem [level=2]
+              - link "Overview" [ref=e106]
+            - listitem [level=2]
+              - link "Products" [ref=e107]
+            - listitem [level=2]
+              - link "Revenue" [ref=e108]
+            - listitem [level=2]
+              - link "Revenue Forecast" [ref=e109]
+            - listitem [level=2]
+              - link "Churn Analysis" [ref=e110]
+            - listitem [level=2]
+              - link "Retention" [ref=e111]
+            - listitem [level=2]
+              - link "Orders" [ref=e112]
+            - listitem [level=2]
+              - link "Refunds" [ref=e113]
+            - listitem [level=2]
+              - link "Variations" [ref=e114]
+            - listitem [level=2]
+              - link "Categories" [ref=e115]
+            - listitem [level=2]
+              - link "Coupons" [ref=e116]
+            - listitem [level=2]
+              - link "Taxes" [ref=e117]
+            - listitem [level=2]
+              - link "Downloads" [ref=e118]
+            - listitem [level=2]
+              - link "Stock" [ref=e119]
+            - listitem [level=2]
+              - link "Settings" [ref=e120]
+        - listitem [level=1]
+          - link "Marketing" [ref=e20]
+            - StaticText "Marketing"
+          - list
+            - listitem [level=2]
+              - link "Overview" [ref=e121]
+            - listitem [level=2]
+              - link "Coupons" [ref=e122]
+        - listitem [level=1]
+          - link "Appearance" [ref=e21]
+            - StaticText "Appearance"
+          - list
+            - listitem [level=2]
+              - link "Themes 2" [ref=e123]
+                - StaticText "Themes 2"
+            - listitem [level=2]
+              - link "Editor" [ref=e124]
+            - listitem [level=2]
+              - link "Fonts" [ref=e125]
+        - listitem [level=1]
+          - link "Plugins 9" [ref=e22]
+            - generic
+              - StaticText "Plugins 9"
+          - list
+            - listitem [level=2]
+              - link "Installed Plugins" [ref=e126]
+            - listitem [level=2]
+              - link "Add Plugin" [ref=e127]
+        - listitem [level=1]
+          - link "Users" [ref=e23]
+            - StaticText "Users"
+          - list
+            - listitem [level=2]
+              - link "All Users" [ref=e128]
+            - listitem [level=2]
+              - link "Add User" [ref=e129]
+            - listitem [level=2]
+              - link "Profile" [ref=e130]
+        - listitem [level=1]
+          - link "Tools" [ref=e24]
+            - StaticText "Tools"
+          - list
+            - listitem [level=2]
+              - link "Available Tools" [ref=e131]
+            - listitem [level=2]
+              - link "Import" [ref=e132]
+            - listitem [level=2]
+              - link "Export" [ref=e133]
+            - listitem [level=2]
+              - link "Site Health 1" [ref=e134]
+                - StaticText "Site Health 1"
+            - listitem [level=2]
+              - link "Export Personal Data" [ref=e135]
+            - listitem [level=2]
+              - link "Erase Personal Data" [ref=e136]
+            - listitem [level=2]
+              - link "Scheduled Actions" [ref=e137]
+            - listitem [level=2]
+              - link "Theme File Editor" [ref=e138]
+            - listitem [level=2]
+              - link "Plugin File Editor" [ref=e139]
+        - listitem [level=1]
+          - link "Settings" [ref=e25]
+            - StaticText "Settings"
+          - list
+            - listitem [level=2]
+              - link "General" [ref=e140]
+            - listitem [level=2]
+              - link "Connectors" [ref=e141]
+            - listitem [level=2]
+              - link "Writing" [ref=e142]
+            - listitem [level=2]
+              - link "Reading" [ref=e143]
+            - listitem [level=2]
+              - link "Discussion" [ref=e144]
+            - listitem [level=2]
+              - link "Media" [ref=e145]
+            - listitem [level=2]
+              - link "Permalinks" [ref=e146]
+            - listitem [level=2]
+              - link "Privacy" [ref=e147]
+        - listitem [level=1]
+          - link "WP Mail SMTP" [ref=e26]
+            - StaticText "WP Mail SMTP"
+          - list
+            - listitem [level=2]
+              - link "Settings" [ref=e148]
+            - listitem [level=2]
+              - link "Email Log" [ref=e149]
+            - listitem [level=2]
+              - link "Email Reports" [ref=e150]
+            - listitem [level=2]
+              - link "Tools" [ref=e151]
+            - listitem [level=2]
+              - link "Privacy Compliance" [ref=e152]
+            - listitem [level=2]
+              - link "About Us" [ref=e153]
+            - listitem [level=2]
+              - link "Upgrade to Pro" [ref=e154]
+        - listitem [level=1]
+          - button "Collapse Main menu" [expanded=true, ref=e27]
+            - StaticText "Collapse Menu"
+    - generic
+      - navigation "Toolbar" [ref=e4]
+        - menu
+          - group
+            - menuitem "About WordPress" [expanded=false, ref=e34]
+              - StaticText "About WordPress"
+          - group
+            - menuitem "mirror-help.arrayhash.com" [expanded=false, ref=e35]
+          - group
+            - menuitem "Live" [ref=e36]
+          - group
+            - menuitem "12 updates available" [ref=e37]
+              - StaticText "12 updates available"
+          - group
+            - menuitem "⌘K Open command palette" [ref=e38]
+              - generic
+                - StaticText "⌘K"
+                - StaticText "Open command palette"
+          - group
+            - menuitem "0 Comments in moderation" [ref=e39]
+              - StaticText "0 Comments in moderation"
+          - group
+            - menuitem "New" [expanded=false, ref=e40]
+              - StaticText "New"
+        - menu
+          - group
+            - menuitem "Howdy, admin" [expanded=false, ref=e41]
+              - StaticText "Howdy, admin"
+      - generic
+        - generic
+          - heading "Store Activity" [level=2, ref=e42]
+          - complementary "Store Activity"
+            - tablist
+              - tab "Activity" [ref=e185]
+                - StaticText "unread activity"
+          - button "Screen options" [expanded=false, ref=e43]
+          - button "Help" [expanded=false, ref=e44]
+      - main
+        - generic
+          - generic
+            - button "Screen Options" [expanded=false, ref=e45]
+            - button "Help" [expanded=false, ref=e46]
+          - generic [ref=e5] clickable [onclick]
+          - heading "Orders" [level=1, ref=e6]
+          - link "Add order" [ref=e7]
+          - StaticText "Search results for: "
+          - strong
+            - StaticText "rqa0208-a@example.invalid"
+          - list
+            - listitem [level=1]
+              - link "All (1,249)" [ref=e47]
+                - StaticText "All (1,249)"
+              - StaticText " |"
+            - listitem [level=1]
+              - link "Pending payment (27)" [ref=e48]
+                - StaticText "Pending payment (27)"
+              - StaticText " |"
+            - listitem [level=1]
+              - link "Processing (70)" [ref=e49]
+                - StaticText "Processing (70)"
+              - StaticText " |"
+            - listitem [level=1]
+              - link "On hold (21)" [ref=e50]
+                - StaticText "On hold (21)"
+              - StaticText " |"
+            - listitem [level=1]
+              - link "Completed (814)" [ref=e51]
+                - StaticText "Completed (814)"
+              - StaticText " |"
+            - listitem [level=1]
+              - link "Cancelled (293)" [ref=e52]
+                - StaticText "Cancelled (293)"
+              - StaticText " |"
+            - listitem [level=1]
+              - link "Refunded (23)" [ref=e53]
+                - StaticText "Refunded (23)"
+              - StaticText " |"
+            - listitem [level=1]
+              - link "Failed (1)" [ref=e54]
+                - StaticText "Failed (1)"
+              - StaticText " |"
+            - listitem [level=1]
+              - link "Draft (92)" [ref=e55]
+                - StaticText "Draft (92)"
+          - generic
+            - paragraph
+              - LabelText
+                - StaticText "Search orders:"
+              - searchbox "Search orders:" [ref=e56]: rqa0208-a@example.invalid
+                - StaticText "rqa0208-a@example.invalid"
+              - combobox [expanded=false, ref=e57]: All
+                - MenuListPopup
+                  - option "Order ID" [ref=e186]
+                  - option "Customer Email" [ref=e187]
+                  - option "Customers" [ref=e188]
+                  - option "Products" [ref=e189]
+                  - option "Coupons" [ref=e190]
+                  - option "All" [selected, ref=e191]
+              - button "Search orders" [ref=e58]
+            - generic
+              - LabelText
+                - StaticText "Select bulk action"
+              - combobox "Select bulk action" [expanded=false, ref=e59]: Bulk actions
+                - MenuListPopup
+                  - option "Bulk actions" [selected, ref=e192]
+                  - option "Change status to processing" [ref=e193]
+                  - option "Change status to on-hold" [ref=e194]
+                  - option "Change status to completed" [ref=e195]
+                  - option "Change status to cancelled" [ref=e196]
+                  - option "Move to Trash" [ref=e197]
+              - button "Apply" [ref=e60]
+            - combobox [expanded=false, ref=e28]: All dates
+              - MenuListPopup
+                - option "All dates" [selected, ref=e155]
+                - option "October 2026" [ref=e156]
+                - StaticText "\\n"
+                - option "September 2026" [ref=e157]
+                - StaticText "\\n"
+                - option "August 2026" [ref=e158]
+                - StaticText "\\n"
+                - option "July 2026" [ref=e159]
+                - StaticText "\\n"
+                - option "June 2026" [ref=e160]
+                - StaticText "\\n"
+                - option "May 2026" [ref=e161]
+                - StaticText "\\n"
+            - combobox [expanded=false, ref=e29]: All Types
+              - MenuListPopup
+                - option "All Types" [selected, ref=e162]
+                - option "Credit Purchase" [ref=e163]
+                - option "Subs Trial" [ref=e164]
+                - option "Subs Renew" [ref=e165]
+                - option "Subs Upgrade" [ref=e166]
+                - option "Subs Purchase" [ref=e167]
+                - option "Other" [ref=e168]
+            - combobox [expanded=false, ref=e30]: All Coupons
+              - MenuListPopup
+                - option "All Coupons" [selected, ref=e169]
+                - option "halfoff3" [ref=e170]
+                - option "nonsub5" [ref=e171]
+                - option "qa-audit-coupon" [ref=e172]
+                - option "renew20for3" [ref=e173]
+                - option "save20" [ref=e174]
+                - option "sltfix5first" [ref=e175]
+                - option "sltnosub" [ref=e176]
+                - option "sltpct20rec" [ref=e177]
+                - option "sub10once" [ref=e178]
+            - combobox "All Products" [expanded=false, ref=e31]
+              - textbox [ref=e61]: All Products
+                - StaticText "All Products"
+            - combobox [expanded=false, ref=e32]: All sales channels
+              - MenuListPopup
+                - option "All sales channels" [selected, ref=e179]
+                - option "Admin" [ref=e180]
+                - option "Checkout" [ref=e181]
+                - option "Point of Sale" [ref=e182]
+            - button "Filter" [ref=e33]
+            - StaticText "1,249"
+            - StaticText "TOTAL ORDERS"
+            - StaticText "2"
+            - StaticText "CREDIT PURCHASE"
+            - StaticText "18"
+            - StaticText "SUBS TRIAL"
+            - StaticText "1,013"
+            - StaticText "SUBS RENEW"
+            - StaticText "6"
+            - StaticText "SUBS UPGRADE"
+            - StaticText "200"
+            - StaticText "SUBS PURCHASE"
+            - StaticText "10"
+            - StaticText "OTHER"
+            - StaticText "7"
+            - StaticText "ORDERS WITH COUPON"
+            - LineBreak "\n"
+            - table
+              - rowgroup
+                - row
+                  - cell "Select All" [ref=e198]
+                    - checkbox "Select All" [checked=false, ref=e242]
+                    - LabelText
+                      - StaticText "Select All"
+                  - columnheader "Order Sort ascending." [ref=e199]
+                    - link "Order Sort ascending." [ref=e243]
+                      - StaticText "Order"
+                      - StaticText "Sort ascending."
+                  - columnheader "Date Sort ascending." [ref=e200]
+                    - link "Date Sort ascending." [ref=e244]
+                      - StaticText "Date"
+                      - StaticText "Sort ascending."
+                  - columnheader "Status" [ref=e201]
+                  - columnheader "Type" [ref=e202]
+                  - columnheader "Coupon(s)" [ref=e203]
+                  - columnheader "Total Sort ascending." [ref=e204]
+                    - link "Total Sort ascending." [ref=e245]
+                      - StaticText "Total"
+                      - StaticText "Sort ascending."
+                  - columnheader "Origin" [ref=e205]
+              - rowgroup
+                - row
+                  - cell
+                    - checkbox [checked=false, ref=e246]
+                  - rowheader " Preview #109510 RQA0208 CustomerA" [ref=e206]
+                    - link " Preview" [ref=e247]
+                      - StaticText ""
+                      - StaticText "Preview"
+                    - link "#109510 RQA0208 CustomerA" [ref=e248]
+                      - strong
+                        - StaticText "#109510 RQA0208 CustomerA"
+                  - cell "13 minutes ago" [ref=e207]
+                    - time
+                      - StaticText "13 minutes ago"
+                  - cell "Completed" [ref=e208]
+                    - mark
+                      - StaticText "Completed"
+                  - cell "Subs Purchase" [ref=e209]
+                  - cell "—" [ref=e210]
+                  - cell "$6.31" [ref=e211]
+                    - StaticText "$6.31"
+                  - cell "Direct" [ref=e212]
+                - row
+                  - cell
+                    - checkbox [checked=false, ref=e249]
+                  - rowheader " Preview #109485 RQA0208 CustomerA" [ref=e213]
+                    - link " Preview" [ref=e250]
+                      - StaticText ""
+                      - StaticText "Preview"
+                    - link "#109485 RQA0208 CustomerA" [ref=e251]
+                      - strong
+                        - StaticText "#109485 RQA0208 CustomerA"
+                  - cell "18 minutes ago" [ref=e214]
+                    - time
+                      - StaticText "18 minutes ago"
+                  - cell "Completed" [ref=e215]
+                    - mark
+                      - StaticText "Completed"
+                  - cell "Subs Renew" [ref=e216]
+                  - cell "—" [ref=e217]
+                  - cell "$7.31" [ref=e218]
+                    - StaticText "$7.31"
+                  - cell "Unknown" [ref=e219]
+                - row
+                  - cell
+                    - checkbox [checked=false, ref=e252]
+                  - rowheader " Preview #109474 RQA0208 CustomerA" [ref=e220]
+                    - link " Preview" [ref=e253]
+                      - StaticText ""
+                      - StaticText "Preview"
+                    - link "#109474 RQA0208 CustomerA" [ref=e254]
+                      - strong
+                        - StaticText "#109474 RQA0208 CustomerA"
+                  - cell "19 minutes ago" [ref=e221]
+                    - time
+                      - StaticText "19 minutes ago"
+                  - cell "Processing" [ref=e222]
+                    - mark
+                      - StaticText "Processing"
+                  - cell "Subs Trial" [ref=e223]
+                  - cell "—" [ref=e224]
+                  - cell "$5.00" [ref=e225]
+                    - StaticText "$5.00"
+                  - cell "Direct" [ref=e226]
+                - row
+                  - cell
+                    - checkbox [checked=false, ref=e255]
+                  - rowheader " Preview #109452 RQA0208 CustomerA" [ref=e227]
+                    - link " Preview" [ref=e256]
+                      - StaticText ""
+                      - StaticText "Preview"
+                    - link "#109452 RQA0208 CustomerA" [ref=e257]
+                      - strong
+                        - StaticText "#109452 RQA0208 CustomerA"
+                  - cell "22 minutes ago" [ref=e228]
+                    - time
+                      - StaticText "22 minutes ago"
+                  - cell "Completed" [ref=e229]
+                    - mark
+                      - StaticText "Completed"
+                  - cell "Subs Purchase" [ref=e230]
+                  - cell "—" [ref=e231]
+                  - cell "$7.31" [ref=e232]
+                    - StaticText "$7.31"
+                  - cell "Direct" [ref=e233]
+              - rowgroup
+                - row
+                  - cell "Select All" [ref=e234]
+                    - checkbox "Select All" [checked=false, ref=e258]
+                    - LabelText
+                      - StaticText "Select All"
+                  - columnheader "Order Sort ascending." [ref=e235]
+                    - link "Order Sort ascending." [ref=e259]
+                      - StaticText "Order"
+                      - StaticText "Sort ascending."
+                  - columnheader "Date Sort ascending." [ref=e236]
+                    - link "Date Sort ascending." [ref=e260]
+                      - StaticText "Date"
+                      - StaticText "Sort ascending."
+                  - columnheader "Status" [ref=e237]
+                  - columnheader "Type" [ref=e238]
+                  - columnheader "Coupon(s)" [ref=e239]
+                  - columnheader "Total Sort ascending." [ref=e240]
+                    - link "Total Sort ascending." [ref=e261]
+                      - StaticText "Total"
+                      - StaticText "Sort ascending."
+                  - columnheader "Origin" [ref=e241]
+            - generic
+              - generic
+                - LabelText
+                  - StaticText "Select bulk action"
+                - combobox "Select bulk action" [expanded=false, ref=e183]: Bulk actions
+                  - MenuListPopup
+                    - option "Bulk actions" [selected, ref=e262]
+                    - option "Change status to processing" [ref=e263]
+                    - option "Change status to on-hold" [ref=e264]
+                    - option "Change status to completed" [ref=e265]
+                    - option "Change status to cancelled" [ref=e266]
+                    - option "Move to Trash" [ref=e267]
+                - button "Apply" [ref=e184]
+              - LineBreak "\n"
+    - contentinfo
+      - paragraph
+        - generic
+          - StaticText "If you like "
+          - strong
+            - StaticText "WooCommerce"
+          - StaticText " please leave us a "
+          - link "five star" [ref=e8]
+            - StaticText "★★★★★"
+          - StaticText " rating. A huge thanks in advance!"
+      - paragraph
+        - StaticText "Version 11.0.1"
+    - image
+    - image

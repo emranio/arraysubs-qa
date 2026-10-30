@@ -1,0 +1,106 @@
+- generic
+  - link "Skip to content" [ref=e1]
+  - banner
+    - paragraph
+      - link "mirror-help.arrayhash.com" [ref=e8]
+    - navigation
+      - list
+        - listitem [level=1]
+          - link "#test" [ref=e30]
+          - button "#test submenu" [expanded=false, ref=e31]
+        - listitem [level=1]
+          - link "Premium" [ref=e32]
+          - button "Premium submenu" [expanded=false, ref=e33]
+        - listitem [level=1]
+          - link "Cart" [ref=e34]
+        - listitem [level=1]
+          - link "Checkout" [ref=e35]
+        - listitem [level=1]
+          - link "Classic Checkout QA" [ref=e36]
+        - listitem [level=1]
+          - link "My account" [ref=e37]
+        - listitem [level=1]
+          - link "Shop" [ref=e38]
+    - link "My Account" [ref=e4]
+      - image
+  - main
+    - heading "Cart" [level=1, ref=e2]
+    - generic [ref=e3] clickable [onclick]
+      - generic
+        - table "Products in cart"
+          - caption
+            - heading "Products in cart" [level=2, ref=e14]
+          - rowgroup
+            - row
+              - columnheader "DETAILS" [ref=e26]
+                - StaticText "DETAILS"
+              - columnheader "TOTAL" [ref=e27]
+          - row
+            - rowheader "PEQA Box Switch Test" [ref=e15]
+              - link "PEQA Box Switch Test" [ref=e28]
+              - StaticText "$16.00"
+              - StaticText "Renewals:"
+              - StaticText "$"
+              - StaticText "16.00"
+              - StaticText " every 1 month"
+              - StaticText "Today's charge:"
+              - StaticText "$"
+              - StaticText "16.00"
+              - StaticText "Next charge:"
+              - StaticText "1 December, 2026"
+              - StaticText "Duration:"
+              - StaticText "5 billing cycles"
+              - StaticText "Box contents:"
+              - StaticText "SLT Box Item A × 1 — "
+              - StaticText "$"
+              - StaticText "4.00"
+              - LineBreak "\n"
+              - StaticText "Hat × 1 — "
+              - StaticText "$"
+              - StaticText "12.00"
+              - StaticText "Gift message:"
+              - StaticText "RQA0208 gift"
+              - StaticText "Shipping:"
+              - StaticText "🔄 Shipping charged on every renewal"
+              - button "Remove PEQA Box Switch Test from cart" [ref=e29]
+            - cell "$16.00" [ref=e16]
+              - StaticText "$16.00"
+        - heading "CART TOTALS" [level=2, ref=e9]
+        - heading "Add coupons" [level=2, ref=e10]
+          - button "Add coupons" [expanded=false, ref=e13]
+        - StaticText "Free shipping"
+        - strong
+          - StaticText "FREE"
+        - StaticText "Estimated total"
+        - StaticText "$16.00"
+        - link "Proceed to Checkout" [ref=e17]
+          - StaticText "Proceed to Checkout"
+  - contentinfo
+    - heading "mirror-help.arrayhash.com" [level=2, ref=e5]
+      - link "mirror-help.arrayhash.com" [ref=e11]
+    - navigation " 2" [ref=e6]
+      - list
+        - listitem [level=1]
+          - link "Blog" [ref=e18]
+        - listitem [level=1]
+          - link "About" [ref=e19]
+        - listitem [level=1]
+          - link "FAQs" [ref=e20]
+        - listitem [level=1]
+          - link "Authors" [ref=e21]
+    - navigation " 3" [ref=e7]
+      - list
+        - listitem [level=1]
+          - link "Events" [ref=e22]
+        - listitem [level=1]
+          - link "Shop" [ref=e23]
+        - listitem [level=1]
+          - link "Patterns" [ref=e24]
+        - listitem [level=1]
+          - link "Themes" [ref=e25]
+    - paragraph
+      - StaticText "Twenty Twenty-Five"
+    - paragraph
+      - StaticText "Desgned with "
+      - link "WordPress" [ref=e12]
+  - status

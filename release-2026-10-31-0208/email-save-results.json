@@ -1,0 +1,178 @@
+[
+  {
+    "section": "arraysubs_new_subscription",
+    "title": "[ArraySubs] New Subscription",
+    "saved": true,
+    "restored": true
+  },
+  {
+    "section": "arraysubs_renewal_reminder",
+    "title": "[ArraySubs] Renewal Reminder",
+    "saved": true,
+    "restored": true
+  },
+  {
+    "section": "arraysubs_payment_successful",
+    "title": "[ArraySubs] Renewal Payment Successful",
+    "saved": true,
+    "restored": true
+  },
+  {
+    "section": "arraysubs_payment_failed",
+    "title": "[ArraySubs] Renewal Payment Failed",
+    "saved": true,
+    "restored": true,
+    "note": "Coordinator ended a redundant read-only networkidle wait; native subject original empty confirmed by fresh reload, no product failure."
+  },
+  {
+    "section": "arraysubs_trial_started",
+    "title": "[ArraySubs] Trial Started",
+    "saved": true,
+    "restored": true
+  },
+  {
+    "section": "arraysubs_trial_converted",
+    "title": "[ArraySubs] Trial Converted",
+    "saved": true,
+    "restored": true
+  },
+  {
+    "section": "arraysubspro_credit_used_email",
+    "title": "[ArraySubsPro] Store Credit Used",
+    "saved": false,
+    "restored": false,
+    "error": "\u2717 Wait timed out after 25000ms\n"
+  },
+  {
+    "section": "arraysubspro_credit_used_email",
+    "title": "[ArraySubsPro] Store Credit Used",
+    "saved": true,
+    "restored": true
+  },
+  {
+    "section": "arraysubs_subscription_on_hold",
+    "title": "[ArraySubs] Subscription On Hold",
+    "saved": true,
+    "restored": true
+  },
+  {
+    "section": "arraysubs_subscription_pending_cancellation",
+    "title": "[ArraySubs] Subscription Scheduled to Cancel",
+    "saved": true,
+    "restored": true
+  },
+  {
+    "section": "arraysubs_subscription_cancelled",
+    "title": "[ArraySubs] Subscription Cancelled",
+    "saved": true,
+    "restored": true
+  },
+  {
+    "section": "arraysubs_subscription_expired",
+    "title": "[ArraySubs] Subscription Expired",
+    "saved": true,
+    "restored": true
+  },
+  {
+    "section": "arraysubs_expiring_soon",
+    "title": "[ArraySubs] Subscription Expiring Soon",
+    "saved": true,
+    "restored": true
+  },
+  {
+    "section": "arraysubs_auto_downgrade",
+    "title": "[ArraySubs] Subscription Auto-Downgraded",
+    "saved": true,
+    "restored": true
+  },
+  {
+    "section": "arraysubs_retention_discount_accepted",
+    "title": "[ArraySubs] Retention Discount Accepted",
+    "saved": true,
+    "restored": true
+  },
+  {
+    "section": "arraysubs_subscription_reactivated",
+    "title": "[ArraySubs] Subscription Reactivated",
+    "saved": true,
+    "restored": true
+  },
+  {
+    "section": "arraysubs_subscription_skipped",
+    "title": "[ArraySubs] Renewal Skipped",
+    "saved": true,
+    "restored": true
+  },
+  {
+    "section": "arraysubs_skip_undone",
+    "title": "[ArraySubs] Renewal Skip Removed",
+    "saved": true,
+    "restored": true
+  },
+  {
+    "section": "arraysubs_subscription_paused",
+    "title": "[ArraySubs] Subscription Paused",
+    "saved": true,
+    "restored": true
+  },
+  {
+    "section": "arraysubs_subscription_resumed",
+    "title": "[ArraySubs] Subscription Resumed",
+    "saved": true,
+    "restored": true
+  },
+  {
+    "section": "arraysubs_renewal_requires_verification",
+    "title": "[ArraySubs] Renewal Requires Verification",
+    "saved": true,
+    "restored": true
+  },
+  {
+    "section": "arraysubs_card_expiring",
+    "title": "[ArraySubs] Card Expiring",
+    "saved": true,
+    "restored": true
+  },
+  {
+    "section": "arraysubs_admin_new_subscription",
+    "title": "[ArraySubs] New Subscription (Admin)",
+    "saved": true,
+    "restored": true
+  },
+  {
+    "section": "arraysubs_admin_payment_failed",
+    "title": "[ArraySubs] Payment Failed (Admin)",
+    "saved": true,
+    "restored": true
+  },
+  {
+    "section": "arraysubs_admin_subscription_pending_cancellation",
+    "title": "[ArraySubs] Subscription Scheduled to Cancel (Admin)",
+    "saved": true,
+    "restored": true
+  },
+  {
+    "section": "arraysubs_admin_subscription_cancelled",
+    "title": "[ArraySubs] Subscription Cancelled (Admin)",
+    "saved": true,
+    "restored": true
+  },
+  {
+    "section": "arraysubspro_credit_added_email",
+    "title": "[ArraySubsPro] Store Credit Added",
+    "saved": true,
+    "restored": true
+  },
+  {
+    "section": "arraysubspro_credit_expiring_email",
+    "title": "[ArraySubsPro] Store Credit Expiring Soon",
+    "saved": true,
+    "restored": true
+  },
+  {
+    "section": "arraysubspro_credit_expired_email",
+    "title": "[ArraySubsPro] Store Credit Expired",
+    "saved": true,
+    "restored": true
+  }
+]

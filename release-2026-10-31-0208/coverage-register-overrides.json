@@ -1,0 +1,300 @@
+{
+  "save_editors": {
+    "rule-shop": {
+      "result": "PASS",
+      "real_change_reload_verified": true,
+      "proof": "evidence/shop-rule-restored.txt",
+      "notes": "Coordinator restored exact original display name and unchecked state."
+    },
+    "sub-note": {
+      "result": "PASS",
+      "real_change_reload_verified": true,
+      "proof": "commerce-coverage.md",
+      "notes": "TinyMCE real private note persisted after full reload; visible Adding\u2026 disabled state."
+    },
+    "email-arraysubs_renewal_invoice": {
+      "result": "PASS",
+      "real_change_reload_verified": true,
+      "proof": "evidence/email-invoice-saved.txt; evidence/email-invoice-restored.txt",
+      "notes": "Subject real change + reload, preview placeholder resolution, original empty subject restored + reload verified."
+    },
+    "product-features": {
+      "result": "PASS",
+      "real_change_reload_verified": true,
+      "proof": "commerce-coverage.md",
+      "notes": "Persistence PASS via parent Woo Update/reload. Shared parent save excluded from independent count. Baseline empty and customer empty state restored, browser verified.",
+      "eligible": false
+    },
+    "modules": {
+      "result": "PASS",
+      "real_change_reload_verified": true,
+      "proof": "evidence/modules-off-reloaded.txt; evidence/modules-restored.txt",
+      "notes": "Only Audits optional module toggled and original true restored; direct gated/off and restored data tested."
+    },
+    "checkout-builder": {
+      "result": "PASS",
+      "real_change_reload_verified": true,
+      "proof": "evidence/checkout-radius9-reloaded.txt; evidence/checkout-radius8-restored.txt",
+      "notes": "Shared configuration editor: radius8\u21929 real Save with visible Saving, reload9; restore8 + reload; four canvas nodes retained. Canvas/settings not separate save editors."
+    },
+    "feature-settings": {
+      "result": "PASS",
+      "real_change_reload_verified": true,
+      "proof": "evidence/feature-usage-off-reloaded.txt; evidence/feature-usage-restored.txt",
+      "notes": "Show Usage Count in Admin true\u2192false\u2192true, Save/reload both directions. Other three flags true and PerSubscription unchanged; original verified."
+    },
+    "rule-cpt": {
+      "result": "PASS",
+      "real_change_reload_verified": true,
+      "proof": "evidence/cpt-name-saved.txt; evidence/cpt-name-restored.txt",
+      "notes": "Name changed and reloaded, exact original restored and reloaded; enabled=true unchanged. No eligibility-condition mutation."
+    }
+  },
+  "surfaces": {
+    "rule-shop-editor": {
+      "result": "PASS",
+      "proof": "premium-coverage.md; evidence/shop-rule-restored.txt"
+    },
+    "credit-adjust": {
+      "template_family": "credit-detail",
+      "mode": "inline-adjustment",
+      "title": "Store Credit inline adjustment form"
+    },
+    "credit-detail": {
+      "mode": "detail"
+    },
+    "cancellation-wizard": {
+      "result": "BLOCKED",
+      "notes": "All seven steps inspected; repeated Escape after Keep editing froze renderer. Suspected closed #127 recurrence; no config save. Recovery verified original saved overview."
+    },
+    "woo-orders": {
+      "visited": true,
+      "depth": "interaction",
+      "result": "PASS",
+      "proof": "commerce-coverage.md",
+      "notes": ""
+    },
+    "woo-order-edit": {
+      "visited": true,
+      "depth": "render",
+      "result": "PASS",
+      "proof": "commerce-coverage.md",
+      "notes": "Native Woo order has read-only ArraySubs links/metadata; no independent plugin save form."
+    },
+    "sub-note": {
+      "visited": true,
+      "depth": "save+reload",
+      "result": "PASS",
+      "proof": "commerce-coverage.md",
+      "notes": ""
+    },
+    "activity": {
+      "plugin_ownership": "ArraySubsPro Audits backend / ArraySubs core UI"
+    },
+    "portal-failures": {
+      "plugin_ownership": "ArraySubsPro Audits backend / ArraySubs core UI"
+    },
+    "job-logs": {
+      "plugin_ownership": "ArraySubsPro Audits backend / ArraySubs core UI"
+    },
+    "portal-failure-detail": {
+      "plugin_ownership": "ArraySubsPro Audits backend / ArraySubs core UI"
+    },
+    "feature-log": {
+      "plugin_ownership": "ArraySubsPro FeatureManager backend / ArraySubs core UI"
+    },
+    "general": {
+      "notes": "Includes Pro Cart Info Editor hide-first-cycle/hide-shipping/hide-duration, all false, render verified. Cart hide/show downstream contrast NOT-TESTED; same General Save Settings, no extra family/editor."
+    },
+    "email-arraysubs_renewal_invoice": {
+      "depth": "save+reload",
+      "proof": "emails-results.json; evidence/email-invoice-saved.txt; evidence/email-invoice-restored.txt"
+    },
+    "product-features": {
+      "visited": true,
+      "depth": "save+reload",
+      "result": "PASS",
+      "proof": "commerce-coverage.md; evidence/commerce-features-customer-positive.png",
+      "notes": "Owned109433 empty \u2192 tagged perk persisted through modal Save + Woo Update/reload. Baseline empty restored via Delete + Save + Woo Update/reload; customer My Features empty after reload."
+    },
+    "account-features-positive": {
+      "mode": "positive",
+      "depth": "interaction",
+      "result": "PASS",
+      "proof": "access-coverage.md; commerce-coverage.md; evidence/commerce-features-customer-positive.png",
+      "notes": "Ordinary A3252 positive benefit under active109453/109511, plus existing admin-owned positives. No visible type labels/columns. A probe sampled feature/type-pattern class names and data-feature-type; returned empty. Broader aliases/REST not exhaustively tested."
+    },
+    "product-redirect": {
+      "template_family": "woo-product-editor",
+      "mode": "redirect-panel",
+      "visited": true,
+      "depth": "save+reload",
+      "result": "PASS",
+      "proof": "commerce-coverage.md",
+      "notes": "Owned draft109573 enabled + Show404 persisted via parent Save Draft/reload; now trashed. Public redirect effect not tested. Inline panel is a mode of native Woo editor."
+    },
+    "gateway-logs": {
+      "depth": "interaction",
+      "result": "PASS",
+      "proof": "coverage.md; evidence/gateway-filter-stripe-success.txt",
+      "notes": "Stripe gateway + event success filter verified, reset All/All; filter does not add a page/mode."
+    },
+    "logging-preferences": {
+      "plugin_ownership": "ArraySubsPro Audits backend / ArraySubs core UI"
+    },
+    "modules": {
+      "depth": "save+reload",
+      "result": "PASS",
+      "proof": "coverage.md; evidence/modules-off-reloaded.txt; evidence/modules-restored.txt",
+      "notes": "Audits only true\u2192false\u2192true, real Save/reload both ways. Both plugins stay active; other modules retained."
+    },
+    "checkout-settings": {
+      "depth": "save+reload",
+      "result": "PASS",
+      "proof": "coverage.md; evidence/checkout-radius9-reloaded.txt; evidence/checkout-radius8-restored.txt",
+      "notes": "Same shared Checkout Builder configuration save, original radius8 restored; four nodes preserved."
+    },
+    "feature-settings": {
+      "depth": "save+reload",
+      "result": "PASS",
+      "proof": "coverage.md; evidence/feature-usage-off-reloaded.txt; evidence/feature-usage-restored.txt",
+      "notes": "Original admin usage=true restored; other three flags true/PerSubscription preserved."
+    },
+    "rule-cpt-editor": {
+      "visited": true,
+      "depth": "save+reload",
+      "result": "PASS",
+      "proof": "coverage.md; evidence/cpt-name-saved.txt; evidence/cpt-name-restored.txt; evidence/cpt-flow-editor.png; evidence/cpt-content-modal.png",
+      "notes": "Rule1 name save/reload and exact original Premium Library \u2014 members only restored; enabled=true unchanged. Flow and content modal ByTaxonomyCategory/Categories/two terms/ShowLock inspected. Condition/outcome/timing mutation NOT-TESTED."
+    },
+    "action-scheduler": {
+      "notes": "During testing, three owned subscriptions each had one invoice/payment pair with six-hour lead and configured spread. After cancellation/deletion, Pending searches109453/109475/109511/109525 all empty. No direct queue action; execution/retry/locks not proven."
+    }
+  },
+  "workflow_assertions": [
+    {
+      "id": "raw-box-upload",
+      "title": "Known raw box-upload guest request (#19)",
+      "result": "FAIL",
+      "url": "https://mirror-help.arrayhash.com/wp-content/uploads/arraysubs-box-uploads/pDwqQLRwgUlKSfz3aVkF.png",
+      "proof": "security-findings.md; evidence/security-box-raw-network.txt",
+      "scope": "Fresh guest HTTP 200 renders synthetic 8\u00d78 PNG. Host deny rule still missing. Signed plugin download endpoints not tested. Raw asset assertion is not an app template."
+    },
+    {
+      "id": "pause-required-reason",
+      "title": "Pause with required reason (#153)",
+      "result": "FAIL",
+      "url": "https://mirror-help.arrayhash.com/my-account/as-view-subscription/109453/",
+      "proof": "commerce-coverage.md; evidence/commerce-pause-error.png",
+      "scope": "Required-reason true; no reason input; server refuses pause. State remains Active."
+    },
+    {
+      "id": "pause-optional-resume",
+      "title": "Pause optional reason then Resume",
+      "result": "PASS",
+      "url": "https://mirror-help.arrayhash.com/my-account/as-view-subscription/109453/",
+      "proof": "commerce-coverage.md; evidence/commerce-paused.png",
+      "scope": "Required-reason false contrast. Customer Paused then Active, next date returned with elapsed pause; admin corroborated. Final resume screenshot pending worker."
+    },
+    {
+      "id": "cancellation-escape",
+      "title": "Cancellation wizard repeated Escape after Keep editing (#127)",
+      "result": "BLOCKED",
+      "url": "https://mirror-help.arrayhash.com/wp-admin/admin.php?page=arraysubs-mainadmin#/cancellation-flow",
+      "proof": "premium-findings.md; evidence/premium-cancel-shared-confirm.png",
+      "scope": "Suspected deployed recurrence; renderer unresponsive. Unsaved draft not persisted; recovered saved baseline. Local fixed-code alignment unverified."
+    },
+    {
+      "id": "protected-access",
+      "title": "Saved access rule: entitled / unentitled / guest",
+      "result": "FAIL",
+      "url": "https://mirror-help.arrayhash.com/rqa0208-access/",
+      "proof": "access-findings.md; evidence/access-rule-final-persisted.png",
+      "scope": "Fresh-query A allowed and B/guest denied with no leak; canonical pages deny entitled member (#150). Run-owned page trashed."
+    },
+    {
+      "id": "ownership-private",
+      "title": "Private subscription/order owner and B/guest denial",
+      "result": "PASS",
+      "url": "https://mirror-help.arrayhash.com/my-account/as-view-subscription/109453/",
+      "proof": "access-coverage.md",
+      "scope": "Owner correct. B denied without private details/actions; guest login gate. Download/invoice ownership gap retained."
+    },
+    {
+      "id": "credit-cycle",
+      "title": "Credit grant \u2192 account \u2192 checkout debit",
+      "result": "PASS",
+      "url": "https://mirror-help.arrayhash.com/my-account/as-store-credit/",
+      "proof": "premium-coverage.md; commerce-coverage.md",
+      "scope": "1.00 grant, single +1 ledger, 6.31 test charge after 1 credit, single \u22121 debit and final 0."
+    },
+    {
+      "id": "checkout-narrow-keyboard",
+      "title": "Narrow block checkout and keyboard",
+      "result": "PASS",
+      "url": "https://mirror-help.arrayhash.com/checkout/",
+      "proof": "commerce-coverage.md",
+      "scope": "390\u00d7844 layout and keyboard address edit sampled; no payment initiated; cart empty/desktop restored."
+    },
+    {
+      "id": "ordinary-customer-features",
+      "title": "Owned product feature save \u2192 ordinary customer My Features",
+      "result": "PASS",
+      "url": "https://mirror-help.arrayhash.com/my-account/as-features/",
+      "proof": "commerce-coverage.md; evidence/commerce-features-customer-positive.png",
+      "scope": "A3252 sees tagged benefit for active109453/109511. No visible type labels/columns; sampled feature/type-pattern classes and data-feature-type empty, not exhaustive HTML aliases. Customer REST privacy still NOT-TESTED; no privacy defect observed. Product baseline empty restored and customer empty state reloaded; screenshots commerce-feature-restored.png and commerce-features-restored-empty.png."
+    },
+    {
+      "id": "scheduled-cancel-undo",
+      "title": "Scheduled trial cancellation then Undo",
+      "result": "PASS",
+      "url": "https://mirror-help.arrayhash.com/my-account/as-view-subscription/109475/",
+      "proof": "commerce-coverage.md; evidence/commerce-scheduled-cancel.png; evidence/commerce-cancel-undone.png",
+      "scope": "CancelImmediately false, retention off. Keep dismissal preserves Trial; required reason validation; accepted Other \u2192 Trial Pending Cancellation due Nov7; Undo \u2192 Trial Nov7. Customer actions stay within subscription template, not new pages."
+    },
+    {
+      "id": "future-job-alignment",
+      "title": "Future invoice/payment queue alignment",
+      "result": "PASS",
+      "url": "https://mirror-help.arrayhash.com/wp-admin/tools.php?page=action-scheduler",
+      "proof": "commerce-coverage.md; evidence/commerce-scheduler-109453-pending.png; evidence/commerce-scheduler-109475-pending.png; evidence/commerce-scheduler-109511-pending.png",
+      "scope": "Browser Pending argument searches: exactly one invoice/payment pair each for109453/109475/109511, invoice six hours earlier; no pending resume/skip for109453. Observed payment spread matches configured six-hour window; deterministic offset explanation corroborated by local source, deployed revision unverified. Due execution/retry/locks still NOT-TESTED."
+    },
+    {
+      "id": "admin-narrow-keyboard",
+      "title": "Changed General admin editor narrow + keyboard",
+      "result": "PASS",
+      "url": "https://mirror-help.arrayhash.com/wp-admin/admin.php?page=arraysubs-mainadmin#/settings/general",
+      "proof": "coverage.md; evidence/general-mobile-keyboard-restored.txt; evidence/general-mobile-keyboard.png; evidence/general-mobile-viewport.png",
+      "scope": "390\u00d7844, document width390, mobile dropdown/footer readable. Focused AllowMixed switch, Space true\u2192false\u2192true locally, Save disabled after original restored; no server save."
+    },
+    {
+      "id": "audits-module-contrast",
+      "title": "Optional Audits module off \u2192 direct gating \u2192 on",
+      "result": "PASS",
+      "url": "https://mirror-help.arrayhash.com/wp-admin/admin.php?page=arraysubs-mainadmin#/audits/activity-audits",
+      "proof": "coverage.md; evidence/modules-off-reloaded.txt; evidence/audits-module-off-gated.png; evidence/modules-restored.txt; evidence/audits-module-restored.png",
+      "scope": "Save/reload false; direct Activity route says Audits is switched off. Sidebar link remains visible, no hidden-menu assertion. Restore true + reload; historical RQA0208 private note retained. Both plugins active. Profile contrast, not additional page count."
+    },
+    {
+      "id": "immediate-cancel-cleanup",
+      "title": "Immediate customer cancellations and owned queue cleanup",
+      "result": "PASS",
+      "url": "https://mirror-help.arrayhash.com/my-account/as-view-subscription/109475/",
+      "proof": "commerce-coverage.md; commerce-mutations.md; evidence/commerce-admin-cancelled-all.png; evidence/commerce-scheduler-109453-cleared.png",
+      "scope": "CancelImmediately true/retention off: three customer cancellations109453/109475/109511 showed disabled Cancelling, then Cancelled/end date/no next payment; admin agrees. Pending109525 deleted. Pending queue searches for all four IDs empty. Orders retained without refund; no future owned billing job or financial request pending. Variable-child disposition not independently queried. Cleanup adds no template or editor counts."
+    }
+  ],
+  "status": "FINAL",
+  "coordinator_state": {
+    "browser_testing_stopped": true,
+    "global_restoration": "Verified by coordinator; both root sessions closed. Skip/Pause and hidden AllowCustomersSkip false, original RequireReason true, original GeneralCancelImmediately true, module Audits true, Checkout radius8, Feature admin usage true and all email originals restored.",
+    "final_restore_proof": [
+      "evidence/skip-hidden-values-restored.txt",
+      "evidence/actions-final-restored.txt",
+      "evidence/actions-final-restored.png"
+    ],
+    "remaining_cleanup": "Complete: all three owned subscriptions109453/109475/109511 Cancelled in customer+admin views; Pending109525 deleted; owned future-job searches empty; products109433/109466 Draft, extra copies Trash; feature/billing originals restored; all run browser sessions closed. Retained test customer/orders, Cancelled subscriptions, tagged notes, zero credit ledger and designated draft proof. Variable children109544/109546 disposition not independently queried.",
+    "cleanup_status": "COMPLETE_WITH_REPORTED_CHILD_DISPOSITION_GAP"
+  }
+}
