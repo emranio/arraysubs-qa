@@ -160,125 +160,287 @@ Howdy, admin
 Screen Options
 Help
 WordPress 7.1.4 is available! Please update now.
-Dashboard
-WooCommerce Status
-Move up
-Move down
-Show or hide panel
-Net sales this month
-$6,912.84
-Top seller this month
-SQA Daily Stripe Plan
-(152 sales)
-Awaiting processing
-69 orders
-On-hold
-21 orders
-Low in stock
-0 products
-Out of stock
-0 products
-WooCommerce Recent Reviews
-Move up
-Move down
-Show or hide panel
+Plugins Add Plugin
 
-There are no product reviews yet.
+Some required plugins are missing or inactive.
 
+Filter plugins list
+All (14) | Active (5) | Inactive (9) | Update Available (9) | Must-Use (2) | Auto-updates Enabled (2) | Auto-updates Disabled (12)
+
+Search installed plugins
+
+Select bulk action
+Bulk actions
+Activate
+Deactivate
+Update
+Delete
+Enable Auto-updates
+Disable Auto-updates
+14 items
+
+
+Plugins list
+Select All
+	Plugin	Description	Automatic Updates
+
+Select ArraySubs - Subscriptions for WooCommerce Recurring Payments with Membership Content Restriction
+	
+ArraySubs - Subscriptions for WooCommerce Recurring Payments with Membership Content Restriction
+Deactivate
+You cannot deactivate this plugin as other plugins depend on it.
+ | Setup in 1 minute
+	
+
+Manage WooCommerce subscriptions with Stripe automatic payments, subscription box builder, recurring billing, membership & content restriction.
+
+Version 2.1.0 | By Emran | View details | User Manual | Website
+
+Required by: ArraySubsPro - Premium features for ArraySubs WooCommerce Subscription Plugin
+
+Note: This plugin cannot be deactivated or deleted until the plugins that require it are deactivated or deleted.
+
+	Enable auto-updates
+
+Select ArraySubsPro - Premium features for ArraySubs WooCommerce Subscription Plugin
+	
+ArraySubsPro - Premium features for ArraySubs WooCommerce Subscription Plugin
+Deactivate
+	
+
+Premium features for ArraySubs WooCommerce Subscription Plugin - Adds advanced features like analytics
+
+Version 1.3.0 | By Emran | View details
+
+Requires: Subscriptions for WooCommerce Recurring Payments with Membership Content Restriction
+
+	Enable auto-updates
+
+Select Check & Log Email - Easy Email Testing & Mail logging
+	
+Check & Log Email - Easy Email Testing & Mail logging
+Activate | Delete
+	
+
+Check & Log email allows you to test if your WordPress installation is sending emails correctly and logs every email.
+
+Version 2.0.15 | By checkemail | View details
+	Enable auto-updates
+
+
+There is a new version of Check & Log Email - Easy Email Testing & Mail logging available. View version 2.0.17 details or update now.
+
+
+
+Select Elementor
+	
+Elementor
+Activate | Delete
+	
+
+The Elementor Website Builder has it all: drag and drop page builder, Atomic Editor, pixel perfect design, global and reusable style systems, mobile responsive editing, and more. Get started now!
+
+Version 4.2.3 | By Elementor.com | View details
+	Enable auto-updates
+
+
+There is a new version of Elementor available. View version 4.3.5 details or update now.
+
+
+
+Select Indeed Ultimate Membership Pro
+	
+Indeed Ultimate Membership Pro
+Activate | Delete
+	
+
+The most complete and easy to use Membership Plugin, ready to allow or restrict your content, Page for certain Users.
+
+Version 13.7.4 | By WPIndeed Development | Visit plugin site
+	
+
+Select ShipStation for WooCommerce
+	
+ShipStation for WooCommerce
+Activate | Delete
+	
+
+Power your entire shipping operation from one platform.
+
+Version 5.3.5 | By WooCommerce | View details
+
+Requires: WooCommerce
+
+	Enable auto-updates
+
+
+There is a new version of ShipStation for WooCommerce available. View version 5.4.0 details or update now.
+
+
+
+Select Stripe Tax - Sales tax automation for WooCommerce
+	
+Stripe Tax - Sales tax automation for WooCommerce
+Activate | Delete
+	
+
+Automate sales tax, VAT, and GST compliance for all your transactions.
+
+Version 2.1.0 | View details
+
+Requires: WooCommerce
+
+	Enable auto-updates
+
+
+There is a new version of Stripe Tax - Sales tax automation for WooCommerce available. View version 2.2.0 details or update now.
+
+
+
+Select Subscription for WooCommerce - WPSubscription Pro
+	
+Subscription for WooCommerce - WPSubscription Pro
+Activate
+You cannot activate this plugin as it has unmet requirements.
+ | Delete
+	
+
+Supercharge your WooCommerce store with advanced subscription features, analytics, and automation.
+
+Version 1.18.4 | By ConversWP | Visit plugin site
+
+Requires: Subscriptions for WooCommerce with Stripe Recurring Payments, WooCommerce
+
+This plugin cannot be activated because required plugins are missing or inactive.
+
+	
+
+Select Subscriptions For WooCommerce
+	
+Subscriptions For WooCommerce
+Activate | Delete
+	
+
+Subscriptions for WooCommerce allow collecting repeated payments through subscriptions orders on the eCommerce store for both admin and users. Elevate your e-commerce store by exploring more on WP Swings
+
+Version 2.0.1 | By WP Swings | View details
+
+Requires: WooCommerce
+
+	Enable auto-updates
+
+
+There is a new version of Subscriptions For WooCommerce available. View version 2.1.1 details or update now.
+
+
+
+Select Subscriptions For WooCommerce Pro
+	
+Subscriptions For WooCommerce Pro
+Activate | Delete
+	
+
+Subscriptions for WooCommerce Pro plugin allows to handle subscription-based items and services on your e-store and generate recurring income. Elevate your e-commerce store by exploring more on WP Swings
+
+Version 2.7.1 | By WP Swings | Visit plugin site
+
+Requires: WooCommerce
+
+	
+
+Select Subscriptions for WooCommerce with Stripe Recurring Payments
+	
+Subscriptions for WooCommerce with Stripe Recurring Payments
+Activate | Delete
+	
+
+WPSubscription allows WooCommerce to enable recurring payments, subscriptions, and auto-renewals for digital and physical products. Supports Stripe, PayPal, Paddle, and more.
+
+Version 1.11.0 | By ConversWP | View details
+
+Requires: WooCommerce
+
+	Enable auto-updates
+
+
+There is a new version of Subscriptions for WooCommerce with Stripe Recurring Payments available. View version 2.5.0 details or update now.
+
+
+
+Select WooCommerce
+	
+WooCommerce
+Settings | Deactivate
+You cannot deactivate this plugin as other plugins depend on it.
+	
+
+An ecommerce toolkit that helps you sell anything. Beautifully.
+
+Version 11.0.1 | By Automattic | View details | Docs | API docs | Community support
+
+Required by: ShipStation for WooCommerce, Stripe Tax - Sales tax automation for WooCommerce, Subscription for WooCommerce - WPSubscription Pro, Subscriptions For WooCommerce, Subscriptions For WooCommerce Pro, Subscriptions for WooCommerce with Stripe Recurring Payments, WooCommerce Stripe Gateway
+
+Note: This plugin cannot be deactivated or deleted until the plugins that require it are deactivated or deleted.
+
+	Disable auto-updates
+Automatic update scheduled in 1 hour.
+
+
+
+There is a new version of WooCommerce available. View version 11.2.1 details or update now.
+
+
+
+Select WooCommerce Stripe Gateway
+	
+WooCommerce Stripe Gateway
+Settings | Deactivate
+	
+
+Accept debit and credit card payments in 135+ currencies, as well as Apple Pay, Google Pay, Klarna, Affirm, P24, ACH, and more.
+
+Version 10.9.0 | By Stripe | View details | Docs | Support
+
+Requires: WooCommerce
+
+	Disable auto-updates
+Automatic update scheduled in 1 hour.
+
+
+
+There is a new version of WooCommerce Stripe Gateway available. View version 11.1.1 details or update now.
+
+
+
+Select WP Mail SMTP
+	
 WP Mail SMTP
-Move up
-Move down
-Show or hide panel
-View Detailed Email Stats
-
-Automatically keep track of every email sent from your WordPress site and view valuable statistics right here in your dashboard.
-
-Upgrade to WP Mail SMTP Pro
-
-All Emails
-Sent Emails
-Failed Emails
-All Time
-Last 7 days
-Last 14 days
-Last 30 days
-4957 total
+Get WP Mail SMTP Pro | Settings | Docs | Deactivate
 	
-Sent N/A
-	
-Failed N/A
-Site Health Status
-Move up
-Move down
-Show or hide panel
-Should be improved
 
-Your site has a critical issue that should be addressed as soon as possible to improve its performance and security.
+Send WordPress emails reliably via SMTP or API using SendLayer, Brevo, SMTP.com, Gmail, Outlook, or another email service of your choice.
 
-Take a look at the 8 items on the Site Health screen.
+Version 4.9.0 | By WP Mail SMTP | View details
+	Enable auto-updates
 
-At a Glance
-Move up
-Move down
-Show or hide panel
-2 Published posts
-39 Published pages
-1 Comment
 
-WordPress 7.1.3 running Twenty Twenty-Five theme.
-Update to 7.1.4
-
-Search engines discouraged
-
-Activity
-Move up
-Move down
-Show or hide panel
-Recently Published
-Oct 19th, 1:07 PM
-SQA Members Daily Content
-May 8th, 8:16 AM
-Hello world!
-Recent Comments
-
-From A WordPress Commenter on Hello world!
-
-Hi, this is a comment. To get started with moderating, editing, and deleting comments, please visit the Comments screen in…
-
-Unapprove | Reply | Edit | Spam | Trash | View
-
-View more comments
-All (1) | Mine (0) | Pending (0) | Approved (1) | Spam (1) | Trash (0)
-Quick Draft
-Move up
-Move down
-Show or hide panel
-Title 
-Content 
+There is a new version of WP Mail SMTP available. View version 4.10.3 details or update now.
 
 
 
+Select All
+	Plugin	Description	Automatic Updates
+Select bulk action
+Bulk actions
+Activate
+Deactivate
+Update
+Delete
+Enable Auto-updates
+Disable Auto-updates
+14 items
 
-WordPress Events and News
-Move up
-Move down
-Show or hide panel
 
-Attend an upcoming event near you.  Select location
-
-There are no events scheduled near you at the moment. Would you like to organize a WordPress event?
-WordPress 7.1.4
-WordPress 7.2 Beta 2 
-WordCamp Central: WordPress Campus Connect at Presidency University: Building Skills, Exploring Careers, and Inspiring the Next Generation
-Open Channels FM: Who Controls Our Software, Open Channels News Week in Review
-Open Channels FM: Look What Was Waiting Down Your List
-
-Meetups 
-(opens in a new tab)
- | WordCamps 
-(opens in a new tab)
- | News 
-(opens in a new tab)
 
 Thank you for creating with WordPress.
 

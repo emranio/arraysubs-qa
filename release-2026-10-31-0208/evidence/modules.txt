@@ -1,0 +1,274 @@
+Skip to main content
+Skip to toolbar
+
+
+Dashboard
+Home
+Updates 12
+
+
+Posts
+All Posts
+Add Post
+Categories
+Tags
+
+
+Media
+Library
+Add Media File
+
+
+Pages
+All Pages
+Add Page
+
+
+Comments
+
+
+KB Articles
+KB Articles
+Add Post
+ArraySubs
+Home
+Subscription Plans
+Subscriptions
+Manage Members
+Store Credit
+Cancellation Flow
+Member Access
+Checkout Builder
+Profile & My Account
+Shortcodes
+Integrations
+Modules
+Settings
+Audits
+License
+1-Minute Setup
+Help
+
+
+WooCommerce
+Home
+Orders 69
+Customers
+Coupons
+Reports
+Settings
+Status
+Extensions
+
+
+Products
+All Products
+Add new product
+Brands
+Categories
+Tags
+Attributes
+Reviews
+
+
+Payments 1
+
+
+Analytics
+Overview
+Products
+Revenue
+Revenue Forecast
+Churn Analysis
+Retention
+Orders
+Refunds
+Variations
+Categories
+Coupons
+Taxes
+Downloads
+Stock
+Settings
+
+
+Marketing
+Overview
+Coupons
+
+
+Appearance
+Themes 2
+Editor
+Fonts
+
+
+Plugins 9
+Installed Plugins
+Add Plugin
+
+
+Users
+All Users
+Add User
+Profile
+
+
+Tools
+Available Tools
+Import
+Export
+Site Health 1
+Export Personal Data
+Erase Personal Data
+Scheduled Actions
+Theme File Editor
+Plugin File Editor
+
+
+Settings
+General
+Connectors
+Writing
+Reading
+Discussion
+Media
+Permalinks
+Privacy
+
+
+WP Mail SMTP
+Settings
+Email Log
+Email Reports
+Tools
+Privacy Compliance
+About Us
+Upgrade to Pro
+Collapse Menu
+About WordPress
+mirror-help.arrayhash.com
+Live
+12
+12 updates available
+⌘K
+Open command palette
+0
+0 Comments in moderation
+New
+Howdy, admin
+Modules
+
+Choose which ArraySubs modules run on your store
+
+Subscription Products
+Core
+
+Sell WooCommerce products on recurring billing schedules, with optional free trials.
+
+Always on
+Configure
+Automatic Payments
+Core
+
+Charge renewals automatically through supported payment gateways.
+
+Always on
+Configure
+Skip & Pause
+Core
+
+Let customers skip a renewal or pause their subscription for a while.
+
+Always on
+Configure
+Emails
+Core
+
+Send subscription lifecycle emails to customers and store admins.
+
+Always on
+Configure
+Manage Members
+Core
+
+View and edit customer profiles, addresses, subscriptions, and purchases.
+
+Always on
+Configure
+Analytics
+Core
+
+Track recurring revenue, renewals, churn, and subscriber growth.
+
+Always on
+Configure
+Subscription Box
+Free
+
+Let customers build their own box of products on a recurring plan.
+
+Configure
+Subscription Bundle
+Pro
+
+Sell a curated set of products together as one subscription.
+
+Configure
+Member Access & Content Gate
+Free
+
+Restrict content, downloads, and shop access to active subscribers.
+
+Configure
+Cancellation Flow
+Pro
+
+Customize cancellation reasons and show retention offers before customers leave.
+
+Configure
+Checkout Builder
+Pro
+
+Add custom checkout fields and arrange checkout steps and layout.
+
+Configure
+Feature Manager
+Pro
+
+Attach features and usage limits to plans and show them to customers.
+
+Configure
+Profile & My Account
+Pro
+
+Add custom profile fields and rearrange the My Account menu and pages.
+
+Configure
+Store Credit
+Pro
+
+Give customers a credit balance they can spend on renewals and at checkout.
+
+Configure
+Audits
+Pro
+
+Review activity history, renewal and portal-action failures, and scheduled-job logs.
+
+Configure
+Toolkit
+Free
+
+Control admin bar, wp-admin access, the login page, and Login as User.
+
+Configure
+Save Settings
+
+Updated at: 21 October, 2026 3:45 PM
+
+Discard Changes
+
+Thank you for creating with WordPress.
+
+Get Version 7.1.4

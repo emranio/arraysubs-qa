@@ -26,3 +26,7 @@ C: one action permission allowed/disabled and one safe optional module off/on; c
 
 ## Exclusions and limits
 License activation, secret changes, import/reset and service provisioning are inspect-only. External integrations/language providers/alternative gateways require existing safe setup. Missing fixtures and time-limited templates remain explicit gaps.
+
+Live Plugins page observed: core2.1.0; Pro1.3.0; WooCommerce11.0.1; official Stripe10.9.0, all active. Modules: six always-on and11 optional all enabled; no Webhooks module/card/menu in deployed UI although local code registers it. Local HEAD core65083a2, Procbc348b; deployed revisions unverified. Mail safety source AGENTS.md Mailpit Email Capture confirms loopback sink; live SMTP configuration corroboration pending.
+
+A exact observed General policy: multiple subscriptions/cart=true; one per customer=false; one per product=false; mixed cart=true; different cycles=true; require trial payment=true; one trial/customer=true; grace3days/cancel after7on-hold; invoice6hours before; retry24,24,24 + hard-decline stop=true; renewal sync=false; cancellation/early-renew/auto-renew-off=true; cancel immediately=true. Job logs30days. SMTP UI verified loopback127.0.0.1:1025, authentication/AutoTLS off.
