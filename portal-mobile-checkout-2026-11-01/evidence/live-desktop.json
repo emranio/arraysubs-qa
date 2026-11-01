@@ -1,0 +1,18 @@
+{
+  "bodyOverflow": "visible",
+  "busy": "false",
+  "checkoutOrigin": "https://checkout.freemius.com",
+  "coupon": "special60",
+  "framePosition": "static",
+  "heading": "Complete your order.",
+  "insidePaymentSection": true,
+  "modalAncestor": false,
+  "mode": "dashboard",
+  "trial": null,
+  "url": "https://user-portal.arrayhash.com/checkout/personal/",
+  "viewport": {
+    "height": 577,
+    "scrollWidth": 1280,
+    "width": 1280
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "footerPaddingBottom": "20px",
+  "launcher": {
+    "bottom": 382,
+    "height": 46,
+    "left": 808,
+    "right": 854,
+    "top": 336,
+    "width": 46,
+    "x": 808,
+    "y": 336
+  },
+  "overlap": false,
+  "refund": {
+    "bottom": 382,
+    "height": 16,
+    "left": 473.53125,
+    "right": 547.484375,
+    "top": 366,
+    "width": 73.953125,
+    "x": 473.53125,
+    "y": 366
+  },
+  "rightEdgeHitsPolicy": true,
+  "viewport": {
+    "height": 402,
+    "scrollWidth": 874,
+    "width": 874
+  }
+}

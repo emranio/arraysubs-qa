@@ -1,0 +1,25 @@
+{
+  "bodyOverflow": "visible",
+  "busy": "false",
+  "checkout": {
+    "coupon": "teclogic80",
+    "height": 1062,
+    "left": 17,
+    "mode": "dashboard",
+    "plan": "55250",
+    "right": 385,
+    "trial": null,
+    "width": 368
+  },
+  "coarsePointer": false,
+  "maxTouchPoints": 0,
+  "url": "http://localhost:3001/checkout/agency/",
+  "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.0 Mobile/15E148 Safari/604.1",
+  "viewport": {
+    "height": 874,
+    "scrollHeight": 1290,
+    "scrollWidth": 402,
+    "width": 402
+  },
+  "visibleDialogs": []
+}

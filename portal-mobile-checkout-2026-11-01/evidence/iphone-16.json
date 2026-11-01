@@ -1,0 +1,25 @@
+{
+  "bodyOverflow": "visible",
+  "busy": "false",
+  "checkout": {
+    "coupon": "special60",
+    "height": 1142,
+    "left": 17,
+    "mode": "dashboard",
+    "plan": "54910",
+    "right": 376,
+    "trial": null,
+    "width": 359
+  },
+  "coarsePointer": false,
+  "maxTouchPoints": 0,
+  "url": "http://localhost:3001/checkout/personal/",
+  "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.0 Mobile/15E148 Safari/604.1",
+  "viewport": {
+    "height": 852,
+    "scrollHeight": 1370,
+    "scrollWidth": 393,
+    "width": 393
+  },
+  "visibleDialogs": []
+}

@@ -1,0 +1,25 @@
+{
+  "bodyOverflow": "visible",
+  "busy": "false",
+  "checkout": {
+    "coupon": "special60",
+    "height": 721,
+    "left": 17,
+    "mode": "dashboard",
+    "plan": "54910",
+    "right": 343,
+    "trial": "free",
+    "width": 326
+  },
+  "coarsePointer": false,
+  "maxTouchPoints": 0,
+  "url": "http://localhost:3001/checkout/personal/",
+  "userAgent": "Mozilla/5.0 (Linux; Android 15; SM-S931B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Mobile Safari/537.36",
+  "viewport": {
+    "height": 800,
+    "scrollHeight": 949,
+    "scrollWidth": 360,
+    "width": 360
+  },
+  "visibleDialogs": []
+}

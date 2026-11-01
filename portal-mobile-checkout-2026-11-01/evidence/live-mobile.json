@@ -1,0 +1,18 @@
+{
+  "bodyOverflow": "visible",
+  "busy": "false",
+  "checkoutOrigin": "https://checkout.freemius.com",
+  "coupon": "teclogic80",
+  "framePosition": "static",
+  "heading": "Complete your order.",
+  "insidePaymentSection": true,
+  "modalAncestor": false,
+  "mode": "dashboard",
+  "trial": null,
+  "url": "https://user-portal.arrayhash.com/checkout/agency/",
+  "viewport": {
+    "height": 852,
+    "scrollWidth": 393,
+    "width": 393
+  }
+}
