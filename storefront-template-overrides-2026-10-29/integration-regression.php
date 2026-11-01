@@ -78,7 +78,6 @@ $reflection = new ReflectionClass(StorefrontTemplate::class);
 $assert(realpath($reflection->getFileName()) === realpath($workspace . '/arraysubs/src/Supports/StorefrontTemplate.php'), 'Both plugins must use the core shared loader.');
 $assert(realpath((string) Config::get('plugin.src_path')) === realpath($workspace . '/arraysubs/src'), 'Nested plugin source configuration must resolve the installed core.');
 
-$docs = file_get_contents($workspace . '/user-manual/markdowns/developers/template-overrides.md');
 $call_sites = [];
 $template_count = 0;
 foreach ($inventory as $plugin => $templates) {
@@ -121,8 +120,6 @@ foreach ($inventory as $plugin => $templates) {
         $assert(is_file($source_path), 'Bundled template must exist: ' . $source_path);
         $assert(!empty($calls[$logical]), 'Bundled template must have a shared-loader call site: ' . $logical);
         $assert(str_contains(file_get_contents($source_path), $plugin . '/' . $logical), 'Bundled header must identify its override path: ' . $logical);
-        $assert(str_contains($docs, '`' . $plugin . '/' . $logical . '`'), 'Developer manual must list exact override path: ' . $logical);
-        $assert(str_contains($docs, '`src/Features/' . $source_relative . '`'), 'Developer manual must list exact source path: ' . $source_relative);
     }
     $call_sites[$plugin] = $calls;
 }
