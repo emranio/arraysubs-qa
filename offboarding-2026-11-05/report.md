@@ -51,7 +51,9 @@ Build output included existing translator-comment and Next tracing warnings; Wor
 
 ## Separate documentation finding
 
-**#158 remains open:** “How do I choose which activity events appear in the audit log?” ranks `audit-logs/review-the-activity-audit-trail` before the expected `audit-logs/choose-what-activity-is-logged`. This was found by the broader guide check, not the offboarding workflow. No baseline was run to establish whether it predates this task. No unrelated search behavior was changed. The complete guide check is therefore not reported as passing.
+**#158 was open at the end of this run:** “How do I choose which activity events appear in the audit log?” ranked `audit-logs/review-the-activity-audit-trail` before the expected `audit-logs/choose-what-activity-is-logged`. This was found by the broader guide check, not the offboarding workflow. No baseline was run to establish whether it predated this task, and that original check was not reported as passing.
+
+**Resolved in the user's requested follow-up on 2026-11-05:** clarified the settings guide's search metadata, retained the original assertion and added four regression questions. The complete guide check now passes all 55 unit tests and 604 ranking checks; 11 desktop/mobile browser checks passed. See `qa/audit-search-2026-11-05/report.md` and its evidence for the resolution.
 
 ## Restoration and deployment
 
