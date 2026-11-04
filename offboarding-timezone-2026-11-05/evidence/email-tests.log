@@ -1,0 +1,19 @@
+✔ portal dates use UTC+6 across midnight, month and year boundaries regardless of host timezone (5.785458ms)
+✔ receipt-date filters include exactly the UTC+6 calendar day in a non-UTC database session (105.648959ms)
+✔ notification uses the configured sender, fixed admin recipient, subscribed Reply-To and escaped details (0.67075ms)
+✔ intake rejects wrong content type, malformed JSON, oversized streams and unsupported plugins before any email (1.272375ms)
+✔ every new event sends one logged internal mail; matching and conflicting replays cannot send another (30.236084ms)
+✔ email failure retains the record and retries the immutable message with no duplicate row (13.385334ms)
+✔ accepted mail with a lost response reuses the provider key and never delivers twice (10.164417ms)
+✔ concurrent receipt retries share one delivery claim (22.76775ms)
+✔ a failed status write after acceptance retries safely with the same provider key (73.306209ms)
+✔ stale claims recover, but ambiguous delivery beyond the provider window requires review (28.936083ms)
+✔ rerunning the additive migration preserves sent records and notification receipts (6.791375ms)
+ℹ tests 11
+ℹ suites 0
+ℹ pass 11
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 371.871208

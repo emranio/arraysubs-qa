@@ -1,0 +1,27 @@
+
+> arrayhash-user-portal@0.1.0 test:offboarding
+> node scripts/test-plugin-offboarding.mjs
+
+✔ direct deactivation accepts no selected reasons and no subscribed email (6.340625ms)
+✔ both plugin editions accept help and deactivation as separate event kinds (0.298459ms)
+✔ all seven reasons and optional other feedback survive together (0.441625ms)
+✔ equivalent retry payloads normalize identically without collapsing event IDs (1.461125ms)
+✔ reason fields cannot omit the array, smuggle unknown keys, or exceed seven entries (0.428ms)
+✔ email is optional but supplied values are validated and normalized (0.302666ms)
+✔ site normalization preserves installation paths and removes query secrets and fragments (0.133708ms)
+✔ unsafe, credential-bearing, missing and oversized site URLs are rejected (0.201959ms)
+✔ ASCII, UTF-8 and UTF-16 textarea boundaries match browser maxLength (0.341167ms)
+✔ plugin version is bounded and never silently truncated (0.138958ms)
+✔ only registered plugin slugs and event types enter storage (0.126542ms)
+✔ a registry entry enables a future product without changing the parser (0.081833ms)
+✔ event identifiers must be UUIDs and are normalized for acknowledgements (0.093292ms)
+✔ delayed delivery and valid leap-day UTC timestamps are accepted (0.098333ms)
+✔ impossible calendar dates, non-UTC forms and excessive future skew are rejected (0.133917ms)
+ℹ tests 15
+ℹ suites 0
+ℹ pass 15
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 16.740667

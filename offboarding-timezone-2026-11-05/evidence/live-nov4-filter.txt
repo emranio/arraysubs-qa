@@ -1,0 +1,233 @@
+- link "Skip to content":
+  - /url: "#main"
+- complementary:
+  - link "ArrayHash":
+    - /url: /dashboard/
+    - img "ArrayHash"
+  - paragraph: Signed in
+  - paragraph: Al Emran
+  - paragraph: emran@arrayhash.com
+  - navigation "Account navigation":
+    - link "Dashboard":
+      - /url: /dashboard/
+      - text: Dashboard
+    - link "Products & Licenses":
+      - /url: /products/
+      - text: Products & Licenses
+    - link "Downloads":
+      - /url: /downloads/
+      - text: Downloads
+    - link "Invoices":
+      - /url: /invoices/
+      - text: Invoices
+    - link "Settings":
+      - /url: /settings/
+      - text: Settings
+    - link "Password":
+      - /url: /password/
+      - text: Password
+  - navigation "Admin navigation":
+    - paragraph: Admin
+    - link "Email logs":
+      - /url: /admin/emails/
+      - text: Email logs
+    - link "Subscribers":
+      - /url: /admin/subscribers/
+      - text: Subscribers
+    - link "Plugin offboarding":
+      - /url: /admin/offboarding/
+      - text: Plugin offboarding
+    - link "Users":
+      - /url: /admin/users/
+      - text: Users
+  - button "Sign out":
+    - text: Sign out
+  - button "Privacy choices":
+    - text: Privacy choices
+- main:
+  - paragraph: Account
+  - heading "Plugin offboarding" [level=1]
+  - paragraph: Deactivations and developer contact requests across your plugins.
+  - region "Filter offboarding records":
+    - text: Search records
+    - searchbox "Search records": <redacted>
+    - text: Plugin
+    - combobox "Plugin":
+      - option "All plugins" [selected]
+      - option "ArraySubs"
+      - option "ArraySubs Pro"
+    - text: Event
+    - combobox "Event":
+      - option "All events" [selected]
+      - option "Deactivated"
+      - option "Developer help requested"
+    - text: Reason
+    - combobox "Reason":
+      - option "All reasons" [selected]
+      - option "No reason selected"
+      - option "Missing a feature I'm looking for"
+      - option "Not working, a bug or an issue"
+      - option "Found something else that suits me better"
+      - option "Could not find the settings for my work"
+      - option "Needs more improvement"
+      - option "Don't know where to start"
+      - option "Something else"
+    - text: Received from (UTC+6)
+    - textbox "Received from (UTC+6)": 2026-11-04
+    - text: Received through (UTC+6)
+    - textbox "Received through (UTC+6)": 2026-11-04
+    - button "Apply filters"
+    - link "Clear filters":
+      - /url: /admin/offboarding/
+    - paragraph: 0 records · 0 deactivations · 0 contact requests matching these filters.
+  - table:
+    - rowgroup:
+      - row "Received (UTC+6) Plugin Event Email / website Selected reasons Details":
+        - columnheader "Received (UTC+6)"
+        - columnheader "Plugin"
+        - columnheader "Event"
+        - columnheader "Email / website"
+        - columnheader "Selected reasons"
+        - columnheader "Details"
+    - rowgroup:
+      - row "No offboarding records match these filters.":
+        - cell "No offboarding records match these filters."
+  - navigation "Important links":
+    - link "ArrayHash":
+      - /url: https://arrayhash.com/
+    - link "Privacy Policy":
+      - /url: https://arrayhash.com/trust-center/privacy-policy/
+    - link "Terms":
+      - /url: https://arrayhash.com/trust-center/terms-of-service/
+    - link "Refund Policy":
+      - /url: https://arrayhash.com/trust-center/refund-policy/
+    - link "Data Safety":
+      - /url: https://arrayhash.com/trust-center/data-safety/
+    - link "Accessibility":
+      - /url: https://arrayhash.com/trust-center/accessibility-compliance/
+- alert
+- complementary "Accessibility Tools":
+  - button "Open Accessibility Tools menu":
+  - dialog:
+    - generic: Accessibility Tools
+    - generic: ALT + A
+    - generic: Accessibility Settings
+    - button:
+    - button:
+      - generic: Settings
+    - button [expanded]:
+      - generic: Accessibility Profiles
+    - button:
+      - generic: i
+      - generic: Seizure Safe
+    - button:
+      - generic: i
+      - generic: Vision Impaired
+    - button:
+      - generic: i
+      - generic: Light Sensitivity
+    - button:
+      - generic: i
+      - generic: Color Blind
+    - button:
+      - generic: i
+      - generic: Dyslexia
+    - button:
+      - generic: i
+      - generic: ADHD Friendly
+    - button:
+      - generic: i
+      - generic: Cognitive Disability
+    - button:
+      - generic: i
+      - generic: Keyboard / Motor
+    - button:
+      - generic: i
+      - generic: Screen Reader
+    - button [expanded]:
+      - generic: Visibility
+    - button:
+      - generic: i
+      - generic: Reading Lens
+    - button:
+      - generic: i
+      - generic: Big Cursor
+    - button:
+      - generic: i
+      - generic: Reading Mask
+    - button:
+      - generic: i
+      - generic: Reading Guide
+    - button:
+      - generic: i
+      - generic: Read Aloud
+    - button:
+      - generic: i
+      - generic: Focus Highlight
+    - button:
+      - generic: i
+      - generic: Virtual Keyboard
+    - button:
+      - generic: i
+      - generic: Page Structure
+    - button:
+      - generic: i
+      - generic: Hide Images
+    - button:
+      - generic: i
+      - generic: Reduce Animations
+    - button [expanded]:
+      - generic: Color
+    - button:
+      - generic: i
+      - generic: Dark Contrast
+    - button:
+      - generic: i
+      - generic: Light Contrast
+    - button:
+      - generic: i
+      - generic: High Contrast
+    - button:
+      - generic: i
+      - generic: Monochrome
+    - button:
+      - generic: i
+      - generic: Invert Colors
+    - button:
+      - generic: i
+      - generic: Color Blind
+    - button [expanded]:
+      - generic: Content
+    - button:
+      - generic: i
+      - generic: Dyslexia Friendly
+    - button:
+      - generic: i
+      - generic: Highlight Titles
+    - button:
+      - generic: i
+      - generic: Font Size
+    - button:
+      - generic: i
+      - generic: Text Magnifier
+    - button:
+      - generic: i
+      - generic: Highlight Links
+    - button:
+      - generic: i
+      - generic: Line Height
+    - button:
+      - generic: i
+      - generic: Letter Spacing
+    - button:
+      - generic: i
+      - generic: Text Align
+    - button:
+      - generic: i
+      - generic: Dictionary
+    - button:
+      - generic: i
+      - generic: Simplify
+    - button:
+      - text: Reset all settings
+  - status

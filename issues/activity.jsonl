@@ -826,3 +826,8 @@
 {"timestamp":"2026-11-05T01:41:53.232783+06:00","action":"edit","task_id":158,"detail":"Audit-log settings question ranks overview above settings guide"}
 {"timestamp":"2026-11-05T01:49:52.638969+06:00","action":"edit","task_id":158,"detail":"Audit-log settings question ranks overview above settings guide"}
 {"timestamp":"2026-11-05T01:49:52.667063+06:00","action":"move","task_id":158,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-11-05T01:52:41.039516+06:00","action":"create","task_id":159,"detail":"Offboarding dates and filters show UTC instead of UTC+6"}
+{"timestamp":"2026-11-05T01:58:52.447289+06:00","action":"edit","task_id":159,"detail":"Offboarding dates and filters show UTC instead of UTC+6"}
+{"timestamp":"2026-11-05T01:58:52.473505+06:00","action":"move","task_id":159,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-11-05T01:58:52.498905+06:00","action":"edit","task_id":159,"detail":"Offboarding dates and filters show UTC instead of UTC+6"}
+{"timestamp":"2026-11-05T01:58:52.49906+06:00","action":"release","task_id":159,"detail":"oscine-urman"}

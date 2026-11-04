@@ -1,0 +1,346 @@
+- link "Skip to content":
+  - /url: "#main"
+- complementary:
+  - link "ArrayHash":
+    - /url: /dashboard/
+    - img "ArrayHash"
+  - paragraph: Signed in
+  - paragraph: Al Emran
+  - paragraph: emran@arrayhash.com
+  - navigation "Account navigation":
+    - link "Dashboard":
+      - /url: /dashboard/
+      - text: Dashboard
+    - link "Products & Licenses":
+      - /url: /products/
+      - text: Products & Licenses
+    - link "Downloads":
+      - /url: /downloads/
+      - text: Downloads
+    - link "Invoices":
+      - /url: /invoices/
+      - text: Invoices
+    - link "Settings":
+      - /url: /settings/
+      - text: Settings
+    - link "Password":
+      - /url: /password/
+      - text: Password
+  - navigation "Admin navigation":
+    - paragraph: Admin
+    - link "Email logs":
+      - /url: /admin/emails/
+      - text: Email logs
+    - link "Subscribers":
+      - /url: /admin/subscribers/
+      - text: Subscribers
+    - link "Plugin offboarding":
+      - /url: /admin/offboarding/
+      - text: Plugin offboarding
+    - link "Users":
+      - /url: /admin/users/
+      - text: Users
+  - button "Sign out":
+    - text: Sign out
+  - button "Privacy choices":
+    - text: Privacy choices
+- main:
+  - paragraph: Account
+  - heading "Plugin offboarding" [level=1]
+  - paragraph: Deactivations and developer contact requests across your plugins.
+  - region "Filter offboarding records":
+    - text: Search records
+    - searchbox "Search records": <redacted>
+    - text: Plugin
+    - combobox "Plugin":
+      - option "All plugins" [selected]
+      - option "ArraySubs"
+      - option "ArraySubs Pro"
+    - text: Event
+    - combobox "Event":
+      - option "All events" [selected]
+      - option "Deactivated"
+      - option "Developer help requested"
+    - text: Reason
+    - combobox "Reason":
+      - option "All reasons" [selected]
+      - option "No reason selected"
+      - option "Missing a feature I'm looking for"
+      - option "Not working, a bug or an issue"
+      - option "Found something else that suits me better"
+      - option "Could not find the settings for my work"
+      - option "Needs more improvement"
+      - option "Don't know where to start"
+      - option "Something else"
+    - text: Received from (UTC+6)
+    - textbox "Received from (UTC+6)": 2026-11-05
+    - text: Received through (UTC+6)
+    - textbox "Received through (UTC+6)": 2026-11-05
+    - button "Apply filters"
+    - link "Clear filters":
+      - /url: /admin/offboarding/
+    - paragraph: 6 records · 3 deactivations · 3 contact requests matching these filters.
+  - table:
+    - rowgroup:
+      - row "Received (UTC+6) Plugin Event Email / website Selected reasons Details":
+        - columnheader "Received (UTC+6)"
+        - columnheader "Plugin"
+        - columnheader "Event"
+        - columnheader "Email / website"
+        - columnheader "Selected reasons"
+        - columnheader "Details"
+    - rowgroup:
+      - 'row "2026-11-05 01:04 ArraySubs Pro 1.3.0 Deactivated dev-email@wpengine.local http://localhost:10013/ Missing a feature I''m looking for Something else OFFBOARD-QA-20261105 EMAIL: verifying the new admin deactivation notification and matching portal record. বাংলা feedback. View arraysubspro record received 2026-11-05 01:04 UTC+6"':
+        - cell "2026-11-05 01:04"
+        - cell "ArraySubs Pro 1.3.0":
+          - paragraph: ArraySubs Pro
+          - paragraph: 1.3.0
+        - cell "Deactivated":
+          - generic: Deactivated
+        - cell "dev-email@wpengine.local http://localhost:10013/":
+          - paragraph: dev-email@wpengine.local
+          - link "http://localhost:10013/":
+            - /url: http://localhost:10013/
+        - 'cell "Missing a feature I''m looking for Something else OFFBOARD-QA-20261105 EMAIL: verifying the new admin deactivation notification and matching portal record. বাংলা feedback."':
+          - list:
+            - listitem: Missing a feature I'm looking for
+            - listitem: Something else
+          - paragraph: "OFFBOARD-QA-20261105 EMAIL: verifying the new admin deactivation notification and matching portal record. বাংলা feedback."
+        - cell "View arraysubspro record received 2026-11-05 01:04 UTC+6":
+          - link "View arraysubspro record received 2026-11-05 01:04 UTC+6":
+            - /url: /admin/offboarding/dbd20445-3a8d-4587-aa40-5bfb9ed12d5d/
+            - text: View record
+      - row "2026-11-05 00:46 ArraySubs 2.1.0 Deactivated dev-email@wpengine.local http://localhost:10013/ No reason selected View arraysubs record received 2026-11-05 00:46 UTC+6":
+        - cell "2026-11-05 00:46"
+        - cell "ArraySubs 2.1.0":
+          - paragraph: ArraySubs
+          - paragraph: 2.1.0
+        - cell "Deactivated":
+          - generic: Deactivated
+        - cell "dev-email@wpengine.local http://localhost:10013/":
+          - paragraph: dev-email@wpengine.local
+          - link "http://localhost:10013/":
+            - /url: http://localhost:10013/
+        - cell "No reason selected"
+        - cell "View arraysubs record received 2026-11-05 00:46 UTC+6":
+          - link "View arraysubs record received 2026-11-05 00:46 UTC+6":
+            - /url: /admin/offboarding/df053a53-5140-4b2b-9254-655466df4430/
+            - text: View record
+      - row "2026-11-05 00:45 ArraySubs 2.1.0 Developer help requested dev-email@wpengine.local http://localhost:10013/ No reason selected View arraysubs record received 2026-11-05 00:45 UTC+6":
+        - cell "2026-11-05 00:45"
+        - cell "ArraySubs 2.1.0":
+          - paragraph: ArraySubs
+          - paragraph: 2.1.0
+        - cell "Developer help requested":
+          - generic: Developer help requested
+        - cell "dev-email@wpengine.local http://localhost:10013/":
+          - paragraph: dev-email@wpengine.local
+          - link "http://localhost:10013/":
+            - /url: http://localhost:10013/
+        - cell "No reason selected"
+        - cell "View arraysubs record received 2026-11-05 00:45 UTC+6":
+          - link "View arraysubs record received 2026-11-05 00:45 UTC+6":
+            - /url: /admin/offboarding/d10702d0-b2ea-42fc-ba6f-9da495ba216c/
+            - text: View record
+      - 'row "2026-11-05 00:44 ArraySubs Pro 1.3.0 Deactivated dev-email@wpengine.local http://localhost:10013/ Missing a feature I''m looking for Not working, a bug or an issue Found something else that suits me better Could not find the settings for my work Needs more improvement Don''t know where to start Something else OFFBOARD-QA-20261105 PRO DEACTIVATE: all seven reasons. বাংলা feedback. View arraysubspro record received 2026-11-05 00:44 UTC+6"':
+        - cell "2026-11-05 00:44"
+        - cell "ArraySubs Pro 1.3.0":
+          - paragraph: ArraySubs Pro
+          - paragraph: 1.3.0
+        - cell "Deactivated":
+          - generic: Deactivated
+        - cell "dev-email@wpengine.local http://localhost:10013/":
+          - paragraph: dev-email@wpengine.local
+          - link "http://localhost:10013/":
+            - /url: http://localhost:10013/
+        - 'cell "Missing a feature I''m looking for Not working, a bug or an issue Found something else that suits me better Could not find the settings for my work Needs more improvement Don''t know where to start Something else OFFBOARD-QA-20261105 PRO DEACTIVATE: all seven reasons. বাংলা feedback."':
+          - list:
+            - listitem: Missing a feature I'm looking for
+            - listitem: Not working, a bug or an issue
+            - listitem: Found something else that suits me better
+            - listitem: Could not find the settings for my work
+            - listitem: Needs more improvement
+            - listitem: Don't know where to start
+            - listitem: Something else
+          - paragraph: "OFFBOARD-QA-20261105 PRO DEACTIVATE: all seven reasons. বাংলা feedback."
+        - cell "View arraysubspro record received 2026-11-05 00:44 UTC+6":
+          - link "View arraysubspro record received 2026-11-05 00:44 UTC+6":
+            - /url: /admin/offboarding/f0729a6d-2ade-4c29-86e5-4482b8f2c251/
+            - text: View record
+      - row "2026-11-05 00:43 ArraySubs Pro 1.3.0 Developer help requested dev-email@wpengine.local http://localhost:10013/ No reason selected View arraysubspro record received 2026-11-05 00:43 UTC+6":
+        - cell "2026-11-05 00:43"
+        - cell "ArraySubs Pro 1.3.0":
+          - paragraph: ArraySubs Pro
+          - paragraph: 1.3.0
+        - cell "Developer help requested":
+          - generic: Developer help requested
+        - cell "dev-email@wpengine.local http://localhost:10013/":
+          - paragraph: dev-email@wpengine.local
+          - link "http://localhost:10013/":
+            - /url: http://localhost:10013/
+        - cell "No reason selected"
+        - cell "View arraysubspro record received 2026-11-05 00:43 UTC+6":
+          - link "View arraysubspro record received 2026-11-05 00:43 UTC+6":
+            - /url: /admin/offboarding/c561545a-c5b9-4b4f-8651-cbd1877d7eab/
+            - text: View record
+      - 'row "2026-11-05 00:43 ArraySubs Pro 1.3.0 Developer help requested dev-email@wpengine.local http://localhost:10013/ Missing a feature I''m looking for Not working, a bug or an issue Something else OFFBOARD-QA-20261105 PRO HELP: selected missing feature, bug and other. বাংলা feedback. View arraysubspro record received 2026-11-05 00:43 UTC+6"':
+        - cell "2026-11-05 00:43"
+        - cell "ArraySubs Pro 1.3.0":
+          - paragraph: ArraySubs Pro
+          - paragraph: 1.3.0
+        - cell "Developer help requested":
+          - generic: Developer help requested
+        - cell "dev-email@wpengine.local http://localhost:10013/":
+          - paragraph: dev-email@wpengine.local
+          - link "http://localhost:10013/":
+            - /url: http://localhost:10013/
+        - 'cell "Missing a feature I''m looking for Not working, a bug or an issue Something else OFFBOARD-QA-20261105 PRO HELP: selected missing feature, bug and other. বাংলা feedback."':
+          - list:
+            - listitem: Missing a feature I'm looking for
+            - listitem: Not working, a bug or an issue
+            - listitem: Something else
+          - paragraph: "OFFBOARD-QA-20261105 PRO HELP: selected missing feature, bug and other. বাংলা feedback."
+        - cell "View arraysubspro record received 2026-11-05 00:43 UTC+6":
+          - link "View arraysubspro record received 2026-11-05 00:43 UTC+6":
+            - /url: /admin/offboarding/188a6179-6a99-40d6-a6a4-be1260dedbb3/
+            - text: View record
+  - paragraph: 1–6 of 6
+  - navigation "Important links":
+    - link "ArrayHash":
+      - /url: https://arrayhash.com/
+    - link "Privacy Policy":
+      - /url: https://arrayhash.com/trust-center/privacy-policy/
+    - link "Terms":
+      - /url: https://arrayhash.com/trust-center/terms-of-service/
+    - link "Refund Policy":
+      - /url: https://arrayhash.com/trust-center/refund-policy/
+    - link "Data Safety":
+      - /url: https://arrayhash.com/trust-center/data-safety/
+    - link "Accessibility":
+      - /url: https://arrayhash.com/trust-center/accessibility-compliance/
+- alert
+- complementary "Accessibility Tools":
+  - button "Open Accessibility Tools menu":
+  - dialog:
+    - generic: Accessibility Tools
+    - generic: ALT + A
+    - generic: Accessibility Settings
+    - button:
+    - button:
+      - generic: Settings
+    - button [expanded]:
+      - generic: Accessibility Profiles
+    - button:
+      - generic: i
+      - generic: Seizure Safe
+    - button:
+      - generic: i
+      - generic: Vision Impaired
+    - button:
+      - generic: i
+      - generic: Light Sensitivity
+    - button:
+      - generic: i
+      - generic: Color Blind
+    - button:
+      - generic: i
+      - generic: Dyslexia
+    - button:
+      - generic: i
+      - generic: ADHD Friendly
+    - button:
+      - generic: i
+      - generic: Cognitive Disability
+    - button:
+      - generic: i
+      - generic: Keyboard / Motor
+    - button:
+      - generic: i
+      - generic: Screen Reader
+    - button [expanded]:
+      - generic: Visibility
+    - button:
+      - generic: i
+      - generic: Reading Lens
+    - button:
+      - generic: i
+      - generic: Big Cursor
+    - button:
+      - generic: i
+      - generic: Reading Mask
+    - button:
+      - generic: i
+      - generic: Reading Guide
+    - button:
+      - generic: i
+      - generic: Read Aloud
+    - button:
+      - generic: i
+      - generic: Focus Highlight
+    - button:
+      - generic: i
+      - generic: Virtual Keyboard
+    - button:
+      - generic: i
+      - generic: Page Structure
+    - button:
+      - generic: i
+      - generic: Hide Images
+    - button:
+      - generic: i
+      - generic: Reduce Animations
+    - button [expanded]:
+      - generic: Color
+    - button:
+      - generic: i
+      - generic: Dark Contrast
+    - button:
+      - generic: i
+      - generic: Light Contrast
+    - button:
+      - generic: i
+      - generic: High Contrast
+    - button:
+      - generic: i
+      - generic: Monochrome
+    - button:
+      - generic: i
+      - generic: Invert Colors
+    - button:
+      - generic: i
+      - generic: Color Blind
+    - button [expanded]:
+      - generic: Content
+    - button:
+      - generic: i
+      - generic: Dyslexia Friendly
+    - button:
+      - generic: i
+      - generic: Highlight Titles
+    - button:
+      - generic: i
+      - generic: Font Size
+    - button:
+      - generic: i
+      - generic: Text Magnifier
+    - button:
+      - generic: i
+      - generic: Highlight Links
+    - button:
+      - generic: i
+      - generic: Line Height
+    - button:
+      - generic: i
+      - generic: Letter Spacing
+    - button:
+      - generic: i
+      - generic: Text Align
+    - button:
+      - generic: i
+      - generic: Dictionary
+    - button:
+      - generic: i
+      - generic: Simplify
+    - button:
+      - text: Reset all settings
+  - status
