@@ -1,0 +1,139 @@
+{
+  "sessionTimezone": "UTC",
+  "assertions": [
+    "Admin profile UTC; customer preference America/New_York",
+    "All original user created_at fields unchanged",
+    "Original domain, subscriber and email timestamps exactly match baseline",
+    "Customer updated_at reflects the profile edit as a UTC instant",
+    "Authenticated products, invoices, license and manage API timestamps preserve source UTC instants"
+  ],
+  "users": [
+    {
+      "id": "6c3596c4-93b3-4a54-96bc-4a407d3ff821",
+      "email": "timezone-admin@example.test",
+      "time_zone": "UTC",
+      "created_at": "2026-11-04T19:04:55.000Z",
+      "updated_at": "2026-11-04T19:04:55.000Z"
+    },
+    {
+      "id": "b9d14b0f-9f86-4c79-80ce-980efe9eb688",
+      "email": "timezone-customer@example.test",
+      "time_zone": "America/New_York",
+      "created_at": "2026-11-04T19:04:55.000Z",
+      "updated_at": "2026-11-04T20:19:23.277Z"
+    }
+  ],
+  "originalDomainsUnchanged": true,
+  "originalSubscribersUnchanged": true,
+  "originalEmailsUnchanged": true,
+  "api": [
+    {
+      "route": "/api/portal/products/",
+      "status": 200,
+      "utcTimestampFields": [
+        {
+          "path": "purchases[0].purchaseDate",
+          "value": "2026-11-04 19:04:55"
+        },
+        {
+          "path": "purchases[0].expiration",
+          "value": "2027-11-04 19:04:55"
+        },
+        {
+          "path": "purchases[1].purchaseDate",
+          "value": "2026-11-04 19:04:55"
+        },
+        {
+          "path": "purchases[1].expiration",
+          "value": "2026-11-19 19:04:55"
+        },
+        {
+          "path": "purchases[1].trialEnds",
+          "value": "2026-11-19 19:04:55"
+        }
+      ]
+    },
+    {
+      "route": "/api/portal/invoices/",
+      "status": 200,
+      "utcTimestampFields": [
+        {
+          "path": "invoices[0].date",
+          "value": "2026-11-05 18:00:00"
+        },
+        {
+          "path": "invoices[1].date",
+          "value": "2026-11-05 17:59:59"
+        },
+        {
+          "path": "invoices[2].date",
+          "value": "2026-11-04 18:00:00"
+        },
+        {
+          "path": "invoices[3].date",
+          "value": "2026-11-04 17:59:59"
+        }
+      ]
+    },
+    {
+      "route": "/api/portal/license/99/77/",
+      "status": 200,
+      "utcTimestampFields": [
+        {
+          "path": "detail.purchase.purchaseDate",
+          "value": "2026-11-04 19:04:55"
+        },
+        {
+          "path": "detail.purchase.expiration",
+          "value": "2027-11-04 19:04:55"
+        },
+        {
+          "path": "detail.domains[0].activatedAt",
+          "value": "2026-11-04T19:04:55.000Z"
+        },
+        {
+          "path": "detail.domains[0].lastSeenAt",
+          "value": "2026-11-04T19:04:55.000Z"
+        }
+      ]
+    },
+    {
+      "route": "/api/portal/manage/99/77/",
+      "status": 200,
+      "utcTimestampFields": [
+        {
+          "path": "detail.purchase.purchaseDate",
+          "value": "2026-11-04 19:04:55"
+        },
+        {
+          "path": "detail.purchase.expiration",
+          "value": "2027-11-04 19:04:55"
+        },
+        {
+          "path": "detail.subscription.nextPayment",
+          "value": "2027-11-04 19:04:55"
+        },
+        {
+          "path": "detail.subscription.createdAt",
+          "value": "2026-11-04 19:04:55"
+        },
+        {
+          "path": "detail.payments[0].date",
+          "value": "2026-11-05 18:00:00"
+        },
+        {
+          "path": "detail.payments[1].date",
+          "value": "2026-11-05 17:59:59"
+        },
+        {
+          "path": "detail.payments[2].date",
+          "value": "2026-11-04 18:00:00"
+        },
+        {
+          "path": "detail.payments[3].date",
+          "value": "2026-11-04 17:59:59"
+        }
+      ]
+    }
+  ]
+}

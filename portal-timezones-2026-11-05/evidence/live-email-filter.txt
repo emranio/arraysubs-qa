@@ -1,0 +1,43 @@
+ACCOUNT
+
+Email logs
+
+Every email the portal has sent, kept for 90 days. Secrets such as reset links and temporary passwords are redacted before storage.
+
+Status
+All statuses
+Sent
+Failed
+Pending
+Type
+All types
+ArrayFunnel welcome
+ArraySubs welcome
+Welcome
+Password reset
+Password changed
+Profile updated
+Email changed notice
+Portal credentials
+Plugin notification subscriber
+Plugin offboarding (internal)
+Refund request (internal)
+Refund request confirmation
+From (UTC+6)
+To (UTC+6)
+
+1 email match these filters.
+
+SENT (UTC+6)	TYPE	RECIPIENT	SUBJECT	STATUS	VIA	TRIES
+2026-11-05 01:04	Plugin offboarding (internal)	emran@arrayhash.com	[ArraySubs Pro offboarding] Deactivated - localhost:10013	SENT	resend	1
+
+1–1 of 1
+
+Dates and times: UTC+6.
+
+ArrayHash
+Privacy Policy
+Terms
+Refund Policy
+Data Safety
+Accessibility

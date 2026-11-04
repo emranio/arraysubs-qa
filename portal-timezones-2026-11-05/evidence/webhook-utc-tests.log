@@ -1,0 +1,20 @@
+Freemius webhook: payment.created without a resolvable user 701
+Freemius webhook: payment.created without a resolvable user 701
+Freemius webhook: payment.created without a resolvable user 701
+Freemius webhook: payment.created without a resolvable user 701
+Freemius webhook: payment.created without a resolvable user 701
+Freemius webhook: payment.created without a resolvable user 701
+Freemius webhook: payment.created without a resolvable user 701
+Freemius webhook: payment.created without a resolvable user 701
+Freemius webhook: payment.created without a resolvable user 701
+Freemius webhook: payment.created without a resolvable user 701
+✔ payment webhook passes the original UTC instant to persistence in every server timezone (1.987042ms)
+✔ missing provider payment dates still fall back to the current UTC instant (0.356916ms)
+ℹ tests 2
+ℹ suites 0
+ℹ pass 2
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 4.749916

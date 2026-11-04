@@ -1,0 +1,28 @@
+ACCOUNT
+
+Subscribers
+
+WordPress administrators who opted into ArraySubs or ArrayFunnel product notifications.
+
+1 subscriber.
+
+SUBSCRIBER	PRODUCT	SITE	LANGUAGE	NOTIFICATIONS	UPDATED (UTC+6)	ACTIONS
+
+
+Timezone QA Subscriber
+
+timezone-customer@example.test	ArraySubs	https://timezone-qa.example.com/	en_US	
+Emergency security updates and release notes
+	2026-11-05 01:04	
+Delete
+
+1–1 of 1
+
+Dates and times: UTC+6.
+
+ArrayHash
+Privacy Policy
+Terms
+Refund Policy
+Data Safety
+Accessibility

@@ -1,0 +1,21 @@
+✔ Resend preserves sender overrides, reply-to, idempotency, tags and unsubscribe headers (3.292333ms)
+✔ default Resend sender and support replies match the audit row, with site fallback (11.987084ms)
+✔ welcome and every account notice use Resend with the configured support reply (9.339208ms)
+✔ credentials and password reset reach recipients while secrets stay redacted in history (24.41025ms)
+✔ customer reset expiry follows saved timezone, DST and half-hour offsets without changing UTC instants (20.21ms)
+✔ provider rejection records one failed Resend attempt and redacts echoed secrets (3.677209ms)
+✔ a missing API key fails visibly and keeps an audit row without an outbound request (1.893625ms)
+✔ a historical Gmail entry replays through Resend and preserves its source and history link (4.987958ms)
+✔ credential regeneration uses the current recipient, invalidates sessions and redacts the new password (761.706792ms)
+✔ subscriber admin notifications use the support recipient and subscriber reply-to (2.379625ms)
+✔ ArrayFunnel subscriber admin notification identifies the product without ArraySubs copy (1.424959ms)
+✔ refund requests send both internal and customer confirmation through Resend (9.872084ms)
+✔ a failed internal refund send returns 502 and prevents a misleading confirmation (2.745125ms)
+ℹ tests 13
+ℹ suites 0
+ℹ pass 13
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 890.086041

@@ -1,0 +1,14 @@
+✔ migration defaults old and new profiles to UTC and preserves chosen zones on rerun (394.603ms)
+✔ formatting respects named zones, DST and fractional offsets without changing UTC instants (17.512ms)
+✔ profile and session API expose UTC by default and persist explicit timezone changes (47.429125ms)
+✔ invalid preferences, cross-origin requests and unauthenticated requests cannot modify profile (8.073041ms)
+✔ omitting timezone preserves the preference and accounts remain isolated (377.572583ms)
+✔ impersonation uses the customer's preference and keeps session API timestamps in UTC (357.857334ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 6
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1227.593042

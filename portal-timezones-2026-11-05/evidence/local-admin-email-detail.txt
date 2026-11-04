@@ -1,0 +1,43 @@
+ACCOUNT
+
+Profile updated
+
+Sent to timezone-customer@example.test on 2026-11-05 01:04:55 UTC+6.
+
+All email logs
+DELIVERY
+Status
+SENT
+Recipient
+timezone-customer@example.test
+Reply-to
+—
+Subject
+Timezone QA fixed UTC record
+Requested transport
+resend
+Delivered via
+resend
+Attempts
+1
+Last tried (UTC+6)
+2026-11-05 01:04:55
+Created (UTC+6)
+2026-11-05 01:04:55
+Account
+view user
+CONTENT
+Plain text
+HTML
+Existing body remains unchanged: 2026-11-04 19:04:55 UTC
+RESEND
+Resend this email
+
+Dates and times: UTC+6.
+
+ArrayHash
+Privacy Policy
+Terms
+Refund Policy
+Data Safety
+Accessibility

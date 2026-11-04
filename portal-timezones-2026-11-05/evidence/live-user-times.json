@@ -1,0 +1,10 @@
+{
+  "route": "https://user-portal.arrayhash.com/admin/users/",
+  "headers": "NAME\tEMAIL\tFREEMIUS\tINVOICES\tJOINED (UTC+6)\tACTIONS\n",
+  "joinedDates": [
+    "2026-10-28",
+    "2026-10-28",
+    "2026-10-18"
+  ],
+  "note": "Customer identities omitted."
+}

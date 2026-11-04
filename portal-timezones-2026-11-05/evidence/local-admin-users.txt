@@ -1,0 +1,27 @@
+ACCOUNT
+
+Users
+
+Every portal account. Open one to edit its details or sign in as that customer.
+
+2 accounts.
+
+NAME	EMAIL	FREEMIUS	INVOICES	JOINED (UTC+6)	ACTIONS
+Timezone QA Customer	timezone-customer@example.test	1001	4 / $196	2026-11-05	
+Delete
+
+Timezone QA Admin	timezone-admin@example.test	1000	0 / $0	2026-11-05	
+Delete
+
+Admin account protected
+
+1–2 of 2
+
+Dates and times: UTC+6.
+
+ArrayHash
+Privacy Policy
+Terms
+Refund Policy
+Data Safety
+Accessibility

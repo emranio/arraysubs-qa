@@ -1,0 +1,48 @@
+{
+  "sessionTimezone": "UTC",
+  "users": [
+    {
+      "id": "6c3596c4-93b3-4a54-96bc-4a407d3ff821",
+      "email": "timezone-admin@example.test",
+      "time_zone": "UTC",
+      "created_at": "2026-11-04T19:04:55.000Z"
+    },
+    {
+      "id": "b9d14b0f-9f86-4c79-80ce-980efe9eb688",
+      "email": "timezone-customer@example.test",
+      "time_zone": "Asia/Dhaka",
+      "created_at": "2026-11-04T19:04:55.000Z"
+    }
+  ],
+  "email": {
+    "subject": "Timezone QA fixed UTC record",
+    "created_at": "2026-11-04T19:04:55.000Z",
+    "last_attempt_at": "2026-11-04T19:04:55.000Z"
+  },
+  "boundaries": [
+    {
+      "subject": "Timezone boundary 0",
+      "created_at": "2026-11-04T17:59:59.999Z"
+    },
+    {
+      "subject": "Timezone boundary 1",
+      "created_at": "2026-11-04T18:00:00.000Z"
+    },
+    {
+      "subject": "Timezone boundary 2",
+      "created_at": "2026-11-05T17:59:59.999Z"
+    },
+    {
+      "subject": "Timezone boundary 3",
+      "created_at": "2026-11-05T18:00:00.000Z"
+    }
+  ],
+  "subscriber": {
+    "updated_at": "2026-11-04T19:04:55.000Z"
+  },
+  "domain": {
+    "created_at": "2026-11-04T19:04:55.000Z",
+    "activated_at": "2026-11-04T19:04:55.000Z",
+    "last_seen_at": "2026-11-04T19:04:55.000Z"
+  }
+}

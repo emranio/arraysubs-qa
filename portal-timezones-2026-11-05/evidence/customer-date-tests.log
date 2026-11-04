@@ -1,0 +1,12 @@
+✔ provider and API timestamps retain the same UTC instant regardless of host timezone (3.288625ms)
+✔ customer dates default to UTC and shift only their displayed day (14.663125ms)
+✔ invoice filters include full local days and final milliseconds (0.744458ms)
+✔ customer invoice days follow spring and autumn daylight-saving boundaries (0.30075ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 4
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 24.126916

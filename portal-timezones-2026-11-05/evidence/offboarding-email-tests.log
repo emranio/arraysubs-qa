@@ -1,0 +1,23 @@
+
+> arrayhash-user-portal@0.1.0 test:offboarding:email
+> node scripts/test-plugin-offboarding-email.mjs
+
+✔ portal dates use UTC+6 across midnight, month and year boundaries regardless of host timezone (21.2755ms)
+✔ receipt-date filters include exactly the UTC+6 calendar day in a non-UTC database session (55.9125ms)
+✔ notification uses the configured sender, fixed admin recipient, subscribed Reply-To and escaped details (0.865458ms)
+✔ intake rejects wrong content type, malformed JSON, oversized streams and unsupported plugins before any email (1.846375ms)
+✔ every new event sends one logged internal mail; matching and conflicting replays cannot send another (19.525084ms)
+✔ email failure retains the record and retries the immutable message with no duplicate row (11.895084ms)
+✔ accepted mail with a lost response reuses the provider key and never delivers twice (10.087042ms)
+✔ concurrent receipt retries share one delivery claim (22.815792ms)
+✔ a failed status write after acceptance retries safely with the same provider key (42.033958ms)
+✔ stale claims recover, but ambiguous delivery beyond the provider window requires review (26.833083ms)
+✔ rerunning the additive migration preserves sent records and notification receipts (14.520625ms)
+ℹ tests 11
+ℹ suites 0
+ℹ pass 11
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 268.575959

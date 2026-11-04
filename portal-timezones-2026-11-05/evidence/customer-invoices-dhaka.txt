@@ -1,0 +1,40 @@
+ACCOUNT
+
+Invoices
+
+Every payment on your account, with a downloadable invoice for each one.
+
+Dates and date filters use Asia/Dhaka.
+
+Product
+All products
+ArraySubs Pro
+Type
+All types
+Purchases
+Renewals
+Refunds & credits
+Billing
+Subscriptions & one-time
+Subscriptions only
+One-time only
+From
+To
+
+Showing 2 of 4 invoices for license #77.
+
+Clear filters
+INVOICE	AMOUNT	DATE	PRODUCT	PLAN	TYPE
+
+View invoice	$49.00 USD	Nov 5, 2026	ArraySubs Pro	Annual	Renewal
+
+View invoice	$49.00 USD	Nov 5, 2026	ArraySubs Pro	Annual	Renewal
+
+Dates and times: Asia/Dhaka.
+
+ArrayHash
+Privacy Policy
+Terms
+Refund Policy
+Data Safety
+Accessibility

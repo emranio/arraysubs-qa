@@ -1,0 +1,44 @@
+Browser tab: 1365109933, Title: "Forgot password - ArrayHash User Portal", URL: "http://127.0.0.1:3017/forgot-password/".
+1 AXWebArea Forgot password - ArrayHash User Portal, URL: 127.0.0.1:3017/forgot-password/
+	2 container
+		3 container accessibility-widget-host
+			4 link Description: Skip to content, Value: 127.0.0.1:3017/forgot-password/#main
+			5 container main
+				41 container
+					42 link Description: Go back to ArrayHash main site, Value: arrayhash.com/
+					43 text ARRAYHASH ACCOUNT
+					44 heading Recover your account safely., Value: 1
+						45 text Recover your account safely.
+					46 text Reset links are single use, time limited, and do not reveal whether an email is registered. Secure access for billing, account details, and future Freemius-powered licensing workflows.
+				47 container
+					48 link Description: ArrayHash, Value: 127.0.0.1:3017/dashboard/
+					49 heading Reset access, Value: 2
+						50 text Reset access
+					51 text Enter your email and we will prepare a secure reset link.
+					69 container
+						70 text If an account exists for that email, reset instructions are on the way. Local reset link:
+						71 link Description: Open reset page, Value: localhost:3017/reset-password/?token=[REDACTED]
+					52 container
+						53 text Email address  *
+					54 text field (settable) Email address *, Value: <redacted>
+					55 button Send reset link
+					56 container
+						57 text Remember your password?
+						58 link Description: Sign in, Value: 127.0.0.1:3017/signin/
+					59 container Important links
+						60 link Description: ArrayHash, Value: arrayhash.com/
+						61 link Description: Privacy Policy, Value: arrayhash.com/trust-center/privacy-policy/
+						62 link Description: Terms, Value: arrayhash.com/trust-center/terms-of-service/
+						63 link Description: Refund Policy, Value: arrayhash.com/trust-center/refund-policy/
+						64 link Description: Data Safety, Value: arrayhash.com/trust-center/data-safety/
+						65 link Description: Accessibility, Value: arrayhash.com/trust-center/accessibility-compliance/
+					66 button Privacy choices
+		36 pop up button (collapsed) Description: Open Next.js Dev Tools, ID: next-logo, Secondary Actions: Expand
+			37 image
+		67 text Forgot password - ArrayHash User Portal
+		38 container Accessibility Tools
+			39 button (collapsed) Description: Open Accessibility Tools menu, Secondary Actions: Expand
+	40 container grammarly-integration
+		68 text {"mode":"full","isActive":true,"isUserDisabled":false}
+
+The focused UI element is 1 AXWebArea Forgot password - ArrayHash User Portal, URL: 127.0.0.1:3017/forgot-password/

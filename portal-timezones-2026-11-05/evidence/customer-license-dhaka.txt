@@ -1,0 +1,56 @@
+ACCOUNT
+
+License
+
+Your license key, the domains registered for it, and their activation status.
+
+Back to products & licenses
+Manage purchase
+ArraySubs Pro
+Active
+PLAN
+Annual
+PURCHASED
+Nov 5, 2026
+EXPIRES
+Nov 5, 2027
+ACTIVATIONS
+1 used · 5 sites
+LICENSE KEY
+qa-l••••••••••••••••alid
+Reveal
+Copy
+
+Use this key to activate the product on your sites. Keep it private — anyone with the key can activate your license.
+
+Activations
+Add a site domain
+
+Register each domain (or subdomain) before activating the plugin there. Subdirectories count as the same site.
+
+Add domain
+
+1 of 5 sites used
+
+Search domain
+Status
+All domains
+Used only
+Not used only
+DOMAIN	STATUS	FIRST ACTIVATED	LAST SEEN	VERSION	
+Actions
+
+
+timezone-qa.example.com
+Timezone QA Store
+	
+Used	Nov 5, 2026	Nov 5, 2026	1.3.0	
+
+Dates and times: Asia/Dhaka.
+
+ArrayHash
+Privacy Policy
+Terms
+Refund Policy
+Data Safety
+Accessibility

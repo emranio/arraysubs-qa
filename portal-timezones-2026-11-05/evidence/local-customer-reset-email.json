@@ -1,0 +1,18 @@
+{
+  "workflow": "Local browser forgot-password form submitted; email transport intercepted",
+  "route": "http://127.0.0.1:3017/forgot-password/",
+  "recipient": "timezone-customer@example.test",
+  "timeZone": "America/New_York",
+  "resetExpiresAtUtc": "2026-11-04T20:53:19.085Z",
+  "resetCreatedAtUtc": "2026-11-04T20:23:19.086Z",
+  "localExpiryFromPostgres": "2026-11-04 15:53:19",
+  "utcOffsetMinutes": -300,
+  "renderedExpirySentence": "This link expires at 2026-11-04 15:53:19 America/New_York (UTC-05:00).",
+  "htmlMatches": true,
+  "plaintextMatches": true,
+  "emailLogCreatedAtUtc": "2026-11-04T20:23:19.100Z",
+  "emailLogLastAttemptAtUtc": "2026-11-04T20:23:19.100Z",
+  "secretRedactedInHistory": true,
+  "passwordChanged": false,
+  "realEmailSent": false
+}

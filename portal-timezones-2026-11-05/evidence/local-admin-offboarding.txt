@@ -1,0 +1,55 @@
+ACCOUNT
+
+Plugin offboarding
+
+Deactivations and developer contact requests across your plugins.
+
+Search records
+Plugin
+All plugins
+ArraySubs
+ArraySubs Pro
+Event
+All events
+Deactivated
+Developer help requested
+Reason
+All reasons
+No reason selected
+Missing a feature I'm looking for
+Not working, a bug or an issue
+Found something else that suits me better
+Could not find the settings for my work
+Needs more improvement
+Don't know where to start
+Something else
+Received from (UTC+6)
+Received through (UTC+6)
+Apply filters
+Clear filters
+
+1 records · 1 deactivations · 0 contact requests matching these filters.
+
+RECEIVED (UTC+6)	PLUGIN	EVENT	EMAIL / WEBSITE	SELECTED REASONS	DETAILS
+2026-11-05 01:04	
+
+ArraySubs Pro
+
+Version not supplied
+
+	Deactivated	
+
+timezone-customer@example.test
+
+https://timezone-qa.example.com/	No reason selected	View record
+
+1–1 of 1
+
+Dates and times: UTC+6.
+
+ArrayHash
+Privacy Policy
+Terms
+Refund Policy
+Data Safety
+Accessibility

@@ -1,0 +1,41 @@
+ACCOUNT
+
+Products & Licenses
+
+Every product you purchased, with its license, downloads, and management tools.
+
+ArraySubs Pro
+Active
+PLAN
+Annual
+PURCHASED
+Nov 4, 2026
+EXPIRES
+Nov 4, 2027
+BILLING
+Subscription
+License
+Downloads
+Manage
+ArraySubs Pro
+Trial
+PLAN
+Trial
+PURCHASED
+Nov 4, 2026
+TRIAL ENDS
+Nov 19, 2026
+BILLING
+One-time
+License
+Downloads
+Manage
+
+Dates and times: UTC.
+
+ArrayHash
+Privacy Policy
+Terms
+Refund Policy
+Data Safety
+Accessibility

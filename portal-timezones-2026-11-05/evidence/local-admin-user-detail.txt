@@ -1,0 +1,104 @@
+ACCOUNT
+
+Timezone QA Customer
+
+Account details, registered domains, activation activity, and invoices for this portal user.
+
+All users
+DOMAINS & ACTIVATIONS
+
+Across all licenses, including development sites. A domain on two licenses counts twice.
+
+Domains added
+1
+Active activations
+1
+Inactive domains
+0
+
+All times are UTC+6. Last seen is the latest activation, license check, or update request received from the site.
+
+Registered domains, activation status, and activity dates for this user
+DOMAIN	LICENSE	STATUS	CREATED AT	FIRST ACTIVATED	LAST SEEN
+timezone-qa.example.com
+Timezone QA Store
+	#77
+Product #99
+	
+Active	2026-11-05
+01:04
+	2026-11-05
+01:04
+	2026-11-05
+01:04
+
+1–1 of 1
+
+INVOICES
+
+All invoices for this user, newest first. Dates use UTC+6.
+
+Dates and date filters use Asia/Dhaka.
+
+Product
+All products
+ArraySubs Pro
+Type
+All types
+Purchases
+Renewals
+Refunds & credits
+Billing
+Subscriptions & one-time
+Subscriptions only
+One-time only
+From
+To
+INVOICE	AMOUNT	DATE	PRODUCT	PLAN	TYPE
+
+View invoice	$49.00 USD	Nov 6, 2026	ArraySubs Pro	Annual	Renewal
+
+View invoice	$49.00 USD	Nov 5, 2026	ArraySubs Pro	Annual	Renewal
+
+View invoice	$49.00 USD	Nov 5, 2026	ArraySubs Pro	Annual	Renewal
+
+View invoice	$49.00 USD	Nov 4, 2026	ArraySubs Pro	Annual	Purchase
+ACCOUNT
+User ID
+b9d14b0f-9f86-4c79-80ce-980efe9eb688
+Email
+timezone-customer@example.test
+Freemius user
+1001
+Billing address
+Not set
+Created (UTC+6)
+2026-11-05 01:04
+Active sessions
+2
+Last seen (UTC+6)
+2026-11-05 02:16
+EDIT DETAILS
+Name
+Email
+Save details
+SET PASSWORD
+New password
+
+At least 12 characters with upper case, lower case, and a number. Setting it signs this user out everywhere and emails them a notice.
+
+Set password
+SIGN IN AS THIS USER
+
+Opens the portal as Timezone QA Customer in a new tab, for up to an hour. Because cookies are shared across tabs, this window will show their account too until you stop — your admin pages keep working throughout. Everything you do while signed in as them is recorded against your account.
+
+Log in as Timezone QA Customer
+
+Dates and times: UTC+6.
+
+ArrayHash
+Privacy Policy
+Terms
+Refund Policy
+Data Safety
+Accessibility

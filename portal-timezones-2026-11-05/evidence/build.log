@@ -1,0 +1,117 @@
+
+> arrayhash-user-portal@0.1.0 build
+> next build
+
+▲ Next.js 16.2.10 (Turbopack)
+- Environments: .env.local, .env
+
+  Creating an optimized production build ...
+Turbopack build encountered 1 warnings:
+./next.config.ts
+Encountered unexpected file in NFT list
+A file was traced that indicates that the whole project was traced unintentionally. Somewhere in the import trace below, there are:
+- filesystem operations (like path.join, path.resolve or fs.readFile), or
+- very dynamic requires (like require('./' + foo)).
+To resolve this, you can
+- remove them if possible, or
+- only use them in development, or
+- make sure they are statically scoped to some subfolder: path.join(process.cwd(), 'data', bar), or
+- add ignore comments: path.join(/*turbopackIgnore: true*/ process.cwd(), bar)
+
+Import trace:
+  App Route:
+    ./next.config.ts
+    ./lib/licensing/updates.ts
+    ./app/api/plugins/update/route.ts
+
+
+✓ Compiled successfully in 2.1s
+  Running TypeScript ...
+  Finished TypeScript in 1931ms ...
+  Collecting page data using 9 workers ...
+  Generating static pages using 9 workers (0/20) ...
+  Generating static pages using 9 workers (5/20) 
+  Generating static pages using 9 workers (10/20) 
+  Generating static pages using 9 workers (15/20) 
+✓ Generating static pages using 9 workers (20/20) in 129ms
+  Finalizing page optimization ...
+
+Route (app)
+┌ ○ /
+├ ○ /_not-found
+├ ƒ /admin/emails
+├ ƒ /admin/emails/[id]
+├ ƒ /admin/offboarding
+├ ƒ /admin/offboarding/[id]
+├ ƒ /admin/subscribers
+├ ƒ /admin/users
+├ ƒ /admin/users/[userId]
+├ ƒ /api/admin/emails/[id]/resend
+├ ƒ /api/admin/impersonate/stop
+├ ƒ /api/admin/subscribers/[subscriberId]
+├ ƒ /api/admin/users/[userId]
+├ ƒ /api/admin/users/[userId]/invoices/[productId]/[paymentId]
+├ ƒ /api/admin/users/[userId]/password
+├ ƒ /api/auth/forgot-password
+├ ƒ /api/auth/me
+├ ƒ /api/auth/password
+├ ƒ /api/auth/profile
+├ ƒ /api/auth/recover
+├ ƒ /api/auth/reset-password
+├ ƒ /api/auth/signin
+├ ƒ /api/auth/signout
+├ ƒ /api/auth/signup
+├ ƒ /api/checkout-authorization
+├ ƒ /api/checkout/frame
+├ ƒ /api/checkout/handoff/complete
+├ ƒ /api/checkout/handoff/signin
+├ ƒ /api/checkout/handoff/start
+├ ƒ /api/checkout/handoff/status
+├ ƒ /api/checkout/prefill/redeem
+├ ƒ /api/downloads/[slug]
+├ ƒ /api/goaffpro/referral
+├ ƒ /api/impersonate/start
+├ ƒ /api/invoice/[productId]/[paymentId]
+├ ƒ /api/license-domains
+├ ƒ /api/license/activate
+├ ƒ /api/license/status
+├ ƒ /api/plugins/download/[slug]
+├ ƒ /api/plugins/offboarding
+├ ƒ /api/plugins/update
+├ ƒ /api/portal/downloads
+├ ƒ /api/portal/email-preferences
+├ ƒ /api/portal/invoices
+├ ƒ /api/portal/license/[productId]/[licenseId]
+├ ƒ /api/portal/manage/[productId]/[licenseId]
+├ ƒ /api/portal/products
+├ ƒ /api/portal/profile
+├ ƒ /api/refund-request
+├ ƒ /api/subscription/cancel
+├ ƒ /api/webhook/freemius
+├ ƒ /checkout/[planId]
+├ ○ /dashboard
+├ ○ /downloads
+├ ƒ /email/unsubscribe
+├ ○ /forgot-password
+├ ○ /invoices
+├ ○ /password
+├ ○ /products
+├ ● /products/[productId]/[licenseId]
+├ ● /products/[productId]/[licenseId]/manage
+├ ○ /profile
+├ ƒ /reset-password
+├ ○ /robots.txt
+├ ○ /settings
+├ ƒ /signin
+├ ƒ /signup
+├ ○ /sitemap.xml
+├ ○ /thank-you
+└ ƒ /welcome-notification-config
+
+
+ƒ Proxy (Middleware)
+
+○  (Static)   prerendered as static content
+●  (SSG)      prerendered as static HTML (uses generateStaticParams)
+ƒ  (Dynamic)  server-rendered on demand
+

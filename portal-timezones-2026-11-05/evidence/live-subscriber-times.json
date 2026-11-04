@@ -1,0 +1,10 @@
+{
+  "route": "https://user-portal.arrayhash.com/admin/subscribers/",
+  "headers": "SUBSCRIBER\tPRODUCT\tSITE\tLANGUAGE\tNOTIFICATIONS\tUPDATED (UTC+6)\tACTIONS\n",
+  "updatedDates": [
+    "2026-11-04 18:10",
+    "2026-11-04 17:29",
+    "2026-11-04 03:47"
+  ],
+  "note": "Customer identities omitted. Horizontally scrolled table to view complete timestamps."
+}

@@ -1,0 +1,3 @@
+Browser tab: 1365109933, Title: "Invoices - ArrayHash User Portal", URL: "http://127.0.0.1:3017/invoices/".
+There has been no change in the accessibility tree.
+The focused UI element is 0 AXWebArea Invoices - ArrayHash User Portal, URL: 127.0.0.1:3017/invoices/

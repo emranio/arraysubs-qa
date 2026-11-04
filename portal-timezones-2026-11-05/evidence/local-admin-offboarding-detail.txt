@@ -1,0 +1,39 @@
+ACCOUNT
+
+Deactivated
+
+ArraySubs Pro
+
+All offboarding records
+Event details
+Plugin slug
+arraysubspro
+Plugin version
+Not supplied
+Event
+Deactivated
+Subscribed email
+timezone-customer@example.test
+Website
+https://timezone-qa.example.com/
+Occurred (UTC+6)
+2026-11-05 01:04:55
+Received (UTC+6)
+2026-11-05 01:04:55
+Event ID
+00d08a87-423c-482c-a97c-8e409669e495
+Admin notification
+sent (2026-11-05 01:04:55 UTC+6)
+View email log
+Selected reasons
+
+No reason selected.
+
+Dates and times: UTC+6.
+
+ArrayHash
+Privacy Policy
+Terms
+Refund Policy
+Data Safety
+Accessibility

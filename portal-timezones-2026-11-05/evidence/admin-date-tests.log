@@ -1,0 +1,11 @@
+✔ email logs include UTC+6 local days with database timezone UTC (33.021041ms)
+✔ email logs include UTC+6 local days with database timezone America/New_York (9.071709ms)
+✔ admin display follows UTC+6 while database rows preserve original UTC instants (17.537291ms)
+ℹ tests 3
+ℹ suites 0
+ℹ pass 3
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 85.721584

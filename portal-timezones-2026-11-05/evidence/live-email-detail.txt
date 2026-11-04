@@ -1,0 +1,64 @@
+ACCOUNT
+
+Plugin offboarding (internal)
+
+Sent to emran@arrayhash.com on 2026-11-05 01:04:55 UTC+6.
+
+All email logs
+DELIVERY
+Status
+SENT
+Recipient
+emran@arrayhash.com
+Reply-to
+dev-email@wpengine.local
+Subject
+[ArraySubs Pro offboarding] Deactivated - localhost:10013
+Requested transport
+resend
+Delivered via
+resend
+Attempts
+1
+Last tried (UTC+6)
+2026-11-05 01:04:55
+Created (UTC+6)
+2026-11-05 01:04:55
+CONTENT
+Plain text
+HTML
+ArraySubs Pro: Deactivated
+
+The plugin was deactivated. Reasons are optional, so a deactivation may have no feedback.
+
+Plugin: ArraySubs Pro
+Plugin slug: arraysubspro
+Plugin version: 1.3.0
+Event: Deactivated
+Subscribed email: dev-email@wpengine.local
+Website: http://localhost:10013/
+Occurred (UTC): 2026-11-04T19:04:54.000Z
+Reasons: Missing a feature I'm looking for
+Something else
+Something else: OFFBOARD-QA-20261105 EMAIL: verifying the new admin deactivation notification and matching portal record. বাংলা feedback.
+Event ID: dbd20445-3a8d-4587-aa40-5bfb9ed12d5d
+
+View offboarding record: https://user-portal.arrayhash.com/admin/offboarding/dbd20445-3a8d-4587-aa40-5bfb9ed12d5d/
+This email was sent by ArrayHash User Portal.
+ArrayHash: https://arrayhash.com/
+Privacy Policy: https://arrayhash.com/trust-center/privacy-policy/
+Terms: https://arrayhash.com/trust-center/terms-of-service/
+Refund Policy: https://arrayhash.com/trust-center/refund-policy/
+Data Safety: https://arrayhash.com/trust-center/data-safety/
+Accessibility: https://arrayhash.com/trust-center/accessibility-compliance/
+RESEND
+Resend this email
+
+Dates and times: UTC+6.
+
+ArrayHash
+Privacy Policy
+Terms
+Refund Policy
+Data Safety
+Accessibility
