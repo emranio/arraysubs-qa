@@ -1,0 +1,17 @@
+✔ notification uses the configured sender, fixed admin recipient, subscribed Reply-To and escaped details (1.978708ms)
+✔ intake rejects wrong content type, malformed JSON, oversized streams and unsupported plugins before any email (5.2055ms)
+✔ every new event sends one logged internal mail; matching and conflicting replays cannot send another (29.175166ms)
+✔ email failure retains the record and retries the immutable message with no duplicate row (8.713541ms)
+✔ accepted mail with a lost response reuses the provider key and never delivers twice (7.958333ms)
+✔ concurrent receipt retries share one delivery claim (5.453708ms)
+✔ a failed status write after acceptance retries safely with the same provider key (41.587625ms)
+✔ stale claims recover, but ambiguous delivery beyond the provider window requires review (13.459958ms)
+✔ rerunning the additive migration preserves sent records and notification receipts (6.98875ms)
+ℹ tests 9
+ℹ suites 0
+ℹ pass 9
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 150.08725

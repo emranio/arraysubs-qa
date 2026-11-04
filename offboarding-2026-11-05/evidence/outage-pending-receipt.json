@@ -1,0 +1,14 @@
+{
+  "payload": {
+    "event_id": "91550a74-d7b3-48bd-b405-389040255f1e",
+    "plugin_slug": "arraysubs",
+    "plugin_version": "2.1.0",
+    "event_type": "deactivated",
+    "reasons": [],
+    "other_reason": "",
+    "site_url": "http://localhost:10013/",
+    "occurred_at": "2026-11-04T18:50:49Z"
+  },
+  "attempt": 1,
+  "retry_at": 1793818309
+}

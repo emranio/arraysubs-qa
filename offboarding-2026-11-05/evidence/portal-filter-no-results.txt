@@ -1,0 +1,56 @@
+- link "Skip to content" [ref=e1]
+- link "ArrayHash" [ref=e2]
+- navigation "Account navigation" [ref=e3]
+  - link "Dashboard" [ref=e8]
+  - link "Products & Licenses" [ref=e9]
+  - link "Downloads" [ref=e10]
+  - link "Invoices" [ref=e11]
+  - link "Settings" [ref=e12]
+  - link "Password" [ref=e13]
+- button "Sign out" [ref=e4]
+- button "Privacy choices" [ref=e14]
+- heading "Plugin offboarding" [level=1, ref=e5]
+- region "Filter offboarding records" [ref=e6]
+  - searchbox "Search records" [ref=e23]: OFFBOARD-NO-MATCH-5d83785a
+  - combobox "Plugin" [expanded=false, ref=e24]: All plugins
+    - option "All plugins" [selected, ref=e36]
+    - option "ArraySubs" [ref=e37]
+    - option "ArraySubs Pro" [ref=e38]
+  - combobox "Event" [expanded=false, ref=e25]: All events
+    - option "All events" [selected, ref=e39]
+    - option "Deactivated" [ref=e40]
+    - option "Developer help requested" [ref=e41]
+  - combobox "Reason" [expanded=false, ref=e26]: All reasons
+    - option "All reasons" [selected, ref=e42]
+    - option "No reason selected" [ref=e43]
+    - option "Missing a feature I'm looking for" [ref=e44]
+    - option "Not working, a bug or an issue" [ref=e45]
+    - option "Found something else that suits me better" [ref=e46]
+    - option "Could not find the settings for my work" [ref=e47]
+    - option "Needs more improvement" [ref=e48]
+    - option "Don't know where to start" [ref=e49]
+    - option "Something else" [ref=e50]
+  - spinbutton "Day Day" [ref=e51]: 0
+  - spinbutton "Month Month" [ref=e52]: 0
+  - spinbutton "Year Year" [ref=e53]: 0
+  - button "Show date picker" [ref=e28]
+  - spinbutton "Day Day" [ref=e54]: 0
+  - spinbutton "Month Month" [ref=e55]: 0
+  - spinbutton "Year Year" [ref=e56]: 0
+  - button "Show date picker" [ref=e29]
+  - button "Apply filters" [ref=e21]
+  - link "Clear filters" [ref=e22]
+- columnheader "RECEIVED (UTC)" [ref=e30]
+- columnheader "PLUGIN" [ref=e31]
+- columnheader "EVENT" [ref=e32]
+- columnheader "EMAIL / WEBSITE" [ref=e33]
+- columnheader "SELECTED REASONS" [ref=e34]
+- columnheader "DETAILS" [ref=e35]
+- cell "No offboarding records match these filters." [ref=e27]
+- navigation "Important links" [ref=e7]
+  - link "ArrayHash" [ref=e15]
+  - link "Privacy Policy" [ref=e16]
+  - link "Terms" [ref=e17]
+  - link "Refund Policy" [ref=e18]
+  - link "Data Safety" [ref=e19]
+  - link "Accessibility" [ref=e20]

@@ -1,0 +1,30 @@
+{
+  "fields": [
+    {
+      "name": "q",
+      "value": ""
+    },
+    {
+      "name": "plugin",
+      "value": ""
+    },
+    {
+      "name": "type",
+      "value": ""
+    },
+    {
+      "name": "reason",
+      "value": ""
+    },
+    {
+      "name": "from",
+      "value": ""
+    },
+    {
+      "name": "to",
+      "value": ""
+    }
+  ],
+  "summary": "33 records · 21 deactivations · 12 contact requests matching these filters.",
+  "url": "http://127.0.0.1:3016/admin/offboarding/"
+}

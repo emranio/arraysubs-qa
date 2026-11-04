@@ -1,0 +1,38 @@
+{
+  "ids": [
+    "/admin/offboarding/3c8794b6-83ab-475b-8965-848f1507dc2c/",
+    "/admin/offboarding/15b1de1f-b4a5-4e9d-ac20-b8fb559e6f24/",
+    "/admin/offboarding/bca156cc-b2c9-4c11-b0ed-6c225c146273/",
+    "/admin/offboarding/59aee0a5-8b3d-447b-a1b4-8f934ca653d6/",
+    "/admin/offboarding/6d6b03d4-9cb7-46df-8e38-5ee763122a8c/",
+    "/admin/offboarding/f8af4bc5-27c1-41b9-b289-99765d40c972/",
+    "/admin/offboarding/9ea62ee7-cf6a-497f-adca-18748ed166c7/",
+    "/admin/offboarding/9b6ae633-67d5-451f-a2c4-20b7bcb41952/",
+    "/admin/offboarding/6d47fbaa-225b-46ab-9465-4725663c7b41/",
+    "/admin/offboarding/51988c0c-691b-48ee-86d9-4c6c01e1f245/",
+    "/admin/offboarding/137b5735-ecce-4e8c-8228-8de820087f0b/",
+    "/admin/offboarding/1d2c64d7-3a58-4aa8-bfd6-8b4c778d381a/",
+    "/admin/offboarding/6ec42e71-a713-48a8-bab3-e29e405d97a3/",
+    "/admin/offboarding/c2a8524f-5d67-4670-a886-8d608c1a385b/",
+    "/admin/offboarding/25850679-e3a0-45d0-be64-b293ed4c1bf0/",
+    "/admin/offboarding/e629b40a-6bc3-40c6-b760-ba347c60990b/",
+    "/admin/offboarding/559a9896-303f-47b7-afc0-beff63792b04/",
+    "/admin/offboarding/c0f61ff1-63fe-48c7-b87d-9fc587b6a4ec/",
+    "/admin/offboarding/efe04a4b-7bec-4b5d-844f-fd37d1238ee9/",
+    "/admin/offboarding/d37e8107-2ddb-4034-a049-40eb5abfde08/",
+    "/admin/offboarding/91a4634e-e9b7-4aba-98d6-a9415aeef45f/",
+    "/admin/offboarding/34445dcf-4702-4e50-bf56-e2582d7da706/",
+    "/admin/offboarding/938d9e08-6cd2-438e-a8d2-0df36898de4a/",
+    "/admin/offboarding/f67034ac-c6b2-4c85-a977-60b9eab61b25/",
+    "/admin/offboarding/87a7b96e-6533-4f77-8ae5-dc2fa55c01cb/"
+  ],
+  "links": [
+    {
+      "href": "/admin/offboarding/?q=offboard-pagination%40example.test&page=2",
+      "label": "Next"
+    }
+  ],
+  "rows": 25,
+  "summary": "28 records · 19 deactivations · 9 contact requests matching these filters.",
+  "url": "http://127.0.0.1:3016/admin/offboarding/?q=offboard-pagination%40example.test&plugin=&type=&reason=&from=&to="
+}

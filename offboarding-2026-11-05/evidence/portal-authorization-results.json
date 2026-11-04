@@ -1,0 +1,46 @@
+{
+  "environment": "isolated local portal http://127.0.0.1:3016/ plus live guest https://user-portal.arrayhash.com/",
+  "role": "ordinary run fixture user and anonymous guest",
+  "results": [
+    {
+      "check": "Guest local list",
+      "result": "PASS",
+      "observed": "Redirected to /signin/"
+    },
+    {
+      "check": "Guest local known detail",
+      "result": "PASS",
+      "observed": "Redirected to /signin/"
+    },
+    {
+      "check": "Guest live list",
+      "result": "PASS",
+      "observed": "Redirected to /signin/"
+    },
+    {
+      "check": "Normal user account menu",
+      "result": "PASS",
+      "observed": "Only account menu entries, no administrator navigation"
+    },
+    {
+      "check": "Normal user list and detail requests",
+      "result": "PASS",
+      "observed": "Both HTTP 404; no QA feedback in HTML"
+    },
+    {
+      "check": "Visible unavailable page",
+      "result": "PASS after fix #156",
+      "observed": "New admin/not-found.tsx uses shared PageHeader and Button with dark text on white background; screenshots inspected. Heading rgb(18,0,43). Default fallback had white text on white."
+    },
+    {
+      "check": "Return to dashboard",
+      "result": "PASS",
+      "observed": "Clicked link, waited for pathname /dashboard/, then captured account dashboard snapshot."
+    }
+  ],
+  "sessions_closed": [
+    "offboard-portal-guest",
+    "offboard-portal-user"
+  ],
+  "remaining_note": "Existing React script-tag warning observed on unavailable pages; focused visual fix does not modify global accessibility integration."
+}

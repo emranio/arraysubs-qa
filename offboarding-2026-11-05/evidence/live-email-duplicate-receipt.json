@@ -1,0 +1,9 @@
+{
+  "status": 200,
+  "response": {
+    "ok": true,
+    "event_id": "dbd20445-3a8d-4587-aa40-5bfb9ed12d5d",
+    "duplicate": true
+  },
+  "event_id": "dbd20445-3a8d-4587-aa40-5bfb9ed12d5d"
+}

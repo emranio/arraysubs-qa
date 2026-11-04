@@ -1,0 +1,20 @@
+{
+  "adminMenuVisible": false,
+  "heading": "404 - Page not found",
+  "headingColor": "rgb(18, 0, 43)",
+  "responses": [
+    {
+      "hasNotFoundText": true,
+      "hasQaFeedback": false,
+      "path": "/admin/offboarding/",
+      "status": 404
+    },
+    {
+      "hasNotFoundText": true,
+      "hasQaFeedback": false,
+      "path": "/admin/offboarding/7d750c83-f7b8-4231-8be9-756278ecbcfc/",
+      "status": 404
+    }
+  ],
+  "url": "http://127.0.0.1:3016/admin/offboarding/7d750c83-f7b8-4231-8be9-756278ecbcfc/"
+}

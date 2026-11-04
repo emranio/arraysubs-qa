@@ -1,0 +1,9 @@
+PASS: empty text (0 UTF-16 units).
+PASS: ASCII boundary (4000 UTF-16 units).
+PASS: CJK boundary (4000 UTF-16 units).
+PASS: emoji boundary (4000 UTF-16 units).
+PASS: whole supplementary character fits (4000 UTF-16 units).
+PASS: never cut a supplementary character in half (3999 UTF-16 units).
+PASS: mixed Unicode (4000 UTF-16 units).
+PASS: unselected other feedback excluded.
+8 tests passed; mb_substr unavailable.

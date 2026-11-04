@@ -1,0 +1,12 @@
+{
+  "checked_at": "2026-11-04T18:42:08.203898+00:00",
+  "status": "blocked",
+  "site_url": "http://localhost:10013/",
+  "portal_url": "https://user-portal.arrayhash.com/",
+  "operation": "Read-only SSH discovery for production offboarding record query",
+  "error": "Configured ArrayHash VPS SSH alias rejected authentication: Permission denied (publickey).",
+  "server_commands_executed": false,
+  "database_records_read": false,
+  "resolution": "Superseded: the user signed into the portal in Edge. Authenticated production list and detail were verified through the browser; see live-offboarding-records.jpg and live-offboarding-detail.jpg.",
+  "current_blocker": false
+}

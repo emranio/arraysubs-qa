@@ -1,0 +1,9 @@
+     268 arraysubs/arraysubs.php
+      98 arraysubs/src/Supports/OffboardingDelivery.php
+     197 arraysubs/src/Supports/PluginOffboarding.php
+     195 arraysubs/src/resources/offboarding.jsx
+     128 arraysubs/src/resources/scss/offboarding.scss
+     320 arraysubs/webpack.config.js
+      63 arraysubs/workflow-scripts/tests/plugin-offboarding-text.php
+     325 arraysubspro/arraysubspro.php
+    1594 total

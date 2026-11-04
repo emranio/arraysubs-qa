@@ -1,0 +1,42 @@
+{
+  "fields": [
+    {
+      "name": "q",
+      "tag": "INPUT",
+      "type": "search",
+      "value": ""
+    },
+    {
+      "name": "plugin",
+      "tag": "SELECT",
+      "type": "select-one",
+      "value": ""
+    },
+    {
+      "name": "type",
+      "tag": "SELECT",
+      "type": "select-one",
+      "value": ""
+    },
+    {
+      "name": "reason",
+      "tag": "SELECT",
+      "type": "select-one",
+      "value": ""
+    },
+    {
+      "name": "from",
+      "tag": "INPUT",
+      "type": "date",
+      "value": ""
+    },
+    {
+      "name": "to",
+      "tag": "INPUT",
+      "type": "date",
+      "value": ""
+    }
+  ],
+  "summary": "33 records · 21 deactivations · 12 contact requests matching these filters.",
+  "url": "http://127.0.0.1:3016/admin/offboarding/"
+}

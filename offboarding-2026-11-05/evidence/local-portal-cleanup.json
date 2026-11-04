@@ -1,0 +1,14 @@
+{
+  "cleaned_at": "2026-11-04T19:02:56.943Z",
+  "schema": "offboard_qa_bf9df85e2ef0",
+  "schema_dropped": true,
+  "process_stopped": true,
+  "temp_source_removed": true,
+  "fixture_credentials_removed": true,
+  "verified": {
+    "schema_exists": false,
+    "temp_source_exists": false,
+    "fixture_credentials_exist": false,
+    "listener_on_port_3016": false
+  }
+}

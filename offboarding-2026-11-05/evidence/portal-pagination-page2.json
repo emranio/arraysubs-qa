@@ -1,0 +1,16 @@
+{
+  "ids": [
+    "/admin/offboarding/1cc6c1a7-0e3f-4c8e-98d5-d1fe84b04cd5/",
+    "/admin/offboarding/d6588ac4-f361-4ea9-9930-0a9725feb047/",
+    "/admin/offboarding/c1548dd8-62ea-4362-a53e-a10e4d5e0572/"
+  ],
+  "links": [
+    {
+      "href": "/admin/offboarding/?q=offboard-pagination%40example.test",
+      "label": "Previous"
+    }
+  ],
+  "rows": 3,
+  "summary": "28 records · 19 deactivations · 9 contact requests matching these filters.",
+  "url": "http://127.0.0.1:3016/admin/offboarding/?q=offboard-pagination%40example.test&page=2"
+}

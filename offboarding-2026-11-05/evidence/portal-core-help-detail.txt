@@ -1,0 +1,142 @@
+Skip to content
+
+SIGNED IN
+
+Offboarding QA Admin
+
+offboard-admin@example.test
+
+Dashboard
+Products & Licenses
+Downloads
+Invoices
+Settings
+Password
+
+ADMIN
+
+Email logs
+Subscribers
+Plugin offboarding
+Users
+Sign out
+Privacy choices
+
+ACCOUNT
+
+Developer help requested
+
+ArraySubs
+
+All offboarding records
+Event details
+Plugin slug
+arraysubs
+Plugin version
+2.1.0
+Event
+Developer help requested
+Subscribed email
+dev-email@wpengine.local
+Website
+http://localhost:10013/
+Occurred (UTC)
+2026-11-04 18:48:27.000 UTC
+Received (UTC)
+2026-11-04 18:48:27.082 UTC
+Event ID
+7d750c83-f7b8-4231-8be9-756278ecbcfc
+Selected reasons
+Missing a feature I'm looking for
+Something else
+Something else
+
+OFFBOARD-QA-20261105 CORE HELP LOCAL: missing feature and other. বাংলা details.
+
+The administrator chose Get Help Directly to open the ArrayHash contact page. This event does not mean the plugin was deactivated or that a contact form was submitted.
+
+ArrayHash
+Privacy Policy
+Terms
+Refund Policy
+Data Safety
+Accessibility
+Accessibility Tools
+ALT + A
+ACCESSIBILITY SETTINGS
+Settings
+Accessibility Profiles
+i
+Seizure Safe
+i
+Vision Impaired
+i
+Light Sensitivity
+i
+Color Blind
+i
+Dyslexia
+i
+ADHD Friendly
+i
+Cognitive Disability
+i
+Keyboard / Motor
+i
+Screen Reader
+Visibility
+i
+Reading Lens
+i
+Big Cursor
+i
+Reading Mask
+i
+Reading Guide
+i
+Read Aloud
+i
+Focus Highlight
+i
+Virtual Keyboard
+i
+Page Structure
+i
+Hide Images
+i
+Reduce Animations
+Color
+i
+Dark Contrast
+i
+Light Contrast
+i
+High Contrast
+i
+Monochrome
+i
+Invert Colors
+i
+Color Blind
+Content
+i
+Dyslexia Friendly
+i
+Highlight Titles
+i
+Font Size
+i
+Text Magnifier
+i
+Highlight Links
+i
+Line Height
+i
+Letter Spacing
+i
+Text Align
+i
+Dictionary
+i
+Simplify
+Reset all settings

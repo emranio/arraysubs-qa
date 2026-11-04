@@ -1,0 +1,219 @@
+- link "Skip to content":
+  - /url: "#main"
+- complementary:
+  - link "ArrayHash":
+    - /url: /dashboard/
+    - img "ArrayHash"
+  - paragraph: Signed in
+  - paragraph: Al Emran
+  - paragraph: emran@arrayhash.com
+  - navigation "Account navigation":
+    - link "Dashboard":
+      - /url: /dashboard/
+      - text: Dashboard
+    - link "Products & Licenses":
+      - /url: /products/
+      - text: Products & Licenses
+    - link "Downloads":
+      - /url: /downloads/
+      - text: Downloads
+    - link "Invoices":
+      - /url: /invoices/
+      - text: Invoices
+    - link "Settings":
+      - /url: /settings/
+      - text: Settings
+    - link "Password":
+      - /url: /password/
+      - text: Password
+  - navigation "Admin navigation":
+    - paragraph: Admin
+    - link "Email logs":
+      - /url: /admin/emails/
+      - text: Email logs
+    - link "Subscribers":
+      - /url: /admin/subscribers/
+      - text: Subscribers
+    - link "Plugin offboarding":
+      - /url: /admin/offboarding/
+      - text: Plugin offboarding
+    - link "Users":
+      - /url: /admin/users/
+      - text: Users
+  - button "Sign out":
+    - text: Sign out
+  - button "Privacy choices":
+    - text: Privacy choices
+- main:
+  - paragraph: Account
+  - heading "Plugin offboarding (internal)" [level=1]
+  - paragraph: Sent to emran@arrayhash.com on 2026-11-04 19:04:55.
+  - link "All email logs":
+    - /url: /admin/emails/
+    - text: All email logs
+  - heading "Delivery" [level=2]
+  - term: Status
+  - definition:
+    - generic: sent
+  - term: Recipient
+  - definition: emran@arrayhash.com
+  - term: Reply-to
+  - definition: dev-email@wpengine.local
+  - term: Subject
+  - definition: "[ArraySubs Pro offboarding] Deactivated - localhost:10013"
+  - term: Requested transport
+  - definition: resend
+  - term: Delivered via
+  - definition: resend
+  - term: Attempts
+  - definition: "1"
+  - term: Last tried
+  - definition: 2026-11-04 19:04:55
+  - term: Created
+  - definition: 2026-11-04 19:04:55
+  - heading "Content" [level=2]
+  - button "Plain text"
+  - button "HTML"
+  - generic: "ArraySubs Pro: Deactivated The plugin was deactivated. Reasons are optional, so a deactivation may have no feedback. Plugin: ArraySubs Pro Plugin slug: arraysubspro Plugin version: 1.3.0 Event: Deactivated Subscribed email: dev-email@wpengine.local Website: http://localhost:10013/ Occurred (UTC): 2026-11-04T19:04:54.000Z Reasons: Missing a feature I'm looking for Something else Something else: OFFBOARD-QA-20261105 EMAIL: verifying the new admin deactivation notification and matching portal record. বাংলা feedback. Event ID: dbd20445-3a8d-4587-aa40-5bfb9ed12d5d View offboarding record: https://user-portal.arrayhash.com/admin/offboarding/dbd20445-3a8d-4587-aa40-5bfb9ed12d5d/ This email was sent by ArrayHash User Portal. ArrayHash: https://arrayhash.com/ Privacy Policy: https://arrayhash.com/trust-center/privacy-policy/ Terms: https://arrayhash.com/trust-center/terms-of-service/ Refund Policy: https://arrayhash.com/trust-center/refund-policy/ Data Safety: https://arrayhash.com/trust-center/data-safety/ Accessibility: https://arrayhash.com/trust-center/accessibility-compliance/"
+  - heading "Resend" [level=2]
+  - button "Resend this email":
+    - generic: Resend this email
+  - navigation "Important links":
+    - link "ArrayHash":
+      - /url: https://arrayhash.com/
+    - link "Privacy Policy":
+      - /url: https://arrayhash.com/trust-center/privacy-policy/
+    - link "Terms":
+      - /url: https://arrayhash.com/trust-center/terms-of-service/
+    - link "Refund Policy":
+      - /url: https://arrayhash.com/trust-center/refund-policy/
+    - link "Data Safety":
+      - /url: https://arrayhash.com/trust-center/data-safety/
+    - link "Accessibility":
+      - /url: https://arrayhash.com/trust-center/accessibility-compliance/
+- alert: Email log entry - ArrayHash User Portal
+- complementary "Accessibility Tools":
+  - button "Open Accessibility Tools menu":
+  - dialog:
+    - generic: Accessibility Tools
+    - generic: ALT + A
+    - generic: Accessibility Settings
+    - button:
+    - button:
+      - generic: Settings
+    - button [expanded]:
+      - generic: Accessibility Profiles
+    - button:
+      - generic: i
+      - generic: Seizure Safe
+    - button:
+      - generic: i
+      - generic: Vision Impaired
+    - button:
+      - generic: i
+      - generic: Light Sensitivity
+    - button:
+      - generic: i
+      - generic: Color Blind
+    - button:
+      - generic: i
+      - generic: Dyslexia
+    - button:
+      - generic: i
+      - generic: ADHD Friendly
+    - button:
+      - generic: i
+      - generic: Cognitive Disability
+    - button:
+      - generic: i
+      - generic: Keyboard / Motor
+    - button:
+      - generic: i
+      - generic: Screen Reader
+    - button [expanded]:
+      - generic: Visibility
+    - button:
+      - generic: i
+      - generic: Reading Lens
+    - button:
+      - generic: i
+      - generic: Big Cursor
+    - button:
+      - generic: i
+      - generic: Reading Mask
+    - button:
+      - generic: i
+      - generic: Reading Guide
+    - button:
+      - generic: i
+      - generic: Read Aloud
+    - button:
+      - generic: i
+      - generic: Focus Highlight
+    - button:
+      - generic: i
+      - generic: Virtual Keyboard
+    - button:
+      - generic: i
+      - generic: Page Structure
+    - button:
+      - generic: i
+      - generic: Hide Images
+    - button:
+      - generic: i
+      - generic: Reduce Animations
+    - button [expanded]:
+      - generic: Color
+    - button:
+      - generic: i
+      - generic: Dark Contrast
+    - button:
+      - generic: i
+      - generic: Light Contrast
+    - button:
+      - generic: i
+      - generic: High Contrast
+    - button:
+      - generic: i
+      - generic: Monochrome
+    - button:
+      - generic: i
+      - generic: Invert Colors
+    - button:
+      - generic: i
+      - generic: Color Blind
+    - button [expanded]:
+      - generic: Content
+    - button:
+      - generic: i
+      - generic: Dyslexia Friendly
+    - button:
+      - generic: i
+      - generic: Highlight Titles
+    - button:
+      - generic: i
+      - generic: Font Size
+    - button:
+      - generic: i
+      - generic: Text Magnifier
+    - button:
+      - generic: i
+      - generic: Highlight Links
+    - button:
+      - generic: i
+      - generic: Line Height
+    - button:
+      - generic: i
+      - generic: Letter Spacing
+    - button:
+      - generic: i
+      - generic: Text Align
+    - button:
+      - generic: i
+      - generic: Dictionary
+    - button:
+      - generic: i
+      - generic: Simplify
+    - button:
+      - text: Reset all settings
+  - status

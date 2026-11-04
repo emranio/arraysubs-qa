@@ -1,0 +1,18 @@
+{
+  "active_plugins_match_baseline": true,
+  "active_plugins": [
+    "ai-provider-for-anthropic/plugin.php",
+    "ai-provider-for-google/plugin.php",
+    "ai-provider-for-openai/plugin.php",
+    "arraysubs/arraysubs.php",
+    "arraysubspro/arraysubspro.php",
+    "elementor/elementor.php",
+    "loco-translate/loco.php",
+    "translatepress-multilingual/index.php",
+    "woocommerce-pdf-invoices-packing-slips/woocommerce-pdf-invoices-packingslips.php",
+    "woocommerce/woocommerce.php"
+  ],
+  "pending_offboarding_receipts": 0,
+  "qa_observer_removed": true,
+  "endpoint_override_removed": true
+}

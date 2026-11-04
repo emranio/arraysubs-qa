@@ -1,0 +1,7 @@
+{
+  "empty": "No offboarding records match these filters.",
+  "from": "2026-11-03",
+  "summary": "0 records · 0 deactivations · 0 contact requests matching these filters.",
+  "to": "2026-11-03",
+  "url": "http://127.0.0.1:3016/admin/offboarding/?q=offboard-pagination%40example.test&plugin=&type=&reason=&from=2026-11-03&to=2026-11-03"
+}
