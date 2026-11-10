@@ -836,3 +836,10 @@
 {"timestamp":"2026-11-05T02:31:27.23787+06:00","action":"edit","task_id":160,"detail":"Portal admin dates use inconsistent timezone and customer timezone is missing"}
 {"timestamp":"2026-11-05T02:31:27.238001+06:00","action":"release","task_id":160,"detail":"cacomixl-unoiled"}
 {"timestamp":"2026-11-05T02:31:27.252841+06:00","action":"move","task_id":160,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-11-11T01:31:14.00558+06:00","action":"create","task_id":161,"detail":"Guide header blur disappears after CSS minification"}
+{"timestamp":"2026-11-11T01:31:14.071094+06:00","action":"create","task_id":162,"detail":"Closing mobile guide navigation jumps the article upward"}
+{"timestamp":"2026-11-11T01:54:41.37642+06:00","action":"create","task_id":163,"detail":"Strict cookie blocking drops guest details in Freemius checkout"}
+{"timestamp":"2026-11-11T02:02:52.95987+06:00","action":"edit","task_id":163,"detail":"Strict cookie blocking drops guest details in Freemius checkout"}
+{"timestamp":"2026-11-11T02:03:48.494644+06:00","action":"create","task_id":164,"detail":"Live checkout rejects the advertised Personal Lifetime promotion"}
+{"timestamp":"2026-11-11T02:17:57.008512+06:00","action":"edit","task_id":164,"detail":"Live checkout rejects the advertised Personal Lifetime promotion"}
+{"timestamp":"2026-11-11T02:17:57.038903+06:00","action":"create","task_id":165,"detail":"Freemius omitted the Black Friday code on one Agency mobile checkout"}
