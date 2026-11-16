@@ -1,0 +1,14 @@
+[
+  {
+    "direction": "in",
+    "origin": "https://checkout.freemius.com",
+    "time": 4850,
+    "type": "loaded"
+  },
+  {
+    "direction": "in",
+    "origin": "https://checkout.freemius.com",
+    "time": 30658,
+    "type": "get_context"
+  }
+]

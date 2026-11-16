@@ -1,0 +1,15 @@
+{
+  "path": "/products/",
+  "plan": true,
+  "proof": {
+    "hasSignedRedirect": true,
+    "hasTrial": true,
+    "keys": [
+      "trial",
+      "user",
+      "redirect_url"
+    ]
+  },
+  "trial": true,
+  "trialEnds": true
+}

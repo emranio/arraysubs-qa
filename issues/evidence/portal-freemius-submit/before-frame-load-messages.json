@@ -1,0 +1,20 @@
+[
+  {
+    "direction": "in",
+    "origin": "https://checkout.freemius.com",
+    "time": 3909,
+    "type": "height"
+  },
+  {
+    "direction": "in",
+    "origin": "https://checkout.freemius.com",
+    "time": 63849,
+    "type": "height"
+  },
+  {
+    "direction": "in",
+    "origin": "https://checkout.freemius.com",
+    "time": 63849,
+    "type": "loaded"
+  }
+]

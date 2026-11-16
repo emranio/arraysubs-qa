@@ -1,0 +1,77 @@
+{
+  "date": "2026-11-16",
+  "environment": "Production; separate fresh Chromium Incognito sessions via agent-browser",
+  "scope": "Visible native Freemius checkout only; no form submission, no trial creation, no purchase",
+  "results": [
+    {
+      "route": "/checkout/personal/?trial=free",
+      "native_form": true,
+      "precheckout_account_screen": false,
+      "observed_controls": [
+        "Email address",
+        "First name",
+        "Last name",
+        "Start Trial"
+      ],
+      "evidence": "after-direct-trial-final.png",
+      "note": "Initial full-page captures showed a blank provider area although snapshot exposed native fields. Scrolling to email immediately showed the native form (after-direct-trial-focus.png). Full page screenshot after reload and scrolling back up shows complete native trial form."
+    },
+    {
+      "route": "/checkout/personal/",
+      "native_form": true,
+      "precheckout_account_screen": false,
+      "observed_controls": [
+        "Email address",
+        "First name",
+        "Last name",
+        "Card",
+        "PayPal",
+        "Credit or debit card number",
+        "Expiry",
+        "Security code",
+        "Country",
+        "Postal code",
+        "Review Order"
+      ],
+      "evidence": "after-direct-personal.png"
+    },
+    {
+      "route": "/checkout/professional/",
+      "native_form": true,
+      "precheckout_account_screen": false,
+      "observed_controls": [
+        "Email address",
+        "First name",
+        "Last name",
+        "Card",
+        "PayPal",
+        "Credit or debit card number",
+        "Expiry",
+        "Security code",
+        "Country",
+        "Postal code",
+        "Review Order"
+      ],
+      "evidence": "after-direct-professional.png"
+    },
+    {
+      "route": "/checkout/agency/",
+      "native_form": true,
+      "precheckout_account_screen": false,
+      "observed_controls": [
+        "Email address",
+        "First name",
+        "Last name",
+        "Card",
+        "PayPal",
+        "Credit or debit card number",
+        "Expiry",
+        "Security code",
+        "Country",
+        "Postal code",
+        "Review Order"
+      ],
+      "evidence": "after-direct-agency.png"
+    }
+  ]
+}

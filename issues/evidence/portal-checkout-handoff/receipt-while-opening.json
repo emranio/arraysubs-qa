@@ -1,0 +1,20 @@
+{
+  "busy": true,
+  "button": {
+    "height": 60,
+    "top": 1020,
+    "width": 190
+  },
+  "message": "Please wait while we open your portal.",
+  "status": {
+    "height": 72,
+    "top": 1177,
+    "width": 276
+  },
+  "support": {
+    "height": 121,
+    "top": 1281,
+    "width": 276
+  },
+  "viewport": 390
+}

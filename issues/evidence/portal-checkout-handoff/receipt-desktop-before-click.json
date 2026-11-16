@@ -1,0 +1,20 @@
+{
+  "busy": false,
+  "button": {
+    "height": 61,
+    "top": 762,
+    "width": 190
+  },
+  "message": "",
+  "status": {
+    "height": 48,
+    "top": 843,
+    "width": 670
+  },
+  "support": {
+    "height": 73,
+    "top": 923,
+    "width": 670
+  },
+  "viewport": 1280
+}

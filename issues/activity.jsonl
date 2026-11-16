@@ -843,3 +843,28 @@
 {"timestamp":"2026-11-11T02:03:48.494644+06:00","action":"create","task_id":164,"detail":"Live checkout rejects the advertised Personal Lifetime promotion"}
 {"timestamp":"2026-11-11T02:17:57.008512+06:00","action":"edit","task_id":164,"detail":"Live checkout rejects the advertised Personal Lifetime promotion"}
 {"timestamp":"2026-11-11T02:17:57.038903+06:00","action":"create","task_id":165,"detail":"Freemius omitted the Black Friday code on one Agency mobile checkout"}
+{"timestamp":"2026-11-16T18:40:05.351184+06:00","action":"create","task_id":166,"detail":"Portal Freemius checkout stalls before starting trials or payments"}
+{"timestamp":"2026-11-16T18:44:29.45217+06:00","action":"edit","task_id":166,"detail":"Portal Freemius checkout stalls before starting trials or payments"}
+{"timestamp":"2026-11-16T18:50:17.529296+06:00","action":"edit","task_id":166,"detail":"Portal Freemius checkout stalls before starting trials or payments"}
+{"timestamp":"2026-11-16T18:52:06.143184+06:00","action":"edit","task_id":166,"detail":"Portal Freemius checkout stalls before starting trials or payments"}
+{"timestamp":"2026-11-16T19:04:12.810869+06:00","action":"create","task_id":167,"detail":"Open my portal waits indefinitely after successful Freemius trial"}
+{"timestamp":"2026-11-16T19:16:45.597749+06:00","action":"edit","task_id":167,"detail":"Open my portal waits indefinitely after successful Freemius trial"}
+{"timestamp":"2026-11-16T19:19:23.09903+06:00","action":"edit","task_id":167,"detail":"Open my portal waits indefinitely after successful Freemius trial"}
+{"timestamp":"2026-11-16T19:22:30.0276+06:00","action":"edit","task_id":166,"detail":"Portal Freemius checkout stalls before starting trials or payments"}
+{"timestamp":"2026-11-16T19:37:15.083482+06:00","action":"edit","task_id":167,"detail":"Open my portal waits indefinitely after successful Freemius trial"}
+{"timestamp":"2026-11-16T19:38:21.021443+06:00","action":"edit","task_id":166,"detail":"Portal Freemius checkout stalls before starting trials or payments"}
+{"timestamp":"2026-11-16T19:38:25.032571+06:00","action":"move","task_id":166,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-11-16T19:38:33.237004+06:00","action":"edit","task_id":166,"detail":"Portal Freemius checkout stalls before starting trials or payments"}
+{"timestamp":"2026-11-16T19:38:33.237178+06:00","action":"release","task_id":166,"detail":"slotter-gourdy"}
+{"timestamp":"2026-11-16T19:41:38.727397+06:00","action":"edit","task_id":167,"detail":"Open my portal waits indefinitely after successful Freemius trial"}
+{"timestamp":"2026-11-16T19:41:38.728345+06:00","action":"block","task_id":167,"detail":"Waiting for Freemius signed checkout redirect to be enabled; new guest browser test remains."}
+{"timestamp":"2026-11-16T19:41:38.744843+06:00","action":"edit","task_id":167,"detail":"Open my portal waits indefinitely after successful Freemius trial"}
+{"timestamp":"2026-11-16T19:41:38.744961+06:00","action":"release","task_id":167,"detail":"slotter-gourdy"}
+{"timestamp":"2026-11-16T19:50:33.668194+06:00","action":"edit","task_id":167,"detail":"Open my portal waits indefinitely after successful Freemius trial"}
+{"timestamp":"2026-11-16T19:50:33.669161+06:00","action":"unblock","task_id":167,"detail":"Open my portal waits indefinitely after successful Freemius trial"}
+{"timestamp":"2026-11-16T19:50:33.669243+06:00","action":"claim","task_id":167,"detail":"slotter-gourdy"}
+{"timestamp":"2026-11-16T19:53:31.655734+06:00","action":"edit","task_id":167,"detail":"Open my portal waits indefinitely after successful Freemius trial"}
+{"timestamp":"2026-11-16T19:55:31.732861+06:00","action":"edit","task_id":167,"detail":"Open my portal waits indefinitely after successful Freemius trial"}
+{"timestamp":"2026-11-16T19:55:31.747538+06:00","action":"move","task_id":167,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-11-16T19:55:31.761177+06:00","action":"edit","task_id":167,"detail":"Open my portal waits indefinitely after successful Freemius trial"}
+{"timestamp":"2026-11-16T19:55:31.761277+06:00","action":"release","task_id":167,"detail":"slotter-gourdy"}

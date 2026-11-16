@@ -1,0 +1,37 @@
+[
+  {
+    "plan": "personal",
+    "plan_id": "54910",
+    "cycle": "lifetime",
+    "mode": "dialog",
+    "show_review_order": true,
+    "times": {
+      "heightMs": 5977,
+      "visibleMs": 5977
+    }
+  },
+  {
+    "plan": "professional",
+    "plan_id": "55248",
+    "cycle": "annual",
+    "mode": "dialog",
+    "show_review_order": true,
+    "times": {
+      "heightMs": 6209,
+      "loadedMs": 9657,
+      "visibleMs": 6209
+    }
+  },
+  {
+    "plan": "agency",
+    "plan_id": "55250",
+    "cycle": "lifetime",
+    "mode": "dialog",
+    "show_review_order": true,
+    "times": {
+      "heightMs": 5785,
+      "loadedMs": 7378,
+      "visibleMs": 5786
+    }
+  }
+]

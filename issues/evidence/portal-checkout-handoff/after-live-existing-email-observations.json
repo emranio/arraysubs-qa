@@ -1,0 +1,29 @@
+{
+  "date": "2026-11-16",
+  "environment": "Production; isolated fresh Chromium Incognito via agent-browser",
+  "account": "Synthetic example.com account created using real portal signup before starting checkout",
+  "steps": [
+    "Created portal account through signup and observed Dashboard",
+    "Signed out and observed Sign in page",
+    "Opened direct native Freemius Personal trial and entered same existing portal email",
+    "Completed actual no-card Freemius trial",
+    "Observed thank-you receipt and bold existing-account notice",
+    "Clicked Open my portal and observed unauthenticated Sign in page"
+  ],
+  "receipt": {
+    "route": "/thank-you/",
+    "heading": "You already have an account.",
+    "headingFontSize": "24px",
+    "headingFontWeight": "700",
+    "emailInstructionFontSize": "18px",
+    "emailInstructionFontWeight": "700",
+    "screenshot": "after-live-existing-email-receipt.png"
+  },
+  "outcome": {
+    "route": "/signin/",
+    "emailPasswordFormVisible": true,
+    "signedInNavigation": false,
+    "screenshot": "after-live-existing-email-signin.png"
+  },
+  "payment": "No card supplied; no paid purchase made. A real no-card trial was created."
+}

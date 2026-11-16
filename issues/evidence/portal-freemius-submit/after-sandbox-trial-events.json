@@ -1,0 +1,39 @@
+{
+  "messages": [
+    {
+      "direction": "in",
+      "origin": "https://checkout.freemius.com",
+      "time": 3820,
+      "type": "loaded"
+    },
+    {
+      "direction": "in",
+      "origin": "https://checkout.freemius.com",
+      "time": 30777,
+      "type": "purchaseCompleted"
+    },
+    {
+      "direction": "in",
+      "origin": "https://checkout.freemius.com",
+      "time": 31276,
+      "type": "upgraded"
+    }
+  ],
+  "requests": [
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:43946/api/checkout/handoff/start/",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "url": "https://checkout.freemius.com/action/service/subscribe/trial/",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:43946/api/checkout/handoff/complete/",
+      "status": 200
+    }
+  ]
+}
