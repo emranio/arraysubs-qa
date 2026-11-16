@@ -1,0 +1,23 @@
+{
+  "loadingText": [],
+  "path": "/wp-admin/admin.php?page=wc-admin&path=%2Fanalytics%2Foverview",
+  "requests": [
+    {
+      "elapsed": 12000.300000000048,
+      "path": "/wp-json/arraysubs/v1/analytics/overview/performance",
+      "start": 985.0999999998604,
+      "status": 200
+    },
+    {
+      "elapsed": 12001.600000000091,
+      "path": "/wp-json/arraysubs/v1/analytics/overview/charts",
+      "start": 1484.0999999998603,
+      "status": 200
+    }
+  ],
+  "spinners": [],
+  "viewport": {
+    "height": 577,
+    "width": 1280
+  }
+}

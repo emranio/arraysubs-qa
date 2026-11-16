@@ -1,0 +1,41 @@
+{
+  "label": "mobile-credit-settings",
+  "loading": {
+    "bodyClasses": "wp-admin wp-core-ui js theme-twentytwentyfive wc-wp-version-gte-53 wc-wp-version-gte-55 wc-wp-version-gte-70 toplevel_page_arraysubs-mainadmin auto-fold admin-bar branch-7-1 version-7-1-4 admin-color-modern locale-en-us svg wp-theme-twentytwentyfive customize-support dialog-body dialog-buttons-body dialog-container dialog-buttons-container e--ua-blink e--ua-chrome e--ua-mac e--ua-webkit sticky-menu",
+    "errors": [],
+    "extraSpinners": [],
+    "loadingText": [],
+    "route": "#/store-credit/settings",
+    "spinners": [
+      {
+        "bg": "url(\"http://localhost:10013/wp-admin/images/spinner.gif\")",
+        "h": 20,
+        "portal": true,
+        "w": 20,
+        "x": 195,
+        "y": 445
+      }
+    ],
+    "title": "Store Credit Settings - ArraySubs",
+    "viewport": {
+      "height": 844,
+      "width": 390
+    }
+  },
+  "settled": {
+    "bodyClasses": "wp-admin wp-core-ui js theme-twentytwentyfive wc-wp-version-gte-53 wc-wp-version-gte-55 wc-wp-version-gte-70 toplevel_page_arraysubs-mainadmin auto-fold admin-bar branch-7-1 version-7-1-4 admin-color-modern locale-en-us svg wp-theme-twentytwentyfive customize-support dialog-body dialog-buttons-body dialog-container dialog-buttons-container e--ua-blink e--ua-chrome e--ua-mac e--ua-webkit",
+    "errors": [],
+    "extraSpinners": [],
+    "loadingText": [],
+    "route": "#/store-credit/settings",
+    "spinners": [],
+    "title": "Store Credit Settings - ArraySubs",
+    "viewport": {
+      "height": 844,
+      "width": 390
+    }
+  },
+  "errors": {
+    "errors": []
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "loadingText": [],
+  "path": "/wp-admin/admin.php?page=wc-admin&path=%2Fanalytics%2Farraysubs-refunds",
+  "requests": [
+    {
+      "path": "/wp-json/arraysubs/v1/refund-analytics/report",
+      "start": 904.5,
+      "status": null
+    },
+    {
+      "elapsed": 12000.699999999952,
+      "path": "/wp-json/arraysubs/v1/refund-analytics/report",
+      "start": 905.1999999999534,
+      "status": 503
+    }
+  ],
+  "spinners": [],
+  "viewport": {
+    "height": 577,
+    "width": 1280
+  }
+}

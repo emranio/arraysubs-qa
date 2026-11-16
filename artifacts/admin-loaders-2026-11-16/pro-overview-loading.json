@@ -1,0 +1,38 @@
+{
+  "loadingText": [],
+  "path": "/wp-admin/admin.php?page=wc-admin&path=%2Fanalytics%2Foverview",
+  "requests": [
+    {
+      "path": "/wp-json/arraysubs/v1/analytics/overview/performance",
+      "start": 985.0999999998604,
+      "status": null
+    },
+    {
+      "path": "/wp-json/arraysubs/v1/analytics/overview/charts",
+      "start": 1484.0999999998603,
+      "status": null
+    }
+  ],
+  "spinners": [
+    {
+      "cx": 720,
+      "cy": 304.5,
+      "height": 20,
+      "width": 20,
+      "x": 710,
+      "y": 294.5
+    },
+    {
+      "cx": 720,
+      "cy": 304.5,
+      "height": 20,
+      "width": 20,
+      "x": 710,
+      "y": 294.5
+    }
+  ],
+  "viewport": {
+    "height": 577,
+    "width": 1280
+  }
+}

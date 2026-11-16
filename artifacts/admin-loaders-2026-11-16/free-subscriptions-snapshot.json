@@ -1,0 +1,690 @@
+{
+  "origin": "http://localhost:10013/wp-admin/admin.php?page=arraysubs-mainadmin#/subscriptions",
+  "refs": {
+    "e1": {
+      "name": "Main menu",
+      "role": "navigation"
+    },
+    "e10": {
+      "name": "Comments",
+      "role": "link"
+    },
+    "e100": {
+      "name": "Revenue",
+      "role": "link"
+    },
+    "e101": {
+      "name": "Orders",
+      "role": "link"
+    },
+    "e102": {
+      "name": "Variations",
+      "role": "link"
+    },
+    "e103": {
+      "name": "Categories",
+      "role": "link"
+    },
+    "e104": {
+      "name": "Coupons",
+      "role": "link"
+    },
+    "e105": {
+      "name": "Taxes",
+      "role": "link"
+    },
+    "e106": {
+      "name": "Downloads",
+      "role": "link"
+    },
+    "e107": {
+      "name": "Stock",
+      "role": "link"
+    },
+    "e108": {
+      "name": "Settings",
+      "role": "link"
+    },
+    "e109": {
+      "name": "Overview",
+      "role": "link"
+    },
+    "e11": {
+      "name": "ArraySubs",
+      "role": "link"
+    },
+    "e110": {
+      "name": "Coupons",
+      "role": "link"
+    },
+    "e111": {
+      "name": "Themes",
+      "role": "link"
+    },
+    "e112": {
+      "name": "Editor",
+      "role": "link"
+    },
+    "e113": {
+      "name": "Fonts",
+      "role": "link"
+    },
+    "e114": {
+      "name": "Installed Plugins",
+      "role": "link"
+    },
+    "e115": {
+      "name": "Add Plugin",
+      "role": "link"
+    },
+    "e116": {
+      "name": "All Users",
+      "role": "link"
+    },
+    "e117": {
+      "name": "Add User",
+      "role": "link"
+    },
+    "e118": {
+      "name": "Profile",
+      "role": "link"
+    },
+    "e119": {
+      "name": "Available Tools",
+      "role": "link"
+    },
+    "e12": {
+      "name": "WPSubscription",
+      "role": "link"
+    },
+    "e120": {
+      "name": "Import",
+      "role": "link"
+    },
+    "e121": {
+      "name": "Export",
+      "role": "link"
+    },
+    "e122": {
+      "name": "Site Health 1",
+      "role": "link"
+    },
+    "e123": {
+      "name": "Export Personal Data",
+      "role": "link"
+    },
+    "e124": {
+      "name": "Erase Personal Data",
+      "role": "link"
+    },
+    "e125": {
+      "name": "Scheduled Actions",
+      "role": "link"
+    },
+    "e126": {
+      "name": "Theme File Editor",
+      "role": "link"
+    },
+    "e127": {
+      "name": "Plugin File Editor",
+      "role": "link"
+    },
+    "e128": {
+      "name": "General",
+      "role": "link"
+    },
+    "e129": {
+      "name": "Connectors",
+      "role": "link"
+    },
+    "e13": {
+      "name": "WooCommerce",
+      "role": "link"
+    },
+    "e130": {
+      "name": "Writing",
+      "role": "link"
+    },
+    "e131": {
+      "name": "Reading",
+      "role": "link"
+    },
+    "e132": {
+      "name": "Discussion",
+      "role": "link"
+    },
+    "e133": {
+      "name": "Media",
+      "role": "link"
+    },
+    "e134": {
+      "name": "Permalinks",
+      "role": "link"
+    },
+    "e135": {
+      "name": "Privacy",
+      "role": "link"
+    },
+    "e136": {
+      "name": "TranslatePress 1",
+      "role": "link"
+    },
+    "e137": {
+      "name": "Home",
+      "role": "link"
+    },
+    "e138": {
+      "name": "Themes",
+      "role": "link"
+    },
+    "e139": {
+      "name": "Plugins",
+      "role": "link"
+    },
+    "e14": {
+      "name": "Products",
+      "role": "link"
+    },
+    "e140": {
+      "name": "WordPress",
+      "role": "link"
+    },
+    "e141": {
+      "name": "Languages",
+      "role": "link"
+    },
+    "e142": {
+      "name": "Settings",
+      "role": "link"
+    },
+    "e143": {
+      "name": "Debug",
+      "role": "link"
+    },
+    "e144": {
+      "name": "Subscriptions navigation",
+      "role": "navigation"
+    },
+    "e145": {
+      "name": "Related guides",
+      "role": "navigation"
+    },
+    "e146": {
+      "name": "",
+      "role": "combobox"
+    },
+    "e147": {
+      "name": "Apply",
+      "role": "button"
+    },
+    "e148": {
+      "name": "Subscription ID, customer, or product...",
+      "role": "searchbox"
+    },
+    "e149": {
+      "name": "New custom subscription",
+      "role": "link"
+    },
+    "e15": {
+      "name": "Payments",
+      "role": "link"
+    },
+    "e150": {
+      "name": "Export CSV",
+      "role": "button"
+    },
+    "e151": {
+      "name": "All(0) |",
+      "role": "button"
+    },
+    "e152": {
+      "name": "Active(0) |",
+      "role": "button"
+    },
+    "e153": {
+      "name": "Pending(0) |",
+      "role": "button"
+    },
+    "e154": {
+      "name": "Paused(0) |",
+      "role": "button"
+    },
+    "e155": {
+      "name": "On Hold(0) |",
+      "role": "button"
+    },
+    "e156": {
+      "name": "Cancelled(0) |",
+      "role": "button"
+    },
+    "e157": {
+      "name": "Expired(0) |",
+      "role": "button"
+    },
+    "e158": {
+      "name": "Trial(0)",
+      "role": "button"
+    },
+    "e159": {
+      "name": "Browse all docs (opens in a new tab)",
+      "role": "link"
+    },
+    "e16": {
+      "name": "Analytics",
+      "role": "link"
+    },
+    "e160": {
+      "name": "Gateway",
+      "role": "combobox"
+    },
+    "e161": {
+      "name": "Choose export columns",
+      "role": "button"
+    },
+    "e162": {
+      "name": "Bulk actions",
+      "role": "option"
+    },
+    "e163": {
+      "name": "Delete Permanently",
+      "role": "option"
+    },
+    "e164": {
+      "name": "All Subscriptions",
+      "role": "link"
+    },
+    "e165": {
+      "name": "New custom subscription",
+      "role": "link"
+    },
+    "e166": {
+      "name": "Find and filter subscriptions (opens in a new tab)",
+      "role": "link"
+    },
+    "e167": {
+      "name": "Export subscriptions (opens in a new tab)",
+      "role": "link"
+    },
+    "e168": {
+      "name": "All Gateways",
+      "role": "option"
+    },
+    "e169": {
+      "name": "Stripe",
+      "role": "option"
+    },
+    "e17": {
+      "name": "Marketing",
+      "role": "link"
+    },
+    "e170": {
+      "name": "PayPal",
+      "role": "option"
+    },
+    "e171": {
+      "name": "Paddle",
+      "role": "option"
+    },
+    "e18": {
+      "name": "Appearance",
+      "role": "link"
+    },
+    "e19": {
+      "name": "Plugins 11",
+      "role": "link"
+    },
+    "e2": {
+      "name": "Skip to main content",
+      "role": "link"
+    },
+    "e20": {
+      "name": "Users",
+      "role": "link"
+    },
+    "e21": {
+      "name": "Tools",
+      "role": "link"
+    },
+    "e22": {
+      "name": "Settings 1",
+      "role": "link"
+    },
+    "e23": {
+      "name": "Loco Translate",
+      "role": "link"
+    },
+    "e24": {
+      "name": "Collapse Main menu",
+      "role": "button"
+    },
+    "e25": {
+      "name": "WordPress",
+      "role": "link"
+    },
+    "e26": {
+      "name": "About WordPress",
+      "role": "menuitem"
+    },
+    "e27": {
+      "name": "wp-test2",
+      "role": "menuitem"
+    },
+    "e28": {
+      "name": "Coming soon",
+      "role": "menuitem"
+    },
+    "e29": {
+      "name": "12 updates available",
+      "role": "menuitem"
+    },
+    "e3": {
+      "name": "Skip to toolbar",
+      "role": "link"
+    },
+    "e30": {
+      "name": "\u2318K Open command palette",
+      "role": "menuitem"
+    },
+    "e31": {
+      "name": "0 Comments in moderation",
+      "role": "menuitem"
+    },
+    "e32": {
+      "name": "New",
+      "role": "menuitem"
+    },
+    "e33": {
+      "name": "\uf326 Translate Site 1",
+      "role": "menuitem"
+    },
+    "e34": {
+      "name": "Howdy, admin",
+      "role": "menuitem"
+    },
+    "e35": {
+      "name": "Home",
+      "role": "link"
+    },
+    "e36": {
+      "name": "Updates 12",
+      "role": "link"
+    },
+    "e37": {
+      "name": "Home",
+      "role": "link"
+    },
+    "e38": {
+      "name": "Editor",
+      "role": "link"
+    },
+    "e39": {
+      "name": "Theme Builder",
+      "role": "link"
+    },
+    "e4": {
+      "name": "Toolbar",
+      "role": "navigation"
+    },
+    "e40": {
+      "name": "Submissions",
+      "role": "link"
+    },
+    "e41": {
+      "name": "Elementor MCP",
+      "role": "link"
+    },
+    "e42": {
+      "name": "Connect Account",
+      "role": "link"
+    },
+    "e43": {
+      "name": "Upgrade",
+      "role": "link"
+    },
+    "e44": {
+      "name": "All Posts",
+      "role": "link"
+    },
+    "e45": {
+      "name": "Add Post",
+      "role": "link"
+    },
+    "e46": {
+      "name": "Categories",
+      "role": "link"
+    },
+    "e47": {
+      "name": "Tags",
+      "role": "link"
+    },
+    "e48": {
+      "name": "Library",
+      "role": "link"
+    },
+    "e49": {
+      "name": "Add Media File",
+      "role": "link"
+    },
+    "e5": {
+      "name": "Dashboard",
+      "role": "link"
+    },
+    "e50": {
+      "name": "All Pages",
+      "role": "link"
+    },
+    "e51": {
+      "name": "Add Page",
+      "role": "link"
+    },
+    "e52": {
+      "name": "Home",
+      "role": "link"
+    },
+    "e53": {
+      "name": "You may need",
+      "role": "link"
+    },
+    "e54": {
+      "name": "Subscription Plans",
+      "role": "link"
+    },
+    "e55": {
+      "name": "Subscriptions",
+      "role": "link"
+    },
+    "e56": {
+      "name": "Manage Members",
+      "role": "link"
+    },
+    "e57": {
+      "name": "Store Credit",
+      "role": "link"
+    },
+    "e58": {
+      "name": "Cancellation Flow",
+      "role": "link"
+    },
+    "e59": {
+      "name": "Renewal Flow",
+      "role": "link"
+    },
+    "e6": {
+      "name": "Elementor",
+      "role": "link"
+    },
+    "e60": {
+      "name": "Member Access",
+      "role": "link"
+    },
+    "e61": {
+      "name": "Checkout Builder",
+      "role": "link"
+    },
+    "e62": {
+      "name": "Profile & My Account",
+      "role": "link"
+    },
+    "e63": {
+      "name": "Shortcodes",
+      "role": "link"
+    },
+    "e64": {
+      "name": "Integrations",
+      "role": "link"
+    },
+    "e65": {
+      "name": "Modules",
+      "role": "link"
+    },
+    "e66": {
+      "name": "Settings",
+      "role": "link"
+    },
+    "e67": {
+      "name": "Audit Logs",
+      "role": "link"
+    },
+    "e68": {
+      "name": "Easy Setup & Import Export",
+      "role": "link"
+    },
+    "e69": {
+      "name": "Help",
+      "role": "link"
+    },
+    "e7": {
+      "name": "Posts",
+      "role": "link"
+    },
+    "e70": {
+      "name": "Overview",
+      "role": "link"
+    },
+    "e71": {
+      "name": "Plans",
+      "role": "link"
+    },
+    "e72": {
+      "name": "Delivery",
+      "role": "link"
+    },
+    "e73": {
+      "name": "Subscriptions",
+      "role": "link"
+    },
+    "e74": {
+      "name": "Reports",
+      "role": "link"
+    },
+    "e75": {
+      "name": "Health",
+      "role": "link"
+    },
+    "e76": {
+      "name": "Integrations",
+      "role": "link"
+    },
+    "e77": {
+      "name": "Cancellation Flow",
+      "role": "link"
+    },
+    "e78": {
+      "name": "Settings",
+      "role": "link"
+    },
+    "e79": {
+      "name": "License",
+      "role": "link"
+    },
+    "e8": {
+      "name": "Media",
+      "role": "link"
+    },
+    "e80": {
+      "name": "Help",
+      "role": "link"
+    },
+    "e81": {
+      "name": "Home 1",
+      "role": "link"
+    },
+    "e82": {
+      "name": "Orders 122",
+      "role": "link"
+    },
+    "e83": {
+      "name": "Subscriptions",
+      "role": "link"
+    },
+    "e84": {
+      "name": "Customers",
+      "role": "link"
+    },
+    "e85": {
+      "name": "Coupons",
+      "role": "link"
+    },
+    "e86": {
+      "name": "Reports",
+      "role": "link"
+    },
+    "e87": {
+      "name": "Settings",
+      "role": "link"
+    },
+    "e88": {
+      "name": "Status",
+      "role": "link"
+    },
+    "e89": {
+      "name": "Extensions",
+      "role": "link"
+    },
+    "e9": {
+      "name": "Pages",
+      "role": "link"
+    },
+    "e90": {
+      "name": "PDF Invoices",
+      "role": "link"
+    },
+    "e91": {
+      "name": "All Products",
+      "role": "link"
+    },
+    "e92": {
+      "name": "Add new product",
+      "role": "link"
+    },
+    "e93": {
+      "name": "Brands",
+      "role": "link"
+    },
+    "e94": {
+      "name": "Categories",
+      "role": "link"
+    },
+    "e95": {
+      "name": "Tags",
+      "role": "link"
+    },
+    "e96": {
+      "name": "Attributes",
+      "role": "link"
+    },
+    "e97": {
+      "name": "Reviews",
+      "role": "link"
+    },
+    "e98": {
+      "name": "Overview",
+      "role": "link"
+    },
+    "e99": {
+      "name": "Products",
+      "role": "link"
+    }
+  },
+  "snapshot": "- navigation \"Main menu\" [ref=e1]\n  - link \"Skip to main content\" [ref=e2]\n  - link \"Skip to toolbar\" [ref=e3]\n  - link \"Dashboard\" [ref=e5]\n  - link \"Home\" [ref=e35]\n  - link \"Updates 12\" [ref=e36]\n  - link \"Elementor\" [ref=e6]\n  - link \"Home\" [ref=e37]\n  - link \"Editor\" [ref=e38]\n  - link \"Theme Builder\" [ref=e39]\n  - link \"Submissions\" [ref=e40]\n  - link \"Elementor MCP\" [ref=e41]\n  - link \"Connect Account\" [ref=e42]\n  - link \"Upgrade\" [ref=e43]\n  - link \"Posts\" [ref=e7]\n  - link \"All Posts\" [ref=e44]\n  - link \"Add Post\" [ref=e45]\n  - link \"Categories\" [ref=e46]\n  - link \"Tags\" [ref=e47]\n  - link \"Media\" [ref=e8]\n  - link \"Library\" [ref=e48]\n  - link \"Add Media File\" [ref=e49]\n  - link \"Pages\" [ref=e9]\n  - link \"All Pages\" [ref=e50]\n  - link \"Add Page\" [ref=e51]\n  - link \"Comments\" [ref=e10]\n  - link \"ArraySubs\" [ref=e11]\n  - link \"Home\" [ref=e52]\n  - link \"You may need\" [ref=e53]\n  - link \"Subscription Plans\" [ref=e54]\n  - link \"Subscriptions\" [ref=e55]\n  - link \"Manage Members\" [ref=e56]\n  - link \"Store Credit\" [ref=e57]\n  - link \"Cancellation Flow\" [ref=e58]\n  - link \"Renewal Flow\" [ref=e59]\n  - link \"Member Access\" [ref=e60]\n  - link \"Checkout Builder\" [ref=e61]\n  - link \"Profile & My Account\" [ref=e62]\n  - link \"Shortcodes\" [ref=e63]\n  - link \"Integrations\" [ref=e64]\n  - link \"Modules\" [ref=e65]\n  - link \"Settings\" [ref=e66]\n  - link \"Audit Logs\" [ref=e67]\n  - link \"Easy Setup & Import Export\" [ref=e68]\n  - link \"Help\" [ref=e69]\n  - link \"WPSubscription\" [ref=e12]\n  - link \"Overview\" [ref=e70]\n  - link \"Plans\" [ref=e71]\n  - link \"Delivery\" [ref=e72]\n  - link \"Subscriptions\" [ref=e73]\n  - link \"Reports\" [ref=e74]\n  - link \"Health\" [ref=e75]\n  - link \"Integrations\" [ref=e76]\n  - link \"Cancellation Flow\" [ref=e77]\n  - link \"Settings\" [ref=e78]\n  - link \"License\" [ref=e79]\n  - link \"Help\" [ref=e80]\n  - link \"WooCommerce\" [ref=e13]\n  - link \"Home 1\" [ref=e81]\n  - link \"Orders 122\" [ref=e82]\n  - link \"Subscriptions\" [ref=e83]\n  - link \"Customers\" [ref=e84]\n  - link \"Coupons\" [ref=e85]\n  - link \"Reports\" [ref=e86]\n  - link \"Settings\" [ref=e87]\n  - link \"Status\" [ref=e88]\n  - link \"Extensions\" [ref=e89]\n  - link \"PDF Invoices\" [ref=e90]\n  - link \"Products\" [ref=e14]\n  - link \"All Products\" [ref=e91]\n  - link \"Add new product\" [ref=e92]\n  - link \"Brands\" [ref=e93]\n  - link \"Categories\" [ref=e94]\n  - link \"Tags\" [ref=e95]\n  - link \"Attributes\" [ref=e96]\n  - link \"Reviews\" [ref=e97]\n  - link \"Payments\" [ref=e15]\n  - link \"Analytics\" [ref=e16]\n  - link \"Overview\" [ref=e98]\n  - link \"Products\" [ref=e99]\n  - link \"Revenue\" [ref=e100]\n  - link \"Orders\" [ref=e101]\n  - link \"Variations\" [ref=e102]\n  - link \"Categories\" [ref=e103]\n  - link \"Coupons\" [ref=e104]\n  - link \"Taxes\" [ref=e105]\n  - link \"Downloads\" [ref=e106]\n  - link \"Stock\" [ref=e107]\n  - link \"Settings\" [ref=e108]\n  - link \"Marketing\" [ref=e17]\n  - link \"Overview\" [ref=e109]\n  - link \"Coupons\" [ref=e110]\n  - link \"Appearance\" [ref=e18]\n  - link \"Themes\" [ref=e111]\n  - link \"Editor\" [ref=e112]\n  - link \"Fonts\" [ref=e113]\n  - link \"Plugins 11\" [ref=e19]\n  - link \"Installed Plugins\" [ref=e114]\n  - link \"Add Plugin\" [ref=e115]\n  - link \"Users\" [ref=e20]\n  - link \"All Users\" [ref=e116]\n  - link \"Add User\" [ref=e117]\n  - link \"Profile\" [ref=e118]\n  - link \"Tools\" [ref=e21]\n  - link \"Available Tools\" [ref=e119]\n  - link \"Import\" [ref=e120]\n  - link \"Export\" [ref=e121]\n  - link \"Site Health 1\" [ref=e122]\n  - link \"Export Personal Data\" [ref=e123]\n  - link \"Erase Personal Data\" [ref=e124]\n  - link \"Scheduled Actions\" [ref=e125]\n  - link \"Theme File Editor\" [ref=e126]\n  - link \"Plugin File Editor\" [ref=e127]\n  - link \"Settings 1\" [ref=e22]\n  - link \"General\" [ref=e128]\n  - link \"Connectors\" [ref=e129]\n  - link \"Writing\" [ref=e130]\n  - link \"Reading\" [ref=e131]\n  - link \"Discussion\" [ref=e132]\n  - link \"Media\" [ref=e133]\n  - link \"Permalinks\" [ref=e134]\n  - link \"Privacy\" [ref=e135]\n  - link \"TranslatePress 1\" [ref=e136]\n  - link \"Loco Translate\" [ref=e23]\n  - link \"Home\" [ref=e137]\n  - link \"Themes\" [ref=e138]\n  - link \"Plugins\" [ref=e139]\n  - link \"WordPress\" [ref=e140]\n  - link \"Languages\" [ref=e141]\n  - link \"Settings\" [ref=e142]\n  - link \"Debug\" [ref=e143]\n  - button \"Collapse Main menu\" [expanded=true, ref=e24]\n- navigation \"Toolbar\" [ref=e4]\n  - menuitem \"About WordPress\" [expanded=false, ref=e26]\n  - menuitem \"wp-test2\" [expanded=false, ref=e27]\n  - menuitem \"Coming soon\" [ref=e28]\n  - menuitem \"12 updates available\" [ref=e29]\n  - menuitem \"\u2318K Open command palette\" [ref=e30]\n  - menuitem \"0 Comments in moderation\" [ref=e31]\n  - menuitem \"New\" [expanded=false, ref=e32]\n  - menuitem \"\uf326 Translate Site 1\" [expanded=false, ref=e33]\n  - menuitem \"Howdy, admin\" [expanded=false, ref=e34]\n- navigation \"Subscriptions navigation\" [ref=e144]\n  - link \"All Subscriptions\" [ref=e164]\n  - link \"New custom subscription\" [ref=e165]\n- navigation \"Related guides\" [ref=e145]\n  - link \"Find and filter subscriptions (opens in a new tab)\" [ref=e166]\n  - link \"Export subscriptions (opens in a new tab)\" [ref=e167]\n  - link \"Browse all docs (opens in a new tab)\" [ref=e159]\n- combobox [expanded=false, ref=e146]: Bulk actions\n  - option \"Bulk actions\" [selected, ref=e162]\n  - option \"Delete Permanently\" [ref=e163]\n- button \"Apply\" [disabled, ref=e147]\n- searchbox \"Subscription ID, customer, or product...\" [ref=e148]\n- combobox \"Gateway\" [expanded=false, ref=e160]: All Gateways\n  - option \"All Gateways\" [selected, ref=e168]\n  - option \"Stripe\" [ref=e169]\n  - option \"PayPal\" [ref=e170]\n  - option \"Paddle\" [ref=e171]\n- link \"New custom subscription\" [ref=e149]\n- button \"Export CSV\" [disabled, ref=e150]\n- button \"Choose export columns\" [expanded=false, ref=e161]\n- button \"All(0) |\" [ref=e151]\n- button \"Active(0) |\" [ref=e152]\n- button \"Pending(0) |\" [ref=e153]\n- button \"Paused(0) |\" [ref=e154]\n- button \"On Hold(0) |\" [ref=e155]\n- button \"Cancelled(0) |\" [ref=e156]\n- button \"Expired(0) |\" [ref=e157]\n- button \"Trial(0)\" [ref=e158]\n- link \"WordPress\" [ref=e25]"
+}

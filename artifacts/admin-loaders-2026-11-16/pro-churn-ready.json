@@ -1,0 +1,22 @@
+{
+  "loadingText": [],
+  "path": "/wp-admin/admin.php?page=wc-admin&path=%2Fanalytics%2Farraysubs-ai-churn",
+  "requests": [
+    {
+      "path": "/wp-json/arraysubs/v1/ai-insights/churn",
+      "start": 882.5,
+      "status": null
+    },
+    {
+      "elapsed": 12001.399999999909,
+      "path": "/wp-json/arraysubs/v1/ai-insights/churn",
+      "start": 883.1000000000931,
+      "status": 200
+    }
+  ],
+  "spinners": [],
+  "viewport": {
+    "height": 577,
+    "width": 1280
+  }
+}

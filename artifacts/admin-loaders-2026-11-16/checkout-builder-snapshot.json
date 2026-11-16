@@ -1,0 +1,14 @@
+{
+  "origin": "http://localhost:10013/wp-admin/admin.php?page=arraysubs-mainadmin#/checkout-builder",
+  "refs": {
+    "e1": {
+      "name": "WordPress",
+      "role": "link"
+    },
+    "e2": {
+      "name": "Back to Admin",
+      "role": "button"
+    }
+  },
+  "snapshot": "- button \"Back to Admin\" [ref=e2]\n- link \"WordPress\" [ref=e1]"
+}

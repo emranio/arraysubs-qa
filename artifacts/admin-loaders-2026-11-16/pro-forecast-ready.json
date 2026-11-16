@@ -1,0 +1,22 @@
+{
+  "loadingText": [],
+  "path": "/wp-admin/admin.php?page=wc-admin&path=%2Fanalytics%2Farraysubs-ai-forecast",
+  "requests": [
+    {
+      "path": "/wp-json/arraysubs/v1/ai-insights/forecast",
+      "start": 939,
+      "status": null
+    },
+    {
+      "elapsed": 12000.5,
+      "path": "/wp-json/arraysubs/v1/ai-insights/forecast",
+      "start": 939.1999999999534,
+      "status": 200
+    }
+  ],
+  "spinners": [],
+  "viewport": {
+    "height": 577,
+    "width": 1280
+  }
+}

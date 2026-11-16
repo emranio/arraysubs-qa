@@ -1,0 +1,106 @@
+{
+  "origin": "http://localhost:10013/wp-admin/admin.php?page=arraysubs-mainadmin#/members-access",
+  "refs": {
+    "e1": {
+      "name": "Main menu",
+      "role": "navigation"
+    },
+    "e10": {
+      "name": "Member Access navigation",
+      "role": "navigation"
+    },
+    "e11": {
+      "name": "Related guides",
+      "role": "navigation"
+    },
+    "e12": {
+      "name": "Member Access navigation",
+      "role": "combobox"
+    },
+    "e13": {
+      "name": "Browse all docs (opens in a new tab)",
+      "role": "link"
+    },
+    "e14": {
+      "name": "Role Mapping",
+      "role": "option"
+    },
+    "e15": {
+      "name": "Discount",
+      "role": "option"
+    },
+    "e16": {
+      "name": "Downloads",
+      "role": "option"
+    },
+    "e17": {
+      "name": "Shop Access",
+      "role": "option"
+    },
+    "e18": {
+      "name": "URL",
+      "role": "option"
+    },
+    "e19": {
+      "name": "Post Types",
+      "role": "option"
+    },
+    "e2": {
+      "name": "Skip to main content",
+      "role": "link"
+    },
+    "e20": {
+      "name": "Comments",
+      "role": "option"
+    },
+    "e21": {
+      "name": "Purchase Limit",
+      "role": "option"
+    },
+    "e22": {
+      "name": "Login Limit",
+      "role": "option"
+    },
+    "e23": {
+      "name": "Styling",
+      "role": "option"
+    },
+    "e24": {
+      "name": "Map subscriber roles (opens in a new tab)",
+      "role": "link"
+    },
+    "e25": {
+      "name": "Choose who qualifies (opens in a new tab)",
+      "role": "link"
+    },
+    "e3": {
+      "name": "Toolbar",
+      "role": "navigation"
+    },
+    "e4": {
+      "name": "Menu",
+      "role": "menuitem"
+    },
+    "e5": {
+      "name": "wp-test2",
+      "role": "menuitem"
+    },
+    "e6": {
+      "name": "\u2318K Open command palette",
+      "role": "menuitem"
+    },
+    "e7": {
+      "name": "New",
+      "role": "menuitem"
+    },
+    "e8": {
+      "name": "\uf326 Translate Site 1",
+      "role": "menuitem"
+    },
+    "e9": {
+      "name": "Howdy, admin",
+      "role": "menuitem"
+    }
+  },
+  "snapshot": "- navigation \"Main menu\" [ref=e1]\n  - link \"Skip to main content\" [ref=e2]\n- navigation \"Toolbar\" [ref=e3]\n  - menuitem \"Menu\" [expanded=false, ref=e4]\n  - menuitem \"wp-test2\" [expanded=false, ref=e5]\n  - menuitem \"\u2318K Open command palette\" [ref=e6]\n  - menuitem \"New\" [expanded=false, ref=e7]\n  - menuitem \"\uf326 Translate Site 1\" [expanded=false, ref=e8]\n  - menuitem \"Howdy, admin\" [expanded=false, ref=e9]\n- navigation \"Member Access navigation\" [ref=e10]\n  - combobox \"Member Access navigation\" [expanded=false, ref=e12]: Role Mapping\n    - option \"Role Mapping\" [selected, ref=e14]\n    - option \"Discount\" [ref=e15]\n    - option \"Downloads\" [ref=e16]\n    - option \"Shop Access\" [ref=e17]\n    - option \"URL\" [ref=e18]\n    - option \"Post Types\" [ref=e19]\n    - option \"Comments\" [ref=e20]\n    - option \"Purchase Limit\" [ref=e21]\n    - option \"Login Limit\" [ref=e22]\n    - option \"Styling\" [ref=e23]\n- navigation \"Related guides\" [ref=e11]\n  - link \"Map subscriber roles (opens in a new tab)\" [ref=e24]\n  - link \"Choose who qualifies (opens in a new tab)\" [ref=e25]\n  - link \"Browse all docs (opens in a new tab)\" [ref=e13]"
+}

@@ -1,0 +1,41 @@
+{
+  "label": "auto-folded-settings",
+  "loading": {
+    "bodyClasses": "wp-admin wp-core-ui js theme-twentytwentyfive wc-wp-version-gte-53 wc-wp-version-gte-55 wc-wp-version-gte-70 toplevel_page_arraysubs-mainadmin auto-fold admin-bar branch-7-1 version-7-1-4 admin-color-modern locale-en-us svg wp-theme-twentytwentyfive customize-support dialog-body dialog-buttons-body dialog-container dialog-buttons-container e--ua-blink e--ua-chrome e--ua-mac e--ua-webkit sticky-menu",
+    "errors": [],
+    "extraSpinners": [],
+    "loadingText": [],
+    "route": "#/settings/refunds",
+    "spinners": [
+      {
+        "bg": "url(\"http://localhost:10013/wp-admin/images/spinner.gif\")",
+        "h": 20,
+        "portal": true,
+        "w": 20,
+        "x": 468,
+        "y": 466
+      }
+    ],
+    "title": "Refunds - ArraySubs",
+    "viewport": {
+      "height": 900,
+      "width": 900
+    }
+  },
+  "settled": {
+    "bodyClasses": "wp-admin wp-core-ui js theme-twentytwentyfive wc-wp-version-gte-53 wc-wp-version-gte-55 wc-wp-version-gte-70 toplevel_page_arraysubs-mainadmin auto-fold admin-bar branch-7-1 version-7-1-4 admin-color-modern locale-en-us svg wp-theme-twentytwentyfive customize-support dialog-body dialog-buttons-body dialog-container dialog-buttons-container e--ua-blink e--ua-chrome e--ua-mac e--ua-webkit sticky-menu",
+    "errors": [],
+    "extraSpinners": [],
+    "loadingText": [],
+    "route": "#/settings/refunds",
+    "spinners": [],
+    "title": "Refunds - ArraySubs",
+    "viewport": {
+      "height": 900,
+      "width": 900
+    }
+  },
+  "errors": {
+    "errors": []
+  }
+}

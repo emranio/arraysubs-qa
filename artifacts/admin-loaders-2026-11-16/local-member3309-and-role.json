@@ -1,0 +1,16 @@
+{
+  "currentUser": {
+    "id": 1,
+    "roles": [
+      "administrator",
+      "demo_member"
+    ],
+    "slug": "admin",
+    "status": 200
+  },
+  "member": {
+    "message": "User not found",
+    "status": 404,
+    "success": false
+  }
+}

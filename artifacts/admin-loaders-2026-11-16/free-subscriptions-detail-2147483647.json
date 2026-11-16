@@ -1,0 +1,41 @@
+{
+  "label": "free-subscriptions-detail-2147483647",
+  "loading": {
+    "bodyClasses": "wp-admin wp-core-ui js theme-twentytwentyfive wc-wp-version-gte-53 wc-wp-version-gte-55 wc-wp-version-gte-70 toplevel_page_arraysubs-mainadmin auto-fold admin-bar branch-7-1 version-7-1-4 admin-color-modern locale-en-us svg wp-theme-twentytwentyfive customize-support dialog-body dialog-buttons-body dialog-container dialog-buttons-container e--ua-blink e--ua-chrome e--ua-mac e--ua-webkit",
+    "errors": [],
+    "loadingText": [],
+    "otherSpinners": [],
+    "route": "#/subscriptions/detail/2147483647",
+    "spinners": [
+      {
+        "bg": "url(\"http://localhost:10013/wp-admin/images/spinner.gif\")",
+        "h": 20,
+        "portal": true,
+        "w": 20,
+        "x": 720,
+        "y": 304.5
+      }
+    ],
+    "title": "Subscription - ArraySubs",
+    "viewport": {
+      "height": 577,
+      "width": 1280
+    }
+  },
+  "settled": {
+    "bodyClasses": "wp-admin wp-core-ui js theme-twentytwentyfive wc-wp-version-gte-53 wc-wp-version-gte-55 wc-wp-version-gte-70 toplevel_page_arraysubs-mainadmin auto-fold admin-bar branch-7-1 version-7-1-4 admin-color-modern locale-en-us svg wp-theme-twentytwentyfive customize-support dialog-body dialog-buttons-body dialog-container dialog-buttons-container e--ua-blink e--ua-chrome e--ua-mac e--ua-webkit",
+    "errors": [],
+    "loadingText": [],
+    "otherSpinners": [],
+    "route": "#/subscriptions/detail/2147483647",
+    "spinners": [],
+    "title": "Not Found - ArraySubs",
+    "viewport": {
+      "height": 577,
+      "width": 1280
+    }
+  },
+  "errors": {
+    "errors": []
+  }
+}
