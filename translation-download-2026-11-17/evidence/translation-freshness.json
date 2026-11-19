@@ -1,0 +1,2623 @@
+{
+  "checkedAt": "2026-11-17T12:06:06.851Z",
+  "liveZip": "/tmp/arraysubs-translations-live-http.zip",
+  "localZip": "user-guide/public/downloads/arraysubs-translations.zip",
+  "liveSha256": "13e7c23a0c1c0e4ed43dd779954710edf8801fd04239f5aa9a87c8c731d23a40",
+  "localSha256": "13e7c23a0c1c0e4ed43dd779954710edf8801fd04239f5aa9a87c8c731d23a40",
+  "bytes": 36699829,
+  "fileCount": 241,
+  "domains": [
+    {
+      "domain": "arraysubs",
+      "sourcePath": "arraysubs/languages/arraysubs.pot",
+      "sourceSha256": "4429d8367498d17db8dc93ded8b175494e7d5a54438e30ff26cdc27555da92c7",
+      "sourceMessageCount": 7712,
+      "sourceJavaScriptMessageCount": 4187,
+      "catalogs": [
+        {
+          "locale": "ar",
+          "projectVersion": "ArraySubs - Subscriptions for WooCommerce Recurring Payments with Membership Content Restriction 2.1.1",
+          "potCreated": "2026-11-16T17:48:35+00:00",
+          "revised": "2026-11-16 17:56+0000",
+          "messageCount": 7712,
+          "missingMessages": [],
+          "obsoleteMessages": [],
+          "emptyTranslationCount": 0,
+          "fuzzyCount": 0,
+          "javaScriptMessageCount": 4187,
+          "missingJavaScriptMessages": [],
+          "obsoleteJavaScriptMessages": [],
+          "emptyJavaScriptTranslationCount": 0
+        },
+        {
+          "locale": "bg_BG",
+          "projectVersion": "ArraySubs - Subscriptions for WooCommerce Recurring Payments with Membership Content Restriction 2.1.1",
+          "potCreated": "2026-11-16T17:48:35+00:00",
+          "revised": "2026-11-16 17:53+0000",
+          "messageCount": 7712,
+          "missingMessages": [],
+          "obsoleteMessages": [],
+          "emptyTranslationCount": 0,
+          "fuzzyCount": 0,
+          "javaScriptMessageCount": 4187,
+          "missingJavaScriptMessages": [],
+          "obsoleteJavaScriptMessages": [],
+          "emptyJavaScriptTranslationCount": 0
+        },
+        {
+          "locale": "cs_CZ",
+          "projectVersion": "ArraySubs - Subscriptions for WooCommerce Recurring Payments with Membership Content Restriction 2.1.1",
+          "potCreated": "2026-11-16T17:48:35+00:00",
+          "revised": "2026-11-16 17:53+0000",
+          "messageCount": 7712,
+          "missingMessages": [],
+          "obsoleteMessages": [],
+          "emptyTranslationCount": 0,
+          "fuzzyCount": 0,
+          "javaScriptMessageCount": 4187,
+          "missingJavaScriptMessages": [],
+          "obsoleteJavaScriptMessages": [],
+          "emptyJavaScriptTranslationCount": 0
+        },
+        {
+          "locale": "da_DK",
+          "projectVersion": "ArraySubs - Subscriptions for WooCommerce Recurring Payments with Membership Content Restriction 2.1.1",
+          "potCreated": "2026-11-16T17:48:35+00:00",
+          "revised": "2026-11-16 17:53+0000",
+          "messageCount": 7712,
+          "missingMessages": [],
+          "obsoleteMessages": [],
+          "emptyTranslationCount": 0,
+          "fuzzyCount": 0,
+          "javaScriptMessageCount": 4187,
+          "missingJavaScriptMessages": [],
+          "obsoleteJavaScriptMessages": [],
+          "emptyJavaScriptTranslationCount": 0
+        },
+        {
+          "locale": "de_DE",
+          "projectVersion": "ArraySubs - Subscriptions for WooCommerce Recurring Payments with Membership Content Restriction 2.1.1",
+          "potCreated": "2026-11-16T17:48:35+00:00",
+          "revised": "2026-11-16 17:54+0000",
+          "messageCount": 7712,
+          "missingMessages": [],
+          "obsoleteMessages": [],
+          "emptyTranslationCount": 0,
+          "fuzzyCount": 0,
+          "javaScriptMessageCount": 4187,
+          "missingJavaScriptMessages": [],
+          "obsoleteJavaScriptMessages": [],
+          "emptyJavaScriptTranslationCount": 0
+        },
+        {
+          "locale": "el",
+          "projectVersion": "ArraySubs - Subscriptions for WooCommerce Recurring Payments with Membership Content Restriction 2.1.1",
+          "potCreated": "2026-11-16T17:48:35+00:00",
+          "revised": "2026-11-16 17:54+0000",
+          "messageCount": 7712,
+          "missingMessages": [],
+          "obsoleteMessages": [],
+          "emptyTranslationCount": 0,
+          "fuzzyCount": 0,
+          "javaScriptMessageCount": 4187,
+          "missingJavaScriptMessages": [],
+          "obsoleteJavaScriptMessages": [],
+          "emptyJavaScriptTranslationCount": 0
+        },
+        {
+          "locale": "es_ES",
+          "projectVersion": "ArraySubs - Subscriptions for WooCommerce Recurring Payments with Membership Content Restriction 2.1.1",
+          "potCreated": "2026-11-16T17:48:35+00:00",
+          "revised": "2026-11-16 17:56+0000",
+          "messageCount": 7712,
+          "missingMessages": [],
+          "obsoleteMessages": [],
+          "emptyTranslationCount": 0,
+          "fuzzyCount": 0,
+          "javaScriptMessageCount": 4187,
+          "missingJavaScriptMessages": [],
+          "obsoleteJavaScriptMessages": [],
+          "emptyJavaScriptTranslationCount": 0
+        },
+        {
+          "locale": "et",
+          "projectVersion": "ArraySubs - Subscriptions for WooCommerce Recurring Payments with Membership Content Restriction 2.1.1",
+          "potCreated": "2026-11-16T17:48:35+00:00",
+          "revised": "2026-11-16 17:56+0000",
+          "messageCount": 7712,
+          "missingMessages": [],
+          "obsoleteMessages": [],
+          "emptyTranslationCount": 0,
+          "fuzzyCount": 0,
+          "javaScriptMessageCount": 4187,
+          "missingJavaScriptMessages": [],
+          "obsoleteJavaScriptMessages": [],
+          "emptyJavaScriptTranslationCount": 0
+        },
+        {
+          "locale": "fi",
+          "projectVersion": "ArraySubs - Subscriptions for WooCommerce Recurring Payments with Membership Content Restriction 2.1.1",
+          "potCreated": "2026-11-16T17:48:35+00:00",
+          "revised": "2026-11-16 17:56+0000",
+          "messageCount": 7712,
+          "missingMessages": [],
+          "obsoleteMessages": [],
+          "emptyTranslationCount": 0,
+          "fuzzyCount": 0,
+          "javaScriptMessageCount": 4187,
+          "missingJavaScriptMessages": [],
+          "obsoleteJavaScriptMessages": [],
+          "emptyJavaScriptTranslationCount": 0
+        },
+        {
+          "locale": "fr_FR",
+          "projectVersion": "ArraySubs - Subscriptions for WooCommerce Recurring Payments with Membership Content Restriction 2.1.1",
+          "potCreated": "2026-11-16T17:48:35+00:00",
+          "revised": "2026-11-16 17:54+0000",
+          "messageCount": 7712,
+          "missingMessages": [],
+          "obsoleteMessages": [],
+          "emptyTranslationCount": 0,
+          "fuzzyCount": 0,
+          "javaScriptMessageCount": 4187,
+          "missingJavaScriptMessages": [],
+          "obsoleteJavaScriptMessages": [],
+          "emptyJavaScriptTranslationCount": 0
+        },
+        {
+          "locale": "ga",
+          "projectVersion": "ArraySubs - Subscriptions for WooCommerce Recurring Payments with Membership Content Restriction 2.1.1",
+          "potCreated": "2026-11-16T17:48:35+00:00",
+          "revised": "2026-11-16 17:54+0000",
+          "messageCount": 7712,
+          "missingMessages": [],
+          "obsoleteMessages": [],
+          "emptyTranslationCount": 0,
+          "fuzzyCount": 0,
+          "javaScriptMessageCount": 4187,
+          "missingJavaScriptMessages": [],
+          "obsoleteJavaScriptMessages": [],
+          "emptyJavaScriptTranslationCount": 0
+        },
+        {
+          "locale": "he_IL",
+          "projectVersion": "ArraySubs - Subscriptions for WooCommerce Recurring Payments with Membership Content Restriction 2.1.1",
+          "potCreated": "2026-11-16T17:48:35+00:00",
+          "revised": "2026-11-16 17:57+0000",
+          "messageCount": 7712,
+          "missingMessages": [],
+          "obsoleteMessages": [],
+          "emptyTranslationCount": 0,
+          "fuzzyCount": 0,
+          "javaScriptMessageCount": 4187,
+          "missingJavaScriptMessages": [],
+          "obsoleteJavaScriptMessages": [],
+          "emptyJavaScriptTranslationCount": 0
+        },
+        {
+          "locale": "hr",
+          "projectVersion": "ArraySubs - Subscriptions for WooCommerce Recurring Payments with Membership Content Restriction 2.1.1",
+          "potCreated": "2026-11-16T17:48:35+00:00",
+          "revised": "2026-11-16 17:53+0000",
+          "messageCount": 7712,
+          "missingMessages": [],
+          "obsoleteMessages": [],
+          "emptyTranslationCount": 0,
+          "fuzzyCount": 0,
+          "javaScriptMessageCount": 4187,
+          "missingJavaScriptMessages": [],
+          "obsoleteJavaScriptMessages": [],
+          "emptyJavaScriptTranslationCount": 0
+        },
+        {
+          "locale": "hu_HU",
+          "projectVersion": "ArraySubs - Subscriptions for WooCommerce Recurring Payments with Membership Content Restriction 2.1.1",
+          "potCreated": "2026-11-16T17:48:35+00:00",
+          "revised": "2026-11-16 17:54+0000",
+          "messageCount": 7712,
+          "missingMessages": [],
+          "obsoleteMessages": [],
+          "emptyTranslationCount": 0,
+          "fuzzyCount": 0,
+          "javaScriptMessageCount": 4187,
+          "missingJavaScriptMessages": [],
+          "obsoleteJavaScriptMessages": [],
+          "emptyJavaScriptTranslationCount": 0
+        },
+        {
+          "locale": "id_ID",
+          "projectVersion": "ArraySubs - Subscriptions for WooCommerce Recurring Payments with Membership Content Restriction 2.1.1",
+          "potCreated": "2026-11-16T17:48:35+00:00",
+          "revised": "2026-11-16 17:57+0000",
+          "messageCount": 7712,
+          "missingMessages": [],
+          "obsoleteMessages": [],
+          "emptyTranslationCount": 0,
+          "fuzzyCount": 0,
+          "javaScriptMessageCount": 4187,
+          "missingJavaScriptMessages": [],
+          "obsoleteJavaScriptMessages": [],
+          "emptyJavaScriptTranslationCount": 0
+        },
+        {
+          "locale": "it_IT",
+          "projectVersion": "ArraySubs - Subscriptions for WooCommerce Recurring Payments with Membership Content Restriction 2.1.1",
+          "potCreated": "2026-11-16T17:48:35+00:00",
+          "revised": "2026-11-16 17:56+0000",
+          "messageCount": 7712,
+          "missingMessages": [],
+          "obsoleteMessages": [],
+          "emptyTranslationCount": 0,
+          "fuzzyCount": 0,
+          "javaScriptMessageCount": 4187,
+          "missingJavaScriptMessages": [],
+          "obsoleteJavaScriptMessages": [],
+          "emptyJavaScriptTranslationCount": 0
+        },
+        {
+          "locale": "lt_LT",
+          "projectVersion": "ArraySubs - Subscriptions for WooCommerce Recurring Payments with Membership Content Restriction 2.1.1",
+          "potCreated": "2026-11-16T17:48:35+00:00",
+          "revised": "2026-11-16 17:55+0000",
+          "messageCount": 7712,
+          "missingMessages": [],
+          "obsoleteMessages": [],
+          "emptyTranslationCount": 0,
+          "fuzzyCount": 0,
+          "javaScriptMessageCount": 4187,
+          "missingJavaScriptMessages": [],
+          "obsoleteJavaScriptMessages": [],
+          "emptyJavaScriptTranslationCount": 0
+        },
+        {
+          "locale": "lv",
+          "projectVersion": "ArraySubs - Subscriptions for WooCommerce Recurring Payments with Membership Content Restriction 2.1.1",
+          "potCreated": "2026-11-16T17:48:35+00:00",
+          "revised": "2026-11-16 17:55+0000",
+          "messageCount": 7712,
+          "missingMessages": [],
+          "obsoleteMessages": [],
+          "emptyTranslationCount": 0,
+          "fuzzyCount": 0,
+          "javaScriptMessageCount": 4187,
+          "missingJavaScriptMessages": [],
+          "obsoleteJavaScriptMessages": [],
+          "emptyJavaScriptTranslationCount": 0
+        },
+        {
+          "locale": "mlt",
+          "projectVersion": "ArraySubs - Subscriptions for WooCommerce Recurring Payments with Membership Content Restriction 2.1.1",
+          "potCreated": "2026-11-16T17:48:35+00:00",
+          "revised": "2026-11-16 17:55+0000",
+          "messageCount": 7712,
+          "missingMessages": [],
+          "obsoleteMessages": [],
+          "emptyTranslationCount": 0,
+          "fuzzyCount": 0,
+          "javaScriptMessageCount": 4187,
+          "missingJavaScriptMessages": [],
+          "obsoleteJavaScriptMessages": [],
+          "emptyJavaScriptTranslationCount": 0
+        },
+        {
+          "locale": "nl_NL",
+          "projectVersion": "ArraySubs - Subscriptions for WooCommerce Recurring Payments with Membership Content Restriction 2.1.1",
+          "potCreated": "2026-11-16T17:48:35+00:00",
+          "revised": "2026-11-16 17:53+0000",
+          "messageCount": 7712,
+          "missingMessages": [],
+          "obsoleteMessages": [],
+          "emptyTranslationCount": 0,
+          "fuzzyCount": 0,
+          "javaScriptMessageCount": 4187,
+          "missingJavaScriptMessages": [],
+          "obsoleteJavaScriptMessages": [],
+          "emptyJavaScriptTranslationCount": 0
+        },
+        {
+          "locale": "pl_PL",
+          "projectVersion": "ArraySubs - Subscriptions for WooCommerce Recurring Payments with Membership Content Restriction 2.1.1",
+          "potCreated": "2026-11-16T17:48:35+00:00",
+          "revised": "2026-11-16 17:55+0000",
+          "messageCount": 7712,
+          "missingMessages": [],
+          "obsoleteMessages": [],
+          "emptyTranslationCount": 0,
+          "fuzzyCount": 0,
+          "javaScriptMessageCount": 4187,
+          "missingJavaScriptMessages": [],
+          "obsoleteJavaScriptMessages": [],
+          "emptyJavaScriptTranslationCount": 0
+        },
+        {
+          "locale": "pt_PT",
+          "projectVersion": "ArraySubs - Subscriptions for WooCommerce Recurring Payments with Membership Content Restriction 2.1.1",
+          "potCreated": "2026-11-16T17:48:35+00:00",
+          "revised": "2026-11-16 17:55+0000",
+          "messageCount": 7712,
+          "missingMessages": [],
+          "obsoleteMessages": [],
+          "emptyTranslationCount": 0,
+          "fuzzyCount": 0,
+          "javaScriptMessageCount": 4187,
+          "missingJavaScriptMessages": [],
+          "obsoleteJavaScriptMessages": [],
+          "emptyJavaScriptTranslationCount": 0
+        },
+        {
+          "locale": "ro_RO",
+          "projectVersion": "ArraySubs - Subscriptions for WooCommerce Recurring Payments with Membership Content Restriction 2.1.1",
+          "potCreated": "2026-11-16T17:48:35+00:00",
+          "revised": "2026-11-16 17:56+0000",
+          "messageCount": 7712,
+          "missingMessages": [],
+          "obsoleteMessages": [],
+          "emptyTranslationCount": 0,
+          "fuzzyCount": 0,
+          "javaScriptMessageCount": 4187,
+          "missingJavaScriptMessages": [],
+          "obsoleteJavaScriptMessages": [],
+          "emptyJavaScriptTranslationCount": 0
+        },
+        {
+          "locale": "sk_SK",
+          "projectVersion": "ArraySubs - Subscriptions for WooCommerce Recurring Payments with Membership Content Restriction 2.1.1",
+          "potCreated": "2026-11-16T17:48:35+00:00",
+          "revised": "2026-11-16 17:56+0000",
+          "messageCount": 7712,
+          "missingMessages": [],
+          "obsoleteMessages": [],
+          "emptyTranslationCount": 0,
+          "fuzzyCount": 0,
+          "javaScriptMessageCount": 4187,
+          "missingJavaScriptMessages": [],
+          "obsoleteJavaScriptMessages": [],
+          "emptyJavaScriptTranslationCount": 0
+        },
+        {
+          "locale": "sl_SI",
+          "projectVersion": "ArraySubs - Subscriptions for WooCommerce Recurring Payments with Membership Content Restriction 2.1.1",
+          "potCreated": "2026-11-16T17:48:35+00:00",
+          "revised": "2026-11-16 17:56+0000",
+          "messageCount": 7712,
+          "missingMessages": [],
+          "obsoleteMessages": [],
+          "emptyTranslationCount": 0,
+          "fuzzyCount": 0,
+          "javaScriptMessageCount": 4187,
+          "missingJavaScriptMessages": [],
+          "obsoleteJavaScriptMessages": [],
+          "emptyJavaScriptTranslationCount": 0
+        },
+        {
+          "locale": "sv_SE",
+          "projectVersion": "ArraySubs - Subscriptions for WooCommerce Recurring Payments with Membership Content Restriction 2.1.1",
+          "potCreated": "2026-11-16T17:48:35+00:00",
+          "revised": "2026-11-16 17:56+0000",
+          "messageCount": 7712,
+          "missingMessages": [],
+          "obsoleteMessages": [],
+          "emptyTranslationCount": 0,
+          "fuzzyCount": 0,
+          "javaScriptMessageCount": 4187,
+          "missingJavaScriptMessages": [],
+          "obsoleteJavaScriptMessages": [],
+          "emptyJavaScriptTranslationCount": 0
+        },
+        {
+          "locale": "th",
+          "projectVersion": "ArraySubs - Subscriptions for WooCommerce Recurring Payments with Membership Content Restriction 2.1.1",
+          "potCreated": "2026-11-16T17:48:35+00:00",
+          "revised": "2026-11-16 17:56+0000",
+          "messageCount": 7712,
+          "missingMessages": [],
+          "obsoleteMessages": [],
+          "emptyTranslationCount": 0,
+          "fuzzyCount": 0,
+          "javaScriptMessageCount": 4187,
+          "missingJavaScriptMessages": [],
+          "obsoleteJavaScriptMessages": [],
+          "emptyJavaScriptTranslationCount": 0
+        },
+        {
+          "locale": "uk",
+          "projectVersion": "ArraySubs - Subscriptions for WooCommerce Recurring Payments with Membership Content Restriction 2.1.1",
+          "potCreated": "2026-11-16T17:48:35+00:00",
+          "revised": "2026-11-16 17:57+0000",
+          "messageCount": 7712,
+          "missingMessages": [],
+          "obsoleteMessages": [],
+          "emptyTranslationCount": 0,
+          "fuzzyCount": 0,
+          "javaScriptMessageCount": 4187,
+          "missingJavaScriptMessages": [],
+          "obsoleteJavaScriptMessages": [],
+          "emptyJavaScriptTranslationCount": 0
+        },
+        {
+          "locale": "zh_CN",
+          "projectVersion": "ArraySubs - Subscriptions for WooCommerce Recurring Payments with Membership Content Restriction 2.1.1",
+          "potCreated": "2026-11-16T17:48:35+00:00",
+          "revised": "2026-11-16 17:57+0000",
+          "messageCount": 7712,
+          "missingMessages": [],
+          "obsoleteMessages": [],
+          "emptyTranslationCount": 0,
+          "fuzzyCount": 0,
+          "javaScriptMessageCount": 4187,
+          "missingJavaScriptMessages": [],
+          "obsoleteJavaScriptMessages": [],
+          "emptyJavaScriptTranslationCount": 0
+        },
+        {
+          "locale": "zh_TW",
+          "projectVersion": "ArraySubs - Subscriptions for WooCommerce Recurring Payments with Membership Content Restriction 2.1.1",
+          "potCreated": "2026-11-16T17:48:35+00:00",
+          "revised": "2026-11-16 17:58+0000",
+          "messageCount": 7712,
+          "missingMessages": [],
+          "obsoleteMessages": [],
+          "emptyTranslationCount": 0,
+          "fuzzyCount": 0,
+          "javaScriptMessageCount": 4187,
+          "missingJavaScriptMessages": [],
+          "obsoleteJavaScriptMessages": [],
+          "emptyJavaScriptTranslationCount": 0
+        }
+      ]
+    },
+    {
+      "domain": "arraysubspro",
+      "sourcePath": "arraysubspro/languages/arraysubspro.pot",
+      "sourceSha256": "df33c4e9fee4d6c869b13fe7f8752d9bc343e659bb868a3a6ee21678d227a95a",
+      "sourceMessageCount": 1996,
+      "sourceJavaScriptMessageCount": 635,
+      "catalogs": [
+        {
+          "locale": "ar",
+          "projectVersion": "ArraySubsPro - Premium features for ArraySubs WooCommerce Subscription Plugin 1.3.1",
+          "potCreated": "2026-11-16T17:48:39+00:00",
+          "revised": "2026-11-16 17:49+0000",
+          "messageCount": 1996,
+          "missingMessages": [],
+          "obsoleteMessages": [],
+          "emptyTranslationCount": 0,
+          "fuzzyCount": 0,
+          "javaScriptMessageCount": 635,
+          "missingJavaScriptMessages": [],
+          "obsoleteJavaScriptMessages": [],
+          "emptyJavaScriptTranslationCount": 0
+        },
+        {
+          "locale": "bg_BG",
+          "projectVersion": "ArraySubsPro - Premium features for ArraySubs WooCommerce Subscription Plugin 1.3.1",
+          "potCreated": "2026-11-16T17:48:39+00:00",
+          "revised": "2026-11-16 17:49+0000",
+          "messageCount": 1996,
+          "missingMessages": [],
+          "obsoleteMessages": [],
+          "emptyTranslationCount": 0,
+          "fuzzyCount": 0,
+          "javaScriptMessageCount": 635,
+          "missingJavaScriptMessages": [],
+          "obsoleteJavaScriptMessages": [],
+          "emptyJavaScriptTranslationCount": 0
+        },
+        {
+          "locale": "cs_CZ",
+          "projectVersion": "ArraySubsPro - Premium features for ArraySubs WooCommerce Subscription Plugin 1.3.1",
+          "potCreated": "2026-11-16T17:48:39+00:00",
+          "revised": "2026-11-16 17:49+0000",
+          "messageCount": 1996,
+          "missingMessages": [],
+          "obsoleteMessages": [],
+          "emptyTranslationCount": 0,
+          "fuzzyCount": 0,
+          "javaScriptMessageCount": 635,
+          "missingJavaScriptMessages": [],
+          "obsoleteJavaScriptMessages": [],
+          "emptyJavaScriptTranslationCount": 0
+        },
+        {
+          "locale": "da_DK",
+          "projectVersion": "ArraySubsPro - Premium features for ArraySubs WooCommerce Subscription Plugin 1.3.1",
+          "potCreated": "2026-11-16T17:48:39+00:00",
+          "revised": "2026-11-16 17:49+0000",
+          "messageCount": 1996,
+          "missingMessages": [],
+          "obsoleteMessages": [],
+          "emptyTranslationCount": 0,
+          "fuzzyCount": 0,
+          "javaScriptMessageCount": 635,
+          "missingJavaScriptMessages": [],
+          "obsoleteJavaScriptMessages": [],
+          "emptyJavaScriptTranslationCount": 0
+        },
+        {
+          "locale": "de_DE",
+          "projectVersion": "ArraySubsPro - Premium features for ArraySubs WooCommerce Subscription Plugin 1.3.1",
+          "potCreated": "2026-11-16T17:48:39+00:00",
+          "revised": "2026-11-16 17:49+0000",
+          "messageCount": 1996,
+          "missingMessages": [],
+          "obsoleteMessages": [],
+          "emptyTranslationCount": 0,
+          "fuzzyCount": 0,
+          "javaScriptMessageCount": 635,
+          "missingJavaScriptMessages": [],
+          "obsoleteJavaScriptMessages": [],
+          "emptyJavaScriptTranslationCount": 0
+        },
+        {
+          "locale": "el",
+          "projectVersion": "ArraySubsPro - Premium features for ArraySubs WooCommerce Subscription Plugin 1.3.1",
+          "potCreated": "2026-11-16T17:48:39+00:00",
+          "revised": "2026-11-16 17:49+0000",
+          "messageCount": 1996,
+          "missingMessages": [],
+          "obsoleteMessages": [],
+          "emptyTranslationCount": 0,
+          "fuzzyCount": 0,
+          "javaScriptMessageCount": 635,
+          "missingJavaScriptMessages": [],
+          "obsoleteJavaScriptMessages": [],
+          "emptyJavaScriptTranslationCount": 0
+        },
+        {
+          "locale": "es_ES",
+          "projectVersion": "ArraySubsPro - Premium features for ArraySubs WooCommerce Subscription Plugin 1.3.1",
+          "potCreated": "2026-11-16T17:48:39+00:00",
+          "revised": "2026-11-16 17:49+0000",
+          "messageCount": 1996,
+          "missingMessages": [],
+          "obsoleteMessages": [],
+          "emptyTranslationCount": 0,
+          "fuzzyCount": 0,
+          "javaScriptMessageCount": 635,
+          "missingJavaScriptMessages": [],
+          "obsoleteJavaScriptMessages": [],
+          "emptyJavaScriptTranslationCount": 0
+        },
+        {
+          "locale": "et",
+          "projectVersion": "ArraySubsPro - Premium features for ArraySubs WooCommerce Subscription Plugin 1.3.1",
+          "potCreated": "2026-11-16T17:48:39+00:00",
+          "revised": "2026-11-16 17:49+0000",
+          "messageCount": 1996,
+          "missingMessages": [],
+          "obsoleteMessages": [],
+          "emptyTranslationCount": 0,
+          "fuzzyCount": 0,
+          "javaScriptMessageCount": 635,
+          "missingJavaScriptMessages": [],
+          "obsoleteJavaScriptMessages": [],
+          "emptyJavaScriptTranslationCount": 0
+        },
+        {
+          "locale": "fi",
+          "projectVersion": "ArraySubsPro - Premium features for ArraySubs WooCommerce Subscription Plugin 1.3.1",
+          "potCreated": "2026-11-16T17:48:39+00:00",
+          "revised": "2026-11-16 17:49+0000",
+          "messageCount": 1996,
+          "missingMessages": [],
+          "obsoleteMessages": [],
+          "emptyTranslationCount": 0,
+          "fuzzyCount": 0,
+          "javaScriptMessageCount": 635,
+          "missingJavaScriptMessages": [],
+          "obsoleteJavaScriptMessages": [],
+          "emptyJavaScriptTranslationCount": 0
+        },
+        {
+          "locale": "fr_FR",
+          "projectVersion": "ArraySubsPro - Premium features for ArraySubs WooCommerce Subscription Plugin 1.3.1",
+          "potCreated": "2026-11-16T17:48:39+00:00",
+          "revised": "2026-11-16 17:49+0000",
+          "messageCount": 1996,
+          "missingMessages": [],
+          "obsoleteMessages": [],
+          "emptyTranslationCount": 0,
+          "fuzzyCount": 0,
+          "javaScriptMessageCount": 635,
+          "missingJavaScriptMessages": [],
+          "obsoleteJavaScriptMessages": [],
+          "emptyJavaScriptTranslationCount": 0
+        },
+        {
+          "locale": "ga",
+          "projectVersion": "ArraySubsPro - Premium features for ArraySubs WooCommerce Subscription Plugin 1.3.1",
+          "potCreated": "2026-11-16T17:48:39+00:00",
+          "revised": "2026-11-16 17:49+0000",
+          "messageCount": 1996,
+          "missingMessages": [],
+          "obsoleteMessages": [],
+          "emptyTranslationCount": 0,
+          "fuzzyCount": 0,
+          "javaScriptMessageCount": 635,
+          "missingJavaScriptMessages": [],
+          "obsoleteJavaScriptMessages": [],
+          "emptyJavaScriptTranslationCount": 0
+        },
+        {
+          "locale": "he_IL",
+          "projectVersion": "ArraySubsPro - Premium features for ArraySubs WooCommerce Subscription Plugin 1.3.1",
+          "potCreated": "2026-11-16T17:48:39+00:00",
+          "revised": "2026-11-16 17:49+0000",
+          "messageCount": 1996,
+          "missingMessages": [],
+          "obsoleteMessages": [],
+          "emptyTranslationCount": 0,
+          "fuzzyCount": 0,
+          "javaScriptMessageCount": 635,
+          "missingJavaScriptMessages": [],
+          "obsoleteJavaScriptMessages": [],
+          "emptyJavaScriptTranslationCount": 0
+        },
+        {
+          "locale": "hr",
+          "projectVersion": "ArraySubsPro - Premium features for ArraySubs WooCommerce Subscription Plugin 1.3.1",
+          "potCreated": "2026-11-16T17:48:39+00:00",
+          "revised": "2026-11-16 17:49+0000",
+          "messageCount": 1996,
+          "missingMessages": [],
+          "obsoleteMessages": [],
+          "emptyTranslationCount": 0,
+          "fuzzyCount": 0,
+          "javaScriptMessageCount": 635,
+          "missingJavaScriptMessages": [],
+          "obsoleteJavaScriptMessages": [],
+          "emptyJavaScriptTranslationCount": 0
+        },
+        {
+          "locale": "hu_HU",
+          "projectVersion": "ArraySubsPro - Premium features for ArraySubs WooCommerce Subscription Plugin 1.3.1",
+          "potCreated": "2026-11-16T17:48:39+00:00",
+          "revised": "2026-11-16 17:49+0000",
+          "messageCount": 1996,
+          "missingMessages": [],
+          "obsoleteMessages": [],
+          "emptyTranslationCount": 0,
+          "fuzzyCount": 0,
+          "javaScriptMessageCount": 635,
+          "missingJavaScriptMessages": [],
+          "obsoleteJavaScriptMessages": [],
+          "emptyJavaScriptTranslationCount": 0
+        },
+        {
+          "locale": "id_ID",
+          "projectVersion": "ArraySubsPro - Premium features for ArraySubs WooCommerce Subscription Plugin 1.3.1",
+          "potCreated": "2026-11-16T17:48:39+00:00",
+          "revised": "2026-11-16 17:49+0000",
+          "messageCount": 1996,
+          "missingMessages": [],
+          "obsoleteMessages": [],
+          "emptyTranslationCount": 0,
+          "fuzzyCount": 0,
+          "javaScriptMessageCount": 635,
+          "missingJavaScriptMessages": [],
+          "obsoleteJavaScriptMessages": [],
+          "emptyJavaScriptTranslationCount": 0
+        },
+        {
+          "locale": "it_IT",
+          "projectVersion": "ArraySubsPro - Premium features for ArraySubs WooCommerce Subscription Plugin 1.3.1",
+          "potCreated": "2026-11-16T17:48:39+00:00",
+          "revised": "2026-11-16 17:49+0000",
+          "messageCount": 1996,
+          "missingMessages": [],
+          "obsoleteMessages": [],
+          "emptyTranslationCount": 0,
+          "fuzzyCount": 0,
+          "javaScriptMessageCount": 635,
+          "missingJavaScriptMessages": [],
+          "obsoleteJavaScriptMessages": [],
+          "emptyJavaScriptTranslationCount": 0
+        },
+        {
+          "locale": "lt_LT",
+          "projectVersion": "ArraySubsPro - Premium features for ArraySubs WooCommerce Subscription Plugin 1.3.1",
+          "potCreated": "2026-11-16T17:48:39+00:00",
+          "revised": "2026-11-16 17:49+0000",
+          "messageCount": 1996,
+          "missingMessages": [],
+          "obsoleteMessages": [],
+          "emptyTranslationCount": 0,
+          "fuzzyCount": 0,
+          "javaScriptMessageCount": 635,
+          "missingJavaScriptMessages": [],
+          "obsoleteJavaScriptMessages": [],
+          "emptyJavaScriptTranslationCount": 0
+        },
+        {
+          "locale": "lv",
+          "projectVersion": "ArraySubsPro - Premium features for ArraySubs WooCommerce Subscription Plugin 1.3.1",
+          "potCreated": "2026-11-16T17:48:39+00:00",
+          "revised": "2026-11-16 17:49+0000",
+          "messageCount": 1996,
+          "missingMessages": [],
+          "obsoleteMessages": [],
+          "emptyTranslationCount": 0,
+          "fuzzyCount": 0,
+          "javaScriptMessageCount": 635,
+          "missingJavaScriptMessages": [],
+          "obsoleteJavaScriptMessages": [],
+          "emptyJavaScriptTranslationCount": 0
+        },
+        {
+          "locale": "mlt",
+          "projectVersion": "ArraySubsPro - Premium features for ArraySubs WooCommerce Subscription Plugin 1.3.1",
+          "potCreated": "2026-11-16T17:48:39+00:00",
+          "revised": "2026-11-16 17:49+0000",
+          "messageCount": 1996,
+          "missingMessages": [],
+          "obsoleteMessages": [],
+          "emptyTranslationCount": 0,
+          "fuzzyCount": 0,
+          "javaScriptMessageCount": 635,
+          "missingJavaScriptMessages": [],
+          "obsoleteJavaScriptMessages": [],
+          "emptyJavaScriptTranslationCount": 0
+        },
+        {
+          "locale": "nl_NL",
+          "projectVersion": "ArraySubsPro - Premium features for ArraySubs WooCommerce Subscription Plugin 1.3.1",
+          "potCreated": "2026-11-16T17:48:39+00:00",
+          "revised": "2026-11-16 17:49+0000",
+          "messageCount": 1996,
+          "missingMessages": [],
+          "obsoleteMessages": [],
+          "emptyTranslationCount": 0,
+          "fuzzyCount": 0,
+          "javaScriptMessageCount": 635,
+          "missingJavaScriptMessages": [],
+          "obsoleteJavaScriptMessages": [],
+          "emptyJavaScriptTranslationCount": 0
+        },
+        {
+          "locale": "pl_PL",
+          "projectVersion": "ArraySubsPro - Premium features for ArraySubs WooCommerce Subscription Plugin 1.3.1",
+          "potCreated": "2026-11-16T17:48:39+00:00",
+          "revised": "2026-11-16 17:49+0000",
+          "messageCount": 1996,
+          "missingMessages": [],
+          "obsoleteMessages": [],
+          "emptyTranslationCount": 0,
+          "fuzzyCount": 0,
+          "javaScriptMessageCount": 635,
+          "missingJavaScriptMessages": [],
+          "obsoleteJavaScriptMessages": [],
+          "emptyJavaScriptTranslationCount": 0
+        },
+        {
+          "locale": "pt_PT",
+          "projectVersion": "ArraySubsPro - Premium features for ArraySubs WooCommerce Subscription Plugin 1.3.1",
+          "potCreated": "2026-11-16T17:48:39+00:00",
+          "revised": "2026-11-16 17:49+0000",
+          "messageCount": 1996,
+          "missingMessages": [],
+          "obsoleteMessages": [],
+          "emptyTranslationCount": 0,
+          "fuzzyCount": 0,
+          "javaScriptMessageCount": 635,
+          "missingJavaScriptMessages": [],
+          "obsoleteJavaScriptMessages": [],
+          "emptyJavaScriptTranslationCount": 0
+        },
+        {
+          "locale": "ro_RO",
+          "projectVersion": "ArraySubsPro - Premium features for ArraySubs WooCommerce Subscription Plugin 1.3.1",
+          "potCreated": "2026-11-16T17:48:39+00:00",
+          "revised": "2026-11-16 17:49+0000",
+          "messageCount": 1996,
+          "missingMessages": [],
+          "obsoleteMessages": [],
+          "emptyTranslationCount": 0,
+          "fuzzyCount": 0,
+          "javaScriptMessageCount": 635,
+          "missingJavaScriptMessages": [],
+          "obsoleteJavaScriptMessages": [],
+          "emptyJavaScriptTranslationCount": 0
+        },
+        {
+          "locale": "sk_SK",
+          "projectVersion": "ArraySubsPro - Premium features for ArraySubs WooCommerce Subscription Plugin 1.3.1",
+          "potCreated": "2026-11-16T17:48:39+00:00",
+          "revised": "2026-11-16 17:49+0000",
+          "messageCount": 1996,
+          "missingMessages": [],
+          "obsoleteMessages": [],
+          "emptyTranslationCount": 0,
+          "fuzzyCount": 0,
+          "javaScriptMessageCount": 635,
+          "missingJavaScriptMessages": [],
+          "obsoleteJavaScriptMessages": [],
+          "emptyJavaScriptTranslationCount": 0
+        },
+        {
+          "locale": "sl_SI",
+          "projectVersion": "ArraySubsPro - Premium features for ArraySubs WooCommerce Subscription Plugin 1.3.1",
+          "potCreated": "2026-11-16T17:48:39+00:00",
+          "revised": "2026-11-16 17:49+0000",
+          "messageCount": 1996,
+          "missingMessages": [],
+          "obsoleteMessages": [],
+          "emptyTranslationCount": 0,
+          "fuzzyCount": 0,
+          "javaScriptMessageCount": 635,
+          "missingJavaScriptMessages": [],
+          "obsoleteJavaScriptMessages": [],
+          "emptyJavaScriptTranslationCount": 0
+        },
+        {
+          "locale": "sv_SE",
+          "projectVersion": "ArraySubsPro - Premium features for ArraySubs WooCommerce Subscription Plugin 1.3.1",
+          "potCreated": "2026-11-16T17:48:39+00:00",
+          "revised": "2026-11-16 17:49+0000",
+          "messageCount": 1996,
+          "missingMessages": [],
+          "obsoleteMessages": [],
+          "emptyTranslationCount": 0,
+          "fuzzyCount": 0,
+          "javaScriptMessageCount": 635,
+          "missingJavaScriptMessages": [],
+          "obsoleteJavaScriptMessages": [],
+          "emptyJavaScriptTranslationCount": 0
+        },
+        {
+          "locale": "th",
+          "projectVersion": "ArraySubsPro - Premium features for ArraySubs WooCommerce Subscription Plugin 1.3.1",
+          "potCreated": "2026-11-16T17:48:39+00:00",
+          "revised": "2026-11-16 17:49+0000",
+          "messageCount": 1996,
+          "missingMessages": [],
+          "obsoleteMessages": [],
+          "emptyTranslationCount": 0,
+          "fuzzyCount": 0,
+          "javaScriptMessageCount": 635,
+          "missingJavaScriptMessages": [],
+          "obsoleteJavaScriptMessages": [],
+          "emptyJavaScriptTranslationCount": 0
+        },
+        {
+          "locale": "uk",
+          "projectVersion": "ArraySubsPro - Premium features for ArraySubs WooCommerce Subscription Plugin 1.3.1",
+          "potCreated": "2026-11-16T17:48:39+00:00",
+          "revised": "2026-11-16 17:49+0000",
+          "messageCount": 1996,
+          "missingMessages": [],
+          "obsoleteMessages": [],
+          "emptyTranslationCount": 0,
+          "fuzzyCount": 0,
+          "javaScriptMessageCount": 635,
+          "missingJavaScriptMessages": [],
+          "obsoleteJavaScriptMessages": [],
+          "emptyJavaScriptTranslationCount": 0
+        },
+        {
+          "locale": "zh_CN",
+          "projectVersion": "ArraySubsPro - Premium features for ArraySubs WooCommerce Subscription Plugin 1.3.1",
+          "potCreated": "2026-11-16T17:48:39+00:00",
+          "revised": "2026-11-16 17:49+0000",
+          "messageCount": 1996,
+          "missingMessages": [],
+          "obsoleteMessages": [],
+          "emptyTranslationCount": 0,
+          "fuzzyCount": 0,
+          "javaScriptMessageCount": 635,
+          "missingJavaScriptMessages": [],
+          "obsoleteJavaScriptMessages": [],
+          "emptyJavaScriptTranslationCount": 0
+        },
+        {
+          "locale": "zh_TW",
+          "projectVersion": "ArraySubsPro - Premium features for ArraySubs WooCommerce Subscription Plugin 1.3.1",
+          "potCreated": "2026-11-16T17:48:39+00:00",
+          "revised": "2026-11-16 17:49+0000",
+          "messageCount": 1996,
+          "missingMessages": [],
+          "obsoleteMessages": [],
+          "emptyTranslationCount": 0,
+          "fuzzyCount": 0,
+          "javaScriptMessageCount": 635,
+          "missingJavaScriptMessages": [],
+          "obsoleteJavaScriptMessages": [],
+          "emptyJavaScriptTranslationCount": 0
+        }
+      ]
+    }
+  ],
+  "files": [
+    {
+      "member": "arraysubs/arraysubs-ar.json",
+      "sha256": "f3b908e3441ace81a5685b381e1fe6d2a3dc403582eb1af71eaff5a41198fa5f",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-ar.json",
+      "stagedSha256": "f3b908e3441ace81a5685b381e1fe6d2a3dc403582eb1af71eaff5a41198fa5f",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-ar.l10n.php",
+      "sha256": "cb55a256d4063bc7c0f5a787e3447d5f28e689b6460bc8558bc0319eb594d590",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-ar.l10n.php",
+      "stagedSha256": "cb55a256d4063bc7c0f5a787e3447d5f28e689b6460bc8558bc0319eb594d590",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-ar.mo",
+      "sha256": "1875ceccbf8ba8384c4daec354124d465bfdc72cd9629ce1b9288cde4417772d",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-ar.mo",
+      "stagedSha256": "1875ceccbf8ba8384c4daec354124d465bfdc72cd9629ce1b9288cde4417772d",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-ar.po",
+      "sha256": "c399ccdf75a6d2a867d39099cc401d2d8af827c1f561b6fc982d39acd1391787",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-ar.po",
+      "stagedSha256": "c399ccdf75a6d2a867d39099cc401d2d8af827c1f561b6fc982d39acd1391787",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-bg_BG.json",
+      "sha256": "836e95ff1dda12e90b632cbd186a9eae421084aabecc17fdce575af5aed57756",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-bg_BG.json",
+      "stagedSha256": "836e95ff1dda12e90b632cbd186a9eae421084aabecc17fdce575af5aed57756",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-bg_BG.l10n.php",
+      "sha256": "449297bff0d0d088b8f21a38912f6f9ca325631872447e68abaaed97cf8f8e4a",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-bg_BG.l10n.php",
+      "stagedSha256": "449297bff0d0d088b8f21a38912f6f9ca325631872447e68abaaed97cf8f8e4a",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-bg_BG.mo",
+      "sha256": "3258bf87d0291ad6f925c9962133c75e7f49377f2d29d510d3729fd21f48c74b",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-bg_BG.mo",
+      "stagedSha256": "3258bf87d0291ad6f925c9962133c75e7f49377f2d29d510d3729fd21f48c74b",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-bg_BG.po",
+      "sha256": "ab807606f12bf62ae7ab0a77d0635b03a15a39300d3257421aced9c06839bb66",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-bg_BG.po",
+      "stagedSha256": "ab807606f12bf62ae7ab0a77d0635b03a15a39300d3257421aced9c06839bb66",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-cs_CZ.json",
+      "sha256": "c0e2b9b2b35c2291ef85dc2b4f6fc993ef1f1f9fff35fabaa4c17665beb1aadb",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-cs_CZ.json",
+      "stagedSha256": "c0e2b9b2b35c2291ef85dc2b4f6fc993ef1f1f9fff35fabaa4c17665beb1aadb",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-cs_CZ.l10n.php",
+      "sha256": "7443f7619a1121ee95689e296989f6c91fe399f8d4c75fbb26f7669770858720",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-cs_CZ.l10n.php",
+      "stagedSha256": "7443f7619a1121ee95689e296989f6c91fe399f8d4c75fbb26f7669770858720",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-cs_CZ.mo",
+      "sha256": "295ce8aa7e29fdada45ece6e01199f72f6e9905a69155d791a47ac80bad5dff5",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-cs_CZ.mo",
+      "stagedSha256": "295ce8aa7e29fdada45ece6e01199f72f6e9905a69155d791a47ac80bad5dff5",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-cs_CZ.po",
+      "sha256": "1faea149448f1711387b4c7ed55231b3bfe754ed932c7b698fd67d6bc508172e",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-cs_CZ.po",
+      "stagedSha256": "1faea149448f1711387b4c7ed55231b3bfe754ed932c7b698fd67d6bc508172e",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-da_DK.json",
+      "sha256": "9e018769185c075ce1fe8a90af44bb2cdb99d8e2459618cbf245f10f5941f1d4",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-da_DK.json",
+      "stagedSha256": "9e018769185c075ce1fe8a90af44bb2cdb99d8e2459618cbf245f10f5941f1d4",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-da_DK.l10n.php",
+      "sha256": "9975a57c21d2860a5ebbdadb3b1a910daddf02248906dae58eac9b23dec9ee8a",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-da_DK.l10n.php",
+      "stagedSha256": "9975a57c21d2860a5ebbdadb3b1a910daddf02248906dae58eac9b23dec9ee8a",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-da_DK.mo",
+      "sha256": "dd226cd56e0ccb970b0f60d93a8037addf417148ff34c7fbc48683e31a03941b",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-da_DK.mo",
+      "stagedSha256": "dd226cd56e0ccb970b0f60d93a8037addf417148ff34c7fbc48683e31a03941b",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-da_DK.po",
+      "sha256": "99021b7169726e1424d3feff26c7610fc7bbbda6cb1a0e95c077d5bb6171b21f",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-da_DK.po",
+      "stagedSha256": "99021b7169726e1424d3feff26c7610fc7bbbda6cb1a0e95c077d5bb6171b21f",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-de_DE.json",
+      "sha256": "bf495a497c2fd186b718f617a3d4e3be6732c97c16eb35fe1e5e828d47c5eb5a",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-de_DE.json",
+      "stagedSha256": "bf495a497c2fd186b718f617a3d4e3be6732c97c16eb35fe1e5e828d47c5eb5a",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-de_DE.l10n.php",
+      "sha256": "e6edfc6524583579923249249564b3ddb1e70bc7cc8207d5169771bdf83af29b",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-de_DE.l10n.php",
+      "stagedSha256": "e6edfc6524583579923249249564b3ddb1e70bc7cc8207d5169771bdf83af29b",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-de_DE.mo",
+      "sha256": "83597c0052dc57c59d6a1fc7ef163f93168c6e8c5c042ae051e59c525dc7a270",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-de_DE.mo",
+      "stagedSha256": "83597c0052dc57c59d6a1fc7ef163f93168c6e8c5c042ae051e59c525dc7a270",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-de_DE.po",
+      "sha256": "78aaef6ed7c6f67918126e37f72b7152cb6d64fb831de2d198d2c9b95cd895aa",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-de_DE.po",
+      "stagedSha256": "78aaef6ed7c6f67918126e37f72b7152cb6d64fb831de2d198d2c9b95cd895aa",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-el.json",
+      "sha256": "7fa72f617959663ae39d0e17f3506825ea30cff35d5a92f2f09e7f98eaebb518",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-el.json",
+      "stagedSha256": "7fa72f617959663ae39d0e17f3506825ea30cff35d5a92f2f09e7f98eaebb518",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-el.l10n.php",
+      "sha256": "497b95cfc1969179d395cb9fa5d24e12805f9843cf6ed766ba50e37931e32bee",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-el.l10n.php",
+      "stagedSha256": "497b95cfc1969179d395cb9fa5d24e12805f9843cf6ed766ba50e37931e32bee",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-el.mo",
+      "sha256": "c45e8e1362ee9339768cc3d939b33c32ce83c1eb5a4857ff497f500220c56800",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-el.mo",
+      "stagedSha256": "c45e8e1362ee9339768cc3d939b33c32ce83c1eb5a4857ff497f500220c56800",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-el.po",
+      "sha256": "622ac518b74e7df6c470a05b6c958c8d09b1dcfa04498da876eebbe500c674b5",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-el.po",
+      "stagedSha256": "622ac518b74e7df6c470a05b6c958c8d09b1dcfa04498da876eebbe500c674b5",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-es_ES.json",
+      "sha256": "ba42ea757f51fd2e682d706cb58298e74dea482fde9048b9c88e4d1e056bb54f",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-es_ES.json",
+      "stagedSha256": "ba42ea757f51fd2e682d706cb58298e74dea482fde9048b9c88e4d1e056bb54f",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-es_ES.l10n.php",
+      "sha256": "b5a56638f9dd8d90b8a07a3b4a815a2b4a4c19a04095c0320ec8ce2eb32254ba",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-es_ES.l10n.php",
+      "stagedSha256": "b5a56638f9dd8d90b8a07a3b4a815a2b4a4c19a04095c0320ec8ce2eb32254ba",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-es_ES.mo",
+      "sha256": "113f3cd15ec538319d5f8fb3e41916344f706bc47633a0d7de3e4af7b75bd3ca",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-es_ES.mo",
+      "stagedSha256": "113f3cd15ec538319d5f8fb3e41916344f706bc47633a0d7de3e4af7b75bd3ca",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-es_ES.po",
+      "sha256": "813fad295ed298a31c26c75f404008b3299dd0965d104d93371f32ee5511d496",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-es_ES.po",
+      "stagedSha256": "813fad295ed298a31c26c75f404008b3299dd0965d104d93371f32ee5511d496",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-et.json",
+      "sha256": "3be8b260854dd54401bbef78feb191d902ec346482bb4ec4cc4aadd5da93d9f1",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-et.json",
+      "stagedSha256": "3be8b260854dd54401bbef78feb191d902ec346482bb4ec4cc4aadd5da93d9f1",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-et.l10n.php",
+      "sha256": "dc2e441ac1300ee972f2805ce86445958712c6f4b79110a08ef5bb3cef4c4619",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-et.l10n.php",
+      "stagedSha256": "dc2e441ac1300ee972f2805ce86445958712c6f4b79110a08ef5bb3cef4c4619",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-et.mo",
+      "sha256": "26759cdb8d2fae619665018dcf2fc84b7a3f7f1a63c6398fbbe8dbe89ab69c88",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-et.mo",
+      "stagedSha256": "26759cdb8d2fae619665018dcf2fc84b7a3f7f1a63c6398fbbe8dbe89ab69c88",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-et.po",
+      "sha256": "b844b84b90fe0baad9369a3416265267f517b9f8bb979808e15ea80f5907e378",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-et.po",
+      "stagedSha256": "b844b84b90fe0baad9369a3416265267f517b9f8bb979808e15ea80f5907e378",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-fi.json",
+      "sha256": "9ceac8b83388821cd6e04f0ce8f8c018ed84dd8a6ff26e04cb96784731407ef1",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-fi.json",
+      "stagedSha256": "9ceac8b83388821cd6e04f0ce8f8c018ed84dd8a6ff26e04cb96784731407ef1",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-fi.l10n.php",
+      "sha256": "96c66cfd10829654d59d0e83dad72dfc71b247039439777590718c61fede44fa",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-fi.l10n.php",
+      "stagedSha256": "96c66cfd10829654d59d0e83dad72dfc71b247039439777590718c61fede44fa",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-fi.mo",
+      "sha256": "a175790ea7dcde861fae7c3ee7dfd34ec977a50bd234ec7690dff088410a846c",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-fi.mo",
+      "stagedSha256": "a175790ea7dcde861fae7c3ee7dfd34ec977a50bd234ec7690dff088410a846c",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-fi.po",
+      "sha256": "c86eece8bca747980c618865cbf51794cd6f67984d2453e8bd07c1850f91e39e",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-fi.po",
+      "stagedSha256": "c86eece8bca747980c618865cbf51794cd6f67984d2453e8bd07c1850f91e39e",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-fr_FR.json",
+      "sha256": "d6785fc194026eca4c35bce2cda752115b6d5d8b44dfe92ce62cb431b0713556",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-fr_FR.json",
+      "stagedSha256": "d6785fc194026eca4c35bce2cda752115b6d5d8b44dfe92ce62cb431b0713556",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-fr_FR.l10n.php",
+      "sha256": "fde0048143821cc10c273fa623e7e45c0ebccacaa0a6c03ea070c7613996df3e",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-fr_FR.l10n.php",
+      "stagedSha256": "fde0048143821cc10c273fa623e7e45c0ebccacaa0a6c03ea070c7613996df3e",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-fr_FR.mo",
+      "sha256": "9461a5d4f1070852d2c089cb6003399f4a8d90692ebd5cf1b24cd905cc69527c",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-fr_FR.mo",
+      "stagedSha256": "9461a5d4f1070852d2c089cb6003399f4a8d90692ebd5cf1b24cd905cc69527c",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-fr_FR.po",
+      "sha256": "6da2b46893e4a4bc98e3c495f836a0c644d2b85957ee85f01a0902b8df4ef553",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-fr_FR.po",
+      "stagedSha256": "6da2b46893e4a4bc98e3c495f836a0c644d2b85957ee85f01a0902b8df4ef553",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-ga.json",
+      "sha256": "de66f03940068ede84da3fe2dbf8a7737898705fcb0e360f4c8047593eeb599a",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-ga.json",
+      "stagedSha256": "de66f03940068ede84da3fe2dbf8a7737898705fcb0e360f4c8047593eeb599a",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-ga.l10n.php",
+      "sha256": "632e9bfb8dcb28b1230d18ea678add302d90c7ed02995400e74cf3bbcd8d7589",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-ga.l10n.php",
+      "stagedSha256": "632e9bfb8dcb28b1230d18ea678add302d90c7ed02995400e74cf3bbcd8d7589",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-ga.mo",
+      "sha256": "f0da598ae8aa111f6e75b533b7b49227609ffa4c2f3dd83d121e7caefe0f4613",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-ga.mo",
+      "stagedSha256": "f0da598ae8aa111f6e75b533b7b49227609ffa4c2f3dd83d121e7caefe0f4613",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-ga.po",
+      "sha256": "5242504143c00cdc23dc8aeff7d331f4ef35173ec5a9adce29126f2f6c68785f",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-ga.po",
+      "stagedSha256": "5242504143c00cdc23dc8aeff7d331f4ef35173ec5a9adce29126f2f6c68785f",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-he_IL.json",
+      "sha256": "e321cf4890857663ce843fc52d21e34e03866b7dc5f0a0c72ce5a11e8105dfed",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-he_IL.json",
+      "stagedSha256": "e321cf4890857663ce843fc52d21e34e03866b7dc5f0a0c72ce5a11e8105dfed",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-he_IL.l10n.php",
+      "sha256": "30b11afe36796f51994b18173678bb88f49de5ade7826442330a44b40e9c61da",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-he_IL.l10n.php",
+      "stagedSha256": "30b11afe36796f51994b18173678bb88f49de5ade7826442330a44b40e9c61da",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-he_IL.mo",
+      "sha256": "4dc480ffb1c79094321111b0b8691900cec99f823a1bd577b157d8fd96b2e383",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-he_IL.mo",
+      "stagedSha256": "4dc480ffb1c79094321111b0b8691900cec99f823a1bd577b157d8fd96b2e383",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-he_IL.po",
+      "sha256": "be15e2a25feeea3e93dae386cd64fcde5fef2d849b50dc8fd173671d98234114",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-he_IL.po",
+      "stagedSha256": "be15e2a25feeea3e93dae386cd64fcde5fef2d849b50dc8fd173671d98234114",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-hr.json",
+      "sha256": "6b5c8f92917c3763954f0568572baf1d91327ff84caa811f66b28222062746c4",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-hr.json",
+      "stagedSha256": "6b5c8f92917c3763954f0568572baf1d91327ff84caa811f66b28222062746c4",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-hr.l10n.php",
+      "sha256": "7c56212e8925708058320d0c938f13920dff27b07dc9c3b21647673d6da63e61",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-hr.l10n.php",
+      "stagedSha256": "7c56212e8925708058320d0c938f13920dff27b07dc9c3b21647673d6da63e61",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-hr.mo",
+      "sha256": "1c2844c52ee363637329b9aed1bd440270043b9e51818c1fc75864e7fc17dac9",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-hr.mo",
+      "stagedSha256": "1c2844c52ee363637329b9aed1bd440270043b9e51818c1fc75864e7fc17dac9",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-hr.po",
+      "sha256": "40a4ad0cc1044f2ca77a7271bf1e28a32b8573d1a30411a91d790e8cbe7703aa",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-hr.po",
+      "stagedSha256": "40a4ad0cc1044f2ca77a7271bf1e28a32b8573d1a30411a91d790e8cbe7703aa",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-hu_HU.json",
+      "sha256": "6442d0ca740a9d89de3ffedcf973662d8b29e309a032a7cfd6c35f603f24e113",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-hu_HU.json",
+      "stagedSha256": "6442d0ca740a9d89de3ffedcf973662d8b29e309a032a7cfd6c35f603f24e113",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-hu_HU.l10n.php",
+      "sha256": "43e43aef167142ee4abd7d1afe465f70a976d27c540a9517d5fd6977f8d8b6e4",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-hu_HU.l10n.php",
+      "stagedSha256": "43e43aef167142ee4abd7d1afe465f70a976d27c540a9517d5fd6977f8d8b6e4",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-hu_HU.mo",
+      "sha256": "2755d89448e662d526c3b2f038646d99c8cc7e2abde6ec40ca9f3188baa83dd9",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-hu_HU.mo",
+      "stagedSha256": "2755d89448e662d526c3b2f038646d99c8cc7e2abde6ec40ca9f3188baa83dd9",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-hu_HU.po",
+      "sha256": "a6c7bdb9c116254582ff8be3f4d6cc29fcbb972bf362b0e66dd745bba9960d17",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-hu_HU.po",
+      "stagedSha256": "a6c7bdb9c116254582ff8be3f4d6cc29fcbb972bf362b0e66dd745bba9960d17",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-id_ID.json",
+      "sha256": "21f9e8fccf2aa3a60b0d824172b7a8cfdc466d0a0a3d9af8be02d4b3551f40fa",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-id_ID.json",
+      "stagedSha256": "21f9e8fccf2aa3a60b0d824172b7a8cfdc466d0a0a3d9af8be02d4b3551f40fa",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-id_ID.l10n.php",
+      "sha256": "ac0686a7f938f7e1ceef07eca52962f2b766b85ea493b947b6da779c32c9e9c1",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-id_ID.l10n.php",
+      "stagedSha256": "ac0686a7f938f7e1ceef07eca52962f2b766b85ea493b947b6da779c32c9e9c1",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-id_ID.mo",
+      "sha256": "17eb52e52f4d98fcf0f08cc85dd3be5a1fba2bcdec564612d0c4fe7b30f808a2",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-id_ID.mo",
+      "stagedSha256": "17eb52e52f4d98fcf0f08cc85dd3be5a1fba2bcdec564612d0c4fe7b30f808a2",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-id_ID.po",
+      "sha256": "333237eee1478f53604e2d19d4c6855e6182211c1d47c6de94bc1eb194b2b77a",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-id_ID.po",
+      "stagedSha256": "333237eee1478f53604e2d19d4c6855e6182211c1d47c6de94bc1eb194b2b77a",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-it_IT.json",
+      "sha256": "b08e8f27994c66d811a86fe3d7085f240b75c476735040bb511bff95aa49c362",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-it_IT.json",
+      "stagedSha256": "b08e8f27994c66d811a86fe3d7085f240b75c476735040bb511bff95aa49c362",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-it_IT.l10n.php",
+      "sha256": "70c40d7e61ec1ca7ae9c4f0ebfb5563c2eb356d9072ee764c134732218b16b9c",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-it_IT.l10n.php",
+      "stagedSha256": "70c40d7e61ec1ca7ae9c4f0ebfb5563c2eb356d9072ee764c134732218b16b9c",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-it_IT.mo",
+      "sha256": "402ca7436240bb81af6c7ec4ffae416f3d2f4cfda84a62a65db5ed3e699a69d6",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-it_IT.mo",
+      "stagedSha256": "402ca7436240bb81af6c7ec4ffae416f3d2f4cfda84a62a65db5ed3e699a69d6",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-it_IT.po",
+      "sha256": "0b4514cc7f5daf3b6fa5808cb0145e935c4a2efb9c19796004961de5aeb32dab",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-it_IT.po",
+      "stagedSha256": "0b4514cc7f5daf3b6fa5808cb0145e935c4a2efb9c19796004961de5aeb32dab",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-lt_LT.json",
+      "sha256": "f6e7dc9a1f45d6910dc1e191f09ab4a9e9c27d4bf44f82020a2b06be2b5cf740",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-lt_LT.json",
+      "stagedSha256": "f6e7dc9a1f45d6910dc1e191f09ab4a9e9c27d4bf44f82020a2b06be2b5cf740",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-lt_LT.l10n.php",
+      "sha256": "3a07d81f4dd5bea77183f2fda4fc21f3c86021492fcab4c25e04f4237c12aa94",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-lt_LT.l10n.php",
+      "stagedSha256": "3a07d81f4dd5bea77183f2fda4fc21f3c86021492fcab4c25e04f4237c12aa94",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-lt_LT.mo",
+      "sha256": "69a28c293e64b992a4449671d3e3d605e4396a5af1569851689326839bcfde88",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-lt_LT.mo",
+      "stagedSha256": "69a28c293e64b992a4449671d3e3d605e4396a5af1569851689326839bcfde88",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-lt_LT.po",
+      "sha256": "537198ec55718d7eb072d4e587d974e27966be92f9a8579e3d74dcff5056a8dd",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-lt_LT.po",
+      "stagedSha256": "537198ec55718d7eb072d4e587d974e27966be92f9a8579e3d74dcff5056a8dd",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-lv.json",
+      "sha256": "21fa3d5460699f602398779e6854b5eb1d08151312a479236c01251608fbce0e",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-lv.json",
+      "stagedSha256": "21fa3d5460699f602398779e6854b5eb1d08151312a479236c01251608fbce0e",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-lv.l10n.php",
+      "sha256": "e5534e292730dad8582585a50e403861fd09099e6936bc7a58369582dbd56e0b",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-lv.l10n.php",
+      "stagedSha256": "e5534e292730dad8582585a50e403861fd09099e6936bc7a58369582dbd56e0b",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-lv.mo",
+      "sha256": "f1da93606120e9f12410b226cc9876d8e71f5bf48efc369ba6142ee3c7620118",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-lv.mo",
+      "stagedSha256": "f1da93606120e9f12410b226cc9876d8e71f5bf48efc369ba6142ee3c7620118",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-lv.po",
+      "sha256": "462151122d9fb64ded53b031618745a0c617f115a09f7d47e16625094d609b75",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-lv.po",
+      "stagedSha256": "462151122d9fb64ded53b031618745a0c617f115a09f7d47e16625094d609b75",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-mlt.json",
+      "sha256": "0936dd5a00c87787b00b2e7f120345d16dea5d4a63b6f0f4c1777b4647193105",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-mlt.json",
+      "stagedSha256": "0936dd5a00c87787b00b2e7f120345d16dea5d4a63b6f0f4c1777b4647193105",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-mlt.l10n.php",
+      "sha256": "25830f95cbe5e16f2c97dcbe3825aec4c03c9774d69e6bdd5de0c90698532580",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-mlt.l10n.php",
+      "stagedSha256": "25830f95cbe5e16f2c97dcbe3825aec4c03c9774d69e6bdd5de0c90698532580",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-mlt.mo",
+      "sha256": "46e9fa84065ed93934fe1ff85ee3217dfbe58d83f47d4dec5897175c07689ff9",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-mlt.mo",
+      "stagedSha256": "46e9fa84065ed93934fe1ff85ee3217dfbe58d83f47d4dec5897175c07689ff9",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-mlt.po",
+      "sha256": "995d599deb89424766ba55f52fa58e571b99cc8f83277bb6103169f82402fa20",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-mlt.po",
+      "stagedSha256": "995d599deb89424766ba55f52fa58e571b99cc8f83277bb6103169f82402fa20",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-nl_NL.json",
+      "sha256": "4789550ed861a45741e5b5ad736b752fcf81ff0a5367cb66dc816867572dd9fe",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-nl_NL.json",
+      "stagedSha256": "4789550ed861a45741e5b5ad736b752fcf81ff0a5367cb66dc816867572dd9fe",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-nl_NL.l10n.php",
+      "sha256": "bb37cb311c4f3009422950464593961911630bde24676157ae42eb63d8d8adb5",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-nl_NL.l10n.php",
+      "stagedSha256": "bb37cb311c4f3009422950464593961911630bde24676157ae42eb63d8d8adb5",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-nl_NL.mo",
+      "sha256": "20b04036af5cf741efedbb81098ba1211f09a83023e873adf76f01e3441885cc",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-nl_NL.mo",
+      "stagedSha256": "20b04036af5cf741efedbb81098ba1211f09a83023e873adf76f01e3441885cc",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-nl_NL.po",
+      "sha256": "d91cc29496a0f17b98e31fab44fbb89c71706d4dd8b1d0f0048246924387444e",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-nl_NL.po",
+      "stagedSha256": "d91cc29496a0f17b98e31fab44fbb89c71706d4dd8b1d0f0048246924387444e",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-pl_PL.json",
+      "sha256": "aaa85d0c858fe29b69c03370cee2b0d820f05f5791a9c0f2257bf26e34b116df",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-pl_PL.json",
+      "stagedSha256": "aaa85d0c858fe29b69c03370cee2b0d820f05f5791a9c0f2257bf26e34b116df",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-pl_PL.l10n.php",
+      "sha256": "bfc94dfbd6f9c937a9d55b625f67d0f883e14fb3511dbb25c39a6e0a05f98fb4",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-pl_PL.l10n.php",
+      "stagedSha256": "bfc94dfbd6f9c937a9d55b625f67d0f883e14fb3511dbb25c39a6e0a05f98fb4",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-pl_PL.mo",
+      "sha256": "f687211aa59913ee2cd41c3a12904c9b018a10c102db233d3bdaae40d0035a3a",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-pl_PL.mo",
+      "stagedSha256": "f687211aa59913ee2cd41c3a12904c9b018a10c102db233d3bdaae40d0035a3a",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-pl_PL.po",
+      "sha256": "90aab0ce423eeb9f3698811c367c2a9167d9a1c8f7daea59c752f3eaeef24e98",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-pl_PL.po",
+      "stagedSha256": "90aab0ce423eeb9f3698811c367c2a9167d9a1c8f7daea59c752f3eaeef24e98",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-pt_PT.json",
+      "sha256": "03eafd3db23cf84ce3b1ef856b8fa9b0cf6bc40fb741f149e37f7d6c87d8d363",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-pt_PT.json",
+      "stagedSha256": "03eafd3db23cf84ce3b1ef856b8fa9b0cf6bc40fb741f149e37f7d6c87d8d363",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-pt_PT.l10n.php",
+      "sha256": "45639d51d236974c966584a15209ea2d6ffa34986c615789682a848f1f8dad1a",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-pt_PT.l10n.php",
+      "stagedSha256": "45639d51d236974c966584a15209ea2d6ffa34986c615789682a848f1f8dad1a",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-pt_PT.mo",
+      "sha256": "77ae39decd095e6ace50c201ae4682ad0b278aa193ef0e0a258ef7eb813fd37f",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-pt_PT.mo",
+      "stagedSha256": "77ae39decd095e6ace50c201ae4682ad0b278aa193ef0e0a258ef7eb813fd37f",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-pt_PT.po",
+      "sha256": "1adcd99a541f4460676d3d380eb7c5ac220a3bf10e58d989f8c1657b14299129",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-pt_PT.po",
+      "stagedSha256": "1adcd99a541f4460676d3d380eb7c5ac220a3bf10e58d989f8c1657b14299129",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-ro_RO.json",
+      "sha256": "349f4cc5a77a131f247c9741f08cd55cf6f3e50815b341c7f273d1406492a8ab",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-ro_RO.json",
+      "stagedSha256": "349f4cc5a77a131f247c9741f08cd55cf6f3e50815b341c7f273d1406492a8ab",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-ro_RO.l10n.php",
+      "sha256": "347cbb04a0ee63f9bd2b969169eb858e668e22b0eabf7c75dfd7969f2c504403",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-ro_RO.l10n.php",
+      "stagedSha256": "347cbb04a0ee63f9bd2b969169eb858e668e22b0eabf7c75dfd7969f2c504403",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-ro_RO.mo",
+      "sha256": "6be48f5b60986d7073f7024edff5caf3724e471d0123ed4e53d9f0b54bc76d1f",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-ro_RO.mo",
+      "stagedSha256": "6be48f5b60986d7073f7024edff5caf3724e471d0123ed4e53d9f0b54bc76d1f",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-ro_RO.po",
+      "sha256": "8f913256c2fd49cb6af8d12370035cecda45156a2d8a10654928a0687006ae41",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-ro_RO.po",
+      "stagedSha256": "8f913256c2fd49cb6af8d12370035cecda45156a2d8a10654928a0687006ae41",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-sk_SK.json",
+      "sha256": "7c5c1b1bab84b7463b3d922f13a113025b800b60cf55b4d233057a37c7f13dc2",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-sk_SK.json",
+      "stagedSha256": "7c5c1b1bab84b7463b3d922f13a113025b800b60cf55b4d233057a37c7f13dc2",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-sk_SK.l10n.php",
+      "sha256": "9155b6841bc72303213c07f5b25eb136c437c6beca2a7dea5909c63435894e77",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-sk_SK.l10n.php",
+      "stagedSha256": "9155b6841bc72303213c07f5b25eb136c437c6beca2a7dea5909c63435894e77",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-sk_SK.mo",
+      "sha256": "5cceb05e7c014c568a5e5aa26a5692ff270e27f662aace49cae551e72c8fe6a7",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-sk_SK.mo",
+      "stagedSha256": "5cceb05e7c014c568a5e5aa26a5692ff270e27f662aace49cae551e72c8fe6a7",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-sk_SK.po",
+      "sha256": "12e3a8da9651ab8eb8ef2f45c0e43f9f6f1ca5c2ce5feecf9d9320a64ec32ddb",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-sk_SK.po",
+      "stagedSha256": "12e3a8da9651ab8eb8ef2f45c0e43f9f6f1ca5c2ce5feecf9d9320a64ec32ddb",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-sl_SI.json",
+      "sha256": "2f2363ef3804b5ef5bf250d9be23cb8c8632353411f0ebe0a694f2408b6ecb10",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-sl_SI.json",
+      "stagedSha256": "2f2363ef3804b5ef5bf250d9be23cb8c8632353411f0ebe0a694f2408b6ecb10",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-sl_SI.l10n.php",
+      "sha256": "3b88ffa5ea1b6ce5067a4d32cd0872a466f1b1acaa90ef98f56f2694f624af4a",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-sl_SI.l10n.php",
+      "stagedSha256": "3b88ffa5ea1b6ce5067a4d32cd0872a466f1b1acaa90ef98f56f2694f624af4a",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-sl_SI.mo",
+      "sha256": "7d133b5a568a9cd5848325fd5a86c210e34df02cdd536d00a5db6c5709975363",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-sl_SI.mo",
+      "stagedSha256": "7d133b5a568a9cd5848325fd5a86c210e34df02cdd536d00a5db6c5709975363",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-sl_SI.po",
+      "sha256": "e481801546cf3816d2dcdbb0976a7acb7657ace48373655e00ac0cec2e0aebfd",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-sl_SI.po",
+      "stagedSha256": "e481801546cf3816d2dcdbb0976a7acb7657ace48373655e00ac0cec2e0aebfd",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-sv_SE.json",
+      "sha256": "897d258085cb89c515e8b96026ba41b057d0cc03b236a3fd1eb51f1eae116fe8",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-sv_SE.json",
+      "stagedSha256": "897d258085cb89c515e8b96026ba41b057d0cc03b236a3fd1eb51f1eae116fe8",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-sv_SE.l10n.php",
+      "sha256": "00c00bcec6f71f754e228eb1f75ed06d92e6c245dc0148d5851414aa3b22df26",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-sv_SE.l10n.php",
+      "stagedSha256": "00c00bcec6f71f754e228eb1f75ed06d92e6c245dc0148d5851414aa3b22df26",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-sv_SE.mo",
+      "sha256": "bc7187fad41103a7e3160f47170c3a6d24740eb9f06e10e34cc6c0ef2649929c",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-sv_SE.mo",
+      "stagedSha256": "bc7187fad41103a7e3160f47170c3a6d24740eb9f06e10e34cc6c0ef2649929c",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-sv_SE.po",
+      "sha256": "b9982fe82d6eebb50524fd5e4b7bb859ac923bb0d9eb56435bc32b2683a762d5",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-sv_SE.po",
+      "stagedSha256": "b9982fe82d6eebb50524fd5e4b7bb859ac923bb0d9eb56435bc32b2683a762d5",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-th.json",
+      "sha256": "16249f47a8de98f14b25f5b666eb9c5f9cb079419b6ae8480b2e0b30b684a0b2",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-th.json",
+      "stagedSha256": "16249f47a8de98f14b25f5b666eb9c5f9cb079419b6ae8480b2e0b30b684a0b2",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-th.l10n.php",
+      "sha256": "f90955b87ebb4c1d2b28a6ca4c31d285ed8e19704eb0500caf5c2e1e2f489e86",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-th.l10n.php",
+      "stagedSha256": "f90955b87ebb4c1d2b28a6ca4c31d285ed8e19704eb0500caf5c2e1e2f489e86",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-th.mo",
+      "sha256": "cc0151a263009f3f15d0168999db42f19fdac3bf563ef4fa2f7802d06a5528da",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-th.mo",
+      "stagedSha256": "cc0151a263009f3f15d0168999db42f19fdac3bf563ef4fa2f7802d06a5528da",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-th.po",
+      "sha256": "67a8b2de642b5a879f051788e8d46aeedfed7e192e31369856ebcfc001c95b52",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-th.po",
+      "stagedSha256": "67a8b2de642b5a879f051788e8d46aeedfed7e192e31369856ebcfc001c95b52",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-uk.json",
+      "sha256": "4849407478cff2dda189bdd63284ed8619e0cb4dc99d5e0c0fcefe1677e9d4f7",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-uk.json",
+      "stagedSha256": "4849407478cff2dda189bdd63284ed8619e0cb4dc99d5e0c0fcefe1677e9d4f7",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-uk.l10n.php",
+      "sha256": "e1c99b65cb57fe275b21d2e6301ad38859b006871d77dea9d3ddca6ccd5fb661",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-uk.l10n.php",
+      "stagedSha256": "e1c99b65cb57fe275b21d2e6301ad38859b006871d77dea9d3ddca6ccd5fb661",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-uk.mo",
+      "sha256": "3c871e5a4b877c2466097898e76e35b9893eeb2f045fa4e9b1522100b31d25b6",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-uk.mo",
+      "stagedSha256": "3c871e5a4b877c2466097898e76e35b9893eeb2f045fa4e9b1522100b31d25b6",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-uk.po",
+      "sha256": "d08267b8fabb695c097d90bf4454f6d3e93a346ab16022e797092bcdd61cfe14",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-uk.po",
+      "stagedSha256": "d08267b8fabb695c097d90bf4454f6d3e93a346ab16022e797092bcdd61cfe14",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-zh_CN.json",
+      "sha256": "a06924b6d5aa07158b9224f2b2911bd56d9bd2bb3098756939079341b386ec19",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-zh_CN.json",
+      "stagedSha256": "a06924b6d5aa07158b9224f2b2911bd56d9bd2bb3098756939079341b386ec19",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-zh_CN.l10n.php",
+      "sha256": "7d2a763c846926c2d5d3a7736415c8a7fc2f53e0457306aebe84b990c97d5e1b",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-zh_CN.l10n.php",
+      "stagedSha256": "7d2a763c846926c2d5d3a7736415c8a7fc2f53e0457306aebe84b990c97d5e1b",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-zh_CN.mo",
+      "sha256": "4f9a5cd35535b63bf3f4376124cbdea27afa1d728cc4fd3c05e28b340633d9fd",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-zh_CN.mo",
+      "stagedSha256": "4f9a5cd35535b63bf3f4376124cbdea27afa1d728cc4fd3c05e28b340633d9fd",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-zh_CN.po",
+      "sha256": "a531591bfeae86ffef9a16db69ec28190e29f04ab6307a5fef54cdd3f23635f7",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-zh_CN.po",
+      "stagedSha256": "a531591bfeae86ffef9a16db69ec28190e29f04ab6307a5fef54cdd3f23635f7",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-zh_TW.json",
+      "sha256": "4c58e3e2ac1f2f591df6647ee30878c23029aa405fa7c2a16cb89dc843c0d54d",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-zh_TW.json",
+      "stagedSha256": "4c58e3e2ac1f2f591df6647ee30878c23029aa405fa7c2a16cb89dc843c0d54d",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-zh_TW.l10n.php",
+      "sha256": "6b359c545f9210740ae9b0d99f79750fa525d6c4ae13d2413d87f45a3643ef03",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-zh_TW.l10n.php",
+      "stagedSha256": "6b359c545f9210740ae9b0d99f79750fa525d6c4ae13d2413d87f45a3643ef03",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-zh_TW.mo",
+      "sha256": "442386d2cc9524f8c5f28f29009ab4a23193fca6407752d9e6a8626309f9e126",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-zh_TW.mo",
+      "stagedSha256": "442386d2cc9524f8c5f28f29009ab4a23193fca6407752d9e6a8626309f9e126",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubs/arraysubs-zh_TW.po",
+      "sha256": "ec2171d824f9266446706f529d358aa86973952f80fe61c80959f4ee800c6564",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubs/arraysubs-zh_TW.po",
+      "stagedSha256": "ec2171d824f9266446706f529d358aa86973952f80fe61c80959f4ee800c6564",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-ar.json",
+      "sha256": "f192706ec8fde9a0d277a36c55ee37262061827eb924ccd75d8c0a7ea3afe148",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-ar.json",
+      "stagedSha256": "f192706ec8fde9a0d277a36c55ee37262061827eb924ccd75d8c0a7ea3afe148",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-ar.l10n.php",
+      "sha256": "88e64dc302081f8fc9f18e7b6851ded464d6288b19be5b2cb946af458bcf36f5",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-ar.l10n.php",
+      "stagedSha256": "88e64dc302081f8fc9f18e7b6851ded464d6288b19be5b2cb946af458bcf36f5",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-ar.mo",
+      "sha256": "2052739d74112e4c93b11274021202ed750845994dd203f3a892574c5a3fe475",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-ar.mo",
+      "stagedSha256": "2052739d74112e4c93b11274021202ed750845994dd203f3a892574c5a3fe475",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-ar.po",
+      "sha256": "24a03e7da656c0ab0f89686829e6e0846a58f27fc4f11cb43507b30600aa7d06",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-ar.po",
+      "stagedSha256": "24a03e7da656c0ab0f89686829e6e0846a58f27fc4f11cb43507b30600aa7d06",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-bg_BG.json",
+      "sha256": "33b78a3767ca9cc6bd0f966d8bf007a1d809230dfb0fb7ea8b315019bb98ee03",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-bg_BG.json",
+      "stagedSha256": "33b78a3767ca9cc6bd0f966d8bf007a1d809230dfb0fb7ea8b315019bb98ee03",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-bg_BG.l10n.php",
+      "sha256": "3f47a519d1ee10e6d62d48f6d0f6202adec5629bb31e90a69f3a5d53fa222985",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-bg_BG.l10n.php",
+      "stagedSha256": "3f47a519d1ee10e6d62d48f6d0f6202adec5629bb31e90a69f3a5d53fa222985",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-bg_BG.mo",
+      "sha256": "01c3e57a12d0181e0df34cf232bf35b19eb71e6c00dec57c462781a14f8d67fc",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-bg_BG.mo",
+      "stagedSha256": "01c3e57a12d0181e0df34cf232bf35b19eb71e6c00dec57c462781a14f8d67fc",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-bg_BG.po",
+      "sha256": "58ae2b42cd81d96a70e25d0d5b0bc8bbaf6a830870caf82d7a6fa34aced18343",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-bg_BG.po",
+      "stagedSha256": "58ae2b42cd81d96a70e25d0d5b0bc8bbaf6a830870caf82d7a6fa34aced18343",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-cs_CZ.json",
+      "sha256": "29172690bc4183301514cfa088f6d1b6530fbd55492fe7b574e8effe0bb4648c",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-cs_CZ.json",
+      "stagedSha256": "29172690bc4183301514cfa088f6d1b6530fbd55492fe7b574e8effe0bb4648c",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-cs_CZ.l10n.php",
+      "sha256": "7cefd5c5a0a242932aed90ad90f263ba976fdfc79168c5001ea956d6666b4d5e",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-cs_CZ.l10n.php",
+      "stagedSha256": "7cefd5c5a0a242932aed90ad90f263ba976fdfc79168c5001ea956d6666b4d5e",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-cs_CZ.mo",
+      "sha256": "7d09b4f59c39cdac6c7c41879970e1087a14f2e0eda80ba9b7e6e5f13d9ae0e8",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-cs_CZ.mo",
+      "stagedSha256": "7d09b4f59c39cdac6c7c41879970e1087a14f2e0eda80ba9b7e6e5f13d9ae0e8",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-cs_CZ.po",
+      "sha256": "cc7beade653837bd77f3c625771133d656c6054f5c67d16cbba754589adf9a4b",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-cs_CZ.po",
+      "stagedSha256": "cc7beade653837bd77f3c625771133d656c6054f5c67d16cbba754589adf9a4b",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-da_DK.json",
+      "sha256": "8d10b7a95017bf81f1f45472f7cc91002b76c94fbec5065dc7aca1b6fb96a613",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-da_DK.json",
+      "stagedSha256": "8d10b7a95017bf81f1f45472f7cc91002b76c94fbec5065dc7aca1b6fb96a613",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-da_DK.l10n.php",
+      "sha256": "182c241477d743f756ada05526d8c245edca60309047a886a4a7f014a1f2f18c",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-da_DK.l10n.php",
+      "stagedSha256": "182c241477d743f756ada05526d8c245edca60309047a886a4a7f014a1f2f18c",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-da_DK.mo",
+      "sha256": "9353263e9cee524e8deeee3a2fb7131e6862cf2a4d194cf0eb76228340a0c375",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-da_DK.mo",
+      "stagedSha256": "9353263e9cee524e8deeee3a2fb7131e6862cf2a4d194cf0eb76228340a0c375",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-da_DK.po",
+      "sha256": "ffce18b177a3604604f1792c513477947b55cfc30c372b40709b7b78b19153ac",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-da_DK.po",
+      "stagedSha256": "ffce18b177a3604604f1792c513477947b55cfc30c372b40709b7b78b19153ac",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-de_DE.json",
+      "sha256": "6b5bd1688f6bdbda0a3cefd54a6de1e27056058fe4b7251884f91709176f1bd4",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-de_DE.json",
+      "stagedSha256": "6b5bd1688f6bdbda0a3cefd54a6de1e27056058fe4b7251884f91709176f1bd4",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-de_DE.l10n.php",
+      "sha256": "71931d773e8e46a7bcb8e3e6fb8e8717b68dc7160a4fb3a8538606dad9f06c23",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-de_DE.l10n.php",
+      "stagedSha256": "71931d773e8e46a7bcb8e3e6fb8e8717b68dc7160a4fb3a8538606dad9f06c23",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-de_DE.mo",
+      "sha256": "fad89b2d0f778f63008586315a0a7f76a066a1eab2b629570edc0ce18d9679dc",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-de_DE.mo",
+      "stagedSha256": "fad89b2d0f778f63008586315a0a7f76a066a1eab2b629570edc0ce18d9679dc",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-de_DE.po",
+      "sha256": "a6129271db8ccc6172f130d59e8e924552784a3521933c6488002e62e364dbf7",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-de_DE.po",
+      "stagedSha256": "a6129271db8ccc6172f130d59e8e924552784a3521933c6488002e62e364dbf7",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-el.json",
+      "sha256": "9e5fa4e5adf7b35afffa321cc180280bc5534b46eb9e3d4a99348159f204a2f1",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-el.json",
+      "stagedSha256": "9e5fa4e5adf7b35afffa321cc180280bc5534b46eb9e3d4a99348159f204a2f1",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-el.l10n.php",
+      "sha256": "6caf367fa27c3df581295ec4db7750cfb60632efe8d41d7eabcd68fca2d0082c",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-el.l10n.php",
+      "stagedSha256": "6caf367fa27c3df581295ec4db7750cfb60632efe8d41d7eabcd68fca2d0082c",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-el.mo",
+      "sha256": "2725ba92aaf6b9729cf7ef4ac3baeb6beba7202bc67827856abc4dab0026cd47",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-el.mo",
+      "stagedSha256": "2725ba92aaf6b9729cf7ef4ac3baeb6beba7202bc67827856abc4dab0026cd47",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-el.po",
+      "sha256": "3b8f8669a8d108f0697a37881cec1d482f2f71687a759bd1a2b6ef423f11d0ee",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-el.po",
+      "stagedSha256": "3b8f8669a8d108f0697a37881cec1d482f2f71687a759bd1a2b6ef423f11d0ee",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-es_ES.json",
+      "sha256": "c813aeeecb600572360b28efdef0ce4b042beb4bd99f4508135f5cec36b8f78d",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-es_ES.json",
+      "stagedSha256": "c813aeeecb600572360b28efdef0ce4b042beb4bd99f4508135f5cec36b8f78d",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-es_ES.l10n.php",
+      "sha256": "6224a69cc27b0cb545a273fc2ca39a0374d2d0788370bfd9276cdd91ebca8f29",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-es_ES.l10n.php",
+      "stagedSha256": "6224a69cc27b0cb545a273fc2ca39a0374d2d0788370bfd9276cdd91ebca8f29",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-es_ES.mo",
+      "sha256": "7788bb593cdda67feda5a6faaaa59ef69f6b5a85f824baf72c1550afd91eb8b4",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-es_ES.mo",
+      "stagedSha256": "7788bb593cdda67feda5a6faaaa59ef69f6b5a85f824baf72c1550afd91eb8b4",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-es_ES.po",
+      "sha256": "9a79f2ce0f8a0abb2ef48506c2737fb669229a9bf493069f7e22930ecf85ab26",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-es_ES.po",
+      "stagedSha256": "9a79f2ce0f8a0abb2ef48506c2737fb669229a9bf493069f7e22930ecf85ab26",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-et.json",
+      "sha256": "b7fd73e4f56995b0f53bdb7374fdca8f67972530592a4b9e38dc7ba7e547b03f",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-et.json",
+      "stagedSha256": "b7fd73e4f56995b0f53bdb7374fdca8f67972530592a4b9e38dc7ba7e547b03f",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-et.l10n.php",
+      "sha256": "3a145a146f202459047ca25db3576a63712a57cbf37a947d426fa7418033069f",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-et.l10n.php",
+      "stagedSha256": "3a145a146f202459047ca25db3576a63712a57cbf37a947d426fa7418033069f",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-et.mo",
+      "sha256": "f3ff30170d0d4f4923d168587c6a3688826fdec626f3b67282a747970bc89148",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-et.mo",
+      "stagedSha256": "f3ff30170d0d4f4923d168587c6a3688826fdec626f3b67282a747970bc89148",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-et.po",
+      "sha256": "0330f369c24936a3de2db500e3f43a81ebfc911091a962093187024b3087e9bb",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-et.po",
+      "stagedSha256": "0330f369c24936a3de2db500e3f43a81ebfc911091a962093187024b3087e9bb",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-fi.json",
+      "sha256": "096625ee8836f24ccb756813766b310f339dff4f87cadfd46d454fc0d421e1f2",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-fi.json",
+      "stagedSha256": "096625ee8836f24ccb756813766b310f339dff4f87cadfd46d454fc0d421e1f2",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-fi.l10n.php",
+      "sha256": "8dab27013a768765fa8c884489fb5fb4eb8d9e98e8e08ec137cdfb98c11568a8",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-fi.l10n.php",
+      "stagedSha256": "8dab27013a768765fa8c884489fb5fb4eb8d9e98e8e08ec137cdfb98c11568a8",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-fi.mo",
+      "sha256": "6a3baea890525dbb065ea849fe7ba07dc6773e1d5107a7979f47c4789b228227",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-fi.mo",
+      "stagedSha256": "6a3baea890525dbb065ea849fe7ba07dc6773e1d5107a7979f47c4789b228227",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-fi.po",
+      "sha256": "f0826c1b97549b8b05a8e2f9a7739c699b18e264bf416cc57b15b8f6683efa79",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-fi.po",
+      "stagedSha256": "f0826c1b97549b8b05a8e2f9a7739c699b18e264bf416cc57b15b8f6683efa79",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-fr_FR.json",
+      "sha256": "aee385e1b3d2650e636711949f6ff45c645c14d77bfab61a1325695c61fae772",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-fr_FR.json",
+      "stagedSha256": "aee385e1b3d2650e636711949f6ff45c645c14d77bfab61a1325695c61fae772",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-fr_FR.l10n.php",
+      "sha256": "89c934f5ca2f63f2429f34e7863b7c2a609cf9fcfe44567636c2d3c714efaefb",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-fr_FR.l10n.php",
+      "stagedSha256": "89c934f5ca2f63f2429f34e7863b7c2a609cf9fcfe44567636c2d3c714efaefb",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-fr_FR.mo",
+      "sha256": "136dc88ab18773940f30ceb0bd316dd330524b24d2c44f00baba6c4375cb582a",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-fr_FR.mo",
+      "stagedSha256": "136dc88ab18773940f30ceb0bd316dd330524b24d2c44f00baba6c4375cb582a",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-fr_FR.po",
+      "sha256": "417ca93aabba32527da6a6f29d457d426aaacbdc1fb81b398409f15809c3104f",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-fr_FR.po",
+      "stagedSha256": "417ca93aabba32527da6a6f29d457d426aaacbdc1fb81b398409f15809c3104f",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-ga.json",
+      "sha256": "ccfe04f476a74eddb2cdf39cbd5760740bc50ad3bdb2a5ff2f4d11ba0e064600",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-ga.json",
+      "stagedSha256": "ccfe04f476a74eddb2cdf39cbd5760740bc50ad3bdb2a5ff2f4d11ba0e064600",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-ga.l10n.php",
+      "sha256": "2d273b464f486320829d5bc07499b6d567f1ba8e80227295bfef16db496472ba",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-ga.l10n.php",
+      "stagedSha256": "2d273b464f486320829d5bc07499b6d567f1ba8e80227295bfef16db496472ba",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-ga.mo",
+      "sha256": "ae423806f035f2cd5bc9c6f4eb92afcb0c6175a5045dbb81a81645700240e72d",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-ga.mo",
+      "stagedSha256": "ae423806f035f2cd5bc9c6f4eb92afcb0c6175a5045dbb81a81645700240e72d",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-ga.po",
+      "sha256": "a6bea2cf7a113ffa22936e7e812b8db876366f7ac5350a85f097bcea6b0ede33",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-ga.po",
+      "stagedSha256": "a6bea2cf7a113ffa22936e7e812b8db876366f7ac5350a85f097bcea6b0ede33",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-he_IL.json",
+      "sha256": "2fa63def9b76b87b865f6fa0dc08a85e6b88b30342e4762604435bd81635f437",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-he_IL.json",
+      "stagedSha256": "2fa63def9b76b87b865f6fa0dc08a85e6b88b30342e4762604435bd81635f437",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-he_IL.l10n.php",
+      "sha256": "9030a87710e611808f8a4beae157209fa69bb92acbb2b3897fda37742b1f0f30",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-he_IL.l10n.php",
+      "stagedSha256": "9030a87710e611808f8a4beae157209fa69bb92acbb2b3897fda37742b1f0f30",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-he_IL.mo",
+      "sha256": "36d520c3e90ac0c355ff7a9459346653605c41b565931ca32e3f00164355a469",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-he_IL.mo",
+      "stagedSha256": "36d520c3e90ac0c355ff7a9459346653605c41b565931ca32e3f00164355a469",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-he_IL.po",
+      "sha256": "43885df720382df3c66132f32985b29d327bf491a3699a9c8358a6ebacc42ba1",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-he_IL.po",
+      "stagedSha256": "43885df720382df3c66132f32985b29d327bf491a3699a9c8358a6ebacc42ba1",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-hr.json",
+      "sha256": "290245ccfcc39730a7a4aaee983979ee8f8cef8396b4e208f8a904d92d878b80",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-hr.json",
+      "stagedSha256": "290245ccfcc39730a7a4aaee983979ee8f8cef8396b4e208f8a904d92d878b80",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-hr.l10n.php",
+      "sha256": "598a9e4277b8eec2a0c450a8d13fa2ad8577c95a0d484046645d78ab0a12ce84",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-hr.l10n.php",
+      "stagedSha256": "598a9e4277b8eec2a0c450a8d13fa2ad8577c95a0d484046645d78ab0a12ce84",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-hr.mo",
+      "sha256": "07b17582048c9ea9efca8c7fcf685c222b200d9e3f9a29f467b6bcc7714174a9",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-hr.mo",
+      "stagedSha256": "07b17582048c9ea9efca8c7fcf685c222b200d9e3f9a29f467b6bcc7714174a9",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-hr.po",
+      "sha256": "f8fbc38f58239da9e6b0af0f9e7bb73547ba9545fbdcb69b3a6142010aaa34ae",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-hr.po",
+      "stagedSha256": "f8fbc38f58239da9e6b0af0f9e7bb73547ba9545fbdcb69b3a6142010aaa34ae",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-hu_HU.json",
+      "sha256": "94b09f86ae7a6a566230f69575431bf03c2e31c18049ebe612e0c6da1b4f0def",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-hu_HU.json",
+      "stagedSha256": "94b09f86ae7a6a566230f69575431bf03c2e31c18049ebe612e0c6da1b4f0def",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-hu_HU.l10n.php",
+      "sha256": "fa6e5c5a59f080ebf1540166e873e5336e1037335113aab8b5b132aaac1f471b",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-hu_HU.l10n.php",
+      "stagedSha256": "fa6e5c5a59f080ebf1540166e873e5336e1037335113aab8b5b132aaac1f471b",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-hu_HU.mo",
+      "sha256": "83dda8cf5582c97967122892828957e4e8e84a56661607e3e29ef55fe3a05318",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-hu_HU.mo",
+      "stagedSha256": "83dda8cf5582c97967122892828957e4e8e84a56661607e3e29ef55fe3a05318",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-hu_HU.po",
+      "sha256": "9b885ad73b2970a28554605389f1ca3c9ac36892bc9d96a201d013513156ce45",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-hu_HU.po",
+      "stagedSha256": "9b885ad73b2970a28554605389f1ca3c9ac36892bc9d96a201d013513156ce45",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-id_ID.json",
+      "sha256": "0f9989eda28661344878b16f190ab2ac7e84697cc14e33ca701c41dcc459628d",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-id_ID.json",
+      "stagedSha256": "0f9989eda28661344878b16f190ab2ac7e84697cc14e33ca701c41dcc459628d",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-id_ID.l10n.php",
+      "sha256": "6b09725ba8cba32572fb164c04dd8d78c68216dd4ecff7b6e580820bb17a322c",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-id_ID.l10n.php",
+      "stagedSha256": "6b09725ba8cba32572fb164c04dd8d78c68216dd4ecff7b6e580820bb17a322c",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-id_ID.mo",
+      "sha256": "3fd52aec1d58a7a29d7c08c6e5d8247ab0f46c56f684aa46d56336f706acc84b",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-id_ID.mo",
+      "stagedSha256": "3fd52aec1d58a7a29d7c08c6e5d8247ab0f46c56f684aa46d56336f706acc84b",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-id_ID.po",
+      "sha256": "50a3e9a5954b70a8789b1b18031278e7fe8a459d6013984493ca00212270eeb4",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-id_ID.po",
+      "stagedSha256": "50a3e9a5954b70a8789b1b18031278e7fe8a459d6013984493ca00212270eeb4",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-it_IT.json",
+      "sha256": "d9178fd682750feb276d273a971e2f11a9047038ed8064975b3d657f97dba5ab",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-it_IT.json",
+      "stagedSha256": "d9178fd682750feb276d273a971e2f11a9047038ed8064975b3d657f97dba5ab",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-it_IT.l10n.php",
+      "sha256": "30d250ec89db208e7e140e7fb6c150eaca80e6de28a4e5526a5ac32b15430b19",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-it_IT.l10n.php",
+      "stagedSha256": "30d250ec89db208e7e140e7fb6c150eaca80e6de28a4e5526a5ac32b15430b19",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-it_IT.mo",
+      "sha256": "22e3439cb8b189666547f38455b478717a81b7ac667610a3a1124c3353de3e43",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-it_IT.mo",
+      "stagedSha256": "22e3439cb8b189666547f38455b478717a81b7ac667610a3a1124c3353de3e43",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-it_IT.po",
+      "sha256": "a5c5a40d0166e721086ea86657a93ba320a468ffc4f445c9c9d2e4673f8abc80",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-it_IT.po",
+      "stagedSha256": "a5c5a40d0166e721086ea86657a93ba320a468ffc4f445c9c9d2e4673f8abc80",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-lt_LT.json",
+      "sha256": "4f6338c86de839a8d1e2071ea4df8fb456ccef76ee2babd05db67c9c6f5428ef",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-lt_LT.json",
+      "stagedSha256": "4f6338c86de839a8d1e2071ea4df8fb456ccef76ee2babd05db67c9c6f5428ef",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-lt_LT.l10n.php",
+      "sha256": "1788feb42de7da39c8e68da61882ab5c35212387c82eeae05f352142b7f98c96",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-lt_LT.l10n.php",
+      "stagedSha256": "1788feb42de7da39c8e68da61882ab5c35212387c82eeae05f352142b7f98c96",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-lt_LT.mo",
+      "sha256": "e624df928cc92ae205dc552545cb4402f38ed946795ab85ba40b53ce9ccdbb14",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-lt_LT.mo",
+      "stagedSha256": "e624df928cc92ae205dc552545cb4402f38ed946795ab85ba40b53ce9ccdbb14",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-lt_LT.po",
+      "sha256": "1c92bec454c378f8f717859be6c3b3c982738a21c55146577ee8a1c47ac9ff8f",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-lt_LT.po",
+      "stagedSha256": "1c92bec454c378f8f717859be6c3b3c982738a21c55146577ee8a1c47ac9ff8f",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-lv.json",
+      "sha256": "0ff25ad9dec78b8647fd4692cf1260481f35bc4eaf0942e353a9a1feffcab759",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-lv.json",
+      "stagedSha256": "0ff25ad9dec78b8647fd4692cf1260481f35bc4eaf0942e353a9a1feffcab759",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-lv.l10n.php",
+      "sha256": "24a153c764c72451163285f2f53ae93be771c10ececfd13d2ddff2a78135121f",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-lv.l10n.php",
+      "stagedSha256": "24a153c764c72451163285f2f53ae93be771c10ececfd13d2ddff2a78135121f",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-lv.mo",
+      "sha256": "99ef6ba9f577aa525f6a656cb44aa4432f07cddf886e84dbdd151c34f5a0aa49",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-lv.mo",
+      "stagedSha256": "99ef6ba9f577aa525f6a656cb44aa4432f07cddf886e84dbdd151c34f5a0aa49",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-lv.po",
+      "sha256": "3a75e8ff25ba171a12e3cf21b6b12ab3e1f5a1e734d45cb2c98acb445545e406",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-lv.po",
+      "stagedSha256": "3a75e8ff25ba171a12e3cf21b6b12ab3e1f5a1e734d45cb2c98acb445545e406",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-mlt.json",
+      "sha256": "130d0b46604e2afbe86a3862ba3ea0cb1acfcd964c17f6847eaaae3630450f54",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-mlt.json",
+      "stagedSha256": "130d0b46604e2afbe86a3862ba3ea0cb1acfcd964c17f6847eaaae3630450f54",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-mlt.l10n.php",
+      "sha256": "73dfc4a5b49c832d17f99cf6744bfb9b6c70384e6f04c36872916cb74c034f7a",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-mlt.l10n.php",
+      "stagedSha256": "73dfc4a5b49c832d17f99cf6744bfb9b6c70384e6f04c36872916cb74c034f7a",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-mlt.mo",
+      "sha256": "178568a868d0f4717dfaacad57b45921b119f57bb8aab9e81d315977ff81c792",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-mlt.mo",
+      "stagedSha256": "178568a868d0f4717dfaacad57b45921b119f57bb8aab9e81d315977ff81c792",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-mlt.po",
+      "sha256": "6afef67f363ee4dc80edc73c432e8cdd51e5798eda552a82683d7293118a72cf",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-mlt.po",
+      "stagedSha256": "6afef67f363ee4dc80edc73c432e8cdd51e5798eda552a82683d7293118a72cf",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-nl_NL.json",
+      "sha256": "07f2b22c4e0e5d53940c298c217843bdb20cd40998d72b1c3071cf0cc12b1746",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-nl_NL.json",
+      "stagedSha256": "07f2b22c4e0e5d53940c298c217843bdb20cd40998d72b1c3071cf0cc12b1746",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-nl_NL.l10n.php",
+      "sha256": "c1beba3ab1b091bb93cd059af9402bcc94676be06139946265e1b5243606200d",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-nl_NL.l10n.php",
+      "stagedSha256": "c1beba3ab1b091bb93cd059af9402bcc94676be06139946265e1b5243606200d",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-nl_NL.mo",
+      "sha256": "039292dee26a08b8fedd3a31eb4b7633c1281747c3c4765bee1dd35615ebbe73",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-nl_NL.mo",
+      "stagedSha256": "039292dee26a08b8fedd3a31eb4b7633c1281747c3c4765bee1dd35615ebbe73",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-nl_NL.po",
+      "sha256": "0284ceeaf44735dcb1ee8cf0520414d94669d30ed80e6b360340e8fc83def8bd",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-nl_NL.po",
+      "stagedSha256": "0284ceeaf44735dcb1ee8cf0520414d94669d30ed80e6b360340e8fc83def8bd",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-pl_PL.json",
+      "sha256": "e382ad7492cfca16ab8d3c35beef89cf5b7ced5e2c6d8c8be07eba3af992da7f",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-pl_PL.json",
+      "stagedSha256": "e382ad7492cfca16ab8d3c35beef89cf5b7ced5e2c6d8c8be07eba3af992da7f",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-pl_PL.l10n.php",
+      "sha256": "b829585ba2566bca251cf6133c74758de8fe5ff29623d0e1f8a34a54a49306fd",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-pl_PL.l10n.php",
+      "stagedSha256": "b829585ba2566bca251cf6133c74758de8fe5ff29623d0e1f8a34a54a49306fd",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-pl_PL.mo",
+      "sha256": "5a473f6221445fc9d67d32e9697ee9df3aeb0e36438a5f45f557c1bdae64bfbb",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-pl_PL.mo",
+      "stagedSha256": "5a473f6221445fc9d67d32e9697ee9df3aeb0e36438a5f45f557c1bdae64bfbb",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-pl_PL.po",
+      "sha256": "828ca1d1dcc1eb19b5256e299c393a05b92b5f83e71c1ac6b04fcf8ec83b0384",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-pl_PL.po",
+      "stagedSha256": "828ca1d1dcc1eb19b5256e299c393a05b92b5f83e71c1ac6b04fcf8ec83b0384",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-pt_PT.json",
+      "sha256": "80c2e523d6d7bc321d457d2a365492f0f5e5e60070124aa8b49c985a1054e421",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-pt_PT.json",
+      "stagedSha256": "80c2e523d6d7bc321d457d2a365492f0f5e5e60070124aa8b49c985a1054e421",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-pt_PT.l10n.php",
+      "sha256": "e4ca9ff470fd6b3be210fb76577ae95fe48da4e35d288f7fa2ce998137a57083",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-pt_PT.l10n.php",
+      "stagedSha256": "e4ca9ff470fd6b3be210fb76577ae95fe48da4e35d288f7fa2ce998137a57083",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-pt_PT.mo",
+      "sha256": "a2870662ec870920d0067daa8dc207347079a6a427eb57a0db72b012dd7570d6",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-pt_PT.mo",
+      "stagedSha256": "a2870662ec870920d0067daa8dc207347079a6a427eb57a0db72b012dd7570d6",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-pt_PT.po",
+      "sha256": "e5dd6cee6af5ed09dec03f91e6aa618d55e6f0f70bddc41179654e51888123b0",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-pt_PT.po",
+      "stagedSha256": "e5dd6cee6af5ed09dec03f91e6aa618d55e6f0f70bddc41179654e51888123b0",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-ro_RO.json",
+      "sha256": "85129e1bbc4ef35a4c263afc055925b0118b6eada01f576b72e911478c1ac7a1",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-ro_RO.json",
+      "stagedSha256": "85129e1bbc4ef35a4c263afc055925b0118b6eada01f576b72e911478c1ac7a1",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-ro_RO.l10n.php",
+      "sha256": "3c508edd2d83ee4d2629d3ec849b1b41053d99b0206731386a2605272d82a254",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-ro_RO.l10n.php",
+      "stagedSha256": "3c508edd2d83ee4d2629d3ec849b1b41053d99b0206731386a2605272d82a254",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-ro_RO.mo",
+      "sha256": "9a7b6fd3c45a4e92a7ef6e515a4f0cc2a4edaeeaefb716724c80034016e2c302",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-ro_RO.mo",
+      "stagedSha256": "9a7b6fd3c45a4e92a7ef6e515a4f0cc2a4edaeeaefb716724c80034016e2c302",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-ro_RO.po",
+      "sha256": "c08985a9a93b218a4f006e130c56430febc996cbb129008a5e0dd8fdbba0a4db",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-ro_RO.po",
+      "stagedSha256": "c08985a9a93b218a4f006e130c56430febc996cbb129008a5e0dd8fdbba0a4db",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-sk_SK.json",
+      "sha256": "3ee7145d820d1d83ea0f628bfc5c29aeb404bfda1c6f3eeb22ee8022be233edc",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-sk_SK.json",
+      "stagedSha256": "3ee7145d820d1d83ea0f628bfc5c29aeb404bfda1c6f3eeb22ee8022be233edc",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-sk_SK.l10n.php",
+      "sha256": "69666b9fcdaa66e0906dc8568eec8ae62608a4a70d14ba2b2a72820a036dd1f0",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-sk_SK.l10n.php",
+      "stagedSha256": "69666b9fcdaa66e0906dc8568eec8ae62608a4a70d14ba2b2a72820a036dd1f0",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-sk_SK.mo",
+      "sha256": "0882cf04611a1857bc65e26df51f554d8a5aff2b536502cc59428e87c4d253cd",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-sk_SK.mo",
+      "stagedSha256": "0882cf04611a1857bc65e26df51f554d8a5aff2b536502cc59428e87c4d253cd",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-sk_SK.po",
+      "sha256": "c165b0e70abaf483201d9be883d5032577f3d3b72ffaff9fb8ffc0f82dd442ee",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-sk_SK.po",
+      "stagedSha256": "c165b0e70abaf483201d9be883d5032577f3d3b72ffaff9fb8ffc0f82dd442ee",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-sl_SI.json",
+      "sha256": "4f4b4cb953c4cce99bb07206ef7accd5335d8af677e2ceb7a0c5120f7f171eb6",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-sl_SI.json",
+      "stagedSha256": "4f4b4cb953c4cce99bb07206ef7accd5335d8af677e2ceb7a0c5120f7f171eb6",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-sl_SI.l10n.php",
+      "sha256": "1af3a8ee013d1ae1ef9749d767e4aac4b45e6c6582441af8341b1bd0c3c935b7",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-sl_SI.l10n.php",
+      "stagedSha256": "1af3a8ee013d1ae1ef9749d767e4aac4b45e6c6582441af8341b1bd0c3c935b7",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-sl_SI.mo",
+      "sha256": "12aadf0324d963432f9eede8ee0b76b6b2265671d9ec4198e811d397d5b2f82b",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-sl_SI.mo",
+      "stagedSha256": "12aadf0324d963432f9eede8ee0b76b6b2265671d9ec4198e811d397d5b2f82b",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-sl_SI.po",
+      "sha256": "4be21b360048090382597bd883f5b1047f7931866cd7f2e192e06366da1951e5",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-sl_SI.po",
+      "stagedSha256": "4be21b360048090382597bd883f5b1047f7931866cd7f2e192e06366da1951e5",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-sv_SE.json",
+      "sha256": "6aa7f87be889ff5ce27435a1913983a94c0cb7b43f5197388b3e6b7f88d1ac0a",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-sv_SE.json",
+      "stagedSha256": "6aa7f87be889ff5ce27435a1913983a94c0cb7b43f5197388b3e6b7f88d1ac0a",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-sv_SE.l10n.php",
+      "sha256": "1b8fbe402c29b5aab05178d6d15f5564e3d312a247acd5f80f82ffee2d067578",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-sv_SE.l10n.php",
+      "stagedSha256": "1b8fbe402c29b5aab05178d6d15f5564e3d312a247acd5f80f82ffee2d067578",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-sv_SE.mo",
+      "sha256": "d2a6ae69a8734d9bb2cba70d96fc161af4e486973ac722146b660ff5dddd14fc",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-sv_SE.mo",
+      "stagedSha256": "d2a6ae69a8734d9bb2cba70d96fc161af4e486973ac722146b660ff5dddd14fc",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-sv_SE.po",
+      "sha256": "ff2b5e26010d37ca5600ebbf27542f6933eb2d143c4517f564072d27b7c28600",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-sv_SE.po",
+      "stagedSha256": "ff2b5e26010d37ca5600ebbf27542f6933eb2d143c4517f564072d27b7c28600",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-th.json",
+      "sha256": "67027ff2adbe2dbda0c31c0512daf9aaf27ed464ff8c55706dcb862bcf3383fc",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-th.json",
+      "stagedSha256": "67027ff2adbe2dbda0c31c0512daf9aaf27ed464ff8c55706dcb862bcf3383fc",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-th.l10n.php",
+      "sha256": "85f03f694d10ef2fa5a4e07e229de15f5406b7637812444ec3d40eefd4ceaca9",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-th.l10n.php",
+      "stagedSha256": "85f03f694d10ef2fa5a4e07e229de15f5406b7637812444ec3d40eefd4ceaca9",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-th.mo",
+      "sha256": "795c02ff4662d1957360087957b997b0041c6267f296ef6397302599316638ae",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-th.mo",
+      "stagedSha256": "795c02ff4662d1957360087957b997b0041c6267f296ef6397302599316638ae",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-th.po",
+      "sha256": "bb68bda147100d6be3beb432c34d1a06a5eafac270f94e13cb28b5d0f81a46b1",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-th.po",
+      "stagedSha256": "bb68bda147100d6be3beb432c34d1a06a5eafac270f94e13cb28b5d0f81a46b1",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-uk.json",
+      "sha256": "209fb9b803e60815078127004a1f8e0de08bc79f87248c810adcb137fbcc2662",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-uk.json",
+      "stagedSha256": "209fb9b803e60815078127004a1f8e0de08bc79f87248c810adcb137fbcc2662",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-uk.l10n.php",
+      "sha256": "462310a587b97e1368543130954913d3c81338f4ec9f277353bf1be991589401",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-uk.l10n.php",
+      "stagedSha256": "462310a587b97e1368543130954913d3c81338f4ec9f277353bf1be991589401",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-uk.mo",
+      "sha256": "3b6b66df43c41d173ea8ac82f8e5661e79434bf83b535695cdd84d57f751cb84",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-uk.mo",
+      "stagedSha256": "3b6b66df43c41d173ea8ac82f8e5661e79434bf83b535695cdd84d57f751cb84",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-uk.po",
+      "sha256": "364378be34e49cbd23c6a8f19ce0268f3bc24401739502e0fd95f0ea0ddf92b6",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-uk.po",
+      "stagedSha256": "364378be34e49cbd23c6a8f19ce0268f3bc24401739502e0fd95f0ea0ddf92b6",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-zh_CN.json",
+      "sha256": "e9f9e22cf75937fea933d4cc47ff3b3d0eff8ebd22562547d293ff1f8fb314a0",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-zh_CN.json",
+      "stagedSha256": "e9f9e22cf75937fea933d4cc47ff3b3d0eff8ebd22562547d293ff1f8fb314a0",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-zh_CN.l10n.php",
+      "sha256": "dbb152ef8d173446112e34e29fc054981b69837805e57e3209908a2ef814a901",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-zh_CN.l10n.php",
+      "stagedSha256": "dbb152ef8d173446112e34e29fc054981b69837805e57e3209908a2ef814a901",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-zh_CN.mo",
+      "sha256": "0c16e9567448ba85cd67d5af81a26cb1703da959d9981bb0ea2aef1e1a4c567d",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-zh_CN.mo",
+      "stagedSha256": "0c16e9567448ba85cd67d5af81a26cb1703da959d9981bb0ea2aef1e1a4c567d",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-zh_CN.po",
+      "sha256": "3c072f0cddafa41d397c1ad566d343280ca39187b7090f54af08fe9c83d01107",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-zh_CN.po",
+      "stagedSha256": "3c072f0cddafa41d397c1ad566d343280ca39187b7090f54af08fe9c83d01107",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-zh_TW.json",
+      "sha256": "2a6f312ff4ae9826125beb220ab76faf82a6935e1d6f4334a5a721d5904df4a7",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-zh_TW.json",
+      "stagedSha256": "2a6f312ff4ae9826125beb220ab76faf82a6935e1d6f4334a5a721d5904df4a7",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-zh_TW.l10n.php",
+      "sha256": "c70d315a42c8f27c6aab11db7d1182bfd92d6572ee0fa560ed3c9c7e3714a86a",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-zh_TW.l10n.php",
+      "stagedSha256": "c70d315a42c8f27c6aab11db7d1182bfd92d6572ee0fa560ed3c9c7e3714a86a",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-zh_TW.mo",
+      "sha256": "f041ca844e7a7b3139410e345a35415b2f652aed0d8bb50f0ea3f0d5f8fac08f",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-zh_TW.mo",
+      "stagedSha256": "f041ca844e7a7b3139410e345a35415b2f652aed0d8bb50f0ea3f0d5f8fac08f",
+      "matchesStaging": true
+    },
+    {
+      "member": "arraysubspro/arraysubspro-zh_TW.po",
+      "sha256": "02a95a34c5c836430b545d3c8dfaf1a5ac444509f71706167c1446f8bfa61663",
+      "stagedPath": "arraysubs/workflow-scripts/translation/.translation-cache/catalogs/arraysubspro/arraysubspro-zh_TW.po",
+      "stagedSha256": "02a95a34c5c836430b545d3c8dfaf1a5ac444509f71706167c1446f8bfa61663",
+      "matchesStaging": true
+    }
+  ],
+  "summary": {
+    "catalogFilesCompared": 240,
+    "matchingStagedFiles": 240,
+    "localeCatalogs": 60,
+    "missingMessages": 0,
+    "obsoleteMessages": 0,
+    "emptyTranslations": 0,
+    "fuzzy": 0,
+    "missingJavaScriptMessages": 0,
+    "obsoleteJavaScriptMessages": 0,
+    "emptyJavaScriptTranslations": 0
+  }
+}

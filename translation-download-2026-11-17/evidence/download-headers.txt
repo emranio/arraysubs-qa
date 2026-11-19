@@ -1,0 +1,16 @@
+HTTP/2 200 
+date: Tue, 17 Nov 2026 12:05:02 GMT
+content-type: application/zip
+content-length: 36699829
+accept-ranges: bytes
+alt-svc: h3=":443"; ma=86400
+cache-control: max-age=14400
+etag: "dmxcjo936x1dlulrp"
+last-modified: Tue, 17 Nov 2026 08:35:09 GMT
+server: cloudflare
+vary: Accept-Encoding
+cf-cache-status: MISS
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=w7hWqDJl0V0NnBQ29osp1eUCpC2gg90EwcF0svciBz2Vee5D11VlCWzp%2B3E5JRHUCrOtBejbkAuj%2Flal0Ox0reut5L0XIicSG8ilt1Qsc87idFeJIbGmc4b1%2BlAu1nEXUobfkL01JZOy"}]}
+nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+cf-ray: a5be99ec2d226023-SIN
+

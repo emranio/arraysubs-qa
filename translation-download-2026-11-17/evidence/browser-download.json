@@ -1,0 +1,11 @@
+{
+  "downloadUrl": "https://subscriptionplugin.pro/docs/downloads/arraysubs-translations.zip",
+  "browserSession": "translation-download-admin",
+  "adminUrl": "https://mirror-help.arrayhash.com/wp-admin/admin.php?page=arraysubs-mainadmin#/modules",
+  "browserDownloadSucceeded": true,
+  "bytes": 36699829,
+  "sha256": "13e7c23a0c1c0e4ed43dd779954710edf8801fd04239f5aa9a87c8c731d23a40",
+  "matchesHttpDownload": true,
+  "matchesRepositoryZip": true,
+  "zipIntegrityError": null
+}

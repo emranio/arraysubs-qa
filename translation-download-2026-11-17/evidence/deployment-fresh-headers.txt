@@ -1,0 +1,16 @@
+HTTP/2 200 
+date: Tue, 17 Nov 2026 12:06:01 GMT
+content-type: application/json
+content-length: 90
+accept-ranges: bytes
+alt-svc: h3=":443"; ma=86400
+cache-control: no-cache
+etag: "dmxckxh0eiwf2i"
+last-modified: Tue, 17 Nov 2026 08:36:47 GMT
+server: cloudflare
+vary: Accept-Encoding
+cf-cache-status: DYNAMIC
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=G3XZddNu%2Bn%2BjRgScaP0qlDKQMiE48UopijgKrHjZk6%2Fdfn08xsqa2jj7SgA787FYB1cb1qFZBx5srzeLbcpSyntuB1hvy0lc%2FzqL4ELUeXKrKKYrTpEYiTaL45jmfg7gOwKSJvmCwYLA"}]}
+nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+cf-ray: a5be9b5e9da85853-DAC
+
