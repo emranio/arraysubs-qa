@@ -2,7 +2,7 @@
 
 Date: 2026-09-01
 
-Scope: Move the ArraySubs checkout, thank-you experience, and browser-side Freemius integration from `web-content` to `user-portal`, while preserving old checkout URLs and affiliate attribution.
+The migration moved the ArraySubs checkout, thank-you experience, and browser-side Freemius integration from `web-content` to `user-portal`. It preserved old checkout URLs and affiliate attribution.
 
 ## Result
 
@@ -60,7 +60,7 @@ Database test rows were removed after the run.
 - Git whitespace checks passed in both repositories.
 - Touched source files remain below the workspace's 3,000-line limit.
 
-Deployment order is intentional: deploy `user-portal` first, verify its checkout and thank-you health checks, then deploy `web-content`. The marketing deployment now refuses to proceed unless all three portal checkout routes are reachable.
+The migration's deployment checks required all three portal checkout routes to be reachable.
 
 ## Screenshots
 

@@ -871,3 +871,16 @@
 {"timestamp":"2026-11-16T23:05:31.613475+06:00","action":"create","task_id":168,"detail":"Admin pages need one centered WordPress loading spinner"}
 {"timestamp":"2026-11-16T23:14:53.148576+06:00","action":"edit","task_id":168,"detail":"Admin pages need one centered WordPress loading spinner"}
 {"timestamp":"2026-11-16T23:14:53.163161+06:00","action":"move","task_id":168,"detail":"in-progress -\u003e closed"}
+{"timestamp":"2026-11-26T01:17:25.864292+06:00","action":"create","task_id":169,"detail":"Stripe split-UPE SEPA (stripe_sepa_debit) subscriptions never capture billing context; renewals become manual invoices"}
+{"timestamp":"2026-11-26T01:17:45.190217+06:00","action":"create","task_id":170,"detail":"Succeeded SEPA renewal stuck on-hold when the official Stripe webhook is missed; reconcile sweep marks it 'taken' instead of paid"}
+{"timestamp":"2026-11-26T01:17:45.206185+06:00","action":"create","task_id":171,"detail":"Re-bound legacy SEPA subscriptions fail renewals with renewal_order_binding_invalid because open renewal orders keep stripe_sepa_debit"}
+{"timestamp":"2026-11-26T01:18:08.740986+06:00","action":"create","task_id":172,"detail":"SEPA bank accounts are displayed as cards in admin, My Account and emails"}
+{"timestamp":"2026-11-26T01:18:08.757072+06:00","action":"create","task_id":173,"detail":"Billing context recovery cannot recover SEPA subscriptions and can bind a card to them"}
+{"timestamp":"2026-11-26T01:18:08.772836+06:00","action":"create","task_id":174,"detail":"Stripe mandate lifecycle gaps: no mandate.updated handling and stale _gateway_mandate_id forwarded after a payment-method change"}
+{"timestamp":"2026-11-26T01:18:08.789091+06:00","action":"create","task_id":175,"detail":"Smaller Stripe/SEPA issues: partial refund double-recorded, day-21 settlement grace, Renewal Sync hides SEPA"}
+{"timestamp":"2026-11-26T03:33:48.709439+06:00","action":"move","task_id":169,"detail":"open -\u003e closed"}
+{"timestamp":"2026-11-26T03:33:48.727488+06:00","action":"move","task_id":170,"detail":"open -\u003e closed"}
+{"timestamp":"2026-11-26T03:33:48.745016+06:00","action":"move","task_id":171,"detail":"open -\u003e closed"}
+{"timestamp":"2026-11-26T03:33:48.761577+06:00","action":"move","task_id":172,"detail":"open -\u003e closed"}
+{"timestamp":"2026-11-26T03:33:48.779169+06:00","action":"move","task_id":173,"detail":"open -\u003e closed"}
+{"timestamp":"2026-11-26T03:33:48.795422+06:00","action":"move","task_id":174,"detail":"open -\u003e closed"}
