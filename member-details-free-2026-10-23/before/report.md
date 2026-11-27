@@ -9,7 +9,7 @@ Confirmed twice: with only ArraySubs Pro temporarily deactivated on the local te
 ## Environment and fixtures
 
 - Site: `http://localhost:10013`, real Local WordPress site.
-- Browser: isolated agent-browser session `member-free-qa`, administrator `admin`, authenticated through the documented `http://localhost:10013/wp-admin/?localwp_auto_login=1` route.
+- Browser: isolated browser session `member-free-qa`, administrator `admin`, authenticated through the documented `http://localhost:10013/wp-admin/?localwp_auto_login=1` route.
 - ArraySubs 2.0.9; ArraySubs Pro 1.2.8 temporarily inactive for this baseline; WooCommerce 11.1.2; WordPress UI reports 7.1.3.
 - Existing subscription: **#8326**, **Demo · Lifetime Resource Library**, active lifetime subscription.
 - Existing customer: **#224**, **Finley Sullivan**, login `demo260927_220`, email `demo.260927.220@example.test`, roles `customer`, `demo_member`, `demo_premium`. No customer browser session used.

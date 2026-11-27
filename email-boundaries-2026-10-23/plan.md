@@ -1,6 +1,6 @@
 # Email Free/Pro boundary verification
 
-User-requested scope 2026-10-23, task91, immediate local manual execution; no old QA cycle or watcher reused. Site http://localhost:10013, isolated agent-browser admin context via documented Local auto-login if email settings/preview supports a real browser check.
+User-requested scope 2026-10-23, task91, immediate local manual execution; no old QA cycle or watcher reused. Site http://localhost:10013, isolated browser admin context via documented Local auto-login if email settings/preview supports a real browser check.
 
 1. Preserve current activation/settings and existing issue-board state.
 2. Audit core and Pro registration, trigger hooks, shared templates, placeholders and links. Check module-off and Pro-absent behavior, missing/deleted related objects and customer-facing feature-type privacy.

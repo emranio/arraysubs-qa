@@ -21,7 +21,7 @@ The build emitted the existing Turbopack tracing warning through `next.config.ts
 
 ## Production browser verification
 
-Target: https://user-portal.arrayhash.com/admin/offboarding/, authenticated administrator `emran@arrayhash.com` in the existing Edge session. Subscription/order/WordPress customer IDs: N/A. Browser automation uses the already-established fallback to the user's authenticated Edge tab because agent-browser could not attach that session during the original offboarding QA.
+Target: https://user-portal.arrayhash.com/admin/offboarding/, authenticated administrator `emran@arrayhash.com` in the existing Edge session. Subscription/order/WordPress customer IDs: N/A. Browser automation uses the already-established fallback to the user's authenticated Edge tab because browser could not attach that session during the original offboarding QA.
 
 Before deployment, all six existing local QA records displayed November 4 UTC, with the latest at 19:04. [Before screenshot](evidence/live-before-utc.jpg).
 

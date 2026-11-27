@@ -10,7 +10,7 @@ The specific Members Access theme override precedes the existing generic theme `
 
 ## Browser coverage
 
-Real local WordPress `http://localhost:10013`, running the changed workspace sources. Vercel agent-browser CLI with isolated customer/guest sessions and Microsoft Edge. Pro was active for the first pass, absent for the core-only pass, and restored afterward. The remote test site was not deployed. See [coverage summary](evidence/coverage-summary.json).
+Real local WordPress `http://localhost:10013`, running the changed workspace sources. the browser with isolated customer/guest sessions and Microsoft Edge. Pro was active for the first pass, absent for the core-only pass, and restored afterward. The remote test site was not deployed. See [coverage summary](evidence/coverage-summary.json).
 
 Every copied source template had a visible `QA CHILD <path>` marker. The following 15 distinct files rendered through actual customer/guest pages:
 

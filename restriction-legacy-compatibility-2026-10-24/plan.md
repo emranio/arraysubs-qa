@@ -4,7 +4,7 @@ Scope: preserve settings saved before the unified per-post/CPT, Gutenberg and El
 
 Schedule: 2026-10-24, Asia/Dhaka, sequential execution in this session. Fresh progress board: board/kanban. Existing qa/issues records remain intact.
 
-Target: actual local WordPress http://localhost:10013 serving this checkout. Use administrator 1, member 224 and disposable pages/customer. Authentication uses scoped temporary session cookies with exact-token cleanup. Browser navigation/automation uses agent-browser only, isolated sessions and snapshots/screenshots. Do not change real content settings.
+Target: actual local WordPress http://localhost:10013 serving this checkout. Use administrator 1, member 224 and disposable pages/customer. Authentication uses scoped temporary session cookies with exact-token cleanup. Browser navigation/automation uses browser only, isolated sessions and snapshots/screenshots. Do not change real content settings.
 
 1. Runtime compatibility matrix: old raw serialized formats, normalizer idempotence, no-write reads, legacy decisions and messages, version 2 ALL/ANY and explicit conversion, core/Pro behavior.
 2. Real browser storefront matrix: old fixtures on all three surfaces for guest/customer/member/admin, blank visibility and custom/default messages, unchanged-save behavior.

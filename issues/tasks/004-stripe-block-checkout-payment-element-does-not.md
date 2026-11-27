@@ -31,7 +31,7 @@ class: standard
 ## Route and reproduction
 
 - URL: `https://mirror-help.arrayhash.com/checkout/`.
-- Browser context: isolated customer `agent-browser` session on the real block checkout.
+- Browser context: isolated customer the browser session on the real block checkout.
 - Reproduction: load the registered product in an empty cart, select Stripe, and attempt to enter the documented Stripe test card in the Payment Element.
 
 ## Expected

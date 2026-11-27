@@ -4,7 +4,7 @@ Completed 2026-10-29 (Asia/Dhaka). The original crash and four additional integr
 
 ## Environment and scope
 
-Real local WordPress at http://localhost:10013, PHP 8.2.27, WooCommerce 11.1.2, ArraySubs 2.1.0 and Pro 1.3.0. The official **WP Overnight PDF Invoices & Packing Slips for WooCommerce 5.16.6**, slug `woocommerce-pdf-invoices-packing-slips`, remains installed and active as requested. Testing used the prebuilt runtime/assets, WP-CLI with `--allow-root`, actual WooCommerce orders, genuine core renewal construction, actual Pro store credit, real local SMTP/Mailpit delivery and isolated agent-browser customer/admin/guest sessions. No gateway charge was run.
+Real local WordPress at http://localhost:10013, PHP 8.2.27, WooCommerce 11.1.2, ArraySubs 2.1.0 and Pro 1.3.0. The official **WP Overnight PDF Invoices & Packing Slips for WooCommerce 5.16.6**, slug `woocommerce-pdf-invoices-packing-slips`, remains installed and active as requested. Testing used the prebuilt runtime/assets, WP-CLI with `--allow-root`, actual WooCommerce orders, genuine core renewal construction, actual Pro store credit, real local SMTP/Mailpit delivery and isolated browser customer/admin/guest sessions. No gateway charge was run.
 
 Fresh plan: `plan.md`; execution board: `kanban/`. Original reproduction evidence remains under `qa/pdf-invoice-portal-2026-10-29/`. Existing unrelated QA issues were preserved.
 
@@ -69,7 +69,7 @@ No phpcs, PHP lint, Composer installation or build was run. PHP source changes r
 
 ## Limits and final state
 
-Chrome `Page.captureScreenshot` began timing out even on a blank page. Diagnostics found no installation failure; retries in isolated headless/headed sessions and the connected agent-browser backend also failed. Existing baseline screenshots are retained. Functional testing continued through the real browser with accessibility snapshots, DOM observations, actual clicks/downloads and actual Mailpit messages. No new visual screenshot sign-off is claimed.
+Chrome `Page.captureScreenshot` began timing out even on a blank page. Diagnostics found no installation failure; retries in isolated headless/headed sessions and the connected browser backend also failed. Existing baseline screenshots are retained. Functional testing continued through the real browser with accessibility snapshots, DOM observations, actual clicks/downloads and actual Mailpit messages. No new visual screenshot sign-off is claimed.
 
 Follow-up completed2026-10-29: this visual limitation is now resolved for the QA workflow. A supported isolated browser launch configuration produced repeatable screenshots, actual native PDF views were inspected with Pro active and inactive, and a mobile overflow found in that pass was fixed using WooCommerce's responsive table markup. English/Spanish labels were verified visually. Full sign-off and final screenshots: [invoice visual report](../pdf-invoice-visual-2026-10-29/report.md).
 

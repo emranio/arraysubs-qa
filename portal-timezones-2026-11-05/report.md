@@ -35,7 +35,7 @@ See the [customer browser report](customer-browser.md) and [admin browser report
 
 Strict baseline comparisons confirmed original database timestamps stayed unchanged, and authenticated customer API dates retained their UTC values: [API/storage evidence](evidence/local-api-db-utc-after-new-york.json), [reset email/storage evidence](evidence/local-customer-reset-email.json).
 
-The required agent-browser CLI was used first. Its screenshot command hung both owned sessions; actual browser screenshots and visual inspection continued through connected Edge. Only the owned blocked process trees were stopped. The local app, disposable schema, temporary clone, private credentials and captured email files were cleaned up after evidence was sanitized. No production customer account/billing data was edited and no real email was sent during this timezone QA cycle.
+The required browser was used first. Its screenshot command hung both owned sessions; actual browser screenshots and visual inspection continued through connected Edge. Only the owned blocked process trees were stopped. The local app, disposable schema, temporary clone, private credentials and captured email files were cleaned up after evidence was sanitized. No production customer account/billing data was edited and no real email was sent during this timezone QA cycle.
 
 ## Live deployment verification
 

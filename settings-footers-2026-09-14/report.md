@@ -1,6 +1,6 @@
 # Settings footer verification — passed
 
-Tested on 2026-09-14 against **http://localhost:10013**, using admin user ID 1 in an isolated agent-browser session. Scope and schedule: [plan.md](plan.md), QA progress task #1.
+Tested on 2026-09-14 against **http://localhost:10013**, using admin user ID 1 in an isolated browser session. Scope and schedule: [plan.md](plan.md), QA progress task #1.
 
 All 14 affected editor routes now use the same footer as Settings → General: the existing save action, **Discard Changes**, **Easy Setup & Import/Export**, and the shared **Settings last saved** timestamp. The timestamp uses the WordPress date format and timezone. Primary actions and focus states retain the WordPress admin accent color.
 

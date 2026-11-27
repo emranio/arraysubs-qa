@@ -1,6 +1,6 @@
 # Member details fix browser verification — 2026-10-23
 
-Issue: #85. Targeted fix regression; prior lifecycle QA plans were not reused. Browser: real local WordPress site `http://localhost:10013`, isolated agent-browser session `member-free-qa`, authenticated administrator `admin` via the documented Local auto-login route. The remote site was not touched.
+Issue: #85. Targeted fix regression; prior lifecycle QA plans were not reused. Browser: real local WordPress site `http://localhost:10013`, isolated browser session `member-free-qa`, authenticated administrator `admin` via the documented Local auto-login route. The remote site was not touched.
 
 ## Completed checks
 

@@ -17,7 +17,7 @@ Date: 2026-10-24. Time zone: Asia/Dhaka. This is a fresh, feature-scoped develop
 
 ## Browser and evidence rules
 
-Use the installed Vercel agent-browser CLI. Load `agent-browser skills get core` before browser work and `agent-browser skills get dogfood` for exploratory checks. Navigate with `open`, inspect with `snapshot -i`, act through fresh refs, and re-snapshot after DOM changes. Keep admin, customer and guest contexts in isolated named sessions. Capture screenshots before judging layout or interaction behavior.
+Use the installed the browser. Load `browser skills get core` before browser work and `browser skills get dogfood` for exploratory checks. Navigate with `open`, inspect with `snapshot -i`, act through fresh refs, and re-snapshot after DOM changes. Keep admin, customer and guest contexts in isolated named sessions. Capture screenshots before judging layout or interaction behavior.
 
 Each task must record the execution date, route, browser/session and viewport, affected product and variation IDs, relevant user ID/login/role, exact actions, expected and actual results, and screenshot/DOM/console/network proof where useful. Subscription and order IDs are N/A unless a test creates or affects them. Record persisted product values when they resolve ambiguity. Browser verification is mandatory; WP-CLI or REST evidence may supplement it. Use `wp --allow-root` for required WP-CLI commands and do not add QA environment variables.
 

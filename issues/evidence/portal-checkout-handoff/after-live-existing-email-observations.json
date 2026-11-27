@@ -1,6 +1,6 @@
 {
   "date": "2026-11-16",
-  "environment": "Production; isolated fresh Chromium Incognito via agent-browser",
+  "environment": "Production; isolated fresh Chromium Incognito via browser",
   "account": "Synthetic example.com account created using real portal signup before starting checkout",
   "steps": [
     "Created portal account through signup and observed Dashboard",

@@ -37,7 +37,7 @@ Subscription/order coverage includes more than 50 reverse-linked subscriptions, 
 
 ## Browser checks
 
-All navigation used isolated `agent-browser` sessions with snapshots and screenshots. No customer comments, external messages or real gateway charges were submitted.
+All navigation used isolated the browser sessions with snapshots and screenshots. No customer comments, external messages or real gateway charges were submitted.
 
 | Flow | Observed result and evidence |
 | --- | --- |

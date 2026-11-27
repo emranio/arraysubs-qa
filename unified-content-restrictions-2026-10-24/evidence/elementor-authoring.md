@@ -2,7 +2,7 @@
 
 Date: 2026-10-24, Asia/Dhaka. Active QA task 2, plan `../plan.md`.
 
-Target: `http://localhost:10013/wp-admin/post.php?post=20008&action=elementor`, disposable page **QA unified author Elementor 20261024**. Administrator ID 1 (`admin`). Subscription/order IDs: N/A for this authoring check. Used isolated agent-browser sessions `unified-author-elementor`, `unified-author-elementor-reload`, and `unified-author-elementor-final`; mutations were made through actual editor controls and Publish. DOM/model inspection was read-only verification.
+Target: `http://localhost:10013/wp-admin/post.php?post=20008&action=elementor`, disposable page **QA unified author Elementor 20261024**. Administrator ID 1 (`admin`). Subscription/order IDs: N/A for this authoring check. Used isolated browser sessions `unified-author-elementor`, `unified-author-elementor-reload`, and `unified-author-elementor-final`; mutations were made through actual editor controls and Publish. DOM/model inspection was read-only verification.
 
 Passed authoring checks:
 

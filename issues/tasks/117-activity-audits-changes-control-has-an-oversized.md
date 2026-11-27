@@ -16,7 +16,7 @@ Plan markdown path: N/A; no active QA cycle. Scoped fix plan: inspect the activi
 Affected subscription IDs: 8220 (existing audit row used for read-only verification). Order IDs: N/A.
 Affected WordPress users/customers: browser actor login admin, administrator; actor numeric ID/email N/A. Subscription row references Member #195; login/email/role N/A.
 Exact URL: http://localhost:10013/wp-admin/admin.php?page=arraysubs-mainadmin#/audits/activity-audits.
-Browser context: isolated agent-browser session audit-changes-admin, Chromium, 1440x1000 and 1024x900; local Pro available during this verification.
+Browser context: isolated browser session audit-changes-admin, Chromium, 1440x1000 and 1024x900; local Pro available during this verification.
 Reproduction: open Activity Audits and inspect Changes at the far right of activity rows. The default-size GitCompare icon sits above the unframed label; the control is a href=# link for opening an in-page modal. Evidence: evidence/activity-changes-button/before.png.
 Expected: an extra-small button with aligned label and icon that opens the selected entry's change details without navigation.
 Actual before fix: icon and label lack flex alignment, and the icon has the default 24px size. This record concerns presentation and action semantics; a separate data-loading failure was not reproduced.

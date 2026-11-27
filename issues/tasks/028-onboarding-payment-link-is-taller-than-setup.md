@@ -19,7 +19,7 @@ Plan markdown path: N/A.
 Affected subscription/order IDs: N/A. Affected product IDs: N/A.
 Affected WordPress user/customer: admin, administrator; numeric ID/email N/A.
 Exact URL: http://localhost:10003/wp-admin/admin.php?page=arraysubs-mainadmin#/overview
-Browser context: authenticated local administrator, agent-browser overview-onboarding, 1600x1100 viewport.
+Browser context: authenticated local administrator, browser overview-onboarding, 1600x1100 viewport.
 Reproduction: Load the overview with completed onboarding tasks and compare Review setup, Add another product, and Manage payments.
 Expected: All three action controls have the same height and alignment.
 Actual: Manage payments is taller because an anchor uses content-box sizing while the buttons use border-box sizing.

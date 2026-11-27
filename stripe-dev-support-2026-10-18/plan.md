@@ -34,7 +34,7 @@ Special attention (newer core commits): lifecycle `event_id` uniqueness per fail
 
 ## Method (all phases)
 
-- Browser: agent-browser with isolated sessions `--session sqa-admin`, `--session sqa-<customer>`, `--session sqa-guest`. Screenshots in `screenshots/`.
+- Browser: browser with isolated sessions `--session sqa-admin`, `--session sqa-<customer>`, `--session sqa-guest`. Screenshots in `screenshots/`.
 - WP-CLI always with `--allow-root`, run from the WP root.
 - Fixtures only: every customer/product/page/post/subscription/order/action created by this run is recorded with `scripts/register-fixture.php` into `fixtures.json` (customers/subscriptions also into `capture/fixture-scope.json`). Due dates are brought forward only on fixtures with `\ArraySubs\Developer\Subscriptions::fromId( $id )->setNextPaymentDate( time() + N )`; only fixture actions are run (`wp action-scheduler action run <id> --allow-root`) or left to the queue runner.
 - Payment proof comes from real Stripe test-mode outcomes (PaymentIntents/charges/events), never from manually marking orders paid or firing PHP payment hooks.

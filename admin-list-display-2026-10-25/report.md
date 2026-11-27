@@ -1,6 +1,6 @@
 # Admin list display fixes
 
-Verified October 25, 2026, Asia/Dhaka, against the real local WordPress site at `http://localhost:10013`, using an authenticated administrator and agent-browser. This was a targeted bug fix; active QA plan, scheduled day, and execution-board task are N/A.
+Verified October 25, 2026, Asia/Dhaka, against the real local WordPress site at `http://localhost:10013`, using an authenticated administrator and browser. This was a targeted bug fix; active QA plan, scheduled day, and execution-board task are N/A.
 
 ## Changes
 

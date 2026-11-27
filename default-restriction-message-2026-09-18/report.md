@@ -1,6 +1,6 @@
 # Default restriction message — verified 2026-09-18
 
-Site: http://localhost:10003. Browser: agent-browser with Microsoft Edge; isolated administrator (user 1, admin) and guest sessions. Scope and schedule: [plan.md](plan.md). Subscription/order/customer IDs: N/A. Temporary page IDs: 28519–28532, all removed after testing.
+Site: http://localhost:10003. Browser: browser with Microsoft Edge; isolated administrator (user 1, admin) and guest sessions. Scope and schedule: [plan.md](plan.md). Subscription/order/customer IDs: N/A. Temporary page IDs: 28519–28532, all removed after testing.
 
 ## Result
 

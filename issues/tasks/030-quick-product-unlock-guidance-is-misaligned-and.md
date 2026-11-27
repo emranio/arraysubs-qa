@@ -16,7 +16,7 @@ Active QA task ID and scheduled day: N/A (targeted user-reported design fix). Pl
 Affected subscription/order/product IDs: N/A (product-type selection only).
 Affected WordPress user/customer: admin, administrator; numeric ID/email N/A.
 Exact URL: http://localhost:10003/wp-admin/admin.php?page=arraysubs-mainadmin#/overview
-Browser context: isolated agent-browser product-card-polish session; local authenticated administrator; desktop and mobile.
+Browser context: isolated browser product-card-polish session; local authenticated administrator; desktop and mobile.
 Reproduction: Open + Subscription Product with Pro inactive. Inspect the locked Bundle and Store Credit cards.
 Expected: Compact unlock guidance aligns with the title and description, with clear selectable/locked states.
 Actual: Guidance starts far left of the title in a separate full-width panel, with a heavy divider and excessive repeated heading/bullet spacing.

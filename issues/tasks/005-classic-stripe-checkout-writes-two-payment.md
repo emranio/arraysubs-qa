@@ -29,7 +29,7 @@ class: standard
 ## Route and reproduction
 
 - URLs: `https://mirror-help.arrayhash.com/checkout/` and `https://mirror-help.arrayhash.com/slt2-classic-checkout/`.
-- Browser contexts: isolated real `agent-browser` customer sessions for the block and classic Stripe test-card purchases.
+- Browser contexts: isolated real the browser customer sessions for the block and classic Stripe test-card purchases.
 
 1. Complete the documented block Stripe control checkout.
 2. Complete the classic Stripe checkout with its dedicated buyer.

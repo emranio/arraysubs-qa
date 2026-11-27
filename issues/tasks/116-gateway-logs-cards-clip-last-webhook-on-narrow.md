@@ -15,7 +15,7 @@ class: standard
 Active QA task ID / scheduled day / plan path: N/A; targeted navigation and module verification requested on 2026-10-25. Verification report: qa/gateway-audits-2026-10-25/report.md.
 Affected subscriptions and orders: N/A.
 Affected user: WordPress user #1, login admin, administrator; customers N/A.
-Browser context: isolated agent-browser gateway-admin session, Chromium, viewport 390 x 844, local site http://localhost:10013, Pro active. No data edits needed.
+Browser context: isolated browser gateway-admin session, Chromium, viewport 390 x 844, local site http://localhost:10013, Pro active. No data edits needed.
 Exact routes: /wp-admin/admin.php?page=arraysubs-mainadmin#/settings/gateways and #/renewal-flow/gateway-logs.
 Steps: sign in as admin, open either Gateway Logs destination, use a 390px-wide viewport, inspect the collapsed Paddle/PayPal/Stripe/Mollie cards.
 Expected: Status, Subscriptions, and Last Webhook labels and values fit or wrap within each gateway card.

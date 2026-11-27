@@ -2,7 +2,7 @@
 
 Date: 2026-09-14. Scope: targeted verification of the requested card and guide; no new formal QA cycle or schedule.
 Site: http://localhost:10013/wp-admin/admin.php?page=arraysubs-mainadmin#/overview
-Context: isolated agent-browser session `variable-guide-admin`, authenticated local administrator.
+Context: isolated browser session `variable-guide-admin`, authenticated local administrator.
 
 ## Results
 

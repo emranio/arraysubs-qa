@@ -5,7 +5,7 @@ Result: PASS for progress task #1. Executed 2026-10-24, Asia/Dhaka.
 Plan: `qa/subscription-plans-2026-10-24/plan.md`.
 Scheduled day: 2026-10-24.
 Route: `http://localhost:10013/wp-admin/admin.php?page=arraysubs-mainadmin#/plans`.
-Browser: agent-browser 0.27.3 with real Chromium; isolated `plans-list-qa`, recovered `plans-list-recover`, and final `plans-list-final` sessions. Viewport: 1280 x 577 content area.
+Browser: browser 0.27.3 with real Chromium; isolated `plans-list-qa`, recovered `plans-list-recover`, and final `plans-list-final` sessions. Viewport: 1280 x 577 content area.
 User: WordPress ID 1, login `admin`, local administrator; email N/A. Subscription/order/customer IDs: N/A. No product was created, edited, duplicated, trashed or deleted by this test task.
 
 ## Verified behavior
@@ -39,7 +39,7 @@ Initial page 2 IDs: 5893, 5891, 5888, 6714, 6715, 6716, 6717, 6718, 6719, 6720, 
 
 ## Tool observations and scope notes
 
-PNG screenshot commands stalled the original agent-browser daemon queue. `doctor --offline --quick` reported a healthy install; reconnecting through the same isolated Chrome CDP port restored access, and a fresh final session completed the remaining checks. JPEG screenshots succeeded immediately and were inspected. This did not establish a feature defect.
+PNG screenshot commands stalled the original browser daemon queue. `doctor --offline --quick` reported a healthy install; reconnecting through the same isolated Chrome CDP port restored access, and a fresh final session completed the remaining checks. JPEG screenshots succeeded immediately and were inspected. This did not establish a feature defect.
 
 The CLI's `fill @ref ""` left the search value unchanged; setting the field to `x` and pressing Backspace cleared it and restored results. Early JSONL entries named search-clear/sort-name/sort-date after the unsuccessful CLI clear reflect that retained query and are not claimed as successful sorting evidence. The later `final-sort-*` records contain the successful fresh-session sorting checks; their first/second ordering is documented by the actual names and request parameters, not the provisional ascending/descending case labels.
 

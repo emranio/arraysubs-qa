@@ -1,7 +1,7 @@
 # QA Report — Analytics Pages (A–Z)
 
 - **Date:** 2026-08-30
-- **Tester:** Claude (browser QA via Vercel `agent-browser`, Chrome/CDP)
+- **Tester:** Claude (browser QA via the browser, Chrome/CDP)
 - **Site:** https://mirror-help.arrayhash.com (admin, role `administrator`)
 - **Active QA task ID / scheduled day / plan path:** N/A — no active QA plan board; ad-hoc full sweep requested by the user
 - **Plugins under test:** `arraysubs` (free) + `arraysubspro` (pro), WooCommerce 10.9.4, WC Admin 11.0.1
@@ -29,7 +29,7 @@ Also exercised: SPA route changes between custom and core analytics pages, filte
 
 ## Verified working (no defect)
 
-- All 15 analytics routes render without JS errors; `agent-browser errors` and `console` clean apart from a core `wp.components.tooltip` deprecation warning.
+- All 15 analytics routes render without JS errors; `browser errors` and `console` clean apart from a core `wp.components.tooltip` deprecation warning.
 - SPA navigation into and out of `arraysubs-retention` mounts/unmounts cleanly (Overview cards drop to 0 on leave, return to 10 on re-entry).
 - Retention filters: date range, product multi-select with server-side search (`/retention-analytics/products?search=…`), event-type filter, pagination (`Page 1 of 13 (183 total)` → page 2), empty states ("No cancellation data for this period.").
 - Churn Analysis: search, empty search state, sorting by Risk/Score/Monthly value/Tenure, segment filter (all 34 / active 30 / at_risk 3 / trial 1), CSV export produces a valid 25-row `arraysubs-churn-risk.csv`.
@@ -248,7 +248,7 @@ The card reads `28` and links to Orders filtered to *Subs Purchase + Subs Trial*
 ## Reproduction environment
 
 ```
-agent-browser 0.27.3 (Chrome/CDP, HeadlessChrome 149), session "admin", viewport 1280×800
+browser 0.27.3 (Chrome/CDP, HeadlessChrome 149), session "admin", viewport 1280×800
 WordPress admin: https://mirror-help.arrayhash.com/wp-admin  (user "admin", role administrator)
 Store: WooCommerce 10.9.4, WC Admin 11.0.1, HPOS enabled, gmt_offset = 6
 Screenshots: qa/artifacts/analytics-2026-08-30/

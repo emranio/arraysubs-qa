@@ -2,7 +2,7 @@
 
 Scope confirmed by user on 2026-10-23 after the member-details fix: check My Account/storefront pages and their endpoints for Free/Pro ownership, unavailable modules, account ownership and internal feature-type privacy. This is a fresh targeted scope, tracked as QA task #86; no old lifecycle QA tasks or watcher schedule are reused.
 
-Site: real local WordPress at http://localhost:10013. Admin authentication: documented Local auto-login. Customer authentication: existing Login as Customer feature, in a separate agent-browser session. Existing QA customers and subscriptions will be recorded in the observations. Do not use stale customer passwords.
+Site: real local WordPress at http://localhost:10013. Admin authentication: documented Local auto-login. Customer authentication: existing Login as Customer feature, in a separate browser session. Existing QA customers and subscriptions will be recorded in the observations. Do not use stale customer passwords.
 
 1. Record plugin activation state, module states, My Account menu/profile configuration, and current customer/cart context.
 2. With Pro active, inspect My Account dashboard, subscriptions/detail, orders, downloads, addresses/edit-account, and available Pro account pages. Inspect representative shop/product/cart pages and read-only endpoints.

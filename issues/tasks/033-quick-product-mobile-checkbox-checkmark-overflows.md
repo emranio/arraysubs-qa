@@ -17,7 +17,7 @@ class: standard
 Active QA task: QPO-06; scheduled day: 2026-09-15; plan: qa/quick-product-options-2026-09-15/plan.md.
 Affected subscriptions/orders: N/A. Product: unsaved simple product (QPO Mobile inspection only); same rendering observed on membership creation for product 6394.
 Affected user: WordPress ID 1, login admin, administrator; email N/A.
-URL: http://localhost:10013/wp-admin/admin.php?page=arraysubs-mainadmin#/overview. Browser: isolated agent-browser quick-options-admin session at 390x844, authenticated administrator.
+URL: http://localhost:10013/wp-admin/admin.php?page=arraysubs-mainadmin#/overview. Browser: isolated browser quick-options-admin session at 390x844, authenticated administrator.
 Reproduction: Open Subscription Product; choose Simple; enter title and price; choose Full Flexible; inspect checked Month. Also enable Use fixed end date in the membership step.
 Expected: Tick fits and centers in its checkbox at mobile and desktop widths.
 Actual: The checkmark extends below/right of its 16x16 control. WordPress mobile pseudo-element is 30x30 with margins -3px -5px while FormBuilder retains a 16px input.

@@ -18,7 +18,7 @@ Plan markdown path: N/A; scoped fix plan is in issue #26. Verification report: q
 Affected subscription ID(s) and order ID(s): N/A (list layout, not an individual record).
 Affected WordPress user/customer ID(s), login/email and roles: login admin, administrator role; numeric ID/email N/A; customer N/A.
 Exact routes: http://localhost:10013/wp-admin/admin.php?page=arraysubs-mainadmin#/subscriptions and #/store-credit/history.
-Browser context: authenticated agent-browser session arraysubs-header-local, Chromium, 390 x 844 and 390 x 900.
+Browser context: authenticated browser session arraysubs-header-local, Chromium, 390 x 844 and 390 x 900.
 Reproduction:
 1. Open Subscriptions with a 390px-wide viewport and wait for the list to load.
 2. Inspect the viewport and the subscription list/table, then repeat on Store Credit > Credit History.

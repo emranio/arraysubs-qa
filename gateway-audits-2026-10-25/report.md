@@ -1,7 +1,7 @@
 # Renewal Flow and Audits verification — 2026-10-25
 
 Target: http://localhost:10013, actual local WordPress installation supplied by the user.
-Context: admin #1 (administrator), isolated Chromium agent-browser gateway-admin session; separate gateway-guest session for permissions.
+Context: admin #1 (administrator), isolated Chromium browser gateway-admin session; separate gateway-guest session for permissions.
 Active QA task / scheduled day / execution-plan path: N/A. Targeted implementation verification, not a new scheduled QA cycle.
 
 ## Result

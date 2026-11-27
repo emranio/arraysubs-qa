@@ -4,7 +4,7 @@ Scope: fix issue #158 so questions about choosing recorded activity events rank 
 
 Schedule (Asia/Dhaka): start 01:40 on 2026-11-05; reproduce and inspect ranking, implement the smallest appropriate correction, verify targeted search and the full guide check, then browser regression and push. No recurring watcher.
 
-Targets: current `user-guide` checkout and its generated site served on a run-owned loopback port. Use an isolated agent-browser session. No WordPress settings or portal records need mutation; subscription/order/user IDs are N/A. Preserve existing QA issue history and earlier offboarding evidence.
+Targets: current `user-guide` checkout and its generated site served on a run-owned loopback port. Use an isolated browser session. No WordPress settings or portal records need mutation; subscription/order/user IDs are N/A. Preserve existing QA issue history and earlier offboarding evidence.
 
 Plan:
 

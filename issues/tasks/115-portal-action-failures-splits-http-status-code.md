@@ -16,7 +16,7 @@ Plan markdown path: N/A; no active QA cycle. Scoped fix plan: trace shared badge
 Affected subscription IDs: 27614 and 1808 (existing queue rows only; no changes). Affected order IDs: N/A.
 Affected WordPress user/customer IDs, login/email and roles: browser actor login admin, administrator; numeric ID/email N/A. Displayed customers Stripe SCA Fix QA (stripe-sca-fix-20260815@example.test) and Cust One (cust1@example.com); numeric IDs/roles N/A.
 Exact URL: https://mirror-help.arrayhash.com/wp-admin/admin.php?page=arraysubs-mainadmin#/audits/portal-action-failures.
-Browser context: isolated agent-browser Chromium session http-column-live; viewports 1440x1000 and 1024x900.
+Browser context: isolated browser Chromium session http-column-live; viewports 1440x1000 and 1024x900.
 Reproduction: sign in as administrator, open Portal Action Failures at 1440px, inspect the HTTP column for the five existing 500/409 rows.
 Expected: the warning icon and all three status digits fit together on one line.
 Actual before fix: every status label occupies two text rectangles; 500 renders as 50 then 0 and 409 as 40 then 9. Badge height 43px. Screenshot evidence/http-status-column/before.png.

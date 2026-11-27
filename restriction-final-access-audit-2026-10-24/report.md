@@ -36,7 +36,7 @@ Core-only checks used WP-CLI's per-process plugin exclusion; the installed plugi
 
 The root matrix passed 164/164 visitor checks across 41 four-actor matrices (`evidence/browser-audience-summary.json`), separately from the 112 Elementor checks below.
 
-All browser interactions used agent-browser with separate guest, nonmember, qualifying member, and administrator sessions. Authoring checks compare the same fixture before and after real editor open, ordinary save, and reload. The administrator override was explicitly off where needed to detect accidental bypass.
+All browser interactions used browser with separate guest, nonmember, qualifying member, and administrator sessions. Authoring checks compare the same fixture before and after real editor open, ordinary save, and reload. The administrator override was explicitly off where needed to detect accidental bypass.
 
 Elementor completed 14 Heading-only round trips with the restriction panel unopened, with 112 passing before/after visitor checks. Cases include old ANY, legacy login-only, guest visibility, explicit off values, inverse custom-message flags, unusual version values and a nested child restriction. Switching Use custom message off and reopening also retained the choice and original text. See [Elementor details](evidence/elementor-final-audit.md).
 

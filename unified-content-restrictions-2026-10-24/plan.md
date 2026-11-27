@@ -4,7 +4,7 @@ Scope confirmed by the user: per-post Access Restriction, Elementor content rest
 
 Execution schedule: 2026-10-24, Asia/Dhaka, tasks 1–4 in this session. Fresh board: `board/kanban/`. Preserve existing `qa/issues/` tasks and unrelated source changes.
 
-Target: real local WordPress site http://localhost:10013, serving this checkout. Existing administrator 1 and active member 224; create a disposable customer without memberships and three disposable published pages. Authentication uses temporary WordPress cookies, without changing passwords. Browsers use isolated admin, guest, member, and nonmember sessions through agent-browser only.
+Target: real local WordPress site http://localhost:10013, serving this checkout. Existing administrator 1 and active member 224; create a disposable customer without memberships and three disposable published pages. Authentication uses temporary WordPress cookies, without changing passwords. Browsers use isolated admin, guest, member, and nonmember sessions through browser only.
 
 1. Shared runtime matrix across per-post, Elementor, Gutenberg and shortcode: empty/login-only, guest rejection, forced login, ALL vs ANY, zero spend, feature selection/children, admin bypass on/off, message default/custom/empty, HTML and redirect behavior. Validate REST/config persistence and internal shop/comment message consumers.
 2. Browser authoring on all three surfaces: same group order, condition pickers, automatic non-editable login, ability to turn login off after clearing all conditions, Match Logic, admin switch, message toggle and saved custom text. Save, reload, inspect screenshots, and exercise per-post redirect destination.

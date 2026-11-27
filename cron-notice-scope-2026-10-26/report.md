@@ -1,6 +1,6 @@
 # Cron notice scope and Gateway Logs layout
 
-Verified against the actual local WordPress installation at http://localhost:10013 using agent-browser and administrator ID 1 (`admin`; administrator and demo_member roles), with ArraySubs Pro active. This is validation of the requested UI changes; no subscription lifecycle QA plan was reused. Subscription and order IDs: N/A.
+Verified against the actual local WordPress installation at http://localhost:10013 using browser and administrator ID 1 (`admin`; administrator and demo_member roles), with ArraySubs Pro active. This is validation of the requested UI changes; no subscription lifecycle QA plan was reused. Subscription and order IDs: N/A.
 
 The shared cron warning now appears only in Tools > Site Health > Status, WooCommerce > Status > Scheduled Actions, and ArraySubs > Renewal Flow > Gateway Logs. On Gateway Logs, it renders inside the page content below the header menu and above the gateway cards. Re-check and dismissal keep the Gateway Logs hash route. Gateway cards use the available row width without reserving empty columns.
 

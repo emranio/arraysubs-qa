@@ -2,7 +2,7 @@
 
 Result: passed. The actual WordPress editors preserved previous access rules on unrelated saves, converted only after an explicit review/apply action, and retained custom messages. No product defect was found during this authoring pass.
 
-Environment: `http://localhost:10013`, built ArraySubs assets, real Gutenberg document sidebar and per-post modal. Vercel agent-browser isolated sessions `legacy-react` and `legacy-react-guest`; private supplied admin auth state. All editor mutations used snapshot references and keyboard input. WP-CLI was used only for dedicated fixture setup and readback of persisted values. No API-only replacement for browser authoring was used.
+Environment: `http://localhost:10013`, built ArraySubs assets, real Gutenberg document sidebar and per-post modal. the browser isolated sessions `legacy-react` and `legacy-react-guest`; private supplied admin auth state. All editor mutations used snapshot references and keyboard input. WP-CLI was used only for dedicated fixture setup and readback of persisted values. No API-only replacement for browser authoring was used.
 
 Owned fixtures: page 20082 (per-post) and page 20083 (Gutenberg). Parent QA run owns cleanup. The parent store matrix pages and global settings were not changed. Both browser sessions are closed.
 

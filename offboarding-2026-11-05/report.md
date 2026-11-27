@@ -7,7 +7,7 @@ Scope: ArraySubs 2.1.0, ArraySubs Pro 1.3.0, and the ArrayHash user portal. This
 - Real WordPress browser interactions used LocalWP at `http://localhost:10013/` with the user's authorized admin account. Both plugins started active.
 - Five initial browser-generated records were verified in the live portal's administrator list and detail page through the user's signed-in Edge session. Screenshots: `evidence/live-offboarding-records.jpg` and `evidence/live-offboarding-detail.jpg`.
 - Additional portal authorization, filter, pagination, network recovery, and input-boundary tests used the actual portal application with a dedicated local PostgreSQL schema and disposable fixture accounts. These were separate from production users and records.
-- Agent-browser drove LocalWP and the isolated portal. Its Chrome connector could not attach the user's existing Edge login, so the app's browser connector was used for the authenticated production readback.
+- browser drove LocalWP and the isolated portal. Its Chrome connector could not attach the user's existing Edge login, so the app's browser connector was used for the authenticated production readback.
 - The external contact page was opened and inspected; its form was never submitted.
 
 ## Completed checks
@@ -59,7 +59,7 @@ Build output included existing translator-comment and Next tracing warnings; Wor
 
 Both plugins are active again. The complete active-plugin list matches the original baseline, and the offboarding outbox is empty. Temporary observer code, endpoint overrides, and run-owned help-receipt transients were removed. No notification preferences, subscriptions, orders, or unrelated plugins were changed. See `evidence/restored-wordpress-state.json`.
 
-The dedicated local portal process, isolated schema, fixture credentials, and temporary source copy were removed; port 3016 has no listener. Only run-owned agent-browser sessions were closed. The user's signed-in Edge session remains available. See `evidence/local-portal-cleanup.json`.
+The dedicated local portal process, isolated schema, fixture credentials, and temporary source copy were removed; port 3016 has no listener. Only run-owned browser sessions were closed. The user's signed-in Edge session remains available. See `evidence/local-portal-cleanup.json`.
 
 Six test records from `http://localhost:10013/` remain in the production portal as evidence. The new notification feature sent one real labelled QA email; no retrospective emails were sent for the five records created before that feature was added. The portal's log confirms provider acceptance; inbox delivery/read status was not inspected.
 

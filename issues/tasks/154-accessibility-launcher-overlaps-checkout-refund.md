@@ -18,7 +18,7 @@ class: standard
 - Active QA task: portal-mobile-checkout-2026-11-01 progress task #3, scheduled 2026-11-01 (Asia/Dhaka), plan qa/portal-mobile-checkout-2026-11-01/plan.md.
 - Affected subscription IDs and order IDs: N/A; no purchase was submitted.
 - Affected WordPress customer/user IDs, login/email and roles: N/A. Anonymous external portal; email and card fields stayed empty.
-- Route: http://localhost:3001/checkout/professional/ . Context: isolated agent-browser portal-mobile-android, Pixel 9 user agent with compact 320x568 viewport, local optimized build.
+- Route: http://localhost:3001/checkout/professional/ . Context: isolated browser portal-mobile-android, Pixel 9 user agent with compact 320x568 viewport, local optimized build.
 
 ## Reproduction
 1. Open the local checkout and let the real Freemius form load.

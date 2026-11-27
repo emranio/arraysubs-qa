@@ -25,7 +25,7 @@ Pass criteria:
 
 Boundaries: no real purchase or trial will be submitted, no real identity/payment details will be entered, and no account or email workflow will be triggered. Empty required-field validation may be exercised. Subscriptions, orders, WordPress user IDs, and customer accounts are N/A.
 
-Method: Vercel agent-browser with isolated sessions and mobile/touch device emulation. A separate iOS simulator availability check is allowed; if unavailable, explicitly report that these results do not certify Safari, native mobile keyboards, or physical devices. Xcode/iOS simulator discovery failed (`xcrun simctl failed. Xcode may not be installed.`), so the planned matrix uses Chromium mobile emulation.
+Method: the browser with isolated sessions and mobile/touch device emulation. A separate iOS simulator availability check is allowed; if unavailable, explicitly report that these results do not certify Safari, native mobile keyboards, or physical devices. Xcode/iOS simulator discovery failed (`xcrun simctl failed. Xcode may not be installed.`), so the planned matrix uses Chromium mobile emulation.
 
 Existing issues reviewed: qa/issues #149 (Edge iframe loading), #148 (Freemius recovery email sender), #147 (custom coupon forwarding). Preserve their statuses; this local Chromium mobile check does not close the Edge issue or verify production deployment.
 

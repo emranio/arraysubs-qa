@@ -14,7 +14,7 @@ class: standard
 QA task RM-4, scheduled 2026-09-18; plan qa/restricted-messages-2026-09-18/plan.md.
 Subscription/order IDs: N/A. Customer/user: ID 1, admin, administrator.
 URL: http://localhost:10003/wp-admin/post.php?post=28480&action=edit (page 28480).
-Browser: agent-browser with Edge 153.
+Browser: browser with Edge 153.
 Steps: open Edit restriction; select text in Restricted Message; click Insert/edit link; enter a URL; click OK.
 Expected: link dialog appears above the restriction modal and can be submitted.
 Actual: OK is covered by the restriction modal; TinyMCE dialog z-index is 65536 and WordPress modal overlay is 100000.

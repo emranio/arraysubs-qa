@@ -1,7 +1,7 @@
 # Home report consolidation verification
 
 Date: 2026-10-24, Asia/Dhaka. Scope: this development change only; no recurring automation.
-Environment: http://localhost:10013. Admin: documented LocalWP admin auto-login. Browser: isolated agent-browser session `report-home-admin`.
+Environment: http://localhost:10013. Admin: documented LocalWP admin auto-login. Browser: isolated browser session `report-home-admin`.
 
 Reports inventory: Subscription Performance, Retention Analytics, AI Churn Analysis, AI Revenue Forecast, Orders Analytics, Revenue Analytics, Products Analytics, Variations Analytics, Customers Analytics, Orders, Subscriptions, Member Insights, Store Credit Balances, Credit Transaction History, Activity Audit Trail, Gateway Health & Webhooks, Scheduled Job Logs.
 

@@ -4,7 +4,7 @@ Prepared and scheduled: 2026-10-18, Asia/Dhaka. Scope confirmed by the owner's i
 
 Sources: `documentations/plans/arraysubs-developer-support-prerequisite-fixes.md` and `documentations/plans/arraysubs-developer-support-requirements.md`.
 
-Site: http://localhost:10013 (local development checkout). Both plugins initially active; official Stripe gateway initially inactive. Browser automation uses agent-browser isolated sessions and screenshots. Local WP-CLI uses the site's existing MySQL socket, with `--allow-root`; no credentials or environment changes. Preserve all existing `qa/issues/` records. New failures go to that board with task/plan/date and fixture identity.
+Site: http://localhost:10013 (local development checkout). Both plugins initially active; official Stripe gateway initially inactive. Browser automation uses browser isolated sessions and screenshots. Local WP-CLI uses the site's existing MySQL socket, with `--allow-root`; no credentials or environment changes. Preserve all existing `qa/issues/` records. New failures go to that board with task/plan/date and fixture identity.
 
 ## Execution schedule
 

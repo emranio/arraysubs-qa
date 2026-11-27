@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Feature video stage</title>
+<style>
+@font-face { font-family: 'FV Display'; src: url('fonts/funnel-display.woff2') format('woff2'); font-weight: 300 800; }
+@font-face { font-family: 'FV Sans'; src: url('fonts/funnel-sans.woff2') format('woff2'); font-weight: 300 800; }
+:root {
+  --violet: #7E43F6;
+  --orange: #FE6C0D;
+  --ink: #14100b;
+  --aub: #2B0A33;
+  --lav: #EDDBFD;
+  --cream: #FDF4EB;
+  --peach: #FDD9CD;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; width: 1440px; height: 810px; overflow: hidden; background: #fff; }
+#vp { position: relative; width: 1440px; height: 810px; overflow: hidden; background: #f0f0f1; }
+#cam { position: absolute; left: 0; top: 0; width: 1440px; height: 810px; transform-origin: 0 0; }
+#app { display: block; width: 1440px; height: 810px; border: 0; background: #fff; }
+.layer { position: absolute; pointer-events: none; }
+
+/* Spotlight: the hole carries a huge shadow that dims everything around the target. */
+#hole { left: 0; top: 0; width: 0; height: 0; border-radius: 14px; opacity: 0;
+  box-shadow: 0 0 0 4000px rgba(25, 8, 33, 0.42); }
+#ring { left: 0; top: 0; width: 0; height: 0; border-radius: 14px; opacity: 0;
+  border: 3px solid var(--violet);
+  box-shadow: 0 0 0 5px rgba(126, 67, 246, 0.20), 0 6px 22px rgba(43, 10, 51, 0.18); }
+#label { left: 0; top: 0; opacity: 0; max-width: 560px; padding: 10px 16px 11px 14px;
+  border-radius: 14px; background: var(--aub); color: #fff;
+  font: 700 18px/1.28 'FV Sans', system-ui, sans-serif; letter-spacing: -0.005em;
+  box-shadow: 0 10px 28px rgba(43, 10, 51, 0.30); display: flex; gap: 10px; align-items: flex-start; }
+#label .dot { flex: none; width: 10px; height: 10px; margin-top: 6px; border-radius: 50%; background: var(--orange); }
+#label .num { flex: none; display: grid; place-items: center; width: 24px; height: 24px; margin-top: -1px; border-radius: 50%;
+  background: var(--orange); color: #fff; font: 800 14px/1 'FV Sans'; }
+#label b { color: #FFB27F; font-weight: 800; }
+
+#cursor { left: 0; top: 0; width: 30px; height: 30px; opacity: 0; transform-origin: 4px 3px; filter: drop-shadow(0 2px 3px rgba(0,0,0,.28)); }
+#ripple { left: 0; top: 0; width: 56px; height: 56px; margin: -28px 0 0 -28px; border-radius: 50%; opacity: 0;
+  border: 3px solid var(--violet); background: rgba(126, 67, 246, 0.14); }
+
+#lower { left: 32px; bottom: 30px; max-width: 820px; opacity: 0; display: flex; gap: 14px; align-items: center;
+  padding: 14px 22px 15px 14px; border-radius: 20px; background: var(--aub); color: #fff;
+  box-shadow: 0 14px 36px rgba(25, 8, 33, 0.32); }
+#lower.pos-br { left: auto; right: 32px; }
+#lower.pos-bc { left: 50%; translate: -50% 0; }
+#lower.pos-tl { bottom: auto; top: 30px; }
+#lower.pos-tr { bottom: auto; top: 30px; left: auto; right: 32px; }
+#lower .chip { flex: none; display: grid; place-items: center; width: 46px; height: 46px; border-radius: 50%;
+  background: var(--orange); color: #fff; font: 800 17px/1 'FV Display'; letter-spacing: 0.02em; }
+#lower .kicker { display: block; margin-bottom: 4px; color: #FFB27F; font: 800 12.5px/1 'FV Sans'; letter-spacing: 0.14em; text-transform: uppercase; }
+#lower .text { display: block; font: 650 22px/1.28 'FV Display'; letter-spacing: -0.01em; }
+#lower .text b { color: #FFB27F; font-weight: 800; }
+
+/* Full-screen title cards: flat geometric scene on lavender. */
+#card { left: 0; top: 0; width: 1440px; height: 810px; overflow: hidden; background: var(--lav); color: var(--aub); opacity: 0; }
+#card .s1 { position: absolute; width: 600px; height: 600px; right: -170px; top: -230px; border-radius: 50%; background: var(--orange); }
+#card .s2 { position: absolute; width: 430px; height: 430px; left: -150px; bottom: -210px; border-radius: 50%; background: var(--violet); }
+#card .s3 { position: absolute; width: 250px; height: 250px; right: 150px; bottom: -120px; border-radius: 50%; border: 34px solid var(--aub); }
+#card .s4 { position: absolute; width: 190px; height: 64px; right: 330px; top: 92px; border-radius: 999px; background: var(--peach); rotate: -14deg; }
+#card .dots { position: absolute; left: 120px; top: 76px; width: 170px; height: 78px;
+  background-image: radial-gradient(var(--aub) 2.6px, transparent 3px); background-size: 22px 22px; opacity: 0.85; }
+#card .squig { position: absolute; right: 70px; top: 360px; width: 150px; height: 60px; }
+#card .content { position: absolute; left: 120px; top: 50%; translate: 0 -46%; width: 980px; }
+#card .brand { display: flex; align-items: center; gap: 14px; margin-bottom: 34px; font: 800 26px/1 'FV Display'; letter-spacing: -0.01em; }
+#card .brand img { width: 46px; height: 46px; border-radius: 12px; }
+#card .tier { padding: 7px 13px 8px; border-radius: 999px; background: var(--aub); color: #fff; font: 800 14px/1 'FV Sans'; letter-spacing: 0.1em; text-transform: uppercase; }
+#card .tier.pro { background: var(--violet); }
+#card .kicker { display: inline-flex; align-items: center; gap: 12px; margin-bottom: 22px; font: 800 16px/1 'FV Sans'; letter-spacing: 0.16em; text-transform: uppercase; }
+#card .kicker i { display: grid; place-items: center; width: 40px; height: 40px; border-radius: 50%; background: var(--aub); color: #fff; font: 800 16px/1 'FV Display'; font-style: normal; letter-spacing: 0; }
+#card h1 { margin: 0; font: 800 88px/0.96 'FV Display'; letter-spacing: -0.035em; text-transform: uppercase; }
+#card.intro h1 { font-size: 104px; }
+#card h1 em { font-style: normal; color: var(--violet); }
+#card p { margin: 28px 0 0; max-width: 780px; font: 560 27px/1.36 'FV Sans'; color: rgba(43, 10, 51, 0.86); }
+#card .url { display: inline-flex; align-items: center; gap: 12px; margin-top: 36px; padding: 15px 24px; border-radius: 999px; background: var(--aub); color: #fff; font: 700 22px/1 'FV Sans'; }
+#card .url i { width: 12px; height: 12px; border-radius: 50%; background: var(--orange); }
+
+#ghost { left: 0; top: 0; width: 1440px; height: 810px; opacity: 0; }
+#vp.bare .layer:not(#ghost):not(#card) { visibility: hidden !important; }
+</style>
+</head>
+<body>
+<div id="vp">
+  <div id="cam"><iframe id="app" name="app" src="about:blank"></iframe></div>
+  <img id="ghost" class="layer" alt="">
+  <div id="hole" class="layer"></div>
+  <div id="ring" class="layer"></div>
+  <div id="label" class="layer"></div>
+  <div id="lower" class="layer"><span class="chip"></span><span><span class="kicker"></span><span class="text"></span></span></div>
+  <div id="ripple" class="layer"></div>
+  <svg id="cursor" class="layer" viewBox="0 0 30 30" aria-hidden="true">
+    <path d="M4 2.5 L4 24 L9.6 18.8 L13.4 27.2 L17.3 25.4 L13.6 17.3 L21 17 Z" fill="#111" stroke="#fff" stroke-width="2" stroke-linejoin="round"/>
+  </svg>
+  <div id="card" class="layer">
+    <div class="s1"></div><div class="s2"></div><div class="s3"></div><div class="s4"></div><div class="dots"></div>
+    <svg class="squig" viewBox="0 0 150 60"><path d="M6 40 C 24 6, 42 6, 54 30 S 84 56, 98 30 S 128 6, 144 26" fill="none" stroke="#2B0A33" stroke-width="10" stroke-linecap="round"/></svg>
+    <div class="content"></div>
+  </div>
+</div>
+<script>
+(() => {
+  const $ = (id) => document.getElementById(id);
+  const W = 1440, H = 810;
+  const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+  // *word* -> emphasis, **word** -> bold accent
+  const rich = (s, tag) => esc(s).replace(/\*\*(.+?)\*\*/g, '<b>$1</b>').replace(/\*(.+?)\*/g, `<${tag}>$1</${tag}>`);
+  const last = {};
+
+  function placeLabel(r, side) {
+    const el = $('label');
+    const lw = el.offsetWidth, lh = el.offsetHeight, gap = 14;
+    const room = { top: r.y, bottom: H - (r.y + r.h), left: r.x, right: W - (r.x + r.w) };
+    if (!side || side === 'auto') {
+      side = room.top >= lh + gap + 10 ? 'top' : room.bottom >= lh + gap + 10 ? 'bottom' : room.right >= lw + gap ? 'right' : 'left';
+    }
+    let x, y;
+    if (side === 'top' || side === 'bottom') {
+      x = r.x + r.w / 2 - lw / 2;
+      y = side === 'top' ? r.y - gap - lh : r.y + r.h + gap;
+    } else {
+      y = r.y + r.h / 2 - lh / 2;
+      x = side === 'left' ? r.x - gap - lw : r.x + r.w + gap;
+    }
+    x = Math.max(16, Math.min(W - lw - 16, x));
+    y = Math.max(16, Math.min(H - lh - 16, y));
+    el.style.translate = `${x}px ${y}px`;
+  }
+
+  window.S = {
+    apply(st) {
+      if (st.cam) {
+        $('cam').style.transform = `translate(${st.cam.x}px, ${st.cam.y}px) scale(${st.cam.s})`;
+      }
+      if (st.ring) {
+        const r = st.ring;
+        for (const id of ['ring', 'hole']) {
+          const el = $(id);
+          const k = r.k ?? 1;
+          const w = r.w * k, h = r.h * k;
+          el.style.translate = `${r.x - (w - r.w) / 2}px ${r.y - (h - r.h) / 2}px`;
+          el.style.width = `${w}px`;
+          el.style.height = `${h}px`;
+        }
+        $('ring').style.opacity = r.o;
+        $('hole').style.opacity = (r.dim ? 1 : 0) * r.o;
+        const lab = $('label');
+        const key = `${r.label}|${r.num}`;
+        if (last.label !== key) {
+          last.label = key;
+          lab.innerHTML = r.label ? `${r.num ? `<span class="num">${esc(r.num)}</span>` : '<span class="dot"></span>'}<span>${rich(r.label, 'b')}</span>` : '';
+        }
+        lab.style.opacity = r.label ? r.o : 0;
+        if (r.label) placeLabel(r, r.side);
+      }
+      if (st.cursor) {
+        const c = st.cursor, el = $('cursor');
+        el.style.translate = `${c.x - 4}px ${c.y - 3}px`;
+        el.style.opacity = c.o;
+        el.style.scale = c.press ? String(1 - 0.18 * c.press) : '1';
+      }
+      if (st.ripple) {
+        const p = st.ripple, el = $('ripple');
+        el.style.translate = `${p.x}px ${p.y}px`;
+        el.style.scale = String(0.35 + p.p * 0.95);
+        el.style.opacity = p.p > 0 && p.p < 1 ? String(1 - p.p) : '0';
+      }
+      if (st.lower) {
+        const l = st.lower, el = $('lower');
+        const key = `${l.chip}|${l.kicker}|${l.text}|${l.pos}`;
+        if (last.lower !== key) {
+          last.lower = key;
+          el.querySelector('.chip').textContent = l.chip || '';
+          el.querySelector('.chip').style.display = l.chip ? '' : 'none';
+          el.querySelector('.kicker').textContent = l.kicker || '';
+          el.querySelector('.kicker').style.display = l.kicker ? '' : 'none';
+          el.querySelector('.text').innerHTML = l.text ? rich(l.text, 'b') : '';
+          el.className = `layer pos-${l.pos || 'bl'}`;
+        }
+        el.style.opacity = l.text ? l.o : 0;
+        el.style.transform = `translateY(${(1 - l.o) * 14}px)`;
+      }
+      if (st.card) {
+        const c = st.card, el = $('card');
+        if (c.html !== undefined && last.card !== c.html) {
+          last.card = c.html;
+          el.querySelector('.content').innerHTML = c.html;
+          el.className = `layer ${c.variant || ''}`;
+        }
+        el.style.opacity = c.o;
+        el.style.transform = `translateY(${c.ty || 0}%)`;
+        const par = (c.ty || 0) * 0.35;
+        el.querySelector('.s1').style.transform = `translateY(${par}%)`;
+        el.querySelector('.s2').style.transform = `translateY(${-par}%)`;
+      }
+      if (st.ghost) {
+        const g = st.ghost, el = $('ghost');
+        if (g.src !== undefined) el.src = g.src;
+        el.style.opacity = g.o;
+      }
+      return true;
+    },
+    cardHtml(c) {
+      const tier = c.tier ? `<span class="tier ${String(c.tier).toLowerCase() === 'pro' ? 'pro' : ''}">${esc(c.tier)}</span>` : '';
+      const brand = `<div class="brand"><img src="icon.png" alt="">ArraySubs ${tier}</div>`;
+      const kicker = c.kicker ? `<div class="kicker">${c.num ? `<i>${esc(c.num)}</i>` : ''}${esc(c.kicker)}</div>` : '';
+      const sub = c.sub ? `<p>${rich(c.sub, 'b')}</p>` : '';
+      const url = c.url ? `<div class="url"><i></i>${esc(c.url)}</div>` : '';
+      return `${brand}${kicker}<h1>${rich(c.title, 'em')}</h1>${sub}${url}`;
+    },
+    bare(on) { document.getElementById('vp').classList.toggle('bare', !!on); return true; },
+    ready() { return document.fonts.ready.then(() => true); },
+  };
+})();
+</script>
+</body>
+</html>

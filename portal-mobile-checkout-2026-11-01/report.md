@@ -6,7 +6,7 @@ Target: optimized local production build at http://localhost:3001, with real Fre
 
 Status: complete. One low-priority issue found, fixed locally, and verified; no remaining failures in the covered flows.
 
-Testing uses agent-browser mobile device emulation in Chromium. The iOS simulator is unavailable because `xcrun simctl` failed. Physical iPhone/Android hardware, Safari/WebKit, native keyboards, and completed payments are outside the verified scope.
+Testing uses browser mobile device emulation in Chromium. The iOS simulator is unavailable because `xcrun simctl` failed. Physical iPhone/Android hardware, Safari/WebKit, native keyboards, and completed payments are outside the verified scope.
 
 ## Device matrix
 

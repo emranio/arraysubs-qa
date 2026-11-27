@@ -33,7 +33,7 @@ All three are closed in `qa/issues/`.
 
 ## Environment notes
 
-Chrome for Testing 149 displayed a blank Gutenberg canvas with WordPress `block-editor.js` reporting `contentDocument` as null for its blob iframe. This occurred on repeated page loads before block editing. Continued Gutenberg/per-post tests through agent-browser with installed Edge 153, where the canvas and controls worked normally and no JS errors were reported. Elementor/CPT/guest tests used Chrome for Testing.
+Chrome for Testing 149 displayed a blank Gutenberg canvas with WordPress `block-editor.js` reporting `contentDocument` as null for its blob iframe. This occurred on repeated page loads before block editing. Continued Gutenberg/per-post tests through browser with installed Edge 153, where the canvas and controls worked normally and no JS errors were reported. Elementor/CPT/guest tests used Chrome for Testing.
 
 WP-CLI used the existing Local MySQL socket via PHP's `mysqli.default_socket`, always with `--allow-root`. Existing Elementor PHP deprecation and WordPress AI-provider notices appeared during CLI bootstrap and did not prevent checks.
 

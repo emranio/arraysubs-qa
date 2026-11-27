@@ -4,7 +4,7 @@
 |---|---|
 | Date | 2026-08-15 |
 | Site | Staging (`mirror-help.arrayhash.com`) |
-| Browser | Headless Chrome 149.0.0.0 on Linux x86_64 via `agent-browser` 0.27.3 |
+| Browser | Headless Chrome 149.0.0.0 on Linux x86_64 via the browser 0.27.3 |
 | Sessions | `paddle-mig-qa-*` isolated customer sessions |
 | Scope | Paddle sandbox subscription-only, regular-only, mixed-cart, and cancelled-overlay checkout |
 | Plugins | ArraySubs 1.8.12; ArraySubsPro 1.1.3 |

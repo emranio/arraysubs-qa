@@ -17,7 +17,7 @@ class: standard
 Active QA task ID/scheduled day/plan: N/A (user-reported fix; no active QA cycle).
 Affected subscriptions/orders: N/A.
 Affected WordPress user: ID 1, login admin, administrator (also demo_member); customer: N/A.
-Site/browser: http://localhost:10013, agent-browser administrator session gateway-card-design.
+Site/browser: http://localhost:10013, browser administrator session gateway-card-design.
 Route: /wp-admin/admin.php?page=arraysubs-mainadmin#/renewal-flow/gateway-logs.
 Reproduction: Expand Stripe or Mollie and follow WooCommerce Settings while the official provider plugin is inactive.
 Expected: Open a valid provider settings or setup destination.

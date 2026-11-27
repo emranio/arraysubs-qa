@@ -42,7 +42,7 @@ Changed (core `arraysubs`, no build step; `editor.js` is enqueued raw):
 - `src/Features/ElementorIntegration/assets/editor.js` `ensureAccessFormat()`: a loaded element whose `arraysubs_access_version` is already >= 2 is never downgraded to legacy; a loaded `1` stays legacy; otherwise `isLegacyRaw()` decides as before, so genuinely old data is still detected.
 - `changelog.draft.txt`: `fixed:` entry added.
 
-Verification (agent-browser headed session, admin ID 1, http://localhost:10013/wp-admin/post.php?post=19967&action=elementor, Elementor 4.3.2):
+Verification (browser headed session, admin ID 1, http://localhost:10013/wp-admin/post.php?post=19967&action=elementor, Elementor 4.3.2):
 
 1. Pre-check with the stale autosave 20047 still present: `window.ArraySubsElementor.savedSettings.c06d4f1` now mirrored the autosave (`arraysubs_enable`, `arraysubs_login_required`, `arraysubs_status`, `arraysubs_use_default_message`) instead of the published `{arraysubs_enable:'yes'}`; version resolved `2`.
 2. Discarded 20047 (`wp post delete 20047 --force`, same as Elementor's discard) and reloaded: legacy baseline confirmed, `arraysubs_access_version === '1'`, notice "Original access rules are preserved" visible, message controls hidden (evidence/136-elementor-autosave-legacy/01-legacy-before-convert.png).

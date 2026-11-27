@@ -1,6 +1,6 @@
 # Global restriction message verification
 
-Scope confirmed by user: expose the global rich-text restriction message at the start of Content Gate, use it for empty content-restriction messages (including login-only), preserve custom overrides. Site: http://localhost:10003. Admin: local auto-login user 1. Guest: isolated agent-browser session. Existing QA issues are preserved.
+Scope confirmed by user: expose the global rich-text restriction message at the start of Content Gate, use it for empty content-restriction messages (including login-only), preserve custom overrides. Site: http://localhost:10003. Admin: local auto-login user 1. Guest: isolated browser session. Existing QA issues are preserved.
 
 Schedule: 2026-09-18 after implementation/build, in the following order. No recurring watcher.
 

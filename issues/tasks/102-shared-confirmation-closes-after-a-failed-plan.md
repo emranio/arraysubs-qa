@@ -19,7 +19,7 @@ Plan markdown path: qa/subscription-plans-2026-10-24/plan.md.
 Affected subscription/order IDs: N/A. Product: dedicated fixture20077.
 User/customer: ID1 admin, administrator; customer N/A.
 Exact route: http://localhost:10013/wp-admin/admin.php?page=arraysubs-mainadmin#/plans?search=Plans%20QA%202026-10-24%20Simple.
-Browser context: authenticated administrator, agent-browser plans-primary, desktop1280x577.
+Browser context: authenticated administrator, browser plans-primary, desktop1280x577.
 Reproduction: Open billing editor, change price36 to40; change product metadata in another context; continue to review and Save billings; confirm.
 Expected:409 stale-version message, entered values retained, shared confirmation remains open with retry/cancel and visible error, as required by AGENTS.
 Actual:409 correctly prevents the write and retains values, but shared useConfirm closes its confirmation after rejection. Both core and Pro helpers set isOpen:false in catch despite the documented contract.

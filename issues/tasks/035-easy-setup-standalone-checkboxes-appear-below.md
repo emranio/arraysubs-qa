@@ -15,7 +15,7 @@ class: standard
 ---
 
 Active QA task ID / scheduled day / plan: N/A; targeted user-reported local UI fix. Subscription IDs / order IDs: N/A. Affected WordPress user: admin, administrator; numeric ID N/A, not account-specific. Customer IDs / roles: N/A.
-Test URL: http://localhost:10013/wp-admin/admin.php?page=arraysubs-mainadmin#/easy-setup. Browser context: isolated agent-browser easy-setup-checkbox-admin session, authenticated admin with Pro active.
+Test URL: http://localhost:10013/wp-admin/admin.php?page=arraysubs-mainadmin#/easy-setup. Browser context: isolated browser easy-setup-checkbox-admin session, authenticated admin with Pro active.
 Reproduction: open Review setup, choose Start Over, advance to Billing & Renewal Rules and Checkout & Cart Rules. Inspect Allow Early Renew and Hide First billing cycle info, Hide shipping charge info, Hide Duration info.
 Expected: checkbox appears on the left, with label and optional description beside it, matching Additional Features & Tools checkbox rows.
 Actual: standalone checkbox renders below its label and help text inside a vertically stacked card.

@@ -7,4 +7,4 @@ Scope confirmed 2026-10-24 Asia/Dhaka: seven-step admin editor at http://localho
 - Use disposable local customer/subscription fixtures to test My Account reasons, targeted discount, pause, downgrade and support offers, retention-off cancellation, and core-only behavior where applicable.
 - Preserve original settings privately, restore test settings, remove fixtures, invalidate short-lived auth sessions, and retain evidence/report here.
 
-Authentication: short-lived WordPress-generated local cookies for administrator ID 1 and a disposable customer, each in isolated agent-browser sessions. Never store tokens or passwords in these artifacts. WP-CLI uses --allow-root and the site's Local MySQL socket. No Composer installation or phpcs.
+Authentication: short-lived WordPress-generated local cookies for administrator ID 1 and a disposable customer, each in isolated browser sessions. Never store tokens or passwords in these artifacts. WP-CLI uses --allow-root and the site's Local MySQL socket. No Composer installation or phpcs.

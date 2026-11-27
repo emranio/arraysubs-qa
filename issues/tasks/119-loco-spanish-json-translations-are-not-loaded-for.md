@@ -24,7 +24,7 @@ Fixed and verified. Core now loads entrypoint and lazy-chunk translations throug
 - WordPress user: ID 1, login `admin`, role `administrator`. User locale temporarily set from empty/default to `es_ES` and restored after testing. Customer IDs: N/A.
 - Site/admin route: `http://localhost:10013/wp-admin/admin.php?page=arraysubs-mainadmin#/plans`.
 - Loco route: `http://localhost:10013/wp-admin/admin.php?path=languages%2Floco%2Fplugins%2Farraysubs-es_ES.po&bundle=arraysubs%2Farraysubs.php&domain=arraysubs&page=loco-plugin&action=file-edit`.
-- Browser context: isolated `agent-browser --session arraysubs-loco-investigation`, authenticated as admin. WordPress 7.1.3, ArraySubs 2.1.0, ArraySubsPro 1.3.0 active, Loco Translate 2.8.9 installed and activated for this investigation.
+- Browser context: isolated `browser --session arraysubs-loco-investigation`, authenticated as admin. WordPress 7.1.3, ArraySubs 2.1.0, ArraySubsPro 1.3.0 active, Loco Translate 2.8.9 installed and activated for this investigation.
 
 ## Reproduction
 

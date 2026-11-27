@@ -17,7 +17,7 @@ class: standard
 Active QA task ID / scheduled day / plan: N/A; targeted user-reported local fix, no active QA cycle.
 Affected subscription ID: 5999. Related order ID: 5998.
 Affected customer: ID 2, display name Box Optional QA, email box-optional-20260910@example.test; login and role not yet checked. Browser user: admin, administrator.
-Exact route: http://localhost:10013/wp-admin/admin.php?page=arraysubs-mainadmin#/subscriptions/detail/5999. Browser context: isolated agent-browser customer-link-admin session on the local site.
+Exact route: http://localhost:10013/wp-admin/admin.php?page=arraysubs-mainadmin#/subscriptions/detail/5999. Browser context: isolated browser customer-link-admin session on the local site.
 Reproduction: open subscription 5999 and click Box Optional QA under Customer Information.
 Expected: http://localhost:10013/wp-admin/admin.php?page=arraysubs-mainadmin#/manage-members/2 displays the selected member.
 Actual: the rendered link targets #/customers/2, which has no registered React route; user reports a blank page.

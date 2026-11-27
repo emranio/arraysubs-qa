@@ -12,7 +12,7 @@ Actual Spanish output, in both Pro states: **Pedido / Fecha / Estado / Total / A
 
 ## Environment and cases
 
-Actual local site http://localhost:10013, ArraySubs2.1.0, ArraySubs Pro1.3.0, WooCommerce11.1.2, WP Overnight PDF Invoices & Packing Slips5.16.6, PHP8.2.27. Customer479, `qa_pdf_invoice_20261029`, `qa.pdf.invoice.20261029@example.test`, customer role. Subscription23967, order23966, product23964. No new orders, purchases or charges were needed. All browser interaction used agent-browser CLI with isolated profiles.
+Actual local site http://localhost:10013, ArraySubs2.1.0, ArraySubs Pro1.3.0, WooCommerce11.1.2, WP Overnight PDF Invoices & Packing Slips5.16.6, PHP8.2.27. Customer479, `qa_pdf_invoice_20261029`, `qa.pdf.invoice.20261029@example.test`, customer role. Subscription23967, order23966, product23964. No new orders, purchases or charges were needed. All browser interaction used browser with isolated profiles.
 
 | Check | Pro active | Core alone |
 | --- | --- | --- |
@@ -43,7 +43,7 @@ Each image above was opened and inspected. Intermediate PDF-loading screenshots 
 
 `launch-browser` selects the existing Edge156 executable and enables the supported `CDPScreenshotNewSurface` compositor feature for a fresh isolated session. This setup captured all final product and native PDF screenshots without hanging. It changes no global CLI installation, shared managed browser profile or user browser preference.
 
-The default Chrome146 capture failure was intermittent: fresh default captures later worked too, so a permanent upstream Chrome fix is not claimed. [Upstream issue1437](https://github.com/vercel-labs/agent-browser/issues/1437) reports matching capture/daemon symptoms, and [PR1189](https://github.com/vercel-labs/agent-browser/pull/1189) documents the compositor mitigation. The local cause match remains an inference. Independent diagnostics also passed12 Chrome captures across six navigations with the feature flag. Exact commands and untouched sample screenshots are in `screenshot-diagnosis.md` and `evidence/diagnostic-*.png`.
+The default Chrome146 capture failure was intermittent: fresh default captures later worked too, so a permanent upstream Chrome fix is not claimed. [Upstream issue1437](https://github.com/vercel-labs/browser/issues/1437) reports matching capture/daemon symptoms, and [PR1189](https://github.com/vercel-labs/browser/pull/1189) documents the compositor mitigation. The local cause match remains an inference. Independent diagnostics also passed12 Chrome captures across six navigations with the feature flag. Exact commands and untouched sample screenshots are in `screenshot-diagnosis.md` and `evidence/diagnostic-*.png`.
 
 ## Final state
 

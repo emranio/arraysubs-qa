@@ -18,7 +18,7 @@ Active QA task ID and scheduled day: N/A (targeted user-reported UI fix). Plan m
 Affected subscription/order/product IDs: N/A (product-type selection only).
 Affected WordPress user/customer: admin, administrator; numeric ID/email N/A.
 Exact URL: http://localhost:10003/wp-admin/admin.php?page=arraysubs-mainadmin#/overview
-Browser context: agent-browser quick-radio, local authenticated administrator, 1334x886 desktop and 390x844 mobile.
+Browser context: browser quick-radio, local authenticated administrator, 1334x886 desktop and 390x844 mobile.
 Reproduction: Open + Subscription Product. Inspect the inner dot of the selected Simple subscription product radio.
 Expected: Inner circle remains centered within the outer circle at desktop and mobile widths.
 Actual: User reports an off-center inner dot. The quick-product control inherits WordPress floated pseudo-element positioning and size-dependent margins (8px dot with 3px computed margins on desktop; 9px dot with 7px margins on mobile).

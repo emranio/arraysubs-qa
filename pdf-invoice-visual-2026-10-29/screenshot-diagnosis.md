@@ -2,12 +2,12 @@
 
 Executed 2026-10-29 (Asia/Dhaka) using isolated `shot-diag-*` sessions. No WordPress, plugin, global CLI, browser preference, shared `office-agent` profile or installation changes were made. All diagnostic sessions were closed.
 
-The earlier failure is not reproducible in a clean default session at this time. Agent-browser 0.27.3 with cached Chrome for Testing 146.0.7680.153 captured four PNGs successfully: blank viewport, nonblank viewport, full page and repeated viewport. The 1280 x 1595 full image was visually inspected and contains the expected heading, long blue section and end text. Default viewport PNGs are 1280 x 577.
+The earlier failure is not reproducible in a clean default session at this time. browser 0.27.3 with cached Chrome for Testing 146.0.7680.153 captured four PNGs successfully: blank viewport, nonblank viewport, full page and repeated viewport. The 1280 x 1595 full image was visually inspected and contains the expected heading, long blue section and end text. Default viewport PNGs are 1280 x 577.
 
 ```sh
-agent-browser --session shot-diag-base open about:blank
-agent-browser --session shot-diag-base screenshot /tmp/shot-diag-base.png
-agent-browser --session shot-diag-base screenshot --full /tmp/shot-diag-full.png
+browser --session shot-diag-base open about:blank
+browser --session shot-diag-base screenshot /tmp/shot-diag-base.png
+browser --session shot-diag-base screenshot --full /tmp/shot-diag-full.png
 ```
 
 The nonblank/full diagnostics used a simple data URL, independent of the application under test. Source and capture artifacts remain under `/tmp/shot-diag-*`.
@@ -17,7 +17,7 @@ The nonblank/full diagnostics used a simple data URL, independent of the applica
 The following documented browser-launch option was tested without changing global configuration:
 
 ```sh
-agent-browser --session shot-diag-surface \
+browser --session shot-diag-surface \
   --args '--enable-features=CDPScreenshotNewSurface' open about:blank
 ```
 
@@ -25,20 +25,20 @@ Six separate nonblank data-page navigations each produced a viewport and full PN
 
 ## Existing alternate browser
 
-The installed Microsoft Edge 156.0.4314.50 also captured a blank page and a nonblank full page successfully through the same agent-browser CLI:
+The installed Microsoft Edge 156.0.4314.50 also captured a blank page and a nonblank full page successfully through the same browser:
 
 ```sh
-agent-browser --session shot-diag-edge \
+browser --session shot-diag-edge \
   --executable-path '/Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge' \
   open about:blank
-agent-browser --session shot-diag-edge screenshot --full /tmp/shot-diag-edge-full.png
+browser --session shot-diag-edge screenshot --full /tmp/shot-diag-edge-full.png
 ```
 
 Its full diagnostic image measures 1272 x 1416. The root agent selected this explicit per-session executable for the actual invoice and native PDF-viewer visual checks. No user browser default or shared profile was changed.
 
 ## Upstream evidence and limits
 
-[Upstream issue 1437](https://github.com/vercel-labs/agent-browser/issues/1437) reports the same macOS pattern: navigation and accessibility work while screenshot capture times out and can block subsequent daemon commands. [Upstream PR 1189](https://github.com/vercel-labs/agent-browser/pull/1189) investigates Chrome compositor capture behavior, describes the `CDPScreenshotNewSurface` feature and proposes a headless-shell runtime/focus preparation change. Both primary sources were read during this run. Their stated affected Chrome builds are 147/149, while this machine's cached build is 146; a shared cause for the earlier local fault remains an inference. No package update or root-cause patch is claimed from fresh-session recovery alone.
+[Upstream issue 1437](https://github.com/vercel-labs/browser/issues/1437) reports the same macOS pattern: navigation and accessibility work while screenshot capture times out and can block subsequent daemon commands. [Upstream PR 1189](https://github.com/vercel-labs/browser/pull/1189) investigates Chrome compositor capture behavior, describes the `CDPScreenshotNewSurface` feature and proposes a headless-shell runtime/focus preparation change. Both primary sources were read during this run. Their stated affected Chrome builds are 147/149, while this machine's cached build is 146; a shared cause for the earlier local fault remains an inference. No package update or root-cause patch is claimed from fresh-session recovery alone.
 
 The actual application screenshots, native PDF display checks and core/Pro state restoration are owned by the root agent and documented separately in this cycle's report.
 

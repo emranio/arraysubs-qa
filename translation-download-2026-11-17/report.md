@@ -7,9 +7,9 @@ Plan: [plan.md](plan.md). Tasks TD-01 through TD-04; scheduled day 2026-11-17, A
 ## Download verification
 
 - Actual admin route: https://mirror-help.arrayhash.com/wp-admin/admin.php?page=arraysubs-mainadmin#/modules
-- Browser context: isolated agent-browser session `translation-download-admin`, signed in as `admin`, administrator. No customer/order/subscription data changed; affected IDs N/A.
+- Browser context: isolated browser session `translation-download-admin`, signed in as `admin`, administrator. No customer/order/subscription data changed; affected IDs N/A.
 - The Multilingual card exposes **Download Translations**, pointing to https://subscriptionplugin.pro/docs/downloads/arraysubs-translations.zip.
-- Activated the actual anchor using agent-browser's download command. Browser download completed successfully; the page remained on Modules. Browser errors output was empty.
+- Activated the actual anchor using browser's download command. Browser download completed successfully; the page remained on Modules. Browser errors output was empty.
 - Independent public HTTP request returned 200, `application/zip`, 36,699,829 bytes. Cloudflare reported MISS for that request.
 - Browser-downloaded ZIP, public HTTP ZIP, and repository ZIP have identical bytes and SHA-256:
   `13e7c23a0c1c0e4ed43dd779954710edf8801fd04239f5aa9a87c8c731d23a40`.

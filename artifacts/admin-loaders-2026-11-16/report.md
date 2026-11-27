@@ -17,7 +17,7 @@ Scope: Free and Pro admin page/code/data loading, refreshes and pagination. This
 
 ## Browser method
 
-Used isolated agent-browser sessions, snapshots/ref interactions, real local pages and screenshot inspection. Browser-only wrappers delayed delivery of original fetch responses by 2.5–12 seconds; no response payloads were fabricated. One real lazy script insertion was delayed 18 seconds to exercise the code-to-data transition beyond the former timeout. Temporary instrumentation was never added to plugin source.
+Used isolated browser sessions, snapshots/ref interactions, real local pages and screenshot inspection. Browser-only wrappers delayed delivery of original fetch responses by 2.5–12 seconds; no response payloads were fabricated. One real lazy script insertion was delayed 18 seconds to exercise the code-to-data transition beyond the former timeout. Temporary instrumentation was never added to plugin source.
 
 Free-only verification used a temporary local MU filter scoped to one browser cookie; it excluded Pro only for those requests. The stored active-plugin option was unchanged. Runtime evidence confirms no ArraySubsPro boot classes and Overview `is_pro: false`.
 

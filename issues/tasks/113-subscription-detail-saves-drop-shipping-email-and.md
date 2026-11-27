@@ -21,7 +21,7 @@ Exact URLs:
 http://localhost:10013/wp-admin/admin.php?page=arraysubs-mainadmin#/subscriptions/edit/8326
 http://localhost:10013/wp-admin/admin.php?page=arraysubs-mainadmin#/subscriptions/detail/8326
 
-Browser context: isolated agent-browser arraysubs-admin session, authenticated local WordPress administrator.
+Browser context: isolated browser arraysubs-admin session, authenticated local WordPress administrator.
 
 Reproduction:
 1. Use a subscription whose stored shipping address includes email and phone.

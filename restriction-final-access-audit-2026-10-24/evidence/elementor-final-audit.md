@@ -10,7 +10,7 @@ The editor now prepares every container before ordinary saves, including nested 
 
 ## Actual browser authoring and storefront results
 
-All 14 Heading-only round trips passed; 112 actor page views before/after ordinary save retained exactly the same protected-content decision and denial output. Every interaction used agent-browser snapshots and current refs. Only the Heading Title and Publish controls were used; the restriction panel stayed unopened for these cases:
+All 14 Heading-only round trips passed; 112 actor page views before/after ordinary save retained exactly the same protected-content decision and denial output. Every interaction used browser snapshots and current refs. Only the Heading Title and Publish controls were used; the restriction panel stayed unopened for these cases:
 
 | Saved rule | Audience before and after |
 | --- | --- |

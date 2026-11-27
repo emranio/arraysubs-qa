@@ -20,7 +20,7 @@ The titled step progress in Easy Setup and Cancellation Flow now matches the pro
 
 Cancellation Continue reached Retention Offers and reset scroll/focus to the step heading. Review navigation worked and saving remained disabled with no changes. Product type advanced to Product details, reset scroll/focus, and empty required fields still produced visible validation from the relocated footer.
 
-The nested Easy Setup discard dialog remained a normal 400px dialog above the fullscreen editor. Dismissing it with Escape left the parent open and the page locked. Repeated Escape dismissal/reopening intermittently stalled headless Chrome/CDP; those repeated cycles are not counted as passed. Browser startup also failed once before a successful isolated retry. Layout and scroll checks were completed in isolated sessions. Native wheel input used agent-browser's documented stream protocol because the CLI wheel command emitted coordinates (0,0) even after moving the pointer.
+The nested Easy Setup discard dialog remained a normal 400px dialog above the fullscreen editor. Dismissing it with Escape left the parent open and the page locked. Repeated Escape dismissal/reopening intermittently stalled headless Chrome/CDP; those repeated cycles are not counted as passed. Browser startup also failed once before a successful isolated retry. Layout and scroll checks were completed in isolated sessions. Native wheel input used browser's documented stream protocol because the CLI wheel command emitted coordinates (0,0) even after moving the pointer.
 
 These checks did not save settings or create products. Customer cancellation behavior had already been covered in ../cancellation-flow-wizard-2026-10-24/report.md; this pass targeted admin modal layout.
 

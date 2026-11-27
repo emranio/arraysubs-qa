@@ -2,7 +2,7 @@
 
 User-confirmed scope: final security regression of Gutenberg, Elementor, and per-post/CPT restrictions. Old settings and Match Any are priority. Opening or ordinarily saving old content must preserve exactly who can access it. Explicit conversion is outside ordinary-save invariance.
 
-Schedule: 2026-10-24 Asia/Dhaka, tasks1–4 in this session. Fresh progress board board/kanban; preserve existing qa/issues. Target actual localWordPress http://localhost:10013 serving this checkout. Disposable fixtures only; admin1/member224 plus a new nonmember. Separate agent-browser sessions and scoped temporary authentication. Do not touch original content.
+Schedule: 2026-10-24 Asia/Dhaka, tasks1–4 in this session. Fresh progress board board/kanban; preserve existing qa/issues. Target actual localWordPress http://localhost:10013 serving this checkout. Disposable fixtures only; admin1/member224 plus a new nonmember. Separate browser sessions and scoped temporary authentication. Do not touch original content.
 
 1. Independent shared backend/per-post differential audit against actual pre-change HEAD logic. Cover oldrawformats, MatchAny, empty/nonempty conditions, nestedtrees, cachedoldclient/REST/classic saves, malformed/imported booleans and fail-open edges. Actual WP runtime, core/Pro; create/deleteownruntimefixtures.
 2. Independent Gutenberg parsing/default/serialization audit and real oldordinaryANY editor open/body/title/save/reload tests. Compare audience guest/nonmember/member/admin before/after. Missing defaultattrs and no explicit mode/version are primary cases.

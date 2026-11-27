@@ -50,9 +50,9 @@ Mechanism (WooCommerce Stripe 10.9.0 code reading, matches both runs):
   ArraySubs StripeSubscriptionCompatibility::validateRenewalActionPaymentMethod() requires a posted WC token equal to
   _gateway_payment_method_id, so without a token there is no usable path on either link.
 
-Environment note: headless Chrome for agent-browser was killed repeatedly (3+ times 10:52-10:59Z) when root's transient
+Environment note: headless Chrome for browser was killed repeatedly (3+ times 10:52-10:59Z) when root's transient
   systemd user manager stopped ("Removed slice session.slice", /run/user/0 removed). Fixed for dv58b-cust only by
-  AGENT_BROWSER_SOCKET_DIR=/root/.agent-browser/s-dv58b, DBUS_SESSION_BUS_ADDRESS=disabled:, XDG_RUNTIME_DIR=/root/.agent-browser/s-dv58b-xdg.
+  AGENT_BROWSER_SOCKET_DIR=/root/.browser/s-dv58b, DBUS_SESSION_BUS_ADDRESS=disabled:, XDG_RUNTIME_DIR=/root/.browser/s-dv58b-xdg.
 
 Side observation: after a refused order-pay submission, the order payment method title becomes "Payment methods"
   (68846 now titled "Payment methods"; 68736 note "Payment via Payment methods (ch_3USESYJG5OzSNVs21tGp3lEk)").

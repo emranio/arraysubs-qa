@@ -1,6 +1,6 @@
 # Quick product options test report
 
-**Result: passed.** Completed 2026-09-15 on http://localhost:10013 using the local administrator and real agent-browser sessions. Scope, task IDs, and same-day schedule: [plan.md](plan.md).
+**Result: passed.** Completed 2026-09-15 on http://localhost:10013 using the local administrator and real browser sessions. Scope, task IDs, and same-day schedule: [plan.md](plan.md).
 
 ## Implemented
 

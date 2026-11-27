@@ -1,6 +1,6 @@
 # Browser search verification
 
-Environment: real built user guide served at http://127.0.0.1:4329/; isolated agent-browser session audit-search-qa. No auth, WordPress users, subscriptions or orders involved. Browser source was the existing dist from cf03efd before changes. Browser interactions used visible controls and current snapshot refs.
+Environment: real built user guide served at http://127.0.0.1:4329/; isolated browser session audit-search-qa. No auth, WordPress users, subscriptions or orders involved. Browser source was the existing dist from cf03efd before changes. Browser interactions used visible controls and current snapshot refs.
 
 ## Before fix
 

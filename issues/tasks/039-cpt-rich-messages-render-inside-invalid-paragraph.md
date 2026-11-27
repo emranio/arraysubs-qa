@@ -15,7 +15,7 @@ QA task: RM-3 / RM-4, scheduled 2026-09-18. Plan: qa/restricted-messages-2026-09
 Subscription/order IDs: N/A.
 User/customer: WordPress admin, ID 1, administrator; guest (no user ID).
 URL: http://localhost:10003/qa-rich-post-rule-2026-09-18/ ; admin http://localhost:10003/wp-admin/post.php?post=28480&action=edit . Page IDs: 28479 (CPT), 28480 (per-post).
-Browser: agent-browser, Edge admin and Chrome guest.
+Browser: browser, Edge admin and Chrome guest.
 Steps: set login-only per-post restriction, type a message and italicize it, apply, publish; visit as guest.
 Expected: one formatted paragraph without extra whitespace or invalid nested paragraphs.
 Actual: server wrapped editor-generated paragraphs inside another p; browser repaired it into <p></p><p><em>Post members only</em></p><p></p>.

@@ -1,0 +1,9 @@
+{
+  "options": {
+    "woocommerce_currency_pos": "left"
+  },
+  "settings": {
+    "customer_actions.allow_cancellation": true,
+    "cancellation.cancel_immediately": false
+  }
+}

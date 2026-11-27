@@ -2,7 +2,7 @@
 
 Result: passed the per-post modal and Gutenberg block authoring checks described below, followed by real frontend checks. No product defect found in this authoring pass.
 
-Environment: `http://localhost:10013`, actual installed WordPress editor and storefront, built ArraySubs assets, ArraySubs Pro active during feature-picker checks. Final custom-message switch save/reload checks were repeated with Pro disabled. Browser tools: Vercel agent-browser, isolated admin session `unified-author-react` and guest session `unified-author-react-guest`. All editing used snapshot references and normal keyboard input. No REST or JavaScript state injection substituted for authoring.
+Environment: `http://localhost:10013`, actual installed WordPress editor and storefront, built ArraySubs assets, ArraySubs Pro active during feature-picker checks. Final custom-message switch save/reload checks were repeated with Pro disabled. Browser tools: the browser, isolated admin session `unified-author-react` and guest session `unified-author-react-guest`. All editing used snapshot references and normal keyboard input. No REST or JavaScript state injection substituted for authoring.
 
 Fixtures owned by this pass: page 20006 (`qa-unified-author-post-20261024`) and page 20007 (`qa-unified-author-block-20261024`). Parent QA run owns final cleanup. No global settings, plugins, users, or other fixtures were changed by this pass.
 

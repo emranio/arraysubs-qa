@@ -18,7 +18,7 @@ Plan markdown path: N/A.
 Affected subscription IDs and order IDs: N/A. Affected product ID: 27207 (local QA completion cards — September 14 fixture).
 Affected WordPress user/customer: login admin, administrator role; numeric ID/email N/A. No customer involved.
 Exact route: http://localhost:10003/wp-admin/admin.php?page=arraysubs-mainadmin#/easy-setup
-Browser context: authenticated admin, isolated agent-browser session quick-product-cards, desktop Chromium, Modern admin color scheme.
+Browser context: authenticated admin, isolated browser session quick-product-cards, desktop Chromium, Modern admin color scheme.
 Reproduction: Click Create subscription product, choose Simple subscription product, enter a title and price, keep defaults through all seven steps, click Create product and confirm. Inspect the three completion links.
 Expected: Each card has a distinct title above a smaller description, readable spacing and compact height.
 Actual: Titles run directly into the descriptions and wrap with excessive vertical line spacing.

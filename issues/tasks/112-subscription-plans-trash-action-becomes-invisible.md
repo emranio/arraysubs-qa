@@ -19,7 +19,7 @@ Plan markdown path: N/A; scoped fix plan below.
 Affected subscription ID(s) and order ID(s): N/A (plan action styling); observed product #9624.
 Affected WordPress user/customer ID(s), login/email and roles: admin, administrator; numeric ID/email N/A; customer N/A.
 Exact route: http://localhost:10013/wp-admin/admin.php?page=arraysubs-mainadmin#/plans. Also observed plan actions at https://mirror-help.arrayhash.com/wp-admin/admin.php?page=arraysubs-mainadmin#/plans.
-Browser context: authenticated agent-browser session admin-display-local, Chromium, 1000 x 900.
+Browser context: authenticated browser session admin-display-local, Chromium, 1000 x 900.
 Reproduction: open Subscription Plans, hover a plan row, then hover Trash.
 Expected: destructive action remains visible against its light background.
 Actual: Trash transitions to rgb(255, 255, 255) on rgba(0, 0, 0, 0), making the label disappear.

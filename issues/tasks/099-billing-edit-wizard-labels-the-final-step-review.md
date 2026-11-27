@@ -19,7 +19,7 @@ Plan markdown path: qa/subscription-plans-2026-10-24/plan.md.
 Affected subscription IDs and order IDs: N/A. Affected product ID: 20072 (dedicated Plans QA 2026-10-24 Box draft). No customer subscriptions were changed.
 Affected WordPress user/customer IDs, login/email and roles: WordPress ID1, login admin, administrator; email N/A. No customer involved.
 Exact URL/admin route: http://localhost:10013/wp-admin/admin.php?page=arraysubs-mainadmin#/plans.
-Browser/user context: authenticated local administrator; isolated agent-browser plans-list-final session, desktop 1280 x 577 content viewport; current freshly reloaded feature build.
+Browser/user context: authenticated local administrator; isolated browser plans-list-final session, desktop 1280 x 577 content viewport; current freshly reloaded feature build.
 Reproduction steps: Open Edit subscription billings for box20072. Keep existing product details. Configure the existing box and save the nested configuration. Continue through Recurring billing and Other settings to the last wizard step.
 Expected result: The existing-plan edit flow labels the last step Review & save (or equivalent billing-edit wording).
 Actual result: The modal title is Edit subscription billings and the action is Save billings, but the final heading remains Review & create.

@@ -3,7 +3,7 @@
 Progress task: #5. Scheduled/executed day: 2026-10-24, Asia/Dhaka.
 Plan: `qa/subscription-plans-2026-10-24/plan.md`.
 Route: `http://localhost:10013/wp-admin/admin.php?page=arraysubs-mainadmin#/plans`.
-Browser/user: real Chromium through isolated agent-browser `plans-list-final`; freshly reloaded current feature build; desktop content viewport 1280 x 577; WordPress user ID1, login admin, administrator, email N/A.
+Browser/user: real Chromium through isolated browser `plans-list-final`; freshly reloaded current feature build; desktop content viewport 1280 x 577; WordPress user ID1, login admin, administrator, email N/A.
 Subscription/order/customer IDs: N/A. Existing subscriptions were not edited.
 
 Result: Both compound edit/save/reopen flows passed. One low-priority edit-mode wording issue was logged as qa/issues #99 and handed to root for correction/retest.

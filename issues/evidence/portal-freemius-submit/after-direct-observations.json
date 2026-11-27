@@ -1,6 +1,6 @@
 {
   "date": "2026-11-16",
-  "environment": "Production; separate fresh Chromium Incognito sessions via agent-browser",
+  "environment": "Production; separate fresh Chromium Incognito sessions via browser",
   "scope": "Visible native Freemius checkout only; no form submission, no trial creation, no purchase",
   "results": [
     {

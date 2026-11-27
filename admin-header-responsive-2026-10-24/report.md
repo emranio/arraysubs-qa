@@ -1,6 +1,6 @@
 # Responsive admin header verification
 
-Completed 2026-10-24 (Asia/Dhaka). Targeted fix for QA issue #26; no active QA execution plan, scheduled task, or scheduled day. Subscriptions/orders/customer fixtures: N/A. Browser: real local WordPress site http://localhost:10013, authenticated admin (administrator), isolated agent-browser session arraysubs-header-local. The documented live mirror was inspected as an additional baseline; the changed assets were verified on the actual local development site.
+Completed 2026-10-24 (Asia/Dhaka). Targeted fix for QA issue #26; no active QA execution plan, scheduled task, or scheduled day. Subscriptions/orders/customer fixtures: N/A. Browser: real local WordPress site http://localhost:10013, authenticated admin (administrator), isolated browser session arraysubs-header-local. The documented live mirror was inspected as an additional baseline; the changed assets were verified on the actual local development site.
 
 The shared core header now grows with its content, uses compact wrapping navigation links above 782px, and provides a full-width native section selector at 782px and below. Mobile selector labels identify the section; the selected option follows the longest matching route. Links to external WordPress admin pages retain their destination. Pages without child navigation use a semantic page heading. The header gutters and sticky offset follow WordPress's 782px and 600px breakpoints. Focus and active accents use the current WordPress admin theme variables.
 

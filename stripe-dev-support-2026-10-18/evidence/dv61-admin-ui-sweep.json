@@ -1668,7 +1668,7 @@
  ],
  "setup_wizard_closed_with": "Close modal -> 'Discard wizard progress?' -> Discard wizard (Apply Settings never clicked)",
  "easy_setup_export": {
-  "how": "1-Minute Setup > Export Settings button (agent-browser download)",
+  "how": "1-Minute Setup > Export Settings button (browser download)",
   "bytes": 23550,
   "meta": {
    "format": "arraysubs-settings",

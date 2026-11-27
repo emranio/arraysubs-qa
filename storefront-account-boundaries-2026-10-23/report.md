@@ -6,7 +6,7 @@ Active plan/task: [plan](plan.md), issue #86, immediate manual run on 2026-10-23
 
 The checked core My Account pages work with Free alone. Premium account navigation is removed when Pro is inactive; direct old premium account URLs show the normal theme 404 rather than broken API calls or PHP errors. Source audit found no additional Free customer page dependent on a Pro-only REST endpoint. Customer-facing credit/feature responses use the authenticated user; subscription-specific reads enforce ownership, and customer feature payloads omit internal feature types.
 
-Real browser coverage used local WordPress http://localhost:10013 with agent-browser and isolated admin/customer/guest sessions. Customer #224 (Finley Sullivan, demo260927_220, demo.260927.220@example.test; customer/demo_member/demo_premium) owns subscription #8326 and order #8327. Existing account, address, subscription and payment data were not changed. Full screenshots, snapshots and network observations are indexed in [browser report](browser/report.md).
+Real browser coverage used local WordPress http://localhost:10013 with browser and isolated admin/customer/guest sessions. Customer #224 (Finley Sullivan, demo260927_220, demo.260927.220@example.test; customer/demo_member/demo_premium) owns subscription #8326 and order #8327. Existing account, address, subscription and payment data were not changed. Full screenshots, snapshots and network observations are indexed in [browser report](browser/report.md).
 
 | Coverage | Pro active | Free alone |
 | --- | --- | --- |

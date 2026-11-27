@@ -2,12 +2,12 @@
 
 Date: 2026-11-16 (Asia/Dhaka)
 Site: http://localhost:10013
-Browser context: authenticated admin, isolated agent-browser session `loaders-pro`, viewport 1280 × 577.
+Browser context: authenticated admin, isolated browser session `loaders-pro`, viewport 1280 × 577.
 Scope: ArraySubsPro-owned Retention, Refunds, AI Churn, AI Revenue Forecast, and Overview extensions inside WooCommerce Analytics.
 
 ## Method
 
-Used agent-browser snapshot/ref interactions and inspected the saved screenshots. A reviewed browser init script delayed delivery of actual ArraySubs fetch responses by 12 seconds on initial navigation, then 5 seconds for pagination/retry. It called the original browser fetch with the original arguments and returned the original Response; no API response data was mocked. The browser session alone contained the delay wrapper. Offline mode was used once to exercise a real network failure, then restored before retry.
+Used browser snapshot/ref interactions and inspected the saved screenshots. A reviewed browser init script delayed delivery of actual ArraySubs fetch responses by 12 seconds on initial navigation, then 5 seconds for pagination/retry. It called the original browser fetch with the original arguments and returned the original Response; no API response data was mocked. The browser session alone contained the delay wrapper. Offline mode was used once to exercise a real network failure, then restored before retry.
 
 ## Results
 

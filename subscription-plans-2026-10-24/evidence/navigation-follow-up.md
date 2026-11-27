@@ -1,6 +1,6 @@
 # Subscription Plans navigation follow-up — 2026-10-24
 
-Targeted verification of the requested UI changes; no new QA cycle or board. Local administrator `admin` (user 1), isolated agent-browser session `plans-navigation`, desktop viewport 1600×1000. Subscription/order IDs: N/A.
+Targeted verification of the requested UI changes; no new QA cycle or board. Local administrator `admin` (user 1), isolated browser session `plans-navigation`, desktop viewport 1600×1000. Subscription/order IDs: N/A.
 
 - `/wp-admin/admin.php?page=arraysubs-mainadmin#/plans`: WordPress submenu and shared page header both read `Subscription Plans`; browser title reads `Subscription Plans - ArraySubs`.
 - Product #9624 showed `Simple subscription` and `Published` as compact pills (computed border radius 999px). Type tint follows the WordPress accent; Published uses semantic green. Draft examples used neutral pills.

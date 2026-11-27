@@ -5,7 +5,7 @@
 - Date: 2026-08-15
 - Site: `https://mirror-help.arrayhash.com`
 - Runtime: ArraySubs `1.8.12`, ArraySubsPro `1.1.3`, WooCommerce `10.9.4`, WooCommerce Stripe `10.8.4`
-- Browser: real isolated Chrome sessions driven with `agent-browser`; admin, customer, guest, hosted Paddle overlay, and Stripe 3DS contexts were exercised
+- Browser: real isolated Chrome sessions driven with the browser; admin, customer, guest, hosted Paddle overlay, and Stripe 3DS contexts were exercised
 - Scope: new subscription checkout, ordinary-product checkout, mixed carts, Stripe SCA, canceled/incomplete checkout, admin/customer records, gateway bindings, webhooks, scheduler rows, and Mailpit
 - Excluded by design: the later multi-day renewal regression; this run verified that future automatic-payment actions were created and correctly scoped, but did not advance time to execute those renewals
 

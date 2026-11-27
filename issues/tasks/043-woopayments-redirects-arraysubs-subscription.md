@@ -13,7 +13,7 @@ class: standard
 ---
 
 Active QA task ID / scheduled day / plan: N/A (targeted live incident, 2026-09-19).
-Site/route: https://thequillsacademy.com/my-account/as-subscriptions/; authenticated agent-browser support session and guest comparison.
+Site/route: https://thequillsacademy.com/my-account/as-subscriptions/; authenticated browser support session and guest comparison.
 Affected user: WordPress ID 3, login arrayhashsupport, administrator support account. The Memberships menu badge shows 1; exact subscription ID pending. Orders: N/A.
 Reproduction: sign in, click Memberships (renamed Subscriptions); correct as-subscriptions URL returns HTTP 302 to /my-account/. Reproduces whether subscriptions exist, also as guest. Expected: list/empty state at the subscription endpoint, preserving custom label.
 Concrete proof: temporary admin-only wp_redirect trace found WC_Payments_Subscriptions_Disabler::maybe_redirect_account_endpoints -> redirect in woocommerce-payments/includes/subscriptions/class-wc-payments-subscriptions-disabler.php:661. Request vars contained pagename=my-account, as-subscriptions and subscriptions. WooPayments 11.1.0; WooCommerce 11.1.1; ArraySubs 2.0.6 / Pro 1.2.5. Temporary diagnostic was removed and original Pro Hooks.php restored.

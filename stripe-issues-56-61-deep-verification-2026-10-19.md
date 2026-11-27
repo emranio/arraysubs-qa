@@ -370,7 +370,7 @@ Two short windows changed `payment_retry.stop_on_hard_decline` to `false`, each 
 
 ## Environment caveats
 
-- **Browser daemons kept dying:** agent-browser daemons were killed when root's systemd user session ended, or when another project's controller recreated `/run/user/0/agent-browser`. Testers re-logged in and verified that no duplicate orders resulted. The leftover socket workaround directories were removed afterwards.
+- **Browser daemons kept dying:** browser daemons were killed when root's systemd user session ended, or when another project's controller recreated `/run/user/0/browser`. Testers re-logged in and verified that no duplicate orders resulted. The leftover socket workaround directories were removed afterwards.
 - **#58 trigger cannot be classified:** with only 5 PHP-FPM workers, WooCommerce Stripe debug logging off and no web access log, it was impossible to tell whether the original #58 run lost its post-3DS call to the browser or to a WC Stripe lock race.
 - **Edge cache:** front-end HTML is cached at the Cloudflare edge for guests. All entitlement checks used cache-busted URLs.
 

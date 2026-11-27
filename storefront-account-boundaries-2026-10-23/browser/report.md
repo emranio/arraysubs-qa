@@ -4,7 +4,7 @@ Active QA task: #86. Scheduled day: 2026-10-23 (Asia/Dhaka). Plan: `qa/storefron
 
 ## Environment and preservation
 
-Real local site: `http://localhost:10013`. Isolated agent-browser sessions: `sfa-admin`, `sfa-customer`, `sfa-guest`. Customer session was authenticated using documented Local admin auto-login followed by the existing **Login as Finley Sullivan** control; no customer password was guessed or changed.
+Real local site: `http://localhost:10013`. Isolated browser sessions: `sfa-admin`, `sfa-customer`, `sfa-guest`. Customer session was authenticated using documented Local admin auto-login followed by the existing **Login as Finley Sullivan** control; no customer password was guessed or changed.
 
 Customer: #224, **Finley Sullivan**, login `demo260927_220`, email `demo.260927.220@example.test`, roles `customer`, `demo_member`, `demo_premium`. Existing subscription: #8326, active lifetime **Demo · Lifetime Resource Library**. Existing related order: #8327, completed, USD 349. No fixture, order, subscription, payment, address, account form, cart removal, or Place Order action was submitted. A later explicit authorization allowed one credit-product add-to-cart attempt in a separate throwaway guest session; that exception and its automatic redirect are recorded below.
 

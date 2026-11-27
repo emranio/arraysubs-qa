@@ -33,7 +33,7 @@ The page lists subscription products with image, name/ID/type/status, SKU, stock
 - **104 registered WordPress REST/data assertions passed**:56 with Pro and48 in an isolated core-only process. These cover invalid data/type changes, stale versions, authentication and per-product permissions, editing without publishing capability, optional metadata cleanup, lifetime normalization, scheduled-sale preservation, and unavailable-Pro metadata retention. [Detailed results](evidence/rest-data-report.md).
 - **4 focused React tests passed** for core and Pro shared confirmation helpers: repeated failures then successful retry, and cancellation/new-dialog error reset. Run from `arraysubs`: `node_modules/.bin/jest --config jest.plans.config.cjs --runInBand`.
 - Both plugin production builds passed. All touched PHP files passed syntax checks, all touched code files are below3000 lines, and both plugin diffs pass whitespace checks. PHPCS was not run.
-- Browser testing used Vercel agent-browser and actual WordPress pages. REST/data assertions supplement the UI testing. A PNG capture/CLI queue stall was recovered with a separate CDP session; JPEG screenshots then completed normally. It was not treated as an application failure.
+- Browser testing used the browser and actual WordPress pages. REST/data assertions supplement the UI testing. A PNG capture/CLI queue stall was recovered with a separate CDP session; JPEG screenshots then completed normally. It was not treated as an application failure.
 
 ## Cleanup and restored state
 

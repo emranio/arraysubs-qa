@@ -383,7 +383,7 @@ Create a new file, `arraysubs/src/functions/cart-charge-helpers.php`. Everything
 
 ### 6.3 Staging test plan
 
-Use agent-browser with a guest session, as AGENTS.md requires. Check every case on the **Checkout block** (`/checkout/`), the **classic checkout** (`/classic-checkout-qa/`) and the **Cart block** (`/cart/`), plus the classic cart (`/slt-classic-cart/`) and mini-cart for P1-1.
+Use browser with a guest session, as AGENTS.md requires. Check every case on the **Checkout block** (`/checkout/`), the **classic checkout** (`/classic-checkout-qa/`) and the **Cart block** (`/cart/`), plus the classic cart (`/slt-classic-cart/`) and mini-cart for P1-1.
 
 The general rule for every case: with one subscription line and nothing else, Today's charge must equal the order Total; otherwise the shares add up to the Total.
 

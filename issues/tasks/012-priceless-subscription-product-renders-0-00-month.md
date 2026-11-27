@@ -13,7 +13,7 @@ class: standard
 ---
 
 **QA task ID / scheduled day:** N/A — ad-hoc product-edit regression cycle, 2026-08-26. Report: `qa/product-edit-regression-qa-report.md`
-**Browser/user context:** agent-browser, session `admin` (WP user 1, administrator); session `guest` (logged out).
+**Browser/user context:** browser, session `admin` (WP user 1, administrator); session `guest` (logged out).
 **Affected subscription ID(s) / order ID(s):** N/A
 **Affected user(s):** any shopper (reproduced as `guest` and as WP user 1)
 

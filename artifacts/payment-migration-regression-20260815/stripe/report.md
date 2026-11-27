@@ -7,7 +7,7 @@
 | Browser sessions | `stripe-mig-qa-*` |
 | Scope | Subscription-only, regular-only, mixed cart, SCA, and cancelled Stripe checkout |
 | Plugins | ArraySubs 1.8.12; ArraySubsPro 1.1.3; WooCommerce 10.9.4; WooCommerce Stripe 10.8.4 |
-| Browser automation | agent-browser 0.27.3, isolated Chrome sessions |
+| Browser automation | browser 0.27.3, isolated Chrome sessions |
 | Tester | `hawk-twig` |
 
 ## Secret-safe baseline

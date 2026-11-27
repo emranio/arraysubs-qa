@@ -15,7 +15,7 @@ QA task: RM-1 / RM-5, scheduled 2026-09-18. Plan: qa/restricted-messages-2026-09
 Subscription/order IDs: N/A.
 User: WordPress admin, ID 1, administrator; guest verification in isolated session.
 URL: http://localhost:10003/wp-admin/post.php?post=28477&action=edit ; page ID 28477.
-Browser: agent-browser with Edge 153 (Chrome for Testing 149 has a separate Gutenberg blob-iframe failure).
+Browser: browser with Edge 153 (Chrome for Testing 149 has a separate Gutenberg blob-iframe failure).
 Steps: select Restricted Content block; enter message, select it, add link http://localhost:10003/my-account/ with the editor link dialog; publish and reload.
 Expected: the entered URL remains absolute and works from any frontend route.
 Actual: TinyMCE saved ../my-account/, relative to the admin editor; nested frontend routes can resolve it to the wrong destination.

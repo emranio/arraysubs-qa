@@ -7,7 +7,7 @@ or schedule is reused.
 
 Test environment: local WordPress at http://localhost:10013, admin entry
 http://localhost:10013/wp-admin/?localwp_auto_login=1, as documented in AGENTS.md.
-Use isolated agent-browser sessions `trp-admin`, `trp-guest`, and `trp-customer`.
+Use isolated browser sessions `trp-admin`, `trp-guest`, and `trp-customer`.
 Use WP-CLI with --allow-root and the existing local database socket. No purchases,
 paid machine translation, external email delivery, or live-site deployment.
 

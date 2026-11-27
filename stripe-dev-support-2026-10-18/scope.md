@@ -9,7 +9,7 @@ Verify staging contains these source revisions and matching built assets:
 
 Matching version numbers alone are insufficient.
 
-Before testing, follow the staging workspace's `AGENTS.md`, preserve existing QA issues, and create a fresh focused QA plan, board and execution schedule. Use isolated admin/customer/guest `agent-browser` sessions, test-owned fixtures, WP-CLI with `--allow-root`, and the staging email sink.
+Before testing, follow the staging workspace's `AGENTS.md`, preserve existing QA issues, and create a fresh focused QA plan, board and execution schedule. Use isolated admin/customer/guest the browser sessions, test-owned fixtures, WP-CLI with `--allow-root`, and the staging email sink.
 
 Confirm Stripe test credentials, scheduler operation, and actual webhook health. Verify the ArraySubs secondary endpoint subscribes to every event returned by `StripeWebhookProvisioner::getRequiredEvents()`, including `payment_method.attached` and `customer.updated`. Record configuration without exposing secrets.
 
@@ -46,7 +46,7 @@ Use real provider outcomes rather than manually marking orders paid or firing PH
 
 # Addendum from the lead (facts for this run)
 
-- **Staging = the live test site** https://mirror-help.arrayhash.com (WordPress at /home/server-manager/www/arrayhash/mirror-help.arrayhash.com/public). Its plugins are the git working trees in /home/server-manager/www/arrayhash/mirror-help.arrayhash.com/public/wp-content/plugins/{arraysubs,arraysubspro}. Admin credentials and site rules: plugins/AGENTS.md (read it first and follow it: agent-browser usage, QA workflow, `qa/issues/` rules and required issue fields, kanban-md from the board directory, WP-CLI with `--allow-root`, Mailpit via `mailpit-agent`).
+- **Staging = the live test site** https://mirror-help.arrayhash.com (WordPress at /home/server-manager/www/arrayhash/mirror-help.arrayhash.com/public). Its plugins are the git working trees in /home/server-manager/www/arrayhash/mirror-help.arrayhash.com/public/wp-content/plugins/{arraysubs,arraysubspro}. Admin credentials and site rules: plugins/AGENTS.md (read it first and follow it: browser usage, QA workflow, `qa/issues/` rules and required issue fields, kanban-md from the board directory, WP-CLI with `--allow-root`, Mailpit via `mailpit-agent`).
 - **Revisions on staging now:** Pro HEAD `561ed9235bb4859c2ec8ae1d809f8240f3d071e7`. Core HEAD is `cfcfaac` (local commit, not pushed yet), which descends from the requested `a5c9711fdc955a54b7c396827fd7b223b48408ef` plus two newer fixes under test as part of this run:
   - `44036ed` fix(gateways): PayPal error status reset on recovery; Mollie failure classification, webhook failures through the retry ladder, one-click Retry Payment (adds `RenewalProcessor::recordProviderPaymentFailure()`).
   - `cfcfaac` fix(integrations): each payment failure and each charge attempt gets its own `arraysubs_lifecycle_event` `event_id` (renewal_failed keyed on the recorded failure; attempt/result events keyed on a per-subscription attempt sequence in `_arraysubs_lifecycle_attempt_seq`).

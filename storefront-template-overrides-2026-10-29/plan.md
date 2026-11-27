@@ -2,7 +2,7 @@
 
 Scope confirmed by user on 2026-10-29 (Asia/Dhaka): support child-theme customization of view-subscription.php and every other bundled storefront PHP view in ArraySubs and ArraySubs Pro; add a developer guide in user-manual.
 
-Environment: actual local WordPress http://localhost:10013, running this workspace's sources. Local site/access and admin credentials come from AGENTS.md Local Testing Context. The remote site does not run these unshipped files and is not deployed during this cycle. WP-CLI uses --allow-root with the existing Local MySQL socket passed as PHP ini configuration, without extra environment variables. Browser automation uses agent-browser CLI and isolated template-qa-customer/admin/guest sessions, with Edge executable if needed for screenshots.
+Environment: actual local WordPress http://localhost:10013, running this workspace's sources. Local site/access and admin credentials come from AGENTS.md Local Testing Context. The remote site does not run these unshipped files and is not deployed during this cycle. WP-CLI uses --allow-root with the existing Local MySQL socket passed as PHP ini configuration, without extra environment variables. Browser automation uses browser and isolated template-qa-customer/admin/guest sessions, with Edge executable if needed for screenshots.
 
 Existing qa/issues board inspected before testing; preserve all earlier issues. No unrelated issue fixes, purchases, payment collection, external mail, release, push or publishing. Temporary theme overrides, fixture customer/content and exact changed option/plugin baselines are backed up outside the repository and restored at completion.
 

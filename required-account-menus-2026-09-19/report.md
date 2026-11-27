@@ -1,6 +1,6 @@
 # Required account menus and prefixed endpoints — verification
 
-Completed locally on 2026-09-19 at http://localhost:10003, core 2.0.5 and Pro 1.2.4. Plan: [plan.md](plan.md), issue 41. Customer 525 / qa_download_settings_second_20260917 / customer role; active subscription 28240; order N/A. Admin and customer used isolated agent-browser sessions. Nothing was deployed to either customer site.
+Completed locally on 2026-09-19 at http://localhost:10003, core 2.0.5 and Pro 1.2.4. Plan: [plan.md](plan.md), issue 41. Customer 525 / qa_download_settings_second_20260917 / customer role; active subscription 28240; order N/A. Admin and customer used isolated browser sessions. Nothing was deployed to either customer site.
 
 Current requirement and correction: required items may be renamed and reordered. Only hiding/removal is locked. The earlier rename restriction and its historical control screenshots are superseded by RM-12 below.
 

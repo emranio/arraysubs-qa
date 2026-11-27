@@ -2,7 +2,7 @@
 
 Scope: remove the duplicate cycle line, eliminate spacing between pricing detail rows, use `+ amount signup fee`, and match Plans pricing details in the WooCommerce product list, including trial text. This is targeted verification of the requested follow-up, not a new QA cycle.
 
-Context: local site `http://localhost:10013`, administrator `admin` (user 1), isolated agent-browser session `plans-pricing`, desktop viewport 1600×1000 and narrow viewport 390×844. Subscription IDs and order IDs: N/A. Existing customer and subscription data were not changed.
+Context: local site `http://localhost:10013`, administrator `admin` (user 1), isolated browser session `plans-pricing`, desktop viewport 1600×1000 and narrow viewport 390×844. Subscription IDs and order IDs: N/A. Existing customer and subscription data were not changed.
 
 Routes: `/wp-admin/admin.php?page=arraysubs-mainadmin#/plans` and `/wp-admin/edit.php?post_type=product`. Search both lists for `Pricing QA` to isolate the temporary draft fixtures during verification.
 

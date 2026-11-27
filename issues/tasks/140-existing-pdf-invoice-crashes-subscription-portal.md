@@ -21,7 +21,7 @@ Environment: real local WordPress http://localhost:10013, ArraySubs 2.1.0, Pro 1
 
 Subscription ID: 23967. Order ID: 23966. Product ID: 23964. WordPress user/customer ID: 479; login qa_pdf_invoice_20261029; email qa.pdf.invoice.20261029@example.test; role customer. Disposable fixtures only, no real purchase or payment.
 
-Exact route/context: http://localhost:10013/my-account/as-view-subscription/23967/?qa_pdf_phase=existing-invoice ; isolated agent-browser pdf-repro-customer logged in as that customer.
+Exact route/context: http://localhost:10013/my-account/as-view-subscription/23967/?qa_pdf_phase=existing-invoice ; isolated browser pdf-repro-customer logged in as that customer.
 
 Steps: 1. Create the pending subscription and linked pending order using the existing core helper and canonical parent-order linker (qa/pdf-invoice-portal-2026-10-29/fixture.php setup). 2. Open the subscription with no invoice: related order renders View and Pay. 3. Initialize and save its invoice using official wcpdf_get_document("invoice", $order, true) (fixture.php generate). 4. Open the same subscription URL.
 

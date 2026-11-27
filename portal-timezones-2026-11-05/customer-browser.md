@@ -2,7 +2,7 @@
 
 Date: November 5, 2026, Asia/Dhaka. Plan: [plan.md](plan.md), task 2 on the progress board. Issue: 160. Subscription/order IDs: N/A (disposable provider responses only). Customer `timezone-customer@example.test`, ID `b9d14b0f-9f86-4c79-80ce-980efe9eb688`, customer role. Actual app: `http://127.0.0.1:3017`, isolated local PostgreSQL schema and app clone. Provider responses and outgoing email are intercepted in this local process. No production customer or billing state was changed.
 
-Started with the required agent-browser CLI, following its core and dogfood guides. Its screenshot command hung in both independent sessions. After that tool limitation, used the connected Edge browser for actual UI interaction and visual inspection. API checks supplement these browser flows; they do not replace them.
+Started with the required browser, following its core and dogfood guides. Its screenshot command hung in both independent sessions. After that tool limitation, used the connected Edge browser for actual UI interaction and visual inspection. API checks supplement these browser flows; they do not replace them.
 
 | Flow | Actual browser result | Evidence |
 | --- | --- | --- |

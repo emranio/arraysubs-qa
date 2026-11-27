@@ -2,7 +2,7 @@
 
 Scope authorized 2026-10-29, Asia/Dhaka: fix QA issue #140, make the WP Overnight integration production ready, properly test it and investigate other integration defects. Fresh cycle; prior reproduction evidence is retained under qa/pdf-invoice-portal-2026-10-29/.
 
-Environment: actual local WordPress http://localhost:10013; admin access and PHP/MySQL configuration from AGENTS.md Local Testing Context and the preceding reproduction. Official WP Overnight PDF Invoices & Packing Slips for WooCommerce 5.16.6 remains installed. Initial ArraySubs 2.1.0, Pro 1.3.0 and WooCommerce 11.1.2 are active; Coming Soon is yes. WP-CLI must use --allow-root, no extra QA environment variables and no Composer installation. No phpcs/linting under the issue-fix workflow. Browser work uses agent-browser only, with isolated pdf-fix-admin/customer/other/guest sessions.
+Environment: actual local WordPress http://localhost:10013; admin access and PHP/MySQL configuration from AGENTS.md Local Testing Context and the preceding reproduction. Official WP Overnight PDF Invoices & Packing Slips for WooCommerce 5.16.6 remains installed. Initial ArraySubs 2.1.0, Pro 1.3.0 and WooCommerce 11.1.2 are active; Coming Soon is yes. WP-CLI must use --allow-root, no extra QA environment variables and no Composer installation. No phpcs/linting under the issue-fix workflow. Browser work uses browser only, with isolated pdf-fix-admin/customer/other/guest sessions.
 
 Scheduled day: 2026-10-29. Immediate manual sequential execution on this directory's fresh kanban board. Root owns all shared site/configuration/fixture changes. Parallel agents perform read-only source audits and final review; no agent changes the shared test configuration independently.
 

@@ -1,5 +1,5 @@
 dv58c - Issue #58 scope check through the CLASSIC checkout (deep-verify phase, 2026-10-19, times UTC)
-Environment: core 4791832, Pro edaa401, WooCommerce Stripe Gateway 10.9.0 (test mode). Browser session dv58c-cust (agent-browser, 1280x1000).
+Environment: core 4791832, Pro edaa401, WooCommerce Stripe Gateway 10.9.0 (test mode). Browser session dv58c-cust (browser, 1280x1000).
 Order keys and client secrets are redacted (key=<r>). No settings were changed.
 
 FIXTURES

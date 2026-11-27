@@ -1,6 +1,6 @@
 # Plan type priority and renewal sync notices
 
-Verified October 24, 2026 on `http://localhost:10013` using the isolated `plan-types` agent-browser session. This is targeted follow-up verification of the creation wizard, not a new lifecycle QA cycle. Existing marked issues in `qa/issues/`, including26 and27, were preserved.
+Verified October 24, 2026 on `http://localhost:10013` using the isolated `plan-types` browser session. This is targeted follow-up verification of the creation wizard, not a new lifecycle QA cycle. Existing marked issues in `qa/issues/`, including26 and27, were preserved.
 
 ## Browser results
 
@@ -11,7 +11,7 @@ Verified October 24, 2026 on `http://localhost:10013` using the isolated `plan-t
 - Created one real plan through confirmation and the success screen: product20675, Full Flexible, price29/month, maximum length9, interval1, trial0, custom sync enabled, and no fixed membership cutoff. WP-CLI verified those saved values. [Review](evidence/plan-types/plan-types-full-flexible-review.jpg), [success](evidence/plan-types/plan-types-created.jpg).
 - Opened the fixture's native billing editor, selected a one-day cycle without saving, and verified the new short-cycle notice and clarified requirement text. [Screenshot](evidence/plan-types/plan-types-native-sync-notice.jpg). Box and bundle use the shared core short-cycle notice; both production bundles compiled successfully.
 - With Pro inactive, the creator retained the existing premium availability gates and showed the module-specific sync instruction. At390×844, the modal stayed within x20–370 with its footer visible. [Mobile screenshot](evidence/plan-types/plan-types-core-notice-mobile.jpg).
-- Agent-browser reported no uncaught errors.
+- browser reported no uncaught errors.
 
 ## Preparation checks and source validation
 

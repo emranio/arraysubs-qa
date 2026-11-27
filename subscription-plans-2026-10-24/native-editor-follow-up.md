@@ -1,6 +1,6 @@
 # Native billing editor follow-up
 
-Verified October 24, 2026 against `http://localhost:10013` using the isolated `native-billing` agent-browser session. This follow-up supersedes the saved-plan modal behavior in the original report: existing plans now use WooCommerce; Add new plan retains the creation wizard.
+Verified October 24, 2026 against `http://localhost:10013` using the isolated `native-billing` browser session. This follow-up supersedes the saved-plan modal behavior in the original report: existing plans now use WooCommerce; Add new plan retains the creation wizard.
 
 | Check | Observation |
 | --- | --- |
@@ -13,7 +13,7 @@ Verified October 24, 2026 against `http://localhost:10013` using the isolated `n
 | Creation regression | Completed all eight simple-plan creation steps, confirmation and success screen. One published, virtual,29/month product20666 appeared in the catalog. The success Edit product link retains the Plans origin. |
 | Native save | Changed fixture20666's billing interval1→2 in the native billing panel and clicked Update. WordPress displayed Product updated; persisted `_subscription_interval` is2. The redirect retains `arraysubs_from=plans`, and Back to plans appears after initialization. |
 | Mobile | At390×844 the billing shortcut opens the native billing panel below the headers; saved interval2 is visible. |
-| Runtime errors | No uncaught browser errors were reported by agent-browser. Existing unrelated WordPress/plugin development warnings remain outside this change. |
+| Runtime errors | No uncaught browser errors were reported by browser. Existing unrelated WordPress/plugin development warnings remain outside this change. |
 | Removed edit API | The retired saved-plan GET route `/arraysubs/v1/quick-products/9624` returns404. Source has no saved-plan controller, service, variation picker or Pro editing adapter references. |
 
 An unrelated installed subscription plugin starts a document scroll-to-top animation on product-editor load. The billing shortcut stops queued document animations before positioning Product data, and waits for initial description-editor layout. Desktop screenshots confirm the final position remains correct.

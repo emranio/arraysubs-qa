@@ -1,6 +1,6 @@
 # Confirmed browser findings / investigation evidence
 
-All findings belong to active QA task #86, scheduled day 2026-10-23 (Asia/Dhaka), plan `qa/storefront-account-boundaries-2026-10-23/plan.md`. Browser automation used actual local WordPress with agent-browser. Product source/configuration was not modified by the browser worker. Root owns issue-board entries and isolated fixture cleanup.
+All findings belong to active QA task #86, scheduled day 2026-10-23 (Asia/Dhaka), plan `qa/storefront-account-boundaries-2026-10-23/plan.md`. Browser automation used actual local WordPress with browser. Product source/configuration was not modified by the browser worker. Root owns issue-board entries and isolated fixture cleanup.
 
 ## Variation-specific storefront feature updates — source finding, browser fixture limitation
 
