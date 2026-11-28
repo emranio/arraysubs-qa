@@ -24,21 +24,26 @@ const W = Number(opt('w', 1920));
 const H = Number(opt('h', 1200));
 const FPS = Number(opt('fps', 30));
 
+const T0 = Date.now(); const dbg = (m) => process.env.RDEBUG && console.log(((Date.now() - T0) / 1000).toFixed(1), m);
 const browser = await chromium.launch({
   executablePath: process.env.FV_CHROME || `${process.env.HOME}/Library/Caches/ms-playwright/chromium_headless_shell-1255/chrome-headless-shell-mac-arm64/chrome-headless-shell`,
   args: ['--allow-file-access-from-files', '--font-render-hinting=none', '--disable-lcd-text'],
 });
+dbg('launched');
 const page = await browser.newPage({ viewport: { width: W, height: H }, deviceScaleFactor: 1 });
 page.on('console', (m) => { if (m.type() === 'error' || m.type() === 'warning') console.log(`[page ${m.type()}]`, m.text()); });
 page.on('pageerror', (e) => console.log('[pageerror]', e.message));
 await page.goto(pathToFileURL(path.join(dir, 'index.html')).href, { waitUntil: 'load' });
+dbg('loaded');
 await page.evaluate(() => document.fonts.ready);
+dbg('fonts');
 await page.waitForFunction(() => typeof window.__seek === 'function' && window.__duration > 0);
+dbg('ready');
 const duration = await page.evaluate(() => window.__duration);
 const cdp = await page.context().newCDPSession(page);
 
 async function grab(t, fmt = 'png', quality = 95) {
-  await page.evaluate((tt) => window.__seek(tt), t);
+  await page.evaluate((tt) => { window.__seek(tt); }, t);
   const { data } = await cdp.send('Page.captureScreenshot', fmt === 'png' ? { format: 'png' } : { format: 'jpeg', quality });
   return Buffer.from(data, 'base64');
 }
