@@ -5,6 +5,7 @@
 //   node render.mjs <piece-dir> --out=<file.mp4> [--fps=30] [--png] [--from=0] [--to=<s>]
 //   node render.mjs <piece-dir> --stills=0.5,3.2,7 --still-dir=<dir>     # PNG stills only
 //   node render.mjs <piece-dir> --sheet=<file.jpg> [--every=1.5]           # contact sheet only
+//   add --query=layout=phone --w=1080 --h=1080 for a piece's alternate cut
 import { createRequire } from 'node:module';
 import { spawn, execFileSync } from 'node:child_process';
 import fs from 'node:fs';
@@ -33,7 +34,8 @@ dbg('launched');
 const page = await browser.newPage({ viewport: { width: W, height: H }, deviceScaleFactor: 1 });
 page.on('console', (m) => { if (m.type() === 'error' || m.type() === 'warning') console.log(`[page ${m.type()}]`, m.text()); });
 page.on('pageerror', (e) => console.log('[pageerror]', e.message));
-await page.goto(pathToFileURL(path.join(dir, 'index.html')).href, { waitUntil: 'load' });
+const query = opt('query');
+await page.goto(pathToFileURL(path.join(dir, 'index.html')).href + (query ? `?${query}` : ''), { waitUntil: 'load' });
 dbg('loaded');
 await page.evaluate(() => document.fonts.ready);
 dbg('fonts');
@@ -66,7 +68,7 @@ if (stills) {
   }
   const cols = 4, rows = Math.ceil(i / cols);
   execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-framerate', '1', '-i', path.join(tmp, 'f-%04d.jpg'),
-    '-vf', `scale=480:-1,drawtext=text='%{n}':x=8:y=8:fontsize=22:fontcolor=white:box=1:boxcolor=black@0.6,tile=${cols}x${rows}:padding=6:margin=6:color=white`, '-frames:v', '1', path.resolve(sheet)]);
+    '-vf', `scale=480:-1,tile=${cols}x${rows}:padding=6:margin=6:color=white`, '-frames:v', '1', path.resolve(sheet)]);
   fs.rmSync(tmp, { recursive: true, force: true });
   console.log(`sheet (${i} tiles, every ${every}s) -> ${sheet}`);
 } else {
