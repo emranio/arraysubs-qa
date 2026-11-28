@@ -134,3 +134,22 @@ Notes:
 - Storefront product pages: use the demo products with images (coffee, beauty, pets, supplements,
   meal kits). Avoid the Shop archive (full of test products).
 - Never show feature *types* (text/number/toggle) on customer screens (they are not there anyway).
+
+## Short website clips and stills (`clip.mjs`)
+
+Short 16:10 clips (1920x1200, no title cards or captions by default) and cropped stills for the
+features hub, inner feature pages and homepage. Same `v` API as above.
+
+```bash
+node clip.mjs <scene> [--only=key1,key2]     # scenes in clips/<scene>.mjs, output in $FV_OUT/clips/<key>.mp4|.webp
+node publish-clips.mjs <key> [<key> ...]     # copies to web-content/public/media/<key>.* and registers captured.json
+```
+
+- A scene exports `{ overrides, setup, teardown, items: [{ key, type: 'video' | 'image', before, run, pad }] }`.
+  An image item's `run` may return a selector or rect: the still is a 16:10 crop around it.
+- `overrides` (options, `arraysubs_settings` keys, post meta, product prices, display text) apply only to
+  requests carrying the `fv_clip=<scene>` cookie, via `wp-content/mu-plugins/zz-fv-clips.php`. Shared
+  settings never change, so parallel recordings are unaffected.
+- `clip.mjs` sets `FV_W=1152 FV_H=720 FV_DPR=5/3 FV_CAPTURE=pw`. `FV_CAPTURE=pw` matters: the raw CDP
+  capture returns CSS-pixel frames in this headless shell (a 1440x810 stage records at 1440x810).
+- Store changes and records left behind: `notes/clips.md`.

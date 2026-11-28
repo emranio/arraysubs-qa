@@ -21,7 +21,7 @@ for (const slug of slugs) {
   const poster = path.join(OUT, slug, 'poster.webp');
   if (!fs.existsSync(src) || !fs.existsSync(poster)) { console.log(`${slug}: missing video or poster, skipped`); continue; }
   const mp4 = path.join(dest, `${slug}.mp4`);
-  execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-i', src, '-an', '-c:v', 'libx264', '-preset', 'slow', '-tune', 'stillimage',
+  execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-i', src, '-vf', 'scale=1920:1080:flags=lanczos:in_range=pc:out_range=tv,format=yuv420p,setsar=1', '-color_range', 'tv', '-colorspace', 'bt709', '-color_primaries', 'bt709', '-color_trc', 'bt709', '-an', '-c:v', 'libx264', '-preset', 'slow', '-tune', 'stillimage',
     '-crf', crf, '-profile:v', 'high', '-level', '4.1', '-pix_fmt', 'yuv420p', '-g', '120', '-movflags', '+faststart', mp4]);
   fs.copyFileSync(poster, path.join(dest, `${slug}.webp`));
   const probe = JSON.parse(execFileSync('ffprobe', ['-v', 'error', '-select_streams', 'v:0', '-show_entries', 'stream=width,height:format=duration', '-of', 'json', mp4], { encoding: 'utf8' }));

@@ -3,6 +3,8 @@
     "demo.260927.188@example.test": "sam.bailey@example.com",
     "demo.260927.202@example.test": "jordan.sullivan@example.com",
     "RQA 2112 Entitled": "Nadia Okafor",
-    "rqa2112-entitled@example.invalid": "nadia.okafor@example.com"
+    "rqa2112-entitled@example.invalid": "nadia.okafor@example.com",
+    "role demo_plus.": "role plus_member.",
+    "role demo_member.": "role member."
   }
 }

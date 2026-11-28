@@ -7,13 +7,19 @@ import { clearCart, addToCart } from './_lib.mjs';
 
 const CUSTOMER = 1221;
 const ITEMS = [6713, 6714, 6698]; // Weekly Coffee Delivery, Fortnightly Tea Delivery, Ceramic Member Mug
+// Order placed by an earlier take of this clip (same three items, $55.00). Retakes show its
+// order-received page instead of placing another order.
+const EXISTING_ORDER = process.env.FV_MC_ORDER || '32172';
 
 export default {
   overrides: {
     options: { woocommerce_currency_pos: 'left' },
     settings: { 'checkout.one_click_mode': 'default' },
   },
-  setup: async (v, { wp }) => clearCart(wp, CUSTOMER),
+  setup: async (v, { wp }) => {
+    clearCart(wp, CUSTOMER);
+    if (EXISTING_ORDER) v.wpOrderUrl = wp(['eval', `echo wc_get_order(${Number(EXISTING_ORDER)})->get_checkout_order_received_url();`]).trim().replace('http://localhost:10013', '');
+  },
   teardown: async (v, { wp }) => clearCart(wp, CUSTOMER),
   items: [
     {
@@ -46,7 +52,18 @@ export default {
         await v.focus('.wp-block-woocommerce-checkout-order-summary-block', { label: 'One checkout, one payment', side: 'top', hold: 2.0 });
         await v.unfocus();
         await v.scrollTo('.wc-block-components-checkout-place-order-button', { block: 'center' });
-        await v.click('.wc-block-components-checkout-place-order-button', { nav: true, wait: 800 });
+        if (EXISTING_ORDER) {
+          // Swallow the real submit: the click animates, then we open the earlier take's order.
+          await v.frame.evaluate(() => {
+            const btn = document.querySelector('.wc-block-components-checkout-place-order-button');
+            btn.addEventListener('click', (e) => { e.preventDefault(); e.stopImmediatePropagation(); }, true);
+          });
+          await v.click('.wc-block-components-checkout-place-order-button', { settle: false, wait: 200 });
+          const url = v.wpOrderUrl;
+          await v.goto(url);
+        } else {
+          await v.click('.wc-block-components-checkout-place-order-button', { nav: true, wait: 800 });
+        }
         await v.act(async (f) => {
           await f.locator('section.arraysubs-order-subscriptions').waitFor({ timeout: 30000 });
           await f.waitForTimeout(500);

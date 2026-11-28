@@ -2,9 +2,11 @@
   "map": {
     "DEMO-260927-BOX": "BOX-COFFEE-M",
     "DEMO-260927-TOTE": "BAG-TOTE",
-    "Build Your Monthly Coffee Box — demo catalog.": "Pick your coffee and tea, add a treat, and save more as your box grows.",
-    "Build Your Monthly Coffee Box &#8212; demo catalog.": "Pick your coffee and tea, add a treat, and save more as your box grows.",
+    "Build Your Monthly Coffee Box — demo catalog.": "Coffee and tea you pick, shipped every month.",
+    "Build Your Monthly Coffee Box &#8212; demo catalog.": "Coffee and tea you pick, shipped every month.",
     "Sample catalog item for the June–September 2026 demonstration store.": "Fresh coffee and tea, picked by you and shipped every month.",
-    "Sample catalog item for the June&#8211;September 2026 demonstration store.": "Fresh coffee and tea, picked by you and shipped every month."
+    "Sample catalog item for the June&#8211;September 2026 demonstration store.": "Fresh coffee and tea, picked by you and shipped every month.",
+    "Build Your Monthly Coffee Box \\u2014 demo catalog.": "Coffee and tea you pick, shipped every month.",
+    "Build Your Monthly Coffee Box \\\\u2014 demo catalog.": "Coffee and tea you pick, shipped every month."
   }
 }

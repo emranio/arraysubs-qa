@@ -193,8 +193,14 @@ export class Video {
   async capture() {
     if (!this.dirty && this.lastBuf) return this.lastBuf;
     await this.page.evaluate(() => new Promise((r) => requestAnimationFrame(() => requestAnimationFrame(r))));
-    const { data } = await this.cdp.send('Page.captureScreenshot', { format: 'jpeg', quality: 93, optimizeForSpeed: false, fromSurface: true, captureBeyondViewport: false });
-    this.lastBuf = Buffer.from(data, 'base64');
+    if (process.env.FV_CAPTURE !== 'cdp') {
+      // Default: Playwright's screenshot honours deviceScaleFactor -> 1920x1080 frames.
+      // (Raw CDP capture returns CSS-pixel 1440x810 here; FV_CAPTURE=cdp keeps that old path.)
+      this.lastBuf = await this.page.screenshot({ type: 'jpeg', quality: 93, animations: 'allow', caret: 'initial', scale: 'device' });
+    } else {
+      const { data } = await this.cdp.send('Page.captureScreenshot', { format: 'jpeg', quality: 93, optimizeForSpeed: false, fromSurface: true, captureBeyondViewport: false });
+      this.lastBuf = Buffer.from(data, 'base64');
+    }
     this.dirty = false;
     return this.lastBuf;
   }
@@ -456,6 +462,13 @@ export class Video {
     await this.transition(async () => {
       if (zoomReset) { this.cam = { s: 1, x: 0, y: 0 }; await this.apply(); }
       await this.frame.goto(full, { waitUntil: 'domcontentloaded', timeout: 60000 });
+      for (let i = 0; i < 3 && this.user > 0 && /wp-login\.php/.test(this.frame.url()) && !/wp-login\.php/.test(full); i++) {
+        // our session token was dropped by a concurrent login: mint fresh cookies and retry
+        this.log(`  [auth] landed on wp-login.php, re-minting cookies for user ${this.user}`);
+        cookieCache.delete(this.user);
+        await this.as(this.user);
+        await this.frame.goto(full, { waitUntil: 'domcontentloaded', timeout: 60000 });
+      }
     }, { fade });
     if (hold) await this.hold(hold, { still: true, note: 'goto' });
   }

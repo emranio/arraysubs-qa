@@ -31,7 +31,18 @@ function assemble() {
   const list = path.join(outDir, 'concat.txt');
   fs.writeFileSync(list, segs.map((s) => `file '${s.replace(/'/g, "'\\''")}'`).join('\n'));
   const final = path.join(outDir, `${slug}.mp4`);
-  execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-f', 'concat', '-safe', '0', '-i', list, '-c', 'copy', '-movflags', '+faststart', final]);
+  const sizes = segs.map((s) => execFileSync('ffprobe', ['-v', 'error', '-select_streams', 'v:0', '-show_entries', 'stream=width,height', '-of', 'csv=p=0', s], { encoding: 'utf8' }).trim().replace(/,$/, ''));
+  if (sizes.every((z) => z === sizes[0])) {
+    execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-f', 'concat', '-safe', '0', '-i', list, '-c', 'copy', '-movflags', '+faststart', final]);
+  } else {
+    // Mixed segment sizes (1440x810 CSS-pixel takes + 1920x1080 device-pixel takes): scale all to 1080p.
+    console.log(`  mixed segment sizes (${[...new Set(sizes)].join(' / ')}), re-encoding to 1920x1080`);
+    const inputs = segs.flatMap((s) => ['-i', s]);
+    const chains = segs.map((_, i) => `[${i}:v]scale=1920:1080:flags=lanczos,setsar=1,fps=30[v${i}]`).join(';');
+    const filter = `${chains};${segs.map((_, i) => `[v${i}]`).join('')}concat=n=${segs.length}:v=1:a=0[out]`;
+    execFileSync('ffmpeg', ['-y', '-loglevel', 'error', ...inputs, '-filter_complex', filter, '-map', '[out]', '-an', '-c:v', 'libx264', '-preset', 'medium',
+      '-tune', 'stillimage', '-crf', '18', '-g', '120', '-pix_fmt', 'yuv420p', '-movflags', '+faststart', final]);
+  }
   const dur = execFileSync('ffprobe', ['-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0', final], { encoding: 'utf8' }).trim();
   const size = (fs.statSync(final).size / 1048576).toFixed(1);
   console.log(`final ${final} ${Number(dur).toFixed(1)}s ${size}MB`);

@@ -245,6 +245,11 @@
         "demo.260927.237@example.test": "emery.collins@example.com",
         "demo.260927.238@example.test": "skyler.collins@example.com",
         "demo.260927.239@example.test": "rowan.collins@example.com",
-        "demo.260927.240@example.test": "finley.collins@example.com"
+        "demo.260927.240@example.test": "finley.collins@example.com",
+        "Weekly Coffee Delivery — demo catalog.": "Fresh-roasted beans at your door every week.",
+        "Weekly Coffee Delivery \\u2014 demo catalog.": "Fresh-roasted beans at your door every week.",
+        "Weekly Coffee Delivery &#8212; demo catalog.": "Fresh-roasted beans at your door every week.",
+        "Weekly%20Coffee%20Delivery%20%5Cu2014%20demo%20catalog.": "Fresh-roasted%20beans%20at%20your%20door%20every%20week.",
+        "Weekly%20Coffee%20Delivery%20%E2%80%94%20demo%20catalog.": "Fresh-roasted%20beans%20at%20your%20door%20every%20week."
     }
 }

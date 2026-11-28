@@ -56,3 +56,98 @@ Free vs Pro honesty: the cancel link, the reason survey, cancel timing and undo 
 #### Pass 3 (~22:05 UTC): chapters 4-8
 - Customer A = sub **27813** (user 640 Lily Nelson, Premium Membership 69$/month): "Too expensive" -> accepts the discount.
 - Customer B = sub **27880** (user 647 Anthony Hall, Plus Membership 39$/month): "Not using it enough" -> accepts the pause.
+- Pass 3 result: chapters 4-8 recorded. Lily 27813 accepted the discount (22:12 UTC, 69 -> 55.20 for 2 renewals, email to lily.nelson@example.com in local Mailpit); Anthony 27880 accepted the pause (22:17 UTC, paused 30 days, next payment 2026-12-04 -> 2027-01-03, resume scheduled 2026-12-28).
+- Pass 4/5 (no store changes): re-recorded chapters 1, 2, 3, 7, 8 tighter (total under 5 minutes) and fixed label placement.
+
+## Final state (2026-11-28 ~04:35 local)
+- Video: `$FV_OUT/cancellation-flow/cancellation-flow.mp4` (290.4 s, 8 chapters, H.264 30 fps, 1440x810 like every harness output today), poster `poster.webp` (chapter 4: the "Before You Go..." window with the discount offer ringed).
+- Chapters: 1 overview page (23 s), 2 builder reasons (28 s), 3 builder offers + targeting (45 s), 4 My Account cancel -> reason -> offers (50 s), 5 accept discount + toast + new price + email (36 s), 6 second customer pauses (43 s), 7 admin subscription Retention History (29 s), 8 Retention report (37 s).
+- Shared settings: none changed (`customer_actions.allow_cancellation` is still `false` in the DB; only the `fv_cf` cookie mu-plugin overrides it per request).
+- Leftover helper: `wp-content/mu-plugins/zz-fv-cancellation-flow.php` (inert without the `fv_cf` cookie). Delete it together with the harness mu-plugin after all recordings.
+
+## Demo subscriptions changed (all in block 617-677, all valid demo states, nothing to undo unless wanted)
+| Sub | User | What happened | When (UTC) |
+|---|---|---|---|
+| 27748 | 632 Austin Singh | Discount accepted (55.20 for 2 renewals) | 21:40 |
+| 27762 | 634 Jonas Jenkins | Discount accepted | 21:58 |
+| 27813 | 640 Lily Nelson | Discount accepted (the one in the final video) | 22:12 |
+| 27825 | 641 Sienna Ferrari | Discount accepted (scouting) | 21:00 |
+| 27776 | 636 Adam Perry | Paused 30 days by offer, resume action 28810 | 21:47 |
+| 27880 | 647 Anthony Hall | Paused 30 days by offer (the one in the final video) | 22:17 |
+| 28087 | 671 Xavier Simmons | Paused 30 days by offer (scouting), resume action 28711 | 21:01 |
+Undo per sub: paused ones -> Resume in admin (or let the scheduled resume run); discounted ones -> delete `_retention_discount_*`, `_retention_offer_*`, `_accepted_retention_offer`, `_retention_accepted_date` meta (the `_recurring_amount` meta was never changed). Retention log rows (`wp_arraysubs_retention_logs` ids 825+) and subscription notes are history and can stay.
+
+---
+
+## Revision 2 (2026-11-28, after the independent review): native 1080p, 9 chapters
+
+All chapters were recorded again at native 1920x1080 (fixed harness, Playwright capture at DPR 4/3).
+No chapter is kept from the 1440x810 takes.
+
+### New storyboard
+
+| # | Kicker | Card title | What is shown |
+|---|---|---|---|
+| intro | | Keep subscribers about to *leave* | One-line subline (no overlap with the corner circle) |
+| 1 | Admin | One page for the whole *flow* | Journey strip, reasons + offers cards (scrolled clear of the caption), discount offer conditions (label below, nothing covered) |
+| 2 | Flow builder | Ask why in your *own words* | Editor opened off camera (no repeat of chapter 1), 7 steps, require-reason switch, a reason row's drag/edit/delete, **adds the reason "Prefer one-off orders" on camera** (typed key + label), translate icon, step 2 offers on/off switch |
+| 3 | Flow builder | Offers that fit the *reason* | Step 3 discount (reasons, 20%/2 renewals, conditions), step 4 pause, step 5 cheaper plan, step 6 support URL + headline (URL shown as https://example.com/help/), step 7 overview with the new reason, **real Save** (enabled), overview shows 9 reasons |
+| 4 | My Account | They click *Cancel* | Customer A (Plus Membership $39/month) view page, gentler choices above the cancel link ("Cancel stays easy to find"), reason survey (end-of-period copy), "Too expensive" -> discount + Starter plan, Never trapped |
+| 5 | My Account | One click *keeps* them | Accept from the current view (no extra zoom cycle), toast zoomed and readable (button shown at rest), recurring amount ring on the value only, email (caption bottom-right) |
+| 6 | My Account | Need a break? *Pause* | Customer B opens straight on the offers window (no repeated survey), pause + cheaper plan, accept pause, Paused, next payment "Was <date>", scheduled resume |
+| 7 | My Account | Or they still *leave* | Customer C: cancel window says it stays active until the period ends, "Other" + own words, Contact Support card, "No thanks, continue to cancel", Pending cancellation + Cancels On, customer undo button |
+| 8 | Admin | The story on each *subscription* | A: discount stat + 2 renewals left + Retention History; C: Scheduled Cancellation panel (reason Other, their words, offers shown), admin **Undo Scheduled Cancellation** -> Active |
+| 9 | Reports | Know why people *leave* | Retention report: cohort, voluntary/involuntary switched to Percent, Top 10 reasons, Activity Log filtered to Offer Accepted |
+| outro | | Stop one-click *goodbyes* | Survey + undo free (both now shown), offers/targeting/report Pro |
+
+Final: `$FV_OUT/cancellation-flow/cancellation-flow.mp4`, 295.8 s, 9 chapters, native 1920x1080 H.264 30 fps, 42.9 MB.
+Segment lengths: 18.5 / 32.6 / 39.7 / 42.6 / 28.0 / 30.3 / 37.1 / 34.6 / 32.4 s (all checked with ffprobe: 1920,1080).
+Poster: `poster.webp` (1920x1080) from the native chapter 4 frame: "Before You Go..." with the discount offer ringed.
+
+### Review fixes (what changed against the critique)
+- 1080p: every chapter recorded again with the fixed harness (no upscaled segment).
+- Step 7: a real edit (new reason "Prefer one-off orders", typed on camera) enables Save; Save is ringed, clicked, and the overview then shows 9 reasons. No disabled control is ringed.
+- Outro claim "survey and undo are free" is now shown: chapter 7 books a cancel for the period end (Other + own words, Contact Support card, "No thanks, continue to cancel", Pending cancellation, Cancels On, customer undo button), chapter 8 shows the saved reason/words and undoes it from admin, chapter 9 rings "Booked, then undone" in the Activity Log.
+- Support URL: displayed as https://example.com/help/ (fv_cf override), and the ring covers URL + headline ("Your help page, your words").
+- Cancel window copy: end-of-period ("remain active until the end of your current billing period") via the fv_cf override.
+- Labels: "Cancel stays easy to find"; recurring-amount labels ring only the value text; "Was <date>" for the pause; chapter 8 "$31.20 instead of $39.00"; builder labels moved off info boxes; chapter 1 cards scrolled clear of the caption.
+- Cursor: hidden before rings on selects, toasts, status rows and the Save button.
+- Toast: zoomed (1.35x) and readable; the Accept button is shown at rest (its spinner markup restored from the button's saved HTML) while the toast is annotated.
+- Email beat: caption bottom-right.
+- Money: "$69.00"-style everywhere in this video (currency position forced left for fv_cf requests), labels use `$` first.
+- Dev nav items "Checkout Classic" / "Cart Page" hidden for fv_cf requests.
+- Report: scroll offsets -90 under the sticky header, labels below the cards, chart switched to Percent on camera before it is ringed.
+- Pacing: builder opened inside v.act (no chapter 1 replay), accept from the current view (no zoom cycle), chapter 6 opens straight on the offers window; step 2 (offers on/off) now shown; zoom framing widened (cancel window 1.5x).
+- Wording: "Hannah's subscription, kept.", "Mateo barely uses it: "Not using it enough"."
+- Intro/card sublines kept to one line so they never reach the bottom-left circle (no harness change).
+- "[ArraySubs] Retention Discount Accepted" timeline row is no longer on camera (the timeline beat was cut for length), so no clean-map entry was needed.
+
+### Store changes in revision 2 (all logged, all in block 617-677 unless noted)
+
+#### mu-plugin `wp-content/mu-plugins/zz-fv-cancellation-flow.php` (rewritten)
+Still active only for requests with both `fv_clean=1` and `fv_cf=1` cookies (this scene sets `fv_cf` for its admin and customer sessions). Per-request display/runtime overrides, never persisted:
+- `arraysubs_settings[customer_actions][allow_cancellation]` -> true (stored: false)
+- `arraysubs_settings[cancellation][cancel_immediately]` -> false (stored: true), so customer cancels are booked for the period end
+- `arraysubs_settings[cancellation][retention_offers][contact_support][support_url]` -> https://example.com/help/ (stored: http://localhost:10013/demo-member-support/)
+- `option_woocommerce_currency_pos` -> left (stored: right)
+- `render_block_core/navigation-link`: hides "Checkout Classic" and "Cart Page"
+- `pre_update_option_arraysubs_settings` guard restores the stored value of all three overridden settings keys on any write in such a request (verified: after the on-camera saves, allow_cancellation=false, cancel_immediately=true, support_url unchanged).
+Undo: delete the file.
+
+#### Shared setting written on camera, then restored
+- Chapter 3 saves the Cancellation Flow builder (adds reason `prefer_one_off` / "Prefer one-off orders"). Saved 3 times in total (recording passes 2026-11-28 ~05:50, ~05:56 and ~06:08 local). Window per pass: from the chapter 3 save until the run's teardown (a few minutes).
+- Restore: `setup()` and `teardown()` remove that reason by key (raw DB write of `arraysubs_settings[cancellation][reasons]` only). After the final pass the whole `cancellation` group was compared with a backup taken before any save (`$FV_OUT/cancellation-flow/settings-backup-cancellation.json`): identical. Side effect: `arraysubs_settings_last_saved_at` moved from 1795820999 to 1795825230 (timestamp only).
+
+#### Customers (revision 2)
+| Sub | User | What happened | Kept in video |
+|---|---|---|---|
+| 27676 | 624 Hannah Rogers | Plus Membership: opened offers ("Too expensive"), accepted the 20% discount for 2 renewals ($39.00 -> $31.20), email in local Mailpit | yes (ch4, ch5, ch8, ch9) |
+| 27996 | 660 Mateo Khalil | Plus Membership: "Not using it enough", accepted the 30-day pause; next payment 2026-12-20 -> 2027-01-19, resume scheduled 2026-12-28 | yes (ch6, ch9) |
+| 27933 | 653 Stella Okonkwo | Starter: Other + "Moving abroad next month, will be back.", Contact Support shown, cancel booked for 2026-12-12, then undone by admin | no (first take of ch7/ch8, replaced) |
+| 28076 | 670 Micah Barnes | Starter: same flow, booked for 2026-12-17, undone by admin on camera; now Active, renewing normally | yes (ch7, ch8, ch9) |
+| 27723 | 630 Elias Pemberton | Scouting probe: Other + words, booked cancel, undone by admin (probe) | no |
+- Undo for any of these (if ever needed): resume 27996 in admin (or let the scheduled resume run); for 27676 delete `_retention_discount_*`, `_retention_offer_*`, `_accepted_retention_offer`, `_retention_offer_accepted`, `_retention_accepted_date`. The booked cancels are already undone. Retention log rows and notes are history.
+- Note: undoing a booked cancel after an offer was shown sets `_retention_offer_accepted` (Pro `CancellationFlow\Services\Hooks::onCancellationUndone`), so 27933, 28076 and 27723 will not see save offers again. The scene's candidate check now treats that meta as "used".
+- Remaining fresh candidates for another take: A/B `27842`, `28034` (Plus); C `27632`, `27736`, `28109` (Starter).
+
+Shared settings at the end (verified with WP-CLI): `customer_actions.allow_cancellation` false, `cancellation` group identical to the pre-recording backup, `woocommerce_currency_pos` right.

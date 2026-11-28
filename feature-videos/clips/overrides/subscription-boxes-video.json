@@ -1,0 +1,6 @@
+{
+    "_note": "subscription-boxes feature video (scenes/subscription-boxes.mjs), chapter 7 only: display-only rename of the store's My Account endpoint title for the recording browser (fv_clip=subscription-boxes-video cookie). Nothing is written to the database. See notes/subscription-boxes.md.",
+    "text": {
+        "Memberships": "Subscriptions"
+    }
+}

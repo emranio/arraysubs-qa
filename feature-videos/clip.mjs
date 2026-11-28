@@ -19,6 +19,7 @@ import { fileURLToPath, pathToFileURL } from 'node:url';
 process.env.FV_W ||= '1152';
 process.env.FV_H ||= '720';
 process.env.FV_DPR ||= String(5 / 3);
+process.env.FV_CAPTURE ||= 'pw';
 
 const { Video, wp, wpJson, toWebp } = await import('./lib/director.mjs');
 
@@ -70,6 +71,8 @@ const done = [];
 try {
   await v.init();
   await v.context.addInitScript(CLEAN);
+  // Website clips carry no annotations: hide rings, labels, dimming, click ripples and captions.
+  await v.page.addStyleTag({ content: '#hole, #ring, #label, #ripple, #lower { display: none !important; }' });
   // Every session of this scene also carries fv_clip=<scene>: zz-fv-clips.php then applies
   // clips/overrides/<scene>.json to those requests only (shared settings never change).
   const as = v.as.bind(v);

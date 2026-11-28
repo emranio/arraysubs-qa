@@ -1,0 +1,21 @@
+{
+ "_comment": "feature-manager video (run.mjs scene, not a clip): request-scoped overrides for the recording browser only (cookie fv_clip=fv-feature-manager set by scenes/feature-manager.mjs). Nothing is written to the database. See notes/feature-manager.md.",
+ "meta": {
+  "6711": {
+   "_arraysubs_features": "[{\"id\":\"library-access\",\"name\":\"Library Access\",\"type\":\"toggle\",\"value\":\"Yes\",\"enabled\":true,\"order\":0,\"reset_period\":\"none\"},{\"id\":\"monthly-downloads\",\"name\":\"Monthly Downloads\",\"type\":\"number\",\"value\":\"10\",\"enabled\":true,\"order\":1,\"reset_period\":\"month\"},{\"id\":\"masterclasses\",\"name\":\"Masterclasses\",\"type\":\"toggle\",\"value\":\"No\",\"enabled\":true,\"order\":2,\"reset_period\":\"none\"},{\"id\":\"team-seats\",\"name\":\"Team Seats\",\"type\":\"number\",\"value\":\"1\",\"enabled\":true,\"order\":3,\"reset_period\":\"none\"},{\"id\":\"support-level\",\"name\":\"Support Level\",\"type\":\"text\",\"value\":\"Email\",\"enabled\":true,\"order\":4,\"reset_period\":\"none\"}]"
+  }
+ },
+ "text": {
+  "<span class=\"wp-block-navigation-item__label\">Authors</span>": "<span class=\"wp-block-navigation-item__label\">Contact</span>",
+  "<span class=\"wp-block-navigation-item__label\">Patterns</span>": "<span class=\"wp-block-navigation-item__label\">Gift Cards</span>",
+  "<span class=\"wp-block-navigation-item__label\">Themes</span>": "<span class=\"wp-block-navigation-item__label\">Shipping</span>",
+  "DEMO-260927-VARIABLE-PLAN": "MEMBERSHIP-TIER",
+  "DEMO-260927-TIER-BASIC": "MEMBERSHIP-TIER-BASIC",
+  "DEMO-260927-TIER-PROFESSIONAL": "MEMBERSHIP-TIER-PRO",
+  "luna.anderson@example.com": "luna.anderson@brightside.market",
+  "<li class=\"wp-block-navigation-item wp-block-navigation-link\"><a class=\"wp-block-navigation-item__content\"  href=\"http://localhost:10013/checkout-2/\"><span class=\"wp-block-navigation-item__label\">Checkout</span></a></li>": "",
+  "<li class=\"wp-block-navigation-item wp-block-navigation-link\"><a class=\"wp-block-navigation-item__content\"  href=\"http://localhost:10013/checkout/\"><span class=\"wp-block-navigation-item__label\">Checkout Classic</span></a></li>": "",
+  "<li class=\"wp-block-navigation-item wp-block-navigation-link\"><a class=\"wp-block-navigation-item__content\"  href=\"http://localhost:10013/cart-2/\"><span class=\"wp-block-navigation-item__label\">Cart Page</span></a></li>": "",
+  "</head>": "<style id=\"fv-feature-manager\">.woocommerce-MyAccount-navigation ul{display:flex;flex-direction:column}.woocommerce-MyAccount-navigation-link--customer-logout{order:99}.arraysubs-cancellation-contact-notice{display:none!important}#edit-slug-box,#catalog-visibility,.arraysubs-product-helper-links,.arraysubs-active-subscriptions-warning{display:none!important}</style></head>"
+ }
+}
